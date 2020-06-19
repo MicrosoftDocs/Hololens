@@ -1,7 +1,7 @@
 {
     "redirections":  [
                         {
-                            "source_path":  "devices/hololens/hololens-public-preview-apps.md",
+                            "source_path":  "hololens/hololens-public-preview-apps.md",
                             "redirect_url":  "https://docs.microsoft.com/dynamics365/#pivot=mixed-reality-apps",
                             "redirect_document_id":  true
                         },
