@@ -25,5 +25,25 @@
                             "redirect_url":  "/hololens/hololens-recovery",
                             "redirect_document_id":  false
                         },
+                        {
+                            "source_path":   "hololens/hololens-microsoft-layout-app.md",
+                            "redirect_url":  "https://docs.microsoft.com/hololens/hololens-microsoft-dynamics-365-layout-app",
+                            "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":   "hololens/hololens-upgrade-enterprise.md",
+                            "redirect_url":  "https://docs.microsoft.com/hololens/hololens-requirements#upgrade-to-windows-holographic-for-business",
+                            "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":   "hololens/hololens-upgrade-enterprise.md",
+                            "redirect_url":  "https://docs.microsoft.com/hololens/hololens-requirements#upgrade-to-windows-holographic-for-business",
+                            "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":   "hololens/hololens-install-apps.md",
+                            "redirect_url":  "https://docs.microsoft.com/hololens/holographic-store-apps",
+                            "redirect_document_id":  false
+                        }
                      ]
 }
