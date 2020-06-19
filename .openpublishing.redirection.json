@@ -3,17 +3,17 @@
                         {
                             "source_path":  "hololens/hololens-public-preview-apps.md",
                             "redirect_url":  "https://docs.microsoft.com/dynamics365/#pivot=mixed-reality-apps",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":  "hololens/hololens-microsoft-remote-assist-app.md",
                             "redirect_url":  "https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":  "hololens/hololens-microsoft-dynamics-365-layout-app.md",
                             "redirect_url":  "https://docs.microsoft.com/dynamics365/mixed-reality/layout/",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":   "hololens/hololens-whats-new.md",
