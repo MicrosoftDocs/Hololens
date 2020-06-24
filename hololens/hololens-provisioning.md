@@ -204,5 +204,3 @@ In Windows Configuration Designer, when you create a provisioning package for Wi
 
 > [!NOTE]
 > HoloLens does not currently support installing apps (**UniversalAppInstall**) by using a provisioning package.
-
-## Next Step: [Enroll your device](hololens-enroll-mdm.md)
