@@ -53,12 +53,3 @@ Updated licensing and device requirements can be found [here](https://docs.micro
 1. [Azure Active Directory (Azure AD) License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 1. [Power BI](https://powerbi.microsoft.com/desktop/)
 1. [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup)
-
-### Scenario 1: Kiosk Mode
-
-1. If you are **not** planning to manage your device and you are planning to use a local account or an MSA as the login identity, you will not need any additional licenses. Kiosk mode can be accomplished using a provisioning packages.
-1. If you are planning to use an MDM to implement Kiosk mode, you will need an [Azure Active Directory (Azure AD) License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
-
-Additional information regarding kiosk mode will be covered in [Configuring your Network for HoloLens](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
-
-## Next Step: [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
