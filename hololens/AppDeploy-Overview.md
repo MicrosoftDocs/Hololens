@@ -1,0 +1,69 @@
+---
+title: Overview - App Management
+description: app, management, app management
+keywords: HoloLens, user, account, app, application management,
+author: v-jodben
+ms.date: 6/22/2020
+ms.prod: hololens
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
+ms.topic: article 
+ms.sitesec: library
+ms.topic: article
+ms.localizationpriority: medium
+audience: ITPro
+manager: yannisl
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
+---
+
+# App Management: Overview
+
+You can deploy apps on four different paths: **Mobile Device Management (MDM)**, **Microsoft Store for Business**, **Microsoft Store**, or by installing them via **Provisioning**. 
+
+## Mobile Device Management (MDM)
+
+The [MDM / Company Portal](AppDeploy-Intune.md) provides IT decision-makers and administrators to privately auto-install (push) their in-house, line-of-business apps, or purchase apps through the store for a group of users. The **Company Portal** is an experience that is downloaded via the MDM channel.
+
+> [!NOTE] 
+> The following instructions are for users who want to manage their applications with Intune. Microsoft recommends using Intune for application and device management.
+	
+Features of Mobile Device Management (MDM): 
+* MDM deployed + Company Portal 
+* Line of Buisness (non-public) apps
+* User pull through Company Portal App
+* Admin push through MDM policy
+* Auto update through MDM
+
+## Microsoft Store for Business
+
+The [Microsoft Store for Business](AppDeploy-StoreforBusiness.md) provides IT decision-makers and administrators in businesses to find, acquire, manage, and distribute free and paid apps. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. For more information, visit [Prerequisites for using the Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business).
+	
+Features of the Microsoft Store for Business: 
+* Public or Line of Business apps
+* Can be linked with MDM to be managed
+* User manually downloads apps
+* Auto Update
+
+## Microsoft Store apps
+
+The Microsoft Store provides IT decision-makers and administrators in businesses to find, acquire, manage, and distribute public apps.
+	
+Features for the Microsoft Store: 
+* Public apps only
+* User manually downloads apps
+* Auto update if connected to Internet
+
+For more information, visit [Holographic Store Apps](https://docs.microsoft.com/hololens/holographic-store-apps).
+
+## Install via Provisioning Packages
+
+[Provisioning Packages](AppDeploy-ProvisioningPackage.md) allow you to install custom or Line of Business apps, allowing IT pros and administrators to quickly install apps to a local device(s) via USB. This can be done without an internet connection and for any identity type.
+	
+Features for Installing via Provisioning Packages: 
+* Line of Buisness (non-public) apps
+* Public apps (if offline installer is available)
+* USB side-load only
+* No auto update (requires manual updates via Provisioning Package)
