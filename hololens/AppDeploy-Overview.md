@@ -5,9 +5,6 @@ keywords: HoloLens, user, account, app, application management,
 author: v-jodben
 ms.date: 6/22/2020
 ms.prod: hololens
-ms.custom: 
-- CI 111456
-- CSSTroubleshooting
 ms.topic: article 
 ms.sitesec: library
 ms.topic: article
@@ -30,7 +27,7 @@ The [MDM / Company Portal](AppDeploy-Intune.md) provides IT decision-makers and 
 > [!NOTE] 
 > The following instructions are for users who want to manage their applications with Intune. Microsoft recommends using Intune for application and device management.
 	
-Features of Mobile Device Management (MDM): 
+Mobile Device Management (MDM) is applicable for: 
 * MDM deployed + Company Portal 
 * Line of Buisness (non-public) apps
 * User pull through Company Portal App
@@ -41,7 +38,7 @@ Features of Mobile Device Management (MDM):
 
 The [Microsoft Store for Business](AppDeploy-StoreforBusiness.md) provides IT decision-makers and administrators in businesses to find, acquire, manage, and distribute free and paid apps. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. For more information, visit [Prerequisites for using the Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business).
 	
-Features of the Microsoft Store for Business: 
+The Microsoft Store for Business is applicable for: 
 * Public or Line of Business apps
 * Can be linked with MDM to be managed
 * User manually downloads apps
@@ -51,7 +48,7 @@ Features of the Microsoft Store for Business:
 
 The Microsoft Store provides IT decision-makers and administrators in businesses to find, acquire, manage, and distribute public apps.
 	
-Features for the Microsoft Store: 
+This Microsoft Store is applicable for: 
 * Public apps only
 * User manually downloads apps
 * Auto update if connected to Internet
@@ -62,7 +59,7 @@ For more information, visit [Holographic Store Apps](https://docs.microsoft.com/
 
 [Provisioning Packages](AppDeploy-ProvisioningPackage.md) allow you to install custom or Line of Business apps, allowing IT pros and administrators to quickly install apps to a local device(s) via USB. This can be done without an internet connection and for any identity type.
 	
-Features for Installing via Provisioning Packages: 
+Installing via Provisioning Packages is applicable for: 
 * Line of Buisness (non-public) apps
 * Public apps (if offline installer is available)
 * USB side-load only
