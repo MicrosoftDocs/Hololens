@@ -5,12 +5,11 @@ ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
 ms.author: pawinfie
-audience: ITPro
+audience: HoloLens
 ms.topic: article
 ms.localizationpriority: high
 ms.date: 1/23/2020
 ms.reviewer: 
-audience: ITPro
 manager: bradke
 appliesto:
 - HoloLens (1st gen)
