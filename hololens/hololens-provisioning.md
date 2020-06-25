@@ -46,7 +46,7 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 - Enroll the device in Azure Active Directory, or create a local account
 - Add certificates
 - Enable Developer Mode
-- Configure kiosk mode. (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk).
+- Configure kiosk mode. (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)).
 
 > [!WARNING]
 > You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
