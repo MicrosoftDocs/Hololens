@@ -19,7 +19,6 @@
 ## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 
 # Deploy HoloLens and mixed reality apps in commercial environments
-
 ## Prepare
 #### [Commercial features](hololens-commercial-features.md)
 #### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
@@ -29,7 +28,6 @@
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
 ### Management Considerations for HoloLens 2
 #### Device Management Considerations
-
 ## Configure
 ### Identity
 #### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
@@ -45,7 +43,6 @@
 ### Policies
 #### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 #### [Set up HoloLens as a kiosk](hololens-kiosk.md)
-
 ## Deploy
 #### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ### Enrollment
@@ -57,7 +54,6 @@
 #### [Intune & Company Portal](AppDeploy-Intune.md)
 #### [Microsoft Store for Business](AppDeploy-StoreforBusiness.md)
 #### [Provisioning Package](AppDeploy-ProvisioningPackage.md)
-
 ## Maintain
 #### [Update the Operating System](hololens-updates.md)
 #### [Troubleshooting](hololens-troubleshooting.md) 
