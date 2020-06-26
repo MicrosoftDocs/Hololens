@@ -46,7 +46,6 @@
 ## Deploy
 ### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ### Enrollment
-### Enrollment Overview
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
 ### Application
