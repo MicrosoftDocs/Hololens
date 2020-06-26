@@ -5,7 +5,6 @@ ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
 ms.author: pawinfie
-audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
 ms.date: 1/23/2020
