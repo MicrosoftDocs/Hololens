@@ -50,10 +50,10 @@
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
 ### Application
-#### [Application management overview](AppDeploy-Overview.md)
-#### [Intune & Company Portal](AppDeploy-Intune.md)
-#### [Microsoft Store for Business](AppDeploy-StoreforBusiness.md)
-#### [Provisioning Package](AppDeploy-ProvisioningPackage.md)
+#### Application management overview
+#### Intune & Company Portal
+#### Microsoft Store for Business
+#### Provisioning Package
 ## Maintain
 ### [Update the Operating System](hololens-updates.md)
 ### [Troubleshooting](hololens-troubleshooting.md)
