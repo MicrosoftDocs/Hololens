@@ -56,10 +56,10 @@
 #### [Provisioning Package](AppDeploy-ProvisioningPackage.md)
 ## Maintain
 ### [Update the Operating System](hololens-updates.md)
-### [Troubleshooting](hololens-troubleshooting.md) 
-### [Restart, reset, or recover HoloLens](hololens-recovery.md) 
-### [Frequently asked questions](hololens-faq.md) 
-### [Known issues for HoloLens](hololens-known-issues.md) 
+### [Troubleshooting](hololens-troubleshooting.md)
+### [Restart, reset, or recover HoloLens](hololens-recovery.md)
+### [Frequently asked questions](hololens-faq.md)
+### [Known issues for HoloLens](hololens-known-issues.md)
 ### [Collect diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
 
 # Navigate the Windows Holographic environment
