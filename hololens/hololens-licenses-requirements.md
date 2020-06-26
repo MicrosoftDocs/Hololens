@@ -1,5 +1,5 @@
 ---
-title: Licenses for Mixed Reality Deployment
+title: License requirements
 description: 
 ms.prod: hololens
 ms.sitesec: library
@@ -17,7 +17,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Determine what licenses you need
+# License requirements
 
 ## Mobile Device Management (MDM) Licenses Guidance
 
