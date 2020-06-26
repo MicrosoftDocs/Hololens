@@ -1,5 +1,5 @@
 ---
-title: Manage HoloLens updates
+title: Update the Operating System
 description: Administrators can use mobile device management to manage updates to HoloLens devices.
 ms.prod: hololens
 ms.sitesec: library
@@ -15,12 +15,10 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
+
 ---
 
-# Manage HoloLens updates
+# Update the Operating System
 
 HoloLens uses Windows Update in the same manner as other Windows 10 devices. When an update is available, it is automatically downloaded and installed the next time that your device is plugged in and connected to the internet. This article describes how to manage updates in an enterprise or other managed environment. For information about managing updates to individual HoloLens devices, see [Update HoloLens](hololens-update-hololens.md).
 
