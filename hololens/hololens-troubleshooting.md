@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot HoloLens issues
+title: Troubleshooting
 description: Solutions for common HoloLens issues.
 author: mattzmsft
 ms.author: mazeller
@@ -14,12 +14,10 @@ manager: jarrettr
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
+
 ---
 
-# Troubleshoot HoloLens issues
+# Troubleshooting
 
 This article describes how to resolve several common HoloLens issues.
 
