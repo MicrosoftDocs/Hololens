@@ -32,7 +32,7 @@ Provisioning Packages can be used to manage CSP and Policies in an environment t
 Within [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22) take following 4 steps.
 
 1. Set ApplicationManagement/AllowAllTrustedApps To “Yes”. See: [ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
-2. Under **UniversalAppInstall** > **UserContextApp** please enter the **PackageFamilyName**. See [UniversalAppInstall (reference)](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall).
+2. Under **UniversalAppInstall** > **UserContextApp** please enter the **PackageFamilyName**. See [UniversalAppInstall](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall).
 - If you don’t know this, you can use Device Portal on a device you have already installed your app to. Visit the Apps page, and look at the PackageRelativeID line, all the information before the "!" Is your **PackageFamilyName**.
 3. You will then see that you have a new section, **ApplicationFile**. Use this area to upload your appx bundle. 
 4. Depending on if you have purchased your app or built your own LOB app, you will need to upload the license file or security certificate. See: [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
