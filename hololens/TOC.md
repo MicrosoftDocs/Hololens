@@ -20,9 +20,9 @@
 
 # Deploy HoloLens and mixed reality apps in commercial environments
 ## Prepare
-#### [Commercial features](hololens-commercial-features.md)
-#### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
-#### [License Requirements](hololens-licenses-requirements.md)
+### [Commercial features](hololens-commercial-features.md)
+### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
+### [License Requirements](hololens-licenses-requirements.md)
 ### Environment
 #### [HoloLens environment considerations](hololens-environment-considerations.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
@@ -44,23 +44,23 @@
 #### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 #### [Set up HoloLens as a kiosk](hololens-kiosk.md)
 ## Deploy
-#### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
+### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ### Enrollment
-#### Enrollment Overview
-#### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
-#### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
+### Enrollment Overview
+### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
+### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
 ### Application
 #### [Application management overview](AppDeploy-Overview.md)
 #### [Intune & Company Portal](AppDeploy-Intune.md)
 #### [Microsoft Store for Business](AppDeploy-StoreforBusiness.md)
 #### [Provisioning Package](AppDeploy-ProvisioningPackage.md)
 ## Maintain
-#### [Update the Operating System](hololens-updates.md)
-#### [Troubleshooting](hololens-troubleshooting.md) 
-#### [Restart, reset, or recover HoloLens](hololens-recovery.md) 
-#### [Frequently asked questions](hololens-faq.md) 
-#### [Known issues for HoloLens](hololens-known-issues.md) 
-#### [Collect diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
+### [Update the Operating System](hololens-updates.md)
+### [Troubleshooting](hololens-troubleshooting.md) 
+### [Restart, reset, or recover HoloLens](hololens-recovery.md) 
+### [Frequently asked questions](hololens-faq.md) 
+### [Known issues for HoloLens](hololens-known-issues.md) 
+### [Collect diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
 
 # Navigate the Windows Holographic environment
 ## [Use the Start menu and mixed reality home](holographic-home.md)
