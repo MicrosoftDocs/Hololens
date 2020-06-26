@@ -38,7 +38,7 @@
 #### [Manage connection endpoints for HoloLens](hololens-offline.md)
 #### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
 ### Security
-#### Security Guidelines & FAQ
+#### [Frequently asked security questions](hololens-faq-security.md)
 #### [HoloLens BitLocker Encryption](hololens-encryption.md)
 ### Policies
 #### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
@@ -60,6 +60,7 @@
 ### [Frequently asked questions](hololens-faq.md)
 ### [Known issues for HoloLens](hololens-known-issues.md)
 ### [Collect diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
+#### [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 # Navigate the Windows Holographic environment
 ## [Use the Start menu and mixed reality home](holographic-home.md)
@@ -73,22 +74,20 @@
 
 # Accessories and connectivity
 ## [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
-## [Manage connection endpoints for HoloLens](hololens-offline.md)
 
 # Hologram optics and placement in space
 ## [Improve visual quality and comfort](hololens-calibration.md)
 ## [Map physical spaces with HoloLens](hololens-spaces.md)
 
 # Update, troubleshoot, or recover HoloLens
-## [Update HoloLens](hololens-update-hololens.md)
-## [Restart, reset, or recover HoloLens (1st gen) ](hololens1-recovery.md)
-## [Frequently asked security questions](hololens-faq-security.md)
-## [Status of the HoloLens services](hololens-status.md)
-## [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
+## [How to Update HoloLens](hololens-update-hololens.md)
+
+# [Restart, reset, or recover HoloLens (1st gen) ](hololens1-recovery.md)
 
 # Resources
 ## [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
 ## [Windows Autopilot for HoloLens 2 evaluation guide](hololens2-autopilot.md)
+## [Status of the HoloLens services](hololens-status.md)
 
 # [HoloLens 2 release notes](hololens-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
