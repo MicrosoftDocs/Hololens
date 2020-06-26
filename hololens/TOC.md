@@ -20,6 +20,7 @@
 
 # Deploy HoloLens and mixed reality apps in commercial environments
 ## Prepare
+###
 #### [Commercial features](hololens-commercial-features.md)
 #### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 #### [License Requirements](hololens-licenses-requirements.md)
@@ -44,6 +45,7 @@
 #### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 #### [Set up HoloLens as a kiosk](hololens-kiosk.md)
 ## Deploy
+###
 #### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ### Enrollment
 #### Enrollment Overview
@@ -55,6 +57,7 @@
 #### [Microsoft Store for Business](AppDeploy-StoreforBusiness.md)
 #### [Provisioning Package](AppDeploy-ProvisioningPackage.md)
 ## Maintain
+###
 #### [Update the Operating System](hololens-updates.md)
 #### [Troubleshooting](hololens-troubleshooting.md) 
 #### [Restart, reset, or recover HoloLens](hololens-recovery.md) 
