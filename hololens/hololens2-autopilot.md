@@ -1,5 +1,5 @@
 ---
-title: Windows Autopilot for HoloLens 2 evaluation guide
+title: Windows Autopilot for HoloLens 2
 description: 
 author: Teresa-Motiv
 ms.author: v-tea
@@ -13,11 +13,10 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-appliesto:
-- HoloLens 2
+
 ---
 
-# Windows Autopilot for HoloLens 2 evaluation guide
+# Windows Autopilot for HoloLens 2
 
 When you set up HoloLens 2 devices for the Windows Autopilot program, your users can follow a simple process to provision the devices from the cloud.
 
