@@ -31,7 +31,7 @@
 ## Configure
 ### Identity
 #### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
-#### [Share HoloLens with multiple peopl](hololens-multiple-users.md)
+#### [Share HoloLens with multiple people](hololens-multiple-users.md)
 ### Network & Connectivity
 #### [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
 #### [Connect HoloLens to a network](hololens-network.md)
