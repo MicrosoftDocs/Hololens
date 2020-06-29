@@ -73,7 +73,7 @@
 #### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 
 ### Accessories and connectivity
-##### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
+#### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
 
 ### Hologram optics and placement in space
 #### [Improve visual quality and comfort](hololens-calibration.md)
