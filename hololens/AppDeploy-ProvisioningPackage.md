@@ -10,12 +10,10 @@ ms.topic: article
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisl
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
+
 ---
 
-# Provisioning Packages
+# Provisioning Package
 
 Provisioning packages can be used to prepare and configure devices in an environment without access to endpoint management. They can also be deployed to a device regardless of identity of the user, enrollment status, during the Out of Box Experience (OOBE), or by [applying a provisioning package during setup](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
 
