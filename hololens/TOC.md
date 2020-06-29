@@ -20,7 +20,7 @@
 ### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 ### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
 
-## Navigate the Windows Holographic environment
+## Navigate the Windows Holographic interface
 ### [Use the Start menu and mixed reality home](holographic-home.md)
 ### [Use your voice to operate HoloLens](hololens-cortana.md)
 ### [Find, open, and save files on HoloLens](holographic-data.md)
@@ -65,7 +65,7 @@
 ## Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
-## Application
+## Applications
 ### Application management overview
 ### Intune & Company Portal
 ### Microsoft Store for Business
@@ -86,7 +86,7 @@
 ## [Status of the HoloLens services](hololens-status.md)
 ## [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
 
-# [HoloLens 2 release notes](hololens-release-notes.md)
+# [HoloLens release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
