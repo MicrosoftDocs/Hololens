@@ -68,16 +68,16 @@
 ## [Find, open, and save files](holographic-data.md)
 ## [Create mixed reality photos and videos](holographic-photos-and-videos.md)
 
-# Holographic applications
-## [Find, install, and uninstall applications](holographic-store-apps.md)
-## [Manage custom apps for HoloLens](holographic-custom-apps.md)
+#### Holographic applications
+##### [Find, install, and uninstall applications](holographic-store-apps.md)
+##### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 
-# Accessories and connectivity
-## [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
+### Accessories and connectivity
+##### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
 
-# Hologram optics and placement in space
-## [Improve visual quality and comfort](hololens-calibration.md)
-## [Map physical spaces with HoloLens](hololens-spaces.md)
+### Hologram optics and placement in space
+#### [Improve visual quality and comfort](hololens-calibration.md)
+#### [Map physical spaces with HoloLens](hololens-spaces.md)
 
 # Update, troubleshoot, or recover HoloLens
 ## [How to Update HoloLens](hololens-update-hololens.md)
@@ -88,8 +88,9 @@
 ## [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
 ## [Windows Autopilot for HoloLens 2 evaluation guide](hololens2-autopilot.md)
 ## [Status of the HoloLens services](hololens-status.md)
+## [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
 
 # [HoloLens 2 release notes](hololens-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
 # [Insider preview for Microsoft HoloLens](hololens-insider.md)
-# [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
+
