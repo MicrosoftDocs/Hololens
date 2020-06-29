@@ -133,8 +133,9 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ### Safety
 
-[Product Safety](https://support.microsoft.com/en-us/help/4023454/safety-information)
-Eye safety: HoloLens 2 has been tested and conforms to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
+* [Product Safety](https://support.microsoft.com/en-us/help/4023454/safety-information)
+* [Product Safety Warnings and Instructions](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
+* Eye safety: HoloLens 2 has been tested and conforms to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
 
 ### Regulatory Information
 [HoloLens Regulatory](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)
