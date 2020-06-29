@@ -21,7 +21,7 @@ You can deploy apps on four different paths: **Mobile Device Management (MDM)**,
 
 ## Mobile Device Management (MDM)
 
-The [MDM / Company Portal](AppDeploy-Intune.md) provides IT decision-makers and administrators to privately auto-install (push) their in-house, line-of-business apps, or purchase apps through the store for a group of users. The **Company Portal** is an experience that is downloaded via the MDM channel.
+The [MDM](AppDeploy-Intune.md) provides IT decision-makers and administrators to privately auto-install (push) their in-house, line-of-business apps, or purchase apps through the store for a group of users. HoloLens devices work best with Microsoft Intune. The **Company Portal** is a downloadable experience only offered by Intune to give users finer-grained control over IT-managed apps.
 
 > [!NOTE] 
 > The following instructions are for users who want to manage their applications with Intune. Microsoft recommends using Intune for application and device management.
@@ -29,7 +29,7 @@ The [MDM / Company Portal](AppDeploy-Intune.md) provides IT decision-makers and 
 Mobile Device Management (MDM) is applicable for: 
 * MDM deployed + Company Portal 
 * Line of Buisness (non-public) apps
-* User pull through Company Portal App
+* Manual installation of available applications through Company Portal
 * Admin push through MDM policy
 * Auto update through MDM
 
@@ -39,7 +39,7 @@ The [Microsoft Store for Business](AppDeploy-StoreforBusiness.md) provides IT de
 	
 The Microsoft Store for Business is applicable for: 
 * Public or Line of Business apps
-* Can be linked with MDM to be managed
+* Automatic installation of required applications through MDM association
 * User manually downloads apps
 * Auto Update
 
