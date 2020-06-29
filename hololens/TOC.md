@@ -68,9 +68,9 @@
 ## [Find, open, and save files](holographic-data.md)
 ## [Create mixed reality photos and videos](holographic-photos-and-videos.md)
 
-#### Holographic applications
-##### [Find, install, and uninstall applications](holographic-store-apps.md)
-##### [Manage custom apps for HoloLens](holographic-custom-apps.md)
+### Holographic applications
+#### [Find, install, and uninstall applications](holographic-store-apps.md)
+#### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 
 ### Accessories and connectivity
 ##### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
