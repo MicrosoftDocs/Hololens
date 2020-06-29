@@ -18,6 +18,7 @@
 ### [HoloLens (1st gen) fit and comfort FAQ](hololens1-fit-comfort-faq.md)
 ### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 ### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
+### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
 
 ## Navigate the Windows Holographic environment
 ### [Use the Start menu and mixed reality home](holographic-home.md)
@@ -25,12 +26,9 @@
 ### [Find, open, and save files on HoloLens](holographic-data.md)
 ### [Create mixed reality photos and videos](holographic-photos-and-videos.md)
 
-### Holographic applications
-#### [Find, install, and uninstall applications](holographic-store-apps.md)
-#### [Manage custom apps for HoloLens](holographic-custom-apps.md)
-
-## Accessories and connectivity
-### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
+## Holographic applications
+### [Find, install, and uninstall applications](holographic-store-apps.md)
+### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 
 ## Hologram optics and placement in space
 ### [Improve visual quality and comfort](hololens-calibration.md)
