@@ -30,4 +30,4 @@ Visit the following pages to learn more about how to use the Microsoft Store for
 To associate your Microsoft Store for Business, visit [Associate your Microsoft Store for Business with Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune).
 
 > [!Tip] 
-> Learn more about [distributing offline apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) when using apps like WCD or ARC.
+> Learn more about [distributing offline apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) when using apps like Advanced Recovery Companion (ARC) and Windows Configuration Designer (WCD).
