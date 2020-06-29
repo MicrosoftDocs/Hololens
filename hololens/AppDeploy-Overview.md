@@ -21,7 +21,7 @@ You can deploy apps on four different paths: **Mobile Device Management (MDM)**,
 
 ## Mobile Device Management (MDM)
 
-The [MDM](AppDeploy-Intune.md) provides IT decision-makers and administrators to privately auto-install (push) their in-house, line-of-business apps, or purchase apps through the store for a group of users. HoloLens devices work best with Microsoft Intune. The **Company Portal** is a downloadable experience only offered by Intune to give users finer-grained control over IT-managed apps.
+An MDM solution enables IT decision-makers and administrators to privately auto-install (push) their in-house, line-of-business apps, or purchase apps through the store for a group of users. HoloLens devices work best with Microsoft Endpoint Manager (Intune) for [application management](AppDeploy-Intune.md). Intune also offers users finer-grained control over IT-managed apps through the Company Portal downloadable experience.
 
 > [!NOTE] 
 > The following instructions are for users who want to manage their applications with Intune. Microsoft recommends using Intune for application and device management.
