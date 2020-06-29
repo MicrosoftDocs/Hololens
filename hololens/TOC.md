@@ -36,20 +36,7 @@
 ### [Improve visual quality and comfort](hololens-calibration.md)
 ### [Map physical spaces with HoloLens](hololens-spaces.md) 
 
-## Holographic applications
-### [Find, install, and uninstall applications](holographic-store-apps.md)
-### [Manage custom apps for HoloLens](holographic-custom-apps.md)
-
-## Accessories and connectivity
-### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
-
-## Hologram optics and placement in space
-### [Improve visual quality and comfort](hololens-calibration.md)
-### [Map physical spaces with HoloLens](hololens-spaces.md)
-
 ## [How to Update HoloLens](hololens-update-hololens.md)
-
-
 
 # Prepare
 ## Management Considerations for HoloLens 2
