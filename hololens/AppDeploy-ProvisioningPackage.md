@@ -10,7 +10,9 @@ ms.topic: article
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisl
-
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
 ---
 
 # Provisioning Package
