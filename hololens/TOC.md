@@ -47,19 +47,19 @@
 ### [Improve visual quality and comfort](hololens-calibration.md)
 ### [Map physical spaces with HoloLens](hololens-spaces.md)
 
-## Update, troubleshoot, or recover HoloLens
-### [How to Update HoloLens](hololens-update-hololens.md)
-### [Restart, reset, or recover HoloLens (1st gen) ](hololens1-recovery.md)
+## [How to Update HoloLens](hololens-update-hololens.md)
+
+
 
 # Prepare
-## [Commercial features](hololens-commercial-features.md)
-## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
+## Management Considerations for HoloLens 2
+### Device Management Considerations
 ## [License requirements](hololens-licenses-requirements.md)
 ## Environment
 ### [HoloLens environment considerations](hololens-environment-considerations.md)
 ### [Map physical spaces with HoloLens](hololens-spaces.md)
-## Management Considerations for HoloLens 2
-### Device Management Considerations
+## [Commercial features](hololens-commercial-features.md)
+## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 # Configure
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
@@ -78,8 +78,8 @@
 # Deploy
 ## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ## Enrollment
-## [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
-## [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
+### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
+### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
 ## Application
 ### Application management overview
 ### Intune & Company Portal
@@ -87,12 +87,14 @@
 ### Provisioning Package
 # Maintain
 ## [Update the Operating System](hololens-updates.md)
-## [Troubleshooting](hololens-troubleshooting.md)
-## [Restart, reset, or recover HoloLens](hololens-recovery.md)
-## [Frequently asked questions](hololens-faq.md)
-## [Known issues for HoloLens](hololens-known-issues.md)
-## [Collect and use diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
-## [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
+## Fixing HoloLens Issues
+### [Troubleshooting](hololens-troubleshooting.md)
+### [Restart, reset, or recover HoloLens 2](hololens-recovery.md)
+### [Restart, reset, or recover HoloLens (1st gen) ](hololens1-recovery.md)
+### [Frequently asked questions](hololens-faq.md)
+### [Known issues for HoloLens](hololens-known-issues.md)
+### [Collect and use diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
+### [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 # Resources
 ## [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
