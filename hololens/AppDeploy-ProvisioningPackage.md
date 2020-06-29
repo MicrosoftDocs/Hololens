@@ -15,11 +15,11 @@ appliesto:
 - HoloLens 2
 ---
 
-# Provisioning Package
+# Provisioning Packages
 
-Provisioning Packages can be used to manage CSP and Policies in an environment that does not have access to MDM. They can also be deployed to a device regardless of identity of the user, enrollment status, during the Out of Box Experience (OOBE), or by [applying a provisioning package during setup](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
+Provisioning packages can be used to prepare and configure devices in an environment without access to endpoint management. They can also be deployed to a device regardless of identity of the user, enrollment status, during the Out of Box Experience (OOBE), or by [applying a provisioning package during setup](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
 
-## Provisioning Packages have the following limitations:
+## Provisioning Packages considerations:
 * Non-Public apps
 * USB side-load only
 * No auto update (requires manual updates via PPKGs)
@@ -32,10 +32,10 @@ Provisioning Packages can be used to manage CSP and Policies in an environment t
 Within [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22) take following 4 steps.
 
 1. Set ApplicationManagement/AllowAllTrustedApps To “Yes”. See: [ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
-2. Under **UniversalAppInstall** > **UserContextApp** please enter the **PackageFamilyName**. See [UniversalAppInstall](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall).
+2. Under **UniversalAppInstall** > **UserContextAppLicense** please enter the **PackageFamilyName**. See [UniversalAppInstall](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall). See also: [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
 - If you don’t know this, you can use Device Portal on a device you have already installed your app to. Visit the Apps page, and look at the PackageRelativeID line, all the information before the "!" Is your **PackageFamilyName**.
 3. You will then see that you have a new section, **ApplicationFile**. Use this area to upload your appx bundle. 
-4. Depending on if you have purchased your app or built your own LOB app, you will need to upload the license file or security certificate. See: [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
+4. Depending on if you have purchased your app or built your own LOB app, you will need to upload the license file or security certificate.
 - For license file: Under **UniversalAppInstall** > **UserContextAppLience** and browse to the location of your license and upload it. 
 - For security file navigate to **Certificates** and select your certificate to install alongside your .appx bundle. 
 
