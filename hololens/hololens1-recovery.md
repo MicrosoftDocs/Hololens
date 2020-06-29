@@ -18,7 +18,7 @@ appliesto:
 - HoloLens (1st gen)
 ---
 
-# Restart, reset, or recover HoloLens 1st Gen
+# Restart, reset, or recover HoloLens (1st Gen)
 
 If you're experiencing problems with your HoloLens you may want to try a restart, reset, or even re-flash with device recovery.
 
