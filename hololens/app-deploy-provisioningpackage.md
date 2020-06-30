@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
 audience: HoloLens
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -36,8 +36,8 @@ Within [Windows Configuration Designer](https://www.microsoft.com/store/productI
 - If you don’t know this, you can use Device Portal on a device you have already installed your app to. Visit the Apps page, and look at the PackageRelativeID line, all the information before the "!" Is your **PackageFamilyName**.
 3. You will then see that you have a new section, **ApplicationFile**. Use this area to upload your appx bundle. 
 4. Depending on if you have purchased your app or built your own LOB app, you will need to upload the license file or security certificate.
-- For license file: Under **UniversalAppInstall** > **UserContextAppLience** and browse to the location of your license and upload it. 
-- For security file navigate to **Certificates** and select your certificate to install alongside your .appx bundle. 
+    - For license file: Under **UniversalAppInstall** > **UserContextAppLience** and browse to the location of your license and upload it. 
+    - For security file navigate to **Certificates** and select your certificate to install alongside your .appx bundle. 
 
 Make sure to save your project to a secure location. Then **Export** it as a **Provisioning Package**.  
     
