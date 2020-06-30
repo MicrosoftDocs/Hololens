@@ -21,7 +21,7 @@ You can deploy apps on four different paths: **Mobile Device Management (MDM)**,
 
 ## Mobile Device Management (MDM)
 
-An MDM solution enables IT decision-makers and administrators to privately auto-install (push) their in-house, line-of-business apps, or purchase apps through the store for a group of users. HoloLens devices work best with Microsoft Endpoint Manager (Intune) for [application management](AppDeploy-Intune.md). Intune also offers users finer-grained control over IT-managed apps through the Company Portal downloadable experience.
+An MDM solution enables IT decision-makers and administrators to privately auto-install (push) their in-house, line-of-business apps, or purchase apps through the store for a group of users. HoloLens devices work best with Microsoft Endpoint Manager (Intune) for [application management](app-deploy-intune.md). Intune also offers users finer-grained control over IT-managed apps through the Company Portal downloadable experience.
 
 > [!NOTE] 
 > The following instructions are for users who want to manage their applications with Intune. Microsoft recommends using Intune for application and device management.
@@ -35,7 +35,7 @@ Mobile Device Management (MDM) is applicable for:
 
 ## Microsoft Store for Business
 
-The [Microsoft Store for Business](AppDeploy-StoreforBusiness.md) provides IT decision-makers and administrators in businesses to find, acquire, manage, and distribute free and paid apps. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. For more information, visit [Prerequisites for using the Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business).
+The [Microsoft Store for Business](app-deploy-storebusiness.md) provides IT decision-makers and administrators in businesses to find, acquire, manage, and distribute free and paid apps. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. For more information, visit [Prerequisites for using the Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business).
 	
 The Microsoft Store for Business is applicable for: 
 * Public or Line of Business apps
@@ -56,7 +56,7 @@ For more information, visit [Holographic Store Apps](https://docs.microsoft.com/
 
 ## Install via Provisioning Packages
 
-[Provisioning Packages](AppDeploy-ProvisioningPackage.md) allow you to install custom or Line of Business apps, allowing IT pros and administrators to quickly install apps to a local device(s) via USB. This can be done without an internet connection and for any identity type.
+[Provisioning Packages](app-deploy-provisioningpackage.md) allow you to install custom or Line of Business apps, allowing IT pros and administrators to quickly install apps to a local device(s) via USB. This can be done without an internet connection and for any identity type.
 	
 Installing via Provisioning Packages is applicable for: 
 * Line of Buisness (non-public) apps
