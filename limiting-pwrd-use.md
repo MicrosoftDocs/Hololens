@@ -46,7 +46,7 @@ When a Windows Hello credential is created, it establishes a trusted relationshi
 
 For more information, see the following infographic:
 
-  ![Winows Hello Sign-in](images/hello-sign-in.png)
+  ![Winows Hello Sign-in](images/security-hello-sign-in.png)
   
 In the graphic presented above, note that nonce is stands for “number once”, and is a random or semi-random generated number. 
 Once the Windows Hello Biometric or PIN credential is set up, it never leaves the device on which it is provisioned. Even if the user’s Windows Hello PIN is stolen, such as through a phishing attack, it is [useless without the user’s physical device](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password). 
@@ -63,7 +63,7 @@ Once an identity has been added through one application, it can, with user conse
 
 For more information on implementing Web Account Manager APIs, go to [Implementing Web Account Manager APIs](https://docs.microsoft.com/windows/uwp/security/web-account-manager).
 
-  ![Winows Hello Sign-in](images/api-img.png)
+  ![Winows Hello Sign-in](images/security-api-img.png)
   
 For app suites with specialized authentication requirements, the Web Account Manager (WAM) framework is extensible to custom identity providers. Users can download the custom identity provider, packaged as a Universal Windows Platform (UWP) app from the Microsoft Store, to enable SSO on other apps integrated with that identity provider. 
 
@@ -84,7 +84,7 @@ Windows Hello and FIDO2 devices implement credentials based on the HoloLens devi
 
 Both options offer two-factor authentication in one step, requiring both a registered device and a biometric or PIN to successfully sign in. For more information, refer to the strong authentication with FIDO2 security key graphic which follows:
 
-  ![FIDO img](images/fido-img.png)
+  ![FIDO img](images/security-fido-img.png)
 
 MSA and AAD are among the first relying parties to support password-less authentication by implementing WebAuthn. 
 
