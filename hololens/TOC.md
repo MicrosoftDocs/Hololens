@@ -38,8 +38,9 @@
 ## [How to Update HoloLens](hololens-update-hololens.md)
 
 # Prepare
-## Management Considerations for HoloLens 2
-### Device Management Considerations
+## Planning for HoloLens 2 Enterprise Deployment
+### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
+### [Common Infrastructure Deployment Scenarios](common-scenarios.md)
 ## [License requirements](hololens-licenses-requirements.md)
 ## Environment
 ### [HoloLens environment considerations](hololens-environment-considerations.md)
@@ -62,7 +63,7 @@
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
 # Deploy
-## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
+
 ## Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
