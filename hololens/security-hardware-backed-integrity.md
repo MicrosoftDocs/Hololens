@@ -15,7 +15,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Hardware backed integrity, run-time attestation
+# Hardware-backed integrity, run-time attestation
 
 Hardware-backed integrity and run-time attestation protects against threats that originate prior to the start of an operating system, during run-time, when the device uses hardware, and remote attestation services to ensure integrity is maintained at startup and throughout run-time duration.
 
