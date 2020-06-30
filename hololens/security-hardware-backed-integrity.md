@@ -33,7 +33,7 @@ The Trusted Platform Module (TPM) is a specialized chip on an endpoint device. H
 HoloLens 2 enforces Unified Extensible Firmware Interface (UEFI) Secure Boot on all MainOS state. UEFI only boots Microsoft trusted platforms which ensures that the entire boot chain is verified for integrity, and that Windows always boots with the correct security policies applied to it. HoloLens 2 does not Secure Boot to be turned off, nor does it allow 3rd party boot loaders.
 
 > [!Tip]
-> Learn more about [Secure boot](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot).
+> Learn more about [Secure boot](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot).
 
 ## Persistence access threat protection 
 
