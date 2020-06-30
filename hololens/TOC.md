@@ -26,15 +26,12 @@
 ### [Use your voice to operate HoloLens](hololens-cortana.md)
 ### [Find, open, and save files on HoloLens](holographic-data.md)
 ### [Create mixed reality photos and videos](holographic-photos-and-videos.md)
-
 ## Holographic applications
 ### [Find, install, and uninstall applications](holographic-store-apps.md)
 ### [Manage custom apps for HoloLens](holographic-custom-apps.md)
-
 ## Hologram optics and placement in space
 ### [Improve visual quality and comfort](hololens-calibration.md)
 ### [Map physical spaces with HoloLens](hololens-spaces.md) 
-
 ## [How to Update HoloLens](hololens-update-hololens.md)
 
 # Prepare
@@ -63,15 +60,15 @@
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
 # Deploy
-
 ## Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
 ## Applications
-### Application management overview
-### Intune & Company Portal
-### Microsoft Store for Business
-### Provisioning Package
+### [Application management overview](app-deploy-overview.md)
+### [Intune & Company Portal](app-deploy-intune.md)
+### [Microsoft Store for Business](app-deploy-store-business.md)
+### [Provisioning Package](app-deploy-provisioning-package.md)
+
 # Maintain
 ## [Manage HoloLens Updates](hololens-updates.md)
 ## Fixing HoloLens Issues

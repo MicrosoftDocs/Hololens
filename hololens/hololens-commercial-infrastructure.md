@@ -5,7 +5,6 @@ ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
 ms.author: pawinfie
-audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
 ms.date: 1/23/2020
@@ -185,6 +184,3 @@ Certificates can be deployed via you MDM (see "certificates" in the [MDM Section
 
 1. [Create Profiles:](https://docs.microsoft.com/intune/configuration/device-profile-create) Profiles allow you to add and configure settings that will be pushed to the devices in your organization.
 
-## Next (Optional) Step: [Configure HoloLens using a provisioning package](hololens-provisioning.md)
-
-## Next Step: [Enroll your device](hololens-enroll-mdm.md)
