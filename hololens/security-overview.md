@@ -15,7 +15,7 @@ appliesto:
 - HoloLens 2
 ---
 
-## Security overview
+# Security overview
 
 To meet the challenges of a modern threat landscape and its associated risks, the HoloLens 2 Windows Holographic for Business operating system (OS) has been transformed to provide advanced, innovative security and privacy protection, end-to-end.
 
