@@ -3,11 +3,13 @@ title: Common Infrastructure Deployment Scenarios
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 6/30/2020
 keywords: hololens
+manager: yannisle
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
 ms.author: v-evmill
 ms.topic: article
+audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
