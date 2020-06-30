@@ -43,10 +43,10 @@
 # Holographic applications
 ## [Find, install, and uninstall applications](holographic-store-apps.md)
 ## [Manage custom apps for HoloLens](holographic-custom-apps.md)
-## Application management overview
-## Intune & Company Portal
-## Microsoft Store for Business
-## Provisioning Package
+## [Application management overview](app-deploy-overview.md)
+## [Intune & Company Portal](app-deploy-intune.md)
+## [Microsoft Store for Business](app-deploy-storebusiness.md)
+## [Provisioning Package](app-deploy-provisioningpackage.md)
 
 # Accessories and connectivity
 ## [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
