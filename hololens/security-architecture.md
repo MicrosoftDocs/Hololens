@@ -15,7 +15,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Security architecture
+# Security overview and architecture
 
 The Windows Holographic for Business security architecture is being completely redesigned and engineered from the ground up to be free from legacy security issues, while creating a minimized attack surface. This new, innovative architecture offers secure storage locations and advanced security elements, with mechanisms capable of shielding operating systems from potential threats and vulnerabilities.
 
