@@ -19,6 +19,7 @@
 ### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 ### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 ### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
+### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
 
 ## Navigate the Windows Holographic interface
 ### [Use the Start menu and mixed reality home](holographic-home.md)
@@ -71,7 +72,7 @@
 ### Microsoft Store for Business
 ### Provisioning Package
 # Maintain
-## [Update the Operating System](hololens-updates.md)
+## [Manage HoloLens Updates](hololens-updates.md)
 ## Fixing HoloLens Issues
 ### [Troubleshooting](hololens-troubleshooting.md)
 ### [Restart, reset, or recover HoloLens 2](hololens-recovery.md)
@@ -81,12 +82,8 @@
 ### [Collect and use diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
 ### [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
-# Resources
-## [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
-## [Status of the HoloLens services](hololens-status.md)
-## [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
-
-# [HoloLens release notes](hololens-release-notes.md)
+# [HoloLens release notes]
+# [HoloLens 2 release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
