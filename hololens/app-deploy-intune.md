@@ -26,10 +26,10 @@ With Mobile Device Management (MDM), you can use your own custom apps through [M
 
 1. Upload an app to a Line of Business, or upload a custom app to your Intune tenant. See also: [Enterprise app management](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management).
 
-```
+
 > [!NOTE] 
->     When building your appx bundle make sure to account for including the architecture for the device(s) that you are deploying to. HoloLens 2 is ARM64, and HoloLens (1st Gen) is x86. You may include both in a single appx bundle if you plan on having a mixed devices environment.
-```
+> ```When building your appx bundle make sure to account for including the architecture for the device(s) that you are deploying to. HoloLens 2 is ARM64, and HoloLens (1st Gen) is x86. You may include both in a single appx bundle if you plan on having a mixed devices environment.```
+
 
 2. [Assign your app to a group](https://docs.microsoft.com/mem/intune/apps/apps-deploy). Based on the assignment type you choose you can have the app delivered automatically or available to be readily pulled down if you have a selection of apps. 
 
