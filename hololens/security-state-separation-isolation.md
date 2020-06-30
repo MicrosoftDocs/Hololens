@@ -62,9 +62,13 @@ A high-value alterable state on Windows Holographic for Business resides on the 
 
 #### User data
 The last category of state represents user data produced or persisted by UWP applications or the operating system. All known low-value user folders such as Downloads, Documents, Videos, user profiles and HKEY_CURRENT_USER hive are also stored in this location.
-3.3	ISOLATION
+
+##	Isolation
+
 To achieve this balance, Windows Holographic for Business has a core operating system that is used for primary functions such as booting up, hardware control, logging in etc. There are only two sets of applications that run on the host operating system – pre-installed applications and UWP apps.
-3.4	CODE SIGNING
+
+## Code Signaling
+
 Digitally signing code allows substantiation that executables and scripts have not been modified since they were signed by a trusted source therefore providing authenticity and integrity. The authorities that Windows Holographic for Business trusts by default are Microsoft and Microsoft Store. IT administrators can add new certificates to the device through the ClientCertificateInstall and RootCATrustedCertificates CSPs. They can also use the AllowAllTrustedApps policy to trust additional sideloaded or line of business apps. 
 
 ## Defender protections
