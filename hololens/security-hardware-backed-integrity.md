@@ -4,7 +4,7 @@ description: limiting password use for holoLens
 author: jbennett
 ms.date: 6/30/2020
 ms.topic: article
-keywords: security, hololens, Hardware backed integrity, runtime attestation,	UEFI, UEFI secure boot, secure boot, TPM, threat protection, Windows Anti-Persistence Assurance, code integrity, code protection, 
+keywords: security, hololens, Hardware backed integrity, run-time attestation,	UEFI, UEFI secure boot, secure boot, TPM, threat protection, Windows Anti-Persistence Assurance, code integrity, code protection, 
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -15,9 +15,9 @@ appliesto:
 - HoloLens 2
 ---
 
-# Hardware backed integrity, runttime attestation
+# Hardware backed integrity, run-time attestation
 
-Hardware-backed integrity and runtime attestation protects against threats that originate prior to the start of an operating system, during runtime, when the device uses hardware, and remote attestation services to ensure integrity is maintained at startup and throughout runtime duration.
+Hardware-backed integrity and run-time attestation protects against threats that originate prior to the start of an operating system, during run-time, when the device uses hardware, and remote attestation services to ensure integrity is maintained at startup and throughout run-time duration.
 
 ## UEFI secure boot
 
@@ -43,10 +43,10 @@ In fact, targeted attacks are considered “advanced persistent threats”, due 
 
 ### Windows Anti-Persistence Assurance
 
-Windows Holographic for Business anti-persistence guarantees its users that even in the rare situation that a runtime compromise of the system were to ever occur – such as a remote exploit – such an event would be mitigated with all malicious code removed from the system simply by powering off the device. To further strengthen its anti-persistence, Windows Holographic for Business has added powerful integrity protection, and put read-only protections in place.
+Windows Holographic for Business anti-persistence guarantees its users that even in the rare situation that a run-time compromise of the system were to ever occur – such as a remote exploit – such an event would be mitigated with all malicious code removed from the system simply by powering off the device. To further strengthen its anti-persistence, Windows Holographic for Business has added powerful integrity protection, and put read-only protections in place.
 
 Persistence to operating system data in form of data or 3rd party device drivers is still possible, unless the user performs Push-button reset (PBR) of the device that wipes all mutable partitions. While persistence to immutable partitions is made much harder, the user needs to PBR the Hololens 2 to remove any possible threat-persistence from mutable parts.
 
 ## Code integrity protection 
 
-Code integrity (CI) is a key security property of a modern operating system. Enforcing CI enables sound security decisions, because it guarantees the provenance of code is transparent to both the user and operating system. Complete code integrity needs to extend past binary image signing and include runtime enforcement, such as control flow integrity and dynamic code restrictions. CI is critical to preventing multiple classes of attacks including socially engineered malware, such as ransomware, remote code execution exploits, and various other attack classes.
+Code integrity (CI) is a key security property of a modern operating system. Enforcing CI enables sound security decisions, because it guarantees the provenance of code is transparent to both the user and operating system. Complete code integrity needs to extend past binary image signing and include run-time enforcement, such as control flow integrity and dynamic code restrictions. CI is critical to preventing multiple classes of attacks including socially engineered malware, such as ransomware, remote code execution exploits, and various other attack classes.
