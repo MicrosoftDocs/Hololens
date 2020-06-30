@@ -33,7 +33,7 @@ Within [Windows Configuration Designer](https://www.microsoft.com/store/productI
 
 1. Set ApplicationManagement/AllowAllTrustedApps To “Yes”. See: [ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
 2. Under **UniversalAppInstall** > **UserContextAppLicense** please enter the **PackageFamilyName**. See [UniversalAppInstall](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall). See also: [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
-- If you don’t know this, you can use Device Portal on a device you have already installed your app to. Visit the Apps page, and look at the PackageRelativeID line, all the information before the "!" Is your **PackageFamilyName**.
+    - If you don’t know this, you can use Device Portal on a device you have already installed your app to. Visit the Apps page, and look at the PackageRelativeID line, all the information before the "!" Is your **PackageFamilyName**.
 3. You will then see that you have a new section, **ApplicationFile**. Use this area to upload your appx bundle. 
 4. Depending on if you have purchased your app or built your own LOB app, you will need to upload the license file or security certificate.
     - For license file: Under **UniversalAppInstall** > **UserContextAppLience** and browse to the location of your license and upload it. 
