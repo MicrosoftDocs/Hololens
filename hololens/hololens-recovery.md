@@ -14,12 +14,10 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
+
 ---
 
-# Reset and Recovery for HoloLens 2
+# Restart, reset, or recover HoloLens
 
 ## Charging the device
 

@@ -1,5 +1,5 @@
 ---
-title: Environment considerations for HoloLens
+title: HoloLens environment considerations
 description: Get the best possible experience using HoloLens when you optimize the device for your eyes and environment. Many different environmental factors are fused together to enable tracking, but as a Mixed Reality developer, there are several factors you can keep in mind to tune a space for better holograms.
 keywords: holographic frame, field of view, fov, calibration, spaces, environment, how-to
 author: dorreneb
@@ -10,12 +10,9 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
 ---
 
-# Environment considerations for HoloLens
+# HoloLens environment considerations
 
 HoloLens blends the holographic with the "real" world, placing holograms in your surroundings. A holographic app window "hangs" on the wall, a holographic ballerina spins on the tabletop, bunny ears sit on top of your unwitting friend’s head. When you’re using an immersive game or app, the holographic world will spread to fill your surroundings but you’ll still be able to see and move around the space.
 
