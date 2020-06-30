@@ -1,8 +1,6 @@
 ---
 title: security adminless os
 description: adminless os and hololens security
-ms.prod: hololens
-ms.sitesec: library
 author: jbennett
 ms.date: 6/30/2020
 ms.topic: article
