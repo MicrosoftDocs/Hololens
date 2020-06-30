@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Security Questions
+title: Frequently asked security questions
 description: security questions frequently asked about the hololens
 ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
 author: pawinfie
@@ -15,12 +15,9 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 manager: bradke
-appliesto:
-- HoloLens 1 (1st gen)
-- HoloLens 2
 ---
 
-# Frequently asked questions about HoloLens security
+# Frequently asked security questions
 
 ## HoloLens (1st gen) Security Questions
 
