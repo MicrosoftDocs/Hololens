@@ -82,8 +82,8 @@
 ### [Collect and use diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
 ### [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
-# [HoloLens release notes]
-# [HoloLens 2 release notes](hololens-release-notes.md)
+# HoloLens release notes]
+## [HoloLens 2 release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
