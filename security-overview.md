@@ -7,7 +7,6 @@ ms.topic: article
 keywords: security, hololens, hololens 2, hololens2 security, security overview
 ms.prod: hololens
 ms.sitesec: library
-author: Teresa-Motiv
 ms.localizationpriority: high
 ms.reviewer: 
 manager: yannisl
