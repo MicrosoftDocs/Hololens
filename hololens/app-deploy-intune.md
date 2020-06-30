@@ -39,7 +39,7 @@ If you prefer to make your app available for download to those enrolled through 
 
 ## End User Experience
 
-After you have set up configuration on Intune: 
+After you have set up configuration on Intune you are ready for end users to recieve your selected apps.
 
 Follow these steps to automatically get your app(s):
 1. Enroll your device with your tenant. 
