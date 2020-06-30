@@ -1,6 +1,8 @@
 ---
 title: security adminless os
-description: adminless os, hololens security
+description: adminless os and hololens security
+ms.prod: hololens
+ms.sitesec: library
 author: jbennett
 ms.date: 6/30/2020
 ms.topic: article
@@ -9,7 +11,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
