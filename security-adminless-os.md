@@ -1,5 +1,5 @@
 ---
-title: admin-less operating system
+title: security adminless os
 description: adminless os, hololens security
 author: jbennett
 ms.date: 6/30/2020
