@@ -96,4 +96,4 @@ Single local account can be configured for offline mode deployments. Local accou
 
 More details on HoloLens user accounts can be found on [HoloLens Identity](https://docs.microsoft.com/hololens/hololens-identity). 
 
-IT administrators adjust whether the user is allowed to use an MSA account for non-email related connection authentication and services through [AllowingMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). For password configuration policies, idling policies, and lockscreen policies, see [Device Lock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock). 
+IT administrators adjust whether the user is allowed to use an MSA account for non-email related connection authentication and services through [AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). For password configuration policies, idling policies, and lockscreen policies, see [Device Lock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock). 
