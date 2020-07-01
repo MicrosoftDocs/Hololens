@@ -276,7 +276,7 @@ Logging is limited to traces that can be captured in development or troubleshoot
 
 ## Questions about securing HoloLens devices
 
-See [frequently asked questions about securing HoloLens devices](hololens-faq-security.md).
+See [our HoloLens 2 security information](security-overview.md).
 
 [Back to list](#list)
 
