@@ -19,6 +19,8 @@ manager: bradke
 
 # Frequently asked HoloLens (1st gen) Security Questions
 
+1. **What level of data protection does HoloLens 1 offer?**
+    1. See [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 1. **What type of wireless is used?**
     1. 802.11ac and Bluetooth 4.1 LE
 1. **What type of architecture is incorporated?  For example: point to point, mesh or something else?**
