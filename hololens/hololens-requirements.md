@@ -16,18 +16,20 @@ ms.date: 07/15/2019
 
 You can deploy and configure HoloLens at scale in a commercial setting. This article provides instructions for deploying HoloLens devices in a commercial environment. This guide assumes basic familiarity with HoloLens. Follow the [get started guide](hololens1-setup.md) to set up HoloLens for the first time.
 
-This document also assumes that the HoloLens has been evaluated by security teams as safe to use on the corporate network. Frequently asked security questions can be found [here](hololens-faq-security.md)
+This document also assumes that the HoloLens has been evaluated by security teams as safe to use on the corporate network.  
+> [!Tip]
+> Learn more about [HoloLens security](security-overview.md).
 
 ## Overview of Deployment Steps
 
 1. [Determine what features you need](hololens-requirements.md#step-1-determine-what-you-need)
-1. [Determine what licenses you need](hololens-licenses-requirements.md)
-1. [Configure your network for HoloLens](hololens-commercial-infrastructure.md).
+2. [Determine what licenses you need](hololens-licenses-requirements.md)
+3. [Configure your network for HoloLens](hololens-commercial-infrastructure.md).
     1. This section includes bandwidth requirements, URL, and ports that need to be allowed on your firewall; Azure AD guidance; Mobile Device Management (MDM) Guidance; app deployment/management guidance; and certificate guidance.
-1. (Optional) [Configure HoloLens using a provisioning package](hololens-provisioning.md)
-1. [Enroll Device](hololens-enroll-mdm.md)
-1. [Set up ring based updates for HoloLens](hololens-updates.md)
-1. [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
+4. (Optional) [Configure HoloLens using a provisioning package](hololens-provisioning.md)
+5. [Enroll Device](hololens-enroll-mdm.md)
+6. [Set up ring based updates for HoloLens](hololens-updates.md)
+7. [Enable Bitlocker device encryption for HoloLens](security-encryption-data-protection.md)
 
 ## Step 1. Determine what you need
 
