@@ -27,10 +27,9 @@ State separation on HoloLens 2 vastly improves security and serviceability (upda
 
 ## State separation benefits
 
-HoloLens 2 state separation benefits the following areas:
   * Security: The state separation featured in HoloLens 2 significantly improves platform integrity, malware resistance and user data protection. By separating the unalterable part of the operating system and making it read-only or integrity protected, state separation makes it extremely difficult for malware to persist across a cold reboot. 
   * Updates: With HoloLens 2, once the core operating system is unmodifiable and has been cleanly separated from the rest of the data on the device, updates become simple and reliable.  In addition, state separation lays the vital groundwork for dramatically faster updates, which permits the operating system to be replaced in a single step (atomic unit).
-  * Device reset: HoloLens 2 reset clears user generated data and user app data on the device – including internal and external storage locations. It preserves the current OS apps and security critical apps (MainOS), and the current Microsoft and OEM customized apps (Preinstalled). These Preinstalled apps can be rehydrated on the device after reset completes
+  * Device reset: HoloLens 2 reset clears user generated data and user app data on the device – including internal and external storage locations. It preserves the current OS apps and security critical apps, and the current Microsoft and OEM customized apps (Preinstalled). These Preinstalled apps can be rehydrated on the device after reset completes
 
 ### State separation states
 
@@ -69,7 +68,7 @@ The last category of state represents user data produced or persisted by UWP app
 
 To achieve this balance, HoloLens 2 has a core operating system that is used for primary functions such as booting up, hardware control, logging in etc. There are only two sets of applications that run on the host operating system – pre-installed applications and UWP apps.
 
-## Code signaling
+## Code signing
 
 Digitally signing code allows substantiation that executables and scripts have not been modified since they were signed by a trusted source therefore providing authenticity and integrity. The authorities that HoloLens 2 trusts by default are Microsoft and Microsoft Store. IT administrators can add new certificates to the device through the [ClientCertificateInstall](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp) and [RootCATrustedCertificates](https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp) CSPs. They can also use the [AllowAllTrustedApps policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) to trust additional sideloaded or [Line-of-business apps](https://docs.microsoft.com/intune/apps/lob-apps-windows). 
 
