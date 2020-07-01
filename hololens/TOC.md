@@ -59,7 +59,7 @@
 ### [State separation and isolation](security-state-separation-isolation.md)
 ### [Admin-less operating system ](security-adminless-os.md)
 ### [Limiting password use](security-limiting-password-use.md)
-### [Hardware-backed security, runtime attestation](security-hardware-backed-integrity.md)
+### [Hardware-backed security and runtime attestation](security-hardware-backed-integrity.md)
 ### [Encryption and data protection](security-encryption-data-protection.md)
 ### [Network security](security-network-security.md)
 ### [Wireless and Wi-Fi](security-wireless-wifi.md)
