@@ -1,5 +1,5 @@
 ---
-title: Hardware backed integrity, runtime attestation
+title: Hardware backed integrity and runtime attestation
 description: limiting password use for holoLens 
 author: jbennett
 ms.date: 6/30/2020
@@ -14,7 +14,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Hardware-backed integrity, runtime attestation
+# Hardware-backed integrity and runtime attestation
 
 Hardware-backed integrity and runtime attestation protects against threats that originate prior to the start of an operating system, during runtime, when the device uses hardware, and remote attestation services to ensure integrity is maintained at startup and throughout runtime duration.
 
@@ -29,12 +29,12 @@ The Trusted Platform Module (TPM) is a specialized chip on an endpoint device. H
 
 ## Secure boot 
 
-HoloLens 2 enforces Unified Extensible Firmware Interface (UEFI) Secure Boot on all MainOS state. UEFI only boots Microsoft trusted platforms which ensures that the entire boot chain is verified for integrity, and that Windows always boots with the correct security policies applied to it. HoloLens 2 does not Secure Boot to be turned off, nor does it allow 3rd party boot loaders.
+HoloLens 2 enforces Unified Extensible Firmware Interface (UEFI) Secure Boot on all core operating system state. UEFI only boots Microsoft trusted platforms which ensures that the entire boot chain is verified for integrity, and that Windows always boots with the correct security policies applied to it. HoloLens 2 does not Secure Boot to be turned off, nor does it allow 3rd party boot loaders.
 
 > [!Tip]
 > Learn more about [Secure boot](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot).
 
-## Persistence access threat protection 
+## Persistent access threat protection 
 
 The goal of most cyberattacks is to maintain persistent access to a device. For cybercrime, maintaining this persistence enables a compromised Windows device to join a botnet, sell access to the device or other nefarious users, or to enable repeated data theft. In the world of targeted attacks, persistence is essential to a successful cyberattack – whether on a device or (more commonly), an entire network.  
 
