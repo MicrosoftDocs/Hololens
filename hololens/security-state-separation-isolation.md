@@ -21,17 +21,17 @@ State separation and isolation protects critical portions of the Hololens 2 oper
 
 ## State separation
 
-State separation on Windows Holographic for Business vastly improves security and serviceability (updating) and helps protect your application data.  State separation works as follows:
+State separation on HoloLens 2 vastly improves security and serviceability (updating) and helps protect your application data.  State separation works as follows:
   * The core operating system is stored in the core operating system volume (trusted or verified Microsoft OS updating the operating system).
   * The portions of the operating system that can be changed at run time (such as downloadable drivers and configurations), use further state separation to partition the data, and to store it in secure, separate storage locations.
   * Each secure storage location has distinct security policies associated with it, offering varied security advantages as detailed in the following section.
 
 ## State separation benefits
 
-Windows Holographic for Business state separation benefits the following areas:
-  * Security: The state separation featured in Windows Holographic for Business significantly improves platform integrity, malware resistance and user data protection. By separating the unalterable part of the operating system and making it read-only or integrity protected, state separation makes it extremely difficult for malware to persist across a cold reboot. 
-  * Updates: With Windows Holographic for Business, once the core operating system is unmodifiable and has been cleanly separated from the rest of the data on the device, updates become simple and reliable.  In addition, state separation lays the vital groundwork for dramatically faster updates, which permits the operating system to be replaced in a single step (atomic unit).
-  * Device reset: Windows Holographic for Business reset clears user generated data and user app data on the device – including internal and external storage locations. It preserves the current OS apps and security critical apps (MainOS), and the current Microsoft and OEM customized apps (Preinstalled).  These Preinstalled apps can be rehydrated on the device after reset completes
+HoloLens 2 state separation benefits the following areas:
+  * Security: The state separation featured in HoloLens 2 significantly improves platform integrity, malware resistance and user data protection. By separating the unalterable part of the operating system and making it read-only or integrity protected, state separation makes it extremely difficult for malware to persist across a cold reboot. 
+  * Updates: With HoloLens 2, once the core operating system is unmodifiable and has been cleanly separated from the rest of the data on the device, updates become simple and reliable.  In addition, state separation lays the vital groundwork for dramatically faster updates, which permits the operating system to be replaced in a single step (atomic unit).
+  * Device reset: HoloLens 2 reset clears user generated data and user app data on the device – including internal and external storage locations. It preserves the current OS apps and security critical apps (MainOS), and the current Microsoft and OEM customized apps (Preinstalled). These Preinstalled apps can be rehydrated on the device after reset completes
 
 ### State separation states
 
@@ -40,7 +40,7 @@ State separation ensures the operating system is only changeable by Microsoft tr
   * Operating System Data – Alterable state 
   * User Data – Alterable state
 
-Each of these Windows Holographic for Business operating states is described in the following section.
+Each of these HoloLens 2 operating states is described in the following section.
 
 #### Core operating system
 
@@ -60,7 +60,7 @@ A high-value alterable state is either functionally required to persist by the o
   * Wi-fi network connection access data-device-remembered networks and associated connection passwords.
   * Crash dumps including settings, logs.
   * Drivers downloaded on-demand for newly discovered devices.
-A high-value alterable state on Windows Holographic for Business resides on the operating system Data security location, either as a saved file on disk or in a persisted registry hive.
+A high-value alterable state on HoloLens 2 resides on the operating system Data security location, either as a saved file on disk or in a persisted registry hive.
 
 #### User data
 
@@ -68,11 +68,11 @@ The last category of state represents user data produced or persisted by UWP app
 
 ##	Isolation
 
-To achieve this balance, Windows Holographic for Business has a core operating system that is used for primary functions such as booting up, hardware control, logging in etc. There are only two sets of applications that run on the host operating system – pre-installed applications and UWP apps.
+To achieve this balance, HoloLens 2 has a core operating system that is used for primary functions such as booting up, hardware control, logging in etc. There are only two sets of applications that run on the host operating system – pre-installed applications and UWP apps.
 
 ## Code signaling
 
-Digitally signing code allows substantiation that executables and scripts have not been modified since they were signed by a trusted source therefore providing authenticity and integrity. The authorities that Windows Holographic for Business trusts by default are Microsoft and Microsoft Store. IT administrators can add new certificates to the device through the [ClientCertificateInstall](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp) and [RootCATrustedCertificates](https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp) CSPs. They can also use the [AllowAllTrustedApps policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) to trust additional sideloaded or [Line-of-business apps](https://docs.microsoft.com/intune/apps/lob-apps-windows). 
+Digitally signing code allows substantiation that executables and scripts have not been modified since they were signed by a trusted source therefore providing authenticity and integrity. The authorities that HoloLens 2 trusts by default are Microsoft and Microsoft Store. IT administrators can add new certificates to the device through the [ClientCertificateInstall](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp) and [RootCATrustedCertificates](https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp) CSPs. They can also use the [AllowAllTrustedApps policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) to trust additional sideloaded or [Line-of-business apps](https://docs.microsoft.com/intune/apps/lob-apps-windows). 
 
 ## Defender protections
 HoloLens 2 uses Microsoft services to give users an advanced level of security:
