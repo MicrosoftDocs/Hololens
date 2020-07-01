@@ -53,7 +53,8 @@
 ### [Connect HoloLens to a network](hololens-network.md)
 ### [Manage connection endpoints for HoloLens](hololens-offline.md)
 ### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
-## [Security overview](security-overview.md)
+## Security
+### [Security overview](security-overview.md)
 ### [Architecture](security-architecture.md)
 ### [State separation and isolation](security-state-separation-isolation.md)
 ### [Admin-less operating system ](security-adminless-os.md)
