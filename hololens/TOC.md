@@ -65,6 +65,7 @@
 ### [Wireless and Wi-Fi](security-wireless-wifi.md)
 ### [Security engineering ](security-engineering.md)
 #### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
+#### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 
 ## Policies
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
