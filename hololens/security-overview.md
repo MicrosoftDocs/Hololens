@@ -17,7 +17,7 @@ appliesto:
 
 # Security overview
 
-To meet the challenges of a modern threat landscape and its associated risks, the HoloLens 2 operating system (OS) has been transformed to provide advanced, innovative security and privacy protection, end-to-end.
+To meet the challenges of a modern threat landscape and its associated risks, the HoloLens 2 security architecture has been completely redesigned to provide advanced, innovative security and privacy protection, end-to-end.
 
 With HoloLens 2, businesses and customers have a truly modern, cutting-edge operating system with a strong, built-in security framework. This contemporary operating system allows developers to design, build, and deliver applications with an exceptional security strategy, to effectively combat a complex threat landscape and its associated risks. 
 
