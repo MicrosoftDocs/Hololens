@@ -11,7 +11,6 @@ ms.localizationpriority: high
 ms.reviewer: 
 manager: yannisl
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
 ---
 
