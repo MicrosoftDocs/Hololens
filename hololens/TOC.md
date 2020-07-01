@@ -53,6 +53,7 @@
 ### [Connect HoloLens to a network](hololens-network.md)
 ### [Manage connection endpoints for HoloLens](hololens-offline.md)
 ### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
+
 ## [Security overview](security-overview.md)
 ### [Architecture](security-architecture.md)
 ### [State separation and isolation](security-state-separation-isolation.md)
@@ -63,6 +64,7 @@
 ### [Network security](security-network-security.md)
 ### [Wireless and Wi-Fi](security-wireless-wifi.md)
 ### [Security engineering ](security-engineering.md)
+
 ## Policies
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
