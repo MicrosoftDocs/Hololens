@@ -19,6 +19,7 @@ You can deploy and configure HoloLens at scale in a commercial setting. This art
 This document also assumes that the HoloLens has been evaluated by security teams as safe to use on the corporate network.  
 > [!Tip]
 > Learn more about [HoloLens security](security-overview.md).
+> For HoloLens (1st Gen) security please review [this FAQ](hololens1-faq-security.md).
 
 ## Overview of Deployment Steps
 
