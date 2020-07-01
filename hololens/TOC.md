@@ -64,6 +64,7 @@
 ### [Network security](security-network-security.md)
 ### [Wireless and Wi-Fi](security-wireless-wifi.md)
 ### [Security engineering ](security-engineering.md)
+#### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
 
 ## Policies
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
