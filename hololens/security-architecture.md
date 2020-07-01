@@ -16,7 +16,7 @@ appliesto:
 
 # Security overview and architecture
 
-The HoloLens 2 security architecture is being completely redesigned and engineered from the ground up to be free from legacy security issues, while creating a minimized attack surface. This new, innovative architecture offers secure storage locations and advanced security elements, with mechanisms capable of shielding operating systems from potential threats and vulnerabilities.
+The HoloLens 2 security architecture has been completely redesigned and engineered from the ground up to be free from legacy security issues, while creating a minimized attack surface. This new, innovative architecture offers secure storage locations and advanced security elements, with mechanisms capable of shielding operating systems from potential threats and vulnerabilities.
 
 HoloLens 2 combines hardware, software, networking, and services to deliver end-to-end security, while providing the user with an optimal experience. With HoloLens 2, a large majority of security features are now turned on automatically, minimizing the effort required to correctly set up and configure the operating system.
 
