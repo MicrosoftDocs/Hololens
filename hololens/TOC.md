@@ -64,6 +64,7 @@
 ### [Network security](security-network-security.md)
 ### [Wireless and Wi-Fi](security-wireless-wifi.md)
 ### [Security engineering ](security-engineering.md)
+### HoloLens 1st Gen Security
 #### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
 #### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 
