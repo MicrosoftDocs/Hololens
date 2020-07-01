@@ -90,9 +90,9 @@ MSA and AAD are among the first relying parties to support password-less authent
 
 For more information on using WebAuthn with applications and/or SDKs, go to [WebAuthn APIs for password-less authentication on Windows 10](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis).
 
-## Local account
+## Local accounts
 
-Single local account can be configured for offline mode deployments. Local accounts are not enabled by default and must be configured during device provisioning. Local Accounts do not support alternate authentication methods and must sign in using a password. Local accounts don’t support [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) or [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) features. 
+A single local account can be configured for offline mode deployments. Local accounts are not enabled by default and must be configured during device provisioning. They must sign-in using a password and do not support alternate authentication methods (such as [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) or [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)). 
 
 More details on HoloLens user accounts can be found on [HoloLens Identity](https://docs.microsoft.com/hololens/hololens-identity). 
 
