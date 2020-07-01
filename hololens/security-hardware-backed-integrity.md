@@ -21,7 +21,7 @@ Hardware-backed integrity and runtime attestation protects against threats that 
 
 ## UEFI secure boot
 
-Windows Holographic for Business enforces Unified Extensible Firmware Interface (UEFI) Secure Boot at all times, and UEFI only boots Microsoft trusted platforms.
+HoloLens 2 enforces Unified Extensible Firmware Interface (UEFI) Secure Boot at all times, and UEFI only boots Microsoft trusted platforms.
 Secure Boot ensures that the entire boot chain is verified for integrity, and that Windows always boots with the correct security policies applied to it. To learn more about Secure Boot go here.
 
 ## TPM
@@ -43,7 +43,7 @@ In fact, targeted attacks are considered “advanced persistent threats”, due 
 
 ### Windows Anti-Persistence Assurance
 
-Windows Holographic for Business anti-persistence guarantees its users that even in the rare situation that a runtime compromise of the system were to ever occur – such as a remote exploit – such an event would be mitigated with all malicious code removed from the system simply by powering off the device. To further strengthen its anti-persistence, Windows Holographic for Business has added powerful integrity protection, and put read-only protections in place.
+HoloLens 2 anti-persistence guarantees its users that even in the rare situation that a runtime compromise of the system were to ever occur – such as a remote exploit – such an event would be mitigated with all malicious code removed from the system simply by powering off the device. To further strengthen its anti-persistence, HoloLens 2 has added powerful integrity protection, and put read-only protections in place.
 
 Persistence to operating system data in form of data or 3rd party device drivers is still possible, unless the user performs Push-button reset (PBR) of the device that wipes all mutable partitions. While persistence to immutable partitions is made much harder, the user needs to PBR the Hololens 2 to remove any possible threat-persistence from mutable parts.
 
