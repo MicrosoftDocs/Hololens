@@ -107,6 +107,7 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 |Photos |Microsoft.Windows.Photos\_8wekyb3d8bbwe\!App |
 |Settings |HolographicSystemSettings\_cw5n1h2txyewy\!App |
 |Tips |Microsoft.HoloLensTips\_8wekyb3d8bbwe\!HoloLensTips |
+|DevicesFlowHost |Microsoft.Windows.DevicesFlowHost_cw5n1h2txyewy!Microsoft.Windows.DevicesFlowHost |
 
 > <sup>1</sup> To enable photo or video capture, you have to enable the Camera app as a kiosk app.  
 > <sup>2</sup> When you enable the Camera app, be aware of the following conditions:
@@ -114,7 +115,7 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 > - You should also enable an app (such as Photos, Mail, or OneDrive) that can interact with or retrieve pictures.  
 >  
 > <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.  
-> <sup>4</sup> You cannot enable Miracast directly. To enable Miracast as a kiosk app, enable the Camera app and the Device Picker app.
+> <sup>4</sup> You cannot enable Miracast directly. To enable Miracast as a kiosk app, enable the Camera app, DevicesFlowHost and the Device Picker app.
 
 ### Plan user and device groups
 
