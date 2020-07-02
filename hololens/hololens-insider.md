@@ -69,7 +69,7 @@ You are welcome and encouraged to try developing your applications using Insider
 
 ## Windows Insider Release Notes
 
-As of our [Windows Holographic May 2020 Update](hololens-release-notes.md) release all of our release preview feautres are now generally avalible! Make sure to [update your HoloLens](hololens-update-hololens.md) to get all the latest features.  
+As of our [Windows Holographic May 2020 Update](hololens-release-notes.md) release all of our release preview feautres are now generally available! Make sure to [update your HoloLens](hololens-update-hololens.md) to get all the latest features.  
 
 We'll be updating this page again with new features again as we release them to Windows Insider builds. 
 
