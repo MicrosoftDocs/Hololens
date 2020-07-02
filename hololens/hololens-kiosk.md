@@ -354,7 +354,7 @@ To enable the **Guest** account, add the following snippet to your kiosk configu
 
 #### <a id="start-layout-for-hololens"></a>Placeholder Start layout for HoloLens
 
-If you use a [provisioning package](##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Windows Holographic for Business. Therefore, you'll have to use a placeholder Start layout.
+If you use a [provisioning package](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Windows Holographic for Business. Therefore, you'll have to use a placeholder Start layout.
 
 > [!NOTE]  
 > Because a single-app kiosk starts the kiosk app when a user signs in, it does not use a Start menu and does not have to have a Start layout.
