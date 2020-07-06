@@ -88,7 +88,7 @@ There are a few system behavior changes with Auto Eye Position feature when an u
 
  If the user transitions from a non-gaze enabled application to one that accesses the gaze data, the calibration prompt will be displayed. There will be no changed to Out Of Box Experience flow. 
  
-For experiences that require eye gaze data or very precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
+For experiences that require eye gaze data or very precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration from the eye tracking calibration prompt or by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
 
 **Known issues**
 1.	We're investigating an issue where the eye tracker driver host process could crash when running under heavy memory load. The eye tracking driver host process should auto recover.
