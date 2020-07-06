@@ -101,8 +101,8 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 |Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast<sup>4</sup> |&nbsp; |
-|Device Picker |HoloDevicesFlow\_cw5n1h2txyewy\!HoloDevicesFlow |
-|DevicesFlowHost |Microsoft.Windows.DevicesFlowHost_cw5n1h2txyewy!Microsoft.Windows.DevicesFlowHost |
+|Device Picker on HoloLens (1st gen) |HoloDevicesFlow\_cw5n1h2txyewy\!HoloDevicesFlow |
+|Device Picker on HoloLens 2 |Microsoft.Windows.DevicesFlowHost\_cw5n1h2txyewy\!Microsoft.Windows.DevicesFlowHost |
 |Movies & TV |Microsoft.ZuneVideo\_8wekyb3d8bbwe\!Microsoft.ZuneVideo |
 |OneDrive |microsoft.microsoftskydrive\_8wekyb3d8bbwe\!App |
 |Photos |Microsoft.Windows.Photos\_8wekyb3d8bbwe\!App |
@@ -115,7 +115,7 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 > - You should also enable an app (such as Photos, Mail, or OneDrive) that can interact with or retrieve pictures.  
 >  
 > <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.  
-> <sup>4</sup> You cannot enable Miracast directly. To enable Miracast as a kiosk app, enable the Camera app, DevicesFlowHost and the Device Picker app.
+> <sup>4</sup> You cannot enable Miracast directly. To enable Miracast as a kiosk app enable the Camera app and the Device Picker app.
 
 ### Plan user and device groups
 
