@@ -6,7 +6,7 @@ ms.sitesec: library
 author: scooley
 ms.author: scooley
 ms.topic: article
-ms.custom: 
+ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.localizationpriority: medium
@@ -24,7 +24,7 @@ Welcome to the latest Insider Preview builds for HoloLens!  It's simple to get s
 
 Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
 
-![Windows Insider Channels explination](images/WindowsInsiderChannels.png)
+![Windows Insider Channels explanation](images/WindowsInsiderChannels.png)
 
 For more information: [Windows Blog entry](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
 
@@ -54,7 +54,6 @@ To opt out of Insider builds:
 1. Follow the instructions to opt out your device.
 
 
-
 ## Provide feedback and report issues
 
 Please use [the Feedback Hub app](hololens-feedback.md) on your HoloLens to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.  Issues with the Chinese and Japanese version of HoloLens should be reported the same way.
@@ -69,9 +68,10 @@ You are welcome and encouraged to try developing your applications using Insider
 
 ## Windows Insider Release Notes
 
-If you are looking for a feature previously listed here that you don't see then it has made it's way into the non-insider builds, please make sure to read the [Release notes](hololens-release-notes.md) to see all features generally available. Make sure to [update your HoloLens](hololens-update-hololens.md) to get all the latest features.  
+As of our [Windows Holographic May 2020 Update](hololens-release-notes.md) release all of our release preview features are now generally available! Make sure to [update your HoloLens](hololens-update-hololens.md) to get all the latest features.
 
-We'll be updating this page again with new features as we release them to Windows Insider builds. 
+We'll be updating this page again with new features again as we release them to Windows Insider builds.
+
 
 ### Auto Eye Position Support
 
@@ -97,6 +97,6 @@ For experiences that require eye gaze data or very precise hologram positioning,
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
 1. On PC
     1. Download ffu to your PC from: [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
-    1. Install ARC (Advanced Recovery Companion) from the Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 
+    1. Install ARC (Advanced Recovery Companion) from the Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
 1. On HoloLens - Flight Unlock: Open **Settings** > **Update & Security** > **Windows Insider Program** then sign up, reboot device
-1. Flash FFU - Now you can flash the flight signed FFU using ARC 
+1. Flash FFU - Now you can flash the flight signed FFU using ARC
