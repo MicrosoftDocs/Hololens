@@ -72,7 +72,28 @@ As of our [Windows Holographic May 2020 Update](hololens-release-notes.md) relea
 
 We'll be updating this page again with new features again as we release them to Windows Insider builds.
 
-### FFU download and flash directions
+
+### Auto Eye Position Support
+
+In HoloLens 2, eye positions enable accurate hologram positioning, comfortable viewing experience and improved display quality. Eye positions are computed as part of the eye tracking result. However, this requires each user to go through eye tracking calibration, even when the experience does not require eye gaze input.
+
+**Auto Eye Position (AEP)** enables these scenarios with an interaction-free way to compute eye positions for the user.  Auto Eye Position starts working in the background automatically from the moment the user puts the device on. If the user does not have a prior eye tracking calibration, Auto Eye position will start providing the user's eye positions to the display system after a small processing time. This processing time typically is between 20 - 60 seconds. The user data is not persisted on the device and hence this process is repeated if the user takes off and puts the device back on or if the device reboots or wakes up from sleep.  
+
+There are a few system behavior changes with Auto Eye Position feature when an uncalibrated user puts on the device. An uncalibrated user refers to someone who has not gone through the eye tracking calibration process on the device previously.
+
+|     Active Application                           |     Current Behavior                                   |     Behavior from Windows Insider   build 19041.1339+                                                      |
+|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|     Non-gaze enabled app or Holographic Shell    |     Eye tracking calibration prompt is   displayed.    |     No prompt is displayed.                                                                                |
+|     Gaze enabled app                             |     Eye tracking calibration prompt is   displayed.    |     Eye tracking calibration prompt is   displayed only when the application accesses eye gaze stream.     |
+
+ If the user transitions from a non-gaze enabled application to one that accesses the gaze data, the calibration prompt will be displayed. There will be no changed to Out Of Box Experience flow. 
+ 
+For experiences that require eye gaze data or very precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration from the eye tracking calibration prompt or by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
+
+**Known issues**
+1.	We're investigating an issue where the eye tracker driver host process could crash when running under heavy memory load. The eye tracking driver host process should auto recover.
+
+## FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
 1. On PC
     1. Download ffu to your PC from: [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)

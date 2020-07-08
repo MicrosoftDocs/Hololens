@@ -94,7 +94,8 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 |Calendar |microsoft.windowscommunicationsapps\_8wekyb3d8bbwe\!microsoft.windowslive.calendar |
 |Camera<sup>1, 2</sup> |HoloCamera\_cw5n1h2txyewy\!HoloCamera |
 |Cortana<sup>3</sup> |Microsoft.549981C3F5F10\_8wekyb3d8bbwe\!App |
-|Device Picker |HoloDevicesFlow\_cw5n1h2txyewy\!HoloDevicesFlow |
+|Device Picker on HoloLens (1st gen) |HoloDevicesFlow\_cw5n1h2txyewy\!HoloDevicesFlow |
+|Device Picker on HoloLens 2 |Microsoft.Windows.DevicesFlowHost\_cw5n1h2txyewy\!Microsoft.Windows.DevicesFlowHost |
 |Dynamics 365 Guides |Microsoft.Dynamics365.Guides\_8wekyb3d8bbwe\!MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist\_8wekyb3d8bbwe\!Microsoft.RemoteAssist |
 |Feedback&nbsp;Hub |Microsoft.WindowsFeedbackHub\_8wekyb3d8bbwe\!App |
@@ -114,7 +115,7 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 > - You should also enable an app (such as Photos, Mail, or OneDrive) that can interact with or retrieve pictures.  
 >  
 > <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.  
-> <sup>4</sup> You cannot enable Miracast directly. To enable Miracast as a kiosk app, enable the Camera app and the Device Picker app.
+> <sup>4</sup> You cannot enable Miracast directly. To enable Miracast as a kiosk app enable the Camera app and the Device Picker app.
 
 ### Plan user and device groups
 
@@ -353,7 +354,7 @@ To enable the **Guest** account, add the following snippet to your kiosk configu
 
 #### <a id="start-layout-for-hololens"></a>Placeholder Start layout for HoloLens
 
-If you use a [provisioning package](##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Windows Holographic for Business. Therefore, you'll have to use a placeholder Start layout.
+If you use a [provisioning package](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Windows Holographic for Business. Therefore, you'll have to use a placeholder Start layout.
 
 > [!NOTE]  
 > Because a single-app kiosk starts the kiosk app when a user signs in, it does not use a Start menu and does not have to have a Start layout.
