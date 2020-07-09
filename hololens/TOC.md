@@ -38,21 +38,6 @@
 ## Planning for HoloLens 2 Enterprise Deployment
 ### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ### [Common Infrastructure Deployment Scenarios](common-scenarios.md)
-## [License requirements](hololens-licenses-requirements.md)
-## Environment
-### [HoloLens environment considerations](hololens-environment-considerations.md)
-### [Map physical spaces with HoloLens](hololens-spaces.md)
-## [Commercial features](hololens-commercial-features.md)
-## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
-# Configure
-## Identity
-### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
-### [Share HoloLens with multiple people](hololens-multiple-users.md)
-## Network & Connectivity
-### [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
-### [Connect HoloLens to a network](hololens-network.md)
-### [Manage connection endpoints for HoloLens](hololens-offline.md)
-### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
 ## Security
 ### [Security overview](security-overview.md)
 ### [Architecture](security-architecture.md)
@@ -67,6 +52,23 @@
 ### HoloLens 1st Gen Security
 #### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
 #### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
+## [License requirements](hololens-licenses-requirements.md)
+## Environment
+### [HoloLens environment considerations](hololens-environment-considerations.md)
+### [Map physical spaces with HoloLens](hololens-spaces.md)
+## [Commercial features](hololens-commercial-features.md)
+## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
+
+# Configure
+## Identity
+### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
+### [Share HoloLens with multiple people](hololens-multiple-users.md)
+## Network & Connectivity
+### [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
+### [Connect HoloLens to a network](hololens-network.md)
+### [Manage connection endpoints for HoloLens](hololens-offline.md)
+### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
+
 
 ## Policies
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
