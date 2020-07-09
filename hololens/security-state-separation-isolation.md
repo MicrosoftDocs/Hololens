@@ -33,7 +33,7 @@ State separation on HoloLens 2 vastly improves security and serviceability (upda
 
 ### State separation states
 
-State separation ensures the operating system is only changeable by Microsoft trusted device components, and any other state can be discarded. Having state separation rapidly returns the device back to factory state. Windows Holographic for Business separation states can be divided into these distinct categories:
+State separation ensures the operating system is only changeable by Microsoft trusted device components, and any other state can be discarded. Having state separation rapidly returns the device back to factory state. Windows Holographic for Business states can be divided into these distinct categories:
   * Core operating system – Unalterable state
   * Operating System Data – Alterable state 
   * User Data – Alterable state
@@ -43,10 +43,11 @@ Each of these HoloLens 2 operating states is described in the following section.
 #### Core operating system
 
 An immutable state is comprised of executable files and data that are unalterable and can only be changed by Microsoft during the installation of updates. During such an update of the core operating system, a new image containing the latest desired operating state is enabled.
-The unalterable state is marked as read-only (or is otherwise integrity-protected), preventing persistence of administrator level malware or malicious administrator tampering. The following executable files and data are protected in the immutable state:
+The unalterable state is marked as read-only (or is otherwise integrity-protected), preventing persistence of any malware with elevated privileges. The following executable files and data are protected in the immutable state:
+  * Windows Holographic inbox drivers
   * Operating system binaries
   * Windows inbox drivers
-  * Static Windows settings stored in Windows registry hive (HKLM)
+  * Static Windows Holographic settings stored in Windows registry hive (HKLM)
     * Example: HKLM stores the configuration information for the apps installed on a machine. It also stores information to detect hardware and the corresponding drivers.
 By protecting these in the immutable (integrity and read-only protected) state, we ensure that the core operating system always boots into a trusted state. Additionally, when a device is reset, we can ensure that the device boots only into the components that are on this immutable section. 
 
@@ -54,7 +55,7 @@ By protecting these in the immutable (integrity and read-only protected) state, 
 
 It is important to note that executable files and data that are changeable at runtime (and are not critical to the operating system function), can be discarded and re-created when the data is corrupted or compromised. 
 A high-value alterable state is either functionally required to persist by the operating system, or expected to persist across operating system shutdown, and/or across reboots by supported Windows operating system and device scenarios. Examples of high-value mutable state are:
-  * Administrator-configured global device settings, such as disabling the location for all users.
+  * IT Admin-configured global device settings, such as disabling the location for all users.
   * Wi-fi network connection access data-device-remembered networks and associated connection passwords.
   * Crash dumps including settings, logs.
   * Drivers downloaded on-demand for newly discovered devices.
@@ -62,7 +63,7 @@ A high-value alterable state on HoloLens 2 resides on the operating system Data 
 
 #### User data
 
-The last category of state represents user data produced or persisted by UWP applications or the operating system. All known low-value user folders such as Downloads, Documents, Videos, user profiles and HKEY_CURRENT_USER hive are also stored in this location.
+The last category of state represents user data produced or persisted by UWP applications or the operating system. All known user folders such as Downloads, Documents, Videos, user profiles and HKEY_CURRENT_USER hive are also stored in this location.
 
 ##	Isolation
 
