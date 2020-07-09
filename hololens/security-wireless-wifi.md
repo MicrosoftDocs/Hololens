@@ -22,8 +22,6 @@ HoloLens 2 Wireless LAN connectivity supports an impressive range of the latest 
   * TEAP (Tunnel Extensible Authentication Protocol)  
   * OWE (Opportunistic Wireless Encryption)
 
-WPA3 is a step forward from the older WPA2 standard, with protection against brute force password attacks, and protected management frames enforcement. WPA3-Personal prevents a known WPA2 Pre-Shared Key weakness that allowed attackers to decrypt traffic if they gained access to the Wi-Fi password. Now enterprises can have the benefits of WPA3-personal, with the addition of stronger 192-bit encryption to help secure their wireless networks.
-
 TEAP, the next generation of enterprise network authentication, provides the ability to securely chain multiple credentials into a single transaction.  This allows administrators to enforce a stronger security stance – one that requires valid identities for both machine and user during the same authentication transaction.
 
 HoloLens 2 further hardens the security of the guest operating system by restricting the ability to call into the Wi-Fi APIs. Apps running in containers can only access the query functionality, while the set options cannot be accessed.  Consequently, the threats of random applications modifying the Wi-Fi configuration are mitigated.
