@@ -20,7 +20,7 @@ Hardware-backed integrity and runtime attestation protects against threats that 
 
 ## UEFI secure boot
 
-HoloLens 2 enforces Unified Extensible Firmware Interface (UEFI) Secure Boot at all times, and UEFI only boots Microsoft trusted platforms.
+HoloLens 2 enforces Unified Extensible Firmware Interface (UEFI) Secure Boot at all times, and UEFI only boots Windows Holographic for Business.
 Secure Boot ensures that the entire boot chain is verified for integrity, and that Windows always boots with the correct security policies applied to it. To learn more about Secure Boot go here.
 
 ## TPM
@@ -34,17 +34,16 @@ HoloLens 2 enforces Unified Extensible Firmware Interface (UEFI) Secure Boot on 
 > [!Tip]
 > Learn more about [Secure boot](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot).
 
-## Persistent access threat protection 
+### Windows Anti-Persistence Assurance
+
+HoloLens 2 anti-persistence guarantees its users that even in the rare situation that a runtime compromise of the system were to ever occur – such as a remote exploit – such an event would be mitigated with all malicious code removed from the system simply by powering off the device. To further strengthen its anti-persistence, HoloLens 2 has added powerful integrity protection, and put read-only protections in place.
+
+Persistence to operating system data in form of data is still possible, unless the user performs Push-button reset (PBR) of the device that wipes all mutable partitions. While persistence to immutable partitions is made much harder, the user needs to PBR the Hololens 2 to remove any possible threat-persistence from mutable parts.
 
 The goal of most cyberattacks is to maintain persistent access to a device. For cybercrime, maintaining this persistence enables a compromised Windows device to join a botnet, sell access to the device or other nefarious users, or to enable repeated data theft. In the world of targeted attacks, persistence is essential to a successful cyberattack – whether on a device or (more commonly), an entire network.  
 
 In fact, targeted attacks are considered “advanced persistent threats”, due to their strategic need to maintain access to a target device or network. For this reason, Windows Holographic for Business considers defending against persistence absolutely crucial and uses anti-persistence technology to make an ironclad customer security promise.
 
-### Windows Anti-Persistence Assurance
-
-HoloLens 2 anti-persistence guarantees its users that even in the rare situation that a runtime compromise of the system were to ever occur – such as a remote exploit – such an event would be mitigated with all malicious code removed from the system simply by powering off the device. To further strengthen its anti-persistence, HoloLens 2 has added powerful integrity protection, and put read-only protections in place.
-
-Persistence to operating system data in form of data or 3rd party device drivers is still possible, unless the user performs Push-button reset (PBR) of the device that wipes all mutable partitions. While persistence to immutable partitions is made much harder, the user needs to PBR the Hololens 2 to remove any possible threat-persistence from mutable parts.
 
 ## Code integrity protection 
 
