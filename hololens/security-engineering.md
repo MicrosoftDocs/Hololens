@@ -18,7 +18,7 @@ appliesto:
 
 Microsoft has several resources and teams devoted to optimizing the company’s engineering protocols, addressing compliance, and ensuring customer trust. 
 
-  * To learn more about Microsoft’s security engineering development practices , see the [Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl).
+  * To learn more about Microsoft’s security engineering development practices, see the [Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl).
   * Microsoft, and therefore HoloLens 2, empowers customers to make choices about how and why data is collected and used, which can be further explored in [Microsoft’s Privacy policy](https://privacy.microsoft.com/). 
   * [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/msrc) is part of the defender community, providing an efficient vulnerability reporting experience and an effective categorization and response to security bugs. 
 
