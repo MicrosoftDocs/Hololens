@@ -119,7 +119,7 @@ In the event that your device is not being detected please use the following met
 
 1. Unplug the device from all power sources.
 1. If the device is on please hold down the power button until it is completely off.
-1. Hold the **Volume Up** button, and breifly tap the **Power button**. 
+1. Hold the **Volume Up** button, and briefly tap the **Power button**. 
 1. The device should boot and then display only the middle LED light.
 1. Plug the device into your PC.
 1. Launch Windows Device Recovery Tool.
