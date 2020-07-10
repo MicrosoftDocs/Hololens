@@ -20,7 +20,7 @@ manager: jarrettr
 
 When you set up HoloLens 2 devices for the Windows Autopilot program, your users can follow a simple process to provision the devices from the cloud.
 
-This Autopilot program supports Autopilot self-deploying mode to provision HoloLens 2 devices as shared devices under your tenant. Self-deploying mode leverages the device's preinstalled OEM image and drivers during the provisioning process. A user can provision the device without putting the device on and going through the Out-of-the-box Experience (OOBE). To learn more about Windows Autopilot click [here](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-autopilot).
+This Autopilot program supports Autopilot self-deploying mode to provision HoloLens 2 devices as shared devices under your tenant. Self-deploying mode leverages the device's preinstalled OEM image and drivers during the provisioning process. A user can provision the device without putting the device on and going through the Out-of-the-box Experience (OOBE). To learn more about Windows Autopilot click [here](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot).
 
 When a user starts the Autopilot self-deploying process, the process completes the following steps:
 
@@ -62,7 +62,7 @@ When a user starts the Autopilot self-deploying process, the process completes t
 
 **If you wish to try the Autopilot preview, before you start the OOBE and provisioning process, make sure that the HoloLens devices meet the following requirements:**
 
-- You must manually install the latest OS (Windows Holographic version 2004 (build 19041.1103 or later) using the [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab). You can find instructions [here](https://docs.microsoft.com/en-us/hololens/hololens-recovery#clean-reflash-the-device). 
+- You must manually install the latest OS (Windows Holographic version 2004 (build 19041.1103 or later) using the [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab). You can find instructions [here](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). 
 - Your devices must be registered in Windows Autopilot. For information about how to register devices see [4. Register devices in Windows Autopilot](#4-register-devices-in-windows-autopilot). 
 - In the current release, devices need to be connected to the internet before turning on the HoloLens and initiating the Autopilot provisioning process. Connect your device to Ethernet using "USB-C to Ethernet" adapters for wired internet connectivity or "USB-C to Wifi" adapters for wireless internet connectivity. 
 - The devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune Portals.
