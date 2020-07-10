@@ -27,7 +27,13 @@ Secure Boot ensures that the entire boot chain is verified for integrity, and th
 
 The Trusted Platform Module (TPM) is a specialized chip on an endpoint device. HoloLens 2 uses a TPM 2.0 which provides hardware-enforced key isolation.
 
-## Secure boot 
+## Persistence Access Threat Protection
+
+The goal of most cyberattacks is to maintain persistent access to a device. For cybercrime, maintaining this persistence enables a compromised Windows device to join a botnet, sell access to the device or other nefarious users, or to enable repeated data theft. In the world of targeted attacks, persistence is essential to a successful cyberattack – whether on a device or (more commonly), an entire network.  
+
+In fact, targeted attacks are considered “advanced persistent threats”, due to their strategic need to maintain access to a target device or network. For this reason, Windows Holographic for Business considers defending against persistence absolutely crucial and uses anti-persistence technology to make an ironclad customer security promise.
+
+### Secure boot 
 
 HoloLens 2 enforces Unified Extensible Firmware Interface (UEFI) Secure Boot on all core operating system state. UEFI only boots Microsoft trusted platforms which ensures that the entire boot chain is verified for integrity, and that Windows always boots with the correct security policies applied to it. HoloLens 2 does not Secure Boot to be turned off, nor does it allow 3rd party boot loaders.
 
@@ -39,11 +45,6 @@ HoloLens 2 enforces Unified Extensible Firmware Interface (UEFI) Secure Boot on 
 HoloLens 2 anti-persistence guarantees its users that even in the rare situation that a runtime compromise of the system were to ever occur – such as a remote exploit – such an event would be mitigated with all malicious code removed from the system simply by powering off the device. To further strengthen its anti-persistence, HoloLens 2 has added powerful integrity protection, and put read-only protections in place.
 
 Persistence to operating system data in form of data is still possible, unless the user performs Push-button reset (PBR) of the device that wipes all mutable partitions. While persistence to immutable partitions is made much harder, the user needs to PBR the Hololens 2 to remove any possible threat-persistence from mutable parts.
-
-The goal of most cyberattacks is to maintain persistent access to a device. For cybercrime, maintaining this persistence enables a compromised Windows device to join a botnet, sell access to the device or other nefarious users, or to enable repeated data theft. In the world of targeted attacks, persistence is essential to a successful cyberattack – whether on a device or (more commonly), an entire network.  
-
-In fact, targeted attacks are considered “advanced persistent threats”, due to their strategic need to maintain access to a target device or network. For this reason, Windows Holographic for Business considers defending against persistence absolutely crucial and uses anti-persistence technology to make an ironclad customer security promise.
-
 
 ## Code integrity protection 
 
