@@ -9,7 +9,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
 ---
@@ -22,7 +22,7 @@ Encryption and Data Protection protects data when the device is lost or stolen a
 
 BitLocker is a full-volume encryption feature for integrity protection of Read Only (RO) media and privacy protection of writable media.  Since its inception, it has been an effective shield against unauthorized access to the data during offline attacks. HoloLens 2 enables Bitlocker Device Encryption (BDE) by default to protect data from any unauthorized physical access to the device. Always evolving to meet the needs of the future, Microsoft continues to invest and enhance this technology.
 
-BDE is a data protection feature that employs AES-XTS-128 or AES-XTS-256 encryption on all volumes in the state-separated layout of the device. BDE provides device level encryption in a state-separated layout. BitLocker Device Encryption is enabled automatically on operating system and fixed data volumes and cannot be turned off, even by IT administrators, so that the device is always protected. Once a HoloLens 2 device is powered on, BDE encryption keys are released by the TPM preventing threats of data theft or exposure from lost, stolen or improperly decommissioned devices.
+BDE is a data protection feature that employs AES-XTS-128 or AES-XTS-256 encryption on all volumes in the state-separated layout of the device. BDE provides device level encryption in a state-separated layout. BitLocker Device Encryption is enabled automatically on operating system and fixed data volumes and cannot be turned off, even by IT administrators, so that the device is always protected.
 
 BDE encryption keys are then used to transparently decrypt binaries and the data required to boot the device. As the operating system volume is unlocked and a system is booting up, other volumes become accessible using a volume-specific version of the auto-unlock protector. No other protectors are available to maintain user privacy and the drive can only be unlocked on the same device. Read Only (RO) enforcement on required volumes is applied and enforced immediately, starting from the first boot.
 
