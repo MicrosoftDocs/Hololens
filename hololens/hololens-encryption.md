@@ -1,5 +1,5 @@
 ---
-title: Enable Bitlocker encryption for HoloLens (HoloLens)
+title: HoloLens BitLocker Encryption
 description: Enable Bitlocker device encryption to protect files stored on the HoloLens  
 ms.prod: hololens
 ms.mktglfcycl: manage
@@ -11,11 +11,10 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: 
 manager: laurawi
-appliesto:
-- HoloLens (1st gen)
+
 ---
 
-# Enable encryption for HoloLens
+# HoloLens BitLocker Encryption
 
 HoloLens (1st gen) and HoloLens 2 both support device encryption using BitLocker, however, BitLocker is always enabled on HoloLens 2.
 

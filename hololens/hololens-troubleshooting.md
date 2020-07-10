@@ -1,25 +1,22 @@
 ---
-title: Troubleshoot HoloLens issues
+title: Troubleshooting
 description: Solutions for common HoloLens issues.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 12/02/2019
 ms.prod: hololens
 ms.topic: article
-ms.custom: CSSTroubleshooting
-audience: ITPro
+audience: HoloLens
 ms.localizationpriority: medium
 keywords: issues, bug, troubleshoot, fix, help, support, HoloLens
 manager: jarrettr
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
+
 ---
 
-# Troubleshoot HoloLens issues
+# Troubleshooting
 
 This article describes how to resolve several common HoloLens issues.
 

@@ -109,8 +109,6 @@ Some of the HoloLens configurations you can apply in a provisioning package:
 
 If you decide to use provisioning packages, follow [this guide](hololens-provisioning.md).
 
-## Next Step: [Determine what licenses you need](hololens-licenses-requirements.md)
-
 ## Get support
 
 Get support through the Microsoft support site.

@@ -4,9 +4,6 @@ title: Configure HoloLens by using a provisioning package (HoloLens)
 description: Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging.
 ms.prod: hololens
 ms.sitesec: library
-ms.custom: 
-- CI 111456
-- CSSTroubleshooting
 author: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -49,7 +46,7 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 - Enroll the device in Azure Active Directory, or create a local account
 - Add certificates
 - Enable Developer Mode
-- Configure kiosk mode. (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)).
+- Configure kiosk mode. (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)).
 
 > [!WARNING]
 > You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
@@ -204,5 +201,3 @@ In Windows Configuration Designer, when you create a provisioning package for Wi
 
 > [!NOTE]
 > HoloLens does not currently support installing apps (**UniversalAppInstall**) by using a provisioning package.
-
-## Next Step: [Enroll your device](hololens-enroll-mdm.md)
