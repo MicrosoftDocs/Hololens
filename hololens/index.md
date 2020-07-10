@@ -52,7 +52,7 @@ appliesto:
 | [HoloLens update management](hololens-updates.md) | Use mobile device management (MDM) policies to configure settings for updates. |
 | [HoloLens user management](hololens-multiple-users.md) | Multiple users can share a HoloLens device by using their Azure Active Directory accounts. |
 | [HoloLens application access management](hololens-kiosk.md) | Manage application access for different user groups.  |
-| [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary. |
+| [Recover and troubleshoot HoloLens issues](hololens-recovery.md) |  Learn how to restart a misbehaving device, or reset HoloLens 2 when necessary. |
 | [Contact Support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) | Create a new support request for the business support team. | 
 | [More support options](https://support.microsoft.com/products/hololens) | Connect with Microsoft support resources for HoloLens in the enterprise. |
 
