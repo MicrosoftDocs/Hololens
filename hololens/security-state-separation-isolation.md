@@ -67,11 +67,11 @@ The last category of state represents user data produced or persisted by UWP app
 
 ##	Isolation
 
-To achieve this balance, HoloLens 2 has a core operating system that is used for primary functions such as booting up, hardware control, logging in etc. There are only two sets of applications that run on the host operating system – pre-installed applications and UWP apps.
+To achieve this balance, HoloLens 2 has a core operating system that is used for primary functions such as booting up, hardware control, logging in etc. There are only two sets of applications that run on the core operating system – pre-installed applications and UWP apps.
 
 ## Code signing
 
-Digitally signing code allows substantiation that executables and scripts have not been modified since they were signed by a trusted source therefore providing authenticity and integrity. The authorities that HoloLens 2 trusts by default are Microsoft and Microsoft Store. IT administrators can add new certificates to the device through the [ClientCertificateInstall](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp) and [RootCATrustedCertificates](https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp) CSPs. They can also use the [AllowAllTrustedApps policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) to trust additional sideloaded or [Line-of-business apps](https://docs.microsoft.com/intune/apps/lob-apps-windows). 
+Digitally signing code allows substantiation that executables and scripts have not been modified since they were signed by a trusted source therefore providing authenticity and integrity. The authorities that HoloLens 2 trusts by default are Microsoft and Microsoft Store. IT administrators can add new certificates to the device through the [ClientCertificateInstall](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp) and [RootCATrustedCertificates](https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp) CSPs. They can also use the [AllowAllTrustedApps policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) to trust additional sideloaded or [Line-of-business apps](https://docs.microsoft.com/intune/apps/lob-apps-windows). Certificates reside in the local machine certificate store which is stored in HKLM/Root if using “Device” or in HKCU if using “User”.
 
 ## Defender protections
 HoloLens 2 uses Microsoft services to give users an advanced level of security:
