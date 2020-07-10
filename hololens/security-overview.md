@@ -9,9 +9,8 @@ ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
-manager: yannisl
+manager: yannisle
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
 ---
 
