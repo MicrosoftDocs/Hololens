@@ -20,7 +20,7 @@ appliesto:
 
 # HoloLens 2 release notes
 
-To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug and security updates. In this page you can learn about what’s new on HoloLens each month. If you would like to download the latest HoloLens 2 FFU to flash your device via [Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) then you may download it from [here](https://aka.ms/hololens2download). This is kept up-to-date and will match the latest generally available build.
+To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can learn about what’s new on HoloLens each month. If you would like to download the latest HoloLens 2 FFU to flash your device via Advanced Recovery Companion,](hololens-recovery.md#clean-reflash-the-device) then you may download it from [here](https://aka.ms/hololens2download). This article is kept up to date and will match the latest generally available build.
 
 >[!NOTE]
 > To see HoloLens Emulator release notes, [visit the archiv](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
@@ -37,18 +37,18 @@ Improvements and fixes in the update:
   - On the MRC Audio Effect:
     - LoopbackGain (the current "App Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
     - MicrophoneGain (the current "Mic Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
-- Fixes a bug to improves audio quality in Mixed Reality Capture scenarios. Specifically, it should eliminate audio glitching in the recording when the **Start** menu is displayed.
-- Improvs hologram stability in recorded videos.
-- Resolves an issue where Mixed Reality Capture couldn't record video after the device was left in standby state for multiple days.
-- The HolographicSpace.UserPresence API is generally disabled for Unity applications, to avoid an issue that causes some apps to pause when the visor is flipped up, even if the "run in the background" setting is enabled. The API is now enabled for Unity versions 2018.4.18 and later and 2019.3.4 and later.
-- When accessing Device Portal over a Wi-Fi connection, a web browser might prevent access to due to an invalid certificate, reporting an error such as "ERR_SSL_PROTOCOL_ERROR," even if the device certificate has previously been trusted. In this case, you would be unable to progress to Device Portal, as there's no option to ignore security warnings. This update resolves the issue. If the device certificate was previously downloaded and trusted on a PC to remove browser security warnings and the SSL error is encountered, the new certificate will has to be downloaded and trusted to address browser security warnings.
-- Enables the ability to create a runtime provisioning package that can install an app by using MSIX packages.
+- Fixed a bug to improve audio quality in Mixed Reality Capture scenarios. Specifically, it should eliminate audio glitching in the recording when the **Start** menu is displayed.
+- Improved hologram stability in recorded videos.
+- Resolved an issue where Mixed Reality Capture couldn't record video after the device was left in standby state for multiple days.
+- The HolographicSpace.UserPresence API is generally disabled for Unity applications. This behavior avoids an issue that causes some apps to pause when the visor is flipped up, even if the "run in the background" setting is enabled. The API is now enabled for Unity versions 2018.4.18 and later and 2019.3.4 and later.
+- When accessing Device Portal over a Wi-Fi connection, a web browser might prevent access to due to an invalid certificate, reporting an error such as "ERR_SSL_PROTOCOL_ERROR," even if the device certificate has previously been trusted. In this case, you would be unable to progress to Device Portal, as there's no option to ignore security warnings. This update resolved the issue. If the device certificate was previously downloaded and trusted on a PC to remove browser security warnings and the SSL error is encountered, the new certificate has to be downloaded and trusted to address browser security warnings.
+- Enabled the ability to create a runtime provisioning package that can install an app by using MSIX packages.
 - Adds a setting in **Settings** > **System** > **Holograms** that allows users to automatically remove all holograms from the mixed reality home when the device shuts down.
-- Fixes an issue that caused HoloLens apps that change their pixel format to render black in the HoloLens emulator.
-- Fixes bug that caused a crash during Iris login.
-- Fixes an issue about repeated store downloads for already-current apps.
-- Fixes a bug to prevent immersive apps from launching Edge multiple times.
-- Fixes an issue about launches of the Photos app in initial boots after updating from the 1903 release.
+- Fixed an issue that caused HoloLens apps that change their pixel format to render black in the HoloLens emulator.
+- Fixed a bug that caused a crash during Iris login.
+- Fixed an issue about repeated store downloads for already-current apps.
+- Fixed a bug to prevent immersive apps from launching Microsoft Edge repeatedly.
+- Fixed an issue with launches of the Photos app in initial boots after updating from the 1903 release.
 - Improved performance and reliability.
 
 ## Windows Holographic, version 1903 - June 2020 Update
@@ -63,14 +63,14 @@ Improvements and fixes in the update:
   - On the MRC Audio Effect:
     - LoopbackGain (the current "App Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
     - MicrophoneGain (the current "Mic Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
-- The HolographicSpace.UserPresence API is generally disabled for Unity applications, to avoid an issue which causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled. The API is now enabled for Unity versions 2018.4.18 and higher, and 2019.3.4 and higher.
-- Fixes an issue that caused HoloLens apps that change their pixel format to render black in the HoloLens emulator.
-- Fixes an issue about launches of the Photos app in initial boots after updating from the 1903 release.
+- The HolographicSpace.UserPresence API is generally disabled for Unity applications, to avoid an issue that causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled. The API is now enabled for Unity versions 2018.4.18 and higher, and 2019.3.4 and higher.
+- Fixed an issue that caused HoloLens apps that change their pixel format to render black in the HoloLens emulator.
+- Fixed an issue about launches of the Photos app in initial boots after updating from the 1903 release.
 
 ## Windows Holographic, version 2004  
 Build - 19041.1103
 
-We are excited to announce our May 2020 major software update for HoloLens 2, *Windows Holographic, version 2004*. This release includes a host of exciting new capabilities, such as support for Windows Autopilot, app dark mode, USB Ethernet support for 5G/LTE hotspots, and much more. To update to the latest release, open the **Settings app**, go to **Update & Security**, and then select the **Check for Updates** button. 
+We're excited to announce our May 2020 major software update for HoloLens 2, *Windows Holographic, version 2004*. This release includes a host of exciting new capabilities, such as support for Windows Autopilot, app dark mode, USB Ethernet support for 5G/LTE hotspots, and much more. To update to the latest release, open the **Settings app**, go to **Update & Security**, and then select the **Check for Updates** button. 
 
 |             Feature                              |          Description                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -78,7 +78,7 @@ We are excited to announce our May 2020 major software update for HoloLens 2, *W
 |       FIDO 2 support                             |          Support for FIDO2 Security Keys to   enable fast and secure authentication for shared devices            |
 |       Improved provisioning                      |          Seamlessly apply a provisioning   package from a USB drive to your HoloLens                              |
 |       Application install status                 |          Check install status for apps have   been pushed to HoloLens 2 via MDM, in the Settings app              |
-|       Configuration service roviders   (CSPs)   |          Added new configuration service providers enhancing admin control capabilities                 |
+|       Configuration service providers   (CSPs)   |          Added new configuration service providers enhancing admin control capabilities                 |
 |       USB 5G/LTE support                       |          Expanded USB Ethernet capability   enables support for 5G/LTE                                    |
 |       Dark app mode                              |          Dark App Mode for apps that support   both dark and light modes, improving the viewing experience        |
 |       Voice commands                             |          Support for additional system voice   commands to control HoloLens, hands-free                           |
@@ -103,28 +103,28 @@ Learn more from the [Windows Autopilot for HoloLens 2 evaluation guide](https://
 
 ### FIDO2 security key support
 
-Many of you share a HoloLens device with lots of people in a work or school environment. Whether devices are shared between students in a classroom or they're checked out from a device locker, it's important to be able to change users quickly and easily without typing long user names and passwords. 
+Many users share a HoloLens device with lots of people in a work or school environment. In this scenario, it's important to be able to change users easily without typing long user names and passwords. 
 
-FIDO lets anyone in your organization (Azure AD tenant) seamlessly sign in to HoloLens without entering a user name or password.
+Fast Identity Online (FIDO) lets anyone in your organization (Azure AD tenant) seamlessly sign-in to HoloLens without entering a user name or password.
 
-FIDO2 security keys are an "unphishable" standards-based passwordless authentication method that can come in any form factor. Fast Identity Online (FIDO) is an open standard for passwordless authentication. FIDO allows users and organizations to leverage the standard to sign in to their resources without a user name or password by using an external security key or a platform key built into a device. 
+FIDO2 security keys are an "unphishable" standards-based passwordless authentication method that can come in any form factor. FIDO is an open standard for passwordless authentication. FIDO allows users and organizations to leverage the standard to sign in to their resources without a user name or password by using an external security key or a platform key built into a device.
 
 To get started, see the [passwordless security docs](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key).
 
 ### Improved MDM enrollment via provisioning package
 
-Provisioning packages let you set HoloLens configuration through a config file rather than going through the HoloLens out-of-box experience. Previously, provisioning packages had to be copied onto HoloLens' internal memory, now they can be on a USB drive so they're easier to re-use on multiple HoloLens and so more people can provision HoloLens in parallel.  In addition, provisioning packages support a new field to enroll in device management so there is no manual set up post-provisioning. 
+Provisioning packages let you set HoloLens configuration through a config file rather than through the HoloLens out-of-box experience. Previously, provisioning packages had to be copied onto HoloLens' internal memory. Now they can be on a USB drive so they're easier to reuse on multiple HoloLens devices you can provision devices in parallel. In addition, provisioning packages support a new field to enroll in device management so there's no manual setup post-provisioning. 
 
 To try it out:
 
 1. Download the latest version of the Windows Configuration Designer from the Windows store onto your PC.
 1. Select **Provision HoloLens Devices** > **Provision HoloLens 2 devices**. 
 2. Build your configuration profile. Then copy all files that were created to a USB-C storage device. 
-3. Plug the USB-C device into any freshly flashed HoloLens, and then press **volume down** + **power button** to apply your provisioning package.
+3. Plug the USB-C device into any freshly flashed HoloLens. Then press **volume down** + **power button** to apply your provisioning package.
 
-### Line of business application install status
+### Line-of-business application install status
 
-MDM app deployment and management for line of business (LOB) apps is critical for our customers. Admins and users need to be able to view app install status, for auditing and diagnosis purposes. In this release, we adding more details in **Settings** > **Accounts** > **Access work or school** > **Click on your account** > **Info.**
+MDM app deployment and management for line of business (LOB) apps is critical to Hololens. Admins and users need to be able to view app install status for auditing and diagnosis. In this release, we added more details in **Settings** > **Accounts** > **Access work or school** > **Click on your account** > **Info.**
 
 ### Additional CSPs and policies
 
@@ -134,7 +134,7 @@ New in this release:
 
 **Policy CSP** 
 
-The Policy configuration service provider enables the enterprise to configure policies on Windows devices. In this release, we add new policies for HoloLens, which listed below. To learn more, see [Policy CSPs supported by HoloLens 2](https://docs.microsoft.com/windows/client-management/mdm/policies-supported-by-hololens2).  
+The Policy configuration service provider enables the enterprise to configure policies on Windows devices. In this release, we added new policies for HoloLens, which are listed here. To learn more, see [Policy CSPs supported by HoloLens 2](https://docs.microsoft.com/windows/client-management/mdm/policies-supported-by-hololens2).  
 
 - LetAppsAccessCamera_ForceAllowTheseApps  
 - LetAppsAccessCamera_ForceDenyTheseApps  
@@ -148,26 +148,26 @@ The Policy configuration service provider enables the enterprise to configure po
 - LetAppsAccessMicrophone_UserInControlOfTheseApps 
 - AllowWiFi 
 
-**NetworkQoSPolicy CSP** 
-The NetworkQoSPolicy configuration service provider creates network Quality of Service (QoS) policies. A QoS policy performs a set of actions on network traffic based on a set of matching conditions. To learn more, see [NetworkQoSPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp).
+**NetworkQoSPolicy CSP**
+The NetworkQoSPolicy configuration service provider creates network quality of service (QoS) policies. A QoS policy performs a set of actions on network traffic based on a set of matching conditions. To learn more, see [NetworkQoSPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp).
 
 ### Expanded USB Ethernet support for 5G/LTE tethered devices
 
-Support was added to enable certain mobile broadband devices, such as 5G/LTE phones and Wi-Fi hotpots, when tethered to the HoloLens 2 via USB. These devices are now displayed in network settings as another Ethernet connection. Mobile broadband devices that require an external driver aren't supported. This enables high-bandwidth connections in scenarios where Wi-Fi is not available and Wi-Fi tethering isn’t performant enough. To learn more about supported USB devices, see [Connect to Bluetooth and USB-C devices](https://docs.microsoft.com/hololens/hololens-connect-devices).  
+Support was added to enable certain mobile broadband devices, such as 5G/LTE phones and Wi-Fi hotpots, when tethered to the HoloLens 2 via USB. These devices are now displayed in network settings as another Ethernet connection. (Mobile broadband devices that require an external driver aren't supported.) This functionality enables high-bandwidth connections in scenarios where Wi-Fi is not available and Wi-Fi tethering aren’t performant enough. To learn more about supported USB devices, see [Connect to Bluetooth and USB-C devices](https://docs.microsoft.com/hololens/hololens-connect-devices).  
 
 ### Hand tracking improvements
 
-There are several hand tracking improvements in this release:
+This release includes several hand tracking improvements:
 
-- **Pointing pose stability:** The system will now resist bending the index finger when it becomes occluded by the palm. This improves accuracy when pushing buttons, typing, scrolling content, and more! 
-- **Reduced accidental AirTaps:** We improved detection of the AirTap gesture. Now there are fewer accidental activations in several common cases, such as dropping your hands to your sides.
+- **Pointing pose stability:** The system now resists bending the index finger when it becomes occluded by the palm. This improves accuracy when pushing buttons, typing, scrolling content, and more! 
+- **Reduced accidental AirTaps:** We improved detection of the AirTap gesture. There are now fewer accidental activations in several common cases, such as dropping your hands to your sides.
 - **User switch reliability:** The system is now faster and more reliable at updating the hand size when sharing a device back and forth.
-- **Reduced hand stealing:** We improved handling of cases where there are more than two hands in view of the sensors.  If multiple people are working close together, there's now a much lower chance that the tracked hand will jump from the user to the hand of someone else in the scene.
-- **System reliability:** Fixed an issue that caused hand tracking to stop working when the the device is under high load.
+- **Reduced hand stealing:** We improved handling of cases where there are more than two hands in view of the sensors. If multiple people are working close together, there's now a much lower chance that the tracked hand will "jump" from the user to the hand of someone else in the scene.
+- **System reliability:** Fixed an issue that caused hand tracking to stop working when the device is under high load.
 
 ### Dark mode
 
-Many Windows apps now support both dark and light modes, and HoloLens 2 customers can choose the default mode for apps that support both. Once updated, the default app mode will be "dark," but can be changed easily. Navigate to Settings > System > Colors to find "Choose your default app mode." Here are some of the in-box apps that support Dark mode: 
+Many Windows apps now support both dark and light modes. HoloLens 2 customers can choose the default mode for apps that support both. After the update, the default app mode is "dark," but it can be changed easily. Navigate to **Settings** > **System** > **Colors** > **Choose your default app mode**. Here are some of the in-box apps that support Dark mode: 
 
 - Settings 
 - Microsoft Store 
@@ -184,46 +184,45 @@ Many Windows apps now support both dark and light modes, and HoloLens 2 customer
 
 ### System voice commands
 
-You can now quickly access and use commands with your voice while using any app on the device. If you're running your system with a different language, please try the appropriate commands in that language. For more details on the commands and how to use them, see our documentation [here](https://docs.microsoft.com/hololens/hololens-cortana).  
+You can now quickly access and use commands with your voice while using any app on the device. For more information, see [Use your voice to operate HoloLens](https://docs.microsoft.com/hololens/hololens-cortana). Also see [Supported languages for HoloLens 2](https://docs.microsoft.com/hololens/hololens2-language-support).  
 
 ### Cortana updates 
 
-The updated app integrates with Microsoft 365, currently in English (United States) only, to help you get more done across your devices. On HoloLens 2, Cortana will no longer support certain device-specific commands like adjusting the volume or restarting the device, which are now supported with the new system voice commands mentioned above. Learn more about the new Cortana app and its direction on our blog [here](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
+The updated app integrates with Microsoft 365 to help you get more done across your devices. (Currently US-English only.) On HoloLens 2, Cortana no longer supports certain device-specific commands, like adjusting volume or restarting, which are now supported with the new system voice commands. Learn more about the new Cortana app in our [blog] (https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
 
-### Quality improvements and fixes 
+### Quality improvements and fixes
 
 Improvements and Fixes also in the update:  
-- The update introduces an active display calibration system. This improves the stability and alignment of holograms, which helps them stay in place when moving your head side-to-side. 
-- Fixed a bug where Wi-Fi streaming to HoloLens gets disrupted periodically. If an application indicates that it needs low latency streaming this fix is can be accomplished by calling [this function](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode). 
-- Fixed an issue where the device could hang during streaming in research mode. 
-- Fixed bug where in some cases the right user would not be displayed on sign-in screen when resuming session. 
-- Fixed an issue where users could not export MDM logs through settings. 
-- Fixed an issue where the accuracy of eye tracking immediately following out-of-box-setup could be lower than specification. 
-- Fixed an issue where eye tracking subsystem would fail to initialize and/or perform calibration under certain conditions. 
-- Fixed an issue where eye calibration would be prompted for an already calibrated user. 
-- Fixed an issue where a driver would crash during eye calibration. 
-- Fixed an issue where repeated power button presses can cause a 60 second system time-out and shell crash. 
-- Improved stability for depth buffers. 
-- Added ‘Share’ button in Feedback Hub so users can more easily share feedback. 
-- Fixed a bug where RoboRaid did not install correctly. 
+- The update introduces an active display calibration system. This feature improves the stability and alignment of holograms, which helps them stay in place when you move your head from side to side.
+- Fixed a bug where Wi-Fi streaming to HoloLens got disrupted periodically. If an application indicates that it needs low latency streaming, the fix can be accomplished by calling the [SetSocketMediaStreamingMode function](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
+- Fixed a device hang during streaming in research mode.
+- Fixed a bug where in some cases the right user would not be displayed on the sign-in screen when resuming a session. 
+- Fixed an issue where users couldn't export MDM logs through settings.
+- Fixed an issue where the accuracy of eye tracking immediately following out-of-box setup could be lower than expected.
+- Fixed an issue where the eye tracking subsystem would fail to initialize or perform calibration under certain conditions.
+- Fixed an issue where eye calibration would be prompted for an already-calibrated user. 
+- Fixed an issue where a driver would crash during eye calibration.
+- Fixed an issue where repeated power button presses could cause a 60-second system timeout and shell crash.
+- Improved stability for depth buffers.
+- Added a **Share** button in the Feedback Hub so users can more easily share feedback. 
+- Fixed a bug where RoboRaid did not install correctly.
 
 ### Known issues
 
-- We are investigating an issue surrounding the use of the zh-CN system language that prevents the voice commands for taking a mixed reality capture or displaying the device IP address from working.
-- We're investigating an issue that requires you to launch the Cortana app after booting the device in order to use the "Hey Cortana" voice activation, and if you updated from a 18362 build, you may see a second app tile for the previous version of the Cortana app in Start that no longer works. 
+- An issue with the zh-CN system language that prevents voice commands for taking a mixed reality capture or displaying the device IP address.
+- An issue that requires you to launch the Cortana app after booting the device to use "Hey Cortana" voice activation. If you updated from a 18362 build, you may also see a second app tile for the previous version of the Cortana app in Start that no longer works.
 
 ## Windows Holographic, version 1903 - May 2020 Update 
 - Build 18362.1061
 
-This monthly quality update does not contain any changes of note because the team has been focused on providing you with the highest quality Feature Update now available in the Windows Holographic, version 2004 May Update detailed above. Please take this opportunity to move to the latest feature update to get a ton of exciting new changes.
+This monthly quality update doesn't contain any notable changes of note because the team has been focused on providing the feature updates in the Windows Holographic version 2004 May Update, as described earlier. Take this opportunity to get the latest feature updates.
 
 ## Windows Holographic, version 1903 - April 2020 Update
 - Build 18362.1059
 
 **Dark mode for supported apps** 
 
-Many Windows apps support both dark and light modes, and soon HoloLens 2 customers can choose the default mode for apps that support both color schemes! Based on overwhelmingly positive customer feedback, with this update we are setting the default app mode to "dark," but you can easily change this setting at any time.
-Navigate to **Settings > System > Colors** to find **"Choose your default app mode."**
+Many Windows apps support both dark and light mode. HoloLens 2 customers can now choose the default mode for apps that support both color schemes. Based on customer feedback, we are set the default app mode to "dark." but you can easily change this setting at any time: Navigate to **Settings > System > Colors** to find **"Choose your default app mode."**
 
 Here are some of the in-box apps that support dark mode:
 - Settings
@@ -239,8 +238,8 @@ Here are some of the in-box apps that support dark mode:
 
 **Improvements and fixes also in the update:** 
 - Ensure shell overlays are included in mixed reality captures.
-- Unreal developers are now able to use the 3D View page in Device Portal to test and debug their applications.
-- Improve hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod DepthReprojection algorithm is used.
+- Unreal developers can now use the 3D View page in Device Portal to test and debug their applications.
+- Improved hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod DepthReprojection algorithm is used.
 - Fixed WinRT IStreamSocketListener API Class Not Registered error on 32-bit ARM app.
 
 ## Windows Holographic, version 1903 - March 2020 Update 
@@ -248,45 +247,45 @@ Here are some of the in-box apps that support dark mode:
 
 Improvements and fixes in the update:
 
-- Improve hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod AutoPlanar algorithm is used.
-- Ensures the coordinate system attached to a depth MF sample is consistent with public documentation.
-- Developers productivity improvement by enabling customers to paste large amount of text through device portal.
+- Improved hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod AutoPlanar algorithm is used.
+- Ensured that the coordinate system attached to a depth MF sample is consistent with public documentation.
+- Improved developer productivity by enabling customers to paste large amounts of text through the device portal.
 
 ## Windows Holographic, version 1903 - February 2020 Update 
 - Build 18362.1053
 
 Improvements and fixes in the update:
 
-- Temporarily disabled the HolographicSpace.UserPresence API for Unity applications to avoid an issue which causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled.
-- Fixed a random HUP crash cased by hand tracking, in which user will notice an UI freeze then back to shell after several seconds.
-- We made an improvement in hand tracking so that while poking using index finger, the upper part of that finger will be less likely to curl unexpectedly.
+- Temporarily disabled the HolographicSpace.UserPresence API for Unity applications to avoid an issue that caused some apps to pause when the visor is flipped up, even if the "run in the background" setting is enabled.
+- Fixed a random HUP crash cased by hand tracking, in which the user notices a UI freeze then back to shell after several seconds.
+- Improved hand tracking so that when you poke with your index finger, the upper part of that finger is less likely to curl unexpectedly.
 - Improved reliability of head tracking, spatial mapping, and other runtimes.
 
 ## Windows Holographic, version 1903 - January 2020 Update 
 - Build 18362.1043
+ 
+Improvements and fixes in the update:
 
-Improvement in the update:
-
-- Stability improvements for exclusive apps when working with the HoloLens 2 emulator.
+- Improve stability for exclusive apps when working with the HoloLens 2 emulator.
 
 ## Windows Holographic, version 1903 - December 2019 Update 
 - Build 18362.1042
 
 Improvements and fixes in the update:
 
-- Introduces LSR (Last Stage Reproduction) fixes. Improves visual rendering of holograms to appear more stable and crisp by more accurately accounting for their depth. This will be more noticeable if apps do not set the depth of holograms correctly, after this update.
-- Fixes stability of exclusive apps and navigation between exclusive apps.
-- Resolves an issue where Mixed Reality Capture couldn't record video after device is left in standby state for multiple days.
-- Improves hologram stability.
+- Introduced last stage reproduction (LSR)) fixes. Improved visual rendering of holograms to appear more stable and crisp by more accurately accounting for their depth. This will be more noticeable if apps don't set the depth of holograms correctly, after this update.
+- Fixed stability of exclusive apps and navigation between exclusive apps.
+- Resolved an issue where Mixed Reality Capture couldn't record video after the device is left in standby state for multiple days.
+- Improved hologram stability.
 
 ## Windows Holographic, version 1903 - November 2019 Update 
 - Build 18362.1039
 
 Improvements and fixes in the update:
 
-- Fixes for **"Select"** voice commands during initial set-up for en-CA and en-AU.
-- Improvements in visual quality of objects placed far away in latest Unity and MRTK versions.
-- Fixes addressing issues with holographic applications being stuck in a paused state on launch until the pins panel is brought up and dismissed again.
+- Fixed **Select** voice commands during initial setup for en-CA and en-AU.
+- Improved visual quality of objects placed far away in latest Unity and Mixed Reality Toolkit (MRTK) versions.
+- Fixed addressing issues with holographic applications getting stuck in a paused state on startup until the pins panel is opened and then closed.
 - OpenXR runtime conformance fixes and improvements for HoloLens 2 and the emulator.
 
 
