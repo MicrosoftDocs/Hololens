@@ -76,15 +76,15 @@ HoloLens 2 can employ password-less user credentials (such as Windows Hello or F
 > [!Note] 
 > The [WebAuthn](https://www.w3.org/TR/webauthn/) and FIDO2 [CTAP2](https://fidoalliance.org/specs/fido-v2.0-ps-20190130/fido-client-to-authenticator-protocol-v2.0-ps-20190130.html) specifications are implemented into services. The signed metadata specified by WebAuthn and FIDO2 provides information – such as whether the user was present - and verifies the authentication through the local gesture.
 
-As with Windows Hello, when the user creates and registers a FIDO2 credential, the device (PC or the FIDO2 security key), generates a private and public key on the device. The private key is stored securely on the device, and it can only be used after it is unlocked using a local gesture such as a biometric or PIN. When the private key is stored, the public key is sent to the Microsoft account system in the cloud and registered with the associated user account.
+As with Windows Hello, when the user creates and registers a FIDO2 credential, the device (HoloLens 2 or the FIDO2 security key), generates a private and public key on the device. The private key is stored securely on the device, and it can only be used after it is unlocked using a local gesture such as a biometric or PIN. When the private key is stored, the public key is sent to the Microsoft account system in the cloud and registered with the associated user account.
 
-After signing in with an MSA and AAD account, the system sends a generated number or data variable to the PC or FIDO2 device. The PC or device uses the private key to sign the identification. The signed identification and metadata are sent back to the Microsoft account system and verified using the public key.
+After signing in with an MSA and AAD account, the system sends a generated number or data variable to the HoloLens 2 or FIDO2 device. The HoloLens 2 or device uses the private key to sign the identification. The signed identification and metadata are sent back to the Microsoft account system and verified using the public key.
 
 Windows Hello and FIDO2 devices implement credentials based on the HoloLens device, specifically the built-in Trusted Platform Module secure enclave. The TPM enclave stores the private key and requires either a biometric or PIN to unlock it. Similarly, a FIDO2 security key is a small external device with a built-in secure enclave that stores the private key and requires a biometric or PIN to unlock it.
 
 Both options offer two-factor authentication in one step, requiring both a registered device and a biometric or PIN to successfully sign in. For more information, refer to the strong authentication with FIDO2 security key graphic which follows:
 
-  ![FIDO img](images/security-fido-img.png)
+  ![FIDO img](images/security-fido2-whfb.png)
 
 MSA and AAD are among the first relying parties to support password-less authentication by implementing WebAuthn. 
 
