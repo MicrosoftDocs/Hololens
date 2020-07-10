@@ -122,6 +122,7 @@ If the HoloLens (1st gen) isn't automatically detected, select **My device was n
 
 If your device isn't detected, follow these steps to put it into flashing mode:
 
+<<<<<<< HEAD
 1. Unplug the device from any power source.
 1. If the device is on, hold down the power button until it completely turns off.
 2. Hold the **Volume Up** button, and briefly tap the **Power button**. The device should boot and display only the middle LED light.
@@ -129,3 +130,13 @@ If your device isn't detected, follow these steps to put it into flashing mode:
 4. Open the Windows Device Recovery Tool.
 5. Select *My device was not detected**, and then select **HoloLens**. 
 6. Follow the instructions to recover your device.
+=======
+1. Unplug the device from all power sources.
+1. If the device is on please hold down the power button until it is completely off.
+1. Hold the **Volume Up** button, and briefly tap the **Power button**. 
+1. The device should boot and then display only the middle LED light.
+1. Plug the device into your PC.
+1. Launch Windows Device Recovery Tool.
+1. You will need to select *My device was not detected**, and then select **HoloLens**. 
+1. Follow the instructions to recover your device.
+>>>>>>> c1065c274f0db31c3502e81a517d818f02e5d1e8
