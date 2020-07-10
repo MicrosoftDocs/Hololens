@@ -33,7 +33,7 @@ State separation on HoloLens 2 vastly improves security and serviceability (upda
 
 ### State separation states
 
-State separation ensures the operating system is only changeable by Microsoft trusted device components, and any other state can be discarded. Having state separation rapidly returns the device back to factory state. Windows Holographic for Business states can be divided into these distinct categories:
+State separation ensures the operating system can only be changed by Microsoft trusted device components and only high-value state is allowed to persist across reboots; other system state exists only for the duration of the boot session and is discarded after a reboot. Having state separation rapidly returns the device back to factory state. Windows Holographic for Business states can be divided into these distinct categories:
   * Core operating system – Unalterable state
   * Operating System Data – Alterable state 
   * User Data – Alterable state
@@ -63,7 +63,7 @@ A high-value alterable state on HoloLens 2 resides on the operating system Data 
 
 #### User data
 
-The last category of state represents user data produced or persisted by UWP applications or the operating system. All known user folders such as Downloads, Documents, Videos, user profiles and HKEY_CURRENT_USER hive are also stored in this location.
+The last category of state represents user data produced or persisted by UWP applications or the operating system. All known user folders such as Downloads, Documents, Videos, user profiles and HKEY_CURRENT_USER hive are also stored in this location. This data cannot be extracted without proper credentials; to learn more about how your data is protected, see [Encryption and Data Protection](security-encryption-data-protection.md).
 
 ##	Isolation
 
