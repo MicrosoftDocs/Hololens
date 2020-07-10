@@ -14,7 +14,7 @@ manager: laurawi
 
 ---
 
-# HoloLens BitLocker Encryption
+# HoloLens (1st Gen) BitLocker Encryption
 
 HoloLens (1st gen) and HoloLens 2 both support device encryption using BitLocker, however, BitLocker is always enabled on HoloLens 2.
 

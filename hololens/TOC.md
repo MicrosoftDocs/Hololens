@@ -38,12 +38,27 @@
 ## Planning for HoloLens 2 Enterprise Deployment
 ### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ### [Common Infrastructure Deployment Scenarios](common-scenarios.md)
+## Security
+### [Security overview](security-overview.md)
+### [Architecture](security-architecture.md)
+### [State separation and isolation](security-state-separation-isolation.md)
+### [Admin-less operating system ](security-adminless-os.md)
+### [Limiting password use](security-limiting-password-use.md)
+### [Hardware-backed security and runtime attestation](security-hardware-backed-integrity.md)
+### [Encryption and data protection](security-encryption-data-protection.md)
+### [Network security](security-network-security.md)
+### [Wireless and Wi-Fi](security-wireless-wifi.md)
+### [Security engineering ](security-engineering.md)
+### HoloLens 1st Gen Security
+#### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
+#### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 ## [License requirements](hololens-licenses-requirements.md)
 ## Environment
 ### [HoloLens environment considerations](hololens-environment-considerations.md)
 ### [Map physical spaces with HoloLens](hololens-spaces.md)
 ## [Commercial features](hololens-commercial-features.md)
 ## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
+
 # Configure
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
@@ -53,9 +68,8 @@
 ### [Connect HoloLens to a network](hololens-network.md)
 ### [Manage connection endpoints for HoloLens](hololens-offline.md)
 ### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
-## Security
-### [Frequently asked security questions](hololens-faq-security.md)
-### [HoloLens BitLocker Encryption](hololens-encryption.md)
+
+
 ## Policies
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
