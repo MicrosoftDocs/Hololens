@@ -68,10 +68,15 @@ You are welcome and encouraged to try developing your applications using Insider
 
 ## Windows Insider Release Notes
 
-As of our [Windows Holographic May 2020 Update](hololens-release-notes.md) release all of our release preview features are now generally available! Make sure to [update your HoloLens](hololens-update-hololens.md) to get all the latest features.
+If you are looking for a feature that is no longer listed here, then it is now generally available. Please review the [release notes](hololens-release-notes.md) to see what build has the feature(s) you are excited for. Make sure to [update your HoloLens](hololens-update-hololens.md) to get all the latest features.
 
-We'll be updating this page again with new features again as we release them to Windows Insider builds.
+We'll be updating this page with new features again as we release them to Windows Insider builds.
 
+| Feature                               | Description                                                                                  |
+|---------------------------------------|----------------------------------------------------------------------------------------------|
+| Auto Eye Position Support             | Actively finds eye positions and enables accurate hologram positioning.                      |
+| Global Assigned Access                | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level. |
+| Auto launch an app in multi-app kiosk | Sets an application to launch automatically when signing into into a multiple-app kiosk mode |
 
 ### Auto Eye Position Support
 
@@ -92,6 +97,18 @@ For experiences that require eye gaze data or very precise hologram positioning,
 
 **Known issues**
 1.	We're investigating an issue where the eye tracker driver host process could crash when running under heavy memory load. The eye tracking driver host process should auto recover.
+
+### Global Assigned Access – Kiosk Mode
+This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
+
+### Automatic launch of an application in multiple-app kiosk mode 
+Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
+
+Application is automatically launched when user signs-in. 
+```
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
 
 ## FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
