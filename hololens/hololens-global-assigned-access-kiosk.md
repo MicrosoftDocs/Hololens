@@ -1,7 +1,7 @@
 ---
 title: Global Assigned Access
 description: Guide for using OMA-URI for Global Assigned Access Kiosks
-author: v-evmill
+author: evmill
 ms.author: v-evmill
 ms.date: 7/13/2020
 ms.topic: article
@@ -25,7 +25,7 @@ This feature configures Hololens 2 device for multiple app kiosk mode which is a
 > Please be aware of the areas marked with <!-  these areas will require you to make modifications based on your preferences. 
 
 1.	Create a custom OMA URI device configuration profile as follows and apply it to HoloLens device group: 
-![Global Assigned Access OMA-URI in Intune](hololens/images/GlobalAA_OMAURI.png)
+![Global Assigned Access OMA-URI in Intune](images/GlobalAA_OMAURI.png)
 
 2.	For value, update and paste following content: 
 
