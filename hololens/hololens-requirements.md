@@ -16,7 +16,10 @@ ms.date: 07/15/2019
 
 You can deploy and configure HoloLens at scale in a commercial setting. This article provides instructions for deploying HoloLens devices in a commercial environment. This guide assumes basic familiarity with HoloLens. Follow the [get started guide](hololens1-setup.md) to set up HoloLens for the first time.
 
-This document also assumes that the HoloLens has been evaluated by security teams as safe to use on the corporate network. Frequently asked security questions can be found [here](hololens-faq-security.md)
+This document also assumes that the HoloLens has been evaluated by security teams as safe to use on the corporate network.  
+> [!Tip]
+> Learn more about [HoloLens security](security-overview.md).
+> For HoloLens (1st Gen) security please review [this FAQ](hololens1-faq-security.md).
 
 ## Overview of Deployment Steps
 
@@ -27,11 +30,11 @@ This document also assumes that the HoloLens has been evaluated by security team
 1. (Optional) [Configure HoloLens using a provisioning package](hololens-provisioning.md)
 1. [Enroll Device](hololens-enroll-mdm.md)
 1. [Set up ring based updates for HoloLens](hololens-updates.md)
-1. [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
+1. [Enable Bitlocker device encryption for HoloLens](security-encryption-data-protection.md)
 
 ## Step 1. Determine what you need
 
-Before deploying the HoloLens in your environment, it is important to first determine what features, apps, and type of identities are needed. It is also important to ensure that your security team has approved of the use of the HoloLens on the company's network. Please see [Frequently ask security questions](hololens-faq-security.md) for additional security information.
+Before deploying the HoloLens in your environment, it is important to first determine what features, apps, and type of identities are needed. It is also important to ensure that your security team has approved of the use of the HoloLens on the company's network. Please see [HoloLens2 security](security-overview.md) for additional security information.
 
 ### Type of Identity
 
@@ -108,8 +111,6 @@ Some of the HoloLens configurations you can apply in a provisioning package:
 - (HoloLens v1) Apply key to enable Windows Holographic for Business
 
 If you decide to use provisioning packages, follow [this guide](hololens-provisioning.md).
-
-## Next Step: [Determine what licenses you need](hololens-licenses-requirements.md)
 
 ## Get support
 
