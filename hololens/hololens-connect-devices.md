@@ -42,7 +42,9 @@ HoloLens (1st gen) supports the following classes of Bluetooth devices:
 1. Turn on your keyboard or mouse, and make it discoverable. To learn how to make the device discoverable, look for information on the device (or its documentation) or visit the manufacturer's website.
 
 1. Use the bloom gesture (HoloLens (1st gen)) or the start gesture (HoloLens 2) to go to **Start**, and then select **Settings**.
+
 1. Select **Devices**, and make sure that Bluetooth is on.  
+
 1. When you see the device name, select **Pair**, and then follow the instructions.
 
 ### HoloLens (1st gen): Pair the clicker
@@ -72,7 +74,7 @@ HoloLens 2 supports the following classes of USB-C devices:
 - Combination PD hubs (USB A plus PD charging)
 
 > [!NOTE]
-> Some mobile devices with USB-C connections present themselves to the HoloLens as ethernet adaptors, and therefore could be used in a tethering configuration, starting with Windows Holographic, version 2004. USB LTE modems that require a separate driver, and/or application installed for configuration are not supported
+> Some mobile devices with USB-C connections present themselves to the HoloLens as ethernet adaptors, and therefore could be used in a tethering configuration, starting with Windows Holographic, version 2004. USB LTE modems that require a separate driver, and/or application installed for configuration are not supported.
 
 ## Connect to Miracast
 
@@ -84,6 +86,7 @@ To use Miracast, follow these steps:
    - Say "Connect" while you gaze at the **Start** menu.  
 
 1. On the list of devices that appears, select an available device.
+
 1. Complete the pairing to begin projecting.
 
 ## Disable Bluetooth
@@ -91,4 +94,5 @@ To use Miracast, follow these steps:
 This procedure turns off the RF components of the Bluetooth radio and disables all Bluetooth functionality on Microsoft HoloLens.
 
 1. Use the bloom gesture (HoloLens (1st gen)) or the start gesture (HoloLens 2) to go to **Start**, and then select **Settings** > **Devices**.
+
 1. Move the slider switch for **Bluetooth** to the **Off** position.
