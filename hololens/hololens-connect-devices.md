@@ -26,8 +26,7 @@ HoloLens 2 supports the following classes of Bluetooth devices:
 - Bluetooth audio output (A2DP) devices
 
 > [!NOTE]
-> When using a set of headphones, audio switchs to the headphones that are paired.
-> If a headset has a microphone however it will not be used. You cannot pair a microphone, HoloLens will always use the built in ones.
+> External microphones cannot be used. HoloLens 2 uses its built-in [microphone array](hololens2-hardware.md#audio-and-speech).
 
 HoloLens (1st gen) supports the following classes of Bluetooth devices:
 
