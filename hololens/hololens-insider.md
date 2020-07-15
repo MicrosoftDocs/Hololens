@@ -46,11 +46,13 @@ If you no longer want to receive Insider builds of Windows Holographic, you can 
 To verify that your HoloLens is running a production build:
 
 1. Go to **Settings > System > About**, and find the build number.
-1. [See the release notes for production build numbers.](hololens-release-notes.md)
+
+1. [See the release notes for production build numbers](hololens-release-notes.md).
 
 To opt out of Insider builds:
 
 1. On a HoloLens running a production build, go to **Settings > Update & Security > Windows Insider Program**, and select **Stop Insider builds**.
+
 1. Follow the instructions to opt out your device.
 
 
@@ -96,7 +98,7 @@ There are a few system behavior changes with Auto Eye Position feature when an u
 For experiences that require eye gaze data or very precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration from the eye tracking calibration prompt or by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
 
 **Known issues**
-1.	We're investigating an issue where the eye tracker driver host process could crash when running under heavy memory load. The eye tracking driver host process should auto recover.
+ - We're investigating an issue where the eye tracker driver host process could crash when running under heavy memory load. The eye tracking driver host process should auto recover.
 
 ### Global Assigned Access – Kiosk Mode
 This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
@@ -105,15 +107,20 @@ This new feature allows an IT Admin to configure a HoloLens 2 device for multipl
 Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
 
 Application is automatically launched when user signs-in. 
-```
+
+```xml
 <AllowedApps>                     
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
 ## FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
-1. On PC
-    1. Download ffu to your PC from: [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
+1. On PC:
+
+    1. Download ffu to your PC from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
+    
     1. Install ARC (Advanced Recovery Companion) from the Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
-1. On HoloLens - Flight Unlock: Open **Settings** > **Update & Security** > **Windows Insider Program** then sign up, reboot device
-1. Flash FFU - Now you can flash the flight signed FFU using ARC
+    
+1. On HoloLens - Flight Unlock: Open **Settings** > **Update & Security** > **Windows Insider Program** then sign up, reboot device.
+
+1. Flash FFU - Now you can flash the flight signed FFU using ARC.
