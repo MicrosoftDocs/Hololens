@@ -1,4 +1,4 @@
-# [Microsoft HoloLens](index.md)
+# [Microsoft HoloLens](index.yml)
 
 # Overview
 

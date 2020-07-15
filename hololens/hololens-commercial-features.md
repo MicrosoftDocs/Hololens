@@ -70,7 +70,7 @@ HoloLens (1st gen) came with two licensing options, the developer license and a 
 
 ## Enabling commercial features
 
-Your organization's IT admin can set up commercial features such as Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access. The [Microsoft HoloLens](index.md) documentation provides step-by-step instructions for enrolling devices and installing apps from Microsoft Store for Business.
+Your organization's IT admin can set up commercial features such as Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access. The [Microsoft HoloLens](index.yml) documentation provides step-by-step instructions for enrolling devices and installing apps from Microsoft Store for Business.
 
 ## See also
 
