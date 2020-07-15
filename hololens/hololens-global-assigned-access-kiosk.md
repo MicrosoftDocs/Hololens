@@ -73,11 +73,11 @@ This feature configures Hololens 2 device for multiple app kiosk mode which is a
 ## How to use this in Windows Configuration Designer? 
  
 1.	Update and save XML blob mentioned above as XML file. 
-2.	Follow steps at [here](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) specifically section “Prov. package, step 2 – Add the kiosk configuration XML file to a provisioning package” to reference the XML file save in previous step. 
+2.	Follow steps at [here](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) specifically section “Prov. package, step 2 – Add the kiosk configuration XML file to a provisioning package” and refer to the XML file saved in previous step. 
 
 ## Can I create a configuration where global applies to everyone except 1 AAD account or AAD group? 
 
-Yes, you can create AssignedAccessConfiguration like this. Global Assigned Access profile is applied on Hololens when a specific one for the signed in user is not found, so it is default kiosk mode configuration for signed-in user. 
+Yes, please refer to the example XML blob below. Global Assigned Access profile is applied on Hololens when a specific one for the signed in user is not found, so it is default kiosk mode configuration for signed-in user. 
 Here is an example of XML blob to be used: 
 > [!NOTE]
 > Please be aware of the areas marked with <!-  these areas will require you to make modifications based on your preferences. 
