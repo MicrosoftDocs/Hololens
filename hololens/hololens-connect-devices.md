@@ -25,6 +25,9 @@ HoloLens 2 supports the following classes of Bluetooth devices:
 - Keyboard
 - Bluetooth audio output (A2DP) devices
 
+> [!NOTE]
+> External microphones cannot be used. HoloLens 2 uses its built-in [microphone array](hololens2-hardware.md#audio-and-speech).
+
 HoloLens (1st gen) supports the following classes of Bluetooth devices:
 
 - Mouse
@@ -39,7 +42,9 @@ HoloLens (1st gen) supports the following classes of Bluetooth devices:
 1. Turn on your keyboard or mouse, and make it discoverable. To learn how to make the device discoverable, look for information on the device (or its documentation) or visit the manufacturer's website.
 
 1. Use the bloom gesture (HoloLens (1st gen)) or the start gesture (HoloLens 2) to go to **Start**, and then select **Settings**.
+
 1. Select **Devices**, and make sure that Bluetooth is on.  
+
 1. When you see the device name, select **Pair**, and then follow the instructions.
 
 ### HoloLens (1st gen): Pair the clicker
@@ -69,7 +74,9 @@ HoloLens 2 supports the following classes of USB-C devices:
 - Combination PD hubs (USB A plus PD charging)
 
 > [!NOTE]
-> Some mobile devices with USB-C connections present themselves to the HoloLens as ethernet adaptors, and therefore could be used in a tethering configuration, starting with Windows Holographic, version 2004. USB LTE modems that require a separate driver, and/or application installed for configuration are not supported
+> Some mobile devices with USB-C connections present themselves to the HoloLens as ethernet adaptors, and therefore could be used in a tethering configuration, starting with Windows Holographic, version 2004. USB LTE modems that require a separate driver, and/or application installed for configuration are not supported.
+
+In response to customer feedback, we have enabled limited support for cellular connectivity tethered directly to the HoloLens via USB-C.  Tethered connectivity only works for devices that support the generic Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) driver implementation and that don’t require any additional drivers or application installs.  Such device, when connected, will automatically appear as a new Ethernet connection in the HoloLens 2 Network Settings UI. Please consult your device’s manufacturer for further details on whether it supports the generic Microsoft RNDIS driver.
 
 ## Connect to Miracast
 
@@ -81,6 +88,7 @@ To use Miracast, follow these steps:
    - Say "Connect" while you gaze at the **Start** menu.  
 
 1. On the list of devices that appears, select an available device.
+
 1. Complete the pairing to begin projecting.
 
 ## Disable Bluetooth
@@ -88,4 +96,5 @@ To use Miracast, follow these steps:
 This procedure turns off the RF components of the Bluetooth radio and disables all Bluetooth functionality on Microsoft HoloLens.
 
 1. Use the bloom gesture (HoloLens (1st gen)) or the start gesture (HoloLens 2) to go to **Start**, and then select **Settings** > **Devices**.
+
 1. Move the slider switch for **Bluetooth** to the **Off** position.

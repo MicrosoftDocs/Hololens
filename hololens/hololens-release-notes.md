@@ -24,6 +24,25 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
+## Windows Holographic, version 2004 - July 2020 Update
+- Build 19041.1109
+
+Improvements and fixes in the update:
+
+- Developers can choose between enabling or disabling Device Portal requiring a secure connection.
+- Reliability improvements for application launches after OS updates.
+- Change default inbox brightness to 100%.
+- Addressed an issue around HTTPS forwarding for the Windows Device Portal on HoloLens 2.
+
+## Windows Holographic, version 1903 - July 2020 Update
+- Build 18362.1071
+
+Improvements and fixes in the update:
+
+- Fixes an issue which could cause holograms to disappear in Unity applications when losing and/or regaining tracking.
+- Fixed an issue that caused exclusive Hololens apps to crash back to the shell while using the Hololens emulator with hardware acceleration on certain devices.
+- Addressed an issue around HTTPS forwarding for the Windows Device Portal on HoloLens 2.
+
 ## Windows Holographic, version 2004 - June 2020 Update
 - Build 19041.1106
 
