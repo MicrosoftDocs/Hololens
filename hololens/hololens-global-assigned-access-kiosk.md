@@ -18,6 +18,9 @@ appliesto:
 # Global Assigned Access – Kiosk
 
 This feature configures Hololens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. 
+
+> [!NOTE]
+> This feature is currently only avalible in Windows Insider builds. If you would like to try this feature before it is generally avalible in HoloLens releases please read more about [Windows Insider](hololens-insider.md) builds.
  
 ## How to use this in Intune? 
 
