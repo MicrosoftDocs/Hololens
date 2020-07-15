@@ -74,7 +74,7 @@ Your organization's IT admin can set up commercial features such as Microsoft St
 
 ## See also
 
-- [Microsoft HoloLens](index.md)
+- [Microsoft HoloLens](index.yml)
 - [Kiosk mode](hololens-kiosk.md)
 - [CSPs supported in HoloLens devices](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
 - [Microsoft Store For Business and line of business applications](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
