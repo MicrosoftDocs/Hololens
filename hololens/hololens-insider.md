@@ -72,11 +72,11 @@ If you are looking for a feature that is no longer listed here, then it is now g
 
 We'll be updating this page with new features again as we release them to Windows Insider builds.
 
-| Feature                               | Description                                                                                  |
-|---------------------------------------|----------------------------------------------------------------------------------------------|
-| Auto Eye Position Support             | Actively finds eye positions and enables accurate hologram positioning.                      |
-| Global Assigned Access                | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level. |
-| Auto launch an app in multi-app kiosk | Sets an application to launch automatically when signing into into a multiple-app kiosk mode |
+| Feature                               | Description                                                                                   | Available in insider builds |
+|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| Auto Eye Position Support             | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
+| Global Assigned Access                | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1346+                 |
+| Auto launch an app in multi-app kiosk | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
 
 ### Auto Eye Position Support
 
