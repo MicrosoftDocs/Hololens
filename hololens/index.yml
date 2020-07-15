@@ -1,0 +1,93 @@
+### YamlMime:Landing
+
+title: Microsoft HoloLens # < 60 chars
+summary: Microsoft HoloLens is the first fully self-contained holographic computer to run Windows 10. Now, with the introduction of HoloLens 2, every HoloLens device provides commercial ready management capabilities that are enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft. 
+
+metadata:
+  title: Microsoft HoloLens # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Landing page for Microsoft HoloLens. # Required; article description that is displayed in search results. < 160 chars.
+  ms.prod: hololens #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.topic: landing-page # Required
+  author: todmccoy #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-todmc #Required; microsoft alias of author; optional team alias. 
+  ms.date: 5/22/2020 #Required; mm/dd/yyyy format.
+  ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card (optional)
+  - title: Deploy and manage
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Deploy HoloLens in a commercial environment
+            url: hololens-requirements.md
+          - text: 'App Management: Overview'
+            url: app-deploy-overview.md
+          - text: Set up HoloLens as a kiosk
+            url: hololens-kiosk.md
+          - text: Manage HoloLens updates
+            url: hololens-updates.md
+
+  # Card
+  - title: Dynamics 365
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Microsoft Dynamics 365 Mixed Reality documentation
+            url: https://docs.microsoft.com/dynamics365/mixed-reality/
+          - text: Use Remote Assist on HoloLens
+            url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
+          - text: Use Guides on HoloLens 
+            url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+          - text: Remote Assist learning modules
+            url: https://docs.microsoft.com/en-us/learn/browse/?products=dynamics-remote-assist
+
+  # Card
+  - title: Related resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Mixed Reality developer documentation
+            url: https://developer.microsoft.com/windows/mixed-reality/development
+          - text: HoloLens pricing and options
+            url: https://www.microsoft.com/hololens/buy
+
+  # Card
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Restart, reset, or recover HoloLens 2
+            url: hololens-recovery.md
+          - text: Troubleshoot HoloLens issues
+            url: hololens-troubleshooting.md
+
+
+  # Card
+  - title: Support
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: HoloLens 2 release notes
+            url: https://docs.microsoft.com/hololens/hololens-release-notes
+          - text: Contact Support
+            url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
+
+  # Card
+  - title: Mixed Reality
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Get started with Mixed Reality
+            url: https://docs.microsoft.com/windows/mixed-reality/
+          - text: Start designing and prototyping
+            url: https://docs.microsoft.com/windows/mixed-reality/design
+          - text: Learn the tools and architecture
+            url: https://docs.microsoft.com/windows/mixed-reality/development
