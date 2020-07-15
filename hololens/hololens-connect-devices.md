@@ -76,6 +76,8 @@ HoloLens 2 supports the following classes of USB-C devices:
 > [!NOTE]
 > Some mobile devices with USB-C connections present themselves to the HoloLens as ethernet adaptors, and therefore could be used in a tethering configuration, starting with Windows Holographic, version 2004. USB LTE modems that require a separate driver, and/or application installed for configuration are not supported.
 
+In response to customer feedback, we have enabled limited support for cellular connectivity tethered directly to the HoloLens via USB-C.  Tethered connectivity only works for devices that support the generic Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) driver implementation and that don’t require any additional drivers or application installs.  Such device, when connected, will automatically appear as a new Ethernet connection in the HoloLens 2 Network Settings UI. Please consult your device’s manufacturer for further details on whether it supports the generic Microsoft RNDIS driver.
+
 ## Connect to Miracast
 
 To use Miracast, follow these steps:
