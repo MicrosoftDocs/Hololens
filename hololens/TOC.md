@@ -47,7 +47,6 @@
 ### [Hardware-backed security and runtime attestation](security-hardware-backed-integrity.md)
 ### [Encryption and data protection](security-encryption-data-protection.md)
 ### [Network security](security-network-security.md)
-### [Wireless and Wi-Fi](security-wireless-wifi.md)
 ### [Security engineering ](security-engineering.md)
 ### HoloLens 1st Gen Security
 #### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
