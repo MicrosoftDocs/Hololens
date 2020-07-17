@@ -27,24 +27,14 @@ The first time you use your HoloLens, you'll be guided through connecting to a W
 
 ## Connecting to Wi-Fi after setup
 
-1. Select **Start** > **Settings**.
-   - *HoloLens (1st gen) only*: Use your gaze to position the Settings app, then air tap to place it, or say "Place."
-1. Select **Network & Internet** > **Wi-Fi**. If you don't see your network, scroll down the list.
+1. Preform the **Start gesture** and select **Settings**. The Settings app will be auto-placed in front of you.
+1. Select **Network & Internet** > **Wi-Fi**. Make sure Wi-Fi is turned on. If you don't see your network, scroll down the list.
 1. Select a network, then select **Connect**.
 1. If you are prompted for a network password type it and then select **Next**.
-
-## Connecting to Wi-Fi on HoloLens (1st gen)
 
 HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio. Connecting HoloLens to a Wi-Fi network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network.
 
 ![HoloLens Wi-Fi settings](./images/wifi-hololens-600px.jpg)
-
-1. Open the **Start** menu.
-1. Select the Settings app from **Start** or from the **All Apps** list on the right of the **Start** menu. The Settings app will be auto-placed in front of you.
-1. Select **Network & Internet**.
-1. Make sure Wi-Fi is turned on.
-1. Select a Wi-Fi network from the list.
-1. If needed, type in the Wi-Fi network password.
 
 You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi status in the **Start** menu:
 
@@ -56,6 +46,19 @@ You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi 
 If you experience problems connecting to Wi-Fi, see [I can't connect to Wi-Fi](./hololens-faq.md#i-cant-connect-to-wi-fi).
 
 When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.
+
+## VPN
+A VPN connection can help provide a more secure connection and access to your company's network and the Internet. HoloLens 2 supports built-in VPN client and Universal Windows Platform (UWP) VPN plug-in. 
+
+Supported Built-in VPN protocols:
+- IKEv2
+- L2TP
+- PPTP
+
+If certificate is used for authentication for built-in VPN client, the required client certificate needs to be added to user certificate store. To find if a 3rd party VPN plug-in supports HoloLens 2, go to Store to locate VPN app and check if HoloLens is listed as a supported device and in the System Requirement page the app supports ARM or ARM64 architecture. HoloLens only supports Universal Windows Platform applications for 3rd party VPN.
+
+VPN is not enabled by default but can be enabled manually by opening **Settings** app and navigating to  **Network & Internet -> VPN**. VPN can be managed by MDM via [Settings/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn), and set via  [Vpnv2-csp policy](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp).
+Learn more about [how to configure VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn) with [these guides](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide).  
 
 ## Disabling Wi-Fi on HoloLens (1st gen)
 
@@ -84,9 +87,9 @@ When you sign into an enterprise or organizational account on the device, it may
 
    The IP address appears next to **IPv4 address**.
 
-### By using Cortana
+### By using voice commands
 
-Say "Hey Cortana, What's my IP address?" and Cortana will display and read out your IP address.
+Depending on your devices build you can either use built in voice commands or Cortana to display your IP address. On builds after [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) speak "What's my IP address?" and it will be displayed. For earlier builds or HoloLens (1st gen) say "Hey Cortana, What's my IP address?" and Cortana will display and read out your IP address.
 
 ### By using Windows Device Portal
 
