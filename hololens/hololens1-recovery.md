@@ -1,6 +1,6 @@
 ---
 title: Restart, reset, or recover HoloLens 1
-ms.reviewer: Both basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
 description: How to use Windows Device Recovery Tool to flash an image to HoloLens 1st Gen.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, wdrt, windows device recovery tool
 ms.prod: hololens
@@ -37,14 +37,10 @@ If you're looking to recover a HoloLens 2, see [Recovering a HoloLens 2](https:/
 The safest way to restart the HoloLens is by using Cortana. This is generally the first thing to try when you experience an issue with HoloLens.
 
 > [!NOTE]
-> Cortana is not avalible on all devices.
-> 
-> Cortana is avalible to all HoloLens (1st Gen) devices.
->
-> Cortana is avalible on HoloLens 2 devices on builds prior to the Windows Holograpic, Version 2004 update.
+> Cortana is not available on all devices. Cortana is available to all HoloLens (1st Gen) devices. Cortana is available on HoloLens 2 devices on builds prior to the Windows Holograpic, Version 2004 update.
 
 1. Turn on your HoloLens.
-1. Make sure a user is logged in, and the device is not waiting for a password to unlock it.
+1. Make sure a user is logged in and the device is not waiting for a password to unlock it.
 2. Say "Hey Cortana, reboot" or "Hey Cortana, restart."
 3. Cortana will acknowledge the command and prompt you to confirm. Wait for a sound to play after the question, and then say "Yes." The device will restart.
 
