@@ -79,6 +79,7 @@ We'll be updating this page with new features again as we release them to Window
 | Auto Eye Position Support             | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
 | Global Assigned Access                | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1346+                 |
 | Auto launch an app in multi-app kiosk | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
+| Idle timeout settings                 | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
 
 ### Auto Eye Position Support
 
@@ -112,6 +113,18 @@ Application is automatically launched when user signs-in.
 <AllowedApps>                     
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
+
+## Idle timeout settings via MDM
+These newly added policies allow admins to control power states, such as idle timeout. To read more about each individual policy please click the link for that policy.
+
+|     Policy Documentation Link                |     Notes                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     DisplayOffTimeoutOnBattery               |     Example value to use in   Windows Configuration Designer, i.e.  ```<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>```     |
+|     DisplayOffTimeoutPluggedIn               |     Example value to use in   Windows Configuration Designer, i.e.  ```<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>```     |
+|     EnergySaverBatteryThresholdOnBattery     |  Example value to use in Windows Configuration Designer,   i.e. 100                                                                             |
+|     EnergySaverBatteryThresholdPluggedIn     |     Example value to use in Windows Configuration   Designer, i.e. 100                                                                          |
+|     StandbyTimeoutOnBattery                  |     Example value to use in   Windows Configuration Designer, i.e.   ```<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/> ```          |
+|     StandbyTimeoutPluggedIn                  |     Example value to use in   Windows Configuration Designer, i.e.  ```<enabled/><data   id="EnterACStandbyTimeOut" value="100"/> ```           |
 
 ## FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
