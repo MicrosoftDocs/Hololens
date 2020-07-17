@@ -39,6 +39,11 @@
                             "source_path":   "hololens/hololens-install-apps.md",
                             "redirect_url":  "https://docs.microsoft.com/hololens/holographic-store-apps",
                             "redirect_document_id":  false
-                        }
-                     ]
+                        },
+                        {
+                            "source_path":   "hololens/security-wireless-wifi.md",
+                            "redirect_url":  "https://docs.microsoft.com/hololens/security-overview",
+                            "redirect_document_id":  true
+                        }        
+                    ]
 }

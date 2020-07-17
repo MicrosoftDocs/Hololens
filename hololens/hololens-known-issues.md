@@ -43,6 +43,14 @@ This is the current list of known issues for HoloLens devices. Check here first 
 - On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section are not functional. Using them will have no effect. The virtual keyboard on the same page works correctly.
 - After enabling Developer Mode in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
 
+### OneDrive camera upload
+
+The OneDrive app for HoloLens does not support automatic camera upload for work or school accounts.
+
+Workarounds:
+- If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
+- If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
+
 ## Known issues for HoloLens 2 devices
 
 ### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with a Insider build
