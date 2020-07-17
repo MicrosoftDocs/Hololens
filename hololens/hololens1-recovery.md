@@ -36,7 +36,7 @@ If you're looking to recover a HoloLens 2, see [Recovering a HoloLens 2](https:/
 
 The safest way to restart the HoloLens is by using Cortana. This is generally the first thing to try when you experience an issue with HoloLens.
 
-> [!NOTE]
+> [!NOTE]  ***START***
 > Cortana is not available on all devices. Cortana is available to all HoloLens (1st Gen) devices. Cortana is available on HoloLens 2 devices on builds prior to the Windows Holograpic, Version 2004 update.
 
 1. Turn on your HoloLens.
