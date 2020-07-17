@@ -132,7 +132,7 @@ These newly added policies allow admins to control power states, such as idle ti
 In Windows Insider build 19041.1346+ we are adding a Certificate Viewer in the HoloLens 2 Settings app. This feature provides a simple and user-friendly way to verify certificates on your device. To find a specific certificate quickly there are options to sort by name, store or expiration date. Users may also directly search for a certificate. With the new Certificate Viewer, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant.  To view more about an individual certificate select the certificate and click on Info.
 
 > [!NOTE]
-> There is a known limitation on non-US language localization that we are working on resolving in subsequent Windows Isider releases.
+> There is a known limitation on non-US language localization that we are working on resolving in subsequent Windows Insider releases.
 
 -	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
 -	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
