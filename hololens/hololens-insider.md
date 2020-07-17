@@ -114,7 +114,7 @@ Application is automatically launched when user signs-in.
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
-## New Power CSP’s for Hololens 2
+### New Power CSP’s for Hololens 2
 These newly added policies allow admins to control power states, such as idle timeout. To read more about each individual policy please click the link for that policy.
 
 |     Policy Documentation Link                |     Notes                                                                                                                                       |
