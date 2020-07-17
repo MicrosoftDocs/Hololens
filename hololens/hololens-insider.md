@@ -80,6 +80,7 @@ We'll be updating this page with new features again as we release them to Window
 | Global Assigned Access                | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1346+                 |
 | Auto launch an app in multi-app kiosk | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
 | New power policies for Hololens 2     | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
+| Certificate Viewer                    | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
 
 ### Auto Eye Position Support
 
@@ -125,6 +126,18 @@ These newly added policies allow admins to control power states, such as idle ti
 |     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Example value to use in Windows Configuration   Designer, i.e. 100                                                                          |
 |     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Example value to use in   Windows Configuration Designer, i.e.   ```<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/> ```          |
 |     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Example value to use in   Windows Configuration Designer, i.e.  ```<enabled/><data   id="EnterACStandbyTimeOut" value="100"/> ```           |
+
+### Certificate Viewer
+
+In Windows Insider build 19041.1346+ we are adding a Certificate Viewer in the HoloLens 2 Settings app. This feature provides a simple and user-friendly way to verify certificates on your device. With the new Certificate Viewer, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant. 
+
+-	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
+-	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
+-	**Validation:** Verifying that the certificate serves the intended purpose and is functional, can save significant time, particularly in commercial environments before deploying certificates at larger scale.
+
+To view certificates, go to **Settings > Update & Security > Certificates**.
+
+![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
 
 ## FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
