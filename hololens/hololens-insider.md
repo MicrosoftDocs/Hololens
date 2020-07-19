@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 6/29/2020
+ms.date: 7/17/2020
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -79,6 +79,8 @@ We'll be updating this page with new features again as we release them to Window
 | Auto Eye Position Support             | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
 | Global Assigned Access                | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1346+                 |
 | Auto launch an app in multi-app kiosk | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
+| New power policies for Hololens 2     | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
+| Certificate Viewer                    | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
 
 ### Auto Eye Position Support
 
@@ -90,8 +92,8 @@ There are a few system behavior changes with Auto Eye Position feature when an u
 
 |     Active Application                           |     Current Behavior                                   |     Behavior from Windows Insider   build 19041.1339+                                                      |
 |--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     Non-gaze enabled app or Holographic Shell    |     Eye tracking calibration prompt is   displayed.    |     No prompt is displayed.                                                                                |
-|     Gaze enabled app                             |     Eye tracking calibration prompt is   displayed.    |     Eye tracking calibration prompt is   displayed only when the application accesses eye gaze stream.     |
+|     Non-gaze enabled app or Holographic Shell    |     Eye tracking calibration prompt is displayed.    |     No prompt is displayed.                                                                                |
+|     Gaze enabled app                             |     Eye tracking calibration prompt is displayed.    |     Eye tracking calibration prompt is   displayed only when the application accesses eye gaze stream.     |
 
  If the user transitions from a non-gaze enabled application to one that accesses the gaze data, the calibration prompt will be displayed. There will be no changed to Out Of Box Experience flow. 
  
@@ -112,6 +114,33 @@ Application is automatically launched when user signs-in.
 <AllowedApps>                     
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
+
+### New power policies for Hololens 2
+These newly added policies allow admins to control power states, such as idle timeout. To read more about each individual policy please click the link for that policy.
+
+|     Policy documentation link                |     Notes                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Example value to use in Windows Configuration Designer,   i.e., 100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Example value to use in Windows Configuration   Designer, i.e., 100                                                                          |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Example value to use in   Windows Configuration Designer, i.e.,   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+### Certificate Viewer
+
+In Windows Insider build 19041.1346+ we are adding a Certificate Viewer in the HoloLens 2 Settings app. This feature provides a simple and user-friendly way to verify certificates on your device. To find a specific certificate quickly there are options to sort by name, store or expiration date. Users may also directly search for a certificate. With the new Certificate Viewer, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant.  To view more about an individual certificate select the certificate and click on Info.
+
+> [!NOTE]
+> There is a known limitation on non-US language localization that we are working on resolving in subsequent Windows Insider releases.
+
+-	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
+-	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
+-	**Validation:** Verifying that the certificate serves the intended purpose and is functional, can save significant time, particularly in commercial environments before deploying certificates at larger scale.
+
+To view certificates, go to **Settings > Update & Security > Certificates**.
+
+![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
 
 ## FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
