@@ -27,7 +27,6 @@ Here are some things to try if your HoloLens isn't running well.  This article g
 If you're looking to recover a HoloLens 2, see [Recovering a HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery), as that process differs.
 
 > [!NOTE]
-
 > This article focuses on the HoloLens device and software. If your holograms don't look right, see **[Restart, reset, or recover HoloLens](hololens-environment-considerations.md)** for information about environmental factors that improve hologram quality.
 
 ## Restart
