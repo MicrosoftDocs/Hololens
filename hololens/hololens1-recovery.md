@@ -1,7 +1,7 @@
 ---
 title: Restart, reset, or recover HoloLens 1
 ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
-description: How to use Windows Device Recovery Tool to flash an image to HoloLens 1st Gen.
+description: How to use Windows Device Recovery Tool to flash an image to Holons 1st Gen.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, wdrt, windows device recovery tool
 ms.prod: hololens
 ms.sitesec: library
@@ -32,45 +32,42 @@ If you're looking to recover a HoloLens 2, see [Recovering a HoloLens 2](https:/
 
 ## Restart
 
-### Perform a safe restart by using Cortana
+### Do a safe restart by using Cortana
 
-The safest way to restart the HoloLens is by using Cortana. This is generally the first thing to try when you experience an issue with HoloLens.
+The safest way to restart the HoloLens is by using Cortana, which is generally the first thing to try when you experience an issue with HoloLens.
 
-> [!NOTE]  ***START***
-> Cortana is not available on all devices. Cortana is available to all HoloLens (1st Gen) devices. Cortana is available on HoloLens 2 devices on builds prior to the Windows Holograpic, Version 2004 update.
+> [!NOTE]  
+> Cortana is not available on all devices. Cortana is available on all HoloLens (1st Gen) devices. Cortana is available on HoloLens 2 devices on builds prior to the Windows Holograpic, Version 2004 update.
 
 1. Turn on your HoloLens.
-1. Make sure a user is logged in and the device is not waiting for a password to unlock it.
+1. Make sure a user is logged in and that the device isn't waiting for a password to unlock it.
 2. Say "Hey Cortana, reboot" or "Hey Cortana, restart."
 3. Cortana will acknowledge the command and prompt you to confirm. Wait for a sound to play after the question, and then say "Yes." The device will restart.
 
 ### Use the power button to do a safe restart
 
-If you still can't restart your device, try to restart it try to restart it by using the power button:
+If you still can't restart your device, try to restart it by using the power button:
 
-1. Press and hold the power button for 5 seconds.
-   1. After 1 second, all five LEDs will illuminate, and then slowly turn off from right to left.
-     1. After 5 seconds, all LEDs will be off, indicating successful shutdown.
+1. Press and hold the power button for 5 seconds. After 1 second, all five LEDs will illuminate and then slowly turn off one by one from right to left. After 5 seconds, all LEDs will be off, indicating successful shutdown.
       
    > [!IMPORTANT]
    > Stop pressing the button immediately after all the LEDs have turned off.
 1. Wait 1 minute for the shutdown to complete. The shutdown may still be in progress even after the displays are turned off.
 2. Turn on the device again by pressing and holding the power button for 1 second.
 
-### Perform a safe restart by using Windows Device Portal
+### Do a safe restart by using Windows Device Portal
 
 > [!NOTE]
-> For this process, HoloLens has to be configured as a developer device. 
-> Read more about [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
+> For this process, HoloLens has to be configured as a developer device. Learn more at [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
 
 If the previous procedure didn't work, try to restart the device by using [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal). In the upper-right corner, find the option to restart or shut down the device.
 
 ### Do an unsafe forced restart
 
-If the previous methods didn't restart your Hololens, force a restart. This method is equivalent to removing and reinstalling the battery. It's a dangerous because it might leave your device in a corrupted state.  If that happens, you'll have to flash your HoloLens.  
+If the previous methods didn't restart your Hololens, force a restart. This method is equivalent to removing and reinstalling the battery. It's dangerous because it might leave your device in a corrupted state. If that happens, you'll have to flash your HoloLens.  
 
 > [!WARNING]
-> This is a potentially harmful method and should only be used if none of the previously cited methods work.
+> This is a potentially harmful method and should only be used if none of the previously cited methods worked.
 
 1. Press and hold the power button for at least 10 seconds.
    - It's okay to hold the button for longer than 10 seconds.
@@ -84,10 +81,10 @@ If the previous methods didn't restart your Hololens, force a restart. This meth
 > [!NOTE]
 > The battery needs at least a 40-percent charge to reset.
 
-If your HoloLens is still experiencing issues after restarting, try resetting it to factory state. This step keeps the version of the Windows Holographic software that's installed on it and returns everything else to factory settings.
+If your HoloLens still has a problem, try resetting it to factory state. This step keeps the version of the Windows Holographic software that's installed on it and returns everything else to factory settings.
 
 >[!WARNING]
-> If you reset your device, all your personal data, apps, and settings will be erased, including TPM reset. Resetting will only install the latest installed version of Windows Holographic and you will have to redo all the initialization steps (calibrate, connect to Wi-Fi, create a user account, download apps, and so forth).
+> If you reset your device, all your personal data, apps, and settings will be erased, including TPM reset information. Resetting will only install the latest installed version of Windows Holographic. You'll have to redo all the initialization steps (calibrate, connect to Wi-Fi, create a user account, download apps, and so forth).
 
 1. Open the Settings app, and then select **Update** > **Reset**.
 1. Select the **Reset device** option and read the confirmation message.
@@ -96,15 +93,15 @@ If your HoloLens is still experiencing issues after restarting, try resetting it
 
 ## Reinstall the operating system
 
-If the device is still having a problem after a restart and reset, you can use a recovery tool on your computer to reinstall the HoloLens operating system and firmware.  
+If the device is still having a problem after restart and reset, you can use a recovery tool on your computer to reinstall the HoloLens operating system and firmware.  
 
-The data that HoloLens needs to reset is packaged in a Full Flash Update (ffu), which is similar to an .iso, .wim, or .vhd package.  [Learn about FFU image file formats.](https://docs.microsoft.com/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
+The data that HoloLens needs for the reset is packaged in a full flash update (FFU), which is similar to an .iso, .wim, or .vhd package. [Learn about FFU image file formats.](https://docs.microsoft.com/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
 
 If necessary, you can install a new operating system on your HoloLens (1st gen) by using the Windows Device Recovery Tool. Before you use this tool, see if restarting or resetting your HoloLens fixes the problem.
 
-The recovery process may take a while.  When you're done, the latest version of the Windows Holographic software for your HoloLens will be installed.
+The recovery process may take a while. When it's done, the latest version of the Windows Holographic software will be installed.
 
-To use the tool, you need a computer running Windows 10 or later, with at least 4 GB of free storage space.  You can't run this tool on a virtual machine.
+To use the tool, you need a computer running Windows 10 or later, with at least 4 GB of free storage space. You can't run this tool on a virtual machine.
 
 ### Recover your HoloLens
 
@@ -114,25 +111,14 @@ To use the tool, you need a computer running Windows 10 or later, with at least 
 
 If the HoloLens (1st gen) isn't automatically detected, select **My device was not detected**. Then follow the instructions to put the device into recovery mode.
 
-### Manual Flashing Mode
+### Manual flashing mode
 
 If your device isn't detected, follow these steps to put it into flashing mode:
 
-<<<<<<< HEAD
 1. Unplug the device from any power source.
 1. If the device is on, hold down the power button until it completely turns off.
-2. Hold the **Volume Up** button, and briefly tap the **Power button**. The device should boot and display only the middle LED light.
+2. Hold the **Volume up** button, and briefly tap the **Power** button. The device should start and display only the middle LED light.
 3. Plug the device into your PC.
 4. Open the Windows Device Recovery Tool.
 5. Select *My device was not detected**, and then select **HoloLens**. 
 6. Follow the instructions to recover your device.
-=======
-1. Unplug the device from all power sources.
-1. If the device is on please hold down the power button until it is completely off.
-1. Hold the **Volume Up** button, and briefly tap the **Power button**. 
-1. The device should boot and then display only the middle LED light.
-1. Plug the device into your PC.
-1. Launch Windows Device Recovery Tool.
-1. You will need to select *My device was not detected**, and then select **HoloLens**. 
-1. Follow the instructions to recover your device.
->>>>>>> c1065c274f0db31c3502e81a517d818f02e5d1e8
