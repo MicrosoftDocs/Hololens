@@ -20,9 +20,9 @@ appliesto:
 
 # Restart, reset, or recover HoloLens (1st Gen)
 
-If you're experiencing problems with your HoloLens, you may want to try a restart, reset, or even reflash by using device recovery.
+If you're experiencing problems with your HoloLens, you may want to try a restart, reset, or even reflash the device by using device recovery.
 
-Here are some things to try if your HoloLens isn't running well.  This article guides you through the recommended recovery steps in order.
+Here are some things to try if your HoloLens isn't running well. This article guides you through the recommended recovery steps in order.
 
 If you're looking to recover a HoloLens 2, see [Recovering a HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery), as that process differs.
 
@@ -41,7 +41,7 @@ The safest way to restart the HoloLens is by using Cortana, which is generally t
 1. Turn on your HoloLens.
 1. Make sure a user is logged in and that the device isn't waiting for a password to unlock it.
 2. Say "Hey Cortana, reboot" or "Hey Cortana, restart."
-3. Cortana will acknowledge the command and prompt you to confirm. Wait for a sound to play after the question, and then say "Yes." The device will restart.
+3. Cortana will respond and prompt you to confirm. Wait for a sound to play after the question, and then say "Yes." The device will restart.
 
 ### Use the power button to do a safe restart
 
@@ -94,9 +94,9 @@ If your HoloLens still has a problem, try resetting it to factory state. This st
 
 If the device is still having a problem after restart and reset, you can use a recovery tool on your computer to reinstall the HoloLens operating system and firmware.  
 
-The data that HoloLens needs for the reset is packaged in a full flash update (FFU), which is similar to an .iso, .wim, or .vhd package. [Learn about FFU image file formats.](https://docs.microsoft.com/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
+The data that HoloLens needs for the reset is packaged in a Full Flash Update (FFU), which is similar to an .iso, .wim, or .vhd package. [Learn about FFU image file formats.](https://docs.microsoft.com/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
 
-If necessary, you can install a new operating system on your HoloLens (1st gen) by using the Windows Device Recovery Tool. Before you use this tool, see if restarting or resetting your HoloLens fixes the problem.
+You can install a new operating system on your HoloLens (1st gen) by using the Windows Device Recovery Tool. Before you use that tool, see if restarting or resetting your HoloLens fixes the problem.
 
 The recovery process may take a while. When it's done, the latest version of the Windows Holographic software will be installed.
 
@@ -115,9 +115,9 @@ If the HoloLens (1st gen) isn't automatically detected, select **My device was n
 If your device isn't detected, follow these steps to put it into flashing mode:
 
 1. Unplug the device from any power source.
-1. If the device is on, hold down the power button until it completely turns off.
+1. If the device is on, hold down the **Power** button until it completely turns off.
 2. Hold the **Volume up** button, and briefly tap the **Power** button. The device should start and display only the middle LED light.
 3. Plug the device into your PC.
 4. Open the Windows Device Recovery Tool.
-5. Select *My device was not detected**, and then select **HoloLens**. 
+5. Select **My device was not detected** and then **HoloLens**. 
 6. Follow the instructions to recover your device.
