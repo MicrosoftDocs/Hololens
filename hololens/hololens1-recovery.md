@@ -39,7 +39,7 @@ The safest way to restart the HoloLens is by using Cortana, which is generally t
 > - Cortana is available on HoloLens 2 devices on builds prior to the Windows Holograpic, Version 2004 update.
 
 1. Turn on your HoloLens.
-1. Make sure a user is logged in and that the device isn't waiting for a password to unlock it.
+1. Make sure that a user is logged in and the device isn't waiting for a password to unlock it.
 2. Say "Hey Cortana, reboot" or "Hey Cortana, restart."
 3. Cortana will respond and prompt you to confirm. Wait for a sound to play after the question, and then say "Yes." The device will restart.
 
