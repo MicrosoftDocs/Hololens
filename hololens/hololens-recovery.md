@@ -43,7 +43,7 @@ Under certain circumstances, you may have to manually reset the device without u
 ### Standard procedure
 1. Unplug the Type-C cable to disconnect the device from the power supply or the host PC.
 
-2. Press and hold the **power button** for 15 seconds. All LEDs should be off.
+2. Press and hold the **power** button for 15 seconds. All LEDs should be off.
 
 3. Wait 2-3 seconds, and then short-press the **power** button. The LEDs close to the power button will light up, and the device will begin to start up.
 
