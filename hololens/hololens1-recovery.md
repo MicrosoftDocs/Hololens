@@ -45,14 +45,14 @@ The safest way to restart the HoloLens is by using Cortana, which is generally t
 
 ### Use the power button to do a safe restart
 
-If you still can't restart your device, try to restart it by using the power button:
+If you still can't restart your device, try to restart it by using the **power** button:
 
-1. Press and hold the power button for 5 seconds. After 1 second, all five LEDs will illuminate and then slowly turn off one by one from right to left. After 5 seconds, all LEDs will be off, indicating successful shutdown.
+1. Press and hold the **power** button for 5 seconds. After 1 second, all five LEDs will illuminate and then slowly turn off one by one from right to left. After 5 seconds, all LEDs will be off, indicating successful shutdown.
       
    > [!IMPORTANT]
    > Stop pressing the button immediately after all the LEDs have turned off.
 1. Wait 1 minute for the shutdown to complete. The shutdown may still be in progress even after the displays are turned off.
-2. Turn on the device again by pressing and holding the power button for 1 second.
+2. Turn on the device again by pressing and holding the **power** button for 1 second.
 
 ### Do a safe restart by using Windows Device Portal
 
@@ -68,12 +68,12 @@ If the previous methods didn't restart your Hololens, force a restart. This meth
 > [!WARNING]
 > This is a potentially harmful method and should only be used if the previously cited methods didn't work.
 
-1. Press and hold the power button for at least 10 seconds.
+1. Press and hold the **power** button for at least 10 seconds.
    - It's okay to hold the button for longer than 10 seconds.
    - It's safe to ignore any LED activity.
 1. Release the button and wait for 2-3 seconds.
-1. Press and hold the power button for 1  second.
-1. If you still have problems, press the power button for 4 seconds, until all the battery indicators fade out and the screen stops displaying holograms. Wait 1 minute, and then press the power button again to turn on the device.
+1. Press and hold the **power** button for 1  second.
+1. If you still have problems, press the **power** button for 4 seconds, until all the battery indicators fade out and the screen stops displaying holograms. Wait 1 minute, and then press the **power** button again to turn on the device.
 
 ## Reset to factory settings
 
@@ -115,8 +115,8 @@ If the HoloLens (1st gen) isn't automatically detected, select **My device was n
 If your device isn't detected, follow these steps to put it into flashing mode:
 
 1. Unplug the device from any power source.
-1. If the device is on, hold down the **Power** button until it completely turns off.
-2. Hold the **Volume up** button, and briefly tap the **Power** button. The device should start and display only the middle LED light.
+1. If the device is on, hold down the **power** button until it completely turns off.
+2. Hold the **Volume up** button, and briefly tap the **power** button. The device should start and display only the middle LED light.
 3. Plug the device into your PC.
 4. Open the Windows Device Recovery Tool.
 5. Select **My device was not detected** and then **HoloLens**. 
