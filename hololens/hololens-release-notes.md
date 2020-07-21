@@ -60,9 +60,9 @@ Improvements and fixes in the update:
 - Improved hologram stability in recorded videos.
 - Resolved an issue where mixed reality capture couldn't record video after the device was left in standby state for multiple days.
 - The HolographicSpace.UserPresence API is generally disabled for Unity applications. This behavior avoids an issue that caused some apps to pause when the visor was flipped up, even if the "run in the background" setting was enabled. The API is now enabled for Unity versions 2018.4.18 and later and 2019.3.4 and later.
-- When you access Device Portal over a Wi-Fi connection, a web browser might prevent access to due to an invalid certificate. The browser might report an error such as "ERR_SSL_PROTOCOL_ERROR," even if the device certificate was previously trusted. In this case, you would be unable to progress to Device Portal, as there's no option to ignore security warnings. This update resolved the issue. If the device certificate was previously downloaded and trusted on a PC to remove browser security warnings, and the SSL error occurs, the new certificate has to be downloaded and trusted to address browser security warnings.
+- When you access Device Portal over a Wi-Fi connection, a web browser might prevent access to due to an invalid certificate. The browser might report an error such as "ERR_SSL_PROTOCOL_ERROR," even if the device certificate was previously trusted. In this case, you can't progress to Device Portal, as there's no option to ignore security warnings. This update resolved the issue. If the device certificate was previously downloaded and trusted on a PC to remove browser security warnings, and the SSL error occurs, the new certificate has to be downloaded and trusted to address browser security warnings.
 - Enabled the ability to create a runtime provisioning package that can install an app by using MSIX packages.
-- Added a setting in **Settings** > **System** > **Holograms** that allow users to automatically remove all holograms from Mixed Reality home when the device shuts down.
+- Added a setting in **Settings** > **System** > **Holograms** that allows users to automatically remove all holograms from Mixed Reality home when the device shuts down.
 - Fixed an issue that caused HoloLens apps that change their pixel format to render black in the HoloLens emulator.
 - Fixed a bug that caused a crash during Iris login.
 - Fixed an issue about repeated store downloads for already-current apps.
@@ -82,14 +82,14 @@ Improvements and fixes in the update:
   - On the *MRC Audio Effect*:
     - LoopbackGain (the current "App Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
     - MicrophoneGain (the current "Mic Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
-- The HolographicSpace.UserPresence API is generally disabled for Unity applications. This behavior avoids an issue that causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled. The API is now enabled for Unity versions 2018.4.18 and higher, and 2019.3.4 and higher.
+- The HolographicSpace.UserPresence API is generally disabled for Unity applications. This behavior avoids an issue that causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled. The API is now enabled for Unity versions 2018.4.18 and later, and 2019.3.4 and later.
 - Fixed an issue that caused HoloLens apps that change their pixel format to render black in the HoloLens Emulator.
 - Fixed an issue about launches of the Photos app in initial boots after updating from the 1903 release.
 
 ## Windows Holographic, version 2004  
 - Build - 19041.1103
 
-The May 2020 major software update for HoloLens 2, *Windows Holographic, version 2004* includes a host of exciting new capabilities, such as support for Windows Autopilot, app dark mode, USB Ethernet support for 5G/LTE hotspots, and much more. To update to the latest release, open the **Settings** app, go to **Update & Security**, and select the **Check for Updates** button. 
+The May 2020 major software update for HoloLens 2, *Windows Holographic, version 2004* includes a host of exciting new capabilities, such as support for Windows Autopilot, app dark mode, USB Ethernet support for 5G/LTE hotspots, and much more. To update to the latest release, open the **Settings** app, go to **Update & Security**, and select the **Check for Updates** button. 
 
 |             Feature                              |          Description                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -100,7 +100,7 @@ The May 2020 major software update for HoloLens 2, *Windows Holographic, version
 |       Configuration service providers   (CSPs)   |          Added new configuration service providers to enhance admin control capabilities                 |
 |       USB 5G/LTE support                       |          Expanded USB Ethernet capability   enables support for 5G/LTE                                    |
 |       Dark app mode                              |          Dark app mode available for apps that support both dark and light modes, improving the viewing experience        |
-|       Voice commands                             |          Support for additional system voice   commands to control HoloLens, hands-free                           |
+|       Voice commands                             |          Support for additional system voice   commands to control HoloLens hands-free                           |
 |       Hand tracking improvements                 |          Hand tracking improvements make buttons and 2D slate interactions more accurate                        |
 |       Quality improvements and fixes                 |          Various system performance and   reliability improvements across the platform                            |
 
@@ -122,9 +122,7 @@ Learn more from the [Windows Autopilot for HoloLens 2 evaluation guide](https://
 
 ### FIDO2 security key support
 
-Some users share a HoloLens device with lots of people in a work or school environment. So it's important that users can easily without typing long user names and passwords.
-
-Fast Identity Online (FIDO) lets anyone in your organization (Azure AD tenant) seamlessly sign-in to HoloLens without entering a user name or password.
+Some users share a HoloLens device with others in a work or school environment. So it's important that users can easily without typing long user names and passwords. Fast Identity Online (FIDO) lets anyone in your organization (Azure AD tenant) seamlessly sign-in to HoloLens without entering a user name or password.
 
 FIDO2 security keys are an "unphishable" standards-based passwordless authentication method that can come in any form factor. FIDO is an open standard for passwordless authentication. It allows users and organizations to sign in to their resources without a user name or password by using an external security key or a platform key built into a device.
 
@@ -143,7 +141,7 @@ To try it out:
 
 ### Line-of-business application install status
 
-MDM app deployment and management for line of business (LOB) apps is critical to Hololens. Admins and users need to view app install status for auditing and diagnosis. In this release, we added more details in **Settings** > **Accounts** > **Access work or school** > **Click on your account** > **Info**.
+MDM app deployment and management for line of business apps is critical to Hololens. Admins and users need to view app install status for auditing and diagnosis. In this release, we added more details in **Settings** > **Accounts** > **Access work or school** > **Click on your account** > **Info**.
 
 ### Additional CSPs and policies
 
