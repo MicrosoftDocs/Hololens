@@ -20,7 +20,7 @@ appliesto:
 
 # Restart, reset, or recover HoloLens (1st Gen)
 
-If you're experiencing problems with your HoloLens, you may want to try a restart, reset, or even reflash the device by using device recovery. This article guides you through the recommended recovery steps in order.
+If you're experiencing problems with your HoloLens, you may want to try a restart or reset, or even reflash the device by using device recovery. This article guides you through the recommended recovery steps in order.
 
 If you're looking to recover a HoloLens 2, see [Recovering a HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery), as that process differs.
 
