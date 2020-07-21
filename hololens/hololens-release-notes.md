@@ -177,7 +177,7 @@ Support was added to enable certain mobile broadband devices, such as 5G/LTE pho
 
 This release includes several hand tracking improvements:
 
-- **Pointing pose stability:** The system now resists bending the index finger when it becomes occluded by the palm. This change improves the accuracy when you push buttons, type, scroll content, and more! 
+- **Pointing pose stability:** The system now resists bending the index finger when it gets occluded by the palm. This change improves the accuracy when you push buttons, type, scroll content, and more! 
 - **Reduced accidental air taps:** We improved detection of the air tap gesture. There are now fewer accidental activations in several common scenarios, such as when you drop your hands to your sides.
 - **User switch reliability:** The system is now faster and more reliable at updating the hand size when you share a device.
 - **Reduced hand stealing:** We improved handling of cases where there are more than two hands in view of the sensors. If multiple people are working close together, there's now a much lower chance that the tracked hand will "jump" from the user to the hand of someone else in the scene.
@@ -187,7 +187,7 @@ This release includes several hand tracking improvements:
 
 Many Windows apps now support both dark and light modes. HoloLens 2 users can choose the default mode for apps that support both. After the update, the default app mode is "dark," but you can easily change this setting: Navigate to **Settings** > **System** > **Colors** > **Choose your default app mode**. 
 
-Here are some of the in-box apps that support dark mode: 
+These "in-box" apps support dark mode: 
 
 - Settings 
 - Microsoft Store 
@@ -213,13 +213,13 @@ The updated app integrates with Microsoft 365 to help you get more done across y
 ### Quality improvements and fixes
 
 Improvements and fixes also in the update:  
-- Introduced an active display calibration system. This feature improves the stability and alignment of holograms. They nowstay in place when you move your head from side to side.
+- Introduced an active display calibration system. This feature improves the stability and alignment of holograms. They now stay in place when you move your head from side to side.
 - Fixed a bug where Wi-Fi streaming to HoloLens got disrupted periodically. If an application indicates that it needs low latency streaming, implement the fix by calling the [SetSocketMediaStreamingMode function](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
-- Fixed a device hang during streaming in research mode.
+- Fixed a device hang that occurred during streaming in research mode.
 - Fixed a bug where in some cases the right user wouldn't be displayed on the sign-in screen when resuming a session.
 - Fixed an issue where users couldn't export MDM logs through **Settings**.
 - Fixed an issue where the accuracy of eye tracking immediately following out-of-box setup could be lower than expected.
-- Fixed an issue where the eye tracking subsystem would fail to initialize or perform calibration under certain conditions.
+- Fixed an issue where the eye tracking subsystem failed to initialize or perform calibration under certain conditions.
 - Fixed an issue where eye calibration would be prompted for an already-calibrated user.
 - Fixed an issue where a driver would crash during eye calibration.
 - Fixed an issue where repeated power button presses could cause a 60-second system timeout and shell crash.
