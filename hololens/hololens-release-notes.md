@@ -82,7 +82,7 @@ Improvements and fixes in the update:
   - On the *MRC Audio Effect*:
     - LoopbackGain (the current "App Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
     - MicrophoneGain (the current "Mic Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
-- The HolographicSpace.UserPresence API is generally disabled for Unity applications, to avoid an issue that causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled. The API is now enabled for Unity versions 2018.4.18 and higher, and 2019.3.4 and higher.
+- The HolographicSpace.UserPresence API is generally disabled for Unity applications. This behavior avoids an issue that causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled. The API is now enabled for Unity versions 2018.4.18 and higher, and 2019.3.4 and higher.
 - Fixed an issue that caused HoloLens apps that change their pixel format to render black in the HoloLens Emulator.
 - Fixed an issue about launches of the Photos app in initial boots after updating from the 1903 release.
 
@@ -132,7 +132,7 @@ To get started, see [Enable passwordless security key sign-in](https://docs.micr
 
 ### Improved MDM enrollment via provisioning package
 
-Provisioning packages let you set HoloLens configuration through a config file rather than through the HoloLens out-of-box experience. Previously, provisioning packages had to be copied onto the HoloLens internal memory. Now, they can be on a USB drive so they're easier to reuse on multiple HoloLens devices, so you can provision devices in parallel. Provisioning packages now also support a field to enroll in device management so there's no manual setup after provisioning.
+Provisioning packages let you set HoloLens configuration through a config file rather than through the HoloLens out-of-box experience. Previously, provisioning packages had to be copied onto the HoloLens internal memory. Now, they can be on a USB drive so they're easier to reuse on multiple HoloLens devices and you can provision devices in parallel. Provisioning packages now also support a field to enroll in device management so there's no manual setup after provisioning.
 
 To try it out:
 
@@ -143,7 +143,7 @@ To try it out:
 
 ### Line-of-business application install status
 
-MDM app deployment and management for line of business (LOB) apps is critical to Hololens. Admins and users need to be able to view app install status for auditing and diagnosis. In this release, we added more details in **Settings** > **Accounts** > **Access work or school** > **Click on your account** > **Info**.
+MDM app deployment and management for line of business (LOB) apps is critical to Hololens. Admins and users need to view app install status for auditing and diagnosis. In this release, we added more details in **Settings** > **Accounts** > **Access work or school** > **Click on your account** > **Info**.
 
 ### Additional CSPs and policies
 
@@ -179,7 +179,7 @@ Support was added to enable certain mobile broadband devices, such as 5G/LTE pho
 
 This release includes several hand tracking improvements:
 
-- **Pointing pose stability:** The system now resists bending the index finger when it becomes occluded by the palm. This improves accuracy when you push buttons, type, scroll content, and more! 
+- **Pointing pose stability:** The system now resists bending the index finger when it becomes occluded by the palm. This change improves the accuracy when you push buttons, type, scroll content, and more! 
 - **Reduced accidental air taps:** We improved detection of the air tap gesture. There are now fewer accidental activations in several common scenarios, such as when you drop your hands to your sides.
 - **User switch reliability:** The system is now faster and more reliable at updating the hand size when you share a device.
 - **Reduced hand stealing:** We improved handling of cases where there are more than two hands in view of the sensors. If multiple people are working close together, there's now a much lower chance that the tracked hand will "jump" from the user to the hand of someone else in the scene.
@@ -215,7 +215,7 @@ The updated app integrates with Microsoft 365 to help you get more done across y
 ### Quality improvements and fixes
 
 Improvements and fixes also in the update:  
-- The update introduces an active display calibration system. This feature improves the stability and alignment of holograms, which helps them stay in place when you move your head from side to side.
+- Introduced an active display calibration system. This feature improves the stability and alignment of holograms. They nowstay in place when you move your head from side to side.
 - Fixed a bug where Wi-Fi streaming to HoloLens got disrupted periodically. If an application indicates that it needs low latency streaming, implement the fix by calling the [SetSocketMediaStreamingMode function](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
 - Fixed a device hang during streaming in research mode.
 - Fixed a bug where in some cases the right user wouldn't be displayed on the sign-in screen when resuming a session.
@@ -231,13 +231,13 @@ Improvements and fixes also in the update:
 
 ### Known issues
 
-- An issue with the zh-CN system language prevents voice commands for taking a mixed reality capture or displaying the device IP address.
+- An issue with the zh-CN system language prevents voice commands from taking a mixed reality capture or displaying the device IP address.
 - An issue requires you to launch the Cortana app after starting the device to use "Hey Cortana" voice activation. If you updated from a 18362 build, you may also see a second app tile for the previous version of the Cortana app that no longer works in **Start**.
 
 ## Windows Holographic, version 1903 - May 2020 Update 
 - Build 18362.1061
 
-This monthly quality update doesn't contain any notable changes because the team has been focused on providing the feature updates in the Windows Holographic version 2004 May Update, as described earlier.
+This monthly quality update doesn't contain any notable changes because the team was working on the Windows Holographic version 2004 May Update, as described earlier.
 
 ## Windows Holographic, version 1903 - April 2020 Update
 - Build 18362.1059
@@ -278,8 +278,8 @@ Improvements and fixes in the update:
 
 Improvements and fixes in the update:
 
-- Temporarily disabled the HolographicSpace.UserPresence API for Unity applications. This change avoids an issue that caused some apps to pause when the visor ws flipped up, even if the "run in the background" setting was enabled.
-- Fixed a random HUP crash cased by hand tracking, in which the user noticed a UI freeze then back to shell after several seconds.
+- Temporarily disabled the HolographicSpace.UserPresence API for Unity applications. This change avoids an issue that caused some apps to pause when the visor was flipped up, even if the "run in the background" setting was enabled.
+- Fixed a random HUP crash caused by hand tracking, in which the user noticed a UI freeze then back to shell after several seconds.
 - Improved hand tracking so that when you poke with your index finger, the upper part of that finger is less likely to curl unexpectedly.
 - Improved reliability of head tracking, spatial mapping, and other runtimes.
 
@@ -295,9 +295,9 @@ Improvements and fixes in the update:
 
 Improvements and fixes in the update:
 
-- Introduced last stage reproduction (LSR) fixes. Improved visual rendering of holograms to appear more stable and crisp by more accurately accounting for their depth. This will be more noticeable if apps don't set the depth of holograms correctly, after this update.
+- Introduced last stage reproduction (LSR) fixes. Improved visual rendering of holograms to appear more stable and crisp by more accurately accounting for their depth. This symptom will be more noticeable after this update if apps don't set the depth of holograms correctly.
 - Fixed stability of exclusive apps and navigation between exclusive apps.
-- Resolved an issue where Mixed Reality Capture couldn't record video after the device was left in standby state for several days.
+- Resolved an issue where Mixed Reality Capture couldn't record video after the device was in standby state for several days.
 - Improved hologram stability.
 
 ## Windows Holographic, version 1903 - November 2019 Update 

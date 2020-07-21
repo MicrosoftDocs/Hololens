@@ -20,9 +20,7 @@ appliesto:
 
 # Restart, reset, or recover HoloLens (1st Gen)
 
-If you're experiencing problems with your HoloLens, you may want to try a restart, reset, or even reflash the device by using device recovery.
-
-Here are some things to try if your HoloLens isn't running well. This article guides you through the recommended recovery steps in order.
+If you're experiencing problems with your HoloLens, you may want to try a restart, reset, or even reflash the device by using device recovery. This article guides you through the recommended recovery steps in order.
 
 If you're looking to recover a HoloLens 2, see [Recovering a HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery), as that process differs.
 
@@ -35,8 +33,10 @@ If you're looking to recover a HoloLens 2, see [Recovering a HoloLens 2](https:/
 
 The safest way to restart the HoloLens is by using Cortana, which is generally the first thing to try when you experience an issue with HoloLens.
 
-> [!NOTE]  
-> Cortana is not available on all devices. Cortana is available on all HoloLens (1st Gen) devices. Cortana is available on HoloLens 2 devices on builds prior to the Windows Holograpic, Version 2004 update.
+> [!NOTE] 
+> Cortana is not available on all devices.
+> - Cortana is available on all HoloLens (1st Gen) devices. 
+> - Cortana is available on HoloLens 2 devices on builds prior to the Windows Holograpic, Version 2004 update.
 
 1. Turn on your HoloLens.
 1. Make sure a user is logged in and that the device isn't waiting for a password to unlock it.
@@ -66,7 +66,7 @@ If the previous procedure didn't work, try to restart the device by using [Windo
 If the previous methods didn't restart your Hololens, force a restart. This method is equivalent to removing and reinstalling the battery. It's dangerous because it might leave your device in a corrupted state. If that happens, you'll have to flash your HoloLens.  
 
 > [!WARNING]
-> This is a potentially harmful method and should only be used if none of the previously cited methods worked.
+> This is a potentially harmful method and should only be used if the previously cited methods didn't work.
 
 1. Press and hold the power button for at least 10 seconds.
    - It's okay to hold the button for longer than 10 seconds.
@@ -94,7 +94,7 @@ If your HoloLens still has a problem, try resetting it to factory state. This st
 
 If the device is still having a problem after restart and reset, you can use a recovery tool on your computer to reinstall the HoloLens operating system and firmware.  
 
-The data that HoloLens needs for the reset is packaged in a Full Flash Update (FFU), which is similar to an .iso, .wim, or .vhd package. [Learn about FFU image file formats.](https://docs.microsoft.com/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
+The data that HoloLens needs for the reset is packaged in a Full Flash Update (FFU), which is similar to an .iso, .wim, or .vhd file. [Learn about FFU image file formats.](https://docs.microsoft.com/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
 
 You can install a new operating system on your HoloLens (1st gen) by using the Windows Device Recovery Tool. Before you use that tool, see if restarting or resetting your HoloLens fixes the problem.
 

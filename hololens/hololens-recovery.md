@@ -19,7 +19,7 @@ manager: jarrettr
 
 # Restart, reset, or recover HoloLens 2
 
-## Charging the device
+## Charge the device
 
 Before you start any troubleshooting procedure, make sure that your device is charged to 20 to 40 percent of battery capacity if possible. Use the charger and the USB Type-C cables that come with the HoloLens2 device. If those accessories aren't available, make sure the charger that's available can support at least 15 W of power.
 
@@ -30,7 +30,7 @@ If the device is correctly booted and running, there are three ways to check the
 
 - From the main menu of the HoloLens device UI.
 - View the LED close to the power button (for a 40-percent charge, you should see at least two solid LEDS).
-- On your host PC, open File Explorer and look for your HoloLens 2 device on left side under **This PC**. Right-click the device, and select **Properties**. A dialog box will show the battery charge level for your device.
+- On your host PC, open File Explorer and look for your HoloLens 2 device on left side under **This PC**. Right-click the device, and select **Properties**. A dialog box will show the battery charge level.
 
    ![A HoloLens 2 properties screen shows battery change level](images/ResetRecovery2.png)
 
@@ -47,7 +47,7 @@ Under certain circumstances, you may have to manually reset the device without u
 
 3. Wait 2-3 seconds, and then short-press the **power** button. The LEDs close to the power button will light up, and the device will begin to start up.
 
-4. Connect the device to the host PC, and then open Device Manager (for Windows 10 press the **Windows** key and then the **X** key and select **Device Manager**). Make sure the device enumerates correctly as Microsoft HoloLens as shown in the following image:
+4. Connect the device to the host PC, and then open Device Manager. (For Windows 10 press the **Windows** key and then the **X** key and select **Device Manager**.) Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
@@ -60,7 +60,7 @@ If the standard reset procedure didn't work, use the hard-reset procedure:
 2. Hold down the **volume down** + **power** buttons for 15 seconds. The device will automatically restart.
 
 4. Connect the device to the host PC.
-5. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and select **Device Manager**). Make sure the device enumerates correctly as Microsoft HoloLens as shown in the following image:
+5. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and select **Device Manager**). Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
@@ -79,9 +79,9 @@ Before you start the reflash procedure, make sure the app is installed and runni
 
 ### Normal procedure
 
-1. While the HoloLens device is running, connect it to the Windows 10 PC where you previously launched the Advanced Recovery Companion app.
-
-2. The device will be automatically detected, and the Advanced Recovery Companion app UI will start the update process:
+1. While the HoloLens device is running, connect it to the Windows 10 PC where you previously opened the Advanced Recovery Companion app.
+ 
+   The device will be automatically detected, and the Advanced Recovery Companion app UI will start the update process:
 
    ![HoloLens 2 clean reflash initial screen](images/ARC2.png)
 
@@ -97,11 +97,11 @@ If the HoloLens 2 doesn't start correctly, you may need to put the device into R
 
 3. While pressing the **volume up** button, press and release the **power** button to start the device. Wait 15 seconds, and then release the **volume up** button. Only the middle LED of the five LEDs will light up.
 
-4. Connect the device to the host PC, and open Device Manager (for Windows 10 press the **Windows** key, and then the **X** key, and select **Device Manager**). Make sure the device enumerates correctly as Microsoft HoloLens as shown in the following image
+4. Connect the device to the host PC, and open Device Manager. (For Windows 10 press the **Windows** key, and then the **X** key, and select **Device Manager**.) Make sure the device enumerates correctly as Microsoft HoloLens as shown in the following image
 
    ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
 
-5. The device will be automatically detected, and the Advanced Recovery Companion app UI will start the update process:
+   The device will be automatically detected, and the Advanced Recovery Companion app UI will start the update process:
 
    ![HoloLens 2 clean reflash screen](images/ARC2.png)
 
@@ -113,6 +113,9 @@ If the IT environment prevents the use of the Windows Store app or limits access
 
 This process can also be used for other apps. This guide focuses on Advanced Recovery Companion, but the process can also be used for other "offline" apps.
 
+ >[!NOTE] 
+ > IT administrators can also distribute this app through System Center Configuration Manager (SCCM) or Intune.
+
 Follow these steps to enable the deployment path:
 1. Go to the [Microsoft Store for Business](https://businessstore.microsoft.com) and sign in using an Azure Active Directory identity.
 
@@ -123,18 +126,17 @@ Follow these steps to enable the deployment path:
 
     - At this stage, if the Desktop PC has internet access, double-click the package to install the app.
 
-    >[!NOTE] 
-    > IT administrators can also distribute this app through System Center Configuration Manager (SCCM) or Intune.
+
     - If the target PC has no internet connectivity, follow these steps: 
        1. Select the unencoded license, and then select **Generate license**.
        2. Under **Required Frameworks**, select **Download**.
        3. Use DISM to apply the package with the dependency and license. From an administrator command prompt, run the following command:
 
-      ```console
-      C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
-      ```
-> [!NOTE]
-> The version number in this code example may not match the currently available version. You may have also choosen a different download location than in the example. Make any changes to the command as needed.
+          ```console
+          C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
+          ```
+            > [!NOTE]
+            > The version number in this code example may not match the currently available version. You may have also choosen a different download location than in the example. Make any changes to the command as needed.
 
 > [!TIP]
 > When you plan to use Advanced Recovery Companion to install an FFU offline, it may be useful to download your flash image. [**Download the current image for HoloLens 2**](https://aka.ms/hololens2download). 
