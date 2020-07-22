@@ -34,13 +34,16 @@ If you are looking for a feature that is no longer listed here, then it is now g
 
 We'll be updating this page with new features again as we release them to Windows Insider builds.
 
-| Feature                               | Description                                                                                   | Available in insider builds |
-|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| Auto Eye Position Support             | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
-| Global Assigned Access                | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1346+                 |
-| Auto launch an app in multi-app kiosk | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
-| New power policies for Hololens 2     | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
-| Certificate Viewer                    | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
+| Feature                                         | Description                                                                                   | Available in insider builds |
+|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| Auto Eye Position Support                       | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
+| Global Assigned Access                          | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1346+                 |
+| Auto launch an app in multi-app kiosk           | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
+| New power policies for Hololens 2               | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
+| Certificate Viewer                              | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
+| New device restriction policies for HoloLens 2  | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
+| Enabled Settings page visibility for HoloLens 2 | Policy to pick which pages are seen in Settings app.                                          | 19041.1349+                 |
+| Mixed Reality Policies                          | New policies for mixed reality devices.                                                       | 19041.1349+                 |
 
 ### Auto Eye Position Support
 
@@ -101,6 +104,30 @@ In Windows Insider build 19041.1346+ we are adding a Certificate Viewer in the H
 To view certificates, go to **Settings > Update & Security > Certificates**.
 
 ![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
+
+### New device restriction policies for HoloLens 2
+Newly enabled policies that allow for more management options of HoloLens 2 devices. 
+[AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+[AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+[ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+
+### Enabled Settings page visibility for HoloLens 2
+We’ve now enabled a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. To learn how to fully customize this feature click the link below.
+ 
+[PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+ 
+![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
+
+### HoloLens Policies
+New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected.  
+
+|     New HoloLens policy                   |     Description                                                                            |     Notes                                                                |
+|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+|     MixedReality\BrightnessButtonDisabled |     Allows brightness buttons to be disabled so pressing it does not change brightness.    |     1 Yes, 0 No (default)                                                |
+|     MixedReality\VolumeButtonDisabled     |     Allows volume buttons to be disabled so pressing it does not change volume.            |     1 Yes, 0 No (default)                                                |
+|     MixedReality\MicrophoneDisabled       |     Disables microphone so no audio recording is possible on HoloLens 2.                   |     1 Yes, 0 No (default)                                                |
+|     MixedReality\FallbackDiagnostics      |     Controls behavior of when diagnostic logs can be collected.                            |     0 Disabled, 1 Enabled for Device Owners, 2 Enabled for all (Default) |
+|     MixedReality\HeadTrackingMode         |     Reserved for future use.                                                               |                                                                          |
 
 ## Start receiving Insider builds
 
