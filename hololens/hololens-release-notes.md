@@ -242,9 +242,9 @@ This monthly quality update doesn't contain any notable changes because the team
 
 **Dark mode for supported apps** 
 
-Many Windows apps support both dark and light mode. HoloLens 2 customers can now choose the default mode for apps that support both color schemes. Based on customer feedback, we are set the default app mode to "dark," but you can easily change this setting at any time: Navigate to **Settings > System > Colors** to find **"Choose your default app mode."**
+Many Windows apps support both dark and light mode. HoloLens 2 customers can now choose the default mode for apps that support both color schemes. Based on customer feedback, we set the default app mode to "dark," but you can easily change this setting at any time: Navigate to **Settings > System > Colors** to find **"Choose your default app mode."**
 
-Here are some of the in-box apps that support dark mode:
+These "in-box" apps support dark mode:
 - Settings
 - Microsoft Store
 - Mail
@@ -259,7 +259,7 @@ Here are some of the in-box apps that support dark mode:
 **Improvements and fixes also in the update:** 
 - Ensured that shell overlays are included in mixed reality captures.
 - Unreal developers can now use the 3D View page in Device Portal to test and debug their applications.
-- Improved hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod DepthReprojection algorithm is used.
+- Improved hologram stability in mixed reality capture when the *HolographicDepthReprojectionMethod DepthReprojection* algorithm is used.
 - Fixed the "WinRT IStreamSocketListener API Class not registered" error on 32-bit ARM apps.
 
 ## Windows Holographic, version 1903 - March 2020 Update 
@@ -267,7 +267,7 @@ Here are some of the in-box apps that support dark mode:
 
 Improvements and fixes in the update:
 
-- Improved hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod AutoPlanar algorithm is used.
+- Improved hologram stability in mixed reality capture when the *HolographicDepthReprojectionMethod AutoPlanar* algorithm is used.
 - Ensured that the coordinate system attached to a depth MF sample is consistent with public documentation.
 - Improved developer productivity by enabling customers to paste large amounts of text through the device portal.
 
@@ -295,7 +295,7 @@ Improvements and fixes in the update:
 
 - Introduced last stage reproduction (LSR) fixes. Improved visual rendering of holograms to appear more stable and crisp by more accurately accounting for their depth. This symptom will be more noticeable after this update if apps don't set the depth of holograms correctly.
 - Fixed stability of exclusive apps and navigation between exclusive apps.
-- Resolved an issue where Mixed Reality Capture couldn't record video after the device was in standby state for several days.
+- Resolved an issue where mixed reality capture couldn't record video after the device was in standby state for several days.
 - Improved hologram stability.
 
 ## Windows Holographic, version 1903 - November 2019 Update 
@@ -303,7 +303,7 @@ Improvements and fixes in the update:
 
 Improvements and fixes in the update:
 
-- Fixed functionality off **Select** voice commands during initial setup for en-CA and en-AU.
+- Fixed functionality of **Select** voice commands during initial setup for en-CA and en-AU.
 - Improved visual quality of objects placed far away in the latest Unity and Mixed Reality Toolkit (MRTK) versions.
 - Fixed addressing issues with holographic applications getting stuck in a paused state on startup until the pins panel was opened and then closed.
 - OpenXR runtime conformance fixes and improvements for HoloLens 2 and the emulator.
