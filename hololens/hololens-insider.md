@@ -26,7 +26,7 @@ Windows insider is now moving to Channels. The **Fast** ring will become the **D
 
 ![Windows Insider Channels explanation](images/WindowsInsiderChannels.png)
 
-For more information: [Windows Blog entry](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
+For more information, see [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) on Windows Blogs.
 
 ## Windows Insider Release Notes
 
@@ -131,11 +131,11 @@ New mixed reality policies have been created for HoloLens 2 devices on builds 19
 
 ## Start receiving Insider builds
 
-On a HoloLens 2 device go to **Settings** -> **Update & Security** -> **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
+On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
 
 Then, select **Active development of Windows**, choose whether you'd like to receive **Dev Channel** or **Beta Channel** builds, and review the program terms.
 
-Select **Confirm -> Restart Now** to finish up. After your device has rebooted, go to **Settings -> Update & Security -> Check for updates** to get the latest build.
+Select **Confirm > Restart Now** to finish up. After your device has rebooted, go to **Settings > Update & Security > Check for updates** to get the latest build.
 
 ## FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
