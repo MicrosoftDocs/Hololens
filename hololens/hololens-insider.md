@@ -43,7 +43,7 @@ We'll be updating this page with new features again as we release them to Window
 | Certificate Viewer                              | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
 | New device restriction policies for HoloLens 2  | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
 | Enabled Settings page visibility for HoloLens 2 | Policy to pick which pages are seen in Settings app.                                          | 19041.1349+                 |
-| Mixed Reality Policies                          | New policies for mixed reality devices.                                                       | 19041.1349+                 |
+| HoloLens Policies                               | New policies for mixed reality devices.                                                       | 19041.1349+                 |
 
 ### Auto Eye Position Support
 
