@@ -34,8 +34,8 @@ If you are looking for a feature that is no longer listed here, then it is now g
 
 We'll be updating this page with new features again as we release them to Windows Insider builds.
 
-| Feature                                         | Description                                                                                   | Available in insider builds |
-|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+|                     Feature                     |                                          Description                                          | Available in insider builds |
+|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
 | Auto Eye Position Support                       | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
 | Global Assigned Access                          | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1346+                 |
 | Auto launch an app in multi-app kiosk           | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
@@ -44,6 +44,7 @@ We'll be updating this page with new features again as we release them to Window
 | New device restriction policies for HoloLens 2  | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
 | Enabled Settings page visibility for HoloLens 2 | Policy to pick which pages are seen in Settings app.                                          | 19041.1349+                 |
 | HoloLens Policies                               | New policies for mixed reality devices.                                                       | 19041.1349+                 |
+| Update Policies                                 | Newly enabled policies allowing control of updates.                                           | 19041.1352+                 |
 
 ### Auto Eye Position Support
 
@@ -128,6 +129,12 @@ New mixed reality policies have been created for HoloLens 2 devices on builds 19
 |     MixedReality\MicrophoneDisabled       |     Disables microphone so no audio recording is possible on HoloLens 2.                   |     1 Yes, 0 No (default)                                                |
 |     MixedReality\FallbackDiagnostics      |     Controls behavior of when diagnostic logs can be collected.                            |     0 Disabled, 1 Enabled for Device Owners, 2 Enabled for all (Default) |
 |     MixedReality\HeadTrackingMode         |     Reserved for future use.                                                               |                                                                          |
+### Newly enabled Update policies for HoloLens
+These update policies are now enabled on HoloLens 2 devices:
+-	[Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-	[Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-	[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-	[Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ## Start receiving Insider builds
 
