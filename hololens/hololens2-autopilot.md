@@ -34,7 +34,7 @@ When a user starts the Autopilot self-deploying process, the process completes t
 
 ## Windows Autopilot for HoloLens 2 Private Preview
 
-**Windows Autopilot for HoloLens 2 is currently in private preview**. It addresses primarily validation purposes and does not offer the full suite of Autopilot features. In order to prepare and configure your devices for your end-users, please follow the steps below to set up your environment for the private preview:
+Please follow the steps below to set up your environment for the private preview:
 
 1. Make sure that you meet the requirements for Windows Autopilot for HoloLens 2
 1. Enroll in the Windows Autopilot for HoloLens 2 private preview program
