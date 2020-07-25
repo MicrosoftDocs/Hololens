@@ -69,7 +69,8 @@ To clean the brow pad, wipe it by using a cloth that's moistened by using water 
 
 ## Can I use ultraviolet (UV) light to sanitize the device?
 
-UV-C germicidal irradiation has not been tested on HoloLens 2.
+UVC irradiance using UVC LED, that operates at 265nm at intensity level of 0.5-0.6mW/cm<sup>2</sup>, and does not emit ozone, can be used to sanitize HoloLens2. 
+Please follow manufacturer’s specifications on handling and exposure time.
 
 > [!CAUTION]  
 > High levels of UV-A and UV-B exposure can degrade the display quality of the device and damage the visor coating. Over-exposure to UV-A and UV-B radiation has the following effects, in order of the duration and intensity of exposure:
@@ -77,7 +78,7 @@ UV-C germicidal irradiation has not been tested on HoloLens 2.
 > 1. The brow pad and device closures become discolored.
 > 1. Defects appear in the anti-reflective (AR) coating on the visor and on the sensor windows.
 > 1. Defects appear in the base materials of the visor and on the sensor windows.
-> 1. SRG performance degrades.
+> 1. Display performance degrades.
 
 ## Is the rear pad replaceable?
 
