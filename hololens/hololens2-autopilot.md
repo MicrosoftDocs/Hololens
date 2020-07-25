@@ -20,7 +20,7 @@ manager: jarrettr
 
 When you set up HoloLens 2 devices for the Windows Autopilot program, your users can follow a simple process to provision the devices from the cloud.
 
-This Autopilot program supports Autopilot self-deploying mode to provision HoloLens 2 devices as shared devices under your tenant. Self-deploying mode leverages the device's preinstalled OEM image and drivers during the provisioning process. A user can provision the device without putting the device on and going through the Out-of-the-box Experience (OOBE). To learn more about Windows Autopilot click [here](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot).
+This Autopilot program supports Autopilot self-deploying mode to provision HoloLens 2 devices as shared devices under your tenant. Self-deploying mode leverages the device's preinstalled OEM image and drivers during the provisioning process. A user can provision the device without putting the device on and going through the Out-of-the-box Experience (OOBE). To learn more about Windows Autopilot for Windows 10 click [here](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot).
 
 When a user starts the Autopilot self-deploying process, the process completes the following steps:
 
@@ -94,11 +94,13 @@ To verify that your tenant is flighted for the Autopilot program after you submi
 
 ### 4. Register devices in Windows Autopilot
 
-In the preparation phase, there are two ways you can register devices to Windows Autopilot: 
+In the preparation phase, there are two primary ways you can register devices to Windows Autopilot: 
 
 1. **Contact your distributor or reseller when you place an order to have your devices registered**
 or
 2. **Retrieve the hardware hash (also known as the hardware ID) and register the device manually.** 
+
+For more information on device registration please review the [Adding devices to Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices) documentation.  
 
 **Retrieve a device hardware hash**
 
@@ -200,7 +202,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
    > [!IMPORTANT]  
    > You must connect the device to the network before the Out-of-the-Box-Experience (OOBE) starts. The device determines whether it is provisioning as an Autopilot device while on the first OOBE screen. If the device cannot connect to the network, or if you choose not to provision the device as an Autopilot device, you cannot change to Autopilot provisioning at a later time. Instead, you would have to start this procedure over in order to provision the device as an Autopilot device.
 
-1. he device should automatically start OOBE. Do not interact with OOBE. Instead sit, back and relax! Let HoloLens 2 detect network connectivity and allow it complete OOBE automatically. The device may restart during OOBE. The OOBE screens should resemble the following.
+1. The device should automatically start OOBE. Do not interact with OOBE. Instead sit, back and relax! Let HoloLens 2 detect network connectivity and allow it complete OOBE automatically. The device may restart during OOBE. The OOBE screens should resemble the following.
    
    ![OOBE step 1](./images/hololens-ap-uex-1.png)
    ![OOBE step 2](./images/hololens-ap-uex-2.png)
