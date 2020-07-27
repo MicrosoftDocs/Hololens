@@ -91,11 +91,11 @@ Min - 0 days
 Max - 60 days 
 
 Steps to use this policy correctly: 
-1. Create a device configuration profile for kiosk targeting AAD groups and assign it to Hololens device(s). 
-1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to Hololens device(s). 
-1. Enroll Hololens devices and verify both configurations get applied to the device. 
+1. Create a device configuration profile for kiosk targeting AAD groups and assign it to HoloLens device(s). 
+1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s). 
+1. Enroll HoloLens devices and verify both configurations get applied to the device. 
 1. Let AAD user 1 sign-in when internet is available, once user signs-in and AAD group membership is confirmed successfully, cache will be created. 
-1. Now AAD user 1 can take Hololens offline and use it for kiosk mode as long as policy value allows for X number of days. 
+1. Now AAD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days. 
 1. Steps 4 and 5 can be repeated for any other AAD user N. Key point here is that any AAD user must sign-in to device using Internet so at least once we can determine that they are member of AAD group to which Kiosk configuration is targeted. 
  
 > [!NOTE]
@@ -103,7 +103,7 @@ Steps to use this policy correctly:
 
 ## Kiosk mode behavior changes for handling of failures
 
-Earlier on encountering failures in applying kiosk mode, Hololens used to show up all applications in start menu. Starting in VB H2, in case of failures, no apps will be shown in the start menu as below: 
+Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Starting in this Windows Insider build, in case of failures, no apps will be shown in the start menu as below: 
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
