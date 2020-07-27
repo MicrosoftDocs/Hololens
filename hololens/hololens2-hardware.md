@@ -137,8 +137,21 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 * [Product Safety Warnings and Instructions](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
 * Eye safety: HoloLens 2 has been tested and conforms to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
 
-### Regulatory Information
+### Regulatory information
 [HoloLens Regulatory](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Includes information on temperature, disposal, radio and TV interference, and more.
+
+## Device measurements
+
+| Measurement                      | Units                                  |
+|----------------------------------|----------------------------------------|
+|     Unit Length (mm.)Packaged    |     379                                |
+|     Unit Width (mm.)Packaged     |     248                                |
+|     Unit Depth (mm.)Packaged     |     163                                |
+|     Unit Weight (kg.)Packaged    |     3.23 (NJX-00001 FPP FAI WEIGHT)    |
+|     Master Pack Length (mm)      |     446                                |
+|     Master Pack Width(mm.)       |     258                                |
+|     Master Pack Depth(mm.)       |     172                                |
+|     Master Pack Weight(kg.)      |     .404                               |
 
 ## Next step
 
