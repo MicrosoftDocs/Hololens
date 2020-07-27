@@ -142,16 +142,16 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ### Package Dimensions
 
-| Measurement                      | Units                                  |
-|----------------------------------|----------------------------------------|
-|     Unit Length (mm.)Packaged    |     379                                |
-|     Unit Width (mm.)Packaged     |     248                                |
-|     Unit Depth (mm.)Packaged     |     163                                |
-|     Unit Weight (kg.)Packaged    |     3.23 (NJX-00001 FPP FAI WEIGHT)    |
-|     Master Pack Length (mm)      |     446                                |
-|     Master Pack Width(mm.)       |     258                                |
-|     Master Pack Depth(mm.)       |     172                                |
-|     Master Pack Weight(kg.)      |     .404                               |
+| Measurement               | Units                           |
+|---------------------------|---------------------------------|
+| Unit Length (mm) Packaged | 379                             |
+| Unit Width (mm) Packaged  | 248                             |
+| Unit Depth (mm) Packaged  | 163                             |
+| Unit Weight (kg) Packaged | 3.23 (NJX-00001 FPP FAI WEIGHT) |
+| Master Pack Length (mm)   | 446                             |
+| Master Pack Width (mm)    | 258                             |
+| Master Pack Depth (mm)    | 172                             |
+| Master Pack Weight (kg)   | 0.404                           |
 
 ## Next step
 
