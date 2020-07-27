@@ -305,5 +305,5 @@ Improvements and fixes in the update:
 
 - Fixed functionality of **Select** voice commands during initial setup for en-CA and en-AU.
 - Improved visual quality of objects placed far away in the latest Unity and Mixed Reality Toolkit (MRTK) versions.
-- Fixed addressing issues with holographic applications getting stuck in a paused state on startup until the pins panel was opened and then closed.
+- Fixed addressing issues with holographic applications getting stuck in a paused state on startup until the Start menu was opened and then closed.
 - OpenXR runtime conformance fixes and improvements for HoloLens 2 and the emulator.
