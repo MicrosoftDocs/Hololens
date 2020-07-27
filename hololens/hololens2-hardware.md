@@ -152,8 +152,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 | Master Pack Width    | 258mm          |
 | Master Pack Depth    | 172mm          |
 | Master Pack Weight   | 0.404kg        |
-|----------------------|----------------|
-|Total Weight          |3.634kg         |
+|**Total Weight**      | **3.634kg**     |
 
 Notes:
 - Unit Packaged: The black, retail-style box HoloLens 2 is sold in.
