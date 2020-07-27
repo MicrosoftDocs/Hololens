@@ -34,17 +34,19 @@ If you are looking for a feature that is no longer listed here, then it is now g
 
 We'll be updating this page with new features again as we release them to Windows Insider builds.
 
-|                     Feature                     |                                          Description                                          | Available in insider builds |
-|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
-| Auto Eye Position Support                       | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
-| Global Assigned Access                          | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1346+                 |
-| Auto launch an app in multi-app kiosk           | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
-| New power policies for Hololens 2               | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
-| Certificate Viewer                              | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
-| New device restriction policies for HoloLens 2  | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
-| Enabled Settings page visibility for HoloLens 2 | Policy to pick which pages are seen in Settings app.                                          | 19041.1349+                 |
-| HoloLens Policies                               | New policies for mixed reality devices.                                                       | 19041.1349+                 |
-| Update Policies                                 | Newly enabled policies allowing control of updates.                                           | 19041.1352+                 |
+| Feature                                              | Description                                                                                   | Available in insider builds |
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| Auto Eye Position Support                            | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
+| Global Assigned Access                               | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1346+                 |
+| Auto launch an app in multi-app kiosk                | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
+| Cache AAD Group membership for offline Kiosk         | Policy for how many days AAD group membership cache is allowed to be used for Kiosk mode.     | 19041.1353+                 |
+| Kiosk mode behavior changes for handling of failures | Changes in how Kiosk mode failure is now handled.                                             | 19041.1353+                 |
+| New power policies for Hololens 2                    | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
+| Certificate Viewer                                   | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
+| New device restriction policies for HoloLens 2       | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
+| Enabled Settings page visibility for HoloLens 2      | Policy to pick which pages are seen in Settings app.                                          | 19041.1349+                 |
+| HoloLens Policies                                    | New policies for mixed reality devices.                                                       | 19041.1349+                 |
+| Update Policies                                      | Newly enabled policies allowing control of updates.                                           | 19041.1352+                 |
 
 ### Auto Eye Position Support
 
@@ -78,6 +80,32 @@ Application is automatically launched when user signs-in.
 <AllowedApps>                     
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
+
+## Cache AAD Group membership for offline Kiosk
+
+This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy is set only then cache is used otherwise not. In order for this policy to take effect, user must sign-out and sign-in with Internet available at least once before the cache can be used for subsequent "disconnected" sessions. 
+
+AADGroupMembershipCacheValidityInDays 
+
+Min - 0 days  
+Max - 60 days 
+
+Steps to use this policy correctly: 
+1. Create a device configuration profile for kiosk targeting AAD groups and assign it to Hololens device(s). 
+1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to Hololens device(s). 
+1. Enroll Hololens devices and verify both configurations get applied to the device. 
+1. Let AAD user 1 sign-in when internet is available, once user signs-in and AAD group membership is confirmed successfully, cache will be created. 
+1. Now AAD user 1 can take Hololens offline and use it for kiosk mode as long as policy value allows for X number of days. 
+1. Steps 4 and 5 can be repeated for any other AAD user N. Key point here is that any AAD user must sign-in to device using Internet so at least once we can determine that they are member of AAD group to which Kiosk configuration is targeted. 
+ 
+> ![NOTE]
+> Until step 4 is performed for a AAD user will experience failure behavior mentioned below in “disconnected” environments. 
+
+## Kiosk mode behavior changes for handling of failures
+
+Earlier on encountering failures in applying kiosk mode, Hololens used to show up all applications in start menu. Starting in VB H2, in case of failures, no apps will be shown in the start menu as below: 
+
+![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 ### New power policies for Hololens 2
 These newly added policies allow admins to control power states, such as idle timeout. To read more about each individual policy please click the link for that policy.
