@@ -140,7 +140,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 ### Regulatory information
 [HoloLens Regulatory](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Includes information on temperature, disposal, radio and TV interference, and more.
 
-## Package Dimensions
+### Package Dimensions
 
 | Measurement                      | Units                                  |
 |----------------------------------|----------------------------------------|
