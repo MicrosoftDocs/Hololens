@@ -98,7 +98,7 @@ Steps to use this policy correctly:
 1. Now AAD user 1 can take Hololens offline and use it for kiosk mode as long as policy value allows for X number of days. 
 1. Steps 4 and 5 can be repeated for any other AAD user N. Key point here is that any AAD user must sign-in to device using Internet so at least once we can determine that they are member of AAD group to which Kiosk configuration is targeted. 
  
-> ![NOTE]
+> [!NOTE]
 > Until step 4 is performed for a AAD user will experience failure behavior mentioned below in “disconnected” environments. 
 
 ## Kiosk mode behavior changes for handling of failures
