@@ -131,10 +131,10 @@ This deployment path can be enabled with the following steps:
       C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
       ```
 > [!NOTE]
-> The version number in this code example may not match the currently avalible version. You may have also choosen a different download location than in the example given. Please make sure to make any changes as needed.
+> The version number in this code example may not match the currently available version. You may have also choosen a different download location than in the example given. Please make sure to make any changes as needed.
 
 > [!TIP]
-> When planning to use Advanced Recovery Companion to install an ffu offline it may be useful to download your flashing image to be availible, here is the [current image for HoloLens 2](https://aka.ms/hololens2download). 
+> When planning to use Advanced Recovery Companion to install an ffu offline it may be useful to download your flashing image to be available, here is the [current image for HoloLens 2](https://aka.ms/hololens2download). 
 
 Other resources:
 - https://docs.microsoft.com/microsoft-store/distribute-offline-apps 
