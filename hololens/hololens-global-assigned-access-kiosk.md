@@ -132,9 +132,9 @@ This feature allows a user who is considered “Device owner” on Hololens to b
     </Profiles> 
     <Configs> 
         <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
-            <v5:Exclusions> 
-                <v5:SpecialGroup Name="DeviceOwner" /> 
-            </v5:Exclusions> 
+            !—TODO: <v5:Exclusions> 
+                !—TODO: <v5:SpecialGroup Name="DeviceOwner" /> 
+            !—TODO: </v5:Exclusions> 
         </v3:GlobalProfile> 
     </Configs> 
 </AssignedAccessConfiguration> 
