@@ -122,7 +122,7 @@ This feature allows a user who is considered “Device owner” on Hololens to b
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
     xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/202010/config" 
+    !—TODO: xmlns:v5="http://schemas.microsoft.com/AssignedAccess/202010/config" 
 > 
     <Profiles> 
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
