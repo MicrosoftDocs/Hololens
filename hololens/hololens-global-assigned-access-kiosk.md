@@ -113,7 +113,7 @@ Here is an example of XML blob to be used:
 
 ## Excluding DeviceOwners from Global Assigned Access Profile
 
-This feature allows a user who is considered “Device owner” on Hololens to be excluded from Global Assigned Access. In order to take advantage of this feature, in the XML blob for multiple-app kiosk configuration, ensure highlighted lines are added: 
+This feature allows a user who is considered “[Device owner](security-adminless-os.md)" on Hololens to be excluded from Global Assigned Access. In order to take advantage of this feature, in the XML blob for multiple-app kiosk configuration, ensure highlighted lines are added: 
 
  
 ```xml
