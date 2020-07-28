@@ -139,3 +139,5 @@ This feature allows a user who is considered “[Device owner](security-adminles
     </Configs> 
 </AssignedAccessConfiguration> 
  ```
+ :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
+ 
