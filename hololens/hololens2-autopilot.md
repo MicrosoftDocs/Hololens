@@ -64,7 +64,7 @@ Please follow the steps below to set up your environment for the private preview
 
 - You must manually install the latest OS (Windows Holographic version 2004 (build 19041.1103 or later) using the [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab). You can find instructions [here](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). 
 - Your devices must be registered in Windows Autopilot. For information about how to register devices see [4. Register devices in Windows Autopilot](#4-register-devices-in-windows-autopilot). 
-- In the current release, devices need to be connected to the internet before turning on the HoloLens and initiating the Autopilot provisioning process. Connect your device to Ethernet using "USB-C to Ethernet" adapters for wired internet connectivity or "USB-C to Wifi" adapters for wireless internet connectivity. 
+- In the current release, devices need to be connected to the internet before turning on the HoloLens and initiating the Autopilot provisioning process. Connect your device to Ethernet using a "USB-C to Ethernet" adapter for wired internet connectivity. 
 - The devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune Portals.
 - To configure and manage the Autopilot self-deploying mode profiles, make sure that you have access to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
