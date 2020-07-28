@@ -117,6 +117,7 @@ In situations where the device is not able to collect diagnostics via Feedback H
 
 This works when the device shows up in File Explorer after connecting it to a PC via a USB cable. 
 
+
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
 Follow these steps to collect diagnostics:
