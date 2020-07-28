@@ -83,7 +83,7 @@ Application is automatically launched when user signs-in.
 
 ## Cache AAD Group membership for offline Kiosk
 
-This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy is set only then cache is used otherwise not. In order for this policy to take effect, user must sign-out and sign-in with Internet available at least once before the cache can be used for subsequent "disconnected" sessions. 
+This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. OOnce this policy value is set to value greater than 0 only then cache is used otherwise not.  
 
 AADGroupMembershipCacheValidityInDays 
 
