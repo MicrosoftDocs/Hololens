@@ -68,6 +68,8 @@ landingContent:
             url: hololens-recovery.md
           - text: Troubleshoot HoloLens issues
             url: hololens-troubleshooting.md
+            - text: Collect and use diagnostic information from HoloLens devices
+            url: hololens-diagnostic-logs.md
 
 
   # Card
