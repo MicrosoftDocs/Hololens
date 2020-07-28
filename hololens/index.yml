@@ -71,7 +71,6 @@ landingContent:
             - text: Collect and use diagnostic information from HoloLens devices
             url: hololens-diagnostic-logs.md
 
-
   # Card
   - title: Support
     linkLists:
