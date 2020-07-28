@@ -42,13 +42,15 @@ If your holograms are unstable, jumpy, or don't look right, try:
 - Walking around and looking at your surroundings so that HoloLens can scan them more completely.
 - Calibrating your HoloLens for your eyes. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
 
-## HoloLens doesn't respond to gestures
+## HoloLens doesn't respond to hand input
 
-To make sure that HoloLens can see your gestures.  Keep your hand in the gesture frame - when HoloLens can see your hand, the cursor changes from a dot to a ring.
+To ensure that HoloLens can see your hands, you need to keep them in the gesture frame.  The Mixed Reality Home provides feedback that lets you know when your hands are tracked.  The feedback is different on different versions of HoloLens:
+- On HoloLens (1st gen), the gaze cursor changes from a dot to a ring
+- On HoloLens 2, a cursor appears on your fingertip when your hand is close to a slate, and a hand ray appears when slates are further away
 
-Learn more about using gestures on [HoloLens (1st gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) or [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
+Many apps follow patterns that are similar to the Mixed Reality Home.  Learn more about using hand input on [HoloLens (1st gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) and [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
 
-If your environment is too dark, HoloLens might not see your hand, so make sure that there's enough light.
+Some gloves do not work with hand tracking on HoloLens.  A common example is black rubber gloves, which tend to absorb infrared light and are not picked up by the depth camera.  If your work involves rubber gloves, we recommend trying a lighter color such as blue or gray.  Another example is large baggy gloves, which tend to obscure the shape of your hand. We recommend using gloves that are as form-fitting as possible for best results.
 
 If your visor has fingerprints or smudges, use the microfiber cleaning cloth that came with the HoloLens to clean your visor gently.
 
