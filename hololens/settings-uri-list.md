@@ -52,7 +52,6 @@ One of the manageable features for HoloLens devices is using the [Settings/PageV
 
 |Settings page| URI |
 |-------------|-----|
-
 | General | ms-settings:privacy or ms-settings:privacy-general |
 | Speech | ms-settings:privacy-speech |
 | Diagnostics & feedback | ms-settings:privacy-feedback |
