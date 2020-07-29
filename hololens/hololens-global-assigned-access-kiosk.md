@@ -111,33 +111,11 @@ Here is an example of XML blob to be used:
 </AssignedAccessConfiguration> 
 ```
 
+ :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
+
 ## Excluding DeviceOwners from Global Assigned Access Profile
 
 This feature allows a user who is considered “[Device owner](security-adminless-os.md)" on Hololens to be excluded from Global Assigned Access. In order to take advantage of this feature, in the XML blob for multiple-app kiosk configuration, ensure highlighted lines are added: 
 
- 
-```xml
-<?xml version="1.0" encoding="utf-8" ?> 
-<AssignedAccessConfiguration 
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-    !—TODO: xmlns:v5="http://schemas.microsoft.com/AssignedAccess/202010/config" 
-> 
-    <Profiles> 
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
-            <AllAppsList> 
-                … 
-        </Profile> 
-    </Profiles> 
-    <Configs> 
-        <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
-            !—TODO: <v5:Exclusions> 
-                !—TODO: <v5:SpecialGroup Name="DeviceOwner" /> 
-            !—TODO: </v5:Exclusions> 
-        </v3:GlobalProfile> 
-    </Configs> 
-</AssignedAccessConfiguration> 
- ```
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
  
