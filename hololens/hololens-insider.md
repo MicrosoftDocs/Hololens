@@ -34,19 +34,19 @@ If you are looking for a feature that is no longer listed here, then it is now g
 
 We'll be updating this page with new features again as we release them to Windows Insider builds.
 
-| Feature                                              | Description                                                                                   | Available in insider builds |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+|                        Feature                       |                                          Description                                          | Available in insider builds |
+|:----------------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
 | Auto Eye Position Support                            | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
+| Certificate Viewer                                   | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
+| HoloLens Policies                                    | New policies for mixed reality devices.                                                       | 19041.1349+                 |
+| Cache AAD Group membership for offline Kiosk         | Policy for how many days AAD group membership cache is allowed to be used for Kiosk mode.     | 19041.1356+                 |
+| New device restriction policies for HoloLens 2       | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
+| New power policies for HoloLens 2                    | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
+| Update Policies                                      | Newly enabled policies allowing control of updates.                                           | 19041.1352+                 |
+| Enabled Settings page visibility for HoloLens 2      | Policy to pick which pages are seen in Settings app.                                          | 19041.1349+                 |
 | Global Assigned Access                               | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1356+                 |
 | Auto launch an app in multi-app kiosk                | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
-| Cache AAD Group membership for offline Kiosk         | Policy for how many days AAD group membership cache is allowed to be used for Kiosk mode.     | 19041.1356+                 |
 | Kiosk mode behavior changes for handling of failures | Changes in how Kiosk mode failure is now handled.                                             | 19041.1356+                 |
-| New power policies for Hololens 2                    | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
-| Certificate Viewer                                   | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
-| New device restriction policies for HoloLens 2       | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
-| Enabled Settings page visibility for HoloLens 2      | Policy to pick which pages are seen in Settings app.                                          | 19041.1349+                 |
-| HoloLens Policies                                    | New policies for mixed reality devices.                                                       | 19041.1349+                 |
-| Update Policies                                      | Newly enabled policies allowing control of updates.                                           | 19041.1352+                 |
 
 ### Auto Eye Position Support
 
@@ -68,18 +68,31 @@ For experiences that require eye gaze data or very precise hologram positioning,
 **Known issues**
  - We're investigating an issue where the eye tracker driver host process could crash when running under heavy memory load. The eye tracking driver host process should auto recover.
 
-### Global Assigned Access – Kiosk Mode
-This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
+### Certificate Viewer
 
-### Automatic launch of an application in multiple-app kiosk mode 
-Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
+In Windows Insider build 19041.1346+ we are adding a Certificate Viewer in the HoloLens 2 Settings app. This feature provides a simple and user-friendly way to verify certificates on your device. To find a specific certificate quickly there are options to sort by name, store or expiration date. Users may also directly search for a certificate. With the new Certificate Viewer, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant.  To view more about an individual certificate select the certificate and click on Info.
 
-Application is automatically launched when user signs-in. 
+> [!NOTE]
+> There is a known limitation on non-US language localization that we are working on resolving in subsequent Windows Insider releases.
 
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
+-	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
+-	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
+-	**Validation:** Verifying that the certificate serves the intended purpose and is functional, can save significant time, particularly in commercial environments before deploying certificates at larger scale.
+
+To view certificates, go to **Settings > Update & Security > Certificates**.
+
+![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
+
+### HoloLens Policies
+New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected.  
+
+|     New HoloLens policy                   |     Description                                                                            |     Notes                                                                |
+|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+|     MixedReality\BrightnessButtonDisabled |     Allows brightness buttons to be disabled so pressing it does not change brightness.    |     1 Yes, 0 No (default)                                                |
+|     MixedReality\VolumeButtonDisabled     |     Allows volume buttons to be disabled so pressing it does not change volume.            |     1 Yes, 0 No (default)                                                |
+|     MixedReality\MicrophoneDisabled       |     Disables microphone so no audio recording is possible on HoloLens 2.                   |     1 Yes, 0 No (default)                                                |
+|     MixedReality\FallbackDiagnostics      |     Controls behavior of when diagnostic logs can be collected.                            |     0 Disabled, 1 Enabled for Device Owners, 2 Enabled for all (Default) |
+|     MixedReality\HeadTrackingMode         |     Reserved for future use.                                                               |                                                                          |
 
 ### Cache AAD Group membership for offline Kiosk
 
@@ -101,11 +114,11 @@ Steps to use this policy correctly:
 > [!NOTE]
 > Until step 4 is performed for a AAD user will experience failure behavior mentioned below in “disconnected” environments. 
 
-### Kiosk mode behavior changes for handling of failures
-
-Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Starting in this Windows Insider build, in case of failures, no apps will be shown in the start menu as below: 
-
-![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+### New device restriction policies for HoloLens 2
+Newly enabled policies that allow for more management options of HoloLens 2 devices. 
+- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
 
 ### New power policies for Hololens 2
 These newly added policies allow admins to control power states, such as idle timeout. To read more about each individual policy please click the link for that policy.
@@ -119,26 +132,12 @@ These newly added policies allow admins to control power states, such as idle ti
 |     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Example value to use in   Windows Configuration Designer, i.e.,   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
 |     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
 
-### Certificate Viewer
-
-In Windows Insider build 19041.1346+ we are adding a Certificate Viewer in the HoloLens 2 Settings app. This feature provides a simple and user-friendly way to verify certificates on your device. To find a specific certificate quickly there are options to sort by name, store or expiration date. Users may also directly search for a certificate. With the new Certificate Viewer, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant.  To view more about an individual certificate select the certificate and click on Info.
-
-> [!NOTE]
-> There is a known limitation on non-US language localization that we are working on resolving in subsequent Windows Insider releases.
-
--	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
--	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
--	**Validation:** Verifying that the certificate serves the intended purpose and is functional, can save significant time, particularly in commercial environments before deploying certificates at larger scale.
-
-To view certificates, go to **Settings > Update & Security > Certificates**.
-
-![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
-
-### New device restriction policies for HoloLens 2
-Newly enabled policies that allow for more management options of HoloLens 2 devices. 
-- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
-- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
-- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+### Newly enabled Update policies for HoloLens
+These update policies are now enabled on HoloLens 2 devices:
+-	[Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-	[Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-	[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-	[Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ### Enabled Settings page visibility for HoloLens 2
 We’ve now enabled a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. To learn how to fully customize this feature click the link below.
@@ -147,22 +146,24 @@ We’ve now enabled a policy that allows IT Admins to either prevent specific pa
  
 ![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
 
-### HoloLens Policies
-New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected.  
+### Global Assigned Access – Kiosk Mode
+This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
 
-|     New HoloLens policy                   |     Description                                                                            |     Notes                                                                |
-|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-|     MixedReality\BrightnessButtonDisabled |     Allows brightness buttons to be disabled so pressing it does not change brightness.    |     1 Yes, 0 No (default)                                                |
-|     MixedReality\VolumeButtonDisabled     |     Allows volume buttons to be disabled so pressing it does not change volume.            |     1 Yes, 0 No (default)                                                |
-|     MixedReality\MicrophoneDisabled       |     Disables microphone so no audio recording is possible on HoloLens 2.                   |     1 Yes, 0 No (default)                                                |
-|     MixedReality\FallbackDiagnostics      |     Controls behavior of when diagnostic logs can be collected.                            |     0 Disabled, 1 Enabled for Device Owners, 2 Enabled for all (Default) |
-|     MixedReality\HeadTrackingMode         |     Reserved for future use.                                                               |                                                                          |
-### Newly enabled Update policies for HoloLens
-These update policies are now enabled on HoloLens 2 devices:
--	[Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
--	[Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
--	[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
--	[Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+### Automatic launch of an application in multiple-app kiosk mode 
+Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
+
+Application is automatically launched when user signs-in. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### Kiosk mode behavior changes for handling of failures
+
+Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Starting in this Windows Insider build, in case of failures, no apps will be shown in the start menu as below: 
+
+![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 ## Start receiving Insider builds
 
