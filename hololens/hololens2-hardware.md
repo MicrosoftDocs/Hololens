@@ -142,21 +142,20 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ## Package Dimensions
 
-|      Measurement     |      Units     |
-|----------------------|----------------|
-| Unit Length Packaged | 379mm          |
-| Unit Width Packaged  | 248mm          |
-| Unit Depth Packaged  | 163mm          |
-| Unit Weight Packaged | 3.23kg         |
-| Master Pack Length   | 446mm          |
-| Master Pack Width    | 258mm          |
-| Master Pack Depth    | 172mm          |
-| Master Pack Weight   | 0.404kg        |
-|**Total Weight**      | **3.634kg**     |
+|      Measurement               |      Units metric     |      Units imperial     |
+|--------------------------------|-----------------------|-------------------------|
+|     Unit Length                |     378.97mm          |     14.920 inches       |
+|     Unit Width                 |     247.90mm          |     9.760 inches        |
+|     Unit Depth                 |     163.07mm          |     6.420 inches        |
+|     Unit Weight                |     2.878kg           |     6.344 lbs           |
+|     Exterior Shipper Length    |     446.00mm          |     17.559 inches       |
+|     Exterior Shipper Width     |     257.99mm          |     10.157 inches       |
+|     Exterior Shipper Depth     |     172.01mm          |     6.772 inches        |
+|     Exterior Shipper Weight    |     3.284kg           |     7.240 lbs           |
 
 Notes:
 - Unit Packaged: The black, retail-style box HoloLens 2 is sold in.
-- Master Pack: The protective shipping packaging around Unit Packaged.
+- Exterior Shipper: The protective shipping packaging around Unit Packaged.
 
 ## Next step
 
