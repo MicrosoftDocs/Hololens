@@ -37,10 +37,10 @@ We'll be updating this page with new features again as we release them to Window
 | Feature                                              | Description                                                                                   | Available in insider builds |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | Auto Eye Position Support                            | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
-| Global Assigned Access                               | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1346+                 |
+| Global Assigned Access                               | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1356+                 |
 | Auto launch an app in multi-app kiosk                | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
-| Cache AAD Group membership for offline Kiosk         | Policy for how many days AAD group membership cache is allowed to be used for Kiosk mode.     | 19041.1353+                 |
-| Kiosk mode behavior changes for handling of failures | Changes in how Kiosk mode failure is now handled.                                             | 19041.1353+                 |
+| Cache AAD Group membership for offline Kiosk         | Policy for how many days AAD group membership cache is allowed to be used for Kiosk mode.     | 19041.1356+                 |
+| Kiosk mode behavior changes for handling of failures | Changes in how Kiosk mode failure is now handled.                                             | 19041.1356+                 |
 | New power policies for Hololens 2                    | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
 | Certificate Viewer                                   | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
 | New device restriction policies for HoloLens 2       | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
@@ -83,7 +83,7 @@ Application is automatically launched when user signs-in.
 
 ## Cache AAD Group membership for offline Kiosk
 
-This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. OOnce this policy value is set to value greater than 0 only then cache is used otherwise not.  
+This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
 
 AADGroupMembershipCacheValidityInDays 
 
