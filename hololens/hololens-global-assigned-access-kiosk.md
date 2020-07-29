@@ -85,31 +85,7 @@ Yes, please refer to the example XML blob below. Global Assigned Access profile 
 Here is an example of XML blob to be used: 
 
 > [!NOTE]
-> Please be aware of the areas marked with <!-  these areas will require you to make modifications based on your preferences. 
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?> 
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"> 
-    <Profiles> 
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
-        </Profile> 
-        <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
-        </Profile> 
-    </Profiles> 
-    <Configs> 
-        <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/> 
-        <Config> 
-           <Account>AzureAD\<!-fully qualified AAD account name></Account> 
-           <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
-        </Config> 
-    </Configs> 
-</AssignedAccessConfiguration> 
-```
+> Please be aware of the highlighted areas marked with <!-  these areas will require you to make modifications based on your preferences. 
 
  :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
 
