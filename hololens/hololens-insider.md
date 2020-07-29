@@ -81,7 +81,7 @@ Application is automatically launched when user signs-in.
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
-## Cache AAD Group membership for offline Kiosk
+### Cache AAD Group membership for offline Kiosk
 
 This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
 
@@ -101,7 +101,7 @@ Steps to use this policy correctly:
 > [!NOTE]
 > Until step 4 is performed for a AAD user will experience failure behavior mentioned below in “disconnected” environments. 
 
-## Kiosk mode behavior changes for handling of failures
+### Kiosk mode behavior changes for handling of failures
 
 Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Starting in this Windows Insider build, in case of failures, no apps will be shown in the start menu as below: 
 
