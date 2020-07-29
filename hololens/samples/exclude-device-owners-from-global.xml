@@ -6,13 +6,13 @@
     xmlns:v5="http://schemas.microsoft.com/AssignedAccess/202010/config" 
 > 
     <Profiles> 
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
+        <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
             <AllAppsList> 
                 … 
         </Profile> 
     </Profiles> 
     <Configs> 
-        <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
+        <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
             <v5:Exclusions> 
                 <v5:SpecialGroup Name="DeviceOwner" /> 
             </v5:Exclusions> 
