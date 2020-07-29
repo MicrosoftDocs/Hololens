@@ -34,8 +34,8 @@ If you are looking for a feature that is no longer listed here, then it is now g
 
 We'll be updating this page with new features again as we release them to Windows Insider builds.
 
-|                        Feature                       |                                          Description                                          | Available in insider builds |
-|:----------------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
+| Feature                                              | Description                                                                                   | Available in insider builds |
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | Auto Eye Position Support                            | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
 | Certificate Viewer                                   | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
 | HoloLens Policies                                    | New policies for mixed reality devices.                                                       | 19041.1349+                 |
