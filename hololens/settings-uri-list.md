@@ -77,10 +77,8 @@ One of the manageable features for HoloLens devices is using the [Settings/PageV
 | Pictures | ms-settings:privacy-pictures |
 | Videos | ms-settings:privacy-videos |
 | File system | ms-settings:privacy-broadfilesystemaccess |
-| Enviorment | ???????????????????????????????????? |
+| Enviorment | N/A |
 | User movements | ms-settings:privacy-backgroundspatialperception |
-
-??? might be ms-settings:privacy-webcam
 
 ## System
 
@@ -89,13 +87,10 @@ One of the manageable features for HoloLens devices is using the [Settings/PageV
 | About | ms-settings:about |
 | Notifications & actions |	ms-settings:notifications |
 | Storage | ms-settings:storagesense |
-| Holograms | ???????????????????? |
-| Calibration | ???????????????? |
+| Holograms | N/A |
+| Calibration | N/A |
 | Shared experiences | ms-settings:crossdevice |
 | Colors | ms-settings:colors |
-
-Holograms page?
-Calibration page?
 
 ## Time and language
 
@@ -115,14 +110,11 @@ Will need to ask about language
 | Windows Update | ms-settings:windowsupdate<br>ms-settings:windowsupdate-action |
 | Windows Update-Advanced options | ms-settings:windowsupdate-options |
 | Windows Update-Restart options | ms-settings:windowsupdate-restartoptions |
-| Change active hours | ?????????????????????? |
+| Change active hours | N/A |
 | Recovery | ms-settings:recovery |
-| Certificates | ??????????????? |
+| Certificates | N/A |
 | Troubleshoot | ms-settings:troubleshoot |
 | For developers | ms-settings:developers |
-| Windows Insider Program | ms-settings:windowsinsider (only present if user is enrolled in WIP)<br/>ms-settings:windowsinsider-optin |
+| Windows Insider Program | ms-settings:windowsinsider <br/>ms-settings:windowsinsider-optin |
 
-Will need to verify change active hours with Shrivaths.
-Will need to verify certificates with Ezeugo.
-
-
+For a full list of Windows 10 Settings URIs, please visit [here](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 
