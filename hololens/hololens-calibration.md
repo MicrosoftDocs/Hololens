@@ -86,6 +86,8 @@ If calibration is unsuccessful try:
 
 If you followed all guidelines and calibration is still failing, you can disable the calibration prompt in Settings. Please also let us know by filing feedback in [Feedback Hub](hololens-feedback.md).
 
+Please also see related information for [image color or brightness troubleshooting.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
+
 Note that setting IPD is not applicable for Hololens 2, since eye positions are computed by the system. 
 
 ### Calibration data and security
