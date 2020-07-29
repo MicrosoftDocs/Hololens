@@ -154,8 +154,8 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 |     Exterior Shipper Weight    |     3.284kg           |     7.240 lbs           |
 
 Notes:
-- Unit Packaged: The black, retail-style box HoloLens 2 is sold in.
-- Exterior Shipper: The protective shipping packaging around Unit Packaged.
+- Unit: The black, retail-style box HoloLens 2 is sold in.
+- Exterior Shipper: The protective shipping packaging around Unit.
 
 ## Next step
 
