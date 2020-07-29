@@ -84,16 +84,16 @@ To view certificates, go to **Settings > Update & Security > Certificates**.
 ![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
 
 ### HoloLens Policies
-New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected.  
+New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
 
-|                New HoloLens policy                |                                        Description                                        |                                 Notes                                |
-|:-------------------------------------------------:|:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------:|
-| MixedReality\BrightnessButtonDisabled             | Allows brightness buttons to be disabled so pressing it does not change brightness.       | 1 Yes, 0 No (default)                                                |
-| MixedReality\VolumeButtonDisabled                 | Allows volume buttons to be disabled so pressing it does not change volume.               | 1 Yes, 0 No (default)                                                |
-| MixedReality\MicrophoneDisabled                   | Disables microphone so no audio recording is possible on HoloLens 2.                      | 1 Yes, 0 No (default)                                                |
-| MixedReality\FallbackDiagnostics                  | Controls behavior of when diagnostic logs can be collected.                               | 0 Disabled, 1 Enabled for Device Owners, 2 Enabled for all (Default) |
-| MixedReality\HeadTrackingMode                     | Reserved for future use.                                                                  |                                                                      |
-| MiexReality\AADGroupMembershipCacheValidityInDays | Controls how many days AAD group membership cache is used for Kiosk targeting AAD groups. | [See here.](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)                                                            |
+| New HoloLens policy                                | Description                                                                               | Notes                                                                |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| MixedReality\BrightnessButtonDisabled              | Allows brightness buttons to be disabled so pressing it does not change brightness.       | 1 Yes, 0 No (default)                                                |
+| MixedReality\VolumeButtonDisabled                  | Allows volume buttons to be disabled so pressing it does not change volume.               | 1 Yes, 0 No (default)                                                |
+| MixedReality\MicrophoneDisabled                    | Disables microphone so no audio recording is possible on HoloLens 2.                      | 1 Yes, 0 No (default)                                                |
+| MixedReality\FallbackDiagnostics                   | Controls behavior of when diagnostic logs can be collected.                               | 0 Disabled, 1 Enabled for Device Owners, 2 Enabled for all (Default) |
+| MixedReality\HeadTrackingMode                      | Reserved for future use.                                                                  |                                                                      |
+| MixedReality\AADGroupMembershipCacheValidityInDays | Controls how many days AAD group membership cache is used for Kiosk targeting AAD groups. | See below.                                                           |
 
 ### Cache AAD Group membership for offline Kiosk
 
