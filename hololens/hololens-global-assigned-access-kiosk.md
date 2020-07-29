@@ -73,7 +73,7 @@ This feature configures Hololens 2 device for multiple app kiosk mode which is a
     </AssignedAccessConfiguration> 
     ```
 
- :::code language="xml" source="samples/global-assigned-access.xml" highlight="12-13,23":::
+    :::code language="xml" source="samples/global-assigned-access.xml" highlight="12-13,23":::
 
 ## How to use this in Windows Configuration Designer? 
  
