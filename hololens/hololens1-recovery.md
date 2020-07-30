@@ -85,7 +85,7 @@ If your HoloLens still has a problem, try resetting it to factory state. This st
 >[!WARNING]
 > If you reset your device, all your personal data, apps, and settings will be erased, including TPM reset information. Resetting will only install the latest installed version of Windows Holographic. You'll have to redo all the initialization steps (calibrate, connect to Wi-Fi, create a user account, download apps, and so on).
 
-1. Open the Settings app, and then select **Update** > **Reset**.
+1. Open the Settings app, and then select **Update** > **Recovery**.
 1. Select the **Reset device** option and read the confirmation message.
 1. Confirm the reset. The device will restart and display a set of spinning gears and a progress bar.
 1. Wait about 30 minutes for this process to complete. When it's done, the device will restart into the "out-of-the-box" experience.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<AssignedAccessConfiguration 
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
+    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
+    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/202010/config" 
+> 
+    <Profiles> 
+        <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
+            <AllAppsList> 
+                … 
+        </Profile> 
+    </Profiles> 
+    <Configs> 
+        <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
+            <v5:Exclusions> 
+                <v5:SpecialGroup Name="DeviceOwner" /> 
+            </v5:Exclusions> 
+        </v3:GlobalProfile> 
+    </Configs> 
+</AssignedAccessConfiguration> 

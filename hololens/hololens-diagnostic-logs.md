@@ -38,6 +38,7 @@ The following table compares the three collection methods. The method names link
 |[Feedback Hub](#feedback-hub) |Network and internet connection<br /><br />Feedback Hub app<br /><br />Permission to upload files to the Microsoft cloud |Microsoft cloud<br /><br />HoloLens device (optional) |User requests assistance, agrees to the terms of use, and uploads the data<br /><br />Microsoft employees view the data, as consistent with the terms of use |Data in the cloud is retained for the period that is defined by Next Generation Privacy (NGP). Then the data is deleted automatically.<br /><br />Data on the device can be deleted at any time by a user who has **Device owner** or **Admin** permissions. |
 |[Settings Troubleshooter](#settings-troubleshooter) |Settings app |HoloLens device<br /><br />Connected computer (optional) |The user stores the data, and only the user accesses the data (unless the user specifically shares the data with another user). |The data is retained until the user deletes it.* |
 |[DiagnosticLog CSP](#diagnosticlog-csp) |Network connection<br /><br />MDM environment that supports the DiagnosticLog CSP |Administrator configures storage locations |In the managed environment, the user implicitly consents to administrator access to the data.<br /><br />Administrator configures access roles and permissions. | Administrator configures retention policy. |
+|[Offline diagnostics](#offline-diagnostics) |Device configuration:<ul><li>Powered on and connected to computer</li><li>Power and Volume buttons functioning</li></ul> |HoloLens device<br /><br />Connected computer |The user stores the data, and only the user accesses the data (unless the user specifically shares the data with another user). |The data is retained until the user deletes it. | 
 
 
 -	End-user is responsible for sharing the logs responsibly with someone else. These files are primarily useful when contacting customer service and support.  
@@ -111,4 +112,22 @@ The IT administrator uses the DiagnosticLog CSP to configure the data storage, r
 - The retention period for the diagnostic information.
 - Permissions that control access to the diagnostic information.
 
+## Offline diagnostics
+In situations where the device is not able to collect diagnostics via Feedback Hub or the Setting Troubleshooter, you can collect diagnostics manually. One scenario where this is necessary is when the device cannot connect to Wi-Fi. The diagnostics collect crash dumps and logs from the device that help a Microsoft support engineer isolate issues.
+
+This works when the device shows up in File Explorer after connecting it to a PC via a USB cable. 
+
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
+
+Follow these steps to collect diagnostics:
+1.	Connect the device with a USB cable to your PC.
+2.	In File Explorer on your PC, navigate to **'This PC\<hololens-device>\Internal Storage'**.
+3.	If the **Internal Storage** folder does not show up, the device is waiting for a user to sign in. Either sign-in or power cycle the device by holding the POWER button down for 10 seconds.
+4.	Press and immediately release the **POWER + VOLUME DOWN** buttons together.
+5.	Wait a minute for the device to prepare the zip archives.
+6.	Refresh file explorer, and navigate to the **'\Documents'** folder.
+7.	Copy the diagnostics ZIP files and share them with the Microsoft support team.
+
+Note, some of the diagnostics ZIP files may contain personally identifiable information.
 
