@@ -77,7 +77,7 @@ One of the manageable features for HoloLens devices is using the [Settings/PageV
 | Pictures | ms-settings:privacy-pictures |
 | Videos | ms-settings:privacy-videos |
 | File system | ms-settings:privacy-broadfilesystemaccess |
-| Enviorment | N/A |
+| Environment | N/A |
 | User movements | ms-settings:privacy-backgroundspatialperception |
 
 ## System
