@@ -50,4 +50,4 @@ When auto-enrollment is enabled, no additional manual enrollment is needed. When
 
 ## Unenroll HoloLens from Intune
 
-You cannot [unenroll](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows) HoloLens from Intune from the device. If the administrator unenrolls the device using MDM, the device will age out of the Intune dashboard.
+To learn more about unenrolling a device visit [this page](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment). 
