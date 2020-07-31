@@ -33,7 +33,7 @@ Depending on the type of identity chosen either during OOBE or post sign-in ther
 
 - If Identity is AAD, then either during OOBE or **Settings App** -> **Access Work or School** -> **Connect** button.
     - For AAD, automatic MDM enrollment only occurs if AAD has been configured with enrollment URLs.
-- If Identity is AAD and device has been pre-registered with Intune MDM server with specific configuration profile assigned to it, then AAD-Join and enrollment will automatically occur.
+- If Identity is AAD and device has been pre-registered with Intune MDM server with specific configuration profile assigned to it, then AAD-Join and enrollment will automatically occur during OOBE.
     - Also called [Autopilot flow](hololens2-autopilot.md) Available in [19041.1103+ builds](hololens-release-notes.md#windows-holographic-version-2004).
 - If Identity is MSA, then using **Settings App** -> **Access Work or School** -> **Connect** button.
     - Also called Add Work Account (AWA) flow.
