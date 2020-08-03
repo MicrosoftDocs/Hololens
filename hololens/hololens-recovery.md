@@ -47,7 +47,7 @@ Under certain circumstances, you may have to manually reset the device without u
 
 3. Wait 2-3 seconds, and then short-press the **power** button. The LEDs close to the power button will light up, and the device will begin to start up.
 
-4. Connect the device to the host PC, and then open Device Manager. (For Windows 10 press the **Windows** key and then the **X** key and select **Device Manager**.) Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
+4. Connect the device to the host PC, and then open Device Manager. (For Windows 10 press the **Windows** key and then the **X** key, and then select **Device Manager**.) Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
@@ -60,7 +60,7 @@ If the standard reset procedure didn't work, use the hard-reset procedure:
 2. Hold down the **volume down** + **power** buttons for 15 seconds. The device will automatically restart.
 
 4. Connect the device to the host PC.
-5. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and select **Device Manager**). Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
+5. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and then select **Device Manager**). Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
