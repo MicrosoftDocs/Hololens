@@ -126,7 +126,7 @@ Follow these steps to enable the deployment path:
     - At this stage, if the Desktop PC has internet access, double-click the package to install the app.
 
 
-    - If the target PC has no internet connectivity, follow these steps: 
+    - If the desination PC has no internet connectivity, follow these steps: 
        1. Select the unencoded license, and then select **Generate license**.
        2. Under **Required Frameworks**, select **Download**.
        3. Use DISM to apply the package with the dependency and license. From an administrator command prompt, run the following command:
@@ -135,7 +135,7 @@ Follow these steps to enable the deployment path:
           C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
           ```
             > [!NOTE]
-            > The version number in this code example may not match the currently available version. You may have also choosen a different download location than in the example. Make any changes to the command as needed.
+            > The version number in this code example may not match the currently available version. You may have also chosen a different download location than in the example. Make any changes to the command as needed.
 
 > [!TIP]
 > When you plan to use Advanced Recovery Companion to install an FFU offline, it may be useful to download your flash image. [**Download the current image for HoloLens 2**](https://aka.ms/hololens2download). 
