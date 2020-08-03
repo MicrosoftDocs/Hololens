@@ -116,5 +116,7 @@ Use your HoloLens in a safe space, free of obstructions and tripping hazards. Do
 
 Keep your first few sessions with HoloLens brief and be sure to take breaks. If you experience discomfort, stop and rest until you feel better. This might include temporary feelings of nausea, motion sickness, dizziness, disorientation, headache, fatigue, eye strain, or dry eyes.
 
+See [product safety warnings and instructions](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
+
 > [!div class="nextstepaction"]
 > [Start and configure your HoloLens 2](hololens2-start.md)
