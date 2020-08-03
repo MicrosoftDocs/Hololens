@@ -26,6 +26,21 @@ You can manage multiple Microsoft HoloLens devices simultaneously using solution
 ## Requirements
 
  Your organization will need to have Mobile Device Management (MDM) set up in order to manage HoloLens devices. Your MDM provider can be Microsoft Intune or a 3rd party provider that uses Microsoft MDM APIs.
+ 
+## Different ways to enroll
+
+Depending on the type of identity chosen either during OOBE or post sign-in there are different methods of enrollment. To learn more about each type of Identity on HoloLens please visit [this page](hololens-identity.md).
+
+- If Identity is AAD, then either during OOBE or **Settings App** -> **Access Work or School** -> **Connect** button.
+    - For AAD, automatic MDM enrollment only occurs if AAD has been configured with enrollment URLs.
+- If Identity is AAD and device has been pre-registered with Intune MDM server with specific configuration profile assigned to it, then AAD-Join and enrollment will automatically occur during OOBE.
+    - Also called [Autopilot flow](hololens2-autopilot.md) Available in [19041.1103+ builds](hololens-release-notes.md#windows-holographic-version-2004).
+- If Identity is MSA, then using **Settings App** -> **Access Work or School** -> **Connect** button.
+    - Also called Add Work Account (AWA) flow.
+- If Identity is Local User, then using **Settings App** -> **Access Work or School** -> **Enroll only in device management** link.
+    - Also called pure MDM enrollment flow.
+
+Once the device is enrolled with your MDM server, the Settings app will now reflect that the device is enrolled in device management.
 
 ## Auto-enrollment in MDM
 
@@ -33,16 +48,6 @@ If your organization uses Azure Active Directory (Azure AD) and an MDM solution 
 
 When auto-enrollment is enabled, no additional manual enrollment is needed. When the user signs in with an Azure AD account, the device is enrolled in MDM after completing the first-run experience.
 
-## Enroll through Settings app
-
- When the device is not enrolled in MDM during the first-run experience, the user can manually enroll the device with the organization's MDM server using the Settings app.
-
-1. Go to **Settings** > **Accounts** > **Work access**.
-1. Select **Enroll into device management** and enter your organizational account. You will be redirected to your organization's sign in page.
-1. Upon successful authentication to the MDM server, a success message is shown.
-
-Your device is now enrolled with your MDM server. The Settings app will now reflect that the device is enrolled in device management.
-
 ## Unenroll HoloLens from Intune
 
-You cannot [unenroll](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows) HoloLens from Intune remotely. If the administrator unenrolls the device using MDM, the device will age out of the Intune dashboard.
+To learn more about unenrolling a device visit [this page](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment). 
