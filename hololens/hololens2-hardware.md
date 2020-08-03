@@ -137,8 +137,25 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 * [Product Safety Warnings and Instructions](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
 * Eye safety: HoloLens 2 has been tested and conforms to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
 
-### Regulatory Information
+### Regulatory information
 [HoloLens Regulatory](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Includes information on temperature, disposal, radio and TV interference, and more.
+
+## Package Dimensions
+
+|      Measurement               |      Units metric     |      Units imperial     |
+|--------------------------------|-----------------------|-------------------------|
+|     Unit Length                |     378.97mm          |     14.920 inches       |
+|     Unit Width                 |     247.90mm          |     9.760 inches        |
+|     Unit Depth                 |     163.07mm          |     6.420 inches        |
+|     Unit Weight                |     2.878kg           |     6.344 lbs           |
+|     Exterior Shipper Length    |     446.00mm          |     17.559 inches       |
+|     Exterior Shipper Width     |     257.99mm          |     10.157 inches       |
+|     Exterior Shipper Depth     |     172.01mm          |     6.772 inches        |
+|     Exterior Shipper Weight    |     3.284kg           |     7.240 lbs           |
+
+Notes:
+- Unit: The black, retail-style box HoloLens 2 is sold in.
+- Exterior Shipper: The protective shipping packaging around Unit.
 
 ## Next step
 
