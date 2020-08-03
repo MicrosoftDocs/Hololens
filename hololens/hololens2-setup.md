@@ -4,7 +4,6 @@ description: This guide walks through first time set up and hardware guide.
 keywords: hololens, lights, fit, comfort, parts
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
-keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -115,6 +114,8 @@ Use your HoloLens in a safe space, free of obstructions and tripping hazards. Do
 ### Stay comfortable
 
 Keep your first few sessions with HoloLens brief and be sure to take breaks. If you experience discomfort, stop and rest until you feel better. This might include temporary feelings of nausea, motion sickness, dizziness, disorientation, headache, fatigue, eye strain, or dry eyes.
+
+See [product safety warnings and instructions](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
 
 > [!div class="nextstepaction"]
 > [Start and configure your HoloLens 2](hololens2-start.md)
