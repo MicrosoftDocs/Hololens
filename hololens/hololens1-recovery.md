@@ -100,7 +100,7 @@ You can install a new operating system on your HoloLens (1st gen) by using the W
 
 The recovery process may take a while. When it's done, the latest version of the Windows Holographic software will be installed.
 
-To use the tool, you need a computer running Windows 10 or later, with at least 4 GB of free storage space. You can't run this tool on a virtual machine.
+To use the tool, you need a computer running Windows 10 or later with at least 4 GB of free storage space. You can't run this tool on a virtual machine.
 
 ### Recover your HoloLens
 
