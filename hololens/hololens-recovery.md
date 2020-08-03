@@ -97,7 +97,7 @@ If the HoloLens 2 doesn't start correctly, you may need to put the device into R
 
 3. While pressing the **volume up** button, press and release the **power** button to start the device. Wait 15 seconds, and then release the **volume up** button. Only the middle LED of the five LEDs will light up.
 
-4. Connect the device to the host PC, and open Device Manager. (For Windows 10 press the **Windows** key, and then the **X** key, and select **Device Manager**.) Make sure the device enumerates correctly as Microsoft HoloLens as shown in the following image
+4. Connect the device to the host PC, and open Device Manager. (For Windows 10 press the **Windows** key, and then the **X** key, and then select **Device Manager**.) Make sure the device enumerates correctly as Microsoft HoloLens as shown in the following image:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
 
@@ -111,10 +111,9 @@ If the HoloLens 2 doesn't start correctly, you may need to put the device into R
 
 If the IT environment prevents the use of the Windows Store app or limits access to the retail store, the IT administrator can make this app available through an "offline" deployment path.
 
-This process can also be used for other apps. This guide focuses on Advanced Recovery Companion, but the process can also be used for other "offline" apps.
-
  >[!NOTE] 
- > IT administrators can also distribute this app through System Center Configuration Manager (SCCM) or Intune.
+ > - IT administrators can also distribute this app through System Center Configuration Manager (SCCM) or Intune.
+ > - This guide focuses on Advanced Recovery Companion, but the process can also be used for other "offline" apps.
 
 Follow these steps to enable the deployment path:
 1. Go to the [Microsoft Store for Business](https://businessstore.microsoft.com) and sign in using an Azure Active Directory identity.
