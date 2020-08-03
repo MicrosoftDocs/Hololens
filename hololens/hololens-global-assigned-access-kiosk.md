@@ -32,46 +32,7 @@ This feature configures Hololens 2 device for multiple app kiosk mode which is a
 
 2.	For value, update and paste following content: 
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8" ?> 
-    <AssignedAccessConfiguration 
-        xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
-        xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-        xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-        xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-    > 
-        <Profiles> 
-            <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-                <AllAppsList> 
-                    <AllowedApps>                     
-                        <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch=”true” /> --> 
-                         <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.settingn_8wekyb3d8bbwe!MicrosoftEdge" /> --> 
-                     </AllowedApps> 
-                </AllAppsList> 
-                <StartLayout> 
-                    <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"> 
-                          <LayoutOptions StartTileGroupCellWidth="6" /> 
-                          <DefaultLayoutOverride> 
-                            <StartLayoutCollection> 
-                              <defaultlayout:StartLayout GroupCellWidth="6"> 
-                                <start:Group Name="Life at a glance"> 
-                                  <!—This AUMID can be of any app and is not used on Hololens but is required for parity, so you can leave it as is. --> 
-                                  <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />                               
-                                </start:Group> 
-                              </defaultlayout:StartLayout> 
-                            </StartLayoutCollection> 
-                          </DefaultLayoutOverride> 
-                        </LayoutModificationTemplate> 
-                    ]]> 
-                </StartLayout> 
-                <Taskbar ShowTaskbar="true"/> 
-            </Profile> 
-        </Profiles> 
-        <Configs> 
-            <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/> 
-        </Configs> 
-    </AssignedAccessConfiguration> 
-    ```
+    :::code language="xml" source="samples/global-assigned-access.xml" highlight="12-13,23":::
 
 ## How to use this in Windows Configuration Designer? 
  
@@ -85,28 +46,13 @@ Yes, please refer to the example XML blob below. Global Assigned Access profile 
 Here is an example of XML blob to be used: 
 
 > [!NOTE]
-> Please be aware of the areas marked with <!-  these areas will require you to make modifications based on your preferences. 
+> Please be aware of the highlighted areas marked with <!-  these areas will require you to make modifications based on your preferences. 
 
-```xml
-<?xml version="1.0" encoding="utf-8" ?> 
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"> 
-    <Profiles> 
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
-        </Profile> 
-        <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
-        </Profile> 
-    </Profiles> 
-    <Configs> 
-        <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/> 
-        <Config> 
-           <Account>AzureAD\<!-fully qualified AAD account name></Account> 
-           <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
-        </Config> 
-    </Configs> 
-</AssignedAccessConfiguration> 
-```
+ :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
+
+## Excluding DeviceOwners from Global Assigned Access Profile
+
+This feature allows a user who is considered “[Device owner](security-adminless-os.md)" on Hololens to be excluded from Global Assigned Access. In order to take advantage of this feature, in the XML blob for multiple-app kiosk configuration, ensure highlighted lines are added: 
+
+ :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
+ 
