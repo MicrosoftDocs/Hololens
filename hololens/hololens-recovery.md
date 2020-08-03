@@ -120,7 +120,7 @@ Follow these steps to enable the deployment path:
 
 1. Go to **Manage – Settings**. Turn on **Show offline apps** under **Shopping experience**. 
 1. Go to **shop for my group**, and search for [***Advanced Recovery Companion***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
-1. Change the **License Type** to **offline**, and click **Manage**.
+1. Change the **License Type** to ***offline***, and select **Manage**.
 1. Under **Download the package for offline use**, select the second blue **Download** button. Make sure that the file extension is *.appxbundle*.
 
     - At this stage, if the Desktop PC has internet access, double-click the package to install the app.
