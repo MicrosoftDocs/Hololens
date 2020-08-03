@@ -4,7 +4,6 @@ description: This guide walks through first time set up and hardware guide.
 keywords: hololens, lights, fit, comfort, parts
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
-keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
