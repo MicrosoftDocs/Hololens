@@ -83,6 +83,27 @@ To view certificates, go to **Settings > Update & Security > Certificates**.
 
 ![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
 
+### Install and Remove Certificates
+Users can now install and remove certificates using the new Certificate Viewer. 
+
+#### To install a certificate using the certificate viewer: 
+1. Navigate to **Settings App** -> **Update and Security** -> **Certificates**, and select **Install a Certificate**. 
+1. Select a .cer file from the File Picker experience.
+1. Select Local Machine (or where you have your certificate.)
+1. Select **Root** as the Certificate Store (or which store you’re like to place your certificate.) 
+1. Click **Install**.
+
+Certificate should now be installed on the device.
+
+#### To remove a certificate using the certificate viewer: 
+1. Navigate to **Settings App** -> **Update and Security** -> **Certificates**.
+1. Search for the certificate by name in the search box.
+1. Select the certificate.
+1. Click **Remove**
+1. Select Yes when the prompted, and when asked for confirmation.
+
+Certificate should now be removed from the device.
+
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
 
@@ -119,7 +140,8 @@ Steps to use this policy correctly:
 Newly enabled policies that allow for more management options of HoloLens 2 devices. 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
-- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
 
 ### New power policies for Hololens 2
 These newly added policies allow admins to control power states, such as idle timeout. To read more about each individual policy please click the link for that policy.
@@ -159,6 +181,18 @@ Application is automatically launched when user signs-in.
 <AllowedApps>                     
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
+
+### Visitor Auto logon for Kiosks
+This new feature enables the auto logon on Visitor accounts to be used for Kiosk modes. 
+
+For a non-AAD configuration, to configure a device for visitor autologon:
+1.	Create a provisioning package that:
+    1.	Configures **Runtime settings/AssignedAccess** to allow Visitor accounts.
+    1.	Optionally enrolls the device in MDM **(Runtime settings/Workplace/Enrollments)** so that it can be managed later.
+    1.	Do not create a local account
+1.	[Apply the provisioning package](hololens-provisioning.md).
+
+For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
 
 ### Kiosk mode behavior changes for handling of failures
 
