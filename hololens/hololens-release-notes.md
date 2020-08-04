@@ -41,7 +41,7 @@ Improvements and fixes in the update:
 Improvements and fixes in the update:
 
 - Fixed an issue that could cause holograms to disappear in Unity applications when losing or regaining tracking.
-- Fixed an issue that caused exclusive Hololens apps to crash back to the shell while using the Hololens Emulator with hardware acceleration on certain devices.
+- Fixed an issue that caused exclusive HoloLens apps to crash back to the shell while using the HoloLens Emulator with hardware acceleration on certain devices.
 - Addressed an issue concerning HTTPS forwarding for the Windows Device Portal on HoloLens 2.
 
 ## Windows Holographic, version 2004 - June 2020 Update
@@ -141,7 +141,7 @@ To try it out:
 
 ### Line-of-business application install status
 
-MDM app deployment and management for line of business apps is critical to Hololens. Admins and users need to view app install status for auditing and diagnosis. In this release, we added more details in **Settings** > **Accounts** > **Access work or school** > **Click on your account** > **Info**.
+MDM app deployment and management for line of business apps is critical to HoloLens. Admins and users need to view app install status for auditing and diagnosis. In this release, we added more details in **Settings** > **Accounts** > **Access work or school** > **Click on your account** > **Info**.
 
 ### Additional CSPs and policies
 
