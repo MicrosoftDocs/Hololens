@@ -63,7 +63,7 @@ If the previous procedure didn't work, try to restart the device by using [Windo
 
 ### Do an unsafe forced restart
 
-If the previous methods didn't restart your Hololens, force a restart. This method is equivalent to removing and reinstalling the battery. It's dangerous because it might leave your device in a corrupted state. If that happens, you'll have to flash your HoloLens.  
+If the previous methods didn't restart your HoloLens, force a restart. This method is equivalent to removing and reinstalling the battery. It's dangerous because it might leave your device in a corrupted state. If that happens, you'll have to flash your HoloLens.  
 
 > [!WARNING]
 > This is a potentially harmful method and should only be used if the previously cited methods didn't work.
