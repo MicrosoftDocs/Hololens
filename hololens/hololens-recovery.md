@@ -71,7 +71,7 @@ In extraordinary situations, you may have to "clean-flash" the HoloLens 2. There
 >[!WARNING]
 >If you reflash your device, all your personal data, apps, and settings will be erased, including TPM-reset information.
 
-By default, Advanced Recovery Companion is currently set to download the feature release build for [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004). To download the latest HoloLens 2 Full Flash Update (FFU) package to reflash your device via Advanced Recovery Companion, [download it here](https://aka.ms/hololens2download). This version is the latest generally available build.
+By default, Advanced Recovery Companion is currently set to download the feature release build for [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004). To get the latest HoloLens 2 Full Flash Update (FFU) package to reflash your device via Advanced Recovery Companion, [download it here](https://aka.ms/hololens2download). This version is the latest generally available build.
 
 Before you start the reflash procedure, make sure the app is installed and running on your Windows 10 PC and ready to detect the device.
 
