@@ -99,7 +99,7 @@ New mixed reality policies have been created for HoloLens 2 devices on builds 19
 
 This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
 
-AADGroupMembershipCacheValidityInDays 
+./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
 Min - 0 days  
 Max - 60 days 
