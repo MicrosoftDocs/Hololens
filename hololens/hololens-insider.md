@@ -109,9 +109,7 @@ We are investigating two issues:
 -	During the installation flow, after selecting a certificate from File Picker, the installation dialog UI doesn’t show the selected certificate file although it has been selected. Once you select the file, you can proceed with the installation even if you don’t see the file appearing in the dialog.
 -	The File Picker doesn’t recognize .crt files. A workaround is to change the file extension to .cer which will make the certificate visible on File Picker.
 
-
-
-
+![Picture showing how to use Certificate UI to install a certificate](images/hololens-install-certificate.jpg)
 
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
