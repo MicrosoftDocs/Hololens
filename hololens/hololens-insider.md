@@ -39,6 +39,8 @@ We'll be updating this page with new features again as we release them to Window
 | Auto Eye Position Support                            | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
 | Certificate Viewer                                   | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
 | Install and Remove Certificates                      | Users can install and remove certificates using the Certificate Viewer.                       | 19041.1361+                 |
+| Auto launch provisioning from USB                    | OOBE Automaticly detects provisioning packages on USB drives.                                 | 19041.1361+                 |
+| Auto confirm provisioning packages in OOBE           | Automatically apply provisioning packages in OOBE.                                            | 19041.1361+                 |
 | HoloLens Policies                                    | New policies for mixed reality devices.                                                       | 19041.1349+                 |
 | Cache AAD Group membership for offline Kiosk         | Policy for how many days AAD group membership cache is allowed to be used for Kiosk mode.     | 19041.1356+                 |
 | New device restriction policies for HoloLens 2       | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
@@ -110,6 +112,14 @@ We are investigating two issues:
 -	The File Picker doesn’t recognize .crt files. A workaround is to change the file extension to .cer which will make the certificate visible on File Picker.
 
 ![Picture showing how to use Certificate UI to install a certificate](images/hololens-install-certificate.jpg)
+
+### Auto launch provisioning from USB
+If you have a Provisioning Package on a USB, and plug it in during OOBE’s first interactable moment when you can provision it’ll automatically prompt you with the provisioning page. If you leave a USB drive plugged in while the device is booting OOBE will enumerate existing USB storage devices, as well as watch for additional ones being plugged in.
+
+### Auto confirm provisioning packages in OOBE
+When Provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages.
+This can be a very useful scenario when combined with auto launching from a USB. Together these can allow a user to automatically provision HoloLens 2 devices via USB without wearing them. 
+
 
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
