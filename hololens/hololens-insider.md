@@ -207,6 +207,12 @@ Earlier on encountering failures in applying kiosk mode, HoloLens used to show u
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
+### Improvements and fixes in the update:
+- Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
+- More screens in OOBE  are now in dark mode.
+- Learn more content should point to the latest Privacy Statement online.
+- Addressed and issue where users could not provision VPN profiles through provisioning packages.
+
 ## Start receiving Insider builds
 
 On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
