@@ -38,6 +38,7 @@ We'll be updating this page with new features again as we release them to Window
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | Auto Eye Position Support                            | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
 | Certificate Viewer                                   | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
+| Install and Remove Certificates                      | Users can install and remove certificates using the Certificate Viewer.                       | 19041.1361+                 |
 | HoloLens Policies                                    | New policies for mixed reality devices.                                                       | 19041.1349+                 |
 | Cache AAD Group membership for offline Kiosk         | Policy for how many days AAD group membership cache is allowed to be used for Kiosk mode.     | 19041.1356+                 |
 | New device restriction policies for HoloLens 2       | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
@@ -46,7 +47,9 @@ We'll be updating this page with new features again as we release them to Window
 | Enabled Settings page visibility for HoloLens 2      | Policy to pick which pages are seen in Settings app.                                          | 19041.1349+                 |
 | Global Assigned Access                               | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1356+                 |
 | Auto launch an app in multi-app kiosk                | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
+| Visitor Auto logon for Kiosks                        | Enables the auto logon on Visitor accounts to be used for Kiosk modes.                        | 19041.1361+                 |
 | Kiosk mode behavior changes for handling of failures | Changes in how Kiosk mode failure is now handled.                                             | 19041.1356+                 |
+| Improvements and fixes in the update                 | Additional fixes in the update.                                                               | 19041.1361+                 |
 
 ### Auto Eye Position Support
 
