@@ -37,7 +37,7 @@ Improvements and fixes in the update:
 ## Windows Holographic, version 1903 - August 2020 Update
 - Build 18362.1073
 
-This monthly quality update doesn't contain any notable changes because the team was working on the upcoming Windows Holographic fall update.
+This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest builds for Windows Holographic, version 2004.
 
 ## Windows Holographic, version 2004 - July 2020 Update
 - Build 19041.1109
