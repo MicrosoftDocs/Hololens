@@ -84,7 +84,7 @@ To view certificates, go to **Settings > Update & Security > Certificates**.
 ![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
 
 ### Install and Remove Certificates
-Users can now install and remove certificates using the new Certificate Viewer. 
+Starting in Windows Insider release 19041.1361+ you can install and remove certificates directly on HoloLens 2, through the Settings app. Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User stores, whereas Device Users can only install certificates in Current User store. Removal of certificates is only supported for certificates installed directly from the Settings UI, and not through other means, such as MDM or provisioning packages. 
 
 #### To install a certificate using the certificate viewer: 
 1. Navigate to **Settings App** -> **Update and Security** -> **Certificates**, and select **Install a Certificate**. 
@@ -103,6 +103,15 @@ Certificate should now be installed on the device.
 1. Select Yes when the prompted, and when asked for confirmation.
 
 Certificate should now be removed from the device.
+
+**Known Issues**
+We are investigating two issues: 
+-	During the installation flow, after selecting a certificate from File Picker, the installation dialog UI doesn’t show the selected certificate file although it has been selected. Once you select the file, you can proceed with the installation even if you don’t see the file appearing in the dialog.
+-	The File Picker doesn’t recognize .crt files. A workaround is to change the file extension to .cer which will make the certificate visible on File Picker.
+
+
+
+
 
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
