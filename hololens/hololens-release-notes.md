@@ -25,6 +25,20 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 >[!NOTE]
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
+## Windows Holographic, version 2004 - August 2020 Update
+- Build 19041.1111
+
+Improvements and fixes in the update:
+
+- Settings app will no longer follow the user into Iris Enrollment or Eye Tracking Calibration experiences.
+- Fixed a bug where applying a provisioning package during OOBE that renames the device and performs other actions (such as connecting to a network) will fail to perform the other actions after the device reboot due to rename.
+- Modified color scheme of initial device setup flows to improve visual quality.
+
+## Windows Holographic, version 1903 - August 2020 Update
+- Build 18362.1073
+
+This monthly quality update doesn't contain any notable changes because the team was working on the upcoming Windows Holographic fall update.
+
 ## Windows Holographic, version 2004 - July 2020 Update
 - Build 19041.1109
 
