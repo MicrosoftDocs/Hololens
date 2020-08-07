@@ -114,7 +114,7 @@ We are investigating two issues:
 ![Picture showing how to use Certificate UI to install a certificate](images/hololens-install-certificate.jpg)
 
 ### Auto launch provisioning from USB
-If you have a Provisioning Package on a USB, and plug it in during OOBE’s first interactable moment when you can provision it’ll automatically prompt you with the provisioning page. If you leave a USB drive plugged in while the device is booting OOBE will enumerate existing USB storage devices, as well as watch for additional ones being plugged in.
+If you have a Provisioning Package on a USB storage drive, and plug it in during OOBE’s first interactable moment when you can provision it’ll automatically prompt you with the provisioning page. If you leave a USB drive plugged in while the device is booting OOBE will enumerate existing USB storage devices, as well as watch for additional ones being plugged in.
 
 ### Auto confirm provisioning packages in OOBE
 When Provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages.
