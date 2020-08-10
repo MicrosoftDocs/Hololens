@@ -99,13 +99,16 @@ Refer to the following screenshot as an example setting this via Intune.
 ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
 
 #### How to unset TenantLockdown’s RequireNetworkInOOBE on HoloLens 2 using Intune? 
-1. Exclude HoloLens 2 from the device group to which the device configuration created above was applicable. 
+1. Exclude the HoloLens 2 from the device group to which the device configuration created above was applicable. 
 1. Once that device configuration is undone on HoloLens 2, restrictions introduced by TenantLockdown CSP will not be applicable anymore on that HoloLens 2 device. 
 
 #### What would happen during OOBE, if Autopilot profile is unassigned on a HoloLens after TenantLockdown was set to true? 
 After flashing the device, OOBE will wait indefinitely for Autopilot profile to download and following UX will be presented. To get out of this situation, device must be enrolled again using Autopilot and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are considered inapplicable. 
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
+
+### Setting up Wi-Fi connection and using Autopilot
+Now during OOBE, once you connect HoloLens 2 with Wi-fi, OOBE will check for an autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB C or wifi to USB C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. 
 
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
