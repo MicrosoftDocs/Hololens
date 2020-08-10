@@ -123,7 +123,7 @@ By combining the auto launch of provisioning from USB devices and the auto confi
 
 1. [Create a Provisioning Package](hololens-provisioning.md) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
 1. Copy the package to a USB storage drive.
-1. [Flash your HoloLens 2](hololens-recovery.md#clean-reflash-the-device) to [19041.1361 or newer build](https://aka.ms/hololens2previewdownload). 
+1. [Flash your HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) to [19041.1361 or newer build](https://aka.ms/hololens2previewdownload). 
 1. When [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8) has completed flashing your device unplug your USB-C cable. 
 1. Plug in your USB drive to the device.
 1. When the HoloLens 2 device boots into OOBE it will automatically detect the provisioning package on the USB drive and launch the provisioning page.
