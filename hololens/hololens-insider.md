@@ -83,6 +83,30 @@ To view certificates, go to **Settings > Update & Security > Certificates**.
 
 ![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
 
+
+### Tenantlockdown CSP and Autopilot
+HoloLens 2 devices now support TenantLockdown CSP as of Windows Insider build 19041.1356 +. When TenantLockdown CSP’s RequireNetworkInOOBE is set to true on a HoloLens 2 device, after enrollment first time, the device can only be enrolled in that tenant any time the device is reset or re-flashed. The device will only allow enrollment through Autopilot; OOBE will wait indefinitely until Autopilot profile is downloaded from the tenant. No local user creation or Active Azure Directory Join via runtime provisioning will be allowed in this case.
+
+#### How to set this using Intune? 
+1. Create a custom OMA URI device configuration profile and specify true for RequireNetworkInOOBE node as shown below.
+1. Assign this device configuration profile to same device group of which previously registered HoloLens devices are member of (but not enrolled yet using Autopilot). 
+1. When those devices are enrolled using Autopilot first time, they will also receive this device configuration profile and set RequireNetworkInOOBE to true.
+
+Refer to the following screenshot as an example setting this via Intune.
+
+
+
+#### How to unset TenantLockdown’s RequireNetworkInOOBE on HoloLens 2 using Intune? 
+Exclude HoloLens 2 from the device group to which the device configuration created above was applicable. Once that device configuration is undone on HoloLens 2, restrictions introduced by TenantLockdown CSP will not be applicable anymore on that HoloLens 2 device. 
+
+
+#### What would happen during OOBE, if Autopilot profile is unassigned on a HoloLens after TenantLockdown was set to true? 
+After flashing the device, OOBE will wait indefinitely for Autopilot profile to download and following UX will be presented. To get out of this situation, device must be enrolled again using Autopilot and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are considered inapplicable. 
+
+ 
+
+
+
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
 
