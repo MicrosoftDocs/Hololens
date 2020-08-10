@@ -142,7 +142,8 @@ New mixed reality policies have been created for HoloLens 2 devices on builds 19
 
 This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
 
-AADGroupMembershipCacheValidityInDays 
+Name: AADGroupMembershipCacheValidityInDays 
+URI value: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
 Min - 0 days  
 Max - 60 days 
@@ -150,6 +151,8 @@ Max - 60 days
 Steps to use this policy correctly: 
 1. Create a device configuration profile for kiosk targeting AAD groups and assign it to HoloLens device(s). 
 1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s). 
+    1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+    1. The value can be between min / max allowed.
 1. Enroll HoloLens devices and verify both configurations get applied to the device. 
 1. Let AAD user 1 sign-in when internet is available, once user signs-in and AAD group membership is confirmed successfully, cache will be created. 
 1. Now AAD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days. 
