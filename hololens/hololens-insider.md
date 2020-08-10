@@ -86,7 +86,7 @@ To view certificates, go to **Settings > Update & Security > Certificates**.
 ![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
 
 ### Install and Remove Certificates
-Starting in Windows Insider release 19041.1361+ you can install and remove certificates directly on HoloLens 2, through the Settings app. Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User stores, whereas Device Users can only install certificates in Current User store. Removal of certificates is only supported for certificates installed directly from the Settings UI, and not through other means, such as MDM or provisioning packages. 
+Starting in Windows Insider release 19041.1361+ you can install and remove certificates directly on HoloLens 2, through the Settings app. Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User;  all other users can only install into Current User. Users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must be also be removed by the same mechanism.
 
 #### To install a certificate using the certificate viewer: 
 1. Navigate to **Settings App** -> **Update and Security** -> **Certificates**, and select **Install a Certificate**. 
