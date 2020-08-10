@@ -104,20 +104,27 @@ Certificate should now be installed on the device.
 1. Click **Remove**
 1. Select Yes when prompted, and when asked for confirmation.
 
-**Known Issues**
-We are investigating two issues: 
--	During the installation flow, after selecting a certificate from File Picker, the installation dialog UI doesn’t show the selected certificate file although it has been selected. Once you select the file, you can proceed with the installation even if you don’t see the file appearing in the dialog.
--	The File Picker doesn’t recognize .crt files. A workaround is to change the file extension to .cer which will make the certificate visible on File Picker.
-
 ![Picture showing how to use Certificate UI to install a certificate](images/hololens-install-certificate.jpg)
 
 ### Auto launch provisioning from USB
-If you have a Provisioning Package on a USB storage drive, and plug it in during OOBE’s first interactable moment when you can provision it’ll automatically prompt you with the provisioning page. If you leave a USB drive plugged in while the device is booting OOBE will enumerate existing USB storage devices, as well as watch for additional ones being plugged in.
+The old behavior was users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment, when the device is ready to be provisioned it will automatically open the prompt with the provisioning page. If a USB drive is left plugged in while the device is booting OOBE will enumerate existing USB storage devices, as well as watch for additional ones being plugged in.
+
+For more information about applying provisioning packages during OOBE please continue reading [here](https://docs.microsoft.com/en-us/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup).
 
 ### Auto confirm provisioning packages in OOBE
-When Provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages.
-This can be a very useful scenario when combined with auto launching from a USB. Together these can allow a user to automatically provision HoloLens 2 devices via USB without wearing them. 
+When Provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
 
+### Automatic provsioning without interaction
+By combining the auto launch of provisioning from USBs and the auto confirm of provisioning packages a user can provision HoloLens 2 devices automatically without wearing the device. You may continue to use the same USB drive and provisioning package for multiple devices. This is useful for deploying multiple devices at once. 
+
+1. [Create a Provisioning Package](hololens-provisioning.md) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
+1. Copy the package to a USB storage drive.
+1. [Flash your HoloLens 2](hololens-recovery.md#clean-reflash-the-device) to [19041.1361 or newer build](https://aka.ms/hololens2previewdownload). 
+1. When [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8) has completed, unplug your USB-C cable, and plug in your USB drive to the device.
+1. When the HoloLens 2 device boots into OOBE it will automatically detect the provisioning package on the USB drive and launch the provisioning page.
+1. After 10 seconds the device will automatically apply the provisioning package. 
+
+Your device is now configured.
 
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
