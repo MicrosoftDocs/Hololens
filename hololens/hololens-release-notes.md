@@ -26,7 +26,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
 ## Windows Holographic, version 2004 - August 2020 Update
-- Build 19041.1111
+- Build 19041.1113
 
 Improvements and fixes in the update:
 
@@ -35,7 +35,7 @@ Improvements and fixes in the update:
 - Modified color scheme of initial device setup flows to improve visual quality.
 
 ## Windows Holographic, version 1903 - August 2020 Update
-- Build 18362.1073
+- Build 18362.1074
 
 This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest builds for Windows Holographic, version 2004.
 
