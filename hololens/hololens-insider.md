@@ -109,7 +109,7 @@ Certificate should now be installed on the device.
 ### Auto launch provisioning from USB
 The old behavior was users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment, when the device is ready to be provisioned it will automatically open the prompt with the provisioning page. If a USB drive is left plugged in while the device is booting OOBE will enumerate existing USB storage devices, as well as watch for additional ones being plugged in.
 
-For more information about applying provisioning packages during OOBE please continue reading [here](https://docs.microsoft.com/en-us/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup).
+For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
 ### Auto confirm provisioning packages in OOBE
 When Provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
