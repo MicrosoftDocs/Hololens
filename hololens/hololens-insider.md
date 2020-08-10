@@ -75,7 +75,7 @@ For experiences that require eye gaze data or very precise hologram positioning,
 
 ### Certificate Viewer
 
-In Windows Insider build 19041.1346+ we are adding a Certificate Viewer in the HoloLens 2 Settings app. This feature provides a simple and user-friendly way to verify certificates on your device. To find a specific certificate quickly there are options to sort by name, store or expiration date. Users may also directly search for a certificate. With the new Certificate Viewer, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant.  To view more about an individual certificate select the certificate and click on Info.
+In Windows Insider build 19041.1346+ we are adding a Certificate Viewer in the HoloLens 2 Settings app. Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User;  all other users can only install into Current User. Users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must be also be removed by the same mechanism.
 
 -	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
 -	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
@@ -102,9 +102,7 @@ Certificate should now be installed on the device.
 1. Search for the certificate by name in the search box.
 1. Select the certificate.
 1. Click **Remove**
-1. Select Yes when the prompted, and when asked for confirmation.
-
-Certificate should now be removed from the device.
+1. Select Yes when prompted, and when asked for confirmation.
 
 **Known Issues**
 We are investigating two issues: 
