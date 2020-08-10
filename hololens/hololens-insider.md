@@ -118,8 +118,8 @@ For more information about applying provisioning packages during OOBE please con
 ### Auto confirm provisioning packages in OOBE
 When Provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
 
-### Automatic provisioning without interaction
-By combining the auto launch of provisioning from USBs and the auto confirm of provisioning packages a user can provision HoloLens 2 devices automatically without wearing the device. You may continue to use the same USB drive and provisioning package for multiple devices. This is useful for deploying multiple devices at once. 
+### Automatic provisioning without using UI
+By combining the auto launch of provisioning from USB devices and the auto confirmation of provisioning packages a user can provision HoloLens 2 devices automatically without using the device's UI or even wearing the device. You may continue to use the same USB drive and provisioning package for multiple devices. This is useful for deploying multiple devices at once in the same area. 
 
 1. [Create a Provisioning Package](hololens-provisioning.md) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
 1. Copy the package to a USB storage drive.
