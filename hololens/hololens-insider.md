@@ -41,6 +41,7 @@ We'll be updating this page with new features again as we release them to Window
 | Install and Remove Certificates                      | Users can install and remove certificates using the Certificate Viewer.                       | 19041.1361+                 |
 | Auto launch provisioning from USB                    | OOBE Automaticly detects provisioning packages on USB drives.                                 | 19041.1361+                 |
 | Auto confirm provisioning packages in OOBE           | Automatically apply provisioning packages in OOBE.                                            | 19041.1361+                 |
+| Wi-Fi connection and using Autopilot                 | Use autopilot from device Wi-Fi without need for ethernet adapter.                            | 19041.1364+                 |
 | HoloLens Policies                                    | New policies for mixed reality devices.                                                       | 19041.1349+                 |
 | Cache AAD Group membership for offline Kiosk         | Policy for how many days AAD group membership cache is allowed to be used for Kiosk mode.     | 19041.1356+                 |
 | New device restriction policies for HoloLens 2       | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
@@ -130,6 +131,9 @@ By combining the auto launch of provisioning from USB devices and the auto confi
 1. After 10 seconds the device will automatically apply the provisioning package. 
 
 Your device is now configured.
+
+### Wi-Fi connection and using Autopilot
+Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB C or wifi to USB C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
 
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
