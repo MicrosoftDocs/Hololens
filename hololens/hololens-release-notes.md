@@ -31,7 +31,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 Improvements and fixes in the update:
 
 - Settings app will no longer follow the user into Iris Enrollment or Eye Tracking Calibration experiences.
-- Fixed a bug where applying a provisioning package during OOBE that renames the device and performs other actions (such as connecting to a network) will fail to perform the other actions after the device reboot due to rename.
+- Fixed a bug where applying a provisioning package during OOBE that renames the device and performs other actions (such as connecting to a network) would fail to perform the other actions after the device reboot due to rename.
 - Modified color scheme of initial device setup flows to improve visual quality.
 
 ## Windows Holographic, version 1903 - August 2020 Update
