@@ -107,6 +107,9 @@ Certificate should now be installed on the device.
 
 ![Picture showing how to use Certificate UI to install a certificate](images/hololens-install-certificate.jpg)
 
+#### Known Issues 
+We are investigating an issue where during the installation flow, after selecting a certificate from File Picker, the installation dialog UI doesn’t show the selected certificate file although it has been selected. Once you select the file, you can proceed with the installation even if you don’t see the file appearing in the dialog. 
+
 ### Auto launch provisioning from USB
 Before this build users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
 
