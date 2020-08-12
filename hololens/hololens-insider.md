@@ -245,6 +245,13 @@ Earlier on encountering failures in applying kiosk mode, HoloLens used to show u
 
 ## Start receiving Insider builds
 
+> [!NOTE]
+> If you haven’t updated recently, please reboot your device to update state and get the latest build.
+> -	The “Reboot device” voice command works well. 
+> -	You can also choose the restart button in Settings/Windows Insider Program.
+>
+> We had a bug on the back-end that you may have encountered and this will get you back on track.
+
 On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
 
 Then, select **Active development of Windows**, choose whether you'd like to receive **Dev Channel** or **Beta Channel** builds, and review the program terms.
