@@ -1,14 +1,13 @@
 ---
 title: Find and save files on HoloLens
 description: Use File Explorer on HoloLens to view and manage files on your device
-keywords: how-to, file picker, files, photos, videos, pictures, OneDrive, storage, file explorer
+keywords: how-to, file picker, files, photos, videos, pictures, OneDrive, storage, file explorer, hololens
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
 author: mattzmsft
 ms.author: mazeller
 manager: v-miegge
 ms.reviewer: jarrettrenshaw
 ms.date: 12/30/2019
-keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article

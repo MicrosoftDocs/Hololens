@@ -38,6 +38,7 @@ We'll be updating this page with new features again as we release them to Window
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | Auto Eye Position Support                            | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
 | Certificate Viewer                                   | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
+| Wi-Fi connection and using Autopilot                 | Use autopilot from device Wi-Fi without need for ethernet adapter.                            | 19041.1364+                 |
 | HoloLens Policies                                    | New policies for mixed reality devices.                                                       | 19041.1349+                 |
 | Cache AAD Group membership for offline Kiosk         | Policy for how many days AAD group membership cache is allowed to be used for Kiosk mode.     | 19041.1356+                 |
 | New device restriction policies for HoloLens 2       | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
@@ -83,6 +84,9 @@ To view certificates, go to **Settings > Update & Security > Certificates**.
 
 ![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
 
+### Wi-Fi connection and using Autopilot
+Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB C or wifi to USB C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
+
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
 
@@ -99,7 +103,8 @@ New mixed reality policies have been created for HoloLens 2 devices on builds 19
 
 This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
 
-AADGroupMembershipCacheValidityInDays 
+Name: AADGroupMembershipCacheValidityInDays 
+URI value: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
 Min - 0 days  
 Max - 60 days 
@@ -107,6 +112,8 @@ Max - 60 days
 Steps to use this policy correctly: 
 1. Create a device configuration profile for kiosk targeting AAD groups and assign it to HoloLens device(s). 
 1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s). 
+    1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+    1. The value can be between min / max allowed.
 1. Enroll HoloLens devices and verify both configurations get applied to the device. 
 1. Let AAD user 1 sign-in when internet is available, once user signs-in and AAD group membership is confirmed successfully, cache will be created. 
 1. Now AAD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days. 
@@ -167,6 +174,13 @@ Earlier on encountering failures in applying kiosk mode, HoloLens used to show u
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 ## Start receiving Insider builds
+
+> [!NOTE]
+> If you haven’t updated recently, please reboot your device to update state and get the latest build.
+> -	The “Reboot device” voice command works well. 
+> -	You can also choose the restart button in Settings/Windows Insider Program.
+>
+> We had a bug on the back-end that you may have encountered and this will get you back on track.
 
 On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
 
