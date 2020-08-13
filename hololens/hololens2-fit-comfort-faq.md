@@ -45,12 +45,7 @@ Try adjusting the position of your device visor so the holographic frame matches
 
 ## Hologram image color or brightness does not look right
 
-For HoloLens 2, take the following steps to ensure the highest visual quality of holograms presented in displays:
-
-- **Increase brightness of the display.** Holograms look best when the display is at its brightest level.
-- **Bring visor closer to your eyes.** Swing the visor down to the closest position to your eyes.
-- **Shift visor down.** Try moving the brow pad on your forehead down, which will result in the visor moving down closer to your nose.
-- **Run eye calibration.** The display uses your IPD and eye gaze to optimize images on the display. If you don't run eye calibration, the image quality may be made worse.
+See the HoloLens 2 [display troubleshooting steps](hololens2-display.md).
 
 ## The device slides down when I'm using it, or I need to make the headband too tight to keep it secure
 
