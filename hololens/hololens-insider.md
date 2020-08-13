@@ -28,25 +28,25 @@ If you are looking for a feature that is no longer listed here, then it is now g
 
 We'll be updating this page with new features again as we release them to Windows Insider builds.
 
-| Feature                                              | Description                                                                                   | Available in insider builds |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| Auto Eye Position Support                            | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
-| Certificate Viewer                                   | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
-| Install and Remove Certificates                      | Users can install and remove certificates using the Certificate Viewer.                       | 19041.1361+                 |
-| Auto launch provisioning from USB                    | OOBE Automaticly detects provisioning packages on USB drives.                                 | 19041.1361+                 |
-| Auto confirm provisioning packages in OOBE           | Automatically apply provisioning packages in OOBE.                                            | 19041.1361+                 |
-| Wi-Fi connection and using Autopilot                 | Use autopilot from device Wi-Fi without need for ethernet adapter.                            | 19041.1364+                 |
-| HoloLens Policies                                    | New policies for mixed reality devices.                                                       | 19041.1349+                 |
-| Cache AAD Group membership for offline Kiosk         | Policy for how many days AAD group membership cache is allowed to be used for Kiosk mode.     | 19041.1356+                 |
-| New device restriction policies for HoloLens 2       | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
-| New power policies for HoloLens 2                    | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
-| Update Policies                                      | Newly enabled policies allowing control of updates.                                           | 19041.1352+                 |
-| Enabled Settings page visibility for HoloLens 2      | Policy to pick which pages are seen in Settings app.                                          | 19041.1349+                 |
-| Global Assigned Access                               | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1356+                 |
-| Auto launch an app in multi-app kiosk                | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
-| Visitor Auto logon for Kiosks                        | Enables the auto logon on Visitor accounts to be used for Kiosk modes.                        | 19041.1361+                 |
-| Kiosk mode behavior changes for handling of failures | Changes in how Kiosk mode failure is now handled.                                             | 19041.1356+                 |
-| Improvements and fixes in the update                 | Additional fixes in the update.                                                               | 19041.1361+                 |
+| Feature                                                | Description                                                                                    | Available in insider builds |
+|--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
+| [Auto Eye Position Support](hololens-insider.md#auto-eye-position-support)                              | Actively finds eye positions and enables accurate hologram positioning.                        | 19041.1339+                 |
+| [Certificate Viewer](hololens-insider.md#certificate-viewer)                                     | View user and device certificates in the Settings app.                                         | 19041.1346+                 |
+| [Install and Remove Certificates](hololens-insider.md#install-and-remove-certificates)                        | Users can install and remove certificates using the Certificate Viewer.                        | 19041.1361+                 |
+| [Auto-launch provisioning from USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE Automatically detects provisioning packages on USB drives.                                | 19041.1361+                 |
+| [Auto-confirm provisioning packages in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatically apply provisioning packages in OOBE.                                             | 19041.1361+                 |
+| [Using Autopilot with Wi-Fi connection](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Use autopilot from device Wi-Fi without need for ethernet adapter.                             | 19041.1364+                 |
+| [Global Assigned Access](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system   level. | 19041.1356+                 |
+| [Auto-launch an app in multi-app kiosk](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Sets an application to launch automatically when signing into a multiple-app kiosk   mode.     | 19041.1346+                 |
+| [Visitor Auto-logon for Kiosks](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Enables the auto-logon on Visitor accounts to be used for Kiosk modes.                         | 19041.1361+                 |
+| [Kiosk mode behavior changes for handling of failures](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Changes in how Kiosk mode failure is now handled.                                              | 19041.1356+                 |
+| [HoloLens Policies](hololens-insider.md#hololens-policies)                                      | New policies for mixed reality devices.                                                        | 19041.1349+                 |
+| [Cache AAD Group membership for offline Kiosk](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Policy for how many days AAD group membership cache is allowed to be used for Kiosk   mode.    | 19041.1356+                 |
+| [New device restriction policies for HoloLens 2](hololens-insider.md#new-device-restriction-policies-for-hololens-2)         | Device management policies enabled newly enabled for HoloLens 2.                               | 19041.1349+                 |
+| [New power policies for HoloLens 2](hololens-insider.md#new-power-policies-for-hololens-2)                      | Newly supported policies for power timeout settings.                                           | 19041.1349+                 |
+| [Update Policies](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | Newly enabled policies allowing control of updates.                                            | 19041.1352+                 |
+| [Enabled Settings page visibility for HoloLens 2](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | Policy to pick which pages are seen in Settings app.                                           | 19041.1349+                 |
+| [Improvements and fixes in the update](hololens-insider.md#improvements-and-fixes-in-the-update)                   | Additional fixes in the update.                                                                | 19041.1361+                 |
 
 ### Auto Eye Position Support
 
@@ -130,8 +130,39 @@ By combining the auto-launch of provisioning from USB devices and the auto-confi
 
 Your device is now configured and will display the Provisioning Successful screen.
 
-### Wi-Fi connection and using Autopilot
+### Using Autopilot with Wi-Fi connection
 Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB C or wifi to USB C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
+
+### Global Assigned Access – Kiosk Mode
+This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
+
+### Automatic launch of an application in multiple-app kiosk mode 
+Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
+
+Application is automatically launched when user signs-in. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### Visitor Auto logon for Kiosks
+This new feature enables the auto logon on Visitor accounts to be used for Kiosk modes. 
+
+For a non-AAD configuration, to configure a device for visitor autologon:
+1.	Create a provisioning package that:
+    1.	Configures **Runtime settings/AssignedAccess** to allow Visitor accounts.
+    1.	Optionally enrolls the device in MDM **(Runtime settings/Workplace/Enrollments)** so that it can be managed later.
+    1.	Do not create a local account
+1.	[Apply the provisioning package](hololens-provisioning.md).
+
+For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+
+### Kiosk mode behavior changes for handling of failures
+
+Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Starting in this Windows Insider build, in case of failures, no apps will be shown in the start menu as below: 
+
+![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
@@ -200,37 +231,6 @@ We’ve now enabled a policy that allows IT Admins to either prevent specific pa
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
  
 ![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
-
-### Global Assigned Access – Kiosk Mode
-This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
-
-### Automatic launch of an application in multiple-app kiosk mode 
-Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
-
-Application is automatically launched when user signs-in. 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### Visitor Auto logon for Kiosks
-This new feature enables the auto logon on Visitor accounts to be used for Kiosk modes. 
-
-For a non-AAD configuration, to configure a device for visitor autologon:
-1.	Create a provisioning package that:
-    1.	Configures **Runtime settings/AssignedAccess** to allow Visitor accounts.
-    1.	Optionally enrolls the device in MDM **(Runtime settings/Workplace/Enrollments)** so that it can be managed later.
-    1.	Do not create a local account
-1.	[Apply the provisioning package](hololens-provisioning.md).
-
-For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
-
-### Kiosk mode behavior changes for handling of failures
-
-Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Starting in this Windows Insider build, in case of failures, no apps will be shown in the start menu as below: 
-
-![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 ### Improvements and fixes in the update:
 - Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
