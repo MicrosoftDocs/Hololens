@@ -20,13 +20,7 @@ appliesto:
 
 # Insider preview for Microsoft HoloLens
 
-Welcome to the latest Insider Preview builds for HoloLens!  It's simple to get started and provide valuable feedback for our next major operating system update for HoloLens.
-
-Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
-
-![Windows Insider Channels explanation](images/WindowsInsiderChannels.png)
-
-For more information, see [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) on Windows Blogs.
+Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get started](hololens-insider.md#start-receiving-insider-builds) and provide valuable feedback for our next major operating system update for HoloLens.
 
 ## Windows Insider Release Notes
 
@@ -115,7 +109,8 @@ Before this build users had to launch the provisioning screen manually during OO
 
 1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
 1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page. 
-    1. If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
+
+Note: If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
 
 For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
@@ -253,6 +248,12 @@ Earlier on encountering failures in applying kiosk mode, HoloLens used to show u
 > We had a bug on the back-end that you may have encountered and this will get you back on track.
 
 On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
+
+Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
+
+![Windows Insider Channels explanation](images/WindowsInsiderChannels.png)
+
+For more information, see [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) on Windows Blogs.
 
 Then, select **Active development of Windows**, choose whether you'd like to receive **Dev Channel** or **Beta Channel** builds, and review the program terms.
 
