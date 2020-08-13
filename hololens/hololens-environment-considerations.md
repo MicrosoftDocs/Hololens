@@ -112,6 +112,9 @@ To get to the Calibration app, go to **Settings** > **System** > **Utilities**. 
 
 If someone else is going to be using your HoloLens, they should run the Calibration app first so the device is set up properly for them.
 
+### Temperature and regulatory information
+[HoloLens Regulatory](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Includes information on temperature, disposal, radio and TV interference, and more.
+
 ## See also
 
 - [Spatial mapping design](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
