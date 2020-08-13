@@ -130,7 +130,7 @@ By combining the auto-launch of provisioning from USB devices and the auto-confi
 
 Your device is now configured and will display the Provisioning Successful screen.
 
-### Wi-Fi connection and using Autopilot
+### Using Autopilot with Wi-Fi connection
 Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB C or wifi to USB C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
 
 ### Global Assigned Access – Kiosk Mode
