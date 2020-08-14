@@ -20,101 +20,71 @@ appliesto:
 One of the manageable features for HoloLens devices is using the [Settings/PageVisibilityList policiy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. HoloLens devices and Windows 10 devices have a different selection of pages within the Settings app. On this page you will find only the settings that exist on HoloLens. 
 
 ## Accounts
-
-|Settings page| URI |
-|-------------|-----|
-| Access work or school | ms-settings:workplace |
-| Email & app accounts  | ms-settings:emailandaccounts |
-| Sign-in options | ms-settings:signinoptions<br>ms-settings:signinoptions-dynamiclock |
-| Other users | ms-settings:otherusers |
+| Settings page           | URI                                            |
+|-------------------------|------------------------------------------------|
+| Sign In Options         | ms-settings:signinoptions                      |
+| Iris Enrollment       | ms-settings:signinoptions-launchirisenrollment |
+| Access work or school | ms-settings:workplace                          |
 
 ## Devices
-
-|Settings page| URI |
-|-------------|-----|
-| Devices | ms-settings:bluetooth |
-
-## Ease of Access
-
-|Settings page| URI |
-|-------------|-----|
-| Ease of Access | ms-settings:easeofaccess-audio |
-
-## Network & internet
-
-|Settings page| URI |
-|-------------|-----|
-| Proxy | ms-settings:network-proxy |
-| VPN | ms-settings:network-vpn |
-| Wi-Fi | ms-settings:network-wifi |
+| Settings page | URI                          |
+|---------------|------------------------------|
+| Bluetooth     | ms-settings:bluetooth <br> ms-settings:connecteddevices |
 
 ## Privacy
+| Settings page            | URI                                             |
+|--------------------------|-------------------------------------------------|
+| Account Info             | ms-settings:privacy-accountinfo                 |
+| App Diagnostics        | ms-settings:privacy-appdiagnostics              |
+| Background Apps        | ms-settings:privacy-backgroundapps              |
+| User movements           | ms-settings:privacy-backgroundspatialperception |
+| File system              | ms-settings:privacy-broadfilesystemaccess       |
+| Calendar                 | ms-settings:privacy-calendar                    |
+| Call History             | ms-settings:privacy-callhistory                 |
+| Contacts                 | ms-settings:privacy-contacts                    |
+| Other devices            | ms-settings:privacy-customdevices               |
+| Documents                | ms-settings:privacy-documents                   |
+| Email                    | ms-settings:privacy-email                       |
+| Diagnostics & Feedback | ms-settings:privacy-feedback                    |
+| Location                 | ms-settings:privacy-location                    |
+| Messaging                | ms-settings:privacy-messaging                   |
+| Microphone               | ms-settings:privacy-microphone                  |
+| Notifications            | ms-settings:privacy-notifications               |
+| Pictures                 | ms-settings:privacy-pictures                    |
+| Radios                   | ms-settings:privacy-radios                      |
+| Speech                   | ms-settings:privacy-speech                      |
+| Tasks                    | ms-settings:privacy-tasks                       |
+| Videos                   | ms-settings:privacy-videos                      |
+| Voice Activation       | ms-settings:privacy-voiceactivation             |
+| Camera                   | ms-settings:privacy-webcam                      |
 
-|Settings page| URI |
-|-------------|-----|
-| General | ms-settings:privacy or ms-settings:privacy-general |
-| Speech | ms-settings:privacy-speech |
-| Diagnostics & feedback | ms-settings:privacy-feedback |
-| Location | ms-settings:privacy-location |
-| Camera | ms-settings:privacy-webcam |
-| Eye tracker | ms-settings:privacy-eyetracker |
-| Microphone | ms-settings:privacy-microphone |
-| Voice activation | ms-settings:privacy-voiceactivation |
-| Notifications | ms-settings:privacy-notifications |
-| Account info | ms-settings:privacy-accountinfo |
-| Contacts | ms-settings:privacy-contacts |
-| Calendar | ms-settings:privacy-calendar |
-| Call history | ms-settings:privacy-callhistory |
-| Email | ms-settings:privacy-email |
-| Tasks | ms-settings:privacy-tasks |
-| Messaging | ms-settings:privacy-messaging |
-| Radios | ms-settings:privacy-radios |
-| Other devices | ms-settings:privacy-customdevices |
-| Background Apps | ms-settings:privacy-backgroundapps |
-| App diagnostics | ms-settings:privacy-appdiagnostics |
-| Advertising ID | ms-settings:privacy-advertisingid |
-| Documents | ms-settings:privacy-documents |
-| Pictures | ms-settings:privacy-pictures |
-| Videos | ms-settings:privacy-videos |
-| File system | ms-settings:privacy-broadfilesystemaccess |
-| Environment | N/A |
-| User movements | ms-settings:privacy-backgroundspatialperception |
+## Network & Internet
+| Settings page | URI                              |
+|---------------|----------------------------------|
+| Wi-Fi  | ms-settings:network-wifi<br>ms-settings:network-wifisettings<br>ms-settings:network-status<br>ms-settings:wifi-provisioning    |
+| VPN   | ms-settings:network-vpn          |
+| Proxy | ms-settings:network-proxy        |
 
 ## System
+| Settings page      | URI                                |
+|--------------------|------------------------------------|
+| Shared Experiences | ms-settings:crossdevice            |
+| Colors             | ms-settings:colors<br>ms-settings:personalization-colors |
+| AppsNotifications  | ms-settings:notifications          |
+| Storage            | ms-settings:storagesense           |
 
-|Settings page| URI |
-|-------------|-----|
-| About | ms-settings:about |
-| Notifications & actions |	ms-settings:notifications |
-| Storage | ms-settings:storagesense |
-| Holograms | N/A |
-| Calibration | N/A |
-| Shared experiences | ms-settings:crossdevice |
-| Colors | ms-settings:colors |
+## Time & Language
+| Settings page | URI                                           |
+|---------------|-----------------------------------------------|
+| Region        | ms-settings:regionformatting                  |
+| Language      | ms-settings:regionlanguage<br>ms-settings:regionlanguage-adddisplaylanguage<br>ms-settings:regionlanguage-setdisplaylanguage |
 
-## Time and language
-
-|Settings page| URI |
-|-------------|-----|
-| Date & time | ms-settings:dateandtime |
-| Region | ms-settings:regionformatting |
-| Language | ms-settings:regionlanguage<br/>ms-settings:regionlanguage-adddisplaylanguage<br/>ms-settings:regionlanguage-setdisplaylanguage |
-| Keyboard | ms-settings:keyboard |
-
-Will need to ask about language 
-
-## Update & security
-
-|Settings page| URI |
-|-------------|-----|
-| Windows Update | ms-settings:windowsupdate<br>ms-settings:windowsupdate-action |
-| Windows Update-Advanced options | ms-settings:windowsupdate-options |
-| Windows Update-Restart options | ms-settings:windowsupdate-restartoptions |
-| Change active hours | N/A |
-| Recovery | ms-settings:recovery |
-| Certificates | N/A |
-| Troubleshoot | ms-settings:troubleshoot |
-| For developers | ms-settings:developers |
-| Windows Insider Program | ms-settings:windowsinsider <br/>ms-settings:windowsinsider-optin |
+## Update & Security
+| Settings page                         | URI                                       |
+|---------------------------------------|-------------------------------------------|
+| Windows Insider Program               | ms-settings:windowsinsider <br>ms-settings:windowsinsider-optin          |
+| Windows Update                        | ms-settings:windowsupdate<br> ms-settings:windowsupdate-activehours  <br> ms-settings:windowsupdate-history <br> ms-settings:windowsupdate-optionalupdates |
+| Windows Update - Checks for updates | ms-settings:windowsupdate-action          |
+| Advanced Options                    | ms-settings:windowsupdate-options         |
 
 For a full list of Windows 10 Settings URIs, please visit [here](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 
