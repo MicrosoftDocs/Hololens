@@ -114,4 +114,4 @@ As long as Wi-Fi is enabled, HoloLens correlates map data with nearby Wi-Fi acce
 
 ## Related topics
 
-- [Spatial mapping design](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-design)
+- [Spatial mapping design](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
