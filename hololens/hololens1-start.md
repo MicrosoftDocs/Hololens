@@ -8,7 +8,6 @@ ms.author: v-tea
 ms.topic: article
 ms.date: 8/12/2019
 manager: jarrettr
-ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
@@ -44,12 +43,12 @@ The first time you start your HoloLens, your first task is to set up Windows Hol
 1. Connect to the internet (HoloLens guides you to select Wi-Fi network).
 
 1. Sign in to your user account. Choose between **My work or school owns it** and **I own it**.
-    - When you choose **My work or school owns it**, you sign in by using an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available, so you will need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#enroll-through-settings-app). To sign in to your device the first time by using a work or school account, follow these steps:
+    - When you choose **My work or school owns it**, you sign in by using an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available, so you will need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll). To sign in to your device the first time by using a work or school account, follow these steps:
         1. Enter your organizational account information.
         1. Accept the privacy statement.
         1. Sign in by using your Azure AD credentials. This may redirect to your organization's sign-in page.
         1. Continue setting up the device.
-    - When you choose **I own it**, you sign in by using a Microsoft account. After setup is complete, you can [manually enroll HoloLens in device management](hololens-enroll-mdm.md#enroll-through-settings-app).
+    - When you choose **I own it**, you sign in by using a Microsoft account. After setup is complete, you can [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Enter your Microsoft account information.
         1. Enter your password. If your Microsoft account requires [two-step verification (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), complete the verification process.
 

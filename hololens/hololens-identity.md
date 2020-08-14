@@ -12,7 +12,6 @@ ms.custom:
 - CSSTroubleshooting
 ms.topic: article
 ms.sitesec: library
-ms.topic: article
 ms.localizationpriority: medium
 audience: ITPro
 manager: jarrettr
