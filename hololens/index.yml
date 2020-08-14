@@ -9,7 +9,7 @@ metadata:
   ms.prod: hololens #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice # Optional; Remove if no subservice is used.
   ms.topic: landing-page # Required
-  author: todmccoy #Required; your GitHub user alias, with correct capitalization.
+  author: evmill #Required; your GitHub user alias, with correct capitalization.
   ms.author: v-todmc #Required; microsoft alias of author; optional team alias. 
   ms.date: 5/22/2020 #Required; mm/dd/yyyy format.
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
