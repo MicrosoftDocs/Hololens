@@ -83,8 +83,13 @@ One of the manageable features for HoloLens devices is using the [Settings/PageV
 | Settings page                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Windows Insider Program               | ms-settings:windowsinsider <br>ms-settings:windowsinsider-optin          |
-| Windows Update                        | ms-settings:windowsupdate<br> ms-settings:windowsupdate-activehours  <br> ms-settings:windowsupdate-history <br> ms-settings:windowsupdate-optionalupdates |
+| Windows Update                        | ms-settings:windowsupdate<br> ms-settings:windowsupdate-activehours  <br> ms-settings:windowsupdate-history <br> ms-settings:windowsupdate-optionalupdates <br><sup>1</sup>ms-settings:windowsupdate-options<br><sup>1</sup>ms-settings:windowsupdate-restartoptions |
 | Windows Update - Checks for updates | ms-settings:windowsupdate-action          |
 | Advanced Options                    | ms-settings:windowsupdate-options         |
+
+> [!NOTE]
+>  1 The following two URI do not actually take you to the Advanced options or Options page page, it will only block / show the main Windows Update page. 
+> - ms-settings:windowsupdate-options
+> - ms-settings:windowsupdate-restartoptions 
 
 For a full list of Windows 10 Settings URIs, please visit [here](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 
