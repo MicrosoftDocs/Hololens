@@ -20,13 +20,7 @@ appliesto:
 
 # Insider preview for Microsoft HoloLens
 
-Welcome to the latest Insider Preview builds for HoloLens!  It's simple to get started and provide valuable feedback for our next major operating system update for HoloLens.
-
-Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
-
-![Windows Insider Channels explanation](images/WindowsInsiderChannels.png)
-
-For more information, see [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) on Windows Blogs.
+Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get started](hololens-insider.md#start-receiving-insider-builds) and provide valuable feedback for our next major operating system update for HoloLens.
 
 ## Windows Insider Release Notes
 
@@ -34,19 +28,25 @@ If you are looking for a feature that is no longer listed here, then it is now g
 
 We'll be updating this page with new features again as we release them to Windows Insider builds.
 
-| Feature                                              | Description                                                                                   | Available in insider builds |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| Auto Eye Position Support                            | Actively finds eye positions and enables accurate hologram positioning.                       | 19041.1339+                 |
-| Certificate Viewer                                   | View user and device certificates in the Settings app.                                        | 19041.1346+                 |
-| HoloLens Policies                                    | New policies for mixed reality devices.                                                       | 19041.1349+                 |
-| Cache AAD Group membership for offline Kiosk         | Policy for how many days AAD group membership cache is allowed to be used for Kiosk mode.     | 19041.1356+                 |
-| New device restriction policies for HoloLens 2       | Device management policies enabled newly enabled for HoloLens 2.                              | 19041.1349+                 |
-| New power policies for HoloLens 2                    | Newly supported policies for power timeout settings.                                          | 19041.1349+                 |
-| Update Policies                                      | Newly enabled policies allowing control of updates.                                           | 19041.1352+                 |
-| Enabled Settings page visibility for HoloLens 2      | Policy to pick which pages are seen in Settings app.                                          | 19041.1349+                 |
-| Global Assigned Access                               | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system level.  | 19041.1356+                 |
-| Auto launch an app in multi-app kiosk                | Sets an application to launch automatically when signing into into a multiple-app kiosk mode. | 19041.1346+                 |
-| Kiosk mode behavior changes for handling of failures | Changes in how Kiosk mode failure is now handled.                                             | 19041.1356+                 |
+| Feature                                                | Description                                                                                    | Available in insider builds |
+|--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
+| [Auto Eye Position Support](hololens-insider.md#auto-eye-position-support)                              | Actively finds eye positions and enables accurate hologram positioning.                        | 19041.1339+                 |
+| [Certificate Viewer](hololens-insider.md#certificate-viewer)                                     | View user and device certificates in the Settings app.                                         | 19041.1346+                 |
+| [Install and Remove Certificates](hololens-insider.md#install-and-remove-certificates)                        | Users can install and remove certificates using the Certificate Viewer.                        | 19041.1361+                 |
+| [Auto-launch provisioning from USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE Automatically detects provisioning packages on USB drives.                                | 19041.1361+                 |
+| [Auto-confirm provisioning packages in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatically apply provisioning packages in OOBE.                                             | 19041.1361+                 |
+| [Using Autopilot with Wi-Fi connection](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Use autopilot from device Wi-Fi without need for ethernet adapter.                             | 19041.1364+                 |
+| [Global Assigned Access](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system   level. | 19041.1356+                 |
+| [Auto-launch an app in multi-app kiosk](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Sets an application to launch automatically when signing into a multiple-app kiosk   mode.     | 19041.1346+                 |
+| [Visitor Auto-logon for Kiosks](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Enables the auto-logon on Visitor accounts to be used for Kiosk modes.                         | 19041.1361+                 |
+| [Kiosk mode behavior changes for handling of failures](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Changes in how Kiosk mode failure is now handled.                                              | 19041.1356+                 |
+| [HoloLens Policies](hololens-insider.md#hololens-policies)                                      | New policies for mixed reality devices.                                                        | 19041.1349+                 |
+| [Cache AAD Group membership for offline Kiosk](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Policy for how many days AAD group membership cache is allowed to be used for Kiosk   mode.    | 19041.1356+                 |
+| [New device restriction policies for HoloLens 2](hololens-insider.md#new-device-restriction-policies-for-hololens-2)         | Device management policies enabled newly enabled for HoloLens 2.                               | 19041.1349+                 |
+| [New power policies for HoloLens 2](hololens-insider.md#new-power-policies-for-hololens-2)                      | Newly supported policies for power timeout settings.                                           | 19041.1349+                 |
+| [Update Policies](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | Newly enabled policies allowing control of updates.                                            | 19041.1352+                 |
+| [Enabled Settings page visibility for HoloLens 2](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | Policy to pick which pages are seen in Settings app.                                           | 19041.1349+                 |
+| [Improvements and fixes in the update](hololens-insider.md#improvements-and-fixes-in-the-update)                   | Additional fixes in the update.                                                                | 19041.1361+                 |
 
 ### Auto Eye Position Support
 
@@ -70,10 +70,7 @@ For experiences that require eye gaze data or very precise hologram positioning,
 
 ### Certificate Viewer
 
-In Windows Insider build 19041.1346+ we are adding a Certificate Viewer in the HoloLens 2 Settings app. This feature provides a simple and user-friendly way to verify certificates on your device. To find a specific certificate quickly there are options to sort by name, store or expiration date. Users may also directly search for a certificate. With the new Certificate Viewer, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant.  To view more about an individual certificate select the certificate and click on Info.
-
-> [!NOTE]
-> There is a known limitation on non-US language localization that we are working on resolving in subsequent Windows Insider releases.
+In Windows Insider build 19041.1346+ we are adding a Certificate Viewer in the HoloLens 2 Settings app. Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User;  all other users can only install into Current User. Users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must be also be removed by the same mechanism.
 
 -	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
 -	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
@@ -83,8 +80,58 @@ To view certificates, go to **Settings > Update & Security > Certificates**.
 
 ![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
 
+### Install and Remove Certificates
+Starting in Windows Insider release 19041.1361+ you can install and remove certificates directly on HoloLens 2, through the Settings app. Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User;  all other users can only install into Current User. Users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must be also be removed by the same mechanism.
 
+#### To install a certificate using the certificate viewer: 
+1. Navigate to **Settings App** -> **Update and Security** -> **Certificates**, and select **Install a Certificate**. 
+1. Select a .cer file from the File Picker experience.
+1. Select Local Machine (or where you have your certificate.)
+1. Select **Root** as the Certificate Store (or which store you’re like to place your certificate.) 
+1. Click **Install**.
 
+Certificate should now be installed on the device.
+
+#### To remove a certificate using the certificate viewer: 
+1. Navigate to **Settings App** -> **Update and Security** -> **Certificates**.
+1. Search for the certificate by name in the search box.
+1. Select the certificate.
+1. Click **Remove**
+1. Select Yes when prompted, and when asked for confirmation.
+
+![Picture showing how to use Certificate UI to install a certificate](images/hololens-install-certificate.jpg)
+
+#### Known Issues 
+We are investigating an issue where during the installation flow, after selecting a certificate from File Picker, the installation dialog UI doesn’t show the selected certificate file although it has been selected. Once you select the file, you can proceed with the installation even if you don’t see the file appearing in the dialog. 
+
+### Auto-launch provisioning from USB
+Before this build users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
+
+1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
+1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page. 
+
+Note: If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
+
+For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+
+### Auto-confirm provisioning packages in OOBE
+When the provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
+
+### Automatic provisioning without using UI
+By combining the auto-launch of provisioning from USB devices and the auto-confirmation of provisioning packages, a user can provision HoloLens 2 devices automatically without using the device's UI or even wearing the device. You may continue to use the same USB drive and provisioning package for multiple devices. This is useful for deploying multiple devices at once in the same area. 
+
+1. [Create a Provisioning Package](hololens-provisioning.md) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
+1. Copy the package to a USB storage drive.
+1. [Flash your HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) to [19041.1361 or newer build](https://aka.ms/hololens2previewdownload). 
+1. When [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8) has completed flashing your device unplug your USB-C cable. 
+1. Plug in your USB drive to the device.
+1. When the HoloLens 2 device boots into OOBE it will automatically detect the provisioning package on the USB drive and launch the provisioning page.
+1. After 10 seconds the device will automatically apply the provisioning package. 
+
+Your device is now configured and will display the Provisioning Successful screen.
+
+### Using Autopilot with Wi-Fi connection
+Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB C or wifi to USB C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
 
 ### Tenantlockdown CSP and Autopilot
 HoloLens 2 devices now support TenantLockdown CSP as of Windows Insider build 19041.1356 +. When TenantLockdown CSP’s RequireNetworkInOOBE is set to true on a HoloLens 2 device, after enrollment with the tenant for the first time and the policiy is applied, the device can only be enrolled in that tenant any time the device is reset or re-flashed. The device will only allow enrollment through Autopilot; OOBE will wait indefinitely until Autopilot profile is downloaded from the tenant. No local user creation or Active Azure Directory Join via runtime provisioning will be allowed in this case.
@@ -106,6 +153,37 @@ Refer to the following screenshot as an example setting this via Intune.
 After flashing the device, OOBE will wait indefinitely for Autopilot profile to download and following UX will be presented. To get out of this situation, device must be enrolled again using Autopilot and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are considered inapplicable. 
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
+
+### Global Assigned Access – Kiosk Mode
+This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
+
+### Automatic launch of an application in multiple-app kiosk mode 
+Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
+
+Application is automatically launched when user signs-in. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### Visitor Auto logon for Kiosks
+This new feature enables the auto logon on Visitor accounts to be used for Kiosk modes. 
+
+For a non-AAD configuration, to configure a device for visitor autologon:
+1.	Create a provisioning package that:
+    1.	Configures **Runtime settings/AssignedAccess** to allow Visitor accounts.
+    1.	Optionally enrolls the device in MDM **(Runtime settings/Workplace/Enrollments)** so that it can be managed later.
+    1.	Do not create a local account
+1.	[Apply the provisioning package](hololens-provisioning.md).
+
+For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+
+### Kiosk mode behavior changes for handling of failures
+
+Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Starting in this Windows Insider build, in case of failures, no apps will be shown in the start menu as below: 
+
+![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
@@ -146,7 +224,8 @@ Steps to use this policy correctly:
 Newly enabled policies that allow for more management options of HoloLens 2 devices. 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
-- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
 
 ### New power policies for Hololens 2
 These newly added policies allow admins to control power states, such as idle timeout. To read more about each individual policy please click the link for that policy.
@@ -174,28 +253,28 @@ We’ve now enabled a policy that allows IT Admins to either prevent specific pa
  
 ![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
 
-### Global Assigned Access – Kiosk Mode
-This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
-
-### Automatic launch of an application in multiple-app kiosk mode 
-Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
-
-Application is automatically launched when user signs-in. 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### Kiosk mode behavior changes for handling of failures
-
-Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Starting in this Windows Insider build, in case of failures, no apps will be shown in the start menu as below: 
-
-![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+### Improvements and fixes in the update:
+- Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
+- More screens in OOBE  are now in dark mode.
+- Learn more content should point to the latest Privacy Statement online.
+- Addressed and issue where users could not provision VPN profiles through provisioning packages.
 
 ## Start receiving Insider builds
 
+> [!NOTE]
+> If you haven’t updated recently, please reboot your device to update state and get the latest build.
+> -	The “Reboot device” voice command works well. 
+> -	You can also choose the restart button in Settings/Windows Insider Program.
+>
+> We had a bug on the back-end that you may have encountered and this will get you back on track.
+
 On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
+
+Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
+
+![Windows Insider Channels explanation](images/WindowsInsiderChannels.png)
+
+For more information, see [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) on Windows Blogs.
 
 Then, select **Active development of Windows**, choose whether you'd like to receive **Dev Channel** or **Beta Channel** builds, and review the program terms.
 
