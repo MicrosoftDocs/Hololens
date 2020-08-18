@@ -58,6 +58,9 @@ Make sure that [this list](hololens-offline.md) of endpoints are allowed on your
 **(Please note, if you don't network have network speeds of at least 1.5Mbps, Remote Assist will still work. However, quality may suffer).**
 1. Make sure that these ports and URLs are allowed on your network firewall. This will enable Microsoft Teams to function. The latest list can be found [here](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
+- Learn more about the specific [Network Requirements for Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements). 
+- Learn more about how to [prepare your organization's network for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/prepare-network)
+
 ### Guides Specific Network Requirements
 
 Guides only require network access to download and use the app.
