@@ -72,7 +72,7 @@ Operating system updates are delivered automatically. You can also test early re
 
 ### What guidance is available for developers to apply dark mode design principles?
 
-Users will have the best experience when white backgrounds can be avoided. Dark mode is a design principle used by apps to use black backgrounds or dark colors. The system settings default to dark mode and can be adjusted by going to **Settings** ➔ **System** ➔ **Color**.
+Users will have the best experience when avoiding white backgrounds. Dark mode is a design principle used by apps to use black or dark colored backgrounds. The system settings default to dark mode and can be adjusted by going to **Settings** ➔ **System** ➔ **Color**.
 
 Developers are advised to follow dark mode design guidance:
 
