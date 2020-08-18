@@ -107,7 +107,7 @@ Our team is currently working on a fix. In the meantime, you can use the followi
 1. Give the project a name (such as "HoloLensDeploymentFix") and make sure the Framework is set to at least .NET Framework 4.5, then Select **OK**.
 1. Right-click on the **References** node in Solution Explorer and add the following references (select to the **Browse** section and select **Browse**):
 
-    ```CMD
+    ```console
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
@@ -122,7 +122,7 @@ Our team is currently working on a fix. In the meantime, you can use the followi
 1. Locate and select both files in Solution Explorer (they should be at the bottom of the list of files) and change **Copy to Output Directory** in the **Properties** window to **Copy always**.
 1. At the top of the file, add the following to the existing list of `using` statements:
 
-    ```CMD
+    ```console
     using Microsoft.Tools.Deploy;
     using System.Net;
     ```
