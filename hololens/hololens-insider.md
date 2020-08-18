@@ -135,23 +135,35 @@ Your device is now configured and will display the Provisioning Successful scree
 Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB C or wifi to USB C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
 
 ### Tenantlockdown CSP and Autopilot
-HoloLens 2 devices now support TenantLockdown CSP as of Windows Insider build 19041.1366+. When TenantLockdown CSP’s RequireNetworkInOOBE is set to true on a HoloLens 2 device, after enrollment with the tenant for the first time and the policiy is applied, the device can only be enrolled in that tenant any time the device is reset or re-flashed. The device will only allow enrollment through Autopilot; OOBE will wait indefinitely until Autopilot profile is downloaded from the tenant. No local user creation or Active Azure Directory Join via runtime provisioning will be allowed in this case.
+HoloLens 2 devices now support TenantLockdown CSP as of Windows Insider build 19041.1366+. 
+
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP enables HoloLens 2 to be tied to MDM enrollment using Autopilot only. Once TenantLockdown CSP’s RequireNetworkInOOBE node is set to either true or false (initially set) value on HoloLens 2, that value remains on the device despite re-flashing, OS updates, etc. 
+
+Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, OOBE waits indefinitely for Autopilot profile to be successfully downloaded and applied, after network connectivity. 
+
+Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, following operations are disallowed in OOBE: 
+- Creating local user using runtime provisioning 
+- Performing AAD join operation via runtime provisioning 
+- Selecting who owns the device in OOBE experience 
 
 #### How to set this using Intune? 
 1. Create a custom OMA URI device configuration profile and specify true for RequireNetworkInOOBE node as shown below.
-1. Assign this device configuration profile to same device group of which previously registered HoloLens devices are member of (but not enrolled yet using Autopilot). 
-1. When those devices are enrolled using Autopilot first time, they will also receive this device configuration profile and set RequireNetworkInOOBE to true.
-
-Refer to the following screenshot as an example setting this via Intune.
-
 ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
+1. Create a group and assign the device configuration profile to that device group. 
+1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.  
+
+Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be active.
 
 #### How to unset TenantLockdown’s RequireNetworkInOOBE on HoloLens 2 using Intune? 
-1. Exclude the HoloLens 2 from the device group to which the device configuration created above was applicable. 
-1. Once that device configuration is undone on HoloLens 2, restrictions introduced by TenantLockdown CSP will not be applicable anymore on that HoloLens 2 device. 
+1. Remove the HoloLens 2 from the device group to which the device configuration created above was previously assigned. 
+1. Create a custom OMA URI based device configuration profile and specify false for RequireNetworkInOOBE as shown below. 
+OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
+1. Create a group and assign the device configuration profile to that device group. 
+1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.
 
 #### What would happen during OOBE, if Autopilot profile is unassigned on a HoloLens after TenantLockdown was set to true? 
-After flashing the device, OOBE will wait indefinitely for Autopilot profile to download and following UX will be presented. To get out of this situation, device must be enrolled again using Autopilot and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are considered inapplicable. 
+OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed. 
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
 
