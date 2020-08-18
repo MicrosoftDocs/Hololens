@@ -53,7 +53,7 @@ Workarounds:
 
 ## Known issues for HoloLens 2 devices
 
-### Keyboard won’t switch to special characters
+### Keyboard does not switch to special characters
 
 There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters. 
 
