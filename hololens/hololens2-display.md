@@ -25,7 +25,7 @@ For HoloLens 2, take the following steps to ensure the highest visual quality of
 * **Increase brightness of the display.** Holograms look best when the display is at its brightest level.
 * **Bring visor closer to your eyes.** Swing the visor down to the closest position to your eyes.
 * **Shift visor down.** Try moving the brow pad on your forehead down, which will result in the visor moving down closer to your nose.
-* **Run eye calibration.** The display uses your interpupillary distance (IPD) and eye gaze to optimize images on the display. If you don't run eye calibration, the image quality may be made worse. To run eye calibration, go to **Settings** ➔ **System** ➔ **Calibration** ➔ **Run eye calibration**.
+* **Run eye calibration.** The display uses your interpupillary distance (IPD) and eye gaze to optimize images on the display. If you don't run eye calibration, the image quality may be made worse. To run eye calibration, go to **Settings** > **System** > **Calibration** > **Run eye calibration**.
 
 ## FAQ
 
@@ -72,11 +72,14 @@ Operating system updates are delivered automatically. You can also test early re
 
 ### What guidance is available for developers to apply dark mode design principles?
 
-Microsoft is preparing developer guidance on dark mode design principles. The guidance will soon be available in the [developer documentation](https://docs.microsoft.com/windows/mixed-reality/). A summary of the advice:
+Users will have the best experience when avoiding white backgrounds. Dark mode is a design principle used by apps to use black or dark colored backgrounds. The system settings default to dark mode and can be adjusted by going to **Settings** > **System** > **Color**.
 
-* Use dark colors for the UI background
-* Use semibold or bold font weights
-* Use the Mixed Reality Toolkit's HolographicBackplate material
+Developers are advised to follow dark mode design guidance:
+
+* [Developer design guidelines for HoloLens displays](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [Recommended font sizes](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+
+When a hologram requires a white background, keep the size of the hologram smaller than the display's full field of view. This size allows users to put the hologram in the center of the display.
 
 ### How do you clean a HoloLens 2 display?
 
