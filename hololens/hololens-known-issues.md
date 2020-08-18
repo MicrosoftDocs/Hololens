@@ -53,6 +53,19 @@ Workarounds:
 
 ## Known issues for HoloLens 2 devices
 
+### Keyboard won’t switch to special characters
+
+There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 does not change to special characters. 
+
+Work-arounds:
+-	Close the keyboard and reopen it by tapping the text field.
+-	Incorrectly enter your password. When the keyboard is relaunched it will work as expected.
+-	If entering numbers you may press and hold certain keys to open an expanded menu.
+-	Using a USB keyboard. 
+
+This does not affect:
+- Users who choose to use a personal account.
+
 ### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with a Insider build
 
 This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program. 
