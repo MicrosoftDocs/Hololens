@@ -148,6 +148,7 @@ Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens
 
 #### How to set this using Intune? 
 1. Create a custom OMA URI device configuration profile and specify true for RequireNetworkInOOBE node as shown below.
+OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
 1. Create a group and assign the device configuration profile to that device group. 
 1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.  
