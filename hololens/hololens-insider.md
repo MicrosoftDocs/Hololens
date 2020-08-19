@@ -100,7 +100,7 @@ Certificate should now be installed on the device.
 1. Click **Remove**
 1. Select Yes when prompted, and when asked for confirmation.
 
-![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg.jpg)
+![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
 
 #### Known Issues 
 We are investigating an issue where during the installation flow, after selecting a certificate from File Picker, the installation dialog UI doesn’t show the selected certificate file although it has been selected. Once you select the file, you can proceed with the installation even if you don’t see the file appearing in the dialog. 
