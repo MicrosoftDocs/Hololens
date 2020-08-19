@@ -102,6 +102,8 @@ Certificate should now be installed on the device.
 
 ![Picture showing how to use Certificate UI to install a certificate](images/hololens-install-certificate.jpg)
 
+New picture goes here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 #### Known Issues 
 We are investigating an issue where during the installation flow, after selecting a certificate from File Picker, the installation dialog UI doesn’t show the selected certificate file although it has been selected. Once you select the file, you can proceed with the installation even if you don’t see the file appearing in the dialog. 
 
