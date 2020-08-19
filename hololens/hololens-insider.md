@@ -24,9 +24,7 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-If you are looking for a feature that is no longer listed here, then it is now generally available. Please review the [release notes](hololens-release-notes.md) to see what build has the feature(s) you are excited for. Make sure to [update your HoloLens](hololens-update-hololens.md) to get all the latest features.
-
-We'll be updating this page with new features again as we release them to Windows Insider builds.
+Here is the list of the upcoming features that you can try out today in our Windows Insider build.
 
 | Feature                                                | Description                                                                                    | Available in insider builds |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
@@ -79,7 +77,7 @@ In Windows Insider build 19041.1346+ we are adding a Certificate Viewer in the H
 
 To view certificates, go to **Settings > Update & Security > Certificates**.
 
-![Certificate viewer in the Settings app](images/hololens-certificate-viewer.png)
+![Certificate viewer in the Settings app](images/certificate-viewer-device.jpg)
 
 ### Install and Remove Certificates
 Starting in Windows Insider release 19041.1361+ you can install and remove certificates directly on HoloLens 2, through the Settings app. Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User;  all other users can only install into Current User. Users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must be also be removed by the same mechanism.
@@ -100,7 +98,7 @@ Certificate should now be installed on the device.
 1. Click **Remove**
 1. Select Yes when prompted, and when asked for confirmation.
 
-![Picture showing how to use Certificate UI to install a certificate](images/hololens-install-certificate.jpg)
+![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
 
 #### Known Issues 
 We are investigating an issue where during the installation flow, after selecting a certificate from File Picker, the installation dialog UI doesn’t show the selected certificate file although it has been selected. Once you select the file, you can proceed with the installation even if you don’t see the file appearing in the dialog. 
