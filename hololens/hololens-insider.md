@@ -24,9 +24,7 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-If you are looking for a feature that is no longer listed here, then it is now generally available. Please review the [release notes](hololens-release-notes.md) to see what build has the feature(s) you are excited for. Make sure to [update your HoloLens](hololens-update-hololens.md) to get all the latest features.
-
-We'll be updating this page with new features again as we release them to Windows Insider builds.
+Read all about our Windows Insider features here. We’re excited to share our upcoming features and improvements!
 
 | Feature                                                | Description                                                                                    | Available in insider builds |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
