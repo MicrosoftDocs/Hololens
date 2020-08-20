@@ -199,13 +199,13 @@ Earlier on encountering failures in applying kiosk mode, HoloLens used to show u
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
-### Installing Apps from a web page
+### Installing apps from a web page
 
 Now in Windows Insider builds 19041.1366+ users can install an app directly from a web server. 
 
 #### How to set this up:
-1.	Ensure your app is correctly configured to install 
-1.	Follow these [steps to enable this on a web page]( https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage). 
+1.	Ensure your app is correctly configured to install.
+1.	Follow these [steps to enable this on a web page](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage). 
 1.	Pick a certificate deployment method. 
     1.	[Provisioning Packages](hololens-provisioning.md) can be applied to local devices.
     1.	MDM can be used to [apply certificates with device configurations](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
