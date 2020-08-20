@@ -40,7 +40,7 @@ You may need to upgrade your HoloLens (1st gen) device to Windows Holographic fo
 Make sure you have the required licensing and device. Updated licensing and product requirements can be found [here](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements).
 
 1. [Remote Assist License](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
-    1. Or a [Remote Assist trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+    1. Or you may try a [Remote Assist trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
 1. [Teams Freemium/Teams](https://products.office.com/microsoft-teams/free)
 1. [Azure Active Directory (Azure AD) License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 
