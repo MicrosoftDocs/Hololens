@@ -55,12 +55,14 @@ Linking accounts does not separate the user data created on the device, such as 
 
 ### Setting up multi-user support (AAD only)
 
-> [!NOTE]
-> **HoloLens (1st gen)** began supporting multiple AAD users in the [Windows 10 April 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) as part of [Windows Holographic for Business](hololens-upgrade-enterprise.md).
-
 HoloLens supports multiple users from the same AAD tenant. To use this feature, you must use an account that belongs to your organization to set up the device. Subsequently, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.  
 
 All users can use the apps installed on the device. However, each user has their own app data and preferences. Removing an app from the device removes it for all users.  
+
+Devices set up with AAD accounts will not allow signing in to the device with a Microsoft Account. All subsequent accounts used must be AAD accounts from the same tenant as the device. You may still [sign in using a Microsoft Account to apps](hololens-identity.md#setting-up-multi-user-support-aad-only) that support it (such as the Microsoft Store). To change from using AAD accounts to Microsoft Accounts for signing in to the device, you must [reflash the device](hololens-recovery.md#clean-reflash-the-device).
+
+> [!NOTE]
+> **HoloLens (1st gen)** began supporting multiple AAD users in the [Windows 10 April 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) as part of [Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
 ## Removing users
 
@@ -68,7 +70,7 @@ You can remove a user from the device by going to **Settings** > **Accounts** > 
 
 ## Using single sign-on within an app
 
-As an app developer, you can take advantage of linked identities on HoloLens by using the [Windows Account Manager APIs](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core), just as you would on other Windows devices. Some code samples for these APIs are available [here](https://go.microsoft.com/fwlink/p/?LinkId=620621).
+As an app developer, you can take advantage of linked identities on HoloLens by using the [Windows Account Manager APIs](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core), just as you would on other Windows devices. Some code samples for these APIs are available on GitHub: [Web account management sample](https://go.microsoft.com/fwlink/p/?LinkId=620621).
 
 Any account interrupts that might occur, such as requesting user consent for account information, two-factor authentication, and so forth, must be handled when the app requests an authentication token.
 
