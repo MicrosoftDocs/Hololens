@@ -217,7 +217,7 @@ Now in Windows Insider builds 19041.1366+ users can install an app directly from
 
 The app will now install to the device. To find the app open the **Start menu** and select the **All apps** button to find your app. 
 
--	For help troubleshooting this installation method please visit [troubleshoot app installer issues](https://docs.microsoft.com/ windows/msix/app-installer/troubleshoot-appinstaller-issues). 
+-	For help troubleshooting this installation method please visit [troubleshoot app installer issues](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues). 
 
 > [!NOTE]
 > UI during the update process is not supported. So the ShowPrompt option on [this page](https://docs.microsoft.com/windows/msix/app-installer/update-settings) and related options are not supported.
