@@ -59,7 +59,7 @@ HoloLens supports multiple users from the same AAD tenant. To use this feature, 
 
 All users can use the apps installed on the device. However, each user has their own app data and preferences. Removing an app from the device removes it for all users.  
 
-AADs accounts do not have multi-user support for MSA accounts as they are not a part of the same AAD tenant. You may still use a personal MSA account for apps (such as the Store) but not to sign in once the device has been set up with an AAD account, see [linked accounts](hololens-identity.md#setting-up-multi-user-support-aad-only). It is not possible to have both a sign in for both an AAD and MSA user. If you need to change your sign-in identity type you will have to [reflash the device](hololens-recovery.md#clean-reflash-the-device).
+Devices set up with AAD accounts will not allow signing in to the device with a Microsoft Account. All subsequent accounts used must be AAD accounts from the same tenant as the device. You may still [sign in using a Microsoft Account to apps](hololens-identity.md#setting-up-multi-user-support-aad-only) that support it (such as the Microsoft Store). To change from using AAD accounts to Microsoft Accounts for signing in to the device, you must [reflash the device](hololens-recovery.md#clean-reflash-the-device).
 
 > [!NOTE]
 > **HoloLens (1st gen)** began supporting multiple AAD users in the [Windows 10 April 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) as part of [Windows Holographic for Business](hololens-upgrade-enterprise.md).
