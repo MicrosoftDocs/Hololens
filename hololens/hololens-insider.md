@@ -199,6 +199,29 @@ Earlier on encountering failures in applying kiosk mode, HoloLens used to show u
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
+### Installing Apps from a web page
+
+Now in Windows Insider builds 19041.1366+ users can install an app directly from a web server. 
+
+#### How to set this up:
+1.	Ensure your app is correctly configured to install 
+1.	Follow these [steps to enable this on a web page]( https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage). 
+1.	Pick a certificate deployment method. 
+    1.	[Provisioning Packages](hololens-provisioning.md) can be applied to local devices.
+    1.	MDM can be used to [apply certificates with device configurations](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+    1.	Use the on device [Certificate Installer](hololens-insider.md#install-and-remove-certificates). 
+
+#### End User Experience:
+1.	User receives and installs certificate to the device using a method previously chosen above. 
+1.	User visits the URL created from the step above.
+
+The app will now install to the device. To find the app open the **Start menu** and select the **All apps** button to find your app. 
+
+-	For help troubleshooting this installation method please visit [troubleshoot app installer issues](https://docs.microsoft.com/ windows/msix/app-installer/troubleshoot-appinstaller-issues).
+
+>	[!NOTE] 
+> UI during the update process is not supported. So the ShowPrompt option on [this page](https://docs.microsoft.com/windows/msix/app-installer/update-settings) and related options are not supported.  
+
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
 
