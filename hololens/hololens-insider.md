@@ -91,7 +91,7 @@ Certificate installation currently supports .cer and .crt files. Device Owners c
 The certificate should now be installed on the device.
 
 #### To remove a certificate: 
-1. Navigate to **Settings App > Update and Security > **Certificates**.
+1. Navigate to **Settings App > Update and Security > Certificates**.
 1. Search for the certificate by name in the search box.
 1. Select the certificate.
 1. Click **Remove**
