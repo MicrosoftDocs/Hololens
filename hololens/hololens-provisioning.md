@@ -169,7 +169,7 @@ HoloLens 2 devices on build [19041.1103](hololens-release-notes.md#windows-holog
 > [!NOTE]
 > If the device was purchased before August 2016, you will need to sign in to the device by using a Microsoft account, get the latest operating system update, and then reset the operating system in order to apply the provisioning package.
 
-### Apply a provisioning package to HoloLens after setup
+## Apply a provisioning package to HoloLens after setup
 
 > [!NOTE]
 > These steps apply only toWindows 10, version 1809.
