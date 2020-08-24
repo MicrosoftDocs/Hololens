@@ -26,9 +26,9 @@ If you plan on using Intune as your MDM,  [here](https://docs.microsoft.com/intu
 
 ## Identify the licenses needed for your scenario and products
 
-### HoloLens Licenses Requirements
+### HoloLens (1st gen) Licenses Requirements
 
-You may need to upgrade your HoloLens 1st Gen Device to Windows Holographic for Business. (See [HoloLens commercial features](holoLens-commercial-features.md#feature-comparison-between-editions) to determine if you need to upgrade).
+You may need to upgrade your HoloLens (1st gen) device to Windows Holographic for Business. (See [HoloLens commercial features](holoLens-commercial-features.md#feature-comparison-between-editions) to determine if you need to upgrade).
 
  If so, you will need to do the following:
 
@@ -40,6 +40,7 @@ You may need to upgrade your HoloLens 1st Gen Device to Windows Holographic for 
 Make sure you have the required licensing and device. Updated licensing and product requirements can be found [here](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements).
 
 1. [Remote Assist License](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
+    1. Or try a [Remote Assist trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
 1. [Teams Freemium/Teams](https://products.office.com/microsoft-teams/free)
 1. [Azure Active Directory (Azure AD) License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 
