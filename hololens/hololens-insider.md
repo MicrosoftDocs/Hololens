@@ -260,8 +260,10 @@ These update policies are now enabled on HoloLens 2 devices:
 
 ### Enabled Settings page visibility for HoloLens 2
 We’ve now enabled a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. To learn how to fully customize this feature click the link below.
- 
+
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+
+To learn which page settings you can customize on HoloLens 2, please visit our [Settings URIs page](settings-uri-list.md). 
  
 ![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
 
