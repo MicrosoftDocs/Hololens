@@ -269,7 +269,8 @@ We’ve now enabled a policy that allows IT Admins to either prevent specific pa
 - Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
 - More screens in OOBE  are now in dark mode.
 - Learn more content should point to the latest Privacy Statement online.
-- Addressed and issue where users could not provision VPN profiles through provisioning packages.
+- Addressed an issue where users could not provision VPN profiles through provisioning packages.
+- Addressed an issue that prevented a HoloLens device from showing up in File Explorer over Media Transfer Protocol (MTP) when the device is set up as a [single-app kiosk](hololens-kiosk.md). Note that MTP (and USB connection in general) can still be disabled using the [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) policy.
 
 ## Start receiving Insider builds
 
