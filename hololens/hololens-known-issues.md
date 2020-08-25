@@ -53,6 +53,20 @@ Workarounds:
 
 ## Known issues for HoloLens 2 devices
 
+### Keyboard does not switch to special characters
+
+There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters. 
+
+Work-arounds:
+-	Close the keyboard and reopen it by tapping the text field.
+-	Incorrectly enter your password. When the keyboard is relaunched next time it will then work as expected.
+- Web Authentication, close the keyboard and select **Sign in from another device**. 
+-	If entering only numbers, a user may press and hold certain keys to open an expanded menu.
+-	Using a USB keyboard.
+
+This does not affect:
+- Users who choose to use a personal account.
+
 ### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with a Insider build
 
 This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program. 
@@ -93,7 +107,7 @@ Our team is currently working on a fix. In the meantime, you can use the followi
 1. Give the project a name (such as "HoloLensDeploymentFix") and make sure the Framework is set to at least .NET Framework 4.5, then Select **OK**.
 1. Right-click on the **References** node in Solution Explorer and add the following references (select to the **Browse** section and select **Browse**):
 
-    ```CMD
+    ```console
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
@@ -108,7 +122,7 @@ Our team is currently working on a fix. In the meantime, you can use the followi
 1. Locate and select both files in Solution Explorer (they should be at the bottom of the list of files) and change **Copy to Output Directory** in the **Properties** window to **Copy always**.
 1. At the top of the file, add the following to the existing list of `using` statements:
 
-    ```CMD
+    ```console
     using Microsoft.Tools.Deploy;
     using System.Net;
     ```
