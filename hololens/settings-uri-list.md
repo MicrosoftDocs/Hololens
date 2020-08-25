@@ -5,7 +5,7 @@ author: evmill
 ms.author: v-evmill
 ms.date: 8/1/2020
 ms.topic: article
-keywords: hololens, hololens 2, assigned access, kiosk
+keywords: hololens, hololens 2, assigned access, kiosk, settings page
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -17,7 +17,7 @@ appliesto:
 
 # Settings URIs
 
-One of the manageable features for HoloLens devices is using the [Settings/PageVisibilityList policiy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. HoloLens devices and Windows 10 devices have a different selection of pages within the Settings app. On this page you will find only the settings that exist on HoloLens. 
+One of the manageable features for HoloLens devices is using the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. HoloLens devices and Windows 10 devices have a different selection of pages within the Settings app. On this page you will find only the settings that exist on HoloLens. 
 
 ## Accounts
 | Settings page           | URI                                            |
@@ -70,7 +70,7 @@ One of the manageable features for HoloLens devices is using the [Settings/PageV
 |--------------------|------------------------------------|
 | Shared Experiences | ms-settings:crossdevice            |
 | Colors             | ms-settings:colors<br>ms-settings:personalization-colors |
-| AppsNotifications  | ms-settings:notifications          |
+| Notifications & actions  | ms-settings:notifications          |
 | Storage            | ms-settings:storagesense           |
 
 ## Time & Language
@@ -88,7 +88,7 @@ One of the manageable features for HoloLens devices is using the [Settings/PageV
 | Advanced Options                    | ms-settings:windowsupdate-options         |
 
 > [!NOTE]
->  1 The following two URI do not actually take you to the Advanced options or Options page page, it will only block / show the main Windows Update page. 
+>  1 The following two URI do not actually take you to the Advanced options or Options page, they will only block / show the main Windows Update page. 
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
