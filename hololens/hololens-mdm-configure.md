@@ -48,7 +48,7 @@ For more details on proxy settings for Windows 10, see [NetworkProxy CSP](https:
 ### VPN
 Organizations often use a VPN to control access to apps and resources on their company’s intranet. HoloLens 2 supports SSL VPN connections, which require a downloadable plugin from the Microsoft Store and are specific to the VPN vendor of your choice. 
 - Read more about [VPN on HoloLens](hololens-network.md#vpn).
-- For more details about VPN profiles, see the [VPNv2 CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/vpnv2-csp).
+- For more details about VPN profiles, see the [VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp).
 
 ### Deploy and manage apps
 Using Intune, you can add apps to your devices running Windows Holographic for Business. An MDM solution enables IT decision-makers and administrators to privately auto-install (push) their in-house, line-of-business apps, or purchase apps through the store for a group of users. There are many ways to deploy apps, including:
