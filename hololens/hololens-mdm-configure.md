@@ -19,7 +19,7 @@ appliesto:
 
 There are numerous different settings you can manage via MDM. Using Intune devices can be grouped together and configurations can be deployed to those groups of users or devices. Apps can also be deployed and managed, setting up devices to connect to your network, as well as configuring updates to occur at the time desired and on the update ring needed. 
 
-## How to manage via Intune:
+## How to manage via Intune
 
 ### Device categories and groups
 Using Intune, you can create device categories to automatically add devices to groups based on categories that you create, such as Engineering, Medical, Developers, and so on. The idea is to make it easier to manage your devices running Windows Holographic for Business.
