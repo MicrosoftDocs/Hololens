@@ -5,10 +5,10 @@
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"> 
     <Profiles> 
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
+            <!--specify AUMIDs and other nodes as used in example above --> 
         </Profile> 
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
+            <!--specify AUMIDs and other nodes as used in example above --> 
         </Profile> 
     </Profiles> 
     <Configs> 
