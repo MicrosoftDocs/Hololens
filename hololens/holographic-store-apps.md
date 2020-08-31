@@ -53,13 +53,15 @@ To update an app you have installed from the Microsoft Store app you can also up
 1. Look to the top right of the Store app. 
 1. Select the **. . .** or “See more” button.
 
-
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft Store app screenshot.](images/store-update-1.png)
 
 1. Select **Downloads and updates**.
 If your device has previously identified updates you see a down arrow and a number.
 1. Select **Get updates**. Your device will now search for updates and set them to download and install. 
  
-
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft Store app screenshot of getting updates..](images/store-update-2.png.jpg)
 
 ## Uninstall apps
 
