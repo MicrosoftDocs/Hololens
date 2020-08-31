@@ -63,6 +63,11 @@ If your device has previously identified updates you see a down arrow and a numb
    > [!div class="mx-imgBorder"]
    > ![Microsoft Store app screenshot of getting updates..](images/store-update-2.png.jpg)
 
+> [!NOTE]
+> If the apps on your device were distrubted by your organization they can be updated through the same commercial app management methods. If this applies to your situation, read more via our [overview of commercial app deployment.](app-deploy-overview.md)
+>
+> If you would like to update a custom app that has been sideloaded or deployed, you will need to use the same method with the updated version of your app. To learn more about installing and running custom apps, read [custom holographic applications](holographic-custom-apps.md).
+
 ## Uninstall apps
 
 There are two ways to uninstall applications.  You can uninstall applications through the Microsoft Store or Start menu.
