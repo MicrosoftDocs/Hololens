@@ -145,20 +145,27 @@ Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens
 #### How to set this using Intune? 
 1. Create a custom OMA URI device configuration profile and specify true for RequireNetworkInOOBE node as shown below.
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
-> [!div class="mx-imgBorder"]
-> ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
+
 1. Create a group and assign the device configuration profile to that device group. 
+
 1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.  
 
 Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be active.
 
 #### How to unset TenantLockdown’s RequireNetworkInOOBE on HoloLens 2 using Intune? 
 1. Remove the HoloLens 2 from the device group to which the device configuration created above was previously assigned. 
+
 1. Create a custom OMA URI based device configuration profile and specify false for RequireNetworkInOOBE as shown below. 
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
-> [!div class="mx-imgBorder"]
-> ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
+
 1. Create a group and assign the device configuration profile to that device group. 
+
 1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.
 
 Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be inactive. 
