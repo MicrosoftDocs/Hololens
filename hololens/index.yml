@@ -84,7 +84,7 @@ landingContent:
             url: hololens2-autopilot.md
           - text: Application management overview
             url: app-deploy-overview.md
-          - text: Microsoft Store for Business
+          - text: Intune & Company Portal
             url: app-deploy-intune.md
           - text: Microsoft Store for Business
             url: app-deploy-store-business.md
