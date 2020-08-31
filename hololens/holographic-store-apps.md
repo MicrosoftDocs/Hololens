@@ -3,7 +3,7 @@ title: Find, install, and uninstall applications
 description: The Microsoft Store is your source for apps and games that work with HoloLens.  Learn more about finding, installing, and uninstalling holographic apps.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 08/30/2019
+ms.date: 08/31/2020
 manager: jarrettr
 keywords: hololens, store, uwp, app, install
 ms.prod: hololens
