@@ -51,7 +51,7 @@ To update an app you have installed from the Microsoft Store app you can also up
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
 1. Select the Store app.
 1. Look to the top right of the Store app. 
-1. Select the **. . .** or “See more” button.
+1. Select the **". . ."** or “See more” button.
 
    > [!div class="mx-imgBorder"]
    > ![Microsoft Store app screenshot.](images/store-update-1.png)
