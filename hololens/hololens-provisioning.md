@@ -203,7 +203,7 @@ In Windows Configuration Designer, when you create a provisioning package for Wi
 
 ## App install via Provisioning Package
 
-Apps can be installed via provisioning packages. In order to do this your HoloLens 2 devices must be on [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) or later. Read the full instructions for [deploying apps via Provisioning Packages](app-deploy-provisioning-package.md).  
+Apps can be installed via provisioning packages on HoloLens 2 devices. This allows for an easily re-useable package you can use to help you distribute your apps. Read the full instructions for [deploying apps via Provisioning Packages](app-deploy-provisioning-package.md).  
 
 > [!NOTE]
 > HoloLens (1st gen) does not support installing apps (**UniversalAppInstall**) by using a provisioning package.
