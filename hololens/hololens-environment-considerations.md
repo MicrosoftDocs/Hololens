@@ -112,7 +112,7 @@ To get to the Calibration app, go to **Settings** > **System** > **Utilities**. 
 
 If someone else is going to be using your HoloLens, they should run the Calibration app first so the device is set up properly for them.
 
-### Temperature and regulatory information
+## Temperature and regulatory information
 
 Here are some guidelines to follow when using your device:
 
