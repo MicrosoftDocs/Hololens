@@ -57,7 +57,7 @@ To update an app you have installed from the Microsoft Store app you can also up
    > ![Microsoft Store app screenshot.](images/store-update-1.png)
 
 1. Select **Downloads and updates**.
-If your device has previously identified updates you see a down arrow and a number.
+    1. If your device has previously identified updates you may see a down arrow and a number, this represents pending updates.
 1. Select **Get updates**. Your device will now search for updates and set them to download and install. 
  
    > [!div class="mx-imgBorder"]
