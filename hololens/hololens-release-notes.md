@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 release notes
-description: Learn about updates in each new HoloLens release.
+description: Learn about updates in each new HoloLens 2 release.
 author: scooley
 ms.author: scooley
 manager: laurawi
