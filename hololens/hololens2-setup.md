@@ -29,6 +29,8 @@ Charging rate and speed may vary depending on the environment in which the devic
 - When only one of the five lights is on, the battery level is below 20 percent.
 - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
 
+Full [details on device charging can be read here](hololens-recovery.md#charge-the-device) if more information is needed. 
+
 ## Adjust fit
 
 Place the HoloLens 2 on your head. If you wear eyeglasses, leave them on.  The brow pad should sit comfortably on your forehead and the back band should sit in the middle-back of your head.
