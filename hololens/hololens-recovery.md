@@ -21,7 +21,7 @@ manager: jarrettr
 
 ## Charge the device
 
-Before you start any troubleshooting procedure, make sure that your device is charged to 20 to 40 percent of battery capacity if possible. Use the charger and the USB Type-C cables that come with the HoloLens2 device. If those accessories aren't available, make sure the charger that's available can support at least 15 W of power.
+Before you start any troubleshooting procedure, make sure that your device is charged to 20 to 40 percent of battery capacity if possible. Use the charger and the USB Type-C cables that come with the HoloLens 2 device. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A). If those accessories aren't available, make sure the charger that's available can support at least 15W of power.
 
 > [!NOTE]
 > If possible, avoid using a PC to charge the device over USB, which is slow.
@@ -30,15 +30,19 @@ If the device is correctly booted and running, there are three ways to check the
 
 - From the main menu of the HoloLens device UI.
 - View the LED close to the power button (for a 40-percent charge, you should see at least two solid LEDS).
+    - When the device is charging, the battery indicator lights up to indicate the current level of charge.  The last light will fade in and out to indicate active charging.
+    - When your HoloLens is on, the battery indicator displays the battery level in increments.
+    - When only one of the five lights is on, the battery level is below 20 percent.
+    - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
 - On your host PC, open File Explorer and look for your HoloLens 2 device on left side under **This PC**. Right-click the device, and select **Properties**. A dialog box will show the battery charge level.
 
    ![A HoloLens 2 properties screen shows battery change level](images/ResetRecovery2.png)
 
-If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the [troubleshooting guide](https://docs.microsoft.com/hololens/hololens-troubleshooting). If the state of the device doesn't match any of the states listed in the troubleshooting guide, do the *hard reset procedure* with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
+If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the [troubleshooting guide](https://docs.microsoft.com/hololens/hololens-troubleshooting). If the state of the device doesn't match any of the states listed in the troubleshooting guide, do the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
 ## Reset the device
 
-Under certain circumstances, you may have to manually reset the device without using the SW UI.
+Under certain circumstances, you may have to manually reset the device without using the software UI.
 
 ### Standard procedure
 1. Unplug the Type-C cable to disconnect the device from the power supply or the host PC.
