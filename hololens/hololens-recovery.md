@@ -70,7 +70,14 @@ If the standard reset procedure didn't work, use the hard-reset procedure:
 
 ## Clean-reflash the device
 
-In extraordinary situations, you may have to "clean-flash" the HoloLens 2. There are two ways to reflash the device. For both, you must first install [Advanced Recovery Companion from the Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
+In extraordinary situations, you may have to "clean-flash" the HoloLens 2. Please note that clean-reflash isn’t expected to affect the following issues:
+- [Display color uniformity](hololens2-display.md)
+- Booting with sound but no display output
+- [1-3-5-LED pattern](hololens2-setup.md#lights-to-indicate-problems)
+- [Overheating](hololens-environment-considerations.md#temperature-and-regulatory-information) 
+- OS crashes (which are distinct from application crashes)
+
+There are two ways to reflash the device. For both, you must first install [Advanced Recovery Companion from the Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
 >If you reflash your device, all your personal data, apps, and settings will be erased, including TPM-reset information.
