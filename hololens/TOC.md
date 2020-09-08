@@ -70,9 +70,15 @@
 ### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
 
 
-## Policies
+## [Policies](hololens-csp-policy-overview.md)
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
+### [Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices](hololens-mdm-configure.md)
+### [Common Device Restrictions](hololens-common-device-restrictions.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
+### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
+
+
+
 # Deploy
 ## Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
