@@ -1,7 +1,8 @@
 ---
 title: Hardware backed integrity and runtime attestation
 description: limiting password use for holoLens 
-author: jbennett
+author: evmill
+ms.author: v-evmill
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, Hardware backed integrity, runtime attestation,	UEFI, UEFI secure boot, secure boot, TPM, threat protection, Windows Anti-Persistence Assurance, code integrity, code protection, 
@@ -9,7 +10,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
 ---
