@@ -1,7 +1,8 @@
 ---
 title: Limiting password use
 description: limiting password use for holoLens 
-author: jbennett
+author: evmill
+ms.author: v-evmill
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, limiting password use, password, hololens password, sign-in, signing in, windows hello, hello, windows account manager, FIDO2 sign in, FIDO 2, WEBAUTHN, local account, hololens security
