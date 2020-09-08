@@ -70,7 +70,8 @@
 ### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
 
 
-## [Policies](hololens-csp-policy-overview.md)
+## Policies
+### [Configure CSPs and Policy overview](hololens-csp-policy-overview.md)
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 ### [Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices](hololens-mdm-configure.md)
 ### [Common Device Restrictions](hololens-common-device-restrictions.md)
