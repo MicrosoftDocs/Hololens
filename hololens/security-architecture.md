@@ -9,7 +9,7 @@ keywords: security, hololens, hololens 2, hololens2 security, security overview,
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: 
+ms.reviewer: tagran
 manager: yannisle
 appliesto:
 - HoloLens 2
