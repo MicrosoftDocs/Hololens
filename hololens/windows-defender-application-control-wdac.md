@@ -17,6 +17,7 @@ appliesto:
 # Windows Defender Application Control - WDAC
 
 WDAC allows an IT Admin to configure their devices to block the launch of apps on devices. This is different than methods of device restriction such as Kiosk mode, where  the user is presented with a UI that hides the apps on the device but they can still be launched. While WDAC is implemented, the apps are still visible in the All Apps list but WDAC stops those apps and processes from being able to be launched by the device user.
+
 > [!NOTE]
 > When end users attempt to launch an app that is blocked by WDAC, on HoloLens they will not receive a notification about not being able to launch that app.
 
