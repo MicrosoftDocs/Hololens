@@ -9,7 +9,7 @@ keywords: security, hololens, State separation, State separation and isolation, 
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: 
+ms.reviewer: tagran
 manager: yannisl
 appliesto:
 - HoloLens 2
