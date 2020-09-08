@@ -1,7 +1,8 @@
 ---
 title: HoloLens security architecture
 description: Security architecture
-author: jbennett
+author: evmill
+ms.author: v-evmill
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, hololens 2, hololens2 security, security overview, security architecture, architecture, hololens 2 architecture
