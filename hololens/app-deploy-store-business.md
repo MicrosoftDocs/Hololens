@@ -2,7 +2,8 @@
 title: Microsoft Store for Business
 description: Microsoft Store for Business, msfb, 
 keywords: Microsoft Store for Business, msfb, app deployment, store
-author: v-jodben
+author: evmill
+ms.author: v-evmill
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.topic: article
