@@ -41,6 +41,8 @@ Use Kiosk mode to control which identities have access to which apps by default.
 ### Settings Page Visibility
 Use Settings app policy to control which identities have access to settings by default. With this policy the Settings app can be configured to either show only the select pages, or hide all selected pages. [Read about how to configure the pages available](settings-uri-list.md).
 
+This feature is currently only avalible in [Windows Insider builds](hololens-insider.md). Please ensure devices you intend to use this for are on build 19041.1349+.
+
 ### WDAC
 Use WDAC configuration to control which apps / processes are allowed / disallowed to be launched irrespective of whether system is in kiosk mode or not.
 [See our overview for WDAC.](windows-defender-application-control-wdac.md)
