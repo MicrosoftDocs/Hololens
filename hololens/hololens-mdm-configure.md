@@ -56,10 +56,10 @@ Using Intune, you can add apps to your devices running Windows Holographic for B
 -	[Microsoft Store for Business]( app-deploy-store-business.md)
 
 Learn more about app management through Intune.
--	Add apps to Intune
--	Add Microsoft Store apps
--	Add apps you create
-- Assign apps to groups
+-	[Add apps to Intune](https://docs.microsoft.com/mem/intune/apps/apps-add)
+-	[Add Microsoft Store apps](https://docs.microsoft.com/mem/intune/apps/store-apps-windows)
+-	[Add apps you create](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)
+- [Assign apps to groups](https://docs.microsoft.com/mem/intune/apps/apps-deploy)
 
 ### Software updates
 Intune includes a feature called update rings for Windows 10 devices. These update rings include a group of settings that determine how updates are installed. For example, you can create a maintenance window to install updates, or choose to restart after updates are installed. An update ring can be applied to multiple devices running Windows Holographic for Business.
