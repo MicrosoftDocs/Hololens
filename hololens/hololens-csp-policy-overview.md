@@ -43,4 +43,4 @@ Use Settings app policy to control which identities have access to settings by d
 
 ### WDAC
 Use WDAC configuration to control which apps / processes are allowed / disallowed to be launched irrespective of whether system is in kiosk mode or not.
-link to not yet made WDAC guidance page
+[See our overview for WDAC.](windows-defender-application-control-wdac.md)
