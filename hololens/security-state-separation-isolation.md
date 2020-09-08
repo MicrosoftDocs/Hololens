@@ -2,6 +2,7 @@
 title: State separation and isolation
 description: State separation and isolation
 author: jbennett
+ms.author: v-evmill
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, State separation, State separation and isolation, hololens 2, hololens2 security, security overview, security architecture, architecture, hololens 2 architecture
