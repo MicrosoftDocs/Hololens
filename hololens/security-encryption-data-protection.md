@@ -2,6 +2,7 @@
 title: Encryption and Data Protection
 description: Encryption and Data Protection
 author: jbennett
+ms.author: v-evmill
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, Encryption, Data Protection, BitLocker Device, BitLocker, bitlocker, bitlocker encryption, azure integration, 
