@@ -1,6 +1,6 @@
 ---
 title: Hardware backed integrity and runtime attestation
-description: limiting password use for holoLens 
+description: security hardware backed integrity
 ms.prod: hololens
 author: evmill
 ms.author: v-evmill
