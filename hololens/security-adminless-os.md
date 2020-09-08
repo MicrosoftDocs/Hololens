@@ -8,7 +8,7 @@ ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, adminless, admin-less, operating system, admin-less operating system, admin os, admin-less os, hololens 2, hololens2 security, 
 ms.localizationpriority: high
-ms.reviewer: 
+ms.reviewer: tagran
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
