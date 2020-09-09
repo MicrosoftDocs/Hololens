@@ -169,10 +169,10 @@ HoloLens 2 devices on build [19041.1103](hololens-release-notes.md#windows-holog
 > [!NOTE]
 > If the device was purchased before August 2016, you will need to sign in to the device by using a Microsoft account, get the latest operating system update, and then reset the operating system in order to apply the provisioning package.
 
-### Apply a provisioning package to HoloLens after setup
+## Apply a provisioning package to HoloLens after setup
 
 > [!NOTE]
-> These steps apply only toWindows 10, version 1809.
+> These steps apply only to Windows 10, version 1809.
 
 On your PC, follow these steps:
 1. Create a provisioning package as described at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md).
@@ -201,5 +201,9 @@ In Windows Configuration Designer, when you create a provisioning package for Wi
 | **EditionUpgrade** | [Upgrade to Windows Holographic for Business.](hololens1-upgrade-enterprise.md)  |
 | **Policies** | Allow or prevent developer mode on HoloLens. [Policies supported by Windows Holographic for Business](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hololenspolicies) |
 
+## App install via Provisioning Package
+
+Apps can be installed via provisioning packages on HoloLens 2 devices. This allows for an easily re-useable package you can use to help you distribute your apps. Read the full instructions for [deploying apps via Provisioning Packages](app-deploy-provisioning-package.md).  
+
 > [!NOTE]
-> HoloLens does not currently support installing apps (**UniversalAppInstall**) by using a provisioning package.
+> HoloLens (1st gen) does not support installing apps (**UniversalAppInstall**) by using a provisioning package.
