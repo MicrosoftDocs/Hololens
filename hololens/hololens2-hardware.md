@@ -121,13 +121,21 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 ## Pre-installed software
 
 - Windows Holographic Operating System
-- Microsoft Edge
-- Dynamics 365 Remote Assist
-- Dynamics 365 Guides
 - 3D Viewer
-- OneDrive for Business
-- HoloLens Tips
+- Calendar
 - Cortana
+- Dynamics 365 Guides
+- Dynamics 365 Remote Assist
+- Feedback Hub
+- File Explorer
+- Mail
+- Microsoft Edge
+- Microsoft Store
+- Movies & TV
+- OneDrive
+- Photos
+- Settings
+- Tips
 
 ## Device certifications
 
