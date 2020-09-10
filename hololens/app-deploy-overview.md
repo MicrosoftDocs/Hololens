@@ -2,14 +2,16 @@
 title: Overview - App Management
 description: app, management, app management
 keywords: HoloLens, user, account, app, application management,
-author: v-jodben
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.topic: article 
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

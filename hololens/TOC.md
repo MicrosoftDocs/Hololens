@@ -72,6 +72,7 @@
 
 ## Policies
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
+### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
 # Deploy
 ## Enrollment
