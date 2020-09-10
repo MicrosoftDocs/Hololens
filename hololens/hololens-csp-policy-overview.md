@@ -1,6 +1,6 @@
 ---
-title: Configure CSPs and Policy overview
-description: How to configure CSPs and policy. 
+title: Configure CSPs and Device Management overview
+description: How to configure CSPs, policy and device management. 
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -8,14 +8,14 @@ ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 08/27/2020
-ms.reviewer: 
+ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ---
 
-# Configure CSPs and Policy overview
+# Configure CSPs and Device Management overview
 
 IT Administrators can define and implement policy settings on HoloLens 2. What configuration settings you use will differ based on the deployment scenario, and corporate devices will offer IT the broadest range of control. In Windows 10, Configuration Service Providers (CSP)s are an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. 
 
