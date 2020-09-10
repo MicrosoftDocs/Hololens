@@ -3,13 +3,13 @@ title: Security engineering
 description: Security engineering
 author: evmill
 ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, Security, engineering
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: tagran
 manager: yannisle
 appliesto:
 - HoloLens 2

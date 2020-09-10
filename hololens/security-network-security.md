@@ -3,13 +3,13 @@ title: Network security
 description: network security
 author: evmill
 ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, network, network security
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: 
 manager: yannisle
 appliesto:
 - HoloLens 2

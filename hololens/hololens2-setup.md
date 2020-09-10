@@ -29,6 +29,8 @@ Charging rate and speed may vary depending on the environment in which the devic
 - When only one of the five lights is on, the battery level is below 20 percent.
 - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
 
+Full [details on device charging can be read here](hololens-recovery.md#charge-the-device) if more information is needed. 
+
 ## Adjust fit
 
 Place the HoloLens 2 on your head. If you wear eyeglasses, leave them on.  The brow pad should sit comfortably on your forehead and the back band should sit in the middle-back of your head.
@@ -103,7 +105,7 @@ Not sure what the indicator lights on your HoloLens mean? Want to know how HoloL
 | - | - | - |
 | You press the Power button. | One light flashes five times, then turns off. | The HoloLens battery is critically low. Charge your HoloLens. |
 | You press the Power button. | All five lights flash five times, then turn off. |  HoloLens cannot start correctly and is in an error state. [Reinstall the operating system](hololens-recovery.md) to recover your device. |
-| You press the Power button. | The 1st, 3rd, and 5th lights flash together continually. |  HoloLens may have a hardware failure. To be sure, [reinstall the OS](hololens-recovery.md), and try again. After reinstalling the OS, if the light-flash pattern persists, contact [support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
+| You press the Power button. | The 1st, 3rd, and 5th lights flash together continually. |  HoloLens may have a hardware failure. Contact [support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
 
 ## Safety and comfort
 

@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 7/17/2020
+ms.date: 8/21/2020
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -33,7 +33,7 @@ Here is the list of the upcoming features that you can try out today in our Wind
 | [Auto-launch provisioning from USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE Automatically detects provisioning packages on USB drives.                                | 19041.1361+                 |
 | [Auto-confirm provisioning packages in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatically apply provisioning packages in OOBE.                                             | 19041.1361+                 |
 | [Using Autopilot with Wi-Fi connection](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Use autopilot from device Wi-Fi without need for ethernet adapter.                             | 19041.1364+                 |
-|[Tenantlockdown CSP and Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | After tenant enrollment and the policiy is applied, the device can only be enrolled in that tenant any time the device is reset or re-flashed. | 19041.1366+|
+|[Tenantlockdown CSP and Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | After tenant enrollment and the policy is applied, the device can only be enrolled in that tenant any time the device is reset or re-flashed. | 19041.1366+|
 | [Global Assigned Access](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system   level. | 19041.1356+                 |
 | [Auto-launch an app in multi-app kiosk](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Sets an application to launch automatically when signing into a multiple-app kiosk   mode.     | 19041.1346+                 |
 | [Visitor Auto-logon for Kiosks](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Enables the auto-logon on Visitor accounts to be used for Kiosk modes.                         | 19041.1361+                 |
@@ -145,18 +145,27 @@ Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens
 #### How to set this using Intune? 
 1. Create a custom OMA URI device configuration profile and specify true for RequireNetworkInOOBE node as shown below.
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
-![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
+
 1. Create a group and assign the device configuration profile to that device group. 
+
 1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.  
 
 Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be active.
 
 #### How to unset TenantLockdown’s RequireNetworkInOOBE on HoloLens 2 using Intune? 
 1. Remove the HoloLens 2 from the device group to which the device configuration created above was previously assigned. 
+
 1. Create a custom OMA URI based device configuration profile and specify false for RequireNetworkInOOBE as shown below. 
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
-![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
+
 1. Create a group and assign the device configuration profile to that device group. 
+
 1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.
 
 Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be inactive. 
@@ -176,7 +185,7 @@ Application is automatically launched when user signs-in.
 
 ```xml
 <AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+    <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
 ### Visitor Auto logon for Kiosks

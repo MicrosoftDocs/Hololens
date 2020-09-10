@@ -1,15 +1,14 @@
 ---
 title: Hardware backed integrity and runtime attestation
-description: security hardware backed integrity
-ms.prod: hololens
+description: Hardware backed integrity and runtime attestation
 author: evmill
 ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, Hardware backed integrity, runtime attestation,	UEFI, UEFI secure boot, secure boot, TPM, threat protection, Windows Anti-Persistence Assurance, code integrity, code protection, 
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: tagran
 manager: yannisle
 appliesto:
 - HoloLens 2
