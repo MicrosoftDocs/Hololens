@@ -1,14 +1,15 @@
 ---
 title: Encryption and Data Protection
 description: Encryption and Data Protection
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, Encryption, Data Protection, BitLocker Device, BitLocker, bitlocker, bitlocker encryption, azure integration, 
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: 
 manager: yannisle
 appliesto:
 - HoloLens 2
