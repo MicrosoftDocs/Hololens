@@ -2,7 +2,9 @@
 title: Intune and Company Portal
 description: intune, app management, app, company portal, portal
 keywords: intune, app management, app, company portal, portal, hololens
-author: v-jodben
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.custom: 
@@ -12,7 +14,7 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

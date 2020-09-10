@@ -2,7 +2,8 @@
 title: Provisioning Package
 description: app, app deployment, enterprise app demployment, provisioning 
 keywords: app, app deployment, enterprise app demployment, provisioning 
-author: v-jodben
+author: evmill
+ms.author: v-evmill
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.sitesec: library
