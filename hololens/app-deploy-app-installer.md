@@ -16,7 +16,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# How to side load and Install Apps via HoloLens 2 App Installer
+# Install Apps on HoloLens 2 via App Installer
 
 Users can now install Apps via Appx Bundles now without the need to enable Developer Mode or use Device Portal. This experience is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. 
 > [!NOTE]
