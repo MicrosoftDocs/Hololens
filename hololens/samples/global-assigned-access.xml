@@ -9,8 +9,8 @@
             <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
                 <AllAppsList> 
                     <AllowedApps>                     
-                        <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch=”true” /> --> 
-                         <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.settingn_8wekyb3d8bbwe!MicrosoftEdge" /> --> 
+                        <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true" /> --> 
+                         <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.settingn_8wekyb3d8bbwe!MicrosoftEdge" /> --> 
                      </AllowedApps> 
                 </AllAppsList> 
                 <StartLayout> 
@@ -20,7 +20,7 @@
                             <StartLayoutCollection> 
                               <defaultlayout:StartLayout GroupCellWidth="6"> 
                                 <start:Group Name="Life at a glance"> 
-                                  <!—This AUMID can be of any app and is not used on Hololens but is required for parity, so you can leave it as is. --> 
+                                  <!--This AUMID can be of any app and is not used on Hololens but is required for parity, so you can leave it as is. --> 
                                   <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />                               
                                 </start:Group> 
                               </defaultlayout:StartLayout> 

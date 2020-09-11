@@ -112,6 +112,18 @@ To get to the Calibration app, go to **Settings** > **System** > **Utilities**. 
 
 If someone else is going to be using your HoloLens, they should run the Calibration app first so the device is set up properly for them.
 
+## Temperature and regulatory information
+
+[HoloLens Regulatory information](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Includes information on temperature range, disposal, radio and TV interference, and more.
+
+Here are some guidelines to follow when using your device:
+
+1. Store device in an environment within temperature range (either in Standby or Off) for an hour before using the device.
+1. Use device in an environment within temperature range.
+1. Use device indoors.
+1. Use device in shade; even indoors avoid direct sunlight though windows or skylights.
+1. If you follow the above guidelines but experience unexpected overheating issues, ensure Full telemetry is enabled before submitting [Feedback](hololens-feedback.md).
+
 ## See also
 
 - [Spatial mapping design](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)

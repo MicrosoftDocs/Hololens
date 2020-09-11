@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 release notes
-description: Learn about updates in each new HoloLens release.
+description: Learn about updates in each new HoloLens 2 release.
 author: scooley
 ms.author: scooley
 manager: laurawi
@@ -24,6 +24,39 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 >[!NOTE]
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows Holographic, version 2004 - September 2020 Update
+- Build 19041.1117
+
+Improvements and fixes in the update:
+
+- Addresses an issue that prevented Visual Studio from debugging an application when SupportsMultipleInstances=”true” is present in the appxmanifest.
+- This release includes NCSI proxy detection fix to address failed Internet detection over network proxy. NCSI can use machine proxy and per-profile proxy for Internet connectivity detection. Per-user proxy will be supported by NCSI in future release.
+- On most Windows Mixed Reality devices, the forward direction vector is parallel to the ground when the user's head is in a neutral position looking forward. However, earlier versions of HoloLens 2 aligned the vector to be perpendicular to the display panels instead, which is tilted downward a few degrees relative to the ideal orientation. Newer versions of HoloLens 2 have corrected this to ensure semantic consistency across form factors.
+- Improved hand tracking robustness that will result in fewer tracking losses in specific scenarios.
+- This release contains a fix to improve audio timestamp quality which may have contributed to video capture issues.
+
+## Windows Holographic, version 1903 - September 2020 Update
+- Build 18362.1079
+
+Improvements and fixes in the update:
+
+- On most Windows Mixed Reality devices, the forward direction vector is parallel to the ground when the user's head is in a neutral position looking forward. However, earlier versions of HoloLens 2 aligned the vector to be perpendicular to the display panels instead, which is tilted downward a few degrees relative to the ideal orientation. Newer versions of HoloLens 2 have corrected this to ensure semantic consistency across form factors.
+- Improved hand tracking robustness that will result in fewer tracking losses in specific scenarios.
+
+## Windows Holographic, version 2004 - August 2020 Update
+- Build 19041.1113
+
+Improvements and fixes in the update:
+
+- Settings app will no longer follow the user into Iris Enrollment or Eye Tracking Calibration experiences.
+- Fixed a bug where applying a provisioning package during OOBE that renames the device and performs other actions (such as connecting to a network) would fail to perform the other actions after the device reboot due to rename.
+- Modified color scheme of initial device setup flows to improve visual quality.
+
+## Windows Holographic, version 1903 - August 2020 Update
+- Build 18362.1074
+
+This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest builds for Windows Holographic, version 2004.
 
 ## Windows Holographic, version 2004 - July 2020 Update
 - Build 19041.1109
