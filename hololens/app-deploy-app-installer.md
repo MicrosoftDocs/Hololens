@@ -23,11 +23,11 @@ Users can now install Apps via Appx Bundles now without the need to enable Devel
 > Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/ windows/msix/app-installer/create-appinstallerfile-vs).
 
 1.	Ensure that your HoloLens 2 device is powered on and you are signed in.
-1.	On your PC navigate to your custom app, and copy <yourapp>.appxbundle to <yourdevicename>\Internal Storage\Downloads. 
+1.	On your PC navigate to your custom app, and copy yourapp.appxbundle to yourdevicename\Internal Storage\Downloads. 
     After your finish copying your file you may disconnect your device and finish the install later.
 1.	From your HoloLens 2 device Open the **Start Menu**, select **All apps** and launch the **File Explorer** app.
 1.	Navigate to the Downloads folder. You may need to on the left panel of the app select **This device** first, then navigate to Downloads.
-1.	Select the <yourapp>.appxbundle file. 
+1.	Select the yourapp.appxbundle file. 
 1.	The App Installer will launch. Select the **Install** button to install your app. 
 
 The installed app will automatically launch upon the completion of installing. 
