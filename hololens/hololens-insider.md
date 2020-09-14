@@ -278,11 +278,12 @@ To learn which page settings you can customize on HoloLens 2, please visit our [
 ![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
 
 ### Research mode
-In Research Mode, HoloLens 2 is a potent computer vision research device. Compared to the previous edition, Research Mode for HoloLens 2 has the following main advantages:
--	In addition to sensors exposed in HoloLens 1 Research Mode, we now also provide IMU sensor access (these include an accelerometer, gyroscope, and magnetometer).
--	HoloLens 2 provides new capabilities that can be used in conjunction with Research Mode. Specifically, articulated hand-tracking and eye-tracking which can be accessed through APIs while using research mode, allowing for a richer set of experiments.
+While in Research Mode, the HoloLens 2 becomes a potent tool for computer vision research. Compared to previous editions, Research Mode for HoloLens 2 has the following advantages:
+-	In addition to sensors exposed in HoloLens (1st gen) Research Mode, we now provide IMU sensor access including an accelerometer, gyroscope, and magnetometer.
+-	HoloLens 2 provides new capabilities that can be used together with Research Mode. Specifically, access to articulated hand-tracking and eye-tracking APIs that can deliver a richer set of experiments.
 
-Researchers now have the option to enable Research Mode on their HoloLens devices to gain access to all of these external facing raw image sensors streams. Research Mode for HoloLens 2 also provides researchers with access to the accelerometer, gyroscope, and magnetometer readings. To protect users’ privacy, raw eye-tracking camera images are not available through Research Mode. Researchers can access eye-gaze direction through existing APIs.
+Researchers now have the option of enabling Research Mode on their HoloLens devices to access all of these external facing raw image sensors streams. Research Mode for HoloLens 2 also provides access to the accelerometer, gyroscope, and magnetometer readings. To protect users’ privacy, raw eye-tracking camera images are not available through Research Mode, but eye-gaze direction  is available through existing APIs.
+
 Check out the [Research Mode documentation](https://docs.microsoft.com/windows/mixed-reality/research-mode) for further technical details.
 
 ### Improvements and fixes in the update:
