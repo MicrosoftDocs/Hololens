@@ -53,6 +53,8 @@ Our Windows Holographic version 2010 Release is filled with many new features. T
 
 ### Auto Eye Position Support
 
+- We now provide higher accuracy for hologram positioning through Auto Eye Position Support for elevated viewing comfort and improved display quality. 
+
 In HoloLens 2, eye positions enable accurate hologram positioning, comfortable viewing experience and improved display quality. Eye positions are computed as part of the eye tracking result. However, this requires each user to go through eye tracking calibration, even when the experience does not require eye gaze input.
 
 **Auto Eye Position (AEP)** enables these scenarios with an interaction-free way to compute eye positions for the user.  Auto Eye Position starts working in the background automatically from the moment the user puts the device on. If the user does not have a prior eye tracking calibration, Auto Eye position will start providing the user's eye positions to the display system after a small processing time. This processing time typically is between 20 - 60 seconds. The user data is not persisted on the device and hence this process is repeated if the user takes off and puts the device back on or if the device reboots or wakes up from sleep.  
@@ -72,6 +74,8 @@ For experiences that require eye gaze data or very precise hologram positioning,
  - We're investigating an issue where the eye tracker driver host process could crash when running under heavy memory load. The eye tracking driver host process should auto recover.
 
 ### Certificate Manager
+
+- Improved auditing, diagnosis, and validation tooling for device security and compliance through the new Certificate Manager. This capability will enable you to deploy, troubleshoot, and validate your certificates at scale in commercial environments.
 
 In Windows Holographic version 2010, we are adding a Certificate Manager in the HoloLens 2 Settings app. Go to **Settings > Update & Security > Certificates**. This feature provides a simple and user-friendly way to view, install and remove certificates on your device. With the new Certificate Manager, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant. 
 
@@ -107,6 +111,9 @@ The certificate should now be installed on the device.
 ![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
 
 ### Auto-launch provisioning from USB
+
+- Automated processes allowing for less user interaction, when USB Drives with Provisioning Packages are used during OOBE.
+
 Before this release users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
 
 1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
@@ -117,9 +124,13 @@ Note: If a USB drive is left plugged in while the device is booting then OOBE wi
 For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
 ### Auto-confirm provisioning packages in OOBE
+- Automated process allowing for less user interaction, when the Provisioning Package page is displayed it will automatically apply all packages listed.
+
 When the provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
 
 ### Automatic provisioning without using UI
+- Combined automatic processes for reduced device interactions for provisioning. 
+
 By combining the auto-launch of provisioning from USB devices and the auto-confirmation of provisioning packages, a user can provision HoloLens 2 devices automatically without using the device's UI or even wearing the device. You may continue to use the same USB drive and provisioning package for multiple devices. This is useful for deploying multiple devices at once in the same area. 
 
 1. [Create a Provisioning Package](hololens-provisioning.md) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
@@ -133,9 +144,13 @@ By combining the auto-launch of provisioning from USB devices and the auto-confi
 Your device is now configured and will display the Provisioning Successful screen.
 
 ### Using Autopilot with Wi-Fi connection
+- Removed need for USB-C adapters to ethernet reducing hardware needs, by enabling Autopilot to function on Wi-Fi connected devices.
+
 Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB C or wifi to USB C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
 
 ### Tenantlockdown CSP and Autopilot
+- Keeps devices on the organization's tenant by locking them to the tenant even through device reset or reflash. With further security by disallowing account creation in via provisioning. 
+
 HoloLens 2 devices now support TenantLockdown CSP as of Windows Holographic version 2010. 
 
 [TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP enables HoloLens 2 to be tied to MDM enrollment using Autopilot only. Once TenantLockdown CSP’s RequireNetworkInOOBE node is set to either true or false (initially set) value on HoloLens 2, that value remains on the device despite re-flashing, OS updates, etc. 
@@ -181,9 +196,13 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
 
 ### Global Assigned Access – Kiosk Mode
+- Reduced Identity management for Kiosk, by enabling new Kiosk method that applies Kiosk mode at the system level.
+
 This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
 
 ### Automatic launch of an application in multiple-app kiosk mode 
+- Focused experience with automatic app launch, further increasing the UI and app selections chosen for Kiosk mode experiences.
+
 Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
 
 Application is automatically launched when user signs-in. 
@@ -194,6 +213,8 @@ Application is automatically launched when user signs-in.
 ```
 
 ### Visitor Auto logon for Kiosks
+- Simplified use for Visitor Kiosks with enabling automated log-in.
+
 This new feature enables the auto logon on Visitor accounts to be used for Kiosk modes. 
 
 For a non-AAD configuration, to configure a device for visitor autologon:
@@ -206,12 +227,15 @@ For a non-AAD configuration, to configure a device for visitor autologon:
 For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
 
 ### Kiosk mode behavior changes for handling of failures
+- More secure Kiosk mode by eliminating available apps on Kiosk mode failures. 
 
 Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 2010 in the case of failures no apps will be shown in the start menu as below: 
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens Policies
+- Device management options specifically for HoloLens created for managing the device. 
+
 New mixed reality policies have been created for HoloLens 2 devices on Windows Holographic version 2010. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
 
 | New HoloLens policy                                | Description                                                                               | Notes                                                                |
@@ -224,6 +248,7 @@ New mixed reality policies have been created for HoloLens 2 devices on Windows H
 | MixedReality\AADGroupMembershipCacheValidityInDays | Controls how many days AAD group membership cache is used for Kiosk targeting AAD groups. | See below.                                                           |
 
 ### Cache AAD Group membership for offline Kiosk
+- Enabled Offline Kiosks to be used with AAD groups for up to 60 days.
 
 This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
 
@@ -247,6 +272,8 @@ Steps to use this policy correctly:
 > Until step 4 is performed for a AAD user will experience failure behavior mentioned below in “disconnected” environments. 
 
 ### New device restriction policies for HoloLens 2
+- Allows users to manage specific device management policies such as blocking adding or removing provisioning packages.
+
 Newly enabled policies that allow for more management options of HoloLens 2 devices. 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
@@ -254,6 +281,8 @@ Newly enabled policies that allow for more management options of HoloLens 2 devi
 - [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
 
 ### New power policies for Hololens 2
+- More options for when HoloLens sleeps or locks via power policies. 
+
 These newly added policies allow admins to control power states, such as idle timeout. To read more about each individual policy please click the link for that policy.
 
 |     Policy documentation link                |     Notes                                                                                                                                       |
@@ -266,6 +295,8 @@ These newly added policies allow admins to control power states, such as idle ti
 |     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
 
 ### Newly enabled Update policies for HoloLens
+- More options for when Updates are installed or disabling the Pause Updates button to ensure updates.
+
 These update policies are now enabled on HoloLens 2 devices:
 -	[Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
 -	[Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
@@ -273,6 +304,8 @@ These update policies are now enabled on HoloLens 2 devices:
 -	[Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ### Enabled Settings page visibility for HoloLens 2
+- Increased UI control in the Settings App, which may be confused to show a limited selection of pages.
+
 We’ve now enabled a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. To learn how to fully customize this feature click the link below.
 
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
