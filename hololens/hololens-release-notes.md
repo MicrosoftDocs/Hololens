@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 06/9/2020
+ms.date: 10/13/2020
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -24,6 +24,206 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 >[!NOTE]
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows Holographic, version 2010
+- Build *TBD*
+
+Our Windows Holographic version 2010 Release is filled with many new features. These new features include several new features, ranging from benefits for everyone such as Auto Eye Positioning, to new device management feature sets for Kiosk and newly enabled and created policies. Several existing experiences have also been improved such as Autopilot working with just Wi-Fi no longer need an adapter, Users being able to manage certificate installs on device using UI, and Kiosk mode now being able to be assigned on a device basis or be used offline. This new update will surely allow you to configure HoloLens devices to your reality. 
+
+| Feature                                              | Description                                                                                                                                     |
+|------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Auto Eye Position Support                            | Actively finds eye positions without users going through active calibration.                                                                    |
+| Certificate Manager                                  | Allows new simpler methods to install and remove certificates from the Settings app that a user can preform.                                    |
+| Auto-launch provisioning from USB                    | Provisioning packages on USB drives automatically prompt the provisioning page in OOBE.                                                         |
+| Auto-confirm provisioning packages in OOBE           | Provisioning packages are automatically applied during OOBE from the provisioning page.                                                         |
+| Using Autopilot with Wi-Fi connection                | Use autopilot from device Wi-Fi without need for ethernet adapter.                                                                              |
+| Tenantlockdown CSP and Autopilot                     | After tenant enrollment and the policy is applied, the device can only be enrolled in that tenant any time the device is reset or   re-flashed. |
+| Global Assigned Access                               | New configuration method for multiple app kiosk mode which applies the kiosk at the system level, making it applicable to all.                  |
+| Auto-launch an app in multi-app kiosk                | Sets an application to launch automatically when signing into a multiple-app kiosk mode.                                                        |
+| Visitor Auto-logon for Kiosks                        | When using Visitor accounts for Kiosk mode, users can now auto-logon.                                                                           |
+| Kiosk mode behavior changes for handling of failures | Kiosk mode failure now has restrictive fallback.                                                                                                |
+| HoloLens Policies                                    | New policies for HoloLens.                                                                                                                      |
+| Cache AAD Group membership for offline Kiosk         | New policy allows users to uses group membership cache to use Kiosk mode offline for set number of days.                                        |
+| New device restriction policies for HoloLens 2       | Device management policies enabled newly enabled for HoloLens 2.                                                                                |
+| New power policies for HoloLens 2                    | Newly supported policies for power timeout settings.                                                                                            |
+| Update Policies                                      | Newly enabled policies allowing control of updates.                                                                                             |
+| Enabled Settings page visibility for HoloLens 2      | Policy to pick which pages are seen in Settings app.                                                                                            |
+| Improvements and fixes in the update                 | Additional fixes in the update.                                                                                                                 |
+
+### Auto Eye Position Support
+
+In HoloLens 2, eye positions enable accurate hologram positioning, comfortable viewing experience and improved display quality. Eye positions are computed as part of the eye tracking result. However, this requires each user to go through eye tracking calibration, even when the experience does not require eye gaze input.
+
+**Auto Eye Position (AEP)** enables these scenarios with an interaction-free way to compute eye positions for the user.  Auto Eye Position starts working in the background automatically from the moment the user puts the device on. If the user does not have a prior eye tracking calibration, Auto Eye position will start providing the user's eye positions to the display system after a small processing time. This processing time typically is between 20 - 60 seconds. The user data is not persisted on the device and hence this process is repeated if the user takes off and puts the device back on or if the device reboots or wakes up from sleep.  
+
+There are a few system behavior changes with Auto Eye Position feature when an uncalibrated user puts on the device. An uncalibrated user refers to someone who has not gone through the eye tracking calibration process on the device previously.
+
+|     Active Application                           |     Old Behavior                                   |     Behavior for Windows Holographic version 2010 onwards                                                     |
+|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|     Non-gaze enabled app or Holographic Shell    |     Eye tracking calibration prompt is displayed.    |     No prompt is displayed.                                                                                |
+|     Gaze enabled app                             |     Eye tracking calibration prompt is displayed.    |     Eye tracking calibration prompt is   displayed only when the application accesses eye gaze stream.     |
+
+ If the user transitions from a non-gaze enabled application to one that accesses the gaze data, the calibration prompt will be displayed. There will be no changed to Out Of Box Experience flow. 
+ 
+For experiences that require eye gaze data or very precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration from the eye tracking calibration prompt or by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
+
+**Known issues**
+ - We're investigating an issue where the eye tracker driver host process could crash when running under heavy memory load. The eye tracking driver host process should auto recover.
+
+### Tenantlockdown CSP and Autopilot
+HoloLens 2 devices now support TenantLockdown CSP as of Windows Holographic version 2010. 
+
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP enables HoloLens 2 to be tied to MDM enrollment using Autopilot only. Once TenantLockdown CSP’s RequireNetworkInOOBE node is set to either true or false (initially set) value on HoloLens 2, that value remains on the device despite re-flashing, OS updates, etc. 
+
+Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, OOBE waits indefinitely for Autopilot profile to be successfully downloaded and applied, after network connectivity. 
+
+Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, following operations are disallowed in OOBE: 
+- Creating local user using runtime provisioning 
+- Performing AAD join operation via runtime provisioning 
+- Selecting who owns the device in OOBE experience 
+
+#### How to set this using Intune? 
+1. Create a custom OMA URI device configuration profile and specify true for RequireNetworkInOOBE node as shown below.
+OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
+
+1. Create a group and assign the device configuration profile to that device group. 
+
+1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.  
+
+Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be active.
+
+#### How to unset TenantLockdown’s RequireNetworkInOOBE on HoloLens 2 using Intune? 
+1. Remove the HoloLens 2 from the device group to which the device configuration created above was previously assigned. 
+
+1. Create a custom OMA URI based device configuration profile and specify false for RequireNetworkInOOBE as shown below. 
+OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
+
+1. Create a group and assign the device configuration profile to that device group. 
+
+1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.
+
+Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be inactive. 
+
+#### What would happen during OOBE, if Autopilot profile is unassigned on a HoloLens after TenantLockdown was set to true? 
+OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed. 
+
+![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
+
+### Global Assigned Access – Kiosk Mode
+This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
+
+### Automatic launch of an application in multiple-app kiosk mode 
+Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
+
+Application is automatically launched when user signs-in. 
+
+```xml
+<AllowedApps>                     
+    <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### Visitor Auto logon for Kiosks
+This new feature enables the auto logon on Visitor accounts to be used for Kiosk modes. 
+
+For a non-AAD configuration, to configure a device for visitor autologon:
+1.	Create a provisioning package that:
+    1.	Configures **Runtime settings/AssignedAccess** to allow Visitor accounts.
+    1.	Optionally enrolls the device in MDM **(Runtime settings/Workplace/Enrollments)** so that it can be managed later.
+    1.	Do not create a local account
+1.	[Apply the provisioning package](hololens-provisioning.md).
+
+For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+
+### Kiosk mode behavior changes for handling of failures
+
+Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 2010 in the case of failures no apps will be shown in the start menu as below: 
+
+![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+
+### HoloLens Policies
+New mixed reality policies have been created for HoloLens 2 devices on Windows Holographic version 2010. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
+
+| New HoloLens policy                                | Description                                                                               | Notes                                                                |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| MixedReality\BrightnessButtonDisabled              | Allows brightness buttons to be disabled so pressing it does not change brightness.       | 1 Yes, 0 No (default)                                                |
+| MixedReality\VolumeButtonDisabled                  | Allows volume buttons to be disabled so pressing it does not change volume.               | 1 Yes, 0 No (default)                                                |
+| MixedReality\MicrophoneDisabled                    | Disables microphone so no audio recording is possible on HoloLens 2.                      | 1 Yes, 0 No (default)                                                |
+| MixedReality\FallbackDiagnostics                   | Controls behavior of when diagnostic logs can be collected.                               | 0 Disabled, 1 Enabled for Device Owners, 2 Enabled for all (Default) |
+| MixedReality\HeadTrackingMode                      | Reserved for future use.                                                                  |                                                                      |
+| MixedReality\AADGroupMembershipCacheValidityInDays | Controls how many days AAD group membership cache is used for Kiosk targeting AAD groups. | See below.                                                           |
+
+### Cache AAD Group membership for offline Kiosk
+
+This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
+
+Name: AADGroupMembershipCacheValidityInDays 
+URI value: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+
+Min - 0 days  
+Max - 60 days 
+
+Steps to use this policy correctly: 
+1. Create a device configuration profile for kiosk targeting AAD groups and assign it to HoloLens device(s). 
+1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s). 
+    1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+    1. The value can be between min / max allowed.
+1. Enroll HoloLens devices and verify both configurations get applied to the device. 
+1. Let AAD user 1 sign-in when internet is available, once user signs-in and AAD group membership is confirmed successfully, cache will be created. 
+1. Now AAD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days. 
+1. Steps 4 and 5 can be repeated for any other AAD user N. Key point here is that any AAD user must sign-in to device using Internet so at least once we can determine that they are member of AAD group to which Kiosk configuration is targeted. 
+ 
+> [!NOTE]
+> Until step 4 is performed for a AAD user will experience failure behavior mentioned below in “disconnected” environments. 
+
+### New device restriction policies for HoloLens 2
+Newly enabled policies that allow for more management options of HoloLens 2 devices. 
+- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
+
+### New power policies for Hololens 2
+These newly added policies allow admins to control power states, such as idle timeout. To read more about each individual policy please click the link for that policy.
+
+|     Policy documentation link                |     Notes                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Example value to use in Windows Configuration Designer,   i.e., 100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Example value to use in Windows Configuration   Designer, i.e., 100                                                                          |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Example value to use in   Windows Configuration Designer, i.e.,   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+### Newly enabled Update policies for HoloLens
+These update policies are now enabled on HoloLens 2 devices:
+-	[Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-	[Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-	[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-	[Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+
+### Enabled Settings page visibility for HoloLens 2
+We’ve now enabled a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. To learn how to fully customize this feature click the link below.
+
+- [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+
+To learn which page settings you can customize on HoloLens 2, please visit our [Settings URIs page](settings-uri-list.md). 
+ 
+![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
+
+### Improvements and fixes in the update:
+- Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
+- More screens in OOBE  are now in dark mode.
+- Learn more content should point to the latest Privacy Statement online.
+- Addressed an issue where users could not provision VPN profiles through provisioning packages.
+- Addressed an issue that prevented a HoloLens device from showing up in File Explorer over Media Transfer Protocol (MTP) when the device is set up as a [single-app kiosk](hololens-kiosk.md). Note that MTP (and USB connection in general) can still be disabled using the [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) policy.
+
+
 
 ## Windows Holographic, version 2004 - September 2020 Update
 - Build 19041.1117
