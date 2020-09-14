@@ -32,10 +32,11 @@ Our Windows Holographic version 2010 Release is filled with many new features. T
 
 | Feature                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Auto Eye Position Support                            | Actively finds eye positions without users going through active calibration.                                                                    |
+| [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support)                            | Actively finds eye positions without users going through active calibration.                                                                    |
 | Certificate Manager                                  | Allows new simpler methods to install and remove certificates from the Settings app that a user can preform.                                    |
 | Auto-launch provisioning from USB                    | Provisioning packages on USB drives automatically prompt the provisioning page in OOBE.                                                         |
 | Auto-confirm provisioning packages in OOBE           | Provisioning packages are automatically applied during OOBE from the provisioning page.                                                         |
+| Automatic provisioning without using UI | How to combine the provsioning auto-launch and auto-confirm together. |
 | Using Autopilot with Wi-Fi connection                | Use autopilot from device Wi-Fi without need for ethernet adapter.                                                                              |
 | Tenantlockdown CSP and Autopilot                     | After tenant enrollment and the policy is applied, the device can only be enrolled in that tenant any time the device is reset or   re-flashed. |
 | Global Assigned Access                               | New configuration method for multiple app kiosk mode which applies the kiosk at the system level, making it applicable to all.                  |
@@ -69,6 +70,70 @@ For experiences that require eye gaze data or very precise hologram positioning,
 
 **Known issues**
  - We're investigating an issue where the eye tracker driver host process could crash when running under heavy memory load. The eye tracking driver host process should auto recover.
+
+### Certificate Manager
+
+In Windows Holographic version 2010, we are adding a Certificate Manager in the HoloLens 2 Settings app. Go to **Settings > Update & Security > Certificates**. This feature provides a simple and user-friendly way to view, install and remove certificates on your device. With the new Certificate Manager, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant. 
+
+-	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
+-	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
+-	**Validation:** Verifying that a certificate serves the intended purpose and is functional, can save significant time, particularly in commercial environments before deploying certificates at larger scale.
+
+To find a specific certificate in the list quickly, there are options to sort by name, store or expiration date. Users may also directly search for a certificate. To view individual certificate properties, select the certificate and click on **Info**. 
+
+Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User;  all other users can only install into Current User. Users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must also be removed by the same mechanism.
+
+#### To install a certificate: 
+
+1.	Connect your HoloLens 2 to a PC.
+1.	Place the certificate file you want to install in a location on your HoloLens 2.
+1.	Navigate to **Settings App > Update & Security > Certificates**, and select Install a certificate.
+1.	Click **Import File** and navigate to the location you saved the certificate.
+1.	Select **Store Location**.
+1.	Select **Certificate Store**.
+1.	Click **Install**.
+
+The certificate should now be installed on the device.
+
+#### To remove a certificate: 
+1. Navigate to **Settings App > Update and Security > Certificates**.
+1. Search for the certificate by name in the search box.
+1. Select the certificate.
+1. Click **Remove**
+1. Select **Yes** when prompted for confirmation.
+
+![Certificate viewer in the Settings app](images/certificate-viewer-device.jpg)
+
+![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
+
+### Auto-launch provisioning from USB
+Before this release users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
+
+1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
+1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page. 
+
+Note: If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
+
+For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+
+### Auto-confirm provisioning packages in OOBE
+When the provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
+
+### Automatic provisioning without using UI
+By combining the auto-launch of provisioning from USB devices and the auto-confirmation of provisioning packages, a user can provision HoloLens 2 devices automatically without using the device's UI or even wearing the device. You may continue to use the same USB drive and provisioning package for multiple devices. This is useful for deploying multiple devices at once in the same area. 
+
+1. [Create a Provisioning Package](hololens-provisioning.md) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
+1. Copy the package to a USB storage drive.
+1. [Flash your HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) to [19041.1361 or newer build](https://aka.ms/hololens2previewdownload). 
+1. When [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8) has completed flashing your device unplug your USB-C cable. 
+1. Plug in your USB drive to the device.
+1. When the HoloLens 2 device boots into OOBE it will automatically detect the provisioning package on the USB drive and launch the provisioning page.
+1. After 10 seconds the device will automatically apply the provisioning package. 
+
+Your device is now configured and will display the Provisioning Successful screen.
+
+### Using Autopilot with Wi-Fi connection
+Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB C or wifi to USB C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
 
 ### Tenantlockdown CSP and Autopilot
 HoloLens 2 devices now support TenantLockdown CSP as of Windows Holographic version 2010. 
