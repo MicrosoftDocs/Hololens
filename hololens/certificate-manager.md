@@ -1,6 +1,6 @@
 ---
-title: HoloLens 2 release notes
-description: Learn about updates in each new HoloLens 2 release.
+title: Certificate Manager
+description: Learn about to manually manage certificates on HoloLens 2.
 author: evmill
 ms.author: v-evmill
 manager: yannisle
