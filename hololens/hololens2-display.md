@@ -54,7 +54,7 @@ All said, it is still possible for specialized industrial cameras to capture rep
 
 The HoloLens 2 display actively color corrects images based on the position of the user's eyes. [Eye calibration](hololens-calibration.md) provides two important inputs: (1) the user's interpupillary distance (IPD), and (2) the direction each eye is looking. Without eye calibration, the system defaults to a nominal eye position with no eye movement. The difference between active color correction versus no correction depends on the user's physiology themselves. For example, users that have the same IPD as the system default will see fewer color correction improvements. While users that have a much narrower or wider IPD than the system default will see more changes to the display image.
 
-Note, a new feature coming in a future operating system update will start [automatically detecting eye position](hololens-insider.md#auto-eye-position-support). Users can enroll in the [insider preview](hololens-insider.md) to try out this feature now.
+Note, a new feature in [Windows Holographic version 2010](hololens-release-notes.md#windows-holographic-version-2010) will start [automatically detecting eye position](hololens-insider.md#auto-eye-position-support). 
 
 ### What are the display differences between HoloLens (1st gen) and HoloLens 2?
 
