@@ -49,7 +49,7 @@ Our Windows Holographic version 2010 Release is filled with many new features. T
 | [New power policies for HoloLens 2](hololens-release-notes.md#new-power-policies-for-hololens-2)                    | Newly supported policies for power timeout settings.                                                                                            |
 | [Update Policies](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)                                      | Newly enabled policies allowing control of updates.                                                                                             |
 | [Enabled Settings page visibility for HoloLens 2](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | Policy to pick which pages are seen in Settings app.                                                                                            |
-| [Research mode](hololens-insider.md#research-mode) | Using Research mode on HoloLens 2 | 19041.1375+ |
+| [Research mode]((hololens-release-notes.md#research-mode) | Using Research mode on HoloLens 2 | 19041.1375+ |
 | [Improvements and fixes in the update](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | Additional fixes in the update.                                                                                                                 |
 
 ### Auto Eye Position Support
