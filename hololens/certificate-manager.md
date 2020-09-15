@@ -49,6 +49,6 @@ The certificate should now be installed on the device.
 1. Select **Yes** when prompted for confirmation.
 
 
-![Certificate viewer in the Settings app](images/certificate-viewer-device.jpg)
+![Certificate viewer in the Settings app.](images/certificate-viewer-device.jpg)
 
-![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
+![Picture showing how to use Certificate UI to install a certificate.](images/certificate-device-install.jpg)
