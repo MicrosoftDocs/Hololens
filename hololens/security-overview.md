@@ -1,14 +1,15 @@
 ---
 title: HoloLens security overview
 description: Security overview
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, hololens 2, hololens2 security, security overview
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: 
 manager: yannisle
 appliesto:
 - HoloLens 2
