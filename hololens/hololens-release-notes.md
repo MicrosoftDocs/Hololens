@@ -113,6 +113,8 @@ The certificate should now be installed on the device.
 
 ![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
 
+This information can be found later [on a new Certificate Manager page](certificate-manager.md).
+
 ### Auto-launch provisioning from USB
 
 - Automated processes allowing for less user interaction, when USB Drives with Provisioning Packages are used during OOBE.
