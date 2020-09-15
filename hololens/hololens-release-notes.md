@@ -128,10 +128,14 @@ Note: If a USB drive is left plugged in while the device is booting then OOBE wi
 
 For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
+This information can be found later [here.](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+
 ### Auto-confirm provisioning packages in OOBE
 - Automated process allowing for less user interaction, when the Provisioning Package page is displayed it will automatically apply all packages listed.
 
 When the provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
+
+This information can be found later [here.](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
 
 ### Automatic provisioning without using UI
 - Combined automatic processes for reduced device interactions for provisioning. 
@@ -147,6 +151,8 @@ By combining the auto-launch of provisioning from USB devices and the auto-confi
 1. After 10 seconds the device will automatically apply the provisioning package. 
 
 Your device is now configured and will display the Provisioning Successful screen.
+
+This information can be found later [here.](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
 ### Using Autopilot with Wi-Fi connection
 - Removed need for USB-C adapters to ethernet reducing hardware needs, by enabling Autopilot to function on Wi-Fi connected devices.
