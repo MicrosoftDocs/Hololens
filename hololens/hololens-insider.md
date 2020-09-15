@@ -229,6 +229,9 @@ The app will now install to the device. To find the app open the **Start menu** 
 > [!NOTE]
 > UI during the update process is not supported. So the ShowPrompt option on [this page](https://docs.microsoft.com/windows/msix/app-installer/update-settings) and related options are not supported.
 
+#### Updates
+Updates can be configured for this method as well, so even though the user is not installing via the Microsoft Store they can still receive updates. Updates can be configured to be based on app lauch or scheduled. To read more about how to set this up [visit this page](https://docs.microsoft.com/windows/msix/app-installer/update-settings). 
+
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
 
