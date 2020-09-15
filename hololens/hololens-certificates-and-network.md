@@ -37,7 +37,7 @@ For more information, see [Configure a certificate profile for your devices in M
 
 ## Deploy certificates and Wi-Fi/VPN profile
 To deploy certificates and profiles, follow these steps:
-1.	Create a profile for each of the Root and Intermediate certificates (see [Create trusted certificate profiles](https://docs.microsoft.com/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles).) Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. **Certificate profiles without an expiration date will not be deployed.**
+1.	Create a profile for each of the Root and Intermediate certificates (see [Create trusted certificate profiles](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles).) Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. **Certificate profiles without an expiration date will not be deployed.**
 1.	Create a profile for each SCEP or PKCS certificates (see [Create a SCEP certificate profile or Create a PKCS certificate profile](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. **Certificate profiles without an expiration date will not be deployed.**
 
 > [!NOTE]
