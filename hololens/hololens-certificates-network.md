@@ -52,6 +52,8 @@ To deploy certificates and profiles, follow these steps:
 
 4.	Create a profile for each corporate VPN (see [Windows 10 and Windows Holographic device settings to add VPN connections using Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
 
+## Troubleshooting certificates
 
+In the event that you need to validate that a certificate is deployed correctly please use the [Certificate Manager](certificate-manager.md) on the device to verify your certificate is present.  
 
 
