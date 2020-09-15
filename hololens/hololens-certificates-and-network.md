@@ -1,6 +1,6 @@
 ---
 title: Prepare certificates and network profiles for HoloLens 2
-description: 
+description: How to configure and use certitifcates for network on HoloLens 2 devices
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
