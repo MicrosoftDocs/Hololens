@@ -35,19 +35,19 @@ HoloLens 2 prompts a user to calibrate the device under the following circumstan
 - The device is taken off and put back on and any of the above circumstances apply 
 
 
-![Calibration prompt](./images/07-et-adjust-for-your-eyes.png)
+![Calibration prompt for adjusting to eyes.](./images/07-et-adjust-for-your-eyes.png)
 
 During this process, you'll look at a set of targets (gems). It's fine if you blink during calibration, but try to stay focused on the gems instead of other objects in the room.  This allows HoloLens to learn about your eye position to render your holographic world.
 
-![Calibration prompt](./images/07-et-hold-head-still.png)
+![Calibration prompt telling user to keep head still and follow dots with their eyes.](./images/07-et-hold-head-still.png)
 
-![Calibration prompt](./images/08-et-gems.png)
+![Calibration prompt with gem example.](./images/08-et-gems.png)
 
-![Calibration prompt](./images/09-et-adjusting.png)
+![Calibration prompt adjusting.](./images/09-et-adjusting.png)
 
 If calibration was successful, you'll see a success screen.  If not, read more about diagnosing calibration failures [here](#troubleshooting-hololens-2-calibration).
 
-![Calibration prompt](./images/10-et-success.png)
+![Calibration prompt success.](./images/10-et-success.png)
 
 ### Calibration when sharing a device or session
 
