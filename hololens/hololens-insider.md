@@ -218,7 +218,7 @@ Now in Windows Insider builds 19041.1366+ users can install an app directly from
 1.	Pick a certificate deployment method. 
     1.	[Provisioning Packages](hololens-provisioning.md) can be applied to local devices.
     1.	MDM can be used to [apply certificates with device configurations](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
-    1.	Use the on device [Certificate Installer](hololens-insider.md#install-and-remove-certificates). 
+    1.	Use the on device [Certificate Manager](hololens-insider.md#certificate-manager). 
 
 #### End User Experience:
 1.	User receives and installs certificate to the device using a method previously chosen above. 
