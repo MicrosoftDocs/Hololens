@@ -28,7 +28,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 ## Windows Holographic, version 2010
 - Build *TBD*
 
-Our Windows Holographic version 2010 Release is filled with many new features. These new features include several new features, ranging from benefits for everyone such as Auto Eye Positioning, to new device management feature sets for Kiosk and newly enabled and created policies. Several existing experiences have also been improved such as Autopilot working with just Wi-Fi no longer need an adapter, Users being able to manage certificate installs on device using UI, and Kiosk mode now being able to be assigned on a device basis or be used offline. This new update will surely allow you to configure HoloLens devices to your reality. 
+Our Windows Holographic version 2010 Release is filled with many new features. These range from benefits for everyone such as Auto Eye Positioning, to new device management feature sets for Kiosk and newly enabled and created policies. Several existing experiences have also been improved such as Autopilot working with just Wi-Fi no longer need an adapter, Users being able to manage certificate installs on device using UI, and Kiosk mode now being able to be assigned on a device basis or be used offline. This new update will surely allow you to configure HoloLens devices to your reality.
 
 | Feature                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
