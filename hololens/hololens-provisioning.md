@@ -11,7 +11,7 @@ ms.custom:
 - CI 115190
 - CSSTroubleshooting
 ms.localizationpriority: medium
-ms.date: 03/10/2020
+ms.date: 10/13/2020
 ms.reviewer: Teresa-Motiv
 manager: laurawi
 appliesto:
@@ -148,7 +148,13 @@ After you're done, select **Create**. It only takes a few seconds. When the pack
 
 ## Apply a provisioning package to HoloLens during setup
 
-HoloLens 2 devices on build [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) or later, may use a USB drive to apply a provisioning package. Simply copy the .ppkg file to the root of the USB drive. Provisioning packages will only be applied if they’re in the root of the USB drive. Multiple provisioning package present will be applied sequentially.
+HoloLens 2 devices on Windows Holographic, version 2004 or build [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) or later, may use a USB drive to apply a provisioning package. Simply copy the .ppkg file to the root of the USB drive. Provisioning packages will only be applied if they’re in the root of the USB drive. Multiple provisioning package present will be applied sequentially.
+
+HoloLens 2 devices on [Windows Holographic version 2010](hololens-release-notes.md#windows-holographic-version-2010) or later have newer features to help streamline and simplify this process making it automatic. Please review the following sections:
+
+- [Auto-launch provisioning from USB](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+- [Auto-confirm provisioning packages in OOBE](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+- [Automatic provisioning without using UI](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
 1. Use the USB cable to connect the device to a PC (or USB drive for HoloLens 2 as mentioned above), and then start the device. Do not continue past the **First interactable moment** page of OOBE.   
     - On HoloLens (1st gen), this page contains a blue box. 
@@ -168,6 +174,39 @@ HoloLens 2 devices on build [19041.1103](hololens-release-notes.md#windows-holog
 
 > [!NOTE]
 > If the device was purchased before August 2016, you will need to sign in to the device by using a Microsoft account, get the latest operating system update, and then reset the operating system in order to apply the provisioning package.
+
+### Auto-launch provisioning from USB
+
+- Automated processes allowing for less user interaction, when USB Drives with Provisioning Packages are used during OOBE.
+
+Before this release users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
+
+1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
+1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page. 
+
+Note: If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
+
+For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+
+### Auto-confirm provisioning packages in OOBE
+- Automated process allowing for less user interaction, when the Provisioning Package page is displayed it will automatically apply all packages listed.
+
+When the provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
+
+### Automatic provisioning without using UI
+- Combined automatic processes for reduced device interactions for provisioning. 
+
+By combining the auto-launch of provisioning from USB devices and the auto-confirmation of provisioning packages, a user can provision HoloLens 2 devices automatically without using the device's UI or even wearing the device. You may continue to use the same USB drive and provisioning package for multiple devices. This is useful for deploying multiple devices at once in the same area. 
+
+1. [Create a Provisioning Package](hololens-provisioning.md) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
+1. Copy the package to a USB storage drive.
+1. [Flash your HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) to [19041.1361 or newer build](https://aka.ms/hololens2previewdownload). 
+1. When [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8) has completed flashing your device unplug your USB-C cable. 
+1. Plug in your USB drive to the device.
+1. When the HoloLens 2 device boots into OOBE it will automatically detect the provisioning package on the USB drive and launch the provisioning page.
+1. After 10 seconds the device will automatically apply the provisioning package. 
+
+Your device is now configured and will display the Provisioning Successful screen.
 
 ## Apply a provisioning package to HoloLens after setup
 
