@@ -1,6 +1,6 @@
 ---
-title: Settings URIs
-description: List of HoloLens supported URIs for PageVisibilityList
+title: Page Settings Visibility
+description: List of HoloLens supported URIs for PageVisibilityList and Guide
 author: evmill
 ms.author: v-evmill
 ms.date: 09/16/2020
@@ -15,7 +15,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Settings URIs
+# Page Settings Visibility
 
 One of the manageable features for HoloLens devices is using the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. PageVisibilityList is a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. 
 
@@ -118,8 +118,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Windows Update - Checks for updates | ms-settings:windowsupdate-action          |
 | Advanced Options                    | ms-settings:windowsupdate-options         |
 
-> [!NOTE]
->  1 The following two URI do not actually take you to the Advanced options or Options page, they will only block / show the main Windows Update page. 
+>  <sup>1</sup> The following two URIs do not actually take you to the **Advanced options** or **Options** pages; they will only block or show the main Windows Update page. 
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
