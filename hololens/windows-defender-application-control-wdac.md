@@ -23,9 +23,9 @@ WDAC allows an IT Admin to configure their devices to block the launch of apps o
 
 The following is a guide for users to learn how to [use WDAC and Windows PowerShell to allow or block apps on HoloLens 2 devices with Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens).
 
+## Package Family Names for apps on HoloLens
 
-> [!NOTE]
-> You can manually edit newPolicy.xml and add rules for applications which are only installed on HoloLens with their package family names.
+In the guide linked above, you can manually edit newPolicy.xml and add rules for applications which are only installed on HoloLens with their package family names. Sometimes there are apps you may use to use that are not on your desktop PC that you wish to add to policy. 
 
 Here is a list of commonly used and In-Box apps for HoloLens 2 devices.
 
@@ -49,6 +49,12 @@ Here is a list of commonly used and In-Box apps for HoloLens 2 devices.
 
 If an app is not on this list then a user may use Device Portal, connected to a HoloLens 2 that has installed the app wished to be blocked, to determine the PackageRelativeID and from there get the PackageFamilyName.
 
-Once Device Portal is connected, navigate to Views then Apps. Within the Installed Apps panel use the dropdown to select the installed app. Locate the PackageRelativeID. Copy app characters before the !, this will be your PackageFamilyName.
+1. Install the app on your HoloLens 2 device. 
+1. Open Settings -> Updates & Securtiy -> For developers, and enable **Developer mode** and then **Device portal**. 
+    1. More more details instructions read more about [setup and use of device portal here](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+1. Once Device Portal is connected, navigate to **Views** then **Apps**. 
+1. Within the Installed Apps panel use the dropdown to select the installed app. 
+1. Locate the PackageRelativeID. 
+1. Copy app characters before the !, this will be your PackageFamilyName.
 
-More more details instructions read more about [setup and use of device portal here](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal). 
+
