@@ -44,7 +44,9 @@ Here is the list of the upcoming features that you can try out today in our Wind
 | [New power policies for HoloLens 2](hololens-insider.md#new-power-policies-for-hololens-2)                      | Newly supported policies for power timeout settings.                                           | 19041.1349+                 |
 | [Update Policies](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | Newly enabled policies allowing control of updates.                                            | 19041.1352+                 |
 | [Enabled Settings page visibility for HoloLens 2](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | Policy to pick which pages are seen in Settings app.                                           | 19041.1349+                 |
+|  [Research mode](hololens-insider.md#research-mode) | Using Research mode on HoloLens 2 | 19041.1375+ |
 | [Improvements and fixes in the update](hololens-insider.md#improvements-and-fixes-in-the-update)                   | Additional fixes in the update.                                                                | 19041.1361+                 |
+
 
 ### Auto Eye Position Support
 
@@ -275,6 +277,15 @@ We’ve now enabled a policy that allows IT Admins to either prevent specific pa
 To learn which page settings you can customize on HoloLens 2, please visit our [Settings URIs page](settings-uri-list.md). 
  
 ![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
+
+### Research mode
+While in Research Mode, the HoloLens 2 becomes a potent tool for computer vision research. Compared to previous editions, Research Mode for HoloLens 2 has the following advantages:
+-	In addition to sensors exposed in HoloLens (1st gen) Research Mode, we now provide IMU sensor access including an accelerometer, gyroscope, and magnetometer.
+-	HoloLens 2 provides new capabilities that can be used together with Research Mode. Specifically, access to articulated hand-tracking and eye-tracking APIs that can deliver a richer set of experiments.
+
+Researchers now have the option of enabling Research Mode on their HoloLens devices to access all of these external facing raw image sensors streams. Research Mode for HoloLens 2 also provides access to the accelerometer, gyroscope, and magnetometer readings. To protect users’ privacy, raw eye-tracking camera images are not available through Research Mode, but eye-gaze direction  is available through existing APIs.
+
+Check out the [Research Mode documentation](https://docs.microsoft.com/windows/mixed-reality/research-mode) for further technical details.
 
 ### Improvements and fixes in the update:
 - Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
