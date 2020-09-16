@@ -1,6 +1,6 @@
 ---
-title: Settings URIs
-description: List of HoloLens supported URIs for PageVisibilityList
+title: Page Settings Visibility
+description: List of HoloLens supported URIs for PageVisibilityList and Guide
 author: evmill
 ms.author: v-evmill
 ms.date: 09/16/2020
@@ -15,7 +15,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Settings URIs
+# Page Settings Visibility
 
 One of the manageable features for HoloLens devices is using the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. PageVisibilityList is a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. 
 
