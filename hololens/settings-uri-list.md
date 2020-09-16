@@ -3,7 +3,7 @@ title: Settings URIs
 description: List of HoloLens supported URIs for PageVisibilityList
 author: evmill
 ms.author: v-evmill
-ms.date: 8/27/2020
+ms.date: 09/16/2020
 ms.topic: article
 keywords: hololens, hololens 2, assigned access, kiosk, settings page
 ms.prod: hololens
