@@ -25,16 +25,17 @@ The following is a guide for users to learn how to [use WDAC and Windows PowerSh
 
 When users search for apps installed on their Windows 10 PC using the first example step they may need to make a few attempts to narrow down the results.
 
-    ```powershell
-    $package1 = Get-AppxPackage -name *<applicationname>*
-    ``` 
+```powershell
+$package1 = Get-AppxPackage -name *<applicationname>*
+``` 
+
 If you don’t know the full name of the package, you may need to run ‘Get-AppxPackage -name \*YourBestGuess\*’ a few times to find it. Then once you have the name run ‘$package1 = Get-AppxPackage -name Actual.PackageName‘
 
 For example running the following for Edge will return more than one result, but from that list you can identify that the full name you need is Microsoft.MicrosoftEdge. 
 
-    ```powershell
-    Get-AppxPackage -name *edge*
-    ``` 
+```powershell
+Get-AppxPackage -name *edge*
+``` 
 
 ## Package Family Names for apps on HoloLens
 
