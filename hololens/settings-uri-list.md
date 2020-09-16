@@ -118,8 +118,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Windows Update - Checks for updates | ms-settings:windowsupdate-action          |
 | Advanced Options                    | ms-settings:windowsupdate-options         |
 
-> [!NOTE]
->  1 The following two URI do not actually take you to the Advanced options or Options page, they will only block / show the main Windows Update page. 
+>  <sup>1</sup> The following two URI do not actually take you to the Advanced options or Options page, they will only block / show the main Windows Update page. 
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
