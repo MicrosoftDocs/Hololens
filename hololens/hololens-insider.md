@@ -112,6 +112,8 @@ This is a simple method of distributing a completely built app. Regardless of if
 
 Read about the full process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
 
+![Installing MRTK Examples via App Installer](images/hololens-app-installer-picture.jpg)
+
 ### Installing apps from a web page
 Now in Windows Insider builds 19041.1366+ users can install an app directly from a web server. 
 
