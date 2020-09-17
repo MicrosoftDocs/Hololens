@@ -30,6 +30,8 @@ Here is the list of the upcoming features that you can try out today in our Wind
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Auto Eye Position Support](hololens-insider.md#auto-eye-position-support)                              | Actively finds eye positions and enables accurate hologram positioning.                        | 19041.1339+                 |
 | [Certificate Manager](hololens-insider.md#certificate-manager)                                     | Users can view, install and remove certificates Current User and Local Machine certificates in the Settings app.                                         | 19041.1361+                 |
+| App Installer | On device UI to install apps from appx files. | 19041.1377+ |
+| Installing apps from a web page | Set up apps to be downloaded and installed from the browser. | 19041.1366+ | 
 | [Auto-launch provisioning from USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE Automatically detects provisioning packages on USB drives.                                | 19041.1361+                 |
 | [Auto-confirm provisioning packages in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatically apply provisioning packages in OOBE.                                             | 19041.1361+                 |
 | [Using Autopilot with Wi-Fi connection](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Use autopilot from device Wi-Fi without need for ethernet adapter.                             | 19041.1364+                 |
@@ -102,6 +104,17 @@ The certificate should now be installed on the device.
 ![Certificate viewer in the Settings app](images/certificate-viewer-device.jpg)
 
 ![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
+
+### Install Apps on HoloLens 2 via App Installer
+Users can now install Apps via Appx Bundles now without the need to enable Developer Mode or use Device Portal. This experience is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens.
+
+This is a simple method of distributing a completely built app. Regardless of if you simply wish to demo your app to another user with a HoloLens, or you'd like to deploy your app at scale this method will work for both.
+
+Read about the process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
+
+
+
+
 
 ### Auto-launch provisioning from USB
 Before this build users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
