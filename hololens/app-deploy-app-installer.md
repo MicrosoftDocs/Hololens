@@ -19,6 +19,10 @@ appliesto:
 # Install Apps on HoloLens 2 via App Installer
 
 Users can now install Apps via Appx Bundles now without the need to enable Developer Mode or use Device Portal. This experience is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. 
+
+> [!IMPORTANT]
+> This feature is currently only avalible in Windows Insider builds 19041.1377+. [Learn more on how to enroll in Windows Insider builds](hololens-insider.md).
+
 > [!NOTE]
 > Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
 
@@ -31,6 +35,8 @@ Users can now install Apps via Appx Bundles now without the need to enable Devel
 1.	The App Installer will launch. Select the **Install** button to install your app. 
 
 The installed app will automatically launch upon the completion of installing. 
+
+![Installing MRTK Examples via App Installer](images/hololens-app-installer-picture.jpg)
 
 If your app failed to install check the following:
 -	Your app is either a Master or Release build.
