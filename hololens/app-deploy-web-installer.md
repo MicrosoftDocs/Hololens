@@ -20,16 +20,13 @@ appliesto:
 
 Users can install an app directly from a web server. This takes use of the App Installer combined with an easy download and install distribution method. 
 
-> [!IMPORTANT]
-> This feature is currently only avalible in Windows Insider builds 19041.1366+. [Learn more on how to enroll in Windows Insider builds](hololens-insider.md).
-
 ## How to set this up:
 1.	Ensure your app is correctly configured to install.
 1.	Follow these [steps to enable this on a web page](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage). 
 1.	Pick a certificate deployment method. 
     1.	[Provisioning Packages](hololens-provisioning.md) can be applied to local devices.
     1.	MDM can be used to [apply certificates with device configurations](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
-    1.	Use the on device [Certificate Manager](hololens-insider.md#certificate-manager). 
+    1.	Use the on device [Certificate Manager](certificate-manager.md). 
 
 ## End User Experience:
 1.	User receives and installs certificate to the device using a method previously chosen above. 
