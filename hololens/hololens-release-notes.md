@@ -32,25 +32,27 @@ Our Windows Holographic version 2010 Release is filled with many new features. T
 
 | Feature                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support)                            | Actively finds eye positions without users going through active calibration.                                                                    |
-| [Certificate Manager](hololens-release-notes.md#certificate-manager)                                  | Allows new simpler methods to install and remove certificates from the Settings app that a user can preform.                                    |
+| [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support) | Actively finds eye positions without users going through active calibration.   |
+| [Certificate Manager](hololens-release-notes.md#certificate-manager)   | Allows new simpler methods to install and remove certificates from the Settings app that a user can preform.     |
+| [App Installer](hololens-release-notes.md#install-apps-on-hololens-2-via-app-installer) | On device UI to install apps from appx files. |
+| [Installing apps from a web page](hololens-release-notes.md#installing-apps-from-a-web-page) | Set up apps to be downloaded and installed from the browser. |
 | [Auto-launch provisioning from USB](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | Provisioning packages on USB drives automatically prompt the provisioning page in OOBE.                                                         |
 | [Auto-confirm provisioning packages in OOBE](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | Provisioning packages are automatically applied during OOBE from the provisioning page.                                                         |
 | [Automatic provisioning without using UI](hololens-release-notes.md#automatic-provisioning-without-using-ui) | How to combine the provsioning auto-launch and auto-confirm together. |
-| [Using Autopilot with Wi-Fi connection](hololens-release-notes.md#using-autopilot-with-wi-fi-connection)                | Use autopilot from device Wi-Fi without need for ethernet adapter.                                                                              |
+| [Using Autopilot with Wi-Fi connection](hololens-release-notes.md#using-autopilot-with-wi-fi-connection) | Use autopilot from device Wi-Fi without need for ethernet adapter. |
 | [Tenantlockdown CSP and Autopilot](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | After tenant enrollment and the policy is applied, the device can only be enrolled in that tenant any time the device is reset or   re-flashed. |
 | [Global Assigned Access](hololens-release-notes.md#global-assigned-access--kiosk-mode)                               | New configuration method for multiple app kiosk mode which applies the kiosk at the system level, making it applicable to all.                  |
 | [Auto-launch an app in multi-app kiosk](hololens-release-notes.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | Sets an application to launch automatically when signing into a multiple-app kiosk mode.                                                        |
-| [Visitor Auto-logon for Kiosks](hololens-release-notes.md#visitor-auto-logon-for-kiosks)                        | When using Visitor accounts for Kiosk mode, users can now auto-logon.                                                                           |
+| [Visitor Auto-logon for Kiosks](hololens-release-notes.md#visitor-auto-logon-for-kiosks)          | When using Visitor accounts for Kiosk mode, users can now auto-logon.    |
 | [Kiosk mode behavior changes for handling of failures](hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode failure now has restrictive fallback.                                                                                                |
-| [HoloLens Policies](hololens-release-notes.md#hololens-policies)                                    | New policies for HoloLens.                                                                                                                      |
+| [HoloLens Policies](hololens-release-notes.md#hololens-policies)                                    | New policies for HoloLens.     |
 | [Cache AAD Group membership for offline Kiosk](hololens-release-notes.md#cache-aad-group-membership-for-offline-kiosk)         | New policy allows users to uses group membership cache to use Kiosk mode offline for set number of days.                                        |
 | [New device restriction policies for HoloLens 2](hololens-release-notes.md#new-device-restriction-policies-for-hololens-2)       | Device management policies enabled newly enabled for HoloLens 2.                                                                                |
-| [New power policies for HoloLens 2](hololens-release-notes.md#new-power-policies-for-hololens-2)                    | Newly supported policies for power timeout settings.                                                                                            |
-| [Update Policies](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)                                      | Newly enabled policies allowing control of updates.                                                                                             |
-| [Enabled Settings page visibility for HoloLens 2](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | Policy to pick which pages are seen in Settings app.                                                                                            |
-| [Research mode]((hololens-release-notes.md#research-mode) | Using Research mode on HoloLens 2 | 19041.1375+ |
-| [Improvements and fixes in the update](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | Additional fixes in the update.                                                                                                                 |
+| [New power policies for HoloLens 2](hololens-release-notes.md#new-power-policies-for-hololens-2)       | Newly supported policies for power timeout settings.  |
+| [Update Policies](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | Newly enabled policies allowing control of updates.           |
+| [Enabled Settings page visibility for HoloLens 2](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | Policy to pick which pages are seen in Settings app.             |
+| [Research mode](hololens-release-notes.md#research-mode) | Using Research mode on HoloLens 2. |
+| [Improvements and fixes in the update](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | Additional fixes in the update.   |
 
 ### Auto Eye Position Support
 
@@ -114,6 +116,22 @@ The certificate should now be installed on the device.
 ![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
 
 This information can be found later [on a new Certificate Manager page](certificate-manager.md).
+
+### Install Apps on HoloLens 2 via App Installer
+Users can now install Apps via Appx Bundles now without the need to enable Developer Mode or use Device Portal. This experience is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens.
+
+This is a simple method of distributing a completely built app. Regardless of if you simply wish to demo your app to another user with a HoloLens, or you'd like to deploy your app at scale this method will work for both.
+
+Read about the full process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
+
+![Installing MRTK Examples via App Installer](images/hololens-app-installer-picture.jpg)
+
+### Installing apps from a web page
+Now in Windows Holographic, version 2010 users can install an app directly from a web server. 
+
+Appx packages now on created can be hosted on a web page. When combined with certificate deployment this method of app distribution can be very useful for app deployment.
+
+Read about the full process of [installing apps on HoloLens 2 from a web page](app-deploy-web-installer.md)
 
 ### Auto-launch provisioning from USB
 
