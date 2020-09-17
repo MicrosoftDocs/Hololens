@@ -1,9 +1,9 @@
 ---
-title: Settings URIs
-description: List of HoloLens supported URIs for PageVisibilityList
+title: Page Settings Visibility
+description: List of HoloLens supported URIs for PageVisibilityList and Guide
 author: evmill
 ms.author: v-evmill
-ms.date: 8/1/2020
+ms.date: 09/16/2020
 ms.topic: article
 keywords: hololens, hololens 2, assigned access, kiosk, settings page
 ms.prod: hololens
@@ -15,23 +15,54 @@ appliesto:
 - HoloLens 2
 ---
 
-# Settings URIs
+# Page Settings Visibility
 
-One of the manageable features for HoloLens devices is using the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. HoloLens devices and Windows 10 devices have a different selection of pages within the Settings app. On this page you will find only the settings that exist on HoloLens. 
+One of the manageable features for HoloLens devices is using the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. PageVisibilityList is a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. 
 
-## Accounts
+> [!IMPORTANT]
+> This feature is currently only avalible in [Windows Insider builds](hololens-insider.md). Please ensure devices you intend to use this for are on build 19041.1349+.
+
+The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "ms-settings:network-wifi" and "ms-settings:bluetooth" respectively:
+- showonly:network-wifi;network-proxy;bluetooth
+
+To set this via a Provsioning Package: 
+1. While creating your package in Windows Configuration Designer navigate to **Policies > Settings > PageVisibilityList**
+1. Enter the string: **showonly:network-wifi;network-proxy;bluetooth**
+1. Export your Provsioning Package.
+1. Apply the package to your device. 
+For full details on how to create and apply a provsioning package visit [this page](hololens-provisioning.md). 
+
+This can be done via Intune using OMA-URI.
+1. Create a **Custom policy**.
+1. When setting the OMA-URI use the string: **./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList**
+1. When selecting the data pick choose: **String**
+1. When typing the value use: **showonly:network-wifi;network-proxy;bluetooth**
+1. Make sure to assign the custom device configuration to the a group the device is intended to be in.
+For more information on Intune groups and device configurations [visit here](hololens-mdm-configure.md).
+
+Regardless of method choosen your device should now receive the changes and users will be presented with the following Settings App. 
+
+![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
+
+To configure the Settings app pages to show or hide your own selection of pages, please take a look at the Settings URIs avalible on HoloLens. 
+
+## Settings URIs
+
+HoloLens devices and Windows 10 devices have a different selection of pages within the Settings app. On this page you will find only the settings that exist on HoloLens. 
+
+### Accounts
 | Settings page           | URI                                            |
 |-------------------------|------------------------------------------------|
 | Sign In Options         | ms-settings:signinoptions                      |
 | Iris Enrollment       | ms-settings:signinoptions-launchirisenrollment |
 | Access work or school | ms-settings:workplace                          |
 
-## Devices
+### Devices
 | Settings page | URI                          |
 |---------------|------------------------------|
 | Bluetooth     | ms-settings:bluetooth <br> ms-settings:connecteddevices |
 
-## Privacy
+### Privacy
 | Settings page            | URI                                             |
 |--------------------------|-------------------------------------------------|
 | Account Info             | ms-settings:privacy-accountinfo                 |
@@ -58,14 +89,14 @@ One of the manageable features for HoloLens devices is using the [Settings/PageV
 | Voice Activation       | ms-settings:privacy-voiceactivation             |
 | Camera                   | ms-settings:privacy-webcam                      |
 
-## Network & Internet
+### Network & Internet
 | Settings page | URI                              |
 |---------------|----------------------------------|
 | Wi-Fi  | ms-settings:network-wifi<br>ms-settings:network-wifisettings<br>ms-settings:network-status<br>ms-settings:wifi-provisioning    |
 | VPN   | ms-settings:network-vpn          |
 | Proxy | ms-settings:network-proxy        |
 
-## System
+### System
 | Settings page      | URI                                |
 |--------------------|------------------------------------|
 | Shared Experiences | ms-settings:crossdevice            |
@@ -73,13 +104,13 @@ One of the manageable features for HoloLens devices is using the [Settings/PageV
 | Notifications & actions  | ms-settings:notifications          |
 | Storage            | ms-settings:storagesense           |
 
-## Time & Language
+### Time & Language
 | Settings page | URI                                           |
 |---------------|-----------------------------------------------|
 | Region        | ms-settings:regionformatting                  |
 | Language      | ms-settings:regionlanguage<br>ms-settings:regionlanguage-adddisplaylanguage<br>ms-settings:regionlanguage-setdisplaylanguage |
 
-## Update & Security
+### Update & Security
 | Settings page                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Windows Insider Program               | ms-settings:windowsinsider <br>ms-settings:windowsinsider-optin          |
@@ -87,8 +118,7 @@ One of the manageable features for HoloLens devices is using the [Settings/PageV
 | Windows Update - Checks for updates | ms-settings:windowsupdate-action          |
 | Advanced Options                    | ms-settings:windowsupdate-options         |
 
-> [!NOTE]
->  1 The following two URI do not actually take you to the Advanced options or Options page, they will only block / show the main Windows Update page. 
+>  <sup>1</sup> The following two URIs do not actually take you to the **Advanced options** or **Options** pages; they will only block or show the main Windows Update page. 
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
