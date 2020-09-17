@@ -30,6 +30,8 @@ Here is the list of the upcoming features that you can try out today in our Wind
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Auto Eye Position Support](hololens-insider.md#auto-eye-position-support)                              | Actively finds eye positions and enables accurate hologram positioning.                        | 19041.1339+                 |
 | [Certificate Manager](hololens-insider.md#certificate-manager)                                     | Users can view, install and remove certificates Current User and Local Machine certificates in the Settings app.                                         | 19041.1361+                 |
+| [App Installer](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | On device UI to install apps from appx files. | 19041.1377+ |
+| [Installing apps from a web page](hololens-insider.md#installing-apps-from-a-web-page) | Set up apps to be downloaded and installed from the browser. | 19041.1366+ | 
 | [Auto-launch provisioning from USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE Automatically detects provisioning packages on USB drives.                                | 19041.1361+                 |
 | [Auto-confirm provisioning packages in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatically apply provisioning packages in OOBE.                                             | 19041.1361+                 |
 | [Using Autopilot with Wi-Fi connection](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Use autopilot from device Wi-Fi without need for ethernet adapter.                             | 19041.1364+                 |
@@ -103,13 +105,30 @@ The certificate should now be installed on the device.
 
 ![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
 
+### Install Apps on HoloLens 2 via App Installer
+Users can now install Apps via Appx Bundles now without the need to enable Developer Mode or use Device Portal. This experience is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens.
+
+This is a simple method of distributing a completely built app. Regardless of if you simply wish to demo your app to another user with a HoloLens, or you'd like to deploy your app at scale this method will work for both.
+
+Read about the full process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
+
+![Installing MRTK Examples via App Installer](images/hololens-app-installer-picture.jpg)
+
+### Installing apps from a web page
+Now in Windows Insider builds 19041.1366+ users can install an app directly from a web server. 
+
+Appx packages now on created can be hosted on a web page. When combined with certificate deployment this method of app distribution can be very useful for app deployment.
+
+Read about the full process of [installing apps on HoloLens 2 from a web page](app-deploy-web-installer.md)
+
 ### Auto-launch provisioning from USB
 Before this build users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
 
 1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
 1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page. 
 
-Note: If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
+> [!NOTE]
+> If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
 
 For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
@@ -207,6 +226,9 @@ For an AAD configuration, users can achieve something similar to this today with
 Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Starting in this Windows Insider build, in case of failures, no apps will be shown in the start menu as below: 
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+
+#### Updates
+Updates can be configured for this method as well, so even though the user is not installing via the Microsoft Store they can still receive updates. Updates can be configured to be based on app lauch or scheduled. To read more about how to set this up [visit this page](https://docs.microsoft.com/windows/msix/app-installer/update-settings). 
 
 ### HoloLens Policies
 New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
