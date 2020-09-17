@@ -110,11 +110,14 @@ Users can now install Apps via Appx Bundles now without the need to enable Devel
 
 This is a simple method of distributing a completely built app. Regardless of if you simply wish to demo your app to another user with a HoloLens, or you'd like to deploy your app at scale this method will work for both.
 
-Read about the process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
+Read about the full process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
 
+### Installing apps from a web page
+Now in Windows Insider builds 19041.1366+ users can install an app directly from a web server. 
 
+Appx packages now on created can be hosted on a web page. When combined with certificate deployment this method of app distribution can be very useful for app deployment.
 
-
+Read about the full process of [installing apps on HoloLens 2 from a web page](app-deploy-web-installer.md)
 
 ### Auto-launch provisioning from USB
 Before this build users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
@@ -220,29 +223,6 @@ For an AAD configuration, users can achieve something similar to this today with
 Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Starting in this Windows Insider build, in case of failures, no apps will be shown in the start menu as below: 
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
-
-### Installing apps from a web page
-
-Now in Windows Insider builds 19041.1366+ users can install an app directly from a web server. 
-
-#### How to set this up:
-1.	Ensure your app is correctly configured to install.
-1.	Follow these [steps to enable this on a web page](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage). 
-1.	Pick a certificate deployment method. 
-    1.	[Provisioning Packages](hololens-provisioning.md) can be applied to local devices.
-    1.	MDM can be used to [apply certificates with device configurations](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
-    1.	Use the on device [Certificate Manager](hololens-insider.md#certificate-manager). 
-
-#### End User Experience:
-1.	User receives and installs certificate to the device using a method previously chosen above. 
-1.	User visits the URL created from the step above.
-
-The app will now install to the device. To find the app open the **Start menu** and select the **All apps** button to find your app. 
-
--	For help troubleshooting this installation method please visit [troubleshoot app installer issues](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues). 
-
-> [!NOTE]
-> UI during the update process is not supported. So the ShowPrompt option on [this page](https://docs.microsoft.com/windows/msix/app-installer/update-settings) and related options are not supported.
 
 #### Updates
 Updates can be configured for this method as well, so even though the user is not installing via the Microsoft Store they can still receive updates. Updates can be configured to be based on app lauch or scheduled. To read more about how to set this up [visit this page](https://docs.microsoft.com/windows/msix/app-installer/update-settings). 
