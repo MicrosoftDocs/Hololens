@@ -5,7 +5,7 @@ keywords: app management, app, hololens, app installer
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 9/15/2020
+ms.date: 9/17/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
