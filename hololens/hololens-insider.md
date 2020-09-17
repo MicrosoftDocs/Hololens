@@ -127,7 +127,8 @@ Before this build users had to launch the provisioning screen manually during OO
 1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
 1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page. 
 
-Note: If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
+> [!NOTE]
+> If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
 
 For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
