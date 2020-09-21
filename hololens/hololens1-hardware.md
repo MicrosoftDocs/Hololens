@@ -149,6 +149,7 @@ Using the following to understand the environment:
 ### Safety
 
 HoloLens has been tested and found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
+- [SAR Information](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## Care and cleaning
 
