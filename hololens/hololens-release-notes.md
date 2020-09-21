@@ -309,6 +309,8 @@ Newly enabled policies that allow for more management options of HoloLens 2 devi
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
 - [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
 
+These two new polices for AllowAddProvisioningPackage and AllowRemoveProvisioningPackage are being added to our [Common Device Restrictions](hololens-common-device-restrictions.md).
+
 ### New power policies for Hololens 2
 - More options for when HoloLens sleeps or locks via power policies. 
 
