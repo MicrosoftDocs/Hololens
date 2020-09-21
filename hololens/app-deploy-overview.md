@@ -65,7 +65,7 @@ Installing via Provisioning Packages is applicable for:
 * USB side-load only
 * No auto update (requires manual updates via Provisioning Package)
 
-### Install Apps on HoloLens 2 via App Installer
+## Install Apps on HoloLens 2 via App Installer
 Using the [App Installer](app-deploy-app-installer.md) users can have an experience that is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. This can be done without needing to enable Developer Mode or use Device Portal making it secure for enterprise. This is a simple method of distributing a completely built app. Regardless of if you simply wish to demo your app to another user with a HoloLens, or you'd like to deploy your app at scale this method will work for both.
 
 Installing via App Installer is applicable for: 
@@ -74,7 +74,7 @@ Installing via App Installer is applicable for:
 * Does not require Developer mode or Device portal
 * Easy for end user to install
 
-### Installing apps from a web page
+## Installing apps from a web page
 Apps can now be set up to [Install from a web page](app-deploy-web-installer.md) appx packages now on created can be hosted on a web page. When combined with certificate deployment this method of app distribution can be very useful for app deployment.
 
 Install from a web page is applicable for: 
