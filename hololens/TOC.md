@@ -78,6 +78,7 @@
 ### [Common Device Restrictions](hololens-common-device-restrictions.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
 ### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
+### [Page Settings Visibility for HoloLens](settings-uri-list.md)
 ### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
 
 
@@ -106,7 +107,6 @@
 # HoloLens release notes
 ## [HoloLens 2 release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
-### [Page Settings URIs for HoloLens](settings-uri-list.md)
 ### [App Installer](app-deploy-app-installer.md)
 ### [Web app installer](app-deploy-web-installer.md)
 ## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
