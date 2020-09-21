@@ -38,7 +38,6 @@ Here is the list of the upcoming features that you can try out today in our Wind
 |[Tenantlockdown CSP and Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | After tenant enrollment and the policy is applied, the device can only be enrolled in that tenant any time the device is reset or re-flashed. | 19041.1366+|
 | [Global Assigned Access](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system   level. | 19041.1356+                 |
 | [Auto-launch an app in multi-app kiosk](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Sets an application to launch automatically when signing into a multiple-app kiosk   mode.     | 19041.1346+                 |
-| [Visitor Auto-logon for Kiosks](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Enables the auto-logon on Visitor accounts to be used for Kiosk modes.                         | 19041.1361+                 |
 | [Kiosk mode behavior changes for handling of failures](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Changes in how Kiosk mode failure is now handled.                                              | 19041.1356+                 |
 | [HoloLens Policies](hololens-insider.md#hololens-policies)                                      | New policies for mixed reality devices.                                                        | 19041.1349+                 |
 | [Cache AAD Group membership for offline Kiosk](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Policy for how many days AAD group membership cache is allowed to be used for Kiosk   mode.    | 19041.1356+                 |
@@ -208,18 +207,6 @@ Application is automatically launched when user signs-in.
 <AllowedApps>                     
     <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
-
-### Visitor Auto logon for Kiosks
-This new feature enables the auto logon on Visitor accounts to be used for Kiosk modes. 
-
-For a non-AAD configuration, to configure a device for visitor autologon:
-1.	Create a provisioning package that:
-    1.	Configures **Runtime settings/AssignedAccess** to allow Visitor accounts.
-    1.	Optionally enrolls the device in MDM **(Runtime settings/Workplace/Enrollments)** so that it can be managed later.
-    1.	Do not create a local account
-1.	[Apply the provisioning package](hololens-provisioning.md).
-
-For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
 
 ### Kiosk mode behavior changes for handling of failures
 

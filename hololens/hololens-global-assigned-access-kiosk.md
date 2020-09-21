@@ -3,7 +3,7 @@ title: Global Assigned Access
 description: Guide for using OMA-URI for Global Assigned Access Kiosks
 author: evmill
 ms.author: v-evmill
-ms.date: 7/13/2020
+ms.date: 9/21/2020
 ms.topic: article
 keywords: hololens, hololens 2, assigned access, kiosk
 ms.prod: hololens
@@ -40,7 +40,7 @@ This feature configures Hololens 2 device for multiple app kiosk mode which is a
 
 2.	Follow the steps in [Use a provisioning package to set up a single-app or multi-app kiosk](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk), specifically the section "Prov. package, step 2 – Add the kiosk configuration XML file to a provisioning package" and refer to the XML file that was saved in the previous step. 
 
-## Can I create a configuration where global applies to everyone except 1 AAD account or AAD group? 
+## Can I create a configuration where global applies to everyone and separate configuration applies to 1 AAD account or AAD group? 
 
 Yes, please refer to the example XML blob below. Global Assigned Access profile is applied on Hololens when a specific one for the signed in user is not found, so it is default kiosk mode configuration for signed-in user. 
 Here is an example of XML blob to be used: 
