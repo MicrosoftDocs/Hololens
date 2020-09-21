@@ -29,7 +29,7 @@ Provisioning packages can be used to prepare and configure devices in an environ
 > To learn the basics of creating a Provisioning Package for HoloLens devices, visit [HoloLens Provisioning](https://docs.microsoft.com/hololens/hololens-provisioning). To deploy an app, you must start with advanced provisioning. 
 
 > [!NOTE] 
-> HoloLens (1st gen) devices only support installing an app via PPKG only during OOBE and only with user context installs.
+> HoloLens (1st gen) has limited support installing apps (**UniversalAppInstall**) by using a provisioning package. HoloLens (1st gen) devices only support installing an app via PPKG only during OOBE and only with user context installs.
 
 ## Setup
 
