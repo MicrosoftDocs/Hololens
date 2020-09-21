@@ -473,6 +473,9 @@ To set up kiosk mode by using the Windows Device Portal, follow these steps.
     ![Kiosk Mode](images/kiosk.png)
 1. Restart HoloLens. If you still have your Device Portal page open, you can select **Restart** at the top of the page.
 
+> [!NOTE]
+> Kiosk Mode can be set via Device Portal’s REST API by doing a POST to /api/holographic/kioskmode/settings with one required query string parameter (“kioskModeEnabled” with a value of “true” or “false”) and one optional parameter (“startupApp” with a value of a package name). Please keep in mind that Device Portal is intended for developers only and should not be enabled on non-developer devices. The REST API is subject to change in future updates/releases.
+
 ## More information
 
 Watch how to configure a kiosk by using a provisioning package.  
