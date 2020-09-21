@@ -245,4 +245,4 @@ In Windows Configuration Designer, when you create a provisioning package for Wi
 Apps can be installed via provisioning packages on HoloLens 2 devices. This allows for an easily re-useable package you can use to help you distribute your apps. Read the full instructions for [deploying apps via Provisioning Packages](app-deploy-provisioning-package.md).  
 
 > [!NOTE]
-> HoloLens (1st gen) does not support installing apps (**UniversalAppInstall**) by using a provisioning package.
+> HoloLens (1st gen) has limited support installing apps (**UniversalAppInstall**) by using a provisioning package. HoloLens (1st gen) devices only support installing an app via PPKG only during OOBE and only with user context installs.

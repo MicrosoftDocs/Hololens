@@ -14,7 +14,7 @@
     <Configs> 
         <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/> 
         <Config> 
-           <Account>AzureAD\<!-fully qualified AAD account name></Account> 
+           <!-- Refer to https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#config-for-group-accounts on how to specify AAD account or AAD group --> 
            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
         </Config> 
     </Configs> 
