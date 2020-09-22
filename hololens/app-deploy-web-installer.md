@@ -5,7 +5,7 @@ keywords: app management, app, hololens, app installer, web install
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 9/17/2020
+ms.date: 10/13/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -17,6 +17,9 @@ appliesto:
 ---
 
 # Installing apps from a web page
+
+> [!NOTE]
+> This was added in [Windows Holographic, verison 2010](hololens-release-notes.md#windows-holographic-version-2010) for HoloLens 2 devices.
 
 Users can install an app directly from a web server. This takes use of the App Installer combined with an easy download and install distribution method. 
 
