@@ -5,7 +5,7 @@ keywords: app management, app, hololens, app installer
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 9/17/2020
+ms.date: 10/13/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -20,8 +20,8 @@ appliesto:
 
 Users can now install Apps via Appx Bundles now without the need to enable Developer Mode or use Device Portal. This experience is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. 
 
-> [!IMPORTANT]
-> This feature is currently only avalible in Windows Insider builds 19041.1377+. [Learn more on how to enroll in Windows Insider builds](hololens-insider.md).
+> [!NOTE]
+> This was added in [Windows Holographic, verison 2010](hololens-release-notes.md#windows-holographic-version-2010) for HoloLens 2 devices.
 
 > [!NOTE]
 > Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
