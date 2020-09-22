@@ -66,7 +66,7 @@ Installing via Provisioning Packages is applicable for:
 * No auto update (requires manual updates via Provisioning Package)
 
 ## Install Apps on HoloLens 2 via App Installer
-Using the [App Installer](app-deploy-app-installer.md) users can have an experience that is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. This can be done without needing to enable Developer Mode or use Device Portal making it secure for enterprise. This is a simple method of distributing a completely built app. Regardless of if you simply wish to demo your app to another user with a HoloLens, or you'd like to deploy your app at scale this method will work for both.
+Using the [App Installer](app-deploy-app-installer.md) users can have an experience that is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. This can be done without needing to enable Developer Mode or use Device Portal. This is a simple method of distributing a completely built app. Regardless of if you simply wish to demo your app to another user with a HoloLens, or you'd like to deploy your app this method works easily.
 
 Installing via App Installer is applicable for: 
 * Line of Buisness / Self developed (non-public) apps
