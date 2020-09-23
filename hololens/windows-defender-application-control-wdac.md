@@ -46,6 +46,7 @@ Here is a list of commonly used and In-Box apps for HoloLens 2 devices.
 | App Name                   | Package Family Name                                |
 |----------------------------|----------------------------------------------------|
 | 3D Viewer                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe          |
+| App Installer              | Microsoft.DesktopAppInstaller_8wekyb3d8bbwe          |
 | Calendar                   | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
 | Camera                     | HoloCamera_cw5n1h2txyewy                           |
 | Cortana                    | Microsoft.549981C3F5F10_8wekyb3d8bbwe              |
