@@ -46,7 +46,7 @@ Here is a list of commonly used and In-Box apps for HoloLens 2 devices.
 | App Name                   | Package Family Name                                |
 |----------------------------|----------------------------------------------------|
 | 3D Viewer                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe          |
-| App Installer              | Microsoft.DesktopAppInstaller_8wekyb3d8bbwe          |
+| App Installer              | Microsoft.DesktopAppInstaller_8wekyb3d8bbwe <sup>1</sup>         |
 | Calendar                   | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
 | Camera                     | HoloCamera_cw5n1h2txyewy                           |
 | Cortana                    | Microsoft.549981C3F5F10_8wekyb3d8bbwe              |
@@ -61,6 +61,8 @@ Here is a list of commonly used and In-Box apps for HoloLens 2 devices.
 | Photos                     | Microsoft.Windows.Photos_8wekyb3d8bbwe             |
 | Settings                   | HolographicSystemSettings_cw5n1h2txyewy            |
 | Tips                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
+
+- 1 - Blocking App Installer will only block the App Installer app, and not apps installed from other sources such as the Microsoft Store or from your MDM solution.
 
 If an app is not on this list then a user may use Device Portal, connected to a HoloLens 2 that has installed the app wished to be blocked, to determine the PackageRelativeID and from there get the PackageFamilyName.
 
