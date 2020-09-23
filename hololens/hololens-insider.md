@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 8/21/2020
+ms.date: 9/23/2020
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -31,8 +31,6 @@ Here is the list of the upcoming features that you can try out today in our Wind
 | [Auto Eye Position Support](hololens-insider.md#auto-eye-position-support)                              | Actively finds eye positions and enables accurate hologram positioning.                        | 19041.1339+                 |
 | [Certificate Manager](hololens-insider.md#certificate-manager)                                     | Users can view, install and remove certificates Current User and Local Machine certificates in the Settings app.                                         | 19041.1361+                 |
 | [App Installer](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | On device UI to install apps from appx files. | 19041.1377+ |
-| [Installing apps from a web page](hololens-insider.md#installing-apps-from-a-web-page) | Set up apps to be downloaded and installed from the browser. | 19041.1366+ | 
-| [Auto-launch provisioning from USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE Automatically detects provisioning packages on USB drives.                                | 19041.1361+                 |
 | [Auto-confirm provisioning packages in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatically apply provisioning packages in OOBE.                                             | 19041.1361+                 |
 | [Using Autopilot with Wi-Fi connection](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Use autopilot from device Wi-Fi without need for ethernet adapter.                             | 19041.1364+                 |
 |[Tenantlockdown CSP and Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | After tenant enrollment and the policy is applied, the device can only be enrolled in that tenant any time the device is reset or re-flashed. | 19041.1366+|
@@ -103,22 +101,6 @@ The certificate should now be installed on the device.
 ![Certificate viewer in the Settings app](images/certificate-viewer-device.jpg)
 
 ![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
-
-### Install Apps on HoloLens 2 via App Installer
-Users can now install Apps via Appx Bundles now without the need to enable Developer Mode or use Device Portal. This experience is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens.
-
-This is a simple method of distributing a completely built app. Regardless of if you simply wish to demo your app to another user with a HoloLens, or you'd like to deploy your app at scale this method will work for both.
-
-Read about the full process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
-
-![Installing MRTK Examples via App Installer](images/hololens-app-installer-picture.jpg)
-
-### Installing apps from a web page
-Now in Windows Insider builds 19041.1366+ users can install an app directly from a web server. 
-
-Appx packages now on created can be hosted on a web page. When combined with certificate deployment this method of app distribution can be very useful for app deployment.
-
-Read about the full process of [installing apps on HoloLens 2 from a web page](app-deploy-web-installer.md)
 
 ### Auto-launch provisioning from USB
 Before this build users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
