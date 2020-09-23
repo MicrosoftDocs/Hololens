@@ -336,6 +336,8 @@ These update policies are now enabled on HoloLens 2 devices:
 -	[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
 -	[Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
+Full details on thise update policies and how to use them for HoloLens devices can be read here in [Manage HoloLens updates](hololens-updates.md).
+
 ### Enabled Settings page visibility for HoloLens 2
 - Increased UI control in the Settings App, which may be confused to show a limited selection of pages.
 
