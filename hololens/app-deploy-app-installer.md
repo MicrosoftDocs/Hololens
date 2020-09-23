@@ -21,10 +21,15 @@ appliesto:
 Users can now install Apps via Appx Bundles now without the need to enable Developer Mode or use Device Portal. This experience is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. 
 
 > [!NOTE]
-> This was added in [Windows Holographic, verison 2010](hololens-release-notes.md#windows-holographic-version-2010) for HoloLens 2 devices.
+> For IT Admins who wish to disable this feature please use the following package family name as part of your [WDAC policy](windows-defender-application-control-wdac.md). This will only block the App Installer app, and not apps installed from other sources such as the Microsoft Store or from your MDM solution.
+```
+Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+```
 
-> [!NOTE]
-> Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
+## Requirements
+For your devices: This was added in [Windows Holographic, verison 2010](hololens-release-notes.md#windows-holographic-version-2010) for HoloLens 2 devices. Please ensure any devices using this method are [updated](hololens-update-hololens.md). 
+
+For your apps: Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
 
 1.	Ensure that your HoloLens 2 device is powered on and you are signed in.
 1.	On your PC navigate to your custom app, and copy yourapp.appxbundle to yourdevicename\Internal Storage\Downloads. 
