@@ -130,7 +130,7 @@ You can configure different deferrals for feature updates and quality updates. T
 
 #### Pause Updates via Device
 
-If a user does not have access to MDM they can indivually Pause updates for up to 35 days manually on a HoloLens 2 device on build [Windows Holographic, version 2004](hololens-release-notes#windows-holographic-version-2004) or later. Users can reach this setting by navigating to **Settings -> Update & Security -> Advanced options** scroll down to **Pause updates** and select the date until which they will pause updates. Once a user reached the pause limit, the device will need to get new updates because they can pause again. 
+If a user does not have access to MDM they can indivually Pause updates for up to 35 days manually on a HoloLens 2 device on build [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) or later. Users can reach this setting by navigating to **Settings -> Update & Security -> Advanced options** scroll down to **Pause updates** and select the date until which they will pause updates. Once a user reached the pause limit, the device will need to get new updates because they can pause again. 
 
 Starting with [Windows Holographic, verison 2010](hololens-release-notes.md#windows-holographic-version-2010), this pause updates fuction can be managed for HoloLens 2 devices. 
 - [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
