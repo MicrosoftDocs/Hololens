@@ -1,5 +1,5 @@
 ---
-title: HoloLens 1st (Gen) release notes
+title: HoloLens 1st (gen) release notes
 description: Learn about updates in each new HoloLens release.
 author: evmill
 ms.author: v-evmill
@@ -8,17 +8,17 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/12/2020
-ms.custom: 
-- CI 111456
-- CSSTroubleshooting
+ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 1
 
 ---
 
-# HoloLens 1st (Gen) release notes
+# HoloLens 1st (gen) release notes
+
+## HoloLens (1st gen) Long Term Servicing
+HoloLens (1st gen) has entered Long Term Servicing (LTS) state. Future updates will focus on issue and security fixes, while maintaining feature parity with the Windows 10 Holographic, version 1809 release for HoloLens (1st gen).
 
 ### Windows 10 Holographic, version 1809
 
