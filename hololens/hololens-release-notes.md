@@ -180,7 +180,7 @@ Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an a
 ### Tenantlockdown CSP and Autopilot
 - Keeps devices on the organization's tenant by locking them to the tenant even through device reset or reflash. With further security by disallowing account creation in via provisioning. 
 
-HoloLens 2 devices now support TenantLockdown CSP as of Windows Holographic version 2010. 
+HoloLens 2 devices now support TenantLockdown CSP as of [Windows Holographic version 2010](hololens-release-notes.md#windows-holographic-version-2010). 
 
 [TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP enables HoloLens 2 to be tied to MDM enrollment using Autopilot only. Once TenantLockdown CSP’s RequireNetworkInOOBE node is set to either true or false (initially set) value on HoloLens 2, that value remains on the device despite re-flashing, OS updates, etc. 
 
@@ -223,6 +223,8 @@ Verify in the Intune portal that device configuration has been successfully appl
 OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed. 
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
+
+This information can now be found alongside the rest of Autopilot under [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot).
 
 ### Global Assigned Access – Kiosk Mode
 - Reduced Identity management for Kiosk, by enabling new Kiosk method that applies Kiosk mode at the system level.
