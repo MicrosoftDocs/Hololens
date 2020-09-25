@@ -5,7 +5,7 @@ keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
 author: evmill
 ms.author: v-evmill
 ms.reviewer: sekerawa
-ms.date: 11/02/2020
+ms.date: 10/02/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -43,7 +43,7 @@ What if a device need fixing that needs more than just troubleshooting? No matte
 
 ### Operating System Edition
 
-Every HoloLens 2 device will have the same OS. This means that when we release a new update, all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had. All options will have the same built in [security](https://docs.microsoft.com/en-us/hololens/security-overview), be able to run the same [apps](https://docs.microsoft.com/en-us/hololens/holographic-store-apps), and experience mixed reality.
+Every HoloLens 2 device will have the same OS. This means that when we release a new update, all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had. All options will have the same built in [security](https://docs.microsoft.com/hololens/security-overview), be able to run the same [apps](https://docs.microsoft.com/hololens/holographic-store-apps), and experience mixed reality.
 
 ### Availability of Remote Assist and Development with HoloLens 2
 
@@ -51,7 +51,7 @@ These packages are meant to support remote assist and developers, and give them 
 
 ### Remote Assist
 
-Any device can use Remote Assist, it comes pre-installed on each HoloLens 2 device. There is also a [free trial for Remote Assist](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/try-remote-assist), and 3 different trial options.
+Any device can use Remote Assist, it comes pre-installed on each HoloLens 2 device. There is also a [free trial for Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist), and 3 different trial options.
 
 ### Developing for HoloLens
 
@@ -93,44 +93,44 @@ You&#39;ll also receive a matching 3 month PiXYZ trial for use with the [PiXYZ p
 
 Just got a device? Ready to get started with Mixed Reality with HoloLens 2?
 
-- Charge your device and get acquainted with the device [getting ready to use](https://docs.microsoft.com/en-us/hololens/hololens2-setup) it, and once it&#39;s charged [get set up](https://docs.microsoft.com/en-us/hololens/hololens2-start).
-- Then [learn how to get around HoloLens 2](https://docs.microsoft.com/en-us/hololens/holographic-home).
-- Once you&#39;re experienced [take some mixed reality photos or videos](https://docs.microsoft.com/en-us/hololens/holographic-photos-and-videos).
-- And look through all the available [apps for HoloLens 2 on the Microsoft Store app](https://docs.microsoft.com/en-us/hololens/holographic-store-apps).
+- Charge your device and get acquainted with the device [getting ready to use](https://docs.microsoft.com/hololens/hololens2-setup) it, and once it&#39;s charged [get set up](https://docs.microsoft.com/hololens/hololens2-start).
+- Then [learn how to get around HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
+- Once you&#39;re experienced [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
+- And look through all the available [apps for HoloLens 2 on the Microsoft Store app](https://docs.microsoft.com/hololens/holographic-store-apps).
 
 ### HoloLens 2 with Dynamics 365 Remote Assist
 
 Ready to get started with Remote Assist with you HoloLens 2?
 
-- Here&#39;s how to [get started with Remote Assist on HoloLens](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/overview-hololens).
-- Here&#39;s how to [redeem your Remote Assist license](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses).
+- Here&#39;s how to [get started with Remote Assist on HoloLens](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens).
+- Here&#39;s how to [redeem your Remote Assist license](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses).
 
 If you&#39;d like to get connected to the rest of your company to use Remote Assist.
 
-- [Connect to your network](https://docs.microsoft.com/en-us/hololens/hololens-network).
-- [Enroll with your organization](https://docs.microsoft.com/en-us/hololens/hololens-enroll-mdm).
+- [Connect to your network](https://docs.microsoft.com/hololens/hololens-network).
+- [Enroll with your organization](https://docs.microsoft.com/hololens/hololens-enroll-mdm).
 
 Also if you are the one setting up your deployment to be ready for HoloLens devices becoming a part of your organization then check out:
 
-- Some [considerations for your deployment](https://docs.microsoft.com/en-us/hololens/hololens-requirements).
-- How you can [manage your devices](https://docs.microsoft.com/en-us/hololens/hololens-csp-policy-overview).
-- Different [app deployment methods](https://docs.microsoft.com/en-us/hololens/app-deploy-overview).
-- Keep an eye out for new features and fixes in our [Release notes](https://docs.microsoft.com/en-us/hololens/hololens-release-notes).
+- Some [considerations for your deployment](https://docs.microsoft.com/hololens/hololens-requirements).
+- How you can [manage your devices](https://docs.microsoft.com/hololens/hololens-csp-policy-overview).
+- Different [app deployment methods](https://docs.microsoft.com/hololens/app-deploy-overview).
+- Keep an eye out for new features and fixes in our [Release notes](https://docs.microsoft.com/hololens/hololens-release-notes).
 
 ### HoloLens 2 Development Edition
 
 How to redeem your credits:
 
-- [How to activate Unity license](https://support.unity3d.com/hc/en-us/articles/211438683-How-do-I-activate-my-license-)
+- [How to activate Unity license](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-)
 - [Redeem your PiXYZ license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html)
 
 Where to get started developing:
 
-- Dive into your [Mixed Reality development options](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity).
-- Make sure to [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/install-the-tools?tabs=unity) for HoloLens development.
-- Learn about [developing for HoloLens 2 with Unity](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
-- Learn about [developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
-- Learn about how to [combine MRTK with Unity](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/mrtk-getting-started).
-- And explore the all the possibilities for [Mixed Reality](https://docs.microsoft.com/en-us/windows/mixed-reality/).
+- Dive into your [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity).
+- Make sure to [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) for HoloLens development.
+- Learn about [developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+- Learn about [developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- Learn about how to [combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
+- And explore the all the possibilities for [Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
 
 And feel free to reach out to your fellow developers on our [HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
