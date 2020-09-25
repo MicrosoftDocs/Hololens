@@ -39,6 +39,8 @@
 ## Planning for HoloLens 2 Enterprise Deployment
 ### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ### [Common Infrastructure Deployment Scenarios](common-scenarios.md)
+## Common Scenarios
+### [Offline Secure](hololens-common-scenarios-offline-secure.md)
 ## Security
 ### [Security overview](security-overview.md)
 ### [Architecture](security-architecture.md)
