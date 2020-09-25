@@ -46,6 +46,8 @@ Build a Secure Configuration Provisioning Package
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot of the configuration package open in WCD](images/offline-secure-sample-wcd.png)
+   
+   <img src=images/offline-secure-sample-wcd.png width="600" height="500" />
 
 Configurations set in this provisioning package:
 
