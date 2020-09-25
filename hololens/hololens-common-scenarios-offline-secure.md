@@ -46,8 +46,6 @@ Build a Secure Configuration Provisioning Package
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot of the configuration package open in WCD](images/offline-secure-sample-wcd.png)
-   
-   <img src=images/offline-secure-sample-wcd.png width="600" height="500" />
 
 Configurations set in this provisioning package:
 
@@ -86,16 +84,22 @@ Configurations set in this provisioning package:
    > [!div class="mx-imgBorder"]
    > ![ARC flashing step 1.](images/offline-secure-arc-1.png)
 
+   <img src=images/offline-secure-arc-1.png width="770" height="430" />
+
 1. On the next screen select **Manual package selection**.
 
    > [!div class="mx-imgBorder"]
    > ![ARC flashing step 2.](images/offline-secure-arc-2.png)
+   
+   <img src=images/offline-secure-arc-2.png width="770" height="430" />
 
 1. Navigate to the previously downloaded .ffu file, and select **Open**.
 1. At the Warning page select **Continue**.
 
    > [!div class="mx-imgBorder"]
    > ![ARC flashing step 3.](images/offline-secure-arc-3.png)
+
+   <img src=images/offline-secure-arc-3.png width="770" height="430" />
 
 1. Wait for the ARC tool to complete the HoloLens 2 OS install.
 1. Once the device completes the install and boots back up, from your PC navigate to File Explorer and copy the previously saved PPKG file over to the device folder.
