@@ -81,23 +81,14 @@ Configurations set in this provisioning package:
 1. Connect the HL2 to your Windows 10 PC via USB cable.
 1. Launch the ARC tool and select **HoloLens 2**
 
-   > [!div class="mx-imgBorder"]
-   > ![ARC flashing step 1.](images/offline-secure-arc-1.png)
-
-   <img ARC flashing step 1 src=images/offline-secure-arc-1.png width="577" height="322" />
+   <img src=images/offline-secure-arc-1.png width="577" height="322" />
 
 1. On the next screen select **Manual package selection**.
-
-   > [!div class="mx-imgBorder"]
-   > ![ARC flashing step 2.](images/offline-secure-arc-2.png)
    
    <img src=images/offline-secure-arc-2.png width="577" height="322" />
 
 1. Navigate to the previously downloaded .ffu file, and select **Open**.
 1. At the Warning page select **Continue**.
-
-   > [!div class="mx-imgBorder"]
-   > ![ARC flashing step 3.](images/offline-secure-arc-3.png)
 
    <img src=images/offline-secure-arc-3.png width="577" height="322" />
 
@@ -105,7 +96,7 @@ Configurations set in this provisioning package:
 1. Once the device completes the install and boots back up, from your PC navigate to File Explorer and copy the previously saved PPKG file over to the device folder.
 
    > [!div class="mx-imgBorder"]
-   > ![PPKG file on PC in File Explorer window.](images/offline-secure-file-explorer.png =800x800)
+   > ![PPKG file on PC in File Explorer window.](images/offline-secure-file-explorer.png)
 
 1. On the HoloLens 2, press the following button combo to run the Provisioning Package: Tap **Volume Down** and **Power Button** at the same time.
 1. You will be prompted to apply the Provisioning Package, select **Confirm**
