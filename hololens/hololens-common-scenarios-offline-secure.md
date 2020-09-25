@@ -85,12 +85,12 @@ Configurations set in this provisioning package:
 
 1. On the next screen select **Manual package selection**.
    
-   <img src=images/offline-secure-arc-2.png width="577" height="322" />
+   <img src=images/offline-secure-arc-2.png alt=arc2 width="577" height="322" />
 
 1. Navigate to the previously downloaded .ffu file, and select **Open**.
 1. At the Warning page select **Continue**.
 
-   <img src=images/offline-secure-arc-3.png width="577" height="322" />
+   <img src=images/offline-secure-arc-3.png alt=arc3 width="577" height="322" />
 
 1. Wait for the ARC tool to complete the HoloLens 2 OS install.
 1. Once the device completes the install and boots back up, from your PC navigate to File Explorer and copy the previously saved PPKG file over to the device folder.
