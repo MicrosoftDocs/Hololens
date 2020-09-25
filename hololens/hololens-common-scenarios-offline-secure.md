@@ -81,7 +81,7 @@ Configurations set in this provisioning package:
 1. Connect the HL2 to your Windows 10 PC via USB cable.
 1. Launch the ARC tool and select **HoloLens 2**
 
-   <img src=images/offline-secure-arc-1.png width="577" height="322" />
+   <img src=images/offline-secure-arc-1.png alt=arc1 width="577" height="322" />
 
 1. On the next screen select **Manual package selection**.
    
