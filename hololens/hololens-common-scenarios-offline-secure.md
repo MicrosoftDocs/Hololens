@@ -29,7 +29,7 @@ This guide provides guidance for applying a sample Provisioning Package that wil
 ## Prepare 
 Windows 10 PC Setup
 1. [Download the latest HoloLens 2 OS file](https://aka.ms/hololens2download) directly to a PC. 
-  1. Support for this configuration is included in Build 19041.1117 and above.
+   1. Support for this configuration is included in Build 19041.1117 and above.
 1. Download/Install the Advanced Recovery Companion(ARC) tool [from the Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) to your PC
 1. Download/Install the latest [Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) tool from the Microsoft Store to your PC.
 1. [Download the OfflineSecureHL2_Sample folder with the project files](https://aka.ms/HoloLensDocs-SecureOfflineSample) to build the PPKG.
@@ -65,7 +65,8 @@ Configurations set in this provisioning package:
 |     Policies/System/AllowLocation                       |     No                            |     Prevents the device from trying to track location data.                                                                        |
 |     Policies/WiFi/AllowWiFi                             |     No                            |     Disables Wi-Fi                                                                                                                 |
 
-4. Under Runtime Settings, Select **Accounts / Users / UserName: Holo / Password Note the password and reset if desired.
+4. Under Runtime Settings, Select **Accounts / Users / UserName: Holo / Password 
+    - Note the password and reset if desired.
 5. Navigate to UniversalAppInstall / UserContextApp and [configure the LOB app](app-deploy-provisioning-package.md) you will be deploying to these devices.
 
    > [!div class="mx-imgBorder"]
