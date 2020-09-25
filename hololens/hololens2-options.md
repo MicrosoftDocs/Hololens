@@ -24,7 +24,7 @@ HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/ho
 - HoloLens 2 with Dynamics 365 Remote Assist
 - HoloLens 2 Development Edition
 
-## What&#39;s the same?
+## What is the same?
 
 While there are 3 options, there are many things shared. Here are some in-box accessories and features available across all options.
 
@@ -57,35 +57,34 @@ Any device can use Remote Assist, it comes pre-installed on each HoloLens 2 devi
 
 Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers.
 
-## What&#39;s different per option?
+## What is different per option?
 
 ### HoloLens 2 (device only)
 
-You get the device and all benefits mentioned in What&#39;s the same?.
+- You get the device and all benefits mentioned in [What is the same?.](hololens2-options.md#what-is-the-same)
+- You can choose to use these devices in a commercial environment for your business. Order as many as you need.
+- Welcome to mixed reality!
 
-You can choose to use these devices in a commercial environment for your business. Order as many as you need.
-
-Welcome to mixed reality!
+If you've already received this device or would like to see next steps, continue reading [here](hololens2-options.md#hololens-2-device-only-1)
 
 ### HoloLens 2 with Dynamics 365 Remote Assist
 
-You get the device and all benefits mentioned in What&#39;s the same?.
-
-You can choose to use these devices in a commercial environment for your business. Order as many as you need.
-
-One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
+- You get the device and all benefits mentioned in [What is the same?.](hololens2-options.md#what-is-the-same)
+- You can choose to use these devices in a commercial environment for your business. Order as many as you need.
+- One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
 
 > [!VIDEO https://www.youtube.com/watch?v=d3YT8j0yYl0]
 
+If you've already received this device or would like to see next steps, continue reading [here](hololens2-options.md#hololens-2-with-dynamics-365-remote-assist-1)
+
 ### HoloLens 2 Development Edition
 
-You get the device and all benefits mentioned in What&#39;s the same?.
+- You get the device and all benefits mentioned in [What is the same?.](hololens2-options.md#what-is-the-same)
+- You can only order the 1 device and can&#39;t use the device in a commercial practice. However you many use that device to develop commercially sold applications.
+- You'll have access to a 3 month Unity Pro trial. Learn more [Unity](https://unity.com/), a real-time 3D development platform.
+- You'll also receive a matching 3 month PiXYZ trial for use with the [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/), a bridge for connecting the engineering &amp; CAD worlds with the development world.
 
-You can only order the 1 device and can&#39;t use the device in a commercial practice. However you many use that device to develop commercially sold applications.
-
-You&#39;ll have access to a 3 month Unity Pro trial. Learn more [Unity](https://unity.com/), a real-time 3D development platform.
-
-You&#39;ll also receive a matching 3 month PiXYZ trial for use with the [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/), a bridge for connecting the engineering &amp; CAD worlds with the development world.
+If you've already received this device or would like to see next steps, continue reading [here](hololens2-options.md#hololens-2-development-edition-1)
 
 ## If you just got your HoloLens 2 device order, here&#39;s what to do next.
 
