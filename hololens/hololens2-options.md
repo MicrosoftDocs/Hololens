@@ -73,7 +73,7 @@ If you've already received this device or would like to see next steps, continue
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
 
-> [!VIDEO https://www.youtube.com/watch?v=d3YT8j0yYl0]
+> [!VIDEO <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]
 
 If you've already received this device or would like to see next steps, continue reading [here](hololens2-options.md#hololens-2-with-dynamics-365-remote-assist-1)
 
