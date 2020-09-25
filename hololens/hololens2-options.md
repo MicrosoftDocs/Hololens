@@ -129,7 +129,7 @@ How to redeem your credits:
 - You'll have received a unique code.
 - [Redeem your PiXYZ license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html)
 Directions to redeem:
-    1. Visit [id.unity.com](id.unity.com) 
+    1. Visit [id.unity.com](http://id.unity.com/) 
     1. Sign in with your Unity ID or create one
     1. Click **Redeem a product code** 
     1. Enter product code, and click **Redeem a product code**
