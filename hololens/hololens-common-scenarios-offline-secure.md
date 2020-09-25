@@ -65,8 +65,7 @@ Configurations set in this provisioning package:
 |     Policies/System/AllowLocation                       |     No                            |     Prevents the device from trying to track location data.                                                                        |
 |     Policies/WiFi/AllowWiFi                             |     No                            |     Disables Wi-Fi                                                                                                                 |
 
-4. Under Runtime Settings, Select Accounts / Users / UserName: Holo / Password
-  - Note the password and reset if desired.
+4. Under Runtime Settings, Select **Accounts / Users / UserName: Holo / Password Note the password and reset if desired.
 5. Navigate to UniversalAppInstall / UserContextApp and [configure the LOB app](app-deploy-provisioning-package.md) you will be deploying to these devices.
 
    > [!div class="mx-imgBorder"]
@@ -100,10 +99,9 @@ Configurations set in this provisioning package:
 1. Once the device completes the install and boots back up, from your PC navigate to File Explorer and copy the previously saved PPKG file over to the device folder.
 
    > [!div class="mx-imgBorder"]
-   > ![PPKG file on PC in File Explorer window.](images/offline-secure-file-explorer.png)
+   > ![PPKG file on PC in File Explorer window.](images/offline-secure-file-explorer.png =800x800)
 
-1. On the HoloLens 2, press the following button combo to run the Provisioning Package: 
-  1. Tap Volume Down and Power Button at the same time.
+1. On the HoloLens 2, press the following button combo to run the Provisioning Package: Tap **Volume Down** and **Power Button** at the same time.
 1. You will be prompted to apply the Provisioning Package, select **Confirm**
 1. Once the provisioning package completes select **OK**.
 1. You should then be prompted to sign into the device with the shared local account and password.
