@@ -66,7 +66,7 @@ Configurations set in this provisioning package:
 |     Policies/WiFi/AllowWiFi                             |     No                            |     Disables Wi-Fi                                                                                                                 |
 
 4. Under Runtime Settings, Select Accounts / Users / UserName: Holo / Password
-- Note the password and reset if desired.
+  - Note the password and reset if desired.
 5. Navigate to UniversalAppInstall / UserContextApp and [configure the LOB app](app-deploy-provisioning-package.md) you will be deploying to these devices.
 
    > [!div class="mx-imgBorder"]
@@ -83,18 +83,18 @@ Configurations set in this provisioning package:
 1. Launch the ARC tool and select **HoloLens 2**
 
    > [!div class="mx-imgBorder"]
-   > ![ARC flashing step.](images/offline-secure-arc-1.png)
+   > ![ARC flashing step 1.](images/offline-secure-arc-1.png)
 
 1. On the next screen select **Manual package selection**.
 
    > [!div class="mx-imgBorder"]
-   > ![ARC flashing step.](images/offline-secure-arc-2.png)
+   > ![ARC flashing step 2.](images/offline-secure-arc-2.png)
 
 1. Navigate to the previously downloaded .ffu file, and select **Open**.
 1. At the Warning page select **Continue**.
 
    > [!div class="mx-imgBorder"]
-   > ![ARC flashing step.](images/offline-secure-arc-3.png)
+   > ![ARC flashing step 3.](images/offline-secure-arc-3.png)
 
 1. Wait for the ARC tool to complete the HoloLens 2 OS install.
 1. Once the device completes the install and boots back up, from your PC navigate to File Explorer and copy the previously saved PPKG file over to the device folder.
