@@ -120,8 +120,20 @@ Also if you are the one setting up your deployment to be ready for HoloLens devi
 
 How to redeem your credits:
 
-- [How to activate Unity license](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-)
+**Unity** 
+- You'll have received a unique code. 
+- [How to activate Unity license](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-).
+- [Unity Support](https://support.unity3d.com/hc) for help as needed. 
+
+**PiXYZ**
+- You'll have received a unique code.
 - [Redeem your PiXYZ license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html)
+Directions to redeem:
+    1. Visit [id.unity.com](id.unity.com) 
+    1. Sign in with your Unity ID or create one
+    1. Click **Redeem a product code** 
+    1. Enter product code, and click **Redeem a product code**
+- [PiXYZ Support](https://www.pixyz-software.com/support/) for help as needed. 
 
 Where to get started developing:
 
