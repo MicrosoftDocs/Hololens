@@ -86,7 +86,7 @@ If you use the Windows Device Portal to configure a single-app kiosk, you select
 If you use a Mobile Device Management (MDM) system or a provisioning package to configure kiosk mode, you use the [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to specify applications. The CSP uses [Application User Model IDs (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) to identify applications. The following table lists the AUMIDs of some in-box applications that you can use in a multi-app kiosk.
 
 > [!CAUTION]
-> You cannot select the Shell app as a kiosk app. In addition, we recommend that you do **not** select Microsoft Edge, Microsoft Store, or File Explorer as a kiosk app. These apps have the ability to launch other apps outside of your Kiosk configuration. Kiosk mode does not block these new apps from launching, but is used to limit UI available.  
+> You cannot select the Mixed Reality Home as a kiosk app. In addition, we recommend that you do **not** select Microsoft Edge, Microsoft Store, or File Explorer as a kiosk app. These apps have the ability to launch other apps outside of your Kiosk configuration. Kiosk mode does not block these new apps from launching, but is used to limit UI available.  
 
 <a id="aumids"></a>
 
