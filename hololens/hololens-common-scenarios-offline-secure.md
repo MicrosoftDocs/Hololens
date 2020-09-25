@@ -65,7 +65,7 @@ Configurations set in this provisioning package:
 |     Policies/System/AllowLocation                       |     No                            |     Prevents the device from trying to track location data.                                                                        |
 |     Policies/WiFi/AllowWiFi                             |     No                            |     Disables Wi-Fi                                                                                                                 |
 
-4. Under Runtime Settings, Select **Accounts / Users / UserName: Holo / Password 
+4. Under Runtime Settings, Select **Accounts / Users / UserName: Holo / Password** 
     - Note the password and reset if desired.
 5. Navigate to UniversalAppInstall / UserContextApp and [configure the LOB app](app-deploy-provisioning-package.md) you will be deploying to these devices.
 
