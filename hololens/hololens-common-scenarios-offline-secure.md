@@ -3,7 +3,6 @@ title: Common Scenarios – Offline Secure HoloLens 2
 description: An offline secure deployment and app deployment via provisioning.
 keywords: HoloLens, management, offline, offline secure
 ms.date: 9/25/2020
-keywords: hololens
 manager: yannisle
 ms.prod: hololens
 ms.sitesec: library
@@ -34,7 +33,7 @@ Windows 10 PC Setup
 1. Download/Install the Advanced Recovery Companion(ARC) tool [from the Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) to your PC
 1. Download/Install the latest [Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) tool from the Microsoft Store to your PC.
 1. [Download the OfflineSecureHL2_Sample folder with the project files](https://aka.ms/HoloLensDocs-SecureOfflineSample) to build the PPKG.
-1. Prepare your offline [Line of Business application for PPKG deployment](https://docs.microsoft.com/en-us/hololens/app-deploy-provisioning-package). 
+1. Prepare your offline [Line of Business application for PPKG deployment](app-deploy-provisioning-package.md). 
 
 
 ## Configure
@@ -45,9 +44,8 @@ Build a Secure Configuration Provisioning Package
   1. Navigate to the location of the previously saved OfflineSecureHL2_Sample folder, and select: OfflineSecureHL2_Sample.icdproj.xml
 1. The project should open and you should now have a list of Available Customizations: 
 
-//////////////////////////////
-offline-secure-sample-wcd.png 
-
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of the configuration package open in WCD](images/offline-secure-sample-wcd.png)
 
 Configurations set in this provisioning package:
 
@@ -71,37 +69,38 @@ Configurations set in this provisioning package:
 - Note the password and reset if desired.
 5. Navigate to UniversalAppInstall / UserContextApp and [configure the LOB app](app-deploy-provisioning-package.md) you will be deploying to these devices.
 
-////////////////////
-offline-secure-sample-wcd-usercontextapp.png
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of where to add your app in WCD.](images/offline-secure-sample-wcd-usercontextapp.png)
 
 6. Once complete, select the “Export” button and follow all prompts until your provisioning package is created.
 
-///////////////////
-offline-secure-sample-wcd-export.png
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of the Export button for this package in WCD.](images/offline-secure-sample-wcd-export.png)
+
 
 ## Deploy
 1. Connect the HL2 to your Windows 10 PC via USB cable.
 1. Launch the ARC tool and select **HoloLens 2**
 
-///////////////////////
-offline-secure-arc-1.png
+   > [!div class="mx-imgBorder"]
+   > ![ARC flashing step.](images/offline-secure-arc-1.png)
 
 1. On the next screen select **Manual package selection**.
 
-/////////////////
-offline-secure-arc-2.png
+   > [!div class="mx-imgBorder"]
+   > ![ARC flashing step.](images/offline-secure-arc-2.png)
 
 1. Navigate to the previously downloaded .ffu file, and select **Open**.
 1. At the Warning page select **Continue**.
 
-////////////////
-offline-secure-arc-3.png
+   > [!div class="mx-imgBorder"]
+   > ![ARC flashing step.](images/offline-secure-arc-3.png)
 
 1. Wait for the ARC tool to complete the HoloLens 2 OS install.
 1. Once the device completes the install and boots back up, from your PC navigate to File Explorer and copy the previously saved PPKG file over to the device folder.
 
-/////////////////
-offline-secure-file-explorer.png
+   > [!div class="mx-imgBorder"]
+   > ![PPKG file on PC in File Explorer window.](images/offline-secure-file-explorer.png)
 
 1. On the HoloLens 2, press the following button combo to run the Provisioning Package: 
   1. Tap Volume Down and Power Button at the same time.
