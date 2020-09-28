@@ -148,7 +148,7 @@ Learn about Azure Remote Rendering:
 - [Product Page.](https://azure.microsoft.com/services/remote-rendering/)
 - [Documentation](https://docs.microsoft.com/azure/remote-rendering/overview/about)
 
-**Where to get started developing:**
+#### Where to get started developing:
 
 - Dive into your [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity).
 - Make sure to [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) for HoloLens development.
