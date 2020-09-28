@@ -20,7 +20,9 @@ appliesto:
 
 HoloLens is an untethered mixed reality device with apps and solutions that enhance collaboration. This is a powerful mixed reality device that can be used to achive higher productivity and a powerful method of viewing and using information. Touch, grasp, and move holograms in ways that feel natural as they respond a lot like real objects. Log in to HoloLens 2 instantly and securely using just your eyes with Windows Hello. And voice commands work even in noisy industrial environments through smart microphones and natural language speech processing.
 
-HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/hololens/buy) that buyers can choose from. Each of these options includes the HoloLens 2 device, and two of these purchasing options also include other benefits that come with the device. Here are the different options:
+HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/hololens/buy) that buyers can choose from. Each of these options includes the HoloLens 2 device, and two of these purchasing options also include other benefits that come with the device. This article will give an overview of what's the same between these options and what's different giving users the full information they need before making a decision, as well as demystifying the differences between options. If a decision has already been made then a customer made visit this page to help them learn next steps on how to get started on their journey with their device.   
+
+Here are the different options:
 
 - **HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 - **HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
