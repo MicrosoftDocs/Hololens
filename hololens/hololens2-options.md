@@ -139,9 +139,11 @@ Directions to redeem:
 
 **Azure**
 Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
+
 Learn about Azure Spatial Anchors:
 - [Product Page.](https://azure.microsoft.com/services/spatial-anchors/)
 - [Documentation](https://docs.microsoft.com/azure/spatial-anchors/)
+
 Learn about Azure Remote Rendering:
 - [Product Page.](https://azure.microsoft.com/services/remote-rendering/)
 - [Documentation](https://docs.microsoft.com/azure/remote-rendering/overview/about)
