@@ -329,6 +329,9 @@ These newly added policies allow admins to control power states, such as idle ti
 
 These two new polices for DisplayOffTimeoutOnBattery and DisplayOffTimeoutPluggedIn are being added to our [Common Device Restrictions](hololens-common-device-restrictions.md).
 
+> [!NOTE]
+> For consistent experience on HoloLens 2, please ensure that values for both DisplayOffTimeoutOnBattery and StandbyTimeoutOnBattery are set as same value. Same applies to DisplayOffTimeoutPluggedIn and StandbyTimeoutPluggedIn. Refer to [Display, sleep, and hibernate idle timers](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) for more details about modern standby.
+
 ### Newly enabled Update policies for HoloLens
 - More options for when Updates are installed or disabling the Pause Updates button to ensure updates.
 
