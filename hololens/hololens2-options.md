@@ -57,7 +57,7 @@ Any device can use Remote Assist, it comes pre-installed on each HoloLens 2 devi
 
 Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers. The same [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) are availible to anyone with any HoloLens 2 device. 
 
-## What is different per option?
+## What comes with each option?
 
 ### HoloLens 2 (device only)
 
@@ -65,7 +65,7 @@ Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices ca
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - Welcome to mixed reality!
 
-If you've already received this device or would like to see next steps, continue reading [here](hololens2-options.md#hololens-2-device-only-1)
+Continue reading next steps with the [Device Only option.](hololens2-options.md#hololens-2-device-only-1)
 
 ### HoloLens 2 with Dynamics 365 Remote Assist
 
@@ -75,16 +75,18 @@ If you've already received this device or would like to see next steps, continue
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-If you've already received this device or would like to see next steps, continue reading [here](hololens2-options.md#hololens-2-with-dynamics-365-remote-assist-1)
+Continue reading next steps with the [Remote Assist option](hololens2-options.md#hololens-2-with-dynamics-365-remote-assist-1)
 
 ### HoloLens 2 Development Edition
 
 - You get the device and all benefits mentioned in [What is the same?.](hololens2-options.md#what-is-the-same)
-- You can only order the 1 device and can&#39;t use the device in a commercial practice. However you many use that device to develop commercially sold applications.
-- You'll have access to a 3 month Unity Pro trial. Learn more [Unity](https://unity.com/), a real-time 3D development platform.
-- You'll also receive a matching 3 month PiXYZ trial for use with the [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/), a bridge for connecting the engineering &amp; CAD worlds with the development world.
+- The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting. 
+- The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month Pixyz plugin trial.  
+    - Learn more [Unity](https://unity.com/), a real-time 3D development platform.
+    - 3 month PiXYZ trial for use with the [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/), a bridge for connecting the engineering &amp; CAD worlds with the development world.
+    - $500 in Azure credits for [Azure services](https://azure.microsoft.com/resources/). 
 
-If you've already received this device or would like to see next steps, continue reading [here](hololens2-options.md#hololens-2-development-edition-1)
+Continue reading next steps with the [Development Edition option.](hololens2-options.md#hololens-2-development-edition-1)
 
 ## If you just got your HoloLens 2 device order, here&#39;s what to do next.
 
@@ -135,7 +137,16 @@ Directions to redeem:
     1. Enter product code, and click **Redeem a product code**
 - [PiXYZ Support](https://www.pixyz-software.com/support/) for help as needed. 
 
-Where to get started developing:
+**Azure**
+Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
+Learn about Azure Spatial Anchors:
+- [Product Page.](https://azure.microsoft.com/services/spatial-anchors/)
+- [Documentation](https://docs.microsoft.com/azure/spatial-anchors/)
+Learn about Azure Remote Rendering:
+- [Product Page.](https://azure.microsoft.com/services/remote-rendering/)
+- [Documentation](https://docs.microsoft.com/azure/remote-rendering/overview/about)
+
+**Where to get started developing:**
 
 - Dive into your [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity).
 - Make sure to [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) for HoloLens development.
