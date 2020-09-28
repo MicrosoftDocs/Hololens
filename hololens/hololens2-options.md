@@ -47,7 +47,7 @@ What if a device need fixing that needs more than just troubleshooting? No matte
 
 Every HoloLens 2 device will have the [same OS](security-architecture.md). This means that when we [release a new update](hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had. All options will have the same built in [security](https://docs.microsoft.com/hololens/security-overview), be able to run the same [apps](https://docs.microsoft.com/hololens/holographic-store-apps), and experience mixed reality.
 
-### Availability of Remote Assist and Development with HoloLens 2
+### Using Remote Assist and / or Development with HoloLens 2
 
 These packages are meant to support remote assist and developers, and give them a head start with their choice. However regardless of the option picked you can still use your HoloLens 2 for remote assist or development.
 
