@@ -19,7 +19,7 @@ What if a device need fixing that needs more than just troubleshooting? No matte
 
 ### Operating System Edition
 
-Every HoloLens 2 device will have the [same OS](hololens/security-architecture.md). This means that when we [release a new update](hololens/hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had. All options will have the same built in [security](https://docs.microsoft.com/hololens/security-overview), be able to run the same [apps](https://docs.microsoft.com/hololens/holographic-store-apps), and experience mixed reality.
+Every HoloLens 2 device will have the [same OS](../hololens/security-architecture.md). This means that when we [release a new update](../hololens/hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had. All options will have the same built in [security](https://docs.microsoft.com/hololens/security-overview), be able to run the same [apps](https://docs.microsoft.com/hololens/holographic-store-apps), and experience mixed reality.
 
 ### Using Remote Assist and / or Development with HoloLens 2
 
