@@ -122,12 +122,12 @@ Also if you are the one setting up your deployment to be ready for HoloLens devi
 
 How to redeem your credits:
 
-**Unity** 
+#### Unity
 - You'll have received a unique code. 
 - [How to activate Unity license](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-).
 - [Unity Support](https://support.unity3d.com/hc) for help as needed. 
 
-**PiXYZ**
+#### PiXYZ
 - You'll have received a unique code.
 - [Redeem your PiXYZ license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html)
 Directions to redeem:
@@ -137,7 +137,7 @@ Directions to redeem:
     1. Enter product code, and click **Redeem a product code**
 - [PiXYZ Support](https://www.pixyz-software.com/support/) for help as needed. 
 
-**Azure**
+#### Azure
 Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
 
 Learn about Azure Spatial Anchors:
