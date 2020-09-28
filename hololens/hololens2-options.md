@@ -162,3 +162,6 @@ Learn about Azure Remote Rendering:
 - And explore the all the possibilities for [Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
 
 And feel free to reach out to your fellow developers on our [HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
+
+
+[!INCLUDE[](includes/options-overview.md)]
