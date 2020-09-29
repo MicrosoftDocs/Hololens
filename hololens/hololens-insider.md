@@ -28,7 +28,7 @@ Here is the list of the upcoming features that you can try out today in our Wind
 
 | Feature                                                | Description                                                                                    | Available in insider builds |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
-| [Auto Eye Position Support](hololens-insider.md#auto-eye-position-support)                              | Actively finds eye positions and enables accurate hologram positioning.                        | 19041.1339+                 |
+| [Auto Eye Position Support](hololens-insider.md#auto-eye-position-support)                              | Actively computes eye positions and enables accurate hologram positioning.                        | 19041.1339+                 |
 | [Certificate Manager](hololens-insider.md#certificate-manager)                                     | Users can view, install and remove certificates Current User and Local Machine certificates in the Settings app.                                         | 19041.1361+                 |
 | [Auto-launch provisioning from USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE Automatically detects provisioning packages on USB drives.                                | 19041.1361+                 |
 | [Auto-confirm provisioning packages in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatically apply provisioning packages in OOBE.                                             | 19041.1361+                 |
@@ -63,9 +63,6 @@ There are a few system behavior changes with Auto Eye Position feature when an u
  If the user transitions from a non-gaze enabled application to one that accesses the gaze data, the calibration prompt will be displayed. There will be no changed to Out Of Box Experience flow. 
  
 For experiences that require eye gaze data or very precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration from the eye tracking calibration prompt or by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
-
-**Known issues**
- - We're investigating an issue where the eye tracker driver host process could crash when running under heavy memory load. The eye tracking driver host process should auto recover.
 
 ### Certificate Manager
 
