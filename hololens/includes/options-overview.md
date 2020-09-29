@@ -110,11 +110,6 @@ If you&#39;d like to get connected to the rest of your company to use Remote Ass
 
 The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month Pixyz plugin trial:
 | Bundle feature | Description |
-| [Unity](https://unity.com/) | A real-time 3D development platform. |
-| [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/) | a bridge for connecting the engineering &amp; CAD worlds with the development world. |
-| $500 in Azure credits for [Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
-
-| Bundle feature | Description |
 |---|---|
 |  [Unity](https://unity.com/) | A real-time 3D development platform.   |
 |  [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/) | a bridge for connecting the engineering &amp; CAD worlds with the development world.   |
