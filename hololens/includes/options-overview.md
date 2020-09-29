@@ -1,11 +1,12 @@
 # [HoloLens 2 (device only)](#tab/device)
-## What is the same?
-While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options.
+## 
 
-[Everything in the box](hololens2-hardware.md#hololens-components)
-[Pre-installed software](hololens2-hardware.md#pre-installed-software)
-[Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
-[Security](https://docs.microsoft.com/hololens/security-overview)
+## Learn what is the same per edition
+While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options:
+- [Everything in the box](hololens2-hardware.md#hololens-components)
+- [Pre-installed software](hololens2-hardware.md#pre-installed-software)
+- [Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
+- [Security](https://docs.microsoft.com/hololens/security-overview)
 
 ### Operating System Edition
 Every HoloLens 2 device will have the [same OS](../security-architecture.md). This means that when we [release a new update](../hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had.
@@ -16,13 +17,10 @@ Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices ca
 
 
 ## HoloLens 2 (device only) features
-
-
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - Welcome to mixed reality!
 
 ## Here's what to do next with the HoloLens 2 (device only) edition
-
 Just got a device? Ready to get started with Mixed Reality with HoloLens 2?
 
 - Charge your device and get acquainted with the device [getting ready to use](https://docs.microsoft.com/hololens/hololens2-setup) it, and once it&#39;s charged [get set up](https://docs.microsoft.com/hololens/hololens2-start).
@@ -34,15 +32,15 @@ Just got a device? Ready to get started with Mixed Reality with HoloLens 2?
 
 
 
+
 # [HoloLens 2 with Dynamics 365 Remote Assist](#tab/remoteassist)
 
-## What is the same?
-While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options.
-
-[Everything in the box](hololens2-hardware.md#hololens-components)
-[Pre-installed software](hololens2-hardware.md#pre-installed-software)
-[Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
-[Security](https://docs.microsoft.com/hololens/security-overview)
+## Learn what is the same
+While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options:
+- [Everything in the box](hololens2-hardware.md#hololens-components)
+- [Pre-installed software](hololens2-hardware.md#pre-installed-software)
+- [Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
+- [Security](https://docs.microsoft.com/hololens/security-overview)
 
 ### Operating System Edition
 Every HoloLens 2 device will have the [same OS](../security-architecture.md). This means that when we [release a new update](../hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had.
@@ -82,44 +80,43 @@ Also if you are the one setting up your deployment to be ready for HoloLens devi
 
 
 # [HoloLens 2 Development Edition](#tab/developeredition)
-## What is the same?
-While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options.
-
-[Everything in the box](hololens2-hardware.md#hololens-components)
-[Pre-installed software](hololens2-hardware.md#pre-installed-software)
-[Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
-[Security](https://docs.microsoft.com/hololens/security-overview)
-
-### Operating System Edition
-Every HoloLens 2 device will have the [same OS](../security-architecture.md). This means that when we [release a new update](../hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had.
-
-### Developing for HoloLens
-Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers. The same [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) are availible to anyone with any HoloLens 2 device. To learn more about the Developer Edition, please click the [Developer Edition tab above.](../hololens2-options.md?tabs=developeredition#learn-more-about-each-option)
-
-
-
-## HoloLens 2 Development Edition features
+## Learn about the Development Edition
+1. Learn about the [Developer Edition](https://www.microsoft.com/hololens/buy)
 
 > [NOTE] The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
 
-- The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting. 
-- The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month Pixyz plugin trial.  
-    - Learn more [Unity](https://unity.com/), a real-time 3D development platform.
-    - 3 month PiXYZ trial for use with the [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/), a bridge for connecting the engineering &amp; CAD worlds with the development world.
-    - $500 in Azure credits for [Azure services](https://azure.microsoft.com/resources/). The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure.
+The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month Pixyz plugin trial:
+| Bundle feature | Description |
+| [Unity](https://unity.com/) | A real-time 3D development platform. |
+| [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/) | a bridge for connecting the engineering &amp; CAD worlds with the development world. |
+| $500 in Azure credits for [Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
 
+| Bundle feature | Description |
+|---|---|
+|  [Unity](https://unity.com/) | A real-time 3D development platform.   |
+|  [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/) | a bridge for connecting the engineering &amp; CAD worlds with the development world.   |
+| $500 in Azure credits for [Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
 
+1. Learn what is the same. While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options:
+    - [Everything in the box](hololens2-hardware.md#hololens-components)
+    - [Pre-installed software](hololens2-hardware.md#pre-installed-software)
+    - [Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
+    - [Security](https://docs.microsoft.com/hololens/security-overview)
 
-## Here's what to do next with the HoloLens 2 Development Edition
+1. Operating System Edition
+Every HoloLens 2 device will have the [same OS](../security-architecture.md). This means that when we [release a new update](../hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had.
 
-How to redeem your credits:
+1. Developing for HoloLens
+Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers. The same [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) are availible to anyone with any HoloLens 2 device. To learn more about the Developer Edition, please click the [Developer Edition tab above.](../hololens2-options.md?tabs=developeredition#learn-more-about-each-option)
 
-### Unity
+## Redeem your credits:
+
+### 1. Unity
 - You'll have received a unique code. 
 - [How to activate Unity license](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-).
 - [Unity Support](https://support.unity3d.com/hc) for help as needed. 
 
-### PiXYZ
+### 2. PiXYZ
 - You'll have received a unique code.
 - [Redeem your PiXYZ license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html)
 Directions to redeem:
@@ -129,24 +126,26 @@ Directions to redeem:
     1. Enter product code, and click **Redeem a product code**
 - [PiXYZ Support](https://www.pixyz-software.com/support/) for help as needed. 
 
-### Azure
+### 3. Azure
 Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
 
 Learn about Azure Spatial Anchors:
-- [Product Page.](https://azure.microsoft.com/services/spatial-anchors/)
+- [Product Page](https://azure.microsoft.com/services/spatial-anchors/)
 - [Documentation](https://docs.microsoft.com/azure/spatial-anchors/)
 
 Learn about Azure Remote Rendering:
-- [Product Page.](https://azure.microsoft.com/services/remote-rendering/)
+- [Product Page](https://azure.microsoft.com/services/remote-rendering/)
 - [Documentation](https://docs.microsoft.com/azure/remote-rendering/overview/about)
 
-#### Where to get started developing:
+### Where to get started developing:
 
-- Dive into your [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity).
-- Make sure to [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) for HoloLens development.
-- Learn about [developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
-- Learn about [developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
-- Learn about how to [combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
-- And explore the all the possibilities for [Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
+Unity Development Journey
+1. Dive into your [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity).
+1. Make sure to [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) for HoloLens development.
+1. Learn about [developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+1. Learn about how to [combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
 
-And feel free to reach out to your fellow developers on our [HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
+Additional Resources: 
+1. Explore the all the possibilities for [Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
+1. Learn about [developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+1. Reach out to your fellow developers on our [HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
