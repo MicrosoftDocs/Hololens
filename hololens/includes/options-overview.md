@@ -38,7 +38,7 @@ Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices ca
 
 ## HoloLens 2 (device only) features
 
-- You get the device and all benefits mentioned in [What is the same?.](hololens2-options.md#learn-more-about-each-option&tabs=same)
+- You get the device and all benefits mentioned in [What is the same?.](../hololens2-options.md#learn-more-about-each-option&tabs=same)
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - Welcome to mixed reality!
 
