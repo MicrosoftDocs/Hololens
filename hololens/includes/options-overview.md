@@ -18,14 +18,14 @@ Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hol
 ### 2. Configure
 1. Set up your [network for HoloLens](../hololens-commercial-infrastructure.md).
 1. Prepare [network ceritifcates](../hololens-certificates-network.md).
-1. Choose a [device management solution](../hololens-csp-policy-overview.md) and consider the [device restrictions](../hololens-csp-policy-overview#configurations) you'll use.
+1. Choose a [device management solution](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) and consider the [device restrictions](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) you'll use.
 
 ### 3. Deploy
 1. [Enroll](../hololens-enroll-mdm.md) your devices.
 1. Deploy your [applications](../app-deploy-overview.md).
 
 ### 4. Maintain
-1. [Manage HoloLens updates](../hololens-updates.md) .
+1. [Manage HoloLens updates](../hololens-updates.md).
 1. [Troubleshoot](../hololens-troubleshooting.md) any issues.
 
 ## Set up an individual device
@@ -62,7 +62,7 @@ If you&#39;d like to get connected to the rest of your company to use Remote Ass
 1. [Connect to your network](https://docs.microsoft.com/hololens/hololens-network).
 1. [Enroll with your organization](https://docs.microsoft.com/hololens/hololens-enroll-mdm).
 
-## How to get ready to deploy HoloLens devices in your Organization
+## How to get ready to deploy HoloLens devices for your Organization
 
 ### 1. Prepare
 1. [Deploy HoloLens in a commercial environment](../hololens-requirements.md).
@@ -72,7 +72,7 @@ If you&#39;d like to get connected to the rest of your company to use Remote Ass
 ### 2. Configure
 1. Set up your [network for HoloLens](../hololens-commercial-infrastructure.md).
 1. Prepare [network ceritifcates](../hololens-certificates-network.md).
-1. Choose a [device management solution](../hololens-csp-policy-overview.md) and consider the [device restrictions](../hololens-csp-policy-overview#configurations) you'll use.
+1. Choose a [device management solution](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) and consider the [device restrictions](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) you'll use.
 
 ### 3. Deploy
 1. [Enroll](../hololens-enroll-mdm.md) your devices.
