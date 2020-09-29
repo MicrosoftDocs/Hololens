@@ -18,22 +18,22 @@ Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices ca
 ## How to get ready to deploy HoloLens devices in your Organization
 
 ### 1. Prepare
-1. [Deploy HoloLens in a commercial environment](hololens-requirements.md).
-1. Consider your [Infrastructure Deployment](common-scenarios.md).
-1. Consider [Identity](hololens-identity.md) to be used by your devices.
+1. [Deploy HoloLens in a commercial environment](../hololens-requirements.md).
+1. Consider your [Infrastructure Deployment](../common-scenarios.md).
+1. Consider [Identity](../hololens-identity.md) to be used by your devices.
 
 ### 2. Configure
-1. Set up your [network for HoloLens](hololens-commercial-infrastructure.md).
-1. Prepare [network ceritifcates](hololens-certificates-network.md).
-1. Choose a [device management solution](hololens-csp-policy-overview.md) and consider the [device restrictions](hololens-csp-policy-overview#configurations) you'll use.
+1. Set up your [network for HoloLens](../hololens-commercial-infrastructure.md).
+1. Prepare [network ceritifcates](../hololens-certificates-network.md).
+1. Choose a [device management solution](../hololens-csp-policy-overview.md) and consider the [device restrictions](../hololens-csp-policy-overview#configurations) you'll use.
 
 ### 3. Deploy
-1. [Enroll](hololens-enroll-mdm.md) your devices.
-1. Deploy your [applications](app-deploy-overview.md).
+1. [Enroll](../hololens-enroll-mdm.md) your devices.
+1. Deploy your [applications](../app-deploy-overview.md).
 
 ### 4. Maintain
-1. [Manage HoloLens updates](hololens-updates.md) .
-1. [Troubleshoot] any issues.
+1. [Manage HoloLens updates](../hololens-updates.md) .
+1. [Troubleshoot](../hololens-troubleshooting.md) any issues.
 
 ## Set up an individual device
 1. Charge your device and get acquainted with the device [getting ready to use](https://docs.microsoft.com/hololens/hololens2-setup) it, and once it&#39;s charged [get set up](https://docs.microsoft.com/hololens/hololens2-start).
@@ -56,9 +56,9 @@ Learn about the  [HoloLens 2 with Dynamics 365 Remote Assist edition](https://ww
 
 ### What is the same across editions
 1. Learn what is the same. While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options:
-    - [Everything in the box](hololens2-hardware.md#hololens-components)
-    - [Pre-installed software](hololens2-hardware.md#pre-installed-software)
-    - [Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
+    - [Everything in the box](../hololens2-hardware.md#hololens-components)
+    - [Pre-installed software](../hololens2-hardware.md#pre-installed-software)
+    - [Warranty](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)
     - [Security](https://docs.microsoft.com/hololens/security-overview)
 
 1. Operating System Edition
@@ -79,22 +79,22 @@ If you&#39;d like to get connected to the rest of your company to use Remote Ass
 ## How to get ready to deploy HoloLens devices in your Organization
 
 ### 1. Prepare
-1. [Deploy HoloLens in a commercial environment](hololens-requirements.md).
-1. Consider your [Infrastructure Deployment](common-scenarios.md).
-1. Consider [Identity](hololens-identity.md) to be used by your devices.
+1. [Deploy HoloLens in a commercial environment](../hololens-requirements.md).
+1. Consider your [Infrastructure Deployment](../common-scenarios.md).
+1. Consider [Identity](../hololens-identity.md) to be used by your devices.
 
 ### 2. Configure
-1. Set up your [network for HoloLens](hololens-commercial-infrastructure.md).
-1. Prepare [network ceritifcates](hololens-certificates-network.md).
-1. Choose a [device management solution](hololens-csp-policy-overview.md) and consider the [device restrictions](hololens-csp-policy-overview#configurations) you'll use.
+1. Set up your [network for HoloLens](../hololens-commercial-infrastructure.md).
+1. Prepare [network ceritifcates](../hololens-certificates-network.md).
+1. Choose a [device management solution](../hololens-csp-policy-overview.md) and consider the [device restrictions](../hololens-csp-policy-overview#configurations) you'll use.
 
 ### 3. Deploy
-1. [Enroll](hololens-enroll-mdm.md) your devices.
-1. Deploy your [applications](app-deploy-overview.md).
+1. [Enroll](../hololens-enroll-mdm.md) your devices.
+1. Deploy your [applications](../app-deploy-overview.md).
 
 ### 4. Maintain
-1. [Manage HoloLens updates](hololens-updates.md) .
-1. [Troubleshoot] any issues.
+1. [Manage HoloLens updates](../hololens-updates.md) .
+1. [Troubleshoot](../hololens-troubleshooting.md) any issues.
 
 
 
@@ -117,9 +117,9 @@ The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits,
 
 ### What is the same across editions
 1. Learn what is the same. While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options:
-    - [Everything in the box](hololens2-hardware.md#hololens-components)
-    - [Pre-installed software](hololens2-hardware.md#pre-installed-software)
-    - [Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
+    - [Everything in the box](../hololens2-hardware.md#hololens-components)
+    - [Pre-installed software](../hololens2-hardware.md#pre-installed-software)
+    - [Warranty](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)
     - [Security](https://docs.microsoft.com/hololens/security-overview)
 
 1. Operating System Edition
@@ -163,7 +163,7 @@ Unity Development Journey
 1. Make sure to [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) for HoloLens development.
 1. Learn about [developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 1. Learn about how to [combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
-1. Learn how to [deploy your built apps](https://docs.microsoft.com/en-us/hololens/app-deploy-overview). 
+1. Learn how to [deploy your built apps](https://docs.microsoft.com/hololens/app-deploy-overview). 
 
 Additional Resources: 
 1. Explore the all the possibilities for [Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
