@@ -16,17 +16,11 @@ appliesto:
 - HoloLens 2
 ---
 
-# Setting up your HoloLens 2 edition
+# HoloLen 2 Overview
 
 HoloLens is an untethered mixed reality device with apps and solutions that enhance collaboration, *powered by holograms*. With HoloLens 2, experience new heights of productivity and innovation – with purpose – to work smarter.
 
 Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) looking for your next industry solution, a [developer](https://www.microsoft.com/hololens/developers) seeking to create experiences for a new reality, or a [business decision maker](https://www.microsoft.com/hololens/apps) thinking about your next innovation – HoloLens 2 is your new reality for computing. 
-
-HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/hololens/buy) that buyers can choose from. Each of these options includes the HoloLens 2 device, and two of these purchasing options also include other benefits that come with the device. This article will give an overview of the steps you can take to get started with your HoloLens 2.
-
-- **HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
-- **HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
-- **HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to beyond the basics and start developing for mixed reality.
 
 ## Learn more about each option
 
