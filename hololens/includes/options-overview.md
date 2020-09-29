@@ -85,6 +85,8 @@ Also if you are the one setting up your deployment to be ready for HoloLens devi
     - 3 month PiXYZ trial for use with the [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/), a bridge for connecting the engineering &amp; CAD worlds with the development world.
     - $500 in Azure credits for [Azure services](https://azure.microsoft.com/resources/). The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure.
 
+> [NOTE] The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
+
 ## Here's what to do next with the HoloLens 2 Development Edition
 
 How to redeem your credits:
