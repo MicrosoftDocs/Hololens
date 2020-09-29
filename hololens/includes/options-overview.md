@@ -23,13 +23,14 @@ Every HoloLens 2 device will have the [same OS](../security-architecture.md). Th
 
 ### Developing for HoloLens
 
-Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers. The same [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) are availible to anyone with any HoloLens 2 device. To learn more about the Developer Edition, please click the [Developer Edition tab above.](https://docs.microsoft.com/hololens/hololens2-options.md?tabs=developeredition#learn-more-about-each-option)
+Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers. The same [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) are availible to anyone with any HoloLens 2 device. To learn more about the Developer Edition, please click the [Developer Edition tab above.](../hololens2-options.md?tabs=developeredition#learn-more-about-each-option)
+
 
 # [HoloLens 2 (device only)](#tab/device)
 
 ## HoloLens 2 (device only) features
 
-- You get the device and all benefits mentioned in [What is the same?.](https://docs.microsoft.com/hololens/hololens2-options.md?tabs=same#learn-more-about-each-option)
+- You get the device and all benefits mentioned in [What is the same?.](../hololens2-options.md?tabs=same#learn-more-about-each-option)
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - Welcome to mixed reality!
 
@@ -47,7 +48,7 @@ Just got a device? Ready to get started with Mixed Reality with HoloLens 2?
 
 ## HoloLens 2 with Dynamics 365 Remote Assist features
 
-- You get the device and all benefits mentioned in [What is the same?.](https://docs.microsoft.com/hololens/hololens2-options.md?tabs=same#learn-more-about-each-option)
+- You get the device and all benefits mentioned in [What is the same?.](../hololens2-options.md?tabs=same#learn-more-about-each-option)
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
 
