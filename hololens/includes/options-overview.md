@@ -56,7 +56,7 @@ Just got a device? Ready to get started with Mixed Reality with HoloLens 2?
 
 ## HoloLens 2 with Dynamics 365 Remote Assist features
 
-- You get the device and all benefits mentioned in [What is the same?.](hololens2-options.md#what-is-the-same)
+- You get the device and all benefits mentioned in [What is the same?.](https://docs.microsoft.com/hololens/hololens2-options.md?tabs=same#learn-more-about-each-option)
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
 
@@ -86,7 +86,7 @@ Also if you are the one setting up your deployment to be ready for HoloLens devi
 
 ## HoloLens 2 Development Edition features
 
-- You get the device and all benefits mentioned in [What is the same?.](hololens2-options.md#what-is-the-same)
+- You get the device and all benefits mentioned in [What is the same?.](https://docs.microsoft.com/hololens/hololens2-options.md?tabs=same#learn-more-about-each-option)
 - The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting. 
 - The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month Pixyz plugin trial.  
     - Learn more [Unity](https://unity.com/), a real-time 3D development platform.
