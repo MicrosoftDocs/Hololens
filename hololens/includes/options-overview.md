@@ -1,36 +1,23 @@
-# [What is the same?](#tab/same)
-
+# [HoloLens 2 (device only)](#tab/device)
 ## What is the same?
+While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options.
 
-While there are 3 options, there are many things shared. Here are some in-box accessories and features available across all options.
-
-### Everything in the box:
-
-- HoloLens 2 device
-- Carrying case
-- Overhead strap
-- Microfiber cloth
-- Charger
-- USB-C cable
-
-### Warranty
-
-What if a device need fixing that needs more than just troubleshooting? No matter which type of device you have, you get a warranty when you purchase. Visit here to [read the full warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1).
+[Everything in the box](hololens2-hardware.md#hololens-components)
+[Pre-installed software](hololens2-hardware.md#pre-installed-software)
+[Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
+[Security](https://docs.microsoft.com/hololens/security-overview)
 
 ### Operating System Edition
-
-Every HoloLens 2 device will have the [same OS](../security-architecture.md). This means that when we [release a new update](../hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had. All options will have the same built in [security](https://docs.microsoft.com/hololens/security-overview), be able to run the same [apps](https://docs.microsoft.com/hololens/holographic-store-apps), and experience mixed reality.
+Every HoloLens 2 device will have the [same OS](../security-architecture.md). This means that when we [release a new update](../hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had.
 
 ### Developing for HoloLens
-
 Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers. The same [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) are availible to anyone with any HoloLens 2 device. To learn more about the Developer Edition, please click the [Developer Edition tab above.](../hololens2-options.md?tabs=developeredition#learn-more-about-each-option)
 
 
-# [HoloLens 2 (device only)](#tab/device)
 
 ## HoloLens 2 (device only) features
 
-- You get the device and all benefits mentioned in [What is the same?.](../hololens2-options.md?tabs=same#learn-more-about-each-option)
+
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - Welcome to mixed reality!
 
@@ -44,11 +31,27 @@ Just got a device? Ready to get started with Mixed Reality with HoloLens 2?
 - And look through all the available [apps for HoloLens 2 on the Microsoft Store app](https://docs.microsoft.com/hololens/holographic-store-apps).
 
 
+
+
+
 # [HoloLens 2 with Dynamics 365 Remote Assist](#tab/remoteassist)
 
-## HoloLens 2 with Dynamics 365 Remote Assist features
+## What is the same?
+While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options.
 
-- You get the device and all benefits mentioned in [What is the same?.](../hololens2-options.md?tabs=same#learn-more-about-each-option)
+[Everything in the box](hololens2-hardware.md#hololens-components)
+[Pre-installed software](hololens2-hardware.md#pre-installed-software)
+[Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
+[Security](https://docs.microsoft.com/hololens/security-overview)
+
+### Operating System Edition
+Every HoloLens 2 device will have the [same OS](../security-architecture.md). This means that when we [release a new update](../hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had.
+
+### Developing for HoloLens
+Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers. The same [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) are availible to anyone with any HoloLens 2 device. To learn more about the Developer Edition, please click the [Developer Edition tab above.](../hololens2-options.md?tabs=developeredition#learn-more-about-each-option)
+
+
+## HoloLens 2 with Dynamics 365 Remote Assist features
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
 
@@ -74,18 +77,38 @@ Also if you are the one setting up your deployment to be ready for HoloLens devi
 - Keep an eye out for new features and fixes in our [Release notes](https://docs.microsoft.com/hololens/hololens-release-notes).
 
 
+
+
+
+
 # [HoloLens 2 Development Edition](#tab/developeredition)
+## What is the same?
+While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options.
+
+[Everything in the box](hololens2-hardware.md#hololens-components)
+[Pre-installed software](hololens2-hardware.md#pre-installed-software)
+[Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
+[Security](https://docs.microsoft.com/hololens/security-overview)
+
+### Operating System Edition
+Every HoloLens 2 device will have the [same OS](../security-architecture.md). This means that when we [release a new update](../hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had.
+
+### Developing for HoloLens
+Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers. The same [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) are availible to anyone with any HoloLens 2 device. To learn more about the Developer Edition, please click the [Developer Edition tab above.](../hololens2-options.md?tabs=developeredition#learn-more-about-each-option)
+
+
 
 ## HoloLens 2 Development Edition features
 
-- You get the device and all benefits mentioned in [What is the same?.](../hololens2-options.md?tabs=same#learn-more-about-each-option)
+> [NOTE] The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
+
 - The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting. 
 - The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month Pixyz plugin trial.  
     - Learn more [Unity](https://unity.com/), a real-time 3D development platform.
     - 3 month PiXYZ trial for use with the [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/), a bridge for connecting the engineering &amp; CAD worlds with the development world.
     - $500 in Azure credits for [Azure services](https://azure.microsoft.com/resources/). The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure.
 
-> [NOTE] The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
+
 
 ## Here's what to do next with the HoloLens 2 Development Edition
 
