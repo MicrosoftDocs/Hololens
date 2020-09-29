@@ -1,19 +1,12 @@
 # [HoloLens 2](#tab/device)
+HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/hololens/buy) that buyers can choose from. Each of these options includes the HoloLens 2 device, and two of these purchasing options also include other benefits that come with the device. This article will give an overview of the steps you can take to get started with your HoloLens 2.
+
+- **HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
+- **HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
+- **HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to beyond the basics and start developing for mixed reality.
+
 ## HoloLens 2 Getting started
 Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
-
-### What is the same across editions
-1. Learn what is the same. While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options:
-    - [Everything in the box](../hololens2-hardware.md#hololens-components)
-    - [Pre-installed software](../hololens2-hardware.md#pre-installed-software)
-    - [Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
-    - [Security](https://docs.microsoft.com/hololens/security-overview)
-
-1. Operating System Edition
-Every HoloLens 2 device will have the [same OS](../security-architecture.md). This means that when we [release a new update](../hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had.
-
-1. Developing for HoloLens
-Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers. The same [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) are availible to anyone with any HoloLens 2 device. To learn more about the Developer Edition, please click the [Developer Edition tab above.](../hololens2-options.md?tabs=developeredition#learn-more-about-each-option).
 
 ## How to get ready to deploy HoloLens devices in your Organization
 
@@ -47,25 +40,18 @@ Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices ca
 
 
 # [HoloLens 2 with Dynamics 365 Remote Assist](#tab/remoteassist)
+HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/hololens/buy) that buyers can choose from. Each of these options includes the HoloLens 2 device, and two of these purchasing options also include other benefits that come with the device. This article will give an overview of the steps you can take to get started with your HoloLens 2.
+
+- **HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
+- **HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
+- **HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to beyond the basics and start developing for mixed reality.
+
 ## Learn about HoloLens 2 with Dynamics 365 Remote Assist
 Learn about the  [HoloLens 2 with Dynamics 365 Remote Assist edition](https://www.microsoft.com/hololens/buy)
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### What is the same across editions
-1. Learn what is the same. While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options:
-    - [Everything in the box](../hololens2-hardware.md#hololens-components)
-    - [Pre-installed software](../hololens2-hardware.md#pre-installed-software)
-    - [Warranty](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)
-    - [Security](https://docs.microsoft.com/hololens/security-overview)
-
-1. Operating System Edition
-Every HoloLens 2 device will have the [same OS](../security-architecture.md). This means that when we [release a new update](../hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had.
-
-1. Developing for HoloLens
-Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers. The same [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) are availible to anyone with any HoloLens 2 device. To learn more about the Developer Edition, please click the [Developer Edition tab above.](../hololens2-options.md?tabs=developeredition#learn-more-about-each-option)
 
 ## Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
 Get started on your device:
@@ -103,6 +89,12 @@ If you&#39;d like to get connected to the rest of your company to use Remote Ass
 
 
 # [HoloLens 2 Development Edition](#tab/developeredition)
+HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/hololens/buy) that buyers can choose from. Each of these options includes the HoloLens 2 device, and two of these purchasing options also include other benefits that come with the device. This article will give an overview of the steps you can take to get started with your HoloLens 2.
+
+- **HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
+- **HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
+- **HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to beyond the basics and start developing for mixed reality.
+
 ## Learn about the Development Edition
 1. Learn about the [Developer Edition](https://www.microsoft.com/hololens/buy)
 
@@ -115,19 +107,6 @@ The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits,
 |  [Unity](https://unity.com/) | A real-time 3D development platform.   |
 |  [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/) | a bridge for connecting the engineering &amp; CAD worlds with the development world.   |
 | $500 in Azure credits for [Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
-
-### What is the same across editions
-1. Learn what is the same. While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options:
-    - [Everything in the box](../hololens2-hardware.md#hololens-components)
-    - [Pre-installed software](../hololens2-hardware.md#pre-installed-software)
-    - [Warranty](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)
-    - [Security](https://docs.microsoft.com/hololens/security-overview)
-
-1. Operating System Edition
-Every HoloLens 2 device will have the [same OS](../security-architecture.md). This means that when we [release a new update](../hololens-release-notes.md), all new features and fixes will be available to everyone. All devices are built on the same edition, Windows Holographic for Business, and there is no longer the edition upgrade license that HoloLens (1st gen) had.
-
-1. Developing for HoloLens
-Any HoloLens 2 can be used for developing HoloLens 2 apps. This means devices can be purchased in bulk for a team of developers. The same [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) are availible to anyone with any HoloLens 2 device. To learn more about the Developer Edition, please click the [Developer Edition tab above.](../hololens2-options.md?tabs=developeredition#learn-more-about-each-option)
 
 ## Redeem your credits:
 
