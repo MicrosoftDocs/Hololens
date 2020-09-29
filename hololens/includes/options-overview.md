@@ -5,28 +5,36 @@ HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/ho
 - **HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
 - **HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to beyond the basics and start developing for mixed reality.
 
-## HoloLens 2 Getting started
+## 1. HoloLens 2 Getting started
 Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
 
 ## How to get ready to deploy HoloLens devices in your Organization
 
-### 1. Prepare
-1. [Deploy HoloLens in a commercial environment](../hololens-requirements.md).
-1. Consider your [Infrastructure Deployment](../common-scenarios.md).
-1. Consider [Identity](../hololens-identity.md) to be used by your devices.
+### Prepare
+| Checkpoint  | Prepare  |
+|---|---|
+| [Deploy HoloLens in a commercial environment](../hololens-requirements.md).   | You've learned the considerations.  |
+| Consider your [Infrastructure Deployment](../common-scenarios.md).  | You've assessed your infrastructure.  |
+| Consider [Identity](../hololens-identity.md) to be used by your devices.  | You know what Identity you've picked and it's limitations.   |
 
-### 2. Configure
-1. Set up your [network for HoloLens](../hololens-commercial-infrastructure.md).
-1. Prepare [network ceritifcates](../hololens-certificates-network.md).
-1. Choose a [device management solution](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) and consider the [device restrictions](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) you'll use.
+### Configure
+| Checkpoint     | Configure  |
+|---|---|
+| Set up your [network for HoloLens](../hololens-commercial-infrastructure.md).  | You set up your network.  |
+| Prepare [network ceritifcates](../hololens-certificates-network.md).  | You prepared certificates.   |
+| Choose a [device management solution](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) and consider the [device restrictions](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) you'll use.  | You choose a device management solution.   |
 
-### 3. Deploy
-1. [Enroll](../hololens-enroll-mdm.md) your devices.
-1. Deploy your [applications](../app-deploy-overview.md).
+### Deploy
+| Checkpoint  | Deploy  |
+|---|---|
+| [Enroll](../hololens-enroll-mdm.md) your devices.   | You understand how to enroll your devices.   |
+| Deploy your [applications](../app-deploy-overview.md).  | You understand all the application deployment methods avalible and picked one.  |
 
-### 4. Maintain
-1. [Manage HoloLens updates](../hololens-updates.md).
-1. [Troubleshoot](../hololens-troubleshooting.md) any issues.
+### Maintain
+| Checkpoint  |  Maintain  |
+|---|---|
+| [Manage HoloLens updates](../hololens-updates.md).  | You understand how to manage your device's updates.   |
+| [Troubleshoot](../hololens-troubleshooting.md) any issues.  | You know where to go to troubleshoot HoloLens issues.   |
 
 ## Set up an individual device
 1. Charge your device and get acquainted with the device [getting ready to use](https://docs.microsoft.com/hololens/hololens2-setup) it, and once it&#39;s charged [get set up](https://docs.microsoft.com/hololens/hololens2-start).
@@ -64,23 +72,31 @@ If you&#39;d like to get connected to the rest of your company to use Remote Ass
 
 ## How to get ready to deploy HoloLens devices for your Organization
 
-### 1. Prepare
-1. [Deploy HoloLens in a commercial environment](../hololens-requirements.md).
-1. Consider your [Infrastructure Deployment](../common-scenarios.md).
-1. Consider [Identity](../hololens-identity.md) to be used by your devices.
+### Prepare
+| Checkpoint  | Prepare  |
+|---|---|
+| [Deploy HoloLens in a commercial environment](../hololens-requirements.md).   | You've learned the considerations.  |
+| Consider your [Infrastructure Deployment](../common-scenarios.md).  | You've assessed your infrastructure.  |
+| Consider [Identity](../hololens-identity.md) to be used by your devices.  | You know what Identity you've picked and it's limitations.   |
 
-### 2. Configure
-1. Set up your [network for HoloLens](../hololens-commercial-infrastructure.md).
-1. Prepare [network ceritifcates](../hololens-certificates-network.md).
-1. Choose a [device management solution](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) and consider the [device restrictions](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) you'll use.
+### Configure
+| Checkpoint     | Configure  |
+|---|---|
+| Set up your [network for HoloLens](../hololens-commercial-infrastructure.md).  | You set up your network.  |
+| Prepare [network ceritifcates](../hololens-certificates-network.md).  | You prepared certificates.   |
+| Choose a [device management solution](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) and consider the [device restrictions](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) you'll use.  | You choose a device management solution.   |
 
-### 3. Deploy
-1. [Enroll](../hololens-enroll-mdm.md) your devices.
-1. Deploy your [applications](../app-deploy-overview.md).
+### Deploy
+| Checkpoint  | Deploy  |
+|---|---|
+| [Enroll](../hololens-enroll-mdm.md) your devices.   | You understand how to enroll your devices.   |
+| Deploy your [applications](../app-deploy-overview.md).  | You understand all the application deployment methods avalible and picked one.  |
 
-### 4. Maintain
-1. [Manage HoloLens updates](../hololens-updates.md) .
-1. [Troubleshoot](../hololens-troubleshooting.md) any issues.
+### Maintain
+| Checkpoint  |  Maintain  |
+|---|---|
+| [Manage HoloLens updates](../hololens-updates.md).  | You understand how to manage your device's updates.   |
+| [Troubleshoot](../hololens-troubleshooting.md) any issues.  | You know where to go to troubleshoot HoloLens issues.   |
 
 
 
