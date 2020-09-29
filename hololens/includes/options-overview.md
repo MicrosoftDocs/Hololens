@@ -4,8 +4,8 @@ Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hol
 
 ### What is the same across editions
 1. Learn what is the same. While there are multiple options, there are many things shared. Here are some in-box accessories and features available across all options:
-    - [Everything in the box](hololens2-hardware.md#hololens-components)
-    - [Pre-installed software](hololens2-hardware.md#pre-installed-software)
+    - [Everything in the box](../hololens2-hardware.md#hololens-components)
+    - [Pre-installed software](../hololens2-hardware.md#pre-installed-software)
     - [Warranty](https://www.microsoft.com/en-us/storedocs/terms-of-sale?rtc=1)
     - [Security](https://docs.microsoft.com/hololens/security-overview)
 
@@ -109,6 +109,7 @@ If you&#39;d like to get connected to the rest of your company to use Remote Ass
 > [NOTE] The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
 
 The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month Pixyz plugin trial:
+
 | Bundle feature | Description |
 |---|---|
 |  [Unity](https://unity.com/) | A real-time 3D development platform.   |
