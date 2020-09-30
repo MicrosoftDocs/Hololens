@@ -48,7 +48,7 @@ There are a number of ways to improve this situation, depending on the infrastru
 ## Provisioning Package with Ethernet Adaptor
 
 > [!NOTE] 
-> If the wired network is also subject to MAC restrictions, then the MAC address of the USB-C Ethernet adaptor / Hub will need to be pre-approved. Care should be taken with this hub as it will allow access to the network from other devices.**
+> If the wired network is also subject to MAC restrictions, then the MAC address of the USB-C Ethernet adaptor / Hub will need to be pre-approved. Care should be taken with this hub as it will allow access to the network from other devices.
 
 ### Requirements
 
@@ -61,24 +61,24 @@ There are a number of ways to improve this situation, depending on the infrastru
 
 ### Process
 
-The Process may vary depending on the software level of the device. If the device has the May 2004 update, follow the steps below.
+The Process may vary depending on the software level of the device. If the device has the [May 2004 update](hololens-release-notes.md#windows-holographic-version-2004), follow the steps below.
 
 1. Place the provisioning package onto the root of a USB stick, and plug into the Hub.
 2. Connect Ethernet cable to the hub.
 3. Connect USB-C hub to HoloLens device.
 4. Turn on HoloLens Device and wear the device.
-5. Press the Volume Down and Power button to apply the Provisioning Package.
+5. Press the **Volume Down and Power button** to apply the Provisioning Package.
 6. The technician can now follow OOBE, and when complete, open the Settings App, and retrieve the MAC Address of the device.
 
-If the device does not have the 2004 update, follow the steps below.
+If the device has an OS build before the [May 2004 update](hololens-release-notes.md#windows-holographic-version-2004), follow the steps below.
 
 1. Turn on the HoloLens Device, and plug the device into a PC.
-2. Press Volume Down and Power, and the device should show up on the PC as a file storage device.
+2. The device should show up on the PC as a file storage device.
 3. Copy the Provisioning Package to the Device
 4. Connect Ethernet cable to the hub.
 5. Connect USB-C hub to HoloLens device.
 6. Wear the device.
-7. Press the Volume Down and Power button to apply the Provisioning Package.
+7. Press the **Volume Down and Power** button to apply the Provisioning Package.
 8. The technician can now follow OOBE, and when complete, open the Settings App, and retrieve the MAC Address of the device.
 
 ### Benefits
@@ -102,8 +102,8 @@ This will allow a customer with advanced networking requirements to enroll the d
 
 Additional pre-requisites will be needed as below:
 1. [Enable the Tenant for the Autopilot preview](https://docs.microsoft.com/hololens/hololens2-autopilot)
-1. Create the HoloLens policies to replace the Provisioning Package within Intune
-1. Create the HoloLens Intune Policies
+1. Create the HoloLens policies to replace the Provisioning Package within Intune.
+1. Create the HoloLens Intune Policies.
 1. Assign the devices to the correct group.
 
 ### Process
