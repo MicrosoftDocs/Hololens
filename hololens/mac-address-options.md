@@ -31,7 +31,7 @@ Two key issues can arise with HoloLens devices, which can cause delays and manua
 
 The key challenges to this are:
 
-1. The MAC Address can currently only be identified from the &quot;Settings&quot; app on the device, or from Intune after a successful Intune enrollment.
+1. The MAC Address can currently only be identified from the Settings app on the device, or from Intune after a successful Intune enrollment.
 2. Without the MAC address, the device cannot join the Wi-Fi Network to begin enrollment.
 3. Manual Solutions to these challenges require technician involvement with the devices.
 
