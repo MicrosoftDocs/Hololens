@@ -80,6 +80,15 @@ Most enterprise IT departments will require assessment and review of new devices
 
 When deploying HoloLens 2 devices to a corporate enterprise environment, there are a number of common device configurations that may be considered when planning out your deployment of HoloLens 2. This list highlights configurations and settings that are found to be quite common, and does not comprise of a full list of available options:
 
+| Device Setting | Brief description.                                                                              |
+|----------------|-------------------------------------------------------------------------------------------------|
+| [Hardware restrictions](hololens-requirements.md#hardware-restrictions)               | Hardware restrictions reduce connectivity and assist in data protection.                        |
+| [Wi-Fi profiles](hololens-requirements.md#wi-fi-profiles)               | Configure Wi-Fi profiles without user intervention or interaction.                              |
+| [Certificates](hololens-requirements.md#certificates-1)               | Provide account and/or Wi-Fi authentication, VPN encryption, and SSL encryption of web content. |
+| [Proxy](hololens-requirements.md#proxy)              | Manage internal traffic.                                                                        |
+|  [VPN](hololens-requirements.md#vpn)              | Control access to apps and resources on their company's intranet.                               |
+| [Kiosk Mode](hololens-requirements.md#kiosk-mode) | Limits the applications that are presented to users via UI. |
+
 #### Hardware restrictions
 
 HoloLens 2 uses state-of-the-art technology that includes popular hardware features such as cameras, microphones, speakers, USB interfaces, Bluetooth interfaces, and Wi-Fi. You can use hardware restrictions to control the availability of these features.
