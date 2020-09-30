@@ -4,6 +4,8 @@
 ## 1. HoloLens 2 Getting started
 Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
 
+Every HoloLens 2 edition will ship with the same [content in the box](../hololens2-hardware.md#hololens-components) with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software). Each HoloLens will share the same core OS and have the same [security](https://docs.microsoft.com/hololens/security-overview).
+
 ## 2. Deploy HoloLens devices in your Organization
 This section with get your organization ready to deploy HoloLens devices across your organization. 
 
@@ -53,6 +55,8 @@ Learn about the  [HoloLens 2 with Dynamics 365 Remote Assist edition](https://ww
 - One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Every HoloLens 2 edition will ship with the same [content in the box](../hololens2-hardware.md#hololens-components) with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software). Each HoloLens will share the same core OS and have the same [security](https://docs.microsoft.com/hololens/security-overview).
 
 ## 2. Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
 Get started on your device:
@@ -112,6 +116,8 @@ The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits,
 |  [Unity](https://unity.com/) | A real-time 3D development platform.   |
 |  [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/) | a bridge for connecting the engineering &amp; CAD worlds with the development world.   |
 | $500 in Azure credits for [Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
+
+Every HoloLens 2 edition will ship with the same [content in the box](../hololens2-hardware.md#hololens-components) with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software). Each HoloLens will share the same core OS and have the same [security](https://docs.microsoft.com/hololens/security-overview).
 
 ## 2. Redeem your credits:
 
