@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.date: 9/30/2020
 ms.reviewer: v-evmill
 audience: ITPro
-manager: 
+manager: yannisle
 appliesto:
 - HoloLens 2
 ---
@@ -47,7 +47,7 @@ There are a number of ways to improve this situation, depending on the infrastru
 
 ## Provisioning Package with Ethernet Adaptor
 
-**If the wired network is also subject to MAC restrictions, then the MAC address of the USB-C Ethernet adaptor / Hub will need to be pre-approved. Care should be taken with this hub as it will allow access to the network from other devices.**
+> [!NOTE] If the wired network is also subject to MAC restrictions, then the MAC address of the USB-C Ethernet adaptor / Hub will need to be pre-approved. Care should be taken with this hub as it will allow access to the network from other devices.**
 
 ### Requirements
 
@@ -60,7 +60,7 @@ There are a number of ways to improve this situation, depending on the infrastru
 
 ### Process
 
-**The Process may vary depending on the software level of the device. If the device has the May 2004 update, follow the steps below.**
+The Process may vary depending on the software level of the device. If the device has the May 2004 update, follow the steps below.
 
 1. Place the provisioning package onto the root of a USB stick, and plug into the Hub.
 2. Connect Ethernet cable to the hub.
@@ -69,7 +69,7 @@ There are a number of ways to improve this situation, depending on the infrastru
 5. Press the Volume Down and Power button to apply the Provisioning Package.
 6. The technician can now follow OOBE, and when complete, open the Settings App, and retrieve the MAC Address of the device.
 
-**If the device does not have the 2004 update, follow the steps below.**
+If the device does not have the 2004 update, follow the steps below.
 
 1. Turn on the HoloLens Device, and plug the device into a PC.
 2. Press Volume Down and Power, and the device should show up on the PC as a file storage device.
@@ -147,4 +147,4 @@ This will return the name and MAC address of any HoloLens devices which have bee
 
 ### Process
 
-After the Intune enrolment has completed, the Technician would run the above script to retrieve the MAC address
+After the Intune enrolment has completed, the Technician would run the above script to retrieve the MAC address.
