@@ -80,7 +80,7 @@ Most enterprise IT departments will require assessment and review of new devices
 
 When deploying HoloLens 2 devices to a corporate enterprise environment, there are a number of common device configurations that may be considered when planning out your deployment of HoloLens 2. This list highlights configurations and settings that are found to be quite common, and does not comprise of a full list of available options:
 
-### Hardware restrictions
+#### Hardware restrictions
 
 HoloLens 2 uses state-of-the-art technology that includes popular hardware features such as cameras, microphones, speakers, USB interfaces, Bluetooth interfaces, and Wi-Fi. You can use hardware restrictions to control the availability of these features.
 
@@ -92,31 +92,31 @@ The following lists the most commonly used MDM settings that HoloLens 2 supports
 
 Read more about other [common device restrictions.](https://docs.microsoft.com/hololens/hololens-common-device-restrictions)
 
-### Wi-Fi profiles
+#### Wi-Fi profiles
 
 Most corporate Wi-Fi networks require certificates and other complex information to restrict and secure user access. This advanced Wi-Fi information is difficult for typical users to configure, but MDM systems can fully configure these Wi-Fi profiles without user intervention. You can create multiple Wi-Fi profiles in your MDM system.
 
 For more details on Wi-Fi settings for Windows 10, see [Enterprise Profile WiFi settings](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
 
-### Certificates
+#### Certificates
 
 Certificates help improve security by providing account authentication, Wi-Fi authentication, VPN encryption, and SSL encryption of web content. Although administrators can manage certificates on devices manually through provisioning packages, it&#39;s a best practice to use your MDM system to manage those certificates throughout their entire lifecycle – from enrollment through renewal and revocation. Your MDM system can automatically deploy these certificates to the devices&#39; certificate stores after you enroll the device (as long as the MDM system supports the Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standards #12 (PKCS#12)). MDM can also query and delete enrolled client certificates or trigger a new enrollment request before the current certificate is expired.
 
 Read more about how to [prepare certificates and network profiles for HoloLens 2.](https://docs.microsoft.com/hololens/hololens-certificates-network)
 
-### Proxy
+#### Proxy
 
 Most corporate intranet networks leverage a proxy to manage internal traffic. With HoloLens 2 you can configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections.
 
 For more details on proxy settings for Windows 10, see [NetworkProxy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp).
 
-### VPN
+#### VPN
 
 Organizations often use a VPN to control access to apps and resources on their company&#39;s intranet. HoloLens 2 supports SSL VPN connections, which require a downloadable plugin from the Microsoft Store and are specific to the VPN vendor of your choice.
 
 For more details about VPN profiles, see the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx)
 
-### Kiosk Mode
+#### Kiosk Mode
 
 You can configure a HoloLens 2 device to function as a fixed-purpose device, also called a kiosk, by configuring the device to run in kiosk mode. Kiosk mode limits the applications (or users) that are available on the device. Kiosk mode is a convenient feature that you can use to dedicate a HoloLens 2 device to business apps, or to use the HoloLens 2 device in an app demo.
 
