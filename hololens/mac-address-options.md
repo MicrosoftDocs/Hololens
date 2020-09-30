@@ -139,7 +139,7 @@ Import-Module Microsoft.Graph.Intune
 
 Connect-MSGraph
 
-Get-IntuneManagedDevice -Filter &quot;model eq &#39;Hololens 2&#39;&quot; | where {$\_.enrolledDateTime -gt (get-date).AddDays(-30)} | select deviceName, wiFiMacAddress
+Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDateTime -gt (get-date).AddDays(-30)}  | select deviceName, wiFiMacAddress 
 ```
 
 This will return the name and MAC address of any HoloLens devices which have been enrolled in the last 30 days.
