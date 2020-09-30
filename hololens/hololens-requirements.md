@@ -138,7 +138,8 @@ Windows 10 makes it possible to develop apps that work seamlessly across multipl
 
 There are multiple ways to deploy applications to HoloLens 2 devices. Apps can be deployed directly through MDM, the Microsoft Store for Business, or sideloaded through a Provisioning Package. More [details regarding app deployment can be found here](https://docs.microsoft.com/hololens/app-deploy-overview).
 
-Note: HoloLens 2 supports running of UWP ARM64 apps only
+> [!NOTE]
+> HoloLens 2 supports running of UWP ARM64 apps only.
 
 ## Maintain
 
