@@ -4,7 +4,7 @@
 ## 1. HoloLens 2 Getting started
 Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
 
-## 2. How to get ready to deploy HoloLens devices in your Organization
+## 2. Deploy HoloLens devices in your Organization
 
 ### Prepare
 | Checkpoint  | Prepare  |
@@ -62,7 +62,7 @@ If you&#39;d like to get connected to the rest of your company to use Remote Ass
 1. [Connect to your network](https://docs.microsoft.com/hololens/hololens-network).
 1. [Enroll with your organization](https://docs.microsoft.com/hololens/hololens-enroll-mdm).
 
-## 3. How to get ready to deploy HoloLens devices for your Organization
+## 3. Deploy HoloLens devices for your Organization
 
 ### Prepare
 | Checkpoint  | Prepare  |
