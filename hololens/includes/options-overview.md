@@ -1,11 +1,9 @@
 # [HoloLens 2](#tab/device)
 HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/hololens/buy) that buyers can choose from. Each of these options includes the HoloLens 2 device, and two of these purchasing options also include other benefits that come with the device. This article will give an overview of the steps you can take to get started with your HoloLens 2.
 
-- **HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
-- **HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
-- **HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to beyond the basics and start developing for mixed reality.
-
 ## 1. HoloLens 2 Getting started
+**HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
+
 Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
 
 ## 2. How to get ready to deploy HoloLens devices in your Organization
@@ -48,6 +46,8 @@ Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hol
 
 
 # [HoloLens 2 with Dynamics 365 Remote Assist](#tab/remoteassist)
+**HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
+
 HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/hololens/buy) that buyers can choose from. Each of these options includes the HoloLens 2 device, and two of these purchasing options also include other benefits that come with the device. This article will give an overview of the steps you can take to get started with your HoloLens 2.
 
 - **HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
@@ -103,8 +103,9 @@ If you&#39;d like to get connected to the rest of your company to use Remote Ass
 
 
 
-
 # [HoloLens 2 Development Edition](#tab/developeredition)
+**HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to beyond the basics and start developing for mixed reality.
+
 HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/hololens/buy) that buyers can choose from. Each of these options includes the HoloLens 2 device, and two of these purchasing options also include other benefits that come with the device. This article will give an overview of the steps you can take to get started with your HoloLens 2.
 
 - **HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
