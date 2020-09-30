@@ -47,7 +47,8 @@ There are a number of ways to improve this situation, depending on the infrastru
 
 ## Provisioning Package with Ethernet Adaptor
 
-> [!NOTE] If the wired network is also subject to MAC restrictions, then the MAC address of the USB-C Ethernet adaptor / Hub will need to be pre-approved. Care should be taken with this hub as it will allow access to the network from other devices.**
+> [!NOTE] 
+> If the wired network is also subject to MAC restrictions, then the MAC address of the USB-C Ethernet adaptor / Hub will need to be pre-approved. Care should be taken with this hub as it will allow access to the network from other devices.**
 
 ### Requirements
 
