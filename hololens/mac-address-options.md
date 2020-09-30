@@ -4,7 +4,7 @@ description: How to MAC address for network on HoloLens 2 devices
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: aboeger
+ms.author: mata
 ms.topic: article
 ms.localizationpriority: high
 ms.date: 9/30/2020
@@ -53,7 +53,7 @@ There are a number of ways to improve this situation, depending on the infrastru
 
 - Wired network port with access to the customer network
 - HoloLens Compatible USB-C Hub containing an Ethernet adaptor – Any hub that doesn&#39;t require any additional drivers or application installs should be suitable.
-- Provisioning Package containing –
+- Provisioning Package containing:
   - Containing Wireless Network information and Certificate
   - Optionally containing enrollment information for the Organisation&#39;s Azure AD
   - Containing any other required provisioning settings
@@ -82,7 +82,7 @@ There are a number of ways to improve this situation, depending on the infrastru
 
 ### Benefits
 
-This will allow a &quot;Single touch&quot; of the device, to apply the correct provisioning package and gather the MAC address of the device. [Provisioning packages can be created following the guidance here.](https://docs.microsoft.com/en-us/hololens/hololens-provisioning)
+This will allow a &quot;Single touch&quot; of the device, to apply the correct provisioning package and gather the MAC address of the device. [Provisioning packages can be created following the guidance here.](https://docs.microsoft.com/hololens/hololens-provisioning)
 
 ## Autopilot with Intune Enrolment
 
@@ -113,8 +113,10 @@ Additional pre-requisites will be needed as below:
 4. The Device will apply the required Wi-Fi Certificates and other configuration as needed via Intune
 5. When complete, the technician will be able to load the Intune (Endpoint Manager) Portal, and drill into the device properties page at **Home -> Devices -> DeviceName -> Hardware**
 6. The Wifi MAC address will be visible within the Intune Portal
-7. ![](RackMultipart20200930-4-onl9vd_html_3099504de13bdc4.png)
-8. The technician will add this MAC address as an allowed device.
+
+![MAC Address via Intune](images/mac-address-intune.png)
+
+7. The technician will add this MAC address as an allowed device.
 
 ### Benefits
 
@@ -141,7 +143,7 @@ Get-IntuneManagedDevice -Filter &quot;model eq &#39;Hololens 2&#39;&quot; | wher
 
 This will return the name and MAC address of any HoloLens devices which have been enrolled in the last 30 days.
 
-![](RackMultipart20200930-4-onl9vd_html_9e909b34e3af3bf5.png)
+![MAC Address via Powershell](images/mac-address-powershell.png)
 
 ### Process
 
