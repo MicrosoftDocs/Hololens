@@ -1,6 +1,4 @@
 # [HoloLens 2](#tab/device)
-HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/hololens/buy) that buyers can choose from. Each of these options includes the HoloLens 2 device, and two of these purchasing options also include other benefits that come with the device. This article will give an overview of the steps you can take to get started with your HoloLens 2.
-
 ## 1. HoloLens 2 Getting started
 **HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 
