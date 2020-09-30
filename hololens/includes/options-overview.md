@@ -8,7 +8,7 @@ HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/ho
 ## 1. HoloLens 2 Getting started
 Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
 
-## How to get ready to deploy HoloLens devices in your Organization
+## 2. How to get ready to deploy HoloLens devices in your Organization
 
 ### Prepare
 | Checkpoint  | Prepare  |
@@ -36,7 +36,7 @@ Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hol
 | [Manage HoloLens updates](../hololens-updates.md).  | You understand how to manage your device's updates.   |
 | [Troubleshoot](../hololens-troubleshooting.md) any issues.  | You know where to go to troubleshoot HoloLens issues.   |
 
-## Set up an individual device
+## 3. Set up an individual device
 1. Charge your device and get acquainted with the device [getting ready to use](https://docs.microsoft.com/hololens/hololens2-setup) it, and once it&#39;s charged [get set up](https://docs.microsoft.com/hololens/hololens2-start).
 1. Then [learn how to get around HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
 1. Once you&#39;re experienced [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
@@ -54,14 +54,14 @@ HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/ho
 - **HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
 - **HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to beyond the basics and start developing for mixed reality.
 
-## Learn about HoloLens 2 with Dynamics 365 Remote Assist
+## 1. Learn about HoloLens 2 with Dynamics 365 Remote Assist
 Learn about the  [HoloLens 2 with Dynamics 365 Remote Assist edition](https://www.microsoft.com/hololens/buy)
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
+## 2. Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
 Get started on your device:
 1. Here&#39;s how to [get started with Remote Assist on HoloLens](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens).
 1. Here&#39;s how to [redeem your Remote Assist license](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses).
@@ -70,7 +70,7 @@ If you&#39;d like to get connected to the rest of your company to use Remote Ass
 1. [Connect to your network](https://docs.microsoft.com/hololens/hololens-network).
 1. [Enroll with your organization](https://docs.microsoft.com/hololens/hololens-enroll-mdm).
 
-## How to get ready to deploy HoloLens devices for your Organization
+## 3. How to get ready to deploy HoloLens devices for your Organization
 
 ### Prepare
 | Checkpoint  | Prepare  |
@@ -111,7 +111,7 @@ HoloLens 2 devices have [3 different options](https://www.microsoft.com/en-us/ho
 - **HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
 - **HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to beyond the basics and start developing for mixed reality.
 
-## Learn about the Development Edition
+## 1. Learn about the Development Edition
 1. Learn about the [Developer Edition](https://www.microsoft.com/hololens/buy)
 
 > [NOTE] The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
@@ -124,14 +124,14 @@ The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits,
 |  [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/) | a bridge for connecting the engineering &amp; CAD worlds with the development world.   |
 | $500 in Azure credits for [Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
 
-## Redeem your credits:
+## 2. Redeem your credits:
 
-### 1. Unity
+### Unity
 - You'll have received a unique code. 
 - [How to activate Unity license](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-).
 - [Unity Support](https://support.unity3d.com/hc) for help as needed. 
 
-### 2. PiXYZ
+### PiXYZ
 - You'll have received a unique code.
 - [Redeem your PiXYZ license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html)
 Directions to redeem:
@@ -141,7 +141,7 @@ Directions to redeem:
     1. Enter product code, and click **Redeem a product code**
 - [PiXYZ Support](https://www.pixyz-software.com/support/) for help as needed. 
 
-### 3. Azure
+### Azure
 Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
 
 Learn about Azure Spatial Anchors:
