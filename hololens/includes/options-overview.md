@@ -1,7 +1,7 @@
 # [HoloLens 2](#tab/device)
-## 1. HoloLens 2 Getting started
 **HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 
+## 1. HoloLens 2 Getting started
 Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
 
 ## 2. How to get ready to deploy HoloLens devices in your Organization
