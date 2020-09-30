@@ -134,7 +134,7 @@ This will allow a &quot;Heads off&quot; deployment experience for the Technician
 
 At present, there is no &quot;simple&quot; way to trigger an automation command based on the enrolment of a new device within Intune. Therefore, this command will provide the technician a simple way to retrieve the MAC address without needing to log onto the portal and manually retrieve it.
 
-```
+```powershell
 Import-Module Microsoft.Graph.Intune
 
 Connect-MSGraph
