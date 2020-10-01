@@ -3,6 +3,7 @@
 # Overview
 
 ## Get started with HoloLens 2
+### [HoloLens 2 Overview](hololens2-options.md)
 ### [HoloLens 2 hardware](hololens2-hardware.md)
 ### [Get your HoloLens 2 ready to use](hololens2-setup.md)
 ### [Set up your HoloLens 2](hololens2-start.md)
