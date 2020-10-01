@@ -7,7 +7,7 @@ author: evmill
 ms.author: mata
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 9/30/2020
+ms.date: 10/01/2020
 ms.reviewer: v-evmill
 audience: ITPro
 manager: yannisle
@@ -115,7 +115,7 @@ Additional pre-requisites will be needed as below:
 5. When complete, the technician will be able to load the Intune (Endpoint Manager) Portal, and drill into the device properties page at **Home -> Devices -> DeviceName -> Hardware**
 6. The Wifi MAC address will be visible within the Intune Portal
 
-![MAC Address via Intune](images/mac-address-intune.png)
+![MAC Address via Intune](images/mac-address-intune.jpg)
 
 7. The technician will add this MAC address as an allowed device.
 
@@ -144,7 +144,7 @@ Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDate
 
 This will return the name and MAC address of any HoloLens devices which have been enrolled in the last 30 days.
 
-![MAC Address via Powershell](images/mac-address-powershell.png)
+![MAC Address via Powershell](images/mac-address-powershell.jpg)
 
 ### Process
 
