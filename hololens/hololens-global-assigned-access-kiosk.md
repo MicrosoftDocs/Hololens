@@ -28,6 +28,9 @@ This feature configures Hololens 2 device for multiple app kiosk mode which is a
 > Please be aware of the areas marked with "<!-". These areas will require you to make modifications based on your preferences. 
 
 1.	Create a custom OMA URI device configuration profile as follows and apply it to HoloLens device group: 
+
+URI value: .Device/Vendor/MSFT/AssignedAccess/Configuration
+
 ![Global Assigned Access OMA-URI in Intune](images/global-assigned-access-omauri.png)
 
 2.	For value, update and paste following content: 
