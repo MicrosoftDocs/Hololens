@@ -62,6 +62,13 @@
 ## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 
 # Configure
+## Device Management
+### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
+### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
+### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
+### [Common Device Restrictions](hololens-common-device-restrictions.md)
+### [Set up HoloLens as a kiosk](hololens-kiosk.md)
+### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ### [Share HoloLens with multiple people](hololens-multiple-users.md)
@@ -71,16 +78,6 @@
 ### [Prepare certificates and network profiles for HoloLens 2](hololens-certificates-network.md)
 ### [Manage connection endpoints for HoloLens](hololens-offline.md)
 ### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
-
-
-## Device Management
-### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
-### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
-### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
-### [Common Device Restrictions](hololens-common-device-restrictions.md)
-### [Set up HoloLens as a kiosk](hololens-kiosk.md)
-### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
-
 
 
 # Deploy
