@@ -87,6 +87,7 @@
 ## Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
+### [Enroll in MAC address restricted Wi-Fi Environment](mac-address-options.md)
 ## Applications
 ### [Application management overview](app-deploy-overview.md)
 ### [Intune & Company Portal](app-deploy-intune.md)

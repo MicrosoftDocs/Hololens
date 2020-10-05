@@ -94,3 +94,12 @@
 | 9/24/2020 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
 | 9/24/2020 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
 | 9/25/2020 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
+
+
+## Week of September 28, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/29/2020 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 10/1/2020 | [Global Assigned Access](/hololens/hololens-global-assigned-access-kiosk) | modified |
