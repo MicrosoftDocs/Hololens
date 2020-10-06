@@ -1,6 +1,6 @@
 # [HoloLens 2](#tab/device)
 
-## 1. HoloLens 2 Getting started
+## 1. Getting started
 Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
 
 Every HoloLens 2 edition will ship with the same [content in the box](../hololens2-hardware.md#hololens-components) with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software). Each HoloLens will share the same core OS and have the same [security](https://docs.microsoft.com/hololens/security-overview).
