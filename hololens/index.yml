@@ -150,9 +150,9 @@ landingContent:
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
 
   # Card
-  - title: More Resources
+  - title: Support
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: reference
         links:
           - text: Purchase HoloLens 
             url: https://www.microsoft.com/hololens/buy
