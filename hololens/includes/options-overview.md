@@ -34,7 +34,17 @@ This section with get your organization ready to deploy HoloLens devices across 
 | [Manage HoloLens updates](../hololens-updates.md).  | You understand how to manage your device's updates.   |
 | [Troubleshoot](../hololens-troubleshooting.md) any issues.  | You know where to go to troubleshoot HoloLens issues.   |
 
-## 3. Set up an individual device
+### Explore solutions
+
+- [Dynamics 365 for HoloLens](https://www.microsoft.com//hololens/apps) 
+- [Dynamics 365 Remote Assist](https://dynamics.microsoft.com/mixed-reality/remote-assist/) 
+- [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) 
+- [Azure Cloud Services for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments) 
+- [Start developing for HoloLens 2](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity) 
+
+## Additional Resources
+
+### Set up an individual device
 1. Charge your device and get acquainted with the device [getting ready to use](https://docs.microsoft.com/hololens/hololens2-setup) it, and once it&#39;s charged [get set up](https://docs.microsoft.com/hololens/hololens2-start).
 1. Then [learn how to get around HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
 1. Once you&#39;re experienced [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
