@@ -116,6 +116,69 @@ This section with get your organization ready to deploy HoloLens devices across 
 |  [Start developing for HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)         | Build a mixed reality solution to fit your needs.                                                 |
 
 
+# [HoloLens 2 Development Edition](#tab/developeredition)
+
+## 1. Learn about the Development Edition
+Learn about the [Development Edition](https://www.microsoft.com/hololens/buy)
+
+> [!NOTE] 
+> The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
+
+The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month Pixyz plugin trial:
+
+| Bundle feature | Description |
+|---|---|
+|  [Unity](https://unity.com/) | A real-time 3D development platform.   |
+|  [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/) | A bridge for connecting the engineering &amp; CAD worlds with the development world.   |
+| [$500 in Azure credits for Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
+
+Every HoloLens 2 edition will ship with the same [content in the box](../hololens2-hardware.md#hololens-components) with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software). Each HoloLens will share the same core OS and have the same [security](https://docs.microsoft.com/hololens/security-overview).
+
+## 2. Redeem your credits:
+
+### Unity
+You'll have received a unique code. Directions to redeem Unity Pro trial: 
+1. Visit [id.unity.com](http://id.unity.com/) 
+1. Sign in with your Unity ID or create one
+1. Click **Redeem a product code** 
+1. Enter product code, and click **Redeem a product code**
+
+More details on [How to activate a Unity license](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-). Contact [Unity Support](https://support.unity3d.com/hc) for help as needed.  
+
+### PiXYZ
+You'll have received a unique code. Directions to redeem Pixyz Plugin trial: 
+1. On the same page ([id.unity.com](http://id.unity.com/)) 
+1. Click **Redeem a product code**
+1. Enter your Pixyz Plugin product code, and click **Redeem a product code**
+
+More details on how to [Redeem your PiXYZ license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Contact [PiXYZ Support](https://www.pixyz-software.com/support/) for help as needed. 
+
+### Azure
+Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
+How to redeem Azure credits:
+To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. Learn more. 
+
+Learn about Azure Spatial Anchors:
+- [Product Page](https://azure.microsoft.com/services/spatial-anchors/)
+- [Documentation](https://docs.microsoft.com/azure/spatial-anchors/)
+
+Learn about Azure Remote Rendering:
+- [Product Page](https://azure.microsoft.com/services/remote-rendering/)
+- [Documentation](https://docs.microsoft.com/azure/remote-rendering/overview/about)
+
+### Where to get started developing:
+
+Unity Development Journey
+1. Dive into your [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity).
+1. Make sure to [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) for HoloLens development.
+1. Learn about [developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+1. Learn about how to [combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
+1. Learn how to [deploy your built apps](https://docs.microsoft.com/hololens/app-deploy-overview). 
+
+Additional Resources: 
+1. Explore the all the possibilities for [Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
+1. Learn about [developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+1. Reach out to your fellow developers on our [HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
 
 
 
