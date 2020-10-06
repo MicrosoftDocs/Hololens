@@ -98,8 +98,6 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Manage HoloLens updates
-            url: hololens-updates.md
           - text: Troubleshoot HoloLens issues
             url: hololens-troubleshooting.md
           - text: Restart, reset, or recover HoloLens 2
@@ -110,6 +108,10 @@ landingContent:
             url: hololens-known-issues.md
           - text: Collect and use diagnostic information from HoloLens devices
             url: hololens-diagnostic-logs.md
+      - linkListType: deploy
+        links:
+          - text: Manage HoloLens updates
+            url: hololens-updates.md
 
   # Card
   - title: Release Notes & Feedback
@@ -136,8 +138,6 @@ landingContent:
             url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
           - text: Microsoft Dynamics 365 Mixed Reality 
             url: https://docs.microsoft.com/dynamics365/mixed-reality/
-          - text: Cloud Services Overview
-            url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
       - linkListType: how-to-guide
         links:
           - text: What is Mixed Reality?
@@ -146,6 +146,8 @@ landingContent:
             url: https://docs.microsoft.com/windows/mixed-reality/design
           - text: Introduction to Mixed Reality development
             url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+          - text: Cloud Services Overview
+            url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
 
   # Card
   - title: More Resources
