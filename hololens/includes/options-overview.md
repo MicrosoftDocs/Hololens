@@ -102,7 +102,7 @@ This section with get your organization ready to deploy HoloLens devices across 
 
 
 # [HoloLens 2 Development Edition](#tab/developeredition)
-**HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to beyond the basics and start developing for mixed reality.
+**HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
 
 ## 1. Learn about the Development Edition
 1. Learn about the [Developer Edition](https://www.microsoft.com/hololens/buy)
