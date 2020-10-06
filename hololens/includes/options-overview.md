@@ -104,6 +104,9 @@ This section with get your organization ready to deploy HoloLens devices across 
 ## 1. Learn about the Development Edition
 Learn about the [Developer Edition](https://www.microsoft.com/hololens/buy)
 
+> [!NOTE] 
+> The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
+
 The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month Pixyz plugin trial:
 
 | Bundle feature | Description |
