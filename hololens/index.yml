@@ -108,8 +108,6 @@ landingContent:
             url: hololens-known-issues.md
           - text: Collect and use diagnostic information from HoloLens devices
             url: hololens-diagnostic-logs.md
-      - linkListType: deploy
-        links:
           - text: Manage HoloLens updates
             url: hololens-updates.md
 
