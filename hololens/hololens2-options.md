@@ -22,6 +22,7 @@ HoloLens is a mixed reality device with apps and solutions that enhance collabor
 
 Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) looking for your next industry solution, a [developer](https://www.microsoft.com/hololens/developers) seeking to create experiences for a new reality, or a [business decision maker](https://www.microsoft.com/hololens/apps) thinking about your next innovation – HoloLens 2 is your new reality for computing. 
 
-## Get started with HoloLens 2
+## Get started with HoloLens 2 options
+Select a tab to learn more aobut your HoloLens journey. 
 
 [!INCLUDE[](includes/options-overview.md)]
