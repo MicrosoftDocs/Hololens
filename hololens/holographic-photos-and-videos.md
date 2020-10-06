@@ -129,7 +129,7 @@ Similar to other mobile devices, connect your HoloLens to your PC to bring up Fi
 1. Unlock the device.
 1. Connect the device to a PC via USB.
 1. File Explorer should open on your PC.
-1. Navigate to: This PC\*yourhololensname*\Internal Storage\Pictures\Camera Roll
+1. Navigate to: This PC\**yourhololensname*\Internal Storage\Pictures\Camera Roll
 1. Copy whatever files you need to your PC.
 
 Tips:
