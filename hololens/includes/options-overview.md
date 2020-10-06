@@ -40,7 +40,7 @@ This section with get your organization ready to deploy HoloLens devices across 
 - [Dynamics 365 Remote Assist](https://dynamics.microsoft.com/mixed-reality/remote-assist/) 
 - [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) 
 - [Azure Cloud Services for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments) 
-- [Start developing for HoloLens 2](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity) 
+- [Start developing for HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) 
 
 ## Additional Resources
 
