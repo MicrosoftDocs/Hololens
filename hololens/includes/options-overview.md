@@ -132,8 +132,8 @@ The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits,
 | Bundle feature | Description |
 |---|---|
 |  [Unity](https://unity.com/) | A real-time 3D development platform.   |
-|  [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/) | a bridge for connecting the engineering &amp; CAD worlds with the development world.   |
-| $500 in Azure credits for [Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
+|  [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/) | A bridge for connecting the engineering &amp; CAD worlds with the development world.   |
+| [$500 in Azure credits for Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
 
 Every HoloLens 2 edition will ship with the same [content in the box](../hololens2-hardware.md#hololens-components) with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software). Each HoloLens will share the same core OS and have the same [security](https://docs.microsoft.com/hololens/security-overview).
 
@@ -154,7 +154,7 @@ You'll have received a unique code. Directions to redeem Pixyz Plugin trial:
 1. Click **Redeem a product code**
 1. Enter your Pixyz Plugin product code, and click **Redeem a product code**
 
-More details on how to [Redeem your PiXYZ license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Contact[PiXYZ Support](https://www.pixyz-software.com/support/) for help as needed. 
+More details on how to [Redeem your PiXYZ license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Contact [PiXYZ Support](https://www.pixyz-software.com/support/) for help as needed. 
 
 ### Azure
 Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
