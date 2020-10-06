@@ -122,6 +122,22 @@ You can also view your mixed reality photos and videos in the Photos app, which 
 
 To view and/or save your mixed reality photos and videos on a PC connected to HoloLens, you can use [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) or your [PC's File Explorer via MTP](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens).
 
+### Use File Explorer to get your pictures, videos and files
+
+Similar to other mobile devices, connect your HoloLens to your PC to bring up File Explorer to access your HoloLens libraries (photos, videos, documents) for easy transfer. This method is easy to use and does not require the use of device portal or Wi-Fi.
+
+1. Unlock the device.
+1. Connect the device to a PC via USB.
+1. File Explorer should open on your PC.
+1. Navigate to: This PC\\*yourhololensname*\Internal Storage\Pictures\Camera Roll
+1. Copy whatever files you need to your PC.
+
+Tips:
+- If you don't see any files, please ensure you sign in to your HoloLens to enable access to your data.
+- You can get other files in other folders, such as [diagnostics files](hololens-diagnostic-logs.md#offline-diagnostics) from the Documents folder.
+- From File Explorer on your PC, you can select Device properties to see Windows Holographic OS version number (firmware version) and device serial number and battery percentage.
+- If your Organization has used MDM to disable [Connectivity/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) then you will be unable to connect to your device.
+
 ## Share your mixed reality photos and videos
 
 After capturing a mixed reality photo or video, a preview will appear. Select the **share** icon above the preview to bring up the share assistant. From there, you can select the end point to which you'd like to share that photo or video.
