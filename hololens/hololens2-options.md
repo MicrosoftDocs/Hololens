@@ -31,7 +31,7 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 **HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
 
 ## Get started with HoloLens 2 options
-Select a tab to learn more aobut your HoloLens journey. 
+Select a tab to learn more about your HoloLens journey. 
 
 [!INCLUDE[](includes/options-overview.md)]
 
