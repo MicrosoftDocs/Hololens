@@ -26,6 +26,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: HoloLens 2 overview
+            url: hololens2-options.md
           - text: HoloLens 2 hardware
             url: hololens2-hardware.md
           - text: HoloLens (1st gen) hardware
@@ -92,7 +94,7 @@ landingContent:
             url: app-deploy-provisioning-package.md
 
   # Card
-  - title: Maintain
+  - title: Maintain and Troubelshooting Guide
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -136,17 +138,24 @@ landingContent:
             url: https://docs.microsoft.com/dynamics365/mixed-reality/
           - text: Cloud Services Overview
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
-
-  # Card
-  - title: More Resources
-    linkLists:
-      - linkListType: how-to-guide
-        links:
+     linkLists:
+     - linkListType: how-to-guide
+       links:
           - text: What is Mixed Reality?
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
           - text: Start designing and prototyping
             url: https://docs.microsoft.com/windows/mixed-reality/design
           - text: Introduction to Mixed Reality development
             url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+
+  # Card
+  - title: More Resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Purchase HoloLens 
+            url: https://www.microsoft.com/hololens/buy
+          - text: Communities Support 
+            url: https://holodevelopersslack.azurewebsites.net/
           - text: Contact Support
             url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f
