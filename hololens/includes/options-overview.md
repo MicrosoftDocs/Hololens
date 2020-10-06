@@ -102,7 +102,7 @@ This section with get your organization ready to deploy HoloLens devices across 
 # [HoloLens 2 Development Edition](#tab/developeredition)
 
 ## 1. Learn about the Development Edition
-Learn about the [Developer Edition](https://www.microsoft.com/hololens/buy)
+Learn about the [Development Edition](https://www.microsoft.com/hololens/buy)
 
 > [!NOTE] 
 > The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
