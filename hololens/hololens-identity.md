@@ -5,7 +5,7 @@ keywords: HoloLens, user, account, aad, adfs, microsoft account, msa, credential
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
 ms.author: scooley
-ms.date: 1/6/2020
+ms.date: 10/6/2020
 ms.prod: hololens
 ms.custom: 
 - CI 111456
@@ -55,7 +55,7 @@ Linking accounts does not separate the user data created on the device, such as 
 
 ### Setting up multi-user support (AAD only)
 
-HoloLens supports multiple users from the same AAD tenant. To use this feature, you must use an account that belongs to your organization to set up the device. Subsequently, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.  
+HoloLens supports multiple users from the same AAD tenant. To use this feature, you must use an account that belongs to your organization to set up the device. Subsequently, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user. The first user on the device is considered the device owner, except in the case of AAD Join, [learn more about device owners](security-adminless-os.md#device-owner).
 
 All users can use the apps installed on the device. However, each user has their own app data and preferences. Removing an app from the device removes it for all users.  
 
