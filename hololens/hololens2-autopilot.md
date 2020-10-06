@@ -197,6 +197,9 @@ The Enrollment Status Page (ESP) displays the status of the complete device conf
 
 Once the above instructions are completed, your HoloLens 2 users will go through the following experience to provision their HoloLens devices:  
 
+> [!NOTE]
+> Using Autopilot will have an effect on the [device owner](security-adminless-os.md#device-owner).
+
 1. As mentioned, in the current release, devices need to be connected to the internet before turning on the HoloLens and initiating the Autopilot provisioning process. Connect your device to Ethernet using "USB-C to Ethernet" adapters for wired internet connectivity or "USB-C to Wifi" adapters for wireless internet connectivity.
    
    > [!IMPORTANT]  
