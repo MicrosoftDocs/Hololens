@@ -5,7 +5,7 @@ keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
 author: evmill
 ms.author: v-evmill
 ms.reviewer: sekerawa
-ms.date: 10/02/2020
+ms.date: 11/02/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
