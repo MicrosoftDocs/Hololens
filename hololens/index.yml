@@ -94,7 +94,7 @@ landingContent:
             url: app-deploy-provisioning-package.md
 
   # Card
-  - title: Maintain and Troubelshooting Guide
+  - title: Maintain and Troubleshooting Guide
     linkLists:
       - linkListType: how-to-guide
         links:
