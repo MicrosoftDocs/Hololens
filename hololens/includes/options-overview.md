@@ -1,5 +1,4 @@
 # [HoloLens 2](#tab/device)
-**HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 
 ## 1. HoloLens 2 Getting started
 Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
@@ -47,7 +46,6 @@ This section with get your organization ready to deploy HoloLens devices across 
 
 
 # [HoloLens 2 with Dynamics 365 Remote Assist](#tab/remoteassist)
-**HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
 
 ## 1. Learn about HoloLens 2 with Dynamics 365 Remote Assist
 Learn about the  [HoloLens 2 with Dynamics 365 Remote Assist edition](https://www.microsoft.com/hololens/buy)
@@ -102,7 +100,6 @@ This section with get your organization ready to deploy HoloLens devices across 
 
 
 # [HoloLens 2 Development Edition](#tab/developeredition)
-**HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
 
 ## 1. Learn about the Development Edition
 1. Learn about the [Developer Edition](https://www.microsoft.com/hololens/buy)
@@ -124,10 +121,10 @@ Every HoloLens 2 edition will ship with the same [content in the box](../hololen
 
 ### Unity
 You'll have received a unique code. Directions to redeem Unity Pro trial: 
-    1. Visit [id.unity.com](http://id.unity.com/) 
-    1. Sign in with your Unity ID or create one
-    1. Click **Redeem a product code** 
-    1. Enter product code, and click **Redeem a product code**
+1. Visit [id.unity.com](http://id.unity.com/) 
+1. Sign in with your Unity ID or create one
+1. Click **Redeem a product code** 
+1. Enter product code, and click **Redeem a product code**
 
 More details on [How to activate a Unity license](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-). Contact [Unity Support](https://support.unity3d.com/hc) for help as needed.  
 
