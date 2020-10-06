@@ -39,6 +39,8 @@
 ## Planning for HoloLens 2 Enterprise Deployment
 ### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ### [Common Infrastructure Deployment Scenarios](common-scenarios.md)
+## Common Scenarios
+### [Offline Secure](hololens-common-scenarios-offline-secure.md)
 ## Security
 ### [Security overview](security-overview.md)
 ### [Architecture](security-architecture.md)
@@ -60,6 +62,13 @@
 ## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 
 # Configure
+## Device Management
+### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
+### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
+### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
+### [Common Device Restrictions](hololens-common-device-restrictions.md)
+### [Set up HoloLens as a kiosk](hololens-kiosk.md)
+### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ### [Share HoloLens with multiple people](hololens-multiple-users.md)
@@ -71,20 +80,11 @@
 ### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
 
 
-## Device Management
-### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
-### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
-### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
-### [Common Device Restrictions](hololens-common-device-restrictions.md)
-### [Set up HoloLens as a kiosk](hololens-kiosk.md)
-### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
-
-
-
 # Deploy
 ## Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
+### [Enroll in MAC address restricted Wi-Fi Environment](mac-address-options.md)
 ## Applications
 ### [Application management overview](app-deploy-overview.md)
 ### [Intune & Company Portal](app-deploy-intune.md)
