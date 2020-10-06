@@ -138,8 +138,8 @@ landingContent:
             url: https://docs.microsoft.com/dynamics365/mixed-reality/
           - text: Cloud Services Overview
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
-     - linkListType: how-to-guide
-       links:
+      - linkListType: how-to-guide
+        links:
           - text: What is Mixed Reality?
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
           - text: Start designing and prototyping
