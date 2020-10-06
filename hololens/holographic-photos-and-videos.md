@@ -124,7 +124,7 @@ To view and/or save your mixed reality photos and videos on a PC connected to Ho
 
 ### Use File Explorer to get your pictures and videos
 
-Similar to other mobile devices, connect your HoloLens to your PC to bring up File Explorer to access your HoloLens libraries (photos, videos, documents) for easy transfer.
+Similar to other mobile devices, connect your HoloLens to your PC to bring up File Explorer to access your HoloLens libraries (photos, videos, documents) for easy transfer. This method is easy to use and does not require the use of device portal or Wi-Fi.
 
 1. Unlock the device.
 1. Connect the device to a PC via USB.
