@@ -18,7 +18,7 @@ appliesto:
 
 # HoloLens 2 Overview
 
-HoloLens is a mixed reality device with apps and solutions that enhance collaboration, *powered by holograms*. With HoloLens 2, experience new heights of productivity and innovation – with purpose – to work smarter.
+HoloLens is a mixed reality device that is *powered by holograms* and provides apps and solutions that enhance collaboration. With HoloLens 2, experience new heights of productivity and innovation – with purpose – to work smarter.
 
 Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) looking for your next industry solution, a [developer](https://www.microsoft.com/hololens/developers) seeking to create experiences for a new reality, or a [business decision maker](https://www.microsoft.com/hololens/apps) thinking about your next innovation – HoloLens 2 is your new reality for computing. 
 
