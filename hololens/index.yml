@@ -26,6 +26,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: HoloLens 2 overview
+            url: hololens2-options.md
           - text: HoloLens 2 hardware
             url: hololens2-hardware.md
           - text: HoloLens (1st gen) hardware
@@ -92,12 +94,10 @@ landingContent:
             url: app-deploy-provisioning-package.md
 
   # Card
-  - title: Maintain
+  - title: Maintain and Troubleshooting Guide
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Manage HoloLens updates
-            url: hololens-updates.md
           - text: Troubleshoot HoloLens issues
             url: hololens-troubleshooting.md
           - text: Restart, reset, or recover HoloLens 2
@@ -108,6 +108,8 @@ landingContent:
             url: hololens-known-issues.md
           - text: Collect and use diagnostic information from HoloLens devices
             url: hololens-diagnostic-logs.md
+          - text: Manage HoloLens updates
+            url: hololens-updates.md
 
   # Card
   - title: Release Notes & Feedback
@@ -134,12 +136,6 @@ landingContent:
             url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
           - text: Microsoft Dynamics 365 Mixed Reality 
             url: https://docs.microsoft.com/dynamics365/mixed-reality/
-          - text: Cloud Services Overview
-            url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
-
-  # Card
-  - title: More Resources
-    linkLists:
       - linkListType: how-to-guide
         links:
           - text: What is Mixed Reality?
@@ -148,5 +144,17 @@ landingContent:
             url: https://docs.microsoft.com/windows/mixed-reality/design
           - text: Introduction to Mixed Reality development
             url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+          - text: Cloud Services Overview
+            url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+
+  # Card
+  - title: Support
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Purchase HoloLens 
+            url: https://www.microsoft.com/hololens/buy
+          - text: Communities Support 
+            url: https://holodevelopersslack.azurewebsites.net/
           - text: Contact Support
             url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f

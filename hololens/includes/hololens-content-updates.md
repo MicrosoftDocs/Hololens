@@ -94,3 +94,28 @@
 | 9/24/2020 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
 | 9/24/2020 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
 | 9/25/2020 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
+
+
+## Week of September 28, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/29/2020 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 10/1/2020 | [Global Assigned Access](/hololens/hololens-global-assigned-access-kiosk) | modified |
+
+
+## Week of October 05, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/5/2020 | [Global Assigned Access](/hololens/hololens-global-assigned-access-kiosk) | modified |
+| 10/5/2020 | [Set up HoloLens in a commercial environment](/hololens/hololens-requirements) | modified |
+| 10/6/2020 | [Capture and manage mixed reality photos and videos](/hololens/holographic-photos-and-videos) | modified |
+| 10/6/2020 | [Enroll HoloLens in MDM](/hololens/hololens-enroll-mdm) | modified |
+| 10/6/2020 | [Manage user identity and sign-in for HoloLens](/hololens/hololens-identity) | modified |
+| 10/6/2020 | [Windows Autopilot for HoloLens 2 (Private Preview)](/hololens/hololens2-autopilot) | modified |
+| 10/6/2020 | [security adminless os](/hololens/security-adminless-os) | modified |
+| 10/7/2020 | [Setting up your HoloLens 2 edition](/hololens/hololens2-options) | modified |
+| 10/8/2020 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |

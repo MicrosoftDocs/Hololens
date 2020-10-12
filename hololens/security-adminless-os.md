@@ -25,6 +25,8 @@ These application capabilities continue to have the three-tiered classification 
 
 Windows components can also leverage the AppContainer sandbox through System UWPs. To learn more about Universal Windows Platform (UWP), see [UWP documentation](https://docs.microsoft.com/windows/uwp/). Additionally, Windows components with greater privilege reduction needs (e.g. browser content pages, parsers) use the Less Privileged AppContainer (LPAC) sandbox which cuts off access to the set of resources accessible to all AppContainers.
 
+## Device owner
+
 Finally, the execution of specific device-wide operations, such as joining the device to a tenant or user management, is only permitted for “device owners”. This group is populated by users on the device through one of the following steps:
   * The first user on the device is always designated an Owner. 
     * The exception to this rule is that if the device is AAD joined, the user that performed the join is made device owner. This is applicable, for example, if a device is AAD joined via Autopilot in which case the first user to sign into the device did not AAD join the device and therefore will not be made a device owner. To understand more about who is made a device owner on an AAD joined device, see [“Assign Local Admin” documentation](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) (but read ‘local admin’ as ‘device owner’ since admin does not exist on HoloLens).

@@ -210,6 +210,9 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 - Connect your device to a Wi-Fi network in OOBE and then let it detect Autopilot experience automatically. This is the only time you will need to interact with OOBE until Autopilot experience completes on its own. Please note that by default HoloLens 2 waits for 10 seconds to detect Autopilot after detecting internet. If no autopilot profile is detected within 10 seconds, OOBE will present EULA. If you encounter this scenario, please reboot your device so another attempt can be made to detect Autopilot. Please also note that OOBE can wait indefinitely for Autopilot only if TenantLockdown policy is set on the device.
 - Connect your device with Ethernet using "USB-C to Ethernet" adapters for wired internet connectivity and let HoloLens 2 complete Autopilot experience automatically.
 - Connect your device with "USB-C to Wifi" adapters for wireless internet connectivity and let HoloLens 2 complete Autopilot experience automatically.
+
+   > [!NOTE]
+   > Using Autopilot will have an effect on the [device owner](security-adminless-os.md#device-owner).
    
    > [!IMPORTANT]  
    > Devices attempting to use Wi-Fi networks in OOBE for Autopilot must be on [Windows Holographic, verison 2010](hololens-release-notes.md#windows-holographic-version-2010).
