@@ -33,7 +33,7 @@ Improvements and fixes in the update:
 Removed an unnecessary check that caused runtime system fault.
 
 ## Windows Holographic, version 1903 - October 2020 Update
-- Build 18362.1080
+- Build 18362.1081
 
 This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest builds for Windows Holographic, version 2004.
 
