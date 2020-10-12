@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot for HoloLens 2 (Private Preview)
-description: 
+description: How to set up Autopilot on HoloLens 2 devices.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/13/2020
@@ -62,8 +62,8 @@ Please follow the steps below to set up your environment for the private preview
 
 Autopilot specific information per HoloLens OS releases.
 - In order to use Autopilot a device must have the [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) release or newer.
-- In order to use Autopilot by use of Wi-Fi a device must have the [Windows Holographic, version 2010](hololens-release-notes#windows-holographic-version-2010) release or newer. However these builds may still use ethernet adapters. 
-- On builds [Windows Holographic, version 2010](hololens-release-notes#windows-holographic-version-2010) a new device management option [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot) has been enabled.  
+- In order to use Autopilot by use of Wi-Fi a device must have the [Windows Holographic, version 2010](hololens-release-notes.md#windows-holographic-version-2010) release or newer. However these builds may still use ethernet adapters. 
+- On builds [Windows Holographic, version 2010](hololens-release-notes.md#windows-holographic-version-2010) a new device management option [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot) has been enabled.  
 
 If you would like to either confirm the build version on your device or update it, please connect it to your Windows 10 PC and launch [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8). 
 
@@ -98,7 +98,7 @@ To verify that your tenant is flighted for the Autopilot program after you submi
 1. Select **Devices** > **Windows** > **Windows enrollment** > **Windows Autopilot deployment profiles** > **Create profile**.  
    
    ![Create profile dropdown includes a HoloLens item.](./images/hololens-ap-enrollment-profiles.png)
-  You should see a list that includes **HoloLens**. If this option is not present, use one of the [Feedback](#feedback) options to contact us.
+  You should see a list that includes **HoloLens**. If this option is not present, use one of the [Feedback](hololens2-autopilot.md#feedback-for-autopilot) options to contact us.
 
 ### 4. Register devices in Windows Autopilot
 
