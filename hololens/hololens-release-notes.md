@@ -33,7 +33,7 @@ Our Windows Holographic version 2010 Release is filled with many new features. T
 | Feature                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support) | Actively computes eye positions without users going through active calibration.   |
-| [Certificate Manager](hololens-release-notes.md#certificate-manager)   | Allows new simpler methods to install and remove certificates from the Settings app that a user can perform.     |
+| [Certificate Manager](hololens-release-notes.md#certificate-manager)   | Allows new simpler methods to install and remove certificates from the Settings app.     |
 | [App Installer](hololens-release-notes.md#install-apps-on-hololens-2-via-app-installer) | On device UI to install apps from appx files. |
 | [Installing apps from a web page](hololens-release-notes.md#installing-apps-from-a-web-page) | Set up apps to be downloaded and installed from the browser. |
 | [Auto-launch provisioning from USB](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | Provisioning packages on USB drives automatically prompt the provisioning page in OOBE.                                                         |
