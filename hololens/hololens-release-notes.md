@@ -32,7 +32,7 @@ Our Windows Holographic version 2010 Release is filled with many new features. T
 
 | Feature                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support) | Actively finds eye positions without users going through active calibration.   |
+| [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support) | Actively computes eye positions without users going through active calibration.   |
 | [Certificate Manager](hololens-release-notes.md#certificate-manager)   | Allows new simpler methods to install and remove certificates from the Settings app that a user can perform.     |
 | [App Installer](hololens-release-notes.md#install-apps-on-hololens-2-via-app-installer) | On device UI to install apps from appx files. |
 | [Installing apps from a web page](hololens-release-notes.md#installing-apps-from-a-web-page) | Set up apps to be downloaded and installed from the browser. |
@@ -74,9 +74,6 @@ There are a few system behavior changes with Auto Eye Position feature when an u
 For experiences that require eye gaze data or very precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration from the eye tracking calibration prompt or by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
 
 This information can be found later with [other calibration information](hololens-calibration.md#auto-eye-position-support). 
-
-**Known issues**
- - We're investigating an issue where the eye tracker driver host process could crash when running under heavy memory load. The eye tracking driver host process should auto recover.
 
 ### Certificate Manager
 
