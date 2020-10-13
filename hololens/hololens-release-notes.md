@@ -30,7 +30,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
  
 Improvements and fixes in the update:
 
-Removed an unnecessary check that caused runtime system fault.
+- Removed an unnecessary check that caused runtime system fault.
 
 ## Windows Holographic, version 1903 - October 2020 Update
 - Build 18362.1081
