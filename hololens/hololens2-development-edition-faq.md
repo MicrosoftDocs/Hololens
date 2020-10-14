@@ -70,7 +70,7 @@ No, this device is the same from a hardware requirements perspective. The Develo
 
 To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. [Learn more](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
-Review the Azure Pass [subscription agreement](http://azure.microsoft.com/support/legal/subscription-agreement/?country=US) and [offer details](https://azure.microsoft.com/en-us/offers/azure-pass/).
+Review the Azure Pass [subscription agreement](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) and [offer details](https://azure.microsoft.com/en-us/offers/azure-pass/).
 
 ## When does my $500 Azure credit expire?
 
