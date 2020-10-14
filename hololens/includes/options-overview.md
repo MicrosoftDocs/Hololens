@@ -3,7 +3,7 @@
 ## 1. Getting started
 Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
 
-Every HoloLens 2 edition will ship with the same [content in the box](../hololens2-hardware.md#hololens-components) with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software). Each HoloLens will share the same core OS and have the same [security](https://docs.microsoft.com/hololens/security-overview).
+Every HoloLens 2 edition has the same hardware, the same [content in the box](../hololens2-hardware.md#hololens-components) and comes with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software).
 
 ## 2. Deploy HoloLens devices in your organization
 This section will get you and your organization ready to deploy HoloLens devices. 
@@ -66,7 +66,7 @@ Learn about the  [HoloLens 2 with Dynamics 365 Remote Assist edition](https://ww
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Every HoloLens 2 edition will ship with the same [content in the box](../hololens2-hardware.md#hololens-components) with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software). Each HoloLens will share the same core OS and have the same [security](https://docs.microsoft.com/hololens/security-overview).
+Every HoloLens 2 edition has the same hardware, the same [content in the box](../hololens2-hardware.md#hololens-components) and comes with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software).
 
 ## 2. Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
 
@@ -132,7 +132,7 @@ The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits,
 |  [PiXYZ plug-in for Unity](https://www.pixyz-software.com/plugin/) | A bridge for connecting the engineering &amp; CAD worlds with the development world.   |
 | [$500 in Azure credits for Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
 
-Every HoloLens 2 edition will ship with the same [content in the box](../hololens2-hardware.md#hololens-components) with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software). Each HoloLens will share the same core OS and have the same [security](https://docs.microsoft.com/hololens/security-overview).
+Every HoloLens 2 edition has the same hardware, the same [content in the box](../hololens2-hardware.md#hololens-components) and comes with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software).
 
 ## 2. Redeem your credits:
 
@@ -156,7 +156,7 @@ More details on how to [Redeem your PiXYZ license.](https://www.pixyz-software.c
 ### Azure
 Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
 How to redeem Azure credits:
-To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. Learn more. **link not yet published** 
+To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. [Learn more.](hololens2-development-edition-faq.md#how-can-i-redeem-my-$500-azure-credit?)
 
 Learn about Azure Spatial Anchors:
 - [Product Page](https://azure.microsoft.com/services/spatial-anchors/)
@@ -166,7 +166,7 @@ Learn about Azure Remote Rendering:
 - [Product Page](https://azure.microsoft.com/services/remote-rendering/)
 - [Documentation](https://docs.microsoft.com/azure/remote-rendering/overview/about)
 
-### Where to get started developing:
+## 3. Where to get started developing:
 
 Unity Development Journey
 1. Dive into your [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity).

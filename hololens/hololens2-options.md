@@ -22,6 +22,17 @@ HoloLens is a mixed reality device that is *powered by holograms* and provides a
 
 Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) looking for your next industry solution, a [developer](https://www.microsoft.com/hololens/developers) seeking to create experiences for a new reality, or a [business decision maker](https://www.microsoft.com/hololens/apps) thinking about your next innovation – HoloLens 2 is your new reality for computing. 
 
+|                                                         | HoloLens 2 with Remote Assist | HoloLens 2 (device only) | HoloLens 2 Development Edition |
+|---------------------------------------------------------|:-----------------------------:|:------------------------:|:------------------------------:|
+| HoloLens 2 device <br>(one device)                      |               ✔️               |             ✔️            |                ✔️               |
+| Dynamics 365 Remote Assist<br>(one seat)                |               ✔️               |                          |                                |
+| Warranty                                                |               ✔️               |             ✔️            |                ✔️               |
+| Commercial use rights<br>(device only)                  |               ✔️               |             ✔️            |                                |
+| Can be used to develop                                  |               ✔️               |             ✔️            |                ✔️               |
+| $500 credit for Azure, including mixed reality services |                               |                          |                ✔️               |
+| Unity Pro & PiXYZ Plugin <br>(three months free)        |                               |                          |                ✔️               |
+| Device purchase limit                                   |              None             |           None           |          One per user          |
+
 ## Options Overview
 
 **HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.

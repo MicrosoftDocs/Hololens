@@ -22,45 +22,49 @@ appliesto:
 
 The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro trial, and a 3-month Pixyz Plugin trial.
 
+## What is the difference between HoloLens 2 and HoloLens 2 Development Edition? 
+
+You may only use the HoloLens 2 Development Edition for internal building and testing of enterprise applications to be used in connection with the HoloLens 2 (commercial edition) in a production setting. As part of purchasing the Development Edition, Microsoft may, in its sole discretion, provide you with certain entitlements identified during the checkout process, such as the right to redeem certain discount credits or trial access to certain Microsoft or third-party services or tools for a limited period. [Learn more](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
+
+## Can any edition of HoloLens 2 be used to develop?
+
+Yes. Any edition of HoloLens 2 can be used to develop apps.
+
 ## How and will I receive my $500 in Azure credits, 3-month Unity Pro trial, and 3-month Pixyz Plugin trial?
 
-Your discount credits or trial access will be sent to the email used at purchase within 8 business days after your product shipment.
+Your discount credits or trial access will be sent to the email used at purchase within 2 business days of product shipment.
 
-## When and when will financing for the HoloLens 2 Development Edition be available?
+## What is Unity Pro? 
 
-While currently not available, we are continuously working to create payment options for our customers.
+Unity Pro is a real-time 3D platform for small/mid-sized studios/firms. It’s designed for teams with a mix of technical and non-technical skills. [Learn more](https://store.unity.com/products/unity-pro)
+
+## What is Pixyz Plugin? 
+
+The Pixyz Plugin reads and converts almost any format, optimizes and puts it in Unity, and stages it to provide ready-to-use assets for real-time applications. [Learn more](https://unity.com/products/pixyz)
+
+## When will financing for the HoloLens 2 Development Edition be available?
+
+Financing for HoloLens 2 Development Edition will be availability early 2021.
 
 ## Who do I contact with questions about my HoloLens 2 Development Edition entitlements?
 
-With any questions related to entitlements, please contact your sales advocate as listed on Microsoft Stores HoloLens Development Edition product page.
+With any questions related to entitlements, please contact your sales specialist at 866-425-4709, Mon to Fri, 6AM to 6PM, PST.
 
-## Where can I buy the HoloLens 2 Development Edition?
+## Can my company buy multiple HoloLens 2 Development Edition devices? 
 
-Microsoft Store is the only channel available for customers to purchase the HoloLens 2 Development Edition. Learn more
+This device is for developers building mixed reality solutions. We limit one purchase per customer transaction. If your company wants to buy multiple Development Edition devices, it will require separate transactions to purchase HoloLens 2 Development Edition devices on behalf of the company. 
 
-## What is the difference between HoloLens 2 and HoloLens 2 Development Edition?
+## Where can I buy the HoloLens 2 Development Edition? 
 
-You may only use the HoloLens 2 Development Edition for internal building and testing of enterprise applications to be used in connection with the HoloLens 2 (commercial edition) in a production setting. As part of your purchase the Development Edition, Microsoft may, in its sole discretion, provide you with certain entitlements identified during the checkout process, such as the right to redeem certain discount credits or trial access to certain Microsoft or third-party services or tools for a limited period. [Learn more](https://microsoft-my.sharepoint.com/:w:/p/rojenkin/Efsy-klglqlKmPL1s94TbpEB7P_G07PPVpmyHE3vBeuJJg?e=MzpxOq)
+HoloLens 2 Development Edition is sold exclusively on Microsoft Store.  
 
-D## oes Developer Edition have different hardware requirements that differ from the HoloLens 2?
+## Can I return my HoloLens 2 Development Edition?  
 
-No, this device is the same from a hardware requirements perspective. The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.
+No.
 
-## Are OS releases for the HoloLens 2 Development Edition the same as HoloLens 2?
+## Does Developer Edition have different hardware requirements that differ from the HoloLens 2?
 
-Yes.
-
-## Can I show my HoloLens 2 Development Edition device to my customers?
-
-Yes, this device is intended to be used for prototyping and testing mixed reality solutions.
-
-## Can I &quot;upgrade&quot; my HoloLens 2 (device only) device to the HoloLens 2 Development Edition to get the trial credits?
-
-No, we do not offer device transfer plans.
-
-## Can my company buy multiple HoloLens 2 Development Edition devices?
-
-Yes. We limit one purchase per customer. If your company wants to buy multiple Development Edition devices, it will require separate customers to purchase HoloLens 2 Development Edition devices on behalf of the company.
+No, this device is the same from a hardware requirements perspective. The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting. 
 
 ## How can I redeem my $500 Azure credit?
 
@@ -88,6 +92,10 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 
 MRTK-Unreal is the first UX Tools component to be released and is currently only supported on HoloLens 2. The component plugin includes code, blueprints, and example assets of common UX features for input simulation, hand interaction actors, press-able button components, manipulator components and follow behavior components. [Learn more](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
 
+## Are OS releases for the HoloLens 2 Development Edition the same as HoloLens 2?
+
+Yes.
+
 ## Can I run released (sideload or store) applications on my HoloLens 2 Development Edition device?
 
 If you are abiding by the HoloLens 2 Development Edition terms and conditions, yes, you can run any released application on the Developer Edition. We do not limit the use of sideloaded or stored applications for this SKU.
@@ -104,9 +112,7 @@ Visit the Introduction to Mixed Reality development documentation. [Learn more](
 
 Visit the Introduction to Mixed Reality design documentation. [Learn more](https://docs.microsoft.com/windows/mixed-reality/design/design)
 
-## What is Unity Pro?
 
-Unity Pro is a real-time 3D platform for small/mid-sized studios/firms. It&#39;s designed for teams with a mix of technical and non-technical skills. [Learn more](https://store.unity.com/products/unity-pro)
 
 ## What is included with my Unity trial?
 
@@ -133,10 +139,6 @@ Yes, you can build applications with all compatible versions of Unity.
 
 To get help with any questions about your Unity ID, account, organization(s) and subscription(s), please visit support.unity3d.com.
 
-## What is Pixyz Plugin?
-
-The Pixyz Plugin reads and converts almost any format, optimizes and puts it in Unity, and stages it to provide ready-to-use assets for real-time applications. [Learn more](https://unity.com/products/pixyz)
-
 ## What is included with my Pixyz Plugin trial?
 
 A 3-calendar month Pixyz Plugin trial that enables access to Pixyz to create ready-to-use assets with perfect tessellated meshes, limited polygon count, and automatic UV. The related Pixyz plugin trial has no deadline to redeem.
@@ -159,3 +161,7 @@ Visit HoloLens 2 Development Edition documentation to [Learn more](https://docs.
 To get help with any questions about your Unity ID, account, organization(s) and subscription(s), please visit support.unity3d.com
 
 For Pixyz-specific support (after redeeming your trial), please visit [pixyz-software.com/support](http://pixyz-software.com/support)
+
+## Where can I get support for HoloLens Developer Edition?
+
+Get support [here.](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=96bfb202-bc79-741b-bf7a-774d8b767782)
