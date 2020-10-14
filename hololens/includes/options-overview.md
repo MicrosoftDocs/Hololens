@@ -156,7 +156,7 @@ More details on how to [Redeem your PiXYZ license.](https://www.pixyz-software.c
 ### Azure
 Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
 How to redeem Azure credits:
-To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. [Learn more.](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. [Learn more.](../hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
 
 Learn about Azure Spatial Anchors:
 - [Product Page](https://azure.microsoft.com/services/spatial-anchors/)
