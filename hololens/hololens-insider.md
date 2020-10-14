@@ -44,7 +44,7 @@ Here is the list of the upcoming features that you can try out today in our Wind
 | [Update Policies](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | Newly enabled policies allowing control of updates.                                            | 19041.1352+                 |
 | [Enabled Settings page visibility for HoloLens 2](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | Policy to pick which pages are seen in Settings app.                                           | 19041.1349+                 |
 |  [Research mode](hololens-insider.md#research-mode) | Using Research mode on HoloLens 2 | 19041.1375+ |
-| [Recording length increased](hololens-insider.md#recording-length-increased) | Increased the MRC recording length to longer than 5 minutes. | 19041.1387+ |
+| [Recording length increased](hololens-insider.md#recording-length-increased) | MRC recordings no longer capped to 5 minutes. | 19041.1387+ |
 | [Improvements and fixes in the update](hololens-insider.md#improvements-and-fixes-in-the-update)                   | Additional fixes in the update.                                                                | 19041.1361+                 |
 
 
