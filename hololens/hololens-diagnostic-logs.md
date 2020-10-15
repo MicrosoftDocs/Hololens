@@ -1,6 +1,6 @@
 ---
 title: Collect and use diagnostic information from HoloLens devices
-description: 
+description: Collect and use diagnostic information from HoloLens devices
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/15/2020
@@ -120,7 +120,7 @@ This works when the device shows up in File Explorer after connecting it to a PC
 > [!NOTE]
 > Offline diagnostics is only enabled when user is either going through OOBE or [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) policy value is set to Full (Basic is default value on Hololens). 
 >
-To disable Offline diagnostics, go to **Settings App > Privacy** page and select **Basic** in **Diagnostic Data**.
+> To disable Offline diagnostics, go to **Settings App > Privacy** page and select **Basic** in **Diagnostic Data**.
 
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
