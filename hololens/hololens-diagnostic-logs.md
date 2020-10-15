@@ -122,6 +122,7 @@ This works when the device shows up in File Explorer after connecting it to a PC
 >
 > To disable Offline diagnostics, go to **Settings App > Privacy** page and select **Basic** in **Diagnostic Data**.
 
+Watch this video to learn more. 
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
