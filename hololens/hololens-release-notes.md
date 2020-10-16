@@ -52,6 +52,7 @@ Our Windows Holographic version 2010 Release is filled with many new features. T
 | [Update Policies](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | Newly enabled policies allowing control of updates.           |
 | [Enabled Settings page visibility for HoloLens 2](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | Policy to pick which pages are seen in Settings app.             |
 | [Research mode](hololens-release-notes.md#research-mode) | Using Research mode on HoloLens 2. |
+| [Recording length increased](hololens-release-notes.md#recording-length-increased) | MRC recordings no longer capped to 5 minutes. |
 | [Improvements and fixes in the update](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | Additional fixes in the update.   |
 
 ### Auto Eye Position Support
@@ -359,6 +360,16 @@ While in Research Mode, the HoloLens 2 becomes a potent tool for computer vision
 Researchers now have the option of enabling Research Mode on their HoloLens devices to access all of these external facing raw image sensors streams. Research Mode for HoloLens 2 also provides access to the accelerometer, gyroscope, and magnetometer readings. To protect users’ privacy, raw eye-tracking camera images are not available through Research Mode, but eye-gaze direction  is available through existing APIs.
 
 Check out the [Research Mode documentation](https://docs.microsoft.com/windows/mixed-reality/research-mode) for further technical details.
+
+### Recording length increased
+Due to customer feedback we’ve increased the recording length of [mixed reality captures](holographic-photos-and-videos.md). Mixed reality captures will no longer be limited to 5 minutes by default but instead will calculate the maximum recording length based on available disk space. The device will estimate the max video recording duration based on available disk space up to 80% of the total disk space.
+
+> [!NOTE]
+> The HoloLens will use default video recording length (5 minutes) if one of the following occurs:
+> -	The estimated max recording duration is smaller than the default 5 mins.
+> -	The available disk space is less than 20% of the total disk space.
+
+This information can be found again [here](holographic-photos-and-videos.md#maximum-recording-length). 
 
 ### Improvements and fixes in the update:
 - Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
