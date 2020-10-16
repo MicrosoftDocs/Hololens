@@ -169,13 +169,18 @@ Learn about Azure Remote Rendering:
 ## 3. Where to get started developing:
 
 Unity Development Journey
-1. Dive into your [Mixed Reality development options](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity).
+
+|     Checkpoint                              |     Outcome                                                                                                                       |   |
+|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---|
+|     [Start Designing and Prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Start your adventure into designing Mixed Reality applications across core concepts, interaction models, and UX elements.     |   |
+|     [Start Developing for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Choose your engine, download your tools, add core building blocks, and start building today.                                  |   |
+|     [Explore Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Build compelling immersive experiences with Azure Remote Rendering and Azure Spatial Anchors.                                 |   |
+
+Additional Resources: 
 1. Make sure to [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) for HoloLens development.
 1. Learn about [developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 1. Learn about how to [combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
 1. Learn how to [deploy your built apps](https://docs.microsoft.com/hololens/app-deploy-overview). 
-
-Additional Resources: 
 1. Explore the all the possibilities for [Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
 1. Learn about [developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 1. Reach out to your fellow developers on our [HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).

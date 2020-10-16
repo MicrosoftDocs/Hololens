@@ -12,6 +12,7 @@
 ### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 ### [Supported languages for HoloLens 2](hololens2-language-support.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
+### [HoloLens Development Edition FAQ](hololens2-development-edition-faq.md)
 
 ## Get started with HoloLens (1st gen)
 ### [HoloLens (1st gen) hardware](hololens1-hardware.md)
