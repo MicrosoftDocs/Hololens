@@ -367,7 +367,17 @@ Check out the [Research Mode documentation](https://docs.microsoft.com/windows/m
 - Addressed an issue where users could not provision VPN profiles through provisioning packages.
 - Addressed an issue that prevented a HoloLens device from showing up in File Explorer over Media Transfer Protocol (MTP) when the device is set up as a [single-app kiosk](hololens-kiosk.md). Note that MTP (and USB connection in general) can still be disabled using the [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) policy.
 
+## Windows Holographic, version 2004 - October 2020 Update
+- Build 19041.1124
+ 
+Improvements and fixes in the update:
 
+- Removed an unnecessary check that caused runtime system fault.
+
+## Windows Holographic, version 1903 - October 2020 Update
+- Build 18362.1081
+
+This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest builds for Windows Holographic, version 2004.
 
 ## Windows Holographic, version 2004 - September 2020 Update
 - Build 19041.1117
