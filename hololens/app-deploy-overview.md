@@ -74,12 +74,4 @@ Installing via App Installer is applicable for:
 * Does not require Developer mode or Device portal
 * Easy for end user to install
 
-## Installing apps from a web page
-Apps can now be set up to [Install from a web page](app-deploy-web-installer.md) appx packages now on created can be hosted on a web page. When combined with certificate deployment this method of app distribution can be very useful for app deployment.
 
-Install from a web page is applicable for: 
-* Line of Buisness / Self developed (non-public) apps
-* Environments that have set up certificate installs
-* Environments where users have internet access
-* Does not require Developer mode or Device portal
-* Easy for end user to install
