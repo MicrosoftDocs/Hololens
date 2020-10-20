@@ -170,6 +170,9 @@ Notes:
 
 The serial number for HoloLens 2 devices is printed underneath the visor. Lift the visor up and you can find the serial number located close to the hinge. 
 
+   > [!div class="mx-imgBorder"]
+   > ![Where to physically find the serial number](images/serial-on-hl2.png)
+
 The serial number can also be found via a connected PC:
 
 1. Plug in the device
