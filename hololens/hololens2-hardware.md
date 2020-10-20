@@ -180,6 +180,7 @@ The serial number can also be found via a connected PC:
 1. Right Click and select **Properties** of the HoloLens device
 1. This will display the series number of the device. Like this screenshot below.
 
+<img src="images/ResetRecovery2.png" width="200" height="300" />
    ![A HoloLens 2 properties screen shows serial number](images/ResetRecovery2.png)
 
 ## Next step
