@@ -92,7 +92,6 @@
 ### [Microsoft Store for Business](app-deploy-store-business.md)
 ### [Provisioning Package](app-deploy-provisioning-package.md)
 ### [App Installer](app-deploy-app-installer.md)
-### [Web app installer](app-deploy-web-installer.md)
 
 # Maintain
 ## [Manage HoloLens updates](hololens-updates.md)
