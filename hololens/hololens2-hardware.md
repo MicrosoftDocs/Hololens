@@ -2,7 +2,7 @@
 title: HoloLens 2 hardware
 description: An outline of the components that make up Microsoft HoloLens 2, the latest evolution of Microsoft's fully untethered holographic computer running Windows 10.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 9/17/2019
+ms.date: 10/20/2020
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -165,6 +165,19 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 Notes:
 - Unit: The black, retail-style box HoloLens 2 is sold in.
 - Exterior Shipper: The protective shipping packaging around Unit.
+
+## Finding the Serial number
+
+The serial number for HoloLens 2 devices is printed underneath the visor. Lift the visor up and you can find the serial number located close to the hinge. 
+
+The serial number can also be found via a connected PC:
+
+1. Plug in the device
+1. Navigate to **This PC** in file explorer
+1. Right Click and select **Properties** of the HoloLens device
+1. This will display the series number of the device. Like this screenshot below.
+
+   ![A HoloLens 2 properties screen shows serial number](images/ResetRecovery2.png)
 
 ## Next step
 
