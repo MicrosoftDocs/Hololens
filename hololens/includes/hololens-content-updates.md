@@ -119,3 +119,14 @@
 | 10/6/2020 | [security adminless os](/hololens/security-adminless-os) | modified |
 | 10/7/2020 | [Setting up your HoloLens 2 edition](/hololens/hololens2-options) | modified |
 | 10/8/2020 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
+
+
+## Week of October 12, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/13/2020 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 10/15/2020 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 10/15/2020 | [Collect and use diagnostic information from HoloLens devices](/hololens/hololens-diagnostic-logs) | modified |
+| 10/16/2020 | [Collect and use diagnostic information from HoloLens devices](/hololens/hololens-diagnostic-logs) | modified |
