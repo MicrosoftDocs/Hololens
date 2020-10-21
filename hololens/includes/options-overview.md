@@ -134,7 +134,7 @@ The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits,
 
 Every HoloLens 2 edition has the same hardware, the same [content in the box](../hololens2-hardware.md#hololens-components) and comes with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software).
 
-## 2. Redeem your credits:
+## 2. Redeem your credits
 
 ### Unity
 You'll have received a unique code. Directions to redeem Unity Pro trial: 
@@ -166,9 +166,9 @@ Learn about Azure Remote Rendering:
 - [Product Page](https://azure.microsoft.com/services/remote-rendering/)
 - [Documentation](https://docs.microsoft.com/azure/remote-rendering/overview/about)
 
-## 3. Where to get started developing:
+## 3. Get started Developing
 
-Unity Development Journey
+Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem - it's time to create.
 
 |     Checkpoint                              |     Outcome                                                                                                                       |   |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---|
@@ -176,14 +176,14 @@ Unity Development Journey
 |     [Start Developing for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Choose your engine, download your tools, add core building blocks, and start building today.                                  |   |
 |     [Explore Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Build compelling immersive experiences with Azure Remote Rendering and Azure Spatial Anchors.                                 |   |
 
-Additional Resources: 
-1. Make sure to [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) for HoloLens development.
-1. Learn about [developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
-1. Learn about how to [combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
-1. Learn how to [deploy your built apps](https://docs.microsoft.com/hololens/app-deploy-overview). 
-1. Explore the all the possibilities for [Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
-1. Learn about [developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
-1. Reach out to your fellow developers on our [HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
+See Also: 
+- [Make sure to install the tools for HoloLens development.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) 
+- [Learn about developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+- [Learn about how to combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
+- [Learn how to deploy your built apps](https://docs.microsoft.com/hololens/app-deploy-overview). 
+- [Explore the all the possibilities for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
+- [Learn about developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- [Reach out to your fellow developers on our HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
 
 
 
