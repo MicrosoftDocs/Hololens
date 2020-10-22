@@ -80,7 +80,7 @@ If an app is not on this list then a user may use Device Portal, connected to a 
 
 ## Sample - Blocking App Installer
 
-As an example you may wish to block the App Installer app. We have included some sample code for this example. Please download these [code samples for this example](https://aka.ms/HoloLensDocs-Sample-WDAC-App-Installer). In the zip file you'll find:
+As an example you may wish to block the [App Installer](app-deploy-app-installer.md) app. We have included some sample code for this example. Please download these [code samples for this example](https://aka.ms/HoloLensDocs-Sample-WDAC-App-Installer). In the zip file you'll find:
 
 | File | Use |
 |-|-|
