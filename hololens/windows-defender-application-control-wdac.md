@@ -85,8 +85,8 @@ As an example you may wish to block the App Installer app. We have included some
 | File | Use |
 |-|-|
 | compiledPolicy.bin | [Created in Step 9, used in final Step 10.](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens) |
-| mergedPolicy.xml | [Created in Step 6.]((https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)) |
-| WDAC_Set.syncml | Not used in WDAC but can be used for for [EnterpriseModernAppManagement CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/enterprisemodernappmanagement-csp) |
+| mergedPolicy.xml | [Created in Step 6.](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens) |
+| WDAC_Set.syncml | Not used in WDAC but can be used for for [EnterpriseModernAppManagement CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp) |
 
 If you would like to try immediately blocking an app, in this case the App Installer app, then use the compiledPolicy.bin file and skip to step 10 in the link above. This will allow you to test out the custom policy and ensure the group assignments and policy configuration is correct. 
 
@@ -96,5 +96,5 @@ Since the App Installer app is launched via trying to open a file will be presen
 
 ![App install blocked from WDAC](images\wdac-app-installer-no-launch.jpg)
 
-If you do not wish to use WDAC, you may as an alternative use [EnterpriseModernAppManagement CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/enterprisemodernappmanagement-csp) to remove the App Installer UX, which is an app after all. The result of this is that the App Installer app will be uninstalled from the device. .appx, .msix, .msixbundle, and other file extensions as well as protocol for web-to-app launch will no longer be handled by the App Installer app. The user will get a prompt to search for a handler for the file extension/protocol in the store and they will not find the app because it’s not listed.
+If you do not wish to use WDAC, you may as an alternative use [EnterpriseModernAppManagement CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp) to remove the App Installer UX, which is an app after all. The result of this is that the App Installer app will be uninstalled from the device. .appx, .msix, .msixbundle, and other file extensions as well as protocol for web-to-app launch will no longer be handled by the App Installer app. The user will get a prompt to search for a handler for the file extension/protocol in the store and they will not find the app because it’s not listed.
 
