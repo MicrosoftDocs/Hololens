@@ -177,7 +177,7 @@ The serial number can also be found via a connected PC:
 1. Right Click and select **Properties** of the HoloLens device
 1. This will display the series number of the device. Like this screenshot below.
 
-<img src="images/ResetRecovery2.png" width="400" height="600" />
+<img src="images/hl1-serial-number.png" width="400" height="600" />
 
 > [!div class="nextstepaction"]
 > [Set up and start your HoloLens (1st gen)](hololens1-setup.md)
