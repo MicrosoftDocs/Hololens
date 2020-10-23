@@ -23,6 +23,8 @@ appliesto:
 ## HoloLens (1st gen) Long Term Servicing
 HoloLens (1st gen) has entered Long Term Servicing (LTS) state. Future updates will focus on issue and security fixes, while maintaining feature parity with the Windows 10 Holographic, version 1809 release for HoloLens (1st gen).
 
+For developers, this means that HoloLens (1st gen) apps will not support the OpenXR API.  These headsets remain supported in Unity 2019.4 LTS with the WinRT API backend for the full lifecycle of Unity 2019 LTS through mid-2022.
+
 ### Windows 10 Holographic, version 1809
 
 > **Applies to:** Hololens (1st gen)
