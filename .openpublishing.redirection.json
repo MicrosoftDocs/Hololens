@@ -44,6 +44,11 @@
                             "source_path":   "hololens/security-wireless-wifi.md",
                             "redirect_url":  "https://docs.microsoft.com/hololens/security-overview",
                             "redirect_document_id":  true
-                        }        
+                        },
+                        {
+                            "source_path":  "hololens/app-deploy-web-installer.md",
+                            "redirect_url": "https://docs.microsoft.com/hololens/app-deploy-app-installer",
+                            "redirect_document_id":  false
+                        }
                     ]
 }
