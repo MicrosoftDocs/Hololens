@@ -30,6 +30,7 @@ Here is the list of the upcoming features that you can try out today in our Wind
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Auto Eye Position Support](hololens-insider.md#auto-eye-position-support)                              | Actively computes eye positions and enables accurate hologram positioning.                        | 19041.1339+                 |
 | [Certificate Manager](hololens-insider.md#certificate-manager)                                     | Users can view, install and remove certificates Current User and Local Machine certificates in the Settings app.                                         | 19041.1361+                 |
+| [App Installer]hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | On device UI to install apps from appx files. | 19041.1377+ |
 | [Auto-launch provisioning from USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE Automatically detects provisioning packages on USB drives.                                | 19041.1361+                 |
 | [Auto-confirm provisioning packages in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatically apply provisioning packages in OOBE.                                             | 19041.1361+                 |
 | [Using Autopilot with Wi-Fi connection](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Use autopilot from device Wi-Fi without need for ethernet adapter.                             | 19041.1364+                 |
@@ -99,6 +100,26 @@ The certificate should now be installed on the device.
 ![Certificate viewer in the Settings app](images/certificate-viewer-device.jpg)
 
 ![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
+
+### Install Apps on HoloLens 2 via App Installer
+In our Windows insider release, we are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices.  You are now able to install Apps without needing to enable Developer Mode or using Device Portal.  Simply download (over USB or through Edge) the Appx Bundle to your device and navigate to the Appx Bundle in the File Explorer to be prompted to kick off the installation.  Alternatively, [initiate an install from a web page](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Just like apps you install from the Microsoft Store or sideload using MDM’s LOB App deployment capability, apps need to be digitally signed with the [Sign Tool](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) and the [certificate used to sign must be trusted](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) by the HoloLens device before the app can be deployed. Note: You have full control to disable this new path of app installation by disabling the App Installer using [Windows Defender Application Control – WDAC CSP](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens), blocking Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+
+**Application install instructions.**
+
+1.	Ensure that your HoloLens 2 device is powered on and connected to your PC
+2.	Ensure that you are signed into the HoloLens 2 device
+3.	On your PC navigate to your custom app, and copy yourapp.appxbundle to yourdevicename\Internal Storage\Downloads.   After you’ve finished copying your file you can disconnect your device
+4.	From your HoloLens 2 device Open the Start Menu, select All apps and launch the File Explorer app.
+5.	Navigate to the Downloads folder. You may need to on the left panel of the app select This device first, then navigate to Downloads.
+6.	Select the yourapp.appxbundle file.
+7.	The App Installer will launch. Select the Install button to install your app.
+The installed app will automatically launch upon completion of installation.
+
+You can find sample apps on [Windows Universal Samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) to test this flow.
+
+Read about the full process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
+
+![Installing MRTK Examples via App Installer](images/hololens-app-installer-picture.jpg)
 
 ### Auto-launch provisioning from USB
 Before this build users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
