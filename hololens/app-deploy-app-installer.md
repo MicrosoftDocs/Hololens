@@ -36,6 +36,7 @@ Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
 ## Requirements
 
 ### For your devices: 
+> [!NOTE]
 > This feature is currently only avalible in Windows Insider builds 19041.1377+. [Learn more on how to enroll in Windows Insider builds](hololens-insider.md).
 
 ### For your apps: 
