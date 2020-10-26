@@ -50,7 +50,7 @@ Apps that are installed via this method must be digitally signed. You'll need to
 **Pick a certificate deployment method.** 
 - [Provisioning Packages](hololens-provisioning.md) can be applied to local devices.
 - MDM can be used to [apply certificates with device configurations](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
-- Use the on device [Certificate Manager](certificate-manager.md). 
+- Use the on device [Certificate Manager](hololens-insider.md#certificate-manager). 
 
 ## Installation method
 
