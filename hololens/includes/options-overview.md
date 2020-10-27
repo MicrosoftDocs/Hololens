@@ -164,11 +164,11 @@ To redeem your $500 Azure credits, redeem your Azure Pass promo code and activat
 
 Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem - it's time to create.
 
-|     Checkpoint                              |     Outcome                                                                                                                       |   |
-|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---|
-|     [Start Designing and Prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Start your adventure into designing Mixed Reality applications across core concepts, interaction models, and UX elements.     |   |
-|     [Start Developing for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Choose your engine, download your tools, add core building blocks, and start building today.                                  |   |
-|     [Explore Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Build compelling immersive experiences with Azure Remote Rendering and Azure Spatial Anchors.                                 |   |
+|     Checkpoint                              |     Outcome                                                                                                                    | 
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+|     [Start Designing and Prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Start your adventure into designing Mixed Reality applications across core concepts, interaction models, and UX elements.     |
+|     [Start Developing for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Choose your engine, download your tools, add core building blocks, and start building today.                                  |
+|     [Explore Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Build compelling immersive experiences with Azure Remote Rendering and Azure Spatial Anchors.                                 |
 
 ## Additional Resources
 - [Make sure to install the tools for HoloLens development.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) 
