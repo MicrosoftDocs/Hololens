@@ -14,6 +14,7 @@
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
 ### [HoloLens Development Edition FAQ](hololens2-development-edition-faq.md)
 
+
 ## Get started with HoloLens (1st gen)
 ### [HoloLens (1st gen) hardware](hololens1-hardware.md)
 ### [Get your HoloLens (1st gen) ready to use](hololens1-setup.md)
