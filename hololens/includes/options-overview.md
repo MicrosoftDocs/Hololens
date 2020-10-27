@@ -118,7 +118,6 @@ This section will get you and your organization ready to deploy HoloLens devices
 # [HoloLens 2 Development Edition](#tab/developeredition)
 
 ## 1. Learn about the Development Edition
-Learn about the [Development Edition](https://www.microsoft.com/hololens/buy)
 
 > [!NOTE] 
 > The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
@@ -146,7 +145,7 @@ More details on [How to activate a Unity license](https://support.unity3d.com/hc
 
 ### PiXYZ
 You'll have received a unique code. Directions to redeem PiXYZ Plugin trial: 
-1. Visit ([id.unity.com](http://id.unity.com/)) 
+1. Visit [id.unity.com](http://id.unity.com/)
 1. Click **Redeem a product code**
 1. Enter your PiXYZ Plugin product code, and click **Redeem a product code**
 
