@@ -163,5 +163,21 @@ To clean the rest of the device, including the headband and device arms, use a l
 
 ![Image that shows how to clean the visor](images/hololens-cleaning-visor.png)
 
+## Finding the Serial number
+
+The serial number for HoloLens (1st gen) devices is printed underneath the right lens.
+1. Hold the device in front of you as if you were going to wear it.
+1. With the lens still facing forward, flip the deivce upside down so you see the underside.
+1. The right lens will now be on the left, printed under the lens on the band is the serial number. 
+
+The serial number can also be found via a connected PC:
+
+1. Plug in the device
+1. Navigate to **This PC** in file explorer
+1. Right Click and select **Properties** of the HoloLens device
+1. This will display the series number of the device. Like this screenshot below.
+
+<img src="images/hl1-serial-number.png" width="400" height="600" />
+
 > [!div class="nextstepaction"]
 > [Set up and start your HoloLens (1st gen)](hololens1-setup.md)
