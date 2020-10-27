@@ -27,19 +27,20 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 | HoloLens 2 device <br>(one device)                      |               ✔️               |             ✔️            |                ✔️               |
 | Dynamics 365 Remote Assist<br>(one seat)                |               ✔️               |                          |                                |
 | Warranty                                                |               ✔️               |             ✔️            |                ✔️               |
-| Commercial use rights<br>(device only)                  |               ✔️               |             ✔️            |                                |
-| Can be used to develop                                  |               ✔️               |             ✔️            |                ✔️               |
+| Can be used to develop apps                                 |               ✔️               |             ✔️            |                ✔️               |
 | $500 credit for Azure, including mixed reality services |                               |                          |                ✔️               |
 | Unity Pro & PiXYZ Plugin <br>(three months free)        |                               |                          |                ✔️               |
 | Device purchase limit                                   |              None             |           None           |          One per user          |
 
 ## Options Overview
 
-**HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
+**HoloLens 2 (device only)** : HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 
-**HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
+**HoloLens 2 with Dynamics 365 Remote Assist** : Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
 
-**HoloLens 2 Development Edition** - Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
+**HoloLens 2 Development Edition** : Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
+
+Learn about the different [HoloLens 2 editions](https://www.microsoft.com/hololens/buy)
 
 ## Get started with HoloLens 2 options
 Select a tab to learn more about your HoloLens journey. 

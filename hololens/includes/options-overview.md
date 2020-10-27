@@ -1,7 +1,7 @@
 # [HoloLens 2](#tab/device)
 
 ## 1. Getting started
-Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
+You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
 
 Every HoloLens 2 edition has the same hardware, the same [content in the box](../hololens2-hardware.md#hololens-components) and comes with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software).
 
@@ -60,7 +60,6 @@ This section will get you and your organization ready to deploy HoloLens devices
 # [HoloLens 2 with Dynamics 365 Remote Assist](#tab/remoteassist)
 
 ## 1. Learn about HoloLens 2 with Dynamics 365 Remote Assist
-Learn about the  [HoloLens 2 with Dynamics 365 Remote Assist edition](https://www.microsoft.com/hololens/buy)
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
 
@@ -124,7 +123,7 @@ Learn about the [Development Edition](https://www.microsoft.com/hololens/buy)
 > [!NOTE] 
 > The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
 
-The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month Pixyz plugin trial:
+The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month PiXYZ plugin trial:
 
 | Bundle feature | Description |
 |---|---|
@@ -146,10 +145,10 @@ You'll have received a unique code. Directions to redeem Unity Pro trial:
 More details on [How to activate a Unity license](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-). Contact [Unity Support](https://support.unity3d.com/hc) for help as needed.  
 
 ### PiXYZ
-You'll have received a unique code. Directions to redeem Pixyz Plugin trial: 
-1. On the same page ([id.unity.com](http://id.unity.com/)) 
+You'll have received a unique code. Directions to redeem PiXYZ Plugin trial: 
+1. Visit ([id.unity.com](http://id.unity.com/)) 
 1. Click **Redeem a product code**
-1. Enter your Pixyz Plugin product code, and click **Redeem a product code**
+1. Enter your PiXYZ Plugin product code, and click **Redeem a product code**
 
 More details on how to [Redeem your PiXYZ license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Contact [PiXYZ Support](https://www.pixyz-software.com/support/) for help as needed. 
 
@@ -158,13 +157,8 @@ Here are some common [Azure products for Mixed Reality](https://azure.microsoft.
 How to redeem Azure credits:
 To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. [Learn more.](../hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
 
-Learn about Azure Spatial Anchors:
-- [Product Page](https://azure.microsoft.com/services/spatial-anchors/)
-- [Documentation](https://docs.microsoft.com/azure/spatial-anchors/)
-
-Learn about Azure Remote Rendering:
-- [Product Page](https://azure.microsoft.com/services/remote-rendering/)
-- [Documentation](https://docs.microsoft.com/azure/remote-rendering/overview/about)
+- [Learn how Azure Spatial Anchors can help you build apps that map, share, and persist 3D content](https://azure.microsoft.com/services/spatial-anchors/)
+- [Learn how Azure Remote Rendering can render high-quality, interactive 3D content, and stream it to your devices in real time](https://azure.microsoft.com/services/remote-rendering/)
 
 ## 3. Get started Developing
 
@@ -176,7 +170,7 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 |     [Start Developing for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Choose your engine, download your tools, add core building blocks, and start building today.                                  |   |
 |     [Explore Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Build compelling immersive experiences with Azure Remote Rendering and Azure Spatial Anchors.                                 |   |
 
-See Also: 
+## Additional Resources
 - [Make sure to install the tools for HoloLens development.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) 
 - [Learn about developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 - [Learn about how to combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
