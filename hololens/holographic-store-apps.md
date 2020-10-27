@@ -3,7 +3,7 @@ title: Find, install, and uninstall applications
 description: The Microsoft Store is your source for apps and games that work with HoloLens.  Learn more about finding, installing, and uninstalling holographic apps.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 08/31/2020
+ms.date: 10/27/2020
 manager: jarrettr
 keywords: hololens, store, uwp, app, install
 ms.prod: hololens
@@ -30,6 +30,15 @@ To learn more about installing and running custom apps, read [Custom holographic
 ## Find apps
 
 Open the Microsoft Store from the **Start** menu. Then browse for apps and games. You can use [voice commands](hololens-cortana.md) to search by saying "Search", once the search window opens say "Start dictating" and then when prompted begin saying your search terms.
+
+> NOTE
+> On January 12, 2021 the following apps will reach End of Support on HoloLens devices. We encourage you to use the following link on your device to use the web version of the app.
+
+| App        | Link                                          |
+|------------|-----------------------------------------------|
+| Excel      | https://office.live.com/start/Excel.aspx      |
+| Word       | https://office.live.com/start/Word.aspx       |
+| PowerPoint | https://office.live.com/start/PowerPoint.aspx |
 
 ## Install apps
 
