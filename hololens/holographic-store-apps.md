@@ -36,9 +36,9 @@ Open the Microsoft Store from the **Start** menu. Then browse for apps and games
 
 | App        | Link                                          |
 |------------|-----------------------------------------------|
-| Excel      | https://office.live.com/start/Excel.aspx      |
-| Word       | https://office.live.com/start/Word.aspx       |
-| PowerPoint | https://office.live.com/start/PowerPoint.aspx |
+| Excel mobile      | https://office.live.com/start/Excel.aspx      |
+| Word mobile       | https://office.live.com/start/Word.aspx       |
+| PowerPoint mobile | https://office.live.com/start/PowerPoint.aspx |
 
 ## Install apps
 
