@@ -455,12 +455,12 @@ Watch how to configure a kiosk by using a provisioning package.
 This kiosk deploys a Kiosk that for users in the AAD group, they will have a Kiosk enabled that includes the 3 apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the GUID highlighted below to match an AAD Group of your own. 
 
 
-:::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="53":::
+:::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
 ### Multiple app kiosk mode targeting AAD account.
 This kiosk deploys a Kiosk for a single user, they will have a Kiosk enabled that includes the 3 apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the account highlighted below to match an AAD Account of your own. 
 
 
-:::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="53":::
+:::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::
 
