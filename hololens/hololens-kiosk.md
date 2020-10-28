@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/27/2020
+ms.date: 10/27/2020
 ms.custom: 
 - CI 115262
 - CI 111456
@@ -36,6 +36,19 @@ You can use kiosk mode in either a single-app or a multi-app configuration, and 
 > Deleting the multi-app configuration removes the user lockdown profiles that the assigned access feature created. However, it does not revert all the policy changes. To revert these policies, you have to reset the device to the factory settings.
 
 ## Plan the kiosk deployment
+
+When planning your Kiosk you'll need to be able to answer the following questions. Here are some decisions to think about while reading this page and some considerations for these questions.
+1. Who will be using your Kiosk, and what [type of account(s)](hololens-identity.md) will they be using?
+    - This is a decision you have likely already made and shouldn't be adjusted for the sake of your Kiosk, but will affect how the Kiosk is assigned later.
+1. Do you need to have either different Kiosks per user/group or a Kiosk not enabled for some?
+    - If so, you'll want to create your Kiosk via XML. 
+1. How many apps will be in your Kiosk? 
+    - If you have more than 1 app, you'll need a multi-app Kiosk. 
+1. Which app(s)?
+    - Please use our list of AUMIDs below to add any In-Box apps in addition to your own.
+1. How do you plan to deploy your Kiosk?
+    - If you are enrolling device in MDM then we suggest using MDM to deploy your Kiosk.
+    - If you are not using MDM then deployment with Provisioning Package is available. 
 
 ### Kiosk mode requirements
 
@@ -121,71 +134,23 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 > <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.  
 > <sup>4</sup> You cannot enable Miracast directly. To enable Miracast as a kiosk app enable the Camera app and the Device Picker app.
 
-### Plan user and device groups
+### Plan kiosk profiles for users or groups
 
-In an MDM environment, you use groups to manage device configurations and user access. 
+When either creating the xml file or using Intune’s UI to set up a Kiosk you’ll need to consider who will be user the Kiosk. A Kiosk configuration can be limited to either an individual account or Azure AD groups. 
 
-The kiosk configuration profile includes the **User logon type** setting. **User logon type** identifies the user (or group that contains the users) who can use the app or apps that you add. If a user signs in by using an account that is not included in the configuration profile, that user cannot use apps on the kiosk.  
+Typically Kiosks are enabled for either a user, or user group. However if you plan on writing your own XML Kiosk, then you may want to consider Global Assigned Access, in which the Kiosk is applied at the device level regardless of Identity. If this appeals to you [read more about Global Assigned Access Kiosks.](hololens-global-assigned-access-kiosk.md)
 
-> [!NOTE]  
-> The **User logon type** of a single-app kiosk specifies a single user account. This is the user context under which the kiosk runs. The **User logon type** of a multi-app kiosk can specify one or more user accounts or groups that can use the kiosk.
+#### If you are creating an XML file:
+-	You many create multiple Kiosk profiles, and assign each to different users/groups. Such as a Kiosk for your AAD Group that has many apps, and a Visitor that has a multiple app kiosk with a singular app.
+-	Your kiosk configuration will be called a **Profile Id** and have a GUID.
+-	You will assign that Profile in the configs section by specifying the user type and using the same GUID for the **DefaultProfile Id**.
 
-Before you can deploy the kiosk configuration to a device, you have to *assign* the kiosk configuration profile to a group that contains the device or a user who can sign in to the device. This setting produces behavior such as the following.
-
-- If the device is a member of the assigned group, the kiosk configuration deploys to the device the first time that any user signs in on the device.  
-- If the device is not a member of the assigned group, but a user who is a member of that group signs in, the kiosk configuration deploys to the device at that time.
-
-For a full discussion of the effects of assigning configuration profiles in Intune, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
-
-> [!NOTE]  
-> The following examples describe multi-app kiosks. Single-app kiosks behave in a similar manner, but only one user account gets the kiosk experience.
-
-**Example 1**
-
-You use a single group (Group 1) for both devices and users. One device and users A, B, and C are members of this group. You configure the kiosk configuration profile as follows:  
-
-- **User logon type**: Group 1
-- **Assigned group**: Group 1
-
-Regardless of which user signs on to the device first (and goes through the Out-of-Box Experience, or OOBE), the kiosk configuration deploys to the device. Users A, B, and C can all sign in to the device and get the kiosk experience.
-
-**Example 2**
-
-You contract out devices to two different vendors who need different kiosk experiences. Both vendors have users, and you want all the users to have access to kiosks from both their own vendor and the other vendor. You configure groups as follows:
-
-- Device Group 1:
-  - Device 1 (Vendor 1)
-  - Device 2 (Vendor 1)
-
-- Device Group 2:
-  - Device 3 (Vendor 2)
-  - Device 4 (Vendor 2)
-
-- User Group:
-  - User A (Vendor 1)
-  - User B (Vendor 2)
-
-You create two kiosk configuration profiles that have the following settings:
-
-- Kiosk Profile 1:
-   - **User logon type**: User Group
-   - **Assigned group**: Device Group 1
-
-- Kiosk Profile 2:
-   - **User logon type**: User Group
-   - **Assigned group**: Device Group 2
-
-These configurations produce the following results:
-
-- When any user signs in to Device 1 or Device 2, Intune deploys Kiosk Profile 1 to that device.
-- When any user signs in to Device 3 or Device 4, Intune deploys Kiosk Profile 2 to that device.
-- User A and user B can sign in to any of the four devices. If they sign in to Device 1 or Device 2, they see the Vendor 1 kiosk experience. If they sign in to Device 3 or Device 4, they see the Vendor 2 kiosk experience.
-
-#### Profile conflicts
-
-If two or more kiosk configuration profiles target the same device, they conflict. In the case of Intune-managed devices, Intune does not apply any of the conflicting profiles.
-
-Other kinds of profiles and policies, such as device restrictions that are not related to the kiosk configuration profile, do not conflict with the kiosk configuration profile.
+#### If you are creating a Kiosk in Intune.
+-	Each device may only receive a single Kiosk profile, otherwise it will create a conflict and receive no Kiosk configurations at all. 
+    -	Other kinds of profiles and policies, such as device restrictions that are not related to the kiosk configuration profile, do not conflict with the kiosk configuration profile.
+-	The Kiosk will be enabled for all users who are a part of the User logon type, this will be set with a user or AAD group. 
+-	After the Kiosk configuration is set and the **User logon type** (users who can log into the Kiosk) and the Apps are selected, the Device Configuration must still be assigned to a group. The Assigned group(s) determines which devices receive the Kiosk device configuration, however does not interact with if the Kiosk is enabled or not. 
+    - For a full discussion of the effects of assigning configuration profiles in Intune, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
 ### Select a deployment method
 
