@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+
+ This is a sample Assigned Access XML file. The Profile specifies which apps are allowed
+
+ and their app IDs. An Assigned Access Config specifies the accounts or groups to which
+
+ a Profile is applicable.
+
+
+
+!!! NOTE: Change the Account below to a user in the tenant being tested !!!
+
+ -->
+
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+
+  <Profiles>
+
+    <Profile Id="{8dbbe305-2dde-43d7-86f9-581275618d2c}">
+
+      <AllAppsList>
+
+        <AllowedApps>
+
+          <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
+
+          <App AppUserModelId="HolographicSystemSettings_cw5n1h2txyewy!App" />
+
+          <App AppUserModelId="Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist" />
+
+        </AllowedApps>
+
+      </AllAppsList>
+
+      <StartLayout>
+
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"> <LayoutOptions StartTileGroupCellWidth="6" /> <DefaultLayoutOverride> <StartLayoutCollection> <defaultlayout:StartLayout GroupCellWidth="6"> <start:Group Name="Life at a glance"> <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" /> </start:Group> </defaultlayout:StartLayout> </StartLayoutCollection> </DefaultLayoutOverride></LayoutModificationTemplate>]]>
+
+      </StartLayout>
+
+      <Taskbar ShowTaskbar="true" />
+
+    </Profile>
+
+  </Profiles>
+
+  <Configs>
+
+    <Config>
+
+      <Account>AzureAD\contosouser@contoso.onmicrosoft.com</Account>
+      <DefaultProfile Id="{8dbbe305-2dde-43d7-86f9-581275618d2c}" />
+
+    </Config>
+
+  </Configs>
+
+</AssignedAccessConfiguration>
