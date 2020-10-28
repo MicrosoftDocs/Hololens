@@ -144,6 +144,7 @@ Typically Kiosks are enabled for either a user, or user group. However if you pl
 -	You many create multiple Kiosk profiles, and assign each to different users/groups. Such as a Kiosk for your AAD Group that has many apps, and a Visitor that has a multiple app kiosk with a singular app.
 -	Your kiosk configuration will be called a **Profile Id** and have a GUID.
 -	You will assign that Profile in the configs section by specifying the user type and using the same GUID for the **DefaultProfile Id**.
+- A XML file can be created but still applied to a device via MDM by creating a custom OMA URI device configuration profile and applying it to HoloLens device group using the URI value: ./Device/Vendor/MSFT/AssignedAccess/Configuration
 
 #### If you are creating a Kiosk in Intune.
 -	Each device may only receive a single Kiosk profile, otherwise it will create a conflict and receive no Kiosk configurations at all. 
@@ -175,8 +176,8 @@ The following table lists the capabilities and benefits of each of the deploymen
 |Deploy by using Developer Mode |Required       | Not required            | Not required   |
 |Deploy by using Azure Active Directory (AAD)  | Not required            | Not required                   | Required  |
 |Deploy automatically      | No            | No                   | Yes  |
-|Deployment speed            | Fastest       | Fast                 | Slow |
-|Deploy at scale | Not recommended    | Not recommended        | Recommended |
+|Deployment speed            | Fast       | Fast                 | Slow |
+|Deploy at scale | Not recommended    | Recommended        | Recommended |
 
 ## Use Microsoft Intune or other MDM to set up a single-app or multi-app kiosk
 
