@@ -18,22 +18,19 @@ appliesto:
 
 # Install Apps on HoloLens 2 via App Installer
 
-In our Windows Holographic, version 20H2 release, we are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices.  You are now able to install Apps without needing to enable Developer Mode or using Device Portal.  Simply download (over USB or through Edge) the Appx Bundle to your device and navigate to the Appx Bundle in the File Explorer to be prompted to kick off the installation.  Alternatively, [initiate an install from a web page](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Just like apps you install from the Microsoft Store or sideload using MDM’s LOB App deployment capability, apps need to be digitally signed with the [Sign Tool](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) and the [certificate used to sign must be trusted](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) by the HoloLens device before the app can be deployed.   
+We will ship the app installer capability soon after our Windows Holographic, version 20H2 update. We are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will be **not be available for managed devices** at this time.  
 
-This update aligns with desktop where [Sideloading is Enabled by Default](https://blogs.windows.com/windows-insider/2019/08/07/announcing-windows-10-insider-preview-build-18956/)
+A device is considered “managed” if **any** of the following are true:
+- MDM [Enrolled](hololens-enroll-mdm.md)
+- Configured with [provisioning package](hololens-provisioning.md)
+- User [Identity](hololens-identity.md) is AAD
 
-> [!NOTE]
-> For IT Admins who wish to disable this feature please use the following package family name as part of your [WDAC policy](windows-defender-application-control-wdac.md). This will only block the App Installer app, and not apps installed from other sources such as the Microsoft Store or from your MDM solution.
-```
-Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
-```
-> [!NOTE]
-> It is recommended to use [WDAC policy](windows-defender-application-control-wdac.md) to control apps, however if you only want to allow Microsoft Store apps, devices configured to set the [ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) policy explicitly to “not allow” will only allow apps to be installed from the Microsoft Store. 
+You are now able to install Apps without needing to enable Developer Mode or using Device Portal.  Simply download (over USB or through Edge) the Appx Bundle to your device and navigate to the Appx Bundle in the File Explorer to be prompted to kick off the installation.  Alternatively, [initiate an install from a web page](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Just like apps you install from the Microsoft Store or sideload using MDM’s LOB App deployment capability, apps need to be digitally signed with the [Sign Tool](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) and the [certificate used to sign must be trusted](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) by the HoloLens device before the app can be deployed.   
 
 ## Requirements
 
 ### For your devices: 
-This was added in [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) for HoloLens 2 devices. Please ensure any devices using this method are [updated](hololens-update-hololens.md). 
+This is currently avalible in [Windows Insider builds](hololens\hololens-insider.md) for HoloLens 2 devices. Please ensure any devices using this method are [updated](hololens-update-hololens.md). 
 
 ### For your apps: 
 Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
