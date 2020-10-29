@@ -49,7 +49,6 @@ Apps that are installed via this method must be digitally signed. You'll need to
 - MDM can be used to [apply certificates with device configurations](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
 - Use the on device [Certificate Manager](certificate-manager.md). 
 
-
 ## Installation method
 
 1.	Ensure that your HoloLens 2 device is powered on and you are signed in.
@@ -70,7 +69,6 @@ If your app failed to install check the following:
 - Your device is updated to a build on which this feature is available. 
 -	You are [connected to the internet](hololens-network.md).
 -	Your [endpoints for the Microsoft Store](hololens-offline.md) are correctly configured.  
-
 
 ## Web Installer
 

@@ -24,7 +24,9 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
+
 If you are looking for the list of features that were hosting on our Windows Insider builds we are happy to annouce that these features are no longer Insider only features but now generally avalible for all! 
+
 
 ## Start receiving Insider builds
 
