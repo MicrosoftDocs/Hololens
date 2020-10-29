@@ -25,10 +25,12 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 >[!NOTE]
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
-## Windows Holographic, version 2010
+## Windows Holographic, version 20H2
 - Build *TBD*
 
-Our Windows Holographic version 2010 Release is filled with many new features. These range from benefits for everyone such as Auto Eye Positioning, to new device management feature sets for Kiosk and newly enabled and created policies. Several existing experiences have also been improved such as Autopilot working with just Wi-Fi no longer need an adapter, Users being able to manage certificate installs on device using UI, and Kiosk mode now being able to be assigned on a device basis or be used offline. This new update will surely allow you to configure HoloLens devices to your reality.
+Windows Holographic, version 20H2 is a monthly update to version 2004, but this time we are including some great new features! The major build number will remain the same and Windows Update will indicate a monthly release to version 2004 (build 19041). You can look at your Build Number in your Settings -> About screen to confirm you are on the latest available build 19041.xxxx+
+
+Our Windows Holographic version 20H2 Release is filled with many new features. These range from benefits for everyone such as Auto Eye Positioning, to new device management feature sets for Kiosk and newly enabled and created policies. Several existing experiences have also been improved such as Autopilot working with just Wi-Fi no longer need an adapter, Users being able to manage certificate installs on device using UI, and Kiosk mode now being able to be assigned on a device basis or be used offline. This new update will surely allow you to configure HoloLens devices to your reality.
 
 | Feature                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -64,7 +66,7 @@ In HoloLens 2, eye positions enable accurate hologram positioning, comfortable v
 
 There are a few system behavior changes with Auto Eye Position feature when an uncalibrated user puts on the device. An uncalibrated user refers to someone who has not gone through the eye tracking calibration process on the device previously.
 
-|     Active Application                           |     Old Behavior                                   |     Behavior for Windows Holographic version 2010 onwards                                                     |
+|     Active Application                           |     Old Behavior                                   |     Behavior for Windows Holographic version 20H2 onwards                                                     |
 |--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 |     Non-gaze enabled app or Holographic Shell    |     Eye tracking calibration prompt is displayed.    |     No prompt is displayed.                                                                                |
 |     Gaze enabled app                             |     Eye tracking calibration prompt is displayed.    |     Eye tracking calibration prompt is   displayed only when the application accesses eye gaze stream.     |
@@ -79,7 +81,7 @@ This information can be found later with [other calibration information](hololen
 
 - Improved auditing, diagnosis, and validation tooling for device security and compliance through the new Certificate Manager. This capability will enable you to deploy, troubleshoot, and validate your certificates at scale in commercial environments.
 
-In Windows Holographic version 2010, we are adding a Certificate Manager in the HoloLens 2 Settings app. Go to **Settings > Update & Security > Certificates**. This feature provides a simple and user-friendly way to view, install and remove certificates on your device. With the new Certificate Manager, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant. 
+In Windows Holographic version 20H2, we are adding a Certificate Manager in the HoloLens 2 Settings app. Go to **Settings > Update & Security > Certificates**. This feature provides a simple and user-friendly way to view, install and remove certificates on your device. With the new Certificate Manager, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant. 
 
 -	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
 -	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
@@ -181,7 +183,7 @@ Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an a
 ### Tenantlockdown CSP and Autopilot
 - Keeps devices on the organization's tenant by locking them to the tenant even through device reset or reflash. With further security by disallowing account creation in via provisioning. 
 
-HoloLens 2 devices now support TenantLockdown CSP as of [Windows Holographic version 2010](hololens-release-notes.md#windows-holographic-version-2010). 
+HoloLens 2 devices now support TenantLockdown CSP as of [Windows Holographic version 20H2](hololens-release-notes.md#windows-holographic-version-20h2). 
 
 [TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP enables HoloLens 2 to be tied to MDM enrollment using Autopilot only. Once TenantLockdown CSP’s RequireNetworkInOOBE node is set to either true or false (initially set) value on HoloLens 2, that value remains on the device despite re-flashing, OS updates, etc. 
 
@@ -261,14 +263,14 @@ For an AAD configuration, users can achieve something similar to this today with
 ### Kiosk mode behavior changes for handling of failures
 - More secure Kiosk mode by eliminating available apps on Kiosk mode failures. 
 
-Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 2010 in the case of failures no apps will be shown in the start menu as below: 
+Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 20H2 in the case of failures no apps will be shown in the start menu as below: 
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens Policies
 - Device management options specifically for HoloLens created for managing the device. 
 
-New mixed reality policies have been created for HoloLens 2 devices on Windows Holographic version 2010. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
+New mixed reality policies have been created for HoloLens 2 devices on Windows Holographic version 20H2. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
 
 | New HoloLens policy                                | Description                                                                               | Notes                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|

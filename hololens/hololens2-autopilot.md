@@ -62,8 +62,8 @@ Please follow the steps below to set up your environment for the private preview
 
 Autopilot specific information per HoloLens OS releases.
 - In order to use Autopilot a device must have the [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) release or newer.
-- In order to use Autopilot by use of Wi-Fi a device must have the [Windows Holographic, version 2010](hololens-release-notes.md#windows-holographic-version-2010) release or newer. However these builds may still use ethernet adapters. 
-- On builds [Windows Holographic, version 2010](hololens-release-notes.md#windows-holographic-version-2010) a new device management option [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot) has been enabled.  
+- In order to use Autopilot by use of Wi-Fi a device must have the [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) release or newer. However these builds may still use ethernet adapters. 
+- On builds [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) a new device management option [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot) has been enabled.  
 
 If you would like to either confirm the build version on your device or update it, please connect it to your Windows 10 PC and launch [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8). 
 
@@ -72,7 +72,7 @@ If you would like to either confirm the build version on your device or update i
 - Ensure your device is on Windows Holographic, version 2004 (build 19041.1103 or later). If the latest OS is not pre-installed you must manually update using the [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab). You can find instructions [here](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). 
 - Your devices must be registered in Windows Autopilot. For information about how to register devices see [4. Register devices in Windows Autopilot](#4-register-devices-in-windows-autopilot). The recommended path is for your reseller or distributor to register devices for you.  
 - In the [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) release, devices need to be connected to the internet before turning on the HoloLens and initiating the Autopilot provisioning process. Connect your device to Ethernet using a "USB-C to Ethernet" adapter for wired internet connectivity.
-- In the [Windows Holographic, verison 2010](hololens-release-notes.md#windows-holographic-version-2010) release, devices may connect to Wi-Fi in OOBE to detect Autopilot. 
+- In the [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) release, devices may connect to Wi-Fi in OOBE to detect Autopilot. 
 - The devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune Portals.
 - To configure and manage the Autopilot self-deploying mode profiles, make sure that you have access to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
@@ -217,7 +217,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
    > Using Autopilot will have an effect on the [device owner](security-adminless-os.md#device-owner).
    
    > [!IMPORTANT]  
-   > Devices attempting to use Wi-Fi networks in OOBE for Autopilot must be on [Windows Holographic, verison 2010](hololens-release-notes.md#windows-holographic-version-2010).
+   > Devices attempting to use Wi-Fi networks in OOBE for Autopilot must be on [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2).
    >
    > For devices using ethernet adapters you must connect the device to the network before the Out-of-the-Box-Experience (OOBE) starts. The device determines whether it is provisioning as an Autopilot device while on the first OOBE screen. If the device cannot connect to the network, or if you choose not to provision the device as an Autopilot device, you cannot change to Autopilot provisioning at a later time. Instead, you would have to start this procedure over in order to provision the device as an Autopilot device.
 
@@ -239,7 +239,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 ## Tenantlockdown CSP and Autopilot
 - Keeps devices on the organization's tenant by locking them to the tenant even through device reset or reflash. With further security by disallowing account creation in via provisioning. 
 
-HoloLens 2 devices now support TenantLockdown CSP as of Windows Holographic version 2010. 
+HoloLens 2 devices now support TenantLockdown CSP as of Windows Holographic version 20H2. 
 
 [TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP enables HoloLens 2 to be tied to MDM enrollment using Autopilot only. Once TenantLockdown CSP’s RequireNetworkInOOBE node is set to either true or false (initially set) value on HoloLens 2, that value remains on the device despite re-flashing, OS updates, etc. 
 

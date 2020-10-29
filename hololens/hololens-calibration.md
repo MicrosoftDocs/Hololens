@@ -70,7 +70,7 @@ In HoloLens 2, eye positions enable accurate hologram positioning, comfortable v
 
 There are a few system behavior changes with Auto Eye Position feature when an uncalibrated user puts on the device. An uncalibrated user refers to someone who has not gone through the eye tracking calibration process on the device previously.
 
-|     Active Application                           |     Old Behavior                                   |     Behavior for Windows Holographic version 2010 onwards                                                     |
+|     Active Application                           |     Old Behavior                                   |     Behavior for Windows HWindows Holographic, version 20H2 onwards                                                     |
 |--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 |     Non-gaze enabled app or Holographic Shell    |     Eye tracking calibration prompt is displayed.    |     No prompt is displayed.                                                                                |
 |     Gaze enabled app                             |     Eye tracking calibration prompt is displayed.    |     Eye tracking calibration prompt is   displayed only when the application accesses eye gaze stream.     |

@@ -154,7 +154,7 @@ You can also share mixed reality photos and videos from OneDrive, by automatical
 
 ### Maximum recording length
 
-On HoloLens 2 devices before the Windows Holographic, version 2010 videos recorded on the device were limited to maximum length of five minutes.
+On HoloLens 2 devices before the Windows Holographic, version 20H2 videos recorded on the device were limited to maximum length of five minutes.
 
 Due to customer feedback we’ve increased the recording length of [mixed reality captures](holographic-photos-and-videos.md). Mixed reality captures will no longer be limited to 5 minutes by default but instead will calculate the maximum recording length based on available disk space. The device will estimate the max video recording duration based on available disk space up to 80% of the total disk space.
 

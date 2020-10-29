@@ -150,7 +150,7 @@ After you're done, select **Create**. It only takes a few seconds. When the pack
 
 HoloLens 2 devices on Windows Holographic, version 2004 or build [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) or later, may use a USB drive to apply a provisioning package. Simply copy the .ppkg file to the root of the USB drive. Provisioning packages will only be applied if they’re in the root of the USB drive. Multiple provisioning package present will be applied sequentially.
 
-HoloLens 2 devices on [Windows Holographic version 2010](hololens-release-notes.md#windows-holographic-version-2010) or later have newer features to help streamline and simplify this process making it automatic. Please review the following sections:
+HoloLens 2 devices on [Windows Holographic version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) or later have newer features to help streamline and simplify this process making it automatic. Please review the following sections:
 
 - [Auto-launch provisioning from USB](hololens-provisioning.md#auto-launch-provisioning-from-usb)
 - [Auto-confirm provisioning packages in OOBE](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)

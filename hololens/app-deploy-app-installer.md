@@ -33,7 +33,7 @@ Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
 ## Requirements
 
 ### For your devices: 
-This was added in [Windows Holographic, verison 2010](hololens-release-notes.md#windows-holographic-version-2010) for HoloLens 2 devices. Please ensure any devices using this method are [updated](hololens-update-hololens.md). 
+This was added in [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) for HoloLens 2 devices. Please ensure any devices using this method are [updated](hololens-update-hololens.md). 
 
 ### For your apps: 
 Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
