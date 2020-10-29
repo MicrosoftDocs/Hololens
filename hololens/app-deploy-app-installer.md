@@ -30,7 +30,7 @@ You are now able to install Apps without needing to enable Developer Mode or usi
 ## Requirements
 
 ### For your devices: 
-This is currently avalible in [Windows Insider builds](hololens\hololens-insider.md) for HoloLens 2 devices. Please ensure any devices using this method are [updated](hololens-update-hololens.md). 
+This is currently avalible in [Windows Insider builds](hololens-insider.md) for HoloLens 2 devices. Please ensure any devices using this method are [updated](hololens-update-hololens.md). 
 
 ### For your apps: 
 Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
