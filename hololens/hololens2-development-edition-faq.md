@@ -46,7 +46,7 @@ The PiXYZ Plugin reads and converts almost any format, optimizes and puts it in 
 
 ### When will financing for the HoloLens 2 Development Edition be available?
 
-Financing for HoloLens 2 Development Edition will be availability early 2021.
+Financing for HoloLens 2 Development Edition will be available early 2021.
 
 ### Who do I contact with questions about my HoloLens 2 Development Edition entitlements?
 
