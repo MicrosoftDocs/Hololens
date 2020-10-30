@@ -29,7 +29,7 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 | Warranty                                                |               ✔️               |             ✔️            |                ✔️               |
 | Can be used to develop apps                                 |               ✔️               |             ✔️            |                ✔️               |
 | $500 credit for Azure, including mixed reality services |                               |                          |                ✔️               |
-| Unity Pro & PiXYZ Plugin <br>(three months free)        |                               |                          |                ✔️               |
+| Unity Pro & Pixyz Plugin <br>(three months free)        |                               |                          |                ✔️               |
 | Device purchase limit                                   |              None             |           None           |          One per user          |
 
 ## Options Overview

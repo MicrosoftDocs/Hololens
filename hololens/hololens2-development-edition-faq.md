@@ -22,7 +22,7 @@ appliesto:
 
 ### What do I get with the HoloLens 2 Development Edition?
 
-The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro trial, and a 3-month PiXYZ Plugin trial.
+The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro trial, and a 3-month Pixyz Plugin trial.
 
 ### What is the difference between HoloLens 2 and HoloLens 2 Development Edition? 
 
@@ -32,7 +32,7 @@ You may only use the HoloLens 2 Development Edition for internal building and te
 
 Yes. Any edition of HoloLens 2 can be used to develop apps.
 
-### How and will I receive my $500 in Azure credits, 3-month Unity Pro trial, and 3-month PiXYZ Plugin trial?
+### How and will I receive my $500 in Azure credits, 3-month Unity Pro trial, and 3-month Pixyz Plugin trial?
 
 Your discount credits or trial access will be sent to the email used at purchase within 2 business days of product shipment.
 
@@ -40,9 +40,9 @@ Your discount credits or trial access will be sent to the email used at purchase
 
 Unity Pro is a real-time 3D platform for small/mid-sized studios/firms. It’s designed for teams with a mix of technical and non-technical skills. [Learn more](https://store.unity.com/products/unity-pro)
 
-### What is PiXYZ Plugin? 
+### What is Pixyz Plugin? 
 
-The PiXYZ Plugin reads and converts almost any format, optimizes and puts it in Unity, and stages it to provide ready-to-use assets for real-time applications. [Learn more](https://unity.com/products/pixyz)
+The Pixyz Plugin reads and converts almost any format, optimizes and puts it in Unity, and stages it to provide ready-to-use assets for real-time applications. [Learn more](https://unity.com/products/pixyz)
 
 ### When will financing for the HoloLens 2 Development Edition be available?
 
@@ -127,30 +127,30 @@ Yes, you can build applications with all compatible versions of Unity.
 
 To get help with any questions about your Unity ID, account, organization(s) and subscription(s), please visit support.unity3d.com.
 
-## PiXYZ
+## Pixyz
 
 ### What is included with my Pixyz Plugin trial?
 
-A 3-calendar month PiXYZ Plugin trial that enables access to PiXYZ to create ready-to-use assets with perfect tessellated meshes, limited polygon count, and automatic UV. The related PiXYZ plugin trial has no deadline to redeem.
+A 3-calendar month Pixyz Plugin trial that enables access to Pixyz to create ready-to-use assets with perfect tessellated meshes, limited polygon count, and automatic UV. The related Pixyz plugin trial has no deadline to redeem.
 
-This offering is for new users and does not stack on to established PiXYZ subscriptions. PiXYZ plugin may be subject to additional terms that will be made at redemption. Review applicable [terms &amp; conditions](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) and [privacy policy](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
+This offering is for new users and does not stack on to established Pixyz subscriptions. Pixyz plugin may be subject to additional terms that will be made at redemption. Review applicable [terms &amp; conditions](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) and [privacy policy](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
 
-### How can I redeem my PiXYZ Plugin trial?
+### How can I redeem my Pixyz Plugin trial?
 
 Directions to redeem
 
 1. Visit id.unity.com
-2. Sign in with your PiXYZ or create an account
+2. Sign in with your Pixyz or create an account
 3. Click &#39;Redeem a product code&#39;
 4. Enter product code, and click &#39;Redeem a product code&#39;
 
 Visit HoloLens 2 Development Edition documentation to [Learn more](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
 
-### How do I contact PiXYZ support?
+### How do I contact Pixyz support?
 
 To get help with any questions about your Unity ID, account, organization(s) and subscription(s), please visit support.unity3d.com
 
-For PiXYZ-specific support (after redeeming your trial), please visit [PiXYZ-software.com/support](http://pixyz-software.com/support)
+For Pixyz-specific support (after redeeming your trial), please visit [Pixyz-software.com/support](http://pixyz-software.com/support)
 
 
 ## Azure
