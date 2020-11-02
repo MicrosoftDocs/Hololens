@@ -1,9 +1,9 @@
 # [HoloLens 2](#tab/device)
 
 ## 1. Getting started
-Learn about the [HoloLens 2 (device only) edition](https://www.microsoft.com/hololens/buy). You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
+You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization. 
 
-Every HoloLens 2 edition will ship with the same [content in the box](../hololens2-hardware.md#hololens-components) with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software). Each HoloLens will share the same core OS and have the same [security](https://docs.microsoft.com/hololens/security-overview).
+Every HoloLens 2 edition has the same hardware, the same [content in the box](../hololens2-hardware.md#hololens-components) and comes with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software).
 
 ## 2. Deploy HoloLens devices in your organization
 This section will get you and your organization ready to deploy HoloLens devices. 
@@ -60,13 +60,12 @@ This section will get you and your organization ready to deploy HoloLens devices
 # [HoloLens 2 with Dynamics 365 Remote Assist](#tab/remoteassist)
 
 ## 1. Learn about HoloLens 2 with Dynamics 365 Remote Assist
-Learn about the  [HoloLens 2 with Dynamics 365 Remote Assist edition](https://www.microsoft.com/hololens/buy)
 - You can choose to use these devices in a commercial environment for your business. Order as many as you need.
 - One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Every HoloLens 2 edition will ship with the same [content in the box](../hololens2-hardware.md#hololens-components) with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software). Each HoloLens will share the same core OS and have the same [security](https://docs.microsoft.com/hololens/security-overview).
+Every HoloLens 2 edition has the same hardware, the same [content in the box](../hololens2-hardware.md#hololens-components) and comes with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software).
 
 ## 2. Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
 
@@ -116,6 +115,68 @@ This section will get you and your organization ready to deploy HoloLens devices
 |  [Start developing for HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)         | Build a mixed reality solution to fit your needs.                                                 |
 
 
+# [HoloLens 2 Development Edition](#tab/developeredition)
+
+## 1. Learn about the Development Edition
+
+> [!NOTE] 
+> The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
+
+The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month PiXYZ plugin trial:
+
+| Bundle feature | Description |
+|---|---|
+|  [Unity](https://unity.com/) | A real-time 3D development platform.   |
+|  [Pixyz plug-in for Unity](https://www.pixyz-software.com/plugin/) | A bridge for connecting the engineering &amp; CAD worlds with the development world.   |
+| [$500 in Azure credits for Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
+
+Every HoloLens 2 edition has the same hardware, the same [content in the box](../hololens2-hardware.md#hololens-components) and comes with the same [pre-installed software](../hololens2-hardware.md#pre-installed-software).
+
+## 2. Redeem your credits
+
+### Unity
+You'll have received a unique code. Directions to redeem Unity Pro trial: 
+1. Visit [id.unity.com](http://id.unity.com/) 
+1. Sign in with your Unity ID or create one
+1. Click **Redeem a product code** 
+1. Enter product code, and click **Redeem a product code**
+
+More details on [How to activate a Unity license](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-). Contact [Unity Support](https://support.unity3d.com/hc) for help as needed.  
+
+### Pixyz
+You'll have received a unique code. Directions to redeem Pixyz Plugin trial: 
+1. Visit [id.unity.com](http://id.unity.com/)
+1. Click **Redeem a product code**
+1. Enter your Pixyz Plugin product code, and click **Redeem a product code**
+
+More details on how to [Redeem your Pixyz license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Contact [Pixyz Support](https://www.pixyz-software.com/support/) for help as needed. 
+
+### Azure
+Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
+How to redeem Azure credits:
+To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. [Learn more.](../hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+
+- [Learn how Azure Spatial Anchors can help you build apps that map, share, and persist 3D content](https://azure.microsoft.com/services/spatial-anchors/)
+- [Learn how Azure Remote Rendering can render high-quality, interactive 3D content, and stream it to your devices in real time](https://azure.microsoft.com/services/remote-rendering/)
+
+## 3. Get started Developing
+
+Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem - it's time to create.
+
+|     Checkpoint                              |     Outcome                                                                                                                    | 
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+|     [Start Designing and Prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Start your adventure into designing Mixed Reality applications across core concepts, interaction models, and UX elements.     |
+|     [Start Developing for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Choose your engine, download your tools, add core building blocks, and start building today.                                  |
+|     [Explore Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Build compelling immersive experiences with Azure Remote Rendering and Azure Spatial Anchors.                                 |
+
+## Additional Resources
+- [Make sure to install the tools for HoloLens development.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) 
+- [Learn about developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+- [Learn about how to combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
+- [Learn how to deploy your built apps](https://docs.microsoft.com/hololens/app-deploy-overview). 
+- [Explore the all the possibilities for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
+- [Learn about developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- [Reach out to your fellow developers on our HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
 
 
 
