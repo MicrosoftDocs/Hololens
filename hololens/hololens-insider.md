@@ -102,17 +102,25 @@ The certificate should now be installed on the device.
 ![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
 
 ### Install Apps on HoloLens 2 via App Installer
-In our Windows insider release, we are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices.  You are now able to install Apps without needing to enable Developer Mode or using Device Portal.  Simply download (over USB or through Edge) the Appx Bundle to your device and navigate to the Appx Bundle in the File Explorer to be prompted to kick off the installation.  Alternatively, [initiate an install from a web page](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Just like apps you install from the Microsoft Store or sideload using MDM’s LOB App deployment capability, apps need to be digitally signed with the [Sign Tool](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) and the [certificate used to sign must be trusted](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) by the HoloLens device before the app can be deployed. Note: You have full control to disable this new path of app installation by disabling the App Installer using [Windows Defender Application Control – WDAC CSP](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens), blocking Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+We will ship the app installer capability soon after our next feature update. We are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will be **not be available for managed devices** at this time.  
+
+A device is considered “managed” if **any** of the following are true:
+- MDM [Enrolled](hololens-enroll-mdm.md)
+- Configured with [provisioning package](hololens-provisioning.md)
+- User [Identity](hololens-identity.md) is AAD
+
+You are now able to install Apps without needing to enable Developer Mode or using Device Portal.  Simply download (over USB or through Edge) the Appx Bundle to your device and navigate to the Appx Bundle in the File Explorer to be prompted to kick off the installation.  Alternatively, [initiate an install from a web page](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Just like apps you install from the Microsoft Store or sideload using MDM’s LOB App deployment capability, apps need to be digitally signed with the [Sign Tool](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) and the [certificate used to sign must be trusted](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) by the HoloLens device before the app can be deployed.
 
 **Application install instructions.**
 
-1.	Ensure that your HoloLens 2 device is powered on and connected to your PC
-2.	Ensure that you are signed into the HoloLens 2 device
-3.	On your PC navigate to your custom app, and copy yourapp.appxbundle to yourdevicename\Internal Storage\Downloads.   After you’ve finished copying your file you can disconnect your device
-4.	From your HoloLens 2 device Open the Start Menu, select All apps and launch the File Explorer app.
-5.	Navigate to the Downloads folder. You may need to on the left panel of the app select This device first, then navigate to Downloads.
-6.	Select the yourapp.appxbundle file.
-7.	The App Installer will launch. Select the Install button to install your app.
+1.  Ensure that your device is not considered managed
+1.  Ensure that your HoloLens 2 device is powered on and connected to your PC
+1.  Ensure that you are signed into the HoloLens 2 device
+1.  On your PC navigate to your custom app, and copy yourapp.appxbundle to yourdevicename\Internal Storage\Downloads.   After you’ve finished copying your file you can disconnect your device
+1.  From your HoloLens 2 device Open the Start Menu, select All apps and launch the File Explorer app.
+1.  Navigate to the Downloads folder. You may need to on the left panel of the app select This device first, then navigate to Downloads.
+1.  Select the yourapp.appxbundle file.
+1.  The App Installer will launch. Select the Install button to install your app.
 The installed app will automatically launch upon completion of installation.
 
 You can find sample apps on [Windows Universal Samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) to test this flow.
