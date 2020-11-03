@@ -42,7 +42,7 @@ When planning your Kiosk you'll need to be able to answer the following question
 1. **Do you need to have either different Kiosks per user/group or a Kiosk not enabled for some?** If so, you'll want to create your Kiosk via XML. 
 1. **How many apps will be in your Kiosk?** If you have more than 1 app, you'll need a multi-app Kiosk. 
 1. **Which app(s) will be in your Kiosk?** Please use our list of AUMIDs below to add any In-Box apps in addition to your own.
-1. **How do you plan to deploy your Kiosk?** If you are enrolling device in MDM then we suggest using MDM to deploy your Kiosk. If you are not using MDM then deployment with Provisioning Package is available. 
+1. **How do you plan to deploy your Kiosk?** If you are enrolling device in MDM then we suggest using MDM to deploy your Kiosk. If you are not using MDM then deployment with Provisioning Package is available.  
 
 ### Kiosk mode requirements
 
