@@ -36,6 +36,10 @@ Yes. Any edition of HoloLens 2 can be used to develop apps.
 
 Your discount credits or trial access will be sent to the email used at purchase within 2 business days of product shipment.
 
+### Can I "upgrade" my HoloLens 2 (device only) device to the HoloLens 2 Development Edition to get the trial credits?
+
+No, we do not offer device transfer plans.
+
 ### What is Unity Pro? 
 
 Unity Pro is a real-time 3D platform for small/mid-sized studios/firms. It’s designed for teams with a mix of technical and non-technical skills. [Learn more](https://store.unity.com/products/unity-pro)
@@ -56,13 +60,17 @@ With any questions related to entitlements, please contact your sales specialist
 
 This device is for developers building mixed reality solutions. We limit one purchase per customer transaction. If your company wants to buy multiple Development Edition devices, it will require separate transactions to purchase HoloLens 2 Development Edition devices on behalf of the company. 
 
+### Can I show my HoloLens 2 Development Edition device to my customers? 
+
+Yes, this device is intended to be used for prototyping and testing mixed reality solutions.
+
 ### Where can I buy the HoloLens 2 Development Edition? 
 
 HoloLens 2 Development Edition is sold exclusively on Microsoft Store.  
 
 ### Can I return my HoloLens 2 Development Edition?  
 
-No.
+All sales are final and there are no refunds available on HoloLens 2 Development Edition.
 
 ### Does Developer Edition have different hardware requirements that differ from the HoloLens 2?
 
