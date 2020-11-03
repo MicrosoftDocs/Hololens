@@ -38,7 +38,7 @@ Your discount credits or trial access will be sent to the email used at purchase
 
 ### Can I "upgrade" my HoloLens 2 (device only) device to the HoloLens 2 Development Edition to get the trial credits?
 
-No, we do not offer device transfer plans.
+No, we do not offer device transfer plans. There is no ability to transfer from any edition to any other edition. 
 
 ### What is Unity Pro? 
 
