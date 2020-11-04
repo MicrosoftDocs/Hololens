@@ -86,11 +86,11 @@ VPN is not enabled by default but can be enabled manually by opening **Settings*
 
 
 ### Setting up VPN via Intune
-Just follow the Intune documents here:
-[Create VPN profiles to connect to VPN servers in Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure)
-When following these steps please keep in mind that HoloLens devices supported Built-in VPN protocols. 
+Just follow the Intune documents to get started. When following these steps please keep in mind the built-in VPN protocols that HoloLens devices support. 
 
-[Windows 10 and Windows Holographic device settings to add VPN connections using Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10)
+[Create VPN profiles to connect to VPN servers in Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure).
+
+[Windows 10 and Windows Holographic device settings to add VPN connections using Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10).
 
 When done please remember to [assign the profile](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).
 
