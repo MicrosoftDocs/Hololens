@@ -60,3 +60,14 @@ This feature allows a user who is considered “[Device owner](security-adminles
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
  
+## Additional Global Assigned Access Examples
+
+This is a Global Assigned Access kiosk that when any user signs in they will have a multi-app kiosk with the Settings App, Feedback Hub, and Edge.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
+
+This is a Global Assigned Access kiosk that excludes the device owner, when any other AAD user signs in they will have a multi-app kiosk with the Settings App, Feedback Hub, and Edge. This kiosk also includes a secondary kiosk configuration for a Visitor account, which may be signed into by anyone on the lock screen. When a user signs into the Visitor account they will have a multi-app kiosk that only has the Feedback Hub app.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::
+
+
