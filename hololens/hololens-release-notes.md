@@ -356,11 +356,14 @@ Due to customer feedback we’ve increased the recording length of [mixed realit
 This information can be found again [here](holographic-photos-and-videos.md#maximum-recording-length). 
 
 ### Improvements and fixes in the update:
-- Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
 - More screens in OOBE  are now in dark mode.
 - Learn more content should point to the latest Privacy Statement online.
 - Addressed an issue where users could not provision VPN profiles through provisioning packages.
+- Fixed proxy configuration issue for VPN connection.
+- Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
 - Addressed an issue that prevented a HoloLens device from showing up in File Explorer over Media Transfer Protocol (MTP) when the device is set up as a [single-app kiosk](hololens-kiosk.md). Note that MTP (and USB connection in general) can still be disabled using the [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) policy.
+- Fixed an issue where icons in the Start menu were scaled correctly in Kiosk mode.
+- Fixed an issue due to HTTP caching interfering with kiosk mode targeted to AAD groups.
 - Fixed an issue where users were unable to use the Pair button after enabling Developer mode with provisioning packages unless they disabled and re-enabled Developer mode.
 
 ## Windows Holographic, version 2004 - October 2020 Update
