@@ -26,7 +26,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
 ## Windows Holographic, version 20H2
-- Build *TBD*
+- Build 19041.1127
 
 Windows Holographic, version 20H2 is a monthly update to version 2004, but this time we are including some great new features! The major build number will remain the same and Windows Update will indicate a monthly release to version 2004 (build 19041). You can look at your Build Number in your Settings -> About screen to confirm you are on the latest available build 19041.xxxx+
 
@@ -365,6 +365,10 @@ This information can be found again [here](holographic-photos-and-videos.md#maxi
 - Fixed an issue where icons in the Start menu were scaled correctly in Kiosk mode.
 - Fixed an issue due to HTTP caching interfering with kiosk mode targeted to AAD groups.
 - Fixed an issue where users were unable to use the Pair button after enabling Developer mode with provisioning packages unless they disabled and re-enabled Developer mode.
+
+## Windows Holographic, version 1903 - November 2020 Update
+Build 18362.1084
+This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest Windows Holographic, version 20H2 which is a feature release build.
 
 ## Windows Holographic, version 2004 - October 2020 Update
 - Build 19041.1124
