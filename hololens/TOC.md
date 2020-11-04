@@ -12,6 +12,8 @@
 ### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 ### [Supported languages for HoloLens 2](hololens2-language-support.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
+### [HoloLens Development Edition FAQ](hololens2-development-edition-faq.md)
+
 
 ## Get started with HoloLens (1st gen)
 ### [HoloLens (1st gen) hardware](hololens1-hardware.md)
@@ -69,7 +71,9 @@
 ### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
 ### [Common Device Restrictions](hololens-common-device-restrictions.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
+### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
 ### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
+### [Page Settings CSP and URIs for HoloLens](settings-uri-list.md)
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ### [Share HoloLens with multiple people](hololens-multiple-users.md)
@@ -108,4 +112,5 @@
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ### [App Installer](app-deploy-app-installer.md)
 ## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
+
 # [Give us feedback](hololens-feedback.md)
