@@ -367,8 +367,9 @@ This information can be found again [here](holographic-photos-and-videos.md#maxi
 - Fixed an issue where users were unable to use the Pair button after enabling Developer mode with provisioning packages unless they disabled and re-enabled Developer mode.
 
 ## Windows Holographic, version 1903 - November 2020 Update
-Build 18362.1084
-This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest Windows Holographic, version 20H2 which is a feature release build.
+- Build 18362.1084
+
+This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest feature release build Windows Holographic, version 20H2.
 
 ## Windows Holographic, version 2004 - October 2020 Update
 - Build 19041.1124
