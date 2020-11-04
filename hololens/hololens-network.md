@@ -66,6 +66,13 @@ Learn more about [how to configure VPN](https://support.microsoft.com/help/20510
 ### VPN via UI
 
 VPN is not enabled by default but can be enabled manually by opening **Settings** app and navigating to  **Network & Internet -> VPN**.
+1. Select a VPN provider.
+1. Create a connection name. 
+1. Enter your server name or address.
+1. Select the VPN type.
+1. Select type of sign-in info. 
+1. Optionally add user name and password.
+1. Apply the VPN settings. 
 
 ![HoloLens VPN settings](./images/vpn-settings-ui.jpg)
 
