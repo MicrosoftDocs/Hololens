@@ -17,6 +17,9 @@ appliesto:
 
 # Connect to Bluetooth and USB-C devices
 
+> [!NOTE]
+> External microphones cannot be used. HoloLens 2 uses its built-in [microphone array](hololens2-hardware.md#audio-and-speech).
+
 ## Pair Bluetooth devices
 
 HoloLens 2 supports the following classes of Bluetooth devices:
@@ -24,9 +27,6 @@ HoloLens 2 supports the following classes of Bluetooth devices:
 - Mouse
 - Keyboard
 - Bluetooth audio output (A2DP) devices
-
-> [!NOTE]
-> External microphones cannot be used. HoloLens 2 uses its built-in [microphone array](hololens2-hardware.md#audio-and-speech).
 
 HoloLens (1st gen) supports the following classes of Bluetooth devices:
 
