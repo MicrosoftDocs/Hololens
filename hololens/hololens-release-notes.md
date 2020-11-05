@@ -26,9 +26,9 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
 ## Windows Holographic, version 20H2
-- Build 19041.1127
+- Build 19041.1128
 
-Windows Holographic, version 20H2 is a monthly update to version 2004, but this time we are including some great new features! The major build number will remain the same and Windows Update will indicate a monthly release to version 2004 (build 19041). You can look at your Build Number in your Settings -> About screen to confirm you are on the latest available build 19041.xxxx+
+Windows Holographic, version 20H2 is a monthly update to version 2004, but this time we are including some great new features! The major build number will remain the same and Windows Update will indicate a monthly release to version 2004 (build 19041). You can look at your Build Number in your Settings -> About screen to confirm you are on the latest available build 19041.1128+
 
 Our Windows Holographic version 20H2 Release is filled with many new features. These range from benefits for everyone such as Auto Eye Positioning, to new device management feature sets for Kiosk and newly enabled and created policies. Several existing experiences have also been improved such as Autopilot working with just Wi-Fi no longer need an adapter, Users being able to manage certificate installs on device using UI, and Kiosk mode now being able to be assigned on a device basis or be used offline. This new update will surely allow you to configure HoloLens devices to your reality.
 
@@ -367,7 +367,7 @@ This information can be found again [here](holographic-photos-and-videos.md#maxi
 - Fixed an issue where users were unable to use the Pair button after enabling Developer mode with provisioning packages unless they disabled and re-enabled Developer mode.
 
 ## Windows Holographic, version 1903 - November 2020 Update
-- Build 18362.1084
+- Build 18362.1085
 
 This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest feature release build Windows Holographic, version 20H2.
 
