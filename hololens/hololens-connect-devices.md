@@ -61,6 +61,14 @@ HoloLens (1st gen) supports the following classes of Bluetooth devices:
    
 1. On the pairing screen, select **Clicker** > **Pair**.
 
+## Disable Bluetooth
+
+This procedure turns off the RF components of the Bluetooth radio and disables all Bluetooth functionality on Microsoft HoloLens.
+
+1. Use the bloom gesture (HoloLens (1st gen)) or the start gesture (HoloLens 2) to go to **Start**, and then select **Settings** > **Devices**.
+
+1. Move the slider switch for **Bluetooth** to the **Off** position.
+
 ## HoloLens 2: Connect USB-C devices
 
 HoloLens 2 supports the following classes of USB-C devices:
@@ -90,11 +98,3 @@ To use Miracast, follow these steps:
 1. On the list of devices that appears, select an available device.
 
 1. Complete the pairing to begin projecting.
-
-## Disable Bluetooth
-
-This procedure turns off the RF components of the Bluetooth radio and disables all Bluetooth functionality on Microsoft HoloLens.
-
-1. Use the bloom gesture (HoloLens (1st gen)) or the start gesture (HoloLens 2) to go to **Start**, and then select **Settings** > **Devices**.
-
-1. Move the slider switch for **Bluetooth** to the **Off** position.
