@@ -135,7 +135,7 @@ Similar to other mobile devices, connect your HoloLens to your PC to bring up Fi
 Tips:
 - If you don't see any files, please ensure you sign in to your HoloLens to enable access to your data.
 - You can get other files in other folders, such as [diagnostics files](hololens-diagnostic-logs.md#offline-diagnostics) from the Documents folder.
-- From File Explorer on your PC, you can select Device properties to see Windows Holographic OS version number (firmware version) and device serial number and battery percentage.
+- From File Explorer on your PC, you can select Device properties to see Windows Holographic OS version number (firmware version), device serial number, and battery percentage.
 - If your Organization has used MDM to disable [Connectivity/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) then you will be unable to connect to your device.
 
 ## Share your mixed reality photos and videos
