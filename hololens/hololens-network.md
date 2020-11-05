@@ -78,6 +78,9 @@ VPN is not enabled by default but can be enabled manually by opening **Settings*
 
 ### VPN set via Provisioning Package
 
+> [!TIP] 
+> In our Windows Holographic, version 20H2 we fixed a proxy configuration issue for VPN connection. Please consider upgrading devices to this build if you intend to use this flow.
+
 1. Launch Windows Configuration Designer.
 1. Click **Provision HoloLens devices**, then select target device and **Next**.
 1. Enter package name and path.
