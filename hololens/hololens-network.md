@@ -59,9 +59,141 @@ Supported Built-in VPN protocols:
 
 If certificate is used for authentication for built-in VPN client, the required client certificate needs to be added to user certificate store. To find if a 3rd party VPN plug-in supports HoloLens 2, go to Store to locate VPN app and check if HoloLens is listed as a supported device and in the System Requirement page the app supports ARM or ARM64 architecture. HoloLens only supports Universal Windows Platform applications for 3rd party VPN.
 
-VPN is not enabled by default but can be enabled manually by opening **Settings** app and navigating to  **Network & Internet -> VPN**. VPN can be managed by MDM via [Settings/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn), and set via  [Vpnv2-csp policy](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp).
+ VPN can be managed by MDM via [Settings/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn), and set via  [Vpnv2-csp policy](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp).
+
 Learn more about [how to configure VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn) with [these guides](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide).  
 
+### VPN via UI
+
+VPN is not enabled by default but can be enabled manually by opening **Settings** app and navigating to  **Network & Internet -> VPN**.
+1. Select a VPN provider.
+1. Create a connection name. 
+1. Enter your server name or address.
+1. Select the VPN type.
+1. Select type of sign-in info. 
+1. Optionally add user name and password.
+1. Apply the VPN settings. 
+
+![HoloLens VPN settings](./images/vpn-settings-ui.jpg)
+
+### VPN set via Provisioning Package
+
+> [!TIP] 
+> In our Windows Holographic, version 20H2 we fixed a proxy configuration issue for VPN connection. Please consider upgrading devices to this build if you intend to use this flow.
+
+1. Launch Windows Configuration Designer.
+1. Click **Provision HoloLens devices**, then select target device and **Next**.
+1. Enter package name and path.
+1. Click **Switch to advanced editor**.
+1. Open **Runtime settings** -> **ConnectivityProfiles** -> **VPN** -> **VPNSettings**.
+1. Configure VPNProfileName
+1. Select ProfileType: **Native** or **Third Party**.
+    1. For Native profile, select **NativeProtocolType**, then configure server, routing policy, authentication type and other settings.
+    1. For "Third Party" profile, configure server URL, VPN plug-in App package family name (only 3 predefined) and custom configurations.
+1. Export your package.
+1. Connect your HoloLens and copy the .ppkg file to the device. 
+1. On HoloLens, apply the VPN .ppkg by opening the Start menu and selecting **Settings** -> **Account** -> **Access work or school** -> **Add or remove provisioning package** -> Select your VPN package.
+
+
+### Setting up VPN via Intune
+Just follow the Intune documents to get started. When following these steps please keep in mind the built-in VPN protocols that HoloLens devices support. 
+
+[Create VPN profiles to connect to VPN servers in Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure).
+
+[Windows 10 and Windows Holographic device settings to add VPN connections using Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10).
+
+When done please remember to [assign the profile](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).
+
+### VPN via 3rd party MDM solutions
+3rd party VPN connection example:
+```xml
+<!-- Configure VPN Server Name or Address (PhoneNumber=) [Comma Separated]-->
+      <Add>
+        <CmdID>10001</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/ServerUrlList</LocURI>
+          </Target>
+          <Data>selfhost.corp.contoso.com</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure VPN Plugin AppX Package ID (ThirdPartyProfileInfo=) -->
+      <Add>
+        <CmdID>10002</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/PluginPackageFamilyName</LocURI>
+          </Target>
+          <Data>TestVpnPluginApp-SL_8wekyb3d8bbwe</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure Microsoft's Custom XML (ThirdPartyProfileInfo=) -->
+      <Add>
+        <CmdID>10003</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/CustomConfiguration</LocURI>
+          </Target>          <Data><pluginschema><ipAddress>auto</ipAddress><port>443</port><networksettings><routes><includev4><route><address>172.10.10.0</address><prefix>24</prefix></route></includev4></routes><namespaces><namespace><space>.vpnbackend.com</space><dnsservers><server>172.10.10.11</server></dnsservers></namespace></namespaces></networksettings></pluginschema></Data>
+        </Item>
+      </Add>
+```
+
+Native IKEv2 VPN example:
+```xml
+      <Add>
+        <CmdID>10001</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Servers</LocURI>
+          </Target>
+          <Data>Selfhost.corp.contoso.com</Data>
+        </Item>
+      </Add>
+
+      <Add>
+        <CmdID>10002</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/RoutingPolicyType</LocURI>
+          </Target>
+          <Data>ForceTunnel</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure VPN Protocol Type (L2tp, Pptp, Ikev2) -->
+      <Add>
+        <CmdID>10003</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/NativeProtocolType</LocURI>
+          </Target>
+          <Data>Ikev2</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure VPN User Method (Mschapv2, Eap) -->
+      <Add>
+        <CmdID>10004</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/UserMethod</LocURI>
+          </Target>
+          <Data>Eap</Data>
+        </Item>
+      </Add>
+
+      <Add>
+        <CmdID>10004</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/Eap/Configuration</LocURI>
+          </Target>
+          <Data>EAP_configuration_xml_content</Data>
+        </Item>
+      </Add>
+```
 ## Disabling Wi-Fi on HoloLens (1st gen)
 
 ### Using the Settings app on HoloLens
