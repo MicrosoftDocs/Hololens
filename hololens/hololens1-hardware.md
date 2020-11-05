@@ -166,7 +166,7 @@ To clean the rest of the device, including the headband and device arms, use a l
 ## Finding the Serial number
 
 The serial number for HoloLens (1st gen) devices is printed underneath the right lens.
-1. Hold the device in front of you as if you were going to wear it.
+1. Hold the device in front of you as if you were going to wear it upon your head. With the device facing forward and upright.
 1. With the lens still facing forward, flip the deivce upside down so you see the underside.
 1. The right lens will now be on the left, printed under the lens on the band is the serial number. 
 
