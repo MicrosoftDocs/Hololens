@@ -121,8 +121,8 @@ Server root CA certificate and client certificate may need to be provisioned on 
 
 Additional resources:
 
-- WLANv1Profile Schema: [[MS-GPWL]: Wireless LAN Profile v1 Schema | Microsoft Docs](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
-- EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
+- WLANv1Profile Schema: [[MS-GPWL]: Wireless LAN Profile v1 Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
+- EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
 ### EAP Troubleshooting
 
@@ -134,8 +134,8 @@ Additional resources:
    1. If the EAP identity provided by HoloLens is not expected, check whether the identity has been correctly provisioned through Wi-Fi profile or client certificate.
    1. If server rejects HoloLens client certificate, check whether the required client certificate has been provisioned on the device.
    1. If HoloLens rejects server certificate, check if the server root CA certificate has been provisioned on HoloLens.
-1. If the enterprise profile is provisioned through Wi-Fi provisioning package, consider applying the provisioning package on a Windows 10 PC. If it also fails on Windows 10 PC, follow the [Windows client 802.1X authentication troubleshooting guide](https://docs.microsoft.com/en-us/windows/client-management/advanced-troubleshooting-802-authentication).
-1. Send us feedback through [Feedback Hub](https://docs.microsoft.com/en-us/hololens/hololens-feedback).
+1. If the enterprise profile is provisioned through Wi-Fi provisioning package, consider applying the provisioning package on a Windows 10 PC. If it also fails on Windows 10 PC, follow the [Windows client 802.1X authentication troubleshooting guide](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication).
+1. Send us feedback through [Feedback Hub](https://docs.microsoft.com/hololens/hololens-feedback).
 
 
 ## VPN
