@@ -28,9 +28,11 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 ## Windows Holographic, version 20H2
 - Build 19041.1128
 
-Windows Holographic, version 20H2 is a monthly update to version 2004, but this time we are including some great new features! The major build number will remain the same and Windows Update will indicate a monthly release to version 2004 (build 19041). You can look at your Build Number in your Settings -> About screen to confirm you are on the latest available build 19041.1128+
+Windows Holographic, version 20H2 is now available and brings a great set of new features to HoloLens 2 users and IT professionals. From Auto Eye Positioning, to Certificate Manager in Settings, to improved Kiosk Mode functionality, and new Autopilot setup capabilities. This new update enables IT teams to take more granular control to configuring and managing HoloLens devices, and offers users even more seamless holographic experiences. 
 
-Our Windows Holographic version 20H2 Release is filled with many new features. These range from benefits for everyone such as Auto Eye Positioning, to new device management feature sets for Kiosk and newly enabled and created policies. Several existing experiences have also been improved such as Autopilot working with just Wi-Fi no longer need an adapter, Users being able to manage certificate installs on device using UI, and Kiosk mode now being able to be assigned on a device basis or be used offline. This new update will surely allow you to configure HoloLens devices to your reality.
+This latest release is a monthly update to version 2004, but this time we are including new features. The major build number will remain the same and Windows Update will indicate a monthly release to version 2004 (build 19041). You can look at your Build Number in your Settings > About screen to confirm you are on the latest available build 19041.1128+. To update to the latest release, open the Settings app, go to Update & Security, and tap Check for Updates. For more information on how to manage HoloLens updates, visit [this page](https://docs.microsoft.com/hololens/hololens-updates).
+
+### What’s new in Windows Holographic, version 20H2  
 
 | Feature                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -156,7 +158,7 @@ This information can be found later [here.](hololens-provisioning.md#automatic-p
 ### Using Autopilot with Wi-Fi connection
 - Removed need for USB-C adapters to ethernet reducing hardware needs, by enabling Autopilot to function on Wi-Fi connected devices.
 
-Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB C or wifi to USB C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
+Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an Autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB-C or Wi-Fi to USB-C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
 
 ### Tenantlockdown CSP and Autopilot
 - Keeps devices on the organization's tenant by locking them to the tenant even through device reset or reflash. With further security by disallowing account creation in via provisioning. 
