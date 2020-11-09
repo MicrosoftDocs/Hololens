@@ -2,6 +2,21 @@
 
 
 
+## Week of November 02, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/2/2020 | [Setting up your HoloLens 2 edition](/hololens/hololens2-options) | modified |
+| 11/2/2020 | [How to side load and Install Apps via HoloLens 2 App Installer](/hololens/app-deploy-app-installer) | modified |
+| 11/2/2020 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 11/3/2020 | [HoloLens 2 Development Edition FAQ](/hololens/hololens2-development-edition-faq) | modified |
+| 11/4/2020 | [Global Assigned Access](/hololens/hololens-global-assigned-access-kiosk) | modified |
+| 11/4/2020 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
+| 11/4/2020 | [Connect to Bluetooth and USB-C devices](/hololens/hololens-connect-devices) | modified |
+| 11/5/2020 | [Connect to Bluetooth and USB-C devices](/hololens/hololens-connect-devices) | modified |
+
+
 ## Week of October 26, 2020
 
 
@@ -51,12 +66,3 @@
 | 10/6/2020 | [security adminless os](/hololens/security-adminless-os) | modified |
 | 10/7/2020 | [Setting up your HoloLens 2 edition](/hololens/hololens2-options) | modified |
 | 10/8/2020 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
-
-
-## Week of September 28, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/29/2020 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 10/1/2020 | [Global Assigned Access](/hololens/hololens-global-assigned-access-kiosk) | modified |
