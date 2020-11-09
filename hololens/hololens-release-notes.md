@@ -43,7 +43,6 @@ Our Windows Holographic version 20H2 Release is filled with many new features. T
 | [Tenantlockdown CSP and Autopilot](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | After tenant enrollment and the policy is applied, the device can only be enrolled in that tenant any time the device is reset or   re-flashed. |
 | [Global Assigned Access](hololens-release-notes.md#global-assigned-access--kiosk-mode)                               | New configuration method for multiple app kiosk mode which applies the kiosk at the system level, making it applicable to all.                  |
 | [Auto-launch an app in multi-app kiosk](hololens-release-notes.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | Sets an application to launch automatically when signing into a multiple-app kiosk mode.                                                        |
-| [Visitor Auto-logon for Kiosks](hololens-release-notes.md#visitor-auto-logon-for-kiosks)          | When using Visitor accounts for Kiosk mode, users can now auto-logon.    |
 | [Kiosk mode behavior changes for handling of failures](hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode failure now has restrictive fallback.                                                                                                |
 | [HoloLens Policies](hololens-release-notes.md#hololens-policies)                                    | New policies for HoloLens.     |
 | [Cache AAD Group membership for offline Kiosk](hololens-release-notes.md#cache-aad-group-membership-for-offline-kiosk)         | New policy allows users to uses group membership cache to use Kiosk mode offline for set number of days.                                        |
@@ -225,20 +224,6 @@ Application is automatically launched when user signs-in.
     <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
-### Visitor Auto logon for Kiosks
-- Simplified use for Visitor Kiosks with enabling automated log-in.
-
-This new feature enables the auto logon on Visitor accounts to be used for Kiosk modes. 
-
-For a non-AAD configuration, to configure a device for visitor autologon:
-1.	Create a provisioning package that:
-    1.	Configures **Runtime settings/AssignedAccess** to allow Visitor accounts.
-    1.	Optionally enrolls the device in MDM **(Runtime settings/Workplace/Enrollments)** so that it can be managed later.
-    1.	Do not create a local account
-1.	[Apply the provisioning package](hololens-provisioning.md).
-
-For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
-
 ### Kiosk mode behavior changes for handling of failures
 - More secure Kiosk mode by eliminating available apps on Kiosk mode failures. 
 
@@ -282,7 +267,7 @@ Steps to use this policy correctly:
 1. Steps 4 and 5 can be repeated for any other AAD user N. Key point here is that any AAD user must sign-in to device using Internet so at least once we can determine that they are member of AAD group to which Kiosk configuration is targeted. 
  
 > [!NOTE]
-> Until step 4 is performed for a AAD user will experience failure behavior mentioned below in “disconnected” environments. 
+> Until step 4 is performed for a AAD user will experience failure behavior mentioned in “disconnected” environments. 
 
 ### New device restriction policies for HoloLens 2
 - Allows users to manage specific device management policies such as blocking adding or removing provisioning packages.
