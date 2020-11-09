@@ -460,7 +460,7 @@ Application is automatically launched when user signs-in.
 <AllowedApps>                     
       <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 </AllowedApps>
-
+```
 
 
 ### Kiosk mode behavior changes for handling of failures
