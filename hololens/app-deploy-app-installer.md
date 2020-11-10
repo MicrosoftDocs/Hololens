@@ -5,7 +5,7 @@ keywords: app management, app, hololens, app installer
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 10/26/2020
+ms.date: 11/10/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -18,8 +18,11 @@ appliesto:
 
 # Install Apps on HoloLens 2 via App Installer
 
+
+We will ship the app installer capability soon after our Windows Holographic, version 20H2 update. We are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will be **not be available for managed devices** at this time.  
+
 > [!IMPORTANT]
-> This feature is currently only avalible in Windows Insider builds 19041.1377+. [Learn more on how to enroll in Windows Insider builds](hololens-insider.md).
+> This feature is currently only avalible in Windows Insider builds. [Learn more on how to enroll in Windows Insider builds](hololens-insider.md).
 
 In our Windows Insider release, we are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will be **not be available for managed devices** at this time.  
 
@@ -33,8 +36,7 @@ You are now able to install Apps without needing to enable Developer Mode or usi
 ## Requirements
 
 ### For your devices: 
-> [!NOTE]
-> This feature is currently only avalible in Windows Insider builds 19041.1377+. [Learn more on how to enroll in Windows Insider builds](hololens-insider.md).
+This is currently avalible in [Windows Insider builds](hololens-insider.md) for HoloLens 2 devices. Please ensure any devices using this method are [updated](hololens-update-hololens.md). 
 
 ### For your apps: 
 Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
@@ -48,7 +50,7 @@ Apps that are installed via this method must be digitally signed. You'll need to
 **Pick a certificate deployment method.** 
 - [Provisioning Packages](hololens-provisioning.md) can be applied to local devices.
 - MDM can be used to [apply certificates with device configurations](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
-- Use the on device [Certificate Manager](hololens-insider.md#certificate-manager). 
+- Use the on device [Certificate Manager](certificate-manager.md). 
 
 ## Installation method
 

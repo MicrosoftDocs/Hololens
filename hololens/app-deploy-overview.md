@@ -60,7 +60,18 @@ For more information, visit [Holographic Store Apps](https://docs.microsoft.com/
 [Provisioning Packages](app-deploy-provisioning-package.md) allow you to install custom or Line of Business apps, allowing IT pros and administrators to quickly install apps to a local device(s) via USB. This can be done without an internet connection and for any identity type.
 	
 Installing via Provisioning Packages is applicable for: 
-* Line of Buisness (non-public) apps
+* Line of Buisness / Self developed (non-public) apps
 * Public apps (if offline installer is available)
 * USB side-load only
 * No auto update (requires manual updates via Provisioning Package)
+
+## Install Apps on HoloLens 2 via App Installer
+Using the [App Installer](app-deploy-app-installer.md) users can have an experience that is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. This can be done without needing to enable Developer Mode or use Device Portal. This is a simple method of distributing a completely built app. Regardless of if you simply wish to demo your app to another user with a HoloLens, or you'd like to deploy your app this method works easily.
+
+Installing via App Installer is applicable for: 
+* Line of Buisness / Self developed (non-public) apps
+* Side-load only
+* Does not require Developer mode or Device portal
+* Easy for end user to install
+
+

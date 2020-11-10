@@ -18,6 +18,8 @@ appliesto:
 
 WDAC allows an IT Admin to configure their devices to block the launch of apps on devices. This is different than methods of device restriction such as Kiosk mode, where  the user is presented with a UI that hides the apps on the device but they can still be launched. While WDAC is implemented, the apps are still visible in the All Apps list but WDAC stops those apps and processes from being able to be launched by the device user.
 
+A device may be assigned more than one WDAC policy. If multiple WDAC policies are set on a system, most restrictive ones take effect. 
+
 > [!NOTE]
 > When end users attempt to launch an app that is blocked by WDAC, on HoloLens they will not receive a notification about not being able to launch that app.
 
@@ -69,29 +71,11 @@ Here is a list of commonly used and In-Box apps for HoloLens 2 devices.
 If an app is not on this list then a user may use Device Portal, connected to a HoloLens 2 that has installed the app wished to be blocked, to determine the PackageRelativeID and from there get the PackageFamilyName.
 
 1. Install the app on your HoloLens 2 device. 
-1. Open Settings -> Updates & Securtiy -> For developers, and enable **Developer mode** and then **Device portal**. 
+1. Open Settings -> Updates & Security -> For developers, and enable **Developer mode** and then **Device portal**. 
     1. More more details instructions read more about [setup and use of device portal here](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 1. Once Device Portal is connected, navigate to **Views** then **Apps**. 
 1. Within the Installed Apps panel use the dropdown to select the installed app. 
 1. Locate the PackageRelativeID. 
 1. Copy app characters before the !, this will be your PackageFamilyName.
 
-## Sample - Blocking App Installer
 
-As an example you may wish to block the [App Installer](app-deploy-app-installer.md) app. We have included some sample code for this example. Please download these [code samples for this example](https://aka.ms/HoloLensDocs-Sample-WDAC-App-Installer). In the zip file you'll find:
-
-| File | Use |
-|-|-|
-| compiledPolicy.bin | [Created in Step 9, used in final Step 10.](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens) |
-| mergedPolicy.xml | [Created in Step 6.](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens) |
-| WDAC_Set.syncml | Not used in WDAC but can be used for for [EnterpriseModernAppManagement CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp) |
-
-If you would like to try immediately blocking an app, in this case the App Installer app, then use the compiledPolicy.bin file and skip to step 10 in the link above. This will allow you to test out the custom policy and ensure the group assignments and policy configuration is correct. 
-
-If you would like to combine the WDAC policy for blocking App Installer with other apps from the list above, or any other app, then you may use the mergedPolicy.xml file and continue to merge new policies. As stated above WDAC policies are additive so this is not required. 
-
-Since the App Installer app is launched via trying to open a file will be presented with a prompt. As stated above Apps blocked by WDAC do not present a prompt they are blocked, however since the user is attempting to open a file on their device they are presented with an error for opening the file. 
-
-![App install blocked from WDAC](images\wdac-app-installer-no-launch.jpg)
-
-If you do not wish to use WDAC, you may as an alternative use [EnterpriseModernAppManagement CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp) to remove the App Installer UX, which is an app after all. The result of this is that the App Installer app will be uninstalled from the device. .appx, .msix, .msixbundle, and other file extensions as well as protocol for web-to-app launch will no longer be handled by the App Installer app. The user will get a prompt to search for a handler for the file extension/protocol in the store and they will not find the app because it’s not listed.
