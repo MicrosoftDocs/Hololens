@@ -49,6 +49,97 @@ If you experience problems connecting to Wi-Fi, see [I can't connect to Wi-Fi](.
 
 When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.
 
+## Connect HoloLens to Enterprise Wi-Fi Network
+
+Enterprise Wi-Fi profiles use Extensible Authentication Protocol (EAP) to authenticate Wi-Fi connections. HoloLens Enterprise Wi-Fi profile can be configured through MDM or provisioning package created by [Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages).
+
+For Microsoft Intune managed device, refer to [Intune](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) for configuration instructions.
+
+To create a Wi-Fi provisioning package in WCD, a pre-configured Wi-Fi profile .xml file is required. Here is a sample Wi-Fi profile for WPA2-Enterprise with EAP-TLS authentication:
+
+``` xml
+<?xml version="1.0"?> 
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"> 
+    <name>SampleEapTlsProfile</name> 
+    <SSIDConfig> 
+        <SSID> 
+            <hex>53616d706c65</hex> 
+            <name>Sample</name> 
+        </SSID> 
+        <nonBroadcast>true</nonBroadcast> 
+    </SSIDConfig> 
+    <connectionType>ESS</connectionType> 
+    <connectionMode>auto</connectionMode> 
+    <autoSwitch>false</autoSwitch> 
+    <MSM> 
+        <security> 
+            <authEncryption> 
+                <authentication>WPA2</authentication> 
+                <encryption>AES</encryption> 
+                <useOneX>true</useOneX> 
+                <FIPSMode xmlns="http://www.microsoft.com/networking/WLAN/profile/v2">false</FIPSMode> 
+            </authEncryption> 
+            <PMKCacheMode>disabled</PMKCacheMode> 
+            <OneX xmlns="http://www.microsoft.com/networking/OneX/v1"> 
+                <authMode>machine</authMode> 
+                <EAPConfig> 
+                    <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"> 
+                        <EapMethod> 
+                            <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">13</Type> 
+                            <VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId> 
+                            <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType> 
+                            <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId> 
+                        </EapMethod> 
+                        <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"> 
+                            <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"> 
+                                <Type>13</Type> 
+                                <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1"> 
+                                    <CredentialsSource><CertificateStore><SimpleCertSelection>true</SimpleCertSelection> 
+                                        </CertificateStore> 
+                                    </CredentialsSource> 
+                                    <ServerValidation> 
+                                        <DisableUserPromptForServerValidation>false</DisableUserPromptForServerValidation> 
+                                        <ServerNames></ServerNames> 
+                                        <TrustedRootCA>00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13</TrustedRootCA> 
+                                    </ServerValidation> 
+                                    <DifferentUsername>false</DifferentUsername> 
+                                    <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</PerformServerValidation> 
+                                    <AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName> 
+                                </EapType> 
+                            </Eap> 
+                        </Config> 
+                    </EapHostConfig> 
+                </EAPConfig> 
+            </OneX> 
+        </security> 
+    </MSM> 
+</WLANProfile> 
+```
+
+
+Server root CA certificate and client certificate may need to be provisioned on the device depending on the EAP type.
+
+Additional resources:
+
+- WLANv1Profile Schema: [[MS-GPWL]: Wireless LAN Profile v1 Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
+- EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
+
+### EAP Troubleshooting
+
+1. Double check Wi-Fi profile has right settings:
+   1. EAP type is configured correctly, common EAP types: EAP-TLS (13), EAP-TTLS (21) and PEAP (25).
+   1. Wi-Fi SSID name is right and matches with HEX string.
+   1. For EAP-TLS, TrustedRootCA contains the SHA-1 hash of server&#39;s trusted root CA certificate. On Windows PC &quot;certutil.exe -dump cert\_file\_name&quot; command will show a certificate&#39;s SHA-1 hash string.
+1. Collect network packet capture on the Access Point or Controller or AAA server logs to find out where the EAP session fails.
+   1. If the EAP identity provided by HoloLens is not expected, check whether the identity has been correctly provisioned through Wi-Fi profile or client certificate.
+   1. If server rejects HoloLens client certificate, check whether the required client certificate has been provisioned on the device.
+   1. If HoloLens rejects server certificate, check if the server root CA certificate has been provisioned on HoloLens.
+1. If the enterprise profile is provisioned through Wi-Fi provisioning package, consider applying the provisioning package on a Windows 10 PC. If it also fails on Windows 10 PC, follow the [Windows client 802.1X authentication troubleshooting guide](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication).
+1. Send us feedback through [Feedback Hub](https://docs.microsoft.com/hololens/hololens-feedback).
+
+### Additional resources:
+- [Export Wi-Fi settings from a Windows device](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
+
 ## VPN
 A VPN connection can help provide a more secure connection and access to your company's network and the Internet. HoloLens 2 supports built-in VPN client and Universal Windows Platform (UWP) VPN plug-in. 
 
