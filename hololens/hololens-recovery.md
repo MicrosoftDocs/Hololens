@@ -21,7 +21,7 @@ manager: jarrettr
 
 ## Charge the device
 
-Before you start any troubleshooting procedure, make sure that your device is charged to 20 to 40 percent of battery capacity if possible. Use the charger and the USB Type-C cables that come with the HoloLens 2 device. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A). If those accessories aren't available, make sure the charger that's available can support at least 15W of power.
+Before you start any troubleshooting procedure, make sure that your device is charged to 20 to 40 percent of battery capacity if possible. Use the charger and the USB Type-C cables that come with the HoloLens 2 device. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A). Using the wall charger supplied, HoloLens 2 devices can charge the battery to full in less than 65 minutes when the device is in standby. If those accessories aren't available, make sure the charger that's available can support at least 15W of power.
 
 > [!NOTE]
 > If possible, avoid using a PC to charge the device over USB, which is slow.
