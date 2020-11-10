@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 06/9/2020
+ms.date: 10/13/2020
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -24,6 +24,339 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 >[!NOTE]
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows Holographic, version 20H2
+- Build 19041.1128
+
+Windows Holographic, version 20H2 is now available and brings a great set of new features to HoloLens 2 users and IT professionals. From Auto Eye Positioning, to Certificate Manager in Settings, to improved Kiosk Mode functionality, and new Autopilot setup capabilities. This new update enables IT teams to take more granular control to configuring and managing HoloLens devices, and offers users even more seamless holographic experiences. 
+
+This latest release is a monthly update to version 2004, but this time we are including new features. The major build number will remain the same and Windows Update will indicate a monthly release to version 2004 (build 19041). You can look at your Build Number in your Settings > About screen to confirm you are on the latest available build 19041.1128+. To update to the latest release, open the Settings app, go to Update & Security, and tap Check for Updates. For more information on how to manage HoloLens updates, visit [this page](https://docs.microsoft.com/hololens/hololens-updates).
+
+### What’s new in Windows Holographic, version 20H2  
+
+| Feature                                              | Description                                                                                                                                     |
+|------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support) | Actively computes eye positions without users going through active calibration.   |
+| [Certificate Manager](hololens-release-notes.md#certificate-manager)   | Allows new simpler methods to install and remove certificates from the Settings app.     |
+| [Auto-launch provisioning from USB](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | Provisioning packages on USB drives automatically prompt the provisioning page in OOBE.                                                         |
+| [Auto-confirm provisioning packages in OOBE](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | Provisioning packages are automatically applied during OOBE from the provisioning page.                                                         |
+| [Automatic provisioning without using UI](hololens-release-notes.md#automatic-provisioning-without-using-ui) | How to combine the provisioning auto-launch and auto-confirm together. |
+| [Using Autopilot with Wi-Fi connection](hololens-release-notes.md#using-autopilot-with-wi-fi-connection) | Use autopilot from device Wi-Fi without need for ethernet adapter. |
+| [Tenantlockdown CSP and Autopilot](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | After tenant enrollment and the policy is applied, the device can only be enrolled in that tenant any time the device is reset or   re-flashed. |
+| [Global Assigned Access](hololens-release-notes.md#global-assigned-access--kiosk-mode)                               | New configuration method for multiple app kiosk mode which applies the kiosk at the system level, making it applicable to all.                  |
+| [Auto-launch an app in multi-app kiosk](hololens-release-notes.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | Sets an application to launch automatically when signing into a multiple-app kiosk mode.                                                        |
+| [Kiosk mode behavior changes for handling of failures](hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode failure now has restrictive fallback.                                                                                                |
+| [HoloLens Policies](hololens-release-notes.md#hololens-policies)                                    | New policies for HoloLens.     |
+| [Cache AAD Group membership for offline Kiosk](hololens-release-notes.md#cache-aad-group-membership-for-offline-kiosk)         | New policy allows users to uses group membership cache to use Kiosk mode offline for set number of days.                                        |
+| [New device restriction policies for HoloLens 2](hololens-release-notes.md#new-device-restriction-policies-for-hololens-2)       | Device management policies enabled newly enabled for HoloLens 2.                                                                                |
+| [New power policies for HoloLens 2](hololens-release-notes.md#new-power-policies-for-hololens-2)       | Newly supported policies for power timeout settings.  |
+| [Update Policies](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | Newly enabled policies allowing control of updates.           |
+| [Enabled Settings page visibility for HoloLens 2](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | Policy to pick which pages are seen in Settings app.             |
+| [Research mode](hololens-release-notes.md#research-mode) | Using Research mode on HoloLens 2. |
+| [Recording length increased](hololens-release-notes.md#recording-length-increased) | MRC recordings no longer capped to 5 minutes. |
+| [Improvements and fixes in the update](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | Additional fixes in the update.   |
+
+### Auto Eye Position Support
+
+- We now provide higher accuracy for hologram positioning through Auto Eye Position Support for elevated viewing comfort and improved display quality. 
+
+In HoloLens 2, eye positions enable accurate hologram positioning, comfortable viewing experience and improved display quality. Eye positions are computed as part of the eye tracking result. However, this requires each user to go through eye tracking calibration, even when the experience does not require eye gaze input.
+
+**Auto Eye Position (AEP)** enables these scenarios with an interaction-free way to compute eye positions for the user.  Auto Eye Position starts working in the background automatically from the moment the user puts the device on. If the user does not have a prior eye tracking calibration, Auto Eye position will start providing the user's eye positions to the display system after a small processing time. This processing time typically is between 20 - 60 seconds. The user data is not persisted on the device and hence this process is repeated if the user takes off and puts the device back on or if the device reboots or wakes up from sleep.  
+
+There are a few system behavior changes with Auto Eye Position feature when an uncalibrated user puts on the device. An uncalibrated user refers to someone who has not gone through the eye tracking calibration process on the device previously.
+
+|     Active Application                           |     Old Behavior                                   |     Behavior for Windows Holographic version 20H2 onwards                                                     |
+|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|     Non-gaze enabled app or Holographic Shell    |     Eye tracking calibration prompt is displayed.    |     No prompt is displayed.                                                                                |
+|     Gaze enabled app                             |     Eye tracking calibration prompt is displayed.    |     Eye tracking calibration prompt is   displayed only when the application accesses eye gaze stream.     |
+
+ If the user transitions from a non-gaze enabled application to one that accesses the gaze data, the calibration prompt will be displayed. There will be no changed to Out Of Box Experience flow. 
+ 
+For experiences that require eye gaze data or very precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration from the eye tracking calibration prompt or by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
+
+This information can be found later with [other calibration information](hololens-calibration.md#auto-eye-position-support). 
+
+### Certificate Manager
+
+- Improved auditing, diagnosis, and validation tooling for device security and compliance through the new Certificate Manager. This capability will enable you to deploy, troubleshoot, and validate your certificates at scale in commercial environments.
+
+In Windows Holographic version 20H2, we are adding a Certificate Manager in the HoloLens 2 Settings app. Go to **Settings > Update & Security > Certificates**. This feature provides a simple and user-friendly way to view, install and remove certificates on your device. With the new Certificate Manager, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant. 
+
+-	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
+-	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
+-	**Validation:** Verifying that a certificate serves the intended purpose and is functional, can save significant time, particularly in commercial environments before deploying certificates at larger scale.
+
+To find a specific certificate in the list quickly, there are options to sort by name, store or expiration date. Users may also directly search for a certificate. To view individual certificate properties, select the certificate and click on **Info**. 
+
+Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User;  all other users can only install into Current User. Users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must also be removed by the same mechanism.
+
+#### To install a certificate: 
+
+1.	Connect your HoloLens 2 to a PC.
+1.	Place the certificate file you want to install in a location on your HoloLens 2.
+1.	Navigate to **Settings App > Update & Security > Certificates**, and select Install a certificate.
+1.	Click **Import File** and navigate to the location you saved the certificate.
+1.	Select **Store Location**.
+1.	Select **Certificate Store**.
+1.	Click **Install**.
+
+The certificate should now be installed on the device.
+
+#### To remove a certificate: 
+1. Navigate to **Settings App > Update and Security > Certificates**.
+1. Search for the certificate by name in the search box.
+1. Select the certificate.
+1. Click **Remove**
+1. Select **Yes** when prompted for confirmation.
+
+![Certificate viewer in the Settings app](images/certificate-viewer-device.jpg)
+
+![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
+
+This information can be found later [on a new Certificate Manager page](certificate-manager.md).
+
+### Auto-launch provisioning from USB
+
+- Automated processes allowing for less user interaction, when USB Drives with Provisioning Packages are used during OOBE.
+
+Before this release users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
+
+1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
+1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page. 
+
+Note: If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
+
+For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+
+This information can be found later [here.](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+
+### Auto-confirm provisioning packages in OOBE
+- Automated process allowing for less user interaction, when the Provisioning Package page is displayed it will automatically apply all packages listed.
+
+When the provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
+
+This information can be found later [here.](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+
+### Automatic provisioning without using UI
+- Combined automatic processes for reduced device interactions for provisioning. 
+
+By combining the auto-launch of provisioning from USB devices and the auto-confirmation of provisioning packages, a user can provision HoloLens 2 devices automatically without using the device's UI or even wearing the device. You may continue to use the same USB drive and provisioning package for multiple devices. This is useful for deploying multiple devices at once in the same area. 
+
+1. [Create a Provisioning Package](hololens-provisioning.md) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
+1. Copy the package to a USB storage drive.
+1. [Flash your HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) to [19041.1361 or newer build](https://aka.ms/hololens2previewdownload). 
+1. When [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8) has completed flashing your device unplug your USB-C cable. 
+1. Plug in your USB drive to the device.
+1. When the HoloLens 2 device boots into OOBE it will automatically detect the provisioning package on the USB drive and launch the provisioning page.
+1. After 10 seconds the device will automatically apply the provisioning package. 
+
+Your device is now configured and will display the Provisioning Successful screen.
+
+This information can be found later [here.](hololens-provisioning.md#automatic-provisioning-without-using-ui)
+
+### Using Autopilot with Wi-Fi connection
+- Removed need for USB-C adapters to ethernet reducing hardware needs, by enabling Autopilot to function on Wi-Fi connected devices.
+
+Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an Autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB-C or Wi-Fi to USB-C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
+
+### Tenantlockdown CSP and Autopilot
+- Keeps devices on the organization's tenant by locking them to the tenant even through device reset or reflash. With further security by disallowing account creation in via provisioning. 
+
+HoloLens 2 devices now support TenantLockdown CSP as of [Windows Holographic version 20H2](hololens-release-notes.md#windows-holographic-version-20h2). 
+
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP enables HoloLens 2 to be tied to MDM enrollment using Autopilot only. Once TenantLockdown CSP’s RequireNetworkInOOBE node is set to either true or false (initially set) value on HoloLens 2, that value remains on the device despite re-flashing, OS updates, etc. 
+
+Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, OOBE waits indefinitely for Autopilot profile to be successfully downloaded and applied, after network connectivity. 
+
+Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, following operations are disallowed in OOBE: 
+- Creating local user using runtime provisioning 
+- Performing AAD join operation via runtime provisioning 
+- Selecting who owns the device in OOBE experience 
+
+#### How to set this using Intune? 
+1. Create a custom OMA URI device configuration profile and specify true for RequireNetworkInOOBE node as shown below.
+OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
+
+1. Create a group and assign the device configuration profile to that device group. 
+
+1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.  
+
+Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be active.
+
+#### How to unset TenantLockdown’s RequireNetworkInOOBE on HoloLens 2 using Intune? 
+1. Remove the HoloLens 2 from the device group to which the device configuration created above was previously assigned. 
+
+1. Create a custom OMA URI based device configuration profile and specify false for RequireNetworkInOOBE as shown below. 
+OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
+
+1. Create a group and assign the device configuration profile to that device group. 
+
+1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.
+
+Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be inactive. 
+
+#### What would happen during OOBE, if Autopilot profile is unassigned on a HoloLens after TenantLockdown was set to true? 
+OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed. 
+
+![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
+
+This information can now be found alongside the rest of Autopilot under [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot).
+
+### Global Assigned Access – Kiosk Mode
+- Reduced Identity management for Kiosk, by enabling new Kiosk method that applies Kiosk mode at the system level.
+
+This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
+
+### Automatic launch of an application in multiple-app kiosk mode 
+- Focused experience with automatic app launch, further increasing the UI and app selections chosen for Kiosk mode experiences.
+
+Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
+
+Application is automatically launched when user signs-in. 
+
+```xml
+<AllowedApps>                     
+    <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### Kiosk mode behavior changes for handling of failures
+- More secure Kiosk mode by eliminating available apps on Kiosk mode failures. 
+
+Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 20H2 in the case of failures no apps will be shown in the start menu as below: 
+
+![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+
+### HoloLens Policies
+- Device management options specifically for HoloLens created for managing the device. 
+
+New mixed reality policies have been created for HoloLens 2 devices on Windows Holographic version 20H2. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
+
+| New HoloLens policy                                | Description                                                                               | Notes                                                                |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| MixedReality\BrightnessButtonDisabled              | Allows brightness buttons to be disabled so pressing it does not change brightness.       | 1 Yes, 0 No (default)                                                |
+| MixedReality\VolumeButtonDisabled                  | Allows volume buttons to be disabled so pressing it does not change volume.               | 1 Yes, 0 No (default)                                                |
+| MixedReality\MicrophoneDisabled                    | Disables microphone so no audio recording is possible on HoloLens 2.                      | 1 Yes, 0 No (default)                                                |
+| MixedReality\FallbackDiagnostics                   | Controls behavior of when diagnostic logs can be collected.                               | 0 Disabled, 1 Enabled for Device Owners, 2 Enabled for all (Default) |
+| MixedReality\HeadTrackingMode                      | Reserved for future use.                                                                  |                                                                      |
+| MixedReality\AADGroupMembershipCacheValidityInDays | Controls how many days AAD group membership cache is used for Kiosk targeting AAD groups. | See below.                                                           |
+
+### Cache AAD Group membership for offline Kiosk
+- Enabled Offline Kiosks to be used with AAD groups for up to 60 days.
+
+This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
+
+Name: AADGroupMembershipCacheValidityInDays 
+URI value: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+
+Min - 0 days  
+Max - 60 days 
+
+Steps to use this policy correctly: 
+1. Create a device configuration profile for kiosk targeting AAD groups and assign it to HoloLens device(s). 
+1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s). 
+    1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+    1. The value can be between min / max allowed.
+1. Enroll HoloLens devices and verify both configurations get applied to the device. 
+1. Let AAD user 1 sign-in when internet is available, once user signs-in and AAD group membership is confirmed successfully, cache will be created. 
+1. Now AAD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days. 
+1. Steps 4 and 5 can be repeated for any other AAD user N. Key point here is that any AAD user must sign-in to device using Internet so at least once we can determine that they are member of AAD group to which Kiosk configuration is targeted. 
+ 
+> [!NOTE]
+> Until step 4 is performed for a AAD user will experience failure behavior mentioned in “disconnected” environments. 
+
+### New device restriction policies for HoloLens 2
+- Allows users to manage specific device management policies such as blocking adding or removing provisioning packages.
+
+Newly enabled policies that allow for more management options of HoloLens 2 devices. 
+- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
+
+These two new polices for AllowAddProvisioningPackage and AllowRemoveProvisioningPackage are being added to our [Common Device Restrictions](hololens-common-device-restrictions.md).
+
+### New power policies for Hololens 2
+- More options for when HoloLens sleeps or locks via power policies. 
+
+These newly added policies allow admins to control power states, such as idle timeout. To read more about each individual policy please click the link for that policy.
+
+|     Policy documentation link                |     Notes                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Example value to use in Windows Configuration Designer,   i.e., 100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Example value to use in Windows Configuration   Designer, i.e., 100                                                                          |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Example value to use in   Windows Configuration Designer, i.e.,   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+These two new polices for DisplayOffTimeoutOnBattery and DisplayOffTimeoutPluggedIn are being added to our [Common Device Restrictions](hololens-common-device-restrictions.md).
+
+> [!NOTE]
+> For consistent experience on HoloLens 2, please ensure that values for both DisplayOffTimeoutOnBattery and StandbyTimeoutOnBattery are set as same value. Same applies to DisplayOffTimeoutPluggedIn and StandbyTimeoutPluggedIn. Refer to [Display, sleep, and hibernate idle timers](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) for more details about modern standby.
+
+### Newly enabled Update policies for HoloLens
+- More options for when Updates are installed or disabling the Pause Updates button to ensure updates.
+
+These update policies are now enabled on HoloLens 2 devices:
+-	[Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-	[Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-	[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-	[Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+
+Full details on thise update policies and how to use them for HoloLens devices can be read here in [Manage HoloLens updates](hololens-updates.md).
+
+### Enabled Settings page visibility for HoloLens 2
+- Increased UI control in the Settings App, which may be confused to show a limited selection of pages.
+
+We’ve now enabled a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. To learn how to fully customize this feature click the link below.
+
+- [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+
+To learn which page settings you can customize on HoloLens 2, please visit our [Settings URIs page](settings-uri-list.md). 
+ 
+![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
+
+### Research mode
+While in Research Mode, the HoloLens 2 becomes a potent tool for computer vision research. Compared to previous editions, Research Mode for HoloLens 2 has the following advantages:
+-	In addition to sensors exposed in HoloLens (1st gen) Research Mode, we now provide IMU sensor access including an accelerometer, gyroscope, and magnetometer.
+-	HoloLens 2 provides new capabilities that can be used together with Research Mode. Specifically, access to articulated hand-tracking and eye-tracking APIs that can deliver a richer set of experiments.
+
+Researchers now have the option of enabling Research Mode on their HoloLens devices to access all of these external facing raw image sensors streams. Research Mode for HoloLens 2 also provides access to the accelerometer, gyroscope, and magnetometer readings. To protect users’ privacy, raw eye-tracking camera images are not available through Research Mode, but eye-gaze direction  is available through existing APIs.
+
+Check out the [Research Mode documentation](https://docs.microsoft.com/windows/mixed-reality/research-mode) for further technical details.
+
+### Recording length increased
+Due to customer feedback we’ve increased the recording length of [mixed reality captures](holographic-photos-and-videos.md). Mixed reality captures will no longer be limited to 5 minutes by default but instead will calculate the maximum recording length based on available disk space. The device will estimate the max video recording duration based on available disk space up to 80% of the total disk space.
+
+> [!NOTE]
+> The HoloLens will use default video recording length (5 minutes) if one of the following occurs:
+> -	The estimated max recording duration is smaller than the default 5 mins.
+> -	The available disk space is less than 20% of the total disk space.
+
+This information can be found again [here](holographic-photos-and-videos.md#maximum-recording-length). 
+
+### Improvements and fixes in the update:
+- More screens in OOBE  are now in dark mode.
+- Learn more content should point to the latest Privacy Statement online.
+- Addressed an issue where users could not provision VPN profiles through provisioning packages.
+- Fixed proxy configuration issue for VPN connection.
+- Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
+- Addressed an issue that prevented a HoloLens device from showing up in File Explorer over Media Transfer Protocol (MTP) when the device is set up as a [single-app kiosk](hololens-kiosk.md). Note that MTP (and USB connection in general) can still be disabled using the [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) policy.
+- Fixed an issue where icons in the Start menu were scaled correctly in Kiosk mode.
+- Fixed an issue due to HTTP caching interfering with kiosk mode targeted to AAD groups.
+- Fixed an issue where users were unable to use the Pair button after enabling Developer mode with provisioning packages unless they disabled and re-enabled Developer mode.
+
+## Windows Holographic, version 1903 - November 2020 Update
+- Build 18362.1085
+
+This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest feature release build Windows Holographic, version 20H2.
 
 ## Windows Holographic, version 2004 - October 2020 Update
 - Build 19041.1124
