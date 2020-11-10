@@ -440,8 +440,60 @@ To set up kiosk mode by using the Windows Device Portal, follow these steps.
 
 ## More information
 
-Watch how to configure a kiosk by using a provisioning package.  
+### Watch how to configure a kiosk by using a provisioning package.  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+### Global Assigned Access – Kiosk Mode
+- Reduced Identity management for Kiosk, by enabling new Kiosk method that applies Kiosk mode at the system level.
+
+This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
+
+### Automatic launch of an application in multiple-app kiosk mode 
+- Focused experience with automatic app launch, further increasing the UI and app selections chosen for Kiosk mode experiences.
+
+Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
+
+Application is automatically launched when user signs-in. 
+
+```xml
+<AllowedApps>                     
+      <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+</AllowedApps>
+```
+
+
+### Kiosk mode behavior changes for handling of failures
+- More secure Kiosk mode by eliminating available apps on Kiosk mode failures. 
+
+Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 20H2 in the case of failures no apps will be shown in the start menu as below: 
+
+![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+
+### Cache AAD Group membership for offline Kiosk
+- Enabled Offline Kiosks to be used with AAD groups for up to 60 days.
+
+This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
+
+Name: AADGroupMembershipCacheValidityInDays 
+URI value: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+
+Min - 0 days  
+Max - 60 days 
+
+Steps to use this policy correctly: 
+1. Create a device configuration profile for kiosk targeting AAD groups and assign it to HoloLens device(s). 
+1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s). 
+    1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+    1. The value can be between min / max allowed.
+1. Enroll HoloLens devices and verify both configurations get applied to the device. 
+1. Let AAD user 1 sign-in when internet is available, once user signs-in and AAD group membership is confirmed successfully, cache will be created. 
+1. Now AAD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days. 
+1. Steps 4 and 5 can be repeated for any other AAD user N. Key point here is that any AAD user must sign-in to device using Internet so at least once we can determine that they are member of AAD group to which Kiosk configuration is targeted. 
+ 
+> [!NOTE]
+> Until step 4 is performed for a AAD user will experience failure behavior mentioned in “disconnected” environments. 
+
 
 ## XML Kiosk Code Samples for HoloLens
 

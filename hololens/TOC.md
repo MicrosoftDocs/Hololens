@@ -71,7 +71,9 @@
 ### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
 ### [Common Device Restrictions](hololens-common-device-restrictions.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
+### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
 ### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
+### [Page Settings CSP and URIs for HoloLens](settings-uri-list.md)
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ### [Share HoloLens with multiple people](hololens-multiple-users.md)
@@ -81,7 +83,7 @@
 ### [Prepare certificates and network profiles for HoloLens 2](hololens-certificates-network.md)
 ### [Manage connection endpoints for HoloLens](hololens-offline.md)
 ### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
-
+## [Certificate Manager](certificate-manager.md)
 
 # Deploy
 ## Enrollment
@@ -108,9 +110,7 @@
 # HoloLens release notes
 ## [HoloLens 2 release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
-### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
-### [Page Settings URIs for HoloLens](settings-uri-list.md)
 ### [App Installer](app-deploy-app-installer.md)
-
 ## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
+
 # [Give us feedback](hololens-feedback.md)
