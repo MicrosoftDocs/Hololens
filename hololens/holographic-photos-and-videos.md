@@ -150,8 +150,18 @@ You can also share mixed reality photos and videos from OneDrive, by automatical
 ## Limitations of mixed reality capture
 
 - While using mixed reality capture, the framerate of HoloLens will be halved to 30 Hz.
-- Videos have a maximum length of five minutes.
 - The resolution of photos and videos may be reduced if the photo/video camera is already in use by another application, while live streaming, or when system resources are low.
+
+### Maximum recording length
+
+On HoloLens 2 devices before the Windows Holographic, version 20H2 videos recorded on the device were limited to maximum length of five minutes.
+
+Due to customer feedback we’ve increased the recording length of [mixed reality captures](holographic-photos-and-videos.md). Mixed reality captures will no longer be limited to 5 minutes by default but instead will calculate the maximum recording length based on available disk space. The device will estimate the max video recording duration based on available disk space up to 80% of the total disk space.
+
+> [!NOTE]
+> The HoloLens will use default video recording length (5 minutes) if one of the following occurs:
+> -	The estimated max recording duration is smaller than the default 5 mins.
+> -	The available disk space is less than 20% of the total disk space.
 
 ## Default file format and resolution
 

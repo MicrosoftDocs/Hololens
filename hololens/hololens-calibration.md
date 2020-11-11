@@ -35,19 +35,19 @@ HoloLens 2 prompts a user to calibrate the device under the following circumstan
 - The device is taken off and put back on and any of the above circumstances apply 
 
 
-![Calibration prompt](./images/07-et-adjust-for-your-eyes.png)
+![Calibration prompt for adjusting to eyes.](./images/07-et-adjust-for-your-eyes.png)
 
 During this process, you'll look at a set of targets (gems). It's fine if you blink during calibration, but try to stay focused on the gems instead of other objects in the room.  This allows HoloLens to learn about your eye position to render your holographic world.
 
-![Calibration prompt](./images/07-et-hold-head-still.png)
+![Calibration prompt telling user to keep head still and follow dots with their eyes.](./images/07-et-hold-head-still.png)
 
-![Calibration prompt](./images/08-et-gems.png)
+![Calibration prompt with gem example.](./images/08-et-gems.png)
 
-![Calibration prompt](./images/09-et-adjusting.png)
+![Calibration prompt adjusting.](./images/09-et-adjusting.png)
 
 If calibration was successful, you'll see a success screen.  If not, read more about diagnosing calibration failures [here](#troubleshooting-hololens-2-calibration).
 
-![Calibration prompt](./images/10-et-success.png)
+![Calibration prompt success.](./images/10-et-success.png)
 
 ### Calibration when sharing a device or session
 
@@ -60,6 +60,34 @@ Multiple users can share a HoloLens 2 device, without a need for each person to 
 1. Select **Settings**, and then select **System** > **Calibration** > **Eye Calibration** > **Run eye calibration**.
 
    ![The Settings app, showing the Run eye calibration option](./images/C-Settings.Calibration.png)
+
+### Auto Eye Position Support
+
+In HoloLens 2, eye positions enable accurate hologram positioning, comfortable viewing experience and improved display quality. Eye positions are computed internally as part of the eye tracking computation. However, this requires each user to go through eye tracking calibration, even when the experience might not require eye gaze input.
+
+**Auto Eye Position (AEP)** enables these scenarios with an interaction-free way to compute eye positions for the user. Auto Eye Position starts working in the background automatically from the moment the user puts the device on. If the user does not have a prior eye tracking calibration, Auto Eye Position will start providing the user's eye positions to the display system after a processing time of 20 - 30 seconds. The user data is not persisted on the device and hence this process is repeated if the user takes off and puts the device back on or if the device reboots or wakes up from sleep.
+
+There are a few system behavior changes with Auto Eye Position feature when an uncalibrated user puts on the device. In this context, an uncalibrated user refers to someone who has not gone through the eye tracking calibration process on the device previously.
+
+| Active Application | Prior Behavior | Behavior from Windows Holographic, version 20H2 Update |
+|:-------------------|:-----------------|:-----------------------------------|
+| Non-gaze enabled app or Holographic Shell |Eye tracking calibration prompt dialog is displayed. | No prompt is displayed. |
+| Gaze enabled app | Eye tracking calibration prompt dialog is displayed. | Eye tracking calibration prompt is displayed only when the application accesses eye gaze stream. |
+
+If the user transitions from a non-gaze enabled application to one that accesses the gaze data, the calibration prompt will be displayed. 
+
+All other system behavior will be similar to when the current user does not have an active eye tracking calibration. For example, the One-handed Start gesture will not be enabled. There will be no change to the Out-Of-Box-Experience for initial setup.
+
+For experiences that require eye gaze data or very precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration. It is accessible from the eye tracking calibration prompt or by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
+
+#### Deferred Calibration Prompt
+
+With Auto Eye Position, the Eye Tracking Calibration prompt dialog is deferred until an application requests Eye Gaze data. This ensures that there is no prompt to the user when the active application does not require gaze. If the application does require gaze data and the current user is not calibrated, the user is presented with a calibration prompt. This behavior could be used to display eye tracking calibration prompt at a suitable time for the experience. This method is recommended for the following reasons
+
+1.  The Eye Tracking Calibration Prompt dialog provides the user with details on why eye tracking is needed.
+2.  Presents the user a way to decline to have their eyes calibrated.
+
+If the user chooses to launch the Eye Tracking Calibration, the focus should returning to the original application after calibration completes. 
 
 ### Troubleshooting HoloLens 2 calibration
 
