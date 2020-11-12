@@ -1,5 +1,5 @@
 ---
-title: Windows Autopilot for HoloLens 2 (Private Preview)
+title: Windows Autopilot for HoloLens 2 (Public Preview)
 description: How to set up Autopilot on HoloLens 2 devices.
 author: Teresa-Motiv
 ms.author: v-tea
@@ -32,12 +32,12 @@ When a user starts the Autopilot self-deploying process, the process completes t
 1. Provision the device.
 1. Present the sign-in screen to the user.
 
-## Windows Autopilot for HoloLens 2 Private Preview
+## Windows Autopilot for HoloLens 2 Public Preview
 
-Please follow the steps below to set up your environment for the private preview:
+Please follow the steps below to set up your environment for the public preview:
 
 1. Make sure that you meet the requirements for Windows Autopilot for HoloLens 2
-1. Enroll in the Windows Autopilot for HoloLens 2 private preview program
+1. Enroll in the Windows Autopilot for HoloLens 2 public preview program
 1. Verify that your tenant is flighted (enrolled to participate in the program)
 1. Register your devices in Windows Autopilot
 1. Create a device group
@@ -58,7 +58,7 @@ Please follow the steps below to set up your environment for the private preview
 **Review the "[Requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying#requirements)" section of the Windows Autopilot Self-Deploying mode article.** Your environment has to meet these requirements as well as the standard Windows Autopilot requirements. You do not have to review the "Step by step" and "Validation" sections of the article. The procedures later in this article provide corresponding steps that are specific to HoloLens. For information about how to register devices and configure profiles, see [4. Register devices in Windows Autopilot](#4-register-devices-in-windows-autopilot) and [6. Create a deployment profile](#6-create-a-deployment-profile) in this article. These sections provide steps that are specific to HoloLens.
 
 > [!IMPORTANT]  
-> Windows Autopilot for HoloLens 2 has specific operating system requirements. Autopilot relies on Windows Holographic, version 2004 (build 19041.1103 or later) being pre-installed on HoloLens devices. Devices delivered until late September 2020 have Windows Holographic, version 1903 pre-installed. Please contact your distributor to learn about when Autopilot-ready devices can be shipped to you. If you wish to participate to the private preview, please review instructions and requirements below.
+> Windows Autopilot for HoloLens 2 has specific operating system requirements. Autopilot relies on Windows Holographic, version 2004 (build 19041.1103 or later) being pre-installed on HoloLens devices. Devices delivered until late September 2020 have Windows Holographic, version 1903 pre-installed. Please contact your distributor to learn about when Autopilot-ready devices can be shipped to you. If you wish to participate to the public preview, please review instructions and requirements below.
 
 Autopilot specific information per HoloLens OS releases.
 - In order to use Autopilot a device must have the [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) release or newer.
@@ -79,18 +79,7 @@ If you would like to either confirm the build version on your device or update i
 
 ### 2. Enroll in the Windows Autopilot for HoloLens 2 program
 
-**To participate in the program, you must have your tenant enrolled to the Private Preview program. This enables HoloLens-specific Intune (aka MEM) UI controls for Autopilot.** To do this, go to  [Windows Autopilot for HoloLens Private Preview request](https://aka.ms/APHoloLensTAP) or use the following QR code to submit a request.  
-
-![Autopilot QR code](./images/hololens-ap-qrcode.png)  
-
-Microsoft flights tenants once a week. You will receive an email notification once the flighting is complete. 
-
-In this request, provide the following information:
-
-- Tenant domain
-- Tenant ID
-- Number of HoloLens 2 devices that are participating in this evaluation
-- Number of HoloLens 2 devices that you plan to deploy by using Autopilot self-deploying mode
+Previously Autopilot for HoloLens 2 devices was in private preview, however with this feature entering public preview there will no longer be a need to request to join. All tenants will automatically have the capability to create an enrollment profile for their HoloLens 2 devices.  
 
 ### 3. Verify that your tenant is flighted
 
