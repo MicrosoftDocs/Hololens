@@ -298,7 +298,7 @@ OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.  
 
-Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be active.
+Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the HoloLens 2 device, effects of TenantLockdown will be active.
 
 ### How to unset TenantLockdown’s RequireNetworkInOOBE on HoloLens 2 using Intune? 
 1. Remove the HoloLens 2 from the device group to which the device configuration created above was previously assigned. 
@@ -313,7 +313,7 @@ OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.
 
-Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be inactive. 
+Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the HoloLens 2 device, effects of TenantLockdown will be inactive. 
 
 ### What would happen during OOBE, if Autopilot profile is unassigned on a HoloLens after TenantLockdown was set to true? 
 OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed. 
