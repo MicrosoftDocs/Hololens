@@ -280,8 +280,8 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 
 ## Known Issues
 
-- You cannot install applications that use the device security context.
-- While setting up Autopilot over Wi-Fi, when Internet connection is first established, it is possible that the Autopilot profile is not retrieved within 10 seconds from the MDM service (default wait time). If this time is exceeded the End User License Agreement page is presented and the user proceeds with non-Autopilot setup experiences. To retry setting up with Autopilot, put the device to sleep and then power up, or reboot the device and let it try again. 
+- Device context based application install configured in Intune does not work yet.
+- While setting up Autopilot over Wi-Fi, there may be an instance where the Autopilot profile is not downloaded when an Internet connection is first established and the End User License Agreement (EULA) is presented and the user has the option to proceed with non-Autopilot setup experiences. To retry setting up with Autopilot, put the device to sleep and then power up, or reboot the device and let it try again.
 
 ### Troubleshooting
 
