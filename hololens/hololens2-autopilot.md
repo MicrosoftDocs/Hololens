@@ -223,18 +223,13 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 
 1. The device should automatically start OOBE. Do not interact with OOBE. Instead sit, back and relax! Let HoloLens 2 detect network connectivity and allow it complete OOBE automatically. The device may restart during OOBE. The OOBE screens should resemble the following.
    
-   ![OOBE step 1](./images/hololens-ap-uex-1.png)
-   ![OOBE step 2](./images/hololens-ap-uex-2.png)
-   ![OOBE step 3](./images/hololens-ap-uex-3.png)
-   ![OOBE step 4](./images/hololens-ap-uex-4.png)
+   ![OOBE step 1](./images/autopilot-welcome.jpg)
+   ![OOBE step 2](./images/autopilot-step-complete.jpg)
+   ![OOBE step 3](./images/autopilot-device-setup.jpg)
 
 1. At the end of OOBE, you can sign in to the device by using your user name and password.
 
-   ![OOBE step 5](./images/hololens-ap-uex-5.png)
-
-## Known Issues
-
-- You cannot install applications that use the device security context.
+   ![OOBE step 4](./images/other-user.jpg)
 
 ## Tenantlockdown CSP and Autopilot
 - Keeps devices on the organization's tenant by locking them to the tenant even through device reset or reflash. With further security by disallowing account creation in via provisioning. 
@@ -283,13 +278,25 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
 
+## Known Issues
+
+- You cannot install applications that use the device security context.
+- When Wi-fi connection is first setup, it is possible sometimes autopilot profile is not downloaded within 10 seconds (default wait time) and the End User License Agreement page is presented. In this scenario, please put the device to sleep and then wake again or reboot the device and let it try again.
+
+### Troubleshooting
+
+The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues, however please be aware that these articles are based on Windows 10 Desktop and not all information may apply to HoloLens:
+- [Windows Autopilot - known issues](https://docs.microsoft.com/mem/autopilot/known-issues)
+- [Troubleshoot Windows device enrollment problems in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
+- [Windows Autopilot - Policy Conflicts](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
+
 ## Feedback for Autopilot
 
 To provide feedback or report issues, use one of the following methods:
 
 - Use the Feedback Hub app. You can find this app on a HoloLens-connected computer. In Feedback Hub, select the **Enterprise Management** > **Device** category.  
 
-  When you provide feedback or report an issue, provide a detailed description. If applicable, include screenshots and logs.
-- Send an email message to [hlappreview@microsoft.com](mailto:hlappreview@microsoft.com). For the email subject, enter **\<*Tenant*> Autopilot for HoloLens 2 evaluation feedback** (where \<*Tenant*> is the name of your Intune tenant).
+- If you encounter issues in Intune during registration of device or Autopilot profile not getting assigned, please open a support ticket at [https://aka.ms/apsupport](https://aka.ms/apsupport) .
+- If you encounter issues on HoloLens device during the Autopilot experience, please open a support ticket at [http://aka.ms/hlsupport](http://aka.ms/hlsupport) with [offline diagnostic logs](hololens-diagnostic-logs.md#offline-diagnostics).
 
   Provide a detailed description in your message. However, unless Support personnel specifically request it, do not include data such as screenshots or logs. Such data might include private or personally identifiable information (PII).
