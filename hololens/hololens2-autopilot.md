@@ -281,7 +281,7 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 ## Known Issues
 
 - You cannot install applications that use the device security context.
-- When Wi-fi connection is first setup, it is possible sometimes autopilot profile is not downloaded within 10 seconds (default wait time) and the End User License Agreement page is presented. In this scenario, please put the device to sleep and then wake again or reboot the device and let it try again.
+- While setting up Autopilot over Wi-Fi, when Internet connection is first established, it is possible that the Autopilot profile is not retrieved within 10 seconds from the MDM service (default wait time). If this time is exceeded the End User License Agreement page is presented and the user proceeds with non-Autopilot setup experiences. To retry setting up with Autopilot, put the device to sleep and then power up, or reboot the device and let it try again. 
 
 ### Troubleshooting
 
