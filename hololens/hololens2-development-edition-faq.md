@@ -16,7 +16,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# HoloLens Development Edition FAQ
+# HoloLens 2 Development Edition FAQ
 
 ## General
 
