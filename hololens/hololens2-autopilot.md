@@ -105,7 +105,7 @@ In the preparation phase, there are two primary ways you can register devices to
    
 2. **Retrieve the hardware hash (also known as the hardware ID) and register the device manually**. 
 
-For more information on device registration please review the [Adding devices to Autopilot](https://docs.microsoft.com/en-us/mem/autopilot/add-devices) documentation.  
+For more information on device registration please review the [Adding devices to Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices) documentation.  
 
 **Retrieve a device hardware hash**
 
@@ -245,7 +245,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 
 1. At the end of OOBE, you can sign in to the device by using your user name and password.
 
-   <br/><img src="./images/other-user.jpg" width="450" height="700" />
+   <br/><img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
 
 ## Tenantlockdown CSP and Autopilot
 - Keeps devices on the organization's tenant by locking them to the tenant even through device reset or reflash. With further security by disallowing account creation in via provisioning. 
