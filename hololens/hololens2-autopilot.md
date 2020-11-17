@@ -304,8 +304,8 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 
 ## Known Issues
 
-- Device context based application install configured in Intune does not work yet.
-- While setting up Autopilot over Wi-Fi, there may be an instance where the Autopilot profile is not downloaded when Internet connection is first established and the End User License Agreement (EULA) is presented and the user has the option to proceed with non-Autopilot setup experiences. To retry setting up with Autopilot, put the device to sleep and then power up, or reboot the device and let it try again.
+- Device context based application install configured in Intune does not work yet. [Learn more about device context and user context installs.](https://docs.microsoft.com/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
+- 	While setting up Autopilot over Wi-Fi, there may be an instance where the Autopilot profile is not downloaded when Internet connection is first established. In this case End User License Agreement (EULA) is presented and the user has the option to proceed with non-Autopilot setup experience. To retry setting up with Autopilot, put the device to sleep and then power up, or reboot the device and let it try again.
 
 ### Troubleshooting
 
