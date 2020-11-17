@@ -283,7 +283,7 @@ Newly enabled policies that allow for more management options of HoloLens 2 devi
 These two new polices for AllowAddProvisioningPackage and AllowRemoveProvisioningPackage are being added to our [Common Device Restrictions](hololens-common-device-restrictions.md).
 
 > [!NOTE]
-> In regard to [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp), HoloLens will only support the ./Vendor/MSFT/RemoteLock/Lock configuration.The configurations dealing with PIN such as reset and recover are not supported.
+> In regard to [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp), HoloLens will only support the ./Vendor/MSFT/RemoteLock/Lock configuration. The configurations dealing with PIN such as reset and recover are not supported.
 
 ### New power policies for HoloLens 2
 - More options for when HoloLens sleeps or locks via power policies. 
