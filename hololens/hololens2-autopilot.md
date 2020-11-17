@@ -43,19 +43,17 @@ When a user starts the Autopilot self-deploying process, the process completes t
 Please follow the steps below to set up your environment for the public preview:
 
 
-1. Make sure that you meet the requirements for Windows Autopilot for HoloLens 2.
+1. [Make sure that you meet the requirements for Windows Autopilot for HoloLens 2.](#1-make-sure-that-you-meet-the-requirements-for-windows-autopilot-for-hololens-2)
 
-1. Register your devices in Windows Autopilot.
+1. [Register devices in Windows Autopilot.](#2-register-devices-in-windows-autopilot)
 
-1. Create a device group.
+1. [Create a device group.](#3-create-a-device-group)
 
-1. Create a deployment profile.
+1. [Create a deployment profile.](#4-create-a-deployment-profile)
 
-1. Verify the ESP configuration.
+1. [Verify the ESP configuration.](#5-verify-the-esp-configuration)
 
-1. Configure a custom configuration profile for HoloLens devices (known issue).
-
-1. Verify the profile status of the HoloLens devices.
+1. [Verify the profile status of the HoloLens devices.](#6-verify-the-profile-status-of-the-hololens-devices)
 
 
 
