@@ -18,9 +18,10 @@ manager: jarrettr
 
 # Windows Autopilot for HoloLens 2
 
-When you set up HoloLens 2 devices for the Windows Autopilot program, your users can follow a simple process to provision the devices from the cloud.
+> [!NOTE]
+> As of 11/20/2020 users no longer need to enroll in the private preview. Autopilot is transitioning to a public preview where all tenants will receive the ability to try out Autopilot for HoloLens devices. 
 
-This Autopilot program supports Autopilot self-deploying mode to provision HoloLens 2 devices as shared devices under your tenant. Self-deploying mode leverages the device's preinstalled OEM image and drivers during the provisioning process. A user can provision the device without putting the device on and going through the Out-of-the-box Experience (OOBE). To learn more about Windows Autopilot for Windows 10 click [here](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot).
+Autopilot supports a self-deploying mode to provision HoloLens 2 devices as shared devices under your tenant. Self-deploying mode leverages the device's preinstalled OEM image and drivers during the provisioning process. A user can provision the device from the cloud without putting the device on and going through the Out-of-the-box Experience (OOBE). To learn more about Windows Autopilot for Windows 10 click [here](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot).
 
 When a user starts the Autopilot self-deploying process, the process completes the following steps:
 
@@ -43,12 +44,17 @@ Please follow the steps below to set up your environment for the public preview:
 
 
 1. Make sure that you meet the requirements for Windows Autopilot for HoloLens 2.
-1. Verify that your tenant is flighted (enrolled to participate in the program).
+
 1. Register your devices in Windows Autopilot.
+
 1. Create a device group.
+
 1. Create a deployment profile.
+
 1. Verify the ESP configuration.
+
 1. Configure a custom configuration profile for HoloLens devices (known issue).
+
 1. Verify the profile status of the HoloLens devices.
 
 
@@ -89,14 +95,11 @@ If you would like to either confirm the build version on your device or update i
 
 - To configure and manage the Autopilot self-deploying mode profiles, make sure that you have access to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
+- Previously Autopilot for HoloLens 2 devices was in private preview, however with this feature entering public preview there will no longer be a need to request to join. All tenants will automatically be flighted for the capability to create an enrollment profile for their HoloLens 2 devices.  
 
-### 2. Enroll in the Windows Autopilot for HoloLens 2 program
+### 2. Verify that you can create an Autopilot profile
 
-Previously Autopilot for HoloLens 2 devices was in private preview, however with this feature entering public preview there will no longer be a need to request to join. All tenants will automatically have the capability to create an enrollment profile for their HoloLens 2 devices.  
-
-### 3. Verify that your tenant is flighted
-
-To verify that your tenant is flighted for the Autopilot program after you submit your request, follow these steps:
+To verify your tenant has received the flighting for Autopilot, follow these steps:
 
 1. Sign in to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
@@ -106,7 +109,7 @@ To verify that your tenant is flighted for the Autopilot program after you submi
    
    You should see a list that includes **HoloLens**. If this option is not present, use one of the [Feedback](hololens2-autopilot.md#feedback-for-autopilot) options to contact us.
 
-### 4. Register devices in Windows Autopilot
+### 3. Register devices in Windows Autopilot
 
 In the preparation phase, there are two primary ways you can register devices to Windows Autopilot: 
 
@@ -157,7 +160,7 @@ The device can record its hardware hash in a CSV file during the OOBE process, o
    
    ![Use the Sync and Refresh commands to view the device list.](./images/hololens-ap-devices-sync.png)  
 
-### 5. Create a device group
+### 4. Create a device group
 
 1. In Microsoft Endpoint Manager admin center, select **Groups** > **New group**.
 
@@ -177,7 +180,7 @@ The device can record its hardware hash in a CSV file during the OOBE process, o
      > These rules target attributes that are unique to Autopilot devices.
 1. Select **Save**, and then select **Create**.
 
-### 6. Create a deployment profile
+### 5. Create a deployment profile
 
 1. In Microsoft Endpoint Manager admin center, select **Devices** > **Windows** > **Windows enrollment** > **Windows Autopilot deployment profiles** > **Create profile** > **HoloLens**.
 1. Enter a profile name and description, and then select **Next**.  
@@ -206,14 +209,14 @@ The device can record its hardware hash in a CSV file during the OOBE process, o
    
    ![Review + create](./images/hololens-ap-profile-summ.png)
 
-### 7. Verify the ESP configuration
+### 6. Verify the ESP configuration
 
 The Enrollment Status Page (ESP) displays the status of the complete device configuration process that runs when an MDM managed user signs into a device for the first time. Make sure that your ESP configuration resembles the following, and verify that the assignments are correct.  
 
 > [!div class="mx-imgBorder"]
 > ![ESP configuration](./images/hololens-ap-profile-settings.png)
 
-### 8. Verify the profile status of the HoloLens devices
+### 7. Verify the profile status of the HoloLens devices
 
 1. In Microsoft Endpoint Manager Admin Center, select **Devices** > **Windows** > **Windows enrollment** > **Devices**.
 
@@ -258,7 +261,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 ## Tenantlockdown CSP and Autopilot
 - Keeps devices on the organization's tenant by locking them to the tenant even through device reset or reflash. With further security by disallowing account creation in via provisioning. 
 
-HoloLens 2 devices now support TenantLockdown CSP as of Windows Holographic version 20H2. 
+HoloLens 2 devices now support TenantLockdown CSP as of Windows Holographic, version 20H2. 
 
 [TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP enables HoloLens 2 to be tied to MDM enrollment using Autopilot only. Once TenantLockdown CSP’s RequireNetworkInOOBE node is set to either true or false (initially set) value on HoloLens 2, that value remains on the device despite re-flashing, OS updates, etc. 
 
