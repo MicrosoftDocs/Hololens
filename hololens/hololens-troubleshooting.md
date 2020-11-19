@@ -41,6 +41,16 @@ If your holograms are unstable, jumpy, or don't look right, try:
 - Increasing the light in your room.
 - Walking around and looking at your surroundings so that HoloLens can scan them more completely.
 - Calibrating your HoloLens for your eyes. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
+ 
+### Filling Bugs and Feedback for when Holograms don't look good
+ 
+1. Please record and share an [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. **This is Super important!**
+1. Enable full telemetry via the Settings app
+1. Get the latest scale error fixes by updating to the Windows Holographic, version 20H2 build. After updating perform the following:
+    1. Remove all Holograms via **Settings** app -> **System** -> **Holograms** -> then select **Remove all holograms** and start with a fresh map.
+    1. Perform IPD calibration. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
+    1. Re-test the scenario and see if it still persists.
+1. If updating does not fix the issue, please file a [Feedback Hub issue](hololens-feedback.md) report back to us with the **title and approximate date/time** of the submission.
 
 ## HoloLens doesn't respond to hand input
 
