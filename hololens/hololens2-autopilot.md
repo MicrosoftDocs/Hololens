@@ -18,9 +18,9 @@ manager: jarrettr
 
 # Windows Autopilot for HoloLens 2
 
-Starting with Windows Holographic version 2004, HoloLens 2 supports Windows Autopilot [(https://docs.microsoft.com/mem/autopilot/windows-autopilot)] Self-Deploying Mode [(https://docs.microsoft.com/mem/autopilot/self-deploying)]. Administrators can configure the out-of-box experience (OOBE) in Microsoft Endpoint Manager and enable end-users to prepare devices for business use with little to no interaction. This reduces inventory management overhead, cost of hands-on device preparation and support calls from employees during the setup experience.   
+[Starting with Windows Holographic version 2004, HoloLens 2 supports Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) [Self-Deploying Mode](https://docs.microsoft.com/mem/autopilot/self-deploying). Administrators can configure the out-of-box experience (OOBE) in Microsoft Endpoint Manager and enable end-users to prepare devices for business use with little to no interaction. This reduces inventory management overhead, cost of hands-on device preparation and support calls from employees during the setup experience.   
 
-Like for Surface devices, it is recommended that customers work with their Microsoft Cloud Service Provider (reseller or distributor) to get devices registered with the Autopilot service through Partner Center. Other methods for device registration are outlined here [(https://docs.microsoft.com/mem/autopilot/add-devices)], though leveraging Microsoft's channel partners ensures the most effective end-to-end path. 
+Like for Surface devices, it is recommended that customers work with their Microsoft Cloud Service Provider (reseller or distributor) to get devices registered with the Autopilot service through Partner Center. Other methods for device registration are outlined [here](https://docs.microsoft.com/mem/autopilot/add-devices), though leveraging Microsoft's channel partners ensures the most effective end-to-end path. 
 
 > [!NOTE]
 > As of 11/20/2020 Autopilot configuration for HoloLens in Microsoft Endpoint Manager is transitioning to **Public Preview**. Customers no longer need to enroll in the private preview and all tenants will be able to setup Autopilot in the MEM admin center.
