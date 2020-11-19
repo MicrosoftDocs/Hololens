@@ -49,8 +49,8 @@ When planning your Kiosk you'll need to be able to answer the following question
 You can configure any HoloLens 2 device to use kiosk mode.
 
 > [!IMPORTANT]
-> Kiosk mode is available only if the device has Windows Holographic for Business. 
-> All HoloLens 2 devices ship with Windows Holographic for Business and there are no other editions. Every HoloLens 2 devices is able to run Kiosk mode out of the box.
+> Kiosk mode is available only if the device has Windows Holographic for Business. All HoloLens 2 devices ship with Windows Holographic for Business and there are no other editions. Every HoloLens 2 devices is able to run Kiosk mode out of the box.
+>
 > HoloLens (1st gen) devices need to be upgraded both in terms of OS build and OS edition. Here is more information on updating a HoloLens (1st gen) to [Windows Holographic for Business](hololens1-upgrade-enterprise.md) edition. To update a HoloLens (1st gen) device to use kiosk mode, you must first make sure that the device runs Windows 10, version 1803, or a later version. If you have used the Windows Device Recovery Tool to recover your HoloLens (1st gen) device to its default build, or if you have installed the most recent updates, your device is ready to configure.
 
 > [!IMPORTANT]  
