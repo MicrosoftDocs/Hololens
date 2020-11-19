@@ -18,7 +18,7 @@ manager: jarrettr
 
 # Windows Autopilot for HoloLens 2
 
-[Starting with Windows Holographic version 2004, HoloLens 2 supports Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) [Self-Deploying Mode](https://docs.microsoft.com/mem/autopilot/self-deploying). Administrators can configure the out-of-box experience (OOBE) in Microsoft Endpoint Manager and enable end-users to prepare devices for business use with little to no interaction. This reduces inventory management overhead, cost of hands-on device preparation and support calls from employees during the setup experience.   
+Starting with Windows Holographic version 2004, HoloLens 2 supports Windows Autopilot [Self-Deploying Mode](https://docs.microsoft.com/mem/autopilot/self-deploying). Administrators can configure the out-of-box experience (OOBE) in Microsoft Endpoint Manager and enable end-users to prepare devices for business use with little to no interaction. This reduces inventory management overhead, cost of hands-on device preparation and support calls from employees during the setup experience. To learn more about Windows Autopilot, click [here]((https://docs.microsoft.com/mem/autopilot/windows-autopilot)]
 
 Like for Surface devices, it is recommended that customers work with their Microsoft Cloud Service Provider (reseller or distributor) to get devices registered with the Autopilot service through Partner Center. Other methods for device registration are outlined [here](https://docs.microsoft.com/mem/autopilot/add-devices), though leveraging Microsoft's channel partners ensures the most effective end-to-end path. 
 
