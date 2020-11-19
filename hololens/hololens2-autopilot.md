@@ -75,8 +75,9 @@ Please follow the steps below to set up your environment:
 
      - Go through the hummingbird scene
      - Choose the language and locale
-     - Establish network connection
      - Run eye-calibration
+     - Establish network connection
+
 
 - Windows Holographic, version 20H2 supports [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot), which locks a device to a tenant and  ensures that the device remains bound to that tenant in case of accidental or intentional resets or wipes.  
 
