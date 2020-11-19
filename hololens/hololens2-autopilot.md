@@ -71,7 +71,7 @@ Please follow the steps below to set up your environment:
 
 - [Windows Holographic, version 2004] only supports Autopilot over ethernet connection. Ensure the HoloLens is connected to ethernet using a "USB-C to Ethernet" adapter **before turning it on**. Upon device boot no user interaction is required. 
 
-- [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) (uild 19041.1128) or later support Autopilot over Wi-Fi, although you may still use ethernet adapters. For devices connected via Wi-fi, the user must only:
+- [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) (build 19041.1128) or later support Autopilot over Wi-Fi, although you may still use ethernet adapters. For devices connected via Wi-fi, the user must only:
 
      - Go through the hummingbird scene. 
      - Choose the language and locale.
