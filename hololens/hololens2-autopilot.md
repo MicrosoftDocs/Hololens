@@ -84,7 +84,7 @@ Please follow the steps below to set up your environment:
 
 ### 2. Register devices in Windows Autopilot
 
-Your devices must be registered in Windows Autopilot before first setup. For MEM documentation on device registration please see [Adding devices to Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices) documentation.  
+Your devices must be registered in Windows Autopilot before first setup. For MEM documentation on device registration please see [Adding devices to Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices).  
 
 There are two primary ways to register HoloLens devices: 
 
