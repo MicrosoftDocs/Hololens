@@ -73,10 +73,10 @@ Please follow the steps below to set up your environment:
 
 - [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) (build 19041.1128) or later support Autopilot over Wi-Fi, although you may still use ethernet adapters. For devices connected via Wi-fi, the user must only:
 
-     - Go through the hummingbird scene. 
-     - Choose the language and locale.
-     - Establish network connection.
-     - Run eye-calibration.
+     - Go through the hummingbird scene
+     - Choose the language and locale
+     - Establish network connection
+     - Run eye-calibration
 
 - Windows Holographic, version 20H2 supports [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot), which locks a device to a tenant and  ensures that the device remains bound to that tenant in case of accidental or intentional resets or wipes.  
 
@@ -88,7 +88,9 @@ Your devices must be registered in Windows Autopilot before first setup. For MEM
 
 There are two primary ways to register HoloLens devices: 
 
-1. **Reseller can register devices in the Partner Center when you place an order.** [Learn more](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration)]. This is the recommended path. 
+1. **Reseller can register devices in the Partner Center when you place an order.** 
+ > [!NOTE]  
+   > This is the recommended path for adding devices to the Autopilot service. [Learn more](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration).  
 
    or
    
@@ -280,7 +282,7 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
 
-## Known Issues & Limitations
+## Known Issues & limitations
 
 - We are investigating an issue where device-context based application install configured in MEM does not apply to HoloLens. [Learn more about device context and user context installs.](https://docs.microsoft.com/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
 - While setting up Autopilot over Wi-Fi, there may be an instance where the Autopilot profile is not downloaded when Internet connection is first established. In this case End User License Agreement (EULA) is presented and the user has the option to proceed with non-Autopilot setup experience. To retry setting up with Autopilot, put the device to sleep and then power up, or reboot the device and let it try again.
@@ -293,12 +295,14 @@ The following articles may be a useful resource for you to learn more informatio
 - [Troubleshoot Windows device enrollment problems in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot - Policy Conflicts](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
 
-## Feedback for Autopilot
+## Feedback and support for Autopilot
 
 To provide feedback or report issues, use one of the following methods:
 
-- Use the Feedback Hub app. You can find this app on a HoloLens-connected computer. In Feedback Hub, select the **Enterprise Management** > **Device** category. When you provide feedback or report an issue, provide a detailed description. If applicable, include screenshots and logs.
-- If you encounter issues in Intune during registration of device or Autopilot profile not getting assigned, please open a support ticket at [https://aka.ms/apsupport](https://aka.ms/apsupport) .
-- If you encounter issues on HoloLens device during the Autopilot experience, please open a support ticket at [https://aka.ms/hlsupport](https://aka.ms/hlsupport) with [offline diagnostic logs](hololens-diagnostic-logs.md#offline-diagnostics).
+- For support on device registration please contact your reseller or distributor.
+- For general support inquiries about Windows Autopilot, or for issues like profile assignments, group creation or MEM portal controls, [please contact Microsoft Endpoint Manager support](https://docs.microsoft.com/mem/get-support)  
+- If your device is registered to the Autopilot service and the profile is assigned on MEM portal, contact HoloLens [support](https://docs.microsoft.com/hololens/) (see 'Support' card). Please open a support ticket and if applicable, include screenshots and logs by capturing [offline diagnostic logs](hololens-diagnostic-logs.md#offline-diagnostics) during the out-of-box-experience (OOBE).
+- To report an issue from the device, use the Feedback Hub app on your HoloLens. In Feedback Hub, select the **Enterprise Management** > **Device** category. 
+- To provide general feedback on Autopilot for HoloLens, you can submit this [survey](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7vUmjNI0XhCp1T72ODD84xUMEM3TVJPOURBRkNVWkYwM0RWWEhJNVdJSi4u&wdLOR=cEF1F57F6-AD9B-4CCE-B919-AB5AE320A993) 
 
-  Provide a detailed description in your message. However, unless Support personnel specifically request it, do not include data such as screenshots or logs. Such data might include private or personally identifiable information (PII).
+
