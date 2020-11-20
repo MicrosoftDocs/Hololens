@@ -44,13 +44,13 @@ If your holograms are unstable, jumpy, or don't look right, try:
  
 ### Filling Bugs and Feedback for when Holograms don't look good
  
-1. Please record and share an [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. **This is Super important!**
-1. Enable full telemetry via the Settings app
-1. Get the latest scale error fixes by updating to the Windows Holographic, version 20H2 build. After updating perform the following:
+1. Please record and a [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. This video can be later uploaded through Feedback Hub as an attached file.  
+1. Enable full telemetry via the **Settings** app -> **Privacy** -> **Diagnostics & feedback** and under **Optional diagnostics data** ensure the toggle is set to **On**
+1. Get the latest scale error fixes by updating to the [Windows Holographic, version 20H2 build](hololens-release-notes.md#windows-holographic-version-20h2). After updating perform the following:
     1. Remove all Holograms via **Settings** app -> **System** -> **Holograms** -> then select **Remove all holograms** and start with a fresh map.
     1. Perform IPD calibration. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
     1. Re-test the scenario and see if it still persists.
-1. If updating does not fix the issue, please file a [Feedback Hub issue](hololens-feedback.md) report back to us with the **title and approximate date/time** of the submission.
+1. If updating does not fix the issue, please file a [Feedback Hub issue](hololens-feedback.md). After you've filled feedback you can use the **Share** button, to create an easy to share link that can be sent when contacting support. 
 
 ## HoloLens doesn't respond to hand input
 
