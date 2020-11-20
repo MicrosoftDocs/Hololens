@@ -219,10 +219,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
     
     - Connect your device with "USB-C to Wifi" adapters for wireless internet connectivity and let HoloLens 2 complete Autopilot experience automatically.
 
-       > [!NOTE]
-       > Using Autopilot will have an effect on the [device owner](security-adminless-os.md#device-owner).
-   
-       > [!IMPORTANT]  
+        > [!IMPORTANT]  
        > Devices attempting to use Wi-Fi networks in OOBE for Autopilot must be on [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2).
        >
        > For devices using ethernet adapters you must connect the device to the network before the Out-of-the-Box-Experience (OOBE) starts. The device determines whether it is provisioning as an Autopilot device while on the first OOBE screen. If the device cannot connect to the network, or if you choose not to provision the device as an Autopilot device, you cannot change to Autopilot provisioning at a later time. Instead, you would have to start this procedure over in order to provision the device as an Autopilot device.
