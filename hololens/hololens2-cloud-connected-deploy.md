@@ -1,6 +1,6 @@
 ---
 title: Deployment Guide – Cloud connected HoloLens 2 deployment at scale with Remote Assist - Deploy
-description: Enroll HoloLens devices over a Cloud Connected network
+description: How to validate enrollment and Remote Assist for HoloLens devices over a Cloud Connected network
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill
@@ -55,7 +55,7 @@ This validation step will assume that you have previously completed the last val
 2. Sign into Teams using the second AAD user account than the one currently signed into your HoloLens. Once signed in your PC you will be ready to receive the call.
 3. Unlock your HoloLens and sign in.
 4. To launch the Remote Assist app open the **Start Menu** and select **Remote Assist**. Remote Assist is not only bundled as an inbox app but pinned to the HoloLens 2&#39;s start menu. In an event you don&#39;t see it pinned to the Start menu, then open the **All apps** list to look for it.
-5. Once Remote Assist starts it should identify the user of the device via [SSO](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-single-sign-on) and log into the app.
+5. Once Remote Assist starts it should identify the user of the device via [SSO](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) and log into the app.
 6. From within the app select **Search** and search for the second user on the PC. Select the user to start the call.
 7. From your PC answer the call.
 
@@ -63,7 +63,7 @@ Congratulations, you&#39;ve successfully connected and are on your remote assist
 
 - [Inking annotations](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/add-annotations-hololens)
 - [Share a file and view in mixed reality](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/display-save-files)
-- [Get help in another HoloLens app](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/get-help-hololens-app-hololens)
+- [Get help in another HoloLens app](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/get-help-hololens-app-hololens)
 
 ## Next step
 

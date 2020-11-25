@@ -26,7 +26,7 @@ During the guide we will cover, how to enroll your devices into your device mana
 
 This guide has the specific goal of setting up Remote Assist within your organization on your HoloLens devices. We will cover the necessities needed to achieve that goal. In order to maintain focus on this goal certain preparations and configurations will be pre-selected. These may be in order to optimize for this deployment or to reduce the items needed to configure. You will be informed of these choices.
 
-This is a set up similar to this [Scenario](https://docs.microsoft.com/en-us/hololens/common-scenarios#scenario-a), which is a good option for many Proof of Concept deployments.
+This is a set up similar to this [Scenario](https://docs.microsoft.com/hololens/common-scenarios#scenario-a), which is a good option for many Proof of Concept deployments.
 
 - Wi-Fi networks are typically fully open to the Internet and Cloud services.
 - Azure AD Join with MDM Auto Enrollment -- MDM (Intune) Managed
@@ -48,29 +48,29 @@ Remote Assist allows for collaborative maintenance and repair, remote inspection
 
 Prepare:
 
-- Learn about the infrastructure essentials for HoloLens 2 devices.
-- Learn more about AAD and set up one if you don&#39;t have it.
-- Learn about Identity management and how to best set up AAD accounts.
-- Learn more about MDM, and set up with Intune if you don&#39;t already have one ready.
-- Learn about the networking requirements of Remote Assist.
-- Optionally: VPN to connect to organizational resources
+- [Learn about the infrastructure essentials for HoloLens 2 devices.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
+- [Learn more about AAD and set up one if you don&#39;t have it.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+- [Learn about Identity management and how to best set up AAD accounts.](hololens2-cloud-connected-prepare.md#identity-management)
+- [Learn more about MDM, and set up with Intune if you don&#39;t already have one ready.](hololens2-cloud-connected-prepare.md#mobile-device-management)
+- [Learn about the networking requirements of Remote Assist.](hololens2-cloud-connected-prepare.md#network)
+- [Optionally: VPN to connect to organizational resources](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
 Configure:
 
-- How to create Users and Groups.
-- How to set up Auto-enrollment within AAD.
-- How to assign your Intune license.
-- How to assign your Remote Assist licenses.
+- [How to create Users and Groups.](hololens2-cloud-connected-configure.md#azure-users-and-groups)
+- [How to set up Auto-enrollment within AAD.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
+- [How to assign your Application licenses.](hololens2-cloud-connected-configure.md#application-licenses)
 
 Deploy:
 
-- Set up your HoloLens 2 and validate enrollment.
-- Validate you can make a Remote Assist call.
+- [Set up your HoloLens 2 and validate enrollment.](hololens2-cloud-connected-deploy.md#enrollment-validation)
+- [Validate you can make a Remote Assist call.](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
 
 Maintain:
 
-- How to update Remote Assist using the Microsoft Store app.
-- Making a support plan.
+- [How to update Remote Assist using the Microsoft Store app.](hololens2-cloud-connected-maintain.md#updates)
+- [Making a support plan.](hololens2-cloud-connected-maintain.md#support-plan)
+- [Development plan.](hololens2-cloud-connected-maintain.md#development-plan)
 
 ## Next step
 

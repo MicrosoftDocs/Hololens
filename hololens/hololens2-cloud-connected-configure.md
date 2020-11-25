@@ -1,6 +1,6 @@
 ---
 title: Deployment Guide – Cloud connected HoloLens 2 deployment at scale with Remote Assist - Configure
-description: Slide load and install apps via UI
+description: How to set up configurations to enroll HoloLens devices over a Cloud Connected network
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill
@@ -47,9 +47,9 @@ Application licenses may be needed to grant access to purchased work apps or onl
 
 The requirements for licenses can be different depending on if the user will be making the Remote Assist call from a device or will be a remote collaborator from Microsoft Teams. However if your user could be making remote assist calls or be using teams then there is no harm in assigning them licenses for both.
 
-1. Learn more about the different [Licensing and product requirements per role](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/requirements#licensing-and-product-requirements-per-role). There are a few different types of Remote Assist licenses so be sure to get the correct ones for your needs.
-2. You&#39;ll need to [acquire the license](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/buy-remote-assist).
-3. [Apply your licenses](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/deploy-remote-assist) to the group.
+1. Learn more about the different [Licensing and product requirements per role](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#licensing-and-product-requirements-per-role). There are a few different types of Remote Assist licenses so be sure to get the correct ones for your needs.
+2. You&#39;ll need to [acquire the license](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-remote-assist).
+3. [Apply your licenses](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist) to the group.
 
 ## Next step
 

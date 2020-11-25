@@ -1,6 +1,6 @@
 ---
 title: Deployment Guide – Cloud connected HoloLens 2 deployment at scale with Remote Assist - Prepare
-description: Enroll HoloLens devices over a Cloud Connected network
+description: How to prepare to enroll HoloLens devices over a Cloud Connected network
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill
@@ -63,8 +63,8 @@ For Dynamics 365 Remote Assist there are a variety of network conditions, includ
 
 More information:
 
-- [Network requirements](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/requirements#network-requirements)
-- [Network optimization recommendations](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-hololens)
+- [Network requirements](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements)
+- [Network optimization recommendations](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-hololens)
 
 ### Optional: Connect your HoloLens to VPN
 
