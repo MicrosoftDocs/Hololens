@@ -39,10 +39,15 @@
 ## [How to Update HoloLens](hololens-update-hololens.md)
 
 # Prepare
-## Planning for HoloLens 2 Enterprise Deployment
-### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
-### [Common Infrastructure Deployment Scenarios](common-scenarios.md)
+## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ## Common Scenarios
+### [Common Infrastructure Deployment Scenarios](common-scenarios.md)
+### Cloud connected HoloLens 2 deployment at scale with Remote Assist
+#### [Cloud connected - Overview](hololens2-cloud-connected-overview.md)
+#### [Cloud connected - Prepare](hololens2-cloud-connected-prepare.md)
+#### [Cloud connected - Configure](hololens2-cloud-connected-configure.md)
+#### [Cloud connected - Deploy](hololens2-cloud-connected-deploy.md)
+#### [Cloud connected - Maintain](hololens2-cloud-connected-maintain.md)
 ### [Offline Secure](hololens-common-scenarios-offline-secure.md)
 ## Security
 ### [Security overview](security-overview.md)
