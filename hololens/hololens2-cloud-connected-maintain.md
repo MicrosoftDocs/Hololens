@@ -24,7 +24,7 @@ Microsoft designed Windows Update for Business to provide IT administrators with
 
 Learn how to [manage HoloLens updates](https://docs.microsoft.com/hololens/hololens-updates) including scheduled days, scheduled time, and setting active hours on the device so it will update outside of working hours.
 
-Remote Assist is a In-Box app, and can be update through the Microsoft Store app. For all apps that are downloaded through the Microsoft Store they can be [updated through the Microsoft Store](https://docs.microsoft.com/en-us/hololens/holographic-store-apps#update-apps) app itself manually.
+Remote Assist is a In-Box app, and can be update through the Microsoft Store app. For all apps that are downloaded through the Microsoft Store they can be [updated through the Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) app itself manually.
 
 ## Support Plan
 
@@ -32,7 +32,7 @@ A support plan is an excellent thing to have in place. Having someone, or a grou
 
 1. Your Support desk.
 2. Your HoloLens Expert team
-3. [HoloLens Docs](https://docs.microsoft.com/en-us/hololens/) / [HoloLens Troubleshooting Docs](https://docs.microsoft.com/hololens/hololens-troubleshooting)
+3. [HoloLens Docs](https://docs.microsoft.com/hololens/) / [HoloLens Troubleshooting Docs](https://docs.microsoft.com/hololens/hololens-troubleshooting)
 4. [Contact Support](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 ## Development Plan
@@ -41,4 +41,4 @@ With your device successfully enrolled you are now prepared to deploy Line of Bu
 
 If you already have a line of business app then you&#39;re ready to [deploy your app through MDM](https://docs.microsoft.com/hololens/app-deploy-intune). If you&#39;d prefer a different method then review the [application deployment overview for HoloLens 2](https://docs.microsoft.com/hololens/app-deploy-overview) to learn more methods of deploying your LOB app to your devices.
 
-If you&#39;ve yet to create your own LOB app or are still in the process of creation then review our mixed reality development docs to [start designing and prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design) or learn the core concepts to [get started with mixed reality development.](https://docs.microsoft.com/en-us/windows/mixed-reality/discover/get-started-with-mr)
+If you&#39;ve yet to create your own LOB app or are still in the process of creation then review our mixed reality development docs to [start designing and prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design) or learn the core concepts to [get started with mixed reality development.](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)
