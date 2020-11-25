@@ -1,5 +1,6 @@
 ---
 title: Common Infrastructure Deployment Scenarios
+description: Some common deployment scenarios based on different common infrastructures
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 6/30/2020
 keywords: hololens
@@ -16,12 +17,13 @@ appliesto:
 ---
 
 # Common Infrastructure Deployment Scenarios
+
 This following information provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise.
 
 ## Scenarios
 
 The diagram below represents three typical scenarios for HoloLens 2 deployments. 
-![scenarios](images/scenarios.jpg)
+![Scenarios diagram](images/scenarios.jpg)
 
 ### Scenario A
 
@@ -37,7 +39,7 @@ HoloLens 2 is deployed for use primarily in environments external to a corporate
 * Common Challenges
    * Determining which MDM configurations to apply to the HoloLens 2 based on scenario requirements.
 
-For a deployment guide that is similar to this scenario please review our guide for [Cloud connected HoloLens 2 deployment at scale with Remote Assist](hololens2-cloud-connected-overview.md). 
+For a deployment guide that is similar to this scenario please review our guide for [Cloud connected HoloLens 2 deployment at scale with Remote Assist](hololens2-cloud-connected-overview.md).
 
 ### Scenario B
 
