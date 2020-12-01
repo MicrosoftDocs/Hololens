@@ -26,7 +26,7 @@ During the guide we will cover, how to enroll your devices into your device mana
 
 This guide has the specific goal of setting up Remote Assist within your organization on your HoloLens devices. We will cover the necessities needed to achieve that goal. In order to maintain focus on this goal certain preparations and configurations will be pre-selected. These may be in order to optimize for this deployment or to reduce the items needed to configure. You will be informed of these choices.
 
-This is a set up similar to this [Scenario](https://docs.microsoft.com/hololens/common-scenarios#scenario-a), which is a good option for many Proof of Concept deployments.
+This is a set up similar to [Scenario A: Deploy to cloud connect devices](https://docs.microsoft.com/hololens/common-scenarios#scenario-a), which is a good option for many Proof of Concept deployments.
 
 - Wi-Fi networks are typically fully open to the Internet and Cloud services.
 - Azure AD Join with MDM Auto Enrollment -- MDM (Intune) Managed
