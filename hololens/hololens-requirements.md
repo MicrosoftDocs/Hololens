@@ -10,7 +10,7 @@ ms.reviewer: aboeger
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/30/2020
+ms.date: 11/04/2020
 ---
 
 # HoloLens 2 enterprise deployment and management
@@ -164,7 +164,7 @@ Microsoft will also deliver and install updates for security and stability direc
 
 Enterprise customers can manage the update experience and process on HoloLens 2s using an MDM system. In most cases, policies to manage the update process will apply to both feature and quality updates. More details in [configuring MDM for HoloLens updates](https://docs.microsoft.com/hololens/hololens-updates).
 
-### Managing Applications 
+### Managing Applications
 
 IT administrators can control which apps are allowed to be installed on the HoloLens 2 and how they should be kept up-to-date.
 
@@ -183,3 +183,6 @@ HoloLens 2 supports 3 methods of wiping the device
 **Device Reset from within Settings:** End users can manually reset the HoloLens 2 within the Settings app on the device. Erases all stored data on the device.
 
 **Advanced Recovery Companion (ARC):** From a PC running the ARC tool, a user or admin can flash a HoloLens 2 connected to the PC via USB cable. Erases all stored data on the device.
+
+> [!div class="nextstepaction"]
+> [Common Deployment Scenarios](common-scenarios.md)

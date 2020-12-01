@@ -40,10 +40,10 @@
 
 # Prepare
 ## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
-## Common Scenarios
-### [Common Infrastructure Deployment Scenarios](common-scenarios.md)
-### Cloud connected HoloLens 2 deployment at scale with Remote Assist
-#### [Cloud connected - Overview](hololens2-cloud-connected-overview.md)
+## Common Deployment Scenarios
+### [Infrastructure Deployment Scenarios](common-scenarios.md)
+### Cloud connected HoloLens 2 deployment with Remote Assist
+#### [Cloud connected - Deployment Overview](hololens2-cloud-connected-overview.md)
 #### [Cloud connected - Prepare](hololens2-cloud-connected-prepare.md)
 #### [Cloud connected - Configure](hololens2-cloud-connected-configure.md)
 #### [Cloud connected - Deploy](hololens2-cloud-connected-deploy.md)
