@@ -1,10 +1,10 @@
 ---
 title: Known issues for HoloLens
-description: This is the list of known issues that may affect HoloLens developers.
+description: This is the list of known issues that may affect HoloLens customers and developers.
 keywords: troubleshoot, known issue, help
 author: mattzmsft
 ms.author: mazeller
-ms.date: 4/20/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.custom: 
 - CI 111456
@@ -52,6 +52,12 @@ Workarounds:
 - If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 ## Known issues for HoloLens 2 devices
+
+### Microsoft Edge fails to launch
+
+A few customers have reported an issue where Microsoft Edge fails to launch. For these customers, the issue persists through reboot and is not resolved with Windows or application updates. If you're experiencing this issue and you've confirmed Windows is up-to-date, please file a bug from the Feedback Hub app with the following category and sub-category: Install and Update > Downloading, installing, and configuring Windows Update.
+
+There are no known workarounds as we've been unable to root cause the issue so far. Filing a bug via Feedback Hub will help our investigation!
 
 ### Keyboard does not switch to special characters
 
