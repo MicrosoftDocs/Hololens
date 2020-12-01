@@ -16,7 +16,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Common Infrastructure Deployment Scenarios
+# Common Infrastructure Deployment Scenarios Overview
 
 This following information provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise. Often how you manage your devices and how access your organization's resources is largely determined by factors already in place. Based on the existing infrastructure we invite you to review the common device management style in the following scenarios, and try out our guides for deploying in the scenario matching your needs.
 
@@ -39,10 +39,10 @@ HoloLens 2 is deployed for use primarily in environments external to a corporate
 * Common Challenges
    * Determining which MDM configurations to apply to the HoloLens 2 based on scenario requirements.
 
-For a deployment guide that is similar to this scenario please review our guide for [Cloud connected HoloLens 2 deployment at scale with Remote Assist](hololens2-cloud-connected-overview.md).
+For a deployment guide that is similar to this scenario please review our guide for [Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md).
 
 > [!div class="nextstepaction"]
-> [Deployment Guide – Cloud connected HoloLens 2 deployment with Remote Assist](hololens2-cloud-connected-overview.md)
+> [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md)
 
 ### Scenario B: Deploy inside your organization's network
 

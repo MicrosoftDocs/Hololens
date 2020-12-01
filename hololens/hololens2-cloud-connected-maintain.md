@@ -42,3 +42,22 @@ With your device successfully enrolled you are now prepared to deploy Line of Bu
 If you already have a line of business app then you&#39;re ready to [deploy your app through MDM](https://docs.microsoft.com/hololens/app-deploy-intune). If you&#39;d prefer a different method then review the [application deployment overview for HoloLens 2](https://docs.microsoft.com/hololens/app-deploy-overview) to learn more methods of deploying your LOB app to your devices.
 
 If you&#39;ve yet to create your own LOB app or are still in the process of creation then review our mixed reality development docs to [start designing and prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design) or learn the core concepts to [get started with mixed reality development.](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)
+
+## Device Management 
+
+While this guide talked about setting up Mobile Device Management (MDM) it wasn't employed to apply device restrictions or policies were applied to devices. Device management can be used to both to allow access by pushing certificates, or restrict access with a variety of device restrictions. 
+
+In many cases devices can have connectivity restrictions such as Bluetooth, VPN, USB or even turning off access to the camera or microphone. If any of these interest you then we encourage you to read our [common device restrictions page](hololens-common-device-restrictions.md).
+
+There are other more complex device restrictions you can use. Such as:
+
+- Limiting the pages that can be viewed in the Settings app by using [SettingsPageVisibility](settings-uri-list.md), allowing users to only access the settings they need to adjust such as changing their Wi-Fi connection.
+- Use [Kiosk mode](hololens-kiosk.md) to limit the UI presented to users on a device. You can set Kiosks to show a single app, or multiple apps with a custom start page. Kiosks can also present different experiences to different users.  
+- [Windows Application Control (WDAC)](windows-defender-application-control-wdac.md) to keep specific apps or processes from launching entirely.
+
+If you'd like to learn about more different methods of device management or device restrictions then take the next step and read our Device Management Overview.
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Read the CSPs and Device Management Overview](hololens-csp-policy-overview.md)

@@ -77,12 +77,12 @@ In extraordinary situations, you may have to "clean-flash" the HoloLens 2. Pleas
 - [Overheating](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - OS crashes (which are distinct from application crashes)
 
-There are two ways to reflash the device. For both, you must first install [Advanced Recovery Companion from the Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
+There are two ways to reflash the device. For both, you must first [install Advanced Recovery Companion from the Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
 >If you reflash your device, all your personal data, apps, and settings will be erased, including TPM-reset information.
 
-By default, Advanced Recovery Companion is currently set to download the feature release build for [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004). To get the latest HoloLens 2 Full Flash Update (FFU) package to reflash your device via Advanced Recovery Companion, [download it here](https://aka.ms/hololens2download). This version is the latest generally available build.
+By default, Advanced Recovery Companion is set to download the most recent feature release build, check here to read our [Release notes](hololens-release-notes.md#) to learn about the latest feature release. To get the latest HoloLens 2 Full Flash Update (FFU) package to reflash your device via Advanced Recovery Companion, [click here to download the latest monthly HoloLens 2 image](https://aka.ms/hololens2download). This version is the latest generally available build.
 
 Before you start the reflash procedure, make sure the app is installed and running on your Windows 10 PC and ready to detect the device.
 
