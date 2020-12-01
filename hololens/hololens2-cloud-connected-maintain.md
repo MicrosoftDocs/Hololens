@@ -28,7 +28,7 @@ Remote Assist is a In-Box app, and can be update through the Microsoft Store app
 
 ## Support Plan
 
-A support plan is an excellent thing to have in place. Having someone, or a group trained up on troubleshooting the enrollment process on HoloLens devices and also general use of the HoloLens device within your organization is useful. In order to allow your users to have the faster resolution of their issues we suggest that your escalation process is handled in a similar to this:
+A support plan is an excellent thing to have in place. Having someone, or a group trained up on troubleshooting the enrollment process on HoloLens devices and also general use of the HoloLens device within your organization is useful. In order to allow your users to have the faster resolution of their issues we suggest that your escalation process is handled in a similar manner to this:
 
 1. Your Support desk.
 2. Your HoloLens Expert team
