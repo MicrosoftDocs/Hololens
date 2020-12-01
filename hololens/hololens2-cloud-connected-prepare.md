@@ -18,7 +18,7 @@ appliesto:
 
 # Prepare - Cloud connected Guide
 
-By the end of this article you will have set up AAD, MDM, and understand more about using AAD accounts and network requirements. This section of the guide will help you and your organization get prepared to deploy HoloLens 2 to the cloud and use Dynamics 365 Remote Assist by going over the importance of each piece of your infrastructure as well as providing links to guides to help you set up those pieces as needed.
+By the end of this article you will have set up AAD, MDM, and understand more about using AAD accounts and network requirements. This section of the guide will help you and your organization get prepared to deploy HoloLens 2 to the cloud and use Dynamics 365 Remote Assist. It will go over the importance of each piece of your infrastructure as well as providing links to guides to help you set up those pieces as needed.
 
 ## Infrastructure Essentials
 
