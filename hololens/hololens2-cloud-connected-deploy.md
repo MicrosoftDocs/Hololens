@@ -35,9 +35,9 @@ If your device isn&#39;t currently sitting in a factory settings state, now woul
 
 ![HoloLens 2 Settings - About](./images/hololens2-settings-about.jpg)
 
-1. You can verify that your device is successfully enrolled in the AAD within the Settings app. From **Settings** select **Accounts** -\&gt; **Access work or school**. From this screen you can verify you are successfully enrolled by seeing &quot;Connected to _nameofAAD_&#39;s Azure AD. Connected by _yourusername_@_nameofAAD_.onmicrosoft.com&quot;.
+1. You can verify that your device is successfully enrolled in the AAD within the Settings app. From **Settings** select **Accounts** -> **Access work or school**. From this screen you can verify you are successfully enrolled by seeing &quot;Connected to _nameofAAD_&#39;s Azure AD. Connected by _yourusername_@_nameofAAD_.onmicrosoft.com&quot;.
 
-To validate the device has AAD Joined we can check the Azure Active Directory from the [Azure Portal](https://portal.azure.com/#home) -\&gt; **Azure Active Directory** -\&gt; **Devices** -\&gt; **All devices** , and search the device name. You&#39;ll be able to see the device is a part of the Azure Active Directory.
+To validate the device has AAD Joined we can check the Azure Active Directory from the [Azure Portal](https://portal.azure.com/#home) -> **Azure Active Directory** -> **Devices** -> **All devices** , and search the device name. You&#39;ll be able to see the device is a part of the Azure Active Directory.
 
 ![Azure Active Directory - Device](./images/aad-enrollment.png)
 
