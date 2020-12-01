@@ -20,11 +20,11 @@ appliesto:
 
 This guide helps IT professionals plan for and deploy Microsoft HoloLens 2 devices to their organization with the overall goal of having those devices cloud connected to your organization with Dynamics 365 Remote Assist ready to use. Keep in mind, this will serve as a model for proof-of-concept deployments to your organization across a variety of HoloLens 2 use cases.
 
-During the guide we will cover, how to enroll your devices into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device set up. To do this we will go over the important pieces of infrastructure needed to get set up and running – achieving deployment at scale with HoloLens 2.
+During the guide we will cover how to enroll your devices into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device set up. To do this we will go over the important pieces of infrastructure needed to get set up and running – achieving deployment at scale with HoloLens 2.
 
 ## In this Guide
 
-This guide has the specific goal of setting up Remote Assist within your organization on your HoloLens devices. We will cover the necessities needed to achieve that goal. In order to maintain focus on this goal certain preparations and configurations will be pre-selected. These may be in order to optimize for this deployment or to reduce the items needed to configure. You will be informed of these choices.
+This guide has the specific goal of setting up Remote Assist within your organization on your HoloLens devices. We will cover the necessities needed to achieve that goal. In order to maintain focus on this goal certain preparations and configurations will be pre-selected in order to optimize for this deployment or to reduce the items needed to configure. You will be informed of these choices, and can customize your deployment based on your business needs.
 
 This is a set up similar to [Scenario A: Deploy to cloud connect devices](https://docs.microsoft.com/hololens/common-scenarios#scenario-a), which is a good option for many Proof of Concept deployments.
 
