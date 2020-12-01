@@ -40,7 +40,7 @@ No additional device restrictions or configurations will be applied in this guid
 
 ## Learn about Remote Assist
 
-Remote Assist allows for collaborative maintenance and repair, remote inspection, as well as knowledge sharing and training. By connecting people in different roles and locations a technician using Remote Assist can connect with a remote collaborator on Microsoft Teams and combine video, screenshots, and annotations to solve problems in real time even when they aren&#39;t in the same location. Remote collaborators can insert reference images, schematics, and other helpful information the technician&#39;s physical space so they can refer to the schematic while working heads-up and hands-free on HoloLens.
+Remote Assist allows for collaborative maintenance and repair, remote inspection, as well as knowledge sharing and training. By connecting people in different roles and locations a technician using Remote Assist can connect with a remote collaborator on Microsoft Teams. They can combine video, screenshots, and annotations to solve problems in real time even when they aren&#39;t in the same location. Remote collaborators can insert reference images, schematics, and other helpful information the technician&#39;s physical space so they can refer to the schematic while working heads-up and hands-free on HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -48,29 +48,33 @@ Remote Assist allows for collaborative maintenance and repair, remote inspection
 
 Prepare:
 
-- [Learn about the infrastructure essentials for HoloLens 2 devices.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-- [Learn more about AAD and set up one if you don&#39;t have it.](hololens2-cloud-connected-prepare.md#azure-active-directory)
-- [Learn about Identity management and how to best set up AAD accounts.](hololens2-cloud-connected-prepare.md#identity-management)
-- [Learn more about MDM, and set up with Intune if you don&#39;t already have one ready.](hololens2-cloud-connected-prepare.md#mobile-device-management)
-- [Learn about the networking requirements of Remote Assist.](hololens2-cloud-connected-prepare.md#network)
-- [Optionally: VPN to connect to organizational resources](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
+> [!div class="checklist"]
+> * [Learn about the infrastructure essentials for HoloLens 2 devices.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
+> * [Learn more about AAD and set up one if you don&#39;t have it.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> * [Learn about Identity management and how to best set up AAD accounts.](hololens2-cloud-connected-prepare.md#identity-management)
+> - [Learn more about MDM, and set up with Intune if you don&#39;t already have one ready.](hololens2-cloud-connected-prepare.md#mobile-device-management)
+> - [Learn about the networking requirements of Remote Assist.](hololens2-cloud-connected-prepare.md#network)
+> - [Optionally: VPN to connect to organizational resources](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
 Configure:
 
-- [How to create Users and Groups.](hololens2-cloud-connected-configure.md#azure-users-and-groups)
-- [How to set up Auto-enrollment within AAD.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
-- [How to assign your Application licenses.](hololens2-cloud-connected-configure.md#application-licenses)
+> [!div class="checklist"]
+> - [How to create Users and Groups.](hololens2-cloud-connected-configure.md#azure-users-and-groups)
+> - [How to set up Auto-enrollment within AAD.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
+> - [How to assign your Application licenses.](hololens2-cloud-connected-configure.md#application-licenses)
 
 Deploy:
 
-- [Set up your HoloLens 2 and validate enrollment.](hololens2-cloud-connected-deploy.md#enrollment-validation)
-- [Validate you can make a Remote Assist call.](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
+> [!div class="checklist"]
+> - [Set up your HoloLens 2 and validate enrollment.](hololens2-cloud-connected-deploy.md#enrollment-validation)
+> - [Validate you can make a Remote Assist call.](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
 
 Maintain:
 
-- [How to update Remote Assist using the Microsoft Store app.](hololens2-cloud-connected-maintain.md#updates)
-- [Making a support plan.](hololens2-cloud-connected-maintain.md#support-plan)
-- [Development plan.](hololens2-cloud-connected-maintain.md#development-plan)
+> [!div class="checklist"]
+> - [How to update Remote Assist using the Microsoft Store app.](hololens2-cloud-connected-maintain.md#updates)
+> - [Making a support plan.](hololens2-cloud-connected-maintain.md#support-plan)
+> - [Development plan.](hololens2-cloud-connected-maintain.md#development-plan)
 
 ## Next step
 
