@@ -2,6 +2,18 @@
 
 
 
+## Week of November 16, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/17/2020 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 11/17/2020 | [Windows Autopilot for HoloLens 2 (Private Preview)](/hololens/hololens2-autopilot) | modified |
+| 11/17/2020 | [HoloLens 2 Development Edition FAQ](/hololens/hololens2-development-edition-faq) | modified |
+| 11/19/2020 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
+| 11/20/2020 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
+
+
 ## Week of November 09, 2020
 
 
@@ -66,14 +78,3 @@
 | 10/22/2020 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
 | 10/23/2020 | [HoloLens (1st gen) hardware](/hololens/hololens1-hardware) | modified |
 | 10/23/2020 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
-
-
-## Week of October 12, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/13/2020 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 10/15/2020 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 10/15/2020 | [Collect and use diagnostic information from HoloLens devices](/hololens/hololens-diagnostic-logs) | modified |
-| 10/16/2020 | [Collect and use diagnostic information from HoloLens devices](/hololens/hololens-diagnostic-logs) | modified |
