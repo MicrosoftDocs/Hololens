@@ -32,7 +32,7 @@ To learn more about installing and running custom apps, read [Custom holographic
 Open the Microsoft Store from the **Start** menu. Then browse for apps and games. You can use [voice commands](hololens-cortana.md) to search by saying "Search", once the search window opens say "Start dictating" and then when prompted begin saying your search terms.
 
 > [!NOTE]
-> The System Requirements for HoloLens devices are based on the architecture of the app built. If an app build for HoloLens (1st gen) has not been updated with a newer UWP in the store to include ARM architecture then it will not be available for HoloLens 2 devices. Likewise if a newer app was built for HoloLens 2 in mind and does not include x86 it will not be available for HoloLens (1st gen) devices. HoloLens device architectures:
+> The System Requirements for HoloLens devices are based on the architecture of the app build. If an app build for HoloLens (1st gen) has not been updated with to a newer UWP in the store to include the ARM architecture package, then it will not be available for HoloLens 2 devices. Likewise, if a HoloLens 2 app does not include the x86 architecture package, it will not be available for HoloLens (1st gen) devices. HoloLens device architectures:
 > - x86 = HoloLens (1st gen)
 > - ARM = HoloLens 2
 
