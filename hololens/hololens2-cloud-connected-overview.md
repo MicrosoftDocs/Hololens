@@ -79,4 +79,5 @@ Maintain:
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Cloud connected deployment - Prepare](hololens-offline.md)
+> [Cloud connected deployment - Prepare](hololens2-cloud-connected-prepare.md)
+

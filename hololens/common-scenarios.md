@@ -80,4 +80,4 @@ HoloLens 2 is deployed for use primarily offline with no network or internet acc
 For a deployment guide that is similar to this scenario please review our [Offline Secure Deployment Guide](hololens-common-scenarios-offline-secure.md).
 
 > [!div class="nextstepaction"]
-> [Deployment Guide – Offline Secure HoloLens 2](hololens2-cloud-connected-overview.md)
+> [Deployment Guide – Offline Secure HoloLens 2](hololens-common-scenarios-offline-secure.md)
