@@ -43,9 +43,9 @@ For full details and steps please read the guide on [how to enable auto enrollme
 
 ## Application Licenses
 
-Application licenses may be needed to grant access to purchased work apps or online services, these licenses can be applied to either users, user groups, or device groups. You&#39;ll need Remote Assist licenses for users in your organization to use Remote Assist. Once you&#39;ve set up your users in a group you&#39;ll be able to connect Remote Assist to that group or individual users.
+An application license allows a user to either install company purchased Apps or upgrade from a free trial to the full version of an app. Application licenses can be applied to either users, user groups, or device groups. You&#39;ll need Remote Assist licenses for users in your organization to use Remote Assist. For the purpose of this guide we'll assign Remote Assist licenses to the user group we created above in [Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups).
 
-The requirements for licenses can be different depending on if the user will be making the Remote Assist call from a device or will be a remote collaborator from Microsoft Teams. However if your user could be making remote assist calls or be using teams then there is no harm in assigning them licenses for both.
+The requirements for licenses can be different depending on if the user will be making the Remote Assist call from a device or will be a remote collaborator from Microsoft Teams. By default the Remote Assist and Teams check boxes are both marked. For the purposes of this guide, we suggest to leave the default boxes checked.
 
 1. Learn more about the different [Licensing and product requirements per role](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#licensing-and-product-requirements-per-role). There are a few different types of Remote Assist licenses so be sure to get the correct ones for your needs.
 2. You&#39;ll need to [acquire the license](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-remote-assist).
