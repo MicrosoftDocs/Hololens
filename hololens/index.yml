@@ -42,7 +42,19 @@ landingContent:
             url: hololens-update-hololens.md
 
   # Card
-  - title: Prepare 			
+  - title: Deployment Guides
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Common deployment scenarios
+            url: common-scenarios.md
+          - text: Cloud connected HoloLens 2 deployment at scale with Remote Assist
+            url: hololens2-cloud-connected-overview.md
+          - text: Offline secure deployment
+            url: hololens-common-scenarios-offline-secure.md
+
+  # Card
+  - title: Prepare
     linkLists:
       - linkListType: get-started
         links:
@@ -58,7 +70,7 @@ landingContent:
             url: hololens-commercial-features.md
 
   # Card
-  - title: Configure 			
+  - title: Configure
     linkLists:
       - linkListType: how-to-guide
         links:
