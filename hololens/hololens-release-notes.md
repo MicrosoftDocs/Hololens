@@ -25,6 +25,52 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 >[!NOTE]
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
+
+## Windows Holographic, version 20H2 – December 2020 Update
+- Build 19041.1131
+
+### Install Apps on HoloLens 2 via App Installer
+
+We are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will be **not be available for managed devices** at this time.  
+
+A device is considered “managed” if **any** of the following are true:
+- MDM [Enrolled](hololens-enroll-mdm.md)
+- Configured with [provisioning package](hololens-provisioning.md)
+- User [Identity](hololens-identity.md) is Azure AD
+
+You are now able to install Apps without needing to enable Developer Mode or using Device Portal.  Simply download (over USB or through Edge) the Appx Bundle to your device and navigate to the Appx Bundle in the File Explorer to be prompted to kick off the installation.  Alternatively, [initiate an install from a web page](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Just like apps you install from the Microsoft Store or sideload using MDM’s LOB App deployment capability, apps need to be digitally signed with the [Sign Tool](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) and the [certificate used to sign must be trusted](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) by the HoloLens device before the app can be deployed.
+
+**Application install instructions.**
+
+1.  Ensure that your device is not considered managed
+1.  Ensure that your HoloLens 2 device is powered on and connected to your PC
+1.  Ensure that you are signed into the HoloLens 2 device
+1.  On your PC navigate to your custom app, and copy yourapp.appxbundle to yourdevicename\Internal Storage\Downloads.   After you’ve finished copying your file you can disconnect your device
+1.  From your HoloLens 2 device Open the Start Menu, select All apps and launch the File Explorer app.
+1.  Navigate to the Downloads folder. You may need to on the left panel of the app select This device first, then navigate to Downloads.
+1.  Select the yourapp.appxbundle file.
+1.  The App Installer will launch. Select the Install button to install your app.
+The installed app will automatically launch upon completion of installation.
+
+You can find sample apps on [Windows Universal Samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) to test this flow.
+
+Read about the full process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
+
+![Installing MRTK Examples via App Installer](images/hololens-app-installer-picture.jpg)
+
+### Improvements and fixes in the update:
+
+- Hand tracking now maintains tracking in many new cases where the hand previously would have been lost.  In some of these new cases, only the palm position continues to update based on the user’s real hand, while the other joints are inferred based on a previous pose.  This change helps improve tracking consistency in movements such as slapping, throwing, scooping, and clapping.  It also helps in cases where the hand is close to a surface or holding an object.  When hand joints are being inferred, the [per joint accuracy](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041) value will be set to “Approximate” instead of “High.”
+- Fixed an issue where PIN reset for Azure AD accounts would show an error "Something went wrong.
+- Users should see much less post-boot OOBE crashes when launching ET, Iris from settings app, new user, or notification toast.
+- Users should have correct time zone coming out of OOBE.
+
+## Windows Holographic, version 1903 – December 2020 Update
+- Build 18362.1088
+
+This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest Windows Holographic, version 20H2 – December 2020 Update and the new App Installer feature added in the build.
+
+
 ## Windows Holographic, version 20H2
 - Build 19041.1128
 
