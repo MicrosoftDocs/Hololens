@@ -37,6 +37,9 @@ HoloLens supports several kinds of user identities. You can use one or more user
 
 Cloud-connected accounts (AAD and MSA) offer more features because they can use Azure services.  
 
+> [!NOTE]
+> While a HoloLens 2 device can support up to 64 Azure AD accounts, only 10 of those accounts may enroll in Iris Authentication. This is aligned with other Biometric authentication options for Windows Hello for Business. [Read more here.](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
+
 ## Setting up users
 
 The most common way to set up a new user is during the HoloLens out-of-box experience (OOBE). During setup, HoloLens prompts for a user to sign in by using the account that they want to use on the device. This account can be a consumer Microsoft account or an enterprise account that has been configured in Azure. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
