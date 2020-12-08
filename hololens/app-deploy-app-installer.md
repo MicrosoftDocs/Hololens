@@ -19,12 +19,12 @@ appliesto:
 # Install Apps on HoloLens 2 via App Installer
 
 
-We will ship the app installer capability soon after our Windows Holographic, version 20H2 update. We are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will be **not be available for managed devices** at this time.  
+We are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will be **not be available for managed devices** at this time.  
 
-> [!IMPORTANT]
-> This feature is currently only avalible in Windows Insider builds. [Learn more on how to enroll in Windows Insider builds](hololens-insider.md).
+> [!NOTE]
+> This feature was made available in [Windows Holographic, version 20H2 – December 2020 Update](hololens-release-notes.md). Ensure your device is [updated](hololens-update-hololens.md) to use this feature.
 
-In our Windows Insider release, we are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will be **not be available for managed devices** at this time.  
+We have **added a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will be **not be available for managed devices** at this time.  
 
 A device is considered “managed” if **any** of the following are true:
 - MDM [Enrolled](hololens-enroll-mdm.md)
