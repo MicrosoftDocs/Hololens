@@ -89,13 +89,12 @@ Your devices must be registered in Windows Autopilot before first setup. For MEM
 
 There are two primary ways to register HoloLens devices: 
 
-1. **Reseller can register devices in the Partner Center when you place an order.** 
- > [!NOTE]  
-   > This is the recommended path for adding devices to the Autopilot service. [Learn more](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration).  
+ - **Reseller can register devices in the Partner Center when you place an order.** 
 
-   or
+   > [!NOTE]  
+   > This is the recommended path for adding devices to the Autopilot service. [Learn more](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration).  
    
-2. **Retrieve the hardware hash (also known as the hardware ID) and register the device manually in MEM admin center**. 
+ - **Retrieve the hardware hash (also known as the hardware ID) and register the device manually in MEM admin center**. 
 
 **Retrieve hardware hash**
 
@@ -130,11 +129,13 @@ The device records its hardware hash in a CSV file during the OOBE process, or l
 
 1. Under **Add Windows Autopilot devices**, select the DeviceHash CSV file, select **Open**, and then select **Import**.  
    
-   ![Use the Import command to import the hardware hash.](./images/hololens-ap-hash-import.png)
+   > [!div class="mx-imgBorder"]
+   > ![Use the Import command to import the hardware hash.](./images/hololens-ap-hash-import.png)
    
 1. After the import finishes, select **Devices** > **Windows** > **Windows enrollment** > **Devices** > **Sync**. The process might take a few minutes to complete, depending on how many devices are being synchronized. To see the registered device, select **Refresh**.  
    
-   ![Use the Sync and Refresh commands to view the device list.](./images/hololens-ap-devices-sync.png)  
+   > [!div class="mx-imgBorder"]
+   > ![Use the Sync and Refresh commands to view the device list.](./images/hololens-ap-devices-sync.png)  
 
 ### 3. Create a device group
 
@@ -173,7 +174,9 @@ The device records its hardware hash in a CSV file during the OOBE process, or l
      > [!NOTE]  
      > If you use a device name template, the OOBE process restarts the device one additional time after it applies the device name and before it joins the device to Azure AD. This restart enables the new name to take effect.  
 
-   ![Configure OOBE settings](./images/hololens-ap-profile-oobe.png)
+   > [!div class="mx-imgBorder"]
+   > ![Configure OOBE settings](./images/hololens-ap-profile-oobe.png)
+   
 1. After you configure the settings, select **Next**.
 1. On the **Scope tags** page, optionally add the scope tags that you want to apply to this profile. For more information about scope tags, see [Use role-based access control and scope tags for distributed IT](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags.md). When finished, select **Next**.
 1. On the **Assignments** page, select **Selected groups** for **Assign to**.
@@ -182,11 +185,13 @@ The device records its hardware hash in a CSV file during the OOBE process, or l
   
    If you want to exclude any groups, select **Select groups to exclude**, and select the groups that you want to exclude.
 
-   ![Assigning a device group to the profile.](./images/hololens-ap-profile-assign-devicegroup.png)
+   > [!div class="mx-imgBorder"]
+   > ![Assigning a device group to the profile.](./images/hololens-ap-profile-assign-devicegroup.png)
    
 1. On the **Review + Create** page, review the settings and then select **Create** to create the profile.  
    
-   ![Review + create](./images/hololens-ap-profile-summ.png)
+   > [!div class="mx-imgBorder"]
+   > ![Review + create](./images/hololens-ap-profile-summ.png)
 
 ### 5. Verify the ESP configuration
 
