@@ -165,7 +165,9 @@ The device records its hardware hash in a CSV file during the OOBE process, or l
 1. Enter a profile name and description, and then select **Next**.  
    You should see a list that includes **HoloLens**. If this option is not present, use one of the [Feedback](hololens2-autopilot.md#feedback-and-support-for-autopilot) options to contact us.
 
-   ![Add a profile name and description](./images/hololens-ap-profile-name.png)
+   > [!div class="mx-imgBorder"]
+   > ![Add a profile name and description](./images/hololens-ap-profile-name.png)
+   
 1. On the **Out-of-box experience (OOBE)** page, most of the settings are pre-configured to streamline OOBE for this evaluation. Optionally, you can configure the following settings:  
 
    - **Language (Region)**: Select the language for OOBE. We recommend that you select a language from the list of [supported languages for HoloLens 2](hololens2-language-support.md).
