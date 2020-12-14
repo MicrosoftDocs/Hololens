@@ -25,7 +25,7 @@ Provisioning packages can be used to prepare and configure devices in an environ
 * USB side-load only
 * No auto update (requires manual updates via PPKGs)
 
-When installing an app via a provisioning package, you must install certificates into the local machine store to sign those apps. Provisioning packages can only install certificates to the device (local machine) store. Please make sure to deploy the certificate to the local machine store if you are deploying your certificate from MDM or installing via the [Certificate Manager.](certificate-manager.md)
+Apps installed via a provisioning package must be signed by a certificate in the local machine store. Provisioning packages can only install certificates to the device (local machine) store, therefore the app and certificate may be installed via the same provisioning package. If you are deploying your certificate from MDM or installing via the [Certificate Manager](certificate-manager.md), please make sure to deploy the certificate to the local machine store to sign apps installed this way.
 
 To learn the basics of creating a Provisioning Package for HoloLens devices, visit [HoloLens Provisioning](https://docs.microsoft.com/hololens/hololens-provisioning). To deploy an app, you must start with advanced provisioning.
 
