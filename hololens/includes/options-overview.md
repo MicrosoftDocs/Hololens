@@ -180,3 +180,71 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 
 
 
+
+
+# [HoloLens 2 Industrial Edition](#tab/industrial)
+
+## 1. Learn about HoloLens 2 with Dynamics 365 Remote Assist
+
+The HoloLens 2 Industrial Edition is designed to be used in specialized areas that HoloLens 2 couldn't before. The Industrial Edition was designed to be able to be used in both Clean Rooms or with Intrinsic Safety in mind, which are defined as.
+
+- **Intrinsic Safety (i.e., Hazardous Locations)​** - Environment where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations. 
+- **Clean Room​** - Environment where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention. 
+
+As a result of being UL Class 1 Div 2 certified for safety, and having clean room certified materials​ the HoloLens 2 Industrial Edition can now be used in new work environments. These include but are not limited to: Semiconductor / Silicon Manufacturing​, Oil & Gas/Chemicals Industry​, and Pharmaceutical Manufacturing.
+
+The HoloLens Industrial Edition also features a 2-year warranty & rapid replacement program​. With these increase benefits beyond the other HoloLens 2 editions we encourage you to review our cleaning and handling video.
+
+## Video - To Be Created
+
+
+
+
+
+
+## 2. Deploy HoloLens devices in your organization
+This section will get you and your organization ready to deploy HoloLens devices. 
+
+### Prepare
+| Checkpoint  | Outcome  |
+|---|---|
+| [Deploy HoloLens in a commercial environment](../hololens-requirements.md).   | You learned the considerations.  |
+| Consider your [Infrastructure Deployment](../common-scenarios.md).  | You assessed your infrastructure.  |
+| Consider [Identity](../hololens-identity.md) to be used by your devices.  | You know what Identity you've picked and it's limitations.   |
+
+### Configure
+| Checkpoint     | Outcome  |
+|---|---|
+| Set up your [network for HoloLens](../hololens-commercial-infrastructure.md).  | You set up your network.  |
+| Prepare [network ceritifcates](../hololens-certificates-network.md).  | You prepared certificates.   |
+| Choose a [device management solution](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) and consider the [device restrictions](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) you'll use.  | You choose a device management solution.   |
+
+### Deploy
+| Checkpoint  | Outcome  |
+|---|---|
+| [Enroll](../hololens-enroll-mdm.md) your devices.   | You understand how to enroll your devices.   |
+| Deploy your [applications](../app-deploy-overview.md).  | You understand all the application deployment methods avalible and picked one.  |
+
+### Maintain
+| Checkpoint  |  Outcome  |
+|---|---|
+| [Manage HoloLens updates](../hololens-updates.md).  | You understand how to manage your device's updates.   |
+| [Troubleshoot](../hololens-troubleshooting.md) any issues.  | You know where to go to troubleshoot HoloLens issues.   |
+
+## 3. Explore solutions
+
+| Solution | Brief description                                                                                |
+|----------|---------------------------------------------------------------------------------------------------|
+| [Dynamics 365 for HoloLens](https://www.microsoft.com//hololens/apps)          | Empower employees and optimize operations.                                                        |
+| [Dynamics 365 Remote Assist](https://dynamics.microsoft.com/mixed-reality/remote-assist/)          | Empower technicians to collaborate more efficiently by working together from different locations. |
+|   [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/)        | Improve training effective needs and learn how employees are performing.                          |
+|  [Azure Cloud Services for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Learn how to develop a solution using Azure Cloud Services.                                       |
+|  [Start developing for HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)         | Build a mixed reality solution to fit your needs.                                                 |
+
+## Additional Resources
+
+### Set up an individual device
+1. [Get your device ready to use](https://docs.microsoft.com/hololens/hololens2-setup) it, and then [get set up](https://docs.microsoft.com/hololens/hololens2-start).
+1. [Learn how to get around HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
+1. Once you&#39;re experienced, [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
+1. Look through all the available [apps for HoloLens 2 on the Microsoft Store app](https://docs.microsoft.com/hololens/holographic-store-apps).

@@ -22,15 +22,18 @@ HoloLens is a mixed reality device that is *powered by holograms* and provides a
 
 Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) looking for your next industry solution, a [developer](https://www.microsoft.com/hololens/developers) seeking to create experiences for a new reality, or a [business decision maker](https://www.microsoft.com/hololens/apps) thinking about your next innovation – HoloLens 2 is your new reality for computing. 
 
-|                                                         | HoloLens 2 with Remote Assist | HoloLens 2 (device only) | HoloLens 2 Development Edition |
-|---------------------------------------------------------|:-----------------------------:|:------------------------:|:------------------------------:|
-| HoloLens 2 device <br>(one device)                      |               ✔️               |             ✔️            |                ✔️               |
-| Dynamics 365 Remote Assist<br>(one seat)                |               ✔️               |                          |                                |
-| Warranty                                                |               ✔️               |             ✔️            |                ✔️               |
-| Can be used to develop apps                                 |               ✔️               |             ✔️            |                ✔️               |
-| $500 credit for Azure, including mixed reality services |                               |                          |                ✔️               |
-| Unity Pro & Pixyz Plugin <br>(three months free)        |                               |                          |                ✔️               |
-| Device purchase limit                                   |              None             |           None           |          One per user          |
+|                                                         | HoloLens 2 with Remote Assist | HoloLens 2 (device only) | HoloLens 2 Development Edition | HoloLens 2 Industrial Edition |
+|---------------------------------------------------------|:-----------------------------:|:------------------------:| :------------------------:|:------------------------------:|
+| HoloLens 2 device <br>(one device)                      |               ✔️               |             ✔️            |                ✔️               | ✔️ |
+| Dynamics 365 Remote Assist<br>(one seat)                |               ✔️               |                          |                                |  |
+| Warranty                                                |                1 Year               |              1 Year            |                 1 Year               |  2 Years |
+| Rapid replacement program | | | | ✔️ |
+| Can be used to develop apps                                 |               ✔️               |             ✔️            |                ✔️               | ✔️ |
+| $500 credit for Azure, including mixed reality services |                               |                          |                ✔️               | |
+| Unity Pro & Pixyz Plugin <br>(three months free)        |                               |                          |                ✔️               | |
+| Device purchase limit                                   |              None             |           None           |          One per user          | None |
+| Clean room certified | | | | ✔️ |
+| Intrinsically Safe | | | | ✔️ |
 
 ## Options Overview
 
@@ -43,7 +46,7 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 Learn about the different [HoloLens 2 editions](https://www.microsoft.com/hololens/buy)
 
 ## Get started with HoloLens 2 options
-Select a tab to learn more about your HoloLens journey. 
+Select a tab to learn more about your HoloLens journey.
 
 [!INCLUDE[](includes/options-overview.md)]
 
