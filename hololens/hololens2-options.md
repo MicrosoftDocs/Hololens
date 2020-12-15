@@ -43,6 +43,8 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 
 **HoloLens 2 Development Edition** : Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
 
+**HoloLens 2 Industrial Edition** : The Industrial Edition comprises of the baseline HoloLens2 device with IPA cleanable brow pad and head straps; and is made with clean room acceptable materials. It also consists of Class 1 Div 2 hazardous location certification and is durable to allow industrial handling.​
+
 Learn about the different [HoloLens 2 editions](https://www.microsoft.com/hololens/buy)
 
 ## Get started with HoloLens 2 options
