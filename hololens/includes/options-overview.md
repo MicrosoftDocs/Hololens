@@ -184,14 +184,14 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 
 # [HoloLens 2 Industrial Edition](#tab/industrial)
 
-## 1. Learn about HoloLens 2 with Dynamics 365 Remote Assist
+## 1. Learn about HoloLens 2 Industrial Edition
 
-The HoloLens 2 Industrial Edition is designed to be used in specialized areas that HoloLens 2 couldn't before. The Industrial Edition was designed to be able to be used in both Clean Rooms or with Intrinsic Safety in mind, which are defined as.
+The HoloLens 2 Industrial Edition is designed to be used in specialized areas that HoloLens 2 couldn't before. The Industrial Edition was designed to be able to be used in both clean rooms or with Intrinsic Safety in mind, which are defined as.
 
 - **Intrinsic Safety (i.e., Hazardous Locations)​** - Environment where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations. 
-- **Clean Room​** - Environment where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention. 
+- **Clean room​** - Environment where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention. 
 
-As a result of being UL Class 1 Div 2 certified for safety, and having clean room certified materials​ the HoloLens 2 Industrial Edition can now be used in new work environments. These include but are not limited to: Semiconductor / Silicon Manufacturing​, Oil & Gas/Chemicals Industry​, and Pharmaceutical Manufacturing.
+As a result of being UL Class 1 Div 2 certified for safety, and having clean room certified materials​ the HoloLens 2 Industrial Edition can now be used in new work environments. These include but are not limited to: semiconductor / silicon manufacturing​, oil & gas/chemicals industry​, and pharmaceutical manufacturing.
 
 The HoloLens Industrial Edition also features a 2-year warranty & rapid replacement program​. With these increase benefits beyond the other HoloLens 2 editions we encourage you to review our cleaning and handling video.
 
