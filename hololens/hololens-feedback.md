@@ -4,7 +4,7 @@ description: Create actionable feedback for HoloLens and Windows Mixed Reality d
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
-ms.date: 05/14/2020
+ms.date: 12/17/2020
 ms.custom: 
 - CI 116157
 - CSSTroubleshooting
@@ -23,13 +23,13 @@ appliesto:
 
 Use the Feedback Hub to tell us which features you love, which features you could do without, and how something could be better. The engineering team uses the same mechanism internally to track and fix bugs, so please use Feedback Hub to report any bugs that you see. We are listening!
 
-Feedback Hub is an excellent way to alert the engineering team to bugs and to make sure that future updates are healthier and more consistently free of bugs. However, Feedback Hub does not provide a response. If you need immediate help, please file feedback, take note of the summary that you provided for your feedback, and then follow up with [HoloLens support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f).
+Feedback Hub is an excellent way to alert the engineering team to bugs and to make sure that future updates are healthier and more consistently free of bugs. However, Feedback Hub does not provide a response. If you need immediate help, please file feedback, take note of the summary that you provided for your feedback, and then follow up with [HoloLens support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) - use the **Share** feature in Feedback Hub to share a direct link to the URL. Feedback Hub gets lots of data daily - the URL helps us identify your feedback quickly.
 
 > [!NOTE]  
 >  
 > - Make sure you that you have the current version of Feedback Hub. To do this, select **Start** > **Microsoft Store**, and then select the ellipses (**...**). Then, select **Downloads and updates** > **Get updates**.  
 >  
-> - To provide the best possible data for fixing issues, we highly recommended that you set your device telemetry to **Full**. You can set this value during the Out-of-Box-Experience (OOBE), or by using the Settings app. To do this by using Settings, select **Start** > **Settings** > **Privacy** > **App Diagnostics** > **On**.
+> - To provide the best possible data for fixing issues, we highly recommended that you set your device telemetry to **Optional**. You can set this value during the Out-of-Box-Experience (OOBE), or by using the Settings app. To do this by using Settings, select **Start** > **Settings** > **Privacy** > **App Diagnostics** > **On**.
 
 ## Use the Feedback Hub
 
@@ -82,3 +82,5 @@ Feedback Hub is an excellent way to alert the engineering team to bugs and to ma
      1. Select **Stop recording**. After recording stops, you can see the data that is attached to your feedback for the engineering team.
 
 1. Make sure that you have an active internet connection so that we can receive your feedback. Select **Submit**, and you’re done.
+
+1. Use the Share button to share the shortened-URL with Microsoft support, or your colleagues.
