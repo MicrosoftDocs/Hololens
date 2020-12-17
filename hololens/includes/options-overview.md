@@ -186,10 +186,10 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 
 ## 1. Learn about HoloLens 2 Industrial Edition
 
-The HoloLens 2 Industrial Edition is designed to be used in specialized areas that HoloLens 2 couldn't before. The Industrial Edition was designed to be able to be used in both clean rooms or with Intrinsic Safety in mind, which are defined as.
+The HoloLens 2 Industrial Edition has enhanced the HoloLens 2 with new materials and certifications allowing for use in specialized areas. The Industrial Edition was designed to be able to be used in both clean rooms or with Intrinsic Safety in mind, which are defined as:
 
-- **Intrinsic Safety (i.e., Hazardous Locations)​** - Environment where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations. 
-- **Clean room​** - Environment where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention. 
+- **Intrinsic Safety (i.e., Hazardous Locations)​** - Environment where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations.
+- **Clean room​** - Environment where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention.
 
 As a result of being UL Class 1 Div 2 certified for safety, and having clean room certified materials​ the HoloLens 2 Industrial Edition can now be used in new work environments. These include but are not limited to: semiconductor / silicon manufacturing​, oil & gas/chemicals industry​, and pharmaceutical manufacturing.
 
