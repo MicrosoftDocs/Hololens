@@ -83,4 +83,4 @@ Feedback Hub is an excellent way to alert the engineering team to bugs and to ma
 
 1. Make sure that you have an active internet connection so that we can receive your feedback. Select **Submit**, and you’re done.
 
-1. Use the Share button to share the shortened-URL with Microsoft support, or your colleagues.
+1. Use the **Share** button to share the shortened-URL with Microsoft support, or your colleagues.
