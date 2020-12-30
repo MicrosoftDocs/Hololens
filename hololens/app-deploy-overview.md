@@ -29,14 +29,14 @@ An MDM solution enables IT decision-makers and administrators to privately auto-
 	
 Mobile Device Management (MDM) is applicable for: 
 * MDM deployed + Company Portal 
-* Line of Buisness (non-public) apps
+* Line of Business (non-public) apps
 * Manual installation of available applications through Company Portal
 * Admin push through MDM policy
 * Auto update through MDM
 
 ## Microsoft Store for Business
 
-The [Microsoft Store for Business](app-deploy-store-business.md) provides IT decision-makers and administrators in businesses to find, acquire, manage, and distribute free and paid apps. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. For more information, visit [Prerequisites for using the Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business).
+The [Microsoft Store for Business](app-deploy-store-business.md) provides IT decision-makers and administrators in businesses to find, acquire, manage, and distribute free and paid apps. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and reuse licenses as needed. For more information, visit [Prerequisites for using the Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business).
 	
 The Microsoft Store for Business is applicable for: 
 * Public or Line of Business apps
@@ -57,12 +57,13 @@ For more information, visit [Holographic Store Apps](https://docs.microsoft.com/
 
 ## Install via Provisioning Packages
 
-[Provisioning Packages](app-deploy-provisioning-package.md) allow you to install custom or Line of Business apps, allowing IT pros and administrators to quickly install apps to a local device(s) via USB. This can be done without an internet connection and for any identity type.
+[Provisioning Packages](app-deploy-provisioning-package.md) allow you to install custom or Line of Business apps, allowing IT pros and administrators to quickly install apps to a local device(s) via USB. This installation can be done without an internet connection and for any identity type.
 	
-Installing via Provisioning Packages is applicable for: 
-* Line of Buisness / Self developed (non-public) apps
+Installing via Provisioning Packages is applicable for:
+
+* Line of Buisness / Self-developed (non-public) apps
 * Public apps (if offline installer is available)
-* USB side-load only
+* USB side-loading only
 * No auto update (requires manual updates via Provisioning Package)
 
 ## Install Apps on HoloLens 2 via App Installer
