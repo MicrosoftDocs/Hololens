@@ -12,7 +12,7 @@
 ### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 ### [Supported languages for HoloLens 2](hololens2-language-support.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
-### [HoloLens Development Edition FAQ](hololens2-development-edition-faq.md)
+### [HoloLens 2 Development Edition FAQ](hololens2-development-edition-faq.md)
 
 
 ## Get started with HoloLens (1st gen)
@@ -39,10 +39,15 @@
 ## [How to Update HoloLens](hololens-update-hololens.md)
 
 # Prepare
-## Planning for HoloLens 2 Enterprise Deployment
-### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
-### [Common Infrastructure Deployment Scenarios](common-scenarios.md)
-## Common Scenarios
+## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
+## Common Deployment Scenarios
+### [Infrastructure Deployment Scenarios](common-scenarios.md)
+### Cloud connected HoloLens 2 deployment with Remote Assist
+#### [Cloud connected - Deployment Overview](hololens2-cloud-connected-overview.md)
+#### [Cloud connected - Prepare](hololens2-cloud-connected-prepare.md)
+#### [Cloud connected - Configure](hololens2-cloud-connected-configure.md)
+#### [Cloud connected - Deploy](hololens2-cloud-connected-deploy.md)
+#### [Cloud connected - Maintain](hololens2-cloud-connected-maintain.md)
 ### [Offline Secure](hololens-common-scenarios-offline-secure.md)
 ## Security
 ### [Security overview](security-overview.md)
@@ -95,6 +100,7 @@
 ### [Intune & Company Portal](app-deploy-intune.md)
 ### [Microsoft Store for Business](app-deploy-store-business.md)
 ### [Provisioning Package](app-deploy-provisioning-package.md)
+### [App Installer](app-deploy-app-installer.md)
 
 # Maintain
 ## [Manage HoloLens updates](hololens-updates.md)
@@ -110,7 +116,6 @@
 # HoloLens release notes
 ## [HoloLens 2 release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
-### [App Installer](app-deploy-app-installer.md)
 ## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 
 # [Give us feedback](hololens-feedback.md)

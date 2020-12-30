@@ -25,10 +25,11 @@ Provisioning packages can be used to prepare and configure devices in an environ
 * USB side-load only
 * No auto update (requires manual updates via PPKGs)
 
-> [!NOTE] 
-> To learn the basics of creating a Provisioning Package for HoloLens devices, visit [HoloLens Provisioning](https://docs.microsoft.com/hololens/hololens-provisioning). To deploy an app, you must start with advanced provisioning. 
+Apps installed via a provisioning package must be signed by a certificate in the local machine store. Provisioning packages can only install certificates to the device (local machine) store, therefore the app and certificate may be installed via the same provisioning package. If you are deploying your certificate from MDM or installing via the [Certificate Manager](certificate-manager.md), please make sure to deploy the certificate to the local machine store to sign apps installed this way.
 
-> [!NOTE] 
+To learn the basics of creating a Provisioning Package for HoloLens devices, visit [HoloLens Provisioning](https://docs.microsoft.com/hololens/hololens-provisioning). To deploy an app, you must start with advanced provisioning.
+
+> [!NOTE]
 > HoloLens (1st gen) has limited support installing apps (**UniversalAppInstall**) by using a provisioning package. HoloLens (1st gen) devices only support installing an app via PPKG only during OOBE and only with user context installs.
 
 ## Setup
@@ -36,12 +37,17 @@ Provisioning packages can be used to prepare and configure devices in an environ
 Within [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22) take following 4 steps.
 
 1. Set ApplicationManagement/AllowAllTrustedApps To “Yes”. See: [ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
+
 2. Under **UniversalAppInstall** > **UserContextAppLicense** please enter the **PackageFamilyName**. See [UniversalAppInstall](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall). See also: [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
-    - If you don’t know this, you can use Device Portal on a device you have already installed your app to. Visit the Apps page, and look at the PackageRelativeID line, all the information before the "!" Is your **PackageFamilyName**.
-3. You will then see that you have a new section, **ApplicationFile**. Use this area to upload your appx bundle. 
+
+   You can use Device Portal on a device you have already installed your app to. Visit the Apps page, and look at the PackageRelativeID line, all the information before the "!" Is your **PackageFamilyName**.
+    
+3. You will then see that you have a new section, **ApplicationFile**. Use this area to upload your appx bundle.
+
 4. Depending on if you have purchased your app or built your own LOB app, you will need to upload the license file or security certificate.
+
     - For license file: Under **UniversalAppInstall** > **UserContextAppLience** and browse to the location of your license and upload it. 
-    - For security file navigate to **Certificates** and select your certificate to install alongside your .appx bundle. 
+    - For security file navigate to **Certificates** and select your certificate to install alongside your .appx bundle.
 
 Make sure to save your project to a secure location. Then **Export** it as a **Provisioning Package**.  
     
