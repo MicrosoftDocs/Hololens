@@ -1,5 +1,5 @@
 ---
-title: Setting up your HoloLens 2 edition
+title: HoloLens 2 editions
 description: How each HoloLens 2 option is the same or different and what to do after getting one.
 keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
 author: evmill
