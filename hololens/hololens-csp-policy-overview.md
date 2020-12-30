@@ -36,12 +36,12 @@ HoloLens 2 also supports setting a limited set of CSP configurations for HoloLen
 Some device restrictions are as simple and disabling a functionality or connection to the device. To learn about these read more about [common device restrictions.](hololens-common-device-restrictions.md)
 
 ### Kiosk modes
-Use Kiosk mode to control which identities have access to which apps by default. Kiosks can be used for a single app or multiple app UI experience. Kiosk configurations range from a single app for anyone using the device, to different selections of apps for different groups. This does not stop “allowed apps” from launching other apps and was not intended to ever. To learn more [start reading about Kiosk modes and how to use them](hololens-kiosk.md).
+Use Kiosk mode to control which identities have access to which apps by default. Kiosks can be used for a single app or multiple app UI experience. Kiosk configurations range from a single app for anyone using the device, to different selections of apps for different groups. Kiosk mode does not stop “allowed apps” from launching other apps and was not intended to ever. Learn more by [reading about Kiosk modes and how to use them](hololens-kiosk.md).
 
 ### Settings Page Visibility
-Use Settings app policy to control which identities have access to settings by default. With this policy the Settings app can be configured to either show only the select pages, or hide all selected pages. [Read about how to configure the pages available](settings-uri-list.md).
+Use Settings app policy to control which identities have access to settings by default. Using this policy the Settings app can be configured to either show only the select pages, or hide all selected pages. [Read about how to configure the pages available](settings-uri-list.md).
 
-This feature is currently only avalible in [Windows Insider builds](hololens-insider.md). Please ensure devices you intend to use this for are on build 19041.1349+.
+This feature is currently only avalible in [Windows Insider builds](hololens-insider.md). Ensure devices you intend to use this feature for are on build 19041.1349+.
 
 ### WDAC
 Use WDAC configuration to control which apps / processes are allowed / disallowed to be launched irrespective of whether system is in kiosk mode or not.
