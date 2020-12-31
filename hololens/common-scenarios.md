@@ -18,7 +18,7 @@ appliesto:
 
 # Common Infrastructure Deployment Scenarios Overview
 
-This following information provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise. Often how you manage your devices and how access your organization's resources is largely determined by factors already in place. Based on the existing infrastructure we invite you to review the common device management style in the following scenarios, and try out our guides for deploying in the scenario matching your needs.
+This following information provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise. Often how you manage your devices and how to access your organization's resources is largely determined by factors already in place. Based on the existing infrastructure we invite you to review the common device management style in the following scenarios, and try out our guides for deploying in the scenario matching your needs.
 
 ## Scenarios
 
@@ -27,10 +27,10 @@ The diagram below represents three typical scenarios for HoloLens 2 deployments.
 
 ### Scenario A: Deploy to cloud connect devices
 
-HoloLens 2 is deployed for use primarily in environments external to a corporate network. Corporate resources are not accessed or may be limited through VPN. This is a deployment very similar to managed mobile devices within a company.
+HoloLens 2 is deployed for use primarily in environments external to a corporate network. Corporate resources are not accessed or may be limited through VPN. This is a deployment similar to managed mobile devices within a company.
  * Basic Common Configurations
    * Wi-Fi networks are typically fully open to the Internet and Cloud services.
-   * Azure AD Join with MDM Auto Enrollment -- MDM (Intune) Managed
+   * Azure AD Join with MDM Auto Enrollment--MDM (Intune) Managed
    * Users sign in with their own corporate account (Azure AD)
      * Single or multiple users per device supported
    * Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk.
@@ -39,14 +39,14 @@ HoloLens 2 is deployed for use primarily in environments external to a corporate
 * Common Challenges
    * Determining which MDM configurations to apply to the HoloLens 2 based on scenario requirements.
 
-For a deployment guide that is similar to this scenario please review our guide for [Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md).
+For a deployment guide that is similar to scenario A review our guide for [Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md).
 
 > [!div class="nextstepaction"]
 > [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md)
 
 ### Scenario B: Deploy inside your organization's network
 
-HoloLens 2 is deployed for use primarily on the corporate network with access to internal corporate resources. Internet and cloud services may be limited. This is a typical deployment for most Windows 10 PCs.
+HoloLens 2 is deployed for use primarily on the corporate network with access to internal corporate resources. Internet and cloud services may be limited, this is a typical deployment for most Windows 10 PCs.
  * Basic Common Configurations
    * Wi-Fi network is an internal corporate network with access to internal resources, and limited access to the internet or Cloud services.
    * Azure AD Join with MDM Auto Enrollment
@@ -65,19 +65,19 @@ HoloLens 2 is deployed for use primarily on the corporate network with access to
 
 HoloLens 2 is deployed for use primarily offline with no network or internet access. This is a typical deployment for highly secure or confidential locations.
  * Basic Common Configurations
-   * Wi-Fi connectivity is disabled. Ethernet via USB may be enabled for LAN connectivity if required.
+   * Wi-Fi connectivity is disabled. Ethernet via USB may be enabled for LAN connectivity if necessary.
    * Not Managed.
-   * Local user account for device sign in.
-     * HoloLens 2 supports only 1 local account.
-   * Varying levels of device lockdown configurations are applied via Provisioning Packages based on specific use cases. These configurations are typically very restricted due to secure environment requirements.
+   * Local user account for device sign-in.
+     * HoloLens 2 supports only one local account.
+   * Varying levels of device lockdown configurations are applied via Provisioning Packages based on specific use cases. These configurations are typically restricted due to secure environment requirements.
    * One or more applications are deployed via Provisioning Package
 
  * Common Challenges
-   * There are a limited set of configurations available through Provisioning Packages
+   * There is a limited set of configurations available through Provisioning Packages
    * Cloud services are not able to be leveraged, therefore limiting the HoloLens 2 capabilities.
    * Higher administrative overhead since these devices have to be setup, configured, and updated manually.
 
-For a deployment guide that is similar to this scenario please review our [Offline Secure Deployment Guide](hololens-common-scenarios-offline-secure.md).
+For a deployment guide that is similar to this scenario review our [Offline Secure Deployment Guide](hololens-common-scenarios-offline-secure.md).
 
 > [!div class="nextstepaction"]
 > [Deployment Guide – Offline Secure HoloLens 2](hololens-common-scenarios-offline-secure.md)
