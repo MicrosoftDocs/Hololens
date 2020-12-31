@@ -1,6 +1,6 @@
 ---
 title: Infrastructure Guidelines for HoloLens
-description: 
+description: Infrastructure Guidelines for HoloLens devices
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
