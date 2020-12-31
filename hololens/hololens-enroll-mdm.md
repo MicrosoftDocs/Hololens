@@ -31,9 +31,9 @@ You can manage multiple Microsoft HoloLens devices simultaneously using solution
 
 Depending on the type of identity chosen either during OOBE or post sign-in there are different methods of enrollment. To learn more about each type of Identity on HoloLens please visit [this page](hololens-identity.md).
 
-- If Identity is AAD, then either during OOBE or **Settings App** -> **Access Work or School** -> **Connect** button.
-    - For AAD, automatic MDM enrollment only occurs if AAD has been configured with enrollment URLs.
-- If Identity is AAD and device has been pre-registered with Intune MDM server with specific configuration profile assigned to it, then AAD-Join and enrollment will automatically occur during OOBE.
+- If Identity is Azure AD, then either during OOBE or **Settings App** -> **Access Work or School** -> **Connect** button.
+    - For Azure AD, automatic MDM enrollment only occurs if Azure AD has been configured with enrollment URLs.
+- If Identity is Azure AD and device has been pre-registered with Intune MDM server with specific configuration profile assigned to it, then Azure AD-Join and enrollment will automatically occur during OOBE.
     - Also called [Autopilot flow](hololens2-autopilot.md) Available in [19041.1103+ builds](hololens-release-notes.md#windows-holographic-version-2004).
 - If Identity is MSA, then using **Settings App** -> **Access Work or School** -> **Connect** button.
     - Also called Add Work Account (AWA) flow.
@@ -44,11 +44,11 @@ Once the device is enrolled with your MDM server, the Settings app will now refl
 
 ## Auto-enrollment in MDM
 
-If your organization uses Azure Active Directory (Azure AD) and an MDM solution that accepts an AAD token for authentication (currently, only supported in Microsoft Intune and AirWatch), your IT admin can configure Azure AD to automatically allow MDM enrollment after the user signs in with their Azure AD account. [Learn how to configure Azure AD enrollment.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+If your organization uses Azure Active Directory (Azure AD) and an MDM solution that accepts an Azure AD token for authentication (currently, only supported in Microsoft Intune and AirWatch), your IT admin can configure Azure AD to automatically allow MDM enrollment after the user signs in with their Azure AD account. [Learn how to configure Azure AD enrollment.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 When auto-enrollment is enabled, no additional manual enrollment is needed. When the user signs in with an Azure AD account, the device is enrolled in MDM after completing the first-run experience.
 
-When a device is AAD Joined it may affect who considered the [device owner](security-adminless-os.md#device-owner).
+When a device is Azure AD Joined it may affect who considered the [device owner](security-adminless-os.md#device-owner).
 
 ## Unenroll HoloLens from Intune
 
