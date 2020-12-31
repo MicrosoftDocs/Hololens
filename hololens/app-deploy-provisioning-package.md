@@ -21,6 +21,7 @@ appliesto:
 Provisioning packages can be used to prepare and configure devices in an environment without access to endpoint management. They can also be deployed to a device regardless of identity of the user, enrollment status, during the Out of Box Experience (OOBE), or by [applying a provisioning package during setup](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
 
 ## Provisioning Packages considerations:
+
 * Non-Public apps
 * USB side-load only
 * No auto update (requires manual updates via PPKGs)
@@ -41,14 +42,14 @@ Within [Windows Configuration Designer](https://www.microsoft.com/store/productI
 2. Navigate to **UniversalAppInstall** > **UserContextAppLicense** enter the **PackageFamilyName**. See [UniversalAppInstall](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall). See also: [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
 
    You can use Device Portal on a device you have already installed your app to. Visit the Apps page, and look at the PackageRelativeID line, all the information before the "!" Is your **PackageFamilyName**.
-    
+
 3. You will then see that you have a new section, **ApplicationFile**. Use this area to upload your appx bundle.
 
 4. Depending on if you have purchased your app or built your own LOB app, you will need to upload the license file or security certificate.
 
-    - For license file: navigate to **UniversalAppInstall** > **UserContextAppLience** and browse to the location of your license and upload it. 
+    - For license file: navigate to **UniversalAppInstall** > **UserContextAppLicence** and browse to the location of your license and upload it.
     - For the security file, navigate to **Certificates** and select your certificate to install alongside your .appx bundle.
 
 Make sure to save your project to a secure location. Then **Export** it as a **Provisioning Package**.  
-    
-See also: [Apply your provisiong package to HoloLens](https://docs.microsoft.com/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup).
+
+See also: [Apply your provisioning package to HoloLens](https://docs.microsoft.com/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup).
