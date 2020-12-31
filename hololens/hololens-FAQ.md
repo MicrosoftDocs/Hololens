@@ -251,7 +251,7 @@ No. You have to use an MDM system to manage HoloLens devices.
 
 ### Can I use Active Directory Domain Services (AD DS) to manage HoloLens user accounts?
 
-No. You have to use Azure Active Directory (AAD) to manage user accounts for HoloLens devices.
+No. You have to use Azure Active Directory (Azure AD) to manage user accounts for HoloLens devices.
 
 ### Is HoloLens capable of Automated Data Capture Systems (ADCS) auto-enrollment?
 
@@ -266,7 +266,7 @@ No.
 No. However, you can work around this issue by using one of the following approaches:
 
 - Create a custom app, and then [enable Kiosk mode](hololens-kiosk.md). The custom app can have branding, and can launch other apps (such as Remote Assist).  
-- Change all of the user profile pictures in AAD to your company logo. However, this may not be desirable for all scenarios.
+- Change all of the user profile pictures in Azure AD to your company logo. However, this may not be desirable for all scenarios.
 
 ### What logging capabilities do HoloLens (1st gen) and HoloLens 2 offer?
 

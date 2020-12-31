@@ -93,7 +93,7 @@ This latest release is a monthly update to version 2004, but this time we are in
 | [Auto-launch an app in multi-app kiosk](hololens-release-notes.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | Sets an application to launch automatically when signing into a multiple-app kiosk mode.                                                        |
 | [Kiosk mode behavior changes for handling of failures](hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode failure now has restrictive fallback.                                                                                                |
 | [HoloLens Policies](hololens-release-notes.md#hololens-policies)                                    | New policies for HoloLens.     |
-| [Cache AAD Group membership for offline Kiosk](hololens-release-notes.md#cache-aad-group-membership-for-offline-kiosk)         | New policy allows users to uses group membership cache to use Kiosk mode offline for set number of days.                                        |
+| [Cache Azure AD Group membership for offline Kiosk](hololens-release-notes.md#cache-aad-group-membership-for-offline-kiosk)         | New policy allows users to uses group membership cache to use Kiosk mode offline for set number of days.                                        |
 | [New device restriction policies for HoloLens 2](hololens-release-notes.md#new-device-restriction-policies-for-hololens-2)       | Device management policies enabled newly enabled for HoloLens 2.                                                                                |
 | [New power policies for HoloLens 2](hololens-release-notes.md#new-power-policies-for-hololens-2)       | Newly supported policies for power timeout settings.  |
 | [Update Policies](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | Newly enabled policies allowing control of updates.           |
@@ -217,7 +217,7 @@ Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens
 
 Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, following operations are disallowed in OOBE: 
 - Creating local user using runtime provisioning 
-- Performing AAD join operation via runtime provisioning 
+- Performing Azure AD join operation via runtime provisioning 
 - Selecting who owns the device in OOBE experience 
 
 #### How to set this using Intune? 
@@ -291,12 +291,12 @@ New mixed reality policies have been created for HoloLens 2 devices on Windows H
 | MixedReality\MicrophoneDisabled                    | Disables microphone so no audio recording is possible on HoloLens 2.                      | 1 Yes, 0 No (default)                                                |
 | MixedReality\FallbackDiagnostics                   | Controls behavior of when diagnostic logs can be collected.                               | 0 Disabled, 1 Enabled for Device Owners, 2 Enabled for all (Default) |
 | MixedReality\HeadTrackingMode                      | Reserved for future use.                                                                  |                                                                      |
-| MixedReality\AADGroupMembershipCacheValidityInDays | Controls how many days AAD group membership cache is used for Kiosk targeting AAD groups. | See below.                                                           |
+| MixedReality\AADGroupMembershipCacheValidityInDays | Controls how many days Azure AD group membership cache is used for Kiosk targeting Azure AD groups. | See below.                                                           |
 
-### Cache AAD Group membership for offline Kiosk
+### Cache Azure AD Group membership for offline Kiosk
 - Enabled Offline Kiosks to be used with AAD groups for up to 60 days.
 
-This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
+This policy controls for how many days, Azure AD group membership cache is allowed to be used for Assigned Access configurations targeting Azure AD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
 
 Name: AADGroupMembershipCacheValidityInDays 
 URI value: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
@@ -305,17 +305,17 @@ Min - 0 days
 Max - 60 days 
 
 Steps to use this policy correctly: 
-1. Create a device configuration profile for kiosk targeting AAD groups and assign it to HoloLens device(s). 
+1. Create a device configuration profile for kiosk targeting Azure AD groups and assign it to HoloLens device(s). 
 1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s). 
     1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. The value can be between min / max allowed.
 1. Enroll HoloLens devices and verify both configurations get applied to the device. 
-1. Let AAD user 1 sign-in when internet is available, once user signs-in and AAD group membership is confirmed successfully, cache will be created. 
-1. Now AAD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days. 
-1. Steps 4 and 5 can be repeated for any other AAD user N. Key point here is that any AAD user must sign-in to device using Internet so at least once we can determine that they are member of AAD group to which Kiosk configuration is targeted. 
+1. Let Azure AD user 1 sign-in when internet is available, once user signs-in and Azure AD group membership is confirmed successfully, cache will be created. 
+1. Now Azure AD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days. 
+1. Steps 4 and 5 can be repeated for any other Azure AD user N. Key point here is that any Azure AD user must sign-in to device using Internet so at least once we can determine that they are member of Azure AD group to which Kiosk configuration is targeted. 
  
 > [!NOTE]
-> Until step 4 is performed for a AAD user will experience failure behavior mentioned in “disconnected” environments. 
+> Until step 4 is performed for a Azure AD user will experience failure behavior mentioned in “disconnected” environments. 
 
 ### New device restriction policies for HoloLens 2
 - Allows users to manage specific device management policies such as blocking adding or removing provisioning packages.
@@ -399,7 +399,7 @@ This information can be found again [here](holographic-photos-and-videos.md#maxi
 - Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
 - Addressed an issue that prevented a HoloLens device from showing up in File Explorer over Media Transfer Protocol (MTP) when the device is set up as a [single-app kiosk](hololens-kiosk.md). Note that MTP (and USB connection in general) can still be disabled using the [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) policy.
 - Fixed an issue where icons in the Start menu were scaled correctly in Kiosk mode.
-- Fixed an issue due to HTTP caching interfering with kiosk mode targeted to AAD groups.
+- Fixed an issue due to HTTP caching interfering with kiosk mode targeted to Azure AD groups.
 - Fixed an issue where users were unable to use the Pair button after enabling Developer mode with provisioning packages unless they disabled and re-enabled Developer mode.
 
 ## Windows Holographic, version 1903 - November 2020 Update

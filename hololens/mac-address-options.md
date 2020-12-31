@@ -42,7 +42,7 @@ There are a number of ways to improve this situation, depending on the infrastru
 | Solution | Benefits | Requirements |
 | --- | --- | --- |
 | Provisioning Package with Ethernet Adaptor | Improves OOBE experience and allows for a quicker technician experience. | HoloLens compatible USB C HubTechnician will still need to interact with the device for MAC Capture and OOBE finalisation |
-| Autopilot with Intune Registration over Ethernet | Single Step connection and registration of the device to the customer environmentMAC capture can be completed without interacting with the device | Intune enabled for the customer AAD TenantHoloLens Compatible USB-C network adaptor |
+| Autopilot with Intune Registration over Ethernet | Single Step connection and registration of the device to the customer environmentMAC capture can be completed without interacting with the device | Intune enabled for the customer Azure AD TenantHoloLens Compatible USB-C network adaptor |
 | Automated reporting of MAC Addresses | When devices have been registered within the Intune Tenant, Script the reporting of the MAC address to the technician. | Intune Powershell Commandlets |
 
 ## Provisioning Package with Ethernet Adaptor
@@ -121,7 +121,7 @@ Additional pre-requisites will be needed as below:
 
 ### Benefits
 
-This will allow a &quot;Heads off&quot; deployment experience for the Technician, with the device being able to go from the box to enrolled in AAD and Intune without the technician having to wear the device or manually interact with the HoloLens environment.
+This will allow a &quot;Heads off&quot; deployment experience for the Technician, with the device being able to go from the box to enrolled in Azure AD and Intune without the technician having to wear the device or manually interact with the HoloLens environment.
 
 ## Reporting of MAC addresses to the Technician
 

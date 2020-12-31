@@ -31,7 +31,7 @@ HoloLens 2 is deployed for use primarily in environments external to a corporate
  * Basic Common Configurations
    * Wi-Fi networks are typically fully open to the Internet and Cloud services.
    * Azure AD Join with MDM Auto Enrollment -- MDM (Intune) Managed
-   * Users sign in with their own corporate account (AAD)
+   * Users sign in with their own corporate account (Azure AD)
      * Single or multiple users per device supported
    * Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk.
    * One or more applications are deployed via MDM
@@ -51,7 +51,7 @@ HoloLens 2 is deployed for use primarily on the corporate network with access to
    * Wi-Fi network is an internal corporate network with access to internal resources, and limited access to the internet or Cloud services.
    * Azure AD Join with MDM Auto Enrollment
    * MDM (Intune) Managed
-   * Users sign in with their own corporate account (AAD)
+   * Users sign in with their own corporate account (Azure AD)
      * Single or multiple users per device supported
    * Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk.
    * One or more applications are deployed via MDM
