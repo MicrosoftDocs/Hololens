@@ -45,7 +45,7 @@ Follow these steps to automatically get your app(s):
 
 1. Enroll your device with your tenant.
 2. Once your device has completed enrollment, you should receive the app on your device.
-3. If you are not seeing you app immediately, go to **Settings** > **Accounts** > **Work or School** > *youraccount* Info, and scroll down to see information on installed app status.
+3. If you are not seeing you app immediately, go to **Settings** > **Accounts** > **Work or School** > *your account* Info, and scroll down to see information on installed app status.
 
 How to get to apps through the Company Portal:
 
