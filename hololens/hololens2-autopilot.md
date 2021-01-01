@@ -251,7 +251,7 @@ Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens
 
 Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, following operations are disallowed in OOBE: 
 - Creating local user using runtime provisioning 
-- Performing AAD join operation via runtime provisioning 
+- Performing Azure AD join operation via runtime provisioning 
 - Selecting who owns the device in OOBE experience 
 
 #### How to set this using Intune? 

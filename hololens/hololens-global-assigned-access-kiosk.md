@@ -44,7 +44,7 @@ This feature configures HoloLens 2 device for multiple app kiosk mode, which is 
 
 2. Follow the steps in [Use a provisioning package to set up a single-app or multi-app kiosk](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk), specifically the section "Prov. package, step 2 – Add the kiosk configuration XML file to a provisioning package" and refer to the XML file that was saved in the previous step.
 
-## Can I create a configuration where global applies to everyone and separate configuration applies to one Azure AD account or AAD group?
+## Can I create a configuration where global applies to everyone and separate configuration applies to 1 Azure AD account or Azure AD group? 
 
 Yes, refer to the example XML blob below. Global Assigned Access profile is applied on HoloLens when a specific one for the signed in user is not found, so it is default kiosk mode configuration for signed-in user.
 Here is an example of XML blob to be used:
@@ -66,6 +66,6 @@ This is an example Global Assigned Access kiosk that when any user signs in they
 
 :::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
 
-This example is a Global Assigned Access kiosk that excludes the device owner, when any other AAD user signs in they will have a multi-app kiosk with the Settings App, Feedback Hub, and Microsoft Edge. This kiosk also includes a secondary kiosk configuration for a Visitor account, which may be signed into by anyone on the lock screen. When a user signs into the Visitor account they will have a multi-app kiosk that only has the Feedback Hub app.
+This example is a Global Assigned Access kiosk that excludes the device owner, when any other Azure AD user signs in they will have a multi-app kiosk with the Settings App, Feedback Hub, and Microsoft Edge. This kiosk also includes a secondary kiosk configuration for a Visitor account, which may be signed into by anyone on the lock screen. When a user signs into the Visitor account they will have a multi-app kiosk that only has the Feedback Hub app.
 
 :::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::

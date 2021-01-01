@@ -1,6 +1,6 @@
 ---
 title: Infrastructure Guidelines for HoloLens
-description: 
+description: Infrastructure Guidelines for HoloLens devices
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -30,7 +30,7 @@ HoloLens is, at its core, a Windows mobile device integrated with Azure.  It wor
 
 Critical cloud services include:
 
-- Azure active directory (AAD)
+- Azure active directory (Azure AD)
 - Windows Update (WU)
 
 Commercial customers will need enterprise mobility management (EMM) or mobile device management (MDM) infrastructure to manage HoloLens devices at scale.  This guide uses [Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) as an example, though any provider with full support for Microsoft Policy can support HoloLens.  Ask your mobile device management provider if they support HoloLens 2.

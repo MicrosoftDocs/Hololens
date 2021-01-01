@@ -59,7 +59,7 @@ HoloLens (1st gen) came with two licensing options, the developer license and a 
 |Microsoft Store (Consumer) |Consumer |Filter by using MDM |Filter by using MDM |
 |[Business Store Portal](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
 |**Security and identity** | | | |
-|Sign in by using Azure Active Directory (AAD) account |✔️ |✔️ |✔️ |
+|Sign in by using Azure Active Directory (Azure AD) account |✔️ |✔️ |✔️ |
 |Sign in by using Microsoft Account (MSA) |✔️ |✔️ |✔️ |
 |Next Generation Credentials with PIN unlock |✔️ |✔️ |✔️ |
 |[Secure boot](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) |✔️ |✔️ |✔️ |
