@@ -20,7 +20,7 @@ The procedures below will help you set up a HoloLens 2 for the first time.
 
 ## Charge your HoloLens
 
-Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A).
+Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A). Using the wall charger supplied, HoloLens 2 devices can charge the battery to full in less than 65 minutes when the device is in standby.
 
 Charging rate and speed may vary depending on the environment in which the device is running.
 
