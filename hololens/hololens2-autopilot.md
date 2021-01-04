@@ -55,7 +55,7 @@ Please follow the steps below to set up your environment:
 
 ### 1. Review requirements for Windows Autopilot for HoloLens 2
 
-**Review the following sections of the Windows Autopilot requirements article:**
+#### Review the following sections of the Windows Autopilot requirements article:
 
 - [Network requirements](https://docs.microsoft.com/mem/autopilot/networking-requirements)  
 - [Licensing requirements](https://docs.microsoft.com/mem/autopilot/licensing-requirements)  
@@ -65,7 +65,7 @@ Please follow the steps below to set up your environment:
 
 For information about how to register devices and configure profiles, see [2. Register devices in Windows Autopilot](#2-register-devices-in-windows-autopilot) and [4. Create a deployment profile](#4-create-a-deployment-profile) in this article. To configure and manage the Autopilot self-deploying mode profiles, make sure that you have access to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
-**Review HoloLens OS requirements:**
+#### Review HoloLens OS requirements:
 
 - Devices must be on [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) (build 19041.1103) or later. To confirm the build version on your device or re-flash to the latest OS, you can use the [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab). You can find instructions [here](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). Note that devices delivered until late September 2020 have Windows Holographic version 1903 pre-installed. Please contact your reseller to ensure that Autopilot-ready devices are shipped to you.
 
@@ -82,7 +82,7 @@ For information about how to register devices and configure profiles, see [2. Re
 
 - Ensure that the devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune Portals. Note that "Convert all targeted devices to Autopilot" feature is not supported on HoloLens at the moment.  
 
-**Enable Automatic MDM Enrollment**
+#### Enable Automatic MDM Enrollment:
 
 In order for Autopilot to succeed you'll need to enable Automatic MDM Enrollment in your Azure portal. This will enable the device to enroll without a user.
 
