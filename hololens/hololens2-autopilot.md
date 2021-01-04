@@ -20,7 +20,7 @@ manager: jarrettr
 
 Starting with Windows Holographic version 2004, HoloLens 2 supports Windows Autopilot [Self-Deploying Mode](https://docs.microsoft.com/mem/autopilot/self-deploying). Administrators can configure the out-of-box experience (OOBE) in Microsoft Endpoint Manager and enable end-users to prepare devices for business use with little to no interaction. This reduces inventory management overhead, cost of hands-on device preparation and support calls from employees during the setup experience. To learn more about Windows Autopilot, click [here](https://docs.microsoft.com/mem/autopilot/windows-autopilot).
 
-Like for Surface devices, it is recommended that customers work with their Microsoft [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) (reseller or distributor) to get devices registered with the Autopilot service through Partner Center. Other methods for device registration are outlined [here](https://docs.microsoft.com/mem/autopilot/add-devices), though leveraging Microsoft's channel partners ensures the most effective end-to-end path. 
+Like for Surface devices, it is recommended that customers work with their Microsoft [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) (reseller or distributor) to get devices registered with the Autopilot service through Partner Center. Other methods for device registration are outlined [here](https://docs.microsoft.com/mem/autopilot/add-devices), though leveraging Microsoft's channel partners ensures the most effective end-to-end path.
 
 > [!NOTE]
 > As of 11/20/2020 Autopilot configuration for HoloLens in Microsoft Endpoint Manager is transitioning to **Public Preview**. Customers no longer need to enroll in the private preview and all tenants will be able to setup Autopilot in the MEM admin center.
@@ -28,7 +28,7 @@ Like for Surface devices, it is recommended that customers work with their Micro
 When a user starts the Autopilot self-deploying process, Autopilot completes the following steps:
 
 1. Join the device to Azure Active Directory (Azure AD). Note that Autopilot for HoloLens does not support Active Directory join or Hybrid Azure AD join.
-   
+
 1. Use Azure AD to enroll the device in Microsoft Endpoint Manager (or another MDM service).
 
 1. Download and apply device-targeted policies, certificates, networking profiles and applications.
@@ -36,7 +36,6 @@ When a user starts the Autopilot self-deploying process, Autopilot completes the
 1. Provision the device.
 
 1. Present the sign-in screen to the user.
-
 
 ## Configuring Autopilot for HoloLens 2
 
@@ -80,41 +79,43 @@ For information about how to register devices and configure profiles, see [2. Re
      - Run eye-calibration
      - Establish network connection
 
-
 - Windows Holographic, version 20H2 supports [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot), which locks a device to a tenant and  ensures that the device remains bound to that tenant in case of accidental or intentional resets or wipes.  
 
 - Ensure that the devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune Portals. Note that "Convert all targeted devices to Autopilot" feature is not supported on HoloLens at the moment.  
 
 ### 2. Register devices in Windows Autopilot
 
-- **Enable Automatic MDM Enrollment** In order for Autopilot to succeed you'll need to enable Automatic MDM Enrollment in your Azure portal. This will enable the device to enroll without a user.
+#### Enable Automatic MDM Enrollment
 
-In the [Azure portal](https://portal.azure.com/#home) choose **Azure Active Directory** -> **Mobility (MDM and MAM)** -> **Microsoft Intune**. Then configure the **MDM user scope**, you will need to select **All**. 
+In order for Autopilot to succeed you'll need to enable Automatic MDM Enrollment in your Azure portal. This will enable the device to enroll without a user.
+
+In the [Azure portal](https://portal.azure.com/#home) select **Azure Active Directory** -> **Mobility (MDM and MAM)** -> **Microsoft Intune**. Then configure the **MDM user scope**, you will need to select **All**.
 
 Please review the following short [guide on enabling MDM Automatic Enrollment](https://docs.microsoft.com/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) or the [Auto Enrollment Quick start guide](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment) for even more information getting set up.
 
+#### Obtain hardware hash
 
 Your devices must be registered in Windows Autopilot before first setup. For MEM documentation on device registration please see [Adding devices to Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices).  
 
-There are two primary ways to register HoloLens devices: 
+There are two primary ways to register HoloLens devices:
 
- - **Reseller can register devices in the Partner Center when you place an order.** 
+ - **Reseller can register devices in the Partner Center when you place an order.**
 
    > [!NOTE]  
    > This is the recommended path for adding devices to the Autopilot service. [Learn more](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration).  
-   
- - **Retrieve the hardware hash (also known as the hardware ID) and register the device manually in MEM admin center**. 
 
-**Retrieve hardware hash**
+ - **Retrieve the hardware hash (also known as the hardware ID) and register the device manually in MEM admin center**.
+
+- **Retrieve hardware hash**
 
 The device records its hardware hash in a CSV file during the OOBE process, or later when a device owner starts the diagnostic log collection process (described in the following procedure). Typically, the device owner is the first user to sign in to the device.
 
 1. Start the HoloLens 2 device.
 
-1. On the device, press the **Power** and **Volume Down** buttons at the same time and then release them. The device collects diagnostic logs and the hardware hash, and stores them in a set of .zip files. 
+1. On the device, press the **Power** and **Volume Down** buttons at the same time and then release them. The device collects diagnostic logs and the hardware hash, and stores them in a set of .zip files.
 
    1. For full details and an instructional video for how to preform this please read about [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics). 
-   
+
 1. Use a USB-C cable to connect the device to a computer.
 
 1. On the computer, open File Explorer. Open **This PC\\\<*HoloLens device name*>\\Internal Storage\\Documents**, and locate the AutopilotDiagnostics.zip file.  
@@ -132,17 +133,17 @@ The device records its hardware hash in a CSV file during the OOBE process, or l
    > Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User <serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>
    >```
 
-**Register device through MEM**
+#### Register device through MEM
 
 1. In [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), select **Devices** > **Windows** > **Windows enrollment**, and then select **Devices** > **Import** under **Windows Autopilot Deployment Program**.
 
 1. Under **Add Windows Autopilot devices**, select the DeviceHash CSV file, select **Open**, and then select **Import**.  
-   
+
    > [!div class="mx-imgBorder"]
    > ![Use the Import command to import the hardware hash.](./images/hololens-ap-hash-import.png)
-   
+
 1. After the import finishes, select **Devices** > **Windows** > **Windows enrollment** > **Devices** > **Sync**. The process might take a few minutes to complete, depending on how many devices are being synchronized. To see the registered device, select **Refresh**.  
-   
+
    > [!div class="mx-imgBorder"]
    > ![Use the Sync and Refresh commands to view the device list.](./images/hololens-ap-devices-sync.png)  
 
@@ -155,7 +156,7 @@ The device records its hardware hash in a CSV file during the OOBE process, or l
 1. For **Membership type**, select either **Assigned** or **Dynamic Device**.
 
 1. Do one of the following:  
-   
+
    - If you selected **Assigned** for **Membership type** in the previous step, select **Members**, and then add Autopilot devices to the group. Autopilot devices that aren't yet enrolled are listed by using the device serial number as the device name.
    - If you selected **Dynamic Devices** for **Membership type** in the previous step, select **Dynamic device members**, and then enter code in **Advanced rule** that resembles the following:
      - If you want to create a group that includes all of your Autopilot devices, type: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
