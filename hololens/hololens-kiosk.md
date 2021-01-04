@@ -77,8 +77,8 @@ The following table lists the user support features of the different kiosk modes
 
 | &nbsp; |Supported user types | Automatic sign-in | Multiple access levels |
 | --- | --- | --- | --- |
-|Single-app kiosk |Managed Service Account (MSA) in Azure Active Directory (AAD) or local account |Yes |No |
-|Multi-app kiosk |AAD account |No |Yes |
+|Single-app kiosk |Managed Service Account (MSA) in Azure Active Directory (Azure AD) or local account |Yes |No |
+|Multi-app kiosk |Azure AD account |No |Yes |
 
 For examples of how to use these capabilities, see the following table.
 
@@ -138,7 +138,7 @@ When either creating the xml file or using Intune’s UI to set up a Kiosk you�
 Typically Kiosks are enabled for either a user, or user group. However if you plan on writing your own XML Kiosk, then you may want to consider Global Assigned Access, in which the Kiosk is applied at the device level regardless of Identity. If this appeals to you [read more about Global Assigned Access Kiosks.](hololens-global-assigned-access-kiosk.md)
 
 #### If you are creating an XML file:
--	You many create multiple Kiosk profiles, and assign each to different users/groups. Such as a Kiosk for your AAD Group that has many apps, and a Visitor that has a multiple app kiosk with a singular app.
+-	You many create multiple Kiosk profiles, and assign each to different users/groups. Such as a Kiosk for your Azure AD Group that has many apps, and a Visitor that has a multiple app kiosk with a singular app.
 -	Your kiosk configuration will be called a **Profile Id** and have a GUID.
 -	You will assign that Profile in the configs section by specifying the user type and using the same GUID for the **DefaultProfile Id**.
 - A XML file can be created but still applied to a device via MDM by creating a custom OMA URI device configuration profile and applying it to HoloLens device group using the URI value: ./Device/Vendor/MSFT/AssignedAccess/Configuration
@@ -146,7 +146,7 @@ Typically Kiosks are enabled for either a user, or user group. However if you pl
 #### If you are creating a Kiosk in Intune.
 -	Each device may only receive a single Kiosk profile, otherwise it will create a conflict and receive no Kiosk configurations at all. 
     -	Other kinds of profiles and policies, such as device restrictions that are not related to the kiosk configuration profile, do not conflict with the kiosk configuration profile.
--	The Kiosk will be enabled for all users who are a part of the User logon type, this will be set with a user or AAD group. 
+-	The Kiosk will be enabled for all users who are a part of the User logon type, this will be set with a user or Azure AD group. 
 -	After the Kiosk configuration is set and the **User logon type** (users who can log into the Kiosk) and the Apps are selected, the Device Configuration must still be assigned to a group. The Assigned group(s) determines which devices receive the Kiosk device configuration, however does not interact with if the Kiosk is enabled or not. 
     - For a full discussion of the effects of assigning configuration profiles in Intune, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
@@ -171,7 +171,7 @@ The following table lists the capabilities and benefits of each of the deploymen
 |Deploy multi-app kiosks    | No            | Yes                  | Yes  |
 |Deploy to local devices only | Yes           | Yes                  | No   |
 |Deploy by using Developer Mode |Required       | Not required            | Not required   |
-|Deploy by using Azure Active Directory (AAD)  | Not required            | Not required                   | Required  |
+|Deploy by using Azure Active Directory (Azure AD)  | Not required            | Not required                   | Required  |
 |Deploy automatically      | No            | No                   | Yes  |
 |Deployment speed            | Fast       | Fast                 | Slow |
 |Deploy at scale | Not recommended    | Recommended        | Recommended |
@@ -470,10 +470,10 @@ Earlier on encountering failures in applying kiosk mode, HoloLens used to show u
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
-### Cache AAD Group membership for offline Kiosk
-- Enabled Offline Kiosks to be used with AAD groups for up to 60 days.
+### Cache Azure AD Group membership for offline Kiosk
+- Enabled Offline Kiosks to be used with Azure AD groups for up to 60 days.
 
-This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
+This policy controls for how many days, Azure AD group membership cache is allowed to be used for Assigned Access configurations targeting Azure AD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
 
 Name: AADGroupMembershipCacheValidityInDays 
 URI value: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
@@ -482,30 +482,30 @@ Min - 0 days
 Max - 60 days 
 
 Steps to use this policy correctly: 
-1. Create a device configuration profile for kiosk targeting AAD groups and assign it to HoloLens device(s). 
+1. Create a device configuration profile for kiosk targeting Azure AD groups and assign it to HoloLens device(s). 
 1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s). 
     1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. The value can be between min / max allowed.
 1. Enroll HoloLens devices and verify both configurations get applied to the device. 
-1. Let AAD user 1 sign-in when internet is available, once user signs-in and AAD group membership is confirmed successfully, cache will be created. 
-1. Now AAD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days. 
-1. Steps 4 and 5 can be repeated for any other AAD user N. Key point here is that any AAD user must sign-in to device using Internet so at least once we can determine that they are member of AAD group to which Kiosk configuration is targeted. 
+1. Let Azure AD user 1 sign-in when internet is available, once user signs-in and Azure AD group membership is confirmed successfully, cache will be created. 
+1. Now Azure AD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days. 
+1. Steps 4 and 5 can be repeated for any other Azure AD user N. Key point here is that any Azure AD user must sign-in to device using Internet so at least once we can determine that they are member of Azure AD group to which Kiosk configuration is targeted. 
  
 > [!NOTE]
-> Until step 4 is performed for a AAD user will experience failure behavior mentioned in “disconnected” environments. 
+> Until step 4 is performed for a Azure AD user will experience failure behavior mentioned in “disconnected” environments. 
 
 
 ## XML Kiosk Code Samples for HoloLens
 
-### Multiple app kiosk mode targeting an AAD group. 
-This kiosk deploys a Kiosk that for users in the AAD group, they will have a Kiosk enabled that includes the 3 apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the GUID highlighted below to match an AAD Group of your own. 
+### Multiple app kiosk mode targeting an Azure AD group. 
+This kiosk deploys a Kiosk that for users in the Azure AD group, they will have a Kiosk enabled that includes the 3 apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the GUID highlighted below to match an Azure AD Group of your own. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
-### Multiple app kiosk mode targeting AAD account.
-This kiosk deploys a Kiosk for a single user, they will have a Kiosk enabled that includes the 3 apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the account highlighted below to match an AAD Account of your own. 
+### Multiple app kiosk mode targeting Azure AD account.
+This kiosk deploys a Kiosk for a single user, they will have a Kiosk enabled that includes the 3 apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the account highlighted below to match an Azure AD Account of your own. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::

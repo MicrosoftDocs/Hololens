@@ -135,7 +135,7 @@ For more details about configuring a HoloLens 2 in Kiosk Mode, see [Setup HoloLe
 
 ### MDM Device Enrollment
 
-For enterprise deployments, it is recommended to [enroll devices](https://docs.microsoft.com/hololens/hololens-enroll-mdm) into MDM as corporate devices only with Azure AD join and automatic MDM enrollment (AAD+MDM). This requires Azure AD Premium and supports automatic enrollment to several MDM providers including Intune.
+For enterprise deployments, it is recommended to [enroll devices](https://docs.microsoft.com/hololens/hololens-enroll-mdm) into MDM as corporate devices only with Azure AD join and automatic MDM enrollment (Azure AD+MDM). This requires Azure AD Premium and supports automatic enrollment to several MDM providers including Intune.
 
 Learn more about the self-deploying enrollment method [Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot).
 

@@ -24,11 +24,11 @@ Microsoft designed Windows Update for Business to provide IT administrators with
 
 Learn how to [manage HoloLens updates](https://docs.microsoft.com/hololens/hololens-updates) including scheduled days, scheduled time, and setting active hours on the device so it will update outside of working hours.
 
-Remote Assist is a In-Box app, and can be update through the Microsoft Store app. For all apps that are downloaded through the Microsoft Store they can be [updated through the Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) app itself manually.
+Remote Assist is an In-Box app, and can be update through the Microsoft Store app. For all apps that are downloaded through the Microsoft Store they can be [updated through the Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) app itself manually.
 
 ## Support Plan
 
-A support plan is an excellent thing to have in place. Having someone, or a group trained up on troubleshooting the enrollment process on HoloLens devices and also general use of the HoloLens device within your organization is useful. In order to allow your users to have the faster resolution of their issues we suggest that your escalation process is handled in a similar manner to this:
+A support plan is an excellent thing to have in place. Having someone, or a group trained up on troubleshooting the enrollment process on HoloLens devices and also general use of the HoloLens device within your organization is useful. In order to allow your users to have the faster resolution of their issues, we suggest that your escalation process is handled in a similar manner to this order:
 
 1. Your Support desk.
 2. Your HoloLens Expert team
@@ -47,7 +47,7 @@ If you&#39;ve yet to create your own LOB app or are still in the process of crea
 
 While this guide talked about setting up Mobile Device Management (MDM) it wasn't employed to apply device restrictions or policies were applied to devices. Device management can be used to both to allow access by pushing certificates, or restrict access with a variety of device restrictions. 
 
-In many cases devices can have connectivity restrictions such as Bluetooth, VPN, USB or even turning off access to the camera or microphone. If any of these interest you then we encourage you to read our [common device restrictions page](hololens-common-device-restrictions.md).
+In many cases devices can have connectivity restrictions such as Bluetooth, VPN, USB or even turning off access to the camera or microphone. If any of these interests you then we encourage you to read our [common device restrictions page](hololens-common-device-restrictions.md).
 
 There are other more complex device restrictions you can use. Such as:
 
@@ -55,7 +55,7 @@ There are other more complex device restrictions you can use. Such as:
 - Use [Kiosk mode](hololens-kiosk.md) to limit the UI presented to users on a device. You can set Kiosks to show a single app, or multiple apps with a custom start page. Kiosks can also present different experiences to different users.  
 - [Windows Application Control (WDAC)](windows-defender-application-control-wdac.md) to keep specific apps or processes from launching entirely.
 
-If you'd like to learn about more different methods of device management or device restrictions then take the next step and read our Device Management Overview.
+If you'd like to learn about more different methods of device management or device restrictions, then take the next step and read our Device Management Overview.
 
 ## Next step
 
