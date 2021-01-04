@@ -118,4 +118,5 @@
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 
+# [Contributing guide](CONTRIBUTING.md)
 # [Give us feedback](hololens-feedback.md)
