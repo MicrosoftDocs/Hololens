@@ -137,7 +137,7 @@ Follow these steps to enable the deployment path:
     - At this stage, if the Desktop PC has internet access, double-click the package to install the app.
 
 
-    - If the desination PC has no internet connectivity, follow these steps: 
+    - If the destination PC has no internet connectivity, follow these steps: 
        1. Select the unencoded license, and then select **Generate license**.
        2. Under **Required Frameworks**, select **Download**.
        3. Use DISM to apply the package with the dependency and license. From an administrator command prompt, run the following command:
