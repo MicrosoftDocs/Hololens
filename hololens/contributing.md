@@ -1,15 +1,15 @@
 ---
 title: Contributing instructions
-description: Learn how to contribute to the Mixed Reality developer docs on the docs.microsoft.com platform using GitHub-flavored Markdown. 
+description: Learn how to contribute to the HoloLens docs on the docs.microsoft.com platform using GitHub-flavored Markdown. 
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ---
 
-# Contributing to Mixed Reality developer documentation
+# Contributing to the HoloLens documentation
 
-Welcome to the [HoloLens developer documentation](https://github.com/MicrosoftDocs/Hololens)! Any articles you create or edit in this repo **will be visible to the public.** 
+Welcome to the [HoloLens documentation](https://github.com/MicrosoftDocs/Hololens)! Any articles you create or edit in this repo **will be visible to the public.** 
 
 HoloLens docs are displayed on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at https://docs.microsoft.com/hololens. 
 
