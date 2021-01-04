@@ -43,7 +43,7 @@ Please follow the steps below to set up your environment:
 
 1. [Review requirements for Windows Autopilot for HoloLens 2.](#1-review-requirements-for-windows-autopilot-for-hololens-2)
 
-1. [Enable Automatic MDM Enrollment](#2enable-automatic-mdm-enrollment)
+1. [Enable Automatic MDM Enrollment](#2-enable-automatic-mdm-enrollment)
 
 1. [Register devices in Windows Autopilot.](#3-register-devices-in-windows-autopilot)
 
@@ -65,7 +65,7 @@ Please follow the steps below to set up your environment:
 
 **Review the "[Requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying#requirements)" section of the Windows Autopilot Self-Deploying mode article.** Your environment has to meet these requirements as well as the standard Windows Autopilot requirements. You do not have to review the "Step by step" and "Validation" sections of the article. The procedures later in this article provide corresponding steps that are specific to HoloLens.
 
-For information about how to register devices and configure profiles, see [2. Register devices in Windows Autopilot](#2-register-devices-in-windows-autopilot) and [4. Create a deployment profile](#4-create-a-deployment-profile) in this article. To configure and manage the Autopilot self-deploying mode profiles, make sure that you have access to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
+For information about how to register devices and configure profiles, see [2. Register devices in Windows Autopilot](#3-register-devices-in-windows-autopilot) and [4. Create a deployment profile](#5-create-a-deployment-profile) in this article. To configure and manage the Autopilot self-deploying mode profiles, make sure that you have access to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
 #### Review HoloLens OS requirements:
 
