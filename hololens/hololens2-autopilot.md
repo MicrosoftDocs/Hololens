@@ -43,15 +43,17 @@ Please follow the steps below to set up your environment:
 
 1. [Review requirements for Windows Autopilot for HoloLens 2.](#1-review-requirements-for-windows-autopilot-for-hololens-2)
 
-1. [Register devices in Windows Autopilot.](#2-register-devices-in-windows-autopilot)
+1. [Enable Automatic MDM Enrollment](#2enable-automatic-mdm-enrollment)
 
-1. [Create a device group.](#3-create-a-device-group)
+1. [Register devices in Windows Autopilot.](#3-register-devices-in-windows-autopilot)
 
-1. [Create a deployment profile.](#4-create-a-deployment-profile)
+1. [Create a device group.](#4-create-a-device-group)
 
-1. [Verify the Enrollment Status Page (ESP) configuration.](#5-verify-the-esp-configuration)
+1. [Create a deployment profile.](#5-create-a-deployment-profile)
 
-1. [Verify the profile status of the HoloLens devices.](#6-verify-the-profile-status-of-the-hololens-devices)
+1. [Verify the Enrollment Status Page (ESP) configuration.](#6-verify-the-esp-configuration)
+
+1. [Verify the profile status of the HoloLens devices.](#7-verify-the-profile-status-of-the-hololens-devices)
 
 ### 1. Review requirements for Windows Autopilot for HoloLens 2
 
@@ -82,7 +84,7 @@ For information about how to register devices and configure profiles, see [2. Re
 
 - Ensure that the devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune Portals. Note that "Convert all targeted devices to Autopilot" feature is not supported on HoloLens at the moment.  
 
-#### Enable Automatic MDM Enrollment:
+### 2. Enable Automatic MDM Enrollment:
 
 In order for Autopilot to succeed you'll need to enable Automatic MDM Enrollment in your Azure portal. This will enable the device to enroll without a user.
 
@@ -90,7 +92,7 @@ In the [Azure portal](https://portal.azure.com/#home) select **Azure Active Dire
 
 Please review the following short [guide on enabling MDM Automatic Enrollment](https://docs.microsoft.com/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) or the [Auto Enrollment Quick start guide](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment) for even more information getting set up.
 
-### 2. Register devices in Windows Autopilot
+### 3. Register devices in Windows Autopilot
 
 #### Obtain hardware hash
 
@@ -146,7 +148,7 @@ The device records its hardware hash in a CSV file during the OOBE process, or l
    > [!div class="mx-imgBorder"]
    > ![Use the Sync and Refresh commands to view the device list.](./images/hololens-ap-devices-sync.png)  
 
-### 3. Create a device group
+### 4. Create a device group
 
 1. In [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), select **Groups** > **New group**.
 
@@ -166,7 +168,7 @@ The device records its hardware hash in a CSV file during the OOBE process, or l
      > These rules target attributes that are unique to Autopilot devices.
 1. Select **Save**, and then select **Create**.
 
-### 4. Create a deployment profile
+### 5. Create a deployment profile
 
 1. In [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), select **Devices** > **Windows** > **Windows enrollment** > **Windows Autopilot deployment profiles** > **Create profile** > **HoloLens**.
    ![Create profile dropdown includes a HoloLens item.](./images/hololens-ap-enrollment-profiles.png)
@@ -204,14 +206,14 @@ The device records its hardware hash in a CSV file during the OOBE process, or l
    > [!div class="mx-imgBorder"]
    > ![Review + create](./images/hololens-ap-profile-summ.png)
 
-### 5. Verify the ESP configuration
+### 6. Verify the ESP configuration
 
 The Enrollment Status Page (ESP) displays the status of the complete device configuration process that runs when an MDM managed user signs into a device for the first time. Make sure that your ESP configuration resembles the following, and verify that the assignments are correct.  
 
 > [!div class="mx-imgBorder"]
 > ![ESP configuration](./images/hololens-ap-profile-settings.png)
 
-### 6. Verify the profile status of the HoloLens devices
+### 7. Verify the profile status of the HoloLens devices
 
 1. In Microsoft Endpoint Manager Admin Center, select **Devices** > **Windows** > **Windows enrollment** > **Devices**.
 
@@ -252,13 +254,14 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 
 ## Tenantlockdown CSP and Autopilot
 
-HoloLens 2 devices support TenantLockdown CSP as of Windows Holographic, version 20H2. This CSP keeps devices on the organization's tenant by locking them to that tenant even through device reset or reflash. 
+HoloLens 2 devices support TenantLockdown CSP as of Windows Holographic, version 20H2. This CSP keeps devices on the organization's tenant by locking them to that tenant even through device reset or reflash.
 
-[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP enables HoloLens 2 to be tied to MDM enrollment using Autopilot only. Once TenantLockdown CSP’s RequireNetworkInOOBE node is set to either true or false (initially set) value on HoloLens 2, that value remains on the device despite re-flashing, OS updates, etc. 
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP enables HoloLens 2 to be tied to MDM enrollment using Autopilot only. Once TenantLockdown CSP’s RequireNetworkInOOBE node is set to either true or false (initially set) value on HoloLens 2, that value remains on the device despite re-flashing, OS updates, etc.
 
-Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, OOBE waits indefinitely for Autopilot profile to be successfully downloaded and applied, after network connectivity. 
+Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, OOBE waits indefinitely for Autopilot profile to be successfully downloaded and applied, after network connectivity.
 
-Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, following operations are disallowed in OOBE: 
+Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, following operations are disallowed in OOBE:
+
 - Creating local user using runtime provisioning 
 - Performing Azure AD join operation via runtime provisioning 
 - Selecting who owns the device in OOBE experience 
@@ -270,16 +273,17 @@ OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
    > [!div class="mx-imgBorder"]
    > ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
 
-1. Create a group and assign the device configuration profile to that device group. 
+1. Create a group and assign the device configuration profile to that device group.
 
 1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.  
 
 Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the HoloLens 2 device, effects of TenantLockdown will be active.
 
-#### How to unset TenantLockdown’s RequireNetworkInOOBE on HoloLens 2 using Intune? 
-1. Remove the HoloLens 2 from the device group to which the device configuration created above was previously assigned. 
+#### How to unset TenantLockdown’s RequireNetworkInOOBE on HoloLens 2 using Intune?
 
-1. Create a custom OMA URI based device configuration profile and specify false for RequireNetworkInOOBE as shown below. 
+1. Remove the HoloLens 2 from the device group to which the device configuration created above was previously assigned.
+
+1. Create a custom OMA URI based device configuration profile and specify false for RequireNetworkInOOBE as shown below.
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
@@ -289,7 +293,7 @@ OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.
 
-Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the HoloLens 2 device, effects of TenantLockdown will be inactive. 
+Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the HoloLens 2 device, effects of TenantLockdown will be inactive.
 
 #### What would happen during OOBE, if Autopilot profile is unassigned on a HoloLens after TenantLockdown was set to true? 
 OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed.
@@ -305,6 +309,7 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 ### Troubleshooting
 
 The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues, however please be aware that these articles are based on Windows 10 Desktop and not all information may apply to HoloLens:
+
 - [Windows Autopilot - known issues](https://docs.microsoft.com/mem/autopilot/known-issues)
 - [Troubleshoot Windows device enrollment problems in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot - Policy Conflicts](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
