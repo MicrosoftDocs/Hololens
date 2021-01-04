@@ -24,7 +24,7 @@ appliesto:
 
 The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro trial, and a 3-month Pixyz Plugin trial.
 
-### What is the difference between HoloLens 2 and HoloLens 2 Development Edition? 
+### What is the difference between HoloLens 2 and HoloLens 2 Development Edition?
 
 You may only use the HoloLens 2 Development Edition for internal building and testing of enterprise applications to be used in connection with the HoloLens 2 (commercial edition) in a production setting. As part of purchasing the Development Edition, Microsoft may, in its sole discretion, provide you with certain entitlements identified during the checkout process, such as the right to redeem certain discount credits or trial access to certain Microsoft or third-party services or tools for a limited period. [Learn more](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
 
@@ -38,13 +38,13 @@ Your discount credits or trial access will be sent to the email used at purchase
 
 ### Can I "upgrade" my HoloLens 2 (device only) device to the HoloLens 2 Development Edition to get the trial credits?
 
-No, we do not offer device transfer plans. There is no ability to transfer from any edition to any other edition. 
+No, we do not offer device transfer plans. There is no ability to transfer from any edition to any other edition.
 
-### What is Unity Pro? 
+### What is Unity Pro?
 
 Unity Pro is a real-time 3D platform for small/mid-sized studios/firms. It’s designed for teams with a mix of technical and non-technical skills. [Learn more](https://store.unity.com/products/unity-pro)
 
-### What is Pixyz Plugin? 
+### What is Pixyz Plugin?
 
 The Pixyz Plugin reads and converts almost any format, optimizes and puts it in Unity, and stages it to provide ready-to-use assets for real-time applications. [Learn more](https://unity.com/products/pixyz)
 
@@ -54,7 +54,7 @@ Financing for HoloLens 2 Development Edition will be available early 2021.
 
 ### Who do I contact with questions about my HoloLens 2 Development Edition entitlements?
 
-With any questions related to entitlements, please contact your sales specialist at 866-425-4709, Mon to Fri, 6AM to 6PM, PST.
+With any questions related to entitlements, contact your sales specialist at 866-425-4709, Mon to Fri, 6AM to 6PM, PST.
 
 ### Can my company buy multiple HoloLens 2 Development Edition devices? 
 
@@ -112,7 +112,7 @@ Get support [here.](https://support.serviceshub.microsoft.com/supportforbusiness
 
 ### What is included with my Unity trial?
 
-A 3-calendar month Unity Pro trial enables access to Unity&#39;s complete solution for professionals to create, operate and monetize. The related Unity Pro trial has no deadline to redeem.
+A three-calendar month Unity Pro trial enables access to Unity&#39;s complete solution for professionals to create, operate, and monetize. The related Unity Pro trial has no deadline to redeem.
 
 This offering is for new users and does not apply to established Unity Pro subscriptions. Unity Pro trial may be subject to additional terms that will be made available at redemption. Review applicable [terms &amp; conditions](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) and [privacy policy](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
 
@@ -122,8 +122,8 @@ Directions to redeem
 
 1. Visit id.unity.com
 2. Sign in with your Unity ID or create an account
-3. Click &#39;Redeem a product code&#39;
-4. Enter product code, and click &#39;Redeem a product code&#39;
+3. Select &#39;Redeem a product code&#39;
+4. Enter product code, and select &#39;Redeem a product code&#39;
 
 Visit HoloLens 2 Development Edition documentation to [Learn more](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
 
@@ -133,13 +133,13 @@ Yes, you can build applications with all compatible versions of Unity.
 
 ### How do I contact Unity support?
 
-To get help with any questions about your Unity ID, account, organization(s) and subscription(s), please visit support.unity3d.com.
+To get help with any questions about your Unity ID, account, organization(s), and subscription(s), visit support.unity3d.com.
 
 ## Pixyz
 
 ### What is included with my Pixyz Plugin trial?
 
-A 3-calendar month Pixyz Plugin trial that enables access to Pixyz to create ready-to-use assets with perfect tessellated meshes, limited polygon count, and automatic UV. The related Pixyz plugin trial has no deadline to redeem.
+A three-calendar month Pixyz Plugin trial that enables access to Pixyz to create ready-to-use assets with perfect tessellated meshes, limited polygon count, and automatic UV. The related Pixyz plugin trial has no deadline to redeem.
 
 This offering is for new users and does not stack on to established Pixyz subscriptions. Pixyz plugin may be subject to additional terms that will be made at redemption. Review applicable [terms &amp; conditions](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) and [privacy policy](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
 
