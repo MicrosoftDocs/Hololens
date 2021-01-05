@@ -19,14 +19,14 @@ This section will get you and your organization ready to deploy HoloLens devices
 | Checkpoint     | Outcome  |
 |---|---|
 | Set up your [network for HoloLens](../hololens-commercial-infrastructure.md).  | You set up your network.  |
-| Prepare [network ceritifcates](../hololens-certificates-network.md).  | You prepared certificates.   |
+| Prepare [network certificates](../hololens-certificates-network.md).  | You prepared certificates.   |
 | Choose a [device management solution](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) and consider the [device restrictions](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) you'll use.  | You choose a device management solution.   |
 
 ### Deploy
 | Checkpoint  | Outcome  |
 |---|---|
 | [Enroll](../hololens-enroll-mdm.md) your devices.   | You understand how to enroll your devices.   |
-| Deploy your [applications](../app-deploy-overview.md).  | You understand all the application deployment methods avalible and picked one.  |
+| Deploy your [applications](../app-deploy-overview.md).  | You understand all the application deployment methods available and picked one.  |
 
 ### Maintain
 | Checkpoint  |  Outcome  |
@@ -74,7 +74,7 @@ We have created a guide specifically for helping deploy HoloLens devices at scal
 | Checkpoint  | Outcome                                |
 |-------------|----------------------------------------|
 | [Get started](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | Get started with Remote Assist.        |
-| [Licence](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Redeem license for Remote Assist.      |
+| [License](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Redeem license for Remote Assist.      |
 | [Connect](https://docs.microsoft.com/hololens/hololens-network)     | Connect your device(s) to Wi-Fi.       |
 | [Enroll](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | Enroll devices with your organization. |
 
