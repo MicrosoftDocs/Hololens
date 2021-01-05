@@ -5,6 +5,7 @@ author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
+ms.prod: hololens
 ---
 
 # Contributing to the HoloLens documentation
@@ -31,7 +32,7 @@ If you don't already have one, you'll need to [create a GitHub account](https://
 >If you're a Microsoft employee, link your GitHub account to your Microsoft alias on the [Microsoft Open Source portal](https://repos.opensource.microsoft.com/). Join the **"Microsoft"** and **"MicrosoftDocs"** organizations.
 
 When setting up your GitHub account, we also recommend these security precautions:
-- Create a [strong password for your Github account](https://github.com/settings/admin).
+- Create a [strong password for your GitHub account](https://github.com/settings/admin).
 - Enable [two-factor authentication](https://github.com/settings/two_factor_authentication/configure).
 - Save your [recovery codes](https://github.com/settings/auth/recovery-codes) in a safe place.
 - Update your [public profile settings](https://github.com/settings/profile).
@@ -46,19 +47,26 @@ The publishing system is tied to GitHub, so these steps are important. You'll be
 Use the following workflow to make updates to *an existing article* via GitHub in a web browser:
 
 1. Navigate to the article you wish to edit in the "mixed-reality-docs" folder.
+
 2. Select the edit button (pencil icon) in the top right, which will automatically fork a disposable branch off the 'master' branch.
 
    ![Edit an article.](images/editpage.png)
+   
 3. Edit the content of the article according to the ["Markdown basics"](#markdown-basics).
+
 4. Update metadata at the top of each article:
+
    * **title**: Page title that appears in the browser tab when the article is being viewed. Page titles are used for SEO and indexing, so don't change the title unless necessary (though this is less critical before documentation goes public).
    * **description**: Write a brief description of the article's content, which boosts SEO and discovery.
    * **author**: If you're the primary owner of the page, add your GitHub alias here.
    * **ms.author**: If you're the primary owner of the page, add your Microsoft alias here (you don't need @microsoft.com, just the alias).
    * **ms.date**: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
    * **keywords**: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere. 
+   
 5. When you've completed your article edits, scroll down and select **Propose file change**.
+
 6. On the next page, select **Create pull request** to merge your automatically created branch into 'master.'
+
 7. Repeat the steps above for the next article you want to edit.
 
 ## Renaming or deleting an existing article
@@ -78,7 +86,9 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
 ```
 
 - The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `mixed-reality-docs` and ends with `.md`.
+
 - The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **doesn't** contain `mixed-reality-docs` or `.md`, as it refers to the public URL and not the repository path. Linking to a section within the new article using `#section` is allowed. You can also use an absolute path to another site here, if necessary.
+
 - `redirect_document_id` indicates whether you would like to keep the document ID from the previous file. The default is `false`. Use `true` if you want to preserve the `ms.documentid` attribute value from the redirected article. If you preserve the document ID, data, such as page views and rankings, will be transferred to the target article. Do this if the redirect is primarily a rename, and not a pointer to different article that only covers some of the same content.
 
 If you add a redirect, be sure to delete the old file as well.
@@ -90,10 +100,12 @@ Use the following workflow to *create new articles* in the documentation repo vi
 1. Create a fork off the MicrosoftDocs/mixed-reality 'master' branch (using the **Fork** button in the top right).
 
    ![Fork the master branch.](images/forkbranch.png)
+   
 2. In the "mixed-reality-docs" folder, select **Create new file** in the top right.
+
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
-   ![Name your new page.](images/newpagetitle.PNG)
+   ![Name your new page.](images/newpagetitle.png)
    
    >[!IMPORTANT]
    >Make sure you create the new article from within the "mixed-reality-docs" folder. You can confirm this by checking for "/mixed-reality-docs/" in the new file name line.
@@ -113,19 +125,23 @@ Use the following workflow to *create new articles* in the documentation repo vi
    ```
 
 5. Fill in the relevant metadata fields per the instructions in the [section above](#editing-an-existing-article).
+
 6. Write article content using [Markdown basics](#markdown-basics).
+
 7. Add a `## See also` section at the bottom of the article with links to other relevant articles.
+
 8. When finished, select **Commit new file**.
+
 9. Select **New pull request** and merge your fork's 'master' branch into MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way).
 
-   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr_to_master.PNG)
+   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 
 ## Markdown basics
 
 The following resources will help you learn how to edit documentation using the Markdown language:
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
+- [Markdown-at-a-glance reference poster](images/markdownposter.pdf)
 - [Additional resources for writing Markdown for docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
 
 ### Adding tables
@@ -195,26 +211,34 @@ Use the following workflow to make changes to the documentation with Visual Stud
 >All the guidance for [editing](#editing-an-existing-article) and [creating](#creating-a-new-article) articles, and the [basics of editing Markdown](#markdown-basics), from above applies when using Visual Studio Code as well.
 
 1. Make sure your cloned fork is up to date with the official repo.
+
    1. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/mixed-reality 'master' to your fork (make sure the arrow is pointing the right way).
       
-      ![Sync changes from MicrosoftDocs/mixed-reality to your fork](images/sync_repos.PNG)
+      ![Sync changes from MicrosoftDocs/mixed-reality to your fork](images/sync-repos.png)
+	  
    2. In Visual Studio Code, select the sync button to sync your freshly updated fork to the local clone.
       
-      ![Click the sync button image](images/sync_clone.png)
+      ![Click the sync button image](images/sync-clone.png)
+	  
 2. Create or edit articles in your cloned repo using Visual Studio Code.
+
    1. Edit one or more articles (add images to “images” folder if necessary).
+   
    2. **Save** changes in **Explorer**.
       
-      ![Choose "Save all" in Explorer](images/explorer_save.png)
+      ![Choose "Save all" in Explorer](images/explorer-save.png)
+	  
    3. **Commit all** changes in **Source Control** (write commit message when prompted).
       
-      ![Choose "Commit all" in Source Control](images/source_control_commit.png)
+      ![Choose "Commit all" in Source Control](images/source-control-commit.png)
+	  
    4. Select the **sync** button to sync your changes back to origin (your fork on GitHub).
       
-      ![Click the sync button](images/sync_back.png)
+      ![Click the sync button](images/sync-back.png)
+	  
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way).
 
-   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr_to_master.PNG)
+   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 
 ### Useful extensions
 
