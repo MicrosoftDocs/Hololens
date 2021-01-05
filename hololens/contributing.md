@@ -141,7 +141,6 @@ Use the following workflow to *create new articles* in the documentation repo vi
 The following resources will help you learn how to edit documentation using the Markdown language:
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Markdown-at-a-glance reference poster](images/markdownposter.pdf)
 - [Additional resources for writing Markdown for docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
 
 ### Adding tables
@@ -229,8 +228,6 @@ Use the following workflow to make changes to the documentation with Visual Stud
       ![Choose "Save all" in Explorer](images/explorer-save.png)
 	  
    3. **Commit all** changes in **Source Control** (write commit message when prompted).
-      
-      ![Choose "Commit all" in Source Control](images/source-control-commit.png)
 	  
    4. Select the **sync** button to sync your changes back to origin (your fork on GitHub).
       
