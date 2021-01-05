@@ -69,7 +69,7 @@ Every HoloLens 2 edition has the same hardware, the same [content in the box](
 
 ## 2. Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
 
-We have created a guide specifically for helping deploy HoloLens devices at scale with end-to-end set up from setting up Azure Active Directory to validating a Remote Assist call. Please check out this [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview).
+We have created a guide specifically for helping deploy HoloLens devices at scale with end-to-end set up from setting up Azure Active Directory to validating a Remote Assist call. Please check out this **[Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview).**
 
 | Checkpoint  | Outcome                                |
 |-------------|----------------------------------------|
