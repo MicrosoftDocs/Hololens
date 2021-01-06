@@ -18,7 +18,7 @@ appliesto:
 
 # Prepare - Cloud connected Guide
 
-By the end of this article you will have set up AAD, MDM, and understand more about using AAD accounts and network requirements. This section of the guide will help you and your organization get prepared to deploy HoloLens 2 to the cloud and use Dynamics 365 Remote Assist. It will go over the importance of each piece of your infrastructure as well as providing links to guides to help you set up those pieces as needed.
+By the end of this article you will have set up Azure AD, MDM, and understand more about using Azure AD accounts and network requirements. This section of the guide will help you and your organization get prepared to deploy HoloLens 2 to the cloud and use Dynamics 365 Remote Assist. It will go over the importance of each piece of your infrastructure as well as providing links to guides to help you set up those pieces as needed.
 
 ## Infrastructure Essentials
 
@@ -35,11 +35,11 @@ Azure AD is a cloud-based directory service that provides identity and access ma
 
 Employees can use only one account to initialize a device so it&#39;s imperative that your organization controls which account is enabled first. The account chosen will determine who controls the device and influence your management capabilities.
 
-In this guide we have chosen that for the [Identity](https://docs.microsoft.com/hololens/hololens-identity) used we will use AAD accounts, or Azure Active Directory accounts. There are several benefits to AAD accounts we would like to use, such as:
+In this guide we have chosen that for the [Identity](https://docs.microsoft.com/hololens/hololens-identity) used we will use Azure AD accounts, or Azure Active Directory accounts. There are several benefits to Azure AD accounts we would like to use, such as:
 
-- Employees use their Azure AD account to register the device in Azure AD and automatically enroll it with the organization&#39;s MDM solution (AAD+MDM – requires Azure AD Premium).
-- AAD accounts support [Single Sign On](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). When a user signs into Remote Assist, their Identity from the signed in AAD user will be recognized and the user will be signed into the app for a streamlined experience.
-- AAD accounts have additional [authentication options](https://docs.microsoft.com/hololens/hololens-identity) via [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris log-in users can sign in from another device or use FIDO security keys.
+- Employees use their Azure AD account to register the device in Azure AD and automatically enroll it with the organization&#39;s MDM solution (Azure AD+MDM – requires Azure AD Premium).
+- Azure AD accounts support [Single Sign On](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). When a user signs into Remote Assist, their Identity from the signed in Azure AD user will be recognized and the user will be signed into the app for a streamlined experience.
+- Azure AD accounts have additional [authentication options](https://docs.microsoft.com/hololens/hololens-identity) via [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris log-in users can sign in from another device or use FIDO security keys.
 
 ### Mobile Device Management
 

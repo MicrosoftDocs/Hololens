@@ -37,7 +37,7 @@ HoloLens 2 prompts a user to calibrate the device under the following circumstan
 
 ![Calibration prompt for adjusting to eyes.](./images/07-et-adjust-for-your-eyes.png)
 
-During this process, you'll look at a set of targets (gems). It's fine if you blink during calibration, but try to stay focused on the gems instead of other objects in the room.  This allows HoloLens to learn about your eye position to render your holographic world.
+During this process, you'll look at a set of targets (gems). It's fine if you blink during calibration, but try to stay focused on the gems instead of other objects in the room.  Focusing on the gems allows HoloLens to learn about your eye position to render your holographic world.
 
 ![Calibration prompt telling user to keep head still and follow dots with their eyes.](./images/07-et-hold-head-still.png)
 

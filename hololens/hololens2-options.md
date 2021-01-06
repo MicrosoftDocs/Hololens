@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 Editions
+title: HoloLens 2 editions
 description: How each HoloLens 2 option is the same or different and what to do after getting one.
 keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
 author: evmill
@@ -37,11 +37,11 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 
 ## Options Overview
 
-**HoloLens 2 (device only)** : HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
+**HoloLens 2 (device only)**: HoloLens 2 offers the most comfortable and immersive mixed reality experience available—enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 
-**HoloLens 2 with Dynamics 365 Remote Assist** : Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
+**HoloLens 2 with Dynamics 365 Remote Assist**: Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
 
-**HoloLens 2 Development Edition** : Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
+**HoloLens 2 Development Edition**: Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
 
 **HoloLens 2 Industrial Edition** : The Industrial Edition comprises of the baseline HoloLens2 device with IPA cleanable brow pad and head straps; and is made with clean room acceptable materials. It also consists of Class 1 Div 2 hazardous location certification and is durable to allow industrial handling.​
 
@@ -51,4 +51,3 @@ Learn about the different [HoloLens 2 editions](https://www.microsoft.com/holole
 Select a tab to learn more about your HoloLens journey.
 
 [!INCLUDE[](includes/options-overview.md)]
-
