@@ -190,16 +190,16 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 
 ## 1. Learn about HoloLens 2 Industrial Edition
 
-The HoloLens 2 Industrial Edition has enhanced the HoloLens 2 with new materials and certifications allowing for use in specialized areas. The Industrial Edition was designed to be able to be used in both clean rooms or with Intrinsic Safety in mind, which are defined as:
+The HoloLens 2 Industrial Edition has been enhanced and redesigned with new materials and certifications to support a broader set of industrial environments, including:
 
-- **Intrinsic Safety (i.e., Hazardous Locations)​** - Environment where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations.
-- **Clean room​** - Environment where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention.
+- **Clean room environments:** The HoloLens 2 Industrial Edition supports with standards ranging from ISO Class 6 through ISO Class 8where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention.
+- **Hazardous Locations:** The HoloLens 2 Industrial Edition supports environments where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations and includes a UL Class I, Division 2 certification.
 
-As a result of being UL Class 1 Div 2 certified for safety, and having clean room certified materials​ the HoloLens 2 Industrial Edition can now be used in new work environments. These include but are not limited to: semiconductor / silicon manufacturing​, oil & gas/chemicals industry​, and pharmaceutical manufacturing.
+In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-year warranty & rapid replacement program.
 
-The HoloLens Industrial Edition also features a 2-year warranty & rapid replacement program​. With these increase benefits beyond the other HoloLens 2 editions we encourage you to review our cleaning and handling video.
+## Cleaning and Handling HoloLens 2
 
-## Video - To Be Created
+Video - In process of being produced.
 
 
 
@@ -207,7 +207,7 @@ The HoloLens Industrial Edition also features a 2-year warranty & rapid replace
 
 
 ## 2. Deploy HoloLens devices in your organization
-This section will get you and your organization ready to deploy HoloLens devices. 
+This section will get you and your organization ready to deploy HoloLens devices.
 
 ### Prepare
 | Checkpoint  | Outcome  |

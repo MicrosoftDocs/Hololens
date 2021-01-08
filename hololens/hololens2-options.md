@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 editions
 description: How each HoloLens 2 option is the same or different and what to do after getting one.
-keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
+keywords: HoloLens 2 purchasing options, HoloLens options, Developer Edition
 author: evmill
 ms.author: v-evmill
 ms.reviewer: sekerawa
@@ -20,20 +20,21 @@ appliesto:
 
 HoloLens is a mixed reality device that is *powered by holograms* and provides apps and solutions that enhance collaboration. With HoloLens 2, experience new heights of productivity and innovation – with purpose – to work smarter.
 
-Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) looking for your next industry solution, a [developer](https://www.microsoft.com/hololens/developers) seeking to create experiences for a new reality, or a [business decision maker](https://www.microsoft.com/hololens/apps) thinking about your next innovation – HoloLens 2 is your new reality for computing. 
+Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) looking for your next industry solution, a [developer](https://www.microsoft.com/hololens/developers) seeking to create experiences for a new reality, or a [business decision maker](https://www.microsoft.com/hololens/apps) thinking about your next innovation – HoloLens 2 is your new reality for computing.
 
-|                                                         | HoloLens 2 with Remote Assist | HoloLens 2 (device only) | HoloLens 2 Development Edition | HoloLens 2 Industrial Edition |
-|---------------------------------------------------------|:-----------------------------:|:------------------------:| :------------------------:|:------------------------------:|
-| HoloLens 2 device <br>(one device)                      |               ✔️               |             ✔️            |                ✔️               | ✔️ |
-| Dynamics 365 Remote Assist<br>(one seat)                |               ✔️               |                          |                                |  |
-| Warranty                                                |                1 Year               |              1 Year            |                 1 Year               |  2 Years |
-| Rapid replacement program | | | | ✔️ |
-| Can be used to develop apps                                 |               ✔️               |             ✔️            |                ✔️               | ✔️ |
-| $500 credit for Azure, including mixed reality services |                               |                          |                ✔️               | |
-| Unity Pro & Pixyz Plugin <br>(three months free)        |                               |                          |                ✔️               | |
-| Device purchase limit                                   |              None             |           None           |          One per user          | None |
-| Clean room certified | | | | ✔️ |
-| Intrinsically Safe | | | | ✔️ |
+|                                                      | HoloLens 2 | HoloLens 2 with Remote Assist | HoloLens 2 Industrial Edition | HoloLens 2 Industrial Edition with Remote Assist | Trimble XR10 with HoloLens 2 | HoloLens 2 Development Edition |
+|------------------------------------------------------|------------|-------------------------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
+| HoloLens 2 device (one device)                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
+| Dynamics 365 Remote Assist (one seat)                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
+| ISO Class 6 through ISO Class 8 compliant)           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| UL Class I, Division 2 certified                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| Hardhat intergrated (PPE compliant in 40+ countries) |            |                               |                               |                                                  |               ✔️              |                                |
+| Noise-cancelling audio output                        |            |                               |                               |                                                  |               ✔️              |                                |
+| Developer entitlements 1                             |            |                               |                               |                                                  |                              |                ✔️               |
+| Rapid Replacement Program 2                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| Commercial use rights                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| Warranty                                             |   1-Year   |             1-Year            |             2-Year            |                      2-Year                      |            1-Year            |             1-Year             |
+| Device purchase limit                                |    None    |              None             |              None             |                       None                       |             None             |       One per transaction      |
 
 ## Options Overview
 
@@ -43,9 +44,11 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 
 **HoloLens 2 Development Edition**: Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
 
-**HoloLens 2 Industrial Edition** : The Industrial Edition comprises of the baseline HoloLens2 device with IPA cleanable brow pad and head straps; and is made with clean room acceptable materials. It also consists of Class 1 Div 2 hazardous location certification and is durable to allow industrial handling.​
+**HoloLens 2 Industrial Edition**: Designed, built, and tested to support clean room environments with standards ranging from ISO Class 6 through ISO Class 8, the HoloLens 2 Industrial Edition is UL Class I, Division 2 certified and is supported with a 2-year warranty and a rapid replacement program.
 
-Learn about the different [HoloLens 2 editions](https://www.microsoft.com/hololens/buy)
+**Trimble XR10 with HoloLens 2**: Purpose built for workers in dirty, loud and safety controlled environments, the Trimble XR10 with HoloLens 2 brings mixed reality right to your work site.
+
+Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/hololens/buy).
 
 ## Get started with HoloLens 2 options
 Select a tab to learn more about your HoloLens journey.
