@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/10/2020
+ms.date: 1/8/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -25,6 +25,18 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 >[!NOTE]
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
+## Windows Holographic, version 2004 - January 2021 Update
+- Build 19041.1133
+
+Improvements and fixes in the update:
+
+- Improved performance during startup, resume, and user switching when there are many users on the device.
+- Added arm32 support for [Research Mode](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode).
+
+## Windows Holographic, version 1903 - January 2021 Update
+- Build 18362.1091
+-
+This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest builds for Windows Holographic, version 2004.
 
 ## Windows Holographic, version 20H2 – December 2020 Update
 - Build 19041.1131
