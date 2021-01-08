@@ -22,14 +22,16 @@ HoloLens is a mixed reality device that is *powered by holograms* and provides a
 
 Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) looking for your next industry solution, a [developer](https://www.microsoft.com/hololens/developers) seeking to create experiences for a new reality, or a [business decision maker](https://www.microsoft.com/hololens/apps) thinking about your next innovation – HoloLens 2 is your new reality for computing.
 
+<br>
+
 |                                                      | HoloLens 2 | HoloLens 2 with Remote Assist | HoloLens 2 Industrial Edition | HoloLens 2 Industrial Edition with Remote Assist | Trimble XR10 with HoloLens 2 | HoloLens 2 Development Edition |
 |------------------------------------------------------|------------|-------------------------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
 | HoloLens 2 device (one device)                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | Dynamics 365 Remote Assist (one seat)                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
 | ISO Class 6 through ISO Class 8 compliant)           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | UL Class I, Division 2 certified                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| Hardhat intergrated (PPE compliant in 40+ countries) |            |                               |                               |                                                  |               ✔️              |                                |
-| Noise-cancelling audio output                        |            |                               |                               |                                                  |               ✔️              |                                |
+| Hardhat integrated (PPE compliant in 40+ countries) |            |                               |                               |                                                  |               ✔️              |                                |
+| Noise-canceling audio output                        |            |                               |                               |                                                  |               ✔️              |                                |
 | Developer entitlements 1                             |            |                               |                               |                                                  |                              |                ✔️               |
 | Rapid Replacement Program 2                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | Commercial use rights                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
