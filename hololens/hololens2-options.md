@@ -30,13 +30,16 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 | Dynamics 365 Remote Assist (one seat)                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
 | ISO Class 6 through ISO Class 8 compliant)           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | UL Class I, Division 2 certified                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| Hardhat integrated (PPE compliant in 40+ countries) |            |                               |                               |                                                  |               ✔️              |                                |
+| Hard hat integrated (PPE compliant in 40+ countries) |            |                               |                               |                                                  |               ✔️              |                                |
 | Noise-canceling audio output                        |            |                               |                               |                                                  |               ✔️              |                                |
-| Developer entitlements 1                             |            |                               |                               |                                                  |                              |                ✔️               |
-| Rapid Replacement Program 2                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| Developer entitlements <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
+| Rapid Replacement Program <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | Commercial use rights                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | Warranty                                             |   1-Year   |             1-Year            |             2-Year            |                      2-Year                      |            1-Year            |             1-Year             |
 | Device purchase limit                                |    None    |              None             |              None             |                       None                       |             None             |       One per transaction      |
+
+- <sup>1</sup> - Includes $500 Azure credit and 3-month trials to Unity Pro and Pixyz Plugin.
+- <sup>2</sup>  - Receive a replacement device overnight or expedited shipping (faster of the available options) before defective device is received by Microsoft.
 
 ## Options Overview
 
@@ -48,7 +51,7 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 
 **HoloLens 2 Industrial Edition**: Designed, built, and tested to support clean room environments with standards ranging from ISO Class 6 through ISO Class 8, the HoloLens 2 Industrial Edition is UL Class I, Division 2 certified and is supported with a 2-year warranty and a rapid replacement program.
 
-**Trimble XR10 with HoloLens 2**: Purpose built for workers in dirty, loud and safety controlled environments, the Trimble XR10 with HoloLens 2 brings mixed reality right to your work site.
+**Trimble XR10 with HoloLens 2**: Purpose built for workers in dirty, loud, and safety-controlled environments, the Trimble XR10 with HoloLens 2 brings mixed reality right to your work site.
 
 Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/hololens/buy).
 
