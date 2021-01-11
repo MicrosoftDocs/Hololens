@@ -23,21 +23,20 @@ Contoso Company wants to ship a HoloLens 2 device to an external client's plant 
 
 ## FAQ
 
-- [How do we ensure that external clients do not have the ability to communicate to one another?](#How-do-we-ensure-that-clients-do-not-have-the-ability-to-communicate-with-one-another)
-- [How do we ensure that external clients are only able to communicate with specific users?](#How-do-we-ensure-that-clients-are-only-able-to-communicate-with-specific-users)
-- [How do we ensure that clients do not have access to company resources?](#How-do-we-ensure-that-clients-do-not-have-access-to-company-resources)
-- [How do we restrict apps?](#How-do-we-restrict-apps)
-- [How do we manage passwords?](#How-do-we-manage-passwords)
-- [How do we ensure that clients do not have access to chat history?](#How-do-we-ensure-that-clients-do-not-have-access-to-chat-history)
+- [How to ensure that external clients do not have the ability to communicate to one another](#How-to-ensure-that-clients-do-not-have-the-ability-to-communicate-with-one-another)
+- [How to ensure that clients do not have access to company resources](#How-to-ensure-that-clients-do-not-have-access-to-company-resources)
+- [How to restrict apps](#How-to-restrict-apps)
+- [How to manage passwords](#How-to-manage-passwords)
+- [How to ensure that clients do not have access to chat history](#How-to-ensure-that-clients-do-not-have-access-to-chat-history)
 
-### How do we ensure that clients do not have the ability to communicate with one another when using Remote Assist?
+### How to ensure that external clients do not have the ability to communicate to one another
 
 Since Remote Assist HoloLens to HoloLens calls are not supported, clients are able to search for, but are unable to, communicate with one another. To further restrict who clients can search for and call,  [Information barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide) can restrict who a client can communicate with. Another option to consider is using [Scoped Directory Search](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)
 
  > [!NOTE]
 > Since single sign on is enabled, it is important to disable the browser using [**WDAC**](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac). If an external client opens the browser and uses the web version of Teams, the client will have access to call/chat history.
 
-### How do we ensure that clients do not have access to company resources?
+### How to ensure that clients do not have access to company resources]
 
 There are two options to consider.
 
@@ -49,18 +48,18 @@ The first option is a multi-layer approach:
 
 The second option is to create a separate tenant that hosts clients.
 
-### How do we restrict apps?
+### How to restrict apps
 
 [Kiosk Mode](https://docs.microsoft.com/hololens/hololens-kiosk) and/or [WDAC (Windows Defender Application Control)](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) are options for restricting applications.
 
-### How do we manage passwords?
+### How to manage passwords
 
 1. Remove password expiration. However, this increases the chance that that an account will be compromised. NIST password recommendation is change passwords every 30-90 days.
 1. Extend the password expiration for HoloLens 2 devices to exceed 90 days.
 1. The devices should be returned to Contoso to change the passwords. However, this can cause issues if the devices are expected to be in the client's plant for 90+ days.  
 1. For devices that are sent to multiple clients, reset passwords before shipping the device to clients.
 
-### How do we ensure that clients do not have access to chat history?
+### How to ensure that clients do not have access to chat history
 
 Remote Assist clears chat history after each session. However, the chat history will be available for the Microsoft Teams user.
 
