@@ -23,11 +23,11 @@ Contoso Company wants to ship a HoloLens 2 device to an external client's plant 
 
 ## FAQ
 
-- [How to ensure that external clients do not have the ability to communicate to one another](#How-to-ensure-that-clients-do-not-have-the-ability-to-communicate-with-one-another)
-- [How to ensure that clients do not have access to company resources](#How-to-ensure-that-clients-do-not-have-access-to-company-resources)
-- [How to restrict apps](#How-to-restrict-apps)
-- [How to manage passwords](#How-to-manage-passwords)
-- [How to ensure that clients do not have access to chat history](#How-to-ensure-that-clients-do-not-have-access-to-chat-history)
+- [How to ensure that external clients do not have the ability to communicate to one another](#how-to-ensure-that-clients-do-not-have-the-ability-to-communicate-with-one-another)
+- [How to ensure that clients do not have access to company resources](#how-to-ensure-that-clients-do-not-have-access-to-company-resources)
+- [How to restrict apps](#how-to-restrict-apps)
+- [How to manage passwords](#how-to-manage-passwords)
+- [How to ensure that clients do not have access to chat history](#how-to-ensure-that-clients-do-not-have-access-to-chat-history)
 
 ### How to ensure that external clients do not have the ability to communicate to one another
 
