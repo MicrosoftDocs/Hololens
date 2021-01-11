@@ -192,7 +192,7 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 
 The HoloLens 2 Industrial Edition has been enhanced and redesigned with new materials and certifications to support a broader set of industrial environments, including:
 
-- **Clean room environments:** The HoloLens 2 Industrial Edition supports with standards ranging from ISO Class 6 through ISO Class 8where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention.
+- **Clean room environments:** The HoloLens 2 Industrial Edition supports with standards ranging from ISO Class 6 through ISO Class 8 where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention.
 - **Hazardous Locations:** The HoloLens 2 Industrial Edition supports environments where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations and includes a UL Class I, Division 2 certification.
 
 In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-year warranty & rapid replacement program.
@@ -214,20 +214,20 @@ This section will get you and your organization ready to deploy HoloLens devices
 |---|---|
 | [Deploy HoloLens in a commercial environment](../hololens-requirements.md).   | You learned the considerations.  |
 | Consider your [Infrastructure Deployment](../common-scenarios.md).  | You assessed your infrastructure.  |
-| Consider [Identity](../hololens-identity.md) to be used by your devices.  | You know what Identity you've picked and it's limitations.   |
+| Consider [Identity](../hololens-identity.md) to be used by your devices.  | You know what Identity you've picked and its limitations.   |
 
 ### Configure
 | Checkpoint     | Outcome  |
 |---|---|
 | Set up your [network for HoloLens](../hololens-commercial-infrastructure.md).  | You set up your network.  |
-| Prepare [network ceritifcates](../hololens-certificates-network.md).  | You prepared certificates.   |
+| Prepare [network certificates](../hololens-certificates-network.md).  | You prepared certificates.   |
 | Choose a [device management solution](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) and consider the [device restrictions](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) you'll use.  | You choose a device management solution.   |
 
 ### Deploy
 | Checkpoint  | Outcome  |
 |---|---|
 | [Enroll](../hololens-enroll-mdm.md) your devices.   | You understand how to enroll your devices.   |
-| Deploy your [applications](../app-deploy-overview.md).  | You understand all the application deployment methods avalible and picked one.  |
+| Deploy your [applications](../app-deploy-overview.md).  | You understand all the application deployment methods available and picked one.  |
 
 ### Maintain
 | Checkpoint  |  Outcome  |

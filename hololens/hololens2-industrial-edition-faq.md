@@ -24,15 +24,15 @@ appliesto:
 
 No.
 
-HoloLens 2 Industrial Edition supports the same mixed reality capabilities as the standard HoloLens 2. The Industrial Edition is designed, built and tested to support highly controlled including lint-free, non-shedding material.
+HoloLens 2 Industrial Edition supports the same mixed reality capabilities as the standard HoloLens 2. The Industrial Edition is designed, built, and tested to support highly controlled including lint-free, non-shedding material.
 
 ### What environments does HoloLens 2 Industrial Edition support?
 
-HoloLens 2 Industrial Edition supports highly-controlled environments such as clean room environments ISO class 6 through ISO Class 8.
+HoloLens 2 Industrial Edition supports highly controlled environments such as clean room environments ISO class 6 through ISO Class 8.
 
 ### Is the Operating System on HoloLens 2 Industrial Edition different than standard HoloLens 2?
 
-No. The Industrial Edition has the same OS as all other HoloLens 2 editions. For OS update information, please view our [release notes](hololens-release-notes.md).
+No. The Industrial Edition has the same OS as all other HoloLens 2 editions. For OS update information, view our [release notes](hololens-release-notes.md).
 
 ### Do apps that run on standard HoloLens 2 also run-on HoloLens 2 Industrial Edition?
 
@@ -44,11 +44,11 @@ See here  **[links TBD].**
 
 ### Is the warranty the same as the other editions?
 
-No, the Industrial Edition features a 2-year warranty &amp; rapid replacement program. With the rapid replacement program customers receive a replacement device overnight or expedited shipping (faster of the available options) before a defective device is received by Microsoft. To start a replacement please [contact support](https://aka.ms/hololenssupport).
+No, the Industrial Edition features a 2-year warranty &amp; rapid replacement program. The rapid replacement program customers receive a replacement device overnight or expedited shipping (faster of the available options) before a defective device is received by Microsoft. To start a replacement [contact support](https://aka.ms/hololenssupport).
 
 ### Can I purchase replacement parts for HoloLens 2 Industrial Edition?
 
-No. If you need to replace part of the device please [contact support](https://aka.ms/hololenssupport) to see about having your device replaced.
+No. If you need to replace part of the device [contact support](https://aka.ms/hololenssupport) to see about having your device replaced.
 
 ## Cleaning the Industrial Edition
 
