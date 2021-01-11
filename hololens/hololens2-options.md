@@ -35,11 +35,12 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 | Developer entitlements <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
 | Rapid Replacement Program <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | Commercial use rights                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| Warranty                                             |   1-Year   |             1-Year            |             2-Year            |                      2-Year                      |            1-Year            |             1-Year             |
+| Warranty                                             |   1-Year   |             1-Year            |             2-Year            |                      2-Year                      |            1-Year <sup>3</sup>            |             1-Year             |
 | Device purchase limit                                |    None    |              None             |              None             |                       None                       |             None             |       One per transaction      |
 
 - <sup>1</sup> - Includes $500 Azure credit and 3-month trials to Unity Pro and Pixyz Plugin.
-- <sup>2</sup>  - Receive a replacement device overnight or expedited shipping (faster of the available options) before defective device is received by Microsoft.
+- <sup>2</sup> - Receive a replacement device overnight or expedited shipping (faster of the available options) before defective device is received by Microsoft.
+- <sup>3</sup> - For warranty, support and certification questions for the Trimble XR10 with HoloLens 2 edition, please [contact Trimble](https://fieldtech.trimble.com/en/contact-support).
 
 ## Options Overview
 

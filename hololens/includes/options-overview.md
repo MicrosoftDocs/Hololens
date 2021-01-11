@@ -201,7 +201,7 @@ In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-y
 
 Video - In process of being produced.
 
-
+Review the [HoloLens 2 Industrial Edition FAQ.](hololens\hololens2-industrial-edition-faq.md)
 
 
 
