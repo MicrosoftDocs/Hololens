@@ -23,27 +23,27 @@ Contoso Company wants to ship a HoloLens 2 device to an external client's plant 
 
 ## FAQ
 
-- [How to ensure that external clients do not have the ability to communicate to one another](#how-to-ensure-that-clients-do-not-have-the-ability-to-communicate-with-one-another)
+- [How to ensure that external clients do not have the ability to communicate with one another](#how-to-ensure-that-clients-do-not-have-the-ability-to-communicate-with-one-another)
 - [How to ensure that clients do not have access to company resources](#how-to-ensure-that-clients-do-not-have-access-to-company-resources)
 - [How to restrict apps](#how-to-restrict-apps)
 - [How to manage passwords](#how-to-manage-passwords)
 - [How to ensure that clients do not have access to chat history](#how-to-ensure-that-clients-do-not-have-access-to-chat-history)
 
-### How to ensure that external clients do not have the ability to communicate to one another
+### How to ensure that external clients do not have the ability to communicate with one another
 
 Since Remote Assist HoloLens to HoloLens calls are not supported, clients are able to search for, but are unable to, communicate with one another. To further restrict who clients can search for and call,  [Information barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide) can restrict who a client can communicate with. Another option to consider is using [Scoped Directory Search](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)
 
  > [!NOTE]
 > Since single sign on is enabled, it is important to disable the browser using [**WDAC**](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac). If an external client opens the browser and uses the web version of Teams, the client will have access to call/chat history.
 
-### How to ensure that clients do not have access to company resources]
+### How to ensure that clients do not have access to company resources
 
 There are two options to consider.
 
 The first option is a multi-layer approach:
 
 1. Only assign licenses that the user requires. If you do not assign OneDrive, Outlook, SharePoint, Yammer, etc. to the user, he/she will not have access to those resources. The only licenses the users will need is Remote Assist, Intune, and AAD licenses to begin.
-1. Block apps (such as email) that you don’t want clients to access (See [How do we restrict apps](#How-do-we-restrict-apps)).
+1. Block apps (such as email) that you don’t want clients to access (See [How to restrict apps](#How-to-restrict-apps)).
 1. Do NOT share usernames nor password with clients. To log into the HoloLens 2, an email and numerical PIN is required.
 
 The second option is to create a separate tenant that hosts clients.
