@@ -1,6 +1,6 @@
 ---
 title: Deployment Guide
-description: Use a kiosk configuration to lock down the apps on HoloLens. 
+description: Deployment guide for HoloLens 2 (with Remote assist as an example)
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -9,9 +9,6 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 1/7/2021
 ms.custom: 
-- CI 115262
-- CI 111456
-- CSSTroubleshooting
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -46,9 +43,9 @@ There are two options to consider.
 
 The first option is a multi-layer approach:
 
-1. Only assign licenses that the user requires. If you do not assign OneDrive, Outlook, SharePoint, Yammer, etc. to the user, he/she will not have access to those resources. The only licenses the users will need is RA, Intune, and AAD licenses to begin.
+1. Only assign licenses that the user requires. If you do not assign OneDrive, Outlook, SharePoint, Yammer, etc. to the user, he/she will not have access to those resources. The only licenses the users will need is Remote Assist, Intune, and AAD licenses to begin.
 1. Block apps (such as email) that you don’t want clients to access (See [How do we restrict apps](#How-do-we-restrict-apps-?)).
-1. Do NOT share usernames nor password with clients. To log into the HoloLens, an email and numerical PIN is required.
+1. Do NOT share usernames nor password with clients. To log into the HoloLens 2, an email and numerical PIN is required.
 
 The second option is to create a separate tenant that hosts clients.
 
@@ -90,7 +87,7 @@ We recommend the following for HoloLens 2 deployment Steps:
 1. Use [WDAC](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) to allow or black apps on the HoloLens 2 device.
 1. Update Remote Assist to the latest version as part of the setup. There are two options to do this:
     1. This can be done by going to Windows **Store --> Remote Assist --> and Update App**.
-    1. Another method is to leave the HoloLens plugged in overnight for auto update.
+    1. Another method is to leave the HoloLens 2 plugged in overnight for auto update.
 1. [Disable all settings pages](https://docs.microsoft.com/hololens/settings-uri-list) except the network settings to allow users to connect to guest networks at client sites.
 1. [Manage HoloLens Updates](https://docs.microsoft.com/hololens/hololens-updates)
     1. Option to [control OS updates](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) or allow to flow freely.
