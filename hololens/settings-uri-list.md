@@ -1,6 +1,6 @@
 ---
 title: Page Settings Visibility
-description: List of HoloLens supported URIs for PageVisibilityList and Guide
+description: Keep up to date with our list of supported URIs for PageVisibilityList and Guide on HoloLens mixed reality devices.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020

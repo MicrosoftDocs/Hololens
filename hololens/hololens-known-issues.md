@@ -1,6 +1,6 @@
 ---
 title: Known issues for HoloLens
-description: This is the list of known issues that may affect HoloLens customers and developers.
+description: Keep up to date with our list of known issues and workarounds that may affect HoloLens customers and developers using Unity and the Windows Device Portal.
 keywords: troubleshoot, known issue, help
 author: mattzmsft
 ms.author: mazeller

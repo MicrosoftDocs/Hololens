@@ -1,6 +1,6 @@
 ---
 title: Common Infrastructure Deployment Scenarios
-description: Some common deployment scenarios based on different common infrastructures
+description: Learn about some of the most common deployment scenarios based on different infrastructure deployments for mixed reality.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 11/04/2020
 keywords: hololens

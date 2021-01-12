@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-description: Solutions for common HoloLens issues.
+description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 12/02/2019
@@ -8,12 +8,11 @@ ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-keywords: issues, bug, troubleshoot, fix, help, support, HoloLens
 manager: jarrettr
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
-
+keywords: issues, bug, troubleshoot, fix, help, support, HoloLens
 ---
 
 # Troubleshooting

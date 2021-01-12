@@ -1,6 +1,6 @@
 ---
 title: Maintaining cloud connected HoloLens 2 deployment with Remote Assist
-description: Tips for maintaining HoloLens devices over a Cloud Connected network
+description: Stay up to date with our tips for maintaining and supporting HoloLens devices over a Cloud Connected network.
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill

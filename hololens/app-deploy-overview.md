@@ -1,6 +1,6 @@
 ---
 title: Overview - App Management
-description: app, management, app management
+description: Get started with an overview of mixed reality app management with mobile device management, Microsoft store for business, and provisioning packages.
 keywords: HoloLens, user, account, app, application management,
 author: evmill
 ms.author: v-evmill

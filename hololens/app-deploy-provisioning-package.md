@@ -1,6 +1,6 @@
 ---
 title: Provisioning Package
-description: app, app deployment, enterprise app deployment, provisioning 
+description: Learn about app packaging, provisioning, deployment, and enterprise app deployment for HoloLens mixed reality devices.
 keywords: app, app deployment, enterprise app deployment, provisioning 
 author: evmill
 ms.author: v-evmill

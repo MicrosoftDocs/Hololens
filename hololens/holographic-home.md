@@ -1,6 +1,6 @@
 ---
 title: Use the Start menu and mixed reality home
-description: Navigate the mixed reality home in Windows Holographic.
+description: Learn how to use the start menu, manage and access apps, and navigate the mixed reality home in Windows Holographic.
 ms.assetid: 742bc126-7996-4f3a-abb2-cf345dff730c
 ms.date: 08/07/2019
 keywords: hololens

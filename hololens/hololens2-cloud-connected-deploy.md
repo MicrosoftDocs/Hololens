@@ -1,6 +1,6 @@
 ---
 title: Deploying cloud connected HoloLens 2 deployment with Remote Assist
-description: How to validate enrollment and Remote Assist for HoloLens devices over a Cloud Connected network
+description: Learn how to validate enrollment and Remote Assist for HoloLens devices over a Cloud Connected network.
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill

@@ -1,6 +1,6 @@
 ---
 title: Configuring loud connected HoloLens 2 deployment with Remote Assist
-description: How to set up configurations to enroll HoloLens devices over a Cloud Connected network
+description: Learn how to set up configurations to enroll HoloLens devices over a Cloud Connected network at scale with Remote Assist.
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill

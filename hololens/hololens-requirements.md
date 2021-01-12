@@ -1,6 +1,6 @@
 ---
 title: Set up HoloLens in a commercial environment
-description: Learn more about deploying and managing HoloLens in enterprise environments.
+description: Learn more about deploying and managing HoloLens in enterprise environments, including infrastructure, azure active directory, and mobile device management.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001

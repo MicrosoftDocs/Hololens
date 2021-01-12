@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot for HoloLens 2
-description: How to set up Autopilot on HoloLens 2 devices.
+description: Learn how to set up, configure, and troubleshoot Autopilot on HoloLens 2 devices.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/13/2020

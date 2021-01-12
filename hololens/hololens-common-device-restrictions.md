@@ -1,6 +1,6 @@
 ---
 title: Common Device Restrictions
-description: Device restrctions commonly set on HoloLens. 
+description: Keep up to date with common device restrictions and settings for the HoloLens mixed reality device. 
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
