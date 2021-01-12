@@ -2,6 +2,19 @@
 
 
 
+## Week of January 04, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/4/2021 | [Restart, reset, or recover HoloLens](/hololens/hololens-recovery) | modified |
+| 1/4/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
+| 1/4/2021 | [HoloLens 2 editions](/hololens/hololens2-options) | modified |
+| 1/4/2021 | [Prepare a new HoloLens 2](/hololens/hololens2-setup) | modified |
+| 1/5/2021 | [Contributing instructions](/hololens/contributing) | modified |
+| 1/7/2021 | [Restart, reset, or recover HoloLens](/hololens/hololens-recovery) | modified |
+
+
 ## Week of December 21, 2020
 
 
@@ -17,18 +30,3 @@
 |------|------------|--------|
 | 12/14/2020 | [Provisioning Package](/hololens/app-deploy-provisioning-package) | modified |
 | 12/18/2020 | [Give us feedback](/hololens/hololens-feedback) | modified |
-
-
-## Week of November 30, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/30/2020 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
-| 12/1/2020 | [Known issues for HoloLens](/hololens/hololens-known-issues) | modified |
-| 12/2/2020 | [Find, install, and uninstall applications](/hololens/holographic-store-apps) | modified |
-| 12/3/2020 | [Troubleshooting](/hololens/hololens-troubleshooting) | modified |
-| 12/4/2020 | [Common Infrastructure Deployment Scenarios](/hololens/common-scenarios) | modified |
-| 12/4/2020 | [Restart, reset, or recover HoloLens](/hololens/hololens-recovery) | modified |
-| 12/4/2020 | [Set up HoloLens in a commercial environment](/hololens/hololens-requirements) | modified |
-| 12/4/2020 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |

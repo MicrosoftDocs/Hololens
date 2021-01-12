@@ -45,6 +45,7 @@ If the device can't boot to the startup menu, note the LED appearance and device
 Under certain circumstances, you may have to manually reset the device without using the software UI.
 
 ### Standard procedure
+
 1. Unplug the Type-C cable to disconnect the device from the power supply or the host PC.
 
 2. Press and hold the **power** button for 15 seconds. All LEDs should be off.
@@ -84,7 +85,7 @@ There are two ways to reflash the device. For both, you must first [install Adva
 
 By default, Advanced Recovery Companion is set to download the most recent feature release build, check here to read our [Release notes](hololens-release-notes.md#) to learn about the latest feature release. To get the latest HoloLens 2 Full Flash Update (FFU) package to reflash your device via Advanced Recovery Companion, [click here to download the latest monthly HoloLens 2 image](https://aka.ms/hololens2download). This version is the latest generally available build.
 
-Before you start the reflash procedure, make sure the app is installed and running on your Windows 10 PC and ready to detect the device.
+Before you start the reflash procedure, make sure the app is installed and running on your Windows 10 PC and ready to detect the device. Also ensure that your HoloLens is charged to a minimum of 40%.
 
 ![HoloLens 2 clean reflash screen shot](images/ARC1.png)
 
@@ -122,22 +123,21 @@ If the HoloLens 2 doesn't start correctly, you may need to put the device into R
 
 If the IT environment prevents the use of the Windows Store app or limits access to the retail store, the IT administrator can make this app available through an "offline" deployment path.
 
- >[!NOTE] 
+ >[!NOTE]
  > - IT administrators can also distribute this app through System Center Configuration Manager (SCCM) or Intune.
  > - This guide focuses on Advanced Recovery Companion, but the process can also be used for other "offline" apps.
 
 Follow these steps to enable the deployment path:
 1. Go to the [Microsoft Store for Business](https://businessstore.microsoft.com) and sign in using an Azure Active Directory identity.
 
-1. Go to **Manage – Settings**. Turn on **Show offline apps** under **Shopping experience**. 
+1. Go to **Manage – Settings**. Turn on **Show offline apps** under **Shopping experience**.
 1. Go to **shop for my group**, and search for [***Advanced Recovery Companion***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
 1. Change the **License Type** to ***offline***, and select **Manage**.
 1. Under **Download the package for offline use**, select the second blue **Download** button. Make sure that the file extension is *.appxbundle*.
 
     - At this stage, if the Desktop PC has internet access, double-click the package to install the app.
 
-
-    - If the destination PC has no internet connectivity, follow these steps: 
+    - If the destination PC has no internet connectivity, follow these steps:
        1. Select the unencoded license, and then select **Generate license**.
        2. Under **Required Frameworks**, select **Download**.
        3. Use DISM to apply the package with the dependency and license. From an administrator command prompt, run the following command:
@@ -149,7 +149,7 @@ Follow these steps to enable the deployment path:
             > The version number in this code example may not match the currently available version. You may have also chosen a different download location than in the example. Make any changes to the command as needed.
 
 > [!TIP]
-> When you plan to use Advanced Recovery Companion to install an FFU offline, it may be useful to download your flash image. [**Download the current image for HoloLens 2**](https://aka.ms/hololens2download). 
+> When you plan to use Advanced Recovery Companion to install an FFU offline, it may be useful to download your flash image. [**Download the current image for HoloLens 2**](https://aka.ms/hololens2download).
 
 Other resources:
 - [Distribute offline apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
