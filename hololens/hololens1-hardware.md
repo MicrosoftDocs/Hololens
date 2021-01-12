@@ -1,6 +1,6 @@
 ---
 title: HoloLens (1st gen) hardware
-description: An outline of the components that make up Microsoft HoloLens (1st gen), the world's first fully untethered holographic computer running Windows.
+description: Learn about the components that make up the Microsoft HoloLens (1st gen), the latest evolution of an untethered holographic Microsoft computer running Windows 10.
 ms.assetid: 527d494e-2ab6-46ca-bd5a-bfc6b43cc833
 ms.date: 09/16/2019
 keywords: hololens

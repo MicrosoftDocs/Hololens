@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 hardware
-description: An outline of the components that make up Microsoft HoloLens 2, the latest evolution of Microsoft's fully untethered holographic computer running Windows 10.
+description: Learn about the components that make up the Microsoft HoloLens 2, the latest evolution of an untethered holographic Microsoft computer running Windows 10.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 10/20/2020
 keywords: hololens
