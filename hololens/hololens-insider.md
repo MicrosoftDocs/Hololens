@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 11/10/2020
+ms.date: 1/13/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -24,7 +24,26 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-We recently released all of our Windows Insider features. As all these features are now generally available we encourage you to read our [release notes](hololens-release-notes.md) to see all our latest features. Keep checking back here to see when we start flighting new exciting features to try out!
+We are exctited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. Get excited and ready to mix these updates into your reality.
+
+| Feature Name           | Short description | Available in build |
+|------------------------|-------------------|--------------------|
+| Microsoft Edge Updates |                   | 20279.1006         |
+| Xerxes Updates         |                   | 20279.1006         |
+
+### Microsoft Edge Updates
+
+Things stuff, details, notes, ect.
+
+### Xerxes Updates
+
+Things stuff, details, notes, ect.
+
+
+
+
+
+
 
 ## Start receiving Insider builds
 
