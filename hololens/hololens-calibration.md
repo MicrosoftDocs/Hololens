@@ -1,11 +1,10 @@
 ---
 title: Improve visual quality and comfort
-description: Calibrating your IPD (interpupillary distance) can improve the quality of your visuals. Both HoloLens and Windows Mixed Reality immersive headsets offer ways to customize IPD.
+description: Learn how to calibrating your IPD (interpupillary distance) to improve the quality of your visuals on HoloLens and Windows Mixed Reality immersive headsets.
 author: Teresa-Motiv
 ms.author: xerxesb
 ms.date: 9/13/2019
 ms.topic: article
-keywords: calibration, comfort, visuals, quality, ipd
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -14,6 +13,7 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
+keywords: calibration, comfort, visuals, quality, ipd, HoloLens, Windows Mixed Reality, VR headsets
 ---
 
 # Improve visual quality and comfort

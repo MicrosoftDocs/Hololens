@@ -1,7 +1,6 @@
 ---
 title: HoloLens environment considerations
-description: Get the best possible experience using HoloLens when you optimize the device for your eyes and environment. Many different environmental factors are fused together to enable tracking, but as a Mixed Reality developer, there are several factors you can keep in mind to tune a space for better holograms.
-keywords: holographic frame, field of view, fov, calibration, spaces, environment, how-to
+description: Get the best possible experience using HoloLens when you optimize the device for your eyes and environment.
 author: dorreneb
 ms.author: dobrown
 manager: jarrettr
@@ -10,6 +9,7 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
+keywords: holographic frame, field of view, fov, calibration, spaces, environment, how-to, HoloLens, mixed reality, mixed reality headsets
 ---
 
 # HoloLens environment considerations
