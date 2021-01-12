@@ -26,14 +26,29 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 We are exctited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. Get excited and ready to mix these updates into your reality.
 
-| Feature Name           | Short description | Available in build |
-|------------------------|-------------------|--------------------|
-| Microsoft Edge Updates |                   | 20279.1006         |
-| Xerxes Updates         |                   | 20279.1006         |
+| Feature Name                | Short description                                                                              | Available in build |
+|-----------------------------|------------------------------------------------------------------------------------------------|--------------------|
+| New Microsoft Edge          | The new, Chromium-based Microsoft Edge is now available for HoloLens 2                         | 20279.1006         |
+| New Settings app            | The legacy Settings app is being replaced by an updated version with new features and settings | 20279.1006         |
+| App picker and default apps | Choose which app should launch for each file type or hyperlink                                 | 20279.1006         |
+| Swipe to type               | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006         |
+| Xerxes Updates              |                   | 20279.1006         |
 
-### Microsoft Edge Updates
+### Introducing the new Microsoft Edge
 
 Things stuff, details, notes, ect.
+
+### New Settings app
+
+
+### App picker and default apps
+
+
+### Swipe to type
+
+Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow-up words without needing to press the spacebar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
+
+Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). We are evaluating this feature for public release, so your feedback is important; whether you find the feature useful or experience bugs (and want to share constructive feedback), please let us know via [Feedback Hub](hololens-feedback.md).
 
 ### Xerxes Updates
 
