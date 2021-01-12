@@ -27,7 +27,7 @@ This guide provides guidance for applying a sample Provisioning Package that wil
 -	Prevents adding or removing provisioning packages.
 -	No user can enable any of the above restricted components.
 
-## Preparing 
+## Prepare
 
 Windows 10 PC Setup
 1. [Download the latest HoloLens 2 OS file](https://aka.ms/hololens2download) directly to a PC. 
@@ -38,7 +38,7 @@ Windows 10 PC Setup
 1. Prepare your offline [Line of Business application for PPKG deployment](app-deploy-provisioning-package.md). 
 
 
-## Configuring
+## Configure
 
 Build a Secure Configuration Provisioning Package
 
@@ -81,7 +81,7 @@ Configurations set in this provisioning package:
    > ![Screenshot of the Export button for this package in WCD.](images/offline-secure-sample-wcd-export.png)
 
 
-## Deploying
+## Deploy
 
 1. Connect the HL2 to your Windows 10 PC via USB cable.
 1. Launch the ARC tool and select **HoloLens 2**
@@ -108,7 +108,7 @@ Configurations set in this provisioning package:
 1. Once the provisioning package completes select **OK**.
 1. You should then be prompted to sign into the device with the shared local account and password.
 
-## Maintaining
+## Maintain
 
 With this configuration, it is recommended to restart the process above and reflash the device with the ARC tool and apply a new PPKG to make any updates to the OS and/or application(s). 
 

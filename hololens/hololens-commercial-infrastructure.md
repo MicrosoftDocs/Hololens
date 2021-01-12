@@ -1,6 +1,6 @@
 ---
 title: Infrastructure Guidelines for HoloLens
-description: Learn about the infrastructure guidelines for HoloLens devices, including wireless network support, remote assist, and mobile device manager.
+description: Learn about the infrastructure guidelines for HoloLens devices, including wireless network support, remote assist, and mobile device management.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Store for Business
-description: Learn how to work with the Microsoft Store for Business to publish your mixed reality applications to the world. 
+description: Learn how to work with the Microsoft Store for Business to publish your mixed reality applications to your business. 
 keywords: Microsoft Store for Business, msfb, app deployment, store
 author: evmill
 ms.author: v-evmill

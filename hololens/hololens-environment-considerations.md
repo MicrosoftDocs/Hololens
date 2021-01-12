@@ -94,7 +94,7 @@ There are two settings, which enable users to “clean up” holograms and cause
 
 1. **Delete nearby holograms**. When you select this setting, HoloLens will erase all anchored holograms and all stored map data for the “current space” where the device is located. A new map section would be created and stored in the database for that location once holograms are again placed in that same space.
 
-1. **Delete all holograms. By selecting this setting, HoloLens will erase ALL map data and anchored holograms in the entire databases of spaces. No holograms will be rediscovered and any holograms need to be newly placed to again store map sections in the database.
+1. **Delete all holograms**. By selecting this setting, HoloLens will erase ALL map data and anchored holograms in the entire databases of spaces. No holograms will be rediscovered and any holograms need to be newly placed to again store map sections in the database.
 
 ## Hologram quality
 
