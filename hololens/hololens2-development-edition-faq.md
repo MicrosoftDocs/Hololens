@@ -18,7 +18,7 @@ appliesto:
 
 # HoloLens 2 Development Edition FAQ
 
-## General
+## General questions
 
 ### What do I get with the HoloLens 2 Development Edition?
 

@@ -19,7 +19,7 @@ This overview is intended to help IT professionals understand considerations for
 
 HoloLens 2 runs on Windows 10 Holographic which provides organizations with robust, flexible, built-in mobile device and app management technologies. Windows 10 Holographic supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. The HoloLens 2 can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance and retirement using a comprehensive mobile device management solution.
 
-## Prepare
+## Preparing for deployment
 
 As you prepare to deploy HoloLens 2 to your corporate enterprise environment, there are several considerations that should be reviewed and understood as you begin to plan for scale deployments of HoloLens 2.
 
