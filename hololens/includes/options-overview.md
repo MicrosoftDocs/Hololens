@@ -209,6 +209,8 @@ Review the [HoloLens 2 Industrial Edition FAQ.](../hololens2-industrial-edition-
 ## 2. Deploy HoloLens devices in your organization
 This section will get you and your organization ready to deploy HoloLens devices.
 
+We have created a guide specifically for helping deploy HoloLens devices at scale with end-to-end set up from setting up Azure Active Directory to validating a Remote Assist call. If you have purchased the HoloLens 2 Industrial Edition, please check out this **[Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview).**
+
 ### Prepare
 | Checkpoint  | Outcome  |
 |---|---|
