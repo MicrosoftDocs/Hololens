@@ -25,8 +25,8 @@ For the purpose of this document, Contoso Company wants to ship a HoloLens 2 dev
 
 ### Requirements for this Scenario
 
-1. Azure AD
-1. MDM
+1. [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+1. Mobile Device Manager - such as [Intune](https://docs.microsoft.com/mem/intune/fundamentals/free-trial-sign-up)
 1. Remote Assist License
     1. [Buy Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-remote-assist)
     1. [Trial Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
