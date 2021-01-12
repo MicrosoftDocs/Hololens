@@ -40,13 +40,14 @@ Things stuff, details, notes, ect.
 
 ### New Settings app
 
-With this release, we're introducing a new version of the Settings app. The new Settings app includes new features, like the ability to search for particular settings from the Settings homepage using keywords or the setting's name. Thew new Settings app also includes new and expanded settings for HoloLens 2 in the following areas: input/output audio devices, individual app volume, power and sleep, Ethernet adapter, Ease of Access, airplane mode, and default apps.
+With this release, we're introducing a new version of the Settings app. The new Settings app includes new features, like the ability to search for particular settings from the Settings homepage using keywords or the setting's name. The new Settings app also includes new and expanded settings for HoloLens 2 in the following areas: input/output audio devices, individual app volume, power and sleep, Ethernet adapter, Ease of Access, airplane mode, and default apps.
 
 > [!NOTE]
 > Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.
 
 **Known issues**
 - Previously placed Settings windows will be removed (see note above).
+- Visiting the Notifications page may crash the Settings app (investigating).
 - The Ethernet page currently doesn't show up (to be fixed soon).
 - Battery usage breakdown won't include the new Microsoft Edge, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated).
 
