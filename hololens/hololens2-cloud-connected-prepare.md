@@ -1,5 +1,5 @@
 ---
-title: Deployment Guide – Cloud connected HoloLens 2 deployment at scale with Remote Assist - Prepare
+title: Preparing cloud connected HoloLens 2 deployment with Remote Assist 
 description: How to prepare to enroll HoloLens devices over a Cloud Connected network
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
@@ -16,7 +16,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Prepare - Cloud connected Guide
+# Deployment Guide – Cloud connected HoloLens 2 deployment at scale with Remote Assist - Prepare
 
 By the end of this article you will have set up Azure AD, MDM, and understand more about using Azure AD accounts and network requirements. This section of the guide will help you and your organization get prepared to deploy HoloLens 2 to the cloud and use Dynamics 365 Remote Assist. It will go over the importance of each piece of your infrastructure as well as providing links to guides to help you set up those pieces as needed.
 
