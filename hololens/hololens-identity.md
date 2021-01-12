@@ -38,7 +38,7 @@ HoloLens supports several kinds of user identities. You can use one or more user
 Cloud-connected accounts (Azure AD and MSA) offer more features because they can use Azure services.  
 
 > [!NOTE]
-> 1 - While a HoloLens 2 device can support up to 64 Azure AD accounts, only 10 of those accounts may enroll in Iris Authentication. This is aligned with other Biometric authentication options for Windows Hello for Business. [Read more here.](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
+> 1 - While a HoloLens 2 device can support up to 64 Azure AD accounts, only 10 of those accounts may enroll in Iris Authentication. This is aligned with other [Biometric authentication options for Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
 
 ## Setting up users
 
@@ -104,7 +104,7 @@ Windows Hello for Business (which supports using a PIN to sign in) is supported 
 
 HoloLens 2 supports Iris authentication. Iris is based on Windows Hello technology and is supported for use by both Azure Active Directory and Microsoft Accounts. Iris is implemented the same way as other Windows Hello technologies, and achieves biometrics security FAR of 1/100K.
 
-You can learn more about biometric requirements and specifications for Windows Hello [here](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements). Learn more about [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) and [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
+See the [biometric requirements and specifications for Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information. Learn more about [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) and [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
 
 ### How does the type of account affect sign-in behavior?
 
