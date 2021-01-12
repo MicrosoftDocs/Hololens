@@ -19,7 +19,7 @@ appliesto:
 
 ## Scenario 1: External Use
 
-Contoso Company wants to ship a HoloLens 2 device to an external client's plant for short-term or long-term usage. For the purpose of this scenario, Remote Assist is the primary Mixed Reality app being used.
+Contoso Company wants to ship a HoloLens 2 device to an external client's plant for short-term or long-term use. For the purpose of this scenario, Remote Assist is the primary Mixed Reality app being used.
 
 ## FAQ
 
