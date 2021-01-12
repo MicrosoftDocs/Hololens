@@ -56,7 +56,11 @@ The first option is a multi-layer approach:
 1. Block apps (such as email) that you don’t want clients to access (See [How to restrict apps](#how-to-restrict-apps)).
 1. Do NOT share usernames nor password with clients. To log into the HoloLens 2, an email and numerical PIN is required.
 
-The second option is to create a separate tenant that hosts clients.
+The second option is to create a separate tenant that hosts clients (see Image 1.1).
+
+**Image 1.1**
+
+![Service Tenant Image](./images/hololens-service-tenant-image.png)
 
 ### How to restrict apps
 
