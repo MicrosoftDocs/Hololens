@@ -15,13 +15,23 @@ appliesto:
 - HoloLens 2
 ---
 
-# General Deployment Recommendations and Instructions
+# Deploying HoloLens 2 to External Clients with Remote Assist
 
-## Scenario 1: External Use
+This document helps IT professions plan for and deploy HoloLens 2 devices with a focus on Remote Assist. [Learn more about Remote Assist](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist).
 
-Contoso Company wants to ship a HoloLens 2 device to an external client's plant for short-term or long-term use. For the purpose of this scenario, Remote Assist is the primary Mixed Reality app being used.
+## Scenario Description
 
-## FAQ
+For the purpose of this document, Contoso Company wants to ship a HoloLens 2 device to an external client's plant for short-term or long-term use. When the client needs assistance servicing machinery, the client will log into the HoloLens 2 device using credentials provided by Contoso Company and use Remote Assist to contact Contoso Company's experts.
+
+### Requirements for this Scenario
+
+1. Azure AD
+1. MDM
+1. Remote Assist License
+    1. [Buy Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-remote-assist)
+    1. [Trial Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+
+## Common Concerns
 
 - [How to ensure that external clients do not have the ability to communicate with one another](#how-to-ensure-that-external-clients-do-not-have-the-ability-to-communicate-with-one-another)
 - [How to ensure that clients do not have access to company resources](#how-to-ensure-that-clients-do-not-have-access-to-company-resources)
@@ -72,6 +82,11 @@ We recommend the following for HoloLens 2 deployment Steps:
 
 1. Use the [latest HoloLens OS release](https://aka.ms/hololens2download) as your baseline build.
 1. Assign user-based or device-based licenses:
+    1. User-based and device-based licenses both follow the following steps:
+        1. [Create a group in AAD and add members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) for HoloLens/RA users.
+        1. [Assign device-based or user-based licenses](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) to this group.
+        1. (Optional) You can target groups for MDM policies.
+
 1. Devices should be AAD joined to your tenant, [Auto Enrolled](https://docs.microsoft.com/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm), and configured through [Auto Pilot](https://docs.microsoft.com/hololens/hololens2-autopilot).
     1. Please note that the first user on the device will be the device owner.
     1. Please note that if the device is AAD joined, the user that performed the join is made device owner.
@@ -87,7 +102,7 @@ We recommend the following for HoloLens 2 deployment Steps:
 
 1. Use [WDAC](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) to allow or black apps on the HoloLens 2 device.
 1. Update Remote Assist to the latest version as part of the setup. There are two options to do this:
-    1. This can be done by going to Windows **Store --> Remote Assist --> and Update App**.
+    1. This can be done by going to Windows **Microsoft Store --> Remote Assist --> and Update App**.
     1. Another method is to leave the HoloLens 2 plugged in overnight for auto update.
 1. [Disable all settings pages](https://docs.microsoft.com/hololens/settings-uri-list) except the network settings to allow users to connect to guest networks at client sites.
 1. [Manage HoloLens Updates](https://docs.microsoft.com/hololens/hololens-updates)
