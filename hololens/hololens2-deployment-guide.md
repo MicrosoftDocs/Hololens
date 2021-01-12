@@ -15,7 +15,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Overview
+# General Deployment Recommendations and Instructions
 
 ## Scenario 1: External Use
 
