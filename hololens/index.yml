@@ -50,6 +50,8 @@ landingContent:
             url: common-scenarios.md
           - text: Cloud connected HoloLens 2 deployment at scale with Remote Assist
             url: hololens2-cloud-connected-overview.md
+          - text: External Clients Deployment Guide
+            url: hololens2-deployment-guide.md
           - text: Offline secure deployment
             url: hololens-common-scenarios-offline-secure.md
 
