@@ -96,24 +96,25 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 
 ### New Settings app
 
-With this release, we're introducing a new version of the Settings app. The new Settings app includes new features and expanded settings for HoloLens 2 in the following areas: input/output audio devices, individual app volume, power and sleep, Ethernet adapter, Ease of Access, airplane mode, and default apps.
+With this release, we're introducing a new version of the Settings app. The new Settings app includes new features and expanded settings for HoloLens 2 in the following areas: Sound, Power & sleep, Network & Internet, Apps, Accounts, Ease of Access, and more.
 
 > [!NOTE]
 > Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.
 
 **New features and settings**
 - Settings search: search for settings from the Settings homepage using keywords or the setting's name
-- Sound:
+- System > Sound:
   - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input). Note: Bluetooth microphones are not supported by HoloLens 2.
   - App volume: independently adjust the volume of each app
-- Battery saver: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically
-- Power & sleep: choose when the device should go to sleep after a period of inactivity
-- USB: you can disable USB connections by default
+- System > Power & sleep: choose when the device should go to sleep after a period of inactivity
+- System > Battery: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically
+- Devices > USB: you can disable USB connections by default
 - Network & Internet:
   - USB-C Ethernet adapters will now appear in Network & Internet
   - USB-C Ethernet adapter settings are now available, including its IP address
   - You can now enable airplane mode on HoloLens 2
 - Apps: you can reset the default apps used for file and link types. See [Default app picker](#default-app-picker) for more information.
+- Accounts > Other users: device owners can add users, upgrade standard users to device owners, downgrade device owners to standard users, and remove users.
 - Ease of Access: change text size and some visual effects
 
 **Known issues**
