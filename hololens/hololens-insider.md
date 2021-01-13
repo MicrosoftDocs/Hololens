@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 11/10/2020
+ms.date: 1/13/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -24,7 +24,125 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-We recently released all of our Windows Insider features. As all these features are now generally available we encourage you to read our [release notes](hololens-release-notes.md) to see all our latest features. Keep checking back here to see when we start flighting new exciting features to try out!
+We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. Get excited and ready to mix these updates into your reality.
+
+| Feature Name                                              | Short description                                                                      | Available in build |
+|-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
+| [New Microsoft Edge](#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2                         | 20279.1006 |
+| [New Settings app](#new-settings-app)                     | The legacy Settings app is being replaced by an updated version with new features and settings | 20279.1006 |
+| [Default app picker](#default-app-picker)                 | Choose which app should launch for each file or link type                                      | 20279.1006 |
+| [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | 20279.1006 |
+| [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
+
+### Introducing the new Microsoft Edge
+
+![Animation of legacy Microsoft Edge logo to new Microsoft Edge logo](images/new-edge.gif)
+
+The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) to create better compatibility for customers and less fragmentation of the web for web developers. 
+
+With this Insider preview, the new Microsoft Edge is available to HoloLens 2 customers for the first time! While the new Microsoft Edge will eventually replace legacy Microsoft Edge on HoloLens 2, both browsers are currently available to Insiders. Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge or via [Feedback Hub](hololens-feedback.md).
+
+#### Launching the new Microsoft Edge
+
+There are two versions of Microsoft Edge available to Insiders: the new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) and the legacy Microsoft Edge (represented by the white "e" icon). The new Microsoft Edge is pinned to the Start menu and will automatically launch when you activate a web link. If you would like to revert to using legacy Microsoft Edge as your default web browser, see the instructions below for [resetting default apps](#default-app-picker).
+
+> [!NOTE]
+> When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge. If you continue to use legacy Microsoft Edge after launching the new Microsoft Edge, that new data will not be synced from legacy Microsoft Edge to the new Microsoft Edge.
+
+#### Configuring policy settings for the new Microsoft Edge
+
+The new Microsoft Edge offers IT Pros a much broader set of browser policies on HoloLens 2 than were previously available with legacy Microsoft Edge. 
+
+Here are some helpful resources for learning more about managing policy settings for the new Microsoft Edge:
+- [Configure Microsoft Edge policy settings with Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
+- [Microsoft Edge Legacy to Microsoft Edge policy mapping](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Google Chrome to Microsoft Edge policy mapping](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- Full [Microsoft Edge Enterprise documentation](https://docs.microsoft.com/deployedge/)
+
+> [!IMPORTANT]
+> Because of the volume of browser policies supported by the new Microsoft Edge, our team is unable to guarantee that each new policy works on HoloLens 2. However, we've tested and confirmed that the new Microsoft Edge equivalent of each legacy Microsoft Edge policy previously supported on HoloLens 2 work as expected. See [Microsoft Edge Legacy to Microsoft Edge policy mapping](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) to find the new Microsoft Edge equivalent of each legacy Microsoft Edge browser policy you were using with HoloLens 2.
+>
+> There are at least two new Microsoft Edge policies that we know *will not* work with HoloLens 2:
+> - EnterpriseModeSiteList
+> - EnterpriseSiteListServiceURL
+
+#### What to expect from the new Microsoft Edge on HoloLens 2
+
+Because the new Microsoft Edge is a native Win32 app with a new UWP adapter layer allowing it to run on UWP-only devices like HoloLens 2, some features may not be immediately available. We'll be supporting new scenarios and features over the coming months, so please check this space for up-to-date information.
+
+**Scenarios and features expected to work:**
+- First-run experience, sign-in to profile, and sync
+- Websites should render and behave as expected
+- Most browser functionality (Favorites, History, etc.) should work as expected
+- Dark mode
+- Installing web apps to the device
+- Installing extensions (please let us know if you use any extensions that don't work properly on HoloLens 2)
+- Viewing and marking up a PDF
+- Spatial sound from a single browser window
+- Automatic and manual updating of the browser
+- Saving a PDF from the Print menu (using "Save to PDF" option)
+
+**Scenarios and features coming soon:**
+- WebXR and 360 Viewer extension
+- Content restoration to correct window when browsing across multiple windows placed in your environment
+- Spatial sound for multiple windows with simultaneous audio streams
+- Joining a Microsoft Teams call via the browser with video, mixed reality capture, or screen-sharing (joining calls with audio works well)
+- "See it, say it"
+- Printing
+
+**Top known browser issues:**
+- Resetting your device will remove the new Microsoft Edge
+- The magnifier preview in the holographic keyboard shows incorrect content
+
+### New Settings app
+
+With this release, we're introducing a new version of the Settings app. The new Settings app includes new features and expanded settings for HoloLens 2 in the following areas: input/output audio devices, individual app volume, power and sleep, Ethernet adapter, Ease of Access, airplane mode, and default apps.
+
+> [!NOTE]
+> Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.
+
+**New features and settings**
+- Settings search: search for settings from the Settings homepage using keywords or the setting's name
+- Sound:
+  - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input). Note: Bluetooth microphones are not supported by HoloLens 2.
+  - App volume: independently adjust the volume of each app
+- Battery saver: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically
+- Power & sleep: choose when the device should go to sleep after a period of inactivity
+- USB: you can disable USB connections by default
+- Network & Internet:
+  - USB-C Ethernet adapters will now appear in Network & Internet
+  - USB-C Ethernet adapter settings are now available, including its IP address
+  - You can now enable airplane mode on HoloLens 2
+- Apps: you can reset the default apps used for file and link types. See [Default app picker](#default-app-picker) for more information.
+- Ease of Access: change text size and some visual effects
+
+**Known issues**
+- Previously placed Settings windows will be removed (see note above)
+- Visiting the Notifications page may crash the Settings app (investigating)
+- The Ethernet page currently doesn't show up (to be fixed soon)
+- Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon)
+
+### Default app picker
+
+When you activate a hyperlink or open a file type with more than one installed app which supports it, you will see a new window open prompting you to select which installed app should handle the file or link type. In this window you can also choose to have the selected app handle the file or link type "Once" or "Always." 
+
+![App picker window](images/default-app-picker.png)
+
+If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. Scroll to the bottom of the page and select the **Clear** button under "Default apps for file types" and/or "Default apps for link types." Unlike the similar setting on desktop PCs, you can't reset individual file type defaults.
+
+### Office web app
+
+The Office web app has been added to the "All apps" list in the Start menu. This web app can also be pinned to Start or uninstalled. Because this is a web app, its functionality matches exactly what you'd experience by visiting https://www.office.com. Office web app functionality is only available when your HoloLens 2 has an active internet connection.
+
+### Swipe to type
+
+Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow-up words without needing to press the spacebar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
+
+Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). We are evaluating this feature for public release, so your feedback is important; whether you find the feature useful or you have constructive feedback, please let us know via [Feedback Hub](hololens-feedback.md).
+
+
+
+
 
 ## Start receiving Insider builds
 
