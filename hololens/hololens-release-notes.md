@@ -25,7 +25,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 >[!NOTE]
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
-## Windows Holographic, version 2004 - January 2021 Update
+## Windows Holographic, version 20H2 - January 2021 Update
 - Build 19041.1134
 
 Improvements and fixes in the update:
