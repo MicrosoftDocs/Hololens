@@ -51,7 +51,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 - Previously placed Settings windows will be removed (see note above).
 - Visiting the Notifications page may crash the Settings app (investigating).
 - The Ethernet page currently doesn't show up (to be fixed soon).
-- Battery usage breakdown won't include the new Microsoft Edge, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated).
+- Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
 
 ### Default app picker
 
