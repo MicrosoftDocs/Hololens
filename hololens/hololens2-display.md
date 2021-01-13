@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 Displays
-description: Expectations for HoloLens 2 displays. Guidance for configuring displays for best image quality. 
+description: Expectations for HoloLens 2 displays. Guidance for configuring displays for best image quality.
 author: BrandonBray
 ms.author: branbray
 ms.date: 8/13/2020
