@@ -24,7 +24,7 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. Get excited and ready to mix these updates into your reality.
+We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Get excited and ready to mix these updates into your reality. 
 
 | Feature Name                                              | Short description                                                                      | Available in build |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
