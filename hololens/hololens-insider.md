@@ -101,6 +101,8 @@ With this release, we're introducing a new version of the Settings app. The new 
 > [!NOTE]
 > Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.
 
+![New Settings app homepage](images/new-settings-app.png)
+
 **New features and settings**
 - Settings search: search for settings from the Settings homepage using keywords or the setting's name
 - Sound:
