@@ -38,7 +38,7 @@ We are excited to start flighting new features to Windows Insiders again. We wil
 
 The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) to create better compatibility for customers and less fragmentation of the web for web developers. 
 
-With this Insider preview, the new Microsoft Edge is available to HoloLens 2 customers for the first time! While the new Microsoft Edge will eventually replace legacy Microsoft Edge on HoloLens 2, both browsers are currently available to Insiders. Please share feedback and bugs with our team via [Feedback Hub](hololens-feedback.md) or the **Send Feedback** feature in the new Microsoft Edge.
+With this Insider preview, the new Microsoft Edge is available to HoloLens 2 customers for the first time! While the new Microsoft Edge will eventually replace legacy Microsoft Edge on HoloLens 2, both browsers are currently available to Insiders. Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge or via [Feedback Hub](hololens-feedback.md).
 
 #### Launching the new Microsoft Edge
 
@@ -52,10 +52,10 @@ There are two versions of Microsoft Edge available to Insiders: the new Microsof
 The new Microsoft Edge offers IT Pros a much broader set of browser policies on HoloLens 2 than were previously available with legacy Microsoft Edge. 
 
 Here are some helpful resources for learning more about managing policy settings for the new Microsoft Edge:
-- [Microsoft Edge Enterprise documentation](https://docs.microsoft.com/deployedge/)
 - [Configure Microsoft Edge policy settings with Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
-- [Google Chrome to Microsoft Edge policy mapping](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
 - [Microsoft Edge Legacy to Microsoft Edge policy mapping](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Google Chrome to Microsoft Edge policy mapping](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- Full [Microsoft Edge Enterprise documentation](https://docs.microsoft.com/deployedge/)
 
 > [!IMPORTANT]
 > Because of the volume of browser policies supported by the new Microsoft Edge, our team is unable to guarantee that each new policy works on HoloLens 2. However, we've tested and confirmed that the new Microsoft Edge equivalent of each legacy Microsoft Edge policy previously supported on HoloLens 2 work as expected. See [Microsoft Edge Legacy to Microsoft Edge policy mapping](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) to find the new Microsoft Edge equivalent of each legacy Microsoft Edge browser policy you were using with HoloLens 2.
@@ -94,10 +94,25 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 
 ### New Settings app
 
-With this release, we're introducing a new version of the Settings app. The new Settings app includes new features, like the ability to search for particular settings from the Settings homepage using keywords or the setting's name. The new Settings app also includes new and expanded settings for HoloLens 2 in the following areas: input/output audio devices, individual app volume, power and sleep, Ethernet adapter, Ease of Access, airplane mode, and default apps.
+With this release, we're introducing a new version of the Settings app. The new Settings app includes new features and expanded settings for HoloLens 2 in the following areas: input/output audio devices, individual app volume, power and sleep, Ethernet adapter, Ease of Access, airplane mode, and default apps.
 
 > [!NOTE]
 > Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.
+
+**New features and settings**
+- Settings search: search for settings from the Settings homepage using keywords or the setting's name
+- Sound:
+  - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input). Note: Bluetooth microphones are not supported by HoloLens 2.
+  - App volume: independently adjust the volume of each app
+- Battery saver: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically
+- Power & sleep: choose when the device should go to sleep after a period of inactivity
+- USB: you can disable USB connections by default
+- Network & Internet:
+  - USB-C Ethernet adapters will now appear in Network & Internet
+  - USB-C Ethernet adapter settings are now available, including its IP address
+  - You can now enable airplane mode on HoloLens 2
+- Apps: you can reset the default apps used for file and link types. See [Default app picker](#default-app-picker) for more information.
+- Ease of Access: change text size and some visual effects
 
 **Known issues**
 - Previously placed Settings windows will be removed (see note above)
