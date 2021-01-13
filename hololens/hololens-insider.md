@@ -31,7 +31,9 @@ We are exctited to start flighting new features to Windows Insiders again. We wi
 | [New Microsoft Edge](#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2                         | 20279.1006 |
 | [New Settings app](#new-settings-app)                     | The legacy Settings app is being replaced by an updated version with new features and settings | 20279.1006 |
 | [Default app picker](#default-app-picker)                 | Choose which app should launch for each file or link type                                      | 20279.1006 |
+| [Office web app](#office-web-app)                         | A shortcut to the Office web app is now pinned to Start                                        | 20279.1006 |
 | [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
+| [Longer video recordings](#longer-video-recordings)       | You can now capture videos longer than 5 minutes                                               | 20279.1006 |
 | Xerxes Updates              |                   | 20279.1006         |
 
 ### Introducing the new Microsoft Edge
@@ -57,11 +59,19 @@ When you activate a hyperlink or open a file type with more than one installed a
 
 If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. Scroll to the bottom of the page and select the **Clear** button under "Default apps for file types" and/or "Default apps for link types." Unlike the similar setting on desktop PCs, you can't reset individual file type defaults.
 
+### Office web app
+
+Insert description
+
 ### Swipe to type
 
 Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow-up words without needing to press the spacebar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
 
 Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). We are evaluating this feature for public release, so your feedback is important; whether you find the feature useful or you have constructive feedback, please let us know via [Feedback Hub](hololens-feedback.md).
+
+### Longer video recordings
+
+Insert description
 
 ### Xerxes Updates
 
