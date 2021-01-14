@@ -18,62 +18,70 @@ appliesto:
 
 # HoloLens 2 - Industrial Edition FAQ
 
-## General
+## HoloLens 2 Industrial Edition Benefits
 
-### Is the internal hardware in HoloLens 2 Industrial Edition different than standard HoloLens 2?
+### What benefits does HoloLens 2 Industrial Edition 2 include?
 
-No.
+The HoloLens 2 Industrial Edition is designed to solve challenges for industrial customers in clean room environments and assist with operational safety in those environments. It is designed and tested for clean room compliance, intrinsic safety certifications, and backed by an even more robust support program.
 
-HoloLens 2 Industrial Edition supports the same mixed reality capabilities as the standard HoloLens 2. The Industrial Edition is designed, built, and tested to support highly controlled including lint-free, non-shedding material.
+By using the HoloLens 2 Industrial Edition in these environments there will be significant reduction in travel in and out of the clean room areas, and reduction of general labor costs. Being able to have a small footprint physically inside the clean room and yet still have access to any / all documentation and levels of expertise will reduce labor costs.
 
-### What environments does HoloLens 2 Industrial Edition support?
+### What clean room environments does HoloLens 2 Industrial Edition support?
 
-HoloLens 2 Industrial Edition supports highly controlled environments such as clean room environments ISO class 6 through ISO Class 8.
+HoloLens 2 Industrial Edition supports highly-controlled environments such as clean room environments ISO class 6 through ISO Class 8.
 
-### Is the Operating System on HoloLens 2 Industrial Edition different than standard HoloLens 2?
-
-No. The Industrial Edition has the same OS as all other HoloLens 2 editions. For OS update information, view our [release notes](hololens-release-notes.md).
-
-### Do apps that run on standard HoloLens 2 also run-on HoloLens 2 Industrial Edition?
-
-Yes. HoloLens 2 Industrial Edition supports the same 1st and 3rd party enterprise ready apps utilizing the same app deployment methods.
-
-### Where can I find documentation about the extra certifications for Industrial Edition?
-
-See here  **[links TBD].**
-
-### Is the warranty the same as the other editions?
-
-No, the Industrial Edition features a 2-year warranty &amp; rapid replacement program. The rapid replacement program customers receive a replacement device overnight or expedited shipping (faster of the available options) before a defective device is received by Microsoft. To start a replacement [contact support](https://aka.ms/hololenssupport).
-
-### Can I purchase replacement parts for HoloLens 2 Industrial Edition?
-
-No. If you need to replace part of the device [contact support](https://aka.ms/hololenssupport) to see about having your device replaced.
-
-## Cleaning the Industrial Edition
-
-### How do I clean HoloLens 2 Industrial Edition?
-
-See the [HoloLens 2 cleaning FAQ](hololens2-maintenance.md).
-
-### Can I use the same cleaning materials for HoloLens 2 Industrial Edition as the other editions?
-
-Yes, the HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more details see the [HoloLens 2 cleaning FAQ](hololens2-maintenance.md).
-
-### How should I hold HoloLens 2 Industrial Edition when cleaning it?
-
-Firmly from the brow pad.
-
-## Clean Rooms
-
-### Is the carrying case clean room approved?
-
-No.
-
-### Can the device be used in semiconductor and pharmaceutical environments?
-
-Yes.
+For more information please read more on [ISO standard 14644-1](https://www.iso.org/standard/53394.html) (Airborne Particulate Cleanliness Classes in Cleanrooms and Clean Zones).
 
 ### Does HoloLens 2 Industrial Edition meet requirements for Intrinsic Safety?
 
-Yes, it features UL Class I, Dev 2 certified for use in environments where flammables gases, vapors or liquids may exist.
+ The HoloLens 2 Industrial Edition features UL Class I, Dev 2 certified for use in environments where flammables gases, vapors or liquids may exist.
+
+For more information read about [UL certifications](https://www.ul.com/services/ul-and-c-ul-hazardous-areas-certification-north-america?csrf-token=CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz&amp;Search=UL+Class+I%2C+Dev+2+&amp;search-submit=Search).
+
+### Can the device be used in semiconductor and pharmaceutical environments?
+
+Yes. The HoloLens 2 Industrial Edition is designed with these environmental considerations, with the certifications for clean rooms and operational safety in mind this HoloLens 2 edition is ready to use in these environments.
+
+### What is the HoloLens 2 Industrial Edition warranty?
+
+The HoloLens 2 Industrial Edition features a 2-year warranty and a rapid replacement program.
+
+### What&#39;s the rapid replacement program?
+
+In addition to the 2-year warranty, HoloLens 2 Industrial Edition includes the rapid replacement program enabling customers to receive a replacement device overnight or expedited shipping (faster of the available options) before a defective device is received by Microsoft. To start a replacement please [contact support](https://aka.ms/hololenssupport).
+
+### Can I purchase replacement parts for HoloLens 2 Industrial Edition?
+
+Replacement parts and refurbishments are not supported for the HoloLens 2 Industrial Edition. If you find yourself in need of a replacement please use our rapid replacement program for the HoloLens 2 Industrial Edition.
+
+### Is the carrying case clean room approved?
+
+The carrying case is made of a porous material and should not be used in clean rooms.
+
+## Cleaning the Industrial Edition
+
+### Can I use the same cleaning materials for HoloLens 2 Industrial Edition as the other editions?
+
+The HoloLens 2 Industrial Edition can be cleaned by a solution of &quot;70%&quot; isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more details see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance).
+
+### How do I clean HoloLens 2 Industrial Edition?
+
+Much of the advice for cleaning the standard HoloLens 2 applies to the HoloLens 2 Industrial Edition. Please review the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance).
+
+### How should I hold HoloLens 2 Industrial Edition when cleaning it?
+
+Firmly from the brow pad. By holding the HoloLens 2 from the brow pad you put the least amount of pressure on the arms of the device and ensure it&#39;s longevity.
+
+## General questions
+
+### What operating system does the HoloLens 2 Industrial Edition have
+
+The Industrial Edition has the same OS as all other HoloLens 2 editions. For more information on HoloLens OS updates please [read our release notes](https://docs.microsoft.comhololens/hololens-release-notes).
+
+### What apps can run-on the HoloLens 2 Industrial Edition?
+
+HoloLens 2 Industrial Edition supports the same 1st and 3rd party enterprise ready apps utilizing the same [app deployment methods](https://docs.microsoft.com/hololens/app-deploy-overview).
+
+### Can I upgrade from HoloLens 2 to HoloLens 2 Industrial Edition?
+
+We do not offer upgrades from HoloLens 2 to HoloLens 2 Industrial Edition.
