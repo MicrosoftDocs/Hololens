@@ -24,7 +24,7 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. Get excited and ready to mix these updates into your reality.
+We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Get excited and ready to mix these updates into your reality. 
 
 | Feature Name                                              | Short description                                                                      | Available in build |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -41,6 +41,8 @@ We are excited to start flighting new features to Windows Insiders again. We wil
 The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) to create better compatibility for customers and less fragmentation of the web for web developers. 
 
 With this Insider preview, the new Microsoft Edge is available to HoloLens 2 customers for the first time! While the new Microsoft Edge will eventually replace legacy Microsoft Edge on HoloLens 2, both browsers are currently available to Insiders. Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge or via [Feedback Hub](hololens-feedback.md).
+
+![New Microsoft Edge screenshot](images/new-edge-ui.png)
 
 #### Launching the new Microsoft Edge
 
@@ -100,6 +102,8 @@ With this release, we're introducing a new version of the Settings app. The new 
 
 > [!NOTE]
 > Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.
+
+![New Settings app homepage](images/new-settings-app.png)
 
 **New features and settings**
 - Settings search: search for settings from the Settings homepage using keywords or the setting's name
