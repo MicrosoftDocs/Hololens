@@ -66,6 +66,9 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ![HoloLens 2 Sensors](images/hl2-sensors.png)
 
+> [!NOTE]
+> Do no cover any of the sensors that are called out in the picture. The head tracking cameras have a very wide FOV, nothing should be around them in addition to not covering them.
+
 ### Audio and speech
 
 |   |   |
