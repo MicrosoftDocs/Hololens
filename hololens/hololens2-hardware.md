@@ -64,6 +64,8 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 | Inertial measurement unit (IMU) | Accelerometer, gyroscope, magnetometer |
 | Camera | 8-MP stills, 1080p30 video |
 
+![HoloLens 2 Sensors](images/hl2-sensors.png)
+
 ### Audio and speech
 
 |   |   |
