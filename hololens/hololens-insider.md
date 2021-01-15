@@ -46,14 +46,14 @@ With this Insider preview, the new Microsoft Edge is available to HoloLens 2 cus
 
 #### Launching the new Microsoft Edge
 
-There are two versions of Microsoft Edge available to Insiders: the new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) and the legacy Microsoft Edge (represented by the white "e" icon). The new Microsoft Edge is pinned to the Start menu and will automatically launch when you activate a web link. If you would like to revert to using legacy Microsoft Edge as your default web browser, see the instructions below for [resetting default apps](#default-app-picker).
+There are two versions of Microsoft Edge available to Insiders: the new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) and legacy Microsoft Edge (represented by the white "e" icon). The new Microsoft Edge is pinned to the Start menu and will automatically launch when you activate a web link. If you would like to revert to using legacy Microsoft Edge as your default web browser, see the instructions below for [resetting default apps](#default-app-picker).
 
 > [!NOTE]
 > When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge. If you continue to use legacy Microsoft Edge after launching the new Microsoft Edge, that new data will not be synced from legacy Microsoft Edge to the new Microsoft Edge.
 
 #### Configuring policy settings for the new Microsoft Edge
 
-The new Microsoft Edge offers IT Pros a much broader set of browser policies on HoloLens 2 than were previously available with legacy Microsoft Edge. 
+The new Microsoft Edge offers IT admins a much broader set of browser policies on HoloLens 2 than were previously available with legacy Microsoft Edge. 
 
 Here are some helpful resources for learning more about managing policy settings for the new Microsoft Edge:
 - [Configure Microsoft Edge policy settings with Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
@@ -87,8 +87,10 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 **Scenarios and features coming soon:**
 - WebXR and 360 Viewer extension
 - Content restoration to correct window when browsing across multiple windows placed in your environment
-- Spatial sound for multiple windows with simultaneous audio streams
 - Joining a Microsoft Teams call via the browser with video, mixed reality capture, or screen-sharing (joining calls with audio works well)
+
+**Scenarios and features not expected to work:**
+- Spatial sound from multiple windows with simultaneous audio streams
 - "See it, say it"
 - Printing
 
