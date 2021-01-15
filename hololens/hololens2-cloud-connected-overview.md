@@ -34,7 +34,7 @@ This is a set up similar to [Scenario A: Deploy to cloud connect devices](https:
   - Single or multiple users per device supported
 - Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk
 
-![Cloud connected scenario](./images/cloud-connected-deployment-chart.png)
+![Cloud connected scenario](./images/cloud-connected-guide-diagram.png)
 
 No other device restrictions or configurations will be applied in this guide, however we encourage you to explore those options after finishing.
 
