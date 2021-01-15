@@ -24,7 +24,7 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Get excited and ready to mix these updates into your reality. 
+We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Get excited and ready to mix these updates into your reality.
 
 | Feature Name                                              | Short description                                                                      | Available in build |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -34,6 +34,7 @@ We are excited to start flighting new features to Windows Insiders again. We wil
 | [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | 20279.1006 |
 | [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
 | [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist.| 20279.1006 |
+| [New AUMIDs for new apps in Kiosk mode](#-use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps | 20279.1006 |
 | [Improved Kiosk mode failure handing](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | 20279.1006 |
 | [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App | 20279.1006 |
 
@@ -187,9 +188,22 @@ In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers
 
 ![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
 
+### Use the new Settings and Edge apps in Kiosk modes
+
+When including apps in in [Kiosks](hololens-kiosk.md), an IT Admin often adds the app to the Kiosk but using it's App User Model ID (AUMID). Because both the Settings app and Microsoft Edge app are considered new apps and different that the older apps Kiosks that use AUMIDs for those apps will need to be updated to use the new AUMID.
+
+When modifying a Kiosk to include the new apps, we recommend adding in the new AUMID as well as leaving the old one. This will create an easy transition when users update the OS and won't need to receive new policies to keep using the Kiosk as intended.
+
+| App                    | AUMID                                                  |
+|------------------------|--------------------------------------------------------|
+| Old Settings App       | HolographicSystemSettings_cw5n1h2txyewy!App            |
+| New Settings App       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App |
+| Old Microsoft Edge app | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
+| New Microsoft Edge app | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE    |
+
 ### Kiosk mode behavior changes for handling of failures
 
-In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “nothing shown in start” menu.
+In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)” menu.
 
 Starting in Windows Insider release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
