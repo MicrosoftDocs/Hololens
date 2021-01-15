@@ -17,11 +17,19 @@ appliesto:
 
 # Deploying HoloLens 2 to External Clients with Remote Assist
 
-This document helps IT professions plan for and deploy HoloLens 2 devices with a focus on Remote Assist. [Learn more about Remote Assist](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist).
+This guide helps IT professionals with the following goals deploy Microsoft HoloLens 2 devices in their organization:
+
+1. Cloud connect HoloLens 2 devices
+1. Loan HoloLens 2 devices to external clients for use
+1. Secure loaned devices
+
+This guide will provide [general HoloLens 2 deployment recommendations](#general-deployment-recommendations-and-instructions) that is applicable to most HoloLens 2 deployment scenarios and [common concerns](#common-concerns) that customers have when deploying Remote Assist for external use.
 
 ## Scenario Description
 
 For the purpose of this document, Contoso Company wants to ship a HoloLens 2 device to an external client's plant for short-term or long-term use. When the client needs assistance servicing machinery, the client will log into the HoloLens 2 device using credentials provided by Contoso Company and use Remote Assist to contact Contoso Company's experts.
+
+Learn more about Remote Assist [here](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist).
 
 ### Requirements for this Scenario
 
@@ -107,7 +115,7 @@ We recommend the following for HoloLens 2 deployment Steps:
 1. Use [WDAC](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) to allow or black apps on the HoloLens 2 device.
 1. Update Remote Assist to the latest version as part of the setup. There are two options to do this:
     1. This can be done by going to Windows **Microsoft Store --> Remote Assist --> and Update App**.
-    1. Another method is to leave the HoloLens 2 plugged in overnight for auto update.
+    1. Enable auto updates using the [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) CSP and keep the device plugged in to receive updates.
 1. [Disable all settings pages](https://docs.microsoft.com/hololens/settings-uri-list) except the network settings to allow users to connect to guest networks at client sites.
 1. [Manage HoloLens Updates](https://docs.microsoft.com/hololens/hololens-updates)
     1. Option to [control OS updates](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) or allow to flow freely.
