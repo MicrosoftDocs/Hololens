@@ -1,13 +1,13 @@
 ---
-title: Deployment Guide
-description: Deployment guide for HoloLens 2 (with Remote assist as an example)
+title: External Clients Deployment Guide
+description: Deployment guide for HoloLens 2 for External Clients (with Remote assist as an example)
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
 ms.author: pawinfie
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 1/7/2021
+ms.date: 1/12/2021
 ms.custom: 
 ms.reviewer: 
 manager: laurawi
