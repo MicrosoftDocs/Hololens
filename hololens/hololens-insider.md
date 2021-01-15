@@ -34,6 +34,8 @@ We are excited to start flighting new features to Windows Insiders again. We wil
 | [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | 20279.1006 |
 | [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
 | [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist.| 20279.1006 |
+| [Improved Kiosk mode failure handing](#kiosk-mode-behavior-change-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | 20279.1006 |
+| [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App | 20279.1006 |
 
 ### Introducing the new Microsoft Edge
 
@@ -54,7 +56,7 @@ There are two versions of Microsoft Edge available to Insiders: the new Microsof
 
 #### Configuring policy settings for the new Microsoft Edge
 
-The new Microsoft Edge offers IT admins a much broader set of browser policies on HoloLens 2 than were previously available with legacy Microsoft Edge. 
+The new Microsoft Edge offers IT admins a much broader set of browser policies on HoloLens 2 than were previously available with legacy Microsoft Edge.
 
 Here are some helpful resources for learning more about managing policy settings for the new Microsoft Edge:
 
@@ -133,7 +135,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 
 ### Default app picker
 
-When you activate a hyperlink or open a file type with more than one installed app which supports it, you will see a new window open prompting you to select which installed app should handle the file or link type. In this window you can also choose to have the selected app handle the file or link type "Once" or "Always." 
+When you activate a hyperlink or open a file type with more than one installed app which supports it, you will see a new window open prompting you to select which installed app should handle the file or link type. In this window you can also choose to have the selected app handle the file or link type "Once" or "Always."
 
 ![App picker window](images/default-app-picker.png)
 
@@ -184,6 +186,23 @@ Be aware that some USB-C microphones incorrectly report themselves as both a mic
 In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
 
 ![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
+
+### Kiosk mode behavior changes for handling of failures
+
+In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “nothing shown in start” menu.
+
+Starting in Windows Insider release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
+
+### Configuring Fallback Diagnostics via Settings app
+
+Now in Settings App, a user can configure the behavior of [Fallback Diagnostics](hololens-diagnostic-logs.md). In the Settings app navigate to **Privacy** -> **Troubleshooting** page to configure this setting.
+
+> [!NOTE]
+> If there is MDM policy configured for the device, user will not be able to override that behavior.  
+
+
+
+
 
 
 ## Start receiving Insider builds
