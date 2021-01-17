@@ -1,6 +1,6 @@
 ---
 title: Limiting password use
-description: limiting password use for holoLens 
+description: limiting password use for HoloLens 
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -93,8 +93,8 @@ For more information on using WebAuthn with applications and/or SDKs, go to [Web
 
 ## Local accounts
 
-A single local account can be configured for offline mode deployments. Local accounts are not enabled by default and must be configured during device provisioning. They must sign-in using a password and do not support alternate authentication methods (such as [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) or [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)). 
+A single local account can be configured for offline mode deployments. Local accounts are not enabled by default and must be configured during device provisioning. They must sign in by using a password, and they do not support alternate authentication methods (such as [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) or [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)). 
 
 More details on HoloLens user accounts can be found on [HoloLens Identity](https://docs.microsoft.com/hololens/hololens-identity). 
 
-IT administrators adjust whether the user is allowed to use an MSA account for non-email related connection authentication and services through [AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). For password configuration policies, idling policies, and lockscreen policies, see [Device Lock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock). 
+IT administrators adjust whether the user is allowed to use an MSA account for non-email related connection authentication and services through [AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). For password configuration policies, idling policies, and lock screen policies, see [Device Lock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock). 
