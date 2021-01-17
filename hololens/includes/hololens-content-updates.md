@@ -2,6 +2,23 @@
 
 
 
+## Week of January 11, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/13/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 1/13/2021 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 1/13/2021 | [External Clients Deployment Guide](/hololens/hololens2-deployment-guide) | modified |
+| 1/13/2021 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
+| 1/14/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 1/14/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
+| 1/15/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
+| 1/15/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 1/15/2021 | [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist - Overview](/hololens/hololens2-cloud-connected-overview) | modified |
+| 1/15/2021 | [External Clients Deployment Guide](/hololens/hololens2-deployment-guide) | modified |
+
+
 ## Week of January 04, 2021
 
 
