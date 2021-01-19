@@ -40,7 +40,7 @@ You are now able to install Apps without needing to enable Developer Mode or usi
 ### For your apps: 
 Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
 
-Apps that are installed via this method must be digitally signed. You'll need to use a certificate to sign the app. You can either get a certificate from the [MS Trusted CA List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT), in which case you won't need to take any additional action. Or you can sign your own certificate however that certificate will need to be pushed onto the device.
+Apps that are installed via this method must be digitally signed. You'll need to use a certificate to sign the app. You can either get a certificate from the [MS Trusted CA List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT), in which case you won't need to take any extra action. Or you can sign your own certificate however that certificate will need to be pushed onto the device.
 
 - How to sign apps [using the Sign Tool.](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
@@ -71,7 +71,7 @@ The installed app will automatically launch upon the completion of installing.
 
 ### Troubleshooting Installs
 
-If your app failed to install check the following to troubleshoot:
+If your app failed to install,  check the following to troubleshoot:
 
 - Your app is either a Master or Release build.
 - Your device is updated to a build on which this feature is available.
