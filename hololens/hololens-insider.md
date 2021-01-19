@@ -34,6 +34,7 @@ We are excited to start flighting new features to Windows Insiders again. We wil
 | [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | 20279.1006 |
 | [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
 | [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist.| 20279.1006 |
+| [Visitor Auto-logon for Kiosks](#visitor-auto-logon-for-kiosks)                          | Enables the auto-logon on Visitor accounts to be used for Kiosk modes.                         | 20279.1006                 |
 | [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps | 20279.1006 |
 | [Improved Kiosk mode failure handing](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | 20279.1006 |
 | [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App | 20279.1006 |
@@ -187,6 +188,26 @@ Be aware that some USB-C microphones incorrectly report themselves as both a mic
 In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
 
 ![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
+
+### Visitor Auto logon for Kiosks
+
+This new feature enables the auto logon on Visitor accounts to be used for Kiosk modes.
+
+For a non-AAD configuration, to configure a device for visitor auto-logon:
+
+1. Create a provisioning package that:
+    1. Configures **Runtime settings/AssignedAccess** to allow Visitor accounts.
+    1. Optionally enrolls the device in MDM **(Runtime settings/Workplace/Enrollments)** so that it can be managed later.
+    1. Do not create a local account
+1. [Apply the provisioning package](hololens-provisioning.md).
+
+For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+
+Visitor Auto logon can be managed via policy.
+
+| Policy  | Description   | Configurations  |
+|---|---|---|
+| MixedReality/VisitorAutoLogon  | Allows for a Visitor to Auto logon to a Kiosk   | 1 (Yes), 0 (No, default.)  |
 
 ### Use the new Settings and Edge apps in Kiosk modes
 
