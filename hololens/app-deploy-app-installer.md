@@ -18,8 +18,6 @@ appliesto:
 
 # Install Apps on HoloLens 2 via App Installer
 
-We are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will **not be available for managed devices** at this time.  
-
 > [!NOTE]
 > This feature was made available in [Windows Holographic, version 20H2 – December 2020 Update](hololens-release-notes.md). Ensure your device is [updated](hololens-update-hololens.md) to use this feature.
 
