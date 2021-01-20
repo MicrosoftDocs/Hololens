@@ -157,7 +157,7 @@ Please note, this feature can be tricky to use and master because of the nature 
 > [!IMPORTANT]
 > Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
 
-Users can now select USB-C connected external microphones using the **Sound** settings panel. This allows users to use their own microphone connected but USB in recording and apps. USB-C microphones are easy to enabled and use.
+Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C mirophones can be used for calling, recording, etc.
 
 Open the **Settings** app and select **System** -> **Sound**.
 
@@ -168,7 +168,7 @@ Open the **Settings** app and select **System** -> **Sound**.
 >
 > Then use the drop-down to set the external microphone as either **Default** or **Communications Default.** Choosing **Default** means that the external microphone will be used everywhere.
 >
-> Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens Mic Array may still be used for other tasks.
+> Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
 
 ![Manage sound devices](images/usbc-mic-2.png)
 
