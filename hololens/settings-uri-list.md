@@ -1,6 +1,6 @@
 ---
 title: Page Settings Visibility
-description: List of HoloLens supported URIs for PageVisibilityList and Guide
+description: Keep up to date with our list of supported URIs for PageVisibilityList and Guide on HoloLens mixed reality devices.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -38,7 +38,8 @@ This can be done via Intune using OMA-URI.
 1. When selecting the data pick choose: **String**
 1. When typing the value use: **showonly:network-wifi;network-proxy;bluetooth**
 1. Make sure to assign the custom device configuration to the a group the device is intended to be in.
-For more information on Intune groups and device configurations [visit here](hololens-mdm-configure.md).
+
+See [HoloLens MDM configuration](hololens-mdm-configure.md) for more information on Intune groups and device configurations.
 
 Regardless of method choosen your device should now receive the changes and users will be presented with the following Settings App. 
 
@@ -122,4 +123,4 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
-For a full list of Windows 10 Settings URIs, please visit [here](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 
+For a full list of Windows 10 Settings URIs, please visit the [launch settings](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) documentation. 

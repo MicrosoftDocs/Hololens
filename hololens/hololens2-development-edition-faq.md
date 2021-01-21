@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 Development Edition FAQ
-description: Commonly asked questions about the HoloLens 2 Development Edition FAQ.
+description: Stay up to date with the most commonly asked questions about the HoloLens 2 Development Edition mixed reality device.
 keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
 author: evmill
 ms.author: v-evmill
@@ -18,7 +18,7 @@ appliesto:
 
 # HoloLens 2 Development Edition FAQ
 
-## General
+## General questions
 
 ### What do I get with the HoloLens 2 Development Edition?
 

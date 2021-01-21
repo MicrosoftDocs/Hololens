@@ -1,6 +1,6 @@
 ---
 title: Global Assigned Access
-description: Guide for using OMA-URI for Global Assigned Access Kiosks
+description: Get started with our guide to using OMA-URI for Global Assigned Access Kiosks with Intune and windows configuration designer.
 author: evmill
 ms.author: v-evmill
 ms.date: 9/21/2020

@@ -1,6 +1,6 @@
 ---
 title: Certificate Manager
-description: Learn about to manually manage certificates on HoloLens 2.
+description: Learn how to manually install, manage, and remove certificates on HoloLens 2 mixed reality devices.
 author: evmill
 ms.author: v-evmill
 manager: yannisle
@@ -12,7 +12,6 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 2
-
 ---
 
 # Certificate Manager

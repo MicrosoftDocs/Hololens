@@ -1,6 +1,6 @@
 ---
 title: Frequently asked security questions
-description: security questions frequently asked about the hololens
+description: Stay up to date with commonly asked security questions and answers about HoloLens mixed reality devices.
 ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
 author: pawinfie
 ms.author: pawinfie

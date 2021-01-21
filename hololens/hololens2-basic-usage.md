@@ -1,6 +1,6 @@
 ---
 title: Getting around HoloLens 2
-description: A guide to using HoloLens 2 with your hands
+description: Discover mixed reality and get started with this guide on how to use HoloLens 2 devices with your hands.
 ms.assetid: 5f791a5c-bdb2-4c5d-bf46-4a198de68f21
 ms.date: 9/17/2019
 keywords: hololens

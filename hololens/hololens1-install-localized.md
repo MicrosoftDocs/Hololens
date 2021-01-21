@@ -1,6 +1,6 @@
 ---
 title: Install localized versions of HoloLens
-description: Learn how to install the Chinese or Japanese versions of HoloLens
+description: Learn how to install the localized versions of HoloLens (1st gen), including Chinese and Japanese versions.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library

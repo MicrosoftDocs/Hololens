@@ -228,6 +228,8 @@ Use the following workflow to make changes to the documentation with Visual Stud
       ![Choose "Save all" in Explorer](images/explorer-save.png)
 	  
    3. **Commit all** changes in **Source Control** (write commit message when prompted).
+   
+      ![Choose "Commit all" in Source Control](images/source-control-commit.png)
 	  
    4. Select the **sync** button to sync your changes back to origin (your fork on GitHub).
       
