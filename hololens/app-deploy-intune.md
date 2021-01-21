@@ -1,6 +1,6 @@
 ---
 title: Intune and Company Portal
-description: Intune, app management, app, company portal, portal
+description: Learn how to setup, assign, and create a comfortable user experience with Intune, mobile device management, and the company portal.
 keywords: intune, app management, app, company portal, portal, hololens
 author: evmill
 ms.author: v-evmill

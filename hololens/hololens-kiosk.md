@@ -1,6 +1,6 @@
 ---
 title: Set up HoloLens as a kiosk
-description: Use a kiosk configuration to lock down the apps on HoloLens. 
+description: Learn how to setup and use a kiosk configuration to lock down the apps on HoloLens devices. 
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -447,7 +447,7 @@ To set up kiosk mode by using the Windows Device Portal, follow these steps.
 ### Global Assigned Access – Kiosk Mode
 - Reduced Identity management for Kiosk, by enabling new Kiosk method that applies Kiosk mode at the system level.
 
-This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
+This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. See the [HoloLens global assigned access kiosk](hololens-global-assigned-access-kiosk.md) documentation for more details on this new feature.
 
 ### Automatic launch of an application in multiple-app kiosk mode 
 - Focused experience with automatic app launch, further increasing the UI and app selections chosen for Kiosk mode experiences.

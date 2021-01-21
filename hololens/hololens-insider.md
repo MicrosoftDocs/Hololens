@@ -1,6 +1,6 @@
 ---
 title: Insider preview for Microsoft HoloLens
-description: It's simple to get started with Insider builds and to provide valuable feedback for our next major operating system update for HoloLens.
+description: Learn how to get started with Insider builds and provide valuable feedback for our next major operating system update for HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -103,6 +103,15 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 - Resetting your device will remove the new Microsoft Edge
 - The magnifier preview in the holographic keyboard shows incorrect content
 
+#### Microsoft Edge Insider channels
+
+The Microsoft Edge team makes three preview channels available to the Edge Insider community: Beta, Dev, and Canary. Installing a preview channel doesn't uninstall the released version of Microsoft Edge on your HoloLens 2, and you can install more than one at the same time. 
+
+Visit the [Microsoft Edge Insider homepage](https://www.microsoftedgeinsider.com) to learn more about the Edge Insider community. To learn more about the different Edge Insider channels and get started, visit the [Edge Insider download page](https://www.microsoftedgeinsider.com/download).
+
+> [!NOTE]
+> During this Windows Insider preview for HoloLens 2, the version of Microsoft Edge on your device may be higher than those available in some (or all) of the Microsoft Edge Insider channels. This is to ensure new features and fixes specifically targeting the web browser on HoloLens 2 are getting to our Windows Insiders as quickly as possible. Shortly after the public release of the next Windows update, the Microsoft Edge Insider channel builds will surpass, and stay ahead of, the version of Microsoft Edge on your HoloLens 2.
+
 ### New Settings app
 
 With this release, we're introducing a new version of the Settings app. The new Settings app includes new features and expanded settings for HoloLens 2 in the following areas: Sound, Power & sleep, Network & Internet, Apps, Accounts, Ease of Access, and more.
@@ -157,7 +166,7 @@ Please note, this feature can be tricky to use and master because of the nature 
 > [!IMPORTANT]
 > Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
 
-Users can now select USB-C connected external microphones using the **Sound** settings panel. This allows users to use their own microphone connected but USB in recording and apps. USB-C microphones are easy to enabled and use.
+Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C microphones can be used for calling, recording, etc.
 
 Open the **Settings** app and select **System** -> **Sound**.
 
@@ -168,7 +177,7 @@ Open the **Settings** app and select **System** -> **Sound**.
 >
 > Then use the drop-down to set the external microphone as either **Default** or **Communications Default.** Choosing **Default** means that the external microphone will be used everywhere.
 >
-> Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens Mic Array may still be used for other tasks.
+> Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
 
 ![Manage sound devices](images/usbc-mic-2.png)
 

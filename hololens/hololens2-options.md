@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 editions
-description: How each HoloLens 2 option is the same or different and what to do after getting one.
+description: Learn how each HoloLens 2 device edition is the same or different and what to do after getting one of your own.
 keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
 author: evmill
 ms.author: v-evmill
@@ -43,6 +43,7 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 Learn about the different [HoloLens 2 editions](https://www.microsoft.com/hololens/buy)
 
 ## Get started with HoloLens 2 options
+
 Select a tab to learn more about your HoloLens journey.
 
 [!INCLUDE[](includes/options-overview.md)]

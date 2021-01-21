@@ -1,7 +1,6 @@
 ---
 title: Commercial features
-description: The Microsoft HoloLens Commercial Suite includes features that make it easier for businesses to manage HoloLens devices. HoloLens 2 devices are equipped with commercial features by default.
-keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
+description: Learn about the Microsoft HoloLens Commercial Suite features that make it easier for businesses to manage HoloLens devices. 
 author: scooley
 ms.author: scooley
 ms.date: 08/26/2019
@@ -18,6 +17,7 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
+keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
 ---
 
 # Commercial features

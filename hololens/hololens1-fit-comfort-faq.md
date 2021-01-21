@@ -1,6 +1,6 @@
 ---
 title: HoloLens (1st gen) fit and comfort frequently asked questions
-description: Answers to frequently asked questions about how to fit your HoloLens (1st gen).
+description: Stay up to date with answers to frequently asked questions about how to fit your HoloLens (1st gen) mixed reality device.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv

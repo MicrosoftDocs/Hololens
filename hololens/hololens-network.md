@@ -1,6 +1,6 @@
 ---
 title: Connect HoloLens to a network
-description: Instructions on how to connect to internet with HoloLens and how to identify the device's IP address.
+description: Learn how to setup and connect to the internet with HoloLens and how to identify the device IP address.
 ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
 author: mattzmsft
 ms.author: mazeller
