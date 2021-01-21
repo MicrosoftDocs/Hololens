@@ -49,7 +49,7 @@ HoloLens 2 supports deployment of certificates through MDM if your environment r
 
 MDM administrators can define and implement policy settings on any corporate device enrolled in an MDM system. What configuration settings you use will differ based on the deployment scenario. In Windows 10, Configuration Service Providers (CSP)s are an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. For more information about Windows 10 device management CSPs for HoloLens 2, see the full list of [CSPs supported in HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).
 
-HoloLens 2 also supports setting a limited set of CSP configurations through custom Provisioning Packages. Provisioning Packages are typically leveraged for non-MDM managed devices and require to be manually applied to each device. See the [HoloLens provisioning](https://docs.microsoft.com/hololens/hololens-provisioning) documentation for details on building custom Provisioning Packages.
+HoloLens 2 also supports setting a limited set of CSP configurations through custom provisioning packages. Provisioning packages are typically leveraged for non-MDM managed devices and require to be manually applied to each device. See the [HoloLens provisioning](https://docs.microsoft.com/hololens/hololens-provisioning) documentation for details on building custom provisioning packages.
 
 > [!NOTE]
 > HoloLens 2 supports [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot), providing an easy and simple process for managing your corporate Windows 10 device configurations.
@@ -145,7 +145,7 @@ User productivity on mobile devices is often driven by apps.
 
 Windows 10 makes it possible to develop apps that work seamlessly across multiple devices using the Universal Windows Platform (UWP) for Windows apps.
 
-There are multiple ways to deploy applications to HoloLens 2 devices. Apps can be deployed directly through MDM, the Microsoft Store for Business, or sideloaded through a Provisioning Package. Check out the [app deployment](https://docs.microsoft.com/hololens/app-deploy-overview) documentation for more details.
+There are multiple ways to deploy applications to HoloLens 2 devices. Apps can be deployed directly through MDM, the Microsoft Store for Business, or sideloaded through a provisioning package. Check out the [app deployment](https://docs.microsoft.com/hololens/app-deploy-overview) documentation for more details.
 
 > [!NOTE]
 > HoloLens 2 supports running of UWP ARM64 apps only.
