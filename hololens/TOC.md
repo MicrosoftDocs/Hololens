@@ -13,6 +13,7 @@
 ### [Supported languages for HoloLens 2](hololens2-language-support.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
 ### [HoloLens 2 Development Edition FAQ](hololens2-development-edition-faq.md)
+### [Manage custom apps for HoloLens 2](hololens2-holographic-custom-apps.md)
 
 
 ## Get started with HoloLens (1st gen)
@@ -24,6 +25,8 @@
 ### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 ### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
 ### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
+### [Manage custom apps for HoloLens](holographic-custom-apps.md)
+
 
 ## Navigate the Windows Holographic interface
 ### [Use the Start menu and mixed reality home](holographic-home.md)
@@ -32,7 +35,6 @@
 ### [Create mixed reality photos and videos](holographic-photos-and-videos.md)
 ## Holographic applications
 ### [Find, install, and uninstall applications](holographic-store-apps.md)
-### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 ## Hologram optics and placement in space
 ### [Improve visual quality and comfort](hololens-calibration.md)
 ### [Map physical spaces with HoloLens](hololens-spaces.md) 
