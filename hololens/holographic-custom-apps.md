@@ -1,5 +1,5 @@
 ---
-title: Manage custom apps for HoloLens
+title: Manage custom apps for HoloLens (1st gen)
 description: Learn how to install, uninstall, and side load custom holographic apps on HoloLens devices using the Device Portal and Visual Studio.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 12/10/2020
@@ -18,7 +18,7 @@ appliesto:
 - HoloLens (1st gen)
 ---
 
-# Manage custom apps for HoloLens
+# Manage custom apps for HoloLens (1st gen)
 
 HoloLens supports many existing applications from the Microsoft Store, as well as new apps built specifically for HoloLens. This article focuses on custom holographic applications.  
 
