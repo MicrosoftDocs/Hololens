@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/13/2021
+ms.date: 1/21/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -108,6 +108,24 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 The Microsoft Edge team makes three preview channels available to the Edge Insider community: Beta, Dev, and Canary. Installing a preview channel doesn't uninstall the released version of Microsoft Edge on your HoloLens 2, and you can install more than one at the same time. 
 
 Visit the [Microsoft Edge Insider homepage](https://www.microsoftedgeinsider.com) to learn more about the Edge Insider community. To learn more about the different Edge Insider channels and get started, visit the [Edge Insider download page](https://www.microsoftedgeinsider.com/download).
+
+There are a couple methods available for installing Microsoft Edge Insider channels to HoloLens 2:
+
+**Direct install on device (currently only available to unmanaged devices)**
+  1. On your HoloLens 2, visit the [Edge Insider download page](https://www.microsoftedgeinsider.com/download)
+  1. Select the **Download for HoloLens 2** button for the Edge Insider channel you wish to install
+  1. Launch the downloaded .msix file from the Edge download queue or from your device's "Downloads" folder (using File Explorer)
+  1. [App installer](app-deploy-app-installer.md) will launch
+  1. Select the **Install** button
+  1. After successful install, you will find Microsoft Edge Beta, Dev, or Canary as a separate entry in the **All apps** list of the Start menu
+
+**Install via PC with Windows Device Portal (requires [developer mode](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) to be enabled on HoloLens 2)**
+  1. On your PC, visit the [Edge Insider download page](https://www.microsoftedgeinsider.com/download)
+  1. Select the **drop-down arrow button** next to the "Download for Windows 10" button for the Edge Insider channel you wish to install
+  1. Select **HoloLens 2** in the drop-down menu
+  1. Save the .msix file to the "Downloads" folder of your PC (or another folder you can easily find)
+  1. Use [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) on your PC to install the downloaded .msix file on HoloLens 2
+  1. After successful install, you will find Microsoft Edge Beta, Dev, or Canary as a separate entry in the **All apps** list of the Start menu
 
 > [!NOTE]
 > During this Windows Insider preview for HoloLens 2, the version of Microsoft Edge on your device may be higher than those available in some (or all) of the Microsoft Edge Insider channels. This is to ensure new features and fixes specifically targeting the web browser on HoloLens 2 are getting to our Windows Insiders as quickly as possible. Shortly after the public release of the next Windows update, the Microsoft Edge Insider channel builds will surpass, and stay ahead of, the version of Microsoft Edge on your HoloLens 2.
