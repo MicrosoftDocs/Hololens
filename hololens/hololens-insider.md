@@ -267,6 +267,17 @@ Then, select **Active development of Windows**, choose whether you'd like to rec
 
 Select **Confirm > Restart Now** to finish up. After your device has rebooted, go to **Settings > Update & Security > Check for updates** to get the latest build.
 
+### Update error 0x80070490 work-around
+If you encounter an update error 0x80070490 when updating on the Dev or Beta channel, try the following short-term work around. It involves moving your insider channel, picking up the update and then moving your Insider channel back.
+
+#### Stage one - Release Preview
+1.	Settings, Update & Security, Windows Insider Program, select **Release Preview Channel**.
+2.	Settings, Update & Security, Windows Update, **Check for updates**. After the update, continue on to Stage two.
+
+#### Stage two - Dev Channel
+1. Settings, Update & Security, Windows Insider Program, select **Dev Channel**.
+2. Settings, Update & Security, Windows Update, **Check for updates**.
+
 ## FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
 1. On PC:
