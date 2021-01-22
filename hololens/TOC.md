@@ -13,7 +13,7 @@
 ### [Supported languages for HoloLens 2](hololens2-language-support.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
 ### [HoloLens 2 Development Edition FAQ](hololens2-development-edition-faq.md)
-### [HoloLens 2 Industrial Edition FAQ](hololens\hololens2-industrial-edition-faq.md)
+### [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md)
 
 
 
