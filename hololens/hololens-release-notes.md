@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 release notes
-description: Learn about updates in each new HoloLens 2 release.
+description: Stay up to date with all the updates in each new HoloLens 2 release.
 author: scooley
 ms.author: scooley
 manager: laurawi
@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/10/2020
+ms.date: 1/12/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -20,11 +20,25 @@ appliesto:
 
 # HoloLens 2 release notes
 
-To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device), [download it here](https://aka.ms/hololens2download). The download is kept up to date and provides the latest generally available build.
+To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
+
+We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. We will continue to our [HoloLens Insider notes](hololens-insider.md) as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality. 
 
 >[!NOTE]
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
+## Windows Holographic, version 20H2 - January 2021 Update
+- Build 19041.1134
+
+Improvements and fixes in the update:
+
+- Improved performance during startup, resume, and user switching when there are many users on the device.
+- Added arm32 support for [Research Mode](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode).
+
+## Windows Holographic, version 1903 - January 2021 Update
+- Build 18362.1091
+
+This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest builds for Windows Holographic, version 2004.
 
 ## Windows Holographic, version 20H2 – December 2020 Update
 - Build 19041.1131
@@ -173,16 +187,14 @@ Before this release users had to launch the provisioning screen manually during 
 
 Note: If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
 
-For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+For more information about applying provisioning packages during OOBE, visit the [HoloLens provisioning](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) documentation.
 
-This information can be found later [here.](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+Additional information on [auto-launch provisioning from a USB](hololens-provisioning.md#auto-launch-provisioning-from-usb) can be found in the HoloLens provisioning documentation.
 
 ### Auto-confirm provisioning packages in OOBE
 - Automated process allowing for less user interaction, when the Provisioning Package page is displayed it will automatically apply all packages listed.
 
-When the provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
-
-This information can be found later [here.](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+When the provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still [confirm or cancel](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe) within this 10 seconds after verifying the packages they expected.
 
 ### Automatic provisioning without using UI
 - Combined automatic processes for reduced device interactions for provisioning. 
@@ -197,9 +209,7 @@ By combining the auto-launch of provisioning from USB devices and the auto-confi
 1. When the HoloLens 2 device boots into OOBE it will automatically detect the provisioning package on the USB drive and launch the provisioning page.
 1. After 10 seconds the device will automatically apply the provisioning package. 
 
-Your device is now configured and will display the Provisioning Successful screen.
-
-This information can be found later [here.](hololens-provisioning.md#automatic-provisioning-without-using-ui)
+Your device is now configured and will [display the Provisioning Successful screen](hololens-provisioning.md#automatic-provisioning-without-using-ui).
 
 ### Using Autopilot with Wi-Fi connection
 - Removed need for USB-C adapters to ethernet reducing hardware needs, by enabling Autopilot to function on Wi-Fi connected devices.
@@ -258,7 +268,7 @@ This information can now be found alongside the rest of Autopilot under [Tenantl
 ### Global Assigned Access – Kiosk Mode
 - Reduced Identity management for Kiosk, by enabling new Kiosk method that applies Kiosk mode at the system level.
 
-This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
+This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail in the [HoloLens global assigned access kiosk](hololens-global-assigned-access-kiosk.md).
 
 ### Automatic launch of an application in multiple-app kiosk mode 
 - Focused experience with automatic app launch, further increasing the UI and app selections chosen for Kiosk mode experiences.
@@ -389,7 +399,7 @@ Due to customer feedback we’ve increased the recording length of [mixed realit
 > -	The estimated max recording duration is smaller than the default 5 mins.
 > -	The available disk space is less than 20% of the total disk space.
 
-This information can be found again [here](holographic-photos-and-videos.md#maximum-recording-length). 
+You can find the full requirements in our [holographic photos and videos](holographic-photos-and-videos.md#maximum-recording-length) documentation. 
 
 ### Improvements and fixes in the update:
 - More screens in OOBE  are now in dark mode.

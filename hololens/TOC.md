@@ -16,6 +16,7 @@
 ### [HoloLens 2 Industrial Edition FAQ](hololens\hololens2-industrial-edition-faq.md)
 
 
+
 ## Get started with HoloLens (1st gen)
 ### [HoloLens (1st gen) hardware](hololens1-hardware.md)
 ### [Get your HoloLens (1st gen) ready to use](hololens1-setup.md)
@@ -25,6 +26,8 @@
 ### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 ### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
 ### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
+### [Manage custom apps for HoloLens](holographic-custom-apps.md)
+
 
 ## Navigate the Windows Holographic interface
 ### [Use the Start menu and mixed reality home](holographic-home.md)
@@ -33,7 +36,7 @@
 ### [Create mixed reality photos and videos](holographic-photos-and-videos.md)
 ## Holographic applications
 ### [Find, install, and uninstall applications](holographic-store-apps.md)
-### [Manage custom apps for HoloLens](holographic-custom-apps.md)
+### [Manage custom apps for HoloLens 2](hololens2-holographic-custom-apps.md)
 ## Hologram optics and placement in space
 ### [Improve visual quality and comfort](hololens-calibration.md)
 ### [Map physical spaces with HoloLens](hololens-spaces.md) 
@@ -49,6 +52,7 @@
 #### [Cloud connected - Configure](hololens2-cloud-connected-configure.md)
 #### [Cloud connected - Deploy](hololens2-cloud-connected-deploy.md)
 #### [Cloud connected - Maintain](hololens2-cloud-connected-maintain.md)
+### [Deploying HoloLens 2 to External Clients with Remote Assist](hololens2-deployment-guide.md)
 ### [Offline Secure](hololens-common-scenarios-offline-secure.md)
 ## Security
 ### [Security overview](security-overview.md)

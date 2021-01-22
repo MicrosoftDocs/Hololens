@@ -1,6 +1,6 @@
 ---
 title: How to side load and Install Apps via HoloLens 2 App Installer
-description: Slide load and install apps via UI
+description: Learn how to install and troubleshoot apps with the app installer and side load and install apps via UI.
 keywords: app management, app, hololens, app installer
 author: evmill
 ms.author: v-evmill
@@ -17,8 +17,6 @@ appliesto:
 ---
 
 # Install Apps on HoloLens 2 via App Installer
-
-We are **adding a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will **not be available for managed devices** at this time.  
 
 > [!NOTE]
 > This feature was made available in [Windows Holographic, version 20H2 – December 2020 Update](hololens-release-notes.md). Ensure your device is [updated](hololens-update-hololens.md) to use this feature.
@@ -37,12 +35,13 @@ You are now able to install Apps without needing to enable Developer Mode or usi
 
 ### For your devices:
 
- feature is currently available in Windows Holographic 20H2 builds for HoloLens 2 devices. Ensure any devices using this method are [updated](hololens-update-hololens.md).
+This feature is currently available in Windows Holographic 20H2 builds for HoloLens 2 devices. Ensure any devices using this method are [updated](hololens-update-hololens.md).
 
-### For your apps: 
+### For your apps:
+
 Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
 
-Apps that are installed via this method must be digitally signed. You'll need to use a certificate to sign the app. You can either get a certificate from the [MS Trusted CA List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT), in which case you won't need to take any additional action. Or you can sign your own certificate however that certificate will need to be pushed onto the device.
+Apps that are installed via this method must be digitally signed. You'll need to use a certificate to sign the app. You can either get a certificate from the [MS Trusted CA List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT), in which case you won't need to take any extra action. Or you can sign your own certificate however that certificate will need to be pushed onto the device.
 
 - How to sign apps [using the Sign Tool.](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
@@ -73,7 +72,7 @@ The installed app will automatically launch upon the completion of installing.
 
 ### Troubleshooting Installs
 
-If your app failed to install check the following to troubleshoot:
+If your app failed to install,  check the following to troubleshoot:
 
 - Your app is either a Master or Release build.
 - Your device is updated to a build on which this feature is available.

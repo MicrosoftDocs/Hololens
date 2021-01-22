@@ -1,6 +1,6 @@
 ---
-title: Deployment Guide – Cloud connected HoloLens 2 with Remote Assist - Overview
-description: Enroll HoloLens devices over a Cloud Connected network
+title: Overview of Cloud connected HoloLens 2 with Remote Assist 
+description: Learn how to enroll HoloLens 2 devices over a Cloud Connected network using Dynamics 365 Remote Assist.
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill
@@ -34,7 +34,7 @@ This is a set up similar to [Scenario A: Deploy to cloud connect devices](https:
   - Single or multiple users per device supported
 - Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk
 
-![Cloud connected scenario](./images/cloud-connected-deployment-chart.png)
+![Cloud connected scenario](./images/cloud-connected-guide-diagram.png)
 
 No other device restrictions or configurations will be applied in this guide, however we encourage you to explore those options after finishing.
 
