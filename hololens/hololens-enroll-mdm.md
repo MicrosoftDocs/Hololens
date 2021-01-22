@@ -1,6 +1,6 @@
 ---
 title: Enroll HoloLens in MDM
-description: Enroll HoloLens in mobile device management (MDM) for easier management of multiple devices.
+description: Learn how to enroll HoloLens in mobile device management (MDM) for easier management of multiple devices.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0

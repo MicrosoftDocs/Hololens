@@ -1,6 +1,6 @@
 ---
 title: Connect to Bluetooth and USB-C devices
-description: This guide walks through connecting to Bluetooth and USB-C devices and accessories.
+description: Get started connecting to Bluetooth and USB-C devices and accessories from your HoloLens mixed reality devices.
 ms.assetid: 01af0848-3b36-4c13-b797-f38ad3977e30
 ms.prod: hololens
 ms.sitesec: library

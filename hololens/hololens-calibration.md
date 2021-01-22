@@ -1,11 +1,10 @@
 ---
 title: Improve visual quality and comfort
-description: Calibrating your IPD (interpupillary distance) can improve the quality of your visuals. Both HoloLens and Windows Mixed Reality immersive headsets offer ways to customize IPD.
+description: Learn how to calibrate your interpupillary distance (IPD) to improve the quality of your visuals on HoloLens devices.
 author: Teresa-Motiv
 ms.author: xerxesb
 ms.date: 9/13/2019
 ms.topic: article
-keywords: calibration, comfort, visuals, quality, ipd
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -14,6 +13,7 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
+keywords: calibration, comfort, visuals, quality, ipd, HoloLens, Windows Mixed Reality, VR headsets
 ---
 
 # Improve visual quality and comfort
@@ -30,9 +30,9 @@ HoloLens 2 prompts a user to calibrate the device under the following circumstan
 
 - The user is using the device for the first time
 - The user previously opted out of the calibration process
-- The calibration process did not succeed the last time the user used the device
+- The calibration process didn't succeed the last time the user used the device
 - The user has deleted their calibration profiles
-- The device is taken off and put back on and any of the above circumstances apply 
+- The device is taken off and puts back on and any of the above circumstances apply 
 
 
 ![Calibration prompt for adjusting to eyes.](./images/07-et-adjust-for-your-eyes.png)
@@ -45,7 +45,7 @@ During this process, you'll look at a set of targets (gems). It's fine if you bl
 
 ![Calibration prompt adjusting.](./images/09-et-adjusting.png)
 
-If calibration was successful, you'll see a success screen.  If not, read more about diagnosing calibration failures [here](#troubleshooting-hololens-2-calibration).
+If calibration was successful, you'll see a success screen.  If not, read more about [diagnosing calibration failures](#troubleshooting-hololens-2-calibration).
 
 ![Calibration prompt success.](./images/10-et-success.png)
 
@@ -63,11 +63,11 @@ Multiple users can share a HoloLens 2 device, without a need for each person to 
 
 ### Auto Eye Position Support
 
-In HoloLens 2, eye positions enable accurate hologram positioning, comfortable viewing experience and improved display quality. Eye positions are computed internally as part of the eye tracking computation. However, this requires each user to go through eye tracking calibration, even when the experience might not require eye gaze input.
+In HoloLens 2, eye positions enable accurate hologram positioning, comfortable viewing experience, and improved display quality. Eye positions are computed internally as part of the eye tracking computation. However, this requires each user to go through eye tracking calibration, even when the experience might not require eye gaze input.
 
-**Auto Eye Position (AEP)** enables these scenarios with an interaction-free way to compute eye positions for the user. Auto Eye Position starts working in the background automatically from the moment the user puts the device on. If the user does not have a prior eye tracking calibration, Auto Eye Position will start providing the user's eye positions to the display system after a processing time of 20 - 30 seconds. The user data is not persisted on the device and hence this process is repeated if the user takes off and puts the device back on or if the device reboots or wakes up from sleep.
+**Auto Eye Position (AEP)** enables these scenarios with an interaction-free way to compute eye positions for the user. Auto Eye Position starts working in the background automatically from the moment the user puts on the device. If the user doesn't have a prior eye tracking calibration, Auto Eye Position will start providing the user's eye positions to the display system after a processing time of 20 - 30 seconds. The user data isn't persisted on the device and this process is repeated if the user takes off and puts the device back on or if the device reboots or wakes up from sleep.
 
-There are a few system behavior changes with Auto Eye Position feature when an uncalibrated user puts on the device. In this context, an uncalibrated user refers to someone who has not gone through the eye tracking calibration process on the device previously.
+There are a few system behavior changes with Auto Eye Position feature when an uncalibrated user puts on the device. In this context, an uncalibrated user refers to someone who hasn't gone through the eye tracking calibration process on the device previously.
 
 | Active Application | Prior Behavior | Behavior from Windows Holographic, version 20H2 Update |
 |:-------------------|:-----------------|:-----------------------------------|
@@ -76,13 +76,13 @@ There are a few system behavior changes with Auto Eye Position feature when an u
 
 If the user transitions from a non-gaze enabled application to one that accesses the gaze data, the calibration prompt will be displayed. 
 
-All other system behavior will be similar to when the current user does not have an active eye tracking calibration. For example, the One-handed Start gesture will not be enabled. There will be no change to the Out-Of-Box-Experience for initial setup.
+All other system behavior will be similar to when the current user doesn't have an active eye tracking calibration. For example, the One-handed Start gesture won't be enabled. There will be no change to the Out-Of-Box-Experience for initial setup.
 
-For experiences that require eye gaze data or very precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration. It is accessible from the eye tracking calibration prompt or by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
+For experiences that require eye gaze data or precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration. It's accessible from the eye tracking calibration prompt or by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
 
 #### Deferred Calibration Prompt
 
-With Auto Eye Position, the Eye Tracking Calibration prompt dialog is deferred until an application requests Eye Gaze data. This ensures that there is no prompt to the user when the active application does not require gaze. If the application does require gaze data and the current user is not calibrated, the user is presented with a calibration prompt. This behavior could be used to display eye tracking calibration prompt at a suitable time for the experience. This method is recommended for the following reasons
+With Auto Eye Position, the Eye Tracking Calibration prompt dialog is deferred until an application requests Eye Gaze data. This ensures that there's no prompt to the user when the active application doesn't require gaze. If the application does require gaze data and the current user isn't calibrated, the user is presented with a calibration prompt. This behavior could be used to display eye tracking calibration prompt at a suitable time for the experience. This method is recommended for the following reasons
 
 1.  The Eye Tracking Calibration Prompt dialog provides the user with details on why eye tracking is needed.
 2.  Presents the user a way to decline to have their eyes calibrated.
@@ -100,8 +100,8 @@ Some potential reasons for calibration failure include:
 - Dirty or scratched glasses
 - Certain types of contact lenses and glasses (colored contact lenses, some toric contact lenses, IR blocking glasses, some high prescription glasses, sunglasses, or similar)
 - More-pronounced makeup and some eyelash extensions
-- Hair or thick eyeglass frames if they are blocking the device from seeing your eyes
-- Certain eye physiology, eye conditions or eye surgery such as narrow eyes, long eyelashes, amblyopia, nystagmus, some cases of LASIK or other eye surgeries
+- Hair or thick eyeglass frames if they're blocking the device from seeing your eyes
+- Certain eye physiology, eye conditions, or eye surgery such as narrow eyes, long eyelashes, amblyopia, nystagmus, some cases of LASIK or other eye surgeries
 
 If calibration is unsuccessful try:
 
@@ -111,15 +111,15 @@ If calibration is unsuccessful try:
 - Moving objects in your visor out of the way (such as hair)
 - Turning on a light in your room or moving out of direct sunlight
 
-If you followed all guidelines and calibration is still failing, you can disable the calibration prompt in Settings. Please also let us know by filing feedback in [Feedback Hub](hololens-feedback.md).
+If you followed all guidelines and calibration is still failing, you can disable the calibration prompt in Settings. Also let us know by filing feedback in [Feedback Hub](hololens-feedback.md).
 
-Please also see related information for [image color or brightness troubleshooting.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
+Also see related information for [image color or brightness troubleshooting.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
-Note that setting IPD is not applicable for Hololens 2, since eye positions are computed by the system. 
+Setting IPD is not applicable for HoloLens 2, since eye positions are computed by the system. 
 
 ### Calibration data and security
 
-Calibration information is stored locally on the device and is not associated with any account information. There is no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, as well as users who opted out of calibration previously or if calibration was unsuccessful.
+Calibration information is stored locally on the device and isn't associated with any account information. There's no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, and users who opted out of calibration previously or if calibration was unsuccessful.
 
 The device can locally store up to 50 calibration profiles. After this number is reached, the device automatically deletes the oldest unused profile.
 
@@ -141,13 +141,13 @@ The device uses its eye-tracking technology to improve display quality, and to e
 > [!NOTE]
 > Setting the IPD is not applicable for Hololens 2, since eye positions are computed by the system.
 
-HoloLens applications use eye tracking to track where you are looking in real time. This is the main capability developers can leverage to enable a whole new level of context, human understanding and interactions within the Holographic experience. Developers don’t need to do anything to leverage this capability.
+HoloLens applications use eye tracking to track where you're looking in real time. This is the main capability developers can use to enable a whole new level of context, human understanding, and interactions within the Holographic experience. Developers don’t need to do anything to use this capability.
 
 ## Calibrating your HoloLens (1st gen)
 
-HoloLens (1st gen) adjusts hologram display according to the your [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). If the IPD is not accurate, holograms may appear unstable or at an incorrect distance. You can improve the quality of your visuals by calibrating the device to your interpupillary distance (IPD).
+HoloLens (1st gen) adjusts hologram display according to your [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). If the IPD isn't accurate, holograms may appear unstable or at an incorrect distance. You can improve the quality of your visuals by calibrating the device to your interpupillary distance (IPD).
 
-When you set up your Hololens (1st gen) device, it prompts to calibrate your visuals after Cortana introduces herself. It's recommended that you complete the calibration step during this setup phase. However you can skip it by waiting until Cortana prompts you and then saying "Skip."
+When you set up your HoloLens (1st gen) device, it prompts to calibrate your visuals after Cortana introduces herself. It's recommended that you complete the calibration step during this setup phase. However you can skip it by waiting until Cortana prompts you and then saying "Skip."
 
 During the calibration process, HoloLens asks you to align your finger with a series of six targets per eye. HoloLens uses this process to set the IPD correctly for your eyes.
 
@@ -155,7 +155,7 @@ During the calibration process, HoloLens asks you to align your finger with a se
 
 ### Manually start the calibration process
 
-If you need to update the calibration or if a new user needs to adjust it, you can manually run the Calibration app at any time. The Calibration app is installed by default. You can access it by using eihter the **Start** menu or the Settings app.
+If you need to update the calibration or if a new user needs to adjust it, you can manually run the Calibration app at any time. The Calibration app is installed by default. You can access it by using either the **Start** menu or the Settings app.
 
 To use the **Start** menu to run the Calibration app, follow these steps:
 
@@ -182,4 +182,4 @@ Some immersive headsets provide the ability to customize the IPD setting. To cha
 
 You can also adjust this setting on your PC by selecting **Settings** > **Mixed reality** > **Headset display**.
 
-If your headset does not support IPD customization, this setting will be disabled.
+If your headset doesn't support IPD customization, this setting will be disabled.

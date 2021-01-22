@@ -1,6 +1,6 @@
 ---
 title: License requirements
-description: 
+description: Keep up to date with all the licensing requirements and guidelines you need for mobile device management, HoloLens, and Remote Assist.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -22,7 +22,7 @@ appliesto:
 
 If you plan on managing your HoloLens devices, you will need Azure AD and an MDM. Active Director (AD) cannot be used to manage HoloLens devices.
 If you plan on using an MDM other than Intune, an [Azure Active Directory Licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) is required.
-If you plan on using Intune as your MDM,  [here](https://docs.microsoft.com/intune/fundamentals/licenses) are a list of suites that includes Intune licenses. **Please note that Azure AD is included in the majority of these suites.**
+If you plan on using Intune as your MDM, read up on the [list of suites](https://docs.microsoft.com/intune/fundamentals/licenses) that include Intune licenses. **Please note that Azure AD is included in the majority of these suites.**
 
 ## Identify the licenses needed for your scenario and products
 
@@ -37,7 +37,7 @@ You may need to upgrade your HoloLens (1st gen) device to Windows Holographic fo
 
 ### Remote Assist License Requirements
 
-Make sure you have the required licensing and device. Updated licensing and product requirements can be found [here](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements).
+Make sure you have the required licensing and device, which you can check in the [requirements](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements) documentation.
 
 1. [Remote Assist License](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
     1. Or try a [Remote Assist trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
@@ -48,7 +48,7 @@ If you plan on implementing **[this cross-tenant scenario](https://docs.microsof
 
 ### Guides License Requirements
 
-Updated licensing and device requirements can be found [here](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements).
+Check out the [updated licensing and device requirements](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements).
 
 1. [Azure Active Directory (Azure AD) License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 1. [Power BI](https://powerbi.microsoft.com/desktop/)
