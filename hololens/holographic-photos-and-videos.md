@@ -1,6 +1,6 @@
 ---
 title: Capture and manage mixed reality photos and videos
-description: Learn how to capture, view, and share mixed reality photos and videos, using HoloLens.
+description: Learn how to capture, view, and share mixed reality photos and videos using HoloLens mixed reality devices.
 keywords: hololens, photo, video, capture, mrc, mixed reality capture, photos, camera, stream, livestream, demo
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
 ms.prod: hololens

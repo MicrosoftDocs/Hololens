@@ -1,6 +1,6 @@
 ---
-title: security adminless os
-description: adminless os and hololens security
+title: Admin-less operating system security
+description: Learn about admin-less operating systems, device owners, and security on HoloLens mixed reality devices.
 ms.prod: hololens
 author: evmill
 ms.author: v-evmill
