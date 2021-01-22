@@ -18,6 +18,8 @@ appliesto:
 
 # HoloLens 2 - Industrial Edition FAQ
 
+![Industrial Edition used in a clean room](./images/industrial-edition.jpg)
+
 ## HoloLens 2 Industrial Edition Benefits
 
 ### What benefits does HoloLens 2 Industrial Edition 2 include?
