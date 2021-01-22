@@ -35,9 +35,10 @@ You are now able to install Apps without needing to enable Developer Mode or usi
 
 ### For your devices:
 
- feature is currently available in Windows Holographic 20H2 builds for HoloLens 2 devices. Ensure any devices using this method are [updated](hololens-update-hololens.md).
+This feature is currently available in Windows Holographic 20H2 builds for HoloLens 2 devices. Ensure any devices using this method are [updated](hololens-update-hololens.md).
 
-### For your apps: 
+### For your apps:
+
 Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
 
 Apps that are installed via this method must be digitally signed. You'll need to use a certificate to sign the app. You can either get a certificate from the [MS Trusted CA List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT), in which case you won't need to take any extra action. Or you can sign your own certificate however that certificate will need to be pushed onto the device.
