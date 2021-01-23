@@ -100,8 +100,6 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 
 **Top known browser issues:**
 - Resetting your device will remove the new Microsoft Edge
-- Using the browser to join a Microsoft Teams call with video results in poor framerate and occasional crashes
-- Attempting to share your screen or individual app window with Microsoft Teams via the browser may result in the browser crashing
 - The magnifier preview in the holographic keyboard shows incorrect content
 
 #### Microsoft Edge Insider channels
