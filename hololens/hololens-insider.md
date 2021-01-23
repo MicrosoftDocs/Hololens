@@ -159,6 +159,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 - Previously placed Settings windows will be removed (see note above)
 - Visiting the Notifications page may crash the Settings app (investigating)
 - The Ethernet page currently doesn't show up (to be fixed soon)
+- You can no longer rename your device with the Settings app (IT admins can use provisioning packages or MDM to rename devices)
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon)
 
 ### Default app picker
