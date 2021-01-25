@@ -48,6 +48,8 @@ Yes. The HoloLens 2 Industrial Edition is designed with these environmental cons
 
 The HoloLens 2 Industrial Edition features a 2-year warranty and a rapid replacement program.
 
+Visit this page to find [HoloLens warranty information](http://support.microsoft.com/warranty).
+
 ### What&#39;s the rapid replacement program?
 
 In addition to the 2-year warranty, HoloLens 2 Industrial Edition includes the rapid replacement program enabling customers to receive a replacement device overnight or expedited shipping (faster of the available options) before a defective device is received by Microsoft. To start a replacement please [contact support](https://aka.ms/hololenssupport).
