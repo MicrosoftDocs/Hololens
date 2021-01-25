@@ -170,5 +170,7 @@ landingContent:
             url: https://www.microsoft.com/hololens/buy
           - text: Communities Support 
             url: https://holodevelopersslack.azurewebsites.net/
-          - text: Contact Support
+          - text: Technical Support
             url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f
+          - text: Store & Purchase Inquiry Support
+            url: https://support.microsoft.com/en-us/account-billing/contact-microsoft-store-support-4f615f2a-6bbd-fd69-6695-ae213d63eef0
