@@ -88,7 +88,7 @@ In response to customer feedback, we have enabled limited support for cellular c
 
 ### USB-C Hubs
 
-Some users may use to connect multiple devices at once. For users who would like to preview an Insider feature and [use a USB-C microphone](hololens-insider.md#usb-c-external-microphone-support) along with another connected device, USB-C hubs with 3.5 mm adapters are available and may fit the customer's need. Microsoft has not tested these devices, nor can we recommend any specific brands.
+Some users may need to connect multiple devices at once. For users who would like to preview an Insider feature and [use a USB-C microphone](hololens-insider.md#usb-c-external-microphone-support) along with another connected device, USB-C hubs may fit the customer's need. Microsoft has not tested these devices, nor can we recommend any specific brands.
 
 **Requirements for USB-C hub and connected devices:**
 
