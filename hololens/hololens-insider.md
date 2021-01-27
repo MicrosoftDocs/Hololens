@@ -92,7 +92,6 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 **Scenarios and features coming soon:**
 - WebXR and 360 Viewer extension
 - Content restoration to correct window when browsing across multiple windows placed in your environment
-- Joining a Microsoft Teams call via the browser with video, mixed reality capture, or screen-sharing (joining calls with audio works well)
 
 **Scenarios and features not expected to work:**
 - Spatial sound from multiple windows with simultaneous audio streams
@@ -159,6 +158,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 - Previously placed Settings windows will be removed (see note above)
 - Visiting the Notifications page may crash the Settings app (investigating)
 - The Ethernet page currently doesn't show up (to be fixed soon)
+- You can no longer rename your device with the Settings app (IT admins can use provisioning packages or MDM to rename devices)
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon)
 
 ### Default app picker
