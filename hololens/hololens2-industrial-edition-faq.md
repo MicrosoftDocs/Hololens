@@ -54,6 +54,9 @@ Visit this page to find [HoloLens warranty information](http://support.microsoft
 
 In addition to the 2-year warranty, HoloLens 2 Industrial Edition includes the rapid replacement program enabling customers to receive a replacement device overnight or expedited shipping (faster of the available options) before a defective device is received by Microsoft. To start a replacement please [contact support](https://aka.ms/hololenssupport).
 
+> [!NOTE]
+> Support will need a clear description of any defect, and to confirm the device cannot be recovered to a working state before it is replaced.
+
 ### Can I purchase replacement parts for HoloLens 2 Industrial Edition?
 
 Replacement parts and refurbishments are not supported for the HoloLens 2 Industrial Edition. If you find yourself in need of a replacement, use our rapid replacement program for the HoloLens 2 Industrial Edition.

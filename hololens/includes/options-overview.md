@@ -199,9 +199,7 @@ In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-y
 
 ## Cleaning and Handling HoloLens 2
 
-Video - In process of being produced.
-
-Review the [HoloLens 2 Industrial Edition FAQ.](../hololens2-industrial-edition-faq.md)
+The HoloLens 2 Industrial Edition can be cleaned by a solution of &quot;70%&quot; isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance) and review the [HoloLens 2 Industrial Edition FAQ.](../hololens2-industrial-edition-faq.md)
 
 
 
