@@ -169,3 +169,12 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 - [Explore the all the possibilities for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
 - [Learn about developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [Reach out to your fellow developers on our HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
+
+## Deploy HoloLens devices for your Organization
+
+### Prepare
+### Configure
+### Deploy
+### Maintain
+
+## Explore solutions
