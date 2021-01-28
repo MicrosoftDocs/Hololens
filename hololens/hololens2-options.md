@@ -101,12 +101,12 @@ In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-y
 #### Cleaning and Handling HoloLens 2
 The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance) and review the [HoloLens 2 Industrial Edition FAQ](https://github.com/MicrosoftDocs/Hololens-pr/blob/evmill-industrial-edition/hololens/hololens2-industrial-edition-faq.md).
 
-### **Trimble XR10**
+### **Trimble XR10 with HoloLens 2**
 
 #### Learn about Trimble XR10
 Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program and integrates the latest spatial computing technology into a certified solution for use with a hard hat for worker safety.
 
-[Learn](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2) more about the Trimble XR10.
+See more about the [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
 
 ### **HoloLens 2 Development Edition**
 
