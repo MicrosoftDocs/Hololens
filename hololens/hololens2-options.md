@@ -62,4 +62,10 @@ Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/holol
 ### **HoloLens 2 (device only)**
 #### Learn about HoloLens 2
 You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+1. [Get your device ready to use](https://docs.microsoft.com/hololens/hololens2-setup) and then [get set up](https://docs.microsoft.com/hololens/hololens2-start).
+1. [Learn how to get around HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
+1. Once you're experienced, [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
+1. Look through all the available [apps for HoloLens 2 on the the Microsoft app store](https://docs.microsoft.com/hololens/holographic-store-apps).
