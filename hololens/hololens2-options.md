@@ -65,6 +65,7 @@ You can choose to use these devices in a commercial environment for your busines
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
+#### Here's what to do next with the HoloLens 2
 1. [Get your device ready to use](https://docs.microsoft.com/hololens/hololens2-setup) and then [get set up](https://docs.microsoft.com/hololens/hololens2-start).
 1. [Learn how to get around HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
 1. Once you're experienced, [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
@@ -79,7 +80,7 @@ You can choose to use these devices in a commercial environment for your busines
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
-We have created a guide specifically for helping deploy HoloLens devices at scale with end-to-end set up from setting up Azure Active Directory to validating a Remote Assist call. Please check out this Deployment Guide – Cloud connected HoloLens 2 with Remote Assist.
+We have created a guide specifically for helping deploy HoloLens devices at scale with end-to-end set up from setting up Azure Active Directory to validating a Remote Assist call. Please check out this [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](https://docs.microsoft.com/en-us/hololens/hololens2-cloud-connected-overview).
 | Checkpoint | Outcome |
 |:----------:|:------:|
 |Get Started| Get started with Remote Assist |
