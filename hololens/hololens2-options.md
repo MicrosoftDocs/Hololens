@@ -61,7 +61,6 @@ Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/holol
 
 ### **HoloLens 2 (device only)**
 #### Learn about HoloLens 2
-You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
@@ -69,3 +68,104 @@ You can choose to use these devices in a commercial environment for your busines
 1. [Learn how to get around HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
 1. Once you're experienced, [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
 1. Look through all the available [apps for HoloLens 2 on the the Microsoft app store](https://docs.microsoft.com/hololens/holographic-store-apps).
+
+You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization.
+
+### **HoloLens 2 with Remote Assist**
+
+#### Learn about HoloLens 2 with Remote Assist
+- You can choose to use these devices in a commercial environment for your business. Order as many as you need.
+- One of the most popular uses for HoloLens in the enterprise environment is the ability to use Remote Assist. With this option you get a license for one seat (per device).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
+We have created a guide specifically for helping deploy HoloLens devices at scale with end-to-end set up from setting up Azure Active Directory to validating a Remote Assist call. Please check out this Deployment Guide – Cloud connected HoloLens 2 with Remote Assist.
+| Checkpoint | Outcome |
+|:----------:|:------:|
+|Get Started| Get started with Remote Assist |
+|License| Redeem license for Remote Assist |
+|Connect| Connect your device(s) to Wi-Fi.|
+|Enroll| Enroll devices with your organization.|
+
+
+### **HoloLens 2 Industrial Edition**
+
+#### Learn about HoloLens 2 Industrial Edition
+The HoloLens 2 Industrial Edition has been enhanced and redesigned with new materials and certifications to support a broader set of industrial environments, including:
+
+- **Clean room environments**: The HoloLens 2 Industrial Edition supports with standards ranging from ISO Class 6 through ISO Class 8 where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention.
+- **Hazardous Locations**: The HoloLens 2 Industrial Edition supports environments where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations and includes a UL Class I, Division 2 certification.
+
+In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-year warranty & rapid replacement program.
+
+#### Cleaning and Handling HoloLens 2
+The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance) and review the [HoloLens 2 Industrial Edition FAQ](https://github.com/MicrosoftDocs/Hololens-pr/blob/evmill-industrial-edition/hololens/hololens2-industrial-edition-faq.md).
+
+### **Trimble XL10**
+
+#### Learn about Trimble XL10
+Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program and integrates the latest spatial computing technology into a certified solution for use with a hard hat for worker safety.
+Need content or link.
+
+### **HoloLens 2 Development Edition**
+
+#### Learn about the Development Edition
+
+> [!NOTE]
+> The Development Edition is not permitted to be deployed with a commercially distributed solution. The Development Edition is permitted to be deployed in the aiding of the development and/or testing of applications in a commercial setting.  
+
+The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits, a 3-month Unity Pro Trial, and a 3-month PiXYZ plugin trial:
+
+| Bundle feature | Description |
+|---|---|
+|  [Unity](https://unity.com/) | A real-time 3D development platform.   |
+|  [Pixyz plug-in for Unity](https://www.pixyz-software.com/plugin/) | A bridge for connecting the engineering &amp; CAD worlds with the development world.   |
+| [$500 in Azure credits for Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
+
+#### Redeem your credits
+
+##### Unity
+You'll have received a unique code. Directions to redeem Unity Pro trial:
+1. Visit [id.unity.com](http://id.unity.com/)
+1. Sign in with your Unity ID or create one
+1. Click **Redeem a product code**
+1. Enter product code, and click **Redeem a product code**
+
+More details on [How to activate a Unity license](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-). Contact [Unity Support](https://support.unity3d.com/hc) for help as needed.  
+
+##### Pixyz
+You'll have received a unique code. Directions to redeem Pixyz Plugin trial:
+1. Visit [id.unity.com](http://id.unity.com/)
+1. Click **Redeem a product code**
+1. Enter your Pixyz Plugin product code, and click **Redeem a product code**
+
+More details on how to [Redeem your Pixyz license.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Contact [Pixyz Support](https://www.pixyz-software.com/support/) for help as needed.
+
+#### Azure
+Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
+How to redeem Azure credits:
+To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. [Learn more.](../hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+
+- [Learn how Azure Spatial Anchors can help you build apps that map, share, and persist 3D content](https://azure.microsoft.com/services/spatial-anchors/)
+- [Learn how Azure Remote Rendering can render high-quality, interactive 3D content, and stream it to your devices in real time](https://azure.microsoft.com/services/remote-rendering/)
+
+#### Get started developing
+
+Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem - it's time to create.
+
+|     Checkpoint                              |     Outcome                                                                                                                    |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+|     [Start Designing and Prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Start your adventure into designing Mixed Reality applications across core concepts, interaction models, and UX elements.     |
+|     [Start Developing for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Choose your engine, download your tools, add core building blocks, and start building today.                                  |
+|     [Explore Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Build compelling immersive experiences with Azure Remote Rendering and Azure Spatial Anchors.                                 |
+
+#### Developer Edition Additional resources
+
+- [Make sure to install the tools for HoloLens development.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [Learn about developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+- [Learn about how to combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
+- [Learn how to deploy your built apps](https://docs.microsoft.com/hololens/app-deploy-overview).
+- [Explore the all the possibilities for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
+- [Learn about developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- [Reach out to your fellow developers on our HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
