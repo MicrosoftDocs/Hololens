@@ -59,6 +59,7 @@ Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/holol
 
 ## Get started with HoloLens 2 options
 
-Select a tab to learn more about your HoloLens journey.
-
-[!INCLUDE[](includes/options-overview.md)]
+### **HoloLens 2 (device only)**
+#### Learn about HoloLens 2
+You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
