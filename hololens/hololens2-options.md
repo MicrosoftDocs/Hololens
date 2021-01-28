@@ -61,6 +61,7 @@ Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/holol
 
 ### **HoloLens 2 (device only)**
 #### Learn about HoloLens 2
+You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
@@ -68,8 +69,6 @@ Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/holol
 1. [Learn how to get around HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
 1. Once you're experienced, [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
 1. Look through all the available [apps for HoloLens 2 on the the Microsoft app store](https://docs.microsoft.com/hololens/holographic-store-apps).
-
-You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization.
 
 ### **HoloLens 2 with Remote Assist**
 
@@ -102,11 +101,12 @@ In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-y
 #### Cleaning and Handling HoloLens 2
 The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance) and review the [HoloLens 2 Industrial Edition FAQ](https://github.com/MicrosoftDocs/Hololens-pr/blob/evmill-industrial-edition/hololens/hololens2-industrial-edition-faq.md).
 
-### **Trimble XL10**
+### **Trimble XR10**
 
-#### Learn about Trimble XL10
+#### Learn about Trimble XR10
 Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program and integrates the latest spatial computing technology into a certified solution for use with a hard hat for worker safety.
-Need content or link.
+
+[Learn](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2) more about the Trimble XR10.
 
 ### **HoloLens 2 Development Edition**
 
