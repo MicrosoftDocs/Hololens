@@ -174,8 +174,12 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 ## Deploy HoloLens devices for your Organization
 
 ### Prepare
+[HoloLens 2 Requirements](https://docs.microsoft.com/en-us/hololens/hololens-requirements)
+
 ### Configure
+
 ### Deploy
+
 ### Maintain
 
 ## Explore solutions
