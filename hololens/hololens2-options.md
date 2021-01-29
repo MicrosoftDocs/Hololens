@@ -47,13 +47,13 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 
 **[HoloLens 2 (device only)](hololens2-options.md#hololens-2-device-only)**: HoloLens 2 offers the most comfortable and immersive mixed reality experience available—enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 
-**HoloLens 2 with Dynamics 365 Remote Assist**: Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
+**[HoloLens 2 with Dynamics 365 Remote Assist](hololens2-options.md#hololens-2-with-remote-assist)**: Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
 
-**HoloLens 2 Industrial Edition**: Designed, built, and tested to support clean room environments with standards ranging from ISO Class 6 through ISO Class 8, the HoloLens 2 Industrial Edition is UL Class I, Division 2 certified and is supported with a 2-year warranty and a rapid replacement program.
+**[HoloLens 2 Industrial Edition](hololens2-options.md#hololens-2-industrial-edition)**: Designed, built, and tested to support clean room environments with standards ranging from ISO Class 6 through ISO Class 8, the HoloLens 2 Industrial Edition is UL Class I, Division 2 certified and is supported with a 2-year warranty and a rapid replacement program.
 
-**Trimble XR10 with HoloLens 2**: Purpose built for workers in dirty, loud, and safety-controlled environments, the Trimble XR10 with HoloLens 2 brings mixed reality right to your work site.
+**[Trimble XR10 with HoloLens 2](hololens2-options.md#trimble-xr10-with-hololens-2)**: Purpose built for workers in dirty, loud, and safety-controlled environments, the Trimble XR10 with HoloLens 2 brings mixed reality right to your work site.
 
-**HoloLens 2 Development Edition**: Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
+**[HoloLens 2 Development Edition](hololens2-options.md#hololens-2-development-edition)**: Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
 
 Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/hololens/buy).
 
@@ -180,6 +180,9 @@ HoloLens 2 devices are powerful mixed reality devices that allow you to deploy s
 [HoloLens 2 enterprise deployment and management](hololens-requirements.md)
 
 We have created several deployment guides that can help you. Take a look at our [Common Infrastructure Deployment Scenarios Overview](common-scenarios.md) and find the deployment that best suits your needs.
+
+- [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist – Overview](hololens2-cloud-connected-overview.md)
+- [Common Scenarios – Offline Secure HoloLens 2](hololens-common-scenarios-offline-secure.md)
 
 ## Explore solutions
 
