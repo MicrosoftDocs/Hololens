@@ -30,13 +30,13 @@ By using the HoloLens 2 Industrial Edition in these environments there will be s
 
 ### What clean room environments does HoloLens 2 Industrial Edition support?
 
-HoloLens 2 Industrial Edition supports highly-controlled environments such as clean room environments ISO class 6 through ISO Class 8.
+HoloLens 2 Industrial Edition supports regulated environments that have rigorous requirements, and meets particle emissions standards for ISO 14644-1 Class 5 clean rooms.
 
 For more information, please read more on [ISO standard 14644-1](https://www.iso.org/standard/53394.html) (Airborne Particulate Cleanliness Classes in Cleanrooms and Clean Zones).
 
 ### Does HoloLens 2 Industrial Edition meet requirements for Intrinsic Safety?
 
- The HoloLens 2 Industrial Edition features UL Class I, Dev 2 certified for use in environments where flammable gases, vapors or liquids may exist.
+The HoloLens 2 Industrial Edition is certified for use in UL Class I, Division 2-Groups A, B, C, and D HAZLOC environments where flammable gases, vapors or liquids may exist.
 
 For more information read about [UL certifications](https://www.ul.com/services/ul-and-c-ul-hazardous-areas-certification-north-america?csrf-token=CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz&amp;Search=UL+Class+I%2C+Dev+2+&amp;search-submit=Search).
 

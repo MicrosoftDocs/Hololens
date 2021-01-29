@@ -192,8 +192,8 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 
 The HoloLens 2 Industrial Edition has been enhanced and redesigned with new materials and certifications to support a broader set of industrial environments, including:
 
-- **Clean room environments:** The HoloLens 2 Industrial Edition supports with standards ranging from ISO Class 6 through ISO Class 8 where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention.
-- **Hazardous Locations:** The HoloLens 2 Industrial Edition supports environments where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations and includes a UL Class I, Division 2 certification.
+- **Clean room environments:** The HoloLens 2 Industrial Edition supports with standards ranging from ISO 14644-1 Class 5 clean rooms where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention.
+- **Hazardous Locations:** The HoloLens 2 Industrial Edition supports environments where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations and includes a UL Class I, Division 2-Groups A, B, C, and D HAZLOC certification.
 
 In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-year warranty & rapid replacement program.
 
