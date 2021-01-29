@@ -101,8 +101,10 @@ The HoloLens 2 Industrial Edition has been enhanced and redesigned with new mate
 
 In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-year warranty & rapid replacement program.
 
+Review the [HoloLens 2 Industrial Edition FAQ](https://github.com/MicrosoftDocs/Hololens-pr/blob/evmill-industrial-edition/hololens/hololens2-industrial-edition-faq.md).
+
 #### Cleaning and Handling HoloLens 2
-The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance) and review the [HoloLens 2 Industrial Edition FAQ](https://github.com/MicrosoftDocs/Hololens-pr/blob/evmill-industrial-edition/hololens/hololens2-industrial-edition-faq.md).
+The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance). 
 
 ### **Trimble XR10 with HoloLens 2**
 
