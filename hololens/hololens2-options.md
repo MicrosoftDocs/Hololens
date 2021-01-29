@@ -61,7 +61,7 @@ Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/holol
 
 ### **HoloLens 2 (device only)**
 #### Learn about HoloLens 2
-Using your HoloLens 2 devices in a commercial environment can be a powerful tool for your business or organization.
+Using your HoloLens 2 devices in a commercial environment can be a powerful tool for your business or organization. Any HoloLens 2 can also be used be a developer to create mixed reality apps. 
 
 <br>
 
