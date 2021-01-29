@@ -82,7 +82,7 @@ You can choose to use these devices in a commercial environment for your busines
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
-We have created a guide specifically for helping deploy HoloLens devices at scale with end-to-end set up from setting up Azure Active Directory to validating a Remote Assist call. Please check out this [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](https://docs.microsoft.com/en-us/hololens/hololens2-cloud-connected-overview).
+We have created a guide specifically for helping deploy HoloLens devices at scale with end-to-end set up from setting up Azure Active Directory to validating a Remote Assist call. Please check out this [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md).
 
 | Checkpoint | Outcome |
 |:----------:|:------:|
@@ -148,7 +148,7 @@ More details on how to [Redeem your Pixyz license.](https://www.pixyz-software.c
 #### Azure
 Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
 How to redeem Azure credits:
-To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. [Learn more.](../hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. [Learn more.](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
 
 - [Learn how Azure Spatial Anchors can help you build apps that map, share, and persist 3D content](https://azure.microsoft.com/services/spatial-anchors/)
 - [Learn how Azure Remote Rendering can render high-quality, interactive 3D content, and stream it to your devices in real time](https://azure.microsoft.com/services/remote-rendering/)
