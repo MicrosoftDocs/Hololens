@@ -84,12 +84,12 @@ You can choose to use these devices in a commercial environment for your busines
 #### Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
 We have created a guide specifically for helping deploy HoloLens devices at scale with end-to-end set up from setting up Azure Active Directory to validating a Remote Assist call. Please check out this [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md).
 
-| Checkpoint | Outcome |
-|:----------:|:------:|
-| Get Started | Get started with Remote Assist |
-| License | Redeem license for Remote Assist |
-| Connect | Connect your device(s) to Wi-Fi. |
-| Enroll | Enroll devices with your organization. |
+| Checkpoint  | Outcome                                |
+|-------------|----------------------------------------|
+| [Get started](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | Get started with Remote Assist.        |
+| [License](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Redeem license for Remote Assist.      |
+| [Connect](https://docs.microsoft.com/hololens/hololens-network)     | Connect your device(s) to Wi-Fi.       |
+| [Enroll](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | Enroll devices with your organization. |
 
 ### **HoloLens 2 Industrial Edition**
 
