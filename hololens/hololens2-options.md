@@ -70,7 +70,7 @@ You can choose to use these devices in a commercial environment for your busines
 #### Here's what to do next with the HoloLens 2
 1. [Get your device ready to use](https://docs.microsoft.com/hololens/hololens2-setup) and then [get set up](https://docs.microsoft.com/hololens/hololens2-start).
 1. [Learn how to get around HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
-1. Once you're experienced, [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
+1. Once you're comfortable, [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
 1. Look through all the available [apps for HoloLens 2 on the the Microsoft app store](https://docs.microsoft.com/hololens/holographic-store-apps).
 
 ### **HoloLens 2 with Remote Assist**
