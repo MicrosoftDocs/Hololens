@@ -45,7 +45,7 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 
 ## Options Overview
 
-**HoloLens 2 (device only)**: HoloLens 2 offers the most comfortable and immersive mixed reality experience available—enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
+**[HoloLens 2 (device only)](hololens2-options.md#hololens-2-device-only)**: HoloLens 2 offers the most comfortable and immersive mixed reality experience available—enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 
 **HoloLens 2 with Dynamics 365 Remote Assist**: Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
 
@@ -63,7 +63,9 @@ Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/holol
 #### Learn about HoloLens 2
 You can choose to use these devices in a commercial environment for your business. These devices can be set up to be powerful for any developer or organization.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Here's what to do next with the HoloLens 2
 1. [Get your device ready to use](https://docs.microsoft.com/hololens/hololens2-setup) and then [get set up](https://docs.microsoft.com/hololens/hololens2-start).
@@ -81,21 +83,21 @@ You can choose to use these devices in a commercial environment for your busines
 
 #### Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
 We have created a guide specifically for helping deploy HoloLens devices at scale with end-to-end set up from setting up Azure Active Directory to validating a Remote Assist call. Please check out this [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](https://docs.microsoft.com/en-us/hololens/hololens2-cloud-connected-overview).
+
 | Checkpoint | Outcome |
 |:----------:|:------:|
-|Get Started| Get started with Remote Assist |
-|License| Redeem license for Remote Assist |
-|Connect| Connect your device(s) to Wi-Fi.|
-|Enroll| Enroll devices with your organization.|
-
+| Get Started | Get started with Remote Assist |
+| License | Redeem license for Remote Assist |
+| Connect | Connect your device(s) to Wi-Fi. |
+| Enroll | Enroll devices with your organization. |
 
 ### **HoloLens 2 Industrial Edition**
 
 #### Learn about HoloLens 2 Industrial Edition
 The HoloLens 2 Industrial Edition has been enhanced and redesigned with new materials and certifications to support a broader set of industrial environments, including:
 
-- **Clean room environments**: The HoloLens 2 Industrial Edition supports with standards ranging from ISO Class 6 through ISO Class 8 where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention.
-- **Hazardous Locations**: The HoloLens 2 Industrial Edition supports environments where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations and includes a UL Class I, Division 2 certification.
+- **Clean room environments:** The HoloLens 2 Industrial Edition supports with standards ranging from ISO 14644-1 Class 5 clean rooms where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention.
+- **Hazardous Locations:** The HoloLens 2 Industrial Edition supports environments where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations and includes a UL Class I, Division 2-Groups A, B, C, and D HAZLOC certification.
 
 In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-year warranty & rapid replacement program.
 
