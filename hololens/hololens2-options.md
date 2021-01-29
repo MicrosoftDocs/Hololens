@@ -175,14 +175,20 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 
 ## Deploy HoloLens devices for your Organization
 
-### Prepare
-[HoloLens 2 Requirements](https://docs.microsoft.com/en-us/hololens/hololens-requirements)
+HoloLens 2 devices are powerful mixed reality devices that allow you to deploy solutions to your organization. In order to efficiently deploy devices to your organization to use the full benefits of the Azure cloud, we suggest reviewing your organization's infrastructure.
 
-### Configure
+[HoloLens 2 enterprise deployment and management](hololens-requirements.md)
 
-### Deploy
-
-### Maintain
+We have created several deployment guides that can help you. Take a look at our [Common Infrastructure Deployment Scenarios Overview](common-scenarios.md) and find the deployment that best suits your needs.
 
 ## Explore solutions
 
+Explore these additional solutions built for HoloLens mixed reality devices.
+
+| Solution | Brief description                                                                                |
+|----------|---------------------------------------------------------------------------------------------------|
+| [Dynamics 365 for HoloLens](https://www.microsoft.com//hololens/apps)          | Empower employees and optimize operations.                                                        |
+| [Dynamics 365 Remote Assist](https://dynamics.microsoft.com/mixed-reality/remote-assist/)          | Empower technicians to collaborate more efficiently by working together from different locations. |
+|   [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/)        | Improve training effective needs and learn how employees are performing.                          |
+|  [Azure Cloud Services for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Learn how to develop a solution using Azure Cloud Services.                                       |
+|  [Start developing for HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)         | Build a mixed reality solution to fit your needs.                                                 |
