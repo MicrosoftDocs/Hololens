@@ -91,7 +91,7 @@ MSA and Azure AD are among the first relying parties to support password-less au
 
 For more information on using WebAuthn with applications and/or SDKs, go to [WebAuthn APIs for password-less authentication on Windows 10](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis).
 
-Any FIDO2 security key that is implemented to-spec and satisfy the requirements on [Azure Active Directory passwordless sign-in - FIDO2 security keys] should be supported.
+Any FIDO2 security key that is implemented to-spec and satisfy the requirements on [Azure Active Directory passwordless sign-in - FIDO2 security keys](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) should be supported.
 
 ## Local accounts
 
