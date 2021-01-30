@@ -85,7 +85,19 @@ Windows Hello and FIDO2 devices implement credentials based on the HoloLens devi
 
 Both options offer two-factor authentication in one step, requiring both a registered device and a biometric or PIN to successfully sign in. For more information, refer to the strong authentication with FIDO2 security key graphic which follows:
 
-  ![FIDO img](images/security-fido2-whfb.png)
+### Strong Authentication with FIDO2 security key
+
+  ![FIDO img](images/security-fido2-whfb-smaller.png)
+
+1. User plugs FIDO2 security key into HoloLens 2
+1. Windows detects FIDO2 securty key
+1. HoloLens sends auth request
+1. Azure AD sends back nonce
+1. User completes gesture to unlock private key stores in security key's secure enclave
+1. FIDO2 security key signs nonce with private key
+1. PRT token request with signed nonce is sent to Azure AD
+1. Azure AD verifies FIDO key
+1. Azure AD returns PRT and TGT to enable access to resources
 
 MSA and Azure AD are among the first relying parties to support password-less authentication by implementing WebAuthn.
 
