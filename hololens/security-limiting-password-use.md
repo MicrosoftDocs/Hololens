@@ -31,7 +31,7 @@ The first authentication method relies on new capabilities in the Microsoft Auth
 The second is a device code flow that is intuitive to users and does not require any additional infrastructure.  This remote sign-in behavior relies on another trusted device that supports the organization’s preferred authentication mechanism and when complete, tokens are issued back to the HoloLens to complete sign-in or device setup. The steps in this flow are:
 
   1. A user going through the initial device setup or sign-in flows on OOBE is presented with a “Sign in from another device” link and taps on it. This initiates a remote sign in session.
-  1. The user is then shown a polling page which contains a short URI ([https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)) that points to the device authentication endpoint of the Azure AD Secure Token Service (STS). The user is also presented with a one-time code that is securely generated in the cloud and has a maximum lifetime of 15 minutes. Along with code generation, Azure AD also creates an encrypted session upon initiation of the remote sign in request in the previous step and together, the URI and code are used to approve the remote sign-in request.
+  1. The user is then shown a polling page, which contains a short URI ([https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)) that points to the device authentication endpoint of the Azure AD Secure Token Service (STS). The user is also presented with a one-time code that is securely generated in the cloud and has a maximum lifetime of 15 minutes. Along with code generation, Azure AD also creates an encrypted session upon initiation of the remote sign in request in the previous step and together, the URI and code are used to approve the remote sign-in request.
   1. The user then navigates to the URI from another device and is prompted to enter the code displayed on their HoloLens 2 device.
   1. Once the user enters the code, Azure AD STS displays a page indicating the user’s HoloLens 2 device that triggered the remote sign in request and requested generation of the code. The user is then prompted for confirmation to prevent any phishing attacks.
   1. If the user chooses to continue signing in to the displayed ‘application’, Azure AD STS prompts the user for their credentials. On successful authentication, Azure AD STS updates the cached remote session as 'approved' along with an authorization code.
@@ -83,7 +83,7 @@ After signing in with an MSA and Azure AD account, the system sends a generated 
 
 Windows Hello and FIDO2 devices implement credentials based on the HoloLens device, specifically the built-in Trusted Platform Module secure enclave. The TPM enclave stores the private key and requires either a biometric or PIN to unlock it. Similarly, a FIDO2 security key is a small external device with a built-in secure enclave that stores the private key and requires a biometric or PIN to unlock it.
 
-Both options offer two-factor authentication in one step, requiring both a registered device and a biometric or PIN to successfully sign in. For more information, refer to the strong authentication with FIDO2 security key graphic which follows:
+Both options offer two-factor authentication in one step, requiring both a registered device and a biometric or PIN to successfully sign in. For more information, see the strong authentication with FIDO2 security key graphic and process, which follows.
 
 ### Strong Authentication with FIDO2 security key
 
@@ -103,7 +103,7 @@ MSA and Azure AD are among the first relying parties to support password-less au
 
 For more information on using WebAuthn with applications and/or SDKs, go to [WebAuthn APIs for password-less authentication on Windows 10](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis).
 
-Any FIDO2 security key that is implemented to-spec and satisfy the requirements on [Azure Active Directory passwordless sign-in - FIDO2 security keys](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) should be supported.
+HoloLens 2 supports FIDO2 security devices that are implemented to spec and satisfy the requirements listed on [Azure Active Directory passwordless sign-in - FIDO2 security keys](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) should be supported.
 
 ## Local accounts
 
