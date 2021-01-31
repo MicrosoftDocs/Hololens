@@ -2,6 +2,16 @@
 
 
 
+## Week of January 25, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/25/2021 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
+| 1/26/2021 | [Connect to Bluetooth and USB-C devices](/hololens/hololens-connect-devices) | modified |
+| 1/28/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
+
+
 ## Week of January 18, 2021
 
 
