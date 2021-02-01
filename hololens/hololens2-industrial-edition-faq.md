@@ -83,7 +83,7 @@ Firmly from the brow pad. By holding the HoloLens 2 from the brow pad you put th
 
 ### What operating system does the HoloLens 2 Industrial Edition have?
 
-The Industrial Edition has the same OS as all other HoloLens 2 editions. For more information on HoloLens OS updates [read our release notes](https://docs.microsoft.comhololens/hololens-release-notes).
+The Industrial Edition has the same OS as all other HoloLens 2 editions. For more information on HoloLens OS updates [read our release notes](hololens-release-notes.md).
 
 ### What apps can run-on the HoloLens 2 Industrial Edition?
 

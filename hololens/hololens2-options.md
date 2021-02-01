@@ -77,7 +77,7 @@ Using your HoloLens 2 devices in a commercial environment can be a powerful tool
 
 #### Learn about HoloLens 2 with Remote Assist
 - You can use these devices in a commercial environment for your business. Order as many as you need!
-- One of the most popular uses for HoloLens enterprise environments is **Remote Assist**, which gives you one licence per seat (per device).
+- One of the most popular uses for HoloLens enterprise environments is **Remote Assist**, which gives you one license per seat (per device).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
