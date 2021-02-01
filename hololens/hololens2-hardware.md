@@ -170,9 +170,9 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 |     Exterior Shipper Depth     |     172.01mm          |     6.772 inches        |
 |     Exterior Shipper Weight    |     3.284kg           |     7.240 lbs           |
 
-Notes:
-- Unit: The black, retail-style box HoloLens 2 is sold in.
-- Exterior Shipper: The protective shipping packaging around Unit.
+> [!NOTE]
+> - Unit: The black, retail-style box HoloLens 2 is sold in.
+> - Exterior Shipper: The protective shipping packaging around Unit.
 
 ## Finding the Serial number
 
