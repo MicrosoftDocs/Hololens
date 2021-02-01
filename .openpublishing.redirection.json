@@ -51,7 +51,7 @@
                             "redirect_document_id":  false
                         },
                         {
-                            "source_path":  "hhololens\includes\options-overview.md",
+                            "source_path":  "hololens/includes/options-overview.md",
                             "redirect_url": "https://docs.microsoft.com/hololens/hololens2-options",
                             "redirect_document_id":  false
                         }
