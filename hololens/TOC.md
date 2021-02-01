@@ -13,7 +13,8 @@
 ### [Supported languages for HoloLens 2](hololens2-language-support.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
 ### [HoloLens 2 Development Edition FAQ](hololens2-development-edition-faq.md)
-### [Manage custom apps for HoloLens 2](hololens2-holographic-custom-apps.md)
+### [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md)
+
 
 
 ## Get started with HoloLens (1st gen)
@@ -35,6 +36,7 @@
 ### [Create mixed reality photos and videos](holographic-photos-and-videos.md)
 ## Holographic applications
 ### [Find, install, and uninstall applications](holographic-store-apps.md)
+### [Manage custom apps for HoloLens 2](hololens2-holographic-custom-apps.md)
 ## Hologram optics and placement in space
 ### [Improve visual quality and comfort](hololens-calibration.md)
 ### [Map physical spaces with HoloLens](hololens-spaces.md) 
