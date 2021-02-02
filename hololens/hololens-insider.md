@@ -136,13 +136,15 @@ There are a couple methods available for installing Microsoft Edge Insider chann
 
 The new Microsoft Edge includes support for WebXR, which is the new standard for creating immersive web experiences (replacing WebVR). Many immersive web experiences were designed with VR in mind (they replace your field of view with a virtual environment), but these experiences are also supported by HoloLens 2. The WebXR standard also enables augmented and mixed reality immersive web experiences that leverage your physical environment. As developers spend more time with WebXR, we anticipate new augmented and mixed reality immersive experiences will arrive for HoloLens 2 customers to try!
 
-The 360 Viewer extension is built on WebXR and automatically installs alongside the new Microsoft Edge on HoloLens 2. This web extension gives you the ability to immerse yourself in 360-degree videos. YouTube offers the largest selection of 360 videos, so we encourage you to start there. 
+The 360 Viewer extension is built on WebXR and automatically installs alongside the new Microsoft Edge on HoloLens 2. This web extension gives you the ability to immerse yourself in 360-degree videos. YouTube offers the largest selection of 360 videos, so we encourage you to start there.
 
 #### How to use WebXR
 
 1. Navigate to a website with WebXR support.
-1. Select the **Enter VR button** on the website. The location and visual representation of this button may vary per website, but it may look similar to:
+1. Select the **Enter VR** button on the website. The location and visual representation of this button may vary per website, but it may look similar to:
+
     ![Enter VR button example](images/75px-enter-vr.png)
+
 1. The first time you try to launch a WebXR experience on a specific domain, the browser will ask for consent to enter an immersive view, select **Allow**.
 1. Use [HoloLens 2 gestures](hololens2-basic-usage.md#the-hand-tracking-frame) to manipulate the experience.
 1. If the experience doesn't have an **Exit** button, use the [Start gesture](hololens2-basic-usage.md#start-gesture) to return home.
@@ -157,7 +159,9 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 
 1. Navigate to a 360-degree video on YouTube.
 1. In the video frame, select the mixed reality headset button:
+
     ![Button to activate 360 Viewer](images/enter-360-viewer.jpg)
+
 1. The first time you try to launch 360 Viewer on a specific domain, the browser will ask for consent to enter an immersive view. Select **Allow**.
 1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.
 
