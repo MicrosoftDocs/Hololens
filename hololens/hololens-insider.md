@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/21/2021
+ms.date: 2/2/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -29,6 +29,7 @@ We are excited to start flighting new features to Windows Insiders again. We wil
 | Feature Name                                              | Short description                                                                      | Available in build |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
 | [New Microsoft Edge](#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2                         | 20279.1006 |
+| [WebXR and 360 Viewer](#webxr-and-360-viewer)             | Try immersive web experiences and 360 video playback                                           | 20289.1000 |
 | [New Settings app](#new-settings-app)                     | The legacy Settings app is being replaced by an updated version with new features and settings | 20279.1006 |
 | [Default app picker](#default-app-picker)                 | Choose which app should launch for each file or link type                                      | 20279.1006 |
 | [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | 20279.1006 |
@@ -128,6 +129,57 @@ There are a couple methods available for installing Microsoft Edge Insider chann
 
 > [!NOTE]
 > During this Windows Insider preview for HoloLens 2, the version of Microsoft Edge on your device may be higher than those available in some (or all) of the Microsoft Edge Insider channels. This is to ensure new features and fixes specifically targeting the web browser on HoloLens 2 are getting to our Windows Insiders as quickly as possible. Shortly after the public release of the next Windows update, the Microsoft Edge Insider channel builds will surpass, and stay ahead of, the version of Microsoft Edge on your HoloLens 2.
+
+### WebXR and 360 Viewer
+
+*Added in Windows Insider build 20289.1000*
+
+The new Microsoft Edge includes support for WebXR, which is the new standard for creating immersive web experiences (replacing WebVR). Many immersive web experiences were designed with VR in mind (they replace your field of view with a virtual environment), but these experiences are also supported by HoloLens 2. The WebXR standard also enables augmented and mixed reality immersive web experiences that leverage your physical environment. As developers spend more time with WebXR, we anticipate new augmented and mixed reality immersive experiences will arrive for HoloLens 2 customers to try!
+
+The 360 Viewer extension is built on WebXR and automatically installs alongside the new Microsoft Edge on HoloLens 2. This web extension gives you the ability to immerse yourself in 360-degree videos. YouTube offers the largest selection of 360 videos, so we encourage you to start there.
+
+#### How to use WebXR
+
+1. Navigate to a website with WebXR support.
+1. Select the **Enter VR** button on the website. The location and visual representation of this button may vary per website, but it may look similar to:
+
+    ![Enter VR button example](images/75px-enter-vr.png)
+
+1. The first time you try to launch a WebXR experience on a specific domain, the browser will ask for consent to enter an immersive view, select **Allow**.
+1. Use [HoloLens 2 gestures](hololens2-basic-usage.md#the-hand-tracking-frame) to manipulate the experience.
+1. If the experience doesn't have an **Exit** button, use the [Start gesture](hololens2-basic-usage.md#start-gesture) to return home.
+
+**Recommended WebXR samples**
+- 360 Viewer (see next section)
+- [XR Dinosaurs](https://www.xrdinosaurs.com/)
+- [Barista Express](https://constructarca.de/game/barista-express/)
+- [WebXR Paint](https://threejs.org/examples/webxr_vr_paint.html)
+
+#### How to use 360 Viewer
+
+1. Navigate to a 360-degree video on YouTube.
+1. In the video frame, select the mixed reality headset button:
+
+    ![Button to activate 360 Viewer](images/enter-360-viewer.jpg)
+
+1. The first time you try to launch 360 Viewer on a specific domain, the browser will ask for consent to enter an immersive view. Select **Allow**.
+1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.
+
+#### Top WebXR and 360 Viewer known issues
+- In WebXR experiences, holograms may shift or tilt when you tilt your head or move around your environment.
+- Depending on the complexity of the WebXR experience, the framerate may drop or stutter.
+- Articulated hand joints are not yet available in WebXR.
+- When exiting a WebXR or 360 Viewer experience, it may take 30 seconds or more for holograms in the mixed reality home to reappear.
+- 360 videos from websites other than YouTube may not work as expected.
+- If 360 videos don't enter immersive view (or the mixed reality headset button doesn't appear), try refreshing the page.
+- Captions are not yet visible in 360 Viewer on HoloLens 2.
+- Pausing a video in 360 Viewer stops the video from rendering (but selecting the play button correctly resumes playback).
+- The "next video" button in 360 Viewer does not currently work.
+- You can play 2D videos in an immersive "theater" mode, but the framerate will be less than 30 fps.
+
+#### Providing feedback on WebXR and 360 Viewer
+
+Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge.
 
 ### New Settings app
 
