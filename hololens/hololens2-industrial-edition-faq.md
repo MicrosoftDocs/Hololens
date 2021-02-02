@@ -18,7 +18,7 @@ appliesto:
 
 # HoloLens 2 - Industrial Edition FAQ
 
-![Industrial Edition used in a clean room](./images/industrial-edition.jpg)
+![Industrial Edition used in a clean room](./images/industrial-sku-with-remote-assist.png)
 
 ## HoloLens 2 Industrial Edition Benefits
 
@@ -87,7 +87,7 @@ The Industrial Edition has the same OS as all other HoloLens 2 editions. For mor
 
 ### What apps can run-on the HoloLens 2 Industrial Edition?
 
-HoloLens 2 Industrial Edition supports both 1st and 3rd party apps, with a selection of in-box enterprise ready apps. Line of business apps can be deployed to devices utilizing the several  [app deployment methods](https://docs.microsoft.com/hololens/app-deploy-overview).
+HoloLens 2 Industrial Edition supports both 1st and 3rd party apps, with a selection of in-box enterprise ready apps. Line-of-business apps can be deployed to devices utilizing the several  [app deployment methods](https://docs.microsoft.com/hololens/app-deploy-overview).
 
 ### Can I upgrade from HoloLens 2 to HoloLens 2 Industrial Edition?
 
