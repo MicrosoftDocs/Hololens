@@ -18,7 +18,7 @@ appliesto:
 
 # HoloLens 2 - Industrial Edition FAQ
 
-![Industrial Edition used in a clean room](./images/industrial-edition.jpg)
+![Industrial Edition used in a clean room](./images/industrial-sku-with-remote-assist.png)
 
 ## HoloLens 2 Industrial Edition Benefits
 
