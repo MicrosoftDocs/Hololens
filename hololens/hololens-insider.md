@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/21/2021
+ms.date: 2/2/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -148,13 +148,16 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 1. If the experience doesn't have an **Exit** button, use the [Start gesture](hololens2-basic-usage.md#start-gesture) to return home.
 
 **Recommended WebXR samples**
-*Coming soon*
+- 360 Viewer (see next section)
+- [XR Dinosaurs](https://www.xrdinosaurs.com/)
+- [Barista Express](https://constructarca.de/game/barista-express/)
+- [WebXR Paint](https://threejs.org/examples/webxr_vr_paint.html)
 
 #### How to use 360 Viewer
 
 1. Navigate to a 360-degree video on YouTube.
 1. In the video frame, select the mixed reality headset button:
-    ![Button to activate 360 Viewer](images/enter-360-viewer.png)
+    ![Button to activate 360 Viewer](images/enter-360-viewer.jpg)
 1. The first time you try to launch 360 Viewer on a specific domain, the browser will ask for consent to enter an immersive view. Select **Allow**.
 1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.
 
@@ -162,8 +165,11 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 - In WebXR experiences, holograms may shift or tilt when you tilt your head or move around your environment.
 - Depending on the complexity of the WebXR experience, the framerate may drop or stutter.
 - Articulated hand joints are not yet available in WebXR.
+- When exiting a WebXR or 360 Viewer experience, it may take 30 seconds or more for holograms in the mixed reality home to reappear.
 - 360 videos from websites other than YouTube may not work as expected.
 - If 360 videos don't enter immersive view (or the mixed reality headset button doesn't appear), try refreshing the page.
+- Captions are not yet visible in 360 Viewer on HoloLens 2.
+- Pausing a video in 360 Viewer stops the video from rendering (but selecting the play button correctly resumes playback).
 - The "next video" button in 360 Viewer does not currently work.
 - You can play 2D videos in an immersive "theater" mode, but the framerate will be less than 30 fps.
 
