@@ -101,7 +101,7 @@ The HoloLens 2 Industrial Edition has been enhanced and redesigned with new mate
 
 In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-year warranty & rapid replacement program.
 
-Review the [HoloLens 2 Industrial Edition FAQ](https://docs.microsoft.com/en-us/hololens/hololens2-industrial-edition-faq).
+Review the [HoloLens 2 Industrial Edition FAQ](hololens/hololens2-industrial-edition-faq.md).
 
 #### Cleaning and Handling HoloLens 2
 The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance). 
