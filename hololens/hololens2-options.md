@@ -113,6 +113,8 @@ The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropy
 #### Learn about Trimble XR10
 Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program and integrates the latest spatial computing technology into a certified solution for use with a hard hat for worker safety.
 
+![Trimble Edition HoloLens 2](./images/hololens-2-trimble-ed.png)
+
 See more about the [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
 
 ### **HoloLens 2 Development Edition**
@@ -130,6 +132,7 @@ The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits,
 |  [Pixyz plug-in for Unity](https://www.pixyz-software.com/plugin/) | A bridge for connecting the engineering &amp; CAD worlds with the development world.   |
 | [$500 in Azure credits for Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
 
+![HoloLens 2 development edition](./images/hololens-2-dev-ed.png)
 #### Redeem your credits
 
 ##### Unity
