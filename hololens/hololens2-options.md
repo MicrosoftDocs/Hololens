@@ -101,6 +101,8 @@ The HoloLens 2 Industrial Edition has been enhanced and redesigned with new mate
 
 In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-year warranty & rapid replacement program.
 
+[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
+
 Review the [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md).
 
 #### Cleaning and Handling HoloLens 2
