@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 cleaning FAQ
-description: Get up to date answers for all your commonly asked questions for cleaning and maintaining your HoloLens 2 device.
+description: Get up-to-date answers for all your commonly asked questions for cleaning and maintaining your HoloLens 2 device.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -20,16 +20,9 @@ appliesto:
 # HoloLens 2 cleaning FAQ
 
 > [!IMPORTANT]  
-> Microsoft cannot make a determination of the effectiveness of any given disinfectant product in fighting pathogens such as COVID-19. Please refer to your local public health authority's guidance about how to stay safe from potential infection.
+> Microsoft cannot make a determination of the effectiveness of any given disinfectant product in fighting pathogens such as COVID-19. Please refer to your local public health authority's guidance about how to stay safe from potential infection.  
 
-## HoloLens 2 use and care
-
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
-
-<!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
-
-
-## What are the general cleaning instructions for HoloLens 2 devices?   
+## What are the general cleaning instructions for HoloLens 2 devices?
 
 **To clean the device**
 

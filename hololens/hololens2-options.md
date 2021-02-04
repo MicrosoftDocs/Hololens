@@ -61,7 +61,7 @@ Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/holol
 
 ### **HoloLens 2 (device only)**
 #### Learn about HoloLens 2
-Using your HoloLens 2 devices in a commercial environment can be a powerful tool for your business or organization. Any HoloLens 2 can also be used be a developer to create mixed reality apps. 
+Using your HoloLens 2 devices in a commercial environment can be a powerful tool for your business or organization. Any HoloLens 2 can also be used by a developer to create mixed reality apps. 
 
 <br>
 
@@ -82,7 +82,7 @@ Using your HoloLens 2 devices in a commercial environment can be a powerful tool
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
-We've created a specific guide to help you deploy HoloLens devices at scale. The guide includes end-to-end set up for Azure Active Directory to validating a Remote Assist call. Check out our [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md) for more details.
+We've created a specific guide to help you deploy HoloLens devices at scale. The guide includes end-to-end setup for Azure Active Directory to validating a Remote Assist call. Check out our [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md) for more details.
 
 | Checkpoint  | Outcome                                |
 |-------------|----------------------------------------|
@@ -99,8 +99,6 @@ The HoloLens 2 Industrial Edition has been enhanced and redesigned with new mate
 - **Clean room environments:** The HoloLens 2 Industrial Edition supports with standards ranging from ISO 14644-1 Class 5 clean rooms where the quantity of foreign particles is limited and restricted, and objects in these spaces have limits on shedding, outgassing, and contaminant retention.
 - **Hazardous Locations:** The HoloLens 2 Industrial Edition supports environments where flammable gasses, vapors, or liquids exist but are generally not present in ignitable concentrations during normal operations and includes a UL Class I, Division 2-Groups A, B, C, and D HAZLOC certification.
 
-![Industrial Edition used in a clean room](./images/ie-small-pic.png)
-
 In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-year warranty & rapid replacement program.
 
 Review the [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md).
@@ -112,8 +110,6 @@ The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropy
 
 #### Learn about Trimble XR10
 Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program and integrates the latest spatial computing technology into a certified solution for use with a hard hat for worker safety.
-
-![Trimble Edition HoloLens 2](./images/hololens-2-trimble-ed.png)
 
 See more about the [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
 
@@ -130,9 +126,8 @@ The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits,
 |---|---|
 |  [Unity](https://unity.com/) | A real-time 3D development platform.   |
 |  [Pixyz plug-in for Unity](https://www.pixyz-software.com/plugin/) | A bridge for connecting the engineering &amp; CAD worlds with the development world.   |
-| [$500 in Azure credits for Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to get quickly get started building and testing mixed reality applications on Azure. |
+| [$500 in Azure credits for Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to quickly get started building and testing mixed reality applications on Azure. |
 
-![HoloLens 2 development edition](./images/hololens-2-dev-ed.png)
 #### Redeem your credits
 
 ##### Unity
