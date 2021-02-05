@@ -4,7 +4,7 @@ description: Learn how each HoloLens 2 device edition is the same or different a
 keywords: HoloLens 2 purchasing options, HoloLens options, Developer Edition
 author: evmill
 ms.author: v-evmill
-ms.reviewer: sekerawa
+ms.reviewer: evmill
 ms.date: 1/01/2021
 ms.prod: hololens
 ms.topic: article
