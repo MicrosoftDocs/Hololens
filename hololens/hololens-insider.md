@@ -198,7 +198,9 @@ With this release, we're introducing a new version of the Settings app. The new 
 **New features and settings**
 - Settings search: search for settings from the Settings homepage using keywords or the setting's name.
 - System > Sound:
-  - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input). Note: Bluetooth microphones are not supported by HoloLens 2.
+  - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input). 
+    > [!NOTE]
+    > Bluetooth microphones are not supported by HoloLens 2.
   - App volume: independently adjust the volume of each app.
 - System > Power & sleep: choose when the device should go to sleep after a period of inactivity.
 - System > Battery: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically.
