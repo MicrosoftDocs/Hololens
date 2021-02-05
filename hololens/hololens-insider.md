@@ -41,6 +41,7 @@ We are excited to start flighting new features to Windows Insiders again. We wil
 | [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
 | [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist.| 20279.1006 |
 | [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps | 20279.1006 |
+| [New SettingsURIs for Page Settings Visibility](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy | 20289.1000 |
 | [Improved Kiosk mode failure handing](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | 20279.1006 |
 | [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App | 20279.1006 |
 
@@ -286,6 +287,64 @@ When modifying a Kiosk to include the new apps, we recommend adding in the new A
 | New Settings App       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App |
 | Old Microsoft Edge app | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
 | New Microsoft Edge app | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE    |
+
+### New SettingsURIs for Page Settings Visibility
+
+In [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) we added the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. PageVisibilityList is a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.
+
+If you visit the page for [Page Settings Visibility](settings-uri-list.md), you can find instruction on how to use ths CSP and the list of URIs available to use today.
+
+In Windows Insider builds we are expanding upon the list of list of available Settings URIs which IT Admins can manage. Some of these URIs are for newly available areas within the new Settings app.If you are using Settings/PageVisibilityList policy, review the following list and adjust your allowed or blocked pages as needed.
+
+> [!NOTE]
+> **Deprecated: ms-settings:network-proxy**
+>
+> One setting page is deprecated in these newer builds. The old Network & Internet > Proxy page is no longer a global proxy, but is a per-connection proxy. The new proxy settings are under Network & Internet > WiFi [or Ethernet] > Properties > Proxy.
+
+| Settings page                                        | URI                                              |
+|------------------------------------------------------|--------------------------------------------------|
+| Apps > Apps & features                               | ms-settings:appsfeatures                         |
+| Apps > Apps & features > Advanced options          | ms-settings:appsfeatures-app                     |
+| Apps > Offline maps                                  | ms-settings:maps                                 |
+| Apps > Offline maps > Download maps                  | ms-settings:maps-downloadmaps                    |
+| Devices > Mouse                                      | ms-settings:mouse                                |
+| Devices > USB                                        | ms-settings:usb                                  |
+| Network & Internet > Airplane mode                   | ms-settings:network-airplanemode                 |
+| Privacy > General                                    | ms-settings:privacy-general                      |
+| Privacy > Ink & typing personalization             | ms-settings:privacy-speechtyping                 |
+| Privacy > Motion                                     | ms-settings:privacy-motion                       |
+| Privacy > Screenshot borders                         | ms-settings:privacy-graphicsCaptureWithoutBorder |
+| Privacy > Screenshots and apps                       | ms-settings:privacy-graphicsCaptureProgrammatic  |
+| System > Battery                                     | ms-settings:batterysaver                         |
+| System > Battery                                     | ms-settings:batterysaver-settings                |
+| System > Sound                                       | ms-settings:sound                                |
+| System > Sound > App volume and device preferences | ms-settings:apps-volume                          |
+| System > Sound > Manage sound   devices              | ms-settings:sound-devices                        |
+| System > Storage > Configure Storage Sense         | ms-settings:storagepolicies                      |
+| Time & Language > Date & time                        | ms-settings:dateandtime                          |
+| Time & Language > Keyboard                           | ms-settings:keyboard                             |
+| Time & Language > Language                           | ms-settings:language                             |
+| Time & Language > Language                           | ms-settings:regionlanguage-languageoptions       |
+| Update & Security > Reset & recovery               | ms-settings:reset                                |
+
+#### Updated URIs
+
+Previously the following two URIs would not take a user directly to the pages indicated but only blocked the main updates page. The following items have been updated to direct to their pages:
+
+- ms-settings:windowsupdate-options
+- ms-settings:windowsupdate-restartoptions
+
+#### Settings URIs Coming soon
+
+These pages are still in-progress and are expected to available soon:
+
+- ms-settings:datausage
+- ms-settings:network-ethernet
+- ms-settings:mixedrealitycamera
+- ms-settings:mixedrealityholograms
+- ms-settings:mixedrealitycalibration
+- ms-settings:quiethours
+- ms-settings:quietmomentsscheduled
 
 ### Kiosk mode behavior changes for handling of failures
 
