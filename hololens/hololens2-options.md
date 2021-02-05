@@ -101,6 +101,8 @@ The HoloLens 2 Industrial Edition has been enhanced and redesigned with new mate
 
 In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-year warranty & rapid replacement program.
 
+![Industrial Edition used in a clean room](./images/ie-small-pic.png)
+
 Review the [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md).
 
 #### Cleaning and Handling HoloLens 2
@@ -110,6 +112,8 @@ The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropy
 
 #### Learn about Trimble XR10
 Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program and integrates the latest spatial computing technology into a certified solution for use with a hard hat for worker safety.
+
+![Trimble SKU](./images/trimble-ed.png)
 
 See more about the [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
 
@@ -127,6 +131,8 @@ The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits,
 |  [Unity](https://unity.com/) | A real-time 3D development platform.   |
 |  [Pixyz plug-in for Unity](https://www.pixyz-software.com/plugin/) | A bridge for connecting the engineering &amp; CAD worlds with the development world.   |
 | [$500 in Azure credits for Azure services](https://azure.microsoft.com/resources/) | The Azure credits included with the HoloLens 2 Development Edition are to quickly get started building and testing mixed reality applications on Azure. |
+
+![HoloLens 2 Development Edition](./images/hololens-2-dev-ed.png)
 
 #### Redeem your credits
 
