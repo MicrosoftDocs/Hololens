@@ -26,6 +26,11 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Get excited and ready to mix these updates into your reality.
 
+> [!IMPORTANT]
+> If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This will ensure you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app.
+
+<br>
+
 | Feature Name                                              | Short description                                                                      | Available in build |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
 | [New Microsoft Edge](#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2                         | 20279.1006 |
