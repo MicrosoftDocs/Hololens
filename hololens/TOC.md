@@ -124,8 +124,6 @@
 ## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 
 # HoloLens 2 Privacy Statement
-## Privacy Overview
-
 
 # Give us feedback
 ## [Give us feedback via Feedback Hub](hololens-feedback.md)
