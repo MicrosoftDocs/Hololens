@@ -20,7 +20,7 @@ appliesto:
 
 One of the core elements of the GDPR is ‘data protection by design’. This concept especially applies to mobile devices, like the HoloLens 2, because of their portability, unlimited internet connections and open communication channels. Resultingly, the HoloLens 2’s [security](https://docs.microsoft.com/hololens/security-architecture) has been redesigned to provide advanced, innovative security and privacy protection, end-to-end, incorporating both Microsoft’s approach to [privacy and GDPR regulations](https://privacy.microsoft.com/).
 
-[!NOTE]
+ [!NOTE]
 This document does not apply to HoloLens 1.
 
 ## Privacy Overview
@@ -54,7 +54,7 @@ When deploying HoloLens 2 to external clients, [Dynamics 365 Remote Assist](http
 
 During the OOBE, the sharing of diagnostic data with Microsoft can be manually configured by the user. There are two choices: Full diagnostic data and Basic diagnostic data. (Some diagnostic data may contain PII) If Basic diagnostic data is originally chosen and then needs to be changed at a later time for troubleshooting purposes, the setting can be changed in **Settings | Privacy | Diagnostics & Feedback**. 
 
-[!Important]
+ [!Important]
 Device diagnostic logs contain personally identifiable information (PII), such as about what processes or applications the user starts during typical operations. When multiple users share a HoloLens device (for example, users sign in to the same device by using different Microsoft Azure Active Directory (Azure AD) accounts) the diagnostic logs may contain PII information that applies to multiple users.
 
 There are [several collection methods and data retention policies](https://docs.microsoft.com/hololens/hololens-diagnostic-logs) for gathering diagnostic data from the HoloLens 2.  For more information about how Microsoft collects and uses diagnostic data, see [Microsoft Privacy Statement - Diagnostics](https://privacy.microsoft.com/privacystatement) - expand **Windows** in the left navigation menu and select **Diagnostics**. Go to the **Diagnostics** section.
