@@ -21,7 +21,7 @@ appliesto:
 One of the core elements of the GDPR is ‘data protection by design’. This concept especially applies to mobile devices, like the HoloLens 2, because of their portability, unlimited internet connections and open communication channels. Resultingly, the HoloLens 2’s [security](https://docs.microsoft.com/hololens/security-architecture) has been redesigned to provide advanced, innovative security and privacy protection, end-to-end, incorporating both Microsoft’s approach to [privacy and GDPR regulations](https://privacy.microsoft.com/).
 
  >[!NOTE]
-> This document does not apply to HoloLens 1.
+> This document does not apply to HoloLens (1st gen).
 
 ## Privacy Overview
 
