@@ -25,7 +25,7 @@ One of the core elements of the GDPR is ‘data protection by design’. This co
 
 ## Privacy Overview
 
-HoloLens 2 is a self-contained Windows computer, running Windows Holographic, that runs apps and solutions in an immersive mixed reality environment. It can be used as a secure offline device or deployed as a [managed device](https://docs.microsoft.com/mem/intune/fundamentals/windows-holographic-for-business) within your organization. See the following links to understand how the HoloLens 2 and Microsoft uses and protects your data;
+HoloLens 2 is a self-contained Windows computer, running Windows Holographic, that runs apps and solutions in an immersive mixed reality environment. It can be used as a secure offline device or deployed as a [managed device](https://docs.microsoft.com/mem/intune/fundamentals/windows-holographic-for-business) within your organization. See the following links to understand how the HoloLens 2 and Microsoft uses and protects your data:
 1. [Microsoft Privacy Statement - HoloLens](https://privacy.microsoft.com/privacystatement) – expand the **Enterprise and developer** section in the left navigation menu and select **Enterprise and developer software and appliances**. Go to the **HoloLens** section.
 2.	[Windows 10 and your online services](https://privacy.microsoft.com/windows10privacy)
 3.	[Windows 10 & Privacy Compliance Guide](https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance)
@@ -45,14 +45,14 @@ Updates are done automatically (by default) so your HoloLens 2 is always up to d
 1. [Limiting password use](https://docs.microsoft.com/hololens/security-limiting-password-use)
 
 ## Physical Security
-HoloLens 2 has internal memory (2-GB RAM and 64 GB Flash Memory) that is protected by [BitLocker encryption](https://docs.microsoft.com/hololens/security-encryption-data-protection). Your device, and its local data, can be flashed offline using [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8#activetab=pivot:overviewtab) or remotely wiped via MDM if it has been deployed as a managed device.
+HoloLens 2 has flash memory that is protected by [BitLocker encryption](https://docs.microsoft.com/hololens/security-encryption-data-protection). Your device, and its local data, can be flashed offline using [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8#activetab=pivot:overviewtab) or remotely wiped via MDM if it has been deployed as a managed device.
 
 ## Data Protection
 Windows updates are run automatically (by default) and [Azure integration](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview) protects data traveling between itself and the cloud. 
 
 When deploying HoloLens 2 to external clients, [Dynamics 365 Remote Assist](https://docs.microsoft.com/hololens/hololens2-deployment-guide) ensures your sensitive company data and resources are both separate and safe. 
 
-During the OOBE, the sharing of diagnostic data with Microsoft can be manually configured by the user. There are two choices: Full diagnostic data and Basic diagnostic data. If your original diagnostic setting needs to be changed at a later time for troubleshooting purposes, it can be changed in **Settings | Privacy | Diagnostics & Feedback**. 
+The sharing of diagnostic data with Microsoft can be manually configured by MDM or by the user during OOBE. There are two choices: Optional diagnostic data and Required diagnostic data. If your original diagnostic setting needs to be changed at a later time for troubleshooting purposes, it can be changed by the user in **Settings | Privacy | Diagnostics & Feedback** or the IT Admin (MDM) if is a managed device. See more about [Diagnostics, feedback, and privacy in Windows 10](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-10-28808a2b-a31b-dd73-dcd3-4559a5199319).
 
 > [!Important]
 > Device diagnostic logs contain personally identifiable information (PII), such as about what processes or applications the user starts during typical operations. When multiple users share a HoloLens device (for example, users sign in to the same device by using different Microsoft Azure Active Directory (Azure AD) accounts) the diagnostic logs may contain PII information that applies to multiple users.
