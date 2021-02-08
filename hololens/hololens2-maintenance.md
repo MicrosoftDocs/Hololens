@@ -32,9 +32,6 @@ appliesto:
 
 1. Remove any dust by using a dry, lint-free microfiber cloth to gently wipe the surface of the device.
 1. Lightly moisten the cloth by using medical "70%" isopropyl alcohol, and then use the moistened cloth to gently wipe the surface of the device.
-
-   ![Image that shows how to clean the visor](images/hololens-cleaning-visor.png)
-
 1. Let the device dry completely.
 
 **To clean the brow pad**
