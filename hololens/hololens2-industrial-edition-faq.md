@@ -81,6 +81,9 @@ Firmly from the brow pad. By holding the HoloLens 2 from the brow pad you put th
 
 ## General questions
 
+### Is the internal hardware in the HoloLens 2 Industrial Edition different than the standard HoloLens 2?
+No, only the surface materials (i.e., the brow pad and strap) are different.
+
 ### What operating system does the HoloLens 2 Industrial Edition have?
 
 The Industrial Edition has the same OS as all other HoloLens 2 editions. For more information on HoloLens OS updates [read our release notes](hololens-release-notes.md).
