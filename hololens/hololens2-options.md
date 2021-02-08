@@ -67,7 +67,7 @@ Using your HoloLens 2 devices in a commercial environment can be a powerful tool
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Here's a short video on [HoloLen 2 Use and Care](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care).
+Here's a short video on [HoloLens 2 Use and Care](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care).
 
 #### Here's what to do next with the HoloLens 2
 1. [Get your device ready to use](https://docs.microsoft.com/hololens/hololens2-setup) and then [get set up](https://docs.microsoft.com/hololens/hololens2-start).
