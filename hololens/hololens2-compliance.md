@@ -39,7 +39,7 @@ Furthermore, Windows Defender Firewall delivers critical functionality to secure
 Learn more about the HoloLens 2 [security and architecture](https://docs.microsoft.com/hololens/security-architecture).
 
 ## OS Security
-Updates are done automatically (by default) so your HoloLens 2 is always up to date with the latest release of Windows Holographic and any installed apps. See the following to understand more about how our OS is securely designed;
+Updates are done automatically (by default) so your HoloLens 2 is always up to date with the latest release of Windows Holographic and any installed apps. See the following to understand more about how our OS is securely designed:
 1. [State separation and isolation](https://docs.microsoft.com/hololens/security-state-separation-isolation)
 1. [Admin-less operating system](https://docs.microsoft.com/hololens/security-adminless-os)
 1. [Limiting password use](https://docs.microsoft.com/hololens/security-limiting-password-use)
