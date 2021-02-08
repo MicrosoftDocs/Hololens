@@ -48,7 +48,7 @@ Updates are done automatically (by default) so your HoloLens 2 is always up to d
 HoloLens 2 has flash memory that is protected by [BitLocker encryption](https://docs.microsoft.com/hololens/security-encryption-data-protection). Your device, and its local data, can be flashed offline using [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8#activetab=pivot:overviewtab) or remotely wiped via MDM if it has been deployed as a managed device.
 
 ## Data Protection
-Windows updates are run automatically (by default) and [Azure integration](https://docs.microsoft.com/en-us/hololens/security-encryption-data-protection#Azure-integration) protects data traveling between itself and the cloud. 
+Windows updates are run automatically (by default) and [Azure integration](https://docs.microsoft.com/hololens/security-encryption-data-protection#Azure-integration) protects data traveling between itself and the cloud. 
 
 When deploying HoloLens 2 to external clients, [Dynamics 365 Remote Assist](https://docs.microsoft.com/hololens/hololens2-deployment-guide) ensures your sensitive company data and resources are both separate and safe. 
 
