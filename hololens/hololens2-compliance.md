@@ -39,7 +39,7 @@ Furthermore, Windows Defender Firewall delivers critical functionality to secure
 Learn more about the HoloLens 2 [security and architecture](https://docs.microsoft.com/hololens/security-architecture).
 
 ## OS Security
-Updates are done automatically (by default) so your HoloLens 2 is always up to date with the latest release of Windows Holographic and any installed apps. Other new security features are;
+Updates are done automatically (by default) so your HoloLens 2 is always up to date with the latest release of Windows Holographic and any installed apps. See the following to understand more about how our OS is securely designed;
 1. [State separation and isolation](https://docs.microsoft.com/hololens/security-state-separation-isolation)
 1. [Admin-less operating system](https://docs.microsoft.com/hololens/security-adminless-os)
 1. [Limiting password use](https://docs.microsoft.com/hololens/security-limiting-password-use)
@@ -48,7 +48,7 @@ Updates are done automatically (by default) so your HoloLens 2 is always up to d
 HoloLens 2 has internal memory (2-GB RAM and 64 GB Flash Memory) that is protected by [BitLocker encryption](https://docs.microsoft.com/hololens/security-encryption-data-protection). Your device, and its local data, can be flashed offline using [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8#activetab=pivot:overviewtab) or remotely wiped via MDM if it has been deployed as a managed device.
 
 ## Data Protection
-[TPM and UEFI](https://docs.microsoft.com/hololens/security-hardware-backed-integrity) are enforced so the device only boots to Windows trusted platforms. Windows updates are run automatically (by default) and [Azure integration](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview) protects data traveling between itself and the cloud. 
+Windows updates are run automatically (by default) and [Azure integration](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview) protects data traveling between itself and the cloud. 
 
 When deploying HoloLens 2 to external clients, [Dynamics 365 Remote Assist](https://docs.microsoft.com/hololens/hololens2-deployment-guide) ensures your sensitive company data and resources are both separate and safe. 
 
