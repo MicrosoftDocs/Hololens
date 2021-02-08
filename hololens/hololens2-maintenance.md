@@ -22,7 +22,7 @@ appliesto:
 > [!IMPORTANT]  
 > Microsoft cannot make a determination of the effectiveness of any given disinfectant product in fighting pathogens such as COVID-19. Please refer to your local public health authority's guidance about how to stay safe from potential infection.  
 
-## What are the general cleaning instructions for HoloLens 2 devices?
+## HoloLens 2 Use and Care
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
 
