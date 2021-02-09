@@ -22,7 +22,7 @@ appliesto:
 > [!IMPORTANT]  
 > Microsoft cannot make a determination of the effectiveness of any given disinfectant product in fighting pathogens such as COVID-19. Please refer to your local public health authority's guidance about how to stay safe from potential infection.  
 
-## What are the general cleaning instructions for HoloLens 2 devices?
+## HoloLens 2 Use and Care
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
 
@@ -52,7 +52,7 @@ No. Lens cleaners can be abrasive to the coatings on the visor. To clean the vis
 
 ## Can I use disinfecting wipes to clean the device?
 
-Yes, if the wipes do not contain bleach. You can use non-bleach disinfecting wipes to [gently wipe the HoloLens surfaces](#what-are-the-general-cleaning-instructions-for-hololens-2-devices).  
+Yes, if the wipes do not contain bleach. You can use non-bleach disinfecting wipes to [gently wipe the HoloLens surfaces](#hololens-2-use-and-care).  
 
 > [!CAUTION]  
 > Avoid using disinfecting wipes that contains bleach to clean the HoloLens surfaces. It is acceptable to use bleach wipes in critical situations, when nothing else is available. However, bleach may damage the HoloLens visor or other surfaces.

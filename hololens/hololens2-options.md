@@ -68,7 +68,8 @@ Using your HoloLens 2 devices in a commercial environment can be a powerful tool
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Here's what to do next with the HoloLens 2
-1. [Get your device ready to use](https://docs.microsoft.com/hololens/hololens2-setup) and then [get set up](https://docs.microsoft.com/hololens/hololens2-start).
+1. Watch this video on [HoloLens 2 Use and Care](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care).
+1. [Get your device ready to use](https://docs.microsoft.com/hololens/hololens2-setup) and then [get set up](https://docs.microsoft.com/hololens/hololens2-start)
 1. [Learn how to get around HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
 1. Once you're comfortable, [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
 1. Look through all the available [apps for HoloLens 2 on the the Microsoft app store](https://docs.microsoft.com/hololens/holographic-store-apps).
@@ -106,7 +107,7 @@ In addition to the upgraded device, HoloLens 2 Industrial Edition features a 2-y
 Review the [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md).
 
 #### Cleaning and Handling HoloLens 2
-The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance). 
+The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance).
 
 ### **Trimble XR10 with HoloLens 2**
 
