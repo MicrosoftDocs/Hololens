@@ -43,9 +43,9 @@ We are excited to start flighting new features to Windows Insiders again. We wil
 | [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps | 20279.1006 |
 | [Improved Kiosk mode failure handing](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | 20279.1006 |
 | [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App | 20279.1006 |
-| Share things with nearby devices | Share files or URLs from a HoloLens to a PC | 20279.1006 |
-| New OS Update troubleshooter | New troubleshooter in Settings for OS updates | 20279.1006 |
-| Improvements and fixes in the update | Additional fixes in the update. | 20279.1006 |
+| [Share things with nearby devices](#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC | 20279.1006 |
+| [New OS Update troubleshooter](#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates | 20279.1006 |
+| [Improvements and fixes in the update](#improvements-and-fixes-in-the-update) | Additional fixes in the update. | 20279.1006 |
 
 ### Introducing the new Microsoft Edge
 
