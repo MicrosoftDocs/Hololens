@@ -43,6 +43,9 @@ We are excited to start flighting new features to Windows Insiders again. We wil
 | [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps | 20279.1006 |
 | [Improved Kiosk mode failure handing](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | 20279.1006 |
 | [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App | 20279.1006 |
+| [Share things with nearby devices](#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC | 20279.1006 |
+| [New OS Update troubleshooter](#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates | 20279.1006 |
+| [Improvements and fixes in the update](#improvements-and-fixes-in-the-update) | Additional fixes in the update. | 20279.1006 |
 
 ### Introducing the new Microsoft Edge
 
@@ -299,6 +302,20 @@ Now in Settings App, a user can configure the behavior of [Fallback Diagnostics]
 
 > [!NOTE]
 > If there is MDM policy configured for the device, user will not be able to override that behavior.  
+
+### Share things with nearby devices
+
+Share things with near by Windows 10 devices, including both PCs and other HoloLens 2 devices running HoloLens Insider builds 20279.1006+. You can try it out in **Settings** -> **System** -> **Shared Experiences** to share files or URLs from a HoloLens to a PC. For more details read more about how to [Share things with nearby devices in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
+
+This feature can be managed via [Connectivity/AllowConnectedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices).
+
+### New OS Update troubleshooter
+
+In addition to the previous troubleshooters within the Settings app, a new troubleshooter has been added with the addition of the new Settings app for OS Updates. Navigate to **Settings** -> **Update &amp; Security** -> **Troubleshoot** -> **Windows Update** and select **Start**. This allows you to collect traces while reproducing your issue with OS Updates to assist better in troubleshooting with your IT or support.
+
+### Improvements and fixes in the update:
+
+- [Offline diagnostics](hololens-diagnostic-logs.md#offline-diagnostics) will also include additional device information for serial number and OS version.
 
 
 
