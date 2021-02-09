@@ -67,7 +67,6 @@
 ### HoloLens 1st Gen Security 
 #### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
 #### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
-### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
 ## [License requirements](hololens-licenses-requirements.md)
 ## Environment
 ### [HoloLens environment considerations](hololens-environment-considerations.md)

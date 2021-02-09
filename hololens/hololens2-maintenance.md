@@ -52,7 +52,7 @@ No. Lens cleaners can be abrasive to the coatings on the visor. To clean the vis
 
 ## Can I use disinfecting wipes to clean the device?
 
-Yes, if the wipes do not contain bleach. You can use non-bleach disinfecting wipes to [gently wipe the HoloLens surfaces](#what-are-the-general-cleaning-instructions-for-hololens-2-devices).  
+Yes, if the wipes do not contain bleach. You can use non-bleach disinfecting wipes to [gently wipe the HoloLens surfaces](#hololens-2-use-and-care).  
 
 > [!CAUTION]  
 > Avoid using disinfecting wipes that contains bleach to clean the HoloLens surfaces. It is acceptable to use bleach wipes in critical situations, when nothing else is available. However, bleach may damage the HoloLens visor or other surfaces.
