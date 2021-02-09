@@ -27,6 +27,20 @@ We are excited to start flighting new features to Windows Insiders again. We wil
 >[!NOTE]
 > To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
+## Windows Holographic, version 20H2 - February 2021 Update
+- Build 19041.1136
+
+Improvements and fixes in the update:
+
+- Fixes an issue around initial device setup and store app updates.
+- Addresses an issue around upgrades and flights for later HoloLens releases.
+- Removed unused preinstalled certificates from the eSIM root store from HoloLens devices.
+
+## Windows Holographic, version 1903 - February 2021 Update
+- Build 18362.1098
+
+This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest builds for Windows Holographic, version 2004.
+
 ## Windows Holographic, version 20H2 - January 2021 Update
 - Build 19041.1134
 
