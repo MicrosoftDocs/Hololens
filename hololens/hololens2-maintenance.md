@@ -32,9 +32,10 @@ appliesto:
 
 1. Remove any dust by using a dry, lint-free microfiber cloth to gently wipe the surface of the device.
 
-> ![Clean while holding from the brow pad](images/hl2-cleaning.png)
+   > ![Clean while holding from the brow pad](images/hl2-cleaning.png)
 
 2. Lightly moisten the cloth by using medical "70%" isopropyl alcohol, and then use the moistened cloth to gently wipe the surface of the device.
+
 3. Let the device dry completely.
 
 **To clean the brow pad**
