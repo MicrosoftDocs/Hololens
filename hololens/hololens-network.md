@@ -140,6 +140,57 @@ Additional resources:
 ### Additional resources:
 - [Export Wi-Fi settings from a Windows device](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
 
+## Configure Network Proxy
+RFC defines how clients communicate with proxy servers. It’s up to each system (or application) to define what type of proxies it supports and how the proxy is configured.  
+
+This section covers network proxy for Windows services and Universal Windows Platform (UWP) Apps using Windows HTTP stack. Applications using non-Windows HTTP stack may have its own proxy configuration and handling. 
+
+### Proxy Configurations 
+
+- Static Proxy: in the form of Server:Port. 
+
+- Proxy Auto-Config (PAC) script: a PAC file contains a JavaScript function FindProxyForURL(url, host).  
+
+- Web Proxy Auto-Discovery Protocol (WPAD): provide URL of proxy configuration file through DHCP or DNS. 
+
+### Proxy Scope
+- Per-profile proxy: for all users, applies to specific network profile (Wi-Fi SSID or VPN connection)
+
+### Proxy Provisioning Methods 
+There are three ways to provision proxies:
+
+ 
+
+- **UI:** 
+
+    - Per-user proxy 
+
+    - VPN proxy 
+
+**Need detailed steps on how to reach pages in Settings app** 
+
+ 
+
+**MDM** 
+
+[What is a CSP?](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers)
+
+- [NetworkProxy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/networkproxy-csp): machine proxy and per-user proxy 
+
+- [WiFi CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/wifi-csp): per-profile Wi-Fi proxy 
+
+- [VPNv2 CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/vpnv2-csp?redirectedfrom=MSDN): per-profile VPN proxy
+
+[CSPs supported in HoloLens devices](https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+
+**Need detailed steps from Rui about Intune**
+
+**PPKG**
+
+[What is a provisioning package?](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-packages)
+
+Fe release, UI will only support per connection proxy.
+
 ## VPN
 A VPN connection can help provide a more secure connection and access to your company's network and the Internet. HoloLens 2 supports built-in VPN client and Universal Windows Platform (UWP) VPN plug-in. 
 
