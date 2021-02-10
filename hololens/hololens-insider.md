@@ -292,14 +292,16 @@ When modifying a Kiosk to include the new apps, we recommend adding in the new A
 
 In [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) we added the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. PageVisibilityList is a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.
 
-If you visit the page for [Page Settings Visibility](settings-uri-list.md), you can find instruction on how to use ths CSP and the list of URIs available to use today.
+If you visit [Page Settings Visibility](settings-uri-list.md), you can find instructions to use this CSP and the list of URIs available in previous releases.
 
 In Windows Insider builds we are expanding upon the list of list of available Settings URIs, which IT Admins can manage. Some of these URIs are for newly available areas within the new Settings app. If you are using Settings/PageVisibilityList policy, review the following list and adjust your allowed or blocked pages as needed.
 
 > [!NOTE]
 > **Deprecated: ms-settings:network-proxy**
 >
-> One setting page is deprecated in these newer builds. The old Network & Internet > Proxy page is no longer a global proxy, but is a per-connection proxy. The new proxy settings are under Network & Internet > WiFi [or Ethernet] > Properties > Proxy.
+> One settings page is deprecated in these newer builds. The old **Network & Internet** > **Proxy** page is no longer available as a global setting. The new per-connection proxy settings can be found under **Network & Internet** > **Wi-Fi** > **Properties** or **Network & Internet** > **Ethernet** > **Properties**.
+
+<br>
 
 | Settings page                                        | URI                                              |
 |------------------------------------------------------|--------------------------------------------------|
@@ -333,18 +335,6 @@ Previously the following two URIs would not take a user directly to the pages in
 
 - `ms-settings:windowsupdate-options`
 - `ms-settings:windowsupdate-restartoptions`
-
-#### Settings URIs Coming soon
-
-These pages are still in-progress and are expected to available soon:
-
-- `ms-settings:datausage`
-- `ms-settings:network-ethernet`
-- `ms-settings:mixedrealitycamera`
-- `ms-settings:mixedrealityholograms`
-- `ms-settings:mixedrealitycalibration`
-- `ms-settings:quiethours`
-- `ms-settings:quietmomentsscheduled`
 
 ### Kiosk mode behavior changes for handling of failures
 
