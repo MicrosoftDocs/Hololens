@@ -24,8 +24,10 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 
 - **Visor**. Contains the HoloLens sensors and displays. You can rotate the visor up while wearing the HoloLens.
 - **Headband**. To put the HoloLens on, use the adjustment wheel to expand the headband. With the HoloLens in place, tighten the adjustment wheel by turning to the right, until the headband is comfortable.
-- **Brightness buttons**. When wearing the HoloLens, the brightness buttons are on the left side of the device.
-- **Volume buttons**. When wearing the HoloLens, the volume buttons are on the right side of the device.
+- **Brightness buttons**. When wearing the HoloLens, the brightness buttons are on the left side of the visor.
+- **Volume buttons**. When wearing the HoloLens, the volume buttons are on the right side of the visor.
+- **Power button**. When wearing the HoloLens, the power button is located on the right side of the rear outer cover.
+- **USB-C port**. When wearing the HoloLens, the USB-C port is located on the right side of the rear outer cover below the Power button.
 
 ## In the box
 
@@ -125,22 +127,23 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ## Pre-installed software
 
-- Windows Holographic Operating System
-- 3D Viewer
-- Calendar
-- Cortana
-- Dynamics 365 Guides
-- Dynamics 365 Remote Assist
-- Feedback Hub
-- File Explorer
-- Mail
-- Microsoft Edge
-- Microsoft Store
-- Movies & TV
-- OneDrive
-- Photos
-- Settings
-- Tips
+|   |   |
+| - | - |
+| Windows Holographic Operating System | With Windows Holographic, Windows 10 users will be able to use some of their apps and games in a mixed reality environment via the HoloLens 2.
+| 3D Viewer | [3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) lets you easily view 3D models and animations in real-time.|
+| Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), your personal productivity assistant, helps you stay on top of what matters and save time finding what you need.  |
+| Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) will help employees learn new skills faster on HoloLens devices. |
+| Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) empowers technicians to collaborate and solve problems with remote collaborators using Microsoft Teams or Dynamics 365 Remote Assist.  |
+| Feedback Hub | [Feedback Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) lets you provide feedback about Windows and apps by sharing your suggestions or problems.  |
+| File Explorer | File Explorer provides a graphical user interface for accessing the file systems. |
+| Mail and Calendar | The [Mail and Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) apps help you stay up to date on your email, manage your schedule and stay in touch with your contacts. |  
+| Microsoft Edge | Microsoft Edge gives you world-class performance with more privacy, more productivity, and more value while you browse. |
+| Microsoft Store | The [Microsoft Store](https://www.microsoft.com) is your go-to source for apps and games that work with HoloLens.|
+| Movies & TV | [Movies & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) brings you the latest entertainment in one simple, fast, and elegant app. |
+| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) lets you access and edit your files from all your devices anywhere.  |
+| Photos| [Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) lets you view and edit your photos and videos, make movies and create albums.  |
+| Settings | The Settings app is the place where you customize how Windows Holographic works in detail.  |
+| Tips | [Tips](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) lets you master surprising and lesser-known things you can do in Windows Holographic. |
 
 ## Device certifications
 
@@ -167,9 +170,9 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 |     Exterior Shipper Depth     |     172.01mm          |     6.772 inches        |
 |     Exterior Shipper Weight    |     3.284kg           |     7.240 lbs           |
 
-Notes:
-- Unit: The black, retail-style box HoloLens 2 is sold in.
-- Exterior Shipper: The protective shipping packaging around Unit.
+> [!NOTE]
+> - Unit: The black, retail-style box HoloLens 2 is sold in.
+> - Exterior Shipper: The protective shipping packaging around Unit.
 
 ## Finding the Serial number
 
@@ -179,16 +182,16 @@ The serial number for HoloLens 2 devices is printed underneath the visor.
 1. You can find the serial number located close to the hinge. 
 
 
-<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 The serial number can also be found via a connected PC:
 
 1. Plug in the device
 1. Navigate to **This PC** in file explorer
 1. Right Click and select **Properties** of the HoloLens device
-1. This will display the series number of the device. Like this screenshot below.
+1. This will display the series number of the device, as shown in the screenshot below.
 
-<img src="images/ResetRecovery2.png" width="400" height="600" />
+<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## Next step
 
