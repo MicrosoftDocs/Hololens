@@ -173,21 +173,21 @@ There are three ways to provision proxies:
 
 **MDM** 
 
-[What is a CSP?](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers)
+[What is a CSP?](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers)
 
-- [NetworkProxy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/networkproxy-csp): machine proxy and per-user proxy 
+- [NetworkProxy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp): machine proxy and per-user proxy 
 
-- [WiFi CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/wifi-csp): per-profile Wi-Fi proxy 
+- [WiFi CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp): per-profile Wi-Fi proxy 
 
-- [VPNv2 CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/vpnv2-csp?redirectedfrom=MSDN): per-profile VPN proxy
+- [VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp?redirectedfrom=MSDN): per-profile VPN proxy
 
-[CSPs supported in HoloLens devices](https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+[CSPs supported in HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
 **Need detailed steps from Rui about Intune**
 
 **PPKG**
 
-[What is a provisioning package?](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-packages)
+[What is a provisioning package?](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)
 
 Fe release, UI will only support per connection proxy.
 
