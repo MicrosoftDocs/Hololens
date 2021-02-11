@@ -26,7 +26,7 @@ The HoloLens 2 Development Edition includes a HoloLens 2, $500 in Azure credits,
 
 ### What is the difference between HoloLens 2 and HoloLens 2 Development Edition?
 
-You may only use the HoloLens 2 Development Edition for internal building and testing of enterprise applications to be used in connection with the HoloLens 2 (commercial edition) in a production setting. As part of purchasing the Development Edition, Microsoft may, in its sole discretion, provide you with certain entitlements identified during the checkout process, such as the right to redeem certain discount credits or trial access to certain Microsoft or third-party services or tools for a limited period. [Learn more](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
+You can only use the HoloLens 2 Development Edition to build and test internal enterprise applications to be used with the HoloLens 2 (commercial edition) in a production setting. As part of purchasing the Development Edition, Microsoft may, in its sole discretion, provide you with certain entitlements identified during the checkout process. These entitlements include the right to redeem certain discount credits or trial access to certain Microsoft or third-party services or tools for a limited period. [Learn more](hololens2-options.md#learn-about-the-development-edition)
 
 ### Can any edition of HoloLens 2 be used to develop?
 

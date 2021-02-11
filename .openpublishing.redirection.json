@@ -49,6 +49,11 @@
                             "source_path":  "hololens/app-deploy-web-installer.md",
                             "redirect_url": "https://docs.microsoft.com/hololens/app-deploy-app-installer",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "hololens/includes/options-overview.md",
+                            "redirect_url": "https://docs.microsoft.com/hololens/hololens2-options",
+                            "redirect_document_id":  false
                         }
                     ]
 }
