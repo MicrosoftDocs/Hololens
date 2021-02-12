@@ -143,7 +143,7 @@ Additional resources:
 ## Configure Network Proxy
 RFC defines how clients communicate with proxy servers. It’s up to each system (or application) to define what type of proxies it supports and how the proxy is configured.  
 
-This section covers network proxy for Windows services and Universal Windows Platform (UWP) Apps using Windows HTTP stack. Applications using non-Windows HTTP stack may have its own proxy configuration and handling. 
+This section covers network proxy for Windows services and Universal Windows Platform (UWP) Apps using Windows HTTP stack. Applications using non-Windows HTTP stack may have their own proxy configuration and handling. 
 
 ### Proxy Configurations 
 
@@ -161,19 +161,22 @@ There are three ways to provision proxies:
 
  
 
-- **UI:** 
+1.  **Settings UI:** 
 
     - Per-user proxy 
-
     - VPN proxy 
+    - WiFi proxy (20H2 only)
 
 **Need detailed steps on how to reach pages in Settings app** 
 
  
 
-**MDM** 
+2. **MDM** 
 
-[What is a CSP?](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers)
+3. **PPKG**
+
+[CSPs](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) are behind many of the management tasks and policies for Windows 10, both in Microsoft Intune and in non-Microsoft MDM service providers. You can also use [Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) to create a [provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) and apply it to the HoloLens 2.
+The most likely CSPs that will be applied to your HoloLens 2 are:
 
 - [NetworkProxy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp): machine proxy and per-user proxy 
 
@@ -181,15 +184,11 @@ There are three ways to provision proxies:
 
 - [VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp?redirectedfrom=MSDN): per-profile VPN proxy
 
-[CSPs supported in HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+[Other CSPs supported in HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
 **Need detailed steps from Rui about Intune**
 
-**PPKG**
 
-[What is a provisioning package?](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)
-
-Fe release, UI will only support per connection proxy.
 
 ## VPN
 A VPN connection can help provide a more secure connection and access to your company's network and the Internet. HoloLens 2 supports built-in VPN client and Universal Windows Platform (UWP) VPN plug-in. 
