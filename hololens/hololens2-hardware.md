@@ -24,8 +24,8 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 
 - **Visor**. Contains the HoloLens sensors and displays. You can rotate the visor up while wearing the HoloLens.
 - **Headband**. To put the HoloLens on, use the adjustment wheel to expand the headband. With the HoloLens in place, tighten the adjustment wheel by turning to the right, until the headband is comfortable.
-- **Brightness button**. When wearing the HoloLens, the brightness button is on the left side of the visor near your temple.
-- **Volume button**. When wearing the HoloLens, the volume button is on the right side of the visor near your temple.
+- **Brightness buttons**. When wearing the HoloLens, the brightness buttons are on the left side of the visor near your temple.
+- **Volume buttons**. When wearing the HoloLens, the volume buttons are on the right side of the visor near your temple.
 - **Power button**. When wearing the HoloLens, the power button is located on the right side of the rear outer cover.
 - **USB-C port**. When wearing the HoloLens, the USB-C port is located on the right side of the rear outer cover below the Power button.
 
