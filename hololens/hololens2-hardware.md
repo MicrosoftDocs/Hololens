@@ -39,7 +39,7 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 
 ### Power Supply details
 
-The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18W charger.  It's supplies 9V at 2A.
+The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18W charger.  Its supplies 9V at 2A.
 
 Charging rate and speed may vary depending on the environment in which the device is running.
 
@@ -76,7 +76,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 |   |   |
 | - | - |
 | Microphone array | 5 channels |
-| Speakers | Built-in spatial sound |
+| Speakers | Built in spatial sound |
 
 ### Compute and connectivity
 
@@ -130,7 +130,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 |   |   |
 | - | - |
 | Windows Holographic Operating System | With Windows Holographic, Windows 10 users will be able to use some of their apps and games in a mixed reality environment via the HoloLens 2.
-| 3D Viewer | [3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) lets you easily view 3D models and animations in real-time.|
+| 3D Viewer | [3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) lets you easily view 3D models and animations in real time.|
 | Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), your personal productivity assistant, helps you stay on top of what matters and save time finding what you need.  |
 | Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) will help employees learn new skills faster on HoloLens devices. |
 | Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) empowers technicians to collaborate and solve problems with remote collaborators using Microsoft Teams or Dynamics 365 Remote Assist.  |
@@ -161,14 +161,14 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 |      Measurement               |      Units metric     |      Units imperial     |
 |--------------------------------|-----------------------|-------------------------|
-|     Unit Length                |     378.97mm          |     14.920 inches       |
-|     Unit Width                 |     247.90mm          |     9.760 inches        |
-|     Unit Depth                 |     163.07mm          |     6.420 inches        |
-|     Unit Weight                |     2.878kg           |     6.344 lbs           |
-|     Exterior Shipper Length    |     446.00mm          |     17.559 inches       |
-|     Exterior Shipper Width     |     257.99mm          |     10.157 inches       |
-|     Exterior Shipper Depth     |     172.01mm          |     6.772 inches        |
-|     Exterior Shipper Weight    |     3.284kg           |     7.240 lbs           |
+|     Unit Length                |     378.97 mm          |     14.920 inches       |
+|     Unit Width                 |     247.90 mm          |     9.760 inches        |
+|     Unit Depth                 |     163.07 mm          |     6.420 inches        |
+|     Unit Weight                |     2.878 kg           |     6.344 lbs           |
+|     Exterior Shipper Length    |     446.00 mm          |     17.559 inches       |
+|     Exterior Shipper Width     |     257.99 mm          |     10.157 inches       |
+|     Exterior Shipper Depth     |     172.01 mm          |     6.772 inches        |
+|     Exterior Shipper Weight    |     3.284 kg           |     7.240 lbs           |
 
 > [!NOTE]
 > - Unit: The black, retail-style box HoloLens 2 is sold in.
@@ -177,10 +177,10 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 ## Finding the Serial number
 
 The serial number for HoloLens 2 devices is printed underneath the visor.
-1. Lift the visor of the device up.
-1. Look near the the brow pad.
-1. You can find the serial number located close to the hinge. 
 
+1. Lift the visor of the device up.
+1. Look near the brow pad.
+1. You can find the serial number located close to the hinge.
 
 <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
