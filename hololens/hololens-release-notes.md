@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 1/12/2021
+ms.date: 02/16/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -22,10 +22,14 @@ appliesto:
 
 To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
 
-We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. We will continue to our [HoloLens Insider notes](hololens-insider.md) as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality. 
-
 >[!NOTE]
-> To read HoloLens Emulator release notes, [visit the archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+> We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. We will continue to our [**HoloLens Insider notes**](hololens-insider.md) as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality.
+
+Check out related release notes:
+
+- [Visit the HoloLens Emulator archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)
+- [Dynamics 365 Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
+- [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 
 ## Windows Holographic, version 20H2 - February 2021 Update
 - Build 19041.1136
