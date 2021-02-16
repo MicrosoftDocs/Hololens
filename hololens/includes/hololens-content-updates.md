@@ -2,6 +2,25 @@
 
 
 
+## Week of February 08, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/8/2021 | [HoloLens 2 cleaning FAQ](/hololens/hololens2-maintenance) | modified |
+| 2/9/2021 | [HoloLens 2 Industrial Edition FAQ](/hololens/hololens2-industrial-edition-faq) | modified |
+| 2/9/2021 | [HoloLens 2 Compliance and GDPR](/hololens/hololens2-compliance) | added |
+| 2/9/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 2/9/2021 | [HoloLens 2 cleaning FAQ](/hololens/hololens2-maintenance) | modified |
+| 2/9/2021 | [HoloLens 2 editions](/hololens/hololens2-options) | modified |
+| 2/9/2021 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 2/10/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 2/10/2021 | [Page Settings Visibility](/hololens/settings-uri-list) | modified |
+| 2/11/2021 | [HoloLens 2 cleaning FAQ](/hololens/hololens2-maintenance) | modified |
+| 2/12/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
+| 2/12/2021 | [HoloLens 2 Industrial Edition FAQ](/hololens/hololens2-industrial-edition-faq) | modified |
+
+
 ## Week of February 01, 2021
 
 
