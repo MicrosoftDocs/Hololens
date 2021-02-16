@@ -40,6 +40,10 @@ The HoloLens 2 Industrial Edition is certified for use in UL Class I, Division 2
 
 For more information read about [UL certifications](https://www.ul.com/services/ul-and-c-ul-hazardous-areas-certification-north-america?csrf-token=CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz&amp;Search=UL+Class+I%2C+Dev+2+&amp;search-submit=Search).
 
+### Does the HoloLens 2 Industrial Edition hold an ATEX certification?
+
+No. The HoloLens 2 Industrial Edition is does not hold an ATEX certification. The HoloLens 2 Industrial Edition holds a US/CAN Class 1, Division 2-Groups A, B, C, and D certification.
+
 ### Can the device be used in semiconductor and pharmaceutical environments?
 
 Yes. The HoloLens 2 Industrial Edition is designed with these environmental considerations, with the certifications for clean rooms and operational safety in mind this HoloLens 2 edition is ready to use in these environments.
