@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/2/2021
+ms.date: 2/16/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -36,6 +36,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 | [New Microsoft Edge](#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2                         | 20279.1006 |
 | [WebXR and 360 Viewer](#webxr-and-360-viewer)             | Try immersive web experiences and 360 video playback                                           | 20289.1000 |
 | [New Settings app](#new-settings-app)                     | The legacy Settings app is being replaced by an updated version with new features and settings | 20279.1006 |
+| [Display color calibration](#display-color-calibration)   | Select an alternative color profile for your HoloLens 2 display                                | 20293.1000 |
 | [Default app picker](#default-app-picker)                 | Choose which app should launch for each file or link type                                      | 20279.1006 |
 | [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | 20279.1006 |
 | [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
@@ -202,7 +203,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 **New features and settings**
 - Settings search: search for settings from the Settings homepage using keywords or the setting's name.
 - System > Sound:
-  - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input). 
+  - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input).
     > [!NOTE]
     > Bluetooth microphones are not supported by HoloLens 2.
   - App volume: independently adjust the volume of each app.
@@ -223,6 +224,49 @@ With this release, we're introducing a new version of the Settings app. The new 
 - The Ethernet page currently doesn't show up (to be fixed soon).
 - You can no longer rename your device with the Settings app (IT admins can use provisioning packages or MDM to rename devices).
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
+
+### Display color calibration
+
+*Added in Windows Insider build 20293.1000*
+
+With this new setting, you can select an alternative color profile for your HoloLens 2 display. This may help colors appear more accurate, especially at lower display brightness levels. Display color calibration can be found in the Settings app, on the System > Calibration page.
+
+#### How to use display color calibration
+
+1. Launch the **Settings** app and navigate to **System > Calibration**
+1. Under **Display color calibration**, select the **Run display color calibration** button
+1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position
+1. After you proceed through the instruction dialog boxes, your display will automatically be dimmed to 30% brightness
+    > [!TIP]
+    > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
+1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected)
+
+    ![Display color calibration scene](images/color-cal-ui.png)
+    
+1. When you're happy with the selected profile, select the **Save & Exit** button
+1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
+
+> [!TIP]
+> Here are some helpful tips to keep in mind while using the display color calibration setting:
+> - You can re-run display color calibration from Settings whenever you'd like
+> - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change will be reflected on the Settings page
+> - When you re-run display color calibration, the color profile that was previously saved will be highlighted and Profile 0 will not appear (as Profile 0 represents the display's original color profile)
+> - If you want to revert to the display's original color profile, you can do so from the Settings page (see [how to reset color profile](#how-to-reset-color-profile))
+
+#### How to reset color profile
+
+If you're unhappy with the custom color profile saved to your HoloLens 2, you can restore the device's original color profile:
+1. Launch the **Settings** app and navigate to **System > Calibration**
+1. Under **Display color calibration**, select the **Reset to default color profile** button
+1. Your display will turn off for several seconds as it resets. We recommend you also restart your device *after* the display turns back on (see [known issues](#top-display-color-calibration-known-issues)).
+
+#### Top display color calibration known issues
+
+- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings (workaround: select another Settings page and then re-select the Calibration page).
+- The "Reset to default color profile" button opens a dialog box which has no text. The "Reset" button in the dialog box works as intended, however.
+- After you select the "Reset" button, your display may go blank for 5-10 seconds and you may notice unexpected behavior in the mixed reality home. Please restart your device after using the “Reset” button (we’ll be fixing this soon to automatically restart your device and we'll update the Settings text accordingly).
+- If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
+- You may need to try pressing the brightness buttons on the left side of your device up/down a few times before they work as expected.
 
 ### Default app picker
 
