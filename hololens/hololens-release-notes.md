@@ -232,7 +232,7 @@ Your device is now configured and will [display the Provisioning Successful scre
 ### Using Autopilot with Wi-Fi connection
 - Removed need for USB-C adapters to ethernet reducing hardware needs, by enabling Autopilot to function on Wi-Fi connected devices.
 
-Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an Autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB-C or Wi-Fi to USB-C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
+Now during OOBE, once you connect HoloLens 2 with Wi-Fi, OOBE will check for an Autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB-C or Wi-Fi to USB-C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
 
 ### Tenantlockdown CSP and Autopilot
 - Keeps devices on the organization's tenant by locking them to the tenant even through device reset or reflash. With further security by disallowing account creation in via provisioning. 
@@ -387,7 +387,7 @@ These update policies are now enabled on HoloLens 2 devices:
 -	[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
 -	[Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
-Full details on thise update policies and how to use them for HoloLens devices can be read here in [Manage HoloLens updates](hololens-updates.md).
+Full details on these update policies and how to use them for HoloLens devices can be read here in [Manage HoloLens updates](hololens-updates.md).
 
 ### Enabled Settings page visibility for HoloLens 2
 - Increased UI control in the Settings App, which may be confused to show a limited selection of pages.
@@ -626,7 +626,7 @@ The NetworkQoSPolicy configuration service provider creates network quality-of-s
 
 ### Expanded USB Ethernet support for 5G/LTE tethered devices
 
-Support was added to enable certain mobile broadband devices, such as 5G/LTE phones and Wi-Fi hotpots, when they're tethered to the HoloLens 2 via USB. These devices are now displayed in **network settings** as another Ethernet connection. (Mobile broadband devices that require an external driver aren't supported.) This functionality enables high-bandwidth connections when Wi-Fi is not available and Wi-Fi tethering isn't performant enough. To learn more about supported USB devices, see [Connect to Bluetooth and USB-C devices](https://docs.microsoft.com/hololens/hololens-connect-devices).  
+Support was added to enable certain mobile broadband devices, such as 5G/LTE phones and Wi-Fi hotspots, when they're tethered to the HoloLens 2 via USB. These devices are now displayed in **network settings** as another Ethernet connection. (Mobile broadband devices that require an external driver aren't supported.) This functionality enables high-bandwidth connections when Wi-Fi is not available and Wi-Fi tethering isn't performant enough. To learn more about supported USB devices, see [Connect to Bluetooth and USB-C devices](https://docs.microsoft.com/hololens/hololens-connect-devices).  
 
 ### Hand tracking improvements
 
