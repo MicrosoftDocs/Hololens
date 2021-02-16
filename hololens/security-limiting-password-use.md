@@ -90,7 +90,7 @@ Both options offer two-factor authentication in one step, requiring both a regis
   ![FIDO img](images/security-fido2-whfb-smaller.png)
 
 1. User plugs FIDO2 security key into HoloLens 2
-1. Windows detects FIDO2 securty key
+1. Windows detects FIDO2 security key
 1. HoloLens sends auth request
 1. Azure AD sends back nonce
 1. User completes gesture to unlock private key stores in security key's secure enclave
