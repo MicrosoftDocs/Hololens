@@ -36,7 +36,7 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 | Developer entitlements <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
 | Rapid Replacement Program <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | Commercial use rights                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| Warranty                                             |   1-Year   |             1-Year            |             2-Year            |                      2-Year                      |            1-Year <sup>3</sup>            |             1-Year             |
+| [Warranty](hololens2-hardware.md#warranty-information)                                             |   1-Year   |             1-Year            |             2-Year            |                      2-Year                      |            1-Year <sup>3</sup>            |             1-Year             |
 | Device purchase limit                                |    None    |              None             |              None             |                       None                       |             None             |       One per transaction      |
 
 - <sup>1</sup> - Includes $500 Azure credit and 3-month trials to Unity Pro and Pixyz Plugin.
@@ -172,7 +172,7 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 |     [Start Developing for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Choose your engine, download your tools, add core building blocks, and start building today.                                  |
 |     [Explore Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Build compelling immersive experiences with Azure Remote Rendering and Azure Spatial Anchors.                                 |
 
-#### Developer Edition Additional resources
+#### Developer Edition additional resources
 
 - [Make sure to install the tools for HoloLens development.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Learn about developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).

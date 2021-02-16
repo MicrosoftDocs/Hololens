@@ -31,10 +31,9 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 
 ## In the box
 
-- **Brow pad**. You can remove and replace the brow pad, as needed.
-- **Overhead strap**. When you're wearing the HoloLens while moving around, use the overhead strap to help keep the device in place. When wearing the HoloLens for extended periods, the overhead strap may make the device more comfortable to wear.
-- **USB-C cable**. Use the USB-C cable to connect your HoloLens to the power supply for charging, or to connect your HoloLens to your computer.
-- **Power supply**. Plugs into a power outlet.
+- **[Brow pad](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)**. You can remove and replace the brow pad, as needed.
+- **[Overhead strap](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. When you're wearing the HoloLens while moving around, use the overhead strap to help keep the device in place. When wearing the HoloLens for extended periods, the overhead strap may make the device more comfortable to wear.
+- **[USB-C charger and cable](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**. The power supply plugs into the power outlet. Use the USB-C cable to connect your HoloLens to the power supply for charging, or to connect your HoloLens to your computer.
 - **Microfiber cloth**. Use to clean your HoloLens visor.
 
 ### Power Supply details
@@ -156,6 +155,14 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ### Regulatory information
 [HoloLens Regulatory](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Includes information on temperature, disposal, radio and TV interference, and more.
+
+## Warranty Information
+
+Microsoft HoloLens 2 comes with a standard limited [warranty](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5). 
+
+Purchase is subject to [Microsoft Store Terms of Use and Sale](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1). 
+
+By purchasing HoloLens 2 you agree to the [software license agreement](https://www.microsoft.com/Useterms/).
 
 ## Package Dimensions
 
