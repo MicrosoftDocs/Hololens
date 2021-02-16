@@ -233,13 +233,13 @@ With this new setting, you can select an alternative color profile for your Holo
 
 #### How to use display color calibration
 
-1. Launch the **Settings** app and navigate to **System > Calibration**
-1. Under **Display color calibration**, select the **Run display color calibration** button
-1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position
-1. After you proceed through the instruction dialog boxes, your display will automatically be dimmed to 30% brightness
+1. Launch the **Settings** app and navigate to **System > Calibration**.
+1. Under **Display color calibration**, select the **Run display color calibration** button.
+1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position.
+1. After you proceed through the instruction dialog boxes, your display will automatically be dimmed to 30% brightness.
     > [!TIP]
     > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
-1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected)
+1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
 
     ![Display color calibration scene](images/color-cal-ui.png)
     
@@ -256,13 +256,14 @@ With this new setting, you can select an alternative color profile for your Holo
 #### How to reset color profile
 
 If you're unhappy with the custom color profile saved to your HoloLens 2, you can restore the device's original color profile:
-1. Launch the **Settings** app and navigate to **System > Calibration**
-1. Under **Display color calibration**, select the **Reset to default color profile** button
+1. Launch the **Settings** app and navigate to **System > Calibration**.
+1. Under **Display color calibration**, select the **Reset to default color profile** button.
 1. Your display will turn off for several seconds as it resets. We recommend you also restart your device *after* the display turns back on (see [known issues](#top-display-color-calibration-known-issues)).
 
 #### Top display color calibration known issues
 
-- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings (workaround: select another Settings page and then re-select the Calibration page).
+- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings 
+    - Workaround: Select another Settings page and then re-select the Calibration page.
 - The "Reset to default color profile" button opens a dialog box which has no text. The "Reset" button in the dialog box works as intended, however.
 - After you select the "Reset" button, your display may go blank for 5-10 seconds and you may notice unexpected behavior in the mixed reality home. Please restart your device after using the “Reset” button (we’ll be fixing this soon to automatically restart your device and we'll update the Settings text accordingly).
 - If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
