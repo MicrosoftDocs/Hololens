@@ -296,11 +296,13 @@ A new menu that allows the user to sign out, shut down and restart the device. A
 
 1. Open the HoloLens Start screen using the [Start gesture](hololens2-basic-usage.md#start-gesture) or saying "Go to Start"
 1. Notice the ellipsis icon (...) next to the user profile picture:
-  ![User context dots, ...](./images/user-context-dots.png)
+
+ <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
+
 3. Select the user profile picture using your hands or the voice command "Power"
 4. A menu appears with options to Sign out, Restart or Shut down the device:
 
-  <img alt="User context menu" src="./images/user-context-menu.jpg" width="218" height="393" />
+ <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
 5. Select the menu options to sign out, restart or shut down your HoloLens. The Sign out option might not be available, if the device is set up for a [single Microsoft Account (MSA) or local account](hololens-identity.md).
 6. Dismiss the menu by touching anywhere else or closing the Start menu with the Start gesture.
@@ -308,9 +310,9 @@ A new menu that allows the user to sign out, shut down and restart the device. A
 #### Update indicator
 
 When an update is available, the ellipsis icon will light up to indicate that a restart will install the update
-The menu options also change to reflect the presence of the update:
+The menu options also change to reflect the presence of the update.
 
-![User context menu showing update](./images/user-context-menu-update.jpg.png)
+ <img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
 
 ### USB-C External Microphone Support
 
