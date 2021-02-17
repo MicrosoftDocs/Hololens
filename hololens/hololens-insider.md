@@ -40,6 +40,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 | [Default app picker](#default-app-picker)                 | Choose which app should launch for each file or link type                                      | 20279.1006 |
 | [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | 20279.1006 |
 | [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
+| [Power menu from Start](#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device | 20293.1000 |
 | [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist.| 20279.1006 |
 | [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps | 20279.1006 |
 | [New SettingsURIs for Page Settings Visibility](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy | 20289.1000 |
@@ -286,6 +287,28 @@ The Office web app has been added to the "All apps" list in the Start menu. This
 Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the spacebar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
 
 Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). We are evaluating this feature for public release, so your feedback is important; whether you find the feature useful or you have constructive feedback, please let us know via [Feedback Hub](hololens-feedback.md).
+
+### Power menu from Start
+
+A new menu that allows the user to sign out, shut down and restart the device. An indicator in the HoloLens Start screen that shows when a system update is available.
+
+#### How to use
+
+1. Open the HoloLens Start screen using the [Start gesture](hololens2-basic-usage.md#start-gesture) or saying "Go to Start"
+1. Notice the ellipsis icon (...) next to the user profile picture:
+  ![User context dots, ...](./images/user-context-dots.png)
+1. Select the user profile picture using your hands or the voice command "Power"
+1. A menu appears with options to Sign out, Restart or Shut down the device:
+  ![User context menu](./images/user-context-menu.jpg)
+1. Select the menu options to sign out, restart or shut down your HoloLens. The Sign out option might not be available, if the device is set up for a [single Microsoft Account (MSA) or local account](hololens-identity.md).
+1. Dismiss the menu by touching anywhere else or closing the Start menu with the Start gesture.
+
+#### Update indicator
+
+When an update is available, the ellipsis icon will light up to indicate that a restart will install the update
+The menu options also change to reflect the presence of the update:
+
+![User context menu showing update](./images/user-context-menu-update.jpg.png)
 
 ### USB-C External Microphone Support
 
