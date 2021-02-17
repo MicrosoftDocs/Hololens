@@ -297,11 +297,13 @@ A new menu that allows the user to sign out, shut down and restart the device. A
 1. Open the HoloLens Start screen using the [Start gesture](hololens2-basic-usage.md#start-gesture) or saying "Go to Start"
 1. Notice the ellipsis icon (...) next to the user profile picture:
   ![User context dots, ...](./images/user-context-dots.png)
-1. Select the user profile picture using your hands or the voice command "Power"
-1. A menu appears with options to Sign out, Restart or Shut down the device:
-  ![User context menu](./images/user-context-menu.jpg)
-1. Select the menu options to sign out, restart or shut down your HoloLens. The Sign out option might not be available, if the device is set up for a [single Microsoft Account (MSA) or local account](hololens-identity.md).
-1. Dismiss the menu by touching anywhere else or closing the Start menu with the Start gesture.
+3. Select the user profile picture using your hands or the voice command "Power"
+4. A menu appears with options to Sign out, Restart or Shut down the device:
+
+  <img alt="User context menu" src="./images/user-context-menu.jpg" width="218" height="393" />
+
+5. Select the menu options to sign out, restart or shut down your HoloLens. The Sign out option might not be available, if the device is set up for a [single Microsoft Account (MSA) or local account](hololens-identity.md).
+6. Dismiss the menu by touching anywhere else or closing the Start menu with the Start gesture.
 
 #### Update indicator
 
