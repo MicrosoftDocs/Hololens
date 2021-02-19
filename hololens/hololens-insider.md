@@ -48,6 +48,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 | [Share things with nearby devices](#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC | 20279.1006 |
 | [New OS Update troubleshooter](#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates | 20279.1006 |
 | [Improvements and fixes in the update](#improvements-and-fixes-in-the-update) | Additional fixes in the update. | 20279.1006 |
+| [Extended Eye Tracking](#extended-eye-tracking) | OS support for new eye tracking features | 20279.1006 |
 
 ### Introducing the new Microsoft Edge
 
@@ -411,10 +412,16 @@ In addition to the previous troubleshooters within the Settings app, a new troub
 
 - [Offline diagnostics](hololens-diagnostic-logs.md#offline-diagnostics) will also include additional device information for serial number and OS version.
 
+### Extended eye tracking
 
+Extended eye tracking API unlocks new scenarios such as health assessment, monitoring and therapy by providing more fine grain information about user's eye gaze.
 
+Beginning April 2021, we are providing OS level support for extended eye tracking:
+- Access left and right eye gazes: Developers will be able to access individual eye gaze values, allowing them to understand where user's left and right eyes are looking separately.
+- Get supported eye tracking frame rates: Current options are 30 Hz (default) and 60 Hz.
+- Set eye tracking frame rate to 60 Hz: Developers can choose a frame rate from the supported options and request eye gaze values at that rate.
 
-
+We will be releasing extended eye tracking APIs shortly, which will allow access to new features specified above, to select developers. These APIs will be protected behind a custom capability and developers will need approval from Microsoft to use them.
 
 ## Start receiving Insider builds
 
