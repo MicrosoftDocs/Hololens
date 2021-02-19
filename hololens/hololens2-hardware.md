@@ -18,7 +18,7 @@ appliesto:
 
 ![HoloLens 2 side view](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality.
+Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. A Microsoft account is required to use HoloLens 2.
 
 ## HoloLens components
 
@@ -160,9 +160,12 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 Microsoft HoloLens 2 comes with a standard limited [warranty](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5). 
 
-Purchase is subject to [Microsoft Store Terms of Use and Sale](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1). 
+Purchase is subject to [Microsoft Store Terms of Use and Sale](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1). All sales are final. No refunds.
 
 By purchasing HoloLens 2 you agree to the [software license agreement](https://www.microsoft.com/Useterms/).
+
+Not intended for use by children younger than 13.
+
 
 ## Package Dimensions
 
