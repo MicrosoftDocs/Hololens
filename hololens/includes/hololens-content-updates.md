@@ -2,6 +2,17 @@
 
 
 
+## Week of February 15, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/16/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 2/16/2021 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 2/16/2021 | [Hardware backed integrity and runtime attestation](/hololens/security-hardware-backed-integrity) | modified |
+| 2/16/2021 | [Limiting password use](/hololens/security-limiting-password-use) | modified |
+
+
 ## Week of February 08, 2021
 
 
@@ -133,50 +144,3 @@
 | 1/21/2021 | [Manage custom apps for HoloLens 2](/hololens/hololens2-holographic-custom-apps) | added |
 | 1/21/2021 | [Manage custom apps for HoloLens (1st gen)](/hololens/holographic-custom-apps) | modified |
 | 1/23/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-
-
-## Week of January 11, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/13/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 1/13/2021 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 1/13/2021 | [External Clients Deployment Guide](/hololens/hololens2-deployment-guide) | modified |
-| 1/13/2021 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
-| 1/14/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 1/14/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
-| 1/15/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
-| 1/15/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 1/15/2021 | [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist - Overview](/hololens/hololens2-cloud-connected-overview) | modified |
-| 1/15/2021 | [External Clients Deployment Guide](/hololens/hololens2-deployment-guide) | modified |
-
-
-## Week of December 21, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/21/2020 | [Intune and Company Portal](/hololens/app-deploy-intune) | modified |
-
-
-## Week of December 14, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/14/2020 | [Provisioning Package](/hololens/app-deploy-provisioning-package) | modified |
-| 12/18/2020 | [Give us feedback](/hololens/hololens-feedback) | modified |
-
-
-## Week of January 04, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/4/2021 | [Restart, reset, or recover HoloLens](/hololens/hololens-recovery) | modified |
-| 1/4/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
-| 1/4/2021 | [HoloLens 2 editions](/hololens/hololens2-options) | modified |
-| 1/4/2021 | [Prepare a new HoloLens 2](/hololens/hololens2-setup) | modified |
-| 1/5/2021 | [Contributing instructions](/hololens/contributing) | modified |
-| 1/7/2021 | [Restart, reset, or recover HoloLens](/hololens/hololens-recovery) | modified |
