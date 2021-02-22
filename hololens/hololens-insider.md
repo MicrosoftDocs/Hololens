@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/2/2021
+ms.date: 2/16/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -24,7 +24,7 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Get excited and ready to mix these updates into your reality.
+We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev Channel for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Get excited and ready to mix these updates into your reality.
 
 > [!IMPORTANT]
 > If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This will ensure you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app.
@@ -36,12 +36,15 @@ We are excited to start flighting new features to Windows Insiders again. We wil
 | [New Microsoft Edge](#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2                         | 20279.1006 |
 | [WebXR and 360 Viewer](#webxr-and-360-viewer)             | Try immersive web experiences and 360 video playback                                           | 20289.1000 |
 | [New Settings app](#new-settings-app)                     | The legacy Settings app is being replaced by an updated version with new features and settings | 20279.1006 |
+| [Display color calibration](#display-color-calibration)   | Select an alternative color profile for your HoloLens 2 display                                | 20293.1000 |
 | [Default app picker](#default-app-picker)                 | Choose which app should launch for each file or link type                                      | 20279.1006 |
 | [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | 20279.1006 |
 | [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
+| [Power menu from Start](#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device | 20293.1000 |
 | [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist.| 20279.1006 |
 | [Visitor Auto-logon for Kiosks](#visitor-auto-logon-for-kiosks)                          | Enables the auto-logon on Visitor accounts to be used for Kiosk modes.                         | 20279.1006                 |
 | [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps | 20279.1006 |
+| [New SettingsURIs for Page Settings Visibility](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy | 20289.1000 |
 | [Improved Kiosk mode failure handing](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | 20279.1006 |
 | [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App | 20279.1006 |
 | [Share things with nearby devices](#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC | 20279.1006 |
@@ -85,10 +88,10 @@ Here are some helpful resources for learning more about managing policy settings
 
 #### What to expect from the new Microsoft Edge on HoloLens 2
 
-Because the new Microsoft Edge is a native Win32 app with a new UWP adapter layer allowing it to run on UWP-only devices like HoloLens 2, some features may not be immediately available. We'll be supporting new scenarios and features over the coming months, so please check this space for up-to-date information.
+Because the new Microsoft Edge is a native Win32 app with a new UWP adapter layer allowing it to run on UWP-only devices like HoloLens 2, some features may not be immediately available. We'll be supporting new scenarios and features over the coming months, so check this space for up-to-date information.
 
 **Scenarios and features expected to work:**
-- First-run experience, sign-in to profile, and sync
+- First-run experience, sign in to profile, and sync
 - Websites should render and behave as expected
 - Most browser functionality (Favorites, History, etc.) should work as expected
 - Dark mode
@@ -126,7 +129,7 @@ There are a couple methods available for installing Microsoft Edge Insider chann
   1. Launch the downloaded .msix file from the Edge download queue or from your device's "Downloads" folder (using File Explorer).
   1. [App installer](app-deploy-app-installer.md) will launch.
   1. Select the **Install** button.
-  1. After successful install, you will find Microsoft Edge Beta, Dev, or Canary as a separate entry in the **All apps** list of the Start menu.
+  1. After successful install, you'll find Microsoft Edge Beta, Dev, or Canary as a separate entry in the **All apps** list of the Start menu.
 
 **Install via PC with Windows Device Portal (requires [developer mode](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) to be enabled on HoloLens 2)**
   1. On your PC, visit the [Edge Insider download page](https://www.microsoftedgeinsider.com/download).
@@ -134,7 +137,7 @@ There are a couple methods available for installing Microsoft Edge Insider chann
   1. Select **HoloLens 2** in the drop-down menu.
   1. Save the .msix file to the "Downloads" folder of your PC (or another folder you can easily find).
   1. Use [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) on your PC to install the downloaded .msix file on HoloLens 2.
-  1. After successful install, you will find Microsoft Edge Beta, Dev, or Canary as a separate entry in the **All apps** list of the Start menu.
+  1. After successful install, you'll find Microsoft Edge Beta, Dev, or Canary as a separate entry in the **All apps** list of the Start menu.
 
 > [!NOTE]
 > During this Windows Insider preview for HoloLens 2, the version of Microsoft Edge on your device may be higher than those available in some (or all) of the Microsoft Edge Insider channels. This is to ensure new features and fixes specifically targeting the web browser on HoloLens 2 are getting to our Windows Insiders as quickly as possible. Shortly after the public release of the next Windows update, the Microsoft Edge Insider channel builds will surpass, and stay ahead of, the version of Microsoft Edge on your HoloLens 2.
@@ -143,7 +146,7 @@ There are a couple methods available for installing Microsoft Edge Insider chann
 
 *Added in Windows Insider build 20289.1000*
 
-The new Microsoft Edge includes support for WebXR, which is the new standard for creating immersive web experiences (replacing WebVR). Many immersive web experiences were designed with VR in mind (they replace your field of view with a virtual environment), but these experiences are also supported by HoloLens 2. The WebXR standard also enables augmented and mixed reality immersive web experiences that leverage your physical environment. As developers spend more time with WebXR, we anticipate new augmented and mixed reality immersive experiences will arrive for HoloLens 2 customers to try!
+The new Microsoft Edge includes support for WebXR, which is the new standard for creating immersive web experiences (replacing WebVR). Many immersive web experiences were designed with VR in mind (they replace your field of view with a virtual environment), but these experiences are also supported by HoloLens 2. The WebXR standard also enables augmented and mixed reality immersive web experiences that use your physical environment. As developers spend more time with WebXR, we anticipate new augmented and mixed reality immersive experiences will arrive for HoloLens 2 customers to try!
 
 The 360 Viewer extension is built on WebXR and automatically installs alongside the new Microsoft Edge on HoloLens 2. This web extension gives you the ability to immerse yourself in 360-degree videos. YouTube offers the largest selection of 360 videos, so we encourage you to start there.
 
@@ -202,7 +205,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 **New features and settings**
 - Settings search: search for settings from the Settings homepage using keywords or the setting's name.
 - System > Sound:
-  - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input). 
+  - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input).
     > [!NOTE]
     > Bluetooth microphones are not supported by HoloLens 2.
   - App volume: independently adjust the volume of each app.
@@ -213,7 +216,7 @@ With this release, we're introducing a new version of the Settings app. The new 
   - USB-C Ethernet adapters will now appear in Network & Internet.
   - USB-C Ethernet adapter settings are now available, including its IP address.
   - You can now enable airplane mode on HoloLens 2.
-- Apps: you can reset the default apps used for file and link types. See [Default app picker](#default-app-picker) for more information.
+- Apps: you can reset the default apps used for file and link types. For more information see [Default app picker](#default-app-picker).
 - Accounts > Other users: device owners can add users, upgrade standard users to device owners, downgrade device owners to standard users, and remove users.
 - Ease of Access: change text size and some visual effects.
 
@@ -224,9 +227,53 @@ With this release, we're introducing a new version of the Settings app. The new 
 - You can no longer rename your device with the Settings app (IT admins can use provisioning packages or MDM to rename devices).
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
 
+### Display color calibration
+
+*Added in Windows Insider build 20293.1000*
+
+With this new setting, you can select an alternative color profile for your HoloLens 2 display. This may help colors appear more accurate, especially at lower display brightness levels. Display color calibration can be found in the Settings app, on the System > Calibration page.
+
+#### How to use display color calibration
+
+1. Launch the **Settings** app and navigate to **System > Calibration**.
+1. Under **Display color calibration**, select the **Run display color calibration** button.
+1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position.
+1. After you proceed through the instruction dialog boxes, your display will automatically be dimmed to 30% brightness.
+    > [!TIP]
+    > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
+1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
+
+    ![Display color calibration scene](images/color-cal-ui.png)
+    
+1. When you're happy with the selected profile, select the **Save & Exit** button
+1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
+
+> [!TIP]
+> Here are some helpful tips to keep in mind while using the display color calibration setting:
+> - You can re-run display color calibration from Settings whenever you'd like
+> - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change will be reflected on the Settings page
+> - When you re-run display color calibration, the color profile that was previously saved will be highlighted and Profile 0 will not appear (as Profile 0 represents the display's original color profile)
+> - If you want to revert to the display's original color profile, you can do so from the Settings page (see [how to reset color profile](#how-to-reset-color-profile))
+
+#### How to reset color profile
+
+If you're unhappy with the custom color profile saved to your HoloLens 2, you can restore the device's original color profile:
+1. Launch the **Settings** app and navigate to **System > Calibration**.
+1. Under **Display color calibration**, select the **Reset to default color profile** button.
+1. Your display will turn off for several seconds as it resets. We recommend you also restart your device *after* the display turns back on (see [known issues](#top-display-color-calibration-known-issues)).
+
+#### Top display color calibration known issues
+
+- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings 
+    - Workaround: Select another Settings page and then re-select the Calibration page.
+- The "Reset to default color profile" button opens a dialog box which has no text. The "Reset" button in the dialog box works as intended, however.
+- After you select the "Reset" button, your display may go blank for 5-10 seconds and you may notice unexpected behavior in the mixed reality home. Please restart your device after using the “Reset” button (we’ll be fixing this soon to automatically restart your device and we'll update the Settings text accordingly).
+- If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
+- You may need to try pressing the brightness buttons on the left side of your device up/down a few times before they work as expected.
+
 ### Default app picker
 
-When you activate a hyperlink or open a file type with more than one installed app which supports it, you will see a new window open prompting you to select which installed app should handle the file or link type. In this window you can also choose to have the selected app handle the file or link type "Once" or "Always."
+When you activate a hyperlink or open a file type with more than one installed app, which supports it, you will see a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
 
 ![App picker window](images/default-app-picker.png)
 
@@ -238,9 +285,35 @@ The Office web app has been added to the "All apps" list in the Start menu. This
 
 ### Swipe to type
 
-Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow-up words without needing to press the spacebar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
+Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the spacebar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
 
 Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). We are evaluating this feature for public release, so your feedback is important; whether you find the feature useful or you have constructive feedback, please let us know via [Feedback Hub](hololens-feedback.md).
+
+### Power menu from Start
+
+A new menu that allows the user to sign out, shut down and restart the device. An indicator in the HoloLens Start screen that shows when a system update is available.
+
+#### How to use
+
+1. Open the HoloLens Start screen using the [Start gesture](hololens2-basic-usage.md#start-gesture) or saying "Go to Start"
+1. Notice the ellipsis icon (...) next to the user profile picture:
+
+ <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
+
+3. Select the user profile picture using your hands or the voice command "Power"
+4. A menu appears with options to Sign out, Restart or Shut down the device:
+
+ <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
+
+5. Select the menu options to sign out, restart or shut down your HoloLens. The Sign out option might not be available, if the device is set up for a [single Microsoft Account (MSA) or local account](hololens-identity.md).
+6. Dismiss the menu by touching anywhere else or closing the Start menu with the Start gesture.
+
+#### Update indicator
+
+When an update is available, the ellipsis icon will light up to indicate that a restart will install the update
+The menu options also change to reflect the presence of the update.
+
+ <img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
 
 ### USB-C External Microphone Support
 
@@ -312,6 +385,54 @@ When modifying a Kiosk to include the new apps, we recommend adding in the new A
 | New Settings App       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App |
 | Old Microsoft Edge app | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
 | New Microsoft Edge app | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE    |
+
+### New SettingsURIs for Page Settings Visibility
+
+In [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) we added the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. PageVisibilityList is a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.
+
+If you visit [Page Settings Visibility](settings-uri-list.md), you can find instructions to use this CSP and the list of URIs available in previous releases.
+
+In Windows Insider builds we are expanding upon the list of list of available Settings URIs, which IT Admins can manage. Some of these URIs are for newly available areas within the new Settings app. If you are using Settings/PageVisibilityList policy, review the following list and adjust your allowed or blocked pages as needed.
+
+> [!NOTE]
+> **Deprecated: ms-settings:network-proxy**
+>
+> One settings page is deprecated in these newer builds. The old **Network & Internet** > **Proxy** page is no longer available as a global setting. The new per-connection proxy settings can be found under **Network & Internet** > **Wi-Fi** > **Properties** or **Network & Internet** > **Ethernet** > **Properties**.
+
+<br>
+
+| Settings page                                        | URI                                              |
+|------------------------------------------------------|--------------------------------------------------|
+| Apps > Apps & features                               | `ms-settings:appsfeatures`                         |
+| Apps > Apps & features > Advanced options          | `ms-settings:appsfeatures-app`                     |
+| Apps > Offline maps                                  | `ms-settings:maps`                                 |
+| Apps > Offline maps > Download maps                  | `ms-settings:maps-downloadmaps`                    |
+| Devices > Mouse                                      | `ms-settings:mouse`                                |
+| Devices > USB                                        | `ms-settings:usb`                                  |
+| Network & Internet > Airplane mode                   | `ms-settings:network-airplanemode`                 |
+| Privacy > General                                    | `ms-settings:privacy-general`                      |
+| Privacy > Ink & typing personalization             | `ms-settings:privacy-speechtyping`                 |
+| Privacy > Motion                                     | `ms-settings:privacy-motion`                       |
+| Privacy > Screenshot borders                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
+| Privacy > Screenshots and apps                       | `ms-settings:privacy-graphicsCaptureProgrammatic`  |
+| System > Battery                                     | `ms-settings:batterysaver`                         |
+| System > Battery                                     | `ms-settings:batterysaver-settings`                |
+| System > Sound                                       | `ms-settings:sound`                                |
+| System > Sound > App volume and device preferences | `ms-settings:apps-volume`                          |
+| System > Sound > Manage sound   devices              | `ms-settings:sound-devices`                        |
+| System > Storage > Configure Storage Sense         | `ms-settings:storagepolicies`                      |
+| Time & Language > Date & time                        | `ms-settings:dateandtime`                          |
+| Time & Language > Keyboard                           | `ms-settings:keyboard`                             |
+| Time & Language > Language                           | `ms-settings:language`                             |
+| Time & Language > Language                           | `ms-settings:regionlanguage-languageoptions`       |
+| Update & Security > Reset & recovery               | `ms-settings:reset`                                |
+
+#### Updated URIs
+
+Previously the following two URIs would not take a user directly to the pages indicated but only blocked the main updates page. The following items have been updated to direct to their pages:
+
+- `ms-settings:windowsupdate-options`
+- `ms-settings:windowsupdate-restartoptions`
 
 ### Kiosk mode behavior changes for handling of failures
 
