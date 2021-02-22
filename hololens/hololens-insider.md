@@ -292,7 +292,9 @@ For a non-AAD configuration, to configure a device for visitor auto-logon:
 
 For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
 
-Visitor Auto logon can be managed via policy.
+Visitor Auto logon can be managed via [custom OMA-URI](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10) policy:
+
+- URI value: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
 | Policy  | Description   | Configurations  |
 |---|---|---|
