@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/16/2021
+ms.date: 2/18/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -222,8 +222,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 
 **Known issues**
 - Previously placed Settings windows will be removed (see note above).
-- Visiting the Notifications page may crash the Settings app (investigating).
-- The Ethernet page currently doesn't show up (to be fixed soon).
+- The Ethernet page shows a virtual Ethernet device ("UsbNcm") at all times (investigating). This virtual Ethernet device will also show up on the Network page of device setup, but can be ignored (investigating).
 - You can no longer rename your device with the Settings app (IT admins can use provisioning packages or MDM to rename devices).
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
 
@@ -232,6 +231,9 @@ With this release, we're introducing a new version of the Settings app. The new 
 *Added in Windows Insider build 20293.1000*
 
 With this new setting, you can select an alternative color profile for your HoloLens 2 display. This may help colors appear more accurate, especially at lower display brightness levels. Display color calibration can be found in the Settings app, on the System > Calibration page.
+
+> [!NOTE]
+> Because this setting saves a new color profile to your display firmware, it is a per-device setting (and not unique to each user account).
 
 #### How to use display color calibration
 
@@ -260,14 +262,12 @@ With this new setting, you can select an alternative color profile for your Holo
 If you're unhappy with the custom color profile saved to your HoloLens 2, you can restore the device's original color profile:
 1. Launch the **Settings** app and navigate to **System > Calibration**.
 1. Under **Display color calibration**, select the **Reset to default color profile** button.
-1. Your display will turn off for several seconds as it resets. We recommend you also restart your device *after* the display turns back on (see [known issues](#top-display-color-calibration-known-issues)).
+1. When the dialog box opens, select **Restart** if you're ready to restart HoloLens 2 and apply your changes.
 
 #### Top display color calibration known issues
 
 - On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings 
     - Workaround: Select another Settings page and then re-select the Calibration page.
-- The "Reset to default color profile" button opens a dialog box which has no text. The "Reset" button in the dialog box works as intended, however.
-- After you select the "Reset" button, your display may go blank for 5-10 seconds and you may notice unexpected behavior in the mixed reality home. Please restart your device after using the “Reset” button (we’ll be fixing this soon to automatically restart your device and we'll update the Settings text accordingly).
 - If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
 - You may need to try pressing the brightness buttons on the left side of your device up/down a few times before they work as expected.
 
