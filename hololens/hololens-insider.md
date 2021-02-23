@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/16/2021
+ms.date: 2/18/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -38,6 +38,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 | [New Settings app](#new-settings-app)                     | The legacy Settings app is being replaced by an updated version with new features and settings | 20279.1006 |
 | [Display color calibration](#display-color-calibration)   | Select an alternative color profile for your HoloLens 2 display                                | 20293.1000 |
 | [Default app picker](#default-app-picker)                 | Choose which app should launch for each file or link type                                      | 20279.1006 |
+| [Per app volume control](#per-app-volume-control) |  Control app level volume independently from system volume | 20293.1000 |
 | [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | 20279.1006 |
 | [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
 | [Power menu from Start](#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device | 20293.1000 |
@@ -208,7 +209,7 @@ With this release, we're introducing a new version of the Settings app. The new 
   - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input).
     > [!NOTE]
     > Bluetooth microphones are not supported by HoloLens 2.
-  - App volume: independently adjust the volume of each app.
+  - App volume: independently adjust the volume of each app. See [per app volume control](#per-app-volume-control).
 - System > Power & sleep: choose when the device should go to sleep after a period of inactivity.
 - System > Battery: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically.
 - Devices > USB: you can disable USB connections by default.
@@ -222,8 +223,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 
 **Known issues**
 - Previously placed Settings windows will be removed (see note above).
-- Visiting the Notifications page may crash the Settings app (investigating).
-- The Ethernet page currently doesn't show up (to be fixed soon).
+- The Ethernet page shows a virtual Ethernet device ("UsbNcm") at all times (investigating). This virtual Ethernet device will also show up on the Network page of device setup, but can be ignored (investigating).
 - You can no longer rename your device with the Settings app (IT admins can use provisioning packages or MDM to rename devices).
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
 
@@ -232,6 +232,9 @@ With this release, we're introducing a new version of the Settings app. The new 
 *Added in Windows Insider build 20293.1000*
 
 With this new setting, you can select an alternative color profile for your HoloLens 2 display. This may help colors appear more accurate, especially at lower display brightness levels. Display color calibration can be found in the Settings app, on the System > Calibration page.
+
+> [!NOTE]
+> Because this setting saves a new color profile to your display firmware, it is a per-device setting (and not unique to each user account).
 
 #### How to use display color calibration
 
@@ -260,14 +263,12 @@ With this new setting, you can select an alternative color profile for your Holo
 If you're unhappy with the custom color profile saved to your HoloLens 2, you can restore the device's original color profile:
 1. Launch the **Settings** app and navigate to **System > Calibration**.
 1. Under **Display color calibration**, select the **Reset to default color profile** button.
-1. Your display will turn off for several seconds as it resets. We recommend you also restart your device *after* the display turns back on (see [known issues](#top-display-color-calibration-known-issues)).
+1. When the dialog box opens, select **Restart** if you're ready to restart HoloLens 2 and apply your changes.
 
 #### Top display color calibration known issues
 
 - On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings 
     - Workaround: Select another Settings page and then re-select the Calibration page.
-- The "Reset to default color profile" button opens a dialog box which has no text. The "Reset" button in the dialog box works as intended, however.
-- After you select the "Reset" button, your display may go blank for 5-10 seconds and you may notice unexpected behavior in the mixed reality home. Please restart your device after using the “Reset” button (we’ll be fixing this soon to automatically restart your device and we'll update the Settings text accordingly).
 - If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
 - You may need to try pressing the brightness buttons on the left side of your device up/down a few times before they work as expected.
 
@@ -279,13 +280,21 @@ When you activate a hyperlink or open a file type with more than one installed a
 
 If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. Scroll to the bottom of the page and select the **Clear** button under "Default apps for file types" and/or "Default apps for link types." Unlike the similar setting on desktop PCs, you can't reset individual file type defaults.
 
+### Per app volume control
+
+Now in this Windows Insider build users can manually adjust the volume level of each app. This allows for users to better focus on the apps that they need to, or better hear when using multiple apps. Such as needing to turn down volume of one app while calling another person for remote assistance in another.
+
+To set the volume of an individual app navigate to **Settings** -> **System** -> **Sound**, and under Advanced sound options select **App volume and device preferences**.
+
+ <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
+
 ### Office web app
 
 The Office web app has been added to the "All apps" list in the Start menu. This web app can also be pinned to Start or uninstalled. Because this is a web app, its functionality matches exactly what you'd experience by visiting https://www.office.com. Office web app functionality is only available when your HoloLens 2 has an active internet connection.
 
 ### Swipe to type
 
-Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the spacebar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
+Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the space bar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
 
 Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). We are evaluating this feature for public release, so your feedback is important; whether you find the feature useful or you have constructive feedback, please let us know via [Feedback Hub](hololens-feedback.md).
 
