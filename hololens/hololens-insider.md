@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/18/2021
+ms.date: 2/23/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -26,31 +26,73 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev Channel for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Get excited and ready to mix these updates into your reality.
 
+This feature update contains features for two target audiences. Features that can be used by anyone on a device by the end user, and new device management options that can be configured by IT Admins. The feature table below specifics the audiences with who be able to use each new feature. If you are an IT Admin, please take a look at our [IT Admin - Update Checklist](#it-admin---update-checklist)
+
 > [!IMPORTANT]
 > If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This will ensure you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app.
 
 <br>
 
-| Feature Name                                              | Short description                                                                      | Available in build |
-|-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
-| [New Microsoft Edge](#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2                         | 20279.1006 |
-| [WebXR and 360 Viewer](#webxr-and-360-viewer)             | Try immersive web experiences and 360 video playback                                           | 20289.1000 |
-| [New Settings app](#new-settings-app)                     | The legacy Settings app is being replaced by an updated version with new features and settings | 20279.1006 |
-| [Display color calibration](#display-color-calibration)   | Select an alternative color profile for your HoloLens 2 display                                | 20293.1000 |
-| [Default app picker](#default-app-picker)                 | Choose which app should launch for each file or link type                                      | 20279.1006 |
-| [Per app volume control](#per-app-volume-control) |  Control app level volume independently from system volume | 20293.1000 |
-| [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | 20279.1006 |
-| [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
-| [Power menu from Start](#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device | 20293.1000 |
-| [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist.| 20279.1006 |
-| [Visitor Auto-logon for Kiosks](#visitor-auto-logon-for-kiosks)                          | Enables the auto-logon on Visitor accounts to be used for Kiosk modes.                         | 20279.1006                 |
-| [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps | 20279.1006 |
-| [New SettingsURIs for Page Settings Visibility](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy | 20289.1000 |
-| [Improved Kiosk mode failure handing](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | 20279.1006 |
-| [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App | 20279.1006 |
-| [Share things with nearby devices](#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC | 20279.1006 |
-| [New OS Update troubleshooter](#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates | 20279.1006 |
-| [Improvements and fixes in the update](#improvements-and-fixes-in-the-update) | Additional fixes in the update. | 20279.1006 |
+| Feature Name                                              | Short description                                                                      | Target Audience | Available in build |
+|-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|------|
+| [New Microsoft Edge](#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2                         | End User | 20279.1006 |
+| [WebXR and 360 Viewer](#webxr-and-360-viewer)             | Try immersive web experiences and 360 video playback                                           | End User | 20289.1000 |
+| [New Settings app](#new-settings-app)                     | The legacy Settings app is being replaced by an updated version with new features and settings | End User | 20279.1006 |
+| [Display color calibration](#display-color-calibration)   | Select an alternative color profile for your HoloLens 2 display                                | End User | 20293.1000 |
+| [Default app picker](#default-app-picker)                 | Choose which app should launch for each file or link type                                      | End User | 20279.1006 |
+| [Per app volume control](#per-app-volume-control) |  Control app level volume independently from system volume | End User | 20293.1000 |
+| [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | End User | 20279.1006 |
+| [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | End User | 20279.1006 |
+| [Power menu from Start](#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device | End User | 20293.1000 |
+| [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist.| End User | 20279.1006 |
+| [Visitor Auto-logon for Kiosks](#visitor-auto-logon-for-kiosks)                          | Enables the auto-logon on Visitor accounts to be used for Kiosk modes.                         | IT Admin | 20279.1006                 |
+| [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps | IT Admin | 20279.1006 |
+| [Improved Kiosk mode failure handing](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | IT Admin | 20279.1006 |
+| [New SettingsURIs for Page Settings Visibility](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy | IT Admin | 20289.1000 |
+| [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App | IT Admin | 20279.1006 |
+| [Share things with nearby devices](#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC | All | 20279.1006 |
+| [New OS Update troubleshooter](#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates | IT Admin | 20279.1006 |
+| [Improvements and fixes in the update](#improvements-and-fixes-in-the-update) | Additional fixes in the update. | All | 20279.1006 |
+
+### IT Admin - Update Checklist
+
+This checklist will help you know the new items that features that are being added in this feature update that may affect your current device management configurations, or new features you might wish to start using.
+
+#### Updates to Kiosk mode
+
+[**New AUMIDs for new apps in Kiosk mode**](#use-the-new-settings-and-edge-apps-in-kiosk-modes)
+
+If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This will ensure you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app.
+
+These changes can be done now, and deployed to all devices and allow for a smoother transition on update.
+
+[**Visitor Auto-logon for Kiosks**](#visitor-auto-logon-for-kiosks)
+
+Visitors can now be automatically logged into a Kiosk. This behavior is on by default but can be managed and disabled.
+
+[**Improved Kiosk mode failure handing**](#kiosk-mode-behavior-changes-for-handling-of-failures)
+
+This update now keeps devices more controlled by Kiosk mode, allowing for it to fall back to different types of Kiosks before simply presenting an empty Kiosk. While this is not manageable, this may be something to inform your support department if you are using Kiosks in a way this may apply to your configuration.
+
+#### Updates to Page Settings Visibility
+
+[**New SettingsURIs for Page Settings Visibility**](hololens-insider.md#new-settingsuris-for-page-settings-visibility)
+
+IF you are currently using [Page Settings Visibility](settings-uri-list.md) then you may wish to make adjustments to your existing URIs you have either allowed or blocked.
+
+#### Newly configurable items
+
+- [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app)
+  - You may configure if and who may collect Fallback Diagnostics.
+- [Share things with nearby devices](#share-things-with-nearby-devices)
+  - You may disable the new nearby sharing feature.
+- [Configuring policy settings for the new Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge)
+  - Review the newly configurations available for Microsoft Edge.
+
+#### New diagnostic tool
+
+- [New OS Update troubleshooter](#new-os-update-troubleshooter)
+  - Collect logs related to OS Updates
 
 ### Introducing the new Microsoft Edge
 
@@ -395,6 +437,12 @@ When modifying a Kiosk to include the new apps, we recommend adding in the new A
 | Old Microsoft Edge app | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
 | New Microsoft Edge app | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE    |
 
+### Kiosk mode behavior changes for handling of failures
+
+In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)” menu.
+
+Starting in Windows Insider release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
+
 ### New SettingsURIs for Page Settings Visibility
 
 In [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) we added the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. PageVisibilityList is a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.
@@ -442,12 +490,6 @@ Previously the following two URIs would not take a user directly to the pages in
 
 - `ms-settings:windowsupdate-options`
 - `ms-settings:windowsupdate-restartoptions`
-
-### Kiosk mode behavior changes for handling of failures
-
-In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)” menu.
-
-Starting in Windows Insider release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
 ### Configuring Fallback Diagnostics via Settings app
 
