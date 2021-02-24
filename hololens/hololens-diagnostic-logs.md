@@ -1,9 +1,9 @@
 ---
 title: Collect and use diagnostic information from HoloLens devices
-description: 
+description: Learn how to collect, use, and retain diagnostic information from HoloLens devices.
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 03/23/2020
+ms.date: 10/15/2020
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -29,7 +29,7 @@ HoloLens users and administrators can choose from among four different methods t
 - Settings app
 
 > [!IMPORTANT]  
-> Device diagnostic logs contain personally identifiable information (PII), such as about what processes or applications the user starts during typical operations. When multiple users share a HoloLens device (for example, users sign in to the same device by using different Microsoft Azure Active Directory (AAD) accounts) the diagnostic logs may contain PII information that applies to multiple users. For more information, see [Microsoft Privacy statement](https://privacy.microsoft.com/privacystatement).
+> Device diagnostic logs contain personally identifiable information (PII), such as about what processes or applications the user starts during typical operations. When multiple users share a HoloLens device (for example, users sign in to the same device by using different Microsoft Azure Active Directory (Azure AD) accounts) the diagnostic logs may contain PII information that applies to multiple users. For more information, see [Microsoft Privacy statement](https://privacy.microsoft.com/privacystatement).
 
 The following table compares the three collection methods. The method names link to more detailed information in the sections that follow the table.
 
@@ -117,6 +117,20 @@ In situations where the device is not able to collect diagnostics via Feedback H
 
 This works when the device shows up in File Explorer after connecting it to a PC via a USB cable. 
 
+> [!NOTE]
+> Offline Diagnostics generation and management is controlled differently depending on your OS version. Previously it was controlled by the telemetry setting, but is now directly controlled via policy. 
+
+Behavior Prior to [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
+ - Offline diagnostics is only enabled when user is either going through OOBE or [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) policy value is set to Full (Basic is default value on HoloLens). 
+- To disable Offline diagnostics, go to **Settings App > Privacy** page and select **Basic** in **Diagnostic Data**. On builds where offline diagnostics depends on telemetry setting, it only impacts whether any logs are collected or not. It does not impact what files are collected.
+- If device is locked then logs won't appear.
+
+On builds [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) and onwards:
+- When Fallback Diagnostics is enabled will be controlled by specific MDM policy with corresponding setting [MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
+- If device is locked then logs won't appear.
+
+
+Watch this video to learn more. 
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
@@ -129,5 +143,8 @@ Follow these steps to collect diagnostics:
 6.	Refresh file explorer, and navigate to the **'\Documents'** folder.
 7.	Copy the diagnostics ZIP files and share them with the Microsoft support team.
 
-Note, some of the diagnostics ZIP files may contain personally identifiable information.
+> [!NOTE]
+> Some of the diagnostics ZIP files may contain personally identifiable information.
+
+
 

@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-description: Solutions for common HoloLens issues.
+description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 12/02/2019
@@ -8,12 +8,11 @@ ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-keywords: issues, bug, troubleshoot, fix, help, support, HoloLens
 manager: jarrettr
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
-
+keywords: issues, bug, troubleshoot, fix, help, support, HoloLens
 ---
 
 # Troubleshooting
@@ -41,6 +40,17 @@ If your holograms are unstable, jumpy, or don't look right, try:
 - Increasing the light in your room.
 - Walking around and looking at your surroundings so that HoloLens can scan them more completely.
 - Calibrating your HoloLens for your eyes. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
+ 
+### Reporting issues where Holograms are unstable or don't look right
+ 
+1. Please record and a [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. This video can be later uploaded through Feedback Hub as an attached file.  
+1. Enable full telemetry via the **Settings** app -> **Privacy** -> **Diagnostics & feedback** and under **Optional diagnostics data** ensure the toggle is set to **On**
+1. Get the latest hologram scale and stability fixes by updating to the latest [Windows Holographic OS, (20H2 or higher)](hololens-release-notes.md#windows-holographic-version-20h2). After updating perform the following:
+    1. Remove all Holograms via **Settings** app -> **System** -> **Holograms** -> then select **Remove all holograms** and start with a fresh map.
+    1. Create a new map of your space by wearing the HoloLens and walking around your room and looking at all areas and surfaces in the space. Do this for 2-3 minutes.
+    1. Perform IPD calibration. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
+    1. Re-test the scenario and see if it still persists.
+1. If updating does not fix the issue, please file a [Feedback Hub issue](hololens-feedback.md). After you've filled feedback you can use the **Share** button, to create an easy to share link that can be sent when contacting support.
 
 ## HoloLens doesn't respond to hand input
 

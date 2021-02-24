@@ -1,6 +1,6 @@
 ---
-title: security adminless os
-description: adminless os and hololens security
+title: Admin-less operating system security
+description: Learn about admin-less operating systems, device owners, and security on HoloLens mixed reality devices.
 ms.prod: hololens
 author: evmill
 ms.author: v-evmill
@@ -29,9 +29,9 @@ Windows components can also leverage the AppContainer sandbox through System UWP
 
 Finally, the execution of specific device-wide operations, such as joining the device to a tenant or user management, is only permitted for “device owners”. This group is populated by users on the device through one of the following steps:
   * The first user on the device is always designated an Owner. 
-    * The exception to this rule is that if the device is AAD joined, the user that performed the join is made device owner. This is applicable, for example, if a device is AAD joined via Autopilot in which case the first user to sign into the device did not AAD join the device and therefore will not be made a device owner. To understand more about who is made a device owner on an AAD joined device, see [“Assign Local Admin” documentation](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) (but read ‘local admin’ as ‘device owner’ since admin does not exist on HoloLens).
+    * The exception to this rule is that if the device is Azure AD joined, the user that performed the join is made device owner. This is applicable, for example, if a device is Azure AD joined via Autopilot in which case the first user to sign into the device did not Azure AD join the device and therefore will not be made a device owner. To understand more about who is made a device owner on an Azure AD joined device, see [“Assign Local Admin” documentation](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) (but read ‘local admin’ as ‘device owner’ since admin does not exist on HoloLens).
   * When a user is promoted to be an Owner from Settings UX by another Owner on the device.
-  * If the device owner is no longer available (e.g. leaves the company) and the device is AAD joined, the Tenant Admin can change the device owner to a new user in Azure Portal.
+  * If the device owner is no longer available (e.g. leaves the company) and the device is Azure AD joined, the Tenant Admin can change the device owner to a new user in Azure Portal.
 Global Administrators of an Azure AD tenant are implicitly signed in as Owners on the device without requiring either of the previous steps. 
 
 IT administrators can manage what apps can access through [Privacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy) policies. 

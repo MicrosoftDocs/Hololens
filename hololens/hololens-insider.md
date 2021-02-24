@@ -1,6 +1,6 @@
 ---
 title: Insider preview for Microsoft HoloLens
-description: It's simple to get started with Insider builds and to provide valuable feedback for our next major operating system update for HoloLens.
+description: Learn how to get started with Insider builds and provide valuable feedback for our next major operating system update for HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 9/23/2020
+ms.date: 2/16/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -24,269 +24,397 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-Here is the list of the upcoming features that you can try out today in our Windows Insider build.
+We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev Channel for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Get excited and ready to mix these updates into your reality.
 
-| Feature                                                | Description                                                                                    | Available in insider builds |
-|--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
-| [Auto Eye Position Support](hololens-insider.md#auto-eye-position-support)                              | Actively computes eye positions and enables accurate hologram positioning.                        | 19041.1339+                 |
-| [Certificate Manager](hololens-insider.md#certificate-manager)                                     | Users can view, install and remove certificates Current User and Local Machine certificates in the Settings app.                                         | 19041.1361+                 |
-| [Auto-launch provisioning from USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE Automatically detects provisioning packages on USB drives.                                | 19041.1361+                 |
-| [Auto-confirm provisioning packages in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatically apply provisioning packages in OOBE.                                             | 19041.1361+                 |
-| [Using Autopilot with Wi-Fi connection](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Use autopilot from device Wi-Fi without need for ethernet adapter.                             | 19041.1364+                 |
-|[Tenantlockdown CSP and Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | After tenant enrollment and the policy is applied, the device can only be enrolled in that tenant any time the device is reset or re-flashed. | 19041.1366+|
-| [Global Assigned Access](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configure HoloLens 2 device for multiple app kiosk mode which is applicable at system   level. | 19041.1356+                 |
-| [Auto-launch an app in multi-app kiosk](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Sets an application to launch automatically when signing into a multiple-app kiosk   mode.     | 19041.1346+                 |
-| [Kiosk mode behavior changes for handling of failures](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Changes in how Kiosk mode failure is now handled.                                              | 19041.1356+                 |
-| [HoloLens Policies](hololens-insider.md#hololens-policies)                                      | New policies for mixed reality devices.                                                        | 19041.1349+                 |
-| [Cache AAD Group membership for offline Kiosk](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Policy for how many days AAD group membership cache is allowed to be used for Kiosk   mode.    | 19041.1356+                 |
-| [New device restriction policies for HoloLens 2](hololens-insider.md#new-device-restriction-policies-for-hololens-2)         | Device management policies enabled newly enabled for HoloLens 2.                               | 19041.1349+                 |
-| [New power policies for HoloLens 2](hololens-insider.md#new-power-policies-for-hololens-2)                      | Newly supported policies for power timeout settings.                                           | 19041.1349+                 |
-| [Update Policies](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | Newly enabled policies allowing control of updates.                                            | 19041.1352+                 |
-| [Enabled Settings page visibility for HoloLens 2](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | Policy to pick which pages are seen in Settings app.                                           | 19041.1349+                 |
-|  [Research mode](hololens-insider.md#research-mode) | Using Research mode on HoloLens 2 | 19041.1375+ |
-| [Improvements and fixes in the update](hololens-insider.md#improvements-and-fixes-in-the-update)                   | Additional fixes in the update.                                                                | 19041.1361+                 |
+> [!IMPORTANT]
+> If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This will ensure you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app.
 
+<br>
 
-### Auto Eye Position Support
+| Feature Name                                              | Short description                                                                      | Available in build |
+|-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
+| [New Microsoft Edge](#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2                         | 20279.1006 |
+| [WebXR and 360 Viewer](#webxr-and-360-viewer)             | Try immersive web experiences and 360 video playback                                           | 20289.1000 |
+| [New Settings app](#new-settings-app)                     | The legacy Settings app is being replaced by an updated version with new features and settings | 20279.1006 |
+| [Display color calibration](#display-color-calibration)   | Select an alternative color profile for your HoloLens 2 display                                | 20293.1000 |
+| [Default app picker](#default-app-picker)                 | Choose which app should launch for each file or link type                                      | 20279.1006 |
+| [Office web app](#office-web-app)                         | A shortcut to the Office web app is now listed in "All apps"                                   | 20279.1006 |
+| [Swipe to type](#swipe-to-type)                           | Use the tip of your finger to "swipe" words on the holographic keyboard                        | 20279.1006 |
+| [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist.| 20279.1006 |
+| [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps | 20279.1006 |
+| [New SettingsURIs for Page Settings Visibility](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy | 20289.1000 |
+| [Improved Kiosk mode failure handing](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | 20279.1006 |
+| [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App | 20279.1006 |
+| [Share things with nearby devices](#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC | 20279.1006 |
+| [New OS Update troubleshooter](#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates | 20279.1006 |
+| [Improvements and fixes in the update](#improvements-and-fixes-in-the-update) | Additional fixes in the update. | 20279.1006 |
 
-In HoloLens 2, eye positions enable accurate hologram positioning, comfortable viewing experience and improved display quality. Eye positions are computed as part of the eye tracking result. However, this requires each user to go through eye tracking calibration, even when the experience does not require eye gaze input.
+### Introducing the new Microsoft Edge
 
-**Auto Eye Position (AEP)** enables these scenarios with an interaction-free way to compute eye positions for the user.  Auto Eye Position starts working in the background automatically from the moment the user puts the device on. If the user does not have a prior eye tracking calibration, Auto Eye position will start providing the user's eye positions to the display system after a small processing time. This processing time typically is between 20 - 60 seconds. The user data is not persisted on the device and hence this process is repeated if the user takes off and puts the device back on or if the device reboots or wakes up from sleep.  
+![Animation of legacy Microsoft Edge logo to new Microsoft Edge logo](images/new-edge.gif)
 
-There are a few system behavior changes with Auto Eye Position feature when an uncalibrated user puts on the device. An uncalibrated user refers to someone who has not gone through the eye tracking calibration process on the device previously.
+The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) to create better compatibility for customers and less fragmentation of the web for web developers.
 
-|     Active Application                           |     Current Behavior                                   |     Behavior from Windows Insider   build 19041.1339+                                                      |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     Non-gaze enabled app or Holographic Shell    |     Eye tracking calibration prompt is displayed.    |     No prompt is displayed.                                                                                |
-|     Gaze enabled app                             |     Eye tracking calibration prompt is displayed.    |     Eye tracking calibration prompt is   displayed only when the application accesses eye gaze stream.     |
+With this Insider preview, the new Microsoft Edge is available to HoloLens 2 customers for the first time! While the new Microsoft Edge will eventually replace legacy Microsoft Edge on HoloLens 2, both browsers are currently available to Insiders. Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge or via [Feedback Hub](hololens-feedback.md).
 
- If the user transitions from a non-gaze enabled application to one that accesses the gaze data, the calibration prompt will be displayed. There will be no changed to Out Of Box Experience flow. 
- 
-For experiences that require eye gaze data or very precise hologram positioning, we recommend uncalibrated users to run eye tracking calibration from the eye tracking calibration prompt or by launching the Settings app from the start menu, and then selecting **System > Calibration > Eye Calibration > Run eye calibration**.
+![New Microsoft Edge screenshot](images/new-edge-ui.png)
 
-### Certificate Manager
+#### Launching the new Microsoft Edge
 
-In Windows Insider build 19041.1361+ we are adding a Certificate Manager in the HoloLens 2 Settings app. Go to **Settings > Update & Security > Certificates**. This feature provides a simple and user-friendly way to view, install and remove certificates on your device. With the new Certificate Manager, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant. 
-
--	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
--	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
--	**Validation:** Verifying that a certificate serves the intended purpose and is functional, can save significant time, particularly in commercial environments before deploying certificates at larger scale.
-
-To find a specific certificate in the list quickly, there are options to sort by name, store or expiration date. Users may also directly search for a certificate. To view individual certificate properties, select the certificate and click on **Info**. 
-
-Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User;  all other users can only install into Current User. Users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must also be removed by the same mechanism.
-
-#### To install a certificate: 
-
-1.	Connect your HoloLens 2 to a PC.
-1.	Place the certificate file you want to install in a location on your HoloLens 2.
-1.	Navigate to **Settings App > Update & Security > Certificates**, and select Install a certificate.
-1.	Click **Import File** and navigate to the location you saved the certificate.
-1.	Select **Store Location**.
-1.	Select **Certificate Store**.
-1.	Click **Install**.
-
-The certificate should now be installed on the device.
-
-#### To remove a certificate: 
-1. Navigate to **Settings App > Update and Security > Certificates**.
-1. Search for the certificate by name in the search box.
-1. Select the certificate.
-1. Click **Remove**
-1. Select **Yes** when prompted for confirmation.
-
-![Certificate viewer in the Settings app](images/certificate-viewer-device.jpg)
-
-![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
-
-### Auto-launch provisioning from USB
-Before this build users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
-
-1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
-1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page. 
+There are two versions of Microsoft Edge available to Insiders: the new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) and legacy Microsoft Edge (represented by the white "e" icon). The new Microsoft Edge is pinned to the Start menu and will automatically launch when you activate a web link. If you would like to revert to using legacy Microsoft Edge as your default web browser, see the instructions below for [resetting default apps](#default-app-picker).
 
 > [!NOTE]
-> If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
+> When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge. If you continue to use legacy Microsoft Edge after launching the new Microsoft Edge, that new data will not be synced from legacy Microsoft Edge to the new Microsoft Edge.
 
-For more information about applying provisioning packages during OOBE please continue reading [here](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+#### Configuring policy settings for the new Microsoft Edge
 
-### Auto-confirm provisioning packages in OOBE
-When the provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
+The new Microsoft Edge offers IT admins a much broader set of browser policies on HoloLens 2 than were previously available with legacy Microsoft Edge.
 
-### Automatic provisioning without using UI
-By combining the auto-launch of provisioning from USB devices and the auto-confirmation of provisioning packages, a user can provision HoloLens 2 devices automatically without using the device's UI or even wearing the device. You may continue to use the same USB drive and provisioning package for multiple devices. This is useful for deploying multiple devices at once in the same area. 
+Here are some helpful resources for learning more about managing policy settings for the new Microsoft Edge:
 
-1. [Create a Provisioning Package](hololens-provisioning.md) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
-1. Copy the package to a USB storage drive.
-1. [Flash your HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) to [19041.1361 or newer build](https://aka.ms/hololens2previewdownload). 
-1. When [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8) has completed flashing your device unplug your USB-C cable. 
-1. Plug in your USB drive to the device.
-1. When the HoloLens 2 device boots into OOBE it will automatically detect the provisioning package on the USB drive and launch the provisioning page.
-1. After 10 seconds the device will automatically apply the provisioning package. 
+- [Configure Microsoft Edge policy settings with Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
+- [Microsoft Edge Legacy to Microsoft Edge policy mapping](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Google Chrome to Microsoft Edge policy mapping](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- Full [Microsoft Edge Enterprise documentation](https://docs.microsoft.com/deployedge/)
 
-Your device is now configured and will display the Provisioning Successful screen.
+> [!IMPORTANT]
+> Because of the volume of browser policies supported by the new Microsoft Edge, our team is unable to guarantee that each new policy works on HoloLens 2. However, we've tested and confirmed than the new Microsoft Edge equivalent of each legacy Microsoft Edge policy previously supported on HoloLens 2 work as expected. See [Microsoft Edge Legacy to Microsoft Edge policy mapping](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) to find the new Microsoft Edge equivalent of each legacy Microsoft Edge browser policy you were using with HoloLens 2.
+>
+> There are at least two new Microsoft Edge policies that we know *will not* work with HoloLens 2:
+> - EnterpriseModeSiteList
+> - EnterpriseSiteListServiceURL
 
-### Using Autopilot with Wi-Fi connection
-Now during OOBE, once you connect HoloLens 2 with Wifi, OOBE will check for an autopilot profile for the device. If one is found it will be used to complete rest of the AAD join and enrollment flow. In other words, using ethernet to USB C or wifi to USB C adapter is not a requirement anymore, however they continue to work if provided at beginning of OOBE. Learn more about [Autopilot for HoloLens 2 devices](hololens2-autopilot.md).
+#### What to expect from the new Microsoft Edge on HoloLens 2
 
-### Tenantlockdown CSP and Autopilot
-HoloLens 2 devices now support TenantLockdown CSP as of Windows Insider build 19041.1366+. 
+Because the new Microsoft Edge is a native Win32 app with a new UWP adapter layer allowing it to run on UWP-only devices like HoloLens 2, some features may not be immediately available. We'll be supporting new scenarios and features over the coming months, so check this space for up-to-date information.
 
-[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP enables HoloLens 2 to be tied to MDM enrollment using Autopilot only. Once TenantLockdown CSP’s RequireNetworkInOOBE node is set to either true or false (initially set) value on HoloLens 2, that value remains on the device despite re-flashing, OS updates, etc. 
+**Scenarios and features expected to work:**
+- First-run experience, sign in to profile, and sync
+- Websites should render and behave as expected
+- Most browser functionality (Favorites, History, etc.) should work as expected
+- Dark mode
+- Installing web apps to the device
+- Installing extensions (please let us know if you use any extensions that don't work properly on HoloLens 2)
+- Viewing and marking up a PDF
+- Spatial sound from a single browser window
+- Automatic and manual updating of the browser
+- Saving a PDF from the Print menu (using "Save to PDF" option)
 
-Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, OOBE waits indefinitely for Autopilot profile to be successfully downloaded and applied, after network connectivity. 
+**Scenarios and features coming soon:**
+- WebXR and 360 Viewer extension
+- Content restoration to correct window when browsing across multiple windows placed in your environment
 
-Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, following operations are disallowed in OOBE: 
-- Creating local user using runtime provisioning 
-- Performing AAD join operation via runtime provisioning 
-- Selecting who owns the device in OOBE experience 
+**Scenarios and features not expected to work:**
+- Spatial sound from multiple windows with simultaneous audio streams
+- "See it, say it"
+- Printing
 
-#### How to set this using Intune? 
-1. Create a custom OMA URI device configuration profile and specify true for RequireNetworkInOOBE node as shown below.
-OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+**Top known browser issues:**
+- Resetting your device will remove the new Microsoft Edge
+- The magnifier preview in the holographic keyboard shows incorrect content
 
-   > [!div class="mx-imgBorder"]
-   > ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
+#### Microsoft Edge Insider channels
 
-1. Create a group and assign the device configuration profile to that device group. 
+The Microsoft Edge team makes three preview channels available to the Edge Insider community: Beta, Dev, and Canary. Installing a preview channel doesn't uninstall the released version of Microsoft Edge on your HoloLens 2, and you can install more than one at the same time. 
 
-1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.  
+Visit the [Microsoft Edge Insider homepage](https://www.microsoftedgeinsider.com) to learn more about the Edge Insider community. To learn more about the different Edge Insider channels and get started, visit the [Edge Insider download page](https://www.microsoftedgeinsider.com/download).
 
-Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be active.
+There are a couple methods available for installing Microsoft Edge Insider channels to HoloLens 2:
 
-#### How to unset TenantLockdown’s RequireNetworkInOOBE on HoloLens 2 using Intune? 
-1. Remove the HoloLens 2 from the device group to which the device configuration created above was previously assigned. 
+**Direct install on device (currently only available to unmanaged devices)**
+  1. On your HoloLens 2, visit the [Edge Insider download page](https://www.microsoftedgeinsider.com/download).
+  1. Select the **Download for HoloLens 2** button for the Edge Insider channel you wish to install.
+  1. Launch the downloaded .msix file from the Edge download queue or from your device's "Downloads" folder (using File Explorer).
+  1. [App installer](app-deploy-app-installer.md) will launch.
+  1. Select the **Install** button.
+  1. After successful install, you'll find Microsoft Edge Beta, Dev, or Canary as a separate entry in the **All apps** list of the Start menu.
 
-1. Create a custom OMA URI based device configuration profile and specify false for RequireNetworkInOOBE as shown below. 
-OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+**Install via PC with Windows Device Portal (requires [developer mode](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) to be enabled on HoloLens 2)**
+  1. On your PC, visit the [Edge Insider download page](https://www.microsoftedgeinsider.com/download).
+  1. Select the **drop-down arrow button** next to the "Download for Windows 10" button for the Edge Insider channel you wish to install.
+  1. Select **HoloLens 2** in the drop-down menu.
+  1. Save the .msix file to the "Downloads" folder of your PC (or another folder you can easily find).
+  1. Use [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) on your PC to install the downloaded .msix file on HoloLens 2.
+  1. After successful install, you'll find Microsoft Edge Beta, Dev, or Canary as a separate entry in the **All apps** list of the Start menu.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
+> [!NOTE]
+> During this Windows Insider preview for HoloLens 2, the version of Microsoft Edge on your device may be higher than those available in some (or all) of the Microsoft Edge Insider channels. This is to ensure new features and fixes specifically targeting the web browser on HoloLens 2 are getting to our Windows Insiders as quickly as possible. Shortly after the public release of the next Windows update, the Microsoft Edge Insider channel builds will surpass, and stay ahead of, the version of Microsoft Edge on your HoloLens 2.
 
-1. Create a group and assign the device configuration profile to that device group. 
+### WebXR and 360 Viewer
 
-1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.
+*Added in Windows Insider build 20289.1000*
 
-Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the Hololens 2 device, effects of TenantLockdown will be inactive. 
+The new Microsoft Edge includes support for WebXR, which is the new standard for creating immersive web experiences (replacing WebVR). Many immersive web experiences were designed with VR in mind (they replace your field of view with a virtual environment), but these experiences are also supported by HoloLens 2. The WebXR standard also enables augmented and mixed reality immersive web experiences that use your physical environment. As developers spend more time with WebXR, we anticipate new augmented and mixed reality immersive experiences will arrive for HoloLens 2 customers to try!
 
-#### What would happen during OOBE, if Autopilot profile is unassigned on a HoloLens after TenantLockdown was set to true? 
-OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed. 
+The 360 Viewer extension is built on WebXR and automatically installs alongside the new Microsoft Edge on HoloLens 2. This web extension gives you the ability to immerse yourself in 360-degree videos. YouTube offers the largest selection of 360 videos, so we encourage you to start there.
 
-![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
+#### How to use WebXR
 
-### Global Assigned Access – Kiosk Mode
-This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail [here](hololens-global-assigned-access-kiosk.md).
+1. Navigate to a website with WebXR support.
+1. Select the **Enter VR** button on the website. The location and visual representation of this button may vary per website, but it may look similar to:
 
-### Automatic launch of an application in multiple-app kiosk mode 
-Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
+    ![Enter VR button example](images/75px-enter-vr.png)
 
-Application is automatically launched when user signs-in. 
+1. The first time you try to launch a WebXR experience on a specific domain, the browser will ask for consent to enter an immersive view, select **Allow**.
+1. Use [HoloLens 2 gestures](hololens2-basic-usage.md#the-hand-tracking-frame) to manipulate the experience.
+1. If the experience doesn't have an **Exit** button, use the [Start gesture](hololens2-basic-usage.md#start-gesture) to return home.
 
-```xml
-<AllowedApps>                     
-    <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
+**Recommended WebXR samples**
+- 360 Viewer (see next section)
+- [XR Dinosaurs](https://www.xrdinosaurs.com/)
+- [Barista Express](https://constructarca.de/game/barista-express/)
+- [WebXR Paint](https://threejs.org/examples/webxr_vr_paint.html)
+
+#### How to use 360 Viewer
+
+1. Navigate to a 360-degree video on YouTube.
+1. In the video frame, select the mixed reality headset button:
+
+    ![Button to activate 360 Viewer](images/enter-360-viewer.jpg)
+
+1. The first time you try to launch 360 Viewer on a specific domain, the browser will ask for consent to enter an immersive view. Select **Allow**.
+1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.
+
+#### Top WebXR and 360 Viewer known issues
+- In WebXR experiences, holograms may shift or tilt when you tilt your head or move around your environment.
+- Depending on the complexity of the WebXR experience, the framerate may drop or stutter.
+- Articulated hand joints are not yet available in WebXR.
+- When exiting a WebXR or 360 Viewer experience, it may take 30 seconds or more for holograms in the mixed reality home to reappear.
+- 360 videos from websites other than YouTube may not work as expected.
+- If 360 videos don't enter immersive view (or the mixed reality headset button doesn't appear), try refreshing the page.
+- Captions are not yet visible in 360 Viewer on HoloLens 2.
+- Pausing a video in 360 Viewer stops the video from rendering (but selecting the play button correctly resumes playback).
+- The "next video" button in 360 Viewer does not currently work.
+- You can play 2D videos in an immersive "theater" mode, but the framerate will be less than 30 fps.
+
+#### Providing feedback on WebXR and 360 Viewer
+
+Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge.
+
+### New Settings app
+
+With this release, we're introducing a new version of the Settings app. The new Settings app includes new features and expanded settings for HoloLens 2 in the following areas: Sound, Power & sleep, Network & Internet, Apps, Accounts, Ease of Access, and more.
+
+> [!NOTE]
+> Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.
+
+![New Settings app homepage](images/new-settings-app.png)
+
+**New features and settings**
+- Settings search: search for settings from the Settings homepage using keywords or the setting's name.
+- System > Sound:
+  - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input).
+    > [!NOTE]
+    > Bluetooth microphones are not supported by HoloLens 2.
+  - App volume: independently adjust the volume of each app.
+- System > Power & sleep: choose when the device should go to sleep after a period of inactivity.
+- System > Battery: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically.
+- Devices > USB: you can disable USB connections by default.
+- Network & Internet:
+  - USB-C Ethernet adapters will now appear in Network & Internet.
+  - USB-C Ethernet adapter settings are now available, including its IP address.
+  - You can now enable airplane mode on HoloLens 2.
+- Apps: you can reset the default apps used for file and link types. For more information see [Default app picker](#default-app-picker).
+- Accounts > Other users: device owners can add users, upgrade standard users to device owners, downgrade device owners to standard users, and remove users.
+- Ease of Access: change text size and some visual effects.
+
+**Known issues**
+- Previously placed Settings windows will be removed (see note above).
+- Visiting the Notifications page may crash the Settings app (investigating).
+- The Ethernet page currently doesn't show up (to be fixed soon).
+- You can no longer rename your device with the Settings app (IT admins can use provisioning packages or MDM to rename devices).
+- Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
+
+### Display color calibration
+
+*Added in Windows Insider build 20293.1000*
+
+With this new setting, you can select an alternative color profile for your HoloLens 2 display. This may help colors appear more accurate, especially at lower display brightness levels. Display color calibration can be found in the Settings app, on the System > Calibration page.
+
+#### How to use display color calibration
+
+1. Launch the **Settings** app and navigate to **System > Calibration**.
+1. Under **Display color calibration**, select the **Run display color calibration** button.
+1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position.
+1. After you proceed through the instruction dialog boxes, your display will automatically be dimmed to 30% brightness.
+    > [!TIP]
+    > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
+1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
+
+    ![Display color calibration scene](images/color-cal-ui.png)
+    
+1. When you're happy with the selected profile, select the **Save & Exit** button
+1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
+
+> [!TIP]
+> Here are some helpful tips to keep in mind while using the display color calibration setting:
+> - You can re-run display color calibration from Settings whenever you'd like
+> - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change will be reflected on the Settings page
+> - When you re-run display color calibration, the color profile that was previously saved will be highlighted and Profile 0 will not appear (as Profile 0 represents the display's original color profile)
+> - If you want to revert to the display's original color profile, you can do so from the Settings page (see [how to reset color profile](#how-to-reset-color-profile))
+
+#### How to reset color profile
+
+If you're unhappy with the custom color profile saved to your HoloLens 2, you can restore the device's original color profile:
+1. Launch the **Settings** app and navigate to **System > Calibration**.
+1. Under **Display color calibration**, select the **Reset to default color profile** button.
+1. Your display will turn off for several seconds as it resets. We recommend you also restart your device *after* the display turns back on (see [known issues](#top-display-color-calibration-known-issues)).
+
+#### Top display color calibration known issues
+
+- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings 
+    - Workaround: Select another Settings page and then re-select the Calibration page.
+- The "Reset to default color profile" button opens a dialog box which has no text. The "Reset" button in the dialog box works as intended, however.
+- After you select the "Reset" button, your display may go blank for 5-10 seconds and you may notice unexpected behavior in the mixed reality home. Please restart your device after using the “Reset” button (we’ll be fixing this soon to automatically restart your device and we'll update the Settings text accordingly).
+- If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
+- You may need to try pressing the brightness buttons on the left side of your device up/down a few times before they work as expected.
+
+### Default app picker
+
+When you activate a hyperlink or open a file type with more than one installed app, which supports it, you will see a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
+
+![App picker window](images/default-app-picker.png)
+
+If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. Scroll to the bottom of the page and select the **Clear** button under "Default apps for file types" and/or "Default apps for link types." Unlike the similar setting on desktop PCs, you can't reset individual file type defaults.
+
+### Office web app
+
+The Office web app has been added to the "All apps" list in the Start menu. This web app can also be pinned to Start or uninstalled. Because this is a web app, its functionality matches exactly what you'd experience by visiting https://www.office.com. Office web app functionality is only available when your HoloLens 2 has an active internet connection.
+
+### Swipe to type
+
+Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the spacebar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
+
+Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). We are evaluating this feature for public release, so your feedback is important; whether you find the feature useful or you have constructive feedback, please let us know via [Feedback Hub](hololens-feedback.md).
+
+### USB-C External Microphone Support
+
+> [!IMPORTANT]
+> Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
+
+Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C microphones can be used for calling, recording, etc.
+
+Open the **Settings** app and select **System** -> **Sound**.
+
+![Sound Settings](images/usbc-mic-1.jpg)
+
+> [!IMPORTANT]
+> To use external microphones with **Remote Assist**, users will need to click the “Manage sound devices” hyperlink.
+>
+> Then use the drop-down to set the external microphone as either **Default** or **Communications Default.** Choosing **Default** means that the external microphone will be used everywhere.
+>
+> Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
+
+![Manage sound devices](images/usbc-mic-2.png)
+
+<br>
+
+![Set microphone default](images/usbc-mic-3.jpg)
+
+#### What about Bluetooth microphone support?
+
+Unfortunately Bluetooth microphones are still not currently supported on HoloLens 2.
+
+#### Troubleshooting USB-C microphones
+
+Be aware that some USB-C microphones incorrectly report themselves as both a microphone *and* a speaker. This is a problem with the microphone and not with HoloLens. When plugging one of these microphones into HoloLens, sound may be lost. Fortunately there is a simple fix.  
+
+In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
+
+![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
+
+### Use the new Settings and Edge apps in Kiosk modes
+
+When including apps in [Kiosks](hololens-kiosk.md), an IT Admin often adds the app to the Kiosk but using it's App User Model ID (AUMID). Because both the Settings app and Microsoft Edge app are considered new apps and different than the older apps Kiosks that use AUMIDs for those apps will need to be updated to use the new AUMID.
+
+When modifying a Kiosk to include the new apps, we recommend adding in the new AUMID as well as leaving the old one. This will create an easy transition when users update the OS and won't need to receive new policies to keep using the Kiosk as intended.
+
+| App                    | AUMID                                                  |
+|------------------------|--------------------------------------------------------|
+| Old Settings App       | HolographicSystemSettings_cw5n1h2txyewy!App            |
+| New Settings App       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App |
+| Old Microsoft Edge app | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
+| New Microsoft Edge app | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE    |
+
+### New SettingsURIs for Page Settings Visibility
+
+In [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) we added the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. PageVisibilityList is a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.
+
+If you visit [Page Settings Visibility](settings-uri-list.md), you can find instructions to use this CSP and the list of URIs available in previous releases.
+
+In Windows Insider builds we are expanding upon the list of list of available Settings URIs, which IT Admins can manage. Some of these URIs are for newly available areas within the new Settings app. If you are using Settings/PageVisibilityList policy, review the following list and adjust your allowed or blocked pages as needed.
+
+> [!NOTE]
+> **Deprecated: ms-settings:network-proxy**
+>
+> One settings page is deprecated in these newer builds. The old **Network & Internet** > **Proxy** page is no longer available as a global setting. The new per-connection proxy settings can be found under **Network & Internet** > **Wi-Fi** > **Properties** or **Network & Internet** > **Ethernet** > **Properties**.
+
+<br>
+
+| Settings page                                        | URI                                              |
+|------------------------------------------------------|--------------------------------------------------|
+| Apps > Apps & features                               | `ms-settings:appsfeatures`                         |
+| Apps > Apps & features > Advanced options          | `ms-settings:appsfeatures-app`                     |
+| Apps > Offline maps                                  | `ms-settings:maps`                                 |
+| Apps > Offline maps > Download maps                  | `ms-settings:maps-downloadmaps`                    |
+| Devices > Mouse                                      | `ms-settings:mouse`                                |
+| Devices > USB                                        | `ms-settings:usb`                                  |
+| Network & Internet > Airplane mode                   | `ms-settings:network-airplanemode`                 |
+| Privacy > General                                    | `ms-settings:privacy-general`                      |
+| Privacy > Ink & typing personalization             | `ms-settings:privacy-speechtyping`                 |
+| Privacy > Motion                                     | `ms-settings:privacy-motion`                       |
+| Privacy > Screenshot borders                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
+| Privacy > Screenshots and apps                       | `ms-settings:privacy-graphicsCaptureProgrammatic`  |
+| System > Battery                                     | `ms-settings:batterysaver`                         |
+| System > Battery                                     | `ms-settings:batterysaver-settings`                |
+| System > Sound                                       | `ms-settings:sound`                                |
+| System > Sound > App volume and device preferences | `ms-settings:apps-volume`                          |
+| System > Sound > Manage sound   devices              | `ms-settings:sound-devices`                        |
+| System > Storage > Configure Storage Sense         | `ms-settings:storagepolicies`                      |
+| Time & Language > Date & time                        | `ms-settings:dateandtime`                          |
+| Time & Language > Keyboard                           | `ms-settings:keyboard`                             |
+| Time & Language > Language                           | `ms-settings:language`                             |
+| Time & Language > Language                           | `ms-settings:regionlanguage-languageoptions`       |
+| Update & Security > Reset & recovery               | `ms-settings:reset`                                |
+
+#### Updated URIs
+
+Previously the following two URIs would not take a user directly to the pages indicated but only blocked the main updates page. The following items have been updated to direct to their pages:
+
+- `ms-settings:windowsupdate-options`
+- `ms-settings:windowsupdate-restartoptions`
 
 ### Kiosk mode behavior changes for handling of failures
 
-Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Starting in this Windows Insider build, in case of failures, no apps will be shown in the start menu as below: 
+In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)” menu.
 
-![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+Starting in Windows Insider release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
-#### Updates
-Updates can be configured for this method as well, so even though the user is not installing via the Microsoft Store they can still receive updates. Updates can be configured to be based on app lauch or scheduled. To read more about how to set this up [visit this page](https://docs.microsoft.com/windows/msix/app-installer/update-settings). 
+### Configuring Fallback Diagnostics via Settings app
 
-### HoloLens Policies
-New mixed reality policies have been created for HoloLens 2 devices on builds 19041.1349+. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
-
-| New HoloLens policy                                | Description                                                                               | Notes                                                                |
-|----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| MixedReality\BrightnessButtonDisabled              | Allows brightness buttons to be disabled so pressing it does not change brightness.       | 1 Yes, 0 No (default)                                                |
-| MixedReality\VolumeButtonDisabled                  | Allows volume buttons to be disabled so pressing it does not change volume.               | 1 Yes, 0 No (default)                                                |
-| MixedReality\MicrophoneDisabled                    | Disables microphone so no audio recording is possible on HoloLens 2.                      | 1 Yes, 0 No (default)                                                |
-| MixedReality\FallbackDiagnostics                   | Controls behavior of when diagnostic logs can be collected.                               | 0 Disabled, 1 Enabled for Device Owners, 2 Enabled for all (Default) |
-| MixedReality\HeadTrackingMode                      | Reserved for future use.                                                                  |                                                                      |
-| MixedReality\AADGroupMembershipCacheValidityInDays | Controls how many days AAD group membership cache is used for Kiosk targeting AAD groups. | See below.                                                           |
-
-### Cache AAD Group membership for offline Kiosk
-
-This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
-
-Name: AADGroupMembershipCacheValidityInDays 
-URI value: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
-
-Min - 0 days  
-Max - 60 days 
-
-Steps to use this policy correctly: 
-1. Create a device configuration profile for kiosk targeting AAD groups and assign it to HoloLens device(s). 
-1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s). 
-    1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
-    1. The value can be between min / max allowed.
-1. Enroll HoloLens devices and verify both configurations get applied to the device. 
-1. Let AAD user 1 sign-in when internet is available, once user signs-in and AAD group membership is confirmed successfully, cache will be created. 
-1. Now AAD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days. 
-1. Steps 4 and 5 can be repeated for any other AAD user N. Key point here is that any AAD user must sign-in to device using Internet so at least once we can determine that they are member of AAD group to which Kiosk configuration is targeted. 
- 
-> [!NOTE]
-> Until step 4 is performed for a AAD user will experience failure behavior mentioned below in “disconnected” environments. 
-
-### New device restriction policies for HoloLens 2
-Newly enabled policies that allow for more management options of HoloLens 2 devices. 
-- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
-- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
-- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
-- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp) *
-
->[!NOTE]
-> In regard to [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp), HoloLens will only support the ./Vendor/MSFT/RemoteLock/Lock configuration. The configurations dealing with PIN such as reset and recover are not supported.
-
-### New power policies for Hololens 2
-These newly added policies allow admins to control power states, such as idle timeout. To read more about each individual policy please click the link for that policy.
-
-|     Policy documentation link                |     Notes                                                                                                                                       |
-|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
-|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
-|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Example value to use in Windows Configuration Designer,   i.e., 100                                                                             |
-|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Example value to use in Windows Configuration   Designer, i.e., 100                                                                          |
-|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Example value to use in   Windows Configuration Designer, i.e.,   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
-|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+Now in Settings App, a user can configure the behavior of [Fallback Diagnostics](hololens-diagnostic-logs.md). In the Settings app navigate to **Privacy** -> **Troubleshooting** page to configure this setting.
 
 > [!NOTE]
-> For consistent experience on HoloLens 2, please ensure that values for both DisplayOffTimeoutOnBattery and StandbyTimeoutOnBattery are set as same value. Same applies to DisplayOffTimeoutPluggedIn and StandbyTimeoutPluggedIn. Refer to [Display, sleep, and hibernate idle timers](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) for more details about modern standby.
+> If there is MDM policy configured for the device, user will not be able to override that behavior.  
 
-### Newly enabled Update policies for HoloLens
-These update policies are now enabled on HoloLens 2 devices:
--	[Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
--	[Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
--	[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
--	[Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+### Share things with nearby devices
 
-### Enabled Settings page visibility for HoloLens 2
-We’ve now enabled a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. To learn how to fully customize this feature click the link below.
+Share things with near by Windows 10 devices, including both PCs and other HoloLens 2 devices running HoloLens Insider builds 20279.1006+. You can try it out in **Settings** -> **System** -> **Shared Experiences** to share files or URLs from a HoloLens to a PC. For more details read more about how to [Share things with nearby devices in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
 
-- [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+This feature can be managed via [Connectivity/AllowConnectedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices).
 
-To learn which page settings you can customize on HoloLens 2, please visit our [Settings URIs page](settings-uri-list.md). 
- 
-![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
+### New OS Update troubleshooter
 
-### Research mode
-While in Research Mode, the HoloLens 2 becomes a potent tool for computer vision research. Compared to previous editions, Research Mode for HoloLens 2 has the following advantages:
--	In addition to sensors exposed in HoloLens (1st gen) Research Mode, we now provide IMU sensor access including an accelerometer, gyroscope, and magnetometer.
--	HoloLens 2 provides new capabilities that can be used together with Research Mode. Specifically, access to articulated hand-tracking and eye-tracking APIs that can deliver a richer set of experiments.
-
-Researchers now have the option of enabling Research Mode on their HoloLens devices to access all of these external facing raw image sensors streams. Research Mode for HoloLens 2 also provides access to the accelerometer, gyroscope, and magnetometer readings. To protect users’ privacy, raw eye-tracking camera images are not available through Research Mode, but eye-gaze direction  is available through existing APIs.
-
-Check out the [Research Mode documentation](https://docs.microsoft.com/windows/mixed-reality/research-mode) for further technical details.
+In addition to the previous troubleshooters within the Settings app, a new troubleshooter has been added with the addition of the new Settings app for OS Updates. Navigate to **Settings** -> **Update &amp; Security** -> **Troubleshoot** -> **Windows Update** and select **Start**. This allows you to collect traces while reproducing your issue with OS Updates to assist better in troubleshooting with your IT or support.
 
 ### Improvements and fixes in the update:
-- Updated policy to disable enumeration of USB functions through MDM for NCM for AllowUsbConnection.
-- More screens in OOBE  are now in dark mode.
-- Learn more content should point to the latest Privacy Statement online.
-- Addressed an issue where users could not provision VPN profiles through provisioning packages.
-- Addressed an issue that prevented a HoloLens device from showing up in File Explorer over Media Transfer Protocol (MTP) when the device is set up as a [single-app kiosk](hololens-kiosk.md). Note that MTP (and USB connection in general) can still be disabled using the [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) policy.
+
+- [Offline diagnostics](hololens-diagnostic-logs.md#offline-diagnostics) will also include additional device information for serial number and OS version.
+
+
+
+
+
 
 ## Start receiving Insider builds
 
@@ -309,13 +437,24 @@ Then, select **Active development of Windows**, choose whether you'd like to rec
 
 Select **Confirm > Restart Now** to finish up. After your device has rebooted, go to **Settings > Update & Security > Check for updates** to get the latest build.
 
+### Update error 0x80070490 work-around
+If you encounter an update error 0x80070490 when updating on the Dev or Beta channel, try the following short-term work around. It involves moving your insider channel, picking up the update and then moving your Insider channel back.
+
+#### Stage one - Release Preview
+1.	Settings, Update & Security, Windows Insider Program, select **Release Preview Channel**.
+2.	Settings, Update & Security, Windows Update, **Check for updates**. After the update, continue on to Stage two.
+
+#### Stage two - Dev Channel
+1. Settings, Update & Security, Windows Insider Program, select **Dev Channel**.
+2. Settings, Update & Security, Windows Update, **Check for updates**.
+
 ## FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
 1. On PC:
 
     1. Download ffu to your PC from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
     
-    1. Install ARC (Advanced Recovery Companion) from the Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. Install ARC (Advanced Recovery Companion) from the Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
     
 1. On HoloLens - Flight Unlock: Open **Settings** > **Update & Security** > **Windows Insider Program** then sign up, reboot device.
 

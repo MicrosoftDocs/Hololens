@@ -1,6 +1,6 @@
 ---
 title: State separation and isolation
-description: State separation and isolation
+description: Learn about state separation, isolation, code signing, and defender applications on your HoloLens 2 mixed reality device.
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran

@@ -1,6 +1,6 @@
 ---
 title: Set up HoloLens in a commercial environment
-description: Learn more about deploying and managing HoloLens in enterprise environments.
+description: Learn more about deploying and managing HoloLens in enterprise environments, including infrastructure, azure active directory, and mobile device management.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -10,7 +10,7 @@ ms.reviewer: aboeger
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/30/2020
+ms.date: 11/04/2020
 ---
 
 # HoloLens 2 enterprise deployment and management
@@ -40,27 +40,27 @@ HoloLens 2 is designed specifically to be managed by Mobile Device Management (M
 > Traditional on premises PC management systems like System Center Configuration Manager are not supported on HoloLens 2.
 
 ### Windows Update for Business
-Microsoft designed Windows Update for Business to provide IT administrators with additional Windows Update-centric management capabilities, such as the ability to deploy updates to groups of devices and to define maintenance windows for installing updates. Details for managing HoloLens 2 updates can be found [here](https://docs.microsoft.com/hololens/hololens-updates).
+Microsoft designed Windows Update for Business to provide IT administrators with additional Windows Update-centric management capabilities, such as the ability to deploy updates to groups of devices and to define maintenance windows for installing updates. See the [HoloLens updates](https://docs.microsoft.com/hololens/hololens-updates) documentation for details on managing HoloLens 2 updates.
 
 ### Certificates
-HoloLens 2 supports deployment of certificates through MDM if your environment requires certificates for Corp Wi-Fi network authentication or access to other resources. Some MDM infrastructure configurations may be required to enable certificate deployments to HoloLens 2. Read about how to [prepare certificates and network profiles for HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). Intune details can be found [here](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+HoloLens 2 supports deployment of certificates through MDM if your environment requires certificates for Corp Wi-Fi network authentication or access to other resources. Some MDM infrastructure configurations may be required to enable certificate deployments to HoloLens 2. Read about how to [prepare certificates and network profiles for HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). If you're using Intune, check out the [certification configuration](https://docs.microsoft.com/mem/intune/protect/certificates-configure) details.
 
 ## Configure
 
 MDM administrators can define and implement policy settings on any corporate device enrolled in an MDM system. What configuration settings you use will differ based on the deployment scenario. In Windows 10, Configuration Service Providers (CSP)s are an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. For more information about Windows 10 device management CSPs for HoloLens 2, see the full list of [CSPs supported in HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).
 
-HoloLens 2 also supports setting a limited set of CSP configurations through custom Provisioning Packages. Provisioning Packages are typically leveraged for non-MDM managed devices and require to be manually applied to each device. More information in building custom Provisioning Packages can be found [here](https://docs.microsoft.com/hololens/hololens-provisioning).
+HoloLens 2 also supports setting a limited set of CSP configurations through custom provisioning packages. Provisioning packages are typically leveraged for non-MDM managed devices and require to be manually applied to each device. See the [HoloLens provisioning](https://docs.microsoft.com/hololens/hololens-provisioning) documentation for details on building custom provisioning packages.
 
 > [!NOTE]
 > HoloLens 2 supports [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot), providing an easy and simple process for managing your corporate Windows 10 device configurations.
 
 ### Identity Management
 
-Employees can use only one account to initialize a device so it&#39;s imperative that your organization controls which account is enabled first. The account chosen will determine who controls the device and influence your management capabilities. HoloLens 2 supports 3 account types: Local User account, personal Microsoft Account, and Azure Active Directory Accounts. It is highly recommended to leverage Azure Active Directory for your enterprise identity management solution, as it will enable the full capabilities on your HoloLens 2 devices. More details regarding Identities on HoloLens 2 can be found [here](https://docs.microsoft.com/hololens/hololens-identity).
+Employees can use only one account to initialize a device so it&#39;s imperative that your organization controls which account is enabled first. The account chosen will determine who controls the device and influence your management capabilities. HoloLens 2 supports 3 account types: Local User account, personal Microsoft Account, and Azure Active Directory Accounts. It is highly recommended to leverage Azure Active Directory for your enterprise identity management solution, as it will enable the full capabilities on your HoloLens 2 devices. Check out [HoloLens identity](https://docs.microsoft.com/hololens/hololens-identity) for more details on Identities for HoloLens 2.
 
 ### Network and Connectivity
 
-As HoloLens 2 is a cloud first device, network access to online resources is required for full functionality and capabilities to be made available. If you are deploying HoloLens 2 devices with connectivity to your corporate intranet network, you may be required to update your proxy/firewall rules to allow access to HoloLens 2 cloud services. A list of common endpoints needed for the HoloLens 2 operating system can be found [here](https://docs.microsoft.com/hololens/hololens-offline). Access to additional endpoints may be required for applications or other cloud services to run on HoloLens 2 successfully.
+As HoloLens 2 is a cloud first device, network access to online resources is required for full functionality and capabilities to be made available. If you are deploying HoloLens 2 devices with connectivity to your corporate intranet network, you may be required to update your proxy/firewall rules to allow access to HoloLens 2 cloud services. For more information, take a look at the list of [common endpoints for the HoloLens 2 operating system](https://docs.microsoft.com/hololens/hololens-offline). Access to additional endpoints may be required for applications or other cloud services to run on HoloLens 2 successfully.
 
 Some common HoloLens 2 services requiring additional endpoint access are as follows:
 
@@ -74,7 +74,7 @@ If certificates are required for access to corporate Wi-Fi networks or other ser
 
 ### Security Review
 
-Most enterprise IT departments will require assessment and review of new devices being deployed to a corporate enterprise network. If your organization is requiring a security review of HoloLens 2, you can [find more details here to assist with obtaining security approvals](https://docs.microsoft.com/hololens/security-overview).
+Most enterprise IT departments will require assessment and review of new devices being deployed to a corporate enterprise network. If your organization needs a security review of HoloLens 2, you can find more details to assist with [obtaining security approvals](https://docs.microsoft.com/hololens/security-overview).
 
 ### Common HoloLens 2 Device Settings
 
@@ -135,7 +135,7 @@ For more details about configuring a HoloLens 2 in Kiosk Mode, see [Setup HoloLe
 
 ### MDM Device Enrollment
 
-For enterprise deployments, it is recommended to [enroll devices](https://docs.microsoft.com/hololens/hololens-enroll-mdm) into MDM as corporate devices only with Azure AD join and automatic MDM enrollment (AAD+MDM). This requires Azure AD Premium and supports automatic enrollment to several MDM providers including Intune.
+For enterprise deployments, it is recommended to [enroll devices](https://docs.microsoft.com/hololens/hololens-enroll-mdm) into MDM as corporate devices only with Azure AD join and automatic MDM enrollment (Azure AD+MDM). This requires Azure AD Premium and supports automatic enrollment to several MDM providers including Intune.
 
 Learn more about the self-deploying enrollment method [Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot).
 
@@ -145,7 +145,7 @@ User productivity on mobile devices is often driven by apps.
 
 Windows 10 makes it possible to develop apps that work seamlessly across multiple devices using the Universal Windows Platform (UWP) for Windows apps.
 
-There are multiple ways to deploy applications to HoloLens 2 devices. Apps can be deployed directly through MDM, the Microsoft Store for Business, or sideloaded through a Provisioning Package. More [details regarding app deployment can be found here](https://docs.microsoft.com/hololens/app-deploy-overview).
+There are multiple ways to deploy applications to HoloLens 2 devices. Apps can be deployed directly through MDM, the Microsoft Store for Business, or sideloaded through a provisioning package. Check out the [app deployment](https://docs.microsoft.com/hololens/app-deploy-overview) documentation for more details.
 
 > [!NOTE]
 > HoloLens 2 supports running of UWP ARM64 apps only.
@@ -164,7 +164,7 @@ Microsoft will also deliver and install updates for security and stability direc
 
 Enterprise customers can manage the update experience and process on HoloLens 2s using an MDM system. In most cases, policies to manage the update process will apply to both feature and quality updates. More details in [configuring MDM for HoloLens updates](https://docs.microsoft.com/hololens/hololens-updates).
 
-### Managing Applications 
+### Managing Applications
 
 IT administrators can control which apps are allowed to be installed on the HoloLens 2 and how they should be kept up-to-date.
 
@@ -183,3 +183,6 @@ HoloLens 2 supports 3 methods of wiping the device
 **Device Reset from within Settings:** End users can manually reset the HoloLens 2 within the Settings app on the device. Erases all stored data on the device.
 
 **Advanced Recovery Companion (ARC):** From a PC running the ARC tool, a user or admin can flash a HoloLens 2 connected to the PC via USB cable. Erases all stored data on the device.
+
+> [!div class="nextstepaction"]
+> [Common Deployment Scenarios](common-scenarios.md)

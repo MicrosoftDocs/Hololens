@@ -1,6 +1,6 @@
 ---
 title: Encryption and Data Protection
-description: Encryption and Data Protection
+description: Learn about encryption and data protection on HoloLens 2 devices, including BitLocker and Azure integration.
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
