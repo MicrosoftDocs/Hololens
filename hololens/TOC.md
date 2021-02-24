@@ -94,6 +94,7 @@
 ### [Prepare certificates and network profiles for HoloLens 2](hololens-certificates-network.md)
 ### [Manage connection endpoints for HoloLens](hololens-offline.md)
 ### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
+### [Connect to Cellular and 5G](hololens-cellular.md)
 ## [Certificate Manager](certificate-manager.md)
 
 # Deploy
