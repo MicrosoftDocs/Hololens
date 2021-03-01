@@ -220,9 +220,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 
 **Known issues**
 - Previously placed Settings windows will be removed (see note above).
-- Visiting the Notifications page may crash the Settings app (investigating).
-- The Ethernet page currently doesn't show up (to be fixed soon).
-- You can no longer rename your device with the Settings app (IT admins can use provisioning packages or MDM to rename devices).
+- You can no longer rename your device with the Settings app. IT admins can rename devices using the MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) by specifying the Ext/Microsoft/DNSComputerName node.
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
 
 ### Display color calibration
