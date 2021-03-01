@@ -52,6 +52,7 @@ This feature update contains features for two target audiences. Features that ca
 | [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App | IT Admin | 20279.1006 |
 | [Share things with nearby devices](#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC | All | 20279.1006 |
 | [New OS Update troubleshooter](#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates | IT Admin | 20279.1006 |
+| [Delivery Optimization Preview](#delivery-optimization-preview) | Reduce bandwidth consumption for downloads from multiple HoloLens devices | IT Admin | 20301.1000 |
 | [Improvements and fixes in the update](#improvements-and-fixes-in-the-update) | Additional fixes in the update. | All | 20279.1006 |
 
 ### IT Admin - Update Checklist
@@ -356,25 +357,28 @@ A new menu that allows the user to sign out, shut down and restart the device. A
 
 #### How to use
 
-1. Open the HoloLens Start screen using the [Start gesture](hololens2-basic-usage.md#start-gesture) or saying "Go to Start"
-1. Notice the ellipsis icon (...) next to the user profile picture:
+1. Open the HoloLens Start screen using the [Start gesture](hololens2-basic-usage.md#start-gesture) or saying "Go to Start".
 
- <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
+2. Notice the ellipsis icon (...) next to the user profile picture:
 
-3. Select the user profile picture using your hands or the voice command "Power"
+   <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
+
+3. Select the user profile picture using your hands or the voice command "Power".
+
 4. A menu appears with options to Sign out, Restart or Shut down the device:
 
- <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
+   <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
 5. Select the menu options to sign out, restart or shut down your HoloLens. The Sign out option might not be available, if the device is set up for a [single Microsoft Account (MSA) or local account](hololens-identity.md).
+
 6. Dismiss the menu by touching anywhere else or closing the Start menu with the Start gesture.
 
 #### Update indicator
 
 When an update is available, the ellipsis icon will light up to indicate that a restart will install the update
-The menu options also change to reflect the presence of the update.
+The menu options also change to reflect the presence of the update.<br/><br/>
 
- <img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
+<img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
 
 ### USB-C External Microphone Support
 
@@ -383,7 +387,7 @@ The menu options also change to reflect the presence of the update.
 
 Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C microphones can be used for calling, recording, etc.
 
-Open the **Settings** app and select **System** -> **Sound**.
+Open the **Settings** app and select **System** > **Sound**.
 
 ![Sound Settings](images/usbc-mic-1.jpg)
 
@@ -516,7 +520,32 @@ This feature can be managed via [Connectivity/AllowConnectedDevices](https://doc
 
 ### New OS Update troubleshooter
 
-In addition to the previous troubleshooters within the Settings app, a new troubleshooter has been added with the addition of the new Settings app for OS Updates. Navigate to **Settings** -> **Update &amp; Security** -> **Troubleshoot** -> **Windows Update** and select **Start**. This allows you to collect traces while reproducing your issue with OS Updates to assist better in troubleshooting with your IT or support.
+In addition to the previous troubleshooters within the Settings app, a new troubleshooter has been added with the addition of the new Settings app for OS Updates. Navigate to **Settings** -> **Update &amp; Security** > **Troubleshoot** > **Windows Update** and select **Start**. This allows you to collect traces while reproducing your issue with OS Updates to assist better in troubleshooting with your IT or support.
+
+### Delivery Optimization Preview
+
+With this HoloLens Insider update, Windows Holographic for Business enables an early preview for delivery optimization settings to reduce bandwidth consumption for downloads from multiple HoloLens devices. A fuller description of this functionality along with the recommended network configuration is available here: [Delivery Optimization for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
+
+The following settings are enabled as part of the management surface and [can be configured from Intune](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings):
+
+- [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)
+- [DOCacheHostSource](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehostsource)
+- [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)
+- [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)
+- [DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)
+- [DOMaxBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxbackgrounddownloadbandwidth)
+- [DOMaxForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxforegrounddownloadbandwidth)
+- [DOPercentageMaxBackgroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
+- [DOPercentageMaxForegroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth)
+- [DOSetHoursToLimitForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+- [DOSetHoursToLimitBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
+
+A few caveats about this preview offering:
+
+- HoloLens support is limited in this preview to OS updates only.
+- Windows Holographic for Business only supports HTTP download modes and downloads from a [Microsoft Connected Cache endpoint](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache); peer-to-peer download modes and group assignments are not supported for HoloLens devices at this time.
+- HoloLens does not support deployment or delivery optimization for Windows Server Update Services endpoints.
+- Troubleshooting will require either diagnostics on the Connected Cache server or collecting a trace on HoloLens on HoloLens via **Settings** > **Update & Security** >  **Troubleshooting** >  **Windows Update**.
 
 ### Improvements and fixes in the update:
 
