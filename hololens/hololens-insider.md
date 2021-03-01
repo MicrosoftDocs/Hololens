@@ -80,6 +80,10 @@ This update now keeps devices more controlled by Kiosk mode, allowing for it to 
 
 IF you are currently using [Page Settings Visibility](settings-uri-list.md) then you may wish to make adjustments to your existing URIs you have either allowed or blocked.
 
+#### Updates for your WDAC policy
+
+If you were previously blocking Microsoft Edge via WDAC, you'll want to update your WDAC policy. Please [review the following](#using-wdac-to-block-new-microsoft-edge) and use the sample code provided.
+
 #### Newly configurable items
 
 - [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app)
@@ -184,6 +188,12 @@ There are a couple methods available for installing Microsoft Edge Insider chann
 
 > [!NOTE]
 > During this Windows Insider preview for HoloLens 2, the version of Microsoft Edge on your device may be higher than those available in some (or all) of the Microsoft Edge Insider channels. This is to ensure new features and fixes specifically targeting the web browser on HoloLens 2 are getting to our Windows Insiders as quickly as possible. Shortly after the public release of the next Windows update, the Microsoft Edge Insider channel builds will surpass, and stay ahead of, the version of Microsoft Edge on your HoloLens 2.
+
+#### Using WDAC to block new Microsoft Edge
+
+For IT Admins looking to update their [WDAC policy](windows-defender-application-control-wdac.md) to block the new Microsoft Edge app, you'll need to add the following to your policy.
+
+``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
 
 ### WebXR and 360 Viewer
 
