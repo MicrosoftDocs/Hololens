@@ -40,6 +40,8 @@ landingContent:
             url: hololens-calibration.md
           - text: How to Update HoloLens
             url: hololens-update-hololens.md
+          - text: Microsoft Mesh (Preview)
+            url: /mesh/overview
 
   # Card
   - title: Deployment Guides
@@ -160,8 +162,6 @@ landingContent:
             url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
           - text: Cloud Services Overview
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
-          - text: Microsoft Mesh (Preview)
-            url: /mesh/overview
 
   # Card
   - title: Support
