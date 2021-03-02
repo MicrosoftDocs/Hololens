@@ -41,6 +41,7 @@
 ### [Improve visual quality and comfort](hololens-calibration.md)
 ### [Map physical spaces with HoloLens](hololens-spaces.md) 
 ## [How to Update HoloLens](hololens-update-hololens.md)
+## [Microsoft Mesh (Preview)](/mesh/overview)
 
 # Prepare
 ## [Deploy HoloLens in a commercial environment](hololens-requirements.md)

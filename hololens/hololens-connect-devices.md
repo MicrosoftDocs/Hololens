@@ -32,7 +32,7 @@ HoloLens (1st gen) supports the following classes of Bluetooth devices:
 
 - Mouse
 - Keyboard
-- HoloLens (1st gen) clicker
+- [HoloLens (1st gen) clicker](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
 > Other types of Bluetooth devices, such as speakers, headsets, smartphones, and game pads, may be listed as available in HoloLens settings. However, these devices aren't supported on HoloLens (1st gen). For more information, see [HoloLens Settings lists devices as available, but the devices don't work](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work).
@@ -46,20 +46,6 @@ HoloLens (1st gen) supports the following classes of Bluetooth devices:
 1. Select **Devices**, and make sure that Bluetooth is on.  
 
 1. When you see the device name, select **Pair**, and then follow the instructions.
-
-### HoloLens (1st gen): Pair the clicker
-
-1. Use the bloom gesture to go to **Start**, and then select **Settings**.
-
-1. Select **Devices**, and make sure that Bluetooth is on.
-
-1. Use the tip of a pen to press and hold the clicker pairing button until the clicker status light blinks white. Make sure to hold down the button until the light starts blinking.  
-
-   The pairing button is on the underside of the clicker, next to the finger loop.
-
-   ![The pairing button is beside the finger loop](images/use-hololens-clicker-1.png)
-
-1. On the pairing screen, select **Clicker** > **Pair**.
 
 ## Disable Bluetooth
 
