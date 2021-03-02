@@ -64,9 +64,10 @@
 ### [Encryption and data protection](security-encryption-data-protection.md)
 ### [Network security](security-network-security.md)
 ### [Security engineering ](security-engineering.md)
-### HoloLens 1st Gen Security
+### HoloLens 1st Gen Security 
 #### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
 #### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
+### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
 ## [License requirements](hololens-licenses-requirements.md)
 ## Environment
 ### [HoloLens environment considerations](hololens-environment-considerations.md)
@@ -106,6 +107,7 @@
 ### [Microsoft Store for Business](app-deploy-store-business.md)
 ### [Provisioning Package](app-deploy-provisioning-package.md)
 ### [App Installer](app-deploy-app-installer.md)
+### [Mesh App for HoloLens (Preview)](/mesh/mesh-app)
 
 # Maintain
 ## [Manage HoloLens updates](hololens-updates.md)
