@@ -43,7 +43,7 @@ Devices that do not present themselves as an ethernet adapter must support the g
 
 Devices that are not RNDIS compatible, or require a driver or application to be installed, are not supported.
 
-While Microsoft does not maintain a list of compatible devices, there is a community discussion on the topic [here](http://aka.ms/HLCommunityCell).
+While Microsoft does not maintain a list of compatible devices, there is a community discussion on the topic [here](https://aka.ms/HLCommunityCell).
 
 ### Connecting to a tethered device
 
