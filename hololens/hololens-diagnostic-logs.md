@@ -27,6 +27,7 @@ HoloLens users and administrators can choose from among four different methods t
 - Feedback Hub app
 - DiagnosticLog CSP
 - Settings app
+- Offline Diagnostics
 
 > [!IMPORTANT]  
 > Device diagnostic logs contain personally identifiable information (PII), such as about what processes or applications the user starts during typical operations. When multiple users share a HoloLens device (for example, users sign in to the same device by using different Microsoft Azure Active Directory (Azure AD) accounts) the diagnostic logs may contain PII information that applies to multiple users. For more information, see [Microsoft Privacy statement](https://privacy.microsoft.com/privacystatement).
