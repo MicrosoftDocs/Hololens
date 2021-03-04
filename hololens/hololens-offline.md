@@ -1,6 +1,6 @@
 ---
 title: Manage connection endpoints for HoloLens 
-description: To set up HoloLens, you'll need to connect to a Wi-Fi network
+description: Learn how to set up a HoloLens over a Wi-Fi network while managing and configuring connection endpoints.
 keywords: hololens, offline, OOBE
 audience: ITPro
 ms.date: 07/01/2019

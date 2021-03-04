@@ -1,6 +1,6 @@
 ---
 title: Set up your HoloLens 2
-description: This guide walks through first time set up.  You'll need a Wi-Fi network and either a Microsoft (MSA) or Azure Active Directory (AAD) account.
+description: Learn how to set up your HoloLens 2 for the first time over Wi-Fi network with either a Microsoft (MSA) or Azure Active Directory (AAD) account.
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
 ms.date: 9/17/2019
 keywords: hololens
@@ -88,6 +88,9 @@ HoloLens 2 will walk you through the following steps:
 Congratulations!  Setup is complete and you're ready to use HoloLens!
 
 ## Next steps
+
+1. Start interacting right away with with Mixed Reality and navigating Windows 10 on your HoloLens - check out the **Tips** app for hands-on tutorials for hand interactions. Use the start gesture to go to Start or say "Go to Start" and select Tips. 
+1. Click below to continue reading about getting around HoloLens 2.
 
 > [!div class="nextstepaction"]
 > [Get started with HoloLens 2](hololens2-basic-usage.md)

@@ -1,6 +1,6 @@
 ---
 title: Capture and manage mixed reality photos and videos
-description: Learn how to capture, view, and share mixed reality photos and videos, using HoloLens.
+description: Learn how to capture, view, and share mixed reality photos and videos using HoloLens mixed reality devices.
 keywords: hololens, photo, video, capture, mrc, mixed reality capture, photos, camera, stream, livestream, demo
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
 ms.prod: hololens
@@ -135,7 +135,7 @@ Similar to other mobile devices, connect your HoloLens to your PC to bring up Fi
 Tips:
 - If you don't see any files, please ensure you sign in to your HoloLens to enable access to your data.
 - You can get other files in other folders, such as [diagnostics files](hololens-diagnostic-logs.md#offline-diagnostics) from the Documents folder.
-- From File Explorer on your PC, you can select Device properties to see Windows Holographic OS version number (firmware version) and device serial number and battery percentage.
+- From File Explorer on your PC, you can select Device properties to see Windows Holographic OS version number (firmware version), device serial number, and battery percentage.
 - If your Organization has used MDM to disable [Connectivity/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) then you will be unable to connect to your device.
 
 ## Share your mixed reality photos and videos
@@ -150,8 +150,18 @@ You can also share mixed reality photos and videos from OneDrive, by automatical
 ## Limitations of mixed reality capture
 
 - While using mixed reality capture, the framerate of HoloLens will be halved to 30 Hz.
-- Videos have a maximum length of five minutes.
 - The resolution of photos and videos may be reduced if the photo/video camera is already in use by another application, while live streaming, or when system resources are low.
+
+### Maximum recording length
+
+On HoloLens 2 devices before the Windows Holographic, version 20H2 videos recorded on the device were limited to maximum length of five minutes.
+
+Due to customer feedback we’ve increased the recording length of [mixed reality captures](holographic-photos-and-videos.md). Mixed reality captures will no longer be limited to 5 minutes by default but instead will calculate the maximum recording length based on available disk space. The device will estimate the max video recording duration based on available disk space up to 80% of the total disk space.
+
+> [!NOTE]
+> The HoloLens will use default video recording length (5 minutes) if one of the following occurs:
+> -	The estimated max recording duration is smaller than the default 5 mins.
+> -	The available disk space is less than 20% of the total disk space.
 
 ## Default file format and resolution
 

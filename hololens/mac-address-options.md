@@ -37,7 +37,7 @@ The core challenges with the requirements above are:
 
 ## Solutions
 
-There are a number of ways to improve this situation, depending on the infrastructure available within the environment.
+There are many ways to improve this situation, depending on the infrastructure available within the environment.
 
 | Solution | Benefits | Requirements |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ There are a number of ways to improve this situation, depending on the infrastru
 - HoloLens Compatible USB-C Hub with Ethernet adaptor – Any adapter that doesn&#39;t require any additional drivers or application installs should be suitable.
 - Provisioning Package containing:
   - Containing Wireless Network information and Certificate
-  - Optionally containing enrollment information for the Organisation&#39;s Azure AD
+  - Optionally containing enrollment information for the Organization&#39;s Azure AD
   - Containing any other required provisioning settings
 
 ### Process
@@ -85,7 +85,7 @@ If the device has an OS build before the [May 2004 update](hololens-release-note
 
 This will allow a &quot;Single touch&quot; of the device, to apply the correct provisioning package and gather the MAC address of the device. [Provisioning packages can be created following the guidance here.](https://docs.microsoft.com/hololens/hololens-provisioning)
 
-## Autopilot with Intune Enrolment
+## Autopilot with Intune Enrollment
 
 ### Requirements
 
@@ -121,14 +121,14 @@ Additional pre-requisites will be needed as below:
 
 ### Benefits
 
-This will allow a &quot;Heads off&quot; deployment experience for the Technician, with the device being able to go from the box to enrolled in AAD and Intune without the technician having to wear the device or manually interact with the HoloLens environment.
+This will allow a &quot;Heads off&quot; deployment experience for the Technician, with the device being able to go from the box to enrolled in Azure AD and Intune without the technician having to wear the device or manually interact with the HoloLens environment.
 
 ## Reporting of MAC addresses to the Technician
 
 ### Requirements
 
-- Authorisation of the &quot;Intune Graph Powershell&quot; against the customer Tenant
-- Installation of the Intune Graph Powershell on the technicians machine.
+- Authorization of the &quot;Intune Graph PowerShell&quot; against the customer Tenant
+- Installation of the Intune Graph PowerShell on the technicians machine.
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
 - Read access to the &quot;Managed Devices&quot; elements of Intune. (Help Desk Operator or above, or a custom role)
 
