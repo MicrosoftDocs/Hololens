@@ -32,7 +32,7 @@ HoloLens (1st gen) supports the following classes of Bluetooth devices:
 
 - Mouse
 - Keyboard
-- HoloLens (1st gen) clicker
+- [HoloLens (1st gen) clicker](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
 > Other types of Bluetooth devices, such as speakers, headsets, smartphones, and game pads, may be listed as available in HoloLens settings. However, these devices aren't supported on HoloLens (1st gen). For more information, see [HoloLens Settings lists devices as available, but the devices don't work](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work).
@@ -46,20 +46,6 @@ HoloLens (1st gen) supports the following classes of Bluetooth devices:
 1. Select **Devices**, and make sure that Bluetooth is on.  
 
 1. When you see the device name, select **Pair**, and then follow the instructions.
-
-### HoloLens (1st gen): Pair the clicker
-
-1. Use the bloom gesture to go to **Start**, and then select **Settings**.
-
-1. Select **Devices**, and make sure that Bluetooth is on.
-
-1. Use the tip of a pen to press and hold the clicker pairing button until the clicker status light blinks white. Make sure to hold down the button until the light starts blinking.  
-
-   The pairing button is on the underside of the clicker, next to the finger loop.
-
-   ![The pairing button is beside the finger loop](images/use-hololens-clicker-1.png)
-
-1. On the pairing screen, select **Clicker** > **Pair**.
 
 ## Disable Bluetooth
 
@@ -82,9 +68,7 @@ HoloLens 2 supports the following classes of USB-C devices:
 - Combination PD hubs (USB A plus PD charging)
 
 > [!NOTE]
-> Some mobile devices with USB-C connections present themselves to the HoloLens as ethernet adaptors, and therefore could be used in a tethering configuration, starting with Windows Holographic, version 2004. USB LTE modems that require a separate driver, and/or application installed for configuration are not supported.
-
-In response to customer feedback, we have enabled limited support for cellular connectivity tethered directly to the HoloLens via USB-C.  Tethered connectivity only works for devices that support the generic Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) driver implementation and that don’t require any additional drivers or application installs.  Such device, when connected, will automatically appear as a new Ethernet connection in the HoloLens 2 Network Settings UI. Please consult your device’s manufacturer for further details on whether it supports the generic Microsoft RNDIS driver.
+> In response to customer feedback we have enabled limited support for cellular connectivity tethered directly to the HoloLens via USB-C. See [Connect to Cellular and 5G](hololens-cellular.md) for more information.
 
 ### USB-C Hubs
 
