@@ -1,7 +1,6 @@
 ---
 title: Commercial features
-description: The Microsoft HoloLens Commercial Suite includes features that make it easier for businesses to manage HoloLens devices. HoloLens 2 devices are equipped with commercial features by default.
-keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
+description: Learn about the Microsoft HoloLens Commercial Suite features that make it easier for businesses to manage HoloLens devices. 
 author: scooley
 ms.author: scooley
 ms.date: 08/26/2019
@@ -18,6 +17,7 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
+keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
 ---
 
 # Commercial features
@@ -59,7 +59,7 @@ HoloLens (1st gen) came with two licensing options, the developer license and a 
 |Microsoft Store (Consumer) |Consumer |Filter by using MDM |Filter by using MDM |
 |[Business Store Portal](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
 |**Security and identity** | | | |
-|Sign in by using Azure Active Directory (AAD) account |✔️ |✔️ |✔️ |
+|Sign in by using Azure Active Directory (Azure AD) account |✔️ |✔️ |✔️ |
 |Sign in by using Microsoft Account (MSA) |✔️ |✔️ |✔️ |
 |Next Generation Credentials with PIN unlock |✔️ |✔️ |✔️ |
 |[Secure boot](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) |✔️ |✔️ |✔️ |

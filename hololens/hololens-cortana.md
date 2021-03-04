@@ -1,6 +1,6 @@
 ---
 title: Use your voice to operate HoloLens
-description: Cortana can help you do all kinds of things on your HoloLens
+description: Learn how Cortana can help you do all kinds of things on your HoloLens mixed reality devices, including voice commands, dictation, and hologram interactions.
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
 ms.date: 03/10/2020
 keywords: hololens

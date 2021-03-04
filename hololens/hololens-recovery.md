@@ -1,6 +1,6 @@
 ---
 title: Restart, reset, or recover HoloLens
-ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: How to use Advanced Recovery Companion to flash an image to HoloLens 2.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, arc, advanced recovery companion
 ms.prod: hololens
@@ -21,7 +21,7 @@ manager: jarrettr
 
 ## Charge the device
 
-Before you start any troubleshooting procedure, make sure that your device is charged to 20 to 40 percent of battery capacity if possible. Use the charger and the USB Type-C cables that come with the HoloLens 2 device. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A). If those accessories aren't available, make sure the charger that's available can support at least 15W of power.
+Before you start any troubleshooting procedure, make sure that your device is charged to 20 to 40 percent of battery capacity if possible. Use the charger and the USB Type-C cables that come with the HoloLens 2 device. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A). Using the wall charger supplied, HoloLens 2 devices can charge the battery to full in less than 65 minutes when the device is in standby. If those accessories aren't available, make sure the charger that's available can support at least 15W of power.
 
 > [!NOTE]
 > If possible, avoid using a PC to charge the device over USB, which is slow.
@@ -45,6 +45,7 @@ If the device can't boot to the startup menu, note the LED appearance and device
 Under certain circumstances, you may have to manually reset the device without using the software UI.
 
 ### Standard procedure
+
 1. Unplug the Type-C cable to disconnect the device from the power supply or the host PC.
 
 2. Press and hold the **power** button for 15 seconds. All LEDs should be off.
@@ -53,7 +54,7 @@ Under certain circumstances, you may have to manually reset the device without u
 
 4. Connect the device to the host PC, and then open Device Manager. (For Windows 10, press the **Windows** key and then the **X** key, and then select **Device Manager**.) Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery devive manager](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### Hard-reset procedure
 
@@ -66,7 +67,7 @@ If the standard reset procedure didn't work, use the hard-reset procedure:
 4. Connect the device to the host PC.
 5. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and then select **Device Manager**). Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery device maanger 2](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## Clean-reflash the device
 
@@ -77,14 +78,14 @@ In extraordinary situations, you may have to "clean-flash" the HoloLens 2. Pleas
 - [Overheating](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - OS crashes (which are distinct from application crashes)
 
-There are two ways to reflash the device. For both, you must first install [Advanced Recovery Companion from the Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
+There are two ways to reflash the device. For both, you must first [install Advanced Recovery Companion from the Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
 >If you reflash your device, all your personal data, apps, and settings will be erased, including TPM-reset information.
 
-By default, Advanced Recovery Companion is currently set to download the feature release build for [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004). To get the latest HoloLens 2 Full Flash Update (FFU) package to reflash your device via Advanced Recovery Companion, [download it here](https://aka.ms/hololens2download). This version is the latest generally available build.
+By default, Advanced Recovery Companion is set to download the most recent feature release build, check here to read our [Release notes](hololens-release-notes.md#) to learn about the latest feature release. To get the latest HoloLens 2 Full Flash Update (FFU) package to reflash your device via Advanced Recovery Companion, [click here to download the latest monthly HoloLens 2 image](https://aka.ms/hololens2download). This version is the latest generally available build.
 
-Before you start the reflash procedure, make sure the app is installed and running on your Windows 10 PC and ready to detect the device.
+Before you start the reflash procedure, make sure the app is installed and running on your Windows 10 PC and ready to detect the device. Also ensure that your HoloLens is charged to a minimum of 40%.
 
 ![HoloLens 2 clean reflash screen shot](images/ARC1.png)
 
@@ -122,22 +123,21 @@ If the HoloLens 2 doesn't start correctly, you may need to put the device into R
 
 If the IT environment prevents the use of the Windows Store app or limits access to the retail store, the IT administrator can make this app available through an "offline" deployment path.
 
- >[!NOTE] 
+ >[!NOTE]
  > - IT administrators can also distribute this app through System Center Configuration Manager (SCCM) or Intune.
  > - This guide focuses on Advanced Recovery Companion, but the process can also be used for other "offline" apps.
 
 Follow these steps to enable the deployment path:
 1. Go to the [Microsoft Store for Business](https://businessstore.microsoft.com) and sign in using an Azure Active Directory identity.
 
-1. Go to **Manage – Settings**. Turn on **Show offline apps** under **Shopping experience**. 
+1. Go to **Manage – Settings**. Turn on **Show offline apps** under **Shopping experience**.
 1. Go to **shop for my group**, and search for [***Advanced Recovery Companion***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
 1. Change the **License Type** to ***offline***, and select **Manage**.
 1. Under **Download the package for offline use**, select the second blue **Download** button. Make sure that the file extension is *.appxbundle*.
 
     - At this stage, if the Desktop PC has internet access, double-click the package to install the app.
 
-
-    - If the desination PC has no internet connectivity, follow these steps: 
+    - If the destination PC has no internet connectivity, follow these steps:
        1. Select the unencoded license, and then select **Generate license**.
        2. Under **Required Frameworks**, select **Download**.
        3. Use DISM to apply the package with the dependency and license. From an administrator command prompt, run the following command:
@@ -149,7 +149,7 @@ Follow these steps to enable the deployment path:
             > The version number in this code example may not match the currently available version. You may have also chosen a different download location than in the example. Make any changes to the command as needed.
 
 > [!TIP]
-> When you plan to use Advanced Recovery Companion to install an FFU offline, it may be useful to download your flash image. [**Download the current image for HoloLens 2**](https://aka.ms/hololens2download). 
+> When you plan to use Advanced Recovery Companion to install an FFU offline, it may be useful to download your flash image. [**Download the current image for HoloLens 2**](https://aka.ms/hololens2download).
 
 Other resources:
 - [Distribute offline apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 

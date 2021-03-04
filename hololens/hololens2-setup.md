@@ -1,6 +1,6 @@
 ---
 title: Prepare a new HoloLens 2
-description: This guide walks through first time set up and hardware guide.
+description: Learn how to set up and adjust your HoloLens 2 device for the first time, including health and safety tips and hardware guides.
 keywords: hololens, lights, fit, comfort, parts
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
@@ -20,7 +20,7 @@ The procedures below will help you set up a HoloLens 2 for the first time.
 
 ## Charge your HoloLens
 
-Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A).
+Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A). Using the wall charger supplied, HoloLens 2 devices can charge the battery to full in less than 65 minutes when the device is in standby.
 
 Charging rate and speed may vary depending on the environment in which the device is running.
 
