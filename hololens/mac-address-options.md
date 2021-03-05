@@ -41,8 +41,8 @@ There are many ways to improve this situation, depending on the infrastructure a
 
 | Solution | Benefits | Requirements |
 | --- | --- | --- |
-| Provisioning Package with Ethernet Adaptor | Improves OOBE experience and allows for a quicker technician experience. | HoloLens compatible USB C HubTechnician will still need to interact with the device for MAC Capture and OOBE finalization |
-| Autopilot with Intune Registration over Ethernet | Single Step connection and registration of the device to the customer environmentMAC capture can be completed without interacting with the device | Intune enabled for the customer Azure AD TenantHoloLens Compatible USB-C network adaptor |
+| Provisioning Package with Ethernet Adaptor | Improves OOBE experience and allows for a quicker technician experience. | HoloLens compatible USB C HubTechnician will still need to interact with the device for MAC Capture and OOBE finalization. |
+| Autopilot with Intune Registration over Ethernet | Single Step connection and registration of the device to the customer environmentMAC capture can be completed without interacting with the device. | Intune enabled for the customer Azure AD TenantHoloLens Compatible USB-C network adaptor. |
 | Automated reporting of MAC Addresses | When devices have been registered within the Intune Tenant, Script the reporting of the MAC address to the technician. | Intune PowerShell Commandlets |
 
 ## Provisioning Package with Ethernet Adaptor
@@ -53,10 +53,10 @@ There are many ways to improve this situation, depending on the infrastructure a
 ### Requirements
 
 - Wired network port with access to the customer network
-- HoloLens Compatible USB-C Hub containing an Ethernet adaptor – Any hub that doesn&#39;t require any additional drivers or application installs should be suitable.
+- HoloLens Compatible USB-C Hub containing an Ethernet adaptor – Any hub that doesn't require any additional drivers or application installs should be suitable.
 - Provisioning Package containing:
   - Containing Wireless Network information and Certificate
-  - Optionally containing enrollment information for the Organization&#39;s Azure AD
+  - Optionally containing enrollment information for the Organization's Azure AD
   - Containing any other required provisioning settings
 
 ### Process
@@ -83,7 +83,7 @@ If the device has an OS build before the [May 2004 update](hololens-release-note
 
 ### Benefits
 
-This will allow a &quot;Single touch&quot; of the device, to apply the correct provisioning package and gather the MAC address of the device. [Provisioning packages can be created following the guidance here.](https://docs.microsoft.com/hololens/hololens-provisioning)
+This will allow a "Single touch" of the device, to apply the correct provisioning package and gather the MAC address of the device. [Provisioning packages can be created following the guidance here.](https://docs.microsoft.com/hololens/hololens-provisioning)
 
 ## Autopilot with Intune Enrollment
 
@@ -101,7 +101,7 @@ This will allow a &quot;Single touch&quot; of the device, to apply the correct p
 This will allow a customer with advanced networking requirements to enroll the devices in a hands-off, scalable approach
 
 Additional pre-requisites will be needed as below:
-1. [Enable the Tenant for the Autopilot preview](https://docs.microsoft.com/hololens/hololens2-autopilot)
+1. [Enable the Tenant for the Autopilot preview](https://docs.microsoft.com/hololens/hololens2-autopilot).
 1. Create the HoloLens policies to replace the Provisioning Package within Intune.
 1. Create the HoloLens Intune Policies.
 1. Assign the devices to the correct group.
@@ -109,30 +109,35 @@ Additional pre-requisites will be needed as below:
 ### Process
 
 1. Plug the USB-C hub and ethernet cable into the HoloLens 2 device.
+
 2. Turn on the HoloLens 2.
-3. The device should automatically connect to the internet at OOBE via the Ethernet adaptor, detect the Autopilot configuration, and automatically register with Azure AD and Intune
-4. The Device will apply the required Wi-Fi Certificates and other configuration as needed via Intune
-5. When complete, the technician will be able to load the Intune (Endpoint Manager) Portal, and drill into the device properties page at **Home -> Devices -> DeviceName -> Hardware**
+
+3. The device should automatically connect to the internet at OOBE via the Ethernet adaptor, detect the Autopilot configuration, and automatically register with Azure AD and Intune.
+
+4. The Device will apply the required Wi-Fi Certificates and other configuration as needed via Intune.
+
+5. When complete, the technician will be able to load the Intune (Endpoint Manager) Portal, and drill into the device properties page at **Home -> Devices -> DeviceName -> Hardware**.
+
 6. The Wi-Fi MAC address will be visible within the Intune Portal
 
-![MAC Address via Intune](images/mac-address-intune.jpg)
+   ![MAC Address via Intune](images/mac-address-intune.jpg)
 
 7. The technician will add this MAC address as an allowed device.
 
 ### Benefits
 
-This will allow a &quot;Heads off&quot; deployment experience for the Technician, with the device being able to go from the box to enrolled in Azure AD and Intune without the technician having to wear the device or manually interact with the HoloLens environment.
+This will allow a "Heads off" deployment experience for the Technician, with the device being able to go from the box to enrolled in Azure AD and Intune without the technician having to wear the device or manually interact with the HoloLens environment.
 
 ## Reporting of MAC addresses to the Technician
 
 ### Requirements
 
-- Authorization of the &quot;Intune Graph PowerShell&quot; against the customer Tenant
+- Authorization of the "Intune Graph PowerShell" against the customer Tenant
 - Installation of the Intune Graph PowerShell on the technicians machine.
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
-- Read access to the &quot;Managed Devices&quot; elements of Intune. (Help Desk Operator or above, or a custom role)
+- Read access to the "Managed Devices" elements of Intune. (Help Desk Operator or above, or a custom role)
 
-At present, there is no &quot;simple&quot; way to trigger an automation command based on the enrolment of a new device within Intune. Therefore, this command will provide the technician a simple way to retrieve the MAC address without needing to log onto the portal and manually retrieve it.
+At present, there is no "simple" way to trigger an automation command based on the enrollment of a new device within Intune. Therefore, this command will provide the technician a simple way to retrieve the MAC address without needing to log onto the portal and manually retrieve it.
 
 ```powershell
 Import-Module Microsoft.Graph.Intune
@@ -144,8 +149,8 @@ Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDate
 
 This will return the name and MAC address of any HoloLens devices which have been enrolled in the last 30 days.
 
-![MAC Address via Powershell](images/mac-address-powershell.jpg)
+![MAC Address via PowerShell](images/mac-address-powershell.jpg)
 
 ### Process
 
-After the Intune enrolment has completed, the Technician would run the above script to retrieve the MAC address.
+After the Intune enrollment has completed, the Technician would run the above script to retrieve the MAC address.
