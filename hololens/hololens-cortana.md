@@ -42,11 +42,11 @@ Use these commands throughout Windows Mixed Reality to get around faster. Some c
 | Say this | To do this |
 | - | - |
 | "Select" | Say "select" to bring up the gaze cursor. Then, turn your head to position the cursor on the thing you want to select, and say "select" again. |
-|Open the Start menu | "Go to Start" |
-|Close the Start menu | "Close" |
-|Leave an immersive app | Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home." |
-|Hide and show hand ray | "Hide hand ray" / "Show hand ray" |
-|See available speech commands | "What can I say?" |
+| "Go to Start" |  Open the Start menu |
+| "Close"  | Close the Start menu |
+| Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home."  | Leave an immersive app |
+| "Hide hand ray" / "Show hand ray" | Hide and show hand ray |
+| "What can I say?"  | See available speech commands |
 
 Starting with version 19041.x of HoloLens 2, you can also use these commands:
 
