@@ -76,11 +76,11 @@ To use these commands, gaze at a 3D object, hologram, or app window.
 
 ### See it, say it
 
-Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar, or the **Back** button in Edge. To find out if a button is voice-enabled, rest your **gaze cursor**,**touch cursor** or one **hand ray** on it for a moment. If the button is voice-enabled, you'll see a voice tip.
+Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar, or the **Back** button in Edge. To find out if a button is voice-enabled, rest your **gaze cursor**, **touch cursor** or one **hand ray** on it for a moment. If the button is voice-enabled, you'll see a voice tip.
 
 ### Dictation mode
 
-Tired of typing? Switch to dictation mode any time that the holographic keyboard is active. To get started, select the microphone button or say "Start dictating." To stop dictating, select the button again or say "Stop dictating." To delete what you just dictated, say "Delete that." 
+Tired of typing? Switch to dictation mode anytime that the holographic keyboard is active. To get started, select the microphone button or say "Start dictating." To stop dictating, select the button again or say "Stop dictating." To delete what you just dictated, say "Delete that." 
 
 > [!NOTE]
 > To use dictation mode, you have to have an internet connection.
