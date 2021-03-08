@@ -62,5 +62,5 @@
     "template": [],
     "dest": "devices/hololens",
     "markdownEngineName": "markdig"
-  },
+  }
 }
