@@ -97,6 +97,10 @@ The diagnostic information remains in these locations until the user deletes it.
 
 In a Mobile Device Management (MDM) environment, the IT administrator can use the the [DiagnosticLog configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) to configure diagnostic settings on enrolled HoloLens devices. The IT administrator can configure these settings to collect logs from enrolled devices.
 
+See more:
+- [Collect diagnostics from a Windows device](https://docs.microsoft.com/mem/intune/remote-actions/collect-diagnostics)
+- [Intune Public Preview - Windows 10 Device diagnostics](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
+
 ### Prerequisites
 
 - The device is connected to a network.
