@@ -55,4 +55,4 @@ When a device is Azure AD Joined it may affect who considered the [device owner]
 
 ## Unenroll HoloLens from Intune
 
-To learn more about unenrolling a device visit [this page](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment). 
+Although HoloLens 2 is Windows 10 device, it cannot be simply unenrolled from Intune. If you wish to unjoin HoloLens from Azure AD or rejoin it to a different to Azure AD tenant, you must [reset/reflash](https://docs.microsoft.com/hololens/hololens-recovery#reset-the-device) the device.
