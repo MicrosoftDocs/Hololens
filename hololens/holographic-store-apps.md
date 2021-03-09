@@ -17,6 +17,7 @@ appliesto:
 - HoloLens 2
 ---
 
+
 # Find, install, and uninstall applications from the Microsoft Store
 
 The Microsoft Store is your go-to source for apps and games that work with HoloLens. When you go to the Store on your HoloLens, any apps you see there will run on it.
@@ -51,7 +52,8 @@ To download apps, you'll need to be signed in with a Microsoft account. Some app
 > [!NOTE]
 > The account you use on Microsoft Store does not have to be the same as the account you are signed in with. If you are using a Work or School account on your HoloLens then you may need to sign in with your personal account in the Store App to make a purchase.
 
-To set up a payment method, go to [account.microsoft.com](https://account.microsoft.com/) and select **Payment & billing** > **Payment options** > **Add a payment option**.
+> [!TIP]
+> To set up a payment method, go to [account.microsoft.com](https://account.microsoft.com/) and select **Payment & billing** > **Payment options** > **Add a payment option**.
 
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
 1. Select the Microsoft Store app. Once the Store app opens:
