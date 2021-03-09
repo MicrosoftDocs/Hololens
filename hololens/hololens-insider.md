@@ -86,6 +86,11 @@ IF you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 If you were previously blocking Microsoft Edge via WDAC, you'll want to update your WDAC policy. Please [review the following](#using-wdac-to-block-new-microsoft-edge) and use the sample code provided.
 
+#### Enable new endpoints for Edge
+
+If you have an infrastructure that involves configuring network endpoints such as proxy or firewall, please enable these new endpoints for the new Microsoft Ege app.
+[Managing endpoints for the new Microsoft Edge](#managing-endpoints-for-the-new-microsoft-edge)
+
 #### Newly configurable items
 
 - [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app)
@@ -197,6 +202,13 @@ There are a couple methods available for installing Microsoft Edge Insider chann
 For IT Admins looking to update their [WDAC policy](windows-defender-application-control-wdac.md) to block the new Microsoft Edge app, you'll need to add the following to your policy.
 
 ``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
+
+#### Managing endpoints for the new Microsoft Edge
+
+Some environments may have network restrictions to account for as a consideration. To ensure a smooth experience with thenew Edge please enable these Microsoft endpoints.
+[Allow list for Microsoft Edge endpoints](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
+
+See more about [endpoints with HoloLens](hololens-offline.md).
 
 ### WebXR and 360 Viewer
 
