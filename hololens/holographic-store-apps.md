@@ -48,7 +48,7 @@ Open the Microsoft Store from the **Start** menu. Then browse for apps and games
 
 ## Install apps
 
-To download apps, you'll need to be signed in with a Microsoft account. Some apps are free and can be downloaded right away. Apps that require a purchase require you to be signed in to the Store with your Microsoft account and have a valid payment method.
+To download apps, you'll need to be signed in with a Microsoft account. Some apps are free and can be downloaded right away. For apps that require a purchase, you must be signed in to the Store with your Microsoft account and have a valid payment method.
 > [!NOTE]
 > The account you use on Microsoft Store does not have to be the same as the account you are signed in with. If you are using a Work or School account on your HoloLens then you may need to sign in with your personal account in the Store App to make a purchase.
 
@@ -56,14 +56,14 @@ To download apps, you'll need to be signed in with a Microsoft account. Some app
 > To set up a payment method, go to [account.microsoft.com](https://account.microsoft.com/) and select **Payment & billing** > **Payment options** > **Add a payment option**.
 
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
-1. Select the Microsoft Store app. Once the Store app opens:
-   1. Use the search bar to look for any desired applications. 
+1. Select the Microsoft Store app. After the Store app opens:
+   1. Use the search bar to look for applications. 
    1. Select essential apps or apps made specifically for HoloLens from one of the curated categories.
    1. On the top right of the Store app, select the **"..."** button and then select **My Library** to view any previously purchased apps.
 1. Select **Get** or **Install** on the application's page (a purchase may be required).
 
 ## Update Apps
-To update an app you have installed from the Microsoft Store, you can also update the same app from the Microsoft Store app. For apps installed for the Microsoft Store for Business, you can also update those apps from the Microsoft Store for Business. 
+To update an app you installed from the Microsoft Store, you can update the app from the Microsoft Store app. For apps installed for the Microsoft Store for Business, you can also update those apps from the Microsoft Store for Business. 
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
 1. Select the Store app.
 1. Look to the top right of the Store app. 
@@ -94,4 +94,4 @@ On the **Start** menu or in the **All apps** list, browse to the app. Select and
 
 ### Uninstall from the Microsoft Store
 
-Open the Microsoft Store from the **Start** menu, and then browse for the application you'd like to uninstall.  On the Store page, each application that you have installed has an **Uninstall** button.
+Open the Microsoft Store from the **Start** menu, and then browse for the application you want to uninstall.  On the Store page, each installed application has an **Uninstall** button.
