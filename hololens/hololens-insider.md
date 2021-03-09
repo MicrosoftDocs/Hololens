@@ -206,7 +206,7 @@ For IT Admins looking to update their [WDAC policy](windows-defender-application
 
 Some environments may have network restrictions to account for as a consideration. To ensure a smooth experience with the new Edge please [enable these Microsoft endpoints.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
 
-See more about [endpoints with HoloLens](hololens-offline.md).
+Read more about the currently available [endpoints for HoloLens](hololens-offline.md).
 
 ### WebXR and 360 Viewer
 
