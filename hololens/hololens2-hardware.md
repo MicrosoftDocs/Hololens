@@ -18,7 +18,7 @@ appliesto:
 
 ![HoloLens 2 side view](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. A Microsoft account is required to use HoloLens 2.
+Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. A user account is required to use HoloLens 2.
 
 ## HoloLens components
 
