@@ -24,7 +24,7 @@ The Microsoft Store is your go-to source for apps and games that work with HoloL
 
 Apps on HoloLens use either 2D view or holographic view. Apps that use 2D view look like windows and can be positioned all around you. Apps that use holographic view surround you and become the only app you see.
 
-HoloLens supports many existing applications from the Microsoft Store, as well as new apps built specifically for HoloLens.  This article focuses on holographic applications from the Microsoft Store.
+HoloLens supports many existing applications from the Microsoft Store, and new apps built specifically for HoloLens.  This article focuses on holographic applications from the Microsoft Store.
 
 To learn more about installing and running custom apps, read [Custom holographic applications](holographic-custom-apps.md).
 
@@ -63,7 +63,7 @@ To download apps, you'll need to be signed in with a Microsoft account. Some app
 1. Select **Get** or **Install** on the application's page (a purchase may be required).
 
 ## Update Apps
-To update an app you have installed from the Microsoft Store app you can also update the same app from the Microsoft Store app. This also applies to apps installed for Microsoft Store for Business. 
+To update an app you have installed from the Microsoft Store, you can also update the same app from the Microsoft Store app. For apps installed for the Microsoft Store for Business, you can also update those apps from the Microsoft Store for Business. 
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
 1. Select the Store app.
 1. Look to the top right of the Store app. 
@@ -73,7 +73,7 @@ To update an app you have installed from the Microsoft Store app you can also up
    > ![Microsoft Store app screenshot.](images/store-update-1.png)
 
 1. Select **Downloads and updates**.
-    1. If your device has previously identified updates you may see a down arrow and a number, this represents pending updates.
+    1. If your device has previously identified updates, there may be a down arrow and a number that represents pending updates.
 1. Select **Get updates**. Your device will now search for updates and set them to download and install. 
  
    > [!div class="mx-imgBorder"]
