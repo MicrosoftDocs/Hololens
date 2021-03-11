@@ -88,7 +88,7 @@ If you were previously blocking Microsoft Edge via WDAC, you'll want to update y
 
 #### Enable new endpoints for Edge
 
-If you have an infrastructure that involves configuring network endpoints such as proxy or firewall, please [enable these new endpoints for the new Microsoft Ege app.](#managing-endpoints-for-the-new-microsoft-edge)
+If you have an infrastructure that involves configuring network endpoints such as proxy or firewall, please [enable these new endpoints for the new Microsoft Edge app.](#managing-endpoints-for-the-new-microsoft-edge)
 
 #### Newly configurable items
 
