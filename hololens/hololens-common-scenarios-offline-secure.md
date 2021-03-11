@@ -21,6 +21,7 @@ appliesto:
 ## Overview
 
 This guide provides guidance for applying a sample Provisioning Package that will lock down a HoloLens 2 for use in secure environments with the following restrictions:
+
 -	Disable WiFi.
 -	Disable BlueTooth.
 -	Disable Microphones.
@@ -45,7 +46,7 @@ Build a Secure Configuration Provisioning Package
 1. Launch the WCD tool on your PC.
 1. Select **File -> Open project**.
   1. Navigate to the location of the previously saved OfflineSecureHL2_Sample folder, and select: OfflineSecureHL2_Sample.icdproj.xml
-1. The project should open and you should now have a list of Available Customizations: 
+1. The project should open and you should now have a list of Available Customizations:
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot of the configuration package open in WCD](images/offline-secure-sample-wcd.png)
@@ -68,7 +69,7 @@ Configurations set in this provisioning package:
 |     Policies/System/AllowLocation                       |     No                            |     Prevents the device from trying to track location data.                                                                        |
 |     Policies/WiFi/AllowWiFi                             |     No                            |     Disables Wi-Fi                                                                                                                 |
 
-4. Under Runtime Settings, Select **Accounts / Users / UserName: Holo / Password** 
+4. Under Runtime Settings, Select **Accounts / Users / UserName: Holo / Password**
     - Note the password and reset if desired.
 5. Navigate to UniversalAppInstall / UserContextApp and [configure the LOB app](app-deploy-provisioning-package.md) you will be deploying to these devices.
 
@@ -80,22 +81,21 @@ Configurations set in this provisioning package:
    > [!div class="mx-imgBorder"]
    > ![Screenshot of the Export button for this package in WCD.](images/offline-secure-sample-wcd-export.png)
 
-
 ## Deploy
 
 1. Connect the HL2 to your Windows 10 PC via USB cable.
 1. Launch the ARC tool and select **HoloLens 2**
 
-   <img src=images/offline-secure-arc-1.png alt=arc1 width="577" height="322" />
+   ![HoloLens 2 clean reflash initial screen](images/ARC2.png)
 
 1. On the next screen select **Manual package selection**.
-   
-   <img src=images/offline-secure-arc-2.png alt=arc2 width="577" height="322" />
+
+   ![HoloLens 2 ARC info screen](images/arc_device_info.png)
 
 1. Navigate to the previously downloaded .ffu file, and select **Open**.
 1. At the Warning page select **Continue**.
 
-   <img src=images/offline-secure-arc-3.png alt=arc3 width="577" height="322" />
+   ![HoloLens 2 ARC info screen](images/arc_warning.png)
 
 1. Wait for the ARC tool to complete the HoloLens 2 OS install.
 1. Once the device completes the install and boots back up, from your PC navigate to File Explorer and copy the previously saved PPKG file over to the device folder.
@@ -110,5 +110,4 @@ Configurations set in this provisioning package:
 
 ## Maintain
 
-With this configuration, it is recommended to restart the process above and reflash the device with the ARC tool and apply a new PPKG to make any updates to the OS and/or application(s). 
-
+With this configuration, it is recommended to restart the process above and reflash the device with the ARC tool and apply a new PPKG to make any updates to the OS and/or application(s).
