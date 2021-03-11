@@ -50,10 +50,10 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 | HoloLens 2 Edition                  | Supported Markets               |
 |-------------------------------------------| ----------------------------------------| 
 | HoloLens 2 | US, Canada, Germany, France, UK, Ireland, China, Japan, Australia, Italy, New Zealand, Netherlands, Switzerland, Spain, Austria, Sweden, Finland, Norway, Denmark, Belgium, Portugal, Poland, Singapore, Hong Kong, Taiwan, and South Korea |
-| HoloLens 2 with Remote Assist | This list is dynamic and is dictated by participating channel partners. |
-| HoloLens 2 Industrial Edition (at launch in Spring 2021) | US, Canada, Germany, France, UK, Ireland, China, Japan, Australia, Italy, New Zealand, Netherlands, Switzerland, Spain, Austria, Sweden, Finland, Norway, Denmark, Belgium, Portugal, Poland, Singapore, Hong Kong, Taiwan, and South Korea |
+| HoloLens 2 with Remote Assist | Australia, Japan, Canada, US, Austria, Belgium, Denmark, Finland, France, Germany, Italy, Netherlands, Norway, Spain, Sweden, Switzerland, UK, and Ireland <sup>1</sup> 
+| HoloLens 2 Industrial Edition *(at launch)* | US, Canada, Germany, France, UK, Ireland, China, Japan, Australia, Italy, New Zealand, Netherlands, Switzerland, Spain, Austria, Sweden, Finland, Norway, Denmark, Belgium, Portugal, Poland, Singapore, Hong Kong, Taiwan, and South Korea |
 | HoloLens 2 Development Edition | Canada, Germany, France, UK, Ireland, Japan, Australia, Italy, Switzerland, and New Zealand |
-
+- <sup>1</sup> This list is dynamic, check back for updates
 
 ## Options Overview
 
