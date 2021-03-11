@@ -74,7 +74,7 @@ Configurations set in this provisioning package:
 5. Navigate to UniversalAppInstall / UserContextApp and [configure the LOB app](app-deploy-provisioning-package.md) you will be deploying to these devices.
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot of where to add your app in WCD.](images/offline-secure-sample-wcd-usercontextapp.png)
+   > ![Screenshot of where to add your app in WCD.](images/offline-secure-sample-wcd-usercontextapp2.png)
 
 6. Once complete, select the “Export” button and follow all prompts until your provisioning package is created.
 
