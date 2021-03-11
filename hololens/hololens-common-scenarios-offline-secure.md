@@ -95,7 +95,7 @@ Configurations set in this provisioning package:
 1. Navigate to the previously downloaded .ffu file, and select **Open**.
 1. At the Warning page select **Continue**.
 
-   ![HoloLens 2 ARC info screen](images/arc_warning.png)
+   ![HoloLens 2 ARC warning screen](images/arc_warning.png)
 
 1. Wait for the ARC tool to complete the HoloLens 2 OS install.
 1. Once the device completes the install and boots back up, from your PC navigate to File Explorer and copy the previously saved PPKG file over to the device folder.
