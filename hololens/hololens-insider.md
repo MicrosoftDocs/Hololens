@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/23/2021
+ms.date: 3/4/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -86,6 +86,10 @@ IF you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 If you were previously blocking Microsoft Edge via WDAC, you'll want to update your WDAC policy. Please [review the following](#using-wdac-to-block-new-microsoft-edge) and use the sample code provided.
 
+#### Enable new endpoints for Edge
+
+If you have an infrastructure that involves configuring network endpoints such as proxy or firewall, please [enable these new endpoints for the new Microsoft Edge app.](#managing-endpoints-for-the-new-microsoft-edge)
+
 #### Newly configurable items
 
 - [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app)
@@ -150,10 +154,8 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 - Spatial sound from a single browser window
 - Automatic and manual updating of the browser
 - Saving a PDF from the Print menu (using "Save to PDF" option)
-
-**Scenarios and features coming soon:**
 - WebXR and 360 Viewer extension
-- Content restoration to correct window when browsing across multiple windows placed in your environment
+- Content restoration to correct window, when browsing across multiple windows placed in your environment
 
 **Scenarios and features not expected to work:**
 - Spatial sound from multiple windows with simultaneous audio streams
@@ -163,6 +165,9 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 **Top known browser issues:**
 - Resetting your device will remove the new Microsoft Edge
 - The magnifier preview in the holographic keyboard shows incorrect content
+- Scrolling can sometimes stutter
+- Web links in the Microsoft Store app may not launch the browser
+- Audio may play from the wrong browser window if you've previously played audio from a different browser window
 
 #### Microsoft Edge Insider channels
 
@@ -196,6 +201,12 @@ There are a couple methods available for installing Microsoft Edge Insider chann
 For IT Admins looking to update their [WDAC policy](windows-defender-application-control-wdac.md) to block the new Microsoft Edge app, you'll need to add the following to your policy.
 
 ``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
+
+#### Managing endpoints for the new Microsoft Edge
+
+Some environments may have network restrictions to account for as a consideration. To ensure a smooth experience with the new Edge please [enable these Microsoft endpoints.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
+
+Read more about the currently available [endpoints for HoloLens](hololens-offline.md).
 
 ### WebXR and 360 Viewer
 
@@ -277,8 +288,8 @@ With this release, we're introducing a new version of the Settings app. The new 
 
 **Known issues**
 - Previously placed Settings windows will be removed (see note above).
-- The Ethernet page shows a virtual Ethernet device ("UsbNcm") at all times (investigating). This virtual Ethernet device will also show up on the Network page of device setup, but can be ignored (investigating).
-- You can no longer rename your device with the Settings app (IT admins can use provisioning packages or MDM to rename devices).
+- You can no longer rename your device with the Settings app. IT admins can rename devices by using the [Windows Autopilot for HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) device name template or the MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName node.
+- The Ethernet page shows a virtual Ethernet device ("UsbNcm") at all times.
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
 
 ### Display color calibration
@@ -325,6 +336,7 @@ If you're unhappy with the custom color profile saved to your HoloLens 2, you ca
     - Workaround: Select another Settings page and then re-select the Calibration page.
 - If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
 - You may need to try pressing the brightness buttons on the left side of your device up/down a few times before they work as expected.
+- Localization is not complete for all markets
 
 ### Default app picker
 
@@ -345,6 +357,9 @@ To set the volume of an individual app navigate to **Settings** -> **System** ->
 ### Office web app
 
 The Office web app has been added to the "All apps" list in the Start menu. This web app can also be pinned to Start or uninstalled. Because this is a web app, its functionality matches exactly what you'd experience by visiting https://www.office.com. Office web app functionality is only available when your HoloLens 2 has an active internet connection.
+
+**Known issue**
+- Resetting your device will remove the Office web app
 
 ### Swipe to type
 

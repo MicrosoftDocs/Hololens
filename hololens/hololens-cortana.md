@@ -42,11 +42,11 @@ Use these commands throughout Windows Mixed Reality to get around faster. Some c
 | Say this | To do this |
 | - | - |
 | "Select" | Say "select" to bring up the gaze cursor. Then, turn your head to position the cursor on the thing you want to select, and say "select" again. |
-|Open the Start menu | "Go to Start" |
-|Close the Start menu | "Close" |
-|Leave an immersive app | Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home." |
-|Hide and show hand ray | "Hide hand ray" / "Show hand ray" |
-|See available speech commands | "What can I say?" |
+| "Go to Start" |  Open the Start menu |
+| "Close"  | Close the Start menu |
+| Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home."  | Leave an immersive app |
+| "Hide hand ray" / "Show hand ray" | Hide and show hand ray |
+| "What can I say?"  | See available speech commands |
 
 Starting with version 19041.x of HoloLens 2, you can also use these commands:
 
@@ -76,11 +76,11 @@ To use these commands, gaze at a 3D object, hologram, or app window.
 
 ### See it, say it
 
-Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar, or the **Back** button in Edge. To find out if a button is voice-enabled, rest your **gaze cursor**,**touch cursor** or one **hand ray** on it for a moment. If the button is voice-enabled, you'll see a voice tip.
+Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar, or the **Back** button in Edge. To find out if a button is voice-enabled, rest your **gaze cursor**, **touch cursor** or one **hand ray** on it for a moment. If the button is voice-enabled, you'll see a voice tip.
 
 ### Dictation mode
 
-Tired of typing? Switch to dictation mode any time that the holographic keyboard is active. To get started, select the microphone button or say "Start dictating." To stop dictating, select the button again or say "Stop dictating." To delete what you just dictated, say "Delete that." 
+Tired of typing? Switch to dictation mode anytime that the holographic keyboard is active. To get started, select the microphone button or say "Start dictating." To stop dictating, select the button again or say "Stop dictating." To delete what you just dictated, say "Delete that." 
 
 > [!NOTE]
 > To use dictation mode, you have to have an internet connection.
@@ -100,7 +100,7 @@ Sometimes it's helpful to spell out things like email addresses. For instance, t
 
 ## Do more with Cortana
 
-Cortana can help you do all kinds of things on your HoloLens, but depending on which version of Windows Holographic you're using, the capablities may be different. You can learn more about the updated capabilites of the latest version of Cortana [here](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
+Cortana can help you do all kinds of things on your HoloLens, but depending on which version of Windows Holographic you're using, the capabilities may be different. You can learn more about the updated capabilities of the latest version of Cortana here: [Cortana in the upcoming Windows 10 release: focused on your productivity with enhanced security and privacy](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
 
 ![Hey Cortana!](images/cortana-on-hololens.png)
 
