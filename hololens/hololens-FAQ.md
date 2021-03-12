@@ -24,9 +24,9 @@ appliesto:
 
 This article answers some questions that you may have about how to use HoloLens, including how to place holograms, work with spaces, and more.
 
-Any time that you have problems, make sure that HoloLens is [charged up](https://support.microsoft.com/help/12627/hololens-charge-your-hololens). Try [restarting it](hololens-restart-recover.md) to see whether that fixes things. And please use the Feedback app to send us information about the issue. You'll find the Feedback app on the [**Start** menu](holographic-home.md).
+Anytime that you have problems, make sure that HoloLens is [charged up](https://support.microsoft.com/help/12627/hololens-charge-your-hololens). Try [restarting it](hololens-restart-recover.md) to see whether that fixes things. And please use the Feedback app to send us information about the issue. You'll find the Feedback app on the [**Start** menu](holographic-home.md).
 
-For tips about hwo to wear your HoloLens, see [HoloLens (1st gen) fit and comfort frequently asked questions](hololens1-fit-comfort-faq.md).
+For tips about how to wear your HoloLens, see [HoloLens (1st gen) fit and comfort frequently asked questions](hololens1-fit-comfort-faq.md).
 
 This article addresses the following questions and issues:
 <a id="list"></a>
@@ -205,7 +205,7 @@ You can pair other Bluetooth HID and GATT devices together with your HoloLens. H
 
 ## I'm having problems using the HoloLens clicker
 
-Use the [clicker](hololens1-clicker.md) to select, scroll, move, and resize holograms. Individial apps may support additional clicker gestures.
+Use the [clicker](hololens1-clicker.md) to select, scroll, move, and resize holograms. Individual apps may support additional clicker gestures.
 
 If you're having trouble using the clicker, make sure that it's charged and paired with your HoloLens. If the battery is low, the indicator light blinks amber. To verify that the clicker is paired, go to **Settings** > **Devices** and see if it shows up there. For more information, see [Pair the clicker](hololens1-clicker.md).
 

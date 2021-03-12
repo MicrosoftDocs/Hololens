@@ -31,6 +31,22 @@ Check out related release notes:
 - [Dynamics 365 Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 - [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 
+## Windows Holographic, version 20H2 - March 2021 Update
+- Build 19041.1140
+
+Improvements and fixes in the update:
+
+- Customers using AdvancedPhotoCapture or LowLagPhotoCapture to capture photos with HoloLens 2 are now able to retrieve the camera pose up to 3 seconds after the photo was captured.
+- Fix for a memory leak in Device Portal Service, the issue caused increased memory usage by the service that caused other applications to fail allocating memory.
+- Fixed an issue where users enrolled in Staged Rollout are not able to sign in to the device.
+
+## Windows Holographic, version 1903 - March 2021 Update
+- Build 18362.1102
+
+Improvements and fixes in the update:
+
+- Fix for a memory leak in Device Portal Service, the issue caused increased memory usage by the service that caused other applications to fail allocating memory.
+
 ## Windows Holographic, version 20H2 - February 2021 Update
 - Build 19041.1136
 

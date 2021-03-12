@@ -22,18 +22,18 @@ This document will describe a common scenario we have identified within customer
 
 ## Example Scenario
 
-Many customers in secure environments have restrictions on their Wireless or wired networks, which will only allow approved devices (based on MAC Addresses) to connect successfully (either with MAC Address filtering on a Wireless Access Point or on a DHCP server). Additionally, some Wireless networks can be protected with PEAP, which requires that a certificate is applied to the device prior to being able to successfully authenticate the Wireless network.
+Many customers in secure environments have restrictions on their Wireless or wired networks which will only allow approved devices (based on MAC Addresses) to connect successfully. This may be enforced through MAC Address filtering on a Wireless Access Point or through a DHCP server. Additionally, some Wireless networks can be protected with PEAP, which requires that a certificate be applied to the device prior to authenticating on the Wireless network.
 
-Two key issues can arise with HoloLens devices, which can cause delays and manual work in joining the HoloLens Devices to the network.
+In this scenario, two key requirements may introduce delays or require manual intervention when joining HoloLens devices to the network:
 
 - The Wireless PEAP certificate must be applied to the device prior to the device successfully joining the wireless network.
 - The MAC Address of the HoloLens Wi-Fi adaptor must be registered.
 
-The key challenges to this are:
+The core challenges with the requirements above are:
 
-1. The MAC Address can currently only be identified from the Settings app on the device, or from Intune after a successful Intune enrollment.
+1. The MAC Address can currently only be identified from the Settings app on the device, or from Intune after a successful enrollment.
 2. Without the MAC address, the device cannot join the Wi-Fi Network to begin enrollment.
-3. Manual Solutions to these challenges require technician involvement with the devices.
+3. Manual workarounds to these challenges require a technician to interact with the device.
 
 ## Solutions
 
@@ -41,19 +41,20 @@ There are many ways to improve this situation, depending on the infrastructure a
 
 | Solution | Benefits | Requirements |
 | --- | --- | --- |
-| Provisioning Package with Ethernet Adaptor | Improves OOBE experience and allows for a quicker technician experience. | HoloLens compatible USB C HubTechnician will still need to interact with the device for MAC Capture and OOBE finalization. |
-| Autopilot with Intune Registration over Ethernet | Single Step connection and registration of the device to the customer environmentMAC capture can be completed without interacting with the device. | Intune enabled for the customer Azure AD TenantHoloLens Compatible USB-C network adaptor. |
-| Automated reporting of MAC Addresses | When devices have been registered within the Intune Tenant, Script the reporting of the MAC address to the technician. | Intune PowerShell Commandlets |
+| Provisioning Package with Ethernet Adaptor | Improves OOBE experience and allows for a quicker technician experience. | HoloLens compatible USB-C Hub + Ethernet adaptor, and technician will still need to interact with the device for MAC capture and OOBE finalisation |
+| Autopilot with Intune Registration over Ethernet | This is a single step connection and registration of the device to the customer environment. MAC capture can be completed without needing to interact with the device | Intune enabled for the customer AAD tenant and a HoloLens compatible USB-C Ethernet adaptor |
+| Automated reporting of MAC Addresses | When devices are registered with the Intune tenant, a script can report the MAC address to the technician. | Intune Powershell Commandlets |
+
 
 ## Provisioning Package with Ethernet Adaptor
 
 > [!NOTE] 
-> If the wired network is also subject to MAC restrictions, then the MAC address of the USB-C Ethernet adaptor / Hub will need to be pre-approved. Care should be taken with this hub as it will allow access to the network from other devices.
+> If the wired network is also subject to MAC restrictions, then the MAC address of the USB-C Hub + Ethernet adaptor will also need to be pre-approved. Care should be taken with this adapter as it will allow access to the network from other devices.
 
 ### Requirements
 
 - Wired network port with access to the customer network
-- HoloLens Compatible USB-C Hub containing an Ethernet adaptor – Any hub that doesn't require any additional drivers or application installs should be suitable.
+- HoloLens Compatible USB-C Hub with Ethernet adaptor — Any adapter that doesn't require any additional drivers or application installs should be suitable.
 - Provisioning Package containing:
   - Containing Wireless Network information and Certificate
   - Optionally containing enrollment information for the Organization's Azure AD
@@ -64,22 +65,22 @@ There are many ways to improve this situation, depending on the infrastructure a
 The Process may vary depending on the software level of the device. If the device has the [May 2004 update](hololens-release-notes.md#windows-holographic-version-2004), follow the steps below.
 
 1. Place the provisioning package onto the root of a USB stick, and plug into the Hub.
-2. Connect Ethernet cable to the hub.
-3. Connect USB-C hub to HoloLens device.
-4. Turn on HoloLens Device and wear the device.
+2. Connect Ethernet cable to the Hub + Ethernet adapter.
+3. Connect USB-C Hub to HoloLens device.
+4. Turn on the HoloLens and put on the device.
 5. Press the **Volume Down and Power button** to apply the Provisioning Package.
-6. The technician can now follow OOBE, and when complete, open the Settings App, and retrieve the MAC Address of the device.
+6. The technician can now follow OOBE, and when complete, open the Settings App to retrieve the MAC Address of the device.
 
 If the device has an OS build before the [May 2004 update](hololens-release-notes.md#windows-holographic-version-2004), follow the steps below.
 
-1. Turn on the HoloLens Device, and plug the device into a PC.
+1. Turn on the HoloLens and plug the device into a PC.
 2. The device should show up on the PC as a file storage device.
 3. Copy the Provisioning Package to the Device
 4. Connect Ethernet cable to the hub.
-5. Connect USB-C hub to HoloLens device.
-6. Wear the device.
+5. Connect USB-C Hub to HoloLens device.
+6. Put on the HoloLens
 7. Press the **Volume Down and Power** button to apply the Provisioning Package.
-8. The technician can now follow OOBE, and when complete, open the Settings App, and retrieve the MAC Address of the device.
+8. The technician can now follow OOBE, and when complete, open the Settings App to retrieve the MAC Address of the device.
 
 ### Benefits
 
@@ -91,7 +92,7 @@ This will allow a "Single touch" of the device, to apply the correct provisionin
 
 - Wired network port with access to the customer network
 - HoloLens devices running Windows Holographic 2004
-- HoloLens Compatible USB-C Hub
+- HoloLens Compatible USB-C Ethernet adapter
 - Intune set up and enabled for the customer Tenant
 - Device registered for Autopilot and imported into the Customer Tenant
 - Intune Policies defined for the device:
@@ -108,17 +109,17 @@ Additional pre-requisites will be needed as below:
 
 ### Process
 
-1. Plug the USB-C hub and ethernet cable into the HoloLens 2 device.
+1. Connect the ethernet cable to the adapter and plug the adapter into the USB-C port on the HoloLens 2 device.
 
-2. Turn on the HoloLens 2.
+2. Turn on the HoloLens.
 
-3. The device should automatically connect to the internet at OOBE via the Ethernet adaptor, detect the Autopilot configuration, and automatically register with Azure AD and Intune.
+3. The device should automatically connect to the internet during OOBE via the Ethernet adaptor. It should detect the Autopilot configuration and automatically register with Azure AD and Intune.
 
 4. The Device will apply the required Wi-Fi Certificates and other configuration as needed via Intune.
 
-5. When complete, the technician will be able to load the Intune (Endpoint Manager) Portal, and drill into the device properties page at **Home -> Devices -> DeviceName -> Hardware**.
+5. When complete, the technician can load the Intune (Endpoint Manager) Portal and drill into the device properties page at **Home -> Devices -> DeviceName -> Hardware**.
 
-6. The Wi-Fi MAC address will be visible within the Intune Portal
+6. The Wifi MAC address will be visible within the Intune Portal.
 
    ![MAC Address via Intune](images/mac-address-intune.jpg)
 

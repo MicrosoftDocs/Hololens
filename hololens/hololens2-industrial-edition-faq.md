@@ -42,7 +42,7 @@ For more information read about [UL certifications](https://www.ul.com/services/
 
 ### Does the HoloLens 2 Industrial Edition hold an ATEX certification?
 
-No. The HoloLens 2 Industrial Edition is does not hold an ATEX certification. The HoloLens 2 Industrial Edition holds a US/CAN Class 1, Division 2-Groups A, B, C, and D certification.
+No. The HoloLens 2 Industrial Edition is does not hold an ATEX certification. The HoloLens 2 Industrial Edition holds a US/CAN Class I, Division 2-Groups A, B, C, and D certification.
 
 ### Can the device be used in semiconductor and pharmaceutical environments?
 

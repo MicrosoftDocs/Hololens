@@ -86,6 +86,10 @@ IF you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 If you were previously blocking Microsoft Edge via WDAC, you'll want to update your WDAC policy. Please [review the following](#using-wdac-to-block-new-microsoft-edge) and use the sample code provided.
 
+#### Enable new endpoints for Edge
+
+If you have an infrastructure that involves configuring network endpoints such as proxy or firewall, please [enable these new endpoints for the new Microsoft Edge app.](#managing-endpoints-for-the-new-microsoft-edge)
+
 #### Newly configurable items
 
 - [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app)
@@ -198,6 +202,12 @@ For IT Admins looking to update their [WDAC policy](windows-defender-application
 
 ``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
 
+#### Managing endpoints for the new Microsoft Edge
+
+Some environments may have network restrictions to account for as a consideration. To ensure a smooth experience with the new Edge please [enable these Microsoft endpoints.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
+
+Read more about the currently available [endpoints for HoloLens](hololens-offline.md).
+
 ### WebXR and 360 Viewer
 
 *Added in Windows Insider build 20289.1000*
@@ -278,8 +288,8 @@ With this release, we're introducing a new version of the Settings app. The new 
 
 **Known issues**
 - Previously placed Settings windows will be removed (see note above).
-- The Ethernet page shows a virtual Ethernet device ("UsbNcm") at all times (investigating). This virtual Ethernet device will also show up on the Network page of device setup, but can be ignored (investigating).
-- You can no longer rename your device with the Settings app (IT admins can use provisioning packages or MDM to rename devices).
+- You can no longer rename your device with the Settings app. IT admins can rename devices by using the [Windows Autopilot for HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) device name template or the MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName node.
+- The Ethernet page shows a virtual Ethernet device ("UsbNcm") at all times.
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
 
 ### Display color calibration
