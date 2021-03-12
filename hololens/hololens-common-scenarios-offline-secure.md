@@ -1,6 +1,6 @@
 ---
 title: Common Scenarios – Offline Secure HoloLens 2
-description: Learn how to setup an offline secure deployment and app deployment scenario with provisioning for HoloLens devices.
+description: Learn how to set up an offline secure deployment and app deployment scenario with provisioning for HoloLens devices.
 keywords: HoloLens, management, offline, offline secure
 ms.date: 9/25/2020
 manager: yannisle
@@ -51,32 +51,34 @@ Build a Secure Configuration Provisioning Package
    > [!div class="mx-imgBorder"]
    > ![Screenshot of the configuration package open in WCD](images/offline-secure-sample-wcd.png)
 
-Configurations set in this provisioning package:
+   Configurations set in this provisioning package:
+   
+   |     Item                                                |     Setting                       |     Description                                                                                                                    |
+   |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+   |     Accounts / Users                                    |     Local User Name & Password    |     For these offline devices, a single user name and password will need to be set and shared by all users of the device.          |
+   |     First Experience / HoloLens / SkipCalibration       |     True                          |     Skips calibration during initial device setup only                                                                             |
+   |     First Experience / HoloLens / SkipTraining          |     True                          |     Skips device training during initial device setup                                                                              |
+   |     First Experience / HoloLens / WiFi                  |     True                          |     Skips Wi-Fi config during initial device setup                                                                                 |
+   |     Policies/Connectivity/AllowBluetooth                |     No                            |     Disables Bluetooth                                                                                                             |
+   |     Policies/Experience/AllowCortana                    |     No                            |     Disables Cortana (to eliminate potential problems since the microphones are disabled)                                          |
+   |     Policies/MixedReality/MicrophoneDisabled            |     Yes                           |     Disables Microphone                                                                                                            |
+   |     Policies/Privacy/LetAppsAccessLocation              |     Force deny                    |     Prevents Apps from trying to access Location data (to eliminate potential problems since the Location tracking is disabled)    |
+   |     Policies/Privacy/LetAppsAccessMicrophone            |     Force deny                    |     Prevents Apps from trying to access Microphones (to eliminate potential problems since the Microphones are disabled)           |
+   |     Policies/Security/AllowAddProvisioningPackage       |     No                            |     Prevents anyone from adding provisioning packages that might attempt to override locked down policies.                         |
+   |     Policies/Security/AllowRemoveProvisioningPackage    |     No                            |     Prevents anyone from removing this locked down provisioning package.                                                           |
+   |     Policies/System/AllowLocation                       |     No                            |     Prevents the device from trying to track location data.                                                                        |
+   |     Policies/WiFi/AllowWiFi                             |     No                            |     Disables Wi-Fi                                                                                                                 |
 
-|     Item                                                |     Setting                       |     Description                                                                                                                    |
-|---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-|     Accounts / Users                                    |     Local User Name & Password    |     For these offline devices, a single user name and password will need to be set and shared by all users of the device.          |
-|     First Experience / HoloLens / SkipCalibration       |     True                          |     Skips calibration during initial device setup only                                                                             |
-|     First Experience / HoloLens / SkipTraining          |     True                          |     Skips device training during initial device setup                                                                              |
-|     First Experience / HoloLens / WiFi                  |     True                          |     Skips Wi-Fi config during initial device setup                                                                                 |
-|     Policies/Connectivity/AllowBluetooth                |     No                            |     Disables Bluetooth                                                                                                             |
-|     Policies/Experience/AllowCortana                    |     No                            |     Disables Cortana (to eliminate potential problems since the microphones are disabled)                                          |
-|     Policies/MixedReality/MicrophoneDisabled            |     Yes                           |     Disables Microphone                                                                                                            |
-|     Policies/Privacy/LetAppsAccessLocation              |     Force deny                    |     Prevents Apps from trying to access Location data (to eliminate potential problems since the Location tracking is disabled)    |
-|     Policies/Privacy/LetAppsAccessMicrophone            |     Force deny                    |     Prevents Apps from trying to access Microphones (to eliminate potential problems since the Microphones are disabled)           |
-|     Policies/Security/AllowAddProvisioningPackage       |     No                            |     Prevents anyone from adding provisioning packages that might attempt to override locked down policies.                         |
-|     Policies/Security/AllowRemoveProvisioningPackage    |     No                            |     Prevents anyone from removing this locked down provisioning package.                                                           |
-|     Policies/System/AllowLocation                       |     No                            |     Prevents the device from trying to track location data.                                                                        |
-|     Policies/WiFi/AllowWiFi                             |     No                            |     Disables Wi-Fi                                                                                                                 |
+1. Under Runtime Settings, Select **Accounts / Users / UserName: Holo / Password**.
 
-4. Under Runtime Settings, Select **Accounts / Users / UserName: Holo / Password**
-    - Note the password and reset if desired.
-5. Navigate to UniversalAppInstall / UserContextApp and [configure the LOB app](app-deploy-provisioning-package.md) you will be deploying to these devices.
+   Note the password and reset if desired.
+
+1. Navigate to UniversalAppInstall / UserContextApp and [configure the LOB app](app-deploy-provisioning-package.md) you will be deploying to these devices.
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot of where to add your app in WCD.](images/offline-secure-sample-wcd-usercontextapp2.png)
 
-6. Once complete, select the “Export” button and follow all prompts until your provisioning package is created.
+1. Once complete, select the “Export” button and follow all prompts until your provisioning package is created.
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot of the Export button for this package in WCD.](images/offline-secure-sample-wcd-export.png)
