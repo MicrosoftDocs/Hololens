@@ -12,7 +12,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.topic: article
-ms.localizationpriority: low
+ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)

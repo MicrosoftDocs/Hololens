@@ -10,7 +10,7 @@ author: mattzmsft
 ms.author: mazeller
 ms.topic: article
 manager: jarrettr
-ms.localizationpriority: low
+ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ---
