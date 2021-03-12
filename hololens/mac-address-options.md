@@ -45,7 +45,7 @@ There are many ways to improve this situation, depending on the infrastructure a
 | --- | --- | --- |
 | Provisioning Package with Ethernet Adaptor | Improves OOBE experience and allows for a quicker technician experience. | HoloLens compatible USB-C Hub + Ethernet adaptor, and technician will still need to interact with the device for MAC capture and OOBE finalization |
 | Autopilot with Intune Registration over Ethernet | This is a single-step connection and registration of the device to the customer environment. MAC capture can be completed without needing to interact with the device | Intune enabled for the customer AAD tenant and a HoloLens compatible USB-C Ethernet adaptor |
-| Automated reporting of MAC Addresses | When devices are registered with the Intune tenant, a script can report the MAC address to the technician. | Intune PowerShell Commandlets |
+| Automated reporting of MAC Addresses | When devices are registered with the Intune tenant, a script can report the MAC address to the technician. | Intune PowerShell cmdlets |
 
 ## Provisioning Package with Ethernet Adaptor
 
