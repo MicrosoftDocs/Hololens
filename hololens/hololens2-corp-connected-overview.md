@@ -32,40 +32,44 @@ There are three important pieces of infrastructure that should be setup and conf
 
 ## Stages of Deployment
 ### Prepare
-- Learn about the infrastructure essentials for HoloLens 2 devices.
-- Learn more about Azure AD and set up one if you don't have it.
-- Learn about Identity management and how to best set up Azure AD accounts.
-- Learn more about MDM and set up with Intune if you don't already have one ready.
-- Familiarize yourself with certificate-based Wi-Fi
-- Familiarize yourself with Proxy
-- Understand how you can use Line of Business Apps
-- Learn more about the way you can use Guides for your organization 
+> [!div class="checklist"]
+>- Learn about the infrastructure essentials for HoloLens 2 devices.
+>- Learn more about Azure AD and set up one if you don't have it.
+>- Learn about Identity management and how to best set up Azure AD accounts.
+>- Learn more about MDM and set up with Intune if you don't already have one ready.
+>- Familiarize yourself with certificate-based Wi-Fi
+>- Familiarize yourself with Proxy
+>- Understand how you can use Line of Business Apps
+>- Learn more about the way you can use Guides for your organization 
 ### Configure
-- How to create users and groups
-- How to set up Auto Enrollment
-- Wi-Fi Certificates Set up
-- Configure Proxy
--	Upload and Assign Line of Business (LOB) App packages
--	Setup Dynamics 365 Guides 
-    -	Users and Application licenses
+> [!div class="checklist"]
+>- How to create users and groups
+>- How to set up Auto Enrollment
+>- Wi-Fi Certificates Set up
+>- Configure Proxy
+>-	Upload and Assign Line of Business (LOB) App packages
+>-	Setup Dynamics 365 Guides 
+    - Users and Application licenses
     - Dataverse
     - PC Authoring
-- Optional: Kiosk
-- Optional: WDAC
+>- Optional: Kiosk
+>- Optional: WDAC
 ### Deploy
--	Validate enrollment via device and MDM
--	Wi-Fi certificate validation
--	Validate LOB app install
--	Validate Guides via authoring and operating
-Maintain
-- Update HoloLens 2
-- How to update Guides (store apps)
-- How to update LOB apps. 
-- How to manage HoloLens Updates
-- Development plan. 
-- Making a support plan.
-- Device management options
+> [!div class="checklist"]
+>-	Validate enrollment via device and MDM
+>-	Wi-Fi certificate validation
+>-	Validate LOB app install
+>-	Validate Guides via authoring and operating
+### Maintain
+> [!div class="checklist"]
+>- Update HoloLens 2
+>- How to update Guides (store apps)
+>- How to update LOB apps. 
+>- How to manage HoloLens Updates
+>- Development plan. 
+>- Making a support plan.
+>- Device management options
 
 # Next step 
 > [!div class="nextstepaction"]
-> [Corporate connected deployment - Prepare](hololens2-corporate-connected-prepare.md)
+> [Corporate connected deployment - Prepare](hololens2-corp-connected-prepare.md)

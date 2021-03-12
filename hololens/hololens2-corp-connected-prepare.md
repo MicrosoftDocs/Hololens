@@ -4,7 +4,7 @@ For both personal and corporate deployment scenarios, an MDM system is the essen
 
 ## Azure Active Directory
 Azure AD is a cloud-based directory service that provides identity and access management. Organizations that use Microsoft Office 365 or Intune are already using Azure AD, which has three editions: Free, Premium P1, and Premium P2 (see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions)). All editions support Azure AD device registration, but Premium P1 is required to enable MDM auto-enrollment which we will be using in this guide later.
-> !Important - It is essential to have an Azure Active Directory as HoloLens devices do not support on-premises AD join. If you don't already have an Azure Active Directory set up, follow the instructions in this link to get started and [Create a new tenant in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> [!Important] It is essential to have an Azure Active Directory as HoloLens devices do not support on-premises AD join. If you don't already have an Azure Active Directory set up, follow the instructions in this link to get started and [Create a new tenant in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## Identity Management
 In this guide we have chosen that for the Identity used, we will use Azure AD accounts, or Azure Active Directory accounts. There are several benefits to Azure AD accounts we would like to use, such as:
@@ -69,3 +69,7 @@ More details regarding app deployment can be found [here](https://docs.microsoft
 
 ## Guides Playbook
 Dynamics 365 Guides uses a Microsoft Dataverse environment to provide control over deployments. It’s important to understand the bigger picture of how your Dataverse environment interacts with your Guides apps and your tenant. We won’t be covering how to manage your dataverse in this guide, but please review the following information - [Basic concepts for deploying Dynamics 365 Guides - Dynamics 365 Mixed Reality | Microsoft Docs](https://docs.microsoft.com/dynamics365/mixed-reality/guides/admin-deployment-playbook).
+
+# Next step 
+> [!div class="nextstepaction"]
+> [Corporate connected deployment - Configure](hololens2-corp-connected-configure.md)
