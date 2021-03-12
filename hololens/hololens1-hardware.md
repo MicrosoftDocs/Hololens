@@ -64,10 +64,10 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 |   |   |
 | - | - |
-| Optics | See-through holographic lenses (waveguides) |
-| Holographic resolution | 2 HD 16:9 light engines producing 2.3M total light points |
-| Holographic density | \>2.5k radiants (light points per radian) |
-| Eye-based rendering | Automatic pupillary distance calibration |
+| **Optics** | See-through holographic lenses (waveguides) |
+| **Holographic resolution** | 2 HD 16:9 light engines producing 2.3M total light points |
+| **Holographic density** | \>2.5k radiants (light points per radian) |
+| **Eye-based rendering** | Automatic pupillary distance calibration |
 
 ### Sensors
 
@@ -117,8 +117,8 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 |   |   |
 | - | - |
-| Sizing | Single size with adjustable band. Fits over glasses |
-| Weight | 579 grams |
+| **Sizing** | Single size with adjustable band. Fits over glasses |
+| **Weight** | 579 grams |
 
 ## Device capabilities
 
@@ -148,7 +148,7 @@ Using the following to understand the environment:
 
 ### Safety
 
-HoloLens has been tested and found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
+HoloLens has been tested and found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3, and EN 166.
 - [SAR Information](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## Care and cleaning
@@ -167,7 +167,7 @@ To clean the rest of the device, including the headband and device arms, use a l
 
 The serial number for HoloLens (1st gen) devices is printed underneath the right lens.
 1. Hold the device in front of you as if you were going to wear it upon your head. With the device facing forward and upright.
-1. With the lens still facing forward, flip the deivce upside down so you see the underside.
+1. With the lens still facing forward, flip the device upside down so you see the underside.
 1. The right lens will now be on the left, printed under the lens on the band is the serial number. 
 
 The serial number can also be found via a connected PC:
@@ -177,7 +177,7 @@ The serial number can also be found via a connected PC:
 1. Right Click and select **Properties** of the HoloLens device
 1. This will display the series number of the device. Like this screenshot below.
 
-<img src="images/hl1-serial-number.png" width="400" height="600" />
+   <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>
 
 > [!div class="nextstepaction"]
 > [Set up and start your HoloLens (1st gen)](hololens1-setup.md)
