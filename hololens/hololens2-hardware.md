@@ -23,7 +23,7 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 ## HoloLens components
 
 - **Visor**. Contains the HoloLens sensors and displays. You can rotate the visor up while wearing the HoloLens.
-- **Headband**. To put the HoloLens on, use the adjustment wheel to expand the headband. With the HoloLens in place, tighten the adjustment wheel by turning to the right, until the headband is comfortable.
+- **Headband**. To put on the HoloLens, use the adjustment wheel to expand the headband. With the HoloLens in place, tighten the adjustment wheel by turning to the right, until the headband is comfortable.
 - **Brightness buttons**. When wearing the HoloLens, the brightness buttons are on the left side of the visor near your temple.
 - **Volume buttons**. When wearing the HoloLens, the volume buttons are on the right side of the visor near your temple.
 - **Power button**. When wearing the HoloLens, the power button is located on the right side of the rear outer cover.
@@ -75,7 +75,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 |   |   |
 | - | - |
 | Microphone array | 5 channels |
-| Speakers | Built in spatial sound |
+| Speakers | Built-in spatial sound |
 
 ### Compute and connectivity
 
@@ -93,7 +93,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 |   |   |
 | - | - |
-| Battery Life | 2-3 hours of active use. Up to 2 weeks of standby time. |
+| Battery Life | 2-3 hours of active use. Up to two weeks of standby time. |
 | Battery technology | [Lithium batteries](https://www.microsoft.com/download/details.aspx?id=43388) |
 | Charging behavior | Fully functional when charging |
 | Cooling type | Passively cooled (no fans) |
@@ -135,7 +135,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 | Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) empowers technicians to collaborate and solve problems with remote collaborators using Microsoft Teams or Dynamics 365 Remote Assist.  |
 | Feedback Hub | [Feedback Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) lets you provide feedback about Windows and apps by sharing your suggestions or problems.  |
 | File Explorer | File Explorer provides a graphical user interface for accessing the file systems. |
-| Mail and Calendar | The [Mail and Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) apps help you stay up to date on your email, manage your schedule and stay in touch with your contacts. |  
+| Mail and Calendar | The [Mail and Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) apps help you stay up to date on your email, manage your schedule, and stay in touch with your contacts. |  
 | Microsoft Edge | Microsoft Edge gives you world-class performance with more privacy, more productivity, and more value while you browse. |
 | Microsoft Store | The [Microsoft Store](https://www.microsoft.com) is your go-to source for apps and games that work with HoloLens.|
 | Movies & TV | [Movies & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) brings you the latest entertainment in one simple, fast, and elegant app. |
@@ -160,12 +160,12 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 Microsoft HoloLens 2 comes with a standard limited [warranty](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5). 
 
+
 Purchase is subject to [Microsoft Store Terms of Use and Sale](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1). All sales are final. No refunds.
 
 By purchasing HoloLens 2 you agree to the [software license agreement](https://www.microsoft.com/Useterms/).
 
 Not intended for use by children younger than 13.
-
 
 ## Package Dimensions
 
