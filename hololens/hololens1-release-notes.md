@@ -7,7 +7,7 @@ manager: yannisle
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority: low
 ms.date: 10/13/2020
 audience: ITPro
 appliesto:

@@ -10,7 +10,7 @@ ms.sitesec: library
 author: v-miegge
 ms.author: v-miegge
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: low
 appliesto:
 - HoloLens (1st gen)
 ---

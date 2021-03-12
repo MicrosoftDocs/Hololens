@@ -10,7 +10,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: high
+ms.localizationpriority: low
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting

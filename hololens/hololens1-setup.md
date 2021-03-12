@@ -6,7 +6,7 @@ ms.sitesec: library
 author: JesseMcCulloch
 ms.author: jemccull
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: low
 ms.date: 8/12/2019
 ms.reviewer: 
 manager: jarrettr
