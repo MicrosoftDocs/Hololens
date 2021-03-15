@@ -36,9 +36,9 @@ Dynamics 365 Guides is an In-Box app, and can be updated through the Microsoft S
 
 ## How to update Line of Business (LOB) apps
 
-Line of business apps can be updated in the same way they were added to Intune. Apps can be updated in Intune by uploading the new app with a higher version number to the existing App configuration. When the device syncs to Intune it will observe that there is a newer app version and the newer app will be downloaded and replace the old app.
+Line-of-business apps can be updated in the same way they were added to Intune. Apps can be updated in Intune by uploading the new app with a higher version number to the existing App configuration. When the device syncs to Intune, it will observe that there is a newer app version and the newer app will be downloaded and replace the old app.
 
-1. To upload the newer app navigate to the [MEM portal](https://endpoint.microsoft.com/#home) -\&gt; **Apps** -\&gt; All **apps** -\&gt; _TheNameOfYourApp -\&gt;_ **Properties.**
+1. To upload the newer app, navigate to the [MEM portal](https://endpoint.microsoft.com/#home) -\&gt; **Apps** -\&gt; All **apps** -\&gt; _TheNameOfYourApp -\&gt;_ **Properties.**
 2. Next to App information, select **Edit.**
 3. For the value of &quot;Select file to update&quot; select your file.
 4. From here use the context menu to open your file explorer and upload the newer version of the LOB app. Ensure to include dependencies as needed.
@@ -55,11 +55,11 @@ Learn how to [manage HoloLens updates](https://docs.microsoft.com/hololens/holol
 
 ## Development Plan
 
-With your device successfully enrolled you are now prepared to deploy more Line of Business apps (LOB apps) to your devices. For the duration of this Guide were using a sample app, but it&#39;s more likely that you will want to use custom apps built for your organization&#39;s needs.
+With your device successfully enrolled, you are now prepared to deploy more Line of Business apps (LOB apps) to your devices. For the duration of this Guide we're using a sample app, but it&#39;s more likely that you will want to use custom apps built for your organization&#39;s needs.
 
-If you already have a line of business app then you&#39;re ready to [deploy your app through MDM](https://docs.microsoft.com/hololens/app-deploy-intune). If you&#39;d prefer a different method then review the [application deployment overview for HoloLens 2](https://docs.microsoft.com/hololens/app-deploy-overview) to learn more methods of deploying your LOB app to your devices.
+If you already have a line of business app, then you&#39;re ready to [deploy your app through MDM](https://docs.microsoft.com/hololens/app-deploy-intune). If you&#39;d prefer a different method then review the [application deployment overview for HoloLens 2](https://docs.microsoft.com/hololens/app-deploy-overview) to learn more methods of deploying your LOB app to your devices.
 
-If you&#39;ve yet to create your own LOB app or are still in the process of creation then review our mixed reality development docs to [start designing and prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design) or learn the core concepts to [get started with mixed reality development.](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)
+If you&#39;ve yet to create your own LOB app or are still in the process of creation, then review our mixed reality development docs to [start designing and prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design) or learn the core concepts to [get started with mixed reality development.](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)
 
 ## Support Plan
 
@@ -72,7 +72,7 @@ A support plan is an excellent thing to have in place. Having someone, or a grou
 
 ## Device Management
 
-This guide talked about setting up Mobile Device Management (MDM) and used it to set up some device configurations and apply settings to allow access in terms of Wi-Fi certificates and proxy. However MDM can also be used to apply device restrictions via CSPs and Ppolicies.
+This guide talked about setting up Mobile Device Management (MDM) and used it to set up some device configurations and apply settings to allow access in terms of Wi-Fi certificates and proxy. However MDM can also be used to apply device restrictions via CSPs and Policies.
 
 In many cases devices can have connectivity restrictions such as Bluetooth, VPN, USB or even turning off access to the camera or microphone. If any of these interests you then we encourage you to read our [common device restrictions page](https://docs.microsoft.com/hololens/hololens-common-device-restrictions).
 
