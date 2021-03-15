@@ -1,3 +1,21 @@
+---
+title: Overview of Corporate connected HoloLens 2 with Dynamics 365 Guides
+description: Learn how to enroll HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
+keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
+author: joyjaz
+ms.author: v-jjaswinski
+ms.reviewer: aboeger
+ms.date: 03/16/2021
+ms.prod: hololens
+ms.topic: article
+ms.sitesec: library
+ms.localizationpriority: medium
+audience: HoloLens
+manager: yannisle
+appliesto:
+- HoloLens 2
+---
+
 # MAINTAIN
 
 ## Update HoloLens

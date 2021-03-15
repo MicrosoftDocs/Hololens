@@ -1,3 +1,21 @@
+---
+title: Overview of Corporate connected HoloLens 2 with Dynamics 365 Guides
+description: Learn how to enroll HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
+keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
+author: joyjaz
+ms.author: v-jjaswinski
+ms.reviewer: aboeger
+ms.date: 03/16/2021
+ms.prod: hololens
+ms.topic: article
+ms.sitesec: library
+ms.localizationpriority: medium
+audience: HoloLens
+manager: yannisle
+appliesto:
+- HoloLens 2
+---
+
 # Prepare - Corporate Connected Guide
 ## Infrastructure Essentials
 For both personal and corporate deployment scenarios, an MDM system is the essential infrastructure required to deploy and manage Windows 10 Holographic devices. An [Azure AD Premium subscription](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-get-started-premium) is recommended as an identity provider and required to support certain capabilities.

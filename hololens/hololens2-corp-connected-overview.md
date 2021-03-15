@@ -1,3 +1,21 @@
+---
+title: Overview of Corporate connected HoloLens 2 with Dynamics 365 Guides
+description: Learn how to enroll HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
+keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
+author: joyjaz
+ms.author: v-jjaswinski
+ms.reviewer: aboeger
+ms.date: 03/16/2021
+ms.prod: hololens
+ms.topic: article
+ms.sitesec: library
+ms.localizationpriority: medium
+audience: HoloLens
+manager: yannisle
+appliesto:
+- HoloLens 2
+---
+
 # Deployment Guide - Corporate Connected HoloLens 2 with Dynamics 365 Guides - Overview
 
 This guide will help IT professionals plan for and deploy Microsoft HoloLens 2 devices with Dynamics 365 Guides (Guides) to their organization. This guide is great for pilots as well as production deployments and is similar to the [Scenario B: Deploy inside your organization's network](https://docs.microsoft.com/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) guide. After testing your proof-of-concept, use this guide to move forward with integrating HoloLens into your organization.
