@@ -72,6 +72,6 @@ To add or remove a keyboard layout, open the **Start** menu, and then select **S
 If your HoloLens has more than one keyboard layout, use the **Layout** key to switch between them. The **Layout** key is in the lower right corner of the on-screen keyboard.
 
 > [!NOTE]  
-> The on-screen keyboard can use Input Method Editor (IME) to enter characters in languages such as Chinese. However, HoloLens does not support external Bluetooth keyboards that use IME.
+> The on-screen keyboard can use Input Method Editor (IME) to enter characters in languages, such as Japanese. However, HoloLens does not support external Bluetooth keyboards that use IME.
 >  
 > While you use IME together with the on-screen keyboard, you can continue to use a Bluetooth keyboard to type in English. To switch between keyboards, press the tilde character button (**~**).
