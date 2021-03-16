@@ -32,6 +32,7 @@ Finally, the execution of specific device-wide operations, such as joining the d
     * For Azure AD Users, the exception to this rule is that if the device is Azure AD joined via Autopilot, which uses a non-real user. In this case, the first AAD user to sign into the device may not be made device owner automatically unless that user has the "global administrator" role assigned in Azure portal. See below for more detais. 
   * When a user is promoted to be an Owner from Settings UX by another Owner on the device.
   * If the device owner is no longer available (e.g., leaves the company) and the device is Azure AD joined, the Tenant Admin can change the device owner to a new user in Azure Portal. Global Administrators of an Azure AD tenant are implicitly signed in as Owners on the device without requiring either of the previous steps. 
+
 IT administrators can manage what apps can access through [Privacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy) policies. To understand more about who is made a device owner on an Azure AD joined device, see [“Assign Local Admin” documentation](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) (but read ‘local admin’ as ‘device owner’ since admin does not exist on HoloLens).
 
  
