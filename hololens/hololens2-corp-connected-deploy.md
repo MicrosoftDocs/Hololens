@@ -41,11 +41,14 @@ If your device isn&#39;t currently sitting in a factory settings state, now woul
 ![HoloLens 2 Settings screen](./images/hololens2-settings.png)
 
 8. You can verify that your device is successfully joined to Azure AD and enrolled to Intune within the Settings app. From **Settings** select **Accounts** -> **Access work or school**. From this screen, you can verify you are successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Azure AD. Connected by *yourusername@nameofAAD.onmicrosoft.com*. This will verify your device is joined to your organization&#39;s Azure AD.
-1. To validate the device has Azure AD Joined we can check the Azure Active Directory from the [Azure portal](https://portal.azure.com/#home) -> **Azure Active Directory** -> **Devices** -> **All devices**, and search the device name. You&#39;ll be able to see the device is a part of the Azure Active Directory.
-1. You may verify your device is enrolled with MDM on device, from **Settings** select **Accounts** -> **Access work or school**. From this screen, you can verify you are successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Azure AD. Connected by *yourusername@nameofAAD.onmicrosoft.com*. From this Access work or school account by selecting &quot;Connected to nameofAAD&#39;s Azure AD. Connected by yourusername@nameofAAD.onmicrosoft.com&quot; and select the **Info** button.
+![Azure Active Directory - Device](./images/hololens2-devices-all-devices.png)
+To validate the device has Azure AD Joined we can check the Azure Active Directory from the [Azure portal](https://portal.azure.com/#home) -> **Azure Active Directory** -> **Devices** -> **All devices**, and search the device name. You&#39;ll be able to see the device is a part of the Azure Active Directory.
+
+9. You may verify your device is enrolled with MDM on device, from **Settings** select **Accounts** -> **Access work or school**. From this screen, you can verify you are successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Azure AD. Connected by *yourusername@nameofAAD.onmicrosoft.com*. From this Access work or school account by selecting &quot;Connected to nameofAAD&#39;s Azure AD. Connected by yourusername@nameofAAD.onmicrosoft.com&quot; and select the **Info** button.
 
 To check online, you&#39;ll need to log into the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home). Log in and select  **Devices**  then  **All devices**. From here, you can search your HoloLens device&#39;s name. You should be able to see your HoloLens listed on Intune.
 
+![Azure Active Directory - Device](./images/hololens2-devices-all-devices2.png)
 ## Wi-Fi certificate validation
 
 By now, the device should have received the Wi-Fi certificate. The simplest validation you can do is attempt to connect to the Wi-Fi connection for which you&#39;ve received the certificate. Open up the **Settings** app and navigate to **Network &amp; Internet** -> **Wi-Fi** and select the Wi-fi connection. Once connected, open up the Microsoft Edge app and confirm you can navigate to a website.
