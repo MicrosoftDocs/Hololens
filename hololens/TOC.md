@@ -54,6 +54,12 @@
 #### [Cloud connected - Deploy](hololens2-cloud-connected-deploy.md)
 #### [Cloud connected - Maintain](hololens2-cloud-connected-maintain.md)
 ### [Deploying HoloLens 2 to External Clients with Remote Assist](hololens2-deployment-guide.md)
+### Corporate connected HoloLens 2 deployment with Dynamic 365 Guides
+#### [Cloud connected - Deployment Overview](hololens2-cloud-connected-overview.md)
+#### [Corporate connected - Prepare](hololens2-corp-connected-prepare.md)
+#### [Corporate connected - Configure](hololens2-corp-connected-configure.md)
+#### [Corporate connected - Deploy](hololens2-corp-connected-deploy.md)
+#### [Corporate connected - Maintain](hololens2-corp-connected-maintain.md)
 ### [Offline Secure](hololens-common-scenarios-offline-secure.md)
 ## Security
 ### [Security overview](security-overview.md)
