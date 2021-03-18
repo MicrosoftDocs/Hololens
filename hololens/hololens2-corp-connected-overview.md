@@ -68,8 +68,7 @@ The following infrastructure should already be in place:
 > [!div class="checklist"]
 >- [How to create users and groups](hololens2-corp-connected-configure.md#azure-users-and-groups)
 >- [How to set up Auto Enrollment](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
->- [Wi-Fi Certificates Set up](hololens2-corp-connected-configure.md#wi-fi and-certificates-and-wi-fi-set-up)
->- [Configure Proxy](hololens2-corp-connected-configure.md#proxy-set-up)
+>- [How to set up Wi-Fi certificates and profiles for Corporate Wi-Fi Connectivity](hololens2-corp-connected-configure.md#corporate-wi-fi=connectivity)
 >- [Upload and Assign Line of Business (LOB) App packages](hololens2-corp-connected-configure.md#app-deployment)
 >- [Setup Dynamics 365 Guides](hololens2-corp-connected-configure.md#\setup-guides:application-licenses,-dataverse,-and-authoring)
 >- [Optional: Kiosk](hololens2-corp-connected-configure.md#optional-kiosk-mode)

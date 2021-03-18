@@ -39,48 +39,44 @@ By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we 
 
 For full details and steps read the guide on [how to enable auto enrollment for Intune](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment).
 
-## Wi-Fi and Certificates and Wi-Fi Set up
+## Corporate Wi-Fi Connectivity
 
-Certificate-based authentication is a common requirement for customers using HoloLens 2. You might require certificates to access Wi-Fi, to connect to VPN solutions, or for accessing internal resources in your organization. You will need to deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with your MDM solution. Using Wi-Fi certificates with Intune creates a seamless experience for end users. Wi-Fi certificates eliminate the need for a username and password and ensure a connection to the corporate Wi-Fi network(s) regardless of the user or HoloLens. Prerequisites for certificate use:
+Corporate Wi-Fi connections will commonly require certificate-based authentication for customers using HoloLens 2. You will need to deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with your MDM solution. Using Intune to deploy Wi-Fi profiles, certificates, and proxy settings creates a seamless experience for end users.
+ 
+### Deploy certificates and Wi-Fi profiles
+To deploy certificates and profiles through Microsoft Endpoint Manager, follow these steps:
+1. Create a profile for each of the Root and Intermediate certificates (see [Create trusted certificate profiles.](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)) Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. **Certificate profiles without an expiration date will not be deployed**.
 
-### Certificate requirements
+2.	Create a profile for each SCEP or PKCS certificates (see [Create a SCEP certificate profile or Create a PKCS certificate profile](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. **Certificate profiles without an expiration date will not be deployed.**
 
-[Root certificates](https://docs.microsoft.com/mem/intune/protect/certificates-trusted-root) are required to deploy certificates through a SCEP or PKCS infrastructure. Other applications and services in your organization might require root certificates to be deployed to your HoloLens 2 devices as well.A trusted root certificate – must be deployed before other certificates. This profile helps establish the trust from the device back to the CA and is required by the other certificate profiles.
+> [!Note]
+> As the HoloLens 2 is considered for many to be a shared device, i.e., multiple users per device, it is recommended to deploy Device certificates instead of User certificates for Wi-Fi authentication where possible.
 
-[Certification Authority](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj125375(v=ws.11))
+3.	Create a profile for your corporate Wi-Fi network (see [Wi-Fi settings for Windows 10 and later devices](https://docs.microsoft.com/intune/wi-fi-settings-windows)). Within your Wi-Fi profile you can select to use the proxy settings within your organization.
+ 
+Your options:
+- **None**: No proxy settings are configured.
+- **Manually configure**: Enter the **Proxy server IP address** and its **Port number**.
+- **Automatically configure**: Enter the URL pointing to a proxy auto configuration (PAC) script. For example, enter *http://proxy.contoso.com/proxy.pac*.
 
-On-premises infrastructure
+For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
+ 
+> [!Note]
+> It is recommended that the Wi-Fi profile be assigned to Device groups rather than User groups where possible.
+ 
+> [!Tip]
+You also can export a working Wi-Fi profile from a Windows 10 PC on your corporate network. This export creates an XML file with all the current settings. Then, import this file into Intune, and use it as the Wi-Fi profile for your HoloLens 2 devices. See [Export and import Wi-Fi settings for Windows devices](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
+1.	[Assign](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign) the device profiles to the HoloLens device group.
+2.	[Monitor](https://docs.microsoft.com/mem/intune/configuration/device-profile-monitor) the device profiles in Intune.
 
-[PKCS](#_PKCS)
+If there are issues with Wi-Fi profiles, reference Troubleshoot Wi-Fi device configuration profiles in Intune.
 
-A trusted root certificate – must be deployed before other certificates. This profile helps establish the trust from the device back to the CA and is required by the other certificate profiles.
+## Troubleshooting External Internet Access When Corp Connected
+When services try to not go through a set Proxy, they may attempt to connect through the firewall. You can add a list of endpoint specifics to your firewall rules to troubleshoot these issues.
 
-Once this infrastructure is in place, the Wi-Fi certificate(s) can be created and deployed.
+If you're blocked at firewall ports, enable some common endpoints for HoloLens.
 
-### Wi-Fi connectivity requirements
-
-Create a [profile](https://docs.microsoft.com/mem/intune/protect/certificates-profile-scep) for each SCEP Wi-Fi certificate. Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. Certificate profiles without an expiration date will not be deployed.
-
-1. [Assign](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign) the device profiles to the HoloLens device group.
-2. [Monitor](https://docs.microsoft.com/mem/intune/configuration/device-profile-monitor) the device profiles in Intune.
-
-If there are issues with Wi-Fi profiles, reference [Troubleshoot Wi-Fi device configuration profiles in Intune](https://docs.microsoft.com/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles).
-
-## Proxy Set-up
-
-Now is the time to create the Wi-Fi Proxy device configuration profile. This profile will be assigned to the previously created group and will enable proxy on the specific Wi-Fi connection(s). Currently, the recommended method is taking a working Wi-Fi profile and importing it into the HoloLens.
-
-Reference these instructions to [Import Wi-Fi settings for Windows devices in Microsoft Intune.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fmem%2Fintune%2Fconfiguration%2Fwi-fi-settings-import-windows-8-1&amp;data=04%7C01%7Cv-evmill%40microsoft.com%7Cf3111c90a57d4c9f791b08d8d39783f9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637491994999180795%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=Z4cxH4EJpToWVeaoz5RpP1YXyxFSSm1a5leboVpfwVc%3D&amp;reserved=0)
-
-See More: [Create a Wi-Fi profile for devices in Microsoft Intune - Azure | Microsoft Docs](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure)
-
-### Troubleshooting Proxy via Firewall
-
-When things try to not go through Proxy, they try to run through the firewall. You can add a list of endpoint specifics to your Firewall to troubleshoot this issue.
-
-If you&#39;re blocked at firewall ports enable some common [endpoints](https://docs.microsoft.com/hololens/hololens-offline) for HoloLens.
-
-You can also enable the Guides specific ports: [Internet accessible URLs required for connectivity to Microsoft Dynamics CRM Online](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)
+You can also enable the Guides specific ports: [Internet accessible URLs required for connectivity to Microsoft Dynamics CRM Online](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami).
 
 ## App Deployment
 
