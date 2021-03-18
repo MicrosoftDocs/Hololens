@@ -119,7 +119,7 @@
 ### [Frequently asked questions](hololens-faq.md)
 ### [Known issues for HoloLens](hololens-known-issues.md)
 ### [Collect and use diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
-### [Support and help options](holonlens2-support.md)
+### [Support and help options](hololens2-support.md)
 
 # HoloLens release notes
 ## [HoloLens 2 release notes](hololens-release-notes.md)
