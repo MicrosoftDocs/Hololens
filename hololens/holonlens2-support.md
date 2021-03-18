@@ -8,7 +8,7 @@ ms.topic: article
 ms.date: 3/19/2021 
 ---
 
-# Types of support options available
+# What are the HoloLens2 support and help options?
 
 This article answers some questions that you may have about different support options laid out for our small to large enterprise customers
 
@@ -19,6 +19,8 @@ This article answers some questions that you may have about different support op
 - [Store & Purchase Inquiry Support](https://support.microsoft.com/account-billing/contact-microsoft-store-support-4f615f2a-6bbd-fd69-6695-ae213d63eef0) this will take you to our sales support phone numbers if you wish to contact Microsoft Store Support
 
 ## Commercial store support numbers across all regions
+>[!Note]
+>Use one of the commercial support business phone numbers below to help complete your purchase 
 
 | Markets | Business Desk Number | Hours of Operation |
 |-----------------|-------------------|-----------------------|
