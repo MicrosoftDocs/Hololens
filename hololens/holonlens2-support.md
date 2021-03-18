@@ -2,6 +2,7 @@
 title: "HoloLens 2 Phone Support"
 ms.author: rajhawar
 author: raunakjhawar
+description: Business phone details HoloLens2 phone support
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021 
