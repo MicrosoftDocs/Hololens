@@ -172,6 +172,8 @@ landingContent:
             url: https://holodevelopersslack.azurewebsites.net/
           - text: Technical Support
             url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f
+          - text: Phone Support
+            url: holonlens2-support.md
           - text: Microsoft Store - Office Support
             url: https://support.microsoft.com/office/microsoft-store-109d8aed-d32f-4d6f-9c54-ff80871e8637
           - text: Store & Purchase Inquiry Support
