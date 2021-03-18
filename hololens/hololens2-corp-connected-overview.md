@@ -73,8 +73,8 @@ The following infrastructure should already be in place:
 >- [How to set up Wi-Fi certificates and profiles for Corporate Wi-Fi Connectivity](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
 >- [Upload and Assign Line of Business (LOB) App packages](hololens2-corp-connected-configure.md#app-deployment)
 >- [Setup Dynamics 365 Guides](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
->- [Optional: Kiosk Mode](hololens2-corp-connected-configure.md#optional-kiosk-mode)
->- [Optional: WDAC](hololens2-corp-connected-configure.md##optional-wdac)
+>- [How to configure Kiosk Mode (optional)](hololens2-corp-connected-configure.md#optional-kiosk-mode)
+>- [How to configure WDAC (optional)](hololens2-corp-connected-configure.md#optional-wdac)
 ### Deploy
 > [!div class="checklist"]
 >-	[Validate enrollment via device and MDM](hololens2-corp-connected-deploy.md#enrollment-validation)
