@@ -1,5 +1,5 @@
 ---
-title: Overview of Corporate connected HoloLens 2 with Dynamics 365 Guides
+title: Deployment Guide - Corporate connected HoloLens 2 with Dynamics 365 Guides - Configure
 description: Learn how to enroll HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: joyjaz
@@ -16,7 +16,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# CONFIGURE
+# Configure - Corpprate Connected Guide
 
 ## Azure Users and Groups
 
@@ -39,7 +39,7 @@ By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we 
 
 For full details and steps read the guide on [how to enable auto enrollment for Intune](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment).
 
-## Wi-Fi and Certificates and Wi-Fi sSet up
+## Wi-Fi and Certificates and Wi-Fi Set up
 
 Certificate-based authentication is a common requirement for customers using HoloLens 2. You might require certificates to access Wi-Fi, to connect to VPN solutions, or for accessing internal resources in your organization. You will need to deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with your MDM solution. Using Wi-Fi certificates with Intune creates a seamless experience for end users. Wi-Fi certificates eliminate the need for a username and password and ensure a connection to the corporate Wi-Fi network(s) regardless of the user or HoloLens. Prerequisites for certificate use:
 
@@ -90,16 +90,16 @@ If you are still developing your Apps or don&#39;t have one yet, you can use a s
 
 If you would prefer to use your own app or are interested in app development for Mixed Reality, then feel free to review our [Mixed Reality developer documentation](https://docs.microsoft.com/windows/mixed-reality/design/design).
 
-**\&gt; [!NOTE]**
- \&gt; The System Requirements for HoloLens devices are based on the architecture of the app build. HoloLens 2 devices use ARM architecture. When building your apps in Visual Studio, ensure that you have selected the correct architecture for the device and include any needed dependencies.
+> [!NOTE]
+> The System Requirements for HoloLens devices are based on the architecture of the app build. HoloLens 2 devices use ARM architecture. When building your apps in Visual Studio, ensure that you have selected the correct architecture for the device and include any needed dependencies.
 
-**\&gt; [!IMPORTANT]**
- \&gt; When deploying LOB apps, it&#39;s important to also upload the certificate to Intune, and assign it to the same group that is intended to use the app or it will not install properly.
+> [!IMPORTANT]
+> When deploying LOB apps, it&#39;s important to also upload the certificate to Intune, and assign it to the same group that is intended to use the app or it will not install properly.
 
 ### Upload and Assign the App
 
 1. Navigate to the [MEM admin center](https://endpoint.microsoft.com/#home).
-2. Select **Apps** \&gt; **All apps** \&gt; and select the **+ Add** button.
+2. Select **Apps** > **All apps** and select the **+ Add** button.
 3. Underneath Other, Select **Line-of-business app**. Click **select**.
 4. Select the app package file, this is your APPXBUNDLE file, or in our case of this example the app is _MRTK Examples Hub\_2.4.2.0\_arm\_Master.appxbundle_.
 5. You will be notified of missing dependencies. In this case we need to upload _Microsoft.VCLibs.ARM.14.00.appx_. Search for it under **Select a file.**
@@ -109,8 +109,6 @@ If you would prefer to use your own app or are interested in app development for
 9. Select **Create.**
 
 Read more: [Assign apps to groups in Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app)
-
-// Ryan Nadel to review below.
 
 ## Setup Guides: Application licenses, dataverse, and authoring
 
@@ -149,11 +147,9 @@ When creating Guides you will always start on your PC. Creating the steps, selec
 
 If you&#39;d like to start learning about authoring for Guides, start here with the [authoring overview](https://docs.microsoft.com/dynamics365/mixed-reality/guides/authoring-overview). Or to get a fast track overview, watch this short video.
 
-\&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www. **youtube**.com/embed/EC24dMlAy90&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen\&gt;\&lt;/iframe\&gt;
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EC24dMlAy90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ![](RackMultipart20210312-4-5gvo1a_html_53cae776fa223b33.png)
-
-// end necessary Ryan Nadel review. (Feel free to review more)
 
 ## Optional: Kiosk mode
 

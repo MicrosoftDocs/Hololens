@@ -1,5 +1,5 @@
 ---
-title: Overview of Corporate connected HoloLens 2 with Dynamics 365 Guides
+title: Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Prepare
 description: Learn how to enroll HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: joyjaz
@@ -25,10 +25,10 @@ Azure AD is a cloud-based directory service that provides identity and access ma
 > [!Important] It is essential to have an Azure Active Directory as HoloLens devices do not support on-premises AD join. If you don't already have an Azure Active Directory set up, follow the instructions in this link to get started and [Create a new tenant in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## Identity Management
-In this guide we have chosen that for the Identity used, we will use Azure AD accounts, or Azure Active Directory accounts. There are several benefits to Azure AD accounts we would like to use, such as:
-- Employees use their Azure AD account to register the device in Azure AD and can automatically enroll it with the organization's MDM solution (Azure AD+MDM – requires Azure AD Premium subscription).
-- Azure AD accounts support Single Sign On. When a user signs into Guides, their Identity from the signed in Azure AD user will be recognized and the user will be signed into the app for a streamlined experience.
-- Azure AD accounts have additional authentication options via Windows Hello for Business. In addition to Iris log-in, users can sign in from another device or use FIDO security keys.
+In this guide we have chosen that for the [Identity](https://docs.microsoft.com/hololens/hololens-identity) used, we will use Azure AD accounts, or Azure Active Directory accounts. There are several benefits to Azure AD accounts we would like to use, such as:
+- Employees use their Azure AD account to register the device in Azure AD and can automatically enroll it with the organization's MDM solution (Azure AD+MDM – requires [Azure AD Premium subscription](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-get-started-premium)).
+- Azure AD accounts support [Single Sign On](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). When a user signs into Guides, their Identity from the signed in Azure AD user will be recognized and the user will be signed into the app for a streamlined experience.
+- Azure AD accounts have additional [authentication options](https://docs.microsoft.com/hololens/hololens-identity) via [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris log-in, users can sign in from another device or use FIDO security keys.
 
 > [!Note] 
 > Employees can use only one account to initialize a device so it's imperative that your organization controls which account is enabled first. The account chosen will determine who controls the device and influence your management capabilities.
@@ -52,7 +52,7 @@ Your MDM system can automatically deploy these certificates to the devices’ ce
 If your MDM systems is already configured for certificates, reference [Prepare certificates and network profiles for HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network) to start deploying certificates and profiles for your HoloLens 2 devices.
 
 ## SCEP
-### Requirements
+
 The following services are required for SCEP deployment, with the exception of the Web Application Proxy Server.
 - Certification Authority
 - NDES Server role
@@ -80,7 +80,7 @@ There are multiple ways to deploy applications to HoloLens 2 devices. Apps can b
 
 For those of you who do not have your own LOB, we will provide a sample app to test this deployment flow. This app will be the MRTK Examples app, and has already been prebuilt and packaged to test for proof of concept.
  
-More details regarding app deployment can be found [here](https://docs.microsoft.com/hololens/app-deploy-overview).
+More details regarding app deployment can be found, reference [App Management: Overview](https://docs.microsoft.com/hololens/app-deploy-overview).
 
 > [!NOTE]
 > HoloLens 2 supports running of UWP ARM64 apps only.
