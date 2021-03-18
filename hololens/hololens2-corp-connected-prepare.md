@@ -65,6 +65,8 @@ If your network does not already support SCEP, or you are unsure if your network
 
 If your infrastructure already supports SCEP, you will need to create a [profile](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/create-certificate-profiles) for each SCEP certificate that the HoloLens 2 will use. Reference [Create and assign SCEP certificate profiles in Intune](https://docs.microsoft.com/mem/intune/protect/certificates-profile-scep). If you are having issues with SCEP, reference [Troubleshoot use of SCEP certificate profiles to provision certificates with Microsoft Intune](https://docs.microsoft.com/troubleshoot/mem/intune/troubleshoot-scep-certificate-profiles).
 
+![SCEP data flow](./images/hololens2-scep-info-flow.png)
+
 ## PKCS
 Intune also supports the use of private and public key pair (PKCS) certificates. Reference [Use private and public key certificates in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-pfx-configure) for more information.
 

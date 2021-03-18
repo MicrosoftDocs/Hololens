@@ -145,8 +145,6 @@ If you&#39;d like to start learning about authoring for Guides, start here with 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EC24dMlAy90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![](RackMultipart20210312-4-5gvo1a_html_53cae776fa223b33.png)
-
 ## Optional: Kiosk mode
 
 Kiosk mode is a mode that let&#39;s an IT Admin configure the start menu&#39;s UI to show only a single app, or selection of apps. A kiosk can also be applied to specific users, groups, or at the device level; and in some cases, exclude certain users from the Kiosk still allowing them access to the regular start menu.

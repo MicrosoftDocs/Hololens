@@ -1,6 +1,6 @@
 ---
 title: Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Overview
-description: Learn how to enroll HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
+description: Learn how to enroll HoloLens 2 devices with Dynamics 365 Guides over a corporate Connected network.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: joyjaz
 ms.author: v-jjaswinski
@@ -20,7 +20,7 @@ appliesto:
 
 This guide will help IT professionals plan for and deploy Microsoft HoloLens 2 devices with Dynamics 365 Guides (Guides) to their organization. This guide is great for pilots as well as production deployments and is similar to the [Scenario B: Deploy inside your organization's network](https://docs.microsoft.com/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) guide. After testing your proof-of-concept, use this guide to move forward with integrating HoloLens into your organization.
 
-In this guide, we will cover how to enroll your devices into your existing device management, applying licenses as needed, and validating that your end users are able to operate a Dynamics 365 Guide, as well as using a custom line of business apps, after device set up. 
+In this guide, we will cover how to enroll your devices into your existing device management, apply licenses as needed, and validate that your end users are able to operate a Dynamics 365 Guide, as well as use a custom line of business apps, after device set up. 
 
 ## Prerequisite Infrastructure
 
@@ -35,15 +35,15 @@ The following infrastructure should already be in place:
     - Single or multiple users per device supported.
 - Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk.
 
-## New Infrastructure
+## New Configurations
 
 - Network 
     - Certificates
     - Proxy configuration
 - Custom apps deployment
-    - uploading, 
-    - assigning, and 
-    - setting your app to automatically download to specific devices
+    - Uploading, 
+    - Assigning, and 
+    - Setting your app to automatically download to specific devices
 
 ## Guides Licensing and Requirements
 - Azure Active Directory account
@@ -52,6 +52,8 @@ The following infrastructure should already be in place:
     - Power Apps (included)
 - Power BI Desktop
 - Network Connectivity
+
+![Corp connected network diagram](./images/hololens2-corp-connected-network.png)
 
 ## Stages of Deployment
 ### Prepare
@@ -71,8 +73,8 @@ The following infrastructure should already be in place:
 >- [How to set up Wi-Fi certificates and profiles for Corporate Wi-Fi Connectivity](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
 >- [Upload and Assign Line of Business (LOB) App packages](hololens2-corp-connected-configure.md#app-deployment)
 >- [Setup Dynamics 365 Guides](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
->- [Optional: Kiosk Mode](hololens2-corp-connected-configure.md#optional:-kiosk-mode)
->- [Optional: WDAC](hololens2-corp-connected-configure.md##optional:-wdac)
+>- [Optional: Kiosk Mode](hololens2-corp-connected-configure.md#optional-kiosk-mode)
+>- [Optional: WDAC](hololens2-corp-connected-configure.md##optional-wdac)
 ### Deploy
 > [!div class="checklist"]
 >-	[Validate enrollment via device and MDM](hololens2-corp-connected-deploy.md#enrollment-validation)
