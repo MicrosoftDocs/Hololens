@@ -2,6 +2,7 @@
 title: "HoloLens 2 Support Options"
 ms.author: rajhawar
 author: raunakjhawar
+reviewer: asergaz 
 description: HoloLens2 support options for small to large enterprise customers
 ms.prod: hololens
 ms.topic: article
