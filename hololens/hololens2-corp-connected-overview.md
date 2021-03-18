@@ -71,19 +71,19 @@ The following infrastructure should already be in place:
 >- [How to set up Wi-Fi certificates and profiles for Corporate Wi-Fi Connectivity](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
 >- [Upload and Assign Line of Business (LOB) App packages](hololens2-corp-connected-configure.md#app-deployment)
 >- [Setup Dynamics 365 Guides](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
->- [Optional: Kiosk](hololens2-corp-connected-configure.md#optional-kiosk-mode)
->- [Optional: WDAC](hololens2-corp-connected-configure.md##optional-wdac)
+>- [Optional: Kiosk Mode](hololens2-corp-connected-configure.md#optional:-kiosk-mode)
+>- [Optional: WDAC](hololens2-corp-connected-configure.md##optional:-wdac)
 ### Deploy
 > [!div class="checklist"]
 >-	[Validate enrollment via device and MDM](hololens2-corp-connected-deploy.md#enrollment-validation)
 >-	[Wi-Fi certificate validation](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation)
->-	[Validate LOB app install](hololens2-corp-connected-deploy.md#validate-line-of-business-(lob)-app-install)
+>-	[Validate LOB app install](hololens2-corp-connected-deploy.md#validate-line-of-business-lob-app-install)
 >-	[Validate Guides via authoring and operating](hololens2-corp-connected-deploy.md#validate-dynamics-365-guides)
 ### Maintain
 > [!div class="checklist"]
 >- [Update HoloLens 2.](hololens2-corp-connected-maintain.md#update-hololens)
 >- [How to update Guides (store apps).](hololens2-corp-connected-maintain.md#how-to-update-dynamics-365-guides-and-other-store-apps)
->- [How to update LOB apps.](hololens2-corp-connected-maintain.md#how-to-update-line-of-business-(lob)-apps) 
+>- [How to update LOB apps.](hololens2-corp-connected-maintain.md#how-to-update-line-of-business-lob-apps) 
 >- [Development plan.](hololens2-corp-connected-maintain.md#development-plan) 
 >- [Making a support plan.](hololens2-corp-connected-maintain.md#support-plan)
 >- [Device management options](hololens2-corp-connected-maintain.md#device-management)
