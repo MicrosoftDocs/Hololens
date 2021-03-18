@@ -122,7 +122,7 @@ Here are some guidelines to follow when using your device:
 1. Use device in an environment within temperature range.
 1. Use device indoors.
 1. Use device in shade; even indoors avoid direct sunlight though windows or skylights.
-1. If you follow the above guidelines but experience unexpected overheating issues, ensure Full telemetry is enabled before submitting [Feedback](hololens-feedback.md).
+1. If you follow the above guidelines but experience unexpected overheating issues, ensure Full / Optional telemetry is enabled before submitting [Feedback](hololens-feedback.md). Full / Optional telemetry will be required to investigate any overheating issues.
 
 ## See also
 
