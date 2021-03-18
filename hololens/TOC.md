@@ -119,8 +119,7 @@
 ### [Frequently asked questions](hololens-faq.md)
 ### [Known issues for HoloLens](hololens-known-issues.md)
 ### [Collect and use diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
-### [Get commercial support](holonlens2-support.md)
-### [Get technical support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
+### [Support and help options](holonlens2-support.md)
 
 # HoloLens release notes
 ## [HoloLens 2 release notes](hololens-release-notes.md)
