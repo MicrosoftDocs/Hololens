@@ -16,7 +16,7 @@ This article answers some questions that you may have about different support op
 - [Communities Support](https://holodevelopersslack.azurewebsites.net) use this option to register and join the online Slack community of HoloLens2 developers and users to learn from their experience
 - [Technical Support](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f) use this option to log a new support case or view progress made in any of your existing case(s). Chat with our qualified support staff to solve any of your HoloLens, Azure Kinect, or Immersive headset programming issues
 - [Microsoft Store - Office Support](https://support.microsoft.com/office/microsoft-store-109d8aed-d32f-4d6f-9c54-ff80871e8637) this option will take you to our self-help portal of Microsoft store
-- [Store & Purchase Inquiry Support](https://support.microsoft.com/account-billing/contact-microsoft-store-support-4f615f2a-6bbd-fd69-6695-ae213d63eef0) this will take you to our sales support phone numbers if you wish to contact Microsoft Store Support
+- [Store & Purchase Inquiry Support](https://support.microsoft.com/account-billing/contact-microsoft-store-support-4f615f2a-6bbd-fd69-6695-ae213d63eef0) use this option to speak with our Microsoft Store Support colleagues
 
 ## Commercial store support numbers across all regions
 >[!Note]
