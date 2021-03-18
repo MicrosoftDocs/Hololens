@@ -1,6 +1,6 @@
 ---
 title: Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Deploy
-description: Learn how to enroll HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
+description: Learn how to set up deployments of  HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: joyjaz
 ms.author: v-jjaswinski
@@ -28,7 +28,7 @@ Afterwards you&#39;ll be able confirm you can both author and operate a test Gui
 
 Now that everything is properly configured for Azure AD and MDM Enrollment, the rest should now be a snap. You&#39;ll need a Wi-Fi connection and the HoloLens device, and one of the previously configured AAD user accounts.
 
-If your device isn&#39;t currently sitting in a factory settings state, now would be a good time to [reflash the device](https://docs.microsoft.com/en-us/hololens/hololens-recovery#clean-reflash-the-device).
+If your device isn&#39;t currently sitting in a factory settings state, now would be a good time to [reflash the device](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device).
 
 1. Once your device is in OOBE, you&#39;ll need to start interacting and following the prompts.
 2. Connect to an open Wi-Fi network that does not require certificates to join the Wi-Fi. This will allow the device to download the certificate to be used on the organization&#39;s Wi-Fi after initial setup.
@@ -83,6 +83,6 @@ Once your holograms are in place, you can test out operating your guide. Select 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9s41BKGHVL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Next step 
+## Next step 
 > [!div class="nextstepaction"]
 > [Corporate connected deployment - Maintain](hololens2-corp-connected-maintain.md)

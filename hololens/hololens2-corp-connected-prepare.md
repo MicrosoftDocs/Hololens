@@ -1,6 +1,6 @@
 ---
 title: Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Prepare
-description: Learn how to enroll HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
+description: Learn how to prepare to enroll HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: joyjaz
 ms.author: v-jjaswinski
@@ -18,11 +18,12 @@ appliesto:
 
 # Prepare - Corporate Connected Guide
 ## Infrastructure Essentials
-For both personal and corporate deployment scenarios, an MDM system is the essential infrastructure required to deploy and manage Windows 10 Holographic devices. An [Azure AD Premium subscription](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-get-started-premium) is recommended as an identity provider and required to support certain capabilities.
+For both personal and corporate deployment scenarios, an MDM system is the essential infrastructure required to deploy and manage Windows 10 Holographic devices. An [Azure AD Premium subscription](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-get-started-premium) is recommended as an identity provider and required to support certain capabilities.
 
 ## Azure Active Directory
 Azure AD is a cloud-based directory service that provides identity and access management. Organizations that use Microsoft Office 365 or Intune are already using Azure AD, which has three editions: Free, Premium P1, and Premium P2 (see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions)). All editions support Azure AD device registration, but Premium P1 is required to enable MDM auto-enrollment which we will be using in this guide later.
-> [!Important] It is essential to have an Azure Active Directory as HoloLens devices do not support on-premises AD join. If you don't already have an Azure Active Directory set up, follow the instructions in this link to get started and [Create a new tenant in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> [!Important]
+> It is essential to have an Azure Active Directory as HoloLens devices do not support on-premises AD join. If you don't already have an Azure Active Directory set up, follow the instructions in this link to get started and [Create a new tenant in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## Identity Management
 In this guide we have chosen that for the [Identity](https://docs.microsoft.com/hololens/hololens-identity) used, we will use Azure AD accounts, or Azure Active Directory accounts. There are several benefits to Azure AD accounts we would like to use, such as:
@@ -62,7 +63,7 @@ You must also publish your NDES URL external to your corporate network using [Az
 
 If your network does not already support SCEP, or you are unsure if your network is correctly set up for SCEP with Intune, reference  [Configure infrastructure to support SCEP with Intune](https://docs.microsoft.com/mem/intune/protect/certificates-scep-configure).
 
-If your infrastructure already supports SCEP, you will need to create a [profile](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/create-certificate-profiles) for each SCEP certificate that the HoloLens 2 will use. Reference [Create and assign SCEP certificate profiles in Intune](https://docs.microsoft.com/en-us/mem/intune/protect/certificates-profile-scep). If you are having issues with SCEP, reference [Troubleshoot use of SCEP certificate profiles to provision certificates with Microsoft Intune](https://docs.microsoft.com/troubleshoot/mem/intune/troubleshoot-scep-certificate-profiles).
+If your infrastructure already supports SCEP, you will need to create a [profile](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/create-certificate-profiles) for each SCEP certificate that the HoloLens 2 will use. Reference [Create and assign SCEP certificate profiles in Intune](https://docs.microsoft.com/mem/intune/protect/certificates-profile-scep). If you are having issues with SCEP, reference [Troubleshoot use of SCEP certificate profiles to provision certificates with Microsoft Intune](https://docs.microsoft.com/troubleshoot/mem/intune/troubleshoot-scep-certificate-profiles).
 
 ## PKCS
 Intune also supports the use of private and public key pair (PKCS) certificates. Reference [Use private and public key certificates in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-pfx-configure) for more information.
@@ -88,6 +89,6 @@ More details regarding app deployment can be found, reference [App Management: O
 ## Guides Playbook
 Dynamics 365 Guides uses a Microsoft Dataverse environment to provide control over deployments. It’s important to understand the bigger picture of how your Dataverse environment interacts with your Guides apps and your tenant. We won’t be covering how to manage your dataverse in this guide, but please review the following information - [Basic concepts for deploying Dynamics 365 Guides - Dynamics 365 Mixed Reality | Microsoft Docs](https://docs.microsoft.com/dynamics365/mixed-reality/guides/admin-deployment-playbook).
 
-# Next step 
+## Next step 
 > [!div class="nextstepaction"]
 > [Corporate connected deployment - Configure](hololens2-corp-connected-configure.md)

@@ -57,39 +57,38 @@ The following infrastructure should already be in place:
 ### Prepare
 > [!div class="checklist"]
 >- [Learn about the infrastructure essentials for HoloLens 2 devices.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
->- [Learn more about Azure AD and set up one if you don't have it.](hololens2-corp-connected-prepare.md#Azure-Active-Directory)
->- [Learn about Identity management and how to best set up Azure AD accounts.](hololens2-corp-connected-prepare.md#Identity-Management)
->- [Learn more about MDM and set up with Intune if you don't already have one ready.](hololens2-corp-connected-prepare.md#Mobile-Device-Management)
->- [Familiarize yourself with certificate-based Wi-Fi](hololens2-corp-connected-prepare.md#Certificates)
->- [Familiarize yourself with Proxy](hololens2-corp-connected-prepare.md#Proxy)
->- [Understand how you can use Line of Business Apps](hololens2-corp-connected-prepare.md#Line-of-Business-Apps)
->- [Learn more about the way you can use Guides for your organization](hololens2-corp-connected-prepare.md#Guides-Playbook)
+>- [Learn more about Azure AD and set up one if you don't have it.](hololens2-corp-connected-prepare.md#azure-active-directory)
+>- [Learn about Identity management and how to best set up Azure AD accounts.](hololens2-corp-connected-prepare.md#identity-management)
+>- [Learn more about MDM and set up with Intune if you don't already have one ready.](hololens2-corp-connected-prepare.md#mobile-device-management)
+>- [Familiarize yourself with certificate-based Wi-Fi](hololens2-corp-connected-prepare.md#certificates)
+>- [Familiarize yourself with Proxy](hololens2-corp-connected-prepare.md#proxy)
+>- [Understand how you can use Line of Business Apps](hololens2-corp-connected-prepare.md#line-of-business-apps)
+>- [Learn more about the way you can use Guides for your organization](hololens2-corp-connected-prepare.md#guides-playbook)
 ### Configure
 > [!div class="checklist"]
->- [How to create users and groups](hololens2-corp-connected-configure.md#Azure-Users-and-Groups)
->- [How to set up Auto Enrollment](hololens2-corp-connected-configure.md#Auto-Enrollment-on-HoloLens-2)
->- [Wi-Fi Certificates Set up](hololens2-corp-connected-configure.md#Wi-Fi-and-Certificates-and-Wi-Fi-Set-up)
->- [Configure Proxy](hololens2-corp-connected-configure.md#Proxy-Set-up)
->- [Upload and Assign Line of Business (LOB) App packages](hololens2-corp-connected-configure.md#App-Deployment)
->- [Setup Dynamics 365 Guides](hololens2-corp-connected-configure.md#Setup-Guides:-Application-licenses,-dataverse,-and-authoring)
->- [Optional: Kiosk](hololens2-corp-connected-configure.md#Optional:-Kiosk-mode)
->- [Optional: WDAC](hololens2-corp-connected-configure.md#Optional:-WDAC)
+>- [How to create users and groups](hololens2-corp-connected-configure.md#azure-users-and-groups)
+>- [How to set up Auto Enrollment](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
+>- [Wi-Fi Certificates Set up](hololens2-corp-connected-configure.md#wi-fi and-certificates-and-wi-fi-set-up)
+>- [Configure Proxy](hololens2-corp-connected-configure.md#proxy-set-up)
+>- [Upload and Assign Line of Business (LOB) App packages](hololens2-corp-connected-configure.md#app-deployment)
+>- [Setup Dynamics 365 Guides](hololens2-corp-connected-configure.md#\setup-guides:application-licenses,-dataverse,-and-authoring)
+>- [Optional: Kiosk](hololens2-corp-connected-configure.md#optional-kiosk-mode)
+>- [Optional: WDAC](hololens2-corp-connected-configure.md#optional:wdac)
 ### Deploy
 > [!div class="checklist"]
->-	[Validate enrollment via device and MDM](hololens2-corp-connected-deploy.md#Enrollment-Validation)
->-	[Wi-Fi certificate validation](hololens2-corp-connected-deploy.md#Wi-Fi-certificate-validation)
+>-	[Validate enrollment via device and MDM](hololens2-corp-connected-deploy.md#enrollment-validation)
+>-	[Wi-Fi certificate validation](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation)
 >-	[Validate LOB app install](hololens2-corp-connected-deploy.md#Validate-Line-of-Business-(LOB)-app-install)
->-	[Validate Guides via authoring and operating](hololens2-corp-connected-deploy.md#Validate-Dynamics-365-Guides)
+>-	[Validate Guides via authoring and operating](hololens2-corp-connected-deploy.md#validate-dynamics-365-guides)
 ### Maintain
 > [!div class="checklist"]
->- [Update HoloLens 2.](hololens2-corp-connected-maintain.md#Update-HoloLens)
->- [How to update Guides (store apps).](hololens2-corp-connected-maintain.md#How-to-update-Dynamics-365-Guides-(and-other-store-apps))
+>- [Update HoloLens 2.](hololens2-corp-connected-maintain.md#update-hololens)
+>- [How to update Guides (store apps).](hololens2-corp-connected-maintain.md#how-to-update-dynamics-365-guides-and-other-store-apps)
 >- [How to update LOB apps.](hololens2-corp-connected-maintain.md#How-to-update-Line-of-Business-(LOB)-apps) 
->- [How to manage HoloLens Updates.](hololens2-corp-connected-maintain.md#Update-HoloLens)
->- [Development plan.](hololens2-corp-connected-maintain.md#Development-Plan) 
->- [Making a support plan.](hololens2-corp-connected-maintain.md#Support-Plan)
->- [Device management options](hololens2-corp-connected-maintain.md#Device-Management)
+>- [Development plan.](hololens2-corp-connected-maintain.md#development-plan) 
+>- [Making a support plan.](hololens2-corp-connected-maintain.md#support-plan)
+>- [Device management options](hololens2-corp-connected-maintain.md#device-management)
 
-# Next step 
+## Next step 
 > [!div class="nextstepaction"]
 > [Corporate connected deployment - Prepare](hololens2-corp-connected-prepare.md)

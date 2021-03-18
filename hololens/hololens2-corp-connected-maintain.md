@@ -1,6 +1,6 @@
 ---
 title: Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Maintain
-description: Learn how to enroll HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
+description: Learn how to maintain HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: joyjaz
 ms.author: v-jjaswinski
@@ -44,14 +44,6 @@ Line-of-business apps can be updated in the same way they were added to Intune. 
 4. From here use the context menu to open your file explorer and upload the newer version of the LOB app. Ensure to include dependencies as needed.
 
 See more: [Intune App Deployment for HoloLens](https://docs.microsoft.com/hololens/app-deploy-intune)
-
-## Update HoloLens
-
-Microsoft designed Windows Update for Business to provide IT administrators with additional Windows Update-centric management capabilities, such as the ability to deploy updates to groups of devices and to define maintenance windows for installing updates.
-
-One popular method of managing updates is to do a feature deferral of 30 days. Allowing Admins to update and preview new features gaining first hand knowledge and informing your support desk of any new changes.
-
-Learn how to [manage HoloLens updates](https://docs.microsoft.com/hololens/hololens-updates) including scheduled days, scheduled time, and setting active hours on the device so it will update outside of working hours.
 
 ## Development Plan
 

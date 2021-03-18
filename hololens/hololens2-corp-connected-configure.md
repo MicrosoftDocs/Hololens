@@ -1,6 +1,6 @@
 ---
 title: Deployment Guide - Corporate connected HoloLens 2 with Dynamics 365 Guides - Configure
-description: Learn how to enroll HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
+description: Learn how to set up configurations to deploy HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: joyjaz
 ms.author: v-jjaswinski
@@ -16,7 +16,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Configure - Corpprate Connected Guide
+# Configure - Corporate Connected Guide
 
 ## Azure Users and Groups
 
@@ -165,6 +165,6 @@ For more information, reference [Use WDAC and Windows PowerShell to allow or blo
 
 [Windows Defender Application Control - WDAC | Microsoft Docs](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac)
 
-# Next step 
+## Next step 
 > [!div class="nextstepaction"]
 > [Corporate connected deployment - Deploy](hololens2-corp-connected-deploy.md)
