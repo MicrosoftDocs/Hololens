@@ -43,7 +43,7 @@ Microsoft Intune, part of Enterprise Mobility + Security, is a cloud-based MDM s
 > In order to use Guides, an Azure AD account is required.
 
 > [!Note] 
-> Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Holographic currently include: AirWatch, MobileIron, and others. Most industry-leading MDM vendors already support integration with Azure AD. You can find the MDM vendors that support Azure AD in Azure Marketplace.
+> Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Holographic include: AirWatch, MobileIron, and others. (This list is dynamic so check back for updates) Most industry-leading MDM vendors already support integration with Azure AD.  You can find the MDM vendors that support Azure AD in [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/azure-active-directory-apps).
 
 ## Certificates
 Certificates help improve security by providing account authentication, Wi-Fi authentication, VPN encryption, and SSL encryption of web content. Although administrators can manage certificates on devices manually through provisioning packages, it’s a best practice to use your MDM system to manage those certificates throughout their entire lifecycle – from enrollment through renewal and revocation. 
@@ -77,13 +77,13 @@ Most corporate intranet networks leverage a proxy to manage external traffic. Wi
 
 There are a few different types of proxy and ways to configure proxy. For the purposes of this guide, we are opting to choose **Wi-Fi proxy, set via PAC URL, and deployed via MDM**. This comes with the advantages of being deployed via MDM automatically, being able to update the PAC file instead of using a server:port configuration, and finally using Wi-Fi proxy to configure proxy to only apply to a single Wi-Fi connection allowing the devices to be used still if connected in another location. 
 
-For more details on proxy settings for Windows 10, see [Create a Wi-Fi profile for devices in Microsoft Intune - Azure | Microsoft Docs](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure).
+For more details on proxy settings for Windows 10, see [Create a Wi-Fi profile for devices in Microsoft Intune - Azure](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure).
 ## Line of Business Apps 
 While several apps can be installed via the Microsoft Store, it is likely you have your own custom app that you have created specifically to use in mixed reality. These custom apps distributed throughout your organization for your business are called Line of Business (LOB) apps.
   
 There are multiple ways to deploy applications to HoloLens 2 devices. Apps can be deployed directly through MDM, the Microsoft Store for Business(MSfB), or sideloaded through a Provisioning Package. For the sake of this guide, we will be deploying apps via MDM, through the use of required app install. This will allow for your LOB apps to be automatically downloaded to your HoloLens devices once they finish enrollment.
 
-For those of you who do not have your own LOB, we will provide a sample app to test this deployment flow. This app will be the MRTK Examples app, and has already been prebuilt and packaged to test for proof of concept.
+For those of you who do not have your own LOB, we will provide a sample app to test this deployment flow. This app will be the [MRTK Examples](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App) app, and has already been prebuilt and packaged to test for proof of concept.
  
 More details regarding app deployment can be found at [App Management: Overview](https://docs.microsoft.com/hololens/app-deploy-overview).
 
@@ -91,7 +91,7 @@ More details regarding app deployment can be found at [App Management: Overview]
 > HoloLens 2 supports running of UWP ARM64 apps only.
 
 ## Guides Playbook
-Guides uses a Microsoft Dataverse environment to provide control over deployments. It’s important to understand the bigger picture of how your Dataverse environment interacts with your Guides apps and your tenant. We won’t be covering how to manage your dataverse in this guide, but please review [Basic concepts for deploying Dynamics 365 Guides - Dynamics 365 Mixed Reality | Microsoft Docs](https://docs.microsoft.com/dynamics365/mixed-reality/guides/admin-deployment-playbook).
+Guides uses a Microsoft Dataverse environment to provide control over deployments. It’s important to understand the bigger picture of how your Dataverse environment interacts with your Guides apps and your tenant. We won’t be covering how to manage your dataverse in this guide, but please review [Basic concepts for deploying Dynamics 365 Guides - Dynamics 365 Mixed Reality](https://docs.microsoft.com/dynamics365/mixed-reality/guides/admin-deployment-playbook).
 
 ## Next step 
 > [!div class="nextstepaction"]

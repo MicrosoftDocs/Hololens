@@ -161,7 +161,7 @@ WDAC allows an IT Admin to configure their devices to block the launch of apps o
 
 For more information, reference [Use WDAC and Windows PowerShell to allow or block apps on HoloLens 2 devices with Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens).
 
-[Windows Defender Application Control - WDAC | Microsoft Docs](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac)
+[Windows Defender Application Control - WDAC](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac)
 
 ## Next step 
 > [!div class="nextstepaction"]

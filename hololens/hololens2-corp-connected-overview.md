@@ -45,7 +45,7 @@ The following infrastructure should already be in place:
     - Assigning 
     - Setting your app to automatically download to specific devices
 
-## Guides Licensing and Requirements
+## [Guides Licensing and Requirements](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 - Azure AD account
 - Dynamics 365 Guides subscription
     - Microsoft Dataverse (included)

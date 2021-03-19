@@ -38,7 +38,7 @@ If your device isn't currently sitting in a factory settings state, now would be
 6. Select the **Settings** app and select **System**. The first piece of information you'll see is your Device name, which for your HoloLens 2 device will be &quot;HOLOLENS-&quot; followed by a six character string.
 7. Take note of this name.
 
-![HoloLens 2 Settings screen](./images/hololens2-settings.png)
+![HoloLens 2 Settings screen](./images/hololens2-settings-about.jpg)
 
 8. Verify that your device is successfully joined to Azure AD. There are two ways;
     1.  The Settings app. From **Settings** select **Accounts** -> **Access work or school**. From this screen, you can verify you are successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Azure AD. Connected by *yourusername@nameofAAD.onmicrosoft.com*. This will verify your device is joined to your organization&#39;s Azure AD.
@@ -80,13 +80,15 @@ We don't need to do much for this quick validation. Simply select the guide you 
 
 ### Operating the Guide
 
-Once your holograms are in place, you can test out operating your guide. Select **Operating mode** and click through the steps of your guide.
+Once your holograms are in place, you can test out operating your guide. 
+- Select **Operating mode**
+- Click through the steps of your guide.
 
-[Overview of operating a guide in Dynamics 365 Guides - Dynamics 365 Mixed Reality | Microsoft Docs](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview)
+[Overview of operating a guide in Dynamics 365 Guides - Dynamics 365 Mixed Reality](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview)
 
 [Get oriented with the Step card as an operator in Dynamics 365 Guides - Dynamics 365 Mixed Reality | Microsoft Docs](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-step-card-orientation)
 
-[Overview of operating a guide in Dynamics 365 Guides - Dynamics 365 Mixed Reality | Microsoft Docs](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview)
+[Overview of operating a guide in Dynamics 365 Guides - Dynamics 365 Mixed Reality](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9s41BKGHVL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
