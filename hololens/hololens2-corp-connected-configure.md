@@ -20,7 +20,7 @@ appliesto:
 
 ## Azure Users and Groups
 
-Azure, and Intune by that extension, uses users and groups to help assign configurations and licenses. For the sake of validating this deployment flow and being able to check that you can author and operate a guide you&#39;ll need a user account.
+Azure, and Intune by that extension, uses users and groups to help assign configurations and licenses. For the sake of validating this deployment flow and being able to check that you can author and operate a guide, you&#39;ll need a user account.
 
 We can make a single user group specifically for assigning licenses.
 
@@ -35,7 +35,7 @@ If you don&#39;t already have access to two Azure AD accounts in a user group yo
 
 In order to have a smooth and seamless experience, setting up Azure Active Directory Join (AADJ) and Auto Enrollment to Intune for HoloLens 2 devices is the way to go. This allows users to input their organization log-in credentials during OOBE and automatically register with Azure AD and enroll the device into MDM.
 
-By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we can select services and navigate a few pages until we can select Get a Premium trial. You may notice there is Azure Active Directory Premium 1 and 2, for Automatic Enrollment P1 is sufficient. We can select Intune and select the user scope for automatic enrollment and select the group that was previously created.
+By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we can select services and navigate a few pages until we can select Get a Premium trial. You may notice there is Azure Active Directory Premium 1 and 2 - for Automatic Enrollment P1 is sufficient. We can select Intune and select the user scope for automatic enrollment and select the group that was previously created.
 
 For full details and steps read the guide on [how to enable auto enrollment for Intune](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment).
 
@@ -45,14 +45,18 @@ Corporate Wi-Fi connections will commonly require certificate-based authenticati
  
 ### Deploy certificates and Wi-Fi profiles
 To deploy certificates and profiles through Microsoft Endpoint Manager, follow these steps:
-1. Create a profile for each of the Root and Intermediate certificates (see [Create trusted certificate profiles.](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)) Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. **Certificate profiles without an expiration date will not be deployed**.
+1. Create a profile for each of the Root and Intermediate certificates (see [Create trusted certificate profiles](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)). Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. 
+> [!CAUTION]
+> **Certificate profiles without an expiration date will not be deployed**.
 
-2.	Create a profile for each SCEP or PKCS certificates (see [Create a SCEP certificate profile or Create a PKCS certificate profile](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. **Certificate profiles without an expiration date will not be deployed.**
+2.	Create a profile for each SCEP or PKCS certificates (see [Create a SCEP certificate profile or Create a PKCS certificate profile](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. 
+>[!CAUTION]
+> **Certificate profiles without an expiration date will not be deployed.**
 
 > [!Note]
 > As the HoloLens 2 is considered for many to be a shared device, i.e., multiple users per device, it is recommended to deploy Device certificates instead of User certificates for Wi-Fi authentication where possible.
 
-3.	Create a profile for your corporate Wi-Fi network (see [Wi-Fi settings for Windows 10 and later devices](https://docs.microsoft.com/intune/wi-fi-settings-windows)). Within your Wi-Fi profile you can select to use the proxy settings within your organization.
+3.	Create a profile for your corporate Wi-Fi network (see [Wi-Fi settings for Windows 10 and later devices](https://docs.microsoft.com/intune/wi-fi-settings-windows)). Within your Wi-Fi profile, you can select to use the proxy settings within your organization.
  
 Your options:
 - **None**: No proxy settings are configured.
@@ -69,20 +73,20 @@ You also can export a working Wi-Fi profile from a Windows 10 PC on your corpora
 1.	[Assign](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign) the device profiles to the HoloLens device group.
 2.	[Monitor](https://docs.microsoft.com/mem/intune/configuration/device-profile-monitor) the device profiles in Intune.
 
-If there are issues with Wi-Fi profiles, reference Troubleshoot Wi-Fi device configuration profiles in Intune.
+If there are issues with Wi-Fi profiles, reference [Troubleshoot Wi-Fi device configuration profiles in Intune](https://docs.microsoft.com/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles).
 
 ## Troubleshooting External Internet Access When Corp Connected
 When services try to not go through a set Proxy, they may attempt to connect through the firewall. You can add a list of endpoint specifics to your firewall rules to troubleshoot these issues.
 
-If you're blocked at firewall ports, enable some common endpoints for HoloLens.
+If you're blocked at firewall ports, enable some common [endpoints](https://docs.microsoft.com/hololens/hololens-offline) for HoloLens.
 
 You can also enable the Guides specific ports: [Internet accessible URLs required for connectivity to Microsoft Dynamics CRM Online](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami).
 
 ## App Deployment
 
-Deploying a Line of Business (LOB) app via MDM is a method that&#39;s easily scalable and can be automatically deployed to your devices upon enrollment in a created group.
+Deploying a LOB app via MDM is a method that's easily scalable and can be automatically deployed to your devices upon enrollment in a created group.
 
-If you are still developing your Apps or don&#39;t have one yet, you can use a sample app of the MRTK examples hub. This sample app is ready to use, and won&#39;t require the use of either Unity or Visual Studio. [Download the MRTK Examples Sample app](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App).
+If you are still developing your Apps or don't have one yet, you can use a sample app of the MRTK examples hub. This sample app is ready to use, and won't require the use of either Unity or Visual Studio. [Download the MRTK Examples Sample app](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App).
 
 If you would prefer to use your own app or are interested in app development for Mixed Reality, then feel free to review our [Mixed Reality developer documentation](https://docs.microsoft.com/windows/mixed-reality/design/design).
 
@@ -90,31 +94,31 @@ If you would prefer to use your own app or are interested in app development for
 > The System Requirements for HoloLens devices are based on the architecture of the app build. HoloLens 2 devices use ARM architecture. When building your apps in Visual Studio, ensure that you have selected the correct architecture for the device and include any needed dependencies.
 
 > [!IMPORTANT]
-> When deploying LOB apps, it&#39;s important to also upload the certificate to Intune, and assign it to the same group that is intended to use the app or it will not install properly.
+> When deploying LOB apps, it's important to also upload the certificate to Intune, and assign it to the same group that is intended to use the app or it will not install properly.
 
 ### Upload and Assign the App
 
 1. Navigate to the [MEM admin center](https://endpoint.microsoft.com/#home).
-2. Select **Apps** > **All apps** and select the **+ Add** button.
+2. Select **Apps** -> **All apps** and select the **+ Add** button.
 3. Underneath Other, Select **Line-of-business app**. Click **select**.
 4. Select the app package file, this is your APPXBUNDLE file, or in our case of this example the app is _MRTK Examples Hub\_2.4.2.0\_arm\_Master.appxbundle_.
-5. You will be notified of missing dependencies. In this case we need to upload _Microsoft.VCLibs.ARM.14.00.appx_. Search for it under **Select a file.**
+5. You will be notified of missing dependencies. In this case, we need to upload _Microsoft.VCLibs.ARM.14.00.appx_. Search for it under **Select a file**.
 6. Select OK.
-7. In the next screen, the required fields will be auto-filled. Select **Next.**
-8. Under Required, add our previously created group to make this app required for the group. This will cause the app to automatically download to enrolled devices in the group. Select **Next.**
-9. Select **Create.**
+7. In the next screen, the required fields will be auto-filled. Select **Next**.
+8. Under Required, add our previously created group to make this app required for the group. This will cause the app to automatically download to enrolled devices in the group. Select **Next**.
+9. Select **Create**.
 
 Read more: [Assign apps to groups in Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app)
 
 ## Setup Guides: Application licenses, dataverse, and authoring
 
-In order to use Dynamics 365 Guides, you&#39;ll need to do some preparation. There are three areas in which we&#39;ll need to prepare; users, dataverse, and the guides themselves.
+In order to use Dynamics 365 Guides, you'll need to do some preparation. There are three areas in which we'll need to prepare; users, dataverse, and the guides themselves.
 
 ### Users and application licenses
 
-For someone to use Guides, they&#39;ll need to use an Azure AD account, which we have set up in this guide previously.
+For someone to use Guides, they'll need to use an Azure AD account, which we have set up in this guide previously.
 
-You&#39;ll also need to assign the proper Application Licenses,Licenses; you&#39;ll do this from the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home). You&#39;ll want to ensure you assign the following 3 three application licenses to the user we&#39;ve created. Also assign these licenses to your primary Azure Account.
+You'll also need to assign the proper Application Licenses,Licenses; you'll do this from the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home). You'll want to ensure you assign the following 3 three application licenses to the user we've created. Also assign these licenses to your primary Azure Account.
 
 - Microsoft Dataverse
 - Dynamics 365 Guides
@@ -131,25 +135,25 @@ Within this guide to [create a Microsoft Dataverse environment](https://docs.mic
 1. Start by using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) and creating a New Environment.
 2. When creating the **New Environment**, for the **Type** you&#39;ll be selecting **Production**.
 3. It is important that you toggle **Create a database for this environment?**  option to  **Yes**.
-4. In the  **Add database**  dialog box set the  **Enable Dynamics 365 apps**  option to  **Yes.**
+4. In the  **Add database**  dialog box, set the  **Enable Dynamics 365 apps**  option to  **Yes.**
 
-You&#39;ll want to increase the maximum file size of items in your dataverse. Increasing the max file size will allow you to upload larger 3D models or video files that you&#39;ll use later in your guides. Follow a short guide [to change the maximum upload file size.](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
+You'll want to increase the maximum file size of items in your dataverse. Increasing the max file size will allow you to upload larger 3D models or video files that you'll use later in your guides. Follow a short guide [to change the maximum upload file size.](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
 
-Lastly, you&#39;ll need to [install and configure the solution](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution). In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), select  **Resources**  \&gt;  **Dynamics 365 apps**, select  **Dynamics 365 Guides**  in the list, and then select  **Install**.
+Lastly, you'll need to [install and configure the solution](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution). In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), select  **Resources**  \&gt;  **Dynamics 365 apps**, select  **Dynamics 365 Guides**  in the list, and then select  **Install**.
 
 ### Create a test Guide on your PC via Authoring
 
 When creating Guides you will always start on your PC. Creating the steps, selecting models, and how to anchor the guide. This will be followed by placing content for your guide later in in authoring mode on your HoloLens device. For the purposes of this guide, we suggest making a short test guide with minimal steps and models.
 
-If you&#39;d like to start learning about authoring for Guides, start here with the [authoring overview](https://docs.microsoft.com/dynamics365/mixed-reality/guides/authoring-overview). Or to get a fast track overview, watch this short video.
+If you'd like to start learning about authoring for Guides, start here with the [authoring overview](https://docs.microsoft.com/dynamics365/mixed-reality/guides/authoring-overview). Or to get a fast track overview, watch this short video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EC24dMlAy90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Optional: Kiosk mode
 
-Kiosk mode is a mode that let&#39;s an IT Admin configure the start menu&#39;s UI to show only a single app, or selection of apps. A kiosk can also be applied to specific users, groups, or at the device level; and in some cases, exclude certain users from the Kiosk still allowing them access to the regular start menu.
+Kiosk mode is a mode that let's an IT Admin configure the start menu's UI to show only a single app, or selection of apps. A kiosk can also be applied to specific users, groups, or at the device level; and in some cases, exclude certain users from the Kiosk still allowing them access to the regular start menu.
 
-Kiosk mode has many different variables, both in scope and configurations that can be set as well as methods of deploying the Kiosk to the HoloLens. Because of all these variables, Kiosk mode is being left as _optional_ for this guide and won&#39;t be revisited. If you believe you have a business need to restrict available apps to users or would like to learn more, then feel free to learn how to [Set up HoloLens as a kiosk](https://docs.microsoft.com/hololens/hololens-kiosk).
+Kiosk mode has many different variables, both in scope and configurations that can be set as well as methods of deploying the Kiosk to the HoloLens. Because of all these variables, Kiosk mode is being left as _optional_ for this guide and won't be revisited. If you believe you have a business need to restrict available apps to users or would like to learn more, then feel free to learn how to [Set up HoloLens as a kiosk](https://docs.microsoft.com/hololens/hololens-kiosk).
 
 ## Optional: WDAC
 
