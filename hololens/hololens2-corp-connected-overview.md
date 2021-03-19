@@ -31,21 +31,14 @@ The following infrastructure should already be in place:
 - Azure Active Directory (Azure AD) Join with MDM Auto Enrollment ([Azure AD P1 subscription](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) needed)
 - MDM (Intune) Managed
     - One or more applications are deployed via MDM.
+- Network 
+    - Certificates (SCEP or PKCS)
+    - Proxy configuration
 - Users sign in with their own corporate account (Azure AD)
     - Single or multiple users per device is supported.
 - Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk.
 
-## New Configurations
-
-- Network 
-    - Certificates (SCEP or PKCS)
-    - Proxy configuration
-- Custom apps deployment
-    - Uploading 
-    - Assigning 
-    - Setting your app to automatically download to specific devices
-
-## [Guides Licensing and Requirements](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
+## [Guides Licensing and Requirements](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 - Azure AD account
 - Dynamics 365 Guides subscription
     - Microsoft Dataverse (included)
