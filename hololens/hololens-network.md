@@ -14,7 +14,7 @@ manager: jarrettr
 
 # Connect HoloLens to a network
 
-To do most things on your HoloLens, you have to be connected to a network. This guide will help you:
+To do most things on your HoloLens, you have to be connected to a network. HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio and connecting it to a network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network. This guide will help you:
 
 - Connect to a network using Wi-Fi or (for HoloLens 2 only) Ethernet over USB-C
 - Disable and re-enable Wi-Fi
@@ -23,9 +23,9 @@ Read more about [using HoloLens offline](hololens-offline.md).
 
 ## Connecting for the first time
 
-The first time you use your HoloLens, you'll be guided through connecting to a Wi-Fi network. If you have trouble connecting to Wi-Fi during setup, make sure that your network is either an open, password-protected network or a captive portal network. Make sure that the network doesn't require you to use a certificate to connect. After setup, you can connect to other types of Wi-Fi networks.
+The first time you use your HoloLens, you'll be guided through connecting to a Wi-Fi network. If you have trouble connecting to Wi-Fi during setup, make sure that your network is either an open, password-protected network or a captive portal network. Also, confirm that the network doesn't require you to use a certificate to connect. After setup, you can connect to other types of Wi-Fi networks.
 
-On HoloLens 2 devices a user may also [use a USB-C to Ethernet adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) to connect directly to Wi-Fi to help assist in setting up the device. Once the device has been set up a user may continue to user the adapter or they may disconnect the device from the adapter and [connect to wi-fi after set up](hololens-network.md#connecting-to-wi-fi-after-setup). 
+On HoloLens 2 devices, a user may also [use a USB-C to Ethernet adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) to connect directly to Wi-Fi to help assist in setting up the device. Once the device has been set up a user may continue to use the adapter or they may disconnect the device from the adapter and [connect to wi-fi after set up](hololens-network.md#connecting-to-wi-fi-after-setup). 
 
 ## Connecting to Wi-Fi after setup
 
@@ -34,14 +34,18 @@ On HoloLens 2 devices a user may also [use a USB-C to Ethernet adapter](hololens
 1. Select a network, then select **Connect**.
 1. If you are prompted for a network password type it and then select **Next**.
 
-HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio. Connecting HoloLens to a Wi-Fi network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network.
+![HoloLens Wi-Fi settings](./images/hololens-2-wifi-settings.jpg)
 
-![HoloLens Wi-Fi settings](./images/wifi-hololens-600px.jpg)
-
-You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi status in the **Start** menu:
+To confirm you are connected to a Wi-Fi network, check the Wi-Fi status in the **Start** menu:
 
 1. Open the **Start** menu.
 1. Look at the top left of the **Start** menu for Wi-Fi status. The state of Wi-Fi and the SSID of the connected network will be shown.
+
+> [!TIP]
+> If Wi-Fi is not available, you can also [connect to Cellular and 5G networks](https://docs.microsoft.com/hololens/hololens-cellular).
+
+> [!IMPORTANT]
+> By design, users cannot fine tune the Wi-Fi roaming behavior of the HoloLens 2 - **the only way to refresh the Wi-Fi list is to toggle the Wi-Fi Off and On**. This prevents many issues, like where a device can remain "stuck" to an AP once it is out of range.
 
 ## Troubleshooting your connection to Wi-Fi
 
