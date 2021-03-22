@@ -36,12 +36,24 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 | Developer entitlements <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
 | Rapid Replacement Program <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | Commercial use rights                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| Warranty                                             |   1-Year   |             1-Year            |             2-Year            |                      2-Year                      |            1-Year <sup>3</sup>            |             1-Year             |
+| [Warranty](hololens2-hardware.md#warranty-information)                                             |   1-Year   |             1-Year            |             2-Year            |                      2-Year                      |            1-Year <sup>3</sup>            |             1-Year             |
 | Device purchase limit                                |    None    |              None             |              None             |                       None                       |             None             |       One per transaction      |
 
 - <sup>1</sup> - Includes $500 Azure credit and 3-month trials to Unity Pro and Pixyz Plugin.
 - <sup>2</sup> - Receive a replacement device overnight or expedited shipping (faster of the available options) before defective device is received by Microsoft.
 - <sup>3</sup> - For warranty, support and certification questions for the Trimble XR10 with HoloLens 2 edition, [contact Trimble](https://fieldtech.trimble.com/en/contact-support).
+
+## Countries where HoloLens 2 is available
+
+<br>
+
+| HoloLens 2 Edition                  | Supported Markets               |
+|-------------------------------------------| ----------------------------------------| 
+| HoloLens 2 | US, Canada, Germany, France, UK, Ireland, China, Japan, Australia, Italy, New Zealand, Netherlands, Switzerland, Spain, Austria, Sweden, Finland, Norway, Denmark, Belgium, Portugal, Poland, Singapore, Hong Kong, Taiwan, and South Korea |
+| HoloLens 2 with Remote Assist | Australia, Japan, Canada, US, Austria, Belgium, Denmark, Finland, France, Germany, Italy, Netherlands, Norway, Spain, Sweden, Switzerland, UK, and Ireland <sup>1</sup> 
+| HoloLens 2 Industrial Edition *(at launch)* | US, Canada, Germany, France, UK, Ireland, China, Japan, Australia, Italy, New Zealand, Netherlands, Switzerland, Spain, Austria, Sweden, Finland, Norway, Denmark, Belgium, Portugal, Poland, Singapore, Hong Kong, Taiwan, and South Korea |
+| HoloLens 2 Development Edition | Canada, Germany, France, UK, Ireland, Japan, Australia, Italy, Switzerland, and New Zealand |
+- <sup>1</sup> This list is dynamic, check back for updates
 
 ## Options Overview
 
@@ -172,7 +184,7 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 |     [Start Developing for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Choose your engine, download your tools, add core building blocks, and start building today.                                  |
 |     [Explore Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Build compelling immersive experiences with Azure Remote Rendering and Azure Spatial Anchors.                                 |
 
-#### Developer Edition Additional resources
+#### Developer Edition additional resources
 
 - [Make sure to install the tools for HoloLens development.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Learn about developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
