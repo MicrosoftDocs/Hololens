@@ -14,7 +14,7 @@ ms.date: 3/19/2021
 Are you looking to get unblocked on developing your application, or have an issue with your HoloLens 2 or Windows Mixed Reality Headset? Maybe you are leveraging an Azure mixed reality service and have a technical question. Here you will find the support options for HoloLens, Windows Mixed Reality, and Azure mixed reality services - ensuring you get connected to the right place. We also cover community resources and self-service content options for you to explore.
  
 ## Create a support request
-- Programming Suppport: Create a support request for HoloLens and Mixed Reality programming via [Mixed Reality Technical Support](https://aka.ms/mrsupport) 
+- Programming Support: Create a support request for HoloLens and Mixed Reality programming via [Mixed Reality Technical Support](https://aka.ms/mrsupport) 
 - HoloLens 2 Device Support: Get help with purchasing here or your HoloLens 2 device here (# HoloLens 2 Support)
 - Azure mixed reality service Support: Get help on Azure Remote Rendering or Azure Spatial anchors (# Azure mixed reality services support)
 
