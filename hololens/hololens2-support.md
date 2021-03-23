@@ -15,8 +15,8 @@ Are you looking to get unblocked on developing your application, or have an issu
  
 ## Create a support request
 - Programming Support: Create a support request for HoloLens and Mixed Reality programming via [Mixed Reality Technical Support](https://aka.ms/mrsupport) 
-- HoloLens 2 Device Support: Get help with purchasing here or your HoloLens 2 device here (# HoloLens 2 Support)
-- Azure mixed reality service Support: Get help on Azure Remote Rendering or Azure Spatial anchors (# Azure mixed reality services support)
+- HoloLens 2 Device Support: Get help with purchasing here or your [HoloLens 2 device](/hololens/hololens2-support.md#hololens-2-support)
+- Azure mixed reality service Support: Get help on [Azure Remote Rendering or Azure Spatial anchors](/hololens/hololens2-support.md#azure-mixed-reality-services-support)
 
 ## Community help options
 
@@ -50,7 +50,7 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 - [Mixed Reality Toolkit (MRTK)](https://stackoverflow.com/questions/tagged/MRTK)
 
 #### Other Communities: 
-- [HoloDevelopers Slack](https://holodevelopersslack.azurewebsites.net/)
+- [Mixed Reality Community](https://docs.microsoft.com/windows/mixed-reality/discover/community)
 
 ## HoloLens 2 Support
 
@@ -129,7 +129,6 @@ To provide feedback, share an idea or suggestion for Azure mixed reality service
 
 ### FAQs
 
-For frequently asked questions about...
 - HoloLens 2, see the [HoloLens Troubleshooting](/hololens/hololens-troubleshooting.md) page.
 - Windows Mixed Reality, see the [FAQ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) page.
 - Azure Spatial Anchors, see the [FAQ](https://docs.microsoft.com/azure/spatial-anchors/spatial-anchor-faq) page.
