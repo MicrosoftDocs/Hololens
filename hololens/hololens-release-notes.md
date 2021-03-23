@@ -31,6 +31,49 @@ Check out related release notes:
 - [Dynamics 365 Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 - [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 
+## Windows Holographic
+- Build 
+
+| Feature                                              | Description                                                                                                                                     |
+|------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| [New Microsoft Edge](https://docs.microsoft.com/hololens/hololens-insider#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2.    | [WebXR and 360 Viewer](https://docs.microsoft.com/hololens/hololens-insider#webxr-and-360-viewer) | Try immersive web experiences and 360 video playback. | 
+[New Settings App](https://docs.microsoft.com/hololens/hololens-insider#new-settings-app) | The legacy Settings app is being replaced by an updated version with new features and settings. | 
+[Display color calibration](https://docs.microsoft.com/hololens/hololens-insider#display-color-calibration) | Select an alternative color profile for your HoloLens 2 display. |
+[Default app picker](https://docs.microsoft.com/hololens/hololens-insider#default-app-picker) | Choose which app should launch for each file or link type. |
+[Per app volume control](https://docs.microsoft.com/hololens/hololens-insider#per-app-volume-control) | Control app level volume independently from system volume. |
+[Office web app](https://docs.microsoft.com/hololens/hololens-insider#office-web-app) | A shortcut to the Office web app is now listed in "All apps". |
+[Swipe to type](https://docs.microsoft.com/hololens/hololens-insider#swipe-to-type) | Use the tip of your finger to "swipe" words on the holographic keyboard. |
+[Power menu from Start](https://docs.microsoft.com/hololens/hololens-insider#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device. |
+[Multiple users listed on Sign in screen](https://docs.microsoft.com/hololens/hololens-insider#multiple-users-listed-on-sign-in-screen) | Display multiple user accounts on the Sign in screen. |
+[USB-C External Microphone Support](https://docs.microsoft.com/hololens/hololens-insider#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist. |
+[Visitor Auto-logon for Kiosks](https://docs.microsoft.com/hololens/hololens-insider#visitor-auto-logon-for-kiosks) | Enables the auto-logon on Visitor accounts to be used for Kiosk modes. |
+[New AUMIDs for new apps in Kiosk mode](https://docs.microsoft.com/hololens/hololens-insider#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps. |
+[Improved Kiosk mode failure handing](https://docs.microsoft.com/en-us/hololens/hololens-insider#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. |
+[New SettingsURIs for Page Settings Visibility](https://docs.microsoft.com/hololens/hololens-insider#new-settingsuris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy. |
+[Configure Fallback Diagnostics](https://docs.microsoft.com/hololens/hololens-insider#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App. |
+[Share things with nearby devices](https://docs.microsoft.com/hololens/hololens-insider#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC. |
+[New OS Update troubleshooter](https://docs.microsoft.com/hololens/hololens-insider#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates. |
+[Delivery Optimization Preview](https://docs.microsoft.com/hololens/hololens-insider#delivery-optimization-preview) | Reduce bandwidth consumption for downloads from multiple HoloLens devices. |
+[Improvements and fixes in the update](https://docs.microsoft.com/hololens/hololens-insider#improvements-and-fixes-in-the-update) | Additional fixes in the update.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Windows Holographic, version 20H2 - March 2021 Update
 - Build 19041.1140
 
