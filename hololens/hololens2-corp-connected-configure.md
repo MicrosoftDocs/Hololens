@@ -118,17 +118,13 @@ In order to use Dynamics 365 Guides, you'll need to do some preparation. There a
 
 For someone to use Guides, they'll need to use an Azure AD account, which we have set up in this guide previously.
 
-You'll also need to assign the proper Application Licenses,Licenses; you'll do this from the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home). You'll want to ensure you assign the following 3 three application licenses to the user we've created. Also assign these licenses to your primary Azure Account.
-
-- Microsoft Dataverse
-- Dynamics 365 Guides
-- Power Apps for Guides
+You'll also need to assign Dynamics 365 Guides license to the user you've created. You'll do this from the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home). Also assign the license to your primary Azure Account.
 
 Follow [this short guide](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one#assign-the-dynamics-365-guides-license-to-user-accounts) with pictures for step-by-step instructions on applying application licenses.
 
 ### Set up the Dataverse
 
-In order to [set up a production environment](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) you will need to meet two prerequisites. You must have the [**System Administrator**](https://docs.microsoft.com/power-platform/admin/database-security) role,  **and**  you must have a [**Power Apps license**](https://docs.microsoft.com/power-platform/admin/signup-question-and-answer) (or a license like a [**Dynamics 365 Guides license**](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one) that includes a Power Apps license). If following this guide you created the Azure AD, then you meet the role requirements for System Administrator. We also have assigned a Guides License in the previous step.
+In order to [set up a production environment](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) you will need to meet two prerequisites. You must have the [**System Administrator**](https://docs.microsoft.com/power-platform/admin/database-security) role,  **and**  you must have a [**Power Apps license**](https://docs.microsoft.com/power-platform/admin/signup-question-and-answer) (or a [**Dynamics 365 Guides license**](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one) that includes a Power Apps license). If following this guide you created the Azure AD, then you meet the role requirements for System Administrator. We also have assigned a Guides License in the previous step.
 
 Within this guide to [create a Microsoft Dataverse environment](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-two):
 
@@ -137,9 +133,11 @@ Within this guide to [create a Microsoft Dataverse environment](https://docs.mic
 3. It is important that you toggle **Create a database for this environment?**  option to  **Yes**.
 4. In the  **Add database**  dialog box, set the  **Enable Dynamics 365 apps**  option to  **Yes.**
 
-You'll want to increase the maximum file size of items in your dataverse. Increasing the max file size will allow you to upload larger 3D models or video files that you'll use later in your guides. Follow a short guide [to change the maximum upload file size.](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
+You'll want to increase the maximum file size of items in your dataverse. Increasing the max file size will allow you to upload larger 3D models or video files that you'll use later in your guides. Follow a short guide [to change the maximum upload file size](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size).
 
 Lastly, you'll need to [install and configure the solution](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution). In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), select  **Resources**  \&gt;  **Dynamics 365 apps**, select  **Dynamics 365 Guides**  in the list, and then select  **Install**.
+
+You need [add a Guides security role](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/guides/assign-role) before you’re able to use the apps.
 
 ### Create a test Guide on your PC via Authoring
 

@@ -76,19 +76,22 @@ There are modes for the Guides app on HoloLens, authoring and operating. You'll 
 
 We don't need to do much for this quick validation. Simply select the guide you prepared on your PC. You'll need to [anchor the guide](https://docs.microsoft.comdynamics365/mixed-reality/guides/hololens-app-anchor), for a quick validation you can use a holographic anchor. Afterwards, you should [place your steps and models](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-orientation).
 
+>[!NOTE]
+You will need the **Authoring** role to login to the PC and author on the HoloLens. The Operator role is read-only and has no access to the PC app.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/poE7s7_zWDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Operating the Guide
 
 Once your holograms are in place, you can test out operating your guide. 
-- Select **Operating mode**
+- Select **Operator mode**
 - Click through the steps of your guide.
 
-[Overview of operating a guide in Dynamics 365 Guides - Dynamics 365 Mixed Reality](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview)
+For more in-depth guidance on how to operate a guide, check out these resources:
 
-[Get oriented with the Step card as an operator in Dynamics 365 Guides - Dynamics 365 Mixed Reality | Microsoft Docs](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-step-card-orientation)
+[Overview of operating a guide in Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview)
 
-[Overview of operating a guide in Dynamics 365 Guides - Dynamics 365 Mixed Reality](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview)
+[Get oriented with the Step card as an operator in Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-step-card-orientation)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9s41BKGHVL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

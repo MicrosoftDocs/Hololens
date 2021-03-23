@@ -40,13 +40,14 @@ The following infrastructure should already be in place:
 
 ## [Guides Licensing and Requirements](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 - Azure AD account
+- Dynamics 365 Guides applications PC and HoloLens
 - Dynamics 365 Guides subscription
     - Microsoft Dataverse (included)
     - Power Apps (included)
 - Power BI Desktop
 - Network Connectivity
 
-![Corp connected network diagram](./images/hololens2-corp-connected-network.png)
+![Corp connected network diagram](./images/dynamics-365-guides-architecture.png)
 
 ## Stages of Deployment
 ### Prepare
