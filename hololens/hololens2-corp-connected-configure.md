@@ -67,7 +67,7 @@ To deploy certificates and profiles through Microsoft Endpoint Manager, follow t
     - **Manually configure**: Enter the **Proxy server IP address** and its **Port number**.
     - **Automatically configure**: Enter the URL pointing to a proxy auto configuration (PAC) script. For example, enter *http://proxy.contoso.com/proxy.pac*.
 
-For     more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
+    For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
  
     > [!Note]
     > It is recommended that the Wi-Fi profile be assigned to Device groups rather than User groups where possible.
