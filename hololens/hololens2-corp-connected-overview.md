@@ -36,7 +36,7 @@ The following infrastructure should already be in place:
     - Proxy configuration
 - Users sign in with their own corporate account (Azure AD)
     - Single or multiple users per device is supported.
-- Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk.
+- Varying levels of device lockdown configurations applied based on specific use cases, from Fully Open to Single App Kiosk.
 
 ## [Guides Licensing and Requirements](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 - Azure AD account

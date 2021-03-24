@@ -45,7 +45,7 @@ Microsoft Intune, part of Enterprise Mobility + Security, is a cloud-based MDM s
 > In order to use Guides, an Azure AD account is required.
 
 > [!Note] 
-> Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Holographic include: AirWatch, MobileIron, and others. (This list is dynamic so check back for updates) Most industry-leading MDM vendors already support integration with Azure AD.  You can find the MDM vendors that support Azure AD in [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/azure-active-directory-apps).
+> Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Holographic include: AirWatch, MobileIron, and others. Most industry-leading MDM vendors already support integration with Azure AD. You can find the most current list of MDM vendors that support Azure AD in [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/azure-active-directory-apps).
 
 ## Network Access 
 Dynamics 365 Guides is a cloud-based application. If your network admin has an approve list, they may need to add IP addresses and/or endpoints that are required to connect to the Dynamics 365 servers. [Learn more about unblocking IP addresses and URLs](https://docs.microsoft.com/power-platform/admin/online-requirements#ip-addresses-and-urls).
