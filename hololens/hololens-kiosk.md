@@ -121,7 +121,7 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 |Movies & TV |Microsoft.ZuneVideo\_8wekyb3d8bbwe\!Microsoft.ZuneVideo |
 |OneDrive |microsoft.microsoftskydrive\_8wekyb3d8bbwe\!App |
 |Photos |Microsoft.Windows.Photos\_8wekyb3d8bbwe\!App |
-|Settings |HolographicSystemSettings\_cw5n1h2txyewy\!App |
+|Settings |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App |
 |Tips |Microsoft.HoloLensTips\_8wekyb3d8bbwe\!HoloLensTips |
 
 > <sup>1</sup> To enable photo or video capture, you have to enable the Camera app as a kiosk app.  
