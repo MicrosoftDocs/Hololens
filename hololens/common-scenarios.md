@@ -62,6 +62,9 @@ HoloLens 2 is deployed for use primarily on the corporate network with access to
    * As HoloLens 2 is a cloud first device, it relies heavily on internet and cloud connected services for User authentication, OS updates, MDM management, and so on. When connecting to a corporate network, Proxy/Firewall rules will most likely need to be adjusted to enable access for HoloLens 2 and the applications that run on it.
    * Corporate Wi-Fi connectivity typically requires certificates to authenticate the device or user to the network. The required infrastructure or settings to deploy certificates to Windows 10 devices through MDM can be challenging to configure.
 
+> [!div class="nextstepaction"]
+> [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides](hololens2-corp-connected-overview.md)
+
 ### Scenario C: Deploy in secure offline environment
 
 HoloLens 2 is deployed for use primarily offline with no network or internet access. This is a typical deployment for highly secure or confidential locations.
