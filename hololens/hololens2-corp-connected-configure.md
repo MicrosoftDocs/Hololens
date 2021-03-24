@@ -5,7 +5,7 @@ keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, A
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
-ms.date: 03/16/2021
+ms.date: 03/24/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -44,33 +44,39 @@ For full details and steps read the guide on [how to enable auto enrollment for 
 Corporate Wi-Fi connections will commonly require certificate-based authentication for customers using HoloLens 2. You will need to deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with your MDM solution. Using Intune to deploy Wi-Fi profiles, certificates, and proxy settings creates a seamless experience for end users.
  
 ### Deploy certificates and Wi-Fi profiles
+
 To deploy certificates and profiles through Microsoft Endpoint Manager, follow these steps:
+
 1. Create a profile for each of the Root and Intermediate certificates (see [Create trusted certificate profiles](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)). Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. 
-> [!CAUTION]
-> **Certificate profiles without an expiration date will not be deployed**.
+
+    > [!CAUTION]
+    > **Certificate profiles without an expiration date will not be deployed**.
 
 2.	Create a profile for each SCEP or PKCS certificates (see [Create a SCEP certificate profile or Create a PKCS certificate profile](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. 
->[!CAUTION]
-> **Certificate profiles without an expiration date will not be deployed.**
 
-> [!Note]
-> As the HoloLens 2 is considered for many to be a shared device, i.e., multiple users per device, it is recommended to deploy Device certificates instead of User certificates for Wi-Fi authentication where possible.
+    > [!CAUTION]
+    > **Certificate profiles without an expiration date will not be deployed.**
+
+    > [!Note]
+    > As the HoloLens 2 is considered for many to be a shared device, i.e., multiple users per device, it is recommended to deploy Device certificates instead of User certificates for Wi-Fi authentication where possible.
 
 3.	Create a profile for your corporate Wi-Fi network (see [Wi-Fi settings for Windows 10 and later devices](https://docs.microsoft.com/intune/wi-fi-settings-windows)). Within your Wi-Fi profile, you can select to use the proxy settings within your organization.
  
-Your options:
-- **None**: No proxy settings are configured.
-- **Manually configure**: Enter the **Proxy server IP address** and its **Port number**.
-- **Automatically configure**: Enter the URL pointing to a proxy auto configuration (PAC) script. For example, enter *http://proxy.contoso.com/proxy.pac*.
+    Your options:
+    - **None**: No proxy settings are configured.
+    - **Manually configure**: Enter the **Proxy server IP address** and its **Port number**.
+    - **Automatically configure**: Enter the URL pointing to a proxy auto configuration (PAC) script. For example, enter *http://proxy.contoso.com/proxy.pac*.
 
-For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
+    For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
  
-> [!Note]
-> It is recommended that the Wi-Fi profile be assigned to Device groups rather than User groups where possible.
- 
-> [!Tip]
-> You also can export a working Wi-Fi profile from a Windows 10 PC on your corporate network. This export creates an XML file with all the current settings. Then, import this file into Intune, and use it as the Wi-Fi profile for your HoloLens 2 devices. See [Export and import Wi-Fi settings for Windows devices](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
+    > [!Note]
+    > It is recommended that the Wi-Fi profile be assigned to Device groups rather than User groups where possible.
+     
+    > [!Tip]
+    > You also can export a working Wi-Fi profile from a Windows 10 PC on your corporate network. This export creates an XML file with all the current settings. Then, import this file into Intune, and use it as the Wi-Fi profile for your HoloLens 2 devices. See [Export and import Wi-Fi settings for Windows devices](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
+
 1.	[Assign](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign) the device profiles to the HoloLens device group.
+
 2.	[Monitor](https://docs.microsoft.com/mem/intune/configuration/device-profile-monitor) the device profiles in Intune.
 
 If there are issues with Wi-Fi profiles, reference [Troubleshoot Wi-Fi device configuration profiles in Intune](https://docs.microsoft.com/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles).
@@ -99,13 +105,21 @@ If you would prefer to use your own app or are interested in app development for
 ### Upload and Assign the App
 
 1. Navigate to the [MEM admin center](https://endpoint.microsoft.com/#home).
+
 2. Select **Apps** -> **All apps** and select the **+ Add** button.
+
 3. Underneath Other, Select **Line-of-business app**. Click **select**.
+
 4. Select the app package file, this is your APPXBUNDLE file, or in our case of this example the app is _MRTK Examples Hub\_2.4.2.0\_arm\_Master.appxbundle_.
+
 5. You will be notified of missing dependencies. In this case, we need to upload _Microsoft.VCLibs.ARM.14.00.appx_. Search for it under **Select a file**.
+
 6. Select OK.
+
 7. In the next screen, the required fields will be auto-filled. Select **Next**.
+
 8. Under Required, add our previously created group to make this app required for the group. This will cause the app to automatically download to enrolled devices in the group. Select **Next**.
+
 9. Select **Create**.
 
 Read more: [Assign apps to groups in Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app)
