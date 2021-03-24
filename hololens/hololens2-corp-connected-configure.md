@@ -137,7 +137,7 @@ You'll want to increase the maximum file size of items in your dataverse. Increa
 
 Lastly, you'll need to [install and configure the solution](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution). In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), select  **Resources**  \&gt;  **Dynamics 365 apps**, select  **Dynamics 365 Guides**  in the list, and then select  **Install**.
 
-You need [add a Guides security role](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/guides/assign-role) before you’re able to use the apps.
+You need [add a Guides security role](https://docs.microsoft.com/dynamics365/mixed-reality/guides/assign-role) before you’re able to use the apps.
 
 ### Create a test Guide on your PC via Authoring
 
