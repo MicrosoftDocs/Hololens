@@ -77,7 +77,7 @@ There are modes for the Guides app on HoloLens, authoring and operating. You'll 
 We don't need to do much for this quick validation. Simply select the guide you prepared on your PC. You'll need to [anchor the guide](https://docs.microsoft.comdynamics365/mixed-reality/guides/hololens-app-anchor), for a quick validation you can use a holographic anchor. Afterwards, you should [place your steps and models](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-orientation).
 
 >[!NOTE]
-You will need the **Authoring** role to login to the PC and author on the HoloLens. The Operator role is read-only and has no access to the PC app.
+> You will need the **Authoring** role to login to the PC and author on the HoloLens. The Operator role is read-only and has no access to the PC app.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/poE7s7_zWDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
