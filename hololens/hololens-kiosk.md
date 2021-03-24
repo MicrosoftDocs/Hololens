@@ -319,6 +319,30 @@ To enable the **Guest** account, add the following snippet to your kiosk configu
   </Config>  
 </Configs>  
 ```
+#### Enable Visitor Autologon
+
+AAD and Non-ADD configurations both support visitor accounts being auto-logon enabled for Kiosk modes.
+
+##### Non-AAD configuration
+
+1. Create a provisioning package that:
+    1. Configures Runtime settings/AssignedAccess to allow Visitor accounts.
+    1. Optionally enrolls the device in MDM (Runtime settings/Workplace/Enrollments) so that it can be managed later.
+    1. Do not create a local account
+2. [Apply the provisioning package](https://docs.microsoft.com/hololens/hololens-provisioning).
+
+##### AAD configuration
+
+AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+
+Visitor Auto logon can be managed via [custom OMA-URI policy](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10):
+
+- URI value: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
+
+
+| Policy |Description |Configurations 
+| --------------------------- | ------------- | -------------------- |
+| MixedReality/VisitorAutoLogon | Allows for a Visitor to Auto logon to a Kiosk. | 1 (Yes), 0 (No, default.) |
 
 #### <a id="start-layout-for-hololens"></a>Placeholder Start layout for HoloLens
 
@@ -465,11 +489,11 @@ Application is automatically launched when user signs-in.
 
 
 ### Kiosk mode behavior changes for handling of failures
-- More secure Kiosk mode by eliminating available apps on Kiosk mode failures. 
+- Kiosk mode looks for Global Assigned Access before empty start menu.
 
-Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 20H2 in the case of failures no apps will be shown in the start menu as below: 
+In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “nothing shown in start” menu.
 
-![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+Starting in Windows Insider release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode. 
 
 ### Cache Azure AD Group membership for offline Kiosk
 - Enabled Offline Kiosks to be used with Azure AD groups for up to 60 days.
