@@ -5,7 +5,7 @@ keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, A
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
-ms.date: 03/16/2021
+ms.date: 03/24/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
