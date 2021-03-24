@@ -47,7 +47,7 @@ The following infrastructure should already be in place:
 - Power BI Desktop
 - Network Connectivity
 
-![Corp connected network diagram](./images/dynamics-365-guides-architecture.png)
+![Corp connected network diagram](./images/corpconnected-diagHL2-guides.png)
 
 ## Stages of Deployment
 ### Prepare
