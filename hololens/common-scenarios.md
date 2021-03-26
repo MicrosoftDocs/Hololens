@@ -2,7 +2,7 @@
 title: Common Infrastructure Deployment Scenarios
 description: Learn about some of the most common deployment scenarios based on different infrastructure deployments for mixed reality.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 11/04/2020
+ms.date: 3/24/2021
 keywords: hololens
 manager: yannisle
 ms.prod: hololens
@@ -61,6 +61,9 @@ HoloLens 2 is deployed for use primarily on the corporate network with access to
    * HoloLens 2 doesn't support on premises AD join or SCCM. Only Azure AD join with MDM. Many companies today still deploy Windows 10 PCs in this scenario as on premises AD joined devices, managed by System Center Configuration Manager (SCCM) and may not have the infrastructure deployed/configured for managing internal Windows 10 devices via cloud-based MDM solutions.
    * As HoloLens 2 is a cloud first device, it relies heavily on internet and cloud connected services for User authentication, OS updates, MDM management, and so on. When connecting to a corporate network, Proxy/Firewall rules will most likely need to be adjusted to enable access for HoloLens 2 and the applications that run on it.
    * Corporate Wi-Fi connectivity typically requires certificates to authenticate the device or user to the network. The required infrastructure or settings to deploy certificates to Windows 10 devices through MDM can be challenging to configure.
+
+> [!div class="nextstepaction"]
+> [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides](hololens2-corp-connected-overview.md)
 
 ### Scenario C: Deploy in secure offline environment
 
