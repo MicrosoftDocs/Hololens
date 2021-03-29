@@ -14,9 +14,10 @@ ms.date: 3/19/2021
 Are you looking to get unblocked on developing your application, or have an issue with your HoloLens 2 or Windows Mixed Reality Headset? Maybe you are using an Azure mixed reality service and have a technical question. Here you will find the support options for HoloLens, Windows Mixed Reality, and Azure mixed reality services - ensuring you get connected to the right place. We also cover community resources and self-service content options for you to explore.
  
 ## Create a support request
+
 - Programming Support: Create a support request for HoloLens and Mixed Reality programming via [Mixed Reality Technical Support](https://aka.ms/mrsupport) 
 - HoloLens 2 Device Support: Get help with purchasing here or your [HoloLens 2 device](/hololens/hololens2-support.md#hololens-2-support)
-- Azure mixed reality service Support: Get help on [Azure Remote Rendering or Azure Spatial anchors](/hololens/hololens2-support.md#azure-mixed-reality-services-support)
+- Azure mixed reality service support: Get help on [Azure Remote Rendering or Azure Spatial anchors](/hololens/hololens2-support.md#azure-mixed-reality-services-support)
 
 ## Community help options
 
@@ -91,7 +92,7 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 
 ## Azure mixed reality services support
 
-### Open an Azure tech support ticket
+### Open an Azure portal technical support ticket
 
 To open a technical support ticket within the Azure Portal for Azure Spatial Anchors:
 
@@ -120,7 +121,10 @@ To open a technical support ticket within the Azure Portal for Azure Spatial Anc
 
 On the bottom of each content article, there is an opportunity to open a GitHub issue and provide feedback on content in any mixed reality documentation repository. 
 
-### Provide Product Feedback
+### Provide product feedback
+
+>[!Note]
+>Now you can submit feedback about your experience using Hololens 2 also with optional or full device telemetry enabled. Click [here](https://docs.microsoft.com/hololens/hololens-feedback) to understand more about using Feedback Hub. 
 
 To provide feedback, share an idea or suggestion for Azure mixed reality services, or vote on the ideas that others have submitted, visit: 
 
