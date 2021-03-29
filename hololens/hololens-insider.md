@@ -74,7 +74,7 @@ Visitors can now be automatically logged into a Kiosk. This behavior is on by de
 
 [**Improved Kiosk mode failure handing**](#kiosk-mode-behavior-changes-for-handling-of-failures)
 
-This update now keeps devices more controlled by Kiosk mode, allowing for it to fall back to different types of Kiosks before simply presenting an empty Kiosk. While this is not manageable, this may be something to inform your support department if you are using Kiosks in a way this may apply to your configuration.
+If AAD group membership of signed-in AAD user is not successfully determined, then global kiosk configuration is used for start menu (if present) otherwise user is presented with empty start menu. While the empty start menu is not a configuration you can directly set, this new handling may be something to inform your support department of if you are using Kiosks, as this may apply to your configurations or you may want to make new adjustments to your assigned access configurations.
 
 #### Updates to Page Settings Visibility
 
