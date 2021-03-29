@@ -2,6 +2,21 @@
 
 
 
+## Week of March 22, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/22/2021 | [Connect HoloLens to a network](/hololens/hololens-network) | modified |
+| 3/22/2021 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
+| 3/24/2021 | [Deployment Guide - Corporate connected HoloLens 2 with Dynamics 365 Guides - Configure](/hololens/hololens2-corp-connected-configure) | added |
+| 3/24/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Deploy](/hololens/hololens2-corp-connected-deploy) | added |
+| 3/24/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Maintain](/hololens/hololens2-corp-connected-maintain) | added |
+| 3/24/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Overview](/hololens/hololens2-corp-connected-overview) | added |
+| 3/24/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Prepare](/hololens/hololens2-corp-connected-prepare) | added |
+| 3/24/2021 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
+
+
 ## Week of March 15, 2021
 
 
@@ -20,14 +35,3 @@
 | 3/16/2021 | [Admin-less operating system security](/hololens/security-adminless-os) | modified |
 | 3/17/2021 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
 | 3/18/2021 | [HoloLens environment considerations](/hololens/hololens-environment-considerations) | modified |
-
-
-## Week of February 15, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 2/16/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 2/16/2021 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 2/16/2021 | [Hardware backed integrity and runtime attestation](/hololens/security-hardware-backed-integrity) | modified |
-| 2/16/2021 | [Limiting password use](/hololens/security-limiting-password-use) | modified |
