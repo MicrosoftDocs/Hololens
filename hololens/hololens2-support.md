@@ -11,7 +11,13 @@ ms.date: 3/19/2021
 
 # What are the Mixed Reality support and help options?
 
-Are you looking to get unblocked on developing your application, or have an issue with your HoloLens 2 or Windows Mixed Reality Headset? Maybe you are using an Azure mixed reality service and have a technical question. Here you will find the support options for HoloLens, Windows Mixed Reality, and Azure mixed reality services - ensuring you get connected to the right place. We also cover community resources and self-service content options for you to explore.
+Are you looking to get unblocked on developing your application, or have an issue with your HoloLens 2 or Windows Mixed Reality Headset? Maybe you are using an Azure mixed reality service and have a technical question. 
+
+Here you will find the support options for the following options ensuring you get connected to the right place. We also cover community resources and self-service content options for you to explore:
+
+- HoloLens
+- Windows Mixed Reality
+- Azure mixed reality services 
  
 ## Create a support request
 
@@ -31,7 +37,8 @@ If you can't find an answer to your problem using search, submit a new question 
 - [Azure Spatial Anchors](https://docs.microsoft.com/answers/topics/azure-spatial-anchors.html)
 - [Azure Remote Rendering](https://docs.microsoft.com/answers/topics/azure-remote-rendering.html)
 - [Azure Object Anchors](https://docs.microsoft.com/answers/topics/azure-object-anchors.html)
-- [HoloLens 2 Programming](https://docs.microsoft.com/answers/topics/azure-object-anchors.html)
+- [HoloLens 2 Programming](https://docs.microsoft.com/answers/topics/hololens-development.html)
+- [Windows Products](https://docs.microsoft.com/answers/products/windows)
 
 
 ### Post a question on Stack Overflow
@@ -94,7 +101,7 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 
 ### Open an Azure portal technical support ticket
 
-To open a technical support ticket within the Azure Portal for Azure Spatial Anchors:
+To open a technical support ticket on the Azure Portal for Azure Spatial Anchors or Azure Remote Rendering:
 
 1. With the [Azure portal](https://azure.microsoft.com/account/) open, select the help icon from the top menu bar, then select the **Help + support** button.
 
@@ -123,13 +130,12 @@ On the bottom of each content article, there is an opportunity to open a GitHub 
 
 ### Provide product feedback
 
->[!Note]
->Now you can submit feedback about your experience using Hololens 2 also with optional or full device telemetry enabled. Click [here](https://docs.microsoft.com/hololens/hololens-feedback) to understand more about using Feedback Hub. 
+To provide feedback, share an idea or suggestions for Microsoft mixed reality services, or vote on the ideas that others have submitted, visit: 
 
-To provide feedback, share an idea or suggestion for Azure mixed reality services, or vote on the ideas that others have submitted, visit: 
-
-- [Azure Remote Rendering Feedback Forum](https://feedback.azure.com/forums/928696-azure-remote-rendering).
-- [Azure Spatial Anchors Feedback Forum](https://feedback.azure.com/forums/919252-azure-spatial-anchors).
+- [HoloLens Product Feedback](https://docs.microsoft.com/hololens/hololens-feedback).
+- [Microsoft Mesh App Product Feedback](https://docs.microsoft.com/hololens/hololens-feedback).
+- [Azure Remote Rendering Feedback](https://feedback.azure.com/forums/928696-azure-remote-rendering).
+- [Azure Spatial Anchors Feedback](https://feedback.azure.com/forums/919252-azure-spatial-anchors).
 
 ### FAQs
 
