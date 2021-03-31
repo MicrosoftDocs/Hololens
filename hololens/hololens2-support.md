@@ -21,7 +21,6 @@ Here you will find the support options for the following options ensuring you ge
  
 ## Create a support request
 
-- Programming Support: Create a support request for HoloLens and Mixed Reality programming via [Mixed Reality Technical Support](https://aka.ms/mrsupport) 
 - HoloLens 2 Device Support: Get help with purchasing here or your [HoloLens 2 device](/hololens/hololens2-support.md#hololens-2-support)
 - Azure mixed reality service support: Get help on [Azure Remote Rendering or Azure Spatial anchors](/hololens/hololens2-support.md#azure-mixed-reality-services-support)
 
@@ -30,7 +29,7 @@ Here you will find the support options for the following options ensuring you ge
 ### Post a question on Microsoft Q&A
 <div class='icon is-large'>
     <img alt='Azure Q&A' src='https://docs.microsoft.com/media/logos/logo_azure.svg'>
-</div>
+</div><br/>
 For quick and reliable answers on your Azure Mixed Reality and HoloLens 2 programming questions from Microsoft Engineers, Most Valuable Professionals (MVPs), or our expert community, engage with us on Microsoft Q&A, Microsoft's preferred destination for community support.
 
 If you can't find an answer to your problem using search, submit a new question to Microsoft Q&A. Use one of the following tags when you ask your question:
@@ -44,7 +43,7 @@ If you can't find an answer to your problem using search, submit a new question 
 ### Post a question on Stack Overflow
 <div class='icon is-large'>
     <img alt='Stack Overflow' src='https://docs.microsoft.com/media/logos/logo_stackoverflow.svg'>
-</div>
+</div><br/>
 
 For answers on your developer questions from the largest community developer ecosystem, ask your question on Stack Overflow.
 
@@ -58,19 +57,24 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 - [Mixed Reality Toolkit (MRTK)](https://stackoverflow.com/questions/tagged/MRTK)
 
 #### Other Communities: 
-- [Mixed Reality Community](https://docs.microsoft.com/windows/mixed-reality/discover/community)
+- [Explore Mixed Reality online community options](https://docs.microsoft.com/windows/mixed-reality/discover/community)
 
 ## HoloLens 2 Support
 
-### Help with Purchasing or Troubleshooting your HoloLens 2
-- Get help with your device [HoloLens 2 Device support](https://aka.ms/mrsupport)
+### Help with Technical Support for your Hololens 2
+
+- Get Hololens 2 programming help from the community at [Microsoft Q&A](/hololens/hololens2-support.md#post-a-question-on-microsoft-qa)
+- Create a support request for HoloLens 2 Programming to get in touch with [Mixed Reality Technical Support](https://aka.ms/mrsupport) 
+
+### Help with Commercial Support for your HoloLens 2
+
 - [Purchase HoloLens 2](https://www.microsoft.com/hololens/buy) use this option to learn more about HoloLens 2 pricing and options
 - [Microsoft Store - Office Support](https://support.microsoft.com/office/microsoft-store-109d8aed-d32f-4d6f-9c54-ff80871e8637) this option will take you to our self-help portal of Microsoft store
 - [Store & Purchase Inquiry Support](https://support.microsoft.com/account-billing/contact-microsoft-store-support-4f615f2a-6bbd-fd69-6695-ae213d63eef0) use this option to speak with our Microsoft Store Support colleagues
 
-### Commercial store support numbers across all regions
+### Commercial support numbers across all regions
 >[!Note]
->Use one of the commercial support business phone numbers below to help complete your purchase 
+>Use one of the commercial support business phone numbers below to help complete your purchase. 
 
 | Markets | Business Desk Number | Hours of Operation |
 |-----------------|-------------------|-----------------------|
@@ -101,7 +105,7 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 
 ### Open an Azure portal technical support ticket
 
-To open a technical support ticket on the Azure Portal for Azure Spatial Anchors or Azure Remote Rendering:
+To open a technical support ticket on the Azure Portal for Azure Spatial Anchors, Azure Object Anchors or Azure Remote Rendering:
 
 1. With the [Azure portal](https://azure.microsoft.com/account/) open, select the help icon from the top menu bar, then select the **Help + support** button.
 
@@ -114,7 +118,7 @@ To open a technical support ticket on the Azure Portal for Azure Spatial Anchors
 1. When completing the support ticket fields:
 
 - Issue type: Technical
-- Service: Spatial Anchors, Remote Rendering
+- Service: Azure Spatial Anchors, Azure Remote Rendering or Azure Object Anchors
 
 ![Azure portal support ticket fields](../hololens/images/azure-help-support3.png)
 
