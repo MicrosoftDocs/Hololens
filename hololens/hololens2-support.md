@@ -22,7 +22,7 @@ Here you will find the support options for the following options ensuring you ge
 ## Create a support request
 
 - HoloLens 2 Device Support: Get help with purchasing here or your [HoloLens 2 device](/hololens/hololens2-support.md#hololens-2-support)
-- Azure mixed reality service support: Get help on [Azure Remote Rendering or Azure Spatial anchors](/hololens/hololens2-support.md#azure-mixed-reality-services-support)
+- Azure mixed reality service support: Get help on [Azure Remote Rendering, Azure Spatial anchors or Azure Object Anchor](/hololens/hololens2-support.md#azure-mixed-reality-services-support)
 
 ## Community help options
 
