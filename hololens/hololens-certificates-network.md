@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.date: 9/15/2020
 ms.reviewer: v-evmill
 audience: ITPro
-manager: 
+manager: yannisle
 appliesto:
 - HoloLens 2
 ---
