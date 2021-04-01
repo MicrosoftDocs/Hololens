@@ -162,7 +162,7 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 - "See it, say it"
 - Printing
 
-**Top known browser issues:**
+**Top browser known issues:**
 - Wi-Fi proxy configurations, which are proxy policies that target individual Wi-Fi connections, don't currently work with the new Microsoft Edge. We're actively working to unblock this issue before public release of the OS update.
 - The magnifier preview in the holographic keyboard has been disabled for the new Microsoft Edge. We hope to reenable this feature in a future update, once the magnification is working correctly.
 - Two characters on the Japanese keyboard do not work as expected in the new Microsoft Edge. This issue has been root caused and should be fixed soon.
@@ -334,11 +334,8 @@ If you're unhappy with the custom color profile saved to your HoloLens 2, you ca
 
 #### Top display color calibration known issues
 
-- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings 
+- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings.
     - Workaround: Select another Settings page and then re-select the Calibration page.
-- If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
-- You may need to try pressing the brightness buttons on the left side of your device up/down a few times before they work as expected.
-- Localization is not complete for all markets
 
 ### Default app picker
 
