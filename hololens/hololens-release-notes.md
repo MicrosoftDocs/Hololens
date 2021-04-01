@@ -31,12 +31,33 @@ Check out related release notes:
 - [Dynamics 365 Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 - [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 
+<<<<<<< Updated upstream
+=======
+# HoloLens 2 release notes
+
+To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
+
+>[!NOTE]
+> We are excited to start flighting new features to Windows Insiders again. We will be flighting to the Dev Channel for the latest updates. We will continue to our [**HoloLens Insider notes**](hololens-insider.md) as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality.
+
+Check out related release notes:
+
+- [Visit the HoloLens Emulator archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)
+- [Dynamics 365 Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
+- [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
+
+>>>>>>> Stashed changes
 ## Windows Holographic
 - Build 
 
 | Feature                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+<<<<<<< Updated upstream
 | [New Microsoft Edge](https://docs.microsoft.com/hololens/hololens-insider#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2. | [WebXR and 360 Viewer](https://docs.microsoft.com/hololens/hololens-insider#webxr-and-360-viewer) | Try immersive web experiences and 360 video playback. | 
+=======
+| [New Microsoft Edge](https://docs.microsoft.com/hololens/hololens-insider#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2. | 
+[WebXR and 360 Viewer](https://docs.microsoft.com/hololens/hololens-insider#webxr-and-360-viewer) | Try immersive web experiences and 360 video playback. | 
+>>>>>>> Stashed changes
 [New Settings App](https://docs.microsoft.com/hololens/hololens-insider#new-settings-app) | The legacy Settings app is being replaced by an updated version with new features and settings. | 
 [Display color calibration](https://docs.microsoft.com/hololens/hololens-insider#display-color-calibration) | Select an alternative color profile for your HoloLens 2 display. |
 [Default app picker](https://docs.microsoft.com/hololens/hololens-insider#default-app-picker) | Choose which app should launch for each file or link type. |
@@ -57,6 +78,7 @@ Check out related release notes:
 [Improvements and fixes in the update](https://docs.microsoft.com/hololens/hololens-insider#improvements-and-fixes-in-the-update) | Additional fixes in the update.
 
 
+<<<<<<< Updated upstream
 
 
 
@@ -74,6 +96,8 @@ Check out related release notes:
 
 
 
+=======
+>>>>>>> Stashed changes
 ## Windows Holographic, version 20H2 - March 2021 Update
 - Build 19041.1140
 
