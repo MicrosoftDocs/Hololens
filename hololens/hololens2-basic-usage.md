@@ -128,6 +128,28 @@ Now you can open the **Start menu** again and select the **Tips** app tile. A 3D
 
 Tips is an example of an **immersive app**. An immersive app takes you away from mixed reality home when it runs and becomes the only app you see.  To exit, you need to bring up the Start menu and select the **mixed reality home** button at the bottom.
 
+### Power menu from Start
+
+A new menu that allows the user to sign out, shut down and restart the device. An indicator in the HoloLens Start screen that shows when a system update is available.
+
+#### How to use
+
+1. Open the HoloLens Start screen using the [Start gesture](hololens2-basic-usage.md#start-gesture) or saying "Go to Start".
+
+2. Notice the ellipsis icon (...) next to the user profile picture:
+
+   <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
+
+3. Select the user profile picture using your hands or the voice command "Power".
+
+4. A menu appears with options to Sign out, Restart or Shut down the device:
+
+   <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
+
+5. Select the menu options to sign out, restart or shut down your HoloLens. The Sign out option might not be available, if the device is set up for a [single Microsoft Account (MSA) or local account](hololens-identity.md).
+
+6. Dismiss the menu by touching anywhere else or closing the Start menu with the Start gesture.
+
 [Go here to learn more](holographic-home.md) about Start menu and mixed reality home, including info on how to use and manage apps on HoloLens 2.
 
 ## Move, resize, and rotate holograms
@@ -180,6 +202,12 @@ You can use your voice to do most of the same things you do with hands on HoloLe
 | See available speech commands | "What can I say?" |
 
  [See more voice commands and ways to use speech with HoloLens](hololens-cortana.md)
+
+## Swipe to type
+
+Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the space bar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
+
+Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). We are evaluating this feature for public release, so your feedback is important; whether you find the feature useful or you have constructive feedback, please let us know via [Feedback Hub](hololens-feedback.md).
 
 ## Next steps
 

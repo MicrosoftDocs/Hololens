@@ -31,7 +31,7 @@ Check out related release notes:
 - [Dynamics 365 Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 - [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 
-## Windows Holographic
+## Windows Holographic, version
 - Build 
 
 | Feature                                              | Description                                                                                                                                     |

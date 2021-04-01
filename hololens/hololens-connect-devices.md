@@ -17,8 +17,46 @@ appliesto:
 
 # Connect to Bluetooth and USB-C devices
 
+### USB-C External Microphone Support
+
+> [!IMPORTANT]
+> Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
+
 > [!NOTE]
-> External microphones cannot be used. HoloLens 2 uses its built-in [microphone array](hololens2-hardware.md#audio-and-speech).
+> External microphones cannot be used in builds prior to [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version). 
+
+Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C microphones can be used for calling, recording, etc.
+
+Open the **Settings** app and select **System** > **Sound**.
+
+![Sound Settings](images/usbc-mic-1.jpg)
+
+> [!IMPORTANT]
+> To use external microphones with **Remote Assist**, users will need to click the “Manage sound devices” hyperlink.
+>
+> Then use the drop-down to set the external microphone as either **Default** or **Communications Default.** Choosing **Default** means that the external microphone will be used everywhere.
+>
+> Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
+
+![Manage sound devices](images/usbc-mic-2.png)
+
+<br>
+
+![Set microphone default](images/usbc-mic-3.jpg)
+
+#### What about Bluetooth microphone support?
+
+Unfortunately Bluetooth microphones are still not currently supported on HoloLens 2.
+
+#### Troubleshooting USB-C microphones
+
+Be aware that some USB-C microphones incorrectly report themselves as both a microphone *and* a speaker. This is a problem with the microphone and not with HoloLens. When plugging one of these microphones into HoloLens, sound may be lost. Fortunately there is a simple fix.  
+
+In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
+
+![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
+
+
 
 ## Pair Bluetooth devices
 

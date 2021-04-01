@@ -122,12 +122,8 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 |Movies & TV |Microsoft.ZuneVideo\_8wekyb3d8bbwe\!Microsoft.ZuneVideo |
 |OneDrive |microsoft.microsoftskydrive\_8wekyb3d8bbwe\!App |
 |Photos |Microsoft.Windows.Photos\_8wekyb3d8bbwe\!App |
-<<<<<<< Updated upstream
-|Settings |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App |
-=======
 |Old Settings |HolographicSystemSettings_cw5n1h2txyewy!App |
 |New Settings |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App |
->>>>>>> Stashed changes
 |Tips |Microsoft.HoloLensTips\_8wekyb3d8bbwe\!HoloLensTips |
 
 > <sup>1</sup> To enable photo or video capture, you have to enable the Camera app as a kiosk app.  
@@ -246,8 +242,9 @@ This section summarizes the settings that a multi-app kiosk requires. For more d
 - You can optionally use a custom Start layout with Intune or other MDM services. For more information, see [Start layout file for MDM (Intune and others)](#start-layout-file-for-mdm-intune-and-others).
 
 1. Select **Target Windows 10 in S mode devices** > **No**.  
-   >[!NOTE]  
-   > S mode isn't supported on Windows Holographic for Business.
+>[!NOTE]  
+> S mode isn't supported on Windows Holographic for Business.
+
 1. Select **User logon type** > **Azure AD user or group** or **User logon type** > **HoloLens visitor**, and then add one or more user groups or accounts.  
 
    Only users who belong to the groups or accounts that you specify in **User logon type** can use the kiosk experience.
@@ -313,7 +310,8 @@ Follow [the general instructions to create a kiosk configuration XML file for Wi
 
 #### <a id="ppkioskguest"></a>Optional: Add guest access to the kiosk configuration
 
-In the [**Configs** section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group named **Visitor** to allow guests to use the kiosk. When the kiosk is configured to support the **Visitor** special group, a "**Guest**" option is added to the sign-in page. The **Guest** account does not require a password, and any data that is associated with the account is deleted when the account signs out.
+On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version) and onwards:
+- In the [**Configs** section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group named **Visitor** to allow guests to use the kiosk. When the kiosk is configured to support the **Visitor** special group, a "**Guest**" option is added to the sign-in page. The **Guest** account does not require a password, and any data that is associated with the account is deleted when the account signs out.
 
 To enable the **Guest** account, add the following snippet to your kiosk configuration XML:
 
@@ -327,7 +325,8 @@ To enable the **Guest** account, add the following snippet to your kiosk configu
 ```
 #### Enable Visitor Autologon
 
-AAD and Non-ADD configurations both support visitor accounts being auto-logon enabled for Kiosk modes.
+On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version) and onwards:
+- AAD and Non-ADD configurations both support visitor accounts being auto-logon enabled for Kiosk modes.
 
 ##### Non-AAD configuration
 
@@ -495,13 +494,18 @@ Application is automatically launched when user signs-in.
 
 
 ### Kiosk mode behavior changes for handling of failures
+
 - Kiosk mode looks for Global Assigned Access before empty start menu.
 
-In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “nothing shown in start” menu.
+Behavior Prior to [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version), if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “nothing shown in start” menu.
 
-Starting in Windows Insider release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode. 
+![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+
+Starting with [Windows Holographic, version](hololens-release-notes.md#windows-holographic-version), the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode. 
 
 ### Cache Azure AD Group membership for offline Kiosk
+
+- More secure Kiosk mode by eliminating available apps on Kiosk mode failures.
 - Enabled Offline Kiosks to be used with Azure AD groups for up to 60 days.
 
 This policy controls for how many days, Azure AD group membership cache is allowed to be used for Assigned Access configurations targeting Azure AD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
