@@ -585,9 +585,9 @@ A few caveats about this preview offering:
 
 #### Device Portal Authentication
 
-Prior to the Windows Insider build 20325.1000, when a user had set Device Portal credentials on either Windows Holographic, version 20H2 or Windows Holographic, version 2004 and updated to the Windows Insider builds their existing Device Portal credentials no longer worked. Windows Insider build 20325.1000 fixes this issue and requires no additional actions to resume using device portal.
+Prior to the Windows Insider build 20325.1000, when a user had set Device Portal credentials on either [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) or [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) and updated to the Windows Insider builds their existing Device Portal credentials no longer worked. Windows Insider build 20325.1000 fixes this issue and requires no additional actions to resume using device portal.
 
-Users who have [reflashed their device with an Insider build](hololens-insider#ffu-download-and-flash-directions) will now need to reflash their devices (to either 20325.1000+ or a GA build) in-order to enable developer mode.
+Users who have [flashed their device with an Insider build](hololens-insider.md#ffu-download-and-flash-directions) will now need to reflash their devices (to either 20325.1000+ or a GA build) in-order to enable developer mode.
 
 Users who have not enrolled in Windows Insiders and will be taking the feature update when it is generally available are not affected.
 
