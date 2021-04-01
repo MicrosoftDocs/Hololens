@@ -36,7 +36,7 @@ Check out related release notes:
 
 | Feature                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [New Microsoft Edge](https://docs.microsoft.com/hololens/hololens-insider#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2.    | [WebXR and 360 Viewer](https://docs.microsoft.com/hololens/hololens-insider#webxr-and-360-viewer) | Try immersive web experiences and 360 video playback. | 
+| [New Microsoft Edge](https://docs.microsoft.com/hololens/hololens-insider#introducing-the-new-microsoft-edge) | The new, Chromium-based Microsoft Edge is now available for HoloLens 2. | [WebXR and 360 Viewer](https://docs.microsoft.com/hololens/hololens-insider#webxr-and-360-viewer) | Try immersive web experiences and 360 video playback. | 
 [New Settings App](https://docs.microsoft.com/hololens/hololens-insider#new-settings-app) | The legacy Settings app is being replaced by an updated version with new features and settings. | 
 [Display color calibration](https://docs.microsoft.com/hololens/hololens-insider#display-color-calibration) | Select an alternative color profile for your HoloLens 2 display. |
 [Default app picker](https://docs.microsoft.com/hololens/hololens-insider#default-app-picker) | Choose which app should launch for each file or link type. |
