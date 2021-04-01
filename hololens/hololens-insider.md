@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 3/4/2021
+ms.date: 04/01/2021
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -162,12 +162,15 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 - "See it, say it"
 - Printing
 
-**Top known browser issues:**
-- Resetting your device will remove the new Microsoft Edge
-- The magnifier preview in the holographic keyboard shows incorrect content
-- Scrolling can sometimes stutter
+**Top browser known issues:**
+- Wi-Fi proxy configurations, which are proxy policies that target individual Wi-Fi connections, don't currently work with the new Microsoft Edge. We're actively working to unblock this issue before public release of the OS update.
+- The magnifier preview in the holographic keyboard has been disabled for the new Microsoft Edge. We hope to reenable this feature in a future update, once the magnification is working correctly.
+- Two characters on the Japanese keyboard do not work as expected in the new Microsoft Edge. This issue has been root caused and should be fixed soon.
 - Web links in the Microsoft Store app may not launch the browser
-- Audio may play from the wrong browser window if you've previously played audio from a different browser window
+- Audio may play from the wrong browser window if you have another browser window open and active. You can work around this issue by closing the other active window that isn't supposed to be playing audio.
+- When playing audio from a browser window in ["Follow me" mode](hololens2-basic-usage.md#follow-me-stop-following), the audio will continue playing if you disable "Follow me" mode. You can work around this issue by stopping audio playback before disabling "Follow me" mode or by closing the window with the **X** button.
+- Interacting with active Microsoft Edge windows may cause other 2D app windows to go inactive unexpectedly. You can reactivate these windows by interacting with them again.
+- Opening a web link from another app, or certain types of documents like PDFs, may cause a second blank tab to open in the browser (in addition to the new tab created with the contents of the web link or file link). You can work around this issue by closing the additional blank tab.
 
 #### Microsoft Edge Insider channels
 
@@ -244,16 +247,14 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.
 
 #### Top WebXR and 360 Viewer known issues
-- In WebXR experiences, holograms may shift or tilt when you tilt your head or move around your environment.
 - Depending on the complexity of the WebXR experience, the framerate may drop or stutter.
-- Articulated hand joints are not yet available in WebXR.
+- Support for articulated hand joints in WebXR is not enabled by default. Developers can enable support via `edge://flags` by turning on "WebXR Hand Input."
 - When exiting a WebXR or 360 Viewer experience, it may take 30 seconds or more for holograms in the mixed reality home to reappear.
 - 360 videos from websites other than YouTube may not work as expected.
-- If 360 videos don't enter immersive view (or the mixed reality headset button doesn't appear), try refreshing the page.
-- Captions are not yet visible in 360 Viewer on HoloLens 2.
+- Captions are currently disabled in 360 Viewer on HoloLens 2. We plan to enable this feature in a future update.
 - Pausing a video in 360 Viewer stops the video from rendering (but selecting the play button correctly resumes playback).
 - The "next video" button in 360 Viewer does not currently work.
-- You can play 2D videos in an immersive "theater" mode, but the framerate will be less than 30 fps.
+- You can play 2D videos in an immersive "theater" mode, but the framerate may be less than 30 fps.
 
 #### Providing feedback on WebXR and 360 Viewer
 
@@ -332,11 +333,8 @@ If you're unhappy with the custom color profile saved to your HoloLens 2, you ca
 
 #### Top display color calibration known issues
 
-- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings 
+- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings.
     - Workaround: Select another Settings page and then re-select the Calibration page.
-- If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
-- You may need to try pressing the brightness buttons on the left side of your device up/down a few times before they work as expected.
-- Localization is not complete for all markets
 
 ### Default app picker
 
@@ -355,6 +353,9 @@ To set the volume of an individual app navigate to **Settings** -> **System** ->
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 ### Office web app
+
+>[!NOTE]
+>As of Windows Insider build 20325.1000, the Office web app will no longer be pre-installed (and will not be pre-installed for the upcoming public release of the OS update. To install the Office web app, visit https://www.office.com and select the **App Available** or **Install Office** button in the address bar. Select **Install** to confirm.
 
 The Office web app has been added to the "All apps" list in the Start menu. This web app can also be pinned to Start or uninstalled. Because this is a web app, its functionality matches exactly what you'd experience by visiting https://www.office.com. Office web app functionality is only available when your HoloLens 2 has an active internet connection.
 
