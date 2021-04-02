@@ -110,7 +110,7 @@ HoloLens 2 supports the following classes of USB-C devices:
 
 ### USB-C Hubs
 
-Some users may need to connect multiple devices at once. For users who would like to preview an Insider feature and [use a USB-C microphone](hololens-insider.md#usb-c-external-microphone-support) along with another connected device, USB-C hubs may fit the customer's need. Microsoft has not tested these devices, nor can we recommend any specific brands.
+Some users may need to connect multiple devices at once. For users who would like to preview an Insider feature and [use a USB-C microphone](hololens-release-notes.md#usb-c-external-microphone-support) along with another connected device, USB-C hubs may fit the customer's need. Microsoft has not tested these devices, nor can we recommend any specific brands.
 
 **Requirements for USB-C hub and connected devices:**
 
