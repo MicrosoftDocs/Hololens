@@ -1,4 +1,16 @@
-### New Settings app
+---
+title: Introducing the new Settings app
+description: Learn about the new Settings app
+author: joyjaz
+ms.author: joyjaz
+keywords: HoloLens, settings, app picker, volume
+ms.prod: hololens
+ms.sitesec: library
+ms.localizationpriority: high
+ms.reviewer: 
+manager: yannisle
+---
+# New Settings app
 
 With this release, we're introducing a new version of the Settings app. The new Settings app includes new features and expanded settings for HoloLens 2 in the following areas: Sound, Power & sleep, Network & Internet, Apps, Accounts, Ease of Access, and more.
 

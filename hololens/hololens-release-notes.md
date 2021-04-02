@@ -49,7 +49,7 @@ Check out related release notes:
 [USB-C External Microphone Support](https://docs.microsoft.com/hololens/hololens-insider#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist. |
 [Visitor Auto-logon for Kiosks](https://docs.microsoft.com/hololens/hololens-insider#visitor-auto-logon-for-kiosks) | Enables the auto-logon on Visitor accounts to be used for Kiosk modes. |
 [New AUMIDs for new apps in Kiosk mode](https://docs.microsoft.com/hololens/hololens-insider#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs for new Settings and Edge apps. |
-[Improved Kiosk mode failure handing](https://docs.microsoft.com/en-us/hololens/hololens-insider#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. |
+[Improved Kiosk mode failure handing](https://docs.microsoft.com/hololens/hololens-insider#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. |
 [New SettingsURIs for Page Settings Visibility](https://docs.microsoft.com/hololens/hololens-insider#new-settingsuris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy. |
 [Configure Fallback Diagnostics](https://docs.microsoft.com/hololens/hololens-insider#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App. |
 [Share things with nearby devices](https://docs.microsoft.com/hololens/hololens-insider#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC. |

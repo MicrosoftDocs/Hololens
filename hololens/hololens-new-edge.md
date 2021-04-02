@@ -1,4 +1,17 @@
-### Introducing the new Microsoft Edge
+---
+title: Introducing the new Microsoft Edge
+description: Learn about the new Edge app
+author: joyjaz
+ms.author: joyjaz
+keywords: HoloLens, edge, internet, browser
+ms.prod: hololens
+ms.sitesec: library
+ms.localizationpriority: high
+ms.reviewer: 
+manager: yannisle
+---
+
+# Introducing the new Microsoft Edge
 
 ![Animation of legacy Microsoft Edge logo to new Microsoft Edge logo](images/new-edge.gif)
 
