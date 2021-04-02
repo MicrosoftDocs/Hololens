@@ -109,11 +109,12 @@ For IT Admins looking to update their [WDAC policy](windows-defender-application
 
 ``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
 
-#### Managing endpoints for the new Microsoft Edge
+## Managing endpoints for the new Microsoft Edge
 
 Some environments may have network restrictions to account for as a consideration. To ensure a smooth experience with the new Edge please [enable these Microsoft endpoints.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
 
 Read more about the currently available [endpoints for HoloLens](hololens-offline.md).
+
 ## WebXR and 360 Viewer
 
 *Added in Windows Insider build 20289.1000*
