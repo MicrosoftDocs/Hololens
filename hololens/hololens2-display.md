@@ -20,7 +20,7 @@ The HoloLens 2 display is a combination of waveguides and light projectors. User
 
 ## Display color calibration
 
-On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version) and onwards:
+On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
 
 With this new setting, you can select an alternative color profile for your HoloLens 2 display. This may help colors appear more accurate, especially at lower display brightness levels. Display color calibration can be found in the Settings app, on the System > Calibration page.
 

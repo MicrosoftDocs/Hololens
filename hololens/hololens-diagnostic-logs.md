@@ -81,7 +81,7 @@ A user can also configure the behavior of Fallback Diagnostics from the Settings
 > If there is MDM policy configured for the device, user will not be able to override that behavior.
 
 ## OS Update Troubleshooter
-On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version) and onwards:
+On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
 - In addition to the previous troubleshooters within the Settings app, a new troubleshooter has been added with the addition of the new Settings app for OS Updates. Navigate to **Settings -> Update & Security -> Troubleshoot -> Windows Update** and select **Start**. This allows you to collect traces while reproducing your issue with OS Updates to assist better in troubleshooting with your IT or support.
 ### Prerequisites
 

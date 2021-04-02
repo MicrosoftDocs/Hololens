@@ -310,7 +310,7 @@ Follow [the general instructions to create a kiosk configuration XML file for Wi
 
 #### <a id="ppkioskguest"></a>Optional: Add guest access to the kiosk configuration
 
-On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version) and onwards:
+On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
 - In the [**Configs** section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group named **Visitor** to allow guests to use the kiosk. When the kiosk is configured to support the **Visitor** special group, a "**Guest**" option is added to the sign-in page. The **Guest** account does not require a password, and any data that is associated with the account is deleted when the account signs out.
 
 To enable the **Guest** account, add the following snippet to your kiosk configuration XML:
@@ -325,7 +325,7 @@ To enable the **Guest** account, add the following snippet to your kiosk configu
 ```
 #### Enable Visitor Autologon
 
-On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version) and onwards:
+On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
 - AAD and Non-ADD configurations both support visitor accounts being auto-logon enabled for Kiosk modes.
 
 ##### Non-AAD configuration
@@ -497,11 +497,11 @@ Application is automatically launched when user signs-in.
 
 - Kiosk mode looks for Global Assigned Access before empty start menu.
 
-Behavior Prior to [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version), if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “nothing shown in start” menu.
+Behavior Prior to [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version-21h1), if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “nothing shown in start” menu.
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
-Starting with [Windows Holographic, version](hololens-release-notes.md#windows-holographic-version), the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode. 
+Starting with [Windows Holographic, version](hololens-release-notes.md#windows-holographic-version-21h1), the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode. 
 
 ### Cache Azure AD Group membership for offline Kiosk
 
