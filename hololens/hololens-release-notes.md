@@ -31,26 +31,26 @@ This update contains features for two target audiences; features that can be use
 
 | Feature Name                                              | Short description                                                                      | Target Audience | 
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
-| [New Microsoft Edge](https://docs.microsoft.com/hololens/hololens-release-notes#introducing-the-new-microsoft-edge)<sup>1</sup>  | The new, Chromium-based Microsoft Edge is now available for HoloLens 2. | End User | 
-[WebXR and 360 Viewer](https://docs.microsoft.com/hololens/hololens-release-notes#webxr-and-360-viewer) | Try immersive web experiences and 360 video playback. | End User | 
-[New Settings App](https://docs.microsoft.com/hololens/hololens-release-notes#new-settings-app) | The legacy Settings app is being replaced by an updated version with new features and settings. | End User |
-[Display color calibration](https://docs.microsoft.com/hololens/hololens-release-notes#display-color-calibration) | Select an alternative color profile for your HoloLens 2 display. | End User |
-[Default app picker](https://docs.microsoft.com/hololens/hololens-release-notes#default-app-picker) | Choose which app should launch for each file or link type. | End User |
-[Per app volume control](https://docs.microsoft.com/hololens/hololens-release-notes#per-app-volume-control) | Control app level volume independently from system volume. | End User |
-[Office web app](https://docs.microsoft.com/hololens/hololens-release-notes#office-web-app) | A shortcut to the Office web app is now listed in "All apps". | End User |
-[Swipe to type](https://docs.microsoft.com/hololens/hololens-release-notes#swipe-to-type) | Use the tip of your finger to "swipe" words on the holographic keyboard. | End User |
-[Power menu from Start](https://docs.microsoft.com/hololens/hololens-release-notes#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device. | End User |
-[Multiple users listed on Sign in screen](https://docs.microsoft.com/hololens/hololens-release-notes#multiple-users-listed-on-sign-in-screen) | Display multiple user accounts on the Sign in screen. | End User |
-[USB-C External Microphone Support](https://docs.microsoft.com/hololens/hololens-release-notes#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist. | End User |
-[Visitor Auto-logon for Kiosks](https://docs.microsoft.com/hololens/hololens-release-notes#visitor-auto-logon-for-kiosks) | Enables the auto-logon on Visitor accounts to be used for Kiosk modes. | IT Admin |
-[New AUMIDs for new apps in Kiosk mode](https://docs.microsoft.com/hololens/hololens-release-notes#use-the-new-settings-and-edge-apps-in-kiosk-modes)<sup>1</sup>  | AUMIDs for new Settings and Edge apps. | IT Admin |
-[Improved Kiosk mode failure handing](https://docs.microsoft.com/hololens/hololens-release-notes#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | IT Admin |
-[New SettingsURIs for Page Settings Visibility](https://docs.microsoft.com/hololens/hololens-release-notes#new-settingsuris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy. | IT Admin |
-[Configure Fallback Diagnostics](https://docs.microsoft.com/hololens/hololens-release-notes#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App. | IT Admin |
-[Share things with nearby devices](https://docs.microsoft.com/hololens/hololens-release-notes#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC. | IT Admin |
-[New OS Update troubleshooter](https://docs.microsoft.com/hololens/hololens-release-notes#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates. | IT Admin |
-[Delivery Optimization Preview](https://docs.microsoft.com/hololens/hololens-release-notes#delivery-optimization-preview) | Reduce bandwidth consumption for downloads from multiple HoloLens devices. | IT Admin |
-[Improvements and fixes in the update](https://docs.microsoft.com/hololens/hololens-release-notes#improvements-and-fixes-in-the-update) | Additional fixes in the update. | All |
+| [New Microsoft Edge](https://docs.microsoft.com/hololens/hololens-new-edge.md)<sup>1</sup>  | The new, Chromium-based Microsoft Edge is now available for HoloLens 2. | End User | 
+[WebXR and 360 Viewer](https://docs.microsoft.com/hololens/hololens-release-notes.md#webxr-and-360-viewer) | Try immersive web experiences and 360 video playback. | End User | 
+[New Settings App](https://docs.microsoft.com/hololens/hololens-new-settings.md) | The legacy Settings app is being replaced by an updated version with new features and settings. | End User |
+[Display color calibration](https://docs.microsoft.com/hololens/hololens-release-notes.md#display-color-calibration) | Select an alternative color profile for your HoloLens 2 display. | End User |
+[Default app picker](https://docs.microsoft.com/hololens/hololens-release-notes.md#default-app-picker) | Choose which app should launch for each file or link type. | End User |
+[Per app volume control](https://docs.microsoft.com/hololens/hololens-release-notes.md#per-app-volume-control) | Control app level volume independently from system volume. | End User |
+[Office web app](https://docs.microsoft.com/hololens/hololens-release-notes.md#office-web-app) | A shortcut to the Office web app is now listed in "All apps". | End User |
+[Swipe to type](https://docs.microsoft.com/hololens/hololens-release-notes.md#swipe-to-type) | Use the tip of your finger to "swipe" words on the holographic keyboard. | End User |
+[Power menu from Start](https://docs.microsoft.com/hololens/hololens-release-notes.md#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device. | End User |
+[Multiple users listed on Sign in screen](https://docs.microsoft.com/hololens/hololens-release-notes.md#multiple-users-listed-on-sign-in-screen) | Display multiple user accounts on the Sign in screen. | End User |
+[USB-C External Microphone Support](https://docs.microsoft.com/hololens/hololens-release-notes.md#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist. | End User |
+[Visitor Auto-logon for Kiosks](https://docs.microsoft.com/hololens/hololens-release-notes.md#visitor-auto-logon-for-kiosks) | Enables the auto-logon on Visitor accounts to be used for Kiosk modes. | IT Admin |
+[New AUMIDs for new apps in Kiosk mode](https://docs.microsoft.com/hololens/hololens-release-notes.md#use-the-new-settings-and-edge-apps-in-kiosk-modes)<sup>1</sup>  | AUMIDs for new Settings and Edge apps. | IT Admin |
+[Improved Kiosk mode failure handing](https://docs.microsoft.com/hololens/hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | IT Admin |
+[New SettingsURIs for Page Settings Visibility](https://docs.microsoft.com/hololens/hololens-release-notes.md#new-settingsuris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy. | IT Admin |
+[Configure Fallback Diagnostics](https://docs.microsoft.com/hololens/hololens-release-notes.md#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App. | IT Admin |
+[Share things with nearby devices](https://docs.microsoft.com/hololens/hololens-release-notes.md#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC. | IT Admin |
+[New OS Update troubleshooter](https://docs.microsoft.com/hololens/hololens-release-notes.md#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates. | IT Admin |
+[Delivery Optimization Preview](https://docs.microsoft.com/hololens/hololens-release-notes.md#delivery-optimization-preview) | Reduce bandwidth consumption for downloads from multiple HoloLens devices. | IT Admin |
+[Improvements and fixes in the update](https://docs.microsoft.com/hololens/hololens-release-notes.md#improvements-and-fixes-in-the-update) | Additional fixes in the update. | All |
 
 <sup>1</sup> 
 If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This will ensure you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app.
