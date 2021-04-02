@@ -37,7 +37,6 @@ This update contains features for two target audiences; features that can be use
 [Display color calibration](#display-color-calibration) | Select an alternative color profile for your HoloLens 2 display. | End User |
 [Default app picker](#default-app-picker) | Choose which app should launch for each file or link type. | End User |
 [Per app volume control](#per-app-volume-control) | Control app level volume independently from system volume. | End User |
-[Office web app](#office-web-app) | A shortcut to the Office web app is now listed in "All apps". | End User |
 [Swipe to type](#swipe-to-type) | Use the tip of your finger to "swipe" words on the holographic keyboard. | End User |
 [Power menu from Start](#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device. | End User |
 [Multiple users listed on Sign in screen](#multiple-users-listed-on-sign-in-screen) | Display multiple user accounts on the Sign in screen. | End User |
@@ -45,7 +44,7 @@ This update contains features for two target audiences; features that can be use
 [Visitor Auto-logon for Kiosks](#visitor-auto-logon-for-kiosks) | Enables the auto-logon on Visitor accounts to be used for Kiosk modes. | IT Admin |
 [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes)<sup>1</sup>  | AUMIDs for new Settings and Edge apps. | IT Admin |
 [Improved Kiosk mode failure handing](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode looks for Global Assigned Access before empty start menu. | IT Admin |
-[New SettingsURIs for Page Settings Visibility](#new-settingsuris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy. | IT Admin |
+[New SettingsURIs for Page Settings Visibility](#new-settings-uris-for-page-settings-visibility) | 20+ new SettingsURIs for Settings/PageVisibilityList policy. | IT Admin |
 [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) | Setting Fallback Diagnostic Behavior in Settings App. | IT Admin |
 [Share things with nearby devices](#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC. | IT Admin |
 [New OS Update troubleshooter](#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates. | IT Admin |
@@ -63,7 +62,7 @@ Check out related release notes:
 
 ### IT Admin - Update Checklist
 
-This [checklist]((#it-admin---update-checklist)) will help you know the new items that features that are being added in this feature update that may affect your current device management configurations, or new features you might wish to start using.
+This [checklist](#it-admin---update-checklist) will help you know the new items that features that are being added in this feature update that may affect your current device management configurations, or new features you might wish to start using.
 
 ### Updates to Kiosk mode
 
@@ -83,7 +82,7 @@ If AAD group membership of signed-in AAD user is not successfully determined, th
 
 ### Updates to Page Settings Visibility
 
-[**New SettingsURIs for Page Settings Visibility**](#new-settings-uris-for-page-settings-visibility)
+[**New Settings URIs for Page Settings Visibility**](#new-settings-uris-for-page-settings-visibility)
 
 IF you are currently using [Page Settings Visibility](settings-uri-list.md) then you may wish to make adjustments to your existing URIs you have either allowed or blocked.
 
