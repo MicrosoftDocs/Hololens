@@ -2,7 +2,7 @@
 title: Introducing the new Microsoft Edge
 description: Learn about the new Edge app
 author: joyjaz
-ms.author: joyjaz
+ms.author: v-jjaswinski
 keywords: HoloLens, edge, internet, browser
 ms.prod: hololens
 ms.sitesec: library
@@ -21,14 +21,14 @@ With this Insider preview, the new Microsoft Edge is available to HoloLens 2 cus
 
 ![New Microsoft Edge screenshot](images/new-edge-ui.png)
 
-#### Launching the new Microsoft Edge
+## Launching the new Microsoft Edge
 
-There are two versions of Microsoft Edge available to Insiders: the new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) and legacy Microsoft Edge (represented by the white "e" icon). The new Microsoft Edge is pinned to the Start menu and will automatically launch when you activate a web link. If you would like to revert to using legacy Microsoft Edge as your default web browser, see the instructions below for [resetting default apps](#default-app-picker).
+There are two versions of Microsoft Edge available to Insiders: the new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) and legacy Microsoft Edge (represented by the white "e" icon). The new Microsoft Edge is pinned to the Start menu and will automatically launch when you activate a web link. If you would like to revert to using legacy Microsoft Edge as your default web browser, see the instructions below for [resetting default apps](#hololens-new-settings#default-app-picker).
 
 > [!NOTE]
 > When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge. If you continue to use legacy Microsoft Edge after launching the new Microsoft Edge, that new data will not be synced from legacy Microsoft Edge to the new Microsoft Edge.
 
-#### Configuring policy settings for the new Microsoft Edge
+## Configuring policy settings for the new Microsoft Edge
 
 The new Microsoft Edge offers IT admins a much broader set of browser policies on HoloLens 2 than were previously available with legacy Microsoft Edge.
 
@@ -46,7 +46,7 @@ Here are some helpful resources for learning more about managing policy settings
 > - EnterpriseModeSiteList
 > - EnterpriseSiteListServiceURL
 
-#### What to expect from the new Microsoft Edge on HoloLens 2
+## What to expect from the new Microsoft Edge on HoloLens 2
 
 Because the new Microsoft Edge is a native Win32 app with a new UWP adapter layer allowing it to run on UWP-only devices like HoloLens 2, some features may not be immediately available. We'll be supporting new scenarios and features over the coming months, so check this space for up-to-date information.
 
@@ -76,7 +76,7 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 - Web links in the Microsoft Store app may not launch the browser
 - Audio may play from the wrong browser window if you've previously played audio from a different browser window
 
-#### Microsoft Edge Insider channels
+## Microsoft Edge Insider channels
 
 The Microsoft Edge team makes three preview channels available to the Edge Insider community: Beta, Dev, and Canary. Installing a preview channel doesn't uninstall the released version of Microsoft Edge on your HoloLens 2, and you can install more than one at the same time. 
 
@@ -103,7 +103,7 @@ There are a couple methods available for installing Microsoft Edge Insider chann
 > [!NOTE]
 > During this Windows Insider preview for HoloLens 2, the version of Microsoft Edge on your device may be higher than those available in some (or all) of the Microsoft Edge Insider channels. This is to ensure new features and fixes specifically targeting the web browser on HoloLens 2 are getting to our Windows Insiders as quickly as possible. Shortly after the public release of the next Windows update, the Microsoft Edge Insider channel builds will surpass, and stay ahead of, the version of Microsoft Edge on your HoloLens 2.
 
-#### Using WDAC to block new Microsoft Edge
+## Using WDAC to block new Microsoft Edge
 
 For IT Admins looking to update their [WDAC policy](windows-defender-application-control-wdac.md) to block the new Microsoft Edge app, you'll need to add the following to your policy.
 
@@ -114,7 +114,7 @@ For IT Admins looking to update their [WDAC policy](windows-defender-application
 Some environments may have network restrictions to account for as a consideration. To ensure a smooth experience with the new Edge please [enable these Microsoft endpoints.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
 
 Read more about the currently available [endpoints for HoloLens](hololens-offline.md).
-### WebXR and 360 Viewer
+## WebXR and 360 Viewer
 
 *Added in Windows Insider build 20289.1000*
 
@@ -122,7 +122,7 @@ The new Microsoft Edge includes support for WebXR, which is the new standard for
 
 The 360 Viewer extension is built on WebXR and automatically installs alongside the new Microsoft Edge on HoloLens 2. This web extension gives you the ability to immerse yourself in 360-degree videos. YouTube offers the largest selection of 360 videos, so we encourage you to start there.
 
-#### How to use WebXR
+### How to use WebXR
 
 1. Navigate to a website with WebXR support.
 1. Select the **Enter VR** button on the website. The location and visual representation of this button may vary per website, but it may look similar to:
@@ -139,7 +139,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 - [Barista Express](https://constructarca.de/game/barista-express/)
 - [WebXR Paint](https://threejs.org/examples/webxr_vr_paint.html)
 
-#### How to use 360 Viewer
+### How to use 360 Viewer
 
 1. Navigate to a 360-degree video on YouTube.
 1. In the video frame, select the mixed reality headset button:
@@ -149,7 +149,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 1. The first time you try to launch 360 Viewer on a specific domain, the browser will ask for consent to enter an immersive view. Select **Allow**.
 1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.
 
-#### Top WebXR and 360 Viewer known issues
+### Top WebXR and 360 Viewer known issues
 - In WebXR experiences, holograms may shift or tilt when you tilt your head or move around your environment.
 - Depending on the complexity of the WebXR experience, the framerate may drop or stutter.
 - Articulated hand joints are not yet available in WebXR.
@@ -161,6 +161,6 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 - The "next video" button in 360 Viewer does not currently work.
 - You can play 2D videos in an immersive "theater" mode, but the framerate will be less than 30 fps.
 
-#### Providing feedback on WebXR and 360 Viewer
+### Providing feedback on WebXR and 360 Viewer
 
 Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge.

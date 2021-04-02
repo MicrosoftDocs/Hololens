@@ -2,7 +2,7 @@
 title: Introducing the new Settings app
 description: Learn about the new Settings app
 author: joyjaz
-ms.author: joyjaz
+ms.author: v-jjaswinski
 keywords: HoloLens, settings, app picker, volume
 ms.prod: hololens
 ms.sitesec: library
@@ -43,7 +43,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 - The Ethernet page shows a virtual Ethernet device ("UsbNcm") at all times.
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
 
-### Default app picker
+## Default app picker
 
 When you activate a hyperlink or open a file type with more than one installed app, which supports it, you will see a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
 
@@ -51,7 +51,7 @@ When you activate a hyperlink or open a file type with more than one installed a
 
 If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. Scroll to the bottom of the page and select the **Clear** button under "Default apps for file types" and/or "Default apps for link types." Unlike the similar setting on desktop PCs, you can't reset individual file type defaults.
 
-### Per app volume control
+## Per app volume control
 
 Now in this Windows Insider build users can manually adjust the volume level of each app. This allows for users to better focus on the apps that they need to, or better hear when using multiple apps. Such as needing to turn down volume of one app while calling another person for remote assistance in another.
 
