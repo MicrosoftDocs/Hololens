@@ -31,9 +31,9 @@ This update contains features for two target audiences; features that can be use
 
 | Feature Name                                              | Short description                                                                      | Target Audience | 
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
-| [New Microsoft Edge](https://docs.microsoft.com/hololens/hololens-new-edge.md)<sup>1</sup>  | The new, Chromium-based Microsoft Edge is now available for HoloLens 2. | End User | 
+| [New Microsoft Edge](#introducing-the-new-microsoft-edge)<sup>1</sup>  | The new, Chromium-based Microsoft Edge is now available for HoloLens 2. | End User | 
 [WebXR and 360 Viewer](#webxr-and-360-viewer) | Try immersive web experiences and 360 video playback. | End User | 
-[New Settings App](#hololens-new-settings.md) | The legacy Settings app is being replaced by an updated version with new features and settings. | End User |
+[New Settings App](#new-settings-app) | The legacy Settings app is being replaced by an updated version with new features and settings. | End User |
 [Display color calibration](#display-color-calibration) | Select an alternative color profile for your HoloLens 2 display. | End User |
 [Default app picker](#default-app-picker) | Choose which app should launch for each file or link type. | End User |
 [Per app volume control](#per-app-volume-control) | Control app level volume independently from system volume. | End User |
@@ -83,7 +83,7 @@ If AAD group membership of signed-in AAD user is not successfully determined, th
 
 ### Updates to Page Settings Visibility
 
-[**New SettingsURIs for Page Settings Visibility**](hololens-release-notes.md#new-settings-uris-for-page-settings-visibility)
+[**New SettingsURIs for Page Settings Visibility**](#new-settings-uris-for-page-settings-visibility)
 
 IF you are currently using [Page Settings Visibility](settings-uri-list.md) then you may wish to make adjustments to your existing URIs you have either allowed or blocked.
 
@@ -480,7 +480,7 @@ In older builds, if a device had a kiosk configuration, which is a combination o
 
 Starting in this Windows release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
-### New SettingsURIs for Page Settings Visibility
+### New Settings URIs for Page Settings Visibility
 
 In [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) we added the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. PageVisibilityList is a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.
 
