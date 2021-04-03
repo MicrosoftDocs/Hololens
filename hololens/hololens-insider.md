@@ -25,6 +25,16 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 ## Windows Insider Release Notes
 We recently released all of our Windows Insider features. As all these features are now generally available we encourage you to read our [release notes](hololens-release-notes.md) to see all our latest features. Keep checking back here to see when we start flighting new exciting features to try out!
 
+### Known Issues and Work around
+
+#### Pairing HoloLens to PC
+
+Prior to the Windows Insider build 20325.1000, when a user had set Pairing credentials on either [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) or [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) and updated to the Windows Insider builds, their previous set credentials for pairing the HoloLens with the PC for purposes of deploying and debugging apps such as via Visual Studio no longer worked. Windows Insider build 20325.1000 fixes this issue and requires no additional actions to resume using device portal.
+
+Users who have [flashed their device with an Insider build](#ffu-download-and-flash-directions) will now need to reflash their devices (to either 20325.1000+ or a GA build) in-order to Pair their devices with their PC.
+
+Users who have not enrolled in Windows Insiders and will be taking the feature update when it is generally available are not affected.
+
 ## Start receiving Insider builds
 > [!NOTE]
 > If you haven’t updated recently, please reboot your device to update state and get the latest build.
