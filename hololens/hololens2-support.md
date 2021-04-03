@@ -64,7 +64,7 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 ### Help with Technical Support for your Hololens 2
 
 - Get HoloLens 2 programming help from the community at [Microsoft Q&A](/hololens/hololens2-support.md#post-a-question-on-microsoft-qa)
-- Create a support request for HoloLens 2 Programming, HoloLens 2 device including hardware, usage & configuration at [Mixed Reality Technical Support](https://aka.ms/mrsupport) 
+- Create a support request for HoloLens 2 programming, HoloLens 2 device including hardware, usage & configuration at [Mixed Reality Technical Support](https://aka.ms/mrsupport) 
 
 ### Help with Commercial Support for your HoloLens 2
 
