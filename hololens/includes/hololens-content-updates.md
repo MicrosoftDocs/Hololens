@@ -2,6 +2,17 @@
 
 
 
+## Week of March 29, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/29/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 3/31/2021 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |
+| 4/1/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 4/2/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+
+
 ## Week of March 22, 2021
 
 
