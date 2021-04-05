@@ -324,7 +324,7 @@ To enable the **Guest** account, add the following snippet to your kiosk configu
 ```
 #### Enable Visitor Autologon
 
-On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
+On builds [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
 - AAD and Non-ADD configurations both support visitor accounts being auto-logon enabled for Kiosk modes.
 
 ##### Non-AAD configuration
