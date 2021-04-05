@@ -49,10 +49,6 @@ This update contains features for two target audiences; features that can be use
 [Share things with nearby devices](#share-things-with-nearby-devices) | Share files or URLs from a HoloLens to a PC. | All |
 [New OS Update troubleshooter](#new-os-update-troubleshooter) | New troubleshooter in Settings for OS updates. | IT Admin |
 [Delivery Optimization Preview](#delivery-optimization-preview) | Reduce bandwidth consumption for downloads from multiple HoloLens devices. | IT Admin |
-[Improvements and fixes in the update](#improvements-and-fixes-in-the-update) | Additional fixes in the update. | All |
-
-<sup>1</sup> 
-If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This will ensure you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app.
 
 Check out related release notes:
 
@@ -206,8 +202,6 @@ Read more about the currently available [endpoints for HoloLens](hololens-offlin
 
 ### WebXR and 360 Viewer
 
-*Added in Windows Insider build 20289.1000*
-
 The new Microsoft Edge includes support for WebXR, which is the new standard for creating immersive web experiences (replacing WebVR). Many immersive web experiences were designed with VR in mind (they replace your field of view with a virtual environment), but these experiences are also supported by HoloLens 2. The WebXR standard also enables augmented and mixed reality immersive web experiences that use your physical environment. As developers spend more time with WebXR, we anticipate new augmented and mixed reality immersive experiences will arrive for HoloLens 2 customers to try!
 
 The 360 Viewer extension is built on WebXR and automatically installs alongside the new Microsoft Edge on HoloLens 2. This web extension gives you the ability to immerse yourself in 360-degree videos. YouTube offers the largest selection of 360 videos, so we encourage you to start there.
@@ -288,7 +282,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 
 #### Display color calibration
 
-*Added in Windows Insider build 20293.1000*
+
 
 With this new setting, you can select an alternative color profile for your HoloLens 2 display. This may help colors appear more accurate, especially at lower display brightness levels. Display color calibration can be found in the Settings app, on the System > Calibration page.
 
@@ -477,7 +471,7 @@ In [Windows Holographic, version 20H2](hololens-release-notes.md#windows-hologra
 
 If you visit [Page Settings Visibility](settings-uri-list.md), you can find instructions to use this CSP and the list of URIs available in previous releases.
 
-In Windows Insider builds, we are expanding upon the list of list of available Settings URIs, which IT Admins can manage. Some of these URIs are for newly available areas within the new Settings app. If you are using Settings/PageVisibilityList policy, review the following list and adjust your allowed or blocked pages as needed.
+We are expanding upon the list of list of available Settings URIs, which IT Admins can manage. Some of these URIs are for newly available areas within the new Settings app. If you are using Settings/PageVisibilityList policy, review the following list and adjust your allowed or blocked pages as needed.
 
 > [!NOTE]
 > **Deprecated: ms-settings:network-proxy**
@@ -528,7 +522,7 @@ Now in Settings App, a user can configure the behavior of [Fallback Diagnostics]
 
 ### Share things with nearby devices
 
-Share things with near by Windows 10 devices, including both PCs and other HoloLens 2 devices running HoloLens Insider builds 20279.1006+. You can try it out in **Settings** -> **System** -> **Shared Experiences** to share files or URLs from a HoloLens to a PC. For more details read more about how to [Share things with nearby devices in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
+Share things with near by Windows 10 devices, including both PCs and other HoloLens 2 devices. You can try it out in **Settings** -> **System** -> **Shared Experiences** to share files or URLs from a HoloLens to a PC. For more details read more about how to [Share things with nearby devices in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
 
 This feature can be managed via [Connectivity/AllowConnectedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices).
 
