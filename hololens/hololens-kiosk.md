@@ -310,8 +310,7 @@ Follow [the general instructions to create a kiosk configuration XML file for Wi
 
 #### <a id="ppkioskguest"></a>Optional: Add guest access to the kiosk configuration
 
-On builds [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
-- In the [**Configs** section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group named **Visitor** to allow guests to use the kiosk. When the kiosk is configured to support the **Visitor** special group, a "**Guest**" option is added to the sign-in page. The **Guest** account does not require a password, and any data that is associated with the account is deleted when the account signs out.
+In the [**Configs** section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group named **Visitor** to allow guests to use the kiosk. When the kiosk is configured to support the **Visitor** special group, a "**Guest**" option is added to the sign-in page. The **Guest** account does not require a password, and any data that is associated with the account is deleted when the account signs out.
 
 To enable the **Guest** account, add the following snippet to your kiosk configuration XML:
 
