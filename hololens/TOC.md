@@ -12,10 +12,10 @@
 ### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 ### [Supported languages for HoloLens 2](hololens2-language-support.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
+### [Use the new Edge app for HoloLens 2](hololens-new-edge.md)
+### [Use the new Settings app for HoloLens 2](hololens-new-settings.md)
 ### [HoloLens 2 Development Edition FAQ](hololens2-development-edition-faq.md)
 ### [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md)
-
-
 
 ## Get started with HoloLens (1st gen)
 ### [HoloLens (1st gen) hardware](hololens1-hardware.md)
@@ -28,9 +28,10 @@
 ### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
 ### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 
-
 ## Navigate the Windows Holographic interface
 ### [Use the Start menu and mixed reality home](holographic-home.md)
+### [Use the new Edge app for HoloLens 2](hololens-new-edge.md)
+### [Use the new Settings app for HoloLens 2](hololens-new-settings.md)
 ### [Use your voice to operate HoloLens](hololens-cortana.md)
 ### [Find, open, and save files on HoloLens](holographic-data.md)
 ### [Create mixed reality photos and videos](holographic-photos-and-videos.md)

@@ -493,14 +493,15 @@ Application is automatically launched when user signs-in.
 
 
 ### Kiosk mode behavior changes for handling of failures
+Upon encountering failures in applying kiosk mode, the following behavior appears:
 
-- Kiosk mode looks for Global Assigned Access before empty start menu.
-
-Behavior Prior to [Windows Holographic, version ](hololens-release-notes.md#windows-holographic-version-21h1), if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “nothing shown in start” menu.
+- Prior to Windows Holographic, version 20H1 - HoloLens will show all applications in the Start menu.
+- Windows Holographic, version 20H1 - if a device has a kiosk configuration which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership fails, the user will see “nothing shown in start” menu.
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
-Starting with [Windows Holographic, version](hololens-release-notes.md#windows-holographic-version-21h1), the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode. 
+
+- Starting with [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), Kiosk mode looks for Global Assigned Access before showing an empty start menu. The kiosk experience will fallback to a global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
 ### Cache Azure AD Group membership for offline Kiosk
 
