@@ -1,47 +1,43 @@
 # [Microsoft HoloLens](index.yml)
 
 # Overview
+## [About HoloLens 2](hololens2-hardware.md)
+## [Compare HoloLens 2 Options](hololens2-options.md)
+## [About HoloLens (1st gen)](hololens1-hardware.md)
 
-## Get started with HoloLens 2
-### [HoloLens 2 Overview](hololens2-options.md)
-### [HoloLens 2 hardware](hololens2-hardware.md)
+# Getting Started
+## HoloLens 2
 ### [Get your HoloLens 2 ready to use](hololens2-setup.md)
 ### [Set up your HoloLens 2](hololens2-start.md)
-### [HoloLens 2 fit and comfort FAQ](hololens2-fit-comfort-faq.md)
 ### [HoloLens 2 display](hololens2-display.md)
-### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 ### [Supported languages for HoloLens 2](hololens2-language-support.md)
-### [Getting around HoloLens 2](hololens2-basic-usage.md)
-### [HoloLens 2 Development Edition FAQ](hololens2-development-edition-faq.md)
-### [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md)
 
-
-
-## Get started with HoloLens (1st gen)
-### [HoloLens (1st gen) hardware](hololens1-hardware.md)
+## HoloLens (1st gen)
 ### [Get your HoloLens (1st gen) ready to use](hololens1-setup.md)
 ### [Set up your HoloLens (1st gen)](hololens1-start.md)
-### [HoloLens (1st gen) fit and comfort FAQ](hololens1-fit-comfort-faq.md)
 ### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
-### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
-### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
-### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
-### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 
-
+# Concepts
 ## Navigate the Windows Holographic interface
 ### [Use the Start menu and mixed reality home](holographic-home.md)
 ### [Use your voice to operate HoloLens](hololens-cortana.md)
 ### [Find, open, and save files on HoloLens](holographic-data.md)
 ### [Create mixed reality photos and videos](holographic-photos-and-videos.md)
-## Holographic applications
+## Manage applications
 ### [Find, install, and uninstall applications](holographic-store-apps.md)
 ### [Manage custom apps for HoloLens 2](hololens2-holographic-custom-apps.md)
+### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 ## Hologram optics and placement in space
 ### [Improve visual quality and comfort](hololens-calibration.md)
-### [Map physical spaces with HoloLens](hololens-spaces.md) 
+### [Map physical spaces with HoloLens](hololens-spaces.md)
+## [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
+## [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
+## [Develop with Microsoft Mesh (Preview)](/mesh/overview)
+
+# How-to guides
 ## [How to Update HoloLens](hololens-update-hololens.md)
-## [Microsoft Mesh (Preview)](/mesh/overview)
+## [Getting around HoloLens 2](hololens2-basic-usage.md)
+## [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 
 # Prepare
 ## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
@@ -118,19 +114,28 @@
 
 # Maintain
 ## [Manage HoloLens updates](hololens-updates.md)
-## Fix HoloLens issues
-### [Troubleshooting](hololens-troubleshooting.md)
-### [Restart, reset, or recover HoloLens 2](hololens-recovery.md)
-### [Restart, reset, or recover HoloLens (1st gen) ](hololens1-recovery.md)
-### [Frequently asked questions](hololens-faq.md)
-### [Known issues for HoloLens](hololens-known-issues.md)
-### [Collect and use diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
-### [Get technical support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
-# HoloLens release notes
-## [HoloLens 2 release notes](hololens-release-notes.md)
-## [Insider preview for Microsoft HoloLens](hololens-insider.md)
-## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
+# Resources
+## HoloLens release notes
+### [HoloLens 2 release notes](hololens-release-notes.md)
+### [Insider preview for Microsoft HoloLens](hololens-insider.md)
+### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
+## Troubleshooting
+### [Get technical support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
+### [HoloLens 2 display](hololens2-display.md)
+### FAQ
+#### [HoloLens 2 fit and comfort FAQ](hololens2-fit-comfort-faq.md)
+#### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
+#### [HoloLens 2 Development Edition FAQ](hololens2-development-edition-faq.md)
+#### [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md)
+#### [HoloLens (1st gen) fit and comfort FAQ](hololens1-fit-comfort-faq.md)
+### Fix HoloLens issues
+#### [Troubleshooting](hololens-troubleshooting.md)
+#### [Restart, reset, or recover HoloLens 2](hololens-recovery.md)
+#### [Restart, reset, or recover HoloLens (1st gen) ](hololens1-recovery.md)
+#### [Frequently asked questions](hololens-faq.md)
+#### [Known issues for HoloLens](hololens-known-issues.md)
+#### [Collect and use diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
 
 # Give us feedback
 ## [Give us feedback via Feedback Hub](hololens-feedback.md)
