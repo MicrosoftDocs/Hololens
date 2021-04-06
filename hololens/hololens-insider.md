@@ -40,6 +40,7 @@ Users who have not enrolled in Windows Insiders and will be taking the feature u
 > -	You can also choose the restart button in Settings/Windows Insider Program.
 >
 > We had a bug on the back-end that you may have encountered and this will get you back on track.
+
 On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
 Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
 ![Windows Insider Channels explanation](images/WindowsInsiderChannels.png)
