@@ -69,7 +69,7 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 ### Help with Commercial Support for your HoloLens 2
 
 - [Purchase HoloLens 2](https://www.microsoft.com/hololens/buy) use this option to learn more about HoloLens 2 pricing and options
-- Speak with our [commercial store support](/hololens/hololens2-support.md#commercial-store-support-numbers) colleagues to help answer your queries 
+- Also, see below list of business desk numbers to speak with our Commercial Store Support colleagues if you need help via phone support
 
 ### Commercial store support numbers
 >[!Note]
