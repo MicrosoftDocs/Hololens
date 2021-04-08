@@ -75,6 +75,9 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 >[!Note]
 >Use one of the commercial support business phone numbers below to help complete your purchase. 
 
+>[!Note]
+>If you are calling for support from a market that is not listed below, direct your call at our US business desk number.
+
 | Markets | Business Desk Number | Hours of Operation |
 |-----------------|-------------------|-----------------------|
 | United Kingdom | +44 800 026 0061 | Mon to Fri, 09AM to 6PM |
@@ -99,9 +102,6 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 | Australia |	1800-217-709 |	Mon to Fri, 8AM TO 8PM |
 | Singapore |	1800 622-1816 |	Mon to Fri, 8:30AM to 5:30PM |
 | New Zealand |	0800 471 640 |	Mon to Fri, 8AM TO 6PM |
-
->[!Note]
->If you are calling for support from a market that is not listed above, direct your call at our US business desk number.
 
 ## Azure mixed reality services support
 
