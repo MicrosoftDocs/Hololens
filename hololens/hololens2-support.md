@@ -3,7 +3,7 @@ title: "Mixed Reality Support Options"
 ms.author: rajhawar
 author: raunakjhawar
 ms.reviewer: asergaz 
-description: HoloLens2 support options for small to large enterprise customers
+description: Mixed Reality support options for small to large enterprise customers
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021 
@@ -69,10 +69,9 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 ### Help with Commercial Support for your HoloLens 2
 
 - [Purchase HoloLens 2](https://www.microsoft.com/hololens/buy) use this option to learn more about HoloLens 2 pricing and options
-- [Microsoft Store - Office Support](https://support.microsoft.com/office/microsoft-store-109d8aed-d32f-4d6f-9c54-ff80871e8637) this option will take you to our self-help portal of Microsoft store
-- [Store & Purchase Inquiry Support](https://support.microsoft.com/account-billing/contact-microsoft-store-support-4f615f2a-6bbd-fd69-6695-ae213d63eef0) use this option to speak with our Microsoft Store Support colleagues
+- Speak with our [commercial store support](/hololens/hololens2-support.md#commercial-store-support-numbers) colleagues to help answer your queries 
 
-### Commercial support numbers across all regions
+### Commercial store support numbers
 >[!Note]
 >Use one of the commercial support business phone numbers below to help complete your purchase. 
 
@@ -100,6 +99,9 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 | Australia |	1800-217-709 |	Mon to Fri, 8AM TO 8PM |
 | Singapore |	1800 622-1816 |	Mon to Fri, 8:30AM to 5:30PM |
 | New Zealand |	0800 471 640 |	Mon to Fri, 8AM TO 6PM |
+
+>[!Note]
+>If you are calling for support from a market that is not listed above, direct your call at our US business desk number.
 
 ## Azure mixed reality services support
 
