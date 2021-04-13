@@ -191,7 +191,9 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 
 ## HoloLens Settings lists devices as available, but the devices don't work
 
-HoloLens doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
+HoloLens (1st gen) doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
+
+HoloLens 2 supports the Bluetooth A2DP audio profile for stereo playback. The Bluetooth Hands Free profile which enables microphone capture from a Bluetooth peripheral is not supported on HoloLens 2.
 
 If you're having trouble using a Bluetooth device, make sure that it's a supported device. Supported devices include the following:
 

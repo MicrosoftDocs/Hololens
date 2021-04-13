@@ -2,6 +2,16 @@
 
 
 
+## Week of April 05, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/5/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
+| 4/8/2021 | [Frequently asked questions about HoloLens devices and holograms](/hololens/hololens-faq) | modified |
+| 4/8/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
+
+
 ## Week of March 29, 2021
 
 

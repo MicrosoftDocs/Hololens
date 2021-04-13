@@ -87,7 +87,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 | Storage | 64-GB UFS 2.1 |
 | WiFi | 802.11ac 2x2 |
 | Bluetooth | 5.0 |
-| USB | USB Type-C |
+| USB | USB Type-C DRP |
 
 ### Power
 
