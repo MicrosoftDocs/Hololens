@@ -103,7 +103,8 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 | Singapore |	1800 622-1816 |	Mon to Fri, 8:30AM to 5:30PM |
 | New Zealand |	0800 471 640 |	Mon to Fri, 8AM TO 6PM |
 
-[!IMPORTANT]If you require a full VAT invoice you should get in touch with the Commercial Support Store team directly using one of the number's above and not purchase a device online. All purchases made online will only receive a simplified VAT invoice which cannot be edited later.
+>[!IMPORTANT]
+>If you require a full VAT invoice you should get in touch with the Commercial Support Store team directly using one of the number's above and not purchase a device online. All purchases made online will only receive a simplified VAT invoice which cannot be edited later.
 
 ## Azure mixed reality services support
 
