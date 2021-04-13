@@ -21,8 +21,8 @@ Here you will find the support options for the following options ensuring you ge
  
 ## Create a support request
 
-- HoloLens 2 Device Support: Get help with purchasing here or your [HoloLens 2 device](/hololens/hololens2-support.md#hololens-2-support)
-- Azure mixed reality service support: Get help on [Azure Remote Rendering, Azure Spatial anchors or Azure Object Anchor](/hololens/hololens2-support.md#azure-mixed-reality-services-support)
+- HoloLens 2 Device Support: Get help with purchasing or troubleshooting your [HoloLens 2](#hololens-2-support)
+- Azure mixed reality service support: Get help on [Azure Remote Rendering, Azure Spatial anchors or Azure Object Anchor](#azure-mixed-reality-services-support)
 
 ## Community help options
 
@@ -32,11 +32,11 @@ Here you will find the support options for the following options ensuring you ge
 </div><br/>
 For quick and reliable answers on your Azure Mixed Reality and HoloLens 2 programming questions from Microsoft Engineers, Most Valuable Professionals (MVPs), or our expert community, engage with us on Microsoft Q&A, Microsoft's preferred destination for community support.
 
-If you can't find an answer to your problem using search, submit a new question to Microsoft Q&A. Use one of the following tags when you ask your question:
+If you can't find an answer to your problem using search, submit a new question to Microsoft Q&A. Use of the following tags when you ask your question:
 - [Azure Spatial Anchors](https://docs.microsoft.com/answers/topics/azure-spatial-anchors.html)
 - [Azure Remote Rendering](https://docs.microsoft.com/answers/topics/azure-remote-rendering.html)
 - [Azure Object Anchors](https://docs.microsoft.com/answers/topics/azure-object-anchors.html)
-- [HoloLens 2 Programming](https://docs.microsoft.com/answers/topics/hololens-development.html)
+- [HoloLens Programming](https://docs.microsoft.com/answers/topics/hololens-development.html)
 - [Windows Products](https://docs.microsoft.com/answers/products/windows)
 
 
@@ -63,15 +63,15 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 
 ### Help with Technical Support for your Hololens 2
 
-- Get HoloLens 2 programming help from the community at [Microsoft Q&A](/hololens/hololens2-support.md#post-a-question-on-microsoft-qa)
+- Get HoloLens 2 programming help from the community at [Microsoft Q&A](#post-a-question-on-microsoft-qa)
 - Create a support request for HoloLens 2 programming, HoloLens 2 device including hardware, usage & configuration at [Mixed Reality Technical Support](https://aka.ms/mrsupport) 
 
-### Help with Commercial Support for your HoloLens 2
+### Help with Commercial Store Support for your HoloLens 2
 
 - [Purchase HoloLens 2](https://www.microsoft.com/hololens/buy) use this option to learn more about HoloLens 2 pricing and options
 - Also, see below list of business desk numbers to speak with our Commercial Store Support colleagues if you need help via phone support
 
-### Commercial store support numbers
+### Commercial Store Support numbers
 >[!Note]
 >Use one of the commercial support business phone numbers below to help complete your purchase. 
 
@@ -102,6 +102,8 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 | Australia |	1800-217-709 |	Mon to Fri, 8AM TO 8PM |
 | Singapore |	1800 622-1816 |	Mon to Fri, 8:30AM to 5:30PM |
 | New Zealand |	0800 471 640 |	Mon to Fri, 8AM TO 6PM |
+
+[!IMPORTANT]If you require a full VAT invoice you should get in touch with the Commercial Support Store team directly using one of the number's above and not purchase a device online. All purchases made online will only receive a simplified VAT invoice which cannot be edited later.
 
 ## Azure mixed reality services support
 
@@ -138,7 +140,7 @@ On the bottom of each content article, there is an opportunity to open a GitHub 
 
 To provide feedback, share an idea or suggestions for Microsoft mixed reality services, or vote on the ideas that others have submitted, visit: 
 
-- [HoloLens Product Feedback](https://docs.microsoft.com/hololens/hololens-feedback).
+- [HoloLens 2 Product Feedback](https://docs.microsoft.com/hololens/hololens-feedback).
 - [Microsoft Mesh App Product Feedback](https://docs.microsoft.com/hololens/hololens-feedback).
 - [Azure Remote Rendering Feedback](https://feedback.azure.com/forums/928696-azure-remote-rendering).
 - [Azure Spatial Anchors Feedback](https://feedback.azure.com/forums/919252-azure-spatial-anchors).
