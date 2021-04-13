@@ -5,7 +5,7 @@
 ## [Compare HoloLens 2 Options](hololens2-options.md)
 ## [About HoloLens (1st gen)](hololens1-hardware.md)
 
-# Getting Started
+# Get started
 ## HoloLens 2
 ### [Basic usage overview](hololens2-setup.md)
 ### [Set up your HoloLens 2](hololens2-start.md)
@@ -41,21 +41,23 @@
 # Prepare
 ## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ## Common Deployment Scenarios
-### [Infrastructure Deployment Scenarios](common-scenarios.md)
-### Cloud connected HoloLens 2 deployment with Remote Assist
-#### [Cloud connected - Deployment Overview](hololens2-cloud-connected-overview.md)
-#### [Cloud connected - Prepare](hololens2-cloud-connected-prepare.md)
-#### [Cloud connected - Configure](hololens2-cloud-connected-configure.md)
-#### [Cloud connected - Deploy](hololens2-cloud-connected-deploy.md)
-#### [Cloud connected - Maintain](hololens2-cloud-connected-maintain.md)
-### [Deploying HoloLens 2 to External Clients with Remote Assist](hololens2-deployment-guide.md)
-### Corporate connected HoloLens 2 deployment with Dynamic 365 Guides
-#### [Corporate connected - Deployment Overview](hololens2-corp-connected-overview.md)
-#### [Corporate connected - Prepare](hololens2-corp-connected-prepare.md)
-#### [Corporate connected - Configure](hololens2-corp-connected-configure.md)
-#### [Corporate connected - Deploy](hololens2-corp-connected-deploy.md)
-#### [Corporate connected - Maintain](hololens2-corp-connected-maintain.md)
-### [Offline Secure](hololens-common-scenarios-offline-secure.md)
+### [Overview](common-scenarios.md)
+### Cloud connected environment deployment guide
+#### [Overview](hololens2-cloud-connected-overview.md)
+#### [Prepare](hololens2-cloud-connected-prepare.md)
+#### [Configure](hololens2-cloud-connected-configure.md)
+#### [Deploy](hololens2-cloud-connected-deploy.md)
+#### [Maintain](hololens2-cloud-connected-maintain.md)
+
+### [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
+### Corporate network deployment guide
+#### [Overview](hololens2-corp-connected-overview.md)
+#### [Prepare](hololens2-corp-connected-prepare.md)
+#### [Configure](hololens2-corp-connected-configure.md)
+#### [Deploy](hololens2-corp-connected-deploy.md)
+#### [Maintain](hololens2-corp-connected-maintain.md)
+
+### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
 ## Security
 ### [Security overview](security-overview.md)
 ### [Architecture](security-architecture.md)
