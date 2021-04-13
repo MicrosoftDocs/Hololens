@@ -104,7 +104,7 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 | New Zealand |	0800 471 640 |	Mon to Fri, 8AM TO 6PM |
 
 >[!IMPORTANT]
->If you require a full VAT invoice you should get in touch with the Commercial Support Store team directly using one of the number's above and not purchase a device online. All purchases made online will only receive a simplified VAT invoice which cannot be edited later.
+>If you require a full VAT invoice you should get in touch with the Commercial Support Store team directly and not purchase a device online. All purchases made online will only receive a simplified VAT invoice which cannot be edited later.
 
 ## Azure mixed reality services support
 
