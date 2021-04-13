@@ -10,6 +10,10 @@
 ### [Basic usage overview](hololens2-setup.md)
 ### [Set up your HoloLens 2](hololens2-start.md)
 ### [Supported languages](hololens2-language-support.md)
+### [Device-only edition](hololens2-options-device-only.md)
+### [Remote Assist edition](hololens2-options-remote-assist.md)
+### [Industrial edition](hololens2-options-industrial-edition.md)
+### [Development edition](hololens2-options-dev-edition.md)
 
 ## HoloLens (1st gen)
 ### [Basic usage overview](hololens1-setup.md)
