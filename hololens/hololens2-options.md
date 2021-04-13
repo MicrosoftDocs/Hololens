@@ -71,6 +71,7 @@ Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/holol
 ### **Trimble XR10 with HoloLens 2**
 
 #### Learn about Trimble XR10
+
 Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program and integrates the latest spatial computing technology into a certified solution for use with a hard hat for worker safety.
 
 ![Trimble SKU](./images/trimble-ed.png)
