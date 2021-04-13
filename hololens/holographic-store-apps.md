@@ -80,18 +80,32 @@ To update an app you installed from the Microsoft Store, you can update the app 
    > ![Microsoft Store app screenshot of getting updates..](images/store-update-2.png.jpg)
 
 > [!NOTE]
-> If the apps on your device were distrubted by your organization they can be updated through the same commercial app management methods. If this applies to your situation, read more via our [overview of commercial app deployment.](app-deploy-overview.md)
+> If the apps on your device were distributed by your organization they can be updated through the same commercial app management methods. If this applies to your situation, read more via our [overview of commercial app deployment.](app-deploy-overview.md)
 >
 > If you would like to update a custom app that has been sideloaded or deployed, you will need to use the same method with the updated version of your app. To learn more about installing and running custom apps, read [custom holographic applications](holographic-custom-apps.md).
 
 ## Uninstall apps
 
-There are two ways to uninstall applications.  You can uninstall applications through the Microsoft Store or Start menu.
+There are three ways to uninstall applications. You can uninstall applications through the Microsoft Store, Start menu or from Settings. 
+>[!WARNING]
+You can not uninstall a system app or the Microsoft Store itself.
+
+> [!IMPORTANT]
+> If your HoloLens 2 has multiple users, you must be logged in as the user who installed the app to uninstall it. 
+
+### Uninstall from the Microsoft Store
+
+Open the Microsoft Store from the **Start** menu, and then browse for the application you want to uninstall.  On the Store page, each installed application has an **Uninstall** button.
 
 ### Uninstall from the Start menu
 
 On the **Start** menu or in the **All apps** list, browse to the app. Select and hold until the menu appears, then select **Uninstall**.
 
-### Uninstall from the Microsoft Store
+### Uninstall from Settings
+On the **Start** menu, select **Settings -> Apps.** Find the app from the list, select it and then click **Uninstall**.
 
-Open the Microsoft Store from the **Start** menu, and then browse for the application you want to uninstall.  On the Store page, each installed application has an **Uninstall** button.
+If you are unable to uninstall an app, please file [feedback](https://docs.microsoft.com/hololens/hololens-feedback) using the Feedback Hub.
+
+
+
+
