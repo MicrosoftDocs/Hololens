@@ -62,47 +62,33 @@ This checklist will help you know the new items that features that are being add
 
 #### Updates to Kiosk mode
 
-[**New AUMIDs for new apps in Kiosk mode**](#use-the-new-settings-and-edge-apps-in-kiosk-modes)
+✔️ [**New AUMIDs for new apps in Kiosk mode**](#use-the-new-settings-and-edge-apps-in-kiosk-modes) : If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This will ensure you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app. These changes can be done now, and deployed to all devices and allow for a smoother transition on update.
 
-If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This will ensure you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app.
+✔️ [**Visitor Auto-logon for Kiosks**](#visitor-auto-logon-for-kiosks) : Visitors can now be automatically logged into a Kiosk. This behavior is on by default but can be managed and disabled.
 
-These changes can be done now, and deployed to all devices and allow for a smoother transition on update.
-
-[**Visitor Auto-logon for Kiosks**](#visitor-auto-logon-for-kiosks)
-
-Visitors can now be automatically logged into a Kiosk. This behavior is on by default but can be managed and disabled.
-
-[**Improved Kiosk mode failure handing**](#kiosk-mode-behavior-changes-for-handling-of-failures)
-
-If AAD group membership of signed-in AAD user is not successfully determined, then global kiosk configuration is used for start menu (if present) otherwise user is presented with empty start menu. While the empty start menu is not a configuration you can directly set, this new handling may be something to inform your support department of if you are using Kiosks, as this may apply to your configurations or you may want to make new adjustments to your assigned access configurations.
+✔️ [**Improved Kiosk mode failure handing**](#kiosk-mode-behavior-changes-for-handling-of-failures) : If AAD group membership of signed-in AAD user is not successfully determined, then global kiosk configuration is used for start menu (if present) otherwise user is presented with empty start menu. While the empty start menu is not a configuration you can directly set, this new handling may be something to inform your support department of if you are using Kiosks, as this may apply to your configurations or you may want to make new adjustments to your assigned access configurations.
 
 #### Updates to Page Settings Visibility
 
-[**New SettingsURIs for Page Settings Visibility**](hololens-insider.md#new-settingsuris-for-page-settings-visibility)
-
-IF you are currently using [Page Settings Visibility](settings-uri-list.md) then you may wish to make adjustments to your existing URIs you have either allowed or blocked.
+✔️ [**New SettingsURIs for Page Settings Visibility**](hololens-insider.md#new-settingsuris-for-page-settings-visibility) : IF you are currently using [Page Settings Visibility](settings-uri-list.md) then you may wish to make adjustments to your existing URIs you have either allowed or blocked.
 
 #### Updates for your WDAC policy
 
-If you were previously blocking Microsoft Edge via WDAC, you'll want to update your WDAC policy. Please [review the following](#using-wdac-to-block-new-microsoft-edge) and use the sample code provided.
+✔️ If you were previously blocking Microsoft Edge via WDAC, you'll want to update your WDAC policy. Please [review the following](#using-wdac-to-block-new-microsoft-edge) and use the sample code provided.
 
 #### Enable new endpoints for Edge
 
-If you have an infrastructure that involves configuring network endpoints such as proxy or firewall, please [enable these new endpoints for the new Microsoft Edge app.](#managing-endpoints-for-the-new-microsoft-edge)
+✔️ If you have an infrastructure that involves configuring network endpoints such as proxy or firewall, please [enable these new endpoints for the new Microsoft Edge app.](#managing-endpoints-for-the-new-microsoft-edge)
 
 #### Newly configurable items
 
-- [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app)
-  - You may configure if and who may collect Fallback Diagnostics.
-- [Share things with nearby devices](#share-things-with-nearby-devices)
-  - You may disable the new nearby sharing feature.
-- [Configuring policy settings for the new Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge)
-  - Review the newly configurations available for Microsoft Edge.
+✔️ [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app) : You may configure if and who may collect Fallback Diagnostics.
+✔️ [Share things with nearby devices](#share-things-with-nearby-devices) : You may disable the new nearby sharing feature.
+✔️ [Configuring policy settings for the new Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge) : Review the newly configurations available for Microsoft Edge.
 
 #### New diagnostic tool
 
-- [New OS Update troubleshooter](#new-os-update-troubleshooter)
-  - Collect logs related to OS Updates
+✔️ [New OS Update troubleshooter](#new-os-update-troubleshooter) : Collect logs related to OS Updates
 
 ### Introducing the new Microsoft Edge
 
