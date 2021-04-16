@@ -55,7 +55,9 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 - [Mixed Reality Toolkit (MRTK)](https://stackoverflow.com/questions/tagged/MRTK)
 
 #### Other Communities: 
-- [Explore Mixed Reality online community options](https://docs.microsoft.com/windows/mixed-reality/discover/community)
+- [HoloDevelopers Slack](https://holodevelopersslack.azurewebsites.net/)
+- [Windows Mixed Reality Headsets Reddit](https://www.reddit.com/r/WindowsMR/)
+- [HoloLens Reddit](https://www.reddit.com/r/HoloLens/)
 
 ## HoloLens 2 Support
 
