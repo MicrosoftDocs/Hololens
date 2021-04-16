@@ -20,7 +20,6 @@ Here you will find the support options for the following options ensuring you ge
 - [Get help with purchasing a HoloLens 2 Device](#help-with-commercial-store-support-for-your-hololens-2)
 - [Get help with programming a HoloLens 2 Device or an Immersive Headset](#help-with-technical-support-for-your-hololens-2) 
 - [Get help with Azure mixed reality services](#azure-mixed-reality-services-support)
-- [Provide a product feedback](#provide-product-feedback)
 
 ## Community help options
 
@@ -119,11 +118,11 @@ To open a technical support ticket on the Azure Portal for Azure Spatial Anchors
 
 ![Azure portal help and support](../hololens/images/azure-help-support.png)
 
-1. With the Help + support page open, select **+ New support request**.
+2. With the Help + support page open, select **+ New support request**.
 
 ![Azure portal new support request](../hololens/images/azure-help-support2.png)
 
-1. When completing the support ticket fields:
+3. When completing the support ticket fields:
 
 - Issue type: Technical
 - Service: Azure Spatial Anchors, Azure Remote Rendering or Azure Object Anchors
