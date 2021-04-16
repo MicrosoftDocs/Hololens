@@ -18,7 +18,7 @@ Here you will find the support options for the following options ensuring you ge
 - [Community help options for developers](#community-help-options)
 - [Get help with using and configuring your HoloLens 2 Device](#help-with-technical-support-for-your-hololens-2)
 - [Get help with purchasing a HoloLens 2 Device](#help-with-commercial-store-support-for-your-hololens-2)
-- [Get help with programming a HoloLens 2 Device or an Immersive Headset](https://aka.ms/mrsupport) 
+- [Get help with programming a HoloLens 2 Device or an Immersive Headset](#help-with-technical-support-for-your-hololens-2) 
 - [Get help with Azure mixed reality services](#azure-mixed-reality-services-support)
 - [Provide a product feedback](#provide-product-feedback)
 
@@ -65,7 +65,9 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 
 - Get HoloLens 2 programming help from the community at [Microsoft Q&A](#post-a-question-on-microsoft-qa)
 - Learn more about Help + support and service health of your [Azure mixed reality services](#azure-mixed-reality-services-support)
-- Create a support request for HoloLens 2 or Immersive headset programming, HoloLens 2 device including hardware, usage & configuration at [Mixed Reality Technical Support](https://aka.ms/mrsupport) 
+- Create a support request for HoloLens 2 or Immersive headset programming at [MR support](https://aka.ms/mrsupport) 
+- Create a support request for HoloLens 2 device issues including hardware, usage & configuration at [HoloLens 2 device support](https://aka.ms/hlsupport) 
+
 
 ### Help with Commercial Store Support for your HoloLens 2
 
