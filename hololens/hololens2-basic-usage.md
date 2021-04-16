@@ -190,3 +190,6 @@ Now you can configure your HoloLens 2 to meet your specific needs.  Other things
 - [Connecting bluetooth devices like a mouse and keyboard](hololens-connect-devices.md)
 - [Installing apps from the store](holographic-store-apps.md)
 - [Sharing your HoloLens with other people](hololens-multiple-users.md)
+
+> [!TIP]
+> Try the [Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd?rtc=1&activetab=pivot:overviewtab) app.
