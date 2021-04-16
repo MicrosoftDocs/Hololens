@@ -61,15 +61,16 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 
 ## HoloLens 2 Support
 
-### Help with Technical Support for your Hololens 2
+### Help with Technical Support for your HoloLens 2
 
 - Get HoloLens 2 programming help from the community at [Microsoft Q&A](#post-a-question-on-microsoft-qa)
+- Learn more about Help + support and service health of your [Azure mixed reality services](#azure-mixed-reality-services-support)
 - Create a support request for HoloLens 2 or Immersive headset programming, HoloLens 2 device including hardware, usage & configuration at [Mixed Reality Technical Support](https://aka.ms/mrsupport) 
 
 ### Help with Commercial Store Support for your HoloLens 2
 
 - [Purchase HoloLens 2](https://www.microsoft.com/hololens/buy) use this option to learn more about HoloLens 2 pricing and options
-- Also, see below list of business desk numbers to speak with our Commercial Store Support colleagues if you need help via phone support
+- See below list of business desk numbers to speak with our Commercial Store Support colleagues if you need help via phone support
 
 ### Commercial Store Support numbers
 >[!Note]
