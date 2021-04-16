@@ -143,14 +143,14 @@ On the bottom of each content article, there is an opportunity to open a GitHub 
 
 To provide feedback, share an idea or suggestions for Microsoft mixed reality services, or vote on the ideas that others have submitted, visit: 
 
-- [HoloLens 2 Product Feedback](https://docs.microsoft.com/hololens/hololens-feedback).
-- [Microsoft Mesh App Product Feedback](https://docs.microsoft.com/hololens/hololens-feedback).
-- [Azure Remote Rendering Feedback](https://feedback.azure.com/forums/928696-azure-remote-rendering).
-- [Azure Spatial Anchors Feedback](https://feedback.azure.com/forums/919252-azure-spatial-anchors).
+- [HoloLens 2 Product Feedback](https://docs.microsoft.com/hololens/hololens-feedback)
+- [Microsoft Mesh App Product Feedback](https://docs.microsoft.com/hololens/hololens-feedback)
+- [Azure Remote Rendering Feedback](https://feedback.azure.com/forums/928696-azure-remote-rendering)
+- [Azure Spatial Anchors Feedback](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
 
 ### FAQs
 
-- HoloLens 2, see the [HoloLens Troubleshooting](/hololens/hololens-troubleshooting.md) page.
-- Windows Mixed Reality, see the [FAQ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) page.
-- Azure Spatial Anchors, see the [FAQ](https://docs.microsoft.com/azure/spatial-anchors/spatial-anchor-faq) page.
-- Azure Object Anchors, see the [FAQ](https://docs.microsoft.com/azure/object-anchors/faq) page.
+- HoloLens 2, see the [HoloLens Troubleshooting](/hololens/hololens-troubleshooting.md) page
+- Windows Mixed Reality, see the [FAQ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) page
+- Azure Spatial Anchors, see the [FAQ](https://docs.microsoft.com/azure/spatial-anchors/spatial-anchor-faq) page
+- Azure Object Anchors, see the [FAQ](https://docs.microsoft.com/azure/object-anchors/faq) page
