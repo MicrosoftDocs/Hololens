@@ -11,6 +11,8 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: 
 manager: laurawi
+appliesto:
+- HoloLens (1st gen)
 ---
 
 # HoloLens (1st Gen) BitLocker Encryption

@@ -11,12 +11,14 @@ ms.localizationpriority: high
 ms.date: 10/13/2020
 ms.reviewer: jarrettr
 manager: jarrettr
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
 ms.custom: 
 - CI 116337
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-
 ---
 
 # Manage HoloLens updates
