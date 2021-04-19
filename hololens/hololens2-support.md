@@ -29,7 +29,7 @@ Here you will find the support options for the following options ensuring you ge
 </div><br/>
 For quick and reliable answers on your Azure Mixed Reality and HoloLens 2 programming questions from Microsoft Engineers, Most Valuable Professionals (MVPs), or our expert community, engage with us on Microsoft Q&A, Microsoft's preferred destination for community support.
 
-If you can't find an answer to your problem using search, submit a new question to Microsoft Q&A. Use of the following tags when you ask your question:
+If you can't find an answer to your problem using search, submit a new question to Microsoft Q&A. Use one of the following tags when you ask your question:
 - [Azure Spatial Anchors](https://docs.microsoft.com/answers/topics/azure-spatial-anchors.html)
 - [Azure Remote Rendering](https://docs.microsoft.com/answers/topics/azure-remote-rendering.html)
 - [Azure Object Anchors](https://docs.microsoft.com/answers/topics/azure-object-anchors.html)
@@ -115,18 +115,18 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 To open a technical support ticket on the Azure Portal for Azure Spatial Anchors, Azure Object Anchors or Azure Remote Rendering:
 
 1. With the [Azure portal](https://azure.microsoft.com/account/) open, select the help icon from the top menu bar, then select the **Help + support** button.
-
+[!div class="mx-imgBorder"]
 ![Azure portal help and support](../hololens/images/azure-help-support.png)
 
 2. With the Help + support page open, select **+ New support request**.
-
+[!div class="mx-imgBorder"]
 ![Azure portal new support request](../hololens/images/azure-help-support2.png)
 
 3. When completing the support ticket fields:
 
 - Issue type: Technical
 - Service: Azure Spatial Anchors, Azure Remote Rendering or Azure Object Anchors
-
+[!div class="mx-imgBorder"]
 ![Azure portal support ticket fields](../hololens/images/azure-help-support3.png)
 
 1. Click **Next: Solutions** at the bottom of the page.
@@ -140,6 +140,9 @@ To open a technical support ticket on the Azure Portal for Azure Spatial Anchors
 On the bottom of each content article, there is an opportunity to open a GitHub issue and provide feedback on content in any mixed reality documentation repository. 
 
 ### Provide product feedback
+
+>[!Note]
+>Providing feedback is an excellent way to have your voice heard, however feedback is not a way to receive a response. Feedback Hub may be combined with other support options.
 
 To provide feedback, share an idea or suggestions for Microsoft mixed reality services, or vote on the ideas that others have submitted, visit: 
 
