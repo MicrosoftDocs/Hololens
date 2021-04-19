@@ -16,7 +16,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# HoloLens 2 (device only)
+# HoloLens 2 Device-only Edition
 
 HoloLens 2 offers the most comfortable and immersive mixed reality experience available—enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 

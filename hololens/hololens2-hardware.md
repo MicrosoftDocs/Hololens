@@ -14,7 +14,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# HoloLens 2 hardware
+# About HoloLens 2
 
 ![HoloLens 2 side view](images/hololens2-breakdown.png)
 

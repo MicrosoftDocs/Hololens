@@ -16,7 +16,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# HoloLens 2 Overview
+# Compare HoloLens 2 Options
 
 HoloLens is a mixed reality device that is *powered by holograms* and provides apps and solutions that enhance collaboration. With HoloLens 2, experience new heights of productivity and innovation – with purpose – to work smarter.
 
