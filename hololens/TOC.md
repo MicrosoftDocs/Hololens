@@ -119,6 +119,7 @@
 
 # Maintain
 ## [Manage HoloLens updates](hololens-updates.md)
+## [Fix HoloLens issues](https://docs.microsoft.com/hololens/hololens-troubleshooting)
 
 # Resources
 ## Release notes
