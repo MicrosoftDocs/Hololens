@@ -3,21 +3,15 @@
 # Overview
 ## [About HoloLens 2](hololens2-hardware.md)
 ## [Compare HoloLens 2 Options](hololens2-options.md)
-## [About HoloLens (1st gen)](hololens1-hardware.md)
 
 # Get started
-## HoloLens 2
-### [Basic usage overview](hololens2-setup.md)
-### [Set up your HoloLens 2](hololens2-start.md)
-### [Supported languages](hololens2-language-support.md)
-### [Device-only edition](hololens2-options-device-only.md)
-### [Remote Assist edition](hololens2-options-remote-assist.md)
-### [Industrial edition](hololens2-options-industrial-edition.md)
-### [Development edition](hololens2-options-dev-edition.md)
-
-## HoloLens (1st gen)
-### [Basic usage overview](hololens1-setup.md)
-### [Set up your HoloLens (1st gen)](hololens1-start.md)
+## [Basic usage overview](hololens2-setup.md)
+## [Set up your HoloLens 2](hololens2-start.md)
+## [Supported languages](hololens2-language-support.md)
+## [Device-only edition](hololens2-options-device-only.md)
+## [Remote Assist edition](hololens2-options-remote-assist.md)
+## [Industrial edition](hololens2-options-industrial-edition.md)
+## [Development edition](hololens2-options-dev-edition.md)
 
 # Concepts
 ## Navigate the Windows Holographic interface
@@ -32,15 +26,11 @@
 ## Hologram optics and placement in space
 ### [Improve visual quality and comfort](hololens-calibration.md)
 ### [Map physical spaces with HoloLens](hololens-spaces.md)
-## [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
-## [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
 ## [Develop with Microsoft Mesh (Preview)](/mesh/overview)
 
 # How-to guides
 ## [How to Update HoloLens](hololens-update-hololens.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
-## [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
-## [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 
 # Prepare
 ## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
@@ -72,9 +62,6 @@
 ### [Encryption and data protection](security-encryption-data-protection.md)
 ### [Network security](security-network-security.md)
 ### [Security engineering ](security-engineering.md)
-### HoloLens 1st Gen Security 
-#### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
-#### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 ### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
 ## [License requirements](hololens-licenses-requirements.md)
 ## Environment
@@ -132,7 +119,6 @@
 ### [Known issues](hololens-known-issues.md)
 ### [Collect diagnostic information](hololens-diagnostic-logs.md)
 ### [Reset HoloLens 2](hololens-recovery.md)
-### [Reset HoloLens (1st gen) ](hololens1-recovery.md)
 ### FAQ
 #### [General](hololens-faq.md)
 #### [HoloLens 2 display](hololens2-display.md)
@@ -140,7 +126,19 @@
 #### [HoloLens 2 cleaning](hololens2-maintenance.md)
 #### [HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
 #### [HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md)
-#### [HoloLens (1st gen) fit and comfort](hololens1-fit-comfort-faq.md)
+## HoloLens (1st gen)
+### [About HoloLens (1st gen)](hololens1-hardware.md)
+### [Basic usage overview](hololens1-setup.md)
+### [Set up your HoloLens (1st gen)](hololens1-start.md)
+### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
+### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
+### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
+### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
+### [Reset HoloLens (1st gen) ](hololens1-recovery.md)
+### [HoloLens (1st gen) fit and comfort](hololens1-fit-comfort-faq.md)
+### HoloLens 1st Gen Security 
+#### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
+#### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 
 # Give us feedback
 ## [Give us feedback via Feedback Hub](hololens-feedback.md)
