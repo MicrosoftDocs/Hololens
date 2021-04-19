@@ -31,6 +31,20 @@ Check out related release notes:
 - [Dynamics 365 Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 - [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 
+## Windows Holographic, version 20H2 - April 2021 Update
+- Build 19041.1144
+
+Improvements and fixes in the update:
+
+- Fixes an issue around line of business application install status reporting.
+
+## Windows Holographic, version 1903 - April 2021 Update
+- Build 18362.1108
+
+Improvements and fixes in the update:
+
+- Addresses an issue where the Settings app crashes when attempting to change a password for a local account.
+
 ## Windows Holographic, version 20H2 - March 2021 Update
 - Build 19041.1140
 
