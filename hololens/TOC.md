@@ -3,15 +3,16 @@
 # Overview
 ## [About HoloLens 2](hololens2-hardware.md)
 ## [Compare HoloLens 2 Options](hololens2-options.md)
+## [Discover HoloLens 2 Editions]
+### [Device-only edition](hololens2-options-device-only.md)
+### [Remote Assist edition](hololens2-options-remote-assist.md)
+### [Industrial edition](hololens2-options-industrial-edition.md)
+### [Development edition](hololens2-options-dev-edition.md)
 
 # Get started
 ## [Basic usage overview](hololens2-setup.md)
 ## [Set up your HoloLens 2](hololens2-start.md)
 ## [Supported languages](hololens2-language-support.md)
-## [Device-only edition](hololens2-options-device-only.md)
-## [Remote Assist edition](hololens2-options-remote-assist.md)
-## [Industrial edition](hololens2-options-industrial-edition.md)
-## [Development edition](hololens2-options-dev-edition.md)
 
 # Concepts
 ## Navigate the Windows Holographic interface
