@@ -11,7 +11,7 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high
 audience: HoloLens
-manager: yannisle
+manager: sekerawa
 appliesto:
 - HoloLens 2
 ---
@@ -80,14 +80,14 @@ Explore these additional solutions built for HoloLens mixed reality devices.
 |  [Azure Cloud Services for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Learn how to develop a solution using Azure Cloud Services.                                       |
 |  [Start developing for HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)         | Build a mixed reality solution to fit your needs.                                                 |
 
-## Next step
+## Next steps
 
-For IT admins, HoloLens 2 devices are powerful mixed reality devices that allow you to deploy solutions to your organization. In order to efficiently deploy devices to your organization to use the full benefits of the Azure cloud, we suggest reviewing your organization's infrastructure.
-
-> [!div class="nextstepaction"]
-> [Deploy HoloLens 2 in a commercial environment](hololens-requirements.md)
-
-For the end users, see the [Basic Usage overview](hololens2-setup.md).
+For device end users, see the [Basic Usage overview](hololens2-setup.md) to get started.
 
 > [!div class="nextstepaction"]
 > [Basic Usage overview](hololens2-setup.md)
+
+For IT admins, deploying devices to your organization unlocks powerful mixed reality experiences. Get started by reviewing HoloLens 2 deployment requirements and scenarios across a range of IT infrastructure configurations.
+
+> [!div class="nextstepaction"]
+> [Deploy HoloLens 2 in a commercial environment](hololens-requirements.md)
