@@ -62,21 +62,11 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 
 **[HoloLens 2 Industrial Edition](hololens2-options-industrial-edition.md)**: Designed, built, and tested to support clean room environments with standards ranging from ISO Class 6 through ISO Class 8, the HoloLens 2 Industrial Edition is UL Class I, Division 2 certified and is supported with a 2-year warranty and a rapid replacement program.
 
-**[Trimble XR10 with HoloLens 2](hololens2-options.md#trimble-xr10-with-hololens-2)**: Purpose built for workers in dirty, loud, and safety-controlled environments, the Trimble XR10 with HoloLens 2 brings mixed reality right to your work site.
+**[Trimble XR10 with HoloLens 2](hololens2-options-trimble-xr10-edition.md)**: Purpose built for workers in dirty, loud, and safety-controlled environments, the Trimble XR10 with HoloLens 2 brings mixed reality right to your work site.
 
 **[HoloLens 2 Development Edition](hololens2-options-dev-edition.md)**: Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
 
 Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/hololens/buy).
-
-### **Trimble XR10 with HoloLens 2**
-
-#### Learn about Trimble XR10
-
-Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program and integrates the latest spatial computing technology into a certified solution for use with a hard hat for worker safety.
-
-![Trimble SKU](./images/trimble-ed.png)
-
-See more about the [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
 
 ## Deploy HoloLens devices for your Organization
 

@@ -3,7 +3,7 @@
 # Overview
 ## [About HoloLens 2](hololens2-hardware.md)
 ## [Compare HoloLens 2 Options](hololens2-options.md)
-## [Discover HoloLens 2 Editions]
+## Discover HoloLens 2 Editions
 ### [Device-only edition](hololens2-options-device-only.md)
 ### [Remote Assist edition](hololens2-options-remote-assist.md)
 ### [Industrial edition](hololens2-options-industrial-edition.md)

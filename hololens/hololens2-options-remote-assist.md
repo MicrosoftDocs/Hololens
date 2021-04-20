@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 Remote Assist
 description: Learn about HoloLens 2 Remote Assist and what to do after getting one of your own.
-keywords: HoloLens 2 purchasing options, HoloLens options, Developer Edition
+keywords: HoloLens 2 purchasing options, HoloLens options, Remote Assist
 author: bogenera
 ms.author: bogenera
 ms.reviewer: bogenera

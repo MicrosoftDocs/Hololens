@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 Industrial Edition
 description: Learn about HoloLens 2 Industrial Edition and what to do after getting one of your own.
-keywords: HoloLens 2 purchasing options, HoloLens options, Developer Edition
+keywords: HoloLens 2 purchasing options, HoloLens options, Industrial Edition
 author: bogenera
 ms.author: bogenera
 ms.reviewer: bogenera
