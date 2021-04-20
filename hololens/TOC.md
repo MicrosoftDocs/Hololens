@@ -116,7 +116,7 @@
 ### [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 ## Troubleshooting
-### [Get technical support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
+### [Support and help options](hololens2-support.md)
 ### [Troubleshoot common issues](hololens-troubleshooting.md)
 ### [Known issues](hololens-known-issues.md)
 ### [Collect diagnostic information](hololens-diagnostic-logs.md)
