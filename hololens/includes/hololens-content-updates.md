@@ -2,6 +2,17 @@
 
 
 
+## Week of April 12, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/12/2021 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 4/14/2021 | [Find, install, and uninstall applications](/hololens/holographic-store-apps) | modified |
+| 4/14/2021 | [Enroll HoloLens in MDM](/hololens/hololens-enroll-mdm) | modified |
+| 4/16/2021 | [Getting around HoloLens 2](/hololens/hololens2-basic-usage) | modified |
+
+
 ## Week of April 05, 2021
 
 
