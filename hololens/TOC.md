@@ -8,6 +8,8 @@
 ### [Remote Assist edition](hololens2-options-remote-assist.md)
 ### [Industrial edition](hololens2-options-industrial-edition.md)
 ### [Development edition](hololens2-options-dev-edition.md)
+on.md)
+### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
 # Get started
 ## [Basic usage overview](hololens2-setup.md)
@@ -107,7 +109,7 @@
 
 # Maintain
 ## [Manage HoloLens updates](hololens-updates.md)
-## [Fix HoloLens issues](https://docs.microsoft.com/hololens/hololens-troubleshooting)
+## [Fix HoloLens issues](/hololens/hololens-troubleshooting)
 
 # Resources
 ## Release notes

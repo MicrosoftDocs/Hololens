@@ -68,17 +68,6 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 
 Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/hololens/buy).
 
-## Deploy HoloLens devices for your Organization
-
-HoloLens 2 devices are powerful mixed reality devices that allow you to deploy solutions to your organization. In order to efficiently deploy devices to your organization to use the full benefits of the Azure cloud, we suggest reviewing your organization's infrastructure.
-
-[HoloLens 2 enterprise deployment and management](hololens-requirements.md)
-
-We have created several deployment guides that can help you. Take a look at our [Common Infrastructure Deployment Scenarios Overview](common-scenarios.md) and find the deployment that best suits your needs.
-
-- [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist – Overview](hololens2-cloud-connected-overview.md)
-- [Common Scenarios – Offline Secure HoloLens 2](hololens-common-scenarios-offline-secure.md)
-
 ## Explore solutions
 
 Explore these additional solutions built for HoloLens mixed reality devices.
@@ -90,3 +79,15 @@ Explore these additional solutions built for HoloLens mixed reality devices.
 |   [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/)        | Improve training effective needs and learn how employees are performing.                          |
 |  [Azure Cloud Services for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Learn how to develop a solution using Azure Cloud Services.                                       |
 |  [Start developing for HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)         | Build a mixed reality solution to fit your needs.                                                 |
+
+## Next step
+
+For IT admins, HoloLens 2 devices are powerful mixed reality devices that allow you to deploy solutions to your organization. In order to efficiently deploy devices to your organization to use the full benefits of the Azure cloud, we suggest reviewing your organization's infrastructure.
+
+> [!div class="nextstepaction"]
+> [Deploy HoloLens 2 in a commercial environment](hololens-requirements.md)
+
+For the end users, see the [Basic Usage overview](hololens2-setup.md).
+
+> [!div class="nextstepaction"]
+> [Basic Usage overview](hololens2-setup.md)
