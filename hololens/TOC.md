@@ -8,7 +8,6 @@
 ### [Remote Assist edition](hololens2-options-remote-assist.md)
 ### [Industrial edition](hololens2-options-industrial-edition.md)
 ### [Development edition](hololens2-options-dev-edition.md)
-on.md)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
 # Get started
