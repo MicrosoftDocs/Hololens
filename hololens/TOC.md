@@ -111,12 +111,12 @@
 ## [Fix HoloLens issues](/hololens/hololens-troubleshooting)
 
 # Resources
+## [Support and help options](hololens2-support.md)
 ## Release notes
 ### [HoloLens 2 release notes](hololens-release-notes.md)
 ### [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 ## Troubleshooting
-### [Support and help options](hololens2-support.md)
 ### [Troubleshoot common issues](hololens-troubleshooting.md)
 ### [Known issues](hololens-known-issues.md)
 ### [Collect diagnostic information](hololens-diagnostic-logs.md)
