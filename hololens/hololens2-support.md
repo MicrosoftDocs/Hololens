@@ -115,18 +115,18 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 To open a technical support ticket on the Azure Portal for Azure Spatial Anchors, Azure Object Anchors or Azure Remote Rendering:
 
 1. With the [Azure portal](https://azure.microsoft.com/account/) open, select the help icon from the top menu bar, then select the **Help + support** button.
-[!div class="mx-imgBorder"]
+
 ![Azure portal help and support](../hololens/images/azure-help-support.png)
 
 2. With the Help + support page open, select **+ New support request**.
-[!div class="mx-imgBorder"]
+
 ![Azure portal new support request](../hololens/images/azure-help-support2.png)
 
 3. When completing the support ticket fields:
 
 - Issue type: Technical
 - Service: Azure Spatial Anchors, Azure Remote Rendering or Azure Object Anchors
-[!div class="mx-imgBorder"]
+
 ![Azure portal support ticket fields](../hololens/images/azure-help-support3.png)
 
 1. Click **Next: Solutions** at the bottom of the page.
