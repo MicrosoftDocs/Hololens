@@ -164,17 +164,9 @@ landingContent:
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
 
   # Card
-  - title: Support
+  - title: How to guide
     linkLists:
       - linkListType: reference
         links:
-          - text: Purchase HoloLens 
-            url: https://www.microsoft.com/hololens/buy
-          - text: Communities Support 
-            url: https://holodevelopersslack.azurewebsites.net/
-          - text: Technical Support
-            url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f
-          - text: Microsoft Store - Office Support
-            url: https://support.microsoft.com/office/microsoft-store-109d8aed-d32f-4d6f-9c54-ff80871e8637
-          - text: Store & Purchase Inquiry Support
-            url: https://www.microsoft.com/store/b/business
+          - text: Support and help options for HoloLens2 
+            url: hololens2-support.md
