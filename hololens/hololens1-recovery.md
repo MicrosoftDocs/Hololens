@@ -116,7 +116,7 @@ If your device isn't detected, follow these steps to put it into flashing mode:
 
 1. Unplug the device from any power source.
 1. If the device is on, hold down the **power** button until it completely turns off.
-2. Hold the **volume up** button, and briefly tap the **power** button. The device should start and display only the middle LED light.
+2. Hold the **volume up** button, and briefly tap the **power** button. The device should start and display only the middle LED.
 3. Plug the device into your PC.
 4. Open the Windows Device Recovery Tool.
 5. Select **My device was not detected** and then **HoloLens**. 
