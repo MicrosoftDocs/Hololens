@@ -84,7 +84,7 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 
 ## Next steps
 
-1. Start interacting right away with with Mixed Reality and navigating Windows 10 on your HoloLens - check out the **Tips** app for hands-on tutorials for hand interactions. Use the start gesture to go to Start or say "Go to Start" and select Tips.
+1. Start interacting right away with Mixed Reality and navigating Windows 10 on your HoloLens - check out the **Tips** app for hands-on tutorials for hand interactions. Use the start gesture to go to Start or say "Go to Start" and select Tips.
 1. Click below to continue reading about getting around HoloLens 2.
 
 > [!div class="nextstepaction"]
