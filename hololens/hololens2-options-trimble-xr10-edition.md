@@ -18,11 +18,11 @@ appliesto:
 
 # Trimble XR10 with HoloLens 2
 
-Purpose built for workers in dirty, loud, and safety-controlled environments, the Trimble XR10 with HoloLens 2 brings mixed reality right to your work site.
+Purpose-built for workers in dirty, loud, and safety-controlled environments, the Trimble XR10 with HoloLens 2 brings mixed reality right to your work site.
 
 ## Learn about Trimble XR10
 
-Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program and integrates the latest spatial computing technology into a certified solution for use with a hard hat for worker safety.
+Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program. It integrates the latest spatial computing technology into a certified solution for use with a hardhat for worker safety.
 
 ![Trimble SKU](./images/trimble-ed.png)
 
