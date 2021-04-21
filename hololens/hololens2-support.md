@@ -124,16 +124,16 @@ To open a technical support ticket on the Azure Portal for Azure Spatial Anchors
 
 3. When completing the support ticket fields:
 
-- Issue type: Technical
-- Service: Azure Spatial Anchors, Azure Remote Rendering or Azure Object Anchors
+    + Issue type: Technical
+    + Service: Azure Spatial Anchors, Azure Remote Rendering or Azure Object Anchors
 
 ![Azure portal support ticket fields](../hololens/images/azure-help-support3.png)
 
-1. Click **Next: Solutions** at the bottom of the page.
+    1. Click **Next: Solutions** at the bottom of the page.
 
-1. Fill out the following form as precise and detailed as possible.
+    2. Fill out the following form as precise and detailed as possible.
 
-1. Review and submit the support request.
+    3. Review and submit the support request.
 
 ### Provide documentation content feedback
 
@@ -153,7 +153,7 @@ To provide feedback, share an idea or suggestions for Microsoft mixed reality se
 
 ### FAQs
 
-- HoloLens 2, see the [HoloLens Troubleshooting](/hololens/hololens-troubleshooting.md) page
+- HoloLens 2, see the [HoloLens Troubleshooting](../hololens/hololens-troubleshooting.md) page
 - Windows Mixed Reality, see the [FAQ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) page
 - Azure Spatial Anchors, see the [FAQ](https://docs.microsoft.com/azure/spatial-anchors/spatial-anchor-faq) page
 - Azure Object Anchors, see the [FAQ](https://docs.microsoft.com/azure/object-anchors/faq) page
