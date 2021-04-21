@@ -22,7 +22,7 @@ Purpose-built for workers in dirty, loud, and safety-controlled environments, th
 
 ## Learn about Trimble XR10
 
-Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program. It integrates the latest spatial computing technology into a certified solution for use with a hard hat for worker safety.
+Trimble XR10 with HoloLens 2 is the first device created with the Microsoft HoloLens Customization Program. The device integrates a HoloLens 2 into a hard hat to produce safety-first mixed reality solution.
 
 ![Trimble SKU](./images/trimble-ed.png)
 
@@ -31,7 +31,7 @@ See more about the [Trimble XR10](https://fieldtech.trimble.com/en/product/trimb
 ## Next steps
 
 1. Start interacting right away with Mixed Reality and navigating Windows 10 on your HoloLens - check out the **Tips** app for hands-on tutorials for hand interactions. Use the start gesture to go to Start or say "Go to Start" and select Tips.
-1. Learn how to use your HoloLens 2.
+1. Click below to continue reading about getting around HoloLens 2.
 
 > [!div class="nextstepaction"]
 > [Get started with HoloLens 2](hololens2-basic-usage.md)
