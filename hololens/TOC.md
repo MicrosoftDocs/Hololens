@@ -1,66 +1,59 @@
 # [Microsoft HoloLens](index.yml)
 
 # Overview
+## [About HoloLens 2](hololens2-hardware.md)
+## [Compare HoloLens 2 Options](hololens2-options.md)
+## Discover HoloLens 2 Editions
+### [Device-only edition](hololens2-options-device-only.md)
+### [Remote Assist edition](hololens2-options-remote-assist.md)
+### [Industrial edition](hololens2-options-industrial-edition.md)
+### [Development edition](hololens2-options-dev-edition.md)
+### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
-## Get started with HoloLens 2
-### [HoloLens 2 Overview](hololens2-options.md)
-### [HoloLens 2 hardware](hololens2-hardware.md)
-### [Get your HoloLens 2 ready to use](hololens2-setup.md)
-### [Set up your HoloLens 2](hololens2-start.md)
-### [HoloLens 2 fit and comfort FAQ](hololens2-fit-comfort-faq.md)
-### [HoloLens 2 display](hololens2-display.md)
-### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
-### [Supported languages for HoloLens 2](hololens2-language-support.md)
-### [Getting around HoloLens 2](hololens2-basic-usage.md)
-### [HoloLens 2 Development Edition FAQ](hololens2-development-edition-faq.md)
-### [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md)
+# Get started
+## [Basic usage overview](hololens2-setup.md)
+## [Set up your HoloLens 2](hololens2-start.md)
+## [Supported languages](hololens2-language-support.md)
 
-
-
-## Get started with HoloLens (1st gen)
-### [HoloLens (1st gen) hardware](hololens1-hardware.md)
-### [Get your HoloLens (1st gen) ready to use](hololens1-setup.md)
-### [Set up your HoloLens (1st gen)](hololens1-start.md)
-### [HoloLens (1st gen) fit and comfort FAQ](hololens1-fit-comfort-faq.md)
-### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
-### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
-### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
-### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
-### [Manage custom apps for HoloLens](holographic-custom-apps.md)
-
-
+# Concepts
 ## Navigate the Windows Holographic interface
 ### [Use the Start menu and mixed reality home](holographic-home.md)
 ### [Use your voice to operate HoloLens](hololens-cortana.md)
 ### [Find, open, and save files on HoloLens](holographic-data.md)
 ### [Create mixed reality photos and videos](holographic-photos-and-videos.md)
-## Holographic applications
+## Manage applications
 ### [Find, install, and uninstall applications](holographic-store-apps.md)
 ### [Manage custom apps for HoloLens 2](hololens2-holographic-custom-apps.md)
+### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 ## Hologram optics and placement in space
 ### [Improve visual quality and comfort](hololens-calibration.md)
-### [Map physical spaces with HoloLens](hololens-spaces.md) 
+### [Map physical spaces with HoloLens](hololens-spaces.md)
+## [Develop with Microsoft Mesh (Preview)](/mesh/overview)
+
+# How-to guides
 ## [How to Update HoloLens](hololens-update-hololens.md)
-## [Microsoft Mesh (Preview)](/mesh/overview)
+## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
 # Prepare
 ## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ## Common Deployment Scenarios
-### [Infrastructure Deployment Scenarios](common-scenarios.md)
-### Cloud connected HoloLens 2 deployment with Remote Assist
-#### [Cloud connected - Deployment Overview](hololens2-cloud-connected-overview.md)
-#### [Cloud connected - Prepare](hololens2-cloud-connected-prepare.md)
-#### [Cloud connected - Configure](hololens2-cloud-connected-configure.md)
-#### [Cloud connected - Deploy](hololens2-cloud-connected-deploy.md)
-#### [Cloud connected - Maintain](hololens2-cloud-connected-maintain.md)
-### [Deploying HoloLens 2 to External Clients with Remote Assist](hololens2-deployment-guide.md)
-### Corporate connected HoloLens 2 deployment with Dynamic 365 Guides
-#### [Corporate connected - Deployment Overview](hololens2-corp-connected-overview.md)
-#### [Corporate connected - Prepare](hololens2-corp-connected-prepare.md)
-#### [Corporate connected - Configure](hololens2-corp-connected-configure.md)
-#### [Corporate connected - Deploy](hololens2-corp-connected-deploy.md)
-#### [Corporate connected - Maintain](hololens2-corp-connected-maintain.md)
-### [Offline Secure](hololens-common-scenarios-offline-secure.md)
+### [Overview](common-scenarios.md)
+### Cloud connected environment deployment guide
+#### [Overview](hololens2-cloud-connected-overview.md)
+#### [Prepare](hololens2-cloud-connected-prepare.md)
+#### [Configure](hololens2-cloud-connected-configure.md)
+#### [Deploy](hololens2-cloud-connected-deploy.md)
+#### [Maintain](hololens2-cloud-connected-maintain.md)
+
+### [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
+### Corporate network deployment guide
+#### [Overview](hololens2-corp-connected-overview.md)
+#### [Prepare](hololens2-corp-connected-prepare.md)
+#### [Configure](hololens2-corp-connected-configure.md)
+#### [Deploy](hololens2-corp-connected-deploy.md)
+#### [Maintain](hololens2-corp-connected-maintain.md)
+
+### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
 ## Security
 ### [Security overview](security-overview.md)
 ### [Architecture](security-architecture.md)
@@ -71,9 +64,6 @@
 ### [Encryption and data protection](security-encryption-data-protection.md)
 ### [Network security](security-network-security.md)
 ### [Security engineering ](security-engineering.md)
-### HoloLens 1st Gen Security 
-#### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
-#### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 ### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
 ## [License requirements](hololens-licenses-requirements.md)
 ## Environment
@@ -118,19 +108,39 @@
 
 # Maintain
 ## [Manage HoloLens updates](hololens-updates.md)
-## Fix HoloLens issues
-### [Troubleshooting](hololens-troubleshooting.md)
-### [Restart, reset, or recover HoloLens 2](hololens-recovery.md)
-### [Restart, reset, or recover HoloLens (1st gen) ](hololens1-recovery.md)
-### [Frequently asked questions](hololens-faq.md)
-### [Known issues for HoloLens](hololens-known-issues.md)
-### [Collect and use diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
-### [Support and help options](hololens2-support.md)
+## [Fix HoloLens issues](/hololens/hololens-troubleshooting)
 
-# HoloLens release notes
-## [HoloLens 2 release notes](hololens-release-notes.md)
-## [Insider preview for Microsoft HoloLens](hololens-insider.md)
-## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
+# Resources
+## [Support and help options](hololens2-support.md)
+## Release notes
+### [HoloLens 2 release notes](hololens-release-notes.md)
+### [Insider preview for Microsoft HoloLens](hololens-insider.md)
+### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
+## Troubleshooting
+### [Troubleshoot common issues](hololens-troubleshooting.md)
+### [Known issues](hololens-known-issues.md)
+### [Collect diagnostic information](hololens-diagnostic-logs.md)
+### [Reset HoloLens 2](hololens-recovery.md)
+### FAQ
+#### [General](hololens-faq.md)
+#### [HoloLens 2 display](hololens2-display.md)
+#### [HoloLens 2 fit and comfort](hololens2-fit-comfort-faq.md)
+#### [HoloLens 2 cleaning](hololens2-maintenance.md)
+#### [HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
+#### [HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md)
+## HoloLens (1st gen)
+### [About HoloLens (1st gen)](hololens1-hardware.md)
+### [Basic usage overview](hololens1-setup.md)
+### [Set up your HoloLens (1st gen)](hololens1-start.md)
+### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
+### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
+### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
+### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
+### [Reset HoloLens (1st gen) ](hololens1-recovery.md)
+### [HoloLens (1st gen) fit and comfort](hololens1-fit-comfort-faq.md)
+### HoloLens 1st Gen Security 
+#### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
+#### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 
 # Give us feedback
 ## [Give us feedback via Feedback Hub](hololens-feedback.md)

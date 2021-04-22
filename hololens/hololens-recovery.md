@@ -14,7 +14,8 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-
+appliesto:
+- HoloLens 2
 ---
 
 # Restart, reset, or recover HoloLens 2
