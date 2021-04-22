@@ -207,10 +207,10 @@ By combining the auto-launch of provisioning from USB devices and the auto-confi
 
 Your device is now configured and will display the Provisioning Successful screen.
 
-## Apply a provisioning package to HoloLens after setup
+## Apply/Remove a provisioning package to HoloLens after setup
 
 > [!NOTE]
-> These steps apply only to Windows 10, version 1809.
+> These steps apply only to HoloLens (1st gen) devices on Windows Holographic, version 1809 and all HoloLens 2 devices.
 
 On your PC, follow these steps:
 1. Create a provisioning package as described at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md).
