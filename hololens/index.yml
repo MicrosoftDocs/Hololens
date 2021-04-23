@@ -50,6 +50,8 @@ landingContent:
             url: common-scenarios.md
           - text: Cloud connected HoloLens 2 deployment at scale with Remote Assist
             url: hololens2-cloud-connected-overview.md
+          - text: Corporate connected HoloLens 2 deployment with Dynamics 365 Guides
+            url: hololens2-corp-connected-overview.md
           - text: External Clients Deployment Guide
             url: hololens2-deployment-guide.md
           - text: Offline secure deployment
@@ -162,17 +164,9 @@ landingContent:
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
 
   # Card
-  - title: Support
+  - title: How to guide
     linkLists:
       - linkListType: reference
         links:
-          - text: Purchase HoloLens 
-            url: https://www.microsoft.com/hololens/buy
-          - text: Communities Support 
-            url: https://holodevelopersslack.azurewebsites.net/
-          - text: Technical Support
-            url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f
-          - text: Microsoft Store - Office Support
-            url: https://support.microsoft.com/office/microsoft-store-109d8aed-d32f-4d6f-9c54-ff80871e8637
-          - text: Store & Purchase Inquiry Support
-            url: https://support.microsoft.com/account-billing/contact-microsoft-store-support-4f615f2a-6bbd-fd69-6695-ae213d63eef0
+          - text: Support and help options for HoloLens2 
+            url: hololens2-support.md
