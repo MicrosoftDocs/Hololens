@@ -102,7 +102,7 @@ There are two primary ways to register HoloLens devices:
  - **Reseller can register devices in the Partner Center when you place an order.**
 
    > [!NOTE]  
-   > This is the recommended path for adding devices to the Autopilot service. [Learn more](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration).  
+   > This is the recommended path for adding devices to the Autopilot service. [Learn more](https://docs.microsoft.com/mem/autopilot/partner-registration).  
 
  - **Retrieve the hardware hash (also known as the hardware ID) and register the device manually in MEM admin center**.
 
