@@ -166,27 +166,32 @@ There are three ways to provision proxies:
  
 
 1.  **Settings UI:** 
+    1. Per-user proxy 20H2 or earlier
+        1. Open the Start menu and select Settings.
+        2. Select Network & Internet and then Proxy on the left menu
+        3. Scroll down to Manual proxy setup and toggle Use a proxy server to On
+        4. Enter the IP address of the proxy server
+        5. Enter the port number
+        6. Click Save
+        7. WiFi proxy (21h1 or higher)
+  
+        1. a.	Open the Start menu and go to your Wi-Fi Network’s Properties page 
+b.	Scroll down to Proxy
+c.	Change to Manual Setup
+d.	Enter the IP address of the PC where Fiddler is installed
+e.	Enter the port number noted above. (default is 8866)
+f.	Click Apply
 
-    - Per-user proxy 
-    - VPN proxy 
-    - WiFi proxy (20H2 only)
+ 2. **MDM** 
+ 1. Intune - get steps or point them to Intune docs
+ 1. Other solutions, point to wifi CSP
 
-**Need detailed steps on how to reach pages in Settings app** 
-
- 
-
-2. **MDM** 
-
-3. **PPKG**
+3. **PPKG** provide quick steps for proxy
 
 [CSPs](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) are behind many of the management tasks and policies for Windows 10, both in Microsoft Intune and in non-Microsoft MDM service providers. You can also use [Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) to create a [provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) and apply it to the HoloLens 2.
 The most likely CSPs that will be applied to your HoloLens 2 are:
 
-- [NetworkProxy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp): machine proxy and per-user proxy 
-
 - [WiFi CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp): per-profile Wi-Fi proxy 
-
-- [VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp?redirectedfrom=MSDN): per-profile VPN proxy
 
 [Other CSPs supported in HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
