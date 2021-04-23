@@ -16,7 +16,7 @@ manager: jarrettr
 
 To do most things on your HoloLens, you have to be connected to a network. HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio and connecting it to a network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network. This guide will help you:
 
-- Connect to a network using Wi-Fi or (for HoloLens 2 only) Ethernet over USB-C
+- Connect to a network using Wi-Fi, or for HoloLens 2 only, Wi-Fi Direct or Ethernet over USB-C
 - Disable and re-enable Wi-Fi
 
 Read more about [using HoloLens offline](hololens-offline.md).
@@ -128,7 +128,7 @@ Additional resources:
 - WLANv1Profile Schema: [[MS-GPWL]: Wireless LAN Profile v1 Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-### EAP Troubleshooting
+## EAP Troubleshooting
 
 1. Double check Wi-Fi profile has right settings:
    1. EAP type is configured correctly, common EAP types: EAP-TLS (13), EAP-TTLS (21) and PEAP (25).
@@ -153,7 +153,7 @@ This section covers network proxy for Windows services and Universal Windows Pla
 
 - Static Proxy: in the form of Server:Port. 
 
-- Proxy Auto-Config (PAC) script: a PAC file contains a JavaScript function FindProxyForURL(url, host).  
+- Proxy Auto-Config (PAC) script: a [PAC file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) (opens a non-Microsoft site) contains a JavaScript function FindProxyForURL(url, host).  
 
 - Web Proxy Auto-Discovery Protocol (WPAD): provide URL of proxy configuration file through DHCP or DNS. 
 
@@ -166,27 +166,35 @@ There are three ways to provision proxies:
  
 
 1.  **Settings UI:** 
-    1. Per-user proxy 20H2 or earlier
+    1. Per-user proxy (20H2 or earlier):
         1. Open the Start menu and select Settings.
-        2. Select Network & Internet and then Proxy on the left menu
-        3. Scroll down to Manual proxy setup and toggle Use a proxy server to On
-        4. Enter the IP address of the proxy server
-        5. Enter the port number
-        6. Click Save
-        7. WiFi proxy (21h1 or higher)
-  
-        1. a.	Open the Start menu and go to your Wi-Fi Network’s Properties page 
-b.	Scroll down to Proxy
-c.	Change to Manual Setup
-d.	Enter the IP address of the PC where Fiddler is installed
-e.	Enter the port number noted above. (default is 8866)
-f.	Click Apply
-
+        2. Select Network & Internet and then Proxy on the left menu.
+        3. Scroll down to Manual proxy setup and toggle Use a proxy server to On.
+        4. Enter the IP address of the proxy server.
+        5. Enter the port number.
+        6. Click Save.
+      1. WiFi proxy (21H1 or higher):
+          1. Open the Start menu and go to your Wi-Fi Network’s Properties page.
+          1. Scroll down to Proxy
+          1. Change to Manual Setup
+          1. Enter the IP address of the proxy server.
+          1. Enter the port number.
+          1. Click Apply.
+        
  2. **MDM** 
- 1. Intune - get steps or point them to Intune docs
- 1. Other solutions, point to wifi CSP
+     1. Intune - Use these [steps](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) to configure proxy in Intune. You will need to scroll to the bottom of the section.
+     1. Other 3rd party MDM solutions - Use a [WiFi CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp).
 
-3. **PPKG** provide quick steps for proxy
+3. **PPKG** 
+    1. Open Windows Configuration Designer
+    1. Click on Advanced Provisioning, enter the name for your new Project and click Next.
+    1. Select Windows Holographic (HoloLens 2) and click Next.
+    1. Import your PPKG (optional) and click Finish.
+    1. Expand Runtime Settings -> Connectivity Profiles -> WLAN -> WLAN Proxy.
+    1. Enter the SSID of your Wi-Fi network and click Add.
+    1. Select your Wi-Fi network in the left window and enter your desired customizations. The enabled customizations will show in bold on the left menu.
+    1. Click Save and Exit.
+    1. [Apply](https://docs.microsoft.com/hololens/hololens-provisioning#applyremove-a-provisioning-package-to-hololens-after-setup) the provisioning package to the HoloLens.
 
 [CSPs](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) are behind many of the management tasks and policies for Windows 10, both in Microsoft Intune and in non-Microsoft MDM service providers. You can also use [Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) to create a [provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) and apply it to the HoloLens 2.
 The most likely CSPs that will be applied to your HoloLens 2 are:
@@ -195,7 +203,7 @@ The most likely CSPs that will be applied to your HoloLens 2 are:
 
 [Other CSPs supported in HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
-**Need detailed steps from Rui about Intune**
+
 
 
 
