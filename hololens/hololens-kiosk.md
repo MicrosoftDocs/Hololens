@@ -409,7 +409,7 @@ The "Configure HoloLens by using a provisioning package" article provides detail
 
 - You can initially [apply a provisioning package to HoloLens during setup](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
-- You can also [apply a provisioning package to HoloLens after setup](hololens-provisioning.md#apply-or-remove-a-provisioning-package-to-hololens-after-setup).
+- You can also [apply a provisioning package to HoloLens after setup](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
 
 ## Use the Windows Device Portal to set up a single-app kiosk
 
