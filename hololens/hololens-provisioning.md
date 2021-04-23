@@ -210,7 +210,7 @@ Your device is now configured and will display the Provisioning Successful scree
 ## Apply/Remove a provisioning package to HoloLens after setup
 
 > [!NOTE]
-> These steps apply only to HoloLens (1st gen) devices on Windows Holographic, version 1809 and all HoloLens 2 devices.
+> These steps apply to all HoloLens 2 devices and HoloLens (1st gen) devices on Windows Holographic, version 1809.
 
 On your PC, follow these steps:
 1. Create a provisioning package as described at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md).
