@@ -149,14 +149,10 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 - Printing
 
 **Top browser known issues:**
-- Wi-Fi proxy configurations, which are proxy policies that target individual Wi-Fi connections, don't currently work with the new Microsoft Edge. We're actively working to unblock this issue before public release of the OS update.
 - The magnifier preview in the holographic keyboard has been disabled for the new Microsoft Edge. We hope to reenable this feature in a future update, once the magnification is working correctly.
-- Two characters on the Japanese keyboard do not work as expected in the new Microsoft Edge. This issue has been root caused and should be fixed soon.
-- Web links in the Microsoft Store app may not launch the browser
 - Audio may play from the wrong browser window if you have another browser window open and active. You can work around this issue by closing the other active window that isn't supposed to be playing audio.
 - When playing audio from a browser window in ["Follow me" mode](hololens2-basic-usage.md#follow-me-stop-following), the audio will continue playing if you disable "Follow me" mode. You can work around this issue by stopping audio playback before disabling "Follow me" mode or by closing the window with the **X** button.
 - Interacting with active Microsoft Edge windows may cause other 2D app windows to go inactive unexpectedly. You can reactivate these windows by interacting with them again.
-- Opening a web link from another app, or certain types of documents like PDFs, may cause a second blank tab to open in the browser (in addition to the new tab created with the contents of the web link or file link). You can work around this issue by closing the additional blank tab.
 
 #### Microsoft Edge Insider channels
 
@@ -233,14 +229,10 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.
 
 #### Top WebXR and 360 Viewer known issues
+
 - Depending on the complexity of the WebXR experience, the framerate may drop or stutter.
 - Support for articulated hand joints in WebXR is not enabled by default. Developers can enable support via `edge://flags` by turning on "WebXR Hand Input."
-- When exiting a WebXR or 360 Viewer experience, it may take 30 seconds or more for holograms in the mixed reality home to reappear.
 - 360 videos from websites other than YouTube may not work as expected.
-- Captions are currently disabled in 360 Viewer on HoloLens 2. We plan to enable this feature in a future update.
-- Pausing a video in 360 Viewer stops the video from rendering (but selecting the play button correctly resumes playback).
-- The "next video" button in 360 Viewer does not currently work.
-- You can play 2D videos in an immersive "theater" mode, but the framerate may be less than 30 fps.
 
 #### Providing feedback on WebXR and 360 Viewer
 
