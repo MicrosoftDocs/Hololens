@@ -134,7 +134,9 @@ Additional resources:
    1. EAP type is configured correctly, common EAP types: EAP-TLS (13), EAP-TTLS (21) and PEAP (25).
    1. Wi-Fi SSID name is right and matches with HEX string.
    1. For EAP-TLS, TrustedRootCA contains the SHA-1 hash of server&#39;s trusted root CA certificate. On Windows PC &quot;certutil.exe -dump cert\_file\_name&quot; command will show a certificate&#39;s SHA-1 hash string.
-1. Collect network packet capture on the Access Point or Controller or AAA server logs to find out where the EAP session fails.
+> [!TIP]
+A majority of network issues are the result of one of the above 3 settings being incorrect in the Wi-FI profile. 
+2. Collect network packet capture on the Access Point or Controller or AAA server logs to find out where the EAP session fails.
    1. If the EAP identity provided by HoloLens is not expected, check whether the identity has been correctly provisioned through Wi-Fi profile or client certificate.
    1. If server rejects HoloLens client certificate, check whether the required client certificate has been provisioned on the device.
    1. If HoloLens rejects server certificate, check if the server root CA certificate has been provisioned on HoloLens.
@@ -151,10 +153,8 @@ This section covers network proxy for Windows services and Universal Windows Pla
 
 ### Proxy Configurations 
 
-- Static Proxy: in the form of Server:Port. 
-
-- Proxy Auto-Config (PAC) script: a [PAC file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) (opens a non-Microsoft site) contains a JavaScript function FindProxyForURL(url, host).  
-
+- Proxy Auto-Config (PAC) script: a [PAC file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) (opens a non-Microsoft site) contains a JavaScript function FindProxyForURL(url, host). 
+- Static Proxy: in the form of Server:Port.  
 - Web Proxy Auto-Discovery Protocol (WPAD): provide URL of proxy configuration file through DHCP or DNS. 
 
 ### Proxy Scope
@@ -388,3 +388,22 @@ Depending on your devices build you can either use built in voice commands or Co
 1. In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
 1. Navigate to the **Networking** section.  
    This section displays your IP address and other network information. By using this method, you can copy and paste of the IP address on your development PC.
+
+## Change IP Address to static address
+### By using Settings
+ 
+1. Open the **Start** menu.
+1. Select the **Settings** app from **Start** or from the **All Apps** list on the right of the **Start** menu. The **Settings** app will be auto-placed in front of you.
+1. Select **Network & Internet**.
+1. Scroll down to beneath the list of available Wi-Fi networks and select **Hardware properties**.
+1. In the **Edit IP settings** window, change the first field to **Manual**.
+1. Input the desired IP configuration in the remaining fields and then click **Save**.
+
+### By using Windows Device Portal
+
+1. In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
+1. Navigate to the **Networking** section.
+1. Select the **IPv4 Configuration** button.
+1. Select **Use the following IP address** and input the desired TCP/IP configuration.
+1. Select **Use the following DNS server addresses** and enter the Preferred and Alternate DNS server addresses, if needed.
+1. Click **Save**. 
