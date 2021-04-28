@@ -147,18 +147,14 @@ A majority of network issues are the result of one of the above 3 settings being
 - [Export Wi-Fi settings from a Windows device](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
 
 ## Configure Network Proxy
-RFC defines how clients communicate with proxy servers. It’s up to each system (or application) to define what type of proxies it supports and how the proxy is configured.  
 
-This section covers network proxy for Windows services and Universal Windows Platform (UWP) Apps using Windows HTTP stack. Applications using non-Windows HTTP stack may have their own proxy configuration and handling. 
+This section covers network proxy for HoloLens OS and Universal Windows Platform (UWP) Apps using Windows HTTP stack. Applications using non-Windows HTTP stack may have their own proxy configuration and handling. 
 
 ### Proxy Configurations 
 
 - Proxy Auto-Config (PAC) script: a [PAC file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) (opens a non-Microsoft site) contains a JavaScript function FindProxyForURL(url, host). 
 - Static Proxy: in the form of Server:Port.  
 - Web Proxy Auto-Discovery Protocol (WPAD): provide URL of proxy configuration file through DHCP or DNS. 
-
-### Proxy Scope
-- Per-profile proxy: for all users, applies to specific network profile (Wi-Fi SSID or VPN connection)
 
 ### Proxy Provisioning Methods 
 There are three ways to provision proxies:
