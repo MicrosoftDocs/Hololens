@@ -129,19 +129,19 @@ Additional resources:
 - EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
 ## EAP Troubleshooting
-
+> [!TIP]
+> A majority of network issues are the result of one of the below 3 settings being incorrect in the Wi-FI profile. 
 1. Double check Wi-Fi profile has right settings:
    1. EAP type is configured correctly, common EAP types: EAP-TLS (13), EAP-TTLS (21) and PEAP (25).
    1. Wi-Fi SSID name is right and matches with HEX string.
    1. For EAP-TLS, TrustedRootCA contains the SHA-1 hash of server&#39;s trusted root CA certificate. On Windows PC &quot;certutil.exe -dump cert\_file\_name&quot; command will show a certificate&#39;s SHA-1 hash string.
-> [!TIP]
-A majority of network issues are the result of one of the above 3 settings being incorrect in the Wi-FI profile. 
+
 2. Collect network packet capture on the Access Point or Controller or AAA server logs to find out where the EAP session fails.
    1. If the EAP identity provided by HoloLens is not expected, check whether the identity has been correctly provisioned through Wi-Fi profile or client certificate.
    1. If server rejects HoloLens client certificate, check whether the required client certificate has been provisioned on the device.
    1. If HoloLens rejects server certificate, check if the server root CA certificate has been provisioned on HoloLens.
 1. If the enterprise profile is provisioned through Wi-Fi provisioning package, consider applying the provisioning package on a Windows 10 PC. If it also fails on Windows 10 PC, follow the [Windows client 802.1X authentication troubleshooting guide](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication).
-1. Send us feedback through [Feedback Hub](https://docs.microsoft.com/hololens/hololens-feedback).
+1. Set your telemetry to Full or Optional (depending on your build) and then send us feedback through [Feedback Hub](https://docs.microsoft.com/hololens/hololens-feedback).
 
 ### Additional resources:
 - [Export Wi-Fi settings from a Windows device](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
