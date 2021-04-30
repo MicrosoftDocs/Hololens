@@ -15,7 +15,7 @@ ms.custom:
 keywords: issues, bug, troubleshoot, fix, help, support, HoloLens
 ---
 
-# Troubleshooting
+# Troubleshoot common issues
 
 This article describes how to resolve several common HoloLens issues.
 

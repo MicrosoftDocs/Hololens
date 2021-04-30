@@ -47,7 +47,7 @@ HoloLens (1st gen) came with two licensing options, the developer license and a 
 
 ## Feature comparison between editions
 
-|Features |HoloLens Development Edition |HoloLens Commercial Suite |HoloLens 2 |
+|Features |HoloLens (1st gen) Development Edition |HoloLens (1st gen) Commercial Suite |HoloLens 2 |
 |---|:---:|:---:|:---:|
 |Device Encryption (BitLocker) | |✔️ |✔️ |
 |Virtual Private Network (VPN) | |✔️ |✔️ |

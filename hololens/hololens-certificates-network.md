@@ -59,4 +59,7 @@ To deploy certificates and profiles, follow these steps:
 
 In the event that you need to validate that a certificate is deployed correctly please use the [Certificate Manager](certificate-manager.md) on the device to verify your certificate is present.  
 
+>[!WARNING]
+> Although you can view MDM-deployed certificates in Certificate Manager, you cannot uninstall them in Certificate Manager. You must uninstall them through MDM.
+
 

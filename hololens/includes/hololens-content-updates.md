@@ -2,6 +2,53 @@
 
 
 
+## Week of April 19, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/20/2021 | [Connect to Bluetooth and USB-C devices](/hololens/hololens-connect-devices) | modified |
+| 4/21/2021 | [Learn more about Mixed Reality support options](/hololens/hololens2-support) | added |
+| 4/21/2021 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
+| 4/22/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 4/22/2021 | [HoloLens 2 Development Edition](/hololens/hololens2-options-dev-edition) | added |
+| 4/22/2021 | [HoloLens 2 device only](/hololens/hololens2-options-device-only) | added |
+| 4/22/2021 | [HoloLens 2 Industrial Edition](/hololens/hololens2-options-industrial-edition) | added |
+| 4/22/2021 | [HoloLens 2 Remote Assist](/hololens/hololens2-options-remote-assist) | added |
+| 4/22/2021 | [Trimble XR10 with HoloLens 2](/hololens/hololens2-options-trimble-xr10-edition) | added |
+| 4/22/2021 | [Troubleshooting](/hololens/hololens-troubleshooting) | modified |
+| 4/22/2021 | [Manage HoloLens updates](/hololens/hololens-updates) | modified |
+| 4/22/2021 | [HoloLens BitLocker Encryption](/hololens/hololens1-encryption) | modified |
+| 4/22/2021 | [HoloLens 2 Development Edition FAQ](/hololens/hololens2-development-edition-faq) | modified |
+| 4/22/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
+| 4/22/2021 | [HoloLens 2 editions](/hololens/hololens2-options) | modified |
+| 4/22/2021 | [Set up your HoloLens 2](/hololens/hololens2-start) | modified |
+| 4/23/2021 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
+| 4/23/2021 | [Configure HoloLens by using a provisioning package (HoloLens)](/hololens/hololens-provisioning) | modified |
+| 4/23/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
+
+
+## Week of April 12, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/12/2021 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 4/14/2021 | [Find, install, and uninstall applications](/hololens/holographic-store-apps) | modified |
+| 4/14/2021 | [Enroll HoloLens in MDM](/hololens/hololens-enroll-mdm) | modified |
+| 4/16/2021 | [Getting around HoloLens 2](/hololens/hololens2-basic-usage) | modified |
+
+
+## Week of April 05, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/5/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
+| 4/8/2021 | [Frequently asked questions about HoloLens devices and holograms](/hololens/hololens-faq) | modified |
+| 4/8/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
+
+
 ## Week of March 29, 2021
 
 
@@ -26,23 +73,3 @@
 | 3/24/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Overview](/hololens/hololens2-corp-connected-overview) | added |
 | 3/24/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Prepare](/hololens/hololens2-corp-connected-prepare) | added |
 | 3/24/2021 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
-
-
-## Week of March 15, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/15/2021 | [Getting around HoloLens (1st gen)](/hololens/hololens1-basic-usage) | modified |
-| 3/15/2021 | [Use the HoloLens clicker](/hololens/hololens1-clicker) | modified |
-| 3/15/2021 | [Frequently asked security questions](/hololens/hololens1-faq-security) | modified |
-| 3/15/2021 | [HoloLens (1st gen) fit and comfort frequently asked questions](/hololens/hololens1-fit-comfort-faq) | modified |
-| 3/15/2021 | [Install localized versions of HoloLens](/hololens/hololens1-install-localized) | modified |
-| 3/15/2021 | [Restart, reset, or recover HoloLens 1](/hololens/hololens1-recovery) | modified |
-| 3/15/2021 | [Prepare a new HoloLens](/hololens/hololens1-setup) | modified |
-| 3/15/2021 | [Set up HoloLens (1st gen)](/hololens/hololens1-start) | modified |
-| 3/15/2021 | [Supported languages for HoloLens 2](/hololens/hololens2-language-support) | modified |
-| 3/16/2021 | [HoloLens 2 editions](/hololens/hololens2-options) | modified |
-| 3/16/2021 | [Admin-less operating system security](/hololens/security-adminless-os) | modified |
-| 3/17/2021 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
-| 3/18/2021 | [HoloLens environment considerations](/hololens/hololens-environment-considerations) | modified |

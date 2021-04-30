@@ -50,6 +50,8 @@ A HoloLens user can use the Microsoft Feedback Hub desktop app to send diagnosti
 > [!NOTE]  
 > **Commercial or enterprise users:** If you use the Feedback Hub app to report a problem that relates to MDM, provisioning, or any other device management aspect, change the app category to **Enterprise Management** > **Device category**.
 
+>[!IMPORTANT]
+> To provide the best possible data for fixing issues, we highly recommended that you set your device telemetry to **Optional**. You can set this value during the Out-of-Box-Experience (OOBE), or by using the Settings app. To do this by using Settings, select **Start > Settings > Privacy > App Diagnostics > On**.
 ### Prerequisites
 
 - The device is connected to a network.
