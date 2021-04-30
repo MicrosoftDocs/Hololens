@@ -37,7 +37,6 @@
 ### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
 ### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 
-=======
 # Get started
 ## [Basic usage overview](hololens2-setup.md)
 ## [Set up your HoloLens 2](hololens2-start.md)
