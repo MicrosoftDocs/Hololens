@@ -15,11 +15,20 @@ appliesto:
 - HoloLens 2
 ---
 
-# HoloLens 2 enterprise deployment and management
+# HoloLens 2 enterprise deployment and management overview
 
 This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within the enterprise.
 
 HoloLens 2 runs on Windows 10 Holographic which provides organizations with robust, flexible, built-in mobile device and app management technologies. Windows 10 Holographic supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. The HoloLens 2 can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance and retirement using a comprehensive mobile device management solution.
+
+The following steps can help guide you through the process of HoloLens 2 adoption within enterprise.
+
+| <span title="Icon">&nbsp;</span> | <span title="Description">&nbsp;</span> |
+|--|--|
+| <br> :::image type="icon" source="images/one.png"::: | <br> [Prepare](#prepare): Review the prepare guide to become familiar with the tools and approaches you need to use. |
+| <br> :::image type="icon" source="images/two.png"::: | <br> [Configure](#configure): Learn about configuration settings you can use to properly setup your environment. |
+| <br> :::image type="icon" source="images/three.png"::: | <br> [Deploy](#deploy): Discover how to distribute and deploy your solution securely and efficiently. |
+| <br> :::image type="icon" source="images/four.png"::: | <br> [Maintain](#maintain): Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
 
 ## Prepare
 

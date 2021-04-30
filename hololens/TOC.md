@@ -34,9 +34,9 @@
 ## [How to Update HoloLens](hololens-update-hololens.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
-# Process guidance
+# Adoption journey
+## [Overview](hololens-requirements.md)
 ## Prepare
-### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ### Common Deployment Scenarios
 #### [Overview](common-scenarios.md)
 #### Cloud connected environment deployment guide
