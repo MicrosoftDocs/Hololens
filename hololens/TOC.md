@@ -34,7 +34,7 @@
 ## [How to Update HoloLens](hololens-update-hololens.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
-# Adoption journey
+# Process guidance
 ## Prepare
 ### [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ### Common Deployment Scenarios
@@ -45,6 +45,15 @@
 ##### [Configure](hololens2-cloud-connected-configure.md)
 ##### [Deploy](hololens2-cloud-connected-deploy.md)
 ##### [Maintain](hololens2-cloud-connected-maintain.md)
+
+#### [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
+#### Corporate network deployment guide
+##### [Overview](hololens2-corp-connected-overview.md)
+##### [Prepare](hololens2-corp-connected-prepare.md)
+##### [Configure](hololens2-corp-connected-configure.md)
+##### [Deploy](hololens2-corp-connected-deploy.md)
+##### [Maintain](hololens2-corp-connected-maintain.md)
+#### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
 
 ### Security
 #### [Security overview](security-overview.md)
@@ -98,16 +107,6 @@
 #### [Provisioning Package](app-deploy-provisioning-package.md)
 #### [App Installer](app-deploy-app-installer.md)
 
-
-#### [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
-#### Corporate network deployment guide
-##### [Overview](hololens2-corp-connected-overview.md)
-##### [Prepare](hololens2-corp-connected-prepare.md)
-##### [Configure](hololens2-corp-connected-configure.md)
-##### [Deploy](hololens2-corp-connected-deploy.md)
-##### [Maintain](hololens2-corp-connected-maintain.md)
-
-#### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
 
 ## Maintain
 ### [Manage HoloLens updates](hololens-updates.md)
