@@ -39,10 +39,12 @@ HoloLens 2 is deployed for use primarily in environments external to a corporate
 * Common Challenges
    * Determining which MDM configurations to apply to the HoloLens 2 based on scenario requirements.
 
-For a deployment guide that is similar to scenario A review our guide for [Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md).
+For a deployment guide that is similar to this scenario review our guide for [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md).
 
 > [!div class="nextstepaction"]
-> [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md)
+> [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md)
+> [!div class="nextstepaction"]
+> [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
 
 ### Scenario B: Deploy inside your organization's network
 
@@ -62,8 +64,10 @@ HoloLens 2 is deployed for use primarily on the corporate network with access to
    * As HoloLens 2 is a cloud first device, it relies heavily on internet and cloud connected services for User authentication, OS updates, MDM management, and so on. When connecting to a corporate network, Proxy/Firewall rules will most likely need to be adjusted to enable access for HoloLens 2 and the applications that run on it.
    * Corporate Wi-Fi connectivity typically requires certificates to authenticate the device or user to the network. The required infrastructure or settings to deploy certificates to Windows 10 devices through MDM can be challenging to configure.
 
+For a deployment guide that is similar to this scenario review our guide for [Corporate network deployment guide](hololens2-corp-connected-overview.md).
+
 > [!div class="nextstepaction"]
-> [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides](hololens2-corp-connected-overview.md)
+> [Corporate network deployment guide](hololens2-corp-connected-overview.md)
 
 ### Scenario C: Deploy in secure offline environment
 
@@ -81,7 +85,7 @@ HoloLens 2 is deployed for use primarily offline with no network or internet acc
    * Cloud services aren't able to be used, therefore limiting the HoloLens 2 capabilities.
    * Higher administrative overhead since these devices have to be set up, configured, and updated manually.
 
-For a deployment guide that is similar to this scenario review our [Offline Secure Deployment Guide](hololens-common-scenarios-offline-secure.md).
+For a deployment guide that is similar to this scenario review our [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md).
 
 > [!div class="nextstepaction"]
-> [Deployment Guide – Offline Secure HoloLens 2](hololens-common-scenarios-offline-secure.md)
+> [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)

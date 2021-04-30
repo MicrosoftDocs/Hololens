@@ -11,6 +11,8 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
+appliesto:
+- HoloLens 2
 ---
 
 # HoloLens 2 enterprise deployment and management
