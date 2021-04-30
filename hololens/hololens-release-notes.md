@@ -25,7 +25,9 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 ## Windows Holographic, version 21H1
 - Build 
 
-This update contains features for two target audiences; features that can be used by anyone on a device by the End User, and new device management options that can be configured by IT Admins. The table below specifies the features that are relevant to each audience. If you are an IT Admin, please take a look at our [IT Admin - Update Checklist](#it-admin---update-checklist).   
+This update contains features for two target audiences; features that can be used by anyone on a device by the End User, and new device management options that can be configured by IT Admins. The table below specifies the features that are relevant to each audience. If you are an IT Admin, please take a look at our [IT Admin - Update Checklist](#it-admin---update-checklist).
+>[!IMPORTANT]
+>In order to update to this build, HoloLens 2 device(s) must be currently running the February 2021 update (build 19041.1136) or newer. If you are not seeing this feature update available, please update your device first and try again.
 
 | Feature Name                                              | Short description                                                                      | Target Audience | 
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -35,6 +37,7 @@ This update contains features for two target audiences; features that can be use
 [Display color calibration](#display-color-calibration) | Select an alternative color profile for your HoloLens 2 display. | End User |
 [Default app picker](#default-app-picker) | Choose which app should launch for each file or link type. | End User |
 [Per app volume control](#per-app-volume-control) | Control app level volume independently from system volume. | End User |
+[Office web app](#office-web-app) | A shortcut to the Office web app is now listed in "All apps". | End User |
 [Swipe to type](#swipe-to-type) | Use the tip of your finger to "swipe" words on the holographic keyboard. | End User |
 [Power menu from Start](#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device. | End User |
 [Multiple users listed on Sign in screen](#multiple-users-listed-on-sign-in-screen) | Display multiple user accounts on the Sign in screen. | End User |
@@ -60,39 +63,42 @@ This checklist will help you know the new items that features that are being add
 
 #### Updates to Kiosk mode
 
-[**Visitor Auto-logon for Kiosks**](#visitor-auto-logon-for-kiosks)
+✔️[**Visitor Auto-logon for Kiosks**](#visitor-auto-logon-for-kiosks)
 
 Visitors can now be automatically logged into a Kiosk. This behavior is on by default but can be managed and disabled.
 
-[**New AUMIDs for new apps in Kiosk mode**](#use-the-new-settings-and-edge-apps-in-kiosk-modes)
+✔️[**New AUMIDs for new apps in Kiosk mode**](#use-the-new-settings-and-edge-apps-in-kiosk-modes)
 
 If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This will ensure you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app.
 
 These changes can be done now, and deployed to all devices and allow for a smoother transition on update.
 
-[**Improved Kiosk mode failure handing**](#kiosk-mode-behavior-changes-for-handling-of-failures)
+✔️[**Improved Kiosk mode failure handing**](#kiosk-mode-behavior-changes-for-handling-of-failures)
 
 If AAD group membership of signed-in AAD user is not successfully determined, then global kiosk configuration is used for start menu (if present) otherwise user is presented with empty start menu. While the empty start menu is not a configuration you can directly set, this new handling may be something to inform your support department of if you are using Kiosks, as this may apply to your configurations or you may want to make new adjustments to your assigned access configurations.
 
 #### Updates to Page Settings Visibility
 
-[**New Settings URIs for Page Settings Visibility**](#new-settings-uris-for-page-settings-visibility)
+✔️[**New Settings URIs for Page Settings Visibility**](#new-settings-uris-for-page-settings-visibility)
 
 IF you are currently using [Page Settings Visibility](settings-uri-list.md) then you may wish to make adjustments to your existing URIs you have either allowed or blocked.
 
+#### Updates for your WDAC policy
+✔️ If you were previously blocking Microsoft Edge via WDAC, you'll want to update your WDAC policy. Please review the following and use the sample code provided.
+#### Enable new endpoints for Edge
+✔️ If you have an infrastructure that involves configuring network endpoints such as proxy or firewall, please enable these new endpoints for the new Microsoft Edge app.
+
 #### Newly configurable items
 
-- [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app)
-  - You may configure if and who may collect Fallback Diagnostics.
-- [Share things with nearby devices](#share-things-with-nearby-devices)
-  - You may disable the new nearby sharing feature.
-- [Configuring policy settings for the new Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge)
-  - Review the newly configurations available for Microsoft Edge.
+✔️ [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app): You may configure if and who may collect Fallback Diagnostics.
+
+✔️[Share things with nearby devices](#share-things-with-nearby-devices): You may disable the new nearby sharing feature.
+
+✔️ [Configuring policy settings for the new Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge): Review the newly configurations available for Microsoft Edge.
 
 #### New diagnostic tool
 
-- [New OS Update troubleshooter](#new-os-update-troubleshooter)
-  - Collect logs related to OS Updates
+✔️[New OS Update troubleshooter](#new-os-update-troubleshooter): Collect logs related to OS Updates
 
 ### Introducing the new Microsoft Edge
 
@@ -337,6 +343,16 @@ To set the volume of an individual app navigate to **Settings** -> **System** ->
 
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
+#### Office web app
+ > [!Note]
+> As of Windows Insider build 20325.1000, the Office web app will no longer be pre-installed (and will not be pre-installed for the upcoming public release of the OS update. To install the Office web app, visit https://www.office.com and select the App Available or Install Office button in the address bar. Select Install to confirm.
+
+The Office web app has been added to the "All apps" list in the Start menu. This web app can also be pinned to Start or uninstalled. Because this is a web app, its functionality matches exactly what you'd experience by visiting https://www.office.com. Office web app functionality is only available when your HoloLens 2 has an active internet connection.
+
+Known issue
+
+-  Resetting your device will remove the Office web app.
+
 #### Swipe to type
 
 Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the space bar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
@@ -556,6 +572,14 @@ A few caveats about this preview offering:
 ### Improvements and fixes in the update:
 
 - [Offline diagnostics](hololens-diagnostic-logs.md#offline-diagnostics) will also include additional device information for serial number and OS version.
+
+### Known Issues and Work around
+#### Pairing HoloLens to PC
+Prior to the Windows Insider build 20325.1000, when a user had set Pairing credentials on either [Windows Holographic, version 20H2](https://docs.microsoft.com/hololens/hololens-release-notes#windows-holographic-version-20h2) or [Windows Holographic, version 2004](https://docs.microsoft.com/hololens/hololens-release-notes#windows-holographic-version-2004) and updated to the Windows Insider builds, their previous set credentials for pairing the HoloLens with the PC for purposes of deploying and debugging apps such as via Visual Studio no longer worked. Windows Insider build 20325.1000 fixes this issue and requires no additional actions to resume using device portal.
+
+Users who have [flashed their device with an Insider build](https://docs.microsoft.com/hololens/hololens-insider#ffu-download-and-flash-directions) will now need to reflash their devices (to either 20325.1000+ or a GA build) in-order to Pair their devices with their PC.
+
+Users who have not enrolled in Windows Insiders and will be taking the feature update when it is generally available are not affected. 
 
 ## Windows Holographic, version 20H2 - March 2021 Update
 - Build 19041.1140
