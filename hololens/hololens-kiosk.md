@@ -495,8 +495,8 @@ Application is automatically launched when user signs-in.
 ### Kiosk mode behavior changes for handling of failures
 Upon encountering failures in applying kiosk mode, the following behavior appears:
 
-- Prior to Windows Holographic, version 20H1 - HoloLens will show all applications in the Start menu.
-- Windows Holographic, version 20H1 - if a device has a kiosk configuration which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership fails, the user will see “nothing shown in start” menu.
+- Prior to Windows Holographic, version 20H2 - HoloLens will show all applications in the Start menu.
+- Windows Holographic, version 20H2 - if a device has a kiosk configuration which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership fails, the user will see “nothing shown in start” menu.
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
