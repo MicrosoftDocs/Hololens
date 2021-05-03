@@ -23,12 +23,12 @@ HoloLens 2 runs on Windows 10 Holographic which provides organizations with robu
 
 The following steps can help guide you through the process of HoloLens 2 adoption within enterprise.
 
-| <span title="Icon">&nbsp;</span> | <span title="Description">&nbsp;</span> |
+| | |
 |--|--|
-| <br> :::image type="icon" source="images/1green.png"::: | <br> [Prepare](#prepare): Review the prepare guide to become familiar with the tools and approaches you need to use. |
-| <br> :::image type="icon" source="images/2green.png"::: | <br> [Configure](#configure): Learn about configuration settings you can use to properly setup your environment. |
-| <br> :::image type="icon" source="images/3green.png"::: | <br> [Deploy](#deploy): Discover how to distribute and deploy your solution securely and efficiently. |
-| <br> :::image type="icon" source="images/4green.png"::: | <br> [Maintain](#maintain): Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
+| ![Step 1](images/1green.png)| [Prepare](#prepare): Review the prepare guide to become familiar with the tools and approaches you need to use. |
+| ![Step 2](images/2green.png) | [Configure](#configure): Learn about configuration settings you can use to properly setup your environment. |
+| ![Step 3](images/3green.png) | [Deploy](#deploy): Discover how to distribute and deploy your solution securely and efficiently. |
+| ![Step 4](images/4green.png) | [Maintain](#maintain): Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
 
 ## Prepare
 
