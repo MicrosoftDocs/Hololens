@@ -2,6 +2,20 @@
 
 
 
+## Week of April 26, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/26/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 4/26/2021 | [Restart, reset, or recover HoloLens](/hololens/hololens-recovery) | modified |
+| 4/26/2021 | [Restart, reset, or recover HoloLens 1](/hololens/hololens1-recovery) | modified |
+| 4/26/2021 | [Prepare a new HoloLens 2](/hololens/hololens2-setup) | modified |
+| 4/28/2021 | [Certificate Manager](/hololens/certificate-manager) | modified |
+| 4/28/2021 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |
+| 4/28/2021 | [Collect and use diagnostic information from HoloLens devices](/hololens/hololens-diagnostic-logs) | modified |
+
+
 ## Week of April 19, 2021
 
 
@@ -58,18 +72,3 @@
 | 3/31/2021 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |
 | 4/1/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
 | 4/2/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-
-
-## Week of March 22, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/22/2021 | [Connect HoloLens to a network](/hololens/hololens-network) | modified |
-| 3/22/2021 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
-| 3/24/2021 | [Deployment Guide - Corporate connected HoloLens 2 with Dynamics 365 Guides - Configure](/hololens/hololens2-corp-connected-configure) | added |
-| 3/24/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Deploy](/hololens/hololens2-corp-connected-deploy) | added |
-| 3/24/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Maintain](/hololens/hololens2-corp-connected-maintain) | added |
-| 3/24/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Overview](/hololens/hololens2-corp-connected-overview) | added |
-| 3/24/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Prepare](/hololens/hololens2-corp-connected-prepare) | added |
-| 3/24/2021 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
