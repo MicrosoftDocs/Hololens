@@ -25,10 +25,10 @@ The following steps can help guide you through the process of HoloLens 2 adoptio
 
 | | |
 |--|--|
-| ![Step 1](images/1green.png)| [Prepare](#prepare): Review the prepare guide to become familiar with the tools and approaches you need to use, understand deployment scenarios and security considerations. |
-| ![Step 2](images/2green.png) | [Configure](#configure): Learn about configuration settings you can use to properly setup your device, identity and access, adn network connectivity . |
-| ![Step 3](images/3green.png) | [Deploy](#deploy): Discover how to install and manage applications, distribute and deploy your applications securely and efficiently. |
-| ![Step 4](images/4green.png) | [Maintain](#maintain): Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
+| ![Step 1](images/1green.png)| <br/> [Prepare](#prepare): Review the prepare guide to become familiar with the tools and approaches you need to use, understand deployment scenarios and security considerations. |
+| ![Step 2](images/2green.png) | <br/> [Configure](#configure): Learn about configuration settings you can use to properly setup your device, identity and access, connectivity, etc. |
+| ![Step 3](images/3green.png) | <br/> [Deploy](#deploy): Discover how to install and manage applications, distribute and deploy your applications securely and efficiently. |
+| ![Step 4](images/4green.png) | <br/> [Maintain](#maintain): Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
 
 ## Prepare
 
