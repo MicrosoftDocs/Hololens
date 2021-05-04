@@ -34,7 +34,7 @@
 ## [How to Update HoloLens](hololens-update-hololens.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
-# Enterprise rollout strategy
+# Planning for Deployment
 ## [Overview](hololens-requirements.md)
 ## Prepare
 ### Common Deployment Scenarios
