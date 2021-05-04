@@ -37,6 +37,7 @@
 # Enterprise readiness
 ## [Overview](hololens-requirements.md)
 ## Prepare
+### [Overview](hololens-readiness-prepare.md)
 ### Common Deployment Scenarios
 #### [Overview](common-scenarios.md)
 #### Cloud connected environment deployment guide
