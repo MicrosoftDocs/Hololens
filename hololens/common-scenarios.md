@@ -25,9 +25,9 @@ This following information provides a high-level architecture overview for three
 The diagram below represents two typical managed scenarios for HoloLens 2 deployments.
 ![Scenarios diagram](images/deployment-guides-revised-scenario-a-b.png) 
 
-There is also third scenario that allows for two types of offline secure deployments.
+There is also third scenario that allows for offline secure deployments.
 ![Offline Secure diagram 1](images/deployment-guides-revised-scenario-c-01.png)
-![Offline Secure diagram 2](images/deployment-guides-revised-scenario-c-02.png)
+
 
 ### Scenario A: Deploy to cloud connected devices
 
