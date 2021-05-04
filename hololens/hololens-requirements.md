@@ -14,7 +14,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# HoloLens 2 enterprise readiness considerations
+# HoloLens 2 rollout strategy
 
 > [!NOTE]
 > This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within the enterprise. For device end users, see the [Basic Usage overview](hololens2-setup.md) to get started.
@@ -25,10 +25,110 @@ The following steps can help guide you through the process of HoloLens 2 adoptio
 
 | | |
 |--|--|
-| ![Step 1](images/1green.png)| <br/> [Prepare](hololens-readiness-prepare.md): Review the prepare guide to become familiar with the tools and approaches you need to use, understand deployment scenarios and security considerations. |
-| ![Step 2](images/2green.png) | <br/> [Configure](#configure): Learn about configuration settings you can use to properly setup your device, manage user identity and access, network connectivity, etc. |
-| ![Step 3](images/3green.png) | <br/> [Deploy](#deploy): Discover how to install/manage, distribute and deploy your applications securely and efficiently. |
-| ![Step 4](images/4green.png) | <br/> [Maintain](#maintain): Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
+| ![Step 1](images/1green.png)| <br/> **[Prepare](#prepare)**: Review the prepare guide to become familiar with the tools and approaches you need to use, understand deployment scenarios and security considerations. |
+| ![Step 2](images/2green.png) | <br/> **[Configure](#configure)**: Learn about configuration settings you can use to properly setup your device, manage user identity and access, network connectivity, etc. |
+| ![Step 3](images/3green.png) | <br/> **[Deploy](#deploy)**: Discover how to install/manage, distribute and deploy your applications securely and efficiently. |
+| ![Step 4](images/4green.png) | <br/> **[Maintain](#maintain)**: Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
+
+## Common Infrastructure Deployment Scenarios
+
+This following information provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise. Often how you manage your devices and how to access your organization's resources is largely determined by factors already in place. Based on the existing infrastructure we invite you to review the common device management style in the following scenarios, and try out our guides for deploying in the scenario matching your needs.
+
+### Scenarios
+
+The diagram below represents three typical scenarios for HoloLens 2 deployments.
+![Scenarios diagram](images/scenarios.jpg)
+
+### Scenario A: Deploy to cloud connect devices
+
+HoloLens 2 is deployed for use primarily in environments external to a corporate network. Corporate resources aren't accessed or may be limited through VPN. This  deployment is similar to managed mobile devices within a company.
+ * Basic Common Configurations
+   * Wi-Fi networks are typically fully open to the Internet and Cloud services.
+   * Azure AD Join with Mobile Device Management (MDM) Auto Enrollment--MDM (Intune) Managed
+   * Users sign in with their own corporate account (Azure AD)
+     * Single or multiple users per device supported
+   * Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk.
+   * One or more applications are deployed via MDM
+
+* Common Challenges
+   * Determining which MDM configurations to apply to the HoloLens 2 based on scenario requirements.
+
+For a deployment guide that is similar to this scenario review our guide for [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md).
+
+> [!div class="nextstepaction"]
+> [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md)
+> [!div class="nextstepaction"]
+> [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
+
+### Scenario B: Deploy inside your organization's network
+
+HoloLens 2 is deployed for use primarily on the corporate network with access to internal corporate resources. Internet and cloud services may be limited. This deployment is a typical deployment for most Windows 10 PCs.
+
+ * Basic Common Configurations
+   * Wi-Fi network is an internal corporate network with access to internal resources, and limited access to the internet or Cloud services.
+   * Azure AD Join with MDM Auto Enrollment
+   * MDM (Intune) Managed
+   * Users sign in with their own corporate account (Azure AD)
+     * Single or multiple users per device supported
+   * Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk.
+   * One or more applications are deployed via MDM
+
+ * Common Challenges
+   * HoloLens 2 doesn't support on premises AD join or SCCM. Only Azure AD join with MDM. Many companies today still deploy Windows 10 PCs in this scenario as on premises AD joined devices, managed by System Center Configuration Manager (SCCM) and may not have the infrastructure deployed/configured for managing internal Windows 10 devices via cloud-based MDM solutions.
+   * As HoloLens 2 is a cloud first device, it relies heavily on internet and cloud connected services for User authentication, OS updates, MDM management, and so on. When connecting to a corporate network, Proxy/Firewall rules will most likely need to be adjusted to enable access for HoloLens 2 and the applications that run on it.
+   * Corporate Wi-Fi connectivity typically requires certificates to authenticate the device or user to the network. The required infrastructure or settings to deploy certificates to Windows 10 devices through MDM can be challenging to configure.
+
+For a deployment guide that is similar to this scenario review our guide for [Corporate network deployment guide](hololens2-corp-connected-overview.md).
+
+> [!div class="nextstepaction"]
+> [Corporate network deployment guide](hololens2-corp-connected-overview.md)
+
+### Scenario C: Deploy in secure offline environment
+
+HoloLens 2 is deployed for use primarily offline with no network or internet access. This is a typical deployment for highly secure or confidential locations.
+ * Basic Common Configurations
+   * Wi-Fi connectivity is disabled. Ethernet via USB may be enabled for LAN connectivity if necessary.
+   * Not Managed.
+   * Local user account for device sign-in.
+     * HoloLens 2 supports only one local account.
+   * Varying levels of device lockdown configurations are applied via Provisioning Packages based on specific use cases. These configurations are typically restricted because of secure environment requirements.
+   * One or more applications are deployed via Provisioning Package
+
+ * Common Challenges
+   * There's a limited set of configurations available through Provisioning Packages
+   * Cloud services aren't able to be used, therefore limiting the HoloLens 2 capabilities.
+   * Higher administrative overhead since these devices have to be set up, configured, and updated manually.
+
+For a deployment guide that is similar to this scenario review our [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md).
+
+> [!div class="nextstepaction"]
+> [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
+
+## Prepare
+
+As you prepare to deploy HoloLens 2 to your corporate enterprise environment, there are several considerations that should be reviewed and understood as you begin to plan for scale deployments of HoloLens 2.
+
+### Infrastructure Essentials
+
+For HoloLens 2 in a corporate enterprise deployment scenario, there are certain essential infrastructure services required to support the full set of capabilities. HoloLens 2 was built with [Modern Mobile Device Management](https://www.microsoft.com/itshowcase/managing-windows-10-devices-with-microsoft-intune) in mind for deployment and management. With Azure AD Join + MDM as the primary means of achieving that in an ever-increasing mobile workforce. The below topics provide a brief overview of each infrastructure component that should be considered in your deployment planning for HoloLens 2.
+
+### Azure Active Directory
+Azure AD is a cloud-based directory service that provides identity and access management. You can integrate it with existing on-premises directories to create a hybrid identity solution. Organizations that use Microsoft Office 365 or Intune are already using Azure AD, which has three editions: Free, Premium P1, and Premium P2 (see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions/)). All editions support Azure AD device registration, but Premium P1 is required to enable MDM auto-enrollment. HoloLens 2 requires Azure Active Directory Join to enable most enterprise level features and functionality.
+
+> [!NOTE]
+> On premises Active Directory Join is not supported on HoloLens 2.
+
+### Mobile Device Management
+HoloLens 2 is designed specifically to be managed by Mobile Device Management (MDM) systems in an enterprise environment. Microsoft [Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices in the enterprise. Like Office 365, Intune uses Azure AD for identity management, so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM systems can also manage application deployments and updates for the HoloLens 2 as well. Other MDM providers that support HoloLens 2 currently include: AirWatch, MobileIron, and others. All MDM system vendors have equal access to Windows 10 device management configuration service providers (CSP)s, giving IT organizations the freedom to select whichever system best fits their management requirements, whether Microsoft Intune or a third-party MDM product.
+
+> [!NOTE]
+> Traditional on premises PC management systems like System Center Configuration Manager are not supported on HoloLens 2.
+
+### Windows Update for Business
+Microsoft designed Windows Update for Business to provide IT administrators with additional Windows Update-centric management capabilities, such as the ability to deploy updates to groups of devices and to define maintenance windows for installing updates. See the [HoloLens updates](https://docs.microsoft.com/hololens/hololens-updates) documentation for details on managing HoloLens 2 updates.
+
+### Certificates
+HoloLens 2 supports deployment of certificates through MDM if your environment requires certificates for Corp Wi-Fi network authentication or access to other resources. Some MDM infrastructure configurations may be required to enable certificate deployments to HoloLens 2. Read about how to [prepare certificates and network profiles for HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). If you're using Intune, check out the [certification configuration](https://docs.microsoft.com/mem/intune/protect/certificates-configure) details.
 
 ## Configure
 

@@ -34,12 +34,10 @@
 ## [How to Update HoloLens](hololens-update-hololens.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
-# Enterprise readiness
+# Enterprise rollout strategy
 ## [Overview](hololens-requirements.md)
 ## Prepare
-### [Overview](hololens-readiness-prepare.md)
 ### Common Deployment Scenarios
-#### [Overview](common-scenarios.md)
 #### Cloud connected environment deployment guide
 ##### [Overview](hololens2-cloud-connected-overview.md)
 ##### [Prepare](hololens2-cloud-connected-prepare.md)
