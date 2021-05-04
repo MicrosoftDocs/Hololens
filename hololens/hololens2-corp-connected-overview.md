@@ -47,7 +47,9 @@ The following infrastructure should already be in place:
 - Power BI Desktop
 - Network Connectivity
 
-![Corp connected network diagram](./images/corpconnected-diagHL2-guides.png)
+![Corp connected network diagram, stage 1](./images/deployment-guides-revised-scenario-b-01-1.png)
+
+![Corp connected network diagram, stage 2](./images/deployment-guides-revised-scenario-b-02-1.png)
 
 ## Stages of Deployment
 ### Prepare
