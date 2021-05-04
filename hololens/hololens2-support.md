@@ -155,6 +155,6 @@ To provide feedback, share an idea or suggestions for Microsoft mixed reality se
 
 - HoloLens 2, see the [HoloLens Troubleshooting](../hololens/hololens-troubleshooting.md) page
 - Windows Mixed Reality, see the [FAQ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) page
-- Azure Remote Rendering, see the [FAQ](https://docs.microsoft.com/en-us/azure/remote-rendering/resources/troubleshoot) page
+- Azure Remote Rendering, see the [FAQ](https://docs.microsoft.com/azure/remote-rendering/resources/troubleshoot) page
 - Azure Spatial Anchors, see the [FAQ](https://docs.microsoft.com/azure/spatial-anchors/spatial-anchor-faq) page
 - Azure Object Anchors, see the [FAQ](https://docs.microsoft.com/azure/object-anchors/faq) page
