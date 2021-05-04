@@ -112,7 +112,7 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 
 ### Open an Azure portal technical support ticket
 
-To open a technical support ticket on the Azure Portal for Azure Spatial Anchors, Azure Object Anchors or Azure Remote Rendering:
+To open a technical support ticket on the Azure portal for Azure Spatial Anchors, Azure Object Anchors or Azure Remote Rendering:
 
 1. With the [Azure portal](https://azure.microsoft.com/account/) open, select the help icon from the top menu bar, then select the **Help + support** button.
 
