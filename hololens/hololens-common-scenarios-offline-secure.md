@@ -30,8 +30,6 @@ This guide provides guidance for applying a sample Provisioning Package that wil
 
 ![Offline Secure 1 scenario](./images/deployment-guides-revised-scenario-c-01.png)
 
-![Offline Secure 2 scenario](./images/deployment-guides-revised-scenario-c-02.png)
-
 ## Prepare
 
 Windows 10 PC Setup
