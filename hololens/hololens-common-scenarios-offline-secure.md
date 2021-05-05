@@ -28,6 +28,8 @@ This guide provides guidance for applying a sample Provisioning Package that wil
 -	Prevents adding or removing provisioning packages.
 -	No user can enable any of the above restricted components.
 
+[ ![Offline Secure scenario](./images/deployment-guides-revised-scenario-c-01.png) ](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
+
 ## Prepare
 
 Windows 10 PC Setup
