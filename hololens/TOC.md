@@ -36,24 +36,23 @@
 
 # Planning for Implementation
 ## [Overview](hololens-requirements.md)
-## Prepare
-### Common Deployment Scenarios
-#### Cloud connected environment deployment guide
-##### [Overview](hololens2-cloud-connected-overview.md)
-##### [Prepare](hololens2-cloud-connected-prepare.md)
-##### [Configure](hololens2-cloud-connected-configure.md)
-##### [Deploy](hololens2-cloud-connected-deploy.md)
-##### [Maintain](hololens2-cloud-connected-maintain.md)
+## Common Deployment Scenarios
+### Cloud connected environment deployment guide
+#### [Overview](hololens2-cloud-connected-overview.md)
+#### [Prepare](hololens2-cloud-connected-prepare.md)
+#### [Configure](hololens2-cloud-connected-configure.md)
+#### [Deploy](hololens2-cloud-connected-deploy.md)
+#### [Maintain](hololens2-cloud-connected-maintain.md)
 
 #### [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
-#### Corporate network deployment guide
-##### [Overview](hololens2-corp-connected-overview.md)
-##### [Prepare](hololens2-corp-connected-prepare.md)
-##### [Configure](hololens2-corp-connected-configure.md)
-##### [Deploy](hololens2-corp-connected-deploy.md)
-##### [Maintain](hololens2-corp-connected-maintain.md)
-#### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
-
+### Corporate network deployment guide
+#### [Overview](hololens2-corp-connected-overview.md)
+#### [Prepare](hololens2-corp-connected-prepare.md)
+#### [Configure](hololens2-corp-connected-configure.md)
+#### [Deploy](hololens2-corp-connected-deploy.md)
+#### [Maintain](hololens2-corp-connected-maintain.md)
+### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
+## Prepare
 ### Security
 #### [Security overview](security-overview.md)
 #### [Architecture](security-architecture.md)
