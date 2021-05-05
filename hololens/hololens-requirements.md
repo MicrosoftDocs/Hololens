@@ -1,5 +1,5 @@
 ---
-title: Planning HoloLens 2 Deployment in a commercial environment
+title: Planning HoloLens 2 Implementation in a commercial environment
 description: Learn more about deploying and managing HoloLens in enterprise environments, including infrastructure, azure active directory, and mobile device management.
 ms.prod: hololens
 ms.sitesec: library
@@ -14,7 +14,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Planning HoloLens 2 Deployment in a commercial environment
+# Planning HoloLens 2 Implementation in a commercial environment
 
 > [!NOTE]
 > This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within an organization. For device end users, see the [Basic Usage overview](hololens2-setup.md) to get started.
@@ -25,12 +25,13 @@ The following steps can help guide you through the process of HoloLens 2 adoptio
 
 | | |
 |--|--|
-| ![Step 1](images/1green.png)| <br/> **[Prepare](#prepare)**: Review the prepare guide to become familiar with the tools and approaches you need to use, understand deployment scenarios and security considerations. |
-| ![Step 2](images/2green.png) | <br/> **[Configure](#configure)**: Learn about configuration settings you can use to properly setup your device, manage user identity and access, network connectivity, etc. |
-| ![Step 3](images/3green.png) | <br/> **[Deploy](#deploy)**: Discover how to install/manage, distribute and deploy your applications securely and efficiently. |
-| ![Step 4](images/4green.png) | <br/> **[Maintain](#maintain)**: Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
+| ![Step 1](images/1green.png)| <br/> **[Common Deployment Scenarios](#common-deployment-scenarios)**: Understand deployment scenarios and explore the core components needed to deploy HoloLens 2 devices. |
+| ![Step 2](images/2green.png)| <br/> **[Prepare](#prepare)**: Review the prepare guide to become familiar with the tools and approaches you need to use and security considerations. |
+| ![Step 3](images/3green.png) | <br/> **[Configure](#configure)**: Learn about configuration settings you can use to properly setup your device, manage user identity and access, network connectivity, etc. |
+| ![Step 4](images/4green.png) | <br/> **[Deploy](#deploy)**: Discover how to install/manage, distribute and deploy your applications securely and efficiently. |
+| ![Step 5](images/5green.png) | <br/> **[Maintain](#maintain)**: Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
 
-## Common Infrastructure Deployment Scenarios
+## Common Deployment Scenarios
 
 This following information provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise. Often how you manage your devices and how to access your organization's resources is largely determined by factors already in place. Based on the existing infrastructure we invite you to review the common device management style in the following scenarios, and try out our guides for deploying in the scenario matching your needs.
 
