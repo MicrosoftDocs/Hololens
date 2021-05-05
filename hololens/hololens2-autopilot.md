@@ -110,7 +110,7 @@ There are two primary ways to register HoloLens devices:
 
 The device records its hardware hash in a CSV file during the OOBE process, or later when a device owner starts the diagnostic log collection process (described in the following procedure). Typically, the device owner is the first user to sign in to the device.
 >[!WARNING]
-In builds 19041.1144 and lower, if you have gone through OOBE and the telemetry was set to Required, you cannot collect the hardware hash for Autopilot through this method.
+In builds 19041.1144 and lower, if you have gone through OOBE and the telemetry was set to Required, you cannot collect the hardware hash for Autopilot through this method. In order to collect your hardware hash via this method set your telemetry option to Full via the Settings App and select Privacy -> Diagnostics.
 
 1. Start the HoloLens 2 device.
 
