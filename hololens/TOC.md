@@ -33,6 +33,12 @@
 # How-to guides
 ## [How to Update HoloLens](hololens-update-hololens.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
+## Troubleshoot
+### [General troubleshooting](hololens-troubleshooting-overview.md)
+### [Troubleshoot common issues](hololens-troubleshooting.md)
+### [Enable diagnostic logs](hololens-diagnostic-logs.md)
+### [Known issues and workarounds](hololens-known-issues.md)
+### [Reset HoloLens 2](hololens-recovery.md)
 
 # Implementation planning
 ## [Overview](hololens-requirements.md)
@@ -116,18 +122,13 @@
 ### [HoloLens 2 release notes](hololens-release-notes.md)
 ### [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
-## Troubleshooting
-### [Troubleshoot common issues](hololens-troubleshooting.md)
-### [Known issues](hololens-known-issues.md)
-### [Collect diagnostic information](hololens-diagnostic-logs.md)
-### [Reset HoloLens 2](hololens-recovery.md)
-### FAQ
-#### [General](hololens-faq.md)
-#### [HoloLens 2 display](hololens2-display.md)
-#### [HoloLens 2 fit and comfort](hololens2-fit-comfort-faq.md)
-#### [HoloLens 2 cleaning](hololens2-maintenance.md)
-#### [HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
-#### [HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md)
+## FAQ
+### [General](hololens-faq.md)
+### [HoloLens 2 display](hololens2-display.md)
+### [HoloLens 2 fit and comfort](hololens2-fit-comfort-faq.md)
+### [HoloLens 2 cleaning](hololens2-maintenance.md)
+### [HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
+### [HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md)
 ## HoloLens (1st gen)
 ### [About HoloLens (1st gen)](hololens1-hardware.md)
 ### [Basic usage overview](hololens1-setup.md)
