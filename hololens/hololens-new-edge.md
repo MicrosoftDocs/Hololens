@@ -17,7 +17,7 @@ manager: yannisle
 
 The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) to create better compatibility for customers and less fragmentation of the web for web developers.
 
-With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), the new Microsoft Edge is available to HoloLens 2 customers for the first time! While the new Microsoft Edge will eventually replace legacy Microsoft Edge on HoloLens 2, both browsers are currently available to Insiders. Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge or via [Feedback Hub](hololens-feedback.md).
+With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), the new Microsoft Edge is available to HoloLens 2 customers for the first time! Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge or via [Feedback Hub](hololens-feedback.md).
 
 ![New Microsoft Edge screenshot](images/new-edge-ui.png)
 
