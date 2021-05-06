@@ -23,7 +23,7 @@ This article describes how to resolve several common HoloLens issues.
 
 If your HoloLens won't start:
 
-- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens-recovery.md#charge-the-device)
+- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens-troubleshooting-overview.md#charge-the-device)
 - If the LEDs light up when you press the power button but you can't see anything on the displays, [preform a hard reset of the device](hololens-recovery.md#hard-reset-procedure).
 
 If your HoloLens becomes frozen or unresponsive:
