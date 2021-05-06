@@ -47,14 +47,20 @@ If the device is correctly booted and running, there are three ways to check the
 If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the guide [Troubleshoot common issues](hololens-troubleshooting.md). If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
 ## Diagnostic logs
+
 Enable collection of data from HoloLens device to capture and view diagnostic logs. For more information, see [Enable diagnostic logs](hololens-diagnostic-logs.md).
 
 ## Common or known issues
-There are several common HoloLens issues, such as the device is unresponsive or holograms don't look good. To learn how to resolve these issues, see [Troubleshoot common issues](hololens-troubleshooting.md). Additionally take a look at the [Know issues and workarounds](hololens-known-issues.md) article.
+
+There are different issues you might experience while using your HoloLens. To learn how to resolve these issues, see [Troubleshoot common issues](hololens-troubleshooting.md). Additionally take a look at the [Know issues and workarounds](hololens-known-issues.md) article.
+
+## Frequently asked questions
+
+Check the list of commonly asked questions about HoloLens [General FAQ](hololens-faq.md).
 
 ## Next steps
 
-If you couldn't find a solution or need more help, navigate to the page [Support and help options](hololens2-support.md).
+If you couldn't find a solution or need more help, please visit the page [Support and help options](hololens2-support.md).
 
 > [!div class="nextstepaction"]
 > [Support and help options](hololens2-support.md)
