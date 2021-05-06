@@ -26,7 +26,7 @@ With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holog
 The new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) and legacy Microsoft Edge (represented by the white "e" icon). The new Microsoft Edge is pinned to the Start menu and will automatically launch when you activate a web link. This new Microsoft Edge automatically replaces the old Microsoft Edge for convivence. 
 
 > [!NOTE]
-> When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge. If you continue to use legacy Microsoft Edge after launching the new Microsoft Edge, that new data will not be synced from legacy Microsoft Edge to the new Microsoft Edge.
+> When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge.
 
 ## Configuring policy settings for the new Microsoft Edge
 
