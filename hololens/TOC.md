@@ -34,7 +34,7 @@
 ## [How to Update HoloLens](hololens-update-hololens.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
-# Planning for Implementation
+# Implementation planning
 ## [Overview](hololens-requirements.md)
 ## Common Deployment Scenarios
 ### Cloud connected environment deployment guide
