@@ -571,6 +571,23 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 ### Improvements and fixes in the update:
 
 - [Offline diagnostics](hololens-diagnostic-logs.md#offline-diagnostics) will also include additional device information for serial number and OS version.
+- Fixes an issue around deployment of line of business applications via runtime provisioning packages.
+- Fixes an issue around line of business application install status reporting.
+- Fixes an issue around the persistence of new app packages across device resets.
+- Fixes an issue that could lead to incorrect symbols being typed in Edge for Japanese customers.
+- Improves the resiliency of OS updates around preinstalled apps such as Edge. 
+- Addresses an update reliability impacting the installation of Microsoft Edge. 
+
+## Windows Holographic, version 1903 – May 2021 Update
+- Build 18362.1110
+
+Improvements and fixes in the update:
+- This monthly quality update doesn't contain any notable changes. **This build will no longer be receiving monthly service updates**. We encourage you to try out our latest build, Windows Holographic, version 21H1.
+
+## Windows Holographic, version 20H2 – May 2021 Update
+- Build 19041.1146
+Improvements and fixes in the update:
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H1.
 
 ## Windows Holographic, version 20H2 - April 2021 Update
 - Build 19041.1144
