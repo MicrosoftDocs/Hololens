@@ -117,7 +117,6 @@ Read more about the currently available [endpoints for HoloLens](hololens-offlin
 
 ## WebXR and 360 Viewer
 
-*Added in Windows Insider build 20289.1000*
 
 The new Microsoft Edge includes support for WebXR, which is the new standard for creating immersive web experiences (replacing WebVR). Many immersive web experiences were designed with VR in mind (they replace your field of view with a virtual environment), but these experiences are also supported by HoloLens 2. The WebXR standard also enables augmented and mixed reality immersive web experiences that use your physical environment. As developers spend more time with WebXR, we anticipate new augmented and mixed reality immersive experiences will arrive for HoloLens 2 customers to try!
 
