@@ -47,9 +47,11 @@ The following infrastructure should already be in place:
 - Power BI Desktop
 - Network Connectivity
 
-![Corp connected network diagram](./images/corpconnected-diagHL2-guides.png)
+[ ![Corp connected network diagram, stage 1](./images/deployment-guides-revised-scenario-b-01-1.png) ](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-## Stages of Deployment
+[ ![Corp connected network diagram, stage 2](./images/deployment-guides-revised-scenario-b-02-1.png) ](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+
+## In this guide you will:
 ### Prepare
 > [!div class="checklist"]
 >- [Learn about the infrastructure essentials for HoloLens 2 devices.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
