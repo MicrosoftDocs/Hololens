@@ -2,6 +2,18 @@
 
 
 
+## Week of May 03, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/4/2021 | [Learn more about Mixed Reality support options](/hololens/hololens2-support) | modified |
+| 5/5/2021 | [Common Infrastructure Deployment Scenarios](/hololens/common-scenarios) | modified |
+| 5/5/2021 | [Common Scenarios – Offline Secure HoloLens 2](/hololens/hololens-common-scenarios-offline-secure) | modified |
+| 5/5/2021 | [Overview of Cloud connected HoloLens 2 with Remote Assist](/hololens/hololens2-cloud-connected-overview) | modified |
+| 5/5/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Overview](/hololens/hololens2-corp-connected-overview) | modified |
+
+
 ## Week of April 26, 2021
 
 
@@ -61,14 +73,3 @@
 | 4/5/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
 | 4/8/2021 | [Frequently asked questions about HoloLens devices and holograms](/hololens/hololens-faq) | modified |
 | 4/8/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
-
-
-## Week of March 29, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/29/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 3/31/2021 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |
-| 4/1/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 4/2/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
