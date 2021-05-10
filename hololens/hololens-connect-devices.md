@@ -116,7 +116,7 @@ In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers
 ![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
 ### USB-C Hubs
 
-Some users may need to connect multiple devices at once. For users who would like to preview an Insider feature and use a [USB-C microphone](#usb-c-external-microphone-support) along with another connected device, USB-C hubs may fit the customer's need. Microsoft has not tested these devices, nor can we recommend any specific brands.
+Some users may need to connect multiple devices at once. For users who would like to use a [USB-C microphone](#usb-c-external-microphone-support) along with another connected device, USB-C hubs may fit the customer's need. Microsoft has not tested these devices, nor can we recommend any specific brands.
 
 **Requirements for USB-C hub and connected devices:**
 
