@@ -104,10 +104,10 @@ The diagnostic information remains in these locations until the user deletes it.
 
 ## DiagnosticLog CSP
 
-In a Mobile Device Management (MDM) environment, the IT administrator can use the the [DiagnosticLog configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) to configure diagnostic settings on enrolled HoloLens devices. The IT administrator can configure these settings to collect logs from enrolled devices.
+In a Mobile Device Management (MDM) environment, the IT administrator can use the the [DiagnosticLog configuration service provider (CSP)](/windows/client-management/mdm/diagnosticlog-csp) to configure diagnostic settings on enrolled HoloLens devices. The IT administrator can configure these settings to collect logs from enrolled devices.
 
 See more:
-- [Collect diagnostics from a Windows device](https://docs.microsoft.com/mem/intune/remote-actions/collect-diagnostics)
+- [Collect diagnostics from a Windows device](/mem/intune/remote-actions/collect-diagnostics)
 - [Intune Public Preview - Windows 10 Device diagnostics](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
 
 ### Prerequisites
@@ -134,12 +134,12 @@ This works when the device shows up in File Explorer after connecting it to a PC
 > Offline Diagnostics generation and management is controlled differently depending on your OS version. Previously it was controlled by the telemetry setting, but is now directly controlled via MDM policy. If disabled via either setting or MDM policy, then diagnostic logs cannot be collected using this mechanism.
 
 Behavior Prior to [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
- - Offline diagnostics is only enabled when user is either going through OOBE or [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) policy value is set to Full (Basic is default value on HoloLens). 
+ - Offline diagnostics is only enabled when user is either going through OOBE or [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) policy value is set to Full (Basic is default value on HoloLens). 
 - To disable Offline diagnostics, go to **Settings App > Privacy** page and select **Basic** in **Diagnostic Data**. On builds where offline diagnostics depends on telemetry setting, it only impacts whether any logs are collected or not. It does not impact what files are collected.
 - If device is locked then logs won't appear.
 
 On builds [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) and onwards:
-- When Fallback Diagnostics is enabled will be controlled by specific MDM policy with corresponding setting [MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
+- When Fallback Diagnostics is enabled will be controlled by specific MDM policy with corresponding setting [MixedReality/FallbackDiagnostics](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
 - If device is locked then logs won't appear.
 
 Watch this video to learn more.
