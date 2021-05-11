@@ -123,6 +123,8 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Battery <sup>2</sup>           | `ms-settings:batterysaver`<br>|
 | Battery <sup>2</sup>           | `ms-settings:batterysaver-settings`<br>|
 | Colors             | `ms-settings:colors`<br>`ms-settings:personalization-colors` |
+| Holograms <sup>2</sup>  |  `ms-settings:holograms`  |
+| Calibration <sup>2</sup> |  `ms-settings:calibration` |
 | Notifications & actions  | `ms-settings:notifications`          |
 | Shared Experiences | `ms-settings:crossdevice` 
 | Sound <sup>2</sup>           | `ms-settings:sound`<br>|
@@ -145,7 +147,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Settings page                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Advanced Options                    | `ms-settings:windowsupdate-options`         |
-| Reset & Recovery                    | `ms-settings:reset`         |
+| Reset & Recovery <sup>2</sup>      | `ms-settings:reset`         |
 | Windows Insider Program               | `ms-settings:windowsinsider` <br>`ms-settings:windowsinsider-optin`          |
 | Windows Update                        | `ms-settings:windowsupdate`<br> `ms-settings:windowsupdate-activehours`  <br> `ms-settings:windowsupdate-history` <br> `ms-settings:windowsupdate-optionalupdates` <br><sup>1</sup>`ms-settings:windowsupdate-options`<br><sup>1</sup>`ms-settings:windowsupdate-restartoptions` |
 | Windows Update - Checks for updates | `ms-settings:windowsupdate-action`          |
