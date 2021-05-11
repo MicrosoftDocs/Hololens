@@ -580,8 +580,12 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 ## Windows Holographic, version 20H2 – May 2021 Update
 - Build 19041.1146
+
 Improvements and fixes in the update:
 - This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H1.## Windows Holographic, version 1903 – May 2021 Update
+- Build 18362.1110
+
+## Windows Holographic, version 1903 - May 2021 Update
 - Build 18362.1110
 
 Improvements and fixes in the update:
