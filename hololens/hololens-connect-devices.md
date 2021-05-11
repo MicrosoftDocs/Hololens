@@ -74,15 +74,15 @@ HoloLens 2 supports the following classes of USB-C devices:
 
 
 > [!NOTE]
-> In response to customer feedback we have enabled limited support for cellular connectivity tethered directly to the HoloLens via USB-C. See [Connect to Cellular and 5G](hololens-cellular.md) for more information.
+> In response to customer feedback, we have enabled limited support for cellular connectivity tethered directly to the HoloLens via USB-C. See [Connect to Cellular and 5G](hololens-cellular.md) for more information.
 
 ### USB-C External Microphone Support
 
 > [!IMPORTANT]
-> Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
+> Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones, users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
 
 > [!NOTE]
-> External microphones cannot be used in builds prior to [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and higher). 
+> External microphones cannot be used in builds prior to [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and higher. 
 
 Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C microphones can be used for calling, recording, etc.
 
@@ -105,7 +105,7 @@ Open the **Settings** app and select **System** > **Sound**.
 
 #### What about Bluetooth microphone support?
 
-Unfortunately Bluetooth microphones are still not currently supported on HoloLens 2.
+Unfortunately, Bluetooth microphones are still not currently supported on HoloLens 2.
 
 #### Troubleshooting USB-C microphones
 
@@ -129,7 +129,7 @@ To use Miracast, follow these steps:
 
 1. Do one of the following:  
 
-   - Open the **Start** menu, and select the display icon.
+   - Open the **Start** menu, and select the **Display** icon.
    - Say "Connect" while you gaze at the **Start** menu.  
 
 1. On the list of devices that appears, select an available device.

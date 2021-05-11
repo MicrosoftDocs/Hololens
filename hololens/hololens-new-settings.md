@@ -21,6 +21,8 @@ With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holog
 
 **New features and settings**
 - Settings search: search for settings from the Settings homepage using keywords or the setting's name.
+- System > [Color calibration](hololens2-display.md#how-to-use-display-color-calibration)
+    - Select an alternative color profile for your HoloLens 2 display.
 - System > Sound:
   - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input).
     > [!NOTE]
@@ -43,18 +45,3 @@ With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holog
 - The Ethernet page shows a virtual Ethernet device ("UsbNcm") at all times.
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
 
-## Default app picker
-
-When you activate a hyperlink or open a file type with more than one installed app, which supports it, you will see a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
-
-![App picker window](images/default-app-picker.png)
-
-If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. Scroll to the bottom of the page and select the **Clear** button under "Default apps for file types" and/or "Default apps for link types." Unlike the similar setting on desktop PCs, you can't reset individual file type defaults.
-
-## Per app volume control
-
-With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), users can manually adjust the volume level of each app. This allows for users to better focus on the apps that they need to, or better hear when using multiple apps. Such as needing to turn down volume of one app while calling another person for remote assistance in another.
-
-To set the volume of an individual app navigate to **Settings** -> **System** -> **Sound**, and under Advanced sound options select **App volume and device preferences**.
-
- <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />

@@ -42,11 +42,11 @@ This update contains features for two target audiences; features that can be use
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
 | [New Microsoft Edge](#introducing-the-new-microsoft-edge)  | The new, Chromium-based Microsoft Edge is now available for HoloLens 2. | End User | 
 [WebXR and 360 Viewer](#webxr-and-360-viewer) | Try immersive web experiences and 360 video playback. | End User | 
-[New Settings App](#new-settings-app) | The legacy Settings app is being replaced by an updated version with new features and settings. | End User |
+[New Settings app](#new-settings-app) | The legacy Settings app is being replaced by an updated version with new features and settings. | End User |
 [Display color calibration](#display-color-calibration) | Select an alternative color profile for your HoloLens 2 display. | End User |
 [Default app picker](#default-app-picker) | Choose which app should launch for each file or link type. | End User |
 [Per app volume control](#per-app-volume-control) | Control app level volume independently from system volume. | End User |
-[Office web app](#office-web-app) | A shortcut to the Office web app is now listed in "All apps". | End User |
+[Install web apps](#install-web-apps) | Install web apps on HoloLens 2, like Microsoft Office, with the new Microsoft Edge browser. | End User |
 [Swipe to type](#swipe-to-type) | Use the tip of your finger to "swipe" words on the holographic keyboard. | End User |
 [Power menu from Start](#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device. | End User |
 [Multiple users listed on Sign in screen](#multiple-users-listed-on-sign-in-screen) | Display multiple user accounts on the Sign in screen. | End User |
@@ -166,6 +166,14 @@ For IT Admins looking to update their [WDAC policy](windows-defender-application
 Some environments may have network restrictions to account for as a consideration. To ensure a smooth experience with the new Edge please [enable these Microsoft endpoints.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
 
 Read more about the currently available [endpoints for HoloLens](hololens-offline.md).
+
+### Install web apps
+ > [!Note]
+>As of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), the Office web app will no longer be pre-installed.
+
+You can use the new Edge to install web apps alongside Microsoft Store apps. For example, you can install the Microsoft Office web app to view and edit files hosted on SharePoint or OneDrive. To install the Office web app, visit https://www.office.com and select the **App Available** or **Install Office** button in the address bar. Select **Install** to confirm.
+
+> [!IMPORTANT]Office web app functionality is only available when your HoloLens 2 has an active internet connection.
 
 ### WebXR and 360 Viewer
 
@@ -301,21 +309,11 @@ To set the volume of an individual app navigate to **Settings** -> **System** ->
 
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
-#### Office web app
- > [!Note]
-> As of Windows Insider build 20325.1000, the Office web app will no longer be pre-installed (and will not be pre-installed for the upcoming public release of the OS update. To install the Office web app, visit https://www.office.com and select the **App Available** or **Install Office** button in the address bar. Select **Install** to confirm.
-
-The Office web app has been added to the "All apps" list in the Start menu. This web app can also be pinned to Start or uninstalled. Because this is a web app, its functionality matches exactly what you'd experience by visiting https://www.office.com. Office web app functionality is only available when your HoloLens 2 has an active internet connection.
-
-Known issue
-
--  Resetting your device will remove the Office web app.
-
 #### Swipe to type
 
 Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the space bar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
 
-Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). We are evaluating this feature for public release, so your feedback is important; whether you find the feature useful or you have constructive feedback, please let us know via [Feedback Hub](hololens-feedback.md).
+Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). 
 
 ### Power menu from Start
 
@@ -604,14 +602,6 @@ Improvements and fixes in the update:
 
 - Addresses an issue where the Settings app crashes when attempting to change a password for a local account.
 
-
-### Known Issues and Work around
-#### Pairing HoloLens to PC
-Prior to the Windows Insider build 20325.1000, when a user had set Pairing credentials on either [Windows Holographic, version 20H2](https://docs.microsoft.com/hololens/hololens-release-notes#windows-holographic-version-20h2) or [Windows Holographic, version 2004](https://docs.microsoft.com/hololens/hololens-release-notes#windows-holographic-version-2004) and updated to the Windows Insider builds, their previous set credentials for pairing the HoloLens with the PC for purposes of deploying and debugging apps such as via Visual Studio no longer worked. Windows Insider build 20325.1000 fixes this issue and requires no additional actions to resume using device portal.
-
-Users who have [flashed their device with an Insider build](https://docs.microsoft.com/hololens/hololens-insider#ffu-download-and-flash-directions) will now need to reflash their devices (to either 20325.1000+ or a GA build) in-order to Pair their devices with their PC.
-
-Users who have not enrolled in Windows Insiders and will be taking the feature update when it is generally available are not affected. 
 
 ## Windows Holographic, version 20H2 - March 2021 Update
 - Build 19041.1140

@@ -82,6 +82,22 @@ To exit an app that uses immersive view, use the Start gesture to bring up the *
 
 If an immersive app is in a broken state and you need to restart it, you can make sure the app is first completely shut down by closing its launcher in mixed reality home, then launching it from the Start menu.
 
+### Default app picker
+
+With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), when you activate a hyperlink or open a file type with more than one installed app, which supports it, you will see a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
+
+![App picker window](images/default-app-picker.png)
+
+If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. Scroll to the bottom of the page and select the **Clear** button under "Default apps for file types" and/or "Default apps for link types." Unlike the similar setting on desktop PCs, you can't reset individual file type defaults.
+
+### Per app volume control
+
+With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), users can manually adjust the volume level of each app. This allows for users to better focus on the apps that they need to, or better hear when using multiple apps. Such as needing to turn down volume of one app while calling another person for remote assistance in another.
+
+To set the volume of an individual app navigate to **Settings** -> **System** -> **Sound**, and under Advanced sound options select **App volume and device preferences**.
+
+ <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
+
 ## Related info
 
 [Find, Install, and Uninstall applications from the Microsoft Store](holographic-store-apps.md)

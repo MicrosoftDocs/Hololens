@@ -18,49 +18,6 @@ appliesto:
 
 The HoloLens 2 display is a combination of waveguides and light projectors. Users look through the waveguides—the lenses inside the visor—when wearing the headset. The light projectors are inside the enclosure above the brow. HoloLens 2 uses laser light to illuminate the display.
 
-## Display color calibration
-
-On [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards, you can select an alternative color profile for your HoloLens 2 display. This may help colors appear more accurate, especially at lower display brightness levels. Display color calibration can be found in the Settings app, on the System > Calibration page.
-
-> [!NOTE]
-> Because this setting saves a new color profile to your display firmware, it is a per-device setting (and not unique to each user account).
-
-#### How to use display color calibration
-
-1. Launch the **Settings** app and navigate to **System > Calibration**.
-1. Under **Display color calibration**, select the **Run display color calibration** button.
-1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position.
-1. After you proceed through the instruction dialog boxes, your display will automatically be dimmed to 30% brightness.
-    > [!TIP]
-    > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
-1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
-
-    ![Display color calibration scene](images/color-cal-ui.png)
-    
-1. When you're happy with the selected profile, select the **Save & Exit** button
-1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
-
-> [!TIP]
-> Here are some helpful tips to keep in mind while using the display color calibration setting:
-> - You can re-run display color calibration from Settings whenever you'd like
-> - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change will be reflected on the Settings page
-> - When you re-run display color calibration, the color profile that was previously saved will be highlighted and Profile 0 will not appear (as Profile 0 represents the display's original color profile)
-> - If you want to revert to the display's original color profile, you can do so from the Settings page (see [how to reset color profile](#how-to-reset-color-profile))
-
-#### How to reset color profile
-
-If you're unhappy with the custom color profile saved to your HoloLens 2, you can restore the device's original color profile:
-1. Launch the **Settings** app and navigate to **System > Calibration**.
-1. Under **Display color calibration**, select the **Reset to default color profile** button.
-1. When the dialog box opens, select **Restart** if you're ready to restart HoloLens 2 and apply your changes.
-
-#### Top display color calibration known issues
-
-- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings 
-    - Workaround: Select another Settings page and then re-select the Calibration page.
-- If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
-- You may need to try pressing the brightness buttons on the left side of your device up/down a few times before they work as expected.
-- Localization is not complete for all markets
 ## Troubleshooting
 
 For HoloLens 2, take the following steps to ensure the highest visual quality of holograms presented in displays:
@@ -69,6 +26,46 @@ For HoloLens 2, take the following steps to ensure the highest visual quality of
 * **Bring visor closer to your eyes.** Swing the visor down to the closest position to your eyes.
 * **Shift visor down.** Try moving the brow pad on your forehead down, which will result in the visor moving down closer to your nose.
 * **Run eye calibration.** The display uses your interpupillary distance (IPD) and eye gaze to optimize images on the display. If you don't run eye calibration, the image quality may be made worse. To run eye calibration, go to **Settings** > **System** > **Calibration** > **Run eye calibration**.
+* **Run display color calibration**. On [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards, you can **select an alternative color profile** for your HoloLens 2 display. This may help colors appear more accurate, especially at lower display brightness levels. Display color calibration can be found in the **Settings** app, on the **System > Calibration** page.
+
+    > [!NOTE]
+    > Because this setting saves a new color profile to your display firmware, it is a per-device setting (and not unique to each user account).
+
+### How to use display color calibration
+1. Launch the **Settings** app and navigate to **System > Calibration**.
+1. Under **Display color calibration**, select the **Run display color calibration** button.
+1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position.
+1. After you proceed through the instruction dialog boxes, your display will automatically be dimmed to 30% brightness.
+    > [!TIP]
+    > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
+1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
+
+![Display color calibration scene](images/color-cal-ui.png)
+    
+6. When you're happy with the selected profile, select the **Save & Exit** button
+1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
+
+> [!TIP]
+    > Here are some helpful tips to keep in mind while using the display color calibration setting:
+    > - You can re-run display color calibration from Settings whenever you'd like
+    > - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change will be reflected on the Settings page
+    > - When you re-run display color calibration, the color profile that was previously saved will be highlighted and Profile 0 will not appear (as Profile 0 represents the display's original color profile)
+    > - If you want to revert to the display's original color profile, you can do so from the Settings page (see [how to reset color profile](#how-to-reset-color-profile))
+
+### How to reset color profile
+
+If you're unhappy with the custom color profile saved to your HoloLens 2, you can restore the device's original color profile:
+1. Launch the **Settings** app and navigate to **System > Calibration**.
+1. Under **Display color calibration**, select the **Reset to default color profile** button.
+1. When the dialog box opens, select **Restart** if you're ready to restart HoloLens 2 and apply your changes.
+
+### Top display color calibration known issues
+
+- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings 
+    - **Workaround**: Select another Settings page and then re-select the Calibration page.
+- If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
+- You may need to try pressing the brightness buttons on the left side of your device up/down a few times before they work as expected.
+- Localization is not complete for all markets
 
 ## FAQ
 

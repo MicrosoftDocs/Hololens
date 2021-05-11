@@ -41,7 +41,7 @@ The following table compares different collection methods. The method names link
 |[DiagnosticLog CSP](#diagnosticlog-csp) |Network connection<br /><br />MDM environment that supports the DiagnosticLog CSP |Administrator configures storage locations |In the managed environment, the user implicitly consents to administrator access to the data.<br /><br />Administrator configures access roles and permissions. | Data is retained in the cloud storage and Administrator configures retention policy. |
 |[Offline diagnostics](#offline-diagnostics) |Device configuration:<ul><li>Powered on and connected to computer</li><li>Power and Volume buttons functioning</li></ul> |HoloLens device<br /><br />Connected computer |The user stores the data, and only the user accesses the data (unless the user specifically shares the data with another user). |The data is retained on device until the user deletes it. |
 
-- End-user is responsible for sharing the logs responsibly with someone else. These files are primarily useful when contacting customer service and support.  
+* End-user is responsible for sharing the logs responsibly with someone else. These files are primarily useful when contacting customer service and support.  
 
 ## Feedback Hub
 
@@ -51,7 +51,7 @@ A HoloLens user can use the Microsoft Feedback Hub desktop app to send diagnosti
 > **Commercial or enterprise users:** If you use the Feedback Hub app to report a problem that relates to MDM, provisioning, or any other device management aspect, change the app category to **Enterprise Management** > **Device category**.
 
 >[!IMPORTANT]
-> To provide the best possible data for fixing issues, we highly recommended that you set your device telemetry to **Optional**. You can set this value during the Out-of-Box-Experience (OOBE), or by using the Settings app. To do this by using Settings, select **Start > Settings > Privacy > App Diagnostics > On**.
+> To provide the best possible data for fixing issues, we highly recommend that you set your device telemetry to **Optional**. You can set this value during the Out-of-Box-Experience (OOBE), or by using the **Settings** app. To do this by using Settings, select **Start > Settings > Privacy > App Diagnostics > On**.
 ### Prerequisites
 
 - The device is connected to a network.
@@ -64,6 +64,7 @@ By agreeing to the terms-of-use of the Feedback Hub, the user explicitly consent
 The Feedback Hub provides two places for the user to store diagnostic information:
 
 - **The Microsoft cloud**. Data that the user uploads by using the Feedback Hub app is stored for the number of days that is consistent with Next Generation Privacy (NGP) requirements. Microsoft employees can use an NGP-compliant viewer to access the information during this period.
+
    > [!NOTE]  
    > These requirements apply to data in all Feedback Hub categories.
 
@@ -71,14 +72,14 @@ The Feedback Hub provides two places for the user to store diagnostic informatio
 
 ## Settings Troubleshooter
 
-A HoloLens user can use the Settings app on the device to troubleshoot problems and collect diagnostic information. To do this, follow these steps:
+A HoloLens user can use the **Settings** app on the device to troubleshoot problems and collect diagnostic information. To do this, follow these steps:
 
 1. Open the Settings app and select **Update & Security** > **Troubleshoot** page.
 1. Select the appropriate area, and select **Start**.
 1. Reproduce the issue.
 1. After you reproduce the issue, return to Settings and then select **Stop**.
 
-A user can also configure the behavior of Fallback Diagnostics from the Settings app. Navigate to **Privacy -> Troubleshooting** page to configure this setting.
+A user can also configure the behavior of Fallback Diagnostics from the **Settings** app. Navigate to **Privacy -> Troubleshooting** page to configure this setting.
 > [!NOTE]
 > If there is MDM policy configured for the device, user will not be able to override that behavior.
 
@@ -87,7 +88,7 @@ On builds [Windows Holographic, version 21H1 ](hololens-release-notes.md#windows
 - In addition to the previous troubleshooters within the Settings app, a new troubleshooter has been added with the addition of the new Settings app for OS Updates. Navigate to **Settings -> Update & Security -> Troubleshoot -> Windows Update** and select **Start**. This allows you to collect traces while reproducing your issue with OS Updates to assist better in troubleshooting with your IT or support.
 ### Prerequisites
 
-- The Settings app is installed on the device and is available to the user.
+- The **Settings** app is installed on the device and is available to the user.
 
 ### Data locations, access, and retention
 
@@ -126,14 +127,14 @@ The IT administrator uses the DiagnosticLog CSP to configure the data storage, r
 - Permissions that control access to the diagnostic information.
 
 ## Offline diagnostics
-In situations where the device is not able to collect diagnostics via Feedback Hub or the Setting Troubleshooter, you can collect diagnostics manually. One scenario where this is necessary is when the device cannot connect to Wi-Fi or you can't access other methods mentioned above. The diagnostics collect crash dumps and logs from the device that help a Microsoft support engineer isolate issues.
+In situations where the device is not able to collect diagnostics via Feedback Hub or the Settings Troubleshooter, you can collect diagnostics manually. One scenario where this is necessary is when the device cannot connect to Wi-Fi or you can't access other methods mentioned above. The diagnostics collect crash dumps and logs from the device that help a Microsoft support engineer isolate issues.
 
 This works when the device shows up in File Explorer after connecting it to a PC via a USB cable.
 
 > [!NOTE]
 > Offline Diagnostics generation and management is controlled differently depending on your OS version. Previously it was controlled by the telemetry setting, but is now directly controlled via MDM policy. If disabled via either setting or MDM policy, then diagnostic logs cannot be collected using this mechanism.
 
-Behavior Prior to [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
+Behavior prior to [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
  - Offline diagnostics is only enabled when user is either going through OOBE or [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) policy value is set to Full (Basic is default value on HoloLens). 
 - To disable Offline diagnostics, go to **Settings App > Privacy** page and select **Basic** in **Diagnostic Data**. On builds where offline diagnostics depends on telemetry setting, it only impacts whether any logs are collected or not. It does not impact what files are collected.
 - If device is locked then logs won't appear.
@@ -150,10 +151,10 @@ Follow these steps to collect diagnostics:
 1.	Connect the device with a USB cable to your PC.
 2.	In File Explorer on your PC, navigate to **'This PC\<hololens-device>\Internal Storage'**.
 3.	If the **Internal Storage** folder does not show up, the device is waiting for a user to sign in. Either sign-in or power cycle the device by holding the POWER button down for 10 seconds.
-4.	Press and immediately release the **POWER + VOLUME DOWN** buttons together.
+4.	Press and immediately release the **Power + Volume Down** buttons together.
 5.	Wait a minute for the device to prepare the zip archives. (A temporary file named HololensDiagnostics.temp may become visible while the device generates the zip archives. Do not access or save that file. When the process finishes it will be replaced by the zip archives.)
 6.	Refresh file explorer, and navigate to the **'\Documents'** folder.
 7.	Copy the diagnostics ZIP files and share them with the Microsoft support team.
 
 > [!NOTE]
-> Some of the diagnostics ZIP files may contain personally identifiable information.
+> Some of the diagnostics ZIP files may contain PII.

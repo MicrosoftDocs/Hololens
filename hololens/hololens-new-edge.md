@@ -23,7 +23,9 @@ With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holog
 
 ## Launching the new Microsoft Edge
 
-The new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) and legacy Microsoft Edge (represented by the white "e" icon). The new Microsoft Edge is pinned to the Start menu and will automatically launch when you activate a web link. This new Microsoft Edge automatically replaces the old Microsoft Edge for convivence. 
+The new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) and legacy Microsoft Edge (represented by the white "e" icon). The new Microsoft Edge is pinned to the Start menu and will automatically launch when you activate a web link. 
+> [!IMPORTANT]
+> This new Microsoft Edge automatically replaces the old Microsoft Edge for convience. 
 
 > [!NOTE]
 > When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge.
@@ -110,6 +112,13 @@ For IT Admins looking to update their [WDAC policy](windows-defender-application
 Some environments may have network restrictions to account for as a consideration. To ensure a smooth experience with the new Edge please [enable these Microsoft endpoints.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
 
 Read more about the currently available [endpoints for HoloLens](hololens-offline.md).
+
+## Install web apps
+ > [!Note]
+> As of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), the Office web app will no longer be pre-installed. 
+
+You can use the new Edge to install web apps alongside Microsoft Store apps. For example, you can install the Microsoft Office web app to view and edit files hosted on SharePoint or OneDrive. To install the Office web app, visit https://www.office.com and select the **App Available** or **Install Office** button in the address bar. Select **Install** to confirm.
+> [!IMPORTANT]Office web app functionality is only available when your HoloLens 2 has an active internet connection.
 
 ## WebXR and 360 Viewer
 
