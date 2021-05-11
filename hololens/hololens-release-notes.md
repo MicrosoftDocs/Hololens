@@ -72,13 +72,14 @@ Check out related release notes:
 
 The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) to create better compatibility for customers and less fragmentation of the web for web developers.
 
-With this Windows build, the new Microsoft Edge is available to HoloLens 2 customers for the first time! While the new Microsoft Edge will eventually replace legacy Microsoft Edge on HoloLens 2, both browsers are currently available to users. Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge or via [Feedback Hub](hololens-feedback.md).
+> [!IMPORTANT]
+> This new Microsoft Edge automatically replaces legacy Microsoft Edge, which is [no longer supported](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) in new releases.
 
 ![New Microsoft Edge screenshot](images/new-edge-ui.png)
 
 #### Launching the new Microsoft Edge
 
-There are two versions of Microsoft Edge available to users: The new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) and legacy Microsoft Edge (represented by the white "e" icon). The new Microsoft Edge is pinned to the Start menu and will automatically launch when you activate a web link. If you would like to revert to using legacy Microsoft Edge as your default web browser, see the instructions below for [resetting default apps](#default-app-picker).
+The new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) is pinned to the Start menu and will automatically launch when you activate a web link.
 
 > [!NOTE]
 > When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge. If you continue to use legacy Microsoft Edge after launching the new Microsoft Edge, that new data will not be synced from legacy Microsoft Edge to the new Microsoft Edge.
@@ -297,8 +298,6 @@ If you're unhappy with the custom color profile saved to your HoloLens 2, you ca
 #### Default app picker
 
 When you activate a hyperlink or open a file type with more than one installed app, which supports it, you will see a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
-
-![App picker window](images/default-app-picker.png)
 
 If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. Scroll to the bottom of the page and select the **Clear** button under "Default apps for file types" and/or "Default apps for link types." Unlike the similar setting on desktop PCs, you can't reset individual file type defaults.
 
@@ -580,8 +579,12 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 ## Windows Holographic, version 20H2 – May 2021 Update
 - Build 19041.1146
+
 Improvements and fixes in the update:
 - This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H1.## Windows Holographic, version 1903 – May 2021 Update
+- Build 18362.1110
+
+## Windows Holographic, version 1903 - May 2021 Update
 - Build 18362.1110
 
 Improvements and fixes in the update:

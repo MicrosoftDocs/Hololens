@@ -40,7 +40,7 @@ For HoloLens 2, take the following steps to ensure the highest visual quality of
     > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
 1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
 
-![Display color calibration scene](images/color-cal-ui.png)
+    ![Display color calibration scene](images/color-cal-ui.png)
     
 6. When you're happy with the selected profile, select the **Save & Exit** button
 1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
