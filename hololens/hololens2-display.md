@@ -46,11 +46,11 @@ For HoloLens 2, take the following steps to ensure the highest visual quality of
 1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
 
 > [!TIP]
-    > Here are some helpful tips to keep in mind while using the display color calibration setting:
-    > - You can re-run display color calibration from Settings whenever you'd like
-    > - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change will be reflected on the Settings page
-    > - When you re-run display color calibration, the color profile that was previously saved will be highlighted and Profile 0 will not appear (as Profile 0 represents the display's original color profile)
-    > - If you want to revert to the display's original color profile, you can do so from the Settings page (see [how to reset color profile](#how-to-reset-color-profile))
+> Here are some helpful tips to keep in mind while using the display color calibration setting:
+> - You can re-run display color calibration from Settings whenever you'd like
+> - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change will be reflected on the Settings page
+> - When you re-run display color calibration, the color profile that was previously saved will be highlighted and Profile 0 will not appear (as Profile 0 represents the display's original color profile)
+> - If you want to revert to the display's original color profile, you can do so from the Settings page (see [how to reset color profile](#how-to-reset-color-profile))
 
 ### How to reset color profile
 

@@ -118,7 +118,8 @@ Read more about the currently available [endpoints for HoloLens](hololens-offlin
 > As of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), the Office web app will no longer be pre-installed. 
 
 You can use the new Edge to install web apps alongside Microsoft Store apps. For example, you can install the Microsoft Office web app to view and edit files hosted on SharePoint or OneDrive. To install the Office web app, visit https://www.office.com and select the **App Available** or **Install Office** button in the address bar. Select **Install** to confirm.
-> [!IMPORTANT]Office web app functionality is only available when your HoloLens 2 has an active internet connection.
+> [!IMPORTANT]
+> Office web app functionality is only available when your HoloLens 2 has an active internet connection.
 
 ## WebXR and 360 Viewer
 

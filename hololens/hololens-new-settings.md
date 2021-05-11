@@ -27,7 +27,7 @@ With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holog
   - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input).
     > [!NOTE]
     > Bluetooth microphones are not supported by HoloLens 2.
-  - App volume: independently adjust the volume of each app. See [per app volume control](#per-app-volume-control).
+  - App volume: independently adjust the volume of each app. See [per app volume control](holographic-home.md#per-app-volume-control).
 - System > Power & sleep: choose when the device should go to sleep after a period of inactivity.
 - System > Battery: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically.
 - Devices > USB: you can disable USB connections by default.
@@ -35,7 +35,7 @@ With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holog
   - USB-C Ethernet adapters will now appear in Network & Internet.
   - USB-C Ethernet adapter settings are now available, including its IP address.
   - You can now enable airplane mode on HoloLens 2.
-- Apps: you can reset the default apps used for file and link types. For more information see [Default app picker](#default-app-picker).
+- Apps: you can reset the default apps used for file and link types. For more information see [Default app picker](holographic-home.md#default-app-picker).
 - Accounts > Other users: device owners can add users, upgrade standard users to device owners, downgrade device owners to standard users, and remove users.
 - Ease of Access: change text size and some visual effects.
 
