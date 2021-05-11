@@ -19,14 +19,14 @@ The new Microsoft Edge [adopts the Chromium open source project](https://blogs.w
 
 With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), the new Microsoft Edge is available to HoloLens 2 customers for the first time! Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge or via [Feedback Hub](hololens-feedback.md).
 
+> [!IMPORTANT]
+> This new Microsoft Edge automatically replaces legacy Microsoft Edge, which is [no longer supported](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) in new releases.
+
 ![New Microsoft Edge screenshot](images/new-edge-ui.png)
 
 ## Launching the new Microsoft Edge
 
-The new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) and legacy Microsoft Edge (represented by the white "e" icon). The new Microsoft Edge is pinned to the Start menu and will automatically launch when you activate a web link.
-
-> [!IMPORTANT]
-> This new Microsoft Edge automatically replaces legacy Microsoft Edge, which is [no longer supported](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) in new releases.
+The new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) is pinned to the Start menu and will automatically launch when you activate a web link.
 
 > [!NOTE]
 > When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge.
