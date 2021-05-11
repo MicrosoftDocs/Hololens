@@ -67,6 +67,20 @@ Devices set up with Azure AD accounts will not allow signing in to the device wi
 > [!NOTE]
 > **HoloLens (1st gen)** began supporting multiple Azure AD users in the [Windows 10 April 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) as part of [Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
+### Multiple users listed on Sign in screen
+
+Previously the Sign In screen showed only the most recently signed in user, as well as an 'Other user' entry point. We have received customer feedback that this not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
+
+Introduced in [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), when selecting **Other user** which is located to the right of the PIN entry field, the Sign in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other users page via the **Add account** button.
+
+When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign in screen for this user.
+
+![Sign-in screen default](./images/multiusers1.jpg)
+
+<br>
+
+![Sign-in screen other users](./images/multiusers2.jpg)
+
 ## Removing users
 
 You can remove a user from the device by going to **Settings** > **Accounts** > **Other people**. This action also reclaims space by removing all of that user's app data from the device.  

@@ -65,8 +65,8 @@ A multi-app kiosk displays the Start menu when the user signs in to the device. 
 The following table lists the feature capabilities in the different kiosk modes.
 
 | &nbsp; |Start menu |Quick Actions menu |Camera and video |Miracast |Cortana |Built-in voice commands |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|Single-app kiosk |Disabled |Disabled   |Disabled |Disabled   |Disabled |Enabled<sup>1</sup> |
+| --- | --- | --- | --- | --- | --- | --- | 
+|Single-app kiosk |Disabled |Disabled |Disabled |Disabled   |Disabled |Enabled<sup>1</sup> |
 |Multi-app kiosk |Enabled |Enabled<sup>2</sup> |Available<sup>2</sup> |Available<sup>2</sup> |Available<sup>2, 3</sup>  |Enabled<sup>1</sup> |
 
 > <sup>1</sup> Voice commands that relate to disabled features do not function.  
@@ -115,13 +115,15 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 |Feedback&nbsp;Hub |Microsoft.WindowsFeedbackHub\_8wekyb3d8bbwe\!App |
 |File Explorer |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
 |Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
-|Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE |
+|Old Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
+|New Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast<sup>4</sup> |&nbsp; |
 |Movies & TV |Microsoft.ZuneVideo\_8wekyb3d8bbwe\!Microsoft.ZuneVideo |
 |OneDrive |microsoft.microsoftskydrive\_8wekyb3d8bbwe\!App |
 |Photos |Microsoft.Windows.Photos\_8wekyb3d8bbwe\!App |
-|Settings |HolographicSystemSettings\_cw5n1h2txyewy\!App |
+|Old Settings |HolographicSystemSettings_cw5n1h2txyewy!App |
+|New Settings |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App |
 |Tips |Microsoft.HoloLensTips\_8wekyb3d8bbwe\!HoloLensTips |
 
 > <sup>1</sup> To enable photo or video capture, you have to enable the Camera app as a kiosk app.  
@@ -240,8 +242,9 @@ This section summarizes the settings that a multi-app kiosk requires. For more d
 - You can optionally use a custom Start layout with Intune or other MDM services. For more information, see [Start layout file for MDM (Intune and others)](#start-layout-file-for-mdm-intune-and-others).
 
 1. Select **Target Windows 10 in S mode devices** > **No**.  
-   >[!NOTE]  
-   > S mode isn't supported on Windows Holographic for Business.
+>[!NOTE]  
+> S mode isn't supported on Windows Holographic for Business.
+
 1. Select **User logon type** > **Azure AD user or group** or **User logon type** > **HoloLens visitor**, and then add one or more user groups or accounts.  
 
    Only users who belong to the groups or accounts that you specify in **User logon type** can use the kiosk experience.
@@ -319,6 +322,31 @@ To enable the **Guest** account, add the following snippet to your kiosk configu
   </Config>  
 </Configs>  
 ```
+#### Enable Visitor Autologon
+
+On builds [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
+- AAD and Non-ADD configurations both support visitor accounts being auto-logon enabled for Kiosk modes.
+
+##### Non-AAD configuration
+
+1. Create a provisioning package that:
+    1. Configures Runtime settings/AssignedAccess to allow Visitor accounts.
+    1. Optionally enrolls the device in MDM (Runtime settings/Workplace/Enrollments) so that it can be managed later.
+    1. Do not create a local account
+2. [Apply the provisioning package](https://docs.microsoft.com/hololens/hololens-provisioning).
+
+##### AAD configuration
+
+AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+
+Visitor Auto logon can be managed via [custom OMA-URI policy](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10):
+
+- URI value: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
+
+
+| Policy |Description |Configurations 
+| --------------------------- | ------------- | -------------------- |
+| MixedReality/VisitorAutoLogon | Allows for a Visitor to Auto logon to a Kiosk. | 1 (Yes), 0 (No, default.) |
 
 #### <a id="start-layout-for-hololens"></a>Placeholder Start layout for HoloLens
 
@@ -465,13 +493,19 @@ Application is automatically launched when user signs-in.
 
 
 ### Kiosk mode behavior changes for handling of failures
-- More secure Kiosk mode by eliminating available apps on Kiosk mode failures. 
+Upon encountering failures in applying kiosk mode, the following behavior appears:
 
-Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 20H2 in the case of failures no apps will be shown in the start menu as below: 
+- Prior to Windows Holographic, version 20H2 - HoloLens will show all applications in the Start menu.
+- Windows Holographic, version 20H2 - if a device has a kiosk configuration which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership fails, the user will see “nothing shown in start” menu.
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
+
+- Starting with [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), Kiosk mode looks for Global Assigned Access before showing an empty start menu. The kiosk experience will fallback to a global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
+
 ### Cache Azure AD Group membership for offline Kiosk
+
+- More secure Kiosk mode by eliminating available apps on Kiosk mode failures.
 - Enabled Offline Kiosks to be used with Azure AD groups for up to 60 days.
 
 This policy controls for how many days, Azure AD group membership cache is allowed to be used for Assigned Access configurations targeting Azure AD groups for signed in user. Once this policy value is set to value greater than 0 only then cache is used otherwise not.  
