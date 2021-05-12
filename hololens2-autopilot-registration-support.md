@@ -26,6 +26,12 @@ The following table details the information you will need to collect *prior* to 
 
 | Required Information | Description | Autopilot Registration  | Hardware Hash Request | Autopilot Deregistration |
 ------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
-|  Azure Active Directory Tenant ID    |    Your Azure Active Directory tenant ID is a globally unique identifier (GUID) that is different than your organization name or domain.    To find your Tenant ID sign into the Azure Portal here.    |     ✔️                         |                              |                         ✔️                        |
+|  Azure Active Directory Tenant ID    |    Your Azure Active Directory tenant ID is a globally unique identifier (GUID) that is different than your organization name or domain.    To find your Tenant ID sign into the [Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).    |     ✔️                         |                              |                         ✔️                        |
 |  Azure Active Directory Domain Name    |   Your top-level domain name; for example, contoso.com.    |     ✔️                         |                              |                         ✔️                        |
-|  Proof of Ownership    |   Your top-level domain name; for example, contoso.com.    |     ✔️                         |                              |                         ✔️                        |
+|  Proof of Ownership    |   Verify proof of ownership by uploading the original bill of sale or invoice in PDF format. Screenshots are not accepted. The bill of sale or invoice must include the following: Device serial numbers. Company name.     |     ✔️                         |              ✔️                |                         ✔️                        |
+|  Device serial numbers    |   Upload Excel file in CSV format with each device serial number in a new line.     |     ✔️                         |              ✔️                |                         ✔️                        |
+
+## Submit support requests
+
+> [!div class="nextstepaction"]
+> [Submit Autopilot Registration Support for HoloLens 2](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
