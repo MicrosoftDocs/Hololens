@@ -117,10 +117,13 @@
 ### [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 ## Troubleshooting
-### [Troubleshoot common issues](hololens-troubleshooting.md)
-### [Known issues](hololens-known-issues.md)
-### [Collect diagnostic information](hololens-diagnostic-logs.md)
-### [Reset HoloLens 2](hololens-recovery.md)
+### Device
+#### [Troubleshoot common issues](hololens-troubleshooting.md)
+#### [Known issues](hololens-known-issues.md)
+#### [Collect diagnostic information](hololens-diagnostic-logs.md)
+#### [Reset HoloLens 2](hololens-recovery.md)
+### Enterprise
+#### [Network](hololens2-enterprise-troubleshooting#network)
 ### FAQ
 #### [General](hololens-faq.md)
 #### [HoloLens 2 display](hololens2-display.md)
