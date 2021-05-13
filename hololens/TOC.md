@@ -1,6 +1,6 @@
 # [Microsoft HoloLens](index.yml)
 
-# Overview
+# Device Overview
 ## [About HoloLens 2](hololens2-hardware.md)
 ## [Compare HoloLens 2 Options](hololens2-options.md)
 ## Discover HoloLens 2 Editions
@@ -10,37 +10,31 @@
 ### [Development edition](hololens2-options-dev-edition.md)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
-# Get started
-## [Basic usage overview](hololens2-setup.md)
+# Using your HoloLens
+## [Basic Usage Overview](hololens2-setup.md)
 ## [Set up your HoloLens 2](hololens2-start.md)
+## [How to Update HoloLens](hololens-update-hololens.md)
 ## [Supported languages](hololens2-language-support.md)
-
-# Concepts
-## Navigate the Windows Holographic interface
-### [Use the Start menu and mixed reality home](holographic-home.md)
-### [Use your voice to operate HoloLens](hololens-cortana.md)
-### [Find, open, and save files on HoloLens](holographic-data.md)
-### [Create mixed reality photos and videos](holographic-photos-and-videos.md)
-## Manage applications
-### [Find, install, and uninstall applications](holographic-store-apps.md)
-### [Manage custom apps for HoloLens 2](hololens2-holographic-custom-apps.md)
-### [Manage custom apps for HoloLens](holographic-custom-apps.md)
-## Hologram optics and placement in space
-### [Improve visual quality and comfort](hololens-calibration.md)
-### [Map physical spaces with HoloLens](hololens-spaces.md)
-## [Develop with Microsoft Mesh (Preview)](/mesh/overview)
+## Concepts
+### Navigate the Windows Holographic interface
+#### [Use the Start menu and mixed reality home](holographic-home.md)
+#### [Use your voice to operate HoloLens](hololens-cortana.md)
+#### [Find, open, and save files on HoloLens](holographic-data.md)
+#### [Create mixed reality photos and videos](holographic-photos-and-videos.md)
+### Manage applications
+#### [Find, install, and uninstall applications](holographic-store-apps.md)
+#### [Manage custom apps for HoloLens 2](hololens2-holographic-custom-apps.md)
+#### [Manage custom apps for HoloLens](holographic-custom-apps.md)
+### Hologram optics and placement in space
+#### [Improve visual quality and comfort](hololens-calibration.md)
+#### [Map physical spaces with HoloLens](hololens-spaces.md)
+### [Develop with Microsoft Mesh (Preview)](/mesh/overview)
 
 # How-to guides
-## [How to Update HoloLens](hololens-update-hololens.md)
-## [Getting around HoloLens 2](hololens2-basic-usage.md)
-## Troubleshoot
-### [General troubleshooting](hololens-troubleshooting-overview.md)
-### [Troubleshoot common issues](hololens-troubleshooting.md)
-### [Enable diagnostic logs](hololens-diagnostic-logs.md)
-### [Known issues and workarounds](hololens-known-issues.md)
-### [Reset HoloLens 2](hololens-recovery.md)
 
-# Implementation planning
+## [Getting around HoloLens 2](hololens2-basic-usage.md)
+
+# Device Implementation
 ## [Overview](hololens-requirements.md)
 ## Common Deployment Scenarios
 ### Cloud connected environment deployment guide
@@ -115,6 +109,13 @@
 ## Maintain
 ### [Manage HoloLens updates](hololens-updates.md)
 ### [Fix HoloLens issues](/hololens/hololens-troubleshooting)
+
+# Troubleshoot
+## [General troubleshooting](hololens-troubleshooting-overview.md)
+## [Troubleshoot common issues](hololens-troubleshooting.md)
+## [Enable diagnostic logs](hololens-diagnostic-logs.md)
+## [Known issues and workarounds](hololens-known-issues.md)
+## [Reset HoloLens 2](hololens-recovery.md)
 
 # Resources
 ## [Support and help options](hololens2-support.md)
