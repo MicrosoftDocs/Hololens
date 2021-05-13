@@ -11,11 +11,12 @@
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
 # Using your HoloLens
-## [Basic Usage Overview](hololens2-setup.md)
-## [Set up your HoloLens 2](hololens2-start.md)
-## [How to Update HoloLens](hololens-update-hololens.md)
-## [Supported languages](hololens2-language-support.md)
-## Concepts
+## First time Usage
+### [Set up your HoloLens 2](hololens2-start.md)
+### [Basic Usage Overview](hololens2-setup.md)
+### [Getting around HoloLens 2](hololens2-basic-usage.md)
+### [How to Update HoloLens](hololens-update-hololens.md)
+## Daily Operation
 ### Navigate the Windows Holographic interface
 #### [Use the Start menu and mixed reality home](holographic-home.md)
 #### [Use your voice to operate HoloLens](hololens-cortana.md)
@@ -28,11 +29,7 @@
 ### Hologram optics and placement in space
 #### [Improve visual quality and comfort](hololens-calibration.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
-### [Develop with Microsoft Mesh (Preview)](/mesh/overview)
 
-# How-to guides
-
-## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
 # Device Implementation
 ## [Overview](hololens-requirements.md)
@@ -123,6 +120,7 @@
 ### [HoloLens 2 release notes](hololens-release-notes.md)
 ### [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
+## [Supported languages](hololens2-language-support.md)
 ## FAQ
 ### [General](hololens-faq.md)
 ### [HoloLens 2 display](hololens2-display.md)
@@ -130,6 +128,7 @@
 ### [HoloLens 2 cleaning](hololens2-maintenance.md)
 ### [HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
 ### [HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md)
+## [Develop with Microsoft Mesh (Preview)](/mesh/overview)
 ## HoloLens (1st gen)
 ### [About HoloLens (1st gen)](hololens1-hardware.md)
 ### [Basic usage overview](hololens1-setup.md)
