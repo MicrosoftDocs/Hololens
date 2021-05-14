@@ -30,7 +30,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 
 *Introduced in build 20346.1402*
 
-We've added a new feature to the HoloLens 2 Settings app which allows customers to automatically upload mixed reality photos and videos from the device's Pictures > Camera Roll folder to the corresponding OneDrive for work or school folder. This addresses a [feature gap within the OneDrive app](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) on HoloLens 2, which only supports automatic Camera Roll upload to a customer's personal Microsoft account (and not their work or school account).
+We've added a new feature to the HoloLens 2 Settings app, which allows customers to automatically upload mixed reality photos and videos from the device's Pictures > Camera Roll folder to the corresponding OneDrive for work or school folder. This feature addresses a [feature gap within the OneDrive app](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) on HoloLens 2, which only supports automatic Camera Roll upload to a customer's personal Microsoft account (and not their work or school account).
 
 **How it works**
 
@@ -39,16 +39,16 @@ We've added a new feature to the HoloLens 2 Settings app which allows customers 
     >[!NOTE]
     >Photos and videos captured prior to enabling this feature *will not* be queued for upload and will still need to be manually uploaded.
 - A status message on the Settings page will display the number of files pending upload (or read "OneDrive is up to date" when all pending files have been uploaded).
-- If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. This ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files will not upload until you re-enable the feature.
+- If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files will not upload until you re-enable the feature.
 - Newest files will upload first (last in, first out).
 - If your OneDrive account has issues (for example, after your password changes) a **Fix now** button will appear on the Settings page.
 - There is no maximum file size, but note that large files will take longer to upload (especially if your upload bandwidth is constrained). If you "pause" or turn off upload while a large file is being uploaded, it will immediately cancel the upload. The upload will restart when you re-enable the feature; you won't lose any files, but the partial upload will be discarded.
 
 **Known issues and caveats**
 
-- This setting has no built in throttling based on current bandwidth usage. If you need to pause upload to maximize bandwidth for another scenario, please turn the setting off manually. Upload will be paused but the feature will continue to monitor newly added files to Camera Roll. Re-enable upload when you're ready for it to continue.
-- This feature needs to be enabled for each user account on the device, and it can only actively upload files for the user who is currently signed-in to the device.
-- If you're taking photos or videos while watching the upload count on the Settings page in real-time, please note that the pending file count may not change until the current file has completed uploading.
+- This setting has no built in throttling based on current bandwidth usage. If you need to maximize bandwidth for another scenario, turn off the setting manually. Upload will be paused but the feature will continue to monitor newly added files to Camera Roll. Re-enable upload when you're ready for it to continue.
+- This feature must be enabled for each user account on the device, and it can only actively upload files for the user who is currently signed-in to the device.
+- If you're taking photos or videos while watching the upload count on the Settings page in real-time, note that the pending file count may not change until the current file has completed uploading.
 - Upload will pause if your device falls asleep or is powered off. To ensure your pending uploads complete, actively use the device until the Settings page reads "OneDrive is up to date" or adjust your **Power & sleep** settings.
 
 ## Start receiving Insider builds
