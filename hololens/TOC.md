@@ -9,6 +9,7 @@
 ### [Industrial edition](hololens2-options-industrial-edition.md)
 ### [Development edition](hololens2-options-dev-edition.md)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
+### [Commercial features](hololens-commercial-features.md)
 
 
 # Using your HoloLens
@@ -30,45 +31,12 @@
 ### Hologram optics and placement in space
 #### [Improve visual quality and comfort](hololens-calibration.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
-
-# Device Implementation
-## [Overview](hololens-requirements.md)
-## Common Deployment Scenarios
-### Cloud connected environment deployment guide
-#### [Overview](hololens2-cloud-connected-overview.md)
-#### [Prepare](hololens2-cloud-connected-prepare.md)
-#### [Configure](hololens2-cloud-connected-configure.md)
-#### [Deploy](hololens2-cloud-connected-deploy.md)
-#### [Maintain](hololens2-cloud-connected-maintain.md)
-
-#### [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
-### Corporate network deployment guide
-#### [Overview](hololens2-corp-connected-overview.md)
-#### [Prepare](hololens2-corp-connected-prepare.md)
-#### [Configure](hololens2-corp-connected-configure.md)
-#### [Deploy](hololens2-corp-connected-deploy.md)
-#### [Maintain](hololens2-corp-connected-maintain.md)
-### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
-## Prepare
-### Security
-#### [Security overview](security-overview.md)
-#### [Architecture](security-architecture.md)
-#### [State separation and isolation](security-state-separation-isolation.md)
-#### [Admin-less operating system ](security-adminless-os.md)
-#### [Limiting password use](security-limiting-password-use.md)
-#### [Hardware-backed security and runtime attestation](security-hardware-backed-integrity.md)
-#### [Encryption and data protection](security-encryption-data-protection.md)
-#### [Network security](security-network-security.md)
-#### [Security engineering ](security-engineering.md)
-#### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
-### [License requirements](hololens-licenses-requirements.md)
 ### Environment
 #### [HoloLens environment considerations](hololens-environment-considerations.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
-### [Commercial features](hololens-commercial-features.md)
-### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 
-## Configure
+# Device Implementation
+## [Overview](hololens-requirements.md)
 ### Device Management
 #### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
 #### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
@@ -89,8 +57,6 @@
 #### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
 #### [Connect to Cellular and 5G](hololens-cellular.md)
 ### [Certificate Manager](certificate-manager.md)
-
-## Deploy
 ### Enrollment
 #### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 #### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
@@ -101,6 +67,28 @@
 #### [Microsoft Store for Business](app-deploy-store-business.md)
 #### [Provisioning Package](app-deploy-provisioning-package.md)
 #### [App Installer](app-deploy-app-installer.md)
+### [License requirements](hololens-licenses-requirements.md)
+## Common Deployment Scenarios
+### Cloud connected environment deployment guide
+#### [Overview](hololens2-cloud-connected-overview.md)
+#### [Prepare](hololens2-cloud-connected-prepare.md)
+#### [Configure](hololens2-cloud-connected-configure.md)
+#### [Deploy](hololens2-cloud-connected-deploy.md)
+#### [Maintain](hololens2-cloud-connected-maintain.md)
+#### [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
+### Corporate network deployment guide
+#### [Overview](hololens2-corp-connected-overview.md)
+#### [Prepare](hololens2-corp-connected-prepare.md)
+#### [Configure](hololens2-corp-connected-configure.md)
+#### [Deploy](hololens2-corp-connected-deploy.md)
+#### [Maintain](hololens2-corp-connected-maintain.md)
+### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
+## Prepare
+
+## Configure
+
+## Deploy
+
 
 
 ## Maintain
@@ -116,6 +104,17 @@
 
 # Resources
 ## [Support and help options](hololens2-support.md)
+## Security
+#### [Security overview](security-overview.md)
+#### [Architecture](security-architecture.md)
+#### [State separation and isolation](security-state-separation-isolation.md)
+#### [Admin-less operating system ](security-adminless-os.md)
+#### [Limiting password use](security-limiting-password-use.md)
+#### [Hardware-backed security and runtime attestation](security-hardware-backed-integrity.md)
+#### [Encryption and data protection](security-encryption-data-protection.md)
+#### [Network security](security-network-security.md)
+#### [Security engineering ](security-engineering.md)
+#### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
 ## Release notes
 ### [HoloLens 2 release notes](hololens-release-notes.md)
 ### [Insider preview for Microsoft HoloLens](hololens-insider.md)
@@ -137,6 +136,7 @@
 ### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
 ### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 ### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
+### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 ### [Reset HoloLens (1st gen) ](hololens1-recovery.md)
 ### [HoloLens (1st gen) fit and comfort](hololens1-fit-comfort-faq.md)
 ### HoloLens 1st Gen Security 
