@@ -37,6 +37,21 @@
 
 # Cloud Service Integration
 ## [Planning](hololens-requirements.md)
+## Common Deployment Scenarios
+### Cloud connected environment deployment guide
+#### [Overview](hololens2-cloud-connected-overview.md)
+#### [Prepare](hololens2-cloud-connected-prepare.md)
+#### [Configure](hololens2-cloud-connected-configure.md)
+#### [Deploy](hololens2-cloud-connected-deploy.md)
+#### [Maintain](hololens2-cloud-connected-maintain.md)
+#### [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
+### Corporate network deployment guide
+#### [Overview](hololens2-corp-connected-overview.md)
+#### [Prepare](hololens2-corp-connected-prepare.md)
+#### [Configure](hololens2-corp-connected-configure.md)
+#### [Deploy](hololens2-corp-connected-deploy.md)
+#### [Maintain](hololens2-corp-connected-maintain.md)
+### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
 ## [License requirements](hololens-licenses-requirements.md)
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
@@ -58,7 +73,7 @@
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
 ### [Enroll in MAC address restricted Wi-Fi Environment](mac-address-options.md)
-## Applications
+## Application Deployment
 ### [Application management overview](app-deploy-overview.md)
 ### [Intune & Company Portal](app-deploy-intune.md)
 ### [Microsoft Store for Business](app-deploy-store-business.md)
@@ -80,26 +95,8 @@
 ### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
 ### [Connect to Cellular and 5G](hololens-cellular.md)
 ### [Certificate Manager](certificate-manager.md)
-## Common Deployment Scenarios
-### Cloud connected environment deployment guide
-#### [Overview](hololens2-cloud-connected-overview.md)
-#### [Prepare](hololens2-cloud-connected-prepare.md)
-#### [Configure](hololens2-cloud-connected-configure.md)
-#### [Deploy](hololens2-cloud-connected-deploy.md)
-#### [Maintain](hololens2-cloud-connected-maintain.md)
-#### [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
-### Corporate network deployment guide
-#### [Overview](hololens2-corp-connected-overview.md)
-#### [Prepare](hololens2-corp-connected-prepare.md)
-#### [Configure](hololens2-corp-connected-configure.md)
-#### [Deploy](hololens2-corp-connected-deploy.md)
-#### [Maintain](hololens2-corp-connected-maintain.md)
-### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
 
-
-## Maintain
-### [Manage HoloLens updates](hololens-updates.md)
-### [Fix HoloLens issues](/hololens/hololens-troubleshooting)
+## [Manage HoloLens updates](hololens-updates.md)
 
 # Troubleshoot
 ## [General troubleshooting](hololens-troubleshooting-overview.md)
