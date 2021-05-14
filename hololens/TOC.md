@@ -37,6 +37,20 @@
 
 # Device Implementation
 ## [Planning](hololens-requirements.md)
+## Identity
+### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
+### [Share HoloLens with multiple people](hololens-multiple-users.md)
+## Security
+### [Security overview](security-overview.md)
+### [Architecture](security-architecture.md)
+### [State separation and isolation](security-state-separation-isolation.md)
+### [Admin-less operating system ](security-adminless-os.md)
+### [Limiting password use](security-limiting-password-use.md)
+### [Hardware-backed security and runtime attestation](security-hardware-backed-integrity.md)
+### [Encryption and data protection](security-encryption-data-protection.md)
+### [Network security](security-network-security.md)
+### [Security engineering ](security-engineering.md)
+### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
 ## Device Management
 ### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
@@ -46,17 +60,6 @@
 ### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
 ### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
 ### [Page Settings CSP and URIs for HoloLens](settings-uri-list.md)
-## Identity
-### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
-### [Share HoloLens with multiple people](hololens-multiple-users.md)
-## Network & Connectivity
-### [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
-### [Connect HoloLens to a network](hololens-network.md)
-### [Prepare certificates and network profiles for HoloLens 2](hololens-certificates-network.md)
-### [Manage connection endpoints for HoloLens](hololens-offline.md)
-### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
-### [Connect to Cellular and 5G](hololens-cellular.md)
-## [Certificate Manager](certificate-manager.md)
 ## Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
@@ -67,6 +70,15 @@
 ### [Microsoft Store for Business](app-deploy-store-business.md)
 ### [Provisioning Package](app-deploy-provisioning-package.md)
 ### [App Installer](app-deploy-app-installer.md)
+## Policies (CSPs)
+## Network & Connectivity
+### [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
+### [Connect HoloLens to a network](hololens-network.md)
+### [Prepare certificates and network profiles for HoloLens 2](hololens-certificates-network.md)
+### [Manage connection endpoints for HoloLens](hololens-offline.md)
+### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
+### [Connect to Cellular and 5G](hololens-cellular.md)
+## [Certificate Manager](certificate-manager.md)
 ## [License requirements](hololens-licenses-requirements.md)
 ## Common Deployment Scenarios
 ### Cloud connected environment deployment guide
@@ -98,17 +110,6 @@
 
 # Resources
 ## [Support and help options](hololens2-support.md)
-## Security
-### [Security overview](security-overview.md)
-### [Architecture](security-architecture.md)
-### [State separation and isolation](security-state-separation-isolation.md)
-### [Admin-less operating system ](security-adminless-os.md)
-### [Limiting password use](security-limiting-password-use.md)
-### [Hardware-backed security and runtime attestation](security-hardware-backed-integrity.md)
-### [Encryption and data protection](security-encryption-data-protection.md)
-### [Network security](security-network-security.md)
-### [Security engineering ](security-engineering.md)
-### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
 ## Release notes
 ### [HoloLens 2 release notes](hololens-release-notes.md)
 ### [Insider preview for Microsoft HoloLens](hololens-insider.md)
