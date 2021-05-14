@@ -37,6 +37,7 @@
 
 # Cloud Service Integration
 ## [Planning](hololens-requirements.md)
+## [License requirements](hololens-licenses-requirements.md)
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ### [Share HoloLens with multiple people](hololens-multiple-users.md)
@@ -78,8 +79,7 @@
 ### [Manage connection endpoints for HoloLens](hololens-offline.md)
 ### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
 ### [Connect to Cellular and 5G](hololens-cellular.md)
-## [Certificate Manager](certificate-manager.md)
-## [License requirements](hololens-licenses-requirements.md)
+### [Certificate Manager](certificate-manager.md)
 ## Common Deployment Scenarios
 ### Cloud connected environment deployment guide
 #### [Overview](hololens2-cloud-connected-overview.md)
