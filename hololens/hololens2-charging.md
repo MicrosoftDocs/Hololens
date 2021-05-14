@@ -18,21 +18,25 @@ appliesto:
 
 This page offers details about charging HoloLens 2 and leveraging external battery packs.
 
-## Specifications
-
-HoloLens 2 can be charged by [USB Power Delivery](https://www.usb.org/usb-charger-pd) sources at up to 3A @ 5V or 2A @ 9V. If the source is able supply at least 10 Watts, HoloLens operating time can be greatly extended (up to indefinite for some workloads).
-
-Note that using a USB-A to USB-C charging cable will limit current to 7.5 Watts. Operating time will still be extended, but not as long as using USB-C to C.
-
-HoloLens 2 can charge with as little as 1.5A, but charging below 1.5A is not supported. Attempting to charge HoloLens 2 with less than 1.5A can damage the HoloLens, the charger, or both.
-
 ## Included Charger
 
 The charger included with HoloLens 2 provides up to 9V @ 2A (18W). When possible, it's highly recommended to charge using the included charger.  
 
+## Specifications
+
+HoloLens 2 can be charged by [USB Power Delivery](https://www.usb.org/usb-charger-pd) sources up to 27 Watts. If the source is able supply at least 10 Watts, HoloLens operating time can be extended (potentially indefinitely for some workloads). 
+
+> [!NOTE]
+> Using a USB-A to USB-C charging cable will limit the charge to 7.5 Watts. Operating time will still be extended, but not as long as using USB-C to C.
+
+When HoloLens is in standby mode, 18 Watts is sufficient to reach the maximum charge rate for the internal battery. When HoloLens is in use, the charge rate may be reduced since HoloLens prioritizes operating over charging.
+
+> [!WARNING]
+> Attempting to charge HoloLens 2 at less than 1.5A can damage the HoloLens, the charger, or both. Do not attempt to charge HoloLens 2 at less than 1.5A.
+
 ## External Battery Packs
 
-Battery packs that meet the specifications above can be used with HoloLens 2. However, note that some USB-C battery packs recharge and provide power through the same USB-C port. It's important that these battery packs implement [TRY.SRC](https://www.usb.org/sites/default/files/USB%20Type%20C%20Functional%20Test%20Specification%202019%2007%2025.pdf) to indicate they will provide a charge to HoloLens rather than receive it. Most battery packs produced in 2019 and later implement this feature.
+Battery packs that meet the specifications above can be used with HoloLens 2. However, note that some USB-C battery packs recharge and provide power through the same USB-C port. It's important that these battery packs implement [TRY.SRC](https://www.usb.org/sites/default/files/USB%20Type%20C%20Functional%20Test%20Specification%202019%2007%2025.pdf) to ensure they charge HoloLens rather than charge from it. Most battery packs produced from 2019 onward implement this feature.
 
 ## Managing Heat
 
@@ -41,7 +45,7 @@ As with any device, charging HoloLens generates heat. The more rapid the charge,
 - Begin charging HoloLens 2 when the internal battery is at 80% charge or higher. When the internal battery has at least 80% charge, it will trickle charge and generate much less heat.
 - It's OK to connect HoloLens 2 to an external power source even when the internal battery is fully charged.
 - When an external battery is depleted, HoloLens will continue operating on its internal battery.    
-- After following the steps above, if heat is still an issue consider using a charger or battery pack that limits charging to 1.5A. Operating time may be reduced (since the internal battery will slowly deplete), but less heat will also be generated in the process.   
+- If heat is still an issue after following steps above, consider using a charger or battery pack that limits charging to 1.5A. Note that this option won't provide as much operating time since the internal battery will still slowly deplete.
 
 ## Troubleshooting
 
