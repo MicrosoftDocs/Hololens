@@ -14,10 +14,10 @@
 
 # Using your HoloLens
 ## First-time usage
+### [The Basics](hololens2-setup.md)
 ### [Set up your HoloLens 2](hololens2-start.md)
-### [Basic Usage Overview](hololens2-setup.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
-### [How to update HoloLens](hololens-update-hololens.md)
+### [Update HoloLens](hololens-update-hololens.md)
 ## Daily Operation
 ### Navigate the Windows Holographic interface
 #### [Use the Start menu and mixed reality home](holographic-home.md)
@@ -37,37 +37,37 @@
 
 # Device Implementation
 ## [Planning](hololens-requirements.md)
-### Device Management
-#### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
-#### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
-#### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
-#### [Common Device Restrictions](hololens-common-device-restrictions.md)
-#### [Set up HoloLens as a kiosk](hololens-kiosk.md)
-#### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
-#### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
-#### [Page Settings CSP and URIs for HoloLens](settings-uri-list.md)
-### Identity
-#### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
-#### [Share HoloLens with multiple people](hololens-multiple-users.md)
-### Network & Connectivity
-#### [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
-#### [Connect HoloLens to a network](hololens-network.md)
-#### [Prepare certificates and network profiles for HoloLens 2](hololens-certificates-network.md)
-#### [Manage connection endpoints for HoloLens](hololens-offline.md)
-#### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
-#### [Connect to Cellular and 5G](hololens-cellular.md)
-### [Certificate Manager](certificate-manager.md)
-### Enrollment
-#### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
-#### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
-#### [Enroll in MAC address restricted Wi-Fi Environment](mac-address-options.md)
-### Applications
-#### [Application management overview](app-deploy-overview.md)
-#### [Intune & Company Portal](app-deploy-intune.md)
-#### [Microsoft Store for Business](app-deploy-store-business.md)
-#### [Provisioning Package](app-deploy-provisioning-package.md)
-#### [App Installer](app-deploy-app-installer.md)
-### [License requirements](hololens-licenses-requirements.md)
+## Device Management
+### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
+### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
+### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
+### [Common Device Restrictions](hololens-common-device-restrictions.md)
+### [Set up HoloLens as a kiosk](hololens-kiosk.md)
+### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
+### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
+### [Page Settings CSP and URIs for HoloLens](settings-uri-list.md)
+## Identity
+### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
+### [Share HoloLens with multiple people](hololens-multiple-users.md)
+## Network & Connectivity
+### [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
+### [Connect HoloLens to a network](hololens-network.md)
+### [Prepare certificates and network profiles for HoloLens 2](hololens-certificates-network.md)
+### [Manage connection endpoints for HoloLens](hololens-offline.md)
+### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
+### [Connect to Cellular and 5G](hololens-cellular.md)
+## [Certificate Manager](certificate-manager.md)
+## Enrollment
+### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
+### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
+### [Enroll in MAC address restricted Wi-Fi Environment](mac-address-options.md)
+## Applications
+### [Application management overview](app-deploy-overview.md)
+### [Intune & Company Portal](app-deploy-intune.md)
+### [Microsoft Store for Business](app-deploy-store-business.md)
+### [Provisioning Package](app-deploy-provisioning-package.md)
+### [App Installer](app-deploy-app-installer.md)
+## [License requirements](hololens-licenses-requirements.md)
 ## Common Deployment Scenarios
 ### Cloud connected environment deployment guide
 #### [Overview](hololens2-cloud-connected-overview.md)
