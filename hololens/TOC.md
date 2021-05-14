@@ -12,11 +12,11 @@
 
 
 # Using your HoloLens
-## First time Usage
+## First-time usage
 ### [Set up your HoloLens 2](hololens2-start.md)
 ### [Basic Usage Overview](hololens2-setup.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
-### [How to Update HoloLens](hololens-update-hololens.md)
+### [How to update HoloLens](hololens-update-hololens.md)
 ## Daily Operation
 ### Navigate the Windows Holographic interface
 #### [Use the Start menu and mixed reality home](holographic-home.md)
