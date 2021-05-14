@@ -31,9 +31,8 @@
 ### Hologram optics and placement in space
 #### [Improve visual quality and comfort](hololens-calibration.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
-### Environment
 #### [HoloLens environment considerations](hololens-environment-considerations.md)
-#### [Map physical spaces with HoloLens](hololens-spaces.md)
+
 
 # Cloud Service Integration
 ## [Planning](hololens-requirements.md)
