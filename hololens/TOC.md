@@ -10,6 +10,7 @@
 ### [Development edition](hololens2-options-dev-edition.md)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
+
 # Using your HoloLens
 ## First time Usage
 ### [Set up your HoloLens 2](hololens2-start.md)
@@ -29,7 +30,6 @@
 ### Hologram optics and placement in space
 #### [Improve visual quality and comfort](hololens-calibration.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
-
 
 # Device Implementation
 ## [Overview](hololens-requirements.md)
