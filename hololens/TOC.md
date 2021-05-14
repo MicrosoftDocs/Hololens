@@ -36,7 +36,7 @@
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
 
 # Device Implementation
-## [Overview](hololens-requirements.md)
+## [Planning](hololens-requirements.md)
 ### Device Management
 #### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
 #### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
@@ -83,12 +83,6 @@
 #### [Deploy](hololens2-corp-connected-deploy.md)
 #### [Maintain](hololens2-corp-connected-maintain.md)
 ### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
-## Prepare
-
-## Configure
-
-## Deploy
-
 
 
 ## Maintain
