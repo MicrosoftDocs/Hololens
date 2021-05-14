@@ -35,7 +35,7 @@
 #### [HoloLens environment considerations](hololens-environment-considerations.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
 
-# Device Implementation
+# Cloud Service Integration
 ## [Planning](hololens-requirements.md)
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
@@ -52,14 +52,7 @@
 ### [Security engineering ](security-engineering.md)
 ### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
 ## Device Management
-### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
-### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 ### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
-### [Common Device Restrictions](hololens-common-device-restrictions.md)
-### [Set up HoloLens as a kiosk](hololens-kiosk.md)
-### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
-### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
-### [Page Settings CSP and URIs for HoloLens](settings-uri-list.md)
 ## Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
@@ -71,6 +64,13 @@
 ### [Provisioning Package](app-deploy-provisioning-package.md)
 ### [App Installer](app-deploy-app-installer.md)
 ## Policies (CSPs)
+### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
+### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
+### [Common Device Restrictions](hololens-common-device-restrictions.md)
+### [Set up HoloLens as a kiosk](hololens-kiosk.md)
+### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
+### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
+### [Page Settings CSP and URIs for HoloLens](settings-uri-list.md)
 ## Network & Connectivity
 ### [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
 ### [Connect HoloLens to a network](hololens-network.md)
