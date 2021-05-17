@@ -72,7 +72,7 @@ This does not affect:
 
 Work around methods:
 
-- Sign-in methods such as PIN, Iris, Web Authentication, or FIDO2 keys.
+- Sign-in methods such as PIN, Password, Iris, Web Authentication, or FIDO2 keys.
 - If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-procedure).
 
 ### Microsoft Edge fails to launch
