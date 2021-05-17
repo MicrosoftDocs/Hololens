@@ -19,7 +19,7 @@ appliesto:
 
 # Known issues for HoloLens
 
-This is the current list of known issues for HoloLens devices. Check here first if you are seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
+Here is the current list of known issues for HoloLens devices. Check here first if you are seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
 
 >[!NOTE]
 > - If you discover an issue that is not blocking you please report it on your HoloLens device via [Feedback Hub](hololens-feedback.md).
@@ -41,7 +41,7 @@ This is the current list of known issues for HoloLens devices. Check here first 
 
 - The Live Preview feature in Mixed Reality capture may exhibit several seconds of latency.
 
-- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section are not functional. Using them will have no effect. The virtual keyboard on the same page works correctly.
+- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section are not functional. Using them will have no effect. The virtual keyboard on the virtual input page works correctly.
 
 - After enabling Developer Mode in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
 
@@ -65,7 +65,7 @@ Example of when this could occur:
 
 - Updating a device from Windows Holographic, version 2004 (Build 19041.xxxx) to Windows Holographic, version 21H1 (Build 20346.xxxx).
 
-This does not affect:
+This should not occur during:
 
 - Devices taking a monthly servicing update
 - Feature updates that do not increase the major build number, such as 2004 to 20H2
@@ -98,7 +98,7 @@ Work-arounds:
 This does not affect:
 - Users who choose to use a personal account.
 
-### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with a Insider build
+### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with an Insider build
 
 This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program.
 
@@ -106,19 +106,19 @@ This does not affect:
 - Users who are not enrolled in Windows Insider 
 - Insiders:
     - If a device has been enrolled since Insider builds were version 18362.x
-    - If they flashed a Insider signed 19041.x build AND stay enrolled in the Insider program 
+    - If they flashed an Insider signed 19041.x build AND stay enrolled in the Insider program
 
 Work-around: 
 - Avoid the issue 
-    - Flash a non-insider build. One of the regular monthly updates. 
+    - Flash a non-insider build. One of the regular monthly updates.
     - Stay on Insider Preview
 - Reflash the device
 
     1. Put the [HoloLens 2 into flashing mode](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) manually by fully powering down while not connect. Then while holding Volume up, tap the Power button.
     
-    1. Connect to the PC and open Advanced Recovery Companion. 
+    1. Connect to the PC and open Advanced Recovery Companion.
     
-    1. Flash the HoloLens 2 to the default build.   
+    1. Flash the HoloLens 2 to the default build.
 
 ## Known issues for HoloLens (1st Gen)
 
@@ -127,9 +127,9 @@ Work-around:
 > [!NOTE]
 > Last Update: 8/8 @ 5:11PM - Visual Studio has released VS 2019 Version 16.2 which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
 
-Visual Studio has released VS 2019 Version 16.2 which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
+Visual Studio has released VS 2019 Version 16.2, which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
 
-Issue root-cause: Users who used Visual Studio 2015 or early releases of Visual Studio 2017 to deploy and debug applications on their HoloLens and then subsequently used the latest versions of Visual Studio 2017 or Visual Studio 2019 with the same HoloLens will be affected. The newer releases of Visual Studio deploy a new version of a component, but files from the older version are left over on the device, causing the newer version to fail.  This causes the following error message: DEP0100: Please ensure that target device has developer mode enabled. Could not obtain a developer license on \<ip\> due to error 80004005.
+Issue root-cause: Users who used Visual Studio 2015 or early releases of Visual Studio 2017 to deploy and debug applications on their HoloLens and then subsequently used the latest versions of Visual Studio 2017 or Visual Studio 2019 with the same HoloLens will be affected. The newer releases of Visual Studio deploy a new version of a component, but files from the older version are left over on the device, causing the newer version to fail.  This causes the following error message: DEP0100: Ensure that target device has developer mode enabled. Could not obtain a developer license on \<ip\> due to error 80004005.
 
 #### Workaround
 
@@ -194,21 +194,21 @@ We will provide further updates as they become available.
 ### Issues launching the Microsoft Store and apps on HoloLens
 
 > [!NOTE]
-> Last Update: 4/2 @ 10 AM - Issue resolved. 
+> Last Update: 4/2 @ 10 AM - Issue resolved.
 
-You may experience issues when trying to launch the Microsoft Store and apps on HoloLens. We've determined that the issue occurs when background app updates deploy a newer version of framework packages in specific sequences while one or more of their dependent apps are still running. In this case,  an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) caused the apps that are running to not correctly update for all running apps consuming the prior version of the framework.  The flow for framework update is as follows: 
+You may experience issues when trying to launch the Microsoft Store and apps on HoloLens. We've determined that the issue occurs when background app updates deploy a newer version of framework packages in specific sequences while one or more of their dependent apps are still running. In this case,  an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) caused the apps that are running to not correctly update for all running apps consuming the prior version of the framework.  The flow for framework update is as follows:
 
 1. The new framework package is downloaded from the store and installed.
 
 1. All apps using the older framework are 'updated' to use the newer version.
 
-If step 2 is interrupted before completion then any apps for which the newer framework wasn't registered will fail to launch from the start menu.  We believe any app on HoloLens could be affected by this issue.
+If step 2 is interrupted before completion, then any apps for which the newer framework wasn't registered will fail to launch from the start menu.  We believe any app on HoloLens could be affected by this issue.
 
-Some users have reported that closing hung apps and launching other apps such as Feedback Hub, 3D Viewer or Photos resolves the issue for them&mdash;however, this does not work 100% of the time.
+Some users have reported that closing hung apps and launching other apps such as Feedback Hub, 3D Viewer or Photos resolves the issue for them - however, this does not work 100% of the time.
 
 We have root caused that this issue was not caused the update itself, but a bug in the OS that resulted in the .NET Native framework update being handled incorrectly. We are pleased to announce that we have identified a fix and have released an update (OS version 17763.380) containing the fix.  
 
-To see if your device can take the update, please:
+To see if your device can take the update:
 
 1. Go to the Settings app and open **Update & Security**.
 
@@ -226,7 +226,7 @@ If you would not like to take the update, we have released a new version of the 
 1. Use the bloom gesture to open the menu.
 1. Attempt to open previously broken apps.
 1. If it still cannot be launched, tap and hold the icon of the broken app and select uninstall.
-1. Re-install these apps from the store.
+1. Reinstall these apps from the store.
 
 If your device is still unable to load apps, you can sideload a version of the .NET Native Framework and Runtime through the download center by following these steps:
 
