@@ -18,6 +18,7 @@
 ### [Set up your HoloLens 2](hololens2-start.md)
 ### [HoloLens 2 fit and comfort FAQ](hololens2-fit-comfort-faq.md)
 ### [HoloLens 2 display](hololens2-display.md)
+### [HoloLens 2 battery and charging](hololens2-charging.md)
 ### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 ### [Supported languages for HoloLens 2](hololens2-language-support.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
