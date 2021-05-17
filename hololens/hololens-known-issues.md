@@ -57,7 +57,24 @@ Workarounds:
 
 ## Known issues for HoloLens 2 devices
 
+### Device using Auto-login asks for log-in
+
+A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device to a feature update that increases the major version number. Example: Windows Holographic, version 2004 (Build 19041.xxxx) updating to Windows Holographic, version 21H1 (Build 20346.xxxx).
+
+This does not affect:
+
+- Devices taking a monthly servicing update
+- Feature updates that do not increase the major build number, such as 2004 to 20H2
+
+Work around methods:
+
+- Sign-in methods such as PIN, Iris, Web Authentication, or FIDO2 keys.
+- If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-procedure).
+
 ### Microsoft Edge fails to launch
+
+> [!NOTE]
+> This issue was originally created with the shipping version of Microsoft Edge in-mind. This issue may be resolved in the [new Microsoft Edge](hololens-new-edge.md). If it is not, please file feedback.
 
 A few customers have reported an issue where Microsoft Edge fails to launch. For these customers, the issue persists through reboot and is not resolved with Windows or application updates. If you're experiencing this issue and you've confirmed [Windows is up-to-date](hololens-updates.md#manually-check-for-updates), please file a bug from the [Feedback Hub app](hololens-feedback.md) with the following category and sub-category: Install and Update > Downloading, installing, and configuring Windows Update.
 
@@ -65,12 +82,12 @@ There are no known workarounds as we've been unable to root cause the issue so f
 
 ### Keyboard does not switch to special characters
 
-There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters. 
+There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters.
 
 Work-arounds:
 -	Close the keyboard and reopen it by tapping the text field.
 -	Incorrectly enter your password. When the keyboard is relaunched next time it will then work as expected.
-- Web Authentication, close the keyboard and select **Sign in from another device**. 
+- Web Authentication, close the keyboard and select **Sign in from another device**.
 -	If entering only numbers, a user may press and hold certain keys to open an expanded menu.
 -	Using a USB keyboard.
 
@@ -79,7 +96,7 @@ This does not affect:
 
 ### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with a Insider build
 
-This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program. 
+This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program.
 
 This does not affect:
 - Users who are not enrolled in Windows Insider 
