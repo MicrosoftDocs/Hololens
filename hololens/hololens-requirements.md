@@ -162,7 +162,7 @@ Some common HoloLens 2 services requiring additional endpoint access are as foll
 
 - [Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 - [D365 Guides](/topic/internet-accessible-urls-required-for-connectivity-to-microsoft-dynamics-crm-online-8d77aa1c-3837-2dee-77f7-68fa20795b4f)
-- [D365 Remote Assist (O365 Teams Infrastructure)](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams)
+- [D365 Remote Assist (O365 Teams Infrastructure)](/microsoft-365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 
 ### Certificate Deployment
 

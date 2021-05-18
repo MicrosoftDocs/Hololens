@@ -103,4 +103,4 @@ The most likely problem is that you're running low on storage space. Try one of 
 
 ## The HoloLens emulator isn't working
 
-Information about the HoloLens emulator is located in our developer documentation.  Read more about [troubleshooting the HoloLens emulator](https://docs.microsoft.com/windows/mixed-reality/using-the-hololens-emulator#troubleshooting).
+Information about the HoloLens emulator is located in our developer documentation.  Read more about [troubleshooting the HoloLens emulator](using-the-hololens-emulator.md#troubleshooting).
