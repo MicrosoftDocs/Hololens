@@ -89,34 +89,6 @@ With Auto Eye Position, the Eye Tracking Calibration prompt dialog is deferred u
 
 If the user chooses to launch the Eye Tracking Calibration, the focus should returning to the original application after calibration completes. 
 
-### Troubleshooting HoloLens 2 calibration
-
-Calibration should work for most people, but there are cases where calibration fails.
-  
-Some potential reasons for calibration failure include:
-
-- Getting distracted and not following the calibration targets
-- Dirty or scratched device visor or device visor not positioned properly
-- Dirty or scratched glasses
-- Certain types of contact lenses and glasses (colored contact lenses, some toric contact lenses, IR blocking glasses, some high prescription glasses, sunglasses, or similar)
-- More-pronounced makeup and some eyelash extensions
-- Hair or thick eyeglass frames if they're blocking the device from seeing your eyes
-- Certain eye physiology, eye conditions, or eye surgery such as narrow eyes, long eyelashes, amblyopia, nystagmus, some cases of LASIK or other eye surgeries
-
-If calibration is unsuccessful try:
-
-- Cleaning your device visor
-- Cleaning your glasses
-- Pushing your device visor as close to your eyes as possible
-- Moving objects in your visor out of the way (such as hair)
-- Turning on a light in your room or moving out of direct sunlight
-
-If you followed all guidelines and calibration is still failing, you can disable the calibration prompt in Settings. Also let us know by filing feedback in [Feedback Hub](hololens-feedback.md).
-
-Also see related information for [image color or brightness troubleshooting.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
-
-Setting IPD is not applicable for HoloLens 2, since eye positions are computed by the system. 
-
 ### Calibration data and security
 
 Calibration information is stored locally on the device and isn't associated with any account information. There's no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, and users who opted out of calibration previously or if calibration was unsuccessful.

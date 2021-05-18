@@ -28,3 +28,10 @@ appliesto:
     - If HoloLens rejects server certificate, check if the server root CA certificate has been provisioned on HoloLens.
 3. If the enterprise profile is provisioned through Wi-Fi provisioning package, consider applying the provisioning package on a Windows 10 PC. If it also fails on Windows 10 PC, follow the Windows client 802.1X authentication troubleshooting guide.
 4. Send us feedback through Feedback Hub.
+
+## Wi-FI
+### Troubleshooting your connection to Wi-Fi
+
+If you experience problems connecting to Wi-Fi, see [I can't connect to Wi-Fi](./hololens-faq.md#i-cant-connect-to-wi-fi).
+
+When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.
