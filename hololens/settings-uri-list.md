@@ -20,10 +20,7 @@ appliesto:
 One of the manageable features for HoloLens devices is using the [Settings/PageVisibilityList policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. PageVisibilityList is a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.
 
 > [!NOTE]
-> This feature is only avalible in [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) for HoloLens 2 devices. Please ensure devices you intend to use this for are updated.
-
-> [!NOTE]
-> 20+ new SettingsURIs are being added soon. Please view [the Windows Insider page - New SettingsURIs for Page Settings Visibility](hololens-insider.md#new-settingsuris-for-page-settings-visibility) if you are interesting in previewing this setting on a [HoloLens Insider](hololens-insider.md) build.
+> This feature is only avalible in [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) or higher for HoloLens 2 devices. Please ensure devices you intend to use this for are updated.
 
 The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "ms-settings:network-wifi" and "ms-settings:bluetooth" respectively:
 - `showonly:network-wifi;network-proxy;bluetooth`
@@ -59,14 +56,24 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 ### Accounts
 | Settings page           | URI                                            |
 |-------------------------|------------------------------------------------|
-| Sign In Options         | ` ms-settings:signinoptions `                   |
-| Iris Enrollment       | `ms-settings:signinoptions-launchirisenrollment` |
 | Access work or school | `ms-settings:workplace`                         |
+| Iris Enrollment       | `ms-settings:signinoptions-launchirisenrollment` |
+| Sign In Options         | ` ms-settings:signinoptions `                   |
+
+### Apps
+| Settings page | URI                          |
+|---------------|------------------------------|
+| Apps & features<sup>2</sup>     | `ms-settings:appsfeatures` <br> |
+| Apps & features > Advanced Options <sup>2</sup>     | `ms-settings::appsfeatures-app` <br> |
+| Apps & features > Offline Maps <sup>2</sup>     | `ms-settings:maps-maps` <br> |
+| Apps & features > Offline Maps > Download maps <sup>2</sup>     | `ms-settings:maps-downloadmaps` <br> |
 
 ### Devices
 | Settings page | URI                          |
 |---------------|------------------------------|
 | Bluetooth     | `ms-settings:bluetooth` <br> `ms-settings:connecteddevices` |
+| Mouse <sup>2</sup>      | `ms-settings:mouse` <br>  |
+| USB <sup>2</sup>      | `ms-settings:usb` <br>  |
 
 ### Privacy
 | Settings page            | URI                                             |
@@ -74,58 +81,83 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Account Info             | `ms-settings:privacy-accountinfo`              |
 | App Diagnostics        | `ms-settings:privacy-appdiagnostics`              |
 | Background Apps        | `ms-settings:privacy-backgroundapps`              |
-| User movements           | `ms-settings:privacy-backgroundspatialperception` |
-| File system              | `ms-settings:privacy-broadfilesystemaccess`       |
 | Calendar                 | `ms-settings:privacy-calendar`                    |
 | Call History             | `ms-settings:privacy-callhistory`                 |
+| Camera                   | `ms-settings:privacy-webcam`                      |
 | Contacts                 | `ms-settings:privacy-contacts`                    |
-| Other devices            | `ms-settings:privacy-customdevices`               |
+| Diagnostics & Feedback | `ms-settings:privacy-feedback`                    |
 | Documents                | `ms-settings:privacy-documents`                   |
 | Email                    | `ms-settings:privacy-email`                       |
-| Diagnostics & Feedback | `ms-settings:privacy-feedback`                    |
+| File system              | `ms-settings:privacy-broadfilesystemaccess`       |
+| General <sup>2</sup>             | `ms-settings:privacy-general`       |
+| Ink & typing personalization <sup>2</sup>             | `ms-settings:privacy-speechtyping`       |
 | Location                 | `ms-settings:privacy-location`                    |
 | Messaging                | `ms-settings:privacy-messaging`                   |
 | Microphone               | `ms-settings:privacy-microphone`                  |
+| Motion <sup>2</sup>               | `ms-settings:privacy-motion`                  |
 | Notifications            | `ms-settings:privacy-notifications`               |
+| Other devices            | `ms-settings:privacy-customdevices`               |
 | Pictures                 | `ms-settings:privacy-pictures`                    |
 | Radios                   | `ms-settings:privacy-radios`                      |
+| Screenshot borders <sup>2</sup>             | `ms-settings:privacy-graphicsCaptureWithoutBorder`       |
+| Screenshots and apps <sup>2</sup>             | `ms-settings:privacy-graphicsCaptureProgrammatic`       |
 | Speech                   | `ms-settings:privacy-speech`                      |
 | Tasks                    | `ms-settings:privacy-tasks`                       |
+| User movements           | `ms-settings:privacy-backgroundspatialperception` |
 | Videos                   | `ms-settings:privacy-videos`                      |
 | Voice Activation       | `ms-settings:privacy-voiceactivation`             |
-| Camera                   | `ms-settings:privacy-webcam`                      |
 
 ### Network & Internet
 | Settings page | URI                              |
 |---------------|----------------------------------|
-| Wi-Fi  | `ms-settings:network-wifi`<br>`ms-settings:network-wifisettings`<br>`ms-settings:network-status`<br>`ms-settings:wifi-provisioning`    |
-| VPN   | `ms-settings:network-vpn`          |
+| Airplane Mode <sup>2</sup> | `ms-settings:network-airplanemode`        |
 | Proxy | `ms-settings:network-proxy`        |
+| VPN   | `ms-settings:network-vpn`          |
+| Wi-Fi  | `ms-settings:network-wifi`<br>`ms-settings:network-wifisettings`<br>`ms-settings:network-status`<br>`ms-settings:wifi-provisioning`    |
+
+
 
 ### System
 | Settings page      | URI                                |
 |--------------------|------------------------------------|
-| Shared Experiences | `ms-settings:crossdevice`            |
+| Battery <sup>2</sup>           | `ms-settings:batterysaver`<br>|
+| Battery <sup>2</sup>           | `ms-settings:batterysaver-settings`<br>|
 | Colors             | `ms-settings:colors`<br>`ms-settings:personalization-colors` |
+| Holograms <sup>2</sup>  |  `ms-settings:holograms`  |
+| Calibration <sup>2</sup> |  `ms-settings:calibration` |
 | Notifications & actions  | `ms-settings:notifications`          |
+| Shared Experiences | `ms-settings:crossdevice` 
+| Sound <sup>2</sup>           | `ms-settings:sound`<br>|
+| Sound > App volume and device preference <sup>2</sup>           | `ms-settings:apps-volume`<br>|
+| Sound > Manage sound devices <sup>2</sup>           | `ms-settings:sound-devices`<br>|
 | Storage            | `ms-settings:storagesense`           |
+| Storage > Configue Storage Sense <sup>2</sup>           | `ms-settings:storagepolicies`<br>|
 
 ### Time & Language
 | Settings page | URI                                           |
 |---------------|-----------------------------------------------|
-| Region        | `ms-settings:regionformatting`                  |
+| Date & time <sup>2</sup> | `ms-settings:dateandtime`                  |
+| Keyboard <sup>2</sup> | `ms-settings:keyboard`                  |
+| Language <sup>2</sup> | `ms-settings:language`                  |
+| Language <sup>2</sup> | `ms-settings:regionlanguage-languageoptions`                  |
 | Language      | `ms-settings:regionlanguage`<br>`ms-settings:regionlanguage-adddisplaylanguage`<br>`ms-settings:regionlanguage-setdisplaylanguage` |
+| Region        | `ms-settings:regionformatting`                  |
 
 ### Update & Security
 | Settings page                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
+| Advanced Options                    | `ms-settings:windowsupdate-options`         |
+| Reset & Recovery <sup>2</sup>      | `ms-settings:reset`         |
 | Windows Insider Program               | `ms-settings:windowsinsider` <br>`ms-settings:windowsinsider-optin`          |
 | Windows Update                        | `ms-settings:windowsupdate`<br> `ms-settings:windowsupdate-activehours`  <br> `ms-settings:windowsupdate-history` <br> `ms-settings:windowsupdate-optionalupdates` <br><sup>1</sup>`ms-settings:windowsupdate-options`<br><sup>1</sup>`ms-settings:windowsupdate-restartoptions` |
 | Windows Update - Checks for updates | `ms-settings:windowsupdate-action`          |
-| Advanced Options                    | `ms-settings:windowsupdate-options`         |
 
->  <sup>1</sup> The following two URIs do not actually take you to the **Advanced options** or **Options** pages; they will only block or show the main Windows Update page.
+
+>  <sup>1</sup> For versions prior to Windows Holographic, version 21H1, the following two URIs do not actually take you to the **Advanced options** or **Options** pages; they will only block or show the main Windows Update page.
 > - ms-settings:windowsupdate-options
-> - ms-settings:windowsupdate-restartoptions 
+> - ms-settings:windowsupdate-restartoptions
+ 
+> <sup>2</sup> - Available in Windows Holographic 21H1 or higher.
+
 
 For a full list of Windows 10 Settings URIs, please visit the [launch settings](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) documentation.

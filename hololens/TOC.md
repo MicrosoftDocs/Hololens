@@ -10,14 +10,45 @@
 ### [Development edition](hololens2-options-dev-edition.md)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
+
+## Get started with HoloLens 2
+### [HoloLens 2 Overview](hololens2-options.md)
+### [HoloLens 2 hardware](hololens2-hardware.md)
+### [Get your HoloLens 2 ready to use](hololens2-setup.md)
+### [Set up your HoloLens 2](hololens2-start.md)
+### [HoloLens 2 fit and comfort FAQ](hololens2-fit-comfort-faq.md)
+### [HoloLens 2 display](hololens2-display.md)
+### [HoloLens 2 battery and charging](hololens2-charging.md)
+### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
+### [Supported languages for HoloLens 2](hololens2-language-support.md)
+### [Getting around HoloLens 2](hololens2-basic-usage.md)
+### [Use the new Edge app for HoloLens 2](hololens-new-edge.md)
+### [Use the new Settings app for HoloLens 2](hololens-new-settings.md)
+### [HoloLens 2 Development Edition FAQ](hololens2-development-edition-faq.md)
+### [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md)
+
+## Get started with HoloLens (1st gen)
+### [HoloLens (1st gen) hardware](hololens1-hardware.md)
+### [Get your HoloLens (1st gen) ready to use](hololens1-setup.md)
+### [Set up your HoloLens (1st gen)](hololens1-start.md)
+### [HoloLens (1st gen) fit and comfort FAQ](hololens1-fit-comfort-faq.md)
+### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
+### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
+### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
+### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
+### [Manage custom apps for HoloLens](holographic-custom-apps.md)
+
 # Get started
 ## [Basic usage overview](hololens2-setup.md)
 ## [Set up your HoloLens 2](hololens2-start.md)
 ## [Supported languages](hololens2-language-support.md)
 
 # Concepts
+
 ## Navigate the Windows Holographic interface
 ### [Use the Start menu and mixed reality home](holographic-home.md)
+### [Use the new Edge app for HoloLens 2](hololens-new-edge.md)
+### [Use the new Settings app for HoloLens 2](hololens-new-settings.md)
 ### [Use your voice to operate HoloLens](hololens-cortana.md)
 ### [Find, open, and save files on HoloLens](holographic-data.md)
 ### [Create mixed reality photos and videos](holographic-photos-and-videos.md)
