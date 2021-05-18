@@ -20,7 +20,6 @@
 #### [HoloLens 2 display](hololens2-display.md)
 #### [HoloLens 2 battery and charging](hololens2-charging.md)
 #### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
-#### [Supported languages for HoloLens 2](hololens2-language-support.md)
 #### [Getting around HoloLens 2](hololens2-basic-usage.md)
 #### [Update HoloLens](hololens-update-hololens.md)
 ## Daily Operation
@@ -37,7 +36,6 @@
 #### [Improve visual quality and comfort](hololens-calibration.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
 #### [HoloLens environment considerations](hololens-environment-considerations.md)
-
 
 # Cloud Service Integration
 ## [Planning](hololens-requirements.md)
