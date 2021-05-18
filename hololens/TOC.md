@@ -16,8 +16,6 @@
 ## First-time usage
 ### [The Basics](hololens2-setup.md)
 #### [Set up your HoloLens 2](hololens2-start.md)
-#### [HoloLens 2 battery and charging](hololens2-charging.md)
-#### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 #### [Getting around HoloLens 2](hololens2-basic-usage.md)
 #### [Update HoloLens](hololens-update-hololens.md)
 ## Daily Operation
@@ -34,6 +32,8 @@
 #### [Improve visual quality and comfort](hololens-calibration.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
 #### [HoloLens environment considerations](hololens-environment-considerations.md)
+### [HoloLens 2 battery and charging](hololens2-charging.md)
+### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 
 # Cloud Service Integration
 ## [Planning](hololens-requirements.md)
