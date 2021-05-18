@@ -21,7 +21,7 @@ appliesto:
 # Restart, reset, or recover HoloLens 2
 
 >[!IMPORTANT]
-> Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](https://docs.microsoft.com/hololens/hololens2-setup#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device. For more information, see [General troubleshooting guide](hololens-troubleshooting-overview.md)
+> Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](hololens2-setup.md#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device. For more information, see [General troubleshooting guide](hololens-troubleshooting-overview.md)
 
 ## Reset the device
 
@@ -135,5 +135,5 @@ Follow these steps to enable the deployment path:
 > When you plan to use Advanced Recovery Companion to install an FFU offline, it may be useful to download your flash image. [**Download the current image for HoloLens 2**](https://aka.ms/hololens2download).
 
 Other resources:
-- [Distribute offline apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
+- [Distribute offline apps](/microsoft-store/distribute-offline-apps) 
 - [DISM app package (.appx or .appxbundle) servicing command-line options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
