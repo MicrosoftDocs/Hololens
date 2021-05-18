@@ -139,7 +139,7 @@ HoloLens 2 is designed specifically to be managed by Mobile Device Management (M
 Microsoft designed Windows Update for Business to provide IT administrators with additional Windows Update-centric management capabilities, such as the ability to deploy updates to groups of devices and to define maintenance windows for installing updates. See the [HoloLens updates](hololens-updates.md) documentation for details on managing HoloLens 2 updates.
 
 ### Certificates
-HoloLens 2 supports deployment of certificates through MDM if your environment requires certificates for Corp Wi-Fi network authentication or access to other resources. Some MDM infrastructure configurations may be required to enable certificate deployments to HoloLens 2. Read about how to [prepare certificates and network profiles for HoloLens 2](hololens-certificates-network.md). If you're using Intune, check out the [certification configuration](https://docs.microsoft.com/en-us/mem/intune/protect/certificates-configure) details.
+HoloLens 2 supports deployment of certificates through MDM if your environment requires certificates for Corp Wi-Fi network authentication or access to other resources. Some MDM infrastructure configurations may be required to enable certificate deployments to HoloLens 2. Read about how to [prepare certificates and network profiles for HoloLens 2](hololens-certificates-network.md). If you're using Intune, check out the [certification configuration](https://docs.microsoft.com/mem/intune/protect/certificates-configure) details.
 
 ## Configure
 
@@ -148,7 +148,7 @@ MDM administrators can define and implement policy settings on any corporate dev
 HoloLens 2 also supports setting a limited set of CSP configurations through custom provisioning packages. Provisioning packages are typically leveraged for non-MDM managed devices and require to be manually applied to each device. See the [HoloLens provisioning](hololens-provisioning.md) documentation for details on building custom provisioning packages.
 
 > [!NOTE]
-> HoloLens 2 supports [Windows Autopilot](https://docs.microsoft.com/en-us/mem/autopilot/windows-autopilot), providing an easy and simple process for managing your corporate Windows 10 device configurations.
+> HoloLens 2 supports [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot), providing an easy and simple process for managing your corporate Windows 10 device configurations.
 
 ### Identity Management
 
@@ -160,7 +160,7 @@ As HoloLens 2 is a cloud first device, network access to online resources is req
 
 Some common HoloLens 2 services requiring additional endpoint access are as follows:
 
-- [Intune](https://docs.microsoft.com/en-us/mem/intune/fundamentals/intune-endpoints)
+- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 - [D365 Guides](/topic/internet-accessible-urls-required-for-connectivity-to-microsoft-dynamics-crm-online-8d77aa1c-3837-2dee-77f7-68fa20795b4f)
 - [D365 Remote Assist (O365 Teams Infrastructure)](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams)
 
@@ -201,7 +201,7 @@ Read more about other [common device restrictions.](hololens-common-device-restr
 
 Most corporate Wi-Fi networks require certificates and other complex information to restrict and secure user access. This advanced Wi-Fi information is difficult for typical users to configure, but MDM systems can fully configure these Wi-Fi profiles without user intervention. You can create multiple Wi-Fi profiles in your MDM system.
 
-For more details on Wi-Fi settings for Windows 10, see [Enterprise Profile WiFi settings](https://docs.microsoft.com/en-us/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
+For more details on Wi-Fi settings for Windows 10, see [Enterprise Profile WiFi settings](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
 
 #### Certificates
 
