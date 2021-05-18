@@ -143,7 +143,7 @@ HoloLens 2 supports deployment of certificates through MDM if your environment r
 
 ## Configure
 
-MDM administrators can define and implement policy settings on any corporate device enrolled in an MDM system. What configuration settings you use will differ based on the deployment scenario. In Windows 10, Configuration Service Providers (CSP)s are an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. For more information about Windows 10 device management CSPs for HoloLens 2, see the full list of [CSPs supported in HoloLens devices](/windows/client-management/mdm/configuration-service-provider-reference#hololens).
+MDM administrators can define and implement policy settings on any corporate device enrolled in an MDM system. What configuration settings you use will differ based on the deployment scenario. In Windows 10, Configuration Service Providers (CSP)s are an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. For more information about Windows 10 device management CSPs for HoloLens 2, see the full list of [CSPs supported in HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).
 
 HoloLens 2 also supports setting a limited set of CSP configurations through custom provisioning packages. Provisioning packages are typically leveraged for non-MDM managed devices and require to be manually applied to each device. See the [HoloLens provisioning](hololens-provisioning.md) documentation for details on building custom provisioning packages.
 
@@ -191,9 +191,9 @@ HoloLens 2 uses state-of-the-art technology that includes popular hardware featu
 
 The following lists the most commonly used MDM settings that HoloLens 2 supports to configure hardware restrictions. Some of these hardware restrictions provide connectivity and assist in data protection.
 
-- [**Allow WiFi:**](/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) Whether users can enable and use the Wi-Fi radio on their devices
-- [**Allow USB Connection:**](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) Whether the USB connection is enabled (doesn&#39;t affect USB charging)
-- [**Allow Bluetooth:**](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) Whether users can enable and use the Bluetooth radio on their devices
+- [**Allow WiFi:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) Whether users can enable and use the Wi-Fi radio on their devices
+- [**Allow USB Connection:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) Whether the USB connection is enabled (doesn&#39;t affect USB charging)
+- [**Allow Bluetooth:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) Whether users can enable and use the Bluetooth radio on their devices
 
 Read more about other [common device restrictions.](hololens-common-device-restrictions.md)
 
@@ -213,13 +213,13 @@ Read more about how to [prepare certificates and network profiles for HoloLens 2
 
 Most corporate intranet networks leverage a proxy to manage internal traffic. With HoloLens 2 you can configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections.
 
-For more details on proxy settings for Windows 10, see [NetworkProxy CSP](/windows/client-management/mdm/networkproxy-csp).
+For more details on proxy settings for Windows 10, see [NetworkProxy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp).
 
 #### VPN
 
 Organizations often use a VPN to control access to apps and resources on their company&#39;s intranet. HoloLens 2 supports SSL VPN connections, which require a downloadable plugin from the Microsoft Store and are specific to the VPN vendor of your choice.
 
-For more details about VPN profiles, see the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp?redirectedfrom=MSDN)
+For more details about VPN profiles, see the [VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp?redirectedfrom=MSDN)
 
 #### Kiosk Mode
 
@@ -266,7 +266,7 @@ IT administrators can control which apps are allowed to be installed on the Holo
 
 HoloLens 2 supports [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md), which enables administrators to create, allow, or disallow lists of apps from the Microsoft Store. This capability extends to built-in apps, as well. The ability to allow or deny apps helps to ensure that people use their devices for their intended purposes. However, it is not always an easy approach to find a balance between what employees need or request and security concerns. Creating allow or disallow lists also requires keeping up with the changing app landscape in the Microsoft Store.
 
-For more details, see [Application Control CSP](/windows/client-management/mdm/applicationcontrol-csp).
+For more details, see [Application Control CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp).
 
 ### Retire
 
