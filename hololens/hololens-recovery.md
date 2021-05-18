@@ -105,7 +105,7 @@ Before you start the reflash procedure, make sure the app is installed and runni
 
 ### Manual procedure
 
-If the HoloLens 2 doesn't start correctly, you may need to put the device into Recovery mode:
+If the HoloLens 2 doesn't start correctly or if Advanced Recovery Companion cannot detect the device, you may need to put the device into recovery mode:
 
 1. Unplug the Type-C cable to disconnect the device from the power supply or the host PC.
 
