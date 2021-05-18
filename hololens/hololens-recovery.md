@@ -136,4 +136,4 @@ Follow these steps to enable the deployment path:
 
 Other resources:
 - [Distribute offline apps](/microsoft-store/distribute-offline-apps) 
-- [DISM app package (.appx or .appxbundle) servicing command-line options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
+- [DISM app package (.appx or .appxbundle) servicing command-line options](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
