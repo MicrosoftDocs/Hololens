@@ -59,16 +59,17 @@ Workarounds:
 
 ### Device using Auto-login asks for log-in
 
-A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device to a feature update that increases the major version number.
+A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device with a substantially large update, such as a feature update.
 
 Example of when this could occur:
 
-- Updating a device from Windows Holographic, version 2004 (Build 19041.xxxx) to Windows Holographic, version 21H1 (Build 20346.xxxx).
+- Updating a device from Windows Holographic, version 2004 (Build 19041.xxxx) to Windows Holographic, version 21H1 (Build 20346.xxxx)
+- Updating a device to take a large update on the same major build, e.g. Windows Holographic, version 2004 to Windows Holographic, version 20H2
+- Updating a device from a factory image to the latest image
 
 This should not occur during:
 
 - Devices taking a monthly servicing update
-- Feature updates that do not increase the major build number, such as 2004 to 20H2
 
 Work around methods:
 
