@@ -123,6 +123,12 @@ If the HoloLens 2 doesn't start correctly or if Advanced Recovery Companion cann
 
 6. Select the HoloLens 2 device in the Advanced Recovery Companion app UI, and then follow the instructions to complete the reflash.
 
+## Troubleshoot Advanced Recovery Companion
+1. Ensure your device is charged to 40% or more before attempting to flash.
+2. Check that your device is unlocked.
+3. If ARC does not detect your device, ensure that you can connect to your device via File Explorer on your PC. If you cannot, it is possible that your device many have USB policies that disable that connection. If so, try [Manual Flashing mode](hololens-recovery.md#manual-procedure).
+4. Check that your device doesn't display a [1-3-5-LED pattern](hololens2-setup.md#lights-to-indicate-problems).
+
 ## Download ARC without using the app store
 
 If the IT environment prevents the use of the Windows Store app or limits access to the retail store, the IT administrator can make this app available through an "offline" deployment path.
@@ -154,6 +160,7 @@ Follow these steps to enable the deployment path:
 
 > [!TIP]
 > When you plan to use Advanced Recovery Companion to install an FFU offline, it may be useful to download your flash image. [**Download the current image for HoloLens 2**](https://aka.ms/hololens2download).
+
 
 Other resources:
 - [Distribute offline apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
