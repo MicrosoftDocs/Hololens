@@ -16,7 +16,7 @@ manager: jarrettr
 
 To do most things on your HoloLens, you have to be connected to a network. HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio and connecting it to a network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network. This guide will help you:
 
-- Connect to a network using Wi-Fi or (for HoloLens 2 only) Ethernet over USB-C
+- Connect to a network using Wi-Fi, or for HoloLens 2 only, Wi-Fi Direct or Ethernet over USB-C
 - Disable and re-enable Wi-Fi
 
 Read more about [using HoloLens offline](hololens-offline.md).
@@ -128,21 +128,80 @@ Additional resources:
 - WLANv1Profile Schema: [[MS-GPWL]: Wireless LAN Profile v1 Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-### EAP Troubleshooting
-
+## EAP Troubleshooting
+> [!TIP]
+> A majority of network issues are the result of one of the below 3 settings being incorrect in the Wi-FI profile. 
 1. Double check Wi-Fi profile has right settings:
    1. EAP type is configured correctly, common EAP types: EAP-TLS (13), EAP-TTLS (21) and PEAP (25).
    1. Wi-Fi SSID name is right and matches with HEX string.
    1. For EAP-TLS, TrustedRootCA contains the SHA-1 hash of server&#39;s trusted root CA certificate. On Windows PC &quot;certutil.exe -dump cert\_file\_name&quot; command will show a certificate&#39;s SHA-1 hash string.
-1. Collect network packet capture on the Access Point or Controller or AAA server logs to find out where the EAP session fails.
+
+2. Collect network packet capture on the Access Point or Controller or AAA server logs to find out where the EAP session fails.
    1. If the EAP identity provided by HoloLens is not expected, check whether the identity has been correctly provisioned through Wi-Fi profile or client certificate.
    1. If server rejects HoloLens client certificate, check whether the required client certificate has been provisioned on the device.
    1. If HoloLens rejects server certificate, check if the server root CA certificate has been provisioned on HoloLens.
 1. If the enterprise profile is provisioned through Wi-Fi provisioning package, consider applying the provisioning package on a Windows 10 PC. If it also fails on Windows 10 PC, follow the [Windows client 802.1X authentication troubleshooting guide](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication).
-1. Send us feedback through [Feedback Hub](https://docs.microsoft.com/hololens/hololens-feedback).
+1. Set your telemetry to Full or Optional (depending on your build) and then send us feedback through [Feedback Hub](https://docs.microsoft.com/hololens/hololens-feedback).
 
 ### Additional resources:
 - [Export Wi-Fi settings from a Windows device](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
+
+## Configure Network Proxy
+
+This section covers network proxy for HoloLens OS and Universal Windows Platform (UWP) Apps using Windows HTTP stack. Applications using non-Windows HTTP stack may have their own proxy configuration and handling. 
+
+### Proxy Configurations 
+
+- Proxy Auto-Config (PAC) script: a [PAC file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) (opens a non-Microsoft site) contains a JavaScript function FindProxyForURL(url, host). 
+- Static Proxy: in the form of Server:Port.  
+- Web Proxy Auto-Discovery Protocol (WPAD): provide URL of proxy configuration file through DHCP or DNS. 
+
+### Proxy Provisioning Methods 
+There are three ways to provision proxies:
+
+ 
+
+1.  **Settings UI:** 
+    1. Per-user proxy (20H2 or earlier):
+        1. Open the Start menu and select Settings.
+        2. Select Network & Internet and then Proxy on the left menu.
+        3. Scroll down to Manual proxy setup and toggle Use a proxy server to On.
+        4. Enter the IP address of the proxy server.
+        5. Enter the port number.
+        6. Click Save.
+      1. WiFi proxy (21H1 or higher):
+          1. Open the Start menu and go to your Wi-Fi Network’s Properties page.
+          1. Scroll down to Proxy
+          1. Change to Manual Setup
+          1. Enter the IP address of the proxy server.
+          1. Enter the port number.
+          1. Click Apply.
+        
+ 2. **MDM** 
+     1. Intune - Use these [steps](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) to configure proxy in Intune. You will need to scroll to the bottom of the section.
+     1. Other 3rd party MDM solutions - Use a [WiFi CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp).
+
+3. **PPKG** 
+    1. Open Windows Configuration Designer
+    1. Click on Advanced Provisioning, enter the name for your new Project and click Next.
+    1. Select Windows Holographic (HoloLens 2) and click Next.
+    1. Import your PPKG (optional) and click Finish.
+    1. Expand Runtime Settings -> Connectivity Profiles -> WLAN -> WLAN Proxy.
+    1. Enter the SSID of your Wi-Fi network and click Add.
+    1. Select your Wi-Fi network in the left window and enter your desired customizations. The enabled customizations will show in bold on the left menu.
+    1. Click Save and Exit.
+    1. [Apply](https://docs.microsoft.com/hololens/hololens-provisioning#applyremove-a-provisioning-package-to-hololens-after-setup) the provisioning package to the HoloLens.
+
+[CSPs](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) are behind many of the management tasks and policies for Windows 10, both in Microsoft Intune and in non-Microsoft MDM service providers. You can also use [Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) to create a [provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) and apply it to the HoloLens 2.
+The most likely CSPs that will be applied to your HoloLens 2 are:
+
+- [WiFi CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp): per-profile Wi-Fi proxy 
+
+[Other CSPs supported in HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+
+
+
+
 
 ## VPN
 A VPN connection can help provide a more secure connection and access to your company's network and the Internet. HoloLens 2 supports built-in VPN client and Universal Windows Platform (UWP) VPN plug-in. 
@@ -325,3 +384,22 @@ Depending on your devices build you can either use built in voice commands or Co
 1. In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
 1. Navigate to the **Networking** section.  
    This section displays your IP address and other network information. By using this method, you can copy and paste of the IP address on your development PC.
+
+## Change IP Address to static address
+### By using Settings
+ 
+1. Open the **Start** menu.
+1. Select the **Settings** app from **Start** or from the **All Apps** list on the right of the **Start** menu. The **Settings** app will be auto-placed in front of you.
+1. Select **Network & Internet**.
+1. Scroll down to beneath the list of available Wi-Fi networks and select **Hardware properties**.
+1. In the **Edit IP settings** window, change the first field to **Manual**.
+1. Input the desired IP configuration in the remaining fields and then click **Save**.
+
+### By using Windows Device Portal
+
+1. In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
+1. Navigate to the **Networking** section.
+1. Select the **IPv4 Configuration** button.
+1. Select **Use the following IP address** and input the desired TCP/IP configuration.
+1. Select **Use the following DNS server addresses** and enter the Preferred and Alternate DNS server addresses, if needed.
+1. Click **Save**. 
