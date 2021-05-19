@@ -13,6 +13,7 @@ ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
 ---
+# Overview of core components
 
 ## Prepare
 
