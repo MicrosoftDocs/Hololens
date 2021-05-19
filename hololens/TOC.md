@@ -35,7 +35,7 @@
 ### [HoloLens 2 battery and charging](hololens2-charging.md)
 ### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 
-# Cloud Service Integration
+# Deploying HoloLens 2
 ## [Planning](hololens-requirements.md)
 ## Common Deployment Scenarios
 ### Cloud connected environment deployment guide
