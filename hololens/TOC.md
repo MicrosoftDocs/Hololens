@@ -11,7 +11,7 @@
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 ### [Commercial features](hololens-commercial-features.md)
 
-# [HoloLens 2 Use Cases](hololens-requirements.md)
+# [Planning HoloLens 2 implementation](hololens-requirements.md)
 
 # Using your HoloLens
 ## First-time usage
