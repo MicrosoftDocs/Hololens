@@ -93,45 +93,45 @@ Please review the following short [guide on enabling MDM Automatic Enrollment](h
 
 ### 3. Register devices in Windows Autopilot
 
-#### Obtain hardware hash
-
 Your devices must be registered in Windows Autopilot before first setup. For MEM documentation on device registration please see [Adding devices to Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices).  
 
-There are two primary ways to register HoloLens devices:
+There are three primary ways to register HoloLens devices:
 
  - **Reseller can register devices in the Partner Center when you place an order.**
 
    > [!NOTE]  
    > This is the recommended path for adding devices to the Autopilot service. [Learn more](https://docs.microsoft.com/mem/autopilot/partner-registration).  
 
+ - **You can [submit a support request](hololens2-autopilot-registration-support.md) directly to Microsoft.**
  - **Retrieve the hardware hash (also known as the hardware ID) and register the device manually in MEM admin center**.
 
-- **Retrieve hardware hash**
+#### Obtain hardware hash
+There are two ways to retrieve the hardware hash.
+1. You can [submit a support request](hololens2-autopilot-registration-support.md) directly to Microsoft.
+2. You can retrieve it from the device. The device records its hardware hash in a CSV file during the OOBE process, or later when a device owner starts the diagnostic log collection process (described in the following procedure). Typically, the device owner is the first user to sign in to the device.
 
-The device records its hardware hash in a CSV file during the OOBE process, or later when a device owner starts the diagnostic log collection process (described in the following procedure). Typically, the device owner is the first user to sign in to the device.
+    1. Start the HoloLens 2 device.
 
-1. Start the HoloLens 2 device.
-
-1. On the device, press the **Power** and **Volume Down** buttons at the same time and then release them. The device collects diagnostic logs and the hardware hash, and stores them in a set of .zip files.
+    1. On the device, press the **Power** and **Volume Down** buttons at the same time and then release them. The device collects diagnostic logs and the hardware hash, and stores them in a set of .zip files.
 
    1. For full details and an instructional video for how to preform this please read about [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics).
 
-1. Use a USB-C cable to connect the device to a computer.
+    1. Use a USB-C cable to connect the device to a computer.
 
-1. On the computer, open File Explorer. Open **This PC\\\<*HoloLens device name*>\\Internal Storage\\Documents**, and locate the AutopilotDiagnostics.zip file.  
+    1. On the computer, open File Explorer. Open **This PC\\\<*HoloLens device name*>\\Internal Storage\\Documents**, and locate the AutopilotDiagnostics.zip file.  
 
-   > [!NOTE]  
-   > The .zip file may not immediately be available. If the file is not ready yet you may see a HoloLensDiagnostics.temp file in the Documents folder. To update the list of files, refresh the window.
+       > [!NOTE]  
+       > The .zip file may not immediately be available. If the file is not ready yet you may see a HoloLensDiagnostics.temp file in the Documents folder. To update the list of files, refresh the window.
+    
+    1. Extract the contents of the AutopilotDiagnostics.zip file.
 
-1. Extract the contents of the AutopilotDiagnostics.zip file.
+    1. In the extracted files, locate the CSV file that has a file name prefix of "DeviceHash." Copy that file to a drive on the computer where you can access it later.  
 
-1. In the extracted files, locate the CSV file that has a file name prefix of "DeviceHash." Copy that file to a drive on the computer where you can access it later.  
-
-   > [!IMPORTANT]  
-   > The data in the CSV file should use the following header and line format:
-   > ```
-   > Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User <serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>
-   >```
+       > [!IMPORTANT]  
+       > The data in the CSV file should use the following header and line format:
+       > ```
+       > Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User <serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>
+       >```
 
 #### Register device through MEM
 
@@ -317,7 +317,7 @@ The following articles may be a useful resource for you to learn more informatio
 
 To provide feedback or report issues, use one of the following methods:
 
-- For support on device registration please [submit a support request](hololens2-autopilot-registration-support.md) directly to Microsoft.
+- For support on device registration, please please contact your reseller or distributor.
 - For general support inquiries about Windows Autopilot, or for issues like profile assignments, group creation or MEM portal controls, [please contact Microsoft Endpoint Manager support](https://docs.microsoft.com/mem/get-support)  
 - If your device is registered to the Autopilot service and the profile is assigned on MEM portal, contact HoloLens [support](https://docs.microsoft.com/hololens/) (see 'Support' card). Please open a support ticket and if applicable, include screenshots and logs by capturing [offline diagnostic logs](hololens-diagnostic-logs.md#offline-diagnostics) during the out-of-box-experience (OOBE).
 - To report an issue from the device, use the Feedback Hub app on your HoloLens. In Feedback Hub, select the **Enterprise Management** > **Device** category.
