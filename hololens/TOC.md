@@ -11,6 +11,7 @@
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 ### [Commercial features](hololens-commercial-features.md)
 
+# [Planning](hololens-requirements.md)
 
 # Using your HoloLens
 ## First-time usage
@@ -36,7 +37,6 @@
 ### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 
 # Deploying HoloLens 2
-## [Planning](hololens-requirements.md)
 ## Common Deployment Scenarios
 ### Cloud connected environment deployment guide
 #### [Overview](hololens2-cloud-connected-overview.md)
