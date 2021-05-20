@@ -109,6 +109,8 @@ There are three primary ways to register HoloLens devices:
 There are two ways to retrieve the hardware hash.
 1. You can [submit a support request](hololens2-autopilot-registration-support.md) directly to Microsoft.
 2. You can retrieve it from the device. The device records its hardware hash in a CSV file during the OOBE process, or later when a device owner starts the diagnostic log collection process (described in the following procedure). Typically, the device owner is the first user to sign in to the device.
+> [!WARNING]
+> In builds prior to 20H2, if you have gone through OOBE and the telemetry was set to Required, you cannot collect the hardware hash for Autopilot through this method. In order to collect your hardware hash via this method set your telemetry option to Full via the Settings App and select Privacy -> Diagnostics.
 
     1. Start the HoloLens 2 device.
 
