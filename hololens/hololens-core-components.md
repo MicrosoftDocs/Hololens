@@ -15,6 +15,7 @@ appliesto:
 ---
 # Planning HoloLens 2 implementation in a commercial environment
 
+## Overview
 > [!NOTE]
 > This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within an organization. For device end users, see the [Basic Usage overview](hololens2-setup.md) to get started.
 
