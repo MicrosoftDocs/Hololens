@@ -14,35 +14,18 @@ appliesto:
 - HoloLens 2
 ---
 
-# Planning HoloLens 2 implementation in a commercial environment
-
-> [!NOTE]
-> This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within an organization. For device end users, see the [Basic Usage overview](hololens2-setup.md) to get started.
-
-HoloLens 2 runs on Windows 10 Holographic which provides organizations with robust, flexible, built-in mobile device and app management technologies. Windows 10 Holographic supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. The HoloLens 2 can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance and retirement using a comprehensive mobile device management solution.
-
-The following steps can help guide you through the process of HoloLens 2 adoption within your organization.
-
-| | |
-|--|--|
-| ![Step 1](images/1green.png)| <br/> **[Common Deployment Scenarios](#common-deployment-scenarios)**: Understand deployment scenarios and explore the core components needed to deploy HoloLens 2 devices. |
-| ![Step 2](images/2green.png)| <br/> **[Prepare](#prepare)**: Review the prepare guide to become familiar with the tools and approaches you need to use and security considerations. |
-| ![Step 3](images/3green.png) | <br/> **[Configure](#configure)**: Learn about configuration settings you can use to properly setup your device, manage user identity and access, network connectivity, etc. |
-| ![Step 4](images/4green.png) | <br/> **[Deploy](#deploy)**: Discover how to install/manage, distribute and deploy your applications securely and efficiently. |
-| ![Step 5](images/5green.png) | <br/> **[Maintain](#maintain)**: Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
-
-## Common Deployment Scenarios
+# Common Deployment Scenarios
 
 This following information provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise. Often how you manage your devices and how to access your organization's resources is largely determined by factors already in place. Based on the existing infrastructure we invite you to review the common device management style in the following scenarios, and try out our guides for deploying in the scenario matching your needs.
 
-### Scenarios
+## Scenarios
 
 The diagram below represents two typical managed scenarios for HoloLens 2 deployments.
 
 
 There is also third scenario that allows for offline secure deployments.
 
-### Scenario A: Deploy to cloud connect devices
+## Scenario A: Deploy to cloud connect devices
 
 HoloLens 2 is deployed for use primarily in environments external to a corporate network. Corporate resources aren't accessed or may be limited through VPN. This  deployment is similar to managed mobile devices within a company.
  * Basic Common Configurations
@@ -65,7 +48,7 @@ For a deployment guide that is similar to this scenario review our guide for [Cl
 > [!div class="nextstepaction"]
 > [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
 
-### Scenario B: Deploy inside your organization's network
+## Scenario B: Deploy inside your organization's network
 
 HoloLens 2 is deployed for use primarily on the corporate network with access to internal corporate resources. Internet and cloud services may be limited. This deployment is a typical deployment for most Windows 10 PCs.
 
@@ -92,7 +75,7 @@ For a deployment guide that is similar to this scenario review our guide for [Co
 > [!div class="nextstepaction"]
 > [Corporate network deployment guide](hololens2-corp-connected-overview.md)
 
-### Scenario C: Deploy in secure offline environment
+## Scenario C: Deploy in secure offline environment
 
 HoloLens 2 is deployed for use primarily offline with no network or internet access. This is a typical deployment for highly secure or confidential locations.
  * Basic Common Configurations
