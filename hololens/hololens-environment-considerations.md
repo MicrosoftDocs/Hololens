@@ -98,9 +98,9 @@ There are two settings, which enable users to “clean up” holograms and cause
 
 ## Hologram quality
 
-Holograms can be placed throughout your environment—high, low, and all around you—but you’ll see them through a [holographic frame](https://docs.microsoft.com/windows/mixed-reality/holographic-frame) that sits in front of your eyes. To get the best view, make sure to adjust your device so you can see the entire frame. And don’t hesitate to walk around your environment and explore!
+Holograms can be placed throughout your environment—high, low, and all around you—but you’ll see them through a [holographic frame](/windows/mixed-reality/holographic-frame) that sits in front of your eyes. To get the best view, make sure to adjust your device so you can see the entire frame. And don’t hesitate to walk around your environment and explore!
 
-For your [holograms](https://docs.microsoft.com/windows/mixed-reality/hologram) to look crisp, clear, and stable, your HoloLens needs to be calibrated just for you. When you first set up your HoloLens, you’ll be guided through this process. Later on, if holograms don’t look right or you’re seeing numerous errors, you can make adjustments.
+For your [holograms](/windows/mixed-reality/hologram) to look crisp, clear, and stable, your HoloLens needs to be calibrated just for you. When you first set up your HoloLens, you’ll be guided through this process. Later on, if holograms don’t look right or you’re seeing numerous errors, you can make adjustments.
 
 If you're having trouble-mapping spaces, try deleting nearby holograms and remapping the space.
 
@@ -128,5 +128,5 @@ Here are some guidelines to follow when using your device:
 
 ## See also
 
-- [Spatial mapping design](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
-- [Holograms](https://docs.microsoft.com/windows/mixed-reality/hologram)
+- [Spatial mapping design](/windows/mixed-reality/spatial-mapping)
+- [Holograms](/windows/mixed-reality/hologram)
