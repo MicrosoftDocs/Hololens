@@ -116,6 +116,8 @@ If someone else is going to be using your HoloLens, they should run the Calibrat
 
 [HoloLens Regulatory information](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Includes information on temperature range, disposal, radio and TV interference, and more.
 
+See details for "HoloLens" in [Materials and substances](https://www.microsoft.com/legal/compliance/materials-substances) > REACH Article 33 Disclosure on Environmental Compliance (PDF).
+
 Here are some guidelines to follow when using your device:
 
 1. Store device in an environment within temperature range (either in Standby or Off) for an hour before using the device.
