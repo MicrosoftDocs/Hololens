@@ -3,7 +3,7 @@ title: Windows Autopilot Registration Support for HoloLens 2
 description: Learn how to get registration support for Autopilot on HoloLens 2 devices.
 author: joyjaz
 ms.author: v-jjaswinski
-ms.date: 5/12/2021
+ms.date: 5/20/2021
 ms.prod: hololens
 ms.topic: article
 ms.custom: 
