@@ -109,6 +109,7 @@
 
 # Resources
 ## [Support and help options](hololens2-support.md)
+## [Autopilot support requests](hololens2-autopilot-registration-support.md)
 ## Release notes
 ### [HoloLens 2 release notes](hololens-release-notes.md)
 ### [Insider preview for Microsoft HoloLens](hololens-insider.md)
