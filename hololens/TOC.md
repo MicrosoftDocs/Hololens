@@ -36,7 +36,7 @@
 
 # Deploying HoloLens 2
 ## [Common Deployment Scenarios](hololens-requirements.md)
-## [Overview of core components](hololens-core-components.md)
+## [Planning HoloLens 2 Implementation](hololens-core-components.md)
 ## Deployment Guides
 ### Cloud connected environment deployment guide
 #### [Overview](hololens2-cloud-connected-overview.md)
