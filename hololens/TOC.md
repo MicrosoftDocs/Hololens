@@ -11,10 +11,6 @@
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 ### [Commercial features](hololens-commercial-features.md)
 
-# Planning HoloLens 2 implementation
-## [Common Deployment Scenarios](hololens-requirements.md)
-## [Overview of core components](hololens-core-components.md)
-
 # Using your HoloLens
 ## First-time usage
 ### [The Basics](hololens2-setup.md)
@@ -39,7 +35,9 @@
 ### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 
 # Deploying HoloLens 2
-## Common Deployment Scenarios
+## [Common Deployment Scenarios](hololens-requirements.md)
+## [Overview of core components](hololens-core-components.md)
+## Deployment Guides
 ### Cloud connected environment deployment guide
 #### [Overview](hololens2-cloud-connected-overview.md)
 #### [Prepare](hololens2-cloud-connected-prepare.md)
