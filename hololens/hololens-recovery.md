@@ -126,8 +126,10 @@ If the HoloLens 2 doesn't start correctly or if Advanced Recovery Companion cann
 ## Troubleshoot Advanced Recovery Companion
 1. Ensure your device is charged to 40% or more before attempting to flash.
 2. Check that your device is unlocked.
-3. If ARC does not detect your device, ensure that you can connect to your device via File Explorer on your PC. If you cannot, it is possible that your device may have USB policies that disable that connection. If so, try [Manual Flashing mode](hololens-recovery.md#manual-procedure).
-4. Check that your device doesn't display a [1-3-5-LED pattern](hololens2-setup.md#lights-to-indicate-problems).
+3. If ARC does not detect your device, ensure that you can connect to your device via File Explorer on your PC. If you cannot;
+    1.  It is possible that your device may have USB policies that disable that connection. If so, try [Manual Flashing mode](hololens-recovery.md#manual-procedure).
+    2.  If there are no policies, try a different USB cable.
+1. Check that your device doesn't display a [1-3-5-LED pattern](hololens2-setup.md#lights-to-indicate-problems).
 
 ## Download ARC without using the app store
 
