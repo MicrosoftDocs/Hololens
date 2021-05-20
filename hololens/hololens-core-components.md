@@ -25,7 +25,7 @@ The following steps can help guide you through the process of HoloLens 2 adoptio
 
 | | |
 |--|--|
-| ![Step 1](images/1green.png)| <br/> **[Common Deployment Scenarios](#common-deployment-scenarios)**: Understand deployment scenarios and explore the core components needed to deploy HoloLens 2 devices. |
+| ![Step 1](images/1green.png)| <br/> **[Common Deployment Scenarios](hololens-requirements.md)**: Understand deployment scenarios and explore the core components needed to deploy HoloLens 2 devices. |
 | ![Step 2](images/2green.png)| <br/> **[Prepare](#prepare)**: Review the prepare guide to become familiar with the tools and approaches you need to use and security considerations. |
 | ![Step 3](images/3green.png) | <br/> **[Configure](#configure)**: Learn about configuration settings you can use to properly setup your device, manage user identity and access, network connectivity, etc. |
 | ![Step 4](images/4green.png) | <br/> **[Deploy](#deploy)**: Discover how to install/manage, distribute and deploy your applications securely and efficiently. |
@@ -94,12 +94,12 @@ When deploying HoloLens 2 devices to a corporate enterprise environment, there a
 
 | Device Setting | Brief description.                                                                              |
 |----------------|-------------------------------------------------------------------------------------------------|
-| [Hardware restrictions](hololens-requirements.md#hardware-restrictions)               | Hardware restrictions reduce connectivity and assist in data protection.                        |
-| [Wi-Fi profiles](hololens-requirements.md#wi-fi-profiles)               | Configure Wi-Fi profiles without user intervention or interaction.                              |
-| [Certificates](hololens-requirements.md#certificates-1)               | Provide account and/or Wi-Fi authentication, VPN encryption, and SSL encryption of web content. |
-| [Proxy](hololens-requirements.md#proxy)              | Manage internal traffic.                                                                        |
-|  [VPN](hololens-requirements.md#vpn)              | Control access to apps and resources on their company's intranet.                               |
-| [Kiosk Mode](hololens-requirements.md#kiosk-mode) | Limits the applications that are presented to users via UI. |
+| [Hardware restrictions](#hardware-restrictions)               | Hardware restrictions reduce connectivity and assist in data protection.                        |
+| [Wi-Fi profiles](#wi-fi-profiles)               | Configure Wi-Fi profiles without user intervention or interaction.                              |
+| [Certificates](#certificates-1)               | Provide account and/or Wi-Fi authentication, VPN encryption, and SSL encryption of web content. |
+| [Proxy](#proxy)              | Manage internal traffic.                                                                        |
+|  [VPN](#vpn)              | Control access to apps and resources on their company's intranet.                               |
+| [Kiosk Mode](#kiosk-mode) | Limits the applications that are presented to users via UI. |
 
 #### Hardware restrictions
 
