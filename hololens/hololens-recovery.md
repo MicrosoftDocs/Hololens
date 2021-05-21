@@ -21,7 +21,26 @@ appliesto:
 # Restart, reset, or recover HoloLens 2
 
 >[!IMPORTANT]
-> Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](hololens2-setup.md#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device. For more information, see [General troubleshooting guide](hololens-troubleshooting-overview.md)
+> Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](hololens2-setup.md#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device.
+
+Use the [charger and the USB Type-C cable](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) that came with the HoloLens 2 as that is the best way to charge your device. The charger supplies 18W of power (9V at 2A). Using the wall charger supplied, HoloLens 2 devices can charge the battery to full in less than 65 minutes when the device is in standby. If those accessories aren't available, make sure the charger that's available can support at least 15W of power.
+
+> [!NOTE]
+> If possible, avoid using a PC to charge the device over USB, which is slow.
+
+If the device is correctly booted and running, there are three ways to check the battery charge level:
+
+- From the main menu of the HoloLens device UI.
+- View the LED close to the power button (for a 40-percent charge, you should see at least two solid LEDs).
+    - When the device is charging, the battery indicator lights up to indicate the current level of charge.  The last light will fade in and out to indicate active charging.
+    - When your HoloLens is on, the battery indicator displays the battery level in five increments.
+    - When only one of the five lights is on, the battery level is below 20 percent.
+    - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
+- On your host PC, open **File Explorer** and look for your HoloLens 2 device on left side under **This PC**. Right-click the device, and select **Properties**. A dialog box will show the battery charge level.
+
+   ![A HoloLens 2 properties screen shows battery change level](images/ResetRecovery2.png)
+
+If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the [troubleshooting guide](hololens-troubleshooting.md). If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
 ## Reset the device
 
@@ -48,6 +67,7 @@ If the standard reset procedure didn't work, use the hard-reset procedure:
 2. Hold down the **volume down** + **power** buttons for 15 seconds. The device will automatically restart.
 
 4. Connect the device to the host PC.
+
 5. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and then select **Device Manager**). Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery device maanger 2](images/MicrosoftHoloLens_DeviceManager.png)
@@ -102,6 +122,19 @@ If the HoloLens 2 doesn't start correctly or if Advanced Recovery Companion cann
 
 6. Select the HoloLens 2 device in the Advanced Recovery Companion app UI, and then follow the instructions to complete the reflash.
 
+## Troubleshoot Advanced Recovery Companion
+
+1. Ensure your device is charged to 40% or more before attempting to flash.
+
+2. Check that your device is unlocked.
+
+3. If ARC does not detect your device, ensure that you can connect to your device via File Explorer on your PC. If you cannot;
+
+    1.  It is possible that your device may have USB policies that disable that connection. If so, try [Manual Flashing mode](hololens-recovery.md#manual-procedure).
+    2.  If there are no policies, try a different USB cable.
+
+1. Check that your device doesn't display a [1-3-5-LED pattern](hololens2-setup.md#lights-to-indicate-problems).
+
 ## Download ARC without using the app store
 
 If the IT environment prevents the use of the Windows Store app or limits access to the retail store, the IT administrator can make this app available through an "offline" deployment path.
@@ -111,11 +144,15 @@ If the IT environment prevents the use of the Windows Store app or limits access
  > - This guide focuses on Advanced Recovery Companion, but the process can also be used for other "offline" apps.
 
 Follow these steps to enable the deployment path:
+
 1. Go to the [Microsoft Store for Business](https://businessstore.microsoft.com) and sign in using an Azure Active Directory identity.
 
 1. Go to **Manage – Settings**. Turn on **Show offline apps** under **Shopping experience**.
+
 1. Go to **shop for my group**, and search for [***Advanced Recovery Companion***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
+
 1. Change the **License Type** to ***offline***, and select **Manage**.
+
 1. Under **Download the package for offline use**, select the second blue **Download** button. Make sure that the file extension is *.appxbundle*.
 
     - At this stage, if the Desktop PC has internet access, double-click the package to install the app.
@@ -128,11 +165,12 @@ Follow these steps to enable the deployment path:
           ```console
           C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
           ```
-            > [!NOTE]
-            > The version number in this code example may not match the currently available version. You may have also chosen a different download location than in the example. Make any changes to the command as needed.
+          > [!NOTE]
+          > The version number in this code example may not match the currently available version. You may have also chosen a different download location than in the example. Make any changes to the command as needed.
 
 > [!TIP]
 > When you plan to use Advanced Recovery Companion to install an FFU offline, it may be useful to download your flash image. [**Download the current image for HoloLens 2**](https://aka.ms/hololens2download).
+
 
 Other resources:
 - [Distribute offline apps](/microsoft-store/distribute-offline-apps) 
