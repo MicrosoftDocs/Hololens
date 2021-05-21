@@ -33,7 +33,7 @@ The following steps can help guide you through the process of HoloLens 2 adoptio
 
 ## Prepare
 
-As you prepare to deploy HoloLens 2 to your corporate enterprise environment, there are certain essential infrastructure services required to support the full set of capabilities. 
+Learn about essential infrastructure services required to support the full set of HoloLens 2 capabilities. 
 
 | Component | Description |
 |-----------|------------|
@@ -43,6 +43,8 @@ As you prepare to deploy HoloLens 2 to your corporate enterprise environment, th
 
 ## Configure
 
+Use Intune and Autopilot as low-touch solutions for enrolling and configuring corporate devices to your organization’s Azure AD tenant and MDM.
+
 | Component | Description |
 |-----------|------------|
 | [Auto Enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) | After initial login, devices automatically register with Azure AD and enroll into MDM  |
@@ -51,12 +53,12 @@ As you prepare to deploy HoloLens 2 to your corporate enterprise environment, th
 
 ## Deploy
 
-Now that you have everything configured you should be ready to distribute devices. 
+Distribute your HoloLens 2 devices and validate their configuration. 
 
 | Component | Description |
 |-----------|------------|
 | [Enrollment Validation](hololens2-corp-connected-deploy.md#enrollment-validation) | Validate the device has Azure AD Joined from Settings or the Azure Portal |
- [Certificate Validation](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | Check settings and validate they have been distributed correctly |
+| [Certificate Validation](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | Check settings and validate they have been distributed correctly |
 | [Validate app installs](hololens2-corp-connected-deploy.md#validate-lob-app-install) | Confirm the app is present and working on your HoloLens 2 |
 
 ## Maintain
