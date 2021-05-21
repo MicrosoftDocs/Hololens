@@ -26,9 +26,9 @@ The following steps can help guide you through the process of HoloLens 2 adoptio
 | | |
 |--|--|
 | ![Step 1](images/1green.png)| <br/> **[Common Deployment Scenarios](hololens-requirements.md)**: Understand deployment scenarios and explore the core components needed to deploy HoloLens 2 devices. |
-| ![Step 2](images/2green.png)| <br/> **[Prepare](#prepare)**: Become familiar with and setup the infrastructure essentials. |
-| ![Step 3](images/3green.png) | <br/> **[Configure](#configure)**: Configure your essential components for a cloud-based deployment. |
-| ![Step 4](images/4green.png) | <br/> **[Deploy](#deploy)**: Deploy your devices and distribute your applications securely and efficiently. |
+| ![Step 2](images/2green.png)| <br/> **[Prepare](#prepare)**: Become familiar with the infrastructure essentials needed for HoloLens 2. |
+| ![Step 3](images/3green.png) | <br/> **[Configure](#configure)**: Learn how to configure your essential components for a cloud-based deployment. |
+| ![Step 4](images/4green.png) | <br/> **[Deploy](#deploy)**: Discover how to deploy your devices and distribute your applications securely and efficiently. |
 | ![Step 5](images/5green.png) | <br/> **[Maintain](#maintain)**: Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
 
 ## Prepare
@@ -43,7 +43,7 @@ Learn about essential infrastructure services required to support the full set o
 
 ## Configure
 
-Use Intune and Autopilot as low-touch solutions for enrolling and configuring corporate devices to your organization’s Azure AD tenant and MDM.
+Use Intune and Autopilot as low-touch solutions for enrolling and configuring HoloLens 2 to your organization’s Azure AD tenant and MDM.
 
 | Component | Description |
 |-----------|------------|
@@ -63,7 +63,7 @@ Distribute your HoloLens 2 devices and validate their configuration.
 
 ## Maintain
 
-In enterprise IT environments, the need for security and cost control must be balanced against the desire to provide users with the latest technologies. Since cyberattacks have become an everyday occurrence, it is important to properly maintain the state of your Windows 10 devices. IT needs to control configuration settings, keeping them from drifting out of compliance, as well as enforce which devices can access internal applications. HoloLens 2 delivers the mobile operations management capabilities necessary to ensure that devices are in compliance with corporate policy.
+Use Windows Update for Business along with your MDM system or the Microsoft Store to keep your fleet of HoloLens 2 and apps updated.
 
 | Component | Description |
 |-----------|------------|
