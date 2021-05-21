@@ -7,7 +7,9 @@
 ### [Device-only edition](hololens2-options-device-only.md)
 ### [Remote Assist edition](hololens2-options-remote-assist.md)
 ### [Industrial edition](hololens2-options-industrial-edition.md)
+### [HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md)
 ### [Development edition](hololens2-options-dev-edition.md)
+#### [HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 ### [Commercial features](hololens-commercial-features.md)
 
@@ -18,10 +20,6 @@
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
 ### [Update HoloLens](hololens-update-hololens.md)
 ## Daily Operation
-### Connect your HoloLens 2
-#### [Connect HoloLens to a network](hololens-network.md)
-#### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
-#### [Connect to Cellular and 5G](hololens-cellular.md)
 ### Navigate the Windows Holographic interface
 #### [Use the Start menu and mixed reality home](holographic-home.md)
 #### [Use your voice to operate HoloLens](hololens-cortana.md)
@@ -35,6 +33,10 @@
 #### [Improve visual quality and comfort](hololens-calibration.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
 #### [HoloLens environment considerations](hololens-environment-considerations.md)
+### Connect your HoloLens 2
+#### [Connect HoloLens to a network](hololens-network.md)
+#### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
+#### [Connect to Cellular and 5G](hololens-cellular.md)
 ### [HoloLens 2 battery and charging](hololens2-charging.md)
 ### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 
@@ -114,15 +116,8 @@
 ## Release notes
 ### [HoloLens 2 release notes](hololens-release-notes.md)
 ### [Insider preview for Microsoft HoloLens](hololens-insider.md)
-### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 ## [Supported languages](hololens2-language-support.md)
-## FAQ
-### [General](hololens-faq.md)
-### [HoloLens 2 display](hololens2-display.md)
-### [HoloLens 2 fit and comfort](hololens2-fit-comfort-faq.md)
-### [HoloLens 2 cleaning](hololens2-maintenance.md)
-### [HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
-### [HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md)
+## [HoloLens 2 FAQs](hololens-faq.md)
 ## [Develop with Microsoft Mesh (Preview)](/mesh/overview)
 ## HoloLens (1st gen)
 ### [About HoloLens (1st gen)](hololens1-hardware.md)
@@ -135,7 +130,8 @@
 ### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 ### [Reset HoloLens (1st gen) ](hololens1-recovery.md)
 ### [HoloLens (1st gen) fit and comfort](hololens1-fit-comfort-faq.md)
-### HoloLens 1st Gen Security 
+### HoloLens 1st Gen Security
+### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 #### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
 #### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 
