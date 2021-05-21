@@ -49,7 +49,7 @@ Use Intune and Autopilot as low-touch solutions for enrolling and configuring Ho
 |-----------|------------|
 | [Auto Enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) | After initial login, devices automatically register with Azure AD and enroll into MDM  |
 | [Application Licenses](hololens2-cloud-connected-configure.md#application-licenses)| Can be applied to either users, user groups, or device groups  |
-| [Azure Users and Groups](hololens2-cloud-connected-configure.md#application-licenses) | Helps assign configurations and licenses for the HoloLens 2  |
+| [Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups) | Helps assign configurations and licenses for the HoloLens 2  |
 
 ## Deploy
 
