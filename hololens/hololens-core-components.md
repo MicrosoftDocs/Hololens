@@ -1,5 +1,5 @@
 ---
-title: Planning HoloLens 2 implementation in a commercial environment
+title: Planning HoloLens 2 deployment in a commercial environment
 description: Learn about the core needs for deploying and managing HoloLens in enterprise environments, including infrastructure, azure active directory, and mobile device management.
 ms.prod: hololens
 ms.sitesec: library
@@ -47,7 +47,7 @@ As you prepare to deploy HoloLens 2 to your corporate enterprise environment, th
 |-----------|------------|
 | [Auto Enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) | After initial login, devices automatically register with Azure AD and enroll into MDM  |
 | [Application Licenses](app-deploy-overview.md)| Can be applied to either users, user groups, or device groups  |
-| [Azure Users and Groups](hololens2-corp-connected-deploy.md#azure-users-and-groups) | Helps assign configurations and licenses for the HoloLens 2  |
+| [Azure Users and Groups](hololens2-corp-connected-configure.md#azure-users-and-groups) | Helps assign configurations and licenses for the HoloLens 2  |
 
 ## Deploy
 
