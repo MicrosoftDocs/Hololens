@@ -33,9 +33,7 @@ The following steps can help guide you through the process of HoloLens 2 adoptio
 
 ## Prepare
 
-As you prepare to deploy HoloLens 2 to your corporate enterprise environment, there are several considerations that should be reviewed and understood as you begin to plan for scale deployments of HoloLens 2.
-
-For HoloLens 2 in a corporate enterprise deployment scenario, there are certain essential infrastructure services required to support the full set of capabilities. 
+As you prepare to deploy HoloLens 2 to your corporate enterprise environment, there are certain essential infrastructure services required to support the full set of capabilities. 
 
 | Component | Description |
 |-----------|------------|
