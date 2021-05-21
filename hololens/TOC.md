@@ -56,7 +56,7 @@
 #### [Deploy](hololens2-corp-connected-deploy.md)
 #### [Maintain](hololens2-corp-connected-maintain.md)
 ### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
-## [License requirements](hololens-licenses-requirements.md)
+### [License requirements](hololens-licenses-requirements.md)
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ### [Share HoloLens with multiple people](hololens-multiple-users.md)
