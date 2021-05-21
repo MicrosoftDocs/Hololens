@@ -13,7 +13,7 @@ ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
 ---
-# Planning HoloLens 2 implementation in a commercial environment
+# Planning HoloLens 2 deployment in a commercial environment
 
 ## Overview
 > [!NOTE]
