@@ -7,9 +7,9 @@
 ### [Device-only edition](hololens2-options-device-only.md)
 ### [Remote Assist edition](hololens2-options-remote-assist.md)
 ### [Industrial edition](hololens2-options-industrial-edition.md)
-### [HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md)
+#### [HoloLens 2 Industrial Edition FAQs](hololens2-industrial-edition-faq.md)
 ### [Development edition](hololens2-options-dev-edition.md)
-#### [HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
+#### [HoloLens 2 Development Edition FAQs](hololens2-development-edition-faq.md)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 ### [Commercial features](hololens-commercial-features.md)
 
