@@ -37,17 +37,17 @@ As you prepare to deploy HoloLens 2 to your corporate enterprise environment, th
 
 | Component | Description |
 |-----------|------------|
-| Azure AD | Provides identity and access management for the HoloLens 2  |
-| Mobile Device Management| Manages HoloLens 2 devices connected to your tenant  |
-| Wi-Fi Network| Wi-Fi is available and devices can be connected to the Internet  |
+| [Azure AD](hololens-identity.md) | Provides identity and access management for the HoloLens 2  |
+| [Mobile Device Management](hololens-mdm-configure.md)| Manages HoloLens 2 devices connected to your tenant  |
+| [Wi-Fi Network](hololens-commercial-infrastructure.md)| Wi-Fi is available and devices can be connected to the Internet  |
 
 ## Configure
 
 | Component | Description |
 |-----------|------------|
-| Auto Enrollment | After initial login, devices automatically register with Azure AD and enroll into MDM  |
-| Application Licenses| Can be applied to either users, user groups, or device groups  |
-| Azure Users and Groups | Helps assign configurations and licenses for the HoloLens 2  |
+| [Auto Enrollment](hololens-enroll-mdm.md#auto-enrollment) | After initial login, devices automatically register with Azure AD and enroll into MDM  |
+| [Application Licenses](app-deploy-overview.md)| Can be applied to either users, user groups, or device groups  |
+| [Azure Users and Groups](https://docs.microsoft.com/mem/configmgr/) | Helps assign configurations and licenses for the HoloLens 2  |
 
 ## Deploy
 
@@ -55,9 +55,9 @@ Now that you have everything configured you should be ready to distribute device
 
 | Component | Description |
 |-----------|------------|
-| Enrollment Validation | Validate the device has Azure AD Joined from Settings or the Azure Portal |
- Certificate Validation | Check settings and validate they have been distributed correctly |
-| Validate app installs | Confirm the app is present and working on your HoloLens 2 |
+| [Enrollment Validation](hololens2-corp-connected-deploy.md#enrollment-validation) | Validate the device has Azure AD Joined from Settings or the Azure Portal |
+ [Certificate Validation](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | Check settings and validate they have been distributed correctly |
+| [Validate app installs](hololens2-corp-connected-deploy.md#validate-lob-app-install) | Confirm the app is present and working on your HoloLens 2 |
 
 ## Maintain
 
@@ -65,6 +65,6 @@ In enterprise IT environments, the need for security and cost control must be ba
 
 | Component | Description |
 |-----------|------------|
-| Update HoloLens 2 | Configure updates as needed through Windows Updates for Business |
-| Update apps | Configure through your MDM system or the Microsoft Store
+| [Update HoloLens 2](hololens-updates.md) | Configure updates as needed through Windows Updates for Business |
+| [Update apps](app-deploy-overview.md) | Configure through your MDM system or the Microsoft Store
 
