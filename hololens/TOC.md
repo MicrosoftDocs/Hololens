@@ -113,9 +113,8 @@
 # Resources
 ## [Support and help options](hololens2-support.md)
 ## [Autopilot support requests](hololens2-autopilot-registration-support.md)
-## Release notes
-### [HoloLens 2 release notes](hololens-release-notes.md)
-### [Insider preview for Microsoft HoloLens](hololens-insider.md)
+## [HoloLens 2 release notes](hololens-release-notes.md)
+## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ## [Supported languages](hololens2-language-support.md)
 ## [HoloLens 2 FAQs](hololens-faq.md)
 ## [Develop with Microsoft Mesh (Preview)](/mesh/overview)
