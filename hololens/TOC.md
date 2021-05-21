@@ -69,7 +69,7 @@
 ### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
 ## Device Management
 ### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
-## Enrollment
+## Device Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
 ### [Enroll in MAC address restricted Wi-Fi Environment](mac-address-options.md)

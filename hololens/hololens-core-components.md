@@ -1,5 +1,5 @@
 ---
-title: Overview of core ideals needed for HoloLens 2 implementation in a commercial environment
+title: Planning HoloLens 2 implementation in a commercial environment
 description: Learn about the core needs for deploying and managing HoloLens in enterprise environments, including infrastructure, azure active directory, and mobile device management.
 ms.prod: hololens
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.author: v-jjaswinski
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/04/2020
+ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
 ---
@@ -17,7 +17,7 @@ appliesto:
 
 ## Overview
 > [!NOTE]
-> This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within an organization. For device end users, see the [Basic Usage overview](hololens2-setup.md) to get started.
+> This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within an organization. For device end users, see [The Basics](hololens2-setup.md) to get started.
 
 HoloLens 2 runs on Windows 10 Holographic which provides organizations with robust, flexible, built-in mobile device and app management technologies. Windows 10 Holographic supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. The HoloLens 2 can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance and retirement using a comprehensive mobile device management solution.
 
