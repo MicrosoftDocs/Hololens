@@ -14,9 +14,9 @@
 # Using your HoloLens
 ## First-time usage
 ### [The Basics](hololens2-setup.md)
-#### [Set up your HoloLens 2](hololens2-start.md)
-#### [Getting around HoloLens 2](hololens2-basic-usage.md)
-#### [Update HoloLens](hololens-update-hololens.md)
+### [Set up your HoloLens 2](hololens2-start.md)
+### [Getting around HoloLens 2](hololens2-basic-usage.md)
+### [Update HoloLens](hololens-update-hololens.md)
 ## Daily Operation
 ### Connect your HoloLens 2
 #### [Connect HoloLens to a network](hololens-network.md)
