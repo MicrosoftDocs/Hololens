@@ -36,7 +36,7 @@ landingContent:
    # Card 
   - title: HoloLens 2 Editions
     linkLists:
-      - linkListType: comparison
+      - linkListType: overview
         links:        
           - text: Device only
             url: hololens2-options-device-only.md
@@ -52,7 +52,7 @@ landingContent:
    # Card 
   - title: Using your HoloLens 2 
     linkLists:
-      - linkListType: use
+      - linkListType: how-to-guide
         links:        
           - text: First time usage
             url: hololens2-setup.md        
@@ -63,7 +63,7 @@ landingContent:
    # Card
   - title: Planning your HoloLens 2 deployment
     linkLists:
-      - linkListType: plan
+      - linkListType: architecture
         links:
           - text: Common deployment scenarios
             url: common-scenarios.md
