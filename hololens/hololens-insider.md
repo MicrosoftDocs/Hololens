@@ -42,7 +42,7 @@ We've added a new feature to the HoloLens 2 Settings app, which allows customers
 - If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files will not upload until you re-enable the feature.
 - Newest files will upload first (last in, first out).
 - If your OneDrive account has issues (for example, after your password changes) a **Fix now** button will appear on the Settings page.
-- There is no maximum file size, but note that large files will take longer to upload (especially if your upload bandwidth is constrained). If you "pause" or turn off upload while a large file is being uploaded, it will immediately cancel the upload. The upload will restart when you re-enable the feature; you won't lose any files, but the partial upload will be discarded.
+- There is no maximum file size, but note that large files will take longer to upload (especially if your upload bandwidth is constrained). If you "pause" or turn off upload while a large file is being uploaded, the partial upload will be preserved. If upload is re-enabled within several hours of being "paused" or turned off, the upload will continue from where it left off. However, if upload is re-enabled after several hours, the large file's upload will restart from the beginning.
 
 **Known issues and caveats**
 
