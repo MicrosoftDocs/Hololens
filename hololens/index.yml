@@ -70,7 +70,7 @@ landingContent:
             url: hololens2-corp-connected-overview.md
           - text: Deployment Guide - External Clients 
             url: hololens2-deployment-guide.md
-          - text: Deployment Guide - Offline secure deployment
+          - text: Deployment Guide - Offline secure
             url: hololens-common-scenarios-offline-secure.md
   
   # Card
@@ -78,13 +78,13 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Troubleshoot HoloLens issues
+          - text: General Troubleshooting
             url: hololens-troubleshooting.md
-          - text: Known issues for HoloLens
+          - text: Known issues
             url: hololens-known-issues.md
           - text: Collect and use diagnostic information from HoloLens devices
             url: hololens-diagnostic-logs.md
-          - text: Manage HoloLens updates
+          - text: Manage updates
             url: hololens-updates.md
           - text: Restart, reset, or recover HoloLens 2
             url: hololens-recovery.md
@@ -94,13 +94,13 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: Support and help options for HoloLens 2 
+          - text: Support and help options 
             url: hololens2-support.md
           - text: Autopilot support requests 
             url: hololens2-autopilot-registration-support.md
           - text: HoloLens 2 release notes
             url: hololens-release-notes.md
-          - text: Insider preview for Microsoft HoloLens
+          - text: Insider preview
             url: hololens-insider.md
           - text: Give us feedback
             url: hololens-feedback.md
