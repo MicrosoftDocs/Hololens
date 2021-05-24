@@ -118,8 +118,9 @@ landingContent:
           - text: Give us feedback
             url: hololens-feedback.md
 # Card
- - title: Develop with HoloLens 2
-   linkListType: how-to-guide
+- title: Develop with HoloLens 2
+  linkLists:
+  - linkListType: how-to-guide
         links:
           - text: What is Mixed Reality?
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
