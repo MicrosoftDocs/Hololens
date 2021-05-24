@@ -52,24 +52,8 @@ landingContent:
             url: hololens2-setup.md        
           - text: Daily operation
             url: holographic-home.md
-           
-   # Card
-  - title: See the HoloLens 2 in action
-    linkLists:
-      - linkListType: video
-        links:
-          - text: What can HoloLens 2 do?
-            url: https://www.youtube.com/watch?v=XwOnHqiNAeU
-          - text: HoloLens 2 Deployment Overview
-            url: https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview
-          - text: Learn about HoloLens 2 with Remote Assist
-            url: https://youtu.be/d3YT8j0yYl0
-          - text: Learn about HoloLens 2 with Dynamics 365 Guides
-            url: https://www.youtube.com/watch?v=2h86OJT9OPo
-          - text: Introducing Microsoft Mesh
-            url: https://www.youtube.com/watch?v=Jd2GK0qDtRg&t=52s 
             
-   # Card
+  # Card
   - title: Plan your HoloLens 2 deployment
     linkLists:
       - linkListType: architecture
@@ -104,13 +88,16 @@ landingContent:
             url: hololens-updates.md
           - text: Restart, reset, or recover HoloLens 2
             url: hololens-recovery.md
-          - text: Support and help options for HoloLens2 
-            url: hololens2-support.md
+          
   # Card
-  - title: Release Notes & Feedback
+  - title: Resources
     linkLists:
       - linkListType: whats-new
         links:
+          - text: Support and help options for HoloLens 2 
+            url: hololens2-support.md
+          - text: Autopilot support requests 
+            url: hololens2-autopilot-registration-support.md
           - text: HoloLens 2 release notes
             url: hololens-release-notes.md
           - text: Insider preview for Microsoft HoloLens
