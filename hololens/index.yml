@@ -77,7 +77,7 @@ landingContent:
             url: hololens-csp-policy-overview.md
           - text: Network & Connectivity
             url: hololens-commercial-infrastructure.md
-       - linkListType: deploy
+      - linkListType: deploy
         links:       
           - text: Cloud connected HoloLens 2 deployment at scale with Remote Assist
             url: hololens2-cloud-connected-overview.md
