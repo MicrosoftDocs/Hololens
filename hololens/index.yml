@@ -24,13 +24,13 @@ landingContent:
   # Card 
   - title: HoloLens Overview
     linkLists:
-      - linkListType: overview
+      - linkListType: quickstart
         links:
           - text: About HoloLens 2 hardware
             url: hololens2-hardware.md
           - text: Compare HoloLens 2 options
             url: hololens2-options.md
-      - linkListType: learn
+      - linkListType: overview
         links:        
           - text: Device-only
             url: hololens2-options-device-only.md
@@ -65,13 +65,13 @@ landingContent:
             url: hololens-core-components.md  
       - linkListType: deploy
         links:       
-          - text: Cloud connected HoloLens 2 deployment at scale with Remote Assist
+          - text: Deployment Guide - Cloud connected HoloLens 2 deployment at scale with Remote Assist
             url: hololens2-cloud-connected-overview.md
-          - text: Corporate connected HoloLens 2 deployment with Dynamics 365 Guides
+          - text: Deployment Guide - Corporate connected HoloLens 2 deployment with Dynamics 365 Guides
             url: hololens2-corp-connected-overview.md
-          - text: External Clients Deployment Guide
+          - text: Deployment Guide - External Clients 
             url: hololens2-deployment-guide.md
-          - text: Offline secure deployment
+          - text: Deployment Guide - Offline secure deployment
             url: hololens-common-scenarios-offline-secure.md
   
 
