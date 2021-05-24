@@ -51,8 +51,12 @@ landingContent:
         links:
           - text: What can HoloLens 2 do?
             url: https://www.youtube.com/watch?v=XwOnHqiNAeU
+          - text: HoloLens 2 Deployment Overview
+            url: https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview?term=hololens%202&lang-en=true&pageSize=15  
           - text: Learn about HoloLens 2 with Remote Assist
             url: https://youtu.be/d3YT8j0yYl0
+          - text: Learn about HoloLens 2 with Dynamics 365 Guides
+            url: https://www.youtube.com/watch?v=2h86OJT9OPo
           - text: Introducing Microsoft Mesh
             url: https://www.youtube.com/watch?v=Jd2GK0qDtRg&t=52s
    
