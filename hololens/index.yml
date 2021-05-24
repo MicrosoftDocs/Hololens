@@ -79,8 +79,8 @@ landingContent:
             url: hololens-commercial-infrastructure.md
           - text: Manage HoloLens 2 updates
             url: hololens-updates.md
-        - linkListType: deploy
-          links:        
+       - linkListType: deploy
+         links:        
           - text: Cloud connected HoloLens 2 deployment at scale with Remote Assist
             url: hololens2-cloud-connected-overview.md
           - text: Corporate connected HoloLens 2 deployment with Dynamics 365 Guides
