@@ -30,7 +30,7 @@ landingContent:
             url: hololens2-hardware.md
           - text: Compare HoloLens 2 options
             url: hololens2-options.md
-      - linkListType: concept
+      - linkListType: learn
         links:        
           - text: Device-only
             url: hololens2-options-device-only.md
@@ -75,23 +75,21 @@ landingContent:
             url: hololens-common-scenarios-offline-secure.md
   
 
-  # Card
+   # Card
   - title: Maintain and Troubleshooting Guide
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Troubleshoot HoloLens issues
             url: hololens-troubleshooting.md
-          - text: Restart, reset, or recover HoloLens 2
-            url: hololens-recovery.md
-          - text: Restart, reset, or recover HoloLens (1st gen)
-            url: hololens1-recovery.md
           - text: Known issues for HoloLens
             url: hololens-known-issues.md
           - text: Collect and use diagnostic information from HoloLens devices
             url: hololens-diagnostic-logs.md
           - text: Manage HoloLens updates
             url: hololens-updates.md
+          - text: Restart, reset, or recover HoloLens 2
+            url: hololens-recovery.md
           - text: Support and help options for HoloLens2 
             url: hololens2-support.md
   # Card
