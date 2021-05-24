@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page # Required
   author: mccoybot #Required; your GitHub user alias, with correct capitalization.
   ms.author: v-todmc #Required; microsoft alias of author; optional team alias. 
-  ms.date: 5/22/2020 #Required; mm/dd/yyyy format.
+  ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -77,16 +77,12 @@ landingContent:
             url: hololens-csp-policy-overview.md
           - text: Network & Connectivity
             url: hololens-commercial-infrastructure.md
-          - text: Manage HoloLens 2 updates
-            url: hololens-updates.md
-      
-    
-    
-    # Card
-    - title: Deployment
-    linklists:
+             
+  # Card
+  - title: Deployment
+    linkLists:
       - linkListType: deploy
-      links:       
+        links:       
           - text: Cloud connected HoloLens 2 deployment at scale with Remote Assist
             url: hololens2-cloud-connected-overview.md
           - text: Corporate connected HoloLens 2 deployment with Dynamics 365 Guides
