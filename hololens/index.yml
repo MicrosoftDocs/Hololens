@@ -121,7 +121,7 @@ landingContent:
 - title: Develop with HoloLens 2
   linkLists:
     - linkListType: how-to-guide
-        links:
+      links:
           - text: What is Mixed Reality?
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
           - text: Start designing and prototyping
