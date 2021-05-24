@@ -94,14 +94,14 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: Support and help options 
-            url: hololens2-support.md
-          - text: Autopilot support requests 
-            url: hololens2-autopilot-registration-support.md
           - text: HoloLens 2 release notes
             url: hololens-release-notes.md
           - text: Insider preview
             url: hololens-insider.md
+          - text: Autopilot support requests 
+            url: hololens2-autopilot-registration-support.md
+          - text: Support and help options 
+            url: hololens2-support.md
           - text: Give us feedback
             url: hololens-feedback.md
             
