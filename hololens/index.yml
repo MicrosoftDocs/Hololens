@@ -21,33 +21,77 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
 
-  # Card (optional)
+  # Card 
   - title: HoloLens Overview
     linkLists:
       - linkListType: overview
         links:
-          - text: HoloLens 2 overview
-            url: hololens2-options.md
-          - text: HoloLens 2 hardware
+          - text: About HoloLens 2 hardware
             url: hololens2-hardware.md
+          - text: Compare HoloLens 2 options
+            url: hololens2-options.md
           - text: Microsoft Mesh (Preview)
             url: /mesh/overview
-          - text: Use the Start menu and mixed reality home
-            url: holographic-home.md
-          - text: Find, install, and uninstall applications
-            url: holographic-store-apps.md
-          - text: Improve visual quality and comfort
-            url: hololens-calibration.md
-          - text: How to Update HoloLens
-            url: hololens-update-hololens.md
-
-  # Card
-  - title: Deployment Guides
+          
+   # Card 
+  - title: HoloLens 2 Editions
     linkLists:
-      - linkListType: deploy
+      - linkListType: editions
+        links:        
+          - text: Device only
+            url: hololens2-options-device-only.md
+          - text: Remote Assist edition
+            url: hololens2-options-remote-assist.md
+          - text: Industrial Edition
+            url: hololens2-options-industrial-edition.md
+          - text: Development Edition
+            url: hololens2-options-dev-edition.md
+          - text: Trimble XR10 with HoloLens 2
+            url: hololens2-options-trimble-xr10-edition.md
+                    
+   # Card 
+  - title: Using your HoloLens 2 
+    linkLists:
+      - linkListType: usage
+        links:        
+          - text: First time usage
+            url: hololens2-setup.md        
+          - text: Daily operation
+            url: holographic-home.md
+         
+      
+   # Card
+  - title: Planning your HoloLens 2 deployment
+    linkLists:
+      - linkListType: planning
         links:
           - text: Common deployment scenarios
             url: common-scenarios.md
+          - text: Planning HoloLens 2 deployment in a commercial environment
+            url: hololens-core-components.md  
+          - text: Identity
+            url: hololens-identity.md  
+          - text: Security
+            url: security-overview.md
+          - text: Device Management
+            url: hololens-mdm-configure.md
+          - text: Device Enrollment
+            url: hololens-enroll-mdm.md  
+          - text: Application deployment
+            url: app-deploy-overview.mdm
+          - text: Policies
+            url: hololens-csp-policy-overview.md
+          - text: Network & Connectivity
+            url: hololens-commercial-infrastructure.md
+          - text: Manage HoloLens 2 updates
+            url: hololens-updates.md
+         
+              
+  # Card
+  - title: HoloLens 2 Deployment Guides
+    linkLists:
+      - linkListType: deploy
+        links:        
           - text: Cloud connected HoloLens 2 deployment at scale with Remote Assist
             url: hololens2-cloud-connected-overview.md
           - text: Corporate connected HoloLens 2 deployment with Dynamics 365 Guides
@@ -57,57 +101,7 @@ landingContent:
           - text: Offline secure deployment
             url: hololens-common-scenarios-offline-secure.md
 
-  # Card
-  - title: Prepare
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Deploy HoloLens in a commercial environment
-            url: hololens-requirements.md
-          - text: Security overview
-            url: security-overview.md
-          - text: License requirements
-            url: hololens-licenses-requirements.md
-          - text: HoloLens environment considerations
-            url: hololens-environment-considerations.md         
-          - text: Commercial features
-            url: hololens-commercial-features.md
-
-  # Card
-  - title: Configure
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Manage user identity and sign-in for HoloLens
-            url: hololens-identity.md
-          - text: Configure your network for HoloLens
-            url: hololens-commercial-infrastructure.md
-          - text: Connect HoloLens to a network
-            url: hololens-network.md
-          - text: Manage connection endpoints for HoloLens
-            url: hololens-offline.md
-          - text: Configure HoloLens using provisioning packages
-            url: hololens-provisioning.md         
-          - text: Set up HoloLens as a kiosk
-            url: hololens-kiosk.md
-
-  # Card
-  - title: Deploy
-    linkLists:
-      - linkListType: deploy
-        links:
-          - text: Enroll HoloLens in MDM
-            url: hololens-enroll-mdm.md
-          - text: Windows Autopilot for HoloLens 2
-            url: hololens2-autopilot.md
-          - text: Application management overview
-            url: app-deploy-overview.md
-          - text: Intune & Company Portal
-            url: app-deploy-intune.md
-          - text: Microsoft Store for Business
-            url: app-deploy-store-business.md
-          - text: Provisioning Package
-            url: app-deploy-provisioning-package.md
+  
 
   # Card
   - title: Maintain and Troubleshooting Guide
