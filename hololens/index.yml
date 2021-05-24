@@ -24,7 +24,7 @@ landingContent:
   # Card 
   - title: Get to know the HoloLens 2
     linkLists:
-      - linkListType: quickstart
+      - linkListType: learn
         links:
           - text: About HoloLens 2 hardware
             url: hololens2-hardware.md
@@ -89,8 +89,7 @@ landingContent:
           - text: Deployment Guide - Offline secure deployment
             url: hololens-common-scenarios-offline-secure.md
   
-
-   # Card
+  # Card
   - title: Troubleshoot and Maintain
     linkLists:
       - linkListType: how-to-guide
@@ -118,7 +117,21 @@ landingContent:
             url: hololens-insider.md
           - text: Give us feedback
             url: hololens-feedback.md
-
+# Card
+ - title: Develop with HoloLens 2
+   linkListType: how-to-guide
+        links:
+          - text: What is Mixed Reality?
+            url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
+          - text: Start designing and prototyping
+            url: https://docs.microsoft.com/windows/mixed-reality/design
+          - text: Introduction to Mixed Reality development
+            url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+          - text: Cloud Services Overview
+            url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+          - text: Microsoft Mesh (Preview)
+            url: /mesh/overview
+ 
  # Card
   - title: More Services
     linkLists:
@@ -132,16 +145,5 @@ landingContent:
             url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
           - text: Microsoft Dynamics 365 Mixed Reality 
             url: https://docs.microsoft.com/dynamics365/mixed-reality/
-      - linkListType: how-to-guide
-        links:
-          - text: What is Mixed Reality?
-            url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
-          - text: Start designing and prototyping
-            url: https://docs.microsoft.com/windows/mixed-reality/design
-          - text: Introduction to Mixed Reality development
-            url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
-          - text: Cloud Services Overview
-            url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
-          - text: Microsoft Mesh (Preview)
-            url: /mesh/overview
+      
           
