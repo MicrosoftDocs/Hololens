@@ -79,6 +79,9 @@ landingContent:
             url: hololens-commercial-infrastructure.md
           - text: Manage HoloLens 2 updates
             url: hololens-updates.md
+       
+       # Card 
+   - title: Deployment Guides
        - linkListType: deploy
          links:          
           - text: Cloud connected HoloLens 2 deployment at scale with Remote Assist
