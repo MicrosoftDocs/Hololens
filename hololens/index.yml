@@ -63,20 +63,6 @@ landingContent:
             url: common-scenarios.md
           - text: Planning HoloLens 2 deployment in a commercial environment
             url: hololens-core-components.md  
-          - text: Identity
-            url: hololens-identity.md  
-          - text: Security
-            url: security-overview.md
-          - text: Device Management
-            url: hololens-mdm-configure.md
-          - text: Device Enrollment
-            url: hololens-enroll-mdm.md  
-          - text: Application deployment
-            url: app-deploy-overview.md
-          - text: Policies
-            url: hololens-csp-policy-overview.md
-          - text: Network & Connectivity
-            url: hololens-commercial-infrastructure.md
       - linkListType: deploy
         links:       
           - text: Cloud connected HoloLens 2 deployment at scale with Remote Assist
