@@ -120,7 +120,7 @@ landingContent:
 # Card
 - title: Develop with HoloLens 2
   linkLists:
-  - linkListType: how-to-guide
+    - linkListType: how-to-guide
         links:
           - text: What is Mixed Reality?
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
