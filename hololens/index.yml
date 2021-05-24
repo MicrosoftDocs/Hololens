@@ -36,7 +36,7 @@ landingContent:
    # Card 
   - title: HoloLens 2 Editions
     linkLists:
-      - linkListType: editions
+      - linkListType: comparison
         links:        
           - text: Device only
             url: hololens2-options-device-only.md
@@ -52,7 +52,7 @@ landingContent:
    # Card 
   - title: Using your HoloLens 2 
     linkLists:
-      - linkListType: usage
+      - linkListType: use
         links:        
           - text: First time usage
             url: hololens2-setup.md        
@@ -63,7 +63,7 @@ landingContent:
    # Card
   - title: Planning your HoloLens 2 deployment
     linkLists:
-      - linkListType: planning
+      - linkListType: plan
         links:
           - text: Common deployment scenarios
             url: common-scenarios.md
@@ -78,7 +78,7 @@ landingContent:
           - text: Device Enrollment
             url: hololens-enroll-mdm.md  
           - text: Application deployment
-            url: app-deploy-overview.mdm
+            url: app-deploy-overview.md
           - text: Policies
             url: hololens-csp-policy-overview.md
           - text: Network & Connectivity
