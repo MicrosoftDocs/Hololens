@@ -81,6 +81,12 @@ landingContent:
             url: hololens-updates.md
       
     # Card
+    - title: Deployment
+    linklists:
+      - linkListType: deploy
+      links:
+    
+    # Card
     - title: Deployment Guides
       linkLists:
         - linkListType: deploy
