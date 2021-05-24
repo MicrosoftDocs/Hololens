@@ -43,7 +43,16 @@ landingContent:
           - text: Trimble XR10 with HoloLens 2
             url: hololens2-options-trimble-xr10-edition.md
                     
-        
+  # Card 
+  - title: Get Started 
+    linkLists:
+      - linkListType: how-to-guide
+        links:        
+          - text: First time usage
+            url: hololens2-setup.md        
+          - text: Daily operation
+            url: holographic-home.md
+           
    # Card
   - title: See the HoloLens 2 in action
     linkLists:
@@ -58,19 +67,8 @@ landingContent:
           - text: Learn about HoloLens 2 with Dynamics 365 Guides
             url: https://www.youtube.com/watch?v=2h86OJT9OPo
           - text: Introducing Microsoft Mesh
-            url: https://www.youtube.com/watch?v=Jd2GK0qDtRg&t=52s
-   
-   # Card 
-  - title: Get Started 
-    linkLists:
-      - linkListType: how-to-guide
-        links:        
-          - text: First time usage
-            url: hololens2-setup.md        
-          - text: Daily operation
-            url: holographic-home.md
-         
-      
+            url: https://www.youtube.com/watch?v=Jd2GK0qDtRg&t=52s 
+            
    # Card
   - title: Plan your HoloLens 2 deployment
     linkLists:
