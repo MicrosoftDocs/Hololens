@@ -120,4 +120,4 @@ Keep your first few sessions with HoloLens brief and be sure to take breaks. If 
 See [product safety warnings and instructions](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
 
 > [!div class="nextstepaction"]
-> [Start and configure your HoloLens 2](hololens2-start.md)
+> [Set up your HoloLens 2](hololens2-start.md)
