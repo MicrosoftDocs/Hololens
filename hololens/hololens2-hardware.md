@@ -203,7 +203,10 @@ The serial number can also be found via a connected PC:
 
 <img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
-## Next step
+## Next step(s)
+
+> [!div class="nextstepaction"]
+> [Compare HoloLens 2 Editions](hololens2-options.md)
 
 > [!div class="nextstepaction"]
 > [Set up and start your HoloLens 2](hololens2-setup.md)
