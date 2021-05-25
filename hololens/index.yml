@@ -128,8 +128,6 @@ landingContent:
         links:
           - text: Dynamics 365 Remote Assist Docs
             url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
-          - text: Learn Dynamics 365 Remote Assist
-            url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
           - text: Dynamics 365 Guides
             url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
           - text: Microsoft Dynamics 365 Mixed Reality 

@@ -221,3 +221,5 @@ Now you can configure your HoloLens 2 to meet your specific needs.  Other things
 
 > [!TIP]
 > Try the [Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd?rtc=1&activetab=pivot:overviewtab) app.
+
+If you are an IT admin, review the [Common Deployment Scenarios](Hololens-requirements) for help in deploying HoloLens 2 to your organization.

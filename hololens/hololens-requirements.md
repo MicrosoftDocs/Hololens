@@ -16,11 +16,21 @@ appliesto:
 
 # Common Deployment Scenarios
 
-This following information provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise. Often, how you manage your devices and access your organization's resources is largely determined by factors already in place. Based on the existing infrastructure, we invite you to review the common device management style in the following scenarios and then read [Planning HoloLens 2 deployments in a commercial environment](hololens-core-components.md) to determine which scenario matches your needs. 
+## Overview
+
+This page provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise.
+
+Often, how you manage your devices and access your organization's resources is largely determined by factors already in place. Based on your existing infrastructure, we invite you to review the common device management style (MDM) in the following scenarios and then read [Planning HoloLens 2 deployments in a commercial environment](hololens-core-components.md) to determine which scenario matches your needs. There are also three corresponding guides available for use during your deployment.
+
+
+ 1. [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md)
+     1. [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
+ 1. [Corporate network deployment guide](hololens2-corp-connected-overview.md)
+ 1. [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
 
 ## Scenario A: Deploy to cloud connected devices
 
-HoloLens 2 is deployed for use primarily in environments external to a corporate network. Corporate resources aren't accessed or may be limited through VPN. This deployment is similar to managed mobile devices within a company.
+This scenario is comparable to deploying managed mobile devices within a company. HoloLens 2 is deployed for use primarily in environments external to a corporate network. Corporate resources aren't accessed or may be limited through VPN. 
  * Basic Common Configurations
    * Wi-Fi networks are typically fully open to the Internet and Cloud services.
    * Azure AD Join with Mobile Device Management (MDM) Auto Enrollment--MDM (Intune) Managed
@@ -34,16 +44,17 @@ HoloLens 2 is deployed for use primarily in environments external to a corporate
 
 [ ![Scenario A diagram](images/deployment-guides-revised-scenario-a.png) ](images/deployment-guides-revised-scenario-a.png#lightbox)
 
-For a deployment guide that is similar to this scenario, review our guide for [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md).
+The corresponding Cloud connected guide will cover how to enroll HoloLens 2 into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device setup. Use the External Clients guide to deploy devices to a remote site for short-term or long-term external use.
 
 > [!div class="nextstepaction"]
 > [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md)
+
 > [!div class="nextstepaction"]
 > [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
 
 ## Scenario B: Deploy inside your organization's network
 
-HoloLens 2 is deployed for use primarily on the corporate network with access to internal corporate resources. Internet and cloud services may be limited. This deployment is a typical deployment for most Windows 10 PCs.
+This scenario is identical to a classic deployment for most Windows 10 PCs. HoloLens 2 is deployed for use primarily on the corporate network with access to internal corporate resources. Internet and cloud services may be limited. 
 
  * Basic Common Configurations
    * Wi-Fi network is an internal corporate network with access to internal resources, and limited access to the internet or Cloud services.
@@ -63,14 +74,14 @@ HoloLens 2 is deployed for use primarily on the corporate network with access to
 
 [ ![Scenario B2 diagram](images/deployment-guides-revised-scenario-b-02-1.png) ](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
-For a deployment guide that is similar to this scenario review our guide for [Corporate network deployment guide](hololens2-corp-connected-overview.md).
+The corresponding Corporate network guide will instruct on how to enroll HoloLens 2 into your existing device management, apply licenses as needed, and validate that your end users are able to operate a Dynamics 365 Guide, as well as use custom line of business apps, after device set up.
 
 > [!div class="nextstepaction"]
 > [Corporate network deployment guide](hololens2-corp-connected-overview.md)
 
 ## Scenario C: Deploy in secure offline environment
 
-HoloLens 2 is deployed for use primarily offline with no network or internet access. This is a typical deployment for highly secure or confidential locations.
+This is a typical deployment for highly secure or confidential locations. HoloLens 2 is deployed for use primarily offline with no network or internet access. 
  * Basic Common Configurations
    * Wi-Fi connectivity is disabled. Ethernet via USB may be enabled for LAN connectivity if necessary.
    * Not Managed.
@@ -86,7 +97,7 @@ HoloLens 2 is deployed for use primarily offline with no network or internet acc
 
 [ ![Offline Secure diagram 1](images/deployment-guides-revised-scenario-c-01.png) ](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
-For a deployment guide that is similar to this scenario review our [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md).
+The corresponding Offline secure guide provides instruction for applying a sample Provisioning Package that will lock down a HoloLens 2 for use in secure environments.
 
 > [!div class="nextstepaction"]
 > [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
