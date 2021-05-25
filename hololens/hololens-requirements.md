@@ -44,7 +44,7 @@ This scenario is comparable to deploying managed mobile devices within a company
 
 [ ![Scenario A diagram](images/deployment-guides-revised-scenario-a.png) ](images/deployment-guides-revised-scenario-a.png#lightbox)
 
-The corresponding Cloud connected guide will cover how to enroll HoloLens 2 into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device setup. Use the External Clients guide to deploy devices to a remote site for short-term or long-term external use.
+The corresponding Cloud connected guide covers how to enroll HoloLens 2 into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device setup. Use the External Clients guide to deploy devices to a remote site for short-term or long-term external use.
 
 > [!div class="nextstepaction"]
 > [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md)
@@ -74,7 +74,7 @@ This scenario is identical to a classic deployment for most Windows 10 PCs. Holo
 
 [ ![Scenario B2 diagram](images/deployment-guides-revised-scenario-b-02-1.png) ](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
-The corresponding Corporate network guide will instruct on how to enroll HoloLens 2 into your existing device management, apply licenses as needed, and validate that your end users are able to operate a Dynamics 365 Guide, as well as use custom line of business apps, after device set up.
+The corresponding Corporate network guide instructs on how to enroll HoloLens 2 into your existing device management, apply licenses as needed, and validate that your end users are able to operate a Dynamics 365 Guide, as well as use custom line of business apps, after device set up.
 
 > [!div class="nextstepaction"]
 > [Corporate network deployment guide](hololens2-corp-connected-overview.md)
