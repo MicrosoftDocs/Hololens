@@ -50,7 +50,7 @@ landingContent:
         links:        
           - text: First time usage
             url: hololens2-setup.md        
-          - text: Daily operation
+          - text: Daily usage
             url: holographic-home.md
             
   # Card
