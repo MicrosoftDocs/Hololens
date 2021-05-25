@@ -28,7 +28,6 @@
 ### Manage applications
 #### [Find, install, and uninstall applications](holographic-store-apps.md)
 #### [Manage custom apps for HoloLens 2](hololens2-holographic-custom-apps.md)
-#### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 ### Hologram optics and placement in space
 #### [Improve visual quality and comfort](hololens-calibration.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
@@ -125,6 +124,7 @@
 ### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
 ### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
 ### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
+### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 ### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 ### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 ### [Reset HoloLens (1st gen) ](hololens1-recovery.md)
