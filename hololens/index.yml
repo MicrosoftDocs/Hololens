@@ -119,7 +119,7 @@ landingContent:
           - text: Cloud Services Overview
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
           - text: Microsoft Mesh (Preview)
-            url: /mesh/overview
+            url: https://docs.microsoft.com/mesh/overview
  
  # Card
   - title: More Services

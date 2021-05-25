@@ -115,7 +115,7 @@
 ## [HoloLens 2 release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ## [Supported languages](hololens2-language-support.md)
-## [Develop with Microsoft Mesh (Preview)](/mesh/overview)
+## [Develop with Microsoft Mesh (Preview)](https://docs.microsoft.com/mesh/overview)
 ## HoloLens (1st gen)
 ### [About HoloLens (1st gen)](hololens1-hardware.md)
 ### [Basic usage overview](hololens1-setup.md)
