@@ -66,10 +66,10 @@ landingContent:
         links:       
           - text: Deployment Guide - Cloud connected HoloLens 2 deployment at scale with Remote Assist
             url: hololens2-cloud-connected-overview.md
+          - text: Deployment Guide - External Clients (cloud connected)
+            url: hololens2-deployment-guide.md
           - text: Deployment Guide - Corporate connected HoloLens 2 deployment with Dynamics 365 Guides
             url: hololens2-corp-connected-overview.md
-          - text: Deployment Guide - External Clients 
-            url: hololens2-deployment-guide.md
           - text: Deployment Guide - Offline secure
             url: hololens-common-scenarios-offline-secure.md
   
