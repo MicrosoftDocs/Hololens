@@ -18,7 +18,7 @@
 ### [Set up your HoloLens 2](hololens2-start.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
 ### [Update HoloLens](hololens-update-hololens.md)
-## Daily Operation
+## Daily Usage
 ### Navigate the Windows Holographic interface
 #### [Use the Start menu and mixed reality home](holographic-home.md)
 #### [Use your voice to operate HoloLens](hololens-cortana.md)
