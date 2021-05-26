@@ -23,7 +23,7 @@ This article describes how to resolve several common HoloLens issues.
 
 If your HoloLens won't start:
 
-- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens-recovery.md#charge-the-device)
+- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens-troubleshooting-overview.md#charge-the-device)
 - If the LEDs light up when you press the power button but you can't see anything on the displays, [preform a hard reset of the device](hololens-recovery.md#hard-reset-procedure).
 
 If your HoloLens becomes frozen or unresponsive:
@@ -103,4 +103,4 @@ The most likely problem is that you're running low on storage space. Try one of 
 
 ## The HoloLens emulator isn't working
 
-Information about the HoloLens emulator is located in our developer documentation.  Read more about [troubleshooting the HoloLens emulator](https://docs.microsoft.com/windows/mixed-reality/using-the-hololens-emulator#troubleshooting).
+Information about the HoloLens emulator is located in our developer documentation.  Read more about [troubleshooting the HoloLens emulator](/windows/mixed-reality/using-the-hololens-emulator#troubleshooting).
