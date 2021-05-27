@@ -54,6 +54,11 @@
                             "source_path":  "hololens/includes/options-overview.md",
                             "redirect_url": "https://docs.microsoft.com/hololens/hololens2-options",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "hololens/common-scenarios.md",
+                            "redirect_url": "https://docs.microsoft.com/hololens/hololens-requirements",
+                            "redirect_document_id":  false
                         }
                     ]
 }

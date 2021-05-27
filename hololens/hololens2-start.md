@@ -105,4 +105,4 @@ Congratulations!  Setup is complete and you're ready to use HoloLens!
 1. Click below to continue reading about getting around HoloLens 2.
 
 > [!div class="nextstepaction"]
-> [Get started with HoloLens 2](hololens2-basic-usage.md)
+> [Getting around HoloLens 2](hololens2-basic-usage.md)

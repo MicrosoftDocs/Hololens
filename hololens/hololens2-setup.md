@@ -29,7 +29,7 @@ Charging rate and speed may vary depending on the environment in which the devic
 - When only one of the five lights is on, the battery level is below 20 percent.
 - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
 
-Full [details on device charging can be read here](hololens-recovery.md#charge-the-device) if more information is needed. 
+Full [details on device charging can be read here](hololens-troubleshooting-overview.md#charge-the-device) if more information is needed. 
 
 ## Adjust fit
 
@@ -120,4 +120,4 @@ Keep your first few sessions with HoloLens brief and be sure to take breaks. If 
 See [product safety warnings and instructions](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
 
 > [!div class="nextstepaction"]
-> [Start and configure your HoloLens 2](hololens2-start.md)
+> [Set up your HoloLens 2](hololens2-start.md)
