@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 Enterprise Troubleshooting
+title: HoloLens 2 Implementation Troubleshooting
 description: Troubleshooting HoloLens 2 devices in an Enterprise environment
 author: JoyJaz
 ms.author: v-jjaswinski
@@ -14,7 +14,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Enterprise Troubleshooting
+# Implementation Troubleshooting
 
 ## Network
 ### EAP Troubleshooting
