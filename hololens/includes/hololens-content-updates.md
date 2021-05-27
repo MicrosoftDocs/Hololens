@@ -2,6 +2,42 @@
 
 
 
+## Week of May 10, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/10/2021 | [Learn more about Mixed Reality support options](/hololens/hololens2-support) | modified |
+| 5/11/2021 | [Introducing the new Microsoft Edge](/hololens/hololens-new-edge) | added |
+| 5/11/2021 | [Introducing the new Settings app](/hololens/hololens-new-settings) | added |
+| 5/11/2021 | [Capture, record, and share mixed reality photos and videos](/hololens/holographic-photos-and-videos) | modified |
+| 5/11/2021 | [Connect to Cellular and 5G](/hololens/hololens-cellular) | modified |
+| 5/11/2021 | [Connect to Bluetooth and USB-C devices](/hololens/hololens-connect-devices) | modified |
+| 5/11/2021 | [Collect and use diagnostic information from HoloLens devices](/hololens/hololens-diagnostic-logs) | modified |
+| 5/11/2021 | [Manage user identity and sign-in for HoloLens](/hololens/hololens-identity) | modified |
+| 5/11/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 5/11/2021 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
+| 5/11/2021 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 5/11/2021 | [Manage HoloLens updates](/hololens/hololens-updates) | modified |
+| 5/11/2021 | [Getting around HoloLens 2](/hololens/hololens2-basic-usage) | modified |
+| 5/11/2021 | [HoloLens 2 Displays](/hololens/hololens2-display) | modified |
+| 5/11/2021 | [Page Settings Visibility](/hololens/settings-uri-list) | modified |
+| 5/11/2021 | [Introducing the new Microsoft Edge](/hololens/hololens-new-edge) | modified |
+| 5/14/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+
+
+## Week of May 03, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/4/2021 | [Learn more about Mixed Reality support options](/hololens/hololens2-support) | modified |
+| 5/5/2021 | [Common Infrastructure Deployment Scenarios](/hololens/common-scenarios) | modified |
+| 5/5/2021 | [Common Scenarios – Offline Secure HoloLens 2](/hololens/hololens-common-scenarios-offline-secure) | modified |
+| 5/5/2021 | [Overview of Cloud connected HoloLens 2 with Remote Assist](/hololens/hololens2-cloud-connected-overview) | modified |
+| 5/5/2021 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Overview](/hololens/hololens2-corp-connected-overview) | modified |
+
+
 ## Week of April 26, 2021
 
 
@@ -51,24 +87,3 @@
 | 4/14/2021 | [Find, install, and uninstall applications](/hololens/holographic-store-apps) | modified |
 | 4/14/2021 | [Enroll HoloLens in MDM](/hololens/hololens-enroll-mdm) | modified |
 | 4/16/2021 | [Getting around HoloLens 2](/hololens/hololens2-basic-usage) | modified |
-
-
-## Week of April 05, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/5/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
-| 4/8/2021 | [Frequently asked questions about HoloLens devices and holograms](/hololens/hololens-faq) | modified |
-| 4/8/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
-
-
-## Week of March 29, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/29/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 3/31/2021 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |
-| 4/1/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 4/2/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |

@@ -82,10 +82,10 @@ Explore these additional solutions built for HoloLens mixed reality devices.
 
 ## Next steps
 
-For device end users, see the [Basic Usage overview](hololens2-setup.md) to get started.
+For device end users, see the [Get your HoloLens 2 ready to use](hololens2-setup.md) to get started.
 
 > [!div class="nextstepaction"]
-> [Basic Usage overview](hololens2-setup.md)
+> [Get your HoloLens 2 ready to use](hololens2-setup.md)
 
 For IT admins, deploying devices to your organization unlocks powerful mixed reality experiences. Get started by reviewing HoloLens 2 deployment requirements and scenarios across a range of IT infrastructure configurations.
 

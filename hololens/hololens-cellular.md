@@ -37,9 +37,9 @@ USB-C tethering can provide lower latency for advanced workloads that need it. [
 
 ### USB-C compatibility
 
-Devices that present themselves as an ethernet adaptor can be used with Windows Holographic version 2004 and later.
+A limited number of devices that present themselves as an ethernet adaptor can be used with Windows Holographic version 2004 and later.
 
-Devices that do not present themselves as an ethernet adapter must support the generic Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) driver. Please consult your device's manufacturer for details on whether it supports the generic Microsoft RNDIS driver.
+Devices that do not present themselves as an ethernet adapter must support the generic Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) driver. But, only a limited number of those devices are compatible with HoloLens 2. Please consult your device's manufacturer for details on whether it supports the generic Microsoft RNDIS driver.
 
 Devices that are not RNDIS compatible, or require a driver or application to be installed, are not supported.
 

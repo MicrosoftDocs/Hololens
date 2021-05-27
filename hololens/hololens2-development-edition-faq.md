@@ -48,9 +48,9 @@ Unity Pro is a real-time 3D platform for small/mid-sized studios/firms. It’s d
 
 The Pixyz Plugin reads and converts almost any format, optimizes and puts it in Unity, and stages it to provide ready-to-use assets for real-time applications. [Learn more](https://unity.com/products/pixyz)
 
-### When will financing for the HoloLens 2 Development Edition be available?
+### Is financing for the HoloLens 2 Development Edition  available?
 
-Financing for HoloLens 2 Development Edition will be available early 2021.
+Yes, [financing for HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) is now available only in the United States. 
 
 ### Who do I contact with questions about my HoloLens 2 Development Edition entitlements?
 

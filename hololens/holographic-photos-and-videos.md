@@ -50,7 +50,7 @@ On HoloLens (1st gen) or HoloLens 2, version 1903, say: "Hey Cortana, take a pic
 
 ### Start menu to take photos
 
-Use the Start gesture to go to **Start**, then select the **camera** icon.
+Use the Start gesture to go to **Start**, then select the **Camera** icon.
 
 Point your head in the direction of what you want to capture, then [air tap](hololens2-basic-usage.md#touch-holograms-near-you) to take a photo. You can continue to air tap and capture additional photos. Any photos you capture will be saved to your device.
 
@@ -75,9 +75,9 @@ On HoloLens (1st gen) or HoloLens 2, version 1903, say: "Hey Cortana, start reco
 
 ### Start menu to record videos
 
-Use the Start gesture to go to **Start**, then select the **video** icon. Point your head in the direction of what you want to capture, then [air tap](hololens2-basic-usage.md#touch-holograms-near-you) to start recording. There will be a three second countdown and your recording will begin.
+Use the Start gesture to go to **Start**, then select the **Video** icon. Point your head in the direction of what you want to capture, then [air tap](hololens2-basic-usage.md#touch-holograms-near-you) to start recording. There will be a three second countdown and your recording will begin.
 
-To stop recording, use the Start gesture and select the highlighted **video** icon. The video will be saved to your device.
+To stop recording, use the Start gesture and select the highlighted **Video** icon. The video will be saved to your device.
 
 > [!NOTE]
 > **Applies to HoloLens (1st gen) only**  
@@ -97,9 +97,9 @@ You can share what you see in HoloLens with friends and colleagues in real-time.
 
 ### Stream video with Miracast
 
-Use the Start gesture to go to **Start**, then select the **connect** icon. From the picker that appears, select the Miracast-enabled device or adapter to which you want to connect.
+Use the Start gesture to go to **Start**, then select the **Connect** icon. From the picker that appears, select the Miracast-enabled device or adapter to which you want to connect.
 
-To stop sharing, use the Start gesture and select the highlighted **connect** icon. Because you were streaming, nothing will be saved to your device.
+To stop sharing, use the Start gesture and select the highlighted **Connect** icon. Because you were streaming, nothing will be saved to your device.
 
 > [!NOTE]
 > Miracast support was enabled on HoloLens (1st gen) beginning with the [Windows 10 October 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018).
@@ -116,7 +116,7 @@ Once the app is set up with your HoloLens, select the **Live stream** option fro
 
 ## View your mixed reality photos and videos
 
-Mixed reality photos and videos are saved to the device's "Camera Roll". You can browse the contents of this folder on your HoloLens with the File Explorer app (navigate to Pictures > Camera Roll).
+Mixed reality photos and videos are saved to the device's "Camera Roll". You can browse the contents of this folder on your HoloLens with the File Explorer app (navigate to **Pictures > Camera Roll**).
 
 You can also view your mixed reality photos and videos in the Photos app, which is pre-installed on HoloLens. To pin a photo in your world, select it in the Photos app and choose **Place in mixed world**. You can move the photo around your world after it's been placed.
 
@@ -140,23 +140,26 @@ Tips:
 
 ## Share your mixed reality photos and videos
 
-After capturing a mixed reality photo or video, a preview will appear. Select the **share** icon above the preview to bring up the share assistant. From there, you can select the end point to which you'd like to share that photo or video.
+Prior to [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), after capturing a mixed reality photo or video, a preview will appear. Select the **Share** icon above the preview to bring up the share assistant. From there, you can select the end point to which you'd like to share that photo or video.
 
-You can also share mixed reality photos and videos from OneDrive, by automatically uploading your mixed reality photos and videos. Open the OneDrive app on HoloLens and sign in with a personal [Microsoft account](https://account.microsoft.com) if you haven't already. Select the **settings** icon and choose **Camera upload**. Turn Camera upload on. Your mixed reality photos and videos will now be uploaded to OneDrive each time you launch the app on HoloLens.
+With Windows Holographic, version 21H1, after capturing a mixed reality photo or video, a preview will appear. Select the **Share** icon above the preview to bring up the share assistant. From there, you can select the end point (Mail, OneDrive, etc.) to which you'd like to share that photo or video. You can also enable your HoloLens to share with nearby devices by going to **Settings -> System -> Shared Experiences**. For more details, read [Share things with nearby devices in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
+
+> [!TIP] 
+> You can also share mixed reality photos and videos from OneDrive by automatically uploading your mixed reality photos and videos. Open the OneDrive app on HoloLens and sign in with a **personal [Microsoft account](https://account.microsoft.com)**, if you haven't already. Select the **Settings** icon and choose **Camera upload**. Turn Camera upload on. Your mixed reality photos and videos will now be uploaded to OneDrive each time you launch the app on HoloLens.
 
 > [!NOTE]
 > You can only enable camera upload in OneDrive if you’re signed into OneDrive with a personal Microsoft account. If you set up HoloLens with a work or school account, you can add a personal Microsoft account in the OneDrive app to enable this feature.
 
 ## Limitations of mixed reality capture
 
-- While using mixed reality capture, the framerate of HoloLens will be halved to 30 Hz.
+- While using mixed reality capture, the frame rate of HoloLens will be halved to 30 Hz.
 - The resolution of photos and videos may be reduced if the photo/video camera is already in use by another application, while live streaming, or when system resources are low.
 
 ### Maximum recording length
 
-On HoloLens 2 devices before the Windows Holographic, version 20H2 videos recorded on the device were limited to maximum length of five minutes.
+On HoloLens 2 devices before the Windows Holographic, version 20H2, videos recorded on the device were limited to maximum length of five minutes.
 
-Due to customer feedback we’ve increased the recording length of [mixed reality captures](holographic-photos-and-videos.md). Mixed reality captures will no longer be limited to 5 minutes by default but instead will calculate the maximum recording length based on available disk space. The device will estimate the max video recording duration based on available disk space up to 80% of the total disk space.
+Due to customer feedback, we’ve increased the recording length of [mixed reality captures](holographic-photos-and-videos.md). Mixed reality captures will no longer be limited to 5 minutes by default, but instead will calculate the maximum recording length based on available disk space. The device will estimate the max video recording duration based on available disk space up to 80% of the total disk space.
 
 > [!NOTE]
 > The HoloLens will use default video recording length (5 minutes) if one of the following occurs:
