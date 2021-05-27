@@ -32,6 +32,11 @@ appliesto:
 ## Wi-FI
 ### Troubleshooting your connection to Wi-Fi
 
-If you experience problems connecting to Wi-Fi, see [I can't connect to Wi-Fi](./hololens-faq.md#i-cant-connect-to-wi-fi).
+Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:
+
+1. Make sure that Wi-Fi is turned on. To check, use the Start gesture, then select Settings > Network & Internet > Wi-Fi. If Wi-Fi is on, try turning it off and then on again.
+2. Move closer to the router or access point.
+3. Restart your Wi-Fi router, then restart HoloLens. Try connecting again.
+4. If none of these things work, check to make sure that your router is using the latest firmware. You can find this information on the manufacturer website.
 
 When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.
