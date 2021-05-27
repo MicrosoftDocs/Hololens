@@ -38,6 +38,7 @@
       "manager": "laurawi",
       "ms.date": "04/05/2017",
       "searchScope": ["HoloLens"],
+      "recommendations": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/Hololens",
       "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
