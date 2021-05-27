@@ -107,6 +107,7 @@
 
 ## Implementation
 ### [Network](hololens2-enterprise-troubleshooting.md#network)
+### [Wi-Fi](hololens2-enterprise-troubleshooting.md#wi-fi)
 # Resources
 ## [Support and help options](hololens2-support.md)
 ## Release notes
