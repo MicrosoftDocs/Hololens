@@ -61,7 +61,9 @@ landingContent:
           - text: Common deployment scenarios
             url: common-scenarios.md
           - text: Planning HoloLens 2 deployment in a commercial environment
-            url: hololens-core-components.md  
+            url: hololens-core-components.md
+          - text: Autopilot CSS registration
+            url: hololens2-autopilot-registration-support.md  
       - linkListType: deploy
         links:       
           - text: Deployment Guide - Cloud connected HoloLens 2 deployment at scale with Remote Assist
@@ -102,8 +104,6 @@ landingContent:
         links:      
           - text: Support and help options  
             url: hololens2-support.md
-          - text: Autopilot support requests
-            url: hololens2-autopilot-registration-support.md
           - text: Give us feedback
             url: hololens-feedback.md
             
