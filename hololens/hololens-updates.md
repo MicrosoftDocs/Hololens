@@ -72,7 +72,7 @@ To configure how and when updates are applied, use the following policies:
   - Default value: **0** (every day)
 - [Update/ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
   - Values: 0–23 (0 = midnight, 23 = 11 PM)
-  - Default value: 3 PM
+  - Default value: 3 AM
 
 #### Configure active hours
 Starting with [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) an IT Admin can specify the active hours range for HoloLens 2 devices.
