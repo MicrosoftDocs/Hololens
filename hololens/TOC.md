@@ -2,6 +2,7 @@
 
 # Device Overview
 ## [About HoloLens 2](hololens2-hardware.md)
+## [HoloLens 2 Commercial Features](hololens-commercial-features)
 ## Discover HoloLens 2 Editions
 ### [Compare HoloLens 2 Options](hololens2-options.md)
 ### [Device-only edition](hololens2-options-device-only.md)
