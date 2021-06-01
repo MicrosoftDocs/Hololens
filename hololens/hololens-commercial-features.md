@@ -21,23 +21,20 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 
 # Commercial features
 
-HoloLens includes features that make it easier for businesses to manage HoloLens devices. Some features are included with the device, while others can be enabled by MDM or WCD.
+HoloLens includes features that make it easier for businesses to manage HoloLens devices. Some features are included with the device, while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using Windows Configuration Designer.
 
-- [**Data security.**](security-overview.md) | BitLocker data encryption is enabled on HoloLens to provide the same level of security protection as any other Windows device.
-- [**Work access.**](hololens-certificates-network.md#prepare-certificates-and-network-profiles-for-holoLens-2) Anyone in your organization can remotely connect to the corporate network through virtual private network (VPN) on a HoloLens. HoloLens can also access Wi-Fi networks that require credentials.
 
 ## Key commercial features
 
-| Feature | Description | Set by MDM | Set by WCD | Use case |
+| Feature | Description | Set by MDM | Set by Provisioning Packages | Use case |
 |---------| ------------|------------|------------| ---------|
-| [**Mobile Device Management (MDM) for HoloLens.**](hololens-mdm-configure.md) | Your IT department can manage multiple HoloLens devices simultaneously by using solutions, such as Microsoft Intune. You can manage settings, select apps to install, and set security configurations that are tailored to your organization's needs. | ✔️ | | |
-[**Windows Update for Business.**](hololens-updates.md#managing-updates-by-using-windows-update-for-business) | Windows Update for Business provides controlled operating system updates to devices and support for the long-term servicing channel. | ✔️ | ✔️ | |
-|[**Microsoft Store for Business.**](app-deploy-store-business.md#microsoft-store-for-business) | Your IT department can also set up an enterprise private store, containing only your company's apps for your specific HoloLens usage. Securely distribute your enterprise software to selected group of enterprise users. |✔️ | ✔️ | |
-|[**Kiosk mode.**](hololens-kiosk.md) |You can use HoloLens in demo or showcase experiences by using kiosk mode, to limit which apps can run. |✔️ | ✔️ | |
-
+| [**Mobile Device Management (MDM) for HoloLens**](hololens-mdm-configure.md) | Your IT department can manage multiple HoloLens devices simultaneously by using solutions, such as Microsoft Intune. After enrollment, you can manage settings, select apps to install, and set security configurations that are tailored to your organization's needs. | ✔️ | | |
+[**Windows Update for Business**](hololens-updates.md#managing-updates-by-using-windows-update-for-business) | Windows Update for Business provides controlled operating system updates to devices and support for the long-term servicing channel. | ✔️ | ✔️ | |
+|[**Microsoft Store for Business**](app-deploy-store-business.md#microsoft-store-for-business) | Your IT department can also set up an enterprise private store, containing only your company's apps for your specific HoloLens usage. Securely distribute your enterprise software to selected group of enterprise users. |✔️ | ✔️ | |
+|[**Kiosk mode**](hololens-kiosk.md) |You can use HoloLens in demo or showcase experiences by using kiosk mode, to limit which apps can run. |✔️ | ✔️ | |
+| [**Data security**](security-overview.md) | BitLocker data encryption is enabled on HoloLens to provide the same level of security protection as any other Windows device. | | |
+[**Work access**](hololens-certificates-network.md#prepare-certificates-and-network-profiles-for-holoLens-2) |Anyone in your organization can remotely connect to the corporate network through virtual private network (VPN) on a HoloLens. HoloLens can also access Wi-Fi networks that require credentials. |  | | 
   
-
-
 ## Enabling commercial features
 
 Your organization's IT admin can set up commercial features, such as Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access. [Planning HoloLens 2 deployment in a commercial environment](hololens-core-components.md) documentation provides step-by-step instructions for enrolling devices and installing apps from Microsoft Store for Business.
