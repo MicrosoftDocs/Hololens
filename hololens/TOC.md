@@ -112,8 +112,8 @@
 ### [Reset HoloLens 2](hololens-recovery.md)
 
 ## Implementation
-### [Network](hololens2-enterprise-troubleshooting.md#network)
-### [Wi-Fi](hololens2-enterprise-troubleshooting.md#wi-fi)
+### [Networking and Wi-Fi](hololens2-enterprise-troubleshooting.md#networking-and-wi-fi)
+### [Enterprise Device Management](hololens2-enterprise-troubleshooting.md#enterprise-device-management)
 # Resources
 ## [Support and help options](hololens2-support.md)
 ## [Autopilot support requests](hololens2-autopilot-registration-support.md)
