@@ -16,7 +16,7 @@ appliesto:
 
 # Implementation Troubleshooting
 
-## Network
+## Networking and Wi-Fi
 ### EAP Troubleshooting
 1. Double check Wi-Fi profile has right settings:
     - EAP type is configured correctly, common EAP types: EAP-TLS (13), EAP-TTLS (21) and PEAP (25).
@@ -29,7 +29,6 @@ appliesto:
 3. If the enterprise profile is provisioned through Wi-Fi provisioning package, consider applying the provisioning package on a Windows 10 PC. If it also fails on Windows 10 PC, follow the Windows client 802.1X authentication troubleshooting guide.
 4. Send us feedback through Feedback Hub.
 
-## Wi-FI
 ### Troubleshooting your connection to Wi-Fi
 
 Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:
@@ -40,3 +39,5 @@ Here are some things to try if you can't connect your HoloLens to a Wi-Fi networ
 4. If none of these things work, check to make sure that your router is using the latest firmware. You can find this information on the manufacturer website.
 
 When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.
+
+## Enterprise Device Management

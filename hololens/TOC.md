@@ -37,6 +37,7 @@
 #### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
 #### [Connect to Cellular and 5G](hololens-cellular.md)
 ### [HoloLens 2 battery and charging](hololens2-charging.md)
+### [HoloLens 2 fit and comfort FAQs](hololens2-fit-comfort-faq.md)
 ### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 
 # Deploying HoloLens 2
@@ -100,19 +101,12 @@
 ## [Manage HoloLens updates](hololens-updates.md)
 
 # Troubleshooting
-## [General troubleshooting](hololens-troubleshooting-overview.md)
-## [Troubleshoot common issues](hololens-troubleshooting.md)
-## [Known issues and workarounds](hololens-known-issues.md)
-## [HoloLens 2 FAQs](hololens-faq.md)
-## [HoloLens 2 fit and comfort FAQs](hololens2-fit-comfort-faq.md)
-## [HoloLens 2 display FAQs](hololens2-display.md)
-## [Enable diagnostic logs](hololens-diagnostic-logs.md)
-## [Reset HoloLens 2](hololens-recovery.md)
-
-# Troubleshooting
 ## Hardware and OS
 ### [General troubleshooting](hololens-troubleshooting-overview.md)
 ### [Troubleshoot common issues](hololens-troubleshooting.md)
+### [Known issues and workarounds](hololens-known-issues.md)
+### [HoloLens 2 FAQs](hololens-faq.md)
+### [HoloLens 2 display FAQs](hololens2-display.md)
 ### [Enable diagnostic logs](hololens-diagnostic-logs.md)
 ### [Known issues and workarounds](hololens-known-issues.md)
 ### [Reset HoloLens 2](hololens-recovery.md)
