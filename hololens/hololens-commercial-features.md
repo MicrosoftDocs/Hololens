@@ -38,7 +38,8 @@ Deploy at scale | [**Mobile Device Managment**](https://docs.microsoft.com/mem/i
 | Manage how a device connects to the internet | [**Network and Connectivity**](hololens-certificates-network.md) |Anyone in your organization can remotely connect to the corporate network through virtual private network (VPN) on a HoloLens. HoloLens can also access Wi-Fi networks that require credentials. 
 | Collaborate in real time with remote employees | [**Dynamics 365 Remote Assist**](https://dynamics.microsoft.com/mixed-reality/remote-assist/) | Share your real-time view with experts remotely to get the help you need, and stay hands-free on HoloLens. | 
 | Create step-by-step visual work instructions | [**Dynamics 365 Guides**](https://dynamics.microsoft.com/mixed-reality/guides/capabilities/) | Show remote employees how to use their tools and parts in real work situations using HoloLens 2. |
-| Collaborate digitally in realtime through mixed reality | [**Microsoft Mesh**](https://www.microsoft.com/mesh) | Users can connect with presence, share across space, and collaborate in an immersive way as if they were in person regardless of physical location
+| Collaborate digitally in realtime through mixed reality | [**Microsoft Mesh**](https://www.microsoft.com/mesh) | Users can connect with presence, share across space, and collaborate in an immersive way as if they were in person regardless of physical location.
+| Use third party apps for HoloLens 2 | [**Microsoft Store**](https://www.microsoft.com/store/collections/hlgettingstarted/hololens) | Explore the ever expanding number of apps available for the HoloLens 2.
 
   
 ## Enable your environment
