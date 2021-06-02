@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 Displays
+title: HoloLens 2 Display Troubleshooting
 description: Expectations for HoloLens 2 displays. Guidance for configuring displays for best image quality.
 author: BrandonBray
 ms.author: branbray
@@ -14,18 +14,19 @@ appliesto:
 - HoloLens 2
 ---
 
-# HoloLens 2 Display
+# HoloLens 2 Display Troubleshooting
 
+## Overview
 The HoloLens 2 display is a combination of waveguides and light projectors. Users look through the waveguides—the lenses inside the visor—when wearing the headset. The light projectors are inside the enclosure above the brow. HoloLens 2 uses laser light to illuminate the display.
 
 ## Troubleshooting
 
-For HoloLens 2, take the following steps to ensure the highest visual quality of holograms presented in displays:
+Take the following steps to ensure the highest visual quality of holograms presented in displays:
 
-* **Increase brightness of the display.** Holograms look best when the display is at its brightest level.
+* **Increase brightness of the display.** Holograms look best when the display is at its brightest level. When wearing the HoloLens, the brightness buttons are on the left side of the visor near your temple.
 * **Bring visor closer to your eyes.** Swing the visor down to the closest position to your eyes.
 * **Shift visor down.** Try moving the brow pad on your forehead down, which will result in the visor moving down closer to your nose.
-* **Run eye calibration.** The display uses your interpupillary distance (IPD) and eye gaze to optimize images on the display. If you don't run eye calibration, the image quality may be made worse. To run eye calibration, go to **Settings** > **System** > **Calibration** > **Run eye calibration**.
+* **[Run eye calibration.](https://docs.microsoft.com/hololens/hololens-calibration#calibrating-your-hololens-2)** The display uses your interpupillary distance (IPD) and eye gaze to optimize images on the display. If you don't run eye calibration, the image quality may be made worse. To run eye calibration, go to **Settings** > **System** > **Calibration** > **Run eye calibration**.
 * **Run display color calibration**. On [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards, you can **select an alternative color profile** for your HoloLens 2 display. This may help colors appear more accurate, especially at lower display brightness levels. Display color calibration can be found in the **Settings** app, on the **System > Calibration** page.
 
     > [!NOTE]

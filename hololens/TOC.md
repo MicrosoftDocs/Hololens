@@ -102,13 +102,11 @@
 
 # Troubleshooting
 ## Hardware and OS
-### [General troubleshooting](hololens-troubleshooting-overview.md)
 ### [Troubleshoot common issues](hololens-troubleshooting.md)
 ### [Known issues and workarounds](hololens-known-issues.md)
 ### [HoloLens 2 FAQs](hololens-faq.md)
 ### [HoloLens 2 display FAQs](hololens2-display.md)
 ### [Enable diagnostic logs](hololens-diagnostic-logs.md)
-### [Known issues and workarounds](hololens-known-issues.md)
 ### [Reset HoloLens 2](hololens-recovery.md)
 
 ## Implementation
