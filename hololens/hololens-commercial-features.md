@@ -42,8 +42,6 @@ Minimize setup time for new users and devices | [**Autopilot**](https://docs.mic
 
 Your organization's IT admin can set up commercial features, such as Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access. [Planning HoloLens 2 deployment in a commercial environment](hololens-core-components.md) documentation provides step-by-step instructions for enrolling devices and installing apps from Microsoft Store for Business.
 
->[!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
-
 ## Recommended Content
 
 - [CSPs supported in HoloLens 2 devices](https://docs.microsoft.com/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)
