@@ -1,6 +1,6 @@
 ---
-title: Planning HoloLens 2 implementation in a commercial environment
-description: Learn more about deploying and managing HoloLens in enterprise environments, including infrastructure, azure active directory, and mobile device management.
+title: Planning HoloLens 2 deployment in a commercial environment
+description: Learn more about deploying and managing HoloLens in enterprise environments, including infrastructure, Azure Active Directory, and mobile device management.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
