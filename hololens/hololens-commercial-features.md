@@ -1,6 +1,6 @@
 ---
-title: Commercial features
-description: Learn about the Microsoft HoloLens Commercial Suite features that make it easier for businesses to manage HoloLens devices. 
+title: Commercial features overview
+description: Learn about the Microsoft HoloLens Commercial features that make it easier for businesses to manage HoloLens devices. 
 author: scooley
 ms.author: scooley
 ms.date: 08/26/2019
@@ -19,12 +19,13 @@ appliesto:
 keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
 ---
 
-# Commercial features
+# Enabling HoloLens growth in your environment
 
 HoloLens includes features that make it easier for businesses to manage HoloLens devices. Some features are included with the device, while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22).
 
+## Enable your environment
 
-## Key commercial features
+## Enable Solutions
 
 | I want to ... | Feature | Description | Included |Set by MDM | Set by Provisioning Packages 
 |---------| ------------|------------|------------|-------| ----- |
@@ -35,7 +36,6 @@ Minimize setup time for new users and devices | [**Autopilot**](https://docs.mic
 | Allow specific and LOB apps to be downloaded |[**Microsoft Store for Business**](app-deploy-store-business.md#microsoft-store-for-business) | Your IT department can also set up an enterprise private store, containing only your company's apps for your specific HoloLens usage. Securely distribute your enterprise software to selected group of enterprise users. | | ✔️ | ✔️ |
 | Control what apps are shown on start menus |[**Kiosk mode**](hololens-kiosk.md) |You can use HoloLens in demo or showcase experiences by using kiosk mode, to limit which apps can run. | | ✔️ | ✔️ |
 | Manage device security with rules for apps and processes | [**Windows Defender Application Control**](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) | IT Admins can configure their devices to block the launch of apps on devices. | | ✔️ | ✔️ | 
-| Customize the Settings page |[**Page Settings Visibility**](https://docs.microsoft.com/hololens/settings-uri-list) | IT Admins can prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. |  | ✔️ | ✔️ | 
 | Manage how a device connects to the internet | [**Work access**](hololens-certificates-network.md) |Anyone in your organization can remotely connect to the corporate network through virtual private network (VPN) on a HoloLens. HoloLens can also access Wi-Fi networks that require credentials. | ✔️  |  | |
   
 ## Enabling commercial features
