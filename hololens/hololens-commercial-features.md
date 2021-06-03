@@ -29,7 +29,7 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 | Collaborate in real time with remote employees | [**Dynamics 365 Remote Assist**](https://dynamics.microsoft.com/mixed-reality/remote-assist/) | Share your real-time view with experts remotely to get the help you need, and stay hands-free on HoloLens. | 
 | Create step-by-step visual work instructions | [**Dynamics 365 Guides**](https://dynamics.microsoft.com/mixed-reality/guides/capabilities/) | Show remote employees how to use their tools and parts in real work situations using HoloLens 2. |
 | Develop for HoloLens | [**Get Started**](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials) | Build and manage apps and solutions for the HoloLens 2. |
-| Collaborate digitally in realtime through mixed reality | [**Microsoft Mesh**](https://www.microsoft.com/mesh) | Users can connect with presence, share across space, and collaborate in an immersive way as if they were in person regardless of physical location.
+| Collaborate digitally in realtime through mixed reality | [**Microsoft Mesh**](https://www.microsoft.com/mesh) | Connect with presence, share across space, and collaborate in an immersive way as if you are in person regardless of physical location.
 | Use third party apps for HoloLens 2 | [**Microsoft Store**](https://www.microsoft.com/store/collections/hlgettingstarted/hololens) | Explore the ever expanding number of apps available for the HoloLens 2.
 
 ## Managing HoloLens in your business
