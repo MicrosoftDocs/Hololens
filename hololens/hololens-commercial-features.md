@@ -33,7 +33,7 @@ Introduce new ways for your workforce to solve problems, design and review space
 | Use third party apps for HoloLens 2 | [**Microsoft Store**](https://www.microsoft.com/store/collections/hlgettingstarted/hololens) | Explore the ever expanding number of apps available for the HoloLens 2.
 
 > [!div class="nextstepaction"]
-> [Licensing Requirements](hololens-licenses-requirements)
+> [Licensing Requirements](hololens-licenses-requirements.md)
 ## Managing HoloLens in your business
 HoloLens 2 includes features that make it easier for businesses to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22).
 
