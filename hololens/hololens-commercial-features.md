@@ -1,5 +1,5 @@
 ---
-title: Commercial features overview
+title: HoloLens solutions in your environment
 description: Learn about the Microsoft HoloLens Commercial features that make it easier for businesses to manage HoloLens devices. 
 author: scooley
 ms.author: scooley
@@ -19,9 +19,10 @@ appliesto:
 keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
 ---
 
-# Enabling HoloLens growth in your environment
+# HoloLens solutions in your environment
 
 HoloLens includes features that make it easier for businesses to manage HoloLens devices. Some features are included with the device, others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22), or licenses can be purchased and distributed to the devices.
+
 
 ## Infrastructure Solutions
 
