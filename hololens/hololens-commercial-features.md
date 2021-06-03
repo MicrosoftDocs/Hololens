@@ -32,8 +32,8 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 | Collaborate digitally in realtime through mixed reality | [**Microsoft Mesh**](https://www.microsoft.com/mesh) | Users can connect with presence, share across space, and collaborate in an immersive way as if they were in person regardless of physical location.
 | Use third party apps for HoloLens 2 | [**Microsoft Store**](https://www.microsoft.com/store/collections/hlgettingstarted/hololens) | Explore the ever expanding number of apps available for the HoloLens 2.
 
-## Business Solutions
-HoloLens includes features that make it easier for businesses to manage and use HoloLens devices. Some features are included with the device, others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22), or licenses can be purchased and distributed to the devices.
+## Managing HoloLens in your business
+HoloLens includes features that make it easier for businesses to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22).
 
 | I want to... | Solution | Description |  
 |---------| ------------|------------|

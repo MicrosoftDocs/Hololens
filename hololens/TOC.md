@@ -2,6 +2,7 @@
 
 # Device Overview
 ## [About HoloLens 2](hololens2-hardware.md)
+## [What can HoloLens 2 do for you?](hololens-commercial-features.md)
 ## Discover HoloLens 2 Editions
 ### [Compare HoloLens 2 Options](hololens2-options.md)
 ### [Device-only edition](hololens2-options-device-only.md)
@@ -11,7 +12,6 @@
 ### [Development edition](hololens2-options-dev-edition.md)
 #### [HoloLens 2 Development Edition FAQs](hololens2-development-edition-faq.md)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
-## [HoloLens 2 Commercial Features](hololens-commercial-features.md)
 
 # Using your HoloLens
 ## First-time usage
