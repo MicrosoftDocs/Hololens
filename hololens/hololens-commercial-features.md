@@ -13,7 +13,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
-manager: jarrettr
+manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
@@ -47,14 +47,8 @@ Deploy at scale | [**Mobile Device Managment**](hololens-mdm-configure.md) | Man
 | Manage device security with rules for apps and processes | [**Policies (CSPs)**](hololens-csp-policy-overview.md) | IT Admins can define and implement policy settings on HoloLens 2. |  
 | Manage how a device connects to the internet | [**Network and Connectivity**](hololens-certificates-network.md) |Anyone in your organization can remotely connect to the corporate network through virtual private network (VPN) on a HoloLens. HoloLens can also access Wi-Fi networks that require credentials. 
 
+> [!div class="nextstepaction"]
+> [Purchase HoloLens 2](https://www.microsoft.com/hololens/buy)
 
-  
-## Enable your environment
-
-Your organization's IT admin can set up commercial features, such as Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access. 
-
-1. Identity - [Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) 
-1. MDM
-1. 
-
-[Planning HoloLens 2 deployment in a commercial environment](hololens-core-components.md) documentation provides step-by-step instructions for enrolling devices and installing apps from Microsoft Store for Business.
+> [!div class="nextstepaction"]
+>[Planning HoloLens 2 deployment in a commercial environment](hololens-core-components.md) 
