@@ -23,7 +23,7 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 
 HoloLens includes features that make it easier for businesses to manage HoloLens devices. Some features are included with the device, others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22), or licenses can be purchased and distributed to the devices.
 
-## Enable Solutions
+## Infrastructure Solutions
 
 | I want to... | Solution | Description |  
 |---------| ------------|------------|
@@ -36,10 +36,15 @@ Deploy at scale | [**Mobile Device Managment**](https://docs.microsoft.com/mem/i
 | Control what apps are shown on start menus |[**Kiosk mode**](hololens-kiosk.md) |You can use HoloLens in demo or showcase experiences by using kiosk mode, to limit which apps can run.  
 | Manage device security with rules for apps and processes | [**Policies (CSPs)**](hololens-csp-policy-overview.md) | IT Admins can define and implement policy settings on HoloLens 2. |  
 | Manage how a device connects to the internet | [**Network and Connectivity**](hololens-certificates-network.md) |Anyone in your organization can remotely connect to the corporate network through virtual private network (VPN) on a HoloLens. HoloLens can also access Wi-Fi networks that require credentials. 
+
+## Additional solutions for HoloLens
+| I want to... | Solution | Description |  
+|---------| ------------|------------|
 | Collaborate in real time with remote employees | [**Dynamics 365 Remote Assist**](https://dynamics.microsoft.com/mixed-reality/remote-assist/) | Share your real-time view with experts remotely to get the help you need, and stay hands-free on HoloLens. | 
 | Create step-by-step visual work instructions | [**Dynamics 365 Guides**](https://dynamics.microsoft.com/mixed-reality/guides/capabilities/) | Show remote employees how to use their tools and parts in real work situations using HoloLens 2. |
 | Collaborate digitally in realtime through mixed reality | [**Microsoft Mesh**](https://www.microsoft.com/mesh) | Users can connect with presence, share across space, and collaborate in an immersive way as if they were in person regardless of physical location.
 | Use third party apps for HoloLens 2 | [**Microsoft Store**](https://www.microsoft.com/store/collections/hlgettingstarted/hololens) | Explore the ever expanding number of apps available for the HoloLens 2.
+| Develop for HoloLens | 
 
   
 ## Enable your environment
