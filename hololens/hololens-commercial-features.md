@@ -19,7 +19,7 @@ appliesto:
 keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
 ---
 
-# What can HoloLens do for you?
+# What can HoloLens 2 do for you?
 
 
 
@@ -33,7 +33,7 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 | Use third party apps for HoloLens 2 | [**Microsoft Store**](https://www.microsoft.com/store/collections/hlgettingstarted/hololens) | Explore the ever expanding number of apps available for the HoloLens 2.
 
 ## Managing HoloLens in your business
-HoloLens includes features that make it easier for businesses to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22).
+HoloLens 2 includes features that make it easier for businesses to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22).
 
 | I want to... | Solution | Description |  
 |---------| ------------|------------|
