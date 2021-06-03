@@ -23,15 +23,14 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 
 HoloLens includes features that make it easier for businesses to manage HoloLens devices. Some features are included with the device, others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22), or licenses can be purchased and distributed to the devices.
 
-
 ## Infrastructure Solutions
 
 | I want to... | Solution | Description |  
 |---------| ------------|------------|
 Manage how my end users sign in | [**Identity**](hololens-identity.md) | HoloLens supports several kinds of user identities - Azure Active Directory (AAD), Microsoft Account (MSA), and local accounts.  |
 | Encrypt user data | [**Data security**](security-encryption-data-protection.md) | BitLocker data encryption is enabled on HoloLens to provide the same level of security protection as any other Windows device. | 
-Deploy at scale | [**Mobile Device Managment**](https://docs.microsoft.com/mem/intune/fundamentals/windows-holographic-for-business) | Manage settings, select apps to install and set security configurations tailored to your organization's need on multiple devices. | 
-|Minimize setup time for new users and devices | [**Autopilot**](https://docs.microsoft.com/hololens/hololens2-autopilot) | Configure the out-of-box experience (OOBE) in Microsoft Endpoint Manager and enable end users to prepare devices for business use with little to no interaction. |  
+Deploy at scale | [**Mobile Device Managment**](hololens-mdm-configure.md) | Manage settings, select apps to install and set security configurations tailored to your organization's need on multiple devices. | 
+|Minimize setup time for new users and devices | [**Autopilot**](hololens2-autopilot.md) | Configure the out-of-box experience (OOBE) in Microsoft Endpoint Manager and enable end users to prepare devices for business use with little to no interaction. |  
 | Control OS updates for my devices | [**Windows Update for Business**](hololens-updates.md#managing-updates-by-using-windows-update-for-business) | Windows Update for Business provides controlled operating system updates to devices and support for the long-term servicing channel. |  
 | Allow specific and LOB apps to be downloaded |[**Microsoft Store for Business**](app-deploy-overview.md) | Set up an enterprise private store containing only your company's apps for your specific HoloLens usage. Securely distribute your enterprise software to selected group of enterprise users. | 
 | Control what apps are shown on start menus |[**Kiosk mode**](hololens-kiosk.md) |You can use HoloLens in demo or showcase experiences by using kiosk mode, to limit which apps can run.  
@@ -45,12 +44,17 @@ Deploy at scale | [**Mobile Device Managment**](https://docs.microsoft.com/mem/i
 | Create step-by-step visual work instructions | [**Dynamics 365 Guides**](https://dynamics.microsoft.com/mixed-reality/guides/capabilities/) | Show remote employees how to use their tools and parts in real work situations using HoloLens 2. |
 | Collaborate digitally in realtime through mixed reality | [**Microsoft Mesh**](https://www.microsoft.com/mesh) | Users can connect with presence, share across space, and collaborate in an immersive way as if they were in person regardless of physical location.
 | Use third party apps for HoloLens 2 | [**Microsoft Store**](https://www.microsoft.com/store/collections/hlgettingstarted/hololens) | Explore the ever expanding number of apps available for the HoloLens 2.
-| Develop for HoloLens | 
-
+| Develop for HoloLens | [**Get Started**](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials) | Build and manage apps and solutions for the HoloLens 2. |
   
 ## Enable your environment
 
-Your organization's IT admin can set up commercial features, such as Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access. [Planning HoloLens 2 deployment in a commercial environment](hololens-core-components.md) documentation provides step-by-step instructions for enrolling devices and installing apps from Microsoft Store for Business.
+Your organization's IT admin can set up commercial features, such as Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access. 
+
+1. Identity - [Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) 
+1. MDM
+1. 
+
+[Planning HoloLens 2 deployment in a commercial environment](hololens-core-components.md) documentation provides step-by-step instructions for enrolling devices and installing apps from Microsoft Store for Business.
 
 ## Recommended Content
 
