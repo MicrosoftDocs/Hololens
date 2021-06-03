@@ -58,9 +58,3 @@ Your organization's IT admin can set up commercial features, such as Microsoft S
 1. 
 
 [Planning HoloLens 2 deployment in a commercial environment](hololens-core-components.md) documentation provides step-by-step instructions for enrolling devices and installing apps from Microsoft Store for Business.
-
-## Recommended Content
-
-- [CSPs supported in HoloLens 2 devices](https://docs.microsoft.com/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)
-- [Microsoft Store For Business and line of business applications](https://docs.microsoft.com/hololens/app-deploy-overview)
-- [Working with line-of-business apps](/microsoft-store/working-with-line-of-business-apps)
