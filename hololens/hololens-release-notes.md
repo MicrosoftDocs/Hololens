@@ -75,8 +75,7 @@ The following telemetry policies are now supported on the HoloLens 2:
 
 Both System\AllowTelemetry and System\ConfigureTelemetryOptInSettingsUx should be used together to have complete control on the Telemetry and behavior in the Settings app.
 
-Improvements and fixes in the update:
-- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H1.
+We encourage you to try out our latest build, Windows Holographic, version 21H1.
 
 ## Windows Holographic, version 1903 - June 2021 Update
 - Build 18362.1116
