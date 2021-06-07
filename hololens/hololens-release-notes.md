@@ -22,6 +22,24 @@ appliesto:
 
 To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
 
+## Windows Holographic, version 21H1 - June 2021 Update
+- Build 20348.1006
+
+Improvements and fixes in the update:
+- Addresses an issue where text might be truncated in the Power menu.
+
+## Windows Holographic, version 20H2 – June 2021 Update
+- Build 19041.1154
+
+Improvements and fixes in the update:
+- Enables support for the RequirePrivateStoreOnly policy.
+
+## Windows Holographic, version 1903 - May 2021 Update
+- Build 18362.1116
+
+Improvements and fixes in the update:
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H1.
+
 ## Windows Holographic, version 21H1
 - Build 20346.1002
 
