@@ -84,7 +84,7 @@ Improvements and fixes in the update:
 Improvements and fixes in the update:
 - This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H1.
 
->[!WARNING]
+>[!IMPORTANT]
 > This build will no longer be serviced.
 
 ## Windows Holographic, version 21H1
