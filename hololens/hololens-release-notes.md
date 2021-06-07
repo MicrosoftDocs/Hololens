@@ -54,7 +54,7 @@ Both System\AllowTelemetry and System\ConfigureTelemetryOptInSettingsUx should b
 Improvements and fixes in the update:
 - Enables support for the RequirePrivateStoreOnly policy.
 
-## Windows Holographic, version 1903 - May 2021 Update
+## Windows Holographic, version 1903 - June 2021 Update
 - Build 18362.1116
 
 Improvements and fixes in the update:
