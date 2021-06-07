@@ -37,7 +37,6 @@ Both System\AllowTelemetry and System\ConfigureTelemetryOptInSettingsUx should b
 
 Improvements and fixes in the update:
 - Fixes major video corruption with Color calibration.
-- Fixes graphical rendering issues with deployed/sideloaded apps.
 - Addresses an issue where text might be truncated in the Power menu.
 
 ## Windows Holographic, version 20H2 – June 2021 Update
