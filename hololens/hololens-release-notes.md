@@ -25,11 +25,31 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 ## Windows Holographic, version 21H1 - June 2021 Update
 - Build 20348.1006
 
+### Added support for some telemetry policies
+
+The following telemetry policies are now supported on the HoloLens 2:
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+Both System\AllowTelemetry and System\ConfigureTelemetryOptInSettingsUx should be used together to have complete control on the Telemetry and behavior in the Settings app.
+
 Improvements and fixes in the update:
 - Addresses an issue where text might be truncated in the Power menu.
 
 ## Windows Holographic, version 20H2 – June 2021 Update
 - Build 19041.1154
+
+### Added support for some telemetry policies
+
+The following telemetry policies are now supported on the HoloLens 2:
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+Both System\AllowTelemetry and System\ConfigureTelemetryOptInSettingsUx should be used together to have complete control on the Telemetry and behavior in the Settings app.
 
 Improvements and fixes in the update:
 - Enables support for the RequirePrivateStoreOnly policy.
