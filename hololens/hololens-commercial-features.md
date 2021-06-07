@@ -23,17 +23,10 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 
 Introduce new ways for your workforce to solve problems, design and review spaces, learn complex processes, and help customers buy the right product—right where they are in the field or on the factory floor—using pre-built solutions from Microsoft and our industry partners.
 
-## Solutions
-| I want to... | Solution | Description |  
-|---------| ------------|------------|
-| Collaborate in real time with remote employees | [**Dynamics 365 Remote Assist**](https://dynamics.microsoft.com/mixed-reality/remote-assist/) | Collaborate and solve problems with remote collaborators using Microsoft Teams or Dynamics 365 Remote Assist. | 
-| Create step-by-step visual work instructions | [**Dynamics 365 Guides**](https://dynamics.microsoft.com/mixed-reality/guides/capabilities/) | Optimize operations, reduce errors, and increase employee safety with visual instructions right where the work happens. |
-| Develop for HoloLens | [**Get Started**](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials) | Build and manage apps and solutions for the HoloLens 2. |
-| Collaborate digitally in realtime through mixed reality | [**Microsoft Mesh**](https://www.microsoft.com/mesh) | Enable presence and shared experiences from anywhere – on any device – through mixed reality applications. |
-| Use third party apps for HoloLens 2 | [**Microsoft Store**](holographic-store-apps.md) | Explore the ever expanding number of apps available for the HoloLens 2.
+[!INCLUDE [solutions](hlsolutions.md)]
 
-> [!div class="nextstepaction"]
-> [Licensing Requirements](hololens-licenses-requirements.md)
+
+Learn about [Licensing Requirements](hololens-licenses-requirements.md) for the above solutions.
 ## Managing HoloLens in your business
 HoloLens 2 includes features that make it easier for businesses to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22).
 

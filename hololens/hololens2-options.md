@@ -68,17 +68,7 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 
 Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/hololens/buy).
 
-## Explore solutions
-
-Explore these additional solutions built for HoloLens mixed reality devices.
-
-| Solution | Brief description                                                                                |
-|----------|---------------------------------------------------------------------------------------------------|
-| [Dynamics 365 for HoloLens](https://www.microsoft.com//hololens/apps)          | Empower employees and optimize operations.                                                        |
-| [Dynamics 365 Remote Assist](https://dynamics.microsoft.com/mixed-reality/remote-assist/)          | Empower technicians to collaborate more efficiently by working together from different locations. |
-|   [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/)        | Improve training effective needs and learn how employees are performing.                          |
-|  [Azure Cloud Services for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Learn how to develop a solution using Azure Cloud Services.                                       |
-|  [Start developing for HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)         | Build a mixed reality solution to fit your needs.                                                 |
+[!INCLUDE [solutions](hlsolutions.md)] 
 
 ## Next steps
 
