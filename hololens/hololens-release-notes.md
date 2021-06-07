@@ -77,14 +77,16 @@ Both System\AllowTelemetry and System\ConfigureTelemetryOptInSettingsUx should b
 
 Improvements and fixes in the update:
 - Fixes major video corruption with Color calibration.
-- Fixes graphical rendering issues with deployed/sideloaded apps.
 - Enables support for the RequirePrivateStoreOnly policy.
 
 ## Windows Holographic, version 1903 - June 2021 Update
 - Build 18362.1116
 
 Improvements and fixes in the update:
-- Fixes graphical rendering issues with deployed/sideloaded apps.
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H1.
+
+>[!WARNING]
+> This build will no longer be serviced.
 
 ## Windows Holographic, version 21H1
 - Build 20346.1002
