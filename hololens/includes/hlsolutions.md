@@ -2,8 +2,8 @@
 
 | I want to... | Solution | Description |  
 |---------| ------------|------------|
-| Collaborate in real time with remote employees | [**Dynamics 365 Remote Assist**](https://dynamics.microsoft.com/mixed-reality/remote-assist/) | Collaborate and solve problems with remote collaborators using Microsoft Teams or Dynamics 365 Remote Assist. | 
-| Create step-by-step visual work instructions | [**Dynamics 365 Guides**](https://dynamics.microsoft.com/mixed-reality/guides/capabilities/) | Optimize operations, reduce errors, and increase employee safety with visual instructions right where the work happens. |
+| Collaborate in real time with remote employees | [**Dynamics 365 Remote Assist**](https://dynamics.microsoft.com/mixed-reality/remote-assist/) | Use heads-up video calls on HoloLens 2 to share real-time views and receive instant guidance in context with remote collaborators who use Teams mobile or desktop. | 
+| Create step-by-step visual work instructions | [**Dynamics 365 Guides**](https://dynamics.microsoft.com/mixed-reality/guides/capabilities/) | Employees can learn by doing with interactive instructions displayed in their HoloLens 2 devices. |
 | Develop for HoloLens | [**Get Started**](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) | Build and manage apps and solutions for the HoloLens 2. |
-| Collaborate digitally in realtime through mixed reality | [**Microsoft Mesh**](https://www.microsoft.com/mesh) | Enable presence and shared experiences from anywhere – on any device – through mixed reality applications. |
+| Collaborate digitally in realtime through mixed reality | [**Microsoft Mesh**](https://www.microsoft.com/mesh) | Interact as if you are face-to-face through 3D capture technology that  beams lifelike images of people into a virtual scene. |
 | Use third party apps for HoloLens 2 | [**Microsoft Store**](https://docs.microsoft.com/hololens/holographic-store-apps) | HoloLens supports many existing applications from the Microsoft Store, and new apps built specifically for HoloLens.
