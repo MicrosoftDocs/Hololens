@@ -1,4 +1,4 @@
-## Solutions
+## HoloLens 2 Capabilities
 
 | I want to... | Solution | Description |  
 |---------| ------------|------------|
