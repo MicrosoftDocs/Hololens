@@ -57,6 +57,27 @@ Workarounds:
 
 ## Known issues for HoloLens 2 devices
 
+### Certain devices joined in Azure AD may be unable to logon users after updating to 21H1
+
+#### Symptoms
+
+- Using PIN to logon will fail after entering the correct PIN.
+- Using the web logon method will fail after successfully signing in on the web page.
+- The device is not listed as “Azure AD joined” in [Azure portal](https://portal.azure.com/) -> Azure Active Directory -> Devices.
+
+#### Cause
+
+The impacted device may have been deleted from the Azure AD tenant. For example, this may happen because:
+
+- An administrator or user deleted the device in the Azure portal or using PowerShell.
+- The device was removed from the Azure AD tenant due to inactivity. For an efficiently managed environment, we typically recommend IT admins to [remove stale, inactive devices from their Azure AD tenant](https://docs.microsoft.com/azure/active-directory/devices/manage-stale-devices).
+
+When an impacted device attempts to contact the Azure AD tenant again after it has been deleted it will fail to authenticate with Azure AD. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
+
+#### Mitigation
+
+There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device.](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)
+
 ### Device using Auto-login asks for log-in
 
 A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device with a substantially large update, such as a feature update.
