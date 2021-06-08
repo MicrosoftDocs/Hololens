@@ -68,7 +68,7 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 
 Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/hololens/buy).
 
-[!INCLUDE [solutions](includes\hlsolutions.md)] 
+[!INCLUDE [solutions](includes/hlsolutions.md)] 
 
 ## Next steps
 
