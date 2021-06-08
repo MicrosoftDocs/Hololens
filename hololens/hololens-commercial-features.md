@@ -1,5 +1,5 @@
 ---
-title: HoloLens solutions in your environment
+title: HoloLens 2 Capabilities and Solutions
 description: Learn about the Microsoft HoloLens Commercial features that make it easier for businesses to manage HoloLens devices. 
 author: scooley
 ms.author: scooley
