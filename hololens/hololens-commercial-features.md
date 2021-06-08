@@ -55,8 +55,7 @@ Manage Hololens devices in my organization | [**Mobile Device Managment**](holol
 | Manage device security with rules for apps and processes | [**Policies (CSPs)**](hololens-csp-policy-overview.md) | IT Admins can define and implement policy settings using an existing list of supported Policy CSPs on HoloLens 2. |  
 | Manage how a device connects to the internet | [**Network and Connectivity**](hololens-certificates-network.md) | Use certificate-based authentication to access Wi-Fi, VPNs, or internal resources. | 
 
-Learn about [Licensing Requirements]
-(hololens-licenses-requirements.md) for the above solutions.
+Learn about [Licensing Requirements](hololens-licenses-requirements.md) for the above solutions.
 
 ## Next Steps
 > [!div class="nextstepaction"]
