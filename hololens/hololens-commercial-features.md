@@ -23,10 +23,10 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 
 Introduce new ways for your workforce to solve problems, design and review spaces, learn complex processes, and help customers buy the right product—right where they are in the field or on the factory floor—using pre-built solutions from Microsoft and our industry partners.
 
-[!INCLUDE [solutions](hlsolutions.md)]
+[!INCLUDE [solutions](includes/hlsolutions.md)]
 
 
-Learn about [Licensing Requirements](hololens-licenses-requirements.md) for the above solutions.
+
 ## Managing HoloLens in your business
 HoloLens 2 includes features that make it easier for businesses to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22).
 
@@ -42,6 +42,7 @@ Manage Hololens devices in my organization | [**Mobile Device Managment**](holol
 | Manage device security with rules for apps and processes | [**Policies (CSPs)**](hololens-csp-policy-overview.md) | IT Admins can define and implement policy settings on HoloLens 2. |  
 | Manage how a device connects to the internet | [**Network and Connectivity**](hololens-certificates-network.md) |Anyone in your organization can remotely connect to the corporate network through virtual private network (VPN) on a HoloLens. HoloLens can also access Wi-Fi networks that require credentials. 
 
+Learn about [Licensing Requirements](hololens-licenses-requirements.md) for the above solutions.
 > [!div class="nextstepaction"]
 > [Purchase HoloLens 2](https://www.microsoft.com/hololens/buy)
 
