@@ -25,9 +25,22 @@ Introduce new ways for your workforce to solve problems, design and review space
 
 [!INCLUDE [solutions](includes/hlsolutions.md)]
 
+## HoloLens 2 capabilities
 
+What makes the HoloLens 2 so powerful?
 
-## Managing HoloLens in your business
+| Feature | Description |
+|---------|-------------|
+| **Hand tracking** | Touch, grasp and move holograms in ways that feel natural. HoloLens 2 adapts to your hands for a newfound satisfaction in your interactions. |
+| **Eye tracking** | Enjoy a new level of context and human understanding. HoloLens 2 understands precisely where you’re looking, so it can understand your intent and adapt the holograms to your eyes in real time. |
+| **MEMS Display** | Experience smooth movements, more-believable animations and quick response when you move your head. It’s all thanks to this industry-defining innovation which dramatically increases immersion while shrinking the size of the displays. | 
+| **Large Field of View** | Enjoy over 2x the field of view of the original. (This leap is like going from 720p to 2k TV.) With this expanded canvas and high resolution, you’ll read an 8-point font on a holographic website, have precise interactions with holograms and – ultimately – create and immerse yourself in Mixed Reality. |
+| **Spatial Audio** | Take the sound out of your head and place it in the world. This provides cues about the environment and object state, calls attention to visual elements, and helps you maintain awareness of your real-world settings. |
+| **Holographic Processing Unit (HPU)** | Experience AI inferencing on the edge for much faster response times. This low latency is due to the custom silicon invented for HoloLens 2. You’ll notice this speed for things like hand tracking. |
+| **Vapor Chamber** | Wear HoloLens more comfortably, longer. This is due to a next-generation cooling system that disperses the heat generated during use better. |
+| **World Anchoring** | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work.
+
+## Managing HoloLens 2 in your business
 HoloLens 2 includes features that make it easier for businesses to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](hololens-provisioning.md) using [Windows Configuration Designer](app-deploy-provisioning-package.md#setup).
 
 | I want to... | Solution | Description |  
@@ -38,13 +51,16 @@ Manage Hololens devices in my organization | [**Mobile Device Managment**](holol
 |Minimize setup time for new users and devices | [**Autopilot**](hololens2-autopilot.md) | Configure the out-of-box experience (OOBE) in Microsoft Endpoint Manager and enable end users to prepare devices for business use with little to no interaction. |  
 | Control OS updates for my devices | [**Windows Update for Business**](hololens-updates.md#managing-updates-by-using-windows-update-for-business) | Windows Update for Business provides controlled operating system updates to devices and support for the long-term servicing channel. |  
 | Allow specific and LOB apps to be downloaded |[**Microsoft Store for Business**](app-deploy-overview.md) | Set up an enterprise private store containing only your company's apps and securely distribute them to selected groups of HoloLens 2 users. | 
-| Control what apps are shown on your start menu |[**Kiosk mode**](hololens-kiosk.md) | Configure HoloLens 2 to function as a fixed-purpose device for use in app demos or business app dedication.  
-| Manage device security with rules for apps and processes | [**Policies (CSPs)**](hololens-csp-policy-overview.md) | IT Admins can define and implement policy settings on HoloLens 2. |  
-| Manage how a device connects to the internet | [**Network and Connectivity**](hololens-certificates-network.md) |Anyone in your organization can remotely connect to the corporate network through virtual private network (VPN) on a HoloLens. HoloLens can also access Wi-Fi networks that require credentials. 
+| Control what apps are shown on your start menu |[**Kiosk mode**](hololens-kiosk.md) | Configure HoloLens 2 to function as a fixed-purpose device for use in app demos or dedicated business apps.  
+| Manage device security with rules for apps and processes | [**Policies (CSPs)**](hololens-csp-policy-overview.md) | IT Admins can define and implement policy settings using an existing list of supported Policy CSPs on HoloLens 2. |  
+| Manage how a device connects to the internet | [**Network and Connectivity**](hololens-certificates-network.md) | Use certificate-based authentication to access Wi-Fi, VPNs, or internal resources. | 
 
-Learn about [Licensing Requirements](hololens-licenses-requirements.md) for the above solutions.
+Learn about [Licensing Requirements]
+(hololens-licenses-requirements.md) for the above solutions.
+
+## Next Steps
 > [!div class="nextstepaction"]
-> [Purchase HoloLens 2](https://www.microsoft.com/hololens/buy)
+> [Explore HoloLens 2 options](https://www.microsoft.com/hololens/buy)
 
 > [!div class="nextstepaction"]
->[Planning HoloLens 2 deployment in a commercial environment](hololens-core-components.md) 
+>[Planning HoloLens 2 deployment](hololens-requirements.md) 
