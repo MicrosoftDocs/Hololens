@@ -16,7 +16,7 @@ ms.reviewer:
 manager: skerewa
 appliesto:
 - HoloLens 2
-keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
+keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode, applications, identity
 ---
 
 # What can HoloLens 2 do for you?
@@ -28,7 +28,7 @@ Introduce new ways for your workforce to solve problems, design and review space
 
 
 ## Managing HoloLens in your business
-HoloLens 2 includes features that make it easier for businesses to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](https://docs.microsoft.com/hololens/hololens-provisioning) using [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22).
+HoloLens 2 includes features that make it easier for businesses to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](hololens-provisioning.md) using [Windows Configuration Designer](app-deploy-provisioning-package.md#setup).
 
 | I want to... | Solution | Description |  
 |---------| ------------|------------|
