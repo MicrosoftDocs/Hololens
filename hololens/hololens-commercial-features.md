@@ -40,8 +40,8 @@ What makes the HoloLens 2 so powerful?
 | **Vapor Chamber** | Wear HoloLens more comfortably, longer. This is due to a next-generation cooling system that disperses the heat generated during use better. |
 | **World Anchoring** | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work.
 
-## Managing HoloLens 2 in your business
-HoloLens 2 includes features that make it easier for businesses to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](hololens-provisioning.md) using [Windows Configuration Designer](app-deploy-provisioning-package.md#setup).
+## Managing HoloLens 2 in your organization
+HoloLens 2 includes features that make it easier for organizations to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](hololens-provisioning.md) using [Windows Configuration Designer](app-deploy-provisioning-package.md#setup).
 
 | I want to... | Solution | Description |  
 |---------| ------------|------------|
