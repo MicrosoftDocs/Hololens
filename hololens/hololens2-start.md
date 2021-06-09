@@ -18,7 +18,7 @@ appliesto:
 
 The first time you turn on your HoloLens, you'll be guided through setting up your device, signing in with a user account, and calibrating the HoloLens to your eyes.  This section walks through the HoloLens 2 initial setup experience.
 
-In the next section, you'll learn how to work with HoloLens and interact with holograms. To skip ahead to that article, see [Get started with HoloLens 2](hololens2-basic-usage.md).
+In the next section, you'll learn how to work with HoloLens and interact with holograms. To skip ahead to that article, see [Getting around HoloLens 2](hololens2-basic-usage.md).
 
 ## Before you start
 
@@ -48,13 +48,18 @@ HoloLens 2 will walk you through the following steps:
 
     ![Select region](images/05-region.png)
 
-1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you log in.
-
-    To calibrate, you'll look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. After calibration, holograms will appear correctly even as the visor shifts on your head.
-
-    Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
-
+1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you log in. 
+    1. First, you will adjust your visor.
+    
     ![Calibration selection screen](images/06-et-corners.png)
+
+    2. To calibrate, you'll look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
+
+    ![Adjust for your eyes](images/07-adjust-eyes.png)
+
+    After calibration, holograms will appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
+
+    ![Calibration selection screen](images/calibration-complete.png)
 
 1. Connect to the internet (select Wi-Fi or your ethernet connection).
 
