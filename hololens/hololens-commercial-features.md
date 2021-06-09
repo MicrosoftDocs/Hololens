@@ -59,7 +59,7 @@ Learn about [Licensing Requirements](hololens-licenses-requirements.md) for the 
 
 ## Next Steps
 > [!div class="nextstepaction"]
-> [Explore HoloLens 2 options](https://www.microsoft.com/hololens/buy)
+> [Explore HoloLens 2 options](hololens2-options.md)
 
 > [!div class="nextstepaction"]
 >[Planning HoloLens 2 deployment](hololens-requirements.md) 
