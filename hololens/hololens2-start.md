@@ -112,7 +112,9 @@ HoloLens 2 will walk you through the following steps:
     ![Enable Cortana](images/22-do-more-with-voice.png)
 
 1. Select whether to enable location on HoloLens 2.
+    
     ![Enable location services](images/setup-location-services.png)
+
 1. Select your telemetry level. If you can, please enable Optional telemetry. This information really helps the HoloLens engineering team.
 
      ![Telemetry level](images/24-telemetry.png)
