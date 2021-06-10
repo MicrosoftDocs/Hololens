@@ -49,17 +49,18 @@ HoloLens 2 will walk you through the following steps:
     ![Select region](images/05-region.png)
 
 1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you log in. 
+
     1. First, you'll adjust your visor.
     
-    ![Calibration selection screen](images/06-et-corners.png)
+        ![Calibration selection screen](images/06-et-corners.png)
 
     2. To calibrate, you'll look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
 
-    ![Adjust for your eyes](images/07-adjust-eyes.png)
+        ![Adjust for your eyes](images/07-adjust-eyes.png)
 
-    After calibration, holograms will appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
+        After calibration, holograms will appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
 
-    ![Calibration is complete](images/calibration-complete.png)
+        ![Calibration is complete](images/calibration-complete.png)
 
 1. Connect to the internet (select Wi-Fi or your ethernet connection).
 
@@ -103,8 +104,11 @@ HoloLens 2 will walk you through the following steps:
      
   
 1. You'll setup a PIN to log into the device. This PIN is device specific. 
-    ![Setup Windows Hello](images/setup-windows-hello.png)  
+
+    ![Setup Windows Hello](images/setup-windows-hello.png)
+
     ![Setup Windows Hello PIN](images/windows-hello-pin.png)
+
     ![Windows Hello Setup successful](images/windows-hello-successful.png) 
     
 1. Select whether to enable speech on HoloLens 2.
@@ -122,6 +126,7 @@ HoloLens 2 will walk you through the following steps:
 1. Learn how to use the start gesture on HoloLens 2.
 
      ![Learn how to use the start gesture, image 1](images/26-01-startmenu-learning.png)
+
      ![Learn how to use the start gesture, image 2](images/26-02-startmenu-learning.png)
 
 Congratulations!  Setup is complete and you're ready to use HoloLens!
