@@ -102,7 +102,7 @@ HoloLens 2 will walk you through the following steps:
     ![Iris setup completion](images/iris-setup-complete.png) 
      
   
-1. If required by your organization, you'll setup a Windows Hello PIN. 
+1. You'll setup a PIN to log into the device. This PIN is device specific. 
     ![Setup Windows Hello](images/setup-windows-hello.png)  
     ![Setup Windows Hello PIN](images/windows-hello-pin.png)
     ![Windows Hello Setup successful](images/windows-hello-successful.png) 
