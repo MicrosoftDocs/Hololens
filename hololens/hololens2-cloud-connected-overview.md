@@ -18,32 +18,51 @@ appliesto:
 
 # Deployment Guide – Cloud connected HoloLens 2 with Remote Assist – Overview
 
-This guide helps IT professionals plan for and deploy Microsoft HoloLens 2 devices to their organization with the overall goal of having those devices cloud connected to your organization with Dynamics 365 Remote Assist ready to use. Keep in mind, this will serve as a model for proof-of-concept deployments to your organization across a variety of HoloLens 2 use cases.
+This guide helps IT professionals plan for and deploy Microsoft HoloLens 2 devices to their organization with the overall goal of having those devices cloud connected to your organization with Dynamics 365 Remote Assist ready to use. This is a set up similar to [Scenario A: Deploy to cloud connect devices](https://docs.microsoft.com/hololens/common-scenarios#scenario-a). Keep in mind, this will serve as a model for proof-of-concept deployments to your organization across a variety of HoloLens 2 use cases. No other device restrictions or configurations will be applied in this guide, however we encourage you to explore those options after finishing.
 
 During the guide we will cover how to enroll your devices into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device setup. To do this we will go over the important pieces of infrastructure needed to get set up and running – achieving deployment at scale with HoloLens 2.
 
-[ ![Cloud connected scenario](./images/deployment-guides-revised-scenario-a.png) ](./images/deployment-guides-revised-scenario-a.png#lightbox)
-## In this Guide
+## Prerequisites
 
-This guide has the specific goal of setting up Remote Assist within your organization on your HoloLens devices. We will cover the necessities needed to achieve that goal. In order to maintain focus on this goal certain preparation and configurations will be pre-selected in order to optimize for this deployment or to reduce the items needed to configure. You will be informed of these choices, and can customize your deployment based on your business needs.
+The following infrastructure should already be in place:
 
-This is a set up similar to [Scenario A: Deploy to cloud connect devices](https://docs.microsoft.com/hololens/common-scenarios#scenario-a), which is a good option for many Proof of Concept deployments, which will include:
-
-- Wi-Fi networks are typically fully open to the Internet and Cloud services
-- Azure AD Join with MDM Auto Enrollment -- MDM (Intune) Managed
+- Wi-Fi
+    - Networks are typically open to the Internet and Cloud services
+- Azure Active Directory (Azure AD) Join with MDM Auto Enrollment ([Azure AD P1 subscription](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis) needed)
+- MDM (Intune) Managed
+    - One or more applications are deployed via MDM.
 - Users sign in with their own corporate account (Azure AD)
-  - Single or multiple users per device supported
-- Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk
+    - Single or multiple users per device is supported.
 
-
-
-No other device restrictions or configurations will be applied in this guide, however we encourage you to explore those options after finishing.
+[ ![Cloud connected scenario](./images/deployment-guides-revised-scenario-a.png) ](./images/deployment-guides-revised-scenario-a.png#lightbox)
 
 ## Learn about Remote Assist
 
 Remote Assist allows for collaborative maintenance and repair, remote inspection, as well as knowledge sharing and training. By connecting people in different roles and locations a technician using Remote Assist can connect with a remote collaborator on Microsoft Teams. They can combine video, screenshots, and annotations to solve problems in real time even when they aren&#39;t in the same location. Remote collaborators can insert reference images, schematics, and other helpful information the technician&#39;s physical space so they can refer to the schematic while working heads-up and hands-free on HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Remote Assist Licensing and Requirements
+
+- Azure AD account (required for purchasing the subscription and assigning licenses)
+- [Remote Assist subscription](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist[) (or [Remote Assist Trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+    
+#### Dynamics 365 Remote Assist user
+
+- Remote Assist license
+    - Dynamics 365 Remote Assist and Teams (included)
+    - Microsoft Dataverse (included) 
+- Network Connectivity
+
+#### Microsoft Teams user
+
+- Microsoft Teams PC or mobile
+
+OR
+
+- [Teams Freemium](https://products.office.com/microsoft-teams/free)
+
+If you plan on implementing this [cross-tenant scenario](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants), you may need an Information Barriers license. Please see [this article](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) to determine if an Information Barrier License is required.
 
 ## In this guide you will:
 
