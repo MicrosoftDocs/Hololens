@@ -72,6 +72,14 @@ HoloLens 2 will walk you through the following steps:
     > 
     > Also note that during HoloLens Setup, there is a credential timeout of two minutes. The username/password needs to be entered within two minutes otherwise the username field will be automatically cleared.
 
+1. HoloLens 2 will search for an Autopilot profile automatically.
+1. 
+    ![Autopilot profile search](images/autopilot-profile-search.png) 
+
+1. Click **Accept** on the licensing screen.
+
+    ![Windows license agreement](images/windows-license-agreement.png)
+
 1. Sign in to your user account. You'll choose between **My work or school owns it** and **I own it**.
 
     - When you choose **My work or school owns it**, you sign in with an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available. In that case, you need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
