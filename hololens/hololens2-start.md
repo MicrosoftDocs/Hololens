@@ -59,7 +59,7 @@ HoloLens 2 will walk you through the following steps:
 
     After calibration, holograms will appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
 
-    ![Calibration selection screen](images/calibration-complete.png)
+    ![Calibration is complete](images/calibration-complete.png)
 
 1. Connect to the internet (select Wi-Fi or your ethernet connection).
 
@@ -72,8 +72,8 @@ HoloLens 2 will walk you through the following steps:
     > 
     > Also note that during HoloLens Setup, there is a credential timeout of two minutes. The username/password needs to be entered within two minutes otherwise the username field will be automatically cleared.
 
-1. HoloLens 2 will search for an Autopilot profile automatically.
-1. 
+1. HoloLens 2 will search and apply an Autopilot profile if one exists. No action is needed on this screen.
+ 
     ![Autopilot profile search](images/autopilot-profile-search.png) 
 
 1. Click **Accept** on the licensing screen.
@@ -96,11 +96,24 @@ HoloLens 2 will walk you through the following steps:
 
     ![Set user](images/13-device-owner.png)
 
+1. Setup Iris sign-in by selecting **Next**. You will go through a similar experience to the eye calibration. Select **Done** when the scan is complete. You may also select **Skip** to bypass this step.
+    
+    ![Iris setup](images/setup-iris.png) 
+    ![Iris setup completion](images/iris-setup-complete.png) 
+     
+  
+1. If required by your organization, setup Windows Hello with a PIN. 
+    ![Setup Windows Hello](images/setup-windows-hello.png)  
+    ![Setup Windows Hello PIN](images/windows-hello-pin.png)
+    ![Windows Hello Setup successful](images/windows-hello-successful.png) 
+    
 1. Select whether to enable speech on HoloLens 2, and whether to send diagnostic telemetry.
 
     ![Enable Cortana](images/22-do-more-with-voice.png)
 
-1. Select your telemetry level. If you can, please enable Full telemetry. This information really helps the HoloLens engineering team.
+1. Setup Location Services, if desired.
+    ![Enable location services](images/setup-location-services.png)
+1. Select your telemetry level. If you can, please enable Optional telemetry. This information really helps the HoloLens engineering team.
 
      ![Telemetry level](images/24-telemetry.png)
 
