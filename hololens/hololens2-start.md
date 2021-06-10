@@ -119,8 +119,8 @@ HoloLens 2 will walk you through the following steps:
 
 1. Learn how to use the start gesture on HoloLens 2.
 
-     ![Learn how to use the start gesture, image 1](images/26-01-startmenu-learning.png)
-     ![Learn how to use the start gesture, image 2](images/26-02-startmenu-learning.png)
+     ![Learn how to use the start gesture, image 1](images/26-01-startmenu-learning-small.png)
+     ![Learn how to use the start gesture, image 2](images/26-02-startmenu-learning-small.png)
 
 Congratulations!  Setup is complete and you're ready to use HoloLens!
 
