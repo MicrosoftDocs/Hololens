@@ -23,7 +23,7 @@ appliesto:
 To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
 
 ## Windows Holographic, version 21H1 - June 2021 Update
-- Build 20348.1006
+- Build 20348.1007
 
 ### OneDrive for work or school Camera Roll upload
 
