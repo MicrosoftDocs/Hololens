@@ -2,7 +2,7 @@
 title: Set up your HoloLens 2
 description: Learn how to set up your HoloLens 2 for the first time over Wi-Fi network with either a Microsoft (MSA) or Azure Active Directory (AAD) account.
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
-ms.date: 9/17/2019
+ms.date: 6/09/2021
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -49,7 +49,7 @@ HoloLens 2 will walk you through the following steps:
     ![Select region](images/05-region.png)
 
 1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you log in. 
-    1. First, you will adjust your visor.
+    1. First, you'll adjust your visor.
     
     ![Calibration selection screen](images/06-et-corners.png)
 
@@ -102,16 +102,16 @@ HoloLens 2 will walk you through the following steps:
     ![Iris setup completion](images/iris-setup-complete.png) 
      
   
-1. If required by your organization, setup Windows Hello with a PIN. 
+1. If required by your organization, you'll setup a Windows Hello PIN. 
     ![Setup Windows Hello](images/setup-windows-hello.png)  
     ![Setup Windows Hello PIN](images/windows-hello-pin.png)
     ![Windows Hello Setup successful](images/windows-hello-successful.png) 
     
-1. Select whether to enable speech on HoloLens 2, and whether to send diagnostic telemetry.
+1. Select whether to enable speech on HoloLens 2.
 
     ![Enable Cortana](images/22-do-more-with-voice.png)
 
-1. Setup Location Services, if desired.
+1. Select whether to enable location on HoloLens 2.
     ![Enable location services](images/setup-location-services.png)
 1. Select your telemetry level. If you can, please enable Optional telemetry. This information really helps the HoloLens engineering team.
 
