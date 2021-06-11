@@ -20,7 +20,7 @@ appliesto:
 
 This guide will help IT professionals plan for and deploy Microsoft HoloLens 2 devices with Remote Assist to their organization. This will serve as a model for proof-of-concept deployments to your organization across a variety of HoloLens 2 use cases. The setup is similar to [Scenario A: Deploy to cloud connect devices](https://docs.microsoft.com/hololens/common-scenarios#scenario-a). 
 
-During the guide, we will cover how to enroll your devices into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device setup. To do this we will go over the important pieces of infrastructure needed to get set up and running – achieving deployment at scale with HoloLens 2. No other device restrictions or configurations will be applied in this guide, however we encourage you to explore those options after finishing.
+During the guide, we will cover how to enroll your devices into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device setup. To do this, we will go over the important pieces of infrastructure needed to get set up and running – achieving deployment at scale with HoloLens 2. No other device restrictions or configurations will be applied in this guide, however, we encourage you to explore those options after finishing.
 
 ## Prerequisites
 
