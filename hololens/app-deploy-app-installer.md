@@ -102,6 +102,6 @@ The app will now install to the device. To find the app, open the **Start menu**
 
 ## Sample Apps
 
-Take a look at what other developers have successfully built in mixed reality using Unity or Unreal. 
+Try out the App Installer with one of our available sample apps. 
 > [!div class="nextstepaction"]
 > [Sample apps](https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples?tabs=unity#sample-apps)
