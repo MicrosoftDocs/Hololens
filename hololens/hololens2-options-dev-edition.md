@@ -74,10 +74,11 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 
 ## Developer Edition additional resources
 
+- [HoloLens 2 Development Edition FAQ] (hololens2-development-edition-faq.md)
 - [Make sure to install the tools for HoloLens development.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Learn about developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 - [Learn about how to combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
-- [Learn how to deploy your built apps](https://docs.microsoft.com/hololens/app-deploy-overview).
+- [Learn how to deploy your built apps](app-deploy-overview.md).
 - [Explore the all the possibilities for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
 - [Learn about developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [Reach out to your fellow developers on our HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
