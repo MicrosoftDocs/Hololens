@@ -99,7 +99,7 @@ Work around methods:
 
 ### Missing prompt for downloading locked files
 
-In previous builds of Windows Holographic, when attempting to download a locked file would result in an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening – the file doesn’t download and there’s no error.
+In previous builds of Windows Holographic, when attempting to download a locked file would result in an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
 
 ### Microsoft Edge fails to launch
 
