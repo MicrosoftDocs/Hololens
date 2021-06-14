@@ -54,7 +54,6 @@ Workarounds:
 - If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 
-
 ## Known issues for HoloLens (1st Gen)
 
 ### Unable to connect and deploy to HoloLens through Visual Studio

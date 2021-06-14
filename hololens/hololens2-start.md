@@ -2,7 +2,7 @@
 title: Set up your HoloLens 2
 description: Learn how to set up your HoloLens 2 for the first time over Wi-Fi network with either a Microsoft (MSA) or Azure Active Directory (AAD) account.
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
-ms.date: 9/17/2019
+ms.date: 6/09/2021
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -18,7 +18,7 @@ appliesto:
 
 The first time you turn on your HoloLens, you'll be guided through setting up your device, signing in with a user account, and calibrating the HoloLens to your eyes.  This section walks through the HoloLens 2 initial setup experience.
 
-In the next section, you'll learn how to work with HoloLens and interact with holograms. To skip ahead to that article, see [Get started with HoloLens 2](hololens2-basic-usage.md).
+In the next section, you'll learn how to work with HoloLens and interact with holograms. To skip ahead to that article, see [Getting around HoloLens 2](hololens2-basic-usage.md).
 
 ## Before you start
 
@@ -48,13 +48,19 @@ HoloLens 2 will walk you through the following steps:
 
     ![Select region](images/05-region.png)
 
-1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you log in.
+1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you log in. 
 
-    To calibrate, you'll look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. After calibration, holograms will appear correctly even as the visor shifts on your head.
+    1. First, you'll adjust your visor.
+    
+        ![Calibration selection screen](images/06-et-corners.png)
 
-    Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
+    2. To calibrate, you'll look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
 
-    ![Calibration selection screen](images/06-et-corners.png)
+        ![Adjust for your eyes](images/07-adjust-eyes.png)
+
+        After calibration, holograms will appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
+
+        ![Calibration is complete](images/calibration-complete.png)
 
 1. Connect to the internet (select Wi-Fi or your ethernet connection).
 
@@ -66,6 +72,14 @@ HoloLens 2 will walk you through the following steps:
     > If you progress past the Wi-Fi step and later need to switch to a different network while still in setup, you can press the **Volume Down** and **Power** buttons simultaneously to return to this step if you are running an OS version from October 2019 or later. For earlier versions, you may need to [reset the device](hololens-recovery.md) or restart it in a location where the Wi-Fi network is not available to prevent it from automatically connecting.
     > 
     > Also note that during HoloLens Setup, there is a credential timeout of two minutes. The username/password needs to be entered within two minutes otherwise the username field will be automatically cleared.
+
+1. HoloLens 2 will search and apply an Autopilot profile if one exists. No action is needed on this screen.
+ 
+    ![Autopilot profile search](images/autopilot-profile-search.png) 
+
+1. Click **Accept** on the licensing screen.
+
+    ![Windows license agreement](images/windows-license-agreement.png)
 
 1. Sign in to your user account. You'll choose between **My work or school owns it** and **I own it**.
 
@@ -83,17 +97,36 @@ HoloLens 2 will walk you through the following steps:
 
     ![Set user](images/13-device-owner.png)
 
-1. Select whether to enable speech on HoloLens 2, and whether to send diagnostic telemetry.
+1. Setup Iris sign-in by selecting **Next**. You will go through a similar experience to the eye calibration. Select **Done** when the scan is complete. You may also select **Skip** to bypass this step.
+    
+    ![Iris setup](images/setup-iris.png) 
+    ![Iris setup completion](images/iris-setup-complete.png) 
+     
+  
+1. You'll setup a PIN to log into the device. This PIN is device specific. 
+
+    ![Setup Windows Hello](images/setup-windows-hello.png)
+
+    ![Setup Windows Hello PIN](images/windows-hello-pin.png)
+
+    ![Windows Hello Setup successful](images/windows-hello-successful.png) 
+    
+1. Select whether to enable speech on HoloLens 2.
 
     ![Enable Cortana](images/22-do-more-with-voice.png)
 
-1. Select your telemetry level. If you can, please enable Full telemetry. This information really helps the HoloLens engineering team.
+1. Select whether to enable location on HoloLens 2.
+    
+    ![Enable location services](images/setup-location-services.png)
+
+1. Select your telemetry level. If you can, please enable Optional telemetry. This information really helps the HoloLens engineering team.
 
      ![Telemetry level](images/24-telemetry.png)
 
 1. Learn how to use the start gesture on HoloLens 2.
 
      ![Learn how to use the start gesture, image 1](images/26-01-startmenu-learning.png)
+
      ![Learn how to use the start gesture, image 2](images/26-02-startmenu-learning.png)
 
 Congratulations!  Setup is complete and you're ready to use HoloLens!
