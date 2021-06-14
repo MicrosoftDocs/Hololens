@@ -118,7 +118,7 @@ If your holograms are unstable, jumpy, or don't look right, try:
 - Walking around and looking at your surroundings so that HoloLens can scan them more completely.
 - Calibrating your HoloLens for your eyes. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
  
-#### Reporting issues where Holograms are unstable or don't look right
+### Reporting issues where Holograms are unstable or don't look right
  
 1. Please record and a [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. This video can be later uploaded through Feedback Hub as an attached file.  
 1. Enable full telemetry via the **Settings** app -> **Privacy** -> **Diagnostics & feedback** and under **Optional diagnostics data** ensure the toggle is set to **On**
@@ -131,7 +131,7 @@ If your holograms are unstable, jumpy, or don't look right, try:
 
 
 
-## I can't place holograms or see holograms that I previously placed
+#### I can't place holograms or see holograms that I previously placed
 
 If HoloLens can't map or load your space, it enters Limited mode and you won't be able to place holograms or see holograms that you've placed. Here are some things to try:
 
