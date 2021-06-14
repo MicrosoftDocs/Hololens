@@ -130,8 +130,8 @@ Here are some guidelines to follow when using your device:
     > Telemetry is not retroactive for thermal events - it must be enabled during the overheating or the required data will not be captured.
     
     2. Reproduce the heating issue.
-    1. Include the date and time the overheating occurred.
-    1. Submit [Feedback](hololens-feedback.md).
+    3. Include the date and time the overheating occurred.
+    4. Submit [Feedback](hololens-feedback.md).
 
 ## See also
 
