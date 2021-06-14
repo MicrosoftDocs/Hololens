@@ -103,7 +103,6 @@
 # Troubleshooting
 ## Hardware and OS
 ### [Troubleshoot common issues](hololens-troubleshooting.md)
-### [Known issues and workarounds](hololens-known-issues.md)
 ### [HoloLens 2 FAQs](hololens-faq.md)
 ### [HoloLens 2 display FAQs](hololens2-display.md)
 ### [Enable diagnostic logs](hololens-diagnostic-logs.md)
@@ -135,6 +134,7 @@
 ### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 #### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
 #### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
+#### [Known issues and workarounds for HoloLens (1st gen)](hololens-known-issues.md)
 
 # Give us feedback
 ## [Give us feedback via Feedback Hub](hololens-feedback.md)

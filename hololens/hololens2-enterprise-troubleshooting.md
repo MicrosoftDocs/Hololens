@@ -41,3 +41,21 @@ Here are some things to try if you can't connect your HoloLens to a Wi-Fi networ
 When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.
 
 ## Enterprise Device Management
+
+### Certain devices joined in Azure AD may be unable to logon users after updating to 21H1
+
+#### Symptoms
+- Using PIN to logon will fail after entering the correct PIN.
+- Using the web logon method will fail after successfully signing in on the web page.
+- The device is not listed as “Azure AD joined” in [Azure portal](https://portal.azure.com/) -> Azure Active Directory -> Devices.
+
+#### Cause
+The impacted device may have been deleted from the Azure AD tenant. For example, this may happen because:
+
+- An administrator or user deleted the device in the Azure portal or using PowerShell.
+- The device was removed from the Azure AD tenant due to inactivity. For an efficiently managed environment, we typically recommend IT admins to [remove stale, inactive devices from their Azure AD tenant](https://docs.microsoft.com/azure/active-directory/devices/manage-stale-devices).
+
+When an impacted device attempts to contact the Azure AD tenant again after it has been deleted it will fail to authenticate with Azure AD. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
+
+#### Mitigation
+There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device).
