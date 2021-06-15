@@ -54,7 +54,7 @@ In some cases, you might want to go back to a previous version of the HoloLens s
 
 There are a few approaches; 
 
-1. Ensure that Optional or Full telemetry is enabled and [file a bug](https://docs.microsoft.com/en-us/hololens/hololens-feedback). The engineering team would like to try to fix your issue first.
+1. Ensure that Optional or Full telemetry is enabled and [file a bug](https://docs.microsoft.com/hololens/hololens-feedback). The engineering team would like to try to fix your issue first.
 2. You can reset your HoloLens by using the Advanced Recovery Companion.
     1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
     1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
@@ -64,7 +64,7 @@ There are a few approaches;
     1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
     1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the .ffu extension.)
     1. Select **Install software**, and follow the instructions.
-3. Manually [pause updates](#hololens-updates#pause-updates-via-device). 
+3. Manually [pause updates](hololens-updates.md#pause-updates-via-device). 
 
 ## Go back to a previous version - HoloLens (1st Gen)
 
