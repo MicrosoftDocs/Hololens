@@ -48,14 +48,12 @@ HoloLens applies one update at a time.  If your HoloLens is more than one versio
 
 ## Go back to a previous version - HoloLens 2
 
-In some cases, you might want to go back to a previous version of the HoloLens software. 
-> [!NOTE]
-> Going back to an earlier version deletes your personal files and settings.
-
-There are a few approaches; 
+In some cases, you might want to go back to a previous version of the HoloLens software. There are a few approaches; 
 
 1. Ensure that Optional or Full telemetry is enabled and [file a bug](https://docs.microsoft.com/hololens/hololens-feedback). The engineering team would like to try to fix your issue first.
 2. You can reset your HoloLens by using the Advanced Recovery Companion.
+> [!NOTE]
+> Going back to an earlier version deletes your personal files and settings.
     1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
     1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
     1. Download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
