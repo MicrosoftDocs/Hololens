@@ -54,6 +54,7 @@ In some cases, you might want to go back to a previous version of the HoloLens s
 2. You can reset your HoloLens by using the Advanced Recovery Companion.
 > [!NOTE]
 > Going back to an earlier version deletes your personal files and settings.
+
     1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
     1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
     1. Download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
