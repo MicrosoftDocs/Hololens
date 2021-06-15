@@ -48,7 +48,7 @@ HoloLens applies one update at a time.  If your HoloLens is more than one versio
 
 ## Go back to a previous version - HoloLens 2
 
-In some cases, you might want to go back to a previous version of the HoloLens software. There are a few approaches; 
+In some cases, you might want to go back to a previous version of the HoloLens software. If [resetting or reflashing your HoloLens 2 with the Advanced Recovery Companion](hololens-recovery.md) does not fix your issue, then you can contact support to get help returning to a previous version.
 
 1. Ensure that Optional or Full telemetry is enabled and [file a bug](https://docs.microsoft.com/hololens/hololens-feedback). The engineering team would like to try to fix your issue first.
 2. You can reset your HoloLens by using the Advanced Recovery Companion.
