@@ -66,7 +66,7 @@ In some cases, you might want to go back to a previous version of the HoloLens s
 > [!NOTE]
 > Going back to an earlier version deletes your personal files and settings.
 
-Additionally, if you would like to stay on your currently installed release, you can also manually [pause updates](hololens-updates.md#pause-updates-via-device). 
+Additionally, if you would like to stay on your currently installed release, you can also manually [pause updates](hololens-updates.md#pause-updates-via-device). This will give the Engineering Team time to fix the issue.
 
 ## Go back to a previous version - HoloLens (1st Gen)
 
