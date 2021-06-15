@@ -50,7 +50,7 @@ HoloLens applies one update at a time.  If your HoloLens is more than one versio
 
 In some cases, you might want to go back to a previous version of the HoloLens software. The recommended steps are: 
 
-1. Contact [Support](aka.ms/hlsupport) to see if they can fix your issue.
+1. Contact [Support](https://aka.ms/hlsupport) to see if they can fix your issue.
     1. Ensure that **Optional** or **Full** telemetry is enabled -  this makes your bug more actionable and easier for engineers to diagnose.
     1. [File Feedback](https://docs.microsoft.com/hololens/hololens-feedback) being as descriptive as possible. 
     
