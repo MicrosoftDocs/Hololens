@@ -37,7 +37,6 @@ What makes the HoloLens 2 so powerful?
 | **Large Field of View** | Enjoy over 2x the field of view of the original. (This leap is like going from 720p to 2k TV.) With this expanded canvas and high resolution, you’ll read an 8-point font on a holographic website, have precise interactions with holograms and – ultimately – create and immerse yourself in Mixed Reality. |
 | **Spatial Audio** | Take the sound out of your head and place it in the world. This provides cues about the environment and object state, calls attention to visual elements, and helps you maintain awareness of your real-world settings. |
 | **Holographic Processing Unit (HPU)** | Experience AI inferencing on the edge for much faster response times. This low latency is due to the custom silicon invented for HoloLens 2. You’ll notice this speed for things like hand tracking. |
-| **Vapor Chamber** | Wear HoloLens more comfortably, longer. This is due to a next-generation cooling system that disperses the heat generated during use better. |
 | **World Anchoring** | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work.
 
 ## Managing HoloLens 2 in your organization
