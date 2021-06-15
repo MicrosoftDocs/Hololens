@@ -102,8 +102,6 @@ The app will now install to the device. To find the app, open the **Start menu**
 
 ## Sample Apps
 
-To try the App Installer with some sample apps check out some of our available samples:
-
-- [MRTK Examples Hub](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [Surfaces](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
-- [UWP Sample Apps that can be used for testing](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)
+Try out the App Installer with one of our available sample apps. 
+> [!div class="nextstepaction"]
+> [Sample apps](https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples?tabs=unity#sample-apps)

@@ -4,7 +4,7 @@ description: Keep up to date with our list of known issues and workarounds that 
 keywords: troubleshoot, known issue, help
 author: mattzmsft
 ms.author: mazeller
-ms.date: 11/30/2020
+ms.date: 6/15/2021
 ms.topic: article
 ms.custom: 
 - CI 111456
@@ -25,37 +25,32 @@ Here is the current list of known issues for HoloLens devices. Check here first 
 > - If you discover an issue that is not blocking you please report it on your HoloLens device via [Feedback Hub](hololens-feedback.md).
 > - If the issue you are facing is blocking you, in addition to filing feedback, please [file a support request](https://aka.ms/hlsupport).
 
-- [Known issues for all HoloLens generations](#known-issues-for-all-hololens-generations)
 - [Known issues for HoloLens 2 devices](#known-issues-for-hololens-2-devices)
+- [Known issues for all HoloLens generations](#known-issues-for-all-hololens-generations)
 - [Known issues for HoloLens (1st Gen)](#known-issues-for-hololens-1st-gen)
 - [Known issues for HoloLens emulator](#known-issues-for-hololens-emulator)
 
-## Known issues for all HoloLens generations
-
-### Unity
-
-- See [Install the tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) for the most up-to-date version of Unity recommended for HoloLens development.
-- Known issues with the Unity HoloLens Technical Preview are documented in the [HoloLens Unity forums](https://forum.unity3d.com/threads/known-issues.394627/).
-
-### Windows Device Portal
-
-- The Live Preview feature in Mixed Reality capture may exhibit several seconds of latency.
-
-- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section are not functional. Using them will have no effect. The virtual keyboard on the virtual input page works correctly.
-
-- After enabling Developer Mode in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
-
-### OneDrive camera upload
-
-The OneDrive app for HoloLens does not support automatic camera upload for work or school accounts.
-
-Workarounds:
-
-- If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
-
-- If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
-
 ## Known issues for HoloLens 2 devices
+
+### Remote Assist video freezing after 20 minutes
+
+On the latest release of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), some users of Remote Assist have experienced video freezing during calls over 20 minutes.
+
+#### Workarounds
+
+##### Restart in between calls
+
+If your calls are going over a length of 20 minutes and you are experiencing this issue, try rebooting your device. Rebooting your device between Remote Assist calls will refresh your device and put it back into a good state.
+
+To quickly restart a device on [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) open the start menu, and select the user icon, then select **Restart**.
+
+##### Revert to an older build
+
+Some customers have found that when reverting to an earlier OS version they no longer experience this issue. If you have found that your devices are experiencing this issue, try these steps:
+
+1. [Download the build for Windows Holographic, version 20H2 – May 2021 Update](https://aka.ms/hololens2download/10.0.19041.1146)
+1. Follow the [instructions return to a previous OS version](hololens-update-hololens.md#go-back-to-a-previous-version---hololens-2)
+1. Either [pause OS updates on the device manually](hololens-updates.md#pause-updates-via-device) or for many devices use [deferral through MDM](hololens-updates.md#configure-an-update-deferral-policy).
 
 ### Certain devices joined in Azure AD may be unable to logon users after updating to 21H1
 
@@ -97,6 +92,10 @@ Work around methods:
 - Sign-in methods such as PIN, Password, Iris, Web Authentication, or FIDO2 keys.
 - If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-procedure).
 
+### Missing prompt for downloading locked files
+
+In previous builds of Windows Holographic, when attempting to download a locked file would result in an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
+
 ### Microsoft Edge fails to launch
 
 > [!NOTE]
@@ -111,13 +110,15 @@ There are no known workarounds as we've been unable to root cause the issue so f
 There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters.
 
 Work-arounds:
--	Close the keyboard and reopen it by tapping the text field.
--	Incorrectly enter your password. When the keyboard is relaunched next time it will then work as expected.
+
+- Close the keyboard and reopen it by tapping the text field.
+- Incorrectly enter your password. When the keyboard is relaunched next time it will then work as expected.
 - Web Authentication, close the keyboard and select **Sign in from another device**.
--	If entering only numbers, a user may press and hold certain keys to open an expanded menu.
--	Using a USB keyboard.
+- If entering only numbers, a user may press and hold certain keys to open an expanded menu.
+- Using a USB keyboard.
 
 This does not affect:
+
 - Users who choose to use a personal account.
 
 ### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with an Insider build
@@ -125,22 +126,49 @@ This does not affect:
 This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program.
 
 This does not affect:
-- Users who are not enrolled in Windows Insider 
+
+- Users who are not enrolled in Windows Insider
 - Insiders:
     - If a device has been enrolled since Insider builds were version 18362.x
     - If they flashed an Insider signed 19041.x build AND stay enrolled in the Insider program
 
-Work-around: 
+Work-around:
+
 - Avoid the issue 
     - Flash a non-insider build. One of the regular monthly updates.
     - Stay on Insider Preview
 - Reflash the device
 
     1. Put the [HoloLens 2 into flashing mode](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) manually by fully powering down while not connect. Then while holding Volume up, tap the Power button.
-    
+
     1. Connect to the PC and open Advanced Recovery Companion.
-    
+
     1. Flash the HoloLens 2 to the default build.
+
+## Known issues for all HoloLens generations
+
+### Unity
+
+- See [Install the tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) for the most up-to-date version of Unity recommended for HoloLens development.
+- Known issues with the Unity HoloLens Technical Preview are documented in the [HoloLens Unity forums](https://forum.unity3d.com/threads/known-issues.394627/).
+
+### Windows Device Portal
+
+- The Live Preview feature in Mixed Reality capture may exhibit several seconds of latency.
+
+- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section are not functional. Using them will have no effect. The virtual keyboard on the virtual input page works correctly.
+
+- After enabling Developer Mode in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
+
+### OneDrive camera upload
+
+The OneDrive app for HoloLens does not support automatic camera upload for work or school accounts.
+
+Workarounds:
+
+- If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
+
+- If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 ## Known issues for HoloLens (1st Gen)
 
@@ -174,7 +202,7 @@ Our team is currently working on a fix. In the meantime, you can use the followi
     ```
 
     > [!NOTE]
-    > If you don't have 10.0.18362.0 installed, use the most recent version that you have. 
+    > If you don't have 10.0.18362.0 installed, use the most recent version that you have.
 
 1. Right-click on the project in Solution Explorer and select **Add** > **Existing Item**.
 
@@ -263,10 +291,10 @@ If your device is still unable to load apps, you can sideload a version of the .
 1. You will then see a screen that is similar to the below.  You want to go to the section that says **Install App** and browse to where you unzipped those two APPX files. You can only do one at a time, so after you select the first one, then click on "Go" under the Deploy section. Then do this for the second APPX file.
 
    ![Windows Device Portal to Install Side-Loaded app](images/20190322-DevicePortal.png)
-   
+
 1. At this point we believe your applications should start working again and that you can also get to the Store.
 
-1. In some cases, it is necessary run the additional step of launching the 3D Viewer app before affected apps will launch. 
+1. In some cases, it is necessary run the additional step of launching the 3D Viewer app before affected apps will launch.
 
 We appreciate your patience as we have gone through the process to get this issue resolved, and we look forward to continued working with our community to create successful Mixed Reality experiences.
 
