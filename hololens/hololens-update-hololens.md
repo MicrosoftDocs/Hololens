@@ -48,22 +48,25 @@ HoloLens applies one update at a time.  If your HoloLens is more than one versio
 
 ## Go back to a previous version - HoloLens 2
 
-In some cases, you might want to go back to a previous version of the HoloLens software. If [resetting or reflashing your HoloLens 2 with the Advanced Recovery Companion](hololens-recovery.md) does not fix your issue, then you can contact support to get help returning to a previous version.
+In some cases, you might want to go back to a previous version of the HoloLens software. The recommended steps are: 
 
-1. Ensure that Optional or Full telemetry is enabled and [File Feedback](https://docs.microsoft.com/hololens/hololens-feedback) being as descriptive as possible. Ensuring you have enabled telemetry makes your bug more actionable and easier for engineers to diagnose.
-2. You can reset your HoloLens by using the Advanced Recovery Companion.
-1. 
+1. Contact [Support](aka.ms/hlsupport) to see if they can fix your issue.
+    1. Ensure that **Optional** or **Full** telemetry is enabled -  this makes your bug more actionable and easier for engineers to diagnose.
+    1. [File Feedback](https://docs.microsoft.com/hololens/hololens-feedback) being as descriptive as possible. 
+    
+1. If that does not work, then [reset or reflash your HoloLens 2 with the Advanced Recovery Companion](hololens-recovery.md) .
     1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
     1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
     1. Download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
-    1. When you have finished these downloads, open **File explorer** > **Downloads**. Right-click the zipped folder that you just downloaded, and select **Extract all** > **Extract** to unzip it.
+    1. When you have finished these downloads, open **File Explorer** > **Downloads**. Right-click the zipped folder that you just downloaded, and select **Extract all** > **Extract** to unzip it.
     1. Connect your HoloLens to your PC using a USB-A to USB-C cable. (Even if you've been using other cables to connect your HoloLens, this one works best.)
     1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
     1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the .ffu extension.)
     1. Select **Install software**, and follow the instructions.
 > [!NOTE]
 > Going back to an earlier version deletes your personal files and settings.
-1. Manually [pause updates](hololens-updates.md#pause-updates-via-device). 
+
+Additionally, if you would like to stay on your currently installed release, you can also manually [pause updates](hololens-updates.md#pause-updates-via-device). 
 
 ## Go back to a previous version - HoloLens (1st Gen)
 
