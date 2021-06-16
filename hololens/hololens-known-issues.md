@@ -102,7 +102,7 @@ Some customers have found, when attempting to upload or download files, the oper
 
 #### Workaround
 
-This workaround applies equally to Wi-Fi and UsbNcm, is to disable the "required" option under "SSL Connection". To do so, navigate to Device Portal, **System**, and select the **Preferences** page. In the **Device Security** section, locate **SSL Connection**, and uncheck to disable **Required**.
+This workaround, which applies equally to Wi-Fi and UsbNcm, is to disable the "required" option under "SSL Connection". To do so, navigate to Device Portal, **System**, and select the **Preferences** page. In the **Device Security** section, locate **SSL Connection**, and uncheck to disable **Required**.
 
 The user should then go to http://, not https:// (IP address) and features like file upload and download will work.
 
@@ -144,7 +144,7 @@ This does not affect:
 
 Work-around:
 
-- Avoid the issue 
+- Avoid the issue
     - Flash a non-insider build. One of the regular monthly updates.
     - Stay on Insider Preview
 - Reflash the device
