@@ -96,6 +96,16 @@ Work around methods:
 
 In previous builds of Windows Holographic, when attempting to download a locked file would result in an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
 
+### Device Portal file upload or download timeout
+
+Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue in the current Insider build](hololens-known-issues.md#missing-prompt-for-downloading-locked-files) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
+
+#### Workaround
+
+This workaround, which applies equally to Wi-Fi and UsbNcm, is to disable the "required" option under "SSL Connection". To do so, navigate to Device Portal, **System**, and select the **Preferences** page. In the **Device Security** section, locate **SSL Connection**, and uncheck to disable **Required**.
+
+The user should then go to http://, not https:// (IP address) and features like file upload and download will work.
+
 ### Microsoft Edge fails to launch
 
 > [!NOTE]
@@ -134,7 +144,7 @@ This does not affect:
 
 Work-around:
 
-- Avoid the issue 
+- Avoid the issue
     - Flash a non-insider build. One of the regular monthly updates.
     - Stay on Insider Preview
 - Reflash the device
