@@ -50,8 +50,6 @@ Remote Assist allows for collaborative maintenance and repair, remote inspection
 #### Dynamics 365 Remote Assist user
 
 - Remote Assist license
-    - Dynamics 365 Remote Assist and Teams (included)
-    - Microsoft Dataverse (included) 
 - Network Connectivity
 
 #### Microsoft Teams user
