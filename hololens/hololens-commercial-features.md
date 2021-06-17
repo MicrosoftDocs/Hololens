@@ -37,7 +37,8 @@ What makes the HoloLens 2 so powerful?
 | **Large Field of View** | Enjoy a larger field of view in the HoloLens 2. With this expanded canvas and higher resolution than the original, you can read an 8-point font on a holographic website, have precise interactions with holograms and – ultimately – create and immerse yourself in Mixed Reality. |
 | **Spatial Audio** | Perceive sound all around you with audio that stimulates your mind into perceiving sound in 3D. Hear where the holograms are with HoloLens 2. |
 | **Holographic Processing Unit (HPU)** | Experience AI inferencing on the edge for much faster response times. This low latency is due to the custom silicon invented for HoloLens 2. You’ll notice this speed for things like hand tracking. |
-| **World Anchoring** | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work.
+| **World Anchoring** | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
+| **Ergonomic Fit** | Wear HoloLens 2 longer and more comfortably with a dial-in fit system designed for extended use. And keep your glasses on—the headset slides right over them. When it's time to switch tasks, flip the visor up to step out of mixed reality. |
 
 ## Managing HoloLens 2 in your organization
 HoloLens 2 includes features that make it easier for organizations to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](hololens-provisioning.md) using [Windows Configuration Designer](app-deploy-provisioning-package.md#setup).
