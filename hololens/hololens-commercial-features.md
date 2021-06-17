@@ -35,7 +35,7 @@ What makes the HoloLens 2 so powerful?
 | **Eye tracking** | Enjoy a new level of context and human understanding. HoloLens 2 understands precisely where you’re looking, so it can understand your intent and adapt the holograms to your eyes in real time. |
 | **MEMS Display** | Experience smooth movements, more-believable animations and quick response when you move your head. It’s all thanks to this industry-defining innovation which dramatically increases immersion while shrinking the size of the displays. | 
 | **Large Field of View** | Enjoy a larger field of view in the HoloLens 2. With this expanded canvas and high resolution, you’ll read an 8-point font on a holographic website, have precise interactions with holograms and – ultimately – create and immerse yourself in Mixed Reality. |
-| **Spatial Audio** | Perceive sound all around you - hear where the holograms are with HoloLens 2. This provides cues about the environment and object state, calls attention to visual elements, and helps you maintain awareness of your real-world settings. |
+| **Spatial Audio** | Perceive sound all around you with audio that stimulates your mind into perceiving sound in 3D. Hear where the holograms are with HoloLens 2. |
 | **Holographic Processing Unit (HPU)** | Experience AI inferencing on the edge for much faster response times. This low latency is due to the custom silicon invented for HoloLens 2. You’ll notice this speed for things like hand tracking. |
 | **World Anchoring** | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work.
 
