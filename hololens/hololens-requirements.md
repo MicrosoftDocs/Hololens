@@ -22,7 +22,6 @@ This page provides a high-level architecture overview for three common scenarios
 
 Often, how you manage your devices and access your organization's resources is largely determined by factors already in place. Based on your existing infrastructure, we invite you to review the common device management style (MDM) in the following scenarios and then read [Planning HoloLens 2 deployments in a commercial environment](hololens-core-components.md) to determine which scenario matches your needs. There are also three corresponding guides available for use during your deployment.
 
-
  1. [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md)
      1. [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
  1. [Corporate network deployment guide](hololens2-corp-connected-overview.md)
@@ -38,7 +37,8 @@ This scenario is comparable to deploying managed mobile devices within a company
 
 Consider this deployment model for:
 
-* Deploying Proof of Concepts
+* External customer use cases
+* Deploying Proof of Concept, Pilots and Field Services
 
 ### Basic Common Configurations
 
@@ -75,7 +75,8 @@ This scenario is identical to a classic deployment for most Windows 10 PCs. Holo
 
 Consider this deployment model for:
 
-* Deploying at scale (Pilot and Production) in your organization
+* Internal users
+* Deploying at scale (Pilot and Production) within the corporate environment
 
 ### Basic Common Configurations
 
@@ -108,7 +109,9 @@ This is a typical deployment for highly secure or confidential locations. HoloLe
 
 Consider this deployment model for:
 
-* internet connectivity issue in the remote area
+* Highly Secure environments where "data" needs to be retained in house
+* "Experiences" where the public will be using the devices
+* Internet connectivity issue in the remote area
 
 ### Basic Common Configurations
 
