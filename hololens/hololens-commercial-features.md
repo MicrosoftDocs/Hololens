@@ -39,9 +39,7 @@ What makes the HoloLens 2 so powerful?
 | **Holographic Processing Unit (HPU)** | Experience AI inferencing on the edge for much faster response times. This low latency is due to the custom silicon invented for HoloLens 2. You’ll notice this speed for things like hand tracking. |
 | **World Anchoring** | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
 | **Ergonomic Fit** | Wear HoloLens 2 longer and more comfortably with a dial-in fit system designed for extended use. And keep your glasses on—the headset slides right over them. When it's time to switch tasks, flip the visor up to step out of mixed reality. |
-| User Customized Experience | HoloLens 2 displays are automatically adjusted for every user with Auto Eye Position (AEP), eliminating the need to run a manual calibration process when the device is shared between users. 
-
-Read more: https://www.tweaktown.com/news/75361/hololens-2-gets-automatic-eye-calibration-in-latest-insider-preview/index.html 
+| Auto-Customized Display | HoloLens 2 displays are automatically adjusted with Auto Eye Position (AEP), eliminating the need to run a manual calibration process when the device is shared between users. |
 
 ## Managing HoloLens 2 in your organization
 HoloLens 2 includes features that make it easier for organizations to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](hololens-provisioning.md) using [Windows Configuration Designer](app-deploy-provisioning-package.md#setup).
