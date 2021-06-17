@@ -27,7 +27,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 >
 > While we reduce availability of 21H1 to mitigate the impact of this issue, we understand some customers may still be wanting to update to 21H1. For customers who wish to update to 21H1 there are two different paths available:
 >
-> - [Enroll your device(s) as Windows Insiders](hololens-insider.md#start-receiving-insider-builds) and select the Beta Channel, this will allow those devices to update to 21H1 and have reliable builds.
+> - [Enroll your device(s) as Windows Insiders](hololens-insider.md#start-receiving-insider-builds) and select the **Beta Channel**, this will allow those devices to update to 21H1 and have reliable builds.
 > - [Download the lastest FFU on your PC](https://aka.ms/hololens2download) and then [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device).
 
 ## Windows Holographic, version 21H1 - June 2021 Update
