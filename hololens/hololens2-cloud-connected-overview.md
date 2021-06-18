@@ -24,7 +24,7 @@ During the guide, we will cover how to enroll your devices into your device mana
 
 ## Prerequisites
 
-The following infrastructure should already be in place. (If not, setting up Azure and Intune is included in this guide):
+The following infrastructure should be in place in order to deploy the HoloLens 2. If not, setting up Azure and Intune is included in this guide:
 
 - Wi-Fi
     - Networks are typically open to the Internet and Cloud services
