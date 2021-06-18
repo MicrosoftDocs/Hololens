@@ -150,6 +150,52 @@ Work-arounds:
 This does not affect:
 - Users who choose to use a personal account.
 
+### Built-in voice commands do not work
+
+On HoloLens (1st gen), built-in speech recognition is not configurable. It is always turned on. On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.
+
+If your HoloLens 2 is not responding to your voice, make sure Speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.
+
+### Cortana or Dictation doesn't work
+
+If Cortana or Dictation isn't responding to your voice, make sure online speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and verify the **Online speech recognition** settings. 
+
+If Cortana is still not responding, do one of the following to verify that Cortana itself is turned on:
+
+- In **All apps**, select **Cortana** > select **Menu** > **Notebook** > **Settings** to make changes.
+- On HoloLens 2, select the **Speech settings** button or say "Speech settings."
+
+To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
+
+[Back to list](#list)
+
+### I'm having problems pairing or using a Bluetooth device
+
+If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
+
+- Go to **Settings** > **Devices**, and make sure that Bluetooth is turned on. If it is, turn it off and on again.
+- Make sure that your Bluetooth device is fully charged or has fresh batteries.
+- If you still can't connect, [restart the HoloLens](hololens-recovery.md).
+
+[Back to list](#list)
+
+### HoloLens Settings lists devices as available, but the devices don't work
+
+HoloLens (1st gen) doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
+
+HoloLens 2 supports the Bluetooth A2DP audio profile for stereo playback. The Bluetooth Hands Free profile which enables microphone capture from a Bluetooth peripheral is not supported on HoloLens 2.
+
+If you're having trouble using a Bluetooth device, make sure that it's a supported device. Supported devices include the following:
+
+- English-language QWERTY Bluetooth keyboards (you can use these anywhere that you use the holographic keyboard).
+- Bluetooth mice.
+- The [HoloLens clicker](hololens1-clicker.md).
+
+You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
+
+[Back to list](#list)
+
+
 ### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with an Insider build
 
 This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program.
@@ -171,39 +217,6 @@ Work-around:
     1. Connect to the PC and open Advanced Recovery Companion.
     
     1. Flash the HoloLens 2 to the default build.
-
-## Display
-### Holograms don't look good
-
-If your holograms are unstable, jumpy, or don't look right, try:
-
-- Cleaning your device visor and sensor bar on the front of your HoloLens.
-- Increasing the light in your room.
-- Walking around and looking at your surroundings so that HoloLens can scan them more completely.
-- Calibrating your HoloLens for your eyes. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
- 
-### Reporting issues where Holograms are unstable or don't look right
- 
-1. Please record and a [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. This video can be later uploaded through Feedback Hub as an attached file.  
-1. Enable full telemetry via the **Settings** app -> **Privacy** -> **Diagnostics & feedback** and under **Optional diagnostics data** ensure the toggle is set to **On**
-1. Get the latest hologram scale and stability fixes by updating to the latest [Windows Holographic OS, (20H2 or higher)](hololens-release-notes.md#windows-holographic-version-20h2). After updating perform the following:
-    1. Remove all Holograms via **Settings** app -> **System** -> **Holograms** -> then select **Remove all holograms** and start with a fresh map.
-    1. Create a new map of your space by wearing the HoloLens and walking around your room and looking at all areas and surfaces in the space. Do this for 2-3 minutes.
-    1. Perform IPD calibration. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
-    1. Re-test the scenario and see if it still persists.
-1. If updating does not fix the issue, please file a [Feedback Hub issue](hololens-feedback.md). After you've filled feedback you can use the **Share** button, to create an easy to share link that can be sent when contacting support.
-
-
-
-#### I can't place holograms or see holograms that I previously placed
-
-If HoloLens can't map or load your space, it enters Limited mode and you won't be able to place holograms or see holograms that you've placed. Here are some things to try:
-
-- Make sure that there's enough light in your environment so HoloLens can see and map the space.
-- Make sure that you're connected to a Wi-Fi network. If you're not connected to Wi-Fi, HoloLens can't identify and load a known space.
-- If you need to create a new space, connect to Wi-Fi, then restart your HoloLens.
-- To see if the correct space is active, or to manually load a space, go to **Settings** > **System** > **Spaces**.
-- If the correct space is loaded and you're still having problems, the space may be corrupt. To fix this issue, select the space, then select **Remove**. After you remove the space, HoloLens starts to map your surroundings and create a new space.
 
 ## Emulator
 ### The HoloLens emulator isn't working

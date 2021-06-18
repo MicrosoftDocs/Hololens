@@ -31,10 +31,11 @@ For tips about how to wear your HoloLens, see [HoloLens (1st gen) fit and comfor
 This article addresses the following questions and issues:
 <a id="list"></a>
 
+- [Reporting issues where Holograms are unstable or don't look right](reporting-issues-where-holograms-are-unstable-or-don't-look-right)
 - [My holograms don't look right or are moving around](#my-holograms-dont-look-right-or-are-moving-around)
 - [I see a message that says "Finding your space"](#i-see-a-message-that-says-finding-your-space)
 - [I'm not seeing the holograms that I expect to see in my space](#im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space)
-- [I can't place holograms where I want to](#i-cant-place-holograms-where-i-want-to)
+- [I can't place holograms or see holograms that I previously placed](#i-cant-place-holograms-or-see-holograms-that-i-previously-placed)
 - [Holograms disappear or are encased in other holograms or objects](#holograms-disappear-or-are-encased-in-other-holograms-or-objects)
 - [I can see holograms that are on the other side of a wall](#i-can-see-holograms-that-are-on-the-other-side-of-a-wall)
 - [When I place a hologram on a wall, the hologram seems to float](#when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float)
@@ -52,6 +53,17 @@ This article addresses the following questions and issues:
 - [Questions about securing HoloLens devices](#questions-about-securing-hololens-devices)
 - [How do I delete all spaces?](#how-do-i-delete-all-spaces)
 - [I cannot find or use the keyboard to type in the HoloLens 2 Emulator](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
+
+## Reporting issues where holograms are unstable or don't look right
+ 
+1. Please record and a [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. This video can be later uploaded through Feedback Hub as an attached file.  
+1. Enable full telemetry via the **Settings** app -> **Privacy** -> **Diagnostics & feedback** and under **Optional diagnostics data** ensure the toggle is set to **On**
+1. Get the latest hologram scale and stability fixes by updating to the latest [Windows Holographic OS, (20H2 or higher)](hololens-release-notes.md#windows-holographic-version-20h2). After updating perform the following:
+    1. Remove all Holograms via **Settings** app -> **System** -> **Holograms** -> then select **Remove all holograms** and start with a fresh map.
+    1. Create a new map of your space by wearing the HoloLens and walking around your room and looking at all areas and surfaces in the space. Do this for 2-3 minutes.
+    1. Perform IPD calibration. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
+    1. Re-test the scenario and see if it still persists.
+1. If updating does not fix the issue, please file a [Feedback Hub issue](hololens-feedback.md). After you've filled feedback you can use the **Share** button, to create an easy to share link that can be sent when contacting support.
 
 ## My holograms don't look right or are moving around
 
@@ -93,14 +105,18 @@ If you don't see the holograms that you placed, or if you're seeing some that yo
 
 [Back to list](#list)
 
-## I can't place holograms where I want to
+## I can't place holograms or see holograms that I previously placed
 
-Here are some things to try if you're having trouble placing holograms:
+If HoloLens can't map or load your space, it enters Limited mode and you won't be able to place holograms or see holograms that you've placed. Here are some things to try:
 
+- Make sure that there's enough light in your environment so HoloLens can see and map the space.
 - Stand between one and three meters from where you're trying to place the hologram.
 - Don't place holograms on black or reflective surfaces.
-- Make sure that you're in a well-lit room that does not have a lot of direct sunlight.
+- Make sure that you're connected to a Wi-Fi network. If you're not connected to Wi-Fi, HoloLens can't identify and load a known space.
 - Walk around the rooms so HoloLens can rescan your surroundings. To see what's already been scanned, air tap to reveal the mapping mesh graphic.
+- If you need to create a new space, connect to Wi-Fi, then restart your HoloLens.
+- To see if the correct space is active, or to manually load a space, go to **Settings** > **System** > **Spaces**.
+- If the correct space is loaded and you're still having problems, the space may be corrupt. To fix this issue, select the space, then select **Remove**. After you remove the space, HoloLens starts to map your surroundings and create a new space.
 
 [Back to list](#list)
 
@@ -140,80 +156,7 @@ Try walking around and looking at the area where you're placing the app so that 
 
 [Back to list](#list)
 
-## I'm getting a low disk space error
 
-Free up some storage space by doing one or more of the following:
-
-- Remove some of the holograms that you've placed, or remove some saved data from within apps. [How do I find my data?](holographic-data.md)
-- Delete some pictures and videos in the Photos app.
-- Uninstall some apps from your HoloLens. In the **All apps** list, tap and hold the app you want to uninstall, then select **Uninstall**. (Uninstalling the app also deletes any data that the app stores on the device.)
-
-[Back to list](#list)
-
-## HoloLens doesn't respond to my gestures
-
-To make sure that HoloLens can see your gestures, keep your hand in the gesture frame. The gesture frame extends a couple of feet on either side of you. HoloLens can also best see your hand when you hold it about 18 inches in front of your body (though you don't have to be precise about this). When HoloLens can see your hand, the cursor changes from a dot to a ring. Learn more about [using gestures in HoloLens 2](hololens2-basic-usage.md) or [using gestures in HoloLens (1st gen)](hololens1-basic-usage.md).
-
-[Back to list](#list)
-
-## HoloLens doesn't respond to my voice
-
-HoloLens (1st gen) and HoloLens 2 have built-in speech recognition, and also support Cortana (online speech recognition).
-
-### Built-in voice commands do not work
-
-On HoloLens (1st gen), built-in speech recognition is not configurable. It is always turned on. On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.
-
-If your HoloLens 2 is not responding to your voice, make sure Speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.
-
-### Cortana or Dictation doesn't work
-
-If Cortana or Dictation isn't responding to your voice, make sure online speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and verify the **Online speech recognition** settings. 
-
-If Cortana is still not responding, do one of the following to verify that Cortana itself is turned on:
-
-- In **All apps**, select **Cortana** > select **Menu** > **Notebook** > **Settings** to make changes.
-- On HoloLens 2, select the **Speech settings** button or say "Speech settings."
-
-To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
-
-[Back to list](#list)
-
-## I'm having problems pairing or using a Bluetooth device
-
-If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
-
-- Go to **Settings** > **Devices**, and make sure that Bluetooth is turned on. If it is, turn it off and on again.
-- Make sure that your Bluetooth device is fully charged or has fresh batteries.
-- If you still can't connect, [restart the HoloLens](hololens-recovery.md).
-
-[Back to list](#list)
-
-## HoloLens Settings lists devices as available, but the devices don't work
-
-HoloLens (1st gen) doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
-
-HoloLens 2 supports the Bluetooth A2DP audio profile for stereo playback. The Bluetooth Hands Free profile which enables microphone capture from a Bluetooth peripheral is not supported on HoloLens 2.
-
-If you're having trouble using a Bluetooth device, make sure that it's a supported device. Supported devices include the following:
-
-- English-language QWERTY Bluetooth keyboards (you can use these anywhere that you use the holographic keyboard).
-- Bluetooth mice.
-- The [HoloLens clicker](hololens1-clicker.md).
-
-You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
-
-[Back to list](#list)
-
-## I'm having problems using the HoloLens clicker
-
-Use the [clicker](hololens1-clicker.md) to select, scroll, move, and resize holograms. Individual apps may support additional clicker gestures.
-
-If you're having trouble using the clicker, make sure that it's charged and paired with your HoloLens. If the battery is low, the indicator light blinks amber. To verify that the clicker is paired, go to **Settings** > **Devices** and see if it shows up there. For more information, see [Pair the clicker](hololens1-clicker.md).
-
-If the clicker is charged and paired and you're still having problems, reset it by holding down the main button and the pairing button for 15 seconds. Then pair the clicker with your HoloLens again.
-
-If resetting the clicker doesn't help, see [Restart or recover the HoloLens clicker](hololens1-clicker.md#restart-or-recover-the-clicker).
 
 [Back to list](#list)
 

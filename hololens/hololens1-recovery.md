@@ -75,6 +75,27 @@ If the previous methods didn't restart your HoloLens, force a restart. This meth
 1. Press and hold the **power** button for 1  second.
 1. If you still have problems, press the **power** button for 4 seconds, until all the battery indicators fade out and the screen stops displaying holograms. Wait 1 minute, and then press the **power** button again to turn on the device.
 
+## Go back to a previous version - HoloLens (1st Gen)
+
+In some cases, you might want to go back to a previous version of the HoloLens software. You can do this by using the Windows Device Recovery Tool to reset your HoloLens to the earlier version.
+
+> [!NOTE]
+> Going back to an earlier version deletes your personal files and settings.
+
+To go back to a previous version of HoloLens 1, follow these steps:
+
+1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
+1. On your PC, download the [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379).
+1. Download the [HoloLens Anniversary Update recovery package](https://aka.ms/hololensrecovery).
+1. When the downloads finish, open **File explorer** > **Downloads**. Right-click the zipped folder you just downloaded, and select **Extract all** > **Extract** to unzip it.
+1. Connect your HoloLens to your PC using the micro-USB cable that it came with. (Even if you've been using other cables to connect your HoloLens, this one works best.)
+1. The WDRT will automatically detect your HoloLens. Select the **Microsoft HoloLens** tile.
+1. On the next screen, select **Manual package selection** and choose the installation file contained in the folder you unzipped in step 4. (Look for a file with the .ffu extension.)
+1. Select **Install software**, and follow the instructions.
+
+> [!NOTE]
+> If the WDRT doesn't detect your HoloLens, try restarting your PC. If that doesn't work, select **My device was not detected**, select **Microsoft HoloLens**, and then follow the instructions.
+
 ## Reset to factory settings
 
 > [!NOTE]
