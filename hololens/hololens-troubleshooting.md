@@ -31,7 +31,7 @@ If the device can't boot to the startup menu, note the LED appearance and device
 
 If your HoloLens won't start:
 
-- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens-troubleshooting-overview.md#charge-the-device)
+- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens2-charging.md#charge-the-device)
 - If the LEDs light up when you press the power button but you can't see anything on the displays, [preform a hard reset of the device](hololens-recovery.md#hard-reset-procedure).
 
 If your HoloLens becomes frozen or unresponsive:
@@ -167,8 +167,6 @@ If Cortana is still not responding, do one of the following to verify that Corta
 
 To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
-[Back to list](#list)
-
 ### I'm having problems pairing or using a Bluetooth device
 
 If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
@@ -176,8 +174,6 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 - Go to **Settings** > **Devices**, and make sure that Bluetooth is turned on. If it is, turn it off and on again.
 - Make sure that your Bluetooth device is fully charged or has fresh batteries.
 - If you still can't connect, [restart the HoloLens](hololens-recovery.md).
-
-[Back to list](#list)
 
 ### HoloLens Settings lists devices as available, but the devices don't work
 
@@ -192,9 +188,6 @@ If you're having trouble using a Bluetooth device, make sure that it's a support
 - The [HoloLens clicker](hololens1-clicker.md).
 
 You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
-
-[Back to list](#list)
-
 
 ### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with an Insider build
 

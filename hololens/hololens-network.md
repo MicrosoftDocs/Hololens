@@ -122,7 +122,7 @@ Additional resources:
 - WLANv1Profile Schema: [[MS-GPWL]: Wireless LAN Profile v1 Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-Check our [Troubleshooting](hololens2-enterprise-troubleshooting#network.md) page if you are having problems connecting to your Wi-Fi.
+Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#networking-and-wi-fi) page if you are having problems connecting to your Wi-Fi.
 
 ## Configure Network Proxy
 
