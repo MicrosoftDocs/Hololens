@@ -34,7 +34,8 @@ The following infrastructure should be in place in order to deploy the HoloLens 
 - Users sign in with their own corporate account (Azure AD)
     - Single or multiple users per device is supported.
 
-[ ![Cloud connected scenario](./images/deployment-guides-revised-scenario-a.png) ](./images/deployment-guides-revised-scenario-a.png#lightbox)
+:::image type="content" alt-text="Cloud connected scenario" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
+
 
 ## Learn about Remote Assist
 
@@ -45,7 +46,7 @@ Remote Assist allows for collaborative maintenance and repair, remote inspection
 ### Remote Assist Licensing and Requirements
 
 - Azure AD account (required for purchasing the subscription and assigning licenses)
-- [Remote Assist subscription](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist[) (or [Remote Assist Trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+- [Remote Assist subscription](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (or [Remote Assist Trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
 #### Dynamics 365 Remote Assist user
 
@@ -69,7 +70,7 @@ Prepare:
 > - [Learn about Identity management and how to best set up Azure AD accounts.](hololens2-cloud-connected-prepare.md#identity-management)
 > - [Learn more about MDM, and set up with Intune if you don&#39;t already have one ready.](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [Learn about the networking requirements of Remote Assist.](hololens2-cloud-connected-prepare.md#network)
-> - [Optionally: VPN to connect to organizational resources](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
+> - [Optionally: VPN to connect to organizational resources](hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
 Configure:
 
