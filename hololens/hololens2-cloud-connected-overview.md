@@ -24,7 +24,7 @@ During the guide, we will cover how to enroll your devices into your device mana
 
 ## Prerequisites
 
-The following infrastructure should already be in place:
+The following infrastructure should already be in place. (If not, we cover setting up an Azure tenant and Intune in this guide):
 
 - Wi-Fi
     - Networks are typically open to the Internet and Cloud services
