@@ -30,7 +30,7 @@ For tips about how to wear your HoloLens, see [HoloLens (1st gen) fit and comfor
 
 This article addresses the following questions and issues:
 <a id="list"></a>
-- [Reporting issues where Holograms are unstable or don't look right](#reporting-issues-where-holograms-are-unstable-or-don't-look-right)
+- [Reporting issues where Holograms are unstable or don't look right](#reporting-issues-where-holograms-are-unstable-or-dont-look-right)
 - [My holograms don't look right or are moving around](#my-holograms-dont-look-right-or-are-moving-around)
 - [I see a message that says "Finding your space"](#i-see-a-message-that-says-finding-your-space)
 - [I'm not seeing the holograms that I expect to see in my space](#im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space)
@@ -39,7 +39,6 @@ This article addresses the following questions and issues:
 - [I can see holograms that are on the other side of a wall](#i-can-see-holograms-that-are-on-the-other-side-of-a-wall)
 - [When I place a hologram on a wall, the hologram seems to float](#when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float)
 - [Apps appear too close to me when I'm trying to move them](#apps-appear-too-close-to-me-when-im-trying-to-move-them)
-- [I'm getting a low disk space error](#im-getting-a-low-disk-space-error)
 - [I can't connect to Wi-Fi](#i-cant-connect-to-wi-fi)
 - [My HoloLens isn't running well, is unresponsive, or won't start](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
 - [I can't sign in to a HoloLens device because it was previously set up for someone else](#i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else)

@@ -101,16 +101,14 @@
 ## [Manage HoloLens updates](hololens-updates.md)
 
 # Troubleshooting
-## Hardware and OS
-### [Hololens 2 device troubleshooting](hololens-troubleshooting.md)
-### [HoloLens 2 hologram troubleshooting](hololens-faq.md)
-### [HoloLens 2 display troubleshooting](hololens2-display.md)
-### [Enable diagnostic logs](hololens-diagnostic-logs.md)
-### [Reset HoloLens 2](hololens-recovery.md)
+## [Device troubleshooting](hololens-troubleshooting.md)
+## [Hologram and interactions troubleshooting](hololens-faq.md)
+## [Display troubleshooting](hololens2-display.md)
+## [Enable diagnostic logs](hololens-diagnostic-logs.md)
+## [Reset HoloLens 2](hololens-recovery.md)
+## [Networking and Wi-Fi](hololens2-enterprise-troubleshooting.md#networking-and-wi-fi)
+## [Enterprise Device Management](hololens2-enterprise-troubleshooting.md#enterprise-device-management)
 
-## Implementation
-### [Networking and Wi-Fi](hololens2-enterprise-troubleshooting.md#networking-and-wi-fi)
-### [Enterprise Device Management](hololens2-enterprise-troubleshooting.md#enterprise-device-management)
 # Resources
 ## [Support and help options](hololens2-support.md)
 ## [Autopilot support requests](hololens2-autopilot-registration-support.md)
