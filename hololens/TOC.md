@@ -104,10 +104,11 @@
 ## [Device troubleshooting](hololens-troubleshooting.md)
 ## [Hologram and interactions troubleshooting](hololens-faq.md)
 ## [Display troubleshooting](hololens2-display.md)
-## [Enable diagnostic logs](hololens-diagnostic-logs.md)
-## [Reset HoloLens 2](hololens-recovery.md)
 ## [Networking and Wi-Fi](hololens2-enterprise-troubleshooting.md#networking-and-wi-fi)
 ## [Enterprise Device Management](hololens2-enterprise-troubleshooting.md#enterprise-device-management)
+## [Enable diagnostic logs](hololens-diagnostic-logs.md)
+## [Reset HoloLens 2](hololens-recovery.md)
+
 
 # Resources
 ## [Support and help options](hololens2-support.md)
