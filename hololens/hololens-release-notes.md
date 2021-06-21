@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 02/16/2021
+ms.date: 06/17/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -21,6 +21,78 @@ appliesto:
 # HoloLens 2 release notes
 
 To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
+
+> [!IMPORTANT]
+> Due to a [known issue in our 21H1 build that is affecting Remote Assist users](hololens-known-issues.md#remote-assist-video-freezing-after-20-minutes), we are currently pausing the offering of Windows Holographic, version 21H1 updates. We have also changed the default Advanced Recovery Companion build to be the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update), which is the latest 20H2 release.
+>
+> While we reduce availability of 21H1 to mitigate the impact of this issue, we understand some customers may still be wanting to update to 21H1. For customers who wish to update to 21H1 there are two different paths available:
+>
+> - [Enroll your device(s) as Windows Insiders](hololens-insider.md#start-receiving-insider-builds) and select the **Beta Channel**, this will allow those devices to update to 21H1 and have reliable builds.
+> - [Download the latest FFU on your PC](https://aka.ms/hololens2download) and then [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device).
+
+## Windows Holographic, version 21H1 - June 2021 Update
+- Build 20348.1007
+
+### OneDrive for work or school Camera Roll upload
+
+We've added a new feature to the HoloLens 2 Settings app, which allows customers to automatically upload mixed reality photos and videos from the device's Pictures > Camera Roll folder to the corresponding OneDrive for work or school folder. This feature addresses a [feature gap within the OneDrive app](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) on HoloLens 2, which only supports automatic Camera Roll upload to a customer's personal Microsoft account (and not their work or school account).
+
+**How it works**
+
+- Visit **Settings > System > Mixed Reality Camera** to enable "Camera upload."
+- By setting this feature to the **On** position, any mixed reality photos or videos captured to your device will automatically be queued for upload to the Pictures > Camera Roll folder of your OneDrive for work or school account.
+    >[!NOTE]
+    >Photos and videos captured prior to enabling this feature *will not* be queued for upload and will still need to be manually uploaded.
+- A status message on the Settings page will display the number of files pending upload (or read "OneDrive is up to date" when all pending files have been uploaded).
+- If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files will not upload until you re-enable the feature.
+- Newest files will upload first (last in, first out).
+- If your OneDrive account has issues (for example, after your password changes) a **Fix now** button will appear on the Settings page.
+- There is no maximum file size, but note that large files will take longer to upload (especially if your upload bandwidth is constrained). If you "pause" or turn off upload while a large file is being uploaded, the partial upload will be preserved. If upload is re-enabled within several hours of being "paused" or turned off, the upload will continue from where it left off. However, if upload is re-enabled after several hours, the large file's upload will restart from the beginning.
+
+**Known issues and caveats**
+
+- This setting has no built in throttling based on current bandwidth usage. If you need to maximize bandwidth for another scenario, turn off the setting manually. Upload will be paused but the feature will continue to monitor newly added files to Camera Roll. Re-enable upload when you're ready for it to continue.
+- This feature must be enabled for each user account on the device, and it can only actively upload files for the user who is currently signed-in to the device.
+- If you're taking photos or videos while watching the upload count on the Settings page in real-time, note that the pending file count may not change until the current file has completed uploading.
+- Upload will pause if your device falls asleep or is powered off. To ensure your pending uploads complete, actively use the device until the Settings page reads "OneDrive is up to date" or adjust your **Power & sleep** settings.
+### Added support for some telemetry policies
+
+The following telemetry policies are now supported on the HoloLens 2:
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+Both System\AllowTelemetry and System\ConfigureTelemetryOptInSettingsUx should be used together to have complete control on the Telemetry and behavior in the Settings app.
+
+Improvements and fixes in the update:
+- Fixes major video corruption with Color calibration.
+- Addresses an issue where text might be truncated in the Power menu.
+- Enables support for the RequirePrivateStoreOnly policy.
+
+## Windows Holographic, version 20H2 – June 2021 Update
+- Build 19041.1154
+
+### Added support for some telemetry policies
+
+The following telemetry policies are now supported on the HoloLens 2:
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+Both System\AllowTelemetry and System\ConfigureTelemetryOptInSettingsUx should be used together to have complete control on the Telemetry and behavior in the Settings app.
+
+We encourage you to try out our latest build, Windows Holographic, version 21H1.
+
+## Windows Holographic, version 1903 - June 2021 Update
+- Build 18362.1116
+
+Improvements and fixes in the update:
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H1.
+
+>[!IMPORTANT]
+> This build will no longer be serviced.
 
 ## Windows Holographic, version 21H1
 - Build 20346.1002
