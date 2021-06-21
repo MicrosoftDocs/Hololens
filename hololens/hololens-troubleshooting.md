@@ -25,7 +25,17 @@ This article describes how to resolve several common HoloLens issues.
 
 If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
-## My HoloLens is unresponsive or won't start
+- [HoloLens is unresponsive or won't start](#my-holoLens-is-unresponsive-or-won't-start)
+- [Voice commands are not working](#voice-commands-are-not-working)
+- [Hand input is not working](#hand-input-is-not-working)
+- ["Low Disk Space" error](#"low-disk-space"-error)
+- [Calibration Fails](#calibration-fails)
+- [Auto-login asks for log-in](#auto-login-asks-for-log-in)
+- [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
+- [Keyboard does not switch to special characters](#keyboard-does-not-switch-to-special-characters)
+- 
+
+## HoloLens is unresponsive or won't start
 
 If your HoloLens won't start:
 
@@ -38,11 +48,11 @@ If your HoloLens becomes frozen or unresponsive:
 
 If these steps don't work, you can try [recovering your HoloLens 2 device](hololens-recovery.md) or [HoloLens (1st gen) device.](hololens1-recovery.md)
 
-## HoloLens doesn't respond to my voice commands
+## Voice commands are not working
 
 If Cortana isn't responding to your voice commands, make sure Cortana is turned on. On the All apps list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
-## HoloLens doesn't respond to hand input
+## Hand input is not working
 
 To ensure that HoloLens can see your hands, you need to keep them in the gesture frame.  The Mixed Reality Home provides feedback that lets you know when your hands are tracked.  The feedback is different on different versions of HoloLens:
 - On HoloLens (1st gen), the gaze cursor changes from a dot to a ring
@@ -54,7 +64,7 @@ If you are wearing gloves, note that some types of gloves do not work with hand 
 
 If your visor has fingerprints or smudges, use the microfiber cleaning cloth that came with the HoloLens to clean your visor gently.
 
-## My HoloLens can't tell what space I'm in
+## Spaces cannot be identified or loaded
 
 If your HoloLens can't identify and load the space you're in automatically, check the following factors:
 
@@ -64,7 +74,7 @@ If your HoloLens can't identify and load the space you're in automatically, chec
 
 You can also load a space manually or manage your spaces by going to **Settings** > **System** > **Spaces**.
 
-## I'm getting a "low disk space" error
+## "Low Disk Space" error
 
 You'll need to free up some storage space by doing one or more of the following:
 
@@ -73,12 +83,12 @@ You'll need to free up some storage space by doing one or more of the following:
 - Delete some pictures and videos from the Photos app.
 - Uninstall some apps from your HoloLens. In the **All apps** list, tap and hold the app you want to uninstall, and then select **Uninstall**.
 
-## My HoloLens can't create a new space
+## New spaces cannot be created
 
 The most likely problem is that you're running low on storage space. Try one of the [previous tips](#im-getting-a-low-disk-space-error) to free up some disk space.
 
 
-## Troubleshooting HoloLens 2 calibration
+## Calibration fails
 
 Calibration should work for most people, but there are cases where calibration fails.
   
@@ -106,7 +116,7 @@ Also see related information for [image color or brightness troubleshooting.](ho
 
 Setting IPD is not applicable for HoloLens 2, since eye positions are computed by the system. 
 
-## Device using Auto-login asks for log-in
+## Auto-login asks for log-in
 
 A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device with a substantially large update, such as a feature update.
 
@@ -165,7 +175,7 @@ If Cortana is still not responding, do one of the following to verify that Corta
 
 To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
-## I'm having problems pairing or using a Bluetooth device
+## Bluetooth devices are not pairing
 
 If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
 
@@ -173,7 +183,7 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 - Make sure that your Bluetooth device is fully charged or has fresh batteries.
 - If you still can't connect, [restart the HoloLens](hololens-recovery.md).
 
-## HoloLens Settings lists devices as available, but the devices don't work
+## Devices that are listed as available in Settings don't work
 
 HoloLens (1st gen) doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
 
