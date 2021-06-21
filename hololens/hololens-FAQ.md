@@ -48,7 +48,7 @@ This article addresses the following questions and issues:
 
 ## New spaces cannot be created
 
-The most likely problem is that you're running low on storage space. [Free up some disk space](hololens-troubleshooting.md#"low-disk-space"-error) and then retry.
+The most likely problem is that you're running low on storage space. [Free up some disk space](hololens-troubleshooting.md#low-disk-space-error) and then retry.
 
 [Back to list](#list)
 
@@ -77,7 +77,7 @@ You can also load a space manually or manage your spaces by going to **Settings*
 
 [Back to list](#list)
 
-## My holograms don't look right or are moving around
+## Holograms don't look right or are moving around
 
 If your holograms don't look right (for example, they're jittery or shaky, or you see black patches on top of them), try one of these fixes:
 
