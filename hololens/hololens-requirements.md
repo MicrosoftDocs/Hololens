@@ -20,10 +20,9 @@ appliesto:
 
 This page provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise.
 
-Deploying a new device used to be a hassle as you need to get all the right knowledge upfront. To solve this challenge and speed up the deployment process, we outlined common scenarios.
+Figuring out how to deploy a new device can be a struggle when you try it the first time and do not have the right knowledge. To solve this challenge and speed up the deployment process, we outlined common scenarios. The scenarios help you better understand what is going on and choose which deployment method suits your needs the best.
 
-Often, how you manage your devices and access your organization's resources is largely determined by factors already in place. Based on your existing infrastructure, we invite you to review the common device management style (MDM) in the following scenarios.
-Check [Planning HoloLens 2 deployments in a commercial environment](hololens-core-components.md) to better understand what is going on and choose which deployment method suits your needs the best. There are also three corresponding guides available to help you get started.
+Based on your existing infrastructure, we invite you to review the common device management style (MDM) in the following scenarios. There are also three corresponding guides available to help you get started. 
 
  1. [Scenario A: Cloud connected devices](hololens2-cloud-connected-overview.md)
      1. [Scenario A: Cloud connected devices (External Clients)](hololens2-deployment-guide.md)
