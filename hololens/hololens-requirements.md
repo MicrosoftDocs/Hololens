@@ -20,12 +20,15 @@ appliesto:
 
 This page provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise.
 
-Often, how you manage your devices and access your organization's resources is largely determined by factors already in place. Based on your existing infrastructure, we invite you to review the common device management style (MDM) in the following scenarios and then read [Planning HoloLens 2 deployments in a commercial environment](hololens-core-components.md) to determine which scenario matches your needs. There are also three corresponding guides available for use during your deployment.
+Deploying a new device used to be a hassle as you need to get all the right knowledge upfront. To solve this challenge and speed up the deployment process, we outlined common scenarios.
 
- 1. [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md)
-     1. [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
- 1. [Corporate network deployment guide](hololens2-corp-connected-overview.md)
- 1. [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
+Often, how you manage your devices and access your organization's resources is largely determined by factors already in place. Based on your existing infrastructure, we invite you to review the common device management style (MDM) in the following scenarios.
+Check [Planning HoloLens 2 deployments in a commercial environment](hololens-core-components.md) to better understand what is going on and choose which deployment method suits your needs the best. There are also three corresponding guides available to help you get started.
+
+ 1. [Scenario A: Cloud connected devices](hololens2-cloud-connected-overview.md)
+     1. [Scenario A: Cloud connected devices (External Clients)](hololens2-deployment-guide.md)
+ 1. [Scenario B: Organization's network](hololens2-corp-connected-overview.md)
+ 1. [Scenario C: Offline secure environment](hololens-common-scenarios-offline-secure.md)
 
 ## Scenario A: Deploy to cloud connected devices
 
@@ -39,6 +42,7 @@ Consider this deployment model for:
 
 * External customer use cases
 * Deploying Proof of Concept, Pilots and Field Services
+* Deploying [Remote Assist](hololens2-options-remote-assist.md)
 
 ### Basic Common Configurations
 
