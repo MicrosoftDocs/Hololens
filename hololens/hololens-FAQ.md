@@ -30,6 +30,8 @@ For tips about how to wear your HoloLens, see [HoloLens (1st gen) fit and comfor
 
 This article addresses the following questions and issues:
 <a id="list"></a>
+- [New spaces cannot be created](#new-spaces-cannot-be-created)
+- [Spaces cannot be identified or loaded](#spaces-cannot-be-identified-or-loaded)
 - [Reporting issues where Holograms are unstable or don't look right](#reporting-issues-where-holograms-are-unstable-or-dont-look-right)
 - [My holograms don't look right or are moving around](#my-holograms-dont-look-right-or-are-moving-around)
 - [I see a message that says "Finding your space"](#i-see-a-message-that-says-finding-your-space)
@@ -39,13 +41,20 @@ This article addresses the following questions and issues:
 - [I can see holograms that are on the other side of a wall](#i-can-see-holograms-that-are-on-the-other-side-of-a-wall)
 - [When I place a hologram on a wall, the hologram seems to float](#when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float)
 - [Apps appear too close to me when I'm trying to move them](#apps-appear-too-close-to-me-when-im-trying-to-move-them)
-- [I can't connect to Wi-Fi](#i-cant-connect-to-wi-fi)
-- [My HoloLens isn't running well, is unresponsive, or won't start](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
-- [I can't sign in to a HoloLens device because it was previously set up for someone else](#i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else)
-- [Questions about managing HoloLens devices](#questions-about-managing-hololens-devices)
-- [Questions about securing HoloLens devices](#questions-about-securing-hololens-devices)
-- [How do I delete all spaces?](#how-do-i-delete-all-spaces)
-- [I cannot find or use the keyboard to type in the HoloLens 2 Emulator](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
+
+## New spaces cannot be created
+
+The most likely problem is that you're running low on storage space. Try one of the [previous tips](#im-getting-a-low-disk-space-error) to free up some disk space.
+
+## Spaces cannot be identified or loaded
+
+If your HoloLens can't identify and load the space you're in automatically, check the following factors:
+
+- Make sure that you're connected to Wi-Fi
+- Make sure that there's plenty of light in the room
+- Make sure that there haven't been any major changes to the surroundings.
+
+You can also load a space manually or manage your spaces by going to **Settings** > **System** > **Spaces**.
 
 ## Reporting issues where holograms are unstable or don't look right
  
@@ -146,87 +155,5 @@ A hologram that you place on a wall typically appears to be an inch or so away f
 ## Apps appear too close to me when I'm trying to move them
 
 Try walking around and looking at the area where you're placing the app so that HoloLens scans the area from different angles. [Cleaning your device visor](hololens1-hardware.md#care-and-cleaning) may also help.
-
-[Back to list](#list)
-
-
-
-[Back to list](#list)
-
-## I can't connect to Wi-Fi
-
-Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:
-
-- Make sure that Wi-Fi is turned on. To check, use the Start gesture, then select **Settings** > **Network &amp; Internet** > **Wi-Fi**. If Wi-Fi is on, try turning it off and then on again.
-- Move closer to the router or access point.
-- Restart your Wi-Fi router, then [restart HoloLens](hololens-recovery.md). Try connecting again.
-- If none of these things work, check to make sure that your router is using the latest firmware. You can find this information on the manufacturer website.
-
-[Back to list](#list)
-
-## My HoloLens isn't running well, is unresponsive, or won't start
-
-If your device isn't performing properly, see [Restart, reset, or recover HoloLens](hololens-recovery.md).
-
-[Back to list](#list)
-
-## I can't sign in to a HoloLens device because it was previously set up for someone else
-
-If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can do one of the following:
-
-- For a device that is enrolled in Intune mobile device management (MDM), you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
-   > [!IMPORTANT]  
-   > When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
-- For a non-MDM device, you can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) to recover the device.
-
-[Back to list](#list)
-
-## Questions about managing HoloLens devices
-
-### Can I use System Center Configuration Manager (SCCM) to manage HoloLens devices?
-
-No. You have to use an MDM system to manage HoloLens devices.
-
-### Can I use Active Directory Domain Services (AD DS) to manage HoloLens user accounts?
-
-No. You have to use Azure Active Directory (Azure AD) to manage user accounts for HoloLens devices.
-
-### Is HoloLens capable of Automated Data Capture Systems (ADCS) auto-enrollment?
-
-No.
-
-### Can HoloLens participate in Integrated Windows Authentication?
-
-No.
-
-### Does HoloLens support branding?
-
-No. However, you can work around this issue by using one of the following approaches:
-
-- Create a custom app, and then [enable Kiosk mode](hololens-kiosk.md). The custom app can have branding, and can launch other apps (such as Remote Assist).  
-- Change all of the user profile pictures in Azure AD to your company logo. However, this may not be desirable for all scenarios.
-
-### What logging capabilities do HoloLens (1st gen) and HoloLens 2 offer?
-
-Logging is limited to traces that can be captured in development or troubleshooting scenarios, or telemetry that the devices send to Microsoft servers.
-
-[Back to list](#list)
-
-## Questions about securing HoloLens devices
-
-See [our HoloLens 2 security information](security-overview.md).
-For HoloLens 1st Gen devices please review [this FAQ](hololens1-faq-security.md).
-
-[Back to list](#list)
-
-## How do I delete all spaces?
-
-*Coming soon*
-
-[Back to list](#list)
-
-## I cannot find or use the keyboard to type in the HoloLens 2 Emulator
-
-*Coming soon*
 
 [Back to list](#list)

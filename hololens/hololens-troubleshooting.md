@@ -25,7 +25,7 @@ This article describes how to resolve several common HoloLens issues.
 
 If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
-- [HoloLens is unresponsive or won't start](#my-holoLens-is-unresponsive-or-won't-start)
+- [HoloLens is unresponsive or won't start](#holoLens-is-unresponsive-or-won't-start)
 - [Voice commands are not working](#voice-commands-are-not-working)
 - [Hand input is not working](#hand-input-is-not-working)
 - ["Low Disk Space" error](#"low-disk-space"-error)
@@ -48,9 +48,13 @@ If your HoloLens becomes frozen or unresponsive:
 
 If these steps don't work, you can try [recovering your HoloLens 2 device](hololens-recovery.md) or [HoloLens (1st gen) device.](hololens1-recovery.md)
 
+[Back to list](#list)
+
 ## Voice commands are not working
 
 If Cortana isn't responding to your voice commands, make sure Cortana is turned on. On the All apps list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
+
+[Back to list](#list)
 
 ## Hand input is not working
 
@@ -64,15 +68,7 @@ If you are wearing gloves, note that some types of gloves do not work with hand 
 
 If your visor has fingerprints or smudges, use the microfiber cleaning cloth that came with the HoloLens to clean your visor gently.
 
-## Spaces cannot be identified or loaded
-
-If your HoloLens can't identify and load the space you're in automatically, check the following factors:
-
-- Make sure that you're connected to Wi-Fi
-- Make sure that there's plenty of light in the room
-- Make sure that there haven't been any major changes to the surroundings.
-
-You can also load a space manually or manage your spaces by going to **Settings** > **System** > **Spaces**.
+[Back to list](#list)
 
 ## "Low Disk Space" error
 
@@ -83,10 +79,7 @@ You'll need to free up some storage space by doing one or more of the following:
 - Delete some pictures and videos from the Photos app.
 - Uninstall some apps from your HoloLens. In the **All apps** list, tap and hold the app you want to uninstall, and then select **Uninstall**.
 
-## New spaces cannot be created
-
-The most likely problem is that you're running low on storage space. Try one of the [previous tips](#im-getting-a-low-disk-space-error) to free up some disk space.
-
+[Back to list](#list)
 
 ## Calibration fails
 
@@ -116,6 +109,8 @@ Also see related information for [image color or brightness troubleshooting.](ho
 
 Setting IPD is not applicable for HoloLens 2, since eye positions are computed by the system. 
 
+[Back to list](#list)
+
 ## Auto-login asks for log-in
 
 A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device with a substantially large update, such as a feature update.
@@ -135,6 +130,8 @@ Work around methods:
 - Sign-in methods such as PIN, Password, Iris, Web Authentication, or FIDO2 keys.
 - If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-procedure).
 
+[Back to list](#list)
+
 ## Microsoft Edge fails to launch
 
 > [!NOTE]
@@ -143,6 +140,8 @@ Work around methods:
 A few customers have reported an issue where Microsoft Edge fails to launch. For these customers, the issue persists through reboot and is not resolved with Windows or application updates. If you're experiencing this issue and you've confirmed [Windows is up-to-date](hololens-updates.md#manually-check-for-updates), please file a bug from the [Feedback Hub app](hololens-feedback.md) with the following category and sub-category: Install and Update > Downloading, installing, and configuring Windows Update.
 
 There are no known workarounds as we've been unable to root cause the issue so far. Filing a bug via Feedback Hub will help our investigation!
+
+[Back to list](#list)
 
 ## Keyboard does not switch to special characters
 
@@ -157,6 +156,8 @@ Work-arounds:
 
 This does not affect:
 - Users who choose to use a personal account.
+
+[Back to list](#list)
 
 ## Built-in voice commands do not work
 
@@ -175,6 +176,8 @@ If Cortana is still not responding, do one of the following to verify that Corta
 
 To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
+[Back to list](#list)
+
 ## Bluetooth devices are not pairing
 
 If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
@@ -182,6 +185,8 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 - Go to **Settings** > **Devices**, and make sure that Bluetooth is turned on. If it is, turn it off and on again.
 - Make sure that your Bluetooth device is fully charged or has fresh batteries.
 - If you still can't connect, [restart the HoloLens](hololens-recovery.md).
+
+[Back to list](#list)
 
 ## Devices that are listed as available in Settings don't work
 
@@ -196,6 +201,8 @@ If you're having trouble using a Bluetooth device, make sure that it's a support
 - The [HoloLens clicker](hololens1-clicker.md).
 
 You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
+
+[Back to list](#list)
 
 ## Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with an Insider build
 
@@ -218,6 +225,36 @@ Work-around:
     1. Connect to the PC and open Advanced Recovery Companion.
     
     1. Flash the HoloLens 2 to the default build.
+
+[Back to list](#list)
+
+## I can't connect to Wi-Fi
+
+Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:
+
+- Make sure that Wi-Fi is turned on. To check, use the Start gesture, then select **Settings** > **Network &amp; Internet** > **Wi-Fi**. If Wi-Fi is on, try turning it off and then on again.
+- Move closer to the router or access point.
+- Restart your Wi-Fi router, then [restart HoloLens](hololens-recovery.md). Try connecting again.
+- If none of these things work, check to make sure that your router is using the latest firmware. You can find this information on the manufacturer website.
+
+[Back to list](#list)
+
+## My HoloLens isn't running well, is unresponsive, or won't start
+
+If your device isn't performing properly, see [Restart, reset, or recover HoloLens](hololens-recovery.md).
+
+[Back to list](#list)
+
+## I can't sign in to a HoloLens device because it was previously set up for someone else
+
+If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can do one of the following:
+
+- For a device that is enrolled in Intune mobile device management (MDM), you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
+   > [!IMPORTANT]  
+   > When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
+- For a non-MDM device, you can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) to recover the device.
+
+[Back to list](#list)
 
 ## Emulator
 ### The HoloLens emulator isn't working

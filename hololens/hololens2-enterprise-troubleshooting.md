@@ -59,3 +59,51 @@ When an impacted device attempts to contact the Azure AD tenant again after it h
 
 #### Mitigation
 There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device).
+
+## Questions about managing HoloLens devices
+
+### Can I use System Center Configuration Manager (SCCM) to manage HoloLens devices?
+
+No. You have to use an MDM system to manage HoloLens devices.
+
+### Can I use Active Directory Domain Services (AD DS) to manage HoloLens user accounts?
+
+No. You have to use Azure Active Directory (Azure AD) to manage user accounts for HoloLens devices.
+
+### Is HoloLens capable of Automated Data Capture Systems (ADCS) auto-enrollment?
+
+No.
+
+### Can HoloLens participate in Integrated Windows Authentication?
+
+No.
+
+### Does HoloLens support branding?
+
+No. However, you can work around this issue by using one of the following approaches:
+
+- Create a custom app, and then [enable Kiosk mode](hololens-kiosk.md). The custom app can have branding, and can launch other apps (such as Remote Assist).  
+- Change all of the user profile pictures in Azure AD to your company logo. However, this may not be desirable for all scenarios.
+
+### What logging capabilities do HoloLens (1st gen) and HoloLens 2 offer?
+
+Logging is limited to traces that can be captured in development or troubleshooting scenarios, or telemetry that the devices send to Microsoft servers.
+
+[Back to list](#list)
+
+## Questions about securing HoloLens devices
+
+See [our HoloLens 2 security information](security-overview.md).
+For HoloLens 1st Gen devices please review [this FAQ](hololens1-faq-security.md).
+
+[Back to list](#list)
+
+## How do I delete all spaces?
+
+*Coming soon*
+
+[Back to list](#list)
+
+## I cannot find or use the keyboard to type in the HoloLens 2 Emulator
+
+*Coming soon*
