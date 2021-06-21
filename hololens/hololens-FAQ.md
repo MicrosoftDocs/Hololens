@@ -20,7 +20,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Frequently asked questions about HoloLens devices and holograms
+# Hologram Troubleshooting
 
 This article answers some questions that you may have about how to use HoloLens, including how to place holograms, work with spaces, and more.
 

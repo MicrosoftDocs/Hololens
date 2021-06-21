@@ -22,9 +22,9 @@ This article describes how to resolve several common HoloLens issues.
 >[!IMPORTANT]
 > Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](hololens2-setup.md#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device.
 
-
 If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
+<a id="list"></a>
 - [HoloLens is unresponsive or won't start](#holoLens-is-unresponsive-or-won't-start)
 - [Voice commands are not working](#voice-commands-are-not-working)
 - [Hand input is not working](#hand-input-is-not-working)
@@ -33,7 +33,12 @@ If the device can't boot to the startup menu, note the LED appearance and device
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard does not switch to special characters](#keyboard-does-not-switch-to-special-characters)
-- 
+- [Bluetooth devices are not pairing](#bluetooth-devices-are-not-pairing)
+- [Devices that are listed as available in Settings don't work](#devices-that-are-listed-as-available-in-settings-don't-work)
+- [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+- [Can't connect to Wi-Fi](#can't-connect-to-wi-Fi)
+- [Can't sign in because my HoloLens was previously set up for someone else](#can't-sign-in-because-my-HoloLens-was-previously-set-up-for-someone-else)
+- [The HoloLens emulator isn't working](#the-holoLens-emulator-isn't-working)
 
 ## HoloLens is unresponsive or won't start
 
@@ -53,6 +58,10 @@ If these steps don't work, you can try [recovering your HoloLens 2 device](holol
 ## Voice commands are not working
 
 If Cortana isn't responding to your voice commands, make sure Cortana is turned on. On the All apps list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
+
+On HoloLens (1st gen), built-in speech recognition is not configurable. It is always turned on. On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.
+
+If your HoloLens 2 is not responding to your voice, make sure Speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.
 
 [Back to list](#list)
 
@@ -159,25 +168,6 @@ This does not affect:
 
 [Back to list](#list)
 
-## Built-in voice commands do not work
-
-On HoloLens (1st gen), built-in speech recognition is not configurable. It is always turned on. On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.
-
-If your HoloLens 2 is not responding to your voice, make sure Speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.
-
-## Cortana or Dictation doesn't work
-
-If Cortana or Dictation isn't responding to your voice, make sure online speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and verify the **Online speech recognition** settings. 
-
-If Cortana is still not responding, do one of the following to verify that Cortana itself is turned on:
-
-- In **All apps**, select **Cortana** > select **Menu** > **Notebook** > **Settings** to make changes.
-- On HoloLens 2, select the **Speech settings** button or say "Speech settings."
-
-To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
-
-[Back to list](#list)
-
 ## Bluetooth devices are not pairing
 
 If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
@@ -204,7 +194,7 @@ You can pair other Bluetooth HID and GATT devices together with your HoloLens. H
 
 [Back to list](#list)
 
-## Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with an Insider build
+## Blue screen after unenrolling from Insider preview on a device flashed with an Insider build
 
 This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program.
 
@@ -228,7 +218,7 @@ Work-around:
 
 [Back to list](#list)
 
-## I can't connect to Wi-Fi
+## Can't connect to Wi-Fi
 
 Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:
 
@@ -239,20 +229,9 @@ Here are some things to try if you can't connect your HoloLens to a Wi-Fi networ
 
 [Back to list](#list)
 
-## My HoloLens isn't running well, is unresponsive, or won't start
+## Can't sign in because my HoloLens was previously set up for someone else
 
-If your device isn't performing properly, see [Restart, reset, or recover HoloLens](hololens-recovery.md).
-
-[Back to list](#list)
-
-## I can't sign in to a HoloLens device because it was previously set up for someone else
-
-If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can do one of the following:
-
-- For a device that is enrolled in Intune mobile device management (MDM), you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
-   > [!IMPORTANT]  
-   > When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
-- For a non-MDM device, you can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) to recover the device.
+You can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) to recover the device.
 
 [Back to list](#list)
 
@@ -260,8 +239,3 @@ If your device was previously set up for someone else, either for a client or fo
 ### The HoloLens emulator isn't working
 
 Information about the HoloLens emulator is located in our developer documentation.  Read more about [troubleshooting the HoloLens emulator](/windows/mixed-reality/using-the-hololens-emulator#troubleshooting).
-
-### Known issues for HoloLens emulator
-- Not all apps in the Microsoft Store are compatible with the emulator. For example, Young Conker and Fragments are not playable on the emulator.
-- You cannot use the PC webcam in the Emulator.
-- The Live Preview feature of the Windows Device Portal does not work with the emulator. You can still capture Mixed Reality videos and images.

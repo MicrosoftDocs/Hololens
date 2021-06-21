@@ -101,9 +101,9 @@
 ## [Manage HoloLens updates](hololens-updates.md)
 
 # Troubleshooting
-## [Device troubleshooting](hololens-troubleshooting.md)
-## [Hologram and interactions troubleshooting](hololens-faq.md)
-## [Display troubleshooting](hololens2-display.md)
+## [Device](hololens-troubleshooting.md)
+## [Hologram and interactions](hololens-faq.md)
+## [Display](hololens2-display.md)
 ## [Networking and Wi-Fi](hololens2-enterprise-troubleshooting.md#networking-and-wi-fi)
 ## [Enterprise Device Management](hololens2-enterprise-troubleshooting.md#enterprise-device-management)
 ## [Enable diagnostic logs](hololens-diagnostic-logs.md)
