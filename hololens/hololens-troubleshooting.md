@@ -22,7 +22,7 @@ This article describes how to resolve several common HoloLens issues.
 >[!IMPORTANT]
 > Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](hololens2-setup.md#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device.
 
-If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
+If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. 
 
 <a id="list"></a>
 - [HoloLens is unresponsive or won't start](#holoLens-is-unresponsive-or-won't-start)

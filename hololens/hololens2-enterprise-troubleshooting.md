@@ -42,6 +42,12 @@ When you sign into an enterprise or organizational account on the device, it may
 
 ## Enterprise Device Management
 
+## I can't sign in to a HoloLens device because it was previously set up for someone else
+
+If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
+   > [!IMPORTANT]  
+   > When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
+
 ### Certain devices joined in Azure AD may be unable to logon users after updating to 21H1
 
 #### Symptoms

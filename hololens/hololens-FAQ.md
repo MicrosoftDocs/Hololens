@@ -24,16 +24,20 @@ appliesto:
 
 This article answers some questions that you may have about how to use HoloLens, including how to place holograms, work with spaces, and more.
 
-Anytime that you have problems, make sure that HoloLens is [charged up](https://support.microsoft.com/help/12627/hololens-charge-your-hololens). Try [restarting it](hololens-restart-recover.md) to see whether that fixes things. And please use the Feedback app to send us information about the issue. You'll find the Feedback app on the [**Start** menu](holographic-home.md).
+Anytime that you have problems, make sure:
+- The HoloLens is [charged up](https://support.microsoft.com/help/12627/hololens-charge-your-hololens) (charged for at least an hour). 
+- Try [restarting it](hololens-restart-recover.md) to see whether that fixes things.
 
-For tips about how to wear your HoloLens, see [HoloLens (1st gen) fit and comfort frequently asked questions](hololens1-fit-comfort-faq.md).
+Please use the Feedback app to send us information about the issue. You'll find the Feedback app on the [**Start** menu](holographic-home.md). 
+
+For tips about how to wear your HoloLens, see [Adjust Fit](hololens2-setup.md#adjust-fit).
 
 This article addresses the following questions and issues:
 <a id="list"></a>
 - [New spaces cannot be created](#new-spaces-cannot-be-created)
 - [Spaces cannot be identified or loaded](#spaces-cannot-be-identified-or-loaded)
 - [Reporting issues where Holograms are unstable or don't look right](#reporting-issues-where-holograms-are-unstable-or-dont-look-right)
-- [My holograms don't look right or are moving around](#my-holograms-dont-look-right-or-are-moving-around)
+- [Holograms don't look right or are moving around](#holograms-dont-look-right-or-are-moving-around)
 - [I see a message that says "Finding your space"](#i-see-a-message-that-says-finding-your-space)
 - [I'm not seeing the holograms that I expect to see in my space](#im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space)
 - [I can't place holograms or see holograms that I previously placed](#i-cant-place-holograms-or-see-holograms-that-i-previously-placed)
@@ -44,7 +48,9 @@ This article addresses the following questions and issues:
 
 ## New spaces cannot be created
 
-The most likely problem is that you're running low on storage space. Try one of the [previous tips](#im-getting-a-low-disk-space-error) to free up some disk space.
+The most likely problem is that you're running low on storage space. [Free up some disk space](hololens-troubleshooting.md#"low-disk-space"-error) and then retry.
+
+[Back to list](#list)
 
 ## Spaces cannot be identified or loaded
 
@@ -56,6 +62,8 @@ If your HoloLens can't identify and load the space you're in automatically, chec
 
 You can also load a space manually or manage your spaces by going to **Settings** > **System** > **Spaces**.
 
+[Back to list](#list)
+
 ## Reporting issues where holograms are unstable or don't look right
  
 1. Please record and a [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. This video can be later uploaded through Feedback Hub as an attached file.  
@@ -66,6 +74,8 @@ You can also load a space manually or manage your spaces by going to **Settings*
     1. Perform IPD calibration. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
     1. Re-test the scenario and see if it still persists.
 1. If updating does not fix the issue, please file a [Feedback Hub issue](hololens-feedback.md). After you've filled feedback you can use the **Share** button, to create an easy to share link that can be sent when contacting support.
+
+[Back to list](#list)
 
 ## My holograms don't look right or are moving around
 
