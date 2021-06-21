@@ -131,7 +131,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Sound > App volume and device preference <sup>2</sup>           | `ms-settings:apps-volume`<br>|
 | Sound > Manage sound devices <sup>2</sup>           | `ms-settings:sound-devices`<br>|
 | Storage            | `ms-settings:storagesense`           |
-| Storage > Configue Storage Sense <sup>2</sup>           | `ms-settings:storagepolicies`<br>|
+| Storage > Configure Storage Sense <sup>2</sup>           | `ms-settings:storagepolicies`<br>|
 
 ### Time & Language
 | Settings page | URI                                           |
