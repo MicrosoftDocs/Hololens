@@ -153,11 +153,11 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Windows Update - Checks for updates | `ms-settings:windowsupdate-action`          |
 
 
->  <sup>1</sup> For versions prior to Windows Holographic, version 21H1, the following two URIs do not actually take you to the **Advanced options** or **Options** pages; they will only block or show the main Windows Update page.
-> - ms-settings:windowsupdate-options
-> - ms-settings:windowsupdate-restartoptions
- 
-> <sup>2</sup> - Available in Windows Holographic 21H1 or higher.
+- <sup>1</sup> - For versions prior to Windows Holographic, version 21H1, the following two URIs do not actually take you to the **Advanced options** or **Options** pages; they will only block or show the main Windows Update page.
+  -  ms-settings:windowsupdate-options
+  -  ms-settings:windowsupdate-restartoptions
+
+- <sup>2</sup> - Available in Windows Holographic 21H1 or higher.
 
 
 For a full list of Windows 10 Settings URIs, please visit the [launch settings](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) documentation.
