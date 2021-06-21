@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting
+title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
 author: mattzmsft
 ms.author: mazeller
@@ -12,10 +12,10 @@ manager: jarrettr
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
-keywords: issues, bug, troubleshoot, fix, help, support, HoloLens
+keywords: issues, bug, troubleshoot, fix, help, support, HoloLens, emulator
 ---
 
-# Troubleshoot common issues
+# Device Troubleshooting
 
 This article describes how to resolve several common HoloLens issues.
 
@@ -25,9 +25,7 @@ This article describes how to resolve several common HoloLens issues.
 
 If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
-## Device
-
-### My HoloLens is unresponsive or won't start
+## My HoloLens is unresponsive or won't start
 
 If your HoloLens won't start:
 
@@ -40,11 +38,11 @@ If your HoloLens becomes frozen or unresponsive:
 
 If these steps don't work, you can try [recovering your HoloLens 2 device](hololens-recovery.md) or [HoloLens (1st gen) device.](hololens1-recovery.md)
 
-### HoloLens doesn't respond to my voice commands
+## HoloLens doesn't respond to my voice commands
 
 If Cortana isn't responding to your voice commands, make sure Cortana is turned on. On the All apps list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
-### HoloLens doesn't respond to hand input
+## HoloLens doesn't respond to hand input
 
 To ensure that HoloLens can see your hands, you need to keep them in the gesture frame.  The Mixed Reality Home provides feedback that lets you know when your hands are tracked.  The feedback is different on different versions of HoloLens:
 - On HoloLens (1st gen), the gaze cursor changes from a dot to a ring
@@ -56,7 +54,7 @@ If you are wearing gloves, note that some types of gloves do not work with hand 
 
 If your visor has fingerprints or smudges, use the microfiber cleaning cloth that came with the HoloLens to clean your visor gently.
 
-### My HoloLens can't tell what space I'm in
+## My HoloLens can't tell what space I'm in
 
 If your HoloLens can't identify and load the space you're in automatically, check the following factors:
 
@@ -66,7 +64,7 @@ If your HoloLens can't identify and load the space you're in automatically, chec
 
 You can also load a space manually or manage your spaces by going to **Settings** > **System** > **Spaces**.
 
-### I'm getting a "low disk space" error
+## I'm getting a "low disk space" error
 
 You'll need to free up some storage space by doing one or more of the following:
 
@@ -75,12 +73,12 @@ You'll need to free up some storage space by doing one or more of the following:
 - Delete some pictures and videos from the Photos app.
 - Uninstall some apps from your HoloLens. In the **All apps** list, tap and hold the app you want to uninstall, and then select **Uninstall**.
 
-### My HoloLens can't create a new space
+## My HoloLens can't create a new space
 
 The most likely problem is that you're running low on storage space. Try one of the [previous tips](#im-getting-a-low-disk-space-error) to free up some disk space.
 
 
-### Troubleshooting HoloLens 2 calibration
+## Troubleshooting HoloLens 2 calibration
 
 Calibration should work for most people, but there are cases where calibration fails.
   
@@ -108,7 +106,7 @@ Also see related information for [image color or brightness troubleshooting.](ho
 
 Setting IPD is not applicable for HoloLens 2, since eye positions are computed by the system. 
 
-### Device using Auto-login asks for log-in
+## Device using Auto-login asks for log-in
 
 A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device with a substantially large update, such as a feature update.
 
@@ -127,7 +125,7 @@ Work around methods:
 - Sign-in methods such as PIN, Password, Iris, Web Authentication, or FIDO2 keys.
 - If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-procedure).
 
-### Microsoft Edge fails to launch
+## Microsoft Edge fails to launch
 
 > [!NOTE]
 > This issue was originally created with the shipping version of Microsoft Edge in-mind. This issue may be resolved in the [new Microsoft Edge](hololens-new-edge.md). If it is not, please file feedback.
@@ -136,7 +134,7 @@ A few customers have reported an issue where Microsoft Edge fails to launch. For
 
 There are no known workarounds as we've been unable to root cause the issue so far. Filing a bug via Feedback Hub will help our investigation!
 
-### Keyboard does not switch to special characters
+## Keyboard does not switch to special characters
 
 There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters.
 
@@ -150,13 +148,13 @@ Work-arounds:
 This does not affect:
 - Users who choose to use a personal account.
 
-### Built-in voice commands do not work
+## Built-in voice commands do not work
 
 On HoloLens (1st gen), built-in speech recognition is not configurable. It is always turned on. On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.
 
 If your HoloLens 2 is not responding to your voice, make sure Speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.
 
-### Cortana or Dictation doesn't work
+## Cortana or Dictation doesn't work
 
 If Cortana or Dictation isn't responding to your voice, make sure online speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and verify the **Online speech recognition** settings. 
 
@@ -167,7 +165,7 @@ If Cortana is still not responding, do one of the following to verify that Corta
 
 To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
-### I'm having problems pairing or using a Bluetooth device
+## I'm having problems pairing or using a Bluetooth device
 
 If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
 
@@ -175,7 +173,7 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 - Make sure that your Bluetooth device is fully charged or has fresh batteries.
 - If you still can't connect, [restart the HoloLens](hololens-recovery.md).
 
-### HoloLens Settings lists devices as available, but the devices don't work
+## HoloLens Settings lists devices as available, but the devices don't work
 
 HoloLens (1st gen) doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
 
@@ -189,7 +187,7 @@ If you're having trouble using a Bluetooth device, make sure that it's a support
 
 You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
 
-### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with an Insider build
+## Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with an Insider build
 
 This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program.
 
