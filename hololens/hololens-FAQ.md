@@ -35,6 +35,7 @@ For tips about how to wear your HoloLens, see [Adjust Fit](hololens2-setup.md#ad
 <a id="list"></a>
 - [New spaces can't be created](#new-spaces-cant-be-created)
 - [Spaces can't be identified or loaded](#spaces-cant-be-identified-or-loaded)
+- [How do I delete all spaces?](how-do-i-delete-all-spaces)
 - [Holograms don't look right or are moving around](#holograms-dont-look-right-or-are-moving-around)
 - ["Finding your space" message](#finding-your-space-message)
 - [Expected holograms aren't showing in my space](#expected-holograms-arent-showing-in-my-space)
@@ -60,6 +61,12 @@ If your HoloLens can't identify and load the space you're in automatically, chec
 - Make sure that there haven't been any major changes to the surroundings.
 
 You can also load a space manually or manage your spaces by going to **Settings** > **System** > **Spaces**.
+
+[Back to list](#list)
+
+## How do I delete all spaces?
+
+*Coming soon*
 
 [Back to list](#list)
 

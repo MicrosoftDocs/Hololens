@@ -76,18 +76,20 @@ landingContent:
             url: hololens-common-scenarios-offline-secure.md
   
   # Card
-  - title: Troubleshoot and Maintain
+  - title: Troubleshooting
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: General Troubleshooting
+          - text: Device
             url: hololens-troubleshooting.md
-          - text: Known issues
-            url: hololens-known-issues.md
+          - text: Holograms and interactions
+            url: hololens-faq.md
+          - text: Display
+            url: hololens2-display.md
+          - text: Implementation and managed devices
+            url: hololens-enterprise-troubleshooting.md    
           - text: Collect and use diagnostic information from HoloLens devices
             url: hololens-diagnostic-logs.md
-          - text: Manage updates
-            url: hololens-updates.md
           - text: Restart, reset, or recover HoloLens 2
             url: hololens-recovery.md
           

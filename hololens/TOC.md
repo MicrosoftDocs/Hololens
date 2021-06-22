@@ -102,7 +102,7 @@
 
 # Troubleshooting
 ## [Device](hololens-troubleshooting.md)
-## [Hologram and interactions](hololens-faq.md)
+## [Holograms and interactions](hololens-faq.md)
 ## [Display](hololens2-display.md)
 ## [Implementation and managed devices](hololens2-enterprise-troubleshooting.md#)
 ## [Enable diagnostic logs](hololens-diagnostic-logs.md)

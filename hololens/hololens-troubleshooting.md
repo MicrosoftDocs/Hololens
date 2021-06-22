@@ -338,3 +338,9 @@ Information about the HoloLens emulator is located in our developer documentatio
 - The Live Preview feature of the Windows Device Portal does not work with the emulator. You can still capture Mixed Reality videos and images.
 
 [Back to list](#list)
+
+## I cannot find or use the keyboard to type in the HoloLens 2 Emulator
+
+*Coming soon*
+
+[Back to list](#list)

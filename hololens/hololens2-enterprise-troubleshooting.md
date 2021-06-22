@@ -13,8 +13,13 @@ ms.reviewer:
 appliesto:
 - HoloLens 2
 ---
-
 # Troubleshooting implementation and managed devices 
+
+This article describes how to resolve several issues or answer questions regarding implementation and management of a HoloLens 2.
+
+>[!IMPORTANT]
+> Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](hololens2-setup.md#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device.
+
 
 <a id="list"></a>
 - [EAP Troubleshooting](#eap-troubleshooting)
@@ -76,14 +81,13 @@ When an impacted device attempts to contact the Azure AD tenant again after it h
 ### Mitigation
 There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](hololens-recovery.md#clean-reflash-the-device).
 
-### Autopilot Troubleshooting
+## Autopilot Troubleshooting
 
 The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues, however please be aware that these articles are based on Windows 10 Desktop and not all information may apply to HoloLens:
 
 - [Windows Autopilot - known issues](https://docs.microsoft.com/mem/autopilot/known-issues)
 - [Troubleshoot Windows device enrollment problems in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot - Policy Conflicts](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
-
 
 ## Questions about managing HoloLens devices
 
@@ -118,17 +122,5 @@ Logging is limited to traces that can be captured in development or troubleshoot
 
 See [our HoloLens 2 security information](security-overview.md).
 For HoloLens 1st Gen devices please review [this FAQ](hololens1-faq-security.md).
-
-[Back to list](#list)
-
-## How do I delete all spaces?
-
-*Coming soon*
-
-[Back to list](#list)
-
-## I cannot find or use the keyboard to type in the HoloLens 2 Emulator
-
-*Coming soon*
 
 [Back to list](#list)
