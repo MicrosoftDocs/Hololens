@@ -19,8 +19,8 @@ appliesto:
 
 <a id="list"></a>
 - [EAP Troubleshooting](#eap-troubleshooting)
-- [Wi-Fi Troubleshooting](#-wi-fi-troubleshooting)
-- [Can't sign in to a previously setup HoloLens device](#can't-sign-in-to-a-previously-setup-HoloLens-device)
+- [Wi-Fi Troubleshooting](#wi-fi-troubleshooting)
+- [Can't sign in to a previously setup HoloLens device](#cant-sign-in-to-a-previously-setup-HoloLens-device)
 - [Can't login after updating to 21H1](#cant-login-after-updating-to-21H1)
 
 ## Networking and Wi-Fi

@@ -25,7 +25,7 @@ This article describes how to resolve several common HoloLens issues.
 If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. 
 
 <a id="list"></a>
-- [HoloLens is unresponsive or won't start](#holoLens-is-unresponsive-or-wont-start)
+- [HoloLens is unresponsive or won't start](#hololens-is-unresponsive-or-wont-start)
 - [Voice commands are not working](#voice-commands-are-not-working)
 - [Hand input is not working](#hand-input-is-not-working)
 - ["Low Disk Space" error](#low-disk-space-error)
@@ -36,9 +36,9 @@ If the device can't boot to the startup menu, note the LED appearance and device
 - [Bluetooth devices are not pairing](#bluetooth-devices-are-not-pairing)
 - [Devices that are listed as available in Settings don't work](#devices-that-are-listed-as-available-in-settings-dont-work)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
-- [Can't connect to Wi-Fi](#cant-connect-to-wi-Fi)
-- [Can't sign in because my HoloLens was previously set up for someone else](#cant-sign-in-because-my-HoloLens-was-previously-set-up-for-someone-else)
-- [The HoloLens emulator isn't working](#the-holoLens-emulator-isnt-working)
+- [Can't connect to Wi-Fi](#cant-connect-to-wi-fi)
+- [Can't sign in because my HoloLens was previously set up for someone else](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
+- [The HoloLens emulator isn't working](#the-hololens-emulator-isnt-working)
 
 ## HoloLens is unresponsive or won't start
 
@@ -210,7 +210,7 @@ Work-around:
     - Stay on Insider Preview
 - Reflash the device
 
-    1. Put the [HoloLens 2 into flashing mode](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) manually by fully powering down while not connect. Then while holding Volume up, tap the Power button.
+    1. Put the [HoloLens 2 into flashing mode](hololens-recovery.md) manually by fully powering down while not connect. Then while holding Volume up, tap the Power button.
     
     1. Connect to the PC and open Advanced Recovery Companion.
     
