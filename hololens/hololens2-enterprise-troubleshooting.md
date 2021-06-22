@@ -20,8 +20,8 @@ appliesto:
 <a id="list"></a>
 - [EAP Troubleshooting](#eap-troubleshooting)
 - [Wi-Fi Troubleshooting](#wi-fi-troubleshooting)
-- [Can't sign in to a previously setup HoloLens device](#cant-sign-in-to-a-previously-setup-HoloLens-device)
-- [Can't login after updating to 21H1](#cant-login-after-updating-to-21H1)
+- [Can't sign in to a previously setup HoloLens device](#cant-sign-in-to-a-previously-setup-hololens-device)
+- [Can't login after updating to 21H1](#cant-login-after-updating-to-21h1)
 
 ## Networking and Wi-Fi
 ### EAP Troubleshooting
