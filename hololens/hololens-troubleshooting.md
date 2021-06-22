@@ -22,8 +22,6 @@ This article describes how to resolve several common HoloLens issues.
 >[!IMPORTANT]
 > Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](hololens2-setup.md#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device.
 
-If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. 
-
 <a id="list"></a>
 - [HoloLens is unresponsive or won't start](#hololens-is-unresponsive-or-wont-start)
 - [Voice commands aren't working](#voice-commands-arent-working)
@@ -36,22 +34,22 @@ If the device can't boot to the startup menu, note the LED appearance and device
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
 - [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
 - [Downloading locked files doesn't error](#downloading-locked-files-doesnt-error)
-- [Device Portal file upload/download times out](#device-portal-file-upload/download-times-out)
+- [Device Portal file upload/download times out](#device-portal-file-uploaddownload-times-out)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [Can't connect to Wi-Fi](#cant-connect-to-wi-fi)
 - [Can't sign in because my HoloLens was previously set up for someone else](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
-- [OneDrive doesn't automatically upload pictures](#onedrive-doesn't-automatically-upload-pictures)
-- [Unity isn't working](#unity-isn't-working)
-- [Device Portal isn't working correctly](#device-portal-isn't-working-correctly)
-- [The HoloLens emulator isn't working](#the-hololens-emulator-isnt-working)
+- [OneDrive doesn't automatically upload pictures](#onedrive-doesnt-automatically-upload-pictures)
+- [Unity isn't working](#unity-isnt-working)
+- [Device Portal isn't working correctly](#device-portal-isnt-working-correctly)
+- [The HoloLens Emulator isn't working](#the-hololens-emulator-isnt-working)
 
 ## HoloLens is unresponsive or won't start
 
 If your HoloLens won't start:
 
 - If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens2-charging.md#charging-the-device)
-- If the LEDs light up when you press the power button but you can't see anything on the displays, [preform a hard reset of the device](hololens-recovery.md#hard-reset-procedure).
+- If the LEDs light up when you press the power button but you can't see anything on the displays, [do a hard reset of the device](hololens-recovery.md#hard-reset-procedure).
 
 If your HoloLens becomes frozen or unresponsive:
 
