@@ -33,6 +33,7 @@ This article describes how to resolve several common HoloLens issues.
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
 - [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
+- [USB-C Microphone isn't working](usb-c-microphone-isnt-working)
 - [Downloading locked files doesn't error](#downloading-locked-files-doesnt-error)
 - [Device Portal file upload/download times out](#device-portal-file-uploaddownload-times-out)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
@@ -232,6 +233,13 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 - If you still can't connect, [restart the HoloLens](hololens-recovery.md).
 
 [Back to list](#list)
+
+## USB-C Microphone isn't working
+Be aware that some USB-C microphones incorrectly report themselves as both a microphone *and* a speaker. This is a problem with the microphone and not with HoloLens. When plugging one of these microphones into HoloLens, sound may be lost. Fortunately there is a simple fix.  
+
+In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
+
+![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
 
 ## Devices listed as available in Settings don't work
 
