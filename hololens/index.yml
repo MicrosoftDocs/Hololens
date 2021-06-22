@@ -87,7 +87,7 @@ landingContent:
           - text: Display
             url: hololens2-display.md
           - text: Implementation and managed devices
-            url: hololens-enterprise-troubleshooting.md    
+            url: hololens2-enterprise-troubleshooting.md    
           - text: Collect and use diagnostic information from HoloLens devices
             url: hololens-diagnostic-logs.md
           - text: Restart, reset, or recover HoloLens 2
