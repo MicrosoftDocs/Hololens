@@ -3,13 +3,13 @@
 # Device Overview
 ## [About HoloLens 2](hololens2-hardware.md)
 ## Discover HoloLens 2 Editions
-### [Compare HoloLens 2 Options](hololens2-options.md)
+### [Compare HoloLens 2 options](hololens2-options.md)
 ### [Device-only edition](hololens2-options-device-only.md)
 ### [Remote Assist edition](hololens2-options-remote-assist.md)
 ### [Industrial edition](hololens2-options-industrial-edition.md)
-#### [HoloLens 2 Industrial Edition FAQs](hololens2-industrial-edition-faq.md)
+#### [HoloLens 2 Industrial edition FAQs](hololens2-industrial-edition-faq.md)
 ### [Development edition](hololens2-options-dev-edition.md)
-#### [HoloLens 2 Development Edition FAQs](hololens2-development-edition-faq.md)
+#### [HoloLens 2 Development edition FAQs](hololens2-development-edition-faq.md)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 ### [Commercial features](hololens-commercial-features.md)
 
@@ -41,8 +41,8 @@
 ### [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 
 # Deploying HoloLens 2
-## [Common Deployment Scenarios](hololens-requirements.md)
-## [Planning HoloLens 2 Deployment](hololens-core-components.md)
+## [Common deployment scenarios](hololens-requirements.md)
+## [Planning HoloLens 2 deployment](hololens-core-components.md)
 ## Deployment Guides
 ### Cloud connected environment deployment guide
 #### [Overview](hololens2-cloud-connected-overview.md)
@@ -78,7 +78,7 @@
 ## Device Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
-### [Enroll in MAC address restricted Wi-Fi Environment](mac-address-options.md)
+### [Enroll in MAC address restricted Wi-Fi environment](mac-address-options.md)
 ## Application Deployment
 ### [Application management overview](app-deploy-overview.md)
 ### [Intune & Company Portal](app-deploy-intune.md)
@@ -88,7 +88,7 @@
 ## Policies (CSPs)
 ### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
-### [Common Device Restrictions](hololens-common-device-restrictions.md)
+### [Common device restrictions](hololens-common-device-restrictions.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
 ### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
 ### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)

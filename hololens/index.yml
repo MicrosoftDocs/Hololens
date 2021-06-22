@@ -44,11 +44,11 @@ landingContent:
             url: hololens2-options-trimble-xr10-edition.md
                     
   # Card 
-  - title: Get Started 
+  - title: Get started 
     linkLists:
       - linkListType: how-to-guide
         links:        
-          - text: First time usage
+          - text: First-time usage
             url: hololens2-setup.md        
           - text: Daily usage
             url: holographic-home.md
@@ -126,7 +126,7 @@ landingContent:
             url: https://docs.microsoft.com/mesh/overview
  
  # Card
-  - title: More Services
+  - title: More services
     linkLists:
       - linkListType: reference
         links:

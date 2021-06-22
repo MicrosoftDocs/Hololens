@@ -20,7 +20,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Hologram Troubleshooting
+# Holograms and interactions troubleshooting
 
 This article troubleshoots issues with placing holograms, working with spaces, and reporting issues with holograms.
 
