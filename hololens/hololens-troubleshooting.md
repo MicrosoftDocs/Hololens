@@ -30,20 +30,20 @@ If the device can't boot to the startup menu, note the LED appearance and device
 - [Hand input isn't working](#hand-input-isnt-working)
 - ["Low Disk Space" error](#low-disk-space-error)
 - [Calibration Fails](#calibration-fails)
-- [Remote Assist video freezes after 20 minutes](remote-assist-video-freezes-after-20-minutes)
+- [Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
 - [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
 - [Downloading locked files doesn't error](#downloading-locked-files-doesnt-error)
-- [Device Portal file upload/download times out](device-portal-file-upload/download-times-out)
+- [Device Portal file upload/download times out](#device-portal-file-upload/download-times-out)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [Can't connect to Wi-Fi](#cant-connect-to-wi-fi)
 - [Can't sign in because my HoloLens was previously set up for someone else](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
-- [OneDrive doesn't automatically upload pictures](onedrive-doesn't-automatically-upload-pictures)
-- [Unity isn't working](unity-isn't-working)
-- [Device Portal isn't working correctly](device-portal-isn't-working-correctly)
+- [OneDrive doesn't automatically upload pictures](#onedrive-doesn't-automatically-upload-pictures)
+- [Unity isn't working](#unity-isn't-working)
+- [Device Portal isn't working correctly](#device-portal-isn't-working-correctly)
 - [The HoloLens emulator isn't working](#the-hololens-emulator-isnt-working)
 
 ## HoloLens is unresponsive or won't start
@@ -213,7 +213,7 @@ In previous builds of Windows Holographic, when attempting to download a locked 
 
 ## Device Portal file upload/download times out
 
-Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-does-not-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
+Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
 
 ### Workaround
 

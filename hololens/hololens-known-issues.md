@@ -27,7 +27,6 @@ Here is the current list of known issues for HoloLens devices. Check here first 
 
 - [Known issues for all HoloLens generations](#known-issues-for-all-hololens-generations)
 - [Known issues for HoloLens (1st Gen)](#known-issues-for-hololens-1st-gen)
-- [Known issues for HoloLens emulator](#known-issues-for-hololens-emulator)
 
 ## Known issues for all HoloLens generations
 
