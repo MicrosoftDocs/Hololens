@@ -26,8 +26,13 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev and Beta Channels for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality.
 
+| Feature                 | Description                | Target Users | Build introduced |
+|-------------------------|----------------------------|--------------|------------------|
+| CSP Changes on HoloLens | New CSPs for to query data | IT Admins    | 20348.1403                |
 
 ### CSP changes on HoloLens
+
+- Introduced in Windows Insider build, 20348.1403
 
 #### DevDetail CSP
 
@@ -62,7 +67,6 @@ Example syncml blob (for MDM vendors) to query for NetworkIdentifiers
 </SyncML>
 ```
 
-
 ### Fixes and improvements:
 
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-known-issues.md#missing-prompt-for-downloading-locked-files)
@@ -71,7 +75,7 @@ Example syncml blob (for MDM vendors) to query for NetworkIdentifiers
 ## Start receiving Insider builds
 > [!NOTE]
 > If you haven’t updated recently, please reboot your device to update state and get the latest build.
-> -	The “Reboot device” voice command works well. 
+> -	The “Reboot device” voice command works well.
 > -	You can also choose the restart button in Settings/Windows Insider Program.
 >
 > We had a bug on the back-end that you may have encountered and this will get you back on track.
