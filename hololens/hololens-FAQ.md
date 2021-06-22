@@ -32,10 +32,9 @@ Please use the Feedback app to send us information about the issue. You'll find 
 
 For tips about how to wear your HoloLens, see [Adjust Fit](hololens2-setup.md#adjust-fit).
 
-This article addresses the following questions and issues:
 <a id="list"></a>
-- [New spaces can't be created](#new-spaces-cannot-be-created)
-- [Spaces can't be identified or loaded](#spaces-cannot-be-identified-or-loaded)
+- [New spaces can't be created](#new-spaces-cant-be-created)
+- [Spaces can't be identified or loaded](#spaces-cant-be-identified-or-loaded)
 - [Holograms don't look right or are moving around](#holograms-dont-look-right-or-are-moving-around)
 - ["Finding your space" message](#finding-your-space-message)
 - [Expected holograms aren't showing in my space](#expected-holograms-arent-showing-in-my-space)

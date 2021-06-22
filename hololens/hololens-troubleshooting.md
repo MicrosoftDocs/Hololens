@@ -209,6 +209,8 @@ This does not affect:
 
 In previous builds of Windows Holographic, when attempting to download a locked file, the result would be an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
 
+[Back to list](#list)
+
 ## Device Portal file upload/download times out
 
 Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
@@ -218,6 +220,8 @@ Some customers have found, when attempting to upload or download files, the oper
 This workaround, which applies equally to Wi-Fi and UsbNcm, is to disable the "required" option under "SSL Connection". To do so, navigate to Device Portal, **System**, and select the **Preferences** page. In the **Device Security** section, locate **SSL Connection**, and uncheck to disable **Required**.
 
 The user should then go to http://, not https:// (IP address) and features like file upload and download will work.
+
+[Back to list](#list)
 
 ## Bluetooth devices aren't pairing
 
