@@ -104,9 +104,8 @@
 ## [Device](hololens-troubleshooting.md)
 ## [Hologram and interactions](hololens-faq.md)
 ## [Display](hololens2-display.md)
-## [Networking and Wi-Fi](hololens2-enterprise-troubleshooting.md#networking-and-wi-fi)
-## [Enterprise Device Management](hololens2-enterprise-troubleshooting.md#enterprise-device-management)
 ## [Enable diagnostic logs](hololens-diagnostic-logs.md)
+## [Networking and Wi-Fi](hololens2-enterprise-troubleshooting.md#)
 ## [Reset HoloLens 2](hololens-recovery.md)
 
 # Resources

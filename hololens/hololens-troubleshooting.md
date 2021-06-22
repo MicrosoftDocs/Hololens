@@ -41,7 +41,7 @@ This article describes how to resolve several common HoloLens issues.
 - [Can't sign in because my HoloLens was previously set up for someone else](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
 - [OneDrive doesn't automatically upload pictures](#onedrive-doesnt-automatically-upload-pictures)
 - [Unity isn't working](#unity-isnt-working)
-- [Device Portal isn't working correctly](#device-portal-isnt-working-correctly)
+- [Windows Device Portal isn't working correctly](#windows-device-portal-isnt-working-correctly)
 - [The HoloLens Emulator isn't working](#the-hololens-emulator-isnt-working)
 
 ## HoloLens is unresponsive or won't start
