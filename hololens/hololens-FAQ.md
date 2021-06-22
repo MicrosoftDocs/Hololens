@@ -22,7 +22,7 @@ appliesto:
 
 # Hologram Troubleshooting
 
-This article answers some questions that you may have about how to use HoloLens, including how to place holograms, work with spaces, and more.
+This article troubleshoots issues with placing holograms, working with spaces, and reporting issues with holograms.
 
 Anytime that you have problems, make sure:
 - The HoloLens is [charged up](https://support.microsoft.com/help/12627/hololens-charge-your-hololens) (charged for at least an hour). 
@@ -34,25 +34,25 @@ For tips about how to wear your HoloLens, see [Adjust Fit](hololens2-setup.md#ad
 
 This article addresses the following questions and issues:
 <a id="list"></a>
-- [New spaces cannot be created](#new-spaces-cannot-be-created)
-- [Spaces cannot be identified or loaded](#spaces-cannot-be-identified-or-loaded)
-- [Reporting issues where Holograms are unstable or don't look right](#reporting-issues-where-holograms-are-unstable-or-dont-look-right)
+- [New spaces can't be created](#new-spaces-cannot-be-created)
+- [Spaces can't be identified or loaded](#spaces-cannot-be-identified-or-loaded)
 - [Holograms don't look right or are moving around](#holograms-dont-look-right-or-are-moving-around)
-- [I see a message that says "Finding your space"](#i-see-a-message-that-says-finding-your-space)
-- [I'm not seeing the holograms that I expect to see in my space](#im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space)
-- [I can't place holograms or see holograms that I previously placed](#i-cant-place-holograms-or-see-holograms-that-i-previously-placed)
+- ["Finding your space" message](#finding-your-space-message)
+- [Expected holograms aren't showing in my space](#expected-holograms-arent-showing-in-my-space)
+- [Can't place holograms or see previously placed holograms](#cant-place-holograms-or-see-previously-placed-holograms)
 - [Holograms disappear or are encased in other holograms or objects](#holograms-disappear-or-are-encased-in-other-holograms-or-objects)
-- [I can see holograms that are on the other side of a wall](#i-can-see-holograms-that-are-on-the-other-side-of-a-wall)
-- [When I place a hologram on a wall, the hologram seems to float](#when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float)
-- [Apps appear too close to me when I'm trying to move them](#apps-appear-too-close-to-me-when-im-trying-to-move-them)
+- [Holograms are appearing on the other side of a wall](#holograms-are-appearing-on-the-other-side-of-a-wall)
+- [After placing a hologram on a wall, it seems to float](#after-placing-a-hologram-on-a-wall-it-seems-to-float)
+- [Apps appear too close after moving them](#apps-appear-too-close-after-moving-them)
+- [Reporting issues with unstable or inexact holograms](#reporting-issues-with-unstable-or-inexact-holograms)
 
-## New spaces cannot be created
+## New spaces can't be created
 
 The most likely problem is that you're running low on storage space. [Free up some disk space](hololens-troubleshooting.md#low-disk-space-error) and then retry.
 
 [Back to list](#list)
 
-## Spaces cannot be identified or loaded
+## Spaces can't be identified or loaded
 
 If your HoloLens can't identify and load the space you're in automatically, check the following factors:
 
@@ -61,19 +61,6 @@ If your HoloLens can't identify and load the space you're in automatically, chec
 - Make sure that there haven't been any major changes to the surroundings.
 
 You can also load a space manually or manage your spaces by going to **Settings** > **System** > **Spaces**.
-
-[Back to list](#list)
-
-## Reporting issues where holograms are unstable or don't look right
- 
-1. Please record and a [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. This video can be later uploaded through Feedback Hub as an attached file.  
-1. Enable full telemetry via the **Settings** app -> **Privacy** -> **Diagnostics & feedback** and under **Optional diagnostics data** ensure the toggle is set to **On**
-1. Get the latest hologram scale and stability fixes by updating to the latest [Windows Holographic OS, (20H2 or higher)](hololens-release-notes.md#windows-holographic-version-20h2). After updating perform the following:
-    1. Remove all Holograms via **Settings** app -> **System** -> **Holograms** -> then select **Remove all holograms** and start with a fresh map.
-    1. Create a new map of your space by wearing the HoloLens and walking around your room and looking at all areas and surfaces in the space. Do this for 2-3 minutes.
-    1. Perform IPD calibration. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
-    1. Re-test the scenario and see if it still persists.
-1. If updating does not fix the issue, please file a [Feedback Hub issue](hololens-feedback.md). After you've filled feedback you can use the **Share** button, to create an easy to share link that can be sent when contacting support.
 
 [Back to list](#list)
 
@@ -90,7 +77,7 @@ If you're still having problems, trying running the Calibration app. This app ca
 
 [Back to list](#list)
 
-## I see a message that says "Finding your space"
+## "Finding your space" message
 
 When HoloLens is learning or loading a space, you may see a brief message that says "Finding your space." If this message displays for more than a few seconds, you'll see another message under the Start menu that says "Still looking for your space."
 
@@ -105,7 +92,7 @@ If you see these messages often, try one or more of the following fixes:
 
 [Back to list](#list)
 
-## I'm not seeing the holograms that I expect to see in my space
+## Expected holograms aren't showing in my space
 
 If you don't see the holograms that you placed, or if you're seeing some that you don't expect, try one or more of the following fixes:
 
@@ -117,7 +104,7 @@ If you don't see the holograms that you placed, or if you're seeing some that yo
 
 [Back to list](#list)
 
-## I can't place holograms or see holograms that I previously placed
+## Can't place holograms or see previously placed holograms
 
 If HoloLens can't map or load your space, it enters Limited mode and you won't be able to place holograms or see holograms that you've placed. Here are some things to try:
 
@@ -144,7 +131,7 @@ Holograms can also be blocked or encased by other holograms or by objects such a
 
 [Back to list](#list)
 
-## I can see holograms that are on the other side of a wall
+## Holograms are appearing on the other side of a wall
 
 If you're very close to a wall, or if HoloLens hasn't scanned the wall yet, you can see holograms that are in the next room. To scan the wall, stand between one and three meters from the wall and gaze at it.
 
@@ -152,7 +139,7 @@ A black or reflective object (for example, a black couch or a stainless steel re
 
 [Back to list](#list)
 
-## When I place a hologram on a wall, the hologram seems to float
+## After placing a hologram on a wall, it seems to float
 
 A hologram that you place on a wall typically appears to be an inch or so away from the wall. If it appears to be farther away, try one or more of the following fixes:
 
@@ -162,8 +149,21 @@ A hologram that you place on a wall typically appears to be an inch or so away f
 
 [Back to list](#list)
 
-## Apps appear too close to me when I'm trying to move them
+## Apps appear too close after moving them
 
 Try walking around and looking at the area where you're placing the app so that HoloLens scans the area from different angles. [Cleaning your device visor](hololens1-hardware.md#care-and-cleaning) may also help.
+
+[Back to list](#list)
+
+## Reporting issues with unstable or inexact holograms
+ 
+1. Please record and a [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. This video can be later uploaded through Feedback Hub as an attached file.  
+1. Enable full telemetry via the **Settings** app -> **Privacy** -> **Diagnostics & feedback** and under **Optional diagnostics data** ensure the toggle is set to **On**
+1. Get the latest hologram scale and stability fixes by updating to the latest [Windows Holographic OS, (20H2 or higher)](hololens-release-notes.md#windows-holographic-version-20h2). After updating perform the following:
+    1. Remove all Holograms via **Settings** app -> **System** -> **Holograms** -> then select **Remove all holograms** and start with a fresh map.
+    1. Create a new map of your space by wearing the HoloLens and walking around your room and looking at all areas and surfaces in the space. Do this for 2-3 minutes.
+    1. Perform IPD calibration. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
+    1. Re-test the scenario and see if it still persists.
+1. If updating does not fix the issue, please file a [Feedback Hub issue](hololens-feedback.md). After you've filled feedback you can use the **Share** button, to create an easy to share link that can be sent when contacting support.
 
 [Back to list](#list)
