@@ -44,8 +44,8 @@ DevDetail CSP now also reports free storage space on HoloLens device. This shoul
 
 DeviceStatus CSP now also reports SSID and BSSID of Wifi network with which HoloLens is actively connected. Following are the specific nodes containing this information.
 
-- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of wifi adapter*/SSID
-- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of wifi adapter*/BSSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/SSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/BSSID
 
 Example syncml blob (for MDM vendors) to query for NetworkIdentifiers
 
