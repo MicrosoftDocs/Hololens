@@ -129,7 +129,7 @@ Setting IPD is not applicable for HoloLens 2, since eye positions are computed b
 > [!NOTE]
 > Due to this Known Issue's severity we have currently paused the availability of Windows Holographic, version 21H1. If you would like to still update your devices to 21H1, please refer to [the instructions in our release notes at the top of the page.](hololens-release-notes.md)
 
-On the latest release of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), some users of Remote Assist have experienced video freezing during calls over 20 minutes.
+On the latest release of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), some users of Remote Assist have experienced video freezing during calls over 20 minutes. This is a **known issue**.
 
 ### Workarounds
 
@@ -159,7 +159,7 @@ Workarounds:
 
 ## Auto-login asks for log-in
 
-A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device with a substantially large update, such as a feature update.
+A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device with a substantially large update, such as a feature update. This is a **known issue**.
 
 Example of when this could occur:
 
@@ -185,13 +185,13 @@ Work around methods:
 
 A few customers have reported an issue where Microsoft Edge fails to launch. For these customers, the issue persists through reboot and is not resolved with Windows or application updates. If you're experiencing this issue and you've confirmed [Windows is up-to-date](hololens-updates.md#manually-check-for-updates), please file a bug from the [Feedback Hub app](hololens-feedback.md) with the following category and sub-category: Install and Update > Downloading, installing, and configuring Windows Update.
 
-There are no known workarounds as we've been unable to root cause the issue so far. Filing a bug via Feedback Hub will help our investigation!
+There are no known workarounds as we've been unable to root cause the issue so far. Filing a bug via Feedback Hub will help our investigation! This is a **known issue**.
 
 [Back to list](#list)
 
 ## Keyboard doesn't switch to special characters
 
-There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters.
+There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters. This is a **known issue**.
 
 Work-arounds:
 -	Close the keyboard and reopen it by tapping the text field.
@@ -207,13 +207,13 @@ This does not affect:
 
 ## Downloading locked files doesn't error
 
-In previous builds of Windows Holographic, when attempting to download a locked file, the result would be an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
+In previous builds of Windows Holographic, when attempting to download a locked file, the result would be an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error. This is a **known issue**.
 
 [Back to list](#list)
 
 ## Device Portal file upload/download times out
 
-Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
+Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default. This is a **known issue**.
 
 ### Workaround
 
@@ -251,7 +251,7 @@ You can pair other Bluetooth HID and GATT devices together with your HoloLens. H
 
 ## Blue screen after unenrolling from Insider preview on a device flashed with an Insider build
 
-This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program.
+This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program. This is a **known issue**.
 
 This does not affect:
 - Users who are not enrolled in Windows Insider 
@@ -292,7 +292,7 @@ You can [put the device into **Flashing Mode** and use Advanced Recovery Compani
 
 ## OneDrive doesn't automatically upload pictures
 
-The OneDrive app for HoloLens does not support automatic camera upload for work or school accounts.
+The OneDrive app for HoloLens does not support automatic camera upload for work or school accounts. This is a **known issue**.
 
 Workarounds:
 
