@@ -14,17 +14,17 @@ appliesto:
 - HoloLens 2
 ---
 
-# Implementation Troubleshooting
-
+# Troubleshooting implementation and managed devices 
 
 <a id="list"></a>
 - [EAP Troubleshooting](#eap-troubleshooting)
 - [Wi-Fi Troubleshooting](#wi-fi-troubleshooting)
 - [Can't sign in to a previously setup HoloLens device](#cant-sign-in-to-a-previously-setup-hololens-device)
 - [Can't login after updating to Windows Holographic 21H1](#cant-login-after-updating-to-windows-holographic-21h1)
+- [Autopilot Troubleshooting](#autopilot-troubleshooting)
+- [Questions about managing HoloLens devices](#questions-about-managing-hololens-devices)
 
-## Networking and Wi-Fi
-### EAP Troubleshooting
+## EAP Troubleshooting
 1. Double check Wi-Fi profile has right settings:
     - EAP type is configured correctly, common EAP types: EAP-TLS (13), EAP-TTLS (21) and PEAP (25).
     - Wi-Fi SSID name is right and matches with HEX string.
@@ -36,7 +36,9 @@ appliesto:
 3. If the enterprise profile is provisioned through Wi-Fi provisioning package, consider applying the provisioning package on a Windows 10 PC. If it also fails on Windows 10 PC, follow the Windows client 802.1X authentication troubleshooting guide.
 4. Send us feedback through Feedback Hub.
 
-### Wi-Fi Troubleshooting
+[Back to list](#list)
+
+## Wi-Fi Troubleshooting
 
 Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:
 
@@ -47,22 +49,23 @@ Here are some things to try if you can't connect your HoloLens to a Wi-Fi networ
 
 When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.
 
-## Enterprise Device Management
+[Back to list](#list)
 
-### Can't sign in to a previously setup HoloLens device
+## Can't sign in to a previously setup HoloLens device
 
 If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
+[Back to list](#list)
 
-### Can't login after updating to Windows Holographic 21H1
+## Can't login after updating to Windows Holographic 21H1
 
-#### Symptoms
+### Symptoms
 - Using PIN to logon will fail after entering the correct PIN.
 - Using the web logon method will fail after successfully signing in on the web page.
 - The device is not listed as “Azure AD joined” in [Azure portal](https://portal.azure.com/) -> Azure Active Directory -> Devices.
 
-#### Cause
+### Cause
 The impacted device may have been deleted from the Azure AD tenant. For example, this may happen because:
 
 - An administrator or user deleted the device in the Azure portal or using PowerShell.
@@ -70,8 +73,17 @@ The impacted device may have been deleted from the Azure AD tenant. For example,
 
 When an impacted device attempts to contact the Azure AD tenant again after it has been deleted it will fail to authenticate with Azure AD. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
 
-#### Mitigation
+### Mitigation
 There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](hololens-recovery.md#clean-reflash-the-device).
+
+### Autopilot Troubleshooting
+
+The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues, however please be aware that these articles are based on Windows 10 Desktop and not all information may apply to HoloLens:
+
+- [Windows Autopilot - known issues](https://docs.microsoft.com/mem/autopilot/known-issues)
+- [Troubleshoot Windows device enrollment problems in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
+- [Windows Autopilot - Policy Conflicts](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
+
 
 ## Questions about managing HoloLens devices
 
@@ -102,8 +114,6 @@ No. However, you can work around this issue by using one of the following approa
 
 Logging is limited to traces that can be captured in development or troubleshooting scenarios, or telemetry that the devices send to Microsoft servers.
 
-[Back to list](#list)
-
 ## Questions about securing HoloLens devices
 
 See [our HoloLens 2 security information](security-overview.md).
@@ -120,3 +130,5 @@ For HoloLens 1st Gen devices please review [this FAQ](hololens1-faq-security.md)
 ## I cannot find or use the keyboard to type in the HoloLens 2 Emulator
 
 *Coming soon*
+
+[Back to list](#list)
