@@ -36,7 +36,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 
 #### DevDetail CSP
 
-DevDetail CSP now also reports free storage space on HoloLens device. This should approximately match with the value shown in Settings App -> Storage page. Following is the specific node containing this information.
+DevDetail CSP now also reports free storage space on HoloLens device. This should approximately match with the value shown in Settings App's Storage page. Following is the specific node containing this information.
 
 - ./DevDetail/Ext/Microsoft/FreeStorage (GET operation only)
 
