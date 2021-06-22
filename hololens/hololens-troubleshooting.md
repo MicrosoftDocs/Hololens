@@ -33,7 +33,7 @@ This article describes how to resolve several common HoloLens issues.
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
 - [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
-- [USB-C Microphone isn't working](usb-c-microphone-isnt-working)
+- [USB-C Microphone isn't working](#usb-c-microphone-isnt-working)
 - [Downloading locked files doesn't error](#downloading-locked-files-doesnt-error)
 - [Device Portal file upload/download times out](#device-portal-file-uploaddownload-times-out)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)

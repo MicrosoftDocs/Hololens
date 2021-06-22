@@ -105,7 +105,7 @@
 ## [Hologram and interactions](hololens-faq.md)
 ## [Display](hololens2-display.md)
 ## [Enable diagnostic logs](hololens-diagnostic-logs.md)
-## [Implmentation and managed devices](hololens2-enterprise-troubleshooting.md#)
+## [Implementation and managed devices](hololens2-enterprise-troubleshooting.md#)
 ## [Reset HoloLens 2](hololens-recovery.md)
 
 # Resources
