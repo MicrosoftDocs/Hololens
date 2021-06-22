@@ -26,7 +26,10 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev and Beta Channels for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality. 
 
+### Fixes and improvements:
 
+- Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-known-issues.md#missing-prompt-for-downloading-locked-files)
+- Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-known-issues.md#device-portal-file-upload-or-download-timeout)
 
 ## Start receiving Insider builds
 > [!NOTE]
