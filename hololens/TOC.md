@@ -135,7 +135,6 @@
 ### [Known issues and workarounds for HoloLens (1st gen)](hololens-known-issues.md)
 ### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 
-
 # Give us feedback
 ## [Give us feedback via Feedback Hub](hololens-feedback.md)
 ## [HoloLens docs contributing guide](contributing.md)
