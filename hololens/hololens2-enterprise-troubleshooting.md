@@ -16,6 +16,13 @@ appliesto:
 
 # Implementation Troubleshooting
 
+
+<a id="list"></a>
+- [EAP Troubleshooting](#eap-troubleshooting)
+- [Wi-Fi Troubleshooting](#-wi-fi-troubleshooting)
+- [Can't sign in to a previously setup HoloLens device](#can't-sign-in-to-a-previously-setup-HoloLens-device)
+- [Can't login after updating to 21H1](#cant-login-after-updating-to-21H1)
+
 ## Networking and Wi-Fi
 ### EAP Troubleshooting
 1. Double check Wi-Fi profile has right settings:
@@ -29,7 +36,7 @@ appliesto:
 3. If the enterprise profile is provisioned through Wi-Fi provisioning package, consider applying the provisioning package on a Windows 10 PC. If it also fails on Windows 10 PC, follow the Windows client 802.1X authentication troubleshooting guide.
 4. Send us feedback through Feedback Hub.
 
-### Troubleshooting your connection to Wi-Fi
+### Wi-Fi Troubleshooting
 
 Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:
 
@@ -42,13 +49,13 @@ When you sign into an enterprise or organizational account on the device, it may
 
 ## Enterprise Device Management
 
-## I can't sign in to a HoloLens device because it was previously set up for someone else
+### Can't sign in to a previously setup HoloLens device
 
 If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
    > [!IMPORTANT]  
    > When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
 
-### Certain devices joined in Azure AD may be unable to logon users after updating to 21H1
+### Can't login after updating to 21H1
 
 #### Symptoms
 - Using PIN to logon will fail after entering the correct PIN.
@@ -64,7 +71,7 @@ The impacted device may have been deleted from the Azure AD tenant. For example,
 When an impacted device attempts to contact the Azure AD tenant again after it has been deleted it will fail to authenticate with Azure AD. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
 
 #### Mitigation
-There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device).
+There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](hololens-recovery.md#clean-reflash-the-device).
 
 ## Questions about managing HoloLens devices
 

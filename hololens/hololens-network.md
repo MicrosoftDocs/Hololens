@@ -42,7 +42,7 @@ To confirm you are connected to a Wi-Fi network, check the Wi-Fi status in the *
 1. Look at the top left of the **Start** menu for Wi-Fi status. The state of Wi-Fi and the SSID of the connected network will be shown.
 
 > [!TIP]
-> If Wi-Fi is not available, you can also [connect to Cellular and 5G networks](https://docs.microsoft.com/hololens/hololens-cellular).
+> If Wi-Fi is not available, you can also [connect to Cellular and 5G networks](hololens-cellular.md).
 
 > [!IMPORTANT]
 > By design, users cannot fine tune the Wi-Fi roaming behavior of the HoloLens 2 - **the only way to refresh the Wi-Fi list is to toggle the Wi-Fi Off and On**. This prevents many issues, like where a device can remain "stuck" to an AP once it is out of range.
@@ -168,7 +168,7 @@ There are three ways to provision proxies:
     1. Enter the SSID of your Wi-Fi network and click Add.
     1. Select your Wi-Fi network in the left window and enter your desired customizations. The enabled customizations will show in bold on the left menu.
     1. Click Save and Exit.
-    1. [Apply](https://docs.microsoft.com/hololens/hololens-provisioning#applyremove-a-provisioning-package-to-hololens-after-setup) the provisioning package to the HoloLens.
+    1. [Apply](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup) the provisioning package to the HoloLens.
 
 [CSPs](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) are behind many of the management tasks and policies for Windows 10, both in Microsoft Intune and in non-Microsoft MDM service providers. You can also use [Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) to create a [provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) and apply it to the HoloLens 2.
 The most likely CSPs that will be applied to your HoloLens 2 are:

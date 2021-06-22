@@ -22,7 +22,7 @@ appliesto:
 
 If you're experiencing problems with your HoloLens, you may want to try a restart or reset, or even reflash the device by using device recovery. This article guides you through the recommended recovery steps in order.
 
-If you're looking to recover a HoloLens 2, see [Recovering a HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery), as that process differs.
+If you're looking to recover a HoloLens 2, see [Recovering a HoloLens 2](hololens-recovery.md), as that process differs.
 
 > [!NOTE]
 > This article focuses on the HoloLens device and software. If your holograms don't look right, see **[HoloLens environment considerations](hololens-environment-considerations.md)** for information about factors that improve hologram quality.

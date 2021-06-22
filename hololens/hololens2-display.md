@@ -26,7 +26,7 @@ Take the following steps to ensure the highest visual quality of holograms prese
 * **Increase brightness of the display.** Holograms look best when the display is at its brightest level. When wearing the HoloLens, the brightness buttons are on the left side of the visor near your temple.
 * **Bring visor closer to your eyes.** Swing the visor down to the closest position to your eyes.
 * **Shift visor down.** Try moving the brow pad on your forehead down, which will result in the visor moving down closer to your nose.
-* **[Run eye calibration.](https://docs.microsoft.com/hololens/hololens-calibration#calibrating-your-hololens-2)** The display uses your interpupillary distance (IPD) and eye gaze to optimize images on the display. If you don't run eye calibration, the image quality may be made worse. To run eye calibration, go to **Settings** > **System** > **Calibration** > **Run eye calibration**.
+* **[Run eye calibration.](hololens-calibration.md#calibrating-your-hololens-2)** The display uses your interpupillary distance (IPD) and eye gaze to optimize images on the display. If you don't run eye calibration, the image quality may be made worse. To run eye calibration, go to **Settings** > **System** > **Calibration** > **Run eye calibration**.
 * **Run display color calibration**. On [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards, you can **select an alternative color profile** for your HoloLens 2 display. This may help colors appear more accurate, especially at lower display brightness levels. Display color calibration can be found in the **Settings** app, on the **System > Calibration** page.
 
     > [!NOTE]

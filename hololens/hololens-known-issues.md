@@ -60,7 +60,7 @@ Workarounds:
 
 
 1. [Download the build for Windows Holographic, version 20H2 – May 2021 Update](https://aka.ms/hololens2download/10.0.19041.1146)
-1. Follow the [instructions return to a previous OS version](hololens-update-hololens.md#go-back-to-a-previous-version---hololens-2)
+1. Follow the [instructions return to a previous OS version](hololens-update-hololens.md#go-back-to-a-previous-version)
 1. Either [pause OS updates on the device manually](hololens-updates.md#pause-updates-via-device) or for many devices use [deferral through MDM](hololens-updates.md#configure-an-update-deferral-policy).
 
 ### Certain devices joined in Azure AD may be unable to logon users after updating to 21H1
@@ -82,7 +82,7 @@ When an impacted device attempts to contact the Azure AD tenant again after it h
 
 #### Mitigation
 
-There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device.](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)
+There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device.](hololens-recovery.md#clean-reflash-the-device)
 
 ### Device using Auto-login asks for log-in
 

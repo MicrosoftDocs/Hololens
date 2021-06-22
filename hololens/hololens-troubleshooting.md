@@ -25,26 +25,26 @@ This article describes how to resolve several common HoloLens issues.
 If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. 
 
 <a id="list"></a>
-- [HoloLens is unresponsive or won't start](#holoLens-is-unresponsive-or-won't-start)
+- [HoloLens is unresponsive or won't start](#holoLens-is-unresponsive-or-wont-start)
 - [Voice commands are not working](#voice-commands-are-not-working)
 - [Hand input is not working](#hand-input-is-not-working)
-- ["Low Disk Space" error](#"low-disk-space"-error)
+- ["Low Disk Space" error](#low-disk-space-error)
 - [Calibration Fails](#calibration-fails)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard does not switch to special characters](#keyboard-does-not-switch-to-special-characters)
 - [Bluetooth devices are not pairing](#bluetooth-devices-are-not-pairing)
-- [Devices that are listed as available in Settings don't work](#devices-that-are-listed-as-available-in-settings-don't-work)
+- [Devices that are listed as available in Settings don't work](#devices-that-are-listed-as-available-in-settings-dont-work)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
-- [Can't connect to Wi-Fi](#can't-connect-to-wi-Fi)
-- [Can't sign in because my HoloLens was previously set up for someone else](#can't-sign-in-because-my-HoloLens-was-previously-set-up-for-someone-else)
-- [The HoloLens emulator isn't working](#the-holoLens-emulator-isn't-working)
+- [Can't connect to Wi-Fi](#cant-connect-to-wi-Fi)
+- [Can't sign in because my HoloLens was previously set up for someone else](#cant-sign-in-because-my-HoloLens-was-previously-set-up-for-someone-else)
+- [The HoloLens emulator isn't working](#the-holoLens-emulator-isnt-working)
 
 ## HoloLens is unresponsive or won't start
 
 If your HoloLens won't start:
 
-- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens2-charging.md#charge-the-device)
+- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens2-charging.md#charging-the-device)
 - If the LEDs light up when you press the power button but you can't see anything on the displays, [preform a hard reset of the device](hololens-recovery.md#hard-reset-procedure).
 
 If your HoloLens becomes frozen or unresponsive:
