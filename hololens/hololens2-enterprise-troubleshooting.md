@@ -21,7 +21,7 @@ appliesto:
 - [EAP Troubleshooting](#eap-troubleshooting)
 - [Wi-Fi Troubleshooting](#wi-fi-troubleshooting)
 - [Can't sign in to a previously setup HoloLens device](#cant-sign-in-to-a-previously-setup-hololens-device)
-- [Can't login after updating to 21H1](#cant-login-after-updating-to-21h1)
+- [Can't login after updating to Windows Holographic 21H1](#cant-login-after-updating-to-windows-holographic-21h1)
 
 ## Networking and Wi-Fi
 ### EAP Troubleshooting
@@ -52,10 +52,10 @@ When you sign into an enterprise or organizational account on the device, it may
 ### Can't sign in to a previously setup HoloLens device
 
 If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
-   > [!IMPORTANT]  
-   > When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
+> [!IMPORTANT]  
+> When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
 
-### Can't login after updating to 21H1
+### Can't login after updating to Windows Holographic 21H1
 
 #### Symptoms
 - Using PIN to logon will fail after entering the correct PIN.

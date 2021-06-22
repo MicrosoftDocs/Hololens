@@ -1,5 +1,5 @@
 ---
-title: Known issues for HoloLens (1st gen)
+title: Known issues for HoloLens
 description: Keep up to date with our list of known issues and workarounds that may affect HoloLens customers and developers using Unity and the Windows Device Portal.
 keywords: troubleshoot, known issue, help
 author: mattzmsft
@@ -13,10 +13,10 @@ HoloLens and holograms: Frequently asked questions
 manager: jarrettr
 ms.prod: hololens
 appliesto:
-- HoloLens (1st Gen)
+- HoloLens (1st Gen), HoloLens 2, HoloLens Emulator
 ---
 
-# Known issues for HoloLens (1st gen)
+# Known issues for HoloLens
 
 Here is the current list of known issues for HoloLens devices. Check here first if you are seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
 

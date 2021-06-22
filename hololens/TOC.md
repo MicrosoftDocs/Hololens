@@ -106,6 +106,7 @@
 ## [Display](hololens2-display.md)
 ## [Networking and Wi-Fi](hololens2-enterprise-troubleshooting.md#networking-and-wi-fi)
 ## [Enterprise Device Management](hololens2-enterprise-troubleshooting.md#enterprise-device-management)
+## [Known issues and workarounds for HoloLens](hololens-known-issues.md)
 ## [Enable diagnostic logs](hololens-diagnostic-logs.md)
 ## [Reset HoloLens 2](hololens-recovery.md)
 
@@ -132,7 +133,7 @@
 ### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 #### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
 #### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
-#### [Known issues and workarounds for HoloLens (1st gen)](hololens-known-issues.md)
+
 
 # Give us feedback
 ## [Give us feedback via Feedback Hub](hololens-feedback.md)
