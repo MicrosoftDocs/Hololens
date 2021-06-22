@@ -26,18 +26,24 @@ If the device can't boot to the startup menu, note the LED appearance and device
 
 <a id="list"></a>
 - [HoloLens is unresponsive or won't start](#hololens-is-unresponsive-or-wont-start)
-- [Voice commands are not working](#voice-commands-are-not-working)
-- [Hand input is not working](#hand-input-is-not-working)
+- [Voice commands aren't working](#voice-commands-arent-working)
+- [Hand input isn't working](#hand-input-isnt-working)
 - ["Low Disk Space" error](#low-disk-space-error)
 - [Calibration Fails](#calibration-fails)
+- [Remote Assist video freezes after 20 minutes](remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
-- [Keyboard does not switch to special characters](#keyboard-does-not-switch-to-special-characters)
-- [Bluetooth devices are not pairing](#bluetooth-devices-are-not-pairing)
-- [Devices that are listed as available in Settings don't work](#devices-that-are-listed-as-available-in-settings-dont-work)
+- [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
+- [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
+- [Downloading locked files doesn't error](#downloading-locked-files-doesnt-error)
+- [Device Portal file upload/download times out](device-portal-file-upload/download-times-out)
+- [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [Can't connect to Wi-Fi](#cant-connect-to-wi-fi)
 - [Can't sign in because my HoloLens was previously set up for someone else](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
+- [OneDrive doesn't automatically upload pictures](onedrive-doesn't-automatically-upload-pictures)
+- [Unity isn't working](unity-isn't-working)
+- [Device Portal isn't working correctly](device-portal-isn't-working-correctly)
 - [The HoloLens emulator isn't working](#the-hololens-emulator-isnt-working)
 
 ## HoloLens is unresponsive or won't start
@@ -55,7 +61,7 @@ If these steps don't work, you can try [recovering your HoloLens 2 device](holol
 
 [Back to list](#list)
 
-## Voice commands are not working
+## Voice commands aren't working
 
 If Cortana isn't responding to your voice commands, make sure Cortana is turned on. On the All apps list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
@@ -65,7 +71,7 @@ If your HoloLens 2 is not responding to your voice, make sure Speech recognition
 
 [Back to list](#list)
 
-## Hand input is not working
+## Hand input isn't working
 
 To ensure that HoloLens can see your hands, you need to keep them in the gesture frame.  The Mixed Reality Home provides feedback that lets you know when your hands are tracked.  The feedback is different on different versions of HoloLens:
 - On HoloLens (1st gen), the gaze cursor changes from a dot to a ring
@@ -120,6 +126,39 @@ Setting IPD is not applicable for HoloLens 2, since eye positions are computed b
 
 [Back to list](#list)
 
+## Remote Assist video freezes after 20 minutes
+
+> [!NOTE]
+> Due to this Known Issue's severity we have currently paused the availability of Windows Holographic, version 21H1. If you would like to still update your devices to 21H1, please refer to [the instructions in our release notes at the top of the page.](hololens-release-notes.md)
+
+On the latest release of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), some users of Remote Assist have experienced video freezing during calls over 20 minutes.
+
+### Workarounds
+
+#### Restart in between calls
+
+If your calls are going over a length of 20 minutes and you are experiencing this issue, try rebooting your device. Rebooting your device between Remote Assist calls will refresh your device and put it back into a good state.
+
+To quickly restart a device on [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) open the start menu, and select the user icon, then select **Restart**.
+
+#### Revert to an older build
+
+Some customers have found that when reverting to an earlier OS version they no longer experience this issue. If you have found that your devices are experiencing this issue, try these steps:
+
+
+Workarounds:
+
+- If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
+
+- If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
+
+
+1. [Download the build for Windows Holographic, version 20H2 – May 2021 Update](https://aka.ms/hololens2download/10.0.19041.1146)
+1. Follow the [instructions return to a previous OS version](hololens-update-hololens.md#go-back-to-a-previous-version)
+1. Either [pause OS updates on the device manually](hololens-updates.md#pause-updates-via-device) or for many devices use [deferral through MDM](hololens-updates.md#configure-an-update-deferral-policy).
+
+[Back to list](#list)
+
 ## Auto-login asks for log-in
 
 A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device with a substantially large update, such as a feature update.
@@ -152,7 +191,7 @@ There are no known workarounds as we've been unable to root cause the issue so f
 
 [Back to list](#list)
 
-## Keyboard does not switch to special characters
+## Keyboard doesn't switch to special characters
 
 There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters.
 
@@ -168,7 +207,21 @@ This does not affect:
 
 [Back to list](#list)
 
-## Bluetooth devices are not pairing
+## Downloading locked files doesn't error
+
+In previous builds of Windows Holographic, when attempting to download a locked file, the result would be an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
+
+## Device Portal file upload/download times out
+
+Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-does-not-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
+
+### Workaround
+
+This workaround, which applies equally to Wi-Fi and UsbNcm, is to disable the "required" option under "SSL Connection". To do so, navigate to Device Portal, **System**, and select the **Preferences** page. In the **Device Security** section, locate **SSL Connection**, and uncheck to disable **Required**.
+
+The user should then go to http://, not https:// (IP address) and features like file upload and download will work.
+
+## Bluetooth devices aren't pairing
 
 If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
 
@@ -178,7 +231,7 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 
 [Back to list](#list)
 
-## Devices that are listed as available in Settings don't work
+## Devices listed as available in Settings don't work
 
 HoloLens (1st gen) doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
 
@@ -235,7 +288,43 @@ You can [put the device into **Flashing Mode** and use Advanced Recovery Compani
 
 [Back to list](#list)
 
+## OneDrive doesn't automatically upload pictures
+
+The OneDrive app for HoloLens does not support automatic camera upload for work or school accounts.
+
+Workarounds:
+
+- If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
+
+- If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
+
+[Back to list](#list)
+
+## Unity isn't working
+
+- See [Install the tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) for the most up-to-date version of Unity recommended for HoloLens development.
+- Known issues with the Unity HoloLens Technical Preview are documented in the [HoloLens Unity forums](https://forum.unity3d.com/threads/known-issues.394627/).
+
+[Back to list](#list)
+
+## Windows Device Portal isn't working correctly
+
+- The Live Preview feature in Mixed Reality capture may exhibit several seconds of latency.
+
+- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section are not functional. Using them will have no effect. The virtual keyboard on the virtual input page works correctly.
+
+- After enabling Developer Mode in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
+
+[Back to list](#list)
+
 ## Emulator
-### The HoloLens emulator isn't working
+### The HoloLens Emulator isn't working
 
 Information about the HoloLens emulator is located in our developer documentation.  Read more about [troubleshooting the HoloLens emulator](/windows/mixed-reality/using-the-hololens-emulator#troubleshooting).
+
+
+- Not all apps in the Microsoft Store are compatible with the emulator. For example, Young Conker and Fragments are not playable on the emulator.
+- You cannot use the PC webcam in the Emulator.
+- The Live Preview feature of the Windows Device Portal does not work with the emulator. You can still capture Mixed Reality videos and images.
+
+[Back to list](#list)

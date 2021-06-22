@@ -106,7 +106,6 @@
 ## [Display](hololens2-display.md)
 ## [Networking and Wi-Fi](hololens2-enterprise-troubleshooting.md#networking-and-wi-fi)
 ## [Enterprise Device Management](hololens2-enterprise-troubleshooting.md#enterprise-device-management)
-## [Known issues and workarounds for HoloLens](hololens-known-issues.md)
 ## [Enable diagnostic logs](hololens-diagnostic-logs.md)
 ## [Reset HoloLens 2](hololens-recovery.md)
 
@@ -129,8 +128,9 @@
 ### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 ### [Reset HoloLens (1st gen) ](hololens1-recovery.md)
 ### [HoloLens (1st gen) fit and comfort](hololens1-fit-comfort-faq.md)
-### HoloLens 1st Gen Security
+### [Known issues and workarounds for HoloLens (1st gen)](hololens-known-issues.md)
 ### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
+### HoloLens (1st gen) Security
 #### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
 #### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 

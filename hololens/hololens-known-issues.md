@@ -1,5 +1,5 @@
 ---
-title: Known issues for HoloLens
+title: Known issues for HoloLens (1st Gen)
 description: Keep up to date with our list of known issues and workarounds that may affect HoloLens customers and developers using Unity and the Windows Device Portal.
 keywords: troubleshoot, known issue, help
 author: mattzmsft
@@ -13,10 +13,10 @@ HoloLens and holograms: Frequently asked questions
 manager: jarrettr
 ms.prod: hololens
 appliesto:
-- HoloLens (1st Gen), HoloLens 2, HoloLens Emulator
+- HoloLens (1st Gen)
 ---
 
-# Known issues for HoloLens
+# Known issues for HoloLens (1st Gen)
 
 Here is the current list of known issues for HoloLens devices. Check here first if you are seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
 
@@ -25,147 +25,9 @@ Here is the current list of known issues for HoloLens devices. Check here first 
 > - If the issue you are facing is blocking you, in addition to filing feedback, please [file a support request](https://aka.ms/hlsupport).
 
 
-- [Known issues for HoloLens 2 devices](#known-issues-for-hololens-2-devices)
 - [Known issues for all HoloLens generations](#known-issues-for-all-hololens-generations)
 - [Known issues for HoloLens (1st Gen)](#known-issues-for-hololens-1st-gen)
 - [Known issues for HoloLens emulator](#known-issues-for-hololens-emulator)
-
-## Known issues for HoloLens 2 devices
-
-### Remote Assist video freezing after 20 minutes
-
-> [!NOTE]
-> Due to this Known Issue's severity we have currently paused the availability of Windows Holographic, version 21H1. If you would like to still update your devices to 21H1, please refer to [the instructions in our release notes at the top of the page.](hololens-release-notes.md)
-
-On the latest release of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), some users of Remote Assist have experienced video freezing during calls over 20 minutes.
-
-#### Workarounds
-
-##### Restart in between calls
-
-If your calls are going over a length of 20 minutes and you are experiencing this issue, try rebooting your device. Rebooting your device between Remote Assist calls will refresh your device and put it back into a good state.
-
-To quickly restart a device on [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) open the start menu, and select the user icon, then select **Restart**.
-
-##### Revert to an older build
-
-Some customers have found that when reverting to an earlier OS version they no longer experience this issue. If you have found that your devices are experiencing this issue, try these steps:
-
-
-Workarounds:
-
-- If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
-
-- If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
-
-
-1. [Download the build for Windows Holographic, version 20H2 – May 2021 Update](https://aka.ms/hololens2download/10.0.19041.1146)
-1. Follow the [instructions return to a previous OS version](hololens-update-hololens.md#go-back-to-a-previous-version)
-1. Either [pause OS updates on the device manually](hololens-updates.md#pause-updates-via-device) or for many devices use [deferral through MDM](hololens-updates.md#configure-an-update-deferral-policy).
-
-### Certain devices joined in Azure AD may be unable to logon users after updating to 21H1
-
-#### Symptoms
-
-- Using PIN to logon will fail after entering the correct PIN.
-- Using the web logon method will fail after successfully signing in on the web page.
-- The device is not listed as “Azure AD joined” in [Azure portal](https://portal.azure.com/) -> Azure Active Directory -> Devices.
-
-#### Cause
-
-The impacted device may have been deleted from the Azure AD tenant. For example, this may happen because:
-
-- An administrator or user deleted the device in the Azure portal or using PowerShell.
-- The device was removed from the Azure AD tenant due to inactivity. For an efficiently managed environment, we typically recommend IT admins to [remove stale, inactive devices from their Azure AD tenant](https://docs.microsoft.com/azure/active-directory/devices/manage-stale-devices).
-
-When an impacted device attempts to contact the Azure AD tenant again after it has been deleted it will fail to authenticate with Azure AD. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
-
-#### Mitigation
-
-There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device.](hololens-recovery.md#clean-reflash-the-device)
-
-### Device using Auto-login asks for log-in
-
-A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device with a substantially large update, such as a feature update.
-
-Example of when this could occur:
-
-- Updating a device from Windows Holographic, version 2004 (Build 19041.xxxx) to Windows Holographic, version 21H1 (Build 20346.xxxx)
-- Updating a device to take a large update on the same major build, e.g. Windows Holographic, version 2004 to Windows Holographic, version 20H2
-- Updating a device from a factory image to the latest image
-
-This should not occur during:
-
-- Devices taking a monthly servicing update
-
-Work around methods:
-
-- Sign-in methods such as PIN, Password, Iris, Web Authentication, or FIDO2 keys.
-- If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-procedure).
-
-### Missing prompt for downloading locked files
-
-In previous builds of Windows Holographic, when attempting to download a locked file would result in an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
-
-### Device Portal file upload or download timeout
-
-Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue in the current Insider build](hololens-known-issues.md#missing-prompt-for-downloading-locked-files) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
-
-#### Workaround
-
-This workaround, which applies equally to Wi-Fi and UsbNcm, is to disable the "required" option under "SSL Connection". To do so, navigate to Device Portal, **System**, and select the **Preferences** page. In the **Device Security** section, locate **SSL Connection**, and uncheck to disable **Required**.
-
-The user should then go to http://, not https:// (IP address) and features like file upload and download will work.
-
-### Microsoft Edge fails to launch
-
-> [!NOTE]
-> This issue was originally created with the shipping version of Microsoft Edge in-mind. This issue may be resolved in the [new Microsoft Edge](hololens-new-edge.md). If it is not, please file feedback.
-
-A few customers have reported an issue where Microsoft Edge fails to launch. For these customers, the issue persists through reboot and is not resolved with Windows or application updates. If you're experiencing this issue and you've confirmed [Windows is up-to-date](hololens-updates.md#manually-check-for-updates), please file a bug from the [Feedback Hub app](hololens-feedback.md) with the following category and sub-category: Install and Update > Downloading, installing, and configuring Windows Update.
-
-There are no known workarounds as we've been unable to root cause the issue so far. Filing a bug via Feedback Hub will help our investigation!
-
-### Keyboard does not switch to special characters
-
-There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters.
-
-Work-arounds:
-
-- Close the keyboard and reopen it by tapping the text field.
-- Incorrectly enter your password. When the keyboard is relaunched next time it will then work as expected.
-- Web Authentication, close the keyboard and select **Sign in from another device**.
-- If entering only numbers, a user may press and hold certain keys to open an expanded menu.
-- Using a USB keyboard.
-
-This does not affect:
-
-- Users who choose to use a personal account.
-
-### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with an Insider build
-
-This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program.
-
-This does not affect:
-
-- Users who are not enrolled in Windows Insider
-- Insiders:
-    - If a device has been enrolled since Insider builds were version 18362.x
-    - If they flashed an Insider signed 19041.x build AND stay enrolled in the Insider program
-
-Work-around:
-
-- Avoid the issue
-    - Flash a non-insider build. One of the regular monthly updates.
-    - Stay on Insider Preview
-- Reflash the device
-
-    1. Put the [HoloLens 2 into flashing mode](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) manually by fully powering down while not connect. Then while holding Volume up, tap the Power button.
-
-    1. Connect to the PC and open Advanced Recovery Companion.
-
-    1. Flash the HoloLens 2 to the default build.
-
 
 ## Known issues for all HoloLens generations
 
@@ -342,8 +204,3 @@ We appreciate your patience as we have gone through the process to get this issu
 
 - If your HoloLens enters standby while the Xbox Wireless Controller is connected, any input on the controller will wake the HoloLens. You can prevent this by powering off your controller when you are done using it.
 
-## Known issues for HoloLens emulator
-
-- Not all apps in the Microsoft Store are compatible with the emulator. For example, Young Conker and Fragments are not playable on the emulator.
-- You cannot use the PC webcam in the Emulator.
-- The Live Preview feature of the Windows Device Portal does not work with the emulator. You can still capture Mixed Reality videos and images.
