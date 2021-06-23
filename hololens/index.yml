@@ -34,21 +34,21 @@ landingContent:
         links:        
           - text: Device-only
             url: hololens2-options-device-only.md
-          - text: Remote Assist Edition
+          - text: Remote Assist edition
             url: hololens2-options-remote-assist.md
-          - text: Industrial Edition
+          - text: Industrial edition
             url: hololens2-options-industrial-edition.md
-          - text: Development Edition
+          - text: Development edition
             url: hololens2-options-dev-edition.md
           - text: Trimble XR10 with HoloLens 2
             url: hololens2-options-trimble-xr10-edition.md
                     
   # Card 
-  - title: Get Started 
+  - title: Get started 
     linkLists:
       - linkListType: how-to-guide
         links:        
-          - text: First time usage
+          - text: First-time usage
             url: hololens2-setup.md        
           - text: Daily usage
             url: holographic-home.md
@@ -76,18 +76,20 @@ landingContent:
             url: hololens-common-scenarios-offline-secure.md
   
   # Card
-  - title: Troubleshoot and Maintain
+  - title: Troubleshooting
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: General Troubleshooting
+          - text: Device
             url: hololens-troubleshooting.md
-          - text: Known issues
-            url: hololens-known-issues.md
+          - text: Holograms and interactions
+            url: hololens-faq.md
+          - text: Display
+            url: hololens2-display.md
+          - text: Implementation and managed devices
+            url: hololens2-enterprise-troubleshooting.md    
           - text: Collect and use diagnostic information from HoloLens devices
             url: hololens-diagnostic-logs.md
-          - text: Manage updates
-            url: hololens-updates.md
           - text: Restart, reset, or recover HoloLens 2
             url: hololens-recovery.md
           
@@ -124,7 +126,7 @@ landingContent:
             url: https://docs.microsoft.com/mesh/overview
  
  # Card
-  - title: More Services
+  - title: More services
     linkLists:
       - linkListType: reference
         links:
