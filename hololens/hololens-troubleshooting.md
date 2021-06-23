@@ -288,7 +288,6 @@ Information about the HoloLens emulator is located in our developer documentatio
 
 [Back to list](#list)
 
-
 ## Voice commands aren't working
 
 If Cortana isn't responding to your voice commands, make sure Cortana is turned on. On the All apps list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
