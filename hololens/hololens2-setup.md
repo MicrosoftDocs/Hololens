@@ -64,7 +64,7 @@ To turn on your HoloLens 2, press the Power button.  The LEDs below the Power bu
 | To sleep | Single button press. | All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |
 | To wake from sleep | Single button press. | All five lights turn on, then change to indicate the battery level. A sound immediately plays. |
 | To turn off | Press and hold for 5s. |  All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |
-| To force the Hololens to restart if it is unresponsive | Press and hold for 10s. | All five lights turn on, then fade off one at a time. After the lights turn off. |
+| To force the HoloLens to restart if it is unresponsive | Press and hold for 10s. | All five lights turn on, then fade off one at a time. After the lights turn off. |
 
 ## HoloLens behavior reference
 
