@@ -89,7 +89,7 @@ The following articles may be a useful resource for you to learn more informatio
 - [Troubleshoot Windows device enrollment problems in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot - Policy Conflicts](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
 
-## Questions about managing HoloLens devices
+## Managed HoloLens Devices FAQs
 
 ### Can I use System Center Configuration Manager (SCCM) to manage HoloLens devices?
 
@@ -114,7 +114,7 @@ No. However, you can work around this issue by using one of the following approa
 - Create a custom app, and then [enable Kiosk mode](hololens-kiosk.md). The custom app can have branding, and can launch other apps (such as Remote Assist).  
 - Change all of the user profile pictures in Azure AD to your company logo. However, this may not be desirable for all scenarios.
 
-### What logging capabilities do HoloLens (1st gen) and HoloLens 2 offer?
+### What logging capabilities does HoloLens 2 offer?
 
 Logging is limited to traces that can be captured in development or troubleshooting scenarios, or telemetry that the devices send to Microsoft servers.
 

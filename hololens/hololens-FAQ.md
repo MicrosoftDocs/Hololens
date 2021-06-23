@@ -25,8 +25,9 @@ appliesto:
 This article troubleshoots issues with placing holograms, working with spaces, and reporting issues with holograms.
 
 Anytime that you have problems, make sure:
-- The HoloLens is [charged up](https://support.microsoft.com/help/12627/hololens-charge-your-hololens) (charged for at least an hour). 
 - Try [restarting it](hololens-restart-recover.md) to see whether that fixes things.
+- Before troubleshooting, ensure the HoloLens is [charged up](hololens2-charging.md) (charged for at least an hour). 
+
 
 Please use the Feedback app to send us information about the issue. You'll find the Feedback app on the [**Start** menu](holographic-home.md). 
 
