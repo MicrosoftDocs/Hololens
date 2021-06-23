@@ -27,7 +27,7 @@ This article describes how to resolve several issues or answer questions regardi
 - [Can't sign in to a previously setup HoloLens device](#cant-sign-in-to-a-previously-setup-hololens-device)
 - [Can't login after updating to Windows Holographic 21H1](#cant-login-after-updating-to-windows-holographic-21h1)
 - [Autopilot Troubleshooting](#autopilot-troubleshooting)
-- [Managed HoloLens Devices FAQs](#managed-holoLens-devices-faqs)
+- [Managed HoloLens Devices FAQs](#managed-hololens-devices-faqs)
 
 ## EAP Troubleshooting
 1. Double check Wi-Fi profile has right settings:
