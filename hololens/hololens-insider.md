@@ -68,7 +68,7 @@ You are welcome and encouraged to try developing your applications using Insider
 ## Stop receiving Insider builds
 If you no longer want to receive Insider builds of Windows Holographic, you can opt out when your HoloLens is running a production build, or you can [recover your device](hololens-recovery.md) using the Advanced Recovery Companion to recover your device to a non-Insider version of Windows Holographic.
 > [!CAUTION]
-> There is a known issue in which users who un-enroll from Insider Preview builds after manually reinstalling a fresh preview build would experience a blue screen. Afterwards they must manually recover their device. For full details on if you would be impacted or not, please view more on this [Known Issue](hololens-troubleshooting#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build).
+> There is a known issue in which users who un-enroll from Insider Preview builds after manually reinstalling a fresh preview build would experience a blue screen. Afterwards they must manually recover their device. For full details on if you would be impacted or not, please view more on this [Known Issue](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build).
 To verify that your HoloLens is running a production build:
 1. Go to **Settings > System > About**, and find the build number.
 1. [See the release notes for production build numbers](hololens-release-notes.md).
