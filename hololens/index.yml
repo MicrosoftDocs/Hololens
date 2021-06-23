@@ -34,11 +34,11 @@ landingContent:
         links:        
           - text: Device-only
             url: hololens2-options-device-only.md
-          - text: Remote Assist Edition
+          - text: Remote Assist edition
             url: hololens2-options-remote-assist.md
-          - text: Industrial Edition
+          - text: Industrial edition
             url: hololens2-options-industrial-edition.md
-          - text: Development Edition
+          - text: Development edition
             url: hololens2-options-dev-edition.md
           - text: Trimble XR10 with HoloLens 2
             url: hololens2-options-trimble-xr10-edition.md
