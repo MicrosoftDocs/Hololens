@@ -23,107 +23,37 @@ This article describes how to resolve several common HoloLens issues.
 > Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](hololens2-setup.md#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device.
 
 <a id="list"></a>
-- [HoloLens is unresponsive or won't start](#hololens-is-unresponsive-or-wont-start)
-- [Voice commands aren't working](#voice-commands-arent-working)
-- [Hand input isn't working](#hand-input-isnt-working)
-- ["Low Disk Space" error](#low-disk-space-error)
-- [Calibration Fails](#calibration-fails)
+
+**Known Issues**
 - [Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
-- [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
-- [USB-C Microphone isn't working](#usb-c-microphone-isnt-working)
 - [Downloading locked files doesn't error](#downloading-locked-files-doesnt-error)
 - [Device Portal file upload/download times out](#device-portal-file-uploaddownload-times-out)
-- [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
-- [Can't connect to Wi-Fi](#cant-connect-to-wi-fi)
-- [Can't sign in because my HoloLens was previously set up for someone else](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
 - [OneDrive doesn't automatically upload pictures](#onedrive-doesnt-automatically-upload-pictures)
+
+**General**
+- [HoloLens is unresponsive or won't start](#hololens-is-unresponsive-or-wont-start)
+- ["Low Disk Space" error](#low-disk-space-error)
+- [Calibration Fails](#calibration-fails)
+- [Can't sign in because my HoloLens was previously set up for someone else](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
 - [Unity isn't working](#unity-isnt-working)
 - [Windows Device Portal isn't working correctly](#windows-device-portal-isnt-working-correctly)
 - [The HoloLens Emulator isn't working](#the-hololens-emulator-isnt-working)
 
-## HoloLens is unresponsive or won't start
+**Input**
+- [Voice commands aren't working](#voice-commands-arent-working)
+- [Hand input isn't working](#hand-input-isnt-working)
 
-If your HoloLens won't start:
+**Connectivity**
+- [Can't connect to Wi-Fi](#cant-connect-to-wi-fi)
 
-- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens2-charging.md#charging-the-device)
-- If the LEDs light up when you press the power button but you can't see anything on the displays, [do a hard reset of the device](hololens-recovery.md#hard-reset-procedure).
-
-If your HoloLens becomes frozen or unresponsive:
-
-- Turn off your HoloLens by pressing the power button until all five of the LEDs turn themselves off, or for 15 seconds if the LEDs are unresponsive. To start your HoloLens, press the power button again.
-
-If these steps don't work, you can try [recovering your HoloLens 2 device](hololens-recovery.md) or [HoloLens (1st gen) device.](hololens1-recovery.md)
-
-[Back to list](#list)
-
-## Voice commands aren't working
-
-If Cortana isn't responding to your voice commands, make sure Cortana is turned on. On the All apps list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
-
-On HoloLens (1st gen), built-in speech recognition is not configurable. It is always turned on. On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.
-
-If your HoloLens 2 is not responding to your voice, make sure Speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.
-
-[Back to list](#list)
-
-## Hand input isn't working
-
-To ensure that HoloLens can see your hands, you need to keep them in the gesture frame.  The Mixed Reality Home provides feedback that lets you know when your hands are tracked.  The feedback is different on different versions of HoloLens:
-- On HoloLens (1st gen), the gaze cursor changes from a dot to a ring
-- On HoloLens 2, a fingertip cursor appears when your hand is close to a slate, and a hand ray appears when slates are further away
-
-Many immersive apps follow input patterns that are similar to Mixed Reality Home.  Learn more about using hand input on [HoloLens (1st gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) and [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
-
-If you are wearing gloves, note that some types of gloves do not work with hand tracking.  A common example is black rubber gloves, which tend to absorb infrared light and are not picked up by the depth camera.  If your work involves rubber gloves, we recommend trying a lighter color such as blue or gray.  Another example is large baggy gloves, which tend to obscure the shape of your hand. We recommend using gloves that are as form-fitting as possible for best results.
-
-If your visor has fingerprints or smudges, use the microfiber cleaning cloth that came with the HoloLens to clean your visor gently.
-
-[Back to list](#list)
-
-## "Low Disk Space" error
-
-You'll need to free up some storage space by doing one or more of the following:
-
-- Delete some unused spaces. Go to **Settings** > **System** > **Spaces**, select a space that you no longer need, and then select **Remove**.
-- Remove some of the holograms that you've placed.
-- Delete some pictures and videos from the Photos app.
-- Uninstall some apps from your HoloLens. In the **All apps** list, tap and hold the app you want to uninstall, and then select **Uninstall**.
-
-[Back to list](#list)
-
-## Calibration fails
-
-Calibration should work for most people, but there are cases where calibration fails.
-  
-Some potential reasons for calibration failure include:
-
-- Getting distracted and not following the calibration targets
-- Dirty or scratched device visor or device visor not positioned properly
-- Dirty or scratched glasses
-- Certain types of contact lenses and glasses (colored contact lenses, some toric contact lenses, IR blocking glasses, some high prescription glasses, sunglasses, or similar)
-- More-pronounced makeup and some eyelash extensions
-- Hair or thick eyeglass frames if they're blocking the device from seeing your eyes
-- Certain eye physiology, eye conditions, or eye surgery such as narrow eyes, long eyelashes, amblyopia, nystagmus, some cases of LASIK or other eye surgeries
-
-If calibration is unsuccessful try:
-
-- Cleaning your device visor
-- Cleaning your glasses
-- Pushing your device visor as close to your eyes as possible
-- Moving objects in your visor out of the way (such as hair)
-- Turning on a light in your room or moving out of direct sunlight
-
-If you followed all guidelines and calibration is still failing, you can disable the calibration prompt in Settings. Also let us know by filing feedback in [Feedback Hub](hololens-feedback.md).
-
-Also see related information for [image color or brightness troubleshooting.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
-
-Setting IPD is not applicable for HoloLens 2, since eye positions are computed by the system. 
-
-[Back to list](#list)
+**External Devices** 
+- [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
+- [USB-C Microphone isn't working](#usb-c-microphone-isnt-working)
+- [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
 
 ## Remote Assist video freezes after 20 minutes
 
@@ -224,39 +154,6 @@ The user should then go to http://, not https:// (IP address) and features like 
 
 [Back to list](#list)
 
-## Bluetooth devices aren't pairing
-
-If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
-
-- Go to **Settings** > **Devices**, and make sure that Bluetooth is turned on. If it is, turn it off and on again.
-- Make sure that your Bluetooth device is fully charged or has fresh batteries.
-- If you still can't connect, [restart the HoloLens](hololens-recovery.md).
-
-[Back to list](#list)
-
-## USB-C Microphone isn't working
-Be aware that some USB-C microphones incorrectly report themselves as both a microphone *and* a speaker. This is a problem with the microphone and not with HoloLens. When plugging one of these microphones into HoloLens, sound may be lost. Fortunately there is a simple fix.  
-
-In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
-
-![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
-
-## Devices listed as available in Settings don't work
-
-HoloLens (1st gen) doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
-
-HoloLens 2 supports the Bluetooth A2DP audio profile for stereo playback. The Bluetooth Hands Free profile which enables microphone capture from a Bluetooth peripheral is not supported on HoloLens 2.
-
-If you're having trouble using a Bluetooth device, make sure that it's a supported device. Supported devices include the following:
-
-- English-language QWERTY Bluetooth keyboards (you can use these anywhere that you use the holographic keyboard).
-- Bluetooth mice.
-- The [HoloLens clicker](hololens1-clicker.md).
-
-You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
-
-[Back to list](#list)
-
 ## Blue screen after unenrolling from Insider preview on a device flashed with an Insider build
 
 This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program. This is a **known issue**.
@@ -281,23 +178,6 @@ Work-around:
 
 [Back to list](#list)
 
-## Can't connect to Wi-Fi
-
-Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:
-
-- Make sure that Wi-Fi is turned on. To check, use the Start gesture, then select **Settings** > **Network &amp; Internet** > **Wi-Fi**. If Wi-Fi is on, try turning it off and then on again.
-- Move closer to the router or access point.
-- Restart your Wi-Fi router, then [restart HoloLens](hololens-recovery.md). Try connecting again.
-- If none of these things work, check to make sure that your router is using the latest firmware. You can find this information on the manufacturer website.
-
-[Back to list](#list)
-
-## Can't sign in because my HoloLens was previously set up for someone else
-
-You can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) to recover the device.
-
-[Back to list](#list)
-
 ## OneDrive doesn't automatically upload pictures
 
 The OneDrive app for HoloLens does not support automatic camera upload for work or school accounts. This is a **known issue**.
@@ -309,6 +189,69 @@ Workarounds:
 - If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 [Back to list](#list)
+
+## HoloLens is unresponsive or won't start
+
+If your HoloLens won't start:
+
+- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens2-charging.md#charging-the-device)
+- If the LEDs light up when you press the power button but you can't see anything on the displays, [do a hard reset of the device](hololens-recovery.md#hard-reset-procedure).
+
+If your HoloLens becomes frozen or unresponsive:
+
+- Turn off your HoloLens by pressing the power button until all five of the LEDs turn themselves off, or for 15 seconds if the LEDs are unresponsive. To start your HoloLens, press the power button again.
+
+If these steps don't work, you can try [recovering your HoloLens 2 device](hololens-recovery.md) or [HoloLens (1st gen) device.](hololens1-recovery.md)
+
+[Back to list](#list)
+
+## "Low Disk Space" error
+
+You'll need to free up some storage space by doing one or more of the following:
+
+- Delete some unused spaces. Go to **Settings** > **System** > **Spaces**, select a space that you no longer need, and then select **Remove**.
+- Remove some of the holograms that you've placed.
+- Delete some pictures and videos from the Photos app.
+- Uninstall some apps from your HoloLens. In the **All apps** list, tap and hold the app you want to uninstall, and then select **Uninstall**.
+
+[Back to list](#list)
+
+## Calibration fails
+
+Calibration should work for most people, but there are cases where calibration fails.
+  
+Some potential reasons for calibration failure include:
+
+- Getting distracted and not following the calibration targets
+- Dirty or scratched device visor or device visor not positioned properly
+- Dirty or scratched glasses
+- Certain types of contact lenses and glasses (colored contact lenses, some toric contact lenses, IR blocking glasses, some high prescription glasses, sunglasses, or similar)
+- More-pronounced makeup and some eyelash extensions
+- Hair or thick eyeglass frames if they're blocking the device from seeing your eyes
+- Certain eye physiology, eye conditions, or eye surgery such as narrow eyes, long eyelashes, amblyopia, nystagmus, some cases of LASIK or other eye surgeries
+
+If calibration is unsuccessful try:
+
+- Cleaning your device visor
+- Cleaning your glasses
+- Pushing your device visor as close to your eyes as possible
+- Moving objects in your visor out of the way (such as hair)
+- Turning on a light in your room or moving out of direct sunlight
+
+If you followed all guidelines and calibration is still failing, you can disable the calibration prompt in Settings. Also let us know by filing feedback in [Feedback Hub](hololens-feedback.md).
+
+Also see related information for [image color or brightness troubleshooting.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
+
+Setting IPD is not applicable for HoloLens 2, since eye positions are computed by the system. 
+
+[Back to list](#list)
+
+## Can't sign in because my HoloLens was previously set up for someone else
+
+You can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) to recover the device.
+
+[Back to list](#list)
+
 
 ## Unity isn't working
 
@@ -342,5 +285,73 @@ Information about the HoloLens emulator is located in our developer documentatio
 ## I cannot find or use the keyboard to type in the HoloLens 2 Emulator
 
 *Coming soon*
+
+[Back to list](#list)
+
+
+## Voice commands aren't working
+
+If Cortana isn't responding to your voice commands, make sure Cortana is turned on. On the All apps list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
+
+On HoloLens (1st gen), built-in speech recognition is not configurable. It is always turned on. On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.
+
+If your HoloLens 2 is not responding to your voice, make sure Speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.
+
+[Back to list](#list)
+
+## Hand input isn't working
+
+To ensure that HoloLens can see your hands, you need to keep them in the gesture frame.  The Mixed Reality Home provides feedback that lets you know when your hands are tracked.  The feedback is different on different versions of HoloLens:
+- On HoloLens (1st gen), the gaze cursor changes from a dot to a ring
+- On HoloLens 2, a fingertip cursor appears when your hand is close to a slate, and a hand ray appears when slates are further away
+
+Many immersive apps follow input patterns that are similar to Mixed Reality Home.  Learn more about using hand input on [HoloLens (1st gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) and [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
+
+If you are wearing gloves, note that some types of gloves do not work with hand tracking.  A common example is black rubber gloves, which tend to absorb infrared light and are not picked up by the depth camera.  If your work involves rubber gloves, we recommend trying a lighter color such as blue or gray.  Another example is large baggy gloves, which tend to obscure the shape of your hand. We recommend using gloves that are as form-fitting as possible for best results.
+
+If your visor has fingerprints or smudges, use the microfiber cleaning cloth that came with the HoloLens to clean your visor gently.
+
+[Back to list](#list)
+
+## Can't connect to Wi-Fi
+
+Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:
+
+- Make sure that Wi-Fi is turned on. To check, use the Start gesture, then select **Settings** > **Network &amp; Internet** > **Wi-Fi**. If Wi-Fi is on, try turning it off and then on again.
+- Move closer to the router or access point.
+- Restart your Wi-Fi router, then [restart HoloLens](hololens-recovery.md). Try connecting again.
+- If none of these things work, check to make sure that your router is using the latest firmware. You can find this information on the manufacturer website.
+
+[Back to list](#list)
+## Bluetooth devices aren't pairing
+
+If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
+
+- Go to **Settings** > **Devices**, and make sure that Bluetooth is turned on. If it is, turn it off and on again.
+- Make sure that your Bluetooth device is fully charged or has fresh batteries.
+- If you still can't connect, [restart the HoloLens](hololens-recovery.md).
+
+[Back to list](#list)
+
+## USB-C Microphone isn't working
+Be aware that some USB-C microphones incorrectly report themselves as both a microphone *and* a speaker. This is a problem with the microphone and not with HoloLens. When plugging one of these microphones into HoloLens, sound may be lost. Fortunately there is a simple fix.  
+
+In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
+
+![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
+
+## Devices listed as available in Settings don't work
+
+HoloLens (1st gen) doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
+
+HoloLens 2 supports the Bluetooth A2DP audio profile for stereo playback. The Bluetooth Hands Free profile which enables microphone capture from a Bluetooth peripheral is not supported on HoloLens 2.
+
+If you're having trouble using a Bluetooth device, make sure that it's a supported device. Supported devices include the following:
+
+- English-language QWERTY Bluetooth keyboards (you can use these anywhere that you use the holographic keyboard).
+- Bluetooth mice.
+- The [HoloLens clicker](hololens1-clicker.md).
+
+You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
 
 [Back to list](#list)
