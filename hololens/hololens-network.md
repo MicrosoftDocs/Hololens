@@ -42,16 +42,10 @@ To confirm you are connected to a Wi-Fi network, check the Wi-Fi status in the *
 1. Look at the top left of the **Start** menu for Wi-Fi status. The state of Wi-Fi and the SSID of the connected network will be shown.
 
 > [!TIP]
-> If Wi-Fi is not available, you can also [connect to Cellular and 5G networks](https://docs.microsoft.com/hololens/hololens-cellular).
+> If Wi-Fi is not available, you can also [connect to Cellular and 5G networks](hololens-cellular.md).
 
 > [!IMPORTANT]
 > By design, users cannot fine tune the Wi-Fi roaming behavior of the HoloLens 2 - **the only way to refresh the Wi-Fi list is to toggle the Wi-Fi Off and On**. This prevents many issues, like where a device can remain "stuck" to an AP once it is out of range.
-
-## Troubleshooting your connection to Wi-Fi
-
-If you experience problems connecting to Wi-Fi, see [I can't connect to Wi-Fi](./hololens-faq.md#i-cant-connect-to-wi-fi).
-
-When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.
 
 ## Connect HoloLens to Enterprise Wi-Fi Network
 
@@ -128,23 +122,7 @@ Additional resources:
 - WLANv1Profile Schema: [[MS-GPWL]: Wireless LAN Profile v1 Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-## EAP Troubleshooting
-> [!TIP]
-> A majority of network issues are the result of one of the below 3 settings being incorrect in the Wi-FI profile. 
-1. Double check Wi-Fi profile has right settings:
-   1. EAP type is configured correctly, common EAP types: EAP-TLS (13), EAP-TTLS (21) and PEAP (25).
-   1. Wi-Fi SSID name is right and matches with HEX string.
-   1. For EAP-TLS, TrustedRootCA contains the SHA-1 hash of server&#39;s trusted root CA certificate. On Windows PC &quot;certutil.exe -dump cert\_file\_name&quot; command will show a certificate&#39;s SHA-1 hash string.
-
-2. Collect network packet capture on the Access Point or Controller or AAA server logs to find out where the EAP session fails.
-   1. If the EAP identity provided by HoloLens is not expected, check whether the identity has been correctly provisioned through Wi-Fi profile or client certificate.
-   1. If server rejects HoloLens client certificate, check whether the required client certificate has been provisioned on the device.
-   1. If HoloLens rejects server certificate, check if the server root CA certificate has been provisioned on HoloLens.
-1. If the enterprise profile is provisioned through Wi-Fi provisioning package, consider applying the provisioning package on a Windows 10 PC. If it also fails on Windows 10 PC, follow the [Windows client 802.1X authentication troubleshooting guide](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication).
-1. Set your telemetry to Full or Optional (depending on your build) and then send us feedback through [Feedback Hub](https://docs.microsoft.com/hololens/hololens-feedback).
-
-### Additional resources:
-- [Export Wi-Fi settings from a Windows device](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
+Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if you are having problems connecting to your Wi-Fi.
 
 ## Configure Network Proxy
 
@@ -190,7 +168,7 @@ There are three ways to provision proxies:
     1. Enter the SSID of your Wi-Fi network and click Add.
     1. Select your Wi-Fi network in the left window and enter your desired customizations. The enabled customizations will show in bold on the left menu.
     1. Click Save and Exit.
-    1. [Apply](https://docs.microsoft.com/hololens/hololens-provisioning#applyremove-a-provisioning-package-to-hololens-after-setup) the provisioning package to the HoloLens.
+    1. [Apply](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup) the provisioning package to the HoloLens.
 
 [CSPs](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) are behind many of the management tasks and policies for Windows 10, both in Microsoft Intune and in non-Microsoft MDM service providers. You can also use [Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) to create a [provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) and apply it to the HoloLens 2.
 The most likely CSPs that will be applied to your HoloLens 2 are:

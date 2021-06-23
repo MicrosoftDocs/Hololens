@@ -23,7 +23,7 @@ appliesto:
 To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
 
 > [!IMPORTANT]
-> Due to a [known issue in our 21H1 build that is affecting Remote Assist users](hololens-known-issues.md#remote-assist-video-freezing-after-20-minutes), we are currently pausing the offering of Windows Holographic, version 21H1 updates. We have also changed the default Advanced Recovery Companion build to be the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update), which is the latest 20H2 release.
+> Due to a [known issue in our 21H1 build that is affecting Remote Assist users](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), we are currently pausing the offering of Windows Holographic, version 21H1 updates. We have also changed the default Advanced Recovery Companion build to be the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update), which is the latest 20H2 release.
 >
 > While we reduce availability of 21H1 to mitigate the impact of this issue, we understand some customers may still be wanting to update to 21H1. For customers who wish to update to 21H1 there are two different paths available:
 >
@@ -379,7 +379,7 @@ Now in this Windows build, users can manually adjust the volume level of each ap
 
 To set the volume of an individual app navigate to **Settings** -> **System** -> **Sound**, and under Advanced sound options select **App volume and device preferences**.
 
- <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
+<br/><br/><img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 #### Swipe to type
 
@@ -397,13 +397,13 @@ A new menu that allows the user to sign out, shut down and restart the device. A
 
 2. Notice the ellipsis icon (...) next to the user profile picture:
 
-   <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
+   <br/><br/><img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
 
 3. Select the user profile picture using your hands or the voice command "Power".
 
 4. A menu appears with options to Sign out, Restart or Shut down the device:
 
-   <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
+   <br/><br/><img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
 5. Select the menu options to sign out, restart or shut down your HoloLens. The Sign out option might not be available, if the device is set up for a [single Microsoft Account (MSA) or local account](hololens-identity.md).
 
