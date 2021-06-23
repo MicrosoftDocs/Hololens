@@ -70,6 +70,15 @@ Clicker gestures are small wrist rotations, not the larger movements used for Ho
 > [!TIP]
 > To zoom in or out when using Microsoft Edge, gaze at a page and double-click.
 
+## I'm having problems using the HoloLens clicker
+
+Use the [clicker](hololens1-clicker.md) to select, scroll, move, and resize holograms. Individual apps may support additional clicker gestures.
+
+If you're having trouble using the clicker, make sure that it's charged and paired with your HoloLens. If the battery is low, the indicator light blinks amber. To verify that the clicker is paired, go to **Settings** > **Devices** and see if it shows up there. For more information, see [Pair the clicker](hololens1-clicker.md).
+
+If the clicker is charged and paired and you're still having problems, reset it by holding down the main button and the pairing button for 15 seconds. Then pair the clicker with your HoloLens again.
+
+If resetting the clicker doesn't help, see [Restart or recover the HoloLens clicker](hololens1-clicker.md#restart-or-recover-the-clicker).
 ## Restart or recover the clicker
 
 Here are some things to try if the HoloLens clicker is unresponsive or isn’t working well.
@@ -95,3 +104,4 @@ To recover the clicker:
 1. Run the Windows Device Recovery Tool and follow the instructions.
 
 If the clicker isn’t automatically detected, select **My device was not detected** and follow the instructions to put your device into recovery mode.
+
