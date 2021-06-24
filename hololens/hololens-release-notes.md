@@ -380,9 +380,9 @@ If you choose "Always" but later want to change which app handles a particular f
 
 Now in this Windows build, users can manually adjust the volume level of each app. This allows for users to better focus on the apps that they need to, or better hear when using multiple apps. Such as needing to turn down volume of one app while calling another person for remote assistance in another.
 
-To set the volume of an individual app navigate to **Settings** -> **System** -> **Sound**, and under Advanced sound options select **App volume and device preferences**.
+To set the volume of an individual app navigate to **Settings** -> **System** -> **Sound**, and under Advanced sound options select **App volume and device preferences**.<br/><br/>
 
-<br/><img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
+<img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 #### Swipe to type
 
@@ -398,15 +398,15 @@ A new menu that allows the user to sign out, shut down and restart the device. A
 
 1. Open the HoloLens Start screen using the [Start gesture](hololens2-basic-usage.md#start-gesture) or saying "Go to Start".
 
-2. Notice the ellipsis icon (...) next to the user profile picture:
+2. Notice the ellipsis icon (...) next to the user profile picture:<br/><br/>
 
-   <br/><img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
+   <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
 
 3. Select the user profile picture using your hands or the voice command "Power".
 
-4. A menu appears with options to Sign out, Restart or Shut down the device:
+4. A menu appears with options to Sign out, Restart or Shut down the device:<br/><br/>
 
-   <br/><img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
+   <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
 5. Select the menu options to sign out, restart or shut down your HoloLens. The Sign out option might not be available, if the device is set up for a [single Microsoft Account (MSA) or local account](hololens-identity.md).
 
