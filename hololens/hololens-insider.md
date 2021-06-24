@@ -66,7 +66,7 @@ Example syncml blob (for MDM vendors) to query for NetworkIdentifiers
 ### Fixes and improvements:
 
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-show-error)
-- Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-upload-or-download-timeout)
+- Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-uploaddownload-timeout)
 
 ## Start receiving Insider builds
 > [!NOTE]
