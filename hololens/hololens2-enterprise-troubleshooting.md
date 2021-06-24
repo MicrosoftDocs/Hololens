@@ -24,6 +24,7 @@ This article describes how to resolve several issues or answer questions regardi
 <a id="list"></a>
 - [EAP Troubleshooting](#eap-troubleshooting)
 - [Wi-Fi Troubleshooting](#wi-fi-troubleshooting)
+- [Network Troubleshooting](#network-troubleshooting)
 - [Can't sign in to a previously setup HoloLens device](#cant-sign-in-to-a-previously-setup-hololens-device)
 - [Can't login after updating to Windows Holographic 21H1](#cant-login-after-updating-to-windows-holographic-21h1)
 - [Autopilot Troubleshooting](#autopilot-troubleshooting)
@@ -53,6 +54,9 @@ Here are some things to try if you can't connect your HoloLens to a Wi-Fi networ
 4. If none of these things work, check to make sure that your router is using the latest firmware. You can find this information on the manufacturer website.
 
 When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.
+
+## Network Troubleshooting
+If network issues are an obstacle to successfully deploying and using HoloLens 2 in your organization, learn how two well-known network diagnostic tools, Fiddler and Wireshark can help you scan, diagnose, and identify problems. Check out this [blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/diagnose-hololens-2-network-issues-with-fiddler-and-wireshark/ba-p/2322458) for more details.
 
 [Back to list](#list)
 
