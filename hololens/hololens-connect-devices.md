@@ -39,7 +39,7 @@ HoloLens (1st gen) supports the following classes of Bluetooth devices:
 - [HoloLens (1st gen) clicker](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
-> Other types of Bluetooth devices, such as speakers, headsets, smartphones, and game pads, may be listed as available in HoloLens settings. However, these devices aren't supported on HoloLens (1st gen). For more information, see [HoloLens Settings lists devices as available, but the devices don't work](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work).
+> Other types of Bluetooth devices, such as speakers, headsets, smartphones, and game pads, may be listed as available in HoloLens settings. However, these devices aren't supported on HoloLens (1st gen). For more information, see [HoloLens Settings lists devices as available, but the devices don't work](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work).
 
 ### Pair a Bluetooth keyboard or mouse
 
@@ -107,13 +107,6 @@ Open the **Settings** app and select **System** > **Sound**.
 
 Unfortunately, Bluetooth microphones are still not currently supported on HoloLens 2.
 
-#### Troubleshooting USB-C microphones
-
-Be aware that some USB-C microphones incorrectly report themselves as both a microphone *and* a speaker. This is a problem with the microphone and not with HoloLens. When plugging one of these microphones into HoloLens, sound may be lost. Fortunately there is a simple fix.  
-
-In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
-
-![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
 ### USB-C Hubs
 
 Some users may need to connect multiple devices at once. For users who would like to use a [USB-C microphone](#usb-c-external-microphone-support) along with another connected device, USB-C hubs may fit the customer's need. Microsoft has not tested these devices, nor can we recommend any specific brands.
