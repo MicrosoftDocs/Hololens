@@ -40,7 +40,7 @@ What makes the HoloLens 2 so powerful?
 | Holographic Processing Unit (HPU) | Experience AI inferencing on the edge for much faster response times. This low latency is due to the custom silicon invented for HoloLens 2. You’ll notice this speed for things like hand tracking. |
 | World Anchoring | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
 | Ergonomic Fit | Wear HoloLens 2 longer and more comfortably with a dial-in fit system designed for extended use. And keep your glasses on—the headset slides right over them. When it's time to switch tasks, flip the visor up to step out of mixed reality. |
-| Auto-Customized Display | HoloLens 2 displays are automatically adjusted with Auto Eye Position (AEP), eliminating the need to run a manual calibration process when the device is shared between users. |
+| Auto-Customized Display | HoloLens 2 displays are automatically adjusted with Auto Eye Position (AEP), eliminating the need to run a manual calibration process when the device is [shared between users](hololens-multiple-users.md). |
 
 ## Managing HoloLens 2 in your organization
 HoloLens 2 includes features that make it easier for organizations to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](hololens-provisioning.md) using [Windows Configuration Designer](app-deploy-provisioning-package.md#setup).
@@ -53,7 +53,8 @@ Manage Hololens devices in my organization | [**Mobile Device Managment**](holol
 |Minimize setup time for new users and devices | [**Autopilot**](hololens2-autopilot.md) | Configure the out-of-box experience (OOBE) in Microsoft Endpoint Manager and enable end users to prepare devices for business use with little to no interaction. |  
 | Control OS updates for my devices | [**Windows Update for Business**](hololens-updates.md#managing-updates-by-using-windows-update-for-business) | Windows Update for Business provides controlled operating system updates to devices and support for the long-term servicing channel. |  
 | Allow specific and LOB apps to be downloaded |[**Application Management**](app-deploy-overview.md) | Choose how to distribute and control apps for selected groups of HoloLens 2 users. | 
-| Control what apps are shown on your start menu |[**Kiosk mode**](hololens-kiosk.md) | Configure HoloLens 2 to function as a fixed-purpose device for use in app demos or dedicated business apps.  
+| Show or hide specific apps on your start menu |[**Kiosk mode**](hololens-kiosk.md) | Configure HoloLens 2 to function as a fixed-purpose device for use in app demos or dedicated business apps. 
+| Secure my environment by locking down apps | [**WDAC**](windows-defender-application-control-wdac.md) | Windows Defender Application Control (WDAC) blocks apps and processes from being launched by the device user.
 | Manage device security with rules for apps and processes | [**Policies (CSPs)**](hololens-csp-policy-overview.md) | IT Admins can define and implement policy settings using an existing list of supported Policy CSPs on HoloLens 2. |  
 | Manage how a device connects to the internet | [**Network and Connectivity**](hololens-certificates-network.md) | Use certificate-based authentication to access Wi-Fi, VPNs, or internal resources. | 
 
