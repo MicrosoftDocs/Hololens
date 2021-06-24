@@ -22,6 +22,9 @@ appliesto:
 
 To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
 
+> [!NOTE]
+> The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) to HoloLens 2 in May 2021, and we are working on an upcoming release based on customer feedback for this fall.
+
 > [!IMPORTANT]
 > Due to a [known issue in our 21H1 build that is affecting Remote Assist users](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), we are currently pausing the offering of Windows Holographic, version 21H1 updates. We have also changed the default Advanced Recovery Companion build to be the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update), which is the latest 20H2 release.
 >
