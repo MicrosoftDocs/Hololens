@@ -31,7 +31,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 | CSP Changes on HoloLens | New CSPs for to query data | IT Admins    | 20348.1403                |
 
 ### CSP changes on HoloLens
-
+ 
 - Introduced in Windows Insider build, 20348.1403
 
 #### DevDetail CSP
