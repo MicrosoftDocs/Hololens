@@ -136,7 +136,7 @@ This does not affect:
 
 [Back to list](#list)
 
-## Downloading locked files doesn't error
+## Downloading locked files doesn't show error
 
 In previous builds of Windows Holographic, when attempting to download a locked file, the result would be an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error. This is a **known issue**.
 
@@ -144,7 +144,7 @@ In previous builds of Windows Holographic, when attempting to download a locked 
 
 ## Device Portal file upload/download times out
 
-Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default. This is a **known issue**.
+Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-doesnt-show-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default. This is a **known issue**.
 
 ### Workaround
 
