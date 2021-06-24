@@ -29,7 +29,7 @@ This article describes how to resolve several common HoloLens issues.
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
-- [Downloading locked files doesn't error](#downloading-locked-files-doesnt-error)
+- [Downloading locked files doesn't show error](#downloading-locked-files-doesnt-show-error)
 - [Device Portal file upload/download times out](#device-portal-file-uploaddownload-times-out)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive doesn't automatically upload pictures](#onedrive-doesnt-automatically-upload-pictures)
