@@ -18,7 +18,12 @@ appliesto:
 
 ![HoloLens 2 side view](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. A user account is required to use HoloLens 2.
+Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. HoloLens 2 runs on the [Windows Holographic OS](hololens-release-notes.md), which is based on a "flavor" of Windows 10, that provides users, admins, and developers with a robust, performant, and secure platform. 
+
+> [!NOTE]
+> The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) to HoloLens 2 in May 2021, and we are working on an upcoming release based on customer feedback for this fall.
+
+A user account is required to use HoloLens 2.
 
 ## HoloLens components
 
@@ -128,7 +133,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 |   |   |
 | - | - |
-| Windows Holographic Operating System | With Windows Holographic, Windows 10 users will be able to use some of their apps and games in a mixed reality environment via the HoloLens 2.
+| Windows Holographic Operating System | With [Windows Holographic OS](hololens-release-notes.md), Windows 10 users will be able to use some of their apps and games in a mixed reality environment via the HoloLens 2.
 | 3D Viewer | [3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) lets you easily view 3D models and animations in real time.|
 | Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), your personal productivity assistant, helps you stay on top of what matters and save time finding what you need.  |
 | Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) will help employees learn new skills faster on HoloLens devices. |
