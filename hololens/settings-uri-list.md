@@ -84,7 +84,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 ### Apps
 | Settings page | URI                          |
 |---------------|------------------------------|
-| Apps & features<sup>2</sup>     | `appsfeatures` <br> |
+| Apps & features <sup>2</sup>     | `appsfeatures` <br> |
 | Apps & features > Advanced Options <sup>2</sup>     | `appsfeatures-app` <br> |
 | Apps & features > Offline Maps <sup>2</sup>     | `maps-maps` <br> |
 | Apps & features > Offline Maps > Download maps <sup>2</sup>     | `maps-downloadmaps` <br> |
