@@ -262,7 +262,7 @@ You can [put the device into **Flashing Mode** and use Advanced Recovery Compani
 
 ## Unity isn't working
 
-- See [Install the tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) for the most up-to-date version of Unity recommended for HoloLens development.
+- See [Install the tools](windows/mixed-reality/install-the-tools) for the most up-to-date version of Unity recommended for HoloLens development.
 - Known issues with the Unity HoloLens Technical Preview are documented in the [HoloLens Unity forums](https://forum.unity3d.com/threads/known-issues.394627/).
 
 [Back to list](#list)
