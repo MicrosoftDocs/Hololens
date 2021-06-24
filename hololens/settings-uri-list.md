@@ -33,7 +33,7 @@ The following example illustrates a policy that would hide the OS Reset page:
 - `hide:reset`
 
 
-##Deploying this policy via Intune
+## Deploying this policy via Intune
 
 These are the configuration values that will be supplied to Intune:
 
@@ -50,7 +50,7 @@ These are the configuration values that will be supplied to Intune:
 See [HoloLens MDM configuration](hololens-mdm-configure.md) for more information on Intune groups and device configurations.
 
 
-##Deploying this policy via a Provisioning Package
+## Deploying this policy via a Provisioning Package
 
 These are the configuration values that will be specified in Windows Configuration Designer:
 
