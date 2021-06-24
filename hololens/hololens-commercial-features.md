@@ -46,6 +46,10 @@ What makes the HoloLens 2 so powerful?
 > [Explore HoloLens 2 options](hololens2-options.md)
 
 
+> [!div class="nextstepaction"]
+> [Explore Mixed Reality support and help options](hololens2-support.md)
+
+
 ## Managing HoloLens 2 in your organization
 HoloLens 2 includes features that make it easier for organizations to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](hololens-provisioning.md) using [Windows Configuration Designer](app-deploy-provisioning-package.md#setup).
 
@@ -68,6 +72,3 @@ Learn about [Licensing Requirements](hololens-licenses-requirements.md) for the 
 
 > [!div class="nextstepaction"]
 >[Planning HoloLens 2 deployment](hololens-requirements.md) 
-
-> [!div class="nextstepaction"]
-> [Explore Mixed Reality support and help options](hololens2-support.md)
