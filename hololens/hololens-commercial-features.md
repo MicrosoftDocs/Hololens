@@ -23,8 +23,6 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 
 Introduce new ways for your workforce to solve problems, design and review spaces, learn complex processes, and help customers buy the right product—right where they are in the field or on the factory floor—using pre-built solutions from Microsoft and our industry partners.
 
-[!INCLUDE [solutions](includes/hlsolutions.md)]
-
 ## HoloLens 2 capabilities
 
 What makes the HoloLens 2 so powerful?
@@ -41,6 +39,12 @@ What makes the HoloLens 2 so powerful?
 | World Anchoring | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
 | Ergonomic Fit | Wear HoloLens 2 longer and more comfortably with a dial-in fit system designed for extended use. And keep your glasses on—the headset slides right over them. When it's time to switch tasks, flip the visor up to step out of mixed reality. |
 | Auto-Customized Display | HoloLens 2 displays are automatically adjusted with Auto Eye Position (AEP), eliminating the need to run a manual calibration process when the device is [shared between users](hololens-multiple-users.md). |
+
+[!INCLUDE [solutions](includes/hlsolutions.md)]
+
+> [!div class="nextstepaction"]
+> [Explore HoloLens 2 options](hololens2-options.md)
+
 
 ## Managing HoloLens 2 in your organization
 HoloLens 2 includes features that make it easier for organizations to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](hololens-provisioning.md) using [Windows Configuration Designer](app-deploy-provisioning-package.md#setup).
@@ -61,8 +65,9 @@ Manage Hololens devices in my organization | [**Mobile Device Managment**](holol
 Learn about [Licensing Requirements](hololens-licenses-requirements.md) for the above solutions.
 
 ## Next Steps
-> [!div class="nextstepaction"]
-> [Explore HoloLens 2 options](hololens2-options.md)
 
 > [!div class="nextstepaction"]
 >[Planning HoloLens 2 deployment](hololens-requirements.md) 
+
+> [!div class="nextstepaction"]
+> [Explore Mixed Reality support and help options](hololens2-support.md)
