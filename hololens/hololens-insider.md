@@ -24,10 +24,14 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev and Beta Channels for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality. 
+We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev and Beta Channels for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality.
+
+| Feature                 | Description                | Target Users | Build introduced |
+|-------------------------|----------------------------|--------------|------------------|
+| CSP Changes on HoloLens | New CSPs for to query data | IT Admins    | 20348.1403                 |
 
 ### CSP changes on HoloLens
- 
+
 - Introduced in Windows Insider build, 20348.1403
 
 #### DevDetail CSP
