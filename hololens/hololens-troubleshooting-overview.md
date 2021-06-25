@@ -1,7 +1,7 @@
 ---
 title: General troubleshooting
 description: This article provides different ways of troubleshooting HoloLens devices.
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.date: 06/05/2021
 ms.prod: hololens

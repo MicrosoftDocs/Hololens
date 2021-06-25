@@ -4,7 +4,7 @@ description: Learn more about deploying and managing HoloLens in enterprise envi
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
-author: bogenera
+author: bgener
 ms.author: bogenera
 audience: ITPro
 ms.topic: article
@@ -18,11 +18,11 @@ appliesto:
 
 ## Overview
 
-This page provides a high-level architecture overview for three common scenarios when deploying and managing Microsoft HoloLens 2 devices within the enterprise.
+Figuring out how to deploy a new device can be a struggle when you try it the first time and do not have the right knowledge. Here we share different ways to deploy and manage Microsoft HoloLens 2 devices within the organization.
 
-Figuring out how to deploy a new device can be a struggle when you try it the first time and do not have the right knowledge. To solve this challenge and speed up the deployment process, we outlined common scenarios. The scenarios help you better understand what is going on and choose which deployment method suits your needs the best.
+HoloLens 2 is designed as a highly secure device that supports Modern Device Management and requires low maintenance effort. Windows Autopilot self-deploying mode enables a device to be deployed with zero user interaction.​ Self-deploying mode greatly simplifies a deployment process by applying device targeted policies, applications, certificate and networking profiles.​
 
-Based on your existing infrastructure, we invite you to review the common device management style (MDM) in the following scenarios. There are also three corresponding guides available to help you get started. 
+To enable smooth deployment process of HoloLens 2 at your organization, it is important to understand common deployment scenarios and test them. Choosing among these scenarios, and understanding the capabilities and limitations of each, is a key task. Based on your existing infrastructure, we invite you to review the Modern Device Management style (MDM) in the following scenarios. There are also three corresponding guides available to help you get started.
 
  1. [Scenario A: Cloud connected devices](hololens2-cloud-connected-overview.md)
      1. [Scenario A: Cloud connected devices (External Clients)](hololens2-deployment-guide.md)
