@@ -24,9 +24,53 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev and Beta Channels for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality. 
+We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev and Beta Channels for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality.
 
+| Feature                 | Description                | Target Users | Build introduced |
+|-------------------------|----------------------------|--------------|------------------|
+| CSP Changes on HoloLens | New CSPs for to query data | IT Admins    | 20348.1403                 |
 
+### CSP changes on HoloLens
+
+- Introduced in Windows Insider build, 20348.1403
+
+#### DevDetail CSP
+
+DevDetail CSP now also reports free storage space on HoloLens device. This should approximately match with the value shown in Settings App's Storage page. Following is the specific node containing this information.
+
+- ./DevDetail/Ext/Microsoft/FreeStorage (GET operation only)
+
+#### DeviceStatus CSP
+
+DeviceStatus CSP now also reports SSID and BSSID of Wifi network with which HoloLens is actively connected. Following are the specific nodes containing this information.
+
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/SSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/BSSID
+
+Example syncml blob (for MDM vendors) to query for NetworkIdentifiers
+
+```xml
+<SyncML>
+<SyncBody>
+	<Get>
+        <CmdID>$CmdID$</CmdID>
+        <Item>
+            <Target>
+            <LocURI>
+                ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers?list=StructData
+			</LocURI>
+            </Target>
+        </Item>
+    </Get>
+    <Final/>
+</SyncBody>
+</SyncML>
+```
+
+### Fixes and improvements:
+
+- Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 
 ## Start receiving Insider builds
 > [!NOTE]
@@ -68,7 +112,7 @@ You are welcome and encouraged to try developing your applications using Insider
 ## Stop receiving Insider builds
 If you no longer want to receive Insider builds of Windows Holographic, you can opt out when your HoloLens is running a production build, or you can [recover your device](hololens-recovery.md) using the Advanced Recovery Companion to recover your device to a non-Insider version of Windows Holographic.
 > [!CAUTION]
-> There is a known issue in which users who un-enroll from Insider Preview builds after manually reinstalling a fresh preview build would experience a blue screen. Afterwards they must manually recover their device. For full details on if you would be impacted or not, please view more on this [Known Issue](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build).
+> There is a known issue in which users who un-enroll from Insider Preview builds after manually reinstalling a fresh preview build would experience a blue screen. Afterwards they must manually recover their device. For full details on if you would be impacted or not, please view more on this [Known Issue](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build).
 To verify that your HoloLens is running a production build:
 1. Go to **Settings > System > About**, and find the build number.
 1. [See the release notes for production build numbers](hololens-release-notes.md).
