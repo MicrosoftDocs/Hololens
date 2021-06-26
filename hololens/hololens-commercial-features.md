@@ -32,23 +32,23 @@ Collaborate without boundaries and act with precision at the point of work to in
 
 | Feature | Description |
 |---------|-------------|
-| Azure-powered | Stream high-fidelity 3D content that can be anchored to a location and/or object that persists across users with Azure mixed reality services.
 | Windows Hello for Business | Iris-based biometric authentication gets you quickly and securely into the flow of work. |
 | Windows Autopilot | Setup and preconfigure services for HoloLens 2 so they're ready to use right out of the box across distributed worksites. |
+| World Anchoring | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
 | Hand tracking | Touch, grasp and move holograms in ways that feel natural. HoloLens 2 adapts to your hands for a newfound satisfaction in your interactions. |
 | Eye tracking | Enjoy a new level of context and human understanding. HoloLens 2 understands precisely where you’re looking, so it can understand your intent and adapt the holograms to your eyes in real time. |
 | Voice enabled | Built-in voice commands allow you to quickly navigate and operate HoloLens 2 when your hands are occupied with a task. |
+| Azure-powered | Stream high-fidelity 3D content that can be anchored to a location and/or object that persists across users with Azure mixed reality services.
 | Untethered | Move freely, with no wires or external packs to get your way on the job. |
+| Best with Microsoft Mesh | With its immersive mixed reality capabilities, connect and collaborate with others as if you are there in person. |
+| Mixed Reality Capture | Document an experience as a photo or a video to share with others in real-time. |
 | MEMS Display | Experience smooth movements, more-believable animations and quick response when you move your head. It’s all thanks to this industry-defining innovation which dramatically increases immersion while shrinking the size of the displays. | 
-| Mixed Reality Capture | Document an experience as a photo or a video to share with others in real-time. 
 | Large Field of View | Enjoy a larger field of view in the HoloLens 2. With this expanded canvas and higher resolution than the original, you can read an 8-point font on a holographic website, have precise interactions with holograms and – ultimately – create and immerse yourself in Mixed Reality. |
 | Computer Vision | Using Surface Reconstruction, different surfaces in the room are scanned by the depth cameras. Multiple passes of the scan are stitched together and merged over time (even as you walk through the room) to create a 3D mesh of the many planes in the room.
 | Spatial Audio | Perceive sound all around you with audio that stimulates your mind into perceiving sound in 3D. Hear where the holograms are with HoloLens 2. |
 | Holographic Processing Unit (HPU) | Experience AI inferencing on the edge for much faster response times. This low latency is due to the custom silicon invented for HoloLens 2. You’ll notice this speed for things like hand tracking. |
-| World Anchoring | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
-| Ergonomic Fit | Wear HoloLens 2 longer and more comfortably with a dial-in fit system designed for extended use. And keep your glasses on—the headset slides right over them. When it's time to switch tasks, flip the visor up to step out of mixed reality. |
 | Auto-Customized Display | HoloLens 2 displays are automatically adjusted with Auto Eye Position (AEP), eliminating the need to run a manual calibration process when the device is [shared between users](hololens-multiple-users.md). |
-| Best with Microsoft Mesh | With its immersive mixed reality capabilities, connect and collaborate with others as if you are there in person. 
+
 
 
 ## Managing HoloLens 2 in your organization
