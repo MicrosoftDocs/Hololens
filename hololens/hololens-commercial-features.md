@@ -21,19 +21,22 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 
 # What can HoloLens 2 do for you?
 
-HoloLens 2 enables enterprises to confidently deploy mixed reality applications to be more productive and act with precision. HoloLens 2 brings digital intelligence into the real world at the point of work, enhancing collaboration and allowing workers to comfortably work heads-up, hands free to seamlessly complete critical tasks safely and error free. 
-
+Collaborate without boundaries and act with precision to increase employee productivity with mixed reality applications on HoloLens 2. Stay engaged heads-up, hands free longer and more comfortably with built-in voice commands, eye tracking, and world-anchoring for continuous focus on safely completing tasks without errors. Connect with remote colleagues in real-time and work together across an extensive holographic canvas overlayed in your physical environment to quickly resolve issues at the point of work. Realize ROI right out of the box with a robust ecosystem of applications that are supported with the security, reliability, and scalability of Microsoft.  
 
 [!INCLUDE [solutions](includes/hlsolutions.md)]
 
 ## HoloLens 2 capabilities
 
-Collaborate without boundaries and act with precision at the point of work to increase employee productivity with mixed reality applications on HoloLens 2.
-
+What makes the HoloLens 2 so powerful?
 
 | Feature | Description |
 |---------|-------------|
-| World Anchoring | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
+| Windows Hello for Business | Iris-based biometric authentication gets you quickly and securely into the flow of work. |
+| Windows Autopilot | Setup and preconfigure services for HoloLens 2 so they're ready to use right out of the box across distributed worksites. |
+| OS Updates | Keep secure with monthly servicing updates and take advantage of new productivity and manageability capabilities in bi-annual releases. |
+| Easily Manage devices | Manage multiple HoloLens 2 devices simultaneously using solutions like Microsoft Intune, VMware Workspace One, MobileIron, and many more. |
+| Operate in regulated environments | HoloLens 2 has an extensive device portfolio that supports highly regulated environments including environments designated ISO Class 5.0 and UL Class I, Division 2. |
+| World-anchoring | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
 | Hand tracking | Touch, grasp and move holograms in ways that feel natural. HoloLens 2 adapts to your hands for a newfound satisfaction in your interactions. |
 | Eye tracking | Enjoy a new level of context and human understanding. HoloLens 2 understands precisely where you’re looking, so it can understand your intent and adapt the holograms to your eyes in real time. |
 | Voice enabled | Built-in voice commands allow you to quickly navigate and operate HoloLens 2 when your hands are occupied with a task. |
@@ -41,15 +44,7 @@ Collaborate without boundaries and act with precision at the point of work to in
 | Large FoV | Expand your holographic canvas with high resolution, large field-of-view displays. |
 | Untethered | Move freely, with no wires or external packs to get your way on the job. |
 | Azure-powered | Stream high-fidelity 3D content that can be anchored to a location and/or object that persists across users with Azure mixed reality services.
-| Best with Microsoft Mesh | With its immersive mixed reality capabilities, connect and collaborate with others as if you are there in person. |
-| Mixed Reality Capture | Document an experience as a photo or a video to share with others in real-time. |
-| Windows Holographic | HoloLens 2 architecture has been designed to provide advanced, innovative security and privacy protection, from the ground up.  |
-| Windows Hello for Business | Iris-based biometric authentication gets you quickly and securely into the flow of work. |
-| Windows Autopilot | Setup and preconfigure services for HoloLens 2 so they're ready to use right out of the box across distributed worksites. |
-| OS Updates | Keep secure with monthly servicing updates and take advantage of new productivity and manageability capabilities in bi-annual releases. |
-| Time-to-value | Deliver ROI with HoloLens 2, right out of the box. Choose from over 200 enterprise-ready mixed reality solutions from Dynamics 365 and Microsoft Mixed Reality Partners. |
-| Easily Manage Devices | Manage multiple HoloLens 2 devices simultaneously using solutions like Microsoft Intune, VMware Workspace One, MobileIron, and many more. |
-| Operate in Regulated Environments | HoloLens 2 has an extensive device portfolio that supports highly regulated environments including environments designated ISO Class 5.0 and UL Class I, Division 2. |
+| Mixed reality capture | Document an experience as a photo or a video to share with others in real-time. |
 
 
 ## Managing HoloLens 2 in your organization
