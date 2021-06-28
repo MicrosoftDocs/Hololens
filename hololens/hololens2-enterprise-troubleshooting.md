@@ -67,6 +67,7 @@ If network issues are an obstacle to successfully deploying and using HoloLens 2
 If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
 > [!IMPORTANT]
 > When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
+
 [Back to list](#list)
 
 ## Can't login after updating to Windows Holographic 21H1
@@ -87,6 +88,8 @@ When an impacted device attempts to contact the Azure AD tenant again after it h
 ### Mitigation
 There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](hololens-recovery.md#clean-reflash-the-device).
 
+[Back to list](#list)
+
 ## Autopilot Troubleshooting
 
 The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues, however please be aware that these articles are based on Windows 10 Desktop and not all information may apply to HoloLens:
@@ -94,6 +97,8 @@ The following articles may be a useful resource for you to learn more informatio
 - [Windows Autopilot - known issues](https://docs.microsoft.com/mem/autopilot/known-issues)
 - [Troubleshoot Windows device enrollment problems in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot - Policy Conflicts](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
+
+[Back to list](#list)
 
 ## Managed HoloLens Devices FAQs
 
