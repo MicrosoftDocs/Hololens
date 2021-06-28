@@ -58,7 +58,7 @@ When you sign into an enterprise or organizational account on the device, it may
 [Back to list](#list)
 
 ## Network Troubleshooting
-If network issues are an obstacle to successfully deploying and using HoloLens 2 in your organization, learn how to configure Fiddler and/or Wireshark to capture and analyze HTTP/HTTPS problems. Check out this [blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/diagnose-hololens-2-network-issues-with-fiddler-and-wireshark/ba-p/2322458) for more details.
+If network issues are an obstacle to successfully deploying and using HoloLens 2 in your organization, learn how to configure Fiddler and/or Wireshark to capture and analyze HTTP/HTTPS traffic. Check out this [blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/diagnose-hololens-2-network-issues-with-fiddler-and-wireshark/ba-p/2322458) for more details.
 
 [Back to list](#list)
 
