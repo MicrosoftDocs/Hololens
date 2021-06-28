@@ -33,8 +33,11 @@ Collaborate without boundaries and act with precision at the point of work to in
 
 | Feature | Description |
 |---------|-------------|
+| Windows Holographic | HoloLens 2 architecture has been designed to provide advanced, innovative security and privacy protection, from the ground up.  |
 | Windows Hello for Business | Iris-based biometric authentication gets you quickly and securely into the flow of work. |
 | Windows Autopilot | Setup and preconfigure services for HoloLens 2 so they're ready to use right out of the box across distributed worksites. |
+| Time-to-value | Deliver ROI with HoloLens 2, right out of the box. Choose from over 200 enterprise-ready mixed reality solutions from Dynamics 365 and Microsoft Mixed Reality Partners. |
+| OS Updates | Keep secure with monthly servicing updates and take advantage of new productivity and manageability capabilities in bi-annual releases. |
 | World Anchoring | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
 | Hand tracking | Touch, grasp and move holograms in ways that feel natural. HoloLens 2 adapts to your hands for a newfound satisfaction in your interactions. |
 | Eye tracking | Enjoy a new level of context and human understanding. HoloLens 2 understands precisely where you’re looking, so it can understand your intent and adapt the holograms to your eyes in real time. |
