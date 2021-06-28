@@ -136,18 +136,17 @@ This does not affect:
 
 [Back to list](#list)
 
-
 ## Downloading locked files doesn't error
-> !NOTE
+
+> [!NOTE]
 > This is a **known issue** that is fixed in Windows Insider build, version 20348.1403.
 
-
-In previous builds of Windows Holographic, when attempting to download a locked file, the result would be an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error. 
+In previous builds of Windows Holographic, when attempting to download a locked file, the result would be an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
 
 [Back to list](#list)
 
 ## Device Portal file upload/download times out
-> !NOTE
+> [!NOTE]
 > This is a **known issue** that is fixed in Windows Insider build, version 20348.1403. If you previously disabled SSL Connection as part of the workaround, we highly recommend you re-enable it.
 
 
