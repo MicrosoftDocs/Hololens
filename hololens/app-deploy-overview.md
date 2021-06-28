@@ -37,7 +37,7 @@ Mobile Device Management (MDM) is applicable for:
 
 ## Microsoft Store for Business
 
-The [Microsoft Store for Business](app-deploy-store-business.md) provides IT decision-makers and administrators in businesses to find, acquire, manage, and distribute free and paid apps. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and reuse licenses as needed. For more information, visit [Prerequisites for using the Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business).
+The [Microsoft Store for Business](app-deploy-store-business.md) provides IT decision-makers and administrators in businesses to find, acquire, manage, and distribute free and paid apps. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and reuse licenses as needed. For more information, visit [Prerequisites for using the Microsoft Store for Business](/microsoft-store/prerequisites-microsoft-store-for-business).
 
 The Microsoft Store for Business is applicable for:
 
@@ -56,7 +56,7 @@ This Microsoft Store is applicable for:
 * User manually downloads apps
 * Auto update if connected to Internet
 
-For more information, visit [Holographic Store Apps](https://docs.microsoft.com/hololens/holographic-store-apps).
+For more information, visit [Holographic Store Apps](/hololens/holographic-store-apps).
 
 ## Install via Provisioning Packages
 

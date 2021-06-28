@@ -21,7 +21,7 @@ appliesto:
 
 HoloLens gives users the experience of mixing the real world with the digital world.  Mixed reality capture (MRC) lets you capture that experience as a photo or video, or share what you see with others in real-time.
 
-Mixed reality capture uses a first-person point of view so other people can see holograms as you see them. For a third-person point of view, use [spectator view](https://docs.microsoft.com/windows/mixed-reality/spectator-view). Spectator view is especially useful for demos.
+Mixed reality capture uses a first-person point of view so other people can see holograms as you see them. For a third-person point of view, use [spectator view](/windows/mixed-reality/spectator-view). Spectator view is especially useful for demos.
 
 While it's fun to share videos amongst friends and colleagues, videos can also help teach other people to use an app or to communicate problems with apps and experiences.
 
@@ -81,19 +81,19 @@ To stop recording, use the Start gesture and select the highlighted **Video** ic
 
 > [!NOTE]
 > **Applies to HoloLens (1st gen) only**  
-> The [Windows 10 October 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018) changes how the Start gesture and Windows button behave on HoloLens (1st gen). Before the update, the Start gesture or Windows button would stop a video recording. After the update, however, the Start gesture or Windows button opens the **Start** menu (or the **quick actions menu** if you are in an immersive app), from which you can select the highlighted **video** icon to stop recording.
+> The [Windows 10 October 2018 Update](/windows/mixed-reality/release-notes-october-2018) changes how the Start gesture and Windows button behave on HoloLens (1st gen). Before the update, the Start gesture or Windows button would stop a video recording. After the update, however, the Start gesture or Windows button opens the **Start** menu (or the **quick actions menu** if you are in an immersive app), from which you can select the highlighted **video** icon to stop recording.
 
 ## Share what you see in real-time
 
 You can share what you see in HoloLens with friends and colleagues in real-time. There are a few methods available:
 
 1. Connecting to a Miracast-enabled device or adapter to watch on a TV.
-1. Using [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) to watch on a PC
+1. Using [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal) to watch on a PC
 1. Using the [Microsoft HoloLens companion app](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) to watch on a PC.
 1. Deploying the [Microsoft Dynamics 365 Remote Assist](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist) app, which enables front-line workers to stream what they see to a remote expert. The remote expert can then guide the front-line worker verbally or by annotating in their world.
 
 > [!NOTE]
-> Sharing what you see via Windows Device Portal or Microsoft HoloLens companion app requires your HoloLens to be in [Developer mode](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal).
+> Sharing what you see via Windows Device Portal or Microsoft HoloLens companion app requires your HoloLens to be in [Developer mode](/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal).
 
 ### Stream video with Miracast
 
@@ -102,15 +102,15 @@ Use the Start gesture to go to **Start**, then select the **Connect** icon. From
 To stop sharing, use the Start gesture and select the highlighted **Connect** icon. Because you were streaming, nothing will be saved to your device.
 
 > [!NOTE]
-> Miracast support was enabled on HoloLens (1st gen) beginning with the [Windows 10 October 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018).
+> Miracast support was enabled on HoloLens (1st gen) beginning with the [Windows 10 October 2018 Update](/windows/mixed-reality/release-notes-october-2018).
 
 ### Real time video with Windows Device Portal
 
-Because sharing via Windows Device Portal requires Developer mode to be enabled on HoloLens, follow the instructions in our developer documentation to [set up Developer mode and navigate Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
+Because sharing via Windows Device Portal requires Developer mode to be enabled on HoloLens, follow the instructions in our developer documentation to [set up Developer mode and navigate Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal).
 
 ### Microsoft HoloLens companion app
 
-Because sharing via the Microsoft HoloLens companion app requires Developer mode to be enabled on HoloLens, follow the instructions in our developer documentation to [set up Developer mode](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal). Then, download the [Microsoft HoloLens companion app](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) and follow the instructions within the app to connect to your HoloLens.
+Because sharing via the Microsoft HoloLens companion app requires Developer mode to be enabled on HoloLens, follow the instructions in our developer documentation to [set up Developer mode](/windows/mixed-reality/using-the-windows-device-portal). Then, download the [Microsoft HoloLens companion app](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) and follow the instructions within the app to connect to your HoloLens.
 
 Once the app is set up with your HoloLens, select the **Live stream** option from the app's main menu.
 
@@ -120,7 +120,7 @@ Mixed reality photos and videos are saved to the device's "Camera Roll". You can
 
 You can also view your mixed reality photos and videos in the Photos app, which is pre-installed on HoloLens. To pin a photo in your world, select it in the Photos app and choose **Place in mixed world**. You can move the photo around your world after it's been placed.
 
-To view and/or save your mixed reality photos and videos on a PC connected to HoloLens, you can use [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) or your [PC's File Explorer via MTP](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens).
+To view and/or save your mixed reality photos and videos on a PC connected to HoloLens, you can use [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) or your [PC's File Explorer via MTP](/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens).
 
 ### Use File Explorer to get your pictures, videos and files
 
@@ -136,7 +136,7 @@ Tips:
 - If you don't see any files, please ensure you sign in to your HoloLens to enable access to your data.
 - You can get other files in other folders, such as [diagnostics files](hololens-diagnostic-logs.md#offline-diagnostics) from the Documents folder.
 - From File Explorer on your PC, you can select Device properties to see Windows Holographic OS version number (firmware version), device serial number, and battery percentage.
-- If your Organization has used MDM to disable [Connectivity/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) then you will be unable to connect to your device.
+- If your Organization has used MDM to disable [Connectivity/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) then you will be unable to connect to your device.
 
 ## Share your mixed reality photos and videos
 

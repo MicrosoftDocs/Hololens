@@ -24,7 +24,7 @@ Now that you have everything configured you should be ready to distribute device
 
 Now that everything is properly configured for Azure AD and MDM Enrollment, the rest should now be a snap. You&#39;ll need a Wi-Fi connection and the HoloLens device, as well as one of the previously configured AAD user accounts.
 
-If your device isn&#39;t currently sitting in a factory settings state, now would be a good time to [reflash the device](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device).
+If your device isn&#39;t currently sitting in a factory settings state, now would be a good time to [reflash the device](/hololens/hololens-recovery#clean-reflash-the-device).
 
 1. Once your device is in OOBE, you&#39;ll need to start interacting and following the prompts. 
 1. The critical prompt will be when you are asked **Who owns this HoloLens?** Select **My work or school owns it** and enter your Azure AD account credentials.
@@ -58,15 +58,15 @@ This validation step will assume that you have previously completed the last val
 2. Sign into Teams using the second  Azure AD user account than the one currently signed into your HoloLens. Once signed in your PC you will be ready to receive the call.
 3. Unlock your HoloLens and sign in.
 4. To launch the Remote Assist app open the **Start Menu** and select **Remote Assist**. Remote Assist is not only bundled as an inbox app but pinned to the HoloLens 2&#39;s start menu. In an event you don&#39;t see it pinned to the Start menu, then open the **All apps** list to look for it.
-5. Once Remote Assist starts it should identify the user of the device via [SSO](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) and log into the app.
+5. Once Remote Assist starts it should identify the user of the device via [SSO](/azure/active-directory/manage-apps/what-is-single-sign-on) and log into the app.
 6. From within the app, select **Search** and search for the second user on the PC. Select the user to start the call.
 7. From your PC, answer the call.
 
 Congratulations, you&#39;ve successfully connected and are on your remote assist call. Make sure to try out specific remote assist features, such as using:
 
-- [Inking annotations](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/add-annotations-hololens)
-- [Share a file and view in mixed reality](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/display-save-files)
-- [Get help in another HoloLens app](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/get-help-hololens-app-hololens)
+- [Inking annotations](/dynamics365/mixed-reality/remote-assist/add-annotations-hololens)
+- [Share a file and view in mixed reality](/dynamics365/mixed-reality/remote-assist/display-save-files)
+- [Get help in another HoloLens app](/dynamics365/mixed-reality/remote-assist/get-help-hololens-app-hololens)
 
 ## Next step
 

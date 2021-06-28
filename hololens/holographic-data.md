@@ -30,7 +30,7 @@ Files you create on HoloLens, including photos and videos, are saved directly to
 
 ## View files on HoloLens using File Explorer
 
-> Applies to all HoloLens 2 devices and HoloLens (1st gen) as of the [Windows 10 April 2018 Update (RS4) for HoloLens](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018).
+> Applies to all HoloLens 2 devices and HoloLens (1st gen) as of the [Windows 10 April 2018 Update (RS4) for HoloLens](/windows/mixed-reality/release-notes-april-2018).
 
 Use File Explorer on HoloLens to view and manage files on your device, including 3D objects, documents, and pictures. Go to **Start**  > **All apps**  > **File Explorer** to get started.
 
@@ -47,7 +47,7 @@ You can access photos and videos taken with HoloLens by:
 
 - accessing the Camera Roll directly through the [Photos app](holographic-photos-and-videos.md).
 - uploading photos and videos to cloud storage by syncing your photos and videos to OneDrive.
-- using the Mixed Reality Capture page of the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture).
+- using the Mixed Reality Capture page of the [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture).
 
 ### Photos app
 
@@ -61,9 +61,9 @@ You can also install the [OneDrive app](https://www.microsoft.com/p/onedrive/9wz
 
 ### Connect to a PC
 
-If your HoloLens is running the [Windows 10 April 2018 update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) or later, you can connect your HoloLens to a Windows 10 PC by using a USB cable to browse photos and videos on the device by using MTP (media transfer protocol). You'll need to make sure the device is unlocked to browse files if you have a PIN or password set up on your device.  
+If your HoloLens is running the [Windows 10 April 2018 update](/windows/mixed-reality/release-notes-april-2018) or later, you can connect your HoloLens to a Windows 10 PC by using a USB cable to browse photos and videos on the device by using MTP (media transfer protocol). You'll need to make sure the device is unlocked to browse files if you have a PIN or password set up on your device.  
 
-If you have enabled the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal), you can use it to browse, retrieve, and manage the photos and videos stored on your device.
+If you have enabled the [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal), you can use it to browse, retrieve, and manage the photos and videos stored on your device.
 
 ## Access files within an app
 
@@ -71,11 +71,11 @@ If an application saves files on your device, you can use that application to ac
 
 ### Requesting files from another app
 
-An application can request to save a file or open a file from another app by using [file pickers](https://docs.microsoft.com/windows/mixed-reality/app-model#file-pickers).
+An application can request to save a file or open a file from another app by using [file pickers](/windows/mixed-reality/app-model#file-pickers).
 
 ### Known folders
 
-HoloLens supports a number of [known folders](https://docs.microsoft.com/windows/mixed-reality/app-model#known-folders) that apps can request permission to access.
+HoloLens supports a number of [known folders](/windows/mixed-reality/app-model#known-folders) that apps can request permission to access.
 
 ## View HoloLens files on your PC
 

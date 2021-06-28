@@ -56,7 +56,7 @@ To download apps, you'll need to be signed in with a Microsoft account. Some app
 > [!TIP]
 > To set up a payment method, go to [account.microsoft.com](https://account.microsoft.com/) and select **Payment & billing** > **Payment options** > **Add a payment option**.
 
-1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
+1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
 
 1. Select the Microsoft Store app. After the Store app opens:
    1. Use the search bar to look for applications. 
@@ -69,7 +69,7 @@ To download apps, you'll need to be signed in with a Microsoft account. Some app
 
 To update an app you installed from the Microsoft Store, you can update the app from the Microsoft Store app. For apps installed for the Microsoft Store for Business, you can also update those apps from the Microsoft Store for Business. 
 
-1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
+1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
 
 1. Select the Store app.
 
@@ -114,4 +114,4 @@ On the **Start** menu or in the **All apps** list, browse to the app. Select and
 ### Uninstall from Settings
 On the **Start** menu, select **Settings -> Apps.** Find the app from the list, select it and then click **Uninstall**.
 
-If you are unable to uninstall an app, please file [feedback](https://docs.microsoft.com/hololens/hololens-feedback) using the Feedback Hub.
+If you are unable to uninstall an app, please file [feedback](/hololens/hololens-feedback) using the Feedback Hub.

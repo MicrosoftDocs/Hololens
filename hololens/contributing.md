@@ -12,7 +12,7 @@ ms.prod: hololens
 
 Welcome to the [HoloLens documentation](https://github.com/MicrosoftDocs/Hololens)! Any articles you create or edit in this repo **will be visible to the public.** 
 
-HoloLens docs are displayed on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at https://docs.microsoft.com/hololens. 
+HoloLens docs are displayed on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at /hololens.
 
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thanks for your contribution!
 
@@ -21,7 +21,7 @@ This page covers the basic steps and guidelines for contributing and links to Ma
 | Repository name | URL |
 | --- | --- |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
-| Mixed Reality | [MicrosoftDocs/mixed-reality](https://docs.microsoft.com/windows/mixed-reality) |
+| Mixed Reality | [MicrosoftDocs/mixed-reality](/windows/mixed-reality) |
 | VR Enthusiasts Guide | [MicrosoftDocs/mixed-reality/enthusiast-guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
 ## Before you start
@@ -141,13 +141,13 @@ Use the following workflow to *create new articles* in the documentation repo vi
 The following resources will help you learn how to edit documentation using the Markdown language:
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Additional resources for writing Markdown for docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### Adding tables
 
 Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](https://www.tablesgenerator.com/markdown_tables).
 
-The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code (see below)](#using-visual-studio-code) to edit the documentation.
+The [Docs Markdown Extension for Visual Studio Code](/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code (see below)](#using-visual-studio-code) to edit the documentation.
 
 ### Adding images
 
@@ -170,7 +170,7 @@ While editing in GitHub via a web browser, you can select the **Preview** tab ne
 >[!NOTE]
 >Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
 
-Microsoft employees: once your contributions have been merged into the 'master' branch, you can review the content before it goes public at https://review.docs.microsoft.com/hololens?branch=master. Find your article using the table of contents in the left column.
+Microsoft employees: once your contributions have been merged into the 'master' branch, you can review the content before it goes public at </hololens?branch=master>. Find your article using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 
