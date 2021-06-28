@@ -61,7 +61,7 @@ This article describes how to resolve several common HoloLens issues.
 > There is a newer version of Remote Assist which has a fix for this issue. Please [update Remote Assist](holographic-store-apps.md#update-apps) to the latest version to avoid this issue.
 
 > [!NOTE]
-> Due to this Known Issue's severity we have temporarily paused the availability of Windows Holographic, version 21H1. If you would like to still update your devices to 21H1, please refer to [the instructions in our release notes at the top of the page.](hololens-release-notes.md)
+> Due to this Known Issue's severity we had temporarily paused the availability of Windows Holographic, version 21H1. The 21H1 build is now available again to update to.
 
 On the latest release of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), some users of Remote Assist have experienced video freezing during calls over 20 minutes. This is a **known issue**.
 
