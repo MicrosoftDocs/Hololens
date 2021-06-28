@@ -58,33 +58,22 @@ This article describes how to resolve several common HoloLens issues.
 ## Remote Assist video freezes after 20 minutes
 
 > [!NOTE]
-> Due to this Known Issue's severity we have currently paused the availability of Windows Holographic, version 21H1. If you would like to still update your devices to 21H1, please refer to [the instructions in our release notes at the top of the page.](hololens-release-notes.md)
+> There is a newer version of Remote Assist which has a fix for this issue. Please [update Remote Assist](holographic-store-apps.md#update-apps) to the latest version to avoid this issue.
+
+> [!NOTE]
+> Due to this Known Issue's severity we had temporarily paused the availability of Windows Holographic, version 21H1. The 21H1 build is now available again, so device may once again be updated to the latest 21H1 build.
 
 On the latest release of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), some users of Remote Assist have experienced video freezing during calls over 20 minutes. This is a **known issue**.
 
 ### Workarounds
+
+If you are unable to update Remote Assist to a newer build try the following work around.
 
 #### Restart in between calls
 
 If your calls are going over a length of 20 minutes and you are experiencing this issue, try rebooting your device. Rebooting your device between Remote Assist calls will refresh your device and put it back into a good state.
 
 To quickly restart a device on [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) open the start menu, and select the user icon, then select **Restart**.
-
-#### Revert to an older build
-
-Some customers have found that when reverting to an earlier OS version they no longer experience this issue. If you have found that your devices are experiencing this issue, try these steps:
-
-
-Workarounds:
-
-- If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
-
-- If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
-
-
-1. [Download the build for Windows Holographic, version 20H2 – May 2021 Update](https://aka.ms/hololens2download/10.0.19041.1146)
-1. Follow the [instructions return to a previous OS version](hololens-update-hololens.md#go-back-to-a-previous-version)
-1. Either [pause OS updates on the device manually](hololens-updates.md#pause-updates-via-device) or for many devices use [deferral through MDM](hololens-updates.md#configure-an-update-deferral-policy).
 
 [Back to list](#list)
 
