@@ -21,7 +21,8 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 
 # What can HoloLens 2 do for you?
 
-Introduce new ways for your workforce to solve problems, design and review spaces, learn complex processes, and help customers buy the right product—right where they are in the field or on the factory floor—using pre-built solutions from Microsoft and our industry partners.
+HoloLens 2 enables enterprises to confidently deploy mixed reality applications to be more productive and act with precision. HoloLens 2 brings digital intelligence into the real world at the point of work, enhancing collaboration and allowing workers to comfortably work heads-up, hands free to seamlessly complete critical tasks safely and error free. 
+
 
 [!INCLUDE [solutions](includes/hlsolutions.md)]
 
@@ -47,8 +48,6 @@ Collaborate without boundaries and act with precision at the point of work to in
 | Computer Vision | Using Surface Reconstruction, different surfaces in the room are scanned by the depth cameras. Multiple passes of the scan are stitched together and merged over time (even as you walk through the room) to create a 3D mesh of the many planes in the room.
 | Spatial Audio | Perceive sound all around you with audio that stimulates your mind into perceiving sound in 3D. Hear where the holograms are with HoloLens 2. |
 | Holographic Processing Unit (HPU) | Experience AI inferencing on the edge for much faster response times. This low latency is due to the custom silicon invented for HoloLens 2. You’ll notice this speed for things like hand tracking. |
-| Auto-Customized Display | HoloLens 2 displays are automatically adjusted with Auto Eye Position (AEP), eliminating the need to run a manual calibration process when the device is [shared between users](hololens-multiple-users.md). |
-
 
 
 ## Managing HoloLens 2 in your organization
@@ -66,6 +65,7 @@ Manage Hololens devices in my organization | [**Mobile Device Managment**](holol
 | Secure my environment by locking down apps | [**WDAC**](windows-defender-application-control-wdac.md) | Windows Defender Application Control (WDAC) blocks apps and processes from being launched by the device user.
 | Manage device security with rules for apps and processes | [**Policies (CSPs)**](hololens-csp-policy-overview.md) | IT Admins can define and implement policy settings using an existing list of supported Policy CSPs on HoloLens 2. |  
 | Manage how a device connects to the internet | [**Network and Connectivity**](hololens-certificates-network.md) | Use certificate-based authentication to access Wi-Fi, VPNs, or internal resources. | 
+| Share the device with multiple users | [**Auto-Customized Display**](hololens-calibration.md#auto-eye-position-support) | HoloLens 2 displays are automatically adjusted with Auto Eye Position (AEP), eliminating the need to run a manual calibration process when the device is [shared between users](hololens-multiple-users.md). |
 
 Learn about [Licensing Requirements](hololens-licenses-requirements.md) for the above solutions.
 
