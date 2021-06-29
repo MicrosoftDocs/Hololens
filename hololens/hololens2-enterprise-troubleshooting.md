@@ -60,14 +60,15 @@ When you sign into an enterprise or organizational account on the device, it may
 ## Network Troubleshooting
 If network issues are an obstacle to successfully deploying and using HoloLens 2 in your organization, configure Fiddler and/or Wireshark to capture and analyze HTTP/HTTPS traffic. 
 
-## Configure Fiddler to capture HTTP traffic
+### Configure Fiddler to capture HTTP traffic
+Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It captures every HTTP request the computer makes and records everything associated with it. Uncovering end-user authentication issues for your HTTPS apps drives better productivity and efficiency for your target HoloLens 2 use cases. 
 
-### Prerequisites
+#### Prerequisites
  
 - HoloLens 2 devices and your PC must be on the same network
 - Note the IP address of your PC
 
-### Install and Configure Fiddler
+#### Install and Configure Fiddler
 
 1. On your PC - [install](https://docs.telerik.com/fiddler-everywhere/get-started/installation-procedure) and start Fiddler.  
 1. On your PC - configure Fiddler to allow remote computers to connect.
@@ -75,7 +76,7 @@ If network issues are an obstacle to successfully deploying and using HoloLens 2
     1. Note the listening port for Fiddler (default is 8866)
     1. Check Allow remote computers to connect
     1. Click Save
-3. On your HoloLens 2 – configure Fiddler as the proxy server*:
+3. On your HoloLens 2 – configure Fiddler as the proxy server<sup>1</sup>:
     1. Open the Start menu and select Settings
     1. Select Network & Internet and then Proxy on the left menu
     1. Scroll down to Manual proxy setup and toggle Use a proxy server to On
@@ -83,15 +84,15 @@ If network issues are an obstacle to successfully deploying and using HoloLens 2
     1. Enter the port number noted above (default is 8866)
     1. Click Save
 
-* For builds 20279.1006+ (Insiders and the upcoming release), use the following steps to configure proxy:
-    1. Open the Start menu and go to your Wi-Fi Network’s Properties page 
-    2. Scroll down to Proxy
-    3. Change to Manual Setup
-    4. Enter the IP address of the PC where Fiddler is installed
-    5. Enter the port number noted above. (default is 8866)
-    6. Click Apply
+<sup>1</sup> For builds 20279.1006+ (Insiders and the upcoming release), use the following steps to configure proxy:
+1. Open the Start menu and go to your Wi-Fi Network’s Properties page 
+1. Scroll down to Proxy
+1. Change to Manual Setup
+1. Enter the IP address of the PC where Fiddler is installed
+1. Enter the port number noted above. (default is 8866)
+1. Click Apply
     
-### Decrypt HTTPS traffic from HoloLens 2
+#### Decrypt HTTPS traffic from HoloLens 2
 
 1. On your PC – export the Fiddler certificate.
     1. Go to Fiddler Settings -> HTTPS and expand Advanced Settings
@@ -106,6 +107,24 @@ If network issues are an obstacle to successfully deploying and using HoloLens 2
     5. Select Install
     6. Confirm the certificate is showing in the list of certificates. If not, repeat the above steps
 
+#### Inspect HTTP(S) sessions
+
+On your PC, Fiddler will show the HoloLens 2’s live HTTP(S) sessions. The Inspectors panel in Fiddler can show HTTP(S) request/response in different views - for example, the “Raw” view shows the raw request or response in plain text. 
+
+### Configure Wireshark to capture network traffic
+Wireshark is a network protocol analyzer and is used to inspect TCP/UDP traffic from and to your HoloLens 2 devices. This makes it easy to identify what traffic is crossing your network to your HoloLens 2, how much of it, how frequently, how much latency there is between certain hops, and so forth.
+
+#### Prerequisites:
+- PC must have internet access and support Internet sharing over Wi-Fi
+
+#### Install and Configure Wireshark
+1. On your PC - install [Wireshark](https://www.wireshark.org/#download) 
+1. On your PC - enable Mobile hotspot to share your Internet connection from Wi-Fi.
+1. On your PC - start Wireshark and capture traffic from the Mobile hotspot interface. 
+1. On your HoloLens 2 – change its Wi-Fi network to the PC’s Mobile hotspot. HoloLens 2 IP traffic will show up in Wireshark.
+
+#### Analyze Wireshark logs
+Wireshark filters can help filtering out the packets of interests. 
 
 Check out the original [blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/diagnose-hololens-2-network-issues-with-fiddler-and-wireshark/ba-p/2322458).
 
