@@ -37,9 +37,11 @@ The following example illustrates a policy that would hide the OS Reset page:
 
 These are the configuration values that will be supplied to Intune:
 
-**Name:** An admin preferred display name for the profile
-**OMA-URI:** The fully qualified URI of the setting page including its [scope](/windows/client-management/mdm/policy-configuration-service-provider). This examples on this page are using the `./Device` scope.
-**Value:** A string value that indicates whether to hide or show *only* the specified pages. Possible values are `hide:<pagename>` and `showonly:<pagename>`. Multiple pages can be specified by separating them with a semicolon, and a listing of common pages can be found below.
+- **Name:** An admin preferred display name for the profile.
+- **OMA-URI:** The fully qualified URI of the setting page including its [scope](/windows/client-management/mdm/policy-configuration-service-provider). This examples on this page are using the `./Device` scope.
+- **Value:** A string value that indicates whether to hide or show *only* the specified pages. Possible values are `hide:<pagename>` and `showonly:<pagename>`. 
+ 
+Multiple pages can be specified by separating them with a semicolon, and a listing of common pages can be found below.
 
 1. Create a **Custom policy**.
 1. When setting the **OMA-URI** enter the fully scoped URI. For example: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
