@@ -62,7 +62,7 @@ These are the configuration values that will be specified in Windows Configurati
 1. Enter the string: **`showonly:network-wifi;network-proxy;bluetooth`**
 1. Export your Provisioning Package.
 1. Apply the package to your device.
-For full details on how to create and apply a provisioning package visit [this page](hololens-provisioning.md).
+For full details on how to create and apply a provisioning package visit [the HoloLens provisioning page](hololens-provisioning.md).
 
 
 Regardless of method chosen your device should now receive the changes and users will be presented with the following Settings App.
