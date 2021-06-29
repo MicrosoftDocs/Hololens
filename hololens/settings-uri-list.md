@@ -45,7 +45,8 @@ These are the configuration values that will be supplied to Intune:
 1. When setting the **OMA-URI** enter the fully scoped URI. For example: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
 1. When selecting the data pick choose: **String**
 1. When specifying **Value** use the guidance above. For example: **`showonly:network-wifi;network-proxy;bluetooth`** or **`hide:reset`** 
-1. **IMPORTANT:** Make sure to assign the custom device configuration to a group the device is intended to be in. If this step is not performed, the policy will be pushed but won't be applied.
+> [!IMPORTANT]
+> Make sure to assign the custom device configuration to a group the device is intended to be in. If this step is not performed, the policy will be pushed but won't be applied.
 
 See [HoloLens MDM configuration](hololens-mdm-configure.md) for more information on Intune groups and device configurations.
 
