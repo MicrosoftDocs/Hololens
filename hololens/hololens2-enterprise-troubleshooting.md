@@ -58,7 +58,56 @@ When you sign into an enterprise or organizational account on the device, it may
 [Back to list](#list)
 
 ## Network Troubleshooting
-If network issues are an obstacle to successfully deploying and using HoloLens 2 in your organization, learn how to configure Fiddler and/or Wireshark to capture and analyze HTTP/HTTPS traffic. Check out this [blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/diagnose-hololens-2-network-issues-with-fiddler-and-wireshark/ba-p/2322458) for more details.
+If network issues are an obstacle to successfully deploying and using HoloLens 2 in your organization, configure Fiddler and/or Wireshark to capture and analyze HTTP/HTTPS traffic. 
+
+## Configure Fiddler to capture HTTP traffic
+
+### Prerequisites
+ 
+- HoloLens 2 devices and your PC must be on the same network
+- Note the IP address of your PC
+
+### Install and Configure Fiddler
+
+1. On your PC - [install](https://docs.telerik.com/fiddler-everywhere/get-started/installation-procedure) and start Fiddler.  
+1. On your PC - configure Fiddler to allow remote computers to connect.
+    1. Go to Fiddler Settings -> Connections
+    1. Note the listening port for Fiddler (default is 8866)
+    1. Check Allow remote computers to connect
+    1. Click Save
+3. On your HoloLens 2 – configure Fiddler as the proxy server*:
+    1. Open the Start menu and select Settings
+    1. Select Network & Internet and then Proxy on the left menu
+    1. Scroll down to Manual proxy setup and toggle Use a proxy server to On
+    1. Enter the IP address of the PC where Fiddler is installed
+    1. Enter the port number noted above (default is 8866)
+    1. Click Save
+
+* For builds 20279.1006+ (Insiders and the upcoming release), use the following steps to configure proxy:
+    1. Open the Start menu and go to your Wi-Fi Network’s Properties page 
+    2. Scroll down to Proxy
+    3. Change to Manual Setup
+    4. Enter the IP address of the PC where Fiddler is installed
+    5. Enter the port number noted above. (default is 8866)
+    6. Click Apply
+    
+### Decrypt HTTPS traffic from HoloLens 2
+
+1. On your PC – export the Fiddler certificate.
+    1. Go to Fiddler Settings -> HTTPS and expand Advanced Settings
+    2. Click Export Fiddler certificate. It will save to your desktop
+    3. Move the certificate over to the Downloads folder on your HoloLens 2
+
+2.	On your HoloLens 2 - import the Fiddler certificate.
+    1. Go to Settings -> Update and Security -> Certificates
+    2. Click Install Certificate, browse to the Downloads folder and select the Fiddler certificate
+    3. Change Store Location to Local Machine
+    4. Change Certificate Store to root
+    5. Select Install
+    6. Confirm the certificate is showing in the list of certificates. If not, repeat the above steps
+
+
+Check out the original [blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/diagnose-hololens-2-network-issues-with-fiddler-and-wireshark/ba-p/2322458).
 
 [Back to list](#list)
 
