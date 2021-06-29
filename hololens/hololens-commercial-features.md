@@ -31,11 +31,6 @@ What makes the HoloLens 2 so powerful?
 
 | Feature | Description |
 |---------|-------------|
-| Windows Hello for Business | Iris-based biometric authentication gets you quickly and securely into the flow of work. |
-| Windows Autopilot | Setup and preconfigure services for HoloLens 2 so they're ready to use right out of the box across distributed worksites. |
-| OS Updates | Keep secure with monthly servicing updates and take advantage of new productivity and manageability capabilities in bi-annual releases. |
-| Easily Manage devices | Manage multiple HoloLens 2 devices simultaneously using solutions like Microsoft Intune, VMware Workspace One, MobileIron, and many more. |
-| Operate in regulated environments | HoloLens 2 has an extensive device portfolio that supports highly regulated environments including environments designated ISO Class 5.0 and UL Class I, Division 2. |
 | World-anchoring | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
 | Hand tracking | Touch, grasp and move holograms in ways that feel natural. HoloLens 2 adapts to your hands for a newfound satisfaction in your interactions. |
 | Eye tracking | Enjoy a new level of context and human understanding. HoloLens 2 understands precisely where you’re looking, so it can understand your intent and adapt the holograms to your eyes in real time. |
@@ -45,6 +40,11 @@ What makes the HoloLens 2 so powerful?
 | Untethered | Move freely, with no wires or external packs to get your way on the job. |
 | Azure-powered | Stream high-fidelity 3D content that can be anchored to a location and/or object that persists across users with Azure mixed reality services.
 | Mixed reality capture | Document an experience as a photo or a video to share with others in real-time. |
+| Windows Hello for Business | Iris-based biometric authentication gets you quickly and securely into the flow of work. |
+| Windows Autopilot | Setup and preconfigure services for HoloLens 2 so they're ready to use right out of the box across distributed worksites. |
+| OS Updates | Keep secure with monthly servicing updates and take advantage of new productivity and manageability capabilities in bi-annual releases. |
+| Easily Manage devices | Manage multiple HoloLens 2 devices simultaneously using solutions like Microsoft Intune, VMware Workspace One, MobileIron, and many more. |
+| Operate in regulated environments | HoloLens 2 has an extensive device portfolio that supports highly regulated environments including environments designated ISO Class 5.0 and UL Class I, Division 2. |
 
 
 ## Managing HoloLens 2 in your organization
