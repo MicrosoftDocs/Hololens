@@ -46,11 +46,13 @@ If you are planning on using Intune as your MDM, read up on the [list of suites]
 
 ### Dynamics 365 Remote Assist 
 
+#### Admin
 - Azure AD account (required for purchasing the subscription and assigning licenses)
 - [Remote Assist subscription](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (or [Remote Assist Trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
 #### Dynamics 365 Remote Assist user
 
+- Azure AD account
 - Remote Assist license
 - Network Connectivity
 
@@ -63,10 +65,12 @@ If you plan on implementing this [cross-tenant scenario](https://docs.microsoft.
 
 ### Dynamics 365 Guides 
 
+#### Admin
 - Azure AD account (required for purchasing the subscription and assigning licenses)
 - Dynamics 365 [Guides subscription or free trial](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one)
 
 #### Guides Author
+1. Azure AD account
 1. Dynamics 365 Guides license
 1. Dynamics 365 Guides application installed on a PC or HoloLens
 1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (used to view the Analytics dashboard)
@@ -74,6 +78,8 @@ If you plan on implementing this [cross-tenant scenario](https://docs.microsoft.
 1. Network Connectivity
 
 #### Guides User
+
+1. Azure AD account
 1. Dynamics 365 Guides license
 1. Dynamics 365 Guides app installed on a HoloLens
 1. Operator role (for testing or using guides)
