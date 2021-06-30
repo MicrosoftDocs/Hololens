@@ -57,7 +57,7 @@ More details on how to [Redeem your Pixyz license.](https://www.pixyz-software.c
 ### Azure
 Here are some common [Azure products for Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) you may wish you redeem your Azure credit for.
 How to redeem Azure credits:
-To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. [Learn more.](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+To redeem your $500 Azure credits, redeem your Azure Pass promo code and activate your subscription. [Learn more.](hololens2-development-edition-faq.yml#how-can-i-redeem-my-500-azure-credit)
 
 - [Learn how Azure Spatial Anchors can help you build apps that map, share, and persist 3D content](https://azure.microsoft.com/services/spatial-anchors/)
 - [Learn how Azure Remote Rendering can render high-quality, interactive 3D content, and stream it to your devices in real time](https://azure.microsoft.com/services/remote-rendering/)
@@ -74,7 +74,7 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 
 ## Developer Edition additional resources
 
-- [HoloLens 2 Development Edition FAQs](hololens2-development-edition-faq.md)
+- [HoloLens 2 Development Edition FAQs](hololens2-development-edition-faq.yml)
 - [Make sure to install the tools for HoloLens development.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Learn about developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 - [Learn about how to combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
