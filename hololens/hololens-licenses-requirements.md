@@ -19,11 +19,17 @@ appliesto:
 
 ## HoloLens 2 Device-only (non-managed)
 
-MSA Account 
+[Local Account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
 
-## HoloLens 2 Device 
+[Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)
 
-Azure AD Account
+> [!WARNING]
+> Multiple users are not supported for a device using either of these accounts.
+
+
+## HoloLens 2 Device (managed)
+
+[Azure AD Account](https://docs.microsoft.com/azure/active-directory/)
 
 ## Mobile Device Management (MDM) Licenses Guidance
 
@@ -32,19 +38,11 @@ If you plan on managing your HoloLens devices, you will need Azure AD and an MDM
 > Active Directory (AD) cannot be used to manage HoloLens devices.
 
 
-If you plan on using an MDM other than Intune, an [Azure Active Directory License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) is required.
-If you plan on using Intune as your MDM, read up on the [list of suites](https://docs.microsoft.com/intune/fundamentals/licenses) that include Intune licenses. **Please note that Azure AD is included in the majority of these suites.**
+If you are planning on or using an MDM other than Intune, an [Azure Active Directory License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) is required.
+
+If you are planning on using Intune as your MDM, read up on the [list of suites](https://docs.microsoft.com/intune/fundamentals/licenses) that include Intune licenses. **Please note that Azure AD is included in the majority of these suites.**
 
 ## Identify the licenses needed for your scenario and products
-
-### HoloLens (1st gen) Licenses Requirements
-
-You may need to upgrade your HoloLens (1st gen) device to Windows Holographic for Business. (See [HoloLens commercial features](holoLens-commercial-features.md#feature-comparison-between-editions) to determine if you need to upgrade).
-
- If so, you will need to do the following:
-
-- Acquire a HoloLens Enterprise license XML file
-- Apply the XML file to the HoloLens. You can do this through a [Provisioning package](hololens-provisioning.md) or through your [Mobile Device Manager](https://docs.microsoft.com/intune/configuration/holographic-upgrade)
 
 ### Remote Assist License Requirements
 
@@ -62,5 +60,9 @@ If you plan on implementing **[this cross-tenant scenario](https://docs.microsof
 Check out the [updated licensing and device requirements](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements).
 
 1. [Azure Active Directory (Azure AD) License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-1. [Power BI](https://powerbi.microsoft.com/desktop/)
-1. [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup)
+1. Dynamics 365 Guides applications PC and HoloLens
+1. Dynamics 365 [Guides subscription]((https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup))
+    1. Microsoft Dataverse (included)
+    1. Power Apps (included)
+1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
+1. Network Connectivity
