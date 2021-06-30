@@ -20,23 +20,20 @@ appliesto:
 
 Figuring out how to deploy a new device can be a struggle when you try it the first time and do not have the right knowledge. Here we share different ways to deploy and manage Microsoft HoloLens 2 devices within the organization.
 
-HoloLens 2 is designed as a highly secure device that supports Modern Device Management and requires low maintenance effort. Windows Autopilot self-deploying mode enables a device to be deployed with zero user interaction.​ Self-deploying mode greatly simplifies a deployment process by applying device targeted policies, applications, certificate and networking profiles.​
-
 You want solutions - deployed at scale. We want to get you there. Let's first talk about the steps to deploy devices, therefore holograms, to achieve value for your target Mixed Reality scenario, whether you are using D365 Remote Assist, Guides, or an Azure mixed reality service-enabled application you created in house.
 
-You may be a business decision-maker, IT professional, or an innovation team looking to adopt HoloLens within your organization. As you build from Proof of Concept to a scaled deployment, our deployment guides make sense of HoloLens within your IT infrastructure - no matter how big or small.
-
-To enable smooth deployment process of HoloLens 2 at your organization, it is important to understand common deployment scenarios and test them. Choosing among these scenarios, and understanding the capabilities and limitations of each, is a key task. Based on your existing infrastructure, we invite you to review the Modern Device Management style (MDM) in the following scenarios. The following deployment scenarios are the most common:
+You may be a business decision-maker, IT professional, or an innovation team looking to adopt HoloLens within your organization. As you build from Proof of Concept to a scaled deployment, our deployment guides make sense of HoloLens within your IT infrastructure - no matter how big or small. The following deployment scenarios are the most common:
 
  1. [Scenario A: Cloud connected devices](hololens2-cloud-connected-overview.md). When you first begin your deployment, you may start small and deploy a single device connected to the cloud just to see the basic process.
-  1. Devices connected to cloud services and public internet.
-  1. This is most suitable for External customer use cases, Filed Services, and Proof of Concept.
+    1. Devices connected to cloud services and public internet.
+    1. This is most suitable for External customer use cases, Filed Services, and Proof of Concept.
  1. [Scenario B: Organization's network](hololens2-corp-connected-overview.md). As you deploy to production at scale, you may need to integrate with your own enterprise network.
-  1. Devices connected to a "Corporate" wi-fi network
-  1. Most suitable for Internal users, or use within the corporate environment.
+    1. Devices connected to a "Corporate" wi-fi network
+    1. Most suitable for Internal users, or use within the corporate environment.
  1. [Scenario C: Offline secure environment](hololens-common-scenarios-offline-secure.md)
-  1. Devices connected to a highly restrictive network or purely offline devices.
-  1. Most suitable for highly secure environments, or "Experiences" where public will be using the devices.
+    1. Devices connected to a highly restrictive network or purely offline devices.
+    1. Most suitable for highly secure environments, or "Experiences" where public will be using the devices.
+
 
 ## Scenario A: Deploy to cloud connected devices
 
