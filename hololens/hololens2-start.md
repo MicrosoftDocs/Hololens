@@ -38,6 +38,14 @@ The first time you start your HoloLens 2, your first task is to set up Windows H
 
 ![First screen during first boot](images/01-magic-moment.png)
 
+You will see a hummingbird flying around.
+
+![Hummingbird flying](images/hummingbird-1.png)
+
+Follow it with your hand.
+
+![Hummingbird flying close up](images/hummingbird-2.png)
+
 HoloLens 2 will walk you through the following steps:
 
 1. Select your language.
@@ -83,6 +91,7 @@ HoloLens 2 will walk you through the following steps:
 
 1. Sign in to your user account. You'll choose between **My work or school owns it** and **I own it**.
 
+    ![Set user](images/13-device-owner.png)
     - When you choose **My work or school owns it**, you sign in with an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available. In that case, you need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
 
         1. Enter your organizational account information.
@@ -95,8 +104,7 @@ HoloLens 2 will walk you through the following steps:
         1. Enter your Microsoft account information.
         2. Enter your password. If your Microsoft account requires [two-step verification (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), complete the verification process.
 
-    ![Set user](images/13-device-owner.png)
-
+        
 1. Setup Iris sign-in by selecting **Next**. You will go through a similar experience to the eye calibration. Select **Done** when the scan is complete. You may also select **Skip** to bypass this step.
     
     ![Iris setup](images/setup-iris.png) 

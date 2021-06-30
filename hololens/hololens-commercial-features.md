@@ -1,9 +1,9 @@
 ---
 title: HoloLens 2 Capabilities and Solutions
 description: Learn about the Microsoft HoloLens Commercial features that make it easier for businesses to manage HoloLens devices. 
-author: scooley
-ms.author: scooley
-ms.date: 08/26/2019
+author: joyjaz
+ms.author: v-jjaswinski
+ms.date: 06/28/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -16,10 +16,12 @@ ms.reviewer:
 manager: skerewa
 appliesto:
 - HoloLens 2
-keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode, applications, identity
+keywords: HoloLens 2, commercial, features, mdm, mobile device management, kiosk mode, applications, identity, Bitlocker, iris, Windows Hello, Azure-powered, Autopilot, mixed reality, WDAC
 ---
 
-# What can HoloLens 2 do for you?
+# HoloLens Capabilities and Solutions
+
+## What can HoloLens 2 do for you?
 
 Collaborate without boundaries and act with precision to increase employee productivity with mixed reality applications on HoloLens 2. Stay engaged heads-up, hands free longer and more comfortably with built-in voice commands, eye tracking, and world-anchoring for continuous focus on safely completing tasks without errors. Connect with remote colleagues in real-time and work together across an extensive holographic canvas overlayed in your physical environment to quickly resolve issues at the point of work. Realize ROI right out of the box with a robust ecosystem of applications that are supported with the security, reliability, and scalability of Microsoft.  
 
