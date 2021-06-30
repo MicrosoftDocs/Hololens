@@ -265,21 +265,14 @@ You can [put the device into **Flashing Mode** and use Advanced Recovery Compani
 
 [Back to list](#list)
 
-## Emulator
-### The HoloLens Emulator isn't working
+## The HoloLens Emulator isn't working
 
-Information about the HoloLens emulator is located in our developer documentation.  Read more about [troubleshooting the HoloLens emulator](/windows/mixed-reality/using-the-hololens-emulator#troubleshooting).
+Information about the HoloLens emulator is located in our developer documentation.  Read more about [troubleshooting the HoloLens emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting).
 
 
 - Not all apps in the Microsoft Store are compatible with the emulator. For example, Young Conker and Fragments are not playable on the emulator.
 - You cannot use the PC webcam in the Emulator.
 - The Live Preview feature of the Windows Device Portal does not work with the emulator. You can still capture Mixed Reality videos and images.
-
-[Back to list](#list)
-
-## I cannot find or use the keyboard to type in the HoloLens 2 Emulator
-
-*Coming soon*
 
 [Back to list](#list)
 
@@ -317,6 +310,7 @@ Here are some things to try if you can't connect your HoloLens to a Wi-Fi networ
 - If none of these things work, check to make sure that your router is using the latest firmware. You can find this information on the manufacturer website.
 
 [Back to list](#list)
+
 ## Bluetooth devices aren't pairing
 
 If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
