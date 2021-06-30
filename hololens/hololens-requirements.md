@@ -18,7 +18,7 @@ appliesto:
 
 ## Overview
 
-Figuring out how to deploy a new device can be a struggle when you try it the first time and do not have the right knowledge. Here we share different ways to deploy and manage Microsoft HoloLens 2 devices within the organization.
+Figuring out how to deploy a new device can be a struggle when you try it the first time. Here we share different ways to deploy and manage Microsoft HoloLens 2 devices within the organization.
 
 You want solutions - deployed at scale. We want to get you there. Let's first talk about the steps to deploy devices, therefore holograms, to achieve value for your target Mixed Reality scenario, whether you are using D365 Remote Assist, Guides, or an Azure mixed reality service-enabled application you created in house.
 
