@@ -42,27 +42,40 @@ If you are planning on or using an MDM other than Intune, an [Azure Active Direc
 
 If you are planning on using Intune as your MDM, read up on the [list of suites](https://docs.microsoft.com/intune/fundamentals/licenses) that include Intune licenses. **Please note that Azure AD is included in the majority of these suites.**
 
-## Identify the licenses needed for your scenario and products
+## Dynamics 365 Licensing and Requirements
 
-### Remote Assist License Requirements
+### Dynamics 365 Remote Assist 
 
-Make sure you have the required licensing and device, which you can check in the [requirements](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements) documentation.
+- Azure AD account (required for purchasing the subscription and assigning licenses)
+- [Remote Assist subscription](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (or [Remote Assist Trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+    
+#### Dynamics 365 Remote Assist user
 
-1. [Remote Assist License](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
-    1. Or try a [Remote Assist trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
-1. [Teams Freemium/Teams](https://products.office.com/microsoft-teams/free)
-1. [Azure Active Directory (Azure AD) License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- Remote Assist license
+- Network Connectivity
 
-If you plan on implementing **[this cross-tenant scenario](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)**, you may need an Information Barriers license. Please see [this article](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) to determine if an Information Barrier License is required.
+#### Microsoft Teams user
 
-### Guides License Requirements
+- Microsoft Teams or [Teams Freemium](https://products.office.com/microsoft-teams/free).
+- Network connectivity
 
-Check out the [updated licensing and device requirements](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements).
+If you plan on implementing this [cross-tenant scenario](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants), you may need an Information Barriers license. See [this article](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) to determine if an Information Barrier License is required.
 
-1. [Azure Active Directory (Azure AD) License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-1. Dynamics 365 Guides applications PC and HoloLens
-1. Dynamics 365 [Guides subscription]((https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup))
-    1. Microsoft Dataverse (included)
-    1. Power Apps (included)
-1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
+### Dynamics 365 Guides 
+
+- Azure AD account (required for purchasing the subscription and assigning licenses)
+- Dynamics 365 [Guides subscription or free trial](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one)
+
+#### Guides Author
+1. Dynamics 365 Guides license
+1. Dynamics 365 Guides application installed on a PC or HoloLens
+1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (used to view the Analytics dashboard)
+1. Author role (for creating guides)
 1. Network Connectivity
+
+#### Guides User
+1. Dynamics 365 Guides license
+1. Dynamics 365 Guides app installed on a HoloLens
+1. Operator role (for testing or using guides)
+1. Network Connectivity
+
