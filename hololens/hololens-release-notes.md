@@ -26,12 +26,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 > The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) to HoloLens 2 in May 2021, and we are working on an upcoming release based on customer feedback for this fall.
 
 > [!IMPORTANT]
-> Due to a [known issue in our 21H1 build that is affecting Remote Assist users](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), we are currently pausing the offering of Windows Holographic, version 21H1 updates. We have also changed the default Advanced Recovery Companion build to be the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update), which is the latest 20H2 release.
->
-> While we reduce availability of 21H1 to mitigate the impact of this issue, we understand some customers may still be wanting to update to 21H1. For customers who wish to update to 21H1 there are two different paths available:
->
-> - [Enroll your device(s) as Windows Insiders](hololens-insider.md#start-receiving-insider-builds) and select the **Beta Channel**, this will allow those devices to update to 21H1 and have reliable builds.
-> - [Download the latest FFU on your PC](https://aka.ms/hololens2download) and then [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device).
+> Due to a now resolved [known issue in our 21H1 build that was affecting Remote Assist users](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), we temporally paused the offering of Windows Holographic, version 21H1 updates. We had also changed the default Advanced Recovery Companion (ARC) build to the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). The ARC build will now resume targeting the 21H1 build.
 
 ## Windows Holographic, version 21H1 - June 2021 Update
 - Build 20348.1007
