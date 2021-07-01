@@ -26,9 +26,14 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev and Beta Channels for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality.
 
-| Feature                 | Description                | Target Users | Build introduced |
+| Feature                 | Description                | Users or Scenario | Build introduced |
 |-------------------------|----------------------------|--------------|------------------|
 | CSP Changes on HoloLens | New CSPs for to query data | IT Admins    | 20348.1403                 |
+| PFX file support for Certificate Manager | Add PFX certs via Settings UI | End User | 20348.1405 |
+| View advanced diagnostic report in Settings on HoloLens | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
+
+
+
 
 ### CSP changes on HoloLens
 
@@ -42,7 +47,7 @@ DevDetail CSP now also reports free storage space on HoloLens device. This shoul
 
 #### DeviceStatus CSP
 
-DeviceStatus CSP now also reports SSID and BSSID of Wifi network with which HoloLens is actively connected. Following are the specific nodes containing this information.
+DeviceStatus CSP now also reports SSID and BSSID of Wi-Fi network with which HoloLens is actively connected. Following are the specific nodes containing this information.
 
 - ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/SSID
 - ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/BSSID
@@ -67,10 +72,24 @@ Example syncml blob (for MDM vendors) to query for NetworkIdentifiers
 </SyncML>
 ```
 
+### PFX file support for Certificate Manager
+
+Introduced in Windows Insider build 20348.1405. We’ve added support to the [Certificate Manager](certificate-manager.md) to now use .pfx certificates. When users navigate to **Settings** -> **Update & Security** -> **Certificates**, and select **Install a certificate** the UI now supports .pfx certificate file.
+Users can import .pfx certificate, with private key, to user store or machine store.
+
+### View advanced diagnostic report in Settings on HoloLens
+
+For managed devices when troubleshooting behavior, confirming that an expected policy configuration is applied is an important step. Previously to this new feature, this had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** -> **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
+
+Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select View advanced diagnostic report. This will generate and open the report in a new Edge window.
+
+<screenshot to link>
+
 ### Fixes and improvements:
 
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+
 
 ## Start receiving Insider builds
 > [!NOTE]
