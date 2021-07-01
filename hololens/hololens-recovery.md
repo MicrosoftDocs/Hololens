@@ -20,8 +20,6 @@ appliesto:
 
 # Restart, reset, or recover HoloLens 2
 
-## Charge the device
-
 >[!IMPORTANT]
 > Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](hololens2-setup.md#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device.
 

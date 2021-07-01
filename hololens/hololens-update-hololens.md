@@ -1,5 +1,5 @@
 ---
-title: Update HoloLens
+title: Update HoloLens 2
 description: Learn how to check your HoloLens build number, keep up to date with device updates, join the Insiders Program, and roll back updates.
 keywords: how-to, update, roll back, HoloLens, check build, build number
 ms.prod: hololens
@@ -13,11 +13,10 @@ audience: ITPro
 ms.reviewer: 
 manager: jarrettr
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
 ---
 
-# Update HoloLens
+# Update HoloLens 2
 
 HoloLens uses Windows Update, just like other Windows 10 devices. Your HoloLens will automatically download and install system updates whenever it is plugged-in to power and connected to the Internet, even when it is in standby.
 
@@ -46,44 +45,32 @@ While your HoloLens is installing the update, it will display spinning gears and
 
 HoloLens applies one update at a time.  If your HoloLens is more than one version behind the latest you may need to run through the update process multiple times to get it fully up to date.
 
-## Go back to a previous version - HoloLens 2
+## Go back to a previous version
 
-In some cases, you might want to go back to a previous version of the HoloLens software. You can do this by using the Advanced Recovery Companion to reset your HoloLens to the earlier version.
+In some cases, you might want to go back to a previous version of the HoloLens software. The recommended steps are:
+
+1. Contact Support to see if they can fix your issue.
+    1. Ensure that **Optional** or **Full** telemetry is enabled -  this makes your bug more actionable and easier for engineers to diagnose.
+    1. [File Feedback](hololens-feedback.md) being as descriptive as possible. Take note of the title or use the share feature so you can share your bug with Support.
+    1. Contact [Support](https://aka.ms/hlsupport). If your issue is one that needs to be solved by returning to a previous version, they can supply you the FFU to flash your device.
+
+1. If that does not work, then [reset or reflash your HoloLens 2 with the Advanced Recovery Companion](hololens-recovery.md).
+    1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
+    1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
+    1. Choose which version you want to flash to:
+        1. You can download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
+        1. You can use the default build that ARC hosts. (If you choose this option skip the next step.)
+        1. You can use a build Support provided you with.
+    1. When you have finished these downloads, open **File Explorer** > **Downloads**. Right-click the zipped folder that you just downloaded, and select **Extract all** > **Extract** to unzip it.
+    1. Connect your HoloLens to your PC using a USB-A to USB-C cable. (Even if you've been using other cables to connect your HoloLens, this one works best.)
+    1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
+    1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the .ffu extension.)
+    1. Select **Install software**, and follow the instructions.
 
 > [!NOTE]
 > Going back to an earlier version deletes your personal files and settings.
 
-To go back to a previous version of HoloLens 2, follow these steps:
-
-1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
-1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
-1. Download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
-1. When you have finished these downloads, open **File explorer** > **Downloads**. Right-click the zipped folder that you just downloaded, and select **Extract all** > **Extract** to unzip it.
-1. Connect your HoloLens to your PC using a USB-A to USB-C cable. (Even if you've been using other cables to connect your HoloLens, this one works best.)
-1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
-1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the .ffu extension.)
-1. Select **Install software**, and follow the instructions.
-
-## Go back to a previous version - HoloLens (1st Gen)
-
-In some cases, you might want to go back to a previous version of the HoloLens software. You can do this by using the Windows Device Recovery Tool to reset your HoloLens to the earlier version.
-
-> [!NOTE]
-> Going back to an earlier version deletes your personal files and settings.
-
-To go back to a previous version of HoloLens 1, follow these steps:
-
-1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
-1. On your PC, download the [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379).
-1. Download the [HoloLens Anniversary Update recovery package](https://aka.ms/hololensrecovery).
-1. When the downloads finish, open **File explorer** > **Downloads**. Right-click the zipped folder you just downloaded, and select **Extract all** > **Extract** to unzip it.
-1. Connect your HoloLens to your PC using the micro-USB cable that it came with. (Even if you've been using other cables to connect your HoloLens, this one works best.)
-1. The WDRT will automatically detect your HoloLens. Select the **Microsoft HoloLens** tile.
-1. On the next screen, select **Manual package selection** and choose the installation file contained in the folder you unzipped in step 4. (Look for a file with the .ffu extension.)
-1. Select **Install software**, and follow the instructions.
-
-> [!NOTE]
-> If the WDRT doesn't detect your HoloLens, try restarting your PC. If that doesn't work, select **My device was not detected**, select **Microsoft HoloLens**, and then follow the instructions.
+Additionally, if you would like to stay on your currently installed release, you can also manually [pause updates](hololens-updates.md#pause-updates-via-device). This will give the Engineering Team time to fix the issue.
 
 ## Windows Insider Program on HoloLens
 

@@ -24,32 +24,53 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev and Beta Channels for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality. 
+We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev and Beta Channels for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality.
 
-### OneDrive for work or school Camera Roll upload
+| Feature                 | Description                | Target Users | Build introduced |
+|-------------------------|----------------------------|--------------|------------------|
+| CSP Changes on HoloLens | New CSPs for to query data | IT Admins    | 20348.1403                 |
 
-*Introduced in build 20346.1402*
+### CSP changes on HoloLens
 
-We've added a new feature to the HoloLens 2 Settings app, which allows customers to automatically upload mixed reality photos and videos from the device's Pictures > Camera Roll folder to the corresponding OneDrive for work or school folder. This feature addresses a [feature gap within the OneDrive app](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) on HoloLens 2, which only supports automatic Camera Roll upload to a customer's personal Microsoft account (and not their work or school account).
+- Introduced in Windows Insider build, 20348.1403
 
-**How it works**
+#### DevDetail CSP
 
-- Visit **Settings > System > Mixed Reality Camera** to enable "Camera upload."
-- By setting this feature to the **On** position, any mixed reality photos or videos captured to your device will automatically be queued for upload to the Pictures > Camera Roll folder of your OneDrive for work or school account.
-    >[!NOTE]
-    >Photos and videos captured prior to enabling this feature *will not* be queued for upload and will still need to be manually uploaded.
-- A status message on the Settings page will display the number of files pending upload (or read "OneDrive is up to date" when all pending files have been uploaded).
-- If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files will not upload until you re-enable the feature.
-- Newest files will upload first (last in, first out).
-- If your OneDrive account has issues (for example, after your password changes) a **Fix now** button will appear on the Settings page.
-- There is no maximum file size, but note that large files will take longer to upload (especially if your upload bandwidth is constrained). If you "pause" or turn off upload while a large file is being uploaded, it will immediately cancel the upload. The upload will restart when you re-enable the feature; you won't lose any files, but the partial upload will be discarded.
+DevDetail CSP now also reports free storage space on HoloLens device. This should approximately match with the value shown in Settings App's Storage page. Following is the specific node containing this information.
 
-**Known issues and caveats**
+- ./DevDetail/Ext/Microsoft/FreeStorage (GET operation only)
 
-- This setting has no built in throttling based on current bandwidth usage. If you need to maximize bandwidth for another scenario, turn off the setting manually. Upload will be paused but the feature will continue to monitor newly added files to Camera Roll. Re-enable upload when you're ready for it to continue.
-- This feature must be enabled for each user account on the device, and it can only actively upload files for the user who is currently signed-in to the device.
-- If you're taking photos or videos while watching the upload count on the Settings page in real-time, note that the pending file count may not change until the current file has completed uploading.
-- Upload will pause if your device falls asleep or is powered off. To ensure your pending uploads complete, actively use the device until the Settings page reads "OneDrive is up to date" or adjust your **Power & sleep** settings.
+#### DeviceStatus CSP
+
+DeviceStatus CSP now also reports SSID and BSSID of Wifi network with which HoloLens is actively connected. Following are the specific nodes containing this information.
+
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/SSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/BSSID
+
+Example syncml blob (for MDM vendors) to query for NetworkIdentifiers
+
+```xml
+<SyncML>
+<SyncBody>
+	<Get>
+        <CmdID>$CmdID$</CmdID>
+        <Item>
+            <Target>
+            <LocURI>
+                ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers?list=StructData
+			</LocURI>
+            </Target>
+        </Item>
+    </Get>
+    <Final/>
+</SyncBody>
+</SyncML>
+```
+
+### Fixes and improvements:
+
+- Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 
 ## Start receiving Insider builds
 > [!NOTE]
@@ -91,7 +112,7 @@ You are welcome and encouraged to try developing your applications using Insider
 ## Stop receiving Insider builds
 If you no longer want to receive Insider builds of Windows Holographic, you can opt out when your HoloLens is running a production build, or you can [recover your device](hololens-recovery.md) using the Advanced Recovery Companion to recover your device to a non-Insider version of Windows Holographic.
 > [!CAUTION]
-> There is a known issue in which users who un-enroll from Insider Preview builds after manually reinstalling a fresh preview build would experience a blue screen. Afterwards they must manually recover their device. For full details on if you would be impacted or not, please view more on this [Known Issue](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build).
+> There is a known issue in which users who un-enroll from Insider Preview builds after manually reinstalling a fresh preview build would experience a blue screen. Afterwards they must manually recover their device. For full details on if you would be impacted or not, please view more on this [Known Issue](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build).
 To verify that your HoloLens is running a production build:
 1. Go to **Settings > System > About**, and find the build number.
 1. [See the release notes for production build numbers](hololens-release-notes.md).

@@ -29,7 +29,7 @@ Charging rate and speed may vary depending on the environment in which the devic
 - When only one of the five lights is on, the battery level is below 20 percent.
 - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
 
-Full [details on device charging can be read here](hololens-recovery.md#charge-the-device) if more information is needed. 
+Full [details on device charging can be read here](hololens2-charging.md#charging-the-device) if more information is needed. 
 
 ## Adjust fit
 
@@ -64,7 +64,7 @@ To turn on your HoloLens 2, press the Power button.  The LEDs below the Power bu
 | To sleep | Single button press. | All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |
 | To wake from sleep | Single button press. | All five lights turn on, then change to indicate the battery level. A sound immediately plays. |
 | To turn off | Press and hold for 5s. |  All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |
-| To force the Hololens to restart if it is unresponsive | Press and hold for 10s. | All five lights turn on, then fade off one at a time. After the lights turn off. |
+| To force the HoloLens to restart if it is unresponsive | Press and hold for 10s. | All five lights turn on, then fade off one at a time. After the lights turn off. |
 
 ## HoloLens behavior reference
 
@@ -120,4 +120,4 @@ Keep your first few sessions with HoloLens brief and be sure to take breaks. If 
 See [product safety warnings and instructions](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
 
 > [!div class="nextstepaction"]
-> [Start and configure your HoloLens 2](hololens2-start.md)
+> [Set up your HoloLens 2](hololens2-start.md)

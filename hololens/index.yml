@@ -9,9 +9,9 @@ metadata:
   ms.prod: hololens #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice # Optional; Remove if no subservice is used.
   ms.topic: landing-page # Required
-  author: mccoybot #Required; your GitHub user alias, with correct capitalization.
-  ms.author: v-todmc #Required; microsoft alias of author; optional team alias. 
-  ms.date: 5/22/2020 #Required; mm/dd/yyyy format.
+  author: joyjaz #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-jjaswinski #Required; microsoft alias of author; optional team alias. 
+  ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -21,137 +21,97 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
 
-  # Card (optional)
-  - title: HoloLens Overview
+  # Card 
+  - title: Get to know the HoloLens 2
     linkLists:
-      - linkListType: overview
+      - linkListType: learn
         links:
-          - text: HoloLens 2 overview
-            url: hololens2-options.md
-          - text: HoloLens 2 hardware
+          - text: About HoloLens 2 hardware
             url: hololens2-hardware.md
-          - text: Microsoft Mesh (Preview)
-            url: /mesh/overview
-          - text: Use the Start menu and mixed reality home
-            url: holographic-home.md
-          - text: Find, install, and uninstall applications
-            url: holographic-store-apps.md
-          - text: Improve visual quality and comfort
-            url: hololens-calibration.md
-          - text: How to Update HoloLens
-            url: hololens-update-hololens.md
-
-  # Card
-  - title: Deployment Guides
+          - text: Compare HoloLens 2 options
+            url: hololens2-options.md
+      - linkListType: overview
+        links:        
+          - text: Device-only
+            url: hololens2-options-device-only.md
+          - text: Remote Assist edition
+            url: hololens2-options-remote-assist.md
+          - text: Industrial edition
+            url: hololens2-options-industrial-edition.md
+          - text: Development edition
+            url: hololens2-options-dev-edition.md
+          - text: Trimble XR10 with HoloLens 2
+            url: hololens2-options-trimble-xr10-edition.md
+                    
+  # Card 
+  - title: Get started 
     linkLists:
-      - linkListType: deploy
+      - linkListType: how-to-guide
+        links:        
+          - text: First-time usage
+            url: hololens2-setup.md        
+          - text: Daily usage
+            url: holographic-home.md
+            
+  # Card
+  - title: Plan your HoloLens 2 deployment
+    linkLists:
+      - linkListType: architecture
         links:
           - text: Common deployment scenarios
             url: common-scenarios.md
-          - text: Cloud connected HoloLens 2 deployment at scale with Remote Assist
-            url: hololens2-cloud-connected-overview.md
-          - text: Corporate connected HoloLens 2 deployment with Dynamics 365 Guides
-            url: hololens2-corp-connected-overview.md
-          - text: External Clients Deployment Guide
-            url: hololens2-deployment-guide.md
-          - text: Offline secure deployment
-            url: hololens-common-scenarios-offline-secure.md
-
-  # Card
-  - title: Prepare
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Deploy HoloLens in a commercial environment
-            url: hololens-requirements.md
-          - text: Security overview
-            url: security-overview.md
-          - text: License requirements
-            url: hololens-licenses-requirements.md
-          - text: HoloLens environment considerations
-            url: hololens-environment-considerations.md         
-          - text: Commercial features
-            url: hololens-commercial-features.md
-
-  # Card
-  - title: Configure
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Manage user identity and sign-in for HoloLens
-            url: hololens-identity.md
-          - text: Configure your network for HoloLens
-            url: hololens-commercial-infrastructure.md
-          - text: Connect HoloLens to a network
-            url: hololens-network.md
-          - text: Manage connection endpoints for HoloLens
-            url: hololens-offline.md
-          - text: Configure HoloLens using provisioning packages
-            url: hololens-provisioning.md         
-          - text: Set up HoloLens as a kiosk
-            url: hololens-kiosk.md
-
-  # Card
-  - title: Deploy
-    linkLists:
+          - text: Planning HoloLens 2 deployment in a commercial environment
+            url: hololens-core-components.md
+          - text: Autopilot CSS registration
+            url: hololens2-autopilot-registration-support.md  
       - linkListType: deploy
-        links:
-          - text: Enroll HoloLens in MDM
-            url: hololens-enroll-mdm.md
-          - text: Windows Autopilot for HoloLens 2
-            url: hololens2-autopilot.md
-          - text: Application management overview
-            url: app-deploy-overview.md
-          - text: Intune & Company Portal
-            url: app-deploy-intune.md
-          - text: Microsoft Store for Business
-            url: app-deploy-store-business.md
-          - text: Provisioning Package
-            url: app-deploy-provisioning-package.md
-
+        links:       
+          - text: Deployment Guide - Cloud connected HoloLens 2 deployment at scale with Remote Assist
+            url: hololens2-cloud-connected-overview.md
+          - text: Deployment Guide - External Clients (cloud connected)
+            url: hololens2-deployment-guide.md
+          - text: Deployment Guide - Corporate connected HoloLens 2 deployment with Dynamics 365 Guides
+            url: hololens2-corp-connected-overview.md
+          - text: Deployment Guide - Offline secure
+            url: hololens-common-scenarios-offline-secure.md
+  
   # Card
-  - title: Maintain and Troubleshooting Guide
+  - title: Troubleshooting
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Troubleshoot HoloLens issues
+          - text: Device
             url: hololens-troubleshooting.md
-          - text: Restart, reset, or recover HoloLens 2
-            url: hololens-recovery.md
-          - text: Restart, reset, or recover HoloLens (1st gen)
-            url: hololens1-recovery.md
-          - text: Known issues for HoloLens
-            url: hololens-known-issues.md
+          - text: Holograms and interactions
+            url: hololens-faq.md
+          - text: Display
+            url: hololens2-display.md
+          - text: Implementation and managed devices
+            url: hololens2-enterprise-troubleshooting.md    
           - text: Collect and use diagnostic information from HoloLens devices
             url: hololens-diagnostic-logs.md
-          - text: Manage HoloLens updates
-            url: hololens-updates.md
-
+          - text: Restart, reset, or recover HoloLens 2
+            url: hololens-recovery.md
+          
   # Card
-  - title: Release Notes & Feedback
+  - title: Resources
     linkLists:
       - linkListType: whats-new
         links:
           - text: HoloLens 2 release notes
             url: hololens-release-notes.md
-          - text: Insider preview for Microsoft HoloLens
+          - text: Insider preview
             url: hololens-insider.md
+      - linkListType: reference
+        links:      
+          - text: Support and help options  
+            url: hololens2-support.md
           - text: Give us feedback
             url: hololens-feedback.md
-
- # Card
-  - title: More Services
+            
+  # Card
+  - title: Develop with HoloLens 2
     linkLists:
-      - linkListType: reference
-        links:
-          - text: Dynamics 365 Remote Assist Docs
-            url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
-          - text: Learn Dynamics 365 Remote Assist
-            url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
-          - text: Dynamics 365 Guides
-            url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
-          - text: Microsoft Dynamics 365 Mixed Reality 
-            url: https://docs.microsoft.com/dynamics365/mixed-reality/
       - linkListType: how-to-guide
         links:
           - text: What is Mixed Reality?
@@ -162,11 +122,19 @@ landingContent:
             url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
           - text: Cloud Services Overview
             url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
-
-  # Card
-  - title: How to guide
+          - text: Microsoft Mesh (Preview)
+            url: https://docs.microsoft.com/mesh/overview
+ 
+ # Card
+  - title: More services
     linkLists:
       - linkListType: reference
         links:
-          - text: Support and help options for HoloLens2 
-            url: hololens2-support.md
+          - text: Dynamics 365 Remote Assist Docs
+            url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+          - text: Dynamics 365 Guides
+            url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+          - text: Microsoft Dynamics 365 Mixed Reality 
+            url: https://docs.microsoft.com/dynamics365/mixed-reality/
+      
+          

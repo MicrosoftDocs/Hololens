@@ -31,20 +31,22 @@ HoloLens supports several kinds of user identities. You can use one or more user
 
 | Identity type | Accounts per device | Authentication options |
 | --- | --- | --- |
-| [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (requires Azure AD Premium) | 64 | <ul><li>Azure web credential provider</li><li>Azure Authenticator App</li><li>Biometric (Iris) &ndash; HoloLens 2 only<sup>1</sup> </li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
+| [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure web credential provider</li><li>Azure Authenticator App</li><li>Biometric (Iris) &ndash; HoloLens 2 only<sup>2</sup> </li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
 | [Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Biometric (Iris) &ndash; HoloLens 2 only</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
 | [Local account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | Password |
 
 Cloud-connected accounts (Azure AD and MSA) offer more features because they can use Azure services.  
+> [!IMPORTANT]
+> 1 - Azure AD Premium is not required to sign into the device. However, it is required for other features of a low touch cloud-based deployment, like Auto-enrollment and Autopilot.
 
 > [!NOTE]
-> 1 - While a HoloLens 2 device can support up to 64 Azure AD accounts, only 10 of those accounts may enroll in Iris Authentication. This is aligned with other [Biometric authentication options for Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
+> 2 - While a HoloLens 2 device can support up to 64 Azure AD accounts, only 10 of those accounts may enroll in Iris Authentication. This is aligned with other [Biometric authentication options for Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
 
 ## Setting up users
 
 The most common way to set up a new user is during the HoloLens out-of-box experience (OOBE). During setup, HoloLens prompts for a user to sign in by using the account that they want to use on the device. This account can be a consumer Microsoft account or an enterprise account that has been configured in Azure. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
 
-Like Windows on other devices, signing in during setup creates a user profile on the device. The user profile stores apps and data. The same account also provides Single Sign-on for apps such as Edge or Skype by using the Windows Account Manager APIs.  
+Like Windows on other devices, signing in during setup creates a user profile on the device. The user profile stores apps and data. The same account also provides Single Sign-on for apps, such as Edge or the Microsoft Store, by using the Windows Account Manager APIs.  
 
 If you use an enterprise or organizational account to sign in to HoloLens, HoloLens enrolls in the organization's IT infrastructure. This enrollment allows your IT Admin to configure Mobile Device Management (MDM) to send group policies to your HoloLens.
 

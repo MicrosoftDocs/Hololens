@@ -307,13 +307,6 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 - While setting up Autopilot over Wi-Fi, there may be an instance where the Autopilot profile is not downloaded when Internet connection is first established. In this case End User License Agreement (EULA) is presented and the user has the option to proceed with non-Autopilot setup experience. To retry setting up with Autopilot, put the device to sleep and then power up, or reboot the device and let it try again.
 - "Convert all targeted devices to Autopilot" feature is not supported on HoloLens at the moment.  
 
-### Troubleshooting
-
-The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues, however please be aware that these articles are based on Windows 10 Desktop and not all information may apply to HoloLens:
-
-- [Windows Autopilot - known issues](https://docs.microsoft.com/mem/autopilot/known-issues)
-- [Troubleshoot Windows device enrollment problems in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
-- [Windows Autopilot - Policy Conflicts](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
 
 ## Feedback and support for Autopilot
 

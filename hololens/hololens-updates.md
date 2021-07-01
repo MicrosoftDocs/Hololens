@@ -72,20 +72,20 @@ To configure how and when updates are applied, use the following policies:
   - Default value: **0** (every day)
 - [Update/ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
   - Values: 0–23 (0 = midnight, 23 = 11 PM)
-  - Default value: 3 PM
+  - Default value: 3 AM
 
 #### Configure active hours
 Starting with [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) an IT Admin can specify the active hours range for HoloLens 2 devices.
 
 Active hours identify the period of time when you expect the device to be in use. Automatic restarts after an update will occur outside of the active hours. The specified range will be counted from the active hours start time. You can use MDM, as described in [Configuring active hours with MDM](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm). MDM uses the Update/ActiveHoursStart and Update/ActiveHoursEnd and Update/ActiveHoursMaxRange settings in the Policy CSP to configure active hours.
 
--	[Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) - This value sets the end time. There is a 12 hour maximum from start time.
+-	[Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) - This value sets the end time. There is a 12-hour maximum from start time.
     -	Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
     -	The default is 17 (5 PM).
 -	[Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) - This value sets max number of active hours from start time.
     -	Supported values are 8-18.
     -	The default value is 18 (hours).
--	[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) - This value sets the start time. There is a 12 hour maximum from end time.
+-	[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) - This value sets the start time. There is a 12-hour maximum from end time.
     -	Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
     -	The default value is 8 (8 AM).
 
@@ -132,7 +132,7 @@ You can configure different deferrals for feature updates and quality updates. T
 
 #### Pause Updates via Device
 
-If a user does not have access to MDM they can individually Pause updates for up to 35 days manually on a HoloLens 2 device on build [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) or later. Users can reach this setting by navigating to **Settings -> Update & Security -> Advanced options** scroll down to **Pause updates** and select the date until which they will pause updates. Once a user reached the pause limit, the device will need to get new updates because they can pause again. 
+If a user does not have access to MDM they can individually Pause updates for up to 35 days manually on a HoloLens 2 device on build [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) or later. Users can reach this setting by navigating to **Settings > Update & Security > Advanced options** scroll down to **Pause updates** and select the date until which they will pause updates. Once a user reached the pause limit, the device will need to get new updates before they can pause again. 
 
 Starting with [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2), this pause updates function can be managed for HoloLens 2 devices. 
 - [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
