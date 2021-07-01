@@ -200,6 +200,6 @@ Logging is limited to traces that can be captured in development or troubleshoot
 ## Questions about securing HoloLens devices
 
 See [our HoloLens 2 security information](security-overview.md).
-For HoloLens 1st Gen devices please review [this FAQ](hololens1-faq-security.md).
+For HoloLens 1st Gen devices please review [this FAQ](hololens1-faq-security.yml).
 
 [Back to list](#list)
