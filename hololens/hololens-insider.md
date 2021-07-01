@@ -81,9 +81,25 @@ Users can import .pfx certificate, with private key, to user store or machine st
 
 For managed devices when troubleshooting behavior, confirming that an expected policy configuration is applied is an important step. Previously to this new feature, this had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** -> **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
 
-Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select View advanced diagnostic report. This will generate and open the report in a new Edge window.
+Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select **View advanced diagnostic report**. This will generate and open the report in a new Edge window.
 
-<screenshot to link>
+![View advanced diagnostic report in Settings app.](./images/view-advanced-diagnostic-report.jpg)
+
+### Offline Diagnostics notifications
+This an update for an existing feature called [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics). Previously, there was no clear indicator to users that they had triggered diagnostic collection or it had completed.
+Now added in Windows Insider builds, there are two forms of audiovisual feedback for Offline Diagnostics. The first being toasts notifications displayed for both when collection starts and completes. These will be displayed when the user is logged in and has visuals.
+
+![Toast for collecting logs.](./images/LogCollection1.jpg)
+
+![Toast when log collection is complete.](./images/LogCollection2.jpg)
+ 
+Because users often use Offline Diagnostics as a fallback log gathering mechanism for when they don’t have access to a display, can’t log-in or are still in OOBE there will also be an audio cue played when logs are gathered. This sound will be played in addition to the toast notification.
+
+This new feature will be enabled when your device updates, and doesn’t need to be enabled or managed. In any event that this new feedback cannot be displayed or heard, Offline Diagnostics will still be generated.
+
+We hope with this newer addition of audiovisual feedback it is easier to gather diagnostic data, and more quickly be able to troubleshoot your problems.
+
+
 
 ### Fixes and improvements:
 
