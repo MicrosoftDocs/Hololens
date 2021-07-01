@@ -20,6 +20,7 @@ appliesto:
 ## HoloLens 2 Device-only (non-managed)
 
 [Local Account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
+- This account must be [provisioned](hololens-provisioning.md#steps-for-creating-provisioning-packages) ahead of time with Windows Configuration Designer (WCD).
 
 [Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)
 
@@ -53,7 +54,9 @@ If you are planning on using Intune as your MDM, read up on the [list of suites]
 #### Dynamics 365 Remote Assist user
 
 - Azure AD account
-- Remote Assist license
+- Remote Assist license 
+> [!NOTE]
+> Microsoft Teams is bundled with Remote Assist
 - Network Connectivity
 
 #### Microsoft Teams user
