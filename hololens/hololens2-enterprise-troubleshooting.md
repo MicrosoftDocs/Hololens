@@ -132,7 +132,7 @@ Check out the original [blog](https://techcommunity.microsoft.com/t5/windows-it-
 
 ## Can't sign in to a previously setup HoloLens device
 
-If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
+If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can use Intune to remotely [wipe](/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
 > [!IMPORTANT]
 > When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
 
@@ -149,7 +149,7 @@ If your device was previously set up for someone else, either for a client or fo
 The impacted device may have been deleted from the Azure AD tenant. For example, this may happen because:
 
 - An administrator or user deleted the device in the Azure portal or using PowerShell.
-- The device was removed from the Azure AD tenant due to inactivity. For an efficiently managed environment, we typically recommend IT admins to [remove stale, inactive devices from their Azure AD tenant](https://docs.microsoft.com/azure/active-directory/devices/manage-stale-devices).
+- The device was removed from the Azure AD tenant due to inactivity. For an efficiently managed environment, we typically recommend IT admins to [remove stale, inactive devices from their Azure AD tenant](/azure/active-directory/devices/manage-stale-devices).
 
 When an impacted device attempts to contact the Azure AD tenant again after it has been deleted it will fail to authenticate with Azure AD. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
 
@@ -162,9 +162,9 @@ There is currently no way to add a deleted HoloLens device back into Azure AD. A
 
 The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues, however please be aware that these articles are based on Windows 10 Desktop and not all information may apply to HoloLens:
 
-- [Windows Autopilot - known issues](https://docs.microsoft.com/mem/autopilot/known-issues)
-- [Troubleshoot Windows device enrollment problems in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
-- [Windows Autopilot - Policy Conflicts](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
+- [Windows Autopilot - known issues](/mem/autopilot/known-issues)
+- [Troubleshoot Windows device enrollment problems in Microsoft Intune](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
+- [Windows Autopilot - Policy Conflicts](/mem/autopilot/policy-conflicts)
 
 [Back to list](#list)
 
