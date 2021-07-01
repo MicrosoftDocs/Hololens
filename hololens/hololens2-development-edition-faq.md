@@ -94,15 +94,15 @@ If you are abiding by the HoloLens 2 Development Edition terms and conditions, y
 
 ### Where can I learn more about the HoloLens 2 Development Edition?
 
-Visit the HoloLens 2 Development Edition documentation page. [Learn more](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+Visit the HoloLens 2 Development Edition documentation page. [Learn more](/hololens/hololens2-options?tabs=device)
 
 ### Where can I learn more about developing Mixed Reality solutions?
 
-Visit the Introduction to Mixed Reality development documentation. [Learn more](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unityhttps://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity)
+Visit the Introduction to Mixed Reality development documentation. [Learn more](/windows/mixed-reality/develop/development?tabs=unity)
 
 ### Where can I learn more about designing Mixed Reality solutions?
 
-Visit the Introduction to Mixed Reality design documentation. [Learn more](https://docs.microsoft.com/windows/mixed-reality/design/design)
+Visit the Introduction to Mixed Reality design documentation. [Learn more](/windows/mixed-reality/design/design)
 
 ### Where can I get support for HoloLens Developer Edition?
 
@@ -125,7 +125,7 @@ Directions to redeem
 3. Select &#39;Redeem a product code&#39;
 4. Enter product code, and select &#39;Redeem a product code&#39;
 
-Visit HoloLens 2 Development Edition documentation to [Learn more](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+Visit HoloLens 2 Development Edition documentation to [Learn more](/hololens/hololens2-options?tabs=device)
 
 ### Can I build applications with versions of Unity other than PRO license?
 
@@ -152,7 +152,7 @@ Directions to redeem
 3. Click &#39;Redeem a product code&#39;
 4. Enter product code, and click &#39;Redeem a product code&#39;
 
-Visit HoloLens 2 Development Edition documentation to [Learn more](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+Visit HoloLens 2 Development Edition documentation to [Learn more](/hololens/hololens2-options?tabs=device)
 
 ### How do I contact Pixyz support?
 
@@ -179,4 +179,4 @@ With your Azure credits, you can begin building with Microsoft&#39;s ever-expand
 
 ### Where can I learn more about Azure mixed reality services?
 
-Microsoft offers a set of mixed reality services to enable developers to build and test mixed reality solutions. [Learn more](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)
+Microsoft offers a set of mixed reality services to enable developers to build and test mixed reality solutions. [Learn more](/windows/mixed-reality/develop/mixed-reality-cloud-services)

@@ -28,7 +28,8 @@ For more information about store apps, see [Manage apps with the store](holograp
 > For enterprise deployments, we don't recommend enabling Developer Mode, which both of these methods use. If you're interested in a secure app deployment method, please review our [App Management: Overview](app-deploy-overview.md).
 
 If you're looking for either developer method of app installation for HoloLens 2 devices, refer to:
-- [Device Portal: Installing an App](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
-- [Using Visual Studio to deploy and debug Apps](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+
+- [Device Portal: Installing an App](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
+- [Using Visual Studio to deploy and debug Apps](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
 See our [guide](holographic-custom-apps.md) if you'd like to deploy custom apps on HoloLens (1st gen).

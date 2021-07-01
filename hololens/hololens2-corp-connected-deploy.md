@@ -28,7 +28,7 @@ Afterwards, you'll be able confirm you can both author and operate a test Guide.
 
 Now that everything is properly configured for Azure AD and MDM Enrollment, the rest should now be a snap. You'll need a Wi-Fi connection and the HoloLens device, and one of the previously configured Azure AD user accounts.
 
-If your device isn't currently sitting in a factory settings state, now would be a good time to [reflash the device](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device).
+If your device isn't currently sitting in a factory settings state, now would be a good time to [reflash the device](/hololens/hololens-recovery#clean-reflash-the-device).
 
 1. Once your device is in OOBE, you'll need to start interacting and following the prompts.
 
@@ -66,7 +66,7 @@ If your device isn't currently sitting in a factory settings state, now would be
 
 By now, the device should have received the Wi-Fi certificate. The simplest validation you can do is attempt to connect to the Wi-Fi connection for which you&#39;ve received the certificate. Open up the **Settings** app and navigate to **Network &amp; Internet** -> **Wi-Fi** and select the Wi-fi connection. Once connected, open up the Microsoft Edge app and confirm you can navigate to a website.
 
-To confirm that you have received the certificate on the device, you can use the [Certificate Manager](https://docs.microsoft.com/hololens/certificate-manager).
+To confirm that you have received the certificate on the device, you can use the [Certificate Manager](/hololens/certificate-manager).
 
 ## Validate LOB app install
 
@@ -78,7 +78,7 @@ To validate the installation of the app on device, you can do so via **Settings*
 
 To validate the install from Intune, navigate to the [MEM portal](https://endpoint.microsoft.com/#home) -> **Apps** -> All **apps** ->*TheNameOfYourApp* -> **Device install status** page.
 
-See more: [Intune App Deployment for HoloLens](https://docs.microsoft.com/hololens/app-deploy-intune)
+See more: [Intune App Deployment for HoloLens](/hololens/app-deploy-intune)
 
 ## Validate Dynamics 365 Guides
 
@@ -86,7 +86,7 @@ There are modes for the Guides app on HoloLens, authoring and operating. You'll 
 
 ### Authoring the Guide
 
-We don't need to do much for this quick validation. Simply select the guide you prepared on your PC. You'll need to [anchor the guide](https://docs.microsoft.comdynamics365/mixed-reality/guides/hololens-app-anchor), for a quick validation you can use a holographic anchor. Afterwards, you should [place your steps and models](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-orientation).
+We don't need to do much for this quick validation. Simply select the guide you prepared on your PC. You'll need to [anchor the guide](/dynamics365/mixed-reality/guides/hololens-app-anchor), for a quick validation you can use a holographic anchor. Afterwards, you should [place your steps and models](/dynamics365/mixed-reality/guides/hololens-app-orientation).
 
 >[!NOTE]
 > You will need the **Authoring** role to login to the PC and author on the HoloLens. The Operator role is read-only and has no access to the PC app.
@@ -101,9 +101,9 @@ Once your holograms are in place, you can test out operating your guide.
 
 For more in-depth guidance on how to operate a guide, check out these resources:
 
-[Overview of operating a guide in Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview)
+[Overview of operating a guide in Dynamics 365 Guides](/dynamics365/mixed-reality/guides/operator-overview)
 
-[Get oriented with the Step card as an operator in Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-step-card-orientation)
+[Get oriented with the Step card as an operator in Dynamics 365 Guides](/dynamics365/mixed-reality/guides/operator-step-card-orientation)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9s41BKGHVL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

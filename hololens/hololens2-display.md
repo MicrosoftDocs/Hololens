@@ -116,8 +116,8 @@ Users will have the best experience when avoiding white backgrounds. Dark mode i
 
 Developers are advised to follow dark mode design guidance:
 
-* [Developer design guidelines for HoloLens displays](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
-* [Recommended font sizes](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+* [Developer design guidelines for HoloLens displays](/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [Recommended font sizes](/windows/mixed-reality/typography#recommended-font-size)
 
 When a hologram requires a white background, keep the size of the hologram smaller than the display's full field of view. This size allows users to put the hologram in the center of the display.
 
