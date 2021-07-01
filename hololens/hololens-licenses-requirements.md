@@ -32,6 +32,8 @@ appliesto:
 
 [Azure AD Account](https://docs.microsoft.com/azure/active-directory/)
 
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)
+
 ## Mobile Device Management (MDM) Licenses Guidance
 
 If you plan on managing your HoloLens devices, you will need Azure AD and an MDM. 
@@ -39,7 +41,7 @@ If you plan on managing your HoloLens devices, you will need Azure AD and an MDM
 > Active Directory (AD) cannot be used to manage HoloLens devices.
 
 
-If you are planning on or using an MDM other than Intune, an [Azure Active Directory License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) is required.
+If you are planning on or using an MDM other than Intune, an [Azure Active Directory License](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) is required.
 
 If you are planning on using Intune as your MDM, read up on the [list of suites](https://docs.microsoft.com/intune/fundamentals/licenses) that include Intune licenses. **Please note that Azure AD is included in the majority of these suites.**
 
