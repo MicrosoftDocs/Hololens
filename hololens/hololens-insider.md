@@ -26,12 +26,12 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev and Beta Channels for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality.
 
-| Feature                 | Description                | Users or Scenario | Build introduced |
+| Feature                 | Description                | User or Scenario | Build introduced |
 |-------------------------|----------------------------|--------------|------------------|
 | CSP Changes on HoloLens | New CSPs for to query data | IT Admins    | 20348.1403                 |
 | PFX file support for Certificate Manager | Add PFX certs via Settings UI | End User | 20348.1405 |
 | View advanced diagnostic report in Settings on HoloLens | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
-
+| Offline Diagnostics notifications | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
 
 
 
