@@ -29,7 +29,7 @@ For both personal and corporate deployment scenarios, an MDM system is the essen
 Azure AD is a cloud-based directory service that provides identity and access management. Organizations that use Microsoft Office 365 or Intune are already using Azure AD, which has three editions: Free, Premium P1, and Premium P2 (see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions).) All editions support Azure AD device registration, but Premium P1 is required to enable MDM auto-enrollment which we will be using in this guide later.
 
 > [!IMPORTANT]
-> It is essential to have an Azure Active Directory as HoloLens devices do not support on-premises AD join. If you don&#39;t already have an Azure Active Directory set up follow the instructions in this link to get started and [Create a new tenant in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> It is essential to have an Azure Active Directory as HoloLens devices do not support on-premises AD join. If you don&#39;t already have an Azure Active Directory set up, go to [Create a new tenant in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## Identity Management
 

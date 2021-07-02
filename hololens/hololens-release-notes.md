@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 02/16/2021
+ms.date: 06/17/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -21,6 +21,12 @@ appliesto:
 # HoloLens 2 release notes
 
 To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
+
+> [!NOTE]
+> The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) to HoloLens 2 in May 2021, and we are working on an upcoming release based on customer feedback for this fall.
+
+> [!IMPORTANT]
+> Due to a now resolved [known issue in our 21H1 build that was affecting Remote Assist users](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), we temporally paused the offering of Windows Holographic, version 21H1 updates. We had also changed the default Advanced Recovery Companion (ARC) build to the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). The ARC build will now resume targeting the 21H1 build.
 
 ## Windows Holographic, version 21H1 - June 2021 Update
 - Build 20348.1007
@@ -369,9 +375,9 @@ If you choose "Always" but later want to change which app handles a particular f
 
 Now in this Windows build, users can manually adjust the volume level of each app. This allows for users to better focus on the apps that they need to, or better hear when using multiple apps. Such as needing to turn down volume of one app while calling another person for remote assistance in another.
 
-To set the volume of an individual app navigate to **Settings** -> **System** -> **Sound**, and under Advanced sound options select **App volume and device preferences**.
+To set the volume of an individual app navigate to **Settings** -> **System** -> **Sound**, and under Advanced sound options select **App volume and device preferences**.<br/><br/>
 
- <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
+<img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 #### Swipe to type
 
@@ -387,13 +393,13 @@ A new menu that allows the user to sign out, shut down and restart the device. A
 
 1. Open the HoloLens Start screen using the [Start gesture](hololens2-basic-usage.md#start-gesture) or saying "Go to Start".
 
-2. Notice the ellipsis icon (...) next to the user profile picture:
+2. Notice the ellipsis icon (...) next to the user profile picture:<br/><br/>
 
    <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
 
 3. Select the user profile picture using your hands or the voice command "Power".
 
-4. A menu appears with options to Sign out, Restart or Shut down the device:
+4. A menu appears with options to Sign out, Restart or Shut down the device:<br/><br/>
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 

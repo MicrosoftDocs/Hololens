@@ -1,10 +1,10 @@
 ---
-title: Known issues for HoloLens
+title: Known issues for HoloLens (1st Gen)
 description: Keep up to date with our list of known issues and workarounds that may affect HoloLens customers and developers using Unity and the Windows Device Portal.
 keywords: troubleshoot, known issue, help
 author: mattzmsft
 ms.author: mazeller
-ms.date: 11/30/2020
+ms.date: 6/15/2021
 ms.topic: article
 ms.custom: 
 - CI 111456
@@ -14,10 +14,9 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-- HoloLens 2
 ---
 
-# Known issues for HoloLens
+# Known issues for HoloLens (1st Gen)
 
 Here is the current list of known issues for HoloLens devices. Check here first if you are seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
 
@@ -25,10 +24,9 @@ Here is the current list of known issues for HoloLens devices. Check here first 
 > - If you discover an issue that is not blocking you please report it on your HoloLens device via [Feedback Hub](hololens-feedback.md).
 > - If the issue you are facing is blocking you, in addition to filing feedback, please [file a support request](https://aka.ms/hlsupport).
 
+
 - [Known issues for all HoloLens generations](#known-issues-for-all-hololens-generations)
-- [Known issues for HoloLens 2 devices](#known-issues-for-hololens-2-devices)
 - [Known issues for HoloLens (1st Gen)](#known-issues-for-hololens-1st-gen)
-- [Known issues for HoloLens emulator](#known-issues-for-hololens-emulator)
 
 ## Known issues for all HoloLens generations
 
@@ -54,97 +52,6 @@ Workarounds:
 - If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
 
 - If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
-
-## Known issues for HoloLens 2 devices
-
-### Certain devices joined in Azure AD may be unable to logon users after updating to 21H1
-
-#### Symptoms
-
-- Using PIN to logon will fail after entering the correct PIN.
-- Using the web logon method will fail after successfully signing in on the web page.
-- The device is not listed as “Azure AD joined” in [Azure portal](https://portal.azure.com/) -> Azure Active Directory -> Devices.
-
-#### Cause
-
-The impacted device may have been deleted from the Azure AD tenant. For example, this may happen because:
-
-- An administrator or user deleted the device in the Azure portal or using PowerShell.
-- The device was removed from the Azure AD tenant due to inactivity. For an efficiently managed environment, we typically recommend IT admins to [remove stale, inactive devices from their Azure AD tenant](https://docs.microsoft.com/azure/active-directory/devices/manage-stale-devices).
-
-When an impacted device attempts to contact the Azure AD tenant again after it has been deleted it will fail to authenticate with Azure AD. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
-
-#### Mitigation
-
-There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device.](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)
-
-### Device using Auto-login asks for log-in
-
-A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device with a substantially large update, such as a feature update.
-
-Example of when this could occur:
-
-- Updating a device from Windows Holographic, version 2004 (Build 19041.xxxx) to Windows Holographic, version 21H1 (Build 20346.xxxx)
-- Updating a device to take a large update on the same major build, e.g. Windows Holographic, version 2004 to Windows Holographic, version 20H2
-- Updating a device from a factory image to the latest image
-
-This should not occur during:
-
-- Devices taking a monthly servicing update
-
-Work around methods:
-
-- Sign-in methods such as PIN, Password, Iris, Web Authentication, or FIDO2 keys.
-- If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-procedure).
-
-### Missing prompt for downloading locked files
-
-In previous builds of Windows Holographic, when attempting to download a locked file would result in an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
-
-### Microsoft Edge fails to launch
-
-> [!NOTE]
-> This issue was originally created with the shipping version of Microsoft Edge in-mind. This issue may be resolved in the [new Microsoft Edge](hololens-new-edge.md). If it is not, please file feedback.
-
-A few customers have reported an issue where Microsoft Edge fails to launch. For these customers, the issue persists through reboot and is not resolved with Windows or application updates. If you're experiencing this issue and you've confirmed [Windows is up-to-date](hololens-updates.md#manually-check-for-updates), please file a bug from the [Feedback Hub app](hololens-feedback.md) with the following category and sub-category: Install and Update > Downloading, installing, and configuring Windows Update.
-
-There are no known workarounds as we've been unable to root cause the issue so far. Filing a bug via Feedback Hub will help our investigation!
-
-### Keyboard does not switch to special characters
-
-There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters.
-
-Work-arounds:
--	Close the keyboard and reopen it by tapping the text field.
--	Incorrectly enter your password. When the keyboard is relaunched next time it will then work as expected.
-- Web Authentication, close the keyboard and select **Sign in from another device**.
--	If entering only numbers, a user may press and hold certain keys to open an expanded menu.
--	Using a USB keyboard.
-
-This does not affect:
-- Users who choose to use a personal account.
-
-### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with an Insider build
-
-This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program.
-
-This does not affect:
-- Users who are not enrolled in Windows Insider 
-- Insiders:
-    - If a device has been enrolled since Insider builds were version 18362.x
-    - If they flashed an Insider signed 19041.x build AND stay enrolled in the Insider program
-
-Work-around: 
-- Avoid the issue 
-    - Flash a non-insider build. One of the regular monthly updates.
-    - Stay on Insider Preview
-- Reflash the device
-
-    1. Put the [HoloLens 2 into flashing mode](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) manually by fully powering down while not connect. Then while holding Volume up, tap the Power button.
-    
-    1. Connect to the PC and open Advanced Recovery Companion.
-    
-    1. Flash the HoloLens 2 to the default build.
 
 ## Known issues for HoloLens (1st Gen)
 
@@ -178,7 +85,7 @@ Our team is currently working on a fix. In the meantime, you can use the followi
     ```
 
     > [!NOTE]
-    > If you don't have 10.0.18362.0 installed, use the most recent version that you have. 
+    > If you don't have 10.0.18362.0 installed, use the most recent version that you have.
 
 1. Right-click on the project in Solution Explorer and select **Add** > **Existing Item**.
 
@@ -267,10 +174,10 @@ If your device is still unable to load apps, you can sideload a version of the .
 1. You will then see a screen that is similar to the below.  You want to go to the section that says **Install App** and browse to where you unzipped those two APPX files. You can only do one at a time, so after you select the first one, then click on "Go" under the Deploy section. Then do this for the second APPX file.
 
    ![Windows Device Portal to Install Side-Loaded app](images/20190322-DevicePortal.png)
-   
+
 1. At this point we believe your applications should start working again and that you can also get to the Store.
 
-1. In some cases, it is necessary run the additional step of launching the 3D Viewer app before affected apps will launch. 
+1. In some cases, it is necessary run the additional step of launching the 3D Viewer app before affected apps will launch.
 
 We appreciate your patience as we have gone through the process to get this issue resolved, and we look forward to continued working with our community to create successful Mixed Reality experiences.
 
@@ -296,8 +203,3 @@ We appreciate your patience as we have gone through the process to get this issu
 
 - If your HoloLens enters standby while the Xbox Wireless Controller is connected, any input on the controller will wake the HoloLens. You can prevent this by powering off your controller when you are done using it.
 
-## Known issues for HoloLens emulator
-
-- Not all apps in the Microsoft Store are compatible with the emulator. For example, Young Conker and Fragments are not playable on the emulator.
-- You cannot use the PC webcam in the Emulator.
-- The Live Preview feature of the Windows Device Portal does not work with the emulator. You can still capture Mixed Reality videos and images.
