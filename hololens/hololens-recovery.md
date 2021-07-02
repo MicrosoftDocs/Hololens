@@ -68,6 +68,7 @@ If the standard reset procedure didn't work, use the hard-reset procedure:
 
 4. Connect the device to the host PC.
 
+
 5. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and then select **Device Manager**). Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery device maanger 2](images/MicrosoftHoloLens_DeviceManager.png)
@@ -126,9 +127,15 @@ If the HoloLens 2 doesn't start correctly or if Advanced Recovery Companion cann
 
 1. Ensure your device is charged to 40% or more before attempting to flash.
 
-2. Check that your device is unlocked.
+2. Check your device is unlocked.
 
-3. If ARC does not detect your device, ensure that you can connect to your device via File Explorer on your PC. If you cannot;
+1. Check your device is plugged directly into the host PC, not a hub.
+
+1. If your device is not showing as a HoloLens/HoloLens Recovery device under Universal Serial Bus Drivers, check:
+    1. **Ports**, as a Qualcomm HS-USB device
+    1.   **Other Devices**, as a QUSB_BULK device - your host PC is missing the necessary drivers to detect your HoloLens. Right click and select Update Driver and search for drivers online or [check Optional Updates in your Windows Update settings](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674). After the driver is downloaded, ARC should be able to detect it.
+ 
+1. If ARC does not detect your device, ensure that you can connect to your device via File Explorer on your PC. If you cannot;
 
     1.  It is possible that your device may have USB policies that disable that connection. If so, try [Manual Flashing mode](hololens-recovery.md#manual-procedure).
     2.  If there are no policies, try a different USB cable.

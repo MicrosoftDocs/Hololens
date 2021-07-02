@@ -131,7 +131,7 @@
 #### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 #### [Reset HoloLens (1st gen) ](hololens1-recovery.md)
 ### HoloLens (1st gen) Security
-#### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
+#### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.yml)
 #### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 ### [Known issues and workarounds for HoloLens (1st gen)](hololens-known-issues.md)
 ### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
