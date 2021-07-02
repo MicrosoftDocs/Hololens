@@ -33,6 +33,8 @@ appliesto:
 
 ## HoloLens 2 Device-only (non-managed)
 
+When using either a Microsoft Account (MSA) or Local account no additional licenses are required for these accounts.
+
 [Local Account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
 - This account must be [provisioned](hololens-provisioning.md#provisioning-package-hololens-wizard) ahead of time with Windows Configuration Designer (WCD).
 
@@ -88,4 +90,3 @@ If you plan on implementing this [cross-tenant scenario](https://docs.microsoft.
 1. Dynamics 365 Guides app installed on a HoloLens
 1. Operator role (for testing or using guides)
 1. Network Connectivity
-
