@@ -28,8 +28,8 @@ appliesto:
 > [!NOTE]
 > Windows Autopilot requires [Azure P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) and [Auto-enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) to be configured first for the low-touch Autopilot flow and device deployment. 
 ### Business Use Case: 
-- [Deployment Scenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)
-- [Deployment Scenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network)
+- [Deployment Scenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) - proof-of-concept or pilot deployment.
+- [Deployment Scenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) - deployment at scale.
 
 ## HoloLens 2 Device-only (non-managed)
 
@@ -41,7 +41,8 @@ appliesto:
 > [!WARNING]
 > Multiple users are not supported for a device using either of these accounts.
 ### Business Use Case: 
-- [Deployment Scenario C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment)
+- [Deployment Scenario C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) - offline or secure deployment.
+ 
 ## Dynamics 365 Licensing and Requirements
 
 ### Dynamics 365 Remote Assist 
