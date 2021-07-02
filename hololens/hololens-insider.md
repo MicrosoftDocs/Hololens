@@ -35,7 +35,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 | Offline Diagnostics notifications | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
 
 
-### CSP changes on HoloLens
+### CSP changes for reporting HoloLens details
 
 - Introduced in Windows Insider build, 20348.1403
 
@@ -74,9 +74,9 @@ Example syncml blob (for MDM vendors) to query for NetworkIdentifiers
 </SyncML>
 ```
 
-### AutoLogonUser policy controlled by CSP
+### Auto login policy controlled by CSP
 
-This policy controls whether a user will be automatically logged on. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly  distribute HoloLens devices and enable their end users to expedite login.
+This new AutoLogonUser policy controls whether a user will be automatically logged on. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly  distribute HoloLens devices and enable their end users to expedite login.
 
 When the policy is set to a non-empty value, it specifies the email address of the auto-logon user. The specified user must logon to the device at least once to enable auto-logon.
 
