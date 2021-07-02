@@ -86,7 +86,7 @@ If you plan on implementing this [cross-tenant scenario](https://docs.microsoft.
 #### Guides User
 
 1. Azure AD account
-1. Dynamics 365 Guides license
+1. [Dynamics 365 Guides license](/dynamics365/mixed-reality/guides/requirements)
 1. Dynamics 365 Guides app installed on a HoloLens
 1. Operator role (for testing or using guides)
 1. Network Connectivity
