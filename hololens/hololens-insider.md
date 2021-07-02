@@ -28,11 +28,11 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 
 | Feature                 | Description                | User or Scenario | Build introduced |
 |-------------------------|----------------------------|--------------|------------------|
-| CSP changes for reporting HoloLens details | New CSPs for to query data | IT Admins    | 20348.1403                 |
-| Auto login policy controlled by CSP | Used to log in an account automatically | IT Admins | 20348.1405 |
-| PFX file support for Certificate Manager | Add PFX certs via Settings UI | End User | 20348.1405 |
-| View advanced diagnostic report in Settings on HoloLens | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
-| Offline Diagnostics notifications | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
+| [CSP changes for reporting HoloLens details](#csp-changes-for-reporting-hololens-details) | New CSPs for to query data | IT Admins    | 20348.1403                 |
+| [Auto login policy controlled by CSP](#auto-login-policy-controlled-by-csp) | Used to log in an account automatically | IT Admins | 20348.1405 |
+| [PFX file support for Certificate Manager](#pfx-file-support-for-certificate-manager) | Add PFX certs via Settings UI | End User | 20348.1405 |
+| [View advanced diagnostic report in Settings on HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
+| [Offline Diagnostics notifications](#offline-diagnostics-notifications) | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
 
 
 ### CSP changes for reporting HoloLens details
