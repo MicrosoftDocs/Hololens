@@ -77,7 +77,7 @@ If you plan on implementing this [cross-tenant scenario](https://docs.microsoft.
 
 #### Guides Author
 1. Azure AD account
-1. Dynamics 365 Guides license
+1. [Dynamics 365 Guides license](/dynamics365/mixed-reality/guides/requirements)
 1. Dynamics 365 Guides application installed on a PC or HoloLens
 1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (used to view the Analytics dashboard)
 1. Author role (for creating guides)
