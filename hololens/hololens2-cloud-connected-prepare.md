@@ -35,25 +35,25 @@ Azure AD is a cloud-based directory service that provides identity and access ma
 
 Employees can use only one account to initialize a device so it&#39;s imperative that your organization controls which account is enabled first. The account chosen will determine who controls the device and influence your management capabilities.
 
-In this guide we have chosen that for the [Identity](https://docs.microsoft.com/hololens/hololens-identity) used we will use Azure AD accounts, or Azure Active Directory accounts. There are several benefits to Azure AD accounts we would like to use, such as:
+In this guide we have chosen that for the [Identity](/hololens/hololens-identity) used we will use Azure AD accounts, or Azure Active Directory accounts. There are several benefits to Azure AD accounts we would like to use, such as:
 
 - Employees use their Azure AD account to register the device in Azure AD and automatically enroll it with the organization&#39;s MDM solution (Azure AD+MDM – requires Azure AD Premium).
-- Azure AD accounts support [Single Sign On](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). When a user signs into Remote Assist, their Identity from the signed in Azure AD user will be recognized and the user will be signed into the app for a streamlined experience.
-- Azure AD accounts have additional [authentication options](https://docs.microsoft.com/hololens/hololens-identity) via [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris log-in users can sign in from another device or use FIDO security keys.
+- Azure AD accounts support [Single Sign On](/azure/active-directory/manage-apps/what-is-single-sign-on). When a user signs into Remote Assist, their Identity from the signed in Azure AD user will be recognized and the user will be signed into the app for a streamlined experience.
+- Azure AD accounts have additional [authentication options](/hololens/hololens-identity) via [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris log-in users can sign in from another device or use FIDO security keys.
 
 ### Mobile Device Management
 
-Microsoft [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices connected to your tenant. Like Office 365, Intune uses Azure AD for identity management, so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Intune also supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution. For the purposes of this guide, we&#39;ll be focusing on using Intune for enabling a cloud deployment at scale with HoloLens 2.
+Microsoft [Intune](/mem/intune/fundamentals/what-is-intune), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices connected to your tenant. Like Office 365, Intune uses Azure AD for identity management, so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Intune also supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution. For the purposes of this guide, we&#39;ll be focusing on using Intune for enabling a cloud deployment at scale with HoloLens 2.
 
 > [!IMPORTANT]
-> It is essential to have Mobile Device Management. If you don&#39;t already have it set up follow this guide and [Get started with Intune](https://docs.microsoft.com/mem/intune/fundamentals/free-trial-sign-up).
+> It is essential to have Mobile Device Management. If you don&#39;t already have it set up follow this guide and [Get started with Intune](/mem/intune/fundamentals/free-trial-sign-up).
 
 > [!NOTE]
 > Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Holographic currently include: AirWatch, MobileIron, and others. Most industry-leading MDM vendors already support integration with Azure AD. You can find the MDM vendors that support Azure AD in [Azure Marketplace](https://azure.microsoft.com/marketplace/).
 
 ## Network
 
-In this setup, we anticipate HoloLens 2 devices connecting to the Internet from any available open Wi-Fi network. Since a user could need to change the network connection based on location, they should learn how to [connect HoloLens devices to Wi-Fi.](https://docs.microsoft.com/hololens/hololens-network)
+In this setup, we anticipate HoloLens 2 devices connecting to the Internet from any available open Wi-Fi network. Since a user could need to change the network connection based on location, they should learn how to [connect HoloLens devices to Wi-Fi.](/hololens/hololens-network)
 
 For Dynamics 365 Remote Assist there are a variety of network conditions, including bandwidth, latency, jitter, and packet loss, that can impact your video calling experience. Although audio and video calls might be possible in environments with reduced bandwidth, you might experience feature degradation. When using Dynamics 365 Remote Assist on HoloLens here are the network requirements to keep in mind:
 
@@ -63,12 +63,12 @@ For Dynamics 365 Remote Assist there are a variety of network conditions, includ
 
 More information:
 
-- [Network requirements](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements)
-- [Network optimization recommendations](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-hololens)
+- [Network requirements](/dynamics365/mixed-reality/remote-assist/requirements#network-requirements)
+- [Network optimization recommendations](/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-hololens)
 
 ### Optional: Connect your HoloLens to VPN
 
-The devices being connected into this guide are going to connect to the network via and external cloud network. It may be that to access company resources you&#39;ll need to connect your devices via VPN. There are several different ways to connect your devices to VPN, both where the end user can connect via using the device UI, or the devices can be managed and receive the VPN profile from either a PPKG or MDM. How to set up VPN won&#39;t be covered in this article, so if you&#39;d like to learn more about the different VPN protocols or ways to manage VPN visit [these guides for information on HoloLens and VPN.](https://docs.microsoft.com/hololens/hololens-network#vpn)
+The devices being connected into this guide are going to connect to the network via and external cloud network. It may be that to access company resources you&#39;ll need to connect your devices via VPN. There are several different ways to connect your devices to VPN, both where the end user can connect via using the device UI, or the devices can be managed and receive the VPN profile from either a PPKG or MDM. How to set up VPN won&#39;t be covered in this article, so if you&#39;d like to learn more about the different VPN protocols or ways to manage VPN visit [these guides for information on HoloLens and VPN.](/hololens/hololens-network#vpn)
 
 ## Next step
 
