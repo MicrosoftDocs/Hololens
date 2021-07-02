@@ -133,7 +133,7 @@ If the HoloLens 2 doesn't start correctly or if Advanced Recovery Companion cann
 
 1. If your device is not showing as a HoloLens/HoloLens Recovery device under Universal Serial Bus Drivers, check:
     1. **Ports**, as a Qualcomm HS-USB device
-    1.   **Other Devices**, as a QUSB_BULK device - your host PC is missing the necessary drivers to detect your HoloLens. Right click and select Update Driver and search for drivers online or check Optional Updates in your Windows Update settings. After the driver is downloaded, ARC should be able to detect it.
+    1.   **Other Devices**, as a QUSB_BULK device - your host PC is missing the necessary drivers to detect your HoloLens. Right click and select Update Driver and search for drivers online or [check Optional Updates in your Windows Update settings](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674). After the driver is downloaded, ARC should be able to detect it.
  
 1. If ARC does not detect your device, ensure that you can connect to your device via File Explorer on your PC. If you cannot;
 
