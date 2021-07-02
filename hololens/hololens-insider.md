@@ -28,24 +28,26 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 
 | Feature                 | Description                | User or Scenario | Build introduced |
 |-------------------------|----------------------------|--------------|------------------|
-| CSP Changes on HoloLens | New CSPs for to query data | IT Admins    | 20348.1403                 |
-| PFX file support for Certificate Manager | Add PFX certs via Settings UI | End User | 20348.1405 |
-| View advanced diagnostic report in Settings on HoloLens | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
-| Offline Diagnostics notifications | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
+| [CSP changes for reporting HoloLens details](#csp-changes-for-reporting-hololens-details) | New CSPs for to query data | IT Admins    | 20348.1403                 |
+| [Auto login policy controlled by CSP](#auto-login-policy-controlled-by-csp) | Used to log in an account automatically | IT Admins | 20348.1405 |
+| [PFX file support for Certificate Manager](#pfx-file-support-for-certificate-manager) | Add PFX certs via Settings UI | End User | 20348.1405 |
+| [View advanced diagnostic report in Settings on HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
+| [Offline Diagnostics notifications](#offline-diagnostics-notifications) | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
 
 
-
-### CSP changes on HoloLens
+### CSP changes for reporting HoloLens details
 
 - Introduced in Windows Insider build, 20348.1403
 
-#### DevDetail CSP
+The following CSPs have been updated with new ways to report information from your HoloLens devices.
+
+#### DevDetail CSP - Free Storage
 
 DevDetail CSP now also reports free storage space on HoloLens device. This should approximately match with the value shown in Settings App's Storage page. Following is the specific node containing this information.
 
 - ./DevDetail/Ext/Microsoft/FreeStorage (GET operation only)
 
-#### DeviceStatus CSP
+#### DeviceStatus CSP - SSID and BSSID
 
 DeviceStatus CSP now also reports SSID and BSSID of Wi-Fi network with which HoloLens is actively connected. Following are the specific nodes containing this information.
 
@@ -71,6 +73,23 @@ Example syncml blob (for MDM vendors) to query for NetworkIdentifiers
 </SyncBody>
 </SyncML>
 ```
+
+### Auto login policy controlled by CSP
+
+This new AutoLogonUser policy controls whether a user will be automatically logged on. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly  distribute HoloLens devices and enable their end users to expedite login.
+
+When the policy is set to a non-empty value, it specifies the email address of the auto-logon user. The specified user must logon to the device at least once to enable auto-logon.
+
+The OMA-URI of new policy `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+String value
+
+- User with the same email address will have auto logon enabled.
+
+On a device where this policy is configured, the user specified in the policy will need to logon at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single auto-logon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To logon as a different user, the policy must first be disabled.
+
+> [!NOTE]
+> - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior. 
+> - Auto-logon is only supported for MSA and AAD users.
 
 ### PFX file support for Certificate Manager
 
