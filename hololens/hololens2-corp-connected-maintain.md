@@ -24,11 +24,11 @@ Microsoft designed Windows Update for Business to provide IT administrators with
 
 One popular method of managing updates is to do a feature deferral of 30 days. This allows Admins to update and preview new features, gaining first hand knowledge and informing your support desk of any new changes.
 
-Learn how to [manage HoloLens updates](https://docs.microsoft.com/hololens/hololens-updates), including scheduled days, scheduled time, and setting active hours on the device, so it will update outside of working hours.
+Learn how to [manage HoloLens updates](/hololens/hololens-updates), including scheduled days, scheduled time, and setting active hours on the device, so it will update outside of working hours.
 
 ## How to update Dynamics 365 Guides (and other store apps)
 
-Dynamics 365 Guides is an In-Box app, and can be updated through the Microsoft Store app. For all apps that are downloaded through the Microsoft Store, they can be [updated through the Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) app itself manually.
+Dynamics 365 Guides is an In-Box app, and can be updated through the Microsoft Store app. For all apps that are downloaded through the Microsoft Store, they can be [updated through the Microsoft Store](/hololens/holographic-store-apps#update-apps) app itself manually.
 
 ## How to update LOB apps
 
@@ -39,15 +39,15 @@ LOB apps can be updated in the same way they were added to Intune. Apps can be u
 3. For the value of &quot;Select file to update&quot;, select your file.
 4. From here, use the context menu to open your file explorer and upload the newer version of the LOB app. Ensure to include dependencies as needed.
 
-See more: [Intune App Deployment for HoloLens](https://docs.microsoft.com/hololens/app-deploy-intune)
+See more: [Intune App Deployment for HoloLens](/hololens/app-deploy-intune)
 
 ## Development Plan
 
 With your device successfully enrolled, you are now prepared to deploy more LOB apps to your devices. For the duration of this Guide, we're using a sample app, but it's more likely that you will want to use custom apps built for your organization's needs.
 
-If you already have a LOB app, then you're ready to [deploy your app through MDM](https://docs.microsoft.com/hololens/app-deploy-intune). If you'd prefer a different method, then review the [application deployment overview for HoloLens 2](https://docs.microsoft.com/hololens/app-deploy-overview) to learn more methods of deploying your LOB app to your devices.
+If you already have a LOB app, then you're ready to [deploy your app through MDM](/hololens/app-deploy-intune). If you'd prefer a different method, then review the [application deployment overview for HoloLens 2](/hololens/app-deploy-overview) to learn more methods of deploying your LOB app to your devices.
 
-If you've yet to create your own LOB app or are still in the process of creation, then review our mixed reality development docs to [start designing and prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design) or learn the core concepts to [get started with mixed reality development.](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)
+If you've yet to create your own LOB app or are still in the process of creation, then review our mixed reality development docs to [start designing and prototyping](/windows/mixed-reality/design/design) or learn the core concepts to [get started with mixed reality development.](/windows/mixed-reality/discover/get-started-with-mr)
 
 ## Support Plan
 
@@ -55,22 +55,22 @@ A support plan is an excellent thing to have in place. Having someone, or a grou
 
 1. Your Support desk.
 2. Your HoloLens Expert team
-3. [HoloLens Docs](https://docs.microsoft.com/hololens/) / [HoloLens Troubleshooting Docs](https://docs.microsoft.com/hololens/hololens-troubleshooting)
+3. [HoloLens Docs](/hololens/) / [HoloLens Troubleshooting Docs](/hololens/hololens-troubleshooting)
 4. [Contact Support](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 ## Device Management
 
 This guide talked about setting up Mobile Device Management (MDM) and used it to set up some device configurations and apply settings to allow access in terms of Wi-Fi certificates and proxy. However, MDM can also be used to apply device restrictions via CSPs and Policies.
 
-In many cases, devices can have connectivity restrictions, such as Bluetooth, VPN, USB or even turning off access to the camera or microphone. If any of these interests you, then we encourage you to read our [common device restrictions page](https://docs.microsoft.com/hololens/hololens-common-device-restrictions).
+In many cases, devices can have connectivity restrictions, such as Bluetooth, VPN, USB or even turning off access to the camera or microphone. If any of these interests you, then we encourage you to read our [common device restrictions page](/hololens/hololens-common-device-restrictions).
 
 There are other more complex device restrictions you can use. Such as:
 
-- Limiting the pages that can be viewed in the Settings app by using [SettingsPageVisibility](https://docs.microsoft.com/hololens/settings-uri-list), allowing users to only access the settings they need to adjust, such as changing their Wi-Fi connection.
-- Use [Kiosk mode](https://docs.microsoft.com/hololens/hololens-kiosk) to limit the UI presented to users on a device. You can set Kiosks to show a single app, or multiple apps with a custom start page. Kiosks can also present different experiences to different users.
-- [Windows Application Control (WDAC)](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) to keep specific apps or processes from launching entirely.
+- Limiting the pages that can be viewed in the Settings app by using [SettingsPageVisibility](/hololens/settings-uri-list), allowing users to only access the settings they need to adjust, such as changing their Wi-Fi connection.
+- Use [Kiosk mode](/hololens/hololens-kiosk) to limit the UI presented to users on a device. You can set Kiosks to show a single app, or multiple apps with a custom start page. Kiosks can also present different experiences to different users.
+- [Windows Application Control (WDAC)](/hololens/windows-defender-application-control-wdac) to keep specific apps or processes from launching entirely.
 
-If you'd like to learn about additional methods of device management or device restrictions, then take the next step and read our [Device Management Overview](https://docs.microsoft.com/hololens/hololens-csp-policy-overview).
+If you'd like to learn about additional methods of device management or device restrictions, then take the next step and read our [Device Management Overview](/hololens/hololens-csp-policy-overview).
 
 
 

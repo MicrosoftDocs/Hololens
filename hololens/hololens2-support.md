@@ -25,21 +25,22 @@ Here you will find the support options for the following options ensuring you ge
 
 ### Post a question on Microsoft Q&A
 <div class='icon is-large'>
-    <img alt='Azure Q&A' src='https://docs.microsoft.com/media/logos/logo_azure.svg'>
+    <img alt='Azure Q&A' src='/media/logos/logo_azure.svg'>
 </div><br/>
 For quick and reliable answers on your Azure Mixed Reality and HoloLens 2 programming questions from Microsoft Engineers, Most Valuable Professionals (MVPs), or our expert community, engage with us on Microsoft Q&A, Microsoft's preferred destination for community support.
 
 If you can't find an answer to your problem using search, submit a new question to Microsoft Q&A. Use one of the following tags when you ask your question:
-- [Azure Spatial Anchors](https://docs.microsoft.com/answers/topics/azure-spatial-anchors.html)
-- [Azure Remote Rendering](https://docs.microsoft.com/answers/topics/azure-remote-rendering.html)
-- [Azure Object Anchors](https://docs.microsoft.com/answers/topics/azure-object-anchors.html)
-- [HoloLens Programming](https://docs.microsoft.com/answers/topics/hololens-development.html)
-- [Windows Products](https://docs.microsoft.com/answers/products/windows)
+
+- [Azure Spatial Anchors](/answers/topics/azure-spatial-anchors.html)
+- [Azure Remote Rendering](/answers/topics/azure-remote-rendering.html)
+- [Azure Object Anchors](/answers/topics/azure-object-anchors.html)
+- [HoloLens Programming](/answers/topics/hololens-development.html)
+- [Windows Products](/answers/products/windows)
 
 
 ### Post a question on Stack Overflow
 <div class='icon is-large'>
-    <img alt='Stack Overflow' src='https://docs.microsoft.com/media/logos/logo_stackoverflow.svg'>
+    <img alt='Stack Overflow' src='/media/logos/logo_stackoverflow.svg'>
 </div><br/>
 
 For answers on your developer questions from the largest community developer ecosystem, ask your question on Stack Overflow.
@@ -53,7 +54,8 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 - [Azure Object Anchors](https://stackoverflow.com/questions/tagged/azure-object-anchors)
 - [Mixed Reality Toolkit (MRTK)](https://stackoverflow.com/questions/tagged/MRTK)
 
-#### Other Communities: 
+#### Other Communities:
+
 - [HoloDevelopers Slack](https://holodevelopersslack.azurewebsites.net/)
 - [Windows Mixed Reality Headsets Reddit](https://www.reddit.com/r/WindowsMR/)
 - [HoloLens Reddit](https://www.reddit.com/r/HoloLens/)
@@ -146,15 +148,15 @@ On the bottom of each content article, there is an opportunity to open a GitHub 
 
 To provide feedback, share an idea or suggestions for Microsoft mixed reality services, or vote on the ideas that others have submitted, visit: 
 
-- [HoloLens 2 Product Feedback](https://docs.microsoft.com/hololens/hololens-feedback)
-- [Microsoft Mesh App Product Feedback](https://docs.microsoft.com/hololens/hololens-feedback)
+- [HoloLens 2 Product Feedback](/hololens/hololens-feedback)
+- [Microsoft Mesh App Product Feedback](/hololens/hololens-feedback)
 - [Azure Remote Rendering Feedback](https://feedback.azure.com/forums/928696-azure-remote-rendering)
 - [Azure Spatial Anchors Feedback](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
 
 ### FAQs & Troubleshooting
 
 - HoloLens 2, see the [HoloLens Troubleshooting](../hololens/hololens-troubleshooting.md) page
-- Windows Mixed Reality, see the [FAQ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) page
-- Azure Remote Rendering, see the [FAQ](https://docs.microsoft.com/azure/remote-rendering/resources/troubleshoot) page
-- Azure Spatial Anchors, see the [FAQ](https://docs.microsoft.com/azure/spatial-anchors/spatial-anchor-faq) page
-- Azure Object Anchors, see the [FAQ](https://docs.microsoft.com/azure/object-anchors/faq) page
+- Windows Mixed Reality, see the [FAQ](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) page
+- Azure Remote Rendering, see the [FAQ](/azure/remote-rendering/resources/troubleshoot) page
+- Azure Spatial Anchors, see the [FAQ](/azure/spatial-anchors/spatial-anchor-faq) page
+- Azure Object Anchors, see the [FAQ](/azure/object-anchors/faq) page

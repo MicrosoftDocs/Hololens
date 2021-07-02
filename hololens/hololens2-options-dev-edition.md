@@ -68,19 +68,19 @@ Choose your engine, download your tools, and dust off your keyboard. Welcome to 
 
 |     Checkpoint                              |     Outcome                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [Start Designing and Prototyping](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Start your adventure into designing Mixed Reality applications across core concepts, interaction models, and UX elements.     |
-|     [Start Developing for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Choose your engine, download your tools, add core building blocks, and start building today.                                  |
-|     [Explore Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Build compelling immersive experiences with Azure Remote Rendering and Azure Spatial Anchors.                                 |
+|     [Start Designing and Prototyping](/windows/mixed-reality/design/design)         |     Start your adventure into designing Mixed Reality applications across core concepts, interaction models, and UX elements.     |
+|     [Start Developing for Mixed Reality](/windows/mixed-reality/develop/development?tabs=unity)    |     Choose your engine, download your tools, add core building blocks, and start building today.                                  |
+|     [Explore Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Build compelling immersive experiences with Azure Remote Rendering and Azure Spatial Anchors.                                 |
 
 ## Developer Edition additional resources
 
 - [HoloLens 2 Development Edition FAQs](hololens2-development-edition-faq.md)
-- [Make sure to install the tools for HoloLens development.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-- [Learn about developing for HoloLens 2 with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
-- [Learn about how to combine MRTK with Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
+- [Make sure to install the tools for HoloLens development.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [Learn about developing for HoloLens 2 with Unity](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+- [Learn about how to combine MRTK with Unity](/windows/mixed-reality/develop/unity/mrtk-getting-started).
 - [Learn how to deploy your built apps](app-deploy-overview.md).
-- [Explore the all the possibilities for Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
-- [Learn about developing for HoloLens 2 with Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- [Explore the all the possibilities for Mixed Reality](/windows/mixed-reality/).
+- [Learn about developing for HoloLens 2 with Unreal.](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [Reach out to your fellow developers on our HoloDevelopers Slack Channel](https://holodevelopersslack.azurewebsites.net/).
 
 ## Next steps
