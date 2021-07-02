@@ -20,7 +20,7 @@ appliesto:
 ## HoloLens 2 Device-only (non-managed)
 
 [Local Account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
-- This account must be [provisioned](hololens-provisioning.md#steps-for-creating-provisioning-packages) ahead of time with Windows Configuration Designer (WCD).
+- This account must be [provisioned](hololens-provisioning.md##provisioning-package-hololens-wizard) ahead of time with Windows Configuration Designer (WCD).
 
 [Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)
 
