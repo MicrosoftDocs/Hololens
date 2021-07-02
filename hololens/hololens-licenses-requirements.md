@@ -17,6 +17,20 @@ appliesto:
 
 # License requirements
 
+## HoloLens 2 Device (managed)
+
+[Azure AD Account](https://docs.microsoft.com/azure/active-directory/)
+> [!IMPORTANT]
+> Active Directory (AD) cannot be used to manage HoloLens devices.
+
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) or another MDM.
+- [Windows Autopilot for HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot)- simplifies the provisioning experience for both IT admins and end users. IT admins can preconfigure HoloLens 2 policies, and upon first boot, devices will be deployed in business-ready state with zero end-user interaction. 
+> [!NOTE]
+> Windows Autopilot requires [Azure P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) and [Auto-enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) to be configured first for the low-touch Autopilot flow and device deployment. 
+### Business Use Case: 
+- [Deployment Scenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)
+- [Deployment Scenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network)
+
 ## HoloLens 2 Device-only (non-managed)
 
 [Local Account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
@@ -26,25 +40,8 @@ appliesto:
 
 > [!WARNING]
 > Multiple users are not supported for a device using either of these accounts.
-
-
-## HoloLens 2 Device (managed)
-
-[Azure AD Account](https://docs.microsoft.com/azure/active-directory/)
-
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)
-
-## Mobile Device Management (MDM) Licenses Guidance
-
-If you plan on managing your HoloLens devices, you will need Azure AD and an MDM. 
-> [!IMPORTANT]
-> Active Directory (AD) cannot be used to manage HoloLens devices.
-
-
-If you are planning on or using an MDM other than Intune, an [Azure Active Directory License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) is required.
-
-If you are planning on using Intune as your MDM, read up on the [list of suites](https://docs.microsoft.com/intune/fundamentals/licenses) that include Intune licenses. **Please note that Azure AD is included in the majority of these suites.**
-
+### Business Use Case: 
+- [Deployment Scenario C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment)
 ## Dynamics 365 Licensing and Requirements
 
 ### Dynamics 365 Remote Assist 
@@ -63,6 +60,7 @@ If you are planning on using Intune as your MDM, read up on the [list of suites]
 
 #### Microsoft Teams user
 
+- Azure AD account
 - Microsoft Teams or [Teams Freemium](https://products.office.com/microsoft-teams/free).
 - Network connectivity
 
