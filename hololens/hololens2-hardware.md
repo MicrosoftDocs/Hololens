@@ -140,12 +140,12 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 | Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) empowers technicians to collaborate and solve problems with remote collaborators using Microsoft Teams or Dynamics 365 Remote Assist.  |
 | Feedback Hub | [Feedback Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) lets you provide feedback about Windows and apps by sharing your suggestions or problems.  |
 | File Explorer | File Explorer provides a graphical user interface for accessing the file systems. |
-| Mail and Calendar | The [Mail and Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) apps help you stay up to date on your email, manage your schedule, and stay in touch with your contacts. |  
+| Mail and Calendar | The [Mail and Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) apps help you stay up to date on your email, manage your schedule, and stay in touch with your contacts. |
 | Microsoft Edge | Microsoft Edge gives you world-class performance with more privacy, more productivity, and more value while you browse. |
 | Microsoft Store | The [Microsoft Store](https://www.microsoft.com) is your go-to source for apps and games that work with HoloLens.|
 | Movies & TV | [Movies & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) brings you the latest entertainment in one simple, fast, and elegant app. |
 | OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) lets you access and edit your files from all your devices anywhere.  |
-| Photos| [Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) lets you view and edit your photos and videos, make movies and create albums.  |
+| Photos | [Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) lets you view and edit your photos and videos, make movies and create albums.  |
 | Settings | The Settings app is the place where you customize how Windows Holographic works in detail.  |
 | Tips | [Tips](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) lets you master surprising and lesser-known things you can do in Windows Holographic. |
 

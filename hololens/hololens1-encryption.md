@@ -21,13 +21,13 @@ HoloLens (1st gen) and HoloLens 2 both support device encryption using BitLocker
 
 This article will help you enable and manage BitLocker on HoloLens (1st gen).
 
-On HoloLens (1st gen) you can enable BitLocker device encryption manually or using mobile device management (MDM). Follow these instructions to enable [BitLocker device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) to protect files and information stored on the HoloLens. Device encryption helps protect your data using the AES-CBC 128 encryption method, which is equivalent to [EncryptionMethodByDriveType method 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) in the BitLocker configuration service provider (CSP). Personnel who have the correct encryption key (such as a password) can decrypt it or perform a data recovery.
+On HoloLens (1st gen) you can enable BitLocker device encryption manually or using mobile device management (MDM). Follow these instructions to enable [BitLocker device encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) to protect files and information stored on the HoloLens. Device encryption helps protect your data using the AES-CBC 128 encryption method, which is equivalent to [EncryptionMethodByDriveType method 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) in the BitLocker configuration service provider (CSP). Personnel who have the correct encryption key (such as a password) can decrypt it or perform a data recovery.
 
 ## Enable device encryption using MDM
 
-You can use your Mobile Device Management (MDM) provider to apply a policy that requires device encryption. The policy to use is the [Security/RequireDeviceEncryption setting](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) in the Policy CSP.
+You can use your Mobile Device Management (MDM) provider to apply a policy that requires device encryption. The policy to use is the [Security/RequireDeviceEncryption setting](/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) in the Policy CSP.
 
-[See instructions for enabling device encryption using Microsoft Intune.](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
+[See instructions for enabling device encryption using Microsoft Intune.](/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
 For other MDM tools, see your MDM provider's documentation for instructions. If your MDM provider requires custom URI for device encryption, use the following configuration:
 

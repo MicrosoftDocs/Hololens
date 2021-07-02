@@ -28,10 +28,10 @@ We can make a single user group for the purpose of assigning licenses. We can jo
 
 If you don&#39;t already have access to two Azure AD accounts in a user group you can use; here are the quick start guides for:
 
-- [How to create a user](https://docs.microsoft.com/mem/intune/fundamentals/quickstart-create-user)
-- [How to create a group](https://docs.microsoft.com/mem/intune/fundamentals/quickstart-create-group)
-- [Add users to a group](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) – Add created users to create group
-- [Configure Azure AD to allow a User Group to join devices](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) – Ensure new user group has permission to enroll devices to Azure AD
+- [How to create a user](/mem/intune/fundamentals/quickstart-create-user)
+- [How to create a group](/mem/intune/fundamentals/quickstart-create-group)
+- [Add users to a group](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) – Add created users to create group
+- [Configure Azure AD to allow a User Group to join devices](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) – Ensure new user group has permission to enroll devices to Azure AD
 
 ## Auto Enrollment on HoloLens 2
 
@@ -39,7 +39,7 @@ In order to have a smooth and seamless experience, setting up Azure Active Direc
 
 By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we can select services and navigate a few pages until we can select Get a Premium trial. You may notice there is Azure Active Directory Premium 1 and 2, for Automatic Enrollment P1 is sufficient. We can select Intune and select the user scope for automatic enrollment, and select the group that was previously created.
 
-For full details and steps read the guide on [how to enable auto enrollment for Intune](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment).
+For full details and steps read the guide on [how to enable auto enrollment for Intune](/mem/intune/enrollment/quickstart-setup-auto-enrollment).
 
 ## Application Licenses
 
@@ -47,9 +47,9 @@ An application license allows a user to either install company purchased Apps or
 
 The requirements for licenses can be different depending on if the user will be making the Remote Assist call from a device or will be a remote collaborator from Microsoft Teams. By default the Remote Assist and Teams check boxes are both marked. For the purposes of this guide, we suggest leaving the default boxes checked.
 
-1. Learn more about the different [Licensing and product requirements per role](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#licensing-and-product-requirements-per-role). There are a few different types of Remote Assist licenses so be sure to get the correct ones for your needs.
-2. You&#39;ll need to [acquire the license](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-remote-assist).
-3. [Apply your licenses](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist) to the group.
+1. Learn more about the different [Licensing and product requirements per role](/dynamics365/mixed-reality/remote-assist/requirements#licensing-and-product-requirements-per-role). There are a few different types of Remote Assist licenses so be sure to get the correct ones for your needs.
+2. You&#39;ll need to [acquire the license](/dynamics365/mixed-reality/remote-assist/buy-remote-assist).
+3. [Apply your licenses](/dynamics365/mixed-reality/remote-assist/deploy-remote-assist) to the group.
 
 ## Next step
 

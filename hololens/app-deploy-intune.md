@@ -21,13 +21,13 @@ appliesto:
 
 # Intune & Company Portal
 
-With Mobile Device Management (MDM), you can use your own custom apps through [Microsoft Endpoint Manager (Intune)](https://docs.microsoft.com/intune/windows-holographic-for-business) to deploy it directly to your HoloLens devices. Microsoft Intune is a cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM). Intune is included in Microsoft's [Enterprise Mobility + Security (EMS) suite](https://www.microsoft.com/microsoft-365/enterprise-mobility-security), and enables users to be productive while keeping your organization data protected. To learn more about Intune, read [What is Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
+With Mobile Device Management (MDM), you can use your own custom apps through [Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) to deploy it directly to your HoloLens devices. Microsoft Intune is a cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM). Intune is included in Microsoft's [Enterprise Mobility + Security (EMS) suite](https://www.microsoft.com/microsoft-365/enterprise-mobility-security), and enables users to be productive while keeping your organization data protected. To learn more about Intune, read [What is Intune](/mem/intune/fundamentals/what-is-intune).
 
 ## Setup
 
-1. Upload an app to a Line of Business, or upload a custom app to your Intune tenant. See also: [Enterprise app management](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management).
+1. Upload an app to a Line of Business, or upload a custom app to your Intune tenant. See also: [Enterprise app management](/windows/client-management/mdm/enterprise-app-management).
 
-2. [Assign your app to a group](https://docs.microsoft.com/mem/intune/apps/apps-deploy). Based on the assignment type you choose, the app can be delivered automatically or available to be readily pulled down if you have a selection of apps.
+2. [Assign your app to a group](/mem/intune/apps/apps-deploy). Based on the assignment type you choose, the app can be delivered automatically or available to be readily pulled down if you have a selection of apps.
 
 > [!NOTE]
 > When building your appx bundle make sure to account for including the architecture for the device(s) that you are deploying to. HoloLens 2 is ARM64, and HoloLens (1st Gen) is x86. You may include both in a single appx bundle if you plan on having a mixed devices environment.
@@ -55,4 +55,4 @@ How to get to apps through the Company Portal:
 4. Select the app you wish to receive and download it.
 
 > [!Tip]
-> Learn more about [auto-installing the Company Portal](https://docs.microsoft.com/mem/intune/apps/company-portal-app) and [deploying and managing apps in Intune](https://docs.microsoft.com/mem/intune/fundamentals/windows-holographic-for-business#deploy-and-manage-apps).
+> Learn more about [auto-installing the Company Portal](/mem/intune/apps/company-portal-app) and [deploying and managing apps in Intune](/mem/intune/fundamentals/windows-holographic-for-business#deploy-and-manage-apps).
