@@ -19,7 +19,7 @@ appliesto:
 keywords: HoloLens 2, commercial, features, mdm, mobile device management, kiosk mode, applications, identity, Bitlocker, iris, Windows Hello, Azure-powered, Autopilot, mixed reality, WDAC
 ---
 
-# HoloLens Capabilities and Solutions
+# HoloLens 2 Capabilities and Solutions
 
 ## What can HoloLens 2 do for you?
 
