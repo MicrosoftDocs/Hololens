@@ -55,7 +55,7 @@ Multiple users can share a HoloLens 2 device, without a need for each person to 
 
 ### Manually starting the calibration process
 
-1. Use the start gesture to open the [**Start** menu](hololens2-basic-usage.md#start-gesture).
+1. Use the start gesture to open the [**Start menu**](hololens2-basic-usage.md#start-gesture).
 1. If the Settings app isn't pinned to **Start**, select **All Apps**.
 1. Select **Settings**, and then select **System** > **Calibration** > **Eye Calibration** > **Run eye calibration**.
 
@@ -106,6 +106,9 @@ You can also disable the calibration prompt by following these steps:
 
 > [!IMPORTANT]
 > This setting may adversely affect hologram rendering quality and comfort.  When you turn off this setting, features that depend on eye tracking (such as text scrolling) no longer work in immersive applications.
+
+> [!NOTE]
+> This Settings switch has been removed as of Windows Holographic, version 20H2 with the inception of [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support). The calibration prompt will automatically appear only if an uncalibrated user is using an Eye Tracking-enabled app.
 
 ### HoloLens 2 eye-tracking technology
 
