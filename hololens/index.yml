@@ -26,7 +26,7 @@ landingContent:
     linkLists:
       - linkListType: learn
         links:
-          - text: HoloLens 2 Capabilities and Solutions
+          - text: HoloLens 2 capabilities and solutions
             url: hololens-commercial-features.md
           - text: HoloLens 2 options
             url: hololens2-options.md
