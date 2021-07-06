@@ -28,7 +28,7 @@ landingContent:
         links:
           - text: HoloLens 2 Capabilities and Solutions
             url: hololens-commercial-features.md
-          - text: Compare HoloLens 2 options
+          - text: HoloLens 2 options
             url: hololens2-options.md
           - text: HoloLens 2 hardware
             url: hololens2-hardware.md  
