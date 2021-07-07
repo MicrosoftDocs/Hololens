@@ -112,7 +112,7 @@ Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It 
 On your PC, Fiddler will show the HoloLens 2’s live HTTP(S) sessions. The Inspectors panel in Fiddler can show HTTP(S) request/response in different views. For example, the “Raw” view shows the raw request or response in plain text. 
 
 ### Configure Wireshark to capture network traffic
-Wireshark is a network protocol analyzer and is used to inspect TCP/UDP trafficto and from your HoloLens 2 devices. This makes it easy to identify the traffic that is crossing the network to your HoloLens 2, how much there is, its frequency, how much latency there is between certain hops, and so forth.
+Wireshark is a network protocol analyzer and is used to inspect TCP/UDP traffic to and from your HoloLens 2 devices. This makes it easy to identify the traffic that is crossing the network to your HoloLens 2, how much there is, its frequency, how much latency there is between certain hops, and so forth.
 
 #### Prerequisites:
 - PC must have internet access and support Internet sharing over Wi-Fi.
