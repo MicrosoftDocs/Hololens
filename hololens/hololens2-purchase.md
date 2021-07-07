@@ -48,8 +48,12 @@ See the below table for HoloLens 2 availability and purchase options by region.
 | | Otsuka Shokai Co., Ltd. | | https://www.otsuka-shokai.co.jp/products/microsoft/hololens/ | https://www.otsuka-shokai.co.jp/products/microsoft/hololens/ | 
 | | SB C&S | | https://www.it-ex.com/products/maker/microsoft/hololens2.html | https://www.it-ex.com/products/maker/microsoft/hololens2.html | 
 | **Malaysia** | ST Engineering Land Systems (Studio 249) | LEE Pei Shan lee.peishan@stengg.com | http://www.studio249.my/ | http://www.studio249.my/ |
-| **New Zealand** | Datacom | Husain Al-Badry HusainA@datacom.co.nzDr. Hazel Bradshaw Hazel.Bradshaw@Datacom.co.nz; | NEED URL | NEED URL | 
-| | Insight Enterprises (NZ) Pty Ltd | Jenny Southon jenny.southon@insight.comDean Graham dean.graham@insight.com | https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html | https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html | 
+| **New Zealand** | Datacom | Husain Al-Badry HusainA@datacom.co.nz Dr. Hazel Bradshaw Hazel.Bradshaw@Datacom.co.nz; |  |  | 
+| | Insight Enterprises (NZ) Pty Ltd | Jenny Southon jenny.southon@insight.com Dean Graham dean.graham@insight.com | https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html | https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html | 
 | | Spark | Leroy Clarke Leroy.Clarke@spark.co.nz | https://www.sparkdigital.co.nz/solutions/collaboration/hololens/ | https://www.sparkdigital.co.nz/solutions/collaboration/hololens/ | 
-| **Singapore** | Insight Technology Solutions Pte Ltd | Jenny Southon jenny.southon@insight.comToh, Debby Debby.Toh@insight.com | https://sg.insight.com/en_SG/shop/partner/microsoft/surface/hololens.html | https://sg.insight.com/en_SG/shop/partner/microsoft/surface/hololens.html | 
+| **Singapore** | Insight Technology Solutions Pte Ltd | Jenny Southon jenny.southon@insight.com Debby Toh Debby.Toh@insight.com | https://sg.insight.com/en_SG/shop/partner/microsoft/surface/hololens.html | https://sg.insight.com/en_SG/shop/partner/microsoft/surface/hololens.html | 
 | | ST Engineering Land Systems (Studio 249) | LEE Pei Shan lee.peishan@stengg.com | https://studio249.sg/ | www.studio249.sg |
+| **South Korea** | Korea CIM (KCIM) | Cheolgon Kim cgkim@kcim.co.kr SB Kim sbkim@kcim.co.kr; | http://www.kcim.co.kr/solution/microsoft-hololens2 | http://www.kcim.co.kr/solution/microsoft-hololens2#product-2 | 
+| **Taiwan** | Systex Software & Service Corporation精誠資訊股份有限公司 | Gina Ko ginako@systex.comSean Chienseanchien@systex.com | https://tw.systex.com/microsoft-hololens/ | https://dcsalesportal.com/brands/microsoft/microsoft-hololens/ | 
+| **Thailand** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate vongsakorn@sustain-solution.com; | https://hololensthai.com/ | https://hololensthai.com/ |
+| Vietnam | CÔNG TY TNHH HIVERLAB VIETNAM | Cincin Phung Cincin.phung@hiverlab.com | https://www.hiverlab.com/vn | https://www.hiverlab.com/vn |
