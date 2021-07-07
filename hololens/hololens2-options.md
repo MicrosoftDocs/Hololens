@@ -42,17 +42,6 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 - <sup>2</sup> - Receive a replacement device overnight or expedited shipping (faster of the available options) before defective device is received by Microsoft.
 - <sup>3</sup> - For warranty, support and certification questions for the Trimble XR10 with HoloLens 2 edition, [contact Trimble](https://fieldtech.trimble.com/en/contact-support).
 
-## Countries where HoloLens 2 is available
-
-<br>
-
-| HoloLens 2 Edition                  | Supported Markets               |
-|-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | US, Canada, Germany, France, UK, Ireland, China, Japan, Australia, Italy, New Zealand, Netherlands, Switzerland, Spain, Austria, Sweden, Finland, Norway, Denmark, Belgium, Portugal, Poland, Singapore, Hong Kong, Taiwan, and South Korea |
-| HoloLens 2 with Remote Assist | Australia, Japan, Canada, US, Austria, Belgium, Denmark, Finland, France, Germany, Italy, Netherlands, Norway, Spain, Sweden, Switzerland, UK, and Ireland <sup>1</sup> 
-| HoloLens 2 Industrial Edition *(at launch)* | US, Canada, Germany, France, UK, Ireland, China, Japan, Australia, Italy, New Zealand, Netherlands, Switzerland, Spain, Austria, Sweden, Finland, Norway, Denmark, Belgium, Portugal, Poland, Singapore, Hong Kong, Taiwan, and South Korea |
-| HoloLens 2 Development Edition | Canada, Germany, France, UK, Ireland, Japan, Australia, Italy, Switzerland, and New Zealand |
-- <sup>1</sup> This list is dynamic, check back for updates
 
 ## Options Overview
 
