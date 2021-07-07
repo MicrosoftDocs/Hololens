@@ -20,7 +20,7 @@ appliesto:
 
 Figuring out how to deploy a new device can be a struggle when you try it the first time. Here we share different ways to deploy and manage Microsoft HoloLens 2 devices within the organization.
 
-You want solutions - deployed at scale. We want to get you there. Let's first talk about the steps to deploy devices, therefore holograms, to achieve value for your target Mixed Reality scenario, whether you are using D365 Remote Assist, Guides, or an Azure mixed reality service-enabled application you created in house.
+You want solutions - deployed at scale. We want to get you there. Let's first talk about the steps to deploy devices, therefore holograms, to achieve value for your target Mixed Reality scenario, whether you are using D365 Remote Assist, Guides, or an Azure mixed reality service-enabled application you created.
 
 You may be a business decision-maker, IT professional, or an innovation team looking to adopt HoloLens within your organization. As you build from Proof of Concept to a scaled deployment, our deployment guides make sense of HoloLens within your IT infrastructure - no matter how big or small. The following deployment scenarios are the most common:
 
@@ -28,7 +28,7 @@ You may be a business decision-maker, IT professional, or an innovation team loo
 |---------|---------|---------|
 | [Scenario A: Cloud connected devices](hololens2-cloud-connected-overview.md) | When you first begin your deployment, you may start small and deploy a single device connected to the cloud just to see the basic process. | Devices will be connected to cloud services and public internet. This is most suitable for customer use cases, Filed Services, and Proof of Concept.|
 | [Scenario B: Organization's network](hololens2-corp-connected-overview.md) | As you deploy to production at scale, you may need to integrate with your own organization's network. | Devices will be connected to a "Corporate" wi-fi network. This is most suitable for Internal users, or use within the corporate environment.|
-| [Scenario C: Offline secure environment](hololens-common-scenarios-offline-secure.md) | Some mission-critical processes or some corporate policies may demand the use of offline environments. | Devices will be connected to a highly restrictive network or will be purely offline devices. This is most suitable for highly secure environments, or "Experiences" where public will be using the devices. |
+| [Scenario C: Offline secure environment](hololens-common-scenarios-offline-secure.md) | Some mission-critical processes or some corporate policies may demand the use of offline environments. | Devices will be connected to a highly restrictive network or will be purely offline devices. This is most suitable for highly secure environments, or internet connectivity restrictions in remote areas. |
 
 ## Scenario A: Deploy to cloud connected devices
 
@@ -112,7 +112,7 @@ This is a typical deployment for highly secure or confidential locations. HoloLe
 
 Consider this deployment model for:
 
-* Highly Secure environments where "data" needs to be retained in house
+* Highly Secure environments where data needs to be retained in house
 * "Experiences" where the public will be using the devices
 * Internet connectivity issue in the remote area
 
