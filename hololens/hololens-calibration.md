@@ -87,7 +87,7 @@ With Auto Eye Position, the Eye Tracking Calibration prompt dialog is deferred u
 1.  The Eye Tracking Calibration Prompt dialog provides the user with details on why eye tracking is needed.
 2.  Presents the user a way to decline to have their eyes calibrated.
 
-If the user chooses to launch the Eye Tracking Calibration, the focus should returning to the original application after calibration completes. 
+If the user chooses to launch the Eye Tracking Calibration, the focus should return to the original application after calibration completes. 
 
 ### Calibration data and security
 
@@ -104,11 +104,11 @@ You can also disable the calibration prompt by following these steps:
 1. Select **Settings** > **System** > **Calibration**.
 1. Turn off **When a new person uses this HoloLens, automatically ask to run eye calibration**.
 
-> [!IMPORTANT]
-> This setting may adversely affect hologram rendering quality and comfort.  When you turn off this setting, features that depend on eye tracking (such as text scrolling) no longer work in immersive applications.
+   > [!IMPORTANT]
+   > This setting may adversely affect hologram rendering quality and comfort.  When you turn off this setting, features that depend on eye tracking (such as text scrolling) no longer work in immersive applications.
 
 > [!NOTE]
-> This Settings switch has been removed as of Windows Holographic, version 20H2 with the inception of [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support). The calibration prompt will automatically appear only if an uncalibrated user is using an Eye Tracking-enabled app.
+> The Settings switch has been removed as of Windows Holographic, version 20H2 with the inception of [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support). The calibration prompt will automatically appear only if an uncalibrated user is using an Eye Tracking-enabled app.
 
 ### HoloLens 2 eye-tracking technology
 
@@ -138,9 +138,9 @@ To use the **Start** menu to run the Calibration app, follow these steps:
 1. To view all apps, select **+**.
 1. Select **Calibration**.
 
-![Accessing the calibration app from the shell](./images/calibration-shell.png)
+   ![Accessing the calibration app from the shell](./images/calibration-shell.png)
 
-![The calibration app displayed as a Live Cube after being launched](./images/calibration-livecube-200px.png)
+   ![The calibration app displayed as a Live Cube after being launched](./images/calibration-livecube-200px.png)
 
 To use the Settings app to run the Calibration app, follow these steps:
 
@@ -149,7 +149,7 @@ To use the Settings app to run the Calibration app, follow these steps:
 1. Select **Settings**.
 1. Select **System** > **Utilities** > **Open Calibration**.
 
-![Launching the calibration app from the settings app](./images/calibration-settings-500px.jpg)
+   ![Launching the calibration app from the settings app](./images/calibration-settings-500px.jpg)
 
 ## Immersive headsets
 
