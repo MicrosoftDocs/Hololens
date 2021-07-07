@@ -40,7 +40,6 @@ This scenario is comparable to deploying managed mobile devices within a company
 
 Consider this deployment model for:
 
-* External customer use cases
 * Deploying Proof of Concept, Pilots and Field Services
 * Deploying [Remote Assist](hololens2-options-remote-assist.md)
 
