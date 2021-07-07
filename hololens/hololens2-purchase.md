@@ -37,8 +37,6 @@ See the below table for HoloLens 2 availability and purchase options by region.
 
 | Country | ADR | Sales Contacts | Web Page URL – HoloLens 2 | Web Page URL – HoloLens 2 Industrial Edition |
 |---------|-----|---------|----------------|----------|
-| **Australia** | Insight Enterprises Australia Pty Ltd
- | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)
+| **Australia** | Insight Enterprises Australia Pty Ltd  | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)
 Aligianis, Costa [Costa.Aligianis@insight.com](mailto:Costa.Aligianis@insight.com) | [https://au.insight.com/en\_AU/shop/partner/microsoft/surface/hololens.html](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) | [https://au.insight.com/en\_AU/shop/partner/microsoft/surface/hololens.html](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) |
-| | Telstra Purple | Joanna Bari [Joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com)Oliver Ashworth [Oliver.Ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) | NEED URL | NEED URL
- |
+| | Telstra Purple | Joanna Bari [Joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com)Oliver Ashworth [Oliver.Ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) |  |  |
