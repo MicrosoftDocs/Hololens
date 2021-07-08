@@ -73,11 +73,11 @@ The carrying case is made of a porous material and should not be used in clean r
 
 ### Can I use the same cleaning materials for HoloLens 2 Industrial Edition as the other editions?
 
-The HoloLens 2 Industrial Edition can be cleaned by a solution of &quot;70%&quot; isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance).
+The HoloLens 2 Industrial Edition can be cleaned by a solution of &quot;70%&quot; isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](/hololens/hololens2-maintenance).
 
 ### How do I clean HoloLens 2 Industrial Edition?
 
-Much of the advice for cleaning the standard HoloLens 2 applies to the HoloLens 2 Industrial Edition. Review the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance).
+Much of the advice for cleaning the standard HoloLens 2 applies to the HoloLens 2 Industrial Edition. Review the [HoloLens 2 cleaning FAQ](/hololens/hololens2-maintenance).
 
 ### How should I hold HoloLens 2 Industrial Edition when cleaning it?
 
@@ -91,7 +91,7 @@ The Industrial Edition has the same OS as all other HoloLens 2 editions. For mor
 
 ### What apps can run-on the HoloLens 2 Industrial Edition?
 
-HoloLens 2 Industrial Edition supports both 1st and 3rd party apps, with a selection of in-box enterprise ready apps. Line-of-business apps can be deployed to devices utilizing the several  [app deployment methods](https://docs.microsoft.com/hololens/app-deploy-overview).
+HoloLens 2 Industrial Edition supports both 1st and 3rd party apps, with a selection of in-box enterprise ready apps. Line-of-business apps can be deployed to devices utilizing the several  [app deployment methods](/hololens/app-deploy-overview).
 
 ### Can I upgrade from HoloLens 2 to HoloLens 2 Industrial Edition?
 

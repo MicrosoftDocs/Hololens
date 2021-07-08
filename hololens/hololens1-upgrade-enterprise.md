@@ -30,7 +30,7 @@ When you purchase the Commercial Suite, you receive a license that upgrades Wind
 
 The enterprise license can be applied by any MDM provider that supports the [WindowsLicensing configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx). The latest version of the Microsoft MDM API will support WindowsLicensing CSP.
 
-For step-by-step instructions for upgrading HoloLens by using Microsoft Intune, see [Upgrade devices running Windows Holographic to Windows Holographic for Business](https://docs.microsoft.com/intune/holographic-upgrade).
+For step-by-step instructions for upgrading HoloLens by using Microsoft Intune, see [Upgrade devices running Windows Holographic to Windows Holographic for Business](/intune/holographic-upgrade).
 
  On other MDM providers, the specific steps for setting up and deploying the policy might vary.
 

@@ -28,8 +28,9 @@ For more information about store apps, see [Manage apps with the store](holograp
 > The following information was created for the HoloLens (1st gen), also called the HoloLens Developer Edition at the time. As such sideloading apps via device portal and installing apps via Visual Studio were commonplace then. For enterprise deployments we do not recommend enabling Developer Mode, which both of these methods use. If you are interested in a secure app deployment method please review our [App Management: Overview](app-deploy-overview.md).
 >
 > If you are looking for either developer method of app installation for HoloLens 2 devices please refer to:
-> - [Device Portal: Installing an App](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
-> - [Using Visual Studio to deploy and debug Apps](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+>
+> - [Device Portal: Installing an App](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
+> - [Using Visual Studio to deploy and debug Apps](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
 ## Install custom apps
 
@@ -37,7 +38,7 @@ You can install your own applications on HoloLens either by using the Device Por
 
 ### Installing an application package with the Device Portal
 
-1. Establish a connection from [Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) to the target HoloLens.
+1. Establish a connection from [Device Portal](/windows/mixed-reality/using-the-windows-device-portal) to the target HoloLens.
 
 1. In the left navigation, navigate to the **Apps** page.
 

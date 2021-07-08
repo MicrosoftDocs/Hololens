@@ -57,9 +57,9 @@ If you still can't restart your device, try to restart it by using the **power**
 ### Do a safe restart by using Windows Device Portal
 
 > [!NOTE]
-> For this process, HoloLens has to be configured as a developer device. Learn more at [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
+> For this process, HoloLens has to be configured as a developer device. Learn more at [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal).
 
-If the previous procedure didn't work, try to restart the device by using [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal). In the upper-right corner, find the option to restart or shut down the device.
+If the previous procedure didn't work, try to restart the device by using [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal). In the upper-right corner, find the option to restart or shut down the device.
 
 ### Do an unsafe forced restart
 
@@ -115,7 +115,7 @@ If your HoloLens still has a problem, try resetting it to factory state. This st
 
 If the device is still having a problem after restart and reset, you can use a recovery tool on your computer to reinstall the HoloLens operating system and firmware.  
 
-The data that HoloLens needs for the reset is packaged in a Full Flash Update (FFU), which is similar to an .iso, .wim, or .vhd file. [Learn about FFU image file formats.](https://docs.microsoft.com/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
+The data that HoloLens needs for the reset is packaged in a Full Flash Update (FFU), which is similar to an .iso, .wim, or .vhd file. [Learn about FFU image file formats.](/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
 
 You can install a new operating system on your HoloLens (1st gen) by using the Windows Device Recovery Tool. Before you use that tool, see if restarting or resetting your HoloLens fixes the problem.
 

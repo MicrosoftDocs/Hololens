@@ -26,11 +26,10 @@ During the guide, we will cover how to enroll your devices into your device mana
 
 The following infrastructure should be in place in order to deploy the HoloLens 2. If not, setting up Azure and Intune is included in this guide:
 
-- Wi-Fi
-    - Networks are typically open to the Internet and Cloud services
-- Azure Active Directory (Azure AD) Join with MDM Auto Enrollment ([Azure AD P1 subscription](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) needed)
-- MDM (Intune) Managed
-    - One or more applications are deployed via MDM.
+This is a set up similar to [Scenario A: Deploy to cloud connect devices](/hololens/common-scenarios#scenario-a), which is a good option for many Proof of Concept deployments, which will include:
+
+- Wi-Fi networks are typically fully open to the Internet and Cloud services
+- Azure AD Join with MDM Auto Enrollment -- MDM (Intune) Managed
 - Users sign in with their own corporate account (Azure AD)
     - Single or multiple users per device is supported.
 

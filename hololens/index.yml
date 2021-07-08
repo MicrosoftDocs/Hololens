@@ -26,10 +26,12 @@ landingContent:
     linkLists:
       - linkListType: learn
         links:
-          - text: About HoloLens 2 hardware
-            url: hololens2-hardware.md
-          - text: Compare HoloLens 2 options
+          - text: HoloLens 2 capabilities and solutions
+            url: hololens-commercial-features.md
+          - text: HoloLens 2 options
             url: hololens2-options.md
+          - text: HoloLens 2 hardware
+            url: hololens2-hardware.md  
       - linkListType: overview
         links:        
           - text: Device-only

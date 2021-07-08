@@ -26,11 +26,12 @@ When Microsoft Store for Business is used by an end user they will launch the Mi
 > Microsoft Store for Business does not automatically download (push) apps to devices. However, apps from the Microsoft Store for Business can be associated with your device management (MDM) server to target and sync apps to devices.
 
 Visit the following pages to learn more about how to use the Microsoft Store for Business:
-* [Levels of permissions used for installing applications](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-holographic#app-store)
-* [How to add an app to your Store for Business](https://docs.microsoft.com/mem/intune/apps/store-apps-windows)
-* [How to assign apps to groups of employees](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business)
 
-To associate your Microsoft Store for Business, visit [Associate your Microsoft Store for Business with Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune).
+* [Levels of permissions used for installing applications](/mem/intune/configuration/device-restrictions-windows-holographic#app-store)
+* [How to add an app to your Store for Business](/mem/intune/apps/store-apps-windows)
+* [How to assign apps to groups of employees](/mem/intune/apps/windows-store-for-business)
 
-> [!Tip] 
-> Learn more about [distributing offline apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) when using apps like Advanced Recovery Companion (ARC) and Windows Configuration Designer (WCD).
+To associate your Microsoft Store for Business, visit [Associate your Microsoft Store for Business with Intune](/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune).
+
+> [!Tip]
+> Learn more about [distributing offline apps](/microsoft-store/distribute-offline-apps) when using apps like Advanced Recovery Companion (ARC) and Windows Configuration Designer (WCD).
