@@ -5,7 +5,7 @@ keywords: HoloLens 2 purchasing options, international purchase, international r
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: skerawala
-ms.date: 7/06/2021
+ms.date: 7/08/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -20,8 +20,6 @@ appliesto:
 
 ## Countries where HoloLens 2 is available
 
-<br>
-
 | HoloLens 2 Edition| Supported Market |
 |-------------------------------------------| ----------------------------------------| 
 | HoloLens 2 | US, Canada, Germany, France, UK, Ireland, China, Japan, Australia, Italy, New Zealand, Netherlands, Switzerland, Spain, Austria, Sweden, Finland, Norway, Denmark, Belgium, Portugal, Poland, Singapore, Hong Kong, Taiwan, and South Korea |
@@ -33,7 +31,7 @@ appliesto:
 ## Find an authorized HoloLens 2 reseller
 See the below tables for HoloLens 2 availability and purchase options by region.
 
-**APAC**
+### **APAC**
 
 | Country | ADR | Sales Contacts | Web Page URL – HoloLens 2 | Web Page URL – HoloLens 2 Industrial Edition |
 |---------|-----|---------|----------------|----------|
@@ -58,15 +56,17 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Thailand** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate vongsakorn@sustain-solution.com | https://hololensthai.com/ | https://hololensthai.com/ |
 | Vietnam | CÔNG TY TNHH HIVERLAB VIETNAM | Cincin Phung Cincin.phung@hiverlab.com | https://www.hiverlab.com/vn | https://www.hiverlab.com/vn |
 
-**North America**
+### **North America**
+
 | Country | ADR | Sales Contacts | Web Page URL – HoloLens 2 | Web Page URL – HoloLens 2 Industrial Edition |
 |---------|-----|---------|----------------|----------|
 | Canada | Insight Canada | Trish O'Keeffe Trish.okeeffe@insight.com | https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html | https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/ |
 | United States | Insight North America | Jake Poirier jake.poirier@insight.com | https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html | https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/ | 
 | | SHI International Corp. | Kevin English kevin_english@SHI.com  HoloLens@SHI.com | www.shi.com/hololens |  | 
-| | Rental Partner! Hartford Technology | Mark Ferro mferro@hartfordrents.com | https://hartfordrents.com/product/hololens-2-rental/ | In development | 
+| | Rental Partner! Hartford Technology | Mark Ferro mferro@hartfordrents.com | https://hartfordrents.com/product/hololens-2-rental/ |  | 
 
-**EMEA**
+### **EMEA**
+
 | Country | ADR | Sales Contacts | Web Page URL – HoloLens 2 | Web Page URL – HoloLens 2 Industrial Edition |
 |---------|-----|---------|----------------|----------|
 | **Austria** | Bechtle | Kurt Wiesauer kurt.wiesauer@bechtle.com | https://www.bechtle.com/at/aktionen-sh/microsoft-hololens-2 | https://www.bechtle.com/at/shop/microsoft-hololens-2-ind-ed-datenbrille--4525629--p | 
@@ -80,11 +80,11 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **France** | ARP France (Bechtle) | Doha Benchair doha.benchair@arp.com | https://www.arp.fr/promo/microsoft-hololens-2/ | https://www.arp.fr/lunettes-microsoft-hololens-2-ind-ed-ssu-00003-5496988 | 
 | | Econocom | Sabine Lhuillery sabine.lhuillery@econocom.com | https://microsoft-hololens.econocom.com/fr | https://microsoft-hololens.econocom.com/en/hololens-2 | 
 | | Insight Technology Solutions SAS | Wouter Brandenbarg Wouter.Brandenbarg@insight.com<br>Aude Lamouroux aude.lamouroux@insight.com | https://fr.insight.com/shop/microsoft/devices-and-hardware/hololens | https://fr.insight.com/en-gb/productinfo/games-accessories/0011395310-00000001?&ulang=fr | 
-| | Rental Partner! IDEM | David Marty david.marty@idem.fr Jerome Bouas jerome.bouas@idem.fr | NEED URL | NEED URL | 
+| | Rental Partner! IDEM | David Marty david.marty@idem.fr Jerome Bouas jerome.bouas@idem.fr |  |  | 
 | **Germany** | Bechtle | Christian Keintzel christian.keintzel@bechtle.com<br>CarinaKaiser carina.kaiser@bechtle.com | https://www.bechtle.com/marken/microsoft-surface/microsoft-hololens-2 | https://www.bechtle.com/marken/microsoft-surface/surface-hololens-2-industrial-version | 
 | | Insight | Anja Flasdieck anja.flasdieck@insight.com | https://www.insight.de/shop/microsoft/hololens | https://www.insight.de/de/produktinfo/id/0011395310-00000001?alert=categoryresults | 
 | **Italy** | Asystel (Econocom) | Paola Malvestiti paola.malvestiti@asystelitalia.it |  |  | 
-| | Insight | Sonia Tamponi sonia.tampon@insight.com | https://it.insight.com/shop/microsoft/devices-and-hardware/hololens | In development | 
+| | Insight | Sonia Tamponi sonia.tampon@insight.com | https://it.insight.com/shop/microsoft/devices-and-hardware/hololens |  | 
 | **Netherlands** | Bechtle | Dennis van Pinxten dennis.vanpinxten@bechtle.com sales.direct-nl@bechtle.com | https://www.bechtle.com/nl-en/shop/microsoft-hololens-2-smart-glasses--4342628--p | https://www.bechtle.com/nl-en/shop/microsoft-hololens-2-ind-ed-smartglasses--4525629--p | 
 | | BuyITDirect (Bechtle) | Thijs Groen thijs.groen@buyitdirect.com Andreas Luckfiel andreas.luckfiel@buyitdirect.com sales@buyitdirect.com | https://shop.buyitdirect.com/microsoft/hololens-2 | https://shop.buyitdirect.com/hololens-2-industrial-edition/ssu-00003/3871816 | 
 | | Insight | Rogier Duivestein rogier.duivestein@insight.com Johan Bax johan.bax@insight.com Florian Bolhoeve florian.bolhoeve@insight.com | https://nl.insight.com/shop/partner/microsoft/hardware/hololens |  | 
