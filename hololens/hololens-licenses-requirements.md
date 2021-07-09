@@ -34,8 +34,8 @@ These are the essential components for low-touch, cloud-based deployments of Hol
 
 1. [Azure AD Account](https://docs.microsoft.com/azure/active-directory/)
 
-> [!IMPORTANT]
-> Active Directory (AD) cannot be used to manage HoloLens devices.
+    > [!IMPORTANT]
+    > Active Directory (AD) cannot be used to manage HoloLens devices.
 
 2. [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) or another MDM.
 - [Windows Autopilot for HoloLens 2](hololens2-autopilot.md)- simplifies the provisioning experience for both IT admins and end users. IT admins can preconfigure HoloLens 2 policies, and upon first boot, devices will be deployed in business-ready state with zero end-user interaction. 
