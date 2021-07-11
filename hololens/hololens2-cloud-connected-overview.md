@@ -18,7 +18,7 @@ appliesto:
 
 # Deployment Guide – Cloud connected HoloLens 2 with Remote Assist – Overview
 
-This guide will help IT professionals plan for and deploy Microsoft HoloLens 2 devices with Remote Assist to their organization. This will serve as a model for proof-of-concept deployments to your organization across a variety of HoloLens 2 use cases. The setup is similar to [Scenario A: Deploy to cloud connect devices](common-scenarios#scenario-a.md). 
+This guide will help IT professionals plan for and deploy Microsoft HoloLens 2 devices with Remote Assist to their organization. This will serve as a model for proof-of-concept deployments to your organization across various HoloLens 2 use cases. The setup is similar to [Scenario A: Deploy to cloud connect devices](common-scenarios#scenario-a.md). 
 
 During the guide, we will cover how to enroll your devices into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device setup. To do this, we will go over the important pieces of infrastructure needed to get set up and running – achieving deployment at scale with HoloLens 2. No other device restrictions or configurations will be applied in this guide, however, we encourage you to explore those options after finishing.
 
@@ -26,19 +26,19 @@ During the guide, we will cover how to enroll your devices into your device mana
 
 The following infrastructure should be in place in order to deploy the HoloLens 2. If not, setting up Azure and Intune is included in this guide:
 
-This is a set up similar to [Scenario A: Deploy to cloud connect devices](/hololens/common-scenarios#scenario-a), which is a good option for many Proof of Concept deployments, which will include:
+This is a setup similar to [Scenario A: Deploy to cloud connect devices](/hololens/common-scenarios#scenario-a), which is a good option for many Proof of Concept deployments, which will include:
 
 - Wi-Fi networks are typically fully open to the Internet and Cloud services
-- Azure AD Join with MDM Auto Enrollment -- MDM (Intune) Managed
+- Azure AD Join with MDM Auto Enrollment—MDM-managed (Intune)
 - Users sign in with their own corporate account (Azure AD)
-    - Single or multiple users per device is supported.
+    - Single or multiple users per device are supported.
 
 :::image type="content" alt-text="Cloud connected scenario" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
 
 
 ## Learn about Remote Assist
 
-Remote Assist allows for collaborative maintenance and repair, remote inspection, as well as knowledge sharing and training. By connecting people in different roles and locations a technician using Remote Assist can connect with a remote collaborator on Microsoft Teams. They can combine video, screenshots, and annotations to solve problems in real time even when they aren&#39;t in the same location. Remote collaborators can insert reference images, schematics, and other helpful information the technician&#39;s physical space so they can refer to the schematic while working heads-up and hands-free on HoloLens.
+Remote Assist allows for collaborative maintenance and repair, remote inspection, as well as knowledge sharing and training. By connecting people in different roles and locations, a technician who uses Remote Assist can connect with a remote collaborator on Microsoft Teams. They can combine video, screenshots, and annotations to solve problems in real time even when they aren't in the same location. Remote collaborators can insert reference images, schematics, and other helpful information the technician's physical space so they can refer to the schematic while working heads-up and hands-free on HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -57,7 +57,7 @@ Remote Assist allows for collaborative maintenance and repair, remote inspection
 - Microsoft Teams or [Teams Freemium](https://products.office.com/microsoft-teams/free).
 - Network connectivity
 
-If you plan on implementing this [cross-tenant scenario](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants), you may need an Information Barriers license. See [this article](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) to determine if an Information Barrier License is required.
+If you plan on implementing this [cross-tenant scenario](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants), you may need an Information Barriers license. To determine if an Information Barrier License is required, see [Vendors and customers use full Dynamics 365 Remote Assist capabilities](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation).
 
 ## In this guide you will:
 
