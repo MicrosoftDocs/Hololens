@@ -31,7 +31,7 @@ HoloLens supports a limited set of offline experiences for customers who have ne
 | Purpose | URL |
 |------|------|
 | IDPS | https://sdx.microsoft.com/frx/idps |
-| [NCSI](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-ncsi) |  http://www.msftconnecttest.com/connecttest.txt  |
+| [NCSI](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-ncsi) |  http://www.msftconnecttest.com/connecttest.txt  |
 | AADv9 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/9 |
 | AADv10 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/10 |
 | AAD Pin | https://account.live.com/aadngc?uiflavor=win10&showSuccess=1 |
@@ -147,15 +147,15 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 ## References
 
 > [!NOTE]
-> If you are deploying D365 Remote Assist, you will have to enable the endpoints on this [list](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) 
-- [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
-- [Manage connection endpoints for Windows 10 Enterprise, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)
-- [Manage connections from Windows 10 operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
-- [Intune network configuration requirements and bandwidth](https://docs.microsoft.com/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
-- [Network endpoints for Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/intune-endpoints)
-- [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
-- [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
+> If you are deploying D365 Remote Assist, you will have to enable the endpoints on this [list](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) 
+- [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
+- [Manage connection endpoints for Windows 10 Enterprise, version 1903](/windows/privacy/manage-windows-1903-endpoints)
+- [Manage connections from Windows 10 operating system components to Microsoft services](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
+- [Intune network configuration requirements and bandwidth](/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
+- [Network endpoints for Microsoft Intune](/intune/fundamentals/intune-endpoints)
+- [Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges)
+- [Prerequisites for Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
 
 ## HoloLens limitations

@@ -85,7 +85,7 @@ If the device has an OS build before the [May 2004 update](hololens-release-note
 
 ### Benefits
 
-This will allow a "Single touch" of the device, to apply the correct provisioning package and gather the MAC address of the device. [Provisioning packages can be created following the guidance here.](https://docs.microsoft.com/hololens/hololens-provisioning)
+This will allow a "Single touch" of the device, to apply the correct provisioning package and gather the MAC address of the device. [Provisioning packages can be created following the guidance here.](hololens-provisioning.md)
 
 ## Autopilot with Intune Enrollment
 
@@ -103,7 +103,7 @@ This will allow a "Single touch" of the device, to apply the correct provisionin
 This will allow a customer with advanced networking requirements to enroll the devices in a hands-off, scalable approach
 
 Additional pre-requisites will be needed as below:
-1. [Enable the Tenant for the Autopilot preview](https://docs.microsoft.com/hololens/hololens2-autopilot).
+1. [Enable the Tenant for the Autopilot preview](hololens2-autopilot.md).
 1. Create the HoloLens policies to replace the Provisioning Package within Intune.
 1. Create the HoloLens Intune Policies.
 1. Assign the devices to the correct group.
