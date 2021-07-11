@@ -42,7 +42,7 @@ This feature configures HoloLens 2 device for multiple app kiosk mode, which is 
 
 1. Update and save XML blob mentioned above as XML file. 
 
-2. Follow the steps in [Use a provisioning package to set up a single-app or multi-app kiosk](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk), specifically the section "Prov. package, step 2 – Add the kiosk configuration XML file to a provisioning package" and refer to the XML file that was saved in the previous step.
+2. Follow the steps in [Use a provisioning package to set up a single-app or multi-app kiosk](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk), specifically the section "Prov. package, step 2 – Add the kiosk configuration XML file to a provisioning package" and refer to the XML file that was saved in the previous step.
 
 ## Can I create a configuration where global applies to everyone and separate configuration applies to 1 Azure AD account or Azure AD group? 
 

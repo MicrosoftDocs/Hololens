@@ -26,7 +26,7 @@ To improve security and account protection, HoloLens 2 has the capability to ena
 
 HoloLens 2 offers remote device sign-in options for Azure Active Directory work accounts during initial device setup and user sign-in to reduce the need to type complex passwords and minimize the need for passwords as credentials. Users and organizations who use smartcards to authenticate have difficulty using those credentials on devices such as HoloLens 2, and often organizations develop complicated systems and costly processes to work around the problem. To solve this problem, Azure AD offers two options for password-less sign-in on HoloLens 2.
 
-The first authentication method relies on new capabilities in the Microsoft Authenticator app to provide key-based authentication that enables a user credential tied to a device. Once enabled on a tenant by the administrator, users will be shown a message during HoloLens device setup telling them to tap a number on their app. They must then match the number on their authenticator app, choose Approve, provide their PIN or a biometric and complete authentication for their HoloLens setup to proceed. This is described in greater detail in [passwordless sign-in](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-phone).
+The first authentication method relies on new capabilities in the Microsoft Authenticator app to provide key-based authentication that enables a user credential tied to a device. Once enabled on a tenant by the administrator, users will be shown a message during HoloLens device setup telling them to tap a number on their app. They must then match the number on their authenticator app, choose Approve, provide their PIN or a biometric and complete authentication for their HoloLens setup to proceed. This is described in greater detail in [passwordless sign-in](/azure/active-directory/authentication/howto-authentication-passwordless-phone).
 
 The second is a device code flow that is intuitive to users and does not require any additional infrastructure.  This remote sign-in behavior relies on another trusted device that supports the organization’s preferred authentication mechanism and when complete, tokens are issued back to the HoloLens to complete sign-in or device setup. The steps in this flow are:
 
@@ -37,11 +37,11 @@ The second is a device code flow that is intuitive to users and does not require
   1. If the user chooses to continue signing in to the displayed ‘application’, Azure AD STS prompts the user for their credentials. On successful authentication, Azure AD STS updates the cached remote session as 'approved' along with an authorization code.
   1. Finally, the polling page on the user’s HoloLens 2 device receives an 'Authorized' response from Azure AD and proceeds to validate the user code, its associated stored authorization code and generates OAuth tokens as requested to complete device setup. The authentication token created is valid for 1 hour and the refresh token has a lifetime of 90 days.
 
-The code generation and encryption algorithms used in this flow are both FIPS compliant. HoloLens 2 devices utilize the TPM to secure device keys and encrypt tokens generated after user authentication using hardware-protected keys. More information on token security on HoloLens 2 is shared in [What is a Primary Refresh Token (PRT)](https://docs.microsoft.com/azure/active-directory/devices/concept-primary-refresh-token).
+The code generation and encryption algorithms used in this flow are both FIPS compliant. HoloLens 2 devices utilize the TPM to secure device keys and encrypt tokens generated after user authentication using hardware-protected keys. More information on token security on HoloLens 2 is shared in [What is a Primary Refresh Token (PRT)](/azure/active-directory/devices/concept-primary-refresh-token).
 
 ## Device sign-in with Windows Hello
 
-[Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) offers password-free options built directly into the operating system permitting users to sign into the device using Iris or PIN. PIN is always available as a credential and is required for device setup, whereas Iris is optional and may be skipped. Users can sign-in to HoloLens devices using their personal Microsoft account or [Azure Active Directory work account *without* entering a password](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless). Options such as these offer users rapid, secured access to their full Windows experience, apps, data, websites, and services. Microsoft’s strategy towards passwordless experiences is detailed here.
+[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) offers password-free options built directly into the operating system permitting users to sign into the device using Iris or PIN. PIN is always available as a credential and is required for device setup, whereas Iris is optional and may be skipped. Users can sign-in to HoloLens devices using their personal Microsoft account or [Azure Active Directory work account *without* entering a password](/azure/active-directory/authentication/concept-authentication-passwordless). Options such as these offer users rapid, secured access to their full Windows experience, apps, data, websites, and services. Microsoft’s strategy towards passwordless experiences is detailed here.
 
 When a Windows Hello credential is created, it establishes a trusted relationship with an identity provider and creates an asymmetric key-pair for authentication. A Windows Hello gesture (such as iris or PIN) provides entropy to decrypt a private key backed by the device’s Trusted Platform Module (TPM) chip. This private key is then used to sign requests sent to an authenticating server and upon successful authentication, the user is granted access to their mail, pictures, and other account settings.
 
@@ -50,25 +50,25 @@ For more information, see the following infographic:
   ![Windows Hello Sign-in](images/security-hello-sign-in.png)
   
 In the graphic presented above, note that nonce is stands for “number once”, and is a random or semi-random generated number. 
-Once the Windows Hello Biometric or PIN credential is set up, it never leaves the device on which it is provisioned. Even if the user’s Windows Hello PIN is stolen, such as through a phishing attack, it is [useless without the user’s physical device](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password).
+Once the Windows Hello Biometric or PIN credential is set up, it never leaves the device on which it is provisioned. Even if the user’s Windows Hello PIN is stolen, such as through a phishing attack, it is [useless without the user’s physical device](/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password).
 
-For added security, Windows Hello credentials are protected by the Trusted Platform Module (TPM) to make the credentials tamper resistant and supplemented with anti-hammering protections against multiple incorrect entries, and malicious software protection to prevent exposure. For more information on Single Sign-On (SSO), read this [overview of SSO methods](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
+For added security, Windows Hello credentials are protected by the Trusted Platform Module (TPM) to make the credentials tamper resistant and supplemented with anti-hammering protections against multiple incorrect entries, and malicious software protection to prevent exposure. For more information on Single Sign-On (SSO), read this [overview of SSO methods](/azure/active-directory/manage-apps/what-is-single-sign-on).
 
-Iris authentication falls back to the PIN. In order to set up a new PIN (a strong authenticator) on the device, the user must have recently gone through [Multifactor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) in order to complete the process.
+Iris authentication falls back to the PIN. In order to set up a new PIN (a strong authenticator) on the device, the user must have recently gone through [Multifactor Authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks) in order to complete the process.
 
 ## Single sign-on with Web Account Manager
 
-Single sign-on (SSO) allows password-less users to sign into the device, utilizing the user’s personal account or their work or school account. The user is automatically authorized with SSO on all integrated apps and services via the [Web Account Manager APIs](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true).
+Single sign-on (SSO) allows password-less users to sign into the device, utilizing the user’s personal account or their work or school account. The user is automatically authorized with SSO on all integrated apps and services via the [Web Account Manager APIs](/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true).
 
 Once an identity has been added through one application, it can, with user consent, become available to all apps and services using system-level integration. This reduces the app sign in burden significantly and provides users with a seamless identity experience.
 
-For more information on implementing Web Account Manager APIs, go to [Implementing Web Account Manager APIs](https://docs.microsoft.com/windows/uwp/security/web-account-manager).
+For more information on implementing Web Account Manager APIs, go to [Implementing Web Account Manager APIs](/windows/uwp/security/web-account-manager).
 
   ![Security API](images/security-api-img.png)
   
 For app suites with specialized authentication requirements, the Web Account Manager (WAM) framework is extensible to custom identity providers. Users can download the custom identity provider, packaged as a Universal Windows Platform (UWP) app from the Microsoft Store, to enable SSO on other apps integrated with that identity provider.
 
-For more information on implementing custom WAM Identity providers, see [Custom WAM Identity Provider API reference](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true).
+For more information on implementing custom WAM Identity providers, see [Custom WAM Identity Provider API reference](/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true).
 
 ## Windows Hello and FIDO2 sign-in with WebAuthn
 
@@ -101,14 +101,14 @@ Both options offer two-factor authentication in one step, requiring both a regis
 
 MSA and Azure AD are among the first relying parties to support password-less authentication by implementing WebAuthn.
 
-For more information on using WebAuthn with applications and/or SDKs, go to [WebAuthn APIs for password-less authentication on Windows 10](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis).
+For more information on using WebAuthn with applications and/or SDKs, go to [WebAuthn APIs for password-less authentication on Windows 10](/windows/security/identity-protection/hello-for-business/webauthnapis).
 
-HoloLens 2 supports FIDO2 security devices that are implemented to spec and satisfy the requirements listed on [Azure Active Directory passwordless sign-in - FIDO2 security keys](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) should be supported.
+HoloLens 2 supports FIDO2 security devices that are implemented to spec and satisfy the requirements listed on [Azure Active Directory passwordless sign-in - FIDO2 security keys](/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) should be supported.
 
 ## Local accounts
 
-A single local account can be configured for offline mode deployments. Local accounts are not enabled by default and must be configured during device provisioning. They must sign in by using a password, and they do not support alternate authentication methods (such as [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) or [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)).
+A single local account can be configured for offline mode deployments. Local accounts are not enabled by default and must be configured during device provisioning. They must sign in by using a password, and they do not support alternate authentication methods (such as [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-overview) or [Windows Hello](/windows-hardware/design/device-experiences/windows-hello)).
 
-More details on HoloLens user accounts can be found on [HoloLens Identity](https://docs.microsoft.com/hololens/hololens-identity).
+More details on HoloLens user accounts can be found on [HoloLens Identity](hololens-identity.md).
 
-IT administrators adjust whether the user is allowed to use an MSA account for non-email related connection authentication and services through [AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). For password configuration policies, idling policies, and lock screen policies, see [Device Lock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock).
+IT administrators adjust whether the user is allowed to use an MSA account for non-email related connection authentication and services through [AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). For password configuration policies, idling policies, and lock screen policies, see [Device Lock](/windows/client-management/mdm/policy-csp-devicelock).
