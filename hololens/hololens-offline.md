@@ -147,7 +147,8 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 ## References
 
 > [!NOTE]
-> If you are deploying D365 Remote Assist, you will have to enable the endpoints on this [list](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) 
+> If you are deploying D365 Remote Assist, you will have to enable the endpoints listed for SharePoint Online and OneDrive for Business in [Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
+
 - [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
 - [Manage connection endpoints for Windows 10 Enterprise, version 1903](/windows/privacy/manage-windows-1903-endpoints)
 - [Manage connections from Windows 10 operating system components to Microsoft services](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
