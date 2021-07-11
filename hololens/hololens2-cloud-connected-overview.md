@@ -18,7 +18,7 @@ appliesto:
 
 # Deployment Guide – Cloud connected HoloLens 2 with Remote Assist – Overview
 
-This guide will help IT professionals plan for and deploy Microsoft HoloLens 2 devices with Remote Assist to their organization. This will serve as a model for proof-of-concept deployments to your organization across various HoloLens 2 use cases. The setup is similar to [Scenario A: Deploy to cloud connect devices](common-scenarios#scenario-a.md). 
+This guide will help IT professionals plan for and deploy Microsoft HoloLens 2 devices with Remote Assist to their organization. This will serve as a model for proof-of-concept deployments to your organization across various HoloLens 2 use cases. The setup is similar to [Scenario A: Deploy to cloud connect devices](common-scenarios.md#scenario-a). 
 
 During the guide, we will cover how to enroll your devices into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device setup. To do this, we will go over the important pieces of infrastructure needed to get set up and running – achieving deployment at scale with HoloLens 2. No other device restrictions or configurations will be applied in this guide, however, we encourage you to explore those options after finishing.
 

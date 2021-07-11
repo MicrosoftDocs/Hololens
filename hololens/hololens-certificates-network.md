@@ -21,7 +21,7 @@ Certificate-based authentication is a common requirement for customers using Hol
 Because HoloLens 2 devices are typically joined to Azure Active Directory (Azure AD) and managed by Intune or other MDM provider, you will need to deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with your MDM solution. 
 
 >[!NOTE]
-> If you do not have an MDM provider, you can still deploy certificates via a [provisioning package](hololens-provisioning#steps-for-creating-provisioning-packages.md) in [Windows Configuration Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) or through [Certificate Manager](certificate-manager.md) by going to **Settings > Update & Security > Certificate Manager**.
+> If you do not have an MDM provider, you can still deploy certificates via a [provisioning package](hololens-provisioning.md#steps-for-creating-provisioning-packages) in [Windows Configuration Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) or through [Certificate Manager](certificate-manager.md) by going to **Settings > Update & Security > Certificate Manager**.
 
 ## Certificate requirements
 Root certificates are required to deploy certificates through a SCEP or PKCS infrastructure. Other applications and services in your organization might require root certificates to be deployed to your HoloLens 2 devices as well. 
