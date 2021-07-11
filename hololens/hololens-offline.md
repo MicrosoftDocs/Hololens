@@ -45,102 +45,102 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 
 | Purpose | URL |
 |------|------|
-| Azure                                               | wd-prod-fe.cloudapp.azure.com                                       |   |   |   
-|                                                     | ris-prod-atm.trafficmanager.net                                     |   |   |   |
-|                                                     | validation-v2.sls.trafficmanager.net                                |   |   |   |
-| Azure AD Multi-Factor Authentication                | https://secure.aadcdn.microsoftonline-p.com                         |   |   |   |
-| Intune and MDM Configurations                       | activation-v2.sls.microsoft.com/*                                   |   |   |   |
-|                                                     | cdn.onenote.net                                                     |   |   |   |
-|                                                     | client.wns.windows.com                                              |   |   |   |
-|                                                     | crl.microsoft.com/pki/crl/*                                         |   |   |   |
-|                                                     | ctldl.windowsupdate.com                                             |   |   |   |
-|                                                     | *displaycatalog.mp.microsoft.com                                    |   |   |   |
-|                                                     | dm3p.wns.windows.com                                                |   |   |   |
-|                                                     | *microsoft.com/pkiops/*                                             |   |   |   |
-|                                                     | ocsp.digicert.com/*                                                 |   |   |   |
-|                                                     | r.manage.microsoft.com                                              |   |   |   |
-|                                                     | tile-service.weather.microsoft.com                                  |   |   |   |
-|                                                     | settings-win.data.microsoft.com                                     |   |   |   |
-| Certificates                                        | activation-v2.sls.microsoft.com/*                                   |   |   |   |
-|                                                     | crl.microsoft.com/pki/crl/*                                         |   |   |   |
-|                                                     | ocsp.digicert.com/*                                                 |   |   |   |
-|                                                     | https://www.microsoft.com/pkiops/*                                          |   |   |   |
-| Cortana and Search                                  | store-images.*microsoft.com                                         |   |   |   |
-|                                                     | www.bing.com/client                                                 |   |   |   |
-|                                                     | www.bing.com                                                        |   |   |   |
-|                                                     | www.bing.com/proactive                                              |   |   |   |
-|                                                     | www.bing.com/threshold/xls.aspx                                     |   |   |   |
-|                                                     | exo-ring.msedge.net                                                 |   |   |   |
-|                                                     | fp.msedge.net                                                       |   |   |   |
-|                                                     | fp-vp.azureedge.net                                                 |   |   |   |
-|                                                     | odinvzc.azureedge.net                                               |   |   |   |
-|                                                     | spo-ring.msedge.net                                                 |   |   |   |
-| Device Authentication                               | login.live.com*                                                     |   |   |   |
-| Device metadata                                     | dmd.metaservices.microsoft.com                                      |   |   |   |
-| Location                                            | inference.location.live.net                                         |   |   |   |
-|                                                     | location-inference-westus.cloudapp.net                              |   |   |   |
-| Diagnostic Data                                     | v10.events.data.microsoft.com                                       |   |   |   |
-|                                                     | v10.vortex-win.data.microsoft.com/collect/v1                        |   |   |   |
-|                                                     | https://www.microsoft.com                                                   |   |   |   |
-|                                                     | co4.telecommand.telemetry.microsoft.com                             |   |   |   |
-|                                                     | cs11.wpc.v0cdn.net                                                  |   |   |   |
-|                                                     | cs1137.wpc.gammacdn.net                                             |   |   |   |
-|                                                     | modern.watson.data.microsoft.com*                                   |   |   |   |
-|                                                     | watson.telemetry.microsoft.com                                      |   |   |   |
-| Licensing                                           | licensing.mp.microsoft.com                                          |   |   |   |
-| Microsoft Account                                   | login.msa.akadns6.net                                               |   |   |   |
-|                                                     | us.configsvc1.live.com.akadns.net                                   |   |   |   |
-| Microsoft Edge                                      | iecvlist.microsoft.com                                              |   |   |   |
-| Microsoft forward link redirection service (FWLink) | go.microsoft.com                                                    |   |   |   |
-| Microsoft Store                                     | *.wns.windows.com                                                   |   |   |   |
-|                                                     | storecatalogrevocation.storequality.microsoft.com                   |   |   |   |
-|                                                     | img-prod-cms-rt-microsoft-com*                                      |   |   |   |
-|                                                     | store-images.microsoft.com                                          |   |   |   |
-|                                                     | .md.mp.microsoft.com                                                |   |   |
-|                                                     | *displaycatalog.mp.microsoft.com                                    |   |   |   |
-|                                                     | pti.store.microsoft.com                                             |   |   |   |
-|                                                     | storeedgefd.dsx.mp.microsoft.com                                    |   |   |   |
-|                                                     | markets.books.microsoft.com                                         |   |   |   |
-|                                                     | share.microsoft.com                                                 |   |   |   |
-| Network Connection Status Indicator (NCSI)          | www.msftconnecttest.com*                                            |   |   |   |
-| Office                                              | *.c-msedge.net                                                      |   |   |   |
-|                                                     | *.e-msedge.net                                                      |   |   |   |
-|                                                     | *.s-msedge.net                                                      |   |   |   |
-|                                                     | nexusrules.officeapps.live.com                                      |   |   |   |
-|                                                     | ocos-office365-s2s.msedge.net                                       |   |   |   |
-|                                                     | officeclient.microsoft.com                                          |   |   |   |
-|                                                     | outlook.office365.com                                               |   |   |   |
-|                                                     | client-office365-tas.msedge.net                                     |   |   |   |
-|                                                     | https://www.office.com                                                      |   |   |   |
-|                                                     | onecollector.cloudapp.aria                                          |   |   |   |
-|                                                     | v10.events.data.microsoft.com/onecollector/1.0/                     |   |   |   |
-|                                                     | self.events.data.microsoft.com                                      |   |   |   |
-|                                                     | to-do.microsoft.com                                                 |   |   |   |
-| OneDrive                                            | g.live.com/1rewlive5skydrive/*                                      |   |   |   |
-|                                                     | msagfx.live.com                                                     |   |   |   |
-|                                                     | oneclient.sfx.ms                                                    |   |   |   |
-| Photos App                                          | evoke-windowsservices-tas.msedge.net                                |   |   |   |
-| Settings                                            | cy2.settings.data.microsoft.com.akadns.net                          |   |   |   |
-|                                                     | settings.data.microsoft.com                                         |   |   |   |
-|                                                     | settings-win.data.microsoft.com                                     |   |   |   |
-| Windows Defender                                    | wdcp.microsoft.com                                                  |   |   |   |
-|                                                     | definitionupdates.microsoft.com                                     |   |   |   |
-|                                                     | go.microsoft.com                                                    |   |   |   |
-|                                                     | *smartscreen.microsoft.com                                          |   |   |   |
-|                                                     | smartscreen-sn3p.smartscreen.microsoft.com                          |   |   |   |
-|                                                     | unitedstates.smartscreen-prod.microsoft.com                         |   |   |   |
-| Windows Spotlight                                   | *.search.msn.com                                                    |   |   |   |
-|                                                     | arc.msn.com                                                         |   |   |   |
-|                                                     | g.msn.com*                                                          |   |   |   |
-|                                                     | query.prod.cms.rt.microsoft.com                                     |   |   |   |
-|                                                     | ris.api.iris.microsoft.com                                          |   |   |   |
-| Windows Update                                      | *.prod.do.dsp.mp.microsoft.com                                      |   |   |   |
-|                                                     | cs9.wac.phicdn.net                                                  |   |   |   |
-|                                                     | emdl.ws.microsoft.com                                               |   |   |   |
-|                                                     | *.dl.delivery.mp.microsoft.com                                      |   |   |   |
-|                                                     | *.windowsupdate.com                                                 |   |   |   |
-|                                                     | *.delivery.mp.microsoft.com                                         |   |   |   |
-|                                                     | *.update.microsoft.com                                              |   |   |   |
+| Azure                                               | wd-prod-fe.cloudapp.azure.com                                       |
+|                                                     | ris-prod-atm.trafficmanager.net                                     |
+|                                                     | validation-v2.sls.trafficmanager.net                                |
+| Azure AD Multi-Factor Authentication                | https://secure.aadcdn.microsoftonline-p.com                         |
+| Intune and MDM Configurations                       | activation-v2.sls.microsoft.com/*                                   |
+|                                                     | cdn.onenote.net                                                     |
+|                                                     | client.wns.windows.com                                              |
+|                                                     | crl.microsoft.com/pki/crl/*                                         |
+|                                                     | ctldl.windowsupdate.com                                             |
+|                                                     | *displaycatalog.mp.microsoft.com                                    |
+|                                                     | dm3p.wns.windows.com                                                |
+|                                                     | *microsoft.com/pkiops/*                                             |
+|                                                     | ocsp.digicert.com/*                                                 |
+|                                                     | r.manage.microsoft.com                                              |
+|                                                     | tile-service.weather.microsoft.com                                  |
+|                                                     | settings-win.data.microsoft.com                                     |
+| Certificates                                        | activation-v2.sls.microsoft.com/*                                   |
+|                                                     | crl.microsoft.com/pki/crl/*                                         |
+|                                                     | ocsp.digicert.com/*                                                 |
+|                                                     | https://www.microsoft.com/pkiops/*                                          |
+| Cortana and Search                                  | store-images.*microsoft.com                                         |
+|                                                     | www.bing.com/client                                                 |
+|                                                     | www.bing.com                                                        |
+|                                                     | www.bing.com/proactive                                              |
+|                                                     | www.bing.com/threshold/xls.aspx                                     |
+|                                                     | exo-ring.msedge.net                                                 |
+|                                                     | fp.msedge.net                                                       |
+|                                                     | fp-vp.azureedge.net                                                 |
+|                                                     | odinvzc.azureedge.net                                               |
+|                                                     | spo-ring.msedge.net                                                 |
+| Device Authentication                               | login.live.com*                                                     |
+| Device metadata                                     | dmd.metaservices.microsoft.com                                      |
+| Location                                            | inference.location.live.net                                         |
+|                                                     | location-inference-westus.cloudapp.net                              |
+| Diagnostic Data                                     | v10.events.data.microsoft.com                                       |
+|                                                     | v10.vortex-win.data.microsoft.com/collect/v1                        |
+|                                                     | https://www.microsoft.com                                                   |
+|                                                     | co4.telecommand.telemetry.microsoft.com                             |
+|                                                     | cs11.wpc.v0cdn.net                                                  |
+|                                                     | cs1137.wpc.gammacdn.net                                             |
+|                                                     | modern.watson.data.microsoft.com*                                   |
+|                                                     | watson.telemetry.microsoft.com                                      |
+| Licensing                                           | licensing.mp.microsoft.com                                          |
+| Microsoft Account                                   | login.msa.akadns6.net                                               |
+|                                                     | us.configsvc1.live.com.akadns.net                                   |
+| Microsoft Edge                                      | iecvlist.microsoft.com                                              |
+| Microsoft forward link redirection service (FWLink) | go.microsoft.com                                                    |
+| Microsoft Store                                     | *.wns.windows.com                                                   |
+|                                                     | storecatalogrevocation.storequality.microsoft.com                   |
+|                                                     | img-prod-cms-rt-microsoft-com*                                      |
+|                                                     | store-images.microsoft.com                                          |
+|                                                     | .md.mp.microsoft.com                                                |
+|                                                     | *displaycatalog.mp.microsoft.com                                    |
+|                                                     | pti.store.microsoft.com                                             |
+|                                                     | storeedgefd.dsx.mp.microsoft.com                                    |
+|                                                     | markets.books.microsoft.com                                         |
+|                                                     | share.microsoft.com                                                 |
+| Network Connection Status Indicator (NCSI)          | www.msftconnecttest.com*                                            |
+| Office                                              | *.c-msedge.net                                                      |
+|                                                     | *.e-msedge.net                                                      |
+|                                                     | *.s-msedge.net                                                      |
+|                                                     | nexusrules.officeapps.live.com                                      |
+|                                                     | ocos-office365-s2s.msedge.net                                       |
+|                                                     | officeclient.microsoft.com                                          |
+|                                                     | outlook.office365.com                                               |
+|                                                     | client-office365-tas.msedge.net                                     |
+|                                                     | https://www.office.com                                                      |
+|                                                     | onecollector.cloudapp.aria                                          |
+|                                                     | v10.events.data.microsoft.com/onecollector/1.0/                     |
+|                                                     | self.events.data.microsoft.com                                      |
+|                                                     | to-do.microsoft.com                                                 |
+| OneDrive                                            | g.live.com/1rewlive5skydrive/*                                      |
+|                                                     | msagfx.live.com                                                     |
+|                                                     | oneclient.sfx.ms                                                    |
+| Photos App                                          | evoke-windowsservices-tas.msedge.net                                |
+| Settings                                            | cy2.settings.data.microsoft.com.akadns.net                          |
+|                                                     | settings.data.microsoft.com                                         |
+|                                                     | settings-win.data.microsoft.com                                     |
+| Windows Defender                                    | wdcp.microsoft.com                                                  |
+|                                                     | definitionupdates.microsoft.com                                     |
+|                                                     | go.microsoft.com                                                    |
+|                                                     | *smartscreen.microsoft.com                                          |
+|                                                     | smartscreen-sn3p.smartscreen.microsoft.com                          |
+|                                                     | unitedstates.smartscreen-prod.microsoft.com                         |
+| Windows Spotlight                                   | *.search.msn.com                                                    |
+|                                                     | arc.msn.com                                                         |
+|                                                     | g.msn.com*                                                          |
+|                                                     | query.prod.cms.rt.microsoft.com                                     |
+|                                                     | ris.api.iris.microsoft.com                                          |
+| Windows Update                                      | *.prod.do.dsp.mp.microsoft.com                                      |
+|                                                     | cs9.wac.phicdn.net                                                  |
+|                                                     | emdl.ws.microsoft.com                                               |
+|                                                     | *.dl.delivery.mp.microsoft.com                                      |
+|                                                     | *.windowsupdate.com                                                 |
+|                                                     | *.delivery.mp.microsoft.com                                         |
+|                                                     | *.update.microsoft.com                                              |
 
 
 
