@@ -131,7 +131,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ## Pre-installed software
 
-|   | &nbsp; |
+| &nbsp; | &nbsp; |
 |---|---|
 |** Windows Holographic Operating System** | With [Windows Holographic OS](hololens-release-notes.md), Windows 10 users will be able to use some of their apps and games in a mixed reality environment via the HoloLens 2.
 | **3D Viewer** | [3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) lets you easily view 3D models and animations in real time.|
