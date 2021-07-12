@@ -115,7 +115,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ### Fit
 
-| &nbsp; | &nbsp; |
+|   | &nbsp; |
 |---|---|
 | **Sizing** | Single size with adjustable band. Fits over glasses |
 | **Weight** | 579 grams |
