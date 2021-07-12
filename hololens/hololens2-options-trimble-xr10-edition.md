@@ -2,7 +2,7 @@
 title: Trimble XR10 with HoloLens 2
 description: Learn about Trimble XR10 with HoloLens 2 and what to do after getting one of your own.
 keywords: HoloLens 2 purchasing options, HoloLens options, Trimble XR10
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
