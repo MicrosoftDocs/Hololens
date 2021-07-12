@@ -30,7 +30,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 ## Windows Holographic, version 21H1 - July 2021 Update
 - Build 20348.1010
-### Improvements and fixes in the update
+Improvements and fixes in the update:
 
 - Corrected an issue impacting preinstalled apps across OS resets. 
 - Device Portal has enhanced methods of notifying the customer when File Explorer encounters issues opening locked files.
