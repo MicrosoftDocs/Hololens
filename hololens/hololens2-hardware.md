@@ -133,7 +133,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 | &nbsp; | &nbsp; |
 |---|---|
-|** Windows Holographic Operating System** | With [Windows Holographic OS](hololens-release-notes.md), Windows 10 users will be able to use some of their apps and games in a mixed reality environment via the HoloLens 2.
+| **Windows Holographic Operating System** | With [Windows Holographic OS](hololens-release-notes.md), Windows 10 users will be able to use some of their apps and games in a mixed reality environment via the HoloLens 2.
 | **3D Viewer** | [3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) lets you easily view 3D models and animations in real time.|
 | **Cortana** | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), your personal productivity assistant, helps you stay on top of what matters and save time finding what you need.  |
 | **Dynamics 365 Guides** |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) will help employees learn new skills faster on HoloLens devices. |
@@ -197,7 +197,7 @@ The serial number for HoloLens 2 devices is printed underneath the visor.
 1. Look near the brow pad.
 1. You can find the serial number located close to the hinge.
 
-<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
+   <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 The serial number can also be found via a connected PC:
 
@@ -206,7 +206,7 @@ The serial number can also be found via a connected PC:
 1. Right Click and select **Properties** of the HoloLens device
 1. This will display the series number of the device, as shown in the screenshot below.
 
-<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
+   <br/><img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## Next step(s)
 
