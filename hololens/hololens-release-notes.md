@@ -30,23 +30,24 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 ## Windows Holographic, version 21H1 - July 2021 Update
 - Build 20348.1010
+
 Improvements and fixes in the update:
 
-- Corrected an issue impacting preinstalled apps across OS resets. 
 - Device Portal has enhanced methods of notifying the customer when File Explorer encounters issues opening locked files.
-- Battery charging performance tuned to increase runtime when charging with increased CPU loading.
-- Fixed issue where Wi-Fi proxy can't be saved when Wi-Fi properties UI is launched from Settings -> Network & Internet -> Status -> Properties.
 - When using the HoloLens 2 Emulator on a PC with both integrated and discrete graphics adapters, the emulator will, in most cases, now be able to enable hardware graphics acceleration, though it might use the less powerful integrated adapter.  Previously, hardware acceleration could not be enabled, often reporting a graphics failure with Code 43.  In some cases, the emulator would not boot successfully but now will.
+- File upload, download, rename and delete is now fixed when using https in all supported browsers.
+- Fixed issue where Wi-Fi proxy can't be saved when Wi-Fi properties UI is launched from **Settings -> Network & Internet -> Status -> Properties**.
 - Addressed an issue around the removal of eSIM certificates across OS updates. This fix ensures that the eSIM certificates and related components are removed when updating to the 21H1 release.
-- File upload, download, rename and delete is now fixed when using https in all supported browsers.  
+- Corrected an issue impacting preinstalled apps across OS resets. 
+- Battery charging performance tuned to increase runtime when charging with increased CPU loading.
 
 ## Windows Holographic, version 20H2 – July 2021 Update
 - Build 19041.1157
 
 Improvements and fixes in the update:
-- File upload, download, rename and delete is now fixed when using https in all supported browsers.
 - Device Portal has enhanced methods of notifying the customer when File Explorer encounters issues opening locked files. 
 - When using the HoloLens 2 Emulator on a PC with both integrated and discrete graphics adapters, the emulator will, in most cases, now be able to enable hardware graphics acceleration, though it might use the less powerful integrated adapter.  Previously, hardware acceleration could not be enabled, often reporting a graphics failure with Code 43.  In some cases, the emulator would not boot successfully, but now will.
+- File upload, download, rename and delete is now fixed when using https in all supported browsers.
 
 ## Windows Holographic, version 21H1 - June 2021 Update
 - Build 20348.1007
