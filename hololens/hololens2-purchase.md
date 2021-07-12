@@ -60,10 +60,10 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 | Country | ADR | Sales Contacts | Web Page URL – HoloLens 2 | Web Page URL – HoloLens 2 Industrial Edition |
 |---------|-----|---------|----------------|----------|
-| Canada | Insight Canada | Trish O'Keeffe Trish.okeeffe@insight.com | [Insight Canada - HoloLens 2](https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html) | [Insight Canada - HoloLens 2 Industrial Edition](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
-| United States | Insight North America | Jake Poirier jake.poirier@insight.com | [Insight North America - HoloLens 2](https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html) | [Insight North America - HoloLens 2 Industrial Edition](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) | 
-| | SHI International Corp. | Kevin English kevin_english@SHI.com  HoloLens@SHI.com | [SHI International Corp. - HoloLens 2](www.shi.com/hololens) |  | 
-| | Rental Partner! Hartford Technology | Mark Ferro mferro@hartfordrents.com | [Rental Partner! Hartford Technology - HoloLens 2](https://hartfordrents.com/product/hololens-2-rental/) |  | 
+| Canada | Insight Canada | Trish O'Keeffe Trish.okeeffe@insight.com | [Buy HoloLens 2 - Insight Canada](https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight Canada](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
+| United States | Insight North America | Jake Poirier jake.poirier@insight.com | [Buy HoloLens 2 - Insight North America](https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight North America](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) | 
+| | SHI International Corp. | Kevin English kevin_english@SHI.com  HoloLens@SHI.com | [Buy HoloLens 2 - SHI International Corp.](www.shi.com/hololens) |  | 
+| | Rental Partner! Hartford Technology | Mark Ferro mferro@hartfordrents.com | [Buy HoloLens 2 - Rental Partner! Hartford Technology](https://hartfordrents.com/product/hololens-2-rental/) |  | 
 
 ### **EMEA**
 
