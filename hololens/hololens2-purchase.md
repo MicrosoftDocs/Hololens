@@ -62,8 +62,8 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 |---------|-----|---------|----------------|----------|
 | Canada | Insight Canada | Trish O'Keeffe Trish.okeeffe@insight.com | [Insight Canada - HoloLens 2](https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html) | [Insight Canada - HoloLens 2 Industrial Edition](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
 | United States | Insight North America | Jake Poirier jake.poirier@insight.com | [Insight North America - HoloLens 2](https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html) | [Insight North America - HoloLens 2 Industrial Edition](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) | 
-| | SHI International Corp. | Kevin English kevin_english@SHI.com  HoloLens@SHI.com | www.shi.com/hololens |  | 
-| | Rental Partner! Hartford Technology | Mark Ferro mferro@hartfordrents.com | https://hartfordrents.com/product/hololens-2-rental/ |  | 
+| | SHI International Corp. | Kevin English kevin_english@SHI.com  HoloLens@SHI.com | [SHI International Corp. - HoloLens 2](www.shi.com/hololens) |  | 
+| | Rental Partner! Hartford Technology | Mark Ferro mferro@hartfordrents.com | [Rental Partner! Hartford Technology](https://hartfordrents.com/product/hololens-2-rental/) |  | 
 
 ### **EMEA**
 
