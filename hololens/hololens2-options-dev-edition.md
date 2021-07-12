@@ -2,7 +2,7 @@
 title: HoloLens 2 Development Edition
 description: Learn about HoloLens 2 Development Edition and what to do after getting one of your own.
 keywords: HoloLens 2 purchasing options, HoloLens options, Developer Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
