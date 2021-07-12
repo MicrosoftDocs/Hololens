@@ -16,6 +16,7 @@ appliesto:
 # Planning HoloLens 2 deployment in a commercial environment
 
 ## Overview
+
 > [!NOTE]
 > This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within an organization. For device end users, see [Get your HoloLens 2 ready to use](hololens2-setup.md) to get started.
 
@@ -35,7 +36,7 @@ The following steps and video can help guide you through the process of HoloLens
 
 ## Prepare
 
-Learn about essential infrastructure services required to support the full set of HoloLens 2 capabilities. 
+Learn about essential infrastructure services required to support the full set of HoloLens 2 capabilities.
 
 | Component | Description |
 |-----------|------------|
