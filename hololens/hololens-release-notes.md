@@ -43,7 +43,7 @@ Improvements and fixes in the update:
 ## Windows Holographic, version 20H2 – July 2021 Update
 - Build 19041.1157
 
-### Improvements and fixes in the update
+Improvements and fixes in the update:
 - File upload, download, rename and delete is now fixed when using https in all supported browsers.
 - Device Portal has enhanced methods of notifying the customer when File Explorer encounters issues opening locked files. 
 - When using the HoloLens 2 Emulator on a PC with both integrated and discrete graphics adapters, the emulator will, in most cases, now be able to enable hardware graphics acceleration, though it might use the less powerful integrated adapter.  Previously, hardware acceleration could not be enabled, often reporting a graphics failure with Code 43.  In some cases, the emulator would not boot successfully, but now will.
