@@ -62,8 +62,8 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ![HoloLens has see-through holographic lenses](images/displays-400px.jpg)
 
-|   |   |
-| - | - |
+| &nbsp; | &nbsp; |
+|---|---|
 | **Optics** | See-through holographic lenses (waveguides) |
 | **Holographic resolution** | 2 HD 16:9 light engines producing 2.3M total light points |
 | **Holographic density** | \>2.5k radiants (light points per radian) |
@@ -115,8 +115,8 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ### Fit
 
-|   |   |
-| - | - |
+|   | &nbsp; |
+|---|---|
 | **Sizing** | Single size with adjustable band. Fits over glasses |
 | **Weight** | 579 grams |
 
