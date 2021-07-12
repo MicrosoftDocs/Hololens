@@ -23,7 +23,7 @@ A device may be assigned more than one WDAC policy. If multiple WDAC policies ar
 > [!NOTE]
 > When end users attempt to launch an app that is blocked by WDAC, on HoloLens they will not receive a notification about not being able to launch that app.
 
-The following is a guide for users to learn how to [use WDAC and Windows PowerShell to allow or block apps on HoloLens 2 devices with Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens).
+The following is a guide for users to learn how to [use WDAC and Windows PowerShell to allow or block apps on HoloLens 2 devices with Microsoft Intune](/mem/intune/configuration/custom-profile-hololens).
 
 When users search for apps installed on their Windows 10 PC using the first example step, they may need to make a few attempts to narrow down the results.
 
@@ -72,7 +72,7 @@ If an app is not on this list, then a user may use Device Portal, connected to a
 
 1. Install the app on your HoloLens 2 device. 
 1. Open Settings -> Updates & Security -> For developers, and enable **Developer mode** and then **Device portal**. 
-    1. More more details instructions read more about [setup and use of device portal here](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+    1. More more details instructions read more about [setup and use of device portal here](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 1. Once Device Portal is connected, navigate to **Views** then **Apps**. 
 1. Within the Installed Apps panel, use the dropdown to select the installed app. 
 1. Locate the PackageRelativeID. 

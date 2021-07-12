@@ -37,7 +37,7 @@ Charging rate and speed may vary depending on the environment in which the devic
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/be3cb527-f2f1-4f85-b4f7-a34fbaba980d]
 
-|     |     |
+| &nbsp; | &nbsp; |
 |:--- |:--- |
 |1. Rotate the headband up to about 20-30 degrees.|![Step one, rotate the headband](./images/FitGuideStep1.png)|
 |2. Push the headband back. Do not pull it back, or manipulate the band behind the hinge, because over time this can break the band.|![Step two, push the headband back](./images/FitGuideStep2.png)|
@@ -83,7 +83,7 @@ The brightness and volume buttons are on top of the device arms&mdash;volume to 
 Not sure what the indicator lights on your HoloLens mean? Here's some help.
 
 |When the lights do this |It means |
-| - | - |
+|---|---|
 |Scroll from the center outward. |HoloLens is starting up. |
 |Stay lit (all or some). |HoloLens is on and ready to use. Battery life is shown in 20 percent increments. |
 |Scroll, then light up, then scroll. |HoloLens is on and charging. Battery life is shown in 20 percent increments. |

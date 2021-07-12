@@ -117,15 +117,15 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: What is Mixed Reality?
-            url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
+            url: /windows/mixed-reality/mixed-reality
           - text: Start designing and prototyping
-            url: https://docs.microsoft.com/windows/mixed-reality/design
+            url: /windows/mixed-reality/design
           - text: Introduction to Mixed Reality development
-            url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+            url: /windows/mixed-reality/development?tabs=unity
           - text: Cloud Services Overview
-            url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+            url: /windows/mixed-reality/mixed-reality-cloud-services#overview
           - text: Microsoft Mesh (Preview)
-            url: https://docs.microsoft.com/mesh/overview
+            url: /mesh/overview
  
  # Card
   - title: More services
@@ -133,10 +133,10 @@ landingContent:
       - linkListType: reference
         links:
           - text: Dynamics 365 Remote Assist Docs
-            url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+            url: /dynamics365/mixed-reality/remote-assist/ra-overview
           - text: Dynamics 365 Guides
-            url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+            url: /dynamics365/mixed-reality/guides/
           - text: Microsoft Dynamics 365 Mixed Reality 
-            url: https://docs.microsoft.com/dynamics365/mixed-reality/
+            url: /dynamics365/mixed-reality/
       
           
