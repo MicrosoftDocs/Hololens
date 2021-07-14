@@ -94,8 +94,8 @@ If you plan on implementing this [cross-tenant scenario](https://docs.microsoft.
 
 #### Admin
 
-- Azure AD account (required for purchasing the subscription and assigning licenses)
-- Dynamics 365 [Guides subscription or free trial](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one)
+1. Azure AD account (required for purchasing the subscription and assigning licenses)
+2. Dynamics 365 [Guides subscription or free trial](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one)
 
 #### Guides Author
 
