@@ -104,7 +104,7 @@ Use the following workflow to *create new articles* in the documentation repo vi
 
 1. Create a fork off the default branch, _master_, of MicrosoftDocs/mixed-reality by using the **Fork** button in the top right.
 
-   ![Fork the master branch.](images/forkbranch.png)
+   ![Fork the default branch, currently named "master".](images/forkbranch.png)
 
    > [!NOTE]
    > This article contains references to _master_, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
