@@ -50,18 +50,18 @@ HoloLens 2 will walk you through the following steps:
 
 1. Select your language.
 
-    ![Select language](images/04-language.png)
+    <img src="images/04-language.png" width="500px" alt="Select language">
 
 1. Select your region.
 
-    ![Select region](images/05-region.png)
+    <img src="images/05-region.png" width="500px" alt="Select region">
 
 1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you log in. 
 
     1. First, you'll adjust your visor.
     
-        ![Calibration selection screen](images/06-et-corners.png)
-
+    <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
+    
     2. To calibrate, you'll look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
 
         ![Adjust for your eyes](images/07-adjust-eyes.png)
