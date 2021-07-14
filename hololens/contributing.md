@@ -57,7 +57,7 @@ Use the following workflow to make updates to *an existing article* via GitHub i
    > [!NOTE]
    > This article contains references to _master_, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
    
-3. Edit the content of the article according to the ["Markdown basics"](#markdown-basics).
+3. Edit the content of the article according to the [Markdown basics](#markdown-basics).
 
 4. Update metadata at the top of each article:
 
