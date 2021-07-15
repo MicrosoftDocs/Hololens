@@ -34,41 +34,44 @@ Before you get started, make sure you have the following available:
 
 ## Set up Windows
 
-The first time you start your HoloLens 2, your first task is to set up Windows Holographic.  When you start your HoloLens, you will hear music and see a Windows logo.
+The first time you start your HoloLens 2, your first task is to set up Windows Holographic.  When you start your HoloLens, you will hear music and see a Microsoft logo.
 
-![First screen during first boot](images/01-magic-moment.png)
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGGk]
+
+<br/>
+<img src="images/01-magic-moment.png" width="500px" alt="First screen during first boot">
 
 You will see a hummingbird flying around.
 
-![Hummingbird flying](images/hummingbird-1.png)
+<img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
 
-Follow it with your hand.
+It will follow your hand.
 
-![Hummingbird flying close up](images/hummingbird-2.png)
+<img src="images/hummingbird-2.png" width="500px" alt="Hummingbird flying close up">
 
-HoloLens 2 will walk you through the following steps:
+A button with a Microsoft logo will show up. Press the button, and HoloLens 2 will walk you through the following steps:
 
 1. Select your language.
 
-    ![Select language](images/04-language.png)
+    <img src="images/04-language.png" width="500px" alt="Select language">
 
 1. Select your region.
 
-    ![Select region](images/05-region.png)
+    <img src="images/05-region.png" width="500px" alt="Select region">
 
 1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you log in. 
 
     1. First, you'll adjust your visor.
     
-        ![Calibration selection screen](images/06-et-corners.png)
-
+    <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
+    
     2. To calibrate, you'll look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
 
-        ![Adjust for your eyes](images/07-adjust-eyes.png)
+        <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
         After calibration, holograms will appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
 
-        ![Calibration is complete](images/calibration-complete.png)
+        <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
 1. Connect to the internet (select Wi-Fi or your ethernet connection).
 
@@ -107,8 +110,10 @@ HoloLens 2 will walk you through the following steps:
         
 1. Setup Iris sign-in by selecting **Next**. You will go through a similar experience to the eye calibration. Select **Done** when the scan is complete. You may also select **Skip** to bypass this step.
     
-    ![Iris setup](images/setup-iris.png) 
-    ![Iris setup completion](images/iris-setup-complete.png) 
+    <img src="images/setup-iris.png" width="500px" alt="Iris setup">
+
+    <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+
      
   
 1. You'll setup a PIN to log into the device. This PIN is device specific. 
@@ -118,26 +123,30 @@ HoloLens 2 will walk you through the following steps:
     ![Setup Windows Hello PIN](images/windows-hello-pin.png)
 
     ![Windows Hello Setup successful](images/windows-hello-successful.png) 
+
     
 1. Select whether to enable speech on HoloLens 2.
 
-    ![Enable Cortana](images/22-do-more-with-voice.png)
+    <img src="images/22-do-more-with-voice.png" width="500px" alt="Enable Cortana">
 
 1. Select whether to enable location on HoloLens 2.
     
-    ![Enable location services](images/setup-location-services.png)
+    <img src="images/setup-location-services.png" width="500px" alt="Enable location services">
 
 1. Select your telemetry level. If you can, please enable Optional telemetry. This information really helps the HoloLens engineering team.
 
-     ![Telemetry level](images/24-telemetry.png)
+    <img src="images/24-telemetry.png" width="500px" alt="Telemetry level">
+
 
 1. Learn how to use the start gesture on HoloLens 2.
 
-     ![Learn how to use the start gesture, image 1](images/26-01-startmenu-learning.png)
+    <img src="images/26-01-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 1">
 
-     ![Learn how to use the start gesture, image 2](images/26-02-startmenu-learning.png)
-
-Congratulations!  Setup is complete and you're ready to use HoloLens!
+    <img src="images/26-02-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 2">
+    
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
+    
+    Congratulations!  Setup is complete and you're ready to use HoloLens!
 
 ## Next steps
 
