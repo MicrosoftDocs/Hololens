@@ -36,6 +36,8 @@ Before you get started, make sure you have the following available:
 
 The first time you start your HoloLens 2, your first task is to set up Windows Holographic.  When you start your HoloLens, you will hear music and see a Windows logo.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGGk]
+
 ![First screen during first boot](images/01-magic-moment.png)
 
 You will see a hummingbird flying around.
