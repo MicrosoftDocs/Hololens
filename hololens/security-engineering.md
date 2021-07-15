@@ -27,6 +27,6 @@ Microsoft has several resources and teams devoted to optimizing the company’s 
 
 Security updates and patches are released on the second Tuesday of each month. In order to understand the criteria used by Microsoft to evaluate next steps for a reported vulnerability, see the Microsoft Security Response Center’s [Security Servicing Criteria page](https://www.microsoft.com/msrc/windows-security-servicing-criteria). 
 
-For guidance on managing HoloLens 2 updates via MDM, see [Manage HoloLens updates](https://docs.microsoft.com/hololens/hololens-updates). The operating system update cadence for HoloLens 2 matches that of Windows 10; there are two updates per year, one taking place in Spring and the other in Fall. For more on how devices are secured during OS updates, see [State separation and isolation](security-state-separation-isolation.md). 
+For guidance on managing HoloLens 2 updates via MDM, see [Manage HoloLens updates](hololens-updates.md). The operating system update cadence for HoloLens 2 matches that of Windows 10; there are two updates per year, one taking place in Spring and the other in Fall. For more on how devices are secured during OS updates, see [State separation and isolation](security-state-separation-isolation.md). 
 
-IT admins can learn more about update policy at [Policy CSP - Update](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update). 
+IT admins can learn more about update policy at [Policy CSP - Update](/windows/client-management/mdm/policy-csp-update). 

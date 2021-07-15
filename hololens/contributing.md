@@ -48,11 +48,16 @@ Use the following workflow to make updates to *an existing article* via GitHub i
 
 1. Navigate to the article you wish to edit in the "mixed-reality-docs" folder.
 
-2. Select the edit button (pencil icon) in the top right, which will automatically fork a disposable branch off the 'master' branch.
+2. Select the edit button (pencil icon) in the top right.
 
    ![Edit an article.](images/editpage.png)
+
+   This will automatically fork a disposable branch off the default branch, _master_.
+
+   > [!NOTE]
+   > This article contains references to _master_, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
    
-3. Edit the content of the article according to the ["Markdown basics"](#markdown-basics).
+3. Edit the content of the article according to the [Markdown basics](#markdown-basics).
 
 4. Update metadata at the top of each article:
 
@@ -65,7 +70,7 @@ Use the following workflow to make updates to *an existing article* via GitHub i
    
 5. When you've completed your article edits, scroll down and select **Propose file change**.
 
-6. On the next page, select **Create pull request** to merge your automatically created branch into 'master.'
+6. On the next page, select **Create pull request** to merge your automatically created branch into the default branch, _master_.
 
 7. Repeat the steps above for the next article you want to edit.
 
@@ -97,9 +102,12 @@ If you add a redirect, be sure to delete the old file as well.
 
 Use the following workflow to *create new articles* in the documentation repo via GitHub in a web browser:
 
-1. Create a fork off the MicrosoftDocs/mixed-reality 'master' branch (using the **Fork** button in the top right).
+1. Create a fork off the default branch, _master_, of MicrosoftDocs/mixed-reality by using the **Fork** button in the top right.
 
-   ![Fork the master branch.](images/forkbranch.png)
+   ![Fork the default branch, currently named "master".](images/forkbranch.png)
+
+   > [!NOTE]
+   > This article contains references to _master_, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
    
 2. In the "mixed-reality-docs" folder, select **Create new file** in the top right.
 
@@ -124,15 +132,15 @@ Use the following workflow to *create new articles* in the documentation repo vi
    ---
    ```
 
-5. Fill in the relevant metadata fields per the instructions in the [section above](#editing-an-existing-article).
+5. Fill in the relevant metadata fields as described earlier in [Editing an existing article](#editing-an-existing-article).
 
-6. Write article content using [Markdown basics](#markdown-basics).
+6. Write article content by using [Markdown basics](#markdown-basics).
 
 7. Add a `## See also` section at the bottom of the article with links to other relevant articles.
 
 8. When finished, select **Commit new file**.
 
-9. Select **New pull request** and merge your fork's 'master' branch into MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way).
+9. Select **New pull request** and merge your fork's _master_ branch into MicrosoftDocs/mixed-reality _master_ (make sure the arrow is pointing to the correct destination).
 
    ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 
@@ -145,7 +153,7 @@ The following resources will help you learn how to edit documentation using the 
 
 ### Adding tables
 
-Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](https://www.tablesgenerator.com/markdown_tables).
+Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here’s a site that makes Markdown tables easy: [Tables Generator]](https://www.tablesgenerator.com/markdown_tables).
 
 The [Docs Markdown Extension for Visual Studio Code](/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code (see below)](#using-visual-studio-code) to edit the documentation.
 
@@ -159,7 +167,7 @@ You’ll need to upload your images to the "mixed-reality-docs/images" folder in
 >1. Forked the MicrosoftDocs/mixed-reality repo.
 >2. Edited the article in your fork.
 >3. Uploaded the images you're referencing in your article to the "mixed-reality-docs/images" folder in your fork.
->4. Created a **pull request** to merge your fork into the MicrosoftDocs/mixed-reality 'master' branch.
+>4. Created a **pull request** to merge your fork into the MicrosoftDocs/mixed-reality _master_ branch.
 >
 >To learn how to set up your own forked repo, follow the instructions for [creating a new article](#creating-a-new-article).
 
@@ -170,14 +178,14 @@ While editing in GitHub via a web browser, you can select the **Preview** tab ne
 >[!NOTE]
 >Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
 
-Microsoft employees: once your contributions have been merged into the 'master' branch, you can review the content before it goes public at </hololens?branch=master>. Find your article using the table of contents in the left column.
+Microsoft employees: When your contributions have been merged into the default branch, _master_, you can review the content before it goes public at </hololens?branch=master>. Find your article by using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 
 Editing in the browser is the easiest way to make quick changes, however, there are a few disadvantages:
 
 - You don't get spell-check.
-- You don't get any smart-linking to other articles (you have to manually type the article's filename).
+- You don't get any smart-linking to other articles (you have to manually type the article's file name).
 - It can be a hassle to upload and reference images.
 
 If you'd rather not deal with these issues, use a desktop client like [Visual Studio Code](https://code.visualstudio.com/) with a couple [helpful extensions](#useful-extensions) when contributing.
@@ -211,7 +219,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 1. Make sure your cloned fork is up to date with the official repo.
 
-   1. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/mixed-reality 'master' to your fork (make sure the arrow is pointing the right way).
+   1. In a web browser, create a pull request to sync recent changes from other contributors in the default branch of MicrosoftDocs/mixed-reality, _master_, to your fork (make sure the arrow is pointing to the correct destination).
       
       ![Sync changes from MicrosoftDocs/mixed-reality to your fork](images/sync-repos.png)
 	  
@@ -235,7 +243,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
       
       ![Click the sync button](images/sync-back.png)
 	  
-3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way).
+3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality _master_ (make sure the arrow is pointing to the correct destination).
 
    ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 

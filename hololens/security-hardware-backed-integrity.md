@@ -22,11 +22,11 @@ Hardware-backed integrity and runtime attestation protects against threats that 
 ## UEFI secure boot
 
 HoloLens 2 enforces Unified Extensible Firmware Interface (UEFI) Secure Boot always, and UEFI only boots Windows Holographic for Business.
-Secure Boot ensures that the entire boot chain is verified for integrity, and that Windows always boots with the correct security policies applied to it. Learn more about [Secure Boot](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot).
+Secure Boot ensures that the entire boot chain is verified for integrity, and that Windows always boots with the correct security policies applied to it. Learn more about [Secure Boot](/windows-hardware/design/device-experiences/oem-secure-boot).
 
 ## TPM
 
-The Trusted Platform Module (TPM) is a specialized chip on an endpoint device. HoloLens 2 uses a TPM 2.0, which provides hardware-enforced key isolation. Learn more about [TPM fundamentals](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals).
+The Trusted Platform Module (TPM) is a specialized chip on an endpoint device. HoloLens 2 uses a TPM 2.0, which provides hardware-enforced key isolation. Learn more about [TPM fundamentals](/windows/security/information-protection/tpm/tpm-fundamentals).
 
 ## Persistence Access Threat Protection
 
@@ -39,7 +39,7 @@ In fact, targeted attacks are considered “advanced persistent threats”, due 
 HoloLens 2 enforces Unified Extensible Firmware Interface (UEFI) Secure Boot on all core operating system state. UEFI only boots Microsoft trusted platforms, which ensures that the entire boot chain is verified for integrity, and that Windows always boots with the correct security policies applied to it. HoloLens 2 does not Secure Boot to be turned off, nor does it allow 3rd party boot loaders.
 
 > [!Tip]
-> Learn more about [Secure boot](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot).
+> Learn more about [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot).
 
 ### Windows Anti-Persistence Assurance
 
