@@ -45,7 +45,7 @@ Consider this deployment model for:
 
 ### Basic Common Configurations
 
-* Wi-Fi networks are typically fully open to the Internet and Cloud services.
+* Wi-Fi networks are typically fully open to the internet and cloud services.
 * Azure AD Join with Mobile Device Management (MDM) Auto Enrollment--MDM (Intune) Managed
 * Users sign in with their own corporate account (Azure AD)
   * Single or multiple users per device supported
@@ -56,7 +56,7 @@ Consider this deployment model for:
 
 * Determining which MDM configurations to apply to the HoloLens 2 based on scenario requirements.
 
-The corresponding Cloud connected guide covers how to enroll HoloLens 2 into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device setup.
+The corresponding Cloud Connected guide covers how to enroll HoloLens 2 into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device setup.
 
 > [!div class="nextstepaction"]
 > [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md)
