@@ -26,7 +26,7 @@ You may be a business decision-maker, IT professional, or an innovation team loo
 
 | Scenario |Usage | Key points |
 |---------|---------|---------|
-| [Scenario A: Cloud connected devices](hololens2-cloud-connected-overview.md) | When you first begin your deployment, you may start small and deploy a single device connected to the cloud just to see the basic process. | Devices will be connected to cloud services and public internet. This is most suitable for customer use cases, Field Services, and Proof of Concept.|
+| [Scenario A: Cloud connected devices](hololens2-cloud-connected-overview.md) | When you first begin your deployment, you may start small and deploy a single device connected to the cloud just to see the basic process. | Devices will be connected to cloud services and public internet. This is most suitable for customer use cases, Field Services, and proof of concept.|
 | [Scenario B: Organization's network](hololens2-corp-connected-overview.md) | As you deploy to production at scale, you may need to integrate with your own organization's network. | Devices will be connected to a "Corporate" wi-fi network. This is most suitable for Internal users, or use within the corporate environment.|
 | [Scenario C: Offline secure environment](hololens-common-scenarios-offline-secure.md) | Some mission-critical processes or some corporate policies may demand the use of offline environments. | Devices will be connected to a highly restrictive network or will be purely offline devices. This is most suitable for highly secure environments, or internet connectivity restrictions in remote areas. |
 
