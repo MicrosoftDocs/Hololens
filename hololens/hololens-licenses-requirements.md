@@ -18,7 +18,7 @@ appliesto:
 # License requirements
 
 ## Overview
-This page provides a high-level overview of the licenses needed to deploy unmanaged and managed HoloLens 2 devices in your organization. It also includes information for licensing of Dynamics 365 [Remote Assist](#dynamics-365-remote-assist) and [Guides](#dynamics-365-guides).
+This page provides a high-level overview of the licenses needed to deploy both managed and unmanaged HoloLens 2 devices in your organization. It also includes information for licensing of Dynamics 365 [Remote Assist](#dynamics-365-remote-assist) and [Guides](#dynamics-365-guides).
 
 ## HoloLens 2 license and account requirements
 
@@ -40,6 +40,7 @@ These are the essential components for low-touch, cloud-based deployments of Hol
     > Active Directory (AD) cannot be used to manage HoloLens devices.
     
 2. [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) or another MDM.
+    - [Auto-enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) during initial device setup, which registers and joins Azure Active Directory and allows the device to be managed with Intune; OR
     - [Windows Autopilot for HoloLens 2](hololens2-autopilot.md)- simplifies the provisioning experience for both IT admins and end users. IT admins can preconfigure HoloLens 2 policies, and upon first boot, devices will be deployed in business-ready state with zero end-user interaction. 
 
       > [!NOTE]
