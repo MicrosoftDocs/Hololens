@@ -28,9 +28,9 @@ These are the essential components for low-touch, cloud-based deployments of Hol
 
 #### Business Use Case: 
 
-- [Deployment Scenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) - proof of concept or pilot deployment.
+- [Deployment Scenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) - proof of concept or pilot deployment
 
-- [Deployment Scenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) - deployment at scale.
+- [Deployment Scenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) - deployment at scale
 
 #### Required Licenses
 
@@ -54,7 +54,7 @@ These are the essential components for low-touch, cloud-based deployments of Hol
 HoloLens 2 may also be used outside of an Azure AD tenant or in a locked down secure environment with no access to the internet. 
 #### Business Use Case: 
 
-- [Deployment Scenario C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) - offline or secure deployment.
+- [Deployment Scenario C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) - offline or secure deployment
 
 #### Required Licenses
 None
@@ -63,7 +63,7 @@ None
 You can use **either** of these accounts:
 - [Local Account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
 
-    - This account must be [provisioned](hololens-provisioning.md#provisioning-package-hololens-wizard) ahead of time with Windows Configuration Designer (WCD).
+    - This account must be [provisioned](hololens-provisioning.md#provisioning-package-hololens-wizard) ahead of time with Windows Configuration Designer (WCD)
 
 - [Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)
 
@@ -94,7 +94,7 @@ You can use **either** of these accounts:
 
 - Azure AD account
 
-- Microsoft Teams or [Teams Freemium](https://products.office.com/microsoft-teams/free).
+- Microsoft Teams or [Teams Freemium](https://products.office.com/microsoft-teams/free)
 
 - Network connectivity
 
