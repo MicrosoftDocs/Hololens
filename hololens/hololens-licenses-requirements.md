@@ -18,7 +18,7 @@ appliesto:
 # License requirements
 
 ## Overview
-This page provides a high-level overview of the licenses needed to deploy both managed and unmanaged HoloLens 2 devices in your organization. It also includes information for licensing of Dynamics 365 [Remote Assist](#dynamics-365-remote-assist) and [Guides](#dynamics-365-guides).
+This page provides a high-level overview of the licenses and accounts needed to deploy both managed and unmanaged HoloLens 2 devices in your organization. It also includes information for licensing of Dynamics 365 [Remote Assist](#dynamics-365-remote-assist) and [Guides](#dynamics-365-guides).
 
 ## HoloLens 2 license and account requirements
 
