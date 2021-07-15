@@ -18,6 +18,10 @@ appliesto:
 
 # Where to buy HoloLens 2
 
+## Overview
+HoloLens 2 is the most comfortable mixed reality device available, with industry-leading solutions that deliver an immersive experience—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft. Get started right away with off-the-shelf applications or build a custom solution using Microsoft Azure services. 
+HoloLens 2 is now available in some countries outside of the US, along with some purchase options, and can be purchased through authorized resellers listed below.
+
 ## Countries where HoloLens 2 is available
 
 | HoloLens 2 Edition| Supported Market |
@@ -79,7 +83,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Finland** | ATEA | Petteri Halonen<br><petteri.halonen@atea.fi><br>Johanna Ronnholm<br><Johanna.ronnholm@atea.fi><br>Jonas Kjaerulf<br><Jonas.kjaerulf@atea.com> | [Buy HoloLens 2 - ATEA](https://www.atea.fi/eshop/products/?filters=S_hololens) | [Buy HoloLens 2 Industrial Edition - ATEA](https://www.atea.fi/eshop/product/microsoft-hololens-2-industrial-version/?prodid=3361862) | 
 | **France** | ARP France (Bechtle) | Doha Benchair<br><doha.benchair@arp.com> | [Buy HoloLens 2 - ARP France (Bechtle)](https://www.arp.fr/promo/microsoft-hololens-2/) | [Buy HoloLens 2 Industrial Edition - ARP France (Bechtle)](https://www.arp.fr/lunettes-microsoft-hololens-2-ind-ed-ssu-00003-5496988) | 
 | | Econocom | Sabine Lhuillery<br><sabine.lhuillery@econocom.com> | [Buy HoloLens 2 - Econocom](https://microsoft-hololens.econocom.com/fr) | [Buy HoloLens 2 Industrial Edition - Econocom](https://microsoft-hololens.econocom.com/en/hololens-2) | 
-| | Insight Technology Solutions SAS | Wouter Brandenbarg<br><wouter.Brandenbarg@insight.com><br>Aude Lamouroux<br><aude.lamouroux@insight.com> | [Buy HoloLens 2 - Insight Technology Solutions SAS](https://fr.insight.com/shop/microsoft/devices-and-hardware/hololens) | [Buy HoloLens 2 Industrial Edition - Insight Technology Solutions SAS](https://fr.insight.com/en-gb/productinfo/games-accessories/0011395310-00000001?&ulang=fr) | 
+| | Insight Technology Solutions SAS | Wouter Brandenbarg<br><wouter.brandenbarg@insight.com><br>Aude Lamouroux<br><aude.lamouroux@insight.com> | [Buy HoloLens 2 - Insight Technology Solutions SAS](https://fr.insight.com/shop/microsoft/devices-and-hardware/hololens) | [Buy HoloLens 2 Industrial Edition - Insight Technology Solutions SAS](https://fr.insight.com/en-gb/productinfo/games-accessories/0011395310-00000001?&ulang=fr) | 
 | | *Rental Partner!* IDEM | David Marty<br><david.marty@idem.fr><br>Jerome Bouas<br><jerome.bouas@idem.fr> |  |  | 
 | **Germany** | Bechtle | Christian Keintzel<br><christian.keintzel@bechtle.com><br>Carina Kaiser<br><carina.kaiser@bechtle.com> | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/marken/microsoft-surface/microsoft-hololens-2) | [Buy HoloLens 2 Industrial Edition - Bechtle](https://www.bechtle.com/marken/microsoft-surface/surface-hololens-2-industrial-version) | 
 | | Insight | Anja Flasdieck<br><anja.flasdieck@insight.com> | [Buy HoloLens 2 - Insight](https://www.insight.de/shop/microsoft/hololens) | [Buy HoloLens 2 Industrial Edition - Insight](https://www.insight.de/de/produktinfo/id/0011395310-00000001?alert=categoryresults) | 
