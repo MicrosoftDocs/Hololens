@@ -144,6 +144,10 @@ A button with a Microsoft logo will show up. Press the button, and HoloLens 2 wi
 
     <img src="images/26-02-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 2">
 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
+
+
 Congratulations!  Setup is complete and you're ready to use HoloLens!
 
 ## Next steps
