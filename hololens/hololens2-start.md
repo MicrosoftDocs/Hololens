@@ -38,6 +38,7 @@ The first time you start your HoloLens 2, your first task is to set up Windows H
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGGk]
 
+<br/>
 <img src="images/01-magic-moment.png" width="500px" alt="First screen during first boot">
 
 You will see a hummingbird flying around.
