@@ -63,7 +63,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Canada** | Insight Canada | Trish O'Keeffe <trish.okeeffe@insight.com> | [Buy HoloLens 2 - Insight Canada](https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight Canada](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
 | **United States** | Insight North America | Jake Poirier <jake.poirier@insight.com> | [Buy HoloLens 2 - Insight North America](https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight North America](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) | 
 | | SHI International Corp. | Kevin English <kevin_english@SHI.com>  <HoloLens@SHI.com> | [Buy HoloLens 2 - SHI International Corp.](www.shi.com/hololens) |  | 
-| | Rental Partner! Hartford Technology | Mark Ferro <mferro@hartfordrents.com> | [Buy HoloLens 2 - Rental Partner! Hartford Technology](https://hartfordrents.com/product/hololens-2-rental/) |  | 
+| | *Rental Partner!* Hartford Technology | Mark Ferro <mferro@hartfordrents.com> | [Buy HoloLens 2 - Rental Partner! Hartford Technology](https://hartfordrents.com/product/hololens-2-rental/) |  | 
 
 ### **EMEA**
 
@@ -80,7 +80,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **France** | ARP France (Bechtle) | Doha Benchair<br><doha.benchair@arp.com> | [Buy HoloLens 2 - ARP France (Bechtle)](https://www.arp.fr/promo/microsoft-hololens-2/) | [Buy HoloLens 2 Industrial Edition - ARP France (Bechtle)](https://www.arp.fr/lunettes-microsoft-hololens-2-ind-ed-ssu-00003-5496988) | 
 | | Econocom | Sabine Lhuillery<br><sabine.lhuillery@econocom.com> | [Buy HoloLens 2 - Econocom](https://microsoft-hololens.econocom.com/fr) | [Buy HoloLens 2 Industrial Edition - Econocom](https://microsoft-hololens.econocom.com/en/hololens-2) | 
 | | Insight Technology Solutions SAS | Wouter Brandenbarg<br><wouter.Brandenbarg@insight.com><br>Aude Lamouroux<br><aude.lamouroux@insight.com> | [Buy HoloLens 2 - Insight Technology Solutions SAS](https://fr.insight.com/shop/microsoft/devices-and-hardware/hololens) | [Buy HoloLens 2 Industrial Edition - Insight Technology Solutions SAS](https://fr.insight.com/en-gb/productinfo/games-accessories/0011395310-00000001?&ulang=fr) | 
-| | Rental Partner! IDEM | David Marty<br><david.marty@idem.fr><br>Jerome Bouas<br><jerome.bouas@idem.fr> |  |  | 
+| | *Rental Partner!* IDEM | David Marty<br><david.marty@idem.fr><br>Jerome Bouas<br><jerome.bouas@idem.fr> |  |  | 
 | **Germany** | Bechtle | Christian Keintzel<br><christian.keintzel@bechtle.com><br>Carina Kaiser<br><carina.kaiser@bechtle.com> | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/marken/microsoft-surface/microsoft-hololens-2) | [Buy HoloLens 2 Industrial Edition - Bechtle](https://www.bechtle.com/marken/microsoft-surface/surface-hololens-2-industrial-version) | 
 | | Insight | Anja Flasdieck<br><anja.flasdieck@insight.com> | [Buy HoloLens 2 - Insight](https://www.insight.de/shop/microsoft/hololens) | [Buy HoloLens 2 Industrial Edition - Insight](https://www.insight.de/de/produktinfo/id/0011395310-00000001?alert=categoryresults) | 
 | **Italy** | Asystel (Econocom) | Paola Malvestiti<br><paola.malvestiti@asystelitalia.it> |  |  | 
