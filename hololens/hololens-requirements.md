@@ -26,7 +26,7 @@ You may be a business decision-maker, IT professional, or an innovation team loo
 
 | Scenario |Usage | Key points |
 |---------|---------|---------|
-| [Scenario A: Cloud connected devices](hololens2-cloud-connected-overview.md) | When you first begin your deployment, you may start small and deploy a single device connected to the cloud just to see the basic process. | Devices will be connected to cloud services and public internet. This is most suitable for customer use cases, Filed Services, and Proof of Concept.|
+| [Scenario A: Cloud connected devices](hololens2-cloud-connected-overview.md) | When you first begin your deployment, you may start small and deploy a single device connected to the cloud just to see the basic process. | Devices will be connected to cloud services and public internet. This is most suitable for customer use cases, Field Services, and Proof of Concept.|
 | [Scenario B: Organization's network](hololens2-corp-connected-overview.md) | As you deploy to production at scale, you may need to integrate with your own organization's network. | Devices will be connected to a "Corporate" wi-fi network. This is most suitable for Internal users, or use within the corporate environment.|
 | [Scenario C: Offline secure environment](hololens-common-scenarios-offline-secure.md) | Some mission-critical processes or some corporate policies may demand the use of offline environments. | Devices will be connected to a highly restrictive network or will be purely offline devices. This is most suitable for highly secure environments, or internet connectivity restrictions in remote areas. |
 
@@ -93,8 +93,8 @@ Consider this deployment model for:
 
 ### Common Challenges
 
-* HoloLens 2 doesn't support on premises AD join or SCCM. Only Azure AD join with MDM. Many companies today still deploy Windows 10 PCs in this scenario as on premises AD joined devices, managed by System Center Configuration Manager (SCCM) and may not have the infrastructure deployed/configured for managing internal Windows 10 devices via cloud-based MDM solutions.
-* As HoloLens 2 is a cloud first device, it relies heavily on internet and cloud connected services for User authentication, OS updates, MDM management, and so on. When connecting to a corporate network, Proxy/Firewall rules will most likely need to be adjusted to enable access for HoloLens 2 and the applications that run on it.
+* HoloLens 2 doesn't support on premises AD join or System Center Configuration Manager (SCCM). Only Azure AD join with MDM. Many companies today still deploy Windows 10 PCs in this scenario as on premises AD joined devices, managed by SCCM and may not have the infrastructure deployed/configured for managing internal Windows 10 devices via cloud-based MDM solutions.
+* As HoloLens 2 is a cloud first device, it relies heavily on internet and cloud connected services for user authentication, OS updates, MDM management, and so on. When connecting to a corporate network, proxy/firewall rules will most likely need to be adjusted to enable access for HoloLens 2 and the applications that run on it.
 * Corporate Wi-Fi connectivity typically requires certificates to authenticate the device or user to the network. The required infrastructure or settings to deploy certificates to Windows 10 devices through MDM can be challenging to configure.
 
 The corresponding Corporate network guide instructs on how to enroll HoloLens 2 into your existing device management, apply licenses as needed, and validate that your end users are able to operate a Dynamics 365 Guide, as well as use custom line of business apps, after device set up.
@@ -112,7 +112,7 @@ This is a typical deployment for highly secure or confidential locations. HoloLe
 
 Consider this deployment model for:
 
-* Highly Secure environments where data needs to be retained in house
+* Highly secure environments where data needs to be retained in house
 * "Experiences" where the public will be using the devices
 * Internet connectivity issue in the remote area
 
@@ -127,7 +127,7 @@ Consider this deployment model for:
 
 ### Common Challenges
 
-* There's a limited set of configurations available through Provisioning Packages
+* There's a limited set of configurations available through provisioning packages
 * Cloud services aren't able to be used, therefore limiting the HoloLens 2 capabilities.
 * Higher administrative overhead since these devices have to be set up, configured, and updated manually.
 
