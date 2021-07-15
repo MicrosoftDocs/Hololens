@@ -45,7 +45,7 @@ Consider this deployment model for:
 
 ### Basic Common Configurations
 
-* Wi-Fi networks are typically fully open to the internet and cloud services.
+* Wi-Fi networks are typically fully open to the internet and cloud services
 * Azure AD Join with Mobile Device Management (MDM) Auto Enrollment--MDM (Intune) Managed
 * Users sign in with their own corporate account (Azure AD)
   * Single or multiple users per device supported
@@ -54,17 +54,17 @@ Consider this deployment model for:
 
 ### Common Challenges
 
-* Determining which MDM configurations to apply to the HoloLens 2 based on scenario requirements.
+* Determining which MDM configurations to apply to the HoloLens 2 based on scenario requirements
 
 The corresponding Cloud Connected guide covers how to enroll HoloLens 2 into your device management, apply licenses as needed, and validate that your end users are able to immediately use Remote Assist upon device setup.
 
 > [!div class="nextstepaction"]
-> [Cloud connected environment deployment guide](hololens2-cloud-connected-overview.md)
+> [Cloud Connected deployment guide](hololens2-cloud-connected-overview.md)
 
 Use the External Clients guide to deploy devices to a remote site for short-term or long-term external use.
 
 > [!div class="nextstepaction"]
-> [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
+> [Cloud Connected (External Clients) deployment guide](hololens2-deployment-guide.md)
 
 ## Scenario B: Deploy inside your organization's network
 
@@ -97,10 +97,10 @@ Consider this deployment model for:
 * As HoloLens 2 is a cloud first device, it relies heavily on internet and cloud connected services for user authentication, OS updates, MDM management, and so on. When connecting to a corporate network, proxy/firewall rules will most likely need to be adjusted to enable access for HoloLens 2 and the applications that run on it.
 * Corporate Wi-Fi connectivity typically requires certificates to authenticate the device or user to the network. The required infrastructure or settings to deploy certificates to Windows 10 devices through MDM can be challenging to configure.
 
-The corresponding Corporate network guide instructs on how to enroll HoloLens 2 into your existing device management, apply licenses as needed, and validate that your end users are able to operate a Dynamics 365 Guide, as well as use custom line of business apps, after device set up.
+The corresponding Corporate Connected guide instructs on how to enroll HoloLens 2 into your existing device management, apply licenses as needed, and validate that your end users are able to operate a Dynamics 365 Guide, as well as use custom line of business apps, after device set up.
 
 > [!div class="nextstepaction"]
-> [Corporate network deployment guide](hololens2-corp-connected-overview.md)
+> [Corporate Connected deployment guide](hololens2-corp-connected-overview.md)
 
 ## Scenario C: Deploy in secure offline environment
 
@@ -118,11 +118,11 @@ Consider this deployment model for:
 
 ### Basic Common Configurations
 
-* Wi-Fi connectivity is disabled. Ethernet via USB may be enabled for LAN connectivity if necessary.
-* Not Managed.
-* Local user account for device sign-in.
-  * HoloLens 2 supports only one local account.
-* Varying levels of device lockdown configurations are applied via Provisioning Packages based on specific use cases. These configurations are typically restricted because of secure environment requirements.
+* Wi-Fi connectivity is disabled. Ethernet via USB may be enabled for LAN connectivity if necessary
+* Not Managed
+* Local user account for device sign-in
+  * HoloLens 2 supports only one local account
+* Varying levels of device lockdown configurations are applied via Provisioning Packages based on specific use cases. These configurations are typically restricted because of secure environment requirements
 * One or more applications are deployed via Provisioning Package
 
 ### Common Challenges
