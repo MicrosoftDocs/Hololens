@@ -21,14 +21,14 @@ appliesto:
 
 HoloLens 2 supports the following classes of Bluetooth devices:
 
-- [HID](https://docs.microsoft.com/windows-hardware/drivers/hid/):
+- [HID](/windows-hardware/drivers/hid/):
     - Mouse
     - Keyboard
 - Audio output (A2DP) devices
 
 HoloLens 2 supports the following Bluetooth APIs:
-- GATT [Server](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-server) and [Client](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-client)
-- [RFCOMM](https://docs.microsoft.com/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
+- GATT [Server](/windows/uwp/devices-sensors/gatt-server) and [Client](/windows/uwp/devices-sensors/gatt-client)
+- [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
 > You may have to install corresponding companion apps from Microsoft Store to actually use the HID and GATT devices.
 
@@ -36,7 +36,7 @@ HoloLens (1st gen) supports the following classes of Bluetooth devices:
 
 - Mouse
 - Keyboard
-- [HoloLens (1st gen) clicker](https://docs.microsoft.com/hololens/hololens1-clicker)
+- [HoloLens (1st gen) clicker](hololens1-clicker.md)
 
 > [!NOTE]
 > Other types of Bluetooth devices, such as speakers, headsets, smartphones, and game pads, may be listed as available in HoloLens settings. However, these devices aren't supported on HoloLens (1st gen). For more information, see [HoloLens Settings lists devices as available, but the devices don't work](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work).

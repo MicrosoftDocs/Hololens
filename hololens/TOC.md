@@ -10,7 +10,7 @@
 ### [Industrial edition](hololens2-options-industrial-edition.md)
 #### [HoloLens 2 Industrial edition FAQs](hololens2-industrial-edition-faq.md)
 ### [Development edition](hololens2-options-dev-edition.md)
-#### [HoloLens 2 Development edition FAQs](hololens2-development-edition-faq.md)
+#### [HoloLens 2 Development edition FAQs](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 ### [Commercial features](hololens-commercial-features.md)
 
@@ -115,7 +115,7 @@
 ## [HoloLens 2 release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ## [Supported languages](hololens2-language-support.md)
-## [Develop with Microsoft Mesh (Preview)](https://docs.microsoft.com/mesh/overview)
+## [Develop with Microsoft Mesh (Preview)](/mesh/overview)
 ## HoloLens (1st gen)
 ### First-time usage
 #### [About HoloLens (1st gen)](hololens1-hardware.md)
@@ -131,7 +131,7 @@
 #### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 #### [Reset HoloLens (1st gen) ](hololens1-recovery.md)
 ### HoloLens (1st gen) Security
-#### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.md)
+#### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.yml)
 #### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
 ### [Known issues and workarounds for HoloLens (1st gen)](hololens-known-issues.md)
 ### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)

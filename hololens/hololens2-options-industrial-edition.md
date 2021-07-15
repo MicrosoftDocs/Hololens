@@ -35,7 +35,7 @@ Review the [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.
 
 ## Cleaning and Handling HoloLens 2
 
-The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance).
+The HoloLens 2 Industrial Edition can be cleaned by a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor, brow pad, and head strap. For more information, see the [HoloLens 2 cleaning FAQ](/hololens/hololens2-maintenance).
 
 ## Next steps
 

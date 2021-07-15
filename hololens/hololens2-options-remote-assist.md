@@ -32,10 +32,10 @@ We've created a specific guide to help you deploy HoloLens devices at scale. The
 
 | Checkpoint  | Outcome                                |
 |-------------|----------------------------------------|
-| [Get started](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | Get started with Remote Assist.        |
-| [License](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Redeem license for Remote Assist.      |
-| [Connect](https://docs.microsoft.com/hololens/hololens-network)     | Connect your device(s) to Wi-Fi.       |
-| [Enroll](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | Enroll devices with your organization. |
+| [Get started](/dynamics365/mixed-reality/remote-assist/overview-hololens) | Get started with Remote Assist.        |
+| [License](/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Redeem license for Remote Assist.      |
+| [Connect](/hololens/hololens-network)     | Connect your device(s) to Wi-Fi.       |
+| [Enroll](/hololens/hololens-enroll-mdm)      | Enroll devices with your organization. |
 
 ## Next steps
 

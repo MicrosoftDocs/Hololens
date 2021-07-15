@@ -27,11 +27,11 @@ Using your HoloLens 2 devices in a commercial environment can be a powerful tool
 
 ## Here's what to do next with the HoloLens 2
 
-1. Watch this video on [HoloLens 2 Use and Care](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care).
-1. [Get your device ready to use](https://docs.microsoft.com/hololens/hololens2-setup) and then [get set up](https://docs.microsoft.com/hololens/hololens2-start)
-1. [Learn how to get around HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
-1. Once you're comfortable, [take some mixed reality photos or videos](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
-1. Look through all the available [apps for HoloLens 2 on the the Microsoft app store](https://docs.microsoft.com/hololens/holographic-store-apps).
+1. Watch this video on [HoloLens 2 Use and Care](/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care).
+1. [Get your device ready to use](/hololens/hololens2-setup) and then [get set up](/hololens/hololens2-start)
+1. [Learn how to get around HoloLens 2](/hololens/holographic-home).
+1. Once you're comfortable, [take some mixed reality photos or videos](/hololens/holographic-photos-and-videos).
+1. Look through all the available [apps for HoloLens 2 on the the Microsoft app store](/hololens/holographic-store-apps).
 
 ## Next steps
 
