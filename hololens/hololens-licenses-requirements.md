@@ -42,7 +42,8 @@ This page provides a high-level overview of the licenses and accounts needed to 
 - <sup>3</sup> This account must be [provisioned](hololens-provisioning.md#provisioning-package-hololens-wizard) ahead of time with Windows Configuration Designer (WCD).
 
 > [!IMPORTANT]
-    > Active Directory (AD) cannot be used to manage HoloLens devices.
+> Active Directory (AD) cannot be used to manage HoloLens devices.
+ 
 > [!WARNING]
 > Multiple users are not supported for a device using either a MSA or local account.
 
