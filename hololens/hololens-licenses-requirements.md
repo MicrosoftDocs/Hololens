@@ -32,7 +32,7 @@ This page provides a high-level overview of the licenses and accounts needed to 
 | Azure AD Admin account | ✔️ |  |
 | Azure AD User account | ✔️ | |
 | [Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
-| [Local Account<sup>3</sup>](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | | ✔️ |
+| [Local Account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
 | **Business Use Case** | | |
 | [Deployment Scenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) | ✔️| |
 | [Deployment Scenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
