@@ -22,6 +22,26 @@ This page provides a high-level overview of the licenses and accounts needed to 
 
 ## HoloLens 2 license and account requirements
 
+
+|                   | Managed HoloLens | Unmanaged HoloLens |
+|-------------------|-----------------|---------------------|
+| **Licenses** | | |
+| Azure Active Directory | ✔️ | |
+| MDM (Intune<sup>1</sup> or <sup>2</sup>) | | |
+| **Accounts** | ✔️ | |
+| Azure AD Admin account | ✔️ |  |
+| Azure AD User account | ✔️ | |
+| [Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
+| [Local Account<sup>3</sup>](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | | ✔️ |
+| **Business Use Case** | | |
+| [Deployment Scenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) | ✔️| |
+| [Deployment Scenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
+| [Deployment Scenario C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) | | ✔️ | 
+
+
+- <sup>1</sup> [Auto-enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) during initial device setup, which registers and joins Azure Active Directory and allows the device to be managed with Intune.
+- <sup>2</sup> [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) simplifies the provisioning experience for both IT admins and end users. IT admins can preconfigure HoloLens 2 policies, and upon first boot, devices will be deployed in business-ready state with zero end-user interaction.
+
 ### Managed HoloLens 2 Device
 
 These are the essential components for low-touch, cloud-based deployments of HoloLens 2. Although every environment has its own requirements, the information below is intended to outline the foundational services, technologies and tools that can be used to quickly reach deployment scale.
@@ -42,7 +62,6 @@ These are the essential components for low-touch, cloud-based deployments of Hol
 2. [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) or another MDM.
     - [Auto-enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) during initial device setup, which registers and joins Azure Active Directory and allows the device to be managed with Intune; OR
     - [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) - simplifies the provisioning experience for both IT admins and end users. IT admins can preconfigure HoloLens 2 policies, and upon first boot, devices will be deployed in business-ready state with zero end-user interaction. 
-
       > [!NOTE]
       > Windows Autopilot requires [Azure P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) and [Auto-enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) to be configured **first** for the low-touch Autopilot flow and device deployment.
 
