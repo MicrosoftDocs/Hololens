@@ -35,7 +35,7 @@ This page provides a high-level overview of the licenses and accounts needed to 
 | **Accounts** |  | |
 | Azure AD Admin account | ✔️ |  |
 | Azure AD User account | ✔️ | |
-| [Microsoft Account (MSA)(/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
+| [Microsoft Account (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
 | [Local Account](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
 - <sup>1</sup> [Auto-enrollment](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) during initial device setup, which registers and joins Azure Active Directory and allows the device to be managed with Intune.
 - <sup>2</sup> [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) simplifies the provisioning experience for both IT admins and end users. IT admins can preconfigure HoloLens 2 policies, and upon first boot, devices will be deployed in business-ready state with zero end-user interaction.
