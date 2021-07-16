@@ -40,7 +40,7 @@ Cloud-connected accounts (Azure AD and MSA) offer more features because they can
 > 1 - Azure AD Premium is not required to sign into the device. However, it is required for other features of a low touch cloud-based deployment, like Auto-enrollment and Autopilot.
 
 > [!NOTE]
-> 2 - While a HoloLens 2 device can support up to 64 Azure AD accounts, only 32 of those accounts may enroll in Iris Authentication. This is aligned with other [Biometric authentication options for Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
+> 2 - While a HoloLens 2 device can support up to 64 Azure AD accounts, only 31 of those accounts may enroll in Iris Authentication. This is aligned with other [Biometric authentication options for Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
 
 ## Setting up users
 
