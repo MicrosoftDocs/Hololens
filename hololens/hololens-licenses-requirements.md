@@ -47,53 +47,6 @@ This page provides a high-level overview of the licenses and accounts needed to 
 > [!WARNING]
 > Multiple users are not supported for a device using either a MSA or local account.
 
-### Managed HoloLens 2 Device
-
-These are the essential components for low-touch, cloud-based deployments of HoloLens 2. Although every environment has its own requirements, the information below is intended to outline the foundational services, technologies and tools that can be used to quickly reach deployment scale.
-
-#### Business Use Case: 
-
-- [Deployment Scenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) - proof of concept or pilot deployment
-
-- [Deployment Scenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) - deployment at scale
-
-#### Required Licenses
-
-1. [Azure AD](https://docs.microsoft.com/azure/active-directory/)
-
-    > [!IMPORTANT]
-    > Active Directory (AD) cannot be used to manage HoloLens devices.
-    
-2. [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) or another MDM.
-    - [Auto-enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) during initial device setup, which registers and joins Azure Active Directory and allows the device to be managed with Intune; OR
-    - [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) - simplifies the provisioning experience for both IT admins and end users. IT admins can preconfigure HoloLens 2 policies, and upon first boot, devices will be deployed in business-ready state with zero end-user interaction. 
-      > [!NOTE]
-      > Windows Autopilot requires [Azure P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) and [Auto-enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) to be configured **first** for the low-touch Autopilot flow and device deployment.
-
-#### Accounts
-- Azure AD Admin account (required for purchasing subscriptions, applying licenses, implementing and configuring HoloLens 2)
-- Azure AD User account  
-
-### Non-managed HoloLens 2 (device-only)
-HoloLens 2 may also be used outside of an Azure AD tenant or in a locked down secure environment with no access to the internet. 
-#### Business Use Case: 
-
-- [Deployment Scenario C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) - offline or secure deployment
-
-#### Required Licenses
-None
-
-#### Account
-You can use **either** of these accounts:
-- [Local Account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
-
-    - This account must be [provisioned](hololens-provisioning.md#provisioning-package-hololens-wizard) ahead of time with Windows Configuration Designer (WCD)
-
-- [Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)
-
-> [!WARNING]
-> Multiple users are not supported for a device using either of these accounts.
-
 ## Dynamics 365 Licensing and Requirements
 
 ### Dynamics 365 Remote Assist 
