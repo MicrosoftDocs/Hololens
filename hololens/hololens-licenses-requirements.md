@@ -35,9 +35,9 @@ This page provides a high-level overview of the licenses and accounts needed to 
 | **Accounts** |  | |
 | Azure AD Admin account | ✔️ |  |
 | Azure AD User account | ✔️ | |
-| [Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
-| [Local Account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
-- <sup>1</sup> [Auto-enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) during initial device setup, which registers and joins Azure Active Directory and allows the device to be managed with Intune.
+| [Microsoft Account (MSA)(/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
+| [Local Account](windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
+- <sup>1</sup> [Auto-enrollment](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) during initial device setup, which registers and joins Azure Active Directory and allows the device to be managed with Intune.
 - <sup>2</sup> [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) simplifies the provisioning experience for both IT admins and end users. IT admins can preconfigure HoloLens 2 policies, and upon first boot, devices will be deployed in business-ready state with zero end-user interaction.
 - <sup>3</sup> This account must be [provisioned](hololens-provisioning.md#provisioning-package-hololens-wizard) ahead of time with Windows Configuration Designer (WCD).
 
@@ -82,7 +82,7 @@ If you plan on implementing this [cross-tenant scenario](/dynamics365/mixed-real
 #### Admin
 
 1. Azure AD account (required for purchasing the subscription and assigning licenses)
-2. Dynamics 365 [Guides subscription or free trial](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one)
+2. Dynamics 365 [Guides subscription or free trial](/dynamics365/mixed-reality/guides/setup-step-one)
 
 #### Guides Author
 
