@@ -26,9 +26,9 @@ This page provides a high-level overview of the licenses and accounts needed to 
 |                   | Managed HoloLens | Unmanaged HoloLens |
 |-------------------|-----------------|---------------------|
 | **Business Use Case** | | |
-| [Deployment Scenario A - Cloud connected](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) | ✔️| |
-| [Deployment Scenario B - Corporate connected](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
-| [Deployment Scenario C - Offline secure](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) | | ✔️ |
+| [Deployment Scenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) - proof of concept/pilot deployment | ✔️| |
+| [Deployment Scenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) - deployment at scale | ✔️| |
+| [Deployment Scenario C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) - offline/secure deployment | | ✔️ |
 | **Licenses** | | |
 | Azure Active Directory | ✔️ | |
 | MDM (Intune<sup>1</sup> or <sup>2</sup>) | ✔️  | |
