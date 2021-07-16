@@ -27,7 +27,7 @@ This page provides a high-level overview of the licenses and accounts needed to 
 |-------------------|-----------------|---------------------|
 | **Licenses** | | |
 | Azure Active Directory | ✔️ | |
-| MDM (Intune<sup>1</sup> or <sup>2</sup>) | | |
+| MDM (Intune<sup>1</sup> or <sup>2</sup>) | ✔️  | |
 | **Accounts** | ✔️ | |
 | Azure AD Admin account | ✔️ |  |
 | Azure AD User account | ✔️ | |
@@ -41,6 +41,7 @@ This page provides a high-level overview of the licenses and accounts needed to 
 
 - <sup>1</sup> [Auto-enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) during initial device setup, which registers and joins Azure Active Directory and allows the device to be managed with Intune.
 - <sup>2</sup> [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) simplifies the provisioning experience for both IT admins and end users. IT admins can preconfigure HoloLens 2 policies, and upon first boot, devices will be deployed in business-ready state with zero end-user interaction.
+- <sup>3</sup> This account must be [provisioned](hololens-provisioning.md#provisioning-package-hololens-wizard) ahead of time with Windows Configuration Designer (WCD).
 
 ### Managed HoloLens 2 Device
 
