@@ -106,6 +106,8 @@ landingContent:
             url: hololens-insider.md
       - linkListType: reference
         links:      
+          - text: Where to buy HoloLens 2  
+            url: hololens2-purchase.md
           - text: Support and help options  
             url: hololens2-support.md
           - text: Give us feedback
