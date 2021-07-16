@@ -41,6 +41,11 @@ This page provides a high-level overview of the licenses and accounts needed to 
 - <sup>2</sup> [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) simplifies the provisioning experience for both IT admins and end users. IT admins can preconfigure HoloLens 2 policies, and upon first boot, devices will be deployed in business-ready state with zero end-user interaction.
 - <sup>3</sup> This account must be [provisioned](hololens-provisioning.md#provisioning-package-hololens-wizard) ahead of time with Windows Configuration Designer (WCD).
 
+> [!IMPORTANT]
+    > Active Directory (AD) cannot be used to manage HoloLens devices.
+> [!WARNING]
+> Multiple users are not supported for a device using either a MSA or local account.
+
 ### Managed HoloLens 2 Device
 
 These are the essential components for low-touch, cloud-based deployments of HoloLens 2. Although every environment has its own requirements, the information below is intended to outline the foundational services, technologies and tools that can be used to quickly reach deployment scale.
