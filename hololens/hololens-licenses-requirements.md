@@ -32,7 +32,7 @@ This page provides a high-level overview of the licenses and accounts needed to 
 | **Licenses** | | |
 | Azure Active Directory | ✔️ | |
 | MDM (Intune<sup>1</sup> or <sup>2</sup>) | ✔️  | |
-| **Accounts** | ✔️ | |
+| **Accounts** |  | |
 | Azure AD Admin account | ✔️ |  |
 | Azure AD User account | ✔️ | |
 | [Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
