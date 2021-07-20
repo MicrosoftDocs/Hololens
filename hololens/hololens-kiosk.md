@@ -77,7 +77,7 @@ The following table lists the user support features of the different kiosk modes
 
 | &nbsp; |Supported user types | Automatic sign-in | Multiple access levels |
 | --- | --- | --- | --- |
-|Single-app kiosk |Managed Service Account (MSA) in Azure Active Directory (Azure AD) or local account |Yes |No |
+|Single-app kiosk | Microsoft Account (MSA) in Azure Active Directory (Azure AD) or local account |Yes |No |
 |Multi-app kiosk |Azure AD account |No |Yes |
 
 For examples of how to use these capabilities, see the following table.
