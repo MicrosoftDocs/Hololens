@@ -125,6 +125,7 @@ We hope with this newer addition of audiovisual feedback it is easier to gather 
 
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+- Updated the in-box version of Remote Assist that's install on fresh flashes of the device.
 
 
 ## Start receiving Insider builds
