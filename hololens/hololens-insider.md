@@ -33,7 +33,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 | [PFX file support for Certificate Manager](#pfx-file-support-for-certificate-manager) | Add PFX certs via Settings UI | End User | 20348.1405 |
 | [View advanced diagnostic report in Settings on HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
 | [Offline Diagnostics notifications](#offline-diagnostics-notifications) | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
-
+| Private store apps only for Microsoft Store | Configure the store app to show only apps from organization | IT Admin | 20348.1408 |
 
 ### CSP changes for reporting HoloLens details
 
@@ -119,7 +119,11 @@ This new feature will be enabled when your device updates, and doesn’t need to
 
 We hope with this newer addition of audiovisual feedback it is easier to gather diagnostic data, and more quickly be able to troubleshoot your problems.
 
+### Private store apps only for Microsoft Store
 
+The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy enables the Microsoft Store app to be configured to only show the private store configured for your organization. Limiting access to only the apps you’ve made available.
+
+Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
 ### Fixes and improvements:
 
