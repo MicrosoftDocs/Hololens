@@ -30,9 +30,9 @@ Kiosk mode is a feature where you can control which applications are shown in st
 
 ## Description of kiosk mode experience when a user signs-in
 
-**Example TODO: Screenshot for normal start menu and screenshot for kiosk mode.**
+![Multi app kiosk example](.\images\multi-app-kiosk.jpg)
 
-The following table lists the feature capabilities in the different kiosk modes (TBD: just specify what is disabled and if there is any way to enable them; and if there something is enabled if there is any way to disable them. If something is not supported, explicitly state).
+The following table lists the feature capabilities in the different kiosk modes **(TBD: just specify what is disabled and if there is any way to enable them; and if there something is enabled if there is any way to disable them. If something is not supported, explicitly state).**
 
 | &nbsp; |Start menu |Quick Actions menu |Camera and video |Miracast |Cortana |Built-in voice commands |
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -103,7 +103,7 @@ When deploying a Kiosk from MDM it is important that each device may only receiv
   
 When setting a Kiosk via Intune&#39;s UI take into consideration both the **User logon type** , and how the Kiosk profile configuration will be assigned. The assignment determines which devices receive the configuration, same as other policies. Once a device has that policy, the User logon type determines if the user who logs in is presented with the Kiosk on the device.
   
-To add apps to your app, add them using their AUMID. You can use [the AUMIDs of in-box HoloLens apps](https://docs.microsoft.com/en-us/hololens/hololens-kiosk-fake-file-to-remind-via-error-).
+To add apps to your app, add them using their AUMID. You can use [the AUMIDs of in-box HoloLens apps](https://docs.microsoft.com/en-us/hololens/hololens-kiosk-fake-file-to-remind-via-error).
 
 **B. Using XML structure to create configurations for which there is no UX available**
   
@@ -128,15 +128,15 @@ Remove the assignment of the Kiosk to the user, user group, or user type. Sync t
 
 1. Create or update kiosk configuration
 
-  1. For single app Kiosk
+**For single app Kiosk**
 
-   In Windows Configuration Designer, you&#39;ll need to fill out the AssignedAccess/AssignedAccessSettings section with the account and app AUMID you want to use. You can use [the AUMIDs of in-box HoloLens apps](https://docs.microsoft.com/en-us/hololens/hololens-kiosk-fake-file-to-remind-via-error-).
+In Windows Configuration Designer, you&#39;ll need to fill out the AssignedAccess/AssignedAccessSettings section with the account and app AUMID you want to use. You can use [the AUMIDs of in-box HoloLens apps](https://docs.microsoft.com/en-us/hololens/hololens-kiosk-fake-file-to-remind-via-error-).
 
-   For example a local account named &quot;LocalAccount&quot; using the Settings app would have the following entry:
+For example a local account named &quot;LocalAccount&quot; using the Settings app would have the following entry:
 
-   `{"Account":"LocalAccount","AUMID":"HolographicSystemSettings_cw5n1h2txyewy!App"}`
+`{"Account":"LocalAccount","AUMID":"HolographicSystemSettings_cw5n1h2txyewy!App"}`
 
-  1. For multiple app Kiosk
+**For multiple app Kiosk**
 
   In Windows Configuration Designer, you&#39;ll need to fill out the AssignedAccess/MultiAppAssignedAccessSettings, and upload the xml file you&#39;ll create that defines your kiosk.
 
@@ -144,29 +144,34 @@ You can use a [sample XML from below](https://docs.microsoft.com/en-us/hololens/
 
 To add apps to your app, add them using their AUMID. You can use [the AUMIDs of in-box HoloLens apps](https://docs.microsoft.com/en-us/hololens/hololens-kiosk-fake-file-to-remind-via-error-).
 
-1. Apply configuration on HoloLens
+2. Apply configuration on HoloLens
 
 You can apply a provision package either [during OOBE during first time set up](https://docs.microsoft.com/en-us/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup), or later [from the Settings app](https://docs.microsoft.com/en-us/hololens/hololens-provisioning#applyremove-a-provisioning-package-to-hololens-after-setup).
 
-1. Experience kiosk mode on HoloLens when user signs in
+3. Experience kiosk mode on HoloLens when user signs in
 
 To validate the kiosk is assigned, it&#39;s time to sign into the device with a user to experience the kiosk. Be aware that unlocking the device and signing in are different and a fresh sign-in is required, users can sign out from the start menu. Once a user who is receiving the kiosk profile signs into the device they should be presented with the UI experience that you have configured.
 
 If you do not see the kiosk experience then review the XML file and ensure that the profiles are properly associated with the correct user, user group, or user type.
 
-1. Remove kiosk configuration from HoloLens (if needed)
+4. Remove kiosk configuration from HoloLens (if needed)
 
 To remove the Kiosk configuration, [remove the provisioning package via the Settings app](https://docs.microsoft.com/en-us/hololens/hololens-provisioning#applyremove-a-provisioning-package-to-hololens-after-setup). This may involve having the Settings app in your kiosk, or using an account that isn&#39;t presented with the Kiosk.
 
-[!NOTE]
- If you would like your end users to be unable to remove the provisioning package, and you have the Settings app in your Kiosk then you can disable the removal of providing packages via policy. Use the [Security/AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) and set it to not allow users to remove packages. This can be set in the same provisioning package that applies the Kiosk.
+> [!NOTE]
+> If you would like your end users to be unable to remove the provisioning package, and you have the Settings app in your Kiosk then you can disable the removal of providing packages via policy. Use the [Security/AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) and set it to not allow users to remove packages. This can be set in the same provisioning package that applies the Kiosk.
 
 
 
 
 
+..................
 
+**NEW STUFF ABOVE THIS LINE**
 
+**OLD BELOW**
+
+...........................
 
 
 
