@@ -129,7 +129,7 @@ Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/
 
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
-- Addressed issues around reporting compliance properties from HoloLens devices, where compliance properties were not reported correctly till the second boot and on the first boot, SyncML 404s may been still be reported.  
+- Addresses issues around reporting compliance properties from HoloLens devices; a reboot may be required for the correct reporting to be triggered on Insider builds.  
 - Updated the in-box version of Remote Assist that's installed on fresh flashes.
 
 
