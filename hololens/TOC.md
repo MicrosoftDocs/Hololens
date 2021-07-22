@@ -12,7 +12,6 @@
 ### [Development edition](hololens2-options-dev-edition.md)
 #### [HoloLens 2 Development edition FAQs](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
-### [Commercial features](hololens-commercial-features.md)
 
 # Using your HoloLens
 ## First-time usage
