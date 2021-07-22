@@ -120,7 +120,7 @@ To validate the kiosk is assigned, it&#39;s time to sign into the device with a 
 
 If you do not see the kiosk experience then check your MDM for it&#39;s deployment status and sync the device as needed, or review the XML file (if used) and ensure that the profiles are properly associated with the correct user, user group, or user type.
 
-1. Remove kiosk configuration from HoloLens (if needed)
+4. Remove kiosk configuration from HoloLens (if needed)
 
 Remove the assignment of the Kiosk to the user, user group, or user type. Sync the device as needed. Sign out, and back into the device. The kiosk experience should no longer be present.
 
