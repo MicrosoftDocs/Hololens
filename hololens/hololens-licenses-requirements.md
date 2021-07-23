@@ -23,7 +23,7 @@ This page provides a high-level overview of the licenses and accounts needed to 
 ## HoloLens 2 license and account requirements
 
  
-|                   | Managed HoloLens | Unmanaged HoloLens |
+|       &nbsp;      | Managed HoloLens | Unmanaged HoloLens |
 |-------------------|-----------------|---------------------|
 | **Business Use Case** | | |
 | [Deploy to cloud connected devices - proof of concept/pilot deployment](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
