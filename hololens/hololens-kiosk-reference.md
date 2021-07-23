@@ -7,7 +7,7 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 7/22/2021
+ms.date: 7/23/2021
 ms.reviewer: 
 manager: yannisle
 appliesto:
@@ -101,5 +101,5 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 > <sup>4</sup> You cannot enable Miracast directly. To enable Miracast as a kiosk app enable the Camera app and the Device Picker app.
 
 
-## Code Samples
+## Kiosk XML Code Samples
 

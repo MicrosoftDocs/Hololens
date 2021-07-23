@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 7/22/2021
+ms.date: 7/23/2021
 ms.custom: 
 - CI 115262
 - CI 111456
@@ -40,7 +40,7 @@ The following table lists the feature capabilities in the different kiosk modes 
 |Multi-app kiosk |Enabled |Enabled<sup>2</sup> |Available<sup>2</sup> |Available<sup>2</sup> |Available<sup>2, 3</sup>  |Enabled<sup>1</sup> |
 
 > <sup>1</sup> Voice commands that relate to disabled features do not function.  
-> <sup>2</sup> For more information about how to configure these features, see [Select kiosk apps](#plan-kiosk-apps).  
+> <sup>2</sup> For more information about how to configure these features, see [HoloLens AUMIDs for apps](hololens-kiosk-reference.md#hololens-aumids).  
 > <sup>3</sup> Even if Cortana is disabled, the built-in voice commands are enabled.
 
 ## Key general considerations before configuring kiosk mode
@@ -55,12 +55,12 @@ The following table lists the feature capabilities in the different kiosk modes 
 Applies only if you are planning to use runtime provisioning packages or creating kiosk configurations manually yourself. Kiosk mode configuration uses a hierarchical structure based on XML:
   - An assigned access profile defines which applications are displayed in start menu in kiosk mode. You can define multiple profiles in same XML structure which can be referenced later.
   - An assigned access configuration references a profile and target user(s) of that profile, e.g., a specific user, or AAD group or visitor, etc. You can define multiple configurations in same XML structure depending on complexity of your usage scenarios (see supported scenarios section below).
-  - To learn more, refer to [AssignedAccess CSP - Windows Client Management](windows/client-management/mdm/assignedaccess-csp).
+  - To learn more, refer to [AssignedAccess CSP - Windows Client Management](/windows/client-management/mdm/assignedaccess-csp).
 
 Kiosk mode only controls what applications are shown on start menu or are automatically launched on user sign-in. You can combine kiosk mode with options mentioned below if there are specific security related needs:
   - When Settings app is configured to show in kiosk mode and you want to control which pages are shown in Settings app, refer to [Page Settings Visibility](settings-uri-list.md)
-  - When you want to control access to certain hardware capabilities, e.g. camera, Bluetooth, etc. for certain apps, etc. refer to [Policies in Policy CSP supported by HoloLens 2 - Windows Client Management](windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)
-  - When you want to completely block launching of certain apps / processes on HoloLens, refer to [Use Windows Defender Application Control on HoloLens 2 devices in Microsoft Intune - Azure](https://docs.microsoft.com/en-us/mem/intune/configuration/custom-profile-hololens)
+  - When you want to control access to certain hardware capabilities, e.g. camera, Bluetooth, etc. for certain apps, etc. refer to [Policies in Policy CSP supported by HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)
+  - When you want to completely block launching of certain apps / processes on HoloLens, refer to [Use Windows Defender Application Control on HoloLens 2 devices in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens)
 
 
 ## Supported scenarios for kiosk mode based on identity type
@@ -103,15 +103,15 @@ When deploying a Kiosk from MDM it is important that each device may only receiv
   
 When setting a Kiosk via Intune&#39;s UI take into consideration both the **User logon type** , and how the Kiosk profile configuration will be assigned. The assignment determines which devices receive the configuration, same as other policies. Once a device has that policy, the User logon type determines if the user who logs in is presented with the Kiosk on the device.
   
-To add apps to your app, add them using their AUMID. You can use [the AUMIDs of in-box HoloLens apps](https://docs.microsoft.com/en-us/hololens/hololens-kiosk-fake-file-to-remind-via-error).
+To add apps to your app, add them using their AUMID. You can use [the AUMIDs of in-box HoloLens apps](hololens-kiosk-reference.md#hololens-aumids).
 
 **B. Using XML structure to create configurations for which there is no UX available**
   
-You can use a [sample XML from below](https://docs.microsoft.com/en-us/hololens/hololens-kiosk-fake-file-to-remind-via-error-).You many create multiple Kiosk profiles in one XML file, and assign each to different users/groups. Your kiosk configuration will be called a **Profile Id** and have a GUID. You will assign that Profile in the configs section by specifying the user type and using the same GUID for the **DefaultProfile Id**.
+You can use a [sample XML](hololens-kiosk-reference.md#kiosk-xml-code-samples).You many create multiple Kiosk profiles in one XML file, and assign each to different users/groups. Your kiosk configuration will be called a **Profile Id** and have a GUID. You will assign that Profile in the configs section by specifying the user type and using the same GUID for the **DefaultProfile Id**.
   
 When setting a Kiosk through both MDM and with XML, keep in mind the Assignment, and the user, user group, or user type being set in the Config section of the XML file. The assignment of the policy will determine to which devices receive the configuration, same as other policies. The configurations in the Config section will determine if the user who logs in is presented with the Kiosk on the device.
   
-To add apps to your app, add them using their AUMID. You can use [the AUMIDs of in-box HoloLens apps](https://docs.microsoft.com/en-us/hololens/hololens-kiosk-fake-file-to-remind-via-error-).
+To add apps to your app, add them using their AUMID. You can use [the AUMIDs of in-box HoloLens apps](hololens-kiosk-reference.md#hololens-aumids).
 
 2. Apply kiosk configuration on HoloLens
 Once the Kiosk is Assigned to a group, confirm it&#39;s deployment status. In Intune, while you&#39;re viewing the device configuration select **Device status** to view the deployment. Once the profile is assigned you&#39;ll be able to see the devices that will receive the profile. If you don&#39;t see the devices expected, ensure that your kiosk is properly assigned.
@@ -130,7 +130,7 @@ Remove the assignment of the Kiosk to the user, user group, or user type. Sync t
 
 **For single app Kiosk**
 
-In Windows Configuration Designer, you&#39;ll need to fill out the AssignedAccess/AssignedAccessSettings section with the account and app AUMID you want to use. You can use [the AUMIDs of in-box HoloLens apps](https://docs.microsoft.com/en-us/hololens/hololens-kiosk-fake-file-to-remind-via-error-).
+In Windows Configuration Designer, you&#39;ll need to fill out the AssignedAccess/AssignedAccessSettings section with the account and app AUMID you want to use. You can use [the AUMIDs of in-box HoloLens apps](hololens-kiosk-reference.md#hololens-aumids).
 
 For example a local account named &quot;LocalAccount&quot; using the Settings app would have the following entry:
 
@@ -140,9 +140,9 @@ For example a local account named &quot;LocalAccount&quot; using the Settings ap
 
   In Windows Configuration Designer, you&#39;ll need to fill out the AssignedAccess/MultiAppAssignedAccessSettings, and upload the xml file you&#39;ll create that defines your kiosk.
 
-You can use a [sample XML from below](https://docs.microsoft.com/en-us/hololens/hololens-kiosk-fake-file-to-remind-via-error-). You many create multiple Kiosk profiles in one XML file, and assign each to different users/groups. Your kiosk configuration will be called a **Profile Id** and have a GUID. You will assign that Profile in the configs section by specifying the user type and using the same GUID for the **DefaultProfile Id**.
+You can use a [sample XML](hololens-kiosk-reference.md#kiosk-xml-code-samples). You many create multiple Kiosk profiles in one XML file, and assign each to different users/groups. Your kiosk configuration will be called a **Profile Id** and have a GUID. You will assign that Profile in the configs section by specifying the user type and using the same GUID for the **DefaultProfile Id**.
 
-To add apps to your app, add them using their AUMID. You can use [the AUMIDs of in-box HoloLens apps](https://docs.microsoft.com/en-us/hololens/hololens-kiosk-fake-file-to-remind-via-error-).
+To add apps to your app, add them using their AUMID. You can use [the AUMIDs of in-box HoloLens apps](hololens-kiosk-reference.md#hololens-aumids).
 
 2. Apply configuration on HoloLens
 
