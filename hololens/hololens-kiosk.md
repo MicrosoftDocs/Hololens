@@ -142,7 +142,7 @@ Remove the assignment of the Kiosk to the user, user group, or user type. Sync t
 
 1. Create or update kiosk configuration
 
-**For single app Kiosk**
+**A. For single app Kiosk**
 
 In Windows Configuration Designer, you'll need to fill out the AssignedAccess/AssignedAccessSettings section with the account and app AUMID you want to use. You can use [the AUMIDs of in-box HoloLens apps](hololens-kiosk-reference.md#hololens-aumids).
 
@@ -150,7 +150,7 @@ For example, a local account named &quot;LocalAccount&quot; using the Settings a
 
 `{"Account":"LocalAccount","AUMID":"HolographicSystemSettings_cw5n1h2txyewy!App"}`
 
-**For multiple app Kiosk**
+**B. For multiple app Kiosk**
 
   In Windows Configuration Designer, you'll need to fill out the AssignedAccess/MultiAppAssignedAccessSettings, and upload the xml file you'll create that defines your kiosk.
 
