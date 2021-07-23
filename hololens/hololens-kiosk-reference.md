@@ -17,6 +17,8 @@ appliesto:
 
 # HoloLens Kiosk reference information
 
+This page contains helpful information for setting up your HoloLens device's kiosk mode. This include AUMIDs for inbox apps and locating yours, as well as several XML samples for Kiosk mode, that are just a few edits away from being ready to use for several different senarios. For information on setting up a Kiosk please read the [set up a Kiosk page.](hololens-kiosk.md)
+
 ## HoloLens AUMIDs
 
 For general information about how to choose kiosk apps, see [Guidelines for choosing an app for assigned access (kiosk mode)](/windows/configuration/guidelines-for-assigned-access-app).
