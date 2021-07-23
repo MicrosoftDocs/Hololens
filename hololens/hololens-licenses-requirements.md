@@ -22,7 +22,7 @@ This page provides a high-level overview of the licenses and accounts needed to 
 
 ## HoloLens 2 license and account requirements
 
-
+ 
 |                   | Managed HoloLens | Unmanaged HoloLens |
 |-------------------|-----------------|---------------------|
 | **Business Use Case** | | |
