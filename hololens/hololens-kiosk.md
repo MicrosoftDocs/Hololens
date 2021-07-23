@@ -28,14 +28,14 @@ Kiosk mode is a feature where you can control which applications are shown in st
 1. **Single app kiosk mode** – No start menu is displayed, and a single app is launched automatically, when user signs in. <br> *Example uses*: A device that runs only a Dynamics 365 Guide for new employees. A device that runs only a custom app.
 2. **Multiple app kiosk mode** – Start menu shows only those applications, which were set in kiosk configuration for that user, when that user signs in. An app can be chosen to automatically launch if desired. <br> *Example uses*: A device that runs both Guides and Remote Assistance for a range of employees. A device that runs a custom app, and allows the Settings app to change Wi-fi and settings per environment changes.
 
+    <img alt="Multi app kiosk example" src=".\images\multi-app-kiosk.jpg" width="411" height="500" />
+
 > [!IMPORTANT]  
 > Kiosk mode determines which apps are available when a user signs in to the device. However, kiosk mode is not a security method. It does not stop an "allowed" app from opening another app that is not allowed. In order to block apps or processes from opening, use [Windows Defender Application Control (WDAC) CSP](/windows/client-management/mdm/applicationcontrol-csp) to create appropriate policies.
 >
 > Learn more about the Microsoft services to give users an advanced level of security that HoloLens 2 uses, read more about [State separation and isolation - Defender protections](security-state-separation-isolation.md#defender-protections). Or learn how to [use WDAC and Windows PowerShell to allow or block apps on HoloLens 2 devices with Microsoft Intune](/mem/intune/configuration/custom-profile-hololens).
 
 ## Description of kiosk mode experience when a user signs-in
-
-![Multi app kiosk example](.\images\multi-app-kiosk.jpg)
 
 The following table lists the feature capabilities in the different kiosk modes **(TBD: just specify what is disabled and if there is any way to enable them; and if there something is enabled if there is any way to disable them. If something is not supported, explicitly state).**
 
@@ -71,14 +71,14 @@ Kiosk mode only controls what applications are shown on start menu or are automa
 
 ## Supported scenarios for kiosk mode based on identity type
 
-### For users who sign-in to HoloLens are either Local accounts or MSA:
+### For users who sign-in to HoloLens are either Local accounts or MSA
 
 | **Desired kiosk experience** | **Recommended solution** | **Remarks** |
 | --- | --- | --- |
 | Every user who signs in gets kiosk experience. | Configure Global Assigned Access profile |
 | Specific user who signs in gets kiosk experience. | Configure single or multiple app assigned access profile (as required) specifying name of specific user. | For single app kiosk mode, only local user account or MSA account is supported on HoloLens.For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
 
-### For users who sign-in to HoloLens using AAD accounts:
+### For users who sign-in to HoloLens using AAD accounts
 
 | **Desired kiosk experience** | **Recommended solution** | **Remarks** |
 | --- | --- | --- |

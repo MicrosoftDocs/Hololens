@@ -29,7 +29,7 @@ Some of the HoloLens configurations that you can apply in a provisioning package
 - Set up a Wi-Fi connection
 - Apply certificates to the device
 - Enable Developer Mode
-- Configure Kiosk mode by following our [detailed instructions](hhololens-kiosk.md#using-runtime-provisioning-package).
+- Configure Kiosk mode by following our [detailed instructions](hololens-kiosk.md#using-runtime-provisioning-package).
 
 ## Provisioning package HoloLens wizard
 
