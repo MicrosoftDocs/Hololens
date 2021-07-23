@@ -75,16 +75,16 @@ Kiosk mode only controls what applications are shown on start menu or are automa
 
 | **Desired kiosk experience** | **Recommended solution** | **Remarks** |
 | --- | --- | --- |
-| Every user who signs in gets kiosk experience. | Configure Global Assigned Access profile |
+| Every user who signs in gets kiosk experience. | Configure Global Assigned Access profile | &nbsp; |
 | Specific user who signs in gets kiosk experience. | Configure single or multiple app assigned access profile (as required) specifying name of specific user. | For single app kiosk mode, only local user account or MSA account is supported on HoloLens.For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
 
 ### For users who sign-in to HoloLens using AAD accounts
 
 | **Desired kiosk experience** | **Recommended solution** | **Remarks** |
 | --- | --- | --- |
-| Every user who signs in gets kiosk experience. | Configure Global Assigned Access profile |
-| Every user who signs in gets kiosk experience except certain users. | Configure Global Assigned Access profile by excluding certain users (who must be device owners). |
-| Every AAD user gets separate kiosk experience specific for that user. | Configure assigned access configuration for each user specifying their AAD account name. |
+| Every user who signs in gets kiosk experience. | Configure Global Assigned Access profile | &nbsp; |
+| Every user who signs in gets kiosk experience except certain users. | Configure Global Assigned Access profile by excluding certain users (who must be device owners). | &nbsp; |
+| Every AAD user gets separate kiosk experience specific for that user. | Configure assigned access configuration for each user specifying their AAD account name. | &nbsp; |
 | Users in different AAD groups experience kiosk mode that is for their group only. | Configure assigned access configuration for each desired AAD group. | • When a user signs-in and HoloLens is connected with Internet, if that user is found to be a member of AAD group for which kiosk configuration exists, user gets to experience kiosk for that AAD group. <br> • If there is no internet available when user sign-in, then user will experience HoloLens failure mode behavior. <br> • If internet availability is not guaranteed when user signs-in and AAD group based kiosk needs to be used, consider using AADGroupMembershipCacheValidityInDayspolicy. |
 | Users in different AAD groups experience kiosk mode that is for their group only. | Configure assigned access configuration for each desired AAD group except users (designed as device Owners) and ensure they are not members of those AAD groups. | Same behavior as mentioned above.  |
 | Users who need to use HoloLens for temporary purposes get kiosk experience. | Configure assigned access configuration for visitors | Temporary user account is automatically created by HoloLens on sign-in and is removed when temporary user signs out. |
