@@ -25,8 +25,13 @@ appliesto:
 
 Kiosk mode is a feature where you can control which applications are shown in start menu when a user signs-in to HoloLens. There are 2 supported scenarios:
 
-1. **Single app kiosk mode** – No start menu is displayed, and a single app is launched automatically, when user signs in.
-2. **Multiple app kiosk mode** – Start menu shows only those applications which were set in kiosk configuration for that user, when that user signs in. An app can be chosen to automatically launch if desired.
+1. **Single app kiosk mode** – No start menu is displayed, and a single app is launched automatically, when user signs in. <br> *Example uses*: A device that runs only a Dynamics 365 Guide for new employees. A device that runs only a custom app.
+2. **Multiple app kiosk mode** – Start menu shows only those applications which were set in kiosk configuration for that user, when that user signs in. An app can be chosen to automatically launch if desired. <br> *Example uses*: A device that runs both Guides and Remote Assistance for a range of employees. A device that runs a custom app, and allows the Settings app to change Wi-fi and settings per environment changes.
+
+> [!IMPORTANT]  
+> Kiosk mode determines which apps are available when a user signs in to the device. However, kiosk mode is not a security method. It does not stop an "allowed" app from opening another app that is not allowed. In order to block apps or processes from opening, use [Windows Defender Application Control (WDAC) CSP](/windows/client-management/mdm/applicationcontrol-csp) to create appropriate policies.
+>
+> Learn more about the Microsoft services to give users an advanced level of security that HoloLens 2 uses, read more about [State separation and isolation - Defender protections](security-state-separation-isolation.md#defender-protections). Or learn how to [use WDAC and Windows PowerShell to allow or block apps on HoloLens 2 devices with Microsoft Intune](/mem/intune/configuration/custom-profile-hololens).
 
 ## Description of kiosk mode experience when a user signs-in
 
@@ -35,7 +40,7 @@ Kiosk mode is a feature where you can control which applications are shown in st
 The following table lists the feature capabilities in the different kiosk modes **(TBD: just specify what is disabled and if there is any way to enable them; and if there something is enabled if there is any way to disable them. If something is not supported, explicitly state).**
 
 | &nbsp; |Start menu |Quick Actions menu |Camera and video |Miracast |Cortana |Built-in voice commands |
-| --- | --- | --- | --- | --- | --- | --- | 
+| --- | --- | --- | --- | --- | --- | --- |
 |Single-app kiosk |Disabled |Disabled |Disabled |Disabled   |Disabled |Enabled<sup>1</sup> |
 |Multi-app kiosk |Enabled |Enabled<sup>2</sup> |Available<sup>2</sup> |Available<sup>2</sup> |Available<sup>2, 3</sup>  |Enabled<sup>1</sup> |
 
@@ -53,18 +58,18 @@ The following table lists the feature capabilities in the different kiosk modes 
 ## Key technical considerations for Kiosk mode for HoloLens
 
 Applies only if you are planning to use runtime provisioning packages or creating kiosk configurations manually yourself. Kiosk mode configuration uses a hierarchical structure based on XML:
-  - An assigned access profile defines which applications are displayed in start menu in kiosk mode. You can define multiple profiles in same XML structure which can be referenced later.
-  - An assigned access configuration references a profile and target user(s) of that profile, e.g., a specific user, or AAD group or visitor, etc. You can define multiple configurations in same XML structure depending on complexity of your usage scenarios (see supported scenarios section below).
-  - To learn more, refer to [AssignedAccess CSP - Windows Client Management](/windows/client-management/mdm/assignedaccess-csp).
+
+- An assigned access profile defines which applications are displayed in start menu in kiosk mode. You can define multiple profiles in same XML structure which can be referenced later.
+- An assigned access configuration references a profile and target user(s) of that profile, e.g., a specific user, or AAD group or visitor, etc. You can define multiple configurations in same XML structure depending on complexity of your usage scenarios (see supported scenarios section below).
+- To learn more, refer to [AssignedAccess CSP - Windows Client Management](/windows/client-management/mdm/assignedaccess-csp).
 
 Kiosk mode only controls what applications are shown on start menu or are automatically launched on user sign-in. You can combine kiosk mode with options mentioned below if there are specific security related needs:
-  - When Settings app is configured to show in kiosk mode and you want to control which pages are shown in Settings app, refer to [Page Settings Visibility](settings-uri-list.md)
-  - When you want to control access to certain hardware capabilities, e.g. camera, Bluetooth, etc. for certain apps, etc. refer to [Policies in Policy CSP supported by HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)
-  - When you want to completely block launching of certain apps / processes on HoloLens, refer to [Use Windows Defender Application Control on HoloLens 2 devices in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens)
 
+- When Settings app is configured to show in kiosk mode and you want to control which pages are shown in Settings app, refer to [Page Settings Visibility](settings-uri-list.md)
+- When you want to control access to certain hardware capabilities, e.g. camera, Bluetooth, etc. for certain apps, etc. refer to [Policies in Policy CSP supported by HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)
+- When you want to completely block launching of certain apps / processes on HoloLens, refer to [Use Windows Defender Application Control on HoloLens 2 devices in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens)
 
 ## Supported scenarios for kiosk mode based on identity type
-
 
 ### For users who sign-in to HoloLens are either Local accounts or MSA:
 
@@ -80,7 +85,7 @@ Kiosk mode only controls what applications are shown on start menu or are automa
 | Every user who signs in gets kiosk experience. | Configure Global Assigned Access profile |
 | Every user who signs in gets kiosk experience except certain users. | Configure Global Assigned Access profile by excluding certain users (who must be device owners). |
 | Every AAD user gets separate kiosk experience specific for that user. | Configure assigned access configuration for each user specifying their AAD account name. |
-| Users in different AAD groups experience kiosk mode which is for their group only. | Configure assigned access configuration for each desired AAD group. | - When a user signs-in and HoloLens is connected with Internet, if that user is found to be a member of AAD group for which kiosk configuration exists, user gets to experience kiosk for that AAD group. <br> - If there is no internet available when user sign-in, then user will experience HoloLens failure mode behavior. <br> - If internet availability is not guaranteed when user signs-in and AAD group based kiosk needs to be used, consider using AADGroupMembershipCacheValidityInDayspolicy. |
+| Users in different AAD groups experience kiosk mode which is for their group only. | Configure assigned access configuration for each desired AAD group. | • When a user signs-in and HoloLens is connected with Internet, if that user is found to be a member of AAD group for which kiosk configuration exists, user gets to experience kiosk for that AAD group. <br> • If there is no internet available when user sign-in, then user will experience HoloLens failure mode behavior. <br> • If internet availability is not guaranteed when user signs-in and AAD group based kiosk needs to be used, consider using AADGroupMembershipCacheValidityInDayspolicy. |
 | Users in different AAD groups experience kiosk mode which is for their group only. | Configure assigned access configuration for each desired AAD group except users (designed as device Owners) and ensure they are not members of those AAD groups. | Same behavior as mentioned above.  |
 | Users who need to use HoloLens for temporary purposes get kiosk experience. | Configure assigned access configuration for visitors | Temporary user account is automatically created by HoloLens on sign-in and is removed when temporary user signs out. |
 
@@ -159,7 +164,7 @@ If you do not see the kiosk experience then review the XML file and ensure that 
 To remove the Kiosk configuration, [remove the provisioning package via the Settings app](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup). This may involve having the Settings app in your kiosk, or using an account that isn&#39;t presented with the Kiosk.
 
 > [!NOTE]
-> If you would like your end users to be unable to remove the provisioning package, and you have the Settings app in your Kiosk then you can disable the removal of providing packages via policy. Use the [Security/AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) and set it to not allow users to remove packages. This can be set in the same provisioning package that applies the Kiosk.
+> If you would like your end users to be unable to remove the provisioning package, and you have the Settings app in your Kiosk then you can disable the removal of providing packages via policy. Use the [Security/AllowRemoveProvisioningPackage](/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) and set it to not allow users to remove packages. This can be set in the same provisioning package that applies the Kiosk.
 
 
 
@@ -177,23 +182,13 @@ To remove the Kiosk configuration, [remove the provisioning package via the Sett
 
 
 
-> [!IMPORTANT]  
-> Kiosk mode determines which apps are available when a user signs in to the device. However, kiosk mode is not a security method. It does not stop an "allowed" app from opening another app that is not allowed. In order to block apps or processes from opening, use [Windows Defender Application Control (WDAC) CSP](/windows/client-management/mdm/applicationcontrol-csp) to create appropriate policies.
->
-> Learn more about the Microsoft services to give users an advanced level of security that HoloLens 2 uses, read more about [State separation and isolation - Defender protections](security-state-separation-isolation.md#defender-protections). Or learn how to [use WDAC and Windows PowerShell to allow or block apps on HoloLens 2 devices with Microsoft Intune](/mem/intune/configuration/custom-profile-hololens).
 
 
 
 
 
 > [!IMPORTANT]  
-> To help protect devices that run in kiosk mode, consider adding device management policies that turn off features such as USB connectivity. Additionally, check your update ring settings to make sure that automatic updates do not occur during business hours.
-
-### Decide between a single-app kiosk or a multi-app kiosk
-
-A single-app kiosk starts the specified app when the user signs in to the device. The Start menu is disabled, as is Cortana. A HoloLens 2 device does not respond to the [Start](hololens2-basic-usage.md#start-gesture) gesture. A HoloLens (1st gen) device does not respond to the [bloom](hololens1-basic-usage.md) gesture. Because only one app can run, the user cannot place other apps.
-
-A multi-app kiosk displays the Start menu when the user signs in to the device. The kiosk configuration determines which apps are available on the Start menu. You can use a multi-app kiosk to provide an easy-to-understand experience for users by presenting to them only the things that they have to use, and removing the things they don't need to use.
+> 
 
 The following table lists the feature capabilities in the different kiosk modes.
 
@@ -223,23 +218,11 @@ For examples of how to use these capabilities, see the following table.
 
 
 
-### Select a deployment method
 
 
 
-## Use Microsoft Intune or other MDM to set up a single-app or multi-app kiosk
 
-To set up kiosk mode by using Microsoft Intune or another MDM system, follow these steps.
 
-1. [Prepare to enroll the devices](#mdmenroll).
-1. [Create a kiosk configuration profile](#mdmprofile).
-1. Configure the kiosk.
-   - [Configure the settings for a single-app kiosk](#mdmconfigsingle).
-   - [Configure the settings for a multi-app kiosk](#mdmconfigmulti).
-1. [Assign the kiosk configuration profile to a group](#mdmassign).
-1. Deploy the devices.
-   - [Deploy a single-app kiosk](#mdmsingledeploy).
-   - [Deploy a multi-app kiosk](#mdmmultideploy).
 
 ### <a id="mdmenroll"></a>MDM, step 1 &ndash; Prepare to enroll the devices
 

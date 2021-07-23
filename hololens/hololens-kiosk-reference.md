@@ -21,9 +21,10 @@ appliesto:
 
 
 
-## Troubleshooting Kiosk
+## Tips and Troubleshooting Kiosk
 
-Do not include Classic Windows applications (Win32). HoloLens does not support these applications.
+- To help protect devices that run in kiosk mode, consider adding device management policies that turn off features such as USB connectivity. Additionally, check your update ring settings to make sure that automatic updates do not occur during business hours.
+- Do not include Classic Windows applications (Win32). HoloLens does not support these applications.
 
 ### Kiosk and HoloLens (1st gen)
 
