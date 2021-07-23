@@ -1,6 +1,6 @@
 ---
 title: Set up HoloLens as a kiosk
-description: Learn how to setup and use a kiosk configuration to lock down the apps on HoloLens devices. 
+description: Learn how to set up and use a kiosk configuration to lock down the apps on HoloLens devices. 
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -26,7 +26,7 @@ appliesto:
 Kiosk mode is a feature where you can control which applications are shown in start menu when a user signs-in to HoloLens. There are 2 supported scenarios:
 
 1. **Single app kiosk mode** – No start menu is displayed, and a single app is launched automatically, when user signs in. <br> *Example uses*: A device that runs only a Dynamics 365 Guide for new employees. A device that runs only a custom app.
-2. **Multiple app kiosk mode** – Start menu shows only those applications which were set in kiosk configuration for that user, when that user signs in. An app can be chosen to automatically launch if desired. <br> *Example uses*: A device that runs both Guides and Remote Assistance for a range of employees. A device that runs a custom app, and allows the Settings app to change Wi-fi and settings per environment changes.
+2. **Multiple app kiosk mode** – Start menu shows only those applications, which were set in kiosk configuration for that user, when that user signs in. An app can be chosen to automatically launch if desired. <br> *Example uses*: A device that runs both Guides and Remote Assistance for a range of employees. A device that runs a custom app, and allows the Settings app to change Wi-fi and settings per environment changes.
 
 > [!IMPORTANT]  
 > Kiosk mode determines which apps are available when a user signs in to the device. However, kiosk mode is not a security method. It does not stop an "allowed" app from opening another app that is not allowed. In order to block apps or processes from opening, use [Windows Defender Application Control (WDAC) CSP](/windows/client-management/mdm/applicationcontrol-csp) to create appropriate policies.
@@ -59,14 +59,14 @@ The following table lists the feature capabilities in the different kiosk modes 
 
 Applies only if you are planning to use runtime provisioning packages or creating kiosk configurations manually yourself. Kiosk mode configuration uses a hierarchical structure based on XML:
 
-- An assigned access profile defines which applications are displayed in start menu in kiosk mode. You can define multiple profiles in same XML structure which can be referenced later.
-- An assigned access configuration references a profile and target user(s) of that profile, e.g., a specific user, or AAD group or visitor, etc. You can define multiple configurations in same XML structure depending on complexity of your usage scenarios (see supported scenarios section below).
+- An assigned access profile defines which applications are displayed in start menu in kiosk mode. You can define multiple profiles in same XML structure, which can be referenced later.
+- An assigned access configuration references a profile and target user(s) of that profile, for example, a specific user, or AAD group or visitor, etc. You can define multiple configurations in same XML structure depending on complexity of your usage scenarios (see supported scenarios section below).
 - To learn more, refer to [AssignedAccess CSP - Windows Client Management](/windows/client-management/mdm/assignedaccess-csp).
 
 Kiosk mode only controls what applications are shown on start menu or are automatically launched on user sign-in. You can combine kiosk mode with options mentioned below if there are specific security related needs:
 
 - When Settings app is configured to show in kiosk mode and you want to control which pages are shown in Settings app, refer to [Page Settings Visibility](settings-uri-list.md)
-- When you want to control access to certain hardware capabilities, e.g. camera, Bluetooth, etc. for certain apps, etc. refer to [Policies in Policy CSP supported by HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)
+- When you want to control access to certain hardware capabilities, for example, camera, Bluetooth, etc. for certain apps, etc. refer to [Policies in Policy CSP supported by HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)
 - When you want to completely block launching of certain apps / processes on HoloLens, refer to [Use Windows Defender Application Control on HoloLens 2 devices in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens)
 
 ## Supported scenarios for kiosk mode based on identity type
@@ -85,8 +85,8 @@ Kiosk mode only controls what applications are shown on start menu or are automa
 | Every user who signs in gets kiosk experience. | Configure Global Assigned Access profile |
 | Every user who signs in gets kiosk experience except certain users. | Configure Global Assigned Access profile by excluding certain users (who must be device owners). |
 | Every AAD user gets separate kiosk experience specific for that user. | Configure assigned access configuration for each user specifying their AAD account name. |
-| Users in different AAD groups experience kiosk mode which is for their group only. | Configure assigned access configuration for each desired AAD group. | • When a user signs-in and HoloLens is connected with Internet, if that user is found to be a member of AAD group for which kiosk configuration exists, user gets to experience kiosk for that AAD group. <br> • If there is no internet available when user sign-in, then user will experience HoloLens failure mode behavior. <br> • If internet availability is not guaranteed when user signs-in and AAD group based kiosk needs to be used, consider using AADGroupMembershipCacheValidityInDayspolicy. |
-| Users in different AAD groups experience kiosk mode which is for their group only. | Configure assigned access configuration for each desired AAD group except users (designed as device Owners) and ensure they are not members of those AAD groups. | Same behavior as mentioned above.  |
+| Users in different AAD groups experience kiosk mode that is for their group only. | Configure assigned access configuration for each desired AAD group. | • When a user signs-in and HoloLens is connected with Internet, if that user is found to be a member of AAD group for which kiosk configuration exists, user gets to experience kiosk for that AAD group. <br> • If there is no internet available when user sign-in, then user will experience HoloLens failure mode behavior. <br> • If internet availability is not guaranteed when user signs-in and AAD group based kiosk needs to be used, consider using AADGroupMembershipCacheValidityInDayspolicy. |
+| Users in different AAD groups experience kiosk mode that is for their group only. | Configure assigned access configuration for each desired AAD group except users (designed as device Owners) and ensure they are not members of those AAD groups. | Same behavior as mentioned above.  |
 | Users who need to use HoloLens for temporary purposes get kiosk experience. | Configure assigned access configuration for visitors | Temporary user account is automatically created by HoloLens on sign-in and is removed when temporary user signs out. |
 
 
@@ -102,24 +102,24 @@ Kiosk mode can be deployed for your organization's device via two methods. Kiosk
 ### Using a MDM solution like Intune
 
 1. Create or update kiosk configuration
-When deploying a Kiosk from MDM it is important that each device may only receive one Kiosk profile, otherwise it will create a conflict and receive no Kiosk configurations at all. Other kinds of profiles and policies, such as device restrictions that are not related to the kiosk configuration profile, do not conflict with the kiosk configuration profile.
+<br> When deploying a Kiosk from MDM it is important that each device may only receive one Kiosk profile, otherwise it will create a conflict and receive no Kiosk configurations at all. Other kinds of profiles and policies, such as device restrictions that are not related to the kiosk configuration profile, do not conflict with the kiosk configuration profile.
   
 **A. Create a Kiosk [Using the user interface](/mem/intune/configuration/kiosk-settings#create-the-profile)**
   
-When setting a Kiosk via Intune's UI take into consideration both the **User logon type** , and how the Kiosk profile configuration will be assigned. The assignment determines which devices receive the configuration, same as other policies. Once a device has that policy, the User logon type determines if the user who logs in is presented with the Kiosk on the device.
+When setting a Kiosk via Intune's UI take into consideration both the **User logon type** , and how the Kiosk device profile configuration will be assigned. The assignment determines which devices receive the configuration, same as other policies. Once a device has that policy, the User logon type determines if the user who logs in is presented with the Kiosk on the device.
   
 To add apps to your app, add them using their AUMID. You can use [the AUMIDs of in-box HoloLens apps](hololens-kiosk-reference.md#hololens-aumids).
 
 **B. Using XML structure to create configurations for which there is no UX available**
   
-You can use a [sample XML](hololens-kiosk-reference.md#kiosk-xml-code-samples).You many create multiple Kiosk profiles in one XML file, and assign each to different users/groups. Your kiosk configuration will be called a **Profile Id** and have a GUID. You will assign that Profile in the configs section by specifying the user type and using the same GUID for the **DefaultProfile Id**.
+You can use a [sample XML](hololens-kiosk-reference.md#kiosk-xml-code-samples).You many create multiple Kiosk device profiles in one XML file, and assign each to different users/groups. Your kiosk configuration will be called a **Profile Id** and have a GUID. You will assign that Profile in the configs section by specifying the user type and using the same GUID for the **DefaultProfile Id**.
   
 When setting a Kiosk through both MDM and with XML, keep in mind the Assignment, and the user, user group, or user type being set in the Config section of the XML file. The assignment of the policy will determine to which devices receive the configuration, same as other policies. The configurations in the Config section will determine if the user who logs in is presented with the Kiosk on the device.
   
 To add apps to your app, add them using their AUMID. You can use [the AUMIDs of in-box HoloLens apps](hololens-kiosk-reference.md#hololens-aumids).
 
 2. Apply kiosk configuration on HoloLens
-Once the Kiosk is Assigned to a group, confirm it's deployment status. In Intune, while you're viewing the device configuration select **Device status** to view the deployment. Once the profile is assigned you'll be able to see the devices that will receive the profile. If you don't see the devices expected, ensure that your kiosk is properly assigned.
+<br> Once the Kiosk is Assigned to a group, confirm it's deployment status. In Intune, while you're viewing the device configuration select **Device status** to view the deployment. Once the profile is assigned you'll be able to see the devices that will receive the profile. If you don't see the devices expected, ensure that your kiosk is properly assigned.
 
 > [!TIP]
 > If you are planning on using a user or user group to assign the kiosk profile, then consider the account that will [Enroll HoloLens in MDM](hololens-enroll-mdm.md). By using the same account for both enrollment and assignment the profile, you can guarantee the deployment.
@@ -132,7 +132,7 @@ Once the Kiosk is Assigned to a group, confirm it's deployment status. In Intune
 3. Experience kiosk mode on HoloLens when user signs in
 To validate the kiosk is assigned, it's time to sign into the device with a user to experience the kiosk. Be aware that unlocking the device and signing in are different and a fresh sign-in is required, users can sign out from the start menu. Once a user who is receiving the kiosk profile signs into the device they should be presented with the UI experience that you have configured.
 
-If you do not see the kiosk experience then [check your MDM for it's assignment and deployment status](/intune/configuration/device-profile-monitor) and sync the device as needed, or review the XML file (if used) and ensure that the profiles are properly associated with the correct user, user group, or user type.
+If you do not see the kiosk experience, then [check your MDM for it's assignment and deployment status](/intune/configuration/device-profile-monitor) and sync the device as needed, or review the XML file (if used) and ensure that the profiles are properly associated with the correct user, user group, or user type.
 
 4. Remove kiosk configuration from HoloLens (if needed)
 
@@ -146,7 +146,7 @@ Remove the assignment of the Kiosk to the user, user group, or user type. Sync t
 
 In Windows Configuration Designer, you'll need to fill out the AssignedAccess/AssignedAccessSettings section with the account and app AUMID you want to use. You can use [the AUMIDs of in-box HoloLens apps](hololens-kiosk-reference.md#hololens-aumids).
 
-For example a local account named &quot;LocalAccount&quot; using the Settings app would have the following entry:
+For example, a local account named &quot;LocalAccount&quot; using the Settings app would have the following entry:
 
 `{"Account":"LocalAccount","AUMID":"HolographicSystemSettings_cw5n1h2txyewy!App"}`
 
@@ -164,9 +164,9 @@ You can apply a provision package either [during OOBE during first time set up](
 
 3. Experience kiosk mode on HoloLens when user signs in
 
-To validate the kiosk is assigned, it's time to sign into the device with a user to experience the kiosk. Be aware that unlocking the device and signing in are different and a fresh sign-in is required, users can sign out from the start menu. Once a user who is receiving the kiosk profile signs into the device they should be presented with the UI experience that you have configured.
+To validate the kiosk is assigned, it's time to sign into the device with a user to experience the kiosk. Unlocking the device and signing in are different and a fresh sign-in is required, users can sign out from the start menu. Once a user who is receiving the Kiosk device profile signs into the device they should be presented with the UI experience that you have configured.
 
-If you do not see the kiosk experience then review the XML file and ensure that the profiles are properly associated with the correct user, user group, or user type.
+If you do not see the kiosk experience, then review the XML file and ensure that the profiles are properly associated with the correct user, user group, or user type.
 
 4. Remove kiosk configuration from HoloLens (if needed)
 
