@@ -17,7 +17,7 @@ appliesto:
 
 # HoloLens Kiosk reference information
 
-This page contains helpful information for setting up your HoloLens device's kiosk mode. This include AUMIDs for inbox apps and locating yours, as well as several XML samples for Kiosk mode, that are just a few edits away from being ready to use for several different senarios. For information on setting up a Kiosk please read the [set up a Kiosk page.](hololens-kiosk.md)
+This page contains helpful information for setting up your HoloLens device's kiosk mode. This includes AUMIDs for inbox apps and locating yours, and several XML samples for Kiosk mode, that are just a few edits away from being ready to use for several different senarios. For information on setting up a Kiosk, read the [set up a Kiosk page.](hololens-kiosk.md)
 
 ## HoloLens AUMIDs
 
@@ -187,13 +187,13 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 
 ### Multi app kiosk mode targeting an Azure AD group
 
-This kiosk deploys a Kiosk that for users in the Azure AD group, they will have a Kiosk enabled that includes the 3 apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the GUID highlighted below to match an Azure AD Group of your own.
+This kiosk deploys a Kiosk that for users in the Azure AD group, they will have a Kiosk enabled that includes the three apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the GUID highlighted below to match an Azure AD Group of your own.
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 ### Multiple app kiosk mode targeting Azure AD account
 
-This kiosk deploys a Kiosk for a single user, they will have a Kiosk enabled that includes the 3 apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the account highlighted below to match an Azure AD Account of your own.
+This kiosk deploys a Kiosk for a single user, they will have a Kiosk enabled that includes the three apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the account highlighted below to match an Azure AD Account of your own.
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::
 
@@ -224,7 +224,7 @@ This new feature allows an IT Admin to configure a HoloLens 2 device for multi a
 
 - Focused experience with automatic app launch, further increasing the UI and app selections chosen for Kiosk mode experiences.
 
-Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration.
+Applies only to multiple-app kiosk mode and only one app can be designated to autolaunch using highlighted attribute below in Assigned Access configuration.
 
 Application is automatically launched when user signs-in.
 
@@ -276,7 +276,7 @@ Steps to use this policy correctly:
 
 On builds [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
 
-- AAD and Non-ADD configurations both support visitor accounts being auto-logon enabled for Kiosk modes.
+- AAD and Non-ADD configurations both support visitor accounts being autologon enabled for Kiosk modes.
 
 #### Non-AAD configuration
 
@@ -300,7 +300,7 @@ Visitor Auto logon can be managed via [custom OMA-URI policy](/mem/intune/config
 
 ## Tips and Troubleshooting Kiosk
 
-If you need to install additional apps to your Kiosk, you can install additional apps from the Microsoft store or by side loading more easily if you have an account that does not use Kiosk. Can also also assign [required apps via MDM](/mem/intune/apps/apps-deploy#assign-an-app) to install automatically.
+If you need to install additional apps to your Kiosk, you can install additional apps from the Microsoft store or by side loading more easily if you have an account that does not use Kiosk. Can also assign [required apps via MDM](/mem/intune/apps/apps-deploy#assign-an-app) to install automatically.
 
 - To help protect devices that run in kiosk mode, consider adding device management policies that turn off features such as USB connectivity. Additionally, check your update ring settings to make sure that automatic updates do not occur during business hours.
 - Do not include Classic Windows applications (Win32). HoloLens does not support these applications.
@@ -308,7 +308,7 @@ If you need to install additional apps to your Kiosk, you can install additional
 
 ### References
 
-For more information about how enrollment see [Intune enrollment methods for Windows devices](/mem/intune/enrollment/windows-enrollment-methods).
+For more information about how enrollment, see [Intune enrollment methods for Windows devices](/mem/intune/enrollment/windows-enrollment-methods).
 
 For more information about how to create a kiosk configuration profile, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/configuration/kiosk-settings).
 
@@ -318,7 +318,7 @@ For information about how to configure a kiosk configuration profile in Intune, 
 
 ### Kiosk and HoloLens (1st gen)
 
-Kiosk mode is available only if the device has Windows Holographic for Business. All HoloLens 2 devices ship with Windows Holographic for Business and there are no other editions. Every HoloLens 2 devices is able to run Kiosk mode out of the box.
+Kiosk mode is available only if the device has Windows Holographic for Business. All HoloLens 2 devices ship with Windows Holographic for Business and there are no other editions. Every HoloLens 2 device is able to run Kiosk mode out of the box.
 
 HoloLens (1st gen) devices need to be upgraded both in terms of OS build and OS edition. Here is more information on updating a HoloLens (1st gen) to [Windows Holographic for Business](hololens1-upgrade-enterprise.md) edition. To update a HoloLens (1st gen) device to use kiosk mode, you must first make sure that the device runs Windows 10, version 1803, or a later version. If you have used the Windows Device Recovery Tool to recover your HoloLens (1st gen) device to its default build, or if you have installed the most recent updates, your device is ready to configure.
 
@@ -344,7 +344,7 @@ Set up the HoloLens device to use the Windows Device Portal](https://developer.m
  > [!CAUTION]
  > When you set up HoloLens to use the Device Portal, you have to enable Developer Mode on the device. Developer Mode on a device that has Windows Holographic for Business enables you to side-load apps. However, this setting creates a risk that a user can install apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable Developer Mode by using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider). [Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
 
-Kiosk Mode can be set via Device Portal’s REST API by doing a POST to /api/holographic/kioskmode/settings with one required query string parameter (“kioskModeEnabled” with a value of “true” or “false”) and one optional parameter (“startupApp” with a value of a package name). Please keep in mind that Device Portal is intended for developers only and should not be enabled on non-developer devices. The REST API is subject to change in future updates/releases.
+Kiosk Mode can be set via Device Portal’s REST API by doing a POST to /api/holographic/kioskmode/settings with one required query string parameter (“kioskModeEnabled” with a value of “true” or “false”) and one optional parameter (“startupApp” with a value of a package name). Keep in mind that Device Portal is intended for developers only and should not be enabled on non-developer devices. The REST API is subject to change in future updates/releases.
 
 ### Kiosk deployment methods
 
