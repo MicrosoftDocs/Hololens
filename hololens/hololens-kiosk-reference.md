@@ -68,13 +68,13 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 
 ## Kiosk XML Code Samples
 
-1. Multiple app global assigned access profile
-1. Multiple app global assigned access profile excluding device owners
-1. Multiple app assigned access profile for a local account or AAD user account
-1. Multiple app assigned access profiles for 2 AAD users or more
+1. [Multiple app global assigned access profile](#multiple-app-global-assigned-access-profile)
+1. [Multiple app global assigned access profile excluding device owners](#multiple-app-global-assigned-access-profile-excluding-device-owners)
+1. [Multiple app assigned access profile for a local account or AAD user account](#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account)
+1. [Multiple app assigned access profiles for 2 AAD users or more](#multiple-app-assigned-access-profiles-for-2-aad-users-or-more)
 1. 
-1. Multi app kiosk mode targeting an Azure AD group
-1. Multiple app kiosk mode targeting Azure AD account
+1. [Multi app kiosk mode targeting an Azure AD group](#multi-app-kiosk-mode-targeting-an-azure-ad-group)
+1. [Multiple app kiosk mode targeting Azure AD account](#multiple-app-kiosk-mode-targeting-azure-ad-account)
 
 > [!NOTE]
 > Replace TODO actions as per your requirements.
