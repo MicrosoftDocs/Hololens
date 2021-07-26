@@ -76,7 +76,7 @@ Kiosk mode only controls what applications are shown on start menu or are automa
 | **Desired kiosk experience** | **Recommended solution** | **Remarks** |
 | --- | --- | --- |
 | Every user who signs in gets kiosk experience. | [Configure Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | &nbsp; |
-| Specific user who signs in gets kiosk experience. | Configure single or multiple app assigned access profile (as required) specifying name of specific user. | For single app kiosk mode, only local user account or MSA account is supported on HoloLens. <br> For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
+| Specific user who signs in gets kiosk experience. | [Configure single or multiple app assigned access profile (as required) specifying name of specific user.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | For single app kiosk mode, only local user account or MSA account is supported on HoloLens. <br> For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
 
 ### For users who sign-in to HoloLens using AAD accounts
 

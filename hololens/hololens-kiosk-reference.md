@@ -72,7 +72,10 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 1. [Multiple app global assigned access profile excluding device owners](#multiple-app-global-assigned-access-profile-excluding-device-owners)
 1. [Multiple app assigned access profile for a local account or AAD user account](#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account)
 1. [Multiple app assigned access profiles for 2 AAD users or more](#multiple-app-assigned-access-profiles-for-2-aad-users-or-more)
-1. 
+1. Multiple app assigned access profile for 1 AAD group
+1. Multiple app assigned access profile for 2 AAD groups or more
+1. Multiple app assigned access profile for 1 AAD account and 1 AAD group.
+1. Multiple app assigned access profile for visitors
 1. [Multi app kiosk mode targeting an Azure AD group](#multi-app-kiosk-mode-targeting-an-azure-ad-group)
 1. [Multiple app kiosk mode targeting Azure AD account](#multiple-app-kiosk-mode-targeting-azure-ad-account)
 
