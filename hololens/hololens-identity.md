@@ -63,7 +63,7 @@ Linking accounts does not separate the user data created on the device, such as 
 HoloLens supports multiple users from the same Azure AD tenant. To use this feature, you must use an account that belongs to your organization to set up the device. Subsequently, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user. 
 
 >[!IMPORTANT]
-The first user on the device is considered the device owner, except in the case of Azure AD Join, [learn more about device owners](security-adminless-os.md#device-owner).
+> The first user on the device is considered the device owner, except in the case of Azure AD Join, [learn more about device owners](security-adminless-os.md#device-owner).
 
 All users can use the apps installed on the device. However, each user has their own app data and preferences. Removing an app from the device removes it for all users.  
 
@@ -124,6 +124,17 @@ Windows Hello for Business (which supports using a PIN to sign in) is supported 
 HoloLens 2 supports Iris authentication. Iris is based on Windows Hello technology and is supported for use by both Azure Active Directory and Microsoft Accounts. Iris is implemented the same way as other Windows Hello technologies, and achieves biometrics security FAR of 1/100K.
 
 See the [biometric requirements and specifications for Windows Hello](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information. Learn more about [Windows Hello](/windows-hardware/design/device-experiences/windows-hello) and [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
+
+### Where is Iris biometric information stored?
+
+Iris biometric information is stored locally on each HoloLens per [Windows Hello specifications](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored). It is not shared and is protected by two layers of encryption. It is not accessible to other users, even an administrator, because there is no administrator account on a HoloLens.
+
+### Do I have to use Iris authentication?
+No, you can skip this step during setup. HoloLens 2 provides many different options for authentication, including FIDO2 keys.
+
+### Can Iris information be removed from the HoloLens?
+Yes, you can manually remove it in Settings.
+
 
 ### How does the type of account affect sign-in behavior?
 
