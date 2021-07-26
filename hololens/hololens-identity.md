@@ -44,7 +44,7 @@ Cloud-connected accounts (Azure AD and MSA) offer more features because they can
 
 ## Setting up users
 
-There are two ways to set up a new user on the HoloLens. The most common way is during the HoloLens out-of-box experience (OOBE). If using Azure Active Directory, [other users can log in](#setting-up-multi-user-support-azure-ad-only) after OOBE using their Azure AD credentials. HoloLens devices that are initially logged onto using a MSA or local account do not support multiple users. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
+There are two ways to set up a new user on the HoloLens. The most common way is during the HoloLens out-of-box experience (OOBE). If using Azure Active Directory, [other users can log in](#setting-up-multi-user-support-azure-ad-only) after OOBE using their Azure AD credentials. HoloLens devices that are initially set up with a MSA or local account during OOBE will not support multiple users. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
 
 If you use an enterprise or organizational account to sign in to HoloLens, HoloLens enrolls in the organization's IT infrastructure. This enrollment allows your IT Admin to configure Mobile Device Management (MDM) to send group policies to your HoloLens.
 
