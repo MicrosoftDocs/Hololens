@@ -127,7 +127,7 @@ See the [biometric requirements and specifications for Windows Hello](/windows-h
 
 ### Where is Iris biometric information stored?
 
-Iris biometric information is stored locally on each HoloLens per [Windows Hello specifications](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored). It is not shared and is protected by two layers of encryption. It is not accessible to other users, even an administrator, because there is no administrator account on a HoloLens.
+Iris biometric information is stored locally on each HoloLens per [Windows Hello specifications](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored). It is not shared and is protected by two layers of encryption. It is not accessible to other users, even an administrator, because there is no administrator account on a HoloLens.
 
 ### Do I have to use Iris authentication?
 No, you can skip this step during setup. HoloLens 2 provides many different options for authentication, including FIDO2 keys.
