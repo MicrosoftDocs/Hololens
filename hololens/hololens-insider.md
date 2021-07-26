@@ -125,6 +125,11 @@ The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy e
 
 Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
+### Low storage log collection improvements
+
+Log files will also report storage used in the MDM diagnostics. In scenarios where device seems to be low on disk space, when diagnostic logs are collected, an additional report named StorageDiagnostics.zip will be created. Threshold of low storage is determined automatically by Windows [storage sense](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+
+
 ### Fixes and improvements:
 
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
