@@ -72,19 +72,18 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 1. [Multiple app global assigned access profile excluding device owners](#multiple-app-global-assigned-access-profile-excluding-device-owners)
 1. [Multiple app assigned access profile for a local account or AAD user account](#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account)
 1. [Multiple app assigned access profiles for 2 AAD users or more](#multiple-app-assigned-access-profiles-for-2-aad-users-or-more)
-1. Multiple app assigned access profile for 1 AAD group
-1. Multiple app assigned access profile for 2 AAD groups or more
-1. Multiple app assigned access profile for 1 AAD account and 1 AAD group.
-1. Multiple app assigned access profile for visitors
+1. [Multiple app assigned access profile for 1 AAD group](#multiple-app-assigned-access-profiles-for-2-aad-users-or-more)
+1. [Multiple app assigned access profile for 2 AAD groups or more](#multiple-app-assigned-access-profile-for-2-aad-groups-or-more)
+1. [Multiple app assigned access profile for 1 AAD account and 1 AAD group](#multiple-app-assigned-access-profile-for-1-aad-account-and-1-aad-group)
+1. [Multiple app assigned access profile for visitors](#multiple-app-assigned-access-profile-for-visitors)
 1. [Multi app kiosk mode targeting an Azure AD group](#multi-app-kiosk-mode-targeting-an-azure-ad-group)
 1. [Multiple app kiosk mode targeting Azure AD account](#multiple-app-kiosk-mode-targeting-azure-ad-account)
 
 > [!NOTE]
 > Replace TODO actions as per your requirements.
 
-
-
 ### Multiple app global assigned access profile
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
 <AssignedAccessConfiguration 
@@ -129,7 +128,6 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 ```
 
 [Back to list](#kiosk-xml-code-samples)
-
 
 ### Multiple app global assigned access profile excluding device owners
 
@@ -208,20 +206,13 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 
 ### Multiple app assigned access profile for 1 AAD account and 1 AAD group
 
-
+:::code language="xml" source="samples/kiosk-sample-multi-app-for-aad-user-and-aad-group.xml" highlight="37,42":::
 
 [Back to list](#kiosk-xml-code-samples)
 
 ### Multiple app assigned access profile for visitors
 
-
-
-
-
-
-
-
-
+:::code language="xml" source="samples/kiosk-sample-multi-app-visitor-user.xml" highlight="9,10":::
 
 [Back to list](#kiosk-xml-code-samples)
 
@@ -240,22 +231,6 @@ This kiosk deploys a Kiosk for a single user, they will have a Kiosk enabled tha
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::
 
 [Back to list](#kiosk-xml-code-samples)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Updates to Kiosk
 
