@@ -128,7 +128,7 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 </AssignedAccessConfiguration>
 ```
 
-
+[Back to list](#kiosk-xml-code-samples)
 
 
 ### Multiple app global assigned access profile excluding device owners
@@ -180,25 +180,37 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 </AssignedAccessConfiguration>
 ```
 
+[Back to list](#kiosk-xml-code-samples)
+
 ### Multiple app assigned access profile for a local account or AAD user account
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-local-or-aad-user.xml" highlight="24,26":::
+
+[Back to list](#kiosk-xml-code-samples)
 
 ### Multiple app assigned access profiles for 2 AAD users or more
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-users-or-more.xml" highlight="36,41":::
 
+[Back to list](#kiosk-xml-code-samples)
+
 ### Multiple app assigned access profile for 1 AAD group
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-one-aad-group.xml" highlight="23":::
+
+[Back to list](#kiosk-xml-code-samples)
 
 ### Multiple app assigned access profile for 2 AAD groups or more
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-groups-or-more.xml" highlight="37,43":::
 
+[Back to list](#kiosk-xml-code-samples)
+
 ### Multiple app assigned access profile for 1 AAD account and 1 AAD group
 
 
+
+[Back to list](#kiosk-xml-code-samples)
 
 ### Multiple app assigned access profile for visitors
 
@@ -211,17 +223,23 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 
 
 
+[Back to list](#kiosk-xml-code-samples)
+
 ### Multi app kiosk mode targeting an Azure AD group
 
 This kiosk deploys a Kiosk that for users in the Azure AD group, they will have a Kiosk enabled that includes the three apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the GUID highlighted below to match an Azure AD Group of your own.
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
+[Back to list](#kiosk-xml-code-samples)
+
 ### Multiple app kiosk mode targeting Azure AD account
 
 This kiosk deploys a Kiosk for a single user, they will have a Kiosk enabled that includes the three apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the account highlighted below to match an Azure AD Account of your own.
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::
+
+[Back to list](#kiosk-xml-code-samples)
 
 
 
