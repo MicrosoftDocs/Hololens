@@ -130,7 +130,11 @@ See the [biometric requirements and specifications for Windows Hello](/windows-h
 Iris biometric information is stored locally on each HoloLens per [Windows Hello specifications](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored). It is not shared and is protected by two layers of encryption. It is not accessible to other users, even an administrator, because there is no administrator account on a HoloLens.
 
 ### Do I have to use Iris authentication?
-No, you can skip this step during setup. HoloLens 2 provides many different options for authentication, including FIDO2 security keys.
+No, you can skip this step during setup. 
+
+![Set-up Iris](./images/setup-iris.png)
+
+HoloLens 2 provides many different options for authentication, including FIDO2 security keys.
 
 ### Can Iris information be removed from the HoloLens?
 Yes, you can manually remove it in Settings.
