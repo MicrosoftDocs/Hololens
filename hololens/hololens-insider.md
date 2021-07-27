@@ -34,6 +34,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 | [View advanced diagnostic report in Settings on HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
 | [Offline Diagnostics notifications](#offline-diagnostics-notifications) | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
 | [Use only private store apps only for Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure the store app to show only apps from organization | IT Admin | 20348.1408 |
+| [Fixes and improvements](hololens-insider.md#fixes-and-improvements) | Fixes and improvements for HoloLens. | All | 20348.1408 |
 
 ### CSP changes for reporting HoloLens details
 
@@ -125,7 +126,7 @@ The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy e
 
 Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
-### Fixes and improvements:
+### Fixes and improvements
 
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
