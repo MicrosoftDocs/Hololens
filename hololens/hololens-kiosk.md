@@ -91,7 +91,7 @@ Kiosk mode determines which apps are available when a user signs in to the devic
 
 ## Steps in configuring kiosk mode for HoloLens
 
-Kiosk mode can be deployed for your organization's device via two methods. Kiosks deployed through Intune can be automatically deployed to the device, and provisioning packages can be applied to devices manually.
+Kiosk mode can be deployed for your organization's device via two methods. Kiosks configured through Intune can be automatically deployed to the device, and provisioning packages can be applied to devices manually.
 
 ### Using a MDM solution like Intune
 
@@ -117,11 +117,6 @@ To add apps to your app, add them using their AUMID. You can use [the AUMIDs of 
 
 > [!TIP]
 > If you are planning on using a user or user group to assign the kiosk profile, then consider the account that will [Enroll HoloLens in MDM](hololens-enroll-mdm.md). By using the same account for both enrollment and assignment the profile, you can guarantee the deployment.
-
-
-
-
-
 
 3. Experience kiosk mode on HoloLens when user signs in
 To validate the kiosk is assigned, it's time to sign into the device with a user to experience the kiosk. Be aware that unlocking the device and signing in are different and a fresh sign-in is required, users can sign out from the start menu. Once a user who is receiving the kiosk profile signs into the device they should be presented with the UI experience that you have configured.
