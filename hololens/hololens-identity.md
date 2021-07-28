@@ -121,7 +121,7 @@ Windows Hello for Business (which supports using a PIN to sign in) is supported 
 
 ### How is Iris biometric authentication implemented on HoloLens 2?
 
-HoloLens 2 supports Iris authentication. Iris is based on Windows Hello technology and is supported for use by both Azure Active Directory and Microsoft Accounts. Iris is implemented the same way as other Windows Hello technologies, and achieves biometrics security FAR of 1/100K.
+HoloLens 2 supports Iris authentication. Iris is based on Windows Hello technology and is supported for use by both Azure Active Directory and Microsoft Accounts. Iris is implemented the same way as other Windows Hello technologies, and achieves [biometrics security FAR of 1/100K](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello).
 
 See the [biometric requirements and specifications for Windows Hello](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information. Learn more about [Windows Hello](/windows-hardware/design/device-experiences/windows-hello) and [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
 
