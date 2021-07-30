@@ -40,10 +40,14 @@ Certificate installation currently supports .cer and .crt files. Device Owners c
 
 The certificate should now be installed on the device.
 
+![Certificate viewer in the Settings app under Certificates](images/certificate-viewer-device.jpg)
+
+![Picture showing how to use Certificate UI to install a certificate in Settings.](images/certificate-device-install.jpg)
+
 ## To remove a certificate:
 
 > [!WARNING]
-> Using Certificate Manager users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must also be removed by the same mechanism and cannot be removed from Certificate Manager. Although you can view MDM-deployed certificates in Certificate Manager, you cannot uninstall them in Certificate Manager. You must uninstall them through MDM.
+> Using Certificate Manager, users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must also be removed by the same mechanism and cannot be removed from Certificate Manager. Although you can view MDM-deployed certificates in Certificate Manager, you cannot uninstall them in Certificate Manager. You must uninstall them through MDM.
 
 1. Navigate to **Settings App > Update and Security > Certificates**.
 1. Search for the certificate by name in the search box.
@@ -52,7 +56,3 @@ The certificate should now be installed on the device.
 1. Select **Yes** when prompted for confirmation.
 
 
-
-![Certificate viewer in the Settings app under Certificates](images/certificate-viewer-device.jpg)
-
-![Picture showing how to use Certificate UI to install a certificate in Settings.](images/certificate-device-install.jpg)
