@@ -26,7 +26,7 @@ In Windows Holographic, version 20H2, we are adding a Certificate Manager in the
 
 To find a specific certificate in the list quickly, there are options to sort by name, store or expiration date. Users may also directly search for a certificate. To view individual certificate properties, select the certificate and click on **Info**. 
 
-Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User;  all other users can only install into Current User. Users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must also be removed by the same mechanism.
+Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User;  all other users can only install into Current User.
 
 ## To install a certificate: 
 
@@ -40,9 +40,11 @@ Certificate installation currently supports .cer and .crt files. Device Owners c
 
 The certificate should now be installed on the device.
 
-## To remove a certificate: 
->[!WARNING]
-> Although you can view MDM-deployed certificates in Certificate Manager, you cannot uninstall them in Certificate Manager. You must uninstall them through MDM.
+## To remove a certificate:
+
+> [!WARNING]
+> Using Certificate Manager users can only remove certificates installed directly from the Settings UI. If a certificate has been installed through other means, it must also be removed by the same mechanism and cannot be removed from Certificate Manager. Although you can view MDM-deployed certificates in Certificate Manager, you cannot uninstall them in Certificate Manager. You must uninstall them through MDM.
+
 1. Navigate to **Settings App > Update and Security > Certificates**.
 1. Search for the certificate by name in the search box.
 1. Select the certificate.
