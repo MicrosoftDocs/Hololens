@@ -34,7 +34,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 | [View advanced diagnostic report in Settings on HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
 | [Offline Diagnostics notifications](#offline-diagnostics-notifications) | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
 | [Use only private store apps only for Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure the store app to show only apps from organization | IT Admin | 20348.1408 |
-| [Low storage log collection improvements](#low-storage-log-collection-improvements) | Improvements to log collection scenarios during low storage situations. | IT Admin | 20348.1411 |
+| [Low storage log collection improvements](#low-storage-log-collection-improvements) | Improvements to log collection scenarios during low storage situations. | IT Admin | 20348.1412 |
 | [Fixes and improvements](hololens-insider.md#fixes-and-improvements) | Fixes and improvements for HoloLens. | All | 20348.1411 |
 
 ### CSP changes for reporting HoloLens details
