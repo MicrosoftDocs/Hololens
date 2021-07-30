@@ -40,7 +40,7 @@ Certificate installation currently supports .cer and .crt files. Device Owners c
 
 The certificate should now be installed on the device.
 
-![Certificate viewer in the Settings app under Certificates](images/certificate-viewer-device.jpg)
+![Certificate viewer in the Settings app under Certificates.](images/certificate-viewer-device.jpg)
 
 ![Picture showing how to use Certificate UI to install a certificate in Settings.](images/certificate-device-install.jpg)
 
@@ -54,5 +54,4 @@ The certificate should now be installed on the device.
 1. Select the certificate.
 1. Click **Remove**
 1. Select **Yes** when prompted for confirmation.
-
 
