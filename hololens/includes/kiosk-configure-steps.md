@@ -2,7 +2,7 @@
 
 Microsoft Intune kiosk template - Single App Kiosk.
 
-1. Create a configuration profile
+1. Create a configuration profile <br> 
 ![Create a configuration profile](./images/kiosk-steps/kiosk-template-sa-1.png)
 1. Choose kiosk template
 ![Create a kiosk profile](./images/kiosk-steps/kiosk-template-sa-2.png)
@@ -22,7 +22,7 @@ Microsoft Intune kiosk template - Single App Kiosk.
 
 Microsoft Intune kiosk template - Multi App Kiosk.
 
-1. Create a configuration profile
+1. Create a configuration profile  <br> 
 ![Create a configuration profile](./images/kiosk-steps/kiosk-template-sa-1.png)
 1. Choose kiosk template
 ![Create a kiosk profile](./images/kiosk-steps/kiosk-template-sa-2.png)
