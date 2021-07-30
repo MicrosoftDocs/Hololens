@@ -23,7 +23,6 @@ Microsoft Intune kiosk template - Single App Kiosk.
     <img alt="Leave options" src="./images/kiosk-steps/kiosk-template-sa-5.png"/>
 </kbd>
 1. Choose which groups / devices or users this configuration profile should get assigned to <br> 
-![Choose how to assign](./images/kiosk-steps/kiosk-template-sa-6.png)
 <kbd>
     <img alt="Choose how to assign" src="./images/kiosk-steps/kiosk-template-sa-6.png"/>
 </kbd>
