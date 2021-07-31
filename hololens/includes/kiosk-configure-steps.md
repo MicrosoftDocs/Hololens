@@ -8,7 +8,7 @@ Microsoft Intune kiosk template - Single App Kiosk.
 </kbd>
 1. Choose kiosk template <br> 
 <kbd>
-    <img alt="Create a kiosk profile" src="./images/kiosk-steps/kiosk-template-sa-2.png"/>
+    <img alt="Create a kiosk profile" src="./images/kiosk-steps/kiosk-template-sa-2.png" width="415" height="530" />
 </kbd>
 1. Choose whether single app or multiple app kiosk and also choose kind of user targeting for kiosk mode <br> 
 <kbd>
@@ -40,7 +40,7 @@ Microsoft Intune kiosk template - Multi App Kiosk.
 </kbd>
 1. Choose kiosk template <br> 
 <kbd>
-    <img alt="Create a kiosk profile" src="./images/kiosk-steps/kiosk-template-sa-2.png"/>
+    <img alt="Create a kiosk profile" src="./images/kiosk-steps/kiosk-template-sa-2.png" width="415" height="530" />
 </kbd>
 1. Choose whether single app or multiple app kiosk and also choose kind of user targeting for kiosk mode <br> 
 <kbd>
