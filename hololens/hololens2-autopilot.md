@@ -17,12 +17,14 @@ manager: jarrettr
 
 # Windows Autopilot for HoloLens 2
 
+> [!NOTE]
+> Autopilot configuration for HoloLens in Microsoft Endpoint Manager is transitioning from **Public Preview** to **General Availability**. All tenants will be able to setup Autopilot in the MEM admin center.
+
 Starting with Windows Holographic version 2004, HoloLens 2 supports Windows Autopilot [Self-Deploying Mode](/mem/autopilot/self-deploying) with Microsoft Intune (3rd party MDMs are not supported). Administrators can configure the out-of-box experience (OOBE) in Microsoft Endpoint Manager and enable end-users to prepare devices for business use with little to no interaction. This reduces inventory management overhead, cost of hands-on device preparation and support calls from employees during the setup experience. Learn more in the [Windows Autopilot](/mem/autopilot/windows-autopilot) documentation.
 
 Like for Surface devices, it is recommended that customers work with their Microsoft [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) (reseller or distributor) to get devices registered with the Autopilot service through Partner Center. Other methods for device registration are outlined in the [add device](/mem/autopilot/add-devices) documentation, though leveraging Microsoft's channel partners ensures the most effective end-to-end path.
 
-> [!NOTE]
-> As of 11/20/2020 Autopilot configuration for HoloLens in Microsoft Endpoint Manager is transitioning to **Public Preview**. Customers no longer need to enroll in the private preview and all tenants will be able to setup Autopilot in the MEM admin center.
+
 
 When a user starts the Autopilot self-deploying process, Autopilot completes the following steps:
 
@@ -324,3 +326,7 @@ To provide feedback or report issues, use one of the following methods:
 - If your device is registered to the Autopilot service and the profile is assigned on MEM portal, contact HoloLens [support](/hololens/) (see 'Support' card). Please open a support ticket and if applicable, include screenshots and logs by capturing [offline diagnostic logs](hololens-diagnostic-logs.md#offline-diagnostics) during the out-of-box-experience (OOBE).
 - To report an issue from the device, use the Feedback Hub app on your HoloLens. In Feedback Hub, select the **Enterprise Management** > **Device** category.
 - To provide general feedback on Autopilot for HoloLens, you can submit this [survey](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7vUmjNI0XhCp1T72ODD84xUMEM3TVJPOURBRkNVWkYwM0RWWEhJNVdJSi4u&wdLOR=cEF1F57F6-AD9B-4CCE-B919-AB5AE320A993)
+
+## Delete Autopilot devices
+
+You may wish to no longer use a device for Autopilot, or to register your devices to a different tenant. If you would like to do this, then read h[ow to delete Autopilot devices.](/mem/autopilot/add-devices#delete-autopilot-devices)
