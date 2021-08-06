@@ -39,7 +39,7 @@ Improvements and fixes in the update:
 - Fixed issue where Wi-Fi proxy can't be saved when Wi-Fi properties UI is launched from **Settings -> Network & Internet -> Status -> Properties**.
 - Addressed an issue around the removal of eSIM certificates across OS updates. This fix ensures that the eSIM certificates and related components are removed when updating to the 21H1 release.
 - Corrected an issue impacting preinstalled apps across OS resets.
-- Battery charging performance tuned to increase runtime when charging with increased CPU loading. While charging HoloLens 2 devices, if the device is detected to be running hot, the internal battery will charge more slowly to reduce heat. The positive tradeoff is that a device is less likely to shutdown due to thermal issues.  So the impact for the user is that the device runs longer.  If the device is idle and not heating up the charging will happen at the same rate as before.
+- Battery charging performance tuned to increase runtime when charging with increased CPU loading. While charging HoloLens 2 devices, if the device is detected to be running hot, the internal battery will charge more slowly to reduce heat. The positive tradeoff is that a device is less likely to shutdown due to thermal issues, with the impact is that the device runs longer. If the device is idle and not heating up the charging will happen at the same rate as before.
 
 ## Windows Holographic, version 20H2 – July 2021 Update
 
