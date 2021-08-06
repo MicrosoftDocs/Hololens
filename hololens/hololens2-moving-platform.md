@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 Moving Platform
-description: Commonly asked questions about the HoloLens 2 Industrial Edition
-keywords: HoloLens 2 purchasing options, HoloLens options, Industrial Edition
+description: How to use HoloLens on moving platforms
+keywords: moving platforms, dynamic motion, hololens, moving platform mode
 author: evmill
 ms.author: v-evmill
 ms.reviewer: yabahman
@@ -27,7 +27,7 @@ As of **Insider build 20348.1411** we have added beta support for tracking on lo
 
 HoloLens needs to be able to track your head position with [6 degrees of freedom](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (X, Y, Z translation and roll, pitch, yaw rotation) in order to show stable holograms. To do that, HoloLens tracks two similar pieces of information from two separate sources:
 
-1. Visible light cameras – which track the environment, e.g., the physical room in which you are using the HoloLens
+1. Visible light cameras – which track the environment, for example, the physical room in which you are using the HoloLens
 1. Inertial Measurement Unit (IMU), – which consists of an accelerometer, gyroscope, and magnetometer that tracks your head motion and orientation relative to Earth
 
 Information from these two sources is compounded to track your head position at a low latency and high enough frequency in order to render smooth holograms.
@@ -42,7 +42,7 @@ While Moving Platform Mode was developed to intelligently handle cases of inerti
 
 ### Known Limitations
 
-- The only supported environments for Moving Platform Mode (MPM) are large marine vessels experiencing low-dynamic motion. In other words, many common environments/situations are **not** yet supported (e.g., planes, trains, cars, bikes, buses, small boats, elevators, etc.) due to their high frequency motion and high levels of acceleration and [jerk](https://en.wikipedia.org/wiki/Jerk_(physics)).
+- The only supported environments for Moving Platform Mode (MPM) are large marine vessels experiencing low-dynamic motion. In other words, many common environments/situations are **not** yet supported (for example: planes, trains, cars, bikes, buses, small boats, elevators, etc.) due to their high frequency motion and high levels of acceleration and [jerk](https://en.wikipedia.org/wiki/Jerk_(physics)).
 - Holograms may not be as stable when MPM is enabled, especially when on choppy water.
 - Nothing prevents users from attempting to use MPM in unsupported environments, however, users may experience undesirable side-effects if the device is able to maintain tracking in the unsupported space. For example, with MPM, users may find it&#39;s possible to use in an elevator while changing floors, whereas that was previously impossible. Unfortunately, while MPM allows the device to maintain tracking, it does not handle map management so users will find that changing floors in an elevator will cause the device to confuse the upper and lower floors and create a map prone to worm holing.
 
@@ -61,14 +61,14 @@ To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-real
 1. Click on the **System** accordion on the Lefthand menu
 2. Click on the **Moving Platform Mode** page and check the **Moving Platform Mode** checkbox
 
-![](.\images\moving-platform-1.png) ![](.\images\moving-platform-2.png)
+![First image](.\images\moving-platform-1.png) ![Second image](.\images\moving-platform-2.png)
 
 3. When prompted with a warning, click **OK**
 
-![](.\images\moving-platform-3.png)
+![Third image](.\images\moving-platform-3.png)
 
 4. Reboot your device, which can be done either via the Device Portal **Power** menu at the top right or by issuing the following voice command &quot;Reboot the device&quot; and clicking &quot;Yes&quot;.
 
-![](.\images\moving-platform-4.png)
+![Fourth image](.\images\moving-platform-4.png)
 
-If you are unable to see the Moving Platform Mode option in Device Portal, then it likely means you are not yet on the proper build. Please see the [Prerequisites](#prerequisites) section.
+If you are unable to see the Moving Platform Mode option in Device Portal, then it likely means you are not yet on the proper build. See the [Prerequisites](#prerequisites) section.
