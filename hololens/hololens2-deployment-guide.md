@@ -82,10 +82,10 @@ We recommend the following steps for external HoloLens 2 deployment:
 ## Common concerns
 
 - [Ensuring clients can't communicate with one another](#ensure-that-external-clients-cant-communicate-with-one-another)
-- [Ensuring clients can't access company resources](#ensure-that-clients-do-not-have-access-to-company-resources)
+- [Ensuring clients can't access company resources](#ensure-that-clients-wont-have-access-to-company-resources)
 - [Hiding or restricting apps](#hidden-or-restricted-apps)
 - [Managing passwords for your clients](#password-management-for-your-clients) 
-- [Ensuring clients can't access chat history](#ensure-that-clients-do-not-have-access-to-chat-history)
+- [Ensuring clients can't access chat history](#ensure-that-clients-wont-have-access-to-chat-history)
 
 ### Ensure that external clients can't communicate with one another
 
