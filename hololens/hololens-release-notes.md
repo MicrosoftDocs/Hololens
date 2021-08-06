@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 06/17/2021
+ms.date: 08/10/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -28,7 +28,25 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 > [!IMPORTANT]
 > Due to a now resolved [known issue in our 21H1 build that was affecting Remote Assist users](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), we temporally paused the offering of Windows Holographic, version 21H1 updates. We had also changed the default Advanced Recovery Companion (ARC) build to the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). The ARC build will now resume targeting the 21H1 build.
 
+## Windows Holographic, version 21H1 - August 2021 Update
+
+- Build 20348.1014
+
+Improvements and fixes in the update:
+
+- Fixed an issue that prevented Xbox controllers from working in immersive applications with controller support.
+- Improved diagnostics for device update failures.
+
+## Windows Holographic, version 20H2 - August 2021 Update
+
+- Build 19041.1161
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H1.
+
 ## Windows Holographic, version 21H1 - July 2021 Update
+
 - Build 20348.1010
 
 Improvements and fixes in the update:
