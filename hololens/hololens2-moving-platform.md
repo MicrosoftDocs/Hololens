@@ -50,26 +50,25 @@ While Moving Platform Mode was developed to intelligently handle cases of inerti
 
 Beta support for Moving Platform Mode requires only a few prerequisites:
 
-1. Install [build 20348.1411 **by flashing via ARC**](https://docs.microsoft.com/en-us/hololens/hololens-insider#ffu-download-and-flash-directions)
-  1. **Important note** : It is necessary to flash your device at this time. Support for updating to this build will be added soon.
-  2. Note: This build is only available on the [Insider Dev Channel](https://docs.microsoft.com/hololens/hololens-insider#start-receiving-insider-builds) at this time
-2. Enable [Developer Mode and Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+1. Install build 20348.1411 or newer [by flashing the latest Insiders build via ARC](hololens-insider.md#ffu-download-and-flash-directions) or [enrolling and updating your device](hololens-insider.md#start-receiving-insider-builds).
+   - Note: This build is only available on the [Insider Dev Channel](https://docs.microsoft.com/hololens/hololens-insider#start-receiving-insider-builds) at this time.
+2. Enable [Developer Mode and Device Portal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 
 ## Enabling Moving Platform Mode
 
-To enable Moving Platform mode, first [enable Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
 1. Click on the **System** accordion on the Lefthand menu
 2. Click on the **Moving Platform Mode** page and check the **Moving Platform Mode** checkbox
 
-![](RackMultipart20210806-4-12bnebk_html_c5b5201648186819.png) ![](RackMultipart20210806-4-12bnebk_html_3df59e4b74b7cc35.png)
+![](.\images\moving-platform-1.png) ![](.\images\moving-platform-2.png)
 
 3. When prompted with a warning, click **OK**
 
-![](RackMultipart20210806-4-12bnebk_html_b947ee50880ec9db.png)
+![](.\images\moving-platform-3.png)
 
 4. Reboot your device, which can be done either via the Device Portal **Power** menu at the top right or by issuing the following voice command &quot;Reboot the device&quot; and clicking &quot;Yes&quot;.
 
-![](RackMultipart20210806-4-12bnebk_html_69ec113d49a9a475.png)
+![](.\images\moving-platform-4.png)
 
-If you are unable to see the Moving Platform Mode option in Device Portal, then it likely means you are not yet on the proper build. Please see the [Prerequisites](#_Prerequisites) section.
+If you are unable to see the Moving Platform Mode option in Device Portal, then it likely means you are not yet on the proper build. Please see the [Prerequisites](#prerequisites) section.
