@@ -81,13 +81,13 @@ We recommend the following for external HoloLens 2 deployment:
 
 ## Common concerns
 
-- [Clients cannot communicate with one another](#clients-cannot-communicate-with-one-another)
-- [Clients cannot access company resources](#clients-cannot-access-company-resources)
-- [Apps are hidden or restricted](#apps-are-hidden-or-restricted)
-- [Password management for your clients](#password-management-for-your-clients) 
-- [Clients cannot access chat history](#clients-cannot-access-chat-history)
+- [Ensuring clients cannot communicate with one another](#ensure-that-external-clients-cannot-communicate-with-one-another)
+- [Ensuring clients cannot access company resources](#ensure-that-clients-do-not-have-access-to-company-resources)
+- [Hiding or restricting apps](#hidden-or-restricted-apps)
+- [Managing passwords for your clients](#password-management-for-your-clients) 
+- [Ensuring clients cannot access chat history](#ensure-that-clients-do-not-have-access-to-chat-history)
 
-### Ensure that external clients do not have the ability to communicate with one another
+### Ensure that external clients cannot communicate with one another
 
 Remote Assist HoloLens to HoloLens calls are not supported. Clients will be able to search for, but can't communicate with each other. [Information barriers in Microsoft 365](/microsoft-365/compliance/information-barriers) can further restrict with whom a client can search and call. Another option is to use [Microsoft Teams scoped Directory Search](/MicrosoftTeams/teams-scoped-directory-search).
 
