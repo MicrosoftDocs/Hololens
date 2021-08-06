@@ -35,7 +35,8 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 | [Offline Diagnostics notifications](#offline-diagnostics-notifications) | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
 | [Use only private store apps only for Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure the store app to show only apps from organization | IT Admin | 20348.1408 |
 | [Low storage log collection improvements](#low-storage-log-collection-improvements) | Improvements to log collection scenarios during low storage situations. | IT Admin | 20348.1412 |
-| [Fixes and improvements](hololens-insider.md#fixes-and-improvements) | Fixes and improvements for HoloLens. | All | 20348.1411 |
+| [Moving Platforms](#moving-platforms) | Use HoloLens 2 on large dynamic moving platforms | All | 20348.1411 |
+| [Fixes and improvements](#fixes-and-improvements) | Fixes and improvements for HoloLens. | All | 20348.1411 |
 
 ### CSP changes for reporting HoloLens details
 
@@ -130,6 +131,12 @@ Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/
 ### Low storage log collection improvements
 
 In scenarios where a device seems to be low on disk space when diagnostic logs are collected, an additional report named **StorageDiagnostics.zip** will be created. The threshold of low storage is determined automatically by Windows [storage sense](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+
+### Moving Platforms
+
+As of **Insider build 20348.1411** we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you will be able to use your HoloLens 2 in previously inaccessible environments, like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
+
+To learn more about what is supported and how to enabled this new feature, [visit the moving platform page.](hololens2-moving-platform.md)
 
 ### Fixes and improvements
 
