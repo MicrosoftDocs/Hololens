@@ -55,10 +55,10 @@ We recommend the following steps for external HoloLens 2 deployment:
         1. [Assign device-based or user-based licenses](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) to this group.
         1. (Optional) You can target groups for MDM policies.
 
-1. Devices should be AAD joined to your tenant, [Auto Enrolled](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm), and configured through [Autopilot](/hololens/hololens2-autopilot).
+1. Devices should be AAD joined to your tenant, [auto enrolled](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm), and configured through [Autopilot](/hololens/hololens2-autopilot).
     1. The first user on the device will be the device owner.
     1. If the device is AAD joined, the user that performed the join is made device owner.
-    1. For more information, see [Device Owner](/hololens/security-adminless-os#device-owner).
+    1. For more information, see [device owner](/hololens/security-adminless-os#device-owner).
 1. [Tenant lock](/hololens/hololens-release-notes#tenantlockdown-csp-and-autopilot) the device so that it can only be joined by your tenant.
     1. See also [Tenant lock CSP](/windows/client-management/mdm/tenantlockdown-csp).
 1. [Configure Kiosk mode using global assigned access](/hololens/hololens-global-assigned-access-kiosk).
@@ -73,9 +73,9 @@ We recommend the following steps for external HoloLens 2 deployment:
     1. Go to Windows **Microsoft Store --> Remote Assist --> and Update App**.
     1. [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) - which allows automatic app updates - is enabled by default. Keep the device plugged in to receive updates.
 1. [Disable all settings pages](/hololens/settings-uri-list) except the network settings to allow users to connect to guest networks at client sites.
-1. [Manage HoloLens Updates](/hololens/hololens-updates)
+1. [Manage HoloLens updates](/hololens/hololens-updates)
     1. Option to [control OS updates](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) or allow to flow freely.
-1. [Common Device Restrictions](/hololens/hololens-common-device-restrictions).
+1. [Common device restrictions](/hololens/hololens-common-device-restrictions).
 
 <mark>  We should add a verb here.. and also a few lines below this list outlining what they achieve by going through all 11 of these "steps".  This way it reads as an actionable list with a clear cut outcome. </mark>
 
@@ -89,7 +89,7 @@ We recommend the following steps for external HoloLens 2 deployment:
 
 ### Ensure that external clients can't communicate with one another
 
-Remote Assist HoloLens to HoloLens calls aren't supported. Clients can search for, but can't communicate with each other. [Information barriers in Microsoft 365](/microsoft-365/compliance/information-barriers) can further restrict with whom a client can search and call. Another option is to use [Microsoft Teams scoped Directory Search](/MicrosoftTeams/teams-scoped-directory-search).
+Remote Assist HoloLens to HoloLens calls aren't supported. Clients can search for, but can't communicate with each other. [Information barriers in Microsoft 365](/microsoft-365/compliance/information-barriers) can further restrict with whom a client can search and call. Another option is to use [Microsoft Teams scoped directory search](/MicrosoftTeams/teams-scoped-directory-search).
 
  > [!NOTE]
 > Since single sign on is enabled, it is important to disable the browser using [Windows Defender Application Control (WDAC)](/hololens/windows-defender-application-control-wdac). If an external client opens the browser and uses the web version of Teams, the client will have access to your chat history.
@@ -112,7 +112,7 @@ The second option is to create a separate tenant that hosts clients (see Image 1
 
 ### Hidden or restricted apps
 
-[Kiosk Mode](/hololens/hololens-kiosk) and/or [Windows Defender Application Control (WDAC)](/hololens/windows-efender-application-control-wdac) are options for hiding and/or restricting applications.
+[Kiosk mode](/hololens/hololens-kiosk) and/or [Windows Defender Application Control (WDAC)](/hololens/windows-efender-application-control-wdac) are options for hiding and/or restricting applications.
 
 ### Password management for your clients
 
