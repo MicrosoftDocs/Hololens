@@ -21,9 +21,9 @@ appliesto:
 As of **Insider build 20348.1411** we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you will be able to use your HoloLens 2 in previously inaccessible environments, like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
 
 > [!NOTE]
-> This feature is currently only available via Windows [Insiders](https://docs.microsoft.com/en-us/hololens/hololens-insider).
+> This feature is currently only available via Windows [Insiders](hololens-insider.md).
 
-# Why Moving Platform Mode is Necessary
+## Why Moving Platform Mode is Necessary
 
 HoloLens needs to be able to track your head position with [6 degrees of freedom](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (X, Y, Z translation and roll, pitch, yaw rotation) in order to show stable holograms. To do that, HoloLens tracks two similar pieces of information from two separate sources:
 
@@ -51,7 +51,7 @@ While Moving Platform Mode was developed to intelligently handle cases of inerti
 Beta support for Moving Platform Mode requires only a few prerequisites:
 
 1. Install build 20348.1411 or newer [by flashing the latest Insiders build via ARC](hololens-insider.md#ffu-download-and-flash-directions) or [enrolling and updating your device](hololens-insider.md#start-receiving-insider-builds).
-   - Note: This build is only available on the [Insider Dev Channel](https://docs.microsoft.com/hololens/hololens-insider#start-receiving-insider-builds) at this time.
+   - Note: This build is currently only available on the [Insider Dev Channel](hololens-insider.md#start-receiving-insider-builds).
 2. Enable [Developer Mode and Device Portal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 
 ## Enabling Moving Platform Mode
