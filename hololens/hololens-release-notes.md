@@ -55,18 +55,20 @@ Improvements and fixes in the update:
 - File upload, download, rename and delete is now fixed when using https in all supported browsers.
 - Fixed issue where Wi-Fi proxy can't be saved when Wi-Fi properties UI is launched from **Settings -> Network & Internet -> Status -> Properties**.
 - Addressed an issue around the removal of eSIM certificates across OS updates. This fix ensures that the eSIM certificates and related components are removed when updating to the 21H1 release.
-- Corrected an issue impacting preinstalled apps across OS resets. 
-- Battery charging performance tuned to increase runtime when charging with increased CPU loading.
+- Corrected an issue impacting preinstalled apps across OS resets.
+- Battery charging performance tuned to increase runtime when charging with increased CPU loading. While charging HoloLens 2 devices, if the device is detected to be running hot, the internal battery will charge more slowly to reduce heat. The positive tradeoff is that a device is less likely to shutdown due to thermal issues, with the impact is that the device runs longer. If the device is running cool, the charge rate is unaffected.
 
 ## Windows Holographic, version 20H2 – July 2021 Update
+
 - Build 19041.1157
 
 Improvements and fixes in the update:
 
-- Device Portal has enhanced methods of notifying the customer when File Explorer encounters issues opening locked files. 
+- Device Portal has enhanced methods of notifying the customer when File Explorer encounters issues opening locked files.
 - File upload, download, rename and delete is now fixed when using https in all supported browsers.
 
 ## Windows Holographic, version 21H1 - June 2021 Update
+
 - Build 20348.1007
 
 ### OneDrive for work or school Camera Roll upload
@@ -91,9 +93,11 @@ We've added a new feature to the HoloLens 2 Settings app, which allows customers
 - This feature must be enabled for each user account on the device, and it can only actively upload files for the user who is currently signed-in to the device.
 - If you're taking photos or videos while watching the upload count on the Settings page in real-time, note that the pending file count may not change until the current file has completed uploading.
 - Upload will pause if your device falls asleep or is powered off. To ensure your pending uploads complete, actively use the device until the Settings page reads "OneDrive is up to date" or adjust your **Power & sleep** settings.
+
 ### Added support for some telemetry policies
 
 The following telemetry policies are now supported on the HoloLens 2:
+
 - ConfigureTelemetryOptInSettingsUx
 - DisableDeviceDelete
 - AllowDeviceNameInDiagnosticData
@@ -102,16 +106,19 @@ The following telemetry policies are now supported on the HoloLens 2:
 Both System\AllowTelemetry and System\ConfigureTelemetryOptInSettingsUx should be used together to have complete control on the Telemetry and behavior in the Settings app.
 
 Improvements and fixes in the update:
+
 - Fixes major video corruption with Color calibration.
 - Addresses an issue where text might be truncated in the Power menu.
 - Enables support for the RequirePrivateStoreOnly policy.
 
 ## Windows Holographic, version 20H2 – June 2021 Update
+
 - Build 19041.1154
 
 ### Added support for some telemetry policies
 
 The following telemetry policies are now supported on the HoloLens 2:
+
 - ConfigureTelemetryOptInSettingsUx
 - DisableDeviceDelete
 - AllowDeviceNameInDiagnosticData
@@ -122,9 +129,11 @@ Both System\AllowTelemetry and System\ConfigureTelemetryOptInSettingsUx should b
 We encourage you to try out our latest build, Windows Holographic, version 21H1.
 
 ## Windows Holographic, version 1903 - June 2021 Update
+
 - Build 18362.1116
 
 Improvements and fixes in the update:
+
 - This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H1.
 
 >[!IMPORTANT]
@@ -141,9 +150,9 @@ This update contains features for two target audiences; features that can be use
 >Today, Microsoft HoloLens 2 supports monthly servicing updates (bug and security fixes) for the following releases:
 >- Windows Holographic, version 20H2 (Build 19041.1128+)
 >- Windows Holographic, version 2004 (Build 19041.1103+)
->- Windows Holographic, version 1903 (Build 18362+) 
+>- Windows Holographic, version 1903 (Build 18362+)
 >
-> With the introduction of Windows Holographic version 21H1, **we are discontinuing monthly servicing updates for Windows Holographic version 1903**. This enables us to focus on more recent releases and continue to deliver valuable improvements. 
+> With the introduction of Windows Holographic version 21H1, **we are discontinuing monthly servicing updates for Windows Holographic version 1903**. This enables us to focus on more recent releases and continue to deliver valuable improvements.
 
 
 | Feature Name                                              | Short description                                                                      | Target Audience | 
