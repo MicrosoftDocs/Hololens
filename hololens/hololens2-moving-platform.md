@@ -58,8 +58,8 @@ Beta support for Moving Platform Mode requires only a few prerequisites:
 
 To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
-1. Click on the **System** accordion on the Left-hand menu
-2. Click on the **Moving Platform Mode** page and check the **Moving Platform Mode** checkbox
+1. Select the **System** accordion on the Left-hand menu
+2. Select the **Moving Platform Mode** page and check the **Moving Platform Mode** checkbox
 
 ![First image](.\images\moving-platform-1.png) ![Second image](.\images\moving-platform-2.png)
 
