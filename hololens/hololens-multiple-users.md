@@ -18,9 +18,7 @@ appliesto:
 
 It's common to share a HoloLens 2 device in some work environments, like clean rooms, surgical suites, etc. This article will outline the two different scenarios when using a HoloLens in a shared environment, and some best practices when doing so.
 
-## Shared device use cases
-
-### Share with multiple people, each using their own account
+## Share with multiple people, each using their own account
 
 This is the preferred and most secure identity use case for HoloLens 2 users. When they use their own Azure Active Directory (Azure AD) accounts, multiple users can each keep their own user settings and user data on the device. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.
 
@@ -49,7 +47,7 @@ To see a list of the device users or to remove a user from the device, go to **S
 - [Kiosk](hololens-kiosk.md) or [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to hide or restrict apps. 
 - Physical Management - ensure devices are charging between shifts.
 
-### Share with multiple people, all using the same account
+## Share with multiple people, all using the same account
 
 Multiple users can also share a HoloLens device while using a single user account. Although it is preferred for HoloLens users to log in to the device with their individual identities (Azure AD accounts), this is not an option in some organizations.
 
