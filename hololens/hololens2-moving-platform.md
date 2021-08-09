@@ -43,8 +43,8 @@ While Moving Platform Mode was developed to intelligently handle cases of inerti
 ### Known Limitations
 
 - The only supported environments for Moving Platform Mode (MPM) are large marine vessels experiencing low-dynamic motion. In other words, many common environments/situations are **not** yet supported due to their high frequency motion and high levels of acceleration and [jerk](https://en.wikipedia.org/wiki/Jerk_(physics)). For example: planes, trains, cars, bikes, buses, small boats, elevators, etc.
-- Holograms may not be as stable when MPM is enabled, especially when on choppy water.
-- Nothing prevents users from attempting to use MPM in unsupported environments, however, users may experience undesirable side-effects if the device is able to maintain tracking in the unsupported space. For example, with MPM, users may find it&#39;s possible to use in an elevator while changing floors, whereas that was previously impossible. Unfortunately, while MPM allows the device to maintain tracking, it does not handle map management. So users will find that changing floors in an elevator will cause the device to confuse the upper and lower floors and create a map prone to worm holing.
+- Holograms may wobble slightly when MPM is enabled, especially when on choppy water.
+- Nothing prevents users from attempting to use MPM in unsupported environments, however, users may experience undesirable side-effects if the device is able to maintain tracking in the unsupported space. For example, with MPM, users may find it&#39;s possible to use in an elevator while changing floors, whereas that was previously impossible. Unfortunately, while MPM allows the device to maintain tracking, it does not handle map management at this time. So users will find that changing floors in an elevator will cause the device to confuse the upper and lower floors and negatively affect map quality.
 
 ## Prerequisites
 
