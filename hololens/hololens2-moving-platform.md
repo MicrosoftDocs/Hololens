@@ -23,6 +23,11 @@ In **Insider build 20348.1411** we have added beta support for tracking on low-d
 > [!NOTE]
 > This feature is currently only available via Windows [Insiders](hololens-insider.md).
 
+This article covers:
+
+1. [Why Moving Platform is Necessary](#why-moving-platform-mode-is-necessary)
+1. [Enabling Moving Platform Mode](#enabling-moving-platform-mode)
+
 ## Why Moving Platform Mode is Necessary
 
 HoloLens needs to be able to track your head position with [6 degrees of freedom](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (X, Y, Z translation and roll, pitch, yaw rotation) in order to show stable holograms. To do that, HoloLens tracks two similar pieces of information from two separate sources:
