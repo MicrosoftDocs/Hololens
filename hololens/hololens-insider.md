@@ -30,7 +30,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 |-------------------------|----------------------------|--------------|------------------|
 | [CSP changes for reporting HoloLens details](#csp-changes-for-reporting-hololens-details) | New CSPs for to query data | IT Admins    | 20348.1403                 |
 | [Auto login policy controlled by CSP](#auto-login-policy-controlled-by-csp) | Used to log in an account automatically | IT Admins | 20348.1405 |
-| [Improved restart detection and notifications](#improved-restart-detection-and-notifications) | New enabled polices and UX for updates. | IT Admins | 20348.1405 |
+| [Improved update restart detection and notifications](#improved-update-restart-detection-and-notifications) | New enabled polices and UX for updates. | IT Admins | 20348.1405 |
 | [PFX file support for Certificate Manager](#pfx-file-support-for-certificate-manager) | Add PFX certs via Settings UI | End User | 20348.1405 |
 | [View advanced diagnostic report in Settings on HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
 | [Offline Diagnostics notifications](#offline-diagnostics-notifications) | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
@@ -95,7 +95,7 @@ On a device where this policy is configured, the user specified in the policy wi
 > - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior.
 > - Auto-logon is only supported for MSA and AAD users.
 
-### Improved restart detection and notifications
+### Improved update restart detection and notifications
 
 The user interface will be updated on HoloLens to enable targeted notifications for imminent restarts and automatic restarts. These can be controlled with existing policies that are available now on HoloLens. IT admins will have a more granular surface with which they can control restarts for HoloLens 2 while notifying users that a restart is scheduled to occur (including outside the maintenance window while respecting active hours).
 
