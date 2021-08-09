@@ -30,6 +30,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 |-------------------------|----------------------------|--------------|------------------|
 | [CSP changes for reporting HoloLens details](#csp-changes-for-reporting-hololens-details) | New CSPs for to query data | IT Admins    | 20348.1403                 |
 | [Auto login policy controlled by CSP](#auto-login-policy-controlled-by-csp) | Used to log in an account automatically | IT Admins | 20348.1405 |
+| [Improved restart detection and notifications](#improved-restart-detection-and-notifications) | New enabled polices and UX for updates. | IT Admins | 20348.1405 |
 | [PFX file support for Certificate Manager](#pfx-file-support-for-certificate-manager) | Add PFX certs via Settings UI | End User | 20348.1405 |
 | [View advanced diagnostic report in Settings on HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
 | [Offline Diagnostics notifications](#offline-diagnostics-notifications) | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
@@ -90,8 +91,25 @@ String value
 On a device where this policy is configured, the user specified in the policy will need to logon at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single auto-logon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To logon as a different user, the policy must first be disabled.
 
 > [!NOTE]
-> - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior. 
+>
+> - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior.
 > - Auto-logon is only supported for MSA and AAD users.
+
+### Improved restart detection and notifications
+
+The user interface will be updated on HoloLens to enable targeted notifications for imminent restarts and automatic restarts. These can be controlled with existing policies that are available now on HoloLens. IT admins will have a more granular surface with which they can control restarts for HoloLens 2 while notifying users that a restart is scheduled to occur (including outside the maintenance window while respecting active hours).
+
+The following policies were be added:
+
+- [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
+- [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
+- [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
 ### PFX file support for Certificate Manager
 
@@ -114,7 +132,7 @@ Now added in Windows Insider builds, there are two forms of audiovisual feedback
 ![Toast for collecting logs.](./images/logcollection1.jpg)
 
 ![Toast when log collection is complete.](./images/logcollection2.jpg)
- 
+
 Because users often use Offline Diagnostics as a fallback log gathering mechanism for when they don’t have access to a display, can’t log-in or are still in OOBE there will also be an audio cue played when logs are gathered. This sound will be played in addition to the toast notification.
 
 This new feature will be enabled when your device updates, and doesn’t need to be enabled or managed. In any event that this new feedback cannot be displayed or heard, Offline Diagnostics will still be generated.
@@ -142,8 +160,9 @@ In scenarios where a device seems to be low on disk space when diagnostic logs a
 
 > [!NOTE]
 > If you haven’t updated recently, please reboot your device to update state and get the latest build.
-> -	The “Reboot device” voice command works well. 
-> -	You can also choose the restart button in Settings/Windows Insider Program.
+>
+> - The “Reboot device” voice command works well.
+> - You can also choose the restart button in Settings/Windows Insider Program.
 >
 > We had a bug on the back-end that you may have encountered and this will get you back on track.
 
@@ -163,9 +182,9 @@ If you encounter an update error 0x80070490 when updating on the Dev or Beta cha
 
 #### Stage one - Release Preview
 
-1.	Settings, Update & Security, Windows Insider Program, select **Release Preview Channel**.
+1. Settings, Update & Security, Windows Insider Program, select **Release Preview Channel**.
 
-2.	Settings, Update & Security, Windows Update, **Check for updates**. After the update, continue on to Stage two.
+2. Settings, Update & Security, Windows Update, **Check for updates**. After the update, continue on to Stage two.
 
 #### Stage two - Dev Channel
 
@@ -179,9 +198,9 @@ To test with a flight signed ffu, you first have to flight unlock your device pr
 
 1. On PC:
     1. Download ffu to your PC from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
-    
+
     1. Install ARC (Advanced Recovery Companion) from the Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
-    
+
 1. On HoloLens - Flight Unlock: Open **Settings** > **Update & Security** > **Windows Insider Program** then sign up, reboot device.
 
 1. Flash FFU - Now you can flash the flight signed FFU using ARC.
