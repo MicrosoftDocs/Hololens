@@ -18,7 +18,7 @@ appliesto:
 
 # Moving Platform Mode on Low Dynamic Motion Moving Platforms
 
-As of **Insider build 20348.1411** we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you'll be able to use your HoloLens 2 in previously inaccessible environments like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
+In **Insider build 20348.1411** we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you'll be able to use your HoloLens 2 in previously inaccessible environments like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
 
 > [!NOTE]
 > This feature is currently only available via Windows [Insiders](hololens-insider.md).
@@ -42,7 +42,7 @@ While Moving Platform Mode was developed to intelligently handle cases of inerti
 
 ### Known Limitations
 
-- The only supported environments for Moving Platform Mode (MPM) are large marine vessels experiencing low-dynamic motion. In other words, many common environments/situations are **not** yet supported (for example: planes, trains, cars, bikes, buses, small boats, elevators, etc.) due to their high frequency motion and high levels of acceleration and [jerk](https://en.wikipedia.org/wiki/Jerk_(physics)).
+- The only supported environments for Moving Platform Mode (MPM) are large marine vessels experiencing low-dynamic motion. In other words, many common environments/situations are **not** yet supported due to their high frequency motion and high levels of acceleration and [jerk](https://en.wikipedia.org/wiki/Jerk_(physics)). For example: planes, trains, cars, bikes, buses, small boats, elevators, etc.
 - Holograms may not be as stable when MPM is enabled, especially when on choppy water.
 - Nothing prevents users from attempting to use MPM in unsupported environments, however, users may experience undesirable side-effects if the device is able to maintain tracking in the unsupported space. For example, with MPM, users may find it&#39;s possible to use in an elevator while changing floors, whereas that was previously impossible. Unfortunately, while MPM allows the device to maintain tracking, it does not handle map management. So users will find that changing floors in an elevator will cause the device to confuse the upper and lower floors and create a map prone to worm holing.
 
@@ -63,11 +63,11 @@ To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-real
 
 ![First image](.\images\moving-platform-1.png) ![Second image](.\images\moving-platform-2.png)
 
-3. When prompted with a warning, click **OK**
+3. When prompted with a warning, select **OK**
 
 ![Third image](.\images\moving-platform-3.png)
 
-4. Reboot your device, which can be done either via the Device Portal **Power** menu at the top right or by issuing the following voice command &quot;Reboot the device&quot; and clicking &quot;Yes&quot;.
+4. Reboot your device, which can be done either via the Device Portal **Power** menu at the top right or by issuing the following voice command &quot;Reboot the device&quot; and select &quot;Yes&quot;.
 
 ![Fourth image](.\images\moving-platform-4.png)
 
