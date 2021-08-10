@@ -29,7 +29,7 @@ Thanks to HoloLens 2 and Mixed Reality applications, now workers can do all list
 * Act with precision
 * Increase productivity
 
-Equipped with the HoloLens 2, workers can engage heads-up and hands free for longer with much more comfort. Workers can connect remotely with colleagues in real time and work together across an extensive holographic canvas overlaid in their physical environment.  The goal is to quickly resolve issues in the moment. Furthermore, as a result of built-in voice commands, eye tracking and world-anchoring, they can focus on safely completing tasks and minimizing errors.
+Equipped with the HoloLens 2, workers can engage heads-up and hands free for longer with more comfort. Workers can connect remotely with colleagues in real time and work together across an extensive holographic canvas overlaid in their physical environment.  The goal is to quickly resolve issues in the moment. Furthermore, as a result of built-in voice commands, eye tracking and world-anchoring, they can focus on safely completing tasks and minimizing errors.
 
 With HoloLens 2, companies in medicine, manufacturing, aeronautics, architecture, academia, and more are enjoying an immediate return on investment (ROI). In fact, 58 percent of Fortune 500 companies are using HoloLens. Frontline workers are the key beneficiaries due to a robust ecosystem of apps supported with the security, reliability, and scalability of Microsoft.
 
@@ -41,7 +41,7 @@ We hope this article inspires you to think of all the ways in which mixed realit
 
 Increased speed, fewer errors, and more confidence, these're the benefits of Microsoft Dynamic 365 Guides with HoloLens 2. 
 
-This MR app helps workers adapt to complex scenarios, everything from training, to assembly, to service, and repair. Workers of all experience levels can quickly learn and adapt. All the training can be done by picking up holographic parts and icons, reading contextual step-by-step instructions that move with them, and using <mark> easy, out-of-the box author branching to account for ever-changing conditions</mark>. For workers learning new and complex tasks, reply Guides for information.
+This MR app helps workers adapt to complex scenarios, everything from training, to assembly, to service, and repair. Workers of all experience levels can quickly learn and adapt. All the training can be done by picking up holographic parts and icons, reading contextual step-by-step instructions that move with them, and using <mark> easy, out-of-the box author branching to account for ever-changing conditions</mark>. For workers learning new and complex tasks, reply on Guides for information.
 
 ### Dynamics 365 Remote Assist for HoloLens 2/mobile devices
 
@@ -76,25 +76,25 @@ The Australian biotech company works to address depression and opioid alternativ
 
 With the MR technology, the company improved time to market and ensured critical business continuity. This shift also allowed for collaboration and helped to halve domestic travel demands, even with travel restrictions easing. 
 
-Better yet, MR catapulted the business forward. Experts and international partners now collaborate on HoloLens 2 devices, as opposed to making the trip to Australia. The company is also upskilling employees by tapping into remote experts. 
+Better yet, MR catapulted the business forward. Experts and international partners now collaborate on HoloLens 2 devices, as opposed to making the trip to Australia. The company is also up-skilling its employees by calling on remote experts. 
 
 In just over a year, quality, efficacy, efficiency, safety, collaboration, training, education, and better access to subject experts are all improved. And costs and resource constraints decreased. MedLab Clinical is optimistic about its future prognosis.
 
 ### Manufacturing
 
-Transform your workforce and build more agile factories. With MR apps on HoloLens 2, employees can quickly learn complex tasks. What's more, team members can collaborate from anywhere in real time. Mixed reality apps minimize operational disruption and keeps manufacturing running smoothly.
+Transform your workforce and build more agile factories. With MR apps on HoloLens 2, employees can quickly learn complex tasks. What's more, team members can collaborate from anywhere in real time. Mixed reality apps minimize operational disruptions and keep manufacturing running smoothly.
 
 #### L’Oréal
 
-The company equipped itself with Dynamics 365 Remote Assist and HoloLens 2. The goal is to install new industrial equipment, carry out maintenance and conduct audits using remote experts, all in real time. The result is transmission of knowledge along with performance optimization, time savings of 50%, cost reduction, and lessened environmental impact. Best of all, L’Oréal has happier employees. As travel was cut, they conducted audits remotely, which saved them from long trips, painful jet lag and fatigue.
+The company equipped itself with Dynamics 365 Remote Assist and HoloLens 2. The goal is to install new industrial equipment, carry out maintenance and conduct audits with remote experts, all in real time. The results are transmission of knowledge along with performance optimizations such as time savings of 50%, cost reduction, and lessened environmental impact. Best of all, L’Oréal has happier employees. With travel cuts, workers conducted audits remotely, which saved them from long trips, painful jet lags and work related fatigues.
 
 ### Education
 
-Improve learning results, such as test scores and knowledge retention. Revolutionize curriculum with experiential lesson plans that convey complex concepts in 3D. Equipped with MR apps on HoloLens 2, students can "learn by-doing" with newfound spatial awareness.
+Improve test scores and knowledge retention. Revolutionize curriculum with experiential lesson plans that convey complex concepts in 3D. Equipped with MR apps on HoloLens 2, students can "learn by-doing" with newfound spatial awareness.
 
 #### Case Western
 
-50 percent better, that's how much better than their peers. Case Western medical students learned anatomy using HoloLens 2. Donning HoloLens devices, their introductory two-week dissection was a revelation. Instead of missing nerves or destroying organs, they saw color-coordinated layers, gained spatial awareness, and explored with newfound clarity. Is the future of education here? The stuff of dreams? It is certainly a way for students to learn better, do faster, and retain far more knowledge from anywhere.
+50 percent better, that's how much better than their peers. Case Western medical students learned anatomy using HoloLens 2. Donning HoloLens devices, their introductory two-week dissection lesson was a revelation. Instead of missing nerves or destroying organs, they saw color-coordinated layers, gained spatial awareness, and explored with newfound clarity. Is the future of education here? The stuff of dreams? It is certainly a way for students to learn better, do faster, and retain far more knowledge from anywhere.
 
 **ROI:** 
 
@@ -102,16 +102,13 @@ Improve learning results, such as test scores and knowledge retention. Revolutio
 
 ### AEC (Architecture, Engineering, and Construction)
 
-Reimagine bridge inspection with Azure Remote Rendering and HoloLens. Bridge inspectors, dangling over the side of a structure, are soon to be a thing of the past. There are over 20,000 bridges in the state of Minnesota. Each one must be maintained if possible and replaced if necessary. The state uses Azure Remote Rendering with HoloLens 2 to see what's happening without being there. 
+Re-imagine bridge inspection with Azure Remote Rendering and HoloLens. Bridge inspectors, dangling over the side of a structure, are soon to be a thing of the past. There are over 20,000 bridges in the state of Minnesota. Each one must be maintained if possible and replaced if necessary. The state uses Azure Remote Rendering with HoloLens 2 to see what's happening without being there. 
 
 Thanks to digital twins, computer models replicate what's physically in the field, engineers can spot cracks and measure both their width and length. This can reduce overall time spent by 30 percent and expense by 10 percent. Keep the traffic flowing.
 
 **ROI:** 
 
 * $25,000 savings during design review.
-
-
-
 
 ## HoloLens 2 capabilities
 
