@@ -60,7 +60,7 @@ Now, frontline workers can collaborate with remote experts anytime and anywhere 
 
 Companies in healthcare, education, manufacturing, and AEC (architecture, engineering, and construction) are using HoloLens with great return on their investments.
 
-### HEALTHCARE
+### Healthcare
 
 #### Imperial College
 
