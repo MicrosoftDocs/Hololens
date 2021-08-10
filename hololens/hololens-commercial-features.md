@@ -64,7 +64,7 @@ Companies in healthcare, education, manufacturing, and AEC (architecture, engine
 
 #### Imperial College
 
-Virtual rounds keep teams safe, make examinations efficient, and help staffs communicate effectively. Now, it's one doctor, instead of four. Thanks to HoloLens 2, a doctor can huddle with other experts, call up images and content, review healthcare data, and consult X-rays. It's everything a doctor needs in one headset. Soon, HoloLens be come the norm instead of a novelty. 
+Virtual rounds keep teams safe, make examinations efficient, and help staffs communicate effectively. Now, it's one doctor, instead of four. Thanks to HoloLens 2, a doctor can huddle with other experts, call up images and content, review healthcare data, and consult X-rays. It's everything a doctor needs in one headset. Soon, HoloLens will be the norm instead of a novelty. 
 
 **ROI:** 
 
