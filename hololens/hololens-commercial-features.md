@@ -41,7 +41,7 @@ We hope this article inspires you to think of all the ways in which mixed realit
 
 Increased speed, fewer errors, and more confidence, these're the benefits of Microsoft Dynamic 365 Guides with HoloLens 2. 
 
-This MR app helps workers adapt to complex scenarios, everything from training, to assembly, to service, and repair. Workers of all experience levels can quickly learn and adapt. All the training can be done by picking up holographic parts and icons, reading contextual step-by-step instructions that move with them, and using <mark> easy, out-of-the box author branching to account for ever-changing conditions</mark>. For workers learning new and complex tasks, reply on Guides for information.
+This MR app helps workers adapt to complex scenarios, everything from training, to assembly, to service, and repair. Workers of all experience levels can quickly learn and adapt. All the training can be done by picking up holographic parts and icons, reading contextual step-by-step instructions that move with them, and using <mark> easy, out-of-the box author branching to account for ever-changing conditions</mark>. For workers learning new and complex tasks, they can reply on Guides for information.
 
 ### Dynamics 365 Remote Assist for HoloLens 2/mobile devices
 
@@ -49,7 +49,7 @@ Now, frontline workers can collaborate with remote experts anytime and anywhere 
 
 **ROI:**
 
-* Zero errors in the last two years; 90% less touch labor – Lockheed Martin
+* Zero error in the last two years; 90% less touch labor – Lockheed Martin
 * 70% less time needed for upskilling workers – Suntory
 * 50% less time needed for diagnosing and resolving issues – L’Oréal
 * 2.2 million yen saved (264 work hours) in travel costs – Musashi
@@ -64,7 +64,7 @@ Companies in healthcare, education, manufacturing, and AEC (architecture, engine
 
 #### Imperial College
 
-Virtual rounds keep teams safe, make examinations efficient, and help staff communicate effectively. Now, it's one doctor, instead of four. Thanks to HoloLens 2, a doctor can huddle with other experts, call up images and content, review healthcare data, and consult X-rays. It's everything a doctor needs in one headset. Soon, HoloLens won't be a novelty, but the norm. 
+Virtual rounds keep teams safe, make examinations efficient, and help staffs communicate effectively. Now, it's one doctor, instead of four. Thanks to HoloLens 2, a doctor can huddle with other experts, call up images and content, review healthcare data, and consult X-rays. It's everything a doctor needs in one headset. Soon, HoloLens be come the norm instead of a novelty. 
 
 **ROI:** 
 
@@ -72,17 +72,17 @@ Virtual rounds keep teams safe, make examinations efficient, and help staff comm
 
 #### Medlab Clinical
 
-The Australian biotech company works to address depression and opioid alternatives to pain management. During the pandemic, it pivoted to remote work using cloud computing. What's more, to support its specialized lab operations, it turned to Microsoft Dynamics 365 Remote Assist on HoloLens 2. 
+An Australian biotech company works to address depression and opioid alternatives to pain management. During the pandemic, it pivoted to remote work using cloud computing. Furthermore, to support its specialized lab operations, it turned to Microsoft Dynamics 365 Remote Assist on HoloLens 2. 
 
 With the MR technology, the company improved time to market and ensured critical business continuity. This shift also allowed for collaboration and helped to halve domestic travel demands, even with travel restrictions easing. 
 
 Better yet, MR catapulted the business forward. Experts and international partners now collaborate on HoloLens 2 devices, as opposed to making the trip to Australia. The company is also up-skilling its employees by calling on remote experts. 
 
-In just over a year, quality, efficacy, efficiency, safety, collaboration, training, education, and better access to subject experts are all improved. And costs and resource constraints decreased. MedLab Clinical is optimistic about its future prognosis.
+In just over a year, quality, efficacy, efficiency, safety, collaboration, training, education, and better access to subject experts all improved, with costs and resource constraints decreased. MedLab Clinical is optimistic about its future prognosis.
 
 ### Manufacturing
 
-Transform your workforce and build more agile factories. With MR apps on HoloLens 2, employees can quickly learn complex tasks. What's more, team members can collaborate from anywhere in real time. Mixed reality apps minimize operational disruptions and keep manufacturing running smoothly.
+Transform your workforce and build more agile factories. With MR apps on HoloLens 2, employees can quickly learn complex tasks. Team members can collaborate from anywhere in real time. Mixed reality apps minimize operational disruptions and keep manufacturing running smoothly.
 
 #### L’Oréal
 
@@ -94,7 +94,7 @@ Improve test scores and knowledge retention. Revolutionize curriculum with exper
 
 #### Case Western
 
-50 percent better, that's how much better than their peers. Case Western medical students learned anatomy using HoloLens 2. Donning HoloLens devices, their introductory two-week dissection lesson was a revelation. Instead of missing nerves or destroying organs, they saw color-coordinated layers, gained spatial awareness, and explored with newfound clarity. Is the future of education here? The stuff of dreams? It is certainly a way for students to learn better, do faster, and retain far more knowledge from anywhere.
+50 percent better, that's how much better than their peers. Case Western medical students learned anatomy using HoloLens 2. Donning HoloLens devices, their introductory two-week dissection lesson was a revelation. Instead of missing nerves or destroying organs, they saw color-coordinated layers, gained spatial awareness, and explored with newfound clarity. Is the future of education stuff of dreams? It is certainly a way for students to learn better, do faster, and retain far more knowledge from anywhere.
 
 **ROI:** 
 
@@ -102,9 +102,9 @@ Improve test scores and knowledge retention. Revolutionize curriculum with exper
 
 ### AEC (Architecture, Engineering, and Construction)
 
-Re-imagine bridge inspection with Azure Remote Rendering and HoloLens. Bridge inspectors, dangling over the side of a structure, are soon to be a thing of the past. There are over 20,000 bridges in the state of Minnesota. Each one must be maintained if possible and replaced if necessary. The state uses Azure Remote Rendering with HoloLens 2 to see what's happening without being there. 
+Re-imagine bridge inspection with Azure Remote Rendering and HoloLens. Bridge inspectors, dangling over the side of a structure, are soon to be a thing of the past. There are over 20,000 bridges in the state of Minnesota. Each one must be maintained when needed and replaced if necessary. The state uses Azure Remote Rendering with HoloLens 2 to see what's happening without being there. And keep the traffic flowing with safety in mind.
 
-Thanks to digital twins, computer models replicate what's physically in the field, engineers can spot cracks and measure both their width and length. This can reduce overall time spent by 30 percent and expense by 10 percent. Keep the traffic flowing.
+Thanks to digital twins, computer models replicate what's physically in the field, engineers can spot cracks and measure both their width and length. This can reduce overall time spent by 30 percent and expense by 10 percent. 
 
 **ROI:** 
 
