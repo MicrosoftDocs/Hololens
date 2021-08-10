@@ -18,7 +18,38 @@ appliesto:
 
 # Update HoloLens 2
 
-HoloLens uses Windows Update, just like other Windows 10 devices. Your HoloLens will automatically download and install system updates whenever it is plugged-in to power and connected to the Internet, even when it is in standby.
+## Overview
+
+We’re always working on new features. Bug fixes. And security updates. As these updates are ready, we’ll share them with you.
+
+HoloLens uses Windows Update, just like other Windows 10 devices. Your HoloLens will automatically download and install system updates whenever it is plugged-in to power and connected to the Internet, even when it is in standby. 
+
+To ensure your HoloLens is always updated, leave it plugged in with the charger that came with it. (Not a phone charger. And not a PC power cord.) You also want your HoloLens connected to the internet. This way, it will automatically download and install system updates. 
+
+With Windows Update service, you’ll control multiple aspects of the update process. Like which devices get which updates at what time. This control is helpful because you can roll out updates to a subset of HoloLens devices for testing. Then, roll out updates to the remaining ones. Or, you can define different update schedules for different types of updates.
+
+## Types of updates
+
+For HoloLens, you can automatically manage two types of updates. 
+
+- Feature updates. These are released two times a year.
+- Quality updates. These include critical security updates. 
+And they’re released monthly. Or as required.
+
+Use Update/AllowAutoUpdate to manage scanning, downloading and installations. 
+
+## Scheduling updates
+
+You can also configure an update schedule. It can be on a particular day. Or every day. And you can set it for a particular time, too. For instance, at 5 p.m ., or outside of active hours.
+
+Finally, a few words about planning your update strategy. We support update deferrals. So, you can decide how long to wait after Microsoft releases an update to install that update on devices.
+
+In fact, there’s a long-term service branch that disallows updates until you complete your testing. 
+
+Sometimes, a company likes to try all the new features first to make sure everything works. And that there are no bugs. Once they’ve confirmed that all is good, they roll out the updates to the entire company.  
+By associating subsets of your devices – known as update rings – 
+with different deferral policies, you can coordinate an update rollout strategy for your organization.
+
 
 This article will walk through HoloLens tools for:
 
@@ -26,10 +57,6 @@ This article will walk through HoloLens tools for:
 - checking for updates
 - manually updating HoloLens
 - rolling back to an older update
-
-## Check your operating system version (build number)
-
-You can verify the system version number, (build number) by opening the Settings app and selecting **System** > **About**.
 
 ## Check for updates and manually update
 
@@ -45,6 +72,9 @@ While your HoloLens is installing the update, it will display spinning gears and
 
 HoloLens applies one update at a time.  If your HoloLens is more than one version behind the latest you may need to run through the update process multiple times to get it fully up to date.
 
+## Check your operating system version (build number)
+
+You can verify the system version number, (build number) by opening the Settings app and selecting **System** > **About**.
 ## Go back to a previous version
 
 In some cases, you might want to go back to a previous version of the HoloLens software. The recommended steps are:

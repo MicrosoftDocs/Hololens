@@ -17,6 +17,18 @@ manager: jarrettr
 
 # Windows Autopilot for HoloLens 2
 
+## Overview
+To deploy at scale, we recommend getting started with Windows Autopilot. It’s considered “low touch” in that it dramatically simplifies setting up HoloLens – for both IT and end users. 
+
+IT administrators can create an Autopilot profile and assign it to a group of devices. With this, they can preconfigure HoloLens policies (and make it so that the users can avoid the licensing screens). Then they’re able to push apps, (more) policies and configurations. So, with the first boot, the HoloLens devices are ready within minutes – and the user doesn’t have to do a thing. 
+
+One note, though. You first have to configure Auto-enrollment. 
+
+Auto-enrollment is a “no touch” solution. It enrolls corporate devices to your organization’s Azure Active Directory tenant and mobile device management (MDM) system. 
+
+Think of a “tenant” as a house. When you ring the doorbell, Azure Active Directory looks at you and verifies that you are who you claim you are. With that confirmation, you’re able to enter. Once inside, the MDM, like Microsoft Intune, lets you know where you’re allowed to go within the house.
+
+## Self-deploying mode
 > [!NOTE]
 > Autopilot configuration for HoloLens in Microsoft Endpoint Manager is transitioning from **Public Preview** to **General Availability**. All tenants will be able to setup Autopilot in the MEM admin center.
 

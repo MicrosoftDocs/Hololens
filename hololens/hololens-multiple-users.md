@@ -16,8 +16,17 @@ appliesto:
 ---
 
 # Share your HoloLens with multiple people
+ 
+## Overview
+Businesses often invest in a number of shared HoloLens devices. Since it’s impractical to buy a headset for every factory worker, there’s typically a “vending machine” of HoloLens devices.
 
-It's common to share one HoloLens with many people or to have many people share a set of HoloLens devices.  This article describes the different ways in which you can share a device.
+There’s a lot of sensitive data on factory floors. New risk points that are introduced are key points of consideration – because the possibility of failure is high. Here’s how HoloLens mitigates the risk.
+
+Security with HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of a locked-down experience: 
+
+- Workers can check out a HoloLens to perform a certain task. Thanks to Microsoft Intune and other provisioning profiles, you can be certain that a worker uses HoloLens only in the way it’s intended. For instance, they can use Remote Assist, but they can’t pull up Web browsers, games, Word, etc.
+
+The results are impressive. Even in the most sensitive of environments, information sharing and visuals are unique to the end-user’s eyes, so collaboration can flourish. Imagine a trans-oceanic, real-time collaboration using Remote Assist. This brings new heights of interaction – yet it doesn’t impact information disclosure risk.
 
 ## Share with multiple people, each using their own account
 

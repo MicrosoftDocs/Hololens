@@ -16,12 +16,22 @@ appliesto:
 
 # Windows Defender Application Control - WDAC
 
-WDAC allows an IT Admin to configure their devices to block the launch of apps on devices. This is different than methods of device restriction such as Kiosk mode, where  the user is presented with a UI that hides the apps on the device but they can still be launched. While WDAC is implemented, the apps are still visible in the All Apps list but WDAC stops those apps and processes from being able to be launched by the device user.
+## Overview
+HoloLens enables people to work better, collaborate more closely, and  do things they’ve never done before. Because of this, it’s used in business for very specific reasons.
 
-A device may be assigned more than one WDAC policy. If multiple WDAC policies are set on a system, most restrictive ones take effect. 
+To ensure it’s used for its intended purpose, IT administrators may want to block the store. Or use kiosk mode, a front-facing curtain, so users may only see certain things. One example of this is a defense company wanting to prevent leaks.
+And that’s where Windows Defender Application Control comes into play. It’s a software-based security layer.
+
+WDAC, for short, protects against malware and untrusted software. And it ensures that only approved code – code that you know – can be run.
+
+WDAC allows you to configure HoloLens to block the launch of apps. This is different from Kiosk mode, where the UI hides the apps but they can still be launched. 
+
+With WDAC, you can see the apps – but they can’t be launched.
 
 > [!NOTE]
 > When end users attempt to launch an app that is blocked by WDAC, on HoloLens they will not receive a notification about not being able to launch that app.
+
+A device may be assigned more than one WDAC policy. If multiple WDAC policies are set on a system, most restrictive ones take effect. 
 
 The following is a guide for users to learn how to [use WDAC and Windows PowerShell to allow or block apps on HoloLens 2 devices with Microsoft Intune](/mem/intune/configuration/custom-profile-hololens).
 
@@ -77,5 +87,4 @@ If an app is not on this list, then a user may use Device Portal, connected to a
 1. Within the Installed Apps panel, use the dropdown to select the installed app. 
 1. Locate the PackageRelativeID. 
 1. Copy app characters before the !, these characters will be your PackageFamilyName.
-
 

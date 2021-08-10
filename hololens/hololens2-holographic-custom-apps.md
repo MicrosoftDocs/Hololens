@@ -33,3 +33,20 @@ If you're looking for either developer method of app installation for HoloLens 2
 - [Using Visual Studio to deploy and debug Apps](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
 See our [guide](holographic-custom-apps.md) if you'd like to deploy custom apps on HoloLens (1st gen).
+
+## Manage LOB apps
+
+First, what is a line of business app?
+
+Line of business – or LOB for short – means a product, or products, that serve a particular customer transaction or business need. 
+
+In industries like insurance, “line of business” also has a regulatory and accounting definition to meet a statutory set of insurance policies. 
+
+You’ll find LOB apps in a wide range of organizations. They’re valued because they solve problems unique to each business. 
+
+And when you sideload an app, you deploy an app package to HoloLens.
+
+A provisioning package – also known by the abbreviation “.ppkg” – is a container for a collection of configuration settings. 
+
+With Windows 10, you can create provisioning packages that let you quickly, and efficiently, configure a device without having to install a new image.
+
