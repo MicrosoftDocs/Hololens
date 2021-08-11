@@ -25,6 +25,8 @@
 #### [Use your voice to operate HoloLens](hololens-cortana.md)
 #### [Find, open, and save files on HoloLens](holographic-data.md)
 #### [Create mixed reality photos and videos](holographic-photos-and-videos.md)
+#### [New Settings app](hololens-new-settings.md)
+#### [New Microsoft Edge](hololens-new-edge.md)
 ### Manage applications
 #### [Find, install, and uninstall applications](holographic-store-apps.md)
 #### [Manage custom apps for HoloLens 2](hololens2-holographic-custom-apps.md)
@@ -32,6 +34,7 @@
 #### [Improve visual quality and comfort](hololens-calibration.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
 #### [HoloLens environment considerations](hololens-environment-considerations.md)
+#### [Moving Platforms](hololens2-moving-platform.md)
 ### Connect your HoloLens 2
 #### [Connect HoloLens to a network](hololens-network.md)
 #### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
