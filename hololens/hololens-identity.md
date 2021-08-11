@@ -1,11 +1,11 @@
 ---
-title: Manage user identity and sign-in for HoloLens
-description: Learn how to manage user identity, multi-user support, security, enterprise authentication, and sign-in for HoloLens devices.
+title: Manage user identity and login for HoloLens
+description: Learn how to manage user identity, multi-user support, security, enterprise authentication, and sign in for HoloLens devices.
 keywords: HoloLens, user, account, AAD, Azure AD, adfs, microsoft account, msa, credentials, reference
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
-author: scooley
-ms.author: scooley
-ms.date: 10/6/2020
+author: qianw211    
+ms.author: v-qianwen
+ms.date: 8/10/2021
 ms.prod: hololens
 ms.custom: 
 - CI 111456
@@ -14,22 +14,22 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-manager: jarrettr
+manager: sekerawa
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ---
 
-# Manage user identity and sign-in for HoloLens
+# Manage user identity and login for HoloLens
 
 > [!NOTE]
 > This article is a technical reference for IT Pros and tech enthusiasts. If you're looking for HoloLens set up instructions, read "[Setting up your HoloLens (1st gen)](hololens1-start.md)" or "[Setting up your HoloLens 2](hololens2-start.md)".
 
 ## Let’s talk about setting up user identity for HoloLens 2
 
-Like other Windows devices, HoloLens always operates under a user context. There is always a user identity and HoloLens treats identity in almost the same manner as a Windows 10 device. Signing in during setup creates a user profile on HoloLens that stores apps and data. The same account also provides Single Sign-on for apps, such as Edge or Dynamics 365 Remote Assist, by using the Windows Account Manager APIs. 
+Like other Windows devices, HoloLens always operates under a user context. There is always a user identity. HoloLens treats identity in almost the same manner as a Windows 10 device. Signing in during setup creates a user profile on HoloLens that stores apps and data. The same account also provides Single Sign-on for apps, such as Edge or Dynamics 365 Remote Assist, by using the Windows Account Manager APIs. 
 
-HoloLens supports several kinds of user identities. You can choose any one of these three account types, but out of the box, we strongly recommend Azure AD as it’s best for managing devices. Only Azure AD accounts support multiple users. 
+HoloLens supports several kinds of user identities. You can choose any one of these three account types, but we strongly recommend Azure AD as it’s best for managing devices. Only Azure AD accounts support multiple users. 
 
 | Identity type | Accounts per device | Authentication options |
 | --- | --- | --- |
@@ -46,7 +46,7 @@ Cloud-connected accounts (Azure AD and MSA) offer more features because they can
 
 ## Setting up users
 
-There are two ways to set up a new user on the HoloLens. The most common way is during the HoloLens out-of-box experience (OOBE). If using Azure Active Directory, [other users can log in](#setting-up-multi-user-support-azure-ad-only) after OOBE using their Azure AD credentials. HoloLens devices that are initially set up with a MSA or local account during OOBE will not support multiple users. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
+There are two ways to set up a new user on the HoloLens. The most common way is during the HoloLens out-of-box experience (OOBE). If using Azure Active Directory, [other users can log in](#setting-up-multi-user-support-azure-ad-only) after OOBE using their Azure AD credentials. HoloLens devices that are initially set up with an MSA or local account during OOBE will not support multiple users. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
 
 If you use an enterprise or organizational account to sign in to HoloLens, HoloLens enrolls in the organization's IT infrastructure. This enrollment allows your IT Admin to configure Mobile Device Management (MDM) to send group policies to your HoloLens.
 
@@ -56,13 +56,13 @@ By default, as for other Windows 10 devices, you'll have to sign in again when H
 
 ### Linked accounts
 
-As in the Desktop version of Windows, you can link additional web account credentials to your HoloLens account. Such linking makes it easier to access resources across or within apps (such as the Store) or to combine access to personal and work resources. After you connect an account to the device, you can grant permission to use the device to apps so that you don't have to sign in to each app individually.
+As in the Desktop version of Windows, you can link other web account credentials to your HoloLens account. Such linking makes it easier to access resources across or within apps (such as the Store) or to combine access to personal and work resources. After you connect an account to the device, you can grant permission to use the device to apps so that you don't have to sign in to each app individually.
 
 Linking accounts does not separate the user data created on the device, such as images or downloads.  
 
 ### Setting up multi-user support (Azure AD only)
 
-HoloLens supports multiple users from the same Azure AD tenant. To use this feature, you must use an account that belongs to your organization to set up the device. Subsequently, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user. 
+HoloLens supports multiple users from the same Azure AD tenant. To use this feature, you must use an account that belongs to your organization to set up the device. After, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user. 
 
 >[!IMPORTANT]
 > The first user on the device is considered the device owner, except in the case of Azure AD Join, [learn more about device owners](security-adminless-os.md#device-owner).
@@ -74,13 +74,13 @@ Devices set up with Azure AD accounts will not allow signing in to the device wi
 > [!NOTE]
 > **HoloLens (1st gen)** began supporting multiple Azure AD users in the [Windows 10 April 2018 Update](/windows/mixed-reality/release-notes-april-2018) as part of [Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
-### Multiple users listed on Sign in screen
+### Multiple users are listed on Sign-in screen
 
-Previously the Sign In screen showed only the most recently signed in user, as well as an 'Other user' entry point. We have received customer feedback that this not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
+Previously the sign-In screen showed only the most recently signed in user, and an 'Other user' entry point. We have received customer feedback that it's not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
 
-Introduced in [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), when selecting **Other user** which is located to the right of the PIN entry field, the Sign in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other users page via the **Add account** button.
+Introduced in [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), when selecting **Other user** which is located to the right of the PIN entry field, the Sign-in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other user's page via the **Add account** button.
 
-When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign in screen for this user.
+When in the **Other users** menu, the **Other users** button will display the last user signed into the device. Select this button to return to the sign-in screen for this user.
 
 ![Sign-in screen default](./images/multiusers1.jpg)
 
@@ -102,7 +102,7 @@ If your app requires a specific account type that hasn't been linked previously,
 
 ## Enterprise and other authentication
 
-If your app uses other types of authentication, such as NTLM, Basic, or Kerberos, you can use [Windows Credential UI](/uwp/api/Windows.Security.Credentials.UI) to collect, process, and store the user's credentials. The user experience for collecting these credentials is very similar to other cloud-driven account interrupts, and appears as a child app on top of your 2D app or briefly suspends a Unity app to show the UI.
+If your app uses other types of authentication, such as NTLM, Basic, or Kerberos, you can use [Windows Credential UI](/uwp/api/Windows.Security.Credentials.UI) to collect, process, and store the user's credentials. The user experience for collecting these credentials is similar to other cloud-driven account interrupts, and appears as a child app on top of your 2D app or briefly suspends a Unity app to show the UI.
 
 ## Deprecated APIs
 
@@ -112,7 +112,7 @@ One way in which developing for HoloLens differs from developing for Desktop is 
 
 ### Is Windows Hello for Business supported on HoloLens (1st Gen)?
 
-Windows Hello for Business (which supports using a PIN to sign in) is supported for HoloLens (1st Gen). To allow Windows Hello for Business PIN sign-in on HoloLens:
+Windows Hello for Business (which supports using a PIN to sign in) is supported for HoloLens (1st Gen). To allow Windows Hello for Business PIN sign in on HoloLens:
 
 1. The HoloLens device must be [managed by MDM](hololens-enroll-mdm.md).
 1. You must enable Windows Hello for Business for the device. ([See instructions for Microsoft Intune.](/intune/windows-hello))
@@ -142,9 +142,9 @@ HoloLens 2 provides many different options for authentication, including FIDO2 s
 Yes, you can manually remove it in Settings.
 
 
-### How does the type of account affect sign-in behavior?
+### How does the type of account affect sign in behavior?
 
-If you apply policies for sign-in, the policy is always respected. If no policy for sign-in is applied, these are the default behaviors for each account type:
+If you apply policies for sign in, the policy is always respected. If no policy for login is applied, these are the default behaviors for each account type:
 
 - **Azure AD**: asks for authentication by default, and configurable by **Settings** to no longer ask for authentication.
 - **Microsoft account**: lock behavior is different allowing automatic unlock, however sign in authentication is still required on reboot.

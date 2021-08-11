@@ -2,13 +2,13 @@
 title: Manage custom apps for HoloLens 2
 description: Learn how to install, uninstall, and side load custom holographic apps on HoloLens 2 devices using the Device Portal and Visual Studio.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
-ms.date: 01/21/2021
-manager: yannisle
+ms.date: 8/11/2021
+manager: sekerawa
 keywords: hololens, hololens 2, sideload, side load, side-load, store, uwp, app, install
 ms.prod: hololens
 ms.sitesec: library
-author: joyjaz
-ms.author: v-jjaswinski
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
 ms.custom: 
@@ -20,7 +20,7 @@ appliesto:
 
 # Manage custom apps for HoloLens 2
 
-HoloLens supports many existing applications from the Microsoft Store, as well as new apps built specifically for HoloLens. 
+HoloLens supports many existing applications from the Microsoft Store, and new apps built specifically for HoloLens. 
 
 For more information about store apps, see [Manage apps with the store](holographic-store-apps.md).
 
@@ -34,19 +34,19 @@ If you're looking for either developer method of app installation for HoloLens 2
 
 See our [guide](holographic-custom-apps.md) if you'd like to deploy custom apps on HoloLens (1st gen).
 
-## Manage LOB apps
+## Manage line of business (LOB) apps
 
-First, what is a line of business app?
+What is a line of business (LOB) app?
 
-Line of business – or LOB for short – means a product, or products, that serve a particular customer transaction or business need. 
+Line of business, or LOB for short, means a product or products that serve a particular customer transaction or business need. 
 
-In industries like insurance, “line of business” also has a regulatory and accounting definition to meet a statutory set of insurance policies. 
+In industries like insurance, line of business (LOB) also has a regulatory and accounting definition to meet a statutory set of insurance policies. 
 
-You’ll find LOB apps in a wide range of organizations. They’re valued because they solve problems unique to each business. 
+You’ll find LOB apps in a wide range of organizations. LOB apps are valued because they solve problems unique to each business. 
 
-And when you sideload an app, you deploy an app package to HoloLens.
+When you sideload an app, you deploy an app package to HoloLens.
 
 A provisioning package – also known by the abbreviation “.ppkg” – is a container for a collection of configuration settings. 
 
-With Windows 10, you can create provisioning packages that let you quickly, and efficiently, configure a device without having to install a new image.
+With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 
