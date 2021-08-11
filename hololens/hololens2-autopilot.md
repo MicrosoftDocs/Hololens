@@ -96,7 +96,7 @@ For information about how to register devices and configure profiles, see [2. Re
      - Run eye-calibration
      - Establish network connection
 
-- Windows Holographic, version 20H2 supports [Tenant lockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot), which locks a device to a tenant and  ensures that the device remains bound to that tenant in case of accidental or intentional resets or wipes.  
+- Windows Holographic, version 20H2 supports [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot), which locks a device to a tenant and  ensures that the device remains bound to that tenant in case of accidental or intentional resets or wipes.  
 
 - Ensure that the devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune Portals. Note that "Convert all targeted devices to Autopilot" feature is not supported on HoloLens at the moment.  
 
@@ -270,7 +270,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 
    <br/><img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
 
-## Tenant lockdown CSP and Autopilot
+## Tenantlockdown CSP and Autopilot
 
 HoloLens 2 devices support TenantLockdown CSP as of Windows Holographic, version 20H2. This CSP keeps devices on the organization's tenant by locking them to that tenant even through device reset or reflash.
 
