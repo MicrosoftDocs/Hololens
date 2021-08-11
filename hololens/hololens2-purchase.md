@@ -2,10 +2,10 @@
 title: Where to buy HoloLens 2
 description: List of Global ADR contacts and countries available.
 keywords: HoloLens 2 purchasing options, international purchase, international reseller, ADR
-author: joyjaz
-ms.author: v-jjaswinski
+author: qianw211
+ms.author: v-qianwen
 ms.reviewer: skerawala
-ms.date: 7/08/2021
+ms.date: 8/03/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -26,11 +26,12 @@ HoloLens 2 is now available in some countries outside of the US, along with some
 
 | HoloLens 2 Edition| Supported Market |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | US, Canada, Germany, France, UK, Ireland, China, Japan, Australia, Italy, New Zealand, Netherlands, Switzerland, Spain, Austria, Sweden, Finland, Norway, Denmark, Belgium, Portugal, Poland, Singapore, Hong Kong, Taiwan, Thailand, Vietnam, Malaysia and South Korea |
-| HoloLens 2 with Remote Assist | Australia, Japan, Canada, US, Austria, Belgium, Denmark, Finland, France, Germany, Italy, Netherlands, Norway, Spain, Sweden, Switzerland, UK, and Ireland <sup>1</sup> 
-| HoloLens 2 Industrial Edition *(at launch)* | US, Canada, Germany, France, UK, Ireland, China, Japan, Australia, Italy, New Zealand, Netherlands, Switzerland, Spain, Austria, Sweden, Finland, Norway, Denmark, Belgium, Portugal, Poland, Singapore, Hong Kong, Taiwan, Thailand, Vietnam, Malaysia and South Korea |
-| HoloLens 2 Development Edition | Canada, Germany, France, UK, Ireland, Japan, Australia, Italy, Switzerland, and New Zealand |
-- <sup>1</sup> This list is dynamic, check back for updates
+| HoloLens 2 | Australia, Austria, Belgium, Canada, China, Denmark, Finland, France, Germany, Hong Kong, Ireland, Italy, Japan, Malaysia, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam  |
+| HoloLens 2 with Remote Assist | Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Hong Kong, Ireland, Italy, Japan, Korea, Malaysia, Netherlands, New Zealand, Norway, Singapore, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam  <sup>1</sup> 
+| HoloLens 2 Industrial Edition *(at launch)* | Australia, Austria, Belgium, Canada, China, Denmark, Finland, France, Germany, Hong Kong, Ireland, Italy, Japan, Malaysia, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam  |
+| HoloLens 2 Development Edition | Australia, Canada, France, Germany, Ireland, Italy, Japan, New Zealand, Switzerland, and UK |
+
+&nbsp;&nbsp;&nbsp;<sup>1</sup> This list is dynamic, check back for updates
 
 ## Find an authorized HoloLens 2 reseller
 See the below tables for HoloLens 2 availability and purchase options by region.
