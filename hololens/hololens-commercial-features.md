@@ -41,7 +41,7 @@ We hope this article inspires you to think of all the ways in which mixed realit
 
 Increased speed, fewer errors, and more confidence, these're the benefits of Microsoft Dynamic 365 Guides with HoloLens 2. 
 
-This MR app helps workers adapt to complex scenarios, everything from training, to assembly, to service, and repair. Workers of all experience levels can quickly learn and adapt. All the training can be done by picking up holographic parts and icons, reading contextual step-by-step instructions that move with them, and using <mark> easy, out-of-the box author branching to account for ever-changing conditions</mark>. For workers learning new and complex tasks, they can reply on Guides for information.
+This MR app helps workers adapt to complex scenarios, everything from training, to assembly, to service, and repair. Workers of all experience levels can quickly learn and adapt. All the training can be done by picking up holographic parts and icons, reading contextual step-by-step instructions that move with them. Easy and out-of-the box [author branching](/dynamics365/mixed-reality/guides/pc-app-branching) can accommodate the different learning paths, while taking into account changes in workflow. For workers learning new and complex tasks, they can reply on Guides for information.
 
 ### Dynamics 365 Remote Assist for HoloLens 2/mobile devices
 
