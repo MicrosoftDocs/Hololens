@@ -1,5 +1,5 @@
 ---
-title: External Clients Deployment Guide
+title: Deploy cloud connected HoloLens 2 to external clients
 description: Deployment guide for HoloLens 2 for External Clients (with Remote assist as an example)
 ms.prod: hololens
 ms.sitesec: library
@@ -10,12 +10,12 @@ ms.localizationpriority: medium
 ms.date: 8/6/2021
 ms.custom: 
 ms.reviewer: 
-manager: laurawi
+manager: sekerawa
 appliesto:
 - HoloLens 2
 ---
 
-# External clients
+# Deploy cloud connected HoloLens 2 to external clients
 
 This guide is a supplement to the [Cloud Connected Deployment Guide](hololens2-cloud-connected-overview.md). It's used in situations where your organization wants to ship HoloLens 2 devices to an external client's facility for short or long-term use. The external client will log into the HoloLens 2 device using credentials provided by your organization, and use [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview) to contact your experts. This guide provides [general HoloLens 2 deployment recommendations](#general-deployment-recommendations) that are applicable to most external HoloLens 2 deployment scenarios and [common concerns](#common-concerns) that customers have when deploying Remote Assist for external use. 
 
@@ -49,20 +49,21 @@ See [Learn more about Remote Assist](/hololens/hololens2-cloud-connected-overvie
 We recommend the following steps for external HoloLens 2 deployment:
 
 1. Use the [latest HoloLens OS release](https://aka.ms/hololens2download) as your baseline build.
-1. Assign user-based or device-based licenses:
-    1. User-based and device-based licenses both follow the following steps:
-        1. [Create a group in AAD and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) for HoloLens/RA users.
-        1. [Assign device-based or user-based licenses](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) to this group.
-        1. (Optional) You can target groups for MDM policies.
+1. Assign user-based or device-based licenses by following the steps below:
+    1. [Create a group in AAD and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) for HoloLens/RA users.
+    1. [Assign device-based or user-based licenses](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) to this group.
+    1. (Optional) Target groups for [Mobile device management (MDM)](hololens-enroll-mdm.md) policies.
 
-1. Devices should be AAD joined to your tenant, [auto enrolled](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm), and configured through [Autopilot](/hololens/hololens2-autopilot).
+1. Join AAD devices to your tenant, [auto enroll](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm), and configure through [Autopilot](/hololens/hololens2-autopilot). For more information, see [device owner](/hololens/security-adminless-os#device-owner).
     1. The first user on the device will be the device owner.
     1. If the device is AAD joined, the user that performed the join is made device owner.
-    1. For more information, see [device owner](/hololens/security-adminless-os#device-owner).
+    
 1. [Tenant lock](/hololens/hololens-release-notes#tenantlockdown-csp-and-autopilot) the device so that it can only be joined by your tenant.
     1. See also [Tenant lock CSP](/windows/client-management/mdm/tenantlockdown-csp).
+
 1. [Configure Kiosk mode using global assigned access](/hololens/hololens-global-assigned-access-kiosk).
-1. We recommend disabling the following (optional) capabilities:
+
+1. Disable the following (optional) capabilities:
     1. Ability to put the device into developer mode [here](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock).
     1. Ability to connect the HoloLens to a PC to copy date [disable USB](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection).
        > [!NOTE]
@@ -75,9 +76,9 @@ We recommend the following steps for external HoloLens 2 deployment:
 1. [Disable all settings pages](/hololens/settings-uri-list) except the network settings to allow users to connect to guest networks at client sites.
 1. [Manage HoloLens updates](/hololens/hololens-updates)
     1. Option to [control OS updates](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) or allow to flow freely.
-1. [Common device restrictions](/hololens/hololens-common-device-restrictions).
+1. Set [common device restrictions](/hololens/hololens-common-device-restrictions).
 
-<mark>  We should add a verb here.. and also a few lines below this list outlining what they achieve by going through all 11 of these "steps".  This way it reads as an actionable list with a clear cut outcome. </mark>
+<mark>  Now your external clients are ready to use their HoloLens 2. </mark>
 
 ## Common concerns
 
