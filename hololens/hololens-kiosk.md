@@ -57,6 +57,9 @@ Applies only if you are planning to use runtime provisioning packages or creatin
 - An assigned access profile defines which applications are displayed in start menu in kiosk mode. You can define multiple profiles in same XML structure, which can be referenced later.
 - An assigned access configuration references a profile and target user(s) of that profile, for example, a specific user, or AAD group or visitor, etc. You can define multiple configurations in same XML structure depending on complexity of your usage scenarios (see supported scenarios section below).
 - To learn more, refer to [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp).
+- [XML Sample HoloLens Kiosks](hololens-kiosk-reference.md#kiosk-xml-code-samples)
+
+## Security considerations
 
 Kiosk mode determines which apps are available when a user signs in to the device. However, kiosk mode is not a security method. Kiosk mode only controls what applications are shown on start menu or are automatically launched on user sign-in. You can combine kiosk mode with options mentioned below if there are specific security related needs:
 
@@ -66,34 +69,28 @@ Kiosk mode determines which apps are available when a user signs in to the devic
 
 ## Supported scenarios for kiosk mode based on identity type
 
-### For users who sign-in to HoloLens are either Local accounts or MSA
+### For users who sign-in as either Local account or MSA
 
 | **Desired kiosk experience** | **Recommended solution** | **Remarks** |
 | --- | --- | --- |
-| Every user who signs in gets kiosk experience. | [Configure Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | &nbsp; |
+| Every user who signs in gets kiosk experience. | [Configure multiple app Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | &nbsp; |
 | Specific user who signs in gets kiosk experience. | [Configure single or multiple app assigned access profile (as required) specifying name of specific user.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | For single app kiosk mode, only local user account or MSA account is supported on HoloLens. <br> For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
 
-### For users who sign-in to HoloLens using AAD accounts
+### For users who sign-in as AAD account
 
 | **Desired kiosk experience** | **Recommended solution** | **Remarks** |
 | --- | --- | --- |
-| Every user who signs in gets kiosk experience. | [Configure Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | &nbsp; |
-| Every user who signs in gets kiosk experience except certain users. | [Configure Global Assigned Access profile by excluding certain users (who must be device owners)](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners). | &nbsp; |
+| Every user who signs in gets kiosk experience. | [Configure multiple app Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | &nbsp; |
+| Every user who signs in gets kiosk experience except certain users. | [Configure multiple app Global Assigned Access profile by excluding certain users (who must be device owners)](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners). | &nbsp; |
 | Every AAD user gets separate kiosk experience specific for that user. | [Configure assigned access configuration for each user specifying their AAD account name.](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-2-aad-users-or-more) | &nbsp; |
-| Users in different AAD groups experience kiosk mode that is for their group only. | [Configure assigned access configuration for each desired AAD group.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-2-aad-groups-or-more) | • When a user signs-in and HoloLens is connected with Internet, if that user is found to be a member of AAD group for which kiosk configuration exists, user gets to experience kiosk for that AAD group. <br> • [If there is no internet available when user sign-in, then user will experience HoloLens failure mode behavior.](hololens-kiosk-reference.md#kiosk-mode-behavior-changes-for-handling-of-failures) <br> • If internet availability is not guaranteed when user signs-in and AAD group based kiosk needs to be used, consider using AADGroupMembershipCacheValidityInDayspolicy. |
+| Users in different AAD groups experience kiosk mode that is for their group only. | [Configure assigned access configuration for each desired AAD group.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-2-aad-groups-or-more) | • When a user signs-in and HoloLens is connected with Internet, if that user is found to be a member of AAD group for which kiosk configuration exists, user gets to experience kiosk for that AAD group. <br> • [If there is no internet available when user sign-in, then user will experience HoloLens failure mode behavior.](hololens-kiosk-reference.md#kiosk-mode-behavior-changes-for-handling-of-failures) <br> • If internet availability is not guaranteed when user signs-in and AAD group based kiosk needs to be used, [consider using AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk). |
 | Users who need to use HoloLens for temporary purposes get kiosk experience. | [Configure assigned access configuration for visitors](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • Temporary user account is automatically created by HoloLens on sign-in and is removed when temporary user signs out. <br> • Consider enabling [visitor auto-login policy](hololens-kiosk-reference.md#enable-visitor-autologon). |
-
-
-
-
-
-
 
 ## Steps in configuring kiosk mode for HoloLens
 
 Kiosk mode can be deployed for your organization's device via two methods. Kiosks configured through Microsoft Intune can be automatically deployed to the device, and provisioning packages can be applied to devices manually.
 
-Here are the following ways to configure:
+Here are the following ways to configure, select the tab matching the process you'd like to use.
 
 1. Microsoft Intune kiosk template
 1. Microsoft Intune custom template
