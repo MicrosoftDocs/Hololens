@@ -90,8 +90,8 @@
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 ### [Common device restrictions](hololens-common-device-restrictions.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
-### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
 ### [HoloLens Kiosk reference information](hololens-kiosk-reference.md)
+### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
 ### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
 ### [Page Settings CSP and URIs for HoloLens](settings-uri-list.md)
 ## Network & Connectivity
