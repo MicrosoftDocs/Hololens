@@ -177,7 +177,7 @@ You can find directions for upgrading to the commercial suite in the [holographi
 
 ![Image that shows Configuration of Kiosk Mode in Intune](images/aad-kioskmode.png)
 
-For other MDM services, check your provider's documentation for instructions. Refer to the [HoloLens kiosk](hololens-kiosk.md#using-a-mdm-solution-like-intune) instructions if you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service.
+For other MDM services, check your provider's documentation for instructions. Refer to the [HoloLens kiosk](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) instructions if you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service.
 
 ## Certificates and Authentication
 
