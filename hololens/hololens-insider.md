@@ -30,6 +30,7 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 |-------------------------|----------------------------|--------------|------------------|
 | [CSP changes for reporting HoloLens details](#csp-changes-for-reporting-hololens-details) | New CSPs for to query data | IT Admins    | 20348.1403                 |
 | [Auto login policy controlled by CSP](#auto-login-policy-controlled-by-csp) | Used to log in an account automatically | IT Admins | 20348.1405 |
+| [Improved update restart detection and notifications](#improved-update-restart-detection-and-notifications) | New enabled polices and UX for updates. | IT Admins | 20348.1405 |
 | [PFX file support for Certificate Manager](#pfx-file-support-for-certificate-manager) | Add PFX certs via Settings UI | End User | 20348.1405 |
 | [Smart Retry for app updates](#smart-retry-for-app-updates) | Allows IT Admins to scheduled retries to update apps. | IT Admins | 20348.1405 |
 | [View advanced diagnostic report in Settings on HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
@@ -92,8 +93,25 @@ String value
 On a device where this policy is configured, the user specified in the policy will need to logon at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single auto-logon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To logon as a different user, the policy must first be disabled.
 
 > [!NOTE]
-> - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior. 
+>
+> - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior.
 > - Auto-logon is only supported for MSA and AAD users.
+
+### Improved update restart detection and notifications
+
+Between active hours and install time policies, it is possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior the reboot being initiated and they can delay the reboot in accordance with IT policy.
+
+The following update policies were be added:
+
+- [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
+- [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
+- [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
 ### PFX file support for Certificate Manager
 
@@ -120,7 +138,7 @@ Now added in Windows Insider builds, there are two forms of audiovisual feedback
 ![Toast for collecting logs.](./images/logcollection1.jpg)
 
 ![Toast when log collection is complete.](./images/logcollection2.jpg)
- 
+
 Because users often use Offline Diagnostics as a fallback log gathering mechanism for when they don’t have access to a display, can’t log-in or are still in OOBE there will also be an audio cue played when logs are gathered. This sound will be played in addition to the toast notification.
 
 This new feature will be enabled when your device updates, and doesn’t need to be enabled or managed. In any event that this new feedback cannot be displayed or heard, Offline Diagnostics will still be generated.
@@ -155,8 +173,9 @@ To learn more about what is supported and how to enabled this new feature, [visi
 
 > [!NOTE]
 > If you haven’t updated recently, please reboot your device to update state and get the latest build.
-> -	The “Reboot device” voice command works well. 
-> -	You can also choose the restart button in Settings/Windows Insider Program.
+>
+> - The “Reboot device” voice command works well.
+> - You can also choose the restart button in Settings/Windows Insider Program.
 >
 > We had a bug on the back-end that you may have encountered and this will get you back on track.
 
@@ -176,9 +195,9 @@ If you encounter an update error 0x80070490 when updating on the Dev or Beta cha
 
 #### Stage one - Release Preview
 
-1.	Settings, Update & Security, Windows Insider Program, select **Release Preview Channel**.
+1. Settings, Update & Security, Windows Insider Program, select **Release Preview Channel**.
 
-2.	Settings, Update & Security, Windows Update, **Check for updates**. After the update, continue on to Stage two.
+2. Settings, Update & Security, Windows Update, **Check for updates**. After the update, continue on to Stage two.
 
 #### Stage two - Dev Channel
 
