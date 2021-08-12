@@ -26,6 +26,8 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 We're excited to start flighting new features to Windows Insiders again. New builds will be flighting to the Dev and Beta Channels for the latest updates. We will continue to update this page as we add more features and updates to our Windows Insider builds. Get excited and ready to mix these updates into your reality.
 
+This one’s about the improved troubleshooting and device reports, some fixed bugs in kiosk mode and the certificate viewer, the expanded manageability surface and the increased update reliability. Our new flagship feature of this feature update coming to HoloLens is our Moving Platform Mode.
+
 | Feature                 | Description                | User or Scenario | Build introduced |
 |-------------------------|----------------------------|--------------|------------------|
 | [CSP changes for reporting HoloLens details](#csp-changes-for-reporting-hololens-details) | New CSPs for to query data | IT Admins    | 20348.1403                 |
