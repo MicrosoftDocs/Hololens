@@ -100,14 +100,14 @@ Microsoft Intune kiosk template - Multi App Kiosk.
 
 1. Create a custom configuration profile <br>
 <kbd>
-    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-custom-1.png"/>
+    <img alt="Create a custom configuration profile" src="../images/kiosk-steps/kiosk-custom-1.png"/>
 </kbd>
 
 <br>
 
 2. Specify name of custom configuration profile and click on “Add” in “Configuration settings” section to add OMA-URI settings.
 <kbd>
-    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-custom-2.png"/>
+    <img alt="Name and add" src="../images/kiosk-steps/kiosk-custom-2.png"/>
 </kbd>
 
 <br>
@@ -120,7 +120,7 @@ Microsoft Intune kiosk template - Multi App Kiosk.
     1. Select the save button to save the setting and configuration.
 
 <kbd>
-    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-custom-3.png"/>
+    <img alt="Specify OMA-URI settings" src="../images/kiosk-steps/kiosk-custom-3.png"/>
 </kbd>
 
 <br>
