@@ -95,3 +95,44 @@ Microsoft Intune kiosk template - Multi App Kiosk.
 7. Review and create to save configuration profile
 8. Perform MDM sync starting from either device or Intune to apply configuration to device. [Sync devices from Intune](/mem/intune/remote-actions/device-sync#sync-a-device) or on device via **Settings -> Accounts -> Work or school ->** select the connected account **-> Info -> Sync**
 9. Sign in as the target user to experience kiosk.
+
+# [Intune Custom profile](#tab/intunecustom)
+
+1. Create a custom configuration profile <br>
+<kbd>
+    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-custom-1.png"/>
+</kbd>
+
+<br>
+
+2. Specify name of custom configuration profile and click on “Add” in “Configuration settings” section to add OMA-URI settings.
+<kbd>
+    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-custom-2.png"/>
+</kbd>
+
+<br>
+
+3. Specify name of OMA-URI settings.
+
+    1. In OMA-URI textbox, enter **./Device/Vendor/MSFT/AssignedAccess/Configuration**
+    1. Choose Data type as **String**.
+    1. In value textbox, copy-paste the assigned access configuration xml (see reference links for examples based on your scenario and update as needed before copy-pasting).
+    1. Select the save button to save the setting and configuration.
+
+<kbd>
+    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-custom-3.png"/>
+</kbd>
+
+<br>
+
+4. Choose which groups / devices or users this configuration profile should get assigned to.
+
+<kbd>
+    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-custom-4.png"/>
+</kbd>
+
+<br>
+
+5. Review and create to save configuration profile.
+1. Perform MDM sync starting from either device or Intune to apply configuration to device. [Sync devices from Intune](/mem/intune/remote-actions/device-sync#sync-a-device) or on device via **Settings -> Accounts -> Work or school ->** select the connected account **-> Info -> Sync**
+1. Sign in as the target user to experience kiosk.
