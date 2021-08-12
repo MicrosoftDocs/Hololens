@@ -95,6 +95,6 @@ Here are the following ways to configure, select the tab matching the process yo
 1. [Microsoft Intune single app kiosk template](hololens-kiosk.md?tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens)
 1. [Microsoft Intune multi app kiosk template](hololens-kiosk.md?tabs=uimak#steps-in-configuring-kiosk-mode-for-hololens)
 1. [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)
-1. Runtime provisioning
+1. [Runtime provisioning](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)
 
 [!INCLUDE[](includes/kiosk-configure-steps.md)]
