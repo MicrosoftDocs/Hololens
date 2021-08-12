@@ -92,9 +92,9 @@ Kiosk mode can be deployed for your organization's device via two methods. Kiosk
 
 Here are the following ways to configure, select the tab matching the process you'd like to use.
 
-1. [Microsoft Intune single app kiosk template](hololens-kiosk.md&tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens)
-1. [Microsoft Intune multi app kiosk template](hololens-kiosk.md&tabs=uimak#steps-in-configuring-kiosk-mode-for-hololens)
-1. [Microsoft Intune custom template](hololens-kiosk.md&tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)
+1. [Microsoft Intune single app kiosk template](hololens-kiosk.md?tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens)
+1. [Microsoft Intune multi app kiosk template](hololens-kiosk.md?tabs=uimak#steps-in-configuring-kiosk-mode-for-hololens)
+1. [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)
 1. Runtime provisioning
 
 [!INCLUDE[](includes/kiosk-configure-steps.md)]
