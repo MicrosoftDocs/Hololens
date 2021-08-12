@@ -99,9 +99,9 @@ On a device where this policy is configured, the user specified in the policy wi
 
 ### Improved update restart detection and notifications
 
-The user interface will be updated on HoloLens to enable targeted notifications for imminent restarts and automatic restarts. These can be controlled with existing policies that are available now on HoloLens. IT admins will have a more granular surface with which they can control restarts for HoloLens 2 while notifying users that a restart is scheduled to occur (including outside the maintenance window while respecting active hours).
+Between active hours and install time policies, it is possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior the reboot being initiated and they can delay the reboot in accordance with IT policy.
 
-The following policies were be added:
+The following update policies were be added:
 
 - [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
 - [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
