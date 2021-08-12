@@ -146,7 +146,7 @@ Provisioning package multi app kiosk
 1. On the Start page select **Provision HoloLens devices.**
 
 <kbd>
-    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-provision-1.png"/>
+    <img alt="Selecting provision HoloLens" src="../images/kiosk-steps/kiosk-provision-1.png"/>
 </kbd>
 
 <br>
@@ -154,7 +154,7 @@ Provisioning package multi app kiosk
 3. Select **Provision HoloLens 2 devices,** then select next.
 
 <kbd>
-    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-provision-2.png"/>
+    <img alt="Select HoloLens 2" src="../images/kiosk-steps/kiosk-provision-2.png"/>
 </kbd>
 
 <br>
@@ -164,7 +164,7 @@ Provisioning package multi app kiosk
 5. In the bottom left of the screen, select **Switch to advanced editor.** Confirm switching to the advanced editor by selecting **Yes.**
 
 <kbd>
-    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-provision-2.png"/>
+    <img alt="Switch to advanced editor" src="../images/kiosk-steps/kiosk-provision-2.png"/>
 </kbd>
 
 <br>
@@ -172,7 +172,7 @@ Provisioning package multi app kiosk
 6. On the left hand side, expand Runtime settings -\&gt; AssignedAccess and select **MultiAppAssignedAccess**.
 
 <kbd>
-    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-provision-3.png"/>
+    <img alt="select MultiAppAssignedAccess" src="../images/kiosk-steps/kiosk-provision-3.png"/>
 </kbd>
 
 <br>
@@ -182,7 +182,7 @@ Provisioning package multi app kiosk
 8. Select **Export** , then **Provisioning Package**.
 
 <kbd>
-    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-provision-4.png"/>
+    <img alt="Export package" src="../images/kiosk-steps/kiosk-provision-4.png"/>
 </kbd>
 
 <br>
@@ -190,7 +190,7 @@ Provisioning package multi app kiosk
 9. Change owner type to **IT Admin**.
 
 <kbd>
-    <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-provision-5.png"/>
+    <img alt="Exporting as IT Admin" src="../images/kiosk-steps/kiosk-provision-5.png"/>
 </kbd>
 
 <br>
