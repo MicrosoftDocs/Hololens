@@ -17,7 +17,7 @@ appliesto:
 
 # Deploy cloud connected HoloLens 2 to external clients
 
-This guide is a supplement to the [Cloud Connected Deployment Guide](hololens2-cloud-connected-overview.md). It's used in situations where your organization wants to ship HoloLens 2 devices to an external client's facility for short or long-term use. The external client will log into the HoloLens 2 device using credentials provided by your organization, and use [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview) to contact your experts. This guide provides [general HoloLens 2 deployment recommendations](#general-deployment-recommendations) that are applicable to most external HoloLens 2 deployment scenarios and [common concerns](#common-concerns) that customers have when deploying Remote Assist for external use. 
+This guide is a supplement to the [Cloud Connected Deployment Guide](hololens2-cloud-connected-overview.md). It's used in situations where your organization wants to ship HoloLens 2 devices to an external client's facility for short or long-term use. The external client will log into the HoloLens 2 device using credentials provided by your organization, and use [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview) to contact your experts. This guide provides [general HoloLens 2 deployment recommendations](#general-deployment-recommendations) that are applicable to most external HoloLens 2 deployment scenarios and [common concerns](#common-external-client-deployment-concerns) that customers have when deploying Remote Assist for external use. 
 
 ## Prerequisites
 
@@ -32,6 +32,8 @@ The following infrastructure should be in place per the [Cloud Connected Deploym
 - Azure AD account (required for purchasing the subscription and assigning licenses)
 - [Remote Assist subscription](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (or [Remote Assist Trial](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
 
+See [Learn more about Remote Assist](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist).
+
 ### Dynamics 365 Remote Assist user
 
 - Remote Assist license
@@ -41,8 +43,6 @@ The following infrastructure should be in place per the [Cloud Connected Deploym
 
 - Microsoft Teams or [Teams Freemium](https://products.office.com/microsoft-teams/free)
 - Network connectivity
-
-See [Learn more about Remote Assist](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist).
 
 ## General deployment recommendations
 
@@ -78,9 +78,9 @@ We recommend the following steps for external HoloLens 2 deployment:
     1. Option to [control OS updates](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) or allow to flow freely.
 1. Set [common device restrictions](/hololens/hololens-common-device-restrictions).
 
-<mark>  Now your external clients are ready to use their HoloLens 2. </mark>
+Now your external clients are ready to use their HoloLens 2.
 
-## Common concerns
+## Common external client deployment concerns
 
 - [Ensuring clients can't communicate with one another](#ensure-that-external-clients-cant-communicate-with-one-another)
 - [Ensuring clients can't access company resources](#ensure-that-clients-wont-have-access-to-company-resources)
