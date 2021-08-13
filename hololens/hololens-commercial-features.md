@@ -3,7 +3,7 @@ title: Make mixed reality your reality with HoloLens 2
 description: Learn about the Microsoft HoloLens commercial features for businesses to manage HoloLens devices. 
 author: qianw211
 ms.author: v-qianwen
-ms.date: 08/10/2021
+ms.date: 08/13/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -23,11 +23,7 @@ keywords: HoloLens 2, commercial, features, mdm, mobile device management, kiosk
 
 ## Why HoloLens?
 
-Thanks to HoloLens 2 and Mixed Reality applications, now workers can do all listed below.
-
-* Collaborate without boundaries
-* Act with precision
-* Increase productivity
+Thanks to HoloLens 2 and Mixed Reality applications, now workers can collaborate without boundaries, act with precision, and increase productivity.
 
 Equipped with the HoloLens 2, workers can engage heads-up and hands free for longer with more comfort. Workers can connect remotely with colleagues in real time and work together across an extensive holographic canvas overlaid in their physical environment.  The goal is to quickly resolve issues in the moment. Furthermore, as a result of built-in voice commands, eye tracking and world-anchoring, they can focus on safely completing tasks and minimizing errors.
 
@@ -47,7 +43,7 @@ This MR app helps workers adapt to complex scenarios, everything from training, 
 
 Now, frontline workers can collaborate with remote experts anytime and anywhere with 3D annotations right in their real-world environment. They can share what they are seeing in real-time, view critical information anchored right in their real-world environment to resolve issues quickly. Frontline workers can use Dynamics 365 Remote Assist on iOS and Android mobile devices, or HoloLens 2.
 
-**ROI:**
+Customers achieved the following benefits:
 
 * Zero error in the last two years; 90% less touch labor – Lockheed Martin
 * 70% less time needed for upskilling workers – Suntory
@@ -68,7 +64,7 @@ Virtual rounds keep teams safe, make examinations efficient, and help staffs com
 
 **ROI:** 
 
-* 83% less staff time needed to serve patients.
+83% less staff time needed to serve patients.
 
 #### Medlab Clinical
 
@@ -98,7 +94,7 @@ Improve test scores and knowledge retention. Revolutionize curriculum with exper
 
 **ROI:** 
 
-* 50% increase in student test scores.
+50% increase in student test scores.
 
 ### AEC (Architecture, Engineering, and Construction)
 
@@ -108,7 +104,7 @@ Thanks to digital twins, computer models replicate what's physically in the fiel
 
 **ROI:** 
 
-* $25,000 savings during design review.
+$25,000 savings during design review.
 
 ## HoloLens 2 capabilities
 
