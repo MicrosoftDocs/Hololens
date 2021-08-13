@@ -35,7 +35,7 @@ HoloLens supports several kinds of user identities. You can choose any one of th
 | --- | --- | --- |
 | [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure web credential provider</li><li>Azure Authenticator App</li><li>Biometric (Iris) &ndash; HoloLens 2 only<sup>2</sup> </li><li>FIDO2 Security key</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
 | [Microsoft Account (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Biometric (Iris) &ndash; HoloLens 2 only</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
-| [Local account](/windows/security/identity-protection/access-control/local-accounts) | 1 | Password |
+| [Local account](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | 1 | Password |
 
 Cloud-connected accounts (Azure AD and MSA) offer more features because they can use Azure services.  
 > [!IMPORTANT]
@@ -44,13 +44,16 @@ Cloud-connected accounts (Azure AD and MSA) offer more features because they can
 > [!NOTE]
 > 2 - While a HoloLens 2 device can support up to 64 Azure AD accounts, only 31 of those accounts may enroll in Iris Authentication. This is aligned with other [Biometric authentication options for Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
 
+> [!IMPORTANT]
+> 3 - A local account can only be set up on a device [via a provisioning package during OOBE](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup), it cannot be added later in the settings app. If you'd like to use a local account on a device that's already set up, you'll need to [reflash or reset the device.](hololens-recovery.md)
+
 ## Setting up users
 
 There are two ways to set up a new user on the HoloLens. The most common way is during the HoloLens out-of-box experience (OOBE). If using Azure Active Directory, [other users can log in](#setting-up-multi-user-support-azure-ad-only) after OOBE using their Azure AD credentials. HoloLens devices that are initially set up with an MSA or local account during OOBE will not support multiple users. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
 
 If you use an enterprise or organizational account to sign in to HoloLens, HoloLens enrolls in the organization's IT infrastructure. This enrollment allows your IT Admin to configure Mobile Device Management (MDM) to send group policies to your HoloLens.
 
-Like Windows on other devices, signing in during setup creates a user profile on the device. The user profile stores apps and data. The same account also provides Single Sign-on for apps, such as Edge or the Microsoft Store, by using the Windows Account Manager APIs. 
+Like Windows on other devices, signing in during setup creates a user profile on the device. The user profile stores apps and data. The same account also provides Single Sign-on for apps, such as Edge or the Microsoft Store, by using the Windows Account Manager APIs.
 
 By default, as for other Windows 10 devices, you'll have to sign in again when HoloLens restarts or resumes from standby. You can use the Settings app to change this behavior, or the behavior can be controlled by group policy.
 

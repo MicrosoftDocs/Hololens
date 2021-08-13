@@ -30,12 +30,15 @@ We're excited to start flighting new features to Windows Insiders again. New bui
 |-------------------------|----------------------------|--------------|------------------|
 | [CSP changes for reporting HoloLens details](#csp-changes-for-reporting-hololens-details) | New CSPs for to query data | IT Admins    | 20348.1403                 |
 | [Auto login policy controlled by CSP](#auto-login-policy-controlled-by-csp) | Used to log in an account automatically | IT Admins | 20348.1405 |
+| [Improved update restart detection and notifications](#improved-update-restart-detection-and-notifications) | New enabled polices and UX for updates. | IT Admins | 20348.1405 |
 | [PFX file support for Certificate Manager](#pfx-file-support-for-certificate-manager) | Add PFX certs via Settings UI | End User | 20348.1405 |
+| [Smart Retry for app updates](#smart-retry-for-app-updates) | Allows IT Admins to scheduled retries to update apps. | IT Admins | 20348.1405 |
 | [View advanced diagnostic report in Settings on HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | View MDM diagnostic logs on device | Troubleshooting | 20348.1405 |
 | [Offline Diagnostics notifications](#offline-diagnostics-notifications) | Audiovisual feedback for log collection | Troubleshooting | 20348.1405 |
 | [Use only private store apps only for Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure the store app to show only apps from organization | IT Admin | 20348.1408 |
 | [Low storage log collection improvements](#low-storage-log-collection-improvements) | Improvements to log collection scenarios during low storage situations. | IT Admin | 20348.1412 |
-| [Fixes and improvements](hololens-insider.md#fixes-and-improvements) | Fixes and improvements for HoloLens. | All | 20348.1411 |
+| [Moving Platform Mode](#moving-platform-mode) | Introduces Moving Platform Mode beta, which when configured, enables the use of HoloLens 2 on large marine vessels experiencing low-dynamic motion. | All | 20348.1411 |
+| [Fixes and improvements](#fixes-and-improvements) | Fixes and improvements for HoloLens. | All | 20348.1411 |
 
 ### CSP changes for reporting HoloLens details
 
@@ -90,13 +93,34 @@ String value
 On a device where this policy is configured, the user specified in the policy will need to logon at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single auto-logon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To logon as a different user, the policy must first be disabled.
 
 > [!NOTE]
-> - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior. 
+>
+> - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior.
 > - Auto-logon is only supported for MSA and AAD users.
+
+### Improved update restart detection and notifications
+
+Between active hours and install time policies, it is possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior the reboot being initiated and they can delay the reboot in accordance with IT policy.
+
+The following update policies were be added:
+
+- [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
+- [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
+- [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
 ### PFX file support for Certificate Manager
 
 Introduced in Windows Insider build 20348.1405. We’ve added support to the [Certificate Manager](certificate-manager.md) to now use .pfx certificates. When users navigate to **Settings** > **Update & Security** > **Certificates**, and select **Install a certificate** the UI now supports .pfx certificate file.
 Users can import .pfx certificate, with private key, to user store or machine store.
+
+### Smart Retry for app updates
+
+Now enabled for HoloLens is a new policy that allows IT Admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. These can be set based on a few different triggers such as a scheduled time or sign-in. To learn more about how to use this policy please view [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
 
 ### View advanced diagnostic report in Settings on HoloLens
 
@@ -114,7 +138,7 @@ Now added in Windows Insider builds, there are two forms of audiovisual feedback
 ![Toast for collecting logs.](./images/logcollection1.jpg)
 
 ![Toast when log collection is complete.](./images/logcollection2.jpg)
- 
+
 Because users often use Offline Diagnostics as a fallback log gathering mechanism for when they don’t have access to a display, can’t log-in or are still in OOBE there will also be an audio cue played when logs are gathered. This sound will be played in addition to the toast notification.
 
 This new feature will be enabled when your device updates, and doesn’t need to be enabled or managed. In any event that this new feedback cannot be displayed or heard, Offline Diagnostics will still be generated.
@@ -131,19 +155,27 @@ Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/
 
 In scenarios where a device seems to be low on disk space when diagnostic logs are collected, an additional report named **StorageDiagnostics.zip** will be created. The threshold of low storage is determined automatically by Windows [storage sense](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
 
+### Moving Platform Mode
+
+As of **Insider build 20348.1411** we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you will be able to use your HoloLens 2 in previously inaccessible environments, like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
+
+To learn more about what is supported and how to enabled this new feature, [visit the moving platform page.](hololens2-moving-platform.md)
+
 ### Fixes and improvements
 
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - Addresses issues around reporting compliance properties from HoloLens devices; a reboot may be required for the correct reporting to be triggered on Insider builds.  
+- Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
 - Updated the in-box version of Remote Assist that's installed on fresh flashes.
 
 ## Start receiving Insider builds
 
 > [!NOTE]
 > If you haven’t updated recently, please reboot your device to update state and get the latest build.
-> -	The “Reboot device” voice command works well. 
-> -	You can also choose the restart button in Settings/Windows Insider Program.
+>
+> - The “Reboot device” voice command works well.
+> - You can also choose the restart button in Settings/Windows Insider Program.
 >
 > We had a bug on the back-end that you may have encountered and this will get you back on track.
 
@@ -163,9 +195,9 @@ If you encounter an update error 0x80070490 when updating on the Dev or Beta cha
 
 #### Stage one - Release Preview
 
-1.	Settings, Update & Security, Windows Insider Program, select **Release Preview Channel**.
+1. Settings, Update & Security, Windows Insider Program, select **Release Preview Channel**.
 
-2.	Settings, Update & Security, Windows Update, **Check for updates**. After the update, continue on to Stage two.
+2. Settings, Update & Security, Windows Update, **Check for updates**. After the update, continue on to Stage two.
 
 #### Stage two - Dev Channel
 
@@ -179,9 +211,9 @@ To test with a flight signed ffu, you first have to flight unlock your device pr
 
 1. On PC:
     1. Download ffu to your PC from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
-    
+
     1. Install ARC (Advanced Recovery Companion) from the Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
-    
+
 1. On HoloLens - Flight Unlock: Open **Settings** > **Update & Security** > **Windows Insider Program** then sign up, reboot device.
 
 1. Flash FFU - Now you can flash the flight signed FFU using ARC.
