@@ -8,7 +8,7 @@ author: qianw211
 ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 8/10/2021
+ms.date: 8/13/2021
 audience: ITPro
 ms.reviewer: 
 manager: sekerawa
@@ -22,11 +22,11 @@ appliesto:
 
 We’re always working on new features, bug fixes, and security updates. You'll be notified when these updates are ready.
 
-HoloLens uses Windows Update, just like other Windows 10 devices. Your HoloLens will automatically download and install system updates whenever it is plugged-in to power, connected to the Internet, and even in standby. 
+Based on your preference, your HoloLens will automatically download and install system updates whenever it is plugged-in to power, connected to the Internet, and even in standby.
 
-To ensure your HoloLens is always updated, leave it plugged in with the charger that came with it. (Not a phone charger. And not a PC power cord.) You also want your HoloLens connected to the internet. This way, it will automatically download and install system updates. 
+To ensure your HoloLens is always updated, leave it plugged in with the charger that came with it. You also want your HoloLens connected to the internet. This way, it will automatically download and install system updates. 
 
-With Windows Update service, you’ll control multiple aspects of the update process. Like which devices get which updates at what time. This control is helpful because you can roll out updates to a subset of HoloLens devices for testing. Then, roll out updates to the remaining ones. Or, you can define different update schedules for different types of updates.
+With Windows Update service, you’ll control multiple aspects of the update process, such as which devices get which updates at what time. This control is helpful because you can roll out updates to a subset of HoloLens devices for testing. Then, roll out updates to the remaining ones. Or, you can define different update schedules for different types of updates.
 
 ## Types of updates
 

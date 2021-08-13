@@ -7,7 +7,7 @@ author: qianw211
 ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 08/10/2021
+ms.date: 08/13/2021
 ms.reviewer: 
 manager: sekerawa
 appliesto:
@@ -21,11 +21,9 @@ appliesto:
 
 Businesses often invest in many shared HoloLens devices. For factory workers, there’s typically a “vending machine” of HoloLens devices.
 
-There’s a lot of sensitive data on factory floors. Newly introduced risk points are key points of consideration. The possibility of failure is high. Here’s how HoloLens can mitigate the risk.
-
 Security with HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of a locked-down experience: 
 
-- Workers can check out a HoloLens to perform a certain task. Thanks to Microsoft Intune and other provisioning profiles, you can be certain that a worker uses HoloLens only in the way it’s intended. For instance, they can use Remote Assist, but they can’t pull up Web browsers, games, Word, etc.
+- Workers can check out a HoloLens to perform a certain task. Thanks to Microsoft Intune and other provisioning profiles, you can be certain that a worker uses HoloLens only in the way it’s intended. For instance, they can use Remote Assist, but they can’t open Web browsers, games, Word, etc.
 
 The results are impressive. Even in the most sensitive environments, information sharing and visuals are unique to the end user’s eyes, so collaboration can thrive. Imagine a trans-oceanic and real-time collaboration using Remote Assist. HoloLens sharing brings new interactions, without risking unwarranted information disclosure.
 

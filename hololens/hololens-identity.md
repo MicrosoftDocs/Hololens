@@ -5,7 +5,7 @@ keywords: HoloLens, user, account, AAD, Azure AD, adfs, microsoft account, msa, 
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: qianw211    
 ms.author: v-qianwen
-ms.date: 8/10/2021
+ms.date: 8/13/2021
 ms.prod: hololens
 ms.custom: 
 - CI 111456
@@ -62,7 +62,7 @@ Linking accounts does not separate the user data created on the device, such as 
 
 ### Setting up multi-user support (Azure AD only)
 
-HoloLens supports multiple users from the same Azure AD tenant. To use this feature, you must use an account that belongs to your organization to set up the device. After, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user. 
+HoloLens supports multiple users from the same Azure AD tenant. To use this feature, you must use an account that belongs to your organization to set up the device. Subsequently, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user. 
 
 >[!IMPORTANT]
 > The first user on the device is considered the device owner, except in the case of Azure AD Join, [learn more about device owners](security-adminless-os.md#device-owner).
@@ -76,9 +76,9 @@ Devices set up with Azure AD accounts will not allow signing in to the device wi
 
 ### Multiple users are listed on Sign-in screen
 
-Previously the sign-In screen showed only the most recently signed in user, and an 'Other user' entry point. We have received customer feedback that it's not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
+Previously the sign-in screen showed only the most recently signed in user, and an 'Other user' entry point. We have received customer feedback that it's not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
 
-Introduced in [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), when selecting **Other user** which is located to the right of the PIN entry field, the Sign-in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other user's page via the **Add account** button.
+Introduced in [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), when selecting **Other user** which is located to the right of the PIN entry field, the Sign-in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this **other users** page via the **Add account** button.
 
 When in the **Other users** menu, the **Other users** button will display the last user signed into the device. Select this button to return to the sign-in screen for this user.
 
