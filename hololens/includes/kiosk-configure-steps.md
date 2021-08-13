@@ -199,6 +199,6 @@ Provisioning package multi app kiosk
 
 11. After your provisioning package builds, open the Output location folder. The .ppkg file is your provision package. Optional step: Save your project.
 
-12. Now you can apply your provisioning package. You can either [apply a provisioning package to HoloLens during setup](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) or [apply a provisioning package to HoloLens after setup](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
+12. Now you can apply your provisioning package. You can either [apply a provisioning package to HoloLens during setup](hololens/hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) or [apply a provisioning package to HoloLens after setup](hololens/hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
 
 13. Sign in as the target user to experience kiosk.
