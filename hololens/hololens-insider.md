@@ -44,10 +44,10 @@ This one’s about the improved troubleshooting and device reports, some fixed b
 
 ### IT Admin Insider Feature Checklist
 
-✔️ If you'd like to set a single Azure AD account to automatically log-in, [configure this new CSP.](#auto-login-policy-controlled-by-csp)
-✔️ If you'd like configure your apps to automatically attempt to update after failing to update, [set this new CSP for smart retry.](#smart-retry-for-app-updates)
-✔️ If you'd like to have more control over OS updates, check out these [newly enabled Update policies.](#improved-update-restart-detection-and-notifications)
-✔️ If you need to get make your organization's apps available on the company store via the Microsoft Store, but want to only allow access to your organization's apps and not the full store, [set this policy.](#use-only-private-store-apps-for-microsoft-store)
+✔️ If you'd like to set a single Azure AD account to automatically log-in, [configure this new CSP.](#auto-login-policy-controlled-by-csp) <br>
+✔️ If you'd like configure your apps to automatically attempt to update after failing to update, [set this new CSP for smart retry.](#smart-retry-for-app-updates) <br>
+✔️ If you'd like to have more control over OS updates, check out these [newly enabled Update policies.](#improved-update-restart-detection-and-notifications) <br>
+✔️ If you need to get make your organization's apps available on the company store via the Microsoft Store, but want to only allow access to your organization's apps and not the full store, [set this policy.](#use-only-private-store-apps-for-microsoft-store) <br>
 ✔️ If you'd like to know the free storage space, SSID or BSSID of your HoloLens devices check out these [reporting CSPs.](#csp-changes-for-reporting-hololens-details)
 
 ### Moving Platform Mode
