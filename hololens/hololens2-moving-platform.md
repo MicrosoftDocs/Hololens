@@ -66,14 +66,14 @@ To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-real
 1. Select the **System** accordion on the Left-hand menu
 2. Select the **Moving Platform Mode** page and check the **Moving Platform Mode** checkbox
 
-![First image](.\images\moving-platform-1) ![Second image](.\images\moving-platform-2)
+![First image](.\images\moving-platform-1.png) ![Second image](.\images\moving-platform-2.png)
 
 3. When prompted with a warning, select **OK**
 
-![Third image](.\images\moving-platform-3)
+![Third image](.\images\moving-platform-3.png)
 
 4. Reboot your device, which can be done either via the Device Portal **Power** menu at the top right or by issuing the following voice command &quot;Reboot the device&quot; and select &quot;Yes&quot;.
 
-![Fourth image](.\images\moving-platform-4)
+![Fourth image](.\images\moving-platform-4.png)
 
 If you are unable to see the Moving Platform Mode option in Device Portal, then it likely means you are not yet on the proper build. See the [Prerequisites](#prerequisites) section.
