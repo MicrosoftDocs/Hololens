@@ -59,6 +59,11 @@
                             "source_path":  "hololens/common-scenarios.md",
                             "redirect_url": "https://docs.microsoft.com/hololens/hololens-requirements",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path": "hololens/hololens2-compliance.md",
+                            "redirect_url": "https://docs.microsoft.com/hololens/hololens2-privacy",
+                            "redirect_document_id":  true
                         }
                     ]
 }
