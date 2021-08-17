@@ -1016,6 +1016,7 @@ Earlier on encountering failures in applying kiosk mode, HoloLens used to show u
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens Policies
+
 - Device management options specifically for HoloLens created for managing the device. 
 
 New mixed reality policies have been created for HoloLens 2 devices on Windows Holographic version 20H2. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
