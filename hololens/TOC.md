@@ -34,6 +34,7 @@
 #### [Improve visual quality and comfort](hololens-calibration.md)
 #### [Map physical spaces with HoloLens](hololens-spaces.md)
 #### [HoloLens environment considerations](hololens-environment-considerations.md)
+#### [Moving Platforms](hololens2-moving-platform.md)
 ### Connect your HoloLens 2
 #### [Connect HoloLens to a network](hololens-network.md)
 #### [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
@@ -74,7 +75,7 @@
 ### [Encryption and data protection](security-encryption-data-protection.md)
 ### [Network security](security-network-security.md)
 ### [Security engineering ](security-engineering.md)
-### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
+### [HoloLens 2 Privacy and Data Protection](hololens2-privacy.md)
 ## Device Management
 ### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
 ## Device Enrollment

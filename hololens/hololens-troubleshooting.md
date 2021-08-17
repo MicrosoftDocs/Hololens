@@ -114,13 +114,15 @@ There are no known workarounds as we've been unable to root cause the issue so f
 There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters. This is a **known issue**.
 
 Work-arounds:
--	Close the keyboard and reopen it by tapping the text field.
--	Incorrectly enter your password. When the keyboard is relaunched next time it will then work as expected.
+
+- Close the keyboard and reopen it by tapping the text field.
+- Incorrectly enter your password. When the keyboard is relaunched next time it will then work as expected.
 - Web Authentication, close the keyboard and select **Sign in from another device**.
--	If entering only numbers, a user may press and hold certain keys to open an expanded menu.
--	Using a USB keyboard.
+- If entering only numbers, a user may press and hold certain keys to open an expanded menu.
+- Using a USB keyboard.
 
 This does not affect:
+
 - Users who choose to use a personal account.
 
 [Back to list](#list)
@@ -128,7 +130,7 @@ This does not affect:
 ## Downloading locked files doesn't error
 
 > [!NOTE]
-> This is a **known issue** that is fixed in Windows Insider build, version 20348.1403.
+> This is a **known issue** that was fixed in [Windows Holographic, version 21H1 - July 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update).
 
 In previous builds of Windows Holographic, when attempting to download a locked file, the result would be an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
 
@@ -136,10 +138,9 @@ In previous builds of Windows Holographic, when attempting to download a locked 
 
 ## Device Portal file upload/download times out
 > [!NOTE]
-> This is a **known issue** that is fixed in Windows Insider build, version 20348.1403. If you previously disabled SSL Connection as part of the workaround, we highly recommend you re-enable it.
+> This is a **known issue** that was fixed in [Windows Holographic, version 21H1 - July 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update). If you previously disabled SSL Connection as part of the workaround, we highly recommend you re-enable it.
 
-
-Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default. 
+Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
 
 ### Workaround
 
