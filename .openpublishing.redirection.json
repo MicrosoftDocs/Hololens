@@ -61,6 +61,11 @@
                             "redirect_document_id":  false
                         },
                         {
+                            "source_path": "hololens/hololens2-compliance.md",
+                            "redirect_url": "https://docs.microsoft.com/hololens/hololens2-privacy",
+                            "redirect_document_id":  true
+                        },
+                        {
                             "source_path":  "hololens/hololens-global-assigned-access-kiosk.md",
                             "redirect_url": "https://docs.microsoft.com/hololens/hololens-kiosk",
                             "redirect_document_id":  false
