@@ -102,9 +102,9 @@ Here are the following ways to configure, select the tab matching the process yo
 
 ## FAQ and Release Notes
 
-### Global Assigned Access – Kiosk
+### Global Assigned Access
 
-This feature configures HoloLens 2 device for multiple app kiosk mode, which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. This feature is available on [20H2 builds or newer.](hololens-release-notes.md#windows-holographic-version-20h2)
+This feature configures HoloLens 2 device for multiple app kiosk mode, which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Global Assigned Access was added in [20H2 builds](hololens-release-notes.md#windows-holographic-version-20h2), ensure if you are trying to use this feature your devices are using a 20H2 or newer build.
 
 ### Cache Azure AD Group membership for offline Kiosk
 
@@ -153,7 +153,7 @@ Visitor Auto logon can be managed via [custom OMA-URI policy](/mem/intune/config
 | --------------------------- | ------------- | -------------------- |
 | MixedReality/VisitorAutoLogon | Allows for a Visitor to Auto logon to a Kiosk. | 1 (Yes), 0 (No, default.) |
 
-## Tips for Kiosk
+### Tips for Kiosk
 
 If you need to install additional apps to your Kiosk, you can install additional apps from the Microsoft store or by side loading more easily if you have an account that does not use Kiosk. Can also assign [required apps via MDM](/mem/intune/apps/apps-deploy#assign-an-app) to install automatically.
 
@@ -169,7 +169,7 @@ HoloLens (1st gen) devices need to be upgraded both in terms of OS build and OS 
 
 ### Device Portal method
 
-Set up the HoloLens device to use the Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC.
+Set up the HoloLens device to use the Windows Device Portal](/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC.
 
  > [!CAUTION]
  > When you set up HoloLens to use the Device Portal, you have to enable Developer Mode on the device. Developer Mode on a device that has Windows Holographic for Business enables you to side-load apps. However, this setting creates a risk that a user can install apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable Developer Mode by using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider). [Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
@@ -233,4 +233,5 @@ On AAD user sign-in, device does not go into kiosk mode
 
 **Troubleshooting steps**
 
-Confirm with customer in Assigned Access configuration XML that GUID of AAD group of which signed-in user is a member of is used and not the GUID of the AAD user.Confirm with customer that in Intune portal that AAD user is indeed shown as member of targeted AAD group.
+- Confirm in Assigned Access configuration XML that GUID of AAD group of which signed-in user is a member of is used and not the GUID of the AAD user.
+- Confirm that in Intune portal that AAD user is indeed shown as member of targeted AAD group.
