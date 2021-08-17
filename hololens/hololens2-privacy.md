@@ -1,7 +1,7 @@
 ---
-title: HoloLens 2 Compliance and GDPR
-description: GDPR documentation
-keywords: HoloLens, GDPR, privacy, PII
+title: HoloLens 2 Privacy and Data Protection
+description: Privacy documentation
+keywords: HoloLens, GDPR, privacy, PII, data protection
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: skerewala, evmiller
@@ -16,7 +16,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# HoloLens 2 Privacy Statement
+# HoloLens 2 Privacy and Data Protection
 
 One of the core elements of the GDPR is ‘data protection by design’. This concept especially applies to mobile devices, like the HoloLens 2, because of their portability, unlimited internet connections and open communication channels. Resultingly, the HoloLens 2’s [security](/hololens/security-architecture) has been redesigned to provide advanced, innovative security and privacy protection, end-to-end, incorporating both Microsoft’s approach to [privacy and GDPR regulations](https://privacy.microsoft.com/).
 
