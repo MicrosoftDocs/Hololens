@@ -169,7 +169,7 @@ Provisioning package multi app kiosk
 
 <br>
 
-6. On the left hand side, expand Runtime settings -\&gt; AssignedAccess and select **MultiAppAssignedAccess**.
+6. On the left hand side, expand Runtime settings, AssignedAccess and select **MultiAppAssignedAccess**.
 
 <kbd>
     <img alt="select MultiAppAssignedAccess" src="../images/kiosk-steps/kiosk-provision-3.png"/>
@@ -202,3 +202,71 @@ Provisioning package multi app kiosk
 12. Now you can apply your provisioning package. You can either [apply a provisioning package to HoloLens during setup](../hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) or [apply a provisioning package to HoloLens after setup](../hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
 
 13. Sign in as the target user to experience kiosk.
+
+
+
+
+# [Provisioning package single app kiosk](#tab/ppkgsak)
+
+Provisioning package single app kiosk
+
+1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
+
+1. On the Start page select **Provision HoloLens devices.**
+
+<kbd>
+    <img alt="Selecting provision HoloLens" src="../images/kiosk-steps/kiosk-provision-1.png"/>
+</kbd>
+
+<br>
+
+3. Select **Provision HoloLens 2 devices,** then select next.
+
+<kbd>
+    <img alt="Select HoloLens 2" src="../images/kiosk-steps/kiosk-provision-2.png"/>
+</kbd>
+
+<br>
+
+4. Name your project. Optionally write a description. Select **Finish** to proceed.
+
+5. In the bottom left of the screen, select **Switch to advanced editor.** Confirm switching to the advanced editor by selecting **Yes.**
+
+<kbd>
+    <img alt="Switch to advanced editor" src="../images/kiosk-steps/kiosk-provision-2.png"/>
+</kbd>
+
+<br>
+
+6. On the left hand side, expand Runtime settings, AssignedAccess and select **AssignedAccessSettings**.
+
+<kbd>
+    <img alt="Navigate to assigned access settings" src="../images/kiosk-steps/kiosk-provision-sak-1.png"/>
+</kbd>
+
+<br>
+
+7. Define your kiosk in the text box. For example, the following creates a single app kiosk for a local account named LocalAccount that is the settings app.
+```{"Account":"LocalAccount","AUMID":"BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App"}```
+
+8. Select **Export** , then **Provisioning Package**.
+
+<kbd>
+    <img alt="Export package" src="../images/kiosk-steps/kiosk-provision-4.png"/>
+</kbd>
+
+<br>
+
+9. Change owner type to **IT Admin**.
+
+<kbd>
+    <img alt="Exporting as IT Admin" src="../images/kiosk-steps/kiosk-provision-5.png"/>
+</kbd>
+
+<br>
+
+10. Select **Next** three times. Then select **Build**.
+
+11. After your provisioning package builds, open the Output location folder. The .ppkg file is your provision package. Optional step: Save your project.
+
+12. Now you can apply your provisioning package. You can either [apply a provisioning package to HoloLens during setup](../hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) or [apply a provisioning package to HoloLens after setup](../hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).

@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 8/1/2021
+ms.date: 8/17/2021
 ms.custom: 
 - CI 115262
 - CI 111456
@@ -95,6 +95,142 @@ Here are the following ways to configure, select the tab matching the process yo
 1. [Microsoft Intune single app kiosk template](hololens-kiosk.md?tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens)
 1. [Microsoft Intune multi app kiosk template](hololens-kiosk.md?tabs=uimak#steps-in-configuring-kiosk-mode-for-hololens)
 1. [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)
-1. [Runtime provisioning](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)
+1. [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)
+1. [Runtime provisioning - Single app](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens)
 
 [!INCLUDE[](includes/kiosk-configure-steps.md)]
+
+## FAQ and Release Notes
+
+### Global Assigned Access – Kiosk
+
+This feature configures HoloLens 2 device for multiple app kiosk mode, which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. This feature is available on [20H2 builds or newer.](hololens-release-notes.md#windows-holographic-version-20h2)
+
+### Cache Azure AD Group membership for offline Kiosk
+
+- More secure Kiosk mode by eliminating available apps on Kiosk mode failures.
+- Enabled Offline Kiosks to be used with Azure AD groups for up to 60 days.
+
+[MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays)
+
+Steps to use this policy correctly:
+
+1. Create a device configuration profile for kiosk targeting Azure AD groups and assign it to HoloLens device(s).
+1. Create a custom OMA URI based device configuration that sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s).
+    1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+    1. The value can be between min / max allowed.
+1. Enroll HoloLens devices and verify both configurations get applied to the device.
+1. Let Azure AD user 1 sign-in when internet is available, once user signs-in and Azure AD group membership is confirmed successfully, cache will be created.
+1. Now Azure AD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days.
+1. Steps 4 and 5 can be repeated for any other Azure AD user N. Key point here is that any Azure AD user must sign-in to device using Internet so at least once we can determine that they are member of Azure AD group to which Kiosk configuration is targeted.
+
+> [!NOTE]
+> Until step 4 is performed for a Azure AD user will experience failure behavior mentioned in “disconnected” environments.
+
+### Enable Visitor Autologon
+
+On builds [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
+
+- AAD and Non-ADD configurations both support visitor accounts being autologon enabled for Kiosk modes.
+
+#### Non-AAD configuration
+
+1. Create a provisioning package that:
+    1. Configures Runtime settings/AssignedAccess to allow Visitor accounts.
+    1. Optionally enrolls the device in MDM (Runtime settings/Workplace/Enrollments) so that it can be managed later.
+    1. Do not create a local account
+2. [Apply the provisioning package](hololens-provisioning.md).
+
+#### AAD configuration
+
+AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign-in screen. Once signed in to the visitor account, the device will not prompt for sign-in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+
+Visitor Auto logon can be managed via [custom OMA-URI policy](/mem/intune/configuration/custom-settings-windows-10):
+
+- URI value: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
+
+| Policy | Description | Configurations |
+| --------------------------- | ------------- | -------------------- |
+| MixedReality/VisitorAutoLogon | Allows for a Visitor to Auto logon to a Kiosk. | 1 (Yes), 0 (No, default.) |
+
+## Tips for Kiosk
+
+If you need to install additional apps to your Kiosk, you can install additional apps from the Microsoft store or by side loading more easily if you have an account that does not use Kiosk. Can also assign [required apps via MDM](/mem/intune/apps/apps-deploy#assign-an-app) to install automatically.
+
+- To help protect devices that run in kiosk mode, consider adding device management policies that turn off features such as USB connectivity. Additionally, check your update ring settings to make sure that automatic updates do not occur during business hours.
+- Do not include Classic Windows applications (Win32). HoloLens does not support these applications.
+- S mode isn't supported on Windows Holographic for Business.
+
+### Kiosk and HoloLens (1st gen)
+
+Kiosk mode is available only if the device has Windows Holographic for Business. All HoloLens 2 devices ship with Windows Holographic for Business and there are no other editions. Every HoloLens 2 device is able to run Kiosk mode out of the box.
+
+HoloLens (1st gen) devices need to be upgraded both in terms of OS build and OS edition. Here is more information on updating a HoloLens (1st gen) to [Windows Holographic for Business](hololens1-upgrade-enterprise.md) edition. To update a HoloLens (1st gen) device to use kiosk mode, you must first make sure that the device runs Windows 10, version 1803, or a later version. If you have used the Windows Device Recovery Tool to recover your HoloLens (1st gen) device to its default build, or if you have installed the most recent updates, your device is ready to configure.
+
+### Device Portal method
+
+Set up the HoloLens device to use the Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC.
+
+ > [!CAUTION]
+ > When you set up HoloLens to use the Device Portal, you have to enable Developer Mode on the device. Developer Mode on a device that has Windows Holographic for Business enables you to side-load apps. However, this setting creates a risk that a user can install apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable Developer Mode by using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider). [Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+
+Kiosk Mode can be set via Device Portal’s REST API by doing a POST to /api/holographic/kioskmode/settings with one required query string parameter (“kioskModeEnabled” with a value of “true” or “false”) and one optional parameter (“startupApp” with a value of a package name). Keep in mind that Device Portal is intended for developers only and should not be enabled on non-developer devices. The REST API is subject to change in future updates/releases.
+
+## Troubleshooting
+
+### Kiosk mode behavior changes for handling of failures
+
+When encountering failures in applying kiosk mode, the following behavior appears:
+
+- Prior to Windows Holographic, version 20H2 - HoloLens will show all applications in the Start menu.
+- Windows Holographic, version 20H2 - if a device has a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership fails, the user will see “nothing shown in start” menu.
+
+![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+
+- Starting with [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), Kiosk mode looks for Global Assigned Access before showing an empty start menu. The kiosk experience will fall back to a global kiosk configuration (if present) if there are failures during AAD group kiosk mode.
+
+### Issue – Application is not showing up in tiles for multiple-app kiosk mode
+
+**Symptoms**
+
+App is configured in kiosk mode but it is not showing up in start menu.
+
+**Troubleshooting steps** 
+
+Verify that AUMID of app is correctly specified and it does not contain versions. Refer to [this page](/hololens/hololens-kiosk#plan-the-kiosk-deployment) for examples.
+
+### Issue - Building a package with kiosk mode failed
+
+**Symptoms**
+
+A dialog like below is shown.
+
+<kbd>
+    <img alt="Kiosk failure to build" src="./images/kiosk-steps/kiosk-ppkg-failure.png"/>
+</kbd>
+
+**Troubleshooting steps**
+
+1. Click on the hyper-link shown as in the dialog above.
+1. Open ICD.log in a text editor and its contents should indicate the error.
+
+### Issue – Provisioning package built successfully but failed to apply.
+
+**Symptoms**
+
+Error is shown when applying the provisioning package on Hololens
+
+**Troubleshooting steps**
+
+1. Browse to the folder where Windows Configuration Designer project for runtime provisioning package exists.
+1. Open ICD.log and ensure that there are no errors in the log while building the provisioning package. Some errors are not showing during build but are still logged in ICD.log
+
+### Issue – Multiple app assigned access to AAD group does not work
+
+**Symptoms**
+
+On AAD user sign-in, device does not go into kiosk mode
+
+**Troubleshooting steps**
+
+Confirm with customer in Assigned Access configuration XML that GUID of AAD group of which signed-in user is a member of is used and not the GUID of the AAD user.Confirm with customer that in Intune portal that AAD user is indeed shown as member of targeted AAD group.
