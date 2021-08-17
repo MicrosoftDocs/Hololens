@@ -2,8 +2,8 @@
 title: HoloLens 2 Privacy and Data Protection
 description: Privacy documentation
 keywords: HoloLens, GDPR, privacy, PII, data protection
-author: joyjaz, golish
-ms.author: v-jjaswinski, marcingo
+author: golish
+ms.author: marcingo
 ms.reviewer: sekerawa, evmiller
 ms.date: 02/05/2021
 ms.prod: hololens
