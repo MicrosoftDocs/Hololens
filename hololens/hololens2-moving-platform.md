@@ -67,7 +67,7 @@ To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-real
 2. Select the **Moving Platform Mode** page and check the **Moving Platform Mode** checkbox
 
    ![First image](.\images\moving-platform-1x.png)
- 
+
      ![Second image](.\images\moving-platform-2x.png)
 
 3. When prompted with a warning, select **OK**
@@ -79,3 +79,11 @@ To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-real
    ![Fourth image](.\images\moving-platform-4x.png)
 
 If you are unable to see the Moving Platform Mode option in Device Portal, then it likely means you are not yet on the proper build. See the [Prerequisites](#prerequisites) section.
+
+## Reporting Issues
+
+As mentioned above, this is a beta feature available only in Developer Mode, which means you may hit issues. If that happens, please report the issue via [Feedback Hub](hololens-feedback.md) so we can investigate and improve the product. Along with the feedback, please make sure to include:
+
+1.	A description of problem, including the expected behavior and experienced behavior
+1.	A [Mixed Reality Capture](holographic-photos-and-videos.md) of the issue
+1.	Your email address or contact information so we can reach out in case we have questions
