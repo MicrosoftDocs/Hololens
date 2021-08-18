@@ -89,7 +89,7 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config" 
 > 
     <Profiles> 
-         <!—Profile Id can be any unique GUID -->
+         <!--Profile Id can be any unique GUID -->
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
             <AllAppsList> 
                 <AllowedApps>                     
@@ -142,7 +142,7 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
     xmlns:v5="http://schemas.microsoft.com/AssignedAccess/202010/config" 
 > 
     <Profiles>
-         <!—Profile Id can be any unique GUID -->
+         <!--Profile Id can be any unique GUID -->
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
             <AllAppsList> 
                 <AllowedApps>                     
