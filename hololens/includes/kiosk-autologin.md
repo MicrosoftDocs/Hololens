@@ -6,7 +6,7 @@
     1. Configures Runtime settings/AssignedAccess to allow Visitor accounts.
     1. Optionally enrolls the device in MDM (Runtime settings/Workplace/Enrollments) so that it can be managed later.
     1. Do not create a local account
-2. [Apply the provisioning package](./hololens/hololens-provisioning.md).
+2. [Apply the provisioning package](../hololens-provisioning.md).
 
 # [AAD configuration](#tab/aadlogon)
 

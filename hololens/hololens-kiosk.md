@@ -103,31 +103,11 @@ Here are the following ways to configure, select the tab matching the process yo
 
 [!INCLUDE[](includes/kiosk-configure-steps.md)]
 
-
-
-
-
-
-
 ## Release Notes
 
 ### Continuing kiosk experience for Azure AD groups without internet
 
 [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays)
-
-Steps to use this policy correctly:
-
-1. Create a device configuration profile for kiosk targeting Azure AD groups and assign it to HoloLens device(s).
-1. Create a custom OMA URI based device configuration that sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s).
-    1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
-    1. The value can be between min / max allowed.
-1. Enroll HoloLens devices and verify both configurations get applied to the device.
-1. Let Azure AD user 1 sign-in when internet is available, once user signs-in and Azure AD group membership is confirmed successfully, cache will be created.
-1. Now Azure AD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days.
-1. Steps 4 and 5 can be repeated for any other Azure AD user N. Key point here is that any Azure AD user must sign-in to device using Internet so at least once we can determine that they are member of Azure AD group to which Kiosk configuration is targeted.
-
-> [!NOTE]
-> Until step 4 is performed for a Azure AD user will experience failure behavior mentioned in “disconnected” environments.
 
 ### How to can visitor accounts automatically logon into kiosk experience?
 
@@ -153,16 +133,6 @@ Set up the HoloLens device to use the Windows Device Portal](/windows/mixed-real
  > When you set up HoloLens to use the Device Portal, you have to enable Developer Mode on the device. Developer Mode on a device that has Windows Holographic for Business enables you to side-load apps. However, this setting creates a risk that a user can install apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable Developer Mode by using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider). [Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
 
 Kiosk Mode can be set via Device Portal’s REST API by doing a POST to /api/holographic/kioskmode/settings with one required query string parameter (“kioskModeEnabled” with a value of “true” or “false”) and one optional parameter (“startupApp” with a value of a package name). Keep in mind that Device Portal is intended for developers only and should not be enabled on non-developer devices. The REST API is subject to change in future updates/releases.
-
-
-
-
-
-
-
-
-
-
 
 ## Troubleshooting
 
