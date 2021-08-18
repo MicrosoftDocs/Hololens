@@ -56,7 +56,10 @@ While Moving Platform Mode was developed to intelligently handle cases of inerti
 Beta support for Moving Platform Mode requires only a few prerequisites:
 
 1. Install build 20348.1411 or newer [by flashing the latest Insiders build via ARC](hololens-insider.md#ffu-download-and-flash-directions) or [enrolling and updating your device](hololens-insider.md#start-receiving-insider-builds).
-   - Note: This build is currently only available on the [Insider Dev Channel](hololens-insider.md#start-receiving-insider-builds).
+
+   > [!NOTE]
+   > This build is currently only available on the [Insider Dev Channel](hololens-insider.md#start-receiving-insider-builds).
+
 2. Enable [Developer Mode and Device Portal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 
 ## Enabling Moving Platform Mode
@@ -64,18 +67,19 @@ Beta support for Moving Platform Mode requires only a few prerequisites:
 To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
 1. Select the **System** accordion on the Left-hand menu
+
+   ![First image](.\images\moving-platform-1z.png)
+
 2. Select the **Moving Platform Mode** page and check the **Moving Platform Mode** checkbox
 
-   ![First image](.\images\moving-platform-1x.png)
- 
-     ![Second image](.\images\moving-platform-2x.png)
+    ![Second image](.\images\moving-platform-2z.png)
 
 3. When prompted with a warning, select **OK**
 
-   ![Third image](.\images\moving-platform-3x.png)
+   ![Third image](.\images\moving-platform-3z.png)
 
 4. Reboot your device, which can be done either via the Device Portal **Power** menu at the top right or by issuing the following voice command &quot;Reboot the device&quot; and select &quot;Yes&quot;.
 
-   ![Fourth image](.\images\moving-platform-4x.png)
+   ![Fourth image](.\images\moving-platform-4z.png)
 
 If you are unable to see the Moving Platform Mode option in Device Portal, then it likely means you are not yet on the proper build. See the [Prerequisites](#prerequisites) section.
