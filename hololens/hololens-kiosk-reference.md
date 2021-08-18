@@ -66,6 +66,8 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 > <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.  
 > <sup>4</sup> You cannot enable Miracast directly. To enable Miracast as a kiosk app enable the Camera app and the Device Picker app.
 
+Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
+
 ## Kiosk XML Code Samples
 
 1. [Multiple app global assigned access profile](#multiple-app-global-assigned-access-profile)
@@ -128,6 +130,7 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 ```
 
 [Back to list](#kiosk-xml-code-samples)
+Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
 ### Multiple app global assigned access profile excluding device owners
 
@@ -179,42 +182,49 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 ```
 
 [Back to list](#kiosk-xml-code-samples)
+Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
 ### Multiple app assigned access profile for a local account or AAD user account
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-local-or-aad-user.xml" highlight="24,26":::
 
 [Back to list](#kiosk-xml-code-samples)
+Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
 ### Multiple app assigned access profiles for 2 AAD users or more
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-users-or-more.xml" highlight="36,41":::
 
 [Back to list](#kiosk-xml-code-samples)
+Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
 ### Multiple app assigned access profile for 1 AAD group
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-one-aad-group.xml" highlight="23":::
 
 [Back to list](#kiosk-xml-code-samples)
+Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
 ### Multiple app assigned access profile for 2 AAD groups or more
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-groups-or-more.xml" highlight="37,43":::
 
 [Back to list](#kiosk-xml-code-samples)
+Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
 ### Multiple app assigned access profile for 1 AAD account and 1 AAD group
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-for-aad-user-and-aad-group.xml" highlight="37,42":::
 
 [Back to list](#kiosk-xml-code-samples)
+Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
 ### Multiple app assigned access profile for visitors
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-visitor-user.xml" highlight="9,10":::
 
 [Back to list](#kiosk-xml-code-samples)
+Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
 ### Multi app kiosk mode targeting an Azure AD group
 
@@ -223,6 +233,7 @@ This kiosk deploys a Kiosk that for users in the Azure AD group, they will have 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 [Back to list](#kiosk-xml-code-samples)
+Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
 ### Multiple app kiosk mode targeting Azure AD account
 
@@ -231,3 +242,4 @@ This kiosk deploys a Kiosk for a single user, they will have a Kiosk enabled tha
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::
 
 [Back to list](#kiosk-xml-code-samples)
+Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
