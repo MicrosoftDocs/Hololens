@@ -1,6 +1,6 @@
 # [Intune UI Single app](#tab/uisak)
 
-Microsoft Intune kiosk template - Single App Kiosk.
+## Microsoft Intune single app kiosk template
 
 1. Create a configuration profile <br> 
 <kbd>
@@ -48,7 +48,7 @@ Microsoft Intune kiosk template - Single App Kiosk.
 
 # [Intune UI Multi app](#tab/uimak)
 
-Microsoft Intune kiosk template - Multi App Kiosk.
+## Microsoft Intune multi app kiosk template
 
 1. Create a configuration profile <br> 
 <kbd>
@@ -98,6 +98,8 @@ Microsoft Intune kiosk template - Multi App Kiosk.
 
 # [Intune Custom profile](#tab/intunecustom)
 
+## Microsoft Intune custom template
+
 1. Create a custom configuration profile <br>
 <kbd>
     <img alt="Create a custom configuration profile" src="../images/kiosk-steps/kiosk-custom-1.png"/>
@@ -139,7 +141,7 @@ Microsoft Intune kiosk template - Multi App Kiosk.
 
 # [Provisioning package multi app kiosk](#tab/ppkgmak)
 
-Provisioning package multi app kiosk
+## Runtime provisioning - Multi app
 
 1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
@@ -203,12 +205,9 @@ Provisioning package multi app kiosk
 
 13. Sign in as the target user to experience kiosk.
 
-
-
-
 # [Provisioning package single app kiosk](#tab/ppkgsak)
 
-Provisioning package single app kiosk
+## Runtime provisioning - Single app
 
 1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
