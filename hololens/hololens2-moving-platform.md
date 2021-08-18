@@ -56,7 +56,10 @@ While Moving Platform Mode was developed to intelligently handle cases of inerti
 Beta support for Moving Platform Mode requires only a few prerequisites:
 
 1. Install build 20348.1411 or newer [by flashing the latest Insiders build via ARC](hololens-insider.md#ffu-download-and-flash-directions) or [enrolling and updating your device](hololens-insider.md#start-receiving-insider-builds).
-   - Note: This build is currently only available on the [Insider Dev Channel](hololens-insider.md#start-receiving-insider-builds).
+
+   > [!NOTE]
+   > This build is currently only available on the [Insider Dev Channel](hololens-insider.md#start-receiving-insider-builds).
+
 2. Enable [Developer Mode and Device Portal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 
 ## Enabling Moving Platform Mode
