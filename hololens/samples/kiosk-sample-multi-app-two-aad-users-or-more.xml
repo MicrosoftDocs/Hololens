@@ -6,9 +6,14 @@
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
                      <AllAppsList> 
                          <AllowedApps>                     
-                    	<!--TODO: Add AUMIDs of apps you want to be shown here, e.g. 
-<App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true" /> 
---> 
+                    	<!--
+                        TODO:
+                        1. Add AUMIDs of app(s) you want displayed in start menu. See examples below.
+                        2. Specify rs5:AutoLaunch="true" only for 1 app. If automatic launch not desired, remove this attribute.
+                        
+                        <App AppUserModelId="Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides" rs5:AutoLaunch="true" />
+                        <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
+                      -->
         </AllowedApps>
       </AllAppsList>
       <StartLayout>
@@ -19,9 +24,14 @@
     <Profile Id="{66A75FBE-A9EE-4497-B6B5-A2644A1D3997}"> 
                      <AllAppsList> 
                          <AllowedApps>                     
-                    	<!--TODO: Add AUMIDs of apps you want to be shown here, e.g. 
-<App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true" /> 
---> 
+                    	<!--
+                        TODO:
+                        1. Add AUMIDs of app(s) you want displayed in start menu. See examples below.
+                        2. Specify rs5:AutoLaunch="true" only for 1 app. If automatic launch not desired, remove this attribute.
+                        
+                        <App AppUserModelId="Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides" rs5:AutoLaunch="true" />
+                        <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
+                      -->
         </AllowedApps>
       </AllAppsList>
       <StartLayout>
@@ -34,7 +44,7 @@
     <Config>
       <!—TODO:  Specify first AAD user account, e.g.  
       <Account>AzureAD\User name@AAD tenant name, e.g. AzureAD\contosouser_1@contoso.onmicrosoft.com </Account> -->
-      <DefaultProfile Id="{8dbbe305-2dde-43d7-86f9-581275618d2c}" />
+      <DefaultProfile Id="{8739C257-184F-45DD-8657-C235819172A3}" />
     </Config>
 <Config>
       <!—TODO:  Specify other AAD user account, e.g.  

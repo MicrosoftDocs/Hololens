@@ -6,9 +6,14 @@
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
                      <AllAppsList> 
                          <AllowedApps>                     
-                    	<!--TODO: Add AUMIDs of apps you want to be shown here, e.g. 
-<App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true" /> 
---> 
+                    	<!--
+                        TODO:
+                        1. Add AUMIDs of app(s) you want displayed in start menu. See examples below.
+                        2. Specify rs5:AutoLaunch="true" only for 1 app. If automatic launch not desired, remove this attribute.
+                        
+                        <App AppUserModelId="Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides" rs5:AutoLaunch="true" />
+                        <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
+                      -->
         </AllowedApps>
       </AllAppsList>
       <StartLayout>
@@ -19,9 +24,9 @@
   </Profiles>
   <Configs>
     <Config>
-      <!—TODO:  Specify AAD user group which must exist on Hololens before configuration is applied, where the Object ID is used as the name.
+      <!--TODO: Specify object GUID of target Azure AD group of kiosk experience. See https://docs.microsoft.com/powershell/module/azuread/get-azureadgroup?view=azureadps-2.0 to determine object id of Azure AD groups. -->
       <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" />
-      <DefaultProfile Id="{8dbbe305-2dde-43d7-86f9-581275618d2c}" />
+      <DefaultProfile Id="{8739C257-184F-45DD-8657-C235819172A3}" />
     </Config>
   </Configs>
 </AssignedAccessConfiguration>

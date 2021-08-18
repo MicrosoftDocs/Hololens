@@ -23,14 +23,7 @@ This page contains helpful information for setting up your HoloLens device's kio
 
 For general information about how to choose kiosk apps, see [Guidelines for choosing an app for assigned access (kiosk mode)](/windows/configuration/guidelines-for-assigned-access-app).
 
-If you use the Windows Device Portal to configure a single-app kiosk, you select the app during the setup process.  
-
 If you use a Mobile Device Management (MDM) system or a provisioning package to configure kiosk mode, you use the [AssignedAccess Configuration Service Provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) to specify applications. The CSP uses [Application User Model IDs (AUMIDs)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) to identify applications. The following table lists the AUMIDs of some in-box applications that you can use in a multi-app kiosk.
-
-> [!IMPORTANT]
-> Kiosk mode determines which apps are available when a user signs in to the device. However, kiosk mode is not a security method. It does not stop an "allowed" app from opening another app that is not allowed. Because we do not restrict this behavior, apps can still be launched from Edge, File explorer, and the Microsoft Store apps. If there are specific apps you don't want launched from a Kiosk, use [Windows Defender Application Control (WDAC) CSP](/windows/client-management/mdm/applicationcontrol-csp) to create appropriate policies.
->
-> In addition, the Mixed Reality Home is not able to be set as a kiosk app.
 
 <a id="aumids"></a>
 
@@ -66,6 +59,8 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 > <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.  
 > <sup>4</sup> You cannot enable Miracast directly. To enable Miracast as a kiosk app enable the Camera app and the Device Picker app.
 
+In addition, the Mixed Reality Home is not able to be set as a kiosk app.
+
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
 ## Kiosk XML Code Samples
@@ -74,11 +69,10 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 1. [Multiple app global assigned access profile excluding device owners](#multiple-app-global-assigned-access-profile-excluding-device-owners)
 1. [Multiple app assigned access profile for a local account or AAD user account](#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account)
 1. [Multiple app assigned access profiles for 2 AAD users or more](#multiple-app-assigned-access-profiles-for-2-aad-users-or-more)
-1. [Multiple app assigned access profile for 1 AAD group](#multiple-app-assigned-access-profiles-for-2-aad-users-or-more)
+1. [Multiple app assigned access profile for 1 AAD group](#multiple-app-assigned-access-profile-for-1-aad-group)
 1. [Multiple app assigned access profile for 2 AAD groups or more](#multiple-app-assigned-access-profile-for-2-aad-groups-or-more)
 1. [Multiple app assigned access profile for 1 AAD account and 1 AAD group](#multiple-app-assigned-access-profile-for-1-aad-account-and-1-aad-group)
 1. [Multiple app assigned access profile for visitors](#multiple-app-assigned-access-profile-for-visitors)
-1. [Multi app kiosk mode targeting an Azure AD group](#multi-app-kiosk-mode-targeting-an-azure-ad-group)
 1. [Multiple app kiosk mode targeting Azure AD account](#multiple-app-kiosk-mode-targeting-azure-ad-account)
 
 > [!NOTE]
@@ -99,9 +93,14 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
             <AllAppsList> 
                 <AllowedApps>                     
-                    	<!--TODO: Add AUMIDs of apps you want to be shown here, e.g. 
-<App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true" /> 
---> 
+                    	<!--
+                        TODO:
+                        1. Add AUMIDs of app(s) you want displayed in start menu. See examples below.
+                        2. Specify rs5:AutoLaunch="true" only for 1 app. If automatic launch not desired, remove this attribute.
+                        
+                        <App AppUserModelId="Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides" rs5:AutoLaunch="true" />
+                        <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
+                      -->
                  </AllowedApps> 
             </AllAppsList> 
             <StartLayout> 
@@ -147,9 +146,14 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
             <AllAppsList> 
                 <AllowedApps>                     
-                    	<!--TODO: Add AUMIDs of apps you want to be shown here, e.g. 
-<App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true" /> 
---> 
+                    	<!--
+                        TODO:
+                        1. Add AUMIDs of app(s) you want displayed in start menu. See examples below.
+                        2. Specify rs5:AutoLaunch="true" only for 1 app. If automatic launch not desired, remove this attribute.
+                        
+                        <App AppUserModelId="Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides" rs5:AutoLaunch="true" />
+                        <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
+                      -->
                  </AllowedApps> 
             </AllAppsList> 
             <StartLayout> 
@@ -222,15 +226,6 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 ### Multiple app assigned access profile for visitors
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-visitor-user.xml" highlight="9,10":::
-
-[Back to list](#kiosk-xml-code-samples)
-Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
-
-### Multi app kiosk mode targeting an Azure AD group
-
-This kiosk deploys a Kiosk that for users in the Azure AD group, they will have a Kiosk enabled that includes the three apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the GUID highlighted below to match an Azure AD Group of your own.
-
-:::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 [Back to list](#kiosk-xml-code-samples)
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
