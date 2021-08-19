@@ -2,7 +2,7 @@
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
   <Profiles>
     <Profiles>
-         <!—Profile Id can be any unique GUID -->
+         <!--Profile Id can be any unique GUID -->
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
                      <AllAppsList> 
                          <AllowedApps>                     
@@ -24,10 +24,10 @@
   </Profiles>
   <Configs>
     <Config>
-      <!—Reference and use one of the account types below per your requirements and remove rest of the unused account type nodes. -->
-      <!—TODO:  Specify AAD user account, e.g.  
+      <!--Reference and use one of the account types below per your requirements and remove rest of the unused account type nodes. -->
+      <!--TODO:  Specify AAD user account, e.g.  
       <Account>AzureAD\User name@AAD tenant name, e.g. AzureAD\contosouser@contoso.onmicrosoft.com </Account> -->
-      <!—TODO:  Specify local user account which must exist on Hololens before configuration is applied e.g.  
+      <!--TODO:  Specify local user account which must exist on Hololens before configuration is applied e.g.  
       <Account>user name, e.g. contosouser </Account> -->
       <DefaultProfile Id="{8739C257-184F-45DD-8657-C235819172A3}" />
     </Config>

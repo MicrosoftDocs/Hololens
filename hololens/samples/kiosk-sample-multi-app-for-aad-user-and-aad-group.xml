@@ -2,7 +2,7 @@
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
   <Profiles>
     <Profiles>
-         <!—Profile Id can be any unique GUID -->
+         <!--Profile Id can be any unique GUID -->
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
                      <AllAppsList> 
                          <AllowedApps>                     
@@ -21,7 +21,7 @@
       </StartLayout>
       <Taskbar ShowTaskbar="true" />
     </Profile>
-     <!—Profile Id can be any unique GUID -->
+     <!--Profile Id can be any unique GUID -->
         <Profile Id="{66A75FBE-A9EE-4497-B6B5-A2644A1D3997}"> 
                      <AllAppsList> 
                          <AllowedApps>                     
@@ -43,12 +43,12 @@
   </Profiles>
   <Configs>
     <Config>
-      <!—TODO:  Specify first AAD user account, e.g.  
+      <!--TODO:  Specify first AAD user account, e.g.  
       <Account>AzureAD\User name@AAD tenant name, e.g. AzureAD\contosouser_1@contoso.onmicrosoft.com </Account> -->
       <DefaultProfile Id="{8739C257-184F-45DD-8657-C235819172A3}" />
     </Config>
     <Config>
-      <!—TODO:  Specify AAD user group which must exist on Hololens before configuration is applied, where the Object ID is used as the name.
+      <!--TODO:  Specify AAD user group which must exist on Hololens before configuration is applied, where the Object ID is used as the name.
       <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" />
       <DefaultProfile Id="{66A75FBE-A9EE-4497-B6B5-A2644A1D3997}" />
     </Config>

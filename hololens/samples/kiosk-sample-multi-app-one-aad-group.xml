@@ -2,7 +2,7 @@
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
   <Profiles>
     <Profiles>
-         <!—Profile Id can be any unique GUID -->
+         <!--Profile Id can be any unique GUID -->
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
                      <AllAppsList> 
                          <AllowedApps>                     

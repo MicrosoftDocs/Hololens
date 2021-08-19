@@ -2,7 +2,7 @@
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
   <Profiles>
     <Profiles>
-         <!—Profile Id can be any unique GUID -->
+         <!--Profile Id can be any unique GUID -->
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
                      <AllAppsList> 
                          <AllowedApps>                     
@@ -21,7 +21,7 @@
       </StartLayout>
       <Taskbar ShowTaskbar="true" />
     </Profile>
-     <!—Profile Id can be any unique GUID -->
+     <!--Profile Id can be any unique GUID -->
         <Profile Id="{66A75FBE-A9EE-4497-B6B5-A2644A1D3997}"> 
                      <AllAppsList> 
                          <AllowedApps>                     
