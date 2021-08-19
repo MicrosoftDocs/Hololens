@@ -172,6 +172,9 @@ A dialog like below is shown.
 1. Click on the hyper-link shown as in the dialog above.
 1. Open ICD.log in a text editor and its contents should indicate the error.
 
+> [!NOTE]
+> If you have made several attempts, check the time stamps in the log. This will help you check only the current issues.
+
 ### Issue – Provisioning package built successfully but failed to apply.
 
 **Symptoms**
