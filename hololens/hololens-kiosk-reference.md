@@ -134,18 +134,19 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 ### Multiple app global assigned access profile excluding device owners
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?> 
 <AssignedAccessConfiguration 
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/202010/config" 
+xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
+xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
+xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
+xmlns:v5="http://schemas.microsoft.com/AssignedAccess/202010/config"
+xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config" 
 > 
     <Profiles>
          <!--Profile Id can be any unique GUID -->
-        <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-            <AllAppsList> 
-                <AllowedApps>                     
+      <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}">
+            <AllAppsList>
+                <AllowedApps>                   
                     	<!--
                         TODO:
                         1. Add AUMIDs of app(s) you want displayed in start menu. See examples below.
@@ -154,9 +155,9 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
                         <App AppUserModelId="Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides" rs5:AutoLaunch="true" />
                         <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
                       -->
-                 </AllowedApps> 
-            </AllAppsList> 
-            <StartLayout> 
+                 </AllowedApps>
+            </AllAppsList>
+            <StartLayout>
                 <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"> 
                       <LayoutOptions StartTileGroupCellWidth="6" /> 
                       <DefaultLayoutOverride> 
@@ -171,17 +172,17 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
                       </DefaultLayoutOverride> 
                     </LayoutModificationTemplate> 
                 ]]> 
-            </StartLayout> 
-            <Taskbar ShowTaskbar="true"/> 
-        </Profile> 
-    </Profiles> 
-    <Configs> 
-        <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-            <v5:Exclusions> 
-                <v5:SpecialGroup Name="DeviceOwner" /> 
-            </v5:Exclusions> 
-        </v3:GlobalProfile> 
-    </Configs> 
+            </StartLayout>
+            <Taskbar ShowTaskbar="true"/>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}">
+            <v5:Exclusions>
+                <v5:SpecialGroup Name="DeviceOwner" />
+            </v5:Exclusions>
+        </v3:GlobalProfile>
+    </Configs>
 </AssignedAccessConfiguration>
 ```
 
