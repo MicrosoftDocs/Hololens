@@ -31,24 +31,26 @@ With HoloLens 2, companies in medicine, manufacturing, aeronautics, architecture
 
 We hope this article inspires you to think of all the ways in which mixed reality (MR) will benefit your business.
 
-## Dynamics 365 apps
+## HoloLens 2 capabilities
 
-### Dynamics 365 Guides with HoloLens 2
+What makes the HoloLens 2 so powerful?
 
-Increased speed, fewer errors, and more confidence, these're the benefits of Microsoft Dynamic 365 Guides with HoloLens 2. 
-
-This MR app helps workers adapt to complex scenarios, everything from training, to assembly, to service, and repair. Workers of all experience levels can quickly learn and adapt. All the training can be done by picking up holographic parts and icons, reading contextual step-by-step instructions that move with them. Easy and out-of-the box [author branching](/dynamics365/mixed-reality/guides/pc-app-branching) can accommodate the different learning paths, while taking into account changes in workflow. For workers learning new and complex tasks, they can reply on Guides for information.
-
-### Dynamics 365 Remote Assist for HoloLens 2/mobile devices
-
-Now, frontline workers can collaborate with remote experts anytime and anywhere with 3D annotations right in their real-world environment. They can share what they are seeing in real-time, view critical information anchored right in their real-world environment to resolve issues quickly. Frontline workers can use Dynamics 365 Remote Assist on iOS and Android mobile devices, or HoloLens 2.
-
-Customers achieved the following benefits:
-
-* Zero error in the last two years; 90% less touch labor – Lockheed Martin
-* 70% less time needed for upskilling workers – Suntory
-* 50% less time needed for diagnosing and resolving issues – L’Oréal
-* 2.2 million yen saved (264 work hours) in travel costs – Musashi
+| Feature | Description |
+|---------|-------------|
+| World-anchoring | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
+| Hand tracking | Touch, grasp, and move holograms in ways that feel natural. HoloLens 2 adapts to your hands for a newfound satisfaction in your interactions. |
+| Eye tracking | Enjoy a new level of context and human understanding. HoloLens 2 understands precisely where you’re looking, so it can understand your intent and adapt the holograms to your eyes in real time. |
+| Voice enabled | Built-in voice commands allow you to quickly navigate and operate HoloLens 2 when your hands are occupied with a task. |
+| Ergonomic | HoloLens 2 is lightweight (3.28 kg) that includes a dial-in fit system to support extended use. |
+| Large FoV | Expand your holographic canvas with high resolution, large field-of-view displays. |
+| Untethered | Move freely, with no wires or external packs to get your way on the job. |
+| Azure-powered | Stream high-fidelity 3D content that can be anchored to a location and/or object that persists across users with Azure mixed reality services.
+| Mixed reality capture | Document an experience as a photo or a video to share with others in real time. |
+| Windows Hello for Business | Iris-based biometric authentication gets you quickly and securely into the flow of work. |
+| Windows Autopilot | Set up and pre-configure services for HoloLens 2 so they're ready to use right out of the box across distributed worksites. |
+| OS Updates | Keep secure with monthly servicing updates and take advantage of new productivity and manageability capabilities in bi-annual releases. |
+| Easily Manage devices | Manage multiple HoloLens 2 devices simultaneously using solutions like Microsoft Intune, VMware Workspace One, MobileIron, and many more. |
+| Operate in regulated environments | HoloLens 2 has an extensive device portfolio that supports highly regulated environments including environments designated ISO Class 5.0 and UL Class I, Division 2. |
 
 [!INCLUDE [solutions](includes/hlsolutions.md)]
 
@@ -62,9 +64,7 @@ Companies in healthcare, education, manufacturing, and AEC (architecture, engine
 
 Virtual rounds keep teams safe, make examinations efficient, and help staffs communicate effectively. Now, it's one doctor, instead of four. Thanks to HoloLens 2, a doctor can huddle with other experts, call up images and content, review healthcare data, and consult X-rays. It's everything a doctor needs in one headset. Soon, HoloLens will be the norm instead of a novelty. 
 
-**ROI:** 
-
-83% less staff time needed to serve patients.
+Now, Imperial College requires 83% less staff time needed to serve patients.
 
 #### Medlab Clinical
 
@@ -92,9 +92,7 @@ Improve test scores and knowledge retention. Revolutionize curriculum with exper
 
 50 percent better, that's how much better than their peers. Case Western medical students learned anatomy using HoloLens 2. Donning HoloLens devices, their introductory two-week dissection lesson was a revelation. Instead of missing nerves or destroying organs, they saw color-coordinated layers, gained spatial awareness, and explored with newfound clarity. Is the future of education stuff of dreams? It is certainly a way for students to learn better, do faster, and retain far more knowledge from anywhere.
 
-**ROI:** 
-
-50% increase in student test scores.
+Case Western sees 50% increase in student test scores.
 
 ### AEC (Architecture, Engineering, and Construction)
 
@@ -102,31 +100,26 @@ Re-imagine bridge inspection with Azure Remote Rendering and HoloLens. Bridge in
 
 Thanks to digital twins, computer models replicate what's physically in the field, engineers can spot cracks and measure both their width and length. This can reduce overall time spent by 30 percent and expense by 10 percent. 
 
-**ROI:** 
+With HoloLens 2, $25,000 savings are achieved during design review.
 
-$25,000 savings during design review.
+## Dynamics 365 apps
 
-## HoloLens 2 capabilities
+### Dynamics 365 Guides with HoloLens 2
 
-What makes the HoloLens 2 so powerful?
+Increased speed, fewer errors, and more confidence, these're the benefits of Microsoft Dynamic 365 Guides with HoloLens 2. 
 
-| Feature | Description |
-|---------|-------------|
-| World-anchoring | Anchored holograms stay precisely in place. HoloLens 2 understands your workspace. So, digital content persists over time – anchored to objects or surfaces where you work. |
-| Hand tracking | Touch, grasp, and move holograms in ways that feel natural. HoloLens 2 adapts to your hands for a newfound satisfaction in your interactions. |
-| Eye tracking | Enjoy a new level of context and human understanding. HoloLens 2 understands precisely where you’re looking, so it can understand your intent and adapt the holograms to your eyes in real time. |
-| Voice enabled | Built-in voice commands allow you to quickly navigate and operate HoloLens 2 when your hands are occupied with a task. |
-| Ergonomic | HoloLens 2 is lightweight (3.28 kg) that includes a dial-in fit system to support extended use. |
-| Large FoV | Expand your holographic canvas with high resolution, large field-of-view displays. |
-| Untethered | Move freely, with no wires or external packs to get your way on the job. |
-| Azure-powered | Stream high-fidelity 3D content that can be anchored to a location and/or object that persists across users with Azure mixed reality services.
-| Mixed reality capture | Document an experience as a photo or a video to share with others in real time. |
-| Windows Hello for Business | Iris-based biometric authentication gets you quickly and securely into the flow of work. |
-| Windows Autopilot | Set up and pre-configure services for HoloLens 2 so they're ready to use right out of the box across distributed worksites. |
-| OS Updates | Keep secure with monthly servicing updates and take advantage of new productivity and manageability capabilities in bi-annual releases. |
-| Easily Manage devices | Manage multiple HoloLens 2 devices simultaneously using solutions like Microsoft Intune, VMware Workspace One, MobileIron, and many more. |
-| Operate in regulated environments | HoloLens 2 has an extensive device portfolio that supports highly regulated environments including environments designated ISO Class 5.0 and UL Class I, Division 2. |
+This MR app helps workers adapt to complex scenarios, everything from training, to assembly, to service, and repair. Workers of all experience levels can quickly learn and adapt. All the training can be done by picking up holographic parts and icons, reading contextual step-by-step instructions that move with them. Easy and out-of-the box [author branching](/dynamics365/mixed-reality/guides/pc-app-branching) can accommodate the different learning paths, while taking into account changes in workflow. For workers learning new and complex tasks, they can reply on Guides for information.
 
+### Dynamics 365 Remote Assist for HoloLens 2/mobile devices
+
+Now, frontline workers can collaborate with remote experts anytime and anywhere with 3D annotations right in their real-world environment. They can share what they are seeing in real-time, view critical information anchored right in their real-world environment to resolve issues quickly. Frontline workers can use Dynamics 365 Remote Assist on iOS and Android mobile devices, or HoloLens 2.
+
+Customers achieved the following benefits:
+
+* Zero error in the last two years; 90% less touch labor – Lockheed Martin
+* 70% less time needed for upskilling workers – Suntory
+* 50% less time needed for diagnosing and resolving issues – L’Oréal
+* 2.2 million yen saved (264 work hours) in travel costs – Musashi
 
 ## Managing HoloLens 2 in your organization
 HoloLens 2 includes features that make it easier for organizations to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](hololens-provisioning.md) using [Windows Configuration Designer](app-deploy-provisioning-package.md#setup).
