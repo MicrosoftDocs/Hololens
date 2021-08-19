@@ -88,7 +88,7 @@ If you are unable to see the Moving Platform Mode option in Device Portal, then 
 
 As mentioned above, this feature is a beta feature available only in Developer Mode, which means you may hit issues. If that happens, so we can investigate and improve the product, please
 
-1. Report the issue via [Feedback Hub](hololens-feedback.md) under the H**ologram accuracy, stability, and reliability** category and include:
+1. Report the issue via [Feedback Hub](hololens-feedback.md) under the **Hologram accuracy, stability, and reliability** category and include:
     1. A description of problem, including the expected behavior and experienced behavior
     1. A Mixed Reality [video capture](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue
 2.	Open a support case at [https://aka.ms/hlsupport](https://aka.ms/hlsupport) and share the Feedback Hub URL, so we can reach out in case we have follow-up questions
