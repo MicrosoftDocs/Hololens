@@ -245,7 +245,12 @@ Once the above instructions are completed, your HoloLens 2 users will go through
        >
        > For devices using ethernet adapters you must connect the device to the network before the Out-of-the-Box-Experience (OOBE) starts. The device determines whether it is provisioning as an Autopilot device while on the first OOBE screen. If the device cannot connect to the network, or if you choose not to provision the device as an Autopilot device, you cannot change to Autopilot provisioning at a later time. Instead, you would have to start this procedure over in order to provision the device as an Autopilot device.
 
-1. The device should automatically start OOBE. Do not interact with OOBE. Instead sit, back and relax! Let HoloLens 2 detect network connectivity and allow it complete OOBE automatically. The device may restart during OOBE. The OOBE screens should resemble the following.
+1. The device should automatically start OOBE. Do not interact with OOBE.
+
+> [!IMPORTANT]
+> Please do not interact with OOBE or press power button to bring system into standby / shutdown, while autopilot is in progress. This may cause autopilot flow to not complete.
+
+   Let HoloLens 2 detect network connectivity and allow it complete OOBE automatically. The device may restart during OOBE. The OOBE screens should resemble the following.
 
    ![OOBE step 1](./images/autopilot-welcome.jpg)
    ![OOBE step 2](./images/autopilot-step-complete.jpg)
