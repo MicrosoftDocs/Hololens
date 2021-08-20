@@ -247,8 +247,8 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 
 1. The device should automatically start OOBE. Do not interact with OOBE.
 
-> [!IMPORTANT]
-> Please do not interact with OOBE or press power button to bring system into standby / shutdown, while autopilot is in progress. This may cause autopilot flow to not complete.
+    > [!IMPORTANT]
+    > Please do not interact with OOBE or press power button to bring system into standby / shutdown, while autopilot is in progress. This may cause autopilot flow to not complete.
 
    Let HoloLens 2 detect network connectivity and allow it complete OOBE automatically. The device may restart during OOBE. The OOBE screens should resemble the following.
 
