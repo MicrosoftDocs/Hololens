@@ -32,7 +32,7 @@ This feature configures HoloLens 2 device for multiple app kiosk mode, which is 
     URI value: ./Device/Vendor/MSFT/AssignedAccess/Configuration
 
     > [!div class="mx-imgBorder"]
-    > ![Global Assigned Access OMA-URI in Intune](images/global-assigned-access-omauri.png)
+    > ![Global Assigned Access OMA-URI in Intune.](images/global-assigned-access-omauri.png)
 
 2. For value, update and paste following content:
 

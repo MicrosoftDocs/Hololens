@@ -185,18 +185,18 @@ Check out related release notes:
 
 ### Introducing the new Microsoft Edge
 
-![Animation of legacy Microsoft Edge logo to new Microsoft Edge logo](images/new-edge.gif)
+![Animation of legacy Microsoft Edge logo to new Microsoft Edge logo.](images/new-edge.gif)
 
 The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) to create better compatibility for customers and less fragmentation of the web for web developers.
 
 > [!IMPORTANT]
 > This new Microsoft Edge automatically replaces legacy Microsoft Edge, which is [no longer supported](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) in new releases.
 
-![New Microsoft Edge screenshot](images/new-edge-ui.png)
+![New Microsoft Edge screenshot.](images/new-edge-ui.png)
 
 #### Launching the new Microsoft Edge
 
-The new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) is pinned to the Start menu and will automatically launch when you activate a web link.
+The new Microsoft Edge ![new Microsoft Edge icon.](images/new_edge_logo.png) (represented by a blue and green swirl icon) is pinned to the Start menu and will automatically launch when you activate a web link.
 
 > [!NOTE]
 > When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge. If you continue to use legacy Microsoft Edge after launching the new Microsoft Edge, that new data will not be synced from legacy Microsoft Edge to the new Microsoft Edge.
@@ -305,7 +305,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 1. Navigate to a website with WebXR support.
 1. Select the **Enter VR** button on the website. The location and visual representation of this button may vary per website, but it may look similar to:
 
-    ![Enter VR button example](images/75px-enter-vr.png)
+    ![Enter VR button example.](images/75px-enter-vr.png)
 
 1. The first time you try to launch a WebXR experience on a specific domain, the browser will ask for consent to enter an immersive view, select **Allow**.
 1. Use [HoloLens 2 gestures](hololens2-basic-usage.md#the-hand-tracking-frame) to manipulate the experience.
@@ -322,7 +322,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 1. Navigate to a 360-degree video on YouTube.
 1. In the video frame, select the mixed reality headset button:
 
-    ![Button to activate 360 Viewer](images/enter-360-viewer.jpg)
+    ![Button to activate 360 Viewer.](images/enter-360-viewer.jpg)
 
 1. The first time you try to launch 360 Viewer on a specific domain, the browser will ask for consent to enter an immersive view. Select **Allow**.
 1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.
@@ -343,7 +343,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 > [!NOTE]
 > Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.
 
-![New Settings app homepage](images/new-settings-app.png)
+![New Settings app homepage.](images/new-settings-app.png)
 
 **New features and settings**
 - Settings search: search for settings from the Settings homepage using keywords or the setting's name.
@@ -388,7 +388,7 @@ With this new setting, you can select an alternative color profile for your Holo
     > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
 1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
 
-    ![Display color calibration scene](images/color-cal-ui.png)
+    ![Display color calibration scene.](images/color-cal-ui.png)
     
 1. When you're happy with the selected profile, select the **Save & Exit** button
 1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
@@ -469,11 +469,11 @@ Introduced in this Windows build, when selecting **Other user** which is located
 
 When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign in screen for this user.
 
-![Sign-in screen default](./images/multiusers1.jpg)
+![Sign-in screen default.](./images/multiusers1.jpg)
 
 <br>
 
-![Sign-in screen other users](./images/multiusers2.jpg)
+![Sign-in screen other users.](./images/multiusers2.jpg)
 
 ### USB-C External Microphone Support
 
@@ -484,7 +484,7 @@ Users can select USB-C connected external microphones using the **Sound** settin
 
 Open the **Settings** app and select **System** > **Sound**.
 
-![Sound Settings](images/usbc-mic-1.jpg)
+![Sound Settings.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > To use external microphones with **Remote Assist**, users will need to click the “Manage sound devices” hyperlink.
@@ -493,11 +493,11 @@ Open the **Settings** app and select **System** > **Sound**.
 >
 > Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
 
-![Manage sound devices](images/usbc-mic-2.png)
+![Manage sound devices.](images/usbc-mic-2.png)
 
 <br>
 
-![Set microphone default](images/usbc-mic-3.jpg)
+![Set microphone default.](images/usbc-mic-3.jpg)
 
 #### What about Bluetooth microphone support?
 
@@ -509,7 +509,7 @@ Be aware that some USB-C microphones incorrectly report themselves as both a mic
 
 In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
 
-![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
+![Troubleshooting USB-C microphones.](images/usbc-mic-4.png)
 
 ### Visitor Auto logon for Kiosks
 
@@ -796,7 +796,7 @@ You can find sample apps on [Windows Universal Samples GitHub](https://github.co
 
 Read about the full process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
 
-![Installing MRTK Examples via App Installer](images/hololens-app-installer-picture.jpg)
+![Installing MRTK Examples via App Installer.](images/hololens-app-installer-picture.jpg)
 
 ### Improvements and fixes in the update:
 
@@ -896,9 +896,9 @@ The certificate should now be installed on the device.
 1. Click **Remove**
 1. Select **Yes** when prompted for confirmation.
 
-![Certificate viewer in the Settings app](images/certificate-viewer-device.jpg)
+![Certificate viewer in the Settings app.](images/certificate-viewer-device.jpg)
 
-![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
+![Picture showing how to use Certificate UI to install a certificate.](images/certificate-device-install.jpg)
 
 This information can be found later [on a new Certificate Manager page](certificate-manager.md).
 
@@ -961,7 +961,7 @@ Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
+   > ![Setting tennant lockdown via OMA-URI.](images/hololens-tenant-lockdown.png)
 
 1. Create a group and assign the device configuration profile to that device group. 
 
@@ -976,7 +976,7 @@ Verify in the Intune portal that device configuration has been successfully appl
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
+   > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune.](images/hololens-tenant-lockdown-false.png)
 
 1. Create a group and assign the device configuration profile to that device group. 
 
@@ -1106,7 +1106,7 @@ We’ve now enabled a policy that allows IT Admins to either prevent specific pa
 
 To learn which page settings you can customize on HoloLens 2, please visit our [Settings URIs page](settings-uri-list.md). 
  
-![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
+![Screenshot of active hours being modified in the Settings app.](images/hololens-page-visibility-list.jpg)
 
 ### Research mode
 While in Research Mode, the HoloLens 2 becomes a potent tool for computer vision research. Compared to previous editions, Research Mode for HoloLens 2 has the following advantages:
@@ -1363,7 +1363,7 @@ These "in-box" apps support dark mode:
 - 3D Viewer 
 - Movies & TV 
 
-![Dark mode windows tiled](images/DarkMode.jpg)
+![Dark mode windows tiled.](images/DarkMode.jpg)
 
 ### System voice commands
 

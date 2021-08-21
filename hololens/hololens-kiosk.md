@@ -412,7 +412,7 @@ Save the following sample as an XML file. You can use this file when you configu
 1. Select **Runtime settings** > **AssignedAccess** > **MultiAppAssignedAccessSettings**.
 1. In the center pane, select **Browse** to locate and select the kiosk configuration XML file that you created.
 
-   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer](./images/multiappassignedaccesssettings.png)
+   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer.](./images/multiappassignedaccesssettings.png)
 
 1. **Optional**. (If you want to apply the provisioning package after the initial setup of the device, and there is an admin user already available on the kiosk device, skip this step.) Select **Runtime settings** &gt; **Accounts** &gt; **Users**, and then create a user account. Provide a user name and password, and then select **UserGroup** > **Administrators**.  
   
@@ -461,7 +461,7 @@ To set up kiosk mode by using the Windows Device Portal, follow these steps.
 
 1. Select **Enable Kiosk Mode**, select an app to run when the device starts, and then select **Save**.
 
-    ![Kiosk Mode](images/kiosk.png)
+    ![Kiosk Mode.](images/kiosk.png)
 1. Restart HoloLens. If you still have your Device Portal page open, you can select **Restart** at the top of the page.
 
 > [!NOTE]

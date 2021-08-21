@@ -17,13 +17,13 @@ appliesto:
 
 # HoloLens (1st gen) hardware
 
-![Microsoft HoloLens (1st gen)](images/see-through-400px.jpg)
+![Microsoft HoloLens (1st gen).](images/see-through-400px.jpg)
 
 Microsoft HoloLens (1st gen) is the world's first fully untethered holographic computer. HoloLens redefines personal computing through holographic experiences to empower you in new ways. HoloLens blends cutting-edge optics and sensors to deliver 3D holograms pinned to the real world around you.
 
 ## HoloLens components
 
-![Image that shows the contents of the box](images/hololens-box-contents.png)
+![Image that shows the contents of the box.](images/hololens-box-contents.png)
 
 Your HoloLens includes the following features:
 
@@ -60,7 +60,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ### Display
 
-![HoloLens has see-through holographic lenses](images/displays-400px.jpg)
+![HoloLens has see-through holographic lenses.](images/displays-400px.jpg)
 
 | &nbsp; | &nbsp; |
 |---|---|
@@ -71,7 +71,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ### Sensors
 
-![HoloLens has sensors for understanding its environment and user actions](images/sensor-bar-400px.jpg)
+![HoloLens has sensors for understanding its environment and user actions.](images/sensor-bar-400px.jpg)
 
 - 1 inertial measurement unit (IMU)
 - 4 environment understanding cameras
@@ -103,7 +103,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ### Processors
 
-![The motherboard for Microsoft HoloLens](images/motherboard-400px.jpg)
+![The motherboard for Microsoft HoloLens.](images/motherboard-400px.jpg)
 
 - Intel 32-bit architecture with TPM 2.0 support
 - Custom-built Microsoft Holographic Processing Unit (HPU 1.0)
@@ -161,7 +161,7 @@ To clean the visor, remove any dust using a camel or goat hair lens brush or a b
 
 To clean the rest of the device, including the headband and device arms, use a lint-free cloth moistened with mild soap and water. Let your HoloLens dry completely before using it again.
 
-![Image that shows how to clean the visor](images/hololens-cleaning-visor.png)
+![Image that shows how to clean the visor.](images/hololens-cleaning-visor.png)
 
 ## Finding the Serial number
 

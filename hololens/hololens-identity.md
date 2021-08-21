@@ -83,11 +83,11 @@ Introduced in [Windows Holographic, version 21H1](hololens-release-notes.md#wind
 
 When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign in screen for this user.
 
-![Sign-in screen default](./images/multiusers1.jpg)
+![Sign-in screen default.](./images/multiusers1.jpg)
 
 <br>
 
-![Sign-in screen other users](./images/multiusers2.jpg)
+![Sign-in screen other users.](./images/multiusers2.jpg)
 
 ## Removing users
 
@@ -135,7 +135,7 @@ Iris biometric information is stored locally on each HoloLens per [Windows Hello
 ### Do I have to use Iris authentication?
 No, you can skip this step during setup. 
 
-![Set-up Iris](./images/setup-iris.png)
+![Set-up Iris.](./images/setup-iris.png)
 
 HoloLens 2 provides many different options for authentication, including FIDO2 security keys.
 

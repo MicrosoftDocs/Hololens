@@ -41,7 +41,7 @@ Take the following steps to ensure the highest visual quality of holograms prese
     > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
 1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
 
-    ![Display color calibration scene](images/color-cal-ui.png)
+    ![Display color calibration scene.](images/color-cal-ui.png)
     
 6. When you're happy with the selected profile, select the **Save & Exit** button
 1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
@@ -74,7 +74,7 @@ If you're unhappy with the custom color profile saved to your HoloLens 2, you ca
 
 Occasionally, your HoloLens 2 will show different patterns in the bottom left and right corners of the display. Examples are shown below (animated GIFs). This pattern is part of the normal operation of your HoloLens 2 device to calibrate the display for optimum experience.
 
-![Biphase pattern](./images/DAT-Biphase-Fiducial.gif) ![GEO pattern](./images/DAT-GEO-Fiducial.gif)
+![Biphase pattern.](./images/DAT-Biphase-Fiducial.gif) ![GEO pattern](./images/DAT-GEO-Fiducial.gif)
 
 ### Why am I unable to take an accurate photograph of my HoloLens 2 display?
 

@@ -193,7 +193,7 @@ On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows In
 
 Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
 
-![Windows Insider Channels explanation](images/WindowsInsiderChannels.png)
+![Windows Insider Channels explanation.](images/WindowsInsiderChannels.png)
 
 For more information, see [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) on Windows Blogs.
 Then, select **Active development of Windows**, choose whether you'd like to receive **Dev Channel** or **Beta Channel** builds, and review the program terms.

@@ -180,7 +180,7 @@ There are two ways to retrieve the hardware hash.
    You should see a list that includes **HoloLens**. If this option is not present, use one of the [Feedback](hololens2-autopilot.md#feedback-and-support-for-autopilot) options to contact us.
 
    > [!div class="mx-imgBorder"]
-   > ![Add a profile name and description](./images/hololens-ap-profile-name.png)
+   > ![Add a profile name and description.](./images/hololens-ap-profile-name.png)
 
 1. On the **Out-of-box experience (OOBE)** page, most of the settings are pre-configured to streamline OOBE for this evaluation. Optionally, you can configure the following settings:  
 
@@ -191,7 +191,7 @@ There are two ways to retrieve the hardware hash.
      > If you use a device name template, the OOBE process restarts the device one additional time after it applies the device name and before it joins the device to Azure AD. This restart enables the new name to take effect.  
 
    > [!div class="mx-imgBorder"]
-   > ![Configure OOBE settings](./images/hololens-ap-profile-oobe.png)
+   > ![Configure OOBE settings.](./images/hololens-ap-profile-oobe.png)
 
 1. After you configure the settings, select **Next**.
 1. On the **Scope tags** page, optionally add the scope tags that you want to apply to this profile. For more information about scope tags, see [Use role-based access control and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags.md). When finished, select **Next**.
@@ -207,14 +207,14 @@ There are two ways to retrieve the hardware hash.
 1. On the **Review + Create** page, review the settings and then select **Create** to create the profile.  
 
    > [!div class="mx-imgBorder"]
-   > ![Review + create](./images/hololens-ap-profile-summ.png)
+   > ![Review + create.](./images/hololens-ap-profile-summ.png)
 
 ### 6. Verify the ESP configuration
 
 The Enrollment Status Page (ESP) displays the status of the complete device configuration process that runs when an MDM managed user signs into a device for the first time. Make sure that your ESP configuration resembles the following, and verify that the assignments are correct.  
 
 > [!div class="mx-imgBorder"]
-> ![ESP configuration](./images/hololens-ap-profile-settings.png)
+> ![ESP configuration.](./images/hololens-ap-profile-settings.png)
 
 ### 7. Verify the profile status of the HoloLens devices
 
@@ -252,9 +252,9 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 
    Let HoloLens 2 detect network connectivity and allow it complete OOBE automatically. The device may restart during OOBE. The OOBE screens should resemble the following.
 
-   ![OOBE step 1](./images/autopilot-welcome.jpg)
-   ![OOBE step 2](./images/autopilot-step-complete.jpg)
-   ![OOBE step 3](./images/autopilot-device-setup.jpg)
+   ![OOBE step 1.](./images/autopilot-welcome.jpg)
+   ![OOBE step 2.](./images/autopilot-step-complete.jpg)
+   ![OOBE step 3.](./images/autopilot-device-setup.jpg)
 
 1. At the end of OOBE, you can sign in to the device by using your user name and password.
 
@@ -279,7 +279,7 @@ Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
+   > ![Setting tennant lockdown via OMA-URI.](images/hololens-tenant-lockdown.png)
 
 1. Create a group and assign the device configuration profile to that device group.
 
@@ -295,7 +295,7 @@ Verify in the Intune portal that device configuration has been successfully appl
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
+   > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune.](images/hololens-tenant-lockdown-false.png)
 
 1. Create a group and assign the device configuration profile to that device group. 
 

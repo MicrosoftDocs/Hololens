@@ -25,7 +25,7 @@ Use it in place of hand gestures to select, scroll, move, and resize apps.
 
 The HoloLens (1st gen) clicker has a finger loop to make it easier to hold, and an indicator light.
 
-![The HoloLens Clicker](images/use-hololens-clicker-1.png)
+![The HoloLens Clicker.](images/use-hololens-clicker-1.png)
 
 ### Clicker indicator lights
 
@@ -53,7 +53,7 @@ When the clicker battery is low, the battery indicator will blink amber. Plug th
 
 To put on the clicker, slide the loop over your ring or middle finger so that the Micro USB port faces toward your wrist. Rest your thumb in the indentation.
 
-![How to hold the Clicker](images/use-hololens-clicker-2.png)
+![How to hold the Clicker.](images/use-hololens-clicker-2.png)
 
 ### Clicker gestures
 

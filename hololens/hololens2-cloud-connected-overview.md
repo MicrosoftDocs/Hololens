@@ -33,7 +33,7 @@ This is a setup similar to [Scenario A: Deploy to cloud connect devices](/holole
 - Users sign in with their own corporate account (Azure AD)
     - Single or multiple users per device are supported.
 
-:::image type="content" alt-text="Cloud connected scenario" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
+:::image type="content" alt-text="Cloud connected scenario." source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
 
 
 ## Learn about Remote Assist
