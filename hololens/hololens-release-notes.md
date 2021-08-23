@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/12/2021
+ms.date: 9/12/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -23,7 +23,7 @@ appliesto:
 To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
 
 > [!NOTE]
-> The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update to HoloLens 2 in October 2021](#windows-holographic-version-21H2), and we are working on more upcoming releases based on customer feedback.
+> The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update to HoloLens 2 in October 2021](#windows-holographic-version-21h2), and we are working on more upcoming releases based on customer feedback.
 
 ## Windows Holographic, version 21H2
 
@@ -62,6 +62,8 @@ To learn more about what is supported and how to enabled this new feature, [visi
 Introduced in Windows Insider build 20348.1405. We’ve added support to the [Certificate Manager](certificate-manager.md) to now use .pfx certificates. When users navigate to **Settings** > **Update & Security** > **Certificates**, and select **Install a certificate** the UI now supports .pfx certificate file.
 Users can import .pfx certificate, with private key, to user store or machine store.
 
+This information can be viewed later on the [certificate manager page](certificate-manager.md).
+
 ### View advanced diagnostic report in Settings on HoloLens
 
 For managed devices when troubleshooting behavior, confirming that an expected policy configuration is applied is an important step. Previously to this new feature, this had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** > **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
@@ -85,13 +87,15 @@ This new feature will be enabled when your device updates, and doesn’t need to
 
 We hope with this newer addition of audiovisual feedback it is easier to gather diagnostic data, and more quickly be able to troubleshoot your problems.
 
+This information can be viewed later on the [diagnostic logs page](hololens-diagnostic-logs.md#offline-diagnostics).
+
 ### Low storage log collection improvements
 
 In scenarios where a device seems to be low on disk space when diagnostic logs are collected, an additional report named **StorageDiagnostics.zip** will be created. The threshold of low storage is determined automatically by Windows [storage sense](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
 
-### CSP changes for reporting HoloLens details
+This information can be viewed later on the [diagnostic logs page](hololens-diagnostic-logs.md#offline-diagnostics).
 
-- Introduced in Windows Insider build, 20348.1403
+### CSP changes for reporting HoloLens details
 
 The following CSPs have been updated with new ways to report information from your HoloLens devices.
 
@@ -166,11 +170,15 @@ The following update policies were be added:
 
 Now enabled for HoloLens is a new policy that allows IT Admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. These can be set based on a few different triggers such as a scheduled time or sign-in. To learn more about how to use this policy please view [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
 
+This information can be found later in the [app deployment store for business page](app-deploy-store-business).
+
 ### Use only private store apps for Microsoft Store
 
 The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy enables the Microsoft Store app to be configured to only show the private store configured for your organization. Limiting access to only the apps you’ve made available.
 
 Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+This information can be found later in the [app deployment store for business page](app-deploy-store-business).
 
 ### Fixes and improvements
 
@@ -179,7 +187,6 @@ Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/
 - Addresses issues around reporting compliance properties from HoloLens devices; a reboot may be required for the correct reporting to be triggered on Insider builds.  
 - Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
 - Updated the in-box version of Remote Assist that's installed on fresh flashes.
-
 
 ## Windows Holographic, version 21H1 - August 2021 Update
 

@@ -3,7 +3,7 @@ title: Collect and use diagnostic information from HoloLens devices
 description: Learn how to collect, use, and retain diagnostic information from HoloLens devices.
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 10/15/2020
+ms.date: 9/12/2021
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -158,3 +158,36 @@ Follow these steps to collect diagnostics:
 
 > [!NOTE]
 > Some of the diagnostics ZIP files may contain PII.
+
+### Offline Diagnostics notifications
+
+- Introduced in [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+This an update for an existing feature called [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics). Previously, there was no clear indicator to users that they had triggered diagnostic collection or it had completed.
+Now added in Windows Insider builds, there are two forms of audiovisual feedback for Offline Diagnostics. The first being toasts notifications displayed for both when collection starts and completes. These will be displayed when the user is logged in and has visuals.
+
+![Toast for collecting logs.](./images/logcollection1.jpg)
+
+![Toast when log collection is complete.](./images/logcollection2.jpg)
+
+Because users often use Offline Diagnostics as a fallback log gathering mechanism for when they don’t have access to a display, can’t log-in or are still in OOBE there will also be an audio cue played when logs are gathered. This sound will be played in addition to the toast notification.
+
+This new feature will be enabled when your device updates, and doesn’t need to be enabled or managed. In any event that this new feedback cannot be displayed or heard, Offline Diagnostics will still be generated.
+
+We hope with this newer addition of audiovisual feedback it is easier to gather diagnostic data, and more quickly be able to troubleshoot your problems.
+
+### Low storage log collection improvements
+
+- Introduced in [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+In scenarios where a device seems to be low on disk space when diagnostic logs are collected, an additional report named **StorageDiagnostics.zip** will be created. The threshold of low storage is determined automatically by Windows [storage sense](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+
+## View advanced diagnostic report in Settings on HoloLens
+
+- Introduced in [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+For managed devices when troubleshooting behavior, confirming that an expected policy configuration is applied is an important step. Previously to this new feature, this had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** > **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
+
+Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select **View advanced diagnostic report**. This will generate and open the report in a new Edge window.
+
+![View advanced diagnostic report in Settings app.](./images/view-advanced-diagnostic-report.jpg)
