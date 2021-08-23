@@ -29,8 +29,8 @@ This article covers:
 
 HoloLens needs to be able to track your head position with [6 degrees of freedom](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (X, Y, Z, translation and roll, pitch, yaw rotation) in order to show stable holograms. To do that, HoloLens tracks two similar pieces of information from two separate sources:
 
-1. Visible light cameras – which track the environment, for example, the physical room in which you are using the HoloLens
-1. Inertial Measurement Unit (IMU), – which consists of an accelerometer, gyroscope, and magnetometer that tracks your head motion and orientation relative to Earth
+1. **Visible light cameras.** These cameras track the environment, for example, the physical room in which you are using the HoloLens
+1. **Inertial Measurement Unit (IMU).** The IMU consists of an accelerometer, gyroscope, and magnetometer that tracks your head motion and orientation relative to Earth
 
 Information from these two sources is compounded to track your head position at a low latency and high enough frequency in order to render smooth holograms.
 
@@ -80,7 +80,7 @@ If you are unable to see the Moving Platform Mode option in Device Portal, then 
 
 ## Reporting Issues
 
-As mentioned above, this feature is a beta feature available only in Developer Mode, which means you may hit issues. If that happens, so we can investigate and improve the product, please
+As mentioned above, this feature is a beta feature available only in Developer Mode, which means you may hit issues. If that happens, so we can investigate and improve the product:
 
 1. Report the issue via [Feedback Hub](hololens-feedback.md) under the **Hologram accuracy, stability, and reliability** category and include:
     1. A description of problem, including the expected behavior and experienced behavior

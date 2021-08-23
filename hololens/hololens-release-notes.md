@@ -170,7 +170,7 @@ The following update policies were be added:
 
 Now enabled for HoloLens is a new policy that allows IT Admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. These can be set based on a few different triggers such as a scheduled time or sign-in. To learn more about how to use this policy please view [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
 
-This information can be found later in the [app deployment store for business page](app-deploy-store-business).
+This information can be found later in the [app deployment store for business page](app-deploy-store-business.md).
 
 ### Use only private store apps for Microsoft Store
 
@@ -178,14 +178,14 @@ The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy e
 
 Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
-This information can be found later in the [app deployment store for business page](app-deploy-store-business).
+This information can be found later in the [app deployment store for business page](app-deploy-store-business.md).
 
 ### Fixes and improvements
 
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - Addresses issues around reporting compliance properties from HoloLens devices; a reboot may be required for the correct reporting to be triggered on Insider builds.  
-- Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
+- Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
 - Updated the in-box version of Remote Assist that's installed on fresh flashes.
 
 ## Windows Holographic, version 21H1 - August 2021 Update
