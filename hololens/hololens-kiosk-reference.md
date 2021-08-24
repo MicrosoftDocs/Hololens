@@ -198,7 +198,7 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 
 ### Multiple app assigned access profiles for two AAD users or more
 
-:::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-users-or-more.xml" highlight="22-24,80,88":::
+:::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-users-or-more.xml" highlight="22-24,52,53,80,88":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
@@ -219,7 +219,7 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 
 ### Multiple app assigned access profile for one AAD account and one AAD group
 
-:::code language="xml" source="samples/kiosk-sample-multi-app-for-aad-user-and-aad-group.xml" highlight="22-24,80,91":::
+:::code language="xml" source="samples/kiosk-sample-multi-app-for-aad-user-and-aad-group.xml" highlight="22-24,52,53,80,91":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
