@@ -36,13 +36,10 @@ The following table lists the feature capabilities in the different kiosk modes.
 
 | &nbsp; |Start menu |Quick Actions menu |Camera and video |Miracast |Cortana |Built-in voice commands |
 | --- | --- | --- | --- | --- | --- | --- |
-|Single-app kiosk |Disabled |Disabled |Disabled |Disabled   |Disabled |Enabled<sup>1</sup> |
-|Multi-app kiosk |Enabled |Enabled<sup>2</sup> |Available<sup>2</sup> |Available<sup>2</sup> |Available<sup>2, 3</sup>  |Enabled<sup>1</sup> |
+|Single-app kiosk |Disabled |Disabled |Disabled |Disabled   |Disabled |Enabled* |
+|Multi-app kiosk |Enabled |Enabled*  |Available*  |Available* |Available*   |Enabled*  |
 
-> <sup>1</sup> Voice commands that relate to disabled features do not function.  
-> <sup>2</sup> To enable Miracast as a kiosk app enable the Camera app and the Device Picker app. For more information about how to enable disabled features, see [HoloLens AUMIDs for apps](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids).
->
-> <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.
+For more information about how to enable disabled features, or how voice commands interact with disabled features and Cortana see [HoloLens AUMIDs for apps](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids).
 
 ## Key general considerations before configuring kiosk mode
 
