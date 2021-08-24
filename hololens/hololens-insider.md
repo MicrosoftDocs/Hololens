@@ -40,6 +40,7 @@ This one’s about the improved troubleshooting and device reports, some fixed b
 | [Improved update restart detection and notifications](#improved-update-restart-detection-and-notifications) | New enabled polices and UX for updates. | IT Admins | 20348.1405 |
 | [Smart Retry for app updates](#smart-retry-for-app-updates) | Allows IT Admins to scheduled retries to update apps. | IT Admins | 20348.1405 |
 | [Use only private store apps only for Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure the store app to show only apps from organization | IT Admin | 20348.1408 |
+| [Use WDAC and LOB apps](#use-wdac-and-lob-apps) | Allows IT Admins to use their own apps and still use WDAC to block other apps. | IT Admins | 20348.1405 |
 | [Fixes and improvements](#fixes-and-improvements) | Fixes and improvements for HoloLens. | All | 20348.1411 |
 
 ### IT Admin Insider Feature Checklist
@@ -48,7 +49,8 @@ This one’s about the improved troubleshooting and device reports, some fixed b
 ✔️ If you'd like configure your apps to automatically attempt to update after failing to update, [set this new CSP for smart retry.](#smart-retry-for-app-updates) <br>
 ✔️ If you'd like to have more control over OS updates, check out these [newly enabled Update policies.](#improved-update-restart-detection-and-notifications) <br>
 ✔️ If you need to get make your organization's apps available on the company store via the Microsoft Store, but want to only allow access to your organization's apps and not the full store, [set this policy.](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️ If you'd like to know the free storage space, SSID or BSSID of your HoloLens devices check out these [reporting CSPs.](#csp-changes-for-reporting-hololens-details)
+✔️ If you'd like to know the free storage space, SSID or BSSID of your HoloLens devices check out these [reporting CSPs.](#csp-changes-for-reporting-hololens-details) <br>
+✔️ If you'd like to use WDAC to block apps or processes from launching, but also need to use your own line of bushiness apps, you can now allow them in your WDAC policy.
 
 ### Moving Platform Mode
 
@@ -170,6 +172,10 @@ Now enabled for HoloLens is a new policy that allows IT Admins to set a recurrin
 The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy enables the Microsoft Store app to be configured to only show the private store configured for your organization. Limiting access to only the apps you’ve made available.
 
 Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+### Use WDAC and LOB apps
+
+You can now use WDAC to block apps or processes from launching and continue to use your own line of bushiness apps. you can now allow them in your WDAC policy. This involves running an additional line of code in powershell when creating your WDAC policy. [Review the steps here.](/mem/intune/configuration/custom-profile-hololens)
 
 ### Fixes and improvements
 
