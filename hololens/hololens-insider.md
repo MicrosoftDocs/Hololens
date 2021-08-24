@@ -37,7 +37,7 @@ This one’s about the improved troubleshooting and device reports, some fixed b
 | [Low storage log collection improvements](#low-storage-log-collection-improvements) | Improvements to log collection scenarios during low storage situations. | Troubleshooting | 20348.1412 |
 | [CSP changes for reporting HoloLens details](#csp-changes-for-reporting-hololens-details) | New CSPs for to query data | IT Admins    | 20348.1403                 |
 | [Auto login policy controlled by CSP](#auto-login-policy-controlled-by-csp) | Used to log in an account automatically | IT Admins | 20348.1405 |
-| [Improved update restart detection and notifications](#improved-update-restart-detection-and-notifications) | New enabled polices and UX for updates. | IT Admins | 20348.1405 |
+| [Improved update restart detection and notifications](#improved-update-restart-detection-and-notifications) | New enabled policies and UX for updates. | IT Admins | 20348.1405 |
 | [Smart Retry for app updates](#smart-retry-for-app-updates) | Allows IT Admins to scheduled retries to update apps. | IT Admins | 20348.1405 |
 | [Use only private store apps only for Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure the store app to show only apps from organization | IT Admin | 20348.1408 |
 | [Use WDAC and LOB apps](#use-wdac-and-lob-apps) | Allows IT Admins to use their own apps and still use WDAC to block other apps. | IT Admins | 20348.1405 |
@@ -45,7 +45,7 @@ This one’s about the improved troubleshooting and device reports, some fixed b
 
 ### IT Admin Insider Feature Checklist
 
-✔️ If you'd like to set a single Azure AD account to automatically log-in, [configure this new CSP.](#auto-login-policy-controlled-by-csp) <br>
+✔️ If you'd like to set a single Azure AD account to automatically log in, [configure this new CSP.](#auto-login-policy-controlled-by-csp) <br>
 ✔️ If you'd like configure your apps to automatically attempt to update after failing to update, [set this new CSP for smart retry.](#smart-retry-for-app-updates) <br>
 ✔️ If you'd like to have more control over OS updates, check out these [newly enabled Update policies.](#improved-update-restart-detection-and-notifications) <br>
 ✔️ If you need to get make your organization's apps available on the company store via the Microsoft Store, but want to only allow access to your organization's apps and not the full store, [set this policy.](#use-only-private-store-apps-for-microsoft-store) <br>
@@ -56,7 +56,7 @@ This one’s about the improved troubleshooting and device reports, some fixed b
 
 As of **Insider build 20348.1411** we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you will be able to use your HoloLens 2 in previously inaccessible environments, like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
 
-To learn more about what is supported and how to enabled this new feature, [visit the moving platform page.](hololens2-moving-platform.md)
+To learn more about what is supported and how to enable this new feature, [visit the moving platform page.](hololens2-moving-platform.md)
 
 ### PFX file support for Certificate Manager
 
@@ -65,7 +65,7 @@ Users can import .pfx certificate, with private key, to user store or machine st
 
 ### View advanced diagnostic report in Settings on HoloLens
 
-For managed devices when troubleshooting behavior, confirming that an expected policy configuration is applied is an important step. Previously to this new feature, this had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** > **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
+For managed devices when troubleshooting behavior, confirming that an expected policy configuration is applied is an important step. Previously to this new feature, viewing this information had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** > **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
 
 Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select **View advanced diagnostic report**. This will generate and open the report in a new Edge window.
 
@@ -149,9 +149,9 @@ On a device where this policy is configured, the user specified in the policy wi
 
 ### Improved update restart detection and notifications
 
-Between active hours and install time policies, it is possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior the reboot being initiated and they can delay the reboot in accordance with IT policy.
+Between active hours and install time policies, it is possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior to the reboot being initiated and they can delay the reboot in accordance with IT policy.
 
-The following update policies were be added:
+The following update policies were added:
 
 - [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
 - [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
@@ -165,7 +165,7 @@ The following update policies were be added:
 
 ### Smart Retry for app updates
 
-Now enabled for HoloLens is a new policy that allows IT Admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. These can be set based on a few different triggers such as a scheduled time or sign-in. To learn more about how to use this policy please view [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
+Now enabled for HoloLens is a new policy that allows IT Admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. These can be set based on a few different triggers such as a scheduled time or sign-in. To learn more about how to use this policy view [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
 
 ### Use only private store apps for Microsoft Store
 
@@ -175,7 +175,7 @@ Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/
 
 ### Use WDAC and LOB apps
 
-You can now use WDAC to block apps or processes from launching and continue to use your own line of bushiness apps. you can now allow them in your WDAC policy. This involves running an additional line of code in powershell when creating your WDAC policy. [Review the steps here.](/mem/intune/configuration/custom-profile-hololens)
+You can now use WDAC to block apps or processes from launching and continue to use your own line of bushiness apps. you can now allow them in your WDAC policy. Using this policy involves running an extra line of code in PowerShell when creating your WDAC policy. [Review the steps here.](/mem/intune/configuration/custom-profile-hololens)
 
 ### Fixes and improvements
 
@@ -207,7 +207,7 @@ Select **Confirm > Restart Now** to finish up. After your device has rebooted, g
 
 ### Update error 0x80070490 work-around
 
-If you encounter an update error 0x80070490 when updating on the Dev or Beta channel, try the following short-term work around. It involves moving your insider channel, picking up the update and then moving your Insider channel back.
+If you encounter an update error 0x80070490 when updating on the Dev or Beta channel, try the following short-term work-around. It involves moving your insider channel, picking up the update and then moving your Insider channel back.
 
 #### Stage one - Release Preview
 
