@@ -1,54 +1,93 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+<AssignedAccessConfiguration
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/202010/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+>
   <Profiles>
-    <Profiles>
-         <!--Profile Id can be any unique GUID -->
-        <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-                     <AllAppsList> 
-                         <AllowedApps>                     
-                    	<!--
-                        TODO:
-                        1. Add AUMIDs of app(s) you want displayed in start menu. See examples below.
-                        2. Specify rs5:AutoLaunch="true" only for 1 app. If automatic launch not desired, remove this attribute.
-                        
-                        <App AppUserModelId="Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides" rs5:AutoLaunch="true" />
-                        <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
-                      -->
+    <!--
+    In this example, there are 2 different profiles, one for each AAD group and AAD account. 
+    You can create multiple profiles as shown below, however please ensure their Id is unique and is referenced correctly in configs as desired.
+    -->
+    <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}">
+      <AllAppsList>
+        <AllowedApps>
+          <!--
+            TODO:
+            1. Add AUMIDs of app(s) you want displayed in start menu. See examples below.
+            2. Specify rs5:AutoLaunch="true" only for 1 app. If automatic launch not desired, remove this attribute.
+            -->
+          <App AppUserModelId="Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist" rs5:AutoLaunch="true" />
+          <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App" />
         </AllowedApps>
       </AllAppsList>
       <StartLayout>
-        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"> <LayoutOptions StartTileGroupCellWidth="6" /> <DefaultLayoutOverride> <StartLayoutCollection> <defaultlayout:StartLayout GroupCellWidth="6"> <start:Group Name="Life at a glance"> <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" /> </start:Group> </defaultlayout:StartLayout> </StartLayoutCollection> </DefaultLayoutOverride></LayoutModificationTemplate>]]>
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Life at a glance">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="HolographicSystemSettings_cw5n1h2txyewy!App" />                              
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
       </StartLayout>
-      <Taskbar ShowTaskbar="true" />
+      <Taskbar ShowTaskbar="true"/>
     </Profile>
-     <!--Profile Id can be any unique GUID -->
-        <Profile Id="{66A75FBE-A9EE-4497-B6B5-A2644A1D3997}"> 
-                     <AllAppsList> 
-                         <AllowedApps>                     
-                    	<!--
-                        TODO:
-                        1. Add AUMIDs of app(s) you want displayed in start menu. See examples below.
-                        2. Specify rs5:AutoLaunch="true" only for 1 app. If automatic launch not desired, remove this attribute.
-                        
-                        <App AppUserModelId="Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides" rs5:AutoLaunch="true" />
-                        <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
-                      -->
+    <Profile Id="{66A75FBE-A9EE-4497-B6B5-A2644A1D3997}">
+      <AllAppsList>
+        <AllowedApps>
+          <!--
+            TODO:
+            1. Add AUMIDs of app(s) you want displayed in start menu. See examples below.
+            2. Specify rs5:AutoLaunch="true" only for 1 app. If automatic launch not desired, remove this attribute.
+            -->
+          <App AppUserModelId="Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist" />
+          <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
         </AllowedApps>
       </AllAppsList>
       <StartLayout>
-        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"> <LayoutOptions StartTileGroupCellWidth="6" /> <DefaultLayoutOverride> <StartLayoutCollection> <defaultlayout:StartLayout GroupCellWidth="6"> <start:Group Name="Life at a glance"> <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" /> </start:Group> </defaultlayout:StartLayout> </StartLayoutCollection> </DefaultLayoutOverride></LayoutModificationTemplate>]]>
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Life at a glance">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="HolographicSystemSettings_cw5n1h2txyewy!App" />                              
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
       </StartLayout>
-      <Taskbar ShowTaskbar="true" />
+      <Taskbar ShowTaskbar="true"/>
     </Profile>
   </Profiles>
   <Configs>
     <Config>
-      <!--TODO:  Specify first AAD user account, e.g.  
-      <Account>AzureAD\User name@AAD tenant name, e.g. AzureAD\contosouser_1@contoso.onmicrosoft.com </Account> -->
+      <!--
+      TODO: 
+      Specify target AAD user account by updating value inside Account xml node below.  
+      -->
+      <Account>AzureAD\User name@AAD tenant name, e.g. AzureAD\contosouser_1@contoso.onmicrosoft.com</Account>
       <DefaultProfile Id="{8739C257-184F-45DD-8657-C235819172A3}" />
     </Config>
     <Config>
-      <!--TODO:  Specify AAD user group which must exist on Hololens before configuration is applied, where the Object ID is used as the name.
+      <!--
+      TODO: 
+      Specify object id of target Azure AD group by updating Name attribute of example UserGroup node below.
+      
+      See https://docs.microsoft.com/en-us/mem/intune/fundamentals/groups-add
+      or https://docs.microsoft.com/powershell/module/azuread/get-azureadgroup?view=azureadps-2.0 to determine object id of target Azure AD group.
+      -->
       <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" />
       <DefaultProfile Id="{66A75FBE-A9EE-4497-B6B5-A2644A1D3997}" />
     </Config>
