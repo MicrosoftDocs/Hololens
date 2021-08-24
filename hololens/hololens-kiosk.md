@@ -41,6 +41,7 @@ The following table lists the feature capabilities in the different kiosk modes.
 
 > <sup>1</sup> Voice commands that relate to disabled features do not function.  
 > <sup>2</sup> To enable Miracast as a kiosk app enable the Camera app and the Device Picker app. For more information about how to enable disabled features, see [HoloLens AUMIDs for apps](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids).
+>
 > <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.
 
 ## Key general considerations before configuring kiosk mode
@@ -68,12 +69,15 @@ Applies only if you are planning to use runtime provisioning packages or creatin
 
 ## Supported scenarios for kiosk mode based on identity type
 
+> [!NOTE]
+> Use XML only if not using Intune's UI to create kiosk configuration.
+
 ### For users who sign-in as either Local account or MSA
 
-| **Desired kiosk experience** | **Recommended kiosk configuration** | **Ways to configure** | **Remarks** |
+| **Desired kiosk experience** | **Recommended kiosk configuration** | **Ways to configure**  | **Remarks** |
 | --- | --- | --- | --- |
 | Every user who signs in gets kiosk experience. | [Configure multiple app Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Specific user who signs in gets kiosk experience. | [Configure single or multiple app assigned access profile (as required) specifying name of specific user.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | • [Microsoft Intune single app kiosk template](hololens-kiosk.md?tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Single app](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | For single app kiosk mode, only local user account or MSA account is supported on HoloLens. <br> For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
+| Specific user who signs in gets kiosk experience.  | [Configure single or multiple app assigned access profile (as required) specifying name of specific user.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [See supported options below.](#steps-in-configuring-kiosk-mode-for-hololens) | For single app kiosk mode, only local user account or MSA account is supported on HoloLens. <br> For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
 
 ### For users who sign-in as AAD account
 
@@ -104,10 +108,6 @@ Here are the following ways to configure, select the tab matching the process yo
 
 ## Frequently Asked Questions
 
-### Continuing kiosk experience for Azure AD groups without internet
-
-Some environments have limited internet connectivity. If you'd like to use your Azure groups for Kiosk in those limited environments, you can enable a policy that will cache the group membership on the device for up to 60 days. With this policy once a user has signed in connected to the Internet, they'll have access. To learn more, visit [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays).
-
 ### How to can visitor accounts automatically logon into kiosk experience?
 
 On builds [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
@@ -133,7 +133,7 @@ Kiosk Mode can be set via Device Portal’s REST API by doing a POST to /api/hol
 
 ## Troubleshooting
 
-### No apps are shown in start menu in kiosk mode?
+### Issue - No apps are shown in start menu in kiosk mode?
 
 **Symptoms**
 
