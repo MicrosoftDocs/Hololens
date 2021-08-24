@@ -100,6 +100,8 @@
 
 ## Microsoft Intune custom template
 
+1. Create xml configuration for your desired kiosk experience. See [examples](../hololens-kiosk-reference.md#kiosk-xml-code-samples) here to begin.
+
 1. Create a custom configuration profile <br>
 <kbd>
     <img alt="Create a custom configuration profile" src="../images/kiosk-steps/kiosk-custom-1.png"/>
@@ -107,14 +109,14 @@
 
 <br>
 
-2. Specify name of custom configuration profile and click on “Add” in “Configuration settings” section to add OMA-URI settings.
+3. Specify name of custom configuration profile and click on “Add” in “Configuration settings” section to add OMA-URI settings.
 <kbd>
     <img alt="Name and add" src="../images/kiosk-steps/kiosk-custom-2.png"/>
 </kbd>
 
 <br>
 
-3. Specify name of OMA-URI settings.
+4. Specify name of OMA-URI settings.
 
     1. In OMA-URI textbox, enter **./Device/Vendor/MSFT/AssignedAccess/Configuration**
     1. Choose Data type as **String**.
@@ -127,7 +129,7 @@
 
 <br>
 
-4. Choose which groups / devices or users this configuration profile should get assigned to.
+5. Choose which groups / devices or users this configuration profile should get assigned to.
 
 <kbd>
     <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-custom-4.png"/>
@@ -135,13 +137,15 @@
 
 <br>
 
-5. Review and create to save configuration profile.
+6. Review and create to save configuration profile.
 1. Perform MDM sync starting from either device or Intune to apply configuration to device. [Sync devices from Intune](/mem/intune/remote-actions/device-sync#sync-a-device) or on device via **Settings -> Accounts -> Work or school ->** select the connected account **-> Info -> Sync**
 1. Sign in as the target user to experience kiosk.
 
 # [Provisioning package multi app kiosk](#tab/ppkgmak)
 
 ## Runtime provisioning - Multi app
+
+1. Create xml configuration for your desired kiosk experience. See [examples](../hololens-kiosk-reference.md#kiosk-xml-code-samples) here to begin.
 
 1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
@@ -153,7 +157,7 @@
 
 <br>
 
-3. Select **Provision HoloLens 2 devices,** then select next.
+4. Select **Provision HoloLens 2 devices,** then select next.
 
 <kbd>
     <img alt="Select HoloLens 2" src="../images/kiosk-steps/kiosk-provision-2.png"/>
@@ -161,9 +165,9 @@
 
 <br>
 
-4. Name your project. Optionally write a description. Select **Finish** to proceed.
+5. Name your project. Optionally write a description. Select **Finish** to proceed.
 
-5. In the bottom left of the screen, select **Switch to advanced editor.** Confirm switching to the advanced editor by selecting **Yes.**
+6. In the bottom left of the screen, select **Switch to advanced editor.** Confirm switching to the advanced editor by selecting **Yes.**
 
 <kbd>
     <img alt="Switch to advanced editor" src="../images/kiosk-steps/kiosk-provision-2.png"/>
@@ -171,7 +175,7 @@
 
 <br>
 
-6. On the left hand side, expand Runtime settings, AssignedAccess and select **MultiAppAssignedAccess**.
+7. On the left hand side, expand Runtime settings, AssignedAccess and select **MultiAppAssignedAccess**.
 
 <kbd>
     <img alt="select MultiAppAssignedAccess" src="../images/kiosk-steps/kiosk-provision-3.png"/>
@@ -179,9 +183,9 @@
 
 <br>
 
-7. Select the **Browse…** button to open the file explorer. And select the your configured Kiosk xml file.
+8. Select the **Browse…** button to open the file explorer. And select the your configured Kiosk xml file.
 
-8. Select **Export** , then **Provisioning Package**.
+9. Select **Export** , then **Provisioning Package**.
 
 <kbd>
     <img alt="Export package" src="../images/kiosk-steps/kiosk-provision-4.png"/>
@@ -189,7 +193,7 @@
 
 <br>
 
-9. Change owner type to **IT Admin**.
+10. Change owner type to **IT Admin**.
 
 <kbd>
     <img alt="Exporting as IT Admin" src="../images/kiosk-steps/kiosk-provision-5.png"/>
@@ -197,13 +201,13 @@
 
 <br>
 
-10. Select **Next** three times. Then select **Build**.
+11. Select **Next** three times. Then select **Build**.
 
-11. After your provisioning package builds, open the Output location folder. The .ppkg file is your provision package. Optional step: Save your project.
+12. After your provisioning package builds, open the Output location folder. The .ppkg file is your provision package. Optional step: Save your project.
 
-12. Now you can apply your provisioning package. You can either [apply a provisioning package to HoloLens during setup](../hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) or [apply a provisioning package to HoloLens after setup](../hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
+13. Now you can apply your provisioning package. You can either [apply a provisioning package to HoloLens during setup](../hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) or [apply a provisioning package to HoloLens after setup](../hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
 
-13. Sign in as the target user to experience kiosk.
+14. Sign in as the target user to experience kiosk.
 
 # [Provisioning package single app kiosk](#tab/ppkgsak)
 

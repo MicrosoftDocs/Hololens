@@ -25,8 +25,8 @@ appliesto:
 
 Kiosk mode is a feature where you can control which applications are shown in start menu when a user signs-in to HoloLens. There are 2 supported scenarios:
 
-1. **Single app kiosk mode** – No start menu is displayed, and a single app is launched automatically, when user signs in. <br> *Example uses*: A device that runs only Dynamics 365 Guides app or any other app.
-2. **Multiple app kiosk mode** – Start menu shows only those applications, which were specified in kiosk configuration when a user signs in. An app can be chosen to automatically launch if desired. <br> *Example uses*: A device that shows only Dynamics 365 Guides, Feedback Hub and Settings app in start menu.
+1. **Single app kiosk mode** – No start menu is displayed, and a single app is launched automatically, when user signs in. <br> *Example uses*: A device that runs only Dynamics 365 Guides app.
+2. **Multiple app kiosk mode** – Start menu shows only those applications, which were specified in kiosk configuration when a user signs in. An app can be chosen to automatically launch if desired. <br> *Example uses*: A device that shows only the Store app, Feedback Hub and Settings app in start menu.
 
     <img alt="Multi app kiosk example" src=".\images\multi-app-kiosk.jpg" width="411" height="500" />
 
@@ -34,15 +34,14 @@ Kiosk mode is a feature where you can control which applications are shown in st
 
 The following table lists the feature capabilities in the different kiosk modes.
 
-| &nbsp; |Start menu |Quick Actions menu |Camera and video |Miracast<sup>4</sup> |Cortana |Built-in voice commands |
+| &nbsp; |Start menu |Quick Actions menu |Camera and video |Miracast |Cortana |Built-in voice commands |
 | --- | --- | --- | --- | --- | --- | --- |
 |Single-app kiosk |Disabled |Disabled |Disabled |Disabled   |Disabled |Enabled<sup>1</sup> |
 |Multi-app kiosk |Enabled |Enabled<sup>2</sup> |Available<sup>2</sup> |Available<sup>2</sup> |Available<sup>2, 3</sup>  |Enabled<sup>1</sup> |
 
 > <sup>1</sup> Voice commands that relate to disabled features do not function.  
-> <sup>2</sup> For more information about how to configure these features, see [HoloLens AUMIDs for apps](hololens-kiosk-reference.md#hololens-aumids).  
-> <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.  
-> You cannot enable Miracast directly. To enable Miracast as a kiosk app enable the Camera app and the Device Picker app. See [HoloLens AUMIDs for apps](hololens-kiosk-reference.md#hololens-aumids).
+> <sup>2</sup> To enable Miracast as a kiosk app enable the Camera app and the Device Picker app. For more information about how to enable disabled features, see [HoloLens AUMIDs for apps](hololens-kiosk-reference.md#hololens-aumids).
+> <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.
 
 ## Key general considerations before configuring kiosk mode
 
@@ -57,7 +56,7 @@ Kiosk mode should not be considered as a security method but as a means to contr
 
 - When Settings app is configured to show in kiosk mode and you want to control which pages are shown in Settings app, refer to [Page Settings Visibility](settings-uri-list.md)
 - When you want to control access to certain hardware capabilities, for example, camera, Bluetooth, etc. for certain apps, etc. refer to [Policies in Policy CSP supported by HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2). You can review our [Common device restrictions](hololens-common-device-restrictions.md) for ideas.
-- Kiosk does not stop an "allowed" app from opening another app that is not allowed. In order to block apps or processes from opening, use [Windows Defender Application Control (WDAC) CSP](/windows/client-management/mdm/applicationcontrol-csp) to create appropriate policies. When you want to completely block launching of certain apps / processes on HoloLens, refer to [Use Windows Defender Application Control on HoloLens 2 devices in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens)
+- Kiosk mode does not block an app (configured as part of kiosk experience) from launching other apps. When you want to completely block launching of certain apps / processes on HoloLens, refer to [Use Windows Defender Application Control on HoloLens 2 devices in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens)
 
 ## Key technical considerations for Kiosk mode for HoloLens
 
@@ -73,18 +72,18 @@ Applies only if you are planning to use runtime provisioning packages or creatin
 
 | **Desired kiosk experience** | **Recommended kiosk configuration** | **Ways to configure** | **Remarks** |
 | --- | --- | --- | --- |
-| Every user who signs in gets kiosk experience. | [Configure multiple app Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Specific user who signs in gets kiosk experience. | [Configure single or multiple app assigned access profile (as required) specifying name of specific user.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [Microsoft Intune single app kiosk template](hololens-kiosk.md?tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens) <br> [Runtime provisioning - Single app](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | For single app kiosk mode, only local user account or MSA account is supported on HoloLens. <br> For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
+| Every user who signs in gets kiosk experience. | [Configure multiple app Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |
+| Specific user who signs in gets kiosk experience. | [Configure single or multiple app assigned access profile (as required) specifying name of specific user.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | • [Microsoft Intune single app kiosk template](hololens-kiosk.md?tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Single app](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | For single app kiosk mode, only local user account or MSA account is supported on HoloLens. <br> For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
 
 ### For users who sign-in as AAD account
 
 | **Desired kiosk experience** | **Recommended kiosk configuration** | **Ways to configure** | **Remarks** |
 | --- | --- | --- | --- |
-| Every user who signs in gets kiosk experience. | [Configure multiple app Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Every user who signs in gets kiosk experience except certain users. | [Configure multiple app Global Assigned Access profile by excluding certain users (who must be device owners)](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners). | [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Every AAD user gets separate kiosk experience specific for that user. | [Configure assigned access configuration for each user specifying their AAD account name.](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
-| Users in different AAD groups experience kiosk mode that is for their group only. | [Configure assigned access configuration for each desired AAD group.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • When a user signs-in and HoloLens is connected with Internet, if that user is found to be a member of AAD group for which kiosk configuration exists, user gets to experience kiosk for that AAD group. <br> • [If there is no internet available when user sign-in, then user will experience HoloLens failure mode behavior.](#kiosk-mode-behavior-changes-for-handling-of-failures) <br> • If internet availability is not guaranteed when user signs-in and AAD group based kiosk needs to be used, [consider using AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk). |
-| Users who need to use HoloLens for temporary purposes get kiosk experience. | [Configure assigned access configuration for visitors](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> [Runtime provisioning - Single app](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • Temporary user account is automatically created by HoloLens on sign-in and is removed when temporary user signs out. <br> • Consider enabling [visitor auto-login policy](#how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience). |
+| Every user who signs in gets kiosk experience. | [Configure multiple app Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |
+| Every user who signs in gets kiosk experience except certain users. | [Configure multiple app Global Assigned Access profile by excluding certain users (who must be device owners)](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners). | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |
+| Every AAD user gets separate kiosk experience specific for that user. | [Configure assigned access configuration for each user specifying their AAD account name.](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
+| Users in different AAD groups experience kiosk mode that is for their group only. | [Configure assigned access configuration for each desired AAD group.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • When a user signs-in and HoloLens is connected with Internet, if that user is found to be a member of AAD group for which kiosk configuration exists, user gets to experience kiosk for that AAD group. <br> • [If there is no internet available when user sign-in, then user will experience HoloLens failure mode behavior.](#kiosk-mode-behavior-changes-for-handling-of-failures) <br> • If internet availability is not guaranteed when user signs-in and AAD group based kiosk needs to be used, [consider using AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk). |
+| Users who need to use HoloLens for temporary purposes get kiosk experience. | [Configure assigned access configuration for visitors](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Single app](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • Temporary user account is automatically created by HoloLens on sign-in and is removed when temporary user signs out. <br> • Consider enabling [visitor auto-login policy](#how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience). |
 
 ## Steps in configuring kiosk mode for HoloLens
 
@@ -103,11 +102,11 @@ Here are the following ways to configure, select the tab matching the process yo
 
 [!INCLUDE[](includes/kiosk-configure-steps.md)]
 
-## Release Notes
+## Frequently Asked Questions
 
 ### Continuing kiosk experience for Azure AD groups without internet
 
-[MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays)
+Some environments have limited internet connectivity. If you'd like to use your Azure groups for Kiosk in those limited environments, you can enable a policy that will cache the group membership on the device for up to 60 days. With this policy once a user has signed in connected to the Internet, they'll have access. To learn more, visit [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays).
 
 ### How to can visitor accounts automatically logon into kiosk experience?
 
@@ -116,8 +115,6 @@ On builds [Windows Holographic, version 21H1](hololens-release-notes.md#windows-
 - AAD and Non-ADD configurations both support visitor accounts being autologon enabled for Kiosk modes.
 
 [!INCLUDE[](includes/kiosk-autologin.md)]
-
-## FAQ for Kiosk
 
 ### Is kiosk experience supported on Hololens (1st gen)?
 
@@ -136,7 +133,9 @@ Kiosk Mode can be set via Device Portal’s REST API by doing a POST to /api/hol
 
 ## Troubleshooting
 
-### Kiosk mode behavior changes for handling of failures
+### No apps are shown in start menu in kiosk mode?
+
+**Symptoms**
 
 When encountering failures in applying kiosk mode, the following behavior appears:
 
@@ -147,15 +146,11 @@ When encountering failures in applying kiosk mode, the following behavior appear
 
 - Starting with [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), Kiosk mode looks for Global Assigned Access before showing an empty start menu. The kiosk experience will fall back to a global kiosk configuration (if present) if there are failures during AAD group kiosk mode.
 
-### Issue – Application is not showing up in tiles for multiple-app kiosk mode
-
-**Symptoms**
-
-App is configured in kiosk mode but it is not showing up in start menu.
-
 **Troubleshooting steps**
 
-Verify that AUMID of app is correctly specified and it does not contain versions. Refer to [HoloLens AUMIDs for inbox apps](hololens-kiosk-reference.md#hololens-aumids) for examples.
+- Verify that AUMID of app is correctly specified and it does not contain versions. Refer to [HoloLens AUMIDs](hololens-kiosk-reference.md#hololens-aumids) for inbox apps for examples.
+- Ensure that application is installed on the device for that user.
+- If kiosk configuration is based on AAD groups please ensure internet connectivity is present when the AAD user signs in. If desired configure [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays) policy so this can function without internet as well.
 
 ### Issue - Building a package with kiosk mode failed
 

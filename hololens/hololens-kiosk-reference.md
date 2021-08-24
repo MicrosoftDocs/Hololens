@@ -19,7 +19,7 @@ appliesto:
 
 This page contains helpful information for setting up your HoloLens device's kiosk mode. This references include AUMIDs for inbox apps and locating yours, and several XML samples for Kiosk mode, that are just a few edits away from being ready to use for several different scenarios. For information on setting up a Kiosk, read the [set up a Kiosk page.](hololens-kiosk.md)
 
-## HoloLens AUMIDs
+## HoloLens Application User Model IDs (AUMIDs)  
 
 For general information about how to choose kiosk apps, see [Guidelines for choosing an app for assigned access (kiosk mode)](/windows/configuration/guidelines-for-assigned-access-app).
 
@@ -227,15 +227,6 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 ### Multiple app assigned access profile for visitors
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-visitor-user.xml" highlight="18-20":::
-
-[Back to list](#kiosk-xml-code-samples) <br>
-Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
-
-### Multiple app kiosk mode targeting Azure AD account
-
-This kiosk deploys a Kiosk for a single user. They'll have a Kiosk enabled that includes the three apps: Settings, Remote Assist, and Feedback Hub. To modify this sample to be used immediately, make sure to change the account highlighted below to match an Azure AD Account of your own.
-
-:::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
