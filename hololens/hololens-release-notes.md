@@ -548,7 +548,7 @@ When modifying a Kiosk to include the new apps, we recommend adding in the new A
 
 ### Kiosk mode behavior changes for handling of failures
 
-In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](hololens-kiosk.md#kiosk-mode-behavior-changes-for-handling-of-failures)” menu.
+In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)” menu.
 
 Starting in this Windows release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
