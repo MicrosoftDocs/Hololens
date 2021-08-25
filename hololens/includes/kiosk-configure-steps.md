@@ -123,14 +123,13 @@
     1. In value textbox, copy-paste the assigned access configuration xml (see reference links for examples based on your scenario and update as needed before copy-pasting).
     1. Select the save button to save the setting and configuration.
 
-<kbd>
-    <img alt="Specify OMA-URI settings" src="../images/kiosk-steps/kiosk-custom-3.png"/>
-</kbd>
+    <kbd>
+        <img alt="Specify OMA-URI settings" src="../images/kiosk-steps/kiosk-custom-3.png"/>
+    </kbd>
 
 <br>
 
 5. Choose which groups / devices or users this configuration profile should get assigned to.
-
 <kbd>
     <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-custom-4.png"/>
 </kbd>
@@ -150,7 +149,6 @@
 1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
 1. On the Start page select **Provision HoloLens devices.**
-
 <kbd>
     <img alt="Selecting provision HoloLens" src="../images/kiosk-steps/kiosk-provision-1.png"/>
 </kbd>
@@ -158,7 +156,6 @@
 <br>
 
 4. Select **Provision HoloLens 2 devices,** then select next.
-
 <kbd>
     <img alt="Select HoloLens 2" src="../images/kiosk-steps/kiosk-provision-2.png"/>
 </kbd>
@@ -169,17 +166,17 @@
 
 6. In the bottom left of the screen, select **Switch to advanced editor.** Confirm switching to the advanced editor by selecting **Yes.**
 
-<kbd>
-    <img alt="Switch to advanced editor" src="../images/kiosk-steps/kiosk-provision-2.png"/>
-</kbd>
+    <kbd>
+        <img alt="Switch to advanced editor" src="../images/kiosk-steps/kiosk-provision-2.png"/>
+    </kbd>
 
 <br>
 
 7. On the left hand side, expand Runtime settings, AssignedAccess and select **MultiAppAssignedAccess**.
 
-<kbd>
-    <img alt="select MultiAppAssignedAccess" src="../images/kiosk-steps/kiosk-provision-3.png"/>
-</kbd>
+    <kbd>
+        <img alt="select MultiAppAssignedAccess" src="../images/kiosk-steps/kiosk-provision-3.png"/>
+    </kbd>
 
 <br>
 
@@ -187,17 +184,17 @@
 
 9. Select **Export** , then **Provisioning Package**.
 
-<kbd>
-    <img alt="Export package" src="../images/kiosk-steps/kiosk-provision-4.png"/>
-</kbd>
+    <kbd>
+        <img alt="Export package" src="../images/kiosk-steps/kiosk-provision-4.png"/>
+    </kbd>
 
 <br>
 
 10. Change owner type to **IT Admin**.
 
-<kbd>
-    <img alt="Exporting as IT Admin" src="../images/kiosk-steps/kiosk-provision-5.png"/>
-</kbd>
+    <kbd>
+        <img alt="Exporting as IT Admin" src="../images/kiosk-steps/kiosk-provision-5.png"/>
+    </kbd>
 
 <br>
 
@@ -217,17 +214,17 @@
 
 1. On the Start page select **Provision HoloLens devices.**
 
-<kbd>
-    <img alt="Selecting provision HoloLens" src="../images/kiosk-steps/kiosk-provision-1.png"/>
-</kbd>
+    <kbd>
+        <img alt="Selecting provision HoloLens" src="../images/kiosk-steps/kiosk-provision-1.png"/>
+    </kbd>
 
 <br>
 
 3. Select **Provision HoloLens 2 devices,** then select next.
 
-<kbd>
-    <img alt="Select HoloLens 2" src="../images/kiosk-steps/kiosk-provision-2.png"/>
-</kbd>
+    <kbd>
+        <img alt="Select HoloLens 2" src="../images/kiosk-steps/kiosk-provision-2.png"/>
+    </kbd>
 
 <br>
 
@@ -235,17 +232,17 @@
 
 5. In the bottom left of the screen, select **Switch to advanced editor.** Confirm switching to the advanced editor by selecting **Yes.**
 
-<kbd>
-    <img alt="Switch to advanced editor" src="../images/kiosk-steps/kiosk-provision-2.png"/>
-</kbd>
+    <kbd>
+        <img alt="Switch to advanced editor" src="../images/kiosk-steps/kiosk-provision-2.png"/>
+    </kbd>
 
 <br>
 
 6. On the left hand side, expand Runtime settings, AssignedAccess and select **AssignedAccessSettings**.
 
-<kbd>
-    <img alt="Navigate to assigned access settings" src="../images/kiosk-steps/kiosk-provision-sak-1.png"/>
-</kbd>
+    <kbd>
+        <img alt="Navigate to assigned access settings" src="../images/kiosk-steps/kiosk-provision-sak-1.png"/>
+    </kbd>
 
 <br>
 
@@ -254,17 +251,17 @@
 
 8. Select **Export** , then **Provisioning Package**.
 
-<kbd>
-    <img alt="Export package" src="../images/kiosk-steps/kiosk-provision-4.png"/>
-</kbd>
+    <kbd>
+        <img alt="Export package" src="../images/kiosk-steps/kiosk-provision-4.png"/>
+    </kbd>
 
 <br>
 
 9. Change owner type to **IT Admin**.
 
-<kbd>
-    <img alt="Exporting as IT Admin" src="../images/kiosk-steps/kiosk-provision-5.png"/>
-</kbd>
+    <kbd>
+        <img alt="Exporting as IT Admin" src="../images/kiosk-steps/kiosk-provision-5.png"/>
+    </kbd>
 
 <br>
 

@@ -121,7 +121,7 @@ HoloLens (1st gen) devices need to be upgraded both in terms of OS build and OS 
 
 ### How to use device portal to configure kiosk in non-production environments?
 
-Set up the HoloLens device to use the Windows Device Portal](/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC.
+Set up the [HoloLens device to use the Windows Device Portal](/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC.
 
  > [!CAUTION]
  > When you set up HoloLens to use the Device Portal, you have to enable Developer Mode on the device. Developer Mode on a device that has Windows Holographic for Business enables you to side-load apps. However, this setting creates a risk that a user can install apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable Developer Mode by using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider). [Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
@@ -139,7 +139,7 @@ When encountering failures in applying kiosk mode, the following behavior appear
 - Prior to Windows Holographic, version 20H2 - HoloLens will show all applications in the Start menu.
 - Windows Holographic, version 20H2 - if a device has a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership fails, the user will see “nothing shown in start” menu.
 
-![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+    ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 - Starting with [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), Kiosk mode looks for Global Assigned Access before showing an empty start menu. The kiosk experience will fall back to a global kiosk configuration (if present) if there are failures during AAD group kiosk mode.
 
