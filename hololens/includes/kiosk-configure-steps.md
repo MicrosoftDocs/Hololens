@@ -109,7 +109,7 @@
 
 <br>
 
-3. Specify name of custom configuration profile and click on “Add” in “Configuration settings” section to add OMA-URI settings.
+3. Specify name of custom configuration profile and click on “Add” in “Configuration settings” section to add OMA-URI settings. <br>
 <kbd>
     <img alt="Name and add" src="../images/kiosk-steps/kiosk-custom-2.png"/>
 </kbd>
@@ -129,7 +129,7 @@
 
 <br>
 
-5. Choose which groups / devices or users this configuration profile should get assigned to.
+5. Choose which groups / devices or users this configuration profile should get assigned to. <br>
 <kbd>
     <img alt="Choose how to assign" src="../images/kiosk-steps/kiosk-custom-4.png"/>
 </kbd>
@@ -148,14 +148,14 @@
 
 1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
-1. On the Start page select **Provision HoloLens devices.**
+1. On the Start page select **Provision HoloLens devices.** <br>
 <kbd>
     <img alt="Selecting provision HoloLens" src="../images/kiosk-steps/kiosk-provision-1.png"/>
 </kbd>
 
 <br>
 
-4. Select **Provision HoloLens 2 devices,** then select next.
+4. Select **Provision HoloLens 2 devices,** then select next. <br>
 <kbd>
     <img alt="Select HoloLens 2" src="../images/kiosk-steps/kiosk-provision-2.png"/>
 </kbd>
@@ -164,7 +164,7 @@
 
 5. Name your project. Optionally write a description. Select **Finish** to proceed.
 
-6. In the bottom left of the screen, select **Switch to advanced editor.** Confirm switching to the advanced editor by selecting **Yes.**
+6. In the bottom left of the screen, select **Switch to advanced editor.** Confirm switching to the advanced editor by selecting **Yes.** <br>
 
     <kbd>
         <img alt="Switch to advanced editor" src="../images/kiosk-steps/kiosk-provision-2.png"/>
@@ -172,7 +172,7 @@
 
 <br>
 
-7. On the left hand side, expand Runtime settings, AssignedAccess and select **MultiAppAssignedAccess**.
+7. On the left hand side, expand Runtime settings, AssignedAccess and select **MultiAppAssignedAccess**. <br>
 
     <kbd>
         <img alt="select MultiAppAssignedAccess" src="../images/kiosk-steps/kiosk-provision-3.png"/>
@@ -190,7 +190,7 @@
 
 <br>
 
-10. Change owner type to **IT Admin**.
+10. Change owner type to **IT Admin**. <br>
 
     <kbd>
         <img alt="Exporting as IT Admin" src="../images/kiosk-steps/kiosk-provision-5.png"/>
@@ -212,7 +212,7 @@
 
 1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
-1. On the Start page select **Provision HoloLens devices.**
+1. On the Start page select **Provision HoloLens devices.** <br>
 
     <kbd>
         <img alt="Selecting provision HoloLens" src="../images/kiosk-steps/kiosk-provision-1.png"/>
@@ -220,7 +220,7 @@
 
 <br>
 
-3. Select **Provision HoloLens 2 devices,** then select next.
+3. Select **Provision HoloLens 2 devices,** then select next. <br>
 
     <kbd>
         <img alt="Select HoloLens 2" src="../images/kiosk-steps/kiosk-provision-2.png"/>
@@ -230,7 +230,7 @@
 
 4. Name your project. Optionally write a description. Select **Finish** to proceed.
 
-5. In the bottom left of the screen, select **Switch to advanced editor.** Confirm switching to the advanced editor by selecting **Yes.**
+5. In the bottom left of the screen, select **Switch to advanced editor.** Confirm switching to the advanced editor by selecting **Yes.** <br>
 
     <kbd>
         <img alt="Switch to advanced editor" src="../images/kiosk-steps/kiosk-provision-2.png"/>
@@ -238,7 +238,7 @@
 
 <br>
 
-6. On the left hand side, expand Runtime settings, AssignedAccess and select **AssignedAccessSettings**.
+6. On the left hand side, expand Runtime settings, AssignedAccess and select **AssignedAccessSettings**. <br>
 
     <kbd>
         <img alt="Navigate to assigned access settings" src="../images/kiosk-steps/kiosk-provision-sak-1.png"/>
@@ -249,7 +249,7 @@
 7. Define your kiosk in the text box. For example, the following creates a single app kiosk for a local account named LocalAccount that is the settings app.
 ```{"Account":"LocalAccount","AUMID":"BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App"}```
 
-8. Select **Export** , then **Provisioning Package**.
+8. Select **Export** , then **Provisioning Package**. <br>
 
     <kbd>
         <img alt="Export package" src="../images/kiosk-steps/kiosk-provision-4.png"/>
@@ -257,7 +257,7 @@
 
 <br>
 
-9. Change owner type to **IT Admin**.
+9. Change owner type to **IT Admin**. <br>
 
     <kbd>
         <img alt="Exporting as IT Admin" src="../images/kiosk-steps/kiosk-provision-5.png"/>
