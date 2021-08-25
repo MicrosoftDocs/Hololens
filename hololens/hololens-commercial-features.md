@@ -1,9 +1,9 @@
 ---
-title: Make mixed reality your reality with HoloLens 2
+title: HoloLens 2 capabilities and solutions
 description: Learn about the Microsoft HoloLens commercial features for businesses to manage HoloLens devices. 
 author: qianw211
 ms.author: v-qianwen
-ms.date: 08/13/2021
+ms.date: 08/25/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -19,7 +19,7 @@ appliesto:
 keywords: HoloLens 2, commercial, features, mdm, mobile device management, kiosk mode, applications, identity, Bitlocker, iris, Windows Hello, Azure-powered, Autopilot, mixed reality, WDAC
 ---
 
-# Make mixed reality your reality with HoloLens 2
+# HoloLens 2 capabilities and solutions
 
 ## Why HoloLens?
 
@@ -53,54 +53,6 @@ What makes the HoloLens 2 so powerful?
 | Operate in regulated environments | HoloLens 2 has an extensive device portfolio that supports highly regulated environments including environments designated ISO Class 5.0 and UL Class I, Division 2. |
 
 [!INCLUDE [solutions](includes/hlsolutions.md)]
-
-## Mixed reality apps on HoloLens 2 are transforming industries
-
-Companies in healthcare, education, manufacturing, and AEC (architecture, engineering, and construction) are using HoloLens with great return on their investments.
-
-### Healthcare
-
-#### Imperial College
-
-Virtual rounds keep teams safe, make examinations efficient, and help staffs communicate effectively. Now, it's one doctor, instead of four. Thanks to HoloLens 2, a doctor can huddle with other experts, call up images and content, review healthcare data, and consult X-rays. It's everything a doctor needs in one headset. Soon, HoloLens will be the norm instead of a novelty. 
-
-Now, Imperial College requires 83% less staff time needed to serve patients.
-
-#### Medlab Clinical
-
-An Australian biotech company works to address depression and opioid alternatives to pain management. During the pandemic, it pivoted to remote work using cloud computing. Furthermore, to support its specialized lab operations, it turned to Microsoft Dynamics 365 Remote Assist on HoloLens 2. 
-
-With the MR technology, the company improved time to market and ensured critical business continuity. This shift also allowed for collaboration and helped to halve domestic travel demands, even with travel restrictions easing. 
-
-Better yet, MR catapulted the business forward. Experts and international partners now collaborate on HoloLens 2 devices, as opposed to making the trip to Australia. The company is also up-skilling its employees by calling on remote experts. 
-
-In just over a year, quality, efficacy, efficiency, safety, collaboration, training, education, and better access to subject experts all improved, with costs and resource constraints decreased. MedLab Clinical is optimistic about its future prognosis.
-
-### Manufacturing
-
-Transform your workforce and build more agile factories. With MR apps on HoloLens 2, employees can quickly learn complex tasks. Team members can collaborate from anywhere in real time. Mixed reality apps minimize operational disruptions and keep manufacturing running smoothly.
-
-#### L’Oréal
-
-The company equipped itself with Dynamics 365 Remote Assist and HoloLens 2. The goal is to install new industrial equipment, carry out maintenance and conduct audits with remote experts, all in real time. The results are transmission of knowledge along with performance optimizations such as time savings of 50%, cost reduction, and lessened environmental impact. Best of all, L’Oréal has happier employees. With travel cuts, workers conducted audits remotely, which saved them from long trips, painful jet lags and work related fatigues.
-
-### Education
-
-Improve test scores and knowledge retention. Revolutionize curriculum with experiential lesson plans that convey complex concepts in 3D. Equipped with MR apps on HoloLens 2, students can "learn by-doing" with newfound spatial awareness.
-
-#### Case Western
-
-50 percent better, that's how much better than their peers. Case Western medical students learned anatomy using HoloLens 2. Donning HoloLens devices, their introductory two-week dissection lesson was a revelation. Instead of missing nerves or destroying organs, they saw color-coordinated layers, gained spatial awareness, and explored with newfound clarity. Is the future of education stuff of dreams? It is certainly a way for students to learn better, do faster, and retain far more knowledge from anywhere.
-
-Case Western sees 50% increase in student test scores.
-
-### AEC (Architecture, Engineering, and Construction)
-
-Re-imagine bridge inspection with Azure Remote Rendering and HoloLens. Bridge inspectors, dangling over the side of a structure, are soon to be a thing of the past. There are over 20,000 bridges in the state of Minnesota. Each one must be maintained when needed and replaced if necessary. The state uses Azure Remote Rendering with HoloLens 2 to see what's happening without being there. And keep the traffic flowing with safety in mind.
-
-Thanks to digital twins, computer models replicate what's physically in the field, engineers can spot cracks and measure both their width and length. This can reduce overall time spent by 30 percent and expense by 10 percent. 
-
-With HoloLens 2, $25,000 savings are achieved during design review.
 
 ## Dynamics 365 apps
 
