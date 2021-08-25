@@ -29,7 +29,7 @@ Some of the HoloLens configurations that you can apply in a provisioning package
 - Set up a Wi-Fi connection
 - Apply certificates to the device
 - Enable Developer Mode
-- Configure Kiosk mode by following our [detailed instructions](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk).
+- Configure Kiosk mode by following our [detailed instructions](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens).
 
 ## Provisioning package HoloLens wizard
 
@@ -45,7 +45,7 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 - Enroll the device in Azure Active Directory, or create a local account
 - Add certificates
 - Enable Developer Mode
-- Configure kiosk mode by following out [detailed instructions](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)).
+- Configure kiosk mode by following out [detailed instructions](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens).
 
 > [!WARNING]
 > You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
@@ -118,7 +118,7 @@ After you're done, select **Create**. It only takes a few seconds. When the pack
 
     > [!IMPORTANT]
     > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
-    
+
 9. Select **Export** > **Provisioning package**.
 
 10. Change **Owner** to **IT Admin**. This sets the precedence of this provisioning package higher than provisioning packages applied to this device from other sources. Select **Next**.
@@ -155,11 +155,11 @@ HoloLens 2 devices on [Windows Holographic version 20H2](hololens-release-notes.
 - [Auto-confirm provisioning packages in OOBE](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
 - [Automatic provisioning without using UI](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
-1. Use the USB cable to connect the device to a PC (or USB drive for HoloLens 2 as mentioned above), and then start the device. Do not continue past the **First interactable moment** page of OOBE.   
-    - On HoloLens (1st gen), this page contains a blue box. 
+1. Use the USB cable to connect the device to a PC (or USB drive for HoloLens 2 as mentioned above), and then start the device. Do not continue past the **First interactable moment** page of OOBE.
+    - On HoloLens (1st gen), this page contains a blue box.
     - On HoloLens 2, this page contains the hummingbird.
 
-2. Briefly press and release the **Volume Down** and **Power** buttons simultaneously. 
+2. Briefly press and release the **Volume Down** and **Power** buttons simultaneously.
 
 3. HoloLens shows up as a device in File Explorer on the PC.
 
@@ -178,10 +178,10 @@ HoloLens 2 devices on [Windows Holographic version 20H2](hololens-release-notes.
 
 - Automated processes allowing for less user interaction, when USB Drives with Provisioning Packages are used during OOBE.
 
-Before this release users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive. 
+Before this release users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive.
 
 1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
-1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page. 
+1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page.
 
 Note: If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
 
