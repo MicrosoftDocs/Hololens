@@ -39,10 +39,9 @@
     </Profile>
   </Profiles>
   <Configs>
-    <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}">
-      <v5:Exclusions>
-        <v5:SpecialGroup Name="DeviceOwner" />
-      </v5:Exclusions>
-    </v3:GlobalProfile>
+    <Config>
+      <SpecialGroup Name="Visitor"/>
+      <DefaultProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/>
+    </Config>
   </Configs>
 </AssignedAccessConfiguration>

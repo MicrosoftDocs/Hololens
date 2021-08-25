@@ -548,7 +548,7 @@ When modifying a Kiosk to include the new apps, we recommend adding in the new A
 
 ### Kiosk mode behavior changes for handling of failures
 
-In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](hololens-kiosk.md#kiosk-mode-behavior-changes-for-handling-of-failures)” menu.
+In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)” menu.
 
 Starting in this Windows release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
@@ -978,14 +978,14 @@ OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
    > [!div class="mx-imgBorder"]
    > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
 
-1. Create a group and assign the device configuration profile to that device group. 
+1. Create a group and assign the device configuration profile to that device group.
 
 1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.
 
-Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the HoloLens 2 device, effects of TenantLockdown will be inactive. 
+Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the HoloLens 2 device, effects of TenantLockdown will be inactive.
 
 #### What would happen during OOBE, if Autopilot profile is unassigned on a HoloLens after TenantLockdown was set to true? 
-OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed. 
+OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed.
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
 
@@ -994,14 +994,14 @@ This information can now be found alongside the rest of Autopilot under [Tenantl
 ### Global Assigned Access – Kiosk Mode
 - Reduced Identity management for Kiosk, by enabling new Kiosk method that applies Kiosk mode at the system level.
 
-This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail in the [HoloLens global assigned access kiosk](hololens-global-assigned-access-kiosk.md).
+This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail in the [HoloLens kiosk mode](hololens-kiosk.md).
 
 ### Automatic launch of an application in multiple-app kiosk mode 
 - Focused experience with automatic app launch, further increasing the UI and app selections chosen for Kiosk mode experiences.
 
-Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
+Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration.
 
-Application is automatically launched when user signs-in. 
+Application is automatically launched when user signs-in.
 
 ```xml
 <AllowedApps>                     
@@ -1011,11 +1011,12 @@ Application is automatically launched when user signs-in.
 ### Kiosk mode behavior changes for handling of failures
 - More secure Kiosk mode by eliminating available apps on Kiosk mode failures. 
 
-Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 20H2 in the case of failures no apps will be shown in the start menu as below: 
+Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 20H2 in the case of failures no apps will be shown in the start menu as below:
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens Policies
+
 - Device management options specifically for HoloLens created for managing the device. 
 
 New mixed reality policies have been created for HoloLens 2 devices on Windows Holographic version 20H2. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  

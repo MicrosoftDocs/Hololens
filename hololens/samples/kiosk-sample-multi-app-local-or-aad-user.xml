@@ -39,10 +39,22 @@
     </Profile>
   </Profiles>
   <Configs>
-    <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}">
-      <v5:Exclusions>
-        <v5:SpecialGroup Name="DeviceOwner" />
-      </v5:Exclusions>
-    </v3:GlobalProfile>
+    <Config>
+      <!-- 
+        Reference and use only one of the account types below per your requirements and remove rest of the unused account xml nodes.
+        For local users, please ensure that the user named below exists on device before applying the configuration. 
+      -->
+
+      <!--
+      TODO: 
+      Specify local user account which must exist on Hololens before configuration is applied, by copy-pasting and updating xml node from line below, e.g.  
+      <Account>user name, e.g. contosouser </Account> 
+      -->
+      <!--
+      TODO: Specify AAD user account by copy-pasting and updating xml node from line below, e.g.  
+      <Account>AzureAD\User name@AAD tenant name, e.g. AzureAD\contosouser@contoso.onmicrosoft.com </Account> 
+      -->
+      <DefaultProfile Id="{8739C257-184F-45DD-8657-C235819172A3}" />
+    </Config>
   </Configs>
 </AssignedAccessConfiguration>
