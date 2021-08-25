@@ -1,4 +1,4 @@
-# [Intune UI Single app](#tab/uisak)
+# [Microsoft Intune single app kiosk template](#tab/uisak)
 
 ## Microsoft Intune single app kiosk template
 
@@ -46,7 +46,7 @@
 8. Perform MDM sync starting from either device or Intune to apply configuration to device. [Sync devices from Intune](/mem/intune/remote-actions/device-sync#sync-a-device) or on device via **Settings -> Accounts -> Work or school ->** select the connected account **-> Info -> Sync**
 9. Sign in as the target user to experience kiosk.
 
-# [Intune UI Multi app](#tab/uimak)
+# [Microsoft Intune multi app kiosk template](#tab/uimak)
 
 ## Microsoft Intune multi app kiosk template
 
@@ -96,7 +96,7 @@
 8. Perform MDM sync starting from either device or Intune to apply configuration to device. [Sync devices from Intune](/mem/intune/remote-actions/device-sync#sync-a-device) or on device via **Settings -> Accounts -> Work or school ->** select the connected account **-> Info -> Sync**
 9. Sign in as the target user to experience kiosk.
 
-# [Intune Custom profile](#tab/intunecustom)
+# [Microsoft Intune custom template](#tab/intunecustom)
 
 ## Microsoft Intune custom template
 
@@ -140,7 +140,7 @@
 1. Perform MDM sync starting from either device or Intune to apply configuration to device. [Sync devices from Intune](/mem/intune/remote-actions/device-sync#sync-a-device) or on device via **Settings -> Accounts -> Work or school ->** select the connected account **-> Info -> Sync**
 1. Sign in as the target user to experience kiosk.
 
-# [Provisioning package multi app kiosk](#tab/ppkgmak)
+# [Runtime provisioning - Multi app](#tab/ppkgmak)
 
 ## Runtime provisioning - Multi app
 
@@ -206,7 +206,7 @@
 
 14. Sign in as the target user to experience kiosk.
 
-# [Provisioning package single app kiosk](#tab/ppkgsak)
+# [Runtime provisioning - Single app](#tab/ppkgsak)
 
 ## Runtime provisioning - Single app
 
