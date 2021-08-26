@@ -53,7 +53,7 @@
 #### [Configure](hololens2-cloud-connected-configure.md)
 #### [Deploy](hololens2-cloud-connected-deploy.md)
 #### [Maintain](hololens2-cloud-connected-maintain.md)
-#### [Cloud connected environment (External Clients) deployment guide](hololens2-deployment-guide.md)
+#### [External clients](hololens2-deployment-guide.md)
 ### Corporate network deployment guide
 #### [Overview](hololens2-corp-connected-overview.md)
 #### [Prepare](hololens2-corp-connected-prepare.md)
@@ -75,7 +75,7 @@
 ### [Encryption and data protection](security-encryption-data-protection.md)
 ### [Network security](security-network-security.md)
 ### [Security engineering ](security-engineering.md)
-### [HoloLens 2 Privacy Statement](hololens2-compliance.md)
+### [HoloLens 2 Privacy and Data Protection](hololens2-privacy.md)
 ## Device Management
 ### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
 ## Device Enrollment
@@ -93,7 +93,7 @@
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 ### [Common device restrictions](hololens-common-device-restrictions.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
-### [Global assigned access - Kiosk](hololens-global-assigned-access-kiosk.md)
+### [HoloLens Kiosk reference information](hololens-kiosk-reference.md)
 ### [Windows Defender Application Control - WDAC](windows-defender-application-control-wdac.md)
 ### [Page Settings CSP and URIs for HoloLens](settings-uri-list.md)
 ## Network & Connectivity
