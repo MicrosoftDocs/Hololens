@@ -7,7 +7,7 @@ author: qianw211
 ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 08/13/2021
+ms.date: 08/26/2021
 ms.reviewer: 
 manager: sekerawa
 appliesto:
@@ -19,9 +19,7 @@ appliesto:
 
 ## Overview
 
-Businesses often invest in many shared HoloLens devices. For factory workers, there’s typically a “vending machine” of HoloLens devices.
-
-Security with HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of a locked-down experience: 
+Businesses often invest in many shared HoloLens devices. Security with HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of a locked-down experience: 
 
 - Workers can check out a HoloLens to perform a certain task. Thanks to Microsoft Intune and other provisioning profiles, you can be certain that a worker uses HoloLens only in the way it’s intended. For instance, they can use Remote Assist, but they can’t open Web browsers, games, Word, etc.
 
