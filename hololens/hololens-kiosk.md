@@ -105,7 +105,7 @@ Here are the following ways to configure, select the tab matching the process yo
 
 ## Frequently Asked Questions
 
-### How to can visitor accounts automatically logon into kiosk experience?
+### How to can visitor accounts automatically logon to kiosk experience?
 
 On builds [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
 
@@ -130,7 +130,7 @@ Kiosk Mode can be set via Device Portal’s REST API by doing a POST to /api/hol
 
 ## Troubleshooting
 
-### Issue - No apps are shown in start menu in kiosk mode?
+### Issue - No apps are shown in start menu in kiosk mode
 
 **Symptoms**
 
