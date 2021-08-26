@@ -23,6 +23,8 @@ In **Insider build 20348.1411** we have added beta support for tracking on low-d
 > [!NOTE]
 > This feature is currently only available via [Windows Insiders](hololens-insider.md).
 
+![Moving platform example.](./images/mpm-compare.gif)
+
 This article covers:
 
 1. [Why Moving Platform is Necessary](#why-moving-platform-mode-is-necessary)
