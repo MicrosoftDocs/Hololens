@@ -39,11 +39,11 @@ The following table lists the feature capabilities in the different kiosk modes.
 |Single-app kiosk |Disabled |Disabled |Disabled |Disabled   |Disabled |Enabled* |
 |Multi-app kiosk |Enabled |Enabled*  |Available*  |Available* |Available*   |Enabled*  |
 
-For more information about how to enable disabled features, or how voice commands interact with disabled features and Cortana see [HoloLens AUMIDs for apps](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids).
+\* For more information about how to enable disabled features, or how voice commands interact with disabled features and Cortana see [HoloLens AUMIDs for apps](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids).
 
 ## Key general considerations before configuring kiosk mode
 
-1. Determine the kind of user account signing into Hololens in your environment - HoloLens supports Azure Active Directory (AAD) accounts, Microsoft Accounts (MSA) and Local accounts. Additionally, temporarily created accounts called guests / visitors are also supported (only for AAD join devices). Learn more at [Manage user identity and sign-in for HoloLens](hololens-identity.md).
+1. Determine the kind of user account signing into HoloLens in your environment - HoloLens supports Azure Active Directory (AAD) accounts, Microsoft Accounts (MSA) and Local accounts. Additionally, temporarily created accounts called guests / visitors are also supported (only for AAD join devices). Learn more at [Manage user identity and sign-in for HoloLens](hololens-identity.md).
 2. Determine the targets of kiosk mode experience – Whether it is everyone, a single user, certain users, or users who are member of AAD group(s), etc.
 3. For multiple app kiosk mode, determine application(s) to show on start menu. For each application, its [Application User Model ID (AUMID)](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids) will be needed.
 4. Determine if kiosk mode will be applied to HoloLens via either runtime provisioning packages or Mobile Device Management (MDM) server.
@@ -65,6 +65,8 @@ Applies only if you are planning to use runtime provisioning packages or creatin
 - To learn more, refer to [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp).
 
 ## Supported scenarios for kiosk mode based on identity type
+
+See [reference links](hololens-kiosk-reference.md#kiosk-xml-code-samples) for examples based on your scenario and update as needed before copy-pasting.
 
 > [!NOTE]
 > Use XML only if not using Intune's UI to create kiosk configuration.
