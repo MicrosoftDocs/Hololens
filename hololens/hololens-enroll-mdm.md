@@ -63,4 +63,4 @@ If your device was enrolled from a MSA account that added a work account or from
 
 ## Ensure that MDM enrollment isn't blocked for Windows devices
 
-In order for Autopilot to succeed you'll need to make sure that your HoloLens devices can enroll. Since HoloLens is considered a Windows device there will need to be no enrollment restrictions that could block your deployment. [Review this list of restrictions](/mem/intune/enrollment/enrollment-restrictions-set) and ensure you'll be able to enroll your devices.
+In order for enrollment to succeed you'll need to make sure that your HoloLens devices can enroll. Since HoloLens is considered a Windows device there will need to be no enrollment restrictions that could block your deployment. [Review this list of restrictions](/mem/intune/enrollment/enrollment-restrictions-set) and ensure you'll be able to enroll your devices.
