@@ -28,7 +28,7 @@ This guide provides guidance for applying a sample Provisioning Package that wil
 -	Prevents adding or removing provisioning packages.
 -	No user can enable any of the above restricted components.
 
-[ ![Offline Secure scenario](./images/deployment-guides-revised-scenario-c-01.png) ](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[ ![Offline Secure scenario.](./images/deployment-guides-revised-scenario-c-01.png) ](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ## Prepare
 
@@ -51,7 +51,7 @@ Build a Secure Configuration Provisioning Package
 1. The project should open and you should now have a list of Available Customizations:
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot of the configuration package open in WCD](images/offline-secure-sample-wcd.png)
+   > ![Screenshot of the configuration package open in WCD.](images/offline-secure-sample-wcd.png)
 
    Configurations set in this provisioning package:
    
@@ -90,16 +90,16 @@ Build a Secure Configuration Provisioning Package
 1. Connect the HL2 to your Windows 10 PC via USB cable.
 1. Launch the ARC tool and select **HoloLens 2**
 
-   ![HoloLens 2 clean reflash initial screen](images/ARC2.png)
+   ![HoloLens 2 clean reflash initial screen.](images/ARC2.png)
 
 1. On the next screen select **Manual package selection**.
 
-   ![HoloLens 2 ARC info screen](images/arc_device_info.png)
+   ![HoloLens 2 ARC info screen.](images/arc_device_info.png)
 
 1. Navigate to the previously downloaded .ffu file, and select **Open**.
 1. At the Warning page select **Continue**.
 
-   ![HoloLens 2 ARC warning screen](images/arc_warning.png)
+   ![HoloLens 2 ARC warning screen.](images/arc_warning.png)
 
 1. Wait for the ARC tool to complete the HoloLens 2 OS install.
 1. Once the device completes the install and boots back up, from your PC navigate to File Explorer and copy the previously saved PPKG file over to the device folder.

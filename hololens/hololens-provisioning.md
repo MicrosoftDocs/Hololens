@@ -71,7 +71,7 @@ Use the Windows Configuration Designer tool to create a provisioning package.
 
 2. Select **Provision HoloLens devices**.
 
-   ![ICD start options](images/icd-create-options-1703.png)
+   ![ICD start options.](images/icd-create-options-1703.png)
 
 3. Name your project and select **Finish**.
 
@@ -230,7 +230,7 @@ Provisioning packages make use of configuration service providers (CSPs). If you
 
 In Windows Configuration Designer, when you create a provisioning package for Windows Holographic, the settings in **Available customizations** are based on [CSPs that are supported in Windows Holographic](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices). The following table describes settings that you might want to configure for HoloLens.
 
-![Common runtime settings for HoloLens](images/icd-settings.png)
+![Common runtime settings for HoloLens.](images/icd-settings.png)
 
 | Setting | Description |
 | --- | --- |

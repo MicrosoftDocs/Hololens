@@ -26,11 +26,11 @@ The following steps and video can help guide you through the process of HoloLens
 
 | &nbsp; | &nbsp; |
 |--|--|
-| ![Step 1](images/1green.png)| <br/> **[Common Deployment Scenarios](hololens-requirements.md)**: Understand deployment scenarios and explore the core components needed to deploy HoloLens 2 devices. |
-| ![Step 2](images/2green.png)| <br/> **[Prepare](#prepare)**: Become familiar with the infrastructure essentials needed for HoloLens 2. |
-| ![Step 3](images/3green.png) | <br/> **[Configure](#configure)**: Learn how to configure your essential components for a cloud-based deployment. |
-| ![Step 4](images/4green.png) | <br/> **[Deploy](#deploy)**: Discover how to deploy your devices and distribute your applications securely and efficiently. |
-| ![Step 5](images/5green.png) | <br/> **[Maintain](#maintain)**: Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
+| ![Step 1.](images/1green.png)| <br/> **[Common Deployment Scenarios](hololens-requirements.md)**: Understand deployment scenarios and explore the core components needed to deploy HoloLens 2 devices. |
+| ![Step 2.](images/2green.png)| <br/> **[Prepare](#prepare)**: Become familiar with the infrastructure essentials needed for HoloLens 2. |
+| ![Step 3.](images/3green.png) | <br/> **[Configure](#configure)**: Learn how to configure your essential components for a cloud-based deployment. |
+| ![Step 4.](images/4green.png) | <br/> **[Deploy](#deploy)**: Discover how to deploy your devices and distribute your applications securely and efficiently. |
+| ![Step 5.](images/5green.png) | <br/> **[Maintain](#maintain)**: Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
 
 <br/>
 

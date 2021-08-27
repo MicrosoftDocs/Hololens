@@ -62,7 +62,7 @@ HoloLens (1st gen) uses the distance between your pupils (IPD or [interpupillary
 
 During calibration, HoloLens asks you to align your finger with a series of six targets per eye. HoloLens uses this process to set the correct IPD for your eyes. If the calibration needs to be updated or adjusted for a new user, the new user can run the Calibration app  outside of setup.
 
-![IPD finger-alignment screen at second step](./images/ipd-finger-alignment-300px.jpg)
+![IPD finger-alignment screen at second step.](./images/ipd-finger-alignment-300px.jpg)
 
 *IPD finger-alignment screen at second step*
 

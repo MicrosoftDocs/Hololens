@@ -40,7 +40,7 @@ We'll walk you through the basics the first time you use your HoloLens. You'll a
 
 HoloLens has sensors that can see a few feet to either side of you. When you use your hands, you'll need to keep them inside that frame, or HoloLens won't see them. As you move around, the frame moves with you.  
 
-![Image that shows the HoloLens hand-tracking frame](./images/hololens-2-gesture-frame.png)
+![Image that shows the HoloLens hand-tracking frame.](./images/hololens-2-gesture-frame.png)
 
 ### Open the Start menu with bloom
 
@@ -48,7 +48,7 @@ To open the **Start** menu:
 
 1. Hold your hand in front of you so it's in the gesture frame.
 1. Bloom: bring all of your fingers together then open your hand.
-  ![Animation that shows the bloom gesture](./images/hololens-bloom.gif)
+  ![Animation that shows the bloom gesture.](./images/hololens-bloom.gif)
 
 ### Select holograms with gaze and air tap
 
@@ -57,7 +57,7 @@ To select an app or other hologram, air tap it while looking directly at the hol
 1. Gaze at the hologram you want to select.
 1. Point your index finger straight up toward the ceiling.
 1. Air tap: lower your finger, then quickly raise it.
-   ![Air-tap gesture animation](./images/hololens-air-tap.gif)
+   ![Air-tap gesture animation.](./images/hololens-air-tap.gif)
 
 ### Select a hologram by using your voice
 

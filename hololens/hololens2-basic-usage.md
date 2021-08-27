@@ -42,7 +42,7 @@ Once you know these basic interactions, getting around on HoloLens will be a sna
 
 HoloLens has sensors that can see a few feet to either side of you. When you use your hands, you'll need to keep them inside that frame, or HoloLens won't see them. However, the frame moves with you as you move around.  
 
-![Image that shows the HoloLens hand-tracking frame](./images/hololens-2-gesture-frame.png)
+![Image that shows the HoloLens hand-tracking frame.](./images/hololens-2-gesture-frame.png)
 
 ## Touch holograms near you
 
@@ -69,7 +69,7 @@ To select something using **hand ray**, follow these steps:
 1. Point your index finger straight up toward the ceiling.
 1. To perform the **air tap** gesture, pinch your thumb and index finger together and then quickly release them.
 
-   ![Air-tap gesture animation](./images/hololens-air-tap.gif)
+   ![Air-tap gesture animation.](./images/hololens-air-tap.gif)
 
 ### Grab using air tap and hold
 
@@ -96,7 +96,7 @@ The Start gesture opens the **Start menu**.  To perform the Start gesture, hold 
 > - If you have trouble reading the smaller text on the Start menu, step closer to it after it opens.
 > - If your hand is slightly off to the side of the frame, you may still be able to view the Start menu by tapping your inner wrist, even if you don't see the icon.
 
-![Image that shows the Start icon and the Start gesture](./images/hololens-2-start-gesture.png)
+![Image that shows the Start icon and the Start gesture.](./images/hololens-2-start-gesture.png)
 
 To **close** the Start menu, do the Start gesture when the Start menu is open.  You can also look at the Start menu and say "Close".
 
@@ -110,7 +110,7 @@ To **close** the Start menu, do the Start gesture when the Start menu is open.  
 
 You can also perform the Start gesture with only one hand. To do this, hold out your hand with your palm facing you and look at the **Start icon** on your inner wrist. **While keeping your eye on the icon**, pinch your thumb and index finger together.
 
-![Image that shows the Start icon and the one-handed start gesture](./images/hololens-2-start-alternative.png)
+![Image that shows the Start icon and the one-handed start gesture.](./images/hololens-2-start-alternative.png)
 
 ## Start menu, mixed reality home, and apps
 

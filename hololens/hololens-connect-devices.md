@@ -88,7 +88,7 @@ Users can select USB-C connected external microphones using the **Sound** settin
 
 Open the **Settings** app and select **System** > **Sound**.
 
-![Sound Settings](images/usbc-mic-1.jpg)
+![Sound Settings.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > To use external microphones with **Remote Assist**, users will need to click the “Manage sound devices” hyperlink.
@@ -97,11 +97,11 @@ Open the **Settings** app and select **System** > **Sound**.
 >
 > Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
 
-![Manage sound devices](images/usbc-mic-2.png)
+![Manage sound devices.](images/usbc-mic-2.png)
 
 <br>
 
-![Set microphone default](images/usbc-mic-3.jpg)
+![Set microphone default.](images/usbc-mic-3.jpg)
 
 #### What about Bluetooth microphone support?
 

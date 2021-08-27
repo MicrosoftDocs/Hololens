@@ -22,7 +22,7 @@ Follow along to set up a HoloLens (1st gen) for the first time.
 
 To charge your HoloLens, connect the power supply to the charging port by using the included Micro USB cable. Then plug the power supply into a power outlet. When the device is charging, the battery indicator will light up in a wave pattern.
 
-![Image that shows how to attach the Micro USB cable to the HoloLens](./images/hololens-charging.png)
+![Image that shows how to attach the Micro USB cable to the HoloLens.](./images/hololens-charging.png)
 
 When your HoloLens is on, the battery indicator shows the battery level in increments. When only one of the five lights is on, the battery level is below 20 percent. If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
 
@@ -39,17 +39,17 @@ Charging rate and speed may vary depending on the environment in which the devic
 
 | &nbsp; | &nbsp; |
 |:--- |:--- |
-|1. Rotate the headband up to about 20-30 degrees.|![Step one, rotate the headband](./images/FitGuideStep1.png)|
-|2. Push the headband back. Do not pull it back, or manipulate the band behind the hinge, because over time this can break the band.|![Step two, push the headband back](./images/FitGuideStep2.png)|
-|3. Turn the adjustment wheel to extend the headband all the way out. |![Step three, use the adjustment wheel to extend the headband](./images/FitGuideStep3.png)|
-|4. Hold the device by the device arms, and place it on your head. Make sure that the headband sits at the top of your forehead, and then tighten the adjustment wheel.|![Step four, put on the device and adjust the headband](./images/FitGuideStep4.png)|
-|5. Slide the visor back, and then check the fit of the device. The headband should sit at the top of the forehead, just below your hairline, with the speakers above your ears. The lenses should be centered over your eyes.|![Step five, slide the visor back and check the fit](./images/FitGuideSetep5.png)|
+|1. Rotate the headband up to about 20-30 degrees.|![Step one, rotate the headband.](./images/FitGuideStep1.png)|
+|2. Push the headband back. Do not pull it back, or manipulate the band behind the hinge, because over time this can break the band.|![Step two, push the headband back.](./images/FitGuideStep2.png)|
+|3. Turn the adjustment wheel to extend the headband all the way out. |![Step three, use the adjustment wheel to extend the headband.](./images/FitGuideStep3.png)|
+|4. Hold the device by the device arms, and place it on your head. Make sure that the headband sits at the top of your forehead, and then tighten the adjustment wheel.|![Step four, put on the device and adjust the headband.](./images/FitGuideStep4.png)|
+|5. Slide the visor back, and then check the fit of the device. The headband should sit at the top of the forehead, just below your hairline, with the speakers above your ears. The lenses should be centered over your eyes.|![Step five, slide the visor back and check the fit.](./images/FitGuideSetep5.png)|
 
 ## Turn on your HoloLens
 
 Use the power button to turn HoloLens on and off or to put it in standby mode.
 
-![Image that shows the HoloLens power button](./images/hololens-power.png)
+![Image that shows the HoloLens power button.](./images/hololens-power.png)
 
 If your device doesn't respond or won't start, see [Restart, reset, or recover HoloLens](hololens-restart-recover.md).
 
@@ -74,11 +74,11 @@ HoloLens automatically shuts down when the battery level drops to one percent, e
 
 The brightness and volume buttons are on top of the device arms&mdash;volume to your right and brightness to your left.
 
-![Image that shows the HoloLens buttons](./images/hololens-buttons.jpg)
+![Image that shows the HoloLens buttons.](./images/hololens-buttons.jpg)
 
 ## HoloLens indicator lights
 
-![Image that shows the HoloLens indicator lights](./images/hololens-lights.png)
+![Image that shows the HoloLens indicator lights.](./images/hololens-lights.png)
 
 Not sure what the indicator lights on your HoloLens mean? Here's some help.
 

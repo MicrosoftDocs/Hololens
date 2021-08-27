@@ -32,7 +32,7 @@ appliesto:
 
 1. Remove any dust by using a dry, lint-free microfiber cloth to gently wipe the surface of the device.
 
-   ![Clean while holding from the brow pad](images/hl2-cleaning.png)
+   ![Clean while holding from the brow pad.](images/hl2-cleaning.png)
 
 2. Lightly moisten the cloth by using medical "70%" isopropyl alcohol, and then use the moistened cloth to gently wipe the surface of the device.
 
@@ -66,7 +66,7 @@ Yes. You can use a solution of "70%" isopropyl alcohol and water to clean the ha
 
 Yes. The brow pad is magnetically attached to the device. To detach it, pull it gently away from the headband. To replace it, snap it back into place.
 
-![Remove or replace the brow pad](images/hololens2-remove-browpad.png)
+![Remove or replace the brow pad.](images/hololens2-remove-browpad.png)
 
 ## How can I clean the brow pad?
 
