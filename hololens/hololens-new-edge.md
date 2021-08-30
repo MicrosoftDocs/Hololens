@@ -13,7 +13,7 @@ manager: yannisle
 
 # Introducing the new Microsoft Edge
 
-![Animation of legacy Microsoft Edge logo to new Microsoft Edge logo](images/new-edge.gif)
+![Animation of legacy Microsoft Edge logo to new Microsoft Edge logo.](images/new-edge.gif)
 
 The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) to create better compatibility for customers and less fragmentation of the web for web developers.
 
@@ -22,11 +22,11 @@ With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holog
 > [!IMPORTANT]
 > This new Microsoft Edge automatically replaces legacy Microsoft Edge, which is [no longer supported](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) in new releases.
 
-![New Microsoft Edge screenshot](images/new-edge-ui.png)
+![New Microsoft Edge screenshot.](images/new-edge-ui.png)
 
 ## Launching the new Microsoft Edge
 
-The new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) is pinned to the Start menu and will automatically launch when you activate a web link.
+The new Microsoft Edge ![new Microsoft Edge icon.](images/new_edge_logo.png) (represented by a blue and green swirl icon) is pinned to the Start menu and will automatically launch when you activate a web link.
 
 > [!NOTE]
 > When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge.
@@ -134,7 +134,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 1. Navigate to a website with WebXR support.
 1. Select the **Enter VR** button on the website. The location and visual representation of this button may vary per website, but it may look similar to:
 
-    ![Enter VR button example](images/75px-enter-vr.png)
+    ![Enter VR button example.](images/75px-enter-vr.png)
 
 1. The first time you try to launch a WebXR experience on a specific domain, the browser will ask for consent to enter an immersive view, select **Allow**.
 1. Use [HoloLens 2 gestures](hololens2-basic-usage.md#the-hand-tracking-frame) to manipulate the experience.
@@ -151,7 +151,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 1. Navigate to a 360-degree video on YouTube.
 1. In the video frame, select the mixed reality headset button:
 
-    ![Button to activate 360 Viewer](images/enter-360-viewer.jpg)
+    ![Button to activate 360 Viewer.](images/enter-360-viewer.jpg)
 
 1. The first time you try to launch 360 Viewer on a specific domain, the browser will ask for consent to enter an immersive view. Select **Allow**.
 1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.

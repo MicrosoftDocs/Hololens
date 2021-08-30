@@ -47,7 +47,7 @@ When a Windows Hello credential is created, it establishes a trusted relationshi
 
 For more information, see the following infographic:
 
-  ![Windows Hello Sign-in](images/security-hello-sign-in.png)
+  ![Windows Hello Sign-in.](images/security-hello-sign-in.png)
   
 In the graphic presented above, note that nonce is stands for “number once”, and is a random or semi-random generated number. 
 Once the Windows Hello Biometric or PIN credential is set up, it never leaves the device on which it is provisioned. Even if the user’s Windows Hello PIN is stolen, such as through a phishing attack, it is [useless without the user’s physical device](/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password).
@@ -64,7 +64,7 @@ Once an identity has been added through one application, it can, with user conse
 
 For more information on implementing Web Account Manager APIs, go to [Implementing Web Account Manager APIs](/windows/uwp/security/web-account-manager).
 
-  ![Security API](images/security-api-img.png)
+  ![Security API.](images/security-api-img.png)
   
 For app suites with specialized authentication requirements, the Web Account Manager (WAM) framework is extensible to custom identity providers. Users can download the custom identity provider, packaged as a Universal Windows Platform (UWP) app from the Microsoft Store, to enable SSO on other apps integrated with that identity provider.
 
@@ -87,7 +87,7 @@ Both options offer two-factor authentication in one step, requiring both a regis
 
 ### Strong Authentication with FIDO2 security key
 
-  ![FIDO img](images/security-fido2-whfb-smaller.png)
+  ![FIDO img.](images/security-fido2-whfb-smaller.png)
 
 1. User plugs FIDO2 security key into HoloLens 2
 1. Windows detects FIDO2 security key

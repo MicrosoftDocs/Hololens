@@ -68,7 +68,7 @@ The following services are required for SCEP deployment, with the exception of t
 
 You must also publish your NDES URL external to your corporate network using [Azure AD application proxy or Web Access Proxy](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application). You can also use another reverse proxy of your choice.
 
-![SCEP data flow](./images/hololens2-scep-info-flow.png)
+![SCEP data flow.](./images/hololens2-scep-info-flow.png)
 
 If your network does not already support SCEP, or you are unsure if your network is correctly set up for SCEP with Intune, reference  [Configure infrastructure to support SCEP with Intune](/mem/intune/protect/certificates-scep-configure).
 
