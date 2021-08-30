@@ -16,7 +16,7 @@ appliesto:
 - HoloLens (1st gen)
 ---
 
-# Getting around HoloLens (first gen)
+# Getting around HoloLens (1st gen)
 
 Ready to step into the world of holograms? Here's some information to get started.
 
