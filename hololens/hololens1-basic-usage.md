@@ -69,7 +69,7 @@ To select an app or other hologram, air tap it while looking directly at the hol
 
 Now it's time to put gestures to the test!
 
-You'll find your installed apps in the [Start menu](holographic-home.md) and there are more apps for HoloLens (first gen) in the Microsoft Store.
+You'll find your installed apps in the [Start menu](holographic-home.md) and there are more apps for HoloLens (1st gen) in the Microsoft Store.
 
 Open the **Start** menu and select an app!
 
