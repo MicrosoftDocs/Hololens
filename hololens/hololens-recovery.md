@@ -109,7 +109,7 @@ You may need to put the device into recovery mode if:
 
 - The HoloLens 2 doesn't start correctly
 - Advanced Recovery Companion cannot detect the device
-- You do not have access to the logged in users password/PIN
+- You no longer know the password/PIN for a device that only has a single user
 
 1. Unplug the Type-C cable to disconnect the device from the power supply or the host PC.
 
