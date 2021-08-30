@@ -7,7 +7,7 @@ ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
 ms.author: mazeller
-ms.date: 04/27/2020
+ms.date: 08/30/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -64,18 +64,18 @@ If the standard reset procedure didn't work, use the hard-reset procedure:
 
 1. Unplug the Type-C cable to disconnect the device from the power supply or the host PC.
 
-2. Hold down the **volume down** + **power** buttons for 15 seconds. The device will automatically restart.
+1. Hold down the **volume down** + **power** buttons for 15 seconds. The device will automatically restart.
 
-4. Connect the device to the host PC.
+1. Connect the device to the host PC.
 
-
-5. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and then select **Device Manager**). Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
+1. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and then select **Device Manager**). Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery device maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## Clean-reflash the device
 
 In extraordinary situations, you may have to "clean-flash" the HoloLens 2. Please note that clean-reflash isn’t expected to affect the following issues:
+
 - [Display color uniformity](hololens2-display.md)
 - Booting with sound but no display output
 - [1-3-5-LED pattern](hololens2-setup.md#lights-to-indicate-problems)
@@ -96,16 +96,20 @@ Before you start the reflash procedure, make sure the app is installed and runni
 ### Normal procedure
 
 1. While the HoloLens device is running, connect it to the Windows 10 PC where you previously opened the Advanced Recovery Companion app.
- 
+
    The device will be automatically detected, and the Advanced Recovery Companion app UI will start the update process:
 
    ![HoloLens 2 clean reflash initial screen.](images/ARC2.png)
 
-3. Select the HoloLens 2 device in the Advanced Recovery Companion app UI, and follow the instructions to complete the reflash.
+1. Select the HoloLens 2 device in the Advanced Recovery Companion app UI, and follow the instructions to complete the reflash.
 
 ### Manual procedure
 
-If the HoloLens 2 doesn't start correctly or if Advanced Recovery Companion cannot detect the device, you may need to put the device into recovery mode:
+You may need to put the device into recovery mode if:
+
+- The HoloLens 2 doesn't start correctly
+- Advanced Recovery Companion cannot detect the device
+- You do not have access to the logged in users password/PIN
 
 1. Unplug the Type-C cable to disconnect the device from the power supply or the host PC.
 
@@ -127,18 +131,18 @@ If the HoloLens 2 doesn't start correctly or if Advanced Recovery Companion cann
 
 1. Ensure your device is charged to 40% or more before attempting to flash.
 
-2. Check your device is unlocked.
+1. Check your device is unlocked.
 
 1. Check your device is plugged directly into the host PC, not a hub.
 
 1. If your device is not showing as a HoloLens/HoloLens Recovery device under Universal Serial Bus Drivers, check:
     1. **Ports**, as a Qualcomm HS-USB device
-    1.   **Other Devices**, as a QUSB_BULK device - your host PC is missing the necessary drivers to detect your HoloLens. Right click and select Update Driver and search for drivers online or [check Optional Updates in your Windows Update settings](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674). After the driver is downloaded, ARC should be able to detect it.
- 
+    1. **Other Devices**, as a QUSB_BULK device - your host PC is missing the necessary drivers to detect your HoloLens. Right click and select Update Driver and search for drivers online or [check Optional Updates in your Windows Update settings](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674). After the driver is downloaded, ARC should be able to detect it.
+
 1. If ARC does not detect your device, ensure that you can connect to your device via File Explorer on your PC. If you cannot;
 
-    1.  It is possible that your device may have USB policies that disable that connection. If so, try [Manual Flashing mode](hololens-recovery.md#manual-procedure).
-    2.  If there are no policies, try a different USB cable.
+    1. It is possible that your device may have USB policies that disable that connection. If so, try [Manual Flashing mode](hololens-recovery.md#manual-procedure).
+    2. If there are no policies, try a different USB cable.
 
 1. Check that your device doesn't display a [1-3-5-LED pattern](hololens2-setup.md#lights-to-indicate-problems).
 
@@ -178,7 +182,7 @@ Follow these steps to enable the deployment path:
 > [!TIP]
 > When you plan to use Advanced Recovery Companion to install an FFU offline, it may be useful to download your flash image. [**Download the current image for HoloLens 2**](https://aka.ms/hololens2download).
 
-
 Other resources:
+
 - [Distribute offline apps](/microsoft-store/distribute-offline-apps) 
 - [DISM app package (.appx or .appxbundle) servicing command-line options](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
