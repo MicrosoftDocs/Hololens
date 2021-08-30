@@ -38,7 +38,7 @@ If the device is correctly booted and running, there are three ways to check the
     - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
 - On your host PC, open **File Explorer** and look for your HoloLens 2 device on left side under **This PC**. Right-click the device, and select **Properties**. A dialog box will show the battery charge level.
 
-   ![A HoloLens 2 properties screen shows battery change level](images/ResetRecovery2.png)
+   ![A HoloLens 2 properties screen shows battery change level.](images/ResetRecovery2.png)
 
 If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the [troubleshooting guide](hololens-troubleshooting.md). If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
@@ -56,7 +56,7 @@ Under certain circumstances, you may have to manually reset the device without u
 
 4. Connect the device to the host PC, and then open Device Manager. (For Windows 10, press the **Windows** key and then the **X** key, and then select **Device Manager**.) Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery devive manager](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### Hard-reset procedure
 
@@ -71,7 +71,7 @@ If the standard reset procedure didn't work, use the hard-reset procedure:
 
 5. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and then select **Device Manager**). Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery device maanger 2](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery device maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## Clean-reflash the device
 
@@ -91,7 +91,7 @@ By default, Advanced Recovery Companion is set to download the most recent featu
 
 Before you start the reflash procedure, make sure the app is installed and running on your Windows 10 PC and ready to detect the device. Also ensure that your HoloLens is charged to a minimum of 40%.
 
-![HoloLens 2 clean reflash screen shot](images/ARC1.png)
+![HoloLens 2 clean reflash screen shot.](images/ARC1.png)
 
 ### Normal procedure
 
@@ -99,7 +99,7 @@ Before you start the reflash procedure, make sure the app is installed and runni
  
    The device will be automatically detected, and the Advanced Recovery Companion app UI will start the update process:
 
-   ![HoloLens 2 clean reflash initial screen](images/ARC2.png)
+   ![HoloLens 2 clean reflash initial screen.](images/ARC2.png)
 
 3. Select the HoloLens 2 device in the Advanced Recovery Companion app UI, and follow the instructions to complete the reflash.
 
@@ -115,11 +115,11 @@ If the HoloLens 2 doesn't start correctly or if Advanced Recovery Companion cann
 
 4. Connect the device to the host PC, and open Device Manager. (For Windows 10 press the **Windows** key, and then the **X** key, and then select **Device Manager**.) Make sure the device enumerates correctly as Microsoft HoloLens as shown in the following image:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery.](images/MicrosoftHoloLensRecovery.png)
 
    The device will be automatically detected, and the Advanced Recovery Companion app UI will start the update process:
 
-   ![HoloLens 2 clean reflash screen](images/ARC2.png)
+   ![HoloLens 2 clean reflash screen.](images/ARC2.png)
 
 6. Select the HoloLens 2 device in the Advanced Recovery Companion app UI, and then follow the instructions to complete the reflash.
 

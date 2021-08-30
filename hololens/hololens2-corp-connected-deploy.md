@@ -44,14 +44,14 @@ If your device isn't currently sitting in a factory settings state, now would be
 
 7. Take note of this name.
 
-    ![HoloLens 2 Settings screen](./images/hololens2-settings-about.jpg)
+    ![HoloLens 2 Settings screen.](./images/hololens2-settings-about.jpg)
 
 8. Verify that your device is successfully joined to Azure AD. There are two ways;
 
     1.  The Settings app. From **Settings** select **Accounts** -> **Access work or school**. From this screen, you can verify you are successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Azure AD. Connected by *yourusername@nameofAAD.onmicrosoft.com*. This will verify your device is joined to your organization&#39;s Azure AD.
 
     1. The [Azure portal](https://portal.azure.com/#home). Go to **Azure Active Directory** -> **Devices** -> **All devices**, and search the device name. Under Join Type, it will show as being 'Azure AD Joined'.
-        ![Verify Join Type in Azure AD](./images/hololens2-devices-all-devices.png)
+        ![Verify Join Type in Azure AD.](./images/hololens2-devices-all-devices.png)
 
 9. Verify that your device is enrolled with MDM. There are two ways;
 
@@ -59,7 +59,7 @@ If your device isn't currently sitting in a factory settings state, now would be
 
     1. [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com/#home). Log in and select  **Devices**  then  **All devices**. From here, you can search your HoloLens device&#39;s name. You should be able to see your HoloLens listed on Intune.
 
-        ![Verify managed by Intune in Azure AD](./images/hololens2-devices-all-devices2.png)
+        ![Verify managed by Intune in Azure AD.](./images/hololens2-devices-all-devices2.png)
 
 
 ## Wi-Fi certificate validation

@@ -94,7 +94,7 @@ These steps ensure that your company's users (or a group of users) can add devic
     1. **Option 2:** Give selected users/groups permission to join devices to Azure AD
 **Sign in to the Azure portal as an administrator** > **Azure Active Directory** > **Devices** > **Device Settings** >
 **Set Users may join devices to Azure AD to *Selected***
-![Image that shows Configuration of Azure AD Joined Devices](images/azure-ad-image.png)
+![Image that shows Configuration of Azure AD Joined Devices.](images/azure-ad-image.png)
 
     1. **Option 3:** You can block all users from joining their devices to the domain. This means that all devices will need to be manually enrolled.
 
@@ -175,9 +175,9 @@ You can find directions for upgrading to the commercial suite in the [holographi
 > [!NOTE]
 > You can configure different users to have different Kiosk Mode experiences by using "Azure AD" as the "User logon type". However, this option is only available in Multi-App kiosk mode. Multi-App kiosk mode will work with only one app as well as multiple apps.
 
-![Image that shows Configuration of Kiosk Mode in Intune](images/aad-kioskmode.png)
+![Image that shows Configuration of Kiosk Mode in Intune.](images/aad-kioskmode.png)
 
-For other MDM services, check your provider's documentation for instructions. Refer to the [HoloLens kiosk](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) instructions if you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service.
+For other MDM services, check your provider's documentation for instructions. Refer to the [HoloLens kiosk](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) instructions if you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service.
 
 ## Certificates and Authentication
 

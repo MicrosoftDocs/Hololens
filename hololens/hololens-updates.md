@@ -135,7 +135,7 @@ For example, consider an organization that has 1,000 devices, and has to update 
 
 Here's how the rollout progresses over time to the whole organization.
 
-![Timeline for deploying updates](./images/hololens-updates-timeline.png)
+![Timeline for deploying updates.](./images/hololens-updates-timeline.png)
 
 #### Configure an update deferral policy
 

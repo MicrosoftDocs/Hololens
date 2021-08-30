@@ -17,7 +17,7 @@ With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holog
 > [!NOTE]
 > Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.
 
-![New Settings app homepage](images/new-settings-app.png)
+![New Settings app homepage.](images/new-settings-app.png)
 
 **New features and settings**
 - Settings search: search for settings from the Settings homepage using keywords or the setting's name.

@@ -20,6 +20,8 @@ appliesto:
 
 In [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you'll be able to use your HoloLens 2 in previously inaccessible environments like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
 
+![Moving platform example.](./images/mpm-compare.gif)
+
 This article covers:
 
 1. [Why Moving Platform is Necessary](#why-moving-platform-mode-is-necessary)
@@ -62,19 +64,19 @@ To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-real
 
 1. Select the **System** accordion on the Left-hand menu
 
-   ![First image](.\images\moving-platform-1w.png)
+   ![First image.](.\images\moving-platform-1w.png)
 
 2. Select the **Moving Platform Mode** page and check the **Moving Platform Mode** checkbox
 
-    ![Second image](.\images\moving-platform-2z.png)
+    ![Second image.](.\images\moving-platform-2z.png)
 
 3. When prompted with a warning, select **OK**
 
-   ![Third image](.\images\moving-platform-3w.png)
+   ![Third image.](.\images\moving-platform-3w.png)
 
 4. Reboot your device, which can be done either via the Device Portal **Power** menu at the top right or by issuing the following voice command &quot;Reboot the device&quot; and select &quot;Yes&quot;.
 
-   ![Fourth image](.\images\moving-platform-4z.png)
+   ![Fourth image.](.\images\moving-platform-4z.png)
 
 If you are unable to see the Moving Platform Mode option in Device Portal, then it likely means you are not yet on the proper build. See the [Prerequisites](#prerequisites) section.
 

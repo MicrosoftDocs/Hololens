@@ -327,7 +327,7 @@ Be aware that some USB-C microphones incorrectly report themselves as both a mic
 
 In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
 
-![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
+![Troubleshooting USB-C microphones.](images/usbc-mic-4.png)
 
 ## Devices listed as available in Settings don't work
 
