@@ -1,5 +1,5 @@
 ---
-title: Getting around HoloLens (first gen)
+title: Getting around HoloLens (1st gen)
 description: Get started with a brief tour of the HoloLens (first gen) interface, hand tracking features, and using holographic applications.
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
 ms.date: 8/9/2021
