@@ -68,7 +68,7 @@ Apps that are installed via this method must be digitally signed. You'll need to
 
 The installed app will automatically launch upon the completion of installing.
 
-![Installing MRTK Examples via App Installer](images/hololens-app-installer-picture.jpg)
+![Installing MRTK Examples via App Installer.](images/hololens-app-installer-picture.jpg)
 
 ### Troubleshooting Installs
 

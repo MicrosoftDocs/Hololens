@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 06/17/2021
+ms.date: 08/10/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -27,6 +27,23 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 > [!IMPORTANT]
 > Due to a now resolved [known issue in our 21H1 build that was affecting Remote Assist users](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), we temporally paused the offering of Windows Holographic, version 21H1 updates. We had also changed the default Advanced Recovery Companion (ARC) build to the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). The ARC build will now resume targeting the 21H1 build.
+
+## Windows Holographic, version 21H1 - August 2021 Update
+
+- Build 20348.1014
+
+Improvements and fixes in the update:
+
+- Fixed an issue that prevented Xbox controllers from working in immersive applications with controller support.
+- Improved diagnostics for device update failures.
+
+## Windows Holographic, version 20H2 - August 2021 Update
+
+- Build 19041.1161
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H1.
 
 ## Windows Holographic, version 21H1 - July 2021 Update
 
@@ -168,18 +185,18 @@ Check out related release notes:
 
 ### Introducing the new Microsoft Edge
 
-![Animation of legacy Microsoft Edge logo to new Microsoft Edge logo](images/new-edge.gif)
+![Animation of legacy Microsoft Edge logo to new Microsoft Edge logo.](images/new-edge.gif)
 
 The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) to create better compatibility for customers and less fragmentation of the web for web developers.
 
 > [!IMPORTANT]
 > This new Microsoft Edge automatically replaces legacy Microsoft Edge, which is [no longer supported](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) in new releases.
 
-![New Microsoft Edge screenshot](images/new-edge-ui.png)
+![New Microsoft Edge screenshot.](images/new-edge-ui.png)
 
 #### Launching the new Microsoft Edge
 
-The new Microsoft Edge ![new Microsoft Edge icon](images/new_edge_logo.png) (represented by a blue and green swirl icon) is pinned to the Start menu and will automatically launch when you activate a web link.
+The new Microsoft Edge ![new Microsoft Edge icon.](images/new_edge_logo.png) (represented by a blue and green swirl icon) is pinned to the Start menu and will automatically launch when you activate a web link.
 
 > [!NOTE]
 > When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge. If you continue to use legacy Microsoft Edge after launching the new Microsoft Edge, that new data will not be synced from legacy Microsoft Edge to the new Microsoft Edge.
@@ -288,7 +305,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 1. Navigate to a website with WebXR support.
 1. Select the **Enter VR** button on the website. The location and visual representation of this button may vary per website, but it may look similar to:
 
-    ![Enter VR button example](images/75px-enter-vr.png)
+    ![Enter VR button example.](images/75px-enter-vr.png)
 
 1. The first time you try to launch a WebXR experience on a specific domain, the browser will ask for consent to enter an immersive view, select **Allow**.
 1. Use [HoloLens 2 gestures](hololens2-basic-usage.md#the-hand-tracking-frame) to manipulate the experience.
@@ -305,7 +322,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 1. Navigate to a 360-degree video on YouTube.
 1. In the video frame, select the mixed reality headset button:
 
-    ![Button to activate 360 Viewer](images/enter-360-viewer.jpg)
+    ![Button to activate 360 Viewer.](images/enter-360-viewer.jpg)
 
 1. The first time you try to launch 360 Viewer on a specific domain, the browser will ask for consent to enter an immersive view. Select **Allow**.
 1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.
@@ -326,7 +343,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 > [!NOTE]
 > Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.
 
-![New Settings app homepage](images/new-settings-app.png)
+![New Settings app homepage.](images/new-settings-app.png)
 
 **New features and settings**
 - Settings search: search for settings from the Settings homepage using keywords or the setting's name.
@@ -371,7 +388,7 @@ With this new setting, you can select an alternative color profile for your Holo
     > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
 1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
 
-    ![Display color calibration scene](images/color-cal-ui.png)
+    ![Display color calibration scene.](images/color-cal-ui.png)
     
 1. When you're happy with the selected profile, select the **Save & Exit** button
 1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
@@ -452,11 +469,11 @@ Introduced in this Windows build, when selecting **Other user** which is located
 
 When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign in screen for this user.
 
-![Sign-in screen default](./images/multiusers1.jpg)
+![Sign-in screen default.](./images/multiusers1.jpg)
 
 <br>
 
-![Sign-in screen other users](./images/multiusers2.jpg)
+![Sign-in screen other users.](./images/multiusers2.jpg)
 
 ### USB-C External Microphone Support
 
@@ -467,7 +484,7 @@ Users can select USB-C connected external microphones using the **Sound** settin
 
 Open the **Settings** app and select **System** > **Sound**.
 
-![Sound Settings](images/usbc-mic-1.jpg)
+![Sound Settings.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > To use external microphones with **Remote Assist**, users will need to click the “Manage sound devices” hyperlink.
@@ -476,11 +493,11 @@ Open the **Settings** app and select **System** > **Sound**.
 >
 > Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
 
-![Manage sound devices](images/usbc-mic-2.png)
+![Manage sound devices.](images/usbc-mic-2.png)
 
 <br>
 
-![Set microphone default](images/usbc-mic-3.jpg)
+![Set microphone default.](images/usbc-mic-3.jpg)
 
 #### What about Bluetooth microphone support?
 
@@ -492,7 +509,7 @@ Be aware that some USB-C microphones incorrectly report themselves as both a mic
 
 In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
 
-![Troubleshooting USB-C microphones](images/usbc-mic-4.png)
+![Troubleshooting USB-C microphones.](images/usbc-mic-4.png)
 
 ### Visitor Auto logon for Kiosks
 
@@ -531,7 +548,7 @@ When modifying a Kiosk to include the new apps, we recommend adding in the new A
 
 ### Kiosk mode behavior changes for handling of failures
 
-In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](hololens-kiosk.md#kiosk-mode-behavior-changes-for-handling-of-failures)” menu.
+In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)” menu.
 
 Starting in this Windows release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
@@ -779,7 +796,7 @@ You can find sample apps on [Windows Universal Samples GitHub](https://github.co
 
 Read about the full process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
 
-![Installing MRTK Examples via App Installer](images/hololens-app-installer-picture.jpg)
+![Installing MRTK Examples via App Installer.](images/hololens-app-installer-picture.jpg)
 
 ### Improvements and fixes in the update:
 
@@ -879,9 +896,9 @@ The certificate should now be installed on the device.
 1. Click **Remove**
 1. Select **Yes** when prompted for confirmation.
 
-![Certificate viewer in the Settings app](images/certificate-viewer-device.jpg)
+![Certificate viewer in the Settings app.](images/certificate-viewer-device.jpg)
 
-![Picture showing how to use Certificate UI to install a certificate](images/certificate-device-install.jpg)
+![Picture showing how to use Certificate UI to install a certificate.](images/certificate-device-install.jpg)
 
 This information can be found later [on a new Certificate Manager page](certificate-manager.md).
 
@@ -944,7 +961,7 @@ Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Setting tennant lockdown via OMA-URI](images/hololens-tenant-lockdown.png)
+   > ![Setting tennant lockdown via OMA-URI.](images/hololens-tenant-lockdown.png)
 
 1. Create a group and assign the device configuration profile to that device group. 
 
@@ -959,16 +976,16 @@ Verify in the Intune portal that device configuration has been successfully appl
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
+   > ![Screenshot of setting RequireNetworkInOOBE to false via OMA URI in Intune.](images/hololens-tenant-lockdown-false.png)
 
-1. Create a group and assign the device configuration profile to that device group. 
+1. Create a group and assign the device configuration profile to that device group.
 
 1. Make the HoloLens 2 device member of the group created in previous step and trigger sync.
 
-Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the HoloLens 2 device, effects of TenantLockdown will be inactive. 
+Verify in the Intune portal that device configuration has been successfully applied. Once this device configuration successfully applies on the HoloLens 2 device, effects of TenantLockdown will be inactive.
 
 #### What would happen during OOBE, if Autopilot profile is unassigned on a HoloLens after TenantLockdown was set to true? 
-OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed. 
+OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed.
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
 
@@ -977,14 +994,14 @@ This information can now be found alongside the rest of Autopilot under [Tenantl
 ### Global Assigned Access – Kiosk Mode
 - Reduced Identity management for Kiosk, by enabling new Kiosk method that applies Kiosk mode at the system level.
 
-This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail in the [HoloLens global assigned access kiosk](hololens-global-assigned-access-kiosk.md).
+This new feature allows an IT Admin to configure a HoloLens 2 device for multiple app kiosk mode which is applicable at system level, has no affinity with any identity on the system and applies to everyone who signs into the device. Read about this new feature in detail in the [HoloLens kiosk mode](hololens-kiosk.md).
 
 ### Automatic launch of an application in multiple-app kiosk mode 
 - Focused experience with automatic app launch, further increasing the UI and app selections chosen for Kiosk mode experiences.
 
-Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration. 
+Applies only to multiple-app kiosk mode and only 1 app can be designated to auto-launch using highlighted attribute below in Assigned Access configuration.
 
-Application is automatically launched when user signs-in. 
+Application is automatically launched when user signs-in.
 
 ```xml
 <AllowedApps>                     
@@ -994,11 +1011,12 @@ Application is automatically launched when user signs-in.
 ### Kiosk mode behavior changes for handling of failures
 - More secure Kiosk mode by eliminating available apps on Kiosk mode failures. 
 
-Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 20H2 in the case of failures no apps will be shown in the start menu as below: 
+Earlier on encountering failures in applying kiosk mode, HoloLens used to show up all applications in start menu. Now in Windows Holographic version 20H2 in the case of failures no apps will be shown in the start menu as below:
 
 ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens Policies
+
 - Device management options specifically for HoloLens created for managing the device. 
 
 New mixed reality policies have been created for HoloLens 2 devices on Windows Holographic version 20H2. New controllable settings include: setting brightness, setting volume, disabling audio recording in mixed reality captures, setting when diagnostics can be collected, and AAD group membership cache.  
@@ -1089,7 +1107,7 @@ We’ve now enabled a policy that allows IT Admins to either prevent specific pa
 
 To learn which page settings you can customize on HoloLens 2, please visit our [Settings URIs page](settings-uri-list.md). 
  
-![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
+![Screenshot of active hours being modified in the Settings app.](images/hololens-page-visibility-list.jpg)
 
 ### Research mode
 While in Research Mode, the HoloLens 2 becomes a potent tool for computer vision research. Compared to previous editions, Research Mode for HoloLens 2 has the following advantages:
@@ -1346,7 +1364,7 @@ These "in-box" apps support dark mode:
 - 3D Viewer 
 - Movies & TV 
 
-![Dark mode windows tiled](images/DarkMode.jpg)
+![Dark mode windows tiled.](images/DarkMode.jpg)
 
 ### System voice commands
 

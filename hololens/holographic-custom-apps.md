@@ -50,7 +50,7 @@ You can install your own applications on HoloLens either by using the Device Por
 1. Select **Go**.
 
    > [!div class="mx-imgBorder"]
-   > ![Install app form in Windows Device Portal on Microsoft HoloLens](images/deviceportal-appmanager.jpg)
+   > ![Install app form in Windows Device Portal on Microsoft HoloLens.](images/deviceportal-appmanager.jpg)
 
 ### Deploying from Microsoft Visual Studio 2015
 
@@ -68,7 +68,7 @@ You can install your own applications on HoloLens either by using the Device Por
 
 1. To deploy the app from your development PC to your HoloLens, select **Remote Machine**. If you already have an existing build on the HoloLens, select **Yes** to install this newer version.  
 
-   ![Remote Machine deployment for apps to Microsoft HoloLens in Visual Studio](images/vs2015-remotedeployment.jpg)  
+   ![Remote Machine deployment for apps to Microsoft HoloLens in Visual Studio.](images/vs2015-remotedeployment.jpg)  
    
 1. The application will install and auto launch on your HoloLens.
 

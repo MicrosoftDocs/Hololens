@@ -16,7 +16,7 @@ appliesto:
 
 # About HoloLens 2
 
-![HoloLens 2 side view](images/hololens2-breakdown.png)
+![HoloLens 2 side view.](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. HoloLens 2 runs on the [Windows Holographic OS](hololens-release-notes.md), which is based on a "flavor" of Windows 10, that provides users, admins, and developers with a robust, performant, and secure platform. 
 
@@ -70,7 +70,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 | **Inertial measurement unit (IMU)** | Accelerometer, gyroscope, magnetometer |
 | **Camera** | 8-MP stills, 1080p30 video |
 
-![HoloLens 2 Sensors](images/hololens2-front-view.png)
+![HoloLens 2 Sensors.](images/hololens2-front-view.png)
 
 > [!NOTE]
 > Do not cover any of the sensors that are called out in the picture. The head tracking cameras have a very wide FOV, nothing should be around them in addition to not covering them.

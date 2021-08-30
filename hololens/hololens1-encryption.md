@@ -46,7 +46,7 @@ Provisioning packages are files created by the Windows Configuration Designer to
 1. [Create a provisioning package for HoloLens.](hololens-provisioning.md)
 1. Go to **Runtime settings** > **Policies** > **Security**, and select **RequireDeviceEncryption**.
 
-    ![Require device encryption setting configured to yes](images/device-encryption.png)
+    ![Require device encryption setting configured to yes.](images/device-encryption.png)
 
 1. Find the XML license file that was provided when you purchased the Commercial Suite.
 
@@ -96,4 +96,4 @@ Encryption is silent on HoloLens. To verify the device encryption status:
 
 - On HoloLens, go to **Settings** > **System** > **About**. **BitLocker** is **enabled** if the device is encrypted. 
 
-    ![About screen showing BitLocker enabled](images/about-encryption.png)
+    ![About screen showing BitLocker enabled.](images/about-encryption.png)
