@@ -42,7 +42,7 @@ This one’s about the improved troubleshooting and device reports, some fixed b
 | [Smart Retry for app updates](#smart-retry-for-app-updates) | Allows IT Admins to scheduled retries to update apps. | IT Admins |
 | [Use only private store apps only for Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure the store app to show only apps from organization | IT Admin |
 | [Use WDAC and LOB apps](#use-wdac-and-lob-apps) | Allows IT Admins to use their own apps and still use WDAC to block other apps. | IT Admins |
-| [Fixes and improvements](#fixes-and-improvements) | Fixes and improvements for HoloLens. | All | 20348.1411 |
+| [Fixes and improvements](#fixes-and-improvements) | Fixes and improvements for HoloLens. | All |
 
 ### IT Admin Feature Checklist
 
