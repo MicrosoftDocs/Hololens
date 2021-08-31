@@ -37,7 +37,7 @@ Place the HoloLens 2 on your head. If you wear eyeglasses, leave them on.  The b
 
 If necessary, extend the headband by turning the adjustment wheel, and then loosen the overhead strap.
 
-![HoloLens 2 fit and adjustments](images/hololens2-fit.png)
+![HoloLens 2 fit and adjustments.](images/hololens2-fit.png)
 
 ### Attach and detach the overhead strap
 
@@ -47,7 +47,7 @@ To detach the front of the overhead strap, unhook the strap and slide it through
 
 To detach the back of the overhead strap, press the button below each connection tab and pull gently. To reattach it, push the connection tabs back into the slots until they click.
 
-![attach or remove the HoloLens 2 head strap](images/hololens2-headstrap.png)
+![attach or remove the HoloLens 2 head strap.](images/hololens2-headstrap.png)
 
 ## Turn on the HoloLens 2
 

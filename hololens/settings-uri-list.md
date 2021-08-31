@@ -69,7 +69,7 @@ For full details on how to create and apply a provisioning package visit [the Ho
 
 Regardless of method chosen your device should now receive the changes and users will be presented with the following Settings App.
 
-![Screenshot of active hours being modified in the Settings app](images/hololens-page-visibility-list.jpg)
+![Screenshot of active hours being modified in the Settings app.](images/hololens-page-visibility-list.jpg)
 
 To configure the Settings app pages to show or hide your own selection of pages, take a look at the Settings URIs available on HoloLens.
 

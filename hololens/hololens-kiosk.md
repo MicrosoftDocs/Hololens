@@ -73,6 +73,16 @@ See [reference links](hololens-kiosk-reference.md#kiosk-xml-code-samples) for ex
 
 ### For users who sign-in as either Local account or MSA
 
+### <a id="ppconfigadd"></a>Prov. package, step 2 &ndash; Add the kiosk configuration XML file to a provisioning package
+
+1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
+1. Select **Advanced provisioning**, enter a name for your project, and then select **Next**.
+1. Select **Windows 10 Holographic**, and then select **Next**.
+1. Select **Finish**. The workspace for your package opens.
+1. Select **Runtime settings** > **AssignedAccess** > **MultiAppAssignedAccessSettings**.
+1. In the center pane, select **Browse** to locate and select the kiosk configuration XML file that you created.
+
+   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer.](./images/multiappassignedaccesssettings.png)
 | **Desired kiosk experience** | **Recommended kiosk configuration** | **Ways to configure**  | **Remarks** |
 | --- | --- | --- | --- |
 | Every user who signs in gets kiosk experience. | [Configure multiple app Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |

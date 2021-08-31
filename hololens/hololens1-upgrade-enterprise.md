@@ -43,7 +43,7 @@ Provisioning packages are files created by the Windows Configuration Designer to
 1. [Create a provisioning package for HoloLens.](hololens-provisioning.md)
 1. Go to **Runtime settings** > **EditionUpgrade**, and select **EditionUpgradeWithLicense**.
 
-    ![Upgrade edition with license setting selected](images/icd1.png)
+    ![Upgrade edition with license setting selected.](images/icd1.png)
 
 1. Find the XML license file that was provided when you purchased the Commercial Suite.
 
