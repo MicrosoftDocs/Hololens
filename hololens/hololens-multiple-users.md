@@ -35,7 +35,9 @@ If devices are being shared between users, then you'll likely want to use device
 
 ### Advanced device management
 
-In some cases you may want to limit what applications can be accessed by the end users. This could be limiting what different users are presented with on the start menu using [Kiosk](hololens-kiosk.md). You may also want to completely stop the launching of apps or services using [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to restrict apps.
+In some cases you may want to limit what applications can be accessed by the end users. This could be limiting what apps users are presented with on the start menu using [Kiosk](hololens-kiosk.md). Kiosk can be configured to present different start menus based on user, azure groups, or special user types such visitor or excluding device owners. Kiosk doesn't stop one app from launching another, but it does.
+
+ You may also want to completely stop the launching of apps or services using [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to restrict apps. This is different that Kiosk, in that it doesn't change the UI of HoloLens but simply does not allow a blocked app to launch.
 
 ### Physical Management
 
@@ -44,6 +46,8 @@ When sharing the device between multiple users, there are some physical consider
 - Ensure devices are charging between shifts.
 - If a device is required for a shift, and needs to last multiple shifts consider using an external battery at the start of a shift while the device still has significant charge per the [managing heat directions](hololens2-charging.md#managing-heat).
 - Consider how you plan to [clean the device](hololens2-maintenance.md) between users.
+- For a device with a single shared user if using a shared PIN/password for a single user, don't put the PIN/password on the side of the device.
+- For multiple devices with a single shared user, use a variety of PINs/passwords.
 
 ## Share with multiple people, each using their own account
 
