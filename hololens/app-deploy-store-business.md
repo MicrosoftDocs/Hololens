@@ -4,7 +4,7 @@ description: Learn how to work with the Microsoft Store for Business to publish 
 keywords: Microsoft Store for Business, msfb, app deployment, store
 author: evmill
 ms.author: v-evmill
-ms.date: 9/12/2021
+ms.date: 10/13/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
