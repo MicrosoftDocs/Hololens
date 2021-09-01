@@ -86,7 +86,7 @@ What makes the HoloLens 2 so powerful?
     :::column-end:::
     :::column span="2":::
         ### [ZF builds agile facility at Gray Court with Microsoft 365, improves operational equipment efficiency.](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
-        "ZF is accelerating the adoption of Microsoft 365 to share knowledge, troubleshoot, and communicate in real time. That’s how we must work to maintain our competitive advantage in the era of Industry 4.0." - Tobias Brugger: Director of Operations at ZF Group.
+        For ZF Group, Microsoft 365 helps its employees to share knowledge, troubleshoot, and communicate in real time. 
     :::column-end:::
 :::row-end:::
 
