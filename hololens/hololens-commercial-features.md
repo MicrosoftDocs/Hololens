@@ -61,20 +61,8 @@ What makes the HoloLens 2 so powerful?
         [<img src="images/eaton.png" alt="Eaton Vehicle Group" width=350px>](https://customers.microsoft.com/en-us/story/1406696349549504197-eaton-vehicle-group-dynamics-365-mixed-reality)
     :::column-end:::
     :::column span="2":::
-        ### [What we found was that Microsoft Dynamics 365 Guides are so intuitive, so well designed, and so familiar that the people in the plants could create the guides themselves. - Jason Pappas: Innovation Product Director at Eaton](https://customers.microsoft.com/en-us/story/1406696349549504197-eaton-vehicle-group-dynamics-365-mixed-reality)
-        With HoloLens 2, Eaton has managed to train its workforce to use 1,500 pieces of equipment.
-    :::column-end:::
-:::row-end:::
-
----
-
-:::row:::
-    :::column:::
-        [<img src="images/toyota.jpg" alt="Toyota Motor North America" width=350px>](https://customers.microsoft.com/en-us/story/1343053710339586698-toyota-motor-north-america-automotive-teams)
-    :::column-end:::
-    :::column span="2":::
-        ### [Toyota is using Dynamics 365 Remote Assist on HoloLens 2 to transform its workforce.](https://customers.microsoft.com/en-us/story/1343053710339586698-toyota-motor-north-america-automotive-teams)
-        Toyota Motors North America uses HoloLens 2 to improve service technician efficiency and reduce the cost and environmental impact of service-related travel.
+        ### [Eaton’s Vehicle Group uses Dynamics 365 mixed reality to drive savings, efficiencies.](https://customers.microsoft.com/en-us/story/1406696349549504197-eaton-vehicle-group-dynamics-365-mixed-reality)
+        When you describe a problem, imagine that we are speaking different languages. When you explain it, someone on the other side may not understand precisely what's happening, but when you show it in real time with the HoloLens, people understand. - Alexandre M. Moraes: Plant Manager at Eaton.
     :::column-end:::
 :::row-end:::
 
@@ -85,8 +73,8 @@ What makes the HoloLens 2 so powerful?
         [<img src="images/sheba.png" alt="Sheba Medical Center" width=350px>](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
     :::column-end:::
     :::column span="2":::
-        ### [Sheba Medical Center uses HoloLens 2 to accompany every device in their facility with an immediately accessible tutorial.](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
-        Sheba has a diminishing staff due to Covid 19, but HoloLens tutorials save healthcare workers time, ensuring that they can learn to use all of the medical equipment quickly.
+        ### [Sheba Medical Center uses Microsoft’s HoloLens for ventilators training.](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
+        HoloLens at the service of medical training in times of crisis.
     :::column-end:::
 :::row-end:::
 
@@ -98,7 +86,7 @@ What makes the HoloLens 2 so powerful?
     :::column-end:::
     :::column span="2":::
         ### [ZF Group uses HoloLens 2 to help employees solve complex production problems quickly.](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
-        When ZF Group employees need help from the facility's experts in Germany, they use HoloLens 2 to save travel time.
+        ZF builds agile facility at Gray Court with Microsoft 365, improves operational equipment efficiency.
 
     :::column-end:::
 :::row-end:::
@@ -110,8 +98,8 @@ What makes the HoloLens 2 so powerful?
         [<img src="images/tokyu.png" alt="Tokyu Construction" width=350px>](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
     :::column-end:::
     :::column span="2":::
-        ### [Tokyu Construction uses HoloLens 2 to ensure quality while designing, planning, and executing construction projects.](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
-        Tokyu employees manage large amounts of architectural 3D data on site, but with HoloLens 2, they can review system specifications and make accurate measurements promptly.
+        ### [Tokyu Construction improves engineering precision and increases productivity with Azure Remote Rendering on HoloLens 2.](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
+        "Once mixed reality is widely adopted across roles, we’ll decrease costs, improve safety, and boost quality. We anticipate a 30 percent increase in future construction productivity. - Masaya Hayashi: Head of Digital Engineering Department at Tokyu Construction.
     :::column-end:::
 :::row-end:::
 
@@ -122,8 +110,8 @@ What makes the HoloLens 2 so powerful?
         [<img src="images/mda-hl2.jpg" alt="MDA" width=350px>](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
     :::column-end:::
     :::column span="2":::
-        ### [MDA uses HoloLens to visualize new designs, accelerate diagnostic issues, and train astronauts and ground controllers on complex International Space Station equipment.](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
-        MDA builds robotic arms for ISS. With HoloLens 2, they can optimize designs and build exactly what's required to meet mission requirements.
+        ### [MDA takes mixed reality into orbit with HoloLens 2.](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
+        With HoloLens 2, we optimize designs and build what's required to meet the mission requirements. It's going to be a transformative tool in our business. - Tim Kopra: Vice President of Robotics and Space Operations at MDA
     :::column-end:::
 :::row-end:::
 <br>
