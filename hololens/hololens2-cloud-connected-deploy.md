@@ -33,7 +33,7 @@ If your device isn&#39;t currently sitting in a factory settings state, now woul
 1. Select the **Settings** app and select **System.** The first piece of information you&#39;ll see is your Device name, which for your HoloLens 2 device will be &quot;HOLOLENS-&quot; followed by a six character string.
 1. Take note of this name.
 
-![HoloLens 2 Settings - About](./images/hololens2-settings-about.jpg)
+![HoloLens 2 Settings - About.](./images/hololens2-settings-about.jpg)
 
 7. You can verify that your device is successfully enrolled in the Azure AD within the Settings app. From **Settings** select **Accounts** -> **Access work or school**. From this screen you can verify you are successfully enrolled by seeing &quot;Connected to _nameofAAD_&#39;s Azure AD. Connected by _yourusername_@_nameofAAD_.onmicrosoft.com&quot;.
 
@@ -41,11 +41,11 @@ If your device isn&#39;t currently sitting in a factory settings state, now woul
 To validate the device has Azure AD Joined we can check the Azure Active Directory from the [Azure portal](https://portal.azure.com/#home) -> **Azure Active Directory** -> **Devices** -> **All devices**, and search the device name. You&#39;ll be able to see the device is a part of the Azure Active Directory.
 
 
-![Azure Active Directory - Device](./images/aad-enrollment.png)
+![Azure Active Directory - Device.](./images/aad-enrollment.png)
 
 Next you&#39;ll need to log into the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home). Log in and select **Devices** then **All devices**. From here you can search your HoloLens device&#39;s name. You should be able to see your HoloLens listed on Intune.
 
-![Intune - Device](./images/endpoint-all-devices-enrolled.png)
+![Intune - Device.](./images/endpoint-all-devices-enrolled.png)
 
 ## Remote Assist Call Validation
 

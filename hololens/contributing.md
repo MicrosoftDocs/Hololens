@@ -142,7 +142,7 @@ Use the following workflow to *create new articles* in the documentation repo vi
 
 9. Select **New pull request** and merge your fork's _master_ branch into MicrosoftDocs/mixed-reality _master_ (make sure the arrow is pointing to the correct destination).
 
-   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr-to-master.png)
+   ![Create pull request from your fork into MicrosoftDocs/mixed-reality.](images/pr-to-master.png)
 
 ## Markdown basics
 
@@ -221,11 +221,11 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
    1. In a web browser, create a pull request to sync recent changes from other contributors in the default branch of MicrosoftDocs/mixed-reality, _master_, to your fork (make sure the arrow is pointing to the correct destination).
       
-      ![Sync changes from MicrosoftDocs/mixed-reality to your fork](images/sync-repos.png)
+      ![Sync changes from MicrosoftDocs/mixed-reality to your fork.](images/sync-repos.png)
 	  
    2. In Visual Studio Code, select the sync button to sync your freshly updated fork to the local clone.
       
-      ![Click the sync button image](images/sync-clone.png)
+      ![Click the sync button image.](images/sync-clone.png)
 	  
 2. Create or edit articles in your cloned repo using Visual Studio Code.
 
@@ -241,11 +241,11 @@ Use the following workflow to make changes to the documentation with Visual Stud
 	  
    4. Select the **sync** button to sync your changes back to origin (your fork on GitHub).
       
-      ![Click the sync button](images/sync-back.png)
+      ![Click the sync button.](images/sync-back.png)
 	  
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality _master_ (make sure the arrow is pointing to the correct destination).
 
-   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr-to-master.png)
+   ![Create pull request from your fork into MicrosoftDocs/mixed-reality.](images/pr-to-master.png)
 
 ### Useful extensions
 
