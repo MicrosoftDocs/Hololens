@@ -85,9 +85,8 @@ What makes the HoloLens 2 so powerful?
         [<img src="images/zf-group.jpg" alt="ZF Group" width=350px>](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
     :::column-end:::
     :::column span="2":::
-        ### [ZF Group uses HoloLens 2 to help employees solve complex production problems quickly.](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
-        ZF builds agile facility at Gray Court with Microsoft 365, improves operational equipment efficiency.
-
+        ### [ZF builds agile facility at Gray Court with Microsoft 365, improves operational equipment efficiency.](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
+        "ZF is accelerating the adoption of Microsoft 365 to share knowledge, troubleshoot, and communicate in real time. That’s how we must work to maintain our competitive advantage in the era of Industry 4.0." - Tobias Brugger: Director of Operations at ZF Group.
     :::column-end:::
 :::row-end:::
 
@@ -99,7 +98,7 @@ What makes the HoloLens 2 so powerful?
     :::column-end:::
     :::column span="2":::
         ### [Tokyu Construction improves engineering precision and increases productivity with Azure Remote Rendering on HoloLens 2.](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
-        "Once mixed reality is widely adopted across roles, we’ll decrease costs, improve safety, and boost quality. We anticipate a 30 percent increase in future construction productivity." - Masaya Hayashi: Head of Digital Engineering Department at Tokyu Construction.
+        Unless you’re a trained architectural engineer, it can be challenging to look at a 2D blueprint and visualize what a building will actually look like in 3D. 
     :::column-end:::
 :::row-end:::
 
@@ -111,7 +110,7 @@ What makes the HoloLens 2 so powerful?
     :::column-end:::
     :::column span="2":::
         ### [MDA takes mixed reality into orbit with HoloLens 2.](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
-        "With HoloLens 2, we optimize designs and build what's required to meet the mission requirements. It's going to be a transformative tool in our business." - Tim Kopra: Vice President of Robotics and Space Operations at MDA
+        MDA uses immersive mixed reality experiences to help engineers visualize designs, accelerate diagnostic issues, and train astronauts and ground controllers.
     :::column-end:::
 :::row-end:::
 <br>
