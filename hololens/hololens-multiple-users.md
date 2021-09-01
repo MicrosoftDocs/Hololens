@@ -7,7 +7,7 @@ author: qianw211
 ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 08/26/2021
+ms.date: 9/1/2021
 ms.reviewer: 
 manager: sekerawa
 appliesto:
@@ -23,7 +23,7 @@ Businesses often invest in many shared HoloLens devices. Security with HoloLens 
 
 - Workers can check out a HoloLens to perform a certain task. Thanks to Microsoft Intune and other provisioning profiles, you can be certain that a worker uses HoloLens only in the way it’s intended. For instance, they can use Remote Assist, but they can’t open Web browsers, games, Word, etc.
 
-The results are impressive. Even in the most sensitive environments, information sharing and visuals are unique to the end user’s eyes, so collaboration can thrive. Imagine a trans-oceanic and real-time collaboration using Remote Assist. HoloLens sharing brings new interactions, without risking unwarranted information disclosure.
+The results are impressive. Even in the most sensitive environments, information sharing and visuals are unique to the end user’s eyes, so collaboration can thrive. HoloLens sharing brings new interactions, without risking unwarranted information disclosure.
 
 ## Share with multiple people, each using their own account
 

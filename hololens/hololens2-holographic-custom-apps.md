@@ -2,7 +2,7 @@
 title: Manage custom apps for HoloLens 2
 description: Learn how to install, uninstall, and side load custom holographic apps on HoloLens 2 devices using the Device Portal and Visual Studio.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
-ms.date: 8/11/2021
+ms.date: 9/1/2021
 manager: sekerawa
 keywords: hololens, hololens 2, sideload, side load, side-load, store, uwp, app, install
 ms.prod: hololens
@@ -39,8 +39,6 @@ See our [guide](holographic-custom-apps.md) if you'd like to deploy custom apps 
 What is a line of business (LOB) app?
 
 Line of business, or LOB for short, means a product or products that serve a particular customer transaction or business need. 
-
-In industries like insurance, line of business (LOB) also has a regulatory and accounting definition to meet a statutory set of insurance policies. 
 
 You’ll find LOB apps in a wide range of organizations. LOB apps are valued because they solve problems unique to each business. 
 

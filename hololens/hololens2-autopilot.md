@@ -3,7 +3,7 @@ title: Windows Autopilot for HoloLens 2
 description: Learn how to set up, configure, and troubleshoot Autopilot on HoloLens 2 devices.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 8/10/2021
+ms.date: 9/1/2021
 ms.prod: hololens
 ms.topic: article
 ms.custom: 
@@ -27,8 +27,6 @@ IT administrators can create an Autopilot profile and assign it to a group of de
 >You first have to configure Auto-enrollment. 
 
 Auto-enrollment is a “no touch” solution. It enrolls corporate devices to your organization’s Azure Active Directory tenant and mobile device management (MDM) system. 
-
-Think of a “tenant” as a house. When you ring the doorbell, Azure Active Directory looks at you and verifies that you are who you claim you are. With that confirmation, you’re able to enter. Once inside, the MDM, like Microsoft Intune, lets you know where you’re allowed to go within the house.
 
 ## Self-deploying mode
 
