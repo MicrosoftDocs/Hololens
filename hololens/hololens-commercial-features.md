@@ -3,7 +3,7 @@ title: HoloLens 2 capabilities and solutions
 description: Learn about the Microsoft HoloLens commercial features for businesses to manage HoloLens devices. 
 author: qianw211
 ms.author: v-qianwen
-ms.date: 08/25/2021
+ms.date: 9/1/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -53,6 +53,82 @@ What makes the HoloLens 2 so powerful?
 | Operate in regulated environments | HoloLens 2 has an extensive device portfolio that supports highly regulated environments including environments designated ISO Class 5.0 and UL Class I, Division 2. |
 
 [!INCLUDE [solutions](includes/hlsolutions.md)]
+
+## How HoloLens 2 is transforming industries
+
+:::row:::
+    :::column:::
+        [<img src="images/eaton.png" alt="Eaton Vehicle Group" width=350px>](https://customers.microsoft.com/en-us/story/1406696349549504197-eaton-vehicle-group-dynamics-365-mixed-reality)
+    :::column-end:::
+    :::column span="2":::
+        ### [What we found was that Microsoft Dynamics 365 Guides are so intuitive, so well designed, and so familiar that the people in the plants could create the guides themselves. - Jason Pappas: Innovation Product Director at Eaton](https://customers.microsoft.com/en-us/story/1406696349549504197-eaton-vehicle-group-dynamics-365-mixed-reality)
+        With HoloLens 2, Eaton has managed to train its workforce to use 1,500 pieces of equipment.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/toyota.jpg" alt="Toyota Motor North America" width=350px>](https://customers.microsoft.com/en-us/story/1343053710339586698-toyota-motor-north-america-automotive-teams)
+    :::column-end:::
+    :::column span="2":::
+        ### [Toyota is using Dynamics 365 Remote Assist on HoloLens 2 to transform its workforce.](https://customers.microsoft.com/en-us/story/1343053710339586698-toyota-motor-north-america-automotive-teams)
+        Toyota Motors North America uses HoloLens 2 to improve service technician efficiency and reduce the cost and environmental impact of service-related travel.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/sheba.png" alt="Sheba Medical Center" width=350px>](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
+    :::column-end:::
+    :::column span="2":::
+        ### [Sheba Medical Center uses HoloLens 2 to accompany every device in their facility with an immediately accessible tutorial.](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
+        Sheba has a diminishing staff due to Covid 19, but HoloLens tutorials save healthcare workers time, ensuring that they can learn to use all of the medical equipment quickly.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/zf-group.jpg" alt="ZF Group" width=350px>](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
+    :::column-end:::
+    :::column span="2":::
+        ### [ZF Group uses HoloLens 2 to help employees solve complex production problems quickly.](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
+        When ZF Group employees need help from the facility's experts in Germany, they use HoloLens 2 to save travel time.
+
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/tokyu.png" alt="Tokyu Construction" width=350px>](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
+    :::column-end:::
+    :::column span="2":::
+        ### [Tokyu Construction uses HoloLens 2 to ensure quality while designing, planning, and executing construction projects.](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
+        Tokyu employees manage large amounts of architectural 3D data on site, but with HoloLens 2, they can review system specifications and make accurate measurements promptly.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/mda-hl2.jpg" alt="MDA" width=350px>](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
+    :::column-end:::
+    :::column span="2":::
+        ### [MDA uses HoloLens to visualize new designs, accelerate diagnostic issues, and train astronauts and ground controllers on complex International Space Station equipment.](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
+        MDA builds robotic arms for ISS. With HoloLens 2, they can optimize designs and build exactly what's required to meet mission requirements.
+    :::column-end:::
+:::row-end:::
+<br>
+
+---
 
 ## Dynamics 365 apps
 
