@@ -62,7 +62,7 @@ What makes the HoloLens 2 so powerful?
     :::column-end:::
     :::column span="2":::
         ### [Eaton’s Vehicle Group uses Dynamics 365 mixed reality to drive savings, efficiencies.](https://customers.microsoft.com/en-us/story/1406696349549504197-eaton-vehicle-group-dynamics-365-mixed-reality)
-        "When you describe a problem, imagine that we are speaking different languages. When you explain it, someone on the other side may not understand precisely what's happening, but when you show it in real time with the HoloLens, people understand." - Alexandre M. Moraes: Plant Manager at Eaton.
+        "When you describe a problem, imagine that we are speaking different languages. When you explain it, someone on the other side may not understand precisely what's happening, but when you show it in real time with the HoloLens, people understand." <br> - Alexandre M. Moraes: Plant Manager at Eaton.
     :::column-end:::
 :::row-end:::
 
@@ -99,7 +99,7 @@ What makes the HoloLens 2 so powerful?
     :::column-end:::
     :::column span="2":::
         ### [Tokyu Construction improves engineering precision and increases productivity with Azure Remote Rendering on HoloLens 2.](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
-        "Once mixed reality is widely adopted across roles, we’ll decrease costs, improve safety, and boost quality. We anticipate a 30 percent increase in future construction productivity." - Masaya Hayashi: Head of Digital Engineering Department at Tokyu Construction.
+        "Once mixed reality is widely adopted across roles, we’ll decrease costs, improve safety, and boost quality. We anticipate a 30 percent increase in future construction productivity." <br> - Masaya Hayashi: Head of Digital Engineering Department at Tokyu Construction.
     :::column-end:::
 :::row-end:::
 
@@ -111,7 +111,7 @@ What makes the HoloLens 2 so powerful?
     :::column-end:::
     :::column span="2":::
         ### [MDA takes mixed reality into orbit with HoloLens 2.](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
-        "With HoloLens 2, we optimize designs and build what's required to meet the mission requirements. It's going to be a transformative tool in our business." - Tim Kopra: Vice President of Robotics and Space Operations at MDA
+        "With HoloLens 2, we optimize designs and build what's required to meet the mission requirements. It's going to be a transformative tool in our business."<br> - Tim Kopra: Vice President of Robotics and Space Operations at MDA
     :::column-end:::
 :::row-end:::
 <br>
