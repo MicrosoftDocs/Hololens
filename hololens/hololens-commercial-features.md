@@ -25,9 +25,7 @@ keywords: HoloLens 2, commercial, features, mdm, mobile device management, kiosk
 
 Thanks to HoloLens 2 and Mixed Reality applications, now workers can collaborate without boundaries, act with precision, and increase productivity.
 
-Equipped with the HoloLens 2, workers can engage heads-up and hands free for longer with more comfort. Workers can connect remotely with colleagues in real time and work together across an extensive holographic canvas overlaid in their physical environment.  The goal is to quickly resolve issues in the moment. Furthermore, as a result of built-in voice commands, eye tracking and world-anchoring, they can focus on safely completing tasks and minimizing errors.
-
-With HoloLens 2, companies in medicine, manufacturing, aeronautics, architecture, academia, and more are enjoying an immediate return on investment (ROI). In fact, 58 percent of Fortune 500 companies are using HoloLens. Frontline workers are the key beneficiaries due to a robust ecosystem of apps supported with the security, reliability, and scalability of Microsoft.
+Collaborate without boundaries and act with precision to increase employee productivity with mixed reality applications on HoloLens 2. Stay engaged heads-up, hands free longer and more comfortably with built-in voice commands, eye tracking, and world-anchoring for continuous focus on safely completing tasks without errors. Connect with remote colleagues in real-time and work together across an extensive holographic canvas overlayed in your physical environment to quickly resolve issues at the point of work. Realize return on investment (ROI) right out of the box with a robust ecosystem of applications that are supported with the security, reliability, and scalability of Microsoft.  
 
 We hope this article inspires you to think of all the ways in which mixed reality (MR) will benefit your business.
 
@@ -117,26 +115,8 @@ What makes the HoloLens 2 so powerful?
 
 ---
 
-## Dynamics 365 apps
-
-### Dynamics 365 Guides with HoloLens 2
-
-Increased speed, fewer errors, and more confidence, these're the benefits of Microsoft Dynamic 365 Guides with HoloLens 2. 
-
-This MR app helps workers adapt to complex scenarios, everything from training, to assembly, to service, and repair. Workers of all experience levels can quickly learn and adapt. All the training can be done by picking up holographic parts and icons, reading contextual step-by-step instructions that move with them. Easy and out-of-the box [author branching](/dynamics365/mixed-reality/guides/pc-app-branching) can accommodate the different learning paths, while taking into account changes in workflow. For workers learning new and complex tasks, they can reply on Guides for information.
-
-### Dynamics 365 Remote Assist for HoloLens 2/mobile devices
-
-Now, frontline workers can collaborate with remote experts anytime and anywhere with 3D annotations right in their real-world environment. They can share what they are seeing in real-time, view critical information anchored right in their real-world environment to resolve issues quickly. Frontline workers can use Dynamics 365 Remote Assist on iOS and Android mobile devices, or HoloLens 2.
-
-Customers achieved the following benefits:
-
-* Zero error in the last two years; 90% less touch labor – Lockheed Martin
-* 70% less time needed for upskilling workers – Suntory
-* 50% less time needed for diagnosing and resolving issues – L’Oréal
-* 2.2 million yen saved (264 work hours) in travel costs – Musashi
-
 ## Managing HoloLens 2 in your organization
+
 HoloLens 2 includes features that make it easier for organizations to manage and use HoloLens devices. Some features are included with the device while others can be enabled by [Mobile Device Management (MDM) for HoloLens](hololens-mdm-configure.md)  or through [Provisioning Packages](hololens-provisioning.md) using [Windows Configuration Designer](app-deploy-provisioning-package.md#setup).
 
 | I want to... | Solution | Description |  
