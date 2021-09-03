@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/202010/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+>
+  <Profiles>
+    <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}">
+      <AllAppsList>
+        <AllowedApps>
+          <!--
+            TODO:
+            1. Add AUMIDs of app(s) you want displayed in start menu. See examples below.
+            2. Specify rs5:AutoLaunch="true" only for 1 app. If automatic launch not desired, remove this attribute.
+            -->
+          <App AppUserModelId="Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist" rs5:AutoLaunch="true" />
+          <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App" />
+        </AllowedApps>
+      </AllAppsList>
+      <StartLayout>
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Life at a glance">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="HolographicSystemSettings_cw5n1h2txyewy!App" />                              
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+      </StartLayout>
+      <Taskbar ShowTaskbar="true"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}">
+      <v5:Exclusions>
+        <v5:SpecialGroup Name="DeviceOwner" />
+      </v5:Exclusions>
+    </v3:GlobalProfile>
+  </Configs>
+</AssignedAccessConfiguration>

@@ -36,7 +36,7 @@ If the device is correctly booted and running, there are three ways to check the
     - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
 - On your host PC, open **File Explorer** and look for your HoloLens 2 device on left side under **This PC**. Right-click the device, and select **Properties**. A dialog box will show the battery charge level.
 
-   ![A HoloLens 2 properties screen shows battery change level](images/ResetRecovery2.png)
+   ![A HoloLens 2 properties screen shows battery change level.](images/ResetRecovery2.png)
 
 ## Alternative charging specifications
 
