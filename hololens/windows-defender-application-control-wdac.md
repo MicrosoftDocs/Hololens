@@ -7,7 +7,7 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 8/1/2021
+ms.date: 9/3/2021
 ms.reviewer: 
 manager: yannisle
 appliesto:
@@ -18,11 +18,7 @@ appliesto:
 
 ## Overview
 
-HoloLens enables people to work better, collaborate more closely, and do things they’ve never done before. Because of this, it’s used in business for specific reasons.
-
-To ensure it’s used for intended purposes, IT administrators may want to block the store, or use kiosk mode, which is a front-facing curtain, so users may only see certain things. One example is a defense company wanting to prevent leaks.  Windows Defender Application Control (WDAC) is the right candidate for this purpose. WDAC is a software-based security layer.
-
-WDAC protects against malware and untrusted software. It ensures that only approved code can run on HoloLens. WDAC allows you to configure HoloLens to block the launch of apps. It's different from the Kiosk mode, where the UI hides the apps but they can still be launched. With WDAC, you can see the apps but they can’t be launched.
+WDAC allows you to configure HoloLens to block the launch of apps. It's different from the Kiosk mode, where the UI hides the apps but they can still be launched. With WDAC, you can see the apps but they can’t be launched.
 
 > [!NOTE]
 > When end users attempt to launch an app that is blocked by WDAC on HoloLens, they won't be notified about not being able to launch the app.

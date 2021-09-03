@@ -2,7 +2,7 @@
 title: Manage custom apps for HoloLens 2
 description: Learn how to install, uninstall, and side load custom holographic apps on HoloLens 2 devices using the Device Portal and Visual Studio.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
-ms.date: 9/1/2021
+ms.date: 9/3/2021
 manager: sekerawa
 keywords: hololens, hololens 2, sideload, side load, side-load, store, uwp, app, install
 ms.prod: hololens
@@ -34,17 +34,4 @@ If you're looking for either developer method of app installation for HoloLens 2
 
 See our [guide](holographic-custom-apps.md) if you'd like to deploy custom apps on HoloLens (1st gen).
 
-## Manage line of business (LOB) apps
-
-What is a line of business (LOB) app?
-
-Line of business, or LOB for short, means a product or products that serve a particular customer transaction or business need. 
-
-You’ll find LOB apps in a wide range of organizations. LOB apps are valued because they solve problems unique to each business. 
-
-When you sideload an app, you deploy an app package to HoloLens.
-
-A provisioning package – also known by the abbreviation “.ppkg” – is a container for a collection of configuration settings. 
-
-With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 

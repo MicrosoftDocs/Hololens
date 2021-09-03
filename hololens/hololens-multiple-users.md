@@ -7,7 +7,7 @@ author: qianw211
 ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/1/2021
+ms.date: 9/3/2021
 ms.reviewer: 
 manager: sekerawa
 appliesto:
@@ -21,7 +21,7 @@ appliesto:
 
 Businesses often invest in many shared HoloLens devices. Security with HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of a locked-down experience: 
 
-- Workers can check out a HoloLens to perform a certain task. Thanks to Microsoft Intune and other provisioning profiles, you can be certain that a worker uses HoloLens only in the way it’s intended. For instance, they can use Remote Assist, but they can’t open Web browsers, games, Word, etc.
+- Workers can check out a HoloLens to perform a certain task. Microsoft Intune and provisioning packages have many uses for device management, which can include Kiosk, WDAC, or other common device restrictions.  Thanks to Microsoft Intune and provisioning packages, you can be certain that a worker uses HoloLens only in the way it’s intended. For instance, they can use Remote Assist, but they can’t open Web browsers, games, Word, etc.
 
 The results are impressive. Even in the most sensitive environments, information sharing and visuals are unique to the end user’s eyes, so collaboration can thrive. HoloLens sharing brings new interactions, without risking unwarranted information disclosure.
 

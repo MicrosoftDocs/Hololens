@@ -8,7 +8,7 @@ author: qianw211
 ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/1/2021
+ms.date: 9/3/2021
 audience: ITPro
 ms.reviewer: 
 manager: sekerawa
@@ -43,9 +43,7 @@ You can also set an update schedule. It can be on a particular day, or every day
 
 Finally, a few words about planning your update strategy. We support update deferrals. So, you can decide how long to wait after Microsoft releases an update to install that update on devices.
 
-In fact, there’s a long-term service branch that disallows updates until you complete your testing. 
-
-Sometimes, a company likes to try all the new features first to make sure everything works, that there are no bugs. Once they’ve confirmed that all is good, they roll out the updates to the entire company. By associating subsets of your devices, known as update rings, with different deferral policies, you can coordinate an update rollout strategy for your organization.
+Sometimes, a company likes to try all the new features first to make sure everything works, and they are familiar with the new updates so their support team is prepared. Once they’ve confirmed that all is good, they roll out the updates to the entire company. By associating subsets of your devices with different deferral policies, known as update rings, you can coordinate an update rollout strategy for your organization.
 
 ## HoloLens update tools
 
