@@ -20,7 +20,7 @@ appliesto:
 
 Provisioning packages can be used to prepare and configure devices in an environment without access to endpoint management. They can also be deployed to a device regardless of identity of the user, enrollment status, during the Out of Box Experience (OOBE), or by [applying a provisioning package during setup](/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
 
-## Provisioning Packages considerations:
+## Provisioning Packages considerations
 
 * Non-Public apps
 * USB side-load only
@@ -39,7 +39,7 @@ Within [Windows Configuration Designer](https://www.microsoft.com/store/productI
 
 1. Set ApplicationManagement/AllowAllTrustedApps To “Yes”. See: [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
 
-2. Navigate to **UniversalAppInstall** > **UserContextAppLicense** enter the **PackageFamilyName**. See [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall). See also: [UserContextAppLicense](/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
+2. Navigate to **UniversalAppInstall** > **UserContextApp** enter the **PackageFamilyName**. See [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall).
 
    You can use Device Portal on a device you have already installed your app to. Visit the Apps page, and look at the PackageRelativeID line, all the information before the "!" Is your **PackageFamilyName**.
 
@@ -47,7 +47,8 @@ Within [Windows Configuration Designer](https://www.microsoft.com/store/productI
 
 4. Depending on if you have purchased your app or built your own LOB app, you will need to upload the license file or security certificate.
 
-    - For license file: navigate to **UniversalAppInstall** > **UserContextAppLicence** and browse to the location of your license and upload it.
+    - For license file: navigate to **UniversalAppInstall** > **UserContextAppLicence** and enter your licence product ID. Once done a new section **LicenseProductID:***yourlicenseproductid* will be created, select the new section and browse to the location of your license and upload it.
+        - See [UserContextAppLicense](/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
     - For the security file, navigate to **Certificates** and select your certificate to install alongside your .appx bundle.
 
 Make sure to save your project to a secure location. Then **Export** it as a **Provisioning Package**.  
