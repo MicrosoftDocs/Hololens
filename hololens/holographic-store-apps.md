@@ -91,7 +91,7 @@ Pre-Requisites: User has already joined the HoloLens 2 device to their work tena
 
 1. Close the Edge browser and from the Start menu, select the **All Apps** button and launch the OneDrive PWA App labeled **Microsoft OneDrive**
 
-    ![OneDrive PWA](images/office-pwa-5.jpg)
+    ![All apps showing both apps.](images/office-pwa-5.jpg)
 
 > [!NOTE]
 > The “Microsoft OneDrive” is the PWA app where as “OneDrive” is the older UWP.
