@@ -22,7 +22,6 @@ appliesto:
 Businesses often invest in many shared HoloLens devices. Security with HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of a locked-down experience: 
 
 
-The results are impressive. Even in the most sensitive environments, information sharing and visuals are unique to the end user’s eyes, so collaboration can thrive. HoloLens sharing brings new interactions, without risking unwarranted information disclosure.
 
 ## Share with multiple people, each using their own account
 
