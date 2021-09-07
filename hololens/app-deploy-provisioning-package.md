@@ -47,7 +47,7 @@ Within [Windows Configuration Designer,](https://www.microsoft.com/store/product
 
 4. Depending on if you have purchased your app or built your own LOB app, you will need to upload the license file or security certificate.
 
-    - For license file: navigate to **UniversalAppInstall** > **UserContextAppLicence** and enter your license product ID. A new section **LicenseProductID:***yourlicenseproductid* will be created, select this new section and browse to the location of your license and upload it.
+    - For license file: navigate to **UniversalAppInstall** > **UserContextAppLicence** and enter your license product ID. A new section <b>LicenseProductID:</b><i>yourlicenseproductid</i> will be created, select this new section and browse to the location of your license and upload it.
         - See [UserContextAppLicense](/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
     - For the security file, navigate to **Certificates** and select your certificate to install alongside your .appx bundle.
 
