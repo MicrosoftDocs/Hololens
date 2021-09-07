@@ -96,7 +96,7 @@ Pre-Requisites: User has already joined the HoloLens 2 device to their work tena
 > [!NOTE]
 > The “Microsoft OneDrive” is the PWA app where as “OneDrive” is the older UWP.
 
-1. You'll then be able to see your OneDrvie files.
+1. You'll then be able to see your OneDrive files.
 
     ![OneDrive PWA](images/office-pwa-6.jpg)
 
@@ -150,6 +150,6 @@ On the **Start** menu or in the **All apps** list, browse to the app. Select and
 
 ### Uninstall from Settings
 
-On the **Start** menu, select **Settings -> Apps.** Find the app from the list, select it and then click **Uninstall**.
+On the **Start** menu, select **Settings > Apps.** Find the app from the list, select it and then click **Uninstall**.
 
 If you are unable to uninstall an app, please file [feedback](/hololens/hololens-feedback) using the Feedback Hub.
