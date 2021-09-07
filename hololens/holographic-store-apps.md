@@ -89,13 +89,18 @@ Pre-Requisites: User has already joined the HoloLens 2 device to their work tena
 
     ![Install prompt](images/office-pwa-4.jpg)
 
-1. Close the Edge browser and from the Start menu, select the **All Apps** button and launch the OneDrive PWA App labeled **Microsoft OneDrive** .
+1. Close the Edge browser and from the Start menu, select the **All Apps** button and launch the OneDrive PWA App labeled **Microsoft OneDrive**
+
+    ![OneDrive PWA](images/office-pwa-5.jpg)
 
 > [!NOTE]
 > The “Microsoft OneDrive” is the PWA app where as “OneDrive” is the older UWP.
 
-    ![OneDrive PWA](images/office-pwa-5.jpg)
+1. You'll then be able to see your OneDrvie files.
+
     ![OneDrive PWA](images/office-pwa-6.jpg)
+
+See also: [Enabling automatic uploads to OneDrive for business](hololens-release-notes.md#onedrive-for-work-or-school-camera-roll-upload)
 
 ## Update Apps
 
