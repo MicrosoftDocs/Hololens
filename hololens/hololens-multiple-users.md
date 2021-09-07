@@ -19,7 +19,6 @@ appliesto:
 
 ## Overview
 
-Businesses often invest in many shared HoloLens devices. Security with HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of a locked-down experience: 
 
 
 
