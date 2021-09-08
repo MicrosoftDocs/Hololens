@@ -18,12 +18,13 @@ appliesto:
 # Share your HoloLens with multiple people
 
 ## Overview
+Businesses often invest in many shared HoloLens devices. How you use HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of some multi-user experiences: 
 
-Businesses often invest in many shared HoloLens devices. Security with HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of a locked-down experience: 
+- Devices which are charged and have Dynamics 365 Guides and allow your employees to open the Settings app to make adjustments to Wi-Fi needed, but Page Settings Visibility policy is enabled to limit the amount pages available in the Settings app.
+- Devices which are for Remote Assist, and your line of business app which are rented to other companies. These devices have Kiosks that include only your app and Remote Assist. WDAC is used to keep the Settings app and Microsoft Edge from launching. Included with the rental is a USB-C battery pack to keep the devices at full charge over multiple shifts.
+- All your devices are set up for Autopilot and download all of your company apps. You've set up a few different Kiosk profiles, targeting different Azure AD groups. Each user logs into the HoloLens using FIDO2 keys and signing into their own Azure AD account, and is presented with a tailored experience.
 
-- Workers can check out a HoloLens to perform a certain task. Microsoft Intune and provisioning packages have many uses for device management, which can include Kiosk, WDAC, or other common device restrictions.  Thanks to Microsoft Intune and provisioning packages, you can be certain that a worker uses HoloLens only in the way it’s intended. For instance, they can use Remote Assist, but they can’t open Web browsers, games, Word, etc.
 
-The results are impressive. Even in the most sensitive environments, information sharing and visuals are unique to the end user’s eyes, so collaboration can thrive. HoloLens sharing brings new interactions, without risking unwarranted information disclosure.
 
 ## Share with multiple people, each using their own account
 
