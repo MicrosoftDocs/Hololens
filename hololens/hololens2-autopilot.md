@@ -21,9 +21,7 @@ manager: sekerawa
 
 To deploy at scale, we recommend getting started with Windows Autopilot. It’s considered “low touch” in that it dramatically simplifies setting up HoloLens for both IT and end users. 
 
-On the high level, an IT administrator will typically create the business-ready configurations and register Hololens 2 devices on MDM portals. When Hololens 2 devices boot with out-of-box experience (OOBE) and connects with the Internet, business-ready configurations for registered Hololens 2 device are automatically downloaded and applied to make device business-ready without any user intervention.
-
-Auto-enrollment enrolls corporate devices to your organization’s Azure Active Directory tenant and mobile device management (MDM) system. 
+At a high level, an IT administrator will typically create the business-ready configurations and register Hololens 2 devices on MDM portals. When Hololens 2 devices boot with out-of-box experience (OOBE) and connects with the Internet, business-ready configurations for registered Hololens 2 device are automatically downloaded and applied to make device business-ready without any user intervention.
 
 For more details, see the [Overview of Windows Autopilot | Microsoft Docs](/mem/autopilot/windows-autopilot) article.
 
@@ -43,8 +41,6 @@ When a user starts the Autopilot self-deploying process, Autopilot completes the
 1. Use Azure AD to enroll the device in Microsoft Endpoint Manager (or another MDM service).
 
 1. Download and apply device-targeted policies, certificates, networking profiles and applications.
-
-1. Provision the device.
 
 1. Present the sign-in screen to the user.
 
@@ -194,7 +190,7 @@ You can retrieve the hardware hash from the device. The device records its hardw
    - **Automatically configure keyboard**: To make sure that the keyboard matches the selected language, select **Yes**.
    - **Apply device name template**: To automatically set the device name during OOBE, select **Yes** and then enter the template phrase and placeholders in **Enter a name** For example, enter a prefix and `%RAND:4%`&mdash;a placeholder for a four-digit random number.
      > [!NOTE]  
-     > If you use a device name template, the OOBE process restarts the device one additional time after it applies the device name and before it joins the device to Azure AD. This restart enables the new name to take effect.  
+     > If you use a device name template, the OOBE process restarts the device one time after it applies the device name and before it joins the device to Azure AD. This restart enables the new name to take effect.  
 
    > [!div class="mx-imgBorder"]
    > ![Configure OOBE settings.](./images/hololens-ap-profile-oobe.png)
