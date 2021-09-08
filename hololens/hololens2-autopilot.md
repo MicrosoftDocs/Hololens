@@ -62,9 +62,9 @@ Follow the steps below to set up your environment:
 
 1. [Create a device group.](#5-create-a-device-group)
 
-1. [Create a deployment profile.](#6-create-a-deployment-profile)
+1. [Create autopilot profile and assign it to a device group.](#6-create-autopilot-profile-and-assign-it-to-a-device-group)
 
-1. [Verify the Enrollment Status Page (ESP) configuration.](#7-verify-the-esp-configuration)
+1. [Create Enrollment Status Page (ESP) configuration and assign it to a device group.](#7-create-enrollment-status-page-esp-configuration-and-assign-it-to-a-device-group)
 
 1. [Verify the profile status of the HoloLens devices.](#8-verify-the-profile-status-of-the-hololens-devices)
 
