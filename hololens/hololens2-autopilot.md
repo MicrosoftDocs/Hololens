@@ -58,9 +58,9 @@ Follow the steps below to set up your environment:
 
 1. [Create a device group.](#5-create-a-device-group)
 
-1. [Create autopilot profile and assign it to a device group.](#6-create-autopilot-profile-and-assign-it-to-a-device-group)
+1. [Create autopilot profile and assign it to the device group.](#6-create-autopilot-profile-and-assign-it-to-the-device-group)
 
-1. [Create Enrollment Status Page (ESP) configuration and assign it to a device group.](#7-create-enrollment-status-page-esp-configuration-and-assign-it-to-a-device-group)
+1. [Create Enrollment Status Page (ESP) configuration and assign it to the device group.](#7-create-enrollment-status-page-esp-configuration-and-assign-it-to-the-device-group)
 
 1. [Verify the profile status of the HoloLens devices.](#8-verify-the-profile-status-of-the-hololens-devices)
 
@@ -173,7 +173,7 @@ You can retrieve the hardware hash from the device. The device records its hardw
      > These rules target attributes that are unique to Autopilot devices.
 1. Select **Save**, and then select **Create**.
 
-### 6. Create autopilot profile and assign it to a device group
+### 6. Create autopilot profile and assign it to the device group
 
 1. In [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), select **Devices** > **Windows** > **Windows enrollment** > **Windows Autopilot deployment profiles** > **Create profile** > **HoloLens**.
    ![Create profile dropdown includes a HoloLens item.](./images/hololens-ap-enrollment-profiles.png)
@@ -211,9 +211,12 @@ You can retrieve the hardware hash from the device. The device records its hardw
    > [!div class="mx-imgBorder"]
    > ![Review + create.](./images/hololens-ap-profile-summ.png)
 
-### 7. Create Enrollment Status Page (ESP) configuration and assign it to a device group
+### 7. Create Enrollment Status Page (ESP) configuration and assign it to the device group
 
 The Enrollment Status Page (ESP) displays the status of the complete device configuration process that runs when an MDM-managed user signs into a device for the first time. Make sure that your ESP configuration resembles the following, and verify that the assignments are correct.  
+
+> [!div class="mx-imgBorder"]
+> ![ESP configuration.](./images/hololens-ap-profile-settings.png)
 
 For more information about ESP, refer to [Set up the Enrollment Status Page - Microsoft Intune | Microsoft Docs](/mem/intune/enrollment/windows-enrollment-status)
 
