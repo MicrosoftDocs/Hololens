@@ -3,13 +3,13 @@ title: Share your HoloLens with multiple people
 description: You can configure HoloLens to be shared by multiple Azure Active Directory accounts, or by multiple users that use a single account.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/16/2019
+ms.date: 9/3/2021
 ms.reviewer: 
-manager: laurawi
+manager: sekerawa
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -17,7 +17,14 @@ appliesto:
 
 # Share your HoloLens with multiple people
 
-It's common to share one HoloLens with many people or to have many people share a set of HoloLens devices.  This article describes the different ways in which you can share a device.
+## Overview
+Businesses often invest in many shared HoloLens devices. How you use HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of some multi-user experiences: 
+
+- Devices which are charged and have Dynamics 365 Guides and allow your employees to open the Settings app to make adjustments to Wi-Fi needed, but Page Settings Visibility policy is enabled to limit the amount pages available in the Settings app.
+- Devices which are for Remote Assist, and your line of business app which are rented to other companies. These devices have Kiosks that include only your app and Remote Assist. WDAC is used to keep the Settings app and Microsoft Edge from launching. Included with the rental is a USB-C battery pack to keep the devices at full charge over multiple shifts.
+- All your devices are set up for Autopilot and download all of your company apps. You've set up a few different Kiosk profiles, targeting different Azure AD groups. Each user logs into the HoloLens using FIDO2 keys and signing into their own Azure AD account, and is presented with a tailored experience.
+
+
 
 ## Share with multiple people, each using their own account
 
@@ -27,7 +34,7 @@ When they use their own Azure Active Directory (Azure AD) accounts, multiple use
 
 To make sure that multiple people can use their own accounts on your HoloLens, follow these steps to configure it:
 
-1. Make sure the the device is running Windows 10, version 1803 or later.
+1. Make sure the device is running Windows 10, version 1803 or later.
    > [!IMPORTANT]
    > If you are using a HoloLens (1st gen) device, [upgrade the device to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 1. When you set up the device, select **My work or school owns it** and sign in by using an Azure AD account.
@@ -35,12 +42,12 @@ To make sure that multiple people can use their own accounts on your HoloLens, f
 
 To use HoloLens, each user follows these steps:
 
-1. If another user has been using the device, do one of the following:
+1. If another user has been using the device, choose one of the following options:
    - Press the power button once to go to standby, and then press the power button again to return to the lock screen
    - HoloLens 2 users may select the user tile from the Start menu to sign out the current user.
 
 1. Use your Azure AD account credentials to sign in to the device.  
-    If this is the first time that you have used the device, you have to [calibrate](hololens-calibration.md) HoloLens to your own eyes.
+    If it's the first time that you have used the device, you have to [calibrate](hololens-calibration.md) HoloLens to your own eyes.
 
 To see a list of the device users or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**.
 
