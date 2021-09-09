@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Application Control - WDAC
+title: Windows Defender Application Control (WDAC)
 description: Overview on what Windows Defender Application Control is and how to use it to manage HoloLens mixed reality devices.
 ms.prod: hololens
 ms.sitesec: library
@@ -7,7 +7,7 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/26/2020
+ms.date: 9/3/2021
 ms.reviewer: 
 manager: yannisle
 appliesto:
@@ -16,12 +16,14 @@ appliesto:
 
 # Windows Defender Application Control - WDAC
 
-WDAC allows an IT Admin to configure their devices to block the launch of apps on devices. This is different than methods of device restriction such as Kiosk mode, where  the user is presented with a UI that hides the apps on the device but they can still be launched. While WDAC is implemented, the apps are still visible in the All Apps list but WDAC stops those apps and processes from being able to be launched by the device user.
+## Overview
 
-A device may be assigned more than one WDAC policy. If multiple WDAC policies are set on a system, most restrictive ones take effect. 
+WDAC allows you to configure HoloLens to block the launch of apps. It's different from the Kiosk mode, where the UI hides the apps but they can still be launched. With WDAC, you can see the apps but they can’t be launched.
 
 > [!NOTE]
-> When end users attempt to launch an app that is blocked by WDAC, on HoloLens they will not receive a notification about not being able to launch that app.
+> When end users attempt to launch an app that is blocked by WDAC on HoloLens, they won't be notified about not being able to launch the app.
+
+A device may be assigned more than one WDAC policy. If multiple WDAC policies are set on a system, most restrictive ones take effect. 
 
 The following is a guide for users to learn how to [use WDAC and Windows PowerShell to allow or block apps on HoloLens 2 devices with Microsoft Intune](/mem/intune/configuration/custom-profile-hololens).
 
@@ -33,7 +35,7 @@ $package1 = Get-AppxPackage -name *<applicationname>*
 
 If you don’t know the full name of the package, you may need to run ‘Get-AppxPackage -name \*YourBestGuess\*’ a few times to find it. Then once you have the name run ‘$package1 = Get-AppxPackage -name Actual.PackageName‘
 
-For example running the following for Microsoft Edge will return more than one result, but from that list you can identify that the full name you need is Microsoft.MicrosoftEdge.
+For example running the following code for Microsoft Edge will return more than one result, but from that list you can identify that the full name you need is Microsoft.MicrosoftEdge.
 
 ```powershell
 Get-AppxPackage -name *edge*
@@ -76,6 +78,5 @@ If an app is not on this list, then a user may use Device Portal, connected to a
 1. Once Device Portal is connected, navigate to **Views** then **Apps**. 
 1. Within the Installed Apps panel, use the dropdown to select the installed app. 
 1. Locate the PackageRelativeID. 
-1. Copy app characters before the !, these characters will be your PackageFamilyName.
-
+1. Copy app characters before the `!`, these characters will be your PackageFamilyName.
 

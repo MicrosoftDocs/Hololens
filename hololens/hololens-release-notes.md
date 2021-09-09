@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 08/10/2021
+ms.date: 9/8/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -989,7 +989,7 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
 
-This information can now be found alongside the rest of Autopilot under [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot).
+This information can now be found alongside the rest of Autopilot under [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenant-lockdown-csp-and-autopilot).
 
 ### Global Assigned Access – Kiosk Mode
 - Reduced Identity management for Kiosk, by enabling new Kiosk method that applies Kiosk mode at the system level.
