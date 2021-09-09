@@ -74,7 +74,7 @@ To clean the brow pad, wipe it by using a cloth that's moistened by using water 
 
 ## Can I use ultraviolet (UV) light to sanitize the device?
 
-UVC irradiance using UVC LED or filtered fluorescent UVC light, that operates at intensity level of 0.5-0.6mW/cm2, and does not emit ozone, can be used to sanitize HoloLens2. Please follow manufacturer’s specifications on handling and exposure time.
+UVC irradiance using UVC LED or filtered fluorescent UVC light, that operates at intensity level of 0.5-0.6mW/cm2, and does not emit ozone, can be used to sanitize HoloLens 2. Please follow manufacturer’s specifications on handling and exposure time.
 
 > [!CAUTION]  
 > High levels of UV-A and UV-B exposure can degrade the display quality of the device and damage the visor coating. Over-exposure to UV-A and UV-B radiation has the following effects, in order of the duration and intensity of exposure:
