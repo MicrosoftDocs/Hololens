@@ -32,8 +32,7 @@ HoloLens 2 prompts a user to calibrate the device under the following circumstan
 - The user previously opted out of the calibration process
 - The calibration process didn't succeed the last time the user used the device
 - The user has deleted their calibration profiles
-- The device is taken off and puts back on and any of the above circumstances apply 
-
+- The device is taken off and put back on and any of the above circumstances apply 
 
 ![Calibration prompt for adjusting to eyes.](./images/07-et-adjust-for-your-eyes.png)
 
@@ -59,7 +58,7 @@ Multiple users can share a HoloLens 2 device, without a need for each person to 
 1. If the Settings app isn't pinned to **Start**, select **All Apps**.
 1. Select **Settings**, and then select **System** > **Calibration** > **Eye Calibration** > **Run eye calibration**.
 
-   ![The Settings app, showing the Run eye calibration option.](./images/C-Settings.Calibration.png)
+   ![The Settings app, showing the Run eye calibration option](./images/C-Settings.Calibration.png)
 
 ### Auto Eye Position Support
 
@@ -82,7 +81,7 @@ For experiences that require eye gaze data or precise hologram positioning, we r
 
 #### Deferred Calibration Prompt
 
-With Auto Eye Position, the Eye Tracking Calibration prompt dialog is deferred until an application requests Eye Gaze data. This ensures that there's no prompt to the user when the active application doesn't require gaze. If the application does require gaze data and the current user isn't calibrated, the user is presented with a calibration prompt. This behavior could be used to display eye tracking calibration prompt at a suitable time for the experience. This method is recommended for the following reasons
+With Auto Eye Position, the Eye Tracking Calibration prompt dialog is deferred until an application requests Eye Gaze data. This ensures that there's no prompt to the user when the active application doesn't require gaze. If the application does require gaze data and the current user isn't calibrated, the user is presented with a calibration prompt. This behavior could be used to display an eye tracking calibration prompt at a suitable time for the experience. This method is recommended for the following reasons:
 
 1.  The Eye Tracking Calibration Prompt dialog provides the user with details on why eye tracking is needed.
 2.  Presents the user a way to decline to have their eyes calibrated.
@@ -91,7 +90,7 @@ If the user chooses to launch the Eye Tracking Calibration, the focus should ret
 
 ### Calibration data and security
 
-Calibration information is stored locally on the device and isn't associated with any account information. There's no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, and users who opted out of calibration previously or if calibration was unsuccessful.
+Calibration information is stored locally on the device and isn't associated with any account information. There's no record of who has used the device without calibration. This means new users will get prompted to calibrate visuals when they use the device for the first time, and users who opted out of calibration previously or if calibration was unsuccessful.
 
 The device can locally store up to 50 calibration profiles. After this number is reached, the device automatically deletes the oldest unused profile.
 
@@ -99,16 +98,23 @@ Calibration information can always be deleted from the device in **Settings** > 
 
 ### Disable calibration
 
-You can also disable the calibration prompt by following these steps:
+#### Eye calibration behavior on HoloLens 2 builds 20H2 and newer
+
+With the inception of [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support)  as of Windows Holographic, version 20H2, you don't have to disable calibration. The calibration prompt appears automatically only if you are using an Eye Tracking-enabled app.
+
+#### Disabling eye calibration on HoloLens 2 older builds
+
+You can flip a Settings switch on the headset to disable calibration, but the state of the switch is not easy to determine. It was removed and replaced with [Auto Eye Position Suppor](hololens-release-notes.md#auto-eye-position-support), which defers calibration while providing excellent color correction and hologram positioning.
+
+#### Disabling eye calibration on HoloLens (1st gen)
+
+For [HoloLens (1st gen) calibration](#calibrating-your-hololens-1st-gen), you can disable the eye calibration prompt by following these steps:
 
 1. Select **Settings** > **System** > **Calibration**.
 1. Turn off **When a new person uses this HoloLens, automatically ask to run eye calibration**.
 
    > [!IMPORTANT]
    > This setting may adversely affect hologram rendering quality and comfort.  When you turn off this setting, features that depend on eye tracking (such as text scrolling) no longer work in immersive applications.
-
-> [!NOTE]
-> The Settings switch has been removed as of Windows Holographic, version 20H2 with the inception of [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support). The calibration prompt will automatically appear only if an uncalibrated user is using an Eye Tracking-enabled app.
 
 ### HoloLens 2 eye-tracking technology
 
@@ -126,7 +132,7 @@ When you set up your HoloLens (1st gen) device, it prompts to calibrate your vis
 
 During the calibration process, HoloLens asks you to align your finger with a series of six targets per eye. HoloLens uses this process to set the IPD correctly for your eyes.
 
-![IPD finger-alignment screen at second step.](./images/ipd-finger-alignment-300px.jpg)
+![IPD finger-alignment screen at second step](./images/ipd-finger-alignment-300px.jpg)
 
 ### Manually start the calibration process
 
@@ -138,9 +144,9 @@ To use the **Start** menu to run the Calibration app, follow these steps:
 1. To view all apps, select **+**.
 1. Select **Calibration**.
 
-   ![Accessing the calibration app from the shell.](./images/calibration-shell.png)
+   ![Accessing the calibration app from the shell](./images/calibration-shell.png)
 
-   ![The calibration app displayed as a Live Cube after being launched.](./images/calibration-livecube-200px.png)
+   ![The calibration app displayed as a Live Cube after being launched](./images/calibration-livecube-200px.png)
 
 To use the Settings app to run the Calibration app, follow these steps:
 
@@ -149,7 +155,7 @@ To use the Settings app to run the Calibration app, follow these steps:
 1. Select **Settings**.
 1. Select **System** > **Utilities** > **Open Calibration**.
 
-   ![Launching the calibration app from the settings app.](./images/calibration-settings-500px.jpg)
+   ![Launching the calibration app from the settings app](./images/calibration-settings-500px.jpg)
 
 ## Immersive headsets
 
