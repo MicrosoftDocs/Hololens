@@ -175,7 +175,7 @@ Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/
 
 ### Use WDAC and LOB apps
 
-You can now use WDAC to block apps or processes from launching and continue to use your own line of bushiness apps. you can now allow them in your WDAC policy. Using this policy involves running an extra line of code in PowerShell when creating your WDAC policy. [Review the steps here.](/mem/intune/configuration/custom-profile-hololens)
+You can now use your own apps while using WDAC to block apps or processes from launching. You are now able to allow them in your WDAC policy. Using this policy involves running an extra line of code in PowerShell when creating your WDAC policy. [Review the steps here.](/mem/intune/configuration/custom-profile-hololens)
 
 ### Fixes and improvements
 
