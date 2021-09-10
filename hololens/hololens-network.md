@@ -34,7 +34,7 @@ On HoloLens 2 devices, a user may also [use a USB-C to Ethernet adapter](hololen
 1. Select a network, then select **Connect**.
 1. If you are prompted for a network password type it and then select **Next**.
 
-![HoloLens Wi-Fi settings](./images/hololens-2-wifi-settings.jpg)
+![HoloLens Wi-Fi settings.](./images/hololens-2-wifi-settings.jpg)
 
 To confirm you are connected to a Wi-Fi network, check the Wi-Fi status in the **Start** menu:
 
@@ -206,7 +206,7 @@ VPN is not enabled by default but can be enabled manually by opening **Settings*
 1. Optionally add user name and password.
 1. Apply the VPN settings. 
 
-![HoloLens VPN settings](./images/vpn-settings-ui.jpg)
+![HoloLens VPN settings.](./images/vpn-settings-ui.jpg)
 
 ### VPN set via Provisioning Package
 
@@ -349,7 +349,7 @@ Native IKEv2 VPN example:
 1. Select **Network & Internet**.
 1. Scroll down to beneath the list of available Wi-Fi networks and select **Hardware properties**.
 
-    ![Hardware properties in Wi-Fi settings](./images/wifi-hololens-hwdetails.jpg)
+    ![Hardware properties in Wi-Fi settings.](./images/wifi-hololens-hwdetails.jpg)
 
    The IP address appears next to **IPv4 address**.
 

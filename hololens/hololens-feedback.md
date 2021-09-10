@@ -35,7 +35,7 @@ Feedback Hub is an excellent way to alert the engineering team to bugs and to ma
 
 1. Use the **Start** gesture to open the **Start** menu, and then select **Feedback Hub**. The app opens in your environment.
 
-   ![Feedback app on HoloLens Start menu](./images/hololens2-feedbackhub-tile.png)
+   ![Feedback app on HoloLens Start menu.](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
    > If you don't see **Feedback Hub**, select **All Apps** to see the complete list of apps on the device.
 
@@ -43,7 +43,7 @@ Feedback Hub is an excellent way to alert the engineering team to bugs and to ma
 1. If you find similar feedback, select it, add any additional information that you have in the **Write a comment** box, and then select **Upvote**.
 1. If you don't find any similar feedback, select **Add new feedback**.
 
-   ![Add new feedback](./images/hololens-feedback-1.png)
+   ![Add new feedback.](./images/hololens-feedback-1.png)
 
 1. In **Summarize your feedback**, enter a short summary of your feedback. Then add details in the **Explain in more detail** box. The more details that you provide, such as how to reproduce this problem and the effect that it has, the more useful your feedback is. When you're finished, select **Next**.
 

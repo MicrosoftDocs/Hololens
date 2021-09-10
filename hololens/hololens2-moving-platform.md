@@ -23,6 +23,8 @@ In **Insider build 20348.1411** we have added beta support for tracking on low-d
 > [!NOTE]
 > This feature is currently only available via [Windows Insiders](hololens-insider.md).
 
+![Moving platform example.](./images/mpm-compare.gif)
+
 This article covers:
 
 1. [Why Moving Platform is Necessary](#why-moving-platform-mode-is-necessary)
@@ -68,19 +70,19 @@ To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-real
 
 1. Select the **System** accordion on the Left-hand menu
 
-   ![First image](.\images\moving-platform-1w.png)
+   ![First image.](.\images\mpm-01.png)
 
 2. Select the **Moving Platform Mode** page and check the **Moving Platform Mode** checkbox
 
-    ![Second image](.\images\moving-platform-2z.png)
+    ![Second image.](.\images\mpm-02.png)
 
 3. When prompted with a warning, select **OK**
 
-   ![Third image](.\images\moving-platform-3w.png)
+   ![Third image.](.\images\mpm-03.png)
 
 4. Reboot your device, which can be done either via the Device Portal **Power** menu at the top right or by issuing the following voice command &quot;Reboot the device&quot; and select &quot;Yes&quot;.
 
-   ![Fourth image](.\images\moving-platform-4z.png)
+   ![Fourth image.](.\images\mpm-04.png)
 
 If you are unable to see the Moving Platform Mode option in Device Portal, then it likely means you are not yet on the proper build. See the [Prerequisites](#prerequisites) section.
 

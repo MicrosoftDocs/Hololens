@@ -109,7 +109,7 @@ The second option is to create a separate tenant that hosts clients (see Image 1
 
 **Image 1.1**
 
-![Service Tenant Image](./images/hololens-service-tenant-image.png)
+![Service Tenant Image.](./images/hololens-service-tenant-image.png)
 
 ### Hidden or restricted apps
 

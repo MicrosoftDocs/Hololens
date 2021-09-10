@@ -173,7 +173,7 @@ If your device is still unable to load apps, you can sideload a version of the .
 
 1. You will then see a screen that is similar to the below.  You want to go to the section that says **Install App** and browse to where you unzipped those two APPX files. You can only do one at a time, so after you select the first one, then click on "Go" under the Deploy section. Then do this for the second APPX file.
 
-   ![Windows Device Portal to Install Side-Loaded app](images/20190322-DevicePortal.png)
+   ![Windows Device Portal to Install Side-Loaded app.](images/20190322-DevicePortal.png)
 
 1. At this point we believe your applications should start working again and that you can also get to the Store.
 

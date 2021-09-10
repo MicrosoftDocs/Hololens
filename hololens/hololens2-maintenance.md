@@ -32,7 +32,7 @@ appliesto:
 
 1. Remove any dust by using a dry, lint-free microfiber cloth to gently wipe the surface of the device.
 
-   ![Clean while holding from the brow pad](images/hl2-cleaning.png)
+   ![Clean while holding from the brow pad.](images/hl2-cleaning.png)
 
 2. Lightly moisten the cloth by using medical "70%" isopropyl alcohol, and then use the moistened cloth to gently wipe the surface of the device.
 
@@ -66,7 +66,7 @@ Yes. You can use a solution of "70%" isopropyl alcohol and water to clean the ha
 
 Yes. The brow pad is magnetically attached to the device. To detach it, pull it gently away from the headband. To replace it, snap it back into place.
 
-![Remove or replace the brow pad](images/hololens2-remove-browpad.png)
+![Remove or replace the brow pad.](images/hololens2-remove-browpad.png)
 
 ## How can I clean the brow pad?
 
@@ -74,8 +74,7 @@ To clean the brow pad, wipe it by using a cloth that's moistened by using water 
 
 ## Can I use ultraviolet (UV) light to sanitize the device?
 
-UVC irradiance using UVC LED, that operates at 265nm at intensity level of 0.5-0.6mW/cm<sup>2</sup>, and does not emit ozone, can be used to sanitize HoloLens2. 
-Please follow manufacturer’s specifications on handling and exposure time.
+UVC irradiance using UVC LED or filtered fluorescent UVC light, that operates at intensity level of 0.5-0.6mW/cm2, and does not emit ozone, can be used to sanitize HoloLens 2. Please follow manufacturer’s specifications on handling and exposure time.
 
 > [!CAUTION]  
 > High levels of UV-A and UV-B exposure can degrade the display quality of the device and damage the visor coating. Over-exposure to UV-A and UV-B radiation has the following effects, in order of the duration and intensity of exposure:

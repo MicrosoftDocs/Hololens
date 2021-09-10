@@ -3,17 +3,17 @@ title: Insider preview for Microsoft HoloLens
 description: Learn how to get started with Insider builds and provide valuable feedback for our next major operating system update for HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/16/2021
+ms.date: 09/10/2021
 ms.reviewer: 
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens 2
 ---
@@ -182,8 +182,11 @@ You can now use your own apps while using WDAC to block apps or processes from l
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - Addresses issues around reporting compliance properties from HoloLens devices; a reboot may be required for the correct reporting to be triggered on Insider builds.  
-- Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
+- Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
 - Updated the in-box version of Remote Assist that's installed on fresh flashes.
+- Gamepad processing for 2D apps was disabled in Insider builds. By removing it, apps are now free to use the Gamepad APIs directly and have access to the whole set of controls and do whatever they want. Developers should use the Gamepad APIs to consume Gamepad input. Here is a sample for [Gamepad Class (Windows.Gaming.Input) - Windows UWP applications](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
+- Fixed an issue where after first user sign-in, OOBE was being terminated in scenarios where AAD group based kiosk configurations were being used.
+- Corrected an issue around displaying update notifications and dialog prompts for device restart.
 
 ## Start receiving Insider builds
 
@@ -199,7 +202,7 @@ On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows In
 
 Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
 
-![Windows Insider Channels explanation](images/WindowsInsiderChannels.png)
+![Windows Insider Channels explanation.](images/WindowsInsiderChannels.png)
 
 For more information, see [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) on Windows Blogs.
 Then, select **Active development of Windows**, choose whether you'd like to receive **Dev Channel** or **Beta Channel** builds, and review the program terms.
