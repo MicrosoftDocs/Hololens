@@ -104,7 +104,7 @@ With the inception of [Auto Eye Position Support](hololens-release-notes.md#auto
 
 #### Disabling eye calibration on HoloLens 2 older builds
 
-You can flip a Settings switch on the headset to disable calibration, but the state of the switch is not easy to determine. It was removed and replaced with [Auto Eye Position Suppor](hololens-release-notes.md#auto-eye-position-support), which defers calibration while providing excellent color correction and hologram positioning.
+You can flip a Settings switch on the headset to disable calibration, but the state of the switch might not be easy to determine. It was removed and replaced with [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support), which defers calibration while providing color correction and hologram positioning.
 
 #### Disabling eye calibration on HoloLens (1st gen)
 
