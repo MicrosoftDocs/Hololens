@@ -86,6 +86,15 @@ A user can also configure the behavior of Fallback Diagnostics from the **Settin
 ### OS Update Troubleshooter
 On builds [Windows Holographic, version 21H1 ](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
 - In addition to the previous troubleshooters within the Settings app, a new troubleshooter has been added with the addition of the new Settings app for OS Updates. Navigate to **Settings -> Update & Security -> Troubleshoot -> Windows Update** and select **Start**. This allows you to collect traces while reproducing your issue with OS Updates to assist better in troubleshooting with your IT or support.
+
+### View advanced diagnostic report in Settings on HoloLens
+
+For managed devices when troubleshooting behavior, confirming that an expected policy configuration is applied is an important step. Previously to this new feature, viewing this information had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** > **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
+
+Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select **View advanced diagnostic report**. This will generate and open the report in a new Edge window.
+
+![View advanced diagnostic report in Settings app.](./images/view-advanced-diagnostic-report.jpg)
+
 ### Prerequisites
 
 - The **Settings** app is installed on the device and is available to the user.
