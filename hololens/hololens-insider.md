@@ -200,6 +200,9 @@ You can now use WDAC to block apps or processes from launching and continue to u
 
 On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
 
+> [!NOTE]
+> In order to enroll your device in Insider builds, you'll need to enable optional telemetry. If you have not done this already, open the Settings app and select **Privacy** -> **Diagnostics & feedback** and then select **Optional diagnostics data**.
+
 Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
 
 ![Windows Insider Channels explanation.](images/WindowsInsiderChannels.png)
