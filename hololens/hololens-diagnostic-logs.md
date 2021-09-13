@@ -97,8 +97,6 @@ To view the MDM Diagnostics on HoloLens 2, select your WiFi icon, then navigate 
 
 To view the MDM Diagnostics on HoloLens 2 using the Edge browser, navigate to the Access work or school page and select View advanced diagnostic report. This will generate and open the report in a new Edge window.
 
-![View advanced diagnostic report in Settings app.](./images/view-advanced-diagnostic-report.jpg)
-
 ### Prerequisites
 
 - The **Settings** app is installed on the device and is available to the user.
