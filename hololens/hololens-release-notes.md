@@ -30,7 +30,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 ## Windows Holographic, version 21H1 - September 2021 Update
 
-- Build 20348.
+- Build 20348.1017
 
 Improvements and fixes in the update:
 
@@ -38,7 +38,7 @@ Improvements and fixes in the update:
 
 ## Windows Holographic, version 20H2 - September 2021 Update
 
-- Build 19041.
+- Build 19041.1164
 
 Improvements and fixes in the update:
 
