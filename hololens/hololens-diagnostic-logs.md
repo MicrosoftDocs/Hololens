@@ -169,5 +169,5 @@ Follow these steps to collect diagnostics:
 
 7.	Copy the diagnostics ZIP files and share them with the Microsoft support team.
 
-   > [!NOTE]
-   > Some of the diagnostics ZIP files may contain PII.
+    > [!NOTE]
+    > Some of the diagnostics ZIP files may contain PII.
