@@ -60,8 +60,8 @@ To learn more about what is supported and how to enable this new feature, [visit
 
 #### Overview to try out Moving Platform Mode
 
-1. Enable developer mode and device portal
-1. Enable moving platform mode through Device portal
+1. [Enable developer mode and device portal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+1. [Enable moving platform mode through Device portal](hololens2-moving-platform.md#enabling-moving-platform-mode)
 1. Take your device to your large moving platform and observe how stable holograms are
 
 ### PFX file support for Certificate Manager
@@ -73,7 +73,7 @@ Users can import .pfx certificate, with private key, to user store or machine st
 
 1. Prepare your PFX file
 1. Copy the file to your device via a USB-C cable
-1. Open the Settings app, and navigate to the Certificate viewer and apply the certificate
+1. Open the Settings app, and navigate to the [Certificate Manager](certificate-manager.md) and apply the certificate
 
 ### View advanced diagnostic report in Settings on HoloLens
 
@@ -86,7 +86,7 @@ Now the MDM Diagnostics can be viewed on device using the Edge browser. To more 
 #### Overview to try out the advanced diagnostic report
 
 1. Open the Settings app
-1. Navigate to the Accounts page, and click the new link
+1. Navigate to the Accounts page, and click the new link **Export your management logs**
 1. View advanced information on your device's configurations
 
 ### Offline Diagnostics notifications
@@ -107,8 +107,8 @@ We hope with this newer addition of audiovisual feedback it is easier to gather 
 #### Overview to try out the diagnostics notifications
 
 1. Unlock your device and wear it
-1. Press the button combination
-1. View the toast notifications for when your device starts and finishes collecting logs
+1. Press the **Power** and **Volume down** button combination to gather [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics)
+1. View the toast notifications and hear audio cues for when your device starts and finishes collecting logs
 
 ### Low storage log collection improvements
 
@@ -117,8 +117,8 @@ In scenarios where a device seems to be low on disk space when diagnostic logs a
 #### Overview to try out the low storage improvements
 
 1. Fill up your device's storage space
-1. Collect diagnostics logs via button combo
-1. Observe there is a new file in the collection of logs
+1. Press the **Power** and **Volume down** button combination to gather [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics)
+1. Observe there is a new file in the collection of logs stored in the Documents folder of your HoloLens
 
 ### CSP changes for reporting HoloLens details
 
@@ -179,8 +179,8 @@ On a device where this policy is configured, the user specified in the policy wi
 
 #### Overview to try auto-logon CSP
 
-1. Configure the new CSP to a desired user
-1. Apply the CSP to the device via provisioning package or MDM
+1. Configure the new CSP to a desired user [using a custom policy](/mem/intune/configuration/custom-settings-windows-10) : `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+1. Apply the CSP to the device via [provisioning package](hololens-provisioning.md) or [MDM](hololens-mdm-configure.md)
 1. Sign into the specified account
 1. Restart the device and observe the user is automatically logged in
 
@@ -202,7 +202,7 @@ The following update policies were added:
 
 #### Overview to try new update notifications
 
-1. Configure one of the new update CSPs via MDM or provisioning package
+1. Configure one of the new update CSPs via [provisioning package](hololens-provisioning.md) or [MDM](hololens-mdm-configure.md) (see the link list above and pick one)
 1. Use the device during the scheduled time
 1. Observe the user is notified about the update and the need to restart the device*
 
@@ -215,7 +215,7 @@ Now enabled for HoloLens is a new policy that allows IT Admins to set a recurrin
 #### Overview to try Smart Retry for app updates
 
 1. Configure the new smart retry feature
-1. On a device that has not yet received your app, log in in an online environment
+1. On a device that has not yet received your app and is correctly configured to, log in in an online environment
 1. Make the device unable to download the app by means of turning it off or disconnecting it
 1. Have your device powered on and connected to the internet during your triggered time to retry the download
 
@@ -223,13 +223,13 @@ Now enabled for HoloLens is a new policy that allows IT Admins to set a recurrin
 
 The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy enables the Microsoft Store app to be configured to only show the private store configured for your organization. Limiting access to only the apps you’ve made available.
 
-Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+Learn more about [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
 #### Overview to try only private store apps
 
-1. Configure the new policy for your devices
+1. Configure the new policy for your devices via [MDM](hololens-mdm-configure.md)
 1. Log into a device that has the policy
-1. Open the Microsoft store app and observe you can only see your organization's apps
+1. Open the Microsoft Store app and observe you can only see your organization's apps
 
 ### Use WDAC and LOB apps
 
@@ -238,8 +238,8 @@ You can now use WDAC to block apps or processes from launching and continue to u
 #### Overview to try your own apps while using WDAC to block others
 
 1. Gather the AUMIDs of your LOB app, and the apps you intend to block
-1. Create a new WDAC policy following the new steps
-1. Deploy the policy using MDM to your device
+1. [Create a new WDAC policy](/mem/intune/configuration/custom-profile-hololens) following the new steps
+1. [Deploy the policy using MDM](hololens-mdm-configure.md) to your device
 1. Sign into the device and observe you can launch your app and block others
 
 ### Fixes and improvements
