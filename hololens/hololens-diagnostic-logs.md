@@ -154,13 +154,20 @@ Watch this video to learn more.
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
 Follow these steps to collect diagnostics:
+
 1.	Connect the device with a USB cable to your PC.
+
 2.	In File Explorer on your PC, navigate to **'This PC\<hololens-device>\Internal Storage'**.
+
 3.	If the **Internal Storage** folder does not show up, the device is waiting for a user to sign in. Either sign-in or power cycle the device by holding the POWER button down for 10 seconds.
+
 4.	Press and immediately release the **Power + Volume Down** buttons together.
+
 5.	Wait a minute for the device to prepare the zip archives. (A temporary file named HololensDiagnostics.temp may become visible while the device generates the zip archives. Do not access or save that file. When the process finishes it will be replaced by the zip archives.)
+
 6.	Refresh file explorer, and navigate to the **'\Documents'** folder.
+
 7.	Copy the diagnostics ZIP files and share them with the Microsoft support team.
 
-> [!NOTE]
-> Some of the diagnostics ZIP files may contain PII.
+   > [!NOTE]
+   > Some of the diagnostics ZIP files may contain PII.
