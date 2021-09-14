@@ -3,17 +3,17 @@ title: Insider preview for Microsoft HoloLens
 description: Learn how to get started with Insider builds and provide valuable feedback for our next major operating system update for HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/16/2021
+ms.date: 09/10/2021
 ms.reviewer: 
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens 2
 ---
@@ -185,6 +185,8 @@ You can now use WDAC to block apps or processes from launching and continue to u
 - Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
 - Updated the in-box version of Remote Assist that's installed on fresh flashes.
 - Gamepad processing for 2D apps was disabled in Insider builds. By removing it, apps are now free to use the Gamepad APIs directly and have access to the whole set of controls and do whatever they want. Developers should use the Gamepad APIs to consume Gamepad input. Here is a sample for [Gamepad Class (Windows.Gaming.Input) - Windows UWP applications](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
+- Fixed an issue where after first user sign-in, OOBE was being terminated in scenarios where AAD group based kiosk configurations were being used.
+- Corrected an issue around displaying update notifications and dialog prompts for device restart.
 
 ## Start receiving Insider builds
 

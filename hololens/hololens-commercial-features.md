@@ -72,7 +72,7 @@ What makes the HoloLens 2 so powerful?
     :::column-end:::
     :::column span="2":::
         ### [Sheba Medical Center uses Microsoft’s HoloLens for ventilators training.](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
-        HoloLens at the service of medical training in times of crisis.
+        The staff at Sheba Medical Center used HoloLens to train nurses and other support personnel on the use of ventilator machines that were being deployed by the hundreds during the COVID-19 pandemic.
     :::column-end:::
 :::row-end:::
 
