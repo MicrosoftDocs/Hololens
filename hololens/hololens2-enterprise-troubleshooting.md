@@ -112,7 +112,7 @@ Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It 
 On your PC, Fiddler will show the HoloLens 2’s live HTTP(S) sessions. The Inspectors panel in Fiddler can show HTTP(S) request/response in different views - for example, the “Raw” view shows the raw request or response in plain text. 
 
 ### Configure Wireshark to capture network traffic
-Wireshark is a network protocol analyzer and is used to inspect TCP/UDP traffic from and to your HoloLens 2 devices. This makes it easy to identify what traffic is crossing your network to your HoloLens 2, how much of it, how frequently, how much latency there is between certain hops, and so forth.
+Wireshark is a network protocol analyzer that is used to inspect TCP/UDP traffic to and from your HoloLens 2 devices. This makes it easy to identify the traffic that is crossing the network to your HoloLens 2 -- how much there is, its frequency, how much latency there is between certain hops, and so forth.
 
 #### Prerequisites:
 - PC must have internet access and support Internet sharing over Wi-Fi
@@ -160,7 +160,7 @@ There is currently no way to add a deleted HoloLens device back into Azure AD. A
 
 ## Autopilot Troubleshooting
 
-The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues, however please be aware that these articles are based on Windows 10 Desktop and not all information may apply to HoloLens:
+The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues. Note that these articles are based on Windows 10 Desktop, and not all information may apply to HoloLens:
 
 - [Windows Autopilot - known issues](/mem/autopilot/known-issues)
 - [Troubleshoot Windows device enrollment problems in Microsoft Intune](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
