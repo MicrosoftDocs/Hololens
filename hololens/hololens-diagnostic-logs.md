@@ -41,7 +41,7 @@ The following table compares different collection methods. The method names link
 |[DiagnosticLog CSP](#diagnosticlog-csp) |Network connection<br /><br />MDM environment that supports the DiagnosticLog CSP |Administrator configures storage locations |In the managed environment, the user implicitly consents to administrator access to the data.<br /><br />Administrator configures access roles and permissions. | Data is retained in the cloud storage and Administrator configures retention policy. |
 |[Offline diagnostics](#offline-diagnostics) |Device configuration:<ul><li>Powered on and connected to computer</li><li>Power and Volume buttons functioning</li></ul> |HoloLens device<br /><br />Connected computer |The user stores the data, and only the user accesses the data (unless the user specifically shares the data with another user). |The data is retained on device until the user deletes it. |
 
-* End-user is responsible for sharing the logs responsibly with someone else. These files are primarily useful when contacting customer service and support.  
+* The end user is responsible for sharing the logs responsibly with someone else. These files are primarily useful when contacting customer service and support.  
 
 ## Feedback Hub
 
@@ -111,7 +111,7 @@ To view the MDM Diagnostics on HoloLens 2, select your WiFi icon, then navigate 
 
 ## DiagnosticLog CSP
 
-In a Mobile Device Management (MDM) environment, the IT administrator can use the the [DiagnosticLog configuration service provider (CSP)](/windows/client-management/mdm/diagnosticlog-csp) to configure diagnostic settings on enrolled HoloLens devices. The IT administrator can configure these settings to collect logs from enrolled devices.
+In a Mobile Device Management (MDM) environment, the IT administrator can use the [DiagnosticLog configuration service provider (CSP)](/windows/client-management/mdm/diagnosticlog-csp) to configure diagnostic settings on enrolled HoloLens devices. The IT administrator can configure these settings to collect logs from enrolled devices.
 
 See more:
 - [Collect diagnostics from a Windows device](/mem/intune/remote-actions/collect-diagnostics)
