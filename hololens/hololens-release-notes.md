@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/8/2021
+ms.date: 9/16/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -30,7 +30,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 ## Windows Holographic, version 21H1 - September 2021 Update
 
-- Build 20348.1017
+- Build 20348.1018
 
 Improvements and fixes in the update:
 
@@ -38,7 +38,7 @@ Improvements and fixes in the update:
 
 ## Windows Holographic, version 20H2 - September 2021 Update
 
-- Build 19041.1164
+- Build 19041.1165
 
 Improvements and fixes in the update:
 
