@@ -52,6 +52,7 @@ A HoloLens user can use the Microsoft Feedback Hub desktop app to send diagnosti
 
 >[!IMPORTANT]
 > To provide the best possible data for fixing issues, we highly recommend that you set your device telemetry to **Optional**. You can set this value during the Out-of-Box-Experience (OOBE), or by using the **Settings** app. To do this by using Settings, select **Start > Settings > Privacy > App Diagnostics > On**.
+
 ### Prerequisites
 
 - The device is connected to a network.
@@ -87,10 +88,6 @@ A user can also configure the behavior of Fallback Diagnostics from the **Settin
 On builds [Windows Holographic, version 21H1 ](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
 - In addition to the previous troubleshooters within the Settings app, a new troubleshooter has been added with the addition of the new Settings app for OS Updates. Navigate to **Settings -> Update & Security -> Troubleshoot -> Windows Update** and select **Start**. This allows you to collect traces while reproducing your issue with OS Updates to assist better in troubleshooting with your IT or support.
 
-### View diagnostic report
-
-To view the MDM Diagnostics on HoloLens 2, select your WiFi icon, then navigate to **Settings** -> **Accounts** > **Access work or school** and select **Export your management logs**. HoloLens sends the log files to your account and displays their location on your desktop PC.
-
 ### Prerequisites
 
 - The **Settings** app is installed on the device and is available to the user.
@@ -107,6 +104,10 @@ The diagnostic information is stored on the device. If the device is connected t
 > In this file path and name, \<*HoloLens device name*> represents the name of the HoloLens device, and \<*ddmmyyhhmmss*> represents the date and time that the file was created.
 
 The diagnostic information remains in these locations until the user deletes it.
+
+### View diagnostic report
+
+To view the MDM Diagnostics on HoloLens 2, select your WiFi icon, then navigate to **Settings** -> **Accounts** > **Access work or school** and select **Export your management logs**. HoloLens sends the log files to your account and displays their location on your desktop PC.
 
 ## DiagnosticLog CSP
 
