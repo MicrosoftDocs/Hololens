@@ -58,7 +58,7 @@ Multiple users can share a HoloLens 2 device, without a need for each person to 
 1. If the Settings app isn't pinned to **Start**, select **All Apps**.
 1. Select **Settings**, and then select **System** > **Calibration** > **Eye Calibration** > **Run eye calibration**.
 
-   ![The Settings app, showing the Run eye calibration option](./images/C-Settings.Calibration.png)
+   ![The Settings app, showing the Run eye calibration option.](./images/C-Settings.Calibration.png)
 
 ### Auto Eye Position Support
 
@@ -132,7 +132,7 @@ When you set up your HoloLens (1st gen) device, it prompts to calibrate your vis
 
 During the calibration process, HoloLens asks you to align your finger with a series of six targets per eye. HoloLens uses this process to set the IPD correctly for your eyes.
 
-![IPD finger-alignment screen at second step](./images/ipd-finger-alignment-300px.jpg)
+![IPD finger-alignment screen at second step.](./images/ipd-finger-alignment-300px.jpg)
 
 ### Manually start the calibration process
 
