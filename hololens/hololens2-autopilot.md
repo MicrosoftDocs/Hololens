@@ -114,7 +114,7 @@ There are three primary ways to register HoloLens devices:
 You can retrieve the hardware hash from the device. The device records its hardware hash in a CSV file during the OOBE process, or later when a device owner starts the diagnostic log collection process (described in the following procedure). Typically, the device owner is the first user to sign in to the device.
 
 > [!WARNING]
-> In builds prior to 20H2, if you have gone through OOBE and the telemetry was set to Required, you cannot collect the hardware hash for Autopilot through this method. In          order to collect your hardware hash via this method set your telemetry option to Full via the Settings App and select Privacy -> Diagnostics.
+> In builds prior to 20H2, if you have gone through OOBE and the telemetry was set to Required, you cannot collect the hardware hash for Autopilot through this method. In          order to collect your hardware hash via this method set your telemetry option to Full via the Settings App and select **Privacy** > **Diagnostics**.
 
 1. Start the HoloLens 2 device.
 
@@ -124,20 +124,21 @@ You can retrieve the hardware hash from the device. The device records its hardw
 
 1. Use a USB-C cable to connect the device to a computer.
 
-1. On the computer, open File Explorer. Open **This PC\\\<*HoloLens device name*>\\Internal Storage\\Documents**, and locate the AutopilotDiagnostics.zip file.  
+1. On the computer, open File Explorer. Open <b>This PC\\</b><*HoloLens device name*><b>\\Internal Storage\\Documents</b>, and locate the AutopilotDiagnostics.zip file.  
 
-> [!NOTE]  
-> The .zip file may not immediately be available. If the file is not ready yet you may see a HoloLensDiagnostics.temp file in the Documents folder. To update the list of files, refresh the window.
+   > [!NOTE]  
+   > The .zip file may not immediately be available. If the file is not ready yet you may see a HoloLensDiagnostics.temp file in the Documents folder. To update the list of files, refresh the window.
     
 1. Extract the contents of the AutopilotDiagnostics.zip file.
 
 1. In the extracted files, locate the CSV file that has a file name prefix of "DeviceHash." Copy that file to a drive on the computer where you can access it later.  
 
-> [!IMPORTANT]  
-> The data in the CSV file should use the following header and line format:
-> ```
-> Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User <serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>
->```
+   > [!IMPORTANT]  
+   > The data in the CSV file should use the following header and line format:
+   >
+   > ```
+   > Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User <serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>
+   >```
 
 #### Register device through MEM
 
