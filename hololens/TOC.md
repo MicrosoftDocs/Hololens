@@ -76,8 +76,7 @@
 ### [Network security](security-network-security.md)
 ### [Security engineering ](security-engineering.md)
 ### [HoloLens 2 Privacy and Data Protection](hololens2-privacy.md)
-## Device Management and Enrollment
-### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
+## Device Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
 ### [Enroll in MAC address restricted Wi-Fi environment](mac-address-options.md)
@@ -89,6 +88,7 @@
 ### [App Installer](app-deploy-app-installer.md)
 ## Policies (CSPs)
 ### [Configure CSPs and Device Management overview](hololens-csp-policy-overview.md)
+### [Using MDM to manage HoloLens devices](hololens-mdm-configure.md)
 ### [Configure HoloLens using provisioning packages](hololens-provisioning.md)
 ### [Common device restrictions](hololens-common-device-restrictions.md)
 ### [Set up HoloLens as a kiosk](hololens-kiosk.md)
