@@ -60,7 +60,7 @@ To learn more about what is supported and how to enable this new feature, [visit
 
 #### Overview to try out Moving Platform Mode
 
-1. [Enable developer mode and device portal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+1. [Enable developer mode and device portal](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 1. [Enable moving platform mode through Device portal](hololens2-moving-platform.md#enabling-moving-platform-mode)
 1. Take your device to your large moving platform and observe how stable holograms are
 
