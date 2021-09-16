@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/12/2021
+ms.date: 10/12/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -193,6 +193,22 @@ You can now use WDAC to block apps or processes from launching and continue to u
 - Addresses issues around reporting compliance properties from HoloLens devices.
 - Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
 - Updated the in-box version of Remote Assist that's installed on fresh flashes.
+
+## Windows Holographic, version 21H1 - September 2021 Update
+
+- Build 20348.1018
+
+Improvements and fixes in the update:
+
+- Fixes to resolve issue where system time may jump unexpectedly.
+
+## Windows Holographic, version 20H2 - September 2021 Update
+
+- Build 19041.1165
+
+Improvements and fixes in the update:
+
+- Fixes to resolve issue where system time may jump unexpectedly.
 
 ## Windows Holographic, version 21H1 - August 2021 Update
 
@@ -1158,7 +1174,7 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
 
-This information can now be found alongside the rest of Autopilot under [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot).
+This information can now be found alongside the rest of Autopilot under [Tenantlockdown CSP and Autopilot](hololens2-autopilot.md#tenant-lockdown-csp-and-autopilot).
 
 ### Global Assigned Access – Kiosk Mode
 - Reduced Identity management for Kiosk, by enabling new Kiosk method that applies Kiosk mode at the system level.
