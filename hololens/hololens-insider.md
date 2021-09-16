@@ -60,7 +60,7 @@ To learn more about what is supported and how to enable this new feature, [visit
 
 #### Overview to try out Moving Platform Mode
 
-1. [Enable developer mode and device portal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+1. [Enable developer mode and device portal](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 1. [Enable moving platform mode through Device portal](hololens2-moving-platform.md#enabling-moving-platform-mode).
 1. Take your device to your large moving platform and observe how stable holograms are.
 
@@ -264,6 +264,9 @@ You can now use WDAC to block apps or processes from launching and continue to u
 > We had a bug on the back-end that you may have encountered and this will get you back on track.
 
 On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
+
+> [!NOTE]
+> In order to enroll your device in Insider builds, you'll need to enable optional telemetry. If you have not done this already, open the Settings app and select **Privacy** -> **Diagnostics & feedback** and then select **Optional diagnostics data**.
 
 Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
 
