@@ -160,7 +160,7 @@ There is currently no way to add a deleted HoloLens device back into Azure AD. A
 
 ## Autopilot Troubleshooting
 
-The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues. Note that these articles are based on Windows 10 Desktop, and not all information may apply to HoloLens:
+The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues. However, the articles are based on Windows 10 Desktop, and not all information may apply to HoloLens:
 
 - [Windows Autopilot - known issues](/mem/autopilot/known-issues)
 - [Troubleshoot Windows device enrollment problems in Microsoft Intune](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
