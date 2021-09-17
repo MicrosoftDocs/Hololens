@@ -69,7 +69,7 @@ Improvements and fixes in the update:
 
 - Device Portal has enhanced methods of notifying the customer when File Explorer encounters issues opening locked files.
 - File upload, download, rename and delete is now fixed when using https in all supported browsers.
-- Fixed issue where Wi-Fi proxy can't be saved when Wi-Fi properties UI is launched from **Settings -> Network & Internet -> Status -> Properties**.
+- Fixed issue where Wi-Fi proxy can't be saved when Wi-Fi properties UI is launched from **Settings > Network & Internet > Status > Properties**.
 - Addressed an issue around the removal of eSIM certificates across OS updates. This fix ensures that the eSIM certificates and related components are removed when updating to the 21H1 release.
 - Corrected an issue impacting preinstalled apps across OS resets.
 - Battery charging performance tuned to increase runtime when charging with increased CPU loading. While charging HoloLens 2 devices, if the device is detected to be running hot, the internal battery will charge more slowly to reduce heat. The positive tradeoff is that a device is less likely to shutdown due to thermal issues, with the impact is that the device runs longer. If the device is running cool, the charge rate is unaffected.
@@ -449,7 +449,7 @@ If you choose "Always" but later want to change which app handles a particular f
 
 Now in this Windows build, users can manually adjust the volume level of each app. This allows for users to better focus on the apps that they need to, or better hear when using multiple apps. Such as needing to turn down volume of one app while calling another person for remote assistance in another.
 
-To set the volume of an individual app navigate to **Settings** -> **System** -> **Sound**, and under Advanced sound options select **App volume and device preferences**.<br/><br/>
+To set the volume of an individual app navigate to **Settings** > **System** > **Sound**, and under Advanced sound options select **App volume and device preferences**.<br/><br/>
 
 <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
@@ -534,7 +534,7 @@ Unfortunately Bluetooth microphones are still not currently supported on HoloLen
 
 Be aware that some USB-C microphones incorrectly report themselves as both a microphone *and* a speaker. This is a problem with the microphone and not with HoloLens. When plugging one of these microphones into HoloLens, sound may be lost. Fortunately there is a simple fix.  
 
-In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
+In **Settings** > **System** > **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
 
 ![Troubleshooting USB-C microphones.](images/usbc-mic-4.png)
 
@@ -629,20 +629,20 @@ Previously the following two URIs would not take a user directly to the pages in
 
 ### Configuring Fallback Diagnostics via Settings app
 
-Now in Settings App, a user can configure the behavior of [Fallback Diagnostics](hololens-diagnostic-logs.md). In the Settings app navigate to **Privacy** -> **Troubleshooting** page to configure this setting.
+Now in Settings App, a user can configure the behavior of [Fallback Diagnostics](hololens-diagnostic-logs.md). In the Settings app navigate to **Privacy** > **Troubleshooting** page to configure this setting.
 
 > [!NOTE]
 > If there is MDM policy configured for the device, user will not be able to override that behavior.  
 
 ### Share things with nearby devices
 
-Share things with near by Windows 10 devices, including both PCs and other HoloLens 2 devices. You can try it out in **Settings** -> **System** -> **Shared Experiences** to share files or URLs from a HoloLens to a PC. For more details read more about how to [Share things with nearby devices in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
+Share things with near by Windows 10 devices, including both PCs and other HoloLens 2 devices. You can try it out in **Settings** > **System** > **Shared Experiences** to share files or URLs from a HoloLens to a PC. For more details read more about how to [Share things with nearby devices in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
 
 This feature can be managed via [Connectivity/AllowConnectedDevices](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices).
 
 ### New OS diagnostic traces
 
-In addition to the previous troubleshooters within the Settings app, a new troubleshooter has been added with the addition of the new Settings app for OS Updates. Navigate to **Settings** -> **Update &amp; Security** > **Troubleshoot** > **Windows Update** and select **Start**. This allows you to collect traces while reproducing your issue with OS Updates to assist better in troubleshooting with your IT or support.
+In addition to the previous troubleshooters within the Settings app, a new troubleshooter has been added with the addition of the new Settings app for OS Updates. Navigate to **Settings** > **Update &amp; Security** > **Troubleshoot** > **Windows Update** and select **Start**. This allows you to collect traces while reproducing your issue with OS Updates to assist better in troubleshooting with your IT or support.
 
 ### Delivery Optimization Preview
 
@@ -716,8 +716,8 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 ### Improvements and fixes in the update:
 
 - [Offline diagnostics](hololens-diagnostic-logs.md#offline-diagnostics) will also include additional device information for serial number and OS version.
-- Fixes an issue around deployment of line of business applications via runtime provisioning packages.
-- Fixes an issue around line of business application install status reporting.
+- Fixes an issue around deployment of line-of-business applications via runtime provisioning packages.
+- Fixes an issue around line-of-business application install status reporting.
 - Fixes an issue around the persistence of new app packages across device resets.
 - Fixes an issue that could lead to incorrect symbols being typed in Edge for Japanese customers.
 - Improves the resiliency of OS updates around preinstalled apps such as Edge.
@@ -745,7 +745,7 @@ Improvements and fixes in the update:
 
 Improvements and fixes in the update:
 
-- Fixes an issue around line of business application install status reporting.
+- Fixes an issue around line-of-business application install status reporting.
 
 ## Windows Holographic, version 1903 - April 2021 Update
 
@@ -949,7 +949,7 @@ This information can be found later [on a new Certificate Manager page](certific
 
 - Automated processes allowing for less user interaction, when USB Drives with Provisioning Packages are used during OOBE.
 
-Before this release users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive.
+Before this release, users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive.
 
 1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
 1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page.
@@ -1022,7 +1022,7 @@ Verify in the Intune portal that device configuration has been successfully appl
 
 1. Remove the HoloLens 2 from the device group to which the device configuration created above was previously assigned.
 
-1. Create a custom OMA URI based device configuration profile and specify false for RequireNetworkInOOBE as shown below.
+1. Create a custom OMA URI-based device configuration profile and specify false for RequireNetworkInOOBE as shown below.
 OMA-URI value should be ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
@@ -1099,7 +1099,7 @@ Max - 60 days
 Steps to use this policy correctly:
 
 1. Create a device configuration profile for kiosk targeting Azure AD groups and assign it to HoloLens device(s).
-1. Create a custom OMA URI based device configuration which sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s).
+1. Create a custom OMA URI-based device configuration which sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s).
     1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. The value can be between min / max allowed.
 1. Enroll HoloLens devices and verify both configurations get applied to the device.
@@ -1384,7 +1384,7 @@ To try it out:
 
 ### Line-of-business application install status
 
-MDM app deployment and management for line of business apps is critical to HoloLens. Admins and users need to view app install status for auditing and diagnosis. In this release, we added more details in **Settings** > **Accounts** > **Access work or school** > **Click on your account** > **Info**.
+MDM app deployment and management for line-of-business apps is critical to HoloLens. Admins and users need to view app install status for auditing and diagnosis. In this release, we added more details in **Settings** > **Accounts** > **Access work or school** > **Click on your account** > **Info**.
 
 ### Additional CSPs and policies
 
