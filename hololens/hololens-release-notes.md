@@ -420,7 +420,7 @@ With this new setting, you can select an alternative color profile for your Holo
 
 > [!TIP]
 > Here are some helpful tips to keep in mind while using the display color calibration setting:
-
+>
 > - You can re-run display color calibration from Settings whenever you'd like
 > - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change will be reflected on the Settings page
 > - When you re-run display color calibration, the color profile that was previously saved will be highlighted and Profile 0 will not appear (as Profile 0 represents the display's original color profile)
