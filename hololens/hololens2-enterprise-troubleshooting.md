@@ -13,7 +13,7 @@ ms.reviewer:
 appliesto:
 - HoloLens 2
 ---
-# Troubleshooting implementation and managed devices 0
+# Troubleshooting implementation and managed devices
 
 This article describes how to resolve several issues or answer questions regarding implementation and management of HoloLens 2.
 
@@ -34,7 +34,7 @@ This article describes how to resolve several issues or answer questions regardi
 1. Verify that the Wi-Fi profile has right settings:
     - Configure the EAP type correctly. Common EAP types are EAP-TLS (13), EAP-TTLS (21) and PEAP (25).
     - Check the Wi-Fi SSID name, and see that it matches the HEX string.
-    - Make sure that for EAP-TLS, TrustedRootCA contains the SHA-1 hash of server's trusted root CA certificate. On Windows PC "certutil.exe -dump cert_file_name", the command will show a certificate's SHA-1 hash string.
+    - Make sure that for EAP-TLS, TrustedRootCA contains the SHA-1 hash of server's trusted root CA certificate. On Windows PC the "certutil.exe -dump cert_file_name" command will show a certificate's SHA-1 hash string.
 2. Collect network packet capture on the Access Point or Controller or AAA server logs to find out where the EAP session fails.
     - If the EAP identity provided by HoloLens is unexpected, check whether the identity has been correctly provisioned through Wi-Fi profile or client certificate.
     - If the server rejects the HoloLens client certificate, check whether the required client certificate has been provisioned on the device.
