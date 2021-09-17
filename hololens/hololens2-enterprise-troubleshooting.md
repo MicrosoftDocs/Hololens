@@ -13,7 +13,7 @@ ms.reviewer:
 appliesto:
 - HoloLens 2
 ---
-# Troubleshooting implementation and managed devices 0
+# Troubleshooting implementation and managed devices
 
 This article describes how to resolve several issues or answer questions regarding implementation and management of HoloLens 2.
 
