@@ -16,7 +16,12 @@ appliesto:
 
 # Share your HoloLens with multiple people
 
-It's common to share a HoloLens 2 device in some work environments, like clean rooms, surgical suites, etc. This article will outline the two different scenarios when using a HoloLens in a shared environment, and some best practices when doing so.
+## Overview
+Businesses often invest in many shared HoloLens devices. It's common to share a HoloLens 2 device in some work environments, like clean rooms, surgical suites, etc. This article will outline the two different scenarios when using a HoloLens in a shared environment, and some best practices when doing so. How you use HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of some multi-user experiences: 
+
+- Devices which are charged and have Dynamics 365 Guides and allow your employees to open the Settings app to make adjustments to Wi-Fi needed, but Page Settings Visibility policy is enabled to limit the amount pages available in the Settings app.
+- Devices which are for Remote Assist, and your line of business app which are rented to other companies. These devices have Kiosks that include only your app and Remote Assist. WDAC is used to keep the Settings app and Microsoft Edge from launching. Included with the rental is a USB-C battery pack to keep the devices at full charge over multiple shifts.
+- All your devices are set up for Autopilot and download all of your company apps. You've set up a few different Kiosk profiles, targeting different Azure AD groups. Each user logs into the HoloLens using FIDO2 keys and signing into their own Azure AD account, and is presented with a tailored experience.
 
 ## Best practices
 

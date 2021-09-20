@@ -4,36 +4,59 @@ description: Learn how to check your HoloLens build number, keep up to date with
 keywords: how-to, update, roll back, HoloLens, check build, build number
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/27/2019
+ms.date: 9/3/2021
 audience: ITPro
 ms.reviewer: 
-manager: jarrettr
+manager: sekerawa
 appliesto:
 - HoloLens 2
 ---
 
 # Update HoloLens 2
 
-HoloLens uses Windows Update, just like other Windows 10 devices. Your HoloLens will automatically download and install system updates whenever it is plugged-in to power and connected to the Internet, even when it is in standby.
+## Overview
 
-This article will walk through HoloLens tools for:
+We’re always working on new features, bug fixes, and security updates. You'll be notified when these updates are ready.
 
-- viewing your current operating system version (build number)
+Based on your preference, your HoloLens will automatically download and install system updates whenever it is plugged-in to power, connected to the Internet, and even in standby.
+
+To ensure your HoloLens is always updated, leave it plugged in with the charger that came with it. You also want your HoloLens connected to the internet. This way, it will automatically download and install system updates. 
+
+With Windows Update service, you’ll control multiple aspects of the update process, such as which devices get which updates at what time. This control is helpful because you can roll out updates to a subset of HoloLens devices for testing. Then, roll out updates to the remaining ones. Or, you can define different update schedules for different types of updates.
+
+## Types of updates
+
+For HoloLens, you can automatically manage two types of updates. 
+
+- Feature updates: released two times a year.
+- Quality updates: include critical security updates. They’re released monthly, or as required.
+
+Use **Update**/**AllowAutoUpdate** to manage scanning, downloading, and installation of updates. 
+
+## Scheduling updates
+
+You can also set an update schedule. It can be on a particular day, or every day, at a particular time. For instance, at 5 p.m., or outside of active hours.
+
+Finally, a few words about planning your update strategy. We support update deferrals. So, you can decide how long to wait after Microsoft releases an update to install that update on devices.
+
+Sometimes, a company likes to try all the new features first to make sure everything works, and they are familiar with the new updates so their support team is prepared. Once they’ve confirmed that all is good, they roll out the updates to the entire company. By associating subsets of your devices with different deferral policies, known as update rings, you can coordinate an update rollout strategy for your organization.
+
+## HoloLens update tools
+
+This section will walk you through HoloLens tools for:
+
 - checking for updates
 - manually updating HoloLens
+- viewing your current operating system version (build number)
 - rolling back to an older update
 
-## Check your operating system version (build number)
+### Check for updates and manually update
 
-You can verify the system version number, (build number) by opening the Settings app and selecting **System** > **About**.
-
-## Check for updates and manually update
-
-You can check for updates any time in settings.  To see available updates and check for new updates:
+You can check for updates anytime in settings.  To see available updates and check for new updates:
 
 1. Open the **Settings** app.
 1. Navigate to **Update & Security** > **Windows Update**.
@@ -43,9 +66,13 @@ If an update is available, it will start downloading the new version. After the 
 
 While your HoloLens is installing the update, it will display spinning gears and a progress indicator. Do not turn off your HoloLens during this time. It will restart automatically once it has completed the installation.
 
-HoloLens applies one update at a time.  If your HoloLens is more than one version behind the latest you may need to run through the update process multiple times to get it fully up to date.
+HoloLens applies one update at a time.  If your HoloLens is more than one version behind the latest, you may need to run through the update process multiple times to get it fully up to date.
 
-## Go back to a previous version
+### Check your operating system version (build number)
+
+You can verify the system version number (build number) by opening **Settings** and select **System** > **About**.
+
+### Go back to a previous version
 
 In some cases, you might want to go back to a previous version of the HoloLens software. The recommended steps are:
 
@@ -61,10 +88,10 @@ In some cases, you might want to go back to a previous version of the HoloLens s
         1. You can download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
         1. You can use the default build that ARC hosts. (If you choose this option skip the next step.)
         1. You can use a build Support provided you with.
-    1. When you have finished these downloads, open **File Explorer** > **Downloads**. Right-click the zipped folder that you just downloaded, and select **Extract all** > **Extract** to unzip it.
+    1. When you have finished these downloads, open **File Explorer** > **Downloads**. Right-click the zipped folder that you downloaded, and select **Extract all** > **Extract** to unzip it.
     1. Connect your HoloLens to your PC using a USB-A to USB-C cable. (Even if you've been using other cables to connect your HoloLens, this one works best.)
     1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
-    1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the .ffu extension.)
+    1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the `.ffu` extension.)
     1. Select **Install software**, and follow the instructions.
 
 > [!NOTE]
