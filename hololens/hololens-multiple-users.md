@@ -7,7 +7,7 @@ author: qianw211
 ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 8/30/2021
+ms.date: 9/20/2021
 ms.reviewer: anisgup
 manager: sean-kerawala
 appliesto:
@@ -20,14 +20,14 @@ It's common to share a HoloLens 2 device in some work environments, like clean r
 
 ## Best practices
 
-When planning to share your devices there are several topics to consider how to best share devices.
+When planning to share your devices, there are several topics to consider how to best share devices.
 
 ### [Identity and Authentication](hololens-identity.md)
 
-If you're planning on having multiple accounts on a device then you'll have Azure AD accounts with all modes of authentication through [Windows Hello](/windows-hardware/design/device-experiences/windows-hello), including Iris and FIDO2 keys.
+If you're planning on having multiple accounts on a device, then you'll have Azure AD accounts with all modes of authentication through [Windows Hello](/windows-hardware/design/device-experiences/windows-hello), including Iris and FIDO2 keys.
 
-- FIDO 2 Security keys are excellent if you you have multiple devices, many users, or are constantly using new devices.
-- If you have less than 10 users, and one device, then Iris is a fast solution to sign a user who have previously signed into the same device.
+- FIDO 2 Security keys are excellent if you have multiple devices, many users, or are constantly using new devices.
+- If you have less than 10 users, and one device, then Iris is a fast solution to sign a user who has previously signed into the same device.
 
 ### [Device Management](hololens-csp-policy-overview.md)
 
@@ -35,9 +35,9 @@ If devices are being shared between users, then you'll likely want to use device
 
 ### Advanced device management
 
-In some cases you may want to limit what applications can be accessed by the end users. This could be limiting what apps users are presented with on the start menu using [Kiosk](hololens-kiosk.md). Kiosk can be configured to present different start menus based on user, azure groups, or special user types such visitor or excluding device owners. Kiosk doesn't stop one app from launching another, but it does.
+In some cases, you may want to limit what applications can be accessed by the end users. You could be limiting what apps users are presented with on the start menu using [Kiosk](hololens-kiosk.md). Kiosk can be configured to present different start menus based on user, Azure groups, or special user types such visitor or excluding device owners. Kiosk doesn't stop one app from launching another, but it does.
 
- You may also want to completely stop the launching of apps or services using [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to restrict apps. This is different that Kiosk, in that it doesn't change the UI of HoloLens but simply does not allow a blocked app to launch.
+ You may also want to completely stop the launching of apps or services using [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to restrict apps. WDAC is different that Kiosk, in that it doesn't change the UI of HoloLens but simply does not allow a blocked app to launch.
 
 ### Physical Management
 
@@ -47,11 +47,11 @@ When sharing the device between multiple users, there are some physical consider
 - If a device is required for a shift, and needs to last multiple shifts consider using an external battery at the start of a shift while the device still has significant charge per the [managing heat directions](hololens2-charging.md#managing-heat).
 - Consider how you plan to [clean the device](hololens2-maintenance.md) between users.
 - For a device with a single shared user if using a shared PIN/password for a single user, don't put the PIN/password on the side of the device.
-- For multiple devices with a single shared user, use a variety of PINs/passwords.
+- For multiple devices with a single shared user, use various PINs/passwords.
 
 ## Share with multiple people, each using their own account
 
-This is the preferred and most secure identity use case for HoloLens 2 users. When they use their own Azure Active Directory (Azure AD) accounts, multiple users can each keep their own user settings and user data on the device. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.
+Individual Azure Active Directory (Azure AD) accounts is the preferred and most secure identity use case for HoloLens 2 users. When they use their own Azure AD accounts, multiple users can each keep their own user settings and user data on the device. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.
 
 To make sure that multiple people can use their own accounts on your HoloLens, follow these steps to configure it:
 
@@ -85,4 +85,4 @@ There are two shared device methods available:
 
 - **Multiple end users sharing multiple devices** - HoloLens devices are in a shared storage space where employees can use any device. Examples would be an oil rig or an auto dealership/garage.
 
-When a new user puts the device on for the first time while keeping the same account signed in, the device prompts the user to quickly calibrate and personalize the viewing experience. The device will store the calibration information to automatically optimize the quality and comfort of each user's viewing experience. Users won't need to calibrate the device again.
+When a new user puts on the device for the first time while keeping the same account signed in, the device prompts the user to quickly calibrate and personalize the viewing experience. The device will store the calibration information to automatically optimize the quality and comfort of each user's viewing experience. Users won't need to calibrate the device again.
