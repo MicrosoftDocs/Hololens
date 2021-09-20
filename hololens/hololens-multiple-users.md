@@ -39,9 +39,9 @@ If you're planning on having multiple accounts on a device, then you'll have Azu
 
 If devices are being shared between users, then you'll likely want to use device restrictions, to set some policies to either better enable your users to use the device, manage updates, or limit what the device can do. It is recommended you review our [common device restrictions](hololens-common-device-restrictions.md), and see if these seem to fit with your organization. Once you know what policies you want to use, you can apply them through [Microsoft's Endpoint Manager (MDM)](hololens-mdm-configure.md) or provisioning packages.
 
-### Advanced device management
+### Advanced device management - Kiosk and WDAC
 
-In some cases, you may want to limit what applications can be accessed by the end users. You could be limiting what apps users are presented with on the start menu using [Kiosk](hololens-kiosk.md). Kiosk can be configured to present different start menus based on user, Azure groups, or special user types such visitor or excluding device owners. Kiosk doesn't stop one app from launching another, but it does.
+In some cases, you may want to limit what applications can be accessed by the end users. You could be limiting what apps users are presented with on the start menu using [Kiosk mode](hololens-kiosk.md). Kiosk can be configured to present different start menus based on user, Azure groups, or special user types such visitor or excluding device owners. Kiosk doesn't stop one app from launching another, but it does.
 
  You may also want to completely stop the launching of apps or services using [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to restrict apps. WDAC is different that Kiosk, in that it doesn't change the UI of HoloLens but simply does not allow a blocked app to launch.
 
