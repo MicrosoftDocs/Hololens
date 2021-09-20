@@ -3,17 +3,17 @@ title: Insider preview for Microsoft HoloLens
 description: Learn how to get started with Insider builds and provide valuable feedback for our next major operating system update for HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/16/2021
+ms.date: 09/14/2021
 ms.reviewer: 
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens 2
 ---
@@ -47,21 +47,33 @@ This one’s about the improved troubleshooting and device reports, some fixed b
 
 ✔️ If you'd like to set a single Azure AD account to automatically log in, [configure this new CSP.](#auto-login-policy-controlled-by-csp) <br>
 ✔️ If you'd like configure your apps to automatically attempt to update after failing to update, [set this new CSP for smart retry.](#smart-retry-for-app-updates) <br>
-✔️ If you'd like to have more control over OS updates, check out these [newly enabled Update policies.](#improved-update-restart-detection-and-notifications) <br>
-✔️ If you need to get make your organization's apps available on the company store via the Microsoft Store, but want to only allow access to your organization's apps and not the full store, [set this policy.](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️ If you'd like to know the free storage space, SSID or BSSID of your HoloLens devices check out these [reporting CSPs.](#csp-changes-for-reporting-hololens-details) <br>
+✔️ If you'd like to have more control over OS updates, check out these [newly enabled Update policies](#improved-update-restart-detection-and-notifications). <br>
+✔️ If you need to get make your organization's apps available on the company store via the Microsoft Store, but want to only allow access to your organization's apps and not the full store, [set this policy](#use-only-private-store-apps-for-microsoft-store). <br>
+✔️ If you'd like to know the free storage space, SSID or BSSID of your HoloLens devices check out these [reporting CSPs](#csp-changes-for-reporting-hololens-details). <br>
 ✔️ If you'd like to use WDAC to block apps or processes from launching, but also need to use your own line of bushiness apps, you can now [allow LOB in your WDAC policy](#use-wdac-and-lob-apps).
 
 ### Moving Platform Mode
 
 As of **Insider build 20348.1411** we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you will be able to use your HoloLens 2 in previously inaccessible environments, like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
 
-To learn more about what is supported and how to enable this new feature, [visit the moving platform page.](hololens2-moving-platform.md)
+To learn more about what is supported and how to enable this new feature, [visit the moving platform page](hololens2-moving-platform.md).
+
+#### Overview to try out Moving Platform Mode
+
+1. [Enable developer mode and device portal](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+1. [Enable moving platform mode through Device portal](hololens2-moving-platform.md#enabling-moving-platform-mode).
+1. Take your device to your large moving platform and observe how stable holograms are.
 
 ### PFX file support for Certificate Manager
 
 Introduced in Windows Insider build 20348.1405. We’ve added support to the [Certificate Manager](certificate-manager.md) to now use .pfx certificates. When users navigate to **Settings** > **Update & Security** > **Certificates**, and select **Install a certificate** the UI now supports .pfx certificate file.
 Users can import .pfx certificate, with private key, to user store or machine store.
+
+#### Overview to try out PFX files in Certificate Manager
+
+1. Prepare your PFX file.
+1. Copy the file to your device via a USB-C cable.
+1. Open the Settings app, and navigate to the [Certificate Manager](certificate-manager.md) and apply the certificate.
 
 ### View advanced diagnostic report in Settings on HoloLens
 
@@ -70,6 +82,12 @@ For managed devices when troubleshooting behavior, confirming that an expected p
 Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select **View advanced diagnostic report**. This will generate and open the report in a new Edge window.
 
 ![View advanced diagnostic report in Settings app.](./images/view-advanced-diagnostic-report.jpg)
+
+#### Overview to try out the advanced diagnostic report
+
+1. Open the Settings app.
+1. Navigate to the Accounts page, and click the new link **Export your management logs**.
+1. View advanced information on your device's configurations.
 
 ### Offline Diagnostics notifications
 
@@ -86,9 +104,21 @@ This new feature will be enabled when your device updates, and doesn’t need to
 
 We hope with this newer addition of audiovisual feedback it is easier to gather diagnostic data, and more quickly be able to troubleshoot your problems.
 
+#### Overview to try out the diagnostics notifications
+
+1. Unlock your device and wear it.
+1. Press the **Power** and **Volume down** button combination to gather [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics).
+1. View the toast notifications and hear audio cues for when your device starts and finishes collecting logs.
+
 ### Low storage log collection improvements
 
 In scenarios where a device seems to be low on disk space when diagnostic logs are collected, an additional report named **StorageDiagnostics.zip** will be created. The threshold of low storage is determined automatically by Windows [storage sense](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+
+#### Overview to try out the low storage improvements
+
+1. Fill up your device's storage space.
+1. Press the **Power** and **Volume down** button combination to gather [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics).
+1. Observe there is a new file in the collection of logs stored in the Documents folder of your HoloLens.
 
 ### CSP changes for reporting HoloLens details
 
@@ -147,6 +177,13 @@ On a device where this policy is configured, the user specified in the policy wi
 > - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior.
 > - Auto-logon is only supported for MSA and AAD users.
 
+#### Overview to try auto-logon CSP
+
+1. Configure the new CSP to a desired user [using a custom policy](/mem/intune/configuration/custom-settings-windows-10) : `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+1. Apply the CSP to the device via [provisioning package](hololens-provisioning.md) or [MDM](hololens-mdm-configure.md).
+1. Sign into the specified account.
+1. Restart the device and observe the user is automatically logged in.
+
 ### Improved update restart detection and notifications
 
 Between active hours and install time policies, it is possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior to the reboot being initiated and they can delay the reboot in accordance with IT policy.
@@ -163,27 +200,58 @@ The following update policies were added:
 - [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
 - [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
+#### Overview to try new update notifications
+
+1. Configure one of the new update CSPs via [provisioning package](hololens-provisioning.md) or [MDM](hololens-mdm-configure.md) (see the link list above and pick one).
+1. Use the device during the scheduled time.
+1. Observe the user is notified about the update and the need to restart the device\*.
+
+\* Your results may vary based on Update policies used.
+
 ### Smart Retry for app updates
 
 Now enabled for HoloLens is a new policy that allows IT Admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. These can be set based on a few different triggers such as a scheduled time or sign-in. To learn more about how to use this policy view [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
+
+#### Overview to try Smart Retry for app updates
+
+1. Configure the new smart retry feature.
+1. On a device that has not yet received your app and is correctly configured to, log in in an online environment.
+1. Make the device unable to download the app by means of turning it off or disconnecting it.
+1. Have your device powered on and connected to the internet during your triggered time to retry the download.
 
 ### Use only private store apps for Microsoft Store
 
 The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy enables the Microsoft Store app to be configured to only show the private store configured for your organization. Limiting access to only the apps you’ve made available.
 
-Learn more about [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+Learn more about [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly).
+
+#### Overview to try only private store apps
+
+1. Configure the new policy for your devices via [MDM](hololens-mdm-configure.md).
+1. Log into a device that has the policy.
+1. Open the Microsoft Store app and observe you can only see your organization's apps.
 
 ### Use WDAC and LOB apps
 
-You can now use WDAC to block apps or processes from launching and continue to use your own line of bushiness apps. you can now allow them in your WDAC policy. Using this policy involves running an extra line of code in PowerShell when creating your WDAC policy. [Review the steps here.](/mem/intune/configuration/custom-profile-hololens)
+You can now use WDAC to block apps or processes from launching and continue to use your own line of bushiness apps. you can now allow them in your WDAC policy. Using this policy involves running an extra line of code in PowerShell when creating your WDAC policy. [Review the steps here](/mem/intune/configuration/custom-profile-hololens).
+
+#### Overview to try your own apps while using WDAC to block others
+
+1. Gather the AUMIDs of your LOB app, and the apps you intend to block.
+1. [Create a new WDAC policy](/mem/intune/configuration/custom-profile-hololens) following the new steps.
+1. [Deploy the policy using MDM](hololens-mdm-configure.md) to your device.
+1. Sign into the device and observe you can launch your app and block others.
 
 ### Fixes and improvements
 
-- Fixed a [known issue for Device Portal where there was no prompt downloading locked files.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
-- Fixed a [known issue for Device Portal with file upload and download time outs.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+- Fixed a [known issue for Device Portal where there was no prompt downloading locked files](hololens-troubleshooting.md#downloading-locked-files-doesnt-error).
+- Fixed a [known issue for Device Portal with file upload and download time outs](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out).
 - Addresses issues around reporting compliance properties from HoloLens devices; a reboot may be required for the correct reporting to be triggered on Insider builds.  
-- Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
+- Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
 - Updated the in-box version of Remote Assist that's installed on fresh flashes.
+- Gamepad processing for 2D apps was disabled in Insider builds. By removing it, apps are now free to use the Gamepad APIs directly and have access to the whole set of controls and do whatever they want. Developers should use the Gamepad APIs to consume Gamepad input. Here is a sample for [Gamepad Class (Windows.Gaming.Input) - Windows UWP applications](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
+- Fixed an issue where after first user sign-in, OOBE was being terminated in scenarios where AAD group based kiosk configurations were being used.
+- Corrected an issue around displaying update notifications and dialog prompts for device restart.
 
 ## Start receiving Insider builds
 
@@ -196,6 +264,9 @@ You can now use WDAC to block apps or processes from launching and continue to u
 > We had a bug on the back-end that you may have encountered and this will get you back on track.
 
 On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
+
+> [!NOTE]
+> In order to enroll your device in Insider builds, you'll need to enable optional telemetry. If you have not done this already, open the Settings app and select **Privacy** -> **Diagnostics & feedback** and then select **Optional diagnostics data**.
 
 Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
 
