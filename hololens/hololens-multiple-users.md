@@ -17,7 +17,8 @@ appliesto:
 # Share your HoloLens with multiple people
 
 ## Overview
-Businesses often invest in many shared HoloLens devices. It's common to share a HoloLens 2 device in some work environments, like clean rooms, surgical suites, etc. This article will outline the two different scenarios when using a HoloLens in a shared environment, and some best practices when doing so. How you use HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of some multi-user experiences: 
+
+Businesses often invest in many shared HoloLens devices. It's common to share a HoloLens 2 device in some work environments, like clean rooms, surgical suites, etc. This article will outline the two different scenarios when using a HoloLens in a shared environment, and some best practices when doing so. How you use HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of some multi-user experiences:
 
 - Devices which are charged and have Dynamics 365 Guides and allow your employees to open the Settings app to make adjustments to Wi-Fi needed, but Page Settings Visibility policy is enabled to limit the amount pages available in the Settings app.
 - Devices which are for Remote Assist, and your line of business app which are rented to other companies. These devices have Kiosks that include only your app and Remote Assist. WDAC is used to keep the Settings app and Microsoft Edge from launching. Included with the rental is a USB-C battery pack to keep the devices at full charge over multiple shifts.
@@ -77,6 +78,12 @@ To use HoloLens, each user follows these steps:
     - If you previously used the device:
         - Windows Holographic, version 20H2, build 19041.1128 or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
         - Previous builds will need manual calibration to adjust to your eyes.
+
+> [!TIP]
+> If a user hasn't signed into a device yet try one of these two methods for a faster login:
+>
+> - **FIDO 2 Security key** : Your FIDO2 security key will be automatically recognized and the user won't need to type in their user credentials or use MFA. This is the fastest method to sign in on a new device.
+> - **Web authentication** : When you sign into a new device, you can select the link **Sign in from another device** which will generate a 9 character code you can use at [aka.ms/devicelogin](https://login.microsoftonline.com/common/oauth2/deviceauth) to either sign in as the user on the device, or type your user name and password using a keyboard for your convenience.
 
 To see a list of the device users or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**.
 
