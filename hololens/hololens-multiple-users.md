@@ -58,11 +58,11 @@ When sharing the device between multiple users, there are some physical consider
 
 ## Share with multiple people, each using their own account
 
-Individual Azure Active Directory (Azure AD) accounts is the preferred and most secure identity use case for HoloLens 2 users. When they use their own Azure AD accounts, multiple users can each keep their own user settings and user data on the device. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.
+Individual Azure Active Directory (Azure AD) accounts are the preferred and most secure identity use case for HoloLens 2 users. When using their own Azure AD accounts, multiple users can each keep their own user settings and user data on the device. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.
 
 To make sure that multiple people can use their own accounts on your HoloLens, follow these steps to configure it:
 
-1. When you set up the device, select **My work or school owns it** and sign in by using an Azure AD account.
+1. When you [set up the device](hololens2-start.md), select **My work or school owns it** and sign in by using an Azure AD account.
 1. After you finish setup, make sure that the account settings (Settings > Accounts) include **Other users**.
 
 > [!NOTE]
@@ -77,7 +77,7 @@ To use HoloLens, each user follows these steps:
 1. Use your Azure AD account credentials to sign in to the device.  
     - If it's the first time you have used the device, it will ask you to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
     - If you previously used the device:
-        - Windows Holographic, version 20H2, build 19041.1128 or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
+        - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
         - Previous builds will need manual calibration to adjust to your eyes.
 
 > [!TIP]
