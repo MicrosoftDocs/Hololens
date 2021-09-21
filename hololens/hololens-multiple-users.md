@@ -45,7 +45,7 @@ In some cases, you may want to limit what applications can be accessed by the en
 
 You may also want to completely stop the launching of apps or services using [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to restrict apps. WDAC is different that Kiosk, because it doesn't change the UI of HoloLens but instead does not allow a blocked app to launch.
 
-[Page Settings Visibility](settings-uri-list) is another way to add restrictions to a device. In the event you need to grant users access to some pages in the Settings app, but not all you can use Page Settings Visibility to limit access. This is useful for example, if your users need to change the Wi-Fi, but you don't want them to access the Accounts page.
+[Page Settings Visibility](settings-uri-list.md) is another way to add restrictions to a device. In the event you need to grant users access to some pages in the Settings app, but not all you can use Page Settings Visibility to limit access. This is useful for example, if your users need to change the Wi-Fi, but you don't want them to access the Accounts page.
 
 ### Physical Management
 
