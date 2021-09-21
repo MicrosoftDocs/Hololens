@@ -33,7 +33,7 @@ When planning to share your devices, there are several topics to consider how to
 If you're planning on having multiple accounts on a device, then you'll have Azure AD accounts with all modes of authentication through [Windows Hello](/windows-hardware/design/device-experiences/windows-hello), including Iris and FIDO2 keys.
 
 - FIDO 2 Security keys are excellent if you have multiple devices, many users, or are constantly using new devices.
-- If you have less than 10 users, and one device, then Iris is a fast solution to sign a user who has previously signed into the same device.
+- If you have 10 or fewer users, Iris is a fast solution to sign in users who have previously signed into the same device.
 
 ### [Device Management](hololens-csp-policy-overview.md)
 
@@ -41,9 +41,9 @@ If devices are being shared between users, then you'll likely want to use device
 
 ### Advanced device management - Kiosk and WDAC
 
-In some cases, you may want to limit what applications can be accessed by the end users. You could be limiting what apps users are presented with on the start menu using [Kiosk mode](hololens-kiosk.md). Kiosk can be configured to present different start menus based on user, Azure groups, or special user types such visitor or excluding device owners. Kiosk doesn't stop one app from launching another, but it does.
+In some cases, you may want to limit what applications can be accessed by the end users. You could be limiting what apps users are presented with on the start menu using [Kiosk mode](hololens-kiosk.md). Kiosk can be configured to present different start menus based on user, Azure groups, or special user types such visitor or excluding device owners. You can choose multiple apps, or just a single app. A multi app kiosk doesn't stop one app from launching another, so if the store or another app is available users can still launch another app.
 
- You may also want to completely stop the launching of apps or services using [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to restrict apps. WDAC is different that Kiosk, in that it doesn't change the UI of HoloLens but simply does not allow a blocked app to launch.
+You may also want to completely stop the launching of apps or services using [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to restrict apps. WDAC is different that Kiosk, in that it doesn't change the UI of HoloLens but simply does not allow a blocked app to launch.
 
 ### Physical Management
 
