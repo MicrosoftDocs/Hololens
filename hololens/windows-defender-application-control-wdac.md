@@ -79,9 +79,15 @@ For IT Admins looking to update their [WDAC policy](windows-defender-application
 If an app is not on this list, then a user may use Device Portal, connected to a HoloLens 2 that has installed the app wished to be blocked, to determine the PackageRelativeID and from there get the PackageFamilyName.
 
 1. Install the app on your HoloLens 2 device.
+
 1. Open Settings -> Updates & Security -> For developers, and enable **Developer mode** and then **Device portal**.
-    1. More more details instructions read more about [setup and use of device portal here](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+
+   For more more details and instructions, see [setup and use of device portal here](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+
 1. Once Device Portal is connected, navigate to **Views** then **Apps**.
+
 1. Within the Installed Apps panel, use the dropdown to select the installed app.
+
 1. Locate the PackageRelativeID.
+
 1. Copy app characters before the `!`, these characters will be your PackageFamilyName.
