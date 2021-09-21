@@ -51,6 +51,7 @@ When sharing the device between multiple users, there are some physical consider
 
 - Ensure devices are charging between shifts.
 - If a device is required for a shift, and needs to last multiple shifts consider using an external battery at the start of a shift while the device still has significant charge per the [managing heat directions](hololens2-charging.md#managing-heat).
+- When storing devices keep them plugged in and connected to a network. This is the best way to ensure OS and app updates.
 - Consider how you plan to [clean the device](hololens2-maintenance.md) between users.
 - For a device with a single shared user if using a shared PIN/password for a single user, don't put the PIN/password on the side of the device.
 - For multiple devices with a single shared user, use various PINs/passwords.
