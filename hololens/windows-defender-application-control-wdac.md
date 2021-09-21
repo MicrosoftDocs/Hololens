@@ -82,7 +82,7 @@ If an app is not on this list, then a user may use Device Portal, connected to a
 
 1. Open Settings -> Updates & Security -> For developers, and enable **Developer mode** and then **Device portal**.
 
-   For more more details and instructions, see [setup and use of device portal here](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+   For more more details and instructions, see [set up and use of device portal here](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
 1. Once Device Portal is connected, navigate to **Views** then **Apps**.
 
