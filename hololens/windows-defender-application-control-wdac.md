@@ -72,7 +72,9 @@ Here is a list of commonly used and In-Box apps for HoloLens 2 devices.
 
 For IT Admins looking to update their [WDAC policy](windows-defender-application-control-wdac.md) to block the [new Microsoft Edge app](hololens-new-edge.md), you'll need to add the following to your policy.
 
-``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
+```xml
+<Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" />
+```
 
 ### How to find a Package Family Name
 
