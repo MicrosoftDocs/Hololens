@@ -134,9 +134,10 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Mixed Reality Partners
+          - text: Mixed Reality Partners Forum
             url: /mixed-reality-partners/bd-p/MixedRealityPartnersForum
-          - text: Mixed Reality Partners blog
+          - text: Mixed Reality Partners Blog
+            url: /mixed-reality-partners/bg-p/MixedRealityPartnersBlog
           - text: Start designing and prototyping
             url: /windows/mixed-reality/design/design
           - text: Moving Platform Mode
