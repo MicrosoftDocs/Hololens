@@ -135,15 +135,15 @@ landingContent:
       - linkListType: reference
         links:
           - text: Mixed Reality Partners Forum
-            url: /mixed-reality-partners/bd-p/MixedRealityPartnersForum
+            url: https://aka.ms/MixedR​ealityforPartners
           - text: Mixed Reality Partners Blog
-            url: /mixed-reality-partners/bg-p/MixedRealityPartnersBlog
+            url: https://aka.ms/MRPartnerBlog
           - text: Start designing and prototyping
-            url: /windows/mixed-reality/design/design
+            url: /windows/mixed-reality/design
           - text: Moving Platform Mode
             url: /hololens/hololens2-moving-platform
           - text: Environmental Considerations 
-            url: /hololens-environment-considerations
+            url: /hololens/hololens-environment-considerations
 
  # Card
   - title: More services
