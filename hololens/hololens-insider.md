@@ -252,6 +252,7 @@ You can now use WDAC to block apps or processes from launching and continue to u
 - Gamepad processing for 2D apps was disabled in Insider builds. By removing it, apps are now free to use the Gamepad APIs directly and have access to the whole set of controls and do whatever they want. Developers should use the Gamepad APIs to consume Gamepad input. Here is a sample for [Gamepad Class (Windows.Gaming.Input) - Windows UWP applications](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
 - Fixed an issue where after first user sign-in, OOBE was being terminated in scenarios where AAD group based kiosk configurations were being used.
 - Corrected an issue around displaying update notifications and dialog prompts for device restart.
+- Fixed and issue where after restarting the HoloLens with a paired Bluetooth Xbox One controller, the device no longer recognizes input from the controller.
 
 ## Start receiving Insider builds
 
