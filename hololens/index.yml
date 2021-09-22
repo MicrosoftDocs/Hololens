@@ -130,6 +130,21 @@ landingContent:
             url: /mesh/overview
  
  # Card
+  - title: Mixed Reality Partner Program
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Mixed Reality Partners
+            url: /mixed-reality-partners/bd-p/MixedRealityPartnersForum
+          - text: Mixed Reality Partners blog
+          - text: Start designing and prototyping
+            url: /windows/mixed-reality/design/design
+          - text: Moving Platform Mode
+            url: /hololens/hololens2-moving-platform
+          - text: Environmental Considerations 
+            url: /hololens-environment-considerations
+
+ # Card
   - title: More services
     linkLists:
       - linkListType: reference
