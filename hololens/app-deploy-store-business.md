@@ -4,7 +4,7 @@ description: Learn how to work with the Microsoft Store for Business to publish 
 keywords: Microsoft Store for Business, msfb, app deployment, store
 author: evmill
 ms.author: v-evmill
-ms.date: 6/22/2020
+ms.date: 9/22/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -16,7 +16,7 @@ manager: yannisle
 
 # Microsoft Store for Business
 
-The Microsoft Store for Business is designed primarily for IT decision-makers and administrators in businesses or organizations with a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. 
+The [Microsoft Store for Business](/microsoft-store/microsoft-store-for-business-overview) is designed primarily for IT decision-makers and administrators in businesses or organizations with a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. 
 
 You can manage Microsoft Store apps and private line-of-business apps in one inventory, and assign and re-use licenses as needed. You can also choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options.
 
