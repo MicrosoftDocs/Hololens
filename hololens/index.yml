@@ -83,13 +83,13 @@ landingContent:
       - linkListType: reference
         links:
           - text: Mixed Reality Partner Program
-            url: /hololens/mixed-reality-partners
+            url: https://www.microsoft.com/en-us/hololens/mixed-reality-partners
           - text: Mixed Reality Partner Forum
-            url: /mixed-reality-partners/bd-p/MixedRealityPartnersForum
+            url: https://techcommunity.microsoft.com/t5/mixed-reality-partners/bd-p/MixedRealityPartnersForum
           - text: Mixed Reality Partners Blog
             url: https://aka.ms/MRPartnerBlog
           - text: Start designing and prototyping
-            url: /mixed-reality/mixed-reality-docs/mr-dev-docs/design/design.md
+            url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/design
           - text: Moving Platform Mode
             url: /hololens/hololens2-moving-platform
           - text: Environmental Considerations 
