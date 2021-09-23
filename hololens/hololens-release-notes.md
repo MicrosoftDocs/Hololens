@@ -226,7 +226,7 @@ This information can be found later in the [app deployment store for business pa
 
 ### Use only private store apps for Microsoft Store
 
-The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy enables the Microsoft Store app to be configured to only show the private store configured for your organization. Limiting access to only the apps you’ve made available.
+The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy enables the Microsoft Store app to be configured to only show the private store configured for your organization via [Microsoft Store for Business](/microsoft-store/microsoft-store-for-business-overview). Limiting access to only the apps you’ve made available.
 
 Learn more about [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
@@ -251,12 +251,17 @@ You can now use WDAC to block apps or processes from launching and continue to u
 
 ### Fixes and improvements
 
+#### For Developers
+
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files](hololens-troubleshooting.md#downloading-locked-files-doesnt-error).
 - Fixed a [known issue for Device Portal with file upload and download time outs](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out).
-- Addresses issues around reporting compliance properties from HoloLens devices; a reboot may be required for the correct reporting to be triggered on Insider builds.  
+- Gamepad processing for 2D apps was disabled in Insider builds. By removing it, apps are now free to use the Gamepad APIs directly and have access to the whole set of controls and can be developed in mind to do more. Developers should use the Gamepad APIs to consume Gamepad input. Here is a sample for [Gamepad Class (Windows.Gaming.Input) - Windows UWP applications](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
 - Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
+
+#### For Enterprise
+
+- Addresses issues around reporting compliance properties from HoloLens devices; a reboot may be required for the correct reporting to be triggered on Insider builds.  
 - Updated the in-box version of Remote Assist that's installed on fresh flashes.
-- Gamepad processing for 2D apps was disabled in Insider builds. By removing it, apps are now free to use the Gamepad APIs directly and have access to the whole set of controls and do whatever they want. Developers should use the Gamepad APIs to consume Gamepad input. Here is a sample for [Gamepad Class (Windows.Gaming.Input) - Windows UWP applications](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
 - Fixed an issue where after first user sign-in, OOBE was being terminated in scenarios where AAD group based kiosk configurations were being used.
 - Corrected an issue around displaying update notifications and dialog prompts for device restart.
 
