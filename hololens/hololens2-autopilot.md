@@ -239,11 +239,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 
 1. Autopilot experience requires internet access. Use one of following options to provide internet access:
 
-    - Connect your device to a Wi-Fi network in OOBE and then let it detect Autopilot experience automatically. This is the only time you will need to interact with OOBE until Autopilot experience completes on its own. By default, HoloLens 2 waits for 10 seconds to detect Autopilot after detecting the internet. If no autopilot profile is detected within 10 seconds, that means Autopilot was not discovered correctly, and you will see this screen.
-
-       ![EULA screen.](./images/autopilot-eula.png)
-       
-       Reboot your device and try again. For more information, see [Known Issues and Limitations](hololens2-autopilot#known-issues-and-limitations) or [Troubleshooting](hololens2-autopilot#troubleshooting).
+    - Connect your device to a Wi-Fi network in OOBE and then let it detect Autopilot experience automatically. This is the only time you will need to interact with OOBE until Autopilot experience completes on its own.
 
     - Connect your device with Ethernet using "USB-C to Ethernet" adapters for wired internet connectivity and let HoloLens 2 complete Autopilot experience automatically.
 
@@ -316,6 +312,12 @@ Verify in the Intune portal that device configuration has been successfully appl
 OOBE will wait indefinitely for Autopilot profile to download and following dialog will be presented. In order to remove effects of TenantLockdown, device must be enrolled with its original tenant first using Autopilot only and RequireNetworkInOOBE must be unset as described in previous step before restrictions introduced by TenantLockdown CSP are removed.
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
+
+#### Why did I not see Autopilot experience even though the Autopilot profile is assigned in Intune?
+
+By default, HoloLens 2 waits for 15 seconds to detect Autopilot after detecting the internet. If no autopilot profile is detected within 15 seconds, that means Autopilot was not discovered correctly, and you will see the EULA page.
+
+Reboot your device and try again. For more information, see [Known Issues and Limitations](hololens2-autopilot.md#known-issues-and-limitations) or [Troubleshooting](hololens2-autopilot.md#troubleshooting).
 
 ## Known issues and limitations
 
