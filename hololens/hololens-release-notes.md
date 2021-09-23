@@ -264,6 +264,7 @@ You can now use WDAC to block apps or processes from launching and continue to u
 - Updated the in-box version of Remote Assist that's installed on fresh flashes.
 - Fixed an issue where after first user sign-in, OOBE was being terminated in scenarios where AAD group based kiosk configurations were being used.
 - Corrected an issue around displaying update notifications and dialog prompts for device restart.
+- Fixed an issue where after device reboot, Xbox Controllers and other Bluetooth LE peripherals needed be paired again to connect.
 
 ## Windows Holographic, version 21H1 - September 2021 Update
 
