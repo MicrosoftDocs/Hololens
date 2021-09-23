@@ -7,7 +7,7 @@ author: qianw211
 ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/22/2021
+ms.date: 9/23/2021
 ms.reviewer: anisgup
 manager: sean-kerawala
 appliesto:
@@ -18,15 +18,20 @@ appliesto:
 
 ## Overview
 
-Businesses often invest in many shared HoloLens devices. It's common to share a HoloLens 2 device in some work environments such as clean rooms, surgical suites, etc. This article will outline the two different scenarios when using a HoloLens in a shared environment, and some best practices when doing so. How you use HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of some multi-user experiences:
+Businesses often invest in many shared HoloLens devices. How you use HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of some multi-user experiences:
 
-- Devices which are charged and have Dynamics 365 Guides and allow your employees to open the Settings app to make adjustments to Wi-Fi needed, but Page Settings Visibility policy is enabled to limit the amount pages available in the Settings app.
-- Devices which are for Remote Assist, and your line of business app which are rented to other companies. These devices have Kiosks that include only your app and Remote Assist. WDAC is used to keep the Settings app and Microsoft Edge from launching. Included with the rental is a USB-C battery pack to keep the devices at full charge over multiple shifts.
-- All your devices are set up for Autopilot and download all of your company apps. You've set up a few different Kiosk profiles, targeting different Azure AD groups. Each user logs into the HoloLens using FIDO2 keys and signing into their own Azure AD account, and is presented with a tailored experience.
+- A fleet of HoloLens 2 devices is set up via Windows Autopilot for HoloLens 2, with a consistent portfolio of company applications on each device. You've set up a few different Kiosk profiles, targeting different Azure AD groups. Each user logs into the HoloLens using FIDO2 keys and signing into their own Azure AD account, and is presented with a tailored experience.
+- An independent software vendor (ISV) rents HoloLens 2 Devices with D365 Remote Assist and their line of business (LOB) application to a customer's company. These devices are configured for Kiosks that include only their LOB app and Remote Assist, and are shared across multiple end users. WDAC is used to keep the Settings app and Microsoft Edge from launching. Included with the rental is a USB-C battery pack to keep the devices at full charge over multiple shifts.
+- An end user at an enterprise attempts to make adjustments to Bluetooth on the device so they can connect a new device, but the Page Settings Visibility policy is enabled to limit the Devices page from being viewed. They are still allowed access to other pages as needed, such as Wi-Fi so they can use Remote Assist in multiple locations with that same HoloLens.
 
 ## Best practices
 
-When planning to share your devices, there are several topics to consider how to best share devices.
+When planning to share your devices, there are several considerations to optimize your device environment based on your business needs.
+
+- [Identity and Authentication](#identity-and-authentication)
+- [Device Management](#device-management)
+- [Advanced device management - Kiosk and WDAC](#advanced-device-management---kiosk-and-wdac)
+- [Physical Management](#physical-management)
 
 ### [Identity and Authentication](hololens-identity.md)
 
@@ -45,7 +50,7 @@ In some cases, you may want to limit what applications can be accessed by the en
 
 You may also want to completely stop the launching of apps or services using [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to restrict apps. WDAC is different that Kiosk, because it doesn't change the UI of HoloLens but instead does not allow a blocked app to launch.
 
-[Page Settings Visibility](settings-uri-list.md) is another way to add restrictions to a device. In the event you need to grant users access to some pages in the Settings app, but not all you can use Page Settings Visibility to limit access. This is useful for example, if your users need to change the Wi-Fi, but you don't want them to access the Accounts page.
+[Page Settings Visibility](settings-uri-list.md) is another way to add restrictions to a device. In the event you need to grant users access to some pages in the Settings app, but not all you can use Page Settings Visibility to limit access. This is useful, for example, if your users need to change the Wi-Fi, but you don't want them to access the Accounts page.
 
 ### Physical Management
 
