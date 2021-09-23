@@ -263,7 +263,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 
 1. At the end of OOBE, you can sign in to the device by using your user name and password.
 
-   <br/><img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
+   <img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
 
 ## Tenant lockdown CSP and Autopilot
 
