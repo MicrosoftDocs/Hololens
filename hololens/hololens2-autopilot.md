@@ -21,7 +21,7 @@ manager: sekerawa
 
 To deploy at scale, we recommend getting started with Windows Autopilot. It’s considered “low touch” in that it dramatically simplifies setting up HoloLens for both IT and end users. 
 
-At a high level, an IT administrator will typically create the business-ready configurations and register HoloLens 2 devices on MDM portals. When HoloLens 2 devices boot with out-of-box experience (OOBE) and connects with the Internet, business-ready configurations for registered HoloLens 2 device are automatically downloaded and applied to make device business-ready without any user intervention.
+At a high level, an IT administrator will typically create the business-ready configurations and register HoloLens 2 devices on MDM portals. When HoloLens 2 devices boot with out-of-box experience (OOBE) and connects with the Internet, business-ready configurations for registered HoloLens 2 device are automatically downloaded and applied to make devices business-ready without any user intervention.
 
 For more information, see the [Overview of Windows Autopilot | Microsoft Docs](/mem/autopilot/windows-autopilot) article.
 
@@ -239,7 +239,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 
 1. Autopilot experience requires internet access. Use one of following options to provide internet access:
 
-    - Connect your device to a Wi-Fi network in OOBE and then let it detect Autopilot experience automatically. This is the only time you will need to interact with OOBE until Autopilot experience completes on its own. By default HoloLens 2 waits for 10 seconds to detect Autopilot after detecting internet. If no autopilot profile is detected within 10 seconds, OOBE will present EULA. If you encounter this scenario, reboot your device so another attempt can be made to detect Autopilot. Also note that OOBE can wait indefinitely for Autopilot only if TenantLockdown policy is set on the device.
+    - Connect your device to a Wi-Fi network in OOBE and then let it detect Autopilot experience automatically. This is the only time you will need to interact with OOBE until Autopilot experience completes on its own.
 
     - Connect your device with Ethernet using "USB-C to Ethernet" adapters for wired internet connectivity and let HoloLens 2 complete Autopilot experience automatically.
 
@@ -263,7 +263,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
 
 1. At the end of OOBE, you can sign in to the device by using your user name and password.
 
-   <br/><img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
+   <img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
 
 ## Tenant lockdown CSP and Autopilot
 
@@ -313,7 +313,13 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
 
-## Known Issues & limitations
+#### Why did I not see Autopilot experience even though the Autopilot profile is assigned in Intune?
+
+By default, HoloLens 2 waits for 15 seconds to detect Autopilot after detecting the internet. If no autopilot profile is detected within 15 seconds, that means Autopilot was not discovered correctly, and you will see the EULA page.
+
+Reboot your device and try again. For more information, see [Known Issues and Limitations](hololens2-autopilot.md#known-issues-and-limitations) or [Troubleshooting](hololens2-autopilot.md#troubleshooting).
+
+## Known issues and limitations
 
 - We are investigating an issue where device-context based application install configured in MEM does not apply to HoloLens. [Learn more about device context and user context installs.](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
 - While setting up Autopilot over Wi-Fi, there may be an instance where the Autopilot profile is not downloaded when Internet connection is first established. In this case End User License Agreement (EULA) is presented and the user has the option to proceed with non-Autopilot setup experience. To retry setting up with Autopilot, put the device to sleep and then power up, or reboot the device and let it try again.
