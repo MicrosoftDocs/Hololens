@@ -78,15 +78,15 @@ landingContent:
             url: hololens-common-scenarios-offline-secure.md
 
  # Card
-  - title: Mixed Reality Partner Program
+  - title: Mixed Reality Partner Resources
     linkLists:
       - linkListType: reference
         links:
-          - text: Mixed Reality Partner Program
+          - text: Mixed Reality Partner Resources
             url: https://www.microsoft.com/en-us/hololens/mixed-reality-partners
           - text: Mixed Reality Partner Forum
             url: https://techcommunity.microsoft.com/t5/mixed-reality-partners/bd-p/MixedRealityPartnersForum
-          - text: Mixed Reality Partners Blog
+          - text: Mixed Reality Partner Blog
             url: https://aka.ms/MRPartnerBlog
           - text: Start designing and prototyping
             url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/design
