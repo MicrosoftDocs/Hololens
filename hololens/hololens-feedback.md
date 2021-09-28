@@ -2,9 +2,9 @@
 title: Give us feedback
 description: Create actionable feedback for HoloLens and Windows Mixed Reality developers by using the Feedback Hub.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
-author: mattzmsft
-ms.author: mazeller
-ms.date: 12/17/2020
+author: evmill
+ms.author: v-evmill
+ms.date: 9/28/2021
 ms.custom: 
 - CI 116157
 - CSSTroubleshooting
@@ -12,7 +12,7 @@ audience: ITPro
 ms.prod: hololens
 ms.topic: article
 keywords: feedback, bug, issue, error, troubleshoot, help
-manager: jarrettr
+manager: ranjibb
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
@@ -25,11 +25,13 @@ Use the Feedback Hub to tell us which features you love, which features you coul
 
 Feedback Hub is an excellent way to alert the engineering team to bugs and to make sure that future updates are healthier and more consistently free of bugs. However, Feedback Hub does not provide a response. If you need immediate help, please file feedback, take note of the summary that you provided for your feedback, and then follow up with [HoloLens support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) - use the **Share** feature in Feedback Hub to share a direct link to the URL. Feedback Hub gets lots of data daily - the URL helps us identify your feedback quickly.
 
-> [!NOTE]  
->  
-> - Make sure you that you have the current version of Feedback Hub. To do this, select **Start** > **Microsoft Store**, and then select the ellipses (**...**). Then, select **Downloads and updates** > **Get updates**.  
->  
-> - To provide the best possible data for fixing issues, we highly recommended that you set your device telemetry to **Optional**. You can set this value during the Out-of-Box-Experience (OOBE), or by using the Settings app. To do this by using Settings, select **Start** > **Settings** > **Privacy** > **App Diagnostics** > **On**.
+> [!NOTE]
+> Make sure you that you have the current version of Feedback Hub. To do this, select **Start** > **Microsoft Store**, and then select the ellipses (**...**). Then, select **Downloads and updates** > **Get updates**.  
+
+> [!IMPORTANT]
+> To provide the best possible data for fixing issues, we highly recommended that you set your device telemetry to **Optional**. Failing to enable this extra telemetry could make your bug or feedback unactionable.
+>
+> You can set this value during the Out-of-Box-Experience (OOBE), or by using the Settings app. To do this by using Settings, select **Start** > **Settings** > **Privacy** > **Diagnostics & feedback** > **Optional diagnostics data** > **On**.
 
 ## Use the Feedback Hub
 
