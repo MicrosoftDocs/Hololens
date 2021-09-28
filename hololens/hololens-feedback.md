@@ -26,7 +26,7 @@ Use the Feedback Hub to tell us which features you love, which features you coul
 Feedback Hub is an excellent way to alert the engineering team to bugs and to make sure that future updates are healthier and more consistently free of bugs. However, Feedback Hub does not provide a response. If you need immediate help, please file feedback, take note of the summary that you provided for your feedback, and then follow up with [HoloLens support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) - use the **Share** feature in Feedback Hub to share a direct link to the URL. Feedback Hub gets lots of data daily - the URL helps us identify your feedback quickly.
 
 > [!NOTE]
-> Make sure you that you have the current version of Feedback Hub. To do this, select **Start** > **Microsoft Store**, and then select the ellipses (**...**). Then, select **Downloads and updates** > **Get updates**.  
+> Make sure you that you have the current version of Feedback Hub. To do this, select **Start** > **Microsoft Store**, and then select the ellipses (**...**). Then, select **Downloads and updates** > **Get updates**. Read more on [how to update store apps](holographic-store-apps.md#update-apps).
 
 > [!IMPORTANT]
 > To provide the best possible data for fixing issues, we highly recommended that you set your device telemetry to **Optional**. Failing to enable this extra telemetry could make your bug or feedback unactionable.
