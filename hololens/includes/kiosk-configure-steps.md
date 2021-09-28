@@ -2,35 +2,35 @@
 
 ### Microsoft Intune single app kiosk template
 
-1. Create a configuration profile <br> 
+1. Create a configuration profile <br>
 <kbd>
     <img alt="Create a configuration profile" src="../images/kiosk-steps/kiosk-template-sa-1.png"/>
 </kbd>
 
 <br>
 
-2. Choose kiosk template <br> 
+2. Choose kiosk template <br>
 <kbd>
     <img alt="Create a kiosk profile" src="../images/kiosk-steps/kiosk-template-sa-2.png" width="415" height="530" />
 </kbd>
 
 <br>
 
-3. Choose whether single app or multiple app kiosk and also choose kind of user targeting for kiosk mode <br> 
+3. Choose whether single app or multiple app kiosk and also choose kind of user targeting for kiosk mode <br>
 <kbd>
     <img alt="Select single app kiosk mode" src="../images/kiosk-steps/kiosk-template-sa-3.png"/>
 </kbd>
 
 <br>
 
-4. Choose the app to run in kiosk mode <br> 
+4. Choose the app to run in kiosk mode <br>
 <kbd>
     <img alt="Choose the app" src="../images/kiosk-steps/kiosk-template-sa-4.png"/>
 </kbd>
 
 <br>
 
-5. Leave rest of the options as is <br> 
+5. Leave rest of the options as is <br>
 <kbd>
     <img alt="Leave options" src="../images/kiosk-steps/kiosk-template-sa-5.png"/>
 </kbd>
@@ -48,37 +48,37 @@
 
 # [Microsoft Intune multi app kiosk template](#tab/uimak)
 
-## Microsoft Intune multi app kiosk template
+### Microsoft Intune multi app kiosk template
 
-1. Create a configuration profile <br> 
+1. Create a configuration profile <br>
 <kbd>
     <img alt="Create a configuration profile" src="../images/kiosk-steps/kiosk-template-sa-1.png"/>
 </kbd>
 
 <br>
 
-2. Choose kiosk template <br> 
+2. Choose kiosk template <br>
 <kbd>
     <img alt="Create a kiosk profile" src="../images/kiosk-steps/kiosk-template-sa-2.png" width="415" height="530" />
 </kbd>
 
 <br>
 
-3. Choose whether single app or multiple app kiosk and also choose kind of user targeting for kiosk mode <br> 
+3. Choose whether single app or multiple app kiosk and also choose kind of user targeting for kiosk mode <br>
 <kbd>
     <img alt="Select single app kiosk mode" src="../images/kiosk-steps/kiosk-template-mak-3.png"/>
 </kbd>
 
 <br>
 
-4. Choose the app(s) to run in kiosk mode <br> 
+4. Choose the app(s) to run in kiosk mode <br>
 <kbd>
     <img alt="Choose the app(s)" src="../images/kiosk-steps/kiosk-template-mak-4.png"/>
 </kbd>
 
 <br>
 
-5. Leave rest of the options as is <br> 
+5. Leave rest of the options as is <br>
 <kbd>
     <img alt="Leave options" src="../images/kiosk-steps/kiosk-template-sa-5.png"/>
 </kbd>
@@ -98,7 +98,7 @@
 
 # [Microsoft Intune custom template](#tab/intunecustom)
 
-## Microsoft Intune custom template
+### Microsoft Intune custom template
 
 1. Create xml configuration for your desired kiosk experience. See [examples](../hololens-kiosk-reference.md#kiosk-xml-code-samples) here to begin.
 
@@ -142,7 +142,7 @@
 
 # [Runtime provisioning - Multi app](#tab/ppkgmak)
 
-## Runtime provisioning - Multi app
+### Runtime provisioning - Multi app
 
 1. Create xml configuration for your desired kiosk experience. See [examples](../hololens-kiosk-reference.md#kiosk-xml-code-samples) here to begin.
 
@@ -208,7 +208,7 @@
 
 # [Runtime provisioning - Single app](#tab/ppkgsak)
 
-## Runtime provisioning - Single app
+### Runtime provisioning - Single app
 
 1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
