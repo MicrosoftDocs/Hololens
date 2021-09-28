@@ -1,6 +1,6 @@
 # [Microsoft Intune single app kiosk template](#tab/uisak)
 
-## Microsoft Intune single app kiosk template
+### Microsoft Intune single app kiosk template
 
 1. Create a configuration profile <br> 
 <kbd>
