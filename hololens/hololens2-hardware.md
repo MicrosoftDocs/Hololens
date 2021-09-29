@@ -43,7 +43,7 @@ A user account is required to use HoloLens 2.
 
 ### Power Supply details
 
-The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18W charger.  Its supplies 9V at 2A.
+The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18W charger.  It supplies 9V at 2A.
 
 Charging rate and speed may vary depending on the environment in which the device is running.
 

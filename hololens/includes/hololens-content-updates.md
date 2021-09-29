@@ -2,6 +2,20 @@
 
 
 
+## Week of September 20, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/20/2021 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+| 9/21/2021 | [Windows Defender Application Control (WDAC)](/hololens/windows-defender-application-control-wdac) | modified |
+| 9/21/2021 | [Common Deployment Scenarios](/hololens/hololens-requirements) | modified |
+| 9/22/2021 | [Microsoft Store for Business](/hololens/app-deploy-store-business) | modified |
+| 9/22/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 9/23/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 9/23/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
+
+
 ## Week of September 13, 2021
 
 
