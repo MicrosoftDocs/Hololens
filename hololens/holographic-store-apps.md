@@ -141,16 +141,16 @@ Automatic updates apply to Microsoft Store or Microsoft Store for Business apps,
 
 Automatic app updates are scheduled to occur daily (approximately every 24 hours) subject to network availability. Keep your device either active or plugged into AC to receive updates.
 
-The update process is broken down into phases:  Scan -> Download -> Stage -> Reboot -> Install. Even if updates are downloaded during active daily usage, the process will not resume until the app being updated is no longer in use.
+The update process is broken down into phases:  Scan -> Download -> Stage -> Restart app -> Install. Even if updates are downloaded during active daily usage, the process will not resume until the app being updated is no longer in use.
 
 > [!TIP]
 > If possible, charge your device overnight while it is connected to the corporate network. If updates can be downloaded and installed overnight, they are less likely to interrupt active device usage.
 
 #### How IT administrators can control automatic updates
 
-IT administrators can control automatic app updates through the [ApplicationManagement/AllowAppStoreAutoUpdate](windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) policy. This policy allows them to enable or disable automatic app updates completely, but it does not control when updates occur.
+IT administrators can control automatic app updates through the [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) policy. This policy allows them to enable or disable automatic app updates completely, but it does not control when updates occur.
 
-As of [21H2](hololens-release-notes.md#windows-holographic-version-21h1), IT administrators can also use the [ScheduleForceRestartForUpdateFailures](windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) policy to control when apps that were in use, but could not be updated in previous attempts, should be forcibly restarted.
+As of [21H2](hololens-release-notes.md#windows-holographic-version-21h1), IT administrators can also use the [ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) policy to control when apps that were in use, but could not be updated in previous attempts, should be forcibly restarted.
 
 ## Uninstall apps
 
