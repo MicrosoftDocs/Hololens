@@ -139,7 +139,7 @@ Automatic updates apply to Microsoft Store or Microsoft Store for Business apps,
 
 #### How automatic updates work
 
-Automatic app updates are scheduled to occur daily (approximately every 24 hours) subject to network availability. Keep your device either active or plugged into AC to receive updates. Even if updates are downloaded during active daily usage, the process will not resume until the app being updated is no longer in use.
+Automatic app updates are scheduled to occur daily (approximately every 24 hours) subject to network availability. Keep your device either active or plugged into AC to receive updates. Even if app updates are downloaded during active daily usage, they will only be applied when the app to be updated is no longer in use.
 
 > [!TIP]
 > If possible, charge your device overnight while it is connected to the corporate network. If updates can be downloaded and installed overnight, they are less likely to interrupt active device usage.
