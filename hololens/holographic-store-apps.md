@@ -93,8 +93,8 @@ Pre-Requisites: User has already joined the HoloLens 2 device to their work tena
 
     ![All apps showing both apps.](images/office-pwa-5.jpg)
 
-> [!NOTE]
-> The “Microsoft OneDrive” is the PWA app where as “OneDrive” is the older UWP.
+    > [!NOTE]
+    > The “Microsoft OneDrive” is the PWA app where as “OneDrive” is the older UWP.
 
 1. You'll then be able to see your OneDrive files.
 
