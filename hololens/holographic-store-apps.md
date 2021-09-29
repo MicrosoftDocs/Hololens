@@ -132,23 +132,25 @@ To update an app you installed from the Microsoft Store, you can update the app 
 
 ## Automatic app updates
 
-Automatic updates apply only to the Microsoft Store for Business apps, and they can be updated automatically only if they have been installed directly from the Store. If installed from Intune, IT can push updates down from MDM by syncing with the Microsoft Store for Business for the latest available version for the app.
+Automatic updates apply to Microsoft Store or Microsoft Store for Business apps, and they can be updated automatically only if they have been installed directly from the Store. If installed from Intune, IT can push updates down from MDM by syncing with the Microsoft Store for Business for the latest available version for the app.
 
 > [!NOTE]
-For apps sourced from the Microsoft Store for Business, you must authenticate with the same tenant that is associated with the Microsoft Store for Business catalog used on the device.
+> For apps sourced from the Microsoft Store for Business, you must authenticate with the same tenant that is associated with the Microsoft Store for Business catalog used on the device.
 
 ### How automatic updates work
 
-Automatic app updates are scheduled to occur daily (approximately every 24 hours) subject to network availability. Keep your device either active or plugged in to AC to receive the update. If the device is not active or connected when the update starts, it will occur immediately after you sign in, or after network connectivity becomes available. Even if updates are downloaded during active daily usage, they may not be applied because the app being updated is in use. 
+Automatic app updates are scheduled to occur daily (approximately every 24 hours) subject to network availability. Keep your device either active or plugged in to AC to receive the update. 
+
+The update process is broken down into phases: Scan -> Download -> Stage -> Reboot -> Install. Even if updates are downloaded during active daily usage, the process will not resume until the app being updated is no longer in use.
 
 > [!TIP]
 > If possible, charge your device overnight while it is connected to the corporate network. If updates can be downloaded and installed overnight, they are less likely to interrupt active device usage. 
 
 ### How IT administrators can control automatic updates
 
-IT administrators can control automatic app updates through the **ApplicationManagement/AllowAppStoreAutoUpdate** policy. This policy allows them to either enable or disable automatic app update completely, but it does not control when updates occur.
+IT administrators can control automatic app updates through the [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) policy. This policy allows them to either enable or disable automatic app update completely, but it does not control when updates occur.
 
-As of 21H2, IT administrators can also use the **ScheduleForceRestartForUpdateFailures** policy to control when apps should be forcibly restarted if they were in use and could not be updated in previous attempts.
+As of 21H2, IT administrators can also use the [ScheduleForceRestartForUpdateFailures](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) policy to control when apps should be forcibly restarted if they were in use and could not be updated in previous attempts.
 
 ## Uninstall apps
 
