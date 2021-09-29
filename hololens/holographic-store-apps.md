@@ -148,9 +148,9 @@ The update process is broken down into phases: Scan -> Download -> Stage -> Rebo
 
 ### How IT administrators can control automatic updates
 
-IT administrators can control automatic app updates through the [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) policy. This policy allows them to either enable or disable automatic app update completely, but it does not control when updates occur.
+IT administrators can control automatic app updates through the [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) policy. This policy allows them to either enable or disable automatic app updates completely, but it does not control when updates occur.
 
-As of 21H2, IT administrators can also use the [ScheduleForceRestartForUpdateFailures](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) policy to control when apps should be forcibly restarted if they were in use and could not be updated in previous attempts.
+As of [21H2](hololens-release-notes.md#windows-holographic-version-21h1), IT administrators can also use the [ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) policy to control when apps that were in use and could not be updated in previous attempts should be forcibly restarted.
 
 ## Uninstall apps
 
