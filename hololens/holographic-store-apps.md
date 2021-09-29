@@ -130,6 +130,21 @@ To update an app you installed from the Microsoft Store, you can update the app 
 >
 > If you would like to update a custom app that has been sideloaded or deployed, you will need to use the same method with the updated version of your app. To learn more about installing and running custom apps, read [custom holographic applications](holographic-custom-apps.md).
 
+### Automatic app updates
+
+Automatic app updates are scheduled to occur daily (approximately every 24 hours) subject to network availability. Keep your device either active or plugged in to AC to receive the automatic update. 
+
+> [!TIP]
+> If possible, charge your device overnight while it is connected to the corporate network. If updates can occur overnight, they are less likely to interrupt active device usage.
+
+If the device is not active or connected when the update starts, it will occur immediately after you sign in, or after network connectivity becomes available.
+
+> [!NOTE]
+> For apps sourced from the Microsoft Store for Business, you must authenticate with the same tenant that is associated with the Microsoft Store for Business catalog > > used on the device.
+
+
+
+
 ## Uninstall apps
 
 There are three ways to uninstall applications. You can uninstall applications through the Microsoft Store, Start menu or from Settings.
