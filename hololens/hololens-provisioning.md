@@ -35,10 +35,10 @@ Some of the HoloLens configurations that you can apply in a provisioning package
 
 The HoloLens wizard helps you configure the following settings in a provisioning package:
 
-- Upgrade HoloLens 1st gen. to the enterprise edition
+- Upgrade HoloLens 1 to the Enterprise edition
 
     > [!NOTE]
-    > These settings can only be applied to HoloLens 1 if the provisioning package includes an edition upgrade license to Windows Holographic for Business, or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
+    > These settings can only be applied to HoloLens 1 if the provisioning package includes an edition upgrade license to Windows Holographic for Business, or if the device has already been [upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
 - Configure the HoloLens first experience (OOBE)
 - Configure the Wi-Fi network
