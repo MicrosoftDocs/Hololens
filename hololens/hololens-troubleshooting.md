@@ -3,7 +3,7 @@ title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 12/02/2019
+ms.date: 9/30/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
@@ -25,6 +25,7 @@ This article describes how to resolve several common HoloLens issues.
 <a id="list"></a>
 
 **Known Issues**
+- [Every time the power goes to 18 percent, the device suddenly shuts down automatically]
 - [Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
@@ -54,6 +55,16 @@ This article describes how to resolve several common HoloLens issues.
 - [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
 - [USB-C Microphone isn't working](#usb-c-microphone-isnt-working)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
+
+## Every time the power goes to 18 percent, the device suddenly shuts down automatically
+
+This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
+
+1. Ensure optional/full diagnostics/telemetry are enabled on your device(s)
+1. Reproduce the problem
+1. Submit a [Feedback Hub](hololens-feedback.md) issue
+1. Share the Feedback issue URL
+1. [Contact support](http://aka.ms/hololenssupport)
 
 ## Remote Assist video freezes after 20 minutes
 
