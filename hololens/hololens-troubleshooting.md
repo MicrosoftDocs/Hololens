@@ -25,7 +25,7 @@ This article describes how to resolve several common HoloLens issues.
 <a id="list"></a>
 
 **Known Issues**
-- [Every time the power goes to 18 percent, the device suddenly shuts down automatically]
+- [Every time the power goes to 18 percent, the device suddenly shuts down automatically](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
@@ -58,13 +58,13 @@ This article describes how to resolve several common HoloLens issues.
 
 ## Every time the power goes to 18 percent, the device suddenly shuts down automatically
 
-This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
+There is a known known issue where when the device reaches 18% battery, it will unexpectedly shut down. This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
 
 1. Ensure optional/full diagnostics/telemetry are enabled on your device(s)
 1. Reproduce the problem
 1. Submit a [Feedback Hub](hololens-feedback.md) issue
 1. Share the Feedback issue URL
-1. [Contact support](http://aka.ms/hololenssupport)
+1. [Contact support](https://aka.ms/hololenssupport)
 
 ## Remote Assist video freezes after 20 minutes
 
