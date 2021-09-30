@@ -4,13 +4,13 @@ description: Windows provisioning makes it easy for IT administrators to configu
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
-ms.author: dansimp
+ms.author: v-beehanson
 ms.topic: article
 ms.custom: 
 - CI 115190
 - CSSTroubleshooting
 ms.localizationpriority: medium
-ms.date: 10/13/2020
+ms.date: 9/30/2021
 ms.reviewer: Teresa-Motiv
 manager: laurawi
 appliesto:
@@ -20,11 +20,11 @@ appliesto:
 
 # Configure HoloLens by using a provisioning package
 
-[Windows provisioning](/windows/configuration/provisioning-packages/provisioning-packages) makes it easy for IT administrators to configure end-user devices without imaging. Windows Configuration Designer is a tool for configuring images and runtime settings which are then built into provisioning packages.
+[Windows provisioning](/windows/configuration/provisioning-packages/provisioning-packages) makes it easy for IT administrators to configure end-user devices without imaging. Windows Configuration Designer is a tool for configuring images and runtime settings that are then built into provisioning packages.
 
 Some of the HoloLens configurations that you can apply in a provisioning package include the following:
 
-- Upgrade to [Windows Holographic for Business](hololens1-upgrade-enterprise.md)
+- Upgrade HoloLens 1 to [Windows Holographic for Business](hololens1-upgrade-enterprise.md)
 - Set up a local account
 - Set up a Wi-Fi connection
 - Apply certificates to the device
@@ -35,17 +35,17 @@ Some of the HoloLens configurations that you can apply in a provisioning package
 
 The HoloLens wizard helps you configure the following settings in a provisioning package:
 
-- Upgrade to the enterprise edition
+- Upgrade HoloLens 1st gen. to the enterprise edition
 
     > [!NOTE]
-    > This should only be used for HoloLens 1st gen devices. Settings in a provisioning package are only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
+    > These settings can only be applied to HoloLens 1 if the provisioning package includes an edition upgrade license to Windows Holographic for Business, or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
 - Configure the HoloLens first experience (OOBE)
 - Configure the Wi-Fi network
 - Enroll the device in Azure Active Directory, or create a local account
 - Add certificates
 - Enable Developer Mode
-- Configure kiosk mode by following out [detailed instructions](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens).
+- Configure kiosk mode by following our [detailed instructions](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens).
 
 > [!WARNING]
 > You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
@@ -55,17 +55,13 @@ Provisioning packages can include management instructions and policies, custom n
 > [!TIP]
 > Use the desktop wizard to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
 
-## Steps for creating provisioning packages
+## Download and install Windows Configuration Manager
 
-1. **Option 1:** [From Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). This includes HoloLens 2 capabilities.
-2. **Option 2:** [From the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). If you install Windows Configuration Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box. This option does not include HoloLens 2 capabilities.
+Download Windows Configuration Manager [from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). It includes HoloLens 2 capabilities.
 
-> [!NOTE]
-> If you know you'll be using an offline PC that needs access to Windows Configuration Designer, follow the [offline app install(hololens-recovery.md#downloading-arc-without-using-the-app-store) instructions for Advanced Recovery Companion. Make Windows Configuration Designer your selection. 
+If you know you'll be using an offline PC, first download and install the [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit), then select **Configuration Designer** from the **Select the features you want to install** dialog box. Because it does not include HoloLens 2 capabilities, follow the [offline app installation instructions](hololens-recovery.md#downloading-arc-without-using-the-app-store) for Advanced Recovery Companion, then select **Make Windows Configuration Designer**.
 
-### 2. Create the provisioning package
-
-Use the Windows Configuration Designer tool to create a provisioning package.
+## Create the provisioning package
 
 1. Open Windows Configuration Designer (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
@@ -80,7 +76,7 @@ Use the Windows Configuration Designer tool to create a provisioning package.
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-### Configure settings
+## Configure settings
 
 <table>
 <tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Browse to and select the enterprise license file to upgrade the HoloLens edition.</br></br>You can also toggle <strong>Yes</strong> or <strong>No</strong> to hide parts of the first experience.</br></br>To set up the device without the need to connect to a Wi-Fi network, toggle <strong>Skip Wi-Fi setup</strong> to <strong>On</strong>.</br></br>Select a region and timezone in which the device will be used. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
