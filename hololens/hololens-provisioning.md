@@ -94,8 +94,6 @@ To set up the device without the need to connect to a Wi-Fi network, toggle **Sk
 
 #### 2. Set up network
 
-   ![]()
-
 <kbd>
 <img alt="Enter network SSID and type" src="images/set-up-network-details-desktop.png" width="445" height="560" />
 </kbd>
