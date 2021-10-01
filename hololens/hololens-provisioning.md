@@ -20,7 +20,7 @@ appliesto:
 
 # Configure HoloLens by using a provisioning package
 
-[Windows provisioning](/windows/configuration/provisioning-packages/provisioning-packages) makes it easy for IT administrators to configure end-user devices without imaging. Windows Configuration Designer is a tool for configuring images and runtime settings that are then built into provisioning packages.
+[Windows provisioning](/windows/configuration/provisioning-packages/provisioning-packages) makes it easy for IT administrators to configure end user devices without imaging. Windows Configuration Designer is a tool for configuring images and runtime settings that are then built into provisioning packages.
 
 Some of the HoloLens configurations that you can apply in a provisioning package include the following:
 
@@ -38,7 +38,7 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 - Upgrade HoloLens 1 to the Enterprise edition
 
     > [!NOTE]
-    > These settings can only be applied to HoloLens 1 if the provisioning package includes an edition upgrade license to Windows Holographic for Business, or if the device has [already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
+    > These settings can only be applied to HoloLens 1 if the provisioning package includes an edition upgrade license to [Windows Holographic for Business](hololens1-upgrade-enterprise.md), or if the device has already been upgraded to Windows Holographic for Business.
 
 - Configure the HoloLens first experience (OOBE)
 - Configure the Wi-Fi network
@@ -53,7 +53,7 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 Provisioning packages can include management instructions and policies, custom network connections and policies, and more.
 
 > [!TIP]
-> Use the desktop wizard to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
+> Use the desktop wizard to create a package with the common settings, then switch to the advanced editor to add other settings, apps, and policies.
 
 ## Download Windows Configuration Manager
 
@@ -74,6 +74,8 @@ If you know you'll be using an offline PC, first download and install the [Windo
    ![ICD start options.](images/example-project.png)
 
 1. Read the instructions on the **Getting started** page and select **Next**. The pages for desktop provisioning walk you through the following steps.
+
+   ![Getting started.](images/WCD_steps.png)
   
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
@@ -86,7 +88,7 @@ If you know you'll be using an offline PC, first download and install the [Windo
 
 Browse to and select the Enterprise license file to upgrade the HoloLens edition. You can also toggle **Yes** or **No** to hide parts of the first experience.
 
-To set up the device without the need to connect to a Wi-Fi network, toggle **Skip Wi-Fi setup** to **On**. Select a region and timezone in which the device will be used.
+To set up the device without the need to connect to a Wi-Fi network, toggle **Skip Wi-Fi setup** to **On**, then select a region and timezone in which the device will be used.
 
 ### Set up network
 
@@ -98,11 +100,14 @@ In this section, you can enter the details of the Wi-Fi wireless network that th
 
    ![Join  Azure AD or create a local account.](images/account-management-details.png)
 
-You can enroll the device in Azure Active Directory, or create a local account on the device. Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup) set up Azure AD join in your organization. 
+You can enroll the device in Azure Active Directory, or create a local account on the device. Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](https://docs.microsoft.com/en-us/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) set up Azure AD join in your organization. 
 
 The **maximum number of devices per user** setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. Set an expiration date for the token (maximum is 30 days from the date you get the token). Select **Get bulk token**. In the **Let&#39;s get you signed in** window, enter an account that has permissions to join a device to Azure AD, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions. 
 
-To create a local account, select that option and enter a user name and password. **Important:** For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in.
+To create a local account, select that option and enter a user name and password. 
+
+> [!IMPORTANT]
+> For Windows 10, version 1607 only), if you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and you will be unable to sign in.
 
 ### Add certificates
 
@@ -127,7 +132,7 @@ After you're done, select **Create**. It only takes a few seconds. When the pack
 ### Create a provisioning package for HoloLens by using advanced provisioning
 
    > [!NOTE]
-   > A provisioning package that you create in **Advanced provisioning** does not need to include an edition upgrade license to Windows Holographic for Business to successfully apply to a HoloLens (1st gen). [See more on Windows Holographic for Business for HoloLens (1st gen)](hololens1-upgrade-enterprise.md).
+   > To successfully apply a provisioning package that you create in **Advanced provisioning** to a HoloLens (1st gen), you do not need to include an edition upgrade license to Windows Holographic for Business. [See more on Windows Holographic for Business for HoloLens (1st gen)](hololens1-upgrade-enterprise.md).
 
 1. On the Windows Configuration Designer start page, select **Advanced provisioning**.
 1. In the **Enter project details** window, specify a name for your project and the location for your project. Optionally, enter a brief description to describe your project.
@@ -186,7 +191,7 @@ HoloLens 2 devices on [Windows Holographic version 20H2](hololens-release-notes.
 
 1. Use the USB cable to connect the device to a PC (or USB drive for HoloLens 2 as mentioned above), and then start the device. Do not continue past the **First interactable moment** page of OOBE.
     - On HoloLens (1st gen), this page contains a blue box.
-    - On HoloLens 2, this page contains the hummingbird.
+    - On HoloLens 2, this page contains a hummingbird.
 
 1. Briefly press and release the **Volume Down** and **Power** buttons simultaneously.
 
@@ -205,19 +210,21 @@ HoloLens 2 devices on [Windows Holographic version 20H2](hololens-release-notes.
 
 ### Auto-launch provisioning from USB
 
-- Automated processes allowing for less user interaction, when USB Drives with Provisioning Packages are used during OOBE.
+These automated processes allow for less user interaction when USB Drives with Provisioning Packages are used during OOBE.
 
-Before this release users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now users can skip the button combination, by using a Provisioning Package on a USB storage drive.
+Before this release, users had to launch the provisioning screen manually during OOBE to provision using a button combination. Now they can skip the button combination by using a Provisioning Package on a USB storage drive.
 
-1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment
+1. Plug in the USB drive with the provisioning package during OOBE’s first interactable moment.
 1. When the device is ready to be provisioned it will automatically open the prompt with the provisioning page.
 
-Note: If a USB drive is left plugged in while the device is booting then OOBE will enumerate existing USB storage device, as well as watch for additional ones being plugged in.
+> [!NOTE]
+> If a USB drive is left plugged in while the device is booting, OOBE will enumerate existing USB storage device and watch for additional ones being plugged in.
 
 Read up on [applying provisioning packages during OOBE](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
 ### Auto-confirm provisioning packages in OOBE
-- Automated process allowing for less user interaction, when the Provisioning Package page is displayed it will automatically apply all packages listed.
+
+These automated processes allow for less user interaction, when the Provisioning Package page is displayed it will automatically apply all packages listed.
 
 When the provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
 
