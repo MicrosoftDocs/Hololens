@@ -90,7 +90,7 @@ To set up the device without the need to connect to a Wi-Fi network, toggle **Sk
 
 ### Set up network
 
-   ![Set up network.](images/set-up-network-details-desktop.png)
+   ![Enter network SSID and type.](images/set-up-network-details-desktop.png)
 
 In this section, you can enter the details of the Wi-Fi wireless network that the device should automatically connect to. To do this, select **On**, enter the SSID, the network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.
 
@@ -102,86 +102,77 @@ You can enroll the device in Azure Active Directory, or create a local account o
 
 The **maximum number of devices per user** setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. Set an expiration date for the token (maximum is 30 days from the date you get the token). Select **Get bulk token**. In the **Let&#39;s get you signed in** window, enter an account that has permissions to join a device to Azure AD, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions. 
 
-To create a local account, select that option and enter a user name and password. **Important:** For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. 
+To create a local account, select that option and enter a user name and password. **Important:** For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in.
 
 ### Add certificates
 
-   ![Add certificates.](images/add-certificates.png)
-
-### Set up for developers
-
-   ![ICD start options.](images/Example_project.png)
-   
-### Finish
-
-
-<img src="" alt="Enter network SSID and type"/>
-
-
-
-
-images/add-certificates.png" alt=""/>
+   ![Add a certificate.](images/add-certificate-details.png)
 
 To provision the device with a certificate, click **Add a certificate**. Enter a name for the certificate, and then browse to and select the certificate to be used.
 
-<img src="images/add-certificates-details.png" alt="add a certificate"/>
-style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Toggle <strong>Yes</strong> or <strong>No</strong> to enable Developer Mode on the HoloLens. <a href="/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Learn more about Developer Mode.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>Do not set a password to protect your provisioning package. If the provisioning package is protected by a password, provisioning the HoloLens device will fail.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
-</table>
+### Set up for developers
+
+   ![Developer setup.](images/developer-setup-details.png)
+
+Toggle **Yes** or **No** to enable Developer Mode on the HoloLens. [Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+
+### Finish
+
+   ![Finish details.](images/finish-details.png)
+
+Do not set a password to protect your provisioning package. If the provisioning package is protected by a password, provisioning the HoloLens device will fail.
 
 After you're done, select **Create**. It only takes a few seconds. When the package is built, the location where the package is stored is displayed as a hyperlink at the bottom of the page.
 
 ### Create a provisioning package for HoloLens by using advanced provisioning
 
 > [!NOTE]
-> A provisioning package that you create in **Advanced provisioning** does not need to include an edition upgrade license to Windows Holographic for Business to succesfully apply to a HoloLens (1st gen). [See more on Windows Holographic for Business for HoloLens (1st gen)](hololens1-upgrade-enterprise.md).
+> A provisioning package that you create in **Advanced provisioning** does not need to include an edition upgrade license to Windows Holographic for Business to successfully apply to a HoloLens (1st gen). [See more on Windows Holographic for Business for HoloLens (1st gen)](hololens1-upgrade-enterprise.md).
 
 1. On the Windows Configuration Designer start page, select **Advanced provisioning**.
-2. In the **Enter project details** window, specify a name for your project and the location for your project. Optionally, enter a brief description to describe your project.
+1. In the **Enter project details** window, specify a name for your project and the location for your project. Optionally, enter a brief description to describe your project.
 
-3. Select **Next**.
+1. Select **Next**.
 
-4. In the **Choose which settings to view and configure** window, select **Windows 10 Holographic**, and then select **Next**.
+1. In the **Choose which settings to view and configure** window, select **Windows 10 Holographic**, and then select **Next**.
 
-5. Select **Finish**.
+1. Select **Finish**.
 
-6. Expand **Runtime settings** and customize the package by using any of the settings [described later in this article](#what-you-can-configure).
+1. Expand **Runtime settings** and customize the package by using any of the settings [described later in this article](#what-you-can-configure).
 
     > [!IMPORTANT]
     > (For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery).
 
-7. Select **File** > **Save**.
+1. Select **File** > **Save**.
 
-8. Read the warning that project files may contain sensitive information, and select **OK**.
+1. Read the warning that project files may contain sensitive information, and select **OK**.
 
     > [!IMPORTANT]
     > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-9. Select **Export** > **Provisioning package**.
+1. Select **Export** > **Provisioning package**.
 
-10. Change **Owner** to **IT Admin**. This sets the precedence of this provisioning package higher than provisioning packages applied to this device from other sources. Select **Next**.
+1. Change **Owner** to **IT Admin**. This sets the precedence of this provisioning package higher than provisioning packages applied to this device from other sources. Select **Next**.
 
-11. Set a value for **Package Version**.
+1. Set a value for **Package Version**.
 
     > [!TIP]
     > You can make changes to existing packages and change the version number to update previously applied packages.
 
-12. On the **Select security details for the provisioning package**, select **Next**.
+1. On the **Select security details for the provisioning package**, select **Next**.
 
     > [!WARNING]
     > If you encrypt the provisioning package, provisioning the HoloLens device will fail.  
 
-13. Select **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows Configuration Designer uses the project folder as the output location.
+1. Select **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows Configuration Designer uses the project folder as the output location.
 
     Optionally, you can select **Browse** to change the default output location.
 
-14. Select **Next**.
+1. Select **Next**.
 
-15. Select **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status.
+1. Select **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status.
 
-16. When the build completes, select **Finish**.
-
-<span id="apply" />
+1. When the build completes, select **Finish**.
 
 ## Apply a provisioning package to HoloLens during setup
 
@@ -197,17 +188,17 @@ HoloLens 2 devices on [Windows Holographic version 20H2](hololens-release-notes.
     - On HoloLens (1st gen), this page contains a blue box.
     - On HoloLens 2, this page contains the hummingbird.
 
-2. Briefly press and release the **Volume Down** and **Power** buttons simultaneously.
+1. Briefly press and release the **Volume Down** and **Power** buttons simultaneously.
 
-3. HoloLens shows up as a device in File Explorer on the PC.
+1. HoloLens shows up as a device in File Explorer on the PC.
 
-4. In File Explorer, drag and drop the provisioning package (.ppkg) onto the device storage.
+1. In File Explorer, drag and drop the provisioning package (.ppkg) onto the device storage.
 
-5. Briefly press and release the **Volume Down** and **Power** buttons simultaneously again while on the **First interactable moment** page of OOBE.
+1. Briefly press and release the **Volume Down** and **Power** buttons simultaneously again while on the **First interactable moment** page of OOBE.
 
-6. The device asks you if you trust the package and would like to apply it. Confirm that you trust the package.
+1. The device asks you if you trust the package and would like to apply it. Confirm that you trust the package.
 
-7. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with OOBE.
+1. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with OOBE.
 
 > [!NOTE]
 > If the device was purchased before August 2016, you will need to sign in to the device by using a Microsoft account, get the latest operating system update, and then reset the operating system in order to apply the provisioning package.
@@ -252,13 +243,13 @@ Your device is now configured and will display the Provisioning Successful scree
 
 On your PC, follow these steps:
 1. Create a provisioning package as described at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md).
-2. Connect the HoloLens device to a PC by using a USB cable. HoloLens shows up as a device in File Explorer on the PC.
-3. Drag and drop the provisioning package to the Documents folder on the HoloLens.
+1. Connect the HoloLens device to a PC by using a USB cable. HoloLens shows up as a device in File Explorer on the PC.
+1. Drag and drop the provisioning package to the Documents folder on the HoloLens.
 
 On your HoloLens, follow these steps:
 1. Go to **Settings** > **Accounts** > **Access work or school**. 
-2. In **Related Settings**, select **Add or remove a provisioning package**.
-3. On the next page, select **Add a package** to launch the file picker and select your provisioning package. If the folder is empty, make sure you select **This Device** and select **Documents**.
+1. In **Related Settings**, select **Add or remove a provisioning package**.
+1. On the next page, select **Add a package** to launch the file picker and select your provisioning package. If the folder is empty, make sure you select **This Device** and select **Documents**.
 
 After your package has been applied, it shows up in the list of **Installed packages**. To view the package details or to remove the package from the device, select the listed package.
 
