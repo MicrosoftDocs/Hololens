@@ -71,7 +71,7 @@ If you know you'll be using an offline PC, first download and install the [Windo
 
 1. Name your project and select **Finish**.
 
-   ![ICD start options.](images/Example_project.png)
+   ![ICD start options.](images/example-project.png)
 
 1. Read the instructions on the **Getting started** page and select **Next**. The pages for desktop provisioning walk you through the following steps.
   
@@ -106,7 +106,7 @@ To create a local account, select that option and enter a user name and password
 
 ### Add certificates
 
-   ![Add a certificate.](images/add-certificate-details.png)
+   ![Add a certificate.](images/add-certificates-details.png)
 
 To provision the device with a certificate, click **Add a certificate**. Enter a name for the certificate, and then browse to and select the certificate to be used.
 
