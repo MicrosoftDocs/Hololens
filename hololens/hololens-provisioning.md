@@ -85,7 +85,7 @@ If you know you'll be using an offline PC, first download and install the [Windo
 #### 1. Set up device
 
 <kbd>
-<img alt="Select enterprise license file and configure OOBE" src="images/set-up-device-details.png" width="445" height="560" />
+<img alt="Select enterprise license file and configure OOBE" src="images/set-up-device-details.png" width="495" height="610" />
 </kbd>
 
 Browse to and select the Enterprise license file to upgrade the HoloLens edition. You can also toggle **Yes** or **No** to hide parts of the first experience.
