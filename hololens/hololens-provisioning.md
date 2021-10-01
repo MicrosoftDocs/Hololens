@@ -59,37 +59,79 @@ Provisioning packages can include management instructions and policies, custom n
 
 Download Windows Configuration Manager [from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). It includes HoloLens 2 capabilities.
 
-If you know you'll be using an offline PC, first download and install the [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit), then select **Configuration Designer** from the **Select the features you want to install** dialog box. Because ADK does not include HoloLens 2 capabilities, follow the [offline app installation instructions](hololens-recovery.md#download-arc-without-using-the-app-store) for Advanced Recovery Companion, then select **Make Windows Configuration Designer**.
+If you know you'll be using an offline PC, first download and install the [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit), then select **Configuration Designer** from the **Select the features you want to install** dialog box. ADK does not include HoloLens 2 capabilities, so follow the [offline app installation instructions](hololens-recovery.md#download-arc-without-using-the-app-store) for Advanced Recovery Companion, then select **Make Windows Configuration Designer**.
 
 ## Create the provisioning package
 
 1. Open Windows Configuration Designer (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
-2. Select **Provision HoloLens devices**.
+   ![Enter project details.](images/icd-create-options-1703.png)
 
-   ![ICD start options.](images/icd-create-options-1703.png)
+1. Select **Provision HoloLens devices**, select your HoloLens device, and click **Next**.
 
-3. Name your project and select **Finish**.
+1. Name your project and select **Finish**.
 
-4. Read the instructions on the **Getting started** page and select **Next**. The pages for desktop provisioning walk you through the following steps.
+   ![ICD start options.](images/Example_project.png)
+
+1. Read the instructions on the **Getting started** page and select **Next**. The pages for desktop provisioning walk you through the following steps.
   
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 ## Configure settings
 
-<table>
-<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Browse to and select the enterprise license file to upgrade the HoloLens edition.</br></br>You can also toggle <strong>Yes</strong> or <strong>No</strong> to hide parts of the first experience.</br></br>To set up the device without the need to connect to a Wi-Fi network, toggle <strong>Skip Wi-Fi setup</strong> to <strong>On</strong>.</br></br>Select a region and timezone in which the device will be used. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>In this section, you can enter the details of the Wi-Fi wireless network that the device should automatically connect to. To do this, select <strong>On</strong>, enter the SSID, the network type (<strong>Open</strong> or <strong>WPA2-Personal</strong>), and (if <strong>WPA2-Personal</strong>) the password for the wireless network.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>You can enroll the device in Azure Active Directory, or create a local account on the device</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, <a href="/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup)">set up Azure AD join in your organization</a>. The <strong>maximum number of devices per user</strong> setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. Set an expiration date for the token (maximum is 30 days from the date you get the token). Select <strong>Get bulk token</strong>. In the <strong>Let&#39;s get you signed in</strong> window, enter an account that has permissions to join a device to Azure AD, and then the password. Select <strong>Accept</strong> to give Windows Configuration Designer the necessary permissions. </br></br>To create a local account, select that option and enter a user name and password. </br></br><strong>Important:</strong> <br />(For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the <strong>Settings</strong> app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>To provision the device with a certificate, click <strong>Add a certificate</strong>. Enter a name for the certificate, and then browse to and select the certificate to be used.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
-<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Toggle <strong>Yes</strong> or <strong>No</strong> to enable Developer Mode on the HoloLens. <a href="/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Learn more about Developer Mode.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
+### Set up device
+
+   ![Select enterprise license file and configure OOBE.](images/set-up-device-details.png)
+
+Browse to and select the Enterprise license file to upgrade the HoloLens edition. You can also toggle **Yes** or **No** to hide parts of the first experience.
+
+To set up the device without the need to connect to a Wi-Fi network, toggle **Skip Wi-Fi setup** to **On**. Select a region and timezone in which the device will be used.
+
+### Set up network
+
+   ![Set up network.](images/set-up-network-details-desktop.png)
+
+In this section, you can enter the details of the Wi-Fi wireless network that the device should automatically connect to. To do this, select **On**, enter the SSID, the network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.
+
+### Add accounts
+
+   ![Join  Azure AD or create a local account.](images/account-management-details.png)
+
+You can enroll the device in Azure Active Directory, or create a local account on the device. Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup) set up Azure AD join in your organization. 
+
+The **maximum number of devices per user** setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. Set an expiration date for the token (maximum is 30 days from the date you get the token). Select **Get bulk token**. In the **Let&#39;s get you signed in** window, enter an account that has permissions to join a device to Azure AD, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions. 
+
+To create a local account, select that option and enter a user name and password. **Important:** For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. 
+
+### Add certificates
+
+   ![Add certificates.](images/add-certificates.png)
+
+### Set up for developers
+
+   ![ICD start options.](images/Example_project.png)
+   
+### Finish
+
+
+<img src="" alt="Enter network SSID and type"/>
+
+
+
+
+images/add-certificates.png" alt=""/>
+
+To provision the device with a certificate, click **Add a certificate**. Enter a name for the certificate, and then browse to and select the certificate to be used.
+
+<img src="images/add-certificates-details.png" alt="add a certificate"/>
+style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Toggle <strong>Yes</strong> or <strong>No</strong> to enable Developer Mode on the HoloLens. <a href="/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Learn more about Developer Mode.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>Do not set a password to protect your provisioning package. If the provisioning package is protected by a password, provisioning the HoloLens device will fail.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
 After you're done, select **Create**. It only takes a few seconds. When the package is built, the location where the package is stored is displayed as a hyperlink at the bottom of the page.
 
-### 3. Create a provisioning package for HoloLens by using advanced provisioning
+### Create a provisioning package for HoloLens by using advanced provisioning
 
 > [!NOTE]
 > A provisioning package that you create in **Advanced provisioning** does not need to include an edition upgrade license to Windows Holographic for Business to succesfully apply to a HoloLens (1st gen). [See more on Windows Holographic for Business for HoloLens (1st gen)](hololens1-upgrade-enterprise.md).
