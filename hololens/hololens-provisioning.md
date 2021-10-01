@@ -126,8 +126,8 @@ After you're done, select **Create**. It only takes a few seconds. When the pack
 
 ### Create a provisioning package for HoloLens by using advanced provisioning
 
-> [!NOTE]
-> A provisioning package that you create in **Advanced provisioning** does not need to include an edition upgrade license to Windows Holographic for Business to successfully apply to a HoloLens (1st gen). [See more on Windows Holographic for Business for HoloLens (1st gen)](hololens1-upgrade-enterprise.md).
+   > [!NOTE]
+   > A provisioning package that you create in **Advanced provisioning** does not need to include an edition upgrade license to Windows Holographic for Business to successfully apply to a HoloLens (1st gen). [See more on Windows Holographic for Business for HoloLens (1st gen)](hololens1-upgrade-enterprise.md).
 
 1. On the Windows Configuration Designer start page, select **Advanced provisioning**.
 1. In the **Enter project details** window, specify a name for your project and the location for your project. Optionally, enter a brief description to describe your project.
