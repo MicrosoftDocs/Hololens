@@ -24,7 +24,7 @@ appliesto:
 
 Some of the HoloLens configurations that you can apply in a provisioning package include the following:
 
-- Upgrade HoloLens 1 to [Windows Holographic for Business](hololens1-upgrade-enterprise.md)
+- Upgrade HoloLens (1st gen) to [Windows Holographic for Business](hololens1-upgrade-enterprise.md)
 - Set up a local account
 - Set up a Wi-Fi connection
 - Apply certificates to the device
@@ -35,10 +35,10 @@ Some of the HoloLens configurations that you can apply in a provisioning package
 
 The HoloLens wizard helps you configure the following settings in a provisioning package:
 
-- Upgrade HoloLens 1 to the Enterprise edition
+- Upgrade HoloLens (1st gen) to the Enterprise edition
 
     > [!NOTE]
-    > These settings can only be applied to HoloLens 1 if the provisioning package includes an edition upgrade license to [Windows Holographic for Business](hololens1-upgrade-enterprise.md), or if the device has already been upgraded to Windows Holographic for Business.
+    > These settings can only be applied to HoloLens (1st gen) if the provisioning package includes an edition upgrade license to [Windows Holographic for Business](hololens1-upgrade-enterprise.md), or if the device has already been upgraded to Windows Holographic for Business.
 
 - Configure the HoloLens first experience (OOBE)
 - Configure the Wi-Fi network
@@ -100,7 +100,7 @@ In this section, you can enter the details of the Wi-Fi wireless network that th
 
    ![Join  Azure AD or create a local account.](images/account-management-details.png)
 
-You can enroll the device in Azure Active Directory, or create a local account on the device. Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](https://docs.microsoft.com/en-us/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) set up Azure AD join in your organization. 
+You can enroll the device in Azure Active Directory, or create a local account on the device. Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) set up Azure AD join in your organization. 
 
 The **maximum number of devices per user** setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. Set an expiration date for the token (maximum is 30 days from the date you get the token). Select **Get bulk token**. In the **Let&#39;s get you signed in** window, enter an account that has permissions to join a device to Azure AD, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions. 
 
@@ -224,12 +224,13 @@ Read up on [applying provisioning packages during OOBE](hololens-provisioning.md
 
 ### Auto-confirm provisioning packages in OOBE
 
-These automated processes allow for less user interaction, when the Provisioning Package page is displayed it will automatically apply all packages listed.
+These automated processes allow for less user interaction. When the Provisioning Package page is displayed it will automatically apply all packages listed.
 
 When the provisioning main screen comes up, OOBE will count down 10 seconds before automatically starting applying all provisioning packages. Users can still confirm or cancel within this 10 seconds after verifying the packages they expected.
 
 ### Automatic provisioning without using UI
-- Combined automatic processes for reduced device interactions for provisioning. 
+
+These combined automatic processes allow for reduced device interactions for provisioning.
 
 By combining the auto-launch of provisioning from USB devices and the auto-confirmation of provisioning packages, a user can provision HoloLens 2 devices automatically without using the device's UI or even wearing the device. You may continue to use the same USB drive and provisioning package for multiple devices. This is useful for deploying multiple devices at once in the same area. 
 
