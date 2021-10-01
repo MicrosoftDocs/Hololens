@@ -3,7 +3,7 @@ title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 12/02/2019
+ms.date: 9/30/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
@@ -25,6 +25,7 @@ This article describes how to resolve several common HoloLens issues.
 <a id="list"></a>
 
 **Known Issues**
+- [Every time the power goes to 18 percent, the device suddenly shuts down automatically](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
@@ -54,6 +55,16 @@ This article describes how to resolve several common HoloLens issues.
 - [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
 - [USB-C Microphone isn't working](#usb-c-microphone-isnt-working)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
+
+## Every time the power goes to 18 percent, the device suddenly shuts down automatically
+
+There is a known known issue where when the device reaches 18% battery, it will unexpectedly shut down. This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
+
+1. Ensure optional diagnostics are enabled on your device(s)
+1. Reproduce the problem
+1. Submit a [Feedback Hub](hololens-feedback.md) issue
+1. Share the Feedback issue URL
+1. [Contact support](https://aka.ms/hololenssupport)
 
 ## Remote Assist video freezes after 20 minutes
 
@@ -155,21 +166,23 @@ The user should then go to http://, not https:// (IP address) and features like 
 This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program. This is a **known issue**.
 
 This does not affect:
-- Users who are not enrolled in Windows Insider 
+
+- Users who are not enrolled in Windows Insider
 - Insiders:
     - If a device has been enrolled since Insider builds were version 18362.x
     - If they flashed an Insider signed 19041.x build AND stay enrolled in the Insider program
 
-Work-around: 
-- Avoid the issue 
+Work-around:
+
+- Avoid the issue
     - Flash a non-insider build. One of the regular monthly updates.
     - Stay on Insider Preview
 - Reflash the device
 
     1. Put the [HoloLens 2 into flashing mode](hololens-recovery.md) manually by fully powering down while not connect. Then while holding Volume up, tap the Power button.
-    
+
     1. Connect to the PC and open Advanced Recovery Companion.
-    
+
     1. Flash the HoloLens 2 to the default build.
 
 [Back to list](#list)
@@ -290,6 +303,7 @@ If your HoloLens 2 is not responding to your voice, make sure Speech recognition
 ## Hand input isn't working
 
 To ensure that HoloLens can see your hands, you need to keep them in the gesture frame.  The Mixed Reality Home provides feedback that lets you know when your hands are tracked.  The feedback is different on different versions of HoloLens:
+
 - On HoloLens (1st gen), the gaze cursor changes from a dot to a ring
 - On HoloLens 2, a fingertip cursor appears when your hand is close to a slate, and a hand ray appears when slates are further away
 
@@ -323,6 +337,7 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 [Back to list](#list)
 
 ## USB-C Microphone isn't working
+
 Be aware that some USB-C microphones incorrectly report themselves as both a microphone *and* a speaker. This is a problem with the microphone and not with HoloLens. When plugging one of these microphones into HoloLens, sound may be lost. Fortunately there is a simple fix.  
 
 In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
