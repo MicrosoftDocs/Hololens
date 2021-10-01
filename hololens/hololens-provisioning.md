@@ -84,7 +84,9 @@ If you know you'll be using an offline PC, first download and install the [Windo
 
 #### 1. Set up device
 
-   ![Select enterprise license file and configure OOBE.](images/set-up-device-details.png)
+<kbd>
+<img alt="Select enterprise license file and configure OOBE." src="../images/set-up-device-details.png" width="415" height="530" />
+</kbd>
 
 Browse to and select the Enterprise license file to upgrade the HoloLens edition. You can also toggle **Yes** or **No** to hide parts of the first experience.
 
@@ -116,7 +118,7 @@ To provision the device with a certificate, click **Add a certificate**. Enter a
 
    ![Developer setup.](images/developer-setup-details.png)
 
-Toggle **Yes** or **No** to enable Developer Mode on the HoloLens. [Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+Toggle **Yes** or **No** to enable Developer Mode on the HoloLens. [Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode) While Developer Mode is not suggested for deployments at scale, once you have enabled Developer Mode you can also choose to set Device Portal login credentials.
 
 #### 6. Finish
 
@@ -145,14 +147,14 @@ After you're done, select **Create**. It only takes a few seconds. When the pack
     > [!IMPORTANT]
     > (For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery).
 
-1. Select **File** > **Save**.
+1. Select **File** -> **Save**.
 
 1. Read the warning that project files may contain sensitive information, and select **OK**.
 
     > [!IMPORTANT]
     > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-1. Select **Export** > **Provisioning package**.
+1. Select **Export** -> **Provisioning package**.
 
 1. Change **Owner** to **IT Admin**. This sets the precedence of this provisioning package higher than provisioning packages applied to this device from other sources. Select **Next**.
 
