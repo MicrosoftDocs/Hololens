@@ -85,7 +85,7 @@ If you know you'll be using an offline PC, first download and install the [Windo
 #### 1. Set up device
 
 <kbd>
-<img alt="Select enterprise license file and configure OOBE" src="images/set-up-device-details.png" width="415" height="530" />
+<img alt="Select enterprise license file and configure OOBE" src="images/set-up-device-details.png" width="445" height="560" />
 </kbd>
 
 Browse to and select the Enterprise license file to upgrade the HoloLens edition. You can also toggle **Yes** or **No** to hide parts of the first experience.
@@ -94,13 +94,19 @@ To set up the device without the need to connect to a Wi-Fi network, toggle **Sk
 
 #### 2. Set up network
 
-   ![Enter network SSID and type.](images/set-up-network-details-desktop.png)
+   ![]()
+
+<kbd>
+<img alt="Enter network SSID and type" src="images/set-up-network-details-desktop.png" width="445" height="560" />
+</kbd>
 
 In this section, you can enter the details of the Wi-Fi wireless network that the device should automatically connect to. To do this, select **On**, enter the SSID, the network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.
 
 #### 3. Add accounts
 
-   ![Join  Azure AD or create a local account.](images/account-management-details.png)
+<kbd>
+<img alt="Join  Azure AD or create a local account" src="images/account-management-details.png" width="445" height="560" />
+</kbd>
 
 You can enroll the device in Azure Active Directory, or create a local account on the device. Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) set up Azure AD join in your organization.
 
@@ -110,19 +116,25 @@ To create a local account, select that option and enter a user name and password
 
 #### 4. Add certificates
 
-   ![Add a certificate.](images/add-certificates-details.png)
+<kbd>
+<img alt="Add a certificate" src="images/add-certificates-details.png" width="445" height="560" />
+</kbd>
 
 To provision the device with a certificate, click **Add a certificate**. Enter a name for the certificate, and then browse to and select the certificate to be used.
 
 #### 5. Set up for developers
 
-   ![Developer setup.](images/developer-setup-details.png)
+<kbd>
+<img alt="Developer setup" src="images/developer-setup-details.png" width="445" height="560" />
+</kbd>
 
 Toggle **Yes** or **No** to enable Developer Mode on the HoloLens. [Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode) While Developer Mode is not suggested for deployments at scale, once you have enabled Developer Mode you can also choose to set Device Portal login credentials.
 
 #### 6. Finish
 
-   ![Finish details.](images/finish-details.png)
+<kbd>
+<img alt="Finish details" src="images/finish-details.png" width="445" height="560" />
+</kbd>
 
 Do not set a password to protect your provisioning package. If the provisioning package is protected by a password, provisioning the HoloLens device will fail.
 
