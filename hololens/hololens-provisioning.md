@@ -80,9 +80,9 @@ If you know you'll be using an offline PC, first download and install the [Windo
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-## Configure settings
+### Configure settings
 
-### Set up device
+#### Set up device
 
    ![Select enterprise license file and configure OOBE.](images/set-up-device-details.png)
 
@@ -90,13 +90,13 @@ Browse to and select the Enterprise license file to upgrade the HoloLens edition
 
 To set up the device without the need to connect to a Wi-Fi network, toggle **Skip Wi-Fi setup** to **On**, then select a region and timezone in which the device will be used.
 
-### Set up network
+#### Set up network
 
    ![Enter network SSID and type.](images/set-up-network-details-desktop.png)
 
 In this section, you can enter the details of the Wi-Fi wireless network that the device should automatically connect to. To do this, select **On**, enter the SSID, the network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.
 
-### Add accounts
+#### Add accounts
 
    ![Join  Azure AD or create a local account.](images/account-management-details.png)
 
@@ -109,19 +109,19 @@ To create a local account, select that option and enter a user name and password
 > [!IMPORTANT]
 > For Windows 10, version 1607 only), if you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and you will be unable to sign in.
 
-### Add certificates
+#### Add certificates
 
    ![Add a certificate.](images/add-certificates-details.png)
 
 To provision the device with a certificate, click **Add a certificate**. Enter a name for the certificate, and then browse to and select the certificate to be used.
 
-### Set up for developers
+#### Set up for developers
 
    ![Developer setup.](images/developer-setup-details.png)
 
 Toggle **Yes** or **No** to enable Developer Mode on the HoloLens. [Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
 
-### Finish
+#### Finish
 
    ![Finish details.](images/finish-details.png)
 
@@ -129,7 +129,7 @@ Do not set a password to protect your provisioning package. If the provisioning 
 
 After you're done, select **Create**. It only takes a few seconds. When the package is built, the location where the package is stored is displayed as a hyperlink at the bottom of the page.
 
-### Create a provisioning package for HoloLens by using advanced provisioning
+## Create a provisioning package for HoloLens by using advanced provisioning
 
    > [!NOTE]
    > To successfully apply a provisioning package that you create in **Advanced provisioning** to a HoloLens (1st gen), you do not need to include an edition upgrade license to Windows Holographic for Business. [See more on Windows Holographic for Business for HoloLens (1st gen)](hololens1-upgrade-enterprise.md).
