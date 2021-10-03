@@ -2,6 +2,20 @@
 
 
 
+## Week of September 27, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/27/2021 | [Microsoft HoloLens # < 60 chars](/hololens/index) | modified |
+| 9/28/2021 | [HoloLens 2 Battery and Charging](/hololens/hololens2-charging) | modified |
+| 9/28/2021 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
+| 9/28/2021 | [Give us feedback](/hololens/hololens-feedback) | modified |
+| 9/30/2021 | [Find, install, and uninstall applications](/hololens/holographic-store-apps) | modified |
+| 9/30/2021 | [HoloLens 2 implementation and managed device troubleshooting](/hololens/hololens2-enterprise-troubleshooting) | modified |
+| 9/30/2021 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
+
+
 ## Week of September 20, 2021
 
 
@@ -52,11 +66,3 @@
 | 9/9/2021 | [HoloLens 2 cleaning FAQ](/hololens/hololens2-maintenance) | modified |
 | 9/10/2021 | [HoloLens 2 capabilities and solutions](/hololens/hololens-commercial-features) | modified |
 | 9/10/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-
-
-## Week of August 23, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/26/2021 | [HoloLens 2 Moving Platform Mode](/hololens/hololens2-moving-platform) | modified |
