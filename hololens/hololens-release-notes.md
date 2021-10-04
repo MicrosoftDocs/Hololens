@@ -27,6 +27,8 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 ## Windows Holographic, version 21H2
 
+- Build XXXX.XXXX
+
 This one’s about the improved troubleshooting and device reports, some fixed bugs in kiosk mode and the certificate viewer, the expanded manageability surface and the increased update reliability. A new flagship feature of this feature update coming to HoloLens is our Moving Platform Mode. Check out all the new great features for HoloLens 2!
 
 | Feature                 | Description                | User or Scenario |
@@ -265,6 +267,19 @@ You can now use WDAC to block apps or processes from launching and continue to u
 - Fixed an issue where after first user sign-in, OOBE was being terminated in scenarios where AAD group based kiosk configurations were being used.
 - Corrected an issue around displaying update notifications and dialog prompts for device restart.
 - Fixed an issue where after device reboot, Xbox Controllers and other Bluetooth LE peripherals needed be paired again to connect.
+- Fixed video encoder issue which could cause a short freeze of outbound video during a Remote Assist call. Wi-Fi driver and firmware changes to address “Fragment and Forge”  Wi-Fi vulnerabilities.
+- Wi-Fi driver and firmware changes to address “Fragment and Forge”  Wi-Fi vulnerabilities.
+- When using Moving Platform Mode (MPM), "Down" will be estimated by averaging gravity over a short time. This value replaces true gravity when in Moving Platform Mode.
+- Fixed periodic wobble in holograms when in 3DoF mode, or during loss of tracking.
+- Addresses an issue impacting updates to the 21H1/21H2 release from older releases.
+
+## Windows Holographic, version 20H2 - October 2021 Update
+
+- Build XXXX.XXXX
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H2.
 
 ## Windows Holographic, version 21H1 - September 2021 Update
 
