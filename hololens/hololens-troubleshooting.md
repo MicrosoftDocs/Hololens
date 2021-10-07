@@ -1,14 +1,14 @@
 ---
 title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
-author: mattzmsft
-ms.author: mazeller
-ms.date: 9/30/2021
+author: evmill
+ms.author: v-evmill
+ms.date: 10/7/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-manager: jarrettr
+manager: ranjibb
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -26,6 +26,7 @@ This article describes how to resolve several common HoloLens issues.
 
 **Known Issues**
 - [Every time the power goes to 18 percent, the device suddenly shuts down automatically](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- 
 - [Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
@@ -65,6 +66,17 @@ There is a known known issue where when the device reaches 18% battery, it will 
 1. Submit a [Feedback Hub](hololens-feedback.md) issue
 1. Share the Feedback issue URL
 1. [Contact support](https://aka.ms/hololenssupport)
+
+## OneDrive UWP app doesn't work for Azure AD users
+
+If you use OneDrive and you have an Azure AD account, you may have noticed the inbox OneDrive app doesn’t work as expected, and you can’t view or manage files via this app. This doesn’t affect automatic uploads of images and videos captured by the Camera app. The OneDrive and HoloLens teams are working on the issue.
+
+### Workarounds
+
+Prerequisite: Customers can use Microsoft Edge and device OS is update to a Windows Holographic, 21H1 build or newer.
+
+1. Users can directly access OneDrive from Microsoft Edge, and interact with the website from their browser.
+1. Users can install the OneDrive PWA app to HoloLens by downloading it from Microsoft Edge. This will allow users to view and manage files on the device again. Please read and follow these [instructions for installing the OneDrive PWA app on your HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
 
 ## Remote Assist video freezes after 20 minutes
 
