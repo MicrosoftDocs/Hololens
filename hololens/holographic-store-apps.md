@@ -71,6 +71,9 @@ To download apps, you'll need to be signed in with a Microsoft account. Some app
 
 ### Install Microsoft OneDrive PWA App
 
+> [!NOTE]
+> PWA cannot be managed or deployed via Microsoft Intune / MDM.
+
 Pre-Requisites: User has already joined the HoloLens 2 device to their work tenant.
 
 1. Open start menu and launch Edge browser.

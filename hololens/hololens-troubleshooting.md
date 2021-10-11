@@ -1,14 +1,14 @@
 ---
 title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
-author: mattzmsft
-ms.author: mazeller
-ms.date: 9/30/2021
+author: evmill
+ms.author: v-evmill
+ms.date: 10/7/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-manager: jarrettr
+manager: ranjibb
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -26,6 +26,7 @@ This article describes how to resolve several common HoloLens issues.
 
 **Known Issues**
 - [Every time the power goes to 18 percent, the device suddenly shuts down automatically](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [OneDrive UWP app doesn't work for Azure AD users](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
@@ -65,6 +66,23 @@ There is a known known issue where when the device reaches 18% battery, it will 
 1. Submit a [Feedback Hub](hololens-feedback.md) issue
 1. Share the Feedback issue URL
 1. [Contact support](https://aka.ms/hololenssupport)
+
+[Back to list](#list)
+
+## OneDrive UWP app doesn't work for Azure AD users
+
+If you use OneDrive For Business using your Azure AD account, you may have encountered error when sign in to your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage. The OneDrive and HoloLens teams are working on the issue.
+
+### Workarounds
+
+Prerequisite: Customers can use Microsoft Edge and device OS is update to a Windows Holographic, 21H1 build or newer.
+
+If you are experiencing this issue, try one of the following:
+
+- Users can directly access OneDrive For Business from Microsoft Edge, and interact with their files the website from their browser.
+- Users can install the OneDrive PWA app to HoloLens by downloading it from Microsoft Edge. This will allow users to view and manage files on the device again. Read and follow these [instructions for installing the OneDrive PWA app on your HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
+
+[Back to list](#list)
 
 ## Remote Assist video freezes after 20 minutes
 
