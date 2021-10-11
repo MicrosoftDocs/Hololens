@@ -53,7 +53,7 @@ The following lists commonly used MDM settings that Windows 10 Holographic suppo
 - [Restrict Camera:](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesscamera) Specifies whether Windows apps can access the camera.
 - [Restrict Microphones:](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmicrophone) Specifies whether Windows apps can access the microphone.
 
-Added in [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) for HoloLens 2 devices:
+Added in [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) for HoloLens 2 devices:
 
 - [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery) Set amount of time until display turns off, and by turning off the display, locks the device.
 - [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin) Set amount of time until display turns off, and by turning off the display, locks the device.
