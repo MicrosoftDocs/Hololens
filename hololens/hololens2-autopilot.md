@@ -325,10 +325,10 @@ Reboot your device and try again. For more information, see [Known Issues and Li
 
 ### Why do I see 0x80180014 during Autopilot?
 
-The scenario this experience applies to when HoloLens devices have done the following:
+This is an error shown during the Autopilot process on device. This issue shown only applies when a HoloLens device has done the following:
 
-1. Those which have gone through Autopilot at least once.
-1. Those which are being reset and re-used again for Autopilot.
+1. Already have gone through Autopilot at least once.
+1. Is now being reset and re-used again for Autopilot.
 
 The experience is Autopilot experience will fail with a specific error.
 
