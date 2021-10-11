@@ -340,7 +340,7 @@ Autopilot experience will fail with specific error.
 
 What steps need to be taken to resolve this error?
 
-1. Follow steps at Troubleshoot Autopilot device import and enrollment | Microsoft Docs to remove device from Intune.
+1. Follow steps at [Troubleshoot Autopilot device import and enrollment](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) to remove device from Intune.
 1. [Reset / Reflash HoloLens](hololens-recovery.md) device and then attempt Autopilot.
 
 ### Troubleshooting
