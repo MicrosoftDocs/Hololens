@@ -2,6 +2,16 @@
 
 
 
+## Week of October 04, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/4/2021 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 10/6/2021 | [Share your HoloLens with multiple people](/hololens/hololens-multiple-users) | modified |
+| 10/6/2021 | [Getting around HoloLens (1st gen)](/hololens/hololens1-basic-usage) | modified |
+
+
 ## Week of September 27, 2021
 
 
