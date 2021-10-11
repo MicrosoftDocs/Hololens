@@ -27,7 +27,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 ## Windows Holographic, version 21H2
 
-- Build XXXX.XXXX
+- Build 20348.1432
 
 This one’s about the improved troubleshooting and device reports, some fixed bugs in kiosk mode and the certificate viewer, the expanded manageability surface and the increased update reliability. A new flagship feature of this feature update coming to HoloLens is our Moving Platform Mode. Check out all the new great features for HoloLens 2!
 
@@ -275,7 +275,7 @@ You can now use WDAC to block apps or processes from launching and continue to u
 
 ## Windows Holographic, version 20H2 - October 2021 Update
 
-- Build XXXX.XXXX
+- Build 19041.1168
 
 Improvements and fixes in the update:
 
