@@ -71,7 +71,7 @@ There is a known known issue where when the device reaches 18% battery, it will 
 
 ## OneDrive UWP app doesn't work for Azure AD users
 
-If you use OneDrive and you have an Azure AD account, you may have noticed the inbox OneDrive app doesn’t work as expected, and you can’t view or manage files via this app. Not being able to use the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. The OneDrive and HoloLens teams are working on the issue.
+If you use OneDrive For Business using your Azure AD account, you may have encountered error when sign in to your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage. The OneDrive and HoloLens teams are working on the issue.
 
 ### Workarounds
 
@@ -79,7 +79,7 @@ Prerequisite: Customers can use Microsoft Edge and device OS is update to a Wind
 
 If you are experiencing this issue, try one of the following:
 
-- Users can directly access OneDrive from Microsoft Edge, and interact with the website from their browser.
+- Users can directly access OneDrive For Business from Microsoft Edge, and interact with their files the website from their browser.
 - Users can install the OneDrive PWA app to HoloLens by downloading it from Microsoft Edge. This will allow users to view and manage files on the device again. Read and follow these [instructions for installing the OneDrive PWA app on your HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
 
 [Back to list](#list)
