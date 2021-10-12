@@ -5,10 +5,10 @@ keywords: how-to, update, roll back, HoloLens, check build, build number
 ms.prod: hololens
 ms.sitesec: library
 author: qianw211
-ms.author: v-qianwen
+ms.author: v-beehanson
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/3/2021
+ms.date: 10/11/2021
 audience: ITPro
 ms.reviewer: 
 manager: sekerawa
@@ -22,7 +22,7 @@ appliesto:
 
 We’re always working on new features, bug fixes, and security updates. You'll be notified when these updates are ready.
 
-Based on your preference, your HoloLens will automatically download and install system updates whenever it is plugged-in to power, connected to the Internet, and even in standby.
+Based on your preference, your HoloLens will automatically download and install system updates whenever it is plugged in to power, connected to the Internet, and even in standby.
 
 To ensure your HoloLens is always updated, leave it plugged in with the charger that came with it. You also want your HoloLens connected to the internet. This way, it will automatically download and install system updates. 
 
@@ -30,7 +30,7 @@ With Windows Update service, you’ll control multiple aspects of the update pro
 
 ## Types of updates
 
-For HoloLens, you can automatically manage two types of updates. 
+For HoloLens, you can automatically manage two types of updates.
 
 - Feature updates: released two times a year.
 - Quality updates: include critical security updates. They’re released monthly, or as required.
@@ -41,9 +41,9 @@ Use **Update**/**AllowAutoUpdate** to manage scanning, downloading, and installa
 
 You can also set an update schedule. It can be on a particular day, or every day, at a particular time. For instance, at 5 p.m., or outside of active hours.
 
-Finally, a few words about planning your update strategy. We support update deferrals. So, you can decide how long to wait after Microsoft releases an update to install that update on devices.
+Finally, a few words about planning your update strategy. We support update deferrals, so you can decide how long to wait after Microsoft releases an update to install that update on devices.
 
-Sometimes, a company likes to try all the new features first to make sure everything works, and they are familiar with the new updates so their support team is prepared. Once they’ve confirmed that all is good, they roll out the updates to the entire company. By associating subsets of your devices with different deferral policies, known as update rings, you can coordinate an update rollout strategy for your organization.
+Sometimes a company likes to try all the new features first to make sure everything works, and they are familiar with the new updates so their support team is prepared. Once they’ve confirmed that all is good, they roll out the updates to the entire company. By associating subsets of your devices with different deferral policies, known as update rings, you can coordinate an update rollout strategy for your organization.
 
 ## HoloLens update tools
 
@@ -78,10 +78,10 @@ In some cases, you might want to go back to a previous version of the HoloLens s
 
 1. Contact Support to see if they can fix your issue.
     1. Ensure that **Optional** or **Full** telemetry is enabled -  this makes your bug more actionable and easier for engineers to diagnose.
-    1. [File Feedback](hololens-feedback.md) being as descriptive as possible. Take note of the title or use the share feature so you can share your bug with Support.
+    1. In [File Feedback](hololens-feedback.md) be as descriptive as possible. Take note of the title, or use the share feature so you can share your bug with Support.
     1. Contact [Support](https://aka.ms/hlsupport). If your issue is one that needs to be solved by returning to a previous version, they can supply you the FFU to flash your device.
 
-1. If that does not work, then [reset or reflash your HoloLens 2 with the Advanced Recovery Companion](hololens-recovery.md).
+1. If that does not work, then [reset or reflash your HoloLens 2 with the Advanced Recovery Companion](hololens-recovery.md#reset-the-device).
 
 > [!NOTE]
 > Going back to an earlier version deletes your personal files and settings.
