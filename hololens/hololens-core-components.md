@@ -5,11 +5,11 @@ ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
 author: joyjaz
-ms.author: v-jjaswinski
+ms.author: v-beehanson
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/21/2021
+ms.date: 10/11/2021
 appliesto:
 - HoloLens 2
 ---
@@ -20,7 +20,9 @@ appliesto:
 > [!NOTE]
 > This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within an organization. For device end users, see [Get your HoloLens 2 ready to use](hololens2-setup.md) to get started.
 
-HoloLens 2 runs on Windows 10 Holographic which provides organizations with robust, flexible, built-in mobile device and app management technologies. Windows 10 Holographic supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. The HoloLens 2 can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance and retirement using a comprehensive mobile device management solution.
+HoloLens 2 runs on Windows 10 Holographic, which provides organizations with robust, flexible, built-in mobile device and app management technologies. Windows 10 Holographic supports end-to-end device lifecycle management to give companies control over their devices, data, and apps.
+
+HoloLens 2 can easily be incorporated into standard lifecycle practices -- from device enrollment, configuration, and application management to maintenance and retirement -- by using a comprehensive mobile device management solution.
 
 The following steps and video can help guide you through the process of HoloLens 2 adoption within your organization.
 
