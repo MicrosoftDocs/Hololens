@@ -29,7 +29,9 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 - Build 20348.1432
 
-This one’s about the improved troubleshooting and device reports, some fixed bugs in kiosk mode and the certificate viewer, the expanded manageability surface and the increased update reliability. A new flagship feature of this feature update coming to HoloLens is our Moving Platform Mode. Check out all the new great features for HoloLens 2!
+Windows Holographic, version 21H2 is now available and brings a great set of new features to HoloLens 2 users and IT professionals. This one’s about the improved troubleshooting and device reports, some fixed bugs in kiosk mode and the certificate viewer, the expanded manageability surface and the increased update reliability. A new flagship feature of this feature update coming to HoloLens is our Moving Platform Mode. Check out all the new great features for HoloLens 2!
+
+This latest release is a monthly update to version 21H1, but this time we are including new features. The major build number will remain the same and Windows Update will indicate a monthly release to version 21H1 (build 20348). You can look at your Build Number in your Settings > About screen to confirm you are on the latest available build 20348.1432+. To update to the latest release, open the Settings app, go to Update & Security, and tap Check for Updates. For more information on how to manage HoloLens updates, visit [Manage HoloLens updates.](hololens-updates.md)
 
 | Feature                 | Description                | User or Scenario |
 |-------------------------|----------------------------|--------------|
