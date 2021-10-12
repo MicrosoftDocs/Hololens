@@ -18,7 +18,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Reset, restart, or recover HoloLens 2
+# Restart, reset, or recover HoloLens 2
 
 >[!IMPORTANT]
 > Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](hololens2-setup.md#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device.
@@ -42,20 +42,6 @@ If the device is correctly booted and running, there are three ways to check the
 
 If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the [troubleshooting guide](hololens-troubleshooting.md). If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
-## Reset the device
-
-1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
-1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
-1. Choose which version you want to flash to:
-   1. You can download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
-   1. You can use the default build that ARC hosts. (If you choose this option skip the next step.)
-   1. You can use a build Support provided you with.
-1. When you have finished these downloads, open **File Explorer** > **Downloads**. Right-click the zipped folder that you downloaded, and select **Extract all** > **Extract** to unzip it.
-1. Connect your HoloLens to your PC using a USB-A to USB-C cable. (Even if you've been using other cables to connect your HoloLens, this one works best.)
-1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
-1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the `.ffu` extension.)
-1. Select **Install software**, and follow the instructions.
-
 ## Restart the device
 
 Under certain circumstances, you may have to manually reset the device without using the software UI.
@@ -71,6 +57,21 @@ Under certain circumstances, you may have to manually reset the device without u
 4. Connect the device to the host PC, and then open Device Manager. (For Windows 10, press the **Windows** key and then the **X** key, and then select **Device Manager**.) Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
+
+
+## Reset the device
+
+1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
+1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
+1. Choose which version you want to flash to:
+   1. You can download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
+   1. You can use the default build that ARC hosts. (If you choose this option skip the next step.)
+   1. You can use a build Support provided you with.
+1. When you have finished these downloads, open **File Explorer** > **Downloads**. Right-click the zipped folder that you downloaded, and select **Extract all** > **Extract** to unzip it.
+1. Connect your HoloLens to your PC using a USB-A to USB-C cable. (Even if you've been using other cables to connect your HoloLens, this one works best.)
+1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
+1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the `.ffu` extension.)
+1. Select **Install software**, and follow the instructions.
 
 ### Hard-reset procedure
 
