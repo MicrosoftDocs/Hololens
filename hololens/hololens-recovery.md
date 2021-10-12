@@ -44,17 +44,17 @@ If the device can't boot to the startup menu, note the LED appearance and device
 
 ## Reset the device
 
-    1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
-    1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
-    1. Choose which version you want to flash to:
-        1. You can download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
-        1. You can use the default build that ARC hosts. (If you choose this option skip the next step.)
-        1. You can use a build Support provided you with.
-    1. When you have finished these downloads, open **File Explorer** > **Downloads**. Right-click the zipped folder that you downloaded, and select **Extract all** > **Extract** to unzip it.
-    1. Connect your HoloLens to your PC using a USB-A to USB-C cable. (Even if you've been using other cables to connect your HoloLens, this one works best.)
-    1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
-    1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the `.ffu` extension.)
-    1. Select **Install software**, and follow the instructions.
+1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
+1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
+1. Choose which version you want to flash to:
+   1. You can download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
+   1. You can use the default build that ARC hosts. (If you choose this option skip the next step.)
+   1. You can use a build Support provided you with.
+1. When you have finished these downloads, open **File Explorer** > **Downloads**. Right-click the zipped folder that you downloaded, and select **Extract all** > **Extract** to unzip it.
+1. Connect your HoloLens to your PC using a USB-A to USB-C cable. (Even if you've been using other cables to connect your HoloLens, this one works best.)
+1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
+1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the `.ffu` extension.)
+1. Select **Install software**, and follow the instructions.
 
 ## Restart the device
 
