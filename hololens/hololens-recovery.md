@@ -44,7 +44,7 @@ If the device can't boot to the startup menu, note the LED appearance and device
 
 ## Restart the device
 
-Under certain circumstances, you may have to manually reset the device without using the software UI.
+Under certain circumstances, you may have to manually restart the device without using the software UI.
 
 ### Standard procedure
 
@@ -57,7 +57,6 @@ Under certain circumstances, you may have to manually reset the device without u
 4. Connect the device to the host PC, and then open Device Manager. (For Windows 10, press the **Windows** key and then the **X** key, and then select **Device Manager**.) Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
-
 
 ## Reset the device
 
@@ -72,6 +71,9 @@ Under certain circumstances, you may have to manually reset the device without u
 1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
 1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the `.ffu` extension.)
 1. Select **Install software**, and follow the instructions.
+
+>[NOTE]
+>You can also reset your device directly from your headset by going to Settings -> Update & Security -> Reset & recovery -> Reset this device. When you reset in this manner, all user accounts will be removed and all data will be erased.
 
 ### Hard-reset procedure
 
@@ -102,7 +104,7 @@ There are two ways to reflash the device. For both, you must first [install Adva
 >[!WARNING]
 >If you reflash your device, all your personal data, apps, and settings will be erased, including TPM-reset information.
 
-By default, Advanced Recovery Companion is set to download the most recent feature release build; to learn about the latest feature release, see [HoloLens 2 release notes](hololens-release-notes.md). To get the latest HoloLens 2 Full Flash Update (FFU) package to reflash your device via Advanced Recovery Companion, download the latest monthly HoloLens 2 image: [https://aka.ms/hololens2download](https://aka.ms/hololens2download). This version is the latest generally available build.
+By default, Advanced Recovery Companion is set to download the most recent feature release build. To learn about the latest feature release, see [HoloLens 2 release notes](hololens-release-notes.md). To get the latest HoloLens 2 Full Flash Update (FFU) package to reflash your device via Advanced Recovery Companion, download the latest monthly HoloLens 2 image: [https://aka.ms/hololens2download](https://aka.ms/hololens2download). This version is the latest generally available build.
 
 Before you start the reflash procedure, make sure the app is installed and running on your Windows 10 PC and ready to detect the device. Also ensure that your HoloLens is charged to a minimum of 40%.
 
