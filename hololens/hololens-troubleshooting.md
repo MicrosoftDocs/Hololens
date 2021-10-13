@@ -28,6 +28,7 @@ This article describes how to resolve several common HoloLens issues.
 - [Every time the power goes to 18 percent, the device suddenly shuts down automatically](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [OneDrive UWP app doesn't work for Azure AD users](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
+- [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
 - [Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
@@ -90,6 +91,19 @@ If you are experiencing this issue, try one of the following:
 This error is typically encountered during device reset and re-use flows where a HoloLens device has gone through Autopilot at least once. In order to resolve this issue, please [delete the device from Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) and reset it again to complete Autopilot flow.
 
 For more info, please refer to [troubleshooting steps on the autopilot page.](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
+
+## Microsoft Edge fails to start the microphone
+
+When users using Microsoft Edge the microphone can fail to start, thus not being usable to interact with Edge in HoloLens. This known issue is related to the version of the Microsoft Edge app, please do not reflash your device to an earlier version as this will not fix this issue.
+
+### Who is affected?
+
+Users who have Microsoft Edge version 93, 94, or 95.
+You can check which version of Microsoft Edge you have by using the Microsoft Store app, then select the "See more" button represented by the **...** then select **Downloads and updates**.
+
+### Work around
+
+The current fix is in version 96, which is available to users who have enrolled in Microsoft Edge Insiders. This is different than enrolling your device as a Windows Insider. Read these instructions for details on [how to enroll into Edge’s insider program.](hololens-new-edge.md#microsoft-edge-insider-channels)
 
 ## Remote Assist video freezes after 20 minutes
 
