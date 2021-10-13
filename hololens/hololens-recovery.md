@@ -42,11 +42,17 @@ If the device is correctly booted and running, there are three ways to check the
 
 If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the [troubleshooting guide](hololens-troubleshooting.md). If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
+> [!NOTE]
+> Let's start by defining terms.
+> "Restart" simply means turning the device off and on.
+> "Reset" means restoring the device to defaults through the Settings UI to reinstall the current image.
+> "Reflash" means the device is connected to a PC, and a new image (optionally a different one) is to be installed.
+
 ## Restart the device
 
-Under certain circumstances, you may have to manually restart the device without using the software UI.
+Under certain circumstances, you may have to manually restart the device without using the software UI. This may help you solve an issue you are encountering without having to reset / reflash your device
 
-### Standard procedure
+### Standard restart procedure
 
 1. Unplug the Type-C cable to disconnect the device from the power supply or the host PC.
 
@@ -58,24 +64,7 @@ Under certain circumstances, you may have to manually restart the device without
 
    ![HoloLens 2 MicrosoftHoloLensRecovery devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
 
-## Reset the device
-
-1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
-1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
-1. Choose which version you want to flash to:
-   1. You can download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
-   1. You can use the default build that ARC hosts. (If you choose this option skip the next step.)
-   1. You can use a build Support provided you with.
-1. When you have finished these downloads, open **File Explorer** > **Downloads**. Right-click the zipped folder that you downloaded, and select **Extract all** > **Extract** to unzip it.
-1. Connect your HoloLens to your PC using a USB-A to USB-C cable. (Even if you've been using other cables to connect your HoloLens, this one works best.)
-1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
-1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the `.ffu` extension.)
-1. Select **Install software**, and follow the instructions.
-
-> [!NOTE]
-> You can also reset your device directly from your headset by going to Settings -> Update & Security -> Reset & recovery -> Reset this device. When you reset in this manner, all user accounts will be removed and all data will be erased.
-
-### Hard-reset procedure
+### Hard-restart procedure
 
 If the standard reset procedure didn't work, use the hard-reset procedure:
 
@@ -110,7 +99,7 @@ Before you start the reflash procedure, make sure the app is installed and runni
 
 ![HoloLens 2 clean reflash screen shot.](images/ARC1.png)
 
-### Normal procedure
+### Normal flashing procedure
 
 1. While the HoloLens device is running, connect it to the Windows 10 PC where you previously opened the Advanced Recovery Companion app.
 
@@ -120,7 +109,7 @@ Before you start the reflash procedure, make sure the app is installed and runni
 
 1. Select the HoloLens 2 device in the Advanced Recovery Companion app UI, and follow the instructions to complete the reflash.
 
-### Manual procedure
+### Manual flashing mode procedure
 
 You may need to put the device into recovery mode if:
 
