@@ -72,8 +72,8 @@ Under certain circumstances, you may have to manually restart the device without
 1. On the next screen, select **Manual package selection** and then select the installation file contained in the folder that you unzipped in step 4. (Look for a file with the `.ffu` extension.)
 1. Select **Install software**, and follow the instructions.
 
->[NOTE]
->You can also reset your device directly from your headset by going to Settings -> Update & Security -> Reset & recovery -> Reset this device. When you reset in this manner, all user accounts will be removed and all data will be erased.
+> [!NOTE]
+> You can also reset your device directly from your headset by going to Settings -> Update & Security -> Reset & recovery -> Reset this device. When you reset in this manner, all user accounts will be removed and all data will be erased.
 
 ### Hard-reset procedure
 
