@@ -9,7 +9,11 @@ ms.author: v-beehanson
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
+<<<<<<< Updated upstream
 ms.date: 10/11/2021
+=======
+ms.date: 10/13/2021
+>>>>>>> Stashed changes
 appliesto:
 - HoloLens 2
 ---
@@ -37,6 +41,14 @@ The following steps and video can help guide you through the process of HoloLens
 <br/>
 
 > [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
+
+## Prerequisites
+
+1. Procure your headset
+   [Where to buy HoloLens 2]((hololens2-purchase.md))
+1.  Review common deployment scenarios
+    [Common Deployment Scenarios](hololens-requirements.md)    
+
 
 ## Prepare
 
