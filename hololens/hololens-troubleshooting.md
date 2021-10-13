@@ -94,10 +94,10 @@ For more info, please refer to [troubleshooting steps on the autopilot page.](ho
 
 ## Microsoft Store error code 0x80131500
 
-Some users may experience the Microsoft Store working as expected, and see the error code 0x80131500. This is an issue caused by the region set on the HoloLens not being available in the Microsoft Store app on HoloLens. If you encounter error code 0x80131500, to workaround please:
+Some users may experience the Microsoft Store working not as expected, and see the error code 0x80131500. This is an issue caused by the region set on the HoloLens not being available in the Microsoft Store app on HoloLens. If you encounter error code 0x80131500, to workaround please:
 
 1. Set Settings > Time & Language > Region > Country or region, to one of the following:
-    - United States, Japan, China, Germany, Canada, United Kingdom, Ireland, France, Australia, New Zealand,
+    - United States, Japan, China, Germany, Canada, United Kingdom, Ireland, France, Australia, New Zealand.
 1. Restart the Store app.
 1. For the whole device to reflect the change, the device will need to be restarted.
 
