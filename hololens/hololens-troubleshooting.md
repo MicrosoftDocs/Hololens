@@ -29,6 +29,7 @@ This article describes how to resolve several common HoloLens issues.
 - [OneDrive UWP app doesn't work for Azure AD users](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
 - [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
+- [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
 - [**Fixed** - Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
@@ -104,6 +105,19 @@ Some users may experience the Microsoft Store working not as expected, and see t
 The HoloLens team is working on adding support for more regions.
 
 See here [for countries to buy HoloLens 2.](hololens2-purchase.md)
+
+## Microsoft Edge fails to start the microphone
+
+When users using Microsoft Edge the microphone can fail to start, thus not being usable to interact with Edge in HoloLens. This known issue is related to the version of the Microsoft Edge app, please do not reflash your device to an earlier version as this will not fix this issue.
+
+### Who is affected?
+
+Users who have Microsoft Edge version 93, 94, or 95.
+You can check which version of Microsoft Edge you have by using the Microsoft Store app, then select the "See more" button represented by the **...** then select **Downloads and updates**.
+
+### Work around
+
+The current fix is in version 96, which is available to users who have enrolled in Microsoft Edge Insiders. This is different than enrolling your device as a Windows Insider. Read these instructions for details on [how to enroll into Edge’s insider program.](hololens-new-edge.md#microsoft-edge-insider-channels)
 
 ## Remote Assist video freezes after 20 minutes
 
