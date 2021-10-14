@@ -4,16 +4,12 @@ description: Learn about the core needs for deploying and managing HoloLens in e
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
-author: joyjaz
+author: beelia
 ms.author: v-beehanson
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-<<<<<<< Updated upstream
 ms.date: 10/11/2021
-=======
-ms.date: 10/13/2021
->>>>>>> Stashed changes
 appliesto:
 - HoloLens 2
 ---
@@ -46,7 +42,7 @@ The following steps and video can help guide you through the process of HoloLens
 
 Provide new users with basic information.
 
-*   [Where to buy HoloLens 2]((hololens2-purchase.md))
+*   [Where to buy HoloLens 2](hololens2-purchase.md)
 *   [HoloLens 2 support](hololens2-support.md)
 *   [Common Deployment Scenarios](hololens-requirements.md)
 
@@ -76,7 +72,7 @@ Distribute your HoloLens 2 devices and validate their configuration.
 
 | Component | Description |
 |-----------|------------|
-| [Deployment Considerations](hololens2-deployment-considerations.md) | Determine deployment requirements |
+| Deployment Considerations - add link | Determine deployment requirements |
 | [Enroll HoloLens](hololens-enroll-mdm) | Enroll HoloLens in Modern Mobile Device Management |
 | [Enrollment Validation](hololens2-corp-connected-deploy.md#enrollment-validation) | Validate the device has Azure AD Joined from Settings or the Azure Portal |
 | [Certificate Validation](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | Check settings and validate they have been distributed correctly |
