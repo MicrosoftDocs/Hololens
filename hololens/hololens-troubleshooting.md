@@ -158,7 +158,7 @@ This should not occur during:
 Work around methods:
 
 - Sign-in methods such as PIN, Password, Iris, Web Authentication, or FIDO2 keys.
-- If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-procedure).
+- If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-flashing-mode-procedure).
 
 [Back to list](#list)
 
@@ -257,7 +257,7 @@ Workarounds:
 If your HoloLens won't start:
 
 - If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens2-charging.md#charging-the-device)
-- If the LEDs light up when you press the power button but you can't see anything on the displays, [do a hard reset of the device](hololens-recovery.md#hard-reset-procedure).
+- If the LEDs light up when you press the power button but you can't see anything on the displays, [do a hard reset of the device](hololens-recovery.md#hard-restart-procedure).
 
 If your HoloLens becomes frozen or unresponsive:
 
