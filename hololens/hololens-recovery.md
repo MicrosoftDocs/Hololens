@@ -43,10 +43,10 @@ If the device is correctly booted and running, there are three ways to check the
 If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the [troubleshooting guide](hololens-troubleshooting.md). If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-restart-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
 > [!NOTE]
-> Let's start by defining terms.
-> * "Restart" simply means turning the device off and on.
-> * "Reset" means restoring the device to defaults through the Settings UI to reinstall the current image.
-> * "Reflash" means the device is connected to a PC, and a new image (optionally a different one) is installed.
+> Let's start by defining terms.\
+> "Restart" simply means turning the device off and on.\
+> "Reset" means restoring the device to defaults through the Settings UI to reinstall the current image.\
+> "Reflash" means the device is connected to a PC, and a new image (optionally a different one) is installed.
 
 ## Restart the device
 
