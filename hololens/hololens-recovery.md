@@ -1,5 +1,5 @@
 ---
-title: Restart, reset, or recover HoloLens
+title: Restart, reset, or recover HoloLens 2
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: How to use Advanced Recovery Companion to flash an image to HoloLens 2.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, arc, advanced recovery companion
