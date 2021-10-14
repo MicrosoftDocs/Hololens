@@ -57,7 +57,7 @@ When a device is Azure AD Joined it may affect who considered the [device owner]
 
 Depending on the enrollment method, unenrolling your device may not be available.
 
-If your device was enrolled with an Azure AD account or Autopilot, it cannot be unenrolled from Intune. If you wish to unjoin HoloLens from Azure AD or rejoin it to a different to Azure AD tenant, you must [reset/reflash](hololens-recovery.md#reset-the-device) the device.
+If your device was enrolled with an Azure AD account or Autopilot, it cannot be unenrolled from Intune. If you wish to unjoin HoloLens from Azure AD or rejoin it to a different to Azure AD tenant, you must [reset/reflash](hololens-recovery.md#restart-the-device) the device.
 
 If your device was enrolled from a MSA account that added a work account or from a Local account that enrolled only in device management, then you may unenroll the device. Open the Start menu and then select **Settings App** -> **Access Work or School** -> *YourAccount* -> **Disconnect** button.
 
