@@ -81,7 +81,7 @@ In some cases, you might want to go back to a previous version of the HoloLens s
     1. In [File Feedback](hololens-feedback.md) be as descriptive as possible. Take note of the title, or use the share feature so you can share your bug with Support.
     1. Contact [Support](https://aka.ms/hlsupport). If your issue is one that needs to be solved by returning to a previous version, they can supply you the FFU to flash your device.
 
-1. If that does not work, then [reset or reflash your HoloLens 2 with the Advanced Recovery Companion](hololens-recovery.md#reset-the-device).
+1. If that does not work, then [reset or reflash your HoloLens 2 with the Advanced Recovery Companion](hololens-recovery.md#restart-the-device).
 
 > [!NOTE]
 > Going back to an earlier version deletes your personal files and settings.

@@ -40,17 +40,17 @@ If the device is correctly booted and running, there are three ways to check the
 
    ![A HoloLens 2 properties screen shows battery change level.](images/ResetRecovery2.png)
 
-If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the [troubleshooting guide](hololens-troubleshooting.md). If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-reset-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
+If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the [troubleshooting guide](hololens-troubleshooting.md). If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-restart-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
 > [!NOTE]
 > Let's start by defining terms.
-* "Restart" simply means turning the device off and on.
-* "Reset" means restoring the device to defaults through the Settings UI to reinstall the current image.
-* "Reflash" means the device is connected to a PC, and a new image (optionally a different one) is installed.
+> * "Restart" simply means turning the device off and on.
+> * "Reset" means restoring the device to defaults through the Settings UI to reinstall the current image.
+> * "Reflash" means the device is connected to a PC, and a new image (optionally a different one) is installed.
 
 ## Restart the device
 
-Under certain circumstances, you may have to manually restart the device without using the software UI. This may help you solve an issue you are encountering without having to reset / reflash your device
+Under certain circumstances, you may have to manually restart the device without using the software UI. This may help you solve an issue you are encountering without having to reset/reflash your device
 
 ### Standard restart procedure
 
@@ -147,7 +147,7 @@ You may need to put the device into recovery mode if:
 
 1. If ARC does not detect your device, ensure that you can connect to your device via File Explorer on your PC. If you cannot;
 
-    1. It is possible that your device may have USB policies that disable that connection. If so, try [Manual Flashing mode](hololens-recovery.md#manual-procedure).
+    1. It is possible that your device may have USB policies that disable that connection. If so, try [Manual Flashing mode](hololens-recovery.md#manual-flashing-mode-procedure).
     2. If there are no policies, try a different USB cable.
 
 1. Check that your device doesn't display a [1-3-5-LED pattern](hololens2-setup.md#lights-to-indicate-problems).
