@@ -1,14 +1,14 @@
 ---
 title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
-author: mattzmsft
-ms.author: mazeller
-ms.date: 9/30/2021
+author: evmill
+ms.author: v-evmill
+ms.date: 10/13/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-manager: jarrettr
+manager: ranjibb
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -26,12 +26,16 @@ This article describes how to resolve several common HoloLens issues.
 
 **Known Issues**
 - [Every time the power goes to 18 percent, the device suddenly shuts down automatically](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
-- [Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
+- [OneDrive UWP app doesn't work for Azure AD users](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
+- [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
+- [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
+- [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
+- [**Fixed** - Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
-- [Downloading locked files doesn't show error](#downloading-locked-files-doesnt-error)
-- [Device Portal file upload/download times out](#device-portal-file-uploaddownload-times-out)
+- [**Fixed** - Downloading locked files doesn't show error](#downloading-locked-files-doesnt-error)
+- [**Fixed** - Device Portal file upload/download times out](#device-portal-file-uploaddownload-times-out)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive doesn't automatically upload pictures](#onedrive-doesnt-automatically-upload-pictures)
 
@@ -65,6 +69,55 @@ There is a known known issue where when the device reaches 18% battery, it will 
 1. Submit a [Feedback Hub](hololens-feedback.md) issue
 1. Share the Feedback issue URL
 1. [Contact support](https://aka.ms/hololenssupport)
+
+[Back to list](#list)
+
+## OneDrive UWP app doesn't work for Azure AD users
+
+If you use OneDrive For Business using your Azure AD account, you may have encountered error when sign in to your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage. The OneDrive and HoloLens teams are working on the issue.
+
+### Workarounds
+
+Prerequisite: Customers can use Microsoft Edge and device OS is update to a Windows Holographic, 21H1 build or newer.
+
+If you are experiencing this issue, try one of the following:
+
+- Users can directly access OneDrive For Business from Microsoft Edge, and interact with their files the website from their browser.
+- Users can install the OneDrive PWA app to HoloLens by downloading it from Microsoft Edge. This will allow users to view and manage files on the device again. Read and follow these [instructions for installing the OneDrive PWA app on your HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
+
+[Back to list](#list)
+
+## Why do I see 0x80180014 during Autopilot?
+
+This error is typically encountered during device reset and re-use flows where a HoloLens device has gone through Autopilot at least once. In order to resolve this issue, please [delete the device from Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) and reset it again to complete Autopilot flow.
+
+For more info, please refer to [troubleshooting steps on the autopilot page.](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
+
+## Microsoft Store error code 0x80131500
+
+Some users may experience the Microsoft Store working not as expected, and see the error code 0x80131500. This is an issue caused by the region set on the HoloLens not being available in the Microsoft Store app on HoloLens. If you encounter error code 0x80131500, to workaround please:
+
+1. Set Settings > Time & Language > Region > Country or region, to one of the following:
+    - United States, Japan, China, Germany, Canada, United Kingdom, Ireland, France, Australia, New Zealand.
+1. Restart the Store app.
+1. For the whole device to reflect the change, the device will need to be restarted.
+
+The HoloLens team is working on adding support for more regions.
+
+See here [for countries to buy HoloLens 2.](hololens2-purchase.md)
+
+## Microsoft Edge fails to start the microphone
+
+When users using Microsoft Edge the microphone can fail to start, thus not being usable to interact with Edge in HoloLens. This known issue is related to the version of the Microsoft Edge app, please do not reflash your device to an earlier version as this will not fix this issue.
+
+### Who is affected?
+
+Users who have Microsoft Edge version 93, 94, or 95.
+You can check which version of Microsoft Edge you have by using the Microsoft Store app, then select the "See more" button represented by the **...** then select **Downloads and updates**.
+
+### Work around
+
+The current fix is in version 96, which is available to users who have enrolled in Microsoft Edge Insiders. This is different than enrolling your device as a Windows Insider. Read these instructions for details on [how to enroll into Edge’s insider program.](hololens-new-edge.md#microsoft-edge-insider-channels)
 
 ## Remote Assist video freezes after 20 minutes
 

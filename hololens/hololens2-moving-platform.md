@@ -5,7 +5,7 @@ keywords: moving platforms, dynamic motion, hololens, moving platform mode
 author: evmill
 ms.author: v-evmill
 ms.reviewer: yabahman
-ms.date: 8/10/2021
+ms.date: 10/12/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -18,10 +18,7 @@ appliesto:
 
 # Moving Platform Mode on Low Dynamic Motion Moving Platforms
 
-In **Insider build 20348.1411** we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you'll be able to use your HoloLens 2 in previously inaccessible environments like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
-
-> [!NOTE]
-> This feature is currently only available via [Windows Insiders](hololens-insider.md).
+In [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you'll be able to use your HoloLens 2 in previously inaccessible environments like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
 
 ![Moving platform example.](./images/mpm-compare.gif)
 
@@ -34,8 +31,8 @@ This article covers:
 
 HoloLens needs to be able to track your head position with [6 degrees of freedom](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (X, Y, Z, translation and roll, pitch, yaw rotation) in order to show stable holograms. To do that, HoloLens tracks two similar pieces of information from two separate sources:
 
-1. Visible light cameras – which track the environment, for example, the physical room in which you are using the HoloLens
-1. Inertial Measurement Unit (IMU), – which consists of an accelerometer, gyroscope, and magnetometer that tracks your head motion and orientation relative to Earth
+1. **Visible light cameras.** These cameras track the environment, for example, the physical room in which you are using the HoloLens
+1. **Inertial Measurement Unit (IMU).** The IMU consists of an accelerometer, gyroscope, and magnetometer that tracks your head motion and orientation relative to Earth
 
 Information from these two sources is compounded to track your head position at a low latency and high enough frequency in order to render smooth holograms.
 
@@ -57,10 +54,7 @@ While Moving Platform Mode was developed to intelligently handle cases of inerti
 
 Beta support for Moving Platform Mode requires only a few prerequisites:
 
-1. Install build 20348.1411 or newer [by flashing the latest Insiders build via ARC](hololens-insider.md#ffu-download-and-flash-directions) or [enrolling and updating your device](hololens-insider.md#start-receiving-insider-builds).
-
-   > [!NOTE]
-   > This build is currently only available on the [Insider Dev Channel](hololens-insider.md#start-receiving-insider-builds).
+1. Install [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) or newer by updating or flashing the [latest build](https://aka.ms/hololens2download) [via ARC](hololens-recovery.md#clean-reflash-the-device).
 
 2. Enable [Developer Mode and Device Portal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 
@@ -88,7 +82,7 @@ If you are unable to see the Moving Platform Mode option in Device Portal, then 
 
 ## Reporting Issues
 
-As mentioned above, this feature is a beta feature available only in Developer Mode, which means you may hit issues. If that happens, so we can investigate and improve the product, please
+As mentioned above, this feature is a beta feature available only in Developer Mode, which means you may hit issues. If that happens, so we can investigate and improve the product:
 
 1. Report the issue via [Feedback Hub](hololens-feedback.md) under the **Hologram accuracy, stability, and reliability** category and include:
     1. A description of problem, including the expected behavior and experienced behavior
