@@ -44,9 +44,12 @@ If the device can't boot to the startup menu, note the LED appearance and device
 
 > [!NOTE]
 > Let's start by defining terms.\
+>
 > "Restart" simply means turning the device off and on.\
+>
 > "Reset" means restoring the device to defaults through the Settings UI to reinstall the current image.\
-> "Reflash" means the device is connected to a PC, and a new image (optionally a different one) is installed.
+>
+> "Reflash" means the device is connected to a PC, and a new image (optionally a different one) is being installed.
 
 ## Restart the device
 
