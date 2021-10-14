@@ -44,11 +44,11 @@ The following steps and video can help guide you through the process of HoloLens
 
 ## Prerequisites
 
-1. Procure your headset
-   [Where to buy HoloLens 2]((hololens2-purchase.md))
-1.  Review common deployment scenarios
-    [Common Deployment Scenarios](hololens-requirements.md)    
+Provide new users with basic information.
 
+*   [Where to buy HoloLens 2]((hololens2-purchase.md))
+*   [HoloLens 2 support](hololens2-support.md)
+*   [Common Deployment Scenarios](hololens-requirements.md)
 
 ## Prepare
 
@@ -76,9 +76,14 @@ Distribute your HoloLens 2 devices and validate their configuration.
 
 | Component | Description |
 |-----------|------------|
+| [Deployment Considerations](hololens2-deployment-considerations.md) | Determine deployment requirements |
+| [Enroll HoloLens](hololens-enroll-mdm) | Enroll HoloLens in Modern Mobile Device Management |
 | [Enrollment Validation](hololens2-corp-connected-deploy.md#enrollment-validation) | Validate the device has Azure AD Joined from Settings or the Azure Portal |
 | [Certificate Validation](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | Check settings and validate they have been distributed correctly |
 | [Validate app installs](hololens2-corp-connected-deploy.md#validate-lob-app-install) | Confirm the app is present and working on your HoloLens 2 |
+| [Manage users](hololens-identity) | Set up and manage users |
+| [Create users and groups](hololens2-corp-connected-configure#azure-users-and-groups)
+| [Manage HoloLens devices with Microsoft Endpoint Manager](hololens-endpoint-configure)
 
 ## Maintain
 
