@@ -50,7 +50,7 @@ If the device can't boot to the startup menu, note the LED appearance and device
 
 ## Restart the device
 
-Under certain circumstances, you may have to manually restart the device without using the software UI. This may help you solve an issue you are encountering without having to reset/reflash your device
+Under certain circumstances, you may have to manually restart the device without using the software UI. This may help you solve an issue you are encountering without having to reset/reflash your device.
 
 ### Standard restart procedure
 
