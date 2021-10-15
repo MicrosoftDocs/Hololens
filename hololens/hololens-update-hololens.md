@@ -83,7 +83,7 @@ In some cases, you might want to go back to a previous version of the HoloLens s
 
 1. Alternatively, you can [reflash your HoloLens 2 with the Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device).
     1.  Choose which version you want to flash to: 
-        1.  You can download the [most recent HoloLens 2 release](https://download.microsoft.com/download/3/8/d/38d1459d-a926-4a37-ad29-bf36c5aaaf2c/FE_RELEASE_SVC_SYDNEY_REL_PROD.retail.multi.10.0.20348.1432.zip).
+        1.  You can download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
         1.  You can use the default build that ARC hosts.
         1.  You can use a build Support provided you with.
 
