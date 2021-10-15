@@ -6,8 +6,8 @@ keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, H
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -62,7 +62,7 @@ Under certain circumstances, you may have to manually restart the device without
 
 4. Connect the device to the host PC, and then open Device Manager. (For Windows 10, press the **Windows** key and then the **X** key, and then select **Device Manager**.) Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery device manager.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### Hard-restart procedure
 
@@ -77,6 +77,14 @@ If the standard reset procedure didn't work, use the hard-reset procedure:
 1. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and then select **Device Manager**). Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery device maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
+
+## Reset the device
+
+You can reset your device directly from your headset. Select **Settings**, then select **Update & Security > Reset & recovery > Reset this device**.
+
+   ![HoloLens headset reset.](images/headset-reset.png)
+
+When you reset in this manner, all user accounts will be removed and all data will be erased.
 
 ## Clean-reflash the device
 
