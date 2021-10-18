@@ -65,17 +65,17 @@ If you know you'll be using an offline PC, first download and install the [Windo
 
 1. Open Windows Configuration Designer (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
-   ![Enter project details.](images/icd-create-options-1703.png)
+   :::image type="content" alt-text="Enter project details." source="images/icd-create-options-1703.png":::
 
 1. Select **Provision HoloLens devices**, select your HoloLens device, and click **Next**.
 
 1. Name your project and select **Finish**.
 
-   ![ICD start options.](images/example-project.png)
+   :::image type="content" alt-text="ICD start options." source="images/example-project.png":::
 
 1. Read the instructions on the **Getting started** page and select **Next**. The pages for desktop provisioning walk you through the following steps.
 
-   ![Getting started.](images/wcd-steps.png)
+   :::image type="content" alt-text="Getting started." source="images/wcd-steps.png":::
   
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
