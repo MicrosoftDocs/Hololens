@@ -28,7 +28,7 @@
 #### [New Settings app](hololens-new-settings.md)
 #### [New Microsoft Edge](hololens-new-edge.md)
 ### Manage applications
-#### [Find, install, and uninstall applications](holographic-store-apps.md)
+#### [Find, install, and uninstall store apps](holographic-store-apps.md)
 #### [Manage custom apps for HoloLens 2](hololens2-holographic-custom-apps.md)
 ### Hologram optics and placement in space
 #### [Improve visual quality and comfort](hololens-calibration.md)
@@ -117,7 +117,7 @@
 ## [HoloLens 2 release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ## [Supported languages](hololens2-language-support.md)
-## [Develop with Microsoft Mesh (Preview)](/mesh/overview)
+## [Learn about Microsoft Mesh (Preview)](/mesh/overview)
 ## HoloLens (1st gen)
 ### First-time usage
 #### [About HoloLens (1st gen)](hololens1-hardware.md)

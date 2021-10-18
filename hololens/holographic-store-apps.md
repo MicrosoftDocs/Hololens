@@ -71,6 +71,9 @@ To download apps, you'll need to be signed in with a Microsoft account. Some app
 
 ### Install Microsoft OneDrive PWA App
 
+> [!NOTE]
+> PWA cannot be managed or deployed via Microsoft Intune / MDM.
+
 Pre-Requisites: User has already joined the HoloLens 2 device to their work tenant.
 
 1. Open start menu and launch Edge browser.
@@ -93,8 +96,8 @@ Pre-Requisites: User has already joined the HoloLens 2 device to their work tena
 
     ![All apps showing both apps.](images/office-pwa-5.jpg)
 
-> [!NOTE]
-> The “Microsoft OneDrive” is the PWA app where as “OneDrive” is the older UWP.
+    > [!NOTE]
+    > The “Microsoft OneDrive” is the PWA app where as “OneDrive” is the older UWP.
 
 1. You'll then be able to see your OneDrive files.
 
@@ -103,6 +106,8 @@ Pre-Requisites: User has already joined the HoloLens 2 device to their work tena
 See also: [Enabling automatic uploads to OneDrive for business](hololens-release-notes.md#onedrive-for-work-or-school-camera-roll-upload)
 
 ## Update Apps
+
+### Manual updates
 
 To update an app you installed from the Microsoft Store, you can update the app from the Microsoft Store app. For apps installed for the Microsoft Store for Business, you can also update those apps from the Microsoft Store for Business.
 
@@ -130,12 +135,32 @@ To update an app you installed from the Microsoft Store, you can update the app 
 >
 > If you would like to update a custom app that has been sideloaded or deployed, you will need to use the same method with the updated version of your app. To learn more about installing and running custom apps, read [custom holographic applications](holographic-custom-apps.md).
 
+### Automatic app updates
+
+Automatic updates apply to Microsoft Store or Microsoft Store for Business apps, and they can be updated automatically only if they have been installed directly from the Store. If installed from Intune, IT can push updates down from MDM by syncing with the Microsoft Store for Business for the latest available version for the app.
+
+> [!NOTE]
+> For apps sourced from the Microsoft Store for Business, you must be signed into the Store and authenticated with the same tenant that is associated with the Microsoft Store for Business catalog used on the device.
+
+#### How automatic updates work
+
+Automatic app updates are scheduled to occur daily (approximately every 24 hours) subject to network availability. Keep your device either active or plugged into AC to receive updates. Even if app updates are downloaded during active daily usage, they will only be applied when the app to be updated is no longer in use.
+
+> [!TIP]
+> If possible, charge your device overnight while it is connected to the corporate network. If updates can be downloaded and installed overnight, they are less likely to interrupt active device usage.
+
+#### How IT administrators can control automatic updates
+
+IT administrators can control automatic app updates through the [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) policy. This policy allows them to enable or disable automatic app updates completely, but it does not control when updates occur.
+
+As of [21H2](hololens-release-notes.md#windows-holographic-version-21h1), IT administrators can also use the [ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) policy to control when apps that were in use, but could not be updated in previous attempts, should be forcibly restarted.
+
 ## Uninstall apps
 
 There are three ways to uninstall applications. You can uninstall applications through the Microsoft Store, Start menu or from Settings.
 
 > [!WARNING]
-> You can not uninstall a system app or the Microsoft Store itself.
+> You cannot uninstall a system app or the Microsoft Store itself.
 
 > [!IMPORTANT]
 > If your HoloLens 2 has multiple users, you must be logged in as the user who installed the app to uninstall it.

@@ -76,8 +76,26 @@ landingContent:
             url: hololens2-corp-connected-overview.md
           - text: Deployment Guide - Offline secure
             url: hololens-common-scenarios-offline-secure.md
-  
-  # Card
+
+ # Card
+  - title: Mixed Reality Partner Resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Mixed Reality Partner Resources
+            url: https://www.microsoft.com/en-us/hololens/mixed-reality-partners
+          - text: Mixed Reality Partner Forum
+            url: https://techcommunity.microsoft.com/t5/mixed-reality-partners/bd-p/MixedRealityPartnersForum
+          - text: Mixed Reality Partner Blog
+            url: https://aka.ms/MRPartnerBlog
+          - text: Start designing and prototyping
+            url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/design
+          - text: Moving Platform Mode
+            url: /hololens/hololens2-moving-platform
+          - text: Environmental Considerations 
+            url: /hololens/hololens-environment-considerations
+            
+# Card
   - title: Troubleshooting
     linkLists:
       - linkListType: how-to-guide
@@ -128,7 +146,7 @@ landingContent:
             url: /windows/mixed-reality/mixed-reality-cloud-services#overview
           - text: Microsoft Mesh (Preview)
             url: /mesh/overview
- 
+
  # Card
   - title: More services
     linkLists:

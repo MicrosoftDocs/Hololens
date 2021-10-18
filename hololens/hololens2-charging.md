@@ -40,7 +40,7 @@ If the device is correctly booted and running, there are three ways to check the
 
 ## Alternative charging specifications
 
-HoloLens 2 can be charged by [USB Power Delivery](https://www.usb.org/usb-charger-pd) sources up to 27 Watts. If the source is able supply at least 10 Watts, HoloLens operating time can be extended (potentially indefinitely for some workloads). 
+HoloLens 2 can be charged by [USB Power Delivery](https://www.usb.org/usb-charger-pd) sources up to 27 Watts. If the source is able to supply at least 10 Watts, HoloLens operating time can be extended (potentially indefinitely for some workloads). 
 
 > [!NOTE]
 > Using a USB-A to USB-C charging cable will limit the charge to 7.5 Watts. Operating time will still be extended, but not as long as using USB-C to C.
