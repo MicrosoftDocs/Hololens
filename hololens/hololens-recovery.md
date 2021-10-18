@@ -1,13 +1,13 @@
 ---
-title: Restart, reset, or recover HoloLens
+title: Restart, reset, or recover HoloLens 2
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: How to use Advanced Recovery Companion to flash an image to HoloLens 2.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, arc, advanced recovery companion
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -40,7 +40,7 @@ If the device is correctly booted and running, there are three ways to check the
 
    ![A HoloLens 2 properties screen shows battery change level.](images/ResetRecovery2.png)
 
-If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the [troubleshooting guide](hololens-troubleshooting.md). If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard reset procedure](hololens-recovery.md#hard-restart-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
+If the device can't boot to the startup menu, note the LED appearance and device enumeration on the host PC. Then follow the [troubleshooting guide](hololens-troubleshooting.md). If the state of the device doesn't match any of the states listed in the troubleshooting guide, perform the [hard restart procedure](hololens-recovery.md#hard-restart-procedure) with the device connected to the power supply, not to your host PC. Wait at least one hour for the device to charge.
 
 > [!NOTE]
 > Let's start by defining terms.\
@@ -62,11 +62,11 @@ Under certain circumstances, you may have to manually restart the device without
 
 4. Connect the device to the host PC, and then open Device Manager. (For Windows 10, press the **Windows** key and then the **X** key, and then select **Device Manager**.) Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery device manager.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### Hard-restart procedure
 
-If the standard reset procedure didn't work, use the hard-reset procedure:
+If the standard reset procedure didn't work, use the hard-restart procedure:
 
 1. Unplug the Type-C cable to disconnect the device from the power supply or the host PC.
 
@@ -76,7 +76,15 @@ If the standard reset procedure didn't work, use the hard-reset procedure:
 
 1. Open Device Manager (for Windows 10 press the **Windows** key and then the **X** key, and then select **Device Manager**). Make sure the device enumerates correctly as *Microsoft HoloLens* as shown in the following image:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery device maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery device manager 2.](images/MicrosoftHoloLens_DeviceManager.png)
+
+## Reset the device
+
+You can reset your device directly from your headset. Select **Settings**, then select **Update & Security > Reset & recovery > Reset this device**.
+
+   ![HoloLens headset reset.](images/headset-reset-recovery.png)
+
+When you reset in this manner, all user accounts will be removed and all data will be erased.
 
 ## Clean-reflash the device
 
