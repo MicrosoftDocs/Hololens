@@ -75,7 +75,7 @@ If you know you'll be using an offline PC, first download and install the [Windo
 
 1. Read the instructions on the **Getting started** page and select **Next**. The pages for desktop provisioning walk you through the following steps.
 
-   ![Getting started.](images/WCD_steps.png)
+   ![Getting started.](images/wcd-steps.png)
   
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
