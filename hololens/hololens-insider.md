@@ -41,6 +41,7 @@ Colorblind mode is useful a great feature that makes HoloLens more accessible. T
 - Fixed an known issue where [every time the power goes to 18 percent, the device suddenly shuts down automatically](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically).
 - Improvements to Moving Platform Mode when detecting the down direction.
 - Fixed an issue around update dialogs.
+- Updated inbox Microsoft Edge browser version.
 
 ## Start receiving Insider builds
 
