@@ -62,6 +62,9 @@ This article describes how to resolve several common HoloLens issues.
 
 ## Every time the power goes to 18 percent, the device suddenly shuts down automatically
 
+> [!NOTE]
+> There is a fix for this issue available in [Windows Insiders.](hololens-insider.md)
+
 There is a known known issue where when the device reaches 18% battery, it will unexpectedly shut down. This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
 
 1. Ensure optional diagnostics are enabled on your device(s)

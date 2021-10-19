@@ -36,6 +36,12 @@ Colorblind mode is useful a great feature that makes HoloLens more accessible. T
 |-----|-----------|------------|
 | ![Color filter off](images/colorblind-off.png)   | ![Color filter greyscale](images/colorblind-greyscale.png)         | ![Color filter tritanopia](images/colorblind-tritanopia.png)          |
 
+### Fixes and improvements
+
+- Fixed an known issue where [every time the power goes to 18 percent, the device suddenly shuts down automatically](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically).
+- Improvements to Moving Platform Mode when detecting the down direction.
+- Fixed an issue around update dialogs.
+
 ## Start receiving Insider builds
 
 > [!NOTE]
