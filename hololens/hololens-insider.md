@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 10/12/2021
+ms.date: 10/19/2021
 ms.reviewer: 
 manager: ranjibb
 appliesto:
@@ -24,7 +24,17 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-We're excited that all our recent Insider features have gone public! If you'd like to read about these please take at look at the [release notes page](hololens-release-notes.md)
+What's new and on the horizon for HoloLens? Check out these new updates coming to HoloLens!
+
+### Colorblind mode
+
+Added in Insider build xxxx.xxxxx
+
+Colorblind mode is useful a great feature that makes HoloLens more accessible. The new colorblind mode can be found in the Settings app under **Settings** -> **Ease of Access** -> **Color filters**. Several new filters are available. Here's a visual example of some of the available filters.
+
+| Off | Greyscale | Tritanopia |
+|-----|-----------|------------|
+| ![Color filter off](images/colorblind-off.png)   | ![Color filter greyscale](images/colorblind-greyscale.png)         | ![Color filter tritanopia](images/colorblind-tritanopia.png)          |
 
 ## Start receiving Insider builds
 
