@@ -17,7 +17,7 @@ appliesto:
 
 # Security overview
 
-The HoloLens 2 security architecture has been completely redesigned to provide advanced, innovative security and privacy protection, end-to-end. Here, we answer common questions and share different ways to secure Microsoft HoloLens 2 devices. 
+The HoloLens 2 security architecture has been redesigned to provide advanced, innovative security and privacy protection, end-to-end. Here, we answer common questions and share different ways to secure Microsoft HoloLens 2 devices. 
 
 You may be a business decision-maker, IT professional, or an innovation team looking to adopt HoloLens within your organization. As you build from proof of concept to a scaled deployment, our security strategies will help you deploy HoloLens within your IT infrastructure safely.
 
@@ -34,10 +34,10 @@ The following security scenarios are the most common:
 | Protect data when devices are lost and/or stolen | [Encryption and data protection](security-encryption-data-protection.md) | Encryption and Data Protection prevents unauthorized applications from accessing sensitive information. |
 | Remove network vulnerabilities and ensure secure/encrypted connectivity | [Network security](security-network-security.md) | With HoloLens 2, the firewall is always enabled, and there is no way to disable it, either programmatically or through the UI. |
 | Get in touch with Microsoft Security Engineering teams | [Security engineering](security-engineering.md) | Microsoft has several resources and teams devoted to optimizing the company’s engineering protocols, addressing compliance, and ensuring customer trust.|
-| Ensure privacy and data protection for my customers (e.g. GDPR) | [HoloLens 2 Privacy and Data Protection](hololens2-privacy.md) | HoloLens 2 security has been redesigned to provide advanced, innovative security and privacy protection, incorporating Microsoft’s approach to privacy and GDPR regulations.|
+| Ensure privacy and data protection for my customers (for example, GDPR) | [HoloLens 2 Privacy and Data Protection](hololens2-privacy.md) | HoloLens 2 security has been redesigned to provide advanced, innovative security and privacy protection, incorporating Microsoft’s approach to privacy and GDPR regulations.|
 | Deploy HoloLens 2 at scale | [Common deployment scenarios](hololens-requirements.md) | Following all the steps to deploy devices will help you to achieve value for your mixed reality scenario.|
 | Protect the device from untrusted apps, malware, viruses, or booting from removeable media | [State separation and isolation](security-state-separation-isolation.md) | Digital signing code ensures that only Signed Firmware updates are completed, preventing activities like Debug over USB from being installed. |
-| Set up secure logins for multiple users | [Manage user identity and login for Hololens](hololens-identity.md) | When leveraging AAD, users are required to leverage Windows Hello for Business and leverage a device PIN or biometric (iris) for login to the device. AAD identity information is not stored locally on the device.
+| Set up secure logins for multiple users | [Manage user identity and login for Hololens](hololens-identity.md) | When using AAD, users are required to use Windows Hello for Business and use a device PIN or biometric (iris) for login to the device. AAD identity information is not stored locally on the device.
 | Authenticate users through an external authentication service | [Hybrid identity documentation](/azure/active-directory/hybrid/) | Single user identities for authentication and authorization can be created for all resources, regardless of location.
 | Permanently delete sensitive data | [Restart, reset, or recover HoloLens](hololens-recovery.md#clean-reflash-the-device) | Any data stored on the unit must be cleared using a full device reset or reflash. |
 | Clear pictures and video with a full reset or reflash.  | [Holographic Data](holographic-data.md) | Sensitive data cannot be stored persistently.|
