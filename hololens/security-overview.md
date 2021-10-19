@@ -45,6 +45,6 @@ The following security scenarios are the most common:
 | Assign or restrict privilege levels | [Admin-less operating system](security-adminless-os.md) | Devicelock inactivity time can be reset |
 | Reconfigure product security capabilities | [Page Settings Visibility](settings-uri-list.md) | PageVisibilityList policy can be reset to restrict the pages seen within the Settings app. |
 | Apply patches to the device as they become available (keep it plugged in) | [Page Settings Visibility](hololens-update-hololens.md) | Update types, scheduling, and tools for updating. |
-| Installing patches or other software remotely | [Manage HoloLens updates](hololens-updates-hololens.md) |Updating automatically, checking for updates, rolling back updates. |
+| Installing patches or other software remotely | [Update HoloLens 2](hololens-updates-hololens.md) | Updating automatically, checking for updates, rolling back updates. |
 | Backing up to remote storage or removable media | [Find, open, and save files on HoloLens](holographic-data.md#onedrive-app) |
 | Protect the device from loss or unauthorized access | [Encryption and data protection](security-encryption-data-protection.md) |
