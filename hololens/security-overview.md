@@ -17,34 +17,34 @@ appliesto:
 
 # Security overview
 
-Businesses and customers need a truly modern, cutting-edge operating system with a strong, built-in security framework that allows developers to design, build, and deliver applications to effectively combat a complex threat landscape and its associated risks. The HoloLens 2 security architecture has been completely redesigned to provide advanced, innovative security and privacy protection, end-to-end.
+The HoloLens 2 security architecture has been completely redesigned to provide advanced, innovative security and privacy protection, end-to-end. Here, we answer common questions and share different ways to secure Microsoft HoloLens 2 devices. 
 
-Here, we share different ways to secure Microsoft HoloLens 2 devices. You may be a business decision-maker, IT professional, or an innovation team looking to adopt HoloLens within your organization. As you build from proof of concept to a scaled deployment, our security strategies will help you deploy HoloLens within your IT infrastructure safely.
+You may be a business decision-maker, IT professional, or an innovation team looking to adopt HoloLens within your organization. As you build from proof of concept to a scaled deployment, our security strategies will help you deploy HoloLens within your IT infrastructure safely.
 
 The following security scenarios are the most common:
 
 | Scenario | Topic | Description |
 |---------|---------|---------|
-| Ensure cloud application deployment readiness | [Azure operational security checklist](azure/security/fundamentals/operational-checklist.md) | This checklist will help you determine if your application meets essential operational security recommendations. |
-| Optimize my environment for Mobile Device Management with Intune | [Use security baselines to configure Windows 10 devices in Intune](mem/intune/protect/security-baselines.md) | Intune's security baselines are pre-configured groups of Windows settings that will help you quickly apply the settings recommended for your users and devices. |
+| Ensure cloud application deployment readiness | [Azure operational security checklist](/azure/security/fundamentals/operational-checklist.md) | This checklist will help you determine if your application meets essential operational security recommendations. |
+| Optimize my environment for Mobile Device Management with Intune | [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines.md) | Intune's security baselines are pre-configured groups of Windows settings that will help you quickly apply the settings recommended for your users and devices. |
 | Ensure the integrity of stored data | [Security overview and architecture](security-architecture.md) | The HoloLens 2 security architecture offers secure storage locations and advanced security elements. |
 | Minimize the surface area for privilege escalation with better Administration | [Admin-less operating system](security-adminless-os.md) | HoloLens disabled support for the Administrators group and limits all third-party UWP application code.  |
 | Use modern security and authentication methods | [Limiting password use](security-limiting-password-use.md) | HoloLens 2 enables strong, hardware-backed “password-less” credentials for device sign in. |
 | Protect against threats before or during runtime | [Hardware-backed integrity and runtime attestation](security-hardware-backed-integrity.md) | Unified Extensible Firmware Interface (UEFI) Secure Boot detects and prevents attempts to tamper with firmware through bluetooth, wifi, or Ethernet. It includes strong encryption for Trusted Platform Modules (TPMs). |
 | Protect data when devices are lost and/or stolen | [Encryption and data protection](security-encryption-data-protection.md) | Encryption and Data Protection prevents unauthorized applications from accessing sensitive information. |
-| Remove network vulnerabilities and ensure secure connectivity | [Network security](security-network-security.md) | With HoloLens 2, the firewall is always enabled, and there is no way to disable it, either programmatically or through the UI. |
+| Remove network vulnerabilities and ensure secure/encrypted connectivity | [Network security](security-network-security.md) | With HoloLens 2, the firewall is always enabled, and there is no way to disable it, either programmatically or through the UI. |
 | Get in touch with Microsoft Security Engineering teams | [Security engineering](security-engineering.md) | Microsoft has several resources and teams devoted to optimizing the company’s engineering protocols, addressing compliance, and ensuring customer trust.|
 | Ensure privacy and data protection for my customers (e.g. GDPR) | [HoloLens 2 Privacy and Data Protection](hololens2-privacy.md) | HoloLens 2 security has been redesigned to provide advanced, innovative security and privacy protection, incorporating Microsoft’s approach to privacy and GDPR regulations.|
 | Deploy HoloLens 2 at scale | [Common deployment scenarios](hololens-requirements.md) | Following all the steps to deploy devices will help you to achieve value for your mixed reality scenario.|
-| Ensure that untrusted apps, malware, and viruses cannot impact the system security | [State separation and isolation](hololens/security-state-separation-isolation.md) | Digital signing code ensures that only Signed Firmware updates are completed, preventing activities like Debug over USB from being installed. |
-| Set up secure logins for multiple users | [Manage user identity and login for Hololens](hololens/hololens-identity.md) | When leveraging AAD, users are required to leverage Windows Hello for Business and leverage a device PIN or biometric (iris) for login to the device. AAD identity information is not stored locally on the device.
+| Protect the device from untrusted apps, malware, viruses, or booting from removeable media | [State separation and isolation](security-state-separation-isolation.md) | Digital signing code ensures that only Signed Firmware updates are completed, preventing activities like Debug over USB from being installed. |
+| Set up secure logins for multiple users | [Manage user identity and login for Hololens](hololens-identity.md) | When leveraging AAD, users are required to leverage Windows Hello for Business and leverage a device PIN or biometric (iris) for login to the device. AAD identity information is not stored locally on the device.
 | Authenticate users through an external authentication service | [Hybrid identity documentation](/azure/active-directory/hybrid/) | Single user identities for authentication and authorization can be created for all resources, regardless of location.
-| Avoid maintaining data in volatile memory | [Restart, reset, or recover HoloLens](hololens/hololens-recovery.md) | Any data stored on the unit must be cleared using a full device reset or reflash. |
-| Clear pictures and video with a full reset or reflash.  | [Holographic Data](hololens/holographic-data.md) | Sensitive data cannot be stored persistently.|
+| Permanently delete sensitive data | [Restart, reset, or recover HoloLens](hololens-recovery.md#clean-reflash-the-device) | Any data stored on the unit must be cleared using a full device reset or reflash. |
+| Clear pictures and video with a full reset or reflash.  | [Holographic Data](holographic-data.md) | Sensitive data cannot be stored persistently.|
 | Reconfigure login inactivity or auto-logoff and define user account passwords | [Policy CSP - DeviceLock](/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxinactivitytimedevicelock) | Devicelock time periods can be reset. |
-| Assign or restrict privilege levels | [Admin-less operating system](/hololens/security-adminless-os.md) | Devicelock inactivity time can be reset |
-| Reconfigure product security capabilities | [Page Settings Visibility](/hololens/settings-uri-list.md) | PageVisibilityList policy can be reset to restrict the pages seen within the Settings app. |
-| Apply patches to the device as they become available (keep it plugged in) | [Page Settings Visibility](/hololens/hololens-update-hololens.md) | Update types, scheduling, and tools for updating. |
-| Installing patches or other software remotely | [Manage HoloLens updates](/hololens/hololens-updates-hololens.md) |Updating automatically, checking for updates, rolling back updates. |
-| Backing up to remote storage or removable media | [Find, open, and save files on HoloLens](/hololens/holographic-data.md#onedrive-app) |
-| Protect the device from loss or unauthorized access | [Encryption and data protection](hololens/security-encryption-data-protection.md) |
+| Assign or restrict privilege levels | [Admin-less operating system](security-adminless-os.md) | Devicelock inactivity time can be reset |
+| Reconfigure product security capabilities | [Page Settings Visibility](settings-uri-list.md) | PageVisibilityList policy can be reset to restrict the pages seen within the Settings app. |
+| Apply patches to the device as they become available (keep it plugged in) | [Page Settings Visibility](hololens-update-hololens.md) | Update types, scheduling, and tools for updating. |
+| Installing patches or other software remotely | [Manage HoloLens updates](hololens-updates-hololens.md) |Updating automatically, checking for updates, rolling back updates. |
+| Backing up to remote storage or removable media | [Find, open, and save files on HoloLens](holographic-data.md#onedrive-app) |
+| Protect the device from loss or unauthorized access | [Encryption and data protection](security-encryption-data-protection.md) |
