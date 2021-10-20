@@ -93,11 +93,11 @@ N/A
 
 During this step, the device has already found and downloaded the update. It needs to restart to start the install process. By default, the device won't restart during [active hours](#configure-active-hours). If you were to wear the device you'd see a progress bar. When it is finished the device will boot into the sign-in screen and be finished updating!
 
-##### Best practices for
+##### Best practices for Restart
 
 If the device is left plugged in overnight, it will automatically restart after it has been staged with the download installed during the maintain window (which is outside active hours). Once the download has been installed and stage internet connectivity isn't a requirement.
 
-##### Configurations for
+##### Configurations for Restart
 
 Sometimes you may have already downloaded the update, but haven't restarted yet due to one reason or another. If you would like to have more control over updates, then we have several different control methods over restarts. Let's go over some in order of effectiveness.
 
