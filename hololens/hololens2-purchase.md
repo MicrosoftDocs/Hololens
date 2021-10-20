@@ -71,7 +71,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 | Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
-| **Mexico** | Aevitas S.A. de C.V. | José María de Teresa <contacto@aevitas.com.mx> | [Buy HoloLens 2 - Aevitas](https://aevitas.com.mx/) | [Buy HoloLens 2 Industrial Edition - Aevitas](https://aevitas.com.mx/) |
+| **Mexico** | Aevitas S.A. de C.V. | José María de Teresa <contacto@aevitas.com.mx> | [Buy HoloLens 2 - Aevitas](https://aevitas.com.mx) | [Buy HoloLens 2 Industrial Edition - Aevitas](https://aevitas.com.mx) |
 
 ### **North America**
 
