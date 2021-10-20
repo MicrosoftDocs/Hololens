@@ -3,14 +3,14 @@ title: Manage HoloLens updates
 description: Learn how your administrators can use mobile device management to manage updates to HoloLens devices.
 ms.prod: hololens
 ms.sitesec: library
-author: Teresa-Motiv
-ms.author: v-tea
+author: evmill
+ms.author: v-evmill
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 10/12/2021
-ms.reviewer: jarrettr
-manager: jarrettr
+ms.date: 10/20/2021
+ms.reviewer: shriyen
+manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -46,6 +46,75 @@ For a detailed discussion about how to use Intune to configure Windows Update fo
 > Intune provides two policy types for managing updates: *Windows 10 update ring* and *Windows 10 feature update*. The Windows 10 feature update policy type is in public preview at this time and is not supported for HoloLens.
 >  
 > You can use Windows 10 update ring policies to manage HoloLens 2 updates.
+
+
+
+### How to optimize HoloLens updates
+
+Many users want their devices to update seamlessly and as soon as possible, ensuring that all their devices stay on the same version. There are a few things to keep in mind as HoloLens is a bit different from other devices like your Desktop PC or mobile phone.
+
+HoloLens performs updates in 3 stages. **Scan -> Download &amp; Install -> Reboot.** In this quick guide we'll go over each stage, explain the default behaviors, and then discuss some configurations you can use to optimize each step.
+
+Overall summary of best practices:
+
+The device should be plugged in and connected to the internet outside of configured Active Hours, usually overnight, to ensure an update can be applied. Go to Settings -> Update & Security -> Windows Update to see current Active Hour settings.
+
+#### 1. Scan
+
+##### What happens during Scan
+
+The initial step for any update is that the HoloLens will scan for updates. In order to scan, the device has to be powered on, which includes sleep/hibernation modes. It will scan for an update every 22 hours. In order for the update scan to succeed it needs to have internet connectivity. This scan happens automatically, although a user can manually start a scan from the Settings app. If the device was turned off during the last scheduled scan then it will initiate a scan the next time it is plugged in.
+
+##### Best practices for Scan
+
+The two critical pieces for scan to succeed are power and internet connectivity. We suggest that when users end their session with HoloLens they return it to an area where it is plugged in overnight and that it still has internet connectivity in that area.
+
+##### Configurations for Scan
+
+If your devices are having issues successfully scanning for updates entirely (verify using a manual scan when you know an update is pending) then check the three following configurations.
+
+1. That you if you have a restrictive network in your organization, that you have allowed the [endpoints for Windows Update](hololens-offline.md).
+2. Your device isn't receiving a [deferral policy](#configure-an-update-deferral-policy), which delays when updates are available for this device.
+3. If your device at Intune uses _Feature Updates for Windows 10_ or _Quality Updates for Windows 10_, please remove devices from being opted in these rings. These are not supported for HoloLens devices.
+
+#### 2. Download & Install
+
+##### What happens during Download & Install
+
+Once Windows Update has scanned and successfully found a build to update to, it can begin to download the update. If a scan is initiated during active hours that finds an update, then the update will wait to download until the device is plugged into power. Like scanning, a user can manually choose to start the download.
+
+##### Best practices for Download & Install
+
+If the best practices for scanning are followed, then the device should be plugged into power and have internet connectivity. These best practices are the same, and after the scan, if an update is found it will start the download.
+
+##### Configurations for for Download & Install
+
+N/A
+
+#### 3. Restart
+
+##### What happens during Restart
+
+During this step, the device has already found and downloaded the update. It needs to restart to start the install process. By default, the device won't restart during [active hours](#configure-active-hours). If you were to wear the device you'd see a progress bar. When it is finished the device will boot into the sign-in screen and be finished updating!
+
+##### Best practices for
+
+If the device is left plugged in overnight, it will automatically restart after it has been staged with the download installed during the maintain window (which is outside active hours). Once the download has been installed and stage internet connectivity isn't a requirement.
+
+##### Configurations for
+
+Sometimes you may have already downloaded the update, but haven't restarted yet due to one reason or another. If you would like to have more control over updates, then we have several different control methods over restarts. Let's go over some in order of effectiveness.
+
+1. Set Deadlines. If you want to ensure that a download update isn't delayed by a user either directly or indirectly, you can set a deadline to force the device to update. Check out [the new deadline policies added in 21H2.](#improved-update-restart-detection-and-notifications)
+2. Configure different default active hours. If your devices are used as different times of day, or you'd like to change your active hours so the update process is started at a different time of day. Consider
+3. Configure an update schedule.
+
+
+
+
+
+
+
 
 ### Configure update policies for HoloLens 2 or HoloLens (1st gen)
 
@@ -150,9 +219,10 @@ You can configure different deferrals for feature updates and quality updates. T
 
 #### Pause Updates via Device
 
-If a user does not have access to MDM they can individually Pause updates for up to 35 days manually on a HoloLens 2 device on build [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) or later. Users can reach this setting by navigating to **Settings > Update & Security > Advanced options** scroll down to **Pause updates** and select the date until which they will pause updates. Once a user reached the pause limit, the device will need to get new updates before they can pause again. 
+If a user does not have access to MDM they can individually Pause updates for up to 35 days manually on a HoloLens 2 device on build [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) or later. Users can reach this setting by navigating to **Settings > Update & Security > Advanced options** scroll down to **Pause updates** and select the date until which they will pause updates. Once a user reached the pause limit, the device will need to get new updates before they can pause again.
 
-Starting with [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2), this pause updates function can be managed for HoloLens 2 devices. 
+Starting with [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2), this pause updates function can be managed for HoloLens 2 devices:
+
 - [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
     - 0 (default) – Enabled
     - 1 – Disabled
@@ -246,7 +316,7 @@ To revert to a previous version of HoloLens (1st gen), follow these steps:
 1. Select the installation (.ffu) file.
 1. Select **Install software**, and then follow the instructions.
 
-**If WDRT doesn't detect your device**
+#### If WDRT doesn't detect your device
 
 If WDRT doesn't detect your HoloLens device, try restarting your computer. If that doesn't work, select **My device was not detected**, select **Microsoft HoloLens**, and then follow the instructions.
 
