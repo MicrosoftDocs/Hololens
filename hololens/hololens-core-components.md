@@ -9,7 +9,7 @@ ms.author: v-beehanson
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/11/2021
+ms.date: 10/20/2021
 appliesto:
 - HoloLens 2
 ---
@@ -73,13 +73,13 @@ Distribute your HoloLens 2 devices and validate their configuration.
 | Component | Description |
 |-----------|------------|
 | Deployment Considerations - add link | Determine deployment requirements |
-| [Enroll HoloLens](hololens-enroll-mdm) | Enroll HoloLens in Modern Mobile Device Management |
+| [Enroll HoloLens](hololens-enroll-mdm.md) | Enroll HoloLens in Modern Mobile Device Management |
 | [Enrollment Validation](hololens2-corp-connected-deploy.md#enrollment-validation) | Validate the device has Azure AD Joined from Settings or the Azure Portal |
 | [Certificate Validation](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | Check settings and validate they have been distributed correctly |
 | [Validate app installs](hololens2-corp-connected-deploy.md#validate-lob-app-install) | Confirm the app is present and working on your HoloLens 2 |
-| [Manage users](hololens-identity) | Set up and manage users |
-| [Create users and groups](hololens2-corp-connected-configure#azure-users-and-groups)
-| [Manage HoloLens devices with Microsoft Endpoint Manager](hololens-endpoint-configure)
+| [Manage users](hololens-identity.md) | Set up and manage users |
+| [Create users and groups](hololens2-corp-connected-configure.md#azure-users-and-groups)
+| [Manage HoloLens devices with Microsoft Endpoint Manager](hololens-endpoint-configure.md)
 
 ## Maintain
 
