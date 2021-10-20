@@ -47,17 +47,13 @@ For a detailed discussion about how to use Intune to configure Windows Update fo
 >  
 > You can use Windows 10 update ring policies to manage HoloLens 2 updates.
 
-
-
 ### How to optimize HoloLens updates
 
 Many users want their devices to update seamlessly and as soon as possible, ensuring that all their devices stay on the same version. There are a few things to keep in mind as HoloLens is a bit different from other devices like your Desktop PC or mobile phone.
 
-HoloLens performs updates in 3 stages. **Scan -> Download &amp; Install -> Reboot.** In this quick guide we'll go over each stage, explain the default behaviors, and then discuss some configurations you can use to optimize each step.
+HoloLens performs updates in 3 stages. **Scan -> Download &amp; Install -> Reboot**. In this quick guide we'll go over each stage, explain the default behaviors, and then discuss some configurations you can use to optimize each step.
 
-Overall summary of best practices:
-
-The device should be plugged in and connected to the internet outside of configured Active Hours, usually overnight, to ensure an update can be applied. Go to Settings -> Update & Security -> Windows Update to see current Active Hour settings.
+**Overall summary of best practices:** The device should be plugged in and connected to the internet outside of configured Active Hours, usually overnight, to ensure an update can be applied. Go to **Settings** -> **Update & Security** -> **Windows Update** to see current Active Hour settings.
 
 #### 1. Scan
 
@@ -108,13 +104,6 @@ Sometimes you may have already downloaded the update, but haven't restarted yet 
 1. Set Deadlines. If you want to ensure that a download update isn't delayed by a user either directly or indirectly, you can set a deadline to force the device to update. Check out [the new deadline policies added in 21H2.](#improved-update-restart-detection-and-notifications)
 2. Configure different default active hours. If your devices are used as different times of day, or you'd like to change your active hours so the update process is started at a different time of day. Consider
 3. Configure an update schedule.
-
-
-
-
-
-
-
 
 ### Configure update policies for HoloLens 2 or HoloLens (1st gen)
 
