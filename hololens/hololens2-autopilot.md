@@ -349,7 +349,7 @@ The following articles may be a useful resource for you to learn more informatio
 
 By default, HoloLens 2 waits for 15 seconds to detect Autopilot after detecting the internet. If no autopilot profile is detected within 15 seconds, that means Autopilot was not discovered correctly, and you will see the EULA page.
 
-Reboot your device and try again. For more information, see [Known Issues and Limitations](hololens2-autopilot.md#known-issues-and-limitations) or [Troubleshooting](hololens2-autopilot.md#troubleshooting).
+Reboot your device and try again. For more information, see [Known Issues and Limitations](hololens2-autopilot.md#known-issues-and-limitations).
 
 ## Feedback and support for Autopilot
 
