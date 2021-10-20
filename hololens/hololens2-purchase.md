@@ -36,6 +36,12 @@ HoloLens 2 is now available in some countries outside of the US, along with some
 ## Find an authorized HoloLens 2 reseller
 See the below tables for HoloLens 2 availability and purchase options by region.
 
+### **Africa**
+
+| Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
+|---------|-----|---------|----------------|----------|
+| **South Africa** | Insight Enterprises Australia Pty Ltd | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>Costa Aligianis  [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com) | [Buy HoloLens 2 - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html)
+
 ### **APAC**
 
 | Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
@@ -60,6 +66,12 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Taiwan** | Systex Software & Service Corporation精誠資訊股份有限公司 | Gina Ko<br><ginako@systex.com><br>Sean Chien<br><seanchien@systex.com> | [Buy HoloLens 2 - Systex Software & Service Corporation精誠資訊股份有限公司](https://tw.systex.com/microsoft-hololens/) | [Buy HoloLens 2 Industrial Edition - Systex Software & Service Corporation精誠資訊股份有限公司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) | 
 | **Thailand** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [Buy HoloLens 2 - Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [Buy HoloLens 2 Industrial Edition - Sustainable Solution Co., Ltd.](https://hololensthai.com/) |
 | **Vietnam** | CÔNG TY TNHH HIVERLAB VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [Buy HoloLens 2 - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) | [Buy HoloLens 2 Industrial Edition - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
+
+### **South America**
+
+| Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
+|---------|-----|---------|----------------|----------|
+| **Mexico** | Aevitas S.A. de CV | Jose Maria de Teresa <contacto@aevitas.com.mx> | [Buy HoloLens 2 - Aevitas](https://http://aevitas.com.mx/) | [Buy HoloLens 2 Industrial Edition - Aevitas](https://http://aevitas.com.mx/) |
 
 ### **North America**
 
