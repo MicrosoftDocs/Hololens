@@ -315,12 +315,6 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
 
-#### Why did I not see Autopilot experience even though the Autopilot profile is assigned in Intune?
-
-By default, HoloLens 2 waits for 15 seconds to detect Autopilot after detecting the internet. If no autopilot profile is detected within 15 seconds, that means Autopilot was not discovered correctly, and you will see the EULA page.
-
-Reboot your device and try again. For more information, see [Known Issues and Limitations](hololens2-autopilot.md#known-issues-and-limitations) or [Troubleshooting](hololens2-autopilot.md#troubleshooting).
-
 ## Known issues and limitations
 
 ### Why do I see 0x80180014 during Autopilot?
@@ -350,6 +344,12 @@ The following articles may be a useful resource for you to learn more informatio
 - [Windows Autopilot - known issues](/mem/autopilot/known-issues)
 - [Troubleshoot Windows device enrollment problems in Microsoft Intune](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot - Policy Conflicts](/mem/autopilot/policy-conflicts)
+
+#### Why did I not see Autopilot experience even though the Autopilot profile is assigned in Intune?
+
+By default, HoloLens 2 waits for 15 seconds to detect Autopilot after detecting the internet. If no autopilot profile is detected within 15 seconds, that means Autopilot was not discovered correctly, and you will see the EULA page.
+
+Reboot your device and try again. For more information, see [Known Issues and Limitations](hololens2-autopilot.md#known-issues-and-limitations) or [Troubleshooting](hololens2-autopilot.md#troubleshooting).
 
 ## Feedback and support for Autopilot
 
