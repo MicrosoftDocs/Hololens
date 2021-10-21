@@ -38,11 +38,11 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 ### **Africa**
 
-| Country | ADD | HoloLens 2 DMP Links |
-|---------|-----|----------------|
-| **South Africa** | Tarsus Distribution | [Datacentrix-a leading hybrid IT system integrator and managed services provider](https://www.datacentrix.co.za/)|
-| | |[Nulitics, Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)|
-| | |[Managed Cloud and IT Services, South Africa, Crimsonline](https://www.crimsonline.co.za)|
+| Country | ADD | DMPs | HoloLens 2 DMPs |
+|---------|-----|------|----------------|
+| **South Africa** | Tarsus Distribution | Datacentrix | [Datacentrix - a leading hybrid IT system integrator and managed services provider](https://www.datacentrix.co.za/)|
+| || Nulitics Development Company Pty Ltd. | [ Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)|
+| | | Crimson Line Networking <br/>cc - t/a Crimson Line - Solving IT |[Managed Cloud and IT Services, South Africa, Crimsonline](https://www.crimsonline.co.za)|
 
 
 ### **APAC**
@@ -71,6 +71,12 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Vietnam** | CÔNG TY TNHH HIVERLAB VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [Buy HoloLens 2 - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) | [Buy HoloLens 2 Industrial Edition - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
 
 ### **South America**
+
+| Country | ADD | HoloLens 2 DMPs |
+|---------|-----|----------------|
+| **South Africa** | Tarsus Distribution | [Datacentrix-a leading hybrid IT system integrator and managed services provider](https://www.datacentrix.co.za/)|
+| | |[Nulitics, Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)|
+| | |[Managed Cloud and IT Services, South Africa, Crimsonline](https://www.crimsonline.co.za)|
 
 | Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
