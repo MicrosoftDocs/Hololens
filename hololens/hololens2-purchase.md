@@ -38,9 +38,9 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 ### **Africa**
 
-| Country | ADD | DMPs | HoloLens 2 DMPs Link |
+| Country | ADD | DMPs | HoloLens 2 DMP Links |
 |---------|-----|---------|----------------|----------|
-| **South Africa** | Tarsus Distribution | 1-Datacentrix \ 2-Nulitics Development Company Pty Ltd \ 3-Crimson Line Networking cc - t/a Crimson Line - Solving IT | [1-Datacentrix-a leading hybrid IT system integrator and managed services provider](https://www.datacentrix.co.za/)\ [2-Nulitics, Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)\[3-Managed Cloud and IT Services | South Africa | Crimsonline](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.crimsonline.co.za%2F&data=04%7C01%7Cv-beehanson%40microsoft.com%7Ca33ff5abc67740994dbb08d994b74ab9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637704337238969372%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=czMqDm5XLjxKfSXqXg2ur4wNyyRnzkxkqpapNF3zZf8%3D&reserved=0)
+| **South Africa** | Tarsus Distribution | 1-Datacentrix \ 2-Nulitics Development Company Pty Ltd \ 3-Crimson Line Networking cc - t/a Crimson Line - Solving IT | [1-Datacentrix-a leading hybrid IT system integrator and managed services provider](https://www.datacentrix.co.za/)\ [2-Nulitics, Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us) \ [3-Managed Cloud and IT Services | South Africa | Crimsonline](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.crimsonline.co.za%2F&data=04%7C01%7Cv-beehanson%40microsoft.com%7Ca33ff5abc67740994dbb08d994b74ab9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637704337238969372%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=czMqDm5XLjxKfSXqXg2ur4wNyyRnzkxkqpapNF3zZf8%3D&reserved=0)
 
 ### **APAC**
 
