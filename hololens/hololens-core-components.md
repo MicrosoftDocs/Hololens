@@ -79,7 +79,7 @@ Distribute your HoloLens 2 devices and validate their configuration.
 | [Validate app installs](hololens2-corp-connected-deploy.md#validate-lob-app-install) | Confirm the app is present and working on your HoloLens 2 |
 | [Manage users](hololens-identity.md) | Set up and manage users |
 | [Create users and groups](hololens2-corp-connected-configure.md#azure-users-and-groups)
-| [Manage HoloLens devices with Microsoft Endpoint Manager](hololens-endpoint-configure.md)
+| [Manage HoloLens devices with Microsoft Endpoint Manager](hololens-mdm-configure.md)
 
 ## Maintain
 
