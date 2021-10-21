@@ -36,6 +36,14 @@ HoloLens 2 is now available in some countries outside of the US, along with some
 ## Find an authorized HoloLens 2 reseller
 See the below tables for HoloLens 2 availability and purchase options by region.
 
+### **Africa**
+
+| Country | ADD | DMPs | HoloLens 2 DMPs |
+|---------|-----|------|----------------|
+| **South Africa** | Tarsus Distribution | Datacentrix | [Datacentrix - a leading hybrid IT system integrator and managed services provider](https://www.datacentrix.co.za/)|
+| || Nulitics Development Company Pty Ltd. | [NULITICS, Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)|
+| | | Crimson Line Networking <br/>cc - t/a Crimson Line - Solving IT |[Managed Cloud and IT Services \| South Africa \| Crimsonline](https://www.crimsonline.co.za)|
+
 ### **APAC**
 
 | Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
@@ -60,6 +68,13 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Taiwan** | Systex Software & Service Corporation精誠資訊股份有限公司 | Gina Ko<br><ginako@systex.com><br>Sean Chien<br><seanchien@systex.com> | [Buy HoloLens 2 - Systex Software & Service Corporation精誠資訊股份有限公司](https://tw.systex.com/microsoft-hololens/) | [Buy HoloLens 2 Industrial Edition - Systex Software & Service Corporation精誠資訊股份有限公司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) | 
 | **Thailand** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [Buy HoloLens 2 - Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [Buy HoloLens 2 Industrial Edition - Sustainable Solution Co., Ltd.](https://hololensthai.com/) |
 | **Vietnam** | CÔNG TY TNHH HIVERLAB VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [Buy HoloLens 2 - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) | [Buy HoloLens 2 Industrial Edition - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
+
+### **South America**
+
+| Country | ADDs | DMPs | HoloLens 2 DMPs |
+|---------|-----|------|----------------|
+| **Mexico** | Ingram Micro México, S.A. de C.V. | Aevitas S.A. de C.V. | [Aevitas S.A. de C.V.](http://aevitas.com.mx)|
+| | Commercializadora Intcomex, S.A. de C.V.| Equipos Comp. de Occte. S.A. de C.V. | [Productos \| Equipos MCA  S.A. de C.V.](https://equiposmca.com/productos/) |
 
 ### **North America**
 
