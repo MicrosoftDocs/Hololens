@@ -44,7 +44,6 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | || Nulitics Development Company Pty Ltd. | [ Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)|
 | | | Crimson Line Networking <br/>cc - t/a Crimson Line - Solving IT |[Managed Cloud and IT Services, South Africa, Crimsonline](https://www.crimsonline.co.za)|
 
-
 ### **APAC**
 
 | Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
@@ -72,15 +71,10 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 ### **South America**
 
-| Country | ADD | HoloLens 2 DMPs |
-|---------|-----|----------------|
-| **South Africa** | Tarsus Distribution | [Datacentrix-a leading hybrid IT system integrator and managed services provider](https://www.datacentrix.co.za/)|
-| | |[Nulitics, Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)|
-| | |[Managed Cloud and IT Services, South Africa, Crimsonline](https://www.crimsonline.co.za)|
-
-| Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
-|---------|-----|---------|----------------|----------|
-| **Mexico** | Aevitas S.A. de C.V. | José María de Teresa <contacto@aevitas.com.mx> | [Buy HoloLens 2 - Aevitas](http://aevitas.com.mx) | [Buy HoloLens 2 Industrial Edition - Aevitas](http://aevitas.com.mx) |
+| Country | ADDs | DMPs | HoloLens 2 DMPs |
+|---------|-----|------|----------------|
+| **Mexico** | Ingram Micro México, S.A. de C.V. | Aevitas S.A. de C.V. | [Aevitas S.A. de C.V.](http://aevitas.com.mx)|
+| | Commercializadora Intcomex, S.A. de C.V.| Equipos Comp. de Occte. S.A. de C.V. | [Productos \| Equipos MCA  S.A. de C.V.](https://equiposmca.com/productos/) |
 
 ### **North America**
 
