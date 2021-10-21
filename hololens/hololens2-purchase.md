@@ -41,8 +41,8 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | Country | ADD | DMPs | HoloLens 2 DMPs |
 |---------|-----|------|----------------|
 | **South Africa** | Tarsus Distribution | Datacentrix | [Datacentrix - a leading hybrid IT system integrator and managed services provider](https://www.datacentrix.co.za/)|
-| || Nulitics Development Company Pty Ltd. | [ Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)|
-| | | Crimson Line Networking <br/>cc - t/a Crimson Line - Solving IT |[Managed Cloud and IT Services, South Africa, Crimsonline](https://www.crimsonline.co.za)|
+| || Nulitics Development Company Pty Ltd. | [NULITICS, Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)|
+| | | Crimson Line Networking <br/>cc - t/a Crimson Line - Solving IT |[Managed Cloud and IT Services \| South Africa \| Crimsonline](https://www.crimsonline.co.za)|
 
 ### **APAC**
 
