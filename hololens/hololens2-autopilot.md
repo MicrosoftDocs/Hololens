@@ -348,7 +348,7 @@ By default, HoloLens 2 waits for 15 seconds to detect Autopilot after detecting 
 **Troubleshooting steps**
 
 1. First please verify that Autopilot profile is shown as assigned in MDM portal, e.g. Intune. 
-2. Reboot your device and try again. For more information, see [Known Issues and Limitations](hololens2-autopilot.md#known-issues-and-limitations).
+1. Reboot your device and try again. For more information, see [Known Issues and Limitations](hololens2-autopilot.md#troubleshooting).
 
 ### Helpful resources
 
