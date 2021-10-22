@@ -26,7 +26,7 @@ This article describes how to resolve several common HoloLens issues.
 
 **Known Issues**
 - [Every time the power goes to 18 percent, the device suddenly shuts down automatically](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
-- [**Fixed** - OneDrive UWP app doesn't work for Azure AD users](#fixed-onedrive-uwp-app-doesnt-work-for-azure-ad-users)
+- [**Fixed** - OneDrive UWP app doesn't work for Azure AD users](#fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
 - [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
 - [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
@@ -75,7 +75,7 @@ There is a known known issue where when the device reaches 18% battery, it will 
 ## Fixed - OneDrive UWP app doesn't work for Azure AD users
 
 > [!NOTE]
-> This issue resolved in app version 19.23.17. If you still experience the same sign in issue while using app version 19.23.17 or later, please [send Feedback](hololens-feedback.md) then [contact support](https//:aka.ms/support) and share the Feedback item URL.
+> This issue resolved in app version 19.23.17. If you still experience the same sign in issue while using app version 19.23.17 or later, please [send Feedback](hololens-feedback.md) then [contact support](https://aka.ms/hololenssupport) and share the Feedback item URL.
 
 If you use OneDrive For Business using your Azure AD account, you may have encountered error when sign in to your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage. The OneDrive and HoloLens teams are working on the issue.
 
