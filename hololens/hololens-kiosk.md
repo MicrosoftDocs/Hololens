@@ -192,4 +192,4 @@ On AAD user sign-in, device does not go into expected kiosk mode.
 
 - Confirm in Assigned Access configuration XML that GUID of AAD group of which signed-in user is a member of is used and not the GUID of the AAD user.
 - Confirm that in Intune portal that AAD user is indeed shown as member of targeted AAD group.
-- For Intune only, confirm that device is showing as compliant. Refer to [device compliane reference](/mem/intune/protect/device-compliance-get-started) for more information.
+- For Intune only, confirm that device is showing as compliant. Refer to [device compliance reference](/mem/intune/protect/device-compliance-get-started) for more information.
