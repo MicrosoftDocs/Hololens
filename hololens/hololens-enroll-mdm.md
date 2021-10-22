@@ -47,7 +47,7 @@ Once the device is enrolled with your MDM server, the Settings app will now refl
 
 ## Auto-enrollment in MDM
 
-If your organization has an [Azure Premium subscription](https://azure.microsoft.com/overview/), is using Azure Active Directory (Azure AD) and an MDM solution that accepts an Azure AD token for authentication (currently, only supported in Microsoft Intune and AirWatch), your IT admin can configure Azure AD to automatically allow MDM enrollment after the user signs in with their Azure AD account. [Learn how to configure Azure AD enrollment.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+If your organization has an [Azure Premium subscription](https://azure.microsoft.com/overview/), is using Azure Active Directory (Azure AD) and an MDM solution that accepts an Azure AD token for authentication (currently, only supported in Microsoft Intune and AirWatch), your IT admin can configure Azure AD to automatically allow MDM enrollment after the user signs in with their Azure AD account. [Learn how to configure Azure AD enrollment.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) and [Azure active directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for detailed background information.
 
 When auto-enrollment is enabled, no extra manual enrollment is needed. When the user signs in with an Azure AD account, the device is enrolled in MDM after completing the first-run experience.
 
@@ -62,6 +62,14 @@ If your device was enrolled with an Azure AD account or Autopilot, it cannot be 
 If your device was enrolled from a MSA account that added a work account or from a Local account that enrolled only in device management, then you may unenroll the device. Open the Start menu and then select **Settings App** -> **Access Work or School** -> *YourAccount* -> **Disconnect** button.
 
 ## Enrollment troubleshooting
+
+### Ensure device is successfully connected to Internet before attempting enrollment post OOBE
+
+Once user has signed-in, ensure internet connection by browsing to any internet facing website on device.
+
+### Ensure that Azure Active Directory (AAD) join is not disabled in your AAD tenant
+
+Refer to [Configure your device settings](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) for information about the available options in Azure  portal.
 
 ### Ensure valid license is assigned to the user
 
