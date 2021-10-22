@@ -315,10 +315,12 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 
 ![In-device view for when policy is enforced on device.](images/hololens-autopilot-lockdown.png)
 
-## Known issues and limitations
+## Troubleshooting
 
-### Why do I see 0x80180014 during Autopilot?
+### Issue - MDM enrollment fails with error 0x80180014 error code during Autopilot.
 
+ **Symptoms**
+ 
 This is an error shown during the Autopilot process on device. This issue shown only applies when a HoloLens device has done the following:
 
 1. Already have gone through Autopilot at least once.
@@ -328,7 +330,7 @@ The experience is Autopilot experience will fail with a specific error.
 
 ![HoloLens Autopilot failure error code](images/autopilot-0x80180014-failure.jpg)
 
-What steps need to be taken to resolve this error?
+**Troubleshooting steps**
 
 1. Follow steps at [Troubleshoot Autopilot device import and enrollment](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) to remove device from Intune. (Your Intune admin will need to perform this task)
 1. Once step 1 is complete, restart device and sign-in.
@@ -337,19 +339,24 @@ What steps need to be taken to resolve this error?
 
 AutoPilot should then successfully enroll.
 
-### Troubleshooting
+### Issue - Autopilot experience did not start even though the Autopilot profile is assigned in Intune.
+
+**Symptoms**
+
+By default, HoloLens 2 waits for 15 seconds to detect Autopilot after detecting the internet. If no autopilot profile is detected within 15 seconds, that means Autopilot was not discovered correctly, and you will see the EULA page.
+
+**Troubleshooting steps**
+
+1. First please verify that Autopilot profile is shown as assigned in MDM portal, e.g. Intune. 
+2. Reboot your device and try again. For more information, see [Known Issues and Limitations](hololens2-autopilot.md#known-issues-and-limitations).
+
+### Helpful resources
 
 The following articles may be a useful resource for you to learn more information and troubleshoot Autopilot Issues, however these articles are based on Windows 10 Desktop and not all information may apply to HoloLens:
 
 - [Windows Autopilot - known issues](/mem/autopilot/known-issues)
 - [Troubleshoot Windows device enrollment problems in Microsoft Intune](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot - Policy Conflicts](/mem/autopilot/policy-conflicts)
-
-#### Why did I not see Autopilot experience even though the Autopilot profile is assigned in Intune?
-
-By default, HoloLens 2 waits for 15 seconds to detect Autopilot after detecting the internet. If no autopilot profile is detected within 15 seconds, that means Autopilot was not discovered correctly, and you will see the EULA page.
-
-Reboot your device and try again. For more information, see [Known Issues and Limitations](hololens2-autopilot.md#known-issues-and-limitations).
 
 ## Feedback and support for Autopilot
 
