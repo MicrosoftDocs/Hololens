@@ -28,33 +28,38 @@ The following steps and video can help guide you through the process of HoloLens
 
 | &nbsp; | &nbsp; |
 |--|--|
-| ![Step 1.](images/1green.png)| <br/> **[Common Deployment Scenarios](hololens-requirements.md)**: Understand deployment scenarios and explore the core components needed to deploy HoloLens 2 devices. |
-| ![Step 2.](images/2green.png)| <br/> **[Prepare](#prepare)**: Become familiar with the infrastructure essentials needed for HoloLens 2. |
-| ![Step 3.](images/3green.png) | <br/> **[Configure](#configure)**: Learn how to configure your essential components for a cloud-based deployment. |
-| ![Step 4.](images/4green.png) | <br/> **[Deploy](#deploy)**: Discover how to deploy your devices and distribute your applications securely and efficiently. |
+| ![Step 1.](images/1green.png)| <br/> **[Prepare](#prepare)**: Become familiar with the infrastructure essentials needed for HoloLens 2. |
+| ![Step 2.](images/2green.png)| <br/> **[Configure](#configure)**: Learn how to configure your essential components for a cloud-based deployment. |
+| ![Step 3.](images/3green.png) | <br/> **[Deploy](#deploy)**: Discover how to deploy your devices and distribute your applications securely and efficiently. |
+| ![Step 4.](images/4green.png) | <br/> ** |
 | ![Step 5.](images/5green.png) | <br/> **[Maintain](#maintain)**: Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
+
+
 
 <br/>
 
 > [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
 
-## Prerequisites
+## Prepare
+
+Learn about essential infrastructure services required to support the full set of HoloLens 2 capabilities.
+
+### Prerequisites
 
 Provide new users with basic information.
 
 *   [Where to buy HoloLens 2](hololens2-purchase.md)
 *   [HoloLens 2 support](hololens2-support.md)
-*   [Common Deployment Scenarios](hololens-requirements.md)
+*   [Common Deployment Scenarios](hololens-requirements.md): Understand deployment scenarios and explore the core components needed to deploy HoloLens 2 devices.
 
-## Prepare
+### Identity
 
-Learn about essential infrastructure services required to support the full set of HoloLens 2 capabilities.
-
-| Component | Description |
-|-----------|------------|
-| [Azure AD](hololens-identity.md) | Provides identity and access management for the HoloLens 2  |
-| [Mobile Device Management](hololens-mdm-configure.md)| Manages HoloLens 2 devices connected to your tenant  |
-| [Wi-Fi Network](hololens-commercial-infrastructure.md)| Wi-Fi is available and devices can be connected to the Internet  |
+Provides identity and access management for the HoloLens 2
+[Azure AD](hololens-identity.md)
+[Mobile Device Management](hololens-mdm-configure.md)
+Manages HoloLens 2 devices connected to your tenant
+[Wi-Fi Network](hololens-commercial-infrastructure.md)
+Wi-Fi is available and devices can be connected to the Internet
 
 ## Configure
 
