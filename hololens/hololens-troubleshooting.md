@@ -91,7 +91,7 @@ If you are experiencing this issue, try one of the following:
 
 This error is typically encountered during device reset and re-use flows where a HoloLens device has gone through Autopilot at least once. In order to resolve this issue, please [delete the device from Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) and reset it again to complete Autopilot flow.
 
-For more info, please refer to [troubleshooting steps on the autopilot page.](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
+For more info, please refer to [troubleshooting steps on the autopilot page.](hololens2-autopilot.md#issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot)
 
 ## Microsoft Store error code 0x80131500
 
