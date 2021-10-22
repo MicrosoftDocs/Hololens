@@ -69,7 +69,7 @@ Once user has signed-in, ensure internet connection by browsing to any internet 
 
 ### Ensure that Azure Active Directory (AAD) join is not disabled in your AAD tenant
 
-Refer to [Configure your device settings](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) for information about the available options in Azure  portal.
+Refer to [Configure your device settings](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) for information about the available options in Azure portal.
 
 ### Ensure valid license is assigned to the user
 
