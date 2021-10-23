@@ -36,7 +36,7 @@ The following security scenarios are the most common:
 | Assign or restrict privilege levels | [Admin-less operating system](security-adminless-os.md) | DeviceLock inactivity time can be reset. |
 | Reconfigure product security capabilities | [Page Settings Visibility](settings-uri-list.md) | PageVisibilityList policy can be reset to restrict the pages seen within the Settings app. |
 | Apply updates to the device as they become available | [Update HoloLens 2](hololens-update-hololens.md) | Update automatically, check for updates, and roll back updates. |
-| Back up to remote storage or removable media | [Find, open, and save files on HoloLens](holographic-data.md#onedrive-app) | Access, manage, and share your photos and videos with any device and with any user. |
+| Back up to OneDrive | [Find, open, and save files on HoloLens](holographic-data.md#onedrive-app) | Access, manage, and share your photos and videos with any device and with any user. |
 | Ensure the integrity of stored data | [Security overview and architecture](security-architecture.md) | The HoloLens 2 security architecture offers secure storage locations and advanced security elements. |
 | Minimize the surface area for privilege escalation with better administration | [Admin-less operating system](security-adminless-os.md) | HoloLens disabled support for the Administrators group and limits all third-party UWP application code.  |
 | Use modern security and authentication methods | [Limiting password use](security-limiting-password-use.md) | HoloLens 2 enables strong, hardware-backed “password-less” credentials for device sign in. |
