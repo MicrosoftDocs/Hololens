@@ -78,14 +78,14 @@ See [reference links](hololens-kiosk-reference.md#kiosk-xml-code-samples) for ex
 
 ### For users who sign-in as either Local account or MSA
 
-| **Desired kiosk experience** | **Recommended kiosk configuration** | **Ways to configure**  | **Remarks** |
+| Desired kiosk experience | Recommended kiosk configuration | Ways to configure | Remarks |
 | --- | --- | --- | --- |
 | Every user who signs in gets kiosk experience. | [Configure multiple app Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |
 | Specific user who signs in gets kiosk experience.  | [Configure single or multiple app assigned access profile (as required) specifying name of specific user.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [See supported options below.](#steps-in-configuring-kiosk-mode-for-hololens) | For single app kiosk mode, only local user account or MSA account is supported on HoloLens. <br> For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
 
 ### For users who sign-in as AAD account
 
-| **Desired kiosk experience** | **Recommended kiosk configuration** | **Ways to configure** | **Remarks** |
+| Desired kiosk experience | Recommended kiosk configuration | Ways to configure | Remarks |
 | --- | --- | --- | --- |
 | Every user who signs in gets kiosk experience. | [Configure multiple app Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |
 | Every user who signs in gets kiosk experience except certain users. | [Configure multiple app Global Assigned Access profile by excluding certain users (who must be device owners)](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners). | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |
