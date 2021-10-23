@@ -25,8 +25,13 @@ appliesto:
 
 Kiosk mode is a feature where you can control which applications are shown in start menu when a user signs-in to HoloLens. There are 2 supported scenarios:
 
-1. **Single app kiosk mode** – No start menu is displayed, and a single app is launched automatically, when user signs in. <br> *Example uses*: A device that runs only Dynamics 365 Guides app.
-2. **Multiple app kiosk mode** – Start menu shows only those applications, which were specified in kiosk configuration when a user signs in. An app can be chosen to automatically launch if desired. <br> *Example uses*: A device that shows only the Store app, Feedback Hub and Settings app in start menu.
+1. **Single app kiosk mode** – No start menu is displayed, and a single app is launched automatically, when user signs in.
+
+    *Example uses*: A device that runs only Dynamics 365 Guides app.
+
+2. **Multiple app kiosk mode** – Start menu shows only those applications, which were specified in kiosk configuration when a user signs in. An app can be chosen to automatically launch if desired.
+
+    *Example uses*: A device that shows only the Store app, Feedback Hub and Settings app in start menu.
 
     <img alt="Multi app kiosk example" src=".\images\multi-app-kiosk.jpg" width="411" height="500" />
 
