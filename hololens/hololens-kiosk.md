@@ -180,7 +180,7 @@ A dialog like below is shown.
 
 **Symptoms**
 
-Error is shown when applying the provisioning package on Hololens
+Error is shown when applying the provisioning package on HoloLens.
 
 **Troubleshooting steps**
 
