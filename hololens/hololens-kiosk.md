@@ -49,24 +49,31 @@ The following table lists the feature capabilities in the different kiosk modes.
 ## Key general considerations before configuring kiosk mode
 
 1. Determine the kind of user account signing into HoloLens in your environment - HoloLens supports Azure Active Directory (AAD) accounts, Microsoft Accounts (MSA) and Local accounts. Additionally, temporarily created accounts called guests / visitors are also supported (only for AAD join devices). Learn more at [Manage user identity and sign-in for HoloLens](hololens-identity.md).
+
 2. Determine the targets of kiosk mode experience – Whether it is everyone, a single user, certain users, or users who are member of AAD group(s), etc.
+
 3. For multiple app kiosk mode, determine application(s) to show on start menu. For each application, its [Application User Model ID (AUMID)](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids) will be needed.
+
 4. Determine if kiosk mode will be applied to HoloLens via either runtime provisioning packages or Mobile Device Management (MDM) server.
 
 ## Security considerations
 
 Kiosk mode should not be considered as a security method but as a means to control start up experience on user sign-in. You may combine kiosk mode experience with options mentioned below if there are specific security related needs:
 
-- When Settings app is configured to show in kiosk mode and you want to control which pages are shown in Settings app, refer to [Page Settings Visibility](settings-uri-list.md)
+- When Settings app is configured to show in kiosk mode and you want to control which pages are shown in Settings app, refer to [Page Settings Visibility](settings-uri-list.md).
+
 - When you want to control access to certain hardware capabilities, for example, camera, Bluetooth, etc. for certain apps, etc. refer to [Policies in Policy CSP supported by HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2). You can review our [Common device restrictions](hololens-common-device-restrictions.md) for ideas.
-- Kiosk mode does not block an app (configured as part of kiosk experience) from launching other apps. When you want to completely block launching of certain apps / processes on HoloLens, refer to [Use Windows Defender Application Control on HoloLens 2 devices in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens)
+
+- Kiosk mode does not block an app (configured as part of kiosk experience) from launching other apps. When you want to completely block launching of certain apps / processes on HoloLens, refer to [Use Windows Defender Application Control on HoloLens 2 devices in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens).
 
 ## Key technical considerations for Kiosk mode for HoloLens
 
 Applies only if you are planning to use runtime provisioning packages or creating kiosk configurations manually yourself. Kiosk mode configuration uses a hierarchical structure based on XML:
 
 - An assigned access profile defines which applications are displayed in start menu in kiosk mode. You can define multiple profiles in same XML structure, which can be referenced later.
+
 - An assigned access configuration references a profile and target user(s) of that profile, for example, a specific user, or AAD group or visitor, etc. You can define multiple configurations in same XML structure depending on complexity of your usage scenarios (see supported scenarios section below).
+
 - To learn more, refer to [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp).
 
 ## Supported scenarios for kiosk mode based on identity type
@@ -81,7 +88,7 @@ See [reference links](hololens-kiosk-reference.md#kiosk-xml-code-samples) for ex
 | Desired kiosk experience | Recommended kiosk configuration | Ways to configure | Remarks |
 | --- | --- | --- | --- |
 | Every user who signs in gets kiosk experience. | [Configure multiple app Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global assigned access requires [20H2 and newer builds](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Specific user who signs in gets kiosk experience.  | [Configure single or multiple app assigned access profile (as required) specifying name of specific user.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [See supported options below.](#steps-in-configuring-kiosk-mode-for-hololens) | For single app kiosk mode, only local user account or MSA account is supported on HoloLens. <br> For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
+| Specific user who signs in gets kiosk experience.  | [Configure single or multiple app assigned access profile (as required) specifying name of specific user.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [See supported options below.](#steps-in-configuring-kiosk-mode-for-hololens) | For single app kiosk mode, only local user account or MSA account is supported on HoloLens. <br><br/>For multiple app kiosk mode, only MSA account or AAD account is supported on HoloLens. |
 
 ### For users who sign-in as AAD account
 
@@ -97,7 +104,7 @@ See [reference links](hololens-kiosk-reference.md#kiosk-xml-code-samples) for ex
 
 Kiosk configurations can be created and applied in following ways:
 
-1. With MDM server's UI, e.g. Intune's kiosk templates or it custom OMA-URI configurations, which are then remotely applied to HoloLens.
+1. With MDM server's UI, e.g., Intune's kiosk templates or it custom OMA-URI configurations, which are then remotely applied to HoloLens.
 2. With runtime provisioning packages, which are then directly applied to HoloLens.
 
 Here are the following ways to configure, select the tab matching the process you'd like to use.
@@ -146,14 +153,16 @@ When encountering failures in applying kiosk mode, the following behavior appear
 - Prior to Windows Holographic, version 20H2 - HoloLens will show all applications in the Start menu.
 - Windows Holographic, version 20H2 - if a device has a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership fails, the user will see “nothing shown in start” menu.
 
-    ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
+  ![Image of what Kiosk mode now looks when it fails.](images/hololens-kiosk-failure-behavior.png )
 
 - Starting with [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), Kiosk mode looks for Global Assigned Access before showing an empty start menu. The kiosk experience will fall back to a global kiosk configuration (if present) if there are failures during AAD group kiosk mode.
 
 **Troubleshooting steps**
 
 - Verify that AUMID of app is correctly specified and it does not contain versions. Refer to [HoloLens AUMIDs](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids) for inbox apps for examples.
+
 - Ensure that application is installed on the device for that user.
+
 - If kiosk configuration is based on AAD groups please ensure internet connectivity is present when the AAD user signs in. If desired configure [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays) policy so this can function without internet as well.
 
 If XML was used to create assigned access configuration (either via runtime provisioning or Intune custom-OMA URI), please ensure that XML is well-formed by opening it in any web browser or XML editor. Refer to [Kiosk XML code samples](hololens-kiosk-reference.md#kiosk-xml-code-samples) for well-formed and valid templates.
@@ -164,9 +173,8 @@ If XML was used to create assigned access configuration (either via runtime prov
 
 A dialog like below is shown.
 
-<kbd>
-    <img alt="Kiosk failure to build" src="./images/kiosk-steps/kiosk-ppkg-failure.png"/>
-</kbd>
+:::image type="content" alt-text="Kiosk failure to build." source="./images/kiosk-steps/kiosk-ppkg-failure.png":::
+
 
 **Troubleshooting steps**
 
