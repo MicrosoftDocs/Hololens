@@ -77,7 +77,7 @@ If your devices are having issues successfully scanning for updates entirely (ve
 
 ##### What happens during Download & Install
 
-Once Windows Update has scanned and successfully found a build to update to, it can begin to download the update. If a scan is initiated during active hours that finds an update, then the update will wait to download until the device is plugged into power. Like scanning, a user can manually choose to start the download.
+Once the device has scanned and found an applicable update, it can begin downloading the update. Like scanning, a user can manually choose to start the download.
 
 ##### Best practices for Download & Install
 
