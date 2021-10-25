@@ -70,7 +70,8 @@ The two critical pieces for scan to succeed are power and internet connectivity.
 If your devices are having issues successfully scanning for updates entirely (verify using a manual scan when you know an update is pending) then check the three following configurations.
 
 1. That you if you have a restrictive network in your organization, that you have allowed the [endpoints for Windows Update](hololens-offline.md).
-2. Your device isn't receiving a [deferral policy](#configure-an-update-deferral-policy), which delays when updates are available for this device.
+1. Your device has received a [deferral policy](#configure-an-update-deferral-policy),and is already on the latest eligible update as determined by policy.
+1. Your device has received a [pause policy](/mem/intune/protect/windows-10-update-rings#pause) which will prevent scans from occurring while the policy is in effect.
 1. If your device at Intune uses _Feature Updates for Windows 10_ or _Quality Updates for Windows 10_, please remove devices from being opted in these rings. These are not supported for HoloLens devices.
 
 #### 2. Download & Install
