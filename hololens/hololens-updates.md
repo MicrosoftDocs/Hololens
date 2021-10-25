@@ -59,7 +59,7 @@ HoloLens performs updates in 3 stages. **Scan -> Download &amp; Install -> Reboo
 
 ##### What happens during Scan
 
-The initial step for any update is that the HoloLens will scan for updates. In order to scan, the device has to be powered on, which includes sleep/hibernation modes. It will scan for an update every 22 hours. In order for the update scan to succeed it needs to have internet connectivity. This scan happens automatically, although a user can manually start a scan from the Settings app. If the device was turned off during the last scheduled scan then it will initiate a scan the next time it is plugged in.
+This is the first step of the update process where the device will query Windows Update for any applicable updates. An update scan automatically occurs in the background once every 22 hours and requires that the device is either actively in use or on standby but plugged in to ensure internet connectivity. In order for the update scan to succeed it needs to have internet connectivity. This scan happens automatically, although a user can manually start a scan from the Settings app. If the device was turned off during the last scheduled scan then it will initiate a scan the next time it is plugged in.
 
 ##### Best practices for Scan
 
