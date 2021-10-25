@@ -8,7 +8,7 @@ ms.author: v-evmill
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 10/20/2021
+ms.date: 10/25/2021
 ms.reviewer: shriyen
 manager: ranjibb
 appliesto:
@@ -83,7 +83,7 @@ Once Windows Update has scanned and successfully found a build to update to, it 
 
 If the best practices for scanning are followed, then the device should be plugged into power and have internet connectivity. These best practices are the same, and after the scan, if an update is found it will start the download.
 
-##### Configurations for for Download & Install
+##### Configurations for Download & Install
 
 N/A
 
@@ -95,15 +95,15 @@ During this step, the device has already found and downloaded the update. It nee
 
 ##### Best practices for Restart
 
-If the device is left plugged in overnight, it will automatically restart after it has been staged with the download installed during the maintain window (which is outside active hours). Once the download has been installed and stage internet connectivity isn't a requirement.
+If the device is left plugged in overnight, it will automatically restart after it has been staged with the download installed during the maintenance window (which is outside active hours). Once the download has been installed and staged for a restart internet connectivity isn't a requirement.
 
 ##### Configurations for Restart
 
 Sometimes you may have already downloaded the update, but haven't restarted yet due to one reason or another. If you would like to have more control over updates, then we have several different control methods over restarts. Let's go over some in order of effectiveness.
 
 1. Set Deadlines. If you want to ensure that a download update isn't delayed by a user either directly or indirectly, you can set a deadline to force the device to update. Check out [the new deadline policies added in 21H2.](#improved-update-restart-detection-and-notifications)
-2. Configure different default active hours. If your devices are used as different times of day, or you'd like to change your active hours so the update process is started at a different time of day. Consider
-3. Configure an update schedule.
+2. Configure different default active hours. If your devices are used at different times of day, or you'd like to change your active hours so the update process is started at a different time of day.
+3. Consider configuring an update schedule.
 
 ### Configure update policies for HoloLens 2 or HoloLens (1st gen)
 
