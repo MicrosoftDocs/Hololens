@@ -151,6 +151,8 @@ When encountering failures in applying kiosk mode, the following behavior appear
 - Ensure that application is installed on the device for that user.
 - If kiosk configuration is based on AAD groups please ensure internet connectivity is present when the AAD user signs in. If desired configure [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays) policy so this can function without internet as well.
 
+If XML was used to create assigned access configuration (either via runtime provisioning or Intune custom-OMA URI), please ensure that XML is well-formed by opening it in any web browser or XML editor. Refer to [Kiosk XML code samples](hololens-kiosk-reference.md#kiosk-xml-code-samples) for well-formed and valid templates.
+
 ### Issue - Building a package with kiosk mode failed
 
 **Symptoms**
@@ -184,9 +186,10 @@ Error is shown when applying the provisioning package on Hololens
 
 **Symptoms**
 
-On AAD user sign-in, device does not go into kiosk mode
+On AAD user sign-in, device does not go into expected kiosk mode.
 
 **Troubleshooting steps**
 
 - Confirm in Assigned Access configuration XML that GUID of AAD group of which signed-in user is a member of is used and not the GUID of the AAD user.
 - Confirm that in Intune portal that AAD user is indeed shown as member of targeted AAD group.
+- For Intune only, confirm that device is showing as compliant. Refer to [device compliance reference](/mem/intune/protect/device-compliance-get-started) for more information.
