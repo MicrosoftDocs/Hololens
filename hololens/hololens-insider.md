@@ -28,7 +28,7 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 
 ### Colorblind mode
 
-Added in Insider build xxxx.xxxxx
+Added in Insider build 20348.1463
 
 Colorblind mode is useful a great feature that makes HoloLens more accessible. The new colorblind mode can be found in the Settings app under **Settings** -> **Ease of Access** -> **Color filters**. Several new filters are available. Here's a visual example of some of the available filters.
 
