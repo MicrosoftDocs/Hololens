@@ -71,7 +71,7 @@ If your devices are having issues successfully scanning for updates entirely (ve
 
 1. That you if you have a restrictive network in your organization, that you have allowed the [endpoints for Windows Update](hololens-offline.md).
 2. Your device isn't receiving a [deferral policy](#configure-an-update-deferral-policy), which delays when updates are available for this device.
-3. If your device at Intune uses _Feature Updates for Windows 10_ or _Quality Updates for Windows 10_, please remove devices from being opted in these rings. These are not supported for HoloLens devices.
+1. If your device at Intune uses _Feature Updates for Windows 10_ or _Quality Updates for Windows 10_, please remove devices from being opted in these rings. These are not supported for HoloLens devices.
 
 #### 2. Download & Install
 
