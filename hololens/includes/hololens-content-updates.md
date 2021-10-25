@@ -2,6 +2,21 @@
 
 
 
+## Week of October 18, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/18/2021 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |
+| 10/18/2021 | [Configure HoloLens by using a provisioning package (HoloLens)](/hololens/hololens-provisioning) | modified |
+| 10/18/2021 | [Restart, reset, or recover HoloLens 2](/hololens/hololens-recovery) | modified |
+| 10/18/2021 | [Update HoloLens 2](/hololens/hololens-update-hololens) | modified |
+| 10/20/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
+| 10/21/2021 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+| 10/22/2021 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+| 10/22/2021 | [Enroll HoloLens in MDM](/hololens/hololens-enroll-mdm) | modified |
+
+
 ## Week of October 11, 2021
 
 
@@ -66,20 +81,3 @@
 | 9/22/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
 | 9/23/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
 | 9/23/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
-
-
-## Week of September 13, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/14/2021 | [Collect and use diagnostic information from HoloLens devices](/hololens/hololens-diagnostic-logs) | modified |
-| 9/15/2021 | [Improve visual quality and comfort](/hololens/hololens-calibration) | modified |
-| 9/15/2021 | [Collect and use diagnostic information from HoloLens devices](/hololens/hololens-diagnostic-logs) | modified |
-| 9/15/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 9/15/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
-| 9/15/2021 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 9/16/2021 | [Enroll HoloLens in MDM](/hololens/hololens-enroll-mdm) | modified |
-| 9/16/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 9/16/2021 | [Common Deployment Scenarios](/hololens/hololens-requirements) | modified |
-| 9/17/2021 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
