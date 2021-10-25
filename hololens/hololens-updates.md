@@ -95,7 +95,7 @@ This is the final stage of the update process, and the device has already found,
 
 ##### Best practices for Restart
 
-If the device is left plugged in overnight, it will automatically restart after it has been staged with the download installed during the maintenance window (which is outside active hours). Once the download has been installed and staged for a restart internet connectivity isn't a requirement.
+If the device is left plugged in overnight, it will automatically completely installing the update and restart during the [maintenance window](/windows/win32/taskschd/task-maintenence). Once the download has been installed and staged for a restart internet connectivity isn't a requirement.
 
 ##### Configurations for Restart
 
