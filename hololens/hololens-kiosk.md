@@ -39,10 +39,10 @@ Kiosk mode is a feature where you can control which applications are shown in st
 
 The following table lists the feature capabilities in the different kiosk modes.
 
-| &nbsp; |Start menu |Quick Actions menu |Camera and video |Miracast |Cortana |Built-in voice commands |
+|&nbsp;|**Start menu**|**Quick Actions menu**|**Camera and video**|**Miracast**|**Cortana**|**Built-in voice commands**|
 | --- | --- | --- | --- | --- | --- | --- |
-|Single-app kiosk |Disabled |Disabled |Disabled |Disabled   |Disabled |Enabled* |
-|Multi-app kiosk |Enabled |Enabled*  |Available*  |Available* |Available*   |Enabled*  |
+|**Single-app kiosk**|Disabled |Disabled |Disabled |Disabled   |Disabled |Enabled* |
+|**Multi-app kiosk**|Enabled |Enabled*  |Available*  |Available* |Available*   |Enabled*  |
 
 \* For more information about how to enable disabled features, or how voice commands interact with disabled features and Cortana see [HoloLens AUMIDs for apps](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids).
 
