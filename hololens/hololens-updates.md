@@ -43,7 +43,7 @@ The two critical pieces for scan to succeed are power and internet connectivity.
 
 #### Troubleshooting configurations for Scan
 
-If your devices are having issues successfully scanning for updates entirely (verify using a manual scan when you know an update is pending) then check the three following configurations.
+If your devices are having issues successfully scanning for updates entirely (verify using a manual scan when you know an update is pending) then check the following configurations.
 
 1. That you if you have a restrictive network in your organization, that you have allowed the [endpoints for Windows Update](hololens-offline.md).
 1. Your device has received a [deferral policy](#configure-an-update-deferral-policy),and is already on the latest eligible update as determined by policy.
