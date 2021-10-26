@@ -41,21 +41,7 @@ This is the first step of the update process where the device will query Windows
 
 The two critical pieces for scan to succeed are power and internet connectivity. We suggest that when users end their session with HoloLens they return it to an area where it is plugged in overnight and that it still has internet connectivity in that area.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+If your device is having issues scanning for updates please review the [troubleshooting scanning section](#issue---my-device-didnt-find-an-update-when-scanning) and ensure you don't have any hindering configurations.
 
 ### 2. Download & Install
 
@@ -325,7 +311,7 @@ If your devices are having issues successfully scanning for updates entirely (ve
 
 ### Issue - My device has downloaded an update, but won't install it
 
-Many of the [troubleshooting configurations for scanning](#troubleshooting-configurations-for-scan) also apply here. If you've already reviewed those you may have an OS install issue. If this is the case, please [file an issue through feedback hub](hololens-feedback.md) using the **Enterprise Management -> Device category**.
+Many of the [troubleshooting configurations for scanning](#issue---my-device-didnt-find-an-update-when-scanning) also apply here. If you've already reviewed those you may have an OS install issue. If this is the case, please [file an issue through feedback hub](hololens-feedback.md) using the **Enterprise Management -> Device category**.
 
 ## Related articles
 
