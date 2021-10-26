@@ -8,7 +8,7 @@ ms.author: v-evmill
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 10/25/2021
+ms.date: 10/26/2021
 ms.reviewer: shriyen
 manager: ranjibb
 appliesto:
@@ -24,6 +24,63 @@ ms.custom:
 # Manage HoloLens updates
 
 HoloLens uses Windows Update in the same manner as other Windows 10 devices. When an update is available, it is automatically downloaded and installed the next time that your device is plugged in and connected to the internet. This article describes how to manage updates in an enterprise or other managed environment. For information about how to manage updates to individual HoloLens devices, see [Update HoloLens](hololens-update-hololens.md).
+
+## How to optimize HoloLens updates
+
+While the process of applying updates to HoloLens devices is similar to other Windows 10 devices, the device itself is different in subtle ways. For example, just like a PC, HoloLens performs updates in 3 steps: find eligible updates (**scan**), fetch the latest eligible update (**download & install**), and apply that update (**reboot**). However, each of those steps can be optimized further specifically for HoloLens devices to ensure that updates occur seamlessly and as soon as possible.
+
+**Overall summary of best practices:** The device should be plugged in and connected to the internet outside of configured Active Hours, usually overnight, to ensure an update can be applied. Go to **Settings** -> **Update & Security** -> **Windows Update** to see current Active Hour settings.
+
+### 1. Scan
+
+#### What happens during Scan
+
+This is the first step of the update process where the device will query Windows Update for any applicable updates. An update scan automatically occurs in the background once every 22 hours and requires that the device is either actively in use or on standby but plugged in to ensure internet connectivity. In order for the update scan to succeed it needs to have internet connectivity. This scan happens automatically, although a user can manually start a scan from the Settings app. If the device was turned off during the last scheduled scan then it will initiate a scan the next time it is plugged in.
+
+#### Best practices for Scan
+
+The two critical pieces for scan to succeed are power and internet connectivity. We suggest that when users end their session with HoloLens they return it to an area where it is plugged in overnight and that it still has internet connectivity in that area.
+
+#### Troubleshooting configurations for Scan
+
+If your devices are having issues successfully scanning for updates entirely (verify using a manual scan when you know an update is pending) then check the three following configurations.
+
+1. That you if you have a restrictive network in your organization, that you have allowed the [endpoints for Windows Update](hololens-offline.md).
+1. Your device has received a [deferral policy](#configure-an-update-deferral-policy),and is already on the latest eligible update as determined by policy.
+1. Your device has received a [pause policy](/mem/intune/protect/windows-10-update-rings#pause) which will prevent scans from occurring while the policy is in effect.
+1. If your device at Intune uses _Feature Updates for Windows 10_ or _Quality Updates for Windows 10_, please remove devices from being opted in these rings. These are not supported for HoloLens devices.
+
+### 2. Download & Install
+
+#### What happens during Download & Install
+
+Once the device has scanned and found an applicable update, it can begin downloading the update. Like scanning, a user can manually choose to start the download.
+
+#### Best practices for Download & Install
+
+If the best practices for scanning are followed, then the device should be plugged into power and have internet connectivity. These best practices are the same, and after the scan, if an update is found it will start the download.
+
+#### Troubleshooting configurations for Download & Install
+
+Many of the [troubleshooting configurations for scanning](#troubleshooting-configurations-for-scan) also apply here. If you've already reviewed those you may have an OS install issue. If this is the case, please [file an issue through feedback hub](hololens-feedback.md) using the **Enterprise Management -> Device category**.
+
+### 3. Restart
+
+#### What happens during Restart
+
+This is the final stage of the update process, and the device has already found, downloaded and staged the update. The remaining step is a device restart to complete installation and boot into the updated operating system. It needs to restart to start the install process, [which as a benefit of state separation, is an atomic step](security-state-separation-isolation.md#state-separation-benefits). By default, the device won't restart during [active hours](#configure-active-hours). If you were to wear the device you'd see a progress bar. When it is finished the device will boot into the sign-in screen and be finished updating!
+
+#### Best practices for Restart
+
+If the device is left plugged in overnight, it will automatically completely installing the update and restart during the [maintenance window](/windows/win32/taskschd/task-maintenence). Once the download has been installed and staged for a restart internet connectivity isn't a requirement.
+
+#### Configurations for Restart
+
+Restarting the device is necessary for successfully applying the update but it also breaks into user behavior. HoloLens offers IT administrators the following levels of control over when and how the device should be restarted:
+
+1. Configure different default [active hours](#configure-active-hours). If your devices are used at different times of day, or you'd like to change your active hours so the update process is started at a different time of day.
+1. Consider configuring an [update schedule.](#configure-an-update-schedule)
+1. Set Deadlines. If you want to ensure that a download update isn't delayed by a user either directly or indirectly, you can set a deadline to force the device to update. Check out [the new deadline policies added in 21H2.](#improved-update-restart-detection-and-notifications)
 
 ## Manage updates automatically
 
@@ -46,63 +103,6 @@ For a detailed discussion about how to use Intune to configure Windows Update fo
 > Intune provides two policy types for managing updates: *Windows 10 update ring* and *Windows 10 feature update*. The Windows 10 feature update policy type is in public preview at this time and is not supported for HoloLens.
 >  
 > You can use Windows 10 update ring policies to manage HoloLens 2 updates.
-
-### How to optimize HoloLens updates
-
-While the process of applying updates to HoloLens devices is similar to other Windows 10 devices, the device itself is different in subtle ways. For example, just like a PC, HoloLens performs updates in 3 steps: find eligible updates (**scan**), fetch the latest eligible update (**download & install**), and apply that update (**reboot**). However, each of those steps can be optimized further specifically for HoloLens devices to ensure that updates occur seamlessly and as soon as possible.
-
-**Overall summary of best practices:** The device should be plugged in and connected to the internet outside of configured Active Hours, usually overnight, to ensure an update can be applied. Go to **Settings** -> **Update & Security** -> **Windows Update** to see current Active Hour settings.
-
-#### 1. Scan
-
-##### What happens during Scan
-
-This is the first step of the update process where the device will query Windows Update for any applicable updates. An update scan automatically occurs in the background once every 22 hours and requires that the device is either actively in use or on standby but plugged in to ensure internet connectivity. In order for the update scan to succeed it needs to have internet connectivity. This scan happens automatically, although a user can manually start a scan from the Settings app. If the device was turned off during the last scheduled scan then it will initiate a scan the next time it is plugged in.
-
-##### Best practices for Scan
-
-The two critical pieces for scan to succeed are power and internet connectivity. We suggest that when users end their session with HoloLens they return it to an area where it is plugged in overnight and that it still has internet connectivity in that area.
-
-##### Troubleshooting configurations for Scan
-
-If your devices are having issues successfully scanning for updates entirely (verify using a manual scan when you know an update is pending) then check the three following configurations.
-
-1. That you if you have a restrictive network in your organization, that you have allowed the [endpoints for Windows Update](hololens-offline.md).
-1. Your device has received a [deferral policy](#configure-an-update-deferral-policy),and is already on the latest eligible update as determined by policy.
-1. Your device has received a [pause policy](/mem/intune/protect/windows-10-update-rings#pause) which will prevent scans from occurring while the policy is in effect.
-1. If your device at Intune uses _Feature Updates for Windows 10_ or _Quality Updates for Windows 10_, please remove devices from being opted in these rings. These are not supported for HoloLens devices.
-
-#### 2. Download & Install
-
-##### What happens during Download & Install
-
-Once the device has scanned and found an applicable update, it can begin downloading the update. Like scanning, a user can manually choose to start the download.
-
-##### Best practices for Download & Install
-
-If the best practices for scanning are followed, then the device should be plugged into power and have internet connectivity. These best practices are the same, and after the scan, if an update is found it will start the download.
-
-##### Troubleshooting configurations for Download & Install
-
-Many of the [troubleshooting configurations for scanning](#troubleshooting-configurations-for-scan) also apply here. If you've already reviewed those you may have an OS install issue. If this is the case, please [file an issue through feedback hub](hololens-feedback.md) using the **Enterprise Management -> Device category**.
-
-#### 3. Restart
-
-##### What happens during Restart
-
-This is the final stage of the update process, and the device has already found, downloaded and staged the update. The remaining step is a device restart to complete installation and boot into the updated operating system. It needs to restart to start the install process, [which as a benefit of state separation, is an atomic step](security-state-separation-isolation.md#state-separation-benefits). By default, the device won't restart during [active hours](#configure-active-hours). If you were to wear the device you'd see a progress bar. When it is finished the device will boot into the sign-in screen and be finished updating!
-
-##### Best practices for Restart
-
-If the device is left plugged in overnight, it will automatically completely installing the update and restart during the [maintenance window](/windows/win32/taskschd/task-maintenence). Once the download has been installed and staged for a restart internet connectivity isn't a requirement.
-
-##### Configurations for Restart
-
-Restarting the device is necessary for successfully applying the update but it also breaks into user behavior. HoloLens offers IT administrators the following levels of control over when and how the device should be restarted:
-
-1. Configure different default [active hours](#configure-active-hours). If your devices are used at different times of day, or you'd like to change your active hours so the update process is started at a different time of day.
-1. Consider configuring an [update schedule.](#configure-an-update-schedule)
-1. Set Deadlines. If you want to ensure that a download update isn't delayed by a user either directly or indirectly, you can set a deadline to force the device to update. Check out [the new deadline policies added in 21H2.](#improved-update-restart-detection-and-notifications)
 
 ### Configure update policies for HoloLens 2 or HoloLens (1st gen)
 
@@ -132,19 +132,20 @@ To configure how and when updates are applied, use the following policies:
   - Default value: 3 AM
 
 #### Configure active hours
+
 Starting with [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) an IT Admin can specify the active hours range for HoloLens 2 devices.
 
 Active hours identify the period of time when you expect the device to be in use. Automatic restarts after an update will occur outside of the active hours. The specified range will be counted from the active hours start time. You can use MDM, as described in [Configuring active hours with MDM](/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm). MDM uses the Update/ActiveHoursStart and Update/ActiveHoursEnd and Update/ActiveHoursMaxRange settings in the Policy CSP to configure active hours.
 
--	[Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) - This value sets the end time. There is a 12-hour maximum from start time.
-    -	Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
-    -	The default is 17 (5 PM).
--	[Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) - This value sets max number of active hours from start time.
-    -	Supported values are 8-18.
-    -	The default value is 18 (hours).
--	[Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) - This value sets the start time. There is a 12-hour maximum from end time.
-    -	Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
-    -	The default value is 8 (8 AM).
+- [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) - This value sets the end time. There is a 12-hour maximum from start time.
+  - Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
+  - The default is 17 (5 PM).
+- [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) - This value sets max number of active hours from start time.
+  - Supported values are 8-18.
+  - The default value is 18 (hours).
+- [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) - This value sets the start time. There is a 12-hour maximum from end time.
+  - Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
+  - The default value is 8 (8 AM).
 
 #### For devices that run Windows 10, version 1607 only
 
@@ -212,8 +213,8 @@ If a user does not have access to MDM they can individually Pause updates for up
 Starting with [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2), this pause updates function can be managed for HoloLens 2 devices:
 
 - [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
-    - 0 (default) – Enabled
-    - 1 – Disabled
+  - 0 (default) – Enabled
+  - 1 – Disabled
 
 #### Intune update management functions that HoloLens supports
 
@@ -308,14 +309,9 @@ To revert to a previous version of HoloLens (1st gen), follow these steps:
 
 If WDRT doesn't detect your HoloLens device, try restarting your computer. If that doesn't work, select **My device was not detected**, select **Microsoft HoloLens**, and then follow the instructions.
 
-## Troubleshooting
-
-
-
 ## Related articles
 
 - [HoloLens 2 release notes](hololens-release-notes.md)
 - [What is Windows Update for Business?](/windows/deployment/update/waas-manage-updates-wufb)
 - [Assign devices to servicing channels for Windows 10 updates](/windows/deployment/update/waas-servicing-channels-windows-10-updates)
 - [Manage Windows 10 software updates in Intune](/mem/intune/protect/windows-update-for-business-configure)
-
