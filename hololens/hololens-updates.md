@@ -41,14 +41,21 @@ This is the first step of the update process where the device will query Windows
 
 The two critical pieces for scan to succeed are power and internet connectivity. We suggest that when users end their session with HoloLens they return it to an area where it is plugged in overnight and that it still has internet connectivity in that area.
 
-#### Troubleshooting configurations for Scan
 
-If your devices are having issues successfully scanning for updates entirely (verify using a manual scan when you know an update is pending) then check the following configurations.
 
-1. That you if you have a restrictive network in your organization, that you have allowed the [endpoints for Windows Update](hololens-offline.md).
-1. Your device has received a [deferral policy](#configure-an-update-deferral-policy),and is already on the latest eligible update as determined by policy.
-1. Your device has received a [pause policy](/mem/intune/protect/windows-10-update-rings#pause) which will prevent scans from occurring while the policy is in effect.
-1. If your device at Intune uses _Feature Updates for Windows 10_ or _Quality Updates for Windows 10_, please remove devices from being opted in these rings. These are not supported for HoloLens devices.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### 2. Download & Install
 
@@ -59,10 +66,6 @@ Once the device has scanned and found an applicable update, it can begin downloa
 #### Best practices for Download & Install
 
 If the best practices for scanning are followed, then the device should be plugged into power and have internet connectivity. These best practices are the same, and after the scan, if an update is found it will start the download.
-
-#### Troubleshooting configurations for Download & Install
-
-Many of the [troubleshooting configurations for scanning](#troubleshooting-configurations-for-scan) also apply here. If you've already reviewed those you may have an OS install issue. If this is the case, please [file an issue through feedback hub](hololens-feedback.md) using the **Enterprise Management -> Device category**.
 
 ### 3. Restart
 
@@ -308,6 +311,21 @@ To revert to a previous version of HoloLens (1st gen), follow these steps:
 #### If WDRT doesn't detect your device
 
 If WDRT doesn't detect your HoloLens device, try restarting your computer. If that doesn't work, select **My device was not detected**, select **Microsoft HoloLens**, and then follow the instructions.
+
+## Troubleshooting updates
+
+### Issue - My device didn't find an update when scanning
+
+If your devices are having issues successfully scanning for updates entirely (verify using a manual scan when you know an update is pending) then check the following configurations.
+
+1. That you if you have a restrictive network in your organization, that you have allowed the [endpoints for Windows Update](hololens-offline.md).
+1. Your device has received a [deferral policy](#configure-an-update-deferral-policy),and is already on the latest eligible update as determined by policy.
+1. Your device has received a [pause policy](/mem/intune/protect/windows-10-update-rings#pause) which will prevent scans from occurring while the policy is in effect.
+1. If your device at Intune uses _Feature Updates for Windows 10_ or _Quality Updates for Windows 10_, please remove devices from being opted in these rings. These are not supported for HoloLens devices.
+
+### Issue - My device has downloaded an update, but won't install it
+
+Many of the [troubleshooting configurations for scanning](#troubleshooting-configurations-for-scan) also apply here. If you've already reviewed those you may have an OS install issue. If this is the case, please [file an issue through feedback hub](hololens-feedback.md) using the **Enterprise Management -> Device category**.
 
 ## Related articles
 
