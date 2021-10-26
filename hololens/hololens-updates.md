@@ -68,7 +68,7 @@ Many of the [troubleshooting configurations for scanning](#troubleshooting-confi
 
 #### What happens during Restart
 
-This is the final stage of the update process, and the device has already found, downloaded and staged the update. The remaining step is a device restart to complete installation and boot into the updated operating system. It needs to restart to start the install process, [which as a benefit of state separation, is an atomic step](security-state-separation-isolation.md#state-separation-benefits). By default, the device won't restart during [active hours](#configure-active-hours). If you were to wear the device you'd see a progress bar. When it is finished the device will boot into the sign-in screen and be finished updating!
+This is the final stage of the update process, and the device has already found, downloaded and staged the update. The remaining step is a device restart to complete installation and boot into the updated operating system. It needs to restart to start the install process, [which as a benefit of state separation, is an atomic step](security-state-separation-isolation.md#state-separation-benefits). By default, the device won't restart during [active hours](#configure-active-hours). When it is finished the device will boot into the sign-in screen and be finished updating!
 
 #### Best practices for Restart
 
