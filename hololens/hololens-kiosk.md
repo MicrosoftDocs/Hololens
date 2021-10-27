@@ -33,13 +33,13 @@ Kiosk mode is a feature where you can control which applications are shown in st
 
     *Example uses*: A device that shows only the Store app, Feedback Hub and Settings app in start menu.
 
-    <img alt="Multi app kiosk example" src=".\images\multi-app-kiosk.jpg" width="411" height="500" />
+    <br/><img alt="Multi app kiosk example" src=".\images\multi-app-kiosk.jpg" width="411" height="500" />
 
 ## Description of kiosk mode experience when a user signs-in
 
 The following table lists the feature capabilities in the different kiosk modes.
 
-|&nbsp;|**Start menu**|**Quick Actions menu**|**Camera and video**|**Miracast**|**Cortana**|**Built-in voice commands**|
+|**&nbsp;**|**Start menu**|**Quick Actions menu**|**Camera and video**|**Miracast**|**Cortana**|**Built-in voice commands**|
 | --- | --- | --- | --- | --- | --- | --- |
 |**Single-app kiosk**|Disabled |Disabled |Disabled |Disabled   |Disabled |Enabled* |
 |**Multi-app kiosk**|Enabled |Enabled*  |Available*  |Available* |Available*   |Enabled*  |
