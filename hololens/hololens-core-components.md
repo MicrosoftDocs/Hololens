@@ -17,13 +17,15 @@ appliesto:
 
 ## Overview
 
-HoloLens 2 runs on Windows 10 Holographic, which includes a comprehensive mobile device management solution that gives companies control over device enrollment, configuration, and application management to maintenance and retirement. This overview will help IT professionals plan for deploying and managing HoloLens 2 devices in a commercial environment. 
+HoloLens 2 runs on Windows 10 Holographic, which includes a comprehensive mobile device management solution that gives companies control over device enrollment, configuration, and application management to maintenance and retirement. 
 
-To get started, view this quick summary of the process.
+This overview will help IT professionals plan for deploying and managing HoloLens 2 devices in a commercial environment. To get started, view this quick summary of the process.
+
+<br/>
 
 > [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
 
-The following steps can help guide you through the process of deploying HoloLens 2.
+The following steps will help you walk through the process of deploying HoloLens 2.
 
 ## Prepare
 
