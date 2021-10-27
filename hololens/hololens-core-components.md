@@ -29,31 +29,22 @@ The following steps contain links that will help you learn the process of deploy
 
 ## Prepare
 
-If you already know the basics of HoloLens and its use, you can skip this step.
+If you already know the basics of HoloLens and its use, you can skip this step. Otherwise, start by finding out [where to buy HoloLens 2](hololens2-purchase.md), how to get [support](hololens2-support.md), and how to [give Feedback](hololens-feedback.md).
 
-Find out [where to buy HoloLens 2](hololens2-purchase.md), how to get [support](hololens2-support.md), and how to [give Feedback](hololens-feedback.md).
+Before you put on your HoloLens2 and start using it, learn about how it [redefines your environment](hololens-environment-considerations.md) so you can optimize your experience. Then dive into learning how to set it up and use it for the [first time](hololens2-setup.md). 
 
-Before you start using your device, learn about how it [redefines your environment](hololens-environment-considerations.md) so you can optimize your experience. Then dive into learning how to set it up and use it for the [first time](hololens2-setup.md). 
-
-After you've mastered the basics, you can get down to learning [daily usage](holographic-home.md) techniques. Once you have internalized the HoloLens voice and gesture commands, you're ready to move on to planning your deployment.  
+After you've mastered the basics, you can get down to learning the language of HoloLens by reviewing the [Daily Usage](holographic-home.md) files. Once you have internalized the HoloLens voice and gesture commands, you're ready to move on to planning your deployment.  
 
 ## Plan
 
-Plan your deployment by learning about the scenarios, requirements, and essential services. 
+Plan your deployment by learning about the scenarios, requirements, and essential services. Your first task will be do determine which of the [Common Deployment Scenarios](hololens-requirements.md) will fit your organization's requirements.
 
-Determine which deployment scenario aligns best to your organization by reviewing the [Common Deployment Scenarios](hololens-requirements.md). Plan your infrastructure by reviewing the requirements for deploying HoloLens devices and applications.
-*   [Review infrastructure requirements](hololens-commercial-infrastructure.md)
-*   [Review network requirements for Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements.md#dynamics-365-remote-assist-hololens)]
-*   [Open ports for services](/dynamics365/mixed-reality/remote-assist/requirements.md#urls-and-+ports)
+Then start planning your infrastructure by figuring out how to [configure your network for HolLens](hololens-commercial-infrastructure.md). 
+If you're building a Remote Assist deployment, you'll want to learn about the [technical requirements](/dynamics365/mixed-reality/remote-assist/requirements.md#d/dynamics365/mixed-reality/remote-assist/requirements.md) for deploying and using Dynamics 365 Remote Assist. For example, you might have to learn about the [URLs and ports](/dynamics365/mixed-reality/remote-assist/requirements.md#urls-and-+ports) Remote Assist installations require.
 
-*	HoloLens 2 requires Modern Mobile Device Management.
-    *   [What is Microsoft Intune?](/mem/intune/fundamentals/what-is-intune)  
-        *   [Understand device categories, groups, profiles, and configurations](hololens-mdm-configure.md)
+Next you should learn about the Microsoft procedures and services that underlie HoloLens deployments. [Azure users and groups](hololens2-corp-connected-configure.md#azure-users-and-groups) are provide the basic framework for HoloLens user groups, identities, and logins. Within that framework, you'll learn to [manage user identity and login](hololens-identity.md) and [limiting password use](security-limiting-password-use.md) to secure your installation. 
 
-Plan your HoloLens 2 users by learning about user groups, identities, and logins.
-*   [Azure users and groups](hololens2-corp-connected-configure.md#azure-users-and-groups)
-*   [Manage user identity and login](hololens-identity.md)
-*   [Limiting password use](security-limiting-password-use.md)
+Finally, you'll learn about Modern Mobile Device Management, which includes learning to manage your HoloLens devices and apps with [Microsoft Intune](tps://docs.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune).
 
 ## Configure
 
