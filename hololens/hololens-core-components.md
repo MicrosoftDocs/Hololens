@@ -42,29 +42,29 @@ Get basic information about HoloLens:
 
 *   [Where to buy HoloLens 2](hololens2-purchase.md)
 *   [HoloLens 2 support](hololens2-support.md)
-    *   [Give Feedback](https://docs.microsoft.com/hololens/hololens-feedback)
+    *   [Give Feedback](hololens/hololens-feedback)
 
 Start learning to use the device.
 
-*   [HoloLens environment considerations](https://docs.microsoft.com/hololens/hololens-environment-considerations)
-*   [First Time Usage](https://docs.microsoft.com/en-us/hololens/hololens2-setup)
-*   [Daily Usage](https://docs.microsoft.com/en-us/hololens/holographic-home)
+*   [HoloLens environment considerations](hololens/hololens-environment-considerations)
+*   [First Time Usage](hololens/hololens2-setup)
+*   [Daily Usage](hololens/holographic-home)
 
 ## Plan
 
 Determine which deployment scenario aligns best to your organization by reviewing the [Common Deployment Scenarios](hololens-requirements.md). Plan your infrastructure by reviewing the requirements for deploying HoloLens devices and applications.
-*   [Review infrastructure requirements](https://docs.microsoft.com/en-us/hololens/hololens-commercial-infrastructure)
-*   [Review network requirements for Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-hololens)]
-*   [Open ports for services](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/requirements#urls-and-+ports)
+*   [Review infrastructure requirements](hololens/hololens-commercial-infrastructure)
+*   [Review network requirements for Remote Assist](dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-hololens)]
+*   [Open ports for services](/dynamics365/mixed-reality/remote-assist/requirements#urls-and-+ports)
 
 *	HoloLens 2 requires Modern Mobile Device Management.
-    *   [What is Microsoft Intune?](https://docs.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune)  
-        *   [Understand device categories, groups, profiles, and configurations](https://docs.microsoft.com/en-us/hololens/hololens-mdm-configure)
+    *   [What is Microsoft Intune?](/mem/intune/fundamentals/what-is-intune)  
+        *   [Understand device categories, groups, profiles, and configurations](hololens/hololens-mdm-configure)
 
 Plan your HoloLens 2 users by learning about user groups, identities, and logins.
-*   [Azure users and groups](https://docs.microsoft.com/hololens/hololens2-corp-connected-configure#azure-users-and-groups)
-*   [Manage user identity and login](https://docs.microsoft.com/hololens/hololens-identity)
-*   [Limiting password use](https://docs.microsoft.com/hololens/security-limiting-password-use)
+*   [Azure users and groups](hololens/hololens2-corp-connected-configure#azure-users-and-groups)
+*   [Manage user identity and login](hololens/hololens-identity)
+*   [Limiting password use](hololens/security-limiting-password-use)
 
 ## Configure
 
@@ -72,7 +72,7 @@ Use Microsoft Intune and Windows Autopilot to automatically register devices int
 *   Use [Automatically enroll HoloLens 2 into MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm)
 *   Use [Windows Autopilot](hololens2-autopilot) to deploy at scale with ease.
 *   Use [Windows Autopilot](hololens2-autopilot-registration-support) to register your devices.
-*   Use [Microsoft Endpoint Manager](https://docs.microsoft.com/hololens/hololens-mdm-configure) to manage your HoloLens devices.
+*   Use [Microsoft Endpoint Manager](hololens-mdm-configure) to manage your HoloLens devices.
 *   [Application Licenses](hololens2-cloud-connected-configure.md#application-licenses) can be applied to either users, user groups, or device groups  
 *   [Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups) help assign configurations and licenses for the HoloLens 2 
 
