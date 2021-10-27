@@ -193,6 +193,7 @@ Error is shown when applying the provisioning package on HoloLens.
 **Troubleshooting steps**
 
 1. Browse to the folder where Windows Configuration Designer project for runtime provisioning package exists.
+
 1. Open ICD.log and ensure that there are no errors in the log while building the provisioning package. Some errors are not showing during build but are still logged in ICD.log
 
 ### Issue – Multiple app assigned access to AAD group does not work
@@ -203,6 +204,8 @@ On AAD user sign-in, device does not go into expected kiosk mode.
 
 **Troubleshooting steps**
 
-- Confirm in Assigned Access configuration XML that GUID of AAD group of which signed-in user is a member of is used and not the GUID of the AAD user.
-- Confirm that in Intune portal that AAD user is indeed shown as member of targeted AAD group.
-- For Intune only, confirm that device is showing as compliant. Refer to [device compliance reference](/mem/intune/protect/device-compliance-get-started) for more information.
+1. Confirm in Assigned Access configuration XML that GUID of AAD group of which signed-in user is a member of is used and not the GUID of the AAD user.
+
+1. Confirm that in Intune portal that AAD user is indeed shown as member of targeted AAD group.
+
+1. For Intune only, confirm that device is showing as compliant. Refer to [device compliance reference](/mem/intune/protect/device-compliance-get-started) for more information.
