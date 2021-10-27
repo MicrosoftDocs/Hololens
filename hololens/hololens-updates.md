@@ -35,7 +35,7 @@ While the process of applying updates to HoloLens devices is similar to other Wi
 
 #### What happens during Scan
 
-This is the first step of the update process where the device will query Windows Update for any applicable updates. An update scan automatically occurs in the background once every 22 hours and requires that the device is either actively in use or on standby but plugged in to ensure internet connectivity. In order for the update scan to succeed it needs to have internet connectivity. This scan happens automatically, although a user can manually start a scan from the Settings app. If the device was turned off during the last scheduled scan then it will initiate a scan the next time it is plugged in.
+This is the first step of the update process where the device will query Windows Update for any applicable updates. An update scan automatically occurs in the background once every 22 hours and requires that the device is either actively in use or on standby but plugged in to ensure internet connectivity. In order for the update scan to succeed the device must have internet connectivity. This scan happens automatically, although a user can manually start a scan from the Settings app. If the device was turned off during the last scheduled scan then it will initiate a scan the next time it is plugged in.
 
 #### Best practices for Scan
 
@@ -62,8 +62,6 @@ This is the final stage of the update process, and the device has already found,
 #### Best practices for Restart
 
 If the device is left plugged in overnight, it will automatically completely installing the update and restart during the [maintenance window](/windows/win32/taskschd/task-maintenence). Once the download has been installed and staged for a restart internet connectivity isn't a requirement.
-
-#### Configurations for Restart
 
 Restarting the device is necessary for successfully applying the update but it also breaks into user behavior. HoloLens offers IT administrators the following levels of control over when and how the device should be restarted:
 
@@ -311,7 +309,7 @@ If your devices are having issues successfully scanning for updates entirely (ve
 
 ### Issue - My device has downloaded an update, but won't install it
 
-Many of the [troubleshooting configurations for scanning](#issue---my-device-didnt-find-an-update-when-scanning) also apply here. If you've already reviewed those you may have an OS install issue. If this is the case, please [file an issue through feedback hub](hololens-feedback.md) using the **Enterprise Management -> Device category**.
+Many of the [troubleshooting steps for scanning](#issue---my-device-didnt-find-an-update-when-scanning) also apply here. If you've already reviewed those you may have an OS install issue. If this is the case, please [file an issue through feedback hub](hololens-feedback.md) using the **Enterprise Management -> Device category**.
 
 ## Related articles
 
