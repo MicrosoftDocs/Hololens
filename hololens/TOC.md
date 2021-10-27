@@ -108,7 +108,7 @@
 ## [Display](hololens2-display.md)
 ## [Implementation and managed devices](hololens2-enterprise-troubleshooting.md#)
 ## [Enable diagnostic logs](hololens-diagnostic-logs.md)
-## [Restart, reset or recover HoloLens 2](hololens-recovery.md)
+## [Restart, reset, or recover HoloLens 2 ](hololens-recovery.md)
 
 # Resources
 ## [Where to buy HoloLens 2](hololens2-purchase.md)
