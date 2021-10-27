@@ -17,12 +17,9 @@ appliesto:
 
 ## Overview
 
-HoloLens 2 runs on Windows 10 Holographic, which provides organizations with robust, flexible, built-in mobile device and app management technologies. Windows 10 Holographic supports end-to-end device lifecycle management to give companies control over their devices, data, and apps.
+HoloLens 2 runs on Windows 10 Holographic, which provides organizations with robust, flexible, built-in mobile device and app management technologies. It supports end-to-end device lifecycle management, giving companies control over their devices, data, and apps. This overview will help IT professionals understand deployment and management of HoloLens 2 devices within a commercial environment. 
 
-> [!NOTE]
-> This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within an organization. For device end users, see [Get your HoloLens 2 ready to use](hololens2-setup.md) to get started.
-
-HoloLens 2 can easily be incorporated into standard lifecycle practices -- from device enrollment, configuration, and application management to maintenance and retirement -- by using a comprehensive mobile device management solution. Here is a summary of the process.
+HoloLens 2 can easily be incorporated into standard lifecycle practices -- from device enrollment, configuration, and application management to maintenance and retirement -- by using a comprehensive mobile device management solution. To get started, watch this overview of the process.
 
 > [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
 
@@ -37,6 +34,8 @@ The following steps and video can help guide you through the process of deployin
 | ![Step 5.](images/5green.png) | <br/> **[Maintain](#maintain)**: Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. |
 
 ## Prepare
+
+| ![Step 1.](images/1green.png)| <br/> **[Prepare](#prepare)**: Get familiar with the basic information needed to get and learn to use HoloLens 2. |
 
 Get basic information about HoloLens:
 
