@@ -25,21 +25,17 @@ This overview will help IT professionals plan for deploying and managing HoloLen
 
 > [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
 
-The following steps will help you walk through the process of deploying HoloLens 2.
+The following steps contain links that will help you learn the process of deploying HoloLens 2.
 
 ## Prepare
 
-Get basic information about HoloLens:
+If you already know the basics of HoloLens and its use, you can skip this step.
 
-*   [Where to buy HoloLens 2](hololens2-purchase.md)
-*   [HoloLens 2 support](hololens2-support.md)
-    *   [Give Feedback](hololens-feedback.md)
+Find out [where to buy HoloLens 2](hololens2-purchase.md), how to get [support](hololens2-support.md), and how to [give Feedback](hololens-feedback.md).
 
-Start learning to use the device.
+Before you start using your device, learn about how it [redefines your environment](hololens-environment-considerations.md) so you can optimize your experience. Then dive into learning how to set it up and use it for the [first time](hololens2-setup.md). 
 
-*   [HoloLens environment considerations](hololens-environment-considerations.md)
-*   [First Time Usage](hololens2-setup.md)
-*   [Daily Usage](holographic-home.md)
+After you've mastered the basics, you can get down to learning [daily usage](holographic-home.md) techniques. Once you have internalized the HoloLens voice and gesture commands, you're ready to move on to planning your deployment.  
 
 ## Plan
 
