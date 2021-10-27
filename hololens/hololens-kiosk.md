@@ -39,7 +39,7 @@ Kiosk mode is a feature where you can control which applications are shown in st
 
 The following table lists the feature capabilities in the different kiosk modes.
 
-|**&nbsp;**|**Start menu**|**Quick Actions menu**|**Camera and video**|**Miracast**|**Cortana**|**Built-in voice commands**|
+||**Start menu**|**Quick Actions menu**|**Camera and video**|**Miracast**|**Cortana**|**Built-in voice commands**|
 | --- | --- | --- | --- | --- | --- | --- |
 |**Single-app kiosk**|Disabled |Disabled |Disabled |Disabled   |Disabled |Enabled* |
 |**Multi-app kiosk**|Enabled |Enabled*  |Available*  |Available* |Available*   |Enabled*  |
