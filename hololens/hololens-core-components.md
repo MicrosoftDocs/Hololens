@@ -42,29 +42,29 @@ Get basic information about HoloLens:
 
 *   [Where to buy HoloLens 2](hololens2-purchase.md)
 *   [HoloLens 2 support](hololens2-support.md)
-    *   [Give Feedback](hololens/hololens-feedback)
+    *   [Give Feedback](hololens-feedback)
 
 Start learning to use the device.
 
-*   [HoloLens environment considerations](hololens/hololens-environment-considerations)
-*   [First Time Usage](hololens/hololens2-setup)
-*   [Daily Usage](hololens/holographic-home)
+*   [HoloLens environment considerations](hololens-environment-considerations)
+*   [First Time Usage](hololens2-setup)
+*   [Daily Usage](holographic-home)
 
 ## Plan
 
 Determine which deployment scenario aligns best to your organization by reviewing the [Common Deployment Scenarios](hololens-requirements.md). Plan your infrastructure by reviewing the requirements for deploying HoloLens devices and applications.
-*   [Review infrastructure requirements](hololens/hololens-commercial-infrastructure)
+*   [Review infrastructure requirements](hololens-commercial-infrastructure)
 *   [Review network requirements for Remote Assist](dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-hololens)]
 *   [Open ports for services](/dynamics365/mixed-reality/remote-assist/requirements#urls-and-+ports)
 
 *	HoloLens 2 requires Modern Mobile Device Management.
     *   [What is Microsoft Intune?](/mem/intune/fundamentals/what-is-intune)  
-        *   [Understand device categories, groups, profiles, and configurations](hololens/hololens-mdm-configure)
+        *   [Understand device categories, groups, profiles, and configurations](hololens-mdm-configure)
 
 Plan your HoloLens 2 users by learning about user groups, identities, and logins.
-*   [Azure users and groups](hololens/hololens2-corp-connected-configure#azure-users-and-groups)
-*   [Manage user identity and login](hololens/hololens-identity)
-*   [Limiting password use](hololens/security-limiting-password-use)
+*   [Azure users and groups](hololens2-corp-connected-configure#azure-users-and-groups)
+*   [Manage user identity and login](hololens-identity)
+*   [Limiting password use](security-limiting-password-use)
 
 ## Configure
 
