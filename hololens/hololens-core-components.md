@@ -52,21 +52,19 @@ Start learning to use the device.
 
 ## Plan
 
-Determine which deployment scenario aligns best to your organization by reviewing the [Common Deployment Scenarios](hololens-requirements.md).
-
-Plan your infrastructure by reviewing the requirements for deploying HoloLens devices and applications.
-    *   [Review infrastructure requirements](https://docs.microsoft.com/en-us/hololens/hololens-commercial-infrastructure)
-    *   [Review network requirements for Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-hololens)]
-    *   [Open ports for services](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/requirements#urls-and-+ports)
+Determine which deployment scenario aligns best to your organization by reviewing the [Common Deployment Scenarios](hololens-requirements.md). Plan your infrastructure by reviewing the requirements for deploying HoloLens devices and applications.
+*   [Review infrastructure requirements](https://docs.microsoft.com/en-us/hololens/hololens-commercial-infrastructure)
+*   [Review network requirements for Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-hololens)]
+*   [Open ports for services](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/remote-assist/requirements#urls-and-+ports)
 
 *	HoloLens 2 requires Modern Mobile Device Management.
     *   [What is Microsoft Intune?](https://docs.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune)  
         *   [Understand device categories, groups, profiles, and configurations](https://docs.microsoft.com/en-us/hololens/hololens-mdm-configure)
 
 Plan your HoloLens 2 users by learning about user groups, identities, and logins.
-    *   [Azure users and groups](https://docs.microsoft.com/hololens/hololens2-corp-connected-configure#azure-users-and-groups)
-    *   [Manage user identity and login](https://docs.microsoft.com/hololens/hololens-identity)
-    *   [Limiting password use](https://docs.microsoft.com/hololens/security-limiting-password-use)
+*   [Azure users and groups](https://docs.microsoft.com/hololens/hololens2-corp-connected-configure#azure-users-and-groups)
+*   [Manage user identity and login](https://docs.microsoft.com/hololens/hololens-identity)
+*   [Limiting password use](https://docs.microsoft.com/hololens/security-limiting-password-use)
 
 ## Configure
 
@@ -76,24 +74,32 @@ Use Microsoft Intune and Windows Autopilot to automatically register devices int
 *   Use [Windows Autopilot](hololens2-autopilot-registration-support) to register your devices.
 *   Use [Microsoft Endpoint Manager](https://docs.microsoft.com/hololens/hololens-mdm-configure) to manage your HoloLens devices.
 *   [Application Licenses](hololens2-cloud-connected-configure.md#application-licenses) can be applied to either users, user groups, or device groups  
-*   *[Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups) help assign configurations and licenses for the HoloLens 2 
+*   [Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups) help assign configurations and licenses for the HoloLens 2 
 
 ## Deploy
 
 Distribute your HoloLens 2 devices and validate their configuration. 
 
-*   Deployment Considerations - add link | Determine deployment requirements |
-*   [Enroll HoloLens](hololens-enroll-mdm.md) | Enroll HoloLens in Modern Mobile Device Management |
-*   [Enrollment Validation](hololens2-corp-connected-deploy.md#enrollment-validation) | Validate the device has Azure AD Joined from Settings or the Azure Portal |
-*   [Certificate Validation](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | Check settings and validate they have been distributed correctly |
-*   [Validate app installs](hololens2-corp-connected-deploy.md#validate-lob-app-install) | Confirm the app is present and working on your HoloLens 2 |
-*   [Manage users](hololens-identity.md) | Set up and manage users |
-*  [Create users and groups](hololens2-corp-connected-configure.md#azure-users-and-groups)
+Determine deployment requirements 
+*   Deployment Considerations - add link
+Enroll HoloLens in Modern Mobile Device Management
+*   [Enroll HoloLens](hololens-enroll-mdm.md) 
+Validate the device has Azure AD - Joined from Settings or the Azure Portal
+*   [Enrollment Validation](hololens2-corp-connected-deploy.md#enrollment-validation) 
+Check settings and validate they have been distributed correctly
+*   [Certificate Validation](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) 
+Confirm the app is present and working on your HoloLens 2
+*   [Validate app installs](hololens2-corp-connected-deploy.md#validate-lob-app-install)
+Set up and manage users
+*   [Manage users](hololens-identity.md)
+*   [Create users and groups](hololens2-corp-connected-configure.md#azure-users-and-groups)
 *   [Manage HoloLens devices with Microsoft Endpoint Manager](hololens-mdm-configure.md)
 
 ## Maintain
 
 Use Windows Update for Business along with your MDM system or the Microsoft Store to keep your fleet of HoloLens 2 and apps updated.
 
-*   [Update HoloLens 2](hololens-updates.md) | Configure updates as needed through Windows Updates for Business |
-*   [Update apps](app-deploy-overview.md) | Configure through your MDM system or the Microsoft Store
+Configure updates as needed through Windows Updates for Business
+*   [Update HoloLens 2](hololens-updates.md)
+Configure through your MDM system or the Microsoft Store
+*   [Update apps](app-deploy-overview.md)
