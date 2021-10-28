@@ -44,7 +44,7 @@ If you're building a Remote Assist deployment, you'll want to learn about the [t
 
 Next you should learn about the Microsoft procedures and services that underlie HoloLens deployments. [Azure users and groups](hololens2-corp-connected-configure.md#azure-users-and-groups) are provide the basic framework for HoloLens user groups, identities, and logins. Within that framework, you'll learn to [manage user identity and login](hololens-identity.md) and [limiting password use](security-limiting-password-use.md) to secure your installation. 
 
-Finally, you'll learn about Modern Mobile Device Management, which includes learning to manage your HoloLens devices and apps with [Microsoft Intune](tps://docs.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune).
+Finally, you'll learn about Modern Mobile Device Management, which includes learning to manage your HoloLens devices and apps with [Microsoft Intune](/mem/intune/fundamentals/what-is-intune).
 
 ## Configure
 
