@@ -76,6 +76,8 @@ landingContent:
             url: hololens2-corp-connected-overview.md
           - text: Deployment Guide - Offline secure
             url: hololens-common-scenarios-offline-secure.md
+          - text: Deployment Guide - Shared Device with Dynamics 365 Remote Assist
+            url: hololens2-deploying-remote-assist-using-a-shared-identity-across-multiple-users.md
 
  # Card
   - title: Mixed Reality Partner Resources
