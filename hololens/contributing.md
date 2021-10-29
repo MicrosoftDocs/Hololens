@@ -90,7 +90,7 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
         },
 ```
 
-- The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `hololens` and omits the `.md` file extension.
+- The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with the docset (in this case, `hololens`) and omits the `.md` file extension.
 
 - The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **doesn't** contain `mixed-reality-docs` or `.md`, as it refers to the public URL and not the repository path. Linking to a section within the new article using `#section` is allowed. You can also use an absolute path to another site here, if necessary.
 
