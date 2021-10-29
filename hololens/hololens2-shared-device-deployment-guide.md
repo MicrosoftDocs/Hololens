@@ -1,6 +1,6 @@
 ---
 title: Shared Device Deployment Guide
-description: This document contains high level steps involved in deploying shared HoloLens 2 devices by using shared Azure AD accounts. The guidance provided in this document focuses on provisioning Azure AD user accounts, assigning required licenses and HoloLens 2 device configuration for a shared device environment. For more detailed scenario-based deployment guidance please refer to [Common Deployment Scenarios](https://docs.microsoft.com/en-us/hololens/hololens-requirements).
+description: This article contains high level steps involved in deploying shared HoloLens 2 devices by using shared Azure AD accounts. The guidance provided in this document focuses on provisioning Azure AD user accounts, assigning required licenses and HoloLens 2 device configuration for a shared device environment. For more detailed scenario-based deployment guidance please refer to [Common Deployment Scenarios](https://docs.microsoft.com/en-us/hololens/hololens-requirements).
 author: MuruganandamDevarajan
 ms.author: murugand
 ms.date: 10/15/2021
@@ -13,7 +13,7 @@ appliesto:
 ---
 
 # Deployment Guide - Shared HoloLens 2 with Remote Assist - Overview
-This document contains high level steps involved in deploying shared HoloLens 2 devices by using shared Azure AD accounts. The guidance provided in this document focuses on provisioning Azure AD user accounts, assigning required licenses and HoloLens 2 device configuration for a shared device environment. For more detailed scenario-based deployment guidance please refer to [Common Deployment Scenarios](https://docs.microsoft.com/en-us/hololens/hololens-requirements).
+This article contains high level steps involved in deploying shared HoloLens 2 devices by using shared Azure AD accounts. The guidance provided in this document focuses on provisioning Azure AD user accounts, assigning required licenses and HoloLens 2 device configuration for a shared device environment. For more detailed scenario-based deployment guidance please refer to [Common Deployment Scenarios](https://docs.microsoft.com/en-us/hololens/hololens-requirements).
 
 ## Deployment Tasks
 
