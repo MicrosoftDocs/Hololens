@@ -1,5 +1,5 @@
 ---
-title: Shared Device Deployment Guide
+title: Deploying Remote Assist using a shared identity across multiple users
 description: This article contains high level steps involved in deploying Remote Assist using shared shared Azure AD identity across multiple users. The guidance provided in this document focuses on provisioning Azure AD user accounts, assigning required licenses and HoloLens 2 device configuration for a shared device environment. For more detailed scenario-based deployment guidance please refer to [Common Deployment Scenarios](https://docs.microsoft.com/en-us/hololens/hololens-requirements).
 author: MuruganandamDevarajan
 ms.author: murugand
