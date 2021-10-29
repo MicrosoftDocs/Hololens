@@ -2,9 +2,9 @@
 title: HoloLens environment considerations
 description: Get the best possible experience using HoloLens when you optimize the device for your eyes and environment.
 author: dorreneb
-ms.author: dobrown
+ms.author: v-beehanson
 manager: jarrettr
-ms.date: 8/29/2019
+ms.date: 10/29/2021
 ms.prod: hololens
 ms.topic: article
 audience: ITPro
@@ -90,7 +90,7 @@ When you enter a new space (or load an existing one), you’ll see a mesh graphi
 
 ## Environment management
 
-Holograms exist in **Settings** > **System** > **Holograms** and **Settings** > **System** > **Privacy**  > **Environment**. There are two settings that enable users to “clean up” holograms and allow HoloLens to “forget" a space.
+Hologram map data exists in **Settings** > **System** > **Holograms** and **Settings** > **System** > **Privacy**  > **Environment**. There are two settings that enable users to “clean up” holograms and allow HoloLens to “forget" a space.
 
 1. **Delete nearby holograms**.  When you select this setting, HoloLens erases all anchored holograms and all stored map data for the “current space” where the device is located. A new map section is created and stored in the database for that location once holograms are again placed in that same space.
 
