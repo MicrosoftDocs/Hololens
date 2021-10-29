@@ -2,8 +2,8 @@
 title: Contributing instructions
 description: Learn how to contribute to the HoloLens docs on the docs.microsoft.com platform using GitHub-flavored Markdown. 
 author: hferrone
-ms.author: mattwoj
-ms.date: 01/04/2021
+ms.author: v-beehanson
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: hololens
 ---
@@ -84,13 +84,13 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
 {
     "redirections": [
         {
-            "source_path": "hololens/old-article.md",
+            "source_path": "hololens/old-article",
             "redirect_url": "new-article#section-about-old-topic",
             "redirect_document_id": false
         },
 ```
 
-- The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `mixed-reality-docs` and ends with `.md`.
+- The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `hololens` and omits the `.md` file extension.
 
 - The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **doesn't** contain `mixed-reality-docs` or `.md`, as it refers to the public URL and not the repository path. Linking to a section within the new article using `#section` is allowed. You can also use an absolute path to another site here, if necessary.
 
