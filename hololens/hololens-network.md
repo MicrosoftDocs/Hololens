@@ -125,6 +125,18 @@ Additional resources:
 
 Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if you are having problems connecting to your Wi-Fi.
 
+## Connecting WiFi for roaming between terminals
+
+When deploying WiFi, use the HoloLens 2 Wifi module specifications to assure good roaming between Wifi terminals when connecting HoloLens2 devices. 
+
+| Component | Description | WiFi Standard |
+|---------|---------|---------|
+| Chipset | SDM850 with WCN3990 WiFi modules. | 802.11 AC wave 1 |
+| Channel bandwidths | 2.4GHz supports 20 MHz, 5 GHz supports 20, 40, and 80 MHz |
+| Spatial Streamsc | 2x2 MIMO | Supports 802.11r (fast roaming), rssi to trigger roaming is ~70dBm |
+
+Minimum levels will vary according to usage. For example, in addition to HoloLens 2 roamaing, Azure remote rendering performance, Remote Assist, and general web access will all have different throughput requirements, which will directly affect WiFi signal level.
+
 ## Configure Network Proxy
 
 This section covers network proxy for HoloLens OS and Universal Windows Platform (UWP) Apps using Windows HTTP stack. Applications using non-Windows HTTP stack may have their own proxy configuration and handling. 
