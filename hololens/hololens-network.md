@@ -125,7 +125,7 @@ Additional resources:
 
 Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if you are having problems connecting to your Wi-Fi.
 
-## Connecting WiFi if HoloLens 2 will be roaming between terminals
+## Connecting WiFi for HoloLens 2 roaming between terminals
 
 When connecting HoloLens 2 devices, use the technical specifications for HoloLens 2 Wifi module to assure good roaming between Wifi terminals when deploying WiFi. 
 
