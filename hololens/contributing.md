@@ -142,7 +142,7 @@ Use the following workflow to *create new articles* in the documentation repo vi
 
 9. Select **New pull request** and merge your fork's _master_ branch into MicrosoftDocs/hololens _master_ (make sure the arrow is pointing to the correct destination).
 
-   ![Create pull request from your fork into MicrosoftDocs/mixed-reality.](images/pr-to-master.png)
+   ![Create pull request from your fork into MicrosoftDocs/hololens.](images/pr-to-master.png)
 
 ## Markdown basics
 
@@ -164,10 +164,10 @@ You’ll need to upload your images to the "hololens/images" folder in the repo,
 >[!IMPORTANT]
 >You can only upload images to your forked repo before merging. So, if you plan on adding images to an article, you'll need to [use Visual Studio Code](#using-visual-studio-code) to add the images to your fork's "images" folder first or make sure you've done the following in a web browser:
 >
->1. Forked the MicrosoftDocs/mixed-reality repo.
+>1. Forked the MicrosoftDocs/hololens repo.
 >2. Edited the article in your fork.
 >3. Uploaded the images you're referencing in your article to the "hololens/images" folder in your fork.
->4. Created a **pull request** to merge your fork into the MicrosoftDocs/mixed-reality _master_ branch.
+>4. Created a **pull request** to merge your fork into the MicrosoftDocs/hololens _master_ branch.
 >
 >To learn how to set up your own forked repo, follow the instructions for [creating a new article](#creating-a-new-article).
 
@@ -201,7 +201,7 @@ Follow these steps to configure Visual Studio Code to work with this repo:
 1. In a web browser:
     1. Install [Git for your PC](https://git-scm.com/downloads).
     2. Install [Visual Studio Code](https://code.visualstudio.com/).
-    3. [Fork MicrosoftDocs/mixed-reality](#creating-a-new-article) if you haven't already.
+    3. [Fork MicrosoftDocs/hololens](#creating-a-new-article) if you haven't already.
     4. In your fork, select **Clone or download** and copy the URL.
 2. Create a local clone of your fork in Visual Studio Code:
     1. From the **View** menu, select **Command Palette**.
@@ -219,9 +219,9 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 1. Make sure your cloned fork is up to date with the official repo.
 
-   1. In a web browser, create a pull request to sync recent changes from other contributors in the default branch of MicrosoftDocs/mixed-reality, _master_, to your fork (make sure the arrow is pointing to the correct destination).
+   1. In a web browser, create a pull request to sync recent changes from other contributors in the default branch of MicrosoftDocs/hololens, _master_, to your fork (make sure the arrow is pointing to the correct destination).
       
-      ![Sync changes from MicrosoftDocs/mixed-reality to your fork.](images/sync-repos.png)
+      ![Sync changes from MicrosoftDocs/hololens to your fork.](images/sync-repos.png)
 	  
    2. In Visual Studio Code, select the sync button to sync your freshly updated fork to the local clone.
       
@@ -245,7 +245,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 	  
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/hololens _master_ (make sure the arrow is pointing to the correct destination).
 
-   ![Create pull request from your fork into MicrosoftDocs/mixed-reality.](images/pr-to-master.png)
+   ![Create pull request from your fork into MicrosoftDocs/hololens.](images/pr-to-master.png)
 
 ### Useful extensions
 
