@@ -25,8 +25,8 @@ This article describes how to resolve several common HoloLens issues.
 <a id="list"></a>
 
 **Known Issues**
-- [Every time the power goes to 18 percent, the device suddenly shuts down automatically](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
-- [**Fixed** - OneDrive UWP app doesn't work for Azure AD users](#fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users)
+- [Insider fix - Every time the power goes to 18 percent, the device suddenly shuts down automatically](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [**Fixed** - OneDrive UWP app doesn't work for Azure AD users](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
 - [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
 - [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
@@ -62,6 +62,9 @@ This article describes how to resolve several common HoloLens issues.
 
 ## Every time the power goes to 18 percent, the device suddenly shuts down automatically
 
+> [!NOTE]
+> There is a fix for this issue available in [Windows Insiders.](hololens-insider.md)
+
 There is a known known issue where when the device reaches 18% battery, it will unexpectedly shut down. This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
 
 1. Ensure optional diagnostics are enabled on your device(s)
@@ -96,7 +99,7 @@ If you are experiencing this issue, try one of the following:
 
 This error is typically encountered during device reset and re-use flows where a HoloLens device has gone through Autopilot at least once. In order to resolve this issue, please [delete the device from Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) and reset it again to complete Autopilot flow.
 
-For more info, please refer to [troubleshooting steps on the autopilot page.](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
+For more info, please refer to [troubleshooting steps on the autopilot page.](hololens2-autopilot.md#issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot)
 
 ## Microsoft Store error code 0x80131500
 
