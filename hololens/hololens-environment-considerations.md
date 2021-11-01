@@ -88,15 +88,19 @@ Network identification (such as SSID or MAC address) isn't sent to Microsoft, an
 
 When you enter a new space (or load an existing one), you’ll see a mesh graphic spreading over the space. This means your device is mapping your surroundings. While a HoloLens will learn a space over time, there are tips and tricks to map spaces.
 
-## Environment management
+## Deleting holograms
 
 Hologram map data exists in **Settings** > **System** > **Holograms** and **Settings** > **System** > **Privacy**  > **Environment**. There are two settings that enable users to “clean up” holograms and allow HoloLens to “forget" a space.
 
-1. **Delete nearby holograms**.  When you select this setting, HoloLens erases all anchored holograms and all stored map data for the “current space” where the device is located. A new map section is created and stored in the database for that location once holograms are again placed in that same space.
+### Delete nearby holograms
+
+When you select this setting, HoloLens erases all anchored holograms and all stored map data for the “current space” where the device is located. A new map section is created and stored in the database for that location once holograms are again placed in that same space.
 
     To delete nearby holograms, go to **Settings** > **System** > **Holograms** > **Remove nearby holograms**.
 
-1. **Delete all holograms**. When you select this setting, HoloLens erases ALL map data and anchored holograms in the entire databases of spaces. Deleted holograms will not be rediscovered, and any holograms deleted will have to be replaced to again store map sections in the database.
+### Delete all holograms
+
+When you select this setting, HoloLens erases ALL map data and anchored holograms in the entire databases of spaces. Deleted holograms will not be rediscovered, and any holograms deleted will have to be replaced to again store map sections in the database.
 
     To delete all holograms, go to **Settings** > **System** > **Holograms** > **Remove all holograms**.
 
