@@ -3,7 +3,7 @@ title: HoloLens 2 implementation and managed device troubleshooting
 description: Troubleshooting HoloLens 2 devices in an Enterprise environment
 author: beelia
 ms.author: v-beehanson
-ms.date: 10/26/2021
+ms.date: 11/1/2021
 ms.topic: article
 keywords: troubleshooting
 ms.prod: hololens
@@ -186,7 +186,7 @@ If you are having issues updating your managed HoloLens devices please read this
 
 ## Kiosk troubleshooting
 
-If you are having issues either configuring, using, or applying kiosks refer to the [kiosk troubleshooting guidance](hololens-kiosk?#troubleshooting)
+If you are having issues either configuring, using, or applying kiosks refer to the [kiosk troubleshooting guidance](hololens-kiosk.md#troubleshooting)
 
 ## Managed HoloLens Devices FAQs
 
