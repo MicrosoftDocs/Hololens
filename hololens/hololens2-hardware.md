@@ -16,7 +16,9 @@ appliesto:
 
 # About HoloLens 2
 
-[ ![HoloLens 2 side view.](images/hololens2-exploded-view-diagram.png)](images/hololens2-exploded-view-diagram.png#lightbox)
+[![HoloLens 2 side view.](images/hololens2-exploded-view-diagram.png)](images/hololens2-exploded-view-diagram.png#lightbox)
+
+[Open image in new window](images/hololens2-exploded-view-diagram.png)
 
 Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. HoloLens 2 runs on the [Windows Holographic OS](hololens-release-notes.md), which is based on a "flavor" of Windows 10, that provides users, admins, and developers with a robust, performant, and secure platform.
 
@@ -153,18 +155,18 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ### Safety
 
-* [Product Safety](https://support.microsoft.com/en-us/help/4023454/safety-information)
-* [Product Safety Warnings and Instructions](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
-* Eye safety: HoloLens 2 has been tested and conforms to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
-* [SAR Information](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
+- [Product Safety](https://support.microsoft.com/help/4023454/safety-information)
+- [Product Safety Warnings and Instructions](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)
+- Eye safety: HoloLens 2 has been tested and conforms to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
+- [SAR Information](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ### Regulatory information
-[HoloLens Regulatory](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Includes information on temperature, disposal, radio and TV interference, and more.
+
+[HoloLens Regulatory](https://support.microsoft.com/help/13761/hololens-regulatory-information): Includes information on temperature, disposal, radio and TV interference, and more.
 
 ## Warranty Information
 
-Microsoft HoloLens 2 comes with a standard limited [warranty](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5). 
-
+Microsoft HoloLens 2 comes with a standard limited [warranty](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5).
 
 Purchase is subject to [Microsoft Store Terms of Use and Sale](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1). All sales are final. No refunds.
 
@@ -186,6 +188,7 @@ Not intended for use by children younger than 13.
 |     Exterior Shipper Weight    |     3.284 kg           |     7.240 lbs           |
 
 > [!NOTE]
+>
 > - Unit: The black, retail-style box HoloLens 2 is sold in.
 > - Exterior Shipper: The protective shipping packaging around Unit.
 
@@ -204,9 +207,9 @@ The serial number can also be found via a connected PC:
 1. Plug in the device
 1. Navigate to **This PC** in file explorer
 1. Right Click and select **Properties** of the HoloLens device
-1. This will display the series number of the device, as shown in the screenshot below.
+1. This will display the series number of the device, as shown in the screenshot below.<br/>
 
-   <br/><img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
+   <img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## Next step(s)
 
