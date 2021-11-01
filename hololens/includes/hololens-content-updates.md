@@ -2,6 +2,20 @@
 
 
 
+## Week of October 25, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/25/2021 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |
+| 10/25/2021 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
+| 10/25/2021 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
+| 10/25/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
+| 10/25/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 10/27/2021 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
+| 10/28/2021 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+
+
 ## Week of October 18, 2021
 
 
@@ -67,17 +81,3 @@
 | 9/30/2021 | [Find, install, and uninstall applications](/hololens/holographic-store-apps) | modified |
 | 9/30/2021 | [HoloLens 2 implementation and managed device troubleshooting](/hololens/hololens2-enterprise-troubleshooting) | modified |
 | 9/30/2021 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
-
-
-## Week of September 20, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/20/2021 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
-| 9/21/2021 | [Windows Defender Application Control (WDAC)](/hololens/windows-defender-application-control-wdac) | modified |
-| 9/21/2021 | [Common Deployment Scenarios](/hololens/hololens-requirements) | modified |
-| 9/22/2021 | [Microsoft Store for Business](/hololens/app-deploy-store-business) | modified |
-| 9/22/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 9/23/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 9/23/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
