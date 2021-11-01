@@ -3,7 +3,7 @@ title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
 author: evmill
 ms.author: v-evmill
-ms.date: 10/13/2021
+ms.date: 11/1/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
