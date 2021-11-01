@@ -96,13 +96,13 @@ Hologram map data exists in **Settings** > **System** > **Holograms** and **Sett
 
 When you select this setting, HoloLens erases all anchored holograms and all stored map data for the “current space” where the device is located. A new map section is created and stored in the database for that location once holograms are again placed in that same space.
 
-    To delete nearby holograms, go to **Settings** > **System** > **Holograms** > **Remove nearby holograms**.
+To delete nearby holograms, go to **Settings** > **System** > **Holograms** > **Remove nearby holograms**.
 
 ### Delete all holograms
 
 When you select this setting, HoloLens erases ALL map data and anchored holograms in the entire databases of spaces. Deleted holograms will not be rediscovered, and any holograms deleted will have to be replaced to again store map sections in the database.
 
-    To delete all holograms, go to **Settings** > **System** > **Holograms** > **Remove all holograms**.
+To delete all holograms, go to **Settings** > **System** > **Holograms** > **Remove all holograms**.
 
 ## Hologram quality
 
