@@ -2,7 +2,7 @@
 title: HoloLens 2 hardware
 description: Learn about the components that make up the Microsoft HoloLens 2, the latest evolution of an untethered holographic Microsoft computer running Windows 10.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 10/20/2020
+ms.date: 11/1/2021
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -16,9 +16,41 @@ appliesto:
 
 # About HoloLens 2
 
-![HoloLens 2 side view.](images/hololens2-breakdown.png)
+![HoloLens 2 side view.](images/hololens2-exploded-view-diagram.png)
 
-Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. HoloLens 2 runs on the [Windows Holographic OS](hololens-release-notes.md), which is based on a "flavor" of Windows 10, that provides users, admins, and developers with a robust, performant, and secure platform. 
+<a href="images/hololens2-exploded-view-diagram.png" data-lightbox="HoloLens 2 side view" data-title="Exploded HoloLens 2">Image #1</a>
+
+<div class="row">
+  <div class="col">
+     <img src="hololens2-exploded-view-diagram.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
+  </div>
+</div>
+
+
+<div id="Lightbox" class="modal">
+  <span class="close pointer" onclick="closeLightbox()">&times;</span>
+  <div class="modal-content">
+    <div class="slide">
+        <img src="hololens2-exploded-view-diagram.png" class="image-slide" alt="Toy car on the road." />
+    </div>
+    <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    <div class="dots">
+      <div class="col">
+        <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Toy car on the road" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. HoloLens 2 runs on the [Windows Holographic OS](hololens-release-notes.md), which is based on a "flavor" of Windows 10, that provides users, admins, and developers with a robust, performant, and secure platform.
 
 > [!NOTE]
 > The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) to HoloLens 2 in May 2021, and we are working on an upcoming release based on customer feedback for this fall.
