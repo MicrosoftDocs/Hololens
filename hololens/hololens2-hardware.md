@@ -16,39 +16,7 @@ appliesto:
 
 # About HoloLens 2
 
-![HoloLens 2 side view.](images/hololens2-exploded-view-diagram.png)
-
-<a href="images/hololens2-exploded-view-diagram.png" data-lightbox="HoloLens 2 side view" data-title="Exploded HoloLens 2">Image #1</a>
-
-<div class="row">
-  <div class="col">
-     <img src="hololens2-exploded-view-diagram.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
-  </div>
-</div>
-
-
-<div id="Lightbox" class="modal">
-  <span class="close pointer" onclick="closeLightbox()">&times;</span>
-  <div class="modal-content">
-    <div class="slide">
-        <img src="hololens2-exploded-view-diagram.png" class="image-slide" alt="Toy car on the road." />
-    </div>
-    <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    <div class="dots">
-      <div class="col">
-        <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Toy car on the road" />
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
+[ ![HoloLens 2 side view.](images/hololens2-exploded-view-diagram.png)](images/hololens2-exploded-view-diagram.png)
 
 Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. HoloLens 2 runs on the [Windows Holographic OS](hololens-release-notes.md), which is based on a "flavor" of Windows 10, that provides users, admins, and developers with a robust, performant, and secure platform.
 
