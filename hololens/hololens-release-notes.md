@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/12/2021
+ms.date: 11/9/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -25,13 +25,31 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 > [!NOTE]
 > The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update to HoloLens 2 in October 2021](#windows-holographic-version-21h2), and we are working on more upcoming releases based on customer feedback.
 
+## Windows Holographic, version 21H2 - September 2021 Update
+
+- Build 20348.XXXX
+
+Improvements and fixes in the update:
+
+- Fixed a known issue where [every time the power goes to 18 percent, the device suddenly shuts down automatically](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically).
+- Micro QR codes which were oriented at 45/135deg were not detected often enough or not detected at all. This issue is addressed and now they are detected reliably.
+- Cleans up HoloLens release identifiers in Settings pages.
+
+## Windows Holographic, version 20H2 - October 2021 Update
+
+- Build 19041.XXXX
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H2.
+
 ## Windows Holographic, version 21H2
 
 - Build 20348.1432
 
 Windows Holographic, version 21H2 is now available and brings a great set of new features to HoloLens 2 users and IT professionals. This one’s about the improved troubleshooting and device reports, some fixed bugs in kiosk mode and the certificate viewer, the expanded manageability surface and the increased update reliability. A new flagship feature of this feature update coming to HoloLens is our Moving Platform Mode. Check out all the new great features for HoloLens 2!
 
-This latest release is a monthly update to version 21H1, but this time we are including new features, because of this the major build number will remain the same and Windows Update will indicate a monthly release to version 21H1 (build 20348). HoloLens 2 settings will still display 21H1 even though we're referring to this release as 21H2. To ensure you've received 21H2, please verify the version number is 20348.1432 or higher. You can look at your Build Number in your Settings > About screen to confirm you are on the latest available build 20348.1432+.
+This latest release is a monthly update to version 21H1, but this time we are including new features, because of this the major build number will remain the same and Windows Update will indicate a monthly release to version 21H1 (build 20348). To ensure you've received 21H2, please verify the version number is 20348.1432 or higher. You can look at your Build Number in your **Settings** -> **System** -> **About** screen to confirm you are on the latest available build 20348.1432+.
 
 To update to the latest release, open the Settings app, go to Update & Security, and tap Check for Updates. For more information on how to manage HoloLens updates, visit [Manage HoloLens updates.](hololens-updates.md)
 
