@@ -25,7 +25,7 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 > [!NOTE]
 > The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update to HoloLens 2 in October 2021](#windows-holographic-version-21h2), and we are working on more upcoming releases based on customer feedback.
 
-## Windows Holographic, version 21H2 - September 2021 Update
+## Windows Holographic, version 21H2 - November 2021 Update
 
 - Build 20348.XXXX
 
@@ -35,7 +35,7 @@ Improvements and fixes in the update:
 - Micro QR codes which were oriented at 45/135deg were not detected often enough or not detected at all. This issue is addressed and now they are detected reliably.
 - Cleans up HoloLens release identifiers in Settings pages.
 
-## Windows Holographic, version 20H2 - October 2021 Update
+## Windows Holographic, version 20H2 - November 2021 Update
 
 - Build 19041.XXXX
 
