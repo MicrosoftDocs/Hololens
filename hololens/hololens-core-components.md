@@ -9,7 +9,7 @@ ms.author: v-beehanson
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/20/2021
+ms.date: 11/01/2021
 appliesto:
 - HoloLens 2
 ---
