@@ -4,7 +4,7 @@ description: Get the best possible experience using HoloLens when you optimize t
 author: dorreneb
 ms.author: v-beehanson
 manager: jarrettr
-ms.date: 10/29/2021
+ms.date: 11/03/2021
 ms.prod: hololens
 ms.topic: article
 audience: ITPro
