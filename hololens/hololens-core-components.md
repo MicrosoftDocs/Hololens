@@ -27,7 +27,6 @@ This overview will help IT professionals plan for deploying and managing HoloLen
 
 The following steps contain links that will help you learn the process of deploying HoloLens 2.
 
-
 ![Step 1.](images/1green.png)
 
 ## Prepare for deployment
@@ -36,62 +35,53 @@ If you already know the basics of HoloLens, you can skip this step. Otherwise, s
 
 Before you put on your HoloLens2 and start using it, learn about how it [redefines your environment](hololens-environment-considerations.md) so you can optimize your experience. Then dive into learning how to set it up and [use it for the first time](hololens2-setup.md). 
 
-After you've mastered the basics, you can get down to learning the language of HoloLens by reviewing the [Daily Usage](holographic-home.md) topics. 
-
-Once you have learned the HoloLens voice and gesture commands, you're ready to move on to planning your deployment.  
+After you've mastered the basics, you can get down to learning the language of HoloLens by reviewing the [Daily Usage](holographic-home.md) topics. Once you have learned the HoloLens voice and gesture commands, you're ready to move on to planning your deployment.  
 
 ![Step 1.](images/2green.png)
 
 ## Plan your deployment
 
-Plan your deployment by learning about deployment scenarios, requirements, and essential services. Your first task will be to determine which of the [Common Deployment Scenarios](hololens-requirements.md) fit your organization's requirements.
-
-After making your determination, learn about [configuring your commercial infrastructure for HoloLens](hololens-commercial-infrastructure.md). HoloLens deployments need wireless network availability and access to Microsoft services. Your deployment depends on your use case](/hololens/hololens-deployment-considerations). 
+Plan your deployment by learning about deployment scenarios, requirements, and essential services. Your first task will be to determine which of the [Common Deployment Scenarios](hololens-requirements.md) fit your organization's requirements. 
 
 You can use the [Remote Assist configuration guide](hololens/hololens2-cloud-connected-overview) or [Dynamics 365 configuration guide](/hololens/hololens2-corp-connected-overview) if your deployment case matches either of those installations. If you're using HoloLens in a secure environment without WiFi, Bluetooth deployment, or other restrictions, use the [Secure HoloLens 2 deployment guide](/hololens/hololens-common-scenarios-offline-secure).
 
-For example, if you're planning a Remote Assist deployment, you'll have to learn about the [technical requirements](/dynamics365/mixed-reality/remote-assist/requirements.md), including the [network requirements](/dynamics365/mixed-reality/remote-assist/requirements#network-requirements) and [URL end points and TCP/UDP ports](/dynamics365/mixed-reality/remote-assist/requirements.md#urls-and-+ports) that Dynamics 365 Remote Assist must be able to reach. You should also authenticate your installation by [preparing the required certificates and network profiles](/hololens/hololens-certificates-network).
+After making your determination, learn about [configuring your commercial infrastructure for HoloLens](hololens-commercial-infrastructure.md). HoloLens deployments need wireless network availability and access to Microsoft services. Your deployment depends on your use case.
+
+|Use case | Notes |
+| --- | --- |
+|Remote Assistance  |Enable your employees to remote in an expert anytime they need it. |
+|Guides & Task Management  |Walk employees step-by-step through guided experiences to help them complete tasks faster and more accurately than ever before. |
+|Training & Simulation |Train and onboard new employees faster than ever using a "learning by doing" approach. |
+|Design & Prototyping  |Convert your CAD and BIM files to 3D digital twins to quickly iterate and collaborate on new product designs. |
+|Sales Assistance  |Carry less inventory and close large ticket sales faster by using mixed reality to showcase any configuration or customization to your customer. |
+|Contextual Data Overlays  |Make pertinent and real-time data available when and where it is needed, enabling your employees to make better, faster, more informed decisions. |
 
 For any other use case, start learning about using Azure Activity Directory with Microsoft Intune, Endpoint Manager, and Autopilot. 
 
-
-[Azure users and groups](hololens2-corp-connected-configure.md#azure-users-and-groups)  provide the basic framework for HoloLens user groups, identities, and logins. Within that framework, you'll learn to [manage user identity and login](hololens-identity.md) and [limit password use](security-limiting-password-use.md) to secure your installation. 
-
-Finally, you'll learn about using Modern Mobile Device Management to manage your HoloLens devices and apps with [Microsoft Intune](/mem/intune/fundamentals/what-is-intune).
-
 ![Step 1.](images/3green.png)
 
-## Configure your installation and devices
+## Configure your network, users, and devices
 
-After you've determine the requirements of your deployment, You'll use Microsoft Azure Active Directory to create your users' identities, authenticate them, and manage their access. AAD will allow your employees to login easily and connect to their work resources. 
+After you've chosen your use case, inspect your physical location to determine if your corporate WiFi network and its security components will work for a HoloLens deployment. [Complete technical specifications](hololens/hololens-network) for HoloLens installations will help you assure proper connectivity for any type of deployment. 
 
-You're also going to be using AAD to create the tenant that represents your organization, and you're going to build your services on top of that tenant. For information on how to get that started, consult the [Azure Quick Start documentation](aka.ms/azuread-quickstart).
+[Microsoft Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) provides the basic framework for user groups, identities, and logins. Within that framework, you'll learn to create your users' identities, authenticate them, and manage their access so they can login easily and connect to their work resources.  
 
-Once your organization is set up with Azure AD, you can [register your HoloLens devices with Windows Autopilot](hololens2-autopilot-registration-support.md), then [enroll them into Mobile Device Management automatically](hololens-enroll-mdm.md#auto-enrollment-in-mdm). You can also use Autopilot to register your devices and [validate their enrollment](hololens2-corp-connected-deploy.md#enrollment-validation) and [certificates](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation). 
+Once your organization is set up with Azure AD, you can [register your HoloLens devices with Windows Autopilot](hololens2-autopilot-registration-support.md) and set them up to [enroll automatically into Mobile Device Management](hololens-enroll-mdm.md#auto-enrollment-in-mdm). You can also use Autopilot to [validate their enrollment](hololens2-corp-connected-deploy.md#enrollment-validation) and [certificates](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation). 
 
-You'll also need to use [Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups) to apply [application Licenses](hololens2-cloud-connected-configure.md#application-licenses) to your users, user groups, or device groups. 
+Finally, you'll learn about using [Modern Mobile Device Management](/hololens/hololens-enroll-mdm) to manage your HoloLens devices and apps using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune).
 
 If you have a large installation planned, [Windows Autopilot](hololens2-autopilot.md) will do all that for you. Once you have your HoloLens devices registered and enrolled, you can use [Microsoft Endpoint Manager](hololens-mdm-configure.md) to manage them.
 
+> [!NOTE]
+> Mobile device management (MDM), including the VPN, Bitlocker, and kiosk mode features, is only available when you upgrade to Windows Holographic for Business.
+
 ![Step 1.](images/4green.png)
 
-## Deploy your devices
+## Deploy
 
-Next you'll deploy your HoloLens devices, 
+After you've learned to [manage HoloLens user identities and logins](hololens-identity.md) and [limit their password use](security-limiting-password-use.md) to secure your installation, you'll use [Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups) to apply [application licenses](hololens2-cloud-connected-configure.md#application-licenses) to your user or device groups.
 
-Determine deployment requirements 
-*   Deployment Considerations - add link
-
-Validate the device has Azure AD - Joined from Settings or the Azure Portal
-*   [Enrollment Validation]
-Check settings and validate they have been distributed correctly
-*   [Certificate Validation
-Confirm the app is present and working on your HoloLens 2
-*   [Validate app installs](hololens2-corp-connected-deploy.md#validate-lob-app-install)
-Set up and manage users
-*   [Manage users](hololens-identity.md)
-*   [Create users and groups](hololens2-corp-connected-configure.md#azure-users-and-groups)
-*   [Manage HoloLens devices with Microsoft Endpoint Manager](hololens-mdm-configure.md)
+You'll also be using Azure Active Directory to [create the tenant that represents your organization](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant), and you'll build your services on top of that tenant.
 
 ![Step 1.](images/5green.png)
 
