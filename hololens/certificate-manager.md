@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/13/2020
+ms.date: 10/12/2021
 audience: ITPro
 appliesto:
 - HoloLens 2
@@ -18,17 +18,17 @@ appliesto:
 
 - Improved auditing, diagnosis, and validation tooling for device security and compliance through the new Certificate Manager. This capability will enable you to deploy, troubleshoot, and validate your certificates at scale in commercial environments.
 
-In Windows Holographic, version 20H2, we are adding a Certificate Manager in the HoloLens 2 Settings app. Go to **Settings > Update & Security > Certificates**. This feature provides a simple and user-friendly way to view, install and remove certificates on your device. With the new Certificate Manager, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant. 
+In Windows Holographic, version 20H2, we are adding a Certificate Manager in the HoloLens 2 Settings app. Go to **Settings > Update & Security > Certificates**. This feature provides a simple and user-friendly way to view, install and remove certificates on your device. With the new Certificate Manager, admins and users now have improved auditing, diagnosis and validation tooling to ensure that devices remain secure and compliant.
 
--	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately. 
--	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting. 
+-	**Auditing:** Ability to validate that a certificate is deployed correctly or to confirm that it was removed appropriately.
+-	**Diagnosis:** When issues arise, validating that the appropriate certificates exist on the device saves time and helps with troubleshooting.
 -	**Validation:** Verifying that a certificate serves the intended purpose and is functional, can save significant time, particularly in commercial environments before deploying certificates at larger scale.
 
-To find a specific certificate in the list quickly, there are options to sort by name, store or expiration date. Users may also directly search for a certificate. To view individual certificate properties, select the certificate and click on **Info**. 
+To find a specific certificate in the list quickly, there are options to sort by name, store or expiration date. Users may also directly search for a certificate. To view individual certificate properties, select the certificate and click on **Info**.
 
 Certificate installation currently supports .cer and .crt files. Device Owners can install certificates in Local Machine and Current User;  all other users can only install into Current User.
 
-## To install a certificate: 
+## To install a certificate:
 
 1.	Connect your HoloLens 2 to a PC.
 1.	Place the certificate file you want to install in a location on your HoloLens 2.
@@ -55,3 +55,9 @@ The certificate should now be installed on the device.
 1. Click **Remove**
 1. Select **Yes** when prompted for confirmation.
 
+## PFX file support for Certificate Manager
+
+- Introduced in [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+ We’ve added support to the Certificate Manager to now use .pfx certificates. When users navigate to **Settings** > **Update & Security** > **Certificates**, and select **Install a certificate** the UI now supports .pfx certificate file.
+Users can import .pfx certificate, with private key, to user store or machine store.

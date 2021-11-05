@@ -2,14 +2,14 @@
 title: Getting around HoloLens (1st gen)
 description: Get started with a brief tour of the HoloLens (1st gen) interface, hand tracking features, and using holographic applications.
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
-ms.date: 9/16/2019
-ms.reviewer: jarrettr
-manager: jarrettr
+ms.date: 8/9/2021
+ms.reviewer: sean-kerawala
+manager: sean-kerawala
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: v-miegge
-ms.author: v-miegge
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
 appliesto:
@@ -52,7 +52,7 @@ To open the **Start** menu:
 
 ### Select holograms with gaze and air tap
 
-To select an app or other hologram, air tap it while looking directly at the hologram you're selecting. To do this, follow these steps:
+To select an app or other hologram, air tap it while looking directly at the hologram you're selecting. Follow these steps:
 
 1. Gaze at the hologram you want to select.
 1. Point your index finger straight up toward the ceiling.
@@ -113,6 +113,35 @@ Gaze at the app, and tap and hold with both hands to select it. Rotate the app b
 ### Scroll content in an app window
 
 Gaze at the content of the app window. Tap and hold and then move your hand slightly upwards or downwards to scroll the content.
+
+## Share your HoloLens with multiple people
+
+It's common to share one HoloLens with many people or to have many people share a set of HoloLens devices.  
+
+### Share with multiple people, each using their own account
+
+**Prerequisite**: HoloLens (1st gen) must be [upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
+
+When they use their own Azure Active Directory (Azure AD) accounts, multiple users can each keep their own user settings and user data on the device.
+
+To make sure that multiple people can use their own accounts on your HoloLens, follow these steps:
+
+1. When you set up the device, select **My work or school owns it** and sign in by using an Azure AD account.
+1. After you finish setup, make sure that the account settings (**Settings** > **Accounts**) include **Other users**.
+
+To use HoloLens, each user must follow these steps:
+
+1. If another user has been using the device, press the power button once to go to standby. Then press the power button again to return to the lock screen.
+
+1. Use your Azure AD account credentials to sign in to the device. If it's the first time that you have used the device, you will need to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
+
+To see a list of the device users or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**.
+
+### Share with multiple people, all using the same account
+
+Multiple users can also share a HoloLens device while using a single user account.
+
+Users sharing a same account will need to recalibrate the HoloLens in **Settings**.  Read more about [calibration](hololens-calibration.md).
 
 ## Meet the HoloLens (1st gen) Clicker
 

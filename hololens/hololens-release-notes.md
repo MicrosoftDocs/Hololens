@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/16/2021
+ms.date: 10/12/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -23,10 +23,267 @@ appliesto:
 To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
 
 > [!NOTE]
-> The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) to HoloLens 2 in May 2021, and we are working on an upcoming release based on customer feedback for this fall.
+> The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update to HoloLens 2 in October 2021](#windows-holographic-version-21h2), and we are working on more upcoming releases based on customer feedback.
 
-> [!IMPORTANT]
-> Due to a now resolved [known issue in our 21H1 build that was affecting Remote Assist users](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), we temporally paused the offering of Windows Holographic, version 21H1 updates. We had also changed the default Advanced Recovery Companion (ARC) build to the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). The ARC build will now resume targeting the 21H1 build.
+## Windows Holographic, version 21H2
+
+- Build 20348.1432
+
+Windows Holographic, version 21H2 is now available and brings a great set of new features to HoloLens 2 users and IT professionals. This one’s about the improved troubleshooting and device reports, some fixed bugs in kiosk mode and the certificate viewer, the expanded manageability surface and the increased update reliability. A new flagship feature of this feature update coming to HoloLens is our Moving Platform Mode. Check out all the new great features for HoloLens 2!
+
+This latest release is a monthly update to version 21H1, but this time we are including new features, because of this the major build number will remain the same and Windows Update will indicate a monthly release to version 21H1 (build 20348). HoloLens 2 settings will still display 21H1 even though we're referring to this release as 21H2. To ensure you've received 21H2, please verify the version number is 20348.1432 or higher. You can look at your Build Number in your Settings > About screen to confirm you are on the latest available build 20348.1432+.
+
+To update to the latest release, open the Settings app, go to Update & Security, and tap Check for Updates. For more information on how to manage HoloLens updates, visit [Manage HoloLens updates.](hololens-updates.md)
+
+| Feature                 | Description                | User or Scenario |
+|-------------------------|----------------------------|--------------|
+| [Moving Platform Mode](#moving-platform-mode) | Introduces Moving Platform Mode beta, which when configured, enables the use of HoloLens 2 on large marine vessels experiencing low-dynamic motion. | All |
+| [PFX file support for Certificate Manager](#pfx-file-support-for-certificate-manager) | Add PFX certs via Settings UI | End User |
+| [View advanced diagnostic report in Settings on HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | View MDM diagnostic logs on device | Troubleshooting |
+| [Offline Diagnostics notifications](#offline-diagnostics-notifications) | Audiovisual feedback for log collection | Troubleshooting |
+| [Low storage log collection improvements](#low-storage-log-collection-improvements) | Improvements to log collection scenarios during low storage situations. | Troubleshooting |
+| [CSP changes for reporting HoloLens details](#csp-changes-for-reporting-hololens-details) | New CSPs to query data | IT Admins    |
+| [Auto login policy controlled by CSP](#auto-login-policy-controlled-by-csp) | Used to log in an account automatically | IT Admins |
+| [Improved update restart detection and notifications](#improved-update-restart-detection-and-notifications) | New enabled policies and UX for updates. | IT Admins |
+| [Smart Retry for app updates](#smart-retry-for-app-updates) | Allows IT Admins to scheduled retries to update apps. | IT Admins |
+| [Use only private store apps only for Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure the store app to show only apps from organization | IT Admin |
+| [Use WDAC and LOB apps](#use-wdac-and-lob-apps) | Allows IT Admins to use their own apps and still use WDAC to block other apps. | IT Admins |
+| [Fixes and improvements](#fixes-and-improvements) | Fixes and improvements for HoloLens. | All |
+
+### IT Admin Feature Checklist
+
+✔️ If you'd like to set a single Azure AD account to automatically log-in, [configure this new CSP.](#auto-login-policy-controlled-by-csp) <br>
+✔️ If you'd like configure your apps to automatically attempt to update after failing to update, [set this new CSP for smart retry.](#smart-retry-for-app-updates) <br>
+✔️ If you'd like to have more control over OS updates, check out these [newly enabled Update policies.](#improved-update-restart-detection-and-notifications) <br>
+✔️ If you need to make your organization's apps available on the company store via the Microsoft Store, but want to only allow access to your organization's apps and not the full store, [set this policy.](#use-only-private-store-apps-for-microsoft-store) <br>
+✔️ If you'd like to know the free storage space, SSID or BSSID of your HoloLens devices check out these [reporting CSPs.](#csp-changes-for-reporting-hololens-details) <br>
+✔️ If you'd like to use WDAC to block apps or processes from launching, but also need to use your own line of bushiness apps, you can now [allow LOB in your WDAC policy](#use-wdac-and-lob-apps).
+
+### Moving Platform Mode
+
+As of [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you will be able to use your HoloLens 2 in previously inaccessible environments, like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
+
+To learn more about what is supported and how to enable this new feature, [visit the moving platform page](hololens2-moving-platform.md).
+
+#### Overview to try out Moving Platform Mode
+
+1. [Enable developer mode and device portal](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+1. [Enable moving platform mode through Device portal](hololens2-moving-platform.md#enabling-moving-platform-mode).
+1. Take your device to your large moving platform and observe how stable holograms are.
+
+### PFX file support for Certificate Manager
+
+Introduced in Windows Insider build 20348.1405. We’ve added support to the [Certificate Manager](certificate-manager.md) to now use .pfx certificates. When users navigate to **Settings** > **Update & Security** > **Certificates**, and select **Install a certificate** the UI now supports .pfx certificate file.
+Users can import .pfx certificate, with private key, to user store or machine store.
+
+#### Overview to try out PFX files in Certificate Manager
+
+1. Prepare your PFX file.
+1. Copy the file to your device via a USB-C cable.
+1. Open the Settings app, and navigate to the [Certificate Manager](certificate-manager.md) and apply the certificate.
+
+### View advanced diagnostic report in Settings on HoloLens
+
+For managed devices when troubleshooting behavior, confirming that an expected policy configuration is applied is an important step. Previously to this new feature, this had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** > **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
+
+Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select **View advanced diagnostic report**. This will generate and open the report in a new Edge window.
+
+![View advanced diagnostic report in Settings app.](./images/view-advanced-diagnostic-report.jpg)
+
+#### Overview to try out the advanced diagnostic report
+
+1. Open the Settings app.
+1. Navigate to the Accounts page, and click the new link **Export your management logs**.
+1. View advanced information on your device's configurations.
+
+### Offline Diagnostics notifications
+
+This an update for an existing feature called [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics). Previously, there was no clear indicator to users that they had triggered diagnostic collection or it had completed.
+Now added in [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2), there are two forms of audiovisual feedback for Offline Diagnostics. The first being toasts notifications displayed for both when collection starts and completes. These will be displayed when the user is logged in and has visuals.
+
+![Toast for collecting logs.](./images/logcollection1.jpg)
+
+![Toast when log collection is complete.](./images/logcollection2.jpg)
+
+Because users often use Offline Diagnostics as a fallback log gathering mechanism for when they don’t have access to a display, can’t log-in or are still in OOBE there will also be an audio cue played when logs are gathered. This sound will be played in addition to the toast notification.
+
+This new feature will be enabled when your device updates, and doesn’t need to be enabled or managed. In any event that this new feedback cannot be displayed or heard, Offline Diagnostics will still be generated.
+
+We hope with this newer addition of audiovisual feedback it is easier to gather diagnostic data, and more quickly be able to troubleshoot your problems.
+
+This information can be viewed later on the [diagnostic logs page](hololens-diagnostic-logs.md#offline-diagnostics).
+
+#### Overview to try out the diagnostics notifications
+
+1. Unlock your device and wear it.
+1. Press the **Power** and **Volume down** button combination to gather [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics).
+1. View the toast notifications and hear audio cues for when your device starts and finishes collecting logs.
+
+### Low storage log collection improvements
+
+In scenarios where a device seems to be low on disk space when diagnostic logs are collected, an additional report named **StorageDiagnostics.zip** will be created. The threshold of low storage is determined automatically by Windows [storage sense](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+
+This information can be viewed later on the [diagnostic logs page](hololens-diagnostic-logs.md#offline-diagnostics).
+
+#### Overview to try out the low storage improvements
+
+1. Fill up your device's storage space.
+1. Press the **Power** and **Volume down** button combination to gather [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics).
+1. Observe there is a new file in the collection of logs stored in the Documents folder of your HoloLens.
+
+### CSP changes for reporting HoloLens details
+
+The following CSPs have been updated with new ways to report information from your HoloLens devices.
+
+#### DevDetail CSP - Free Storage
+
+DevDetail CSP now also reports free storage space on HoloLens device. This should approximately match with the value shown in Settings App's Storage page. Following is the specific node containing this information.
+
+- ./DevDetail/Ext/Microsoft/FreeStorage (GET operation only)
+
+#### DeviceStatus CSP - SSID and BSSID
+
+DeviceStatus CSP now also reports SSID and BSSID of Wi-Fi network with which HoloLens is actively connected. Following are the specific nodes containing this information.
+
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/SSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/BSSID
+
+Example syncml blob (for MDM vendors) to query for NetworkIdentifiers
+
+```xml
+<SyncML>
+<SyncBody>
+	<Get>
+        <CmdID>$CmdID$</CmdID>
+        <Item>
+            <Target>
+            <LocURI>
+                ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers?list=StructData
+			</LocURI>
+            </Target>
+        </Item>
+    </Get>
+    <Final/>
+</SyncBody>
+</SyncML>
+```
+
+### Auto login policy controlled by CSP
+
+This new AutoLogonUser policy controls whether a user will be automatically logged on. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly  distribute HoloLens devices and enable their end users to expedite login.
+
+When the policy is set to a non-empty value, it specifies the email address of the auto-logon user. The specified user must log on to the device at least once to enable auto-logon.
+
+The OMA-URI of new policy `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+String value
+
+- User with the same email address will have auto logon enabled.
+
+On a device where this policy is configured, the user specified in the policy will need to log on at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single auto-logon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To log on as a different user, the policy must first be disabled.
+
+> [!NOTE]
+>
+> - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior.
+> - Auto-logon is only supported for MSA and AAD users.
+
+#### Overview to try auto-logon CSP
+
+1. Configure the new CSP to a desired user [using a custom policy](/mem/intune/configuration/custom-settings-windows-10) : `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+1. Apply the CSP to the device via [provisioning package](hololens-provisioning.md) or [MDM](hololens-mdm-configure.md).
+1. Sign into the specified account.
+1. Restart the device and observe the user is automatically logged in.
+
+### Improved update restart detection and notifications
+
+Between active hours and install time policies, it is possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior to the reboot being initiated and they can delay the reboot in accordance with IT policy.
+
+The following update policies were added:
+
+- [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
+- [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
+- [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
+
+#### Overview to try new update notifications
+
+1. Configure one of the new update CSPs via [provisioning package](hololens-provisioning.md) or [MDM](hololens-mdm-configure.md) (see the link list above and pick one).
+1. Use the device during the scheduled time.
+1. Observe the user is notified about the update and the need to restart the device\*.
+
+\* Your results may vary based on Update policies used.
+
+### Smart Retry for app updates
+
+Now enabled for HoloLens is a new policy that allows IT Admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. These can be set based on a few different triggers such as a scheduled time or sign-in. To learn more about how to use this policy please view [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
+
+This information can be found later in the [app deployment store for business page](app-deploy-store-business.md).
+
+#### Overview to try Smart Retry for app updates
+
+1. Configure the new smart retry feature.
+1. On a device that has not yet received your app and is correctly configured to, log in an online environment.
+1. Make the device unable to download the app by means of turning it off or disconnecting it.
+1. Have your device powered on and connected to the internet during your triggered time to retry the download.
+
+### Use only private store apps for Microsoft Store
+
+The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy enables the Microsoft Store app to be configured to only show the private store configured for your organization via [Microsoft Store for Business](/microsoft-store/microsoft-store-for-business-overview). Limiting access to only the apps you’ve made available.
+
+Learn more about [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+This information can be found later in the [app deployment store for business page](app-deploy-store-business.md).
+
+#### Overview to try only private store apps
+
+1. Configure the new policy for your devices via [MDM](hololens-mdm-configure.md).
+1. Log into a device that has the policy.
+1. Open the Microsoft Store app and observe you can only see your organization's apps.
+
+### Use WDAC and LOB apps
+
+You can now use WDAC to block apps or processes from launching and continue to use your own line of bushiness apps. you can now allow them in your WDAC policy. Using this policy involves running an extra line of code in PowerShell when creating your WDAC policy. [Review the steps here.](/mem/intune/configuration/custom-profile-hololens)
+
+#### Overview to try your own apps while using WDAC to block others
+
+1. Gather the AUMIDs of your LOB app, and the apps you intend to block.
+1. [Create a new WDAC policy](/mem/intune/configuration/custom-profile-hololens) following the new steps.
+1. [Deploy the policy using MDM](hololens-mdm-configure.md) to your device.
+1. Sign into the device and observe you can launch your app and block others.
+
+### Fixes and improvements
+
+#### For Developers
+
+- Fixed a [known issue for Device Portal where there was no prompt downloading locked files](hololens-troubleshooting.md#downloading-locked-files-doesnt-error).
+- Fixed a [known issue for Device Portal with file upload and download time outs](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out).
+- Gamepad processing for 2D apps was disabled in Insider builds. By removing it, apps are now free to use the Gamepad APIs directly and have access to the whole set of controls and can be developed in mind to do more. Developers should use the Gamepad APIs to consume Gamepad input. Here is a sample for [Gamepad Class (Windows.Gaming.Input) - Windows UWP applications](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
+- Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
+
+#### For Enterprise
+
+- Addresses issues around reporting compliance properties from HoloLens devices; a reboot may be required for the correct reporting to be triggered on Insider builds.  
+- Updated the in-box version of Remote Assist that's installed on fresh flashes.
+- Fixed an issue where after first user sign-in, OOBE was being terminated in scenarios where AAD group-based kiosk configurations were being used.
+- Corrected an issue around displaying update notifications and dialog prompts for device restart.
+- Fixed an issue where after device reboot, Xbox Controllers and other Bluetooth LE peripherals needed be paired again to connect.
+- Fixed video encoder issue which could cause a short freeze of outbound video during a Remote Assist call. Wi-Fi driver and firmware changes to address “Fragment and Forge”  Wi-Fi vulnerabilities.
+- Wi-Fi driver and firmware changes to address “Fragment and Forge”  Wi-Fi vulnerabilities.
+- When using Moving Platform Mode (MPM), "Down" will be estimated by averaging gravity over a short time. This value replaces true gravity when in Moving Platform Mode.
+- Fixed periodic wobble in holograms when in 3DoF mode, or during loss of tracking.
+- Addresses an issue impacting updates to the 21H1/21H2 release from older releases.
+
+## Windows Holographic, version 20H2 - October 2021 Update
+
+- Build 19041.1168
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H2.
 
 ## Windows Holographic, version 21H1 - September 2021 Update
 
@@ -73,6 +330,9 @@ Improvements and fixes in the update:
 - Addressed an issue around the removal of eSIM certificates across OS updates. This fix ensures that the eSIM certificates and related components are removed when updating to the 21H1 release.
 - Corrected an issue impacting preinstalled apps across OS resets.
 - Battery charging performance tuned to increase runtime when charging with increased CPU loading. While charging HoloLens 2 devices, if the device is detected to be running hot, the internal battery will charge more slowly to reduce heat. The positive tradeoff is that a device is less likely to shutdown due to thermal issues, with the impact is that the device runs longer. If the device is running cool, the charge rate is unaffected.
+
+> [!IMPORTANT]
+> Due to a now resolved [known issue in our 21H1 build that was affecting Remote Assist users](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), we temporally paused the offering of Windows Holographic, version 21H1 updates. We had also changed the default Advanced Recovery Companion (ARC) build to the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). The ARC build will now resume targeting the 21H1 build.
 
 ## Windows Holographic, version 20H2 – July 2021 Update
 
@@ -1121,7 +1381,7 @@ Newly enabled policies that allow for more management options of HoloLens 2 devi
 - [ConfigureTimeZone](/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
 - [RemoteLock](/windows/client-management/mdm/remotelock-csp)
 
-These two new polices for AllowAddProvisioningPackage and AllowRemoveProvisioningPackage are being added to our [Common Device Restrictions](hololens-common-device-restrictions.md).
+These two new policies for AllowAddProvisioningPackage and AllowRemoveProvisioningPackage are being added to our [Common Device Restrictions](hololens-common-device-restrictions.md).
 
 > [!NOTE]
 > In regard to [RemoteLock](/windows/client-management/mdm/remotelock-csp), HoloLens will only support the ./Vendor/MSFT/RemoteLock/Lock configuration. The configurations dealing with PIN such as reset and recover are not supported.
@@ -1141,7 +1401,7 @@ These newly added policies allow admins to control power states, such as idle ti
 |     [StandbyTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Example value to use in   Windows Configuration Designer, i.e.,   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
 |     [StandbyTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Example value to use in   Windows Configuration Designer, i.e.,  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
 
-These two new polices for DisplayOffTimeoutOnBattery and DisplayOffTimeoutPluggedIn are being added to our [Common Device Restrictions](hololens-common-device-restrictions.md).
+These two new policies for DisplayOffTimeoutOnBattery and DisplayOffTimeoutPluggedIn are being added to our [Common Device Restrictions](hololens-common-device-restrictions.md).
 
 > [!NOTE]
 > For consistent experience on HoloLens 2, please ensure that values for both DisplayOffTimeoutOnBattery and StandbyTimeoutOnBattery are set as same value. Same applies to DisplayOffTimeoutPluggedIn and StandbyTimeoutPluggedIn. Refer to [Display, sleep, and hibernate idle timers](/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) for more details about modern standby.
