@@ -110,4 +110,6 @@ You might also consider asking for deployment assistance from a Microsoft Consul
 
 ### Device Management
 
-Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. Start with the [HoloLens 2 Cleaning FAQ](hololens2-maintenance), and do some [device troubleshooting](hololens-troubleshooting) if you have any concerns about the state of the device or its maintenance.
+Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. Start with the [HoloLens 2 Cleaning FAQ](hololens2-maintenance).
+
+If the headset seems to need service or repair, start with a [restart, reset, or recover](hololens-recovery.md) process. Do some [troubleshooting](hololens-troubleshooting) if you have any questions or concerns about the state of the device or its maintenance.
