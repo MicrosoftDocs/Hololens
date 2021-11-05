@@ -82,7 +82,7 @@ If you have a large installation planned, [Windows Autopilot](hololens2-autopilo
 
 ![Step 4.](images/4green.png)
 
-## Deploy
+## Start Deploying
 
 After you've learned to [manage HoloLens user identities and logins](hololens-identity.md) and [limit their password use](security-limiting-password-use.md) to secure your installation, you'll use [Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups) to apply [application licenses](hololens2-cloud-connected-configure.md#application-licenses) to your user or device groups.
 
@@ -90,10 +90,24 @@ You'll also be using Azure Active Directory to [create the tenant that represent
 
 Before proceeding, you'll need to make sure your device enrollment and certificates are validated. Devices must have [Azure joined from Settings or the Azure portal](hololens2-cloud-connected-configure.md), and certificate settings must be checked to make sure they have been correctly distributed. 
 
-You should also consider [how apps will be deployed](app-deploy-overview.md) on HoloLens through your MDM system or the Microsoft Store, and validate that apps are operating effectively on the device](hololens2-corp-connected-deploy). 
+You should also consider [how apps will be deployed](app-deploy-overview.md) on HoloLens through your MDM system or the Microsoft Store, and validate that [apps are operating effectively on the device](hololens2-corp-connected-deploy). 
 
 ![Step 5.](images/5green.png)
 
-## Maintain your deployment
+## Maintain your installation
 
-Use [Windows Update for Business](hololens-updates.md) along with your MDM system or the Microsoft Store to keep your fleet of HoloLens 2 and apps updated., and find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy.
+### Updates
+
+Use [Windows Update for Business](hololens-updates.md) to keep your group of HoloLens 2 devices and apps updated. Keep devices plugged in and set active hours so updates will occur outside of working hours.
+
+Review [HoloLens 2 release notes](hololens-release-notes.md) and [insider preview updates](hololens-insider.md), and consider creating update rings for different user groups.
+
+### Support Plan
+
+Get support from [Microsoft](hololens2-support.md), the [HoloLens Community](hololens2-support.md#community-help-options), or [Stack Overflow](hololens2-support#post-a-question-on-stack-overflow). 
+
+You might also consider asking for deployment assistance from a Microsoft Consulting Services/Partner.
+
+### Device Management
+
+Find out what's needed to properly maintain the state of your HoloLens 2 devices and ensure compliance with corporate policy. Start with the [HoloLens 2 Cleaning FAQ](hololens2-maintenance), and do some [device troubleshooting](hololens-troubleshooting) if you have any concerns about the state of the device or its maintenance.
