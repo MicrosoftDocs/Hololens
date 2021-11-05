@@ -86,7 +86,7 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 | Markets | Business Desk Number | Hours of Operation |
 |-----------------|-------------------|-----------------------|
 | United Kingdom | +44 800 026 0061 | Mon to Fri, 09AM to 6PM |
-| France | +08 05 98 00 03 | Mon to Fri, 09AM to 6PM |
+| France | +33 08 05 98 00 03 | Mon to Fri, 09AM to 6PM |
 | Germany | +49 08 05 98 00 03 | Mon to Fri, 09AM to 6PM |
 | Sweden	| +46 20 120 3222 | Mon to Fri, 09AM to 6PM |
 | Switzerland | +41 800 662006 |	Mon to Fri, 09AM to 6PM |
