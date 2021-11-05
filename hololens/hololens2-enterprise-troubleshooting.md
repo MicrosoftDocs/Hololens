@@ -3,7 +3,7 @@ title: HoloLens 2 implementation and managed device troubleshooting
 description: Troubleshooting HoloLens 2 devices in an Enterprise environment
 author: beelia
 ms.author: v-beehanson
-ms.date: 6/22/2021
+ms.date: 11/1/2021
 ms.topic: article
 keywords: troubleshooting
 ms.prod: hololens
@@ -20,7 +20,6 @@ This article describes how to resolve several issues or answer questions regardi
 >[!IMPORTANT]
 > Before you start any troubleshooting procedure, make sure that your device is charged to **20 to 40 percent** of battery capacity, if possible. The [battery indicator lights](hololens2-setup.md#lights-that-indicate-the-battery-level) located under the power button are a quick way to verify the battery capacity without logging into the device.
 
-
 <a id="list"></a>
 - [EAP Troubleshooting](#eap-troubleshooting)
 - [Wi-Fi Troubleshooting](#wi-fi-troubleshooting)
@@ -28,9 +27,12 @@ This article describes how to resolve several issues or answer questions regardi
 - [Can't sign in to a previously setup HoloLens device](#cant-sign-in-to-a-previously-setup-hololens-device)
 - [Can't login after updating to Windows Holographic 21H1](#cant-login-after-updating-to-windows-holographic-21h1)
 - [Autopilot Troubleshooting](#autopilot-troubleshooting)
+- [Update troubleshooting](#update-troubleshooting)
+- [Kiosk troubleshooting](#kiosk-troubleshooting)
 - [Managed HoloLens Devices FAQs](#managed-hololens-devices-faqs)
 
 ## EAP Troubleshooting
+
 1. Verify that the Wi-Fi profile has right settings:
     - Configure the EAP type correctly. Common EAP types are EAP-TLS (13), EAP-TTLS (21) and PEAP (25).
     - Check the Wi-Fi SSID name, and see that it matches the HEX string.
@@ -58,13 +60,15 @@ When you sign into an enterprise or organizational account on the device, it mig
 [Back to list](#list)
 
 ## Network Troubleshooting
-If network issues are an obstacle to successfully deploying and using HoloLens 2 in your organization, configure Fiddler and/or Wireshark to capture and analyze HTTP/HTTPS traffic. 
+
+If network issues are an obstacle to successfully deploying and using HoloLens 2 in your organization, configure Fiddler and/or Wireshark to capture and analyze HTTP/HTTPS traffic.
 
 ### Configure Fiddler to capture HTTP traffic
-Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It captures every HTTP request the computer makes and records everything associated with it. Uncovering end-user authentication issues for your HTTPS apps drives better productivity and efficiency for your target HoloLens 2 use cases. 
+
+Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It captures every HTTP request the computer makes and records everything associated with it. Uncovering end-user authentication issues for your HTTPS apps drives better productivity and efficiency for your target HoloLens 2 use cases.
 
 #### Prerequisites
- 
+
 - HoloLens 2 devices and your PC must be on the same network
 - Note the IP address of your PC
 
@@ -76,7 +80,7 @@ Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It 
     1. Note the listening port for Fiddler (default is 8866).
     1. Check Allow remote computers to connect.
     1. Click Save.
-3. On your HoloLens 2 – configure Fiddler as the proxy server<sup>1</sup>:
+1. On your HoloLens 2 – configure Fiddler as the proxy server <sup>1</sup>:
     1. Open the Start menu and select Settings.
     1. Select Network & Internet and then Proxy on the left menu.
     1. Scroll down to Manual proxy setup and toggle Use a proxy server to On.
@@ -85,13 +89,14 @@ Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It 
     1. Click Save.
 
 <sup>1</sup> For builds 20279.1006+ (Insiders and the upcoming release), use the following steps to configure proxy:
-1. Open the Start menu and go to your Wi-Fi Network’s Properties page. 
+
+1. Open the Start menu and go to your Wi-Fi Network’s Properties page.
 1. Scroll down to Proxy.
 1. Change to Manual Setup.
 1. Enter the IP address of the PC where Fiddler is installed.
 1. Enter the port number noted above (default is 8866).
 1. Click Apply.
-    
+
 #### Decrypt HTTPS traffic from HoloLens 2
 
 1. On your PC – export the Fiddler certificate.
@@ -99,7 +104,7 @@ Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It 
     2. Click Export Fiddler certificate. It will save to your desktop.
     3. Move the certificate over to the Downloads folder on your HoloLens 2.
 
-2.	On your HoloLens 2 - import the Fiddler certificate.
+1. On your HoloLens 2 - import the Fiddler certificate.
     1. Go to Settings -> Update and Security -> Certificates.
     2. Click Install Certificate, browse to the Downloads folder and select the Fiddler certificate.
     3. Change Store Location to Local Machine.
@@ -109,22 +114,26 @@ Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It 
 
 #### Inspect HTTP(S) sessions
 
-On your PC, Fiddler will show the HoloLens 2’s live HTTP(S) sessions. The Inspectors panel in Fiddler can show HTTP(S) request/response in different views. For example, the “Raw” view shows the raw request or response in plain text. 
+On your PC, Fiddler will show the HoloLens 2’s live HTTP(S) sessions. The Inspectors panel in Fiddler can show HTTP(S) request/response in different views. For example, the “Raw” view shows the raw request or response in plain text.
 
 ### Configure Wireshark to capture network traffic
+
 Wireshark is a network protocol analyzer that is used to inspect TCP/UDP traffic to and from your HoloLens 2 devices. This makes it easy to identify the traffic that is crossing the network to your HoloLens 2 -- how much there is, its frequency, how much latency there is between certain hops, and so forth.
 
 #### Prerequisites:
+
 - PC must have internet access and support Internet sharing over Wi-Fi.
 
 #### Install and Configure Wireshark
+
 1. On your PC - install [Wireshark](https://www.wireshark.org/#download).
 1. On your PC - enable Mobile hotspot to share your Internet connection from Wi-Fi.
-1. On your PC - start Wireshark and capture traffic from the Mobile hotspot interface. 
+1. On your PC - start Wireshark and capture traffic from the Mobile hotspot interface.
 1. On your HoloLens 2 – change its Wi-Fi network to the PC’s Mobile hotspot. HoloLens 2 IP traffic will show up in Wireshark.
 
 #### Analyze Wireshark logs
-Wireshark filters can help filtering out the packets of interests. 
+
+Wireshark filters can help filtering out the packets of interests.
 
 Check out the original [blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/diagnose-hololens-2-network-issues-with-fiddler-and-wireshark/ba-p/2322458).
 
@@ -141,11 +150,13 @@ If your device was previously set up for someone else, either for a client or fo
 ## Can't login after updating to Windows Holographic 21H1
 
 ### Symptoms
+
 - Using PIN to logon will fail after entering the correct PIN.
 - Using the web logon method will fail after successfully signing in on the web page.
 - The device is not listed as “Azure AD joined” in [Azure portal](https://portal.azure.com/) -> Azure Active Directory -> Devices.
 
 ### Cause
+
 The impacted device may have been deleted from the Azure AD tenant. For example, this may happen because:
 
 - An administrator or user deleted the device in the Azure portal or using PowerShell.
@@ -154,6 +165,7 @@ The impacted device may have been deleted from the Azure AD tenant. For example,
 When an impacted device attempts to contact the Azure AD tenant again after it has been deleted, it will fail to authenticate with Azure AD. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
 
 ### Mitigation
+
 There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](hololens-recovery.md#clean-reflash-the-device).
 
 [Back to list](#list)
@@ -167,6 +179,14 @@ The following articles may be a useful resource for you to learn more informatio
 - [Windows Autopilot - Policy Conflicts](/mem/autopilot/policy-conflicts)
 
 [Back to list](#list)
+
+## Update troubleshooting
+
+If you are having issues updating your managed HoloLens devices please read this [troubleshooting guidance.](hololens-updates.md#troubleshooting-updates)
+
+## Kiosk troubleshooting
+
+If you are having issues either configuring, using, or applying kiosks refer to the [kiosk troubleshooting guidance](hololens-kiosk.md#troubleshooting)
 
 ## Managed HoloLens Devices FAQs
 

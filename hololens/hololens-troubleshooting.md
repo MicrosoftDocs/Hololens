@@ -1,14 +1,14 @@
 ---
 title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
-author: mattzmsft
-ms.author: mazeller
-ms.date: 12/02/2019
+author: evmill
+ms.author: v-evmill
+ms.date: 11/1/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-manager: jarrettr
+manager: ranjibb
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -25,12 +25,17 @@ This article describes how to resolve several common HoloLens issues.
 <a id="list"></a>
 
 **Known Issues**
-- [Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
+- [Insider fix - Every time the power goes to 18 percent, the device suddenly shuts down automatically](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [**Fixed** - OneDrive UWP app doesn't work for Azure AD users](#fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users)
+- [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
+- [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
+- [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
+- [**Fixed** - Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
-- [Downloading locked files doesn't show error](#downloading-locked-files-doesnt-error)
-- [Device Portal file upload/download times out](#device-portal-file-uploaddownload-times-out)
+- [**Fixed** - Downloading locked files doesn't show error](#downloading-locked-files-doesnt-error)
+- [**Fixed** - Device Portal file upload/download times out](#device-portal-file-uploaddownload-times-out)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive doesn't automatically upload pictures](#onedrive-doesnt-automatically-upload-pictures)
 
@@ -54,6 +59,73 @@ This article describes how to resolve several common HoloLens issues.
 - [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
 - [USB-C Microphone isn't working](#usb-c-microphone-isnt-working)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
+
+## Every time the power goes to 18 percent, the device suddenly shuts down automatically
+
+> [!NOTE]
+> There is a fix for this issue available in [Windows Insiders.](hololens-insider.md)
+
+There is a known known issue where when the device reaches 18% battery, it will unexpectedly shut down. This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
+
+1. Ensure optional diagnostics are enabled on your device(s)
+1. Reproduce the problem
+1. Submit a [Feedback Hub](hololens-feedback.md) issue
+1. Share the Feedback issue URL
+1. [Contact support](https://aka.ms/hololenssupport)
+
+[Back to list](#list)
+
+## Fixed - OneDrive UWP app doesn't work for Azure AD users
+
+> [!NOTE]
+> This issue resolved in app version 19.23.17. If you still experience the same sign in issue while using app version 19.23.17 or later, please [send Feedback](hololens-feedback.md) then [contact support](https://aka.ms/hololenssupport) and share the Feedback item URL.
+>
+> Follow these [instructions to update your OneDrive app.](holographic-store-apps.md#update-apps) You can check which version of OneDrive you have by using the Microsoft Store app, then select the "See more" button represented by the **...** then select **Downloads and updates**.
+
+If you use OneDrive For Business using your Azure AD account, you may have encountered error when sign in to your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage. The OneDrive and HoloLens teams are working on the issue.
+
+### Workarounds
+
+Prerequisite: Customers can use Microsoft Edge and device OS is update to a Windows Holographic, 21H1 build or newer.
+
+If you are experiencing this issue, try one of the following:
+
+- Users can directly access OneDrive For Business from Microsoft Edge, and interact with their files the website from their browser.
+- Users can install the OneDrive PWA app to HoloLens by downloading it from Microsoft Edge. This will allow users to view and manage files on the device again. Read and follow these [instructions for installing the OneDrive PWA app on your HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
+
+[Back to list](#list)
+
+## Why do I see 0x80180014 during Autopilot?
+
+This error is typically encountered during device reset and re-use flows where a HoloLens device has gone through Autopilot at least once. In order to resolve this issue, please [delete the device from Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) and reset it again to complete Autopilot flow.
+
+For more info, please refer to [troubleshooting steps on the autopilot page.](hololens2-autopilot.md#issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot)
+
+## Microsoft Store error code 0x80131500
+
+Some users may experience the Microsoft Store working not as expected, and see the error code 0x80131500. This is an issue caused by the region set on the HoloLens not being available in the Microsoft Store app on HoloLens. If you encounter error code 0x80131500, to workaround please:
+
+1. Set Settings > Time & Language > Region > Country or region, to one of the following:
+    - United States, Japan, China, Germany, Canada, United Kingdom, Ireland, France, Australia, New Zealand.
+1. Restart the Store app.
+1. For the whole device to reflect the change, the device will need to be restarted.
+
+The HoloLens team is working on adding support for more regions.
+
+See here [for countries to buy HoloLens 2.](hololens2-purchase.md)
+
+## Microsoft Edge fails to start the microphone
+
+When users using Microsoft Edge the microphone can fail to start, thus not being usable to interact with Edge in HoloLens. This known issue is related to the version of the Microsoft Edge app, please do not reflash your device to an earlier version as this will not fix this issue.
+
+### Who is affected?
+
+Users who have Microsoft Edge version 93, 94, or 95.
+You can check which version of Microsoft Edge you have by using the Microsoft Store app, then select the "See more" button represented by the **...** then select **Downloads and updates**.
+
+### Work around
+
+The current fix is in version 96, which is available to users who have enrolled in Microsoft Edge Insiders. This is different than enrolling your device as a Windows Insider. Read these instructions for details on [how to enroll into Edge’s insider program.](hololens-new-edge.md#microsoft-edge-insider-channels)
 
 ## Remote Assist video freezes after 20 minutes
 
@@ -94,7 +166,7 @@ This should not occur during:
 Work around methods:
 
 - Sign-in methods such as PIN, Password, Iris, Web Authentication, or FIDO2 keys.
-- If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-procedure).
+- If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-flashing-mode-procedure).
 
 [Back to list](#list)
 
@@ -155,21 +227,23 @@ The user should then go to http://, not https:// (IP address) and features like 
 This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program. This is a **known issue**.
 
 This does not affect:
-- Users who are not enrolled in Windows Insider 
+
+- Users who are not enrolled in Windows Insider
 - Insiders:
     - If a device has been enrolled since Insider builds were version 18362.x
     - If they flashed an Insider signed 19041.x build AND stay enrolled in the Insider program
 
-Work-around: 
-- Avoid the issue 
+Work-around:
+
+- Avoid the issue
     - Flash a non-insider build. One of the regular monthly updates.
     - Stay on Insider Preview
 - Reflash the device
 
     1. Put the [HoloLens 2 into flashing mode](hololens-recovery.md) manually by fully powering down while not connect. Then while holding Volume up, tap the Power button.
-    
+
     1. Connect to the PC and open Advanced Recovery Companion.
-    
+
     1. Flash the HoloLens 2 to the default build.
 
 [Back to list](#list)
@@ -191,7 +265,7 @@ Workarounds:
 If your HoloLens won't start:
 
 - If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens2-charging.md#charging-the-device)
-- If the LEDs light up when you press the power button but you can't see anything on the displays, [do a hard reset of the device](hololens-recovery.md#hard-reset-procedure).
+- If the LEDs light up when you press the power button but you can't see anything on the displays, [do a hard reset of the device](hololens-recovery.md#hard-restart-procedure).
 
 If your HoloLens becomes frozen or unresponsive:
 
@@ -290,6 +364,7 @@ If your HoloLens 2 is not responding to your voice, make sure Speech recognition
 ## Hand input isn't working
 
 To ensure that HoloLens can see your hands, you need to keep them in the gesture frame.  The Mixed Reality Home provides feedback that lets you know when your hands are tracked.  The feedback is different on different versions of HoloLens:
+
 - On HoloLens (1st gen), the gaze cursor changes from a dot to a ring
 - On HoloLens 2, a fingertip cursor appears when your hand is close to a slate, and a hand ray appears when slates are further away
 
@@ -323,6 +398,7 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 [Back to list](#list)
 
 ## USB-C Microphone isn't working
+
 Be aware that some USB-C microphones incorrectly report themselves as both a microphone *and* a speaker. This is a problem with the microphone and not with HoloLens. When plugging one of these microphones into HoloLens, sound may be lost. Fortunately there is a simple fix.  
 
 In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.

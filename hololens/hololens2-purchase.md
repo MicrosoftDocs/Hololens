@@ -3,9 +3,9 @@ title: Where to buy HoloLens 2
 description: List of Global ADR contacts and countries available.
 keywords: HoloLens 2 purchasing options, international purchase, international reseller, ADR
 author: qianw211
-ms.author: v-qianwen
+ms.author: v-beehanson
 ms.reviewer: skerawala
-ms.date: 8/03/2021
+ms.date: 10/12/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -26,15 +26,23 @@ HoloLens 2 is now available in some countries outside of the US, along with some
 
 | HoloLens 2 Edition| Supported Market |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | Australia, Austria, Belgium, Canada, China, Denmark, Finland, France, Germany, Hong Kong, Ireland, Italy, Japan, Malaysia, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam  |
-| HoloLens 2 with Remote Assist | Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Hong Kong, Ireland, Italy, Japan, Korea, Malaysia, Netherlands, New Zealand, Norway, Singapore, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam  <sup>1</sup> 
-| HoloLens 2 Industrial Edition *(at launch)* | Australia, Austria, Belgium, Canada, China, Denmark, Finland, France, Germany, Hong Kong, Ireland, Italy, Japan, Malaysia, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam  |
+| HoloLens 2 | Australia, Austria, Belgium, Canada, China, Denmark, Finland, France, Germany, Hong Kong, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam  |
+| HoloLens 2 with Remote Assist | Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Hong Kong, Ireland, Italy, Japan, Korea, Malaysia, Mexico, Netherlands, New Zealand, Norway, Singapore, South Africa, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam  <sup>1</sup> 
+| HoloLens 2 Industrial Edition *(at launch)* | Australia, Austria, Belgium, Canada, China, Denmark, Finland, France, Germany, Hong Kong, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam  |
 | HoloLens 2 Development Edition | Australia, Canada, France, Germany, Ireland, Italy, Japan, New Zealand, Switzerland, and UK |
 
 &nbsp;&nbsp;&nbsp;<sup>1</sup> This list is dynamic, check back for updates
 
 ## Find an authorized HoloLens 2 reseller
 See the below tables for HoloLens 2 availability and purchase options by region.
+
+### **Africa**
+
+| Country | ADD | DMPs | HoloLens 2 DMPs |
+|---------|-----|------|----------------|
+| **South Africa** | [Tarsus Distribution](https://tarsusdistribution.co.za) Justine Louw jlouw@tarsus.co.za| Datacentrix | [Datacentrix - a leading hybrid IT system integrator and managed services provider](https://www.datacentrix.co.za/)|
+| || Nulitics Development Company Pty Ltd. | [NULITICS, Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)|
+| | | Crimson Line Networking <br/>cc - t/a Crimson Line - Solving IT |[Managed Cloud and IT Services \| South Africa \| Crimsonline](https://www.crimsonline.co.za)|
 
 ### **APAC**
 
@@ -43,8 +51,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Australia** | Insight Enterprises Australia Pty Ltd | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>Costa Aligianis  [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com) | [Buy HoloLens 2 - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) |
 | | Telstra Purple | Joanna Bari [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) Oliver Ashworth [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) |  |  |
 | **China** | Highly Information (HII) 翰林汇信息产业股份有限公司 | Feng Zhou<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) | [Buy HoloLens 2 - Highly Information](http://www.ehighly.com.cn/productList.html?key=hololens) | [Buy HoloLens 2 Industrial Edition - Highly Information](https://isite.baidu.com/site/highly.com.cn/849172be-8d31-46c3-b704-a09c8614ec7b?fid=nHD1nWckPjDYnjb3PWbdnH6srHPxnHfvnNtk&amp;ch=4&amp;bd_vid=11025645443434810125) |
-| | 四川长虹佳华信息产品有限责任公司/Changhong IT Information Products Co., Ltd | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [Buy HoloLens 2 Industrial Edition - Changhong IT Information Products Co., Ltd](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [Buy HoloLens 2 Industrial Edition - Changhong IT Information Product7890-=s Co., Ltd](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
-| | Tuomeng 黑龙江拓盟科技有限公司, CN, 哈尔滨 |lidan lidan@hljtmkj.com | http://hljtmkj.com/buy.html | http://47.92.113.150:8080/sjtbtm/a/sjtb | 
+| | 四川长虹佳华信息产品有限责任公司/Changhong IT Information Products Co., Ltd | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [Buy HoloLens 2 Industrial Edition - Changhong IT Information Products Co., Ltd](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [Buy HoloLens 2 Industrial Edition - Changhong IT Information Product7890-=s Co., Ltd](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  
 | | 英施艾特（上海）软件贸易有限公司 Insight Enterprises (Shanghai) Co. Ltd. | Julian Kung  julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com | [Buy HoloLens 2 - Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
 | **Hong Kong** | GO VR Immersive Ltd. (UFO) | Howard Tian <howard.tian@govrimmersive.com> | [Buy HoloLens 2 - GO VR Immersive Ltd.](https://www.govrimmersive.com/hololens2) | [Buy HoloLens 2 Industrial Edition - GO VR Immersive Ltd](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
 | | Insight Enterprises Hong Kong | Jenny Southon<br><jenny.southon@insight.com><br>Eddie Tsui<br><eddie.tsui@insight.com> | [Buy HoloLens 2 - INSIGHT ENTERPRISES HONG KONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [Buy HoloLens 2 Industrial Edition - INSIGHT ENTERPRISES HONG KONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |
@@ -61,6 +68,13 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Taiwan** | Systex Software & Service Corporation精誠資訊股份有限公司 | Gina Ko<br><ginako@systex.com><br>Sean Chien<br><seanchien@systex.com> | [Buy HoloLens 2 - Systex Software & Service Corporation精誠資訊股份有限公司](https://tw.systex.com/microsoft-hololens/) | [Buy HoloLens 2 Industrial Edition - Systex Software & Service Corporation精誠資訊股份有限公司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) | 
 | **Thailand** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [Buy HoloLens 2 - Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [Buy HoloLens 2 Industrial Edition - Sustainable Solution Co., Ltd.](https://hololensthai.com/) |
 | **Vietnam** | CÔNG TY TNHH HIVERLAB VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [Buy HoloLens 2 - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) | [Buy HoloLens 2 Industrial Edition - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
+
+### **South America**
+
+| Country | ADDs | DMPs | HoloLens 2 DMPs |
+|---------|-----|------|----------------|
+| **Mexico** | Ingram Micro México, S.A. de C.V. | Aevitas S.A. de C.V. | [Aevitas S.A. de C.V.](http://aevitas.com.mx)|
+| | Commercializadora Intcomex, S.A. de C.V.| Equipos Comp. de Occte. S.A. de C.V. | [Productos \| Equipos MCA  S.A. de C.V.](https://equiposmca.com/productos/) |
 
 ### **North America**
 

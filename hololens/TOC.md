@@ -108,7 +108,7 @@
 ## [Display](hololens2-display.md)
 ## [Implementation and managed devices](hololens2-enterprise-troubleshooting.md#)
 ## [Enable diagnostic logs](hololens-diagnostic-logs.md)
-## [Reset HoloLens 2](hololens-recovery.md)
+## [Restart, reset or recover HoloLens 2](hololens-recovery.md)
 
 # Resources
 ## [Where to buy HoloLens 2](hololens2-purchase.md)
@@ -117,7 +117,7 @@
 ## [HoloLens 2 release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
 ## [Supported languages](hololens2-language-support.md)
-## [Develop with Microsoft Mesh (Preview)](/mesh/overview)
+## [Learn about Microsoft Mesh (Preview)](/mesh/overview)
 ## HoloLens (1st gen)
 ### First-time usage
 #### [About HoloLens (1st gen)](hololens1-hardware.md)
@@ -131,7 +131,7 @@
 #### [Manage custom apps for HoloLens](holographic-custom-apps.md)
 #### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 #### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
-#### [Reset HoloLens (1st gen) ](hololens1-recovery.md)
+#### [Restart, reset, or recover HoloLens (1st gen) ](hololens1-recovery.md)
 ### HoloLens (1st gen) Security
 #### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.yml)
 #### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
