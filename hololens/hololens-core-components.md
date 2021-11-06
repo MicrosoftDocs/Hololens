@@ -29,11 +29,24 @@ The following steps and video can help guide you through the process of HoloLens
 
 The following steps contain links that will help you learn the process of deploying HoloLens 2.
 
+| &nbsp; | &nbsp; |
+|--|--|
+| ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: Get familiar with the basics and learn to use HoloLens 2.    |
+| ![Step 2.](images/2green.png) | <br/> **[Plan](#configure)**: Plan your deployment by learning about the essential tools and services. |
+| ![Step 3.](images/3green.png) | <br/> **[Configure](#configure)**: Learn how to configure the essential components of your installation. |
+| ![Step 4.](images/4green.png) | <br/> **[Deploy](#deploy)**: Deploy your devices and applications securely and efficiently. |
+| ![Step 5.](images/5green.png) | <br/> **[Maintain](#maintain)**: Find out what's needed to  maintain your HoloLens 2 devices and ensure compliance with corporate policy.
+
 ![Step 1.](images/1green.png)
 
-## Prepare for deployment
+## Prepare
 
-If you already know the basics of HoloLens, you can skip this step. Otherwise, start by finding out [where to buy HoloLens 2](hololens2-purchase.md), how to get [support](hololens2-support.md), and how to [give Feedback](hololens-feedback.md). You might also want to get familiar with [licensing requirements](hololens-licenses-requirements.md) at this time.
+If you already know the basics of HoloLens, you can skip this step. Otherwise, start by finding out: 
+
+*   [where to buy HoloLens 2](hololens2-purchase.md)
+*   how to get [support](hololens2-support.md)
+*   how to [give Feedback](hololens-feedback.md)
+*   learn about [licensing requirements](hololens-licenses-requirements.md)
 
 Before you put on your HoloLens2 and start using it, learn about how it [redefines your environment](hololens-environment-considerations.md) so you can optimize your experience. Then dive into learning how to set it up and [use it for the first time](hololens2-setup.md). 
 
@@ -41,7 +54,7 @@ After you've mastered the basics, you can get down to learning the language of H
 
 ![Step 2.](images/2green.png)
 
-## Plan your deployment
+## Plan
 
 Plan your deployment by learning about deployment scenarios, requirements, and essential services. Your deployment method will depend on your use case.
 
