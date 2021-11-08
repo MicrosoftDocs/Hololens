@@ -73,7 +73,7 @@ You can start learning to use HoloLens 2 by:
 *   Start a [Dynamics 365](hololens2-corp-connected-overview.md) installation
 *   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) installation
 
-### Deploying [customized commercial scenarios](hololens-commercial-infrastructure.md) using Microsoft tools and services
+### Deploying [customized commercial scenarios](hololens-commercial-infrastructure.md)
 
 *   [What is the Microsoft Store for Business?](app-deploy-store-business.md)
 *   [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis.md)
