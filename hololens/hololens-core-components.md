@@ -122,7 +122,7 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 *   [Enrolling HoloLens devices when MAC addresses are restricted](mac-address-options.md)
 *   [Use Certificate Manager to install or remove HoloLens 2](certificate-manager.md)
 *   [Validate HoloLens enrollment](hololens2-corp-connected-deploy.md#enrollment-validation)
-*   [Validate HoloLens WiFi certificates](hololens2-corp-connected-deploy#wi-fi-certificate-validation) 
+*   [Validate HoloLens WiFi certificates](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) 
 
 ## Deploy
 
