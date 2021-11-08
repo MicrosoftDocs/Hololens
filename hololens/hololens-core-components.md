@@ -56,10 +56,9 @@ You can start learning to use HoloLens 2 by:
 *   [learning to navigate, manage, and manipulate holograms](holographic-home.md)
 
 ## Plan
+\The deployment method for your commercial installation will depend on your use case.
 
-The deployment method for your commercial installation will depend on your use case.
-
-|Use case | What implementing it will do |
+|Use case | What it will do |
 | --- | --- |
 |Remote Assistance  |Enable your employees to remote in an expert anytime they need it. |
 |Guides & Task Management  |Walk employees step-by-step through guided experiences to help them complete tasks faster and more accurately than ever before. |
