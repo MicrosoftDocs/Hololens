@@ -100,7 +100,7 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 *   [Create a new tenant](/azure/active-directory/develop/quickstart-create-new-tenant.md)
 *   [Create Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups)
 *   [Manage user identity and login for HoloLens](hololens-identity.md)
-*   [Share your HoloLens with multiple users](hololens-multiple-users)
+*   [Share your HoloLens with multiple users](hololens-multiple-users.md)
 *   [Limit password use](security-limiting-password-use.md) 
 *   [Apply application licenses](hololens2-cloud-connected-configure.md#application-licenses)
 
@@ -120,9 +120,9 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 *   [Manage connection endpoints for HoloLens](hololens-offline.md)
 *   [Update HoloLens automatically](hololens-updates.md)
 *   [Enrolling HoloLens devices when MAC addresses are restricted](mac-address-options.md)
+*   [Use Certificate Manager to install or remove HoloLens 2](certificate-manager.md)
 *   [Validate HoloLens enrollment](hololens2-corp-connected-deploy.md#enrollment-validation)
-*   [Use Certificate Manager to install or remove HoloLens 2](certificate-manager)
-*   [Validate HoloLens certificates](hololens2-corp-connected-deploy#wi-fi-certificate-validation) 
+*   [Validate HoloLens WiFi certificates](hololens2-corp-connected-deploy#wi-fi-certificate-validation) 
 
 ## Deploy
 
