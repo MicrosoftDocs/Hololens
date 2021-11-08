@@ -56,15 +56,16 @@ If a user has taken an update to one of the Insider flight, 20346.1466, and it d
 1. Select the HoloLens
 1. If the version says you are running the 20346.1466 build, you likely hit this issue.
 
-#### Who does this tend to affect?
+#### Who does this tend to affect
 
 Users who have been using their device without flashing it since [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004)
 
-#### Users who are typically unaffected?
+#### Users who are typically unaffected
 
 Users who have flash their device, or unboxed their device, and started using it since [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)
 
-#### Workaround:
+#### Workaround
+
 - [Relfash your device.](hololens-recovery.md#clean-reflash-the-device)
 
 ## Start receiving Insider builds
