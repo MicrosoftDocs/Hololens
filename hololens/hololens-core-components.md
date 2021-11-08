@@ -17,47 +17,48 @@ appliesto:
 
 ## Overview
 
-> This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within an organization. For device end users, see [Get your HoloLens 2 ready to use](hololens2-setup.md) to get started.
+> [!NOTE]
+> This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within an organization. If you are just getting started with HoloLens, [get your device ready to use](hololens2-setup.md).
 
-HoloLens 2 runs on Windows 10 Holographic, which provides organizations with robust, flexible, built-in mobile device and app management technologies. Windows 10 Holographic supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. The HoloLens 2 can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance and retirement using a comprehensive mobile device management solution.
+HoloLens 2 is a Windows device. It runs on Windows 10 Holographic, which provides organizations with robust, flexible, built-in mobile device and app management technologies. 
 
-The following steps and video can help guide you through the process of HoloLens 2 adoption within your organization.
+Windows 10 Holographic supports end-to-end device lifecycle management, giving you control over your devices, data, and apps. HoloLens 2 uses a comprehensive mobile device management solution that enables it to be incorporated into standard lifecycle practices, -- from device enrollment, configuration, and application management up through maintenance and retirement. 
+
+The following steps and video will help guide you through the process of deploying HoloLens 2 within your organization.
 
 <br/>
 
 > [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
 
-The following steps contain links that will help you learn the process of deploying HoloLens 2.
-
 | &nbsp; | &nbsp; |
 |--|--|
-| ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: Get familiar with the basics and learn to use HoloLens 2.    |
-| ![Step 2.](images/2green.png) | <br/> **[Plan](#configure)**: Plan your deployment by learning about essential tools and services. |
-| ![Step 3.](images/3green.png) | <br/> **[Configure](#configure)**: Learn to configure the  components of your installation. |
-| ![Step 4.](images/4green.png) | <br/> **[Deploy](#deploy)**: Get your devices and applications deployed securely. |
-| ![Step 5.](images/5green.png) | <br/> **[Maintain](#maintain)**: Learn to  update, support, and maintain your deployment.
+| ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: &nbsp; Get familiar with the basics and learn to use HoloLens 2.    |
+| ![Step 2.](images/2green.png) | <br/> **[Plan](#configure)**: &nbsp; Plan your deployment by learning about Microsoft tools and services. |
+| ![Step 3.](images/3green.png) | <br/> **[Configure](#configure)**: &nbsp; Learn to configure the  essential components of your installation. |
+| ![Step 4.](images/4green.png) | <br/> **[Deploy](#deploy)**: &nbsp; Get your devices and applications deployed securely. |
+| ![Step 5.](images/5green.png) | <br/> **[Maintain](#maintain)**: &nbsp; Learn to  update, support, and maintain your deployment.
 
 ## Prepare
 
-If you already know the basics of HoloLens, you can skip this step. Otherwise, start by finding out: 
+If you already know the basics of HoloLens, you can skip this step.  If not, find out:
 
-*   learn [what HoloLens can do for you](hololens-commercial-features)
+*   [what HoloLens can do for you](hololens-commercial-features)
 *   [where to buy HoloLens 2](hololens2-purchase.md)
-*   how to get [support](hololens2-support.md)
-*   how to [give Feedback](hololens-feedback.md)
-*   learn about [licensing requirements](hololens-licenses-requirements.md)
+*   [how to get support](hololens2-support.md)
+*   [how to give Feedback](hololens-feedback.md)
+*   [about licensing requirements](hololens-licenses-requirements.md)
 
-Learn to use HoloLens 2:
+Then start learning to use HoloLens 2 by:
 
-*   adjust your [environment](hololens-environment-considerations.md)
-*   set up HoloLens2 for the [first time](hololens2-setup.md)
-*   learn to [navigate, manage, and manipulate holograms](holographic-home.md)
+*   [understanding how it works in your environment](hololens-environment-considerations.md)
+*   [setting up HoloLens2 for the first time](hololens2-setup.md)
+*   [learning to navigate, manage, and manipulate holograms](holographic-home.md)
 
 ## Plan
 
-Plan your deployment. Your deployment method will depend on your use case.
+The deployment method for your commercial installation will depend on your use case.
 
-|Use case | Notes |
+|Use case | What it will do |
 | --- | --- |
 |Remote Assistance  |Enable your employees to remote in an expert anytime they need it. |
 |Guides & Task Management  |Walk employees step-by-step through guided experiences to help them complete tasks faster and more accurately than ever before. |
@@ -68,26 +69,28 @@ Plan your deployment. Your deployment method will depend on your use case.
 |Contextual Data Overlays  |Make pertinent and real-time data available when and where it is needed, enabling your employees to make better, faster, more informed decisions. |
 
 *   Learn about the [Common Deployment Scenarios](hololens-requirements.md):
-    *   Start a [Remote Assist](hololens2-cloud-connected-overview.md) deployment
-    *   Start a [Dynamics 365](hololens2-corp-connected-overview.md) deployment
-    *   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) deployment
+    *   Start a [Remote Assist](hololens2-cloud-connected-overview.md) installation
+    *   Start a [Dynamics 365](hololens2-corp-connected-overview.md) installation
+    *   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) installation
 
-*   If you have a different use case and are planning a [customized commercial scenario](hololens-commercial-infrastructure.md), learn about Microsoft tools and services:
+*   If you have another use case and are planning a [customized commercial scenario](hololens-commercial-infrastructure.md), start by learning about Microsoft tools and services:
 
+    *   [What is the Microsoft Store for Business?](app-deploy-store-business.md)
     *   [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis.md)
     *   [What is Windows Autopilot?](/mem/autopilot/windows-autopilot.md)
     *   [What is Microsoft Intune?](/mem/intune/fundamentals/what-is-intune)
     *   [What is Microsoft Endpoint Manager?](/mem/endpoint-manager-overview.md)
-    *   [Microsoft Store for Business](app-deploy-store-business.md)
     
+*   If you're already familiar with Microsoft tools and services, read about how they are used with HoloLens 2:
 
-If your use case requires an alternate approach, you will have to use Microsoft tools and processes to [configure your commercial infrastructure for HoloLens](hololens-commercial-infrastructure.md). HoloLens is a Windows device, so you'll want to become familiar with mobile device management, Azure Active Directory, and Windows Device Configuration Manager. You'll learn about using [Modern Mobile Device Management](hololens-enroll-mdm.md) to manage your HoloLens devices and apps using  and 
+    *   
+ HoloLens is a Windows device, so you'll want to become familiar with mobile device management, Azure Active Directory, and Windows Device Configuration Manager. You'll learn about using [Modern Mobile Device Management](hololens-enroll-mdm.md) to manage your HoloLens devices and apps using  and 
 HoloLens deployments need wireless network availability and access to Microsoft services, so you'll have to learn [how to connect HoloLens to a network](hololens-network.md). 
         *   Learn about deploying with [Microsoft Intune](app-deploy-intune.md)
  
 
 
-## Configure your network, users, and devices
+## Configure
 
        *   [Windows Autopilot](hololens2-autopilot.md)
            *   [Microsoft [Modern Mobile Device Management](hololens-enroll-mdm.md)
@@ -111,7 +114,7 @@ If you have a large installation planned, [Windows Autopilot](hololens2-autopilo
 > [!NOTE]
 > Mobile device management (MDM), including the VPN, Bitlocker, and kiosk mode features, is only available when you upgrade to Windows Holographic for Business.
 
-## Start Deploying
+## Deploy
 
 After you've learned to [manage HoloLens user identities and logins](hololens-identity.md) and [limit their password use](security-limiting-password-use.md) to secure your installation, you'll use [Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups) to apply [application licenses](hololens2-cloud-connected-configure.md#application-licenses) to your user or device groups.
 
@@ -121,7 +124,7 @@ Before proceeding, you'll need to make sure your device enrollment and certifica
 
 You should also consider [how apps will be deployed](app-deploy-overview.md) on HoloLens through your MDM system or the Microsoft Store, and validate that [apps are operating effectively on the device](hololens2-corp-connected-deploy). 
 
-## Maintain your installation
+## Maintain
 
 ### Updates
 
