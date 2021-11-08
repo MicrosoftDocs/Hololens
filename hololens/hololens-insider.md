@@ -45,6 +45,28 @@ Colorblind mode is useful a great feature that makes HoloLens more accessible. T
 - Fixed an issue where toggling optional diagnostic data didn't persist the chosen setting in telemetry settings page after a reboot.
 - Fixed and issue where QR codes were not recognized when they were rotated at a 45-degree angle relative to the device.
 
+### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
+
+If a user has taken an update to one of the Insider flight, 20346.1466, and it doesn’t appear to be finishing the boot, a clean reflash may be required to move forward again. To see if you have encountered this:
+
+1. Reboot – Hold down the power until the LED’s step down.
+1. Power up
+1. Confirm you see the Windows flag at the beginning of the boot and it goes black shortly after that.
+1. Connect your HoloLens2 to your PC with USB and run Advanced Recovery companion.
+1. Select the HoloLens
+1. If the version says you are running the 20346.1466 build, you likely hit this issue.
+
+#### Who does this tend to affect?
+
+Users who have been using their device without flashing it since [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004)
+
+#### Users who are typically unaffected?
+
+Users who have flash their device, or unboxed their device, and started using it since [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)
+
+#### Workaround:
+- [Relfash your device.](hololens-recovery.md#clean-reflash-the-device)
+
 ## Start receiving Insider builds
 
 > [!NOTE]
