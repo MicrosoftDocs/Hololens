@@ -28,6 +28,8 @@ The following steps and video will help guide you through the process of deployi
 
 <br/>
 
+> [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
+
 | &nbsp; | &nbsp; |
 |--|--|
 | ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: &nbsp; Get familiar with the basics and learn to use HoloLens 2.    |
