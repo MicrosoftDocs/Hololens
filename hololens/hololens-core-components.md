@@ -32,31 +32,30 @@ The following steps contain links that will help you learn the process of deploy
 | &nbsp; | &nbsp; |
 |--|--|
 | ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: Get familiar with the basics and learn to use HoloLens 2.    |
-| ![Step 2.](images/2green.png) | <br/> **[Plan](#configure)**: Plan your deployment by learning about the essential tools and services. |
-| ![Step 3.](images/3green.png) | <br/> **[Configure](#configure)**: Learn how to configure the essential components of your installation. |
-| ![Step 4.](images/4green.png) | <br/> **[Deploy](#deploy)**: Deploy your devices and applications securely and efficiently. |
-| ![Step 5.](images/5green.png) | <br/> **[Maintain](#maintain)**: Find out what's needed to  maintain your HoloLens 2 devices and ensure compliance with corporate policy.
-
-![Step 1.](images/1green.png)
+| ![Step 2.](images/2green.png) | <br/> **[Plan](#configure)**: Plan your deployment by learning about essential tools and services. |
+| ![Step 3.](images/3green.png) | <br/> **[Configure](#configure)**: Learn to configure the  components of your installation. |
+| ![Step 4.](images/4green.png) | <br/> **[Deploy](#deploy)**: Get your devices and applications deployed securely. |
+| ![Step 5.](images/5green.png) | <br/> **[Maintain](#maintain)**: Learn to  update, support, and maintain your deployment.
 
 ## Prepare
 
 If you already know the basics of HoloLens, you can skip this step. Otherwise, start by finding out: 
 
+*   learn [what HoloLens can do for you](hololens-commercial-features)
 *   [where to buy HoloLens 2](hololens2-purchase.md)
 *   how to get [support](hololens2-support.md)
 *   how to [give Feedback](hololens-feedback.md)
 *   learn about [licensing requirements](hololens-licenses-requirements.md)
 
-Before you put on your HoloLens2 and start using it, learn about how it [redefines your environment](hololens-environment-considerations.md) so you can optimize your experience. Then dive into learning how to set it up and [use it for the first time](hololens2-setup.md). 
+Learn to use HoloLens 2:
 
-After you've mastered the basics, you can get down to learning the language of HoloLens by reviewing the [Daily Usage](holographic-home.md) topics. Once you have learned the HoloLens voice and gesture commands, you're ready to move on to planning your deployment.  
-
-![Step 2.](images/2green.png)
+*   adjust your [environment](hololens-environment-considerations.md)
+*   set up HoloLens2 for the [first time](hololens2-setup.md)
+*   learn to [navigate, manage, and manipulate holograms](holographic-home.md)
 
 ## Plan
 
-Plan your deployment by learning about deployment scenarios, requirements, and essential services. Your deployment method will depend on your use case.
+Plan your deployment. Your deployment method will depend on your use case.
 
 |Use case | Notes |
 | --- | --- |
@@ -68,15 +67,32 @@ Plan your deployment by learning about deployment scenarios, requirements, and e
 |Sales Assistance  |Carry less inventory and close large ticket sales faster by using mixed reality to showcase any configuration or customization to your customer. |
 |Contextual Data Overlays  |Make pertinent and real-time data available when and where it is needed, enabling your employees to make better, faster, more informed decisions. |
 
-Your first task will be to determine which of the [Common Deployment Scenarios](hololens-requirements.md) fit your organization's requirements. If you're planning a [Remote Assist](hololens2-cloud-connected-overview.md), [Dynamics 365](hololens2-corp-connected-overview.md), or [restricted offline](hololens-common-scenarios-offline-secure.md) installation, you can use the existing Deployment Guides. 
+*   Learn about the [Common Deployment Scenarios](hololens-requirements.md):
+    *   Start a [Remote Assist](hololens2-cloud-connected-overview.md) deployment
+    *   Start a [Dynamics 365](hololens2-corp-connected-overview.md) deployment
+    *   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) deployment
 
-If your use case requires an alternate approach, you will have to use Microsoft tools and processes to [configure your commercial infrastructure for HoloLens](hololens-commercial-infrastructure.md). HoloLens is a Windows device, so you'll want to become familiar with mobile device management, Azure Active Directory, and Windows Device Configuration Manager. You'll learn about using [Modern Mobile Device Management](hololens-enroll-mdm.md) to manage your HoloLens devices and apps using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Endpoint Manager](hololens-mdm-configure.md) .
+*   If you have a different use case and are planning a [customized commercial scenario](hololens-commercial-infrastructure.md), learn about Microsoft tools and services:
 
-HoloLens deployments need wireless network availability and access to Microsoft services, so you'll have to learn [how to connect HoloLens to a network](hololens-network.md). Throughout the process, you'll be using Microsoft tools like Intune, Autopilot, and Endpoint Manager to get your network set up. 
+    *   [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis.md)
+    *   [What is Windows Autopilot?](/mem/autopilot/windows-autopilot.md)
+    *   [What is Microsoft Intune?](/mem/intune/fundamentals/what-is-intune)
+    *   [What is Microsoft Endpoint Manager?](/mem/endpoint-manager-overview.md)
+    *   [Microsoft Store for Business](app-deploy-store-business.md)
+    
 
-![Step 3.](images/3green.png)
+If your use case requires an alternate approach, you will have to use Microsoft tools and processes to [configure your commercial infrastructure for HoloLens](hololens-commercial-infrastructure.md). HoloLens is a Windows device, so you'll want to become familiar with mobile device management, Azure Active Directory, and Windows Device Configuration Manager. You'll learn about using [Modern Mobile Device Management](hololens-enroll-mdm.md) to manage your HoloLens devices and apps using  and 
+HoloLens deployments need wireless network availability and access to Microsoft services, so you'll have to learn [how to connect HoloLens to a network](hololens-network.md). 
+        *   Learn about deploying with [Microsoft Intune](app-deploy-intune.md)
+ 
+
 
 ## Configure your network, users, and devices
+
+       *   [Windows Autopilot](hololens2-autopilot.md)
+           *   [Microsoft [Modern Mobile Device Management](hololens-enroll-mdm.md)
+           endpoint manager     (hololens-mdm-configure.md) .
+        *   Learn about deploying with [Microsoft Intune](app-deploy-intune.md)
 
 ### Network
 
@@ -95,8 +111,6 @@ If you have a large installation planned, [Windows Autopilot](hololens2-autopilo
 > [!NOTE]
 > Mobile device management (MDM), including the VPN, Bitlocker, and kiosk mode features, is only available when you upgrade to Windows Holographic for Business.
 
-![Step 4.](images/4green.png)
-
 ## Start Deploying
 
 After you've learned to [manage HoloLens user identities and logins](hololens-identity.md) and [limit their password use](security-limiting-password-use.md) to secure your installation, you'll use [Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups) to apply [application licenses](hololens2-cloud-connected-configure.md#application-licenses) to your user or device groups.
@@ -106,8 +120,6 @@ You'll also be using Azure Active Directory to [create the tenant that represent
 Before proceeding, you'll need to make sure your device enrollment and certificates are validated. Devices must have [Azure joined from Settings or the Azure portal](hololens2-cloud-connected-configure.md), and certificate settings must be checked to make sure they have been correctly distributed. 
 
 You should also consider [how apps will be deployed](app-deploy-overview.md) on HoloLens through your MDM system or the Microsoft Store, and validate that [apps are operating effectively on the device](hololens2-corp-connected-deploy). 
-
-![Step 5.](images/5green.png)
 
 ## Maintain your installation
 
