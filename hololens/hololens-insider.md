@@ -66,7 +66,7 @@ Users who have flash their device, or unboxed their device, and started using it
 
 #### Workaround
 
-- [Relfash your device.](hololens-recovery.md#clean-reflash-the-device)
+- [Reflash your device.](hololens-recovery.md#clean-reflash-the-device)
 
 ## Start receiving Insider builds
 
