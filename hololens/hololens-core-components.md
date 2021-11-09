@@ -127,7 +127,7 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 
 ## Deploy
 
-Distribute your HoloLens 2 devices and validate their configuration.
+Distribute your HoloLens 2 applications and validate your device management configurations.
 
 *   [Application deployment overview](app-deploy-overview.md)
 *   [Deploy apps to your HoloLens devices](app-deploy-intune.md)
