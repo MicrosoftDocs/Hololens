@@ -34,7 +34,7 @@ The following steps and video will help guide you through the process of deployi
 | ![Step 3.](images/3green.png) | <br/> **[Deploy](#deploy)**: &nbsp; Get your devices and applications deployed securely. |
 | ![Step 4.](images/4green.png) | <br/> **[Maintain](#maintain)**: &nbsp; Learn to  update, support, and maintain your deployment.
 
-## Prepare
+## Before you start
 
 If you already know the basics of HoloLens, you can skip this step.  If not, you can learn:
 
@@ -50,6 +50,8 @@ You can start learning to use HoloLens 2 by:
 *   [Understanding how it works in your environment](hololens-environment-considerations.md)
 *   [Setting up HoloLens2 for the first time](hololens2-setup.md)
 *   [Learning to navigate, manage, and manipulate holograms](holographic-home.md)
+
+## Prepare
 
 The deployment method for your commercial device deployment will depend on your use case. 
 
