@@ -56,7 +56,7 @@ You can start learning to use HoloLens 2 by:
 *   [learning to navigate, manage, and manipulate holograms](holographic-home.md)
 
 ## Plan
-\The deployment method for your commercial installation will depend on your use case.
+The deployment method for your commercial installation will depend on your use case. 
 
 |Use case | What it will do |
 | --- | --- |
@@ -68,12 +68,14 @@ You can start learning to use HoloLens 2 by:
 |Sales Assistance  |Carry less inventory and close large ticket sales faster by using mixed reality to showcase any configuration or customization to your customer. |
 |Contextual Data Overlays  |Make pertinent and real-time data available when and where it is needed, enabling your employees to make better, faster, more informed decisions. |
 
+You can use existing documentation for the [First Party applications](hololens-requirements.md), or construct your own [customized commercial scenarios](hololens-commercial-infrastructure.md).
+
 ### Learn about the [Common Deployment Scenarios](hololens-requirements.md):
 *   Start a [Remote Assist](hololens2-cloud-connected-overview.md) installation
 *   Start a [Dynamics 365](hololens2-corp-connected-overview.md) installation
 *   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) installation
 
-### Deploying [customized commercial scenarios](hololens-commercial-infrastructure.md)
+### Deploying HoloLens devices using Microsoft tools and services
 
 *   [What is the Microsoft Store for Business?](app-deploy-store-business.md)
 *   [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis.md)
