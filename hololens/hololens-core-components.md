@@ -120,7 +120,7 @@ Distribute your HoloLens 2 applications and validate your device management conf
 
 *   [Application deployment overview](app-deploy-overview.md)
 *   [Deploy apps to your HoloLens devices](app-deploy-intune.md)
-*   [Update your LOB apps through your MDM system or the Microsoft STore](app-deploy-overview.md)
+*   [Update your LOB apps through your MDM system or the Microsoft Store](app-deploy-overview.md)
 
 ## Maintain
 
