@@ -68,7 +68,7 @@ The deployment method for your commercial installation will depend on your use c
 |Sales Assistance  |Carry less inventory and close large ticket sales faster by using mixed reality to showcase any configuration or customization to your customer. |
 |Contextual Data Overlays  |Make pertinent and real-time data available when and where it is needed, enabling your employees to make better, faster, more informed decisions. |
 
-You can use existing documentation for the [First Party applications](hololens-requirements.md), or construct your own [customized commercial scenarios](hololens-commercial-infrastructure.md).
+You can use existing documentation for the [First Party applications](hololens-requirements.md), or construct your own customized commercial scenarios.
 
 ### Learn about the [Common Deployment Scenarios](hololens-requirements.md):
 *   Start a [Remote Assist](hololens2-cloud-connected-overview.md) installation
