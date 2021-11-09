@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 10/19/2021
+ms.date: 11/9/2021
 ms.reviewer: 
 manager: ranjibb
 appliesto:
@@ -38,12 +38,10 @@ Colorblind mode is useful a great feature that makes HoloLens more accessible. T
 
 ### Fixes and improvements
 
-- Fixed a known issue where [every time the power goes to 18 percent, the device suddenly shuts down automatically](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically).
 - Improvements to Moving Platform Mode when detecting the down direction.
 - Fixed an issue around update dialogs.
 - Updated inbox Microsoft Edge browser version.
 - Fixed an issue where toggling optional diagnostic data didn't persist the chosen setting in telemetry settings page after a reboot.
-- Fixed and issue where QR codes were not recognized when they were rotated at a 45-degree angle relative to the device.
 
 ### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
 
