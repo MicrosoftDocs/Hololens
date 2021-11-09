@@ -72,7 +72,7 @@ You can use existing documentation for the [First Party applications](hololens-r
 
 ### Learn about the [Common Deployment Scenarios](hololens-requirements.md):
 *   Start a [Cloud Connected](hololens2-cloud-connected-overview.md) device deployment
-*   Start a [Dynamics 365](hololens2-corp-connected-overview.md) installation
+*   Start a [Corporate connected](hololens2-corp-connected-overview.md) device deployment
 *   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) device deployment
 
 ### Deploying HoloLens devices using Microsoft tools and services
