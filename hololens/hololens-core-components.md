@@ -31,7 +31,7 @@ The following steps and video will help guide you through the process of deployi
 |--|--|
 | ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: &nbsp; Get familiar with the basics and learn to use HoloLens 2.    |
 | ![Step 2.](images/2green.png) | <br/> **[Plan](#configure)**: &nbsp; Plan your deployment by learning about Microsoft tools and services. |
-| ![Step 3.](images/3green.png) | <br/> **[Configure](#configure)**: &nbsp; Learn to configure the  essential components of your installation. |
+| ![Step 3.](images/3green.png) | <br/> **[Configure](#configure)**: &nbsp; Learn to configure the  essential components of your device deployment. |
 | ![Step 4.](images/4green.png) | <br/> **[Deploy](#deploy)**: &nbsp; Get your devices and applications deployed securely. |
 | ![Step 5.](images/5green.png) | <br/> **[Maintain](#maintain)**: &nbsp; Learn to  update, support, and maintain your deployment.
 
@@ -44,7 +44,7 @@ If you already know the basics of HoloLens, you can skip this step.  If not, you
 *   [What editions are available](hololens2-options.md)
 *   [How to get support](hololens2-support.md)
 *   [How to give Feedback](hololens-feedback.md)
-*   [Hbout licensing requirements](hololens-licenses-requirements.md)
+*   [About licensing requirements](hololens-licenses-requirements.md)
 
 You can start learning to use HoloLens 2 by:
 
@@ -59,7 +59,7 @@ The deployment method for your commercial installation will depend on your use c
 | --- | --- |
 |Remote Assistance  |Enable your employees to remote in an expert anytime they need it. |
 |Guides & Task Management  |Walk employees step-by-step through guided experiences to help them complete tasks faster and more accurately than ever before. |
-| Restricted offline installation | Lock down HoloLens 2 for use in secure environments |
+| Restricted offline device deployment | Lock down HoloLens 2 for use in secure environments |
 |Training & Simulation |Train and onboard new employees faster than ever using a "learning by doing" approach. |
 |Design & Prototyping  |Convert your CAD and BIM files to 3D digital twins to quickly iterate and collaborate on new product designs. |
 |Sales Assistance  |Carry less inventory and close large ticket sales faster by using mixed reality to showcase any configuration or customization to your customer. |
@@ -69,7 +69,7 @@ You can use existing documentation for the [First Party applications](hololens-r
 
 ### Learn about the [Common Deployment Scenarios](hololens-requirements.md):
 *   Start a [Cloud Connected](hololens2-cloud-connected-overview.md) device deployment
-*   Start a [Corporate connected](hololens2-corp-connected-overview.md) device deployment
+*   Start a [Dynamics 365](hololens2-corp-connected-overview.md) device deployment
 *   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) device deployment
 
 ### Deploying HoloLens devices using Microsoft tools and services
@@ -104,9 +104,6 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 
 ### Network
 
-*   [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
-*   [Learn how to connect HoloLens to a network](hololens-network.md).
-*   [Configure HoloLens by using a provisioning package](hololens-provisioning.md)
 *   [Prepare certificates and network profiles to meet company requirements](hololens-certificates-network.md). 
 
 ### Device Management
@@ -115,12 +112,15 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 *   [Register HoloLens devices with Windows Autopilot](hololens2-autopilot-registration-support.md)
 *   [Enroll HoloLens automatically](hololens-enroll-mdm.md)
 *   [Manage HoloLens devices with Microsoft Endpoint Manager](hololens-mdm-configure.md)
+    *   [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
+    *   [Learn how to connect HoloLens to a network](hololens-network.md).
+    *   [Configure HoloLens by using a provisioning package](hololens-provisioning.md)
 *   [Manage connection endpoints for HoloLens](hololens-offline.md)
 *   [Validate HoloLens WiFi certificates](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) 
 
 ## Deploy
 
-Distribute your HoloLens 2 applications and validate your device management configurations.
+Distribute your HoloLens 2 devices and validate their configuration.
 
 *   [Application deployment overview](app-deploy-overview.md)
 *   [Deploy apps to your HoloLens devices](app-deploy-intune.md)
@@ -142,7 +142,7 @@ Use Windows Update for Business along with your MDM system or the Microsoft Stor
 *   [Enrolling HoloLens devices when MAC addresses are restricted](mac-address-options.md)
 *   [Use Certificate Manager to install or remove HoloLens 2](certificate-manager.md)
 *   [Validate HoloLens enrollment](hololens2-corp-connected-deploy.md#enrollment-validation)
-*   [Deploy apps vis Microsoft Store for Business](app-deploy-store-business.md)
+*   [Deploy apps via Microsoft Store for Business](app-deploy-store-business.md)
 *   [Deploy apps using provisioning packages](app-deploy-provisioning-package.md)
 *   [Install apps quickly on HoloLens 2 devices](app-deploy-app-installer.md)
 *   [Verify that apps are operating effectively](hololens2-corp-connected-deploy.md)
