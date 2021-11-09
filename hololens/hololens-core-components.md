@@ -134,7 +134,7 @@ Use Windows Update for Business along with your MDM system or the Microsoft Stor
 
 *   [Windows Update for Business](hololens-updates.md) 
 *   [HoloLens 2 release notes](hololens-release-notes.md)
-*   [insider preview updates](hololens-insider.md)
+*   [Insider preview updates](hololens-insider.md)
 
 ### Validation
 
