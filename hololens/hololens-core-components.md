@@ -30,10 +30,9 @@ The following steps and video will help guide you through the process of deployi
 | &nbsp; | &nbsp; |
 |--|--|
 | ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: &nbsp; Get familiar with the basics and learn to use HoloLens 2.    |
-| ![Step 2.](images/2green.png) | <br/> **[Plan](#configure)**: &nbsp; Plan your deployment by learning about Microsoft tools and services. |
-| ![Step 3.](images/3green.png) | <br/> **[Configure](#configure)**: &nbsp; Learn to configure the  essential components of your device deployment. |
-| ![Step 4.](images/4green.png) | <br/> **[Deploy](#deploy)**: &nbsp; Get your devices and applications deployed securely. |
-| ![Step 5.](images/5green.png) | <br/> **[Maintain](#maintain)**: &nbsp; Learn to  update, support, and maintain your deployment.
+| ![Step 2.](images/2green.png) | <br/> **[Configure](#configure)**: &nbsp; Learn to configure the  essential components of your device deployment. |
+| ![Step 3.](images/3green.png) | <br/> **[Deploy](#deploy)**: &nbsp; Get your devices and applications deployed securely. |
+| ![Step 4.](images/4green.png) | <br/> **[Maintain](#maintain)**: &nbsp; Learn to  update, support, and maintain your deployment.
 
 ## Prepare
 
@@ -48,12 +47,11 @@ If you already know the basics of HoloLens, you can skip this step.  If not, you
 
 You can start learning to use HoloLens 2 by:
 
-*   [understanding how it works in your environment](hololens-environment-considerations.md)
-*   [setting up HoloLens2 for the first time](hololens2-setup.md)
-*   [learning to navigate, manage, and manipulate holograms](holographic-home.md)
+*   [Understanding how it works in your environment](hololens-environment-considerations.md)
+*   [Setting up HoloLens2 for the first time](hololens2-setup.md)
+*   [Learning to navigate, manage, and manipulate holograms](holographic-home.md)
 
-## Plan
-The deployment method for your commercial installation will depend on your use case. 
+The deployment method for your commercial device deployment will depend on your use case. 
 
 |Use case | What it will do |
 | --- | --- |
@@ -65,11 +63,9 @@ The deployment method for your commercial installation will depend on your use c
 |Sales Assistance  |Carry less inventory and close large ticket sales faster by using mixed reality to showcase any configuration or customization to your customer. |
 |Contextual Data Overlays  |Make pertinent and real-time data available when and where it is needed, enabling your employees to make better, faster, more informed decisions. |
 
-You can use existing documentation for the [First Party applications](hololens-requirements.md), or construct your own customized commercial scenarios.
-
 ### Learn about the [Common Deployment Scenarios](hololens-requirements.md):
 *   Start a [Cloud Connected](hololens2-cloud-connected-overview.md) device deployment
-*   Start a [Dynamics 365](hololens2-corp-connected-overview.md) device deployment
+*   Start a [Corporate Connected](hololens2-corp-connected-overview.md) device deployment
 *   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) device deployment
 
 ### Deploying HoloLens devices using Microsoft tools and services
@@ -120,7 +116,7 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 
 ## Deploy
 
-Distribute your HoloLens 2 devices and validate their configuration.
+Distribute your HoloLens 2 applications and validate your device management configurations.
 
 *   [Application deployment overview](app-deploy-overview.md)
 *   [Deploy apps to your HoloLens devices](app-deploy-intune.md)
