@@ -109,7 +109,7 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 *   [Enroll HoloLens automatically](hololens-enroll-mdm.md)
 *   [Manage HoloLens devices with Microsoft Endpoint Manager](hololens-mdm-configure.md)
     *   [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
-    *   [Learn how to connect HoloLens to a network](hololens-network.md).
+    *   [Learn how to connect HoloLens to a network](hololens-network.md)
     *   [Configure HoloLens by using a provisioning package](hololens-provisioning.md)
 *   [Manage connection endpoints for HoloLens](hololens-offline.md)
 *   [Validate HoloLens WiFi certificates](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) 
