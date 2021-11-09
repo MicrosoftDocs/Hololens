@@ -51,7 +51,7 @@ You can start learning to use HoloLens 2 by:
 *   [Setting up HoloLens2 for the first time](hololens2-setup.md)
 *   [Learning to navigate, manage, and manipulate holograms](holographic-home.md)
 
-Microsoft tools and services used to deploy devices
+Microsoft tools and services used to deploy devices:
 
 *   [What is the Microsoft Store for Business?](app-deploy-store-business.md)
 *   [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
