@@ -51,6 +51,14 @@ You can start learning to use HoloLens 2 by:
 *   [Setting up HoloLens2 for the first time](hololens2-setup.md)
 *   [Learning to navigate, manage, and manipulate holograms](holographic-home.md)
 
+Microsoft tools and services used to deploy devices
+
+*   [What is the Microsoft Store for Business?](app-deploy-store-business.md)
+*   [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
+*   [What is Windows Autopilot?](/mem/autopilot/windows-autopilot)
+*   [What is Microsoft Intune?](/mem/intune/fundamentals/what-is-intune)
+*   [What is Microsoft Endpoint Manager?](/mem/endpoint-manager-overview)
+    
 ## Prepare
 
 The deployment method for your commercial device deployment will depend on your use case. 
@@ -70,15 +78,7 @@ The deployment method for your commercial device deployment will depend on your 
 *   Start a [Corporate Connected](hololens2-corp-connected-overview.md) device deployment
 *   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) device deployment
 
-### Deploying HoloLens devices using Microsoft tools and services
-
-*   [What is the Microsoft Store for Business?](app-deploy-store-business.md)
-*   [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
-*   [What is Windows Autopilot?](/mem/autopilot/windows-autopilot)
-*   [What is Microsoft Intune?](/mem/intune/fundamentals/what-is-intune)
-*   [What is Microsoft Endpoint Manager?](/mem/endpoint-manager-overview)
-    
-If you're already familiar with Microsoft tools and services, read about how they are used with HoloLens 2:
+How Microsoft tools and services are used to deploy HoloLens 2 devices:
 
 *   [Find, install, and uninstall HoloLens applications](holographic-store-apps.md)
 *   [Manage user identity and login for HoloLens](hololens-identity.md)
