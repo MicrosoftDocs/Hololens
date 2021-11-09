@@ -100,7 +100,7 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 
 ### Network
 
-*   [Prepare certificates and network profiles to meet company requirements](hololens-certificates-network.md). 
+*   [Prepare certificates and network profiles to meet company requirements](hololens-certificates-network.md)
 
 ### Device Management
 
@@ -151,7 +151,7 @@ Use Windows Update for Business along with your MDM system or the Microsoft Stor
 *   [Display troubleshooting](hololens2-display.md)
 *   [Troubleshooting implementation and managed devices](hololens2-enterprise-troubleshooting.md)
 *   [HoloLens Community](hololens2-support.md#community-help-options)
-*   [Stack Overflow support](hololens2-support.md#post-a-question-on-stack-overflow). 
+*   [Stack Overflow support](hololens2-support.md#post-a-question-on-stack-overflow)
 
 ### Device Management
 
