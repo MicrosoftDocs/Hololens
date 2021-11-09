@@ -17,12 +17,9 @@ appliesto:
 
 ## Overview
 
-> [!NOTE]
-> This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within an organization. If you are just getting started with HoloLens, [get your device ready to use](hololens2-setup.md).
-
 HoloLens 2 is a Windows device. It runs on Windows 10 Holographic, which provides organizations with robust, flexible, built-in mobile device and app management technologies. 
 
-Windows 10 Holographic supports end-to-end device lifecycle management, giving you control over your devices, data, and apps. HoloLens 2 uses a comprehensive mobile device management solution that enables it to be incorporated into standard lifecycle practices, -- from device enrollment, configuration, and application management up through maintenance and retirement. 
+Windows 10 Holographic supports end-to-end device lifecycle management, giving you control over your devices, data, and apps. HoloLens 2 uses a comprehensive mobile device management solution that enables it to be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management up through maintenance and retirement. 
 
 The following steps and video will help guide you through the process of deploying HoloLens 2 within your organization.
 
@@ -42,12 +39,12 @@ The following steps and video will help guide you through the process of deployi
 
 If you already know the basics of HoloLens, you can skip this step.  If not, you can learn:
 
-*   [what HoloLens can do for you](hololens-commercial-features.md)
-*   [where to buy HoloLens 2](hololens2-purchase.md)
-*   [what editions are available](hololens2-options.md)
-*   [how to get support](hololens2-support.md)
-*   [how to give Feedback](hololens-feedback.md)
-*   [about licensing requirements](hololens-licenses-requirements.md)
+*   [What HoloLens can do for you](hololens-commercial-features.md)
+*   [Where to buy HoloLens 2](hololens2-purchase.md)
+*   [What editions are available](hololens2-options.md)
+*   [How to get support](hololens2-support.md)
+*   [How to give Feedback](hololens-feedback.md)
+*   [Hbout licensing requirements](hololens-licenses-requirements.md)
 
 You can start learning to use HoloLens 2 by:
 
@@ -78,10 +75,10 @@ You can use existing documentation for the [First Party applications](hololens-r
 ### Deploying HoloLens devices using Microsoft tools and services
 
 *   [What is the Microsoft Store for Business?](app-deploy-store-business.md)
-*   [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis.md)
-*   [What is Windows Autopilot?](/mem/autopilot/windows-autopilot.md)
+*   [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
+*   [What is Windows Autopilot?](/mem/autopilot/windows-autopilot)
 *   [What is Microsoft Intune?](/mem/intune/fundamentals/what-is-intune)
-*   [What is Microsoft Endpoint Manager?](/mem/endpoint-manager-overview.md)
+*   [What is Microsoft Endpoint Manager?](/mem/endpoint-manager-overview)
     
 If you're already familiar with Microsoft tools and services, read about how they are used with HoloLens 2:
 
@@ -119,10 +116,6 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 *   [Enroll HoloLens automatically](hololens-enroll-mdm.md)
 *   [Manage HoloLens devices with Microsoft Endpoint Manager](hololens-mdm-configure.md)
 *   [Manage connection endpoints for HoloLens](hololens-offline.md)
-*   [Update HoloLens automatically](hololens-updates.md)
-*   [Enrolling HoloLens devices when MAC addresses are restricted](mac-address-options.md)
-*   [Use Certificate Manager to install or remove HoloLens 2](certificate-manager.md)
-*   [Validate HoloLens enrollment](hololens2-corp-connected-deploy.md#enrollment-validation)
 *   [Validate HoloLens WiFi certificates](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) 
 
 ## Deploy
@@ -131,10 +124,7 @@ Distribute your HoloLens 2 devices and validate their configuration.
 
 *   [Application deployment overview](app-deploy-overview.md)
 *   [Deploy apps to your HoloLens devices](app-deploy-intune.md)
-*   [Deploy apps vis Microsoft Store for Business](app-deploy-store-business.md)
-*   [Deploy apps using provisioning packages](app-deploy-provisioning-package.md)
-*   [Install apps quickly on HoloLens 2 devices](app-deploy-app-installer.md)
-*   [Verify that apps are operating effectively](hololens2-corp-connected-deploy.md)
+*   [Update your LOB apps through your MDM system or the Microsoft STore](app-deploy-overview.md)
 
 ## Maintain
 
@@ -143,9 +133,19 @@ Use Windows Update for Business along with your MDM system or the Microsoft Stor
 ### Updates
 
 *   [Windows Update for Business](hololens-updates.md) 
-*   [Update through your MDM system or the Microsoft STore](app-deploy-overview.md)
 *   [HoloLens 2 release notes](hololens-release-notes.md)
 *   [insider preview updates](hololens-insider.md)
+
+### Validation
+
+*   [Update HoloLens automatically](hololens-updates.md)
+*   [Enrolling HoloLens devices when MAC addresses are restricted](mac-address-options.md)
+*   [Use Certificate Manager to install or remove HoloLens 2](certificate-manager.md)
+*   [Validate HoloLens enrollment](hololens2-corp-connected-deploy.md#enrollment-validation)
+*   [Deploy apps vis Microsoft Store for Business](app-deploy-store-business.md)
+*   [Deploy apps using provisioning packages](app-deploy-provisioning-package.md)
+*   [Install apps quickly on HoloLens 2 devices](app-deploy-app-installer.md)
+*   [Verify that apps are operating effectively](hololens2-corp-connected-deploy.md)
 
 ### Support 
 
