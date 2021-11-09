@@ -68,9 +68,9 @@ The deployment method for your commercial installation will depend on your use c
 You can use existing documentation for the [First Party applications](hololens-requirements.md), or construct your own customized commercial scenarios.
 
 ### Learn about the [Common Deployment Scenarios](hololens-requirements.md):
-*   Start a [Remote Assist](hololens2-cloud-connected-overview.md) installation
-*   Start a [Dynamics 365](hololens2-corp-connected-overview.md) installation
-*   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) installation
+*   Start a [Cloud Connected](hololens2-cloud-connected-overview.md) device deployment
+*   Start a [Corporate connected](hololens2-corp-connected-overview.md) device deployment
+*   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) device deployment
 
 ### Deploying HoloLens devices using Microsoft tools and services
 
@@ -120,7 +120,7 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 
 ## Deploy
 
-Distribute your HoloLens 2 devices and validate their configuration.
+Distribute your HoloLens 2 applications and validate your device management configurations.
 
 *   [Application deployment overview](app-deploy-overview.md)
 *   [Deploy apps to your HoloLens devices](app-deploy-intune.md)
