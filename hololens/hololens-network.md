@@ -127,7 +127,9 @@ Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if yo
 
 ## Connecting Wi-Fi for HoloLens 2 roaming between terminals
 
-To ensure good roaming between Wi-fi terminals when connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications for the HoloLens 2 Wi-fi module.
+To ensure good roaming between Wi-fi terminals when connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications.
+
+HoloLens 2 Wi-fi module:
 
 *    Chipset: SDM850 with WCN3990 Wi-Fi modules. 802.11 AC wave 1
 *    Channel bandwidths: 2.4GHz supports 20 MHz, 5 GHz supports 20, 40, and 80 MHz
