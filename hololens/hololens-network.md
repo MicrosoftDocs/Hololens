@@ -26,14 +26,14 @@ Read more about [using HoloLens offline](hololens-offline.md).
 
 The first time you use your HoloLens, you'll be guided through connecting to a Wi-Fi network. If you have trouble connecting to Wi-Fi during setup, make sure that your network is either an open, password-protected network or a captive portal network. Also, confirm that the network doesn't require you to use a certificate to connect. After setup, you can connect to other types of Wi-Fi networks.
 
-On HoloLens 2 devices, a user may also [use a USB-C to Ethernet adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) to connect directly to Wi-Fi to help assist in setting up the device. Once the device has been set up a user may continue to use the adapter or they may disconnect the device from the adapter and [connect to wi-fi after set up](hololens-network.md#connecting-to-wi-fi-after-setup). 
+On HoloLens 2 devices, users may also [use a USB-C to Ethernet adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) to connect directly to Wi-Fi to help assist in setting up the device. Once the device has been set up, users may continue to use the adapter, or they may disconnect the device from the adapter and [connect to wi-fi after setup](hololens-network.md#connecting-to-wi-fi-after-setup). 
 
 ## Connecting to Wi-Fi after setup
 
-1. Preform the **Start gesture** and select **Settings**. The Settings app will be auto-placed in front of you.
+1. Perform the **Start gesture** and select **Settings**. The Settings app will be auto-placed in front of you.
 1. Select **Network & Internet** > **Wi-Fi**. Make sure Wi-Fi is turned on. If you don't see your network, scroll down the list.
 1. Select a network, then select **Connect**.
-1. If you are prompted for a network password type it and then select **Next**.
+1. If you are prompted for a network password, type it and select **Next**.
 
 ![HoloLens Wi-Fi settings.](./images/hololens-2-wifi-settings.jpg)
 
@@ -46,13 +46,13 @@ To confirm you are connected to a Wi-Fi network, check the Wi-Fi status in the *
 > If Wi-Fi is not available, you can also [connect to Cellular and 5G networks](hololens-cellular.md).
 
 > [!IMPORTANT]
-> By design, users cannot fine tune the Wi-Fi roaming behavior of the HoloLens 2 - **the only way to refresh the Wi-Fi list is to toggle the Wi-Fi Off and On**. This prevents many issues, like where a device can remain "stuck" to an AP once it is out of range.
+> By design, users cannot fine-tune the Wi-Fi roaming behavior of the HoloLens 2. **The only way to refresh the Wi-Fi list is to toggle the Wi-Fi Off and On**. This prevents many issues, like where a device can remain "stuck" to an AP once it is out of range.
 
 ## Connect HoloLens to Enterprise Wi-Fi Network
 
-Enterprise Wi-Fi profiles use Extensible Authentication Protocol (EAP) to authenticate Wi-Fi connections. HoloLens Enterprise Wi-Fi profile can be configured through MDM or provisioning package created by [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-packages).
+Enterprise Wi-Fi profiles use Extensible Authentication Protocol (EAP) to authenticate Wi-Fi connections. The HoloLens Enterprise Wi-Fi profile can be configured through MDM or a provisioning package created by [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-packages).
 
-For Microsoft Intune managed device, refer to [Intune](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) for configuration instructions.
+For a Microsoft Intune managed device, refer to [Intune](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) for configuration instructions.
 
 To create a Wi-Fi provisioning package in WCD, a pre-configured Wi-Fi profile .xml file is required. Here is a sample Wi-Fi profile for WPA2-Enterprise with EAP-TLS authentication:
 
@@ -116,26 +116,26 @@ To create a Wi-Fi provisioning package in WCD, a pre-configured Wi-Fi profile .x
 ```
 
 
-Server root CA certificate and client certificate may need to be provisioned on the device depending on the EAP type.
+Depending on the EAP type, a server root CA certificate and client certificate may have to be provisioned on the device.
 
 Additional resources:
 
 - WLANv1Profile Schema: [[MS-GPWL]: Wireless LAN Profile v1 Schema | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if you are having problems connecting to your Wi-Fi.
+Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if you are having trouble connecting to your Wi-Fi.
 
-## Connecting WiFi for HoloLens 2 roaming between terminals
+## Connecting Wi-Fi for HoloLens 2 roaming between terminals
 
-When connecting HoloLens 2 devices, use the technical specifications for HoloLens 2 Wifi module to assure good roaming between Wifi terminals when deploying WiFi. 
+To assure good roaming between Wi-fi terminals when connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications for the HoloLens 2 Wi-fi module.
 
-| Component | Description | WiFi Standard |
-|---------|---------|---------|
-| Chipset | SDM850 with WCN3990 WiFi modules. | 802.11 AC wave 1 |
-| Channel bandwidths | | 2.4GHz supports 20 MHz; 5 GHz supports 20, 40, and 80 MHz |
-| Spatial Streamsc | 2x2 MIMO | Supports 802.11r (fast roaming); RSSI to trigger roaming is ~70dBm |
+*    Chipset: SDM850 with WCN3990 Wi-Fi modules; 802.11 AC wave 1
+*    Channel bandwidths: 2.4GHz supports 20 MHz; 5 GHz supports 20, 40, and 80 MHz
+*    Spatial Streams: 2x2 MIMO
+*    Supports 802.11r (fast roaming); RSSI to trigger roaming is ~70dBm
+*    Unable to share details on RF sensitivity
 
-Minimum levels will vary according to usage. For example, in addition to HoloLens 2 roaming, Azure remote rendering performance, Remote Assist, and general web access will all have different throughput requirements, which will directly affect WiFi signal level.
+Also consider the HoloLens 2 use case while roaming. Azure remote rendering performance, Remote Assist, or general web access will have different throughput requirements that will be directly affected by Wi-Fi signal level.
 
 ## Configure Network Proxy
 
