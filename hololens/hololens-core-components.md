@@ -29,10 +29,10 @@ The following steps and video will help guide you through the process of deployi
 
 | &nbsp; | &nbsp; |
 |--|--|
-| ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: &nbsp; Get familiar with the basics and learn to use HoloLens 2.    |
-| ![Step 2.](images/2green.png) | <br/> **[Configure](#configure)**: &nbsp; Learn to configure the  essential components of your device deployment. |
-| ![Step 3.](images/3green.png) | <br/> **[Deploy](#deploy)**: &nbsp; Get your devices and applications deployed securely. |
-| ![Step 4.](images/4green.png) | <br/> **[Maintain](#maintain)**: &nbsp; Learn to  update, support, and maintain your deployment.
+| ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: &nbsp; Learn about Microsoft tools and services used for deployment.    |
+| ![Step 2.](images/2green.png) | <br/> **[Configure](#configure)**: &nbsp; Learn about setting up and adding devices to your deployment. |
+| ![Step 3.](images/3green.png) | <br/> **[Deploy](#deploy)**: &nbsp; Learn about deploying your applications and devices. |
+| ![Step 4.](images/4green.png) | <br/> **[Maintain](#maintain)**: &nbsp; Learn about managing and maintaining your deployment.
 
 ## Before you start
 
@@ -63,7 +63,14 @@ The deployment method for your commercial device deployment will depend on your 
 |Sales Assistance  |Carry less inventory and close large ticket sales faster by using mixed reality to showcase any configuration or customization to your customer. |
 |Contextual Data Overlays  |Make pertinent and real-time data available when and where it is needed, enabling your employees to make better, faster, more informed decisions. |
 
+Learn about the [Common Deployment Scenarios](hololens-requirements.md):
+*   [Cloud Connected](hololens2-cloud-connected-overview.md) device deployment
+*   [Corporate Connected](hololens2-corp-connected-overview.md) device deployment
+*   [restricted offline](hololens-common-scenarios-offline-secure.md) device deployment
+
 ## Prepare
+
+Learn about the tools and services you'll need for your HoloLens device deployment.
 
 Microsoft tools and services used for deployment:
 
@@ -73,12 +80,7 @@ Microsoft tools and services used for deployment:
 *   [What is Microsoft Intune?](/mem/intune/fundamentals/what-is-intune)
 *   [What is Microsoft Endpoint Manager?](/mem/endpoint-manager-overview)
 
-### Learn about the [Common Deployment Scenarios](hololens-requirements.md):
-*   Start a [Cloud Connected](hololens2-cloud-connected-overview.md) device deployment
-*   Start a [Corporate Connected](hololens2-corp-connected-overview.md) device deployment
-*   Start a [restricted offline](hololens-common-scenarios-offline-secure.md) device deployment
-
-How Microsoft tools and services are used to deploy HoloLens 2 devices:
+How Microsoft tools and services used to deploy HoloLens 2 devices:
 
 *   [Find, install, and uninstall HoloLens applications](holographic-store-apps.md)
 *   [Manage user identity and login for HoloLens](hololens-identity.md)
@@ -89,7 +91,7 @@ How Microsoft tools and services are used to deploy HoloLens 2 devices:
 
 ## Configure
 
-You'll be setting up a new network for your HoloLens devices, or you'll be adding them to an existing Azure AD tenant. 
+Learn about setting up a new network for your HoloLens 2 devices and adding them to an Azure AD tenant. 
 
 ### Identity
 
@@ -118,7 +120,7 @@ You'll be setting up a new network for your HoloLens devices, or you'll be addin
 
 ## Deploy
 
-Distribute your HoloLens 2 applications and validate your device management configurations.
+Learn about distributing your HoloLens 2 applications and validating your HoloLens 2 devices.
 
 *   [Application deployment overview](app-deploy-overview.md)
 *   [Deploy apps to your HoloLens devices](app-deploy-intune.md)
@@ -129,7 +131,7 @@ Distribute your HoloLens 2 applications and validate your device management conf
 
 ## Maintain
 
-Use Windows Update for Business along with your MDM system or the Microsoft Store to keep your fleet of HoloLens 2 and apps updated.
+Learn about updating, validating, supporting, and managing your HoloLens 2 device deployments.
 
 ### Updates
 
