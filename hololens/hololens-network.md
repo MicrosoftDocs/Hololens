@@ -129,10 +129,10 @@ Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if yo
 
 To ensure good roaming between Wi-fi terminals when connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications for the HoloLens 2 Wi-fi module.
 
-*    Chipset: SDM850 with WCN3990 Wi-Fi modules; 802.11 AC wave 1
-*    Channel bandwidths: 2.4GHz supports 20 MHz; 5 GHz supports 20, 40, and 80 MHz
+*    Chipset: SDM850 with WCN3990 Wi-Fi modules. 802.11 AC wave 1
+*    Channel bandwidths: 2.4GHz supports 20 MHz, 5 GHz supports 20, 40, and 80 MHz
 *    Spatial Streams: 2x2 MIMO
-*    Supports 802.11r (fast roaming); RSSI to trigger roaming is ~70dBm
+*    Supports 802.11r (fast roaming), RSSI to trigger roaming is ~70dBm
 *    Unable to share details on RF sensitivity
 
 Also consider the HoloLens 2 use case while roaming. Azure remote rendering performance, Remote Assist, or general web access will have different throughput requirements that will be directly affected by Wi-Fi signal level.
