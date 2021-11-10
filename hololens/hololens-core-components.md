@@ -32,7 +32,7 @@ The following steps and video will help guide you through the process of deployi
 | ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: &nbsp; Learn about Microsoft tools and services used for deployment.    |
 | ![Step 2.](images/2green.png) | <br/> **[Configure](#configure)**: &nbsp; Learn about setting up and adding devices to your deployment. |
 | ![Step 3.](images/3green.png) | <br/> **[Deploy](#deploy)**: &nbsp; Learn about deploying your applications and devices. |
-| ![Step 4.](images/4green.png) | <br/> **[Maintain](#maintain)**: &nbsp; Learn about managing and maintaining your deployment.
+| ![Step 4.](images/4green.png) | <br/> **[Maintain](#maintain)**: &nbsp; Learn about maintaining and managing your deployment.
 
 ## Before you start
 
@@ -51,6 +51,13 @@ You can start learning to use HoloLens 2 by:
 *   [Setting up HoloLens2 for the first time](hololens2-setup.md)
 *   [Learning to navigate, manage, and manipulate holograms](holographic-home.md)
 
+### Deployment types
+
+Learn about the [Common Deployment Scenarios](hololens-requirements.md):
+*   [Cloud Connected deployments](hololens2-cloud-connected-overview.md)
+*   [Corporate Connected deployments](hololens2-corp-connected-overview.md)
+*   [Restricted offline deployments](hololens-common-scenarios-offline-secure.md)
+
 The deployment method for your commercial device deployment will depend on your use case. 
 
 |Use case | What it will do |
@@ -62,11 +69,6 @@ The deployment method for your commercial device deployment will depend on your 
 |Design & Prototyping  |Convert your CAD and BIM files to 3D digital twins to quickly iterate and collaborate on new product designs. |
 |Sales Assistance  |Carry less inventory and close large ticket sales faster by using mixed reality to showcase any configuration or customization to your customer. |
 |Contextual Data Overlays  |Make pertinent and real-time data available when and where it is needed, enabling your employees to make better, faster, more informed decisions. |
-
-Learn about the [Common Deployment Scenarios](hololens-requirements.md):
-*   [Cloud Connected](hololens2-cloud-connected-overview.md) device deployment
-*   [Corporate Connected](hololens2-corp-connected-overview.md) device deployment
-*   [restricted offline](hololens-common-scenarios-offline-secure.md) device deployment
 
 ## Prepare
 
