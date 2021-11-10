@@ -133,13 +133,15 @@ Here are some guidelines to follow when using your device:
 1. Use device indoors.
 1. Use device in shade; even indoors avoid direct sunlight though windows or skylights.
 1. If you follow the above guidelines but experience unexpected overheating issues, follow the below steps for submitting [Feedback](hololens-feedback.md). 
-    1. Ensure **Full** or **Optional** telemetry is enabled on your device. If it is not, enable it. 
-    >[!CAUTION]
-    > Telemetry is not retroactive for thermal events - it must be enabled during the overheating or the required data will not be captured.
+
+   1. Ensure **Full** or **Optional** telemetry is enabled on your device. If it is not, enable it.
+ 
+      > [!CAUTION]
+      > Telemetry is not retroactive for thermal events - it must be enabled during the overheating or the required data will not be captured.
     
-    2. Reproduce the heating issue.
-    3. Include the date and time the overheating occurred.
-    4. Submit [Feedback](hololens-feedback.md).
+   2. Reproduce the heating issue.
+   3. Include the date and time the overheating occurred.
+   4. Submit [Feedback](hololens-feedback.md).
 
 ## See also
 
