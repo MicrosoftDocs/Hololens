@@ -30,7 +30,7 @@ Collaborate without boundaries and act with precision to increase employee produ
 We hope this article inspires you to think of all the ways in which mixed reality (MR) will benefit your business.
 
 > [!NOTE]
-> Take advantage of a limited time Microsoft Ignite HoloLens 2 promotion that includes 15% off on HoloLens 2. [Learn more](buy.md)
+> Take advantage of a limited time Microsoft Ignite HoloLens 2 promotion that includes 15% off on HoloLens 2. [Learn more](https://www.microsoft.com/en-us/hololens/buy)
 
 ## HoloLens 2 capabilities
 
