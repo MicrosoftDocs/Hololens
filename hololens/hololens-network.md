@@ -50,7 +50,7 @@ To confirm you are connected to a Wi-Fi network, check the Wi-Fi status in the *
 
 ## HoloLens 2 Wi-Fi module
 
-When connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications to ensure good roaming between Wi-fi terminals.
+When connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications to ensure good roaming between Wi-Fi terminals.
 
 *    Chipset: SDM850 with WCN3990 Wi-Fi modules. 802.11 AC wave 1
 *    Channel bandwidths: 2.4GHz supports 20 MHz, 5 GHz supports 20, 40, and 80 MHz
