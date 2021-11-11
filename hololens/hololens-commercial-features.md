@@ -1,9 +1,9 @@
 ---
 title: HoloLens 2 capabilities and solutions
 description: Learn about the Microsoft HoloLens commercial features for businesses to manage HoloLens devices. 
-author: qianw211
-ms.author: v-qianwen
-ms.date: 9/1/2021
+author: beelia
+ms.author: v-beehanson
+ms.date: 11/11/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -12,7 +12,7 @@ audience: ITPro
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: 
+ms.reviewer: skerewa
 manager: skerewa
 appliesto:
 - HoloLens 2
@@ -28,6 +28,9 @@ Thanks to HoloLens 2 and Mixed Reality applications, now workers can collaborate
 Collaborate without boundaries and act with precision to increase employee productivity with mixed reality applications on HoloLens 2. Stay engaged heads-up, hands free longer and more comfortably with built-in voice commands, eye tracking, and world-anchoring for continuous focus on safely completing tasks without errors. Connect with remote colleagues in real-time and work together across an extensive holographic canvas overlayed in your physical environment to quickly resolve issues at the point of work. Realize return on investment (ROI) right out of the box with a robust ecosystem of applications that are supported with the security, reliability, and scalability of Microsoft.  
 
 We hope this article inspires you to think of all the ways in which mixed reality (MR) will benefit your business.
+
+> [!NOTE]
+> Take advantage of a limited time Microsoft Ignite HoloLens 2 promotion that includes 15% off on HoloLens 2. [Learn more](buy.md)
 
 ## HoloLens 2 capabilities
 
