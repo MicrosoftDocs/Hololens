@@ -30,7 +30,7 @@ Collaborate without boundaries and act with precision to increase employee produ
 We hope this article inspires you to think of all the ways in which mixed reality (MR) will benefit your business.
 
 > [!NOTE]
-> Take advantage of a limited time Microsoft Ignite HoloLens 2 promotion that includes 15% off on HoloLens 2. [Learn more](https://www.microsoft.com/en-us/hololens/buy)
+> Over half of Fortune 500 enterprises have purchased Microsoft HoloLens 2. According to the commissioned Forrester Consulting TEI study on HoloLens 2, Forrester estimates an ROI of 177%, benefits of $11.9 million versus costs of $4.3 million over three years, resulting in a net NPV of $7.6 million and a payback period of 13 months.
 
 ## HoloLens 2 capabilities
 
