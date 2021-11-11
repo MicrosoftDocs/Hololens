@@ -29,7 +29,7 @@ Collaborate without boundaries and act with precision to increase employee produ
 
 We hope this article inspires you to think of all the ways in which mixed reality (MR) will benefit your business.
 
-## HoloLens Return on Investment
+## HoloLens 2 Return on Investment
 
 Over half of Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
 
