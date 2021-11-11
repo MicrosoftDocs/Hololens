@@ -2,9 +2,9 @@
 title: HoloLens environment considerations
 description: Get the best possible experience using HoloLens when you optimize the device for your eyes and environment.
 author: dorreneb
-ms.author: dobrown
+ms.author: v-beehanson
 manager: jarrettr
-ms.date: 8/29/2019
+ms.date: 11/03/2021
 ms.prod: hololens
 ms.topic: article
 audience: ITPro
@@ -14,7 +14,7 @@ keywords: holographic frame, field of view, fov, calibration, spaces, environmen
 
 # HoloLens environment considerations
 
-HoloLens blends the holographic with the "real" world, placing holograms in your surroundings. A holographic app window "hangs" on the wall, a holographic ballerina spins on the tabletop, bunny ears sit on top of your unwitting friend’s head. When you’re using an immersive game or app, the holographic world will spread to fill your surroundings but you can still see and move around the space.
+HoloLens blends the holographic with the real world, placing holograms in your surroundings. A holographic app window hangs on the wall, a holographic ballerina spins on the tabletop, bunny ears sit on top of your unwitting friend’s head. When you’re using an immersive game or app, the holographic world will spread to fill your surroundings but you can still see and move around the space.
 
 The holograms you place will stay where you’ve put them, even if you turn off your device.
 
@@ -28,7 +28,7 @@ Tracking performance is heavily influenced by the environment the user is in, an
 
 Windows Mixed Reality uses visual light to track the user's location. When an environment is too bright, the cameras can get saturated, and nothing is seen. If the environment is too dark, the cameras can't pick up enough information, and nothing is seen. Lighting should be even and sufficiently bright a human can see without effort, but not so bright the light is painful to look at.  
 
-Areas where there are points of bright light in an overall dim area are also problematic, as the camera has to adjust when moving in and out of bright spaces. This can cause the device to "get lost" and think that the change in light equates to a change in location. Stable light levels in an area will lead to better tracking.  
+Areas where there are points of bright light in an overall dim area are also problematic, as the camera has to adjust when moving in and out of bright spaces. This can cause the device to get lost and think that the change in light equates to a change in location. Stable light levels in an area will lead to better tracking.  
 
 Any outdoor lighting can also cause instability in the tracker, as the sun may vary considerably over time. For example, tracking in the same space in the summer vs. winter can produce drastically different results, as the second hand light outside may be higher at different times of year.  
 
@@ -88,13 +88,21 @@ Network identification (such as SSID or MAC address) isn't sent to Microsoft, an
 
 When you enter a new space (or load an existing one), you’ll see a mesh graphic spreading over the space. This means your device is mapping your surroundings. While a HoloLens will learn a space over time, there are tips and tricks to map spaces.
 
-## Environment management
+## Deleting holograms
 
-There are two settings, which enable users to “clean up” holograms and cause HoloLens to “forget" a space. They exist in **Holograms and environments** in the settings app, with the second setting also appearing under **Privacy** in the settings app.  
+Hologram map data exists in **Settings** > **System** > **Holograms** and **Settings** > **System** > **Privacy**  > **Environment**. There are two settings that enable users to clean up holograms and allow HoloLens to forget a space.
 
-1. **Delete nearby holograms**. When you select this setting, HoloLens will erase all anchored holograms and all stored map data for the “current space” where the device is located. A new map section would be created and stored in the database for that location once holograms are again placed in that same space.
+### Delete nearby holograms
 
-1. **Delete all holograms**. By selecting this setting, HoloLens will erase ALL map data and anchored holograms in the entire databases of spaces. No holograms will be rediscovered and any holograms need to be newly placed to again store map sections in the database.
+When you select this setting, HoloLens erases all anchored holograms and all stored map data for the current space where the device is located. A new map section is created and stored in the database for that location once holograms are again placed in that same space.
+
+To delete nearby holograms, go to **Settings** > **System** > **Holograms** > **Remove nearby holograms**.
+
+### Delete all holograms
+
+When you select this setting, HoloLens erases ALL map data and anchored holograms in the entire databases of spaces. Deleted holograms will not be rediscovered, and any holograms deleted will have to be replaced to again store map sections in the database.
+
+To delete all holograms, go to **Settings** > **System** > **Holograms** > **Remove all holograms**.
 
 ## Hologram quality
 
@@ -116,7 +124,7 @@ If someone else is going to be using your HoloLens, they should run the Calibrat
 
 [HoloLens Regulatory information](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Includes information on temperature range, disposal, radio and TV interference, and more.
 
-See details for "HoloLens" in [Materials and substances](https://www.microsoft.com/legal/compliance/materials-substances) > REACH Article 33 Disclosure on Environmental Compliance (PDF).
+See details for HoloLens in [Materials and substances](https://www.microsoft.com/legal/compliance/materials-substances) > REACH Article 33 Disclosure on Environmental Compliance (PDF).
 
 Here are some guidelines to follow when using your device:
 
@@ -125,13 +133,15 @@ Here are some guidelines to follow when using your device:
 1. Use device indoors.
 1. Use device in shade; even indoors avoid direct sunlight though windows or skylights.
 1. If you follow the above guidelines but experience unexpected overheating issues, follow the below steps for submitting [Feedback](hololens-feedback.md). 
-    1. Ensure **Full** or **Optional** telemetry is enabled on your device. If it is not, enable it. 
-    >[!CAUTION]
-    > Telemetry is not retroactive for thermal events - it must be enabled during the overheating or the required data will not be captured.
+
+   1. Ensure **Full** or **Optional** telemetry is enabled on your device. If it is not, enable it.
+ 
+      > [!CAUTION]
+      > Telemetry is not retroactive for thermal events - it must be enabled during the overheating or the required data will not be captured.
     
-    2. Reproduce the heating issue.
-    3. Include the date and time the overheating occurred.
-    4. Submit [Feedback](hololens-feedback.md).
+   2. Reproduce the heating issue.
+   3. Include the date and time the overheating occurred.
+   4. Submit [Feedback](hololens-feedback.md).
 
 ## See also
 
