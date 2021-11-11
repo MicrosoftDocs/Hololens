@@ -48,6 +48,20 @@ To confirm you are connected to a Wi-Fi network, check the Wi-Fi status in the *
 > [!IMPORTANT]
 > By design, users cannot fine-tune the Wi-Fi roaming behavior of the HoloLens 2. **The only way to refresh the Wi-Fi list is to toggle the Wi-Fi Off and On**. This prevents many issues, like where a device can remain "stuck" to an AP once it is out of range.
 
+## HoloLens 2 Wi-fi module
+
+When connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications to ensure good roaming between Wi-fi terminals.
+
+*    Chipset: SDM850 with WCN3990 Wi-Fi modules. 802.11 AC wave 1
+*    Channel bandwidths: 2.4GHz supports 20 MHz, 5 GHz supports 20, 40, and 80 MHz
+*    Spatial Streams: 2x2 MIMO
+*    Supports 802.11r (fast roaming), RSSI to trigger roaming is ~70dBm
+
+The Wi-Fi signal level directly affects roaming because throughput requirements vary by use case. Consider the following specifications when setting up Wi-Fi terminals.
+*    [Web access](/power-platform/admin/web-application-requirements)
+*    [Azure remote rendering](/azure/remote-rendering/reference/network-requirements)
+*    [Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements)
+
 ## Connect HoloLens to Enterprise Wi-Fi Network
 
 Enterprise Wi-Fi profiles use Extensible Authentication Protocol (EAP) to authenticate Wi-Fi connections. The HoloLens Enterprise Wi-Fi profile can be configured through MDM or a provisioning package created by [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-packages).
@@ -124,20 +138,6 @@ Additional resources:
 - EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
 Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if you are having trouble connecting to your Wi-Fi.
-
-## Connecting Wi-Fi for HoloLens 2 roaming between terminals
-
-To ensure good roaming between Wi-fi terminals when connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications.
-
-HoloLens 2 Wi-fi module:
-
-*    Chipset: SDM850 with WCN3990 Wi-Fi modules. 802.11 AC wave 1
-*    Channel bandwidths: 2.4GHz supports 20 MHz, 5 GHz supports 20, 40, and 80 MHz
-*    Spatial Streams: 2x2 MIMO
-*    Supports 802.11r (fast roaming), RSSI to trigger roaming is ~70dBm
-*    Unable to share details on RF sensitivity
-
-Also consider the HoloLens 2 use case while roaming. Azure remote rendering performance, Remote Assist, or general web access will have different throughput requirements that will be directly affected by Wi-Fi signal level.
 
 ## Configure Network Proxy
 
