@@ -48,7 +48,7 @@ To confirm you are connected to a Wi-Fi network, check the Wi-Fi status in the *
 > [!IMPORTANT]
 > By design, users cannot fine-tune the Wi-Fi roaming behavior of the HoloLens 2. **The only way to refresh the Wi-Fi list is to toggle the Wi-Fi Off and On**. This prevents many issues, like where a device can remain "stuck" to an AP once it is out of range.
 
-## HoloLens 2 Wi-fi module
+## HoloLens 2 Wi-Fi module
 
 When connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications to ensure good roaming between Wi-fi terminals.
 
