@@ -29,10 +29,10 @@ The following steps and video will help guide you through the process of deployi
 
 | &nbsp; | &nbsp; |
 |--|--|
-| ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: &nbsp; Learn about Microsoft tools and services used for deployment.    |
-| ![Step 2.](images/2green.png) | <br/> **[Configure](#configure)**: &nbsp; Learn about setting up and adding devices to your deployment. |
-| ![Step 3.](images/3green.png) | <br/> **[Deploy](#deploy)**: &nbsp; Learn about deploying your applications and devices. |
-| ![Step 4.](images/4green.png) | <br/> **[Maintain](#maintain)**: &nbsp; Learn about maintaining and managing your deployment.
+| ![Step 1.](images/1green.png) | <br/> **[Prepare](#prepare)**: Learn about Microsoft tools and services used for deployment.|
+| ![Step 2.](images/2green.png) | <br/> **[Configure](#configure)**: Learn about setting up and adding devices to your deployment.|
+| ![Step 3.](images/3green.png) | <br/> **[Deploy](#deploy)**: Learn about deploying your applications and devices.|
+| ![Step 4.](images/4green.png) | <br/> **[Maintain](#maintain)**: Learn about maintaining and managing your deployment.|
 
 ## Before you start
 
@@ -69,6 +69,8 @@ The deployment method for your commercial device deployment will depend on your 
 |Design & Prototyping  |Convert your CAD and BIM files to 3D digital twins to quickly iterate and collaborate on new product designs. |
 |Sales Assistance  |Carry less inventory and close large ticket sales faster by using mixed reality to showcase any configuration or customization to your customer. |
 |Contextual Data Overlays  |Make pertinent and real-time data available when and where it is needed, enabling your employees to make better, faster, more informed decisions. |
+
+The tools and processes you use to deploy HoloLens 2 will vary depending on your use case, so determine your objectives before proceeding.
 
 ## Prepare
 
