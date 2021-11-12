@@ -31,11 +31,12 @@ We hope this article inspires you to think of all the ways in which mixed realit
 
 ## HoloLens 2 Return on Investment
 
-Over half of Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
+According to the commissioned [Forrester Consulting TEI study on HoloLens 2](https://download.microsoft.com/download/e/1/3/e1364937-5f62-4a0c-bb9e-664c270ad4fe/Forrester-Total-Economic-Impact-Mixed-Reality-Microsoft-HoloLens-2_Cover.pdf), Forrester estimates an ROI of 177%, benefits of $11.9 million versus costs of $4.3 million over three years, resulting in a net NPV of $7.6 million and a payback period of 13 months.
+
 
 ![HoloLens 2 Return on Investment](./images/forrester-info-graph.png)
 
-According to the commissioned [Forrester Consulting TEI study on HoloLens 2](https://download.microsoft.com/download/e/1/3/e1364937-5f62-4a0c-bb9e-664c270ad4fe/Forrester-Total-Economic-Impact-Mixed-Reality-Microsoft-HoloLens-2_Cover.pdf), Forrester estimates an ROI of 177%, benefits of $11.9 million versus costs of $4.3 million over three years, resulting in a net NPV of $7.6 million and a payback period of 13 months.
+Over half of Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
 
 ![HoloLens 2 Company ROIs](./images/company-rois.png)
 
