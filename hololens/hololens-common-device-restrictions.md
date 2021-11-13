@@ -19,6 +19,8 @@ appliesto:
 
 This guide helps IT professionals understand the more commonly used management options available for the Windows 10 Holographic OS in the enterprise. Please consult your MDM system documentation to understand how these policies are enabled by your MDM vendor. Not all MDM systems support every setting described in this guide. Some support custom policies through OMA-URI XML files. See [Microsoft Intune support for Custom Policies](/mem/intune/configuration/custom-settings-windows-10). Naming conventions may also vary among MDM vendors.
 
+Find more details on policy options in the HoloLens supported [Policy CSPs](/windows/client-management/mdm/policy-csps-supported-by-hololens2)
+
 ## Prevent changing of settings
 
 Employees are usually allowed to change certain personal device settings that you may want to lock down on corporate devices. Employees can interactively adjust certain settings of the HoloLens through the settings UI. Using MDM, you can limit what users are allowed to change.
@@ -36,8 +38,6 @@ Added in [Windows Holographic, version 20H2](hololens-release-notes.md#windows-h
 Added in [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2):
 
 - [RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly) policy enables the Microsoft Store app to be configured to only show the private store configured for your organization, limiting access to only the apps you’ve made available.
-
-Find more details on policy options in the HoloLens supported [Policy CSPs](/windows/client-management/mdm/policy-csps-supported-by-hololens2)
 
 ## Hardware restrictions
 
