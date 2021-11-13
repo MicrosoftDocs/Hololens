@@ -7,9 +7,9 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/13/2021
+ms.date: 11/12/2021
 ms.reviewer: aboeger
-manager: yannisle
+manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -57,3 +57,11 @@ Added in [Windows Holographic, version 20H2](hololens-release-notes.md#windows-h
 
 - [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery) Set amount of time until display turns off, and by turning off the display, locks the device.
 - [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin) Set amount of time until display turns off, and by turning off the display, locks the device.
+
+## Policy interactions and expectations
+
+Some polices interact well and some can have complications. Here's some examples:
+
+- If you apply provision packages using a USB during OOBE, an one of them applies [System/AllowStorageCard](/windows/client-management/mdm/policy-csp-system#system-allowstoragecard), no more polices will be applied from your USB as it can no longer be read.
+- If you set [Connectivity/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) you will still be able to use USB Microphones and Ethernet adapters.
+- If you set [System/AllowStorageCard](/windows/client-management/mdm/policy-csp-system#system-allowstoragecard) you will still be able to use Ethernet adapters.
