@@ -11,7 +11,6 @@ ms.topic: article
 audience: ITPro
 ms.prod: hololens
 ms.sitesec: library
-ms.localizationpriority: high
 ms.reviewer: skerawa
 manager: skerawa
 appliesto:
