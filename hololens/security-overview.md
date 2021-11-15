@@ -17,6 +17,8 @@ appliesto:
 
 # Security overview
 
+  ![Security overview hero image](.\images\security-overview-hero.png)
+
 The HoloLens 2 security architecture has been designed to provide advanced, innovative security and privacy protection, end-to-end. Security capabilities of the HoloLens 2 meets the challenges of a modern threat landscape and its associated risks. Here, we answer common questions and share different ways to secure Microsoft HoloLens 2 devices.
 
 With HoloLens 2, businesses and customers have a truly modern and cutting-edge operating system with a strong built-in security framework. This contemporary operating system allows developers to design, build, and deliver applications with an exceptional security strategy, that effectively combat a complex threat landscape and its associated risks. With HoloLens, you’ll use the built-in power and security of both Microsoft Azure and Microsoft Edge. HoloLens is designed and manufactured to mitigate exposure to any risks.
