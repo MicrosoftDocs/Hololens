@@ -31,7 +31,7 @@ We hope this article inspires you to think of all the ways in which mixed realit
 
 ## HoloLens 2 Return on Investment
 
-The commissioned [Forrester Consulting TEI study on HoloLens 2](https://download.microsoft.com/download/e/1/3/e1364937-5f62-4a0c-bb9e-664c270ad4fe/Forrester-Total-Economic-Impact-Mixed-Reality-Microsoft-HoloLens-2_Cover.pdf) estimates the following benefits:
+The commissioned [Forrester Consulting TEI study on HoloLens 2](https://download.microsoft.com/download/e/1/3/e1364937-5f62-4a0c-bb9e-664c270ad4fe/Forrester-Total-Economic-Impact-Mixed-Reality-Microsoft-HoloLens-2_Cover.pdf) estimates the following benefits to adopting HoloLens:
 
 
 ![HoloLens 2 Return on Investment](./images/forrester-info-graph.png)
