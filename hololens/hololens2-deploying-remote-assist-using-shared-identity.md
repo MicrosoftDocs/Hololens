@@ -1,6 +1,7 @@
 ---
 title: Deploying Remote Assist using a shared identity across multiple users
 description: This article contains high level steps involved in deploying Remote Assist using shared Azure AD identity across multiple users. The guidance provided in this document focuses on provisioning Azure AD user accounts, assigning required licenses and HoloLens 2 device configuration for a shared device environment. For more detailed scenario-based deployment guidance refer to [Common Deployment Scenarios](hololens-requirements.md).
+ms.prod: hololens
 author: MuruganandamDevarajan
 ms.author: murugand
 ms.date: 11/15/2021
@@ -22,15 +23,15 @@ This article contains high level steps involved in deploying Remote Assist using
 Create Azure AD security groups and shared Azure AD user accounts to be used to login to HoloLens 2 devices.
 
 1. Login to [Azure AD admin center](https://aad.portal.azure.com/) as Azure AD Global Administrator.
-1. Navigate to [New Group - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/AddGroupBlade) blade and create an Azure AD **Security** Group to manage the HoloLens 2 shared user accounts. See [Create a basic group and add members - Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) for step-by-step instructions.
-1. Navigate to [New user - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers) blade and create new user accounts to be shared by multiple people to log in to the HoloLens 2 device. One Azure AD user account per HoloLens 2 device is recommended. See [Add or delete users - Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory) for step-by-step instructions.
-1. Navigate to [Groups - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups), select the ***Azure AD security group name* -> Members -> + Add members** and add the above user accounts to the security group. See [Add or remove group members - Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) for step-by-step instructions.
+1. Navigate to [New Group admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/AddGroupBlade) blade and create an Azure AD **Security** Group to manage the HoloLens 2 shared user accounts. See [Create a basic group and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) for step-by-step instructions.
+1. Navigate to [New user - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers) blade and create new user accounts to be shared by multiple people to log in to the HoloLens 2 device. One Azure AD user account per HoloLens 2 device is recommended. See [Add or delete users](/azure/active-directory/fundamentals/add-users-azure-active-directory) for step-by-step instructions.
+1. Navigate to [Groups - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups), select the ***Azure AD security group name* -> Members -> + Add members** and add the above user accounts to the security group. See [Add or remove group members](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) for step-by-step instructions.
 
 ### 2. License Assignments
 
 Assign required licenses to the Azure AD user accounts.
 
-1. You can assign licenses required to use Dynamics 365 Remote Assist on HoloLens 2 to a user or user group. To assign licenses to a user group follow [Assign licenses to a group - Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign) step-by-step guide to assign the following licenses. To assign licenses to a user follow [Assign licenses to users - Microsoft 365 admin](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) step-by-step guide to assign the following licenses.
+1. You can assign licenses required to use Dynamics 365 Remote Assist on HoloLens 2 to a user or user group. To assign licenses to a user group follow [Assign licenses to a group](/azure/active-directory/enterprise-users/licensing-groups-assign) step-by-step guide to assign the following licenses. To assign licenses to a user follow [Assign licenses to users - Microsoft 365 admin](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) step-by-step guide to assign the following licenses.
     - Dynamics 365 Remote Assist
     - Microsoft Teams
     - Common Data Service for Remote Assist
@@ -58,7 +59,7 @@ See [Share your HoloLens with multiple people](hololens-multiple-users.md) for m
 #### Auto Login
 
 You can also use AutoLogonUser policy to automatically log in to the device with an identity tied to that device. This bypasses the HoloLens 2 login experience, and the user will be able to pick up the device and start using the device straight away.
-See [Auto login policy controlled by CSP](hololens-release-notes#auto-login-policy-controlled-by-csp.md) for more details.
+See [Auto login policy controlled by CSP](hololens-release-notes.md#auto-login-policy-controlled-by-csp) for more details.
 
 #### Kiosk Mode
 
