@@ -60,7 +60,7 @@ Added in [Windows Holographic, version 20H2](hololens-release-notes.md#windows-h
 
 ## Policy interactions and expectations
 
-Some polices interact well and some can have complications. Here's some examples:
+Some polices interact well and some can have complications. Here are some examples:
 
 - If you apply provision packages using a USB during OOBE, an one of them applies [System/AllowStorageCard](/windows/client-management/mdm/policy-csp-system#system-allowstoragecard), no more polices will be applied from your USB as it can no longer be read.
 - If you set [Connectivity/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) you will still be able to use USB Microphones and Ethernet adapters.
