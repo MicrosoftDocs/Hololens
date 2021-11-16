@@ -27,13 +27,13 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 ## Windows Holographic, version 21H2 - November 2021 Update
 
-- Build 20348.2300
+- Build 20348.1438
 
 Improvements and fixes in the update:
 
 - Fixed a known issue where [every time the power goes to 18 percent, the device suddenly shuts down automatically](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically).
 - Micro QR codes which were oriented at 45/135deg were not detected often enough or not detected at all. This issue is addressed and now they are detected reliably.
-- Cleans up HoloLens release identifiers in Settings pages.
+- Removed the HoloLens release identifier "Version" in Settings pages as it isn't uniquely descriptive to identity the OS version your device is running. To verify your build, you should use Build Number in **Settings** -> **System** -> **About** screen.
 
 ## Windows Holographic, version 20H2 - November 2021 Update
 
