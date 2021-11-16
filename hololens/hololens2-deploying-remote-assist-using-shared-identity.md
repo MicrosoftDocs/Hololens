@@ -12,7 +12,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Deploying Remote Assist using a shared identity across multiple users - Overview
+# Deploying Remote Assist using a shared identity across multiple users
 
 This article contains high level steps involved in deploying Remote Assist using shared Azure AD identity across multiple users. The guidance provided in this document focuses on provisioning Azure AD user accounts, assigning required licenses and HoloLens 2 device configuration for a shared device environment. For more detailed scenario-based deployment guidance, refer to [Common Deployment Scenarios](hololens-requirements.md).
 
@@ -25,18 +25,18 @@ Create Azure AD security groups and shared Azure AD user accounts to be used to 
 1. Login to [Azure AD admin center](https://aad.portal.azure.com/) as Azure AD Global Administrator.
 1. Navigate to [New Group admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/AddGroupBlade) blade and create an Azure AD **Security** Group to manage the HoloLens 2 shared user accounts. See [Create a basic group and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) for step-by-step instructions.
 1. Navigate to [New user - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers) blade and create new user accounts to be shared by multiple people to log in to the HoloLens 2 device. One Azure AD user account per HoloLens 2 device is recommended. See [Add or delete users](/azure/active-directory/fundamentals/add-users-azure-active-directory) for step-by-step instructions.
-1. Navigate to [Groups - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups), select the ***Azure AD security group name* -> Members -> + Add members** and add the above user accounts to the security group. See [Add or remove group members](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) for step-by-step instructions.
+1. Navigate to [Groups - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups), select the ***Azure AD security group name** -> **Members** -> + **Add members** and add the above user accounts to the security group. See [Add or remove group members](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) for step-by-step instructions.
 
 ### 2. License Assignments
 
 Assign required licenses to the Azure AD user accounts.
 
-1. You can assign licenses required to use Dynamics 365 Remote Assist on HoloLens 2 to a user or user group. To assign licenses to a user group follow [Assign licenses to a group](/azure/active-directory/enterprise-users/licensing-groups-assign) step-by-step guide to assign the following licenses. To assign licenses to a user follow [Assign licenses to users - Microsoft 365 admin](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) step-by-step guide to assign the following licenses.
+1. You can assign licenses required to use Dynamics 365 Remote Assist on HoloLens 2 to a user or user group. To assign licenses to a user group follow [Assign licenses to a group](/azure/active-directory/enterprise-users/licensing-groups-assign) step-by-step guide to assign the following licenses. To assign licenses to a user follow [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) step-by-step guide to assign the following licenses.
     - Dynamics 365 Remote Assist
     - Microsoft Teams
     - Common Data Service for Remote Assist
 
-See [Requirements for Dynamics 365 Remote Assist - Dynamics 365 Mixed Reality](/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-app-user) for more details.
+See [Requirements for Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-app-user) for more details.
 
 1. To manage HoloLens 2 using Microsoft Endpoint Manager (Intune), follow [Assign Microsoft Intune licenses](/mem/intune/fundamentals/licenses-assign) step-by-step guide to assign the following licenses.
     - Microsoft Intune
@@ -65,11 +65,11 @@ See [Auto login policy controlled by CSP](hololens-release-notes.md#auto-login-p
 
 For shared HoloLens 2 devices, Kiosk mode is recommended to control which applications are shown in Start menu when a user signs-in to HoloLens. By just allowing only required apps like Remote Assist, you can restrict users signing into the user account settings page using Edge browser by SSO and access user account details inside HoloLens 2 device.
 
-##### A. If you use Microsoft Endpoint Manager (Intune) to manage the devices:
+##### A. If you use Microsoft Endpoint Manager (Intune) to manage the devices
 
 Navigate to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), and create a single or multiple app kiosk mode configuration in [Devices | Configuration profiles](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) blade.
 
-##### B. If you use Provisioning Packages to manage the devices:
+##### B. If you use Provisioning Packages to manage the devices
 
 Use Windows Configuration Designer to configure and deploy single or multiple app kiosk mode provisioning packages.
 See [Set up HoloLens as a kiosk](hololens-kiosk.md?tabs=intunecustom%2Cnonaadlogon#steps-in-configuring-kiosk-mode-for-hololens) for more details.
