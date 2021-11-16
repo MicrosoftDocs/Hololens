@@ -38,7 +38,7 @@ ISVs that build their mixed reality solutions on Azure are larger and more profi
 
 The commissioned [Forrester Consulting TEI study on HoloLens 2](https://download.microsoft.com/download/e/1/3/e1364937-5f62-4a0c-bb9e-664c270ad4fe/Forrester-Total-Economic-Impact-Mixed-Reality-Microsoft-HoloLens-2_Cover.pdf) estimates the following benefits to adopting HoloLens:
 
-![HoloLens 2 Return on Investment](./images/forrester-info-graph.png)
+:::image type="content" alt-text="HoloLens 2 Forrester Info Graph" source="./images/forrester-info-graph.png":::
 
 Over half of Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
 
