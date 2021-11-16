@@ -30,14 +30,19 @@ We hope this article inspires you to think of all the ways in which mixed realit
 
 ## HoloLens 2 Return on Investment
 
-The commissioned [Forrester Consulting TEI study on HoloLens 2](https://download.microsoft.com/download/e/1/3/e1364937-5f62-4a0c-bb9e-664c270ad4fe/Forrester-Total-Economic-Impact-Mixed-Reality-Microsoft-HoloLens-2_Cover.pdf) estimates the following benefits to adopting HoloLens:
+ISVs that build their mixed reality solutions on Azure are larger and more profitable.
 
+*    264% higher mixed reality practice revenues
+*    28% more mixed reality customers
+*    15% higher mixed reality software gross margins
+
+The commissioned [Forrester Consulting TEI study on HoloLens 2](https://download.microsoft.com/download/e/1/3/e1364937-5f62-4a0c-bb9e-664c270ad4fe/Forrester-Total-Economic-Impact-Mixed-Reality-Microsoft-HoloLens-2_Cover.pdf) estimates the following benefits to adopting HoloLens:
 
 ![HoloLens 2 Return on Investment](./images/forrester-info-graph.png)
 
 Over half of Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
 
-![HoloLens 2 Company ROIs](./images/company-rois.png)
+:::image type="content" alt-text="HoloLens 2 Company ROIs" source="./images/company-rois.png":::
 
 ## HoloLens 2 capabilities
 
