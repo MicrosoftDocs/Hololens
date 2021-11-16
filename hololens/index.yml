@@ -76,6 +76,8 @@ landingContent:
             url: hololens2-corp-connected-overview.md
           - text: Deployment Guide - Offline secure
             url: hololens-common-scenarios-offline-secure.md
+          - text: Deployment Guide - Shared HoloLens 2 with Remote Assist
+            url: hololens2-deploying-remote-assist-using-shared-identity.md         
 
  # Card
   - title: Mixed Reality Partner Resources
