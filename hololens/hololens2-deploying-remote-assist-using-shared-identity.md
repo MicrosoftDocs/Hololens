@@ -25,7 +25,7 @@ Create Azure AD security groups and shared Azure AD user accounts to be used to 
 1. Login to [Azure AD admin center](https://aad.portal.azure.com/) as Azure AD Global Administrator.
 1. Navigate to [New Group admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/AddGroupBlade) blade and create an Azure AD **Security** Group to manage the HoloLens 2 shared user accounts. See [Create a basic group and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) for step-by-step instructions.
 1. Navigate to [New user - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers) blade and create new user accounts to be shared by multiple people to log in to the HoloLens 2 device. One Azure AD user account per HoloLens 2 device is recommended. See [Add or delete users](/azure/active-directory/fundamentals/add-users-azure-active-directory) for step-by-step instructions.
-1. Navigate to [Groups - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups), select the ***Azure AD security group name** -> **Members** -> + **Add members** and add the above user accounts to the security group. See [Add or remove group members](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) for step-by-step instructions.
+1. Navigate to [Groups - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups), select the *Azure AD security group name* -> **Members** -> + **Add members** and add the above user accounts to the security group. See [Add or remove group members](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) for step-by-step instructions.
 
 ### 2. License Assignments
 
@@ -36,7 +36,7 @@ Assign required licenses to the Azure AD user accounts.
     - Microsoft Teams
     - Common Data Service for Remote Assist
 
-See [Requirements for Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-app-user) for more details.
+    See [Requirements for Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-app-user) for more details.
 
 1. To manage HoloLens 2 using Microsoft Endpoint Manager (Intune), follow [Assign Microsoft Intune licenses](/mem/intune/fundamentals/licenses-assign) step-by-step guide to assign the following licenses.
     - Microsoft Intune
