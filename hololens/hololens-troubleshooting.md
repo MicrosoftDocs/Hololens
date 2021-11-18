@@ -3,11 +3,10 @@ title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
 author: evmill
 ms.author: v-evmill
-ms.date: 11/1/2021
+ms.date: 11/18/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
-ms.localizationpriority: medium
 manager: ranjibb
 ms.custom: 
 - CI 111456
@@ -24,18 +23,20 @@ This article describes how to resolve several common HoloLens issues.
 
 <a id="list"></a>
 
-**Known Issues**
-- [Insider fix - Every time the power goes to 18 percent, the device suddenly shuts down automatically](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+**Fixed Known Issues**
+- [**Fixed** - Every time the power goes to 18 percent, the device suddenly shuts down automatically](#fixed---every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [**Fixed** - OneDrive UWP app doesn't work for Azure AD users](#fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users)
+- [**Fixed** - Remote Assist video freezes after 20 minutes](#fixed---remote-assist-video-freezes-after-20-minutes)
+- [**Fixed** - Downloading locked files doesn't show error](#fixed---downloading-locked-files-doesnt-error)
+- [**Fixed** - Device Portal file upload/download times out](#fixed---device-portal-file-uploaddownload-times-out)
+
+**Known Issues**
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
 - [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
 - [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
-- [**Fixed** - Remote Assist video freezes after 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
-- [**Fixed** - Downloading locked files doesn't show error](#downloading-locked-files-doesnt-error)
-- [**Fixed** - Device Portal file upload/download times out](#device-portal-file-uploaddownload-times-out)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive doesn't automatically upload pictures](#onedrive-doesnt-automatically-upload-pictures)
 
@@ -60,10 +61,10 @@ This article describes how to resolve several common HoloLens issues.
 - [USB-C Microphone isn't working](#usb-c-microphone-isnt-working)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
 
-## Every time the power goes to 18 percent, the device suddenly shuts down automatically
+## **Fixed** - Every time the power goes to 18 percent, the device suddenly shuts down automatically
 
 > [!NOTE]
-> There is a fix for this issue available in [Windows Insiders.](hololens-insider.md)
+> There was fixed in [Windows Holographic, version 21H2 - November 2021 Update](hololens-release-notes.md#windows-holographic-version-21h2---november-2021-update)
 
 There is a known known issue where when the device reaches 18% battery, it will unexpectedly shut down. This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
 
@@ -75,7 +76,7 @@ There is a known known issue where when the device reaches 18% battery, it will 
 
 [Back to list](#list)
 
-## Fixed - OneDrive UWP app doesn't work for Azure AD users
+## **Fixed** - OneDrive UWP app doesn't work for Azure AD users
 
 > [!NOTE]
 > This issue resolved in app version 19.23.17. If you still experience the same sign in issue while using app version 19.23.17 or later, please [send Feedback](hololens-feedback.md) then [contact support](https://aka.ms/hololenssupport) and share the Feedback item URL.
@@ -92,6 +93,51 @@ If you are experiencing this issue, try one of the following:
 
 - Users can directly access OneDrive For Business from Microsoft Edge, and interact with their files the website from their browser.
 - Users can install the OneDrive PWA app to HoloLens by downloading it from Microsoft Edge. This will allow users to view and manage files on the device again. Read and follow these [instructions for installing the OneDrive PWA app on your HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
+
+[Back to list](#list)
+
+## **Fixed** - Remote Assist video freezes after 20 minutes
+
+> [!NOTE]
+> There is a newer version of Remote Assist which has a fix for this issue. Please [update Remote Assist](holographic-store-apps.md#update-apps) to the latest version to avoid this issue.
+
+> [!NOTE]
+> Due to this Known Issue's severity we had temporarily paused the availability of Windows Holographic, version 21H1. The 21H1 build is now available again, so devices may once again be updated to the latest 21H1 build.
+
+On the latest release of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), some users of Remote Assist have experienced video freezing during calls over 20 minutes. This is a **known issue**.
+
+### Workarounds
+
+If you are unable to update Remote Assist to a newer build try the following work around.
+
+#### Restart in between calls
+
+If your calls are going over a length of 20 minutes and you are experiencing this issue, try rebooting your device. Rebooting your device between Remote Assist calls will refresh your device and put it back into a good state.
+
+To quickly restart a device on [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) open the start menu, and select the user icon, then select **Restart**.
+
+[Back to list](#list)
+
+## **Fixed** - Downloading locked files doesn't error
+
+> [!NOTE]
+> This is a **known issue** that was fixed in [Windows Holographic, version 21H1 - July 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update).
+
+In previous builds of Windows Holographic, when attempting to download a locked file, the result would be an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
+
+[Back to list](#list)
+
+## **Fixed** - Device Portal file upload/download times out
+> [!NOTE]
+> This is a **known issue** that was fixed in [Windows Holographic, version 21H1 - July 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update). If you previously disabled SSL Connection as part of the workaround, we highly recommend you re-enable it.
+
+Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#fixed---downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
+
+### Workaround
+
+This workaround, which applies equally to Wi-Fi and UsbNcm, is to disable the "required" option under "SSL Connection". To do so, navigate to Device Portal, **System**, and select the **Preferences** page. In the **Device Security** section, locate **SSL Connection**, and uncheck to disable **Required**.
+
+The user should then go to http://, not https:// (IP address) and features like file upload and download will work.
 
 [Back to list](#list)
 
@@ -126,28 +172,6 @@ You can check which version of Microsoft Edge you have by using the Microsoft St
 ### Work around
 
 The current fix is in version 96, which is available to users who have enrolled in Microsoft Edge Insiders. This is different than enrolling your device as a Windows Insider. Read these instructions for details on [how to enroll into Edge’s insider program.](hololens-new-edge.md#microsoft-edge-insider-channels)
-
-## Remote Assist video freezes after 20 minutes
-
-> [!NOTE]
-> There is a newer version of Remote Assist which has a fix for this issue. Please [update Remote Assist](holographic-store-apps.md#update-apps) to the latest version to avoid this issue.
-
-> [!NOTE]
-> Due to this Known Issue's severity we had temporarily paused the availability of Windows Holographic, version 21H1. The 21H1 build is now available again, so devices may once again be updated to the latest 21H1 build.
-
-On the latest release of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), some users of Remote Assist have experienced video freezing during calls over 20 minutes. This is a **known issue**.
-
-### Workarounds
-
-If you are unable to update Remote Assist to a newer build try the following work around.
-
-#### Restart in between calls
-
-If your calls are going over a length of 20 minutes and you are experiencing this issue, try rebooting your device. Rebooting your device between Remote Assist calls will refresh your device and put it back into a good state.
-
-To quickly restart a device on [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) open the start menu, and select the user icon, then select **Restart**.
-
-[Back to list](#list)
 
 ## Auto-login asks for log-in
 
@@ -196,29 +220,6 @@ Work-arounds:
 This does not affect:
 
 - Users who choose to use a personal account.
-
-[Back to list](#list)
-
-## Downloading locked files doesn't error
-
-> [!NOTE]
-> This is a **known issue** that was fixed in [Windows Holographic, version 21H1 - July 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update).
-
-In previous builds of Windows Holographic, when attempting to download a locked file, the result would be an HTTP error page. In the Windows Holographic, version 21H1 update, trying to download a locked file results in nothing visible happening—the file doesn’t download and there’s no error.
-
-[Back to list](#list)
-
-## Device Portal file upload/download times out
-> [!NOTE]
-> This is a **known issue** that was fixed in [Windows Holographic, version 21H1 - July 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update). If you previously disabled SSL Connection as part of the workaround, we highly recommend you re-enable it.
-
-Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
-
-### Workaround
-
-This workaround, which applies equally to Wi-Fi and UsbNcm, is to disable the "required" option under "SSL Connection". To do so, navigate to Device Portal, **System**, and select the **Preferences** page. In the **Device Security** section, locate **SSL Connection**, and uncheck to disable **Required**.
-
-The user should then go to http://, not https:// (IP address) and features like file upload and download will work.
 
 [Back to list](#list)
 
