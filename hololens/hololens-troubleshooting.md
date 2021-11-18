@@ -63,7 +63,7 @@ This article describes how to resolve several common HoloLens issues.
 ## **Fixed** - Every time the power goes to 18 percent, the device suddenly shuts down automatically
 
 > [!NOTE]
-> There is a fix for this issue available in [Windows Insiders.](hololens-insider.md)
+> There was fixed in [Windows Holographic, version 21H2 - November 2021 Update](hololens-release-notes.md#windows-holographic-version-21h2---november-2021-update)
 
 There is a known known issue where when the device reaches 18% battery, it will unexpectedly shut down. This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
 
@@ -127,7 +127,7 @@ You can check which version of Microsoft Edge you have by using the Microsoft St
 
 The current fix is in version 96, which is available to users who have enrolled in Microsoft Edge Insiders. This is different than enrolling your device as a Windows Insider. Read these instructions for details on [how to enroll into Edge’s insider program.](hololens-new-edge.md#microsoft-edge-insider-channels)
 
-## Remote Assist video freezes after 20 minutes
+## **Fixed** - Remote Assist video freezes after 20 minutes
 
 > [!NOTE]
 > There is a newer version of Remote Assist which has a fix for this issue. Please [update Remote Assist](holographic-store-apps.md#update-apps) to the latest version to avoid this issue.
@@ -212,7 +212,7 @@ In previous builds of Windows Holographic, when attempting to download a locked 
 > [!NOTE]
 > This is a **known issue** that was fixed in [Windows Holographic, version 21H1 - July 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update). If you previously disabled SSL Connection as part of the workaround, we highly recommend you re-enable it.
 
-Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
+Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#fixed---downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
 
 ### Workaround
 
