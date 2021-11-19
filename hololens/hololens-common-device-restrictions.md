@@ -7,9 +7,9 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/13/2021
+ms.date: 11/12/2021
 ms.reviewer: aboeger
-manager: yannisle
+manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -18,6 +18,8 @@ appliesto:
 # Common Device Restrictions
 
 This guide helps IT professionals understand the more commonly used management options available for the Windows 10 Holographic OS in the enterprise. Please consult your MDM system documentation to understand how these policies are enabled by your MDM vendor. Not all MDM systems support every setting described in this guide. Some support custom policies through OMA-URI XML files. See [Microsoft Intune support for Custom Policies](/mem/intune/configuration/custom-settings-windows-10). Naming conventions may also vary among MDM vendors.
+
+Find more details on policy options in the HoloLens supported [Policy CSPs](/windows/client-management/mdm/policy-csps-supported-by-hololens2)
 
 ## Prevent changing of settings
 
@@ -37,8 +39,6 @@ Added in [Windows Holographic, version 21H2](hololens-release-notes.md#windows-h
 
 - [RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly) policy enables the Microsoft Store app to be configured to only show the private store configured for your organization, limiting access to only the apps you’ve made available.
 
-Find more details on policy options in the HoloLens supported [Policy CSPs](/windows/client-management/mdm/policy-csps-supported-by-hololens2)
-
 ## Hardware restrictions
 
 Windows 10 Holographic devices use state-of-the-art technology that includes popular hardware features such as cameras, microphones, speakers, USB interfaces, Bluetooth interfaces, and Wi-Fi. You can use hardware restrictions to control the availability of these features.
@@ -57,3 +57,11 @@ Added in [Windows Holographic, version 20H2](hololens-release-notes.md#windows-h
 
 - [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery) Set amount of time until display turns off, and by turning off the display, locks the device.
 - [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin) Set amount of time until display turns off, and by turning off the display, locks the device.
+
+## Policy interactions and expectations
+
+Some policies interact well and some can have complications. Here are some examples:
+
+- If you apply provision packages using a USB during OOBE, and one of them applies [System/AllowStorageCard](/windows/client-management/mdm/policy-csp-system#system-allowstoragecard), no more policies will be applied from your USB as it can no longer be read.
+- If you set [Connectivity/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) you will still be able to use USB Microphones and Ethernet adapters.
+- If you set [System/AllowStorageCard](/windows/client-management/mdm/policy-csp-system#system-allowstoragecard) you will still be able to use Ethernet adapters.
