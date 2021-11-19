@@ -84,7 +84,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **United States** | Insight North America | Jake Poirier <jake.poirier@insight.com> | [Buy HoloLens 2 - Insight North America](https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight North America](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) | 
 | | SHI International Corp. | Kevin English <kevin_english@SHI.com>  <HoloLens@SHI.com> | [Buy HoloLens 2 - SHI International Corp.](https://www.shi.com/hololens) |  | 
 | | *Rental Partner!* Hartford Technology | Mark Ferro <mferro@hartfordrents.com> | [Buy HoloLens 2 - Rental Partner! Hartford Technology](https://hartfordrents.com/product/hololens-2-rental/) |  | 
-| | CDW | Matt Sinason <mattsin@cdw.com>| [Buy HoloLens 2 - CDW](https://www.cdw.com/search/Electronics/Video-Games/VR-Headsets/?lfr=1&w=EP2&key=HoloLens&SortBy=PriceDesc) | [Buy HoloLens 2 - CDW](https://www.cdw.com/search/Electronics/Video-Games/VR-Headsets/?lfr=1&w=EP2&key=HoloLens&SortBy=PriceDesc) |
+| | CDW | Matt Sinason <mattsin@cdw.com>| [Buy HoloLens 2 - CDW](https://www.cdw.com/search/Electronics/Video-Games/VR-Headsets/?lfr=1&w=EP2&key=HoloLens&SortBy=PriceDesc) | [Buy HoloLens 2 Industrial Edition - CDW](https://www.cdw.com/product/microsoft-hololens-2-industrial-edition-smart-glasses-64-gb/6711269?pfm=srh) |
 
 ### **EMEA**
 
