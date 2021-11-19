@@ -41,7 +41,7 @@ The following table compares different collection methods. The method names link
 |[DiagnosticLog CSP](#diagnosticlog-csp) |Network connection<br /><br />MDM environment that supports the DiagnosticLog CSP |Administrator configures storage locations |In the managed environment, the user implicitly consents to administrator access to the data.<br /><br />Administrator configures access roles and permissions. | Data is retained in the cloud storage and Administrator configures retention policy. |
 |[Offline diagnostics](#offline-diagnostics) |Device configuration:<ul><li>Powered on and connected to computer</li><li>Power and Volume buttons functioning</li></ul> |HoloLens device<br /><br />Connected computer |The user stores the data, and only the user accesses the data (unless the user specifically shares the data with another user). |The data is retained on device until the user deletes it. |
 
-* The end user is responsible for sharing the logs responsibly with someone else. These files are primarily useful when contacting customer service and support.  
+- The end user is responsible for sharing the logs responsibly with someone else. These files are primarily useful when contacting customer service and support.  
 
 ## Feedback Hub
 
@@ -86,7 +86,8 @@ A user can also configure the behavior of Fallback Diagnostics from the **Settin
 
 ### OS Update Troubleshooter
 
-On builds [Windows Holographic, version 21H1 ](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
+On builds [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
+
 - In addition to the previous troubleshooters within the Settings app, a new troubleshooter has been added with the addition of the new Settings app for OS Updates. Navigate to **Settings -> Update & Security -> Troubleshoot -> Windows Update** and select **Start**. This allows you to collect traces while reproducing your issue with OS Updates to assist better in troubleshooting with your IT or support.
 
 ### Prerequisites
@@ -115,6 +116,7 @@ To view the MDM Diagnostics on HoloLens 2, select your WiFi icon, then navigate 
 In a Mobile Device Management (MDM) environment, the IT administrator can use the [DiagnosticLog configuration service provider (CSP)](/windows/client-management/mdm/diagnosticlog-csp) to configure diagnostic settings on enrolled HoloLens devices. The IT administrator can configure these settings to collect logs from enrolled devices.
 
 See more:
+
 - [Collect diagnostics from a Windows device](/mem/intune/remote-actions/collect-diagnostics)
 - [Intune Public Preview - Windows 10 Device diagnostics](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
 
@@ -142,12 +144,14 @@ This works when the device shows up in File Explorer after connecting it to a PC
 > [!NOTE]
 > Offline Diagnostics generation and management is controlled differently depending on your OS version. Previously it was controlled by the telemetry setting, but is now directly controlled via MDM policy. If disabled via either setting or MDM policy, then diagnostic logs cannot be collected using this mechanism.
 
-Behavior prior to [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
- - Offline diagnostics is only enabled when user is either going through OOBE or [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) policy value is set to Full (Basic is default value on HoloLens). 
+Behavior prior to [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2):
+
+- Offline diagnostics is only enabled when user is either going through OOBE or [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) policy value is set to Full (Basic is default value on HoloLens).
 - To disable Offline diagnostics, go to **Settings App > Privacy** page and select **Basic** in **Diagnostic Data**. On builds where offline diagnostics depends on telemetry setting, it only impacts whether any logs are collected or not. It does not impact what files are collected.
 - If device is locked then logs won't appear.
 
-On builds [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) and onwards:
+On builds [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) and onwards:
+
 - When Fallback Diagnostics is enabled will be controlled by specific MDM policy with corresponding setting [MixedReality/FallbackDiagnostics](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
 - If device is locked then logs won't appear.
 
@@ -157,19 +161,19 @@ Watch this video to learn more.
 
 Follow these steps to collect diagnostics:
 
-1.	Connect the device with a USB cable to your PC.
+1. Connect the device with a USB cable to your PC.
 
-2.	In File Explorer on your PC, navigate to **'This PC\<hololens-device>\Internal Storage'**.
+2. In File Explorer on your PC, navigate to **'This PC\<hololens-device>\Internal Storage'**.
 
-3.	If the **Internal Storage** folder does not show up, the device is waiting for a user to sign in. Either sign-in or power cycle the device by holding the POWER button down for 10 seconds.
+3. If the **Internal Storage** folder does not show up, the device is waiting for a user to sign in. Either sign-in or power cycle the device by holding the POWER button down for 10 seconds.
 
-4.	Press and immediately release the **Power + Volume Down** buttons together.
+4. Press and immediately release the **Power + Volume Down** buttons together.
 
-5.	Wait a minute for the device to prepare the zip archives. (A temporary file named HololensDiagnostics.temp may become visible while the device generates the zip archives. Do not access or save that file. When the process finishes it will be replaced by the zip archives.)
+5. Wait a minute for the device to prepare the zip archives. (A temporary file named HololensDiagnostics.temp may become visible while the device generates the zip archives. Do not access or save that file. When the process finishes it will be replaced by the zip archives.)
 
-6.	Refresh file explorer, and navigate to the **'\Documents'** folder.
+6. Refresh file explorer, and navigate to the **'\Documents'** folder.
 
-7.	Copy the diagnostics ZIP files and share them with the Microsoft support team.
+7. Copy the diagnostics ZIP files and share them with the Microsoft support team.
 
 > [!NOTE]
 > Some of the diagnostics ZIP files may contain PII.

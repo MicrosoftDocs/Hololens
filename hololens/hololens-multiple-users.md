@@ -84,7 +84,7 @@ To use HoloLens, each user follows these steps:
 1. Use your Azure AD account credentials to sign in to the device.  
     - If it's the first time you have used the device, it will ask you to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
     - If you previously used the device:
-        - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
+        - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes-2004.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
         - Previous builds will need manual calibration to adjust to your eyes.
 
 > [!TIP]

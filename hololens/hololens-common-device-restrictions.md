@@ -28,7 +28,7 @@ The following lists commonly used MDM settings that Windows 10 Holographic suppo
 - [Allow Manual WiFi Configuration:](/windows/client-management/mdm/policy-csp-wifi#wifi-allowmanualwificonfiguration) Allows users to make Wi-Fi connections outside of MDM provisioned networks
 - [Allow Manual MDM Unenrollment](/windows/client-management/mdm/policy-csp-experience#experience-allowmanualmdmunenrollment) Whether users are allowed to delete the workplace account (i.e., unenroll the device from the MDM system)
 
-Added in [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) for HoloLens 2 devices:
+Added in [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) for HoloLens 2 devices:
 
 - [Allow Add Provisioning Package:](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage) Toggle if users can add new provisioning packages, overwriting with new values.
 - [Allow Remove Provisioning Package:](/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) Toggle if users can remove provisioning packages, allowing them to toggle previously locked settings.
@@ -53,7 +53,7 @@ The following lists commonly used MDM settings that Windows 10 Holographic suppo
 - [Restrict Camera:](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesscamera) Specifies whether Windows apps can access the camera.
 - [Restrict Microphones:](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmicrophone) Specifies whether Windows apps can access the microphone.
 
-Added in [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) for HoloLens 2 devices:
+Added in [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) for HoloLens 2 devices:
 
 - [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery) Set amount of time until display turns off, and by turning off the display, locks the device.
 - [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin) Set amount of time until display turns off, and by turning off the display, locks the device.

@@ -83,7 +83,7 @@ If a user has taken an update to one of the Insider flight, 20346.1466, and it d
 
 #### Who does this tend to affect
 
-Users who have been using their device without flashing it since [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004).
+Users who have been using their device without flashing it since [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004).
 
 #### Users who are typically unaffected
 
