@@ -42,7 +42,7 @@ Cloud-connected accounts (Azure AD and MSA) offer more features because they can
 > 1 - Azure AD Premium is not required to sign into the device. However, it is required for other features of a low touch cloud-based deployment, like Auto-enrollment and Autopilot.
 
 > [!NOTE]
-> 2- While a HoloLens 2 device can support up to 64 Azure AD accounts, only up to 10 of those accounts should enroll in Iris Authentication. This is aligned with other Biometric authentication options for Windows Hello for Business. While more than 10 accounts may be enrolled in Iris authentication this will increase the rate of false positives and is not recommended.
+> 2 - While a HoloLens 2 device can support up to 64 Azure AD accounts, only up to 10 of those accounts should enroll in Iris Authentication. This is aligned with other Biometric authentication options for Windows Hello for Business. While more than 10 accounts may be enrolled in Iris authentication this will increase the rate of false positives and is not recommended.
 
 > [!IMPORTANT]
 > 3 - A local account can only be set up on a device [via a provisioning package during OOBE](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup), it cannot be added later in the settings app. If you'd like to use a local account on a device that's already set up, you'll need to [reflash or reset the device.](hololens-recovery.md)
