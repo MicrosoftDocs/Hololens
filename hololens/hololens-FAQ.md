@@ -4,13 +4,13 @@ description: Do you have a quick question about HoloLens or interacting with hol
 keywords: hololens, faq, known issue, help
 ms.prod: hololens
 ms.sitesec: library
-author: Teresa-Motiv
-ms.author: v-tea
+author: beelia
+ms.author: v-beehanson
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: medium
 ms.date: 02/27/2020
-ms.reviewer: 
+ms.reviewer: v-evmill
 ms.custom: 
 - CI 114606
 - CSSTroubleshooting
