@@ -7,7 +7,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 01/26/2019
 ms.reviewer: 
 manager: laurawi

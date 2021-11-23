@@ -7,7 +7,7 @@ ms.sitesec: library
 author: qianw211
 ms.author: v-beehanson
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 10/20/2021
 audience: ITPro
 ms.reviewer: 
