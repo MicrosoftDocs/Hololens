@@ -4,6 +4,7 @@ description: Learn about the Microsoft HoloLens commercial features for business
 author: beelia
 ms.author: v-beehanson
 ms.date: 11/11/2021
+ms.localizationpriority:
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting

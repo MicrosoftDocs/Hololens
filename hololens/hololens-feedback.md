@@ -13,7 +13,7 @@ ms.prod: hololens
 ms.topic: article
 keywords: feedback, bug, issue, error, troubleshoot, help
 manager: ranjibb
-ms.localizationpriority: medium
+ms.localizationpriority:
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

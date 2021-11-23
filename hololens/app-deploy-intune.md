@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.topic: article
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority:
 audience: HoloLens
 manager: yannisle
 appliesto:

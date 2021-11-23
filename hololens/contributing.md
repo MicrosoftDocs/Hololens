@@ -4,6 +4,7 @@ description: Learn how to contribute to the HoloLens docs on the docs.microsoft.
 author: hferrone
 ms.author: v-beehanson
 ms.date: 10/29/2021
+ms.localizationpriority:
 ms.topic: article
 ms.prod: hololens
 ---

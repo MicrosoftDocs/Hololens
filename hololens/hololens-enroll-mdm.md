@@ -7,7 +7,7 @@ ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
 author: evmill
 ms.author: v-evmill
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 9/15/2021
 ms.reviewer: 
 manager: ranjibb
