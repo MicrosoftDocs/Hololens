@@ -32,16 +32,12 @@ Create Azure AD security groups and shared Azure AD user accounts to be used to 
 
 Assign required licenses to the Azure AD user accounts.
 
-<<<<<<< Updated upstream
-1. You can assign licenses required to use Dynamics 365 Remote Assist on HoloLens 2 to a user or user group. To assign licenses to a user group follow [Assign licenses to a group](/azure/active-directory/enterprise-users/licensing-groups-assign) step-by-step guide to assign the following licenses. To assign licenses to a user follow [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true) step-by-step guide to assign the following licenses.
-=======
 1. You can assign licenses required to use Dynamics 365 Remote Assist on HoloLens 2 to a user or user group. To assign licenses to a user group, follow [Assign licenses to a group](/azure/active-directory/enterprise-users/licensing-groups-assign) step-by-step guide to assign the following licenses. To assign licenses to a user follow [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) step-by-step guide to assign the following licenses.
->>>>>>> Stashed changes
     - Dynamics 365 Remote Assist
     - Microsoft Teams
     - Common Data Service for Remote Assist
 
-    For more information, see [Requirements for Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-app-user).
+For more information, see [Requirements for Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-app-user).
 
 1. To manage HoloLens 2 using Microsoft Endpoint Manager (Intune), follow [Assign Microsoft Intune licenses](/mem/intune/fundamentals/licenses-assign) step-by-step guide to assign the following licenses.
     - Microsoft Intune
