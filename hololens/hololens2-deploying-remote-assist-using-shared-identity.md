@@ -5,6 +5,7 @@ ms.prod: hololens
 author: MuruganandamDevarajan
 ms.author: murugand
 ms.date: 11/15/2021
+ms.localizationpriority:
 ms.topic: article
 audience: HoloLens 2
 keywords: HoloLens, shared device, deployment
