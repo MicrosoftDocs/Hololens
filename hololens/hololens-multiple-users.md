@@ -6,7 +6,7 @@ ms.sitesec: library
 author: qianw211
 ms.author: v-qianwen
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 9/23/2021
 ms.reviewer: anisgup
 manager: sean-kerawala

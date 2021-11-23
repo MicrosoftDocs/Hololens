@@ -12,7 +12,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority:
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
