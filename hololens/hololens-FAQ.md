@@ -8,7 +8,7 @@ author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 02/27/2020
 ms.reviewer: 
 ms.custom: 

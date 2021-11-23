@@ -12,7 +12,7 @@ ms.custom:
 - CI 115131
 - CSSTroubleshooting
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority:
 keywords: 
 manager: jarrettr
 appliesto:
