@@ -8,7 +8,7 @@ ms.date: 6/22/2020
 ms.prod: hololens
 ms.topic: article 
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority:
 audience: ITPro
 manager: yannisle
 appliesto:
@@ -60,7 +60,7 @@ For more information, visit [Holographic Store Apps](/hololens/holographic-store
 
 ## Install via Provisioning Packages
 
-[Provisioning Packages](app-deploy-provisioning-package.md) allow you to install custom or Line of Business apps, allowing IT pros and administrators to quickly install apps to a local device(s) via USB. This installation can be done without an internet connection and for any identity type.
+[Provisioning Packages](app-deploy-provisioning-package.md) allow you to install custom or Line of Business apps, allowing IT pros and administrators to install apps quickly to a local device(s) via USB. This installation can be done without an internet connection and for any identity type.
 
 Installing via Provisioning Packages is applicable for:
 
@@ -71,11 +71,11 @@ Installing via Provisioning Packages is applicable for:
 
 ## Install Apps on HoloLens 2 via App Installer
 
-Using the [App Installer](app-deploy-app-installer.md) users can have an experience that is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. This can be done without needing to enable Developer Mode or use Device Portal. This is a simple method of distributing a completely built app. Regardless of if you simply wish to demo your app to another user with a HoloLens, or you'd like to deploy your app this method works easily.
+Using the [App Installer](app-deploy-app-installer.md) users can have an experience that is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. This can be done without needing to enable Developer Mode or use Device Portal. This is a simple method of distributing a built app. This method works easily, whether you'd like to deploy your app or you simply want to demo your app to another user with a HoloLens.
 
 Installing via App Installer is applicable for:
 
-* Line of Business / Self developed (non-public) apps
+* Line of Business / Self-developed (non-public) apps
 * Side-load only
 * Does not require Developer mode or Device portal
 * Easy for end user to install

@@ -8,7 +8,7 @@ author: beelia
 ms.author: v-beehanson
 audience: ITPro
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 11/15/2021
 appliesto:
 - HoloLens 2

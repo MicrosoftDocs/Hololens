@@ -6,7 +6,7 @@ ms.sitesec: library
 author: evmill
 ms.author: v-evmill
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 11/12/2021
 ms.reviewer: aboeger
 manager: ranjibb
