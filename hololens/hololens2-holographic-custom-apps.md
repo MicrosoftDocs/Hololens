@@ -10,7 +10,7 @@ ms.sitesec: library
 author: qianw211
 ms.author: v-qianwen
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting

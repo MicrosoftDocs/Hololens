@@ -1,8 +1,8 @@
 ---
 title: HoloLens 2 cleaning FAQ
 description: Get up-to-date answers for all your commonly asked questions for cleaning and maintaining your HoloLens 2 device.
-author: Teresa-Motiv
-ms.author: v-tea
+author: evmill
+ms.author: v-evmill
 ms.date: 4/14/2020
 ms.prod: hololens
 ms.topic: article
@@ -10,7 +10,7 @@ ms.custom:
 - CI 115560
 - CSSTroubleshooting
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority:
 keywords: 
 manager: jarrettr
 appliesto:
