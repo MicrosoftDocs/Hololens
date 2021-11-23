@@ -4,6 +4,7 @@ description: Stay up to date on the most common solutions to HoloLens device iss
 author: evmill
 ms.author: v-evmill
 ms.date: 11/18/2021
+ms.localizationpriority:
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
