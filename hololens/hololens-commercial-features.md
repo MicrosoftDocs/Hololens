@@ -12,8 +12,8 @@ ms.topic: article
 audience: ITPro
 ms.prod: hololens
 ms.sitesec: library
-ms.reviewer: skerawa
-manager: skerawa
+ms.reviewer: sekerawa
+manager: sekerawa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, commercial, features, mdm, mobile device management, kiosk mode, applications, identity, Bitlocker, iris, Windows Hello, Azure-powered, Autopilot, mixed reality, WDAC
