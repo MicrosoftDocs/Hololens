@@ -12,7 +12,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.topic: article
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority:
 audience: ITPro
 manager: sekerawa
 appliesto:
