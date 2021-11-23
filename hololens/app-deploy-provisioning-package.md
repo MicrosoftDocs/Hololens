@@ -8,7 +8,7 @@ ms.date: 6/22/2020
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 audience: HoloLens
 manager: yannisle
 appliesto:
