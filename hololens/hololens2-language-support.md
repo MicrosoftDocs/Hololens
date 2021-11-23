@@ -3,8 +3,8 @@ title: Supported languages for HoloLens 2
 description: Learn about all the languages HoloLens 2 supports, changing keyboard layouts, and updating the Windows display language.
 ms.prod: hololens
 ms.sitesec: library
-author: Teresa-Motiv
-ms.author: v-tea
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority:
 ms.custom: 
