@@ -3,8 +3,8 @@ title: Set up HoloLens (1st gen)
 description: Learn how to set up your HoloLens (1st gen) for the first time over Wi-Fi network with either a Microsoft (MSA) or Azure Active Directory (AAD) account.
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
-author: Teresa-Motiv
-ms.author: v-tea
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.date: 8/12/2019
 manager: jarrettr
