@@ -70,7 +70,7 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 - Learn more about Help + support and service health of your [Azure mixed reality services](#azure-mixed-reality-services-support)
 - Create a support request for HoloLens 2 or Immersive headset programming at [MR support](https://aka.ms/mrsupport) 
 - Create a support request for HoloLens 2 device issues including hardware, usage & configuration at [HoloLens 2 device support](https://aka.ms/hlsupport) 
-
+- Learn about [Dynamics 365 support plans, technical support, and partner support](https://dynamics.microsoft.com/en-us/support/)
 
 ### Help with Commercial Store Support for your HoloLens 2
 
@@ -140,10 +140,6 @@ To open a technical support ticket on the Azure portal for Azure Spatial Anchors
     2. Fill out the form as precise and detailed as possible along with your preferred way to reach you.
 
     3. Review all the information you have filled in the previous sections and now submit the support request.
-
-### Learn about Dynamics 365 support options
-
-To get support for Dynamics 365 support plans, technical support, and partner support, see the [Dynamics 365 support page](https://dynamics.microsoft.com/en-us/support/).
 
 ### Provide documentation content feedback
 
