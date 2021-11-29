@@ -21,7 +21,7 @@ Here you will find the support options for the following options ensuring you ge
 - [Get help with purchasing a HoloLens 2 Device](#help-with-commercial-store-support-for-your-hololens-2)
 - [Get help with programming a HoloLens 2 Device or an Immersive Headset](#help-with-technical-support-for-your-hololens-2) 
 - [Get help with Azure mixed reality services](#azure-mixed-reality-services-support)
-- [Learn about Dynamics 365 support options](https://dynamics.microsoft.com/en-us/support/)
+- [Learn about Dynamics 365 support options](https://dynamics.microsoft.com/support/)
 
 ## Community help options
 
