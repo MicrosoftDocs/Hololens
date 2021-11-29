@@ -141,7 +141,7 @@ To open a technical support ticket on the Azure portal for Azure Spatial Anchors
 
     3. Review all the information you have filled in the previous sections and now submit the support request.
 
-## Learn about Dynamics 365 support options
+### Learn about Dynamics 365 support options
 
 To get support for Dynamics 365 support plans, technical support, and partner support, see the [Dynamics 365 support page](https://dynamics.microsoft.com/en-us/support/).
 
