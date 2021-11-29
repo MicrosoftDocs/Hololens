@@ -49,6 +49,9 @@ You can access photos and videos taken with HoloLens by:
 - uploading photos and videos to cloud storage by syncing your photos and videos to OneDrive.
 - using the Mixed Reality Capture page of the [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture).
 
+> [!TIP]
+> To determine how much free storage space is on your device, go to **Settings** > **System** > **Storage**.
+
 ### Photos app
 
 The Photos app is one of the default apps on the **Start** menu, and comes built-in with HoloLens. Learn more about [using the Photos app to view content](holographic-photos-and-videos.md).
