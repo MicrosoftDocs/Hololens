@@ -7,8 +7,8 @@ manager: laurawi
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 10/12/2021
+ms.localizationpriority:
+ms.date: 11/9/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -25,13 +25,31 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 > [!NOTE]
 > The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update to HoloLens 2 in October 2021](#windows-holographic-version-21h2), and we are working on more upcoming releases based on customer feedback.
 
+## Windows Holographic, version 21H2 - November 2021 Update
+
+- Build 20348.1438
+
+Improvements and fixes in the update:
+
+- Fixed a known issue where [every time the power goes to 18 percent, the device suddenly shuts down automatically](hololens-troubleshooting.md#fixed---every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically).
+- Micro QR codes which were oriented at 45/135deg were not detected often enough or not detected at all. This issue is addressed and now they are detected reliably.
+- Removed the HoloLens release identifier "Version" in Settings pages as it isn't uniquely descriptive to identity the OS version your device is running. To verify your build, you should use Build Number in **Settings** -> **System** -> **About** screen.
+
+## Windows Holographic, version 20H2 - November 2021 Update
+
+- Build 19041.1170
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H2.
+
 ## Windows Holographic, version 21H2
 
 - Build 20348.1432
 
 Windows Holographic, version 21H2 is now available and brings a great set of new features to HoloLens 2 users and IT professionals. This one’s about the improved troubleshooting and device reports, some fixed bugs in kiosk mode and the certificate viewer, the expanded manageability surface and the increased update reliability. A new flagship feature of this feature update coming to HoloLens is our Moving Platform Mode. Check out all the new great features for HoloLens 2!
 
-This latest release is a monthly update to version 21H1, but this time we are including new features, because of this the major build number will remain the same and Windows Update will indicate a monthly release to version 21H1 (build 20348). HoloLens 2 settings will still display 21H1 even though we're referring to this release as 21H2. To ensure you've received 21H2, please verify the version number is 20348.1432 or higher. You can look at your Build Number in your Settings > About screen to confirm you are on the latest available build 20348.1432+.
+This latest release is a monthly update to version 21H1, but this time we are including new features, because of this the major build number will remain the same and Windows Update will indicate a monthly release to version 21H1 (build 20348). To ensure you've received 21H2, please verify the version number is 20348.1432 or higher. You can look at your Build Number in your **Settings** -> **System** -> **About** screen to confirm you are on the latest available build 20348.1432+.
 
 To update to the latest release, open the Settings app, go to Update & Security, and tap Check for Updates. For more information on how to manage HoloLens updates, visit [Manage HoloLens updates.](hololens-updates.md)
 
@@ -259,8 +277,8 @@ You can now use WDAC to block apps or processes from launching and continue to u
 
 #### For Developers
 
-- Fixed a [known issue for Device Portal where there was no prompt downloading locked files](hololens-troubleshooting.md#downloading-locked-files-doesnt-error).
-- Fixed a [known issue for Device Portal with file upload and download time outs](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out).
+- Fixed a [known issue for Device Portal where there was no prompt downloading locked files](hololens-troubleshooting.md#fixed---downloading-locked-files-doesnt-error).
+- Fixed a [known issue for Device Portal with file upload and download time outs](hololens-troubleshooting.md#fixed---device-portal-file-uploaddownload-times-out).
 - Gamepad processing for 2D apps was disabled in Insider builds. By removing it, apps are now free to use the Gamepad APIs directly and have access to the whole set of controls and can be developed in mind to do more. Developers should use the Gamepad APIs to consume Gamepad input. Here is a sample for [Gamepad Class (Windows.Gaming.Input) - Windows UWP applications](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
 - Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
 
@@ -332,7 +350,7 @@ Improvements and fixes in the update:
 - Battery charging performance tuned to increase runtime when charging with increased CPU loading. While charging HoloLens 2 devices, if the device is detected to be running hot, the internal battery will charge more slowly to reduce heat. The positive tradeoff is that a device is less likely to shutdown due to thermal issues, with the impact is that the device runs longer. If the device is running cool, the charge rate is unaffected.
 
 > [!IMPORTANT]
-> Due to a now resolved [known issue in our 21H1 build that was affecting Remote Assist users](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), we temporally paused the offering of Windows Holographic, version 21H1 updates. We had also changed the default Advanced Recovery Companion (ARC) build to the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). The ARC build will now resume targeting the 21H1 build.
+> Due to a now resolved [known issue in our 21H1 build that was affecting Remote Assist users](hololens-troubleshooting.md#fixed---remote-assist-video-freezes-after-20-minutes), we temporally paused the offering of Windows Holographic, version 21H1 updates. We had also changed the default Advanced Recovery Companion (ARC) build to the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). The ARC build will now resume targeting the 21H1 build.
 
 ## Windows Holographic, version 20H2 – July 2021 Update
 

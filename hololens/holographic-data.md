@@ -12,7 +12,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority:
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -48,6 +48,9 @@ You can access photos and videos taken with HoloLens by:
 - accessing the Camera Roll directly through the [Photos app](holographic-photos-and-videos.md).
 - uploading photos and videos to cloud storage by syncing your photos and videos to OneDrive.
 - using the Mixed Reality Capture page of the [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture).
+
+> [!TIP]
+> To determine how much free storage space is on your device, go to **Settings** > **System** > **Storage**.
 
 ### Photos app
 

@@ -9,7 +9,7 @@ author: mattzmsft
 ms.author: mazeller
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 10/28/2019
 manager: jarrettr
 appliesto:

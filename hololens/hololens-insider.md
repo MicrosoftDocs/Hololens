@@ -9,9 +9,9 @@ ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.localizationpriority: medium
 audience: ITPro
-ms.date: 10/19/2021
+ms.date: 11/18/2021
+ms.localizationpriority:
 ms.reviewer: 
 manager: ranjibb
 appliesto:
@@ -26,6 +26,11 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 What's new and on the horizon for HoloLens? Check out these new updates coming to HoloLens!
 
+| Feature | Description | Target Audience | Available in Build |
+|---------|-------------|-----------------|--------------------|
+| Colorblind mode        | Applies filters that adjust the displayed colors for colorblind users.      | End users        | 20348.1463       |
+| Start gestures settings        | Custom limitations for how the start menu can be opened.            | End users        | 20348.1468       |
+
 ### Colorblind mode
 
 Added in Insider build 20348.1463
@@ -36,14 +41,58 @@ Colorblind mode is useful a great feature that makes HoloLens more accessible. T
 |-----|-----------|------------|
 | ![Color filter off](images/colorblind-off.png)   | ![Color filter greyscale](images/colorblind-greyscale.png)         | ![Color filter tritanopia](images/colorblind-tritanopia.png)          |
 
+### Start gestures settings
+
+Added in Insider build 20348.1468
+
+The team has implemented a solution for those who don't want the start menu popping up while doing tasks while looking at their hands, such as surgery and using apps like Remote Assist. Of course, this can also help in other scenarios.
+
+Open the **Start menu** and select the **Settings** app -> **System** -> **Start gestures**.
+
+![Start menu settings in the Settings app](images/start-menu-settings.jpg)
+
+Start gesture options:
+
+- Allow tapping the Star icon on your wrist to open the Start menu - *default*: On
+  - Require the Start icon to be looked at when you tap it - *default*: Unchecked
+  - Require the Start icon to be pressed for 2 seconds - *default*: Unchecked
+- Allow pinching your thumb and index finger, while looking at the Start icon on your wrist, to open the Start menu - *default*: On
+- Allow voice commands to open the Start menu - *default*: On
+
+If you find yourself wondering how to use your voice to open and close the Start menu:
+
+- "Go to Start"  to bring up the Start menu
+- "Close" while looking at it to close
+
 ### Fixes and improvements
 
-- Fixed a known issue where [every time the power goes to 18 percent, the device suddenly shuts down automatically](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically).
 - Improvements to Moving Platform Mode when detecting the down direction.
 - Fixed an issue around update dialogs.
 - Updated inbox Microsoft Edge browser version.
 - Fixed an issue where toggling optional diagnostic data didn't persist the chosen setting in telemetry settings page after a reboot.
-- Fixed and issue where QR codes were not recognized when they were rotated at a 45-degree angle relative to the device.
+
+### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
+
+If a user has taken an update to one of the Insider flight, 20346.1466, and it doesn’t appear to be finishing the boot, a clean reflash may be required to move forward again. To see if you have encountered this:
+
+1. Reboot – Hold down the power until the LED’s step down.
+1. Power up.
+1. Confirm you see the Windows flag at the beginning of the boot and it goes black shortly after that.
+1. Connect your HoloLens2 to your PC with USB and run Advanced Recovery companion.
+1. Select the HoloLens.
+1. If the version says you are running the 20346.1466 build, you likely hit this issue.
+
+#### Who does this tend to affect
+
+Users who have been using their device without flashing it since [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004).
+
+#### Users who are typically unaffected
+
+Users who have flash their device, or unboxed their device, and started using it since [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1).
+
+#### Workaround
+
+- [Reflash your device.](hololens-recovery.md#clean-reflash-the-device)
 
 ## Start receiving Insider builds
 
@@ -58,7 +107,7 @@ Colorblind mode is useful a great feature that makes HoloLens more accessible. T
 On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
 
 > [!NOTE]
-> In order to enroll your device in Insider builds, you'll need to enable optional telemetry. If you have not done this already, open the Settings app and select **Privacy** -> **Diagnostics & feedback** and then select **Optional diagnostics data**.
+> In order to enroll your device in Insider builds, you'll need to enable optional telemetry. If you have not done this already, open the Settings app and select **Privacy** > **Diagnostics & feedback** and then select **Optional diagnostics data**.
 
 Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
 

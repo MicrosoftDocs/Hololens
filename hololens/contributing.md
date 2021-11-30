@@ -2,8 +2,9 @@
 title: Contributing instructions
 description: Learn how to contribute to the HoloLens docs on the docs.microsoft.com platform using GitHub-flavored Markdown. 
 author: hferrone
-ms.author: mattwoj
-ms.date: 01/04/2021
+ms.author: v-beehanson
+ms.date: 10/29/2021
+ms.localizationpriority:
 ms.topic: article
 ms.prod: hololens
 ---
@@ -46,7 +47,7 @@ The publishing system is tied to GitHub, so these steps are important. You'll be
 
 Use the following workflow to make updates to *an existing article* via GitHub in a web browser:
 
-1. Navigate to the article you wish to edit in the "mixed-reality-docs" folder.
+1. Navigate to the article you wish to edit in the "hololens" folder.
 
 2. Select the edit button (pencil icon) in the top right.
 
@@ -84,15 +85,15 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
 {
     "redirections": [
         {
-            "source_path": "hololens/old-article.md",
-            "redirect_url": "new-article#section-about-old-topic",
+            "source_path": "hololens/old-article",
+            "redirect_url": "/base-url/new-article#section-about-old-topic",
             "redirect_document_id": false
         },
 ```
 
-- The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `mixed-reality-docs` and ends with `.md`.
+- The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with the docset (in this case, `hololens`) and includes the `.md` file extension.
 
-- The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **doesn't** contain `mixed-reality-docs` or `.md`, as it refers to the public URL and not the repository path. Linking to a section within the new article using `#section` is allowed. You can also use an absolute path to another site here, if necessary.
+- The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **doesn't** contain `.md` and starts with `/`, as it refers to the public URL and not the repository path. Linking to a section within the new article using `#section` is allowed. You can also use an absolute path to another site here, if necessary.
 
 - `redirect_document_id` indicates whether you would like to keep the document ID from the previous file. The default is `false`. Use `true` if you want to preserve the `ms.documentid` attribute value from the redirected article. If you preserve the document ID, data, such as page views and rankings, will be transferred to the target article. Do this if the redirect is primarily a rename, and not a pointer to different article that only covers some of the same content.
 
@@ -102,21 +103,21 @@ If you add a redirect, be sure to delete the old file as well.
 
 Use the following workflow to *create new articles* in the documentation repo via GitHub in a web browser:
 
-1. Create a fork off the default branch, _master_, of MicrosoftDocs/mixed-reality by using the **Fork** button in the top right.
+1. Create a fork off the default branch, _master_, of MicrosoftDocs/hololens by using the **Fork** button in the top right.
 
    ![Fork the default branch, currently named "master".](images/forkbranch.png)
 
    > [!NOTE]
    > This article contains references to _master_, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
    
-2. In the "mixed-reality-docs" folder, select **Create new file** in the top right.
+2. In the "hololens" folder, select **Create new file** in the top right.
 
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
    ![Name your new page.](images/newpagetitle.png)
    
    >[!IMPORTANT]
-   >Make sure you create the new article from within the "mixed-reality-docs" folder. You can confirm this by checking for "/mixed-reality-docs/" in the new file name line.
+   >Make sure you create the new article from within the "hololens" folder. You can confirm this by checking for "/hololens/" in the new file name line.
 
 4. At the top of your new page, add the following metadata block:
 
@@ -140,9 +141,9 @@ Use the following workflow to *create new articles* in the documentation repo vi
 
 8. When finished, select **Commit new file**.
 
-9. Select **New pull request** and merge your fork's _master_ branch into MicrosoftDocs/mixed-reality _master_ (make sure the arrow is pointing to the correct destination).
+9. Select **New pull request** and merge your fork's _master_ branch into MicrosoftDocs/hololens _master_ (make sure the arrow is pointing to the correct destination).
 
-   ![Create pull request from your fork into MicrosoftDocs/mixed-reality.](images/pr-to-master.png)
+   ![Create pull request from your fork into MicrosoftDocs/hololens.](images/pr-to-master.png)
 
 ## Markdown basics
 
@@ -159,15 +160,15 @@ The [Docs Markdown Extension for Visual Studio Code](/teamblog/docs-extension) a
 
 ### Adding images
 
-You’ll need to upload your images to the "mixed-reality-docs/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means large images will fill the entire width of the article. We recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively.
+You’ll need to upload your images to the "hololens/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means large images will fill the entire width of the article. We recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively.
 
 >[!IMPORTANT]
 >You can only upload images to your forked repo before merging. So, if you plan on adding images to an article, you'll need to [use Visual Studio Code](#using-visual-studio-code) to add the images to your fork's "images" folder first or make sure you've done the following in a web browser:
 >
->1. Forked the MicrosoftDocs/mixed-reality repo.
+>1. Forked the MicrosoftDocs/hololens repo.
 >2. Edited the article in your fork.
->3. Uploaded the images you're referencing in your article to the "mixed-reality-docs/images" folder in your fork.
->4. Created a **pull request** to merge your fork into the MicrosoftDocs/mixed-reality _master_ branch.
+>3. Uploaded the images you're referencing in your article to the "hololens/images" folder in your fork.
+>4. Created a **pull request** to merge your fork into the MicrosoftDocs/hololens _master_ branch.
 >
 >To learn how to set up your own forked repo, follow the instructions for [creating a new article](#creating-a-new-article).
 
@@ -201,7 +202,7 @@ Follow these steps to configure Visual Studio Code to work with this repo:
 1. In a web browser:
     1. Install [Git for your PC](https://git-scm.com/downloads).
     2. Install [Visual Studio Code](https://code.visualstudio.com/).
-    3. [Fork MicrosoftDocs/mixed-reality](#creating-a-new-article) if you haven't already.
+    3. [Fork MicrosoftDocs/hololens](#creating-a-new-article) if you haven't already.
     4. In your fork, select **Clone or download** and copy the URL.
 2. Create a local clone of your fork in Visual Studio Code:
     1. From the **View** menu, select **Command Palette**.
@@ -219,9 +220,9 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 1. Make sure your cloned fork is up to date with the official repo.
 
-   1. In a web browser, create a pull request to sync recent changes from other contributors in the default branch of MicrosoftDocs/mixed-reality, _master_, to your fork (make sure the arrow is pointing to the correct destination).
+   1. In a web browser, create a pull request to sync recent changes from other contributors in the default branch of MicrosoftDocs/hololens, _master_, to your fork (make sure the arrow is pointing to the correct destination).
       
-      ![Sync changes from MicrosoftDocs/mixed-reality to your fork.](images/sync-repos.png)
+      ![Sync changes from MicrosoftDocs/hololens to your fork.](images/sync-repos.png)
 	  
    2. In Visual Studio Code, select the sync button to sync your freshly updated fork to the local clone.
       
@@ -243,9 +244,9 @@ Use the following workflow to make changes to the documentation with Visual Stud
       
       ![Click the sync button.](images/sync-back.png)
 	  
-3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality _master_ (make sure the arrow is pointing to the correct destination).
+3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/hololens _master_ (make sure the arrow is pointing to the correct destination).
 
-   ![Create pull request from your fork into MicrosoftDocs/mixed-reality.](images/pr-to-master.png)
+   ![Create pull request from your fork into MicrosoftDocs/hololens.](images/pr-to-master.png)
 
 ### Useful extensions
 
