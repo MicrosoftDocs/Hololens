@@ -11,7 +11,7 @@ ms.author: v-evmill
 ms.reviewer: aboeger
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority:
 appliesto:
 - HoloLens 2
 ---

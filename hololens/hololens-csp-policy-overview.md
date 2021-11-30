@@ -6,7 +6,7 @@ ms.sitesec: library
 author: evmill
 ms.author: v-evmill
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 09/16/2020
 ms.reviewer: lavinds
 manager: yannisle
