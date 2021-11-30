@@ -6,7 +6,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 8/24/2021
 ms.custom: 
 - CI 115262

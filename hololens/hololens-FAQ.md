@@ -6,15 +6,15 @@ ms.prod: hololens
 ms.sitesec: library
 author: beelia
 ms.author: v-beehanson
+ms.reviewer: v-evmill
+manager: sekerawa
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 02/27/2020
-ms.reviewer: v-evmill
 ms.custom: 
 - CI 114606
 - CSSTroubleshooting
-manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

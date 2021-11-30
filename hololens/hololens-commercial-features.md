@@ -4,6 +4,7 @@ description: Learn about the Microsoft HoloLens commercial features for business
 author: beelia
 ms.author: v-beehanson
 ms.date: 11/11/2021
+ms.localizationpriority:
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -11,8 +12,8 @@ ms.topic: article
 audience: ITPro
 ms.prod: hololens
 ms.sitesec: library
-ms.reviewer: skerawa
-manager: skerawa
+ms.reviewer: sekerawa
+manager: sekerawa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, commercial, features, mdm, mobile device management, kiosk mode, applications, identity, Bitlocker, iris, Windows Hello, Azure-powered, Autopilot, mixed reality, WDAC

@@ -9,7 +9,7 @@ ms.topic: article
 ms.custom: 
 - CI 115190
 - CSSTroubleshooting
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 9/30/2021
 ms.reviewer: Teresa-Motiv
 manager: laurawi

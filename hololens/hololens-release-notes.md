@@ -7,7 +7,7 @@ manager: laurawi
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority:
 ms.date: 11/21/2021
 ms.custom: 
 - CI 111456

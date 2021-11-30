@@ -8,7 +8,7 @@ author: bgener
 ms.author: bogenera
 audience: ITPro
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2

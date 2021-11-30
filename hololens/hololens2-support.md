@@ -6,7 +6,8 @@ ms.reviewer: asergaz
 description: Mixed Reality support options for small to large enterprise customers
 ms.prod: hololens
 ms.topic: article
-ms.date: 3/19/2021 
+ms.date: 3/19/2021
+ms.localizationpriority:
 ---
 
 # What are the Mixed Reality support and help options?
@@ -20,6 +21,7 @@ Here you will find the support options for the following options ensuring you ge
 - [Get help with purchasing a HoloLens 2 Device](#help-with-commercial-store-support-for-your-hololens-2)
 - [Get help with programming a HoloLens 2 Device or an Immersive Headset](#help-with-technical-support-for-your-hololens-2) 
 - [Get help with Azure mixed reality services](#azure-mixed-reality-services-support)
+- [Learn about Dynamics 365 support options](https://dynamics.microsoft.com/support/)
 
 ## Community help options
 
@@ -68,7 +70,7 @@ If you do submit a new question to Stack Overflow, please use one or more of the
 - Learn more about Help + support and service health of your [Azure mixed reality services](#azure-mixed-reality-services-support)
 - Create a support request for HoloLens 2 or Immersive headset programming at [MR support](https://aka.ms/mrsupport) 
 - Create a support request for HoloLens 2 device issues including hardware, usage & configuration at [HoloLens 2 device support](https://aka.ms/hlsupport) 
-
+- Learn about [Dynamics 365 support plans, technical support, and partner support](https://dynamics.microsoft.com/en-us/support/)
 
 ### Help with Commercial Store Support for your HoloLens 2
 

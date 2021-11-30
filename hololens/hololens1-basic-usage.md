@@ -11,7 +11,7 @@ ms.sitesec: library
 author: qianw211
 ms.author: v-qianwen
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 appliesto:
 - HoloLens (1st gen)
 ---

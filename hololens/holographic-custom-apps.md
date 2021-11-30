@@ -10,7 +10,7 @@ ms.sitesec: library
 author: mattzmsft
 ms.author: mazeller
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
