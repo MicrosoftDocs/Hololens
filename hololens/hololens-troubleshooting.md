@@ -32,6 +32,7 @@ This article describes how to resolve several common HoloLens issues.
 - [**Fixed** - Device Portal file upload/download times out](#fixed---device-portal-file-uploaddownload-times-out)
 
 **Known Issues**
+- [Remote Wipe doesn't remove device from Intune](#remote-wipe-doesnt-remove-device-from-intune)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
 - [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
 - [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
@@ -129,18 +130,29 @@ In previous builds of Windows Holographic, when attempting to download a locked 
 [Back to list](#list)
 
 ## **Fixed** - Device Portal file upload/download times out
+
 > [!NOTE]
 > This is a **known issue** that was fixed in [Windows Holographic, version 21H1 - July 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update). If you previously disabled SSL Connection as part of the workaround, we highly recommend you re-enable it.
 
 Some customers have found, when attempting to upload or download files, the operation might appear to hang and then time out or never complete. This is separate from the '[file locked' known issue](#fixed---downloading-locked-files-doesnt-error) -- this affects Windows Holographic, versions 2004, 20H2 and 21H1 in-market builds. The problem has been root caused to a bug in Device Portal's handling of certain requests, and is most consistently hit when using https, which is the default.
 
-### Workaround
+### Workaround for device portal time out
 
 This workaround, which applies equally to Wi-Fi and UsbNcm, is to disable the "required" option under "SSL Connection". To do so, navigate to Device Portal, **System**, and select the **Preferences** page. In the **Device Security** section, locate **SSL Connection**, and uncheck to disable **Required**.
 
 The user should then go to http://, not https:// (IP address) and features like file upload and download will work.
 
 [Back to list](#list)
+
+## Remote Wipe doesn't remove device from Intune
+
+When deleting a HoloLens device from Intune [via the Wipe command](hololens-recovery.md#wipe-the-device), the device will be sent the wipe command. This command will wipe the device, however Intune won't receive confirmation that the HoloLens was wiped. This will leave the Wipe button as clicked, and "Wipe pending..." for the device.
+
+![Wipe pending](./images/wipe-pending.jpg)
+
+### Workaround for remote wipe
+
+Immediately after selecting **Wipe** we suggest also selecting the **Delete** button next to wipe. Otherwise you'll have left over device objects or even see another known issue for [Autopilot](#why-do-i-see-0x80180014-during-autopilot).
 
 ## Why do I see 0x80180014 during Autopilot?
 
