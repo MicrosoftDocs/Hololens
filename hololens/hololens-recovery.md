@@ -145,7 +145,7 @@ You may need to put the device into recovery mode if:
 
 You can [wipe your HoloLens 2 remotely](/mem/intune/remote-actions/devices-wipe#wiping-a-device) from the Intune company portal if you [can't access it to perform a reset](hololens2-enterprise-troubleshooting.md#cant-sign-in-to-a-previously-setup-hololens-device). If you choose the **Retain enrollment state and user account** checkbox before starting the **Wipe** action, you can retain the user data. 
 
-For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](/mem/intune/remote-actions/devices-wipe.md).
+For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](/mem/intune/remote-actions/devices-wipe).
 
 > [!NOTE]
 > Although the HoloLens device will be wiped successfully with this method, the device will not be removed from Intune. This anomaly is a known issue, and an easy [workaround](hololens-troubleshooting.md#remote-wipe-doesnt-remove-device-from-intune) will resolve it. 
