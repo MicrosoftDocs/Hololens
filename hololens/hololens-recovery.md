@@ -141,6 +141,15 @@ You may need to put the device into recovery mode if:
 
 6. Select the HoloLens 2 device in the Advanced Recovery Companion app UI, and then follow the instructions to complete the reflash.
 
+## Wipe the device
+
+You can [wipe your HoloLens 2 remotely](/mem/intune/remote-actions/devices-wipe#wiping-a-device) from the Intune company portal if you [can't access it to perform a reset](hololens2-enterprise-troubleshooting.md#cant-sign-in-to-a-previously-setup-hololens-device). If you choose the **Retain enrollment state and user account** checkbox before starting the **Wipe** action, you can retain the user data. 
+
+For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](/mem/intune/remote-actions/devices-wipe).
+
+> [!NOTE]
+> Although the HoloLens device will be wiped successfully with this method, the device will not be removed from Intune. This anomaly is a known issue, and an easy [workaround](hololens-troubleshooting.md#remote-wipe-doesnt-remove-device-from-intune) will resolve it. 
+
 ## Troubleshoot Advanced Recovery Companion
 
 1. Ensure your device is charged to 40% or more before attempting to flash.
