@@ -59,7 +59,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **India** | Redington (ADD) | Manish.K Manish.k@redington.co.in | N/A | N/A 
 | | Softline - Alliance Partner of Insight | Ninad Vedak ninad.vedak@softline.com | https://softline.co.in/solutions/microsoft-solutions/microsoft-hololens-2 | https://softline.co.in/solutions/microsoft-solutions/microsoft-hololens-2 
 | | Team Computers | Anuj Sharma Anuj.s@tteamcomputers.com | https://www.teamcomputers.com/hololens/ | https://www.teamcomputers.com/hololens/
-| **Japan** | Japan Business Systems (JBS) | kazunori.miyauchi@jbs.com | [Japan Business Systems](https://www.jbs.co.jp/solution/<br>list/microsofthololens) | [Japan Business Systems](https://www.jbs.co.jp<br>/solution/list/microsofthololens) |
+| **Japan** | Japan Business Systems (JBS) | kazunori.miyauchi@jbs.com | [Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) | [Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) |
 | | Otsuka Shokai Co., Ltd. | Kenta.Fujita@otsuka-shokai.co.jp | [Otsuka Shokai Co., Ltd.](https://www.otsuka-shokai.co.jp/<br>products/microsoft/hololens/) | [Otsuka Shokai Co., Ltd.](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) |
 | | SB C&S | fumiaki.endo01@g.softbank.co.jp | [BSB C&S](https://www.it-ex.com/products<br>/maker/microsoft/hololens2.html) | [SB C&S](https://www.it-ex.com/products/<br>maker/microsoft/hololens2.html) |
 | **Malaysia** | ST Engineering Land Systems (Studio 249) | Lee Pei Shan <lee.peishan@stengg.com> | [ST Engineering Land Systems](http://www.studio249.my/) | [ST Engineering Land Systems](http://www.studio249.my/) |
