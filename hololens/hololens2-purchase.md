@@ -48,7 +48,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 ### **APAC**
 
-| Country | ADR | Sales Contacts | HoloLens 2<br>Product Link | HoloLens 2<br>Industrial Edition<br>Product Link |
+| Country | ADR | Sales Contacts | HoloLens 2<br>Product Link | HoloLens 2 Industrial Edition<br>Product Link |
 |---------|-----|---------|----------------|----------|
 | **Australia** | Insight Enterprises Australia Pty Ltd | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>Costa Aligianis [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com)|[Insight Enterprises<br>Australia Pty Ltd](https://au.insight.com/en_AU<br>/shop/partner/microsoft/surface/hololens.html)|[Insight Enterprises<br>Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html)|
 | | Telstra Purple | Joanna Bari [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) Oliver Ashworth [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com)|||
