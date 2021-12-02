@@ -48,10 +48,10 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 ### **APAC**
 
-| Country | ADR | Sales Contacts | HoloLens 2<br>Product Link | HoloLens 2 Industrial Edition<br>Product Link |
+| Country | ADR | Sales Contacts | HoloLens 2<br>Product Link | HoloLens 2<br>Industrial Edition<br>Product Link |
 |---------|-----|---------|----------------|----------|
 | **Australia** | Insight Enterprises Australia Pty Ltd | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>Costa Aligianis [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com)|[Insight Enterprises<br>Australia Pty Ltd](https://au.insight.com/en_AU<br>/shop/partner/microsoft/surface/hololens.html)|[Insight Enterprises<br>Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html)|
-| | Telstra Purple | Joanna Bari [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) Oliver Ashworth [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com)|||
+| | Telstra Purple | Joanna Bari [joanna.kandias@<br>team.telstra.com](mailto:Joanna.kandias@team.telstra.com) Oliver Ashworth [oliver.ashworth@<br>purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com)|||
 | **China** | Highly Information (HII) 翰林汇信息产业股份有限公司 |Feng Zhou<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) |[Highly Information](http://www.ehighly.com.cn/<br>productList.html?key=hololens) |[Highly Information](https://isite.baidu.com/site/highly.com.cn<br>/849172be-8d31-46c3-b704-a09c8614ec7b?fid=nHD1nWckPjDYnjb3PWbdnH6srHPxnHfvnNtk&amp;ch=4&amp;bd_vid=11025645443434810125)|
 | | 英施艾特（上海）软件贸易有限公司 Insight Enterprises (Shanghai) Co. Ltd.|Julian Kung julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com|[Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop<br>/partner/microsoft/surface/hololens.html)|[Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner<br>/microsoft/surface/hololens.html)|
 | **Hong Kong** | GO VR Immersive Ltd. (UFO) | Howard Tian <howard.tian@govrimmersive.com>|[GO VR Immersive Ltd.](https://www.govrimmersive.com/hololens2)|[GO VR Immersive Ltd](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
@@ -71,7 +71,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **South Korea** | Korea CIM (KCIM) | Cheolgon Kim<br><cgkim@kcim.co.kr><br>SB Kim<br><sbkim@kcim.co.kr> | [ST Engineering Land Systems](http://www.kcim.co.kr/solution/microsoft-hololens2) | [ST Engineering Land Systems](http://www.kcim.co.kr/solution/microsoft-hololens2#product-2) | 
 | **Taiwan** | Systex Software &<br>Service Corporation<br>精誠資訊股份有限公司 | Gina Ko<br><ginako@systex.com><br>Sean Chien<br><seanchien@systex.com> | [Systex Software &<br>Service Corporation<br>精誠資訊股份有限公司](https://tw.systex.com/microsoft-hololens/) | [Systex Software &<br>Service Corporation<br>精誠資訊股份有限公司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) |
 | **Thailand** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [Sustainable Solution Co., Ltd.](https://hololensthai.com/) |
-| **Vietnam** | CÔNG TY TNHH HIVERLAB<br>VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [CÔNG TY TNHH HIVERLAB<br>VIETNAM](https://www.hiverlab.com/vn) | [CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
+| **Vietnam** | CÔNG TY TNHH HIVERLAB<br>VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [CÔNG TY TNHH HIVERLAB<br>VIETNAM](https://www.hiverlab.com/vn) | [CÔNG TY TNHH HIVERLAB <br>VIETNAM](https://www.hiverlab.com/vn) |
 
 ### **North America**
 
