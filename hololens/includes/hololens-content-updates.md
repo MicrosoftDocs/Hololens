@@ -2,6 +2,19 @@
 
 
 
+## Week of November 29, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/29/2021 | [Find and save files on HoloLens](/hololens/holographic-data) | modified |
+| 11/29/2021 | [Learn more about Mixed Reality support options](/hololens/hololens2-support) | modified |
+| 12/1/2021 | [Restart, reset, or recover HoloLens 2](/hololens/hololens-recovery) | modified |
+| 12/1/2021 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
+| 12/2/2021 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+| 12/3/2021 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+
+
 ## Week of November 22, 2021
 
 
@@ -83,17 +96,3 @@
 | 11/19/2021 | [Common Device Restrictions](/hololens/hololens-common-device-restrictions) | modified |
 | 11/19/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
 | 11/19/2021 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
-
-
-## Week of October 25, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/25/2021 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |
-| 10/25/2021 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
-| 10/25/2021 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
-| 10/25/2021 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
-| 10/25/2021 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 10/27/2021 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
-| 10/28/2021 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
