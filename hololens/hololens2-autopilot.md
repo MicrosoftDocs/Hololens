@@ -82,8 +82,8 @@ To confirm the build version on your device or reflash to the latest OS, use the
 
  Minimum operating system version | Feature supported | Remarks
  ------ | ------ | ------  
- [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) (build 19041.1103) or later | 1.	Self-deploying scenario of Autopilot on HoloLens 2. | Autopilot profile download is supported only via Ethernet. Ensure the HoloLens is connected to ethernet using a "USB-C to Ethernet" adapter **before turning it on**.  If you are planning for an Autopilot roll-out to many HoloLens devices, we recommend that you plan for the adapter infrastructure. We do not recommend USB Hubs, as they often require third-party drivers to be installed which is not supported on HoloLens.
- [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) (build 19041.1128) or later | 1. Downloading autopilot profile over Wi-Fi. <br> 2. [Tenant lockdown CSP and Autopilot](#tenant-lockdown-csp-and-autopilot) to lock devices with Autopilot specified tenant. | You may still use ethernet adapters if desired. For devices connected via Wi-fi, the user must only: <ul> <li> Go through the hummingbird scene. </li> <li> Choose the language and locale. </li> <li> Run eye-calibration. </li> <li> Successfully connect with desired wifi network. </li> </ul>
+ [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) (build 19041.1103) or later | 1.	Self-deploying scenario of Autopilot on HoloLens 2. | Autopilot profile download is supported only via Ethernet. Ensure the HoloLens is connected to ethernet using a "USB-C to Ethernet" adapter **before turning it on**.  If you are planning for an Autopilot roll-out to many HoloLens devices, we recommend that you plan for the adapter infrastructure. We do not recommend USB Hubs, as they often require third-party drivers to be installed which is not supported on HoloLens.
+ [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) (build 19041.1128) or later | 1. Downloading autopilot profile over Wi-Fi. <br> 2. [Tenant lockdown CSP and Autopilot](#tenant-lockdown-csp-and-autopilot) to lock devices with Autopilot specified tenant. | You may still use ethernet adapters if desired. For devices connected via Wi-fi, the user must only: <ul> <li> Go through the hummingbird scene. </li> <li> Choose the language and locale. </li> <li> Run eye-calibration. </li> <li> Successfully connect with desired wifi network. </li> </ul>
 
 ### 2. Enable Automatic MDM Enrollment:
 
@@ -246,7 +246,7 @@ Once the above instructions are completed, your HoloLens 2 users will go through
     - Connect your device with "USB-C to Wi-Fi" adapters for wireless internet connectivity and let HoloLens 2 complete Autopilot experience automatically.
 
         > [!IMPORTANT]  
-       > Devices attempting to use Wi-Fi networks in OOBE for Autopilot must be on [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2).
+       > Devices attempting to use Wi-Fi networks in OOBE for Autopilot must be on [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2).
        >
        > For devices using ethernet adapters you must connect the device to the network before the Out-of-the-Box-Experience (OOBE) starts. The device determines whether it is provisioning as an Autopilot device while on the first OOBE screen. If the device cannot connect to the network, or if you choose not to provision the device as an Autopilot device, you cannot change to Autopilot provisioning at a later time. Instead, you would have to start this procedure over in order to provision the device as an Autopilot device.
 

@@ -117,6 +117,8 @@
 ## [Autopilot support requests](hololens2-autopilot-registration-support.md)
 ## [HoloLens 2 release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
+## [HoloLens 2 release notes - 2004](hololens-release-notes-2004.md)
+## [HoloLens 2 release notes - 1903](hololens-release-notes-1903.md)
 ## [Supported languages](hololens2-language-support.md)
 ## [Learn about Microsoft Mesh (Preview)](/mesh/overview)
 ## HoloLens (1st gen)

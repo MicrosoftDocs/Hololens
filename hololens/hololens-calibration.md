@@ -32,7 +32,7 @@ HoloLens 2 prompts a user to calibrate the device under the following circumstan
 - The user previously opted out of the calibration process
 - The calibration process didn't succeed the last time the user used the device
 - The user has deleted their calibration profiles
-- The device is taken off and put back on and any of the above circumstances apply 
+- The device is taken off and put back on and any of the above circumstances apply
 
 ![Calibration prompt for adjusting to eyes.](./images/07-et-adjust-for-your-eyes.png)
 
@@ -73,7 +73,7 @@ There are a few system behavior changes with Auto Eye Position feature when an u
 | Non-gaze enabled app or Holographic Shell |Eye tracking calibration prompt dialog is displayed. | No prompt is displayed. |
 | Gaze enabled app | Eye tracking calibration prompt dialog is displayed. | Eye tracking calibration prompt is displayed only when the application accesses eye gaze stream. |
 
-If the user transitions from a non-gaze enabled application to one that accesses the gaze data, the calibration prompt will be displayed. 
+If the user transitions from a non-gaze enabled application to one that accesses the gaze data, the calibration prompt will be displayed.
 
 All other system behavior will be similar to when the current user doesn't have an active eye tracking calibration. For example, the One-handed Start gesture won't be enabled. There will be no change to the Out-Of-Box-Experience for initial setup.
 
@@ -83,10 +83,10 @@ For experiences that require eye gaze data or precise hologram positioning, we r
 
 With Auto Eye Position, the Eye Tracking Calibration prompt dialog is deferred until an application requests Eye Gaze data. This ensures that there's no prompt to the user when the active application doesn't require gaze. If the application does require gaze data and the current user isn't calibrated, the user is presented with a calibration prompt. This behavior could be used to display an eye tracking calibration prompt at a suitable time for the experience. This method is recommended for the following reasons:
 
-1.  The Eye Tracking Calibration Prompt dialog provides the user with details on why eye tracking is needed.
-2.  Presents the user a way to decline to have their eyes calibrated.
+1. The Eye Tracking Calibration Prompt dialog provides the user with details on why eye tracking is needed.
+2. Presents the user a way to decline to have their eyes calibrated.
 
-If the user chooses to launch the Eye Tracking Calibration, the focus should return to the original application after calibration completes. 
+If the user chooses to launch the Eye Tracking Calibration, the focus should return to the original application after calibration completes.
 
 ### Calibration data and security
 
@@ -100,11 +100,11 @@ Calibration information can always be deleted from the device in **Settings** > 
 
 #### Eye calibration behavior on HoloLens 2 builds 20H2 and newer
 
-With the inception of [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support)  as of Windows Holographic, version 20H2, you don't have to disable calibration. The calibration prompt appears automatically only if you are using an Eye Tracking-enabled app.
+With the inception of [Auto Eye Position Support](hololens-release-notes-2004.md#auto-eye-position-support)  as of Windows Holographic, version 20H2, you don't have to disable calibration. The calibration prompt appears automatically only if you are using an Eye Tracking-enabled app.
 
 #### Disabling eye calibration on HoloLens 2 older builds
 
-You can flip a Settings switch on the headset to disable calibration, but the state of the switch might not be easy to determine. It was removed and replaced with [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support), which defers calibration while providing color correction and hologram positioning.
+You can flip a Settings switch on the headset to disable calibration, but the state of the switch might not be easy to determine. It was removed and replaced with [Auto Eye Position Support](hololens-release-notes-2004.md#auto-eye-position-support), which defers calibration while providing color correction and hologram positioning.
 
 #### Disabling eye calibration on HoloLens (1st gen)
 

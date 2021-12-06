@@ -17,6 +17,7 @@ appliesto:
 # HoloLens 2 Display Troubleshooting
 
 ## Overview
+
 The HoloLens 2 display is a combination of waveguides and light projectors. Users look through the waveguides—the lenses inside the visor—when wearing the headset. The light projectors are inside the enclosure above the brow. HoloLens 2 uses laser light to illuminate the display.
 
 ## Troubleshooting
@@ -33,6 +34,7 @@ Take the following steps to ensure the highest visual quality of holograms prese
     > Because this setting saves a new color profile to your display firmware, it is a per-device setting (and not unique to each user account).
 
 ### How to use display color calibration
+
 1. Launch the **Settings** app and navigate to **System > Calibration**.
 1. Under **Display color calibration**, select the **Run display color calibration** button.
 1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position.
@@ -42,7 +44,7 @@ Take the following steps to ensure the highest visual quality of holograms prese
 1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
 
     ![Display color calibration scene.](images/color-cal-ui.png)
-    
+
 6. When you're happy with the selected profile, select the **Save & Exit** button
 1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
 
@@ -56,14 +58,15 @@ Take the following steps to ensure the highest visual quality of holograms prese
 ### How to reset color profile
 
 If you're unhappy with the custom color profile saved to your HoloLens 2, you can restore the device's original color profile:
+
 1. Launch the **Settings** app and navigate to **System > Calibration**.
 1. Under **Display color calibration**, select the **Reset to default color profile** button.
 1. When the dialog box opens, select **Restart** if you're ready to restart HoloLens 2 and apply your changes.
 
 ### Top display color calibration known issues
 
-- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings 
-    - **Workaround**: Select another Settings page and then re-select the Calibration page.
+- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings
+  - **Workaround**: Select another Settings page and then re-select the Calibration page.
 - If your HoloLens 2 goes to sleep while running display color calibration, it will later resume into the mixed reality home and your display brightness level will still be dimmed.
 - You may need to try pressing the brightness buttons on the left side of your device up/down a few times before they work as expected.
 - Localization is not complete for all markets
@@ -95,7 +98,7 @@ All said, it is still possible for specialized industrial cameras to capture rep
 
 The HoloLens 2 display actively color corrects images based on the position of the user's eyes. [Eye calibration](hololens-calibration.md) provides two important inputs: (1) the user's interpupillary distance (IPD), and (2) the direction each eye is looking. Without eye calibration, the system defaults to a nominal eye position with no eye movement. The difference between active color correction versus no correction depends on the user's physiology themselves. For example, users that have the same IPD as the system default will see fewer color correction improvements. While users that have a much narrower or wider IPD than the system default will see more changes to the display image.
 
-Note, a new feature in [Windows Holographic version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) will start [automatically detecting eye position](hololens-calibration.md#auto-eye-position-support). 
+Note, a new feature in [Windows Holographic version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) will start [automatically detecting eye position](hololens-calibration.md#auto-eye-position-support).
 
 ### What are the display differences between HoloLens (1st gen) and HoloLens 2?
 

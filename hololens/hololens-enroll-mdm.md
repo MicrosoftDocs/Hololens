@@ -32,16 +32,15 @@ You can manage multiple Microsoft HoloLens devices simultaneously using solution
 Depending on the type of [identity](hololens-identity.md) chosen either during OOBE or post sign-in, there are different methods of enrollment.
 
 - If Identity is Azure AD, then either during OOBE or **Settings App** -> **Access Work or School** -> **Connect** button.
-    - For Azure AD, [automatic MDM enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) only occurs if Azure AD has been configured with enrollment URLs.
+  - For Azure AD, [automatic MDM enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) only occurs if Azure AD has been configured with enrollment URLs.
 
 - If Identity is Azure AD and device has been pre-registered with Intune MDM server with specific configuration profile assigned to it, then Azure AD-Join and [automatic MDM enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) will occur during OOBE.
-    - Also called [Autopilot flow](hololens2-autopilot.md) Available in [19041.1103+ builds](hololens-release-notes.md#windows-holographic-version-2004).
-
+  - Also called [Autopilot flow](hololens2-autopilot.md) Available in [19041.1103+ builds](hololens-release-notes-2004.md#windows-holographic-version-2004).
 
 - If Identity is MSA, then using **Settings App** -> **Access Work or School** -> **Connect** button.
-    - Also called Add Work Account (AWA) flow.
+  - Also called Add Work Account (AWA) flow.
 - If Identity is Local User, then using **Settings App** -> **Access Work or School** -> **Enroll only in device management** link.
-    - Also called pure MDM enrollment flow.
+  - Also called pure MDM enrollment flow.
 
 Once the device is enrolled with your MDM server, the Settings app will now reflect that the device is enrolled in device management.
 

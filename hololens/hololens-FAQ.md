@@ -4,17 +4,17 @@ description: Do you have a quick question about HoloLens or interacting with hol
 keywords: hololens, faq, known issue, help
 ms.prod: hololens
 ms.sitesec: library
-author: evmill
-ms.author: v-evmill
+author: beelia
+ms.author: v-beehanson
+ms.reviewer: v-evmill
+manager: sekerawa
 ms.topic: article
 audience: ITPro
 ms.localizationpriority:
 ms.date: 02/27/2020
-ms.reviewer: 
 ms.custom: 
 - CI 114606
 - CSSTroubleshooting
-manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -25,15 +25,16 @@ appliesto:
 This article troubleshoots issues with placing holograms, working with spaces, and reporting issues with holograms.
 
 Anytime that you have problems, make sure:
+
 - Try [restarting it](hololens-restart-recover.md) to see whether that fixes things.
-- Before troubleshooting, ensure the HoloLens is [charged up](hololens2-charging.md) (charged for at least an hour). 
+- Before troubleshooting, ensure the HoloLens is [charged up](hololens2-charging.md) (charged for at least an hour).
 
-
-Please use the Feedback app to send us information about the issue. You'll find the Feedback app on the [**Start** menu](holographic-home.md). 
+Please use the Feedback app to send us information about the issue. You'll find the Feedback app on the [**Start** menu](holographic-home.md).
 
 For tips about how to wear your HoloLens, see [Adjust Fit](hololens2-setup.md#adjust-fit).
 
 <a id="list"></a>
+
 - [New spaces can't be created](#new-spaces-cant-be-created)
 - [Spaces can't be identified or loaded](#spaces-cant-be-identified-or-loaded)
 - [How do I delete all spaces?](#how-do-i-delete-all-spaces)
@@ -163,10 +164,10 @@ Try walking around and looking at the area where you're placing the app so that 
 [Back to list](#list)
 
 ## Reporting issues with unstable or inexact holograms
- 
+
 1. Please record and a [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. This video can be later uploaded through Feedback Hub as an attached file.  
 1. Enable full telemetry via the **Settings** app -> **Privacy** -> **Diagnostics & feedback** and under **Optional diagnostics data** ensure the toggle is set to **On**
-1. Get the latest hologram scale and stability fixes by updating to the latest [Windows Holographic OS, (20H2 or higher)](hololens-release-notes.md#windows-holographic-version-20h2). After updating perform the following:
+1. Get the latest hologram scale and stability fixes by updating to the latest [Windows Holographic OS, (20H2 or higher)](hololens-release-notes-2004.md#windows-holographic-version-20h2). After updating perform the following:
     1. Remove all Holograms via **Settings** app -> **System** -> **Holograms** -> then select **Remove all holograms** and start with a fresh map.
     1. Create a new map of your space by wearing the HoloLens and walking around your room and looking at all areas and surfaces in the space. Do this for 2-3 minutes.
     1. Perform IPD calibration. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
