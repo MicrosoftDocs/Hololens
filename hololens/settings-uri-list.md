@@ -20,18 +20,19 @@ appliesto:
 One of the manageable features for HoloLens devices is using the [Settings/PageVisibilityList policy](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) to restrict the pages seen within the Settings app. PageVisibilityList is a policy that allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.
 
 > [!NOTE]
-> This feature is only avalible in [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) or higher for HoloLens 2 devices. Please ensure devices you intend to use this for are updated.
-
+> This feature is only avalible in [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) or higher for HoloLens 2 devices. Please ensure devices you intend to use this for are updated.
 
 ## Examples
+
 Pages are identified by a shortened version of the published URIs, which is the URI minus the "ms-settings:" prefix.
 
 The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "network-wifi" and "bluetooth" respectively:
+
 - `showonly:network-wifi;network-proxy;bluetooth`
 
 The following example illustrates a policy that would hide the OS Reset page:
-- `hide:reset`
 
+- `hide:reset`
 
 ## Deploying this policy via Intune
 
@@ -39,19 +40,19 @@ These are the configuration values that will be supplied to Intune:
 
 - **Name:** An admin preferred display name for the profile.
 - **OMA-URI:** The fully qualified URI of the setting page including its [scope](/windows/client-management/mdm/policy-configuration-service-provider). This examples on this page are using the `./Device` scope.
-- **Value:** A string value that indicates whether to hide or show *only* the specified pages. Possible values are `hide:<pagename>` and `showonly:<pagename>`. 
- 
+- **Value:** A string value that indicates whether to hide or show *only* the specified pages. Possible values are `hide:<pagename>` and `showonly:<pagename>`.
+
 Multiple pages can be specified by separating them with a semicolon, and a listing of common pages can be found below.
 
 1. Create a **Custom policy**.
 1. When setting the **OMA-URI** enter the fully scoped URI. For example: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
 1. When selecting the data pick choose: **String**
-1. When specifying **Value** use the guidance above. For example: **`showonly:network-wifi;network-proxy;bluetooth`** or **`hide:reset`** 
+1. When specifying **Value** use the guidance above. For example: **`showonly:network-wifi;network-proxy;bluetooth`** or **`hide:reset`**
+
 > [!IMPORTANT]
 > Make sure to assign the custom device configuration to a group the device is intended to be in. If this step is not performed, the policy will be pushed but won't be applied.
 
 See [HoloLens MDM configuration](hololens-mdm-configure.md) for more information on Intune groups and device configurations.
-
 
 ## Deploying this policy via a Provisioning Package
 
@@ -59,13 +60,11 @@ These are the configuration values that will be specified in Windows Configurati
 
 **Value:** A string value that indicates whether to hide or show *only* the specified pages. Possible values are `hide:<pagename>` and `showonly:<pagename>`. Multiple pages can be specified by separating them with a semicolon, and a listing of common pages can be found below.
 
-
 1. While creating your package in Windows Configuration Designer navigate to **Policies > Settings > PageVisibilityList**
 1. Enter the string: **`showonly:network-wifi;network-proxy;bluetooth`**
 1. Export your Provisioning Package.
 1. Apply the package to your device.
 For full details on how to create and apply a provisioning package visit [the HoloLens provisioning page](hololens-provisioning.md).
-
 
 Regardless of method chosen your device should now receive the changes and users will be presented with the following Settings App.
 
@@ -78,6 +77,7 @@ To configure the Settings app pages to show or hide your own selection of pages,
 HoloLens devices and Windows 10 devices have a different selection of pages within the Settings app. On this page, you will find only the settings that exist on HoloLens.
 
 ### Accounts
+
 | Settings page           | URI                                            |
 |-------------------------|------------------------------------------------|
 | Access work or school | `workplace`                         |
@@ -85,6 +85,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Sign In Options         | ` signinoptions `                   |
 
 ### Apps
+
 | Settings page | URI                          |
 |---------------|------------------------------|
 | Apps & features <sup>2</sup>     | `appsfeatures` <br> |
@@ -93,6 +94,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Apps & features > Offline Maps > Download maps <sup>2</sup>     | `maps-downloadmaps` <br> |
 
 ### Devices
+
 | Settings page | URI                          |
 |---------------|------------------------------|
 | Bluetooth     | `bluetooth` <br> `connecteddevices` |
@@ -100,6 +102,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | USB <sup>2</sup>      | `usb` <br>  |
 
 ### Privacy
+
 | Settings page            | URI                                             |
 |--------------------------|-------------------------------------------------|
 | Account Info             | `privacy-accountinfo`              |
@@ -132,6 +135,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Voice Activation       | `privacy-voiceactivation`             |
 
 ### Network & Internet
+
 | Settings page | URI                              |
 |---------------|----------------------------------|
 | Airplane Mode <sup>2</sup> | `network-airplanemode`        |
@@ -139,9 +143,8 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | VPN   | `network-vpn`          |
 | Wi-Fi  | `network-wifi`<br>`network-wifisettings`<br>`network-status`<br>`wifi-provisioning`    |
 
-
-
 ### System
+
 | Settings page      | URI                                |
 |--------------------|------------------------------------|
 | Battery <sup>2</sup>           | `batterysaver`<br>|
@@ -158,6 +161,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Storage > Configure Storage Sense <sup>2</sup>           | `storagepolicies`<br>|
 
 ### Time & Language
+
 | Settings page | URI                                           |
 |---------------|-----------------------------------------------|
 | Date & time <sup>2</sup> | `dateandtime`                  |
@@ -168,6 +172,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Region        | `regionformatting`                  |
 
 ### Update & Security
+
 | Settings page                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Advanced Options                    | `windowsupdate-options`         |
@@ -176,12 +181,10 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Windows Update                        | `windowsupdate`<br> `windowsupdate-activehours`  <br> `windowsupdate-history` <br> `windowsupdate-optionalupdates` <br><sup>1</sup>`windowsupdate-options`<br><sup>1</sup>`windowsupdate-restartoptions` |
 | Windows Update - Checks for updates | `windowsupdate-action`          |
 
-
 - <sup>1</sup> - For versions prior to Windows Holographic, version 21H1, the following two URIs do not actually take you to the **Advanced options** or **Options** pages; they will only block or show the main Windows Update page.
-  -  windowsupdate-options
-  -  windowsupdate-restartoptions
+  - windowsupdate-options
+  - windowsupdate-restartoptions
 
 - <sup>2</sup> - Available in Windows Holographic 21H1 or higher.
-
 
 For a full list of Windows 10 Settings URIs, please visit the [launch settings](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) documentation.
