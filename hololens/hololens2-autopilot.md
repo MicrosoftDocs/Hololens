@@ -1,9 +1,10 @@
 ---
 title: Windows Autopilot for HoloLens 2
 description: Learn how to set up, configure, and troubleshoot Autopilot on HoloLens 2 devices.
-author: qianw211
-ms.author: v-qianwen
-ms.date: 10/11/2021
+author: evmill
+ms.author: v-evmill
+ms.reviewer:  lavinds
+ms.date: 12/9/2021
 ms.prod: hololens
 ms.topic: article
 ms.custom: 
@@ -118,9 +119,7 @@ You can retrieve the hardware hash from the device. The device records its hardw
 
 1. Start the HoloLens 2 device.
 
-1. On the device, press the **Power** and **Volume Down** buttons at the same time and then release them. The device collects diagnostic logs and the hardware hash, and stores them in a set of .zip files.
-
-1. For full details and an instructional video for how to perform this read about [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics).
+1. On the device, press the **Power** and **Volume Down** buttons at the same time and then release them. The device collects diagnostic logs and the hardware hash, and stores them in a set of .zip files. For full details and an instructional video for how to perform this read about [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics).
 
 1. Use a USB-C cable to connect the device to a computer.
 
@@ -128,6 +127,9 @@ You can retrieve the hardware hash from the device. The device records its hardw
 
    > [!NOTE]  
    > The .zip file may not immediately be available. If the file is not ready yet you may see a HoloLensDiagnostics.temp file in the Documents folder. To update the list of files, refresh the window.
+
+    > [!NOTE]
+    > Once the this file has been copied to a PC you may shut down the device. If you do not proceed through OOBE then it may still go through the Autopilot process once set up successfully.
 
 1. Extract the contents of the AutopilotDiagnostics.zip file.
 
