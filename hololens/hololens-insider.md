@@ -28,9 +28,9 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 
 | Feature | Description | Target Audience | Available in Build |
 |---------|-------------|-----------------|--------------------|
-| Color-blind mode        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 20348.1463       |
-| Start gestures settings        | Custom limitations for how the start menu can be opened.            | End users        | 20348.1468       |
-| Single app kiosk policy for launching other apps | Allows for app launch of secondary app. | IT Admins | 20348.1470 |
+| [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 20348.1463       |
+| [Start gestures settings](#start-gestures-settings)        | Custom limitations for how the start menu can be opened.            | End users        | 20348.1468       |
+| [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 20348.1470 |
 
 ### Color-blind mode
 
@@ -69,7 +69,7 @@ If you find yourself wondering how to use your voice to open and close the Start
 
 Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This allows for other apps to be launched with in a single app Kiosk, which may be useful for example if you want to launch the Settings app to calibrate your device or change your Wi-fi.
 
-By default, launching applications via [Launcher API (Launcher Class (Windows.System) - Windows UWP applications)](/uwp/api/Windows.System.Launcher?view=winrt-22000) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
+By default, launching applications via [Launcher API (Launcher Class (Windows.System) - Windows UWP applications)](/uwp/api/Windows.System.Launcher?view=winrt-22000&preserve-view=true) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
 
 The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowLaunchUriInSingleAppKiosk`
 
