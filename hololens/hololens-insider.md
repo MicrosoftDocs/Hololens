@@ -10,7 +10,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 11/18/2021
+ms.date: 12/14/2021
 ms.localizationpriority:
 ms.reviewer: 
 manager: ranjibb
@@ -28,18 +28,19 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 
 | Feature | Description | Target Audience | Available in Build |
 |---------|-------------|-----------------|--------------------|
-| Colorblind mode        | Applies filters that adjust the displayed colors for colorblind users.      | End users        | 20348.1463       |
-| Start gestures settings        | Custom limitations for how the start menu can be opened.            | End users        | 20348.1468       |
+| [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 20348.1463       |
+| [Start gestures settings](#start-gestures-settings)        | Custom limitations for how the start menu can be opened.            | End users        | 20348.1468       |
+| [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 20348.1470 |
 
-### Colorblind mode
+### Color-blind mode
 
 Added in Insider build 20348.1463
 
-Colorblind mode is useful a great feature that makes HoloLens more accessible. The new colorblind mode can be found in the Settings app under **Settings** -> **Ease of Access** -> **Color filters**. Several new filters are available. Here's a visual example of some of the available filters.
+Color-blind mode is useful a great feature that makes HoloLens more accessible. The new color-blind mode can be found in the Settings app under **Settings** -> **Ease of Access** -> **Color filters**. Several new filters are available. Here's a visual example of some of the available filters.
 
-| Off | Greyscale | Tritanopia |
+| Off | Grey scale | Tritanopia |
 |-----|-----------|------------|
-| ![Color filter off](images/colorblind-off.png)   | ![Color filter greyscale](images/colorblind-greyscale.png)         | ![Color filter tritanopia](images/colorblind-tritanopia.png)          |
+| ![Color filter off](images/colorblind-off.png)   | ![Color filter grey scale](images/colorblind-greyscale.png)         | ![Color filter tritanopia](images/colorblind-tritanopia.png)          |
 
 ### Start gestures settings
 
@@ -64,16 +65,28 @@ If you find yourself wondering how to use your voice to open and close the Start
 - "Go to Start"  to bring up the Start menu
 - "Close" while looking at it to close
 
+### Single app kiosk policy for launching other apps
+
+Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful for example if you want to launch the Settings app to calibrate your device or change your Wi-fi.
+
+By default, launching applications via [Launcher API (Launcher Class (Windows.System) - Windows UWP applications)](/uwp/api/Windows.System.Launcher?view=winrt-22000&preserve-view=true) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowLaunchUriInSingleAppKiosk`
+
+- Bool value
+
 ### Fixes and improvements
 
 - Improvements to Moving Platform Mode when detecting the down direction.
 - Fixed an issue around update dialogs.
 - Updated inbox Microsoft Edge browser version.
 - Fixed an issue where toggling optional diagnostic data didn't persist the chosen setting in telemetry settings page after a reboot.
+- Fixed an issue where MDM enrollment was stuck when applied with runtime provisioning for local accounts.
+- Fixed an issue where kiosk mode was not falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
 
 ### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
 
-If a user has taken an update to one of the Insider flight, 20346.1466, and it doesn’t appear to be finishing the boot, a clean reflash may be required to move forward again. To see if you have encountered this:
+If a user has taken an update to the Insider flight, 20346.1466, and it doesn’t appear to be finishing the boot, a clean reflash may be required to move forward again. To see if you have encountered this:
 
 1. Reboot – Hold down the power until the LED’s step down.
 1. Power up.
