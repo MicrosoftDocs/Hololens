@@ -4,7 +4,7 @@ description: You can configure HoloLens to be shared by multiple Azure Active Di
 ms.prod: hololens
 ms.sitesec: library
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.topic: article
 ms.localizationpriority:
 ms.date: 1/4/2022
