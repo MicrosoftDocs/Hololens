@@ -4,10 +4,10 @@ description: You can configure HoloLens to be shared by multiple Azure Active Di
 ms.prod: hololens
 ms.sitesec: library
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.topic: article
 ms.localizationpriority:
-ms.date: 9/23/2021
+ms.date: 1/4/2022
 ms.reviewer: anisgup
 manager: sean-kerawala
 appliesto:
@@ -62,6 +62,7 @@ When sharing the device between multiple users, there are some physical consider
 - Consider how you plan to [clean the device](hololens2-maintenance.md) between users.
 - For a device with a single shared user if using a shared PIN/password for a single user, don't put the PIN/password on the side of the device.
 - For multiple devices with a single shared user, use various PINs/passwords.
+- Label your devices so users can find ones they already have used. Signing back into a previously used device to launch an app can take a little as 30 seconds with Iris, PIN, or FIDO2 security keys. Setting up a new device, either OOBE or adding a new user, and then launching an app can take as much as 5 minutes.
 
 ## Share with multiple people, each using their own account
 
