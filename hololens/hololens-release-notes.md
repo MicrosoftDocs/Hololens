@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 12/14/2021
+ms.date: 1/14/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -43,6 +43,41 @@ To help provide clarity this release notes page will only provide information fo
 | 20346                  | [Windows Holographic, version 21H1](#windows-holographic-version-21h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2)   | May 2021 <br> October 2021   | 20346.1002 <br> 20348.1432   |
 | 19041                  | [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) <br> [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2)    | May 2020 <br> Nov 2020     | 19041.1103 <br> 19041.1128   |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
+
+## Windows Holographic, version 21H2 - January 2022 Update
+
+- Build 20348.1442
+
+| Feature | Description | Target Audience |
+|---------|-------------|-----------------|
+| [Start gestures settings](#start-gestures-settings)        | Custom limitations for how the start menu can be opened.            | End users        |
+
+### Start gestures settings
+
+The team has implemented a solution for those who don't want the start menu popping up while doing tasks while looking at their hands, such as surgery and using apps like Remote Assist. Of course, this can also help in other scenarios.
+
+Open the **Start menu** and select the **Settings** app -> **System** -> **Start gestures**.
+
+![Start menu settings in the Settings app](images/start-menu-settings.jpg)
+
+Start gesture options:
+
+- Allow tapping the Star icon on your wrist to open the Start menu - *default*: On
+  - Require the Start icon to be looked at when you tap it - *default*: Unchecked
+  - Require the Start icon to be pressed for 2 seconds - *default*: Unchecked
+- Allow pinching your thumb and index finger, while looking at the Start icon on your wrist, to open the Start menu - *default*: On
+- Allow voice commands to open the Start menu - *default*: On
+
+If you find yourself wondering how to use your voice to open and close the Start menu:
+
+- "Go to Start"  to bring up the Start menu
+- "Close" while looking at it to close
+
+Improvements and fixes in the update:
+
+- Fixed an error when using Media Foundation Media Capture that prevented a developer from being able to create a MediaEncodingProfile using HEVC.
+- Corrects an issue preventing devices from booting correctly in previous flights.
+- Fixes an issue on the Windows Device Portal Deploy Apps panel when accessed from Internet Explorer 11.
 
 ## Windows Holographic, version 21H2 - December 2021 Update
 
