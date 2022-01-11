@@ -10,7 +10,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 12/14/2021
+ms.date: 1/14/2022
 ms.localizationpriority:
 ms.reviewer: 
 manager: ranjibb
@@ -29,7 +29,6 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 | Feature | Description | Target Audience | Available in Build |
 |---------|-------------|-----------------|--------------------|
 | [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 20348.1463       |
-| [Start gestures settings](#start-gestures-settings)        | Custom limitations for how the start menu can be opened.            | End users        | 20348.1468       |
 | [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 20348.1470 |
 
 ### Color-blind mode
@@ -41,29 +40,6 @@ Color-blind mode is useful a great feature that makes HoloLens more accessible. 
 | Off | Grey scale | Tritanopia |
 |-----|-----------|------------|
 | ![Color filter off](images/colorblind-off.png)   | ![Color filter grey scale](images/colorblind-greyscale.png)         | ![Color filter tritanopia](images/colorblind-tritanopia.png)          |
-
-### Start gestures settings
-
-Added in Insider build 20348.1468
-
-The team has implemented a solution for those who don't want the start menu popping up while doing tasks while looking at their hands, such as surgery and using apps like Remote Assist. Of course, this can also help in other scenarios.
-
-Open the **Start menu** and select the **Settings** app -> **System** -> **Start gestures**.
-
-![Start menu settings in the Settings app](images/start-menu-settings.jpg)
-
-Start gesture options:
-
-- Allow tapping the Star icon on your wrist to open the Start menu - *default*: On
-  - Require the Start icon to be looked at when you tap it - *default*: Unchecked
-  - Require the Start icon to be pressed for 2 seconds - *default*: Unchecked
-- Allow pinching your thumb and index finger, while looking at the Start icon on your wrist, to open the Start menu - *default*: On
-- Allow voice commands to open the Start menu - *default*: On
-
-If you find yourself wondering how to use your voice to open and close the Start menu:
-
-- "Go to Start"  to bring up the Start menu
-- "Close" while looking at it to close
 
 ### Single app kiosk policy for launching other apps
 
