@@ -112,6 +112,7 @@
 ## [Restart, reset, or recover HoloLens 2](hololens-recovery.md)
 
 # Resources
+## [Where to buy HoloLens 2](hololens2-purchase.md)
 ## [Support and help options](hololens2-support.md)
 ## [Autopilot support requests](hololens2-autopilot-registration-support.md)
 ## [HoloLens 2 release notes](hololens-release-notes.md)
