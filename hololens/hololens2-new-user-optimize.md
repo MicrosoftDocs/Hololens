@@ -51,7 +51,7 @@ If you are using Windows Configuration Designer to create provisioning packages,
 There are three other policies that affect the set up experience, by configuring them as well you reduce the number of screens in the set up experience.
 
 - Telemetry : Policy/System/AllowTelemetry
-- Speech : CORTANA?
+- Speech :  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! AllowCORTANA?
 - Location : Policy/System/AllowLocation
 
 ## Set up conditions
