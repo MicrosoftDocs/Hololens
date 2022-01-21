@@ -101,4 +101,4 @@ We're still a few steps away from being able to make that Remote Assist call. Us
 <img src="images/post-oobe-kisok-flowchart.jpg" alt="Post OOBE Kiosk flowchart">
 
 > [!NOTE]
-> After device set up the Microsoft Store app will check for updates for Remote Assist [and other in-box apps](link) approx every 24 hours.
+> After device set up the Microsoft Store app will check for updates for Remote Assist [and other in-box apps](hololens2-hardware.md#pre-installed-software) approx every 24 hours.
