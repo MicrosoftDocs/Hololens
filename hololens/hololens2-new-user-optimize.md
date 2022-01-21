@@ -53,7 +53,7 @@ There are three other policies that affect the set up experience, by configuring
 
 - Telemetry : Policy/System/AllowTelemetry
 - Speech :  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! AllowCORTANA?
-- Location : Policy/System/AllowLocation
+- Location : Policy/System/AllowLocation   OOOOOORRRRRRRRR Privacy/LetAppsAccessLocation
 
 ## Set up conditions
 
@@ -78,4 +78,27 @@ Let's walk through different scenarios in which your device needs to be set up. 
 **Instructions:** *Click the link matching what you see, your selection will determine the tabs you see in the next section.*
 <br> When you first boot on the device what do you see?
 
+- **A.** A swirl of colors
+- **B.** A previously signed in user or list of users
 
+[!INCLUDE[](includes/hololens-new-user.md)]
+
+[!INCLUDE[](includes/hololens-oobe-screens.md)]
+
+You may be asked to set up multi-factor authentication if it hasn't already been set up on this account.
+Calibration will start. Run through the calibration process following the gems with your eyes.
+Your device will prompt you to set up Iris sign in. Go ahead and register following the dots with your eyes.
+You'll be asked to set up a PIN for your login. This is for this device only.
+You'll be shown prompts for voice, location, and telemetry. (Please enable telemetry as it helps us identify and fix issues.) <sup>2</sup>
+You'll be shown how to open the start menu. Hold your palm facing you and tap your wrist. Do it again and finish the training. <sup>2</sup>
+
+<sup>2</sup> - These screen can be skipped if these settings were previously configured by policy.
+
+You'll now have completed set up. Congrats!
+
+We're still a few steps away from being able to make that Remote Assist call. Using the following flow chart we can determine the environment you are in and how to use Remote Assist.
+
+<img src="images/post-oobe-kisok-flowchart.jpg" alt="Post OOBE Kiosk flowchart">
+
+> [!NOTE]
+> After device set up the Microsoft Store app will check for updates for Remote Assist [and other in-box apps](link) approx every 24 hours.
