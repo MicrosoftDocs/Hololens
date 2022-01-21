@@ -22,9 +22,9 @@ Your device needs to be set up. During this moment where the colors are swirling
 **Instructions:** *Click the link matching what you see, your selection will determine the tabs you see in the next section.*
 <br> When you first boot on the device what do you see?
 
-- **A.** End user license agreement
-- **B.** Company logo and set up info
-- **C.** A battery warning
+- **A.** [End user license agreement](#end-user-license-agreement-1)
+- **B.** [Company logo and set up info](#end-user-license-agreement-1)
+- **C.** [A battery warning](#end-user-license-agreement-1)
 
 # [Users](#tab/Users)
 
