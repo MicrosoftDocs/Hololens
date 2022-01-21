@@ -7,7 +7,7 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority:
-ms.date: 11/12/2021
+ms.date: 1/19/2022
 ms.reviewer: aboeger
 manager: ranjibb
 appliesto:
@@ -37,7 +37,7 @@ Added in [Windows Holographic, version 20H2](hololens-release-notes-2004.md#wind
 
 Added in [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2):
 
-- [RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly) policy enables the Microsoft Store app to be configured to only show the private store configured for your organization, limiting access to only the apps you’ve made available.
+- [RequirePrivateStoreOnly](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly) policy enables the Microsoft Store app to be configured to only show the private store configured for your organization, limiting access to only the apps you’ve made available.
 
 ## Hardware restrictions
 

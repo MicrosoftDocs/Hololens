@@ -4,7 +4,7 @@ description: Learn how to set up, configure, and troubleshoot Autopilot on HoloL
 author: evmill
 ms.author: v-evmill
 ms.reviewer:  lavinds
-ms.date: 12/9/2021
+ms.date: 1/20/2022
 ms.prod: hololens
 ms.topic: article
 ms.custom: 
@@ -20,7 +20,7 @@ manager: sekerawa
 
 ## Overview
 
-To deploy at scale, we recommend getting started with Windows Autopilot. It’s considered “low touch” in that it dramatically simplifies setting up HoloLens for both IT and end users. 
+To deploy at scale, we recommend getting started with Windows Autopilot. It’s considered “low touch” in that it dramatically simplifies setting up HoloLens for both IT and end users.
 
 At a high level, an IT administrator will typically create the business-ready configurations and register HoloLens 2 devices on MDM portals. When HoloLens 2 devices boot with out-of-box experience (OOBE) and connects with the Internet, business-ready configurations for registered HoloLens 2 device are automatically downloaded and applied to make devices business-ready without any user intervention.
 
@@ -31,7 +31,7 @@ For more information, see the [Overview of Windows Autopilot | Microsoft Docs](/
 > [!NOTE]
 > Autopilot configuration for HoloLens in Microsoft Endpoint Manager is transitioning from **Public Preview** to **General Availability**. All tenants will be able to setup Autopilot in the MEM admin center.
 
-Starting with Windows Holographic version 2004, HoloLens 2 supports Windows Autopilot [Self-Deploying Mode](/mem/autopilot/self-deploying) with Microsoft Intune (third party MDMs are not supported). This configuration reduces inventory management overhead, cost of hands-on device preparation and support calls from employees during the setup experience. Learn more in the [Windows Autopilot](/mem/autopilot/windows-autopilot) documentation.
+Starting with Windows Holographic version 2004, HoloLens 2 supports Windows Autopilot [Self-Deploying Mode](/mem/autopilot/self-deploying) with Microsoft Intune or [Ivanti Neurons for MDM](http://mi.extendedhelp.mobileiron.com/81/all/en/Configuring%20Windows%20Autopilot%20Profiles.htm) (former Mobileiron Cloud). This configuration reduces inventory management overhead, cost of hands-on device preparation and support calls from employees during the setup experience. Learn more in the [Windows Autopilot](/mem/autopilot/windows-autopilot) documentation.
 
 Like for Surface devices, it is recommended that customers work with their Microsoft [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) (reseller or distributor) to get devices registered with the Autopilot service through Partner Center.
 
@@ -323,7 +323,7 @@ OOBE will wait indefinitely for Autopilot profile to download and following dial
 ### Issue - MDM enrollment fails with error 0x80180014 error code during Autopilot.
 
  **Symptoms**
- 
+
 This is an error shown during the Autopilot process on device. This issue shown only applies when a HoloLens device has done the following:
 
 1. Already have gone through Autopilot at least once.
