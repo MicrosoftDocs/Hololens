@@ -44,6 +44,7 @@ If you want to speed up both Out of Box Experience (OOBE) set up or for each new
 
 If you are using Windows Configuration Designer to create provisioning packages, you can use the wizard to **Provision HoloLens devices** -> **Provision HoloLens 2 devices** and ensure you properly configure everything in the Set up device page to help streamline OOBE.
 
+<br>
 <img src="images/WCD-OOBE-skip.jpg" width="500px" alt="WCD OOBE First Experience">
 
 [FirstExperience (Windows Configuration Designer reference)](/windows/configuration/wcd/wcd-firstexperience)
@@ -62,7 +63,7 @@ In general there are a few scenarios when you pick up a device. In those scenari
 - You haven't signed into this device yet
 - No one has set up this device yet
 
-The modifiers that can increase or decrese the time to set up are typically:
+The modifiers that can increase or decrease the time to set up are typically:
 
 - You use a provisioning package to apply settings all at once, instead of manually during set up
 - You your device already has helpful set up policies, due to someone else applying them via provisioning or from going through Autopilot set up
@@ -73,4 +74,8 @@ The modifiers that can increase or decrese the time to set up are typically:
 ## Set up flows
 
 Let's walk through different scenarios in which your device needs to be set up. This excludes signing back into a device that already has your account on it:
+
+**Instructions:** *Click the link matching what you see, your selection will determine the tabs you see in the next section.*
+<br> When you first boot on the device what do you see?
+
 
