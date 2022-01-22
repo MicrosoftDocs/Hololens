@@ -92,7 +92,7 @@ Let's walk through different scenarios in which your device needs to be set up. 
 1. You'll be shown prompts for voice, location, and telemetry. (Please enable telemetry as it helps us identify and fix issues.) <sup>2</sup>
 1. You'll be shown how to open the start menu. Hold your palm facing you and tap your wrist. Do it again and finish the training. <sup>2</sup>
 
-<sup>2</sup> - These screen can be skipped if these settings were previously configured by policy.
+<sup>2</sup> - These screens can be skipped if these settings were previously configured by policy.
 
 You'll now have completed set up. Congrats!
 
