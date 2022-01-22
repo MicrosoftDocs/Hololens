@@ -23,8 +23,8 @@ Your device needs to be set up. During this moment where the colors are swirling
 <br> When you first boot on the device what do you see?
 
 - **A.** [End user license agreement](/hololens/hololens2-new-user-optimize?tabs=OOBEswirl%2CEULA#end-user-license-agreement-1)
-- **B.** [Company logo and set up info](/hololens/hololens2-new-user-optimize?tabs=OOBEswirl%2CAP#end-user-license-agreement-1)
-- **C.** [A battery warning](/hololens/hololens2-new-user-optimize?tabs=OOBEswirl%2Cbattery#end-user-license-agreement-1)
+- **B.** [Company logo and set up info](/hololens/hololens2-new-user-optimize?tabs=OOBEswirl%2CAP#company-logo-and-set-up-info-1)
+- **C.** [A battery warning](/hololens/hololens2-new-user-optimize?tabs=OOBEswirl%2Cbattery#a-battery-warning-1)
 
 # [Users](#tab/Users)
 
