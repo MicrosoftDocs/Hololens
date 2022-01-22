@@ -78,8 +78,8 @@ Let's walk through different scenarios in which your device needs to be set up. 
 **Instructions:** *Click the link matching what you see, your selection will determine the tabs you see in the next section.*
 <br> When you first boot on the device what do you see?
 
-- **A.** [A swirl of colors](/hololens/hololens2-new-user-optimize?tabs=OOBEswirl%2CsecondBlank)
-- **B.** [A previously signed in user or list of users](/hololens/hololens2-new-user-optimize?tabs=Users)
+- **A.** [A swirl of colors](/hololens/hololens2-new-user-optimize?tabs=OOBEswirl%2CsecondBlank#a-swirl-of-colors-1)
+- **B.** [A previously signed in user or list of users](/hololens/hololens2-new-user-optimize?tabs=Users#a-previously-signed-in-user-or-list-of-users)
 
 [!INCLUDE[](includes/hololens-new-user.md)]
 

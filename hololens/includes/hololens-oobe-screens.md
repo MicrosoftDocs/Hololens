@@ -1,4 +1,4 @@
-# [User list](#tab/secondBlank)
+# [Blank choice 2](#tab/secondBlank)
 
 #### This space also intentionally left blank
 
