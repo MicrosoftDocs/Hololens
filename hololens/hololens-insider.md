@@ -10,7 +10,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 1/14/2022
+ms.date: 1/24/2022
 ms.localizationpriority:
 ms.reviewer: 
 manager: ranjibb
@@ -30,6 +30,8 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 |---------|-------------|-----------------|--------------------|
 | [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 20348.1463       |
 | [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 20348.1470 |
+| Moving Platform Mode Settings | Ends users | 20348.1474 |
+| Moving Platform Mode MDM policies | Configures new MPM settings via MDM | IT Admins | 20348.1474 |
 
 ### Color-blind mode
 
@@ -50,6 +52,43 @@ By default, launching applications via [Launcher API (Launcher Class (Windows.Sy
 The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowLaunchUriInSingleAppKiosk`
 
 - Bool value
+
+### Moving Platform Mode Settings
+
+We've added new a new page to the Settings app to configure and control [Moving Platform Mode](hololens2-moving-platform.md). Being able to turn on Moving Platform Mode will no longer require needing to use device portal, which increases usability and security. User can reach the new page by opening the **Settings** app and selecting -> **System** -> **Holograms** and scroll down to see the Moving Platform Mode section and select **Setup Moving Platform Mode**.
+
+![How to reach the Moving Platform Mode page](images/mpm-from-holograms-settings.jpg)
+
+From this new page, users will be able to manually turn on Moving Platform Mode by adjusting the toggle.
+
+Uses can also manually set the down direction, if for instance you are using the device in such a way where you don't want gravity to be the down direction. This works well in instances where you may be lying down under what you are working on. Feel free to use this to suit your own space. You can also clear the down direction when done using the device so everything is oriented back to default afterwards.
+
+![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
+
+### Moving Platform Mode MDM policies
+
+#### MixedReality/ConfigureMovingPlatform
+
+This policy controls the behavior of moving platform feature on HoloLens 2, i.e. whether it is turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Please refer to [HoloLens 2 Moving Platform Mode](hololens2-moving-platform.md) for background information.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureMovingPlatform`
+
+Supported values:
+
+- 0 (Default) - Last set user's preference. Initial state is OFF and after that user's preference is persisted across reboots and is used to initialize the system.
+- 1 Force off - Moving platform is disabled and can not be changed by user.
+- 2 Force on - Moving platform is enabled and can not be changed by user.
+
+#### MixedReality/ManualDownDirectionDisabled
+
+This policy controls whether the user can change down direction manually or not. If no down direction is set by the user then an automatically calculated down direction is used by the system. This policy has no dependency on ConfigureMovingPlatform policy and they can be set independently.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ManualDownDirectionDisabled`
+
+Supported values:
+
+- False (Default) - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
+- True - User cannot manually change down direction and down direction will be always be determined automatically based on the measured gravity vector.
 
 ### Fixes and improvements
 
