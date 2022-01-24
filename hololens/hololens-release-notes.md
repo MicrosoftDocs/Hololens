@@ -122,7 +122,7 @@ To update to the latest release, open the Settings app, go to Update & Securit
 | [Use WDAC and LOB apps](#use-wdac-and-lob-apps) | Allows IT Admins to use their own apps and still use WDAC to block other apps. | IT Admins |
 | [Fixes and improvements](#fixes-and-improvements) | Fixes and improvements for HoloLens. | All |
 
-### IT Admin Feature Checklist
+### IT Admin Feature Checklist - 21H2
 
 ✔️ If you'd like to set a single Azure AD account to automatically log-in, [configure this new CSP.](#auto-login-policy-controlled-by-csp) <br>
 ✔️ If you'd like configure your apps to automatically attempt to update after failing to update, [set this new CSP for smart retry.](#smart-retry-for-app-updates) <br>
@@ -728,7 +728,7 @@ To set the volume of an individual app navigate to **Settings** > **System** > *
 
 Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the space bar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
 
-Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). 
+Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display).
 
 ### Power menu from Start
 
@@ -940,7 +940,7 @@ A few caveats about this preview offering:
 - HoloLens does not support deployment or delivery optimization for Windows Server Update Services endpoints.
 - Troubleshooting will require either diagnostics on the Connected Cache server or collecting a trace on HoloLens on HoloLens via **Settings** > **Update & Security** >  **Troubleshooting** >  **Windows Update**.
 
-### IT Admin - Update Checklist
+### IT Admin - Update Checklist - 21H1
 
 This checklist will help you know the new items that features that are being added in this feature update that may affect your current device management configurations, or new features you might wish to start using.
 
