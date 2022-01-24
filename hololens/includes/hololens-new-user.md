@@ -8,7 +8,7 @@ If you scrolled down and are reading this please [select a choice from above.](#
 
 #### A swirl of colors
 
-Your device needs to be set up. During this moment where the colors are swirling you may [apply provisioning packages](../hololens-provisioning.md) to [use policies to speed up your set up](#use-policies-to-speed-up-your-set-up)
+Your device needs to be set up. During this moment where the colors are swirling you may [apply provisioning packages](../hololens-provisioning.md) to [use policies to speed up your set up](/hololens/hololens2-new-user-optimize#use-policies-to-speed-up-your-setup)
 
 1. No one has set this device up set. You'll need to set it up first.
 1. Touch the **Windows Logo**. <sup>2</sup>
