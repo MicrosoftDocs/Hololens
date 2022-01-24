@@ -66,7 +66,7 @@ We've added new a new page to the Settings app to configure and control [Moving 
 
 From this new page, users will be able to manually turn on Moving Platform Mode by adjusting the toggle.
 
-Uses can also manually set the down direction, if for instance you are using the device in such a way where you don't want gravity to be the down direction. This works well in instances where you may be lying down under what you are working on. Feel free to use this to suit your own space. You can also clear the down direction when done using the device so everything is oriented back to default afterwards.
+Users can also manually set the down direction, if for instance you are using the device in such a way where you don't want gravity to be the down direction. This works well in instances where you may be lying down under what you are working on, or if your platform is rotated relative to gravity. Feel free to use this to suit your own space. You can also clear the down direction when done using the device so everything is oriented back to default afterwards.
 
 ![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
 
