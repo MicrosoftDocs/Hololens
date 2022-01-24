@@ -33,6 +33,11 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 | [Moving Platform Mode Settings](#moving-platform-mode-settings) | Toggle Moving Platform Mode and more via Settings | Ends users | 20348.1474 |
 | [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies) | Configures new MPM settings via MDM | IT Admins | 20348.1474 |
 
+### IT Admin Feature Checklist - Insider
+
+✔️ If you'd like to allow launching another app from a single app Kiosk (such as settings) check out the new [single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps).<br>
+✔️ If you use your HoloLens devices in a location that has dyanmic movement, consider setting these new [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies).
+
 ### Color-blind mode
 
 Added in Insider build 20348.1463
