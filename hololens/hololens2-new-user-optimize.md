@@ -26,15 +26,15 @@ The following are the average times for each scenario. Time was started from the
 | User exists on device, sign in                                                  | 0:30                    |
 | New user on device with first experience policies <sup>1</sup>                  | 3:15                    |
 | New user on device                                                              | 5:00                    |
-| Device needs to go through first time setup (OOBE)                             | 6:00                    |
-| Device needs to go through first time setup (OOBE) using provisioning packages |                         |
-| Device needs to go through first time setup (OOBE) and Autopilot               | 9:30                    |
+| Device needs to go through first-time setup (OOBE)                             | 6:00                    |
+| Device needs to go through first-time setup (OOBE) using provisioning packages |                         |
+| Device needs to go through first-time setup (OOBE) and Autopilot               | 9:30                    |
 
 <sup>1</sup> - These can be from either a provisioning package previously applied or from MDM, possibly applied during Autopilot.
 
 ### Use a device you have already used to get to your app fastest
 
-The key take away from this chart, is if you can use a device you have used before then you can sign in and use the app in less than a minute. If you have to go through setup then you will go over the minute mark.
+The key take away from this chart, is if you can use a device you have used before then you can sign in and use the app in less than a minute. If you have to go through setup, then you will go over the minute mark.
 
 Physically label your devices. Placing label either on the rear outer cover, or the outer arms closer to the front so they do not go into the rear outer cover. See [this diagram](images/hololens2-exploded-view-diagram.png) to see the names of parts.
 
@@ -66,7 +66,7 @@ In general there are a few scenarios when you pick up a device. In those scenari
 The modifiers that can increase or decrease the time to set up are typically:
 
 - You use a provisioning package to apply settings all at once, instead of manually during setup
-- You your device already has helpful setup policies, due to someone else applying them via provisioning or from going through Autopilot set up
+- Your device already has helpful setup policies, due to someone else applying them via provisioning or from going through Autopilot set up
 - Your device needs to go through autopilot, which takes some time
 - Your device was connected to the Internet and went through autopilot already, saving time
 - Your device's battery is low, which may pause Autopilot if it occurs
