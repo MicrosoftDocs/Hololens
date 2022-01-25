@@ -93,7 +93,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Manu
 Supported values:
 
 - False (Default) - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
-- True - User can’t manually change down direction and down direction will be always be determined automatically based on the measured gravity vector.
+- True - User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
 
 ### Fixes and improvements
 
