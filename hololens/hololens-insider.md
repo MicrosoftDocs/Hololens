@@ -36,7 +36,7 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 ### IT Admin Feature Checklist - Insider
 
 ✔️ If you'd like to allow launching another app from a single app Kiosk (such as settings) check out the new [single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps).<br>
-✔️ If you use your HoloLens devices in a location that has dyanmic movement, consider setting these new [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies).
+✔️ If you use your HoloLens devices in a location that has dynamic movement, consider setting these new [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies).
 
 ### Color-blind mode
 
@@ -50,7 +50,7 @@ Color-blind mode is useful a great feature that makes HoloLens more accessible. 
 
 ### Single app kiosk policy for launching other apps
 
-Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful for example if you want to launch the Settings app to calibrate your device or change your Wi-fi.
+Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example,  if you want to launch the Settings app to calibrate your device or change your Wi-fi.
 
 By default, launching applications via [Launcher API (Launcher Class (Windows.System) - Windows UWP applications)](/uwp/api/Windows.System.Launcher?view=winrt-22000&preserve-view=true) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
 
@@ -66,7 +66,7 @@ We've added new a new page to the Settings app to configure and control [Moving 
 
 From this new page, users will be able to manually turn on Moving Platform Mode by adjusting the toggle.
 
-Users can also manually set the down direction, if for instance you are using the device in such a way where you don't want gravity to be the down direction. This works well in instances where you may be lying down under what you are working on, or if your platform is rotated relative to gravity. Feel free to use this to suit your own space. You can also clear the down direction when done using the device so everything is oriented back to default afterwards.
+Users can also manually set the down direction, if, for instance,  you’re using the device in such a way where you don't want gravity to be the down direction. This works well in instances where you may be lying down under what you are working on, or if your platform is rotated relative to gravity. Feel free to use this to suit your own space. You can also clear the down direction when done using the device so everything is oriented back to default afterwards.
 
 ![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
 
@@ -74,26 +74,26 @@ Users can also manually set the down direction, if for instance you are using th
 
 #### MixedReality/ConfigureMovingPlatform
 
-This policy controls the behavior of moving platform feature on HoloLens 2, i.e. whether it is turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Please refer to [HoloLens 2 Moving Platform Mode](hololens2-moving-platform.md) for background information.
+This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it’s turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Please refer to [HoloLens 2 Moving Platform Mode](hololens2-moving-platform.md) for background information.
 
 The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureMovingPlatform`
 
 Supported values:
 
 - 0 (Default) - Last set user's preference. Initial state is OFF and after that user's preference is persisted across reboots and is used to initialize the system.
-- 1 Force off - Moving platform is disabled and can not be changed by user.
-- 2 Force on - Moving platform is enabled and can not be changed by user.
+- 1 Force off - Moving platform is disabled and cannot be changed by user.
+- 2 Force on - Moving platform is enabled and cannot be changed by user.
 
 #### MixedReality/ManualDownDirectionDisabled
 
-This policy controls whether the user can change down direction manually or not. If no down direction is set by the user then an automatically calculated down direction is used by the system. This policy has no dependency on ConfigureMovingPlatform policy and they can be set independently.
+This policy controls whether the user can change down direction manually or not. If no down direction is set by the user, then an automatically calculated down direction is used by the system. This policy has no dependency on ConfigureMovingPlatform policy and they can be set independently.
 
 The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ManualDownDirectionDisabled`
 
 Supported values:
 
 - False (Default) - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
-- True - User cannot manually change down direction and down direction will be always be determined automatically based on the measured gravity vector.
+- True - User can’t manually change down direction and down direction will be always be determined automatically based on the measured gravity vector.
 
 ### Fixes and improvements
 
@@ -102,19 +102,19 @@ Supported values:
 - Updated inbox Microsoft Edge browser version.
 - Fixed an issue where toggling optional diagnostic data didn't persist the chosen setting in telemetry settings page after a reboot.
 - Fixed an issue where MDM enrollment was stuck when applied with runtime provisioning for local accounts.
-- Fixed an issue where kiosk mode was not falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
+- Fixed an issue where kiosk mode wasn’t falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
 - Addressed an issue that prevented the uninstall of side loaded apps in certain scenarios.
 
 ### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
 
-If a user has taken an update to the Insider flight, 20346.1466, and it doesn’t appear to be finishing the boot, a clean reflash may be required to move forward again. To see if you have encountered this:
+If a user has taken an update to the Insider flight, 20346.1466, and it doesn’t appear to be finishing the boot, a clean reflash may be required to move forward again. To see if you’ve encountered this:
 
 1. Reboot – Hold down the power until the LED’s step down.
 1. Power up.
 1. Confirm you see the Windows flag at the beginning of the boot and it goes black shortly after that.
 1. Connect your HoloLens2 to your PC with USB and run Advanced Recovery companion.
 1. Select the HoloLens.
-1. If the version says you are running the 20346.1466 build, you likely hit this issue.
+1. If the version says you’re running the 20346.1466 build, you likely hit this issue.
 
 #### Who does this tend to affect
 
@@ -122,7 +122,7 @@ Users who have been using their device without flashing it since [Windows Hologr
 
 #### Users who are typically unaffected
 
-Users who have flash their device, or unboxed their device, and started using it since [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1).
+Users who have flashed their device, or unboxed their device, and started using it since [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1).
 
 #### Workaround
 
@@ -143,7 +143,7 @@ On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows In
 > [!NOTE]
 > In order to enroll your device in Insider builds, you'll need to enable optional telemetry. If you have not done this already, open the Settings app and select **Privacy** > **Diagnostics & feedback** and then select **Optional diagnostics data**.
 
-Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
+Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here’s what that mapping looks like:
 
 ![Windows Insider Channels explanation.](images/WindowsInsiderChannels.png)
 
