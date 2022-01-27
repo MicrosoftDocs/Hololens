@@ -42,7 +42,7 @@ Physically label your devices. Placing label either on the rear outer cover, or 
 
 If you want to speed up both Out of Box Experience (OOBE) set up or for each new user on devices, then you want to set first experience policy.
 
-If you are using Windows Configuration Designer to create provisioning packages, you can use the wizard to **Provision HoloLens devices** -> **Provision HoloLens 2 devices** and ensure you properly configure everything in the Set up device page to help streamline OOBE.
+If you're using Windows Configuration Designer to create provisioning packages, you can use the wizard to **Provision HoloLens devices** -> **Provision HoloLens 2 devices** and ensure you properly configure everything in the Set up device page to help streamline OOBE.
 
 <br>
 <img src="images/WCD-OOBE-skip.jpg" width="500px" alt="WCD OOBE First Experience">
@@ -88,15 +88,15 @@ Let us walk through different scenarios in which your device needs to be set up.
 1. You may be asked to set up multi-factor authentication if it has not already been set up on this account.
 1. Calibration will start. Run through the calibration process following the gems with your eyes.
 1. Your device will prompt you to set up Iris sign in. Go ahead and register following the dots with your eyes.
-1. You will be asked to set up a PIN for your login. This is for this device only.
-1. You will be shown prompts for voice, location, and telemetry. (Please enable telemetry as it helps us identify and fix issues.) <sup>2</sup>
-1. You will be shown how to open the start menu. Hold your palm facing you and tap your wrist. Do it again and finish the training. <sup>2</sup>
+1. You'll be asked to set up a PIN for your login. This is for this device only.
+1. You'll be shown prompts for voice, location, and telemetry. (Please enable telemetry as it helps us identify and fix issues.) <sup>2</sup>
+1. You'll be shown how to open the start menu. Hold your palm facing you and tap your wrist. Do it again and finish the training. <sup>2</sup>
 
 <sup>2</sup> - These screens can be skipped if these settings were previously configured by policy.
 
-You will now have completed set up. Congrats!
+You'll now have completed set up. Congrats!
 
-We are still a few steps away from being able to make that Remote Assist call. Using the following flow chart we can determine the environment you are in and how to use Remote Assist.
+We are still a few steps away from being able to make that Remote Assist call. Using the following flow chart we can determine the environment you're in and how to use Remote Assist.
 
 <img src="images/post-oobe-kisok-flowchart.jpg" alt="Post OOBE Kiosk flowchart">
 
