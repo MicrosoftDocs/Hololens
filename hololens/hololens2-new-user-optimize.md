@@ -52,7 +52,7 @@ If you are using Windows Configuration Designer to create provisioning packages,
 There are three other policies that affect the setup experience, by configuring them as well you reduce the number of screens in the setup experience.
 
 - Telemetry: Policies/System/AllowTelemetry
-- Speech:  Policies/AllowInputPersonalization
+- Speech: Policies/AllowInputPersonalization
 - Location: Policies/System/AllowLocation
 
 ## Set up conditions
