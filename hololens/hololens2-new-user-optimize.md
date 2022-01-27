@@ -1,7 +1,7 @@
 ---
 title: Set up users on HoloLens 2 quickly
 description: Learn how to set up your HoloLens 2 for users quickly, and what can happen that affects set up. 
-ms.date: 1/24/2022
+ms.date: 1/28/2022
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -51,9 +51,9 @@ If you are using Windows Configuration Designer to create provisioning packages,
 
 There are three other policies that affect the setup experience, by configuring them as well you reduce the number of screens in the setup experience.
 
-- Telemetry: Policy/System/AllowTelemetry
-- Speech:  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! AllowCORTANA?
-- Location: Policy/System/AllowLocation   OOOOOORRRRRRRRR Privacy/LetAppsAccessLocation
+- Telemetry: Policies/System/AllowTelemetry
+- Speech:  Policies/AllowInputPersonalization
+- Location: Policies/System/AllowLocation   OOOOOORRRRRRRRR Policies/Privacy/LetAppsAccessLocation
 
 ## Set up conditions
 
