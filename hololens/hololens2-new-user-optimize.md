@@ -53,7 +53,7 @@ There are three other policies that affect the setup experience, by configuring 
 
 - Telemetry: Policies/System/AllowTelemetry
 - Speech:  Policies/AllowInputPersonalization
-- Location: Policies/System/AllowLocation   OOOOOORRRRRRRRR Policies/Privacy/LetAppsAccessLocation
+- Location: Policies/System/AllowLocation
 
 ## Set up conditions
 
