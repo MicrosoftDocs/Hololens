@@ -15,33 +15,33 @@ appliesto:
 
 # HoloLens 2 new user best practices
 
-Often times organizations have many devices and lots of different people who use those devices. When people are looking to use a HoloLens 2 device, they often want to get straight to their app. This can sometimes be hindered by having to do additional setup. In this article we will cover the best ways to reduce set up time, best practices, and cover variations in logging into a device. In all these scenarios we are talking about scenarios in which a second user can log on to the device, so all these scenarios use AAD identities.
+Often organizations have many devices and lots of different people who use those devices. When people are looking to use a HoloLens 2 device, they often want to get straight to their app. This can sometimes be hindered by having to do additional setup. In this article we’ll cover the best ways to reduce set up time, best practices, and cover variations in logging into a device. In all these scenarios we’re talking about scenarios in which a second user can use the device, so all these scenarios use Azure AD identities.
 
 ## Best practices
 
-The following are the average times for each scenario. Time was started from the moment the user interacted with the device after it was booted, and stopped when they were in the Remote Assist app.
+The following are the average lengths for each scenario.
 
 | Scenario start to app launch                                                    | Average time in minutes | Best practices |
 |---------------------------------------------------------------------------------|-------------------------|---|
 | User exists on device, sign in existing account                                                 | Under a minute                    |   |
 | New user on device                                                              | Short                   |   |
-| Device needs to go through first-time setup (OOBE)                             | Moderate                    |   |
+| Device needs to go through first-time setup or the Out of Box Experience (OOBE)                             | Moderate                    |   |
 
 ### Use a device you have already used to get to your app fastest
 
-The key take away from this chart, is if you can use a device you have used before then you can sign in and use the app in less than a minute. If you have to go through setup, then you will take a few minutes. We highly suggest you [physically label your devices])(#physically-label-your-devices)
+The key take away from this chart, is if you can use a device you’ve used before then you can sign in and use the app in less than a minute. If you have to go through setup, then you’ll take a few minutes. We highly suggest you [physically label your devices])(#physically-label-your-devices)
 
-### Have a designated set up person
+### Have a designated setup person
 
-Have someone at your location who sets up your devices. By setting up devices in advance you can ensure that when the HoloLens reaches the end user that the device is configured with any policies and apps they'll need. It will also help shorten the amount of time it takes for them to set up.
+Have someone at your location who sets up your devices. By setting up devices in advance, you can ensure that when the HoloLens reaches the end user that the device is configured with any policies and apps they'll need. It will also help shorten the amount of time it takes for them to set up.
 
-#### Pre set up Autopilot
+#### Pre setup Autopilot
 
-If your devices are set up to go through [Autopilot](hololens2-autopilot.md), then take those devices through Autopilot. It will happen regardless, but by doing it now you save your end user several minutes of time. Autopilot can apply helpful settings to speed up the new user process, as well as deploy your apps to the device.
+If your devices are set up to go through [Autopilot](hololens2-autopilot.md), then take those devices through Autopilot. It will happen regardless, but by doing it now you save your end-user several minutes of time. Autopilot can apply helpful settings to speed up the new user process, as well as deploy your apps to the device.
 
 - If you have an Ethernet to USB-C adapter, you can plug in your devices the moment OOBE starts to begin autopilot without having to wear the devices.
 - You can also create a USB-C flash drive with a [provisioning package](hololens-provisioning.md) that contains your Wi-Fi info. Plug it in when OOBE starts, and confirm applying the provisioning package. Wi-fi will be detected and you can start Autopilot.
-- If you don't have those options available then manually proceed through OOBE until Autopilot starts.
+- If you don't have those options available, then manually proceed through OOBE until Autopilot starts.
 
 #### Provision the device in advance
 
@@ -49,16 +49,16 @@ You can use a [provisioning package](hololens-provisioning.md) to apply both hel
 
 #### Physically label your devices
 
-Place a label either on the rear outer cover, or the outer arms closer to the front so they do not go into the rear outer cover. See [this diagram](images/hololens2-exploded-view-diagram.png) to see the names of parts.
+Place a label either on the rear outer cover, or the outer arms closer to the front so they don’t go into the rear outer cover. See [this diagram](images/hololens2-exploded-view-diagram.png) to see the names of parts.
 
-By having a labeled device users can quickly pick up a device they've used before. It can also help recognize other things such as a device that's known not to be working, or which ones were just used and still need charging.
+By having a labeled device users can quickly pick up a device, they've used before. It can also help recognize other things such as a device that's known not to be working, or which ones were just used and still need charging.
 
 ### Fastest to log in to an existing account
 
-When signing back into a device there are several methods you can use. We will cover the fastest three.
+When signing back into a device, there are several methods you can use. We’ll cover the fastest three.
 
-**Iris** : Once Iris is setup, either during OOBE or in Settings, a user can sign back in with Iris. This takes no input on behalf of the user and they are instantly signed in when recognized.
-**PIN** : A PIN has a minimum requirement of 6 numbers, this is much faster than typing in a lengthy password with multiple requirements.
+**Iris** : Once Iris is set up, either during OOBE or in Settings, a user can sign back in with Iris. This takes no input on behalf of the user and they’re instantly signed in when recognized.
+**PIN** : A PIN has a minimum requirement of six numbers, this is much faster than typing in a lengthy password with multiple requirements.
 **FIDO2 Security key** : A security key will allow someone to login with a PIN (for the key) and a touch, this is quite fast. Also when setting up a new user on a device using a FIDO2 security key won't require them to using their phone for Multi-factor authentication.
 
 ### Use policies to speed up your setup
@@ -67,7 +67,7 @@ When signing back into a device there are several methods you can use. We will c
 
 If you want to speed up both Out of Box Experience (OOBE) set up or for each new user on devices, then you want to set first experience policy.
 
-If you're using Windows Configuration Designer to create provisioning packages, you can use the wizard to **Provision HoloLens devices** -> **Provision HoloLens 2 devices** and ensure you properly configure everything in the Set up device page to help streamline OOBE.
+If you're using Windows Configuration Designer to create provisioning packages, you can use the wizard to **Provision HoloLens devices** -> **Provision HoloLens 2 devices** and ensure you properly configure everything in the Set-up device page to help streamline OOBE.
 
 <br>
 <img src="images/WCD-OOBE-skip.jpg" width="500px" alt="WCD OOBE First Experience">
@@ -76,7 +76,7 @@ If you're using Windows Configuration Designer to create provisioning packages, 
 
 #### Additional policies
 
-There are three other policies that affect the setup experience, by configuring them as well you reduce the number of screens in the setup experience. When setting up additional users you will also see screens for speech and location. By configuring the setting for the device, no additional users see those confirmations.
+There are three other policies that affect the setup experience, by configuring them as well you reduce the number of screens in the setup experience. When setting up additional users, you’ll also see screens for speech and location. By configuring the setting for the device, no additional users see those confirmations.
 
 - Telemetry: Policies/System/AllowTelemetry
 - Speech: Policies/AllowInputPersonalization
@@ -86,8 +86,8 @@ There are three other policies that affect the setup experience, by configuring 
 
 In general there are a few scenarios when you pick up a device. In those scenarios there can also be some variations that can speed up (or slow down) your setup. The general states you can find a device in when picking it up to use it are:
 
-- You have signed into this device already
-- You have not signed into this device yet
+- You’ve signed into this device already
+- You haven’t signed into this device yet
 - No one has set up this device yet
 
 The modifiers that can increase or decrease the time to set up are typically:
@@ -102,7 +102,7 @@ The modifiers that can increase or decrease the time to set up are typically:
 
 Let us walk through different scenarios in which your device needs to be set up. This excludes signing back into a device that already has your account on it:
 
-**Instructions:** *Click the link matching what you see, your selection will determine the tabs you see in the next section.*
+**Instructions:** *Select the link matching what you see, your selection will determine the tabs you see in the next section.*
 <br> When you first boot on the device what do you see?
 
 - **A.** [A swirl of colors](/hololens/hololens2-new-user-optimize?tabs=OOBEswirl%2CsecondBlank#a-swirl-of-colors-1)
@@ -112,7 +112,7 @@ Let us walk through different scenarios in which your device needs to be set up.
 
 [!INCLUDE[](includes/hololens-oobe-screens.md)]
 
-1. You may be asked to set up multi-factor authentication if it has not already been set up on this account.
+1. You may be asked to set up multi-factor authentication if it hasn’t already been set up on this account.
 1. Calibration will start. Run through the calibration process following the gems with your eyes.
 1. Your device will prompt you to set up Iris sign in. Go ahead and register following the dots with your eyes.
 1. You'll be asked to set up a PIN for your login. This is for this device only.
@@ -123,7 +123,7 @@ Let us walk through different scenarios in which your device needs to be set up.
 
 You'll now have completed set up. Congrats!
 
-We are still a few steps away from being able to make that Remote Assist call. Using the following flow chart we can determine the environment you're in and how to use Remote Assist.
+We’re still a few steps away from being able to make that Remote Assist call. Using the following flow chart we can determine the environment you're in and how to use Remote Assist.
 
 <img src="images/post-oobe-kisok-flowchart.jpg" alt="Post OOBE Kiosk flowchart">
 
