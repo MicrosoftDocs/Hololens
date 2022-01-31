@@ -1,7 +1,7 @@
 ---
 title: Set up users on HoloLens 2 quickly
 description: Learn how to set up your HoloLens 2 for users quickly, and what can happen that affects set up. 
-ms.date: 1/28/2022
+ms.date: 1/31/2022
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -15,7 +15,10 @@ appliesto:
 
 # HoloLens 2 new user best practices
 
-Often organizations have many devices and lots of different people who use those devices. When people are looking to use a HoloLens 2 device, they often want to get straight to their app. This can sometimes be hindered by having to do additional setup. In this article we’ll cover the best ways to reduce set up time, best practices, and cover variations in logging into a device. In all these scenarios we’re talking about scenarios in which a second user can use the device, so all these scenarios use Azure AD identities.
+Often organizations have many devices and lots of different people who use those devices. When people are looking to use a HoloLens 2 device, they often want to get straight to their app. This can sometimes be hindered by having to do additional setup. In this article we’ll cover the best ways to reduce set up time, best practices, and cover variations in logging into a device.
+
+> [!NOTE]
+> In all these scenarios we’re talking about scenarios in which a second user can use the device, so all these scenarios use Azure AD identities.
 
 ## Best practices
 
@@ -23,9 +26,9 @@ The following are the average lengths for each scenario.
 
 | Scenario start to app launch                                                    | Average time in minutes | Best practices |
 |---------------------------------------------------------------------------------|-------------------------|---|
-| User exists on device, sign in existing account                                                 | Under a minute                    |   |
-| New user on device                                                              | Short                   |   |
-| Device needs to go through first-time setup or the Out of Box Experience (OOBE)                             | Moderate                    |   |
+| User exists on device, sign in existing account                                                 | Under a minute                    | [Use a device you've used](#use-a-device-you-have-already-used-to-get-to-your-app-fastest), [Use labels](#physically-label-your-devices), [Fast logins](#fastest-to-log-in-to-an-existing-account)    |
+| New user on device                                                              | Short                                             |   |
+| Device needs to go through first-time setup or the Out of Box Experience (OOBE)                             | Moderate              |   |
 
 ### Use a device you have already used to get to your app fastest
 
@@ -47,6 +50,8 @@ If your devices are set up to go through [Autopilot](hololens2-autopilot.md), th
 
 You can use a [provisioning package](hololens-provisioning.md) to apply both helpful settings to speed up the new user process, as well as deploy your apps to the device. Take a look at [use policies to speed up your setup](#use-policies-to-speed-up-your-setup) to see which policies speed up device set up for the first user, and for each new user.
 
+If you complete OOBE and set yourself up as a user then when your end users pick up the device they will simply have a scenario of adding themselves as a new user.
+
 #### Physically label your devices
 
 Place a label either on the rear outer cover, or the outer arms closer to the front so they don’t go into the rear outer cover. See [this diagram](images/hololens2-exploded-view-diagram.png) to see the names of parts.
@@ -57,9 +62,21 @@ By having a labeled device users can quickly pick up a device, they've used befo
 
 When signing back into a device, there are several methods you can use. We’ll cover the fastest three.
 
-**Iris** : Once Iris is set up, either during OOBE or in Settings, a user can sign back in with Iris. This takes no input on behalf of the user and they’re instantly signed in when recognized.
-**PIN** : A PIN has a minimum requirement of six numbers, this is much faster than typing in a lengthy password with multiple requirements.
-**FIDO2 Security key** : A security key will allow someone to login with a PIN (for the key) and a touch, this is quite fast. Also when setting up a new user on a device using a FIDO2 security key won't require them to using their phone for Multi-factor authentication.
+- **Iris** : Once Iris is set up, either during OOBE or in Settings, a user can sign back in with Iris. This takes no input on behalf of the user and they’re instantly signed in when recognized.
+- **PIN** : A PIN has a minimum requirement of six numbers, this is much faster than typing in a lengthy password with multiple requirements.
+- **FIDO2 Security key** : A security key will allow someone to login with a PIN (for the key) and a touch, this is quite fast. Also when setting up a new user on a device using a FIDO2 security key won't require them to using their phone for Multi-factor authentication.
+
+### Fastest ways to set up account on new device
+
+When you are getting your account on a new device for the first time you don't want to be typing out your full username and password using the holographic keyboard. Depending on the scenario you're in there's two faster ways.
+
+#### Adding your user to an existing device
+
+Use a FIDO2 Security key. Why? By using a FIDO2 security key you don't have to type in your user name and password, or even use multi factor authentication. You'll able to add your user to the device super fast.
+
+#### Setting up a device for the first time
+
+When in the EULA after confirming it's a work device, don't start typing your username. Instead select **sign in from another device**. This will let you go to [aka.ms/devicelogin](aka.ms/devicelogin) on another device, type in the 9 character code, and proceed to sign in. If you've already logged into your account on that device, then you'll able to select your account. If you haven't, then you'll be able to use a keyboard you are more familiar with.
 
 ### Use policies to speed up your setup
 
@@ -77,6 +94,9 @@ If you're using Windows Configuration Designer to create provisioning packages, 
 #### Additional policies
 
 There are three other policies that affect the setup experience, by configuring them as well you reduce the number of screens in the setup experience. When setting up additional users, you’ll also see screens for speech and location. By configuring the setting for the device, no additional users see those confirmations.
+
+> [!NOTE]
+> For both the Speech and Location settings, the consent screen will not be shown if the feature is disabled. If it is left as default (user choice) or set to on, the user is still presented with the consent screen.
 
 - Telemetry: Policies/System/AllowTelemetry
 - Speech: Policies/AllowInputPersonalization
