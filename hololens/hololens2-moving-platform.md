@@ -128,9 +128,7 @@ To enable Moving Platform mode this way, first [enable Device Portal](/windows/m
 
    ![Third image.](.\images\mpm-03.png)
 
-4. Reboot your device, which can be done either via the Device Portal **Power** menu at the top right or by issuing the following voice command "Reboot the device" and select **Yes**.
-
-   ![Fourth image.](.\images\mpm-04.png)
+4. The mode will change immediately, there is no need to restart the device.
 
 If you’re unable to see the Moving Platform Mode option in Device Portal, then it likely means you aren’t yet on the proper build. See the [Prerequisites](#prerequisites) section.
 
