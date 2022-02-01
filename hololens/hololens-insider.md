@@ -30,8 +30,6 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 |---------|-------------|-----------------|--------------------|
 | [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 20348.1463       |
 | [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 20348.1470 |
-| [Moving Platform Mode Settings](#moving-platform-mode-settings) | Toggle Moving Platform Mode and more via Settings | Ends users | 20348.1474 |
-| [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies) | Configures new MPM settings via MDM | IT Admins | 20348.1474 |
 
 ### IT Admin Feature Checklist - Insider
 
