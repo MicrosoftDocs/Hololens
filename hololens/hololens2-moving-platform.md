@@ -31,24 +31,24 @@ This article covers:
 
 HoloLens needs to be able to track your head position with [6 degrees of freedom](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (X, Y, Z, translation, and roll, pitch, yaw rotation) in order to show stable holograms. To do that, HoloLens tracks two similar pieces of information from two separate sources:
 
-1. **Visible light cameras.** These cameras track the environment, for example, the physical room in which you are using the HoloLens
+1. **Visible light cameras.** These cameras track the environment, for example, the physical room in which you’re using the HoloLens
 1. **Inertial Measurement Unit (IMU).** The IMU consists of an accelerometer, gyroscope, and magnetometer that tracks your head motion and orientation relative to Earth
 
 Information from these two sources is compounded to track your head position at a low latency and high enough frequency in order to render smooth holograms.
 
-However, this approach relies on a critical assumption; the environment (tracked by the cameras) remains stationary relative to Earth (against which the IMU can make measurements). When that is not the case, like on a boat in the water, the information from both sources can conflict with one another and cause the tracker to get lost. This conflict produces incorrect position information and results in swimmy holograms or even tracking loss.
+However, this approach relies on a critical assumption; the environment (tracked by the cameras) remains stationary relative to Earth (against which the IMU can make measurements). When that isn’t the case, like on a boat in the water, the information from both sources can conflict with one another and cause the tracker to get lost. This conflict produces incorrect position information and results in swimmy holograms or even tracking loss.
 
-Moving Platform Mode remedies this issue. When you enable Moving Platform Mode, that is a hint to the tracker that it cannot rely on our sensor inputs to completely agree with each other at all times. Instead, HoloLens needs to rely more heavily on visual tracking and quickly identify incongruous inertial motion data and filter it out accordingly before it's able to use the IMU input.
+Moving Platform Mode remedies this issue. When you enable Moving Platform Mode, that is a hint to the tracker that it can’t rely on our sensor inputs to completely agree with each other at all times. Instead, HoloLens needs to rely more heavily on visual tracking and quickly identify incongruous inertial motion data and filter it out accordingly before it's able to use the IMU input.
 
 ## Supported Environments and Known Limitations
 
-While Moving Platform Mode was developed to intelligently handle cases of inertial and visual data conflict, it is currently scoped to large marine vessels experiencing low-dynamic motion. Meaning there are certainly limitations and unsupported scenarios.
+While Moving Platform Mode was developed to intelligently handle cases of inertial and visual data conflict, it’s currently scoped to large marine vessels experiencing low-dynamic motion. Meaning there are certainly limitations and unsupported scenarios.
 
 ### Known Limitations
 
 - The only supported environments for Moving Platform Mode (MPM) are large marine vessels experiencing low-dynamic motion. In other words, many common environments/situations are **not** yet supported due to their high frequency motion and high levels of acceleration and [jerk](https://en.wikipedia.org/wiki/Jerk_(physics)). For example: planes, trains, cars, bikes, buses, small boats, elevators, etc.
 - Holograms might wobble slightly when MPM is enabled, especially when on choppy water.
-- Nothing prevents users from attempting to use MPM in unsupported environments, however, you might experience undesirable side-effects if the device is able to maintain tracking in the unsupported space. For example, with MPM, you might find it's possible to use in an elevator while changing floors, whereas that was previously impossible. Unfortunately, while MPM allows the device to maintain tracking, it does not handle map management at this time. You could find that changing floors in an elevator causes the device to confuse the upper and lower floors and negatively affect map quality.
+- Nothing prevents users from attempting to use MPM in unsupported environments, however, you might experience undesirable side-effects if the device is able to maintain tracking in the unsupported space. For example, with MPM, you might find it's possible to use in an elevator while changing floors, whereas that was previously impossible. Unfortunately, while MPM allows the device to maintain tracking, it doesn’t handle map management at this time. You could find that changing floors in an elevator causes the device to confuse the upper and lower floors and negatively affect map quality.
 
 ## Prerequisites
 
@@ -132,17 +132,17 @@ To enable Moving Platform mode this way, first [enable Device Portal](/windows/m
 
    ![Fourth image.](.\images\mpm-04.png)
 
-If you are unable to see the Moving Platform Mode option in Device Portal, then it likely means you are not yet on the proper build. See the [Prerequisites](#prerequisites) section.
+If you’re unable to see the Moving Platform Mode option in Device Portal, then it likely means you aren’t yet on the proper build. See the [Prerequisites](#prerequisites) section.
 
 ## When to change to/from Moving Platform Mode
 
-When using any of these methods tracking of the headset will be lost temporarily, and the displays show “looking for your space”. Therefore, it is not recommended to change the mode actively during use of the device.
+When using any of these methods tracking of the headset will be lost temporarily, and the displays show “looking for your space”. Therefore, it isn’t recommended to change the mode actively during use of the device.
 
-If your use case moves between stationary environments and moving ones, it is recommended to leave the device in Moving Platform Mode. The tracking quality when in stationary environments will be reduced slightly. Though most would consider this better than the loss of tracking incurred by swapping the moving platform mode frequently, or losing tracking on the moving platform due to forgetting to activate the mode.
+If your use case moves between stationary environments and moving ones, it’s recommended to leave the device in Moving Platform Mode. The tracking quality when in stationary environments will be reduced slightly. Though most would consider this better than the loss of tracking incurred by swapping the moving platform mode frequently, or losing tracking on the moving platform due to forgetting to activate the mode.
 
 ### Down Direction
 
-Normally the direction that is considered “down” by the system is the direction of gravity. This down direction is used for alignment of some user interfaces. However within a moving platform “down” and gravity are not always the same thing. Moving Platform Mode provides two solutions to this problem:
+Normally the direction that is considered “down” by the system is the direction of gravity. This down direction is used for alignment of some user interfaces. However within a moving platform “down” and gravity aren’t always the same thing. Moving Platform Mode provides two solutions to this problem:
 
 #### Automatic Down Calculation
 
