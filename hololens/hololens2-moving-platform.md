@@ -112,9 +112,9 @@ Supported values:
 - `False` *(Default)* : User can manually change down direction if desired, otherwise down direction is determined automatically based on the measured gravity vector.
 - `True` : User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
 
-### Enable via [Developer Mode and Device Portal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+### Enable via [Developer Mode and Device Portal](/windows/mixed-reality/develop/advanced-concepts/using-the-windows-device-portal)
 
-To enable Moving Platform mode this way, first [enable Device Portal](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+To enable Moving Platform mode this way, first [enable Device Portal](/windows/mixed-reality/develop/advanced-concepts/using-the-windows-device-portal).
 
 1. Select the **System** accordion on the Left-hand menu
 
