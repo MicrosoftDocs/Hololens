@@ -44,6 +44,54 @@ To help provide clarity this release notes page will only provide information fo
 | 19041                  | [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) <br> [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2)    | May 2020 <br> Nov 2020     | 19041.1103 <br> 19041.1128   |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
 
+## Windows Holographic, version 21H2 - February 2022 Update
+
+- Build 20348.1444
+
+| Feature | Description | Target Audience |
+|---------|-------------|-----------------|
+| [Moving Platform Mode Settings](#moving-platform-mode-settings) | Toggle Moving Platform Mode and more via Settings | Ends users |
+| [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies) | Configures new MPM settings via MDM | IT Admins |
+
+✔️ If you use your HoloLens devices in a location that has dynamic movement, consider setting these new [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies).
+
+### Moving Platform Mode Settings
+
+We've added new a new page to the Settings app to configure and control [Moving Platform Mode](hololens2-moving-platform.md). Being able to turn on Moving Platform Mode will no longer require needing to use device portal, which increases usability and security. User can reach the new page by opening the **Settings** app and selecting -> **System** -> **Holograms** and scroll down to see the Moving Platform Mode section and select **Setup Moving Platform Mode**.
+
+![How to reach the Moving Platform Mode page](images/mpm-from-holograms-settings.jpg)
+
+From this new page, users will be able to manually turn on Moving Platform Mode by adjusting the toggle.
+
+Users can also manually set the down direction, if, for instance,  you’re using the device in such a way where you don't want gravity to be the down direction. This works well in instances where you may be lying down under what you are working on, or if your platform is rotated relative to gravity. Feel free to use this to suit your own space. You can also clear the down direction when done using the device so everything is oriented back to default afterwards.
+
+![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
+
+### Moving Platform Mode MDM policies
+
+#### MixedReality/ConfigureMovingPlatform
+
+This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it’s turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Please refer to [HoloLens 2 Moving Platform Mode](hololens2-moving-platform.md) for background information.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureMovingPlatform`
+
+Supported values:
+
+- 0 (Default) - Last set user's preference. Initial state is OFF and after that user's preference is persisted across reboots and is used to initialize the system.
+- 1 Force off - Moving platform is disabled and cannot be changed by user.
+- 2 Force on - Moving platform is enabled and cannot be changed by user.
+
+#### MixedReality/ManualDownDirectionDisabled
+
+This policy controls whether the user can change down direction manually or not. If no down direction is set by the user, then an automatically calculated down direction is used by the system. This policy has no dependency on ConfigureMovingPlatform policy and they can be set independently.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ManualDownDirectionDisabled`
+
+Supported values:
+
+- False (Default) - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
+- True - User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
+
 ## Windows Holographic, version 21H2 - January 2022 Update
 
 - Build 20348.1442
