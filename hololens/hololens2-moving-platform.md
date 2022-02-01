@@ -5,13 +5,13 @@ keywords: moving platforms, dynamic motion, hololens, moving platform mode
 author: evmill
 ms.author: v-evmill
 ms.reviewer: yabahman
-ms.date: 10/12/2021
+ms.date: 2/8/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high
 audience: HoloLens
-manager: yannisle
+manager: ranjibb
 appliesto:
 - HoloLens 2
 ---
@@ -52,15 +52,67 @@ While Moving Platform Mode was developed to intelligently handle cases of inerti
 
 ## Prerequisites
 
-Beta support for Moving Platform Mode requires only a few prerequisites:
+Beta support for Moving Platform Mode requires the following prerequisites:
 
-1. Install [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) or newer by updating or flashing the [latest build](https://aka.ms/hololens2download) [via ARC](hololens-recovery.md#clean-reflash-the-device).
+Install [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) or newer by updating or flashing the [latest build](https://aka.ms/hololens2download) [via ARC](hololens-recovery.md#clean-reflash-the-device).
 
-2. Enable [Developer Mode and Device Portal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+> [!NOTE]
+> While Moving Platform Mode was introduced in 21H2, we suggest using the latest build to use the full range of features and updates.
 
-## Enabling Moving Platform Mode
+There are three ways you can enable Moving Platform Mode:
 
-To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+- [Via the on-device settings app]()
+- [Via Mobile Device Management (MDM) policies]()
+- [Via the device portal]()
+
+### On Device Settings
+
+1. Open the Start menu
+1. Open the Settings app
+1. Select **System**
+1. Open **Holograms**
+1. In the Moving Platform Mode section select **setup moving platform mode**
+
+    ![How to reach the Moving Platform Mode page](images/mpm-from-holograms-settings.jpg)
+
+1. Toggle Moving Platform Mode to **On**
+
+![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
+
+### Via Mobile Device Management (MDM)
+
+MDM is a tool for system administrators to set certain settings on devices owned by the organization. See [here](link to MDM) for more details. System administrators can choose from 3 options:
+
+1. Force Moving Platform Mode on for device.
+1. Force Moving Platform Mod off for device.
+1. Allow the user to select via the settings app / device portal.
+
+#### MixedReality/ConfigureMovingPlatform
+
+This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it’s turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Please refer to [HoloLens 2 Moving Platform Mode](hololens2-moving-platform.md) for background information.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureMovingPlatform`
+
+Supported values:
+
+- 0 (Default) - Last set user's preference. Initial state is OFF and after that user's preference is persisted across reboots and is used to initialize the system.
+- 1 Force off - Moving platform is disabled and cannot be changed by user.
+- 2 Force on - Moving platform is enabled and cannot be changed by user.
+
+#### MixedReality/ManualDownDirectionDisabled
+
+This policy controls whether the user can change down direction manually or not. If no down direction is set by the user, then an automatically calculated down direction is used by the system. This policy has no dependency on ConfigureMovingPlatform policy and they can be set independently.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ManualDownDirectionDisabled`
+
+Supported values:
+
+- False (Default) - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
+- True - User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
+
+### Enable via [Developer Mode and Device Portal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+
+To enable Moving Platform mode this way, first [enable Device Portal](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
 1. Select the **System** accordion on the Left-hand menu
 
@@ -80,6 +132,38 @@ To enable Moving Platform mode, first [enable Device Portal](/windows/mixed-real
 
 If you are unable to see the Moving Platform Mode option in Device Portal, then it likely means you are not yet on the proper build. See the [Prerequisites](#prerequisites) section.
 
+## When to change to/from Moving Platform Mode
+
+When using any of these methods tracking of the headset will be lost temporarily, and the displays will display “looking for your space”. Therefore, it is not recommended to change the mode actively during use of the device.
+
+If your use case will move between stationary environments and moving ones, it is recommended to leave the device in Moving Platform Mode. The tracking quality when in stationary environments will be reduced slightly, though most would consider this better than the loss of tracking incurred by swapping the moving platform mode frequently, or losing tracking on the moving platform due to forgetting to activate the mode.
+
+### Down Direction
+
+Normally the direction that is considered “down” by the system is the direction of gravity. This down direction is used for alignment of some user interfaces. However within a moving platform “down” and gravity are not always the same thing. Moving Platform Mode provides two solutions to this problem:
+
+#### Automatic Down Calculation
+
+This calculates the down direction based on an average of the measured gravity directions. For example, as a ship rolls in the sea, the actual gravity vector will rotate relative to the structure of the ship. The average of the gravity vectors over a short time will point towards the floor of the ship’s cabin due to the oscillations of the gravity vector cancelling out.
+
+This is the default when in Moving Platform Mode, you do not need to do anything for it to work correctly. It will be overridden if a manual down direction is set. The particular down direction will not be persisted to the device, but will be recalculated when necessary.
+
+#### Manually Set Down Direction
+
+If you have a use case where the orientation of the platform is not aligned with gravity, even when averaged over a short period of time, you can set the down direction manually. To set down direction manually:
+
+1. Open the Start menu
+1. Open the **Settings** app
+1. Select **System**
+1. Select **Holograms**
+1. In the Moving Platform Mode section select **Setup moving platform mode**
+1. Align your head with the floor, such that you are looking at the horizon
+1. Select the **set Down** button
+
+When the Set Down button is pressed the current head orientation will be used to set the down direction. When down direction is set manually it is stored persistently on the device and will be recalled after reboot or tracking loss.
+
+To clear the down direction stored on the system, select the **Clear Down** button on the *Setup Moving Platform Mode* page. This will clear the stored down direction and make the system use the automatically calculated down direction. The particular manually set down direction cannot be recovered after this operation, you must set it again using the above process.
+
 ## Reporting Issues
 
 As mentioned above, this feature is a beta feature available only in Developer Mode, which means you may hit issues. If that happens, so we can investigate and improve the product:
@@ -87,4 +171,4 @@ As mentioned above, this feature is a beta feature available only in Developer M
 1. Report the issue via [Feedback Hub](hololens-feedback.md) under the **Hologram accuracy, stability, and reliability** category and include:
     1. A description of problem, including the expected behavior and experienced behavior
     1. A Mixed Reality [video capture](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue
-2.	Open a support case at [https://aka.ms/hlsupport](https://aka.ms/hlsupport) and share the Feedback Hub URL, so we can reach out in case we have follow-up questions
+2. Open a support case at [https://aka.ms/hlsupport](https://aka.ms/hlsupport) and share the Feedback Hub URL, so we can reach out in case we have follow-up questions.
