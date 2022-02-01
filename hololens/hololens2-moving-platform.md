@@ -65,6 +65,8 @@ There are three ways that you can enable Moving Platform Mode:
 - [Via Mobile Device Management (MDM) policies](#via-mobile-device-management-mdm)
 - [Via the device portal](#enable-via-developer-mode-and-device-portal)
 
+## Enabling Moving Platform Mode
+
 ### On Device Settings
 
 1. Open the Start menu
