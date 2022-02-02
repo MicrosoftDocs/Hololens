@@ -96,6 +96,7 @@ Supported values:
 
 - Fixed an error when using Media Foundation Media Capture that prevented a developer from being able to create a MediaEncodingProfile using HEVC.
 - Addressed an issue that prevented the uninstall of side loaded apps in certain scenarios.
+- Fixes an issue that could prevent an application from accessing a user's video folder.
 
 ## Windows Holographic, version 21H2 - January 2022 Update
 
