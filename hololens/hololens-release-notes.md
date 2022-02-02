@@ -92,6 +92,10 @@ Supported values:
 - False (Default) - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
 - True - User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
 
+#### Improvements and fixes in the February 2022 update
+
+- Fixed an error when using Media Foundation Media Capture that prevented a developer from being able to create a MediaEncodingProfile using HEVC.
+
 ## Windows Holographic, version 21H2 - January 2022 Update
 
 - Build 20348.1442
@@ -121,9 +125,8 @@ If you find yourself wondering how to use your voice to open and close the Start
 - "Go to Start"  to bring up the Start menu
 - "Close" while looking at it to close
 
-Improvements and fixes in the update:
+#### Improvements and fixes in the January 2022 update
 
-- Fixed an error when using Media Foundation Media Capture that prevented a developer from being able to create a MediaEncodingProfile using HEVC.
 - Corrects an issue preventing devices from booting correctly in previous flights.
 - Fixes an issue on the Windows Device Portal Deploy Apps panel when accessed from Internet Explorer 11.
 
