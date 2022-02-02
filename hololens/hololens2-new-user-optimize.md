@@ -26,9 +26,9 @@ The following are the average lengths for each scenario.
 
 | Scenario start to app launch                                                    | Average time in minutes | Best practices |
 |---------------------------------------------------------------------------------|-------------------------|---|
-| User exists on device, sign in existing account                                                 | Under a minute                    | [Use a device you've used](#use-a-device-you-have-already-used-to-get-to-your-app-fastest), [Use labels](#physically-label-your-devices), [Fast logins](#fastest-to-log-in-to-an-existing-account)    |
-| New user on device                                                              | Short                                             |   |
-| Device needs to go through first-time setup or the Out of Box Experience (OOBE)                             | Moderate              |   |
+| User exists on device, sign in existing account                                                 | Under a minute                    | - [Use a device you've used before](#use-a-device-you-have-already-used-to-get-to-your-app-fastest) <br> - [Use labels](#physically-label-your-devices) <br> - [Fast logins](#fastest-to-log-in-to-an-existing-account)    |
+| New user on device                                                              | Short                                             | - [Quick add user](#adding-your-user-to-an-existing-device) <br> - [Set up flows](#set-up-flows)   |
+| Device needs to go through first-time setup or the Out of Box Experience (OOBE)                             | Moderate              | - [Fast first set up](#setting-up-a-device-for-the-first-time) <br> - [Pre set up person](#have-a-designated-setup-person) <br> - [Use policies](#use-policies-to-speed-up-your-setup) <br> - [Set up flows](#set-up-flows)    |
 
 ### Use a device you have already used to get to your app fastest
 
@@ -144,6 +144,7 @@ Let us walk through different scenarios in which your device needs to be set up.
 You'll now have completed set up. Congrats!
 
 We’re still a few steps away from being able to make that Remote Assist call. Using the following flow chart we can determine the environment you're in and how to use Remote Assist.
+<br>
 
 <img src="images/post-oobe-kisok-flowchart.jpg" alt="Post OOBE Kiosk flowchart">
 
