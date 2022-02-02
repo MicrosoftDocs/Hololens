@@ -65,7 +65,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Allo
 - Fixed an issue where toggling optional diagnostic data didn't persist the chosen setting in telemetry settings page after a reboot.
 - Fixed an issue where MDM enrollment was stuck when applied with runtime provisioning for local accounts.
 - Fixed an issue where kiosk mode wasn’t falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
-- Addressed an issue that prevented the uninstall of side loaded apps in certain scenarios.
+- Fixed an issue where graphics memory is leaked during some camera usage scenarios.
 
 ### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
 
