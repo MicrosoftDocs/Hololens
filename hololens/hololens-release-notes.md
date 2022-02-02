@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 1/14/2022
+ms.date: 2/8/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting

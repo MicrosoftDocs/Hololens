@@ -7,7 +7,7 @@ manager: ranjibb
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
-ms.date: 1/14/2022
+ms.date: 2/8/2022
 audience: ITPro
 appliesto:
 - HoloLens 2
