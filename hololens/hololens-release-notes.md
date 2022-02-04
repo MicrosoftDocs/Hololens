@@ -46,7 +46,7 @@ To help provide clarity this release notes page will only provide information fo
 
 ## Windows Holographic, version 21H2 - February 2022 Update
 
-- Build 20348.1444
+- Build 20348.1447
 
 | Feature | Description | Target Audience |
 |---------|-------------|-----------------|
