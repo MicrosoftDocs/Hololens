@@ -70,5 +70,15 @@
                             "redirect_url": "/hololens/hololens-kiosk",
                             "redirect_document_id":  false
                         }
+                        {
+                            "source_path":  "hololens-insider.md#moving-platform-mode-settings",
+                            "redirect_url": "hololens-release-notes.md#moving-platform-mode-settings",
+                            "redirect_document_id":  false
+                        }
+                        {
+                            "source_path":  "hololens-insider.md#moving-platform-mode-mdm-policies",
+                            "redirect_url": "hololens-release-notes.md#moving-platform-mode-mdm-policies",
+                            "redirect_document_id":  false
+                        }
                     ]
 }
