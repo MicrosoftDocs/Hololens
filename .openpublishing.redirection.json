@@ -69,7 +69,7 @@
                             "source_path":  "hololens/hololens-global-assigned-access-kiosk.md",
                             "redirect_url": "/hololens/hololens-kiosk",
                             "redirect_document_id":  false
-                        }
+                        },
                         {
                             "source_path":  "hololens-insider.md#moving-platform-mode-settings",
                             "redirect_url": "hololens-release-notes.md#moving-platform-mode-settings",
