@@ -143,6 +143,8 @@ Let us walk through different scenarios in which your device needs to be set up.
 
 You'll now have completed set up. Congrats!
 
+#### After OOBE - Paths to your app
+
 We’re still a few steps away from being able to make that Remote Assist call. Using the following flow chart we can determine the environment you're in and how to use Remote Assist.
 <br>
 
