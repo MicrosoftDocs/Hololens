@@ -64,6 +64,7 @@ There are three ways that you can enable Moving Platform Mode:
 - [Via the on-device settings app](#on-device-settings)
 - [Via Mobile Device Management (MDM) policies](#via-mobile-device-management-mdm)
 - [Via the device portal](#enable-via-developer-mode-and-device-portal)
+- Via API, the API will be released via Mixed Reality Feature tool in Unity and via Nuget.org
 
 ## Enabling Moving Platform Mode
 
@@ -73,7 +74,7 @@ There are three ways that you can enable Moving Platform Mode:
 1. Open the Settings app
 1. Select **System**
 1. Open **Holograms**
-1. In the Moving Platform Mode section, select **setup moving platform mode**
+1. In the Moving Platform Mode section, select **Setup moving platform mode**
 
     ![How to reach the Moving Platform Mode page](images/mpm-from-holograms-settings.jpg)
 
@@ -86,7 +87,7 @@ There are three ways that you can enable Moving Platform Mode:
 MDM is a tool for system administrators to set certain settings on devices owned by the organization. See [Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices](hololens-mdm-configure.md) for more details. System administrators can choose from three options:
 
 1. Force Moving Platform Mode on for device.
-1. Force Moving Platform Mod off for device.
+1. Force Moving Platform Mode off for device.
 1. Allow users to select via the settings app / device portal.
 
 #### MixedReality/ConfigureMovingPlatform
