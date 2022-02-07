@@ -1,7 +1,7 @@
 ---
 title: Set up users on HoloLens 2 quickly
 description: Learn how to set up your HoloLens 2 for users quickly, and what can happen that affects set up. 
-ms.date: 1/31/2022
+ms.date: 2/8/31/2022
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -146,7 +146,7 @@ You'll now have completed set up. Congrats!
 We’re still a few steps away from being able to make that Remote Assist call. Using the following flow chart we can determine the environment you're in and how to use Remote Assist.
 <br>
 
-<img src="images/post-oobe-kisok-flowchart.jpg" alt="Post OOBE Kiosk flowchart">
+<img src="images/hololens2-kiosk-remote-assist-flowchart.png" alt="Post OOBE Kiosk flowchart">
 
 > [!NOTE]
 > After device set up the Microsoft Store app will check for updates for Remote Assist [and other in-box apps](hololens2-hardware.md#pre-installed-software) approx every 24 hours.
