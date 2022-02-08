@@ -71,13 +71,13 @@
                             "redirect_document_id":  false
                         },
                         {
-                            "source_path":  "https://docs.microsoft.com/hololens/hololens-insider#moving-platform-mode-settings",
-                            "redirect_url": "https://docs.microsoft.com/hololens/hololens-release-notes#moving-platform-mode-settings",
+                            "source_path":  "/hololens/hololens-insider#moving-platform-mode-settings",
+                            "redirect_url": "/hololens/hololens-release-notes#moving-platform-mode-settings",
                             "redirect_document_id":  false
                         },
                         {
-                            "source_path":  "https://docs.microsoft.com/hololens/hololens-insiderd#moving-platform-mode-mdm-policies",
-                            "redirect_url": "https://docs.microsoft.com/hololens/hololens-release-notesd#moving-platform-mode-mdm-policies",
+                            "source_path":  "/hololens/hololens-insider#moving-platform-mode-mdm-policies",
+                            "redirect_url": "/hololens/hololens-release-notes#moving-platform-mode-mdm-policies",
                             "redirect_document_id":  false
                         }
                     ]

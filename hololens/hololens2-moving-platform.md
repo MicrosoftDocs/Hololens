@@ -80,7 +80,7 @@ There are three ways that you can enable Moving Platform Mode:
 
 1. Toggle Moving Platform Mode to **On**
 
-![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
+    ![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
 
 ### Via Mobile Device Management (MDM)
 
