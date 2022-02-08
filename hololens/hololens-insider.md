@@ -10,7 +10,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 1/24/2022
+ms.date: 2/8/2022
 ms.localizationpriority:
 ms.reviewer: 
 manager: ranjibb
@@ -30,13 +30,16 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 |---------|-------------|-----------------|--------------------|
 | [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 20348.1463       |
 | [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 20348.1470 |
-| [Moving Platform Mode Settings](#moving-platform-mode-settings) | Toggle Moving Platform Mode and more via Settings | Ends users | 20348.1474 |
-| [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies) | Configures new MPM settings via MDM | IT Admins | 20348.1474 |
+
+Looking for a new feature but don't see it? Check out the [release notes](hololens-release-notes.md) as many of our new features have been released as part of the main builds. The following features have recently moved to the release notes since their release:
+
+- [Moving Platform Mode Settings](hololens-release-notes.md#moving-platform-mode-settings)
+- [Moving Platform Mode MDM policies](hololens-release-notes.md#moving-platform-mode-mdm-policies)
+- [Start gestures settings](hololens-release-notes.md#start-gestures-settings)
 
 ### IT Admin Feature Checklist - Insider
 
-✔️ If you'd like to allow launching another app from a single app Kiosk (such as settings) check out the new [single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps).<br>
-✔️ If you use your HoloLens devices in a location that has dynamic movement, consider setting these new [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies).
+✔️ If you'd like to allow launching another app from a single app Kiosk (such as settings) check out the new [single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps).
 
 ### Color-blind mode
 
@@ -58,43 +61,6 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Allo
 
 - Bool value
 
-### Moving Platform Mode Settings
-
-We've added new a new page to the Settings app to configure and control [Moving Platform Mode](hololens2-moving-platform.md). Being able to turn on Moving Platform Mode will no longer require needing to use device portal, which increases usability and security. User can reach the new page by opening the **Settings** app and selecting -> **System** -> **Holograms** and scroll down to see the Moving Platform Mode section and select **Setup Moving Platform Mode**.
-
-![How to reach the Moving Platform Mode page](images/mpm-from-holograms-settings.jpg)
-
-From this new page, users will be able to manually turn on Moving Platform Mode by adjusting the toggle.
-
-Users can also manually set the down direction, if, for instance,  you’re using the device in such a way where you don't want gravity to be the down direction. This works well in instances where you may be lying down under what you are working on, or if your platform is rotated relative to gravity. Feel free to use this to suit your own space. You can also clear the down direction when done using the device so everything is oriented back to default afterwards.
-
-![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
-
-### Moving Platform Mode MDM policies
-
-#### MixedReality/ConfigureMovingPlatform
-
-This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it’s turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Please refer to [HoloLens 2 Moving Platform Mode](hololens2-moving-platform.md) for background information.
-
-The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureMovingPlatform`
-
-Supported values:
-
-- 0 (Default) - Last set user's preference. Initial state is OFF and after that user's preference is persisted across reboots and is used to initialize the system.
-- 1 Force off - Moving platform is disabled and cannot be changed by user.
-- 2 Force on - Moving platform is enabled and cannot be changed by user.
-
-#### MixedReality/ManualDownDirectionDisabled
-
-This policy controls whether the user can change down direction manually or not. If no down direction is set by the user, then an automatically calculated down direction is used by the system. This policy has no dependency on ConfigureMovingPlatform policy and they can be set independently.
-
-The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ManualDownDirectionDisabled`
-
-Supported values:
-
-- False (Default) - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
-- True - User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
-
 ### Fixes and improvements
 
 - Improvements to Moving Platform Mode when detecting the down direction.
@@ -103,7 +69,7 @@ Supported values:
 - Fixed an issue where toggling optional diagnostic data didn't persist the chosen setting in telemetry settings page after a reboot.
 - Fixed an issue where MDM enrollment was stuck when applied with runtime provisioning for local accounts.
 - Fixed an issue where kiosk mode wasn’t falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
-- Addressed an issue that prevented the uninstall of side loaded apps in certain scenarios.
+- Fixed an issue where graphics memory is leaked during some camera usage scenarios.
 
 ### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
 
