@@ -62,6 +62,15 @@ Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/holol
 
 [!INCLUDE[HoloLens accessories](hololens2-accessories.md)]
 
+[!INCLUDE[HoloLens accessories](hololens\includes\hololens2-accessories.md)]
+
+[!INCLUDE[HoloLens accessories](./hololens/includes/hololens2-accessories.md)]
+
+[!INCLUDE[HoloLens accessories](../hololens/includes/hololens2-accessories.md)]
+
+[!INCLUDE[HoloLens accessories](.\hololens\includes\hololens2-accessories.md)]
+
+hololens\includes\hololens2-accessories.md
 
 ## Explore solutions
 
