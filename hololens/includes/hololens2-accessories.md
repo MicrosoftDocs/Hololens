@@ -4,7 +4,7 @@
 
 Trimble HoloTint is an attachment for HoloLens 2 devices that helps viewing holograms in bright environments. HoloTint has a lens that automatically adjusts its tint level based on UV rays and ambient light, ensuring that contract remains consistent as you move between different lighting conditions. These adjustments improve contract, visibility, and readability of holograms.
 
-Trimble HoloTint is compatible with:
+HoloTint is compatible with:
 
 - [HoloLens 2](../hololens2-options-device-only.md)
 - [HoloLens 2 Industrial Edition](../hololens2-options-industrial-edition.md)
