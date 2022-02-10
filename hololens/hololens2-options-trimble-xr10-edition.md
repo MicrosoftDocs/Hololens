@@ -5,13 +5,13 @@ keywords: HoloLens 2 purchasing options, HoloLens options, Trimble XR10
 author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
-ms.date: 4/12/2021
+ms.date: 2/10/2022
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high
 audience: HoloLens
-manager: yannisle
+manager: ranjibb
 appliesto:
 - HoloLens 2
 ---
@@ -27,6 +27,10 @@ Trimble XR10 with HoloLens 2 is the first device created with the Microsoft Holo
 ![Trimble SKU.](./images/trimble-ed.png)
 
 See more about the [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
+
+[!INCLUDE[](../includes/hololens2-accessories.md)]
+
+[!INCLUDE[](./includes/hololens2-accessories.md)]
 
 ## Next steps
 
