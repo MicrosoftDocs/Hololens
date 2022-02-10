@@ -28,9 +28,7 @@ Trimble XR10 with HoloLens 2 is the first device created with the Microsoft Holo
 
 See more about the [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
 
-[!INCLUDE[](../includes/hololens2-accessories.md)]
-
-[!INCLUDE[](./includes/hololens2-accessories.md)]
+[!INCLUDE[](/hololens2-accessories.md)]
 
 ## Next steps
 
