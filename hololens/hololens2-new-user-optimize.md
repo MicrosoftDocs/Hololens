@@ -32,7 +32,7 @@ The following are the average lengths for each scenario.
 
 ### Use a device you have already used to get to your app fastest
 
-The key take away from this chart, is if you can use a device you’ve used before then you can sign in and use the app in less than a minute. If you have to go through setup, then you’ll take a few minutes. We highly suggest you [physically label your devices])(#physically-label-your-devices)
+The key take away from this chart, is if you can use a device you’ve used before then you can sign in and use the app in less than a minute. If you have to go through setup, then you’ll take a few minutes. We highly suggest you [physically label your devices](#physically-label-your-devices)
 
 ### Have a designated setup person
 
@@ -54,7 +54,7 @@ If you complete OOBE and set yourself up as a user then when your end users pick
 
 #### Physically label your devices
 
-Place a label either on the rear outer cover, or the outer arms closer to the front so they don’t go into the rear outer cover. See [this diagram](images/hololens2-exploded-view-diagram.png) to see the names of parts.
+Place a label either on the rear outer cover, or the outer arms closer to the front so they don’t go into the rear outer cover. See [about HoloLens 2](hololens2-hardware.md) to see the names of hardware parts.
 
 By having a labeled device users can quickly pick up a device, they've used before. It can also help recognize other things such as a device that's known not to be working, or which ones were just used and still need charging.
 
