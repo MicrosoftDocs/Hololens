@@ -7,7 +7,7 @@ manager: ranjibb
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
-ms.date: 1/14/2022
+ms.date: 2/8/2022
 audience: ITPro
 appliesto:
 - HoloLens 2
@@ -23,6 +23,14 @@ These are the major feature releases from Windows Holographic, version 2004.
 | Major release   number | Feature release(s)                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
 | 19041                  | [Windows Holographic, version 2004](#windows-holographic-version-2004) <br> [Windows Holographic, version 20H2](#windows-holographic-version-20h2)    | May 2020 <br> Nov 2020     | 19041.1103 <br> 19041.1128   |
+
+## Windows Holographic, version 20H2 - February 2022 Update
+
+- Build 19041.1176
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H2.
 
 ## Windows Holographic, version 20H2 - January 2022 Update
 
@@ -207,7 +215,7 @@ This latest release is a monthly update to version 2004, but this time we are in
 | [Auto-launch an app in multi-app kiosk](#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | Sets an application to launch automatically when signing into a multiple-app kiosk mode.                                                        |
 | [Kiosk mode behavior changes for handling of failures](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode failure now has restrictive fallback.                                                                                                |
 | [HoloLens Policies](#hololens-policies)                                    | New policies for HoloLens.     |
-| [Cache Azure AD Group membership for offline Kiosk](#cache-azure-ad-group-membership-for-offline-kiosk)         | New policy allows users to uses group membership cache to use Kiosk mode offline for set number of days.                                        |
+| [Cache Azure AD Group membership for offline Kiosk](#cache-azure-ad-group-membership-for-offline-kiosk)         | New policy allows users to use group membership cache to use Kiosk mode offline for set number of days.                                        |
 | [New device restriction policies for HoloLens 2](#new-device-restriction-policies-for-hololens-2)       | Device management policies enabled newly enabled for HoloLens 2.                                                                                |
 | [New power policies for HoloLens 2](#new-power-policies-for-hololens-2)       | Newly supported policies for power timeout settings.  |
 | [Update Policies](#newly-enabled-update-policies-for-hololens)        | Newly enabled policies allowing control of updates.           |
