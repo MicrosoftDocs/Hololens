@@ -1,7 +1,7 @@
 ---
 title: Set up users on HoloLens 2 quickly
 description: Learn how to set up your HoloLens 2 for users quickly, and what can happen that affects set up. 
-ms.date: 2/8/31/2022
+ms.date: 2/11/2022
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
