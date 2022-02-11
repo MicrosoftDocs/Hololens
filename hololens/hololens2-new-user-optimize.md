@@ -76,7 +76,7 @@ Use a FIDO2 Security key. Why? By using a FIDO2 security key you don't have to t
 
 #### Setting up a device for the first time
 
-When in the EULA after confirming it's a work device, don't start typing your username. Instead select **sign in from another device**. This will let you go to [aka.ms/devicelogin](aka.ms/devicelogin) on another device, type in the 9 character code, and proceed to sign in. If you've already logged into your account on that device, then you'll able to select your account. If you haven't, then you'll be able to use a keyboard you are more familiar with.
+When in the EULA after confirming it's a work device, don't start typing your username. Instead select **sign in from another device**. This will let you go to [aka.ms/devicelogin](https://aka.ms/devicelogin) on another device, type in the 9 character code, and proceed to sign in. If you've already logged into your account on that device, then you'll able to select your account. If you haven't, then you'll be able to use a keyboard you are more familiar with.
 
 ### Use policies to speed up your setup
 
