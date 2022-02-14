@@ -2,7 +2,7 @@
 
 #### This space also intentionally left blank
 
-Continue on tp the next instructions if your device had a user list.
+Continue on to the next instructions if your device had a user list.
 Please select a choice from before if you scrolled down and are reading this.
 
 # [End user license agreement](#tab/EULA)

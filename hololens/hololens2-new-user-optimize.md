@@ -32,7 +32,7 @@ The following are the average lengths for each scenario.
 
 ### Use a device you have already used to get to your app fastest
 
-The key take away from this chart, is if you can use a device you’ve used before then you can sign in and use the app in less than a minute. If you have to go through setup, then you’ll take a few minutes. We highly suggest you [physically label your devices](#physically-label-your-devices)
+The key take away from this chart, is if you can use a device you’ve used before then you can sign in and use the app in less than a minute. If you have to go through setup, then you’ll take a few minutes. We highly suggest you [physically label your devices](#physically-label-your-devices).
 
 ### Have a designated setup person
 
@@ -148,7 +148,7 @@ You'll now have completed set up. Congrats!
 We’re still a few steps away from being able to make that Remote Assist call. Using the following flow chart we can determine the environment you're in and how to use Remote Assist.
 <br>
 
-<img src="images/hololens2-kiosk-remote-assist-flowchart.png" alt="Post OOBE Kiosk flowchart">
+<img src="images/hololens2-kiosk-remote-assist-flowchart.png" alt="Post OOBE flowchart">
 
 > [!NOTE]
 > After device set up the Microsoft Store app will check for updates for Remote Assist [and other in-box apps](hololens2-hardware.md#pre-installed-software) approx every 24 hours.
