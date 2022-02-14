@@ -59,16 +59,16 @@ Install [Windows Holographic, version 21H2](hololens-release-notes.md#windows-ho
 > [!NOTE]
 > While Moving Platform Mode was introduced in 21H2, it's suggested using the [latest build](hololens-release-notes.md) to use the full range of features and updates.
 
+## Enabling Moving Platform Mode
+
+### How should I activate Moving Platform Mode?
+
 There are four ways that you can enable Moving Platform Mode:
 
 - [Via the on-device settings app](#on-device-settings)
 - [Via Mobile Device Management (MDM) policies](#via-mobile-device-management-mdm)
 - [Via API](/windows/mixed-reality/develop/unity/moving-platform-unity), the API will be released via Mixed Reality Feature tool in Unity and via Nuget.org
 - [Via the device portal](#enable-via-developer-mode-and-device-portal)
-
-## Enabling Moving Platform Mode
-
-### How should I activate Moving Platform Mode?
 
 In order to enable a range of use cases, various methods have been provided to activate Moving Platform Mode. It's important that you carefully consider which method to choose. A key question to ask is: Who knows whether the HoloLens 2 is currently within a moving platform? See the following table for an example:
 
