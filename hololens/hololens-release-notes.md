@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 1/14/2022
+ms.date: 2/8/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -36,13 +36,67 @@ The Windows Holographic version name gives you an indication of the time when th
 
 In between our feature updates, we also release fixes and improvements as well as security updates. These are always minor updates and never change the major build number.
 
-To help provide clarity this release notes page will only provide information for the most current release version. If you’d like to learn about updates to down level versions (or view previous major feature releases) please refer to the table below.
+To help provide clarity this release notes page will only provide information for the most current release version. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
 | 20346                  | [Windows Holographic, version 21H1](#windows-holographic-version-21h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2)   | May 2021 <br> October 2021   | 20346.1002 <br> 20348.1432   |
 | 19041                  | [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) <br> [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2)    | May 2020 <br> Nov 2020     | 19041.1103 <br> 19041.1128   |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
+
+## Windows Holographic, version 21H2 - February 2022 Update
+
+- Build 20348.1447
+
+| Feature | Description | Target Audience |
+|---------|-------------|-----------------|
+| [Moving Platform Mode Settings](#moving-platform-mode-settings) | Toggle Moving Platform Mode and more via Settings | Ends users |
+| [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies) | Configures new MPM settings via MDM | IT Admins |
+
+✔️ If you use your HoloLens devices in a location that has dynamic movement, consider setting these new [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies).
+
+### Moving Platform Mode Settings
+
+We've added new a new page to the Settings app to configure and control [Moving Platform Mode](hololens2-moving-platform.md). Being able to turn on Moving Platform Mode will no longer require needing to use device portal, which increases usability and security. User can reach the new page by opening the **Settings** app and selecting -> **System** -> **Holograms** and scroll down to see the Moving Platform Mode section and select **Setup Moving Platform Mode**.
+
+![How to reach the Moving Platform Mode page](images/mpm-from-holograms-settings.jpg)
+
+From this new page, users will be able to manually turn on Moving Platform Mode by adjusting the toggle.
+
+Users can also manually set the down direction, if, for instance,  you’re using the device in such a way where you don't want gravity to be the down direction. This works well in instances where you may be lying down under what you are working on, or if your platform is rotated relative to gravity. Feel free to use this to suit your own space. You can also clear the down direction when done using the device so everything is oriented back to default afterwards.
+
+![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
+
+### Moving Platform Mode MDM policies
+
+#### MixedReality/ConfigureMovingPlatform
+
+This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it’s turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Please refer to [HoloLens 2 Moving Platform Mode](hololens2-moving-platform.md) for background information.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureMovingPlatform`
+
+Supported values:
+
+- 0 (Default) - Last set user's preference. Initial state is OFF and after that user's preference is persisted across reboots and is used to initialize the system.
+- 1 Force off - Moving platform is disabled and cannot be changed by user.
+- 2 Force on - Moving platform is enabled and cannot be changed by user.
+
+#### MixedReality/ManualDownDirectionDisabled
+
+This policy controls whether the user can change down direction manually or not. If no down direction is set by the user, then an automatically calculated down direction is used by the system. This policy has no dependency on ConfigureMovingPlatform policy and they can be set independently.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ManualDownDirectionDisabled`
+
+Supported values:
+
+- False (Default) - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
+- True - User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
+
+#### Improvements and fixes in the February 2022 update
+
+- Addressed an issue that prevented the uninstall of side loaded apps in certain scenarios.
+- Fixed an error when using Media Foundation Media Capture that prevented a developer from being able to create a MediaEncodingProfile using HEVC.
+- Fixes an issue that could prevent an application from accessing a user's video folder.
 
 ## Windows Holographic, version 21H2 - January 2022 Update
 
@@ -73,9 +127,8 @@ If you find yourself wondering how to use your voice to open and close the Start
 - "Go to Start"  to bring up the Start menu
 - "Close" while looking at it to close
 
-Improvements and fixes in the update:
+#### Improvements and fixes in the January 2022 update
 
-- Fixed an error when using Media Foundation Media Capture that prevented a developer from being able to create a MediaEncodingProfile using HEVC.
 - Corrects an issue preventing devices from booting correctly in previous flights.
 - Fixes an issue on the Windows Device Portal Deploy Apps panel when accessed from Internet Explorer 11.
 
@@ -122,18 +175,18 @@ To update to the latest release, open the Settings app, go to Update & Securit
 | [Use WDAC and LOB apps](#use-wdac-and-lob-apps) | Allows IT Admins to use their own apps and still use WDAC to block other apps. | IT Admins |
 | [Fixes and improvements](#fixes-and-improvements) | Fixes and improvements for HoloLens. | All |
 
-### IT Admin Feature Checklist
+### IT Admin Feature Checklist - 21H2
 
-✔️ If you'd like to set a single Azure AD account to automatically log-in, [configure this new CSP.](#auto-login-policy-controlled-by-csp) <br>
-✔️ If you'd like configure your apps to automatically attempt to update after failing to update, [set this new CSP for smart retry.](#smart-retry-for-app-updates) <br>
+✔️ If you'd like to set a single Azure AD account to automatically log in, [configure this new CSP.](#auto-login-policy-controlled-by-csp) <br>
+✔️ If you'd like to configure your apps to automatically attempt to update after failing to update, [set this new CSP for smart retry.](#smart-retry-for-app-updates) <br>
 ✔️ If you'd like to have more control over OS updates, check out these [newly enabled Update policies.](#improved-update-restart-detection-and-notifications) <br>
 ✔️ If you need to make your organization's apps available on the company store via the Microsoft Store, but want to only allow access to your organization's apps and not the full store, [set this policy.](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️ If you'd like to know the free storage space, SSID or BSSID of your HoloLens devices check out these [reporting CSPs.](#csp-changes-for-reporting-hololens-details) <br>
+✔️ If you'd like to know the free storage space, SSID, or BSSID of your HoloLens devices then check out these [reporting CSPs.](#csp-changes-for-reporting-hololens-details) <br>
 ✔️ If you'd like to use WDAC to block apps or processes from launching, but also need to use your own line of bushiness apps, you can now [allow LOB in your WDAC policy](#use-wdac-and-lob-apps).
 
 ### Moving Platform Mode
 
-As of [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you will be able to use your HoloLens 2 in previously inaccessible environments, like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
+As of [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) we have added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you’ll be able to use your HoloLens 2 in previously inaccessible environments, like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
 
 To learn more about what is supported and how to enable this new feature, [visit the moving platform page](hololens2-moving-platform.md).
 
@@ -156,7 +209,7 @@ Users can import .pfx certificate, with private key, to user store or machine st
 
 ### View advanced diagnostic report in Settings on HoloLens
 
-For managed devices when troubleshooting behavior, confirming that an expected policy configuration is applied is an important step. Previously to this new feature, this had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** > **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
+For managed devices when troubleshooting behavior, confirming that an expected policy configuration was applied is an important step. Previously to this new feature, this had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** > **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
 
 Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select **View advanced diagnostic report**. This will generate and open the report in a new Edge window.
 
@@ -177,11 +230,11 @@ Now added in [Windows Holographic, version 21H2](hololens-release-notes.md#windo
 
 ![Toast when log collection is complete.](./images/logcollection2.jpg)
 
-Because users often use Offline Diagnostics as a fallback log gathering mechanism for when they don’t have access to a display, can’t log-in or are still in OOBE there will also be an audio cue played when logs are gathered. This sound will be played in addition to the toast notification.
+Because users often use Offline Diagnostics as a fallback log gathering mechanism for when they don’t have access to a display, can’t log in or are still in OOBE there will also be an audio cue played when logs are gathered. This sound will be played in addition to the toast notification.
 
-This new feature will be enabled when your device updates, and doesn’t need to be enabled or managed. In any event that this new feedback cannot be displayed or heard, Offline Diagnostics will still be generated.
+This new feature will be enabled when your device updates, and doesn’t need to be enabled or managed. In any event that this new feedback can’t be displayed or heard, Offline Diagnostics will still be generated.
 
-We hope with this newer addition of audiovisual feedback it is easier to gather diagnostic data, and more quickly be able to troubleshoot your problems.
+We hope with this newer addition of audiovisual feedback it’s easier to gather diagnostic data, and more quickly be able to troubleshoot your problems.
 
 This information can be viewed later on the [diagnostic logs page](hololens-diagnostic-logs.md#offline-diagnostics).
 
@@ -201,7 +254,7 @@ This information can be viewed later on the [diagnostic logs page](hololens-diag
 
 1. Fill up your device's storage space.
 1. Press the **Power** and **Volume down** button combination to gather [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics).
-1. Observe there is a new file in the collection of logs stored in the Documents folder of your HoloLens.
+1. Observe there’s a new file in the collection of logs stored in the Documents folder of your HoloLens.
 
 ### CSP changes for reporting HoloLens details
 
@@ -251,7 +304,7 @@ String value
 
 - User with the same email address will have auto logon enabled.
 
-On a device where this policy is configured, the user specified in the policy will need to log on at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single auto-logon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To log on as a different user, the policy must first be disabled.
+On a device where this policy is configured, the user specified in the policy will need to log on at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single auto-logon user is supported. Once enabled, the automatically logged on user won’t be able to log out manually. To log on as a different user, the policy must first be disabled.
 
 > [!NOTE]
 >
@@ -267,7 +320,7 @@ On a device where this policy is configured, the user specified in the policy wi
 
 ### Improved update restart detection and notifications
 
-Between active hours and install time policies, it is possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior to the reboot being initiated and they can delay the reboot in accordance with IT policy.
+Between active hours and install time policies, it’s possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior to the reboot being initiated and they can delay the reboot in accordance with IT policy.
 
 The following update policies were added:
 
@@ -298,7 +351,7 @@ This information can be found later in the [app deployment store for business pa
 #### Overview to try Smart Retry for app updates
 
 1. Configure the new smart retry feature.
-1. On a device that has not yet received your app and is correctly configured to, log in an online environment.
+1. On a device that hasn’t yet received your app and is correctly configured to, log in an online environment.
 1. Make the device unable to download the app by means of turning it off or disconnecting it.
 1. Have your device powered on and connected to the internet during your triggered time to retry the download.
 
@@ -333,7 +386,7 @@ You can now use WDAC to block apps or processes from launching and continue to u
 
 - Fixed a [known issue for Device Portal where there was no prompt downloading locked files](hololens-troubleshooting.md#fixed---downloading-locked-files-doesnt-error).
 - Fixed a [known issue for Device Portal with file upload and download time outs](hololens-troubleshooting.md#fixed---device-portal-file-uploaddownload-times-out).
-- Gamepad processing for 2D apps was disabled in Insider builds. By removing it, apps are now free to use the Gamepad APIs directly and have access to the whole set of controls and can be developed in mind to do more. Developers should use the Gamepad APIs to consume Gamepad input. Here is a sample for [Gamepad Class (Windows.Gaming.Input) - Windows UWP applications](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
+- Gamepad processing for 2D apps was disabled in Insider builds. By removing it, apps are now free to use the Gamepad APIs directly and have access to the whole set of controls and can be developed in mind to do more. Developers should use the Gamepad APIs to consume Gamepad input. Here’s a sample for [Gamepad Class (Windows.Gaming.Input) - Windows UWP applications](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
 - Enabled an [Assigned Access API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) so that apps can now determine if a HoloLens is running in a Kiosk mode for the user logged into the HoloLens.
 
 #### For Enterprise
@@ -343,7 +396,7 @@ You can now use WDAC to block apps or processes from launching and continue to u
 - Fixed an issue where after first user sign-in, OOBE was being terminated in scenarios where AAD group-based kiosk configurations were being used.
 - Corrected an issue around displaying update notifications and dialog prompts for device restart.
 - Fixed an issue where after device reboot, Xbox Controllers and other Bluetooth LE peripherals needed be paired again to connect.
-- Fixed video encoder issue which could cause a short freeze of outbound video during a Remote Assist call. Wi-Fi driver and firmware changes to address “Fragment and Forge”  Wi-Fi vulnerabilities.
+- Fixed video encoder issue, which could cause a short freeze of outbound video during a Remote Assist call. Wi-Fi driver and firmware changes to address “Fragment and Forge”  Wi-Fi vulnerabilities.
 - Wi-Fi driver and firmware changes to address “Fragment and Forge”  Wi-Fi vulnerabilities.
 - When using Moving Platform Mode (MPM), "Down" will be estimated by averaging gravity over a short time. This value replaces true gravity when in Moving Platform Mode.
 - Fixed periodic wobble in holograms when in 3DoF mode, or during loss of tracking.
@@ -377,7 +430,7 @@ Improvements and fixes in the update:
 - Fixed issue where Wi-Fi proxy can't be saved when Wi-Fi properties UI is launched from **Settings > Network & Internet > Status > Properties**.
 - Addressed an issue around the removal of eSIM certificates across OS updates. This fix ensures that the eSIM certificates and related components are removed when updating to the 21H1 release.
 - Corrected an issue impacting preinstalled apps across OS resets.
-- Battery charging performance tuned to increase runtime when charging with increased CPU loading. While charging HoloLens 2 devices, if the device is detected to be running hot, the internal battery will charge more slowly to reduce heat. The positive tradeoff is that a device is less likely to shutdown due to thermal issues, with the impact is that the device runs longer. If the device is running cool, the charge rate is unaffected.
+- Battery charging performance tuned to increase runtime when charging with increased CPU loading. While charging HoloLens 2 devices, if the device is detected to be running hot, the internal battery will charge more slowly to reduce heat. The positive tradeoff is that a device is less likely to shut down due to thermal issues, with the impact is that the device runs longer. If the device is running cool, the charge rate is unaffected.
 
 > [!NOTE]
 > Due to a now resolved [known issue in our 21H1 build that was affecting Remote Assist users](hololens-troubleshooting.md#fixed---remote-assist-video-freezes-after-20-minutes), we temporally paused the offering of Windows Holographic, version 21H1 updates. We had also changed the default Advanced Recovery Companion (ARC) build to the [Windows Holographic, version 20H2 – June 2021 Update](hololens-release-notes-2004.md#windows-holographic-version-20h2--june-2021-update). The ARC build will now resume targeting the 21H1 build.
@@ -397,10 +450,10 @@ We've added a new feature to the HoloLens 2 Settings app, which allows customers
     >[!NOTE]
     >Photos and videos captured prior to enabling this feature *will not* be queued for upload and will still need to be manually uploaded.
 - A status message on the Settings page will display the number of files pending upload (or read "OneDrive is up to date" when all pending files have been uploaded).
-- If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files will not upload until you re-enable the feature.
+- If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files won’t upload until you re-enable the feature.
 - Newest files will upload first (last in, first out).
 - If your OneDrive account has issues (for example, after your password changes) a **Fix now** button will appear on the Settings page.
-- There is no maximum file size, but note that large files will take longer to upload (especially if your upload bandwidth is constrained). If you "pause" or turn off upload while a large file is being uploaded, the partial upload will be preserved. If upload is re-enabled within several hours of being "paused" or turned off, the upload will continue from where it left off. However, if upload is re-enabled after several hours, the large file's upload will restart from the beginning.
+- There’s no maximum file size, but note that large files will take longer to upload (especially if your upload bandwidth is constrained). If you "pause" or turn off upload while a large file is being uploaded, the partial upload will be preserved. If upload is re-enabled within several hours of being "paused" or turned off, the upload will continue from where it left off. However, if upload is re-enabled after several hours, the large file's upload will restart from the beginning.
 
 **Known issues and caveats**
 
@@ -430,7 +483,7 @@ Improvements and fixes in the update:
 
 - Build 20346.1002
 
-This update contains features for two target audiences; features that can be used by anyone on a device by the End User, and new device management options that can be configured by IT Admins. The table below specifies the features that are relevant to each audience. If you are an IT Admin, please take a look at our [IT Admin - Update Checklist](#it-admin---update-checklist).
+This update contains features for two target audiences; features that can be used by anyone on a device by the End User, and new device management options that can be configured by IT Admins. The table below specifies the features that are relevant to each audience. If you’re an IT Admin, please take a look at our [IT Admin - Update Checklist](#it-admin---update-checklist---21h1).
 >[!IMPORTANT]
 >In order to update to this build, HoloLens 2 device(s) must be currently running the February 2021 update (build 19041.1136) or newer. If you are not seeing this feature update available, please update your device first and try again.
 
@@ -590,7 +643,7 @@ You can use the new Edge to install web apps alongside Microsoft Store apps. For
 
 ### WebXR and 360 Viewer
 
-The new Microsoft Edge includes support for WebXR, which is the new standard for creating immersive web experiences (replacing WebVR). Many immersive web experiences were designed with VR in mind (they replace your field of view with a virtual environment), but these experiences are also supported by HoloLens 2. The WebXR standard also enables augmented and mixed reality immersive web experiences that use your physical environment. As developers spend more time with WebXR, we anticipate new augmented and mixed reality immersive experiences will arrive for HoloLens 2 customers to try!
+The new Microsoft Edge includes support for WebXR, which is the new standard for creating immersive web experiences (replacing WebVR). Many immersive web experiences were designed with VR in mind (they replace your field of view with a virtual environment), but these experiences are also supported by HoloLens 2. The WebXR standard also enables augmented and mixed reality-immersive web experiences that use your physical environment. As developers spend more time with WebXR, we anticipate new augmented and mixed reality-immersive experiences will arrive for HoloLens 2 customers to try!
 
 The 360 Viewer extension is built on WebXR and automatically installs alongside the new Microsoft Edge on HoloLens 2. This web extension gives you the ability to immerse yourself in 360-degree videos. YouTube offers the largest selection of 360 videos, so we encourage you to start there.
 
@@ -705,7 +758,7 @@ If you're unhappy with the custom color profile saved to your HoloLens 2, you ca
 1. Under **Display color calibration**, select the **Reset to default color profile** button.
 1. When the dialog box opens, select **Restart** if you're ready to restart HoloLens 2 and apply your changes.
 
-#### Top display color calibration known issues
+#### Top display color calibration-known issues
 
 - On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings.
     - Workaround: Select another Settings page and then re-select the Calibration page.
@@ -728,7 +781,7 @@ To set the volume of an individual app navigate to **Settings** > **System** > *
 
 Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the space bar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
 
-Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display). 
+Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display).
 
 ### Power menu from Start
 
@@ -833,7 +886,7 @@ Visitor Auto logon can be managed via [custom OMA-URI](/mem/intune/configuration
 
 ### Use the new Settings and Edge apps in Kiosk modes
 
-When including apps in [Kiosks](hololens-kiosk.md), an IT Admin often adds the app to the Kiosk but using it's App User Model ID (AUMID). Because both the Settings app and Microsoft Edge app are considered new apps and different than the older apps Kiosks that use AUMIDs for those apps will need to be updated to use the new AUMID.
+When including apps in [Kiosks](hololens-kiosk.md), an IT Admin often adds the app to the Kiosk but using it's App User Model ID (AUMID). Because both the Settings app and Microsoft Edge app are considered new apps and different than the older apps. Kiosks that use AUMIDs for those apps will need to be updated to use the new AUMID.
 
 When modifying a Kiosk to include the new apps, we recommend adding in the new AUMID as well as leaving the old one. This will create an easy transition when users update the OS and won't need to receive new policies to keep using the Kiosk as intended.
 
@@ -938,9 +991,9 @@ A few caveats about this preview offering:
 - HoloLens support is limited in this preview to OS updates only.
 - Windows Holographic for Business only supports HTTP download modes and downloads from a [Microsoft Connected Cache endpoint](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache); peer-to-peer download modes and group assignments are not supported for HoloLens devices at this time.
 - HoloLens does not support deployment or delivery optimization for Windows Server Update Services endpoints.
-- Troubleshooting will require either diagnostics on the Connected Cache server or collecting a trace on HoloLens on HoloLens via **Settings** > **Update & Security** >  **Troubleshooting** >  **Windows Update**.
+- Troubleshooting will require either diagnostics on the Connected Cache server or collecting a trace on HoloLens via **Settings** > **Update & Security** >  **Troubleshooting** >  **Windows Update**.
 
-### IT Admin - Update Checklist
+### IT Admin - Update Checklist - 21H1
 
 This checklist will help you know the new items that features that are being added in this feature update that may affect your current device management configurations, or new features you might wish to start using.
 
@@ -978,7 +1031,7 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 ✔️[Share things with nearby devices](#share-things-with-nearby-devices): You may disable the new nearby sharing feature.
 
-✔️ [Configuring policy settings for the new Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge): Review the newly configurations available for Microsoft Edge.
+✔️ [Configuring policy settings for the new Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge): Review the new configurations available for Microsoft Edge.
 
 #### New diagnostic tool
 

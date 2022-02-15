@@ -10,7 +10,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 1/14/2022
+ms.date: 2/8/2022
 ms.localizationpriority:
 ms.reviewer: 
 manager: ranjibb
@@ -31,6 +31,16 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 | [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 20348.1463       |
 | [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 20348.1470 |
 
+Looking for a new feature but don't see it? Check out the [release notes](hololens-release-notes.md) as many of our new features have been released as part of the main builds. The following features have recently moved to the release notes since their release:
+
+- [Moving Platform Mode Settings](hololens-release-notes.md#moving-platform-mode-settings)
+- [Moving Platform Mode MDM policies](hololens-release-notes.md#moving-platform-mode-mdm-policies)
+- [Start gestures settings](hololens-release-notes.md#start-gestures-settings)
+
+### IT Admin Feature Checklist - Insider
+
+✔️ If you'd like to allow launching another app from a single app Kiosk (such as settings) check out the new [single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps).
+
 ### Color-blind mode
 
 Added in Insider build 20348.1463
@@ -43,7 +53,7 @@ Color-blind mode is useful a great feature that makes HoloLens more accessible. 
 
 ### Single app kiosk policy for launching other apps
 
-Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful for example if you want to launch the Settings app to calibrate your device or change your Wi-fi.
+Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example,  if you want to launch the Settings app to calibrate your device or change your Wi-fi.
 
 By default, launching applications via [Launcher API (Launcher Class (Windows.System) - Windows UWP applications)](/uwp/api/Windows.System.Launcher?view=winrt-22000&preserve-view=true) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
 
@@ -58,18 +68,19 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Allo
 - Updated inbox Microsoft Edge browser version.
 - Fixed an issue where toggling optional diagnostic data didn't persist the chosen setting in telemetry settings page after a reboot.
 - Fixed an issue where MDM enrollment was stuck when applied with runtime provisioning for local accounts.
-- Fixed an issue where kiosk mode was not falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
+- Fixed an issue where kiosk mode wasn’t falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
+- Fixed an issue where graphics memory is leaked during some camera usage scenarios.
 
 ### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
 
-If a user has taken an update to the Insider flight, 20346.1466, and it doesn’t appear to be finishing the boot, a clean reflash may be required to move forward again. To see if you have encountered this:
+If a user has taken an update to the Insider flight, 20346.1466, and it doesn’t appear to be finishing the boot, a clean reflash may be required to move forward again. To see if you’ve encountered this:
 
 1. Reboot – Hold down the power until the LED’s step down.
 1. Power up.
 1. Confirm you see the Windows flag at the beginning of the boot and it goes black shortly after that.
 1. Connect your HoloLens2 to your PC with USB and run Advanced Recovery companion.
 1. Select the HoloLens.
-1. If the version says you are running the 20346.1466 build, you likely hit this issue.
+1. If the version says you’re running the 20346.1466 build, you likely hit this issue.
 
 #### Who does this tend to affect
 
@@ -77,7 +88,7 @@ Users who have been using their device without flashing it since [Windows Hologr
 
 #### Users who are typically unaffected
 
-Users who have flash their device, or unboxed their device, and started using it since [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1).
+Users who have flashed their device, or unboxed their device, and started using it since [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1).
 
 #### Workaround
 
@@ -98,7 +109,7 @@ On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows In
 > [!NOTE]
 > In order to enroll your device in Insider builds, you'll need to enable optional telemetry. If you have not done this already, open the Settings app and select **Privacy** > **Diagnostics & feedback** and then select **Optional diagnostics data**.
 
-Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here is what that mapping looks like:
+Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here’s what that mapping looks like:
 
 ![Windows Insider Channels explanation.](images/WindowsInsiderChannels.png)
 
