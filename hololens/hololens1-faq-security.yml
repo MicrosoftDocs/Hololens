@@ -45,7 +45,7 @@ sections:
       - question: |
           What frequency range and channels does the device operate on and is it configurable?
         answer: |
-          * Wi-Fi: The frequency range is not user configurable and depends on the country of use. In the US Wi-Fi uses both 2.4 GHz (1-11) channels and 5 GHz (36-64, 100-165) channels.
+          * Wi-Fi: The frequency range is not user configurable and depends on the country of use. In the US, Wi-Fi uses both 2.4 GHz (1-11) channels and 5 GHz (36-64, 100-165) channels.
           * Bluetooth: Bluetooth uses the standard 2.4-2.48 GHz range.
       - question: |
           Can the device allow or block specific frequencies?
@@ -84,7 +84,7 @@ sections:
       - question: |
           OS update frequency – What is the frequency of OS updates for the HL?  Is there a set schedule?  Does Microsoft release security patches as needed, etc.
         answer: |
-          * Microsoft does provide OS updates to HoloLens exactly the same way it is done for Windows 10. There are normally two major updates per year, one in spring, one in fall. As HoloLens is a Windows device, the update concept is the same as with any other Windows device. Microsoft releases Security patches as needed and follows the same concept as done on any other Windows device.
+          * Microsoft does provide OS updates to HoloLens exactly the same way it's done for Windows 10. There are normally two major updates per year, one in spring, one in fall. As HoloLens is a Windows device, the update concept is the same as with any other Windows device. Microsoft releases Security patches as needed and follows the same concept as done on any other Windows device.
 
       - question: |
           OS hardening – What options are there to harden the OS?  Can we remove or shut down unnecessary apps or services?
