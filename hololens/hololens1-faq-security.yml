@@ -117,7 +117,7 @@ sections:
           * The HoloLens only contains two ports (one for headphones and one for charging or connecting to PCs). There is not ability to disable the port due to functionality and recovery reasons.
 
       - question: |
-          Antivirus, endpoint detection, IPS, app control allow list – Any ability to run antivirus, endpoint detection, IPS, app control allow list, etc.
+          Antivirus, endpoint detection, IPS, app control allowlist – Any ability to run antivirus, endpoint detection, IPS, app control allowlist, etc.
         answer: |
           * Windows Holographic for Business (commercial suite) does support Windows Defender Smart Screen. If an antivirus company were to create and publish their app to the Universal Windows Platform, it could be downloaded on HoloLens. At present, no companies have done this for HoloLens.
           * Allowing apps is possible by using the Microsoft Enterprise Store, where you can choose only what specific apps can be downloaded. Also, through MDM you can lock what specific apps can be run or even seen on the device.
