@@ -18,7 +18,7 @@ appliesto:
 
 # Moving Platform Mode on Low Dynamic Motion Moving Platforms
 
-In [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) has newly added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you'll be able to use your HoloLens 2 in previously inaccessible environments like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
+In [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) has newly added support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you'll be able to use your HoloLens 2 in previously inaccessible environments like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
 
 ![Moving platform example.](./images/mpm-compare.gif)
 
@@ -52,7 +52,7 @@ While Moving Platform Mode was developed to intelligently handle cases of inerti
 
 ## Prerequisites
 
-Beta support for Moving Platform Mode requires the following prerequisites:
+Support for Moving Platform Mode requires the following prerequisites:
 
 Install [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) or newer by updating or flash to the [latest build](https://aka.ms/hololens2download) [via ARC](hololens-recovery.md#clean-reflash-the-device).
 
@@ -80,6 +80,8 @@ In order to enable a range of use cases, various methods have been provided to a
 
 ### On Device Settings
 
+- Requires build [20348.1447](hololens-release-notes.md#windows-holographic-version-21h2---february-2022-update) or newer.
+
 1. Open the Start menu
 1. Open the Settings app
 1. Select **System**
@@ -93,6 +95,8 @@ In order to enable a range of use cases, various methods have been provided to a
     ![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
 
 ### Via Mobile Device Management (MDM)
+
+- Requires build [20348.1447](hololens-release-notes.md#windows-holographic-version-21h2---february-2022-update) or newer.
 
 MDM is a tool for system administrators to set certain settings on devices owned by the organization. See [Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices](hololens-mdm-configure.md) for more details. System administrators can choose from three options:
 
@@ -124,6 +128,8 @@ Supported values:
 - `True` : User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
 
 ### Enable via SDK
+
+- Requires build [20348.1447](hololens-release-notes.md#windows-holographic-version-21h2---february-2022-update) or newer.
 
 Sometimes you may want the decision on if to use Moving Platform Mode to be dependant on your situation, you may only need it enabled when using your app, or only a specific app. In these cases you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
 
