@@ -74,7 +74,7 @@ In order to enable a range of use cases, various methods have been provided to a
 
 | Who knows if HL2 is in a moving platform | Best method of setting Moving Platform Mode | Benefits | Costs |
 |--------------|------------------------|-----|---- |
-|System Administrator| [Mobile Device Management](#via-mobile-device-management-mdm)|  The user doesn't need to be involved. Any app will work without modification. Device can be protected from entering the incorrect mode.| User and Apps can't change the mode. |
+|System Administrator| [Mobile Device Management](#via-mobile-device-management-mdm)|  The user doesn't need to be involved. Any app will work without modification. Device can be protected from entering the incorrect mode.| User and apps can't change the mode. |
 |End User            | [The Settings App](#on-device-settings)| The user is often the most knowledgeable about when and where they're using the device. Any app will work without modification.| The user may not know the mode exists. |
 |The Application     | [Use the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity)| Use case specific cues can be used to swap the mode when the environment can't be known ahead of time. Removes the requirement that a user has to make this decision and change the mode in settings.| A poorly designed app can give a very bad experience, and leave the device in an unexpected mode. |
 
