@@ -17,6 +17,7 @@
 ## First-time usage
 ### [Get your HoloLens 2 ready to use](hololens2-setup.md)
 ### [Set up your HoloLens 2](hololens2-start.md)
+### [Set up HoloLens 2 quickly](hololens2-new-user-optimize.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
 ### [Update HoloLens](hololens-update-hololens.md)
 ## Daily Usage

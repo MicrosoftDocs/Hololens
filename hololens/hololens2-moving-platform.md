@@ -131,7 +131,7 @@ Supported values:
 
 - Requires build [20348.1447](hololens-release-notes.md#windows-holographic-version-21h2---february-2022-update) or newer.
 
-Sometimes you may want the decision on if to use Moving Platform Mode to be dependant on your situation, you may only need it enabled when using your app, or only a specific app. In these cases you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
+Sometimes you may want the decision on if to use Moving Platform Mode to be dependent on your situation, you may only need it enabled when using your app, or only a specific app. In these cases you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
 
 ### Enable via [Developer Mode and Device Portal](/windows/mixed-reality/develop/advanced-concepts/using-the-windows-device-portal)
 
