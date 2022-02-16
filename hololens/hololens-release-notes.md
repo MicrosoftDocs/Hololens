@@ -93,7 +93,7 @@ Supported values:
 - False (Default) - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
 - True - User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
 
-### Moving Platform SDK
+### Moving Platform Mode SDK
 
 Sometimes you may want the decision on if to use Moving Platform Mode to be dependant on your situation, you may only need it enabled when using your app, or only a specific app. In these cases you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
 
