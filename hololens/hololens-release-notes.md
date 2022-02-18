@@ -52,6 +52,7 @@ To help provide clarity this release notes page will only provide information fo
 |---------|-------------|-----------------|
 | [Moving Platform Mode Settings](#moving-platform-mode-settings) | Toggle Moving Platform Mode and more via Settings | Ends users |
 | [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies) | Configures new MPM settings via MDM | IT Admins |
+| [Moving Platform Mode SDK](#moving-platform-mode-sdk) | Configures MPM via Apps | Developers |
 
 ✔️ If you use your HoloLens devices in a location that has dynamic movement, consider setting these new [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies).
 
@@ -91,6 +92,10 @@ Supported values:
 
 - False (Default) - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
 - True - User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
+
+### Moving Platform Mode SDK
+
+Sometimes you may want the decision on if to use Moving Platform Mode to be dependant on your situation, you may only need it enabled when using your app, or only a specific app. In these cases you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
 
 #### Improvements and fixes in the February 2022 update
 

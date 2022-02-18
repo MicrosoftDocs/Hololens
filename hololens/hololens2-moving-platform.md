@@ -4,8 +4,8 @@ description: How to use HoloLens on moving platforms
 keywords: moving platforms, dynamic motion, hololens, moving platform mode
 author: evmill
 ms.author: v-evmill
-ms.reviewer: yabahman
-ms.date: 2/8/2021
+ms.reviewer: JoshuaElsdon
+ms.date: 2/15/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -18,7 +18,7 @@ appliesto:
 
 # Moving Platform Mode on Low Dynamic Motion Moving Platforms
 
-In [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) has newly added beta support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you'll be able to use your HoloLens 2 in previously inaccessible environments like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
+In [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) has newly added support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you'll be able to use your HoloLens 2 in previously inaccessible environments like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
 
 ![Moving platform example.](./images/mpm-compare.gif)
 
@@ -52,23 +52,35 @@ While Moving Platform Mode was developed to intelligently handle cases of inerti
 
 ## Prerequisites
 
-Beta support for Moving Platform Mode requires the following prerequisites:
+Support for Moving Platform Mode requires the following prerequisites:
 
 Install [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) or newer by updating or flash to the [latest build](https://aka.ms/hololens2download) [via ARC](hololens-recovery.md#clean-reflash-the-device).
 
 > [!NOTE]
-> While Moving Platform Mode was introduced in 21H2, it's suggested using the latest build to use the full range of features and updates.
-
-There are three ways that you can enable Moving Platform Mode:
-
-- [Via the on-device settings app](#on-device-settings)
-- [Via Mobile Device Management (MDM) policies](#via-mobile-device-management-mdm)
-- [Via the device portal](#enable-via-developer-mode-and-device-portal)
-- Via API, the API will be released via Mixed Reality Feature tool in Unity and via Nuget.org
+> While Moving Platform Mode was introduced in 21H2, it's suggested using the [latest build](hololens-release-notes.md) to use the full range of features and updates.
 
 ## Enabling Moving Platform Mode
 
+### How should I activate Moving Platform Mode?
+
+There are four ways that you can enable Moving Platform Mode:
+
+- [Via the on-device settings app](#on-device-settings)
+- [Via Mobile Device Management (MDM) policies](#via-mobile-device-management-mdm)
+- [Via API](/windows/mixed-reality/develop/unity/moving-platform-unity), the API will be released via Mixed Reality Feature tool in Unity and via Nuget.org
+- [Via the device portal](#enable-via-developer-mode-and-device-portal)
+
+In order to enable a range of use cases, various methods have been provided to activate Moving Platform Mode. It's important that you carefully consider which method to choose. A key question to ask is: Who knows whether the HoloLens 2 is currently within a moving platform? See the following table for an example:
+
+| Who knows if HL2 is in a moving platform | Best method of setting Moving Platform Mode | Benefits | Costs |
+|--------------|------------------------|-----|---- |
+|System Administrator| [Mobile Device Management](#via-mobile-device-management-mdm)|  The user doesn't need to be involved. Any app will work without modification. Device can be protected from entering the incorrect mode.| User and apps can't change the mode. |
+|End User            | [The Settings App](#on-device-settings)| The user is often the most knowledgeable about when and where they're using the device. Any app will work without modification.| The user may not know the mode exists. |
+|The Application     | [Use the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity)| Use case specific cues can be used to swap the mode when the environment can't be known ahead of time. Removes the requirement that a user has to make this decision and change the mode in settings.| A poorly designed app can give a very bad experience, and leave the device in an unexpected mode. |
+
 ### On Device Settings
+
+- Requires build [20348.1447](hololens-release-notes.md#windows-holographic-version-21h2---february-2022-update) or newer.
 
 1. Open the Start menu
 1. Open the Settings app
@@ -83,6 +95,8 @@ There are three ways that you can enable Moving Platform Mode:
     ![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
 
 ### Via Mobile Device Management (MDM)
+
+- Requires build [20348.1447](hololens-release-notes.md#windows-holographic-version-21h2---february-2022-update) or newer.
 
 MDM is a tool for system administrators to set certain settings on devices owned by the organization. See [Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices](hololens-mdm-configure.md) for more details. System administrators can choose from three options:
 
@@ -112,6 +126,12 @@ Supported values:
 
 - `False` *(Default)* : User can manually change down direction if desired, otherwise down direction is determined automatically based on the measured gravity vector.
 - `True` : User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
+
+### Enable via SDK
+
+- Requires build [20348.1447](hololens-release-notes.md#windows-holographic-version-21h2---february-2022-update) or newer.
+
+Sometimes you may want the decision on if to use Moving Platform Mode to be dependent on your situation, you may only need it enabled when using your app, or only a specific app. In these cases you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
 
 ### Enable via [Developer Mode and Device Portal](/windows/mixed-reality/develop/advanced-concepts/using-the-windows-device-portal)
 
