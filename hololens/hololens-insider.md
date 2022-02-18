@@ -10,7 +10,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 2/8/2022
+ms.date: 2/18/2022
 ms.localizationpriority:
 ms.reviewer: 
 manager: ranjibb
@@ -70,6 +70,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Allo
 - Fixed an issue where MDM enrollment was stuck when applied with runtime provisioning for local accounts.
 - Fixed an issue where kiosk mode wasn’t falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
 - Fixed an issue where graphics memory is leaked during some camera usage scenarios.
+- Updated HoloLens inbox Microsoft Edge browser version to 98.0.1108.43.
 
 ### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
 
