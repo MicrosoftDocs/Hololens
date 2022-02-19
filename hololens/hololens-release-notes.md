@@ -40,7 +40,7 @@ To help provide clarity this release notes page will only provide information fo
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
-| 20346                  | [Windows Holographic, version 21H1](#windows-holographic-version-21h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2)   | May 2021 <br> October 2021   | 20346.1002 <br> 20348.1432   |
+| 20348                  | [Windows Holographic, version 21H1](#windows-holographic-version-21h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2) <br> [Windows Holographic, version 22H1](#windows-holographic-version-22h1)  | May 2021 <br> October 2021 <br> April 2022    | 20346.1002 <br> 20348.1432 <br> 20348.XXXX   |
 | 19041                  | [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) <br> [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2)    | May 2020 <br> Nov 2020     | 19041.1103 <br> 19041.1128   |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
 
@@ -58,8 +58,6 @@ Many of you have been so eager to receive our feature updates we've release some
 This latest release is a "monthly update" to versions 21H1 (and 21H2), which includes new features, because of this the major build number will remain the same and Windows Update will indicate a monthly release to version 21H1 (build 20348). To ensure you've received 22H1, please verify the version number is 20348.XXXX or higher. You can look at your Build Number in your **Settings** -> **System** -> **About** screen to confirm you are on the latest available build 20348.XXXX+.
 
 To update to the latest release, open the Settings app, go to Update & Security, and tap Check for Updates. For more information on how to manage HoloLens updates, visit [Manage HoloLens updates.](hololens-updates.md)
-
-
 
 | Feature | Description | Target Audience | Available in Build |
 |---------|-------------|-----------------|--------------------|
