@@ -24,52 +24,7 @@ Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get s
 
 ## Windows Insider Release Notes
 
-What's new and on the horizon for HoloLens? Check out these new updates coming to HoloLens!
-
-| Feature | Description | Target Audience | Available in Build |
-|---------|-------------|-----------------|--------------------|
-| [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 20348.1463       |
-| [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 20348.1470 |
-
-Looking for a new feature but don't see it? Check out the [release notes](hololens-release-notes.md) as many of our new features have been released as part of the main builds. The following features have recently moved to the release notes since their release:
-
-- [Moving Platform Mode Settings](hololens-release-notes.md#moving-platform-mode-settings)
-- [Moving Platform Mode MDM policies](hololens-release-notes.md#moving-platform-mode-mdm-policies)
-- [Start gestures settings](hololens-release-notes.md#start-gestures-settings)
-
-### IT Admin Feature Checklist - Insider
-
-✔️ If you'd like to allow launching another app from a single app Kiosk (such as settings) check out the new [single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps).
-
-### Color-blind mode
-
-Added in Insider build 20348.1463
-
-Color-blind mode is useful a great feature that makes HoloLens more accessible. The new color-blind mode can be found in the Settings app under **Settings** -> **Ease of Access** -> **Color filters**. Several new filters are available. Here's a visual example of some of the available filters.
-
-| Off | Grey scale | Tritanopia |
-|-----|-----------|------------|
-| ![Color filter off](images/colorblind-off.png)   | ![Color filter grey scale](images/colorblind-greyscale.png)         | ![Color filter tritanopia](images/colorblind-tritanopia.png)          |
-
-### Single app kiosk policy for launching other apps
-
-Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example,  if you want to launch the Settings app to calibrate your device or change your Wi-fi.
-
-By default, launching applications via [Launcher API (Launcher Class (Windows.System) - Windows UWP applications)](/uwp/api/Windows.System.Launcher?view=winrt-22000&preserve-view=true) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
-
-The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowLaunchUriInSingleAppKiosk`
-
-- Bool value
-
-### Fixes and improvements
-
-- Improvements to Moving Platform Mode when detecting the down direction.
-- Fixed an issue around update dialogs.
-- Updated inbox Microsoft Edge browser version.
-- Fixed an issue where toggling optional diagnostic data didn't persist the chosen setting in telemetry settings page after a reboot.
-- Fixed an issue where MDM enrollment was stuck when applied with runtime provisioning for local accounts.
-- Fixed an issue where kiosk mode wasn’t falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
-- Fixed an issue where graphics memory is leaked during some camera usage scenarios.
+Looking for a new feature but don't see it? Check out the [release notes](hololens-release-notes.md) as many of our new features have been released as part of the main builds.
 
 ### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
 
