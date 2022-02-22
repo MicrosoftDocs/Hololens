@@ -18,7 +18,7 @@ appliesto:
 
 # Enroll HoloLens in MDM
 
-You can manage multiple Microsoft HoloLens devices simultaneously using solutions like [Microsoft Intune](/intune/windows-holographic-for-business). You will be able to manage settings, select apps to install and set security configurations tailored to your organization's need. See [Manage devices running Windows Holographic with Microsoft Intune](/intune/windows-holographic-for-business), the [configuration service providers (CSPs) that are supported in Windows Holographic](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens), and the [policies supported by Windows Holographic for Business](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies).
+You can manage multiple Microsoft HoloLens devices simultaneously using solutions like [Microsoft Intune](/intune/windows-holographic-for-business). You'll be able to manage settings, select apps to install and set security configurations tailored to your organization's need. See [Manage devices running Windows Holographic with Microsoft Intune](/intune/windows-holographic-for-business), the [configuration service providers (CSPs) that are supported in Windows Holographic](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens), and the [policies supported by Windows Holographic for Business](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies).
 
 > [!NOTE]
 > Mobile device management (MDM), including the VPN, Bitlocker, and kiosk mode features, is only available when you [upgrade to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
@@ -44,6 +44,14 @@ Depending on the type of [identity](hololens-identity.md) chosen either during O
 
 Once the device is enrolled with your MDM server, the Settings app will now reflect that the device is enrolled in device management.
 
+## Enrollment per scenario
+
+Depending on what stage you are in your deployment we have the following recommendations:
+
+- For devices being deployed in production it is suggested you use Autopilot.
+- For devices that are being initially part of a pilot program, Azure AD Join during OOBE should be sufficient
+- For a proof of concept joining a device via the Settings menu may suit your needs if you don't need multiple users per device
+
 ## Auto-enrollment in MDM
 
 If your organization has an [Azure Premium subscription](https://azure.microsoft.com/overview/), is using Azure Active Directory (Azure AD) and an MDM solution that accepts an Azure AD token for authentication (currently, only supported in Microsoft Intune and AirWatch), your IT admin can configure Azure AD to automatically allow MDM enrollment after the user signs in with their Azure AD account. [Learn how to configure Azure AD enrollment](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) and [Azure active directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for detailed background information.
@@ -56,7 +64,7 @@ When a device is Azure AD Joined it may affect who considered the [device owner]
 
 Depending on the enrollment method, unenrolling your device may not be available.
 
-If your device was enrolled with an Azure AD account or Autopilot, it cannot be unenrolled from Intune. If you wish to unjoin HoloLens from Azure AD or rejoin it to a different to Azure AD tenant, you must [reset/reflash](hololens-recovery.md#restart-the-device) the device.
+If your device was enrolled with an Azure AD account or Autopilot, it can’t be unenrolled from Intune. If you wish to unjoin HoloLens from Azure AD or rejoin it to a different to Azure AD tenant, you must [reset/reflash](hololens-recovery.md#restart-the-device) the device.
 
 If your device was enrolled from a MSA account that added a work account or from a Local account that enrolled only in device management, then you may unenroll the device. Open the Start menu and then select **Settings App** -> **Access Work or School** -> *YourAccount* -> **Disconnect** button.
 
@@ -66,14 +74,14 @@ If your device was enrolled from a MSA account that added a work account or from
 
 Once user has signed-in, ensure internet connection by browsing to any internet facing website on device.
 
-### Ensure that Azure Active Directory (AAD) join is not disabled in your AAD tenant
+### Ensure that Azure Active Directory (Azure AD) join is not disabled in your Azure AD tenant
 
 Refer to [Configure your device settings](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) for information about the available options in Azure portal.
 
 ### Ensure valid license is assigned to the user
 
-Refer to [Troubleshoot Windows device enrollment problems in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors) specifically following sections, i.e. [Check device type restrictions](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#check-device-type-restrictions) and [Assign a valid license to the user.](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#assign-a-valid-license-to-the-user)
+Refer to [Troubleshoot Windows device enrollment problems in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors) specifically following sections, that is, [Check device type restrictions](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#check-device-type-restrictions) and [Assign a valid license to the user.](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#assign-a-valid-license-to-the-user)
 
 ### Ensure that MDM enrollment isn't blocked for Windows devices
 
-In order for enrollment to succeed you'll need to make sure that your HoloLens devices can enroll. Since HoloLens is considered a Windows device there will need to be no enrollment restrictions that could block your deployment. [Review this list of restrictions](/mem/intune/enrollment/enrollment-restrictions-set) and ensure you'll be able to enroll your devices.
+In order for enrollment to succeed you'll need to make sure that your HoloLens devices can enroll. Since HoloLens is considered a Windows device, there will need to be no enrollment restrictions that could block your deployment. [Review this list of restrictions](/mem/intune/enrollment/enrollment-restrictions-set) and ensure you'll be able to enroll your devices.
