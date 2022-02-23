@@ -44,9 +44,6 @@ To help provide clarity this release notes page will only provide information fo
 | 19041                  | [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) <br> [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2)    | May 2020 <br> Nov 2020     | 19041.1103 <br> 19041.1128   |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
 
-
-
-
 ## Windows Holographic, version 22H1
 
 - Build 20348.XXXX
@@ -63,6 +60,7 @@ To update to the latest release, open the Settings app, go to Update & Securit
 |---------|-------------|-----------------|--------------------|
 | [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 22H1       |
 | [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 22H1 |
+| [Power and Thermal SDK for apps](#power-and-thermal-sdk-for-apps) | Allows apps to adapt to reduce the thermal impact. | Developers | 22H1 |
 | [Moving Platform Mode Settings](#moving-platform-mode-settings) | Toggle Moving Platform Mode and more via Settings | Ends users | [February](#windows-holographic-version-21h2---february-2022-update) |
 | [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies) | Configures new MPM settings via MDM | IT Admins |  [February](#windows-holographic-version-21h2---february-2022-update) |
 | [Moving Platform Mode SDK](#moving-platform-mode-sdk) | Configures MPM via Apps | Developers |  [February](#windows-holographic-version-21h2---february-2022-update) |
@@ -93,6 +91,12 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Allo
 
 - Bool value
 
+### Power and Thermal SDK for apps
+
+When the HoloLens 2 is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), it might get hot enough that it takes actions automatically to keep itself from overheating. If your app demands high peripheral performance, consider using the [PowerThermalNotification Software Development Kit (SDK)](/windows/mixed-reality/develop/unity/managing-power-and-thermals) to subscribe to notification events and implement your own custom actions.
+
+Using this new SDK can allow the device to operate longer in situations where the app may be closed by the system.
+
 ### Fixes and improvements
 
 - Improvements to Moving Platform Mode when detecting the down direction.
@@ -102,7 +106,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Allo
 - Fixed an issue where MDM enrollment was stuck when applied with runtime provisioning for local accounts.
 - Fixed an issue where kiosk mode wasn’t falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
 - Fixed an issue where graphics memory is leaked during some camera usage scenarios.
-
+- Updated HoloLens inbox Microsoft Edge browser version to 98.0.1108.43.
 
 
 
