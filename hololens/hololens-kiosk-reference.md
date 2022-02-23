@@ -68,11 +68,11 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 
 1. [Multiple app global assigned access profile](#multiple-app-global-assigned-access-profile)
 1. [Multiple app global assigned access profile excluding device owners](#multiple-app-global-assigned-access-profile-excluding-device-owners)
-1. [Multiple app assigned access profile for a local account or AAD user account](#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account)
-1. [Multiple app assigned access profiles for two AAD users or more](#multiple-app-assigned-access-profiles-for-two-aad-users-or-more)
-1. [Multiple app assigned access profile for one AAD group](#multiple-app-assigned-access-profile-for-one-aad-group)
-1. [Multiple app assigned access profile for two AAD groups or more](#multiple-app-assigned-access-profile-for-two-aad-groups-or-more)
-1. [Multiple app assigned access profile for one AAD account and one AAD group](#multiple-app-assigned-access-profile-for-one-aad-account-and-one-aad-group)
+1. [Multiple app assigned access profile for a local account or Azure AD user account](#multiple-app-assigned-access-profile-for-a-local-account-or-azure-ad-user-account)
+1. [Multiple app assigned access profiles for two Azure AD users or more](#multiple-app-assigned-access-profiles-for-two-azure-ad-users-or-more)
+1. [Multiple app assigned access profile for one Azure AD group](#multiple-app-assigned-access-profile-for-one-azure-ad-group)
+1. [Multiple app assigned access profile for two Azure AD groups or more](#multiple-app-assigned-access-profile-for-two-azure-ad-groups-or-more)
+1. [Multiple app assigned access profile for one Azure AD account and one Azure AD group](#multiple-app-assigned-access-profile-for-one-azure-ad-account-and-one-azure-ad-group)
 1. [Multiple app assigned access profile for visitors](#multiple-app-assigned-access-profile-for-visitors)
 
 > [!NOTE]
@@ -92,35 +92,35 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for a local account or AAD user account
+### Multiple app assigned access profile for a local account or Azure AD user account
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-local-or-aad-user.xml" highlight="18-20,51,55":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profiles for two AAD users or more
+### Multiple app assigned access profiles for two Azure AD users or more
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-users-or-more.xml" highlight="22-24,52,53,80,88":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for one AAD group
+### Multiple app assigned access profile for one Azure AD group
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-one-aad-group.xml" highlight="28":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for two AAD groups or more
+### Multiple app assigned access profile for two Azure AD groups or more
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-groups-or-more.xml" highlight="22-24,52,53,83,94":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for one AAD account and one AAD group
+### Multiple app assigned access profile for one Azure AD account and one Azure AD group
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-for-aad-user-and-aad-group.xml" highlight="22-24,52,53,80,91":::
 
