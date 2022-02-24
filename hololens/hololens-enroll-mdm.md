@@ -31,8 +31,8 @@ You can manage multiple Microsoft HoloLens devices simultaneously using solution
 
 Depending on what stage you are in your deployment we have the following recommendations:
 
-- For multi-user shared devices being deployed in production it is suggested you use Autopilot.
-- For multi-user shared devices that are being initially part of a pilot program, Azure AD Join during OOBE should be sufficient.
+- For multi-user shared devices being deployed in production it is suggested you use [Autopilot](hololens2-autopilot.md).
+- For multi-user shared devices that are being initially part of a pilot program, [Azure AD Join during OOBE](hololens-enroll-mdm.md#auto-enrollment-in-mdm) should be sufficient.
 - For a proof of concept joining a device via the Settings menu may suit your needs if you don't need multiple users per device.
 
 ## Different ways to enroll
