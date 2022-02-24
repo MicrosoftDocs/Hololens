@@ -10,7 +10,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 2/8/2022
+ms.date: 2/22/2022
 ms.localizationpriority:
 ms.reviewer: 
 manager: ranjibb
@@ -30,6 +30,7 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 |---------|-------------|-----------------|--------------------|
 | [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 20348.1463       |
 | [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 20348.1470 |
+| [Power and Thermal SDK for apps](#power-and-thermal-sdk-for-apps) | Allows apps to adapt to reduce the thermal impact. | Developers | 20348.1479 |
 
 Looking for a new feature but don't see it? Check out the [release notes](hololens-release-notes.md) as many of our new features have been released as part of the main builds. The following features have recently moved to the release notes since their release:
 
@@ -61,6 +62,12 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Allo
 
 - Bool value
 
+### Power and Thermal SDK for apps
+
+When the HoloLens 2 is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), it might get hot enough that it takes actions automatically to keep itself from overheating. If your app demands high peripheral performance, consider using the [PowerThermalNotification Software Development Kit (SDK)](/windows/mixed-reality/develop/unity/managing-power-and-thermals) to subscribe to notification events and implement your own custom actions.
+
+Using this new SDK can allow the device to operate longer in situations where the app may be closed by the system.
+
 ### Fixes and improvements
 
 - Improvements to Moving Platform Mode when detecting the down direction.
@@ -70,6 +77,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Allo
 - Fixed an issue where MDM enrollment was stuck when applied with runtime provisioning for local accounts.
 - Fixed an issue where kiosk mode wasn’t falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
 - Fixed an issue where graphics memory is leaked during some camera usage scenarios.
+- Updated HoloLens inbox Microsoft Edge browser version to 98.0.1108.43.
 
 ### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
 
