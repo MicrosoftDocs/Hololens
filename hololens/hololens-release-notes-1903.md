@@ -17,7 +17,8 @@ appliesto:
 # HoloLens 2 release notes - Version 1903
 
 > [!IMPORTANT]
-> These are release notes for an older HoloLens servicing build. Windows Holographic, version 1903 is no longer being serviced, but these release notes are kept as a record of HoloLens 2 update history. 
+> These are release notes for an older HoloLens servicing build. Windows Holographic, version 1903 is no longer being serviced, but these release notes are kept as a record of HoloLens 2 update history.
+>
 > View the [most current release notes for HoloLens](hololens-release-notes.md).
 
 ## Windows Holographic, version 1903 - June 2021 Update
