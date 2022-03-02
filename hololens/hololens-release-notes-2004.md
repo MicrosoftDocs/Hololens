@@ -16,7 +16,10 @@ appliesto:
 
 # HoloLens 2 release notes - Version 2004
 
-These are release notes for an older HoloLens servicing build. Windows Holographic, version 2004 is still serviced but no longer the most current build. These release notes are kept as a record of HoloLens 2 update history. You may also view the [most current release notes for HoloLens](hololens-release-notes.md).
+> [!IMPORTANT]
+> These are release notes for an older HoloLens servicing build. Windows Holographic, version 2004 is still serviced but no longer the most current build. These release notes are kept as a record of HoloLens 2 update history.
+>
+> View the [most current release notes for HoloLens](hololens-release-notes.md).
 
 These are the major feature releases from Windows Holographic, version 2004.
 
