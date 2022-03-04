@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 2/8/2022
+ms.date: 3/8/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -43,6 +43,14 @@ To help provide clarity this release notes page will only provide information fo
 | 20346                  | [Windows Holographic, version 21H1](#windows-holographic-version-21h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2)   | May 2021 <br> October 2021   | 20346.1002 <br> 20348.1432   |
 | 19041                  | [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) <br> [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2)    | May 2020 <br> Nov 2020     | 19041.1103 <br> 19041.1128   |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
+
+## Windows Holographic, version 21H2 - March 2021 Update
+
+- Build 20348.1450
+
+Improvements and fixes in the update:
+
+- Fix background MDM sync failure over proxy network.
 
 ## Windows Holographic, version 21H2 - February 2022 Update
 
