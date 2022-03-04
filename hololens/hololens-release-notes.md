@@ -50,7 +50,7 @@ To help provide clarity this release notes page will only provide information fo
 
 Improvements and fixes in the update:
 
-- Fix background MDM sync failure over proxy network.
+- Fixed a background MDM sync failure over proxy network.
 
 ## Windows Holographic, version 21H2 - February 2022 Update
 
