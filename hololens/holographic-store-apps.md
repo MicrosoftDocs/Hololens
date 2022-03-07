@@ -3,7 +3,7 @@ title: Find, install, and uninstall applications
 description: The Microsoft Store is your source for apps and games that work with HoloLens.  Learn more about finding, installing, and uninstalling holographic apps.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 9/7/2021
+ms.date: 3/7/2022
 manager: jarrettr
 keywords: hololens, store, uwp, app, install
 ms.prod: hololens
@@ -144,7 +144,7 @@ Automatic updates apply to Microsoft Store or Microsoft Store for Business apps,
 
 #### How automatic updates work
 
-Automatic app updates are scheduled to occur daily (approximately every 24 hours) subject to network availability. Keep your device either active or plugged into AC to receive updates. Even if app updates are downloaded during active daily usage, they will only be applied when the app to be updated is no longer in use.
+Automatic app updates are scheduled to occur daily subject to network availability. These updates occur approximately every 24 hours, although updates per device can be random. Keep your device either active or plugged into AC to receive updates. Even if app updates are downloaded during active daily usage, they will only be applied when the app to be updated is no longer in use.
 
 > [!TIP]
 > If possible, charge your device overnight while it is connected to the corporate network. If updates can be downloaded and installed overnight, they are less likely to interrupt active device usage.
