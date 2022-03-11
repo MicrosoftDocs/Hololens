@@ -168,7 +168,7 @@ HoloLens 2 supports more update automation features than HoloLens (1st gen) does
 
 Windows Updates for Business supports deferral policies. After Microsoft releases an update, you can use a deferral policy to define how long to wait before installing that update on devices. By associating subsets of your devices (also known as *update rings*) with different deferral policies, you can coordinate an update rollout strategy for your organization.
 
-> [!NOTE]
+> [!TIP]
 > It is suggested that organizations also have a subset of devices on [Insider](hololens-insider.md) that allows for early validation of new features, and ensuring builds work as expected.
 
 For example, consider an organization that has 1,000 devices, and has to update the devices in five waves. The organization can create five update rings, as shown in the following table.

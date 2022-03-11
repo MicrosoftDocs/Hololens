@@ -112,7 +112,7 @@ Users who have flashed their device, or unboxed their device, and started using 
 1. On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**.
 1. Link the account you used to register as a Windows Insider.
 
-> [!NOTE]
+> [!TIP]
 > Once you enroll a device into Insider builds it is highly suggested you keep a set of devices enrolled in Insider builds. This allows your organization to more easily validate builds as they come out. This makes for an easier experience and helps incase you normal production devices are blocked from insider builds.
 
 > [!NOTE]
