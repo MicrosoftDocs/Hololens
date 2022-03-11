@@ -1,6 +1,6 @@
 ---
 title: Overview - App Management
-description: Get started with an overview of mixed reality app management with mobile device management, Microsoft store for business, and provisioning packages.
+description: Get started with an overview of mixed reality app management with mobile device management, Microsoft store for business, provisioning package, and App Installer.
 keywords: HoloLens, user, account, app, application management,
 author: evmill
 ms.author: v-evmill
@@ -18,7 +18,7 @@ appliesto:
 
 # App Management: Overview
 
-You can deploy apps on four different paths: **Mobile Device Management (MDM)**, **Microsoft Store for Business**, **Microsoft Store**, or by installing them via **Provisioning**.
+You can deploy apps on four different paths: **Mobile Device Management (MDM)**, **Microsoft Store for Business**, **Microsoft Store**, **Provisioning**, or by installing them via App Installer.
 
 ## Mobile Device Management (MDM)
 
