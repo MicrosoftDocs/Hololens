@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 3/8/2022
+ms.date: 4/12/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -17,6 +17,7 @@ appliesto:
 - HoloLens 2
 
 ---
+
 
 # HoloLens 2 release notes
 
