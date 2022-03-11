@@ -144,11 +144,11 @@ Kiosk Mode can be set via Device Portal’s REST API by doing a POST to /api/hol
 
 ## Troubleshooting & Updates
 
-[Update - Single app kiosk policy for launching other apps](updatelink.md)
-[Issue - No apps are shown in start menu in kiosk mode](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)
-[Issue - Building a package with kiosk mode failed](#issue---building-a-package-with-kiosk-mode-failed)
-[Issue – Provisioning package built successfully but failed to apply](#issue--provisioning-package-built-successfully-but-failed-to-apply)
-[Issue – Multiple app assigned access to Azure AD group does not work](#issue--multiple-app-assigned-access-to-azure-ad-group-does-not-work)
+- [Update - Single app kiosk policy for launching other apps](#update---single-app-kiosk-policy-for-launching-other-apps)
+- [Issue - No apps are shown in start menu in kiosk mode](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)
+- [Issue - Building a package with kiosk mode failed](#issue---building-a-package-with-kiosk-mode-failed)
+- [Issue – Provisioning package built successfully but failed to apply](#issue--provisioning-package-built-successfully-but-failed-to-apply)
+- [Issue – Multiple app assigned access to Azure AD group does not work](#issue--multiple-app-assigned-access-to-azure-ad-group-does-not-work)
 
 ### Update - Single app kiosk policy for launching other apps
 
