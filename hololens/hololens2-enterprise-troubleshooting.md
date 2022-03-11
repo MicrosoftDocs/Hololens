@@ -186,7 +186,7 @@ If you are having issues updating your managed HoloLens devices please read this
 
 ## Kiosk troubleshooting
 
-If you're having issues either configuring, using, or applying kiosks refer to the [kiosk troubleshooting guidance](hololens-kiosk.md#troubleshooting)
+If you're having issues either configuring, using, or applying kiosks refer to the [kiosk troubleshooting guidance](hololens-kiosk.md#troubleshooting--updates)
 
 ## Managed HoloLens Devices FAQs
 
