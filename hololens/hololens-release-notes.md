@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 2/8/2022
+ms.date: 3/8/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -108,8 +108,13 @@ Using this new SDK can allow the device to operate longer in situations where th
 - Fixed an issue where graphics memory is leaked during some camera usage scenarios.
 - Updated HoloLens inbox Microsoft Edge browser version to 98.0.1108.43.
 
+## Windows Holographic, version 21H2 - March 2022 Update
 
+- Build 20348.1450
 
+Improvements and fixes in the update:
+
+- Fixed a background MDM sync failure over proxy network.
 
 ## Windows Holographic, version 21H2 - February 2022 Update
 
@@ -302,7 +307,7 @@ Now added in [Windows Holographic, version 21H2](hololens-release-notes.md#windo
 
 ![Toast when log collection is complete.](./images/logcollection2.jpg)
 
-Because users often use Offline Diagnostics as a fallback log gathering mechanism for when they don’t have access to a display, can’t log in or are still in OOBE there will also be an audio cue played when logs are gathered. This sound will be played in addition to the toast notification.
+Because users often use Offline Diagnostics as a  log gathering mechanism for when they don’t have access to a display, can’t log in or are still in OOBE there will also be an audio cue played when logs are gathered. This sound will be played in addition to the toast notification.
 
 This new feature will be enabled when your device updates, and doesn’t need to be enabled or managed. In any event that this new feedback can’t be displayed or heard, Offline Diagnostics will still be generated.
 
@@ -879,7 +884,7 @@ A new menu that allows the user to sign out, shut down and restart the device. A
 
 #### Update indicator
 
-When an update is available, the ellipsis icon will light up to indicate that a restart will install the update
+When an update is available, the ellipsis icon will light up to indicate that a restart will install the update.
 The menu options also change to reflect the presence of the update.<br/><br/>
 
 <img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
@@ -973,7 +978,7 @@ When modifying a Kiosk to include the new apps, we recommend adding in the new A
 
 In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)” menu.
 
-Starting in this Windows release, the kiosk experience will fallback to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
+Starting in this Windows release, the kiosk experience will  to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
 ### New Settings URIs for Page Settings Visibility
 

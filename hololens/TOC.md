@@ -118,29 +118,32 @@
 ## [Autopilot support requests](hololens2-autopilot-registration-support.md)
 ## [HoloLens 2 release notes](hololens-release-notes.md)
 ## [Insider preview for Microsoft HoloLens](hololens-insider.md)
-## [HoloLens 2 release notes - 2004](hololens-release-notes-2004.md)
-## [HoloLens 2 release notes - 1903](hololens-release-notes-1903.md)
+
+## Older releases
+### [HoloLens 2 release notes - 2004](hololens-release-notes-2004.md)
+### [HoloLens 2 release notes - 1903](hololens-release-notes-1903.md)
+### HoloLens (1st gen)
+#### First-time usage
+##### [About HoloLens (1st gen)](hololens1-hardware.md)
+##### [HoloLens (1st gen) fit and comfort](hololens1-fit-comfort-faq.md)
+##### [Basic usage overview](hololens1-setup.md)
+##### [Set up your HoloLens (1st gen)](hololens1-start.md)
+#### Daily Usage
+##### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
+##### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
+##### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
+##### [Manage custom apps for HoloLens](holographic-custom-apps.md)
+##### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
+##### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
+##### [Restart, reset, or recover HoloLens (1st gen)](hololens1-recovery.md)
+#### HoloLens (1st gen) Security
+##### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.yml)
+##### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
+#### [Known issues and workarounds for HoloLens (1st gen)](hololens-known-issues.md)
+#### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
+
 ## [Supported languages](hololens2-language-support.md)
 ## [Learn about Microsoft Mesh (Preview)](/mesh/overview)
-## HoloLens (1st gen)
-### First-time usage
-#### [About HoloLens (1st gen)](hololens1-hardware.md)
-#### [HoloLens (1st gen) fit and comfort](hololens1-fit-comfort-faq.md)
-#### [Basic usage overview](hololens1-setup.md)
-#### [Set up your HoloLens (1st gen)](hololens1-start.md)
-### Daily Usage
-#### [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
-#### [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
-#### [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
-#### [Manage custom apps for HoloLens](holographic-custom-apps.md)
-#### [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
-#### [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
-#### [Restart, reset, or recover HoloLens (1st gen)](hololens1-recovery.md)
-### HoloLens (1st gen) Security
-#### [Frequently asked HoloLens (1st gen) Security Questions](hololens1-faq-security.yml)
-#### [HoloLens (1st Gen) BitLocker Encryption](hololens1-encryption.md)
-### [Known issues and workarounds for HoloLens (1st gen)](hololens-known-issues.md)
-### [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 
 # Give us feedback
 ## [Give us feedback via Feedback Hub](hololens-feedback.md)
