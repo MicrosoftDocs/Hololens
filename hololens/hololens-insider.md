@@ -22,7 +22,7 @@ appliesto:
 
 Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get started](hololens-insider.md#start-receiving-insider-builds) and provide valuable feedback for our next major operating system update for HoloLens.
 
-We recommend that for organizations that have moved, or are moving towards scale deployment, that a subset of devices are kept on Insider builds to validate that new features and new builds work as expected.
+We recommend that for organizations that have moved, or are moving towards a scale production deployment, that a subset of test devices are kept on Insider builds to validate that new features and new builds work as expected.
 
 ## Windows Insider Release Notes
 
@@ -113,7 +113,7 @@ Users who have flashed their device, or unboxed their device, and started using 
 1. Link the account you used to register as a Windows Insider.
 
 > [!TIP]
-> Once you enroll a device into Insider builds it is highly suggested you keep a set of devices enrolled in Insider builds. This allows your organization to more easily validate builds as they come out. This makes for an easier experience and helps incase you normal production devices are blocked from insider builds.
+> Once you enroll a device into Insider builds it is highly suggested you keep a set of test devices enrolled in Insider builds. This allows your organization to more easily validate builds as they come out. This makes for an easier experience and helps incase your normal production devices are blocked from insider builds.
 
 > [!NOTE]
 > In order to enroll your device in Insider builds, you'll need to enable optional telemetry. If you have not done this already, open the Settings app and select **Privacy** > **Diagnostics & feedback** and then select **Optional diagnostics data**.
