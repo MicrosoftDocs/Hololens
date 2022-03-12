@@ -3,7 +3,7 @@ title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
 author: evmill
 ms.author: v-evmill
-ms.date: 11/18/2021
+ms.date: 3/11/2022
 ms.localizationpriority:
 ms.prod: hololens
 ms.topic: article
@@ -34,6 +34,7 @@ This article describes how to resolve several common HoloLens issues.
 **Known Issues**
 - [Remote Wipe doesn't remove device from Intune](#remote-wipe-doesnt-remove-device-from-intune)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
+- [HoloLens user cannot launch Microsoft Edge](#holoLens-user-cannot-launch-microsoft-edge)
 - [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
 - [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
@@ -172,6 +173,15 @@ Some users may experience the Microsoft Store working not as expected, and see t
 The HoloLens team is working on adding support for more regions.
 
 See here [for countries to buy HoloLens 2.](hololens2-purchase.md)
+
+## HoloLens user cannot launch Microsoft Edge
+
+HoloLens user cannot launch Edge if [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) GPO is disabled. If AllowAllTrustedApps GPO is disabled, Appx does not trust app as Microsoft published app that blocks installing / launching Microsoft Edge with HoloLens devices.
+
+### Workarounds to launch Edge
+
+- Set ApplicationManagement/AllowAllTrustedApps GPO value to Enabled/ Default.
+- User enables Developer mode.
 
 ## Microsoft Edge fails to start the microphone
 
