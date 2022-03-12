@@ -34,7 +34,7 @@ This article describes how to resolve several common HoloLens issues.
 **Known Issues**
 - [Remote Wipe doesn't remove device from Intune](#remote-wipe-doesnt-remove-device-from-intune)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
-- [HoloLens user cannot launch Microsoft Edge](#hololens-user-cannot-launch-microsoft-edge)
+- [HoloLens user can’t launch Microsoft Edge](#hololens-user-cant-launch-microsoft-edge)
 - [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
 - [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
@@ -161,18 +161,18 @@ This error is typically encountered during device reset and re-use flows where a
 
 For more info, please refer to [troubleshooting steps on the autopilot page.](hololens2-autopilot.md#issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot)
 
-## HoloLens user cannot launch Microsoft Edge
+## HoloLens user can’t launch Microsoft Edge
 
-If you've having an issue launching Microsoft Edge on your HoloLens, you may have policy that's preventing launch. HoloLens can't launch Microsoft Edge if [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) GPO is disabled. If AllowAllTrustedApps GPO is disabled, Appx does not trust the app as a Microsoft published app, which blocks installing / launching Microsoft Edge with HoloLens devices.
+If you've having an issue launching Microsoft Edge on your HoloLens, you may have policy that's preventing launch. HoloLens can't launch Microsoft Edge if [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) GPO is disabled. If AllowAllTrustedApps GPO is disabled, Appx doesn't trust the app as a Microsoft published app, which blocks installing / launching Microsoft Edge with HoloLens devices.
 
-### Workarounds to launch Edge
+### Workarounds to launch Microsoft Edge
 
 - Set ApplicationManagement/AllowAllTrustedApps GPO value to Enabled/ Default.
 - User enables Developer mode.
 
 ## Microsoft Store error code 0x80131500
 
-Some users may experience the Microsoft Store working not as expected, and see the error code 0x80131500. This is an issue caused by the region set on the HoloLens not being available in the Microsoft Store app on HoloLens. If you encounter error code 0x80131500, to workaround please:
+Some users may experience the Microsoft Store working not as expected, and see the error code 0x80131500. This is an issue caused by the region set on the HoloLens not being available in the Microsoft Store app on HoloLens. If you encounter error code 0x80131500, to work around please:
 
 1. Set Settings > Time & Language > Region > Country or region, to one of the following:
     - United States, Japan, Germany, Canada, United Kingdom, Ireland, France, Australia, New Zealand.
@@ -185,7 +185,7 @@ See here [for countries to buy HoloLens 2.](hololens2-purchase.md)
 
 ## Microsoft Edge fails to start the microphone
 
-When users using Microsoft Edge the microphone can fail to start, thus not being usable to interact with Edge in HoloLens. This known issue is related to the version of the Microsoft Edge app, please do not reflash your device to an earlier version as this will not fix this issue.
+When users using Microsoft Edge the microphone can fail to start, thus not being usable to interact with Microsoft Edge in HoloLens. This known issue is related to the version of the Microsoft Edge app, please don't reflash your device to an earlier version as this won't fix this issue.
 
 ### Who is affected?
 
@@ -194,7 +194,7 @@ You can check which version of Microsoft Edge you have by using the Microsoft St
 
 ### Work around
 
-The current fix is in version 96, which is available to users who have enrolled in Microsoft Edge Insiders. This is different than enrolling your device as a Windows Insider. Read these instructions for details on [how to enroll into Edge’s insider program.](hololens-new-edge.md#microsoft-edge-insider-channels)
+The current fix is in version 96, which is available to users who have enrolled in Microsoft Edge Insiders. This is different than enrolling your device as a Windows Insider. Read these instructions for details on [how to enroll into Microsoft Edge’s insider program.](hololens-new-edge.md#microsoft-edge-insider-channels)
 
 ## Auto-login asks for log-in
 
@@ -203,10 +203,10 @@ A HoloLens 2 device can be configured to automatically login in via **Settings**
 Example of when this could occur:
 
 - Updating a device from Windows Holographic, version 2004 (Build 19041.xxxx) to Windows Holographic, version 21H1 (Build 20346.xxxx)
-- Updating a device to take a large update on the same major build, e.g. Windows Holographic, version 2004 to Windows Holographic, version 20H2
+- Updating a device to take a large update on the same major build, for example, Windows Holographic, version 2004 to Windows Holographic, version 20H2
 - Updating a device from a factory image to the latest image
 
-This should not occur during:
+This shouldn't occur during:
 
 - Devices taking a monthly servicing update
 
@@ -230,17 +230,17 @@ There are no known workarounds as we've been unable to root cause the issue so f
 
 ## Keyboard doesn't switch to special characters
 
-There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button does not change to special characters. This is a **known issue**.
+There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button doesn't change to special characters. This is a **known issue**.
 
 Work-arounds:
 
 - Close the keyboard and reopen it by tapping the text field.
-- Incorrectly enter your password. When the keyboard is relaunched next time it will then work as expected.
+- Incorrectly enter your password. When the keyboard is relaunched next time, it will then work as expected.
 - Web Authentication, close the keyboard and select **Sign in from another device**.
 - If entering only numbers, a user may press and hold certain keys to open an expanded menu.
 - Using a USB keyboard.
 
-This does not affect:
+This doesn't affect:
 
 - Users who choose to use a personal account.
 
@@ -250,21 +250,21 @@ This does not affect:
 
 This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program. This is a **known issue**.
 
-This does not affect:
+This doesn't affect:
 
-- Users who are not enrolled in Windows Insider
+- Users who aren't enrolled in Windows Insider
 - Insiders:
-    - If a device has been enrolled since Insider builds were version 18362.x
-    - If they flashed an Insider signed 19041.x build AND stay enrolled in the Insider program
+  - If a device has been enrolled since Insider builds were version 18362.x
+  - If they flashed an Insider signed 19041.x build AND stay enrolled in the Insider program
 
 Work-around:
 
 - Avoid the issue
-    - Flash a non-insider build. One of the regular monthly updates.
-    - Stay on Insider Preview
+  - Flash a non-insider build. One of the regular monthly updates.
+  - Stay on Insider Preview
 - Reflash the device
 
-    1. Put the [HoloLens 2 into flashing mode](hololens-recovery.md) manually by fully powering down while not connect. Then while holding Volume up, tap the Power button.
+    1. Put the [HoloLens 2 into flashing mode](hololens-recovery.md) manually by fully powering down while not connect. Then while holding the **Volume up** button, tap the **Power** button.
 
     1. Connect to the PC and open Advanced Recovery Companion.
 
@@ -274,13 +274,13 @@ Work-around:
 
 ## OneDrive doesn't automatically upload pictures
 
-The OneDrive app for HoloLens does not support automatic camera upload for work or school accounts. This is a **known issue**.
+The OneDrive app for HoloLens doesn't support automatic camera upload for work or school accounts. This is a **known issue**.
 
 Workarounds:
 
 - If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
 
-- If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
+- If you can’t safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 [Back to list](#list)
 
@@ -336,7 +336,7 @@ If you followed all guidelines and calibration is still failing, you can disable
 
 Also see related information for [image color or brightness troubleshooting.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
-Setting IPD is not applicable for HoloLens 2, since eye positions are computed by the system. 
+Setting IPD isn't applicable for HoloLens 2, since eye positions are computed by the system.
 
 [Back to list](#list)
 
@@ -345,7 +345,6 @@ Setting IPD is not applicable for HoloLens 2, since eye positions are computed b
 You can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) to recover the device.
 
 [Back to list](#list)
-
 
 ## Unity isn't working
 
@@ -358,7 +357,7 @@ You can [put the device into **Flashing Mode** and use Advanced Recovery Compani
 
 - The Live Preview feature in Mixed Reality capture may exhibit several seconds of latency.
 
-- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section are not functional. Using them will have no effect. The virtual keyboard on the virtual input page works correctly.
+- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section aren't functional. Using them will have no effect. The virtual keyboard on the virtual input page works correctly.
 
 - After enabling Developer Mode in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
 
@@ -368,10 +367,9 @@ You can [put the device into **Flashing Mode** and use Advanced Recovery Compani
 
 Information about the HoloLens emulator is located in our developer documentation.  Read more about [troubleshooting the HoloLens emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting).
 
-
-- Not all apps in the Microsoft Store are compatible with the emulator. For example, Young Conker and Fragments are not playable on the emulator.
-- You cannot use the PC webcam in the Emulator.
-- The Live Preview feature of the Windows Device Portal does not work with the emulator. You can still capture Mixed Reality videos and images.
+- Not all apps in the Microsoft Store are compatible with the emulator. For example, Young Conker and Fragments aren't playable on the emulator.
+- You can’t use the PC webcam in the Emulator.
+- The Live Preview feature of the Windows Device Portal doesn't work with the emulator. You can still capture Mixed Reality videos and images.
 
 [Back to list](#list)
 
@@ -379,9 +377,9 @@ Information about the HoloLens emulator is located in our developer documentatio
 
 If Cortana isn't responding to your voice commands, make sure Cortana is turned on. On the All apps list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
-On HoloLens (1st gen), built-in speech recognition is not configurable. It is always turned on. On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.
+On HoloLens (1st gen), built-in speech recognition isn't configurable. It's always turned on. On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.
 
-If your HoloLens 2 is not responding to your voice, make sure Speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.
+If your HoloLens 2 isn't responding to your voice, make sure Speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.
 
 [Back to list](#list)
 
