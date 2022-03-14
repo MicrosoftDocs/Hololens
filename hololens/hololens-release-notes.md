@@ -100,6 +100,7 @@ Using this new SDK can allow the device to operate longer in situations where th
 
 ### Fixes and improvements
 
+- Fixed a Known issue where [HoloLens user couldn't launch Microsoft Edge](hololens-troubleshooting.md#fixed---hololens-user-cant-launch-microsoft-edge).
 - Improvements to Moving Platform Mode when detecting the down direction.
 - Fixed an issue around update dialogs.
 - Updated inbox Microsoft Edge browser version.
