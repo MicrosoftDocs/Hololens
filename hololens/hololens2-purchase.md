@@ -5,7 +5,7 @@ keywords: HoloLens 2 purchasing options, international purchase, international r
 author: qianw211
 ms.author: qianwen
 ms.reviewer: skerawala
-ms.date: 2/28/2022
+ms.date: 3/16/2022
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -38,20 +38,11 @@ HoloLens 2 is now available in some countries outside of the US, along with some
 
 See the below tables for HoloLens 2 availability and purchase options by region.
 
-### <mark> **Africa**
-
-| Country | ADD | DMPs | HoloLens 2 DMPs |
-|---------|-----|------|----------------|
-| **South Africa** | [Tarsus Distribution](https://tarsusdistribution.co.za)<br>Justine Louw <jlouw@tarsus.co.za> | Datacentrix | [Datacentrix - a leading hybrid IT system integrator and managed services provider](https://www.datacentrix.co.za/)|
-| || Nulitics Development Company Pty Ltd. | [NULITICS, Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)|
-| | | Crimson Line Networking <br/>cc - t/a Crimson Line - Solving IT |[Managed Cloud and IT Services \| South Africa \| Crimsonline](https://www.crimsonline.co.za)|
-
 ### **APAC**
 
 | Country | ADR | Sales Contacts | HoloLens 2<br>Product Link | HoloLens 2 Industrial Edition<br>Product Link |
 |---------|-----|---------|----------------|----------|
 | **Australia** | Insight Enterprises Australia Pty Ltd | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>Costa Aligianis [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com)|[Insight Enterprises<br>Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html)|[Insight Enterprises<br>Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html)|
-| | <mark> Telstra Purple | Papandreou, Constantina <br> [Constantina.Papandreou@team.telstra.com](mailto:Constantina.Papandreou@team.telstra.com) |||
 | **China** | Highly Information (HII) 翰林汇信息产业股份有限公司 |Feng Zhou<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) |[Highly Information](https://isite.baidu.com/site/highly.com.cn/93004513-6fe5-4ee6-8f23-092e2d71a4fb?fid=nHnznjR1njTdPWbzPWbzn1TdrH7xnWcdg1c&ch=4&bfid=fbuFw0cKNSTw0DyVfoT00rD006D83VCKvMLbC6b000j2FS-32s0000c0-fDciAq_UYk-UMnhpAq_Uvk-UM5rC_WVdVa4S_x3zVocJPXJzVEF1D7DRBvl__Zy8SniJQ2b&bd_vid=11714742696978664284&title=&field=&orderBy=&categoryId=undefined&uniqId=efb7b4ec9f5a4faa8c75b5e94d5d7ad0 ) |[Highly Information](https://isite.baidu.com/site/highly.com.cn/a8cade59-c438-45d4-8712-85ab66155770?fid=nHnznjR1njTdPWbzPWbzn1TdrH7xnWcdg1c&ch=4&bfid=fbuFw0cKNSTw0DyVfoT00rD006D83VCKvMLbC6b000j2FS-32s0000c0-fDciAq_UYk-UMnhpAq_Uvk-UM5rC_WVdVa4S_x3zVocJPXJzVEF1D7DRBvl__Zy8SniJQ2b&bd_vid=11714742696978664284&title=HoloLens%202%20%E5%B7%A5%E4%B8%9A%E7%89%88&field=&orderBy=&categoryId=undefined&uniqId=efb7b4ec9f5a4faa8c75b5e94d5d7ad0 )|
 | | 四川长虹佳华信息产品有限责任公司/Changhong IT Information Products Co.,Ltd  | Qian Weicheng <br> [qianwch@changhongit.com](mailto:qianwch@changhongit.com) | [Microsoft HoloLens 2](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [什么是 HoloLens](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5) |
 | | 英施艾特（上海）软件贸易有限公司 Insight Enterprises (Shanghai) Co. Ltd.| Zac Zhang <zac.zhang@insight.com>| [Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
@@ -75,8 +66,6 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
 | **Canada** | Insight Canada | Trish O'Keeffe <br> [trish.okeeffe@insight.com](mailto:trish.okeeffe@insight.com) | [Buy HoloLens 2 - Insight Canada](https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight Canada](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
-| <mark> **Mexico** | Ingram Micro México, S.A. de C.V. | Aevitas S.A. de C.V. | [Aevitas S.A. de C.V.](http://aevitas.com.mx)|
-| | Commercializadora Intcomex, S.A. de C.V.| Equipos Comp. de Occte. S.A. de C.V. | [Productos \| Equipos MCA  S.A. de C.V.](https://equiposmca.com/productos/) |
 | **United States** | Insight North America | Jake Poirier <br> [jake.poirier@insight.com](mailto:jake.poirier@insight.com) | [Buy HoloLens 2 - Insight North America](https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight North America](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
 | | SHI International Corp. | [HoloLens@SHI.com](mailto:HoloLens@SHI.com) <br> [xr@shi.com](mailto:xr@shi.com) | [Buy HoloLens 2 - SHI International Corp.](https://www.shi.com/hololens) | [Microsoft HoloLens 2 - www.shi.com](https://www.shi.com/Product/41992243?EventID=5ca6f53b-37c2-41c2-bfed-185a5ce55986)  |
 | | *Rental Partner!* <br> Hartford Technology | Mark Ferro <br> [mferro@hartfordrents.com](mailto:mferro@hartfordrents.com) | [HoloLens 2 - Rental Partner! Hartford Technology](https://hartfordrents.com/product/hololens-2-rental/) |  |
@@ -105,10 +94,8 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | | Insight | Rogier Duivestein <br> <rogier.duivestein@insight.com> <br> <salessupport.nl@insight.com> | [Buy HoloLens 2 - Insight](https://nl.insight.com/shop/partner/microsoft/hardware/hololens) |  |
 | **Norway** | ATEA | Bjorn Hegle <br> <Bjorn.Hegle@atea.no> | [Buy HoloLens 2 - ATEA](https://www.atea.no/eshop/products/?filters=S_hololens) | [Buy HoloLens 2 Industrial Edition - ATEA](https://www.atea.no/eshop/product/microsoft-hololens-2/?prodid=4872099) |
 | **Poland** | Bechtle | Jagoda Leszcynska <br> <sales.direct-pl@bechtle.com> <br> Bartolomiej Szponar <br> <bartlomiej.szponar@bechtle.com> <br> Karolina Romanczuk <br> <karolina.romanczuk@bechtle.com> | [Buy Microsoft HoloLens 2 Smart Glasses (NJX-00014) (bechtle.com)](https://www.bechtle.com/pl-en/shop/microsoft-hololens-2-smart-glasses--4342628--p)  |  |
-| **Portugal** | <mark> Bechtle |  | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/pt/finder?query=Hololens) | [Buy HoloLens 2 Industrial Edition - Bechtle](https://www.bechtle.com/pt/shop/oculos-dados-microsoft-hololens-2-ind-ed--4525629--p) | 
-| | Insight | Fernando Pereira <br> <info.es@insight.com> | | |
-| **Spain** | <mark> Bechtle | Julia Castrillo<br><julia.castrillo@bechtle.com> | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/es/promociones/microsoft-hololens-2) | [Buy HoloLens 2 Industrial Edition - Bechtle](https://www.bechtle.com/es/shop/microsoft-hololens-2-ind-ed-gafas-datos--4525629--p) |
-| | Econocom | Alejandro Varas<br><alejandro.varas@econocom.com> |  | |
+| **Portugal** | Insight | Fernando Pereira <br> <info.es@insight.com> | | |
+| **Spain** | Econocom | Alejandro Varas<br><alejandro.varas@econocom.com> |  | |
 | | Insight | Fernando Pereira <br> <info.es@insight.com> | | |
 | **Sweden** | ATEA | Andreas Bilen <br> <andreas.bilen@atea.se> | [Buy HoloLens 2 - ATEA](https://www.atea.se/eshop/products/?filters=S_hololens) | [Buy HoloLens 2 Industrial Edition - ATEA](https://www.atea.se/eshop/product/microsoft-hololens-2-industrial-edition-smarta-glasogon/?prodid=2147896) |
 | **Switzerland** | Bechtle | Shirin Baeuerle <br> <shirin.baeuerle@bechtle.com> | [Buy HoloLens 2 - Bechtel](https://www.bechtle.com/ch-en/shop/microsoft-hololens-2-smart-glasses--4342628-40--p) | [Buy HoloLens 2 Industrial Edition - Bechtle](https://www.bechtle.com/ch-fr/shop/lunettes-microsoft-hololens-2-ind-ed--4525629--p) |
