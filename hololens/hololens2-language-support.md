@@ -21,7 +21,7 @@ appliesto:
 
 # Supported languages for HoloLens 2
 
-HoloLens 2 is localized into the following languages. The localization features include speech commands (speech recognition and voice activation), dictation, keyboard layouts, and OCR recognition within apps.
+HoloLens 2 is localized into the following languages. The localization features include speech commands and dictation, keyboard layouts, and OCR recognition within apps.
 
 - Chinese Simplified (China)
 - English (Australia)
@@ -39,21 +39,21 @@ The following table explains what languages and text-to-speech (TTS) voices are 
 
 | Language,   country, or region                     | Male TTS voice | Female TTS voice |
 |----------------------------------------------------|----------------|------------------|
-| German (Germany) - (de-DE)                         | Danny          | Tracy            |
-| English (Australia) - (en-AU)                      | Kangkang       | Huihui, Yaoyao   |
-| English (Canada) - (en-CA)                         | Zhiwei         | Yating, Hanhan   |
-| English (Great Britain) - (en-GB)                | Frank          | Not applicable   |
-| English (United States) - (en-US)                | James          | Catherine        |
-| Spanish (Spain) - (es-ES)                          | Richard        | Linda            |
-| French (Canada) - (fr-CA)                          | George         | Hazel, Susan     |
-| French (France) - (fr-FR)                          | David, Mark    | Zira             |
-| Italian - (it-IT)                                  | Claude         | Caroline         |
-| Japanese - (ja-JP)                                 | Paul           | Hortence, Julie  |
-| Korean - (ko-KR)                                   | Stefan         | Hedda, Katja     |
-| Dutch - (nl-NL)                                    | Cosimo         | Elsa             |
-| Chinese (Simplified) - (zh-CN)                     | Ichiro         | Ayumi, Haruka    |
-| Cantonese (Traditional, Hong Kong SAR) - (zh-HK) | Not applicable | Heami            |
-| Chinese (Traditional, Taiwan) - (zh-TW)          | Pablo          | Helena, Laura    |
+| Chinese (Simplified) - (zh-CN)                     | Kangkang       | Huihui, Yaoyao   |
+| Cantonese (Traditional, Hong Kong SAR) - (zh-HK)   | Danny          | Tracy    |
+| Chinese (Traditional, Taiwan) - (zh-TW)       |   Zhiwei         | Yating, Hanhan   |
+| Dutch - (nl-NL)                                | Frank          | Not applicable   |
+| English (Australia) - (en-AU)                      | James          | Catherine        |
+| English (Canada) - (en-CA)                         | Richard        | Linda            |
+| English (Great Britain) - (en-GB)            |    George         | Hazel, Susan     |
+| English (United States) - (en-US)                | David, Mark    | Zira             |
+| French (Canada) - (fr-CA)                          | Claude         | Caroline         |
+| French (France) - (fr-FR)                          | Paul           | Hortence, Julie  |
+| German (Germany) - (de-DE)                         | Stefan         | Hedda, Katja        |
+| Italian - (it-IT)                                   | Cosimo         | Elsa             |
+| Japanese - (ja-JP)                                 | Ichiro         | Ayumi, Haruka    |
+| Korean - (ko-KR)                                   | Not applicable | Heami            |
+| Spanish (Spain) - (es-ES)                          | Pablo          | Helena, Laura    |
 
 HoloLens 2 also supports the following languages. However, this support does not include speech commands or dictation features.
 
