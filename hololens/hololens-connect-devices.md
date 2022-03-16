@@ -4,12 +4,12 @@ description: Get started connecting to Bluetooth and USB-C devices and accessori
 ms.assetid: 01af0848-3b36-4c13-b797-f38ad3977e30
 ms.prod: hololens
 ms.sitesec: library
-author: Teresa-Motiv
-ms.author: v-tea
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 03/11/2020
-manager: jarrettr
+ms.date: 03/10/2022
+manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -22,13 +22,15 @@ appliesto:
 HoloLens 2 supports the following classes of Bluetooth devices:
 
 - [HID](/windows-hardware/drivers/hid/):
-    - Mouse
-    - Keyboard
+  - Mouse
+  - Keyboard
 - Audio output (A2DP) devices
 
 HoloLens 2 supports the following Bluetooth APIs:
+
 - GATT [Server](/windows/uwp/devices-sensors/gatt-server) and [Client](/windows/uwp/devices-sensors/gatt-client)
 - [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
+
 >[!IMPORTANT]
 > You may have to install corresponding companion apps from Microsoft Store to actually use the HID and GATT devices.
 
@@ -72,7 +74,6 @@ HoloLens 2 supports the following classes of USB-C devices:
 - Wired keyboard
 - Combination PD hubs (USB A plus PD charging)
 
-
 > [!NOTE]
 > In response to customer feedback, we have enabled limited support for cellular connectivity tethered directly to the HoloLens via USB-C. See [Connect to Cellular and 5G](hololens-cellular.md) for more information.
 
@@ -82,7 +83,7 @@ HoloLens 2 supports the following classes of USB-C devices:
 > Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones, users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
 
 > [!NOTE]
-> External microphones cannot be used in builds prior to [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and higher. 
+> External microphones cannot be used in builds prior to [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), to use an external microphone ensure you are on build 20346.1002 or newer.
 
 Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C microphones can be used for calling, recording, etc.
 
