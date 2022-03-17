@@ -10,7 +10,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 2/8/2022
+ms.date: 3/11/2022
 ms.localizationpriority:
 ms.reviewer: 
 manager: ranjibb
@@ -22,6 +22,8 @@ appliesto:
 
 Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get started](hololens-insider.md#start-receiving-insider-builds) and provide valuable feedback for our next major operating system update for HoloLens.
 
+We recommend that for organizations that have moved, or are moving towards a scale production deployment, that a subset of test devices are kept on Insider builds to validate that new features and new builds work as expected.
+
 ## Windows Insider Release Notes
 
 What's new and on the horizon for HoloLens? Check out these new updates coming to HoloLens!
@@ -30,6 +32,7 @@ What's new and on the horizon for HoloLens? Check out these new updates coming t
 |---------|-------------|-----------------|--------------------|
 | [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 20348.1463       |
 | [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 20348.1470 |
+| [Power and Thermal SDK for apps](#power-and-thermal-sdk-for-apps) | Allows apps to adapt to reduce the thermal impact. | Developers | 20348.1479 |
 
 Looking for a new feature but don't see it? Check out the [release notes](hololens-release-notes.md) as many of our new features have been released as part of the main builds. The following features have recently moved to the release notes since their release:
 
@@ -61,6 +64,12 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Allo
 
 - Bool value
 
+### Power and Thermal SDK for apps
+
+When the HoloLens 2 is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), it might get hot enough that it takes actions automatically to keep itself from overheating. If your app demands high peripheral performance, consider using the [PowerThermalNotification Software Development Kit (SDK)](/windows/mixed-reality/develop/unity/managing-power-and-thermals) to subscribe to notification events and implement your own custom actions.
+
+Using this new SDK can allow the device to operate longer in situations where the app may be closed by the system.
+
 ### Fixes and improvements
 
 - Improvements to Moving Platform Mode when detecting the down direction.
@@ -70,6 +79,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Allo
 - Fixed an issue where MDM enrollment was stuck when applied with runtime provisioning for local accounts.
 - Fixed an issue where kiosk mode wasn’t falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
 - Fixed an issue where graphics memory is leaked during some camera usage scenarios.
+- Updated HoloLens inbox Microsoft Edge browser version to 98.0.1108.43.
 
 ### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
 
@@ -96,15 +106,14 @@ Users who have flashed their device, or unboxed their device, and started using 
 
 ## Start receiving Insider builds
 
-> [!NOTE]
-> If you haven’t updated recently, please reboot your device to update state and get the latest build.
->
-> - The “Reboot device” voice command works well.
-> - You can also choose the restart button in Settings/Windows Insider Program.
->
-> We had a bug on the back-end that you may have encountered and this will get you back on track.
+1. If you haven’t updated recently, please reboot your device to update state and get the latest build.
+   1. The “Reboot device” voice command works well.
+   1. You can also choose the restart button in Settings/Windows Insider Program.
+1. On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**.
+1. Link the account you used to register as a Windows Insider.
 
-On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
+> [!TIP]
+> Once you enroll a device into Insider builds it is highly suggested you keep a set of test devices enrolled in Insider builds. This allows your organization to more easily validate builds as they come out. This makes for an easier experience and helps incase your normal production devices are blocked from insider builds.
 
 > [!NOTE]
 > In order to enroll your device in Insider builds, you'll need to enable optional telemetry. If you have not done this already, open the Settings app and select **Privacy** > **Diagnostics & feedback** and then select **Optional diagnostics data**.

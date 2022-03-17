@@ -23,7 +23,7 @@ This page contains helpful information for setting up your HoloLens device's kio
 
 For general information about how to choose kiosk apps, see [Guidelines for choosing an app for assigned access (kiosk mode)](/windows/configuration/guidelines-for-assigned-access-app).
 
-If you use a Mobile Device Management (MDM) system or a provisioning package to configure kiosk mode, you use the [AssignedAccess Configuration Service Provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) to specify applications. The CSP uses [Application User Model IDs (AUMIDs)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) to identify applications. The following table lists the AUMIDs of some in-box applications that you can use in a multi-app kiosk.
+If you use a Mobile Device Management (MDM) system or a provisioning package to configure kiosk mode, you use the [AssignedAccess Configuration Service Provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) to specify applications. The CSP uses [Application User Model IDs (AUMIDs)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) to identify applications. The following table lists the AUMIDs of some in-box applications and others that you can use in a multi-app kiosk.
 
 <a id="aumids"></a>
 
@@ -40,6 +40,7 @@ If you use a Mobile Device Management (MDM) system or a provisioning package to 
 |Feedback&nbsp;Hub |Microsoft.WindowsFeedbackHub\_8wekyb3d8bbwe\!App |
 |File Explorer |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
 |Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
+|Mesh |Microsoft.Fenix2020_8wekyb3d8bbwe!App |
 |Old Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
 |New Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
@@ -67,11 +68,11 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 
 1. [Multiple app global assigned access profile](#multiple-app-global-assigned-access-profile)
 1. [Multiple app global assigned access profile excluding device owners](#multiple-app-global-assigned-access-profile-excluding-device-owners)
-1. [Multiple app assigned access profile for a local account or AAD user account](#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account)
-1. [Multiple app assigned access profiles for two AAD users or more](#multiple-app-assigned-access-profiles-for-two-aad-users-or-more)
-1. [Multiple app assigned access profile for one AAD group](#multiple-app-assigned-access-profile-for-one-aad-group)
-1. [Multiple app assigned access profile for two AAD groups or more](#multiple-app-assigned-access-profile-for-two-aad-groups-or-more)
-1. [Multiple app assigned access profile for one AAD account and one AAD group](#multiple-app-assigned-access-profile-for-one-aad-account-and-one-aad-group)
+1. [Multiple app assigned access profile for a local account or Azure AD user account](#multiple-app-assigned-access-profile-for-a-local-account-or-azure-ad-user-account)
+1. [Multiple app assigned access profiles for two Azure AD users or more](#multiple-app-assigned-access-profiles-for-two-azure-ad-users-or-more)
+1. [Multiple app assigned access profile for one Azure AD group](#multiple-app-assigned-access-profile-for-one-azure-ad-group)
+1. [Multiple app assigned access profile for two Azure AD groups or more](#multiple-app-assigned-access-profile-for-two-azure-ad-groups-or-more)
+1. [Multiple app assigned access profile for one Azure AD account and one Azure AD group](#multiple-app-assigned-access-profile-for-one-azure-ad-account-and-one-azure-ad-group)
 1. [Multiple app assigned access profile for visitors](#multiple-app-assigned-access-profile-for-visitors)
 
 > [!NOTE]
@@ -91,35 +92,35 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for a local account or AAD user account
+### Multiple app assigned access profile for a local account or Azure AD user account
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-local-or-aad-user.xml" highlight="18-20,51,55":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profiles for two AAD users or more
+### Multiple app assigned access profiles for two Azure AD users or more
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-users-or-more.xml" highlight="22-24,52,53,80,88":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for one AAD group
+### Multiple app assigned access profile for one Azure AD group
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-one-aad-group.xml" highlight="28":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for two AAD groups or more
+### Multiple app assigned access profile for two Azure AD groups or more
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-groups-or-more.xml" highlight="22-24,52,53,83,94":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for one AAD account and one AAD group
+### Multiple app assigned access profile for one Azure AD account and one Azure AD group
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-for-aad-user-and-aad-group.xml" highlight="22-24,52,53,80,91":::
 
