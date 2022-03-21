@@ -15,7 +15,7 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-
+- Fixed a Known issue where [HoloLens user couldn't launch Microsoft Edge](hololens-troubleshooting.md#fixed---hololens-user-cant-launch-microsoft-edge).
 ---
 
 # HoloLens 2 release notes
