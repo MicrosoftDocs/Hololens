@@ -4,7 +4,7 @@ description: Learn how to set up, configure, and troubleshoot Autopilot on HoloL
 author: evmill
 ms.author: v-evmill
 ms.reviewer:  lavinds
-ms.date: 1/20/2022
+ms.date: 3/17/2022
 ms.prod: hololens
 ms.topic: article
 ms.custom: 
@@ -43,7 +43,7 @@ When a user starts the Autopilot self-deploying process, Autopilot completes the
 
 1. Download and apply device-targeted policies, certificates, networking profiles and applications.
 
-1. Present the sign in screen to the user.
+1. Present the sign-in screen to the user.
 
 ## Configuring Autopilot for HoloLens 2
 
@@ -90,7 +90,7 @@ To confirm the build version on your device or reflash to the latest OS, use the
 
 In order for Autopilot to succeed you'll need to enable Automatic MDM Enrollment in your Azure portal. This will enable the device to enroll without a user.
 
-Review the following short [guide on enabling MDM Automatic Enrollment](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) or the [Auto Enrollment Quick start guide](/mem/intune/enrollment/quickstart-setup-auto-enrollment) for even more information getting set-up.
+Review the following short [guide on enabling MDM Automatic Enrollment](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) or the [Quickstart automatic enrollment guide](/mem/intune/enrollment/quickstart-setup-auto-enrollment) for even more information getting set-up.
 
 ### 3. Ensure that MDM enrollment isn't blocked for Windows devices.
 
@@ -374,3 +374,10 @@ To provide feedback or report issues, use one of the following methods:
 ## Delete Autopilot devices
 
 You may wish to no longer use a device for Autopilot, or to register your devices to a different tenant. If you would like to do this, then read [how to delete Autopilot devices.](/mem/autopilot/add-devices#delete-autopilot-devices)
+
+## Exchange experience on HoloLens devices in need of repair or replacement
+
+Microsoft automatically checks every HoloLens for Autopilot enrollment and will deregister the device from the customer's tenant. Microsoft ensures the replacement device is enrolled into Windows Autopilot once a replacement is shipped back to the customer. This service is available on all device exchange service orders directly with Microsoft.
+
+> [!NOTE]
+> When customers use a Partner to return devices, the Partner is responsible for managing the exchange process including de-registering and enrolling devices into Windows Autopilot.
