@@ -3,7 +3,7 @@ title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
 author: evmill
 ms.author: v-evmill
-ms.date: 4/12/2022
+ms.date: 3/11/2022
 ms.localizationpriority:
 ms.prod: hololens
 ms.topic: article
@@ -25,7 +25,6 @@ This article describes how to resolve several common HoloLens issues.
 <a id="list"></a>
 
 **Fixed Known Issues**
-- [**Fixed** - HoloLens user can’t launch Microsoft Edge](#fixed---hololens-user-cant-launch-microsoft-edge)
 - [**Fixed** - Every time the power goes to 18 percent, the device suddenly shuts down automatically](#fixed---every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [**Fixed** - OneDrive UWP app doesn't work for Azure AD users](#fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [**Fixed** - Remote Assist video freezes after 20 minutes](#fixed---remote-assist-video-freezes-after-20-minutes)
@@ -35,6 +34,7 @@ This article describes how to resolve several common HoloLens issues.
 **Known Issues**
 - [Remote Wipe doesn't remove device from Intune](#remote-wipe-doesnt-remove-device-from-intune)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
+- [HoloLens user can’t launch Microsoft Edge](#hololens-user-cant-launch-microsoft-edge)
 - [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
 - [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
@@ -64,22 +64,10 @@ This article describes how to resolve several common HoloLens issues.
 - [USB-C Microphone isn't working](#usb-c-microphone-isnt-working)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
 
-## **Fixed** - HoloLens user can’t launch Microsoft Edge
-
-> [!NOTE]
-> This was fixed in [Windows Holographic, version 22H1](hololens-release-notes.md#windows-holographic-version-22h1).
-
-If you've having an issue launching Microsoft Edge on your HoloLens, you may have policy that's preventing launch. HoloLens can't launch Microsoft Edge if [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) GPO is disabled. If AllowAllTrustedApps GPO is disabled, Appx doesn't trust the app as a Microsoft published app, which blocks installing / launching Microsoft Edge with HoloLens devices.
-
-### Workarounds to launch Microsoft Edge
-
-- Set ApplicationManagement/AllowAllTrustedApps GPO value to Enabled/ Default.
-- User enables Developer mode.
-
 ## **Fixed** - Every time the power goes to 18 percent, the device suddenly shuts down automatically
 
 > [!NOTE]
-> This was fixed in [Windows Holographic, version 21H2 - November 2021 Update](hololens-release-notes.md#windows-holographic-version-21h2---november-2021-update)
+> There was fixed in [Windows Holographic, version 21H2 - November 2021 Update](hololens-release-notes.md#windows-holographic-version-21h2---november-2021-update)
 
 There is a known issue where when the device reaches 18% battery, it will unexpectedly shut down. This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
 
@@ -172,6 +160,15 @@ Immediately after selecting **Wipe** we suggest also selecting the **Delete** bu
 This error is typically encountered during device reset and re-use flows where a HoloLens device has gone through Autopilot at least once. In order to resolve this issue, please [delete the device from Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) and reset it again to complete Autopilot flow.
 
 For more info, please refer to [troubleshooting steps on the autopilot page.](hololens2-autopilot.md#issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot)
+
+## HoloLens user can’t launch Microsoft Edge
+
+If you've having an issue launching Microsoft Edge on your HoloLens, you may have policy that's preventing launch. HoloLens can't launch Microsoft Edge if [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) GPO is disabled. If AllowAllTrustedApps GPO is disabled, Appx doesn't trust the app as a Microsoft published app, which blocks installing / launching Microsoft Edge with HoloLens devices.
+
+### Workarounds to launch Microsoft Edge
+
+- Set ApplicationManagement/AllowAllTrustedApps GPO value to Enabled/ Default.
+- User enables Developer mode.
 
 ## Microsoft Store error code 0x80131500
 
