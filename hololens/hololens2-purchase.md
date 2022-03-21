@@ -5,7 +5,7 @@ keywords: HoloLens 2 purchasing options, international purchase, international r
 author: qianw211
 ms.author: qianwen
 ms.reviewer: skerawala
-ms.date: 3/16/2022
+ms.date: 3/21/2022
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -66,6 +66,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
 | **Canada** | Insight Canada | Trish O'Keeffe <br> [trish.okeeffe@insight.com](mailto:trish.okeeffe@insight.com) | [Buy HoloLens 2 - Insight Canada](https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight Canada](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
+|  | CDW Canada  | Ricky Fraser <br> [rick.fraser@cdw.ca](mailto:rick.fraser@cdw.ca)  |  <https://www.cdw.ca>  |  |
 | **United States** | Insight North America | Jake Poirier <br> [jake.poirier@insight.com](mailto:jake.poirier@insight.com) | [Buy HoloLens 2 - Insight North America](https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight North America](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
 | | SHI International Corp. | [HoloLens@SHI.com](mailto:HoloLens@SHI.com) <br> [xr@shi.com](mailto:xr@shi.com) | [Buy HoloLens 2 - SHI International Corp.](https://www.shi.com/hololens) | [Microsoft HoloLens 2 - www.shi.com](https://www.shi.com/Product/41992243?EventID=5ca6f53b-37c2-41c2-bfed-185a5ce55986)  |
 | | *Rental Partner!* <br> Hartford Technology | Mark Ferro <br> [mferro@hartfordrents.com](mailto:mferro@hartfordrents.com) | [HoloLens 2 - Rental Partner! Hartford Technology](https://hartfordrents.com/product/hololens-2-rental/) |  |
