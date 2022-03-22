@@ -190,6 +190,8 @@ There have been some changes and updates to the OneDrive app over time. If you w
 
 **Work around** : Use the OneDrive app and move files locally to the device as needed.
 
+For code samples using OneDrive via Microsoft Graph APIs visit the [developer documentation for OneDrive.](https://developer.microsoft.com/onedrive)
+
 ## Microsoft Edge fails to start the microphone
 
 When users using Microsoft Edge the microphone can fail to start, thus not being usable to interact with Microsoft Edge in HoloLens. This known issue is related to the version of the Microsoft Edge app, please don't reflash your device to an earlier version as this won't fix this issue.
