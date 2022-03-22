@@ -41,7 +41,7 @@ Certificate installation currently supports .cer and .crt files. Device Owners c
 The certificate should now be installed on the device.
 
 > [!NOTE]
-> Adding certificates to Local Machine is only allowed to users who are device owners. Please read about [device owners](security-adminless-os.md#device-owner) for details on that concept.
+> Adding certificates to Local Machine is only allowed to users who are device owners. Read about [device owners](security-adminless-os.md#device-owner) for details on that concept.
 
 ![Certificate viewer in the Settings app under Certificates.](images/certificate-viewer-device.jpg)
 
