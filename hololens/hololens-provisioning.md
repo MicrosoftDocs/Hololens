@@ -4,7 +4,7 @@ description: Windows provisioning makes it easy for IT administrators to configu
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
-ms.author: v-beehanson
+ms.author: qianwen
 ms.topic: article
 ms.custom: 
 - CI 115190

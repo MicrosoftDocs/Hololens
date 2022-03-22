@@ -4,7 +4,7 @@ description: Learn how to manage user identity, multi-user support, security, en
 keywords: HoloLens, user, account, AAD, Azure AD, adfs, microsoft account, msa, credentials, reference
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: qianw211    
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 8/13/2021
 ms.prod: hololens
 ms.custom: 

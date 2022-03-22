@@ -5,7 +5,7 @@ keywords: how-to, update, roll back, HoloLens, check build, build number
 ms.prod: hololens
 ms.sitesec: library
 author: qianw211
-ms.author: v-beehanson
+ms.author: qianwen
 ms.topic: article
 ms.localizationpriority:
 ms.date: 10/20/2021

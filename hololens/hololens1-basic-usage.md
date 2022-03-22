@@ -9,7 +9,7 @@ keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.topic: article
 ms.localizationpriority:
 appliesto:

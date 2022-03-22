@@ -1,8 +1,8 @@
 ---
 title: Contributing instructions
 description: Learn how to contribute to the HoloLens docs on the docs.microsoft.com platform using GitHub-flavored Markdown. 
-author: hferrone
-ms.author: v-beehanson
+author: qianw211
+ms.author: qianwen
 ms.date: 10/29/2021
 ms.localizationpriority:
 ms.topic: article
