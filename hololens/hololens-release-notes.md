@@ -62,7 +62,7 @@ To update to the latest release, open the Settings app, go to Update & Securit
 | [Color-blind mode](#color-blind-mode)        | Applies filters that adjust the displayed colors for Color-blind users.      | End users        | 22H1       |
 | [Single app kiosk policy for launching other apps](#single-app-kiosk-policy-for-launching-other-apps) | Allows for app launch of secondary app. | IT Admins | 22H1 |
 | [Power and Thermal SDK for apps](#power-and-thermal-sdk-for-apps) | Allows apps to adapt to reduce the thermal impact. | Developers | 22H1 |
-| [Moving Platform Mode Settings](#moving-platform-mode-settings) | Toggle Moving Platform Mode and more via Settings | Ends users | [February](#windows-holographic-version-21h2---february-2022-update) |
+| [Moving Platform Mode Settings](#moving-platform-mode-settings) | Toggle Moving Platform Mode and more via Settings | End users | [February](#windows-holographic-version-21h2---february-2022-update) |
 | [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies) | Configures new MPM settings via MDM | IT Admins |  [February](#windows-holographic-version-21h2---february-2022-update) |
 | [Moving Platform Mode SDK](#moving-platform-mode-sdk) | Configures MPM via Apps | Developers |  [February](#windows-holographic-version-21h2---february-2022-update) |
 | [Start gestures settings](#start-gestures-settings)        | Custom limitations for how the start menu can be opened.            | End users        | [January](#windows-holographic-version-21h2---january-2022-update) |
@@ -73,8 +73,6 @@ To update to the latest release, open the Settings app, go to Update & Securit
 ✔️ If you use your HoloLens devices in a location that has dynamic movement, consider setting these new [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies).
 
 ### Color-blind mode
-
-Added in Insider build 20348.1463
 
 Color-blind mode is useful a great feature that makes HoloLens more accessible. The new color-blind mode can be found in the Settings app under **Settings** -> **Ease of Access** -> **Color filters**. Several new filters are available. Here's a visual example of some of the available filters.
 
