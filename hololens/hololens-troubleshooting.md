@@ -36,6 +36,7 @@ This article describes how to resolve several common HoloLens issues.
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
 - [HoloLens user can’t launch Microsoft Edge](#hololens-user-cant-launch-microsoft-edge)
 - [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
+- [File Explorer and pickers can't select OneDrive](#file-explorer-and-pickers-cant-select-onedrive)
 - [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
@@ -69,7 +70,7 @@ This article describes how to resolve several common HoloLens issues.
 > [!NOTE]
 > There was fixed in [Windows Holographic, version 21H2 - November 2021 Update](hololens-release-notes.md#windows-holographic-version-21h2---november-2021-update)
 
-There is a known issue where when the device reaches 18% battery, it will unexpectedly shut down. This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
+There's a known issue where when the device reaches 18% battery, it will unexpectedly shut down. This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
 
 1. Ensure optional diagnostics are enabled on your device(s)
 1. Reproduce the problem
@@ -92,7 +93,7 @@ If you use OneDrive For Business using your Azure AD account, you may have encou
 
 Prerequisite: Customers can use Microsoft Edge and device OS is update to a Windows Holographic, 21H1 build or newer.
 
-If you are experiencing this issue, try one of the following:
+If you're experiencing this issue, try one of the following:
 
 - Users can directly access OneDrive For Business from Microsoft Edge, and interact with their files the website from their browser.
 - Users can install the OneDrive PWA app to HoloLens by downloading it from Microsoft Edge. This will allow users to view and manage files on the device again. Read and follow these [instructions for installing the OneDrive PWA app on your HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
@@ -111,11 +112,11 @@ On the latest release of [Windows Holographic, version 21H1](hololens-release-no
 
 ### Workarounds
 
-If you are unable to update Remote Assist to a newer build try the following work around.
+If you're unable to update Remote Assist to a newer build try the following work around.
 
 #### Restart in between calls
 
-If your calls are going over a length of 20 minutes and you are experiencing this issue, try rebooting your device. Rebooting your device between Remote Assist calls will refresh your device and put it back into a good state.
+If your calls are going over a length of 20 minutes and you're experiencing this issue, try rebooting your device. Rebooting your device between Remote Assist calls will refresh your device and put it back into a good state.
 
 To quickly restart a device on [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) open the start menu, and select the user icon, then select **Restart**.
 
@@ -183,6 +184,14 @@ The HoloLens team is working on adding support for more regions.
 
 See here [for countries to buy HoloLens 2.](hololens2-purchase.md)
 
+## File Explorer and pickers can't select OneDrive
+
+There have been some changes and updates to the OneDrive app over time. If you were previously using the File Explorer, or a file picker app to select files from OneDrive, you'll find this is no longer available since the [previously fixed OneDrive UWP app issue](#fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users). This is because the new app doesn't register itself as a file picker or share target.
+
+**Work around** : Use the OneDrive app and move files locally to the device as needed.
+
+For code samples using OneDrive via Microsoft Graph APIs visit the [developer documentation for OneDrive.](https://developer.microsoft.com/onedrive)
+
 ## Microsoft Edge fails to start the microphone
 
 When users using Microsoft Edge the microphone can fail to start, thus not being usable to interact with Microsoft Edge in HoloLens. This known issue is related to the version of the Microsoft Edge app, please don't reflash your device to an earlier version as this won't fix this issue.
@@ -213,7 +222,7 @@ This shouldn't occur during:
 Work around methods:
 
 - Sign-in methods such as PIN, Password, Iris, Web Authentication, or FIDO2 keys.
-- If device PIN cannot be remembered, and other authentication methods are not available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-flashing-mode-procedure).
+- If device PIN cannot be remembered, and other authentication methods aren't available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-flashing-mode-procedure).
 
 [Back to list](#list)
 
@@ -222,7 +231,7 @@ Work around methods:
 > [!NOTE]
 > This issue was originally created with the shipping version of Microsoft Edge in-mind. This issue may be resolved in the [new Microsoft Edge](hololens-new-edge.md). If it is not, please file feedback.
 
-A few customers have reported an issue where Microsoft Edge fails to launch. For these customers, the issue persists through reboot and is not resolved with Windows or application updates. If you're experiencing this issue and you've confirmed [Windows is up-to-date](hololens-updates.md#manually-check-for-updates), please file a bug from the [Feedback Hub app](hololens-feedback.md) with the following category and sub-category: Install and Update > Downloading, installing, and configuring Windows Update.
+A few customers have reported an issue where Microsoft Edge fails to launch. For these customers, the issue persists through reboot and isn't resolved with Windows or application updates. If you're experiencing this issue and you've confirmed [Windows is up-to-date](hololens-updates.md#manually-check-for-updates), please file a bug from the [Feedback Hub app](hololens-feedback.md) with the following category and sub-category: Install and Update > Downloading, installing, and configuring Windows Update.
 
 There are no known workarounds as we've been unable to root cause the issue so far. Filing a bug via Feedback Hub will help our investigation! This is a **known issue**.
 
