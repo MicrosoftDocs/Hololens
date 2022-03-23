@@ -4,8 +4,8 @@ description: Do you have a quick question about HoloLens or interacting with hol
 keywords: hololens, faq, known issue, help
 ms.prod: hololens
 ms.sitesec: library
-author: beelia
-ms.author: v-beehanson
+author: qianw211
+ms.author: qianwen
 ms.reviewer: v-evmill
 manager: sekerawa
 ms.topic: article
