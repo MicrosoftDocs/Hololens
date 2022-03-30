@@ -28,6 +28,19 @@ appliesto:
 
 <!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
+**To hold the device**
+
+- Do's
+
+   ![Holding by both the hands](images/hl2-holding-right-1.jpg)
+   ![Holding by overhead strap](images/hl2-holding-right-2.jpg)
+
+- Don'ts
+
+   ![Holding by one hand](images/hl2-holding-wrong-1.jpg)
+   ![Holding by visor](images/hl2-holding-wrong-2.jpg)
+   ![Holding by adjustment knob](images/hl2-holding-wrong-3.jpg)
+
 **To clean the device**
 
 1. Remove any dust by using a dry, lint-free microfiber cloth to gently wipe the surface of the device.
