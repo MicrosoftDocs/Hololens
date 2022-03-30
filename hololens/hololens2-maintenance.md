@@ -30,12 +30,12 @@ appliesto:
 
 **To hold the device**
 
-- Do's
+- Do this:
 
    ![Holding by both the hands](images/hl2-holding-right-1.jpg)
    ![Holding by overhead strap](images/hl2-holding-right-2.jpg)
 
-- Don'ts
+- Don't do this:
 
    ![Holding by one hand](images/hl2-holding-wrong-1.jpg)
    ![Holding by visor](images/hl2-holding-wrong-2.jpg)
