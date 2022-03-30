@@ -66,13 +66,13 @@ For more information, see [Auto login policy controlled by CSP](hololens-release
 
 For shared HoloLens 2 devices, Kiosk mode is recommended to control which applications are shown in Start menu when a user signs-in to HoloLens. By just allowing only required apps like Remote Assist, you can restrict users signing into the user account settings page using Edge browser by SSO and access user account details inside HoloLens 2 device.
 
-##### A. If you use Microsoft Endpoint Manager (Intune) to manage the devices
+- **If you use Microsoft Endpoint Manager (Intune) to manage the devices**
 
-Navigate to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), and create a single or multiple app kiosk mode configuration in [Devices | Configuration profiles](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) blade.
+    Navigate to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), and create a single or multiple app kiosk mode configuration in [Devices | Configuration profiles](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) blade.
 
-##### B. If you use Provisioning Packages to manage the devices
+- **If you use Provisioning Packages to manage the devices**
 
-Use Windows Configuration Designer to configure and deploy single or multiple app kiosk mode provisioning packages.
+    Use Windows Configuration Designer to configure and deploy single or multiple app kiosk mode provisioning packages.
 For more information, see [Set up HoloLens as a kiosk](hololens-kiosk.md?tabs=intunecustom%2Cnonaadlogon#steps-in-configuring-kiosk-mode-for-hololens).
 
 #### Windows Defender Application Control (WDAC)
