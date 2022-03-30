@@ -37,7 +37,7 @@ Assign required licenses to the Azure AD user accounts.
     - Microsoft Teams
     - Common Data Service for Remote Assist
 
-For more information, see [Requirements for Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-app-user).
+    For more information, see [Requirements for Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-app-user).
 
 1. To manage HoloLens 2 using Microsoft Endpoint Manager (Intune), follow [Assign Microsoft Intune licenses](/mem/intune/fundamentals/licenses-assign) step-by-step guide to assign the following licenses.
     - Microsoft Intune
@@ -66,20 +66,20 @@ For more information, see [Auto login policy controlled by CSP](hololens-release
 
 For shared HoloLens 2 devices, Kiosk mode is recommended to control which applications are shown in Start menu when a user signs-in to HoloLens. By just allowing only required apps like Remote Assist, you can restrict users signing into the user account settings page using Edge browser by SSO and access user account details inside HoloLens 2 device.
 
-##### A. If you use Microsoft Endpoint Manager (Intune) to manage the devices
+- **If you use Microsoft Endpoint Manager (Intune) to manage the devices**
 
-Navigate to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), and create a single or multiple app kiosk mode configuration in [Devices | Configuration profiles](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) blade.
+    Navigate to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), and create a single or multiple app kiosk mode configuration in [Devices | Configuration profiles](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) blade.
 
-##### B. If you use Provisioning Packages to manage the devices
+- **If you use Provisioning Packages to manage the devices**
 
-Use Windows Configuration Designer to configure and deploy single or multiple app kiosk mode provisioning packages.
+    Use Windows Configuration Designer to configure and deploy single or multiple app kiosk mode provisioning packages.
 For more information, see [Set up HoloLens as a kiosk](hololens-kiosk.md?tabs=intunecustom%2Cnonaadlogon#steps-in-configuring-kiosk-mode-for-hololens).
 
 #### Windows Defender Application Control (WDAC)
 
 WDAC allows you to configure HoloLens to block the launch of apps. It is different from the Kiosk mode, where the UI hides the apps but they can still be launched. With WDAC, you can see the apps tile but they cannot be launched. For more information, see [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md).
 
-### 4. Limitations
+## Limitations
 
 Using shared Azure AD account has the following limitations (including but not limited to):
 
@@ -88,7 +88,7 @@ Using shared Azure AD account has the following limitations (including but not l
 1. User-Based Workflows – It is not possible to use the advanced integrations with field service, as the user being “assigned” work items, is not the user signed into Remote Assist.
 1. PIN Sharing – As IRIS sign-in is not possible, Windows Hello PIN number must be shared between the users.
 
-### 5. Issues
+## Issues
 
 Using shared Azure AD account poses the following issues to be addressed (including but not limited to):
 
@@ -99,7 +99,7 @@ Using shared Azure AD account poses the following issues to be addressed (includ
 1. MFA ownership – multifactor authentication (MFA) should be owned by a central authority for shared accounts.
 1. PIN reset – When PIN needs to be reset and knowledge as to who owns the MFA on the devices is challenging.
 
-### 6. Considerations
+## Considerations
 
 You must review and make changes to the following Azure AD settings (including but not limited to) when you want to use shared Azure AD user accounts. When enabling and disabling the following Azure AD settings, extreme care should be taken to make sure that changing theses settings does not cause any issues for existing and new user accounts.
 
