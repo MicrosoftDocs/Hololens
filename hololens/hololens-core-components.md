@@ -90,7 +90,7 @@ How Microsoft tools and services used to deploy HoloLens 2 devices:
 - [Windows Autopilot for HoloLens 2](hololens2-autopilot.md)
 - [Enroll HoloLens in Modern Device Management](hololens-enroll-mdm.md)
 - [Using Endpoint Manager Intune to manage HoloLens devices](hololens-mdm-configure.md)
-- [Manage HoloLens devices with Intune](/mem/intune/fundamentals/windows-holographic-for-business.md)
+- [Manage HoloLens devices with Intune](/mem/intune/fundamentals/windows-holographic-for-business)
 
 ## Configure
 
