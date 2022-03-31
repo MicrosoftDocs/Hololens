@@ -81,7 +81,7 @@ To stop recording, use the Start gesture and select the highlighted **Video** ic
 
 > [!NOTE]
 > **Applies to HoloLens (1st gen) only**  
-> The [Windows 10 October 2018 Update](/windows/mixed-reality/release-notes-october-2018) changes how the Start gesture and Windows button behave on HoloLens (1st gen). Before the update, the Start gesture or Windows button would stop a video recording. After the update, however, the Start gesture or Windows button opens the **Start** menu (or the **quick actions menu** if you are in an immersive app), from which you can select the highlighted **video** icon to stop recording.
+> The [Windows 10 October 2018 Update](/windows/mixed-reality/enthusiast-guide/release-notes-october-2018) changes how the Start gesture and Windows button behave on HoloLens (1st gen). Before the update, the Start gesture or Windows button would stop a video recording. After the update, however, the Start gesture or Windows button opens the **Start** menu (or the **quick actions menu** if you are in an immersive app), from which you can select the highlighted **video** icon to stop recording.
 
 ## Share what you see in real-time
 
@@ -102,7 +102,7 @@ Use the Start gesture to go to **Start**, then select the **Connect** icon. From
 To stop sharing, use the Start gesture and select the highlighted **Connect** icon. Because you were streaming, nothing will be saved to your device.
 
 > [!NOTE]
-> Miracast support was enabled on HoloLens (1st gen) beginning with the [Windows 10 October 2018 Update](/windows/mixed-reality/release-notes-october-2018).
+> Miracast support was enabled on HoloLens (1st gen) beginning with the [Windows 10 October 2018 Update](/windows/mixed-reality/enthusiast-guide/release-notes-october-2018).
 
 ### Real time video with Windows Device Portal
 
@@ -120,7 +120,7 @@ Mixed reality photos and videos are saved to the device's "Camera Roll". You can
 
 You can also view your mixed reality photos and videos in the Photos app, which is pre-installed on HoloLens. To pin a photo in your world, select it in the Photos app and choose **Place in mixed world**. You can move the photo around your world after it's been placed.
 
-To view and/or save your mixed reality photos and videos on a PC connected to HoloLens, you can use [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) or your [PC's File Explorer via MTP](/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens).
+To view and/or save your mixed reality photos and videos on a PC connected to HoloLens, you can use [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) or your [PC's File Explorer via MTP](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018#new-features-for-hololens).
 
 ### Use File Explorer to get your pictures, videos and files
 
