@@ -5,7 +5,7 @@ keywords: HoloLens 2 purchasing options, international purchase, international r
 author: qianw211
 ms.author: qianwen
 ms.reviewer: skerawala
-ms.date: 3/21/2022
+ms.date: 3/23/2022
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -83,7 +83,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | | Insight | [info.be@insight.com](mailto:info.be@insight.com)  |  |  |
 | **Denmark** | ATEA | Martin Sandersen <br> [Martin.Sandersen@atea.dk](mailto:Martin.Sandersen@atea.dk)  | [Buy HoloLens 2 - ATEA](https://www.atea.dk/eshop/products/?filters=S_hololens) | [Buy HoloLens 2 - ATEA](https://www.atea.dk/eshop/product/microsoft-hololens-2-industrial-edition-smartglasses/?prodid=5165315) |  
 | **Finland** | ATEA | Petteri Halonen <br> [petteri.halonen@atea.fi](mailto:petteri.halonen@atea.fi) | [Buy HoloLens 2 - ATEA](https://www.atea.fi/eshop/products/?filters=S_hololens) | [Buy HoloLens 2 Industrial Edition - ATEA](https://www.atea.fi/eshop/product/microsoft-hololens-2-industrial-version/?prodid=3361862) |
-| **France** | ARP France (Bechtle) | Doha Benchair <br> [doha.benchair@bechtle.com](mailto:doha.benchair@bechtle.com) | [Buy HoloLens 2 - ARP France (Bechtle)](https://www.arp.fr/promo/microsoft-hololens-2/) | [Buy HoloLens 2 Industrial Edition - ARP France (Bechtle)](https://www.arp.fr/lunettes-microsoft-hololens-2-ind-ed-ssu-00003-5496988) | 
+| **France** | Bechtle | Doha Benchair <br> [doha.benchair@bechtle.com](mailto:doha.benchair@bechtle.com) | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/fr/solutions-informatiques/realite-virtuelle/microsoft-hololens-2) | [Buy HoloLens 2 Industrial Edition - Bechtle](https://www.bechtle.com/fr/solutions-informatiques/realite-virtuelle/microsoft-hololens-2-industrial-edition) | 
 | | Econocom | Sabine Lhuillery <br> [sabine.lhuillery@econocom.com](mailto:sabine.lhuillery@econocom.com) | [Buy HoloLens 2 - Econocom](https://microsoft-hololens.econocom.com/fr) | [Buy HoloLens 2 Industrial Edition - Econocom](https://microsoft-hololens.econocom.com/en/hololens-2) |
 | | Insight Technology Solutions SAS | Wouter Brandenbarg <br> [wouter.brandenbarg@insight.com](mailto:wouter.brandenbarg@insight.com) <br> Aude Lamouroux <br> [aude.lamouroux@insight.com](mailto:aude.lamouroux@insight.com) |  |  |
 | | *Rental Partner!* IDEM | David Marty <br> [david.marty@idem.fr](mailto:david.marty@idem.fr) <br> Jerome Bouas <br> [jerome.bouas@idem.fr](mailto:jerome.bouas@idem.fr) |  |  |
