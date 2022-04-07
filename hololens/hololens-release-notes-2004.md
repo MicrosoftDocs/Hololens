@@ -30,7 +30,7 @@ These are the major feature releases from Windows Holographic, version 2004.
 
 ## Windows Holographic, version 20H2 - April 2022 Update
 
-- Build 19041.1179
+- Build 19041.1180
 
 Improvements and fixes in the update:
 
