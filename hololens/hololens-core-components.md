@@ -90,7 +90,7 @@ How Microsoft tools and services used to deploy HoloLens 2 devices:
 - [Windows Autopilot for HoloLens 2](hololens2-autopilot.md)
 - [Enroll HoloLens in Modern Device Management](hololens-enroll-mdm.md)
 - [Using Endpoint Manager Intune to manage HoloLens devices](hololens-mdm-configure.md)
-- [Manage HoloLens devices with Intune](/mem/intune/fundamentals/windows-holographic-for-business.md)
+- [Manage HoloLens devices with Intune](/mem/intune/fundamentals/windows-holographic-for-business)
 
 ## Configure
 
@@ -98,7 +98,7 @@ Learn about setting up a new network for your HoloLens 2 devices and adding them
 
 ### Identity
 
-- [Create a new tenant](/azure/active-directory/develop/quickstart-create-new-tenant.md)
+- [Create a new tenant](/azure/active-directory/develop/quickstart-create-new-tenant)
 - [Create Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups)
 - [Manage user identity and login for HoloLens](hololens-identity.md)
 - [Share your HoloLens with multiple users](hololens-multiple-users.md)
