@@ -77,7 +77,7 @@ To update to the latest release, open the Settings app, go to Update & Securit
 
 ### Color-blind mode
 
-Color-blind mode is useful a great feature that makes HoloLens more accessible. The new color-blind mode can be found in the Settings app under **Settings** -> **Ease of Access** -> **Color filters**. Several new filters are available. Here's a visual example of some of the available filters.
+Color-blind mode is a feature to help make HoloLens more accessible. The new color-blind mode can be found in the Settings app under **Settings** -> **Ease of Access** -> **Color filters**. Several new filters are available. Here's a visual example of some of the available filters.
 
 | Off | Grey scale | Tritanopia |
 |-----|-----------|------------|
