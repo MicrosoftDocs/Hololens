@@ -5,7 +5,7 @@ keywords: HoloLens 2 purchasing options, international purchase, international r
 author: qianw211
 ms.author: qianwen
 ms.reviewer: skerawala
-ms.date: 3/23/2022
+ms.date: 4/8/2022
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -50,12 +50,12 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | |Insight Enterprises Hong Kong| Sky Yeung <br> [sky.yeung@insight.com](mailto:sky.yeung@insight.com) | [Insight Enterprises<br>Hong Kong](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/)|[Insight Enterprises<br>Hong Kong](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/ )|
 | **India** | Softline - Alliance Partner of Insight | Ninad Vedak <br> [ninad.vedak@softline.com](mailto:ninad.vedak@softline.com) | https://softline.co.in/solutions/microsoft-solutions/microsoft-hololens-2 | https://softline.co.in/solutions/microsoft-solutions/microsoft-hololens-2 
 | | Team Computers | Anuj Sharma <br> [hololens@teamcomputers.com](mailto:hololens@teamcomputers.com) | https://www.teamcomputers.com/hololens/ | https://www.teamcomputers.com/hololens/
-| **Malaysia** | ST Engineering Land Systems (Studio 249) | Lee Pei Shan <lee.peishan@stengg.com> | [ST Engineering Land Systems](http://www.studio249.my/) | [ST Engineering Land Systems](http://www.studio249.my/) |
+| **Malaysia** | ST Engineering Land Systems (Studio 249) | Lee Pei Shan <br> [lee.peishan@stengg.com](mailto:lee.peishan@stengg.com) <br> [stels_kts@stengg.com](mailto:stels_kts@stengg.com) <br> [audralim@seel.com.my](mailto:audralim@seel.com.my) | [ST Engineering Land Systems](http://www.studio249.my/) | [ST Engineering Land Systems](http://www.studio249.my/) |
 | **New Zealand** | Datacom | [HoloLens@datacom.co.nz](mailto:HoloLens@datacom.co.nz) | | | 
 | | Insight Enterprises (NZ) Pty Ltd | Jenny Southon <br> [jenny.southon@insight.com](mailto:jenny.southon@insight.com) <br> Dean Graham <br> [dean.graham@insight.com](mailto:dean.graham@insight.com) | [Insight Enterprises (NZ) Pty Ltd](https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html) | [Insight Enterprises (NZ) Pty Ltd](https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html) |
 | | Spark | Grant Finer <br> [Grant.Finer@spark.co.nz](mailto:Grant.Finer@spark.co.nz) <br> Misty Downie <br> [Misty.Downie@spark.co.nz](mailto:Misty.Downie@spark.co.nz) <br> Francis File <br> [Francis.File@spark.co.nz](mailto:Francis.File@spark.co.nz)  | [Spark](https://www.sparkdigital.co.nz/solutions/collaboration/hololens/) | [Spark](https://www.sparkdigital.co.nz/solutions/collaboration/hololens/) |
 | **Singapore** | Insight Technology Solutions Pte Ltd | Jenny Southon<br> [jenny.southon@insight.com](mailto:jenny.southon@insight.com) <br> Debby Toh <br> [debby.toh@insight.com](mailto:debby.toh@insight.com) | [Insight Technology<br>Solutions Pte Ltd](https://sg.insight.com/en_SG/shop/partner/microsoft/surface/hololens.html) | [Insight Technology<br>Solutions Pte Ltd](https://sg.insight.com/en_SG/shop/partner/microsoft/surface/hololens.html ) |
-| | ST Engineering Land Systems (Studio 249) | Lee Pei Shan <br> [lee.peishan@stengg.com](mailto:lee.peishan@stengg.com) | https://www.studio249.sg/ | https://www.studio249.sg |
+| | ST Engineering Land Systems (Studio 249) | Lee Pei Shan <br> [lee.peishan@stengg.com](mailto:lee.peishan@stengg.com) <br> [stels_kts@stengg.com](mailto:stels_kts@stengg.com) | https://www.studio249.sg/ | https://www.studio249.sg |
 | **South Korea** | Korea CIM (KCIM) | Seongbin Kim <br> [sbkim@kcim.co.kr](mailto:sbkim@kcim.co.kr) <br> Seungcheol Choi <br> [scchoi@kcim.co.kr](mailto:scchoi@kcim.co.kr)  | http://www.kcim.co.kr/solution/microsoft-hololens2  | http://www.kcim.co.kr/solution/microsoft-hololens2#product-2  | 
 | **Taiwan** | Systex Software & <br> Service Corporation <br> 精誠資訊股份有限公司 | Gina Ko <br> [ginako@systex.com](mailto:ginako@systex.com) | [Systex Software &<br>Service Corporation<br>精誠資訊股份有限公司](https://tw.systex.com/microsoft-hololens/) | [Systex Software &<br>Service Corporation<br>精誠資訊股份有限公司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) |
 | **Thailand** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate <br> [vongsakorn@sustain-solution.com](mailto:vongsakorn@sustain-solution.com) | [Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [Sustainable Solution Co., Ltd.](https://hololensthai.com/) |

@@ -2,6 +2,18 @@
 
 
 
+## Week of April 04, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/7/2022 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+| 4/8/2022 | [Capture, record, and share mixed reality photos and videos](/hololens/holographic-photos-and-videos) | modified |
+| 4/8/2022 | [Planning HoloLens 2 deployment in a commercial environment](/hololens/hololens-core-components) | modified |
+| 4/8/2022 | [Find and save files on HoloLens](/hololens/holographic-data) | modified |
+| 4/8/2022 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+
+
 ## Week of March 21, 2022
 
 
