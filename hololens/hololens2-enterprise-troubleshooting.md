@@ -1,8 +1,8 @@
 ---
 title: HoloLens 2 implementation and managed device troubleshooting
 description: Troubleshooting HoloLens 2 devices in an Enterprise environment
-author: qianw211
-ms.author: qianwen
+author: evmill
+ms.author: v-evmill
 ms.date: 11/1/2021
 ms.topic: article
 keywords: troubleshooting
@@ -79,14 +79,14 @@ Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It 
     1. Go to Fiddler Settings -> Connections.
     1. Note the listening port for Fiddler (default is 8866).
     1. Check Allow remote computers to connect.
-    1. Click Save.
+    1. Select Save.
 1. On your HoloLens 2 – configure Fiddler as the proxy server <sup>1</sup>:
     1. Open the Start menu and select Settings.
     1. Select Network & Internet and then Proxy on the left menu.
     1. Scroll down to Manual proxy setup and toggle Use a proxy server to On.
     1. Enter the IP address of the PC where Fiddler is installed.
     1. Enter the port number noted above (default is 8866).
-    1. Click Save.
+    1. Select Save.
 
 <sup>1</sup> For builds 20279.1006+ (Insiders and the upcoming release), use the following steps to configure proxy:
 
@@ -95,18 +95,18 @@ Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It 
 1. Change to Manual Setup.
 1. Enter the IP address of the PC where Fiddler is installed.
 1. Enter the port number noted above (default is 8866).
-1. Click Apply.
+1. Select Apply.
 
 #### Decrypt HTTPS traffic from HoloLens 2
 
 1. On your PC – export the Fiddler certificate.
     1. Go to Fiddler Settings -> HTTPS and expand Advanced Settings.
-    2. Click Export Fiddler certificate. It will save to your desktop.
+    2. Select Export Fiddler certificate. It will save to your desktop.
     3. Move the certificate over to the Downloads folder on your HoloLens 2.
 
 1. On your HoloLens 2 - import the Fiddler certificate.
     1. Go to Settings -> Update and Security -> Certificates.
-    2. Click Install Certificate, browse to the Downloads folder and select the Fiddler certificate.
+    2. Select Install Certificate, browse to the Downloads folder and select the Fiddler certificate.
     3. Change Store Location to Local Machine.
     4. Change Certificate Store to root.
     5. Select Install.
@@ -186,7 +186,7 @@ If you are having issues updating your managed HoloLens devices please read this
 
 ## Kiosk troubleshooting
 
-If you are having issues either configuring, using, or applying kiosks refer to the [kiosk troubleshooting guidance](hololens-kiosk.md#troubleshooting)
+If you're having issues either configuring, using, or applying kiosks refer to the [kiosk troubleshooting guidance](hololens-kiosk.md#troubleshooting--updates)
 
 ## Managed HoloLens Devices FAQs
 
