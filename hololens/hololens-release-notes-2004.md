@@ -236,7 +236,7 @@ This latest release is a monthly update to version 2004, but this time we are in
 | [Kiosk mode behavior changes for handling of failures](#kiosk-mode-behavior-changes-for-handling-of-failures) | Kiosk mode failure now has restrictive fallback.                                                                                                |
 | [HoloLens Policies](#hololens-policies)                                    | New policies for HoloLens.     |
 | [Cache Azure AD Group membership for offline Kiosk](#cache-azure-ad-group-membership-for-offline-kiosk)         | New policy allows users to use group membership cache to use Kiosk mode offline for set number of days.                                        |
-| [New device restriction policies for HoloLens 2](#new-device-restriction-policies-for-hololens-2)       | Device management policies enabled newly enabled for HoloLens 2.                                                                                |
+| [New device restriction policies for HoloLens 2](#new-device-restriction-policies-for-hololens-2)       | Device management policies newly enabled for HoloLens 2.                                                                                |
 | [New power policies for HoloLens 2](#new-power-policies-for-hololens-2)       | Newly supported policies for power timeout settings.  |
 | [Update Policies](#newly-enabled-update-policies-for-hololens)        | Newly enabled policies allowing control of updates.           |
 | [Enabled Settings page visibility for HoloLens 2](#enabled-settings-page-visibility-for-hololens-2)      | Policy to pick which pages are seen in Settings app.             |
