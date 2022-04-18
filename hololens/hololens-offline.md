@@ -141,6 +141,14 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 |                                                     | *.windowsupdate.com                                                 |
 |                                                     | *.delivery.mp.microsoft.com                                         |
 |                                                     | *.update.microsoft.com                                              |
+|  Windows Autopilot for HoloLens 2                   | *.microsoftaik.azure.net                                            |
+|                                                     | enterpriseregistration.windows.net                                  |
+|                                                     | aadcdn.msauth.net                                                   |
+|                                                     | aadcdn.msauthimages.net                                             |
+|                                                     | aadcdn.msftauth.net                                                 |
+|                                                     | aadcdn.msftauthimages.net                                           |
+|                                                     | acctcdn.msftauth.net                                                |
+|                                                     | acctcdn.msauth.net                                                  |
 
 
 
