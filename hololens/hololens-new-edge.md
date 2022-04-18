@@ -2,7 +2,7 @@
 title: Introducing the new Microsoft Edge
 description: Learn about the new Edge app
 author: joyjaz
-ms.author: v-jjaswinski
+ms.author: sekerawa
 keywords: HoloLens, edge, internet, browser
 ms.prod: hololens
 ms.sitesec: library
