@@ -16,7 +16,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Common Scenarios – Near Offline or Restricted for HoloLens 2
+# Common Scenarios – Near Offline or Isolated Environments for HoloLens 2
 
 ## Overview
 
