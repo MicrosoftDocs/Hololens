@@ -137,12 +137,12 @@ The corresponding Offline secure guide provides instruction for applying a sampl
 > [!div class="nextstepaction"]
 > [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
 
-## Scenario D: Deploy in restricted or near offline environments
+## Scenario D: Deploy in near offline or isolated environments
 
 This is ideal for devices that may use cloud services in restricted or secure environments with periodic network or internet access.
 
 
-[![Offline Secure diagram 1.](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![Near offline diagram 1.](images/deployment-guides-revised-scenario-d.png)](images/deployment-guides-revised-scenario-d.png#lightbox)
 
 ### When to use
 
@@ -172,7 +172,7 @@ Consider this deployment model for:
 * Devices will need access to relevant endpoints and validation of access may be needed.
 * Higher administrative overhead since these devices have to be set up to work while on a restricted network or while offline
 
-The corresponding restricted or near offline guide provides instruction for applying a sample Provisioning Package that will setup a HoloLens 2 for use in restricted or near offline environments.
+The corresponding restricted or near offline guide provides instruction for applying a sample Provisioning Package that will setup a HoloLens 2 for use in near offline or isolated environments.
 
 > [!div class="nextstepaction"]
 > [Restricted or near offline environment deployment guide](hololens-common-scenarios-offline-secure.md)
