@@ -24,14 +24,16 @@ This article describes how to resolve several common HoloLens issues.
 
 <a id="list"></a>
 
-**Fixed Known Issues**
+##### Fixed Known Issues
+
 - [**Fixed** - Every time the power goes to 18 percent, the device suddenly shuts down automatically](#fixed---every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [**Fixed** - OneDrive UWP app doesn't work for Azure AD users](#fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [**Fixed** - Remote Assist video freezes after 20 minutes](#fixed---remote-assist-video-freezes-after-20-minutes)
 - [**Fixed** - Downloading locked files doesn't show error](#fixed---downloading-locked-files-doesnt-error)
 - [**Fixed** - Device Portal file upload/download times out](#fixed---device-portal-file-uploaddownload-times-out)
 
-**Known Issues**
+##### Known Issues
+
 - [Remote Wipe doesn't remove device from Intune](#remote-wipe-doesnt-remove-device-from-intune)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
 - [HoloLens user can’t launch Microsoft Edge](#hololens-user-cant-launch-microsoft-edge)
@@ -39,12 +41,14 @@ This article describes how to resolve several common HoloLens issues.
 - [File Explorer and pickers can't select OneDrive](#file-explorer-and-pickers-cant-select-onedrive)
 - [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
+- 
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive doesn't automatically upload pictures](#onedrive-doesnt-automatically-upload-pictures)
 
-**General**
+##### General
+
 - [HoloLens is unresponsive or won't start](#hololens-is-unresponsive-or-wont-start)
 - ["Low Disk Space" error](#low-disk-space-error)
 - [Calibration Fails](#calibration-fails)
@@ -53,14 +57,17 @@ This article describes how to resolve several common HoloLens issues.
 - [Windows Device Portal isn't working correctly](#windows-device-portal-isnt-working-correctly)
 - [The HoloLens Emulator isn't working](#the-hololens-emulator-isnt-working)
 
-**Input**
+##### Input
+
 - [Voice commands aren't working](#voice-commands-arent-working)
 - [Hand input isn't working](#hand-input-isnt-working)
 
-**Connectivity**
+##### Connectivity
+
 - [Can't connect to Wi-Fi](#cant-connect-to-wi-fi)
 
-**External Devices** 
+##### External Devices
+
 - [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
 - [USB-C Microphone isn't working](#usb-c-microphone-isnt-working)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
@@ -110,7 +117,7 @@ If you're experiencing this issue, try one of the following:
 
 On the latest release of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), some users of Remote Assist have experienced video freezing during calls over 20 minutes. This is a **known issue**.
 
-### Workarounds
+### Workarounds to fix Remote Assist
 
 If you're unable to update Remote Assist to a newer build try the following work around.
 
@@ -225,6 +232,29 @@ Work around methods:
 - If device PIN cannot be remembered, and other authentication methods aren't available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-flashing-mode-procedure).
 
 [Back to list](#list)
+
+## Some users may encounter an update failure with Insider build 20346.1466
+
+If a user has taken an update to the Insider flight, 20346.1466, and it doesn’t appear to be finishing the boot, a clean reflash may be required to move forward again. To see if you’ve encountered this:
+
+1. Reboot – Hold down the power until the LED’s step down.
+1. Power up.
+1. Confirm you see the Windows flag at the beginning of the boot and it goes black shortly after that.
+1. Connect your HoloLens2 to your PC with USB and run Advanced Recovery companion.
+1. Select the HoloLens.
+1. If the version says you’re running the 20346.1466 build, you likely hit this issue.
+
+### Who does this tend to affect
+
+Users who have been using their device without flashing it since [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004).
+
+### Users who are typically unaffected
+
+Users who have flashed their device, or unboxed their device, and started using it since [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1).
+
+#### Workaround for Insider update issue
+
+- [Reflash your device.](hololens-recovery.md#clean-reflash-the-device)
 
 ## Microsoft Edge fails to launch
 
