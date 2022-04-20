@@ -41,7 +41,7 @@ This article describes how to resolve several common HoloLens issues.
 - [File Explorer and pickers can't select OneDrive](#file-explorer-and-pickers-cant-select-onedrive)
 - [Microsoft Edge fails to start the microphone](#microsoft-edge-fails-to-start-the-microphone)
 - [Auto-login asks for log-in](#auto-login-asks-for-log-in)
-- 
+- [Some users may encounter an update failure with Insider build 20346.1466](#some-users-may-encounter-an-update-failure-with-insider-build-203461466)
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
@@ -252,7 +252,7 @@ Users who have been using their device without flashing it since [Windows Hologr
 
 Users who have flashed their device, or unboxed their device, and started using it since [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1).
 
-#### Workaround for Insider update issue
+### Workaround for Insider update issue
 
 - [Reflash your device.](hololens-recovery.md#clean-reflash-the-device)
 
