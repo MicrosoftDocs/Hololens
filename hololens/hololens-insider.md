@@ -13,7 +13,7 @@ audience: ITPro
 ms.date: 3/11/2022
 ms.localizationpriority:
 ms.reviewer: 
-manager: ranjibb
+manager: lolab
 appliesto:
 - HoloLens 2
 ---
@@ -27,6 +27,144 @@ We recommend that for organizations that have moved, or are moving towards a sca
 ## Windows Insider Release Notes
 
 Looking for a new feature but don't see it? Check out the [release notes](hololens-release-notes.md) as many of our new features have been released as part of the main builds.
+
+| Feature                                                | Description                                                                                                                            | User or Scenario |
+|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------|
+| New policies to speed up adding users                          | New   policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT   Admin       |
+| Autopilot improvements                                 | Enabled   the Troubleshooter for Autopilot to work with HoloLens, as well as an option   to retry if it failed                         | IT   Admin       |
+| Manage users on device                                 | New   policies to manage when to clear out users on the device                                                                         | IT   Admin       |
+| Intune improvement - Mixed Reality policies            | MR   policies are now shown in Settings picker                                                                                         | IT   Admin       |
+| Intune improvement - Settings picker policies          | The   Settings picker now allows for selecting HoloLens 2 and filtering policies   applicable to the device                            | IT   Admin       |
+| Intune improvement - Update Connectivity               | Added   functionality to use the Update Connectivity page with HoloLens, to   troubleshoot non-updating devices                        | IT   Admin       |
+| Intune improvement - New columns for device properties | Added   new columns in Intune's device page to let you track groups, app versions,   and custom fields                                 | IT   Admin       |
+| New policy disable Wi-Fi auto recovery                 | ??????????????                                                                                                                         | IT   Admin       |
+| Captive portal on sign-in screen                       | New   policy that IT Admins can enable that allows the use of captive portals on   the sign in screen to assist in connecting to Wi-Fi | IT   Admin       |
+| Clean up storage via MDM                               | Clean   up files via MDM                                                                                                               | IT   Admin       |
+| Improvements for Camera in severe expose environments  | Improvement   to recording and streaming in areas with intense lighting                                                                | End   Users      |
+| Fixes improvements                                     | Fixes and improvements for   HoloLens.                                                                                                 | All              |
+
+
+### IT Admin Checklist
+
+PUT STUFF HERE FOR EACH NEW POLICY
+
+AND EACH NEW INTUNE THING
+
+
+
+
+
+### Policies to speed up adding users
+
+As more and more customers move to scale their deployment of HoloLens devices to their many users they find they'd like to be able to set up a new user quickly on a device. In order to aid with this we've added four new policies that each allow to skip a specific screen in OOBE. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These policies also have the added benefit of being able to have more fine tuning of your devices.
+
+The new policies and screens they skip are:
+
+| Policy          | What's skipped                                                                    |  Screenshot |
+|------------------|-----------------------------------------------------------------------------------|---|
+| Skip Calibration | The calibration run during OOBE. This can later be run via the Settings app.      | <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes"> |
+| Skip Training    | How to open and close the Start menu. This can later be learned via the Tips app. | <img src="images/26-02-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 2"> |
+| Location Consent | This skips the location consent page if the policy has been set.                  | <img src="images/setup-location-services.png" width="500px" alt="Enable location services"> |
+| Speech Consent   | This skips the speech consent page if the policy has been set.                    | <img src="images/22-do-more-with-voice.png" width="500px" alt="Enable Cortana"> |
+
+The OMA-URI of new policies:
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringFirstExperience`
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringFirstExperience`
+`./Device/Vendor/MSFT/Policy/Config/Privacy/DisablePrivacyExperience`
+
+- Bool value
+
+
+
+For more info on how to increase your set up speed for new users, check out our [guide on how to quickly set up new users.](hololens2-new-user-optimize.md)
+
+### Autopilot improvements
+
+We've enabled some new improvements for folks using Autopilot.
+
+
+
+
+### Manage users on device
+
+For some organization, they are fully at scale and have tons of different users on their HoloLens 2 devices. Some of these devices can be used by so many people they even hit the 64 user limit on the device. For those who have reached that limit, we've added in controls over how to delete old users off the device at controlled intervals. This can also be useful for other reasons, which include increased security be removing old accounts, or speeding up the Iris scanning processes on the sign-in screen (less users to match means a faster comparison.) We've enabled two methods to control when to clean up old users.
+
+- On a regular schedule determined by you.
+- Delete the oldest user when you add more than your custom maximum number of users.
+
+The OMA-URI of new policies:
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/NEWPOLICYOMAURI`
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/NEWPOLICYOMAURI`
+
+- Int value   // DOUBLE CHECK THIS LATER
+
+### Intune improvement - Mixed Reality policies
+
+In Microsoft Intune's UI, when adding new device configuration policies for mixed reality policies, users typically had to first know about the new polices by reading release notes like these, and then add them as custom OMA-URI policies. We're happy to announce we've improved the discoverability and usability of our Mixed Reality policies.
+
+// NEEDS STEPS
+
+// NEEDS SCREENSHOT
+
+### Intune improvement - Settings picker policies
+
+In addition to making our Mixed Reality policies more usable with the Settings picker, there's more. Now when using the settings picker you can filter by device. We've updating the naming convention and refreshed the list of policies offered when selecting the HoloLens 2 filter. This should allow you to create new configurations for HoloLens 2 devices in a faster and more efficient manner without needing to reference documentation on what's supported.
+
+// NEEDS STEPS
+
+// NEEDS SCREENSHOT
+
+### Intune improvement - Update Connectivity
+
+We are making it easier for organizations to ensure that devices are on the right operating system, ensuring that devices are running the latest updates. As the number of devices you have grows, you'll need to know not just what OS version your HoloLens devices are on, but also why they aren't updating. We're adapting a new tool within Intune's UI that you can now use for HoloLens to help understand what may be blocking those devices from updating.
+
+You can read the original blog post on [the Update Connectivity page](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/achieve-better-patch-compliance-with-update-connectivity-data/ba-p/3073356) and if you are ready, try it out yourself!
+
+// NEEDS STEPS
+
+// NEEDS SCREENSHOT
+
+### Intune improvement - New columns for device properties
+
+When using Intune, the best way to get a view of your devices at a glance is to use the "All devices" page. This page is customizable and allows you to pick which, which items you want to see for your devices. Including from OS version, last check-in, primary user, and plenty more to pick from. We are now adding a three new columns by popular demand.
+
+| New field | Value | What it does |
+|---|---|---|
+| Included in Group X | Yes or No | Lets you select a group, and tells you if that device is included in that group |
+| App version for app X | Returns app version of selected app | Let's you confirm that your devices are all updated across your primary apps. |
+| Custom Fields | A string value you set manually per device | Let's you self tag devices however you like. |
+
+// NEEDS STEPS
+
+// NEEDS SCREENSHOT
+
+### New policy disable Wi-Fi auto recovery
+
+
+
+### Captive portal on sign-in screen
+
+This new feature is an opt-in policy that IT Admins can enable to help with the set up of new devices / new users. When this policy is turned on it allows a captive portal on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if required.
+
+MixedReality/AllowCaptivePortalBeforeSignIn
+
+The OMA-URI of new policy:
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeSignIn`
+
+- Bool value
+
+### Clean up storage via MDM
+
+
+
+### Improvements for Camera in severe expose environments
+
+
+
+### Fixes improvements
+
+- Free storage space, SSID, BSSID values are now displayed on Intune's hardware page for devices.
+- It will be possible to issue an app uninstall command in the device context using EnterpriseModernAppManagement CSP.
 
 ### Known Issue - Some users may encounter an update failure with Insider build 20346.1466
 
