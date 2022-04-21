@@ -30,18 +30,18 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 
 | Feature                                                | Description                                                                                                                            | User or Scenario |
 |--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------|
-| New policies to speed up adding users                          | New   policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT   Admin       |
+| [New policies to speed up adding users](#policies-to-speed-up-adding-users)                          | New   policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT   Admin       |
 | Autopilot improvements                                 | Enabled   the Troubleshooter for Autopilot to work with HoloLens, as well as an option   to retry if it failed                         | IT   Admin       |
-| Manage users on device                                 | New   policies to manage when to clear out users on the device                                                                         | IT   Admin       |
-| Intune improvement - Mixed Reality policies            | MR   policies are now shown in Settings picker                                                                                         | IT   Admin       |
-| Intune improvement - Settings picker policies          | The   Settings picker now allows for selecting HoloLens 2 and filtering policies   applicable to the device                            | IT   Admin       |
-| Intune improvement - Update Connectivity               | Added   functionality to use the Update Connectivity page with HoloLens, to   troubleshoot non-updating devices                        | IT   Admin       |
-| Intune improvement - New columns for device properties | Added   new columns in Intune's device page to let you track groups, app versions,   and custom fields                                 | IT   Admin       |
+| [Manage users on device](#manage-users-on-device)                                 | New   policies to manage when to clear out users on the device                                                                         | IT   Admin       |
+| [Intune improvement - Mixed Reality policies](#intune-improvement---mixed-reality-policies)            | MR   policies are now shown in Settings picker                                                                                         | IT   Admin       |
+| [Intune improvement - Settings picker policies](#intune-improvement---settings-picker-policies)          | The   Settings picker now allows for selecting HoloLens 2 and filtering policies   applicable to the device                            | IT   Admin       |
+| [Intune improvement - Update Connectivity](#intune-improvement---update-connectivity)               | Added   functionality to use the Update Connectivity page with HoloLens, to   troubleshoot non-updating devices                        | IT   Admin       |
+| [Intune improvement - New columns for device properties](#intune-improvement---new-columns-for-device-properties) | Added   new columns in Intune's device page to let you track groups, app versions,   and custom fields                                 | IT   Admin       |
 | New policy disable Wi-Fi auto recovery                 | ??????????????                                                                                                                         | IT   Admin       |
-| Captive portal on sign-in screen                       | New   policy that IT Admins can enable that allows the use of captive portals on   the sign in screen to assist in connecting to Wi-Fi | IT   Admin       |
+| [Captive portal on sign-in screen](#captive-portal-on-sign-in-screen)                       | New   policy that IT Admins can enable that allows the use of captive portals on   the sign in screen to assist in connecting to Wi-Fi | IT   Admin       |
 | Clean up storage via MDM                               | Clean   up files via MDM                                                                                                               | IT   Admin       |
 | Improvements for Camera in severe expose environments  | Improvement   to recording and streaming in areas with intense lighting                                                                | End   Users      |
-| Fixes improvements                                     | Fixes and improvements for   HoloLens.                                                                                                 | All              |
+| [Fixes improvements](#fixes-improvements)                                    | Fixes and improvements for   HoloLens.                                                                                                 | All              |
 
 
 ### IT Admin Checklist
