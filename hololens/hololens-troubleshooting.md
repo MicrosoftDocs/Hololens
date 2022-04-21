@@ -77,7 +77,7 @@ This article describes how to resolve several common HoloLens issues.
 > [!NOTE]
 > There was fixed in [Windows Holographic, version 21H2 - November 2021 Update](hololens-release-notes.md#windows-holographic-version-21h2---november-2021-update)
 
-There's a known issue where when the device reaches 18% battery, it will unexpectedly shut down. This is a software issue, not a hardware or battery issue, so please do not exchange devices for this. If you're unsure if your issue matches this bug, please:
+A known issue is that when the device reaches 18% battery, it will shut down unexpectedly. This is a software issue, not a hardware or battery issue, so do not exchange devices for this. If you're unsure if your issue matches this bug, please:
 
 1. Ensure optional diagnostics are enabled on your device(s)
 1. Reproduce the problem
@@ -94,7 +94,7 @@ There's a known issue where when the device reaches 18% battery, it will unexpec
 >
 > Follow these [instructions to update your OneDrive app.](holographic-store-apps.md#update-apps) You can check which version of OneDrive you have by using the Microsoft Store app, then select the "See more" button represented by the **...** then select **Downloads and updates**.
 
-If you use OneDrive For Business using your Azure AD account, you may have encountered error when sign in to your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage. The OneDrive and HoloLens teams are working on the issue.
+If you use OneDrive For Business using your Azure AD account, you may have encountered an error when signing in to your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage. The OneDrive and HoloLens teams are working on the issue.
 
 ### Workarounds
 
@@ -119,7 +119,7 @@ On the latest release of [Windows Holographic, version 21H1](hololens-release-no
 
 ### Workarounds to fix Remote Assist
 
-If you're unable to update Remote Assist to a newer build try the following work around.
+If you're unable to update Remote Assist to a newer build, try the following workaround:
 
 #### Restart in between calls
 
@@ -214,7 +214,7 @@ The current fix is in version 96, which is available to users who have enrolled 
 
 ## Auto-login asks for log-in
 
-A HoloLens 2 device can be configured to automatically login in via **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log-in to the device again when updating a device with a substantially large update, such as a feature update. This is a **known issue**.
+A HoloLens 2 device can be configured to automatically log in through **Settings** -> **Accounts** -> **Sign-in Options** -> and under **Required** setting the value to **Never**. Some users may be required to log in to the device again during a substantially large update, such as a feature update. This is a **known issue**.
 
 Example of when this could occur:
 
