@@ -62,10 +62,10 @@ The new policies and screens they skip are:
 
 | Policy          | What's skipped                                                                    |  Screenshot |
 |------------------|-----------------------------------------------------------------------------------|---|
-| Skip Calibration | The calibration run during OOBE. This can later be run via the Settings app.      | <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes"> |
-| Skip Training    | How to open and close the Start menu. This can later be learned via the Tips app. | <img src="images/26-02-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 2"> |
-| Location Consent | This skips the location consent page if the policy has been set.                  | <img src="images/setup-location-services.png" width="500px" alt="Enable location services"> |
-| Speech Consent   | This skips the speech consent page if the policy has been set.                    | <img src="images/22-do-more-with-voice.png" width="500px" alt="Enable Cortana"> |
+| Skip Calibration | The calibration run during OOBE. This can later be run via the Settings app.      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
+| Skip Training    | How to open and close the Start menu. This can later be learned via the Tips app. | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
+| Location Consent | This skips the location consent page if the policy has been set.                  | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
+| Speech Consent   | This skips the speech consent page if the policy has been set.                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
 
 The OMA-URI of new policies:
 `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringFirstExperience`
@@ -73,8 +73,6 @@ The OMA-URI of new policies:
 `./Device/Vendor/MSFT/Policy/Config/Privacy/DisablePrivacyExperience`
 
 - Bool value
-
-
 
 For more info on how to increase your set up speed for new users, check out our [guide on how to quickly set up new users.](hololens2-new-user-optimize.md)
 
