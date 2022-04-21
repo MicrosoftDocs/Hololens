@@ -32,7 +32,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 
 - Improved reliability in remote diagnostic log collection via Microsoft Intune, especially for logs of larger sizes.
 - When initiating a Device Wipe of a HoloLens 2 from Intune, the device will now be deleted for Intune's console after the device is wiped.
-- Improved reliability when using the AutoRestartRequiredNotificationDismissal and ScheduleRestartWarning polices.
+- Improved reliability when using the AutoRestartRequiredNotificationDismissal and ScheduleRestartWarning policies.
 - In-box OpenXR code updated. This is to provide best out-of-box experience for customers without Microsoft store access.
 
 ## Start receiving Insider builds
