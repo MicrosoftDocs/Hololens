@@ -96,7 +96,31 @@ The key [endpoints](hololens-offline.md) to enable access on your network are:
 > These are the key endpoints to utilize Autopilot, complete OOBE and allow an AAD User to sign in with Windows Hello for Business. Your organization may require other endpoints to allow for the desired functionality. 
 
 ## Deploy and maintain
-Deployment and Maintenance steps are identical to the Cloud connected guide.
+Deployment and Maintenance steps are identical to the [Cloud connected guide](hololens2-cloud-connected-deploy.md). We've included basic suggestions here.
+
+When the device is reconnected to the corporate network, we suggest you perform manual updates at-least once a month (ie. the 2nd wednesday of the month) to ensure your device(s) are up-to-date and secure
+
+### Manually update store apps
+
+To update an app you installed from the Microsoft Store, you can update the app from the Microsoft Store app. For apps installed for the Microsoft Store for Business, you can also update those apps from the Microsoft Store for Business.
+
+See how at [Manually update apps](https://docs.microsoft.com/en-us/hololens/holographic-store-apps#update-apps).
+
+### Manually update OS
+
+Check for updates anytime in settings. To see available updates:
+
+1. Open the **Settings** app.
+1. Navigate to **Update & Security** > **Windows Update**.
+1. Select **Check for updates**.
+
+Read more at [Update hololens](https://docs.microsoft.com/en-us/hololens/hololens-update-hololens#check-for-updates-and-manually-update)
+
+### Manually sync with MDM
+
+Based on your specific needs, ensure that you perform updates and sync with MDM.
+
+Read more at [Using MDM to manage HoloLens devices](https://docs.microsoft.com/en-us/hololens/hololens-mdm-configure).
 
 > [!div class="nextstepaction"]
-> [Cloud connected deployment - Deploy](hololens2-cloud-connected-deploy.md)
+> [Cloud connected deployment - Deploy](hololens2-cloud-connected-deploy.md).
