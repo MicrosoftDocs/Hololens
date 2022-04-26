@@ -142,7 +142,7 @@ The corresponding Offline secure guide provides instruction for applying a sampl
 This is ideal for devices that may use cloud services in restricted or secure environments with periodic network or internet access.
 
 
-[![Near offline diagram 1.](images/deployment-guides-revised-scenario-d.png)](images/deployment-guides-revised-scenario-d.png#lightbox)
+[![Near offline diagram 1.](images/restricted-deployment-scenario-d.png)](images/restricted-deployment-scenario-d.png#lightbox)
 
 ### When to use
 
