@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 author: tmilligan
 ms.author: tmilligan
-ms.reviewer: 
+ms.reviewer: mata
 ms.topic: article
 audience: ITPro
 ms.localizationpriority:
