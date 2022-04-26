@@ -27,7 +27,7 @@ This scenario is designed to deliver the best user and administrator experience.
 > [!NOTE]
 > This scenario describes one possible approach. We expect each organization deploying in this scenario will have unique requirements, which can be mapped into this solution as required.
 
-[![Offline Secure scenario.](./images/Restricted-deployment-scenario-D.png)](./images/Restricted-deployment-scenario-D.png#lightbox)
+[![Offline Secure scenario.](./images/restricted-deployment-scenario-d.png)](./images/restricted-deployment-scenario-d.png#lightbox)
 
 ## Prepare
 
