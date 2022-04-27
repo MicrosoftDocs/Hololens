@@ -20,7 +20,7 @@ appliesto:
 
 ## Overview
 
-This guide provides guidance for deploying HoloLens 2 in areas where networking is restricted, either for secure environments or using the device in areas where networking cannot be assured such as power plants, ships, or other areas.
+This guide provides guidance for deploying HoloLens 2 in areas where networking is restricted. This could either be for secure environments or for areas where networking cannot be assured such as power plants, ships, or other areas.
 
 This scenario is designed to deliver the best user and administrator experience. This scenario allows for the use of Azure AD, Intune, Windows updates and multiple user support with IRIS sign-in, whilst meeting the needs of organizations who have additional security or networking challenges.
 
@@ -123,4 +123,4 @@ Based on your specific needs, ensure that you perform updates and sync with MDM.
 Read more at [Using MDM to manage HoloLens devices](hololens-mdm-configure.md).
 
 > [!div class="nextstepaction"]
-> [Cloud connected deployment - Deploy](hololens2-cloud-connected-deploy.md).
+> [Cloud connected deployment - Deploy](hololens2-cloud-connected-deploy.md)
