@@ -5,8 +5,8 @@ keywords: hololens, offline, OOBE
 audience: ITPro
 ms.date: 07/01/2019
 ms.assetid: b86f603c-d25f-409b-b055-4bbc6edcd301
-author: Teresa-Motiv
-ms.author: v-tea
+author: Tyler Milligan
+ms.author: tmilligan
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
