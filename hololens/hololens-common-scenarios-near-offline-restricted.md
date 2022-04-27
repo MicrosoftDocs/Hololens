@@ -104,7 +104,7 @@ When the device is reconnected to the corporate network, we suggest you perform 
 
 To update an app you installed from the Microsoft Store, you can update the app from the Microsoft Store app. For apps installed for the Microsoft Store for Business, you can also update those apps from the Microsoft Store for Business.
 
-See how at [Manually update apps](https://docs.microsoft.com/en-us/hololens/holographic-store-apps#update-apps).
+See how at [Manually update apps](holographic-store-apps.md).
 
 ### Manually update OS
 
@@ -114,13 +114,13 @@ Check for updates anytime in settings. To see available updates:
 1. Navigate to **Update & Security** > **Windows Update**.
 1. Select **Check for updates**.
 
-Read more at [Update hololens](https://docs.microsoft.com/en-us/hololens/hololens-update-hololens#check-for-updates-and-manually-update)
+Read more at [Update hololens](hololens-update-hololens.md)
 
 ### Manually sync with MDM
 
 Based on your specific needs, ensure that you perform updates and sync with MDM.
 
-Read more at [Using MDM to manage HoloLens devices](https://docs.microsoft.com/en-us/hololens/hololens-mdm-configure).
+Read more at [Using MDM to manage HoloLens devices](hololens-mdm-configure.md).
 
 > [!div class="nextstepaction"]
 > [Cloud connected deployment - Deploy](hololens2-cloud-connected-deploy.md).
