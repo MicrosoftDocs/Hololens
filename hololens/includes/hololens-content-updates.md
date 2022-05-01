@@ -8,6 +8,7 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 4/28/2022 | [Manage connection endpoints for HoloLens](/hololens/hololens-offline) | modified |
+| 4/28/2022 | [Manage connection endpoints for HoloLens](/hololens/hololens-offline) | modified |
 
 
 ## Week of April 18, 2022
