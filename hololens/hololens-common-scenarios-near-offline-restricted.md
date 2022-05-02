@@ -37,11 +37,11 @@ The cloud functionality of this guide matches the requirements for the [Cloud Co
 
 This guide assumes the following services are being used:
 
-1. [Azure AD for user sign in and authentication](hololens-identity.md)
-1. Azure AD Multi-Factor Authentication and Windows Hello for Business
-1. [Autopilot for device deployment](/mem/autopilot/existing-devices)
-1. [Intune for Device Management](/mem/intune/remote-actions/device-management)
-1. [Windows Update for Device Updates](hololens-update-hololens.md)
+- [Azure AD for user sign in and authentication](hololens-identity.md)
+- Azure AD Multi-Factor Authentication and Windows Hello for Business
+- [Autopilot for device deployment](/mem/autopilot/existing-devices)
+- [Intune for Device Management](/mem/intune/remote-actions/device-management)
+- [Windows Update for Device Updates](hololens-update-hololens.md)
 
 > [!NOTE]
 > If these services are already used within your organization, then your security team may be able to reuse any security assessments already completed.
@@ -70,7 +70,7 @@ Detailed network configurations are out of the scope of this article, and will v
 > It is likely that during initial configuration, a network engineer will need to validate the endpoints are accessible.
 
 > [!IMPORTANT]
-> Read more about how to deploy your app with the [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Prepare | Microsoft Docs](hololens2-corp-connected-prepare.md)
+> Read more about how to deploy your app with the [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Prepare | Microsoft Docs.](hololens2-corp-connected-prepare.md)
 
 ## Configure
 
@@ -98,7 +98,7 @@ The key [endpoints](hololens-offline.md) to enable access on your network are:
 ## Deploy and maintain
 Deployment and Maintenance steps are identical to the [Cloud connected guide](hololens2-cloud-connected-deploy.md). We've included basic suggestions here.
 
-When the device is reconnected to the corporate network, we suggest you perform manual updates at-least once a month (ie. the 2nd wednesday of the month) to ensure your device(s) are up-to-date and secure
+When the device is reconnected to the corporate network, we suggest you perform manual updates at-least once a month (ie. the 2nd Wednesday of the month) to ensure your device(s) are up-to-date and secure.
 
 ### Manually update store apps
 
