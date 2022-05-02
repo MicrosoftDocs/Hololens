@@ -26,9 +26,10 @@ You may be a business decision-maker, IT professional, or an innovation team loo
 
 | Scenario |Usage | Key points |
 |---------|---------|---------|
-| [Scenario A: Cloud connected devices](hololens2-cloud-connected-overview.md) | When you first begin your deployment, you may start small and deploy a single device connected to the cloud just to see the basic process. | Devices will be connected to cloud services and public internet. This is most suitable for customer use cases, field services, and proof of concept.|
-| [Scenario B: Organization's network](hololens2-corp-connected-overview.md) | As you deploy to production at scale, you may need to integrate with your own organization's network. | Devices will be connected to a "Corporate" wi-fi network. This is most suitable for Internal users, or use within the corporate environment.|
-| [Scenario C: Offline secure environment](hololens-common-scenarios-offline-secure.md) | Some mission-critical processes or some corporate policies may demand the use of offline environments. | Devices will be connected to a highly restrictive network or will be purely offline devices. This is most suitable for highly secure environments, or internet connectivity restrictions in remote areas. |
+| [Scenario A: Cloud connected devices](hololens2-cloud-connected-overview.md) | When you first begin your deployment, you may start small and deploy a single device connected to the cloud just to see the basic process. | Devices will be connected to cloud services and public internet. Most suitable for customer use cases, field services, and proof of concept.|
+| [Scenario B: Organization's network](hololens2-corp-connected-overview.md) | As you deploy to production at scale, you may need to integrate with your own organization's network. | Devices will be connected to a "Corporate" wi-fi network. Most suitable for Internal users, or use within the corporate environment.|
+| [Scenario C: Offline secure environment](hololens-common-scenarios-offline-secure.md) | Some mission-critical processes or some corporate policies may demand the use of offline environments. | Devices will be connected to a highly restrictive network or will be purely offline devices. Most suitable for highly secure environments, or internet connectivity restrictions in remote areas. |
+| [Scenario D: Near offline or isolated environments](hololens-common-scenarios-near-offline-restricted.md) | Guidance for deploying where networking cannot be assured or secure environments and cloud tools are desired. | Device setup via a restricted network then used on this network, or taken offline with periodic reconnects for management. Most suitable for restricted or offline scenarios where access to cloud or administrator tools are still desired. |
 
 ## Scenario A: Deploy to cloud connected devices
 
@@ -135,3 +136,43 @@ The corresponding Offline secure guide provides instruction for applying a sampl
 
 > [!div class="nextstepaction"]
 > [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
+
+## Scenario D: Deploy in near offline or isolated environments
+
+This is ideal for devices that may use cloud services in restricted or secure environments with periodic network or internet access.
+
+
+[![Near offline diagram 1.](images/restricted-deployment-scenario-d.png)](images/restricted-deployment-scenario-d.png#lightbox)
+
+### When to use
+
+Consider this deployment model for:
+
+* Device can be initially connected to a restricted network for setup
+* Device can be use on this restricted network or taken offline
+* Device is periodically returned to the restricted network for updates and management
+
+### Basic Common Configurations
+
+* Wi-Fi connectivity can be enabled or disabled, but periodic connections are required
+* Azure AD for sign-in & authentication
+* Azure MFA and Windows Hello for Business
+* Autopilot for device deployment
+* Intune for Device Management
+* Windows Update for Device Updates
+* Users perform initial sign in when connected then can sign in offline thereafter
+  * Multiple users are supported
+* Varying levels of device lockdown configurations are applied via Provisioning Packages based on specific use cases. These configurations are typically restricted because of secure environment requirements
+* One or more applications are deployed via Provisioning Package
+
+### Common Challenges
+
+* There's a limited set of configurations available through provisioning packages.
+* Cloud services are only available when device is connected to a network.
+* Devices will need access to relevant endpoints and validation of access may be needed.
+* Higher administrative overhead since these devices have to be set up to work while on a restricted network or while offline.
+
+The corresponding restricted or near offline guide provides instruction for applying a sample Provisioning Package that will setup a HoloLens 2 for use in near offline or isolated environments.
+
+> [!div class="nextstepaction"]
+> [Restricted or near offline environment deployment guide](hololens-common-scenarios-offline-secure.md)
