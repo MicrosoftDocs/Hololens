@@ -170,7 +170,7 @@ Consider this deployment model for:
 * There's a limited set of configurations available through provisioning packages.
 * Cloud services are only available when device is connected to a network.
 * Devices will need access to relevant endpoints and validation of access may be needed.
-* Higher administrative overhead since these devices have to be set up to work while on a restricted network or while offline
+* Higher administrative overhead since these devices have to be set up to work while on a restricted network or while offline.
 
 The corresponding restricted or near offline guide provides instruction for applying a sample Provisioning Package that will setup a HoloLens 2 for use in near offline or isolated environments.
 
