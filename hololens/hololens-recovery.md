@@ -6,7 +6,7 @@ keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, H
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: v-beehanson
+ms.author: qianwen
 ms.date: 10/15/2021
 ms.custom: 
 - CI 111456

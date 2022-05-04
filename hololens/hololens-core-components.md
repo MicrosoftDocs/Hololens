@@ -4,8 +4,8 @@ description: Learn about the core needs for deploying and managing HoloLens in e
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
-author: beelia
-ms.author: v-beehanson
+author: evmill
+ms.author: v-evmill
 audience: ITPro
 ms.topic: article
 ms.localizationpriority:
@@ -90,7 +90,7 @@ How Microsoft tools and services used to deploy HoloLens 2 devices:
 - [Windows Autopilot for HoloLens 2](hololens2-autopilot.md)
 - [Enroll HoloLens in Modern Device Management](hololens-enroll-mdm.md)
 - [Using Endpoint Manager Intune to manage HoloLens devices](hololens-mdm-configure.md)
-- [Manage HoloLens devices with Intune](/mem/intune/fundamentals/windows-holographic-for-business.md)
+- [Manage HoloLens devices with Intune](/mem/intune/fundamentals/windows-holographic-for-business)
 
 ## Configure
 
@@ -98,7 +98,7 @@ Learn about setting up a new network for your HoloLens 2 devices and adding them
 
 ### Identity
 
-- [Create a new tenant](/azure/active-directory/develop/quickstart-create-new-tenant.md)
+- [Create a new tenant](/azure/active-directory/develop/quickstart-create-new-tenant)
 - [Create Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups)
 - [Manage user identity and login for HoloLens](hololens-identity.md)
 - [Share your HoloLens with multiple users](hololens-multiple-users.md)

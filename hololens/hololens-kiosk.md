@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority:
-ms.date: 8/24/2021
+ms.date: 4/12/2022
 ms.custom: 
 - CI 115262
 - CI 111456
@@ -64,11 +64,11 @@ Kiosk mode should not be considered as a security method but as a means to contr
 
 - When you want to control access to certain hardware capabilities, for example, camera, Bluetooth, etc. for certain apps, etc. refer to [Policies in Policy CSP supported by HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2). You can review our [Common device restrictions](hololens-common-device-restrictions.md) for ideas.
 
-- Kiosk mode does not block an app (configured as part of kiosk experience) from launching other apps. When you want to completely block launching of certain apps / processes on HoloLens, refer to [Use Windows Defender Application Control on HoloLens 2 devices in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens).
+- Kiosk mode doesn't block an app (configured as part of kiosk experience) from launching other apps. When you want to completely block launching of certain apps / processes on HoloLens, refer to [Use Windows Defender Application Control on HoloLens 2 devices in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens).
 
 ## Key technical considerations for Kiosk mode for HoloLens
 
-Applies only if you are planning to use runtime provisioning packages or creating kiosk configurations manually yourself. Kiosk mode configuration uses a hierarchical structure based on XML:
+Applies only if you're planning to use runtime provisioning packages or creating kiosk configurations manually yourself. Kiosk mode configuration uses a hierarchical structure based on XML:
 
 - An assigned access profile defines which applications are displayed in start menu in kiosk mode. You can define multiple profiles in same XML structure, which can be referenced later.
 
@@ -110,7 +110,7 @@ Kiosk configurations can be created and applied in following ways:
 Here are the following ways to configure, select the tab matching the process you'd like to use.
 
 1. [Microsoft Intune single app kiosk template](hololens-kiosk.md?tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens)
-2. [Microsoft Intune multi app kiosk template](hololens-kiosk.md?tabs=uimak#steps-in-configuring-kiosk-mode-for-hololens)
+1. [Microsoft Intune multi app kiosk template](hololens-kiosk.md?tabs=uimak#steps-in-configuring-kiosk-mode-for-hololens)
 1. [Microsoft Intune custom template](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)
 1. [Runtime provisioning - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)
 1. [Runtime provisioning - Single app](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens)
@@ -121,9 +121,11 @@ Here are the following ways to configure, select the tab matching the process yo
 
 ### How can visitor accounts automatically logon to kiosk experience?
 
-On builds [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards:
+- Available on builds [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards, Azure AD and Non-Azure AD configurations both support visitor accounts being autologon enabled for Kiosk modes.
 
-- Azure AD and Non-Azure AD configurations both support visitor accounts being autologon enabled for Kiosk modes.
+By default devices configured for kiosk mode with visitor accounts will have a button on the sign-in screen that will logon a visitor with a single tap. Once logged on, the device will not show the sign-in screen again until the visitor is explicitly signed out from the start menu or the device is restarted. However sometimes you may want to set up the device such that the sign-in screen is never shown and for the device to automatically logon using a visitor account to the kiosk experience. To do this, configure the [MixedReality/VisitorAutoLogon](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-visitorautologon) policy.
+
+A device configured to automatically logon using a visitor account will not have on-device UI to exit this mode. To ensure that a device isn't accidentally locked out,  this policy requires that no other user accounts are present on the device. As a result, this policy must be applied during device setup either by using a provisioning package or by MDM using Autopilot.
 
 [!INCLUDE[](includes/kiosk-autologin.md)]
 
@@ -142,7 +144,25 @@ Set up the [HoloLens device to use the Windows Device Portal](/windows/mixed-rea
 
 Kiosk Mode can be set via Device Portal’s REST API by doing a POST to /api/holographic/kioskmode/settings with one required query string parameter (“kioskModeEnabled” with a value of “true” or “false”) and one optional parameter (“startupApp” with a value of a package name). Keep in mind that Device Portal is intended for developers only and should not be enabled on non-developer devices. The REST API is subject to change in future updates/releases.
 
-## Troubleshooting
+## Troubleshooting & Updates
+
+- [Update - Single app kiosk policy for launching other apps](#update---single-app-kiosk-policy-for-launching-other-apps)
+- [Issue - No apps are shown in start menu in kiosk mode](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)
+- [Issue - Building a package with kiosk mode failed](#issue---building-a-package-with-kiosk-mode-failed)
+- [Issue – Provisioning package built successfully but failed to apply](#issue--provisioning-package-built-successfully-but-failed-to-apply)
+- [Issue – Multiple app assigned access to Azure AD group does not work](#issue--multiple-app-assigned-access-to-azure-ad-group-does-not-work)
+
+### Update - Single app kiosk policy for launching other apps
+
+- Added in [Windows Holographic, version 22H1](hololens-release-notes.md#windows-holographic-version-22h1)
+
+Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example,  if you want to launch the Settings app to calibrate your device or change your Wi-fi.
+
+By default, launching applications via [Launcher API (Launcher Class (Windows.System) - Windows UWP applications)](/uwp/api/Windows.System.Launcher?view=winrt-22000&preserve-view=true) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowLaunchUriInSingleAppKiosk`
+
+- Bool value
 
 ### Issue - No apps are shown in start menu in kiosk mode
 

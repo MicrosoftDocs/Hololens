@@ -2,7 +2,7 @@
 title: Introducing the new Microsoft Edge
 description: Learn about the new Edge app
 author: joyjaz
-ms.author: v-jjaswinski
+ms.author: sekerawa
 keywords: HoloLens, edge, internet, browser
 ms.prod: hololens
 ms.sitesec: library
@@ -38,12 +38,12 @@ The new Microsoft Edge offers IT admins a much broader set of browser policies o
 Here are some helpful resources for learning more about managing policy settings for the new Microsoft Edge:
 
 - [Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune)
-- [Microsoft Edge Legacy to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Microsoft Edge Legacy to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policies)
 - [Google Chrome to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
 - Full [Microsoft Edge Enterprise documentation](/deployedge/)
 
 > [!IMPORTANT]
-> Because of the volume of browser policies supported by the new Microsoft Edge, our team is unable to guarantee that each new policy works on HoloLens 2. However, we've tested and confirmed than the new Microsoft Edge equivalent of each legacy Microsoft Edge policy previously supported on HoloLens 2 work as expected. See [Microsoft Edge Legacy to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policy-map-legacy-to-newedge) to find the new Microsoft Edge equivalent of each legacy Microsoft Edge browser policy you were using with HoloLens 2.
+> Because of the volume of browser policies supported by the new Microsoft Edge, our team is unable to guarantee that each new policy works on HoloLens 2. However, we've tested and confirmed than the new Microsoft Edge equivalent of each legacy Microsoft Edge policy previously supported on HoloLens 2 work as expected. See [Microsoft Edge Legacy to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policies) to find the new Microsoft Edge equivalent of each legacy Microsoft Edge browser policy you were using with HoloLens 2.
 >
 > There are at least two new Microsoft Edge policies that we know *will not* work with HoloLens 2:
 > - EnterpriseModeSiteList
