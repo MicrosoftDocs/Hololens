@@ -2,12 +2,12 @@
 title: HoloLens 2 release notes for Windows Holographic, version 2004
 description: Read about feature releases on an older servicing build.
 author: evmill
-ms.author: v-evmill
-manager: ranjibb
+ms.author: millerevan
+manager: lolab
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
-ms.date: 4/12/2022
+ms.date: 5/10/2022
 audience: ITPro
 appliesto:
 - HoloLens 2
@@ -30,11 +30,19 @@ These are the major feature releases from Windows Holographic, version 2004.
 
 ## Windows Holographic, version 20H2 - April 2022 Update
 
+- Build 19041.1185
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 22H1.
+
+## Windows Holographic, version 20H2 - April 2022 Update
+
 - Build 19041.1183
 
 Improvements and fixes in the update:
 
-- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H2.
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 22H1.
 
 ## Windows Holographic, version 20H2 - March 2022 Update
 
