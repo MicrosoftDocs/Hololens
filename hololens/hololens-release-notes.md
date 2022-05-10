@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 4/12/2022
+ms.date: 5/10/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -47,6 +47,17 @@ To help provide clarity this release notes page will only provide information fo
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+## Windows Holographic, version 22H1 - May 2022 Update
+
+- Build 20348.1503
+
+Improvements and fixes in the update:
+
+- Fixed a Known issue where [HoloLens user couldn't launch Microsoft Edge](hololens-troubleshooting.md#fixed---hololens-user-cant-launch-microsoft-edge) if ApplicationManagement/AllowAllTrustedApps GPO is disabled.
+- Improved reliability in remote diagnostic log collection via Microsoft Intune, especially for logs of larger sizes.
+- When initiating a Device Wipe of a HoloLens 2 from Intune, the device will now be deleted for Intune's console after the device is wiped.
+- Improved reliability when using the AutoRestartRequiredNotificationDismissal and ScheduleRestartWarning policies.
 
 ## Windows Holographic, version 22H1
 
