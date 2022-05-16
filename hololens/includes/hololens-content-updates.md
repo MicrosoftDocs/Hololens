@@ -2,6 +2,16 @@
 
 
 
+## Week of May 09, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/10/2022 | [HoloLens 2 release notes for Windows Holographic, version 2004](/hololens/hololens-release-notes-2004) | modified |
+| 5/10/2022 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 5/10/2022 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
+
+
 ## Week of May 02, 2022
 
 
