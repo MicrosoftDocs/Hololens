@@ -48,6 +48,16 @@ To help provide clarity this release notes page will only provide information fo
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Microsoft Store app update
+
+The Microsoft Store app has been updated on HoloLens 2. This is an app update and will be received interestingly enough by the Microsoft Store app updating itself. Once updated you'll see a storefront very similar to the store offered on desktop.
+
+![Start menu settings in the Settings app](images/store-app-hololens2-censored.jpg)
+
+With the new store you'll see apps that are available for HoloLens 2, and you'll be able to scroll through different various industries and solutions to view apps that may be useful to you. You be able to access any company apps by selecting the Work icon which looks like a brief case in the top left (the company name and user has been censored in this screenshot).
+
+Want to check your apps, or app versions? You can select the **Library** icon and Get updates. Want to know what version an app is on? From the **Library** screen select an app installed on your device to go to that apps page, and scroll to the bottom and look for **>_ Installed version**.
+
 ## Windows Holographic, version 22H1 - May 2022 Update
 
 - Build 20348.1503
