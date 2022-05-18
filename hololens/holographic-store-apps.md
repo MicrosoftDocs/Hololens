@@ -119,6 +119,20 @@ See also: [Enabling automatic uploads to OneDrive for business](hololens-release
 
 To update an app you installed from the Microsoft Store, you can update the app from the Microsoft Store app. For apps installed for the Microsoft Store for Business, you can also update those apps from the Microsoft Store for Business.
 
+#### Newer Microsoft Store app
+
+1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/hololens2-basic-usage#start-gesture).
+
+1. Select the Store app.
+
+1. Look at the bottom left of the store app.
+
+1. Select the **Library** icon and **Get updates**. 
+
+Want to know what version an app is on? From the **Library** screen select an app installed on your device to go to that apps page, and scroll to the bottom and look for **>_ Installed version**.
+
+#### Older Microsoft Store app
+
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
 
 1. Select the Store app.
