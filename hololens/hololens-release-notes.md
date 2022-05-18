@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 5/10/2022
+ms.date: 5/18/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -50,7 +50,7 @@ To help provide clarity this release notes page will only provide information fo
 
 ## Microsoft Store app update
 
-The Microsoft Store app has been updated on HoloLens 2. This is an app update and will be received interestingly enough by the Microsoft Store app updating itself. Once updated you'll see a storefront very similar to the store offered on desktop.
+There is a new version of the Microsoft Store app for the HoloLens 2. This app update will occur seamlessly when the Microsoft Store app itself is updated. When the update is complete, you'll see a storefront very similar to the store app that is available on desktop. Since this is an app update it will be distributed to all HoloLens 2 devices, regardless of OS version.
 
 ![Image of new store app that became availble in May 2022](images/store-app-hololens2-censored.jpg)
 
