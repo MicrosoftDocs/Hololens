@@ -54,7 +54,7 @@ There is a new version of the Microsoft Store app for the HoloLens 2. This app u
 
 ![Image of new store app that became availble in May 2022](images/store-app-hololens2-censored.jpg)
 
-With the new store you'll see apps that are available for HoloLens 2, and you'll be able to scroll through different various industries and solutions to view apps that may be useful to you. You be able to access any company apps by selecting the Work icon which looks like a brief case in the top left. (The company name and user has been censored in this screenshot).
+With the new store you'll see apps that are available for HoloLens 2, and you'll be able to scroll through different various industries and solutions to view apps that may be useful to you. You'll be able to access any company apps by selecting the Work icon which looks like a briefcase in the top left. (The company name and user has been censored in this screenshot).
 
 Want to check your apps, or app versions? You can select the **Library** icon and **Get updates**. Want to know what version an app is on? From the **Library** screen select an app installed on your device to go to that apps page, and scroll to the bottom and look for **>_ Installed version**.
 
@@ -466,7 +466,7 @@ This information can be found later in the [app deployment store for business pa
 #### Overview to try only private store apps
 
 1. Configure the new policy for your devices via [MDM](hololens-mdm-configure.md).
-1. Log into a device that has the policy.
+1. Log in to a device that has the policy.
 1. Open the Microsoft Store app and observe you can only see your organization's apps.
 
 ### Use WDAC and LOB apps
@@ -607,7 +607,7 @@ This update contains features for two target audiences; features that can be use
 [Install web apps](#install-web-apps) | Install web apps on HoloLens 2, like Microsoft Office, with the new Microsoft Edge browser. | End User |
 [Swipe to type](#swipe-to-type) | Use the tip of your finger to "swipe" words on the holographic keyboard. | End User |
 [Power menu from Start](#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device. | End User |
-[Multiple users listed on Sign in screen](#multiple-users-listed-on-sign-in-screen) | Display multiple user accounts on the Sign in screen. | End User |
+[Multiple users listed on Sign-in screen](#multiple-users-listed-on-sign---in-screen) | Display multiple user accounts on the Sign-in screen. | End User |
 [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist. | End User |
 [Visitor Auto-logon for Kiosks](#visitor-auto-logon-for-kiosks) | Enables the auto-logon on Visitor accounts to be used for Kiosk modes. | IT Admin |
 [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes)  | AUMIDs for new Settings and Edge apps. | IT Admin |
@@ -912,13 +912,13 @@ The menu options also change to reflect the presence of the update.<br/><br/>
 
 <img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
 
-### Multiple users listed on Sign in screen
+### Multiple users listed on Sign-in screen
 
-Previously the Sign In screen showed only the most recently signed in user, as well as an 'Other user' entry point. We have received customer feedback that this not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
+Previously the Signi-in screen showed only the most recently signed in user, as well as an 'Other user' entry point. We have received customer feedback that this not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
 
-Introduced in this Windows build, when selecting **Other user** which is located to the right of the PIN entry field, the Sign in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other users page via the **Add account** button.
+Introduced in this Windows build, when selecting **Other user** which is located to the right of the PIN entry field, the Sign-in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other users page via the **Add account** button.
 
-When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign in screen for this user.
+When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign-in screen for this user.
 
 ![Sign-in screen default.](./images/multiusers1.jpg)
 
@@ -974,7 +974,7 @@ For a non-AAD configuration, to configure a device for visitor auto-logon:
     1. Do not create a local account
 1. [Apply the provisioning package](hololens-provisioning.md).
 
-For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can Sign-in a Visitor account with a single button tap from the sign-in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
 
 Visitor Auto logon can be managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
 
