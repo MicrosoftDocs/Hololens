@@ -413,7 +413,7 @@ On a device where this policy is configured, the user specified in the policy wi
 
 #### Overview to try auto-logon CSP
 
-1. Configure the new CSP to a desired user [using a custom policy](/mem/intune/configuration/custom-settings-windows-10) : `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+1. Configure the new CSP to a desired user [using a custom policy](/mem/intune/configuration/custom-settings-windows-10): `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
 1. Apply the CSP to the device via [provisioning package](hololens-provisioning.md) or [MDM](hololens-mdm-configure.md).
 1. Sign into the specified account.
 1. Restart the device and observe the user is automatically logged in.
