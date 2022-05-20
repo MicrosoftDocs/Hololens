@@ -34,7 +34,7 @@ There is a new version of the Microsoft Store app for the HoloLens 2. This app u
 
 ![Image of new store app that became availble in May 2022](images/store-app-hololens2-censored.jpg)
 
-Much of the store's functionaility will be the same, however some placement of items or changes in icons has occurred. One such instance is the see more button "**...**" has been removed, and to find your apps and updates you can use the **Library** button.
+Much of the store's functionality will be the same, however some placement of items or changes in icons has occurred. One such instance is the see more button "**...**" has been removed, and to find your apps and updates you can use the **Library** button.
 
 ## Find apps
 
