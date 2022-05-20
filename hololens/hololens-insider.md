@@ -4,13 +4,13 @@ description: Learn how to get started with Insider builds and provide valuable f
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 4/21/2022
+ms.date: 5/10/2022
 ms.localizationpriority:
 ms.reviewer: bryanth
 manager: lolab
@@ -166,9 +166,6 @@ The OMA-URI of new policy:
 
 ### Upcoming Fixes and Improvements
 
-- Improved reliability in remote diagnostic log collection via Microsoft Intune, especially for logs of larger sizes.
-- When initiating a Device Wipe of a HoloLens 2 from Intune, the device will now be deleted for Intune's console after the device is wiped.
-- Improved reliability when using the AutoRestartRequiredNotificationDismissal and ScheduleRestartWarning policies.
 - In-box OpenXR code updated. This is to provide best out-of-box experience for customers without Microsoft store access.
 
 ## Start receiving Insider builds

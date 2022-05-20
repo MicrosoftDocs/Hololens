@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 4/12/2022
+ms.date: 5/10/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -47,6 +47,17 @@ To help provide clarity this release notes page will only provide information fo
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+## Windows Holographic, version 22H1 - May 2022 Update
+
+- Build 20348.1503
+
+Improvements and fixes in the update:
+
+- Fixed a Known issue where [HoloLens user couldn't launch Microsoft Edge](hololens-troubleshooting.md#fixed---hololens-user-cant-launch-microsoft-edge) if ApplicationManagement/AllowAllTrustedApps GPO is disabled.
+- Improved reliability in remote diagnostic log collection via Microsoft Intune, especially for logs of larger sizes.
+- When initiating a Device Wipe of a HoloLens 2 from Intune, the device will now be deleted for Intune's console after the device is wiped.
+- Improved reliability when using the AutoRestartRequiredNotificationDismissal and ScheduleRestartWarning policies.
 
 ## Windows Holographic, version 22H1
 
@@ -169,7 +180,7 @@ Supported values:
 
 ### Moving Platform Mode SDK
 
-Sometimes you may want the decision on if to use Moving Platform Mode to be dependant on your situation, you may only need it enabled when using your app, or only a specific app. In these cases you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
+Sometimes you may want the decision on if to use Moving Platform Mode to be dependent on your situation, you may only need it enabled when using your app, or only a specific app. In these cases you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
 
 #### Improvements and fixes in the February 2022 update
 
@@ -980,7 +991,7 @@ When modifying a Kiosk to include the new apps, we recommend adding in the new A
 
 In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)” menu.
 
-Starting in this Windows release, the kiosk experience will  to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
+Starting in this Windows release, the kiosk experience will go to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
 ### New Settings URIs for Page Settings Visibility
 
