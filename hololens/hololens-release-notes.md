@@ -914,7 +914,7 @@ The menu options also change to reflect the presence of the update.<br/><br/>
 
 ### Multiple users listed on Sign-in screen
 
-Previously the Signi-in screen showed only the most recently signed in user, as well as an 'Other user' entry point. We have received customer feedback that this not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
+Previously the Sign-in screen showed only the most recently signed in user, as well as an 'Other user' entry point. We have received customer feedback that this not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
 
 Introduced in this Windows build, when selecting **Other user** which is located to the right of the PIN entry field, the Sign-in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other users page via the **Add account** button.
 
