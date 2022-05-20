@@ -607,7 +607,7 @@ This update contains features for two target audiences; features that can be use
 [Install web apps](#install-web-apps) | Install web apps on HoloLens 2, like Microsoft Office, with the new Microsoft Edge browser. | End User |
 [Swipe to type](#swipe-to-type) | Use the tip of your finger to "swipe" words on the holographic keyboard. | End User |
 [Power menu from Start](#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device. | End User |
-[Multiple users listed on Sign-in screen](#multiple-users-listed-on-sign---in-screen) | Display multiple user accounts on the Sign-in screen. | End User |
+[Multiple users listed on Sign-in screen](#multiple-users-listed-on-sign-in-screen) | Display multiple user accounts on the Sign-in screen. | End User |
 [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist. | End User |
 [Visitor Auto-logon for Kiosks](#visitor-auto-logon-for-kiosks) | Enables the auto-logon on Visitor accounts to be used for Kiosk modes. | IT Admin |
 [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes)  | AUMIDs for new Settings and Edge apps. | IT Admin |
