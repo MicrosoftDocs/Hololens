@@ -31,7 +31,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | Feature                                                | Description                                                                                                                            | User or Scenario |
 |--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | [New policies to speed up adding users](#policies-to-speed-up-adding-users)                          | New   policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT   Admin       |
-| Autopilot improvements                                 | Enabled   the Troubleshooter for Autopilot to work with HoloLens, as well as an option   to retry if it failed                         | IT   Admin       |
+| [Autopilot restart](#autopilot-restart)                                 | Enabled   the Troubleshooter for Autopilot to work with HoloLens, as well as an option   to retry if it failed                         | IT   Admin       |
 | [Manage users on device](#manage-users-on-device)                                 | New   policies to manage when to clear out users on the device                                                                         | IT   Admin       |
 | [Intune improvement - Mixed Reality policies](#intune-improvement---mixed-reality-policies)            | MR   policies are now shown in Settings picker                                                                                         | IT   Admin       |
 | [Intune improvement - Settings picker policies](#intune-improvement---settings-picker-policies)          | The   Settings picker now allows for selecting HoloLens 2 and filtering policies   applicable to the device                            | IT   Admin       |
@@ -76,11 +76,12 @@ The OMA-URI of new policies:
 
 For more info on how to increase your set up speed for new users, check out our [guide on how to quickly set up new users.](hololens2-new-user-optimize.md)
 
-### Autopilot improvements
+### Autopilot restart
 
-We've enabled some new improvements for folks using Autopilot.
+In some cases a user might experience an issue during Autopilot where it cannot complete. For situations like this we've enabled the restart button to allow the user to restart the autopilot flow. This new button will be available on the Enrollment Status Page that is shown during the Autopilot process. 
 
-
+// NEEDS SCREENSHOT
+![screenshotofthing](aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
 
 
 ### Manage users on device
@@ -98,7 +99,7 @@ The OMA-URI of new policies:
 
 ### Intune improvement - Mixed Reality policies
 
-In Microsoft Intune's UI, when adding new device configuration policies for mixed reality policies, users typically had to first know about the new polices by reading release notes like these, and then add them as custom OMA-URI policies. We're happy to announce we've improved the discoverability and usability of our Mixed Reality policies.
+In Microsoft Intune's UI, when adding new device configuration policies for mixed reality policies, users typically had to first know about the new polices by reading release notes like these, and then add them as custom OMA-URI policies. We're happy to announce we've improved the discoverability and usability of our Mixed Reality policies. You'll be able to view our all previous Mixed Reality policies and new ones released.
 
 // NEEDS STEPS
 
