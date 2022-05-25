@@ -5,15 +5,15 @@ ms.prod: hololens
 ms.sitesec: library
 author: evmill
 ms.author: millerevan
+manager: lolab
+ms.reviewer: bryanth
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 5/10/2022
+ms.date: 5/25/2022
 ms.localizationpriority:
-ms.reviewer: bryanth
-manager: lolab
 appliesto:
 - HoloLens 2
 ---
@@ -33,26 +33,18 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | [New policies to speed up adding users](#policies-to-speed-up-adding-users)                          | New   policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT   Admin       |
 | [Autopilot restart](#autopilot-restart)                                 | Enabled   the Troubleshooter for Autopilot to work with HoloLens, as well as an option   to retry if it failed                         | IT   Admin       |
 | [Manage users on device](#manage-users-on-device)                                 | New   policies to manage when to clear out users on the device                                                                         | IT   Admin       |
-| [Intune improvement - Mixed Reality policies](#intune-improvement---mixed-reality-policies)            | MR   policies are now shown in Settings picker                                                                                         | IT   Admin       |
-| [Intune improvement - Settings picker policies](#intune-improvement---settings-picker-policies)          | The   Settings picker now allows for selecting HoloLens 2 and filtering policies   applicable to the device                            | IT   Admin       |
-| [Intune improvement - Update Connectivity](#intune-improvement---update-connectivity)               | Added   functionality to use the Update Connectivity page with HoloLens, to   troubleshoot non-updating devices                        | IT   Admin       |
-| [Intune improvement - New columns for device properties](#intune-improvement---new-columns-for-device-properties) | Added   new columns in Intune's device page to let you track groups, app versions,   and custom fields                                 | IT   Admin       |
-| New policy disable Wi-Fi auto recovery                 | ??????????????                                                                                                                         | IT   Admin       |
+| [New policy disable Wi-Fi auto recovery](#new-policy-disable-wi-fi-auto-recovery)                 | Turn off auto-reconnect to Wi-fi access points                                                                                                                         | IT   Admin       |
 | [Captive portal on sign-in screen](#captive-portal-on-sign-in-screen)                       | New   policy that IT Admins can enable that allows the use of captive portals on   the sign in screen to assist in connecting to Wi-Fi | IT   Admin       |
-| Clean up storage via MDM                               | Clean   up files via MDM                                                                                                               | IT   Admin       |
-| Improvements for Camera in severe expose environments  | Improvement   to recording and streaming in areas with intense lighting                                                                | End   Users      |
+| [Clean up storage via MDM](#clean-up-storage-via-mdm)                               | Clean   up files via MDM                                                                                                               | IT   Admin       |
 | [Fixes improvements](#fixes-improvements)                                    | Fixes and improvements for   HoloLens.                                                                                                 | All              |
 
 
 ### IT Admin Checklist
 
-PUT STUFF HERE FOR EACH NEW POLICY
-
-AND EACH NEW INTUNE THING
-
-
-
-
+✔️ If you'd like to speed up new user sign ons check out the new [new policies to speed up adding users](#policies-to-speed-up-adding-users). <br>
+✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#manage-users-on-device). <br>
+✔️ If you need to keep your devices from auto connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-disable-wi-fi-auto-recovery). <br>
+✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm).
 
 ### Policies to speed up adding users
 
@@ -86,60 +78,36 @@ In some cases a user might experience an issue during Autopilot where it cannot 
 
 ### Manage users on device
 
-For some organization, they are fully at scale and have tons of different users on their HoloLens 2 devices. Some of these devices can be used by so many people they even hit the 64 user limit on the device. For those who have reached that limit, we've added in controls over how to delete old users off the device at controlled intervals. This can also be useful for other reasons, which include increased security be removing old accounts, or speeding up the Iris scanning processes on the sign-in screen (less users to match means a faster comparison.) We've enabled two methods to control when to clean up old users.
+For some organization, they are fully at scale and have tons of different users on their HoloLens 2 devices. Some of these devices can be used by so many people they even hit the 64 user limit on the device. For those who have reached that limit, we've added in controls over how to delete old users off the device at controlled intervals (something you have may used on Desktop). This can also be useful for other reasons, which include increased security be removing old accounts, or speeding up the Iris scanning processes on the sign-in screen (less users to match means a faster comparison.) We've enabled two methods to control when to clean up old users.
+
+There are two triggers that can delete users:
 
 - On a regular schedule determined by you.
 - Delete the oldest user when you add more than your custom maximum number of users.
 
-The OMA-URI of new policies:
-`./Device/Vendor/MSFT/Policy/Config/MixedReality/NEWPOLICYOMAURI`
-`./Device/Vendor/MSFT/Policy/Config/MixedReality/NEWPOLICYOMAURI`
+Here's how to get started:
 
-- Int value   // DOUBLE CHECK THIS LATER
+1. Enable the process: **UserProfileManagement/EnableProfileManager**
+    1. Bool value, set to **True**
+1. Set the inactivity threshold: **UserProfileManagement/ProfileInactivityThreshold**
+    1. This is the number of days until a user is deleted. 
+        - Default value is 30.
+1. Set the maximum users on device **UserProfileManagement/StorageCapacityStartDeletion**
+    1. This determines how many users can be on the device. 
+        - Default value is 25.
+        - Maximum for HoloLens is 64.
+1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes for both threshold and inactive users.
 
-### Intune improvement - Mixed Reality policies
-
-In Microsoft Intune's UI, when adding new device configuration policies for mixed reality policies, users typically had to first know about the new polices by reading release notes like these, and then add them as custom OMA-URI policies. We're happy to announce we've improved the discoverability and usability of our Mixed Reality policies. You'll be able to view our all previous Mixed Reality policies and new ones released.
-
-// NEEDS STEPS
-
-// NEEDS SCREENSHOT
-
-### Intune improvement - Settings picker policies
-
-In addition to making our Mixed Reality policies more usable with the Settings picker, there's more. Now when using the settings picker you can filter by device. We've updating the naming convention and refreshed the list of policies offered when selecting the HoloLens 2 filter. This should allow you to create new configurations for HoloLens 2 devices in a faster and more efficient manner without needing to reference documentation on what's supported.
-
-// NEEDS STEPS
-
-// NEEDS SCREENSHOT
-
-### Intune improvement - Update Connectivity
-
-We are making it easier for organizations to ensure that devices are on the right operating system, ensuring that devices are running the latest updates. As the number of devices you have grows, you'll need to know not just what OS version your HoloLens devices are on, but also why they aren't updating. We're adapting a new tool within Intune's UI that you can now use for HoloLens to help understand what may be blocking those devices from updating.
-
-You can read the original blog post on [the Update Connectivity page](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/achieve-better-patch-compliance-with-update-connectivity-data/ba-p/3073356) and if you are ready, try it out yourself!
-
-// NEEDS STEPS
-
-// NEEDS SCREENSHOT
-
-### Intune improvement - New columns for device properties
-
-When using Intune, the best way to get a view of your devices at a glance is to use the "All devices" page. This page is customizable and allows you to pick which, which items you want to see for your devices. Including from OS version, last check-in, primary user, and plenty more to pick from. We are now adding a three new columns by popular demand.
-
-| New field | Value | What it does |
-|---|---|---|
-| Included in Group X | Yes or No | Lets you select a group, and tells you if that device is included in that group |
-| App version for app X | Returns app version of selected app | Let's you confirm that your devices are all updated across your primary apps. |
-| Custom Fields | A string value you set manually per device | Let's you self tag devices however you like. |
-
-// NEEDS STEPS
-
-// NEEDS SCREENSHOT
+To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
 
 ### New policy disable Wi-Fi auto recovery
 
+Wi-Fi auto recovery feature is enabled on HoloLens 2 by default. In some cases you made want your devices to not automatically reconnect. This may be because you have a preferred network you want to keep your devices on, you find yourself reconnecting to an access point that doesn't have internet, or you want to keep those devices offline in specific areas. For those cases we've enabled a new policy that you can opt to use to keep your devices from automatically reconnecting back to your access points.
 
+The OMA-URI of new policies:
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/NEWPOLICYOMAURI`
+
+- Bool value // DOUBLE CHECK THIS LATER
 
 ### Captive portal on sign-in screen
 
@@ -154,11 +122,23 @@ The OMA-URI of new policy:
 
 ### Clean up storage via MDM
 
+Sometimes a device needs more space, we've enabled a new way to clean up your temporary files / data on a device. Some of these files can be logs, crash dumps, downloads, or other files no longer needed on the device. We've created a way for both users and IT admins to delete these files. Here's how:
 
+#### End user clean up
 
-### Improvements for Camera in severe expose environments
+End users can find this button on their device in the Settings app.
 
+1. Open the Settings app
+1.  // ......................... select the buttons and do the things
 
+// NEEDS SCREENSHOT
+![screenshotofthing](aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+
+#### IT Admin clean up
+
+It admins can start the same process as end users. They can do it by:
+
+1. // STEPS AND THINGS DEPENDING ON WHAT CSP WE END UP USING
 
 ### Fixes improvements
 
