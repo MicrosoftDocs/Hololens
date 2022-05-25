@@ -5,12 +5,12 @@ ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.topic: article
 ms.localizationpriority:
-ms.date: 9/15/2021
+ms.date: 5/25/2021
 ms.reviewer: 
-manager: ranjibb
+manager: lolab
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -38,6 +38,9 @@ Depending on what stage you are in your deployment we have the following recomme
 ## Different ways to enroll
 
 Depending on the type of [identity](hololens-identity.md) chosen either during OOBE or post sign-in, there are different methods of enrollment.
+
+> [!NOTE]
+> If your tenant is in a GCC High enviorment you will be unable to select "sign in from another device". You'll need to manually enter your user credentials.
 
 ### For Multi-User Shared Devices
 
