@@ -4,12 +4,12 @@ description: Learn how to use MDM to configure CSP, policy, and manage HoloLens 
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
+manager: lolab
+ms.reviewer: lavinds
 ms.topic: article
 ms.localizationpriority:
-ms.date: 9/9/2020
-ms.reviewer: 
-manager: yannisle
+ms.date: 5/25/2022
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -69,3 +69,32 @@ Read more about how to [Manage HoloLens updates](hololens-updates.md) and [Manag
 Using the shared or guest PC features available in Intune, you can configure Windows Holographic for Business devices to run as a kiosk. These devices can run one app (single-app kiosk mode), or run multiple apps (multi-app kiosk mode). Kiosk mode is a UI to control which identities have access to which apps by default.
 Learn how to [set up HoloLens as a kiosk]( hololens-kiosk.md)
 
+## How MDM syncs work
+
+When a device syncs to MDM it communicates to see what it needs to be applied to the device. This is when policies are applied to the device. 
+
+### What happens during a MDM sync
+
+- Policies are applied to the device
+- The device is checked to be complaint
+- Access tokens are refreshed
+
+### What doesn't happen during sync
+
+LOB App installation
+- Required LOB Apps are installed when setting up a device, after that LOB app updates are offered on a 24 hour check-in. 
+
+### When does a MDM sync occur
+
+An sync with MDM occurs under the following conditions
+
+- When the device is first enrolled with MDM
+    - This includes [Autopilot](hololens2-autopilot.md) or adding the [first user to the device during OOBE](hololens-enroll-mdm.md#auto-enrollment-in-mdm), as well as [enrolling a local or MSA user](hololens-enroll-mdm.md#for-single-user-devices)
+- When the user manually presses the sync button in the Settings app
+- Regular check in intervals
+    - On a regular 8 hour interval on established devices
+    - On a more frequent interval during the first 24 hours
+    - For specifics read [How long does it take for devices to get a policy, profile, or app after they are assigned?](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
+- When a policy or profile is assigned
+
+Read more at [What actions cause Intune to immediately send a notification to a device?](/mem/intune/configuration/device-profile-troubleshoot#what-actions-cause-intune-to-immediately-send-a-notification-to-a-device)
