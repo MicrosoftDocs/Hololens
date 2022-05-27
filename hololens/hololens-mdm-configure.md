@@ -83,7 +83,7 @@ When a device syncs to MDM it communicates to see what it needs to be applied to
 
 LOB App installation
 - Required LOB Apps are installed when setting up a device, after that LOB app updates are offered on a 24 hour check-in. 
-- See [more about MDM app installs](app-deploy-intune.md#about-lob-app-updates).
+    - See [more about MDM app installs](app-deploy-intune.md#about-lob-app-updates).
 
 ### When does a MDM sync occur
 
