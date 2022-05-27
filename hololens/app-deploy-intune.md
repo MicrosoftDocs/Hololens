@@ -3,8 +3,9 @@ title: Intune and Company Portal
 description: Learn how to setup, assign, and create a comfortable user experience with Intune, mobile device management, and the company portal.
 keywords: intune, app management, app, company portal, portal, hololens
 author: evmill
-ms.author: v-evmill
-ms.date: 6/22/2020
+ms.author: millerevan
+manager: lolab
+ms.date: 5/27/2022
 ms.prod: hololens
 ms.custom: 
 - CI 111456
@@ -13,7 +14,6 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority:
 audience: HoloLens
-manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -56,3 +56,7 @@ How to get to apps through the Company Portal:
 
 > [!Tip]
 > Learn more about [auto-installing the Company Portal](/mem/intune/apps/company-portal-app) and [deploying and managing apps in Intune](/mem/intune/fundamentals/windows-holographic-for-business#deploy-and-manage-apps).
+
+## About LOB app updates
+
+LOB apps check for updates and status changes independently of syncs with Intune. This is due to the larger size of app than policies. In general Intune will automatically reinstall, update, or remove a required app within 24 hours, rather than waiting for the 7 day re-evaluation cycle. There are certain conditions that will cause Intune to update, reinstall, or remove an app in the 24 hour windows. To read the up-to-date list of triggers, please read more about [installing, updating, or removing required apps](https://docs.microsoft.com/en-us/mem/intune/apps/apps-add#installing-updating-or-removing-required-apps).
