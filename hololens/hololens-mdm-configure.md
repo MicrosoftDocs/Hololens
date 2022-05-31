@@ -73,7 +73,7 @@ Learn how to [set up HoloLens as a kiosk]( hololens-kiosk.md)
 
 When a device syncs to MDM it communicates to see what it needs to be applied to the device. This is when policies are applied to the device. 
 
-### What happens during a MDM sync
+### What happens during an MDM sync
 
 - Policies are applied to the device
 - The device is checked to be complaint
