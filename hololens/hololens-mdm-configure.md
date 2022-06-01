@@ -23,7 +23,7 @@ There are numerous different settings you can manage via Mobile Device Managemen
 
 ### Device categories and groups
 
-Using Microsoft Intune, you can create device categories to automatically add devices to groups based on categories that you create, such as Engineering, Medical, based on location of your devices, development specific devices, and so on. Groups can be dynamic or manually managed, allowing for the level of control you need. Once a group is created it can have policies, apps, and compliance profiles assigned to that group. A group can be used again and again to receive different configurations.
+Using Microsoft Intune, you can create device categories to automatically add devices to groups based on categories that you create, such as Engineering, Medical, based on location of your devices, development specific devices, and so on. Groups can be dynamic or manually managed, allowing for the level of control you need. Once a group is created, it can have policies, apps, and compliance profiles assigned to that group. A group can be used again and again to receive different configurations.
 
 The idea is to make it easier to manage your devices running Windows Holographic for Business. By default all HoloLens 2 devices are running Windows Holographic for Business, but HoloLens (1st gen) devices can be upgraded with a license to be managed as well.  
 
@@ -38,7 +38,7 @@ You can also create custom profiles. You can [use OMA-URI](/troubleshoot/mem/int
 
 ## Examples of what can be managed and configured
 
-Using MDM to manage devices gives a wide array of items that can be selected. Most of the these items are configured via a CSP ([Configuration Service Providers](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers)). These help get the proper polices, configurations, and files to your devices. Here is the [full list of policies supported on HoloLens 2](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2).
+Using MDM to manage devices gives a wide array of items that can be selected. Most of these items are configured via a CSP ([Configuration Service Providers](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers)). These help get the proper policies, configurations, and files to your devices. Here's the [full list of policies supported on HoloLens 2](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2).
 
 ### Wi-Fi
 
@@ -52,7 +52,7 @@ Certificates help improve security by providing account authentication, Wi-Fi au
 
 ### Proxy
 
-Most corporate intranet networks leverage a proxy to manage internal traffic. With HoloLens 2 you can configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections. 
+Most corporate intranet networks leverage a proxy to manage internal traffic. With HoloLens 2 you can configure a proxy server for ethernet and Wi-Fi connections. These settings don't apply to VPN connections. 
 For more details on proxy settings for Windows 10, see [NetworkProxy CSP](/windows/client-management/mdm/networkproxy-csp).
 
 ### VPN
@@ -60,7 +60,7 @@ For more details on proxy settings for Windows 10, see [NetworkProxy CSP](/windo
 Organizations often use a VPN to control access to apps and resources on their company’s intranet. HoloLens 2 supports SSL VPN connections, which require a downloadable plugin from the Microsoft Store and are specific to the VPN vendor of your choice.
 
 - Read more about [VPN on HoloLens](hololens-network.md#vpn).
-- For more details about VPN profiles, see the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp).
+- For more information about VPN profiles, see the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp).
 
 ### Deploy and manage apps
 
@@ -88,23 +88,23 @@ Learn how to [set up HoloLens as a kiosk]( hololens-kiosk.md)
 
 ## How MDM syncs work
 
-When a device syncs to MDM it communicates to see what it needs to be applied to the device. This is when policies are applied to the device. 
+When a device syncs to MDM, it communicates to see what it needs to be applied to the device; this is when policies are applied to the device. 
 
 ### What happens during an MDM sync
 
 - Policies are applied to the device
-- The device is checked to be complaint
+- The device is checked to be compliant with any [compliance profiles](/mem/intune/protect/device-compliance-get-started) you've created
 - Access tokens are refreshed
 
 ### What doesn't happen during sync
 
-LOB App installation
+Line of Business (LOB) App installation
 - Required LOB Apps are installed when setting up a device, after that LOB app updates are offered on a 24 hour check-in. 
     - See [more about MDM app installs](app-deploy-intune.md#about-lob-app-updates).
 
 ### When does an MDM sync occur
 
-An sync with MDM occurs under the following conditions
+Syncing with MDM occurs under the following conditions
 
 - When the device is first enrolled with MDM
     - This includes [Autopilot](hololens2-autopilot.md) or adding the [first user to the device during OOBE](hololens-enroll-mdm.md#auto-enrollment-in-mdm), as well as [enrolling a local or MSA user](hololens-enroll-mdm.md#for-single-user-devices)
@@ -112,7 +112,7 @@ An sync with MDM occurs under the following conditions
 - Regular check in intervals
     - On a regular 8 hour interval on established devices
     - On a more frequent interval during the first 24 hours
-    - For specifics read [How long does it take for devices to get a policy, profile, or app after they are assigned?](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
+    - For specifics read [How long does it take for devices to get a policy, profile, or app after they're assigned?](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
 - When a policy or profile is assigned
 
 Read more at [What actions cause Intune to immediately send a notification to a device?](/mem/intune/configuration/device-profile-troubleshoot#what-actions-cause-intune-to-immediately-send-a-notification-to-a-device)
