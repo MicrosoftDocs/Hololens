@@ -9,7 +9,7 @@ manager: lolab
 ms.reviewer: lavinds
 ms.topic: article
 ms.localizationpriority:
-ms.date: 6/1/2022
+ms.date: 6/2/2022
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -30,9 +30,9 @@ The idea is to make it easier to manage your devices running Windows Holographic
 Read more: [Categorize devices into groups](/mem/intune/enrollment/device-group-mapping)
 
 ### Device configuration profiles
-Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are managed using profiles. For example, you can create a profile that enables Kiosk, or uses Microsoft Defender Smart Screen on your devices running Windows Holographic for Business. You can also choose to enable sets of policies that as part of our [common device restrictions](hololens-common-device-restrictions.md).
+Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are managed using profiles. For example, you can create a profile that enables Kiosk, or uses Microsoft Defender Smart Screen on your devices running Windows Holographic for Business. Most of these can be modified via [CSPs](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (Configuration service providers). You can also choose to enable sets of policies that as part of our [common device restrictions](hololens-common-device-restrictions.md).
 
-You can also create custom profiles. You can [use OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) to customize some settings, create device restrictions, and configure a virtual private network (VPN) and Wi-Fi.
+You can also create custom profiles. You can [use OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance - Uniform Resource Identifier) to customize some settings, create device restrictions, and configure a virtual private network (VPN) and Wi-Fi.
 
 [Get started with configuration profiles](/mem/intune/configuration/device-profiles), and [profile overview](/mem/intune/configuration/device-profile-create).
 
