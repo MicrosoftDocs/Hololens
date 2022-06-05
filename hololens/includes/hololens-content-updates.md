@@ -2,6 +2,16 @@
 
 
 
+## Week of May 30, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/31/2022 | [Intune and Company Portal](/hololens/app-deploy-intune) | modified |
+| 5/31/2022 | [Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices](/hololens/hololens-mdm-configure) | modified |
+| 6/3/2022 | [Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices](/hololens/hololens-mdm-configure) | modified |
+
+
 ## Week of May 16, 2022
 
 
@@ -28,12 +38,3 @@
 |------|------------|--------|
 | 5/2/2022 | [Common Scenarios – Near Offline or Restricted for HoloLens 2](/hololens/hololens-common-scenarios-near-offline-restricted) | added |
 | 5/2/2022 | [Common Deployment Scenarios](/hololens/hololens-requirements) | modified |
-
-
-## Week of April 25, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/28/2022 | [Manage connection endpoints for HoloLens](/hololens/hololens-offline) | modified |
-| 4/28/2022 | [Manage connection endpoints for HoloLens](/hololens/hololens-offline) | modified |
