@@ -113,7 +113,7 @@ The second option is to create a separate tenant that hosts clients (see Image 1
 
 ### Hidden or restricted apps
 
-[Kiosk mode](/hololens/hololens-kiosk) and/or [Windows Defender Application Control (WDAC)](/hololens/windows-efender-application-control-wdac) are options for hiding and/or restricting applications.
+[Kiosk mode](/hololens/hololens-kiosk) and/or [Windows Defender Application Control (WDAC)](/hololens/windows-defender-application-control-wdac) are options for hiding and/or restricting applications.
 
 ### Password management for your clients
 

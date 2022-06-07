@@ -33,7 +33,7 @@ HoloLens 2 is a self-contained Windows computer, running Windows Holographic, th
 4. [Privacy and personal data in Intune](/mem/intune/protect/privacy-personal-data)
 
 ## Network Security
-Following the HoloLens 2 [Common Deployment Scenarios](/hololens/common-scenarios), your data will be protected by [Azure’s world-class compliance](/azure/compliance/) along with legal/regulatory standards integration. If you are new to Azure AD and Dynamics 365 Remote Assist, reference the [Azure and Dynamics 365 accountability readiness checklist for the GDPR](/compliance/regulatory/gdpr-arc-azure-dynamics).
+Following the HoloLens 2 [Common Deployment Scenarios](/hololens/common-scenarios), your data will be protected by [Azure’s world-class compliance](/azure/compliance/) along with legal/regulatory standards integration. If you are new to Azure AD and Dynamics 365 Remote Assist, reference the [Azure and Dynamics 365 accountability readiness checklist for the GDPR](/compliance/regulatory/gdpr-arc-azure-dynamics-windows).
 
 Furthermore, Windows Defender Firewall delivers critical functionality to secure device connectivity. With HoloLens 2, the firewall is always enabled and there are no ways to disable it programmatically or through the UI. When the HoloLens 2 is deployed as a managed device using [Intune](/mem/intune/protect/device-compliance-get-started), more compliance functionality is available with integration for [Endpoint with Microsoft Intune](/mem/intune/protect/advanced-threat-protection) as a Mobile Threat Defense solution.
 
