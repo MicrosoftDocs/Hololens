@@ -72,12 +72,12 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 | Certificates                                        | activation-v2.sls.microsoft.com/*                                   |
 |                                                     | crl.microsoft.com/pki/crl/*                                         |
 |                                                     | ocsp.digicert.com/*                                                 |
-|                                                     | https://www.microsoft.com/pkiops/*                                          |
+|                                                     | `https://www.microsoft.com/pkiops/`*                                          |
 | Cortana and Search                                  | store-images.*microsoft.com                                         |
-|                                                     | www.bing.com/client                                                 |
+|                                                     | `www.bing.com/client`                                                 |
 |                                                     | www.bing.com                                                        |
-|                                                     | www.bing.com/proactive                                              |
-|                                                     | www.bing.com/threshold/xls.aspx                                     |
+|                                                     | `www.bing.com/proactive`                                              |
+|                                                     | `www.bing.com/threshold/xls.aspx `                                    |
 |                                                     | exo-ring.msedge.net                                                 |
 |                                                     | fp.msedge.net                                                       |
 |                                                     | fp-vp.azureedge.net                                                 |

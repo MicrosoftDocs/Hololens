@@ -33,7 +33,7 @@ HoloLens 2 is a self-contained Windows computer, running Windows Holographic, th
 4. [Privacy and personal data in Intune](/mem/intune/protect/privacy-personal-data)
 
 ## Network Security
-Following the HoloLens 2 [Common Deployment Scenarios](/hololens/common-scenarios), your data will be protected by [Azure’s world-class compliance](/azure/compliance/) along with legal/regulatory standards integration. If you are new to Azure AD and Dynamics 365 Remote Assist, reference the [Azure and Dynamics 365 accountability readiness checklist for the GDPR](/compliance/regulatory/gdpr-arc-azure-dynamics).
+Following the HoloLens 2 [Common Deployment Scenarios](/hololens/common-scenarios), your data will be protected by [Azure’s world-class compliance](/azure/compliance/) along with legal/regulatory standards integration. If you are new to Azure AD and Dynamics 365 Remote Assist, reference the [Azure and Dynamics 365 accountability readiness checklist for the GDPR](/compliance/regulatory/gdpr-arc-azure-dynamics-windows).
 
 Furthermore, Windows Defender Firewall delivers critical functionality to secure device connectivity. With HoloLens 2, the firewall is always enabled and there are no ways to disable it programmatically or through the UI. When the HoloLens 2 is deployed as a managed device using [Intune](/mem/intune/protect/device-compliance-get-started), more compliance functionality is available with integration for [Endpoint with Microsoft Intune](/mem/intune/protect/advanced-threat-protection) as a Mobile Threat Defense solution.
 
@@ -54,7 +54,7 @@ Windows updates are run automatically (by default) and [Azure integration](/holo
 
 When deploying HoloLens 2 to external clients, [Dynamics 365 Remote Assist](/hololens/hololens2-deployment-guide) ensures your sensitive company data and resources are both separate and safe.
 
-The sharing of diagnostic data with Microsoft can be manually configured by MDM or by the user during OOBE. There are two choices: Optional diagnostic data and Required diagnostic data. If your original diagnostic setting needs to be changed at a later time for troubleshooting purposes, it can be changed by the user in **Settings -> Privacy -> Diagnostics & Feedback** or the IT Admin (MDM) if is a managed device. See more about [Diagnostics, feedback, and privacy in Windows 10](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-10-28808a2b-a31b-dd73-dcd3-4559a5199319).
+The sharing of diagnostic data with Microsoft can be manually configured by MDM or by the user during OOBE. There are two choices: Optional diagnostic data and Required diagnostic data. If your original diagnostic setting needs to be changed at a later time for troubleshooting purposes, it can be changed by the user in **Settings -> Privacy -> Diagnostics & Feedback** or the IT Admin (MDM) if it is a managed device. See more about [Diagnostics, feedback, and privacy in Windows 10](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-10-28808a2b-a31b-dd73-dcd3-4559a5199319).
 
 > [!Important]
 > Device diagnostic logs contain personally identifiable information (PII), such as about what processes or applications the user starts during typical operations. When multiple users share a HoloLens device (for example, users sign in to the same device by using different Microsoft Azure Active Directory (Azure AD) accounts) the diagnostic logs may contain PII information that applies to multiple users.

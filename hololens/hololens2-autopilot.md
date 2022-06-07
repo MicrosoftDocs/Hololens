@@ -200,7 +200,7 @@ You can retrieve the hardware hash from the device. The device records its hardw
    > ![Configure OOBE settings.](./images/hololens-ap-profile-oobe.png)
 
 1. After you configure the settings, select **Next**.
-1. On the **Scope tags** page, optionally add the scope tags that you want to apply to this profile. For more information about scope tags, see [Use role-based access control and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags.md). When finished, select **Next**.
+1. On the **Scope tags** page, optionally add the scope tags that you want to apply to this profile. For more information about scope tags, see [Use role-based access control and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags). When finished, select **Next**.
 1. On the **Assignments** page, select **Selected groups** for **Assign to**.
 1. Under **SELECTED GROUPS**, select **+ Select groups to include**.
 1. In the **Select groups to include** list, select the device group that you created for the Autopilot HoloLens devices, and then select **Next**.  

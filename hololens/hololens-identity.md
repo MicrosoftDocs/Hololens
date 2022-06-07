@@ -75,7 +75,7 @@ All users can use the apps installed on the device. However, each user has their
 Devices set up with Azure AD accounts will not allow signing in to the device with a Microsoft Account. All subsequent accounts used must be Azure AD accounts from the same tenant as the device. You may still [sign in using a Microsoft Account to apps](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) that support it (such as the Microsoft Store). To change from using Azure AD accounts to Microsoft Accounts for signing in to the device, you must [reflash the device](hololens-recovery.md#clean-reflash-the-device).
 
 > [!NOTE]
-> **HoloLens (1st gen)** began supporting multiple Azure AD users in the [Windows 10 April 2018 Update](/windows/mixed-reality/release-notes-april-2018) as part of [Windows Holographic for Business](hololens-upgrade-enterprise.md).
+> **HoloLens (1st gen)** began supporting multiple Azure AD users in the [Windows 10 April 2018 Update](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) as part of [Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
 ### Multiple users are listed on Sign-in screen
 
