@@ -3,14 +3,14 @@ title: Using 3D Viewer Beta on HoloLens (1st gen)
 description: Describes the types of files and features that 3D Viewer Beta on HoloLens (1st gen) supports, and how to use and troubleshoot the app.
 ms.prod: hololens
 ms.sitesec: library
-author: Teresa-Motiv
-ms.author: v-tea
+author: evmill
+ms.author: millerevan
+manager: lolab
 ms.topic: article
 ms.localizationpriority: high
 ms.date: 10/30/2019
 ms.reviewer: scooley
 audience: ITPro
-manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ---
