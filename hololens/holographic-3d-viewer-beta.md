@@ -203,4 +203,4 @@ If the **Open File** button is not active, it's possible that you have reached t
 ## Additional resources
 
 - [Support forums](http://forums.hololens.com/categories/3d-viewer-beta) - For archival purposes only. This forum is no longer active.
-- [Third-party notices](https://www.microsoft.com/{lang-locale}/legal/products)
+- [Third-party notices](https://www.microsoft.com/en-us/legal/third-party-notices)

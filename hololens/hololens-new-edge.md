@@ -39,7 +39,7 @@ Here are some helpful resources for learning more about managing policy settings
 
 - [Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune)
 - [Microsoft Edge Legacy to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policies)
-- [Google Chrome to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- [Google Chrome to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policies)
 - Full [Microsoft Edge Enterprise documentation](/deployedge/)
 
 > [!IMPORTANT]

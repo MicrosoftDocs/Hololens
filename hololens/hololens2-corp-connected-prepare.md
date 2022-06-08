@@ -66,7 +66,7 @@ The following services are required for SCEP deployment, with the exception of t
 - [NDES Server role](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11))
 - [Microsoft Intune Connector](/mem/intune/protect/certificates-scep-configure#install-the-microsoft-intune-connector)
 
-You must also publish your NDES URL external to your corporate network using [Azure AD application proxy or Web Access Proxy](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application). You can also use another reverse proxy of your choice.
+You must also publish your NDES URL external to your corporate network using [Azure AD application proxy or Web Access Proxy](/azure/active-directory/app-proxy/what-is-application-proxy). You can also use another reverse proxy of your choice.
 
 ![SCEP data flow.](./images/hololens2-scep-info-flow.png)
 
