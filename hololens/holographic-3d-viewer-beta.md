@@ -20,7 +20,7 @@ appliesto:
 3D Viewer Beta lets you view 3D models on HoloLens (1st gen). You can open and view *supported* .fbx files from Microsoft Edge, OneDrive, and other apps.
 
 >[!NOTE]
->This article applies to the immersive Unity **3D Viewer Beta** app, which supports .fbx files and is only available on HoloLens (1st gen). The pre-installed **3D Viewer** app on HoloLens 2 supports opening custom .glb 3D models in the mixed reality home (see [Asset requirements overview](/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) for more details.
+>This article applies to the immersive Unity **3D Viewer Beta** app, which supports .fbx files and is only available on HoloLens (1st gen). The pre-installed **3D Viewer** app on HoloLens 2 supports opening custom .glb 3D models in the mixed reality home (for more information, see [Asset requirements overview](/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview).
 
 >[!IMPORTANT]
 >While 3D Viewer Beta may remain available in the Microsoft Store for HoloLens (1st gen), it is no longer in active development and is no longer supported.
@@ -102,13 +102,13 @@ There are hard limits on the size of files, and the number of models, vertices, 
 
 - Avoid black materials or black areas in texture maps. Holograms are made of light, thus HoloLens renders black (the absence of light) as transparent.
 - Before exporting to FBX from your creation tool, ensure all geometry is visible and unlocked and no layers that contain geometry are turned off or templated. Visibility isn't respected.
-- Avoid very large translation offsets between nodes (for example, 100,000 units). This can cause the model to jitter while being moved/scaled/rotated.
+- Avoid massive translation offsets between nodes (for example, 100,000 units), which can cause the model to jitter while being moved/scaled/rotated.
 
 ### Performance optimization
 
 Keep performance in mind while authoring content and validate in the 3D Viewer Beta app on HoloLens during the authoring process for best results. 3D Viewer Beta renders content real-time and performance is subject to HoloLens hardware capabilities.  
 
-There are many variables in a 3D model that can reduce performance. 3D Viewer Beta will show a warning on load if there are more than 150,000 vertices or more than 400 meshes. Animations can have an reduce performance of other open models. There are also hard limits on the total number models, vertices, and meshes that can be open simultaneously in 3D Viewer Beta (see [File and model limitations](#file-and-model-limitations)).  
+There are many variables in a 3D model that may reduce performance. 3D Viewer Beta will show a warning on load if there are more than 150,000 vertices or more than 400 meshes. Animations can have a reduction in performance of other open models. There are also hard limits on the total number models, vertices, and meshes that can be open simultaneously in 3D Viewer Beta (see [File and model limitations](#file-and-model-limitations)).  
 
 If the 3D model isn't running as expected due to model complexity, consider:
 
@@ -116,7 +116,7 @@ If the 3D model isn't running as expected due to model complexity, consider:
 - Reducing number of bones in rigged animation
 - Avoiding self-occlusion
 
-Double-sided rendering is supported in 3D Viewer Beta, although it's turned off by default for performance reasons. This can be turned on via the **Double Sided** button on the **Details** page. For best performance, avoid the need for double-sided rendering in your content.
+Double-sided rendering is supported in 3D Viewer Beta, although it's turned off by default for performance reasons. It can be turned on via the **Double Sided** button on the **Details** page. For best performance, avoid the need for double-sided rendering in your content.
 
 ### Validating your 3D model
 
@@ -156,13 +156,17 @@ Once in OneDrive, FBX files can be opened on HoloLens using 3D Viewer Beta in on
 
 ### I see a warning when I open a 3D model
 
-You'll see a warning if you attempt to open a 3D model that contains features that aren't supported by 3D Viewer Beta, or if the model is too complex and performance may be affected. 3D Viewer Beta will still load the 3D model, but performance or visual fidelity may be compromised.
+You'll see a warning if you attempt to open a 3D model that contains features that aren't supported by 3D Viewer Beta. You'll also see an error if the model is too complex and performance may be affected. 3D Viewer Beta will still load the 3D model, but performance or visual fidelity may be compromised.
 
 For more info, see [Supported content specifications](#supported-content-specifications) and [Optimizing 3D models for 3D Viewer Beta](#optimizing-3d-models-for-3d-viewer-beta).
 
 ### I see a warning and the 3D model doesn't load
 
-You'll see an error message when 3D Viewer Beta can't load a 3D model due to complexity or file size, or if the FBX file is corrupt or invalid. You'll also see an error message if you've reached the limit on the total number of models, vertices, or meshes that can be open simultaneously.  
+You'll see an error message for the following reasons:
+
+- When 3D Viewer Beta can't load a 3D model due to complexity or file size
+- The FBX file is corrupt or invalid
+- You've reached the limit on the total number of models, vertices, or meshes that can be open simultaneously
 
 For more info, see [Supported content specifications](#supported-content-specifications) and [File and model limitations](#file-and-model-limitations).
 
@@ -184,11 +188,11 @@ For more info, see [Optimizing 3D models for 3D Viewer Beta](#optimizing-3d-mode
 
 3D Viewer Beta is automatically associated with the .fbx file extension when it's installed.
 
-If you try to open an FBX file and see a dialog box that directs you to Microsoft Store, you don't currently have an app associated with the .fbx file extension on HoloLens.
+If you try to open an .fbx file and see a dialog box that directs you to Microsoft Store, then you don't currently have an app associated with the .fbx file extension on HoloLens.
 
 Verify that 3D Viewer Beta is installed. If it isn't installed, download it from Microsoft Store on HoloLens.
 
-If 3D Viewer Beta is already installed, launch 3D Viewer Beta, then try opening the file again. If the issue persists, uninstall and reinstall 3D Viewer Beta. This will re-associate the .fbx file extension with 3D Viewer Beta.
+If 3D Viewer Beta is already installed, launch 3D Viewer Beta, then try opening the file again. If the issue persists, uninstall and reinstall 3D Viewer Beta. Reinstalling the app will once again associate the .fbx file extension with 3D Viewer Beta.
 
 If attempting to open an FBX file opens an app other than 3D Viewer Beta, that app was likely installed after 3D Viewer Beta and has taken over association with the .fbx file extension. If you prefer 3D Viewer Beta to be associated with the .fbx file extension, uninstall and reinstall 3D Viewer Beta.
 
@@ -200,7 +204,7 @@ If the **Open File** button launches an app other than OneDrive, that app was li
 
 If the **Open File** button isn't active, it's possible that you've reached the limit of models that can be open in 3D Viewer Beta at one time. If you have 40 models open in 3D Viewer Beta, you'll need to close some before you'll be able to open more models.
 
-## Additional resources
+## More resources
 
 - [Support forums](http://forums.hololens.com/categories/3d-viewer-beta) - For archival purposes only. This forum is no longer active.
 - [Third-party notices](https://www.microsoft.com/en-us/legal/third-party-notices)
