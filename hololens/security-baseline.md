@@ -70,7 +70,7 @@ The following sections describe the recommended settings of each CSP as part of 
 |  [Power/DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin) | Idle time in number of secondsRecommended value: 60 secs | Allows you to specify the period of inactivity before Windows turns off the display. |
 | **Settings** | | |
 | [Settings/AllowVPN](/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) | 0 – Not allowed | Disallow the user to change VPN settings. |
-| [Settings/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) | Shortened name of the pages that are visible to the userWill provide a UI to select or unselect the page names. See comments for recommended pages to hide.  | Allow only listed pages to be displayed to the user in Settings app. |
+| [Settings/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) | Shortened name of the pages that are visible to the user. Will provide a UI to select or unselect the page names. See comments for recommended pages to hide. | Allow only listed pages to be displayed to the user in Settings app. |
 | **System** | | | 
 | [System/AllowStorageCard](/windows/client-management/mdm/policy-csp-system#system-allowstoragecard) | 0 – Not allowed | SD card use is not allowed and USB drives are disabled. This setting does not prevent programmatic access to the storage card. |
 | **Updates** | | | 
