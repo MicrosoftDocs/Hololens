@@ -60,9 +60,10 @@ The new policies and screens they skip are:
 | Speech Consent   | This skips the speech consent page if the policy has been set.                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
 
 The OMA-URI of new policies:
-`./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringFirstExperience`
-`./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringFirstExperience`
-`./Device/Vendor/MSFT/Policy/Config/Privacy/DisablePrivacyExperience`
+
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringFirstExperience`
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringFirstExperience`
+- `./Device/Vendor/MSFT/Policy/Config/Privacy/DisablePrivacyExperience`
 
 - Bool value
 
