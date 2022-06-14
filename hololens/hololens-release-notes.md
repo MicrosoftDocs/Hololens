@@ -48,6 +48,14 @@ To help provide clarity this release notes page will only provide information fo
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Windows Holographic, version 22H1 - June 2022 Update
+
+- Build 20348.1506
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to keep your devices up to date for all the latest fixes and improvements. Keep an eye on our [Insider builds](hololens-insider.md) for some potential new features for our next feature release.
+
 ## Microsoft Store app update
 
 There is a new version of the Microsoft Store app for the HoloLens 2. This app update will occur seamlessly when the Microsoft Store app itself is updated. When the update is complete, you'll see a storefront very similar to the store app that is available on desktop. Since this is an app update it will be distributed to all HoloLens 2 devices, regardless of OS version.
