@@ -48,6 +48,14 @@ To help provide clarity this release notes page will only provide information fo
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Windows Holographic, version 22H1 - June 2022 Update
+
+- Build 20348.1506
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to keep your devices up to date for all the latest fixes and improvements. Keep an eye on our [Insider builds](hololens-insider.md) for some potential new features for our next feature release.
+
 ## Microsoft Store app update
 
 There is a new version of the Microsoft Store app for the HoloLens 2. This app update will occur seamlessly when the Microsoft Store app itself is updated. When the update is complete, you'll see a storefront very similar to the store app that is available on desktop. Since this is an app update it will be distributed to all HoloLens 2 devices, regardless of OS version.
@@ -649,12 +657,12 @@ The new Microsoft Edge offers IT admins a much broader set of browser policies o
 Here are some helpful resources for learning more about managing policy settings for the new Microsoft Edge:
 
 - [Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune)
-- [Microsoft Edge Legacy to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
-- [Google Chrome to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- [Microsoft Edge Legacy to Microsoft Edge policy mapping](/microsoft-edge/deploy/group-policies/)
+- [Google Chrome to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policies)
 - Full [Microsoft Edge Enterprise documentation](/deployedge/)
 
 > [!IMPORTANT]
-> Because of the volume of browser policies supported by the new Microsoft Edge, our team is unable to guarantee that each new policy works on HoloLens 2. However, we've tested and confirmed than the new Microsoft Edge equivalent of each legacy Microsoft Edge policy previously supported on HoloLens 2 work as expected. See [Microsoft Edge Legacy to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policy-map-legacy-to-newedge) to find the new Microsoft Edge equivalent of each legacy Microsoft Edge browser policy you were using with HoloLens 2.
+> Because of the volume of browser policies supported by the new Microsoft Edge, our team is unable to guarantee that each new policy works on HoloLens 2. However, we've tested and confirmed than the new Microsoft Edge equivalent of each legacy Microsoft Edge policy previously supported on HoloLens 2 work as expected. See [Microsoft Edge Legacy to Microsoft Edge policy mapping](/microsoft-edge/deploy/group-policies/) to find the new Microsoft Edge equivalent of each legacy Microsoft Edge browser policy you were using with HoloLens 2.
 >
 > There are at least two new Microsoft Edge policies that we know *will not* work with HoloLens 2:
 >
