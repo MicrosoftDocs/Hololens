@@ -22,7 +22,7 @@ appliesto:
 
 Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get started](hololens-insider.md#start-receiving-insider-builds) and provide valuable feedback for our next major operating system update for HoloLens.
 
-We recommend that for organizations that have moved, or are moving towards a scale production deployment, that a subset of test devices are kept on Insider builds to validate that new features and new builds work as expected.
+We recommend that for organizations that have moved, or are moving towards a scale production deployment, that a subset of test devices is kept on Insider builds to validate that new features and new builds work as expected.
 
 ## Windows Insider Release Notes
 
@@ -31,35 +31,35 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | Feature                                                | Description                                                                                                                            | User or Scenario |
 |--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | [New policies to speed up adding users](#policies-to-speed-up-adding-users)                          | New   policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT   Admin       |
-| [Autopilot restart](#autopilot-restart)                                 | Enabled   the Troubleshooter for Autopilot to work with HoloLens, as well as an option   to retry if it failed                         | IT   Admin       |
-| [Manage users on device](#manage-users-on-device)                                 | New   policies to manage when to clear out users on the device                                                                         | IT   Admin       |
+| [Autopilot restart](#autopilot-restart)                                 | Enabled   the Troubleshooter for Autopilot to work with HoloLens, and an option   to retry if it failed                         | IT   Admin       |
+| [Clean up users on device](#clean-up-users-on-device)                                 | New   policies to manage when to clear out users on the device                                                                         | IT   Admin       |
 | [New policy disable Wi-Fi auto recovery](#new-policy-disable-wi-fi-auto-recovery)                 | Turn off auto-reconnect to Wi-fi access points                                                                                                                         | IT   Admin       |
-| [Captive portal on sign-in screen](#captive-portal-on-sign-in-screen)                       | New   policy that IT Admins can enable that allows the use of captive portals on   the sign in screen to assist in connecting to Wi-Fi | IT   Admin       |
+| [Captive portal on sign-in screen](#captive-portal-on-sign-in-screen)                       | New   policy that IT Admins can enable that allows the use of captive portals on   the sign-in screen to help connecting to Wi-Fi | IT   Admin       |
 | [Clean up storage via MDM](#clean-up-storage-via-mdm)                               | Clean   up files via MDM                                                                                                               | IT   Admin       |
 | [Fixes improvements](#fixes-improvements)                                    | Fixes and improvements for   HoloLens.                                                                                                 | All              |
 
 
 ### IT Admin Checklist
 
-✔️ If you'd like to speed up new user sign ons check out the new [new policies to speed up adding users](#policies-to-speed-up-adding-users). <br>
+✔️ If you'd like to speed up new user sign-ons check out the new [new policies to speed up adding users](#policies-to-speed-up-adding-users). <br>
 ✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#manage-users-on-device). <br>
-✔️ If you need to keep your devices from auto connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-disable-wi-fi-auto-recovery). <br>
+✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-disable-wi-fi-auto-recovery). <br>
 ✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm).
 
 ### Policies to speed up adding users
 
-As more and more customers move to scale their deployment of HoloLens devices to their many users they find they'd like to be able to set up a new user quickly on a device. In order to aid with this we've added four new policies that each allow to skip a specific screen in OOBE. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These policies also have the added benefit of being able to have more fine tuning of your devices.
+As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are four new areas you'll be able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
 
 The new policies and screens they skip are:
 
 | Policy          | What's skipped                                                                    |  Screenshot |
 |------------------|-----------------------------------------------------------------------------------|---|
-| Skip Calibration | The calibration run during OOBE. This can later be run via the Settings app.      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
-| Skip Training    | How to open and close the Start menu. This can later be learned via the Tips app. | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
-| Location Consent | This skips the location consent page if the policy has been set.                  | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
-| Speech Consent   | This skips the speech consent page if the policy has been set.                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
+| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app.      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
+| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
+| Location Consent | This policy skips the location consent page if the policy has been set.                  | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
+| Speech Consent   | This policy skips the speech consent page if the policy has been set.                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
 
-The OMA-URI of new policies:
+The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance Uniform Resource Identifier) of new policies:
 
 - `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringFirstExperience`
 - `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringFirstExperience`
@@ -67,19 +67,19 @@ The OMA-URI of new policies:
 
 - Bool value
 
-For more info on how to increase your set up speed for new users, check out our [guide on how to quickly set up new users.](hololens2-new-user-optimize.md)
+For more info on how to increase your setup speed for new users, check out our [guide on how to quickly set up new users.](hololens2-new-user-optimize.md)
 
 ### Autopilot restart
 
-In some cases a user might experience an issue during Autopilot where it cannot complete. For situations like this we've enabled the restart button to allow the user to restart the autopilot flow. This new button will be available on the Enrollment Status Page that is shown during the Autopilot process. 
+In some cases, a user might experience an issue during Autopilot that prevents it from completing. For situations like this, we've enabled the restart button to allow the user to restart the autopilot flow. This new button will be available on the Enrollment Status Page that is shown during the Autopilot process. 
 
 // NEEDS SCREENSHOT
 ![screenshotofthing](aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
 
 
-### Manage users on device
+### Clean up users on device
 
-For some organization, they are fully at scale and have tons of different users on their HoloLens 2 devices. Some of these devices can be used by so many people they even hit the 64 user limit on the device. For those who have reached that limit, we've added in controls over how to delete old users off the device at controlled intervals (something you have may used on Desktop). This can also be useful for other reasons, which include increased security be removing old accounts, or speeding up the Iris scanning processes on the sign-in screen (less users to match means a faster comparison.) We've enabled two methods to control when to clean up old users.
+Organizations with scaled deployments of HoloLens 2 devices may encounter the 64-user limit on the device, which will prevent additional users from being able to use the device. To address this situation, we've added controls allow old users to be deleted from the device at controlled intervals (something you have may have used on Desktop). This can also be useful for other reasons, which include increased security be removing old accounts, or speeding up the Iris scanning processes on the sign-in screen (fewer users to match means a faster comparison.) We've enabled two methods to control when to clean up old users.
 
 There are two triggers that can delete users:
 
@@ -101,18 +101,23 @@ Here's how to get started:
 
 To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
 
-### New policy disable Wi-Fi auto recovery
+### New policy to disable Wi-Fi auto recovery
 
-Wi-Fi auto recovery feature is enabled on HoloLens 2 by default. In some cases you made want your devices to not automatically reconnect. This may be because you have a preferred network you want to keep your devices on, you find yourself reconnecting to an access point that doesn't have internet, or you want to keep those devices offline in specific areas. For those cases we've enabled a new policy that you can opt to use to keep your devices from automatically reconnecting back to your access points.
+Wi-Fi auto recovery is enabled on HoloLens 2 by default. In some cases you may want your devices to not automatically reconnect. This may be because you have a preferred network you want to keep your devices on, you find yourself reconnecting to an access point that doesn't have internet, or you want to keep those devices offline in specific areas. For those cases we've enabled a new policy that you can opt to use to keep your devices from automatically reconnecting back to your access points.
 
 The OMA-URI of new policies:
 `./Device/Vendor/MSFT/Policy/Config/MixedReality/NEWPOLICYOMAURI`
 
 - Bool value // DOUBLE CHECK THIS LATER
 
-### Captive portal on sign-in screen
+### Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in
 
-This new feature is an opt-in policy that IT Admins can enable to help with the set up of new devices / new users. When this policy is turned on it allows a captive portal on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if required.
+Sometimes Wi-Fi connections require additional information to provide credentials to the access point. Previously users were only able to do this the first time the device was set up in OOBE, or in the Settings app once signed in. Previously, users couldn't adjust this configuration on the sign-in screen, which was sometimes tricky to work around. 
+
+This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a [captive portal](/windows-hardware/drivers/mobilebroadband/captive-portals) on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
+
+// NEEDS SCREENSHOT
+![screenshotofthing](aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
 
 MixedReality/AllowCaptivePortalBeforeSignIn
 
@@ -123,11 +128,14 @@ The OMA-URI of new policy:
 
 ### Clean up storage via MDM
 
-Sometimes a device needs more space, we've enabled a new way to clean up your temporary files / data on a device. Some of these files can be logs, crash dumps, downloads, or other files no longer needed on the device. We've created a way for both users and IT admins to delete these files. Here's how:
+	In some scenarios, a device may require more space, so we've enabled a new way to clean up your temporary files / data on a device. Some of these files can be logs, crash dumps, downloads, or other files no longer needed on the device. We've created a way for both users and IT admins to delete these files. Here's how:
 
-#### End user clean up
+#### End user cleanup
 
 End users can find this button on their device in the Settings app.
+
+//////////////////////
+WIP STEPS UNTIL WE BUILD THE UI / FEATURE 
 
 1. Open the Settings app
 1.  // ......................... select the buttons and do the things
@@ -140,6 +148,9 @@ End users can find this button on their device in the Settings app.
 It admins can start the same process as end users. They can do it by:
 
 1. // STEPS AND THINGS DEPENDING ON WHAT CSP WE END UP USING
+
+END WIP
+////////////////////////
 
 ### Fixes improvements
 
@@ -190,10 +201,10 @@ If you encounter an update error 0x80070490 when updating on the Dev or Beta cha
 
 ## FFU download and flash directions
 
-To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
+To test with a flight signed `.ffu`, you first have to flight unlock your device prior to flashing the flight signed ffu.
 
 1. On PC:
-    1. Download ffu to your PC from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
+    1. Download `.ffu` to your PC from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
 
     1. Install ARC (Advanced Recovery Companion) from the Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
@@ -210,7 +221,7 @@ Please use [the Feedback Hub app](hololens-feedback.md) on your HoloLens to prov
 
 ## Note for developers
 
-You are welcome and encouraged to try developing your applications using Insider builds of HoloLens.  Check out the [HoloLens Developer Documentation](https://developer.microsoft.com/windows/mixed-reality/development) to get started. Those same instructions work with Insider builds of HoloLens.  You can use the same builds of Unity and Visual Studio that you're already using for HoloLens development.
+You're welcome and encouraged to try developing your applications using Insider builds of HoloLens.  Check out the [HoloLens Developer Documentation](https://developer.microsoft.com/windows/mixed-reality/development) to get started. Those same instructions work with Insider builds of HoloLens.  You can use the same builds of Unity and Visual Studio that you're already using for HoloLens development.
 
 ## Stop receiving Insider builds
 
