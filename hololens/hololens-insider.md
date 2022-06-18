@@ -33,8 +33,8 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | [New policies to speed up adding users](#policies-to-speed-up-adding-users)                          | New   policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT   Admin       |
 | [Autopilot restart](#autopilot-restart)                                 | Enabled   the Troubleshooter for Autopilot to work with HoloLens, and an option   to retry if it failed                         | IT   Admin       |
 | [Clean up users on device](#clean-up-users-on-device)                                 | New   policies to manage when to clear out users on the device                                                                         | IT   Admin       |
-| [New policy disable Wi-Fi auto recovery](#new-policy-disable-wi-fi-auto-recovery)                 | Turn off auto-reconnect to Wi-fi access points                                                                                                                         | IT   Admin       |
-| [Captive portal on sign-in screen](#captive-portal-on-sign-in-screen)                       | New   policy that IT Admins can enable that allows the use of captive portals on   the sign-in screen to help connecting to Wi-Fi | IT   Admin       |
+| [New policy disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery)                 | Turn off auto-reconnect to Wi-fi access points                                                                                                                         | IT   Admin       |
+| [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)                       | New   policy that IT Admins can enable that allows the use of captive portals on   the sign-in screen to help connecting to Wi-Fi | IT   Admin       |
 | [Clean up storage via MDM](#clean-up-storage-via-mdm)                               | Clean   up files via MDM                                                                                                               | IT   Admin       |
 | [Fixes improvements](#fixes-improvements)                                    | Fixes and improvements for   HoloLens.                                                                                                 | All              |
 
@@ -43,7 +43,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 
 ✔️ If you'd like to speed up new user sign-ons check out the new [new policies to speed up adding users](#policies-to-speed-up-adding-users). <br>
 ✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#manage-users-on-device). <br>
-✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-disable-wi-fi-auto-recovery). <br>
+✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery). <br>
 ✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm).
 
 ### Policies to speed up adding users
