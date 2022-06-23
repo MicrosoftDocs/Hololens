@@ -21,7 +21,7 @@ appliesto:
 
 HoloLens gives users the experience of mixing the real world with the digital world.  Mixed reality capture (MRC) lets you capture that experience as a photo or video, or share what you see with others in real-time.
 
-Mixed reality capture uses a first-person point of view so other people can see holograms as you see them. For a third-person point of view, use [spectator view](/windows/mixed-reality/spectator-view). Spectator view is especially useful for demos.
+Mixed reality capture uses a first-person point of view so other people can see holograms as you see them. 
 
 While it's fun to share videos amongst friends and colleagues, videos can also help teach other people to use an app or to communicate problems with apps and experiences.
 

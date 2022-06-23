@@ -2,6 +2,15 @@
 
 
 
+## Week of June 06, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/8/2022 | [Using 3D Viewer Beta on HoloLens (1st gen)](/hololens/holographic-3d-viewer-beta) | modified |
+| 6/10/2022 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |
+
+
 ## Week of May 30, 2022
 
 
@@ -29,12 +38,3 @@
 | 5/10/2022 | [HoloLens 2 release notes for Windows Holographic, version 2004](/hololens/hololens-release-notes-2004) | modified |
 | 5/10/2022 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
 | 5/10/2022 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
-
-
-## Week of May 02, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 5/2/2022 | [Common Scenarios – Near Offline or Restricted for HoloLens 2](/hololens/hololens-common-scenarios-near-offline-restricted) | added |
-| 5/2/2022 | [Common Deployment Scenarios](/hololens/hololens-requirements) | modified |
