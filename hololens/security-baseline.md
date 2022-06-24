@@ -20,25 +20,16 @@ appliesto:
 
 This article lists and describes the various security baseline settings you can configure on HoloLens 2 devices using Configuration Service Providers (CSP). As part of your mobile device management using Microsoft Intune, use the following standard or advanced security baseline settings depending on your organizational policies and needs. As a HoloLens 2 administration team, use these security baseline settings to help protect your organizational resources.
 
-Standard security baseline settings are applicable to all types of customers irrespective of the use case scenario and industry vertical.
-
-Advanced security baseline settings are recommended settings for customers those who have strict security controls of their environment and require stringent security policies to be applied to any device used in their environment
+- Standard security baseline settings are applicable to all types of customers irrespective of the use case scenario and industry vertical.
+- Advanced security baseline settings are recommended settings for customers those who have strict security controls of their environment and require stringent security policies to be applied to any device used in their environment
 
 These security baseline settings are based on Microsoft’s best practice guidelines and experience gained in deploying and supporting HoloLens 2 devices to multiple customers in various industries.
 
 Once you've reviewed the baseline and decided to use the baseline, both, or parts, then check out [how to enable these security base lines](#how-to-enable-these-security-base-lines)
 
-
-
-
-
-
-
-
-
 ## 1. Standard security baseline settings
 
-The following sections describe the recommended settings of each CSP as part of the standard security baseline profile. Intune will provide a simple UI to enable, disable, or configure specific values for these settings while configuring this profile.
+The following sections describe the recommended settings of each CSP as part of the standard security baseline profile.
 
 ### 1.1 [Policy CSP](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)
 
@@ -47,7 +38,7 @@ The following sections describe the recommended settings of each CSP as part of 
 | **Accounts** | | |
 | [Accounts/AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection) | 0 – Not Allowed | Restrict the user to use an MSA account for non-email related connection authentication and services. |
 | **Application Management** | | |
-| [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) | 0 - Explicit deny | Explicitly deny non Microsoft Store apps. | 
+| [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) | 0 - Explicit deny | Explicitly deny non Microsoft Store apps. |
 | [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) | 1 – Allowed | Allow automatic update of apps from Microsoft Store. |
 | [ApplicationManagement/AllowDeveloperUnlock](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) | 0 - Explicit deny | Restrict the user to unlock developer mode, which allows the user to install apps on the device from an IDE. |
 | **Browser** | | |
@@ -73,15 +64,15 @@ The following sections describe the recommended settings of each CSP as part of 
 | **Settings** | | |
 | [Settings/AllowVPN](/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) | 0 – Not allowed | Disallow the user to change VPN settings. |
 | [Settings/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) | Shortened name of the pages that are visible to the user. Will provide a UI to select or unselect the page names. See comments for recommended pages to hide. | Allow only listed pages to be displayed to the user in Settings app. |
-| **System** | | | 
+| **System** | | |
 | [System/AllowStorageCard](/windows/client-management/mdm/policy-csp-system#system-allowstoragecard) | 0 – Not allowed | SD card use isn't allowed and USB drives are disabled. This setting doesn't prevent programmatic access to the storage card. |
-| **Updates** | | | 
+| **Updates** | | |
 | [Update/AllowUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)  | 1 – Allowed  | Allow access to Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store.  |
 | [Update/ManagePreviewBuilds](/windows/client-management/mdm/policy-csp-update#update-managepreviewbuilds) | 0 - Disable Preview builds | Disallow preview builds to be installed on the device. |
 
 ### 1.2 [ClientCertificateInstall CSP](/windows/client-management/mdm/clientcertificateinstall-csp)
 
-Will recommend configuring this CSP as a best practice but won't recommend on specific values for each node in this CSP.
+We recommend configuring this CSP as a best practice but won't recommend on specific values for each node in this CSP.
 
 ### 1.3 [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)
 
@@ -105,7 +96,7 @@ Will recommend configuring this CSP as a best practice but won't recommend on sp
 
 ### 1.4 [RootCATrustedCertificates CSP](/windows/client-management/mdm/rootcacertificates-csp)
 
-Will recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes in this CSP as a best practice but won't recommend on specific values for each node in this CSP.
+We recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes in this CSP as a best practice but won't recommend on specific values for each node in this CSP.
 
 ### 1.5 [TenantLockdown CSP](/windows/client-management/mdm/tenantlockdown-csp)
 
@@ -115,15 +106,15 @@ Will recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** node
 
 ### 1.6 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
 
-Will recommend configuring VPN profiles as a best practice but won't recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
+We recommend configuring VPN profiles as a best practice but won't recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ### 1.7 [WiFi CSP](/windows/client-management/mdm/wifi-csp)
 
-Will recommend configuring WiFi profiles as a best practice but won't recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
+We recommend configuring WiFi profiles as a best practice but won't recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ## 2 Advanced security baseline settings
 
-The following sections describe the recommended settings of each CSP as part of the advanced security baseline profile. Intune will provide a UI to enable, disable, not configure, or configure specific values for these settings while configuring this profile.
+The following sections describe the recommended settings of each CSP as part of the advanced security baseline profile.
 
 ### 2.1 [Policy CSP](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)
 
@@ -131,7 +122,7 @@ The following sections describe the recommended settings of each CSP as part of 
 | --- | --- | --- |
 | **Accounts** | | |
 | [Accounts/AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection) | 0 – Not Allowed | Restrict the user to use an MSA account for non-email related connection authentication and services. |
-| **Application Management** | | | 
+| **Application Management** | | |
 | [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) | 0 - Explicit deny | Explicitly deny non Microsoft Store apps. |
 | [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) | 1 – Allowed | Allow automatic update of apps from Microsoft Store. |
 | [ApplicationManagement/AllowDeveloperUnlock](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) | 0 - Explicit deny | Restrict the user to unlock developer mode, which allows the user to install apps on the device from an IDE. |
@@ -212,7 +203,7 @@ The following sections describe the recommended settings of each CSP as part of 
 
 ### 2.4 [ClientCertificateInstall CSP](/windows/client-management/mdm/clientcertificateinstall-csp)
 
-Will recommend configuring this CSP as a best practice but won't recommend on specific values for each node in this CSP.
+We recommend configuring this CSP as a best practice but won't recommend on specific values for each node in this CSP.
 
 ### 2.5 [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)
 
@@ -236,7 +227,7 @@ Will recommend configuring this CSP as a best practice but won't recommend on sp
 
 ### 2.6 [RootCATrustedCertificates CSP](/windows/client-management/mdm/rootcacertificates-csp)
 
-Will recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes in this CSP as a best practice but will not recommend on specific values for each node in this CSP.
+We recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes in this CSP as a best practice but will not recommend on specific values for each node in this CSP.
 
 ### 2.7 [TenantLockdown CSP](/windows/client-management/mdm/tenantlockdown-csp)
 
@@ -246,11 +237,11 @@ Will recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** node
 
 ### 2.8 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
 
-Will recommend configuring VPN profiles as a best practice but will not recommend on specific values for each node in this CSP. Most of the settings are related to customer environment.
+We recommend configuring VPN profiles as a best practice but will not recommend on specific values for each node in this CSP. Most of the settings are related to customer environment.
 
 ### 2.9 [WiFi CSP](/windows/client-management/mdm/wifi-csp)
 
-Will recommend configuring WiFi profiles as a best practice but will not recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
+We recommend configuring WiFi profiles as a best practice but will not recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ## How to enable these security base lines
 
@@ -262,25 +253,23 @@ Here's how to create the baseline.
 
 Many of the settings can be added by using the Settings catalog, however there may sometimes be a setting that hasn't yet be populated to the Settings catalog. In those cases you'll use a Custom policy, or OMA-URI (Open Mobile Alliance - Uniform Resource Identifier). Start by looking in the Settings catalog, and if it's not found this follow the instructions below for creating a custom policy via OMA-URI.
 
-
-
 ### Settings catalog
 
-Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#home). 
+Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#home).
 
-1. Navigate to **Devices** -> **Configuration profiles** -> **+Create profile**. For Platform, select **Windows 10 and later**, and for profile type select **Settings catalog (preview)**. 
+1. Navigate to **Devices** -> **Configuration profiles** -> **+Create profile**. For Platform, select **Windows 10 and later**, and for profile type select **Settings catalog (preview)**.
 1. Create a name for the profile, and select the **Next** button.
 1. On the Configuration settings screen select **+ Add settings**.
 
-Using the name of the policy from the baseline above, you can search for the policy. The settings catalog will space out the name, so to find *Accounts/AllowMicrosoftAccountConnection* you'll need to search *Allow Microsoft Account Connection*. After you search you'll see the list of policies reduce to just the CSP which has this policy. Select **Accounts** (or the relevant CSP to what you are current searching), once you do you'll see the policy result below. Check the box for the policy. 
+Using the name of the policy from the baseline above, you can search for the policy. The settings catalog will space out the name, so to find "Accounts/AllowMicrosoftAccountConnection" you'll need to search "Allow Microsoft Account Connection". After you search you'll see the list of policies reduce to just the CSP which has this policy. Select **Accounts** (or the relevant CSP to what you are current searching), once you do you'll see the policy result below. Check the box for the policy.
 
 ![Settings picker](images/settings-picker.png)
 
-Once done, the panel on the left will add the CSP catagory, and the setting that you added. From here you can configure it from the default setting, to one more secure. 
+Once done, the panel on the left will add the CSP catagory, and the setting that you added. From here you can configure it from the default setting, to one more secure.
 
 ![Settings catalog](images/settings-catalog-set-setting.png)
 
-You can continue to keep adding multiple configurations to the same profile, which will make it easier to assign at once. 
+You can continue to keep adding multiple configurations to the same profile, which will make it easier to assign at once.
 
 ### Adding custom OMA-URI polcies
 
@@ -291,6 +280,7 @@ Some policies may not be available in the Settings catalog yet. For these you'll
 1. Select the **Add** button.
 
 You'll need to fill out a few fields.
+
 - Name, you may name it anything you need related to the policy. This can be a shorthand name you use to recognize it.
 - Description will be more details you might need.
 - The OMA-URI will be the full OMA-URI string where the policy is. Example: `./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays`
@@ -302,6 +292,3 @@ You'll need to fill out a few fields.
 Once done, your policy will be added to the main window. You can continue adding all your custom policies to the same custom configuration. This helps reduce managing multiple device configurations and makes assignment easier.
 
 ![OMA-URI configuration](images/custom-policy-added-setting.png)
-
-
-
