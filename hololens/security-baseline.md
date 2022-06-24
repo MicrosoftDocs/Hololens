@@ -260,5 +260,26 @@ Will recommend configuring WiFi profiles as a best practice but will not recomme
 
 Here's how to create the baseline.
 
-Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#home). Navigate to **Devices** -> **Configuration profiles** -> **+Create profile**. For Platform, select **Windows 10 and later**, and for profile type select **Templates**.
+Many of the settings can be added by using the Settings catalog, however there may sometimes be a setting that hasn't yet be populated to the Settings catalog. In those cases you'll use a Custom policy, or OMA-URI (Open Mobile Alliance - Uniform Resource Identifier). Start by looking in the Settings catalog, and if it's not found this follow the instructions below for creating a custom policy via OMA-URI.
+
+
+
+### Settings catalog
+
+Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#home). Navigate to **Devices** -> **Configuration profiles** -> **+Create profile**. For Platform, select **Windows 10 and later**, and for profile type select **Settings catalog (preview)**. Create a name for the profile, and select the **Next** button. On the Configuration settings screen select **+ Add settings**.
+
+Using the name of the policy from the baseline above, you can search for the policy. The settings catalog will space out the name, so to find *Accounts/AllowMicrosoftAccountConnection* you'll need to search *Allow Microsoft Account Connection*. After you search you'll see the list of policies reduce to just the CSP which has this policy. Select **Accounts** (or the relevant CSP to what you are current searching), once you do you'll see the policy result below. Check the box for the policy. 
+
+![Settings picker](images/settings-picker.png)
+
+Once done, the panel on the left will add the CSP catagory, and the setting that you added. From here you can configure it from the default setting, to one more secure. 
+
+![Settings catalog](images/settings-catalog-set-setting.png)
+
+
+
+### Adding custom OMA-URI polcies
+
+
+
 
