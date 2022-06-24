@@ -266,7 +266,11 @@ Many of the settings can be added by using the Settings catalog, however there m
 
 ### Settings catalog
 
-Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#home). Navigate to **Devices** -> **Configuration profiles** -> **+Create profile**. For Platform, select **Windows 10 and later**, and for profile type select **Settings catalog (preview)**. Create a name for the profile, and select the **Next** button. On the Configuration settings screen select **+ Add settings**.
+Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#home). 
+
+1. Navigate to **Devices** -> **Configuration profiles** -> **+Create profile**. For Platform, select **Windows 10 and later**, and for profile type select **Settings catalog (preview)**. 
+1. Create a name for the profile, and select the **Next** button.
+1. On the Configuration settings screen select **+ Add settings**.
 
 Using the name of the policy from the baseline above, you can search for the policy. The settings catalog will space out the name, so to find *Accounts/AllowMicrosoftAccountConnection* you'll need to search *Allow Microsoft Account Connection*. After you search you'll see the list of policies reduce to just the CSP which has this policy. Select **Accounts** (or the relevant CSP to what you are current searching), once you do you'll see the policy result below. Check the box for the policy. 
 
@@ -276,10 +280,28 @@ Once done, the panel on the left will add the CSP catagory, and the setting that
 
 ![Settings catalog](images/settings-catalog-set-setting.png)
 
-
+You can continue to keep adding multiple configurations to the same profile, which will make it easier to assign at once. 
 
 ### Adding custom OMA-URI polcies
 
+Some policies may not be available in the Settings catalog yet. For these you'll need to [create a custom OMA-URI profile](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#home).
+
+1. Navigate to **Devices** -> **Configuration profiles** -> **+Create profile**. For Platform, select **Windows 10 and later**, and for profile type select **Templates** and select **Custom**.
+1. Create a name for the profile, and select the **Next** button.
+1. Select the **Add** button.
+
+You'll need to fill out a few fields.
+- Name, you may name it anything you need related to the policy. This can be a shorthand name you use to recognize it.
+- Description will be more details you might need.
+- The OMA-URI will be the full OMA-URI string where the policy is. Example: `./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays`
+- Data type is the type of value this policy accepts. For this example it's a number between 0 and 60, so Integer was selected.
+- Once you select the data type, you'll be able to write out, or upload, the value needed into the field.
+
+![OMA-URI configuring](images/settings-catalog-set-setting.png)
+
+Once done, your policy will be added to the main window. You can continue adding all your custom policies to the same custom configuration. This helps reduce managing multiple device configurations and makes assignment easier.
+
+![OMA-URI configuration](images/custom-policy-added-setting.png)
 
 
 
