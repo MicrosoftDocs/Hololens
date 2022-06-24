@@ -25,7 +25,7 @@ This article lists and describes the various security baseline settings you can 
 
 These security baseline settings are based on Microsoft’s best practice guidelines and experience gained in deploying and supporting HoloLens 2 devices to multiple customers in various industries.
 
-Once you've reviewed the baseline and decided to use the baseline, both, or parts, then check out [how to enable these security base lines](#how-to-enable-these-security-base-lines)
+Once you've reviewed the baselines and decided to use the one, both, or parts, then check out [how to enable these security base lines](#how-to-enable-these-security-base-lines)
 
 ## 1. Standard security baseline settings
 
@@ -174,7 +174,7 @@ The following sections describe the recommended settings of each CSP as part of 
 | [Security/AllowAddProvisioningPackage](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage) | 0 – Not allowed | Disallow the runtime configuration agent to install provisioning packages. |
 | **Settings** | | |
 | [Settings/AllowVPN](/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) | 0 – Not allowed | Disallow the user to change VPN settings. |
-| | [Settings/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) | Shortened name of the pages that are visible to the userWill provide a UI to select or unselect the page names. See comments for recommended pages to hide. | Allow only listed pages to be displayed to the user in Settings app. |
+| [Settings/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) | Shortened name of the pages that are visible to the userWill provide a UI to select or unselect the page names. See comments for recommended pages to hide. | Allow only listed pages to be displayed to the user in Settings app. |
 | **System** | | |
 |[System/AllowStorageCard](/windows/client-management/mdm/policy-csp-system#system-allowstoragecard) | 0 – Not allowed | SD card use isn't allowed and USB drives are disabled. This setting doesn't prevent programmatic access to the storage card. |
 | [System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) | 0 - Not allowed | Disallow device to send diagnostic and usage telemetry data, such as Watson. |
