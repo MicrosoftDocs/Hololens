@@ -78,13 +78,13 @@ We recommend configuring this CSP as a best practice but won't recommend on spec
 
 | **Node Name** | **Value** | **Description** |
 | --- | --- | --- |
-| Tenant ID | _Tenant ID_ | A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. |
-| _Tenant ID_/Policies/UsePassportForWork | True | Sets Windows Hello for Business as a method for signing into Windows. |
-| _Tenant ID_/Policies/RequireSecurityDevice | True | Requires a Trusted Platform Module (TPM) for Windows Hello for Business. |
-| _Tenant ID_/Policies/ExcludeSecurityDevices/TPM12 | False | TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business. |
-| _Tenant ID_/Policies/EnablePinRecovery | False | PIN recovery secret won't be created or stored. |
-| _Tenant ID_/Policies/UseCertificateForOnPremAuth | False | PIN will be provisioned when the user logs in, without waiting for a certificate payload. |
-| _Tenant ID_/Policies/PINComplexity/MinimumPINLength | 6 | PIN length must be greater than or equal to this number. |
+| Tenant ID | _TenantId_ | A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. |
+| _TenantId_/Policies/UsePassportForWork | True | Sets Windows Hello for Business as a method for signing into Windows. |
+| _TenantId_/Policies/RequireSecurityDevice | True | Requires a Trusted Platform Module (TPM) for Windows Hello for Business. |
+| _TenantId_/Policies/ExcludeSecurityDevices/TPM12 | False | TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business. |
+| _TenantId_/Policies/EnablePinRecovery | False | PIN recovery secret won't be created or stored. |
+| _TenantId_/Policies/UseCertificateForOnPremAuth | False | PIN will be provisioned when the user logs in, without waiting for a certificate payload. |
+| _TenantId_/Policies/PINComplexity/MinimumPINLength | 6 | PIN length must be greater than or equal to this number. |
 | _TenantId_/Policies/PINComplexity/MaximumPINLength | 6 | PIN length must be less than or equal to this number. |
 | _TenantId_/Policies/PINComplexity/UppercaseLetters | 2 | Digits are required and all other character sets aren't allowed. |
 | _TenantId_/Policies/PINComplexity/LowercaseLetters | 2 | Digits are required and all other character sets aren't allowed. |
@@ -209,13 +209,13 @@ We recommend configuring this CSP as a best practice but won't recommend on spec
 
 | **Node Name** | **Value** | **Description** |
 | --- | --- | --- |
-| Tenant ID | _Tenant ID_ | A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. |
-| _Tenant ID_/Policies/UsePassportForWork | True | Sets Windows Hello for Business as a method for signing into Windows. |
-| _Tenant ID_/Policies/RequireSecurityDevice | True | Requires a Trusted Platform Module (TPM) for Windows Hello for Business. |
-| _Tenant ID_/Policies/ExcludeSecurityDevices/TPM12 | False | TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business. |
-| _Tenant ID_/Policies/EnablePinRecovery | False | PIN recovery secret will not be created or stored. |
-| _Tenant ID_/Policies/UseCertificateForOnPremAuth | False | PIN will be provisioned when the user logs in, without waiting for a certificate payload. |
-| _Tenant ID_/Policies/PINComplexity/MinimumPINLength | 6 | PIN length must be greater than or equal to this number. |
+| Tenant ID | _TenantId_ | A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. |
+| _TenantId_/Policies/UsePassportForWork | True | Sets Windows Hello for Business as a method for signing into Windows. |
+| _TenantId_/Policies/RequireSecurityDevice | True | Requires a Trusted Platform Module (TPM) for Windows Hello for Business. |
+| _TenantId_/Policies/ExcludeSecurityDevices/TPM12 | False | TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business. |
+| _TenantId_/Policies/EnablePinRecovery | False | PIN recovery secret will not be created or stored. |
+| _TenantId_/Policies/UseCertificateForOnPremAuth | False | PIN will be provisioned when the user logs in, without waiting for a certificate payload. |
+| _TenantId_/Policies/PINComplexity/MinimumPINLength | 6 | PIN length must be greater than or equal to this number. |
 | _TenantId_/Policies/PINComplexity/MaximumPINLength | 6 | PIN length must be less than or equal to this number. |
 | _TenantId_/Policies/PINComplexity/UppercaseLetters | 2 | Digits are required and all other character sets are not allowed. |
 | _TenantId_/Policies/PINComplexity/LowercaseLetters | 2 | Digits are required and all other character sets are not allowed. |
