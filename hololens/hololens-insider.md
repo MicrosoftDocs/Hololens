@@ -130,7 +130,7 @@ The OMA-URI of new policy:
 
 [Storage Sense](https://support.microsoft.com/en-us/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5) is available on Hololens 2 today to manage cleanup of old files. IT admins can now also configure behavior of Storage Sense on Hololens 2 with following MDM policies:
 
-1. [Storage/AllowStorageSenseGlobal](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesenseglobal
+1. [Storage/AllowStorageSenseGlobal](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesenseglobal)
 1. [Storage/AllowStorageSenseTemporaryFilesCleanup](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesensetemporaryfilescleanup)
 1. [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensecloudcontentdehydrationthreshold)
 1. [Storage/ConfigStorageSenseDownloadsCleanupThreshold](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensedownloadscleanupthreshold)
