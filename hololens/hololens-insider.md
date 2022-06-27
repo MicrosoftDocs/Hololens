@@ -128,7 +128,13 @@ The OMA-URI of new policy:
 
 ### Clean up storage via MDM
 
-	In some scenarios, a device may require more space, so we've enabled a new way to clean up your temporary files / data on a device. Some of these files can be logs, crash dumps, downloads, or other files no longer needed on the device. We've created a way for both users and IT admins to delete these files. Here's how:
+[Storage Sense](https://support.microsoft.com/en-us/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5) is available on Hololens 2 today to manage cleanup of old files. IT admins can now also configure behavior of Storage Sense on Hololens 2 with following MDM policies:
+
+[Storage/AllowStorageSenseGlobal](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesenseglobal)
+[Storage/AllowStorageSenseTemporaryFilesCleanup](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesensetemporaryfilescleanup)
+[Storage/ConfigStorageSenseCloudContentDehydrationThreshold](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensecloudcontentdehydrationthreshold)
+[Storage/ConfigStorageSenseDownloadsCleanupThreshold](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensedownloadscleanupthreshold)
+[Storage/ConfigStorageSenseGlobalCadence](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-configstoragesenseglobalcadence)
 
 #### End user cleanup
 
