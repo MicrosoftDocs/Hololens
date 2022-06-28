@@ -38,11 +38,10 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | [Clean up storage via MDM](#clean-up-storage-via-mdm)                               | Clean   up files via MDM                                                                                                               | IT   Admin       |
 | [Fixes improvements](#fixes-improvements)                                    | Fixes and improvements for   HoloLens.                                                                                                 | All              |
 
-
 ### IT Admin Checklist
 
 ✔️ If you'd like to speed up new user sign-ons check out the new [new policies to speed up adding users](#policies-to-speed-up-adding-users). <br>
-✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#manage-users-on-device). <br>
+✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
 ✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery). <br>
 ✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm).
 
@@ -76,7 +75,6 @@ In some cases, a user might experience an issue during Autopilot that prevents i
 // NEEDS SCREENSHOT
 ![screenshotofthing](aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
 
-
 ### Clean up users on device
 
 Organizations with scaled deployments of HoloLens 2 devices may encounter the 64-user limit on the device, which will prevent additional users from being able to use the device. To address this situation, we've added controls allow old users to be deleted from the device at controlled intervals (something you have may have used on Desktop). This can also be useful for other reasons, which include increased security be removing old accounts, or speeding up the Iris scanning processes on the sign-in screen (fewer users to match means a faster comparison.) We've enabled two methods to control when to clean up old users.
@@ -91,10 +89,10 @@ Here's how to get started:
 1. Enable the process: **UserProfileManagement/EnableProfileManager**
     1. Bool value, set to **True**
 1. Set the inactivity threshold: **UserProfileManagement/ProfileInactivityThreshold**
-    1. This is the number of days until a user is deleted. 
+    1. This is the number of days until a user is deleted.
         - Default value is 30.
 1. Set the maximum users on device **UserProfileManagement/StorageCapacityStartDeletion**
-    1. This determines how many users can be on the device. 
+    1. This determines how many users can be on the device.
         - Default value is 25.
         - Maximum for HoloLens is 64.
 1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes for both threshold and inactive users.
@@ -128,13 +126,13 @@ The OMA-URI of new policy:
 
 ### Clean up storage via MDM
 
-[Storage Sense](https://support.microsoft.com/en-us/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5) is available on Hololens 2 today to manage cleanup of old files. IT admins can now also configure behavior of Storage Sense on Hololens 2 with following MDM policies:
+[Storage Sense](/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5) is available on HoloLens 2 today to manage cleanup of old files. IT admins can now also configure behavior of Storage Sense on Hololens 2 with following MDM policies:
 
-1. [Storage/AllowStorageSenseGlobal](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesenseglobal)
-1. [Storage/AllowStorageSenseTemporaryFilesCleanup](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesensetemporaryfilescleanup)
-1. [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensecloudcontentdehydrationthreshold)
-1. [Storage/ConfigStorageSenseDownloadsCleanupThreshold](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensedownloadscleanupthreshold)
-1. [Storage/ConfigStorageSenseGlobalCadence](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage#storage-configstoragesenseglobalcadence)
+- [Storage/AllowStorageSenseGlobal](/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesenseglobal)
+- [Storage/AllowStorageSenseTemporaryFilesCleanup](/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesensetemporaryfilescleanup)
+- [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensecloudcontentdehydrationthreshold)
+- [Storage/ConfigStorageSenseDownloadsCleanupThreshold](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensedownloadscleanupthreshold)
+- [Storage/ConfigStorageSenseGlobalCadence](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesenseglobalcadence)
 
 #### End user cleanup
 
