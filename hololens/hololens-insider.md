@@ -70,7 +70,7 @@ For more info on how to increase your setup speed for new users, check out our [
 
 ### Autopilot reset experience
 
-In certain Autopilot failure scenarios on Hololens 2, if "Allow users to reset device if installation error occurs." setting in ESP configuration is set to "Yes", "Reset device" button will be displayed on Hololens 2. If "Reset device" button is selected by the user, Hololens 2 will automatically reboot, reset operating system and OOBE experience after delay of approximately 1 minute. This improvement will enable users to begin Autopilot experience again without requiring a manual flash of Hololens 2.
+In certain Autopilot failure scenarios on HoloLens 2, if "Allow users to reset device if installation error occurs." setting in ESP configuration is set to "Yes", "Reset device" button will be displayed on HoloLens 2. If "Reset device" button is selected by the user, HoloLens 2 will automatically reboot, reset operating system and OOBE experience after delay of approximately 1 minute. This improvement will enable users to begin Autopilot experience again without requiring a manual flash of HoloLens 2.
 
 ### Clean up users on device
 
