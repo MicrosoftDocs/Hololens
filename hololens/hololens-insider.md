@@ -31,7 +31,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | Feature                                                | Description                                                                                                                            | User or Scenario |
 |--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | [New policies to speed up adding users](#policies-to-speed-up-adding-users)                          | New   policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT   Admin       |
-| [Autopilot restart](#autopilot-restart)                                 | Enabled   the Troubleshooter for Autopilot to work with HoloLens, and an option   to retry if it failed                         | IT   Admin       |
+| [Autopilot reset experience](#Autopilot reset experience)                                 | Enabled   the Troubleshooter for Autopilot to work with HoloLens, and an option   to retry if it failed                         | IT   Admin       |
 | [Clean up users on device](#clean-up-users-on-device)                                 | New   policies to manage when to clear out users on the device                                                                         | IT   Admin       |
 | [New policy disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery)                 | Turn off auto-reconnect to Wi-fi access points                                                                                                                         | IT   Admin       |
 | [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)                       | New   policy that IT Admins can enable that allows the use of captive portals on   the sign-in screen to help connecting to Wi-Fi | IT   Admin       |
@@ -68,12 +68,9 @@ The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune)
 
 For more info on how to increase your setup speed for new users, check out our [guide on how to quickly set up new users.](hololens2-new-user-optimize.md)
 
-### Autopilot restart
+### Autopilot reset experience
 
-In some cases, a user might experience an issue during Autopilot that prevents it from completing. For situations like this, we've enabled the restart button to allow the user to restart the autopilot flow. This new button will be available on the Enrollment Status Page that is shown during the Autopilot process. 
-
-// NEEDS SCREENSHOT
-![screenshotofthing](aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+In certain Autopilot failure scenarios on Hololens 2, if "Allow users to reset device if installation error occurs." setting in ESP configuration is set to "Yes", "Reset device" button will be displayed on Hololens 2. If "Reset device" button is selected by the user, Hololens 2 will automatically reboot, reset operating system and OOBE experience after delay of approximately 1 minute. This improvement will enable users to begin Autopilot experience again without requiring a manual flash of Hololens 2.
 
 ### Clean up users on device
 
