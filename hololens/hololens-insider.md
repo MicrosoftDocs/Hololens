@@ -101,13 +101,13 @@ To learn more about these policies, visit [AccountManagement CSP](/windows/clien
 Wi-Fi auto recovery is enabled on HoloLens 2 by default. In some cases you may want your devices to not automatically reconnect. This may be because you have a preferred network you want to keep your devices on, you find yourself reconnecting to an access point that doesn't have internet, or you want to keep those devices offline in specific areas. For those cases we've enabled a new policy that you can opt to use to keep your devices from automatically reconnecting back to your access points.
 
 The OMA-URI of new policies:
-`./Device/Vendor/MSFT/Policy/Config/MixedReality/NEWPOLICYOMAURI`
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/DisableNCSIPassivePolling`
 
-- Bool value // DOUBLE CHECK THIS LATER
+- Bool value
 
 ### Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in
 
-Sometimes Wi-Fi connections require additional information to provide credentials to the access point. Previously users were only able to do this the first time the device was set up in OOBE, or in the Settings app once signed in. Previously, users couldn't adjust this configuration on the sign-in screen, which was sometimes tricky to work around. 
+Sometimes Wi-Fi connections require additional information to provide credentials to the access point. Previously users were only able to do this the first time the device was set up in OOBE, or in the Settings app once signed in. Previously, users couldn't adjust this configuration on the sign-in screen, which was sometimes tricky to work around.
 
 This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a [captive portal](/windows-hardware/drivers/mobilebroadband/captive-portals) on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
 
@@ -123,39 +123,26 @@ The OMA-URI of new policy:
 
 ### Clean up storage via MDM
 
-[Storage Sense](/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5) is available on HoloLens 2 today to manage cleanup of old files. IT admins can now also configure behavior of Storage Sense on Hololens 2 with following MDM policies:
+[Storage Sense](/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5) is available on HoloLens 2 today to manage cleanup of old files. IT admins can now also configure behavior of Storage Sense on HoloLens 2 with following MDM policies:
 
 - [Storage/AllowStorageSenseGlobal](/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesenseglobal)
+  - Sets Storage sense to be enabled on the device and will run whenever reaching low storage.
 - [Storage/AllowStorageSenseTemporaryFilesCleanup](/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesensetemporaryfilescleanup)
+  - When Storage Sense runs, it can delete the user’s temporary files that aren't in use.
 - [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensecloudcontentdehydrationthreshold)
+  - When Storage Sense runs, it can dehydrate cloud-backed content that hasn’t been opened in a certain number of days. If you enable this policy setting, you must provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it. Supported values are: 0–365.
 - [Storage/ConfigStorageSenseDownloadsCleanupThreshold](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensedownloadscleanupthreshold)
+  - When Storage Sense runs, it can delete files in the user’s Downloads folder if they haven’t been opened for more than a certain number of days. If you enable this policy setting, you must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from the Downloads folder. Supported values are: 0-365.
 - [Storage/ConfigStorageSenseGlobalCadence](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesenseglobalcadence)
-
-#### End user cleanup
-
-End users can find this button on their device in the Settings app.
-
-//////////////////////
-WIP STEPS UNTIL WE BUILD THE UI / FEATURE 
-
-1. Open the Settings app
-1.  // ......................... select the buttons and do the things
-
-// NEEDS SCREENSHOT
-![screenshotofthing](aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
-
-#### IT Admin clean up
-
-It admins can start the same process as end users. They can do it by:
-
-1. // STEPS AND THINGS DEPENDING ON WHAT CSP WE END UP USING
-
-END WIP
-////////////////////////
+  - Storage Sense can automatically clean some of the user’s files to free up disk space. The following are supported options:
+    - 1 – Daily
+    - 7 – Weekly
+    - 30 – Monthly
+    - 0 – During low free disk space (Default)
 
 ### Fixes improvements
 
-- Free storage space, SSID, BSSID values are now displayed on Intune's hardware page for devices.
+- Free storage space values are now displayed on Microsoft Intune's hardware page for devices.
 - It will be possible to issue an app uninstall command in the device context using EnterpriseModernAppManagement CSP.
 
 ### Upcoming Fixes and Improvements
