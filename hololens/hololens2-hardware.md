@@ -2,7 +2,7 @@
 title: HoloLens 2 hardware
 description: Learn about the components that make up the Microsoft HoloLens 2, the latest evolution of an untethered holographic Microsoft computer running Windows 10.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 11/1/2021
+ms.date: 7/5/2022
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -61,6 +61,15 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 | **Holographic resolution** | 2k 3:2 light engines |
 | **Holographic density** | >2.5k radiants (light points per radian) |
 | **Eye-based rendering** | Display optimization for 3D eye position |
+
+### Visual light camera (VLC)
+
+| Specification  | Design value (nominal) |
+|---|---|
+| **Focal Length** | 1.08mm |
+| **FOV (diagonal)** | 96.1 degrees |
+| **Coplanar (both point forward and are parallel in view?)** | Yes (for forward-facing VLC’s) |
+| **Stereo baseline** | 98.6mm (for forward-facing VLC’s) |
 
 ### Sensors
 
