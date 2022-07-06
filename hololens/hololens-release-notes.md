@@ -54,7 +54,6 @@ To help provide clarity this release notes page will only provide information fo
 
 Improvements and fixes in the update:
 
-- Medical partners can access 90fps eye tracking via Extended ET API.
 - Fixed an issue where trying to debug hologram stability for OpenXR workflows may cause a crash.
 
 ## Windows Holographic, version 22H1 - June 2022 Update
@@ -1154,7 +1153,7 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 ✔️[New OS diagnostic traces](#new-os-diagnostic-traces): Collect logs related to OS Updates.
 
-### Improvements and fixes in the update:
+### Improvements and fixes in the update
 
 - [Offline diagnostics](hololens-diagnostic-logs.md#offline-diagnostics) will also include additional device information for serial number and OS version.
 - Fixes an issue around deployment of line-of-business applications via runtime provisioning packages.
