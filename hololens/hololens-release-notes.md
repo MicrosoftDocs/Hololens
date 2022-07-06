@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 5/18/2022
+ms.date: 7/12/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -47,6 +47,15 @@ To help provide clarity this release notes page will only provide information fo
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+## Windows Holographic, version 22H1 - July 2022 Update
+
+- Build 20348.1511
+
+Improvements and fixes in the update:
+
+- Medical partners can access 90fps eye tracking via Extended ET API.
+- Fixed an issue where trying to debug hologram stability for OpenXR workflows may cause a crash.
 
 ## Windows Holographic, version 22H1 - June 2022 Update
 
@@ -869,7 +878,7 @@ If you're unhappy with the custom color profile saved to your HoloLens 2, you ca
 #### Top display color calibration-known issues
 
 - On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings.
-    - Workaround: Select another Settings page and then re-select the Calibration page.
+  - Workaround: Select another Settings page and then re-select the Calibration page.
 
 #### Default app picker
 
@@ -1154,24 +1163,3 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 - Fixes an issue that could lead to incorrect symbols being typed in Edge for Japanese customers.
 - Improves the resiliency of OS updates around preinstalled apps such as Edge.
 - Addresses an update reliability impacting the installation of Microsoft Edge.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
