@@ -94,7 +94,7 @@ If you have your own app you'd like to include in your kiosk, then there's a met
 1. [Multiple app assigned access profile for visitors](#multiple-app-assigned-access-profile-for-visitors)
 
 > [!NOTE]
-> Replace TODO actions as per your requirements.
+> Replace TODO actions per your requirements.
 
 ### Multiple app global assigned access profile
 
