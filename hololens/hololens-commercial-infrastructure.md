@@ -77,7 +77,7 @@ Guides only require network access to download and use the app.
 1. Ensure that you have an Azure AD License.
 Please [HoloLens Licenses Requirements](hololens-licenses-requirements.md) for additional information.
 
-1. If you plan on using Auto Enrollment, you'll have to [Configure Azure AD enrollment.](/intune/deploy-use/.set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)
+1. If you plan on using Auto Enrollment, you'll have to [Configure Azure AD enrollment.](/mem/intune/enrollment/windows-enrollment-methods)
 
 1. Ensure that your company's users are in Azure Active Directory (Azure AD).
 See the following [instructions](/azure/active-directory/fundamentals/add-users-azure-active-directory) for adding users.
