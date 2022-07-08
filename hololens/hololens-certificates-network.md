@@ -4,13 +4,13 @@ description: Learn how to configure, use, deploy, and troubleshoot certificates 
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: aboeger
+ms.author: millerevan
+manager: lolab
+ms.reviewer: ruizhao
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 9/15/2020
-ms.reviewer: v-evmill
+ms.date: 6/10/2022
 audience: ITPro
-manager: sekerawa
 appliesto:
 - HoloLens 2
 ---
@@ -18,18 +18,21 @@ appliesto:
 
 Certificate-based authentication is a common requirement for customers using HoloLens 2. You might require certificates to access Wi-Fi, to connect to VPN solutions, or for accessing internal resources in your organization.
 
-Because HoloLens 2 devices are typically joined to Azure Active Directory (Azure AD) and managed by Intune or other MDM provider, you will need to deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with your MDM solution. 
+Because HoloLens 2 devices are typically joined to Azure Active Directory (Azure AD) and managed by Intune or other MDM provider, you'll need to deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with your MDM solution. 
 
 >[!NOTE]
 > If you do not have an MDM provider, you can still deploy certificates via a [provisioning package](hololens-provisioning.md#create-the-provisioning-package) in [Windows Configuration Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) or through [Certificate Manager](certificate-manager.md) by going to **Settings > Update & Security > Certificate Manager**.
 
 ## Certificate requirements
+
 Root certificates are required to deploy certificates through a SCEP or PKCS infrastructure. Other applications and services in your organization might require root certificates to be deployed to your HoloLens 2 devices as well. 
 
 ## Wi-Fi connectivity requirements
-To allow a device to be automatically provided with the required Wi-Fi configuration for your enterprise network, you will need a Wi-Fi configuration profile. You can configure Intune or other MDM provider to deploy these profiles to your devices. If your network security requires devices to be part of the local domain, you might also need to evaluate your Wi-Fi network infrastructure to make sure it's compatible with HoloLens 2 devices (HoloLens 2 devices are Azure AD-joined only).
+
+To allow a device to be automatically provided with the required Wi-Fi configuration for your enterprise network, you'll need a Wi-Fi configuration profile. You can configure Intune or other MDM provider to deploy these profiles to your devices. If your network security requires devices to be part of the local domain, you might also need to evaluate your Wi-Fi network infrastructure to make sure it's compatible with HoloLens 2 devices (HoloLens 2 devices are Azure AD-joined only).
 
 ## Deploy certificate infrastructure
+
 If no SCEP or PKCS infrastructure already exists, you'll need to prepare one. 
 To support the use of SCEP or PKCS certificates for authentication, Intune requires the use of a [certificate connector](/mem/intune/protect/certificate-connectors).
 
@@ -39,6 +42,10 @@ To support the use of SCEP or PKCS certificates for authentication, Intune requi
 For more information, see [Configure a certificate profile for your devices in Microsoft Intune.](/intune/certificates-configure)
 
 ## Deploy certificates and Wi-Fi/VPN profile
+
+> [!IMPORTANT]
+> On HoloLens devices, VPN profiles are applied at the device scope and will apply to all users.
+
 To deploy certificates and profiles, follow these steps:
 
 1.	Create a profile for each of the Root and Intermediate certificates (see [Create trusted certificate profiles](/intune/protect/certificates-configure#create-trusted-certificate-profiles).) Each of these profiles must have a description that includes an expiration date in DD/MM/YYYY format. **Certificate profiles without an expiration date will not be deployed.**
@@ -68,7 +75,7 @@ Device fails to establish network connection with certificate-based authenticati
 
 **Troubleshooting steps**
 
-1. In the event that you need to validate that a certificate is deployed correctly please use the [Certificate Manager](certificate-manager.md) on the device to verify your certificate is present.  
+1. If you need to validate that a certificate is deployed correctly please use the [Certificate Manager](certificate-manager.md) on the device to verify your certificate is present.  
 
     >[!WARNING]
     > Although you can view MDM-deployed certificates in Certificate Manager, you cannot uninstall them in Certificate Manager. You must uninstall them through MDM.
