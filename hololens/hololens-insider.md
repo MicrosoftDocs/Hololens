@@ -31,6 +31,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 ### Upcoming Fixes and Improvements
 
 - In-box OpenXR code updated. This is to provide best out-of-box experience for customers without Microsoft store access.
+- Medical partners can access 90fps eye tracking via Extended ET API.
 
 ## Start receiving Insider builds
 
