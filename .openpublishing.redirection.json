@@ -1,74 +1,74 @@
 {
-    "redirections":  [
-                        {
-                            "source_path":  "hololens/hololens-public-preview-apps.md",
-                            "redirect_url":  "https://docs.microsoft.com/dynamics365/#pivot=mixed-reality-apps",
-                            "redirect_document_id":  false
-                        },
-                        {
-                            "source_path":  "hololens/hololens-microsoft-remote-assist-app.md",
-                            "redirect_url":  "https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/",
-                            "redirect_document_id":  false
-                        },
-                        {
-                            "source_path":  "hololens/hololens-microsoft-dynamics-365-layout-app.md",
-                            "redirect_url":  "https://docs.microsoft.com/dynamics365/mixed-reality/layout/",
-                            "redirect_document_id":  false
-                        },
-                        {
-                            "source_path":   "hololens/hololens-whats-new.md",
-                            "redirect_url":  "https://docs.microsoft.com/hololens/hololens-release-notes",
-                            "redirect_document_id":  true
-                        },
-                        {
-                            "source_path":   "hololens/hololens-restart-recover.md",
-                            "redirect_url":  "/hololens/hololens-recovery",
-                            "redirect_document_id":  false
-                        },
-                        {
-                            "source_path":   "hololens/hololens-microsoft-layout-app.md",
-                            "redirect_url":  "https://docs.microsoft.com/hololens/hololens-microsoft-dynamics-365-layout-app",
-                            "redirect_document_id":  true
-                        },
-                        {
-                            "source_path":   "hololens/hololens-upgrade-enterprise.md",
-                            "redirect_url":  "https://docs.microsoft.com/hololens/hololens-requirements#upgrade-to-windows-holographic-for-business",
-                            "redirect_document_id":  true
-                        },
-                        {
-                            "source_path":   "hololens/hololens-install-apps.md",
-                            "redirect_url":  "https://docs.microsoft.com/hololens/holographic-store-apps",
-                            "redirect_document_id":  false
-                        },
-                        {
-                            "source_path":   "hololens/security-wireless-wifi.md",
-                            "redirect_url":  "https://docs.microsoft.com/hololens/security-overview",
-                            "redirect_document_id":  true
-                        },
-                        {
-                            "source_path":  "hololens/app-deploy-web-installer.md",
-                            "redirect_url": "https://docs.microsoft.com/hololens/app-deploy-app-installer",
-                            "redirect_document_id":  false
-                        },
-                        {
-                            "source_path":  "hololens/includes/options-overview.md",
-                            "redirect_url": "https://docs.microsoft.com/hololens/hololens2-options",
-                            "redirect_document_id":  false
-                        },
-                        {
-                            "source_path":  "hololens/common-scenarios.md",
-                            "redirect_url": "https://docs.microsoft.com/hololens/hololens-requirements",
-                            "redirect_document_id":  false
-                        },
-                        {
-                            "source_path": "hololens/hololens2-compliance.md",
-                            "redirect_url": "https://docs.microsoft.com/hololens/hololens2-privacy",
-                            "redirect_document_id":  true
-                        },
-                        {
-                            "source_path":  "hololens/hololens-global-assigned-access-kiosk.md",
-                            "redirect_url": "/hololens/hololens-kiosk",
-                            "redirect_document_id":  false
-                        }
-                    ]
+    "redirections": [
+        {
+            "source_path": "hololens/hololens-public-preview-apps.md",
+            "redirect_url": "/dynamics365/#pivot=mixed-reality-apps",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "hololens/hololens-microsoft-remote-assist-app.md",
+            "redirect_url": "/dynamics365/mixed-reality/remote-assist/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "hololens/hololens-microsoft-dynamics-365-layout-app.md",
+            "redirect_url": "/dynamics365/mixed-reality/layout/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "hololens/hololens-whats-new.md",
+            "redirect_url": "/hololens/hololens-release-notes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "hololens/hololens-restart-recover.md",
+            "redirect_url": "/hololens/hololens-recovery",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "hololens/hololens-microsoft-layout-app.md",
+            "redirect_url": "/hololens/hololens-microsoft-dynamics-365-layout-app",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "hololens/hololens-upgrade-enterprise.md",
+            "redirect_url": "/hololens/hololens-requirements#upgrade-to-windows-holographic-for-business",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "hololens/hololens-install-apps.md",
+            "redirect_url": "/hololens/holographic-store-apps",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "hololens/security-wireless-wifi.md",
+            "redirect_url": "/hololens/security-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "hololens/app-deploy-web-installer.md",
+            "redirect_url": "/hololens/app-deploy-app-installer",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "hololens/includes/options-overview.md",
+            "redirect_url": "/hololens/hololens2-options",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "hololens/common-scenarios.md",
+            "redirect_url": "/hololens/hololens-requirements",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "hololens/hololens2-compliance.md",
+            "redirect_url": "/hololens/hololens2-privacy",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "hololens/hololens-global-assigned-access-kiosk.md",
+            "redirect_url": "/hololens/hololens-kiosk",
+            "redirect_document_id": false
+        }
+    ]
 }
