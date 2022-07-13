@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 4/12/2022
+ms.date: 7/12/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -47,6 +47,43 @@ To help provide clarity this release notes page will only provide information fo
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+## Windows Holographic, version 22H1 - July 2022 Update
+
+- Build 20348.1511
+
+Improvements and fixes in the update:
+
+- Fixed an issue where trying to debug hologram stability for OpenXR workflows may cause a crash.
+
+## Windows Holographic, version 22H1 - June 2022 Update
+
+- Build 20348.1506
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to keep your devices up to date for all the latest fixes and improvements. Keep an eye on our [Insider builds](hololens-insider.md) for some potential new features for our next feature release.
+
+## Microsoft Store app update
+
+There is a new version of the Microsoft Store app for the HoloLens 2. This app update will occur seamlessly when the Microsoft Store app itself is updated. When the update is complete, you'll see a storefront very similar to the store app that is available on desktop. Since this is an app update it will be distributed to all HoloLens 2 devices, regardless of OS version.
+
+![Image of new store app that became availble in May 2022](images/store-app-hololens2-censored.jpg)
+
+With the new store you'll see apps that are available for HoloLens 2, and you'll be able to scroll through different various industries and solutions to view apps that may be useful to you. You'll be able to access any company apps by selecting the Work icon which looks like a briefcase in the top left. (The company name and user has been censored in this screenshot).
+
+Want to check your apps, or app versions? You can select the **Library** icon and **Get updates**. Want to know what version an app is on? From the **Library** screen select an app installed on your device to go to that apps page, and scroll to the bottom and look for **>_ Installed version**.
+
+## Windows Holographic, version 22H1 - May 2022 Update
+
+- Build 20348.1503
+
+Improvements and fixes in the update:
+
+- Fixed a Known issue where [HoloLens user couldn't launch Microsoft Edge](hololens-troubleshooting.md#fixed---hololens-user-cant-launch-microsoft-edge) if ApplicationManagement/AllowAllTrustedApps GPO is disabled.
+- Improved reliability in remote diagnostic log collection via Microsoft Intune, especially for logs of larger sizes.
+- When initiating a Device Wipe of a HoloLens 2 from Intune, the device will now be deleted for Intune's console after the device is wiped.
+- Improved reliability when using the AutoRestartRequiredNotificationDismissal and ScheduleRestartWarning policies.
 
 ## Windows Holographic, version 22H1
 
@@ -169,7 +206,7 @@ Supported values:
 
 ### Moving Platform Mode SDK
 
-Sometimes you may want the decision on if to use Moving Platform Mode to be dependant on your situation, you may only need it enabled when using your app, or only a specific app. In these cases you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
+Sometimes you may want the decision on if to use Moving Platform Mode to be dependent on your situation, you may only need it enabled when using your app, or only a specific app. In these cases you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
 
 #### Improvements and fixes in the February 2022 update
 
@@ -392,7 +429,7 @@ On a device where this policy is configured, the user specified in the policy wi
 
 #### Overview to try auto-logon CSP
 
-1. Configure the new CSP to a desired user [using a custom policy](/mem/intune/configuration/custom-settings-windows-10) : `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+1. Configure the new CSP to a desired user [using a custom policy](/mem/intune/configuration/custom-settings-windows-10): `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
 1. Apply the CSP to the device via [provisioning package](hololens-provisioning.md) or [MDM](hololens-mdm-configure.md).
 1. Sign into the specified account.
 1. Restart the device and observe the user is automatically logged in.
@@ -445,7 +482,7 @@ This information can be found later in the [app deployment store for business pa
 #### Overview to try only private store apps
 
 1. Configure the new policy for your devices via [MDM](hololens-mdm-configure.md).
-1. Log into a device that has the policy.
+1. Log in to a device that has the policy.
 1. Open the Microsoft Store app and observe you can only see your organization's apps.
 
 ### Use WDAC and LOB apps
@@ -586,7 +623,7 @@ This update contains features for two target audiences; features that can be use
 [Install web apps](#install-web-apps) | Install web apps on HoloLens 2, like Microsoft Office, with the new Microsoft Edge browser. | End User |
 [Swipe to type](#swipe-to-type) | Use the tip of your finger to "swipe" words on the holographic keyboard. | End User |
 [Power menu from Start](#power-menu-from-start) | On Start Menu, restart and shut down HoloLens device. | End User |
-[Multiple users listed on Sign in screen](#multiple-users-listed-on-sign-in-screen) | Display multiple user accounts on the Sign in screen. | End User |
+[Multiple users listed on Sign-in screen](#multiple-users-listed-on-sign-in-screen) | Display multiple user accounts on the Sign-in screen. | End User |
 [USB-C External Microphone Support](#usb-c-external-microphone-support) | Use USB-C microphones for apps and / or Remote Assist. | End User |
 [Visitor Auto-logon for Kiosks](#visitor-auto-logon-for-kiosks) | Enables the auto-logon on Visitor accounts to be used for Kiosk modes. | IT Admin |
 [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes)  | AUMIDs for new Settings and Edge apps. | IT Admin |
@@ -628,12 +665,12 @@ The new Microsoft Edge offers IT admins a much broader set of browser policies o
 Here are some helpful resources for learning more about managing policy settings for the new Microsoft Edge:
 
 - [Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune)
-- [Microsoft Edge Legacy to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
-- [Google Chrome to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- [Microsoft Edge Legacy to Microsoft Edge policy mapping](/microsoft-edge/deploy/group-policies/)
+- [Google Chrome to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policies)
 - Full [Microsoft Edge Enterprise documentation](/deployedge/)
 
 > [!IMPORTANT]
-> Because of the volume of browser policies supported by the new Microsoft Edge, our team is unable to guarantee that each new policy works on HoloLens 2. However, we've tested and confirmed than the new Microsoft Edge equivalent of each legacy Microsoft Edge policy previously supported on HoloLens 2 work as expected. See [Microsoft Edge Legacy to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policy-map-legacy-to-newedge) to find the new Microsoft Edge equivalent of each legacy Microsoft Edge browser policy you were using with HoloLens 2.
+> Because of the volume of browser policies supported by the new Microsoft Edge, our team is unable to guarantee that each new policy works on HoloLens 2. However, we've tested and confirmed than the new Microsoft Edge equivalent of each legacy Microsoft Edge policy previously supported on HoloLens 2 work as expected. See [Microsoft Edge Legacy to Microsoft Edge policy mapping](/microsoft-edge/deploy/group-policies/) to find the new Microsoft Edge equivalent of each legacy Microsoft Edge browser policy you were using with HoloLens 2.
 >
 > There are at least two new Microsoft Edge policies that we know *will not* work with HoloLens 2:
 >
@@ -840,7 +877,7 @@ If you're unhappy with the custom color profile saved to your HoloLens 2, you ca
 #### Top display color calibration-known issues
 
 - On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings.
-    - Workaround: Select another Settings page and then re-select the Calibration page.
+  - Workaround: Select another Settings page and then re-select the Calibration page.
 
 #### Default app picker
 
@@ -891,13 +928,13 @@ The menu options also change to reflect the presence of the update.<br/><br/>
 
 <img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
 
-### Multiple users listed on Sign in screen
+### Multiple users listed on Sign-in screen
 
-Previously the Sign In screen showed only the most recently signed in user, as well as an 'Other user' entry point. We have received customer feedback that this not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
+Previously the Sign-in screen showed only the most recently signed in user, as well as an 'Other user' entry point. We have received customer feedback that this not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
 
-Introduced in this Windows build, when selecting **Other user** which is located to the right of the PIN entry field, the Sign in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other users page via the **Add account** button.
+Introduced in this Windows build, when selecting **Other user** which is located to the right of the PIN entry field, the Sign-in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other users page via the **Add account** button.
 
-When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign in screen for this user.
+When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign-in screen for this user.
 
 ![Sign-in screen default.](./images/multiusers1.jpg)
 
@@ -953,7 +990,7 @@ For a non-AAD configuration, to configure a device for visitor auto-logon:
     1. Do not create a local account
 1. [Apply the provisioning package](hololens-provisioning.md).
 
-For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign-in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
 
 Visitor Auto logon can be managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
 
@@ -980,7 +1017,7 @@ When modifying a Kiosk to include the new apps, we recommend adding in the new A
 
 In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)” menu.
 
-Starting in this Windows release, the kiosk experience will  to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
+Starting in this Windows release, the kiosk experience will go to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
 ### New Settings URIs for Page Settings Visibility
 
@@ -1116,7 +1153,7 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 ✔️[New OS diagnostic traces](#new-os-diagnostic-traces): Collect logs related to OS Updates.
 
-### Improvements and fixes in the update:
+### Improvements and fixes in the update
 
 - [Offline diagnostics](hololens-diagnostic-logs.md#offline-diagnostics) will also include additional device information for serial number and OS version.
 - Fixes an issue around deployment of line-of-business applications via runtime provisioning packages.
@@ -1125,24 +1162,3 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 - Fixes an issue that could lead to incorrect symbols being typed in Edge for Japanese customers.
 - Improves the resiliency of OS updates around preinstalled apps such as Edge.
 - Addresses an update reliability impacting the installation of Microsoft Edge.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

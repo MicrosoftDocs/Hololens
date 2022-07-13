@@ -2,14 +2,14 @@
 title: Find, install, and uninstall applications
 description: The Microsoft Store is your source for apps and games that work with HoloLens.  Learn more about finding, installing, and uninstalling holographic apps.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
-ms.reviewer: v-miegge
 ms.date: 3/7/2022
-manager: jarrettr
+author: evmill
+ms.author: millerevan
+manager: lolab
+ms.reviewer: qizho
 keywords: hololens, store, uwp, app, install
 ms.prod: hololens
 ms.sitesec: library
-author: mattzmsft
-ms.author: mazeller
 ms.topic: article
 ms.localizationpriority: high
 appliesto:
@@ -27,6 +27,14 @@ Apps on HoloLens use either 2D view or holographic view. Apps that use 2D view l
 HoloLens supports many existing applications from the Microsoft Store, and new apps built specifically for HoloLens.  This article focuses on holographic applications from the Microsoft Store.
 
 To learn more about installing and running custom apps, read [Custom holographic applications](holographic-custom-apps.md).
+
+## New look for the store
+
+There is a new version of the Microsoft Store app for the HoloLens 2. This app update will occur seamlessly when the Microsoft Store app itself is updated. When the update is complete, you'll see a storefront very similar to the store app that is available on desktop. Since this is an app update it will be distributed to all HoloLens 2 devices, regardless of OS version.
+
+![Image of new store app that became availble in May 2022](images/store-app-hololens2-censored.jpg)
+
+Much of the store's functionality will be the same, however some placement of items or changes in icons has occurred. One such instance is the see more button "**...**" has been removed, and to find your apps and updates you can use the **Library** button.
 
 ## Find apps
 
@@ -110,6 +118,20 @@ See also: [Enabling automatic uploads to OneDrive for business](hololens-release
 ### Manual updates
 
 To update an app you installed from the Microsoft Store, you can update the app from the Microsoft Store app. For apps installed for the Microsoft Store for Business, you can also update those apps from the Microsoft Store for Business.
+
+#### Newer Microsoft Store app
+
+1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/hololens2-basic-usage#start-gesture).
+
+1. Select the Store app.
+
+1. Look at the bottom left of the store app.
+
+1. Select the **Library** icon and **Get updates**. 
+
+Want to know what version an app is on? From the **Library** screen select an app installed on your device to go to that apps page, and scroll to the bottom and look for **>_ Installed version**.
+
+#### Older Microsoft Store app
 
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
 

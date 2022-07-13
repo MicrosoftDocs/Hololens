@@ -2,29 +2,28 @@
 
 
 
-## Week of May 02, 2022
+## Week of July 04, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 5/2/2022 | [Common Scenarios – Near Offline or Restricted for HoloLens 2](/hololens/hololens-common-scenarios-near-offline-restricted) | added |
-| 5/2/2022 | [Common Deployment Scenarios](/hololens/hololens-requirements) | modified |
+| 7/5/2022 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
+| 7/7/2022 | [HoloLens kiosk reference information](/hololens/hololens-kiosk-reference) | modified |
 
 
-## Week of April 25, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/28/2022 | [Manage connection endpoints for HoloLens](/hololens/hololens-offline) | modified |
-| 4/28/2022 | [Manage connection endpoints for HoloLens](/hololens/hololens-offline) | modified |
-
-
-## Week of April 18, 2022
+## Week of June 27, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 4/18/2022 | [Configure HoloLens by using a provisioning package (HoloLens)](/hololens/hololens-provisioning) | modified |
-| 4/21/2022 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 4/21/2022 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
+| 6/28/2022 | [Infrastructure Guidelines for HoloLens](/hololens/hololens-commercial-infrastructure) | modified |
+| 6/28/2022 | [Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices](/hololens/hololens-mdm-configure) | modified |
+
+
+## Week of June 06, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/8/2022 | [Using 3D Viewer Beta on HoloLens (1st gen)](/hololens/holographic-3d-viewer-beta) | modified |
+| 6/10/2022 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |

@@ -2,12 +2,12 @@
 title: HoloLens 2 release notes for Windows Holographic, version 2004
 description: Read about feature releases on an older servicing build.
 author: evmill
-ms.author: v-evmill
-manager: ranjibb
+ms.author: millerevan
+manager: lolab
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
-ms.date: 4/12/2022
+ms.date: 7/12/2022
 audience: ITPro
 appliesto:
 - HoloLens 2
@@ -28,13 +28,37 @@ These are the major feature releases from Windows Holographic, version 2004.
 |------------------------|-------------------------------------|--------------|--------------|
 | 19041                  | [Windows Holographic, version 2004](#windows-holographic-version-2004) <br> [Windows Holographic, version 20H2](#windows-holographic-version-20h2)    | May 2020 <br> Nov 2020     | 19041.1103 <br> 19041.1128   |
 
+## Windows Holographic, version 20H2 - July 2022 Update
+
+- Build 19041.1190
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 22H1.
+
+## Windows Holographic, version 20H2 - June 2022 Update
+
+- Build 19041.1188
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 22H1.
+
+## Windows Holographic, version 20H2 - May 2022 Update
+
+- Build 19041.1185
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 22H1.
+
 ## Windows Holographic, version 20H2 - April 2022 Update
 
 - Build 19041.1183
 
 Improvements and fixes in the update:
 
-- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 21H2.
+- This monthly quality update doesn't contain any notable changes, we encourage you to try out our latest build, Windows Holographic, version 22H1.
 
 ## Windows Holographic, version 20H2 - March 2022 Update
 
@@ -205,7 +229,7 @@ Read about the full process of [installing apps on HoloLens 2 with the App Insta
 
 ![Installing MRTK Examples via App Installer.](images/hololens-app-installer-picture.jpg)
 
-### Improvements and fixes in the update:
+### Improvements and fixes in the update
 
 - Hand tracking now maintains tracking in many new cases where the hand previously would have been lost.  In some of these new cases, only the palm position continues to update based on the user’s real hand, while the other joints are inferred based on a previous pose.  This change helps improve tracking consistency in movements such as slapping, throwing, scooping, and clapping.  It also helps in cases where the hand is close to a surface or holding an object.  When hand joints are being inferred, the [per joint accuracy](/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) value will be set to “Approximate” instead of “High.”
 - Fixed an issue where PIN reset for Azure AD accounts would show an error "Something went wrong.
@@ -554,7 +578,7 @@ Due to customer feedback we’ve increased the recording length of [mixed realit
 
 You can find the full requirements in our [holographic photos and videos](holographic-photos-and-videos.md#maximum-recording-length) documentation.
 
-### Improvements and fixes in the Windows Holographic, version 20H2 update:
+### Improvements and fixes in the Windows Holographic, version 20H2 update
 
 - More screens in OOBE  are now in dark mode.
 - Learn more content should point to the latest Privacy Statement online.
@@ -638,7 +662,7 @@ Improvements and fixes in the update:
 
 - Build - 19041.1103
 
-The May 2020 major software update for HoloLens 2, *Windows Holographic, version 2004* includes a host of exciting new capabilities, such as support for Windows Autopilot, app dark mode, USB Ethernet support for 5G/LTE hotspots, and much more. To update to the latest release, open the **Settings** app, go to **Update & Security**, and select the **Check for Updates** button. 
+The May 2020 major software update for HoloLens 2, *Windows Holographic, version 2004* includes a host of exciting new capabilities, such as support for Windows Autopilot, app dark mode, USB Ethernet support for 5G/LTE hotspots, and much more. To update to the latest release, open the **Settings** app, go to **Update & Security**, and select the **Check for Updates** button.
 
 |             Feature                              |          Description                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
