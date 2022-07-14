@@ -1,6 +1,6 @@
 ---
-title: Insider preview for Microsoft HoloLens
-description: Learn how to get started with Insider builds and provide valuable feedback for our next major operating system update for HoloLens.
+title: Maintain HoloLens devices
+description: Learn the regular maintenance tasks for HoloLens devices.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -19,11 +19,11 @@ appliesto:
 
 There are several maintenance tasks that are commonly run or run on a schedule. Here we&#39;ll cover some of the most common ones that are run and define when they run and their behaviors.
 
-- MDM Sync
-- OS Updates
-- App updates from the Store
-- App updates from MDM
-- Collect logs via MDM
+- [MDM Sync](#mdm-sync)
+- [OS Updates](#os-updates)
+- [App updates from the Store](#app-updates-from-the-store)
+- [App updates from MDM](#app-update-from-mdm)
+- [Collect logs via MDM](#collect-logs-via-mdm)
 
 While looking at the devices we want to perform these maintenance tasks they can be put into 3 categories.
 
@@ -86,7 +86,7 @@ When do app updates from the store trigger?
     - The user is predicted to come back to the machine in 90 minutes
     - The machine is on battery
   - After 2 days, the installation goes to a higher priority and will install within 24 hours
-- Can be [manually triggered](holographic-store-apps#update-apps.md) on device via the Store app
+- Can be [manually triggered](holographic-store-apps.md#update-apps) on device via the Store app
   - This does not have the same restrictions as automatic updates and will be installed right away
 - Cannot be triggered remotely by IT Admin
 
@@ -129,6 +129,6 @@ Log collection via MDM Behavior:
 | --- | --- |
 | Can download and update an app, will close app if it&#39;s being used. | Can download and update an app. |
 
-Read more about [log collection on HoloLens](hololens-diagnostic-logs#diagnosticlog-csp.md).
+Read more about [log collection on HoloLens](hololens-diagnostic-logs.md#diagnosticlog-csp).
 
 Read about how to [collect logs via MDM](/mem/intune/remote-actions/collect-diagnostics).
