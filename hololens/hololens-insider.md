@@ -12,7 +12,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 5/25/2022
+ms.date: 7/22/2022
 ms.localizationpriority:
 appliesto:
 - HoloLens 2
