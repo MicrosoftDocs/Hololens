@@ -30,13 +30,14 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 
 | Feature                                                | Description                                                                                                                            | User or Scenario |
 |--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------|
-| [New policies to speed up adding users](#policies-to-speed-up-adding-users)                          | New   policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT   Admin       |
-| [Autopilot reset experience](#Autopilot-reset-experience)                                 | Improvements in Autopilot reset experience, to enable users to reset Hololens 2 and restart Autopilot without requiring manual flashing.| IT   Admin       |
-| [Clean up users on device](#clean-up-users-on-device)                                 | New   policies to manage when to clear out users on the device                                                                         | IT   Admin       |
-| [New policy disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery)                 | Turn off auto-reconnect to Wi-fi access points                                                                                                                         | IT   Admin       |
-| [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)                       | New   policy that IT Admins can enable that allows the use of captive portals on   the sign-in screen to help connecting to Wi-Fi | IT   Admin       |
-| [Clean up storage via MDM](#clean-up-storage-via-mdm)                               | Clean   up files via MDM                                                                                                               | IT   Admin       |
-| [Fixes improvements](#fixes-improvements)                                    | Fixes and improvements for   HoloLens.                                                                                                 | All              |
+| [New policies to speed up adding users](#policies-to-speed-up-adding-users)                          | New policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT Admin       |
+| [Autopilot reset experience](#autopilot-reset-experience)                                 | Improvements in Autopilot reset experience, to enable users to reset Hololens 2 and restart Autopilot without requiring manual flashing.| IT Admin       |
+| [Clean up users on device](#clean-up-users-on-device)                                 | New policies to manage when to clear out users on the device                                                                         | IT Admin       |
+| [New policy disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery)                 | Turn off auto-reconnect to Wi-fi access points                                                                                                                         | IT Admin       |
+| [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)                       | New policy that IT Admins can enable that allows the use of captive portals on   the sign-in screen to help connecting to Wi-Fi | IT Admin       |
+| [Clean up storage via MDM](#clean-up-storage-via-mdm)                               | Clean   up files via MDM                                                                                                               | IT Admin       |
+| [Security Baseline](#security-baseline) | A list of security restrictions you can use. | IT Admin |
+| [Fixes improvements](#fixes-improvements)                       | Fixes and improvements for HoloLens.       | All              |
 
 ### IT Admin Checklist
 
@@ -139,6 +140,12 @@ The OMA-URI of new policy:
     - 7 – Weekly
     - 30 – Monthly
     - 0 – During low free disk space (Default)
+
+### Security Baseline
+
+In some cases you may want to place some stronger restrictions on your devices. Whatever your need for security, we've written out two security baselines that you can use to add an extra layer of security to your device fleet.
+
+Select this link to read the [security baselines](security-baseline.md).
 
 ### Fixes improvements
 
