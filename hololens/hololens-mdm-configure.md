@@ -9,7 +9,7 @@ manager: lolab
 ms.reviewer: lavinds
 ms.topic: article
 ms.localizationpriority:
-ms.date: 6/2/2022
+ms.date: 6/28/2022
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -17,7 +17,7 @@ appliesto:
 
 # Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices
 
-There are numerous different settings you can manage via Mobile Device Management (MDM). Using Microsoft Intune, devices can be grouped together and configurations can be deployed to those groups of users or devices. Apps can also be deployed and managed, setting up devices to connect to your network, as well as configuring updates to occur at the time desired and on the update ring needed. 
+There are numerous different settings you can manage via Mobile Device Management (MDM). Using Microsoft Intune, devices can be grouped together and configurations can be deployed to those groups of users or devices. Apps can also be deployed and managed, setting up devices to connect to your network, as well as configuring updates to occur at the time desired and on the update ring needed.
 
 ## How to manage via Microsoft Intune
 
@@ -30,7 +30,8 @@ The idea is to make it easier to manage your devices running Windows Holographic
 Read more: [Categorize devices into groups](/mem/intune/enrollment/device-group-mapping)
 
 ### Device configuration profiles
-Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are managed using profiles. For example, you can create a profile that enables Kiosk, or uses Microsoft Defender Smart Screen on your devices running Windows Holographic for Business. Most of these can be modified via [CSPs](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (Configuration service providers). You can also choose to enable sets of policies that as part of our [common device restrictions](hololens-common-device-restrictions.md).
+
+Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are managed using profiles. For example, you can create a profile that enables Kiosk, or uses Microsoft Defender Smart Screen on your devices running Windows Holographic for Business. Most of these can be modified via [CSPs](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (Configuration service providers). You can also choose to enable sets of policies that are part of our [common device restrictions](hololens-common-device-restrictions.md).
 
 You can also create custom profiles. You can [use OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance - Uniform Resource Identifier) to customize some settings, create device restrictions, and configure a virtual private network (VPN) and Wi-Fi.
 
@@ -48,11 +49,11 @@ Learn more about [configuring your network for HoloLens](hololens-commercial-inf
 
 ### Certificates
 
-Certificates help improve security by providing account authentication, Wi-Fi authentication, VPN encryption, and SSL encryption of web content. Although administrators can manage certificates on devices manually through provisioning packages, it’s a best practice to use your MDM system to manage those certificates throughout their entire lifecycle – from enrollment through renewal and revocation. Your MDM system can automatically deploy these certificates to the devices’ certificate stores after you enroll the device (as long as the MDM system supports the Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standards #12 (PKCS#12). MDM can also query and delete enrolled client certificates or trigger a new enrollment request before the current certificate is expired. 
+Certificates help improve security by providing account authentication, Wi-Fi authentication, VPN encryption, and SSL encryption of web content. Although administrators can manage certificates on devices manually through provisioning packages, it’s a best practice to use your MDM system to manage those certificates throughout their entire lifecycle – from enrollment through renewal and revocation. Your MDM system can automatically deploy these certificates to the devices’ certificate stores after you enroll the device (as long as the MDM system supports the Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standards #12 (PKCS#12). MDM can also query and delete enrolled client certificates or trigger a new enrollment request before the current certificate is expired.
 
 ### Proxy
 
-Most corporate intranet networks leverage a proxy to manage internal traffic. With HoloLens 2 you can configure a proxy server for ethernet and Wi-Fi connections. These settings don't apply to VPN connections. 
+Most corporate intranet networks leverage a proxy to manage internal traffic. With HoloLens 2 you can configure a proxy server for ethernet and Wi-Fi connections. These settings don't apply to VPN connections.
 For more details on proxy settings for Windows 10, see [NetworkProxy CSP](/windows/client-management/mdm/networkproxy-csp).
 
 ### VPN
@@ -88,7 +89,7 @@ Learn how to [set up HoloLens as a kiosk]( hololens-kiosk.md)
 
 ## How MDM syncs work
 
-When a device syncs to MDM, it communicates to see what it needs to be applied to the device; this is when policies are applied to the device. 
+When a device syncs to MDM, it communicates to see what it needs to be applied to the device; this is when policies are applied to the device.
 
 ### What happens during an MDM sync
 
@@ -98,21 +99,22 @@ When a device syncs to MDM, it communicates to see what it needs to be applied t
 
 ### What doesn't happen during sync
 
-Line of Business (LOB) App installation
-- Required LOB Apps are installed when setting up a device, after that LOB app updates are offered on a 24 hour check-in. 
-    - See [more about MDM app installs](app-deploy-intune.md#about-lob-app-updates).
+Line of Business (LOB) App installation:
+
+- Required LOB Apps are installed when setting up a device, after that LOB app updates are offered on a 24 hour check-in.
+  - See [more about MDM app installs](app-deploy-intune.md#about-lob-app-updates).
 
 ### When does an MDM sync occur
 
 Syncing with MDM occurs under the following conditions
 
 - When the device is first enrolled with MDM
-    - This includes [Autopilot](hololens2-autopilot.md) or adding the [first user to the device during OOBE](hololens-enroll-mdm.md#auto-enrollment-in-mdm), as well as [enrolling a local or MSA user](hololens-enroll-mdm.md#for-single-user-devices)
+  - This includes [Autopilot](hololens2-autopilot.md) or adding the [first user to the device during OOBE](hololens-enroll-mdm.md#auto-enrollment-in-mdm), as well as [enrolling a local or MSA user](hololens-enroll-mdm.md#for-single-user-devices)
 - When the user manually presses the sync button in the Settings app
 - Regular check in intervals
-    - On a regular 8 hour interval on established devices
-    - On a more frequent interval during the first 24 hours
-    - For specifics read [How long does it take for devices to get a policy, profile, or app after they're assigned?](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
+  - On a regular 8 hour interval on established devices
+  - On a more frequent interval during the first 24 hours
+  - For specifics read [How long does it take for devices to get a policy, profile, or app after they're assigned?](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
 - When a policy or profile is assigned
 
 Read more at [What actions cause Intune to immediately send a notification to a device?](/mem/intune/configuration/device-profile-troubleshoot#what-actions-cause-intune-to-immediately-send-a-notification-to-a-device)

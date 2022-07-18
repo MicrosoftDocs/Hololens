@@ -148,6 +148,7 @@ The OMA-URI of new policy:
 ### Upcoming Fixes and Improvements
 
 - In-box OpenXR code updated. This is to provide best out-of-box experience for customers without Microsoft store access.
+- Medical partners can access 90fps eye tracking via Extended ET API.
 
 ## Start receiving Insider builds
 
