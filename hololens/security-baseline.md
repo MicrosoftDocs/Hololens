@@ -9,7 +9,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 7/10/2022
+ms.date: 7/22/2022
 audience: ITPro
 appliesto:
 - HoloLens 2
@@ -18,7 +18,10 @@ appliesto:
 
 # HoloLens 2 Security Baselines
 
-This article lists and describes the various security baseline settings you can configure on HoloLens 2 devices using Configuration Service Providers (CSP). As part of your mobile device management using Microsoft Intune, use the following standard or advanced security baseline settings depending on your organizational policies and needs. As a HoloLens 2 administration team, use these security baseline settings to help protect your organizational resources.
+> [IMPORTANT]
+> Some of the policies used in this security baseline are introduced in our latest [Insider build](hololens-insider.md). Those policies will only function on devices updated to the latest Insider build.
+
+This article lists and describes the various security baseline settings you can configure on HoloLens 2 devices using Configuration Service Providers (CSP). As part of your mobile device management using Microsoft Endpoint Manager (formally knowns as Intune), use the following standard or advanced security baseline settings depending on your organizational policies and needs. As a HoloLens 2 administration team, use these security baseline settings to help protect your organizational resources.
 
 - Standard security baseline settings are applicable to all types of customers irrespective of the use case scenario and industry vertical.
 - Advanced security baseline settings are recommended settings for customers those who have strict security controls of their environment and require stringent security policies to be applied to any device used in their environment
