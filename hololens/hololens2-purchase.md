@@ -107,4 +107,6 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 ### **Middle East**
 
+| Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
+|---------|-----|---------|----------------|----------|
 | **United Arab Emirates** | Redington Group |  | [Buy HoloLens 2 - Redington](https://redingtongroup.com/mea/) | [Buy HoloLens 2 Industrial Edition - Redington](https://redingtongroup.com/mea/) |
