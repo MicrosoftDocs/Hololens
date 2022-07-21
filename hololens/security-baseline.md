@@ -75,7 +75,7 @@ The following sections describe the recommended settings of each CSP as part of 
 
 ### 1.2 [ClientCertificateInstall CSP](/windows/client-management/mdm/clientcertificateinstall-csp)
 
-We recommend configuring this CSP as a best practice but won't recommend on specific values for each node in this CSP.
+We recommend configuring this CSP as a best practice but don't have recommendations for specific values for each node in this CSP.
 
 ### 1.3 [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)
 
@@ -109,11 +109,11 @@ We recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes 
 
 ### 1.6 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
 
-We recommend configuring VPN profiles as a best practice but won't recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
+We recommend configuring this CSP as a best practice but don't have recommendations for specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ### 1.7 [WiFi CSP](/windows/client-management/mdm/wifi-csp)
 
-We recommend configuring WiFi profiles as a best practice but won't recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
+We recommend configuring this CSP as a best practice but don't have recommendations for specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ## 2 Advanced security baseline settings
 
@@ -206,7 +206,7 @@ The following sections describe the recommended settings of each CSP as part of 
 
 ### 2.4 [ClientCertificateInstall CSP](/windows/client-management/mdm/clientcertificateinstall-csp)
 
-We recommend configuring this CSP as a best practice but won't recommend on specific values for each node in this CSP.
+We recommend configuring this CSP as a best practice but don't have recommendations for specific values for each node in this CSP.
 
 ### 2.5 [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)
 
