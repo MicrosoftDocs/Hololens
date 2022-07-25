@@ -28,6 +28,9 @@ We recommend that for organizations that have moved, or are moving towards a sca
 
 Looking for a new feature but don't see it? Check out the [release notes](hololens-release-notes.md) as many of our new features have been released as part of the main builds.
 
+> [!NOTE]
+> In order to receive these features on your devices they will need to be in the [Dev channel](#start-receiving-insider-builds).
+
 | Feature                                                | Description                                                                                                                            | User or Scenario |
 |--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | [New policies to speed up adding users](#policies-to-speed-up-adding-users)                          | New policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT Admin       |
@@ -55,10 +58,10 @@ The new policies and screens they skip are:
 
 | Policy          | What's skipped                                                                    |  Screenshot |
 |------------------|-----------------------------------------------------------------------------------|---|
-| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app.      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
-| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
-| Location Consent | This policy skips the location consent page if the policy has been set.                  | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
-| Speech Consent   | This policy skips the speech consent page if the policy has been set.                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
+| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: `SkipCalibrationDuringFirstExperience`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
+| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringFirstExperience`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
+| Location Consent | This policy skips the location consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                 | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
+| Speech Consent   | This policy skips the speech consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
 
 The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance Uniform Resource Identifier) of new policies:
 
@@ -112,9 +115,6 @@ The OMA-URI of new policies:
 Sometimes Wi-Fi connections require additional information to provide credentials to the access point. Previously users were only able to do this the first time the device was set up in OOBE, or in the Settings app once signed in. Previously, users couldn't adjust this configuration on the sign-in screen, which was sometimes tricky to work around.
 
 This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a [captive portal](/windows-hardware/drivers/mobilebroadband/captive-portals) on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
-
-// NEEDS SCREENSHOT
-![screenshotofthing](aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
 
 MixedReality/AllowCaptivePortalBeforeSignIn
 
