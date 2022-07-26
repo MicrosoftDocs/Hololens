@@ -9,7 +9,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 7/22/2022
+ms.date: 7/26/2022
 audience: ITPro
 appliesto:
 - HoloLens 2
