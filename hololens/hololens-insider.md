@@ -31,16 +31,16 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 > [!NOTE]
 > In order to receive these features on your devices they will need to be in the [Dev channel](#start-receiving-insider-builds).
 
-| Feature                                                | Description                                                                                                                            | User or Scenario |
-|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------|
-| [New policies to speed up adding users](#policies-to-speed-up-adding-users)                          | New policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT Admin       |
-| [Autopilot reset experience](#autopilot-reset-experience)                                 | Improvements in Autopilot reset experience, to enable users to reset Hololens 2 and restart Autopilot without requiring manual flashing.| IT Admin       |
-| [Clean up users on device](#clean-up-users-on-device)                                 | New policies to manage when to clear out users on the device                                                                         | IT Admin       |
-| [New policy disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery)                 | Turn off auto-reconnect to Wi-fi access points                                                                                                                         | IT Admin       |
-| [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)                       | New policy that IT Admins can enable that allows the use of captive portals on   the sign-in screen to help connecting to Wi-Fi | IT Admin       |
-| [Clean up storage via MDM](#clean-up-storage-via-mdm)                               | Clean   up files via MDM                                                                                                               | IT Admin       |
-| [Security Baseline](#security-baseline) | A list of security restrictions you can use. | IT Admin |
-| [Fixes improvements](#fixes-improvements)                       | Fixes and improvements for HoloLens.       | All              |
+| Feature   | Description  | User or Scenario | Available in build |
+|-----------|--------------|------------------|---|
+| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip for OOBE or adding new users to devices. | IT Admin | 10.0.22621.1006 |
+| [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1006 |
+| [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device.  | IT Admin  | 10.0.22621.1006 |
+| [New policy disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery) | Turn off auto-reconnect to Wi-fi access points. | IT Admin       | 10.0.22621.1006 |
+| [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin | 10.0.22621.1006 |
+| [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM.  | IT Admin | 10.0.22621.1006 |
+| [Security Baseline](#security-baseline) | A list of security restrictions you can use. | IT Admin | 10.0.22621.1006 |
+| [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
 
 ### IT Admin Checklist
 
