@@ -21,7 +21,7 @@ appliesto:
 > [!IMPORTANT]
 > Some of the policies used in this security baseline are introduced in our latest [Insider build](hololens-insider.md). Those policies will only function on devices updated to the latest Insider build.
 
-This article lists and describes the various security baseline settings you can configure on HoloLens 2 devices using Configuration Service Providers (CSP). As part of your mobile device management using Microsoft Endpoint Manager (formally knowns as Microsoft Intune), use the following standard or advanced security baseline settings depending on your organizational policies and needs. As a HoloLens 2 administration team, use these security baseline settings to help protect your organizational resources.
+This article lists and describes the various security baseline settings you can configure on HoloLens 2 devices using Configuration Service Providers (CSP). As part of your mobile device management using Microsoft Endpoint Manager (formally known as Microsoft Intune), use the following standard or advanced security baseline settings depending on your organizational policies and needs. As a HoloLens 2 administration team, use these security baseline settings to help protect your organizational resources.
 
 - Standard security baseline settings are applicable to all types of customers irrespective of the use case scenario and industry vertical.
 - Advanced security baseline settings are recommended settings for customers those who have strict security controls of their environment and require stringent security policies to be applied to any device used in their environment
@@ -254,7 +254,7 @@ We recommend configuring WiFi profiles as a best practice but will not recommend
 
 Here's how to create the baseline.
 
-Many of the settings can be added by using the Settings catalog, however there may sometimes be a setting that hasn't yet be populated to the Settings catalog. In those cases you'll use a Custom policy, or OMA-URI (Open Mobile Alliance - Uniform Resource Identifier). Start by looking in the Settings catalog, and if it's not found this follow the instructions below for creating a custom policy via OMA-URI.
+Many of the settings can be added by using the Settings catalog, however there may sometimes be a setting that hasn't yet been populated to the Settings catalog. In those cases, you'll use a Custom policy, or OMA-URI (Open Mobile Alliance - Uniform Resource Identifier). Start by looking in the Settings catalog, and if it's not found this follow the instructions below for creating a custom policy via OMA-URI.
 
 ### Settings catalog
 
@@ -268,13 +268,13 @@ Using the name of the policy from the baseline above, you can search for the pol
 
 ![Settings picker](images/settings-picker.png)
 
-Once done, the panel on the left will add the CSP catagory, and the setting that you added. From here you can configure it from the default setting, to one more secure.
+Once done, the panel on the left will add the CSP category, and the setting that you added. From here you can configure it from the default setting, to one more secure.
 
 ![Settings catalog](images/settings-catalog-set-setting.png)
 
 You can continue to keep adding multiple configurations to the same profile, which will make it easier to assign at once.
 
-### Adding custom OMA-URI polcies
+### Adding custom OMA-URI policies
 
 Some policies may not be available in the Settings catalog yet. For these you'll need to [create a custom OMA-URI profile](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#home).
 
