@@ -2,6 +2,15 @@
 
 
 
+## Week of July 11, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 7/12/2022 | [HoloLens 2 release notes for Windows Holographic, version 2004](/hololens/hololens-release-notes-2004) | modified |
+| 7/12/2022 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+
+
 ## Week of July 04, 2022
 
 
@@ -18,12 +27,3 @@
 |------|------------|--------|
 | 6/28/2022 | [Infrastructure Guidelines for HoloLens](/hololens/hololens-commercial-infrastructure) | modified |
 | 6/28/2022 | [Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices](/hololens/hololens-mdm-configure) | modified |
-
-
-## Week of June 06, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 6/8/2022 | [Using 3D Viewer Beta on HoloLens (1st gen)](/hololens/holographic-3d-viewer-beta) | modified |
-| 6/10/2022 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |
