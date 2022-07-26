@@ -5,15 +5,15 @@ ms.prod: hololens
 ms.sitesec: library
 author: evmill
 ms.author: millerevan
+manager: lolab
+ms.reviewer: bryanth
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 5/10/2022
+ms.date: 7/26/2022
 ms.localizationpriority:
-ms.reviewer: bryanth
-manager: lolab
 appliesto:
 - HoloLens 2
 ---
@@ -22,11 +22,136 @@ appliesto:
 
 Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get started](hololens-insider.md#start-receiving-insider-builds) and provide valuable feedback for our next major operating system update for HoloLens.
 
-We recommend that for organizations that have moved, or are moving towards a scale production deployment, that a subset of test devices are kept on Insider builds to validate that new features and new builds work as expected.
+We recommend that for organizations that have moved, or are moving towards a scale production deployment, that a subset of test devices is kept on Insider builds to validate that new features and new builds work as expected.
 
 ## Windows Insider Release Notes
 
 Looking for a new feature but don't see it? Check out the [release notes](hololens-release-notes.md) as many of our new features have been released as part of the main builds.
+
+> [!NOTE]
+> In order to receive these features on your devices they will need to be in the [Dev channel](#start-receiving-insider-builds).
+
+| Feature   | Description  | User or Scenario | Available in build |
+|-----------|--------------|------------------|---|
+| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip for OOBE or adding new users to devices. | IT Admin | 10.0.22621.1006 |
+| [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1006 |
+| [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device.  | IT Admin  | 10.0.22621.1006 |
+| [New policy disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery) | Turn off auto-reconnect to Wi-fi access points. | IT Admin       | 10.0.22621.1006 |
+| [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin | 10.0.22621.1006 |
+| [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM.  | IT Admin | 10.0.22621.1006 |
+| [Security Baseline](#security-baseline) | A list of security restrictions you can use. | IT Admin | 10.0.22621.1006 |
+| [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
+
+### IT Admin Checklist
+
+✔️ If you'd like to speed up new user sign-ons check out the new [new policies to speed up adding users](#policies-to-speed-up-adding-users). <br>
+✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
+✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery). <br>
+✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm). <br>
+✔️ If you need to have more security, are planning on vending out your devices, or need to check a box for a security review, check out the [security baseline](#security-baseline).
+
+### Policies to speed up adding users
+
+As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are four new areas you'll be able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
+
+The new policies and screens they skip are:
+
+| Policy          | What's skipped                                                                    |  Screenshot |
+|------------------|-----------------------------------------------------------------------------------|---|
+| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: `SkipCalibrationDuringFirstExperience`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
+| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringFirstExperience`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
+| Location Consent | This policy skips the location consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                 | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
+| Speech Consent   | This policy skips the speech consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
+
+The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance Uniform Resource Identifier) of new policies:
+
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringFirstExperience`
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringFirstExperience`
+- `./Device/Vendor/MSFT/Policy/Config/Privacy/DisablePrivacyExperience`
+
+- Bool value (for each)
+
+For more info on how to increase your setup speed for new users, check out our [guide on how to quickly set up new users.](hololens2-new-user-optimize.md)
+
+### Autopilot reset experience
+
+In certain Autopilot failure scenarios on HoloLens 2, if "Allow users to reset device if installation error occurs." setting in ESP configuration is set to "Yes", "Reset device" button will be displayed on HoloLens 2. If "Reset device" button is selected by the user, HoloLens 2 will automatically reboot, reset operating system and OOBE experience after delay of approximately 1 minute. This improvement will enable users to begin Autopilot experience again without requiring a manual flash of HoloLens 2 devices.
+
+### Clean up users on device
+
+Organizations with scaled deployments of HoloLens 2 devices may encounter the 64-user limit on the device, which will prevent additional users from being able to use the device. To address this situation, we've added controls allow old users to be deleted from the device at controlled intervals (something you have may have used on Desktop). This can also be useful for other reasons, which include increased security be removing old accounts, or speeding up the Iris scanning processes on the sign-in screen (fewer users to match means a faster comparison.) We've enabled two methods to control when to clean up old users.
+
+There are two triggers that can delete users:
+
+- On a regular schedule determined by you.
+- Delete the oldest user when you add more than your custom maximum number of users.
+
+Here's how to get started:
+
+1. Enable the process: **UserProfileManagement/EnableProfileManager**
+    1. Bool value, set to **True**
+1. Set the inactivity threshold: **UserProfileManagement/ProfileInactivityThreshold**
+    1. This is the number of days until a user is deleted.
+        - Default value is 30.
+1. Set the maximum users on device **UserProfileManagement/StorageCapacityStartDeletion**
+    1. This determines how many users can be on the device.
+        - Default value is 25.
+        - Maximum for HoloLens is 64.
+1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes for both threshold and inactive users.
+
+To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
+
+### New policy to disable Wi-Fi auto recovery
+
+Wi-Fi auto recovery is enabled on HoloLens 2 by default. In some cases you may want your devices to not automatically reconnect. This may be because you have a preferred network you want to keep your devices on, you find yourself reconnecting to an access point that doesn't have internet, or you want to keep those devices offline in specific areas. For those cases we've enabled a new policy that you can opt to use to keep your devices from automatically reconnecting back to your access points.
+
+The OMA-URI of new policies:
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/DisableNCSIPassivePolling`
+
+- Bool value
+
+### Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in
+
+Sometimes Wi-Fi connections require additional information to provide credentials to the access point. Previously users were only able to do this the first time the device was set up in OOBE, or in the Settings app once signed in. Previously, users couldn't adjust this configuration on the sign-in screen, which was sometimes tricky to work around.
+
+This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a [captive portal](/windows-hardware/drivers/mobilebroadband/captive-portals) on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
+
+MixedReality/AllowCaptivePortalBeforeSignIn
+
+The OMA-URI of new policy:
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeSignIn`
+
+- Bool value
+
+### Clean up storage via MDM
+
+[Storage Sense](/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5) is available on HoloLens 2 today to manage cleanup of old files. IT admins can now also configure behavior of Storage Sense on HoloLens 2 with following MDM policies:
+
+- [Storage/AllowStorageSenseGlobal](/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesenseglobal)
+  - Sets Storage sense to be enabled on the device and will run whenever reaching low storage.
+- [Storage/AllowStorageSenseTemporaryFilesCleanup](/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesensetemporaryfilescleanup)
+  - When Storage Sense runs, it can delete the user’s temporary files that aren't in use.
+- [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensecloudcontentdehydrationthreshold)
+  - When Storage Sense runs, it can dehydrate cloud-backed content that hasn’t been opened in a certain number of days. If you enable this policy setting, you must provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it. Supported values are: 0–365.
+- [Storage/ConfigStorageSenseDownloadsCleanupThreshold](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensedownloadscleanupthreshold)
+  - When Storage Sense runs, it can delete files in the user’s Downloads folder if they haven’t been opened for more than a certain number of days. If you enable this policy setting, you must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from the Downloads folder. Supported values are: 0-365.
+- [Storage/ConfigStorageSenseGlobalCadence](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesenseglobalcadence)
+  - Storage Sense can automatically clean some of the user’s files to free up disk space. The following are supported options:
+    - 1 – Daily
+    - 7 – Weekly
+    - 30 – Monthly
+    - 0 – During low free disk space (Default)
+
+### Security baseline
+
+In some cases you may want to place some stronger restrictions on your devices. Whatever your need for security, we've written out two security baselines that you can use to add an extra layer of security to your device fleet.
+
+Select this link to read the [security baselines](security-baseline.md).
+
+### Fixes improvements
+
+- Free storage space values are now displayed on Microsoft Intune's hardware page for devices.
+- It will be possible to issue an app uninstall command in the device context using EnterpriseModernAppManagement CSP.
 
 ### Upcoming Fixes and Improvements
 
@@ -73,10 +198,10 @@ If you encounter an update error 0x80070490 when updating on the Dev or Beta cha
 
 ## FFU download and flash directions
 
-To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
+To test with a flight signed `.ffu`, you first have to flight unlock your device prior to flashing the flight signed ffu.
 
 1. On PC:
-    1. Download ffu to your PC from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
+    1. Download `.ffu` to your PC from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
 
     1. Install ARC (Advanced Recovery Companion) from the Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
@@ -93,7 +218,7 @@ Please use [the Feedback Hub app](hololens-feedback.md) on your HoloLens to prov
 
 ## Note for developers
 
-You are welcome and encouraged to try developing your applications using Insider builds of HoloLens.  Check out the [HoloLens Developer Documentation](https://developer.microsoft.com/windows/mixed-reality/development) to get started. Those same instructions work with Insider builds of HoloLens.  You can use the same builds of Unity and Visual Studio that you're already using for HoloLens development.
+You're welcome and encouraged to try developing your applications using Insider builds of HoloLens.  Check out the [HoloLens Developer Documentation](https://developer.microsoft.com/windows/mixed-reality/development) to get started. Those same instructions work with Insider builds of HoloLens.  You can use the same builds of Unity and Visual Studio that you're already using for HoloLens development.
 
 ## Stop receiving Insider builds
 
