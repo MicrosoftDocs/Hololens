@@ -16,7 +16,7 @@ appliesto:
 
 ---
 
-# HoloLens 2 Security Baselines
+# HoloLens 2 security baselines
 
 > [!IMPORTANT]
 > Some of the policies used in this security baseline are introduced in our latest [Insider build](hololens-insider.md). Those policies will only function on devices updated to the latest Insider build.

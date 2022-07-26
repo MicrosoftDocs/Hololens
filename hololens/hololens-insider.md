@@ -142,7 +142,7 @@ The OMA-URI of new policy:
     - 30 – Monthly
     - 0 – During low free disk space (Default)
 
-### Security Baseline
+### Security baseline
 
 In some cases you may want to place some stronger restrictions on your devices. Whatever your need for security, we've written out two security baselines that you can use to add an extra layer of security to your device fleet.
 
