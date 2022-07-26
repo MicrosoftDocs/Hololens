@@ -5,13 +5,13 @@ keywords: hololens, photo, video, capture, mrc, mixed reality capture, photos, c
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
 ms.prod: hololens
 ms.sitesec: library
-author: mattzmsft
-ms.author: mazeller
+author: qianw211
+ms.author: qianwen
 ms.topic: article
 audience: ITPro
 ms.localizationpriority:
-ms.date: 10/28/2019
-manager: jarrettr
+ms.date: 7/26/2022
+manager: sekerawa
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -145,10 +145,7 @@ Prior to [Windows Holographic, version 21H1](hololens-release-notes.md#windows-h
 With Windows Holographic, version 21H1, after capturing a mixed reality photo or video, a preview will appear. Select the **Share** icon above the preview to bring up the share assistant. From there, you can select the end point (Mail, OneDrive, etc.) to which you'd like to share that photo or video. You can also enable your HoloLens to share with nearby devices by going to **Settings -> System -> Shared Experiences**. For more details, read [Share things with nearby devices in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
 
 > [!TIP] 
-> You can also share mixed reality photos and videos from OneDrive by automatically uploading your mixed reality photos and videos. Open the OneDrive app on HoloLens and sign in with a **personal [Microsoft account](https://account.microsoft.com)**, if you haven't already. Select the **Settings** icon and choose **Camera upload**. Turn Camera upload on. Your mixed reality photos and videos will now be uploaded to OneDrive each time you launch the app on HoloLens.
-
-> [!NOTE]
-> You can only enable camera upload in OneDrive if you’re signed into OneDrive with a personal Microsoft account. If you set up HoloLens with a work or school account, you can add a personal Microsoft account in the OneDrive app to enable this feature.
+> You can also share mixed reality photos and videos from OneDrive by automatically uploading your mixed reality photos and videos. Open the OneDrive app on HoloLens and sign in with a **personal [Microsoft account](https://account.microsoft.com)**, if you haven't already. Select **Settings > System > Mixed Reality Camera** and enable **Camera upload** to turn on camera upload. Your mixed reality photos and videos will now be uploaded to OneDrive each time you launch the app on HoloLens.
 
 ## Limitations of mixed reality capture
 
