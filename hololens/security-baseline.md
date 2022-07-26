@@ -266,11 +266,11 @@ Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#
 
 Using the name of the policy from the baseline above, you can search for the policy. The settings catalog will space out the name, so to find "Accounts/AllowMicrosoftAccountConnection" you'll need to search "Allow Microsoft Account Connection". After you search you'll see the list of policies reduce to just the CSP which has this policy. Select **Accounts** (or the relevant CSP to what you are current searching), once you do you'll see the policy result below. Check the box for the policy.
 
-![Settings picker](images/settings-picker.png)
+![Screenshot of the settings picker option.](images/settings-picker.png)
 
 Once done, the panel on the left will add the CSP category, and the setting that you added. From here you can configure it from the default setting, to one more secure.
 
-![Settings catalog](images/settings-catalog-set-setting.png)
+![Screenshot of the settings catalog.](images/settings-catalog-set-setting.png)
 
 You can continue to keep adding multiple configurations to the same profile, which will make it easier to assign at once.
 
@@ -290,8 +290,8 @@ You'll need to fill out a few fields.
 - Data type is the type of value this policy accepts. For this example it's a number between 0 and 60, so Integer was selected.
 - Once you select the data type, you'll be able to write out, or upload, the value needed into the field.
 
-![OMA-URI configuring](images/settings-catalog-set-setting.png)
+![Screenshot of OMA-URI configuring.](images/settings-catalog-set-setting.png)
 
 Once done, your policy will be added to the main window. You can continue adding all your custom policies to the same custom configuration. This helps reduce managing multiple device configurations and makes assignment easier.
 
-![OMA-URI configuration](images/custom-policy-added-setting.png)
+![Screenshot of OMA-URI configuration.](images/custom-policy-added-setting.png)
