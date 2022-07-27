@@ -7,7 +7,7 @@ author: qianw211
 ms.author: qianwen
 manager: sekerawa
 ms.reviewer: jarrettrenshaw
-ms.date: 7/26/2019
+ms.date: 7/26/2022
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
