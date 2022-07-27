@@ -31,6 +31,9 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 > [!NOTE]
 > In order to receive these features on your devices they will need to be in the [Dev channel](#start-receiving-insider-builds).
 
+> [!IMPORTANT]
+> This next update is on a newer code base than what is currently generally available. Once you update a device to it, you won't be able to have your device update to our monthly releases until they catch up with the same codebase. Although if need be, you can still flash your device to go back.
+
 | Feature   | Description  | User or Scenario | Available in build |
 |-----------|--------------|------------------|---|
 | [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip for OOBE or adding new users to devices. | IT Admin | 10.0.22621.1006 |
