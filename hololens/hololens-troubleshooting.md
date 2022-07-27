@@ -32,7 +32,7 @@ This article describes how to resolve several common HoloLens issues.
 - [**Fixed** - Remote Assist video freezes after 20 minutes](#fixed---remote-assist-video-freezes-after-20-minutes)
 - [**Fixed** - Downloading locked files doesn't show error](#fixed---downloading-locked-files-doesnt-error)
 - [**Fixed** - Device Portal file upload/download times out](#fixed---device-portal-file-uploaddownload-times-out)
-- [**Fixed** - OneDrive doesn't automatically upload pictures](#onedrive-doesnt-automatically-upload-pictures)
+- [**Fixed** - OneDrive doesn't automatically upload pictures](#fixed---onedrive-doesnt-automatically-upload-pictures)
 
 ##### Known Issues
 
