@@ -13,7 +13,7 @@ ms.custom:
 - CSSTroubleshooting
 audience: ITPro
 ms.date: 7/26/2022
-ms.localizationpriority:
+ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ---
