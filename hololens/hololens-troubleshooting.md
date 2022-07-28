@@ -167,9 +167,9 @@ The user should then go to http://, not https:// (IP address) and features like 
 
 ## **Fixed** - OneDrive doesn't automatically upload pictures
 
-The OneDrive app for HoloLens doesn't support automatic camera upload for work or school accounts. This is a **known issue**.
+The OneDrive app for HoloLens doesn't support automatic camera upload for work or school accounts. This **known issue** has been fixed.  For more information on automatically uploading your mixed reality photos and videos for work or school account, see [Share your mixed reality photos and videos](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos).
 
-Workarounds:
+Workarounds before the fix:
 
 - If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
 
