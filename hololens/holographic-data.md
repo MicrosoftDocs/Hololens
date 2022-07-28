@@ -60,7 +60,7 @@ You can also install the [OneDrive app](https://www.microsoft.com/p/onedrive/9wz
 
 ### OneDrive app
 
-[OneDrive](https://onedrive.live.com/) lets you access, manage, and share your photos and videos with any device and if you're logged in with your personal [Microsoft account](https://account.microsoft.com/). To access the photos and videos captured on HoloLens, download the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store on your HoloLens. Once downloaded, open the OneDrive app and select **Settings** > **Camera upload**, and turn on **Camera upload**.
+[OneDrive](https://onedrive.live.com/) lets you access, manage, and share your photos and videos with any device. If you're logged in with your personal [Microsoft account](https://account.microsoft.com/), to access the photos and videos captured on HoloLens, download the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store on your HoloLens. Once downloaded, open the OneDrive app and select **Settings** > **Camera upload**, and turn on **Camera upload**.
 
 For more information on automatically uploading your mixed reality photos and videos, see [Share your mixed reality photos and videos](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos).
 
