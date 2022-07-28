@@ -144,8 +144,25 @@ Prior to [Windows Holographic, version 21H1](hololens-release-notes.md#windows-h
 
 With Windows Holographic, version 21H1, after capturing a mixed reality photo or video, a preview will appear. Select the **Share** icon above the preview to bring up the share assistant. From there, you can select the end point (Mail, OneDrive, etc.) to which you'd like to share that photo or video. You can also enable your HoloLens to share with nearby devices by going to **Settings -> System -> Shared Experiences**. For more details, read [Share things with nearby devices in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
 
-> [!TIP] 
-> You can also share mixed reality photos and videos from OneDrive by automatically uploading your mixed reality photos and videos. Open the OneDrive app on HoloLens, select **Settings > System > Mixed Reality Camera** and enable **Camera upload** to turn on camera upload. Your mixed reality photos and videos will now be uploaded to OneDrive each time you launch the app on HoloLens.
+You can also share mixed reality photos and videos from OneDrive by automatically uploading your mixed reality photos and videos. 
+
+1. If you have a personal [Microsoft account](https://account.microsoft.com/), open the OneDrive app on HoloLens, select **Settings > System > Mixed Reality Camera** and enable **Camera upload** to turn on camera upload. Your mixed reality photos and videos will now be uploaded to OneDrive each time you launch the app on HoloLens.
+1. If you have a work or school account:
+    1. Visit **Settings > System > Mixed Reality Camera to** enable **Camera upload**.
+    1. By setting this feature to the **On** position, any mixed reality photos or videos captured to your device will automatically be queued for upload to the Pictures > Camera Roll folder of your OneDrive for work or school account.
+   
+    >[!Note]
+    > Photos and videos captured prior to enabling this feature will not be queued for upload and will still need to be manually uploaded.
+
+    Here're some tips to work with **Camera upload**:
+
+    * A status message on the Settings page will display the number of files pending upload (or read "OneDrive is up to date" when all pending files have been uploaded).
+    * If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files won’t upload until you re-enable the feature.
+    * Newest files will upload first (last in, first out).
+    * If your OneDrive account has issues (for example, after your password changes) a **Fix now** button will appear on the Settings page.
+    * There’s no maximum file size, but note that large files will take longer to upload (especially if your upload bandwidth is constrained). If you "pause" or turn off upload while a large file is being uploaded, the partial upload will be preserved. If upload is re-enabled within several hours of being "paused" or turned off, the upload will continue from where it left off. However, if upload is re-enabled after several hours, the large file's upload will restart from the beginning.
+
+    For known issues and caveats of work or school account **Camera upload**, see [release notes](hololens-release-notes.md#onedrive-for-work-or-school-camera-roll-upload). 
 
 ## Limitations of mixed reality capture
 
