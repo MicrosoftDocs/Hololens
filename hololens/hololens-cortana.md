@@ -32,7 +32,7 @@ This article teaches you how to control HoloLens and your holographic world with
 
 If your organization doesn't wish to have speech capabilities then you can manage what's available.
 
-### Situations
+Situations:
 
 - If your organization wants online speech for your users, you should set nothing and let the user consent, because the user consent is needed for this to function.
 
@@ -40,23 +40,14 @@ If your organization doesn't wish to have speech capabilities then you can manag
 
 - If your  organization doesn't want any speech, choose one of the policies that disables the microphone.
 
-### Policies
+Policies:
 
-- [Privacy/DisablePrivacyExperience](/windows/client-management/mdm/policy-csp-privacy#privacy-disableprivacyexperience)
-
-Skips the screen shown in OOBE for consent. This policy disables online speech components, such as dictation. It does not disable device based voice commands, such as See it Say it.
-
-- [Privacy/AllowInputPersonalization](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization)
-
-This policy disables online speech components, such as dictation. It does not disable device based voice commands, such as See it Say it.
-
-- [Privacy/LetAppsAccessMicrophone](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmicrophone)
-
-Specifies whether Windows apps can access the microphone. This means that apps on HoloLens cannot use the microphone. This would mean a customer couldn't communicate verbally in Remote Assist, or use a voice recorder app.
-
-- [MixedReality/MicrophoneDisabled](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-microphonedisabled)
-
-Completely disables the use of the microphone on the device if enabled.
+|Policy|Experience|
+|---|---|
+| [Privacy/DisablePrivacyExperience](/windows/client-management/mdm/policy-csp-privacy#privacy-disableprivacyexperience) | Skips the screen shown in OOBE for consent. This policy disables online speech components, such as dictation. It does not disable device based voice commands, such as See it Say it. |
+| [Privacy/AllowInputPersonalization](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | This policy disables online speech components, such as dictation. It does not disable device based voice commands, such as See it Say it. |
+| [Privacy/LetAppsAccessMicrophone](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmicrophone) | Specifies whether Windows apps can access the microphone. This means that apps on HoloLens cannot use the microphone. This would mean a customer couldn't communicate verbally in Remote Assist, or use a voice recorder app. |
+| [MixedReality/MicrophoneDisabled](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-microphonedisabled) | Completely disables the use of the microphone on the device if enabled. |
 
 ## Built-in voice commands
 
