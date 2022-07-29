@@ -64,10 +64,7 @@ The new policies and screens they skip are:
 | Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: `SkipCalibrationDuringFirstExperience`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
 | Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringFirstExperience`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
 | Location Consent | This policy skips the location consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                 | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
-| Speech Consent <sup>1</sup>  | This policy skips the speech consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
-
-> [!NOTE]
-> <sup>1</sup> This policy disables online speech components, such as dictation. It does not disable device based voice commands, such as See it Say it.
+| Speech Consent   | This policy skips the speech consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
 
 The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance Uniform Resource Identifier) of new policies:
 
