@@ -32,9 +32,19 @@ This article teaches you how to control HoloLens and your holographic world with
 
 If your organization doesn't wish to have speech capabilities then you can manage what's available.
 
+### Situations
+
+- If your organization wants online speech for your users, you should set nothing and let the user consent, because the user consent is needed for this to function.
+
+- If your organization doesn't want online speech but wants to allow speech commands, you should set Privacy/AllowInputPersonalization.
+
+- If your  organization doesn't want any speech, choose one of the policies that disables the microphone.
+
+### Policies
+
 - [Privacy/DisablePrivacyExperience](/windows/client-management/mdm/policy-csp-privacy#privacy-disableprivacyexperience)
 
-Skips the screen shown in OOBE for consent.
+Skips the screen shown in OOBE for consent. This policy disables online speech components, such as dictation. It does not disable device based voice commands, such as See it Say it.
 
 - [Privacy/AllowInputPersonalization](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization)
 
