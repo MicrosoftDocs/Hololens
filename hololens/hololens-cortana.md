@@ -2,15 +2,15 @@
 title: Use your voice to operate HoloLens
 description: Learn how Cortana can help you do all kinds of things on your HoloLens mixed reality devices, including voice commands, dictation, and hologram interactions.
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
-ms.date: 03/10/2020
+ms.date: 07/29/2022
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: Teresa-Motiv
+author: evmill
 audience: ITPro
-ms.author: v-tea
+ms.author: millerevan
 ms.topic: article
-manager: jarrettr
+manager: lolab
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
@@ -27,6 +27,18 @@ This article teaches you how to control HoloLens and your holographic world with
 > Speech is only supported in [some languages](hololens2-language-support.md). The speech language is based on the Windows display language, not the keyboard language.  
 >  
 > You can verify the Windows display language by selecting **Settings** > **Time and Language** > **Language**.
+
+## Managing speech on HoloLens
+
+If your organization doesn't wish to have speech capabilities then you can manage what's available.
+
+- [Privacy/DisablePrivacyExperience](/windows/client-management/mdm/policy-csp-privacy#privacy-disableprivacyexperience)
+
+Skips the screen show in OOBE for consent. This policy disables online speech components, such as dictation. It does not disable device based voice commands, such as See it Say it.
+
+- [Privacy/LetAppsAccessMicrophone](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmicrophone)
+
+Specifies whether Windows apps can access the microphone. This means that apps on HoloLens cannot use the microphone. This would mean a customer couldn't communicate verbally in Remote Assist, or use a voice recorder app.
 
 ## Built-in voice commands
 
@@ -58,7 +70,7 @@ Starting with version 19041.x of HoloLens 2, you can also use these commands:
 | "Volume up/down" | Increase or decrease the volume by 10%. |
 | "What's my IP address" | Bring up a dialogue displaying your device's current IP address on the local network. |
 | "Take a picture" | Capture a mixed reality photo of what you are currently seeing. |
-| "Take a video" | Start recording a mixed reality video. | 
+| "Take a video" | Start recording a mixed reality video. |
 | "Stop recording" | Stops the current mixed reality video recording if one is in progress. |
 
 ### Hologram commands
@@ -80,7 +92,7 @@ Many buttons and other elements on HoloLens also respond to your voice—for exa
 
 ### Dictation mode
 
-Tired of typing? Switch to dictation mode anytime that the holographic keyboard is active. To get started, select the microphone button or say "Start dictating." To stop dictating, select the button again or say "Stop dictating." To delete what you just dictated, say "Delete that." 
+Tired of typing? Switch to dictation mode anytime that the holographic keyboard is active. To get started, select the microphone button or say "Start dictating." To stop dictating, select the button again or say "Stop dictating." To delete what you just dictated, say "Delete that."
 
 > [!NOTE]
 > To use dictation mode, you have to have an internet connection.
@@ -100,7 +112,7 @@ Sometimes it's helpful to spell out things like email addresses. For instance, t
 
 ## Do more with Cortana
 
-Cortana can help you do all kinds of things on your HoloLens, but depending on which version of Windows Holographic you're using, the capabilities may be different. You can learn more about the updated capabilities of the latest version of Cortana here: [Cortana in the upcoming Windows 10 release: focused on your productivity with enhanced security and privacy](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
+Cortana can help you do all kinds of things on your HoloLens, but depending on which version of Windows Holographic you're using, the capabilities may be different. You can learn more about the updated capabilities of the latest version of Cortana here: [Cortana in the upcoming Windows 10 release: focused on your productivity with enhanced security and privacy](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
 
 ![Hey Cortana!](images/cortana-on-hololens.png)
 
