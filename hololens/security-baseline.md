@@ -290,7 +290,7 @@ You'll need to fill out a few fields.
 - Data type is the type of value this policy accepts. For this example it's a number between 0 and 60, so Integer was selected.
 - Once you select the data type, you'll be able to write out, or upload, the value needed into the field.
 
-![Screenshot of OMA-URI configuring.](images/settings-catalog-set-setting.png)
+![Screenshot of OMA-URI configuring.](images/oma-uri-configure.png)
 
 Once done, your policy will be added to the main window. You can continue adding all your custom policies to the same custom configuration. This helps reduce managing multiple device configurations and makes assignment easier.
 
