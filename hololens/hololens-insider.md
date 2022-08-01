@@ -53,6 +53,19 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 ✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm). <br>
 ✔️ If you need to have more security, are planning on vending out your devices, or need to check a box for a security review, check out the [security baseline](#security-baseline).
 
+List of new or newly enabled policies:
+
+- `MixedReality/AllowCaptivePortalBeforeSignIn`
+- `MixedReality/SkipCalibrationDuringFirstExperience`
+- `MixedReality/SkipTrainingDuringFirstExperience`
+- `MixedReality/DisableNCSIPassivePolling`
+- `Privacy/DisablePrivacyExperience`
+- `Storage/AllowStorageSenseGlobal`
+- `Storage/AllowStorageSenseTemporaryFilesCleanup`
+- `Storage/ConfigStorageSenseCloudContentDehydrationThreshold`
+- `Storage/ConfigStorageSenseDownloadsCleanupThreshold`
+- `Storage/ConfigStorageSenseGlobalCadence`
+
 ### Policies to speed up adding users
 
 As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are four new areas you'll be able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
