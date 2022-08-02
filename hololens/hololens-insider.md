@@ -39,7 +39,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip for OOBE or adding new users to devices. | IT Admin | Coming Soon |
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1006 |
 | [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device.  | IT Admin  | 10.0.22621.1006 |
-| [New policy disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery) | Turn off auto-reconnect to Wi-fi access points. | IT Admin       | 10.0.22621.1006 |
+| [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Turn off auto-reconnect to Wi-fi access points. | IT Admin       | 10.0.22621.1006 |
 | [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin | 10.0.22621.1006 |
 | [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM.  | IT Admin | 10.0.22621.1006 |
 | [Security Baseline](#security-baseline) | A list of security restrictions you can use. | IT Admin | 10.0.22621.1006 |
@@ -58,7 +58,7 @@ List of new or newly enabled policies:
 - `MixedReality/AllowCaptivePortalBeforeSignIn`
 - `MixedReality/SkipCalibrationDuringSetup`
 - `MixedReality/SkipTrainingDuringSetup`
-- `MixedReality/DisableNCSIPassivePolling`
+- `MixedReality/DisallowNetworkConnectivityPassivePolling`
 - `Privacy/DisablePrivacyExperience`
 - `Storage/AllowStorageSenseGlobal`
 - `Storage/AllowStorageSenseTemporaryFilesCleanup`
@@ -117,12 +117,12 @@ Here's how to get started:
 
 To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
 
-### New policy to disable Wi-Fi auto recovery
+### New policy to disable NCSI passive polling
 
-Wi-Fi auto recovery is enabled on HoloLens 2 by default. In some cases you may want your devices to not automatically reconnect. This may be because you have a preferred network you want to keep your devices on, you find yourself reconnecting to an access point that doesn't have internet, or you want to keep those devices offline in specific areas. For those cases we've enabled a new policy that you can opt to use to keep your devices from automatically reconnecting back to your access points.
+Windows Network Connectivity Status Indicator may get false positive Internet capable signal from passive polling. Which may result in unexpected Wi-Fi adapter reset when device connects to an intranet only access point. Enabling this policy would avoid unexpected network interruptions caused by false positive NCSI passive polling.
 
 The OMA-URI of new policies:
-`./Device/Vendor/MSFT/Policy/Config/MixedReality/DisableNCSIPassivePolling`
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/DisallowNetworkConnectivityPassivePolling`
 
 - Bool value
 
