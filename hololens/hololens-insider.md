@@ -36,7 +36,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 
 | Feature   | Description  | User or Scenario | Available in build |
 |-----------|--------------|------------------|---|
-| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip for OOBE or adding new users to devices. | IT Admin | 10.0.22621.1006 |
+| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip for OOBE or adding new users to devices. | IT Admin | Coming Soon |
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1006 |
 | [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device.  | IT Admin  | 10.0.22621.1006 |
 | [New policy disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery) | Turn off auto-reconnect to Wi-fi access points. | IT Admin       | 10.0.22621.1006 |
@@ -56,8 +56,8 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 List of new or newly enabled policies:
 
 - `MixedReality/AllowCaptivePortalBeforeSignIn`
-- `MixedReality/SkipCalibrationDuringFirstExperience`
-- `MixedReality/SkipTrainingDuringFirstExperience`
+- `MixedReality/SkipCalibrationDuringSetup`
+- `MixedReality/SkipTrainingDuringSetup`
 - `MixedReality/DisableNCSIPassivePolling`
 - `Privacy/DisablePrivacyExperience`
 - `Storage/AllowStorageSenseGlobal`
@@ -74,15 +74,15 @@ The new policies and screens they skip are:
 
 | Policy          | What's skipped                                                                    |  Screenshot |
 |------------------|-----------------------------------------------------------------------------------|---|
-| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: `SkipCalibrationDuringFirstExperience`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
-| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringFirstExperience`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
+| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: `SkipCalibrationDuringSetup`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
+| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringSetup`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
 | Location Consent | This policy skips the location consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                 | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
 | Speech Consent   | This policy skips the speech consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
 
 The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance Uniform Resource Identifier) of new policies:
 
-- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringFirstExperience`
-- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringFirstExperience`
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup`
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringSetup`
 - `./Device/Vendor/MSFT/Policy/Config/Privacy/DisablePrivacyExperience`
 
 - Bool value (for each)
