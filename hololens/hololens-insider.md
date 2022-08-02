@@ -49,7 +49,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 
 ✔️ If you'd like to speed up new user sign-ons check out the new [new policies to speed up adding users](#policies-to-speed-up-adding-users). <br>
 ✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
-✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery). <br>
+✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-ncsi-passive-polling). <br>
 ✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm). <br>
 ✔️ If you need to have more security, are planning on vending out your devices, or need to check a box for a security review, check out the [security baseline](#security-baseline).
 
@@ -59,7 +59,6 @@ List of new or newly enabled policies:
 - `MixedReality/SkipCalibrationDuringSetup`
 - `MixedReality/SkipTrainingDuringSetup`
 - `MixedReality/DisallowNetworkConnectivityPassivePolling`
-- `Privacy/DisablePrivacyExperience`
 - `Storage/AllowStorageSenseGlobal`
 - `Storage/AllowStorageSenseTemporaryFilesCleanup`
 - `Storage/ConfigStorageSenseCloudContentDehydrationThreshold`
@@ -68,7 +67,7 @@ List of new or newly enabled policies:
 
 ### Policies to speed up adding users
 
-As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are four new areas you'll be able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
+As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are two new areas you'll be able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
 
 The new policies and screens they skip are:
 
@@ -76,14 +75,11 @@ The new policies and screens they skip are:
 |------------------|-----------------------------------------------------------------------------------|---|
 | Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: `SkipCalibrationDuringSetup`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
 | Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringSetup`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
-| Location Consent | This policy skips the location consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                 | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
-| Speech Consent   | This policy skips the speech consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
 
 The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance Uniform Resource Identifier) of new policies:
 
 - `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup`
 - `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringSetup`
-- `./Device/Vendor/MSFT/Policy/Config/Privacy/DisablePrivacyExperience`
 
 - Bool value (for each)
 
