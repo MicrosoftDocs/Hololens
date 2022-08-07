@@ -2,6 +2,15 @@
 
 
 
+## Week of August 01, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/1/2022 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 8/2/2022 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+
+
 ## Week of July 25, 2022
 
 
@@ -33,12 +42,3 @@
 |------|------------|--------|
 | 7/5/2022 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
 | 7/7/2022 | [HoloLens kiosk reference information](/hololens/hololens-kiosk-reference) | modified |
-
-
-## Week of June 27, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 6/28/2022 | [Infrastructure Guidelines for HoloLens](/hololens/hololens-commercial-infrastructure) | modified |
-| 6/28/2022 | [Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices](/hololens/hololens-mdm-configure) | modified |
