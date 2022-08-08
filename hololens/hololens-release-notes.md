@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 7/12/2022
+ms.date: 8/9/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -47,6 +47,20 @@ To help provide clarity this release notes page will only provide information fo
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+## Windows Holographic, version 22H1 - August 2022 Update
+
+- Build 20348.1513
+
+Improvements and fixes in the update:
+
+- Remove "Developer" from "OpenXR Tools" app's title and settings tab.
+- Stability improvements with app suspend/resume and device sleep mode.
+- Improve performance of hand tracking.
+- Update `XR_MSFT_spatial_graph_bridge` function and structure names.
+- No need to request permission to use Extended ET API.
+- Extended ET API now support 30fps, 60fps and 90fps.
+- Fixed an issue in AssignedAccessSettings where it was not providing correct result when kiosk mode was enabled for signed in user on HoloLens 2.
 
 ## Windows Holographic, version 22H1 - July 2022 Update
 
