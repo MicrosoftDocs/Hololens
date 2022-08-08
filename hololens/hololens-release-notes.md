@@ -61,6 +61,7 @@ Improvements and fixes in the update:
 - No need to request permission to use Extended ET API.
 - Extended ET API now support 30fps, 60fps and 90fps.
 - Fixed an issue in AssignedAccessSettings where it was not providing correct result when kiosk mode was enabled for signed in user on HoloLens 2.
+- Remote log collection from Intune now also works when device is sleeping and is connected with AC power source.
 
 ## Windows Holographic, version 22H1 - July 2022 Update
 
