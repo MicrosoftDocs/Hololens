@@ -162,7 +162,6 @@ Select this link to read the [security baselines](security-baseline.md).
 
 ### Fixes improvements
 
-- Free storage space values are now displayed on Microsoft Intune's hardware page for devices.
 - It will be possible to issue an app uninstall command in the device context using EnterpriseModernAppManagement CSP.
 
 ### Upcoming Fixes and Improvements
