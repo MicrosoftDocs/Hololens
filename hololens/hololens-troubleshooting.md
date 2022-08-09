@@ -3,7 +3,7 @@ title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
 author: evmill
 ms.author: millerevan
-ms.date: 5/10/2022
+ms.date: 7/26/2022
 ms.localizationpriority:
 ms.prod: hololens
 ms.topic: article
@@ -32,6 +32,7 @@ This article describes how to resolve several common HoloLens issues.
 - [**Fixed** - Remote Assist video freezes after 20 minutes](#fixed---remote-assist-video-freezes-after-20-minutes)
 - [**Fixed** - Downloading locked files doesn't show error](#fixed---downloading-locked-files-doesnt-error)
 - [**Fixed** - Device Portal file upload/download times out](#fixed---device-portal-file-uploaddownload-times-out)
+- [**Fixed** - OneDrive doesn't automatically upload pictures](#fixed---onedrive-doesnt-automatically-upload-pictures)
 
 ##### Known Issues
 
@@ -45,7 +46,6 @@ This article describes how to resolve several common HoloLens issues.
 - [Microsoft Edge fails to launch](#microsoft-edge-fails-to-launch)
 - [Keyboard doesn't switch to special characters](#keyboard-doesnt-switch-to-special-characters)
 - [Blue screen after unenrolling from Insider preview on a device flashed with an Insider build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
-- [OneDrive doesn't automatically upload pictures](#onedrive-doesnt-automatically-upload-pictures)
 
 ##### General
 
@@ -162,6 +162,18 @@ Some customers have found, when attempting to upload or download files, the oper
 This workaround, which applies equally to Wi-Fi and UsbNcm, is to disable the "required" option under "SSL Connection". To do so, navigate to Device Portal, **System**, and select the **Preferences** page. In the **Device Security** section, locate **SSL Connection**, and uncheck to disable **Required**.
 
 The user should then go to http://, not https:// (IP address) and features like file upload and download will work.
+
+[Back to list](#list)
+
+## **Fixed** - OneDrive doesn't automatically upload pictures
+
+The OneDrive app for HoloLens doesn't support automatic camera upload for work or school accounts. This **known issue** has been fixed.  For more information on automatically uploading your mixed reality photos and videos for work or school account, see [Share your mixed reality photos and videos](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos).
+
+Workarounds before the fix:
+
+- If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
+
+- If you can’t safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 [Back to list](#list)
 
@@ -311,18 +323,6 @@ Work-around:
     1. Connect to the PC and open Advanced Recovery Companion.
 
     1. Flash the HoloLens 2 to the default build.
-
-[Back to list](#list)
-
-## OneDrive doesn't automatically upload pictures
-
-The OneDrive app for HoloLens doesn't support automatic camera upload for work or school accounts. This is a **known issue**.
-
-Workarounds:
-
-- If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
-
-- If you can’t safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 [Back to list](#list)
 

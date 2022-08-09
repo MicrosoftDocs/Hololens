@@ -13,7 +13,7 @@ ms.custom:
 - CSSTroubleshooting
 audience: ITPro
 ms.date: 7/26/2022
-ms.localizationpriority:
+ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ---
@@ -31,43 +31,55 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 > [!NOTE]
 > In order to receive these features on your devices they will need to be in the [Dev channel](#start-receiving-insider-builds).
 
-| Feature                                                | Description                                                                                                                            | User or Scenario |
-|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------|
-| [New policies to speed up adding users](#policies-to-speed-up-adding-users)                          | New policies we've enabled that allow IT Admins to skip for OOBE or adding new   users to devices                                    | IT Admin       |
-| [Autopilot reset experience](#autopilot-reset-experience)                                 | Improvements in Autopilot reset experience, to enable users to reset Hololens 2 and restart Autopilot without requiring manual flashing.| IT Admin       |
-| [Clean up users on device](#clean-up-users-on-device)                                 | New policies to manage when to clear out users on the device                                                                         | IT Admin       |
-| [New policy disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery)                 | Turn off auto-reconnect to Wi-fi access points                                                                                                                         | IT Admin       |
-| [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)                       | New policy that IT Admins can enable that allows the use of captive portals on   the sign-in screen to help connecting to Wi-Fi | IT Admin       |
-| [Clean up storage via MDM](#clean-up-storage-via-mdm)                               | Clean   up files via MDM                                                                                                               | IT Admin       |
-| [Security Baseline](#security-baseline) | A list of security restrictions you can use. | IT Admin |
-| [Fixes improvements](#fixes-improvements)                       | Fixes and improvements for HoloLens.       | All              |
+> [!IMPORTANT]
+> This next update is on a newer code base than what is currently generally available. Once you update a device to it, you won't be able to have your device update to our monthly releases until they catch up with the same codebase. Although if need be, you can still flash your device to go back.
+
+| Feature   | Description  | User or Scenario | Available in build |
+|-----------|--------------|------------------|---|
+| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip for OOBE or adding new users to devices. | IT Admin | 10.0.22621.1008 |
+| [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1006 |
+| [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device.  | IT Admin  | 10.0.22621.1008 |
+| [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Turn off auto-reconnect to Wi-fi access points. | IT Admin       | 10.0.22621.1008 |
+| [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin | 10.0.22621.1006 |
+| [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM.  | IT Admin | 10.0.22621.1008 |
+| [Security Baseline](#security-baseline) | A list of security restrictions you can use. | IT Admin | 10.0.22621.1006 |
+| [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
 
 ### IT Admin Checklist
 
 ✔️ If you'd like to speed up new user sign-ons check out the new [new policies to speed up adding users](#policies-to-speed-up-adding-users). <br>
 ✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
-✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-wi-fi-auto-recovery). <br>
+✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-ncsi-passive-polling). <br>
 ✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm). <br>
 ✔️ If you need to have more security, are planning on vending out your devices, or need to check a box for a security review, check out the [security baseline](#security-baseline).
 
+List of new or newly enabled policies:
+
+- `MixedReality/AllowCaptivePortalBeforeSignIn`
+- `MixedReality/SkipCalibrationDuringSetup`
+- `MixedReality/SkipTrainingDuringSetup`
+- `MixedReality/DisallowNetworkConnectivityPassivePolling`
+- `Storage/AllowStorageSenseGlobal`
+- `Storage/AllowStorageSenseTemporaryFilesCleanup`
+- `Storage/ConfigStorageSenseCloudContentDehydrationThreshold`
+- `Storage/ConfigStorageSenseDownloadsCleanupThreshold`
+- `Storage/ConfigStorageSenseGlobalCadence`
+
 ### Policies to speed up adding users
 
-As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are four new areas you'll be able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
+As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are two new areas you'll be able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
 
 The new policies and screens they skip are:
 
 | Policy          | What's skipped                                                                    |  Screenshot |
 |------------------|-----------------------------------------------------------------------------------|---|
-| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: `SkipCalibrationDuringFirstExperience`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
-| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringFirstExperience`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
-| Location Consent | This policy skips the location consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                 | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
-| Speech Consent   | This policy skips the speech consent page if the policy has been set. <br> Using: `DisablePrivacyExperience`                    | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana"> |
+| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: `SkipCalibrationDuringSetup`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
+| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringSetup`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
 
 The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance Uniform Resource Identifier) of new policies:
 
-- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringFirstExperience`
-- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringFirstExperience`
-- `./Device/Vendor/MSFT/Policy/Config/Privacy/DisablePrivacyExperience`
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup`
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringSetup`
 
 - Bool value (for each)
 
@@ -101,12 +113,12 @@ Here's how to get started:
 
 To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
 
-### New policy to disable Wi-Fi auto recovery
+### New policy to disable NCSI passive polling
 
-Wi-Fi auto recovery is enabled on HoloLens 2 by default. In some cases you may want your devices to not automatically reconnect. This may be because you have a preferred network you want to keep your devices on, you find yourself reconnecting to an access point that doesn't have internet, or you want to keep those devices offline in specific areas. For those cases we've enabled a new policy that you can opt to use to keep your devices from automatically reconnecting back to your access points.
+Windows Network Connectivity Status Indicator may get false positive Internet capable signal from passive polling. Which may result in unexpected Wi-Fi adapter reset when device connects to an intranet only access point. Enabling this policy would avoid unexpected network interruptions caused by false positive NCSI passive polling.
 
 The OMA-URI of new policies:
-`./Device/Vendor/MSFT/Policy/Config/MixedReality/DisableNCSIPassivePolling`
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/DisallowNetworkConnectivityPassivePolling`
 
 - Bool value
 
@@ -150,7 +162,6 @@ Select this link to read the [security baselines](security-baseline.md).
 
 ### Fixes improvements
 
-- Free storage space values are now displayed on Microsoft Intune's hardware page for devices.
 - It will be possible to issue an app uninstall command in the device context using EnterpriseModernAppManagement CSP.
 
 ### Upcoming Fixes and Improvements
