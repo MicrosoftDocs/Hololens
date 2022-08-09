@@ -33,7 +33,8 @@ While looking at the devices we want to perform these maintenance tasks they can
 
 **Modern Standby - Battery only:** The device has been left somewhere, but without power. In this state, the device won't sync with MDM or perform updates of any kind. This is the least useful state to leave the device in. It's advised that you take best efforts to put away your devices with power. Because these devices don't perform any of these maintenance tasks while in this state, we'll exclude this state from the rest of the article.
 
-NOTE: Plugging in a device that's off will turn on the device, placing it in active use temporarily, and then it will fall asleep into Modern Standby on AC power. If a device is currently in Modern Standby plugging it into an AC power source won't wake it up into Active Use.
+> [!NOTE]
+> Plugging in a device that's off will turn on the device, placing it in active use temporarily, and then it will fall asleep into Modern Standby on AC power. If a device is currently in Modern Standby plugging it into an AC power source won't wake it up into Active Use.
 
 ## MDM Sync
 
