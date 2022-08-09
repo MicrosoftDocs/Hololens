@@ -127,7 +127,7 @@ Log collection via MDM Behavior:
 
 | Active Use | Modern Standby - with AC power |
 | --- | --- |
-| Can download and update an app, will close app if it's being used. | Can download and update an app. |
+| Can collect logs while is use. | Can collect logs from a device on standby with power. |
 
 Read more about [log collection on HoloLens](hololens-diagnostic-logs.md#diagnosticlog-csp).
 
