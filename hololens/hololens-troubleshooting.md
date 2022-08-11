@@ -187,6 +187,71 @@ When deleting a HoloLens device from Intune [via the Wipe command](hololens-reco
 
 Immediately after selecting **Wipe** we suggest also selecting the **Delete** button next to wipe. Otherwise you'll have left over device objects or even see another known issue for [Autopilot](#why-do-i-see-0x80180014-during-autopilot).
 
+## Devices not getting the latest feature updates
+
+You may have noticed that your devices are updating but not updating to the latest feature releases. If your device version is newer than 19041.1146, but the major build number is still 19041 then you’re still on an older servicing train.
+
+### Symptom
+
+Devices keep receiving servicing updates instead of FE updates.
+
+### Who does this affect
+
+Users who have used “Feature updates for Windows 10 and later” instead of “Update rings for Windows 10 and later” to manage their devices.
+
+![Feature update bad selection](./images/endpoint-update-select.png)
+
+### Who is not affected
+
+Users who did not try to use “Feature updates for Windows 10 and later” to manage their devices.
+
+### How to check if devices are subject to Intune feature update management, and how to opt out
+
+1. Use Get azureADDevice beta Graph API to check against the AAD device to determine if it is enrolled to update management.
+
+```
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatableAssets",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
+            "id": "c1758f08-18e6-4335-98fb-91dd8d17fc3c"
+        },
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
+            "id": "56142275-3286-41bb-a326-d91c84529b82"
+        },
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+            "id": "088de54c-c1a9-4c3d-bcdb-c500fd6e6db7",
+            "errors": [],
+            "enrollments": [
+                {
+                    "@odata.type": "#microsoft.graph.windowsUpdates.updateManagementEnrollment",
+                    "updateCategory": "feature"
+                }
+            ]
+        }
+    ]
+}
+```
+
+2. If device is enrolled, unenrollAssets Graph API can be used to unenroll a HoloLens device subject to Intune feature update.
+
+```
+{
+  "updateCategory": "String",
+  "assets": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+      "id": "088de54c-c1a9-4c3d-bcdb-c500fd6e6db7"
+    }
+  ]
+}
+```
+
+3. Once device is unenrolled, use Get azureADDevice or List azureADDevice resources to check if the device has been unenrolled successfully.
+
 ## Why do I see 0x80180014 during Autopilot?
 
 This error is typically encountered during device reset and re-use flows where a HoloLens device has gone through Autopilot at least once. In order to resolve this issue, please [delete the device from Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) and reset it again to complete Autopilot flow.
