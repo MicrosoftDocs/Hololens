@@ -37,6 +37,7 @@ This article describes how to resolve several common HoloLens issues.
 ##### Known Issues
 
 - [Remote Wipe doesn't remove device from Intune](#remote-wipe-doesnt-remove-device-from-intune)
+- [Devices not getting the latest feature updates](#devices-not-getting-the-latest-feature-updates)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
 - [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
 - [File Explorer and pickers can't select OneDrive](#file-explorer-and-pickers-cant-select-onedrive)
