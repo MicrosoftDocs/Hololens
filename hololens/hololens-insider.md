@@ -81,7 +81,7 @@ The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune)
 - `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup`
 - `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringSetup`
 
-- Bool value (for each)
+- Int value (for each)
 
 For more info on how to increase your setup speed for new users, check out our [guide on how to quickly set up new users.](hololens2-new-user-optimize.md)
 
