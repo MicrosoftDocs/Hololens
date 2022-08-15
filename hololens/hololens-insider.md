@@ -12,7 +12,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 7/26/2022
+ms.date: 8/15/2022
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
@@ -81,7 +81,9 @@ The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune)
 - `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup`
 - `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringSetup`
 
-- Int value (for each)
+- Int value
+  - 0 : Keep the experience (default)
+  - 1 : Skip
 
 For more info on how to increase your setup speed for new users, check out our [guide on how to quickly set up new users.](hololens2-new-user-optimize.md)
 
