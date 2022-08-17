@@ -115,7 +115,7 @@ Your PC must have internet access and support Internet sharing over Wi-Fi.
 On your PC:
 
 1. Install Wireshark.
-1. In **Mobile hotspot** settings, turn **Share my Internet connection with other devices** to **On**.
+1. In **Mobile hotspot** settings, turn **Share my Internet connection with other devices** to **ON**.
 
     ![Wireshark Mobile hotspot settings](images/wireshark-mobile-hotspot-win11.png)
 
