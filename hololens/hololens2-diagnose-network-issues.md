@@ -5,7 +5,7 @@ author: qianw211
 ms.author: qianwen
 manager: sekerawa
 ms.reviewer: robertvs
-ms.date: 7/20/2022
+ms.date: 8/17/2022
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -46,8 +46,10 @@ Let's say you have an authentication issue with a custom line of business (LOB) 
 On your PC, install and start Fiddler. Configure Fiddler to allow remote computers to connect:
 
 1. Go to Fiddler **Settings** and select **Connections**.
-1. Note the listening port for Fiddler (the default is 8866).
+1. Note the listening port for Fiddler (the default is 8866, and 8888 for Fiddler Classic).
 1. Select **Allow remote computers to connect**.
+
+    **Note:** Under **Tools -> Options -> HTTPS**, select capturing **HTTPS Connects/Decrypt** for remote clients only. This way, we won't capture local traffic, but only the traffic coming from the HoloLens.
 
    ![Fiddler Connections Settings dialogue box](images/fiddler-connection-settings.png)
 
@@ -64,7 +66,7 @@ On your HoloLens 2, configure Fiddler as the proxy server*:
 
 \* If your HoloLens 2 devices is running Windows Holographic builds 20279.1006 and later (Insiders and the upcoming release), use the following steps to configure proxy:
 
-1. Open the **Start** menu and go to your Wi-Fi network’s **Properties** page.
+1. Open the **Start** menu and go **Settings -> Network & Internet -> Status -> Wi-Fi network's Properties**.
 1. Scroll down to **Proxy**.
 1. Change to **Manual Setup**.
 1. Enter the IP address of the PC where Fiddler is installed.
@@ -95,8 +97,6 @@ On your HoloLens 2, import the Fiddler certificate.
 
 On your PC, Fiddler will show the HoloLens 2’s live HTTP(S) sessions. The Inspectors panel in Fiddler can show HTTP(S) request/response in different views - for example, the “Raw” view shows the raw request or response in plain text.
 
-![Fiddler Inspector window](images/fiddler-inspector.png)
-
 ## Wireshark
 
 Applications like Dynamics 365 Remote Assist and VPN plug-ins use non-HTTPS traffic. If your HoloLens 2 has any issues with those types of apps, Wireshark can be used to capture and inspect the IP traffic to troubleshoot your internal OS level networking stack.
@@ -121,6 +121,9 @@ On your PC:
     ![Wireshark Capture screen](images/wireshark-capture.png)
 
 On your HoloLens 2, change the Wi-Fi network to the PC’s mobile hotspot. HoloLens 2 IP traffic will now show up in Wireshark.
+
+>[!Note]
+>Turning Wi-Fi hotspot ON will create a new local area network connection with Microsoft Wi-Fi Direct Virtual Adapture.
 
 ### Analyze Wireshark logs
 
