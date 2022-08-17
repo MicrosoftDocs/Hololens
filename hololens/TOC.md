@@ -79,6 +79,7 @@
 ### [Network security](security-network-security.md)
 ### [Security engineering ](security-engineering.md)
 ### [HoloLens 2 Privacy and Data Protection](hololens2-privacy.md)
+### [Security baseline](security-baseline.md)
 ## Device Enrollment
 ### [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 

@@ -3,11 +3,11 @@ title: Find and save files on HoloLens
 description: Learn how to use File Explorer on HoloLens to open, view, and manage files on your mixed reality device.
 keywords: how-to, file picker, files, photos, videos, pictures, OneDrive, storage, file explorer, hololens
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
-author: mattzmsft
-ms.author: mazeller
-manager: v-miegge
+author: qianw211    
+ms.author: qianwen
+manager: sekerawa
 ms.reviewer: jarrettrenshaw
-ms.date: 12/30/2019
+ms.date: 7/26/2022
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
@@ -60,7 +60,9 @@ You can also install the [OneDrive app](https://www.microsoft.com/p/onedrive/9wz
 
 ### OneDrive app
 
-[OneDrive](https://onedrive.live.com/) lets you access, manage, and share your photos and videos with any device and with any user. To access the photos and videos captured on HoloLens, download the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store on your HoloLens. Once downloaded, open the OneDrive app and select **Settings** > **Camera upload**, and turn on **Camera upload**.
+[OneDrive](https://onedrive.live.com/) lets you access, manage, and share your photos and videos with any device. If you're logged in with your personal [Microsoft account](https://account.microsoft.com/), to access the photos and videos captured on HoloLens, download the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store on your HoloLens. Once downloaded, open the OneDrive app and select **Settings** > **Camera upload**, and turn on **Camera upload**.
+
+For more information on automatically uploading your mixed reality photos and videos, see [Share your mixed reality photos and videos](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos).
 
 ### Connect to a PC
 
