@@ -24,13 +24,16 @@ appliesto:
 
 If network issues are an obstacle to successfully deploying and using HoloLens 2 in your organization, learn how two well-known network diagnostic tools, Fiddler and Wireshark can help you scan, diagnose, and identify problems.
 
-[Fiddler](https://www.telerik.com/fiddler) is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It captures every HTTP request the computer makes and records everything associated with it, uncovering end-user authentication issues for the HTTPS apps used in your organization.  Fiddler drives better productivity and efficiency for your HoloLens 2 use cases.
+[Fiddler Everywhere](https://www.telerik.com/fiddler) is a third party web debugging proxy and is used primarily to troubleshoot HTTP(S) issues. It captures every HTTP request the computer makes and records everything associated with it, making it easy to uncover end-user authentication issues for the HTTPS apps used in your organization.
 
-[Wireshark](https://www.wireshark.org/) is a network protocol analyzer primarily used to inspect TCP/UDP traffic from and to your HoloLens 2 devices. This makes it easy to identify what traffic is crossing your network to your HoloLens 2, how much of it, how frequently, how much latency there is between certain hops, etc.
+** NOTE BLOCK **
+There is also a free version of Fiddler called [Fiddler Classic](https://www.telerik.com/fiddler/fiddler-classic) that can be used for the diagnostics.   Although the interface is slightly different than what is shown here, the functionality between the two tools is similar
+
+[Wireshark](https://www.wireshark.org/) is a third party network protocol analyzer primarily used to inspect TCP/UDP traffic to and from your HoloLens 2 devices. This makes it easy to inspect all the network traffic that is crossing to your HoloLens 2.   This also allows for you to do some deeper inspection of the traffic by looking at much of it there is, how much latency there is between certain hops, etc.
 
 We’ll go over some examples of when to use these tools, along with installing and configurations with your HoloLens 2.
 
-## Fiddler
+## Fiddler Everywhere
 
 Let's say you have an authentication issue with a custom line of business (LOB) application. After being installed on your HoloLens 2, the app can't authenticate to the back-end server through HTTPS. To troubleshoot this, you can use Fiddler to capture and decode the HTTPS sessions, enabling discovery of network level-issues.
 
