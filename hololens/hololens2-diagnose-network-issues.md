@@ -33,7 +33,7 @@ There is also a free version of Fiddler called [Fiddler Classic](https://www.tel
 
 We’ll go over some examples of when to use these tools, along with installing and configurations with your HoloLens 2.
 
-## Fiddler
+## Fiddler Everywhere
 
 Let's say you have an authentication issue with a custom line of business (LOB) application. After being installed on your HoloLens 2, the app can't authenticate to the back-end server through HTTPS. To troubleshoot this, you can use Fiddler to capture and decode the HTTPS sessions, enabling discovery of network level-issues.
 
