@@ -117,7 +117,7 @@ On your PC:
 1. Install Wireshark.
 1. In **Mobile hotspot** settings, turn **Share my Internet connection with other devices** to **On**.
 
-    ![Wireshark Mobile hotspot settings](images/wireshark_mobile-hotspot-settings.png)
+    ![Wireshark Mobile hotspot settings](images/wireshark-mobile-hotspot-win11.png)
 
 1. Start Wireshark and capture traffic from the Mobile hotspot interface.
 
