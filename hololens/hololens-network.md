@@ -376,7 +376,7 @@ Depending on your devices build you can either use built in voice commands or Co
 
 ### By using Windows Device Portal
 
-1. In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
+1. In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal#networking).
 1. Navigate to the **Networking** section.  
    This section displays your IP address and other network information. By using this method, you can copy and paste of the IP address on your development PC.
 
