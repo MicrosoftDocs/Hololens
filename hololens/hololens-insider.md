@@ -168,12 +168,10 @@ Select this link to read the [security baselines](security-baseline.md).
 
 ### Configure NTP client for W32 Time service
 
-You may want to configure a different time server for your device fleet. With this update, IT admins can now configure certain aspects of NTP client with following policies.
+You may want to configure a different time server for your device fleet. With this update, IT admins can now configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page will show the time server, e.g. `time.windows.com` or another if another value is configured via MDM policy.
 
 > [!NOTE]
 > Reboot is required for these policies to take effect.
-
-**Known Issue:** In the Settings app, the Time/Language page still shows `time.windows.com` if another value is configured via MDM policy.
 
 #### NtpClientEnabled
 
@@ -190,6 +188,7 @@ This policy setting specifies a set of parameters for controlling the Windows NT
 - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureNtpClient`
 - Data Type: String
 - Value:
+
 ```
 <enabled/><data id="W32TIME_NtpServer"
 value="time.windows.com,0x9"/><data id="W32TIME_Type"
