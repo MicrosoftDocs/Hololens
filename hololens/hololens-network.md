@@ -2,15 +2,15 @@
 title: Connect HoloLens to a network
 description: Learn how to setup and connect to the internet with HoloLens and how to identify the device IP address.
 ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
-author: qianw211
-ms.author: qianwen
+author: evmill
+ms.author: millerevan
+ms.reviewer: ruizhao
+manager: lolab
 keywords: HoloLens, wifi, wireless, internet, ip, ip address
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.date: 10/28/2021
-ms.reviewer: evmill
-manager: jarrettr
+ms.date: 8/23/2022
 ---
 
 # Connect HoloLens to a network
@@ -138,6 +138,32 @@ Additional resources:
 - EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
 Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if you are having trouble connecting to your Wi-Fi.
+
+## HoloLens 2 protocols and ports
+
+|      Port      |      Protocol      |      Application protocol                |      System service name            |
+|----------------|--------------------|------------------------------------------|-------------------------------------|
+|     N/A        |     ICMP           |     ICMP (IP protocol 1)                 |     TCP/IP                          |
+|     N/A        |     IGMP           |     IGMP (IP protocol 2)                 |     TCP/IP                          |
+|     N/A        |     IPv6           |     IPv6 Encapsulation                   |     TCP/IP                          |
+|     N/A        |     ESP            |     IPsec ESP (IP   protocol 50)         |     Routing and Remote   Access     |
+|     N/A        |     AH             |     IPsec AH (IP   protocol 51)          |     Routing and Remote   Access     |
+|     N/A        |     IPv6-ICMP      |     ICMP for IPv6 (IP   protocol 58)     |     TCP/IP                          |
+|     53         |     UDP            |     DNS                                  |     DNS Client                      |
+|     67         |     UDP            |     DHCP                                 |     TCP/IP                          |
+|     80         |     TCP            |     HTTP                                 |     Apps & Services                 |
+|     123        |     UDP            |     SNTP                                 |     Windows Time                    |
+|     443        |     TCP            |     HTTPS                                |     Apps & Services                 |
+|     500        |     UDP            |     IPSec IKE                            |     Routing and Remote   Access     |
+|     546        |     UDP            |     DHCPv6                               |     TCP/IP                          |
+|     1701       |     UDP            |     L2TP                                 |     Routing and Remote   Access     |
+|     1900       |     UDP            |     SSDP                                 |     SSDP Discovery   Service        |
+|     2869       |     TCP            |     SSDP event   notification            |     SSDP Discovery   Service        |
+|     4500       |     UDP            |     NAT-T                                |     Routing and Remote   Access     |
+|     5353       |     UDP            |     mDNS                                 |     DNS Client                      |
+|     5355       |     UDP            |     LLMNR                                |     DNS Client                      |
+|     7236       |     TCP            |     Mixed Reality   Capture              |     MRC Service                     |
+|     7236       |     UDP            |     Mixed Reality   Capture              |     MRC Service                     |
 
 ## Configure Network Proxy
 
