@@ -141,6 +141,8 @@ Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if yo
 
 ## HoloLens 2 protocols and ports
 
+This table lists IP protocols and TCP/UDP ports used by HoloLens 2 system services.
+
 |      Port      |      Protocol      |      Application protocol                |      System service name            |
 |----------------|--------------------|------------------------------------------|-------------------------------------|
 |     N/A        |     ICMP           |     ICMP (IP protocol 1)                 |     TCP/IP                          |
