@@ -119,7 +119,7 @@ To update to the latest release, open the Settings app, go to Update & Securit
 | [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies) | Configures new MPM settings via MDM | IT Admins |  [February](#windows-holographic-version-21h2---february-2022-update) |
 | [Moving Platform Mode SDK](#moving-platform-mode-sdk) | Configures MPM via Apps | Developers |  [February](#windows-holographic-version-21h2---february-2022-update) |
 | [Start gestures settings](#start-gestures-settings)        | Custom limitations for how the start menu can be opened.            | End users        | [January](#windows-holographic-version-21h2---january-2022-update) |
-| [Fixes and improvements in Windows Holographic, version 22H1](#fixes-and-improvements-in-windows-holographic-version-22h1) | These fixes are improvements are part of Windows Holographic, version 22H1. | All |
+| [Fixes and improvements in Windows Holographic, version 22H1](#fixes-and-improvements-in-windows-holographic-version-22h1) | These fixes are improvements are part of Windows Holographic, version 22H1. | All | 22H1 |
 
 ### IT Admin Feature Checklist - 22H1
 
