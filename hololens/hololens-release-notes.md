@@ -162,6 +162,7 @@ These fixes are improvements are part of Windows Holographic, version 22H1. If a
 - Fixed an issue where kiosk mode wasn’t falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
 - Fixed an issue where graphics memory is leaked during some camera usage scenarios.
 - Updated HoloLens inbox Microsoft Edge browser version to 98.0.1108.43.
+- Fixed an issue in Location API where value of Privacy/LetAppsAccessLocation_ForceAllowTheseApps policy was not correctly respected..
 
 ## Windows Holographic, version 21H2 - March 2022 Update
 
