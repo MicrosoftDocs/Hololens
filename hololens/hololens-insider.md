@@ -53,7 +53,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 ✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-ncsi-passive-polling). <br>
 ✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm). <br>
 ✔️ If you need to have more security, are planning on vending out your devices, or need to check a box for a security review, check out the [security baseline](#security-baseline). <br>
-✔️ If you use you use your own time server, and would like your HoloLens devices to use it as well check out how to [set your own](#configure-ntp-client-for-w32-time-service).
+✔️ If you use your own time server, and would like your HoloLens devices to use it as well check out how to [set your own](#configure-ntp-client-for-w32-time-service).
 
 List of new or newly enabled policies:
 
