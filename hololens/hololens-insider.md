@@ -43,7 +43,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin | 10.0.22621.1006 |
 | [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM.  | IT Admin | 10.0.22621.1008 |
 | [Security Baseline](#security-baseline) | A list of security restrictions you can use. | IT Admin | 10.0.22621.1006 |
-| [Configure NTP client for W32 Time service](#configure-ntp-client-for-w32-time-service) |  IT Admin | 10.0.22621.1008 |
+| [Configure NTP client for W32 Time service](#configure-ntp-client-for-w32-time-service) | Used to set your own time sever for your devices. |   IT Admin | 10.0.22621.1010 |
 | [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
 
 ### IT Admin Checklist
@@ -53,7 +53,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 ✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-ncsi-passive-polling). <br>
 ✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm). <br>
 ✔️ If you need to have more security, are planning on vending out your devices, or need to check a box for a security review, check out the [security baseline](#security-baseline). <br>
-✔️ If you use you use your own time server, and would like your HoloLens devices to use it as well check out how to [set your own](#configure-ntp-client-for-w32-time-service).
+✔️ If you use your own time server, and would like your HoloLens devices to use it as well check out how to [set your own](#configure-ntp-client-for-w32-time-service).
 
 List of new or newly enabled policies:
 
@@ -168,7 +168,7 @@ Select this link to read the [security baselines](security-baseline.md).
 
 ### Configure NTP client for W32 Time service
 
-You may want to configure a different time server for your device fleet. With this update, IT admins can now configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page will show the time server, e.g. `time.windows.com` or another if another value is configured via MDM policy.
+You may want to configure a different time server for your device fleet. With this update, IT admins can now configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page will show the time server after a time sync has occurred. E.g. `time.windows.com` or another if another value is configured via MDM policy.
 
 > [!NOTE]
 > Reboot is required for these policies to take effect.
