@@ -2,6 +2,16 @@
 
 
 
+## Week of August 22, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/22/2022 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 8/23/2022 | [Connect HoloLens to a network](/hololens/hololens-network) | modified |
+| 8/23/2022 | [HoloLens 2 security baseline](/hololens/security-baseline) | modified |
+
+
 ## Week of August 15, 2022
 
 
