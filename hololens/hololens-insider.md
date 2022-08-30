@@ -36,14 +36,14 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 
 | Feature   | Description  | User or Scenario | Available in build |
 |-----------|--------------|------------------|---|
-| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip for OOBE or adding new users to devices. | IT Admin | 10.0.22621.1008 |
+| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip several screens in OOBE when adding new users to devices. | IT Admin | 10.0.22621.1008 |
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1006 |
-| [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device.  | IT Admin  | 10.0.22621.1008 |
-| [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Turn off auto-reconnect to Wi-fi access points. | IT Admin       | 10.0.22621.1008 |
+| [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device, to prevent hitting the maximum limit.  | IT Admin  | 10.0.22621.1008 |
+| [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Turn off auto-reconnect to Wi-fi access points to stay connected to intranet. | IT Admin       | 10.0.22621.1008 |
 | [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin | 10.0.22621.1006 |
-| [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM.  | IT Admin | 10.0.22621.1008 |
-| [Security Baseline](#security-baseline) | A list of security restrictions you can use. | IT Admin | 10.0.22621.1006 |
-| [Configure NTP client for W32 Time service](#configure-ntp-client-for-w32-time-service) | Used to set your own time sever for your devices. |   IT Admin | 10.0.22621.1010 |
+| [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM, using storage sense to clean up older unused files.  | IT Admin | 10.0.22621.1008 |
+| [Security Baseline](#security-baseline) | Two sets of security restrictions you can use to add more control to your devices. | IT Admin | 10.0.22621.1006 |
+| [Configure NTP client for W32 Time service](#configure-ntp-client-for-w32-time-service) | Used to set your own time sever for your devices, to help keep them compliant. |   IT Admin | 10.0.22621.1010 |
 | [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
 
 ### IT Admin Checklist
