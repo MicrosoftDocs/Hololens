@@ -231,7 +231,7 @@ You are now able to install Apps without needing to enable Developer Mode or usi
 1. The App Installer will launch. Select the Install button to install your app.
 The installed app will automatically launch upon completion of installation.
 
-You can find sample apps on [Windows Universal Samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) to test this flow.
+You can find sample apps on [Windows Universal Samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/main/Samples) to test this flow.
 
 Read about the full process of [installing apps on HoloLens 2 with the App Installer](app-deploy-app-installer.md).  
 
