@@ -204,11 +204,6 @@ value="0"/>
 
 - It will be possible to issue an app uninstall command in the device context using EnterpriseModernAppManagement CSP.
 
-### Upcoming Fixes and Improvements
-
-- In-box OpenXR code updated. This is to provide best out-of-box experience for customers without Microsoft store access.
-- Medical partners can access 90fps eye tracking via Extended ET API.
-
 ## Start receiving Insider builds
 
 1. If you haven’t updated recently, please reboot your device to update state and get the latest build.
