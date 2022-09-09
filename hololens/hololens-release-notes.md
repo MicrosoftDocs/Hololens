@@ -50,7 +50,7 @@ To help provide clarity this release notes page will only provide information fo
 
 ## Windows Holographic, version 22H1 - September 2022 Update
 
-- Build 20348.XXXX
+- Build 20348.1518
 
 Improvements and fixes in the update:
 
