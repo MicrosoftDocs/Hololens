@@ -48,6 +48,17 @@ To help provide clarity this release notes page will only provide information fo
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Windows Holographic, version 22H1 - September 2022 Update
+
+- Build 20348.1518
+
+Improvements and fixes in the update:
+
+- In-box OpenXR code updated. This is to provide best out-of-box experience for customers without Microsoft store access.
+- Medical partners can access 90fps eye tracking via Extended ET API.
+- Added the ability to uninstall apps in the device context.
+- Fixed an issue in AssignedAccessSettings where it was not providing correct result when kiosk mode was enabled for signed in user on HoloLens 2.
+
 ## Windows Holographic, version 22H1 - August 2022 Update
 
 - Build 20348.1513
