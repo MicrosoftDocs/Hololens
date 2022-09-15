@@ -31,6 +31,8 @@ If network issues are an obstacle to successfully deploying and using HoloLens 2
 
 * [Wireshark](https://www.wireshark.org/) is a third party network protocol analyzer primarily used to inspect TCP/UDP traffic to and from your HoloLens 2 devices. This makes it easy to inspect all the network traffic that is crossing to your HoloLens 2.   This also allows for you to do some deeper inspection of the traffic by looking at much of it there is, how much latency there is between certain hops, etc.
 
+## Network diagnostic tools
+
 We’ll go over some examples of when to use these tools, along with installing and configurations with your HoloLens 2.
 
 [!INCLUDE[](includes/tools-network-diagnostics.md)]
