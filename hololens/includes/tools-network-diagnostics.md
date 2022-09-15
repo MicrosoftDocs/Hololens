@@ -1,17 +1,17 @@
 # [Fiddler Everywhere](#tab/everywhere)
 
-## Fiddler Everywhere
+### Fiddler Everywhere
 
 Let's say you have an authentication issue with a custom line of business (LOB) application. After being installed on your HoloLens 2, the app can't authenticate to the back-end server through HTTPS. To troubleshoot this, you can use Fiddler to capture and decode the HTTPS sessions, enabling discovery of network level-issues.
 
-### Configure Fiddler to capture HTTP traffic from HoloLens 2
+#### Configure Fiddler to capture HTTP traffic from HoloLens 2
 
-#### Prerequisites:
+##### Prerequisites:
 
 * HoloLens 2 devices and your PC must be on the same network
 * Note the IP address of your PC
 
-#### Steps:
+##### Steps:
 
 On your PC, install and start Fiddler. Configure Fiddler to allow remote computers to connect:
 
@@ -43,7 +43,7 @@ On your HoloLens 2, configure Fiddler as the proxy server*:
 1. Enter the port number noted above. (default is 8866).
 1. Select **Apply**.
 
-### Decrypt HTTPS traffic from HoloLens 2
+#### Decrypt HTTPS traffic from HoloLens 2
 
 On your PC, export the Fiddler certificate.
 
@@ -63,24 +63,24 @@ On your HoloLens 2, import the Fiddler certificate.
 5. Select **Install**.
 6. Confirm the certificate is showing in the list of certificates. If not, repeat the above steps.
 
-### Inspect HTTP(S) sessions
+#### Inspect HTTP(S) sessions
 
 On your PC, Fiddler will show the HoloLens 2’s live HTTP(S) sessions. The Inspectors panel in Fiddler can show HTTP(S) request/response in different views - for example, the “Raw” view shows the raw request or response in plain text.
 
 # [Fiddler Classic](#tab/classic)
 
-## Fiddler Classic
+### Fiddler Classic
 
 Let's say you have an authentication issue with a custom line of business (LOB) application. After being installed on your HoloLens 2, the app can't authenticate to the back-end server through HTTPS. To troubleshoot this, you can use Fiddler to capture and decode the HTTPS sessions, enabling discovery of network level-issues.
 
-### Configure Fiddler to capture HTTP traffic from HoloLens 2
+#### Configure Fiddler to capture HTTP traffic from HoloLens 2
 
-#### Prerequisites:
+##### Prerequisites:
 
 * HoloLens 2 devices and your PC must be on the same network
 * Note the IP address of your PC
 
-#### Steps:
+##### Steps:
 
 On your PC, install and start Fiddler. Configure Fiddler to allow remote computers to connect:
 
@@ -112,7 +112,7 @@ On your HoloLens 2, configure Fiddler as the proxy server*:
 1. Enter the port number noted above. (default is 8866).
 1. Select **Apply**.
 
-### Decrypt HTTPS traffic from HoloLens 2
+#### Decrypt HTTPS traffic from HoloLens 2
 
 On your PC, export the Fiddler certificate.
 
@@ -132,23 +132,23 @@ On your HoloLens 2, import the Fiddler certificate.
 5. Select **Install**.
 6. Confirm the certificate is showing in the list of certificates. If not, repeat the above steps.
 
-### Inspect HTTP(S) sessions
+#### Inspect HTTP(S) sessions
 
 On your PC, Fiddler will show the HoloLens 2’s live HTTP(S) sessions. The Inspectors panel in Fiddler can show HTTP(S) request/response in different views - for example, the “Raw” view shows the raw request or response in plain text.
 
 # [Wireshark](#tab/wireshark)
 
-## Wireshark
+### Wireshark
 
 Applications like Dynamics 365 Remote Assist and VPN plug-ins use non-HTTPS traffic. If your HoloLens 2 has any issues with those types of apps, Wireshark can be used to capture and inspect the IP traffic to troubleshoot your internal OS level networking stack.
 
-### Configure Wireshark to capture network traffic from HoloLens 2
+#### Configure Wireshark to capture network traffic from HoloLens 2
 
-#### Prerequisites:
+##### Prerequisites:
 
 Your PC must have internet access and support Internet sharing over Wi-Fi.
 
-#### Steps:
+##### Steps:
 
 On your PC:
 
@@ -166,7 +166,7 @@ On your HoloLens 2, change the Wi-Fi network to the PC’s mobile hotspot. HoloL
 >[!Note]
 >Turning Wi-Fi hotspot ON will create a new local area network connection with Microsoft Wi-Fi Direct Virtual Adapter.
 
-### Analyze Wireshark logs
+#### Analyze Wireshark logs
 
 Wireshark filters can help filtering out the packets of interests. For example, “tcp.stream eq 1” shows the second TCP stream in the log (stream index starts with 0), “ip.addr == 192.168.137.1 && tcp.port == 80” filters out the TCP packets on port 80 with source/destination IP equals 192.168.137.1.
 
