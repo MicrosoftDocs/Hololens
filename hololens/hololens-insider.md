@@ -36,13 +36,14 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 
 | Feature   | Description  | User or Scenario | Available in build |
 |-----------|--------------|------------------|---|
-| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip for OOBE or adding new users to devices. | IT Admin | 10.0.22621.1008 |
+| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip several screens in OOBE when adding new users to devices. | IT Admin | 10.0.22621.1008 |
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1006 |
-| [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device.  | IT Admin  | 10.0.22621.1008 |
-| [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Turn off auto-reconnect to Wi-fi access points. | IT Admin       | 10.0.22621.1008 |
+| [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device, to prevent hitting the maximum limit.  | IT Admin  | 10.0.22621.1008 |
+| [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Turn off auto-reconnect to Wi-fi access points to stay connected to intranet. | IT Admin       | 10.0.22621.1008 |
 | [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin | 10.0.22621.1006 |
-| [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM.  | IT Admin | 10.0.22621.1008 |
-| [Security Baseline](#security-baseline) | A list of security restrictions you can use. | IT Admin | 10.0.22621.1006 |
+| [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM, using storage sense to clean up older unused files.  | IT Admin | 10.0.22621.1008 |
+| [Security Baseline](#security-baseline) | Two sets of security restrictions you can use to add more control to your devices. | IT Admin | 10.0.22621.1006 |
+| [Configure NTP client for W32 Time service](#configure-ntp-client-for-w32-time-service) | Used to set your own time sever for your devices, to help keep them compliant. |   IT Admin | 10.0.22621.1010 |
 | [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
 
 ### IT Admin Checklist
@@ -51,11 +52,14 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 ✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
 ✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-ncsi-passive-polling). <br>
 ✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm). <br>
-✔️ If you need to have more security, are planning on vending out your devices, or need to check a box for a security review, check out the [security baseline](#security-baseline).
+✔️ If you need to have more security, are planning on vending out your devices, or need to check a box for a security review, check out the [security baseline](#security-baseline). <br>
+✔️ If you use your own time server, and would like your HoloLens devices to use it as well check out how to [set your own](#configure-ntp-client-for-w32-time-service).
 
 List of new or newly enabled policies:
 
 - `MixedReality/AllowCaptivePortalBeforeSignIn`
+- `MixedReality/ConfigureNtpClient`
+- `MixedReality/NtpClientEnabled`
 - `MixedReality/SkipCalibrationDuringSetup`
 - `MixedReality/SkipTrainingDuringSetup`
 - `MixedReality/DisallowNetworkConnectivityPassivePolling`
@@ -162,14 +166,44 @@ In some cases you may want to place some stronger restrictions on your devices. 
 
 Select this link to read the [security baselines](security-baseline.md).
 
+### Configure NTP client for W32 Time service
+
+You may want to configure a different time server for your device fleet. With this update, IT admins can now configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page will show the time server after a time sync has occurred. E.g. `time.windows.com` or another if another value is configured via MDM policy.
+
+> [!NOTE]
+> Reboot is required for these policies to take effect.
+
+#### NtpClientEnabled
+
+This policy setting specifies whether the Windows NTP Client is enabled.
+
+- OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/NtpClientEnabled`
+- Data Type: String
+- Value `<enabled/>`
+
+#### ConfigureNtpClient
+
+This policy setting specifies a set of parameters for controlling the Windows NTP Client. Refer to [Policy CSP - ADMX_W32Time - Windows Client Management](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for supported configuration parameters.
+
+- OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureNtpClient`
+- Data Type: String
+- Value:
+
+```
+<enabled/><data id="W32TIME_NtpServer"
+value="time.windows.com,0x9"/><data id="W32TIME_Type"
+value="NTP"/><data id="W32TIME_CrossSiteSyncFlags"
+value="2"/><data id="W32TIME_ResolvePeerBackoffMinutes"
+value="15"/><data id="W32TIME_ResolvePeerBackoffMaxTimes"
+value="7"/><data id="W32TIME_SpecialPollInterval"
+value="1024"/><data id="W32TIME_NtpClientEventLogFlags"
+value="0"/>
+```
+
 ### Fixes improvements
 
 - It will be possible to issue an app uninstall command in the device context using EnterpriseModernAppManagement CSP.
-
-### Upcoming Fixes and Improvements
-
-- In-box OpenXR code updated. This is to provide best out-of-box experience for customers without Microsoft store access.
-- Medical partners can access 90fps eye tracking via Extended ET API.
+- Added the ability to uninstall apps in the device context.
 
 ## Start receiving Insider builds
 

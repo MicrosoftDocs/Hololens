@@ -48,6 +48,16 @@ To help provide clarity this release notes page will only provide information fo
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Windows Holographic, version 22H1 - September 2022 Update
+
+- Build 20348.1518
+
+Improvements and fixes in the update:
+
+- In-box OpenXR code updated. This is to provide best out-of-box experience for customers without Microsoft store access.
+- Medical partners can access 90fps eye tracking via Extended ET API.
+- Fixed an issue in AssignedAccessSettings where it was not providing correct result when kiosk mode was enabled for signed in user on HoloLens 2.
+
 ## Windows Holographic, version 22H1 - August 2022 Update
 
 - Build 20348.1513
@@ -119,6 +129,7 @@ To update to the latest release, open the Settings app, go to Update & Securit
 | [Moving Platform Mode MDM policies](#moving-platform-mode-mdm-policies) | Configures new MPM settings via MDM | IT Admins |  [February](#windows-holographic-version-21h2---february-2022-update) |
 | [Moving Platform Mode SDK](#moving-platform-mode-sdk) | Configures MPM via Apps | Developers |  [February](#windows-holographic-version-21h2---february-2022-update) |
 | [Start gestures settings](#start-gestures-settings)        | Custom limitations for how the start menu can be opened.            | End users        | [January](#windows-holographic-version-21h2---january-2022-update) |
+| [Fixes and improvements in Windows Holographic, version 22H1](#fixes-and-improvements-in-windows-holographic-version-22h1) | These fixes are improvements are part of Windows Holographic, version 22H1. | All | 22H1 |
 
 ### IT Admin Feature Checklist - 22H1
 
@@ -149,7 +160,9 @@ When the HoloLens 2 is running in warm environments or with heavy performance re
 
 Using this new SDK can allow the device to operate longer in situations where the app may be closed by the system.
 
-### Fixes and improvements
+### Fixes and improvements in Windows Holographic, version 22H1
+
+These fixes are improvements are part of Windows Holographic, version 22H1. If addition to the features mentioned above these fixes and quality of life improvements are available to devices upgraded to version 22H1 and newer.
 
 - Improvements to Moving Platform Mode when detecting the down direction.
 - Fixed an issue around update dialogs.
@@ -159,6 +172,7 @@ Using this new SDK can allow the device to operate longer in situations where th
 - Fixed an issue where kiosk mode wasn’t falling back to global kiosk (if configured) on encountering failures for AAD group-based kiosk configuration.
 - Fixed an issue where graphics memory is leaked during some camera usage scenarios.
 - Updated HoloLens inbox Microsoft Edge browser version to 98.0.1108.43.
+- Fixed an issue in Location API where value of Privacy/LetAppsAccessLocation_ForceAllowTheseApps policy was not correctly respected..
 
 ## Windows Holographic, version 21H2 - March 2022 Update
 
