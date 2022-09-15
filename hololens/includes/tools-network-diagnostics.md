@@ -90,11 +90,11 @@ On your PC:
 1. Install Wireshark.
 1. In **Mobile hotspot** settings, turn **Share my Internet connection with other devices** to **ON**.
 
-    ![Wireshark Mobile hotspot settings](images/wireshark-mobile-hotspot-win11.png)
+    ![Wireshark Mobile hotspot settings](../images/wireshark-mobile-hotspot-win11.png)
 
 1. Start Wireshark and capture traffic from the Mobile hotspot interface.
 
-    ![Wireshark Capture screen](images/wireshark-capture.png)
+    ![Wireshark Capture screen](../images/wireshark-capture.png)
 
 On your HoloLens 2, change the Wi-Fi network to the PC’s mobile hotspot. HoloLens 2 IP traffic will now show up in Wireshark.
 
@@ -105,4 +105,4 @@ On your HoloLens 2, change the Wi-Fi network to the PC’s mobile hotspot. HoloL
 
 Wireshark filters can help filtering out the packets of interests. For example, “tcp.stream eq 1” shows the second TCP stream in the log (stream index starts with 0), “ip.addr == 192.168.137.1 && tcp.port == 80” filters out the TCP packets on port 80 with source/destination IP equals 192.168.137.1.
 
-![Wireshark logs](images/wireshark-logs.png)
+![Wireshark logs](../images/wireshark-logs.png)
