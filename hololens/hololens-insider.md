@@ -203,6 +203,7 @@ value="0"/>
 ### Fixes improvements
 
 - It will be possible to issue an app uninstall command in the device context using EnterpriseModernAppManagement CSP.
+- Added the ability to uninstall apps in the device context.
 
 ## Start receiving Insider builds
 
