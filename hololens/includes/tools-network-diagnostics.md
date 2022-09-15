@@ -67,7 +67,7 @@ On your HoloLens 2, import the Fiddler certificate.
 
 On your PC, Fiddler will show the HoloLens 2’s live HTTP(S) sessions. The Inspectors panel in Fiddler can show HTTP(S) request/response in different views - for example, the “Raw” view shows the raw request or response in plain text.
 
-# [Fiddler lassic](#tab/classic)
+# [Fiddler Classic](#tab/classic)
 
 ## Fiddler Classic
 
