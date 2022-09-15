@@ -41,6 +41,6 @@ We’ll go over some examples of when to use these tools, along with installing 
 
 After deploying HoloLens 2 to your organization, you may need to capture network traffic for troubleshooting purposes. Both Fiddler and Wireshark will work with the HoloLens 2 to identify and diagnose problems in the HTTP(S) and TCP/UDP levels.
 
-### Feedback Hub and troubleshooting tips
+## Feedback Hub and troubleshooting tips
 
 HoloLens 2 provides a few methods for users to provide diagnostic logs to Microsoft for investigation. You can use Feedback Hub to submit logs for generic network connectivity issues by submitting your feedback through the “Network & Internet” category. In addition, the built-in Settings Troubleshooter can collect detailed network traces for more complex issues. For more information, see [Collect and use diagnostic information from HoloLens devices](hololens-diagnostic-logs.md) for instructions.
