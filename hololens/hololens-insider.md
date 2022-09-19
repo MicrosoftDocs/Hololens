@@ -43,7 +43,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin | 10.0.22621.1006 |
 | [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM, using storage sense to clean up older unused files.  | IT Admin | 10.0.22621.1008 |
 | [Security Baseline](#security-baseline) | Two sets of security restrictions you can use to add more control to your devices. | IT Admin | 10.0.22621.1006 |
-| [Configure NTP client for W32 Time service](#configure-ntp-client-for-w32-time-service) | Used to set your own time sever for your devices, to help keep them compliant. |   IT Admin | 10.0.22621.1010 |
+| [Configure NTP client for W32 Time service](#configure-ntp-client-for-w32-time-service) | Used to set your own time server for your devices, to help keep them compliant. |   IT Admin | 10.0.22621.1010 |
 | [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
 
 ### IT Admin Checklist
