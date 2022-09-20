@@ -113,9 +113,9 @@ Here's how to get started:
     1. This is the number of days until a user is deleted.
         - Default value is 30.
 1. Set the maximum users on device **UserProfileManagement/StorageCapacityStartDeletion**
-    1. This determines how many users can be on the device.
-        - Default value is 25.
-        - Maximum for HoloLens is 64.
+    1. This determines at what percentage of free space left on the device that it'll start deleting users.
+        - Default value is 25%.
+        - Pair with StorageCapacityStopDeletion, to determine when to stop deleting profiles based on free storage percent.
 1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes for both threshold and inactive users.
 
 If Profile Management is enabled then the oldest user will automatically be deleted when at 64 users and trying to add another.
