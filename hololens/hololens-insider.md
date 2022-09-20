@@ -97,11 +97,12 @@ In certain Autopilot failure scenarios on HoloLens 2, if "Allow users to reset d
 
 ### Clean up users on device
 
-Organizations with scaled deployments of HoloLens 2 devices may encounter the 64-user limit on the device, which will prevent additional users from being able to use the device. To address this situation, we've added controls allow old users to be deleted from the device at controlled intervals (something you have may have used on Desktop). This can also be useful for other reasons, which include increased security be removing old accounts, or speeding up the Iris scanning processes on the sign-in screen (fewer users to match means a faster comparison.) We've enabled two methods to control when to clean up old users.
+Organizations with scaled deployments of HoloLens 2 devices may encounter the 64-user limit on the device, which will prevent additional users from being able to use the device. To address this situation, we've added controls allow old users to be deleted from the device at controlled intervals (something you have may have used on Desktop). This can also be useful for other reasons, which include increased security be removing old accounts, or speeding up the Iris scanning processes on the sign-in screen (fewer users to match means a faster comparison.) We've enabled new methods to control when to clean up old users.
 
-There are two triggers that can delete users:
+There are three triggers that can delete users:
 
 - On a regular schedule determined by you.
+- At storage threshold percentage determined by you.
 - Delete the oldest user when you add more than your custom maximum number of users.
 
 Here's how to get started:
@@ -116,6 +117,8 @@ Here's how to get started:
         - Default value is 25.
         - Maximum for HoloLens is 64.
 1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes for both threshold and inactive users.
+
+If Profile Management is enabled then the oldest user will automatically be deleted when at 64 users and trying to add another.
 
 To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
 
