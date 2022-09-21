@@ -12,7 +12,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
-ms.date: 8/15/2022
+ms.date: 9/21/2022
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
@@ -44,6 +44,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM, using storage sense to clean up older unused files.  | IT Admin | 10.0.22621.1008 |
 | [Security Baseline](#security-baseline) | Two sets of security restrictions you can use to add more control to your devices. | IT Admin | 10.0.22621.1006 |
 | [Configure NTP client for W32 Time service](#configure-ntp-client-for-w32-time-service) | Used to set your own time server for your devices, to help keep them compliant. |   IT Admin | 10.0.22621.1010 |
+| [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what the device uses. | All | 10.0.22621.1008 |
 | [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
 
 ### IT Admin Checklist
@@ -205,6 +206,12 @@ value="7"/><data id="W32TIME_SpecialPollInterval"
 value="1024"/><data id="W32TIME_NtpClientEventLogFlags"
 value="0"/>
 ```
+
+### Biometrics disclosure screen
+
+We've added changed one of our OOBE screens to show information on device usage of head, hand, and eye usage to users before they go through calibration. This screen isn't skipped when configuring a device to skip calibration, so all new users on a device will see it.
+
+![Biometrics OOBE screen](images/biometrics-oobe-notification.jpg)
 
 ### Fixes improvements
 
