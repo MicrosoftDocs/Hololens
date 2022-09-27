@@ -13,7 +13,7 @@ ms.prod: hololens
 
 Welcome to the [HoloLens documentation](https://github.com/MicrosoftDocs/Hololens)! Any articles you create or edit in this repo **will be visible to the public.**
 
-HoloLens docs are displayed on Microsoft Docs, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at `/hololens`.
+HoloLens documentation is published to Microsoft Learn, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at `/hololens`.
 
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thanks for your contribution!
 
@@ -38,7 +38,7 @@ When setting up your GitHub account, we also recommend these security precaution
 - Save your [recovery codes](https://github.com/settings/auth/recovery-codes) in a safe place.
 - Update your [public profile settings](https://github.com/settings/profile).
    - Set your name, and consider setting your *Public email* to *Don't show my email address*.
-   - We recommend you upload a profile picture because a thumbnail is shown on docs pages you contribute to.
+   - We recommend you upload a profile picture because a thumbnail is shown in Microsoft Learn articles you contribute to.
 - If you plan to use the command line, consider setting up [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest). That way, you won't have to enter your password every time you make a contribution.
 
 The publishing system is tied to GitHub, so these steps are important. You'll be listed as either author or contributor to each article using your GitHub alias.
@@ -154,7 +154,7 @@ The following resources will help you learn how to edit documentation using the 
 
 ### Adding tables
 
-Because of how Microsoft Docs styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here’s a site that makes Markdown tables easy: [Tables Generator]](https://www.tablesgenerator.com/markdown_tables).
+Because of how tables are styled on Microsoft Learn, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here’s a site that makes Markdown tables easy: [Tables Generator]](https://www.tablesgenerator.com/markdown_tables).
 
 The [Docs Markdown Extension for Visual Studio Code](/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code (see below)](#using-visual-studio-code) to edit the documentation.
 
@@ -177,7 +177,7 @@ You’ll need to upload your images to the "hololens/images" folder in the repo,
 While editing in GitHub via a web browser, you can select the **Preview** tab near the top of the page to preview your work before committing.
 
 >[!NOTE]
->Previewing your changes on Microsoft Docs is only available to Microsoft employees.
+>Previewing your changes on Microsoft Learn is only available to Microsoft employees.
 
 Microsoft employees: When your contributions have been merged into the default branch, _main_, you can review the content before it goes public at </hololens?branch=main>. Find your article by using the table of contents in the left column.
 
@@ -252,9 +252,11 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 The following Visual Studio Code extensions are useful when editing documentation:
 
-- [Docs Markdown Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - Use **Alt+M** to bring up a menu of docs authoring options like:
-   - Search and reference images you've uploaded.
-   - Add formatting like lists, tables, and docs-specific call-outs like `>[!NOTE]`.
-   - Search and reference internal links and bookmarks (links to specific sections within a page).
-   - Formatting errors are highlighted (hover your mouse over the error to learn more).
+- [Docs Markdown Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - Use **Alt+M** to bring up a menu of Microsoft Learn authoring options like:
+
+  - Search and reference images you've uploaded.
+  - Add formatting like lists, tables, and call-outs like `>[!NOTE]`.
+  - Search and reference internal links and bookmarks (links to specific sections within a page).
+  - Formatting errors are highlighted (hover your mouse over the error to learn more).
+
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - misspelled words will be underlined; right-click on a misspelled word to change it or save it to the dictionary.
