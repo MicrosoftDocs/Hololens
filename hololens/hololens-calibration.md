@@ -1,15 +1,15 @@
 ---
 title: Improve visual quality and comfort
 description: Learn how to calibrate your interpupillary distance (IPD) to improve the quality of your visuals on HoloLens devices.
-author: Teresa-Motiv
-ms.author: xerxesb
-ms.date: 9/13/2019
+author: evmill
+ms.author: millerevan
+manager: lolab
+ms.date: 9/27/2022
 ms.topic: article
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
-manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -47,6 +47,27 @@ During this process, you'll look at a set of targets (gems). It's fine if you bl
 If calibration was successful, you'll see a success screen.  If not, read more about [diagnosing calibration failures](hololens2-display.md#troubleshooting).
 
 ![Calibration prompt success.](./images/10-et-success.png)
+
+## Eye tracking
+
+Eye tracking is used to enable two capabilities:
+
+1. Eye position tracking which the system uses internally to enable comfortable and quality viewing experience.
+1. Eye gaze tracking, gaze vectors for where the user is looking which developers can use for input and interactions.
+
+The calibration app can be run during OOBE, from the Settings app, or if an uncalibrated user launches an app that uses eye tracking. Multiple users can share a HoloLens 2 device, without a need for each person to go through device setup with their own login account. Up to 50 recently used calibration profiles are stored on the device. When a user that has previously calibrated visuals puts the device back on their head, the display seamlessly adjusts for quality and a comfortable viewing experience.
+
+From a data and privacy perspective:
+
+- For Eye gaze tracking, we provide the combined gaze vector of where the person is looking (this is computed from eye images in memory). Left/Right eye gazes are also now available.  
+- For Eye position tracking when a person goes through the calibration experience, we store calibration information locally on device correlated with bit codes from the Iris patterns. These are separate instances of iris bit codes from the ones used to login. This is then used to automatically pull in the right calibration for the person who has used the device before (so there is no need to redo calibration every time) and adjust the device.
+- Calibration is not associated with a specific login account; it is account agnostic. All calibration data is stored securely on the device locally and only available to the system. Stored calibration information can be deleted through the settings app on the device.
+
+For additional information please refer to our online documentation:
+
+- [Eye Tracking on HoloLens 2](/windows/mixed-reality/design/eye-tracking)
+- [Eye-gaze based interaction on HoloLens 2](/windows/mixed-reality/design/eye-gaze-interaction)
+- [Head-gaze and eye-gaze input in DirectX](/windows/mixed-reality/develop/native/gaze-in-directx)
 
 ### Calibration when sharing a device or session
 

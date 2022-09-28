@@ -6,7 +6,7 @@ ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: evmill    
 ms.author: millerevan
 manager: lolab
-ms.date: 8/10/2022
+ms.date: 9/27/2022
 ms.prod: hololens
 ms.custom: 
 - CI 111456
@@ -57,6 +57,40 @@ If you apply policies for sign-in, the policy is always respected. If no policy 
 
 > [!NOTE]
 > Inactivity timers are currently not supported, which means that the **AllowIdleReturnWithoutPassword** policy is only respected when the device goes into StandBy.
+
+## Iris Login
+
+### Biometric data collection by HoloLens
+
+Biometric data (including head/hand/eye movements, iris scan) that this device collects is used for calibration, to improve reliable interactions and to enhance user experience.  We may share your data with third party apps on the device for the purpose of delivering certain functionality and features.  Go to Privacy Section in Settings for details on the License Agreement and Microsoft Privacy Statement.
+
+HoloLens Iris login is built on top of [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-overview). HoloLens stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn’t roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there’s no single collection point an attacker can compromise to steal biometric data.  
+
+HoloLens performs iris authentication   based on stored bit codes. Users have complete control over whether they enroll their user account for Iris login for authentication. And IT administrators can disable Windows Hello capabilities through their MDM servers. See [Manage Windows Hello for Business in your organization](/windows/security/identity-protection/hello-for-business/hello-manage-in-organization).
+
+### Frequently asked Iris questions
+
+#### How is Iris biometric authentication implemented on HoloLens 2?
+
+HoloLens 2 supports Iris authentication. Iris is based on Windows Hello technology and is supported for use by both Azure Active Directory and Microsoft Accounts. Iris is implemented the same way as other Windows Hello technologies, and achieves [biometrics security FAR of 1/100K](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello).
+
+See the [biometric requirements and specifications for Windows Hello](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information. Learn more about [Windows Hello](/windows-hardware/design/device-experiences/windows-hello) and [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification).
+
+#### Where is Iris biometric information stored?
+
+Iris biometric information is stored locally on each HoloLens per [Windows Hello specifications](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored). It isn't shared and is protected by two layers of encryption. It isn't accessible to other users, even an administrator, because there's no administrator account on a HoloLens.
+
+#### Do I have to use Iris authentication?
+
+No, you can skip this step during setup.
+
+![Set-up Iris.](./images/setup-iris.png)
+
+HoloLens 2 provides many different options for authentication, including FIDO2 security keys.
+
+#### Can Iris information be removed from the HoloLens?
+
+Yes, you can manually remove it in Settings.
 
 ## Setting up users
 
@@ -132,30 +166,6 @@ Windows Hello for Business (which supports using a PIN to sign in) is supported 
 
 > [!NOTE]
 > Users who sign in by using a Microsoft account can also set up a PIN in **Settings** > **Sign-in Options** > **Add PIN**. This PIN is associated with [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), rather than [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-overview).
-
-## Frequently asked Iris questions
-
-### How is Iris biometric authentication implemented on HoloLens 2?
-
-HoloLens 2 supports Iris authentication. Iris is based on Windows Hello technology and is supported for use by both Azure Active Directory and Microsoft Accounts. Iris is implemented the same way as other Windows Hello technologies, and achieves [biometrics security FAR of 1/100K](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello).
-
-See the [biometric requirements and specifications for Windows Hello](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information. Learn more about [Windows Hello](/windows-hardware/design/device-experiences/windows-hello) and [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification).
-
-### Where is Iris biometric information stored?
-
-Iris biometric information is stored locally on each HoloLens per [Windows Hello specifications](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored). It isn't shared and is protected by two layers of encryption. It isn't accessible to other users, even an administrator, because there's no administrator account on a HoloLens.
-
-### Do I have to use Iris authentication?
-
-No, you can skip this step during setup.
-
-![Set-up Iris.](./images/setup-iris.png)
-
-HoloLens 2 provides many different options for authentication, including FIDO2 security keys.
-
-### Can Iris information be removed from the HoloLens?
-
-Yes, you can manually remove it in Settings.
 
 ## Additional resources
 
