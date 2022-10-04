@@ -2,7 +2,7 @@
 
 ### Fiddler Everywhere
 
-Let's say you have an authentication issue with a custom line of business (LOB) application. After being installed on your HoloLens 2, the app can't authenticate to the back-end server through HTTPS. To troubleshoot this, you can use Fiddler to capture and decode the HTTPS sessions, enabling discovery of network level-issues.
+Let's say you have an authentication issue with a custom line of business (LOB) application. After being installed on your HoloLens 2, the app can't authenticate to the back-end server through HTTPS. To troubleshoot this issue, you can use Fiddler to capture and decode the HTTPS sessions, enabling discovery of network level-issues.
 
 #### Configure Fiddler to capture HTTP traffic from HoloLens 2
 
@@ -25,7 +25,7 @@ On your PC, install and start Fiddler. Configure Fiddler to allow remote compute
 
 1. Select **Save**.
 
-On your HoloLens 2, configure Fiddler as the proxy server*. If your HoloLens 2 devices is running Windows Holographic builds 20279.1006 and later (Insiders and the upcoming release), use the following steps to configure proxy:
+On your HoloLens 2, configure Fiddler as the proxy server*. If your HoloLens 2 devices are running Windows Holographic builds 20279.1006 and later (Insiders and the upcoming release), use the following steps to configure proxy:
 
 1. Open the **Start** menu and go **Settings -> Network & Internet -> Status -> Wi-Fi network's Properties**.
 1. Scroll down to **Proxy**.
@@ -62,7 +62,7 @@ On your PC, Fiddler will show the HoloLens 2’s live HTTP(S) sessions. The Insp
 
 ### Fiddler Classic
 
-Let's say you have an authentication issue with a custom line of business (LOB) application. After being installed on your HoloLens 2, the app can't authenticate to the back-end server through HTTPS. To troubleshoot this, you can use Fiddler to capture and decode the HTTPS sessions, enabling discovery of network level-issues.
+Let's say you have an authentication issue with a custom line of business (LOB) application. After being installed on your HoloLens 2, the app can't authenticate to the back-end server through HTTPS. To troubleshoot this issue, you can use Fiddler to capture and decode the HTTPS sessions, enabling discovery of network level-issues.
 
 #### Configure Fiddler to capture HTTP traffic from HoloLens 2
 
@@ -85,7 +85,7 @@ On your PC, install and start Fiddler. Configure Fiddler to allow remote compute
 
 1. Select **Save**.
 
-On your HoloLens 2, configure Fiddler as the proxy server*. If your HoloLens 2 devices is running Windows Holographic builds 20279.1006 and later (Insiders and the upcoming release), use the following steps to configure proxy:
+On your HoloLens 2, configure Fiddler as the proxy server*. If your HoloLens 2 devices are running Windows Holographic builds 20279.1006 and later (Insiders and the upcoming release), use the following steps to configure proxy:
 
 1. Open the **Start** menu and go **Settings -> Network & Internet -> Status -> Wi-Fi network's Properties**.
 1. Scroll down to **Proxy**.
