@@ -25,16 +25,7 @@ On your PC, install and start Fiddler. Configure Fiddler to allow remote compute
 
 1. Select **Save**.
 
-On your HoloLens 2, configure Fiddler as the proxy server*:
-
-1. Open the Start menu and select **Settings**.
-1. Select **Network & Internet** and then **Proxy** on the left menu.
-1. Scroll down to **Manual proxy setup** and toggle **Use a proxy server** to **On**.
-1. Enter the IP address of the PC where Fiddler is installed.
-1. Enter the port number noted above (default is 8866).
-1. Select **Save**.
-
-\* If your HoloLens 2 devices is running Windows Holographic builds 20279.1006 and later (Insiders and the upcoming release), use the following steps to configure proxy:
+On your HoloLens 2, configure Fiddler as the proxy server*. If your HoloLens 2 devices is running Windows Holographic builds 20279.1006 and later (Insiders and the upcoming release), use the following steps to configure proxy:
 
 1. Open the **Start** menu and go **Settings -> Network & Internet -> Status -> Wi-Fi network's Properties**.
 1. Scroll down to **Proxy**.
@@ -94,16 +85,7 @@ On your PC, install and start Fiddler. Configure Fiddler to allow remote compute
 
 1. Select **Save**.
 
-On your HoloLens 2, configure Fiddler as the proxy server*:
-
-1. Open the Start menu and select **Settings**.
-1. Select **Network & Internet** and then **Proxy** on the left menu.
-1. Scroll down to **Manual proxy setup** and toggle **Use a proxy server** to **On**.
-1. Enter the IP address of the PC where Fiddler is installed.
-1. Enter the port number noted above (default is 8866).
-1. Select **Save**.
-
-\* If your HoloLens 2 devices is running Windows Holographic builds 20279.1006 and later (Insiders and the upcoming release), use the following steps to configure proxy:
+On your HoloLens 2, configure Fiddler as the proxy server*. If your HoloLens 2 devices is running Windows Holographic builds 20279.1006 and later (Insiders and the upcoming release), use the following steps to configure proxy:
 
 1. Open the **Start** menu and go **Settings -> Network & Internet -> Status -> Wi-Fi network's Properties**.
 1. Scroll down to **Proxy**.
