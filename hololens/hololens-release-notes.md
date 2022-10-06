@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 8/9/2022
+ms.date: 10/11/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -47,6 +47,14 @@ To help provide clarity this release notes page will only provide information fo
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+## Windows Holographic, version 22H1 - October 2022 Update
+
+- Build 20348.1521
+
+Improvements and fixes in the update:
+
+- Fixed an issue where remote log collection was not reliably getting collected when device is in connected-standby and connected to AC power source after 8 hours of enrollment.
 
 ## Windows Holographic, version 22H1 - September 2022 Update
 
