@@ -58,7 +58,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 
 List of new or newly enabled policies:
 
-- `MixedReality/AllowCaptivePortalBeforeSignIn`
+- `MixedReality/AllowCaptivePortalBeforeLogon`
 - `MixedReality/ConfigureNtpClient`
 - `MixedReality/NtpClientEnabled`
 - `MixedReality/SkipCalibrationDuringSetup`
@@ -138,12 +138,15 @@ Sometimes Wi-Fi connections require additional information to provide credential
 
 This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a [captive portal](/windows-hardware/drivers/mobilebroadband/captive-portals) on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
 
-MixedReality/AllowCaptivePortalBeforeSignIn
+MixedReality/AllowCaptivePortalBeforeLogon
 
 The OMA-URI of new policy:
-`./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeSignIn`
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeLogon`
 
-- Bool value
+Int value
+
+- 0: Default - Off
+- 1: On
 
 ### Clean up storage via MDM
 
