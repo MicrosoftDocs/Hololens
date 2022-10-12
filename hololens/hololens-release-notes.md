@@ -52,9 +52,7 @@ To help provide clarity this release notes page will only provide information fo
 
 - Build 20348.1522
 
-Improvements and fixes in the update:
-
-- Fixed an issue where remote log collection was not reliably getting collected when device is in connected-standby and connected to AC power source after 8 hours of enrollment.
+This month's build only contains windows security fixes. Be look forward to our upcoming release and [check out our insider build](hololens-insider.md).
 
 ## Windows Holographic, version 22H1 - September 2022 Update
 
