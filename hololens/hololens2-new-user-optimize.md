@@ -6,7 +6,7 @@ keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.topic: article
 ms.localizationpriority: high
 appliesto:

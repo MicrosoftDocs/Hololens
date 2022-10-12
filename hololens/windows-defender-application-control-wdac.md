@@ -4,7 +4,7 @@ description: Overview on what Windows Defender Application Control is and how to
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.topic: article
 ms.localizationpriority:
 ms.date: 9/21/2021
