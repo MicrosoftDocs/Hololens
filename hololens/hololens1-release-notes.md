@@ -2,7 +2,7 @@
 title: HoloLens 1st (gen) release notes
 description: Learn about updates in each new HoloLens release.
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 manager: yannisle
 ms.prod: hololens
 ms.sitesec: library

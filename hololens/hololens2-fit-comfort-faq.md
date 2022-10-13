@@ -4,7 +4,7 @@ description: Stay up to date on answers to frequently asked questions about how 
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
-ms.author: v-tea
+ms.author: millerevan
 ms.topic: article
 audience: ItPro
 ms.localizationpriority: high
