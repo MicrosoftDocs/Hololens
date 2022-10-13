@@ -2,7 +2,7 @@
 title: Introducing the new Settings app
 description: Learn about the new Settings app
 author: joyjaz
-ms.author: v-jjaswinski
+ms.author: millerevan
 keywords: HoloLens, settings, app picker, volume
 ms.prod: hololens
 ms.sitesec: library

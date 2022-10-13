@@ -3,7 +3,7 @@ title: How to side load and Install Apps via HoloLens 2 App Installer
 description: Learn how to install and troubleshoot apps with the app installer and side load and install apps via UI.
 keywords: app management, app, hololens, app installer
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.reviewer: qizho
 ms.date: 11/10/2020
 ms.prod: hololens

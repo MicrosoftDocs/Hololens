@@ -2,7 +2,7 @@
 title: HoloLens security overview
 description: Get started with an overview of security for HoloLens mixed reality devices. 
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.reviewer: qizho
 ms.date: 11/03/2021
 ms.topic: article
