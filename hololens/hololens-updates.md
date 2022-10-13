@@ -4,7 +4,7 @@ description: Learn how your administrators can use mobile device management to m
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high

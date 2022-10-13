@@ -3,7 +3,7 @@ title: Deployment Guide – Cloud connected HoloLens 2 deployment at scale with 
 description: Stay up to date with our tips for maintaining and supporting HoloLens devices over a Cloud Connected network.
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.reviewer: aboeger
 ms.date: 12/04/2020
 ms.prod: hololens

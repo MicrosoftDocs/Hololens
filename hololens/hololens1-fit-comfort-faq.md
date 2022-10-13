@@ -4,7 +4,7 @@ description: Stay up to date with answers to frequently asked questions about ho
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.topic: article
 ms.localizationpriority:
 ms.date: 10/09/2019

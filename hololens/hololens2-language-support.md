@@ -4,7 +4,7 @@ description: Learn about all the languages HoloLens 2 supports, changing keyboar
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 manager: ranjib
 ms.reviewer: wangmax
 ms.topic: article
