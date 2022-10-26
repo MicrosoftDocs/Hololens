@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 10/11/2022
+ms.date: 11/8/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -47,6 +47,197 @@ To help provide clarity this release notes page will only provide information fo
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+## Windows Holographic, version 22H1 - November 2022 Update
+
+- Build 20348.XXXX
+
+| Feature   | Description  | User or Scenario |
+|-----------|--------------|------------------|---|
+| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip several screens in  OOBE when adding new users to devices. | IT Admin |
+| [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  |
+| [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device, to prevent hitting the maximum limit.  | IT Admin  |
+| [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Turn off auto-reconnect to Wi-fi access points to stay connected to intranet. | IT Admin       |
+| [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin |
+| [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM, using storage sense to clean up older unused files.  | IT Admin |
+| [Security Baseline](#security-baseline) | Two sets of security restrictions you can use to add more control to your devices. | IT Admin |
+| [Configure NTP client for W32 Time service](#configure-ntp-client-for-w32-time-service) | Used to set your own time sever for your devices , to help keep them compliant. |  IT Admin |
+| [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   |
+
+### IT Admin Checklist
+
+✔️ If you'd like to speed up new user sign-ons check out the new [new policies to speed up adding users](#policies-to-speed-up-adding-users). <br>
+✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
+✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-ncsi-passive-polling). <br>
+✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm). <br>
+✔️ If you need to have more security, are planning on vending out your devices, or need to check a box for a security review, check out the [security baseline](#security-baseline). <br>
+✔️ If you use your own time server, and would like your HoloLens devices to use it as well check out how to [set your own](#configure-ntp-client-for-w32-time-service).
+
+List of new or newly enabled policies:
+
+- `MixedReality/AllowCaptivePortalBeforeLogon`
+- `MixedReality/ConfigureNtpClient`
+- `MixedReality/DisallowNetworkConnectivityPassivePolling`
+- `MixedReality/NtpClientEnabled`
+- `MixedReality/SkipCalibrationDuringSetup`
+- `MixedReality/SkipTrainingDuringSetup`
+- `Storage/AllowStorageSenseGlobal`
+- `Storage/AllowStorageSenseTemporaryFilesCleanup`
+- `Storage/ConfigStorageSenseCloudContentDehydrationThreshold`
+- `Storage/ConfigStorageSenseDownloadsCleanupThreshold`
+- `Storage/ConfigStorageSenseGlobalCadence`
+
+### Policies to speed up adding users
+
+As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are two new areas you'll be able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
+
+The new policies and screens they skip are:
+
+| Policy          | What's skipped                                                                    |  Screenshot |
+|------------------|-----------------------------------------------------------------------------------|---|
+| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: `SkipCalibrationDuringSetup`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
+| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringSetup`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
+
+The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance Uniform Resource Identifier) of new policies:
+
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup`
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringSetup`
+
+- Int value
+  - 0 : Keep the experience (default)
+  - 1 : Skip
+
+For more info on how to increase your setup speed for new users, check out our [guide on how to quickly set up new users.](hololens2-new-user-optimize.md)
+
+Find this information later at [Policy CSP - MixedReality](/windows/client-management/mdm/policy-csp-mixedreality).
+
+### Autopilot reset experience
+
+In certain Autopilot failure scenarios on HoloLens 2, if "Allow users to reset device if installation error occurs." setting in ESP configuration is set to "Yes", "Reset device" button will be displayed on HoloLens 2. If "Reset device" button is selected by the user, HoloLens 2 will automatically reboot, reset operating system and OOBE experience after delay of approximately 1 minute. This improvement will enable users to begin Autopilot experience again without requiring a manual flash of HoloLens 2 devices.
+
+### Clean up users on device
+
+Organizations with scaled deployments of HoloLens 2 devices may encounter the 64-user limit on the device, which will prevent additional users from being able to use the device. To address this situation, we've added controls allow the least recently used users to be deleted from the device at controlled intervals (something you have may have used on Desktop). This can also be useful for other reasons, which include increased security be removing least recently used accounts, or speeding up the Iris scanning processes on the sign-in screen (fewer users to match means a faster comparison.) We've enabled new methods to control when to clean up least recently used users.
+
+There are three triggers that can delete users:
+
+- On a regular schedule determined by you.
+- At storage threshold percentage determined by you.
+- Delete the oldest user when you add more than your custom maximum number of users.
+
+Here's how to get started:
+
+1. Enable the process: **UserProfileManagement/EnableProfileManager**
+    1. Bool value, set to **True**
+1. Set the inactivity threshold: **UserProfileManagement/ProfileInactivityThreshold**
+    1. This is the number of days until a user is deleted.
+        - Default value is 30.
+1. Set the maximum users on device **UserProfileManagement/StorageCapacityStartDeletion**
+    1. This determines at what percentage of free space left on the device that it'll start deleting users.
+        - Default value is 25%.
+        - Pair with StorageCapacityStopDeletion, to determine when to stop deleting profiles based on free storage percent.
+1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes for both threshold and inactive users.
+
+If Profile Management is enabled then the oldest user will automatically be deleted when at 64 users and trying to add another.
+
+To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
+
+### New policy to disable NCSI passive polling
+
+Windows Network Connectivity Status Indicator may get false positive Internet capable signal from passive polling. Which may result in unexpected Wi-Fi adapter reset when device connects to an intranet only access point. Enabling this policy would avoid unexpected network interruptions caused by false positive NCSI passive polling.
+
+The OMA-URI of new policies:
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/DisallowNetworkConnectivityPassivePolling`
+
+- Bool value
+
+Find this information later at [Policy CSP - MixedReality](/windows/client-management/mdm/policy-csp-mixedreality).
+
+### Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in
+
+Sometimes Wi-Fi connections require additional information to provide credentials to the access point. Previously users were only able to do this the first time the device was set up in OOBE, or in the Settings app once signed in. Previously, users couldn't adjust this configuration on the sign-in screen, which was sometimes tricky to work around.
+
+This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a [captive portal](/windows-hardware/drivers/mobilebroadband/captive-portals) on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
+
+MixedReality/AllowCaptivePortalBeforeLogon
+
+The OMA-URI of new policy:
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeLogon`
+
+Int value
+
+- 0: Default - Off
+- 1: On
+
+Find this information later at [Policy CSP - MixedReality](/windows/client-management/mdm/policy-csp-mixedreality).
+
+### Clean up storage via MDM
+
+[Storage Sense](/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5) is available on HoloLens 2 today to manage cleanup of old files. IT admins can now also configure behavior of Storage Sense on HoloLens 2 with following MDM policies:
+
+- [Storage/AllowStorageSenseGlobal](/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesenseglobal)
+  - Sets Storage sense to be enabled on the device and will run whenever reaching low storage.
+- [Storage/AllowStorageSenseTemporaryFilesCleanup](/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesensetemporaryfilescleanup)
+  - When Storage Sense runs, it can delete the user’s temporary files that aren't in use.
+- [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensecloudcontentdehydrationthreshold)
+  - When Storage Sense runs, it can dehydrate cloud-backed content that hasn’t been opened in a certain number of days. If you enable this policy setting, you must provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it. Supported values are: 0–365.
+- [Storage/ConfigStorageSenseDownloadsCleanupThreshold](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensedownloadscleanupthreshold)
+  - When Storage Sense runs, it can delete files in the user’s Downloads folder if they haven’t been opened for more than a certain number of days. If you enable this policy setting, you must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from the Downloads folder. Supported values are: 0-365.
+- [Storage/ConfigStorageSenseGlobalCadence](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesenseglobalcadence)
+  - Storage Sense can automatically clean some of the user’s files to free up disk space. The following are supported options:
+    - 1 – Daily
+    - 7 – Weekly
+    - 30 – Monthly
+    - 0 – During low free disk space (Default)
+
+Find this information later at [Policy CSP - MixedReality](/windows/client-management/mdm/policy-csp-mixedreality).
+
+### Security baseline
+
+In some cases you may want to place some stronger restrictions on your devices. Whatever your need for security, we've written out two security baselines that you can use to add an extra layer of security to your device fleet.
+
+Select this link to read the [security baselines](security-baseline.md).
+
+### Configure NTP client for W32 Time service
+
+You may want to configure a different time server for your device fleet. With this update, IT admins can now configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page will show the time server after a time sync has occurred. E.g. `time.windows.com` or another if another value is configured via MDM policy.
+
+> [!NOTE]
+> Reboot is required for these policies to take effect.
+
+#### NtpClientEnabled
+
+This policy setting specifies whether the Windows NTP Client is enabled.
+
+- OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/NtpClientEnabled`
+- Data Type: String
+- Value `<enabled/>`
+
+#### ConfigureNtpClient
+
+This policy setting specifies a set of parameters for controlling the Windows NTP Client. Refer to [Policy CSP - ADMX_W32Time - Windows Client Management](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for supported configuration parameters.
+
+> [!NOTE]
+> Please replaces the values in the example below with the desired values for your time server. Refer to [this link](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for more details.
+
+- OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureNtpClient`
+- Data Type: String
+- Value:
+
+```
+<enabled/><data id="W32TIME_NtpServer"
+value="time.windows.com,0x9"/><data id="W32TIME_Type"
+value="NTP"/><data id="W32TIME_CrossSiteSyncFlags"
+value="2"/><data id="W32TIME_ResolvePeerBackoffMinutes"
+value="15"/><data id="W32TIME_ResolvePeerBackoffMaxTimes"
+value="7"/><data id="W32TIME_SpecialPollInterval"
+value="1024"/><data id="W32TIME_NtpClientEventLogFlags"
+value="0"/>
+```
+
+### Fixes improvements in Windows Holographic, version 22H1 - November 2022 Update
+
+- It will be possible to issue an app uninstall command in the device context using EnterpriseModernAppManagement CSP.
 
 ## Windows Holographic, version 22H1 - October 2022 Update
 
