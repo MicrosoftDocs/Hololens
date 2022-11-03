@@ -37,13 +37,43 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | Feature   | Description  | User or Scenario | Available in build |
 |-----------|--------------|------------------|---|
 | [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what the device uses. | All | 10.0.22621.1008 |
+| [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device, to prevent hitting the maximum limit.  | IT Admin  | 10.0.22621.1008 |
 | [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
+
+✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
 
 ### Biometrics disclosure screen
 
 We've added changed one of our OOBE screens to show information on device usage of head, hand, and eye usage to users before they go through calibration. This screen isn't skipped when configuring a device to skip calibration, so all new users on a device will see it.
 
 ![Biometrics OOBE screen](images/biometrics-oobe-notification.jpg)
+
+### Clean up users on device
+
+Organizations with scaled deployments of HoloLens 2 devices may encounter the 64-user limit on the device, which will prevent additional users from being able to use the device. To address this situation, we've added controls allow the least recently used users to be deleted from the device at controlled intervals (something you have may have used on Desktop). This can also be useful for other reasons, which include increased security be removing least recently used accounts, or speeding up the Iris scanning processes on the sign-in screen (fewer users to match means a faster comparison.) We've enabled new methods to control when to clean up least recently used users.
+
+There are three triggers that can delete users:
+
+- On a regular schedule determined by you.
+- At storage threshold percentage determined by you.
+- Delete the oldest user when you add more than your custom maximum number of users.
+
+Here's how to get started:
+
+1. Enable the process: **UserProfileManagement/EnableProfileManager**
+    1. Bool value, set to **True**
+1. Set the inactivity threshold: **UserProfileManagement/ProfileInactivityThreshold**
+    1. This is the number of days until a user is deleted.
+        - Default value is 30.
+1. Set when to delete users based on free space on device **UserProfileManagement/StorageCapacityStartDeletion**
+    1. This determines at what percentage of free space left on the device that it'll start deleting users.
+        - Default value is 25%.
+        - Pair with StorageCapacityStopDeletion, to determine when to stop deleting profiles based on free storage percent.
+1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes for both threshold and inactive users.
+
+If Profile Management is enabled then the oldest user will automatically be deleted when it has reached its maximum number of users and trying to add another.
+
+To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
 
 ### Fixes improvements
 

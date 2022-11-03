@@ -41,14 +41,14 @@ To help provide clarity this release notes page will only provide information fo
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
-| 20348                  |   [Windows Holographic, version 22H1](#windows-holographic-version-22h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2) <br> [Windows Holographic, version 21H1](#windows-holographic-version-21h1)  | April 2022 <br> October 2021 <br> May 2021   | 20348.1501 <br> 20348.1432 <br> 20346.1002   |
+| 20348                  | [Windows Holographic, version 22H2](#windows-holographic-version-22h2) <br> [Windows Holographic, version 22H1](#windows-holographic-version-22h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2) <br> [Windows Holographic, version 21H1](#windows-holographic-version-21h1)  | November 2022 <br> April 2022 <br> October 2021 <br> May 2021   | 20348.XXXX <br> 20348.1501 <br> 20348.1432 <br> 20346.1002   |
 | 19041                  | [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) <br> [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) | Nov 2020 <br>  May 2020    | 19041.1128 <br> 19041.1103  |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
-## Windows Holographic, version 22H1 - November 2022 Update
+## Windows Holographic, version 22H2
 
 - Build 20348.XXXX
 
@@ -58,7 +58,6 @@ This update brings a great set of new features to HoloLens 2 users and IT profes
 |-----------|--------------|------------------|---|
 | [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip several screens in  OOBE when adding new users to devices. | IT Admin |
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  |
-| [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device, to prevent hitting the maximum limit.  | IT Admin  |
 | [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Turn off auto-reconnect to Wi-fi access points to stay connected to intranet. | IT Admin       |
 | [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin |
 | [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM, using storage sense to clean up older unused files.  | IT Admin |
@@ -69,7 +68,6 @@ This update brings a great set of new features to HoloLens 2 users and IT profes
 ### IT Admin Checklist
 
 ✔️ If you'd like to speed up new user sign-ons check out the new [new policies to speed up adding users](#policies-to-speed-up-adding-users). <br>
-✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
 ✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-ncsi-passive-polling). <br>
 ✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm). <br>
 ✔️ If you need to have more security, are planning on vending out your devices, or need to check a box for a security review, check out the [security baseline](#security-baseline). <br>
@@ -116,33 +114,6 @@ Find this information later at [Policy CSP - MixedReality](/windows/client-manag
 ### Autopilot reset experience
 
 In certain Autopilot failure scenarios on HoloLens 2, if "Allow users to reset device if installation error occurs." setting in ESP configuration is set to "Yes", "Reset device" button will be displayed on HoloLens 2. If "Reset device" button is selected by the user, HoloLens 2 will automatically reboot, reset operating system and OOBE experience after delay of approximately 1 minute. This improvement will enable users to begin Autopilot experience again without requiring a manual flash of HoloLens 2 devices.
-
-### Clean up users on device
-
-Organizations with scaled deployments of HoloLens 2 devices may encounter the 64-user limit on the device, which will prevent additional users from being able to use the device. To address this situation, we've added controls allow the least recently used users to be deleted from the device at controlled intervals (something you have may have used on Desktop). This can also be useful for other reasons, which include increased security be removing least recently used accounts, or speeding up the Iris scanning processes on the sign-in screen (fewer users to match means a faster comparison.) We've enabled new methods to control when to clean up least recently used users.
-
-There are three triggers that can delete users:
-
-- On a regular schedule determined by you.
-- At storage threshold percentage determined by you.
-- Delete the oldest user when you add more than your custom maximum number of users.
-
-Here's how to get started:
-
-1. Enable the process: **UserProfileManagement/EnableProfileManager**
-    1. Bool value, set to **True**
-1. Set the inactivity threshold: **UserProfileManagement/ProfileInactivityThreshold**
-    1. This is the number of days until a user is deleted.
-        - Default value is 30.
-1. Set the maximum users on device **UserProfileManagement/StorageCapacityStartDeletion**
-    1. This determines at what percentage of free space left on the device that it'll start deleting users.
-        - Default value is 25%.
-        - Pair with StorageCapacityStopDeletion, to determine when to stop deleting profiles based on free storage percent.
-1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes for both threshold and inactive users.
-
-If Profile Management is enabled then the oldest user will automatically be deleted when at 64 users and trying to add another.
-
-To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
 
 ### New policy to disable NCSI passive polling
 
@@ -239,7 +210,7 @@ value="0"/>
 
 ### Fixes improvements in Windows Holographic, version 22H1 - November 2022 Update
 
-- It will be possible to issue an app uninstall command in the device context using EnterpriseModernAppManagement CSP.
+- Fixed an issue where remote log collection was not reliably getting collected when device is in connected-standby and connected to AC power source after 8 hours of enrollment.
 
 ## Windows Holographic, version 22H1 - October 2022 Update
 

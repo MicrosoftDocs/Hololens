@@ -34,7 +34,7 @@ These are the major feature releases from Windows Holographic, version 2004.
 
 Improvements and fixes in the update:
 
-- This monthly quality update doesn't contain any notable changes; we encourage you to try out our latest build, Windows Holographic, version 22H1.
+- This monthly quality update doesn't contain any notable changes; we encourage you to try out our latest build, Windows Holographic, version 22H2.
 
 ## Windows Holographic, version 20H2 - October 2022 Update
 
