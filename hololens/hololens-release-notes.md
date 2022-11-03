@@ -55,7 +55,7 @@ To help provide clarity this release notes page will only provide information fo
 This update brings a great set of new features to HoloLens 2 users and IT professionals. Check out all the new great features for HoloLens 2!
 
 | Feature   | Description  | User or Scenario |
-|-----------|--------------|------------------|---|
+|-----------|--------------|------------------|
 | [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip several screens in  OOBE when adding new users to devices. | IT Admin |
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  |
 | [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Turn off auto-reconnect to Wi-fi access points to stay connected to intranet. | IT Admin       |
