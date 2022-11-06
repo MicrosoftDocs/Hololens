@@ -74,7 +74,7 @@ To make sure that multiple people can use their own accounts on your HoloLens, f
 1. After you finish setup, make sure that the account settings (Settings > Accounts) include **Other users**.
 
 > [!NOTE]
-> If your device was not set up with an Azure AD account it need to be either [reset or reflashed](hololens-recovery.md) and set up properly.
+> If your device was not set up with an Azure AD account it needs to be either [reset or reflashed](hololens-recovery.md) and set up properly.
 
 To use HoloLens, each user follows these steps:
 
