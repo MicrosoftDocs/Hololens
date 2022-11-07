@@ -208,7 +208,7 @@ value="1024"/><data id="W32TIME_NtpClientEventLogFlags"
 value="0"/>
 ```
 
-### Fixes improvements in Windows Holographic, version 22H1 - November 2022 Update
+### Fixes improvements in Windows Holographic, version 22H2 - November 2022 Update
 
 - Fixed an issue where remote log collection was not reliably getting collected when device is in connected-standby and connected to AC power source after 8 hours of enrollment.
 
