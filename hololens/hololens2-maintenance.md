@@ -12,7 +12,6 @@ ms.custom:
 audience: ITPro
 ms.localizationpriority:
 keywords: 
-manager: jarrettr
 appliesto:
 - HoloLens 2
 ---
