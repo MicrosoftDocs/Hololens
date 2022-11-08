@@ -63,7 +63,7 @@ This update brings a great set of new features to HoloLens 2 users and IT profes
 | [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM, using storage sense to clean up older unused files.  | IT Admin |
 | [Security Baseline](#security-baseline) | Two sets of security restrictions you can use to add more control to your devices. | IT Admin |
 | [Configure NTP client for W32 Time service](#configure-ntp-client-for-w32-time-service) | Used to set your own time sever for your devices , to help keep them compliant. |  IT Admin |
-| [Fixes improvements](#fixes-improvements-in-windows-holographic-version-22h1---november-2022-update)  | Fixes and improvements for HoloLens.  | All   |
+| [Fixes improvements](#fixes-improvements-in-windows-holographic-version-22h2---november-2022-update)  | Fixes and improvements for HoloLens.  | All   |
 
 ### IT Admin Checklist
 
