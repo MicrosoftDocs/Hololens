@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 10/11/2022
+ms.date: 11/8/2022
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -24,7 +24,7 @@ appliesto:
 To ensure you have a productive experience with your HoloLens devices, we continue to release features, bug fixes, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
 
 > [!NOTE]
-> The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update to HoloLens 2 in October 2021](#windows-holographic-version-21h2), and we are working on more upcoming releases based on customer feedback.
+> The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update to HoloLens 2 in November 2022](#windows-holographic-version-22h2), and we are working on more upcoming releases based on customer feedback.
 
 ## About HoloLens releases
 
@@ -41,12 +41,176 @@ To help provide clarity this release notes page will only provide information fo
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
-| 20348                  |   [Windows Holographic, version 22H1](#windows-holographic-version-22h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2) <br> [Windows Holographic, version 21H1](#windows-holographic-version-21h1)  | April 2022 <br> October 2021 <br> May 2021   | 20348.1501 <br> 20348.1432 <br> 20346.1002   |
+| 20348                  | [Windows Holographic, version 22H2](#windows-holographic-version-22h2) <br> [Windows Holographic, version 22H1](#windows-holographic-version-22h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2) <br> [Windows Holographic, version 21H1](#windows-holographic-version-21h1)  | November 2022 <br> April 2022 <br> October 2021 <br> May 2021   | 20348.1528 <br> 20348.1501 <br> 20348.1432 <br> 20346.1002   |
 | 19041                  | [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) <br> [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) | Nov 2020 <br>  May 2020    | 19041.1128 <br> 19041.1103  |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+## Windows Holographic, version 22H2
+
+- Build 20348.1528
+
+This update brings a great set of new features to HoloLens 2 users and IT professionals. Check out all the new great features for HoloLens 2!
+
+| Feature   | Description  | User or Scenario |
+|-----------|--------------|------------------|
+| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip several screens in  OOBE when adding new users to devices. | IT Admin |
+| [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  |
+| [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Turn off auto-reconnect to Wi-Fi access points to stay connected to intranet. | IT Admin       |
+| [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin |
+| [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM, using storage sense to clean up older unused files.  | IT Admin |
+| [Security Baseline](#security-baseline) | Two sets of security restrictions you can use to add more control to your devices. | IT Admin |
+| [Configure NTP client for W32 Time service](#configure-ntp-client-for-w32-time-service) | Used to set your own time server for your devices, to help keep them compliant. |  IT Admin |
+| [Fixes improvements](#fixes-improvements-in-windows-holographic-version-22h2---november-2022-update)  | Fixes and improvements for HoloLens.  | All   |
+
+### IT Admin Checklist
+
+✔️ If you'd like to speed up new user sign-ons check out the new [new policies to speed up adding users](#policies-to-speed-up-adding-users). <br>
+✔️ If you need to keep your devices from auto-connecting to Wi-Fi access points then learn how to [disable Wi-Fi auto recovery](#new-policy-to-disable-ncsi-passive-polling). <br>
+✔️ Trying to remotely troubleshoot a device, but don't have enough room to gather logs? Try to [clean up some storage space using MDM](#clean-up-storage-via-mdm). <br>
+✔️ If you need to have more security, are planning on vending out your devices, or need to check a box for a security review, check out the [security baseline](#security-baseline). <br>
+✔️ If you use your own time server, and would like your HoloLens devices to use it as well check out how to [set your own](#configure-ntp-client-for-w32-time-service).
+
+List of new or newly enabled policies:
+
+- `MixedReality/AllowCaptivePortalBeforeLogon`
+- `MixedReality/ConfigureNtpClient`
+- `MixedReality/DisallowNetworkConnectivityPassivePolling`
+- `MixedReality/NtpClientEnabled`
+- `MixedReality/SkipCalibrationDuringSetup`
+- `MixedReality/SkipTrainingDuringSetup`
+- `Storage/AllowStorageSenseGlobal`
+- `Storage/AllowStorageSenseTemporaryFilesCleanup`
+- `Storage/ConfigStorageSenseCloudContentDehydrationThreshold`
+- `Storage/ConfigStorageSenseDownloadsCleanupThreshold`
+- `Storage/ConfigStorageSenseGlobalCadence`
+
+### Policies to speed up adding users
+
+As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are two new areas you'll be able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
+
+The new policies and screens they skip are:
+
+| Policy          | What's skipped                                                                    |  Screenshot |
+|------------------|-----------------------------------------------------------------------------------|---|
+| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: `SkipCalibrationDuringSetup`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
+| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringSetup`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
+
+The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance Uniform Resource Identifier) of new policies:
+
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup`
+- `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringSetup`
+
+- Int value
+  - 0 : Keep the experience (default)
+  - 1 : Skip
+
+For more info on how to increase your setup speed for new users, check out our [guide on how to quickly set up new users.](hololens2-new-user-optimize.md)
+
+Find this information later at [Policy CSP - MixedReality](/windows/client-management/mdm/policy-csp-mixedreality).
+
+### Autopilot reset experience
+
+In certain Autopilot failure scenarios on HoloLens 2, if "Allow users to reset device if installation error occurs." setting in ESP configuration is set to "Yes", "Reset device" button will be displayed on HoloLens 2. If "Reset device" button is selected by the user, HoloLens 2 will automatically reboot, reset operating system and OOBE experience after delay of approximately 1 minute. This improvement will enable users to begin Autopilot experience again without requiring a manual flash of HoloLens 2 devices.
+
+### New policy to disable NCSI passive polling
+
+Windows Network Connectivity Status Indicator may get false positive Internet capable signal from passive polling. Which may result in unexpected Wi-Fi adapter reset when device connects to an intranet only access point. Enabling this policy would avoid unexpected network interruptions caused by false positive NCSI passive polling.
+
+The OMA-URI of new policies:
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/DisallowNetworkConnectivityPassivePolling`
+
+- Bool value
+
+Find this information later at [Policy CSP - MixedReality](/windows/client-management/mdm/policy-csp-mixedreality).
+
+### Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in
+
+Sometimes Wi-Fi connections require additional information to provide credentials to the access point. Previously users were only able to do this the first time the device was set up in OOBE, or in the Settings app once signed in. Previously, users couldn't adjust this configuration on the sign-in screen, which was sometimes tricky to work around.
+
+This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a [captive portal](/windows-hardware/drivers/mobilebroadband/captive-portals) on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
+
+MixedReality/AllowCaptivePortalBeforeLogon
+
+The OMA-URI of new policy:
+`./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeLogon`
+
+Int value
+
+- 0: Default - Off
+- 1: On
+
+Find this information later at [Policy CSP - MixedReality](/windows/client-management/mdm/policy-csp-mixedreality).
+
+### Clean up storage via MDM
+
+[Storage Sense](/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5) is available on HoloLens 2 today to manage cleanup of old files. IT admins can now also configure behavior of Storage Sense on HoloLens 2 with following MDM policies:
+
+- [Storage/AllowStorageSenseGlobal](/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesenseglobal)
+  - Sets Storage sense to be enabled on the device and will run whenever reaching low storage.
+- [Storage/AllowStorageSenseTemporaryFilesCleanup](/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesensetemporaryfilescleanup)
+  - When Storage Sense runs, it can delete the user’s temporary files that aren't in use.
+- [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensecloudcontentdehydrationthreshold)
+  - When Storage Sense runs, it can dehydrate cloud-backed content that hasn’t been opened in a certain number of days. If you enable this policy setting, you must provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it. Supported values are: 0–365.
+- [Storage/ConfigStorageSenseDownloadsCleanupThreshold](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensedownloadscleanupthreshold)
+  - When Storage Sense runs, it can delete files in the user’s Downloads folder if they haven’t been opened for more than a certain number of days. If you enable this policy setting, you must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from the Downloads folder. Supported values are: 0-365.
+- [Storage/ConfigStorageSenseGlobalCadence](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesenseglobalcadence)
+  - Storage Sense can automatically clean some of the user’s files to free up disk space. The following are supported options:
+    - 1 – Daily
+    - 7 – Weekly
+    - 30 – Monthly
+    - 0 – During low free disk space (Default)
+
+Find this information later at [Policy CSP - MixedReality](/windows/client-management/mdm/policy-csp-mixedreality).
+
+### Security baseline
+
+In some cases you may want to place some stronger restrictions on your devices. Whatever your need for security, we've written out two security baselines that you can use to add an extra layer of security to your device fleet.
+
+Select this link to read the [security baselines](security-baseline.md).
+
+### Configure NTP client for W32 Time service
+
+You may want to configure a different time server for your device fleet. With this update, IT admins can now configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page will show the time server after a time sync has occurred. E.g. `time.windows.com` or another if another value is configured via MDM policy.
+
+> [!NOTE]
+> Reboot is required for these policies to take effect.
+
+#### NtpClientEnabled
+
+This policy setting specifies whether the Windows NTP Client is enabled.
+
+- OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/NtpClientEnabled`
+- Data Type: String
+- Value `<enabled/>`
+
+#### ConfigureNtpClient
+
+This policy setting specifies a set of parameters for controlling the Windows NTP Client. Refer to [Policy CSP - ADMX_W32Time - Windows Client Management](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for supported configuration parameters.
+
+> [!NOTE]
+> Please replaces the values in the example below with the desired values for your time server. Refer to [this link](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for more details.
+
+- OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureNtpClient`
+- Data Type: String
+- Value:
+
+```
+<enabled/><data id="W32TIME_NtpServer"
+value="time.windows.com,0x9"/><data id="W32TIME_Type"
+value="NTP"/><data id="W32TIME_CrossSiteSyncFlags"
+value="2"/><data id="W32TIME_ResolvePeerBackoffMinutes"
+value="15"/><data id="W32TIME_ResolvePeerBackoffMaxTimes"
+value="7"/><data id="W32TIME_SpecialPollInterval"
+value="1024"/><data id="W32TIME_NtpClientEventLogFlags"
+value="0"/>
+```
+
+### Fixes improvements in Windows Holographic, version 22H2 - November 2022 Update
+
+- Fixed an issue where remote log collection was not reliably getting collected when device is in connected-standby and connected to AC power source after 8 hours of enrollment.
 
 ## Windows Holographic, version 22H1 - October 2022 Update
 
@@ -75,7 +239,7 @@ Improvements and fixes in the update:
 - Improve performance of hand tracking.
 - Update `XR_MSFT_spatial_graph_bridge` function and structure names.
 - No need to request permission to use Extended ET API.
-- Extended ET API now support 30fps, 60fps and 90fps.
+- Extended ET API now supports 30fps, 60fps and 90fps.
 
 ## Windows Holographic, version 22H1 - July 2022 Update
 
@@ -152,7 +316,7 @@ Color-blind mode is a feature to help make HoloLens more accessible. The new col
 
 ### Single app kiosk policy for launching other apps
 
-Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example,  if you want to launch the Settings app to calibrate your device or change your Wi-fi.
+Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example,  if you want to launch the Settings app to calibrate your device or change your Wi-Fi.
 
 By default, launching applications via [Launcher API (Launcher Class (Windows.System) - Windows UWP applications)](/uwp/api/Windows.System.Launcher?view=winrt-22000&preserve-view=true) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
 
@@ -330,7 +494,7 @@ To update to the latest release, open the Settings app, go to Update & Securit
 ✔️ If you'd like to configure your apps to automatically attempt to update after failing to update, [set this new CSP for smart retry.](#smart-retry-for-app-updates) <br>
 ✔️ If you'd like to have more control over OS updates, check out these [newly enabled Update policies.](#improved-update-restart-detection-and-notifications) <br>
 ✔️ If you need to make your organization's apps available on the company store via the Microsoft Store, but want to only allow access to your organization's apps and not the full store, [set this policy.](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️ If you'd like to know the free storage space, SSID, or BSSID of your HoloLens devices then check out these [reporting CSPs.](#csp-changes-for-reporting-hololens-details) <br>
+✔️ If you'd like to know the free storage space, SSID, or BSSID of your HoloLens devices, then check out these [reporting CSPs.](#csp-changes-for-reporting-hololens-details) <br>
 ✔️ If you'd like to use WDAC to block apps or processes from launching, but also need to use your own line of bushiness apps, you can now [allow LOB in your WDAC policy](#use-wdac-and-lob-apps).
 
 ### Moving Platform Mode

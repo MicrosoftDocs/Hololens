@@ -7,7 +7,7 @@ manager: lolab
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
-ms.date: 10/11/2022
+ms.date: 11/8/2022
 audience: ITPro
 appliesto:
 - HoloLens 2
@@ -27,6 +27,14 @@ These are the major feature releases from Windows Holographic, version 2004.
 | Major release   number | Feature release(s)                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
 | 19041                  | [Windows Holographic, version 2004](#windows-holographic-version-2004) <br> [Windows Holographic, version 20H2](#windows-holographic-version-20h2)    | May 2020 <br> Nov 2020     | 19041.1103 <br> 19041.1128   |
+
+## Windows Holographic, version 20H2 - November 2022 Update
+
+- Build 19041.1209
+
+Improvements and fixes in the update:
+
+- This monthly quality update doesn't contain any notable changes; we encourage you to try out our latest build, Windows Holographic, version 22H2.
 
 ## Windows Holographic, version 20H2 - October 2022 Update
 
@@ -823,9 +831,9 @@ Improvements and fixes also in the update:
 - Fixed an issue where repeated power button presses could cause a 60-second system timeout and shell crash.
 - Improved stability for depth buffers.
 - Added a **Share** button in the Feedback Hub so users can more easily share feedback.
-- Fixed a bug where RoboRaid wan't installed correctly.
+- Fixed a bug where RoboRaid wasn't installed correctly.
 
 ### Known issues
 
 - An issue with the zh-CN system language prevents voice commands from taking a mixed reality capture or displaying the device IP address.
-- An issue requires you to launch the Cortana app after starting the device to use "Hey Cortana" voice activation. If you updated from a 18362 build, you may also see a second app tile for the previous version of the Cortana app that no longer works in **Start**.
+- An issue requires you to launch the Cortana app after starting the device to use "Hey Cortana" voice activation. If you updated from an 18362 build, you may also see a second app tile for the previous version of the Cortana app that no longer works in **Start**.
