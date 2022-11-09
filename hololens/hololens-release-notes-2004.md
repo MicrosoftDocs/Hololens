@@ -831,9 +831,9 @@ Improvements and fixes also in the update:
 - Fixed an issue where repeated power button presses could cause a 60-second system timeout and shell crash.
 - Improved stability for depth buffers.
 - Added a **Share** button in the Feedback Hub so users can more easily share feedback.
-- Fixed a bug where RoboRaid wan't installed correctly.
+- Fixed a bug where RoboRaid wasn't installed correctly.
 
 ### Known issues
 
 - An issue with the zh-CN system language prevents voice commands from taking a mixed reality capture or displaying the device IP address.
-- An issue requires you to launch the Cortana app after starting the device to use "Hey Cortana" voice activation. If you updated from a 18362 build, you may also see a second app tile for the previous version of the Cortana app that no longer works in **Start**.
+- An issue requires you to launch the Cortana app after starting the device to use "Hey Cortana" voice activation. If you updated from an 18362 build, you may also see a second app tile for the previous version of the Cortana app that no longer works in **Start**.
