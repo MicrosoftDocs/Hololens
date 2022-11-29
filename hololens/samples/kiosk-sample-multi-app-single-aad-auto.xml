@@ -4,12 +4,14 @@
 >
     <Profiles>
         <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}">
-            <KioskModeApp AppUserModelId="Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist" />
+            <KioskModeApp AppUserModelId="Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist" rs5:AutoLaunch="true"/>
         </Profile>
     </Profiles>
     <Configs>
         <Config>
-            <!--       TODO: Specify AAD user account by copy-pasting and updating xml node from line below, e.g.       <Account>AzureAD\User name@AAD tenant name, e.g. AzureAD\contosouser@contoso.onmicrosoft.com </Account>       -->                    <DefaultProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/>
+            <!-- TODO: Specify AAD user account by copy-pasting and updating xml node from line below, e.g.
+            <Account>AzureAD\User name@AAD tenant name, e.g. AzureAD\contosouser@contoso.onmicrosoft.com </Account>   -->
+            <DefaultProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/>
         </Config>
     </Configs>
 </AssignedAccessConfiguration>

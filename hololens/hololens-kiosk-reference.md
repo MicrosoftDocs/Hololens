@@ -140,7 +140,7 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 
 ### Multiple app assigned access profile for one Azure AD account using auto-logon for one app
 
-:::code language="xml" source="samples/kiosk-sample-multi-app-single-aad-auto.xml" highlight="22-24,52,53,83,94":::
+:::code language="xml" source="samples/kiosk-sample-multi-app-single-aad-auto.xml" highlight="7,14":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
