@@ -9,8 +9,8 @@
     </Profiles>
     <Configs>
         <Config>
-            <!-- TODO: Specify AAD user account by copy-pasting and updating xml node from line below, e.g.
-            <Account>AzureAD\User name@AAD tenant name, e.g. AzureAD\contosouser@contoso.onmicrosoft.com </Account>   -->
+            <!-- TODO: Specify AAD user account by copy-pasting and updating xml node from line below, e.g.   -->
+            <Account>AzureAD\User name@AAD tenant name, e.g. AzureAD\contosouser@contoso.onmicrosoft.com </Account>
             <DefaultProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/>
         </Config>
     </Configs>
