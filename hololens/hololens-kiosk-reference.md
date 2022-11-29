@@ -90,6 +90,7 @@ If you have your own app you'd like to include in your kiosk, then there's a met
 1. [Multiple app assigned access profiles for two Azure AD users or more](#multiple-app-assigned-access-profiles-for-two-azure-ad-users-or-more)
 1. [Multiple app assigned access profile for one Azure AD group](#multiple-app-assigned-access-profile-for-one-azure-ad-group)
 1. [Multiple app assigned access profile for two Azure AD groups or more](#multiple-app-assigned-access-profile-for-two-azure-ad-groups-or-more)
+1. [Multiple app assigned access profile for one Azure AD account for one app](#multiple-app-assigned-access-profile-for-one-azure-ad-account-for-one-app)
 1. [Multiple app assigned access profile for one Azure AD account and one Azure AD group](#multiple-app-assigned-access-profile-for-one-azure-ad-account-and-one-azure-ad-group)
 1. [Multiple app assigned access profile for visitors](#multiple-app-assigned-access-profile-for-visitors)
 
@@ -138,7 +139,7 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for one Azure AD account using auto-logon for one app
+### Multiple app assigned access profile for one Azure AD account for one app
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-single-aad-auto.xml" highlight="7,13":::
 
