@@ -9,7 +9,7 @@ manager: lolab
 ms.reviewer: lavinds
 ms.topic: article
 audience: ITPro
-ms.date: 8/9/2022
+ms.date: 10/29/2022
 ms.localizationpriority:
 appliesto:
 - HoloLens 2
@@ -77,7 +77,7 @@ For more information on how to restrict updates read about how to [manage HoloLe
 
 ## App updates from the Store
 
-Keeping your apps up to date is something that most people want. If you apps are coming from the store, then they should auto update, but there's some complexity to it. It's also important to know that the following information is relevant for apps that are hosted on the Microsoft Store app. This means that inbox apps (such as Remote Assist, Guides or the Store app itself), apps downloaded from the store, or from your private store via Windows Store for Business will all receive updates via the store. Apps not installed via these means will need to be updates in the same way they were installed.
+Keeping your apps up to date is something that most people want. If you apps are coming from the store, then they should auto update, but there's some complexity to it. It's also important to know that the following information is relevant for apps that are hosted on the Microsoft Store app. This means that inbox apps (such as Remote Assist, Guides or the Store app itself) or apps downloaded from the store will all receive updates via the store. Apps not installed via these means will need to be updates in the same way they were installed.
 
 When do app updates from the store trigger?
 
