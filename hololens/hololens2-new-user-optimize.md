@@ -96,7 +96,7 @@ If you're using Windows Configuration Designer to create provisioning packages, 
 There are many other policies that affect the setup experience, by configuring them as well you reduce the number of screens in the setup experience. When setting up additional users, you’ll also see screens for speech and location. By configuring the setting for the device, no additional users see those confirmations.
 
 > [!NOTE]
-> For both the Speech and Location settings, the consent screen will not be shown if the feature is disabled. If it is left as default (user choice) or set to on, the user is still presented with the consent screen.
+> For Speech, the consent screen will not be shown if the feature is disabled. If it is left as default (user choice) or set to on, the user is still presented with the consent screen.
 
 | What's skipped          | Details                                                                    |  Screenshot of screen skipped |
 |------------------|-----------------------------------------------------------------------------------|---|
