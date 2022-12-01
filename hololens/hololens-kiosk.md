@@ -58,7 +58,7 @@ The following table lists the feature capabilities in the different kiosk modes.
 
 ## Security considerations
 
-Kiosk mode should not be considered as a security method but as a means to control start up experience on user sign-in. You may combine kiosk mode experience with options mentioned below if there are specific security related needs:
+Kiosk mode should not be considered as a security method but as a means to control the start-up experience on user sign-in. You may combine kiosk mode experience with options mentioned below if there are specific security related needs:
 
 - When Settings app is configured to show in kiosk mode and you want to control which pages are shown in Settings app, refer to [Page Settings Visibility](settings-uri-list.md).
 
@@ -120,13 +120,13 @@ Here are the following ways to configure, select the tab matching the process yo
 
 ## Frequently Asked Questions
 
-### How can visitor accounts automatically logon to kiosk experience?
+### How can visitor accounts automatically log on to kiosk experience?
 
 - Available on builds [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and onwards, Azure AD and Non-Azure AD configurations both support visitor accounts being autologon enabled for Kiosk modes.
 
-By default devices configured for kiosk mode with visitor accounts will have a button on the sign-in screen that will logon a visitor with a single tap. Once logged on, the device will not show the sign-in screen again until the visitor is explicitly signed out from the start menu or the device is restarted. However sometimes you may want to set up the device such that the sign-in screen is never shown and for the device to automatically logon using a visitor account to the kiosk experience. To do this, configure the [MixedReality/VisitorAutoLogon](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-visitorautologon) policy.
+By default devices configured for kiosk mode with visitor accounts will have a button on the sign-in screen that will log on a visitor with a single tap. Once logged on, the device will not show the sign-in screen again until the visitor is explicitly signed out from the start menu or the device is restarted. However sometimes you may want to set up the device such that the sign-in screen is never shown and for the device to automatically log on using a visitor account to the kiosk experience. To do this, configure the [MixedReality/VisitorAutoLogon](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-visitorautologon) policy.
 
-A device configured to automatically logon using a visitor account will not have on-device UI to exit this mode. To ensure that a device isn't accidentally locked out,  this policy requires that no other user accounts are present on the device. As a result, this policy must be applied during device setup either by using a provisioning package or by MDM using Autopilot.
+A device configured to automatically log on using a visitor account will not have on-device UI to exit this mode. To ensure that a device isn't accidentally locked out,  this policy requires that no other user accounts are present on the device. As a result, this policy must be applied during device setup either by using a provisioning package or by MDM using Autopilot.
 
 [!INCLUDE[](includes/kiosk-autologin.md)]
 
