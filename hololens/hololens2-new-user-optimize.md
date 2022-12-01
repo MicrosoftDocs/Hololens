@@ -1,7 +1,7 @@
 ---
 title: Set up users on HoloLens 2 quickly
 description: Learn how to set up your HoloLens 2 for users quickly, and what can happen that affects set up. 
-ms.date: 2/11/2022
+ms.date: 12/1/2022
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -98,9 +98,17 @@ There are three other policies that affect the setup experience, by configuring 
 > [!NOTE]
 > For both the Speech and Location settings, the consent screen will not be shown if the feature is disabled. If it is left as default (user choice) or set to on, the user is still presented with the consent screen.
 
-- Telemetry: Policies/System/AllowTelemetry
-- Speech: Policies/AllowInputPersonalization
-- Location: Policies/System/AllowLocation
+| What's skipped          | Details                                                                    |  Screenshot of screen skipped |
+|------------------|-----------------------------------------------------------------------------------|---|
+| Telemetry | The page asking users to help improve HoloLens, by reporting additional data which helps us fix bugs. <br> Using [Policies/System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)      | <img src="images/24-telemetry.png" width="200px" alt="Telemetry level"> |
+| Speech | The page which asks the user if they'd like to use voice commands on the device. <br> Using [Policies/Privacy/AllowInputPersonalization](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana">
+| Location | The page which asks the user to enable their location to improve in app experiences. <br> Using [Policies/System/AllowLocation](/windows/client-management/mdm/policy-csp-system#system-allowlocation) | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
+| Iris | The page asking a user to enroll in Iris authentication and the process of enrolling. <br > Using [Passportforwork CSP](/windows/client-management/mdm/passportforwork-csp) - TenantId/Policies/UsePassportForWork | <img src="images/setup-iris.png" width="200px" alt="Iris setup"> |
+| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: [SkipCalibrationDuringSetup](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-skipcalibrationduringsetup)      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
+| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: [SkipTrainingDuringSetup](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-skiptrainingduringsetup)  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
+
+> [!NOTE]
+> Both the MixedReality/SkipCalibrationDuringSetup and MixedReality/SkipTrainingDuringSetup policies require the [Windows Holographic, version 22H2](hololens-release-notes.md#windows-holographic-version-22h2) or newer.
 
 ## Set up conditions
 
