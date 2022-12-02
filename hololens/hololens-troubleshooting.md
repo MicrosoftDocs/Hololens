@@ -190,8 +190,8 @@ When resetting a device that has low disk space, under 4GB of free space, the us
 
 ### Who is not affected - Low space reset
 
-- Devices that are reset with sufficient free space over 4B
-- Devices that are wiped remotely with sufficient free space over 4B
+- Devices that are reset with sufficient free space over 4GB
+- Devices that are wiped remotely with sufficient free space over 4GB
 - Devices that are flashed via ARC
 
 ### Workaround - Low space reset
