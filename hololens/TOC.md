@@ -64,6 +64,7 @@
 ### [Offline secure environment deployment guide](hololens-common-scenarios-offline-secure.md)
 ### [Near offline or isolated environments deployment guide](hololens-common-scenarios-near-offline-restricted.md)
 ### [Shared HoloLens 2 with Remote Assist deployment guide](hololens2-deploying-remote-assist-using-shared-identity.md)
+### [Experiences Best Practices](hololens-best-practices-experiences.md)
 ### [License requirements](hololens-licenses-requirements.md)
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
@@ -105,6 +106,7 @@
 ### [Manage connection endpoints for HoloLens](hololens-offline.md)
 ### [Certificate Manager](certificate-manager.md)
 ## [Manage HoloLens updates](hololens-updates.md)
+## [Maintain HoloLens devices](hololens-maintaining-devices.md)
 
 # Troubleshooting
 ## [Device](hololens-troubleshooting.md)
