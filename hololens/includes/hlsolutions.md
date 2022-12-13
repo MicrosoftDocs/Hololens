@@ -8,9 +8,9 @@
 | Collaborate digitally in real time through mixed reality | [**Microsoft Mesh**](https://www.microsoft.com/mesh) | Microsoft Mesh enables presence and shared experiences from anywhere – on any device – through mixed reality applications. |
 | Use third party apps for HoloLens 2 | [**Microsoft Store**](../holographic-store-apps.md) | HoloLens supports many existing applications from the Microsoft Store, and new apps built specifically for HoloLens.
 
-## Explore [new features of Dynamics 365 Guides for HoloLens](https://aka.ms/guidesupdates22)
+## Holographic Microsoft Teams features empower hybrid collaboration
 
-Microsoft Teams' holographic features empower hybrid collaboration in industrial metaverse:
+Explore [new features of Dynamics 365 Guides for HoloLens](https://aka.ms/guidesupdates22):
 
 * Share screens as holograms on Teams.
 * Access Teams calendar and join meetings from HoloLens 2.
