@@ -106,6 +106,7 @@
 ### [Manage connection endpoints for HoloLens](hololens-offline.md)
 ### [Certificate Manager](certificate-manager.md)
 ## [Manage HoloLens updates](hololens-updates.md)
+## [Maintain HoloLens devices](hololens-maintaining-devices.md)
 
 # Troubleshooting
 ## [Device](hololens-troubleshooting.md)
