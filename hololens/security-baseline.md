@@ -19,16 +19,16 @@ appliesto:
 # HoloLens 2 security baselines
 
 > [!IMPORTANT]
-> Some of the policies used in this security baseline are introduced in our latest [Insider build](hololens-insider.md). Those policies will only function on devices updated to the latest Insider build.
+> Some of the policies used in this security baseline are introduced in our latest [Insider build](hololens-insider.md). These policies will only function on devices updated to the latest Insider build.
 
-This article lists and describes the various security baseline settings you can configure on HoloLens 2 devices using Configuration Service Providers (CSP). As part of your mobile device management using Microsoft Endpoint Manager (formally known as Microsoft Intune), use the following standard or advanced security baseline settings depending on your organizational policies and needs. As a HoloLens 2 administration team, use these security baseline settings to help protect your organizational resources.
+This article lists and describes the various security baseline settings you can configure on HoloLens 2 using Configuration Service Providers (CSP). As part of your mobile device management using Microsoft Endpoint Manager (formally known as Microsoft Intune), use the following standard or advanced security baseline settings depending on your organizational policies and needs. Use these security baseline settings to help protect your organizational resources.
 
-- Standard security baseline settings are applicable to all types of customers irrespective of the use case scenario and industry vertical.
-- Advanced security baseline settings are recommended settings for customers those who have strict security controls of their environment and require stringent security policies to be applied to any device used in their environment
+- Standard security baseline settings are applicable to all types of users irrespective of the use case scenario and industry vertical.
+- Advanced security baseline settings are recommended settings for users who have strict security controls of their environment, and require stringent security policies for devices used in their environment.
 
-These security baseline settings are based on Microsoft’s best practice guidelines and experience gained in deploying and supporting HoloLens 2 devices to multiple customers in various industries.
+These security baseline settings are based on Microsoft’s best practice guidelines and experience gained in deploying and supporting HoloLens 2 devices to customers in various industries.
 
-Once you've reviewed the baselines and decided to use the one, both, or parts, then check out [how to enable these security base lines](#how-to-enable-these-security-base-lines)
+Once you've reviewed the security baseline and decided to use the one, both, or parts, then check out [how to enable these security base lines](#how-to-enable-these-security-base-lines)
 
 ## 1. Standard security baseline settings
 
@@ -45,9 +45,9 @@ The following sections describe the recommended settings of each CSP as part of 
 | [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) | 1 – Allowed | Allow automatic update of apps from Microsoft Store. |
 | [ApplicationManagement/AllowDeveloperUnlock](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) | 0 - Explicit deny | Restrict the user to unlock developer mode, which allows the user to install apps on the device from an IDE. |
 | **Browser** | | |
-| [Browser/AllowCookies](/windows/client-management/mdm/policy-csp-browser#browser-allowcookies) | 1 – Block only cookies from third party websites | With this policy, you can configure Microsoft to block only 3rd-party cookies or block all cookies. |
+| [Browser/AllowCookies](/windows/client-management/mdm/policy-csp-browser#browser-allowcookies) | 1 – Block only cookies from third party websites | With this policy, you can configure Microsoft Edge to block only 3rd-party cookies or block all cookies. |
 | [Browser/AllowPasswordManager](/windows/client-management/mdm/policy-csp-browser#browser-allowpasswordmanager) | 0 – Not allowed | Disallow Microsoft Edge to use the password manager. |
-| [Browser/AllowSmartScreen](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) | 1 – Turned on | Enabling this policy turns on Windows Defender SmartScreen and prevent users from turning it off. |
+| [Browser/AllowSmartScreen](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) | 1 – Turned on | Turns on Windows Defender SmartScreen and prevent users from turning it off. |
 | **Connectivity** | | |
 | [Connectivity/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) | 0 – Not allowed | Disables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. |
 | **Device Lock** | | |
@@ -105,15 +105,15 @@ We recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes 
 
 | **Node Name** | **Value** | **Description** |
 | --- | --- | --- |
-| RequireNetworkInOOBE | True | When the device goes through OOBE at first logon or after a reset, the user is required to choose a network before proceeding. There's no &quot;skip for now&quot; option. This ensures that the device remains bound to the tenant in case of accidental or intentional resets or wipes. |
+| RequireNetworkInOOBE | True | When the device goes through OOBE at first sign-in or after a reset, the user is required to choose a network before proceeding. There's no &quot;skip for now&quot; option. This option ensures that the device remains bound to the tenant in case of accidental or intentional resets or wipes. |
 
 ### 1.6 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
 
-We recommend configuring this CSP as a best practice but don't have recommendations for specific values for each node in this CSP. Most of the settings are related to the customer environment.
+We recommend configuring this CSP as a best practice, but we don't have recommendations for specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ### 1.7 [WiFi CSP](/windows/client-management/mdm/wifi-csp)
 
-We recommend configuring this CSP as a best practice but don't have recommendations for specific values for each node in this CSP. Most of the settings are related to the customer environment.
+We recommend configuring this CSP as a best practice, but we don't have recommendations for specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ## 2 Advanced security baseline settings
 
@@ -126,7 +126,7 @@ The following sections describe the recommended settings of each CSP as part of 
 | **Accounts** | | |
 | [Accounts/AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection) | 0 – Not Allowed | Restrict the user to use an MSA account for non-email related connection authentication and services. |
 | **Application Management** | | |
-| [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) | 0 - Explicit deny | Explicitly deny non Microsoft Store apps. |
+| [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) | 0 - Explicit deny | Explicitly deny non-Microsoft Store apps. |
 | [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) | 1 – Allowed | Allow automatic update of apps from Microsoft Store. |
 | [ApplicationManagement/AllowDeveloperUnlock](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) | 0 - Explicit deny | Restrict the user to unlock developer mode, which allows the user to install apps on the device from an IDE. |
 | **Authentication** | | |
@@ -134,15 +134,15 @@ The following sections describe the recommended settings of each CSP as part of 
 | **Bluetooth** | | |
 | [Bluetooth/AllowDiscoverableMode](/windows/client-management/mdm/policy-csp-bluetooth#bluetooth-allowdiscoverablemode) | 0 – Not allowed | Other devices won't be able to detect this device. |
 | **Browser** | | |
-| [Browser/AllowAutofill](/windows/client-management/mdm/policy-csp-browser#browser-allowautofill) | 0 – Prevented/not allowed | Prevent users using Autofill feature to populate the form fields in Microsoft Edge automatically. |
+| [Browser/AllowAutofill](/windows/client-management/mdm/policy-csp-browser#browser-allowautofill) | 0 – Prevented/not allowed | Prevent users using the Autofill feature to populate the form fields in Microsoft Edge automatically. |
 | [Browser/AllowCookies](/windows/client-management/mdm/policy-csp-browser#browser-allowcookies) | 1 – Block only cookies from third party websites | Block only cookies from third party websites. |
 | [Browser/AllowDoNotTrack](/windows/client-management/mdm/policy-csp-browser#browser-allowdonottrack) | 0 - Never send tracking information | Never send tracking information. |
 | [Browser/AllowPasswordManager](/windows/client-management/mdm/policy-csp-browser#browser-allowpasswordmanager) | 0 – Not allowed | Disallow Microsoft Edge to use the password manager. |
 | [Browser/AllowPopups](/windows/client-management/mdm/policy-csp-browser#browser-allowpopups) | 1 – Turn on Pop-up Blocker | Turn on Pop-up Blocker stopping pop-up windows from opening. |
 | [Browser/AllowSearchSuggestionsinAddressBar](/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar) | 0 – Prevented/not allowed | Hide search suggestions in the Address bar of Microsoft Edge. |
-| [Browser/AllowSmartScreen](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) | 1 – Turned on | Enabling this policy turns on Windows Defender SmartScreen and prevent users from turning it off. |
+| [Browser/AllowSmartScreen](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) | 1 – Turned on | Turns on Windows Defender SmartScreen and prevent users from turning it off. |
 | **Connectivity** | | |
-| [Connectivity/AllowBluetooth](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) | 0 – Disallow Bluetooth | Bluetooth control panel will be grayed out and the user won't be able to turn on Bluetooth. |
+| [Connectivity/AllowBluetooth](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) | 0 – Disallow Bluetooth | The bluetooth control panel will be grayed out and the user won't be able to turn on Bluetooth. |
 | [Connectivity/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) | 0 – Not allowed | Disables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. |
 | **Device Lock** | | |
 | [DeviceLock/AllowIdleReturnWithoutPassword](/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowidlereturnwithoutpassword) | 0 – Not allowed | Disallow return from idle without PIN or password. |
@@ -290,7 +290,7 @@ You'll need to fill out a few fields.
 - Data type is the type of value this policy accepts. For this example it's a number between 0 and 60, so Integer was selected.
 - Once you select the data type, you'll be able to write out, or upload, the value needed into the field.
 
-![Screenshot of OMA-URI configuring.](images/settings-catalog-set-setting.png)
+![Screenshot of OMA-URI configuring.](images/oma-uri-configure.png)
 
 Once done, your policy will be added to the main window. You can continue adding all your custom policies to the same custom configuration. This helps reduce managing multiple device configurations and makes assignment easier.
 

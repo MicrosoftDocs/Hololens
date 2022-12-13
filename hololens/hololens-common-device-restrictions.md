@@ -4,7 +4,7 @@ description: Keep up to date with common device restrictions and settings for th
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.topic: article
 ms.localizationpriority:
 ms.date: 1/19/2022

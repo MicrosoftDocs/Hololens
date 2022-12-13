@@ -3,7 +3,7 @@ title: HoloLens 2 editions
 description: Learn how each HoloLens 2 device edition is the same or different and what to do after getting one of your own.
 keywords: HoloLens 2 purchasing options, HoloLens options, Developer Edition
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.reviewer: evmill
 ms.date: 2/10/2022
 ms.prod: hololens

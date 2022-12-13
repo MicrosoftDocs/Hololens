@@ -36,7 +36,9 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Known Issues
 
+- [Resetting a device with low space doesn't reset](#resetting-a-device-with-low-space-doesnt-reset)
 - [Remote Wipe doesn't remove device from Intune](#remote-wipe-doesnt-remove-device-from-intune)
+- [Devices not getting the latest feature updates](#devices-not-getting-the-latest-feature-updates)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
 - [Microsoft Store error code 0x80131500](#microsoft-store-error-code-0x80131500)
 - [File Explorer and pickers can't select OneDrive](#file-explorer-and-pickers-cant-select-onedrive)
@@ -89,7 +91,7 @@ If you've having an issue launching Microsoft Edge on your HoloLens, you may hav
 > [!NOTE]
 > This was fixed in [Windows Holographic, version 21H2 - November 2021 Update](hololens-release-notes.md#windows-holographic-version-21h2---november-2021-update)
 
-A known issue is that when the device reaches 18% battery, it will shut down unexpectedly. This is a software issue, not a hardware or battery issue, so do not exchange devices for this. If you're unsure if your issue matches this bug, please:
+A known issue is that when the device reaches 18% battery, it will shut down unexpectedly. This is a software issue, not a hardware or battery issue, so don't exchange devices for this. If you're unsure if your issue matches this bug, please:
 
 1. Ensure optional diagnostics are enabled on your device(s)
 1. Reproduce the problem
@@ -177,6 +179,26 @@ Workarounds before the fix:
 
 [Back to list](#list)
 
+## Resetting a device with low space doesn't reset
+
+When resetting a device that has low disk space, under 6 GB of free space, the user will find that it fails to reset. Instead it will start the restart process but fail to complete, resulting in the user needing to reflash the device to use it again.
+
+### Who is affected - Low space reset
+
+- Devices that are lower than 6 GB in space and that reset via the Settings app.
+- Devices that are lower than 6 GB in space and, which are issued a remote wipe from Intune
+
+### Who is not affected - Low space reset
+
+- Devices that are reset with sufficient free space over 6 GB
+- Devices that are wiped remotely with sufficient free space over 6 GB
+- Devices that are flashed via ARC
+
+### Workaround - Low space reset
+
+- Delete files or apps until you have more than 6 GB of free storage space on the device. You can check free space via **Settings** -> **System** -> **Storage**. While there you can enable or run storage sense to help you clear up space more easily.
+- [Reflash the device using manual flashing mode](hololens-recovery.md#manual-flashing-mode-procedure). This can be done to either bypass making free space, or to recover from the bad state created by resetting with low space.
+
 ## Remote Wipe doesn't remove device from Intune
 
 When deleting a HoloLens device from Intune [via the Wipe command](hololens-recovery.md#wipe-the-device), the device will be sent the wipe command. This command will wipe the device, however Intune won't receive confirmation that the HoloLens was wiped. This will leave the Wipe button as clicked, and "Wipe pending..." for the device.
@@ -187,15 +209,82 @@ When deleting a HoloLens device from Intune [via the Wipe command](hololens-reco
 
 Immediately after selecting **Wipe** we suggest also selecting the **Delete** button next to wipe. Otherwise you'll have left over device objects or even see another known issue for [Autopilot](#why-do-i-see-0x80180014-during-autopilot).
 
+## Devices not getting the latest feature updates
+
+You may have noticed that your devices are updating but not updating to the latest feature releases. If your device version is newer than 19041.1146, but the major build number is still 19041 then you’re still on an older servicing train.
+
+### Symptom
+
+Devices keep receiving servicing updates instead of FE updates.
+
+### Who does this affect
+
+Users who have used “Feature updates for Windows 10 and later” instead of “Update rings for Windows 10 and later” to manage their devices.
+
+![Feature update bad selection](./images/endpoint-update-select.png)
+
+### Who is not affected
+
+Users who didn't try to use “Feature updates for Windows 10 and later” to manage their devices.
+
+### How to check if devices are subject to Intune feature update management, and how to opt out
+
+You'll need your Azure AD tenant ID. Here's [how to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
+
+1. Use Get azureADDevice beta Graph API to check against the Azure AD device to determine if it's enrolled to update management.
+
+```
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatableAssets",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
+            "id": "c1758f08-18e6-4335-98fb-91dd8d17fc3c"
+        },
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
+            "id": "56142275-3286-41bb-a326-d91c84529b82"
+        },
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+            "id": "088de54c-c1a9-4c3d-bcdb-c500fd6e6db7",
+            "errors": [],
+            "enrollments": [
+                {
+                    "@odata.type": "#microsoft.graph.windowsUpdates.updateManagementEnrollment",
+                    "updateCategory": "feature"
+                }
+            ]
+        }
+    ]
+}
+```
+
+2. If device is enrolled, unenrollAssets Graph API can be used to unenroll a HoloLens device subject to Intune feature update.
+
+```
+{
+  "updateCategory": "String",
+  "assets": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+      "id": "088de54c-c1a9-4c3d-bcdb-c500fd6e6db7"
+    }
+  ]
+}
+```
+
+3. Once the device is unenrolled then use Get azureADDevice or List azureADDevice resources to check if the device has been unenrolled successfully.
+
 ## Why do I see 0x80180014 during Autopilot?
 
-This error is typically encountered during device reset and re-use flows where a HoloLens device has gone through Autopilot at least once. In order to resolve this issue, please [delete the device from Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) and reset it again to complete Autopilot flow.
+This error is typically encountered during device reset and reuse flows where a HoloLens device has gone through Autopilot at least once. In order to resolve this issue, please [delete the device from Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) and reset it again to complete Autopilot flow.
 
 For more info, please refer to [troubleshooting steps on the autopilot page.](hololens2-autopilot.md#issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot)
 
 ## Microsoft Store error code 0x80131500
 
-Some users may experience the Microsoft Store working not as expected, and see the error code 0x80131500. This is an issue caused by the region set on the HoloLens not being available in the Microsoft Store app on HoloLens. If you encounter error code 0x80131500, to work around please:
+Some users may experience the Microsoft Store working not as expected, and see the error code 0x80131500. This is an issue caused by the region set on the HoloLens not being available in the Microsoft Store app on HoloLens. If you encounter error code 0x80131500, to work around:
 
 1. Set Settings > Time & Language > Region > Country or region, to one of the following:
     - United States, Japan, Germany, Canada, United Kingdom, Ireland, France, Australia, New Zealand.
@@ -212,7 +301,7 @@ There have been some changes and updates to the OneDrive app over time. If you w
 
 **Work around** : Use the OneDrive app and move files locally to the device as needed.
 
-For code samples using OneDrive via Microsoft Graph APIs visit the [developer documentation for OneDrive.](https://developer.microsoft.com/onedrive)
+For code samples using OneDrive via Microsoft Graph APIs, visit the [developer documentation for OneDrive.](https://developer.microsoft.com/onedrive)
 
 ## Microsoft Edge fails to start the microphone
 
@@ -244,7 +333,7 @@ This shouldn't occur during:
 Work around methods:
 
 - Sign-in methods such as PIN, Password, Iris, Web Authentication, or FIDO2 keys.
-- If device PIN cannot be remembered, and other authentication methods aren't available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-flashing-mode-procedure).
+- If device PIN can't be remembered, and other authentication methods aren't available, then a user can use [manual reflashing mode](hololens-recovery.md#manual-flashing-mode-procedure).
 
 [Back to list](#list)
 
@@ -276,7 +365,7 @@ Users who have flashed their device, or unboxed their device, and started using 
 > [!NOTE]
 > This issue was originally created with the shipping version of Microsoft Edge in-mind. This issue may be resolved in the [new Microsoft Edge](hololens-new-edge.md). If it is not, please file feedback.
 
-A few customers have reported an issue where Microsoft Edge fails to launch. For these customers, the issue persists through reboot and isn't resolved with Windows or application updates. If you're experiencing this issue and you've confirmed [Windows is up-to-date](hololens-updates.md#manually-check-for-updates), please file a bug from the [Feedback Hub app](hololens-feedback.md) with the following category and sub-category: Install and Update > Downloading, installing, and configuring Windows Update.
+A few customers have reported an issue where Microsoft Edge fails to launch. For these customers, the issue persists through reboot and isn't resolved with Windows or application updates. If you're experiencing this issue and you've confirmed [Windows is up-to-date](hololens-updates.md#manually-check-for-updates), please file a bug from the [Feedback Hub app](hololens-feedback.md) with the following category and subcategory: Install and Update > Downloading, installing, and configuring Windows Update.
 
 There are no known workarounds as we've been unable to root cause the issue so far. Filing a bug via Feedback Hub will help our investigation! This is a **known issue**.
 
@@ -284,7 +373,7 @@ There are no known workarounds as we've been unable to root cause the issue so f
 
 ## Keyboard doesn't switch to special characters
 
-There is an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button doesn't change to special characters. This is a **known issue**.
+There's an issue during OOBE, where once the user has chosen a work or school account and is entering their password, trying to switch to the special characters on the keyboard by tapping the &123 button doesn't change to special characters. This is a **known issue**.
 
 Work-arounds:
 
@@ -434,7 +523,7 @@ To ensure that HoloLens can see your hands, you need to keep them in the gesture
 
 Many immersive apps follow input patterns that are similar to Mixed Reality Home.  Learn more about using hand input on [HoloLens (1st gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) and [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
 
-If you are wearing gloves, note that some types of gloves do not work with hand tracking.  A common example is black rubber gloves, which tend to absorb infrared light and are not picked up by the depth camera.  If your work involves rubber gloves, we recommend trying a lighter color such as blue or gray.  Another example is large baggy gloves, which tend to obscure the shape of your hand. We recommend using gloves that are as form-fitting as possible for best results.
+If you're wearing gloves, note that some types of gloves don't work with hand tracking.  A common example is black rubber gloves, which tend to absorb infrared light and aren't picked up by the depth camera.  If your work involves rubber gloves, we recommend trying a lighter color such as blue or gray.  Another example is large baggy gloves, which tend to obscure the shape of your hand. We recommend using gloves that are as form-fitting as possible for best results.
 
 If your visor has fingerprints or smudges, use the microfiber cleaning cloth that came with the HoloLens to clean your visor gently.
 
@@ -463,7 +552,7 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 
 ## USB-C Microphone isn't working
 
-Be aware that some USB-C microphones incorrectly report themselves as both a microphone *and* a speaker. This is a problem with the microphone and not with HoloLens. When plugging one of these microphones into HoloLens, sound may be lost. Fortunately there is a simple fix.  
+Be aware that some USB-C microphones incorrectly report themselves as both a microphone *and* a speaker. This is a problem with the microphone and not with HoloLens. When plugging one of these microphones into HoloLens, sound may be lost. Fortunately there's a simple fix.  
 
 In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers **(Analog Feature Audio Driver)** as the **Default device**. HoloLens should remember this setting even if the microphone is removed and reconnected later.
 
@@ -473,7 +562,7 @@ In **Settings** -> **System** -> **Sound**, explicitly set the built-in speakers
 
 HoloLens (1st gen) doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
 
-HoloLens 2 supports the Bluetooth A2DP audio profile for stereo playback. The Bluetooth Hands Free profile which enables microphone capture from a Bluetooth peripheral is not supported on HoloLens 2.
+HoloLens 2 supports the Bluetooth A2DP audio profile for stereo playback. The Bluetooth Hands Free profile that enables microphone capture from a Bluetooth peripheral isn't supported on HoloLens 2.
 
 If you're having trouble using a Bluetooth device, make sure that it's a supported device. Supported devices include the following:
 

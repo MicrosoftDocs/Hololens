@@ -4,7 +4,7 @@ description: Learn how to set up your HoloLens (1st gen) for the first time over
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.topic: article
 ms.date: 8/12/2019
 manager: jarrettr

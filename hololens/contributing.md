@@ -1,6 +1,6 @@
 ---
 title: Contributing instructions
-description: Learn how to contribute to the HoloLens docs on the docs.microsoft.com platform using GitHub-flavored Markdown. 
+description: Learn how to contribute to the HoloLens technical documentation using GitHub-flavored Markdown. 
 author: qianw211
 ms.author: qianwen
 ms.date: 10/29/2021
@@ -11,9 +11,9 @@ ms.prod: hololens
 
 # Contributing to the HoloLens documentation
 
-Welcome to the [HoloLens documentation](https://github.com/MicrosoftDocs/Hololens)! Any articles you create or edit in this repo **will be visible to the public.** 
+Welcome to the [HoloLens documentation](https://github.com/MicrosoftDocs/Hololens)! Any articles you create or edit in this repo **will be visible to the public.**
 
-HoloLens docs are displayed on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at /hololens.
+HoloLens documentation is published to Microsoft Learn, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at `/hololens`.
 
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thanks for your contribution!
 
@@ -38,7 +38,7 @@ When setting up your GitHub account, we also recommend these security precaution
 - Save your [recovery codes](https://github.com/settings/auth/recovery-codes) in a safe place.
 - Update your [public profile settings](https://github.com/settings/profile).
    - Set your name, and consider setting your *Public email* to *Don't show my email address*.
-   - We recommend you upload a profile picture because a thumbnail is shown on docs pages you contribute to.
+   - We recommend you upload a profile picture because a thumbnail is shown in Microsoft Learn articles you contribute to.
 - If you plan to use the command line, consider setting up [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest). That way, you won't have to enter your password every time you make a contribution.
 
 The publishing system is tied to GitHub, so these steps are important. You'll be listed as either author or contributor to each article using your GitHub alias.
@@ -53,10 +53,10 @@ Use the following workflow to make updates to *an existing article* via GitHub i
 
    ![Edit an article.](images/editpage.png)
 
-   This will automatically fork a disposable branch off the default branch, _master_.
+   This will automatically fork a disposable branch off the default branch, _main_.
 
    > [!NOTE]
-   > This article contains references to _master_, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
+   > This article contains references to _main_, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
    
 3. Edit the content of the article according to the [Markdown basics](#markdown-basics).
 
@@ -71,7 +71,7 @@ Use the following workflow to make updates to *an existing article* via GitHub i
    
 5. When you've completed your article edits, scroll down and select **Propose file change**.
 
-6. On the next page, select **Create pull request** to merge your automatically created branch into the default branch, _master_.
+6. On the next page, select **Create pull request** to merge your automatically created branch into the default branch, _main_.
 
 7. Repeat the steps above for the next article you want to edit.
 
@@ -103,12 +103,12 @@ If you add a redirect, be sure to delete the old file as well.
 
 Use the following workflow to *create new articles* in the documentation repo via GitHub in a web browser:
 
-1. Create a fork off the default branch, _master_, of MicrosoftDocs/hololens by using the **Fork** button in the top right.
+1. Create a fork off the default branch, _main_, of MicrosoftDocs/hololens by using the **Fork** button in the top right.
 
-   ![Fork the default branch, currently named "master".](images/forkbranch.png)
+   ![Fork the default branch, currently named "main".](images/forkbranch.png)
 
    > [!NOTE]
-   > This article contains references to _master_, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
+   > This article contains references to _main_, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
    
 2. In the "hololens" folder, select **Create new file** in the top right.
 
@@ -141,7 +141,7 @@ Use the following workflow to *create new articles* in the documentation repo vi
 
 8. When finished, select **Commit new file**.
 
-9. Select **New pull request** and merge your fork's _master_ branch into MicrosoftDocs/hololens _master_ (make sure the arrow is pointing to the correct destination).
+9. Select **New pull request** and merge your fork's _main_ branch into MicrosoftDocs/hololens _main_ (make sure the arrow is pointing to the correct destination).
 
    ![Create pull request from your fork into MicrosoftDocs/hololens.](images/pr-to-master.png)
 
@@ -150,11 +150,11 @@ Use the following workflow to *create new articles* in the documentation repo vi
 The following resources will help you learn how to edit documentation using the Markdown language:
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/markdown-reference)
+- [Additional resources for writing Markdown [for](/contribute/markdown-reference)
 
 ### Adding tables
 
-Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here’s a site that makes Markdown tables easy: [Tables Generator]](https://www.tablesgenerator.com/markdown_tables).
+Because of how tables are styled on Microsoft Learn, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here’s a site that makes Markdown tables easy: [Tables Generator]](https://www.tablesgenerator.com/markdown_tables).
 
 The [Docs Markdown Extension for Visual Studio Code](/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code (see below)](#using-visual-studio-code) to edit the documentation.
 
@@ -168,18 +168,18 @@ You’ll need to upload your images to the "hololens/images" folder in the repo,
 >1. Forked the MicrosoftDocs/hololens repo.
 >2. Edited the article in your fork.
 >3. Uploaded the images you're referencing in your article to the "hololens/images" folder in your fork.
->4. Created a **pull request** to merge your fork into the MicrosoftDocs/hololens _master_ branch.
+>4. Created a **pull request** to merge your fork into the MicrosoftDocs/hololens _main_ branch.
 >
 >To learn how to set up your own forked repo, follow the instructions for [creating a new article](#creating-a-new-article).
 
 ## Previewing your work
 
-While editing in GitHub via a web browser, you can select the **Preview** tab near the top of the page to preview your work before committing. 
+While editing in GitHub via a web browser, you can select the **Preview** tab near the top of the page to preview your work before committing.
 
 >[!NOTE]
->Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
+>Previewing your changes on Microsoft Learn is only available to Microsoft employees.
 
-Microsoft employees: When your contributions have been merged into the default branch, _master_, you can review the content before it goes public at </hololens?branch=master>. Find your article by using the table of contents in the left column.
+Microsoft employees: When your contributions have been merged into the default branch, _main_, you can review the content before it goes public at </hololens?branch=main>. Find your article by using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 
@@ -220,7 +220,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 1. Make sure your cloned fork is up to date with the official repo.
 
-   1. In a web browser, create a pull request to sync recent changes from other contributors in the default branch of MicrosoftDocs/hololens, _master_, to your fork (make sure the arrow is pointing to the correct destination).
+   1. In a web browser, create a pull request to sync recent changes from other contributors in the default branch of MicrosoftDocs/hololens, _main_, to your fork (make sure the arrow is pointing to the correct destination).
       
       ![Sync changes from MicrosoftDocs/hololens to your fork.](images/sync-repos.png)
 	  
@@ -244,7 +244,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
       
       ![Click the sync button.](images/sync-back.png)
 	  
-3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/hololens _master_ (make sure the arrow is pointing to the correct destination).
+3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/hololens _main_ (make sure the arrow is pointing to the correct destination).
 
    ![Create pull request from your fork into MicrosoftDocs/hololens.](images/pr-to-master.png)
 
@@ -252,9 +252,11 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 The following Visual Studio Code extensions are useful when editing documentation:
 
-- [Docs Markdown Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - Use **Alt+M** to bring up a menu of docs authoring options like:
-   - Search and reference images you've uploaded.
-   - Add formatting like lists, tables, and docs-specific call-outs like `>[!NOTE]`.
-   - Search and reference internal links and bookmarks (links to specific sections within a page).
-   - Formatting errors are highlighted (hover your mouse over the error to learn more).
+- [Docs Markdown Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - Use **Alt+M** to bring up a menu of Microsoft Learn authoring options like:
+
+  - Search and reference images you've uploaded.
+  - Add formatting like lists, tables, and call-outs like `>[!NOTE]`.
+  - Search and reference internal links and bookmarks (links to specific sections within a page).
+  - Formatting errors are highlighted (hover your mouse over the error to learn more).
+
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - misspelled words will be underlined; right-click on a misspelled word to change it or save it to the dictionary.
