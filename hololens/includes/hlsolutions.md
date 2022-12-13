@@ -10,6 +10,8 @@
 
 ## Explore [new features of Dynamics 365 Guides for HoloLens](https://aka.ms/guidesupdates22)
 
+Microsoft's Teams holographic features empower hybrid collaboration in industrial metaverse:
+
 * Share screens as holograms on Teams.
 * Access Teams calendar and join meetings from HoloLens 2.
 * Streamline discussions with file sharing and text chat on HoloLens 2.
