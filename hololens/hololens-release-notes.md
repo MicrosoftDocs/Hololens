@@ -54,7 +54,7 @@ To help provide clarity this release notes page will only provide information fo
 
 Improvements and fixes in the update:
 
-- Fixed MDM managed profile gets deleted unexpectedly if both the delete and the addition of a VPN profile in the same session.
+- Fixed an issue where a MDM managed profile gets deleted unexpectedly if both the deletion and the addition of a VPN profile were in the same session.
 
 ## Windows Holographic, version 22H2
 
