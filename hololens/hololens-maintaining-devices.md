@@ -9,7 +9,7 @@ manager: lolab
 ms.reviewer: lavinds
 ms.topic: article
 audience: ITPro
-ms.date: 10/29/2022
+ms.date: 12/13/2022
 ms.localizationpriority:
 appliesto:
 - HoloLens 2
