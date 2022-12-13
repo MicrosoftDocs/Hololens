@@ -137,7 +137,7 @@ Intune uses Kiosk templates or custom OMA-URI configurations, which can be remot
 
 ### Visitor Auto Login
 
-The Auto Logon to a visitor profile allows you jump straight into the action without ever seeing the login screen. The device will be launched straight into the kiosk experience using the visitor profile. This is a required setting and can be managed using the custom policy OMA-URI.
+The Auto Logon to a visitor profile allows you to jump straight into the action without ever seeing the login screen. The device will be launched straight into the kiosk experience using the visitor profile. This is a required setting and can be managed using the custom policy OMA-URI.
 
 | Setting      | Value                                                                   |
 |--------------|-------------------------------------------------------------------------|
