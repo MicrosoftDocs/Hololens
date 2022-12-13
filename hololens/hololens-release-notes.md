@@ -48,6 +48,14 @@ To help provide clarity this release notes page will only provide information fo
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Windows Holographic, version 22H2 - December 2022 Update
+
+- Build 20348.1531
+
+Improvements and fixes in the update:
+
+- Fixed an issue where a MDM managed profile gets deleted unexpectedly if both the deletion and the addition of a VPN profile were in the same session.
+
 ## Windows Holographic, version 22H2
 
 - Build 20348.1528
@@ -94,7 +102,7 @@ The new policies and screens they skip are:
 
 | Policy          | What's skipped                                                                    |  Screenshot |
 |------------------|-----------------------------------------------------------------------------------|---|
-| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app. <br> Using: `SkipCalibrationDuringSetup`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
+| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app, or when an app that uses eye tracking prompts the user to calibrate. <br> Using: `SkipCalibrationDuringSetup`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
 | Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringSetup`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
 
 The [OMA-URI](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) (Open Mobile Alliance Uniform Resource Identifier) of new policies:

@@ -36,6 +36,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Known Issues
 
+- [Resetting a device with low space doesn't reset](#resetting-a-device-with-low-space-doesnt-reset)
 - [Remote Wipe doesn't remove device from Intune](#remote-wipe-doesnt-remove-device-from-intune)
 - [Devices not getting the latest feature updates](#devices-not-getting-the-latest-feature-updates)
 - [Why do I see 0x80180014 during Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
@@ -177,6 +178,26 @@ Workarounds before the fix:
 - If you can’t safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 [Back to list](#list)
+
+## Resetting a device with low space doesn't reset
+
+When resetting a device that has low disk space, under 6 GB of free space, the user will find that it fails to reset. Instead it will start the restart process but fail to complete, resulting in the user needing to reflash the device to use it again.
+
+### Who is affected - Low space reset
+
+- Devices that are lower than 6 GB in space and that reset via the Settings app.
+- Devices that are lower than 6 GB in space and, which are issued a remote wipe from Intune
+
+### Who is not affected - Low space reset
+
+- Devices that are reset with sufficient free space over 6 GB
+- Devices that are wiped remotely with sufficient free space over 6 GB
+- Devices that are flashed via ARC
+
+### Workaround - Low space reset
+
+- Delete files or apps until you have more than 6 GB of free storage space on the device. You can check free space via **Settings** -> **System** -> **Storage**. While there you can enable or run storage sense to help you clear up space more easily.
+- [Reflash the device using manual flashing mode](hololens-recovery.md#manual-flashing-mode-procedure). This can be done to either bypass making free space, or to recover from the bad state created by resetting with low space.
 
 ## Remote Wipe doesn't remove device from Intune
 
