@@ -72,6 +72,16 @@ What makes the HoloLens 2 so powerful?
 
 :::row:::
     :::column:::
+        [<img src="images/TeamsInGuides-OverviewImage-1536x864.jpg" alt="Eaton Vehicle Group" width=350px>](https://aka.ms/guidesupdates22)
+    :::column-end:::
+    :::column span="2":::
+        ### [Holographic Teams features empower hybrid collaboration in the industrial metaverse.](https://aka.ms/guidesupdates22)
+        HoloLens 2 customers are using mixed reality to expedite the ways they ensure process compliance, improve efficiency, and learn on the job with Microsoft Teams features in Dynamics 365 Guides.
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
         [<img src="images/eaton.png" alt="Eaton Vehicle Group" width=350px>](https://customers.microsoft.com/en-us/story/1406696349549504197-eaton-vehicle-group-dynamics-365-mixed-reality)
     :::column-end:::
     :::column span="2":::
