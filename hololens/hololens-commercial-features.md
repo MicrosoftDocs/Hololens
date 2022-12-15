@@ -1,9 +1,9 @@
 ---
 title: HoloLens 2 capabilities and solutions
 description: Learn about the Microsoft HoloLens commercial features for businesses to manage HoloLens devices. 
-author: evmill
-ms.author: millerevan
-ms.date: 11/11/2021
+author: qianw211
+ms.author: qianwen
+ms.date: 12/13/2022
 ms.localizationpriority:
 ms.custom: 
 - CI 111456
@@ -69,6 +69,16 @@ What makes the HoloLens 2 so powerful?
 [!INCLUDE [solutions](includes/hlsolutions.md)]
 
 ## How HoloLens 2 is transforming industries
+
+:::row:::
+    :::column:::
+        [<img src="images/TeamsInGuides-OverviewImage-1536x864.jpg" alt="Microsoft Teams on HoloLens" width=350px>](https://aka.ms/guidesupdates22)
+    :::column-end:::
+    :::column span="2":::
+        ### [Holographic Teams features empower hybrid collaboration in the industrial metaverse.](https://aka.ms/guidesupdates22)
+        HoloLens 2 customers are using mixed reality to expedite the ways they ensure process compliance, improve efficiency, and learn on the job with Microsoft Teams features in Dynamics 365 Guides.
+    :::column-end:::
+:::row-end:::
 
 :::row:::
     :::column:::
