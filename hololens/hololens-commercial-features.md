@@ -72,7 +72,7 @@ What makes the HoloLens 2 so powerful?
 
 :::row:::
     :::column:::
-        [<img src="images/TeamsInGuides-OverviewImage-1536x864.jpg" alt="Eaton Vehicle Group" width=350px>](https://aka.ms/guidesupdates22)
+        [<img src="images/TeamsInGuides-OverviewImage-1536x864.jpg" alt="Microsoft Teams on HoloLens" width=350px>](https://aka.ms/guidesupdates22)
     :::column-end:::
     :::column span="2":::
         ### [Holographic Teams features empower hybrid collaboration in the industrial metaverse.](https://aka.ms/guidesupdates22)
