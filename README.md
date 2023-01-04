@@ -10,7 +10,7 @@ Contributors who only make infrequent or small updates can edit the file directl
 
 1. Make sure you're signed in to GitHub.com with your GitHub account.
 2. Browse to the page you want to edit on Microsoft Learn.
-3. On the right-hand side of the page, click **Edit** (pencil icon).
+3. On the right-hand side of the page, click <kbd>Edit</kbd> (pencil icon).
 
    ![Edit button on Microsoft Learn.](https://learn.microsoft.com/compliance/media/quick-update-edit.png)
 
