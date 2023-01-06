@@ -49,7 +49,7 @@ To help provide clarity this release notes page will only provide information fo
 
 To check what version your HoloLens is on, open the Settings app and select **System** -> **About** (depending on how big your window is you may need to scroll down to the bottom to see the About page.)
 
-<img src="images/HL2-version-number.jpg" width="500px" alt="SCreen shot of HoloLens version number in the Settings app">
+<img src="images/hl2-version-number-settings.jpg" width="500px" alt="SCreen shot of HoloLens version number in the Settings app">
 
 ### How to get specific operating system version on HoloLens?
 
