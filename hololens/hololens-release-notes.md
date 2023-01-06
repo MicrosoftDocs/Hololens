@@ -45,9 +45,19 @@ To help provide clarity this release notes page will only provide information fo
 | 19041                  | [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) <br> [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) | Nov 2020 <br>  May 2020    | 19041.1128 <br> 19041.1103  |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
 
+### How to find out which operating system version is on HoloLens?
+
 To check what version your HoloLens is on, open the Settings app and select **System** -> **About** (depending on how big your window is you may need to scroll down to the bottom to see the About page.)
 
 <img src="images/HL2-version-number.jpg" width="500px" alt="HoloLens version number">
+
+### How to get specific operating system version on HoloLens?
+
+By default, the OS on HoloLens is typically updated automatically outside of active hours of use, as long as HoloLens is in modern-standby mode and plugged in with power source with an internet connection.
+
+To explicitly check for updates, launch the Settings app and select **Update & Security**, then tap on the **Check for updates** button.
+
+<img src="images/check-for-updates.png" width="500px" alt="Check for updates">
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
