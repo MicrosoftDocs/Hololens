@@ -28,7 +28,7 @@ These are the major feature releases from Windows Holographic, version 2004.
 |------------------------|-------------------------------------|--------------|--------------|
 | 19041                  | [Windows Holographic, version 2004](#windows-holographic-version-2004) <br> [Windows Holographic, version 20H2](#windows-holographic-version-20h2)    | May 2020 <br> Nov 2020     | 19041.1103 <br> 19041.1128   |
 
-## Windows Holographic, version 20H2 - January 2022 Update
+## Windows Holographic, version 20H2 - January 2023 Update
 
 - Build 19041.1214
 
