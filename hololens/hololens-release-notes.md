@@ -49,7 +49,7 @@ To help provide clarity this release notes page will only provide information fo
 
 To check what version your HoloLens is on, open the Settings app and select **System** -> **About** (depending on how big your window is you may need to scroll down to the bottom to see the About page.)
 
-<img src="images/HL2-version-number.jpg" width="500px" alt="HoloLens version number">
+<img src="images/HL2-version-number.jpg" width="500px" alt="SCreen shot of HoloLens version number in the Settings app">
 
 ### How to get specific operating system version on HoloLens?
 
@@ -57,7 +57,7 @@ By default, the OS on HoloLens is typically updated automatically outside of act
 
 To explicitly check for updates, launch the Settings app and select **Update & Security**, then tap on the **Check for updates** button.
 
-<img src="images/check-for-updates.png" width="500px" alt="Check for updates">
+<img src="images/check-for-updates.png" width="500px" alt="Screenshot of how to check for updates in the Settings app">
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
