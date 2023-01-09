@@ -2,6 +2,14 @@
 
 
 
+## Week of January 02, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/6/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+
+
 ## Week of December 12, 2022
 
 
