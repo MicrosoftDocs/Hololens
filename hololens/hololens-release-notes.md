@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
-ms.date: 11/8/2022
+ms.date: 1/6/2023
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -61,6 +61,15 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+## Windows Holographic, version 22H2 - January 2023 Update
+
+- Build 20348.1535
+
+Improvements and fixes in the update:
+
+- Resolved an issue that in some cases prevented the two-hand start gesture (wrist tap) from operating correctly.
+- Updated the behavior of AADGroupMembershipCacheValidityInDays so on cache expiry so on AAD group membership check for sign-in user is made immediately.
 
 ## Windows Holographic, version 22H2 - December 2022 Update
 
