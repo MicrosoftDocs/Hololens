@@ -69,7 +69,6 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 Improvements and fixes in the update:
 
 - Resolved an issue that in some cases prevented the two-hand start gesture (wrist tap) from operating correctly.
-- Updated the behavior of AADGroupMembershipCacheValidityInDays so on cache expiry so on AAD group membership check for sign-in user is made immediately.
 
 ## Windows Holographic, version 22H2 - December 2022 Update
 
