@@ -2,6 +2,15 @@
 
 
 
+## Week of January 09, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/10/2023 | [HoloLens 2 release notes for Windows Holographic, version 2004](/hololens/hololens-release-notes-2004) | modified |
+| 1/10/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+
+
 ## Week of January 02, 2023
 
 
@@ -18,11 +27,3 @@
 | 12/13/2022 | [Best Practices for creating ‘Experiences’ with HoloLens 2](/hololens/hololens-best-practices-experiences) | added |
 | 12/13/2022 | [Maintain HoloLens devices](/hololens/hololens-maintaining-devices) | added |
 | 12/15/2022 | [HoloLens 2 capabilities and solutions](/hololens/hololens-commercial-features) | modified |
-
-
-## Week of December 05, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/5/2022 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
