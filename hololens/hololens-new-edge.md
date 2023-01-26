@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
 manager: yannisle
+ms.date: 04/01/2021
 ---
 
 # Introducing the new Microsoft Edge
