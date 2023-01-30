@@ -4,9 +4,9 @@ description: Learn how to configure CSPs, policy, and device management using Mo
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.date: 09/16/2020
 ms.reviewer: lavinds
 manager: yannisle

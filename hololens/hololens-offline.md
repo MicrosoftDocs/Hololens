@@ -5,8 +5,8 @@ keywords: hololens, offline, OOBE
 audience: ITPro
 ms.date: 07/01/2019
 ms.assetid: b86f603c-d25f-409b-b055-4bbc6edcd301
-author: Teresa-Motiv
-ms.author: v-tea
+author: Typride
+ms.author: tmilligan
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -61,15 +61,23 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 |                                                     | r.manage.microsoft.com                                              |
 |                                                     | tile-service.weather.microsoft.com                                  |
 |                                                     | settings-win.data.microsoft.com                                     |
+|  Windows Autopilot for HoloLens 2                   | *.microsoftaik.azure.net                                            |
+|                                                     | enterpriseregistration.windows.net                                  |
+|                                                     | aadcdn.msauth.net                                                   |
+|                                                     | aadcdn.msauthimages.net                                             |
+|                                                     | aadcdn.msftauth.net                                                 |
+|                                                     | aadcdn.msftauthimages.net                                           |
+|                                                     | acctcdn.msftauth.net                                                |
+|                                                     | acctcdn.msauth.net                                                  |
 | Certificates                                        | activation-v2.sls.microsoft.com/*                                   |
 |                                                     | crl.microsoft.com/pki/crl/*                                         |
 |                                                     | ocsp.digicert.com/*                                                 |
-|                                                     | https://www.microsoft.com/pkiops/*                                          |
+|                                                     | `https://www.microsoft.com/pkiops/`*                                          |
 | Cortana and Search                                  | store-images.*microsoft.com                                         |
-|                                                     | www.bing.com/client                                                 |
+|                                                     | `www.bing.com/client`                                                 |
 |                                                     | www.bing.com                                                        |
-|                                                     | www.bing.com/proactive                                              |
-|                                                     | www.bing.com/threshold/xls.aspx                                     |
+|                                                     | `www.bing.com/proactive`                                              |
+|                                                     | `www.bing.com/threshold/xls.aspx `                                    |
 |                                                     | exo-ring.msedge.net                                                 |
 |                                                     | fp.msedge.net                                                       |
 |                                                     | fp-vp.azureedge.net                                                 |
@@ -141,6 +149,7 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 |                                                     | *.windowsupdate.com                                                 |
 |                                                     | *.delivery.mp.microsoft.com                                         |
 |                                                     | *.update.microsoft.com                                              |
+
 
 
 

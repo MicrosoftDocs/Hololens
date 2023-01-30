@@ -4,10 +4,10 @@ description: You can configure HoloLens to be shared by multiple Azure Active Di
 ms.prod: hololens
 ms.sitesec: library
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 9/23/2021
+ms.localizationpriority:
+ms.date: 1/4/2022
 ms.reviewer: anisgup
 manager: sean-kerawala
 appliesto:
@@ -62,6 +62,7 @@ When sharing the device between multiple users, there are some physical consider
 - Consider how you plan to [clean the device](hololens2-maintenance.md) between users.
 - For a device with a single shared user if using a shared PIN/password for a single user, don't put the PIN/password on the side of the device.
 - For multiple devices with a single shared user, use various PINs/passwords.
+- Label your devices so users can find ones they already have used. Signing back into a previously used device to launch an app can take a little as 30 seconds with Iris, PIN, or FIDO2 security keys. Setting up a new device, either OOBE or adding a new user, and then launching an app can take as much as 5 minutes.
 
 ## Share with multiple people, each using their own account
 
@@ -84,7 +85,7 @@ To use HoloLens, each user follows these steps:
 1. Use your Azure AD account credentials to sign in to the device.  
     - If it's the first time you have used the device, it will ask you to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
     - If you previously used the device:
-        - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
+        - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes-2004.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
         - Previous builds will need manual calibration to adjust to your eyes.
 
 > [!TIP]

@@ -15,7 +15,6 @@ appliesto:
 - HoloLens 2
 ---
 
-
 # Enterprise Enrollment of HoloLens Devices in MAC address restricted Wi-Fi Environment
 
 This document will describe a common scenario we have identified within customer environments where the Wi-Fi is restricted by MAC addresses, or certificates are required to join Wireless networks.
@@ -49,7 +48,7 @@ There are many ways to improve this situation, depending on the infrastructure a
 
 ## Provisioning Package with Ethernet Adaptor
 
-> [!NOTE] 
+> [!NOTE]
 > If the wired network is also subject to MAC restrictions, then the MAC address of the USB-C Hub + Ethernet adaptor will also need to be pre-approved. Care should be taken with this adapter as it will allow access to the network from other devices.
 
 ### Requirements
@@ -63,7 +62,7 @@ There are many ways to improve this situation, depending on the infrastructure a
 
 ### Process
 
-The Process may vary depending on the software level of the device. If the device has the [May 2004 update](hololens-release-notes.md#windows-holographic-version-2004), follow the steps below.
+The Process may vary depending on the software level of the device. If the device has the [May 2004 update](hololens-release-notes-2004.md#windows-holographic-version-2004), follow the steps below.
 
 1. Place the provisioning package onto the root of a USB stick, and plug into the Hub.
 2. Connect Ethernet cable to the Hub + Ethernet adapter.
@@ -72,7 +71,7 @@ The Process may vary depending on the software level of the device. If the devic
 5. Press the **Volume Down and Power button** to apply the Provisioning Package.
 6. The technician can now follow OOBE, and when complete, open the Settings App to retrieve the MAC Address of the device.
 
-If the device has an OS build before the [May 2004 update](hololens-release-notes.md#windows-holographic-version-2004), follow the steps below.
+If the device has an OS build before the [May 2004 update](hololens-release-notes-2004.md#windows-holographic-version-2004), follow the steps below.
 
 1. Turn on the HoloLens and plug the device into a PC.
 2. The device should show up on the PC as a file storage device.
@@ -97,12 +96,13 @@ This will allow a "Single touch" of the device, to apply the correct provisionin
 - Intune set up and enabled for the customer Tenant
 - Device registered for Autopilot and imported into the Customer Tenant
 - Intune Policies defined for the device:
-   - Containing Wireless Network information and Certificate
-   - Containing any other required provisioning settings
+  - Containing Wireless Network information and Certificate
+  - Containing any other required provisioning settings
 
 This will allow a customer with advanced networking requirements to enroll the devices in a hands-off, scalable approach
 
 Additional pre-requisites will be needed as below:
+
 1. [Enable the Tenant for the Autopilot preview](hololens2-autopilot.md).
 1. Create the HoloLens policies to replace the Provisioning Package within Intune.
 1. Create the HoloLens Intune Policies.

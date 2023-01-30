@@ -76,6 +76,8 @@ landingContent:
             url: hololens2-corp-connected-overview.md
           - text: Deployment Guide - Offline secure
             url: hololens-common-scenarios-offline-secure.md
+          - text: Deployment Guide - Shared HoloLens 2 with Remote Assist
+            url: hololens2-deploying-remote-assist-using-shared-identity.md         
 
  # Card
   - title: Mixed Reality Partner Resources
@@ -89,7 +91,7 @@ landingContent:
           - text: Mixed Reality Partner Blog
             url: https://aka.ms/MRPartnerBlog
           - text: Start designing and prototyping
-            url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/design
+            url: /windows/mixed-reality/design/design
           - text: Moving Platform Mode
             url: /hololens/hololens2-moving-platform
           - text: Environmental Considerations 

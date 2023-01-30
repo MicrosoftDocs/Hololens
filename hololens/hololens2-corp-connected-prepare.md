@@ -2,8 +2,9 @@
 title: Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Prepare
 description: Learn how to prepare for enrolling HoloLens 2 devices over a corporate connected network with Dynamics 365 Guides.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
-author: joyjaz
-ms.author: v-jjaswinski
+author: evmill
+ms.author: millerevan
+manager: lolab
 ms.reviewer: aboeger
 ms.date: 03/24/2021
 ms.prod: hololens
@@ -11,7 +12,6 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
-manager: yannisle
 appliesto:
 - HoloLens 2
 ---
@@ -66,7 +66,7 @@ The following services are required for SCEP deployment, with the exception of t
 - [NDES Server role](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11))
 - [Microsoft Intune Connector](/mem/intune/protect/certificates-scep-configure#install-the-microsoft-intune-connector)
 
-You must also publish your NDES URL external to your corporate network using [Azure AD application proxy or Web Access Proxy](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application). You can also use another reverse proxy of your choice.
+You must also publish your NDES URL external to your corporate network using [Azure AD application proxy or Web Access Proxy](/azure/active-directory/app-proxy/what-is-application-proxy). You can also use another reverse proxy of your choice.
 
 ![SCEP data flow.](./images/hololens2-scep-info-flow.png)
 

@@ -2,14 +2,16 @@
 title: Introducing the new Settings app
 description: Learn about the new Settings app
 author: joyjaz
-ms.author: v-jjaswinski
+ms.author: millerevan
 keywords: HoloLens, settings, app picker, volume
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
 manager: yannisle
+ms.date: 04/01/2021
 ---
+
 # New Settings app
 
 With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), we're introducing a new version of the Settings app. The new Settings app includes new features and expanded settings for HoloLens 2 in the following areas: Sound, Power & sleep, Network & Internet, Apps, Accounts, Ease of Access, and more.

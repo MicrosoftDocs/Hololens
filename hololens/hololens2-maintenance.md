@@ -1,8 +1,8 @@
 ---
 title: HoloLens 2 cleaning FAQ
 description: Get up-to-date answers for all your commonly asked questions for cleaning and maintaining your HoloLens 2 device.
-author: Teresa-Motiv
-ms.author: v-tea
+author: evmill
+ms.author: millerevan
 ms.date: 4/14/2020
 ms.prod: hololens
 ms.topic: article
@@ -10,7 +10,7 @@ ms.custom:
 - CI 115560
 - CSSTroubleshooting
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority:
 keywords: 
 manager: jarrettr
 appliesto:
@@ -28,13 +28,26 @@ appliesto:
 
 <!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
+**To hold the device**
+
+- Do this:
+
+   ![Holding by both the hands](images/hl2-holding-right-1.jpg)
+   ![Holding by overhead strap](images/hl2-holding-right-2.jpg)
+
+- Don't do this:
+
+   ![Holding by one hand](images/hl2-holding-wrong-1.jpg)
+   ![Holding by visor](images/hl2-holding-wrong-2.jpg)
+   ![Holding by adjustment knob](images/hl2-holding-wrong-3.jpg)
+
 **To clean the device**
 
 1. Remove any dust by using a dry, lint-free microfiber cloth to gently wipe the surface of the device.
 
    ![Clean while holding from the brow pad.](images/hl2-cleaning.png)
 
-2. Lightly moisten the cloth by using medical "70%" isopropyl alcohol, and then use the moistened cloth to gently wipe the surface of the device.
+2. Lightly moisten the cloth by using medical 70% isopropyl alcohol, and then use the moistened cloth to gently wipe the surface of the device.
 
 3. Let the device dry completely.
 
@@ -48,19 +61,19 @@ appliesto:
 No. Lens cleaners can be abrasive to the coatings on the visor. To clean the visor, follow these steps:  
 
 1. Remove any dust by using a dry lint-free microfiber cloth to gently wipe the visor.
-1. Lightly moisten a cloth by using medical "70%" isopropyl alcohol, and then gently wipe the visor.
+1. Lightly moisten a cloth by using medical 70% isopropyl alcohol, and then gently wipe the visor.
 1. Let the visor dry completely.
 
 ## Can I use disinfecting wipes to clean the device?
 
-Yes, if the wipes do not contain bleach. You can use non-bleach disinfecting wipes to [gently wipe the HoloLens surfaces](#hololens-2-use-and-care).  
+Yes, if the wipes do not contain corrosives (e.g. bleach and hydrogen peroxide). You can use non-corrosive disinfecting wipes to [gently wipe the HoloLens surfaces](#hololens-2-use-and-care). Default to 70% isopropyl alchohol wipes for disinfecting the device if it is unclear that another wipe is corrosive.
 
 > [!CAUTION]  
-> Avoid using disinfecting wipes that contains bleach to clean the HoloLens surfaces. It is acceptable to use bleach wipes in critical situations, when nothing else is available. However, bleach may damage the HoloLens visor or other surfaces.
+> Avoid using disinfecting wipes that contains corrosives to clean the HoloLens surfaces. It is acceptable to use corrosive wipes in critical situations, when nothing else is available. However, corrosives may damage the HoloLens visor or other surfaces.
 
-## Can I use alcohol to clean the device?
+## Can I use alcohol to clean and disinfect the device?
 
-Yes. You can use a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor. Lightly moisten the cloth by using a mix of isopropyl alcohol and water, and then gently wipe the surface of the device
+Yes. You can use a solution of 70% isopropyl alcohol and water to clean the hard surfaces of the device, including the visor. Lightly moisten the cloth by using a mix of isopropyl alcohol and water, and then gently wipe the surface of the device
 
 ## Is the brow pad replaceable?
 
@@ -71,6 +84,13 @@ Yes. The brow pad is magnetically attached to the device. To detach it, pull it 
 ## How can I clean the brow pad?
 
 To clean the brow pad, wipe it by using a cloth that's moistened by using water and a mild antibiotic soap. Let the brow pad dry completely before you use it again.
+
+## Can I sterilize the device using heat or chemical sterilization methods?
+
+No. Methods of sterilization, such as dry heat and vapor hydrogen peroxide, should not be used.
+
+> [!CAUTION]
+> Avoid using heat and chemical sterilization methods with the HoloLens as they can damage the device.
 
 ## Can I use ultraviolet (UV) light to sanitize the device?
 

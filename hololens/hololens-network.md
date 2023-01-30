@@ -1,15 +1,16 @@
 ---
 title: Connect HoloLens to a network
-description: Learn how to setup and connect to the internet with HoloLens and how to identify the device IP address.
+description: Learn how to set up and connect to the internet with HoloLens and how to identify the device IP address.
 ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
-author: mattzmsft
-ms.author: mazeller
+author: evmill
+ms.author: millerevan
+ms.reviewer: ruizhao
+manager: lolab
 keywords: HoloLens, wifi, wireless, internet, ip, ip address
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: 
-manager: jarrettr
+ms.date: 8/23/2022
 ---
 
 # Connect HoloLens to a network
@@ -25,14 +26,14 @@ Read more about [using HoloLens offline](hololens-offline.md).
 
 The first time you use your HoloLens, you'll be guided through connecting to a Wi-Fi network. If you have trouble connecting to Wi-Fi during setup, make sure that your network is either an open, password-protected network or a captive portal network. Also, confirm that the network doesn't require you to use a certificate to connect. After setup, you can connect to other types of Wi-Fi networks.
 
-On HoloLens 2 devices, a user may also [use a USB-C to Ethernet adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) to connect directly to Wi-Fi to help assist in setting up the device. Once the device has been set up a user may continue to use the adapter or they may disconnect the device from the adapter and [connect to wi-fi after set up](hololens-network.md#connecting-to-wi-fi-after-setup). 
+On HoloLens 2 devices, users may also [use a USB-C to Ethernet adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) to connect directly to Wi-Fi to help assist in setting up the device. Once the device has been set up, users may continue to use the adapter, or they may disconnect the device from the adapter and [connect to wi-fi after setup](hololens-network.md#connecting-to-wi-fi-after-setup).
 
 ## Connecting to Wi-Fi after setup
 
-1. Preform the **Start gesture** and select **Settings**. The Settings app will be auto-placed in front of you.
+1. Perform the **Start gesture** and select **Settings**. The Settings app will be auto-placed in front of you.
 1. Select **Network & Internet** > **Wi-Fi**. Make sure Wi-Fi is turned on. If you don't see your network, scroll down the list.
 1. Select a network, then select **Connect**.
-1. If you are prompted for a network password type it and then select **Next**.
+1. If you are prompted for a network password, type it and select **Next**.
 
 ![HoloLens Wi-Fi settings.](./images/hololens-2-wifi-settings.jpg)
 
@@ -45,13 +46,28 @@ To confirm you are connected to a Wi-Fi network, check the Wi-Fi status in the *
 > If Wi-Fi is not available, you can also [connect to Cellular and 5G networks](hololens-cellular.md).
 
 > [!IMPORTANT]
-> By design, users cannot fine tune the Wi-Fi roaming behavior of the HoloLens 2 - **the only way to refresh the Wi-Fi list is to toggle the Wi-Fi Off and On**. This prevents many issues, like where a device can remain "stuck" to an AP once it is out of range.
+> By design, users cannot fine-tune the Wi-Fi roaming behavior of the HoloLens 2. **The only way to refresh the Wi-Fi list is to toggle the Wi-Fi Off and On**. This prevents many issues, like where a device can remain "stuck" to an AP once it is out of range.
+
+## HoloLens 2 Wi-Fi module
+
+When connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications to ensure good roaming between Wi-Fi terminals.
+
+- Chipset: SDM850 with WCN3990 Wi-Fi modules. 802.11 AC wave 1
+- Channel bandwidths: 2.4GHz supports 20 MHz, 5 GHz supports 20, 40, and 80 MHz
+- Spatial Streams: 2x2 MIMO
+- Supports 802.11r (fast roaming), RSSI to trigger roaming is ~70dBm
+
+The Wi-Fi signal level directly affects roaming because throughput requirements vary by use case. Consider the following specifications when setting up Wi-Fi terminals.
+
+- [Web access](/power-platform/admin/web-application-requirements)
+- [Azure remote rendering](/azure/remote-rendering/reference/network-requirements)
+- [Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements)
 
 ## Connect HoloLens to Enterprise Wi-Fi Network
 
-Enterprise Wi-Fi profiles use Extensible Authentication Protocol (EAP) to authenticate Wi-Fi connections. HoloLens Enterprise Wi-Fi profile can be configured through MDM or provisioning package created by [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-packages).
+Enterprise Wi-Fi profiles use Extensible Authentication Protocol (EAP) to authenticate Wi-Fi connections. The HoloLens Enterprise Wi-Fi profile can be configured through MDM or a provisioning package created by [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-packages).
 
-For Microsoft Intune managed device, refer to [Intune](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) for configuration instructions.
+For a Microsoft Intune managed device, refer to [Intune](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) for configuration instructions.
 
 To create a Wi-Fi provisioning package in WCD, a pre-configured Wi-Fi profile .xml file is required. Here is a sample Wi-Fi profile for WPA2-Enterprise with EAP-TLS authentication:
 
@@ -114,32 +130,58 @@ To create a Wi-Fi provisioning package in WCD, a pre-configured Wi-Fi profile .x
 </WLANProfile> 
 ```
 
-
-Server root CA certificate and client certificate may need to be provisioned on the device depending on the EAP type.
+Depending on the EAP type, a server root CA certificate and client certificate may have to be provisioned on the device.
 
 Additional resources:
 
 - WLANv1Profile Schema: [[MS-GPWL]: Wireless LAN Profile v1 Schema | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if you are having problems connecting to your Wi-Fi.
+Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if you are having trouble connecting to your Wi-Fi.
+
+## HoloLens 2 protocols and ports
+
+This table lists IP protocols and TCP/UDP ports used by HoloLens 2 system services.
+
+|      Port      |      Protocol      |      Application protocol                |      System service name            |
+|----------------|--------------------|------------------------------------------|-------------------------------------|
+|     N/A        |     ICMP           |     ICMP (IP protocol 1)                 |     TCP/IP                          |
+|     N/A        |     IGMP           |     IGMP (IP protocol 2)                 |     TCP/IP                          |
+|     N/A        |     IPv6           |     IPv6 Encapsulation                   |     TCP/IP                          |
+|     N/A        |     ESP            |     IPsec ESP (IP   protocol 50)         |     Routing and Remote   Access     |
+|     N/A        |     AH             |     IPsec AH (IP   protocol 51)          |     Routing and Remote   Access     |
+|     N/A        |     IPv6-ICMP      |     ICMP for IPv6 (IP   protocol 58)     |     TCP/IP                          |
+|     53         |     UDP            |     DNS                                  |     DNS Client                      |
+|     67         |     UDP            |     DHCP                                 |     TCP/IP                          |
+|     80         |     TCP            |     HTTP                                 |     Apps & Services                 |
+|     123        |     UDP            |     SNTP                                 |     Windows Time                    |
+|     443        |     TCP            |     HTTPS                                |     Apps & Services                 |
+|     500        |     UDP            |     IPSec IKE                            |     Routing and Remote   Access     |
+|     546        |     UDP            |     DHCPv6                               |     TCP/IP                          |
+|     1701       |     UDP            |     L2TP                                 |     Routing and Remote   Access     |
+|     1900       |     UDP            |     SSDP                                 |     SSDP Discovery   Service        |
+|     2869       |     TCP            |     SSDP event   notification            |     SSDP Discovery   Service        |
+|     4500       |     UDP            |     NAT-T                                |     Routing and Remote   Access     |
+|     5353       |     UDP            |     mDNS                                 |     DNS Client                      |
+|     5355       |     UDP            |     LLMNR                                |     DNS Client                      |
+|     7236       |     TCP            |     Mixed Reality   Capture              |     MRC Service                     |
+|     7236       |     UDP            |     Mixed Reality   Capture              |     MRC Service                     |
 
 ## Configure Network Proxy
 
-This section covers network proxy for HoloLens OS and Universal Windows Platform (UWP) Apps using Windows HTTP stack. Applications using non-Windows HTTP stack may have their own proxy configuration and handling. 
+This section covers network proxy for HoloLens OS and Universal Windows Platform (UWP) Apps using Windows HTTP stack. Applications using non-Windows HTTP stack may have their own proxy configuration and handling.
 
-### Proxy Configurations 
+### Proxy Configurations
 
-- Proxy Auto-Config (PAC) script: a [PAC file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) (opens a non-Microsoft site) contains a JavaScript function FindProxyForURL(url, host). 
+- Proxy Auto-Config (PAC) script: a [PAC file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) (opens a non-Microsoft site) contains a JavaScript function FindProxyForURL(url, host).
 - Static Proxy: in the form of Server:Port.  
-- Web Proxy Auto-Discovery Protocol (WPAD): provide URL of proxy configuration file through DHCP or DNS. 
+- Web Proxy Auto-Discovery Protocol (WPAD): provide URL of proxy configuration file through DHCP or DNS.
 
-### Proxy Provisioning Methods 
+### Proxy Provisioning Methods
+
 There are three ways to provision proxies:
 
- 
-
-1.  **Settings UI:** 
+1. **Settings UI:**
     1. Per-user proxy (20H2 or earlier):
         1. Open the Start menu and select Settings.
         2. Select Network & Internet and then Proxy on the left menu.
@@ -154,12 +196,12 @@ There are three ways to provision proxies:
           1. Enter the IP address of the proxy server.
           1. Enter the port number.
           1. Click Apply.
-        
- 2. **MDM** 
+
+2. **MDM**
      1. Intune - Use these [steps](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) to configure proxy in Intune. You will need to scroll to the bottom of the section.
      1. Other 3rd party MDM solutions - Use a [WiFi CSP](/windows/client-management/mdm/wifi-csp).
 
-3. **PPKG** 
+3. **PPKG**
     1. Open Windows Configuration Designer
     1. Click on Advanced Provisioning, enter the name for your new Project and click Next.
     1. Select Windows Holographic (HoloLens 2) and click Next.
@@ -177,14 +219,12 @@ The most likely CSPs that will be applied to your HoloLens 2 are:
 
 [Other CSPs supported in HoloLens devices](/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
-
-
-
-
 ## VPN
-A VPN connection can help provide a more secure connection and access to your company's network and the Internet. HoloLens 2 supports built-in VPN client and Universal Windows Platform (UWP) VPN plug-in. 
+
+A VPN connection can help provide a more secure connection and access to your company's network and the Internet. HoloLens 2 supports built-in VPN client and Universal Windows Platform (UWP) VPN plug-in.
 
 Supported Built-in VPN protocols:
+
 - IKEv2
 - L2TP
 - PPTP
@@ -198,19 +238,20 @@ Learn more about [how to configure VPN](https://support.microsoft.com/help/20510
 ### VPN via UI
 
 VPN is not enabled by default but can be enabled manually by opening **Settings** app and navigating to  **Network & Internet -> VPN**.
+
 1. Select a VPN provider.
-1. Create a connection name. 
+1. Create a connection name.
 1. Enter your server name or address.
 1. Select the VPN type.
-1. Select type of sign-in info. 
+1. Select type of sign-in info.
 1. Optionally add user name and password.
-1. Apply the VPN settings. 
+1. Apply the VPN settings.
 
 ![HoloLens VPN settings.](./images/vpn-settings-ui.jpg)
 
 ### VPN set via Provisioning Package
 
-> [!TIP] 
+> [!TIP]
 > In our Windows Holographic, version 20H2 we fixed a proxy configuration issue for VPN connection. Please consider upgrading devices to this build if you intend to use this flow.
 
 1. Launch Windows Configuration Designer.
@@ -223,11 +264,11 @@ VPN is not enabled by default but can be enabled manually by opening **Settings*
     1. For Native profile, select **NativeProtocolType**, then configure server, routing policy, authentication type and other settings.
     1. For "Third Party" profile, configure server URL, VPN plug-in App package family name (only 3 predefined) and custom configurations.
 1. Export your package.
-1. Connect your HoloLens and copy the .ppkg file to the device. 
+1. Connect your HoloLens and copy the .ppkg file to the device.
 1. On HoloLens, apply the VPN .ppkg by opening the Start menu and selecting **Settings** -> **Account** -> **Access work or school** -> **Add or remove provisioning package** -> Select your VPN package.
 
-
 ### Setting up VPN via Intune
+
 Just follow the Intune documents to get started. When following these steps please keep in mind the built-in VPN protocols that HoloLens devices support. 
 
 [Create VPN profiles to connect to VPN servers in Intune](/mem/intune/configuration/vpn-settings-configure).
@@ -237,7 +278,9 @@ Just follow the Intune documents to get started. When following these steps plea
 When done please remember to [assign the profile](/mem/intune/configuration/device-profile-assign).
 
 ### VPN via 3rd party MDM solutions
+
 3rd party VPN connection example:
+
 ```xml
 <!-- Configure VPN Server Name or Address (PhoneNumber=) [Comma Separated]-->
       <Add>
@@ -273,6 +316,7 @@ When done please remember to [assign the profile](/mem/intune/configuration/devi
 ```
 
 Native IKEv2 VPN example:
+
 ```xml
       <Add>
         <CmdID>10001</CmdID>
@@ -326,6 +370,7 @@ Native IKEv2 VPN example:
         </Item>
       </Add>
 ```
+
 ## Disabling Wi-Fi on HoloLens (1st gen)
 
 ### Using the Settings app on HoloLens
@@ -355,17 +400,18 @@ Native IKEv2 VPN example:
 
 ### By using voice commands
 
-Depending on your devices build you can either use built in voice commands or Cortana to display your IP address. On builds after [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) speak "What's my IP address?" and it will be displayed. For earlier builds or HoloLens (1st gen) say "Hey Cortana, What's my IP address?" and Cortana will display and read out your IP address.
+Depending on your devices build you can either use built in voice commands or Cortana to display your IP address. On builds after [19041.1103](hololens-release-notes-2004.md#windows-holographic-version-2004) speak "What's my IP address?" and it will be displayed. For earlier builds or HoloLens (1st gen) say "Hey Cortana, What's my IP address?" and Cortana will display and read out your IP address.
 
 ### By using Windows Device Portal
 
-1. In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
+1. In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal#networking).
 1. Navigate to the **Networking** section.  
    This section displays your IP address and other network information. By using this method, you can copy and paste of the IP address on your development PC.
 
 ## Change IP Address to static address
+
 ### By using Settings
- 
+
 1. Open the **Start** menu.
 1. Select the **Settings** app from **Start** or from the **All Apps** list on the right of the **Start** menu. The **Settings** app will be auto-placed in front of you.
 1. Select **Network & Internet**.
@@ -380,4 +426,4 @@ Depending on your devices build you can either use built in voice commands or Co
 1. Select the **IPv4 Configuration** button.
 1. Select **Use the following IP address** and input the desired TCP/IP configuration.
 1. Select **Use the following DNS server addresses** and enter the Preferred and Alternate DNS server addresses, if needed.
-1. Click **Save**. 
+1. Click **Save**.

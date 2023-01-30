@@ -7,11 +7,11 @@ manager: yannisle
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.reviewer: aboeger
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority:
 appliesto:
 - HoloLens 2
 ---

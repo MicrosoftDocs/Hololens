@@ -2,8 +2,9 @@
 title: HoloLens 2 capabilities and solutions
 description: Learn about the Microsoft HoloLens commercial features for businesses to manage HoloLens devices. 
 author: qianw211
-ms.author: v-qianwen
-ms.date: 9/1/2021
+ms.author: qianwen
+ms.date: 12/13/2022
+ms.localizationpriority:
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -11,9 +12,8 @@ ms.topic: article
 audience: ITPro
 ms.prod: hololens
 ms.sitesec: library
-ms.localizationpriority: high
-ms.reviewer: 
-manager: skerewa
+ms.reviewer: sekerawa
+manager: sekerawa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, commercial, features, mdm, mobile device management, kiosk mode, applications, identity, Bitlocker, iris, Windows Hello, Azure-powered, Autopilot, mixed reality, WDAC
@@ -28,6 +28,22 @@ Thanks to HoloLens 2 and Mixed Reality applications, now workers can collaborate
 Collaborate without boundaries and act with precision to increase employee productivity with mixed reality applications on HoloLens 2. Stay engaged heads-up, hands free longer and more comfortably with built-in voice commands, eye tracking, and world-anchoring for continuous focus on safely completing tasks without errors. Connect with remote colleagues in real-time and work together across an extensive holographic canvas overlayed in your physical environment to quickly resolve issues at the point of work. Realize return on investment (ROI) right out of the box with a robust ecosystem of applications that are supported with the security, reliability, and scalability of Microsoft.  
 
 We hope this article inspires you to think of all the ways in which mixed reality (MR) will benefit your business.
+
+## HoloLens 2 Return on Investment
+
+ISVs that build their mixed reality solutions on Azure are larger and more profitable.
+
+*    264% higher mixed reality practice revenues
+*    28% more mixed reality customers
+*    15% higher mixed reality software gross margins
+
+The commissioned [Forrester Consulting TEI study on HoloLens 2](https://download.microsoft.com/download/e/1/3/e1364937-5f62-4a0c-bb9e-664c270ad4fe/Forrester-Total-Economic-Impact-Mixed-Reality-Microsoft-HoloLens-2_Cover.pdf) estimates the following benefits to adopting HoloLens:
+
+:::image type="content" alt-text="HoloLens 2 Forrester Info Graph" source="./images/forrester-info-graph.png":::
+
+Over half of Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
+
+:::image type="content" alt-text="HoloLens 2 Company ROIs" source="./images/company-rois.png":::
 
 ## HoloLens 2 capabilities
 
@@ -53,6 +69,16 @@ What makes the HoloLens 2 so powerful?
 [!INCLUDE [solutions](includes/hlsolutions.md)]
 
 ## How HoloLens 2 is transforming industries
+
+:::row:::
+    :::column:::
+        [<img src="images/TeamsInGuides-OverviewImage-1536x864.jpg" alt="Microsoft Teams on HoloLens" width=350px>](https://aka.ms/guidesupdates22)
+    :::column-end:::
+    :::column span="2":::
+        ### [Holographic Teams features empower hybrid collaboration in the industrial metaverse.](https://aka.ms/guidesupdates22)
+        HoloLens 2 customers are using mixed reality to expedite the ways they ensure process compliance, improve efficiency, and learn on the job with Microsoft Teams features in Dynamics 365 Guides.
+    :::column-end:::
+:::row-end:::
 
 :::row:::
     :::column:::

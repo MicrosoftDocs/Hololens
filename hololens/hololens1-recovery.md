@@ -6,13 +6,13 @@ keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, H
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.date: 06/01/2020
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)

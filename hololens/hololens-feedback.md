@@ -3,7 +3,7 @@ title: Give us feedback
 description: Create actionable feedback for HoloLens and Windows Mixed Reality developers by using the Feedback Hub.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.date: 9/28/2021
 ms.custom: 
 - CI 116157
@@ -13,7 +13,7 @@ ms.prod: hololens
 ms.topic: article
 keywords: feedback, bug, issue, error, troubleshoot, help
 manager: ranjibb
-ms.localizationpriority: medium
+ms.localizationpriority:
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

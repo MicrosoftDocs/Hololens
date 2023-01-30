@@ -3,16 +3,16 @@ title: Find and save files on HoloLens
 description: Learn how to use File Explorer on HoloLens to open, view, and manage files on your mixed reality device.
 keywords: how-to, file picker, files, photos, videos, pictures, OneDrive, storage, file explorer, hololens
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
-author: mattzmsft
-ms.author: mazeller
-manager: v-miegge
+author: qianw211    
+ms.author: qianwen
+manager: sekerawa
 ms.reviewer: jarrettrenshaw
-ms.date: 12/30/2019
+ms.date: 7/26/2022
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority:
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -30,7 +30,7 @@ Files you create on HoloLens, including photos and videos, are saved directly to
 
 ## View files on HoloLens using File Explorer
 
-> Applies to all HoloLens 2 devices and HoloLens (1st gen) as of the [Windows 10 April 2018 Update (RS4) for HoloLens](/windows/mixed-reality/release-notes-april-2018).
+> Applies to all HoloLens 2 devices and HoloLens (1st gen) as of the [Windows 10 April 2018 Update (RS4) for HoloLens](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018).
 
 Use File Explorer on HoloLens to view and manage files on your device, including 3D objects, documents, and pictures. Go to **Start**  > **All apps**  > **File Explorer** to get started.
 
@@ -49,6 +49,9 @@ You can access photos and videos taken with HoloLens by:
 - uploading photos and videos to cloud storage by syncing your photos and videos to OneDrive.
 - using the Mixed Reality Capture page of the [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture).
 
+> [!TIP]
+> To determine how much free storage space is on your device, go to **Settings** > **System** > **Storage**.
+
 ### Photos app
 
 The Photos app is one of the default apps on the **Start** menu, and comes built-in with HoloLens. Learn more about [using the Photos app to view content](holographic-photos-and-videos.md).
@@ -57,11 +60,13 @@ You can also install the [OneDrive app](https://www.microsoft.com/p/onedrive/9wz
 
 ### OneDrive app
 
-[OneDrive](https://onedrive.live.com/) lets you access, manage, and share your photos and videos with any device and with any user. To access the photos and videos captured on HoloLens, download the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store on your HoloLens. Once downloaded, open the OneDrive app and select **Settings** > **Camera upload**, and turn on **Camera upload**.
+[OneDrive](https://onedrive.live.com/) lets you access, manage, and share your photos and videos with any device. If you're logged in with your personal [Microsoft account](https://account.microsoft.com/), to access the photos and videos captured on HoloLens, download the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store on your HoloLens. Once downloaded, open the OneDrive app and select **Settings** > **Camera upload**, and turn on **Camera upload**.
+
+For more information on automatically uploading your mixed reality photos and videos, see [Share your mixed reality photos and videos](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos).
 
 ### Connect to a PC
 
-If your HoloLens is running the [Windows 10 April 2018 update](/windows/mixed-reality/release-notes-april-2018) or later, you can connect your HoloLens to a Windows 10 PC by using a USB cable to browse photos and videos on the device by using MTP (media transfer protocol). You'll need to make sure the device is unlocked to browse files if you have a PIN or password set up on your device.  
+If your HoloLens is running the [Windows 10 April 2018 update](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) or later, you can connect your HoloLens to a Windows 10 PC by using a USB cable to browse photos and videos on the device by using MTP (media transfer protocol). You'll need to make sure the device is unlocked to browse files if you have a PIN or password set up on your device.  
 
 If you have enabled the [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal), you can use it to browse, retrieve, and manage the photos and videos stored on your device.
 

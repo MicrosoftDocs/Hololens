@@ -1,9 +1,9 @@
 ---
 title: Windows Autopilot Registration Support for HoloLens 2
 description: Learn how to get registration support for Autopilot on HoloLens 2 devices.
-author: joyjaz
-ms.author: v-jjaswinski
-ms.date: 5/20/2021
+author: qianw211
+ms.author: qianwen
+ms.date: 8/1/2022
 ms.prod: hololens
 ms.topic: article
 ms.custom: 
@@ -12,7 +12,7 @@ ms.custom:
 audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
-manager: ylempidakis
+manager: sekerawa
 ---
 # HoloLens 2 Registration Support for Autopilot
 
@@ -34,4 +34,4 @@ The following table details the information you will need to collect *prior* to 
 ## Submit support requests
 
 > [!div class="nextstepaction"]
-> [Submit Autopilot Registration Support for HoloLens 2](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
+> [Submit Autopilot Registration Support for HoloLens 2](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=366a90e9-f67f-d352-8143-a3be7d5514f0)

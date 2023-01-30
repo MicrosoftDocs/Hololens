@@ -3,18 +3,18 @@ title: Supported languages for HoloLens 2
 description: Learn about all the languages HoloLens 2 supports, changing keyboard layouts, and updating the Windows display language.
 ms.prod: hololens
 ms.sitesec: library
-author: Teresa-Motiv
-ms.author: v-tea
+author: evmill
+ms.author: millerevan
+manager: ranjib
+ms.reviewer: wangmax
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.custom: 
 - CI 115225
 - CSSTroubleshooting
 keywords: localize, language support, display language, keyboard language, IME, keyboard layout
-ms.date: 03/12/2020
+ms.date: 03/16/2022
 audience: ITPro
-ms.reviewer: jarrettr
-manager: jarrettr
 appliesto:
 - HoloLens 2
 ---
@@ -34,6 +34,26 @@ HoloLens 2 is localized into the following languages. The localization features 
 - Italian (Italy)
 - Japanese (Japan)
 - Spanish (Spain)
+
+The following table explains what languages and text-to-speech (TTS) voices are available in HoloLens 2.
+
+| Language,   country, or region                     | Male TTS voice | Female TTS voice |
+|----------------------------------------------------|----------------|------------------|
+| Chinese (Simplified) - (zh-CN)                     | Kangkang       | Huihui, Yaoyao   |
+| Cantonese (Traditional, Hong Kong SAR) - (zh-HK)   | Danny          | Tracy    |
+| Chinese (Traditional, Taiwan) - (zh-TW)       |   Zhiwei         | Yating, Hanhan   |
+| Dutch - (nl-NL)                                | Frank          | Not applicable   |
+| English (Australia) - (en-AU)                      | James          | Catherine        |
+| English (Canada) - (en-CA)                         | Richard        | Linda            |
+| English (Great Britain) - (en-GB)            |    George         | Hazel, Susan     |
+| English (United States) - (en-US)                | David, Mark    | Zira             |
+| French (Canada) - (fr-CA)                          | Claude         | Caroline         |
+| French (France) - (fr-FR)                          | Paul           | Hortence, Julie  |
+| German (Germany) - (de-DE)                         | Stefan         | Hedda, Katja        |
+| Italian - (it-IT)                                   | Cosimo         | Elsa             |
+| Japanese - (ja-JP)                                 | Ichiro         | Ayumi, Haruka    |
+| Korean - (ko-KR)                                   | Not applicable | Heami            |
+| Spanish (Spain) - (es-ES)                          | Pablo          | Helena, Laura    |
 
 HoloLens 2 also supports the following languages. However, this support does not include speech commands or dictation features.
 

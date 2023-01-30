@@ -8,9 +8,9 @@ keywords: hololens, hololens 2, sideload, side load, side-load, store, uwp, app,
 ms.prod: hololens
 ms.sitesec: library
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting

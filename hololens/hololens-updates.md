@@ -4,11 +4,11 @@ description: Learn how your administrators can use mobile device management to m
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 11/1/2021
+ms.date: 3/11/2022
 ms.reviewer: shriyen
 manager: ranjibb
 appliesto:
@@ -120,7 +120,7 @@ To configure how and when updates are applied, use the following policies:
 
 #### Configure active hours
 
-Starting with [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) an IT Admin can specify the active hours range for HoloLens 2 devices.
+Starting with [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) an IT Admin can specify the active hours range for HoloLens 2 devices.
 
 Active hours identify the period of time when you expect the device to be in use. Automatic restarts after an update will occur outside of the active hours. The specified range will be counted from the active hours start time. You can use MDM, as described in [Configuring active hours with MDM](/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm). MDM uses the Update/ActiveHoursStart and Update/ActiveHoursEnd and Update/ActiveHoursMaxRange settings in the Policy CSP to configure active hours.
 
@@ -168,6 +168,9 @@ HoloLens 2 supports more update automation features than HoloLens (1st gen) does
 
 Windows Updates for Business supports deferral policies. After Microsoft releases an update, you can use a deferral policy to define how long to wait before installing that update on devices. By associating subsets of your devices (also known as *update rings*) with different deferral policies, you can coordinate an update rollout strategy for your organization.
 
+> [!TIP]
+> It is suggested that organizations also have a subset of test devices on the [Insider Preview Builds](hololens-insider.md), which allow for early validation of functionality in your environment prior to each monthly release.
+
 For example, consider an organization that has 1,000 devices, and has to update the devices in five waves. The organization can create five update rings, as shown in the following table.
 
 |Group |Number of devices |Deferral (days) |
@@ -195,9 +198,9 @@ You can configure different deferrals for feature updates and quality updates. T
 
 #### Pause Updates via Device
 
-If a user does not have access to MDM they can individually Pause updates for up to 35 days manually on a HoloLens 2 device on build [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) or later. Users can reach this setting by navigating to **Settings > Update & Security > Advanced options** scroll down to **Pause updates** and select the date until which they will pause updates. Once a user reached the pause limit, the device will need to get new updates before they can pause again.
+If a user does not have access to MDM they can individually Pause updates for up to 35 days manually on a HoloLens 2 device on build [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) or later. Users can reach this setting by navigating to **Settings > Update & Security > Advanced options** scroll down to **Pause updates** and select the date until which they will pause updates. Once a user reached the pause limit, the device will need to get new updates before they can pause again.
 
-Starting with [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2), this pause updates function can be managed for HoloLens 2 devices:
+Starting with [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2), this pause updates function can be managed for HoloLens 2 devices:
 
 - [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
   - 0 (default) – Enabled

@@ -7,10 +7,10 @@ manager: jarrettr
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: v-miegge
-ms.author: v-miegge
+author: evmill
+ms.author: millerevan
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority:
 appliesto:
 - HoloLens (1st gen)
 ---

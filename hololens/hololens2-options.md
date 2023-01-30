@@ -3,15 +3,15 @@ title: HoloLens 2 editions
 description: Learn how each HoloLens 2 device edition is the same or different and what to do after getting one of your own.
 keywords: HoloLens 2 purchasing options, HoloLens options, Developer Edition
 author: evmill
-ms.author: v-evmill
+ms.author: millerevan
 ms.reviewer: evmill
-ms.date: 1/01/2021
+ms.date: 2/10/2022
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high
 audience: HoloLens
-manager: sekerawa
+manager: ranjibb
 appliesto:
 - HoloLens 2
 ---
@@ -57,6 +57,8 @@ Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) lo
 **[HoloLens 2 Development Edition](hololens2-options-dev-edition.md)**: Start building for mixed reality with this offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services. Learn how to go beyond the basics and start developing for mixed reality.
 
 Learn about our expansive [HoloLens 2 portfolio](https://www.microsoft.com/hololens/buy).
+
+[!INCLUDE[HoloLens accessories](../hololens/includes/hololens2-accessories.md)]
 
 ## Explore solutions
 

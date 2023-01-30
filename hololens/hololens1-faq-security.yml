@@ -9,14 +9,13 @@ metadata:
   keywords: hololens, Windows Mixed Reality, security
   ms.prod: hololens
   ms.sitesec: library
-  ms.topic: article
+  ms.topic: faq
   audience: ITPro
-  ms.localizationpriority: medium
+  ms.localizationpriority:
   ms.custom: 
   - CI 111456
   - CSSTroubleshooting
   manager: bradke
-    
 title: Frequently asked HoloLens (1st gen) Security Questions
 summary: |
 
@@ -46,7 +45,7 @@ sections:
       - question: |
           What frequency range and channels does the device operate on and is it configurable?
         answer: |
-          * Wi-Fi: The frequency range is not user configurable and depends on the country of use. In the US Wi-Fi uses both 2.4 GHz (1-11) channels and 5 GHz (36-64, 100-165) channels.
+          * Wi-Fi: The frequency range is not user configurable and depends on the country of use. In the US, Wi-Fi uses both 2.4 GHz (1-11) channels and 5 GHz (36-64, 100-165) channels.
           * Bluetooth: Bluetooth uses the standard 2.4-2.48 GHz range.
       - question: |
           Can the device allow or block specific frequencies?
@@ -85,7 +84,7 @@ sections:
       - question: |
           OS update frequency – What is the frequency of OS updates for the HL?  Is there a set schedule?  Does Microsoft release security patches as needed, etc.
         answer: |
-          * Microsoft does provide OS updates to HoloLens exactly the same way it is done for Windows 10. There are normally two major updates per year, one in spring, one in fall. As HoloLens is a Windows device, the update concept is the same as with any other Windows device. Microsoft releases Security patches as needed and follows the same concept as done on any other Windows device.
+          * Microsoft does provide OS updates to HoloLens exactly the same way it's done for Windows 10. There are normally two major updates per year, one in spring, one in fall. As HoloLens is a Windows device, the update concept is the same as with any other Windows device. Microsoft releases Security patches as needed and follows the same concept as done on any other Windows device.
 
       - question: |
           OS hardening – What options are there to harden the OS?  Can we remove or shut down unnecessary apps or services?
@@ -118,7 +117,7 @@ sections:
           * The HoloLens only contains two ports (one for headphones and one for charging or connecting to PCs). There is not ability to disable the port due to functionality and recovery reasons.
 
       - question: |
-          Antivirus, endpoint detection, IPS, app control allow list – Any ability to run antivirus, endpoint detection, IPS, app control allow list, etc.
+          Antivirus, endpoint detection, IPS, app control allowlist – Any ability to run antivirus, endpoint detection, IPS, app control allowlist, etc.
         answer: |
           * Windows Holographic for Business (commercial suite) does support Windows Defender Smart Screen. If an antivirus company were to create and publish their app to the Universal Windows Platform, it could be downloaded on HoloLens. At present, no companies have done this for HoloLens.
           * Allowing apps is possible by using the Microsoft Enterprise Store, where you can choose only what specific apps can be downloaded. Also, through MDM you can lock what specific apps can be run or even seen on the device.
