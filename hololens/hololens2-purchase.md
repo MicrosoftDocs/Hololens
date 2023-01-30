@@ -68,6 +68,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | Country | ADDs | DMPs | HoloLens 2 DMPs |
 |---------|-----|------|----------------|
 | **Mexico** | Ingram Micro México, S.A. de C.V. | Aevitas S.A. de C.V. | [Aevitas S.A. de C.V.](http://aevitas.com.mx)|
+| | Commercializadora Intcomex, S.A. de C.V.| Equipos Comp. de Occte. S.A. de C.V. | |
 
 ### **North America**
 
