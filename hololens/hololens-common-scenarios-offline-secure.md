@@ -71,7 +71,7 @@ Build a Secure Configuration Provisioning Package
    |     Policies/System/AllowLocation                       |     No                            |     Prevents the device from trying to track location data.                                                                        |
    |     Policies/WiFi/AllowWiFi                             |     No                            |     Disables Wi-Fi                                                                                                                 |
 
-1. Under Runtime Settings, Select **Accounts / Users / UserName: Holo / Password**.
+1. Under Runtime Settings, Select **Accounts / Users / UserName: Holo**.
 
    Note the password and reset if desired.
 
