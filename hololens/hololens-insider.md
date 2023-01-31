@@ -39,6 +39,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  |
 | [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what the device uses. | All | 10.0.22621.1008 |
 | [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device, to prevent hitting the maximum limit.  | IT Admin  | 10.0.22621.1008 |
+| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes) | Weekly schedules reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.XXXX|
 | [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
 
 ✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
@@ -79,6 +80,32 @@ Here's how to get started:
 If Profile Management is enabled then the oldest user will automatically be deleted when it has reached its maximum number of users and trying to add another.
 
 To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
+
+### Reboot CSP enabled and related changes
+
+In addition to scheduling single daily reboots [Reboot CSP](/windows/client-management/mdm/reboot-csp), now also supports weekly reboots.
+
+#### How to use this in Intune?
+
+1. Create a custom OMA URI device configuration profile as follows and apply it to Hololens device group:
+
+![Screenshot of using OMA URI to configure weekly reboot.](images/weekly-reboot-oma-uri.png)
+
+2. For OMA-URI field specify either of following as desired:
+
+```
+./Device/Vendor/MSFT/Reboot/Schedule/Single
+./Device/Vendor/MSFT/Reboot/Schedule/DailyRecurrent
+./Device/Vendor/MSFT/Reboot/Schedule/WeeklyRecurrent
+```
+
+3. For data type field choose “String”.
+1. For value field, enter a date value indicating starting date, e.g., 2023-01-06T10:35:00. Setting DailyRecurrent will schedule reboots starting at given date and time every day. Similarly setting WeeklyRecurrent will schedule reboots starting at given date and time every 7 days.
+
+> [!NOTE]
+> Setting both DailyRecurrent and WeeklyRecurrent configurations on same device is not supported.
+>
+> Setting Reboot CSP through “Settings catalog” will be supported soon, until then please refer to using custom OMA-URI.
 
 ### Fixes improvements
 
