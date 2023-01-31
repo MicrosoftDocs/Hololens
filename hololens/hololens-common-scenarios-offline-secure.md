@@ -113,7 +113,7 @@ Build a Secure Configuration Provisioning Package
 1. You should then be prompted to sign into the device with the shared local account and password.
 
 > [!NOTE]
-> If you forgot to change the password from the default for this package, it is "HoloLens2".
+> If you forgot to change the password from the default for this package, it's `DC_Login!@`.
 
 ## Maintain
 
