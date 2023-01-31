@@ -39,7 +39,7 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  |
 | [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what the device uses. | All | 10.0.22621.1008 |
 | [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device, to prevent hitting the maximum limit.  | IT Admin  | 10.0.22621.1008 |
-| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes) | Weekly schedules reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.XXXX|
+| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes) | Weekly schedules reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.XXXX |
 | [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
 
 ✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
