@@ -39,11 +39,12 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |
 | [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what the device uses. | All | 10.0.22621.1008 |
 | [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device, to prevent hitting the maximum limit.  | IT Admin  | 10.0.22621.1008 |
-| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes) | Weekly schedules reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.XXXX |
+| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes) | Weekly schedules reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.1051 |
 | [Update available notification](#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
 | [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
 
 ✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
+✔️ If you'd like your HoloLens devices to automatically [reboot on a schedule](#reboot-csp-enabled-and-related-changes) set this policy.
 
 ### Autopilot reset experience
 
@@ -54,12 +55,6 @@ In certain Autopilot failure scenarios on HoloLens 2, if "Allow users to reset d
 We've added changed one of our OOBE screens to show information on device usage of head, hand, and eye usage to users before they go through calibration. This screen isn't skipped when configuring a device to skip calibration, so all new users on a device will see it.
 
 ![Biometrics OOBE screen](images/biometrics-oobe-notification.jpg)
-
-### Update available notification
-
-Having devices up to date is important. With this new update you'll now be able to see on your device when an update is available to download. This is in addition to the previous feature to see when updates are ready to install. Similar to desktop devices, when an update is available you'll see a blue update circle, this icon on HoloLens is located near your user icon. Selecting your user icon will open the user context menu, and from here you'll be able to select **Download update**. This will launch the Settings app and take you directly to the updates page where it will display the available update which you can download.
-
-![Start menu context for OS updates](images/hl2-update-context-menu-crop.jpg)
 
 ### Clean up users on device
 
@@ -113,6 +108,12 @@ In addition to scheduling single daily reboots [Reboot CSP](/windows/client-mana
 > Setting both DailyRecurrent and WeeklyRecurrent configurations on same device is not supported.
 >
 > Setting Reboot CSP through “Settings catalog” will be supported soon, until then please refer to using custom OMA-URI.
+
+### Update available notification
+
+Having devices up to date is important. With this new update you'll now be able to see on your device when an update is available to download. This is in addition to the previous feature to see when updates are ready to install. Similar to desktop devices, when an update is available you'll see a blue update circle, this icon on HoloLens is located near your user icon. Selecting your user icon will open the user context menu, and from here you'll be able to select **Download update**. This will launch the Settings app and take you directly to the updates page where it will display the available update which you can download.
+
+![Start menu context for OS updates](images/hl2-update-context-menu-crop.jpg)
 
 ### Fixes improvements
 
