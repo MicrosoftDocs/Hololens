@@ -2,8 +2,8 @@
 title: Common Scenarios – Offline Secure HoloLens 2
 description: Learn how to set up an offline secure deployment and app deployment scenario with provisioning for HoloLens devices.
 keywords: HoloLens, management, offline, offline secure
-ms.date: 9/25/2020
-manager: yannisle
+ms.date: 1/31/2023
+manager: lolab
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -22,24 +22,24 @@ appliesto:
 
 This guide provides guidance for applying a sample Provisioning Package that will lock down a HoloLens 2 for use in secure environments with the following restrictions:
 
--	Disable WiFi.
--	Disable BlueTooth.
--	Disable Microphones.
--	Prevents adding or removing provisioning packages.
--	No user can enable any of the above restricted components.
+- Disable WiFi.
+- Disable BlueTooth.
+- Disable Microphones.
+- Prevents adding or removing provisioning packages.
+- No user can enable any of the above restricted components.
 
 [ ![Offline Secure scenario.](./images/deployment-guides-revised-scenario-c-01.png) ](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ## Prepare
 
 Windows 10 PC Setup
-1. [Download the latest HoloLens 2 OS file](https://aka.ms/hololens2download) directly to a PC. 
+
+1. [Download the latest HoloLens 2 OS file](https://aka.ms/hololens2download) directly to a PC.
    1. Support for this configuration is included in Build 19041.1117 and above.
 1. Download/Install the Advanced Recovery Companion(ARC) tool [from the Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) to your PC
 1. Download/Install the latest [Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) tool from the Microsoft Store to your PC.
-1. [Download the OfflineSecureHL2_Sample folder with the project files](https://aka.ms/HoloLensDocs-SecureOfflineSample) to build the PPKG.
-1. Prepare your offline [Line of Business application for PPKG deployment](app-deploy-provisioning-package.md). 
-
+1. [Download the OfflineSecureHL2_Sample folder with the project files](https://aka.ms/HoloLensDocs-SecureOfflineSample2) to build the PPKG.
+1. Prepare your offline [Line of Business application for PPKG deployment](app-deploy-provisioning-package.md).
 
 ## Configure
 
@@ -47,14 +47,14 @@ Build a Secure Configuration Provisioning Package
 
 1. Launch the WCD tool on your PC.
 1. Select **File -> Open project**.
-  1. Navigate to the location of the previously saved OfflineSecureHL2_Sample folder, and select: OfflineSecureHL2_Sample.icdproj.xml
+    1. Navigate to the location of the previously saved OfflineSecureHL2_Sample folder, and select: OfflineSecureHL2_Sample.icdproj.xml
 1. The project should open and you should now have a list of Available Customizations:
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot of the configuration package open in WCD.](images/offline-secure-sample-wcd.png)
 
    Configurations set in this provisioning package:
-   
+
    |     Item                                                |     Setting                       |     Description                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     Accounts / Users                                    |     Local User Name & Password    |     For these offline devices, a single user name and password will need to be set and shared by all users of the device.          |
@@ -71,7 +71,7 @@ Build a Secure Configuration Provisioning Package
    |     Policies/System/AllowLocation                       |     No                            |     Prevents the device from trying to track location data.                                                                        |
    |     Policies/WiFi/AllowWiFi                             |     No                            |     Disables Wi-Fi                                                                                                                 |
 
-1. Under Runtime Settings, Select **Accounts / Users / UserName: Holo / Password**.
+1. Under Runtime Settings, Select **Accounts / Users / UserName: Holo**.
 
    Note the password and reset if desired.
 
@@ -111,6 +111,9 @@ Build a Secure Configuration Provisioning Package
 1. You will be prompted to apply the Provisioning Package, select **Confirm**
 1. Once the provisioning package completes select **OK**.
 1. You should then be prompted to sign into the device with the shared local account and password.
+
+> [!NOTE]
+> If you forgot to change the password from the default for this package, it's `DC_Login!@`.
 
 ## Maintain
 
