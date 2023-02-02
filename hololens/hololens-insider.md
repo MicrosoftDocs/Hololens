@@ -108,6 +108,8 @@ In addition to scheduling single daily reboots [Reboot CSP](/windows/client-mana
 > Setting both DailyRecurrent and WeeklyRecurrent configurations on same device is not supported.
 >
 > Setting Reboot CSP through “Settings catalog” will be supported soon, until then please refer to using custom OMA-URI.
+>
+> Actual time of the reboot will be around 2 minutes later than the time set in the configuration. E.G. If you specify 10:00, the reboot will occur at 10:02. This is expected and intentional, this delay is present for operations preserving state and communication.  
 
 ### Update available notification
 
