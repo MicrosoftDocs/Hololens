@@ -88,7 +88,7 @@ In certain Autopilot failure scenarios on HoloLens 2, if "Allow users to reset d
 
 We've added changed one of our OOBE screens to show information on device usage of head, hand, and eye usage to users before they go through calibration. This screen isn't skipped when configuring a device to skip calibration, so all new users on a device will see it.
 
-![Biometrics OOBE screen](images/biometrics-oobe-notification.jpg)
+:::image type="content" alt-text="This is a screenshot of the Biometrics OOBE window." source="images/biometrics-oobe-notification.jpg":::
 
 ### Clean up users on device
 
