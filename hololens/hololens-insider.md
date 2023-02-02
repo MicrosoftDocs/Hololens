@@ -54,7 +54,7 @@ In addition to scheduling single daily reboots [Reboot CSP](/windows/client-mana
 
 1. Create a custom OMA URI device configuration profile as follows and apply it to HoloLens device group:
 
-![Screenshot of using OMA URI to configure weekly reboot.](images/weekly-reboot-oma-uri.png)
+:::image type="content" alt-text ="This screenshot shows using OMA URI to configure the weekly reboot." source="images/weekly-reboot-oma-uri.png":::
 
 2. For OMA-URI field specify either of following as desired:
 
