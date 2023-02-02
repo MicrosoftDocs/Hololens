@@ -78,7 +78,7 @@ In addition to scheduling single daily reboots [Reboot CSP](/windows/client-mana
 
 Having devices up to date is important. With this new update you'll now be able to see on your device when an update is available to download. This is in addition to the previous feature to see when updates are ready to install. Similar to desktop devices, when an update is available you'll see a blue update circle, this icon on HoloLens is located near your user icon. Selecting your user icon will open the user context menu, and from here you'll be able to select **Download update**. This will launch the Settings app and take you directly to the updates page where it will display the available update which you can download.
 
-![Start menu context for OS updates](images/hl2-update-context-menu-crop.jpg)
+:::image type="content" alt-text="This screenshot shows the start menu context for OS updates." source="images/hl2-update-context-menu-crop.jpg":::
 
 ### Autopilot reset experience
 
