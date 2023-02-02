@@ -5,7 +5,7 @@ keywords: HoloLens 2 purchasing options, international purchase, international r
 author: qianw211
 ms.author: qianwen
 ms.reviewer: skerawala
-ms.date: 11/1/2022
+ms.date: 2/2/2023
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -63,7 +63,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Thailand** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [Buy HoloLens 2 - Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [Buy HoloLens 2 Industrial Edition - Sustainable Solution Co., Ltd.](https://hololensthai.com/) |
 | **Vietnam** | CÔNG TY TNHH HIVERLAB VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [Buy HoloLens 2 - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) | [Buy HoloLens 2 Industrial Edition - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
 
-### **South America**
+### **Latin America**
 
 | Country | ADDs | DMPs | HoloLens 2 DMPs |
 |---------|-----|------|----------------|
