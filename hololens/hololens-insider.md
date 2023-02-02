@@ -36,15 +36,49 @@ Looking for a new feature but don't see it? Check out the [release notes](holole
 
 | Feature   | Description  | User or Scenario | Available in build |
 |-----------|--------------|------------------|---|
+| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes) | Weekly schedules reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.1051 |
+| [Update available notification](#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |
 | [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what the device uses. | All | 10.0.22621.1008 |
 | [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device, to prevent hitting the maximum limit.  | IT Admin  | 10.0.22621.1008 |
-| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes) | Weekly schedules reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.1051 |
-| [Update available notification](#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
 | [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
 
 ✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
 ✔️ If you'd like your HoloLens devices to automatically [reboot on a schedule](#reboot-csp-enabled-and-related-changes) set this policy.
+
+### Reboot CSP enabled and related changes
+
+In addition to scheduling single daily reboots [Reboot CSP](/windows/client-management/mdm/reboot-csp), now also supports weekly reboots.
+
+#### How to use this in Intune?
+
+1. Create a custom OMA URI device configuration profile as follows and apply it to HoloLens device group:
+
+![Screenshot of using OMA URI to configure weekly reboot.](images/weekly-reboot-oma-uri.png)
+
+2. For OMA-URI field specify either of following as desired:
+
+```
+./Device/Vendor/MSFT/Reboot/Schedule/Single
+./Device/Vendor/MSFT/Reboot/Schedule/DailyRecurrent
+./Device/Vendor/MSFT/Reboot/Schedule/WeeklyRecurrent
+```
+
+3. For data type field choose “String”.
+1. For value field, enter a date value indicating starting date, e.g., 2023-01-06T10:35:00. Setting DailyRecurrent will schedule reboots starting at given date and time every day. Similarly setting WeeklyRecurrent will schedule reboots starting at given date and time every 7 days.
+
+> [!NOTE]
+> Setting both DailyRecurrent and WeeklyRecurrent configurations on same device is not supported.
+>
+> Setting Reboot CSP through “Settings catalog” will be supported soon, until then please refer to using custom OMA-URI.
+>
+> Actual time of the reboot will be around 2 minutes later than the time set in the configuration. E.G. If you specify 10:00, the reboot will occur at 10:02. This is expected and intentional, this delay is present for operations preserving state and communication.  
+
+### Update available notification
+
+Having devices up to date is important. With this new update you'll now be able to see on your device when an update is available to download. This is in addition to the previous feature to see when updates are ready to install. Similar to desktop devices, when an update is available you'll see a blue update circle, this icon on HoloLens is located near your user icon. Selecting your user icon will open the user context menu, and from here you'll be able to select **Download update**. This will launch the Settings app and take you directly to the updates page where it will display the available update which you can download.
+
+![Start menu context for OS updates](images/hl2-update-context-menu-crop.jpg)
 
 ### Autopilot reset experience
 
@@ -82,40 +116,6 @@ Here's how to get started:
 If Profile Management is enabled then the oldest user will automatically be deleted when it has reached its maximum number of users and trying to add another.
 
 To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
-
-### Reboot CSP enabled and related changes
-
-In addition to scheduling single daily reboots [Reboot CSP](/windows/client-management/mdm/reboot-csp), now also supports weekly reboots.
-
-#### How to use this in Intune?
-
-1. Create a custom OMA URI device configuration profile as follows and apply it to Hololens device group:
-
-![Screenshot of using OMA URI to configure weekly reboot.](images/weekly-reboot-oma-uri.png)
-
-2. For OMA-URI field specify either of following as desired:
-
-```
-./Device/Vendor/MSFT/Reboot/Schedule/Single
-./Device/Vendor/MSFT/Reboot/Schedule/DailyRecurrent
-./Device/Vendor/MSFT/Reboot/Schedule/WeeklyRecurrent
-```
-
-3. For data type field choose “String”.
-1. For value field, enter a date value indicating starting date, e.g., 2023-01-06T10:35:00. Setting DailyRecurrent will schedule reboots starting at given date and time every day. Similarly setting WeeklyRecurrent will schedule reboots starting at given date and time every 7 days.
-
-> [!NOTE]
-> Setting both DailyRecurrent and WeeklyRecurrent configurations on same device is not supported.
->
-> Setting Reboot CSP through “Settings catalog” will be supported soon, until then please refer to using custom OMA-URI.
->
-> Actual time of the reboot will be around 2 minutes later than the time set in the configuration. E.G. If you specify 10:00, the reboot will occur at 10:02. This is expected and intentional, this delay is present for operations preserving state and communication.  
-
-### Update available notification
-
-Having devices up to date is important. With this new update you'll now be able to see on your device when an update is available to download. This is in addition to the previous feature to see when updates are ready to install. Similar to desktop devices, when an update is available you'll see a blue update circle, this icon on HoloLens is located near your user icon. Selecting your user icon will open the user context menu, and from here you'll be able to select **Download update**. This will launch the Settings app and take you directly to the updates page where it will display the available update which you can download.
-
-![Start menu context for OS updates](images/hl2-update-context-menu-crop.jpg)
 
 ### Fixes improvements
 
