@@ -36,7 +36,6 @@ Looking for a new feature but don't see it? We release many new features as part
 
 | Feature   | Description  | User or Scenario | Available in build |
 |-----------|--------------|------------------|---|
-
 | [Reboot CSP enabled and related changes](hololens-insider.md#reboot-csp-enabled-and-related-changes) | Weekly scheduled reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.1051 |
 | [Update available notification](hololens-insider.md#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
 | [Autopilot reset experience](hololens-insider.md#autopilot-reset-experience) | Improvements in Autopilot reset experience to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |
@@ -44,7 +43,7 @@ Looking for a new feature but don't see it? We release many new features as part
 | [Remove users on device](hololens-insider.md#remove-users-on-device) | New policies to manage when to remove users from the device to prevent hitting the maximum limit. | IT Admin  | 10.0.22621.1008 |
 | [Fixes improvements](hololens-insider.md#fixes-improvements)  | Fixes and improvements for HoloLens. | All   | 10.0.22621.1006 |
 
-✔️ If you need to delete users from your HoloLens automatically, then see [Manage users on device](hololens-insider.md#clean-up-users-on-device).
+✔️ If you need to delete users from your HoloLens automatically, then see [Remove users on a device](hololens-insider.md#remove-users-on-a-device).
 
 ✔️ If you'd like to set a policy for your HoloLens devices to automatically [reboot on a schedule](hololens-insider.md#reboot-csp-enabled-and-related-changes), then read on.
 
@@ -99,7 +98,7 @@ We've changed one of our OOBE screens to show information on device usage for he
 
 :::image type="content" alt-text="This is a screenshot of the Biometrics OOBE window." source="images/biometrics-oobe-notification.jpg":::
 
-### Remove users on device
+### Remove users on a device
 
 Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might've used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the least recently used accounts increases security and speeds up the process of iris scanning on the sign-in screen because fewer users reduces the number of comparisons. The three methods to control when to remove least recent users are as follows:
 
