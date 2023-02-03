@@ -36,6 +36,7 @@ Looking for a new feature but don't see it? We release many new features as part
 
 | Feature   | Description  | User or Scenario | Available in build |
 |-----------|--------------|------------------|---|
+
 | [Reboot CSP enabled and related changes](hololens-insider.md#reboot-csp-enabled-and-related-changes) | Weekly scheduled reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.1051 |
 | [Update available notification](hololens-insider.md#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
 | [Autopilot reset experience](hololens-insider.md#autopilot-reset-experience) | Improvements in Autopilot reset experience to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |

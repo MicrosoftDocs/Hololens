@@ -2,7 +2,7 @@
 title: HoloLens 2 hardware
 description: Learn about the components that make up the Microsoft HoloLens 2, the latest evolution of an untethered holographic Microsoft computer running Windows 10.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 7/5/2022
+ms.date: 2/2/2023
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -24,6 +24,9 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 
 > [!NOTE]
 > The recent Windows 11 announcement was focused on the PC version of Windows. We recently launched a [major OS update](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) to HoloLens 2 in May 2021, and we are working on an upcoming release based on customer feedback for this fall.
+
+>[!Important]
+>We continue to support ARM32 and ARM64 on HoloLens 2.
 
 A user account is required to use HoloLens 2.
 
