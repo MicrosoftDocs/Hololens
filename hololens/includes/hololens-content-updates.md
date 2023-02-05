@@ -2,6 +2,17 @@
 
 
 
+## Week of January 30, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/30/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+| 1/31/2023 | [Common Scenarios – Offline Secure HoloLens 2](/hololens/hololens-common-scenarios-offline-secure) | modified |
+| 2/1/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 2/2/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+
+
 ## Week of January 09, 2023
 
 
@@ -17,13 +28,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 1/6/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-
-
-## Week of December 12, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/13/2022 | [Best Practices for creating ‘Experiences’ with HoloLens 2](/hololens/hololens-best-practices-experiences) | added |
-| 12/13/2022 | [Maintain HoloLens devices](/hololens/hololens-maintaining-devices) | added |
-| 12/15/2022 | [HoloLens 2 capabilities and solutions](/hololens/hololens-commercial-features) | modified |
