@@ -86,7 +86,7 @@ Having up-to-date devices is important. A previous feature improvement lets you 
 1. Select your user icon. The user context menu will open.
 1. Select **Download update** to launch the Settings app updates page that shows the update available to download.
 
-:::image type="content" alt-text="This screenshot shows the start menu context for OS updates." source="./images/hl2-update-context-menu-crop.jpg":::
+:::image type="content" alt-text="This screenshot shows the start menu context for OS updates." source="./images/hl2-update-context-menu-crop-6in.png":::
 
 ### Autopilot reset experience
 
