@@ -49,11 +49,9 @@ Looking for a new feature but don't see it? We released many new features as par
 
 ✔️ If you'd like to set a policy for your HoloLens devices to automatically [reboot on a schedule](#reboot-csp-enabled-and-related-changes), then read on.
 
-### Reboot CSP enabled and related changes
+### Reboot CSP enabled and related changes in Intune
 
 In addition to supporting scheduled single daily reboots, [Reboot CSP](/windows/client-management/mdm/reboot-csp) now supports scheduled weekly reboots.
-
-#### How to use this in Intune?
 
 Create a custom OMA URI device configuration profile as follows and apply it to HoloLens device group:
 
@@ -77,9 +75,9 @@ Create a custom OMA URI device configuration profile as follows and apply it to 
 
 1. For the **value** field, enter a date value for a starting date and time, such as *2023-01-06T10:35:00* to set DailyRecurrent reboots starting on the given date and *two minutes after* the set starting time daily. Similarly, setting WeeklyRecurrent reboots starting at the given date and *two minutes after* the starting time every 7 days. For example, if you specify 10:00, the reboot will occur at 10:02.
 
-> [!NOTE]
->
-> The actual time of recurrent schedule reboots is about 2 minutes after the configured time. This delay is expected and intentional to preserve the operations and communication states.
+   > [!NOTE]
+   >
+   > The actual time of recurrent schedule reboots is about 2 minutes after the configured time. This delay is expected and intentional to preserve the operations and communication states.
 
 ### Update available notification
 
