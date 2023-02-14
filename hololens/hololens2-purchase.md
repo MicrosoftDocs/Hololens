@@ -5,7 +5,7 @@ keywords: HoloLens 2 purchasing options, international purchase, international r
 author: qianw211
 ms.author: qianwen
 ms.reviewer: skerawala
-ms.date: 2/2/2023
+ms.date: 2/14/2023
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -49,6 +49,8 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | | 英施艾特（上海）软件贸易有限公司 Insight Enterprises (Shanghai) Co. Ltd. | Julian Kung  julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com | [Buy HoloLens 2 - Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
 | **Hong Kong** | GO VR Immersive Ltd. (UFO) | Howard Tian <howard.tian@govrimmersive.com> | [Buy HoloLens 2 - GO VR Immersive Ltd.](https://www.govrimmersive.com/hololens2) | [Buy HoloLens 2 Industrial Edition - GO VR Immersive Ltd](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
 | | Insight Enterprises Hong Kong | Jenny Southon<br><jenny.southon@insight.com><br>Eddie Tsui<br><eddie.tsui@insight.com> | [Buy HoloLens 2 - INSIGHT ENTERPRISES HONG KONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [Buy HoloLens 2 Industrial Edition - INSIGHT ENTERPRISES HONG KONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |
+| **India** |  Team Computers Pvt. Ltd. | Anuj Sharma <hololens@teamcomputers.com> | <https://www.teamcomputers.com/Hololens2> | https://www.teamcomputers.com/Hololens2 |
+| | Noventiq | Basar, Altaf <altaf.basar@noventiq.com> <br> Salastekar, Kaustubh <kaustubh.salastekar@noventiq.com> | <https://noventiq.com/> | <https://noventiq.com/> |
 | **Japan** | Japan Business Systems (JBS) |  | [Buy HoloLens 2 - Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) | [Buy HoloLens 2 Industrial Edition - Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) |
 | | Otsuka Shokai Co., Ltd. |  | [Buy HoloLens 2 - Otsuka Shokai Co., Ltd.](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | [Buy HoloLens 2 Industrial Edition - Otsuka Shokai Co., Ltd.](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | 
 | | SB C&S |  | [Buy HoloLens 2 - SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | [Buy HoloLens 2 Industrial Edition - SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | 
