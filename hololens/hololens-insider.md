@@ -41,7 +41,7 @@ Only devices in the [Dev channel](#start-receiving-insider-builds) will receive 
 | [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes) | Weekly scheduled reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.1051 |
 | [Update available notification](#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |
-| [Biometrics disclosure screen](biometrics-disclosure-screen) | Displays information to all new users on what biometrics the device uses. | All | 10.0.22621.1008 |
+| [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what biometrics the device uses. | All | 10.0.22621.1008 |
 | [Remove users on device](#remove-users-on-a-device) | New policies to manage when to remove users from the device to prevent hitting the maximum limit. | IT Admin  | 10.0.22621.1008 |
 | [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens. | All   | 10.0.22621.1006 |
 
@@ -102,7 +102,7 @@ We've changed one of our OOBE screens to show information on device usage for he
 
 ### Remove users on a device
 
-Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might've used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the least recently used accounts increases security and speeds up the process of iris scanning on the sign-in screen because fewer users reduces the number of comparisons. The three methods to control when to remove least recent users are as follows:
+Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might've used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the least recently used accounts increases security and speeds up the process of iris scanning on the sign-in screen because fewer users reduce the number of comparisons. The three methods to control when to remove least recent users are as follows:
 
 - On a regular schedule determined by you.
 - At storage threshold percentage determined by you.
@@ -226,5 +226,4 @@ If you no longer want to receive Insider builds of Windows Holographic, you have
 > To verify that your HoloLens is running a production build:
 >
 > 1. Locate the build number through **Settings** > **System** > **About**.
->
 > 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
