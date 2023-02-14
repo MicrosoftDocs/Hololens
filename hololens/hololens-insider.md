@@ -172,7 +172,8 @@ If you encounter update error 0x80070490 when updating on the Dev or Beta channe
 
 1. Select **Settings** > **Update & Security** > **Windows Insider Program** > **Release Preview Channel**.
 
-1. Select **Settings** > **Update & Security** > **Windows Update** > **Check for updates**. After the update, continue to Stage two.
+1. Select **Settings** > **Update & Security** > **Windows Update** > **Check for updates**. 
+   After the update, continue to Stage two.
 
 ### Stage two - Dev Channel
 
