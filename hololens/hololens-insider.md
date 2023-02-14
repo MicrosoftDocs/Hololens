@@ -38,7 +38,7 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or Scenario | Available in build |
 |-----------|--------------|------------------|---|
-| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes) | Weekly scheduled reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.1051 |
+| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes-in-Intune) | Weekly scheduled reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.1051 |
 | [Update available notification](#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |
 | [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what biometrics the device uses. | All | 10.0.22621.1008 |
@@ -47,7 +47,7 @@ Looking for a new feature but don't see it? We released many new features as par
 
 ✔️ If you need to delete users from your HoloLens automatically, then see [Remove users on a device](#remove-users-on-a-device).
 
-✔️ If you'd like to set a policy for your HoloLens devices to automatically [reboot on a schedule](#reboot-csp-enabled-and-related-changes), then read on.
+✔️ If you'd like to set a policy for your HoloLens devices to automatically [reboot on a schedule](#reboot-csp-enabled-and-related-changes-in-Intune), then read on.
 
 ### Reboot CSP enabled and related changes in Intune
 
