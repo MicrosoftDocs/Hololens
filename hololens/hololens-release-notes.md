@@ -62,6 +62,17 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Windows Holographic, version 22H2 - February 2023 Update
+
+- Build 20348.1537
+
+Improvements and fixes in the update:
+
+- Updated the Extended Eye Tracking API to provide access to 90fps eye tracking data.
+- Updated the behavior of `AADGroupMembershipCacheValidityInDays` so that on cache expiration, the AAD group membership check for sign-in user is made immediately.
+- Fixed an issue where hyperlinks clicked from Edge that had multiple protocol handlers registered would not open properly.
+- Improved reliability for installing LOB apps over MDM while device is on standby.
+
 ## Windows Holographic, version 22H2 - January 2023 Update
 
 - Build 20348.1535
