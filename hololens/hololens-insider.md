@@ -38,7 +38,7 @@ Looking for a new feature but don't see it? We released many new features as par
 >
 > This next update is on a newer codebase than what currently is available generally. After you update a device to this build, your device won't update to our monthly releases until those releases catch up to the newer codebase. If necessary, you can still flash your device to go back to the general release.
 
-| Feature   | Description  | User or scenario | available in the build |
+| Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|------------------|---|
 | [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes-in-intune) | Hololens now supports weekly scheduled reboots and other options. | IT Admin | 10.0.22621.1051 |
 | [Update available notification](#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
