@@ -22,11 +22,11 @@ appliesto:
 
 Welcome to the latest Insider Preview builds for HoloLens! [Get started](#start-receiving-insider-builds) and provide valuable feedback on HoloLens for our next major operating system update.
 
-> [!TIP] 
+> [!TIP]
 >
 > Organizations that have moved, or are moving toward, production deployment at scale should keep a subset of test devices on Insider builds to validate new features and builds.
 
-## Windows Insider Release Notes
+## Windows Insider release notes
 
 Looking for a new feature but don't see it? We released many new features as part of the main builds. Check out the [release notes](hololens-release-notes.md) if you think a feature might be missing.
 
@@ -88,7 +88,7 @@ Having up-to-date devices is important. A previous feature improvement lets you 
 1. Select your user icon. The user context menu will open.
 1. Select **Download update** to launch the Settings app updates page that shows the update available to download.
 
-:::image type="content" alt-text="This screenshot shows the start menu context for OS updates." source="images/hl2-update-context-menu-crop-6in.png":::
+   :::image type="content" alt-text="This screenshot shows the start menu context for OS updates." source="images/hl2-update-context-menu-crop-6in.png":::
 
 ### Autopilot reset experience
 
@@ -96,7 +96,7 @@ We've added a new setting to improve the Autopilot reset experience if Hololens 
 
 ### Biometrics disclosure screen
 
-We've changed one of our OOBE screens to show information on device usage for head, hand, and eye movements to users before the device calibrates. Devices configured to skip calibration won't skip this biometrics disclosure screen, so all new users on a device will see device biometrics usage.
+We've changed one of our OOBE screens before the device calibrates to show information on device usage for head, hand, and eye movements. Devices configured to skip calibration won't skip this biometrics disclosure screen, so all new users on a device will see device biometrics usage.
 
 :::image type="content" alt-text="This screenshot shows the Biometrics OOBE window." source="images/biometrics-oobe-notification.jpg":::
 
