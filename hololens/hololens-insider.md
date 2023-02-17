@@ -45,7 +45,7 @@ Looking for a new feature but don't see it? We released many new features as par
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |
 | [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what biometrics the device uses. | All | 10.0.22621.1008 |
 | [Remove users on device](#remove-users-on-a-device) | New policies to manage when to remove users from the device to prevent hitting the maximum limit. | IT Admin  | 10.0.22621.1008 |
-| [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens. | All   | 10.0.22621.1006 |
+| [Fixes improvements](#fixes-and-improvements)  | Fixes and improvements for HoloLens. | All   | 10.0.22621.1006 |
 
 ✔️ If you need to delete users from your HoloLens automatically, then see [Remove users on a device](#remove-users-on-a-device).
 
