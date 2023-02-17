@@ -73,7 +73,7 @@ Create a custom OMA-URI device configuration profile as follows and apply it to 
    >
    > Setting both DailyRecurrent and WeeklyRecurrent configurations on the same device is not supported.
 
-1. For the **data type** field, choose **String**.
+1. For the **data type** field, choose **string**.
 
 1. For the **value** field, enter a date value for a starting date and time, such as *2023-01-06T10:35:00* to set DailyRecurrent reboots starting on the given date and *two minutes after* the set starting time daily. Similarly, setting WeeklyRecurrent reboots starting at the given date and *two minutes after* the starting time every seven days. For example, if you specify 10:00, the reboot will occur at 10:02.
 
