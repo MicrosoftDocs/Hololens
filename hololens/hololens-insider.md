@@ -55,7 +55,7 @@ Looking for a new feature but don't see it? We released many new features as par
 
 In addition to supporting scheduled single daily reboots, [Reboot CSP](/windows/client-management/mdm/reboot-csp) now supports scheduled weekly reboots.
 
-Create a custom OMA URI device configuration profile as follows and apply it to a HoloLens device group:
+Create a custom OMA-URI device configuration profile as follows and apply it to a HoloLens device group:
 
  :::image type="content" alt-text ="This screenshot shows using OMA URI to configure the weekly reboot." source="./images/weekly-reboot-oma-uri.png":::
 
