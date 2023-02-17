@@ -124,7 +124,7 @@ Here's how to get started:
 
 To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
 
-### Fixes improvements
+### Fixes and improvements
 
 - Use EnterpriseModernAppManagement CSP to issue an app uninstall command in the device context.
 - Uninstall apps in the device context.
