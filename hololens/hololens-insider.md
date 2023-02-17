@@ -22,7 +22,9 @@ appliesto:
 
 Welcome to the latest Insider Preview builds for HoloLens! [Get started](#start-receiving-insider-builds) and provide valuable feedback on HoloLens for our next major operating system update.
 
-For organizations that have moved, or are moving toward, scale production deployment, we recommend keeping a subset of test devices on Insider builds to validate that new features and new builds work as expected.
+> [!TIP] 
+>
+> Organizations that have moved, or are moving toward, production deployment at scale should keep a subset of test devices on Insider builds to validate new features and builds.
 
 ## Windows Insider Release Notes
 
@@ -38,7 +40,7 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | available in the build |
 |-----------|--------------|------------------|---|
-| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes-in-intune) | Weekly scheduled reboots and other options are supported on HoloLens. | IT Admin | 10.0.22621.1051 |
+| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes-in-intune) | Hololens now supports weekly scheduled reboots and other options. | IT Admin | 10.0.22621.1051 |
 | [Update available notification](#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |
 | [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what biometrics the device uses. | All | 10.0.22621.1008 |
@@ -73,7 +75,7 @@ Create a custom OMA URI device configuration profile as follows and apply it to 
 
 1. For the **data type** field, choose **String**.
 
-1. For the **value** field, enter a date value for a starting date and time, such as *2023-01-06T10:35:00* to set DailyRecurrent reboots starting on the given date and *two minutes after* the set starting time daily. Similarly, setting WeeklyRecurrent reboots starting at the given date and *two minutes after* the starting time every 7 days. For example, if you specify 10:00, the reboot will occur at 10:02.
+1. For the **value** field, enter a date value for a starting date and time, such as *2023-01-06T10:35:00* to set DailyRecurrent reboots starting on the given date and *two minutes after* the set starting time daily. Similarly, setting WeeklyRecurrent reboots starting at the given date and *two minutes after* the starting time every seven days. For example, if you specify 10:00, the reboot will occur at 10:02.
 
    > [!NOTE]
    >
@@ -81,7 +83,7 @@ Create a custom OMA URI device configuration profile as follows and apply it to 
 
 ### Update available notification
 
-Having up-to-date devices is important. A previous feature improvement lets you see when updates are ready to *install*. With this new update, your device displays when an update is available to *download*. As with desktop devices, when an update is available, your Hololens displays a blue update circle icon. This icon is located near your user icon.
+Having up-to-date devices is important. A previous feature improvement lets you see when updates are ready to *install*. With this new update, your device displays when an update is available to *download*. As with desktop devices, when an update is available, your Hololens displays a blue update circle icon. This icon is near your user icon.
 
 1. Select your user icon. The user context menu will open.
 1. Select **Download update** to launch the Settings app updates page that shows the update available to download.
@@ -90,17 +92,17 @@ Having up-to-date devices is important. A previous feature improvement lets you 
 
 ### Autopilot reset experience
 
-To improve the Autopilot reset experience if Hololens 2 fails in certain installation scenarios, we've added a new setting that lets users begin the Autopilot experience again without requiring a manual flash of HoloLens 2 devices. In the ESP configuration, set **Allow users to reset device if installation error occurs** to **Yes** and the device will display a "Reset device" button. If the user selects **Reset device**, after a delay of about 1 minute, HoloLens 2 will reset the operating system and OOBE experience.
+We've added a new setting to improve the Autopilot reset experience if Hololens 2 fails in certain installation scenarios. This setting lets users begin the Autopilot experience again without requiring a manual flash of HoloLens 2 devices. In the ESP configuration, set **Allow users to reset device if installation error occurs** to **Yes** and the device will display a "Reset device" button. If the user selects **Reset device**, after a delay of about 1 minute, HoloLens 2 will reset the operating system and OOBE experience.
 
 ### Biometrics disclosure screen
 
 We've changed one of our OOBE screens to show information on device usage for head, hand, and eye movements to users before the device calibrates. Devices configured to skip calibration won't skip this biometrics disclosure screen, so all new users on a device will see device biometrics usage.
 
-:::image type="content" alt-text="This is a screenshot of the Biometrics OOBE window." source="images/biometrics-oobe-notification.jpg":::
+:::image type="content" alt-text="This screenshot shows the Biometrics OOBE window." source="images/biometrics-oobe-notification.jpg":::
 
 ### Remove users on a device
 
-Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might've used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the least recently used accounts increases security and speeds up the process of iris scanning on the sign-in screen because fewer users reduce the number of comparisons. The three methods to control when to remove least recent users are as follows:
+Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the least recently used accounts increases security and speeds up the process of iris scanning on the sign-in screen because fewer users reduce the number of comparisons. The three methods to control when to remove least recent users are as follows:
 
 - On a regular schedule determined by you
 - At storage threshold percentage determined by you
@@ -210,7 +212,7 @@ If you encounter update error 0x80070490 when updating on the Dev or Beta channe
 
 ## Provide feedback and report issues
 
-Use [the Feedback Hub app](hololens-feedback.md) on your HoloLens to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve any problem. Issues with the Chinese and Japanese version of HoloLens should be reported the same way.
+Use [the Feedback Hub app](hololens-feedback.md) on your HoloLens to provide feedback and report issues. Feedback Hub helps you include the necessary diagnostics information to help our engineers quickly debug and resolve any problem. Report issues with the Chinese and Japanese versions of HoloLens the same way.
 
 > [!NOTE]
 >
