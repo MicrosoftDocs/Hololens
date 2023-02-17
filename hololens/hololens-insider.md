@@ -173,7 +173,7 @@ If you haven't already, enable telemetry, get the latest build, and then access 
 
 1. Go to **Settings** > **Update & Security** > **Check for updates** to get the latest build.
 
-### Update error 0x80070490 work-around
+### Update error 0x80070490 workaround
 
 If you encounter update error 0x80070490 when updating on the Dev or Beta channel, try the following short-term workaround. It involves moving your Insider channel, picking up the update, and then moving your Insider channel back.
 
