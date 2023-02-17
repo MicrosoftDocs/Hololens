@@ -153,9 +153,7 @@ If you haven't already, enable telemetry, get the latest build, and then access 
 
    1. **Enable** telemetry.
 
-1. Get the latest build.
-
-   1. Reboot your device using one of two methods:
+1. Get the latest build. Reboot your device using one of two methods:
      - Use the voice command "Reboot device."
      - Choose the restart button in Settings.
 
