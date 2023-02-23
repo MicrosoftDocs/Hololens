@@ -32,7 +32,7 @@ Looking for a new feature but don't see it? We released many new features as par
 
 > [!NOTE]
 >
-> Only devices in the [Dev channel](#start-receiving-insider-builds) will receive these Insider build features.
+> Only devices in the [Dev channel](#start-receiving-insider-builds) receive these Insider build features.
 
 > [!IMPORTANT]
 >
