@@ -36,7 +36,7 @@ Looking for a new feature but don't see it? We released many new features as par
 
 > [!IMPORTANT]
 >
-> This next update is on a newer codebase than what currently is available generally. After you update a device to this build, your device won't update to our monthly releases until those releases catch up to the newer codebase. If necessary, you can still flash your device to go back to the general release.
+> This next update is on a newer codebase than what currently is available in the main builds. After you update a device to this build, your device won't update to our monthly releases until those releases catch up to the newer codebase. If necessary, you can still flash your device to go back to the general release.
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|------------------|---|
