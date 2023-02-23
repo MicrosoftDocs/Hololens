@@ -145,7 +145,7 @@ To learn more about these policies, visit [AccountManagement CSP](/windows/clien
 
 ### Prerequisites
 
-If you haven't already, enable telemetry, get the latest build, and then access the Windows Insider Program.
+These steps explain what to do before you sign up for Insider builds. 
 
 1. Enable telemetry. Normally optional, telemetry is required to enroll your device in Insider builds.
 
