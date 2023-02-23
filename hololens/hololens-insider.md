@@ -20,185 +20,222 @@ appliesto:
 
 # Insider preview for Microsoft HoloLens
 
-Welcome to the latest Insider Preview builds for HoloLens! It's simple to [get started](hololens-insider.md#start-receiving-insider-builds) and provide valuable feedback for our next major operating system update for HoloLens.
+Welcome to the latest Insider Preview builds for HoloLens! [Get started](#start-receiving-insider-builds) and provide valuable feedback on HoloLens for our next major operating system update.
 
-We recommend that for organizations that have moved, or are moving towards a scale production deployment, that a subset of test devices is kept on Insider builds to validate that new features and new builds work as expected.
+> [!TIP]
+>
+> Organizations that have moved, or are moving toward, production deployment at scale should keep a subset of test devices on Insider builds to validate new features and builds.
 
-## Windows Insider Release Notes
+## Windows Insider release notes
 
-Looking for a new feature but don't see it? Check out the [release notes](hololens-release-notes.md) as many of our new features have been released as part of the main builds.
+Looking for a new feature but don't see it? We released many new features as part of the main builds. Check out the [release notes](hololens-release-notes.md) if you think a feature might be missing.
 
 > [!NOTE]
-> In order to receive these features on your devices they will need to be in the [Dev channel](#start-receiving-insider-builds).
+>
+> Only devices in the [Dev channel](#start-receiving-insider-builds) receive these Insider build features.
 
 > [!IMPORTANT]
-> This next update is on a newer code base than what is currently generally available. Once you update a device to it, you won't be able to have your device update to our monthly releases until they catch up with the same codebase. Although if need be, you can still flash your device to go back.
+>
+> This next update is on a newer codebase than what currently is available in the main builds. After you update a device to this build, your device won't update to our monthly releases until those releases catch up to the newer codebase. If necessary, you can still flash your device to go back to the general release.
 
-| Feature   | Description  | User or Scenario | Available in build |
+| Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|------------------|---|
-| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes) | Weekly schedules reboots (and other options) supported on HoloLens. | IT Admin | 10.0.22621.1051 |
+| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes-in-intune) | Hololens now supports weekly scheduled reboots and other options. | IT Admin | 10.0.22621.1051 |
 | [Update available notification](#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
-| [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience, to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |
-| [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what the device uses. | All | 10.0.22621.1008 |
-| [Clean up users on device](#clean-up-users-on-device) | New policies to manage when to clear out users on the device, to prevent hitting the maximum limit.  | IT Admin  | 10.0.22621.1008 |
-| [Fixes improvements](#fixes-improvements)  | Fixes and improvements for HoloLens.  | All   | 10.0.22621.1006 |
+| [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |
+| [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what biometrics the device uses. | All | 10.0.22621.1008 |
+| [Remove users on device](#remove-users-on-a-device) | New policies to manage when to remove users from the device to prevent hitting the maximum limit. | IT Admin  | 10.0.22621.1008 |
+| [Fixes improvements](#fixes-and-improvements)  | Fixes and improvements for HoloLens. | All   | 10.0.22621.1006 |
 
-✔️ If you need to delete users from your HoloLens automatically then check out how to [manage users on device](#clean-up-users-on-device). <br>
-✔️ If you'd like your HoloLens devices to automatically [reboot on a schedule](#reboot-csp-enabled-and-related-changes) set this policy.
+✔️ If you need to delete users from your HoloLens automatically, then see [Remove users on a device](#remove-users-on-a-device).
 
-### Reboot CSP enabled and related changes
+✔️ If you'd like to set a policy for your HoloLens devices to automatically [reboot on a schedule](#reboot-csp-enabled-and-related-changes-in-intune), then read on.
 
-In addition to scheduling single daily reboots [Reboot CSP](/windows/client-management/mdm/reboot-csp), now also supports weekly reboots.
+### Reboot CSP enabled and related changes in Intune
 
-#### How to use this in Intune?
+In addition to supporting scheduled single daily reboots, [Reboot CSP](/windows/client-management/mdm/reboot-csp) now supports scheduled weekly reboots.
 
-1. Create a custom OMA URI device configuration profile as follows and apply it to HoloLens device group:
+Create a custom OMA-URI device configuration profile as follows and apply it to a HoloLens device group:
 
-:::image type="content" alt-text ="This screenshot shows using OMA URI to configure the weekly reboot." source="images/weekly-reboot-oma-uri.png":::
-
-2. For OMA-URI field specify either of following as desired:
-
-```
-./Device/Vendor/MSFT/Reboot/Schedule/Single
-./Device/Vendor/MSFT/Reboot/Schedule/DailyRecurrent
-./Device/Vendor/MSFT/Reboot/Schedule/WeeklyRecurrent
-```
-
-3. For data type field choose “String”.
-1. For value field, enter a date value indicating starting date, e.g., 2023-01-06T10:35:00. Setting DailyRecurrent will schedule reboots starting at given date and time every day. Similarly setting WeeklyRecurrent will schedule reboots starting at given date and time every 7 days.
+ :::image type="content" alt-text ="This screenshot shows using OMA URI to configure the weekly reboot." source="./images/weekly-reboot-oma-uri.png":::
 
 > [!NOTE]
-> Setting both DailyRecurrent and WeeklyRecurrent configurations on same device is not supported.
 >
-> Setting Reboot CSP through “Settings catalog” will be supported soon, until then please refer to using custom OMA-URI.
->
-> Actual time of the reboot will be around 2 minutes later than the time set in the configuration. E.G. If you specify 10:00, the reboot will occur at 10:02. This is expected and intentional, this delay is present for operations preserving state and communication.  
+> Setting Reboot CSP through the “Settings catalog” will be supported soon. Until then, use OMA-URI.
+
+1. For the OMA-URI field, specify any of these three options:
+
+   - `./Device/Vendor/MSFT/Reboot/Schedule/Single`
+   - `./Device/Vendor/MSFT/Reboot/Schedule/DailyRecurrent`
+   - `./Device/Vendor/MSFT/Reboot/Schedule/WeeklyRecurrent`
+
+   > [!NOTE]
+   >
+   > Setting both DailyRecurrent and WeeklyRecurrent configurations on the same device is not supported.
+
+1. For the **data type** field, choose **string**.
+
+1. For the **value** field, enter a date value for a starting date and time, such as *2023-01-06T10:35:00* to set DailyRecurrent reboots starting on the given date and *two minutes after* the set starting time daily. Similarly, setting WeeklyRecurrent reboots starting at the given date and *two minutes after* the starting time every seven days. For example, if you specify 10:00, the reboot will occur at 10:02.
+
+   > [!NOTE]
+   >
+   > The actual time of recurrent schedule reboots is about 2 minutes after the configured time. This delay is expected and intentional to preserve the operations and communication states.
 
 ### Update available notification
 
-Having devices up to date is important. With this new update you'll now be able to see on your device when an update is available to download. This is in addition to the previous feature to see when updates are ready to install. Similar to desktop devices, when an update is available you'll see a blue update circle, this icon on HoloLens is located near your user icon. Selecting your user icon will open the user context menu, and from here you'll be able to select **Download update**. This will launch the Settings app and take you directly to the updates page where it will display the available update which you can download.
+Having up-to-date devices is important. A previous feature improvement lets you see when updates are ready to *install*. With this new update, your device displays when an update is available to *download*. As with desktop devices, when an update is available, your Hololens displays a blue update circle icon. This icon is near your user icon.
 
-:::image type="content" alt-text="This screenshot shows the start menu context for OS updates." source="images/hl2-update-context-menu-crop.jpg":::
+1. Select your user icon. The user context menu will open.
+1. Select **Download update** to launch the Settings app updates page that shows the update available to download.
+
+   :::image type="content" alt-text="This screenshot shows the start menu context for OS updates." source="images/hl2-update-context-menu-crop-6in.png":::
 
 ### Autopilot reset experience
 
-In certain Autopilot failure scenarios on HoloLens 2, if "Allow users to reset device if installation error occurs." setting in ESP configuration is set to "Yes", "Reset device" button will be displayed on HoloLens 2. If "Reset device" button is selected by the user, HoloLens 2 will automatically reboot, reset operating system and OOBE experience after delay of approximately 1 minute. This improvement will enable users to begin Autopilot experience again without requiring a manual flash of HoloLens 2 devices.
+We've added a new setting to improve the Autopilot reset experience if Hololens 2 fails in certain installation scenarios. This setting lets users begin the Autopilot experience again without requiring a manual flash of HoloLens 2 devices. In the ESP configuration, set **Allow users to reset device if installation error occurs** to **Yes** and the device will display a "Reset device" button. If the user selects **Reset device**, after a delay of about 1 minute, HoloLens 2 will reset the operating system and OOBE experience.
 
 ### Biometrics disclosure screen
 
-We've added changed one of our OOBE screens to show information on device usage of head, hand, and eye usage to users before they go through calibration. This screen isn't skipped when configuring a device to skip calibration, so all new users on a device will see it.
+We've changed one of our OOBE screens before the device calibrates to show information on device usage for head, hand, and eye movements. Devices configured to skip calibration won't skip this biometrics disclosure screen, so all new users on a device will see device biometrics usage.
 
-:::image type="content" alt-text="This is a screenshot of the Biometrics OOBE window." source="images/biometrics-oobe-notification.jpg":::
+:::image type="content" alt-text="This screenshot shows the Biometrics OOBE window." source="images/biometrics-oobe-notification.jpg":::
 
-### Clean up users on device
+### Remove users on a device
 
-Organizations with scaled deployments of HoloLens 2 devices may encounter the 64-user limit on the device, which will prevent additional users from being able to use the device. To address this situation, we've added controls allow the least recently used users to be deleted from the device at controlled intervals (something you have may have used on Desktop). This can also be useful for other reasons, which include increased security be removing least recently used accounts, or speeding up the Iris scanning processes on the sign-in screen (fewer users to match means a faster comparison.) We've enabled new methods to control when to clean up least recently used users.
+Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the least recently used accounts increases security and speeds up the process of iris scanning on the sign-in screen because fewer users reduce the number of comparisons. The three methods to control when to remove least recent users are as follows:
 
-There are three triggers that can delete users:
-
-- On a regular schedule determined by you.
-- At storage threshold percentage determined by you.
-- Delete the oldest user when you add more than your custom maximum number of users.
+- On a regular schedule determined by you
+- At storage threshold percentage determined by you
+- When you add more than your custom maximum number of users
 
 Here's how to get started:
 
-1. Enable the process: **UserProfileManagement/EnableProfileManager**
-    1. Bool value, set to **True**
-1. Set the inactivity threshold: **UserProfileManagement/ProfileInactivityThreshold**
-    1. This is the number of days until a user is deleted.
-        - Default value is 30.
-1. Set when to delete users based on free space on device **UserProfileManagement/StorageCapacityStartDeletion**
-    1. This determines at what percentage of free space left on the device that it'll start deleting users.
-        - Default value is 25%.
-        - Pair with StorageCapacityStopDeletion, to determine when to stop deleting profiles based on free storage percent.
-1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes for both threshold and inactive users.
+1. Set the boolean value for **UserProfileManagement/EnableProfileManager** to **true**.
 
-If Profile Management is enabled then the oldest user will automatically be deleted when it has reached its maximum number of users and trying to add another.
+1. Set the numerical **UserProfileManagement/ProfileInactivityThreshold**, which is the number of days until a user is deleted. The default value is **30**.
+
+1. Set **UserProfileManagement/StorageCapacityStartDeletion**, a numerical value representing the percentage of free space left when the device begins deleting the least recent users. The Default value is **25%**.
+
+1. Pair **UserProfileManagement/StorageCapacityStartDeletion** with **StorageCapacityStopDeletion** to determine when, based on the free storage percent, to stop deleting profiles.
+
+1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes both threshold and inactive users.
+
+   If the **UserProfileManagement/DeletionPolicy** is on, when the device reaches the maximum number of users and is trying to add another, the device deletes the oldest user automatically.
 
 To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
 
-### Fixes improvements
+### Fixes and improvements
 
-- It will be possible to issue an app uninstall command in the device context using EnterpriseModernAppManagement CSP.
-- Added the ability to uninstall apps in the device context.
+- Use EnterpriseModernAppManagement CSP to issue an app uninstall command in the device context.
+- Uninstall apps in the device context.
 
 ## Start receiving Insider builds
 
-1. If you haven’t updated recently, please reboot your device to update state and get the latest build.
-   1. The “Reboot device” voice command works well.
-   1. You can also choose the restart button in Settings/Windows Insider Program.
-1. On a HoloLens 2 device go to **Settings** > **Update & Security** > **Windows Insider Program** and select **Get started**.
-1. Link the account you used to register as a Windows Insider.
-
+This section explains the steps to prepare devices and then the steps to receive Insider builds.
 > [!TIP]
-> Once you enroll a device into Insider builds it is highly suggested you keep a set of test devices enrolled in Insider builds. This allows your organization to more easily validate builds as they come out. This makes for an easier experience and helps incase your normal production devices are blocked from insider builds.
+>
+> Once you enroll a device into Insider builds, we strongly recommend that your organization keeps a set of test devices enrolled, too. With a set of test devices, your organization can validate builds more easily as they come out. Timely and efficient validation creates an easier experience and helps if your normal production devices are blocked from Insider builds.
 
 > [!NOTE]
-> In order to enroll your device in Insider builds, you'll need to enable optional telemetry. If you have not done this already, open the Settings app and select **Privacy** > **Diagnostics & feedback** and then select **Optional diagnostics data**.
+>
+> Windows Insider is moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here’s how that mapping looks:
+>
+> :::image type="content" alt-text="Screenshot of the Windows Insider Channels explanation." source="./images/WindowsInsiderChannels.png":::
+>
+> For more information, see [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) on[ Windows Blogs](https://blogs.windows.com/).
 
-Windows insider is now moving to Channels. The **Fast** ring will become the **Dev Channel**, the **Slow** ring will become the **Beta Channel**, and the **Release Preview** ring will become the **Release Preview Channel**. Here’s what that mapping looks like:
+### Prerequisites
 
-![Windows Insider Channels explanation.](images/WindowsInsiderChannels.png)
+These steps explain what to do before you sign up for Insider builds. 
 
-For more information, see [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) on Windows Blogs.
-Then, select **Active development of Windows**, choose whether you'd like to receive **Dev Channel** or **Beta Channel** builds, and review the program terms.
-Select **Confirm > Restart Now** to finish up. After your device has rebooted, go to **Settings > Update & Security > Check for updates** to get the latest build.
+1. Enable telemetry. Normally optional, telemetry is required to enroll your device in Insider builds.
 
-### Update error 0x80070490 work-around
+   1. In the **Settings app** > **Privacy** > **Diagnostics & feedback** > **Optional diagnostics data**.
 
-If you encounter an update error 0x80070490 when updating on the Dev or Beta channel, try the following short-term work-around. It involves moving your insider channel, picking up the update and then moving your Insider channel back.
+   1. **Enable** telemetry.
+
+1. Get the latest build. Reboot your device using one of two methods:
+     - Use the voice command "Reboot device."
+     - Choose the restart button in Settings.
+
+### Access the Windows Insider Program and check for updates
+
+1. On a HoloLens 2 device, go to **Settings** > **Update & Security** > **Windows Insider Program** > **Get started**.
+
+1. Link to the account you used to register as a Windows Insider.
+
+1. Select **Active development of Windows**.
+
+1. Choose whether you'd like to receive **Dev Channel** or **Beta Channel** builds.
+
+1. Review and accept the program terms.
+
+1. Select **Confirm** > **Restart Now**. Your device will reboot.
+
+1. Go to **Settings** > **Update & Security** > **Check for updates** to get the latest build.
+
+### Update error 0x80070490 workaround
+
+If you encounter update error 0x80070490 when updating on the Dev or Beta channel, try the following short-term workaround. It involves moving your Insider channel, picking up the update, and then moving your Insider channel back.
 
 #### Stage one - Release Preview
 
-1. Settings, Update & Security, Windows Insider Program, select **Release Preview Channel**.
+1. Select **Settings** > **Update & Security** > **Windows Insider Program** > **Release Preview Channel**.
 
-2. Settings, Update & Security, Windows Update, **Check for updates**. After the update, continue on to Stage two.
+1. Select **Settings** > **Update & Security** > **Windows Update** > **Check for updates**.
+
+1. Accept any available update. After the update, continue to Stage two.
 
 #### Stage two - Dev Channel
 
-1. Settings, Update & Security, Windows Insider Program, select **Dev Channel**.
+1. Select **Settings** > **Update & Security** > **Windows Insider Program** > **Dev Channel**.
 
-2. Settings, Update & Security, Windows Update, **Check for updates**.
+1. Select **Settings** > **Update & Security** > **Windows Update** > **Check for updates**.
+
+1. Accept any available update.
 
 ## FFU download and flash directions
 
-To test with a flight signed `.ffu`, you first have to flight unlock your device prior to flashing the flight signed ffu.
+1. To test with a flight signed `.ffu`, flight unlock your device prior to flashing the flight signed FFU:
 
-1. On PC:
-    1. Download `.ffu` to your PC from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
+   - On a PC:
+      1. Download `.ffu` to your PC from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
+      1. Install [ARC (Advanced Recovery Companion) from the Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8): [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
-    1. Install ARC (Advanced Recovery Companion) from the Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
+   - On HoloLens:
+      1. Open **Settings** > **Update & Security** > **Windows Insider Program**.
+      1. Sign up.
+      1. Reboot the device.
 
-1. On HoloLens - Flight Unlock: Open **Settings** > **Update & Security** > **Windows Insider Program** then sign up, reboot device.
+1. Flash FFU. Now you can flash the flight signed FFU using ARC.
 
-1. Flash FFU - Now you can flash the flight signed FFU using ARC.
+## Provide feedback and report issues
 
-### Provide feedback and report issues
-
-Please use [the Feedback Hub app](hololens-feedback.md) on your HoloLens to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.  Issues with the Chinese and Japanese version of HoloLens should be reported the same way.
+Use [the Feedback Hub app](hololens-feedback.md) on your HoloLens to provide feedback and report issues. Feedback Hub helps you include the necessary diagnostics information to help our engineers quickly debug and resolve any problem. Report issues with the Chinese and Japanese versions of HoloLens the same way.
 
 > [!NOTE]
-> Be sure to accept the prompt that asks whether you'd like Feedback Hub to access your Documents folder (select **Yes** when prompted).
+>
+> Be sure to select **Yes** when a prompt asks whether you'd like Feedback Hub to access your documents folder.
 
 ## Note for developers
 
-You're welcome and encouraged to try developing your applications using Insider builds of HoloLens.  Check out the [HoloLens Developer Documentation](https://developer.microsoft.com/windows/mixed-reality/development) to get started. Those same instructions work with Insider builds of HoloLens.  You can use the same builds of Unity and Visual Studio that you're already using for HoloLens development.
+You're welcome and encouraged to try developing your applications using Insider builds of HoloLens. Check out the [HoloLens Developer Documentation](https://developer.microsoft.com/windows/mixed-reality/development) to get started. Those instructions also work with Insider builds for HoloLens. Use the same builds for Unity and Visual Studio that you're already using for HoloLens development.
 
 ## Stop receiving Insider builds
 
-If you no longer want to receive Insider builds of Windows Holographic, you can opt out when your HoloLens is running a production build, or you can [recover your device](hololens-recovery.md) using the Advanced Recovery Companion to recover your device to a non-Insider version of Windows Holographic.
+If you no longer want to receive Insider builds of Windows Holographic, you have two options:
+
+- Opt out on a HoloLens running a production build:
+   1. Go to **Settings** > **Update & Security** > **Windows Insider Program** > **Stop Insider builds**.
+   1. Follow the instructions to opt out your device.
+
+- Use the ARC to [recover your device](hololens-recovery.md) to a non-Insider version of Windows Holographic.
 
 > [!CAUTION]
-> There is a known issue in which users who un-enroll from Insider Preview builds after manually reinstalling a fresh preview build would experience a blue screen. Afterwards they must manually recover their device. For full details on if you would be impacted or not, please view more on this [Known Issue](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build).
-
-To verify that your HoloLens is running a production build:
-
-1. Go to **Settings > System > About**, and find the build number.
-
-1. [See the release notes for production build numbers](hololens-release-notes.md).
-
-To opt out of Insider builds:
-
-1. On a HoloLens running a production build, go to **Settings > Update & Security > Windows Insider Program**, and select **Stop Insider builds**.
-
-1. Follow the instructions to opt out your device.
+>
+> A known issue causes users who un-enroll from the Windows Insider program, and then manually install a fresh Insider preview build, to experience a blue screen. Afterward, the user must recover the device manually. Learn more about this [Known Issue](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build).
+>
+> To verify that your HoloLens is running a production build:
+>
+> 1. Locate the build number through **Settings** > **System** > **About**.
+> 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
