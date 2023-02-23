@@ -157,7 +157,7 @@ These steps explain what to do before you sign up for Insider builds.
      - Use the voice command "Reboot device."
      - Choose the restart button in Settings.
 
-### Access the Windows Insider Program
+### Access the Windows Insider Program and check for updates
 
 1. On a HoloLens 2 device, go to **Settings** > **Update & Security** > **Windows Insider Program** > **Get started**.
 
