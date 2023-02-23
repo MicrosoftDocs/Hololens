@@ -131,6 +131,7 @@ To learn more about these policies, visit [AccountManagement CSP](/windows/clien
 
 ## Start receiving Insider builds
 
+This section explains the steps to prepare devices and then the steps to receive Insider builds.
 > [!TIP]
 >
 > Once you enroll a device into Insider builds, we strongly recommend that your organization keeps a set of test devices enrolled, too. With a set of test devices, your organization can validate builds more easily as they come out. Timely and efficient validation creates an easier experience and helps if your normal production devices are blocked from Insider builds.
