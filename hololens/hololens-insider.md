@@ -3,9 +3,9 @@ title: Insider preview for Microsoft HoloLens
 description: Learn how to get started with Insider builds and provide valuable feedback for our next major operating system update for HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: evmill
-ms.author: millerevan
-manager: lolab
+author: lolab
+ms.author: lolab
+manager: nazara
 ms.reviewer: bryanth
 ms.topic: article
 ms.custom:
@@ -40,7 +40,10 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|------------------|---|
-| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes-in-intune) | Hololens now supports weekly scheduled reboots and other options. | IT Admin | 10.0.22621.1051 |
+| [Device reset requirenents in the Settings Application](#device-reset-requirements-in-settings-app) | Devices must have sufficient battery and free disk space to perform a device reset. | All | 10.0.22621.1057 |
+| [Removing placements of an app in the mixed world](#removing-placements-of-apps-in-mixed-world) | An option to close one or all placements of an app is now available in the context menu. | All | 10.0.22621.1057 |
+| [Automatic update of Dynamics 365 Remote Assist and Dynamics 365 Guides during Autopilot flow](#automatic-update-dynamics-365-remote-assist-and-guides-during-autopilot-flow) | When provisioning a HoloLens 2 device using Autopilot, Dynamics 365 applications will update automatically. | IT Admin | 10.0.22621.1057 |
+| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes-in-intune) | Hololens now supports weekly scheduled reboots and other options. | IT Admin | 10.0.22621.1051 || [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes-in-intune) | Hololens now supports weekly scheduled reboots and other options. | IT Admin | 10.0.22621.1051 |
 | [Update available notification](#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
 | [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |
 | [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what biometrics the device uses. | All | 10.0.22621.1008 |
@@ -50,6 +53,18 @@ Looking for a new feature but don't see it? We released many new features as par
 ✔️ If you need to delete users from your HoloLens automatically, then see [Remove users on a device](#remove-users-on-a-device).
 
 ✔️ If you'd like to set a policy for your HoloLens devices to automatically [reboot on a schedule](#reboot-csp-enabled-and-related-changes-in-intune), then read on.
+
+### Device Reset Requirements in Settings app
+
+In order for a device reset to complete successfully, the following two conditions must be met:  the device must have both sufficient battery charge and free disk space. On the Reset & recovery page, the Get started button will now only be enabled when the device meets a minimum of 40% of battery charge and 6GB free disk space thresholds.
+
+### Removing Placements of Apps in Mixed World
+
+You can now close either the last placement or all placements of an application in the mixed world by selecting the Close or Close all options, respectively, from that application’s context menu. Note, this menu option will only be available when an application has been placed in the mixed world.
+
+### Automatic update Dynamics 365 Remote Assist and Guides During Autopilot Flow
+
+When provisioning a HoloLens 2 device using Autopilot, both the Dynamics 365 Remote Assist and Dynamics 365 Guides applications will now be automatically updated to the latest available versions. The update will take place immediately after the Azure Active Directory join is completed.
 
 ### Reboot CSP enabled and related changes in Intune
 
