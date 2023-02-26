@@ -69,7 +69,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 | Country | Distributor | Sales contacts |  HoloLens 2 Product link |
 |---------|-----|------|----------------|
-| **Mexico** | Ingram Micro Mexico SA de CV | luis Tonix <luis.tonix@ingrammicro.com> | [Aevitas S.A. de C.V.](http://aevitas.com.mx)|
+| **Mexico** | Ingram Micro Mexico SA de CV | luis Tonix <luis.tonix@ingrammicro.com> |  |
 | | Comercializadora Intcomex SA de CV | Hectro Ramirez salazar <hector.ramirez@intcomex.com> | |
 | **Columbia** | Impresistem SAS |  Dina Moreno <dina.moreno@impresistem.com> |  |
 
