@@ -5,7 +5,7 @@ keywords: HoloLens 2 purchasing options, international purchase, international r
 author: qianw211
 ms.author: qianwen
 ms.reviewer: skerawala
-ms.date: 2/14/2023
+ms.date: 2/25/2023
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -27,9 +27,9 @@ HoloLens 2 is now available in some countries outside of the US, along with some
 
 | HoloLens 2 Edition| Supported Market |
 |-------------------------------------------| ----------------------------------------|
-| HoloLens 2 | Australia, Austria, Belgium, Canada, China, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
-| HoloLens 2 with Remote Assist | Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Korea, Malaysia, Mexico, Netherlands, New Zealand, Norway, Singapore, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam<sup>1</sup> |
-| HoloLens 2 Industrial Edition *(at launch)* | Australia, Austria, Belgium, Canada, China, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
+| HoloLens 2 | Australia, Austria, Belgium, Canada, China, Columbia, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
+| HoloLens 2 with Remote Assist | Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Korea, Malaysia, Netherlands, New Zealand, Norway, Singapore, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam<sup>1</sup> |
+| HoloLens 2 Industrial Edition *(at launch)* | Australia, Austria, Belgium, Canada, China, Columbia, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
 | HoloLens 2 Development Edition | Australia, Canada, France, Germany, Ireland, Italy, Japan, New Zealand, Switzerland, UK, and US |
 
 <sup>1</sup> This list is dynamic, check back for updates
@@ -67,10 +67,11 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 ### **Latin America**
 
-| Country | ADDs | DMPs | HoloLens 2 DMPs |
+| Country | Distributor | Sales contacts |  HoloLens 2 Product link |
 |---------|-----|------|----------------|
-| **Mexico** | Ingram Micro México, S.A. de C.V. | Aevitas S.A. de C.V. | [Aevitas S.A. de C.V.](http://aevitas.com.mx)|
-| | Commercializadora Intcomex, S.A. de C.V.| Equipos Comp. de Occte. S.A. de C.V. | |
+| **Mexico** | Ingram Micro Mexico SA de CV | luis Tonix <luis.tonix@ingrammicro.com> |  |
+| | Comercializadora Intcomex SA de CV | Hectro Ramirez salazar <hector.ramirez@intcomex.com> | |
+| **Columbia** | Impresistem SAS |  Dina Moreno <dina.moreno@impresistem.com> |  |
 
 ### **North America**
 
