@@ -58,9 +58,15 @@ Looking for a new feature but don't see it? We released many new features as par
 
 In order for a device reset to complete successfully, the following two conditions must be met:  the device must have both sufficient battery charge and free disk space. On the Reset & recovery page, the Get started button will now only be enabled when the device meets a minimum of 40% of battery charge and 6GB free disk space thresholds.
 
+![device reset](media/hololens-insider/device-reset.jpg)
+
+
 ### Removing Placements of Apps in Mixed World
 
-You can now close either the last placement or all placements of an application in the mixed world by selecting the Close or Close all options, respectively, from that application’s context menu. Note, this menu option will only be available when an application has been placed in the mixed world.
+You can now close either the last placement or all placements of an application in the mixed world by selecting the Close or Close all options, respectively, from that application’s context menu. This feature is also available in Kiosk mode. Note: this menu option will only be available when an application has been placed in the mixed world.  
+
+![20230217_134347_HoloLens](media/hololens-insider/20230217-134347-hololens.jpg)
+
 
 ### Automatic update of Dynamics 365 Remote Assist and Guides During Autopilot Flow
 
@@ -111,24 +117,23 @@ We've added a new setting to improve the Autopilot reset experience if Hololens 
 
 ### Biometrics disclosure screen
 
-We've changed one of our OOBE screens before the device calibrates to show information on device usage for head, hand, and eye movements. Devices configured to skip calibration won't skip this biometrics disclosure screen, so all new users on a device will see device biometrics usage.
+We've changed one of our OOBE screens before the device calibrates to show information on device usage for head, hand, and eye movements. Devices configured to skip calibration won't skip this biometrics disclosure screen, so all new users on a device will see device biometrics usage.  The purpose of this screen is to better inform users about the data being collected.  There are no changes to the data that is being collected.
 
 :::image type="content" alt-text="This screenshot shows the Biometrics OOBE window." source="images/biometrics-oobe-notification.jpg":::
 
 ### Remove users on a device
 
-Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the least recently used accounts increases security and speeds up the process of iris scanning on the sign-in screen because fewer users reduce the number of comparisons. The three methods to control when to remove least recent users are as follows:
+Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
 
-- On a regular schedule determined by you
-- At storage threshold percentage determined by you
-- When you add more than your custom maximum number of users
-
+- When a user has been inactive on the device past a number of days, configurable via **ProfileInactivityThreshold.**
+- When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
+- When the device has reached the maximum number of supported users (64).
+   
 Here's how to get started:
 
 1. Set the boolean value for **UserProfileManagement/EnableProfileManager** to **true**.
 
-1. Set the numerical **UserProfileManagement/ProfileInactivityThreshold**, which is the number of days until a user is deleted. The default value is **30**.
-
+1. Set the numerical **UserProfileManagement/ProfileInactivityThreshold**, which is the number of days a user must be inactive (not logged on to the device) before the user is deleted. The default value is **30**.
 1. Set **UserProfileManagement/StorageCapacityStartDeletion**, a numerical value representing the percentage of free space left when the device begins deleting the least recent users. The Default value is **25%**.
 
 1. Pair **UserProfileManagement/StorageCapacityStartDeletion** with **StorageCapacityStopDeletion** to determine when, based on the free storage percent, to stop deleting profiles.
@@ -138,6 +143,8 @@ Here's how to get started:
    If the **UserProfileManagement/DeletionPolicy** is on, when the device reaches the maximum number of users and is trying to add another, the device deletes the oldest user automatically.
 
 To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
+
+More details can be found in the deployment guide [here](/hololens/hololens-multiple-users).
 
 ### Fixes and improvements
 
@@ -254,3 +261,4 @@ If you no longer want to receive Insider builds of Windows Holographic, you have
 >
 > 1. Locate the build number through **Settings** > **System** > **About**.
 > 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
+
