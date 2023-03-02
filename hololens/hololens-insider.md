@@ -63,9 +63,9 @@ In order for a device reset to complete successfully, the following two conditio
 
 ### Removing Placements of Apps in Mixed World
 
-You can now close either the last placement or all placements of an application in the mixed world by selecting the Close or Close all options, respectively, from that application’s context menu. This feature is also available in Kiosk mode. Note: this menu option will only be available when an application has been placed in the mixed world.  
+You can now close either the last placement or all placements of an application in the mixed world by selecting the Close or Close all options, respectively, from that application’s context menu. This feature is also available in Kiosk mode. Note: this menu option will only be available when an application has been placed in the mixed world. 
 
-![20230217_134347_HoloLens](media/hololens-insider/20230217-134347-hololens.jpg)
+![settings with close all](media/hololens-insider/settings-with-close-all.jpg)
 
 
 ### Automatic update of Dynamics 365 Remote Assist and Guides During Autopilot Flow
@@ -144,13 +144,10 @@ Here's how to get started:
 
 To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
 
-More details can be found in the deployment guide [here](/hololens/hololens-multiple-users).
-
 ### Fixes and improvements
 
-- Use EnterpriseModernAppManagement CSP to issue an app uninstall command in the device context.
-- Uninstall apps in the device context.
-
+- Previously, it was possible to install an app in the device context via the EnterpriseModernAppManagement CSP.  It is now possible to uninstall an app in the device context as well.
+   
 ## Start receiving Insider builds
 
 This section explains the steps to prepare devices and then the steps to receive Insider builds.
@@ -261,4 +258,5 @@ If you no longer want to receive Insider builds of Windows Holographic, you have
 >
 > 1. Locate the build number through **Settings** > **System** > **About**.
 > 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
+
 
