@@ -2,6 +2,14 @@
 
 
 
+## Week of February 27, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/2/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+
+
 ## Week of February 20, 2023
 
 
