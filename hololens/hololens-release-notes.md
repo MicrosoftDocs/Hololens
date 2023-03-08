@@ -64,7 +64,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 - Build 20348.1539
    
-The following improvement was fixed in this update:
+The following issue was fixed in this update:
 
 - Improved reliability of processing AAD group membership when a specific network failure occurs.  This impacted the first user sign-in experience in kiosk mode.
    
