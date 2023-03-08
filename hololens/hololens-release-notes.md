@@ -15,9 +15,7 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-
 ---
-
 
 # HoloLens 2 release notes
 
@@ -62,13 +60,21 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Windows Holographic, version 22H2 - March 2023 Update
+
+- Build 20348.xxxx
+   
+The following improvement was fixed in this update:
+
+- Improved reliability of processing AAD group membership when a specific network failure occurs.  This impacted the first user sign-in experience in kiosk mode.
+   
 ## Windows Holographic, version 22H2 - February 2023 Update
 
-- Build 20348.1537
+- - Build 20348.1537
 
 Improvements and fixes in the update:
 
-- Updated the Extended Eye Tracking API to provide access to 90fps eye tracking data.
+- - Updated the Extended Eye Tracking API to provide access to 90fps eye tracking data.
 - Updated the behavior of `AADGroupMembershipCacheValidityInDays` so that on cache expiration, the AAD group membership check for sign-in user is made immediately.
 - Fixed an issue where hyperlinks clicked from Edge that had multiple protocol handlers registered would not open properly.
 - Improved reliability for installing LOB apps over MDM while device is on standby.
@@ -1395,3 +1401,4 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 - Fixes an issue that could lead to incorrect symbols being typed in Edge for Japanese customers.
 - Improves the resiliency of OS updates around preinstalled apps such as Edge.
 - Addresses an update reliability impacting the installation of Microsoft Edge.
+
