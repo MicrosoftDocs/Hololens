@@ -66,7 +66,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
    
 The following issue was fixed in this update:
 
-- Improved reliability of processing AAD group membership when a specific network failure occurs.  This impacted the first user sign-in experience in kiosk mode.
+- Improved reliability of processing AAD group membership when a specific network failure occurs. This impacted the sign-in experience for a limited set of users in kiosk mode.
    
 ## Windows Holographic, version 22H2 - February 2023 Update
 
