@@ -35,7 +35,9 @@ The Windows Holographic version name gives you an indication of the time when th
 
 In between our feature updates, we also release fixes and improvements as well as security updates. These are always minor updates and never change the major build number.
 
-To help provide clarity this release notes page will only provide information for the most current release version. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
+To help provide clarity, this release notes page will provide information in order of the most current release version first, followed by older versions. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
+
+Note:  the current release version is the March 2023 Update, Build 20348.15xx.
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
@@ -62,7 +64,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 ## Windows Holographic, version 22H2 - March 2023 Update
 
-- Build 20348.1539
+- Build 20348.15xx
    
 The following issue was fixed in this update:
 
