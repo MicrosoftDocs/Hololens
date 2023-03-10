@@ -41,7 +41,7 @@ Looking for a new feature but don't see it? We released many new features as par
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|------------------|---|
 | [Store app update from Settings feature](#store-app-update-from-settings) | Introduces the option to manually check for app updates from the Settings app. | All | 10.0.22621.1061 |
-| [WebView2 control now available](#WebView2-now-available) | The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens2. | All | 10.0.22621.1061 |
+| [WebView2 control now available](#webview2-now-available) | The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens2. | All | 10.0.22621.1061 |
 | [Device reset requirements in the Settings Application](#device-reset-requirements-in-settings-app) | Devices must have sufficient battery and free disk space to perform a device reset. | All | 10.0.22621.1057 |
 | [Removing placements of an app in the mixed world](#removing-placements-of-apps-in-mixed-world) | An option to close one or all placements of an app is now available in the context menu. | All | 10.0.22621.1057 |
 | [Automatic update of Dynamics 365 Remote Assist and Dynamics 365 Guides during Autopilot flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow) | When provisioning a HoloLens 2 device using Autopilot, Dynamics 365 applications will update automatically. | IT Admin | 10.0.22621.1057 |
