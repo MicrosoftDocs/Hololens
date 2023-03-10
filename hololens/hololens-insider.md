@@ -60,7 +60,7 @@ Looking for a new feature but don't see it? We released many new features as par
 
 While apps from the Microsoft Store are kept up to date automatically by the device, sometimes you may want to manually check for updates to get those app updates sooner. Typically, this is done from within the Microsoft Store app. However, that option will not be available if the Microsoft Store is blocked in your environment. For such environments, you can now manually check for updates to Store apps from the Settings app under Apps -> App updates.
 
-IT admins will be able to block or allow this page with the [Settings/PageVisibilityList policy] (windows/client-management/mdm/policy-csp-settings#pagevisibilitylist) with the URI `ms-settings:appupdate`.
+IT admins will be able to block or allow this page with the [Settings/PageVisibilityList policy](windows/client-management/mdm/policy-csp-settings#pagevisibilitylist) with the URI `ms-settings:appupdate`.
 
 See screenshot below of the Settings app where this feature can be seen.
 
