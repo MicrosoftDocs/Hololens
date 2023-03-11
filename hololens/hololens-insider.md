@@ -68,8 +68,8 @@ See screenshot below of the Settings app where this feature can be seen.
 
 ### WebView2 Now Available
 
-The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. The WebView2 control uses Microsoft Edge as the rendering engine to display the web content in native apps.
-With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. The WebView2 control uses the new Chromium-based Microsoft Edge as the rendering engine to display the web content in native apps.
+With WebView2, you can embed web code in different parts of your native app or build all of the native app within a single WebView2 instance.
 
 ![Image shows Native UI and WebView2 components in an app.](media/hololens-insider/webview2.jpg)
 
@@ -81,8 +81,7 @@ The following is a list of known issues that will be addressed in future Insider
 - Input may not work properly when using popups and context menus.
 - Context menus may not be dismissible.  As a workaround, you may use a keyboard to type into the main window, or close and reopen the app.
 - There may be black borders on the edges of context menus.
-- Any 2D app that uses WebView2 will require a manifest change until the WebView2 NuGet package is released in May.  In addition, all apps targeting HoloLens 2 will need to add the following manifest change.  Note that adding this change will prevent installation on non-HoloLens SKUs such as Desktop PC.  
-- The required manifest details are:
+- Any app that uses WebView2 will require a manifest change until the May release of the WebView2 NuGet package is available.  Until then, all apps targeting HoloLens 2 will need to add the following manifest change.  Note that adding this change will prevent installation on non-HoloLens SKUs such as Desktop PC.  The required manifest details are:
    
 `<Package`  
 `  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">`  
@@ -97,7 +96,7 @@ The following is a list of known issues that will be addressed in future Insider
 
 In order for a device reset to complete successfully, the following two conditions must be met:  the device must have both sufficient battery charge and free disk space. On the Reset & recovery page, the Get started button will now only be enabled when the device meets a minimum of 40% of battery charge and 6GB free disk space thresholds.
 
-![device reset](media/hololens-insider/device-reset.jpg)
+![Image showing device reset requirements in Settings app.](media/hololens-insider/device-reset.jpg)
 
 
 ### Removing Placements of Apps in Mixed World
