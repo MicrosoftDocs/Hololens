@@ -35,9 +35,9 @@ The Windows Holographic version name gives you an indication of the time when th
 
 In between our feature updates, we also release fixes and improvements as well as security updates. These are always minor updates and never change the major build number.
 
-To help provide clarity, this release notes page will provide information in order of the most current release version first, followed by older versions. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
+To help provide clarity, this release notes page will provide information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
 
-Note:  the current release version is the March 2023 Update, Build 20348.15xx.
+Note:  the current release version is the March 2023 Update, Build 20348.1540.
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
@@ -64,7 +64,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 ## Windows Holographic, version 22H2 - March 2023 Update
 
-- Build 20348.15xx
+- Build 20348.1540
    
 The following issue was fixed in this update:
 
@@ -76,7 +76,8 @@ The following issue was fixed in this update:
 
 Improvements and fixes in the update:
 
-- - Updated the Extended Eye Tracking API to provide access to 90fps eye tracking data.
+- 
+   - - Updated the Extended Eye Tracking API to provide access to 90fps eye tracking data.
 - Updated the behavior of `AADGroupMembershipCacheValidityInDays` so that on cache expiration, the AAD group membership check for sign-in user is made immediately.
 - Fixed an issue where hyperlinks clicked from Edge that had multiple protocol handlers registered would not open properly.
 - Improved reliability for installing LOB apps over MDM while device is on standby.
@@ -1403,4 +1404,5 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 - Fixes an issue that could lead to incorrect symbols being typed in Edge for Japanese customers.
 - Improves the resiliency of OS updates around preinstalled apps such as Edge.
 - Addresses an update reliability impacting the installation of Microsoft Edge.
+
 
