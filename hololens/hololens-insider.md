@@ -83,18 +83,16 @@ The following is a list of known issues that will be addressed in future Insider
 - Context menus may not be dismissible.  As a workaround, you may use a keyboard to type into the main window, or close and reopen the app.
 - There may be black borders on the edges of context menus.
 - Any 2D app that uses WebView2 will require a manifest change until the WebView2 NuGet package is released in May.  In addition, all apps targeting HoloLens 2 will need to add the following manifest change.  Note that adding this change will prevent installation on non-HoloLens SKUs such as Desktop PC.  
+- The required manifest details are:
    
-> [!TIP]
-> The required manifest details are:
-> `<Package   `
-> `  xmlns=http://schemas.microsoft.com/appx/manifest/foundation/windows10>  `
-> `  <Dependencies>  `
-> `  <PackageDependency Name="Microsoft.WebView2Runtime.Stable"      `
-> `   Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"       `
-> `   MinVersion="1.0.0.0"/>  `
-> `  </Dependencies> `
-> `</Package>`
-
+`<Package`  
+`  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">`  
+`  <Dependencies>`  
+`    <PackageDependency Name="Microsoft.WebView2Runtime.Stable"`  
+`      Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`  
+`      MinVersion="1.0.0.0"/>`  
+`  </Dependencies>`  
+`</Package>`
 
 ### Device Reset Requirements in Settings app
 
