@@ -31,7 +31,6 @@ Welcome to the latest Insider Preview builds for HoloLens! [Get started](#start-
 Looking for a new feature but don't see it? We released many new features as part of the main builds. Check out the [release notes](hololens-release-notes.md) if you think a feature might be missing.
 
 > [!NOTE]
->
 > Only devices in the [Dev channel](#start-receiving-insider-builds) receive these Insider build features.
 
 > [!IMPORTANT]
@@ -40,6 +39,8 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|------------------|---|
+| [Store app update from Settings feature](#store-app-update-from-settings) | Introduces the option to manually check for app updates from the Settings app. | All | 10.0.22621.1061 |
+| [WebView2 control now available](#webview2-now-available) | The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. | Developer| 10.0.22621.1061 |
 | [Device reset requirements in the Settings Application](#device-reset-requirements-in-settings-app) | Devices must have sufficient battery and free disk space to perform a device reset. | All | 10.0.22621.1057 |
 | [Removing placements of an app in the mixed world](#removing-placements-of-apps-in-mixed-world) | An option to close one or all placements of an app is now available in the context menu. | All | 10.0.22621.1057 |
 | [Automatic update of Dynamics 365 Remote Assist and Dynamics 365 Guides during Autopilot flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow) | When provisioning a HoloLens 2 device using Autopilot, Dynamics 365 applications will update automatically. | IT Admin | 10.0.22621.1057 |
@@ -54,18 +55,55 @@ Looking for a new feature but don't see it? We released many new features as par
 
 ✔️ If you'd like to set a policy for your HoloLens devices to automatically [reboot on a schedule](#reboot-csp-enabled-and-related-changes-in-intune), then read on.
 
+### Store app update from Settings
+
+While apps from the Microsoft Store are kept up to date automatically by the device, sometimes you may want to manually check for updates to get those app updates sooner. Typically, this is done from within the Microsoft Store app. However, that option will not be available if the Microsoft Store is blocked in your environment. For such environments, you can now manually check for updates to Store apps from the Settings app under Apps -> App updates.
+
+IT admins will be able to block or allow this page with the [Settings/PageVisibilityList policy](/windows/client-management/mdm/policy-csp-settings#pagevisibilitylist) with the URI `ms-settings:appupdate`.
+
+See screenshot below of the Settings app where this feature can be seen.
+
+![Screenshot of Settings app](media/hololens-insider/microsoftteams-image-(2).png)
+
+
+### WebView2 Now Available
+
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. The WebView2 control uses the new Chromium-based Microsoft Edge as the rendering engine to display the web content in native apps.
+With WebView2, you can embed web code in different parts of your native app or build all of the native app within a single WebView2 instance.
+
+![Image shows Native UI and WebView2 components in an app.](media/hololens-insider/webview2.jpg)
+
+To start building a WebView2 app, see [Get started with WebView2](/microsoft-edge/webview2/) for a general overview.  HoloLens specific documentation will be available soon.
+
+The following is a list of known issues that will be addressed in future Insider release previews:
+
+
+- Input may not work properly when using popups and context menus.
+- Context menus may not be dismissible.  As a workaround, you may use a keyboard to type into the main window, or close and reopen the app.
+- There may be black borders on the edges of context menus.
+- Any app that uses WebView2 will require a manifest change until the May release of the WebView2 NuGet package is available.  Until then, all apps targeting HoloLens 2 will need to add the following manifest change.  Note that adding this change will prevent installation on non-HoloLens SKUs such as Desktop PC.  The required manifest details are:
+   
+`<Package`  
+`  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">`  
+`  <Dependencies>`  
+`    <PackageDependency Name="Microsoft.WebView2Runtime.Stable"`  
+`      Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`  
+`      MinVersion="1.0.0.0"/>`  
+`  </Dependencies>`  
+`</Package>`
+
 ### Device Reset Requirements in Settings app
 
 In order for a device reset to complete successfully, the following two conditions must be met:  the device must have both sufficient battery charge and free disk space. On the Reset & recovery page, the Get started button will now only be enabled when the device meets a minimum of 40% of battery charge and 6GB free disk space thresholds.
 
-![device reset](media/hololens-insider/device-reset.jpg)
+![Image showing device reset requirements in Settings app.](media/hololens-insider/device-reset.jpg)
 
 
 ### Removing Placements of Apps in Mixed World
 
-You can now close either the last placement or all placements of an application in the mixed world by selecting the Close or Close all options, respectively, from that application’s context menu. This feature is also available in Kiosk mode. Note: this menu option will only be available when an application has been placed in the mixed world. 
+You can now close all placements of an application in the mixed world by selecting the **Close all** (or **Close** when there is only one placement) option from that application’s context menu.  This feature is also available in Kiosk mode. Note: this menu option will only be available when an application has been placed in the mixed world. 
 
-![settings with close all](media/hololens-insider/settings-with-close-all.jpg)
+![placement resized - use this](media/hololens-insider/placement-resized---use-this1.jpg)
 
 
 ### Automatic update of Dynamics 365 Remote Assist and Guides During Autopilot Flow
@@ -258,5 +296,7 @@ If you no longer want to receive Insider builds of Windows Holographic, you have
 >
 > 1. Locate the build number through **Settings** > **System** > **About**.
 > 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
+
+
 
 
