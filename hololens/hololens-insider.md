@@ -102,7 +102,7 @@ In order for a device reset to complete successfully, the following two conditio
 
 ### Removing Placements of Apps in Mixed World
 
-You can now close either the last placement or all placements of an application in the mixed world by selecting the Close or Close all options, respectively, from that application’s context menu. This feature is also available in Kiosk mode. Note: this menu option will only be available when an application has been placed in the mixed world. 
+You can now close all placements of an application in the mixed world by selecting the **Close all** (or **Close** when there is only 1 placement) option from that application’s context menu.  This feature is also available in Kiosk mode. Note: this menu option will only be available when an application has been placed in the mixed world. 
 
 ![placement resized - use this](media/hololens-insider/placement-resized---use-this1.jpg)
 
