@@ -41,7 +41,7 @@ Looking for a new feature but don't see it? We released many new features as par
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|------------------|---|
 | [Store app update from Settings feature](#store-app-update-from-settings) | Introduces the option to manually check for app updates from the Settings app. | All | 10.0.22621.1061 |
-| [WebView2 control now available](#webview2-now-available) | The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens2. | All | 10.0.22621.1061 |
+| [WebView2 control now available](#webview2-now-available) | The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. | Developer| 10.0.22621.1061 |
 | [Device reset requirements in the Settings Application](#device-reset-requirements-in-settings-app) | Devices must have sufficient battery and free disk space to perform a device reset. | All | 10.0.22621.1057 |
 | [Removing placements of an app in the mixed world](#removing-placements-of-apps-in-mixed-world) | An option to close one or all placements of an app is now available in the context menu. | All | 10.0.22621.1057 |
 | [Automatic update of Dynamics 365 Remote Assist and Dynamics 365 Guides during Autopilot flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow) | When provisioning a HoloLens 2 device using Autopilot, Dynamics 365 applications will update automatically. | IT Admin | 10.0.22621.1057 |
@@ -69,12 +69,12 @@ See screenshot below of the Settings app where this feature can be seen.
 
 ### WebView2 Now Available
 
-The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens2. The WebView2 control uses Microsoft Edge as the rendering engine to display the web content in native apps.
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. The WebView2 control uses Microsoft Edge as the rendering engine to display the web content in native apps.
 With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
 
 ![Image shows Native UI and WebView2 components in an app.](media/hololens-insider/webview2.jpg)
 
-To start building a WebView2 app, see Get started with WebView2 for a general overview.  HoloLens specific documentation will be available soon.
+To start building a WebView2 app, see [Get started with WebView2](/microsoft-edge/webview2/) for a general overview.  HoloLens specific documentation will be available soon.
 
 The following is a list of known issues that will be addressed in future Insider release previews:
 
