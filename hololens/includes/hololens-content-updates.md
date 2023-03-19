@@ -2,6 +2,15 @@
 
 
 
+## Week of March 13, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/14/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 3/15/2023 | [HoloLens 2 release notes for Windows Holographic, version 2004](/hololens/hololens-release-notes-2004) | modified |
+
+
 ## Week of February 27, 2023
 
 
@@ -27,14 +36,3 @@
 |------|------------|--------|
 | 2/14/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
 | 2/14/2023 | [HoloLens 2 release notes for Windows Holographic, version 2004](/hololens/hololens-release-notes-2004) | modified |
-
-
-## Week of January 30, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/30/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
-| 1/31/2023 | [Common Scenarios – Offline Secure HoloLens 2](/hololens/hololens-common-scenarios-offline-secure) | modified |
-| 2/1/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 2/2/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
