@@ -153,7 +153,6 @@ On the bottom of each content article, there is an opportunity to open a GitHub 
 To provide feedback, share an idea or suggestions for Microsoft mixed reality services, or vote on the ideas that others have submitted, visit: 
 
 - [HoloLens 2 Product Feedback](/hololens/hololens-feedback)
-- [Microsoft Mesh App Product Feedback](/hololens/hololens-feedback)
 - [Azure Remote Rendering Feedback](https://feedback.azure.com/forums/928696-azure-remote-rendering)
 - [Azure Spatial Anchors Feedback](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
 
