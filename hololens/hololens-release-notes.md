@@ -34,8 +34,7 @@ In between our feature updates, we also release fixes and improvements as well a
 
 To help provide clarity, this release notes page will provide information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
 
-Note:  the current release version is the March 2023 Update, Build 20348.1540.
-
+Note:  the current release version is the April 2023 Update, Build 20348.1542.
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
 | 20348                  | [Windows Holographic, version 22H2](#windows-holographic-version-22h2) <br> [Windows Holographic, version 22H1](#windows-holographic-version-22h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2) <br> [Windows Holographic, version 21H1](#windows-holographic-version-21h1)  | November 2022 <br> April 2022 <br> October 2021 <br> May 2021   | 20348.1528 <br> 20348.1501 <br> 20348.1432 <br> 20346.1002   |
@@ -1204,8 +1203,6 @@ Open the **Settings** app and select **System** > **Sound**.
 > Then use the drop-down to set the external microphone as either **Default** or **Communications Default.** Choosing **Default** means that the external microphone will be used everywhere.
 >
 > Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
-
-<br>
 
 ![Set microphone default.](images/usbc-mic-3.jpg)
 
