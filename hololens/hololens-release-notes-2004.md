@@ -26,14 +26,20 @@ These are the major feature releases from Windows Holographic, version 2004.
 |------------------------|-------------------------------------|--------------|--------------|
 | 19041                  | [Windows Holographic, version 2004](#windows-holographic-version-2004) <br> [Windows Holographic, version 20H2](#windows-holographic-version-20h2)    | May 2020 <br> Nov 2020     | 19041.1103 <br> 19041.1128   |
 
+## Windows Holographic, version 20H2 - April 2023 Update
+
+- Build 19041.1223
+
+Improvements and fixes in the update:
+- This monthly quality update doesn't contain any notable changes; we encourage you to try out our latest build, Windows Holographic, version 22H2.
+
 ## Windows Holographic, version 20H2 - March 2023 Update
 
 - Build 19041.1221
-   
-Improvements and fixes in the update:
 
+Improvements and fixes in the update:
 - This monthly quality update doesn't contain any notable changes; we encourage you to try out our latest build, Windows Holographic, version 22H2.
-   
+
 ## Windows Holographic, version 20H2 - February 2023 Update
 
 - Build 19041.1216
@@ -867,4 +873,5 @@ Improvements and fixes also in the update:
 
 - An issue with the zh-CN system language prevents voice commands from taking a mixed reality capture or displaying the device IP address.
 - An issue requires you to launch the Cortana app after starting the device to use "Hey Cortana" voice activation. If you updated from an 18362 build, you may also see a second app tile for the previous version of the Cortana app that no longer works in **Start**.
+
 
