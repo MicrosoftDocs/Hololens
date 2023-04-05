@@ -39,7 +39,7 @@ Note:  the current release version is the March 2023 Update, Build 20348.1540.
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
 | 20348                  | [Windows Holographic, version 22H2](#windows-holographic-version-22h2) <br> [Windows Holographic, version 22H1](#windows-holographic-version-22h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2) <br> [Windows Holographic, version 21H1](#windows-holographic-version-21h1)  | November 2022 <br> April 2022 <br> October 2021 <br> May 2021   | 20348.1528 <br> 20348.1501 <br> 20348.1432 <br> 20346.1002   |
-| 19041                  | [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) <br> [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) | Nov 2020 <br>  May 2020    | 19041.1128 <br> 19041.1103  |
+| 19041                  | [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) <br> [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) | Nov 2020 <br> May 2020    | 19041.1128 <br> 19041.1103  |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
 
 ### How to find out which operating system version is on HoloLens?
@@ -58,6 +58,13 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+## Windows Holographic, version 22H2 - April 2023 Update
+
+- Build 20348.1542
+
+The following issue was fixed in this update:
+- Improved operation of the Account Manager service, so that user cleanup now happens preferentially during daily maintenance periods when the device is idle.  This functionality is configurable via the [AccountManagement CSP](Improved operation of the Account Manager service (configurable via the AccountManagement CSP https://learn.microsoft.com/en-us/windows/client-management/mdm/accountmanagement-csp). User cleanup now happens preferentially during daily maintenance periods when the device is idle. ).   
 
 ## Windows Holographic, version 22H2 - March 2023 Update
 
@@ -1198,8 +1205,6 @@ Open the **Settings** app and select **System** > **Sound**.
 >
 > Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
 
-![Manage sound devices.](images/usbc-mic-2.png)
-
 <br>
 
 ![Set microphone default.](images/usbc-mic-3.jpg)
@@ -1269,8 +1274,6 @@ We are expanding upon the list of available Settings URIs, which IT Admins can m
 > **Deprecated: ms-settings:network-proxy**
 >
 > One settings page is deprecated in these newer builds. The old **Network & Internet** > **Proxy** page is no longer available as a global setting. The new per-connection proxy settings can be found under **Network & Internet** > **Wi-Fi** > **Properties** or **Network & Internet** > **Ethernet** > **Properties**.
-
-<br>
 
 | Settings page                                        | URI                                              |
 |------------------------------------------------------|--------------------------------------------------|
