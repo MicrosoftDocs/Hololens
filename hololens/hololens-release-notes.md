@@ -63,9 +63,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 - Build 20348.1542
 
-The following issue was fixed in this update:
-- Improved operation of the Account Manager service, so that user cleanup now happens preferentially during daily maintenance periods when the device is idle.  This functionality is configurable via the [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).   
-
+This update included Windows security updates.  
 ## Windows Holographic, version 22H2 - March 2023 Update
 
 - Build 20348.1540
