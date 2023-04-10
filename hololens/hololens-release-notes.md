@@ -63,7 +63,8 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 - Build 20348.1542
 
-This update included Windows security updates.  
+This update included Windows security updates.
+  
 ## Windows Holographic, version 22H2 - March 2023 Update
 
 - Build 20348.1540
