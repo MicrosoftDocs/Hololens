@@ -2,6 +2,15 @@
 
 
 
+## Week of April 10, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/11/2023 | [HoloLens 2 release notes for Windows Holographic, version 2004](/hololens/hololens-release-notes-2004) | modified |
+| 4/11/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+
+
 ## Week of April 03, 2023
 
 
