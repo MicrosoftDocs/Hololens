@@ -98,8 +98,10 @@ Note:  With the introduction of Windows Holographic version 23H1, we are disco
 ✔️ If you need to delete users from your HoloLens automatically, then see [Remove users on a device](#remove-users-on-a-device).
 
 ✔️ If you'd like to set a policy for your HoloLens devices to automatically reboot on a schedule you determine, then read how to [Reboot on a schedule](#reboot-csp-enabled-and-related-changes-in-intune).
+
 List of new or newly enabled policies:
-<add them here>
+
+------ add them here ----
 
 ### Store app update from Settings
 
@@ -121,8 +123,7 @@ With WebView2, you can embed web code in different parts of your native app or b
 
 To start building a WebView2 app, see [Get started with WebView2](/microsoft-edge/webview2/) for a general overview.  HoloLens specific documentation will be available soon.
 
-<lolab -- still need the link here>
-
+------ lolab -- still need the link here ------
 The following is a list of known issues that will be addressed in future updates:
 
 - Input may not work properly when using popups and context menus.
