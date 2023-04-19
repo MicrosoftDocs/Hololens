@@ -89,6 +89,7 @@ If you are on a version that is older than Windows Holographic version 20H2 (Bu
 ### IT Admin Checklist
 
 ✔️ If you want to manage whether users can manually check for updates to Store apps from the Settings App, then see [Store app update from Settings](#store-app-update-from-settings).
+
 ✔️ If you want to learn more about how D365 Apps will be automatically updated to the latest versions, then read [Automatic update during Autopilot Flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow).
 
 ✔️ If you want to allow users to reset their device without requiring a manual flash, then see [Autopilot reset experience](#autopilot-reset-experience).
@@ -157,8 +158,7 @@ When provisioning a HoloLens 2 device using Autopilot, both the Dynamics 365 Rem
 In addition to supporting scheduled single daily reboots, [Reboot CSP](/windows/client-management/mdm/reboot-csp) now supports scheduled weekly reboots.
 
 Create a custom OMA-URI device configuration profile as follows and apply it to a HoloLens device group:
-
-:::image type="content" alt-text ="This screenshot shows using OMA URI to configure the weekly reboot." source="./images/weekly-reboot-oma-uri.png":::
+![weekly-reboot-oma-uri resized](media/hololens-release-notes/weekly-reboot-oma-uri-resized.jpg)
 
 > [!NOTE]
 >
