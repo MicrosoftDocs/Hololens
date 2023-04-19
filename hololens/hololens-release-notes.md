@@ -38,7 +38,7 @@ Note:  the current release version is the May 2023 Update, version 23H1, Build x
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
-| 22621                  | [Windows Holographic, version 23H1]( #windows-holographic-version-23h1#windows-holographic-version-23H1)   | May 2023     | 22621.xxxx   |
+| 22621                  | [Windows Holographic, version 23H1](#windows-holographic-version-23h1)   | May 2023     | 22621.xxxx   |
 | 20348                  | [Windows Holographic, version 22H2](#windows-holographic-version-22h2) <br> [Windows Holographic, version 22H1](#windows-holographic-version-22h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2) <br> [Windows Holographic, version 21H1](#windows-holographic-version-21h1)  | November 2022 <br> April 2022 <br> October 2021 <br> May 2021   | 20348.1528 <br> 20348.1501 <br> 20348.1432 <br> 20346.1002   |
 | 19041                  | [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) <br> [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) | Nov 2020 <br> May 2020    | 19041.1128 <br> 19041.1103  |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
@@ -74,7 +74,7 @@ If you are on a version that is older than Windows Holographic version 20H2 (Bu
 | Feature   | Description  | User or scenario |
 |-----------|--------------|------------------|
 | [Store app update from Settings feature](#store-app-update-from-settings) |Introduces the option to manually check for app updates from the Settings app. | All |
-| [WebView2 control now available](#webview2-now-available) |The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. | Developer|
+| [WebView2 control now available](#webview2-now-available-in-public-preview) |The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. | Developer|
 | [Device reset requirements in the Settings Application](#device-reset-requirements-in-settings-app) |Devices must have sufficient battery and free disk space to perform a device reset. | All |
 | [Removing placements of an app in the mixed world](#removing-placements-of-apps-in-mixed-world) |An option to close one or all placements of an app is now available in the context menu. | All |
 | [Automatic update of Dynamics 365 Remote Assist and Dynamics 365 Guides during Autopilot flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow) |When provisioning a HoloLens 2 device using Autopilot, Dynamics 365 applications will update automatically. | IT Admin |
