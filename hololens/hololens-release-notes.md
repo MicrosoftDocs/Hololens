@@ -66,9 +66,10 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 - Build 22621.xxxx
 
 Windows Holographic, version 23H1 is now available and brings a great set of new features to HoloLens 2 users and IT professionals. Check out all the new great features for HoloLens 2!
+
 HoloLens 2 is moving to Windows 11 as part of the 23H1 release. To upgrade, HoloLens 2 device(s) must be currently running 21H1 May 2021 update (build 20346.1002) or newer. If the 23H1 feature update is not available, please update your device and try again. 
-Note:  With the introduction of Windows Holographic version 23H1, we are discontinuing monthly servicing updates for Windows Holographic version 20H2 (Build 19041.1128+). This enables us to focus on more recent releases and continue to deliver valuable improvements. 
-If you are on a version that is older than Windows Holographic version 20H2 (Build 19041.1136), you will first need to update to the February 2021 update (build 19041.1136 or newer) before you update to the 21H1 May 2021 update (build 20346.1002) or newer. 
+
+Note:  With the introduction of Windows Holographic version 23H1, we are discontinuing monthly servicing updates for Windows Holographic version 20H2 (Build 19041.1128+). This enables us to focus on more recent releases and continue to deliver valuable improvements. If you are on a version that is older than Windows Holographic version 20H2 (Build 19041.1136), you will first need to update to the February 2021 update (build 19041.1136 or newer) before you update to the 21H1 May 2021 update (build 20346.1002) or newer. 
 
 
 | Feature   | Description  | User or scenario |
@@ -119,8 +120,11 @@ With WebView2, you can embed web code in different parts of your native app or b
 ![Image shows Native UI and WebView2 components in an app.](media/hololens-insider/webview2.jpg)
 
 To start building a WebView2 app, see [Get started with WebView2](/microsoft-edge/webview2/) for a general overview.  HoloLens specific documentation will be available soon.
+
 <lolab -- still need the link here>
+
 The following is a list of known issues that will be addressed in future updates:
+
 - Input may not work properly when using popups and context menus.
 - Context menus may not be dismissible.  As a workaround, you may use a keyboard to type into the main window, or close and reopen the app.
 - There may be black borders on the edges of context menus.
@@ -158,6 +162,7 @@ When provisioning a HoloLens 2 device using Autopilot, both the Dynamics 365 Rem
 In addition to supporting scheduled single daily reboots, [Reboot CSP](/windows/client-management/mdm/reboot-csp) now supports scheduled weekly reboots.
 
 Create a custom OMA-URI device configuration profile as follows and apply it to a HoloLens device group:
+
 ![weekly-reboot-oma-uri resized](media/hololens-release-notes/weekly-reboot-oma-uri-resized.jpg)
 
 > [!NOTE]
