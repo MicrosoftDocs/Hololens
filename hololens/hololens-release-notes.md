@@ -89,6 +89,7 @@ Note:  With the introduction of Windows Holographic version 23H1, we are disco
 
 ### IT Admin Checklist
 
+This checklist will help you know the new items that features that are being added in this feature update that may affect your current device management configurations, or new features you might wish to start using.
 ✔️ If you want to manage whether users can manually check for updates to Store apps from the Settings App, then see [Store app update from Settings](#store-app-update-from-settings).
 
 ✔️ If you want to learn more about how D365 Apps will be automatically updated to the latest versions, then read [Automatic update during Autopilot Flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow).
@@ -98,7 +99,6 @@ Note:  With the introduction of Windows Holographic version 23H1, we are disco
 ✔️ If you need to delete users from your HoloLens automatically, then see [Remove users on a device](#remove-users-on-a-device).
 
 ✔️ If you'd like to set a policy for your HoloLens devices to automatically reboot on a schedule you determine, then read how to [Reboot on a schedule](#reboot-csp-enabled-and-related-changes-in-intune).
-
 List of new or newly enabled policies:
 
 ------ add them here ----
@@ -232,7 +232,9 @@ To learn more about these policies, visit [AccountManagement CSP](/windows/clien
 
 ### Fixes and improvements
 
-- Previously, it was possible to install an app in the device context via the EnterpriseModernAppManagement CSP.  It is now possible to uninstall an app in the device context as well.
+- Introduced a Low-Signal depth mode that produces more complete depth measurements on dark and shiny objects.  This feature also improves Azure Object Anchoring detection on dark cars.
+- Updated flight build documentation to address broken device reset scenario and solution.
+-  Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy.
 
 ## Windows Holographic, version 22H2 - April 2023 Update
 
