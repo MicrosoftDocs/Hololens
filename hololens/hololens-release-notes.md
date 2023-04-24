@@ -91,6 +91,7 @@ Note:  With the introduction of Windows Holographic version 23H1, we are disco
 
 This checklist will help you know the new items that features that are being added in this feature update that may affect your current device management configurations, or new features you might wish to start using.
 
+
 ✔️ If you want to manage whether users can manually check for updates to Store apps from the Settings App, then see [Store app update from Settings](#store-app-update-from-settings).
 
 ✔️ If you want to learn more about how D365 Apps will be automatically updated to the latest versions, then read [Automatic update during Autopilot Flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow).
@@ -126,6 +127,7 @@ With WebView2, you can embed web code in different parts of your native app or b
 To start building a WebView2 app, see [Get started with WebView2](/microsoft-edge/webview2/) for a general overview.  HoloLens specific documentation will be available soon.
 
 ------ lolab -- still need the link here ------
+
 
 The following is a list of known issues that will be addressed in future updates:
 
