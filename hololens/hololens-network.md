@@ -421,7 +421,7 @@ Depending on your devices build you can either use built in voice commands or Co
 
 ### By using Windows Device Portal
 
-1. In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
+1. In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal#networking).
 1. Navigate to the **Networking** section.
 1. Select the **IPv4 Configuration** button.
 1. Select **Use the following IP address** and input the desired TCP/IP configuration.
