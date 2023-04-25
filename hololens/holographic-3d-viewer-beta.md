@@ -4,7 +4,7 @@ description: Describes the types of files and features that 3D Viewer Beta on Ho
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
-ms.author: millerevan
+ms.author: lolab
 manager: lolab
 ms.topic: article
 ms.localizationpriority: high
@@ -206,5 +206,5 @@ If the **Open File** button isn't active, it's possible that you've reached the 
 
 ## More resources
 
-- [Support forums](http://forums.hololens.com/categories/3d-viewer-beta) - For archival purposes only. This forum is no longer active.
+- [Support forums](https://forums.hololens.com/categories/3d-viewer-beta) - For archival purposes only. This forum is no longer active.
 - [Third-party notices](https://www.microsoft.com/en-us/legal/third-party-notices)
