@@ -3,7 +3,7 @@ title: Deployment Guide - Corporate connected HoloLens 2 with Dynamics 365 Guide
 description: Learn how to set up configurations to deploy HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
-ms.author: millerevan
+ms.author: lolab
 ms.reviewer: aboeger
 ms.date: 03/24/2021
 ms.prod: hololens
@@ -65,7 +65,7 @@ To deploy certificates and profiles through Microsoft Endpoint Manager, follow t
     Your options:
     - **None**: No proxy settings are configured.
     - **Manually configure**: Enter the **Proxy server IP address** and its **Port number**.
-    - **Automatically configure**: Enter the URL pointing to a proxy auto configuration (PAC) script. For example, enter *http://proxy.contoso.com/proxy.pac*.
+    - **Automatically configure**: Enter the URL pointing to a proxy auto configuration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
 
     For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
  
