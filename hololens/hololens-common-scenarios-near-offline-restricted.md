@@ -53,7 +53,6 @@ Consider whether or not devices will be connected to a network during usage:
 - If devices are able to be connected, then more services can be used such as D365 Remote Assist or D365 Guides.
 - LOB applications can be developed to use local data storage either on device, or on a server contained within the organizations network.
 
-
 ### Governance processes for User Enrollment and Updates
 
 - Users will need to make their initial sign into the device when connected to the network. After setting up their PIN and IRIS, they can sign in offline.
@@ -125,4 +124,3 @@ Read more at [Using MDM to manage HoloLens devices](hololens-mdm-configure.md).
 
 > [!div class="nextstepaction"]
 > [Cloud connected deployment - Deploy](hololens2-cloud-connected-deploy.md)
-

@@ -297,4 +297,3 @@ If you no longer want to receive Insider builds of Windows Holographic, you have
 > 1. Locate the build number through **Settings** > **System** > **About**.
 > 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
 
-
