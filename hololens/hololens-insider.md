@@ -3,7 +3,7 @@ title: Insider preview for Microsoft HoloLens
 description: Learn how to get started with Insider builds and provide valuable feedback for our next major operating system update for HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: lolab
+author: lolambean
 ms.author: lolab
 manager: nazara
 ms.reviewer: bryanth
@@ -38,7 +38,7 @@ Looking for a new feature but don't see it? We released many new features as par
 > This next update is on a newer codebase than what currently is available in the main builds. After you update a device to this build, your device won't update to our monthly releases until those releases catch up to the newer codebase. If necessary, you can still flash your device to go back to the general release.
 
 | Feature   | Description  | User or scenario | Available in build |
-|-----------|--------------|------------------|---|
+|-----------|--------------|---|---|
 | [Store app update from Settings feature](#store-app-update-from-settings) | Introduces the option to manually check for app updates from the Settings app. | All | 10.0.22621.1061 |
 | [WebView2 control now available](#webview2-now-available) | The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. | Developer| 10.0.22621.1061 |
 | [Device reset requirements in the Settings Application](#device-reset-requirements-in-settings-app) | Devices must have sufficient battery and free disk space to perform a device reset. | All | 10.0.22621.1057 |
@@ -296,7 +296,4 @@ If you no longer want to receive Insider builds of Windows Holographic, you have
 >
 > 1. Locate the build number through **Settings** > **System** > **About**.
 > 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
-
-
-
 

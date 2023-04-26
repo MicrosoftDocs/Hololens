@@ -6,7 +6,7 @@ ms.date: 4/04/2022
 manager: sean.kerawala
 ms.prod: hololens
 ms.sitesec: library
-author: tmilligan
+author: typride
 ms.author: tmilligan
 ms.reviewer: mata
 ms.topic: article
