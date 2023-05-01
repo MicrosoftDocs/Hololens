@@ -74,12 +74,12 @@ Not sure what the indicator lights on your HoloLens mean? Want to know how HoloL
 
 | State of the Device | Action | HoloLens 2 will do this |
 | - | - | - |
-| OFF | Plug in USB Cable | Device transitions to ON with indicator lights showing battery level and device starts charging.
-| ON | Remove USB Cable | Device stops charging
-| ON | Plug in USB Cable | Device starts charging
-| SLEEP | Plug in USB Cable | Device starts charging
-| SLEEP | Remove USB Cable | Device stops charging
-| ON with USB cable plugged in | Turn off Device | Device transitions to ON with indicator lights showing battery level and device will start charging |
+| OFF | Plug in USB Cable | Device transitions to ON with indicator lights showing battery level and device starts charging.|
+| ON | Remove USB Cable | Device stops charging|
+| ON | Plug in USB Cable | Device starts charging|
+| SLEEP | Plug in USB Cable | Device starts charging|
+| SLEEP | Remove USB Cable | Device stops charging|
+| ON with USB cable plugged in | Press power button once | Device transitions to SLEEP with indicator lights showing battery level and device will start charging |
 
 ### Lights that indicate the battery level
 
@@ -121,3 +121,4 @@ See [product safety warnings and instructions](https://support.microsoft.com/hel
 
 > [!div class="nextstepaction"]
 > [Set up your HoloLens 2](hololens2-start.md)
+
