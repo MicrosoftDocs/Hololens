@@ -2,6 +2,19 @@
 
 
 
+## Week of April 24, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/26/2023 | [Update HoloLens 2](/hololens/hololens-update-hololens) | modified |
+| 4/26/2023 | [Manage HoloLens updates](/hololens/hololens-updates) | modified |
+| 4/26/2023 | [HoloLens 2 implementation and managed device troubleshooting](/hololens/hololens2-enterprise-troubleshooting) | modified |
+| 4/26/2023 | [HoloLens 2 editions](/hololens/hololens2-options) | modified |
+| 4/26/2023 | [Admin-less operating system security](/hololens/security-adminless-os) | modified |
+| 4/26/2023 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
+
+
 ## Week of April 10, 2023
 
 
@@ -127,12 +140,3 @@
 | 3/31/2023 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
 | 3/31/2023 | [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist - Overview](/hololens/hololens2-cloud-connected-overview) | modified |
 | 3/31/2023 | [HoloLens 2 Capabilities and Solutions](/hololens/hololens-commercial-features) | modified |
-
-
-## Week of March 13, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/14/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 3/15/2023 | [HoloLens 2 release notes for Windows Holographic, version 2004](/hololens/hololens-release-notes-2004) | modified |
