@@ -214,6 +214,8 @@ Organizations with scaled deployments of HoloLens 2 devices might encounter the 
 - When a user has been inactive on the device past a number of days, configurable via **ProfileInactivityThreshold.**
 - When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
 - When the device has reached the maximum number of supported users (64).
+
+For more details on how to get started, see the deployment guide under "[Share with multiple people, each using their own account](https://learn.microsoft.com/hololens/hololens-multiple-users#share-with-multiple-people-each-using-their-own-account)."
    
 ### Fixes and improvements
 
