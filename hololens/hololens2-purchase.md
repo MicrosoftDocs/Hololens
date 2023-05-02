@@ -109,6 +109,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Norway** | ATEA | Bjorn Hegle <br> <Bjorn.Hegle@atea.no> | [Buy HoloLens 2 - ATEA](https://www.atea.no/eshop/products/?filters=S_hololens) | [Buy HoloLens 2 Industrial Edition - ATEA](https://www.atea.no/eshop/product/microsoft-hololens-2/?prodid=4872099) |
 | **Poland** | Bechtle | Jagoda Leszcynska <br> <sales.direct-pl@bechtle.com> <br> Bartolomiej Szponar <br> <bartlomiej.szponar@bechtle.com> <br> Karolina Romanczuk <br> <karolina.romanczuk@bechtle.com> | [Buy Microsoft HoloLens 2 Smart Glasses (NJX-00014) (bechtle.com)](https://www.bechtle.com/pl-en/shop/microsoft-hololens-2-smart-glasses--4342628--p)  |  |
 | **Portugal** | Insight | Fernando Pereira <br> <info.es@insight.com> | | |
+| **South Africa** | Crimson Line | Louis Koen <br> <info@crimsonline.co.za> |  | |
 | **Spain** | Econocom | Alejandro Varas<br><alejandro.varas@econocom.com> |  | |
 | | Insight | Fernando Pereira <br> <info.es@insight.com> | | |
 | **Sweden** | ATEA | Andreas Bilen <br> <andreas.bilen@atea.se> | [Buy HoloLens 2 - ATEA](https://www.atea.se/eshop/products/?filters=S_hololens) | [Buy HoloLens 2 Industrial Edition - ATEA](https://www.atea.se/eshop/product/microsoft-hololens-2-industrial-edition-smarta-glasogon/?prodid=2147896) |
