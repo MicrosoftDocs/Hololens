@@ -34,15 +34,14 @@ In between our feature updates, we also release fixes and improvements as well a
 
 To help provide clarity, this release notes page will provide information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
 
-Note:  the current release version is the May 2023 Update, version 23H1, Build xxxx.
+Note:  the current release version is the May 2023 Update, version 23H1, Build 1105.
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
-| 22621                  | [Windows Holographic, version 23H1](#windows-holographic-version-23h1)   | May 2023     | 22621.xxxx   |
+| 22621                  | [Windows Holographic, version 23H1](#windows-holographic-version-23h1)   | May 2023     | 22621.1105|
 | 20348                  | [Windows Holographic, version 22H2](#windows-holographic-version-22h2) <br> [Windows Holographic, version 22H1](#windows-holographic-version-22h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2) <br> [Windows Holographic, version 21H1](#windows-holographic-version-21h1)  | November 2022 <br> April 2022 <br> October 2021 <br> May 2021   | 20348.1528 <br> 20348.1501 <br> 20348.1432 <br> 20346.1002   |
 | 19041                  | [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) <br> [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) | Nov 2020 <br> May 2020    | 19041.1128 <br> 19041.1103  |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
-
 
 ### How to find out which operating system version is on HoloLens?
 
@@ -63,7 +62,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 ## Windows Holographic, version 23H1
 
-- Build 22621.xxxx
+- Build 22621.1105
 
 Windows Holographic, version 23H1 is now available and brings a great set of new features to HoloLens 2 users and IT professionals. Check out all the new great features for HoloLens 2!
 
@@ -101,10 +100,6 @@ This checklist will help you know the new items that features that are being add
 ✔️ If you need to delete users from your HoloLens automatically, then see [Remove users on a device](#remove-users-on-a-device).
 
 ✔️ If you'd like to set a policy for your HoloLens devices to automatically reboot on a schedule you determine, then read how to [Reboot on a schedule](#reboot-csp-enabled-and-related-changes-in-intune).
-
-List of new or newly enabled policies:
-
------- add them here ----
 
 ### Store app update from Settings
 
@@ -220,21 +215,6 @@ Organizations with scaled deployments of HoloLens 2 devices might encounter the 
 - When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
 - When the device has reached the maximum number of supported users (64).
    
-Here's how to get started:
-
-1. Set the boolean value for **UserProfileManagement/EnableProfileManager** to **true**.
-
-1. Set the numerical **UserProfileManagement/ProfileInactivityThreshold**, which is the number of days a user must be inactive (not logged on to the device) before the user is deleted. The default value is **30**.
-1. Set **UserProfileManagement/StorageCapacityStartDeletion**, a numerical value representing the percentage of free space left when the device begins deleting the least recent users. The Default value is **25%**.
-
-1. Pair **UserProfileManagement/StorageCapacityStartDeletion** with **StorageCapacityStopDeletion** to determine when, based on the free storage percent, to stop deleting profiles.
-
-1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes both threshold and inactive users.
-
-   If the **UserProfileManagement/DeletionPolicy** is on, when the device reaches the maximum number of users and is trying to add another, the device deletes the oldest user automatically.
-
-To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
-
 ### Fixes and improvements
 
 - Introduced a Low-Signal depth mode that produces more complete depth measurements on dark and shiny objects.  This feature also improves Azure Object Anchoring detection on dark cars.
