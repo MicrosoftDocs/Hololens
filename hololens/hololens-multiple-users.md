@@ -94,7 +94,30 @@ To use HoloLens, each user follows these steps:
 > - **FIDO 2 Security key** : Your FIDO2 security key will be automatically recognized and the user won't need to type in their user credentials or use MFA. This is the fastest method to sign in on a new device.
 > - **Web authentication** : When you sign into a new device, you can select the link **Sign in from another device** which will generate a 9 character code you can use at [aka.ms/devicelogin](https://login.microsoftonline.com/common/oauth2/deviceauth) to either sign in as the user on the device, or type your user name and password using a keyboard for your convenience.
 
-To see a list of the device users or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**.
+To see a list of the device users or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**. You can also remove users on a device by following the instructions below.
+
+#### Remove users on a device
+
+Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
+
+- When a user has been inactive on the device past a number of days, configurable via **ProfileInactivityThreshold.**
+- When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
+- When the device has reached the maximum number of supported users (64).
+   
+Here's how to get started:
+
+1. Set the boolean value for **UserProfileManagement/EnableProfileManager** to **true**.
+
+1. Set the numerical **UserProfileManagement/ProfileInactivityThreshold**, which is the number of days a user must be inactive (not logged on to the device) before the user is deleted. The default value is **30**.
+1. Set **UserProfileManagement/StorageCapacityStartDeletion**, a numerical value representing the percentage of free space left when the device begins deleting the least recent users. The Default value is **25%**.
+
+1. Pair **UserProfileManagement/StorageCapacityStartDeletion** with **StorageCapacityStopDeletion** to determine when, based on the free storage percent, to stop deleting profiles.
+
+1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes both threshold and inactive users.
+
+   If the **UserProfileManagement/DeletionPolicy** is on, when the device reaches the maximum number of users and is trying to add another, the device deletes the oldest user automatically.
+
+To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
 
 ## Share with multiple people, all using the same account
 
@@ -107,3 +130,4 @@ There are two shared device methods available:
 - **Multiple end users sharing multiple devices** - HoloLens devices are in a shared storage space where employees can use any device. Examples would be an oil rig or an auto dealership/garage.
 
 When a new user puts on the device for the first time while keeping the same account signed in, the device prompts the user to quickly calibrate and personalize the viewing experience. The device will store the calibration information to automatically optimize the quality and comfort of each user's viewing experience. Users won't need to calibrate the device again.
+
