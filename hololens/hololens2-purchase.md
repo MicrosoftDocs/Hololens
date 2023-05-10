@@ -27,8 +27,7 @@ HoloLens 2 is now available in some countries outside of the US, along with some
 
 | HoloLens 2 Edition| Supported Market |
 |-------------------------------------------| ----------------------------------------|
-| HoloLens 2 | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
-| HoloLens 2 with Remote Assist | Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Korea, Malaysia, Netherlands, New Zealand, Norway, Singapore, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, US, and Vietnam<sup>1</sup> |
+| HoloLens 2 | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
 | HoloLens 2 Industrial Edition *(at launch)* | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
 | HoloLens 2 Development Edition | Australia, Canada, France, Germany, Ireland, Italy, Japan, New Zealand, Switzerland, UK, and US |
 
@@ -109,6 +108,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Norway** | ATEA | Bjorn Hegle <br> <Bjorn.Hegle@atea.no> | [Buy HoloLens 2 - ATEA](https://www.atea.no/eshop/products/?filters=S_hololens) | [Buy HoloLens 2 Industrial Edition - ATEA](https://www.atea.no/eshop/product/microsoft-hololens-2/?prodid=4872099) |
 | **Poland** | Bechtle | Jagoda Leszcynska <br> <sales.direct-pl@bechtle.com> <br> Bartolomiej Szponar <br> <bartlomiej.szponar@bechtle.com> <br> Karolina Romanczuk <br> <karolina.romanczuk@bechtle.com> | [Buy Microsoft HoloLens 2 Smart Glasses (NJX-00014) (bechtle.com)](https://www.bechtle.com/pl-en/shop/microsoft-hololens-2-smart-glasses--4342628--p)  |  |
 | **Portugal** | Insight | Fernando Pereira <br> <info.es@insight.com> | | |
+| **Saudi Arabia** | |  | | |
 | **Spain** | Econocom | Alejandro Varas<br><alejandro.varas@econocom.com> |  | |
 | | Insight | Fernando Pereira <br> <info.es@insight.com> | | |
 | **Sweden** | ATEA | Andreas Bilen <br> <andreas.bilen@atea.se> | [Buy HoloLens 2 - ATEA](https://www.atea.se/eshop/products/?filters=S_hololens) | [Buy HoloLens 2 Industrial Edition - ATEA](https://www.atea.se/eshop/product/microsoft-hololens-2-industrial-edition-smarta-glasogon/?prodid=2147896) |
@@ -117,3 +117,4 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **UK/Ireland** | Bechtle | Tori West <br> <tori.west@bechtle.com> | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/gb/shop/microsoft-hololens-2-smart-glasses--4342628-01--p) | [Buy HoloLens 2 Industrial Edition - Bechtle](https://www.bechtle.com/gb/shop/microsoft-hololens-2-ind-ed-smartglasses--4525629-01--p) |
 | | CDW | Abdullah Hayat<br><a.hayat@uk.cdw.com> |  |  |
 | | Insight | Malti Patel<br><malti.patel@insight.com> | [Buy HoloLens 2 - Insight](https://uk.insight.com/en_GB/shop/product/NJX-00002/MICROSOFT/NJX-00002/Microsoft-HoloLens-2-smart-glasses--64-GB/) | [Buy HoloLens 2 Industrial Edition - Insight](https://uk.insight.com/en_GB/shop/product/SSU-00002/MICROSOFT/SSU-00002/Microsoft-HoloLens-2-Industrial-Edition-smart-glasses--64-GB/) |
+
