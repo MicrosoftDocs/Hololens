@@ -28,7 +28,7 @@ HoloLens 2 is now available in some countries outside of the US, along with some
 | HoloLens 2 Edition| Supported Market |
 |-------------------------------------------| ----------------------------------------|
 | HoloLens 2 | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
-| HoloLens 2 Industrial Edition *(at launch)* | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
+| HoloLens 2 Industrial Edition *(at launch)* | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
 | HoloLens 2 Development Edition | Australia, Canada, France, Germany, Ireland, Italy, Japan, New Zealand, Switzerland, UK, and US |
 
 <sup>1</sup> This list is dynamic, check back for updates
@@ -117,5 +117,6 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **UK/Ireland** | Bechtle | Tori West <br> <tori.west@bechtle.com> | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/gb/shop/microsoft-hololens-2-smart-glasses--4342628-01--p) | [Buy HoloLens 2 Industrial Edition - Bechtle](https://www.bechtle.com/gb/shop/microsoft-hololens-2-ind-ed-smartglasses--4525629-01--p) |
 | | CDW | Abdullah Hayat<br><a.hayat@uk.cdw.com> |  |  |
 | | Insight | Malti Patel<br><malti.patel@insight.com> | [Buy HoloLens 2 - Insight](https://uk.insight.com/en_GB/shop/product/NJX-00002/MICROSOFT/NJX-00002/Microsoft-HoloLens-2-smart-glasses--64-GB/) | [Buy HoloLens 2 Industrial Edition - Insight](https://uk.insight.com/en_GB/shop/product/SSU-00002/MICROSOFT/SSU-00002/Microsoft-HoloLens-2-Industrial-Edition-smart-glasses--64-GB/) |
+
 
 
