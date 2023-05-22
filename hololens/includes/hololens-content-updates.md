@@ -2,6 +2,14 @@
 
 
 
+## Week of May 15, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/16/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+
+
 ## Week of May 08, 2023
 
 
@@ -30,12 +38,3 @@
 | 4/26/2023 | [HoloLens 2 editions](/hololens/hololens2-options) | modified |
 | 4/26/2023 | [Admin-less operating system security](/hololens/security-adminless-os) | modified |
 | 4/26/2023 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
-
-
-## Week of April 10, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/11/2023 | [HoloLens 2 release notes for Windows Holographic, version 2004](/hololens/hololens-release-notes-2004) | modified |
-| 4/11/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
