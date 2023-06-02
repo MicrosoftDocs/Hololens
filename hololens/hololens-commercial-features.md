@@ -71,6 +71,56 @@ What makes the HoloLens 2 so powerful?
 ## How HoloLens 2 is transforming industries
 
 :::row:::
+:::column:::
+
+![w11 image](media/hololens-commercial-features/w11-image.png)
+
+:::column-end:::
+:::column span="2":::
+### [Microsoft brings Windows 11 to HoloLens 2.](https://blogs.windows.com/windowsexperience/2023/04/13/microsoft-brings-windows-11-to-hololens-2/)
+HoloLens 2 is the industrial metaverse technology that our customers use to deliver immersive experiences that enable real-time collaboration and empower frontline workers. As part of our strategic commitment to HoloLens 2 and mixed reality, Microsoft is pleased to announce that Windows 11 is coming to HoloLens 2 as a free upgrade in H1 of this calendar year.
+:::column-end:::
+:::row-end:::
+
+:::row:::
+:::column:::
+
+![intuitive improvements](media/hololens-commercial-features/annotate-from-fingertips.jpg)
+
+:::column-end:::
+:::column span="2":::
+### [Intuitive Improvements to Dynamics 365 Guides.](https://techcommunity.microsoft.com/t5/mixed-reality-blog/intuitive-improvements-to-dynamics-365-guides/ba-p/3790361)
+Microsoft aims to make mixed reality accessible and intuitive for frontline workers everywhere. With Dynamics 365 Guides, deskless workers use step-by-step holographic instructions to ensure process compliance, improve efficiency, and learn on the job.
+:::column-end:::
+:::row-end:::
+
+:::row:::
+:::column:::
+
+![MR Annotations](media/hololens-commercial-features/mr-annotations.jpg)
+
+:::column-end:::
+:::column span="2":::
+### [Designing the New Mixed Reality Annotations.](https://techcommunity.microsoft.com/t5/mixed-reality-blog/designing-the-new-mixed-reality-annotations/ba-p/3791686)
+Improving reliability and introducing direct inking to Dynamics 365 Guides.
+:::column-end:::
+:::row-end:::
+
+:::row:::
+:::column:::
+
+![porsche image](media/hololens-commercial-features/porsche-image.jpg)
+
+
+
+:::column-end:::
+:::column span="2":::
+### [Porsche Cars North America delivers world-class service with Microsoft mixed reality and HoloLens 2.](https://customers.microsoft.com/en-US/story/1523387086361264063-porsche-cars-north-america-automotive-dynamics-365-guides-dynamics-365-remote-assist-hololens)
+To help its dealer partners better maintain customers’ vehicles, PCNA is using Microsoft HoloLens 2 and Dynamics 365 Mixed Reality apps—Dynamics 365 Guides and Dynamics 365 Remote Assist—to revolutionize the service experience.
+:::column-end:::
+:::row-end:::
+
+:::row:::
     :::column:::
         [<img src="images/TeamsInGuides-OverviewImage-1536x864.jpg" alt="Microsoft Teams on HoloLens" width=350px>](https://aka.ms/guidesupdates22)
     :::column-end:::
@@ -167,3 +217,4 @@ Learn about [Licensing Requirements](hololens-licenses-requirements.md) for the 
 
 > [!div class="nextstepaction"]
 >[Planning HoloLens 2 deployment](hololens-requirements.md) 
+
