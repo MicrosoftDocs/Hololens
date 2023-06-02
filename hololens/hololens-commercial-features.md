@@ -82,6 +82,8 @@ HoloLens 2 is the industrial metaverse technology that our customers use to deli
 :::column-end:::
 :::row-end:::
 
+---
+
 :::row:::
 :::column:::
 
@@ -94,6 +96,8 @@ Microsoft aims to make mixed reality accessible and intuitive for frontline work
 :::column-end:::
 :::row-end:::
 
+---
+
 :::row:::
 :::column:::
 
@@ -105,6 +109,8 @@ Microsoft aims to make mixed reality accessible and intuitive for frontline work
 Improving reliability and introducing direct inking to Dynamics 365 Guides.
 :::column-end:::
 :::row-end:::
+
+---
 
 :::row:::
 :::column:::
@@ -120,6 +126,8 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
 :::column-end:::
 :::row-end:::
 
+---
+
 :::row:::
     :::column:::
         [<img src="images/TeamsInGuides-OverviewImage-1536x864.jpg" alt="Microsoft Teams on HoloLens" width=350px>](https://aka.ms/guidesupdates22)
@@ -129,6 +137,8 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
         HoloLens 2 customers are using mixed reality to expedite the ways they ensure process compliance, improve efficiency, and learn on the job with Microsoft Teams features in Dynamics 365 Guides.
     :::column-end:::
 :::row-end:::
+
+---
 
 :::row:::
     :::column:::
