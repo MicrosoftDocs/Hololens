@@ -1,9 +1,9 @@
 ---
 title: HoloLens 2 release notes
 description: Stay up to date with all the updates in each new HoloLens 2 release.
-author: scooley
-ms.author: scooley
-manager: laurawi
+author: lolab
+ms.author: lolab
+manager: nazara
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
