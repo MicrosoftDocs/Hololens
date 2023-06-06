@@ -224,19 +224,11 @@ To learn more about these policies, visit [AccountManagement CSP](/windows/clien
 
 - Previously, it was possible to install an app in the device context via the EnterpriseModernAppManagement CSP.  It is now possible to uninstall an app in the device context as well.
 
-<img src="images/check-for-updates.png" width="500px" alt="Screenshot of how to check for updates in the Settings app.">
+- Introduced a Low-Signal depth mode that produces more complete depth measurements on dark and shiny objects.  This feature improves Azure Object Anchoring detection on dark cars.
 
-:::image type="content" alt-text ="This screenshot shows using OMA URI to configure the weekly reboot." source="./images/weekly-reboot-oma-uri.png":::
+- Updated flight build documentation to address broken device reset scenario and solution.
 
-
-Other fixes and improvements:
-
-•	Introduced a Low-Signal depth mode that produces more complete depth measurements on dark and shiny objects.  This feature improves Azure Object Anchoring detection on dark cars.
-
-•	Updated flight build documentation to address broken device reset scenario and solution.
-
-•	Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy.
-
+- Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy.
 
 ## Windows Holographic, version 22H2 - May 2023 Update
 
