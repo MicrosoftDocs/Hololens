@@ -205,20 +205,7 @@ Organizations with scaled deployments of HoloLens 2 devices might encounter the 
 - When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
 - When the device has reached the maximum number of supported users (64).
    
-Here's how to get started:
-
-1. Set the boolean value for **UserProfileManagement/EnableProfileManager** to **true**.
-
-1. Set the numerical **UserProfileManagement/ProfileInactivityThreshold**, which is the number of days a user must be inactive (not logged on to the device) before the user is deleted. The default value is **30**.
-1. Set **UserProfileManagement/StorageCapacityStartDeletion**, a numerical value representing the percentage of free space left when the device begins deleting the least recent users. The Default value is **25%**.
-
-1. Pair **UserProfileManagement/StorageCapacityStartDeletion** with **StorageCapacityStopDeletion** to determine when, based on the free storage percent, to stop deleting profiles.
-
-1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes both threshold and inactive users.
-
-   If the **UserProfileManagement/DeletionPolicy** is on, when the device reaches the maximum number of users and is trying to add another, the device deletes the oldest user automatically.
-
-To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
+To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp) or refer to [Share HoloLens with multiple people](/hololens/hololens-multiple-users/) section of the deployment guide.
 
 ### Fixes and improvements
 
