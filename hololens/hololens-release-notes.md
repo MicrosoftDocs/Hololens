@@ -17,7 +17,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# HoloLens 2 release notes
+# UpdHoloLens 2 release notes
 
 To ensure you have a productive experience with your HoloLens devices, we continue to release features, bug fixes, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
 
@@ -34,10 +34,11 @@ In between our feature updates, we also release fixes and improvements as well a
 
 To help provide clarity, this release notes page will provide information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
 
-Note:  the current release version is the May 2023 Update, Build 1543.
+Note:  the current release version is the June 2023 Update, Build 1113.
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
+| 22621| [Windows Holographic, version 23H1](#windows-holographic-version-23h1)   | June 2023     | 22621.1113   |
 | 20348                  | [Windows Holographic, version 22H2](#windows-holographic-version-22h2) <br> [Windows Holographic, version 22H1](#windows-holographic-version-22h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2) <br> [Windows Holographic, version 21H1](#windows-holographic-version-21h1)  | November 2022 <br> April 2022 <br> October 2021 <br> May 2021   | 20348.1528 <br> 20348.1501 <br> 20348.1432 <br> 20346.1002   |
 | 19041                  | [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-holographic-version-20h2) <br> [Windows Holographic, version 2004](hololens-release-notes-2004.md#windows-holographic-version-2004) | Nov 2020 <br> May 2020    | 19041.1128 <br> 19041.1103  |
 | 18362                  | [Windows Holographic, version 1903](hololens-release-notes-1903.md#windows-holographic-version-1903---november-2019-update)   | Nov 2019     | 18362.1039   |
@@ -58,6 +59,184 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+## Windows Holographic, version 23H1 - June 2023 Update
+
+- Build 22621.1113
+
+Windows Holographic, version 23H1 is now available and brings a great set of new features to HoloLens 2 users, IT professionals and developers. Check out all the new great features for HoloLens 2!
+
+HoloLens 2 is moving to Windows 11 as part of the 23H1 release. To upgrade, HoloLens 2 device(s) must be currently running 21H1 May 2021 update (build 20346.1002) or newer. If the 23H1 feature update is not available, please update your device and try again. If you are on a version that is older than Windows Holographic version 20H2 (Build 19041.1136), you will first need to update to the February 2021 update (build 19041.1136 or newer) before you update to the 21H1 May 2021 update (build 20346.1002) or newer. 
+
+Note:  With the introduction of Windows Holographic version 23H1, we are discontinuing monthly servicing updates for Windows Holographic version 20H2 (Build 19041.1128+). This enables us to focus on more recent releases and continue to deliver valuable improvements. 
+
+| Feature   | Description  | User or scenario | 
+|-----------|--------------|------------------|
+| [Store app update from Settings feature](#store-app-update-from-settings) | Introduces the option to manually check for app updates from the Settings app. | All |
+| [WebView2 control now available](#webview2-now-available) | The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. | Developer|
+| [Device reset requirements in the Settings Application](#device-reset-requirements-in-settings-app) | Devices must have sufficient battery and free disk space to perform a device reset. | All |
+| [Removing placements of an app in the mixed world](#removing-placements-of-apps-in-mixed-world) | An option to close one or all placements of an app is now available in the context menu. | All 
+| [Automatic update of Dynamics 365 Remote Assist and Dynamics 365 Guides during Autopilot flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow) | When provisioning a HoloLens 2 device using Autopilot, Dynamics 365 applications will update automatically. | IT Admin |
+| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes-in-intune) | Hololens now supports weekly scheduled reboots and other options. | IT Admin |
+| [Update available notification](#update-available-notification) | Shows user that update is available when looking at the start menu. | End User |
+| [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  |
+| [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what biometrics the device uses. | All |
+| [Remove users on device](#remove-users-on-a-device) | New policies to manage when to remove users from the device to prevent hitting the maximum limit. | IT Admin  |
+| [Fixes improvements](#fixes-and-improvements)  | Fixes and improvements for HoloLens. | All   |
+
+✔️ If you want to manage whether users can manually check for updates to Store apps from the Settings App, then see [Store app update from Settings](#store-app-update-from-settings).
+
+✔️ If you want to learn more about how D365 Apps will be automatically updated to the latest versions, then read [Automatic update during Autopilot Flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow).
+
+✔️ If you want to allow users to reset their device without requiring a manual flash, then see [Autopilot reset experience](#autopilot-reset-experience).
+
+✔️ If you need to delete users from your HoloLens automatically, then see [Remove users on a device](#remove-users-on-a-device).
+
+✔️ If you'd like to set a policy for your HoloLens devices to automatically [reboot on a schedule](#reboot-csp-enabled-and-related-changes-in-intune), then read on.
+
+### Store app update from Settings
+
+While apps from the Microsoft Store are kept up to date automatically by the device, sometimes you may want to manually check for updates to get those app updates sooner. Typically, this is done from within the Microsoft Store app. However, that option will not be available if the Microsoft Store is blocked in your environment. For such environments, you can now manually check for updates to Store apps from the Settings app under Apps -> App updates.
+
+IT admins will be able to block or allow this page with the [Settings/PageVisibilityList policy](/windows/client-management/mdm/policy-csp-settings#pagevisibilitylist) with the URI `ms-settings:appupdate`.
+
+See screenshot below of the Settings app where this feature can be seen.
+
+![Screenshot of Settings app](media/hololens-insider/microsoftteams-image-(2).png)
+
+
+### WebView2 Now Available
+
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2 as a Public Preview. The WebView2 control uses the new Chromium-based Microsoft Edge as the rendering engine to display the web content in native apps.
+With WebView2, you can embed web code in different parts of your native app or build all of the native app within a single WebView2 instance.
+
+![Image shows Native UI and WebView2 components in an app.](media/hololens-insider/webview2.jpg)
+
+To start building a WebView2 app, see [Get started with WebView2](/microsoft-edge/webview2/) for a general overview.  HoloLens specific documentation can be found at [Get started with WebView2 in HoloLens 2 Unity apps (Preview)](/microsoft-edge/webview2/get-started-hololens2/).
+
+The following is a list of known issues that will be addressed in future Insider release previews:
+
+- Input may not work properly when using popups and context menus.
+- Context menus may not be dismissible.  As a workaround, you may use a keyboard to type into the main window, or close and reopen the app.
+- There may be black borders on the edges of context menus.
+- Any app that uses WebView2 will require a manifest change until the May release of the WebView2 NuGet package is available.  Until then, all apps targeting HoloLens 2 will need to add the following manifest change.  Note that adding this change will prevent installation on non-HoloLens SKUs such as Desktop PC.  The required manifest details are:
+   
+`<Package`  
+`  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">`  
+`  <Dependencies>`  
+`    <PackageDependency Name="Microsoft.WebView2Runtime.Stable"`  
+`      Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`  
+`      MinVersion="1.0.0.0"/>`  
+`  </Dependencies>`  
+`</Package>`
+
+### Device Reset Requirements in Settings app
+
+In order for a device reset to complete successfully, the following two conditions must be met:  the device must have both sufficient battery charge and free disk space. On the Reset & recovery page, the Get started button will now only be enabled when the device meets a minimum of 40% of battery charge and 6GB free disk space thresholds.
+
+![Image showing device reset requirements in Settings app.](media/hololens-insider/device-reset.jpg)
+
+
+### Removing Placements of Apps in Mixed World
+
+You can now close all placements of an application in the mixed world by selecting the **Close all** (or **Close** when there is only one placement) option from that application’s context menu.  This feature is also available in Kiosk mode. Note: this menu option will only be available when an application has been placed in the mixed world. 
+
+![placement resized - use this](media/hololens-insider/placement-resized---use-this1.jpg)
+
+
+### Automatic update of Dynamics 365 Remote Assist and Guides During Autopilot Flow
+
+When provisioning a HoloLens 2 device using Autopilot, both the Dynamics 365 Remote Assist and Dynamics 365 Guides applications will now be automatically updated to the latest available versions. The update will take place immediately after the Azure Active Directory join is completed.
+
+### Reboot CSP enabled and related changes in Intune
+
+In addition to supporting scheduled single daily reboots, [Reboot CSP](/windows/client-management/mdm/reboot-csp) now supports scheduled weekly reboots.
+
+Create a custom OMA-URI device configuration profile as follows and apply it to a HoloLens device group:
+
+ :::image type="content" alt-text ="This screenshot shows using OMA URI to configure the weekly reboot." source="./images/weekly-reboot-oma-uri.png":::
+
+> [!NOTE]
+>
+> Setting Reboot CSP through the “Settings catalog” will be supported soon. Until then, use OMA-URI.
+
+1. For the OMA-URI field, specify any of these three options:
+
+   - `./Device/Vendor/MSFT/Reboot/Schedule/Single`
+   - `./Device/Vendor/MSFT/Reboot/Schedule/DailyRecurrent`
+   - `./Device/Vendor/MSFT/Reboot/Schedule/WeeklyRecurrent`
+
+   > [!NOTE]
+   >
+   > Setting both DailyRecurrent and WeeklyRecurrent configurations on the same device is not supported.
+
+1. For the **data type** field, choose **string**.
+
+1. For the **value** field, enter a date value for a starting date and time, such as *2023-01-06T10:35:00* to set DailyRecurrent reboots starting on the given date and *two minutes after* the set starting time daily. Similarly, setting WeeklyRecurrent reboots starting at the given date and *two minutes after* the starting time every seven days. For example, if you specify 10:00, the reboot will occur at 10:02.
+
+   > [!NOTE]
+   >
+   > The actual time of recurrent schedule reboots is about 2 minutes after the configured time. This delay is expected and intentional to preserve the operations and communication states.
+
+### Update available notification
+
+Having up-to-date devices is important. A previous feature improvement lets you see when updates are ready to *install*. With this new update, your device displays when an update is available to *download*. As with desktop devices, when an update is available, your Hololens displays a blue update circle icon. This icon is near your user icon.
+
+1. Select your user icon. The user context menu will open.
+1. Select **Download update** to launch the Settings app updates page that shows the update available to download.
+
+:::image type="content" alt-text="This screenshot shows the start menu context for OS updates." source="images/hl2-update-context-menu-crop-6in.png":::
+
+### Autopilot reset experience
+
+We've added a new setting to improve the Autopilot reset experience if Hololens 2 fails in certain installation scenarios. This setting lets users begin the Autopilot experience again without requiring a manual flash of HoloLens 2 devices. In the ESP configuration, set **Allow users to reset device if installation error occurs** to **Yes** and the device will display a "Reset device" button. If the user selects **Reset device**, after a delay of about 1 minute, HoloLens 2 will reset the operating system and OOBE experience.
+
+### Biometrics disclosure screen
+
+We've changed one of our OOBE screens before the device calibrates to show information on device usage for head, hand, and eye movements. Devices configured to skip calibration won't skip this biometrics disclosure screen, so all new users on a device will see device biometrics usage.  The purpose of this screen is to better inform users about the data being collected.  There are no changes to the data that is being collected.
+
+:::image type="content" alt-text="This screenshot shows the Biometrics OOBE window." source="images/biometrics-oobe-notification.jpg":::
+
+### Remove users on a device
+
+Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
+
+- When a user has been inactive on the device past a number of days, configurable via **ProfileInactivityThreshold.**
+- When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
+- When the device has reached the maximum number of supported users (64).
+   
+Here's how to get started:
+
+1. Set the boolean value for **UserProfileManagement/EnableProfileManager** to **true**.
+
+1. Set the numerical **UserProfileManagement/ProfileInactivityThreshold**, which is the number of days a user must be inactive (not logged on to the device) before the user is deleted. The default value is **30**.
+1. Set **UserProfileManagement/StorageCapacityStartDeletion**, a numerical value representing the percentage of free space left when the device begins deleting the least recent users. The Default value is **25%**.
+
+1. Pair **UserProfileManagement/StorageCapacityStartDeletion** with **StorageCapacityStopDeletion** to determine when, based on the free storage percent, to stop deleting profiles.
+
+1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes both threshold and inactive users.
+
+   If the **UserProfileManagement/DeletionPolicy** is on, when the device reaches the maximum number of users and is trying to add another, the device deletes the oldest user automatically.
+
+To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
+
+### Fixes and improvements
+
+- Previously, it was possible to install an app in the device context via the EnterpriseModernAppManagement CSP.  It is now possible to uninstall an app in the device context as well.
+
+<img src="images/check-for-updates.png" width="500px" alt="Screenshot of how to check for updates in the Settings app.">
+
+:::image type="content" alt-text ="This screenshot shows using OMA URI to configure the weekly reboot." source="./images/weekly-reboot-oma-uri.png":::
+
+
+Other fixes and improvements:
+
+•	Introduced a Low-Signal depth mode that produces more complete depth measurements on dark and shiny objects.  This feature improves Azure Object Anchoring detection on dark cars.
+
+•	Updated flight build documentation to address broken device reset scenario and solution.
+
+•	Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy.
+
 
 ## Windows Holographic, version 22H2 - May 2023 Update
 
@@ -854,11 +1033,9 @@ This update contains features for two target audiences; features that can be use
 
 >[!NOTE]
 >Today, Microsoft HoloLens 2 supports monthly servicing updates (bug and security fixes) for the following releases:
->
 >- Windows Holographic, version 20H2 (Build 19041.1128+)
 >- Windows Holographic, version 2004 (Build 19041.1103+)
 >- Windows Holographic, version 1903 (Build 18362+)
->
 > With the introduction of Windows Holographic version 21H1, **we are discontinuing monthly servicing updates for Windows Holographic version 1903**. This enables us to focus on more recent releases and continue to deliver valuable improvements.
 
 | Feature Name                                              | Short description                                                                      | Target Audience |
@@ -1063,9 +1240,10 @@ With this release, we're introducing a new version of the Settings app. The new 
 
 - Settings search: search for settings from the Settings homepage using keywords or the setting's name.
 - System > Sound:
-  - Input and output audio devices: independently choose your input and output audio devices (for example, listen to audio via Bluetooth headphones or use a USB-C microphone for audio input).
-    > [!NOTE]
-    > Bluetooth microphones are not supported by HoloLens 2.
+
+> [!NOTE]
+> Bluetooth microphones are not supported by HoloLens 2.
+
   - App volume: independently adjust the volume of each app. See [per app volume control](#per-app-volume-control).
 - System > Power & sleep: choose when the device should go to sleep after a period of inactivity.
 - System > Battery: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically.
@@ -1098,8 +1276,10 @@ With this new setting, you can select an alternative color profile for your Holo
 1. Under **Display color calibration**, select the **Run display color calibration** button.
 1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position.
 1. After you proceed through the instruction dialog boxes, your display will automatically be dimmed to 30% brightness.
-    > [!TIP]
-    > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
+
+y=>y.attrs.isDirty&&!E0(y)&&y.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*y.attrs.depth),l.delim):""> [!TIP]
+y=>y.attrs.isDirty&&!E0(y)&&y.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*y.attrs.depth),l.delim):""> If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
+y=>y.attrs.isDirty&&!E0(y)&&y.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*y.attrs.depth),l.delim):""
 1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
 
     ![Display color calibration scene.](images/color-cal-ui.png)
