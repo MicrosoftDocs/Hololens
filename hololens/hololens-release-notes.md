@@ -84,6 +84,8 @@ Note:  With the introduction of Windows Holographic version 23H1, we are discont
 | [Remove users on device](#remove-users-on-a-device) | New policies to manage when to remove users from the device to prevent hitting the maximum limit. | IT Admin  |
 | [Fixes improvements](#fixes-and-improvements)  | Fixes and improvements for HoloLens. | All   |
 
+### IT Admin Checklist
+
 ✔️ If you want to manage whether users can manually check for updates to Store apps from the Settings App, then see [Store app update from Settings](#store-app-update-from-settings).
 
 ✔️ If you want to learn more about how D365 Apps will be automatically updated to the latest versions, then read [Automatic update during Autopilot Flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow).
