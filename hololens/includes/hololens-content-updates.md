@@ -2,6 +2,14 @@
 
 
 
+## Week of June 05, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/5/2023 | [HoloLens 2 capabilities and solutions](/hololens/hololens-commercial-features) | modified |
+
+
 ## Week of May 29, 2023
 
 
@@ -39,11 +47,3 @@
 |------|------------|--------|
 | 5/10/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
 | 5/13/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
-
-
-## Week of May 01, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 5/2/2023 | [Prepare a new HoloLens 2](/hololens/hololens2-setup) | modified |
