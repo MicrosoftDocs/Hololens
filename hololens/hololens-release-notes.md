@@ -17,7 +17,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# UpdHoloLens 2 release notes
+# HoloLens 2 release notes
 
 To ensure you have a productive experience with your HoloLens devices, we continue to release features, bug fixes, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
 
@@ -114,7 +114,7 @@ With WebView2, you can embed web code in different parts of your native app or b
 
 ![Image shows Native UI and WebView2 components in an app.](media/hololens-insider/webview2.jpg)
 
-To start building a WebView2 app, see [Get started with WebView2](/microsoft-edge/webview2/) for a general overview.  HoloLens specific documentation can be found at [Get started with WebView2 in HoloLens 2 Unity apps (Preview)](/microsoft-edge/webview2/get-started-hololens2/).
+To start building a WebView2 app, see [Get started with WebView2](/microsoft-edge/webview2/) for a general overview.  HoloLens specific documentation can be found at [Get started with WebView2 in HoloLens 2 Unity apps (Preview)](/microsoft-edge/webview2/get-started/hololens2).
 
 The following is a list of known issues that will be addressed in future Insider release previews:
 
@@ -972,8 +972,9 @@ We've added a new feature to the HoloLens 2 Settings app, which allows customers
 
 - Visit **Settings > System > Mixed Reality Camera** to enable "Camera upload."
 - By setting this feature to the **On** position, any mixed reality photos or videos captured to your device will automatically be queued for upload to the Pictures > Camera Roll folder of your OneDrive for work or school account.
-    >[!NOTE]
-    >Photos and videos captured prior to enabling this feature *will not* be queued for upload and will still need to be manually uploaded.
+- > [!NOTE]
+A=>A.attrs.isDirty&&!Gp(A)&&A.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*A.attrs.depth),l.delim):""> Photos and videos captured prior to enabling this feature *will not* be queued for upload and will still need to be manually uploaded.
+A=>A.attrs.isDirty&&!Gp(A)&&A.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*A.attrs.depth),l.delim):""
 - A status message on the Settings page will display the number of files pending upload (or read "OneDrive is up to date" when all pending files have been uploaded).
 - If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files won’t upload until you re-enable the feature.
 - Newest files will upload first (last in, first out).
@@ -1011,13 +1012,6 @@ Improvements and fixes in the update:
 This update contains features for two target audiences; features that can be used by anyone on a device by the End User, and new device management options that can be configured by IT Admins. The table below specifies the features that are relevant to each audience. If you’re an IT Admin, please take a look at our [IT Admin - Update Checklist](#it-admin---update-checklist---21h1).
 >[!IMPORTANT]
 >In order to update to this build, HoloLens 2 device(s) must be currently running the February 2021 update (build 19041.1136) or newer. If you are not seeing this feature update available, please update your device first and try again.
-
->[!NOTE]
->Today, Microsoft HoloLens 2 supports monthly servicing updates (bug and security fixes) for the following releases:
->- Windows Holographic, version 20H2 (Build 19041.1128+)
->- Windows Holographic, version 2004 (Build 19041.1103+)
->- Windows Holographic, version 1903 (Build 18362+)
-> With the introduction of Windows Holographic version 21H1, **we are discontinuing monthly servicing updates for Windows Holographic version 1903**. This enables us to focus on more recent releases and continue to deliver valuable improvements.
 
 | Feature Name                                              | Short description                                                                      | Target Audience |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -1075,14 +1069,6 @@ Here are some helpful resources for learning more about managing policy settings
 - [Microsoft Edge Legacy to Microsoft Edge policy mapping](/microsoft-edge/deploy/group-policies/)
 - [Google Chrome to Microsoft Edge policy mapping](/deployedge/microsoft-edge-policies)
 - Full [Microsoft Edge Enterprise documentation](/deployedge/)
-
-> [!IMPORTANT]
-> Because of the volume of browser policies supported by the new Microsoft Edge, our team is unable to guarantee that each new policy works on HoloLens 2. However, we've tested and confirmed than the new Microsoft Edge equivalent of each legacy Microsoft Edge policy previously supported on HoloLens 2 work as expected. See [Microsoft Edge Legacy to Microsoft Edge policy mapping](/microsoft-edge/deploy/group-policies/) to find the new Microsoft Edge equivalent of each legacy Microsoft Edge browser policy you were using with HoloLens 2.
->
-> There are at least two new Microsoft Edge policies that we know *will not* work with HoloLens 2:
->
-> - EnterpriseModeSiteList
-> - EnterpriseSiteListServiceURL
 
 #### What to expect from the new Microsoft Edge on HoloLens 2
 
@@ -1346,22 +1332,12 @@ Introduced in this Windows build, when selecting **Other user** which is located
 
 When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign-in screen for this user.
 
-![Sign-in screen default.](./images/multiusers1.jpg)
-
-<br>
-
-![Sign-in screen other users.](./images/multiusers2.jpg)
-
-### USB-C External Microphone Support
-
 > [!IMPORTANT]
 > Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
 
 Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C microphones can be used for calling, recording, etc.
 
 Open the **Settings** app and select **System** > **Sound**.
-
-![Sound Settings.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > To use external microphones with **Remote Assist**, users will need to click the “Manage sound devices” hyperlink.
