@@ -973,8 +973,8 @@ We've added a new feature to the HoloLens 2 Settings app, which allows customers
 - Visit **Settings > System > Mixed Reality Camera** to enable "Camera upload."
 - By setting this feature to the **On** position, any mixed reality photos or videos captured to your device will automatically be queued for upload to the Pictures > Camera Roll folder of your OneDrive for work or school account.
 - > [!NOTE]
-A=>A.attrs.isDirty&&!Gp(A)&&A.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*A.attrs.depth),l.delim):""> Photos and videos captured prior to enabling this feature *will not* be queued for upload and will still need to be manually uploaded.
-A=>A.attrs.isDirty&&!Gp(A)&&A.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*A.attrs.depth),l.delim):""
+  > Photos and videos captured prior to enabling this feature *will not* be queued for upload and will still need to be manually uploaded.
+
 - A status message on the Settings page will display the number of files pending upload (or read "OneDrive is up to date" when all pending files have been uploaded).
 - If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files won’t upload until you re-enable the feature.
 - Newest files will upload first (last in, first out).
