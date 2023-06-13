@@ -1254,14 +1254,6 @@ y=>y.attrs.isDirty&&!E0(y)&&y.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*y.att
 1. When you're happy with the selected profile, select the **Save & Exit** button
 1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
 
-> [!TIP]
-> Here are some helpful tips to keep in mind while using the display color calibration setting:
->
-> - You can re-run display color calibration from Settings whenever you'd like
-> - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change will be reflected on the Settings page
-> - When you re-run display color calibration, the color profile that was previously saved will be highlighted and Profile 0 will not appear (as Profile 0 represents the display's original color profile)
-> - If you want to revert to the display's original color profile, you can do so from the Settings page (see [how to reset color profile](#how-to-reset-color-profile))
-
 ##### How to reset color profile
 
 If you're unhappy with the custom color profile saved to your HoloLens 2, you can restore the device's original color profile:
@@ -1331,6 +1323,8 @@ Previously the Sign-in screen showed only the most recently signed in user, as w
 Introduced in this Windows build, when selecting **Other user** which is located to the right of the PIN entry field, the Sign-in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other users page via the **Add account** button.
 
 When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign-in screen for this user.
+
+### USB-C External Microphone Support
 
 > [!IMPORTANT]
 > Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
