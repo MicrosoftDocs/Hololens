@@ -973,8 +973,8 @@ We've added a new feature to the HoloLens 2 Settings app, which allows customers
 - Visit **Settings > System > Mixed Reality Camera** to enable "Camera upload."
 - By setting this feature to the **On** position, any mixed reality photos or videos captured to your device will automatically be queued for upload to the Pictures > Camera Roll folder of your OneDrive for work or school account.
 - > [!NOTE]
-A=>A.attrs.isDirty&&!Gp(A)&&A.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*A.attrs.depth),l.delim):""> Photos and videos captured prior to enabling this feature *will not* be queued for upload and will still need to be manually uploaded.
-A=>A.attrs.isDirty&&!Gp(A)&&A.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*A.attrs.depth),l.delim):""
+  > Photos and videos captured prior to enabling this feature *will not* be queued for upload and will still need to be manually uploaded.
+
 - A status message on the Settings page will display the number of files pending upload (or read "OneDrive is up to date" when all pending files have been uploaded).
 - If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files won’t upload until you re-enable the feature.
 - Newest files will upload first (last in, first out).
@@ -1331,6 +1331,8 @@ Previously the Sign-in screen showed only the most recently signed in user, as w
 Introduced in this Windows build, when selecting **Other user** which is located to the right of the PIN entry field, the Sign-in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other users page via the **Add account** button.
 
 When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign-in screen for this user.
+
+### USB-C External Microphone Support
 
 > [!IMPORTANT]
 > Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
