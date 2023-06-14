@@ -104,7 +104,7 @@ A known issue is that when the device reaches 18% battery, it will shut down une
 ## **Fixed** - OneDrive UWP app doesn't work for Azure AD users
 
 > [!NOTE]
-> This issue is resolved in all apps that are version 19.xx and higher. If you still experience the same sign in issue while using app version 19.23.17 or later, please [send Feedback](hololens-feedback.md) then [contact support](https://aka.ms/hololenssupport) and share the Feedback item URL.
+> This issue is resolved in all apps that are version 19.xx and higher. If you still experience the same sign in issue while using app version 19.xx or later, please [send Feedback](hololens-feedback.md) then [contact support](https://aka.ms/hololenssupport) and share the Feedback item URL.
 > Follow these [instructions to update your OneDrive app.](holographic-store-apps.md#update-apps) You can check which version of OneDrive you have by using the Microsoft Store app, then select the "See more" button represented by the **...** then select **Downloads and updates**.
 > 
 
