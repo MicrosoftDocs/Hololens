@@ -1,14 +1,14 @@
 ---
 title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
-author: evmill
-ms.author: millerevan
+author: lolab
+ms.author: lolab
 ms.date: 7/26/2022
 ms.localizationpriority:
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
-manager: lolab
+manager: nazara
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -104,11 +104,11 @@ A known issue is that when the device reaches 18% battery, it will shut down une
 ## **Fixed** - OneDrive UWP app doesn't work for Azure AD users
 
 > [!NOTE]
-> This issue resolved in app version 19.23.17. If you still experience the same sign in issue while using app version 19.23.17 or later, please [send Feedback](hololens-feedback.md) then [contact support](https://aka.ms/hololenssupport) and share the Feedback item URL.
->
+> This issue is resolved in all apps that are version 19.xx and higher. If you still experience the same sign in issue while using app version 19.xx or later, please [send Feedback](hololens-feedback.md) then [contact support](https://aka.ms/hololenssupport) and share the Feedback item URL.
 > Follow these [instructions to update your OneDrive app.](holographic-store-apps.md#update-apps) You can check which version of OneDrive you have by using the Microsoft Store app, then select the "See more" button represented by the **...** then select **Downloads and updates**.
+> 
 
-If you use OneDrive For Business using your Azure AD account, you may have encountered an error when signing in to your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage. The OneDrive and HoloLens teams are working on the issue.
+If you use OneDrive For Business using your Azure AD account, you may have encountered an error when signing into your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage.
 
 ### Workarounds
 
@@ -573,3 +573,4 @@ If you're having trouble using a Bluetooth device, make sure that it's a support
 You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
 
 [Back to list](#list)
+
