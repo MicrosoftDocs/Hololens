@@ -1440,9 +1440,6 @@ Now in Settings App, a user can configure the behavior of [Fallback Diagnostics]
 > [!NOTE]
 > If there is MDM policy configured for the device, user will not be able to override that behavior.  
 
-> [!NOTE]
-> If there is MDM policy configured for the device, user will not be able to override that behavior.  
-
 ### Share things with nearby devices
 
 Share things with near by Windows 10 devices, including both PCs and other HoloLens 2 devices. You can try it out in **Settings** > **System** > **Shared Experiences** to share files or URLs from a HoloLens to a PC. For more details read more about how to [Share things with nearby devices in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
