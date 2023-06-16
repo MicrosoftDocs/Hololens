@@ -1400,11 +1400,6 @@ We are expanding upon the list of available Settings URIs, which IT Admins can m
 >
 > One settings page is deprecated in these newer builds. The old **Network & Internet** > **Proxy** page is no longer available as a global setting. The new per-connection proxy settings can be found under **Network & Internet** > **Wi-Fi** > **Properties** or **Network & Internet** > **Ethernet** > **Properties**.
 
-> [!NOTE]
-> **Deprecated: ms-settings:network-proxy**
->
-> One settings page is deprecated in these newer builds. The old **Network & Internet** > **Proxy** page is no longer available as a global setting. The new per-connection proxy settings can be found under **Network & Internet** > **Wi-Fi** > **Properties** or **Network & Internet** > **Ethernet** > **Properties**.
-
 | Settings page                                        | URI                                              |
 |------------------------------------------------------|--------------------------------------------------|
 | Apps > Apps & features                               | `ms-settings:appsfeatures`                         |
