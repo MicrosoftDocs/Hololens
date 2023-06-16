@@ -1334,13 +1334,6 @@ Open the **Settings** app and select **System** > **Sound**.
 >
 > Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
 
-> [!IMPORTANT]
-> To use external microphones with **Remote Assist**, users will need to click the “Manage sound devices” hyperlink.
->
-> Then use the drop-down to set the external microphone as either **Default** or **Communications Default.** Choosing **Default** means that the external microphone will be used everywhere.
->
-> Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
-
 #### What about Bluetooth microphone support?
 
 Unfortunately Bluetooth microphones are still not currently supported on HoloLens 2.
