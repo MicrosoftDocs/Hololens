@@ -1511,7 +1511,7 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 ✔️ [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app): You may configure if and who may collect Fallback Diagnostics.
 
-✔️[Share things with nearby devices](#share-things-with-nearby-devices): You may disable the new nearby sharing feature.
+✔️ [Share things with nearby devices](#share-things-with-nearby-devices): You may disable the new nearby sharing feature.
 
 ✔️ [Configuring policy settings for the new Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge): Review the new configurations available for Microsoft Edge.
 
