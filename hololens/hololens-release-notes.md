@@ -1230,9 +1230,9 @@ With this new setting, you can select an alternative color profile for your Holo
 1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position.
 1. After you proceed through the instruction dialog boxes, your display will automatically be dimmed to 30% brightness.
 
-y=>y.attrs.isDirty&&!E0(y)&&y.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*y.attrs.depth),l.delim):""> [!TIP]
-y=>y.attrs.isDirty&&!E0(y)&&y.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*y.attrs.depth),l.delim):""> If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
-y=>y.attrs.isDirty&&!E0(y)&&y.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*y.attrs.depth),l.delim):""
+  > [!TIP]
+  > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
+
 1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
 
     ![Display color calibration scene.](images/color-cal-ui.png)
