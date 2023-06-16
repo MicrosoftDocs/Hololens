@@ -116,21 +116,7 @@ With WebView2, you can embed web code in different parts of your native app or b
 
 To start building a WebView2 app, see [Get started with WebView2](/microsoft-edge/webview2/) for a general overview.  HoloLens specific documentation can be found at [Get started with WebView2 in HoloLens 2 Unity apps (Preview)](/microsoft-edge/webview2/get-started/hololens2).
 
-The following is a list of known issues that will be addressed in future Insider release previews:
-
-- Input may not work properly when using popups and context menus.
-- Context menus may not be dismissible.  As a workaround, you may use a keyboard to type into the main window, or close and reopen the app.
-- There may be black borders on the edges of context menus.
-- Any app that uses WebView2 will require a manifest change until the May release of the WebView2 NuGet package is available.  Until then, all apps targeting HoloLens 2 will need to add the following manifest change.  Note that adding this change will prevent installation on non-HoloLens SKUs such as Desktop PC.  The required manifest details are:
-   
-`<Package`  
-`  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">`  
-`  <Dependencies>`  
-`    <PackageDependency Name="Microsoft.WebView2Runtime.Stable"`  
-`      Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`  
-`      MinVersion="1.0.0.0"/>`  
-`  </Dependencies>`  
-`</Package>`
+For HoloLens 2 development, the **Microsoft.Web.WebView2** package must be version 1.0.1722.45 or higher, which may be higher than the default. For Unity developers, the **Microsoft Mixed Reality WebView plugin for Unity** already includes at least this version.
 
 ### Device Reset Requirements in Settings app
 
@@ -1244,9 +1230,9 @@ With this new setting, you can select an alternative color profile for your Holo
 1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position.
 1. After you proceed through the instruction dialog boxes, your display will automatically be dimmed to 30% brightness.
 
-y=>y.attrs.isDirty&&!E0(y)&&y.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*y.attrs.depth),l.delim):""> [!TIP]
-y=>y.attrs.isDirty&&!E0(y)&&y.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*y.attrs.depth),l.delim):""> If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
-y=>y.attrs.isDirty&&!E0(y)&&y.attrs.depth!==void 0?(l.delim=l.repeat(" ",3*y.attrs.depth),l.delim):""
+    > [!TIP]
+    > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
+
 1. Select buttons 1-6 to instantly try out each color profile, and find one that looks the best to your eyes (this usually means the profile that helps the scene appear most neutral, with the grayscale pattern and skin tones looking as expected.)
 
     ![Display color calibration scene.](images/color-cal-ui.png)
@@ -1525,7 +1511,7 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 ✔️ [Configure Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app): You may configure if and who may collect Fallback Diagnostics.
 
-✔️[Share things with nearby devices](#share-things-with-nearby-devices): You may disable the new nearby sharing feature.
+✔️ [Share things with nearby devices](#share-things-with-nearby-devices): You may disable the new nearby sharing feature.
 
 ✔️ [Configuring policy settings for the new Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge): Review the new configurations available for Microsoft Edge.
 
