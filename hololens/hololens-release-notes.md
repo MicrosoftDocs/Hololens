@@ -116,7 +116,21 @@ With WebView2, you can embed web code in different parts of your native app or b
 
 To start building a WebView2 app, see [Get started with WebView2](/microsoft-edge/webview2/) for a general overview.  HoloLens specific documentation can be found at [Get started with WebView2 in HoloLens 2 Unity apps (Preview)](/microsoft-edge/webview2/get-started/hololens2).
 
-For HoloLens 2 development, the **Microsoft.Web.WebView2** package must be version 1.0.1722.45 or higher, which may be higher than the default. For Unity developers, the **Microsoft Mixed Reality WebView plugin for Unity** already includes at least this version.
+The following is a list of known issues that will be addressed in future Insider release previews:
+
+- Input may not work properly when using popups and context menus.
+- Context menus may not be dismissible.  As a workaround, you may use a keyboard to type into the main window, or close and reopen the app.
+- There may be black borders on the edges of context menus.
+- Any app that uses WebView2 will require a manifest change until the May release of the WebView2 NuGet package is available.  Until then, all apps targeting HoloLens 2 will need to add the following manifest change.  Note that adding this change will prevent installation on non-HoloLens SKUs such as Desktop PC.  The required manifest details are:
+   
+`<Package`  
+`  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">`  
+`  <Dependencies>`  
+`    <PackageDependency Name="Microsoft.WebView2Runtime.Stable"`  
+`      Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`  
+`      MinVersion="1.0.0.0"/>`  
+`  </Dependencies>`  
+`</Package>`
 
 ### Device Reset Requirements in Settings app
 
@@ -1323,19 +1337,9 @@ When in the Other users menu, the Other users button will display the last user 
 > [!IMPORTANT]
 > Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
 
-> [!IMPORTANT]
-> Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
-
 Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C microphones can be used for calling, recording, etc.
 
 Open the **Settings** app and select **System** > **Sound**.
-
-> [!IMPORTANT]
-> To use external microphones with **Remote Assist**, users will need to click the “Manage sound devices” hyperlink.
->
-> Then use the drop-down to set the external microphone as either **Default** or **Communications Default.** Choosing **Default** means that the external microphone will be used everywhere.
->
-> Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
 
 > [!IMPORTANT]
 > To use external microphones with **Remote Assist**, users will need to click the “Manage sound devices” hyperlink.
@@ -1410,11 +1414,6 @@ We are expanding upon the list of available Settings URIs, which IT Admins can m
 >
 > One settings page is deprecated in these newer builds. The old **Network & Internet** > **Proxy** page is no longer available as a global setting. The new per-connection proxy settings can be found under **Network & Internet** > **Wi-Fi** > **Properties** or **Network & Internet** > **Ethernet** > **Properties**.
 
-> [!NOTE]
-> **Deprecated: ms-settings:network-proxy**
->
-> One settings page is deprecated in these newer builds. The old **Network & Internet** > **Proxy** page is no longer available as a global setting. The new per-connection proxy settings can be found under **Network & Internet** > **Wi-Fi** > **Properties** or **Network & Internet** > **Ethernet** > **Properties**.
-
 | Settings page                                        | URI                                              |
 |------------------------------------------------------|--------------------------------------------------|
 | Apps > Apps & features                               | `ms-settings:appsfeatures`                         |
@@ -1451,9 +1450,6 @@ Previously the following two URIs would not take a user directly to the pages in
 ### Configuring Fallback Diagnostics via Settings app
 
 Now in Settings App, a user can configure the behavior of [Fallback Diagnostics](hololens-diagnostic-logs.md). In the Settings app navigate to **Privacy** > **Troubleshooting** page to configure this setting.
-
-> [!NOTE]
-> If there is MDM policy configured for the device, user will not be able to override that behavior.  
 
 > [!NOTE]
 > If there is MDM policy configured for the device, user will not be able to override that behavior.  
