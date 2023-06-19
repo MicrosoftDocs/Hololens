@@ -2,6 +2,19 @@
 
 
 
+## Week of June 12, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/13/2023 | [HoloLens 2 capabilities and solutions](/hololens/hololens-commercial-features) | modified |
+| 6/13/2023 | [Share your HoloLens with multiple people](/hololens/hololens-multiple-users) | modified |
+| 6/13/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 6/14/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 6/15/2023 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
+| 6/16/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+
+
 ## Week of June 05, 2023
 
 
@@ -38,12 +51,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 5/16/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
-
-
-## Week of May 08, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 5/10/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 5/13/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
