@@ -1,14 +1,14 @@
 ---
 title: HoloLens Device Troubleshooting
 description: Stay up to date on the most common solutions to HoloLens device issues and troubleshooting techniques.
-author: evmill
-ms.author: millerevan
+author: lolab
+ms.author: lolab
 ms.date: 7/26/2022
 ms.localizationpriority:
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
-manager: lolab
+manager: nazara
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -36,6 +36,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Known Issues
 
+- [Update indicator may still be visible after OS update](#update-indicator-may-still-be-visible-after-os-update)
 - [Resetting a device with low space doesn't reset](#resetting-a-device-with-low-space-doesnt-reset)
 - [Remote Wipe doesn't remove device from Intune](#remote-wipe-doesnt-remove-device-from-intune)
 - [Devices not getting the latest feature updates](#devices-not-getting-the-latest-feature-updates)
@@ -104,11 +105,11 @@ A known issue is that when the device reaches 18% battery, it will shut down une
 ## **Fixed** - OneDrive UWP app doesn't work for Azure AD users
 
 > [!NOTE]
-> This issue resolved in app version 19.23.17. If you still experience the same sign in issue while using app version 19.23.17 or later, please [send Feedback](hololens-feedback.md) then [contact support](https://aka.ms/hololenssupport) and share the Feedback item URL.
->
+> This issue is resolved in all apps that are version 19.xx and higher. If you still experience the same sign in issue while using app version 19.xx or later, please [send Feedback](hololens-feedback.md) then [contact support](https://aka.ms/hololenssupport) and share the Feedback item URL.
 > Follow these [instructions to update your OneDrive app.](holographic-store-apps.md#update-apps) You can check which version of OneDrive you have by using the Microsoft Store app, then select the "See more" button represented by the **...** then select **Downloads and updates**.
+> 
 
-If you use OneDrive For Business using your Azure AD account, you may have encountered an error when signing in to your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage. The OneDrive and HoloLens teams are working on the issue.
+If you use OneDrive For Business using your Azure AD account, you may have encountered an error when signing into your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage.
 
 ### Workarounds
 
@@ -178,6 +179,14 @@ Workarounds before the fix:
 - If you can’t safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 [Back to list](#list)
+
+## Update indicator may still be visible after OS update
+
+After taking an OS update, users may still see the [update indicator](hololens-release-notes.md#update-indicator) menu even though there is no additional update available.
+
+### Workaround for update indicator
+
+The update indicator menu will correct itself.  No further action is required.
 
 ## Resetting a device with low space doesn't reset
 
@@ -573,3 +582,4 @@ If you're having trouble using a Bluetooth device, make sure that it's a support
 You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
 
 [Back to list](#list)
+
