@@ -40,7 +40,7 @@ The following table explains what languages and text-to-speech (TTS) voices are 
 | Language,   country, or region                     | Male TTS voice | Female TTS voice |
 |----------------------------------------------------|----------------|------------------|
 | Chinese (Simplified) - (zh-CN)                     | Kangkang       | Huihui, Yaoyao   |
-| Cantonese (Traditional, Hong Kong SAR) - (zh-HK)   | Danny          | Tracy    |
+| Cantonese (Traditional, Hong Kong Special Administrative Region) - (zh-HK)   | Danny          | Tracy    |
 | Chinese (Traditional, Taiwan) - (zh-TW)       |   Zhiwei         | Yating, Hanhan   |
 | Dutch - (nl-NL)                                | Frank          | Not applicable   |
 | English (Australia) - (en-AU)                      | James          | Catherine        |
@@ -57,7 +57,7 @@ The following table explains what languages and text-to-speech (TTS) voices are 
 
 HoloLens 2 also supports the following languages. However, this support does not include speech commands or dictation features.
 
-- Chinese Traditional (Taiwan and Hong Kong)
+- Chinese Traditional (Taiwan and Hong Kong SAR)
 - Dutch (Netherlands)
 - Korean (Korea)
 
