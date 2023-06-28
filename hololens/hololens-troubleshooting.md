@@ -302,7 +302,7 @@ Some users may experience the Microsoft Store working not as expected, and see t
 
 The HoloLens team is working on adding support for more regions.
 
-See here [for countries to buy HoloLens 2.](hololens2-purchase.md)
+See here [for countries or regions to buy HoloLens 2.](hololens2-purchase.md)
 
 ## File Explorer and pickers can't select OneDrive
 
