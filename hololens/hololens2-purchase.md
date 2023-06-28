@@ -1,6 +1,6 @@
 ---
 title: Where to buy HoloLens 2
-description: List of Global ADR contacts and countries available.
+description: List of Global ADR contacts and countries/regions available.
 keywords: HoloLens 2 purchasing options, international purchase, international reseller, ADR
 author: qianw211
 ms.author: qianwen
@@ -21,14 +21,14 @@ appliesto:
 ## Overview
 
 HoloLens 2 is the most comfortable mixed reality device available, with industry-leading solutions that deliver an immersive experience—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft. Get started right away with off-the-shelf applications or build a custom solution using Microsoft Azure services. 
-HoloLens 2 is now available in some countries outside of the US, along with some purchase options, and can be purchased through authorized resellers listed below.
+HoloLens 2 is now available in some countries/regions outside of the US, along with some purchase options, and can be purchased through authorized resellers listed below.
 
-## Countries where HoloLens 2 is available
+## Countries/regions where HoloLens 2 is available
 
 | HoloLens 2 Edition| Supported Market |
 |-------------------------------------------| ----------------------------------------|
-| HoloLens 2 | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
-| HoloLens 2 Industrial Edition *(at launch)* | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
+| HoloLens 2 | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong Special Administrative Region, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
+| HoloLens 2 Industrial Edition *(at launch)* | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong SAR, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
 | HoloLens 2 Development Edition | Australia, Canada, France, Germany, Ireland, Italy, Japan, New Zealand, Switzerland, UK, and US |
 
 <sup>1</sup> This list is dynamic, check back for updates
@@ -39,15 +39,15 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 ### **APAC**
 
-| Country | ADR | Sales Contacts | HoloLens 2<br>Product Link | HoloLens 2 Industrial Edition<br>Product Link |
+| Country/Region | ADR | Sales Contacts | HoloLens 2<br>Product Link | HoloLens 2 Industrial Edition<br>Product Link |
 |---------|-----|---------|----------------|----------|
 | **Australia** | Insight Enterprises Australia Pty Ltd | Berkan Bolluk <berkan.bolluk@insight.com> <br> Ali Al-Zaidi <ali.al-zaidi@insight.com> | [Buy HoloLens 2 - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) |
 | | Telstra Purple | Joanna Bari [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) Oliver Ashworth [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) |  |  |
 | **China** |Highly Information (HII) 翰林汇信息产业股份有限公司 | Feng Zhou Zhouf<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) | [Buy HoloLens 2 - Highly Information](https://isite.baidu.com/site/wjzdjcwv/4c0f0cb9-7c82-4598-9441-7b07de470763?ch=48&wid=f7041a178cc74a9b95807951e881fb4a_0_0) | [Buy HoloLens 2 Industrial Edition - Highly Information](https://isite.baidu.com/site/highly.com.cn/a8cade59-c438-45d4-8712-85ab66155770?fid=nHTsPjRYPWTzPWm1n16knH6sPHwxnWcdg1D&ch=4&bd_vid=8203888196328829036&bd_bxst=EiaKGVh90a8JWX1900DD0aeBv6ZGqmZR000000Sl__Zy8Sn6pAq_Uvk-UMnc3Q9T00000a0dn1RLn1m1P1nznDuDrj0dP1mzPH0znHnsnRNjrH64fz01P16vf1uawRfkwH7jnRwafHc4fW7AwRRsrHc1PYRzrFyh40xvQrfG0f0000w4zx6r0000Rh-snbb0000K0Z3KjA9EUAq_uy41EP83tiGCUvkEUAN8Te1U85ZrC_WVdVa4S_x3zVocJPXJzVEF1D7DRBvl__Zy8Sn00P8o8A3&field=&orderBy=&categoryId=undefined&wid=f7041a178cc74a9b95807951e881fb4a_0_0) |
 | | 四川长虹佳华信息产品有限责任公司/Changhong IT Information Products Co., Ltd |Chen Cheng Sun [sunchencheng@changhongit.com](mailto:sunchenccheng@changhongit.com) | [Buy HoloLens 2 Industrial Edition - Changhong IT Information Products Co., Ltd](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [Buy HoloLens 2 Industrial Edition - Changhong IT Information Product7890-=s Co., Ltd](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)|
 | | 英施艾特（上海）软件贸易有限公司 Insight Enterprises (Shanghai) Co. Ltd. |Jason Mu<br>[Jason.Mu@insight.com](mailto:Jason.Mu@insight.com)| [Buy HoloLens 2 - Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
-| **Hong Kong** | GO VR Immersive Ltd. (UFO) | Howard Tian <howard.tian@govrimmersive.com> | [Buy HoloLens 2 - GO VR Immersive Ltd.](https://www.govrimmersive.com/hololens2) | [Buy HoloLens 2 Industrial Edition - GO VR Immersive Ltd](https://www.govrimmersive.com/hololens-2-industrial-edition) |
-| | Insight Enterprises Hong Kong | Jenny Southon<br><jenny.southon@insight.com><br>Eddie Tsui<br><eddie.tsui@insight.com> | [Buy HoloLens 2 - INSIGHT ENTERPRISES HONG KONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [Buy HoloLens 2 Industrial Edition - INSIGHT ENTERPRISES HONG KONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |
+| **Hong Kong SAR** | GO VR Immersive Ltd. (UFO) | Howard Tian <howard.tian@govrimmersive.com> | [Buy HoloLens 2 - GO VR Immersive Ltd.](https://www.govrimmersive.com/hololens2) | [Buy HoloLens 2 Industrial Edition - GO VR Immersive Ltd](https://www.govrimmersive.com/hololens-2-industrial-edition) |
+| | Insight Enterprises Hong Kong SAR| Jenny Southon<br><jenny.southon@insight.com><br>Eddie Tsui<br><eddie.tsui@insight.com> | [Buy HoloLens 2 - INSIGHT ENTERPRISES HONG KONG SAR](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [Buy HoloLens 2 Industrial Edition - INSIGHT ENTERPRISES HONG KONG SAR](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |
 | **India** |  Team Computers Pvt. Ltd. | Anuj Sharma <hololens@teamcomputers.com> | <https://www.teamcomputers.com/Hololens2> | https://www.teamcomputers.com/Hololens2 |
 | | Noventiq | Basar, Altaf <altaf.basar@noventiq.com> <br> Salastekar, Kaustubh <kaustubh.salastekar@noventiq.com> | <https://noventiq.com/> | <https://noventiq.com/> |
 | **Japan** | Japan Business Systems (JBS) |  | [Buy HoloLens 2 - Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) | [Buy HoloLens 2 Industrial Edition - Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) |
@@ -66,7 +66,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 ### **Latin America**
 
-| Country | Distributor | Sales contacts |  HoloLens 2 Product link |
+| Country/Region | Distributor | Sales contacts |  HoloLens 2 Product link |
 |---------|-----|------|----------------|
 | **Brazil** | Ingram Micro do Brasil LDA | Carla Santos <carla.santos@ingrammicro.com> | |
 | **Mexico** | Ingram Micro Mexico SA de CV | luis Tonix <luis.tonix@ingrammicro.com> |  |
@@ -75,7 +75,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 ### **North America**
 
-| Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
+| Country/Region | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
 | **Canada** | Insight Canada | Trish O'Keeffe <br> [trish.okeeffe@insight.com](mailto:trish.okeeffe@insight.com) | [Buy HoloLens 2 - Insight Canada](https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html) | [Buy HoloLens 2 Industrial Edition - Insight Canada](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
 |  | CDW Canada  | Ricky Fraser <br> [rick.fraser@cdw.ca](mailto:rick.fraser@cdw.ca)  |  <https://www.cdw.ca>  |  |
@@ -86,7 +86,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 ### **EMEA**
 
-| Country | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
+| Country/Region | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
 | **Austria** | Bechtle | Kurt Wiesauer <br> [kurt.wiesauer@bechtle.com](mailto:%5Bkurt.wiesauer@bechtle.com) | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/at/aktionen-sh/microsoft-hololens-2) | [Buy HoloLens 2 Industrial Edition - Bechtle](https://www.bechtle.com/at/shop/microsoft-hololens-2-ind-ed-datenbrille--4525629--p) |
 | | Insight | Siegfried Halfmann <br> [siegfried.halfmann@insight.com](mailto:siegfried.halfmann@insight.com) |  |  |
