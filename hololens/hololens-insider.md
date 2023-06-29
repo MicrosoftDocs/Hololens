@@ -39,152 +39,40 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
-| [Store app update from Settings feature](#store-app-update-from-settings) | Introduces the option to manually check for app updates from the Settings app. | All | 10.0.22621.1061 |
-| [WebView2 control now available](#webview2-now-available) | The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. | Developer| 10.0.22621.1061 |
-| [Device reset requirements in the Settings Application](#device-reset-requirements-in-settings-app) | Devices must have sufficient battery and free disk space to perform a device reset. | All | 10.0.22621.1057 |
-| [Removing placements of an app in the mixed world](#removing-placements-of-apps-in-mixed-world) | An option to close one or all placements of an app is now available in the context menu. | All | 10.0.22621.1057 |
-| [Automatic update of Dynamics 365 Remote Assist and Dynamics 365 Guides during Autopilot flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow) | When provisioning a HoloLens 2 device using Autopilot, Dynamics 365 applications will update automatically. | IT Admin | 10.0.22621.1057 |
-| [Reboot CSP enabled and related changes](#reboot-csp-enabled-and-related-changes-in-intune) | Hololens now supports weekly scheduled reboots and other options. | IT Admin | 10.0.22621.1051 |
-| [Update available notification](#update-available-notification) | Shows user that update is available when looking at the start menu. | End User | 10.0.22621.1051 |
-| [Autopilot reset experience](#autopilot-reset-experience) | Improvements in Autopilot reset experience to enable users to reset HoloLens 2 and restart Autopilot without requiring manual flashing.| IT Admin  | 10.0.22621.1008 |
-| [Biometrics disclosure screen](#biometrics-disclosure-screen) | Displays information to all new users on what biometrics the device uses. | All | 10.0.22621.1008 |
-| [Remove users on device](#remove-users-on-a-device) | New policies to manage when to remove users from the device to prevent hitting the maximum limit. | IT Admin  | 10.0.22621.1008 |
-| [Fixes improvements](#fixes-and-improvements)  | Fixes and improvements for HoloLens. | All   | 10.0.22621.1006 |
+| [Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 10.0.22621.1116 |
+| [Font and IME improvements](#font-and-ime-improvements) | Several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) now support GB18030-2022. | All | 10.0.22621.1116 |
+| [Support for NFC readers](#support-for-nfc-readers) | Users can now login to their devices using their security badge with an NFC reader. | All | 10.0.22621.1116 |
+| [Fixes improvements](#fixes-and-improvements)  | Fixes and improvements for HoloLens. | All   | 10.0.22621.1116 |
 
-✔️ If you need to delete users from your HoloLens automatically, then see [Remove users on a device](#remove-users-on-a-device).
+### Hand tracking improvements 
 
-✔️ If you'd like to set a policy for your HoloLens devices to automatically [reboot on a schedule](#reboot-csp-enabled-and-related-changes-in-intune), then read on.
+Hand tracking system has been improved so that tracking is more reliable when aiming down at objects on the floor.
 
-### Store app update from Settings
+### Font and IME improvements
 
-While apps from the Microsoft Store are kept up to date automatically by the device, sometimes you may want to manually check for updates to get those app updates sooner. Typically, this is done from within the Microsoft Store app. However, that option will not be available if the Microsoft Store is blocked in your environment. For such environments, you can now manually check for updates to Store apps from the Settings app under Apps -> App updates.
+This update improves several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) to support GB18030-2022. You can enter and display characters from conformance level 1 or 2 using the additions to Microsoft Yahei, Simsun, and Dengxian. This update now supports Unicode Extensions E and F in the Simsun Ext-B font. This meets the requirements for level 3.  These improvements are in-line with what has been released to the Windows 11 Build Release Preview Channel.  More details can be found on the [Windows Insiders blog](https://blogs.windows.com/windows-insider/2023/06/20/releasing-windows-11-build-22621-1926-to-the-release-preview-channel/).
 
-IT admins will be able to block or allow this page with the [Settings/PageVisibilityList policy](/windows/client-management/mdm/policy-csp-settings#pagevisibilitylist) with the URI `ms-settings:appupdate`.
+### Support for NFC readers
 
-See screenshot below of the Settings app where this feature can be seen.
+The next Insider Preview flight for HoloLens will include the ability for users to take advantage of NFC Readers.  Using a USB-C NFC reader, the HoloLens 2 device can be integrated with NFC FIDO2 cards as supported by Azure AD. For users in clean room environments, or where ID Badges contain FIDO technology, this can enable a “Tap & PIN” experience for HoloLens Sign on.  This feature helps users get closer to a less than one minute sign-in from the Login screen to the Start Menu.
 
-![Screenshot of Settings app](media/hololens-insider/microsoftteams-image-(2).png)
+#### USB NFC reader support
 
+USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base class ‘0B’ and subclass ‘00’ are supported. Please refer to [Microsoft Class Drivers for USB CCID Smart Cards](/previous-versions/windows/hardware/design/dn653571(v=vs.85)) for details on Microsoft class driver for USB CCID devices.
 
-### WebView2 Now Available
+Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
 
-The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps and is now available for the HoloLens 2. The WebView2 control uses the new Chromium-based Microsoft Edge as the rendering engine to display the web content in native apps.
-With WebView2, you can embed web code in different parts of your native app or build all of the native app within a single WebView2 instance.
+1.	From the “Other User” screen, enter the FIDO Key / Tap the NFC Key against the reader.
+2.	Enter the FIDO PIN.
+3.	Press the button on the FIDO Key / Tap the NFC Key against the reader again.
+4.	The Device logs in.
 
-![Image shows Native UI and WebView2 components in an app.](media/hololens-insider/webview2.jpg)
-
-To start building a WebView2 app, see [Get started with WebView2](/microsoft-edge/webview2/) for a general overview.  HoloLens specific documentation will be available soon.
-
-The following is a list of known issues that will be addressed in future Insider release previews:
-
-
-- Input may not work properly when using popups and context menus.
-- Context menus may not be dismissible.  As a workaround, you may use a keyboard to type into the main window, or close and reopen the app.
-- There may be black borders on the edges of context menus.
-- Any app that uses WebView2 will require a manifest change until the May release of the WebView2 NuGet package is available.  Until then, all apps targeting HoloLens 2 will need to add the following manifest change.  Note that adding this change will prevent installation on non-HoloLens SKUs such as Desktop PC.  The required manifest details are:
-   
-`<Package`  
-`  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">`  
-`  <Dependencies>`  
-`    <PackageDependency Name="Microsoft.WebView2Runtime.Stable"`  
-`      Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`  
-`      MinVersion="1.0.0.0"/>`  
-`  </Dependencies>`  
-`</Package>`
-
-### Device Reset Requirements in Settings app
-
-In order for a device reset to complete successfully, the following two conditions must be met:  the device must have both sufficient battery charge and free disk space. On the Reset & recovery page, the Get started button will now only be enabled when the device meets a minimum of 40% of battery charge and 6GB free disk space thresholds.
-
-![Image showing device reset requirements in Settings app.](media/hololens-insider/device-reset.jpg)
-
-
-### Removing Placements of Apps in Mixed World
-
-You can now close all placements of an application in the mixed world by selecting the **Close all** (or **Close** when there is only one placement) option from that application’s context menu.  This feature is also available in Kiosk mode. Note: this menu option will only be available when an application has been placed in the mixed world. 
-
-![placement resized - use this](media/hololens-insider/placement-resized---use-this1.jpg)
-
-
-### Automatic update of Dynamics 365 Remote Assist and Guides During Autopilot Flow
-
-When provisioning a HoloLens 2 device using Autopilot, both the Dynamics 365 Remote Assist and Dynamics 365 Guides applications will now be automatically updated to the latest available versions. The update will take place immediately after the Azure Active Directory join is completed.
-
-### Reboot CSP enabled and related changes in Intune
-
-In addition to supporting scheduled single daily reboots, [Reboot CSP](/windows/client-management/mdm/reboot-csp) now supports scheduled weekly reboots.
-
-Create a custom OMA-URI device configuration profile as follows and apply it to a HoloLens device group:
-
- :::image type="content" alt-text ="This screenshot shows using OMA URI to configure the weekly reboot." source="./images/weekly-reboot-oma-uri.png":::
-
-> [!NOTE]
->
-> Setting Reboot CSP through the “Settings catalog” will be supported soon. Until then, use OMA-URI.
-
-1. For the OMA-URI field, specify any of these three options:
-
-   - `./Device/Vendor/MSFT/Reboot/Schedule/Single`
-   - `./Device/Vendor/MSFT/Reboot/Schedule/DailyRecurrent`
-   - `./Device/Vendor/MSFT/Reboot/Schedule/WeeklyRecurrent`
-
-   > [!NOTE]
-   >
-   > Setting both DailyRecurrent and WeeklyRecurrent configurations on the same device is not supported.
-
-1. For the **data type** field, choose **string**.
-
-1. For the **value** field, enter a date value for a starting date and time, such as *2023-01-06T10:35:00* to set DailyRecurrent reboots starting on the given date and *two minutes after* the set starting time daily. Similarly, setting WeeklyRecurrent reboots starting at the given date and *two minutes after* the starting time every seven days. For example, if you specify 10:00, the reboot will occur at 10:02.
-
-   > [!NOTE]
-   >
-   > The actual time of recurrent schedule reboots is about 2 minutes after the configured time. This delay is expected and intentional to preserve the operations and communication states.
-
-### Update available notification
-
-Having up-to-date devices is important. A previous feature improvement lets you see when updates are ready to *install*. With this new update, your device displays when an update is available to *download*. As with desktop devices, when an update is available, your Hololens displays a blue update circle icon. This icon is near your user icon.
-
-1. Select your user icon. The user context menu will open.
-1. Select **Download update** to launch the Settings app updates page that shows the update available to download.
-
-   :::image type="content" alt-text="This screenshot shows the start menu context for OS updates." source="images/hl2-update-context-menu-crop-6in.png":::
-
-### Autopilot reset experience
-
-We've added a new setting to improve the Autopilot reset experience if Hololens 2 fails in certain installation scenarios. This setting lets users begin the Autopilot experience again without requiring a manual flash of HoloLens 2 devices. In the ESP configuration, set **Allow users to reset device if installation error occurs** to **Yes** and the device will display a "Reset device" button. If the user selects **Reset device**, after a delay of about 1 minute, HoloLens 2 will reset the operating system and OOBE experience.
-
-### Biometrics disclosure screen
-
-We've changed one of our OOBE screens before the device calibrates to show information on device usage for head, hand, and eye movements. Devices configured to skip calibration won't skip this biometrics disclosure screen, so all new users on a device will see device biometrics usage.  The purpose of this screen is to better inform users about the data being collected.  There are no changes to the data that is being collected.
-
-:::image type="content" alt-text="This screenshot shows the Biometrics OOBE window." source="images/biometrics-oobe-notification.jpg":::
-
-### Remove users on a device
-
-Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
-
-- When a user has been inactive on the device past a number of days, configurable via **ProfileInactivityThreshold.**
-- When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
-- When the device has reached the maximum number of supported users (64).
-   
-Here's how to get started:
-
-1. Set the boolean value for **UserProfileManagement/EnableProfileManager** to **true**.
-
-1. Set the numerical **UserProfileManagement/ProfileInactivityThreshold**, which is the number of days a user must be inactive (not logged on to the device) before the user is deleted. The default value is **30**.
-1. Set **UserProfileManagement/StorageCapacityStartDeletion**, a numerical value representing the percentage of free space left when the device begins deleting the least recent users. The Default value is **25%**.
-
-1. Pair **UserProfileManagement/StorageCapacityStartDeletion** with **StorageCapacityStopDeletion** to determine when, based on the free storage percent, to stop deleting profiles.
-
-1. Turn on the deletion policy **UserProfileManagement/DeletionPolicy**, and set it to **2**, which deletes both threshold and inactive users.
-
-   If the **UserProfileManagement/DeletionPolicy** is on, when the device reaches the maximum number of users and is trying to add another, the device deletes the oldest user automatically.
-
-To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp).
+      a.	Note:  if the user is new to the device, the Single Biometric Disclosure Screen will be displayed.
+6.	Start Menu then appears.
 
 ### Fixes and improvements
 
-- Previously, it was possible to install an app in the device context via the EnterpriseModernAppManagement CSP.  It is now possible to uninstall an app in the device context as well.
+- Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy (Windows 11 builds only).   Without this fix, customers who deploy HoloLens into their operational environments and rely on this policy to show or hide certain pages in the Settings app will be unable to do so.  
    
 ## Start receiving Insider builds
 
