@@ -39,10 +39,10 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
-| [Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 10.0.22621.1116 |
-| [Font and IME improvements](#font-and-ime-improvements) | Several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) now support GB18030-2022. | All | 10.0.22621.1116 |
-| [Support for NFC readers](#support-for-nfc-readers) | Users can now login to their devices using their security badge with an NFC reader. | All | 10.0.22621.1116 |
-| [Fixes improvements](#fixes-and-improvements)  | Fixes and improvements for HoloLens. | All   | 10.0.22621.1116 |
+| [Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 10.0.22621.1205 |
+| [Font and IME improvements](#font-and-ime-improvements) | Several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) now support GB18030-2022. | All | 10.0.22621.1205 |
+| [Support for NFC readers](#support-for-nfc-readers) | Users can now login to their devices using their security badge with an NFC reader. | All | 10.0.22621.1205 |
+| [Fixes improvements](#fixes-and-improvements)  | Fixes and improvements for HoloLens. | All   | 10.0.22621.1205 |
 
 ### Hand tracking improvements 
 
@@ -54,7 +54,7 @@ This update improves several simplified Chinese fonts and the Microsoft Pinyin I
 
 ### Support for NFC readers
 
-The next Insider Preview flight for HoloLens will include the ability for users to take advantage of NFC Readers.  Using a USB-C NFC reader, the HoloLens 2 device can be integrated with NFC FIDO2 cards as supported by Azure AD. For users in clean room environments, or where ID Badges contain FIDO technology, this can enable a “Tap & PIN” experience for HoloLens Sign on.  This feature helps users get closer to a less than one minute sign-in from the Login screen to the Start Menu.
+The next Insider Preview flight for HoloLens will include the ability for users to take advantage of NFC Readers.  Using a USB-C NFC reader, the HoloLens 2 device can be integrated with NFC FIDO2 cards as supported by Azure AD. For users in clean room environments, or where ID Badges contain FIDO technology, this can enable a “Tap & PIN” experience for HoloLens Sign on.  This feature enables a faster sign-in experience for users.
 
 #### USB NFC reader support
 
@@ -72,7 +72,7 @@ Whether you sign into a device you have used before or a new device, please foll
 
 ### Fixes and improvements
 
-- Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy (Windows 11 builds only).   Without this fix, customers who deploy HoloLens into their operational environments and rely on this policy to show or hide certain pages in the Settings app will be unable to do so.  
+- Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy (Windows 11 builds only).     
    
 ## Start receiving Insider builds
 
