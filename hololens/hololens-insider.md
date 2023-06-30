@@ -58,7 +58,11 @@ The next Insider Preview flight for HoloLens will include the ability for users 
 
 #### USB NFC reader support
 
-USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base class ‘0B’ and subclass ‘00’ are supported. Please refer to [Microsoft Class Drivers for USB CCID Smart Cards](/previous-versions/windows/hardware/design/dn653571(v=vs.85)) for details on Microsoft class driver for USB CCID devices.
+USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base class ‘0B’ and subclass ‘00’ are supported. Please refer to [Microsoft Class Drivers for USB CCID Smart Cards](/previous-versions/windows/hardware/design/dn653571(v=vs.85)) for details on Microsoft class driver for USB CCID devices.  To determine if your NFC reader is compatible with HoloLens, you may either refer to the documentation provided by the reader's manufacturer, or use the Device Manager on your PC, as follows:
+
+1.	Plug in the USB NFC reader to a Windows PC.
+2.	In Device Manager, locate the reader device and right click on it and select Properties.
+3.	In Details tab, select "Compatible Ids" properties, check if "USB\Class_0b&SubClass_00" is in the list.
 
 Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
 
@@ -68,11 +72,12 @@ Whether you sign into a device you have used before or a new device, please foll
 4.	The Device logs in.
 
       a.	Note:  if the user is new to the device, the Single Biometric Disclosure Screen will be displayed.
-6.	Start Menu then appears.
+5.	Start Menu then appears.
 
 ### Fixes and improvements
 
-- Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy (Windows 11 builds only).     
+- Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy (Windows 11 builds only).
+- Fixed an issue where swipe to type on the virtual keyboard was not working correctly (Windows 11 builds only).
    
 ## Start receiving Insider builds
 
