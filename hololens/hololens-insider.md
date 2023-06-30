@@ -62,7 +62,7 @@ USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base
 
 1.	Plug in the USB NFC reader to a Windows PC.
 2.	In Device Manager, locate the reader device and right click on it and select Properties.
-3.	In Details tab, select "Compatible Ids" properties, check if "USB\Class_0b&SubClass_00" is in the list.
+3.	In Details tab, select "Compatible Ids" properties and check if "USB\Class_0b&SubClass_00" is in the list.
 
 Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
 
