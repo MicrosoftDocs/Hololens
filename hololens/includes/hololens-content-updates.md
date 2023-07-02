@@ -2,6 +2,23 @@
 
 
 
+## Week of June 26, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/28/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+| 6/30/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+
+
+## Week of June 19, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/22/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+
+
 ## Week of June 12, 2023
 
 
@@ -43,11 +60,3 @@
 | 10/11/2021 | [HoloLens 2 Moving Platform Mode](/hololens/hololens2-moving-platform) | modified |
 | 6/3/2023 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
 | 6/3/2023 | [Common Scenarios – Offline Secure HoloLens 2](/hololens/hololens-common-scenarios-offline-secure) | modified |
-
-
-## Week of May 15, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 5/16/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
