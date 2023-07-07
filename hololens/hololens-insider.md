@@ -66,8 +66,6 @@ USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base
 
 Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
 
-Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
-
 1.	From the “Other User” screen, enter the FIDO Key / Tap the NFC Key against the reader.
 2.	Enter the FIDO PIN.
 3.	Press the button on the FIDO Key / Tap the NFC Key against the reader again.
