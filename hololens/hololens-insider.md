@@ -66,6 +66,8 @@ USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base
 
 Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
 
+Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
+
 1.	From the “Other User” screen, enter the FIDO Key / Tap the NFC Key against the reader.
 2.	Enter the FIDO PIN.
 3.	Press the button on the FIDO Key / Tap the NFC Key against the reader again.
@@ -189,4 +191,5 @@ If you no longer want to receive Insider builds of Windows Holographic, you have
 >
 > 1. Locate the build number through **Settings** > **System** > **About**.
 > 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
+
 
