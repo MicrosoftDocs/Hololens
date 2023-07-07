@@ -64,6 +64,9 @@ USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base
 2.	In Device Manager, locate the reader device and right click on it and select Properties.
 3.	In Details tab, select "Compatible Ids" properties and check if "USB\Class_0b&SubClass_00" is in the list.
 
+
+![smartcard reader properties](media/hololens-insider/smartcard-reader-properties.png)
+
 Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
 
 1.	From the “Other User” screen, enter the FIDO Key / Tap the NFC Key against the reader.
@@ -189,5 +192,6 @@ If you no longer want to receive Insider builds of Windows Holographic, you have
 >
 > 1. Locate the build number through **Settings** > **System** > **About**.
 > 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
+
 
 
