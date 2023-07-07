@@ -60,6 +60,15 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Windows Holographic, version 23H1 - July 2023 Update
+
+- Build 22621.11xx
+
+Improvements and fixes in the update:
+
+- Fixed an issue where incorrect Speech recognition settings were displayed when the Privacy/AllowInputPersonalization policy was set to not allowed.
+- Fixed an issue where users could not use Bluetooth to pair with a PC.
+
 ## Windows Holographic, version 23H1 - June 2023 Update
 
 - Build 22621.1113
