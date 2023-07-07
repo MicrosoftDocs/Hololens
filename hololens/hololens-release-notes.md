@@ -34,7 +34,7 @@ In between our feature updates, we also release fixes and improvements and secur
 
 To help provide clarity, this release notes page will provide information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
 
-Note:  the current release version is the June 2023 Update, Build 1113.
+Note:  the current release version is the July 2023 Update, Build 11xx.
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
