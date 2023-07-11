@@ -36,6 +36,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Known Issues
 
+- [Users opting in to Windows Insider after flashing to 23H1 will be stuck](#users-opting-in-to-windows-insider-after-flashing-to-23h1-will-be-stuck)
 - [Update indicator may still be visible after OS update](#update-indicator-may-still-be-visible-after-os-update)
 - [Resetting a device with low space doesn't reset](#resetting-a-device-with-low-space-doesnt-reset)
 - [Remote Wipe doesn't remove device from Intune](#remote-wipe-doesnt-remove-device-from-intune)
@@ -179,6 +180,14 @@ Workarounds before the fix:
 - If you can’t safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 [Back to list](#list)
+
+## Users opting in to Windows Insider after flashing to 23H1 will be stuck
+
+If users do a clean flash of their device to the June 2023 23H1 update, and then join the Windows Insiders program, they will get stuck on that build until they follow the workaround below.
+
+### Workaround for opt-in to Insider after flashing 23H1
+
+Users should flash their device to the [July 2023, 22H2 build](https://aka.ms/hololens2download), allow the device to update to the June 2023 23H1 build and then join the Windows Insider program.
 
 ## Update indicator may still be visible after OS update
 
