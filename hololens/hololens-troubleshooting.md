@@ -187,7 +187,7 @@ If users do a clean flash of their device to the June 2023 23H1 and then join th
 
 ### Workaround for opt-in to Insider after flashing 23H1
 
-Users should flash their device to the [July 2023, 22H2 build](#https://download.microsoft.com/download/3/8/d/38d1459d-a926-4a37-ad29-bf36c5aaaf2c/FE_RELEASE_SVC_SYDNEY_REL_PROD.retail.multi.10.0.20348.1567.zip), allow the device to update to the June 2023 23H1 build and then join the Windows Insider program.
+Users should flash their device to the [July 2023, 22H2 build](https://aka.ms/hololens2download), allow the device to update to the June 2023 23H1 build and then join the Windows Insider program.
 
 ## Update indicator may still be visible after OS update
 
