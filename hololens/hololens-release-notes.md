@@ -34,7 +34,7 @@ In between our feature updates, we also release fixes and improvements and secur
 
 To help provide clarity, this release notes page will provide information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
 
-Note:  the current release version is the July 2023 Update, Build xxxx.
+Note:  the current release version is the July 2023 Update, Build 1120.
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
@@ -62,7 +62,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 ## Windows Holographic, version 23H1 - July 2023 Update
 
-- Build 22621.xxxx
+- Build 22621.1120
 
 Improvements and fixes in the update:
 
