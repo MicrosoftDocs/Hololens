@@ -183,11 +183,11 @@ Workarounds before the fix:
 
 ## Users opting in to Windows Insider after flashing to 23H1 will be stuck
 
-If users do a clean flash of their device to the June 2023 23H1 update and then join the Windows Insiders program, they will get stuck on that build.
+If users do a clean flash of their device to the June 2023 23H1 and then join the Windows Insiders program, they will get stuck on that build.
 
 ### Workaround for opt-in to Insider after flashing 23H1
 
-Users should flash their device to the May 2023, 22H2 build, allow the device to update to the June 2023 23H1 build and then join the Windows Insider program.
+Users should flash their device to the [July 2023, 22H2 build](#https://download.microsoft.com/download/3/8/d/38d1459d-a926-4a37-ad29-bf36c5aaaf2c/FE_RELEASE_SVC_SYDNEY_REL_PROD.retail.multi.10.0.20348.1567.zip), allow the device to update to the June 2023 23H1 build and then join the Windows Insider program.
 
 ## Update indicator may still be visible after OS update
 
