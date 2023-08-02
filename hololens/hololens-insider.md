@@ -39,10 +39,36 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
-| [Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 10.0.22621.1205 |
-| [Font and IME improvements](#font-and-ime-improvements) | Several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) now support GB18030-2022. | All | 10.0.22621.1205 |
-| [Support for NFC readers](#support-for-nfc-readers) | Users can now login to their devices using their security badge with an NFC reader. | All | 10.0.22621.1205 |
-| [Fixes improvements](#fixes-and-improvements)  | Fixes and improvements for HoloLens. | All   | 10.0.22621.1205 |
+|[Scratch Spaces are now available](#scratch-spaces-now-available)|Insert notes here. | All| 10.0.22621.xxxx ||[Start Menu gesture settings now controlled via MDM](#start-menu-gesture-settings-in-mdm)|It is now possible to control start menu gesture settings via MDM. | All| 10.0.22621.xxxx |
+|[USB Peripherals can now be blocked via MDM policy](#usb-peripherals-now-blocked-via-MDM-policy)|Insert note here. | All| 10.0.22621.xxxx |
+|[Domain name suggested during sign-in](#domain-suggested-during-signin)|Insert note here.|All| 10.0.22621.xxxx |
+|[Support added for RequireUpdateApproval policy](#support-added-for-requireupdateapproval-policy) | Insert note here. | All | 10.0.22621.xxxx |
+|[New policy for Windows Hello Provisioning behavior](#windows-hello-behavior-with-fido2-policy) | This new policy can be used to control Windows Hello provisioning behavior for users signed in with FIDO2 security keys.| All | 10.0.22621.1212 |
+|[New policy for Sign-in app launch](#signin-app-launch-policy) | This new policy can be used to control the behavior of the sign-in app when it launches.| All | 10.0.22621.1212 |
+|[Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 10.0.22621.1205 |
+|[Font and IME improvements](#font-and-ime-improvements) | Several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) now support GB18030-2022. | All | 10.0.22621.1205 |
+|[Support for NFC readers](#support-for-nfc-readers) | Users can now login to their devices using their security badge with an NFC reader. | All | 10.0.22621.1205 |
+|[Fixes improvements](#fixes-and-improvements)  | Fixes and improvements for HoloLens. | All   | 10.0.22621.1205 |
+
+### Start menu gesture settings in MDM
+
+### USB peripherals now blocked via MDM policy
+
+### Domain suggested during signin
+
+### Support added for RequireUpdateApproval policy
+
+### Windows Hello behavior with FIDO2 policy
+
+A new policy, EnableWindowsHelloProvisioningForSecurityKeys, has been added to the PassportForWork CSP to control Windows Hello Provisioning behavior for users signed in with FIDO2 security keys. If this policy is enabled on HoloLens 2, the device will start Iris and PIN enrollments after new users sign-in to their devices with FIDO2 security keys. By default, this policy is disabled and new users won’t go through Iris and PIN enrollments if they sign-in with FIDO2 security keys.  The device policy path is:
+
+./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/EnableWindowsHelloProvisioningForSecurityKeys
+
+### Signin app launch policy
+
+There is a new MDM policy, PreferLogonAsOtherUser.  This policy controls if the HoloLens Sign-In App will show Other User screen to user when the app starts. When this policy is enabled, users will see the screen to sign in as an "Other user" when the sign-in app launches.  The Device policy path is:
+
+./Device/Vendor/MSFT/Policy/Config/MixedReality/PreferLogonAsOtherUser
 
 ### Hand tracking improvements 
 
@@ -81,7 +107,10 @@ Whether you sign into a device you have used before or a new device, please foll
 
 - Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy (Windows 11 builds only).
 - Fixed an issue where swipe to type on the virtual keyboard was not working correctly (Windows 11 builds only).
-   
+- Fixed an issue where the "Reset" button was not showing in the case of an Autopilot failure that occurred before reading the ESP configuration.
+- Minor updates were made to the virtual keyboard, including optimization of the keyboard suggestions that are presented to users and improved audio feedback while typing.
+- Prior to this update, users were often unclear when dictation from the virtual keyboard was available.  Users now see a spinning icon while dictation is being initiated and the dictation tip to begin speaking is only displayed once dictation is available.
+
 ## Start receiving Insider builds
 
 This section explains the steps to prepare devices and then the steps to receive Insider builds.
@@ -192,6 +221,9 @@ If you no longer want to receive Insider builds of Windows Holographic, you have
 >
 > 1. Locate the build number through **Settings** > **System** > **About**.
 > 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
+
+
+
 
 
 
