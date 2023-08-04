@@ -39,11 +39,11 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
-|[App-Exclusive Mode is now available](#app-exclusive-mode-now-available)| The "App-Exclusive" mode allows applications to run in a fresh environment, free from degradation in tracking accuracy. | Developer | 10.0.22621.xxxx |
-|[Rename HoloLens 2 device](#rename-hololens-2-device)| HoloLens 2 devices can now be renamed from the Settings app. | All| 10.0.22621.xxxx |
-|[Start Menu gesture settings in MDM](#start-menu-gesture-settings-in-mdm)| A new policy is available to configure start menu gesture settings. | IT Admin | 10.0.22621.xxxx |
-|[Policies to block USB Peripherals on HoloLens 2](#policies-to-block-usb-peripherals)| HoloLens 2 devices can now be locked down to prevent the use of USB peripherals. | IT Admin| 10.0.22621.xxxx |
-|[Domain name suggested during sign-in](#domain-suggested-during-signin)| During sign-in, the domain name will be auto-populated to save time.| All | 10.0.22621.xxxx |
+|[App-Exclusive Mode is now available](#app-exclusive-mode-now-available)| The "App-Exclusive" mode allows applications to run in a fresh environment, free from degradation in tracking accuracy. | Developer | 10.0.22621.1217|
+|[Rename HoloLens 2 device](#rename-hololens-2-device)| HoloLens 2 devices can now be renamed from the Settings app. | All| 10.0.22621.1217 |
+|[Start Menu gesture settings in MDM](#start-menu-gesture-settings-in-mdm)| A new policy is available to configure start menu gesture settings. | IT Admin | 10.0.22621.1217|
+|[Policies to block USB Peripherals on HoloLens 2](#policies-to-block-usb-peripherals)| HoloLens 2 devices can now be locked down to prevent the use of USB peripherals. | IT Admin| 10.0.22621.1217|
+|[Domain name suggested during sign-in](#domain-suggested-during-signin)| During sign-in, the domain name will be auto-populated to save time.| All | 10.0.22621.1217|
 |[New policy for Windows Hello Provisioning behavior](#windows-hello-behavior-with-fido2-policy) | This new policy can be used to control Windows Hello provisioning behavior for users signed in with FIDO2 security keys.| IT Admin| 10.0.22621.1212 |
 |[New policy for Sign-in app default screen](#signin-app-default-screen-policy) | This new policy can be used to control the default screen shown when the Sign-in app launches to show Other User.| IT Admin| 10.0.22621.1212 |
 |[Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 10.0.22621.1205 |
