@@ -65,11 +65,11 @@ To use the new tracking mode APIs, a Fall 2023 HoloLens OS update is required. E
 
 HoloLens 2 devices can now be renamed by going to the About page of the Settings app. Users or IT Admins can choose the “Rename” button and follow the prompts to create a new name for their device.  A combination of letters, hyphens and numbers can be used.  
 
-![Screenshot of About page in Settings app that shows Rename button.](media/hololens-insider/rename-device-#1.png)
+![Screenshot of About page in Settings app that shows Rename button.](media/hololens-insider/rename-device-#2.png)
 
 A confirmation screen will be displayed when the device has been successfully renamed.
 
-![Screenshot that shows the HoloLens 2 was successfully renamed.](media/hololens-insider/rename-device-#7.png)
+![Screenshot that shows the HoloLens 2 was successfully renamed.](media/hololens-insider/rename-device-#8.png)
 
 The device will need to be rebooted for the renaming change to take effect.
 
