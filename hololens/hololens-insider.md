@@ -40,7 +40,6 @@ Looking for a new feature but don't see it? We released many new features as par
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
 |[Viewfinder for Camera](#viewfinder-for-camera)| A viewfinder is now included to show what will be captured in an image. | All | 10.0.22621.1217|
-|[App-Exclusive Mode is now available](#app-exclusive-mode-now-available)| The "App-Exclusive" mode allows applications to run in a fresh environment, free from degradation in tracking accuracy. | Developer | 10.0.22621.1217|
 |[Rename HoloLens 2 device](#rename-hololens-2-device)| HoloLens 2 devices can now be renamed from the Settings app. | All| 10.0.22621.1217 |
 |[Start Menu gesture settings in MDM](#start-menu-gesture-settings-in-mdm)| A new policy is available to configure start menu gesture settings. | IT Admin | 10.0.22621.1217|
 |[Policies to block USB Peripherals on HoloLens 2](#policies-to-block-usb-peripherals)| HoloLens 2 devices can now be locked down to prevent the use of USB peripherals. | IT Admin| 10.0.22621.1217|
@@ -55,16 +54,6 @@ Looking for a new feature but don't see it? We released many new features as par
 ### Viewfinder for camera
 
 With the latest camera updates coming in this release, you will now have a viewfinder that provides a clear indication of what will be included in your image captures. This overlay does not hide anything in your view when taking a picture. You will now see indicators for both the center and approximate borders for the PV camera stream.
-
-### App-Exclusive Mode now available
-
-HoloLens constantly builds an internal representation of the physical environment, called "Device Shared" tracking mode, to maintain hologram stability and positions across sessions. However, environmental changes can cause inaccuracies in tracking over time, which is problematic for applications with high accuracy requirements. To address this, a new "App-Exclusive" tracking mode has been introduced with a set of APIs (exposed through Microsoft OpenXR's plugin for Unity as of August 9th). The "App-Exclusive" mode allows applications to run in a fresh environment, free from degradation in tracking accuracy and issues an "app-exclusive session token" for resuming the application's specific map in future sessions. 
-
-Two limitations of the "App-Exclusive" mode are that only one such mode can exist at a time, erasing previous data, and the disk storage is limited to one-third of "Device Shared" mode. However, the smaller limit is still sufficient for most applications. 
-
-The target scenario for "App-Exclusive" mode is applications with high accuracy requirements and task-oriented workflows. Examples include precise hologram alignment with real-world objects and 3D model editing without persistence needs. 
-
-To use the new tracking mode APIs, a Fall 2023 HoloLens OS update is required. Earlier versions do not support the "App-Exclusive" mode.
 
 ### Rename HoloLens 2 device
 
