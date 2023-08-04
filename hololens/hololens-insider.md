@@ -169,7 +169,7 @@ Please refer to [AllowInstallationOfMatchingDeviceIDs](/windows/client-managemen
 
 ### Domain suggested during signin
 
-During the sign-in process, if PreferredAadTenantDomainName MDM policy is set on HoloLens 2, the tenant domain name will be suggested to the user to speed up the login process and save time.  Users will still have the option to type in a different tenant domain name if desired.
+During the sign-in process, if [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname) MDM policy is set on HoloLens 2, the tenant domain name will be suggested to the user to speed up the login process and save time.  Users will still have the option to type in a different tenant domain name if desired.
 
 ### Windows Hello behavior with FIDO2 policy
 
