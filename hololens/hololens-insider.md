@@ -65,11 +65,11 @@ To use the new tracking mode APIs, a Fall 2023 HoloLens OS update is required. E
 
 HoloLens 2 devices can now be renamed by going to the About page of the Settings app. Users or IT Admins can choose the “Rename” button and follow the prompts to create a new name for their device.  A combination of letters, hyphens and numbers can be used.  
 
-![Screenshot showing where the new rename button can be found on the About page in the Settings app.](media/hololens-insider/rename-device-#1---use-this.png)
+![Screenshot of About page in Settings app that shows Rename button.](media/hololens-insider/rename-device-#1.png)
 
 A confirmation screen will be displayed when the device has been successfully renamed.
 
-![rename device #4 - use this](media/hololens-insider/rename-device-#6.png)
+![Screenshot that shows the HoloLens 2 was successfully renamed.](media/hololens-insider/rename-device-#7.png)
 
 The device will need to be rebooted for the renaming change to take effect.
 
@@ -139,7 +139,7 @@ This policy allows you to prevent HoloLens 2 from installing removable devices. 
 
 | Policy | Data Type| Value|
 | -------- | -------- | -------- |
-| Config/ADMX_DeviceInstallation/DeviceInstall_Removable_Deny | String | <enabled/><data id="DenyRemovableDevices" value="1"/>
+| Config/ADMX_DeviceInstallation/DeviceInstall_Removable_Deny | String | (<enabled/><data id="DenyRemovableDevices" value="1"/>)
 
 Please refer to [DeviceInstall_Removable_Deny](/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_removable_deny) for details.
 
@@ -151,7 +151,7 @@ This policy changes the evaluation order in which Allow and Prevent policy setti
 
 | Policy | Data Type| Value|
 | -------- | -------- | -------- |
-| Config/DeviceInstallation/EnableInstallationPolicyLayering | String | <enabled/><data id="AllowDenyLayered" value="1"/>
+| Config/DeviceInstallation/EnableInstallationPolicyLayering | String | (<enabled/><data id="AllowDenyLayered" value="1"/>)
 
 Please refer to [EnableInstallationPolicyLayering](/windows/client-management/mdm/policy-csp-deviceinstallation#enableinstallationpolicylayering) for details.
 
@@ -163,7 +163,7 @@ This policy specifies a list of Plug and Play hardware IDs and compatible IDs fo
 
 | Policy | Data Type| Value|
 | -------- | -------- | -------- |
-| Config/DeviceInstallation/AllowInstallationOfMatchingDeviceIDs | String | <enabled/><data id="DeviceInstall_IDs_Allow_List" value="your_allowed_device_ids"/>
+| Config/DeviceInstallation/AllowInstallationOfMatchingDeviceIDs | String | (<enabled/><data id="DeviceInstall_IDs_Allow_List" value="your_allowed_device_ids"/>)
 
 Please refer to [AllowInstallationOfMatchingDeviceIDs](/windows/client-management/mdm/policy-csp-deviceinstallation#allowinstallationofmatchingdeviceids) for details.
 
