@@ -39,6 +39,7 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
+|[Viewfinder for Camera](#viewfinder-for-camera)| A viewfinder is now included to show what will be captured in an image. | All | 10.0.22621.1217|
 |[App-Exclusive Mode is now available](#app-exclusive-mode-now-available)| The "App-Exclusive" mode allows applications to run in a fresh environment, free from degradation in tracking accuracy. | Developer | 10.0.22621.1217|
 |[Rename HoloLens 2 device](#rename-hololens-2-device)| HoloLens 2 devices can now be renamed from the Settings app. | All| 10.0.22621.1217 |
 |[Start Menu gesture settings in MDM](#start-menu-gesture-settings-in-mdm)| A new policy is available to configure start menu gesture settings. | IT Admin | 10.0.22621.1217|
@@ -50,6 +51,10 @@ Looking for a new feature but don't see it? We released many new features as par
 |[Font and IME improvements](#font-and-ime-improvements) | Several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) now support GB18030-2022. | All | 10.0.22621.1205 |
 |[Support for NFC readers](#support-for-nfc-readers) | Users can now login to their devices using their security badge with an NFC reader. | All | 10.0.22621.1205 |
 |[Fixes improvements](#fixes-and-improvements)  | Additional fixes and improvements for HoloLens. | All   | 10.0.22621.1205 |
+
+### Viewfinder for camera
+
+With the latest camera updates coming in this release, you will now have a viewfinder that provides a clear indication of what will be included in your image captures. This overlay does not hide anything in your view when taking a picture. You will now see indicators for both the center and approximate borders for the PV camera stream.
 
 ### App-Exclusive Mode now available
 
