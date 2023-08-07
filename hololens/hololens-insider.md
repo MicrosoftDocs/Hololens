@@ -210,6 +210,9 @@ USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base
 
 ![smartcard reader properties](media/hololens-insider/smartcard-reader-properties.png)
 
+> [!NOTE] 
+> If a USB NFC reader works on Windows Desktop with the inbox CCID driver, that same reader is expected to be compatible with the HoloLens 2.  If the reader requires a third-party driver (either from Windows Update or through manual driver installation), the reader will not be compatible with HoloLens 2.
+
 Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
 
 1.	From the “Other User” screen, enter the FIDO Key / Tap the NFC Key against the reader.
@@ -220,7 +223,10 @@ Whether you sign into a device you have used before or a new device, please foll
       a.	Note:  if the user is new to the device, the Single Biometric Disclosure Screen will be displayed.
 5.	Start Menu then appears.
 
-### Fixes and improvements
+> [!NOTE] 
+> NFC reader support for the HoloLens 2 only supports NFC CTAP for FIDO2 login. There is no plan to provide the same level of Smartcard WinRT API support as on Windows Desktop.  This is due to variations across Smartcard WinRT APIs.  In addition, the SCard API used for HoloLens 2 has somewhat less functionality compared to the Desktop versions and some reader types and features may not be supported.
+
+> Fixes and improvements
 
 - Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy (Windows 11 builds only).
 - Fixed an issue where swipe to type on the virtual keyboard was not working correctly (Windows 11 builds only).
