@@ -226,7 +226,7 @@ Whether you sign into a device you have used before or a new device, please foll
 > [!NOTE] 
 > NFC reader support for the HoloLens 2 only supports NFC CTAP for FIDO2 login. There is no plan to provide the same level of Smartcard WinRT API support as on Windows Desktop.  This is due to variations across Smartcard WinRT APIs.  In addition, the SCard API used for HoloLens 2 has somewhat less functionality compared to the Desktop versions and some reader types and features may not be supported.
 
-> Fixes and improvements
+### Fixes and improvements
 
 - Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy (Windows 11 builds only).
 - Fixed an issue where swipe to type on the virtual keyboard was not working correctly (Windows 11 builds only).
