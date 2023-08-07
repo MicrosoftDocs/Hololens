@@ -53,7 +53,13 @@ Looking for a new feature but don't see it? We released many new features as par
 
 ### Viewfinder for camera
 
-With the latest camera updates coming in this release, you will now have a viewfinder that provides a clear indication of what will be included in your image captures. This overlay does not hide anything in your view when taking a picture. You will now see indicators for both the center and approximate borders for the PV camera stream.
+With the latest camera updates coming in this release, you will now have a viewfinder that provides an indication of what will be included in your image capture. This overlay does not hide anything in your view when taking a picture. Note that the content in the capture will be larger than the bracket area.
+
+![Screenshot shows directions on how to take a photo and what content will be included.](media/hololens-insider/mrc-viewfinder-disclaimer-1.png)
+
+You will now see indicators for both the center and approximate borders for the PV camera stream.
+
+![Screenshot shows the center and approximate border of what will be captured in the photo.](media/hololens-insider/mrc-viewfinder-1.png)
 
 ### Rename HoloLens 2 device
 
@@ -164,6 +170,9 @@ Please refer to [AllowInstallationOfMatchingDeviceIDs](/windows/client-managemen
 ### Domain suggested during signin
 
 During the sign-in process, if [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname) MDM policy is set on HoloLens 2, the tenant domain name will be suggested to the user to speed up the login process and save time.  Users will still have the option to type in a different tenant domain name if desired.
+
+> [!NOTE] 
+> IT Admins will need to configure the policy for this feature to be in effect.
 
 ### Windows Hello behavior with FIDO2 policy
 
@@ -345,6 +354,7 @@ If you no longer want to receive Insider builds of Windows Holographic, you have
 >
 > 1. Locate the build number through **Settings** > **System** > **About**.
 > 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
+
 
 
 
