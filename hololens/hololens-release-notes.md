@@ -32,9 +32,9 @@ The Windows Holographic version name gives you an indication of the time when th
 
 In between our feature updates, we also release fixes and improvements and security updates. These updates are always minor updates and never change the major build number.
 
-To help provide clarity, this release notes page will provide information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
+To help provide clarity, this release notes page provides information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), refer to the table below.
 
-Note:  the current release version is the July 2023 Update, Build 1120.
+Note:  the current release version is the August 2023 Update, Build 1125.
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
@@ -60,6 +60,15 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Windows Holographic, version 23H1 - August 2023 Update
+
+- Build 22621.1125
+
+Improvements and fixes in the update:
+
+- Improved reliability of the application lifecycle.
+
+
 ## Windows Holographic, version 23H1 - July 2023 Update
 
 - Build 22621.1120
@@ -75,7 +84,7 @@ Improvements and fixes in the update:
 
 Windows Holographic, version 23H1 is now available and brings a great set of new features to HoloLens 2 users, IT professionals and developers. Check out all the new great features for HoloLens 2!
 
-HoloLens 2 is moving to Windows 11 as part of the 23H1 release. To upgrade, HoloLens 2 device(s) must be currently running 21H1 May 2021 update (build 20346.1002) or newer. If the 23H1 feature update is not available, please update your device and try again. If you are on a version that is older than Windows Holographic version 20H2 (Build 19041.1136), you first need to update to the February 2021 update (build 19041.1136 or newer) before you update to the 21H1 May 2021 update (build 20346.1002) or newer. 
+HoloLens 2 is moving to Windows 11 as part of the 23H1 release. To upgrade, HoloLens 2 device(s) must be currently running 21H1 May 2021 update (build 20346.1002) or newer. If the 23H1 feature update is not available, update your device and try again. If you are on a version that is older than Windows Holographic version 20H2 (Build 19041.1136), you first need to update to the February 2021 update (build 19041.1136 or newer) before you update to the 21H1 May 2021 update (build 20346.1002) or newer. 
 
 Note:  With the introduction of Windows Holographic version 23H1, we are discontinuing monthly servicing updates for Windows Holographic version 20H2 (Build 19041.1128+). This enables us to focus on more recent releases and continue to deliver valuable improvements. 
 
@@ -109,7 +118,7 @@ Note:  With the introduction of Windows Holographic version 23H1, we are discont
 
 While apps from the Microsoft Store are kept up to date automatically by the device, sometimes you may want to manually check for updates to get those app updates sooner. Typically, this is done from within the Microsoft Store app. However, that option will not be available if the Microsoft Store is blocked in your environment. For such environments, you can now manually check for updates to Store apps from the Settings app under Apps -> App updates.
 
-IT admins will be able to block or allow this page with the [Settings/PageVisibilityList policy](/windows/client-management/mdm/policy-csp-settings#pagevisibilitylist) with the URI `ms-settings:appupdate`.
+IT admins are able to block or allow this page with the [Settings/PageVisibilityList policy](/windows/client-management/mdm/policy-csp-settings#pagevisibilitylist) with the URI `ms-settings:appupdate`.
 
 See screenshot below of the Settings app where this feature can be seen.
 
@@ -169,7 +178,7 @@ Create a custom OMA-URI device configuration profile as follows and apply it to 
 
 1. For the **data type** field, choose **string**.
 
-1. For the **value** field, enter a date value for a starting date and time, such as *2023-01-06T10:35:00* to set DailyRecurrent reboots starting on the given date and *two minutes after* the set starting time daily. Similarly, setting WeeklyRecurrent reboots starting at the given date and *two minutes after* the starting time every seven days. For example, if you specify 10:00, the reboot will occur at 10:02.
+1. For the **value** field, enter a date value for a starting date and time, such as *2023-01-06T10:35:00* to set DailyRecurrent reboots starting on the given date and *two minutes after* the set starting time daily. Similarly, setting WeeklyRecurrent reboots starting at the given date and *two minutes after* the starting time every seven days. For example, if you specify 10:00, the reboot occurs at 10:02.
 
    > [!NOTE]
    >
@@ -179,7 +188,7 @@ Create a custom OMA-URI device configuration profile as follows and apply it to 
 
 Having up-to-date devices is important. A previous feature improvement lets you see when updates are ready to *install*. With this new update, your device displays when an update is available to *download*. As with desktop devices, when an update is available, your Hololens displays a blue update circle icon. This icon is near your user icon.
 
-1. Select your user icon. The user context menu will open.
+1. Select your user icon. The user context menu opens.
 1. Select **Download update** to launch the Settings app updates page that shows the update available to download.
 
 :::image type="content" alt-text="This screenshot shows the start menu context for OS updates." source="images/hl2-update-context-menu-crop-6in.png":::
@@ -300,7 +309,7 @@ List of new or newly enabled policies:
 
 ### Policies to speed up adding users
 
-As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are two new areas you'll be able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
+As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are two new areas you are able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
 
 The new policies and screens they skip are:
 
@@ -398,7 +407,7 @@ This policy setting specifies whether the Windows NTP Client is enabled.
 This policy setting specifies a set of parameters for controlling the Windows NTP Client. Refer to [Policy CSP - ADMX_W32Time - Windows Client Management](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for supported configuration parameters.
 
 > [!NOTE]
-> Please replaces the values in the example below with the desired values for your time server. Refer to [this link](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for more details.
+> Replace the values in the example below with the desired values for your time server. Refer to [this link](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for more details.
 
 - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureNtpClient`
 - Data Type: String
@@ -470,9 +479,9 @@ There is a new version of the Microsoft Store app for the HoloLens 2. This app u
 
 ![Image of new store app that became availble in May 2022](images/store-app-hololens2-censored.jpg)
 
-With the new store you'll see apps that are available for HoloLens 2, and you'll be able to scroll through different various industries and solutions to view apps that may be useful to you. You'll be able to access any company apps by selecting the Work icon which looks like a briefcase in the top left. (The company name and user has been censored in this screenshot).
+With the new store, you see apps that are available for HoloLens 2, and you are able to scroll through different various industries and solutions to view apps that may be useful to you. You are able to access any company apps by selecting the Work icon which looks like a briefcase in the top left. (The company name and user has been censored in this screenshot).
 
-Want to check your apps, or app versions? You can select the **Library** icon and **Get updates**. Want to know what version an app is on? From the **Library** screen select an app installed on your device to go to that apps page, and scroll to the bottom and look for **>_ Installed version**.
+Want to check your apps, or app versions? You can select the **Library** icon and **Get updates**. Want to know what version an app is on? From the **Library** screen, select an app installed on your device to go to that apps page, and scroll to the bottom and look for **>_ Installed version**.
 
 ## Windows Holographic, version 22H1 - May 2022 Update
 
@@ -493,7 +502,7 @@ Windows Holographic, version 22H1 is now available and brings a great set of new
 
 Many of you have been so eager to receive our feature updates we've release some of them earlier this year in January and February. Several of these are improvements and manageability of last release's major item Moving Platform Mode. Check out all the new great features for HoloLens 2!
 
-This latest release is a "monthly update" to versions 21H1 (and 21H2), which includes new features, because of this the major build number will remain the same and Windows Update will indicate a monthly release to version 21H1 (build 20348). To ensure you've received 22H1, please verify the version number is 20348.1501 or higher. You can look at your Build Number in your **Settings** -> **System** -> **About** screen to confirm you are on the latest available build 20348.1501+.
+This latest release is a "monthly update" to versions 21H1 (and 21H2), which includes new features, because of this the major build number will remain the same and Windows Update will indicate a monthly release to version 21H1 (build 20348). To ensure you've received 22H1, verify the version number is 20348.1501 or higher. You can look at your Build Number in your **Settings** -> **System** -> **About** screen to confirm you are on the latest available build 20348.1501+.
 
 To update to the latest release, open the Settings app, go to Update & Security, and tap Check for Updates. For more information on how to manage HoloLens updates, visit [Manage HoloLens updates.](hololens-updates.md)
 
@@ -587,7 +596,7 @@ Users can also manually set the down direction, if, for instance,  you’re usin
 
 #### MixedReality/ConfigureMovingPlatform
 
-This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it’s turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Please refer to [HoloLens 2 Moving Platform Mode](hololens2-moving-platform.md) for background information.
+This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it’s turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Refer to [HoloLens 2 Moving Platform Mode](hololens2-moving-platform.md) for background information.
 
 The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureMovingPlatform`
 
@@ -676,7 +685,7 @@ Improvements and fixes in the update:
 
 Windows Holographic, version 21H2 is now available and brings a great set of new features to HoloLens 2 users and IT professionals. This one’s about the improved troubleshooting and device reports, some fixed bugs in kiosk mode and the certificate viewer, the expanded manageability surface and the increased update reliability. A new flagship feature of this feature update coming to HoloLens is our Moving Platform Mode. Check out all the new great features for HoloLens 2!
 
-This latest release is a monthly update to version 21H1, but this time we are including new features, because of this the major build number will remain the same and Windows Update will indicate a monthly release to version 21H1 (build 20348). To ensure you've received 21H2, please verify the version number is 20348.1432 or higher. You can look at your Build Number in your **Settings** -> **System** -> **About** screen to confirm you are on the latest available build 20348.1432+.
+This latest release is a monthly update to version 21H1, but this time we are including new features, because of this the major build number will remain the same and Windows Update will indicate a monthly release to version 21H1 (build 20348). To ensure you've received 21H2, verify the version number is 20348.1432 or higher. You can look at your Build Number in your **Settings** -> **System** -> **About** screen to confirm you are on the latest available build 20348.1432+.
 
 To update to the latest release, open the Settings app, go to Update & Security, and tap Check for Updates. For more information on how to manage HoloLens updates, visit [Manage HoloLens updates.](hololens-updates.md)
 
@@ -864,7 +873,7 @@ The following update policies were added:
 
 ### Smart Retry for app updates
 
-Now enabled for HoloLens is a new policy that allows IT Admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. These can be set based on a few different triggers such as a scheduled time or sign-in. To learn more about how to use this policy please view [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
+Now enabled for HoloLens is a new policy that allows IT Admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. These can be set based on a few different triggers such as a scheduled time or sign-in. To learn more about how to use this policy, view [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
 
 This information can be found later in the [app deployment store for business page](app-deploy-store-business.md).
 
@@ -1004,9 +1013,9 @@ Improvements and fixes in the update:
 
 - Build 20346.1002
 
-This update contains features for two target audiences; features that can be used by anyone on a device by the End User, and new device management options that can be configured by IT Admins. The table below specifies the features that are relevant to each audience. If you’re an IT Admin, please take a look at our [IT Admin - Update Checklist](#it-admin---update-checklist---21h1).
+This update contains features for two target audiences; features that can be used by anyone on a device by the End User, and new device management options that can be configured by IT Admins. The table below specifies the features that are relevant to each audience. If you’re an IT Admin, take a look at our [IT Admin - Update Checklist](#it-admin---update-checklist---21h1).
 >[!IMPORTANT]
->In order to update to this build, HoloLens 2 device(s) must be currently running the February 2021 update (build 19041.1136) or newer. If you are not seeing this feature update available, please update your device first and try again.
+>In order to update to this build, HoloLens 2 device(s) must be currently running the February 2021 update (build 19041.1136) or newer. If you are not seeing this feature update available, update your device first and try again.
 
 | Feature Name                                              | Short description                                                                      | Target Audience |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -1076,7 +1085,7 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 - Most browser functionality (Favorites, History, etc.) should work as expected
 - Dark mode
 - Installing web apps to the device
-- Installing extensions (please let us know if you use any extensions that don't work properly on HoloLens 2)
+- Installing extensions (let us know if you use any extensions that don't work properly on HoloLens 2)
 - Viewing and marking up a PDF
 - Spatial sound from a single browser window
 - Automatic and manual updating of the browser
@@ -1131,7 +1140,7 @@ For IT Admins looking to update their [WDAC policy](windows-defender-application
 
 #### Managing endpoints for the new Microsoft Edge
 
-Some environments may have network restrictions to account for as a consideration. To ensure a smooth experience with the new Edge please [enable these Microsoft endpoints.](/deployedge/microsoft-edge-security-endpoints)
+Some environments may have network restrictions to account for as a consideration. To ensure a smooth experience with the new Edge, [enable these Microsoft endpoints.](/deployedge/microsoft-edge-security-endpoints)
 
 Read more about the currently available [endpoints for HoloLens](hololens-offline.md).
 
@@ -1288,7 +1297,7 @@ To set the volume of an individual app navigate to **Settings** > **System** > *
 
 Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the space bar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
 
-Please note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display).
+Note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display).
 
 ### Power menu from Start
 
@@ -1510,11 +1519,11 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 #### Updates for your WDAC policy
 
-✔️ If you were previously blocking Microsoft Edge via WDAC, you'll want to update your WDAC policy. Please review the following and use the sample code provided.
+✔️ If you were previously blocking Microsoft Edge via WDAC, you'll want to update your WDAC policy. Review the following and use the sample code provided.
 
 #### Enable new endpoints for Edge
 
-✔️ If you have an infrastructure that involves configuring network endpoints such as proxy or firewall, please enable these new endpoints for the new Microsoft Edge app.
+✔️ If you have an infrastructure that involves configuring network endpoints such as proxy or firewall, enable these new endpoints for the new Microsoft Edge app.
 
 #### Newly configurable items
 
