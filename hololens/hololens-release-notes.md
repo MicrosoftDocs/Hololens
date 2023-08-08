@@ -32,7 +32,7 @@ The Windows Holographic version name gives you an indication of the time when th
 
 In between our feature updates, we also release fixes and improvements and security updates. These updates are always minor updates and never change the major build number.
 
-To help provide clarity, this release notes page will provide information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
+To help provide clarity, this release notes page provides information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), please refer to the table below.
 
 Note:  the current release version is the August 2023 Update, Build 1125.
 
@@ -118,7 +118,7 @@ Note:  With the introduction of Windows Holographic version 23H1, we are discont
 
 While apps from the Microsoft Store are kept up to date automatically by the device, sometimes you may want to manually check for updates to get those app updates sooner. Typically, this is done from within the Microsoft Store app. However, that option will not be available if the Microsoft Store is blocked in your environment. For such environments, you can now manually check for updates to Store apps from the Settings app under Apps -> App updates.
 
-IT admins will be able to block or allow this page with the [Settings/PageVisibilityList policy](/windows/client-management/mdm/policy-csp-settings#pagevisibilitylist) with the URI `ms-settings:appupdate`.
+IT admins are able to block or allow this page with the [Settings/PageVisibilityList policy](/windows/client-management/mdm/policy-csp-settings#pagevisibilitylist) with the URI `ms-settings:appupdate`.
 
 See screenshot below of the Settings app where this feature can be seen.
 
@@ -178,7 +178,7 @@ Create a custom OMA-URI device configuration profile as follows and apply it to 
 
 1. For the **data type** field, choose **string**.
 
-1. For the **value** field, enter a date value for a starting date and time, such as *2023-01-06T10:35:00* to set DailyRecurrent reboots starting on the given date and *two minutes after* the set starting time daily. Similarly, setting WeeklyRecurrent reboots starting at the given date and *two minutes after* the starting time every seven days. For example, if you specify 10:00, the reboot will occur at 10:02.
+1. For the **value** field, enter a date value for a starting date and time, such as *2023-01-06T10:35:00* to set DailyRecurrent reboots starting on the given date and *two minutes after* the set starting time daily. Similarly, setting WeeklyRecurrent reboots starting at the given date and *two minutes after* the starting time every seven days. For example, if you specify 10:00, the reboot occurs at 10:02.
 
    > [!NOTE]
    >
@@ -188,7 +188,7 @@ Create a custom OMA-URI device configuration profile as follows and apply it to 
 
 Having up-to-date devices is important. A previous feature improvement lets you see when updates are ready to *install*. With this new update, your device displays when an update is available to *download*. As with desktop devices, when an update is available, your Hololens displays a blue update circle icon. This icon is near your user icon.
 
-1. Select your user icon. The user context menu will open.
+1. Select your user icon. The user context menu opens.
 1. Select **Download update** to launch the Settings app updates page that shows the update available to download.
 
 :::image type="content" alt-text="This screenshot shows the start menu context for OS updates." source="images/hl2-update-context-menu-crop-6in.png":::
@@ -309,7 +309,7 @@ List of new or newly enabled policies:
 
 ### Policies to speed up adding users
 
-As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are two new areas you'll be able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
+As you scale deployment of your HoloLens devices across your enterprise, you can set up new users more quickly through these new policies that allow you to skip steps in your Out-of-Box-Experience (OOBE). There are two new areas you are able to by-pass. When combined these screens allow for someone adding a new Azure AD user to a device to be up and running faster than before. These new policies enable you to apply even more fine tuning across your device inventory.
 
 The new policies and screens they skip are:
 
@@ -479,7 +479,7 @@ There is a new version of the Microsoft Store app for the HoloLens 2. This app u
 
 ![Image of new store app that became availble in May 2022](images/store-app-hololens2-censored.jpg)
 
-With the new store you'll see apps that are available for HoloLens 2, and you'll be able to scroll through different various industries and solutions to view apps that may be useful to you. You'll be able to access any company apps by selecting the Work icon which looks like a briefcase in the top left. (The company name and user has been censored in this screenshot).
+With the new store, you see apps that are available for HoloLens 2, and you are able to scroll through different various industries and solutions to view apps that may be useful to you. You are able to access any company apps by selecting the Work icon which looks like a briefcase in the top left. (The company name and user has been censored in this screenshot).
 
 Want to check your apps, or app versions? You can select the **Library** icon and **Get updates**. Want to know what version an app is on? From the **Library** screen select an app installed on your device to go to that apps page, and scroll to the bottom and look for **>_ Installed version**.
 
