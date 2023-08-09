@@ -91,7 +91,7 @@ We don't need to do much for this quick validation. Simply select the guide you 
 >[!NOTE]
 > You will need the **Authoring** role to login to the PC and author on the HoloLens. The Operator role is read-only and has no access to the PC app.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/poE7s7_zWDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/poE7s7_zWDE]
 
 ### Operating the Guide
 
@@ -105,7 +105,7 @@ For more in-depth guidance on how to operate a guide, check out these resources:
 
 [Get oriented with the Step card as an operator in Dynamics 365 Guides](/dynamics365/mixed-reality/guides/operator-step-card-orientation)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9s41BKGHVL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/9s41BKGHVL8]
 
 ## Next step 
 > [!div class="nextstepaction"]

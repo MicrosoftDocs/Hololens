@@ -159,7 +159,7 @@ When creating Guides you will always start on your PC. Creating the steps, selec
 
 If you'd like to start learning about authoring for Guides, start here with the [authoring overview](/dynamics365/mixed-reality/guides/authoring-overview). Or to get a fast track overview, watch this short video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EC24dMlAy90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/EC24dMlAy90]
 
 ## Optional: Kiosk mode
 
