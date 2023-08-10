@@ -40,11 +40,11 @@ Looking for a new feature but don't see it? We released many new features as par
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
 |[Faster eye position updates](#faster-eye-position-updates)|This improvement provides faster eye position updates when a user has not gone through eye calibration. | All | 10.0.22621.1219|
-|[Viewfinder for Camera](#viewfinder-for-camera)| A viewfinder is now included to show what will be captured in an image. | All | 10.0.22621.1217|
+|[Viewfinder for Camera](#viewfinder-for-camera)| A viewfinder is now included to show what is captured in an image. | All | 10.0.22621.1217|
 |[Rename HoloLens 2 device](#rename-hololens-2-device)| HoloLens 2 devices can now be renamed from the Settings app. | All| 10.0.22621.1217 |
 |[Start Menu gesture settings in MDM](#start-menu-gesture-settings-in-mdm)| A new policy is available to configure start menu gesture settings. | IT Admin | 10.0.22621.1217|
 |[Policies to block USB Peripherals on HoloLens 2](#policies-to-block-usb-peripherals)| HoloLens 2 devices can now be locked down to prevent the use of USB peripherals. | IT Admin| 10.0.22621.1217|
-|[Domain name suggested during sign-in](#domain-suggested-during-signin)| During sign-in, the domain name will be auto-populated to save time.| All | 10.0.22621.1217|
+|[Domain name suggested during sign-in](#domain-suggested-during-signin)| During sign-in, the domain name is auto-populated to save time.| All | 10.0.22621.1217|
 |[New policy for Windows Hello Provisioning behavior](#windows-hello-behavior-with-fido2-policy) | This new policy can be used to control Windows Hello provisioning behavior for users signed in with FIDO2 security keys.| IT Admin| 10.0.22621.1212 |
 |[New policy for Sign-in app default screen](#signin-app-default-screen-policy) | This new policy can be used to control the default screen shown when the Sign-in app launches to show Other User.| IT Admin| 10.0.22621.1212 |
 |[Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 10.0.22621.1205 |
@@ -58,13 +58,13 @@ For HoloLens 2 users who haven't saved their Eye Tracking calibration (either sk
 
 ### Viewfinder for camera
 
-With the latest camera updates coming in this release, you will now have a viewfinder that provides an indication of what will be included in your image capture. This overlay does not hide anything in your view when taking a picture. Note that the content in the capture will be larger than the bracket area.
+With the latest camera updates coming in this release, you now have a viewfinder that provides an indication of what is included in your image capture. This overlay does not hide anything in your view when taking a picture. Note that the content in the capture is larger than the bracket area.
 
-![Screenshot shows directions on how to take a photo and what content will be included.](media/hololens-insider/mrc-viewfinder-disclaimer-1.png)
+![Screenshot shows directions on how to take a photo and what content is included.](media/hololens-insider/mrc-viewfinder-disclaimer-1.png)
 
-You will now see indicators for both the center and approximate borders for the PV camera stream.
+You now see indicators for both the center and approximate borders for the PV camera stream.
 
-![Screenshot shows the center and approximate border of what will be captured in the photo.](media/hololens-insider/mrc-viewfinder-1.png)
+![Screenshot shows the center and approximate border of what is captured in the photo.](media/hololens-insider/mrc-viewfinder-1.png)
 
 ### Rename HoloLens 2 device
 
@@ -72,11 +72,11 @@ HoloLens 2 devices can now be renamed by going to the About page of the Settings
 
 ![Screenshot of About page in Settings app that shows Rename button.](media/hololens-insider/rename-success1.png)
 
-A confirmation screen will be displayed when the device has been successfully renamed.
+A confirmation screen is displayed when the device has been successfully renamed.
 
 ![Screenshot that shows the HoloLens 2 was successfully renamed.](rename-device-button2.png)
 
-The device will need to be rebooted for the renaming change to take effect.
+The device must be rebooted for the renaming change to take effect.
 
 ### Start menu gesture settings in MDM
 
@@ -174,14 +174,14 @@ Please refer to [AllowInstallationOfMatchingDeviceIDs](/windows/client-managemen
 
 ### Domain suggested during signin
 
-During the sign-in process, if [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname) MDM policy is set on HoloLens 2, the tenant domain name will be suggested to the user to speed up the login process and save time.  Users will still have the option to type in a different tenant domain name if desired.
+During the sign-in process, if [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname) MDM policy is set on HoloLens 2, the tenant domain name is suggested to the user to speed up the login process and save time.  Users still have the option to type in a different tenant domain name if desired.
 
 > [!NOTE] 
-> IT Admins will need to configure the policy for this feature to be in effect.
+> IT Admins need to configure the policy for this feature to be in effect.
 
 ### Windows Hello behavior with FIDO2 policy
 
-To simplify user account setup, users sign-in to their HoloLens 2 with FIDO2 security keys are no longer required to go through Iris and PIN enrollment during OOBE. To support users requiring Iris and/or PIN as alternative sign-in options to FIDO2 security keys, a new policy, EnableWindowsHelloProvisioningForSecurityKeys, has been added to the PassportForWork CSP to control Windows Hello Provisioning behavior. If this policy is enabled on HoloLens 2, the device will start Iris and PIN enrollments after new users sign-in to their devices with FIDO2 security keys.  It is managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:  
+To simplify user account setup, users sign-in to their HoloLens 2 with FIDO2 security keys are no longer required to go through Iris and PIN enrollment during OOBE. To support users requiring Iris and/or PIN as alternative sign-in options to FIDO2 security keys, a new policy, EnableWindowsHelloProvisioningForSecurityKeys, has been added to the PassportForWork CSP to control Windows Hello Provisioning behavior. If this policy is enabled on HoloLens 2, the device starts Iris and PIN enrollments after new users sign-in to their devices with FIDO2 security keys.  It is managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:  
 
 - URI value: ./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/EnableWindowsHelloProvisioningForSecurityKeys   
 
@@ -193,7 +193,7 @@ To simplify user account setup, users sign-in to their HoloLens 2 with FIDO2 sec
 
 In environments where devices are shared between multiple people and not everyone has enrolled in Iris sign-in, it may be preferable to always show the Other User screen so a user picking up the device can quickly start the sign-in process. For example, in an environment where everyone uses their FIDO2 security keys to sign in, it would be preferable to start on the Other User screen instead of having to find the correct user first.
 
-To help with this scenario, we added a new MDM policy: PreferLogonAsOtherUser. When this policy is enabled, the HoloLens Sign-in app will show the Other User screen by default when the app starts. 
+To help with this scenario, we added a new MDM policy: PreferLogonAsOtherUser. When this policy is enabled, the HoloLens Sign-in app shows the Other User screen by default when the app starts. 
 
 - URI value: ./Device/Vendor/MSFT/Policy/Config/MixedReality/PreferLogonAsOtherUser  
 
@@ -211,7 +211,7 @@ This update improves several simplified Chinese fonts and the Microsoft Pinyin I
 
 ### Support for NFC readers
 
-The next Insider Preview flight for HoloLens will include the ability for users to take advantage of NFC Readers.  Using a USB-C NFC reader, the HoloLens 2 device can be integrated with NFC FIDO2 cards as supported by Azure AD. For users in clean room environments, or where ID Badges contain FIDO technology, this can enable a “Tap & PIN” experience for HoloLens Sign on.  This feature enables a faster sign-in experience for users.
+The next Insider Preview flight for HoloLens includes the ability for users to take advantage of NFC Readers.  Using a USB-C NFC reader, the HoloLens 2 device can be integrated with NFC FIDO2 cards as supported by Azure AD. For users in clean room environments, or where ID Badges contain FIDO technology, this can enable a “Tap & PIN” experience for HoloLens Sign on.  This feature enables a faster sign-in experience for users.
 
 #### USB NFC reader support
 
@@ -225,7 +225,7 @@ USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base
 ![smartcard reader properties](media/hololens-insider/smartcard-reader-properties.png)
 
 > [!NOTE] 
-> If a USB NFC reader works on Windows Desktop with the inbox CCID driver, that same reader is expected to be compatible with the HoloLens 2.  If the reader requires a third-party driver (either from Windows Update or through manual driver installation), the reader will not be compatible with HoloLens 2.
+> If a USB NFC reader works on Windows Desktop with the inbox CCID driver, that same reader is expected to be compatible with the HoloLens 2.  If the reader requires a third-party driver (either from Windows Update or through manual driver installation), the reader is not compatible with HoloLens 2.
 
 Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
 
@@ -234,7 +234,7 @@ Whether you sign into a device you have used before or a new device, please foll
 3.	Press the button on the FIDO Key / Tap the NFC Key against the reader again.
 4.	The Device logs in.
 
-      a.	Note:  if the user is new to the device, the Single Biometric Disclosure Screen will be displayed.
+      a.	Note:  if the user is new to the device, the Single Biometric Disclosure Screen is displayed.
 5.	Start Menu then appears.
 
 > [!NOTE] 
