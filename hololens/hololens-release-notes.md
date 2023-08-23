@@ -66,8 +66,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 Improvements and fixes in the update:
 
-- Improved reliability of the application lifecycle.
-
+- This update included Windows security updates.
 
 ## Windows Holographic, version 23H1 - July 2023 Update
 
@@ -413,7 +412,8 @@ This policy setting specifies a set of parameters for controlling the Windows NT
 - Data Type: String
 - Value:
 
-```
+
+```xml
 <enabled/><data id="W32TIME_NtpServer"
 value="time.windows.com,0x9"/><data id="W32TIME_Type"
 value="NTP"/><data id="W32TIME_CrossSiteSyncFlags"
