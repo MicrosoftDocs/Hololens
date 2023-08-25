@@ -22,14 +22,14 @@ A Mobile Device Management (MDM) solution enables IT administrators to distribut
 The following instructions describe how to download HoloLens 2 apps from the __Microsoft Store for Business__, and then to distribute those apps to your managed HoloLens 2 devices using Intune.
 
 > [!Note]
-> Microsoft has [announced plans to retire](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/support-tip-microsoft-store-for-business-retirement-and-windows/ba-p/3662691) the Microsoft Store for Business.   However, the original retirement date, March 31<sup>st</sup> 2023, has been postponed, with a new retirement date yet to be announced. The instructions below can be used until the Microsoft Store for Business is retired. When the Microsoft Store for Business is retired, Microsoft plans to enable an alternative process for downloading an app package.  The step to distribute an app package to HoloLens 2 devices will not change. 
-> does not automatically download (push) apps to devices. However, apps from the Microsoft Store for Business can be associated with your device management (MDM) server to target and sync apps to devices.
+> Microsoft has [announced plans to retire](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/support-tip-microsoft-store-for-business-retirement-and-windows/ba-p/3662691) the Microsoft Store for Business.   However, the original retirement date, March 31<supst</sup2023, has been postponed, with a new retirement date yet to be announced. The instructions below can be used until the Microsoft Store for Business is retired. 
+> When the Microsoft Store for Business is retired, Microsoft plans to enable an alternative process for downloading an app package.  The step to distribute an app package to HoloLens 2 devices will not change.
 
 __Step 1: Download an app package__
 
 To prepare for distributing an app to HoloLens 2 devices using Intune, you first need to download the app package file from the Microsoft Store for Business (or obtain the app package file directly from the app vendor).
 
-__1.     Configure the Microsoft Store for Business website to display offline apps__:
+1. __Configure the Microsoft Store for Business website to display offline apps__:
 
 a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
 
@@ -41,7 +41,7 @@ d.   Click __Shop.__
 
 e.   Under __Shopping experience__, ensure that __Show offline apps__ is enabled.
 
-__2.     Shop for the app and add it into your group inventory__:
+2. __Shop for the app and add it into your group inventory__:
 
 a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
 
@@ -54,9 +54,10 @@ d.   On the app page, for __License type__ select __Offline.__
 e.   Click __Get the app__. This will add the app to your group inventory in the Microsoft Store for Business website.
 
 > [!NOTE]
-> ·     If you do not see the **Get the app** button next to the app, the app may already be in your group inventory.
-> ·     To be able to add apps into the group inventory, you must have one of the following [security roles in the Microsoft Store for Business](/microsoft-store/roles-and-permissions-microsoft-store-for-business): **Admin**, and/or **Purchaser**. If you do not have one of these roles, then when you shop for apps, you may see the option to [request apps](/microsoft-store/acquire-apps-microsoft-store-for-business). Submitting a request for an app will send an automated email with the request to the relevant administrator(s) in your organization, who will then need to decide whether to add the app.
-> ·     If the app you are looking for is not available for offline download from the Microsoft Store for Business, you will need to contact the app vendor to request the offline app package (appx file).
+> If you do not see the **Get the app** button next to the app, the app may already be in your group inventory.
+> To be able to add apps into the group inventory, you must have one of the following [security roles in the Microsoft Store for Business](/microsoft-store/roles-and-permissions-microsoft-store-for-business): **Admin**, and/or **Purchaser**. If you do not have one of these roles, then when you shop for apps, you may see the option to [request apps](/microsoft-store/acquire-apps-microsoft-store-for-business). Submitting a request for an app will send an automated email with the request to the relevant administrator(s) in your organization, who will then need to decide whether to add the app.
+> If the app you are looking for is not available for offline download from the Microsoft Store for Business, you will need to contact the app vendor to request the offline app package (appx file).
+
 __3.     Download the offline app package and required frameworks (if any)__:
 
 a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
@@ -75,6 +76,7 @@ g.   Scroll down to the __Required frameworks.__ If any required frameworks ar
 
 > [!NOTE]
 > Dynamics 365 Guides and Dynamics 365 Remote Assist are pre-installed on HoloLens 2 devices. If you use Windows Autopilot for managed device setup, these apps will automatically be updated to the latest versions during device setup.
+
  
 
 __Step 2: Distribute an app package to HoloLens 2 devices__
