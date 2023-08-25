@@ -126,6 +126,9 @@ See screenshot below of the Settings app where this feature can be seen.
 
 ![app update from settings](media/holographic-store-apps/app-update-from-settings.png)
 
+> [!NOTE] 
+> The ability to check for app updates from the Settings app is only available to users on Windows 11 builds.
+
 #### Newer Microsoft Store app
 
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/hololens2-basic-usage#start-gesture).
@@ -186,7 +189,7 @@ On the **Start** menu or in the **All apps** list, browse to the app. Select and
 
 On the **Start** menu, select **Settings > Apps.** Find the app from the list, select it and then click **Uninstall**.
 
-### HoloLens 1 only
+## HoloLens 1 only
 
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/app-deploy-store-business) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
 
@@ -212,6 +215,7 @@ On the **Start** menu, select **Settings > Apps.** Find the app from the list, s
 
 
 If you are unable to uninstall an app, please file [feedback](/hololens/hololens-feedback) using the Feedback Hub.
+
 
 
 
