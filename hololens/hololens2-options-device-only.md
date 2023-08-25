@@ -23,7 +23,7 @@ HoloLens 2 offers the most comfortable and immersive mixed reality experience av
 ## Learn about HoloLens 2
 Using your HoloLens 2 devices in a commercial environment can be a powerful tool for your business or organization. Any HoloLens 2 can also be used by a developer to create mixed reality apps.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/XwOnHqiNAeU]
 
 ## Here's what to do next with the HoloLens 2
 
