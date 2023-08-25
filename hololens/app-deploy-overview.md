@@ -2,8 +2,8 @@
 title: Overview - App Management
 description: Get started with an overview of mixed reality app management with mobile device management, Microsoft store for business, provisioning package, and App Installer.
 keywords: HoloLens, user, account, app, application management,
-author: evmill
-ms.author: millerevan
+author: lolab
+ms.author: lolab
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.topic: article 
@@ -72,4 +72,5 @@ Installing via App Installer is applicable for:
 * Side-load only
 * Does not require Developer mode or Device portal
 * Easy for end user to install
+
 
