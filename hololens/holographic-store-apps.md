@@ -151,7 +151,7 @@ Want to know what version an app is on? From the **Library** screen select an ap
 Automatic updates apply to Microsoft Store apps, and they can be updated automatically only if they have been installed directly from the Store or installed using the store package via Intune. If installed from Intune using a private package, IT can push updates down from MDM.
 
 > [!NOTE]
-> With the [retirement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-intune-integration-with-the-microsoft-store-on-windows/ba-p/3585077) of the Microsoft Store for Business, please see [Microsoft Store & Intune]().  
+> With the [retirement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-intune-integration-with-the-microsoft-store-on-windows/ba-p/3585077) of the Microsoft Store for Business, please see [Microsoft Store & Intune](app-deploy-store-business.md).  
 > If you're using the Microsoft Store (legacy) app type, we recommend re-adding apps with the new experience.
 
 #### How automatic updates work
