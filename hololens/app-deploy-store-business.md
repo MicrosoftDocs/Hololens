@@ -22,7 +22,7 @@ A Mobile Device Management (MDM) solution enables IT administrators to distribut
 The following instructions describe how to download HoloLens 2 apps from the __Microsoft Store for Business__, and then to distribute those apps to your managed HoloLens 2 devices using Intune.
 
 > [!Note]
-> Microsoft has [announced plans to retire](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/support-tip-microsoft-store-for-business-retirement-and-windows/ba-p/3662691) the Microsoft Store for Business.   However, the original retirement date, March 31<supst</sup2023, has been postponed, with a new retirement date yet to be announced. The instructions below can be used until the Microsoft Store for Business is retired. 
+> Microsoft has [announced plans to retire](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/support-tip-microsoft-store-for-business-retirement-and-windows/ba-p/3662691) the Microsoft Store for Business.   However, the original retirement date, March 31<sup>st</sup> 2023, has been postponed, with a new retirement date yet to be announced. The instructions below can be used until the Microsoft Store for Business is retired. 
 > When the Microsoft Store for Business is retired, Microsoft plans to enable an alternative process for downloading an app package.  The step to distribute an app package to HoloLens 2 devices will not change.
 
 __Step 1: Download an app package__
