@@ -29,7 +29,7 @@ __Step 1: Download an app package__
 
 To prepare for distributing an app to HoloLens 2 devices using Intune, you first need to download the app package file from the Microsoft Store for Business (or obtain the app package file directly from the app vendor).
 
-1. __Configure the Microsoft Store for Business website to display offline apps__:
+__1. Configure the Microsoft Store for Business website to display offline apps__:
 
    a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
 
@@ -41,7 +41,7 @@ To prepare for distributing an app to HoloLens 2 devices using Intune, you first
 
    e.   Under __Shopping experience__, ensure that __Show offline apps__ is enabled.
 
-2. __Shop for the app and add it into your group inventory__:
+__2. Shop for the app and add it into your group inventory__:
 
    a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
 
@@ -58,7 +58,7 @@ To prepare for distributing an app to HoloLens 2 devices using Intune, you first
 > To be able to add apps into the group inventory, you must have one of the following [security roles in the Microsoft Store for Business](/microsoft-store/roles-and-permissions-microsoft-store-for-business): **Admin**, and/or **Purchaser**. If you do not have one of these roles, then when you shop for apps, you may see the option to [request apps](/microsoft-store/acquire-apps-microsoft-store-for-business). Submitting a request for an app will send an automated email with the request to the relevant administrator(s) in your organization, who will then need to decide whether to add the app.
 > If the app you are looking for is not available for offline download from the Microsoft Store for Business, you will need to contact the app vendor to request the offline app package (appx file).
 
-__3.     Download the offline app package and required frameworks (if any)__:
+__3. Download the offline app package and required frameworks (if any)__:
 
    a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
 
@@ -83,7 +83,7 @@ __Step 2: Distribute an app package to HoloLens 2 devices__
 
 Once you have downloaded an app package file (see above), you can use Intune to [distribute it as a line-of-business app](/mem/intune/apps/lob-apps-windows) to auto-install on HoloLens 2 devices.
 
-__1.     Select the app type:__
+__1. Select the app type:__
 
    a.   Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -93,7 +93,7 @@ __1.     Select the app type:__
 
    d.   Click __Select__. The __Add app__ steps are displayed.
 
-__2.     Select the app package file:__
+__1. Select the app package file:__
 
    a.   In the __Add app__ pane, click __Select app package file__.
 
@@ -101,7 +101,7 @@ __2.     Select the app package file:__
 
    c.    When you're finished, select __OK__ on the __App package file__ pane to add the app.
 
-__3.     Set app information:__
+__1. Set app information:__
 
    a.   In the __App information__ page, add the details for your app. Depending on the app that you chose, some of the values in this pane might be automatically filled in.
 
@@ -120,7 +120,7 @@ __3.     Set app information:__
 
    b.   Click __Next__ to display the __Scope tags__ page.
 
-__4.     Select scope tags (optional):__
+__1. Select scope tags (optional):__
 
 You can use scope tags to determine who can see client app information in Intune. For full details about scope tags, see [Use role-based access control and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
@@ -128,13 +128,13 @@ You can use scope tags to determine who can see client app information in Intune
 
    b.   Click __Next__ to display the __Assignments__ page.
 
-__5.     Assignments:__
+__1. Assignments:__
 
    a.   Select the __Required__ group assignment for the app. For more information, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add) and [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy).
 
    b.   Click __Next__ to display the __Review + create__ page.
 
-__6.     Review + create:__
+__1. Review + create:__
 
    a.   Review the values and settings you entered for the app.
 
