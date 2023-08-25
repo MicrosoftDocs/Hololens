@@ -18,7 +18,7 @@ appliesto:
 
 # App Management: Overview
 
-You can deploy apps on three different paths: **Mobile Device Management (MDM)**, **Microsoft Store**, **Provisioning**, or by installing them via App Installer.
+You can deploy apps on four different paths: **Mobile Device Management (MDM)**, **Microsoft Store**, **Provisioning**, or by installing them via App Installer.
 
 ## Mobile Device Management (MDM)
 
@@ -72,5 +72,6 @@ Installing via App Installer is applicable for:
 * Side-load only
 * Does not require Developer mode or Device portal
 * Easy for end user to install
+
 
 
