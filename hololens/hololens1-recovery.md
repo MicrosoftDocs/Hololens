@@ -85,7 +85,7 @@ In some cases, you might want to go back to a previous version of the HoloLens s
 To go back to a previous version of HoloLens 1, follow these steps:
 
 1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
-1. On your PC, download the [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379).
+1. On your PC, download the [Windows Device Recovery Tool (WDRT)](https://go.microsoft.com/fwlink/p/?LinkId=522381).
 1. Download the [HoloLens Anniversary Update recovery package](https://aka.ms/hololensrecovery).
 1. When the downloads finish, open **File explorer** > **Downloads**. Right-click the zipped folder you just downloaded, and select **Extract all** > **Extract** to unzip it.
 1. Connect your HoloLens to your PC using the micro-USB cable that it came with. (Even if you've been using other cables to connect your HoloLens, this one works best.)
@@ -125,7 +125,7 @@ To use the tool, you need a computer running Windows 10 or later with at least 4
 
 ### Recover your HoloLens
 
-1. Download and install the [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) on your computer.
+1. Download and install the [Windows Device Recovery Tool](https://go.microsoft.com/fwlink/p/?LinkId=522381) on your computer.
 1. Connect the HoloLens (1st gen) to your computer by using the Micro USB cable that came with your HoloLens.
 1. Open the Windows Device Recovery Tool and follow the instructions.
 
@@ -142,3 +142,4 @@ If your device isn't detected, follow these steps to put it into flashing mode:
 4. Open the Windows Device Recovery Tool.
 5. Select **My device was not detected** and then **HoloLens**. 
 6. Follow the instructions to recover your device.
+
