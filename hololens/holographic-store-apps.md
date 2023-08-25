@@ -126,9 +126,8 @@ See screenshot below of the Settings app where this feature can be seen.
 
 ![app update from settings](media/holographic-store-apps/app-update-from-settings.png)
 
-> [!NOTE] 
-> The ability to check for app updates from the Settings app is only available to users on Windows 11 builds.
-
+> [!NOTE]
+> The ability to check for app updates from the Settings app is only available to users on 23H1 and later builds.
 #### Newer Microsoft Store app
 
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/hololens2-basic-usage#start-gesture).
@@ -215,6 +214,7 @@ On the **Start** menu, select **Settings > Apps.** Find the app from the list, s
 
 
 If you are unable to uninstall an app, please file [feedback](/hololens/hololens-feedback) using the Feedback Hub.
+
 
 
 
