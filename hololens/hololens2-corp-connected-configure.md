@@ -24,7 +24,7 @@ Azure, and Intune by that extension, uses users and groups to help assign config
 
 We can make a single user group specifically for assigning licenses.
 
-If you don&#39;t already have access to two Azure AD accounts in a user group you can use; here are the quick start guides for:
+If you don't already have access to two Azure AD accounts in a user group that you can use, here are the quick start guides for:
 
 - [How to create a user](/mem/intune/fundamentals/quickstart-create-user)
 - [How to create a group](/mem/intune/fundamentals/quickstart-create-group)
@@ -35,13 +35,13 @@ If you don&#39;t already have access to two Azure AD accounts in a user group yo
 
 In order to have a smooth and seamless experience, setting up Azure Active Directory Join (AADJ) and Auto Enrollment to Intune for HoloLens 2 devices is the way to go. This allows users to input their organization log-in credentials during OOBE and automatically register with Azure AD and enroll the device into MDM.
 
-By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we can select services and navigate a few pages until we can select Get a Premium trial. You may notice there is Azure Active Directory Premium 1 and 2 - for Automatic Enrollment P1 is sufficient. We can select Intune and select the user scope for automatic enrollment and select the group that was previously created.
+By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we can select services and navigate a few pages until we can select Get a Premium trial. You may notice there's Azure Active Directory Premium 1 and 2 - for Automatic Enrollment P1 is sufficient. We can select Intune and select the user scope for automatic enrollment and select the group that was previously created.
 
-For full details and steps read the guide on [how to enable auto enrollment for Intune](/mem/intune/enrollment/quickstart-setup-auto-enrollment).
+For full details and steps, read the guide on [how to enable auto enrollment for Intune](/mem/intune/enrollment/quickstart-setup-auto-enrollment).
 
 ## Corporate Wi-Fi Connectivity
 
-Corporate Wi-Fi connections will commonly require certificate-based authentication for customers using HoloLens 2. You will need to deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with your MDM solution. Using Intune to deploy Wi-Fi profiles, certificates, and proxy settings creates a seamless experience for end users.
+Corporate Wi-Fi connections will commonly require certificate-based authentication for customers using HoloLens 2. You'll need to deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with your MDM solution. Using Intune to deploy Wi-Fi profiles, certificates, and proxy settings creates a seamless experience for end users.
  
 ### Deploy certificates and Wi-Fi profiles
 
@@ -92,7 +92,7 @@ You can also enable the Guides specific ports: [Internet accessible URLs require
 
 Deploying a LOB app via MDM is a method that's easily scalable and can be automatically deployed to your devices upon enrollment in a created group.
 
-If you are still developing your Apps or don't have one yet, you can use a sample app of the MRTK examples hub. This sample app is ready to use, and won't require the use of either Unity or Visual Studio. [Download the MRTK Examples Sample app](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App).
+If you're still developing your Apps or don't have one yet, you can use a sample app of the MRTK examples hub. This sample app is ready to use, and won't require the use of either Unity or Visual Studio. [Download the MRTK Examples Sample app](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App).
 
 If you would prefer to use your own app or are interested in app development for Mixed Reality, then feel free to review our [Mixed Reality developer documentation](/windows/mixed-reality/design/design).
 
@@ -112,13 +112,13 @@ If you would prefer to use your own app or are interested in app development for
 
 4. Select the app package file, this is your APPXBUNDLE file, or in our case of this example the app is _MRTK Examples Hub\_2.4.2.0\_arm\_Master.appxbundle_.
 
-5. You will be notified of missing dependencies. In this case, we need to upload _Microsoft.VCLibs.ARM.14.00.appx_. Search for it under **Select a file**.
+5. You'll be notified of missing dependencies. In this case, we need to upload _Microsoft.VCLibs.ARM.14.00.appx_. Search for it under **Select a file**.
 
 6. Select OK.
 
 7. In the next screen, the required fields will be auto-filled. Select **Next**.
 
-8. Under Required, add our previously created group to make this app required for the group. This will cause the app to automatically download to enrolled devices in the group. Select **Next**.
+8. Under Required, add our previously created group to make this app required for the group. This causes the app to automatically download to enrolled devices in the group. Select **Next**.
 
 9. Select **Create**.
 
@@ -138,16 +138,16 @@ Follow [this short guide](/dynamics365/mixed-reality/guides/setup-step-one#assig
 
 ### Set up the Dataverse
 
-In order to [set up a production environment](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) you will need to meet two prerequisites. You must have the [**System Administrator**](/power-platform/admin/database-security) role,  **and**  you must have a [**Power Apps license**](/power-platform/admin/signup-question-and-answer) (or a [**Dynamics 365 Guides license**](/dynamics365/mixed-reality/guides/setup-step-one) that includes a Power Apps license). If following this guide you created the Azure AD, then you meet the role requirements for System Administrator. We also have assigned a Guides License in the previous step.
+In order to [set up a production environment](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) you'll need to meet two prerequisites. You must have the [**System Administrator**](/power-platform/admin/database-security) role,  **and**  you must have a [**Power Apps license**](/power-platform/admin/signup-question-and-answer) (or a [**Dynamics 365 Guides license**](/dynamics365/mixed-reality/guides/setup-step-one) that includes a Power Apps license). If following this guide you created the Azure AD, then you meet the role requirements for System Administrator. We also have assigned a Guides License in the previous step.
 
 Within this guide to [create a Microsoft Dataverse environment](/dynamics365/mixed-reality/guides/setup-step-two):
 
 1. Start by using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) and creating a New Environment.
 2. When creating the **New Environment**, for the **Type** you&#39;ll be selecting **Production**.
-3. It is important that you toggle **Create a database for this environment?**  option to  **Yes**.
+3. It's important that you toggle **Create a database for this environment?**  option to  **Yes**.
 4. In the  **Add database**  dialog box, set the  **Enable Dynamics 365 apps**  option to  **Yes.**
 
-You'll want to increase the maximum file size of items in your dataverse. Increasing the max file size will allow you to upload larger 3D models or video files that you'll use later in your guides. Follow a short guide [to change the maximum upload file size](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size).
+You'll want to increase the maximum file size of items in your dataverse. Increasing the max file size allows you to upload larger 3D models or video files that you'll use later in your guides. Follow a short guide [to change the maximum upload file size](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size).
 
 Lastly, you'll need to [install and configure the solution](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution). In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), select  **Resources**  \&gt;  **Dynamics 365 apps**, select  **Dynamics 365 Guides**  in the list, and then select  **Install**.
 
@@ -155,11 +155,11 @@ You need [add a Guides security role](/dynamics365/mixed-reality/guides/assign-r
 
 ### Create a test Guide on your PC via Authoring
 
-When creating Guides you will always start on your PC. Creating the steps, selecting models, and how to anchor the guide. This will be followed by placing content for your guide later in in authoring mode on your HoloLens device. For the purposes of this guide, we suggest making a short test guide with minimal steps and models.
+When creating Guides, you'll always start on your PC. Creating the steps, selecting models, and how to anchor the guide. This is followed by placing content for your guide later in authoring mode on your HoloLens device. For the purposes of this guide, we suggest making a short test guide with minimal steps and models.
 
 If you'd like to start learning about authoring for Guides, start here with the [authoring overview](/dynamics365/mixed-reality/guides/authoring-overview). Or to get a fast track overview, watch this short video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EC24dMlAy90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/EC24dMlAy90]
 
 ## Optional: Kiosk mode
 
