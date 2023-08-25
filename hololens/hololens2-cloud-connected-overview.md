@@ -40,7 +40,7 @@ This is a setup similar to [Scenario A: Deploy to cloud connect devices](/holole
 
 Remote Assist allows for collaborative maintenance and repair, remote inspection, as well as knowledge sharing and training. By connecting people in different roles and locations, a technician who uses Remote Assist can connect with a remote collaborator on Microsoft Teams. They can combine video, screenshots, and annotations to solve problems in real time even when they aren't in the same location. Remote collaborators can insert reference images, schematics, and other helpful information the technician's physical space so they can refer to the schematic while working heads-up and hands-free on HoloLens.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/d3YT8j0yYl0]
 
 ### Remote Assist Licensing and Requirements
 
