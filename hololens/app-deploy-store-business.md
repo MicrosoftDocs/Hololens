@@ -31,27 +31,27 @@ To prepare for distributing an app to HoloLens 2 devices using Intune, you first
 
 __1. Configure the Microsoft Store for Business website to display offline apps__:
 
-   a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
+     a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
 
-   b.   Click __Manage__ (on the top navigation).
+     b.   Click __Manage__ (on the top navigation).
 
-   c.   Click __Settings__ (on the left navigation).
+     c.   Click __Settings__ (on the left navigation).
 
-   d.   Click __Shop.__
+     d.   Click __Shop.__
 
-   e.   Under __Shopping experience__, ensure that __Show offline apps__ is enabled.
+     e.   Under __Shopping experience__, ensure that __Show offline apps__ is enabled.
 
 __2. Shop for the app and add it into your group inventory__:
 
-   a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
+     a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
 
-   b.   In the top navigation bar, click __Shop for my group__.
+     b.   In the top navigation bar, click __Shop for my group__.
 
-   c.    Using the search box on the top navigation bar, __search__ for the name of the app that you're looking for. When you find the app, click on it.
+     c.    Using the search box on the top navigation bar, __search__ for the name of the app that you're looking for. When you find the app, click on it.
 
-   d.   On the app page, for __License type__ select __Offline.__
+     d.   On the app page, for __License type__ select __Offline.__
 
-   e.   Click __Get the app__. This will add the app to your group inventory in the Microsoft Store for Business website.
+     e.   Click __Get the app__. This will add the app to your group inventory in the Microsoft Store for Business website.
 
 > [!NOTE]
 > If you do not see the **Get the app** button next to the app, the app may already be in your group inventory.
@@ -60,19 +60,19 @@ __2. Shop for the app and add it into your group inventory__:
 
 __3. Download the offline app package and required frameworks (if any)__:
 
-   a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
+     a.   Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
 
-   b.   On the top navigation bar, click __Manage__.
+     b.   On the top navigation bar, click __Manage__.
 
-   c.    Under __Products & services__, select __Manage apps__.
+     c.    Under __Products & services__, select __Manage apps__.
 
-   d.   Find the app that you are looking for in the list. Click the app name.
+     d.   Find the app that you are looking for in the list. Click the app name.
 
-   e.   Under __Download package for offline use__, set __Platform__ to __Windows 10 HoloLens__.
+     e.   Under __Download package for offline use__, set __Platform__ to __Windows 10 HoloLens__.
 
-   f.     Click __Download__ to download the app package (appx file).
+     f.     Click __Download__ to download the app package (appx file).
 
-   g.   Scroll down to the __Required frameworks.__ If any required frameworks are listed, click the __Download__ button next to each to download them all. (Some apps may not have any required frameworks)
+     g.   Scroll down to the __Required frameworks.__ If any required frameworks are listed, click the __Download__ button next to each to download them all. (Some apps may not have any required frameworks)
 
 > [!NOTE]
 > Dynamics 365 Guides and Dynamics 365 Remote Assist are pre-installed on HoloLens 2 devices. If you use Windows Autopilot for managed device setup, these apps will automatically be updated to the latest versions during device setup.
@@ -85,25 +85,25 @@ Once you have downloaded an app package file (see above), you can use Intune to 
 
 __1. Select the app type:__
 
-   a.   Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+     a.   Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-   b.   Select __Apps__ > __All apps__ > __Add__.
+     b.   Select __Apps__ > __All apps__ > __Add__.
 
-   c.    In the __Select app type__ pane, under the __Other__ app types, select __Line-of-business app__.
+     c.    In the __Select app type__ pane, under the __Other__ app types, select __Line-of-business app__.
 
-   d.   Click __Select__. The __Add app__ steps are displayed.
+     d.   Click __Select__. The __Add app__ steps are displayed.
 
 __1. Select the app package file:__
 
-   a.   In the __Add app__ pane, click __Select app package file__.
+     a.   In the __Add app__ pane, click __Select app package file__.
 
-   b.   In the __App package file__ pane, select the browse button. Then, select an app package file with the extension __.appx__. The app details will be displayed.
+     b.   In the __App package file__ pane, select the browse button. Then, select an app package file with the extension __.appx__. The app details will be displayed.
 
-   c.    When you're finished, select __OK__ on the __App package file__ pane to add the app.
+     c.    When you're finished, select __OK__ on the __App package file__ pane to add the app.
 
 __1. Set app information:__
 
-   a.   In the __App information__ page, add the details for your app. Depending on the app that you chose, some of the values in this pane might be automatically filled in.
+     a.   In the __App information__ page, add the details for your app. Depending on the app that you chose, some of the values in this pane might be automatically filled in.
 
    - __Name__: Enter the name of the app as it appears in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps appears in the company portal.
    - __Description__: Enter the description of the app. The description appears in the company portal.
@@ -118,27 +118,27 @@ __1. Set app information:__
    - __Notes__: Enter any notes that you want to associate with this app.
    - __Logo__: Upload an icon that is associated with the app. This icon is displayed with the app when users browse through the company portal.
 
-   b.   Click __Next__ to display the __Scope tags__ page.
+     b.   Click __Next__ to display the __Scope tags__ page.
 
 __1. Select scope tags (optional):__
 
 You can use scope tags to determine who can see client app information in Intune. For full details about scope tags, see [Use role-based access control and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
-   a.   Click __Select scope tags__ to optionally add scope tags for the app.
+     a.   Click __Select scope tags__ to optionally add scope tags for the app.
 
-   b.   Click __Next__ to display the __Assignments__ page.
+     b.   Click __Next__ to display the __Assignments__ page.
 
 __1. Assignments:__
 
-   a.   Select the __Required__ group assignment for the app. For more information, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add) and [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy).
+     a.   Select the __Required__ group assignment for the app. For more information, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add) and [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy).
 
-   b.   Click __Next__ to display the __Review + create__ page.
+     b.   Click __Next__ to display the __Review + create__ page.
 
 __1. Review + create:__
 
-   a.   Review the values and settings you entered for the app.
+     a.   Review the values and settings you entered for the app.
 
-   b.   When you are done, click __Create__ to add the app to Intune.
+     b.   When you are done, click __Create__ to add the app to Intune.
 
 The __Overview__ blade for the line-of-business app is displayed.
 
