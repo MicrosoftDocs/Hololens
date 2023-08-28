@@ -2,6 +2,16 @@
 
 
 
+## Week of August 21, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/21/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 8/25/2023 | [Deployment Guide - Corporate connected HoloLens 2 with Dynamics 365 Guides - Configure](/hololens/hololens2-corp-connected-configure) | modified |
+| 8/25/2023 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Deploy](/hololens/hololens2-corp-connected-deploy) | modified |
+
+
 ## Week of August 14, 2023
 
 
