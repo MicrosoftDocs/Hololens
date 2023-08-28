@@ -22,7 +22,7 @@ You can deploy apps on four different paths: **Mobile Device Management (MDM)**,
 
 ## Mobile Device Management (MDM)
 
-An MDM solution enables IT decision-makers and administrators to privately auto-install (push) their in-house, line-of-business apps, or purchase apps through the store for a group of users. HoloLens devices work best with Microsoft Intune for [application management](app-deploy-intune.md). Intune also offers users finer-grained control over IT-managed apps through the Company Portal downloadable experience.
+An MDM solution enables IT decision-makers and administrators to privately auto install (push) their in-house, line-of-business apps, or purchase apps through the store for a group of users. HoloLens devices work best with Microsoft Intune for [application management](app-deploy-intune.md). Intune also offers users finer-grained control over IT-managed apps through the Company Portal downloadable experience.
 
 > [!NOTE]
 > The following instructions are for users who want to manage their applications with Intune. Microsoft recommends using Intune for application and device management.
@@ -30,7 +30,7 @@ An MDM solution enables IT decision-makers and administrators to privately auto-
 Mobile Device Management (MDM) is applicable for:
 
 * MDM deployed + Company Portal
-* Line of Business (non-public) apps
+* Line of Business (non public) apps
 * Manual installation of available applications through Company Portal
 * Admin push through MDM policy
 * Auto update through MDM
@@ -57,21 +57,22 @@ For more information, visit [Holographic Store Apps](/hololens/holographic-store
 
 Installing via Provisioning Packages is applicable for:
 
-* Line of Business / Self-developed (non-public) apps
+* Line of Business / Self-developed (non public) apps
 * Public apps (if offline installer is available)
 * USB side-loading only
 * No auto update (requires manual updates via Provisioning Package)
 
 ## Install Apps on HoloLens 2 via App Installer
 
-Using the [App Installer](app-deploy-app-installer.md) users can have an experience that is simple for installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. This can be done without needing to enable Developer Mode or use Device Portal. This is a simple method of distributing a built app. This method works easily, whether you'd like to deploy your app or you simply want to demo your app to another user with a HoloLens.
+With the [App Installer](app-deploy-app-installer.md), users can have an experience that is simple for either installing Apps on local devices or sharing an app with someone else who is unfamiliar with other app install methods on HoloLens. This method does not need to enable Developer Mode or use Device Portal. It is a simple method of distributing a built app. It also works easily, whether you'd like to deploy your app or you simply want to demo your app to another user with a HoloLens.
 
 Installing via App Installer is applicable for:
 
-* Line of Business / Self-developed (non-public) apps
+* Line of Business / Self-developed (non public) apps
 * Side-load only
-* Does not require Developer mode or Device portal
+* Doesn't require Developer mode or Device portal
 * Easy for end user to install
+
 
 
 
