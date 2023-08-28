@@ -116,9 +116,11 @@ See also: [Enabling automatic uploads to OneDrive for business](hololens-release
 
 ### Manual updates
 
-While apps from the Microsoft Store are kept up to date automatically by the device, sometimes you may want to manually check for updates to get those app updates sooner. Typically, this is done from within the Microsoft Store app.
+While apps from the Microsoft Store are kept up to date automatically by the device, sometimes you may want to manually check for updates to get those app updates sooner. This can be done from either the Settings app or the Microsoft Store app.
 
-An alternative is to manually check for updates to Store apps from the Settings app under Apps -> App updates.  This is particularly useful if access to the Microsoft Store is blocked in your environment.
+#### Settings app
+
+To manually check for updates to Store apps from the Settings app, go to Apps -> App updates.  This is particularly useful if access to the Microsoft Store is blocked in your environment.
 
 IT admins are able to block or allow this page with the [Settings/PageVisibilityList policy](/windows/client-management/mdm/policy-csp-settings) with the URI `ms-settings:appupdate`.
 
@@ -128,7 +130,8 @@ See screenshot below of the Settings app where this feature can be seen.
 
 > [!NOTE]
 > The ability to check for app updates from the Settings app is only available to users on 23H1 and later builds.
-#### Newer Microsoft Store app
+
+#### Microsoft Store app
 
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/hololens2-basic-usage#start-gesture).
 
@@ -214,6 +217,7 @@ On the **Start** menu, select **Settings > Apps.** Find the app from the list, s
 
 
 If you are unable to uninstall an app, please file [feedback](/hololens/hololens-feedback) using the Feedback Hub.
+
 
 
 
