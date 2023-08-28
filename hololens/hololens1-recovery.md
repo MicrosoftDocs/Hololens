@@ -143,3 +143,4 @@ If your device isn't detected, follow these steps to put it into flashing mode:
 5. Select **My device was not detected** and then **HoloLens**. 
 6. Follow the instructions to recover your device.
 
+
