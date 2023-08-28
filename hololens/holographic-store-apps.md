@@ -153,9 +153,7 @@ Want to know what version an app is on? From the **Library** screen select an ap
 Automatic updates apply to Microsoft Store apps, and they can be updated automatically only if they have been installed directly from the Store or installed using the store package via Intune. If installed from Intune using a private package, IT can push updates down from MDM.
 
 > [!NOTE]
-> With the [retirement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-intune-integration-with-the-microsoft-store-on-windows/ba-p/3585077) of the Microsoft Store for Business, please see [Microsoft Store & Intune](/hololens/app-deploy-store-business.md).  
-> If you're using the Microsoft Store (legacy) app type, we recommend re-adding apps with the new experience.
-
+> With the [retirement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-intune-integration-with-the-microsoft-store-on-windows/ba-p/3585077) of the Microsoft Store for Business, please see [Microsoft Store & Intune](/hololens/app-deploy-store-business.md).
 #### How automatic updates work
 
 Automatic app updates are scheduled to occur daily subject to network availability. These updates occur approximately every 24 hours, although updates per device can be random. Keep your device either active or plugged into AC to receive updates. Even if app updates are downloaded during active daily usage, they will only be applied when the app to be updated is no longer in use.
@@ -217,6 +215,7 @@ On the **Start** menu, select **Settings > Apps.** Find the app from the list, s
 
 
 If you are unable to uninstall an app, please file [feedback](/hololens/hololens-feedback) using the Feedback Hub.
+
 
 
 
