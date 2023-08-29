@@ -30,7 +30,7 @@ __Step 1: Download an app package__
 
 To prepare for distributing an app to HoloLens 2 devices using Intune, you first need to download the app package file from the Microsoft Store for Business (or obtain the app package file directly from the app vendor).
 
-__1. Configure the Microsoft Store for Business website to display offline apps__:
+1. __Configure the Microsoft Store for Business website to display offline apps__:
   1. Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
   1. Click __Manage__ (on the top navigation).
   1. Click __Settings__ (on the left navigation).
