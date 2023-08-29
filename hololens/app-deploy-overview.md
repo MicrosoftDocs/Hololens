@@ -48,8 +48,7 @@ This Microsoft Store is applicable for:
 For more information, visit [Holographic Store Apps](/hololens/holographic-store-apps).
 
 > [!NOTE]
-> With the [retirement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-intune-integration-with-the-microsoft-store-on-windows/ba-p/3585077) of the Microsoft Store for Business, please see [Microsoft Store & Intune](/hololens/app-deploy-store-business).
-> For more information about adding Microsoft Store apps to Intune, please [see Add Microsoft Store apps to Microsoft Intune.](/hololens/app-deploy-store-business)
+> With the [retirement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-intune-integration-with-the-microsoft-store-on-windows/ba-p/3585077) of the Microsoft Store for Business, how to deploy apps has changed.  See [Microsoft Store for Business & Intune](/hololens/app-deploy-store-business) for more information.
 
 ## Install via Provisioning Packages
 
@@ -72,6 +71,7 @@ Installing via App Installer is applicable for:
 * Side-load only
 * Doesn't require Developer mode or Device portal
 * Easy for end user to install
+
 
 
 
