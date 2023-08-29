@@ -88,7 +88,7 @@
 ## Application Deployment
 ### [Application management overview](app-deploy-overview.md)
 ### [Intune & Company Portal](app-deploy-intune.md)
-### [Microsoft Store for Business](app-deploy-store-business.md)
+### [Microsoft Store for Business & Intune](app-deploy-store-business.md)
 ### [Provisioning Package](app-deploy-provisioning-package.md)
 ### [App Installer](app-deploy-app-installer.md)
 ## Policies (CSPs)
