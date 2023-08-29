@@ -3,13 +3,10 @@ title: Share your HoloLens with multiple people
 description: You can configure HoloLens to be shared by multiple Azure Active Directory accounts, or by multiple users that use a single account.
 ms.prod: hololens
 ms.sitesec: library
-author: qianw211
-ms.author: qianwen
 ms.topic: article
 ms.localizationpriority:
 ms.date: 1/4/2022
 ms.reviewer: anisgup
-manager: sean-kerawala
 appliesto:
 - HoloLens 2
 ---
