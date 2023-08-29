@@ -13,7 +13,7 @@ audience: HoloLens
 manager: lolab
 ---
 
-# Microsoft Store & Intune
+# Microsoft Store for Business & Intune
 
 With the [retirement](https://techcommunity.microsoft.com/t5/intune-customer-success/adding-your-microsoft-store-for-business-and-education-apps-to/ba-p/3788506) of the [Microsoft Store for Business](/microsoft-store/microsoft-store-for-business-overview), a new and improved Microsoft Store app management experience is available in Intune, leveraging Windows Package Manager and other improvements.  For more details, read [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-intune-integration-with-the-microsoft-store-on-windows/ba-p/3585077)
 
