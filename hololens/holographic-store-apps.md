@@ -3,8 +3,8 @@ title: Find, install, and uninstall applications
 description: The Microsoft Store is your source for apps and games that work with HoloLens.  Learn more about finding, installing, and uninstalling holographic apps.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.date: 3/7/2022
-author: evmill
-ms.author: millerevan
+author: lolab
+ms.author: lolab
 manager: lolab
 ms.reviewer: qizho
 keywords: hololens, store, uwp, app, install
@@ -16,7 +16,6 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ---
-
 
 # Find, install, and uninstall applications from the Microsoft Store
 
@@ -117,9 +116,22 @@ See also: [Enabling automatic uploads to OneDrive for business](hololens-release
 
 ### Manual updates
 
-To update an app you installed from the Microsoft Store, you can update the app from the Microsoft Store app. For apps installed for the Microsoft Store for Business, you can also update those apps from the Microsoft Store for Business.
+While apps from the Microsoft Store are kept up to date automatically by the device, sometimes you may want to manually check for updates to get those app updates sooner. This can be done from either the Settings app or the Microsoft Store app.
 
-#### Newer Microsoft Store app
+#### Settings app
+
+To manually check for updates to Store apps from the Settings app, go to Apps -> App updates.  This is particularly useful if access to the Microsoft Store is blocked in your environment.
+
+IT admins are able to block or allow this page with the [Settings/PageVisibilityList policy](/windows/client-management/mdm/policy-csp-settings) with the URI `ms-settings:appupdate`.
+
+See screenshot below of the Settings app where this feature can be seen.
+
+![app update from settings](media/holographic-store-apps/app-update-from-settings.png)
+
+> [!NOTE]
+> The ability to check for app updates from the Settings app is only available to users on 23H1 and later builds.
+
+#### Microsoft Store app
 
 1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/hololens2-basic-usage#start-gesture).
 
@@ -131,27 +143,6 @@ To update an app you installed from the Microsoft Store, you can update the app 
 
 Want to know what version an app is on? From the **Library** screen select an app installed on your device to go to that apps page, and scroll to the bottom and look for **>_ Installed version**.
 
-#### Older Microsoft Store app
-
-1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
-
-1. Select the Store app.
-
-1. Look to the top right of the Store app.
-
-1. Select the **"..."** or “See more” button.
-
-   > [!div class="mx-imgBorder"]
-   > ![Microsoft Store app screenshot.](images/store-update-1.png)
-
-1. Select **Downloads and updates**.
-    1. If your device has previously identified updates, there may be a down arrow and a number that represents pending updates.
-
-1. Select **Get updates**. Your device will now search for updates and set them to download and install.
-
-   > [!div class="mx-imgBorder"]
-   > ![Microsoft Store app screenshot of getting updates..](images/store-update-2.png.jpg)
-
 > [!NOTE]
 > If the apps on your device were distributed by your organization they can be updated through the same commercial app management methods. If this applies to your situation, read more via our [overview of commercial app deployment.](app-deploy-overview.md)
 >
@@ -159,11 +150,10 @@ Want to know what version an app is on? From the **Library** screen select an ap
 
 ### Automatic app updates
 
-Automatic updates apply to Microsoft Store or Microsoft Store for Business apps, and they can be updated automatically only if they have been installed directly from the Store. If installed from Intune, IT can push updates down from MDM by syncing with the Microsoft Store for Business for the latest available version for the app.
+Automatic updates apply to Microsoft Store apps, and they can be updated automatically only if they have been installed directly from the Store or installed using the store package via Intune. If installed from Intune using a private package, IT can push updates down from MDM.
 
 > [!NOTE]
-> For apps sourced from the Microsoft Store for Business, you must be signed into the Store and authenticated with the same tenant that is associated with the Microsoft Store for Business catalog used on the device.
-
+> With the [retirement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-intune-integration-with-the-microsoft-store-on-windows/ba-p/3585077) of the Microsoft Store for Business, please see [Microsoft Store for Business & Intune](/hololens/app-deploy-store-business.md).
 #### How automatic updates work
 
 Automatic app updates are scheduled to occur daily subject to network availability. These updates occur approximately every 24 hours, although updates per device can be random. Keep your device either active or plugged into AC to receive updates. Even if app updates are downloaded during active daily usage, they will only be applied when the app to be updated is no longer in use.
@@ -199,4 +189,37 @@ On the **Start** menu or in the **All apps** list, browse to the app. Select and
 
 On the **Start** menu, select **Settings > Apps.** Find the app from the list, select it and then click **Uninstall**.
 
+## HoloLens 1 only
+
+1. To open the [**Start** menu](holographic-home.md), perform a [Start gesture](/hololens/app-deploy-store-business) or [bloom](hololens1-basic-usage.md) gesture on HoloLens (1st gen).
+
+1. Select the Store app.
+
+1. Look to the top right of the Store app.
+
+1. Select the **"..."** or “See more” button.
+
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft Store app screenshot.](images/store-update-1.png)
+
+1. Select **Downloads and updates**.
+    1. If your device has previously identified updates, there may be a down arrow and a number that represents pending updates.
+
+1. Select **Get updates**. Your device will now search for updates and set them to download and install.
+
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft Store app screenshot of getting updates..](images/store-update-2.png.jpg)
+
+
+
+
+
 If you are unable to uninstall an app, please file [feedback](/hololens/hololens-feedback) using the Feedback Hub.
+
+
+
+
+
+
+
+
