@@ -1,9 +1,6 @@
 ---
 title: HoloLens 2 release notes for Windows Holographic, version 1903
 description: Read through previous HoloLens 2 release notes.
-author: evmill
-ms.author: millerevan
-manager: ranjibb
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article

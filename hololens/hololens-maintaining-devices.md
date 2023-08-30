@@ -3,9 +3,6 @@ title: Maintain HoloLens devices
 description: Learn the regular maintenance tasks for HoloLens devices.
 ms.prod: hololens
 ms.sitesec: library
-author: evmill
-ms.author: millerevan
-manager: lolab
 ms.reviewer: lavinds
 ms.topic: article
 audience: ITPro

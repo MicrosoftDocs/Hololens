@@ -5,15 +5,12 @@ description: How to use Advanced Recovery Companion to flash an image to HoloLen
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, arc, advanced recovery companion
 ms.prod: hololens
 ms.sitesec: library
-author: mattzmsft
-ms.author: qianwen
 ms.date: 10/15/2021
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
 ms.topic: article
 ms.localizationpriority: high
-manager: jarrettr
 appliesto:
 - HoloLens 2
 ---

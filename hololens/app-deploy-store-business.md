@@ -2,15 +2,12 @@
 title: Microsoft Store & Intune
 description: Learn how to work with the Microsoft Store & Intune to publish your mixed reality applications to your business. 
 keywords: Microsoft Store, Intune, app deployment, store
-author: lolab
-ms.author: lolab
 ms.date: 10/13/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority:
 audience: HoloLens
-manager: lolab
 ---
 
 # Microsoft Store for Business & Intune

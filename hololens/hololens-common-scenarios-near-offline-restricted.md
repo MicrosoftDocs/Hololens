@@ -3,11 +3,8 @@ title: Common Scenarios – Near Offline or Restricted for HoloLens 2
 description: Learn how to set up a secure, near offline, or restricted deployment and app deployment scenario with provisioning for HoloLens devices.
 keywords: HoloLens, management, offline, offline secure
 ms.date: 4/04/2022
-manager: sean.kerawala
 ms.prod: hololens
 ms.sitesec: library
-author: typride
-ms.author: tmilligan
 ms.reviewer: mata
 ms.topic: article
 audience: ITPro

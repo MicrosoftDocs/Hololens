@@ -2,8 +2,6 @@
 title: HoloLens 2 Industrial Edition FAQ
 description: Commonly asked questions about the HoloLens 2 Industrial Edition
 keywords: HoloLens 2 purchasing options, HoloLens options, Industrial Edition
-author: evmill
-ms.author: millerevan
 ms.reviewer: sekerawa
 ms.date: 2/01/2021
 ms.prod: hololens
@@ -11,7 +9,6 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high
 audience: HoloLens
-manager: yannisle
 appliesto:
 - HoloLens 2
 ---

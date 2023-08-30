@@ -3,13 +3,10 @@ title: HoloLens kiosk reference information
 description: Information and samples for kiosks on HoloLens devices. 
 ms.prod: hololens
 ms.sitesec: library
-author: evmill
-ms.author: millerevan
 ms.topic: article
 ms.localizationpriority:
 ms.date: 7/7/2022
 ms.reviewer: 
-manager: lolab
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
