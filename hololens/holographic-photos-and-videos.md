@@ -5,13 +5,10 @@ keywords: hololens, photo, video, capture, mrc, mixed reality capture, photos, c
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
 ms.prod: hololens
 ms.sitesec: library
-author: qianw211
-ms.author: qianwen
 ms.topic: article
 audience: ITPro
 ms.localizationpriority:
 ms.date: 7/26/2022
-manager: sekerawa
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

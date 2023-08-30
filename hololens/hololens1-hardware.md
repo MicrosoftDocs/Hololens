@@ -6,10 +6,7 @@ ms.date: 09/16/2019
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: mattzmsft
-ms.author: mazeller
 ms.topic: article
-manager: jarrettr
 ms.localizationpriority:
 appliesto:
 - HoloLens (1st gen)

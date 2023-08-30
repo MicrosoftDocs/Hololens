@@ -3,14 +3,11 @@ title: License requirements
 description: Keep up to date with all the licensing requirements and guidelines you need for mobile device management, HoloLens, and Remote Assist.
 ms.prod: hololens
 ms.sitesec: library
-author: pawinfie
-ms.author: pawinfie
 audience: HoloLens
 ms.topic: article
 ms.localizationpriority: high
 ms.date: 1/23/2020
 ms.reviewer: 
-manager: bradke
 appliesto:
 - HoloLens 2
 ---

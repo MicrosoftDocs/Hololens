@@ -4,13 +4,10 @@ description: Learn how to enable BitLocker device encryption to protect files st
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
 ms.topic: article
 ms.localizationpriority:
 ms.date: 01/26/2019
 ms.reviewer: 
-manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 ---

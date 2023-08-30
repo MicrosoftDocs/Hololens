@@ -4,14 +4,11 @@ description: Learn how to check your HoloLens build number, keep up to date with
 keywords: how-to, update, roll back, HoloLens, check build, build number
 ms.prod: hololens
 ms.sitesec: library
-author: evmill
-ms.author: millerevan
 ms.topic: article
 ms.localizationpriority:
 ms.date: 10/20/2021
 audience: ITPro
 ms.reviewer: 
-manager: sekerawa
 appliesto:
 - HoloLens 2
 ---

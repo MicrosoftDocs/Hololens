@@ -5,8 +5,7 @@ ms.date: 12/1/2022
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: evmill
-ms.author: millerevan
+
 ms.topic: article
 ms.localizationpriority: high
 appliesto:

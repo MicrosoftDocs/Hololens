@@ -4,8 +4,6 @@ description: Learn more about deploying and managing HoloLens in enterprise envi
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
-author: bgener
-ms.author: millerevan
 audience: ITPro
 ms.topic: article
 ms.localizationpriority:

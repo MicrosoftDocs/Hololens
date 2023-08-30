@@ -6,8 +6,6 @@ ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
 ms.topic: article
 ms.localizationpriority: high
 appliesto:

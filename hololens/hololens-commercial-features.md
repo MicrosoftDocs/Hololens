@@ -1,8 +1,6 @@
 ---
 title: HoloLens 2 capabilities and solutions
 description: Learn about the Microsoft HoloLens commercial features for businesses to manage HoloLens devices. 
-author: qianw211
-ms.author: qianwen
 ms.date: 12/13/2022
 ms.localizationpriority:
 ms.custom: 
@@ -13,7 +11,6 @@ audience: ITPro
 ms.prod: hololens
 ms.sitesec: library
 ms.reviewer: sekerawa
-manager: sekerawa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, commercial, features, mdm, mobile device management, kiosk mode, applications, identity, Bitlocker, iris, Windows Hello, Azure-powered, Autopilot, mixed reality, WDAC
