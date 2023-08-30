@@ -3,14 +3,12 @@ title: Enterprise Enrollment of HoloLens Devices in MAC address restricted Wi-Fi
 description: How to MAC address for network on HoloLens 2 devices
 ms.prod: hololens
 ms.sitesec: library
-author: evmill
-ms.author: mata
 ms.topic: article
 ms.localizationpriority: high
 ms.date: 10/01/2020
 ms.reviewer: v-evmill
 audience: ITPro
-manager: yannisle
+
 appliesto:
 - HoloLens 2
 ---

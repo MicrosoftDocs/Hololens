@@ -1,7 +1,5 @@
 ---
 title: "Learn more about Mixed Reality support options"
-ms.author: qianwen
-author: qianw211
 ms.reviewer: asergaz 
 description: Mixed Reality support options for small to large enterprise customers
 ms.prod: hololens

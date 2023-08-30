@@ -3,13 +3,12 @@ title: Windows Defender Application Control (WDAC)
 description: Overview on what Windows Defender Application Control is and how to use it to manage HoloLens mixed reality devices.
 ms.prod: hololens
 ms.sitesec: library
-author: evmill
-ms.author: millerevan
+
 ms.topic: article
 ms.localizationpriority:
 ms.date: 9/21/2021
 ms.reviewer: 
-manager: yannisle
+
 appliesto:
 - HoloLens 2
 ---

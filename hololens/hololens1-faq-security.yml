@@ -3,8 +3,6 @@ metadata:
   title: Frequently asked security questions
   description: Stay up to date with commonly asked security questions and answers about HoloLens mixed reality devices.
   ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
-  author: pawinfie
-  ms.author: pawinfie
   ms.date: 02/19/2020
   keywords: hololens, Windows Mixed Reality, security
   ms.prod: hololens
@@ -15,7 +13,6 @@ metadata:
   ms.custom: 
   - CI 111456
   - CSSTroubleshooting
-  manager: bradke
 title: Frequently asked HoloLens (1st gen) Security Questions
 summary: |
 
