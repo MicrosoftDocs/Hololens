@@ -4,13 +4,10 @@ description: Learn how to enroll HoloLens in mobile device management (MDM) for 
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
-author: evmill
-ms.author: millerevan
 ms.topic: article
 ms.localizationpriority:
 ms.date: 5/25/2021
 ms.reviewer: 
-manager: lolab
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

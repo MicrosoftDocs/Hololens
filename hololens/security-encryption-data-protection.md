@@ -1,8 +1,7 @@
 ---
 title: Encryption and Data Protection
 description: Learn about encryption and data protection on HoloLens 2 devices, including BitLocker and Azure integration.
-author: evmill
-ms.author: millerevan
+
 ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
@@ -10,7 +9,7 @@ keywords: security, hololens, Encryption, Data Protection, BitLocker Device, Bit
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-manager: yannisle
+
 appliesto:
 - HoloLens 2
 ---

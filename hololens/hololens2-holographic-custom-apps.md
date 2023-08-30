@@ -3,12 +3,9 @@ title: Manage custom apps for HoloLens 2
 description: Learn how to install, uninstall, and side load custom holographic apps on HoloLens 2 devices using the Device Portal and Visual Studio.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 9/3/2021
-manager: sekerawa
 keywords: hololens, hololens 2, sideload, side load, side-load, store, uwp, app, install
 ms.prod: hololens
 ms.sitesec: library
-author: qianw211
-ms.author: qianwen
 ms.topic: article
 ms.localizationpriority:
 ms.custom: 

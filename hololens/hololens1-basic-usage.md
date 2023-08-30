@@ -4,12 +4,9 @@ description: Get started with a brief tour of the HoloLens (1st gen) interface, 
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
 ms.date: 8/9/2021
 ms.reviewer: sean-kerawala
-manager: sean-kerawala
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: qianw211
-ms.author: qianwen
 ms.topic: article
 ms.localizationpriority:
 appliesto:

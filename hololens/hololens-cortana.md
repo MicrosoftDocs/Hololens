@@ -6,11 +6,8 @@ ms.date: 07/29/2022
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: evmill
 audience: ITPro
-ms.author: millerevan
 ms.topic: article
-manager: lolab
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)

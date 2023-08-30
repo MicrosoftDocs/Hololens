@@ -2,8 +2,6 @@
 title: Where to buy HoloLens 2
 description: List of Global ADR contacts and countries/regions available.
 keywords: HoloLens 2 purchasing options, international purchase, international reseller, ADR
-author: qianw211
-ms.author: qianwen
 ms.reviewer: skerawala
 ms.date: 3/20/2023
 ms.prod: hololens
@@ -11,7 +9,7 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high
 audience: HoloLens
-manager: sekerawa
+
 appliesto:
 - HoloLens 2
 ---

@@ -1,8 +1,7 @@
 ---
 title: HoloLens 2 security baseline
 description: For enabling and adding in extra 
-author: evmill
-ms.author: millerevan
+
 manager: lolab
 reviewer: murugand
 ms.prod: hololens

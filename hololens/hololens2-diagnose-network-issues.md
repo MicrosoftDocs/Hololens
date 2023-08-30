@@ -1,9 +1,6 @@
 ---
 title: Diagnose HoloLens 2 network issues with Fiddler and Wireshark
 description: If network issues are an obstacle to successfully deploying and using HoloLens 2 in your organization, learn how two well-known network diagnostic tools, Fiddler and Wireshark can help you scan, diagnose, and identify problems.
-author: qianw211
-ms.author: qianwen
-manager: sekerawa
 ms.reviewer: robertvs
 ms.date: 9/15/2022
 ms.prod: hololens

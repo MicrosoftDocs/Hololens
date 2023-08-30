@@ -4,13 +4,10 @@ description: Learn how to install the localized versions of HoloLens (1st gen), 
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
 ms.topic: article
 ms.localizationpriority:
 ms.date: 9/16/2019
 ms.reviewer: 
-manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ---

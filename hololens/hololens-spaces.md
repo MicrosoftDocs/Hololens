@@ -2,8 +2,6 @@
 title: Map physical spaces with HoloLens
 description: HoloLens learns what a space looks like over time. Users can facilitate this process by moving the HoloLens in certain ways through the space.
 ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
-author: dorreneb
-ms.author: millerevan
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting

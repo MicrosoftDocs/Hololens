@@ -3,14 +3,11 @@ title: HoloLens 2 fit and comfort FAQ
 description: Stay up to date on answers to frequently asked questions about how to fit your HoloLens 2 and stay comfortable in mixed reality experiences.
 ms.prod: hololens
 ms.sitesec: library
-author: Teresa-Motiv
-ms.author: millerevan
 ms.topic: article
 audience: ItPro
 ms.localizationpriority: high
 ms.date: 11/07/2019
 ms.reviewer: jarrettr
-manager: jarrettr
 appliesto:
 - HoloLens 2
 ---
