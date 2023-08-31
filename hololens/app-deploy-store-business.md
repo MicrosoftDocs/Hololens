@@ -41,10 +41,12 @@ To prepare for distributing an app to HoloLens 2 devices using Intune, you first
     1. On the app page, for __License type__ select __Offline.__
     1. Click __Get the app__. This will add the app to your group inventory in the Microsoft Store for Business website.
 
-> [!NOTE]
-> If you do not see the **Get the app** button next to the app, the app may already be in your group inventory.
-> To be able to add apps into the group inventory, you must have one of the following [security roles in the Microsoft Store for Business](/microsoft-store/roles-and-permissions-microsoft-store-for-business): **Admin**, and/or **Purchaser**. If you do not have one of these roles, then when you shop for apps, you may see the option to [request apps](/microsoft-store/acquire-apps-microsoft-store-for-business). Submitting a request for an app will send an automated email with the request to the relevant administrator(s) in your organization, who will then need to decide whether to add the app.
-> If the app you are looking for is not available for offline download from the Microsoft Store for Business, you will need to contact the app vendor to request the offline app package (appx file).
+    > [!NOTE]
+    > If you do not see the **Get the app** button next to the app, the app may already be in your group inventory.
+    >
+    > To be able to add apps into the group inventory, you must have one of the following [security roles in the Microsoft Store for Business](/microsoft-store/roles-and-permissions-microsoft-store-for-business): **Admin**, and/or **Purchaser**. If you do not have one of these roles, then when you shop for apps, you may see the option to [request apps](/microsoft-store/acquire-apps-microsoft-store-for-business). Submitting a request for an app will send an automated email with the request to the relevant administrator(s) in your organization, who will then need to decide whether to add the app.
+    >
+    > If the app you are looking for is not available for offline download from the Microsoft Store for Business, you will need to contact the app vendor to request the offline app package (appx file).
 
 1. __Download the offline app package and required frameworks (if any)__:   
     1. Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
