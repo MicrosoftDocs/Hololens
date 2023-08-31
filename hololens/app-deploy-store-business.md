@@ -39,7 +39,7 @@ To prepare for distributing an app to HoloLens 2 devices using Intune, you first
     1. In the top navigation bar, click __Shop for my group__.
     1. Using the search box on the top navigation bar, __search__ for the name of the app that you're looking for. When you find the app, click on it.
     1. On the app page, for __License type__ select __Offline.__
-   1. Click __Get the app__. This will add the app to your group inventory in the Microsoft Store for Business website.
+    1. Click __Get the app__. This will add the app to your group inventory in the Microsoft Store for Business website.
 
 > [!NOTE]
 > If you do not see the **Get the app** button next to the app, the app may already be in your group inventory.
@@ -118,5 +118,6 @@ The app that you created now appears in the list of apps. From the list, you can
 - Introduced in [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
 
 Now enabled for HoloLens is a new policy that allows IT Admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. These can be set based on a few different triggers such as a scheduled time or sign-in. To learn more about how to use this policy please view [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
+
 
 
