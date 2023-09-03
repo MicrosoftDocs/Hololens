@@ -2,6 +2,17 @@
 
 
 
+## Week of August 28, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/29/2023 | [Restart, reset, or recover HoloLens 1](/hololens/hololens1-recovery) | modified |
+| 8/30/2023 | [Overview - App Management](/hololens/app-deploy-overview) | modified |
+| 8/30/2023 | [Microsoft Store & Intune](/hololens/app-deploy-store-business) | modified |
+| 8/30/2023 | [Find, install, and uninstall applications](/hololens/holographic-store-apps) | modified |
+
+
 ## Week of August 21, 2023
 
 
