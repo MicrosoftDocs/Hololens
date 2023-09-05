@@ -19,7 +19,8 @@ A Mobile Device Management (MDM) solution enables IT administrators to distribut
 The following instructions describe how to download HoloLens 2 apps from the __Microsoft Store for Business__, and then to distribute those apps to your managed HoloLens 2 devices using Intune.
 
 > [!Note]
-> Microsoft has [announced plans to retire](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/support-tip-microsoft-store-for-business-retirement-and-windows/ba-p/3662691) the Microsoft Store for Business.   However, the original retirement date, March 31<sup>st</sup> 2023, has been postponed, with a new retirement date yet to be announced. The instructions below can be used until the Microsoft Store for Business is retired. 
+> Microsoft has [announced plans to retire](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/support-tip-microsoft-store-for-business-retirement-and-windows/ba-p/3662691) the Microsoft Store for Business.   However, the original retirement date, March 31<sup>st</sup> 2023, has been postponed, with a new retirement date yet to be announced. The instructions below can be used until the Microsoft Store for Business is retired.
+>
 > When the Microsoft Store for Business is retired, Microsoft plans to enable an alternative process for downloading an app package.  The step to distribute an app package to HoloLens 2 devices will not change.
 
 
@@ -39,12 +40,14 @@ To prepare for distributing an app to HoloLens 2 devices using Intune, you first
     1. In the top navigation bar, click __Shop for my group__.
     1. Using the search box on the top navigation bar, __search__ for the name of the app that you're looking for. When you find the app, click on it.
     1. On the app page, for __License type__ select __Offline.__
-   1. Click __Get the app__. This will add the app to your group inventory in the Microsoft Store for Business website.
+    1. Click __Get the app__. This will add the app to your group inventory in the Microsoft Store for Business website.
 
-> [!NOTE]
-> If you do not see the **Get the app** button next to the app, the app may already be in your group inventory.
-> To be able to add apps into the group inventory, you must have one of the following [security roles in the Microsoft Store for Business](/microsoft-store/roles-and-permissions-microsoft-store-for-business): **Admin**, and/or **Purchaser**. If you do not have one of these roles, then when you shop for apps, you may see the option to [request apps](/microsoft-store/acquire-apps-microsoft-store-for-business). Submitting a request for an app will send an automated email with the request to the relevant administrator(s) in your organization, who will then need to decide whether to add the app.
-> If the app you are looking for is not available for offline download from the Microsoft Store for Business, you will need to contact the app vendor to request the offline app package (appx file).
+    > [!NOTE]
+    > If you do not see the **Get the app** button next to the app, the app may already be in your group inventory.
+    >
+    > To be able to add apps into the group inventory, you must have one of the following [security roles in the Microsoft Store for Business](/microsoft-store/roles-and-permissions-microsoft-store-for-business): **Admin**, and/or **Purchaser**. If you do not have one of these roles, then when you shop for apps, you may see the option to [request apps](/microsoft-store/acquire-apps-microsoft-store-for-business). Submitting a request for an app will send an automated email with the request to the relevant administrator(s) in your organization, who will then need to decide whether to add the app.
+    >
+    > If the app you are looking for is not available for offline download from the Microsoft Store for Business, you will need to contact the app vendor to request the offline app package (appx file).
 
 1. __Download the offline app package and required frameworks (if any)__:   
     1. Using a web browser on a PC, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/).
@@ -118,5 +121,6 @@ The app that you created now appears in the list of apps. From the list, you can
 - Introduced in [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
 
 Now enabled for HoloLens is a new policy that allows IT Admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. These can be set based on a few different triggers such as a scheduled time or sign-in. To learn more about how to use this policy please view [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
+
 
 
