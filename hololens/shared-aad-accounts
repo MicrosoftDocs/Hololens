@@ -1,0 +1,15 @@
+hololens/shared-aad-accounts.md
+title: Shared AAD accounts in HoloLens
+description: Learn about how to use Shared AAD accounts in HoloLens
+author: lolab
+ms.author: lolab
+keywords: HoloLens, shared accounts, AAD
+ms.prod: hololens
+ms.sitesec: library
+ms.localizationpriority: high
+ms.reviewer: qizho
+manager: nazara
+ms.date: 09/06/2023
+
+Shared AAD accounts on HoloLens are AAD user accounts that are assigned to a specific device. These accounts are only accessed on those devices and can be accessed without having to enter credentials. This setup is ideal for scenarios where the following conditions are true:
+
