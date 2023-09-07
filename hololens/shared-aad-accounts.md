@@ -83,6 +83,15 @@ Intune must be configured to deploy the certificates necessary for AAD CBA.  The
 | -------- | -------- |
 | ./Vendor/MSFT/Policy/Config/MixedReality/ConfigureSharedAccount | String or String (XML file) |
 
+```
+<SharedAccountConfiguration>
+    <SharedAccount>
+        <IssuerThumbprint>77de0879f69314d867bd08fcf2e8e6616548b3c8</IssuerThumbprint>
+    </SharedAccount>
+</SharedAccountConfiguration>
+
+```
+
 You may customize the restrictions for which certificates are displayed for CBA. The above example requires that the issuer’s certificate thumbprint matches the provided value. It’s also possible to apply the restriction based on the issuer’s name, or apply more restrictions based on Extended Key Usages (EKUs) on the certificate. See Appendix B – ConfigureSharedAccount XML Examples for examples on how to configure the XML. 
 
 Before saving this device configuration, ensure that you’ve validated the XML against the schema specified in Appendix A to ensure it’s well-formed.
@@ -97,9 +106,9 @@ Before saving this device configuration, ensure that you’ve validated the XML 
    
    d.	Ensure that the certificate has at least the following Extended key usages (EKUs):
    
-    i.	Smartcard Logon – 1.3.6.1.4.1.311.20.2.2
+   i.	Smartcard Logon – 1.3.6.1.4.1.311.20.2.2
       
-    ii.	Client Authentication – 1.3.6.1.5.5.7.3.2
+   ii.	Client Authentication – 1.3.6.1.5.5.7.3.2
       
 You may add EKUs to this list if you’ve configured other EKU requirements in step 1.
 
@@ -146,16 +155,262 @@ Next, ensure that the XML policy value you’ve applied to MixedReality/Configur
 
 ## Appendix A--ConfigureSharedAccount XML Schema
 
+```
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="SharedAccountConfiguration">
+    <xsd:complexType mixed="true">
+      <xsd:sequence>
+        <xsd:element minOccurs="1" maxOccurs="1" name="SharedAccount">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:choice>
+                <xsd:element name="IssuerThumbprint">
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="40" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="IssuerName">
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="512" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:element minOccurs="0" maxOccurs="1" name="EkuOidRequirements">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="5" name="Oid">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="100" />
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element minOccurs="0" maxOccurs="1" name="AutoLogon">
+                <xsd:complexType>
+                  <xsd:simpleContent>
+                    <xsd:extension base="xsd:string">
+                      <xsd:attribute name="forced" type="xsd:boolean" />
+                    </xsd:extension>
+                  </xsd:simpleContent>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
+
+```
+
 ## Appendix B--ConfigureSharedAccount XML Examples
 
 Require that the issuer certificate has a subject of CN=yourCA, DC=Test:
 
+```
+<SharedAccountConfiguration>
+    <SharedAccount>
+        <IssuerName>CN=yourCA, DC=Test</IssuerName>
+    </SharedAccount>
+</SharedAccountConfiguration>
+
+```
 Require that the issuer certificate has a specified thumbprint:
 
+```
+<SharedAccountConfiguration>
+    <SharedAccount>
+        <IssuerThumbprint>77de0879f69314d867bd08fcf2e8e6616548b3c8</IssuerThumbprint>
+    </SharedAccount>
+</SharedAccountConfiguration>
+
+```
+
 Require that the issuer certificate has a specified thumbprint and that the client certificate has EKUs with OIDs 1.2.3.4.5.6 and 1.2.3.4.5.7:
+
+```
+<SharedAccountConfiguration>
+    <SharedAccount>
+        <IssuerThumbprint>77de0879f69314d867bd08fcf2e8e6616548b3c8</IssuerThumbprint>
+        <EkuOidRequirements>
+            <Oid>1.2.3.4.5.6</Oid>
+            <Oid>1.2.3.4.5.7</Oid>
+        </EkuOidRequirements>
+    </SharedAccount>
+</SharedAccountConfiguration>
+
+```
 
 EKUs 1.3.6.1.4.1.311.20.2.2 (Smartcard Logon) and 1.3.6.1.5.5.7.3.2 (Client Authentication) are always required regardless of whether they’re in this list.
 
 ## Appendix C--Example device setup script
 
+```
+<#
+.Synopsis
+Configures a device for shared account
+
+.Description
+This script configures a device for shared account.
+
+Note that you'll need to have the necessary permissions in your tenant to manage
+user and device memberships and query Intune devices.
+
+.Example
+.\ConfigureSharedDevice.ps1 400064793157
+#>
+
+
+param (
+    [Parameter(Mandatory = $true)]
+    [string]
+    # Serial number of the device. Typically a 12-digit numeric string.
+    $DeviceSerialNumber,
+    [string]
+    # Group ID of the group that contains the shared accounts such as HL-123456789@contoso.com
+    $SharedAccountGroupId,
+    [string]
+    # Group ID of the group that contains the shared devices
+    $SharedDeviceGroupId
+)
+
+function Install-Dependencies {
+    Write-Host -Foreground Cyan "Installing Dependencies..."
+
+    if (!(Get-InstalledModule Microsoft.Graph -ErrorAction SilentlyContinue)) {
+        Write-Host -Foreground Cyan "Installing Microsoft.Graph"
+        Install-Module Microsoft.Graph -Scope CurrentUser -Repository 'PSGallery'
+    }
+
+    Write-Host -Foreground Cyan "Installing Dependencies... Done"
+}
+
+function New-PasswordString {
+    $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+[]{}|;:,.<>/?'
+    $length = 40
+    $password = ""
+    for ($i = 0; $i -lt $length; $i++) {
+        $password += $alphabet[(Get-Random -Minimum 0 -Maximum $alphabet.Length)]
+    }
+
+    return $password
+}
+
+function New-SharedUser {
+    param (
+        $UserName,
+        $DisplayName
+    )
+
+    # Does user already exist?
+    $searchResult = Get-MgUser -Count 1 -ConsistencyLevel eventual -Search "`"UserPrincipalName:$UserName`""
+
+    if ($searchResult.Count -gt 0) {
+        Write-Host -Foreground Cyan "$UserName exists, using existing user."
+        return $searchResult
+    }
+
+    $mailNickName = $UserName.Split('@')[0];
+
+    Write-Host -Foreground Cyan "Creating $UserName"
+
+    $passwordProfile = @{
+        Password = New-PasswordString
+    }
+
+    return New-MgUser -AccountEnabled -DisplayName $DisplayName -Country US -UsageLocation US -MailNickname $mailNickName -UserPrincipalName $UserName -PasswordProfile $passwordProfile
+}
+
+function New-SharedUserForDevice {
+    param (
+        $DeviceSerialNumber
+    )
+
+    $userName = "HL-$DeviceSerialNumber@analogfre.onmicrosoft.com"
+    $displayName = "Shared HoloLens"
+
+    return New-SharedUser -UserName $userName -DisplayName $displayName
+}
+
+function Add-UserToGroup {
+    param (
+        $UserId,
+        $GroupId
+    )
+
+    $groupResult = Get-MgGroup -GroupId $GroupId
+    if ($groupResult.Count -eq 0) {
+        throw "Failed to find user group"
+    }
+
+    Write-Host -Foreground Cyan "Adding user ($UserId) to group"
+    New-MgGroupMember -GroupId $GroupId -DirectoryObjectId $UserId
+}
+
+function Get-DeviceAADId {
+    param (
+        $DeviceSerialNumber
+    )
+
+    $deviceResult = Get-MgDeviceManagementManagedDevice | Where-Object { $_.SerialNumber -eq $DeviceSerialNumber }
+
+    if ($deviceResult.Count -eq 0) {
+        throw "Cannot find device with serial number $DeviceSerialNumber in Intune"
+    }
+
+    $result = ($deviceResult | Select-Object -First 1).AzureAdDeviceId
+
+    Write-Host "Found AAD device: $result"
+
+    return $result
+}
+
+function Add-DeviceToGroup {
+    param (
+        $DeviceAADId,
+        $GroupId
+    )
+
+    $groupResult = Get-MgGroup -GroupId $GroupId
+    if ($groupResult.Count -eq 0) {
+        throw "Failed to find device group"
+    }
+
+    $deviceResult = Get-MgDevice -Count 1 -ConsistencyLevel eventual -Search "`"DeviceId:$DeviceAAdId`""
+    if ($deviceResult.Count -eq 0) {
+        throw "Failed to find device $DeviceAAdId"
+    }
+
+    Write-Host -Foreground Cyan "Adding device $($deviceResult.Id) to group"
+    
+    New-MgGroupMember -GroupId $GroupId -DirectoryObjectId $deviceResult.Id
+}
+
+function Register-SharedDevice {
+    param (
+        $DeviceSerialNumber
+    )
+
+    Install-Dependencies
+
+    Connect-MgGraph -Scopes "User.ReadWrite.All", "Group.Read.All", "GroupMember.ReadWrite.All", "DeviceManagementManagedDevices.Read.All", "Device.ReadWrite.All"
+
+    $deviceAADId = Get-DeviceAADId $DeviceSerialNumber
+    Add-DeviceToGroup $deviceAADId $SharedDeviceGroupId
+
+    $user = New-SharedUserForDevice $DeviceSerialNumber
+    Add-UserToGroup $user.Id $SharedAccountGroupId
+}
+
+Register-SharedDevice $DeviceSerialNumber
+
+```
 
