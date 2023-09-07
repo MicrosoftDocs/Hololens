@@ -43,7 +43,7 @@ Shared Azure AD accounts on HoloLens are implemented as regular Azure AD user ac
 
 At a high level, configuring shared Azure AD accounts includes the following steps:
 1. (Recommended) Configure your target devices to join Azure AD and enroll into Intune using [Autopilot](/hololens/hololens2-autopilot).
-1. [Configure your Azure AD tenant to enable Azure AD CBA](#configure-your-Azure AD-tenant-to-enable-Azure AD-cba) for a select group of accounts.
+1. [Configure your Azure AD tenant to enable Azure AD CBA](#configure-your-AAD-tenant-to-enable-AAD-cba) for a select group of accounts.
 2. Configure Microsoft Intune to apply device configurations to a select group of devices that:
     1. [Deploy client certificates](#client-certificate-deployment-via-scep) used for Azure AD CBA onto the devices via Intune's SCEP certificate profiles.
     2. [Deploy CA certificate](#ca-certificate-deployment) so that the devices trust the issuer of the client certificates.
@@ -332,7 +332,7 @@ function New-SharedUserForDevice {
         $DeviceSerialNumber
     )
 
-    $userName = "HL-$DeviceSerialNumber@analogfre.onmicrosoft.com"
+    $userName = "HL-$DeviceSerialNumber@contoso.onmicrosoft.com"
     $displayName = "Shared HoloLens"
 
     return New-SharedUser -UserName $userName -DisplayName $displayName
@@ -353,7 +353,7 @@ function Add-UserToGroup {
     New-MgGroupMember -GroupId $GroupId -DirectoryObjectId $UserId
 }
 
-function Get-DeviceAzure ADId {
+function Get-DeviceAADId {
     param (
         $DeviceSerialNumber
     )
@@ -366,14 +366,14 @@ function Get-DeviceAzure ADId {
 
     $result = ($deviceResult | Select-Object -First 1).AzureAdDeviceId
 
-    Write-Host "Found Azure AD device: $result"
+    Write-Host "Found AAD device: $result"
 
     return $result
 }
 
 function Add-DeviceToGroup {
     param (
-        $DeviceAzure ADId,
+        $DeviceAADId,
         $GroupId
     )
 
@@ -382,9 +382,9 @@ function Add-DeviceToGroup {
         throw "Failed to find device group"
     }
 
-    $deviceResult = Get-MgDevice -Count 1 -ConsistencyLevel eventual -Search "`"DeviceId:$DeviceAzure ADId`""
+    $deviceResult = Get-MgDevice -Count 1 -ConsistencyLevel eventual -Search "`"DeviceId:$DeviceAADId`""
     if ($deviceResult.Count -eq 0) {
-        throw "Failed to find device $DeviceAzure ADId"
+        throw "Failed to find device $DeviceAADId"
     }
 
     Write-Host -Foreground Cyan "Adding device $($deviceResult.Id) to group"
@@ -401,8 +401,8 @@ function Register-SharedDevice {
 
     Connect-MgGraph -Scopes "User.ReadWrite.All", "Group.Read.All", "GroupMember.ReadWrite.All", "DeviceManagementManagedDevices.Read.All", "Device.ReadWrite.All"
 
-    $deviceAzure ADId = Get-DeviceAzure ADId $DeviceSerialNumber
-    Add-DeviceToGroup $deviceAzure ADId $SharedDeviceGroupId
+    $deviceAADId = Get-DeviceAADId $DeviceSerialNumber
+    Add-DeviceToGroup $deviceAADId $SharedDeviceGroupId
 
     $user = New-SharedUserForDevice $DeviceSerialNumber
     Add-UserToGroup $user.Id $SharedAccountGroupId
