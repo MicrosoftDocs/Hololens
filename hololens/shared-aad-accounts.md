@@ -18,9 +18,7 @@ ms.date: 09/06/2023
 Shared Azure Active Directory (AAD) accounts on HoloLens are AAD user accounts that are assigned to a specific device. These accounts are only accessed on those devices and can be accessed without having to enter credentials. This setup is ideal for scenarios where the following conditions are true:
 
 - Multiple people share the same set of HoloLens devices
-
-- Access to AAD resources, such as Dynamics 365 Guides content is required
-
+- Access to AAD resources, such as Dynamics 365 Guides content, is required
 - Tracking who has used the device isn't required.
 
 Before shared AAD account support on HoloLens, customers wishing to deploy shared accounts were either restricted to local accounts (via Guest/Visitor accounts) or manual AAD account setup. Local accounts don't provide the user easy access to apps that depend on AAD resources, such as Remote Assist. Manual AAD account setup is a slow process that is difficult to deploy. Shared AAD account support on HoloLens allows you to address both problems by providing easy access to AAD resources on your HoloLens devices, and can be deployed without requiring manual setup for each device.
@@ -36,14 +34,11 @@ At a high level, shared AAD accounts on HoloLens are implemented as regular AAD 
 This document guides you to:
 
 1.	Configure your AAD tenant to enable AAD CBA for a select group of accounts.
-
 2.	Configure Microsoft Intune to apply device configurations to a select group of devices that:
-
-    1. Deploys client certificates used for AAD CBA onto the devices via Intune’s SCEP certificate profiles.
-   
-    2. Deploys shared account configuration instructing the device which certificates are valid for AAD CBA.
-
-4.	Prepares individual devices for shared AAD accounts.
+    1. Deploy shared account configuration instructing the device which certificates are valid for AAD CBA.
+    2. Deploy client certificates used for AAD CBA onto the devices via Intune’s SCEP certificate profiles.
+    3. Deploy CA certificate so that the devices trust the issuer of the client certificates.
+3.	Prepares individual devices for shared AAD accounts.
 
 ## Prerequisites
 
@@ -98,14 +93,17 @@ Before saving this device configuration, ensure that you’ve validated the XML 
 ### Client certificate
 The devices must have the appropriate client certificate to perform AAD CBA. Create a SCEP configuration and assign it to “SharedDevices”:
 
-1. Certificate type: Device
-2. Add a User principal name (UPN) Subject alternative name (SAN) where the value is the UPN of the shared account assigned to the device. The UPN must contain the device serial number. You can use the Intune variable __{{Device_Serial}}__ to refer to the device serial number. For example, enter a value of __HL-{{Device_Serial}}@contoso.com__ if the shared accounts have a name format of HL-123456789@contoso.com.
-3. Key storage provider (KSP): Require TPM, otherwise fail.
-4. Ensure that the certificate has at least the following Extended key usages (EKUs):
+1. __Certificate type__: Device
+
+2. Add a User principal name (UPN) __Subject alternative name (SAN)__ where the value is the UPN of the shared account assigned to the device. The UPN must contain the device serial number. You can use the Intune variable __{{Device_Serial}}__ to refer to the device serial number. For example, enter a value of __HL-{{Device_Serial}}@contoso.com__ if the shared accounts have a name format of HL-123456789@contoso.com.
+
+3. __Key storage provider (KSP)__: Require TPM, otherwise fail.
+
+4. Ensure that the certificate has at least the following __Extended key usages (EKUs)__:
     -	Smartcard Logon – 1.3.6.1.4.1.311.20.2.2     
     - Client Authentication – 1.3.6.1.5.5.7.3.2
 
-You may add EKUs to this list if you’ve configured other EKU requirements in the XML for ConfigureSharedAccount policy.
+You may add other EKUs to this list if you’ve configured other EKU requirements in the XML for ConfigureSharedAccount policy.
 
 Full documentation for configuring SCEP in Intune: [Use SCEP certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-profile-scep).
 
@@ -245,7 +243,7 @@ EKUs 1.3.6.1.4.1.311.20.2.2 (Smartcard Logon) and 1.3.6.1.5.5.7.3.2 (Client Auth
 
 ## Appendix C--Example device setup script
 
-```
+```powershell
 <#
 .Synopsis
 Configures a device for shared account
