@@ -15,15 +15,20 @@ ms.date: 09/06/2023
 
 # Shared AAD accounts in HoloLens
 
-Shared Azure Active Directory (AAD) accounts on HoloLens are AAD user accounts that are assigned to a specific device. These accounts are only accessed on those devices and can be accessed without having to enter credentials. This setup is ideal for scenarios where the following conditions are true:
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1aAzF]  
 
-•	Multiple people share the same set of HoloLens devices
+Shared Azure Active Directory (AAD) accounts on HoloLens are regular AAD user accounts that can sign-in to the HoloLens without requiring any credentials. This setup is ideal for scenarios where the following conditions are true:
 
-•	Access to AAD resources, such as Dynamics 365 Guides content is required
+- Multiple people share the same set of HoloLens devices
+- Access to AAD resources, such as Dynamics 365 Guides content, is required
+- Tracking who has used the device isn't required.
 
-•	Tracking who has used the device isn't required.
+### Key benefits of using shared AAD accounts
 
-Before shared AAD account support on HoloLens, customers wishing to deploy shared accounts were either restricted to local accounts (via Guest/Visitor accounts) or manual AAD account setup. Local accounts don't provide the user easy access to apps that depend on AAD resources, such as Remote Assist. Manual AAD account setup is a slow process that is difficult to deploy. Shared AAD account support on HoloLens allows you to address both problems by providing easy access to AAD resources on your HoloLens devices, and can be deployed without requiring manual setup for each device.
+- __Simplified deployment__. Previously, setting up AAD accounts shared between multiple people required setting up each device manually. Shared AAD accounts allows you to configure your environment once and automatically deploy to any of your devices as part of [Autopilot](/hololens/hololens2-autopilot).
+- __Great user experience__. Users of shared AAD accounts will not have to enter any credentials to start using the device. Simply tap and go!
+- __Access to AAD resources__. Users of shared AAD accounts will get easy access to AAD resources so that you can start a Remote Assist call or open a Guide without additional authentication.
+
 
 > [!IMPORTANT]
 > Since shared AAD accounts can be accessed on the HoloLens device without entering credentials, you should physically secure these HoloLens devices so that only authorized personnel have access. You may also want to lock down these accounts by applying conditional access policies, disabling self-service password reset, and configuring assigned access profiles to the devices where these accounts are used.
@@ -31,19 +36,18 @@ Before shared AAD account support on HoloLens, customers wishing to deploy share
 > [!NOTE]
 >  Since these are shared accounts, users using these accounts are not shown the typical first sign-in setup screens, including PIN and iris enrollments, biometric data collection notice, and various consent screens. You should ensure that the appropriate defaults are configured for these accounts via policy (see [Set up users on HoloLens 2 quickly](/hololens2-new-user-optimize?tabs=firstBlank%2CsecondBlank#additional-policies)) and that your users are aware of these defaults.
 
-At a high level, shared AAD accounts on HoloLens are implemented as regular AAD user accounts that are configured for AAD certificate-based authentication (CBA). The HoloLens devices are then configured so that they receive the necessary client certificates to perform CBA and the instructions about which certificates are valid for CBA. Once properly configured, the HoloLens device offers the shared AAD account as an option on the sign-in screen.
+## Overview of the steps to configure shared AAD accounts
 
-This document guides you to:
+Shared AAD accounts on HoloLens are implemented as regular AAD user accounts that are configured for [AAD certificate-based authentication (CBA)](/azure/active-directory/authentication/concept-certificate-based-authentication). 
 
-1.	Configure your AAD tenant to enable AAD CBA for a select group of accounts.
-
-2.	Configure Microsoft Intune to apply device configurations to a select group of devices that:
-
-    a.	Deploys client certificates used for AAD CBA onto the devices via Intune’s SCEP certificate profiles.
-   
-    b.	Deploys shared account configuration instructing the device which certificates are valid for AAD CBA.
-
-4.	Prepares individual devices for shared AAD accounts.
+At a high level, configuring shared AAD accounts comprises of the following steps:
+1. (Recommended) Configure your target devices to join AAD and enroll into Intune using [Autopilot](/hololens/hololens2-autopilot).
+1. [Configure your AAD tenant to enable AAD CBA](#configure-your-aad-tenant-to-enable-aad-cba) for a select group of accounts.
+2. Configure Microsoft Intune to apply device configurations to a select group of devices that:
+    1. [Deploy client certificates](#client-certificate-deployment-via-scep) used for AAD CBA onto the devices via Intune's SCEP certificate profiles.
+    2. [Deploy CA certificate](#ca-certificate-deployment) so that the devices trust the issuer of the client certificates.
+    3. [Deploy shared account configuration](#configuresharedaccount-policy) instructing the device which certificates are valid for AAD CBA.
+3. [Prepares individual devices](#individual-device-configuration) for shared AAD accounts.
 
 ## Prerequisites
 
@@ -51,80 +55,78 @@ Shared AAD account support is available starting in [Insider preview for Microso
 
 In addition to having the required operating system build on your HoloLens, you also need to satisfy the prerequisites for AAD CBA ([How to configure Azure AD certificate-based authentication](/azure/active-directory/authentication/how-to-certificate-based-authentication#prerequisites)).
 
-Finally, you need access to Microsoft Intune in order to deploy device configurations and client certificates. For required infrastructure to deploy client certificates via Intune, see [Learn about the types of certificate that are supported by Microsoft Intune](/mem/intune/protect/certificates-configure#whats-required-to-use-certificates).
+Finally, you need access to Microsoft Intune in order to deploy device configurations and client certificates. For required infrastructure to deploy client certificates via Intune, see [Learn about the types of certificate that are supported by Microsoft Intune](/mem/intune/protect/certificates-configure#whats-required-to-use-certificates). In this example, we will be using SCEP certificates.
 
-## AAD Tenant configuration
+It's highly recommended to configure your devices for [Autopilot](/hololens/hololens2-autopilot). This greatly simplifies the device setup experience for the end users.
+
+## Configure your AAD Tenant to enable AAD CBA
 
 Your AAD tenant must be configured to enable AAD CBA for a select group of users.  
 
-1.	Create an AAD group that contains the shared AAD accounts. As an example, we use the name “SharedAccounts” for this group.
-
-2.	Create an AAD group that contains the shared HoloLens devices. As an example, we use the name “SharedDevices” for this group.
-
-3.	Enable AAD certificate-based authentication (CBA) for the SharedAccounts group For a complete step-by-step guide, refer to [How to configure Azure AD certificate-based authentication](/azure/active-directory/authentication/how-to-certificate-based-authentication#prerequisites). The following high-level steps are needed to set this up:
-
-    a.	Add your (Certificate Authority) CA certificate to AAD. AAD allows client certificates issued by this CA to perform CBA.
-  	
-    b.	Enable CBA for the “SharedAccounts” group.
-  	
-    c.	Configure CBA such that the certificate issued by your CA uses MFA to ensure that users can access resources that require MFA without setting up another factor.
-  	
-    d.	Enable certificate binding via UserPrincipalName.
+1.	Create an AAD group that contains the shared AAD accounts. As an example, we use the name "__SharedAccounts__" for this group.
+2.	Create an AAD group that contains the shared HoloLens devices. As an example, we use the name "__SharedDevices__" for this group. This group will later be assigned device-based Intune configuration profiles.
+3.	Enable AAD certificate-based authentication (CBA) for the __SharedAccounts__ group. For a complete step-by-step guide, refer to [How to configure Azure AD certificate-based authentication](/azure/active-directory/authentication/how-to-certificate-based-authentication#prerequisites). The following high-level steps are needed to set this up:
+    1.	Add your (Certificate Authority) CA certificate to AAD. AAD allows client certificates issued by this CA to perform CBA.
+    2.	Enable CBA for the "__SharedAccounts__" group.
+    3.	Configure CBA such that the certificate issued by your CA uses MFA. This is to ensure that users can access resources that require MFA without setting up another factor.
+    4.	Enable certificate binding via UserPrincipalName.
 
 ## Intune configuration
 
-Intune must be configured to deploy the certificates necessary for AAD CBA.  These instructions also address which certificates are valid for AAD CBA.  Certificates are managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy.
+Intune must be configured to deploy the certificates necessary for AAD CBA. Intune must also deploy a configuration to instruct the devices which certificates are valid for AAD CBA.
 
-1.	Create a custom device configuration policy and assign it to “SharedDevices”:
+#### Client certificate deployment via SCEP
+The devices must have the appropriate client certificate to perform AAD CBA. Create a SCEP configuration and assign it to "__SharedDevices__":
 
-    - URI value: ./Vendor/MSFT/Policy/Config/MixedReality/ConfigureSharedAccount
+1. __Certificate type__: Device
+2. Add a User principal name (UPN) __Subject alternative name (SAN)__ where the value is the UPN of the shared account assigned to the device. The UPN must contain the device serial number to associate it with a device. You can use the Intune variable __{{Device_Serial}}__ to refer to the device serial number. For example, enter a value of `HL-{{Device_Serial}}@contoso.com` if the shared accounts have a name format of `HL-123456789@contoso.com`.
+3. __Key storage provider (KSP)__: Select "Require TPM, otherwise fail" to ensure that the certificate cannot be exported from the device to be used elsewhere.
+4. Ensure that the certificate has at least the following __Extended key usages (EKUs)__:
+    -	Smartcard Logon: 1.3.6.1.4.1.311.20.2.2     
+    - Client Authentication: 1.3.6.1.5.5.7.3.2
+
+   You may add other EKUs to this list to further restrict the certificates allowed for AAD CBA. You will need to add these EKUs to the XML for [ConfigureSharedAccount policy](#configuresharedaccount-policy).
+
+![Example SCEP configuration](images/sharedaccount/scep-config.png)
+
+For detailed steps on configuring SCEP in Intune see [Use SCEP certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-profile-scep).
+
+#### CA certificate deployment
+The devices must also trust the CA who issued its client certificate. Create a trusted certificate configuration and assign it to “SharedDevices” group. This assignment deploys your CA certificate to the devices. See documentation: [Create trusted certificate profiles in Microsoft Intune](/mem/intune/protect/certificates-trusted-root).
+
+#### ConfigureSharedAccount policy
+This policy tells the devices which certificates are valid to be used for AAD CBA. Create a custom device configuration policy and assign it to "__SharedDevices__":
 
 | Policy | Data Type| 
 | -------- | -------- |
-| ./Vendor/MSFT/Policy/Config/MixedReality/ConfigureSharedAccount | String or String (XML file) |
+| [./Vendor/MSFT/Policy/Config/MixedReality/ConfigureSharedAccount](/windows/client-management/mdm/policy-csp-mixedreality#configuresharedaccount) | String or String (XML file) |
 
-```
+Example configuration:
+```xml
 <SharedAccountConfiguration>
     <SharedAccount>
+        <!--
+          TODO: Replace the example value below with your issuer certificate's thumbprint.
+          You may customize the restrictions for which certificates are displayed. See below.
+        -->
         <IssuerThumbprint>77de0879f69314d867bd08fcf2e8e6616548b3c8</IssuerThumbprint>
     </SharedAccount>
 </SharedAccountConfiguration>
-
 ```
 
-You may customize the restrictions for which certificates are displayed for CBA. The above example requires that the issuer’s certificate thumbprint matches the provided value. It’s also possible to apply the restriction based on the issuer’s name, or apply more restrictions based on Extended Key Usages (EKUs) on the certificate. See Appendix B – ConfigureSharedAccount XML Examples for examples on how to configure the XML. 
+You may customize the restrictions for which certificates are displayed for AAD CBA. The above example requires that the issuer’s certificate thumbprint matches the provided value. It’s also possible to apply the restriction based on the issuer’s name, or apply more restrictions based on Extended Key Usages (EKUs) on the certificate. See [ConfigureSharedAccount XML Examples](#configuresharedaccount-xml-examples) for examples on how to configure the XML. 
 
-Before saving this device configuration, ensure that you’ve validated the XML against the schema specified in Appendix A to ensure it’s well-formed.
-
-2.	Create a SCEP configuration and assign it to “SharedDevices”:
-
-    a.	Certificate type: Device
-
-    b.	Add a User principal name (UPN) Subject alternative name (SAN) where the value is the UPN of the shared account assigned to the device. The UPN must contain the device serial number. You can use the Intune variable {{Device_Serial}} to refer to the device serial number. For example, enter a value of HL-{{Device_Serial}}@contoso.com if the shared accounts have a name format of HL-123456789@contoso.com.
-
-   c.	Key storage provider (KSP): Require TPM, otherwise fail.
-   
-   d.	Ensure that the certificate has at least the following Extended key usages (EKUs):
-   
-   i.	Smartcard Logon – 1.3.6.1.4.1.311.20.2.2
-      
-   ii.	Client Authentication – 1.3.6.1.5.5.7.3.2
-      
-You may add EKUs to this list if you’ve configured other EKU requirements in step 1.
-
-Full documentation for configuring SCEP in Intune: [Use SCEP certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-profile-scep).
-
-3.	Create a trusted certificate configuration and assign it to “SharedDevices” group. This assignment deploys your CA certificate to the devices. See documentation: [Create trusted certificate profiles in Microsoft Intune](/mem/intune/protect/certificates-trusted-root).
+Before saving this device configuration, validate the XML against the schema specified in [ConfigureSharedAccount XML Schema](#configuresharedaccount-xml-schema) to ensure it’s well-formed.
 
 ## Individual device configuration
 
 For each HoloLens device that you want to configure for shared AAD accounts, perform the following steps:
 
-1.	Create an AAD user in the format specified in section 2.b of the Intune configuration already described.
+1. Create an AAD user in the format specified in step 2 of [Client certificate deployment via SCEP](#client-certificate-deployment-via-scep). For example: `HL-123456789@contoso.com`.
+2. Add that user to the "__SharedAccounts__" group.
+3. Ensure the device is added to the "__SharedDevices__" group. Note that you should configure your devices for Autopilot first so they're already present in AAD.
 
-2.	Add that user to the “SharedAccounts” group.
-
-3.	Add the AAD device to the “SharedDevices” group. Note this is simpler if you first configure these devices for Autopilot so that they're present in AAD without requiring the devices to be joined to AAD first.  See Appendix C for an example of a powershell script that can be used to automate this process.
+See [Example device setup script](#example-device-setup-script) for an example of a powershell script that can be used to automate this process.
 
 ## Testing your configuration
 
@@ -132,10 +134,9 @@ Once you’ve completed the above configuration, you’re ready to try out share
 
 If your device is configured for Autopilot already, take the device through its normal Autopilot flow. The necessary device configurations are applied during Autopilot. Once the Autopilot flow is completed, you see the following screen:
 
+![Sign-in screen showing shared account](images/sharedaccount/signin-screen.png)
 
-Now click on the “Sign in” button to start using the shared AAD account; no credentials are necessary!
-
-It’s highly recommended to configure these shared devices with Autopilot to simplify the device setup process.
+Tap the “Sign in” button to start using the shared AAD account.
 
 ## Troubleshooting
 
@@ -143,19 +144,27 @@ It’s highly recommended to configure these shared devices with Autopilot to si
 
 **Solution:** First, check that the device is receiving the correct certificates. Open the certificate manager ([Certificate Manager](/hololens/certificate-manager)) and make sure that both the client certificate and the CA certificates are successfully deployed to the device. 
 
-For the client certificate, ensure that it's installed to the “My” store on “Local Machine.”
+For the client certificate, ensure that it's installed to the "My" store on "Local Machine."
 
-Also ensure that the certificate is within the validity dates has the expected issuer and EKUs:
+![Certificate manager showing location of certificate](images/sharedaccount/cert-location.png)
 
-Next, ensure that the XML policy value you’ve applied to MixedReality/ConfigureSharedAccount is well-formed. You can use one of the many XML schema (XSD) validators online to check that your XML conforms to the schema described in Appendix A.
+If the certificate is not present, follow the [troubleshooting steps for Intune SCEP profiles](/troubleshoot/mem/intune/certificates/troubleshoot-scep-certificate-profiles).
+
+If the certificate is present, ensure that the certificate is within the validity dates has the expected issuer and EKUs:
+
+![Certificate manager showing properties of certificate](images/sharedaccount/cert-properties.png)
+
+Next, ensure that the XML policy value you’ve applied to MixedReality/ConfigureSharedAccount is well-formed. You can use one of the many XML schema (XSD) validators online to check that your XML conforms to the schema described in [ConfigureSharedAccount XML Schema](#configuresharedaccount-xml-schema).
 
 **Problem:  The sign in attempt fails!**
 
 **Solution:**  Check that you’ve properly configured CBA following the instructions on [How to configure Azure AD certificate-based authentication](/azure/active-directory/authentication/how-to-certificate-based-authentication). Also, check out the [FAQ on Azure AD certificate-based authentication (CBA) FAQ](/azure/active-directory/authentication/certificate-based-authentication-faq). Sometimes it may be helpful to try these debug steps on a Windows desktop device first: [Windows smart card sign-in using Azure Active Directory certificate-based authentication](/azure/active-directory/authentication/concept-certificate-based-authentication-smartcard).
 
-## Appendix A--ConfigureSharedAccount XML Schema
+## References
 
-```
+### ConfigureSharedAccount XML Schema
+
+```xml
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:element name="SharedAccountConfiguration">
     <xsd:complexType mixed="true">
@@ -192,15 +201,6 @@ Next, ensure that the XML policy value you’ve applied to MixedReality/Configur
                   </xsd:sequence>
                 </xsd:complexType>
               </xsd:element>
-              <xsd:element minOccurs="0" maxOccurs="1" name="AutoLogon">
-                <xsd:complexType>
-                  <xsd:simpleContent>
-                    <xsd:extension base="xsd:string">
-                      <xsd:attribute name="forced" type="xsd:boolean" />
-                    </xsd:extension>
-                  </xsd:simpleContent>
-                </xsd:complexType>
-              </xsd:element>
             </xsd:sequence>
           </xsd:complexType>
         </xsd:element>
@@ -211,32 +211,30 @@ Next, ensure that the XML policy value you’ve applied to MixedReality/Configur
 
 ```
 
-## Appendix B--ConfigureSharedAccount XML Examples
+### ConfigureSharedAccount XML Examples
 
 Require that the issuer certificate has a subject of CN=yourCA, DC=Test:
 
-```
+```xml
 <SharedAccountConfiguration>
     <SharedAccount>
         <IssuerName>CN=yourCA, DC=Test</IssuerName>
     </SharedAccount>
 </SharedAccountConfiguration>
-
 ```
 Require that the issuer certificate has a specified thumbprint:
 
-```
+```xml
 <SharedAccountConfiguration>
     <SharedAccount>
         <IssuerThumbprint>77de0879f69314d867bd08fcf2e8e6616548b3c8</IssuerThumbprint>
     </SharedAccount>
 </SharedAccountConfiguration>
-
 ```
 
 Require that the issuer certificate has a specified thumbprint and that the client certificate has EKUs with OIDs 1.2.3.4.5.6 and 1.2.3.4.5.7:
 
-```
+```xml
 <SharedAccountConfiguration>
     <SharedAccount>
         <IssuerThumbprint>77de0879f69314d867bd08fcf2e8e6616548b3c8</IssuerThumbprint>
@@ -246,14 +244,13 @@ Require that the issuer certificate has a specified thumbprint and that the clie
         </EkuOidRequirements>
     </SharedAccount>
 </SharedAccountConfiguration>
-
 ```
 
 EKUs 1.3.6.1.4.1.311.20.2.2 (Smartcard Logon) and 1.3.6.1.5.5.7.3.2 (Client Authentication) are always required regardless of whether they’re in this list.
 
-## Appendix C--Example device setup script
+### Example device setup script
 
-```
+```powershell
 <#
 .Synopsis
 Configures a device for shared account
