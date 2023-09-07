@@ -31,16 +31,16 @@ Before shared AAD account support on HoloLens, customers wishing to deploy share
 > [!NOTE]
 >  Since these are shared accounts, users using these accounts are not shown the typical first sign-in setup screens, including PIN and iris enrollments, biometric data collection notice, and various consent screens. You should ensure that the appropriate defaults are configured for these accounts via policy (see [Set up users on HoloLens 2 quickly](/hololens2-new-user-optimize?tabs=firstBlank%2CsecondBlank#additional-policies)) and that your users are aware of these defaults.
 
-Shared AAD accounts on HoloLens are implemented as regular AAD user accounts that are configured for AAD certificate-based authentication (CBA). 
+Shared AAD accounts on HoloLens are implemented as regular AAD user accounts that are configured for [AAD certificate-based authentication (CBA)](/azure/active-directory/authentication/concept-certificate-based-authentication). 
 
 At a high level, configuring shared AAD accounts comprises of the following steps:
-1. (Recommended) Configure your target devices to join AAD and enroll intot Intune using Autopilot.
-1. Configure your AAD tenant to enable AAD CBA for a select group of accounts.
+1. (Recommended) Configure your target devices to join AAD and enroll intot Intune using [Autopilot](/hololens/hololens2-autopilot).
+1. [Configure your AAD tenant to enable AAD CBA](#configure-your-aad-tenant-to-enable-aad-cba) for a select group of accounts.
 2. Configure Microsoft Intune to apply device configurations to a select group of devices that:
-    1. Deploy shared account configuration instructing the device which certificates are valid for AAD CBA.
-    2. Deploy client certificates used for AAD CBA onto the devices via Intune's SCEP certificate profiles.
-    3. Deploy CA certificate so that the devices trust the issuer of the client certificates.
-3. Prepares individual devices for shared AAD accounts.
+    1. [Deploy shared account configuration](#configuresharedaccount-policy) instructing the device which certificates are valid for AAD CBA.
+    2. [Deploy client certificates](#client-certificate-deployment-via-scep) used for AAD CBA onto the devices via Intune's SCEP certificate profiles.
+    3. [Deploy CA certificate](#ca-certificate-deployment) so that the devices trust the issuer of the client certificates.
+3. [Prepares individual devices](#individual-device-configuration) for shared AAD accounts.
 
 ## Prerequisites
 
