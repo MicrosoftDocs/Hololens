@@ -21,9 +21,9 @@ Shared Azure Active Directory (AAD) accounts on HoloLens are AAD user accounts t
 
 •	Access to AAD resources, such as Dynamics 365 Guides content is required
 
-•	Tracking who has used the device is not required.
+•	Tracking who has used the device isn't required.
 
-Before shared AAD account support on HoloLens, customers wishing to deploy shared accounts were either restricted to local accounts (via Guest/Visitor accounts) or manual AAD account setup. Local accounts do not provide the user easy access to apps that depend on AAD resources, such as Remote Assist. Manual AAD account setup is a slow process that is difficult to deploy. Shared AAD account support on HoloLens allows you to address both problems by providing easy access to AAD resources on your HoloLens devices, and can be deployed without requiring manual setup for each device.
+Before shared AAD account support on HoloLens, customers wishing to deploy shared accounts were either restricted to local accounts (via Guest/Visitor accounts) or manual AAD account setup. Local accounts don't provide the user easy access to apps that depend on AAD resources, such as Remote Assist. Manual AAD account setup is a slow process that is difficult to deploy. Shared AAD account support on HoloLens allows you to address both problems by providing easy access to AAD resources on your HoloLens devices, and can be deployed without requiring manual setup for each device.
 
 > [!IMPORTANT]
 > Since shared AAD accounts can be accessed on the HoloLens device without entering credentials, you should physically secure these HoloLens devices so that only authorized personnel have access. You may also want to lock down these accounts by applying conditional access policies, disabling self-service password reset, and configuring assigned access profiles to the devices where these accounts are used.
@@ -115,13 +115,13 @@ For each HoloLens device that you want to configure for shared AAD accounts, per
 
 2.	Add that user to the “SharedAccounts” group.
 
-3.	Add the AAD device to the “SharedDevices” group. Note this is simpler if you first configure these devices for Autopilot so that they are present in AAD without requiring the devices to be joined to AAD first.  See Appendix C for an example of a powershell script that can be used to automate this process.
+3.	Add the AAD device to the “SharedDevices” group. Note this is simpler if you first configure these devices for Autopilot so that they're present in AAD without requiring the devices to be joined to AAD first.  See Appendix C for an example of a powershell script that can be used to automate this process.
 
 ## Testing your configuration
 
 Once you’ve completed the above configuration, you’re ready to try out shared AAD accounts on HoloLens!
 
-If your device is configured for Autopilot already, simply take the device through its normal Autopilot flow. The necessary device configurations are applied during Autopilot. Once the Autopilot flow is completed, you see the following screen:
+If your device is configured for Autopilot already, take the device through its normal Autopilot flow. The necessary device configurations are applied during Autopilot. Once the Autopilot flow is completed, you see the following screen:
 
 
 Now click on the “Sign in” button to start using the shared AAD account; no credentials are necessary!
@@ -134,7 +134,7 @@ It’s highly recommended to configure these shared devices with Autopilot to si
 
 **Solution:** First, check that the device is receiving the correct certificates. Open the certificate manager ([Certificate Manager](/hololens/certificate-manager)) and make sure that both the client certificate and the CA certificates are successfully deployed to the device. 
 
-For the client certificate, ensure that it is installed to the “My” store on “Local Machine.”
+For the client certificate, ensure that it's installed to the “My” store on “Local Machine.”
 
 Also ensure that the certificate is within the validity dates has the expected issuer and EKUs:
 
@@ -154,7 +154,7 @@ Require that the issuer certificate has a specified thumbprint:
 
 Require that the issuer certificate has a specified thumbprint and that the client certificate has EKUs with OIDs 1.2.3.4.5.6 and 1.2.3.4.5.7:
 
-Note that EKUs 1.3.6.1.4.1.311.20.2.2 (Smartcard Logon) and 1.3.6.1.5.5.7.3.2 (Client Authentication) are always required regardless of whether they’re in this list.
+EKUs 1.3.6.1.4.1.311.20.2.2 (Smartcard Logon) and 1.3.6.1.5.5.7.3.2 (Client Authentication) are always required regardless of whether they’re in this list.
 
 ## Appendix C--Example device setup script
 
