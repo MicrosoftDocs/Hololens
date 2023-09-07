@@ -36,6 +36,8 @@ Shared Azure Active Directory (AAD) accounts on HoloLens are regular AAD user ac
 > [!NOTE]
 >  Since these are shared accounts, users using these accounts are not shown the typical first sign-in setup screens, including PIN and iris enrollments, biometric data collection notice, and various consent screens. You should ensure that the appropriate defaults are configured for these accounts via policy (see [Set up users on HoloLens 2 quickly](/hololens2-new-user-optimize?tabs=firstBlank%2CsecondBlank#additional-policies)) and that your users are aware of these defaults.
 
+## Overview of the steps to configure shared AAD accounts
+
 Shared AAD accounts on HoloLens are implemented as regular AAD user accounts that are configured for [AAD certificate-based authentication (CBA)](/azure/active-directory/authentication/concept-certificate-based-authentication). 
 
 At a high level, configuring shared AAD accounts comprises of the following steps:
@@ -53,14 +55,16 @@ Shared AAD account support is available starting in [Insider preview for Microso
 
 In addition to having the required operating system build on your HoloLens, you also need to satisfy the prerequisites for AAD CBA ([How to configure Azure AD certificate-based authentication](/azure/active-directory/authentication/how-to-certificate-based-authentication#prerequisites)).
 
-Finally, you need access to Microsoft Intune in order to deploy device configurations and client certificates. For required infrastructure to deploy client certificates via Intune, see [Learn about the types of certificate that are supported by Microsoft Intune](/mem/intune/protect/certificates-configure#whats-required-to-use-certificates).
+Finally, you need access to Microsoft Intune in order to deploy device configurations and client certificates. For required infrastructure to deploy client certificates via Intune, see [Learn about the types of certificate that are supported by Microsoft Intune](/mem/intune/protect/certificates-configure#whats-required-to-use-certificates). In this example, we will be using SCEP certificates.
+
+It's highly recommended to configure your devices for [Autopilot](/hololens/hololens2-autopilot). This greatly simplifies the device setup experience for the end users.
 
 ## Configure your AAD Tenant to enable AAD CBA
 
 Your AAD tenant must be configured to enable AAD CBA for a select group of users.  
 
 1.	Create an AAD group that contains the shared AAD accounts. As an example, we use the name "__SharedAccounts__" for this group.
-2.	Create an AAD group that contains the shared HoloLens devices. As an example, we use the name "__SharedDevices__" for this group.
+2.	Create an AAD group that contains the shared HoloLens devices. As an example, we use the name "__SharedDevices__" for this group. This group will later be assigned device-based Intune configuration profiles.
 3.	Enable AAD certificate-based authentication (CBA) for the __SharedAccounts__ group. For a complete step-by-step guide, refer to [How to configure Azure AD certificate-based authentication](/azure/active-directory/authentication/how-to-certificate-based-authentication#prerequisites). The following high-level steps are needed to set this up:
     1.	Add your (Certificate Authority) CA certificate to AAD. AAD allows client certificates issued by this CA to perform CBA.
     2.	Enable CBA for the "__SharedAccounts__" group.
@@ -75,11 +79,8 @@ Intune must be configured to deploy the certificates necessary for AAD CBA. Intu
 The devices must have the appropriate client certificate to perform AAD CBA. Create a SCEP configuration and assign it to "__SharedDevices__":
 
 1. __Certificate type__: Device
-
 2. Add a User principal name (UPN) __Subject alternative name (SAN)__ where the value is the UPN of the shared account assigned to the device. The UPN must contain the device serial number to associate it with a device. You can use the Intune variable __{{Device_Serial}}__ to refer to the device serial number. For example, enter a value of `HL-{{Device_Serial}}@contoso.com` if the shared accounts have a name format of `HL-123456789@contoso.com`.
-
 3. __Key storage provider (KSP)__: Select "Require TPM, otherwise fail" to ensure that the certificate cannot be exported from the device to be used elsewhere.
-
 4. Ensure that the certificate has at least the following __Extended key usages (EKUs)__:
     -	Smartcard Logon: 1.3.6.1.4.1.311.20.2.2     
     - Client Authentication: 1.3.6.1.5.5.7.3.2
@@ -88,7 +89,7 @@ The devices must have the appropriate client certificate to perform AAD CBA. Cre
 
 ![Example SCEP configuration](images/sharedaccount/scep-config.png)
 
-Full documentation for configuring SCEP in Intune: [Use SCEP certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-profile-scep).
+For detailed steps on configuring SCEP in Intune see [Use SCEP certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-profile-scep).
 
 #### CA certificate deployment
 The devices must also trust the CA who issued its client certificate. Create a trusted certificate configuration and assign it to “SharedDevices” group. This assignment deploys your CA certificate to the devices. See documentation: [Create trusted certificate profiles in Microsoft Intune](/mem/intune/protect/certificates-trusted-root).
