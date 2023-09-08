@@ -43,7 +43,7 @@ Shared Azure AD accounts on HoloLens are implemented as regular Azure AD user ac
 
 At a high level, configuring shared Azure AD accounts includes the following steps:
 1. (Recommended) Configure your target devices to join Azure AD and enroll into Intune using [Autopilot](/hololens/hololens2-autopilot).
-1. [Configure your Azure AD tenant to enable Azure AD CBA](#configure-your-AAD-tenant-to-enable-AAD-cba) for a select group of accounts.
+1. [Configure your Azure AD tenant to enable Azure AD CBA](#configure-your-azure-ad-tenant-to-enable-azure-ad-cba) for a select group of accounts.
 2. Configure Microsoft Intune to apply device configurations to a select group of devices that:
     1. [Deploy client certificates](#client-certificate-deployment-via-scep) used for Azure AD CBA onto the devices via Intune's SCEP certificate profiles.
     2. [Deploy CA certificate](#ca-certificate-deployment) so that the devices trust the issuer of the client certificates.
@@ -250,6 +250,8 @@ Require that the issuer certificate has a specified thumbprint and that the clie
 EKUs 1.3.6.1.4.1.311.20.2.2 (Smartcard Logon) and 1.3.6.1.5.5.7.3.2 (Client Authentication) are always required regardless of whether they’re in this list.
 
 ### Example device setup script
+
+Before using this sample device setup script, you should change references from "contoso" to your domain name.
 
 ```powershell
 <#
