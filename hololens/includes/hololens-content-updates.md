@@ -2,6 +2,15 @@
 
 
 
+## Week of September 04, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/6/2023 | [Microsoft Store & Intune](/hololens/app-deploy-store-business) | modified |
+| 9/8/2023 | [Shared Azure AD accounts in HoloLens](/hololens/shared-aad-accounts) | added |
+
+
 ## Week of August 28, 2023
 
 
