@@ -249,6 +249,7 @@ Whether you sign into a device you have used before or a new device, please foll
 - Fixed an issue where it may take several minutes for the first-time user setup (Iris enrollment, PIN enrollment, etc.) to show up after a user signs in to a device for the first time.
 - Fixed an issue with the Settings App where some launch URIs were handled incorrectly.
 - Fixed search box functionality in Settings App.
+- Added support for LocalUsersAndGroups MDM policy on HoloLens. (Only for "Device Owners" group.)
 
 ## Start receiving Insider builds
 
@@ -360,6 +361,7 @@ If you no longer want to receive Insider builds of Windows Holographic, you have
 >
 > 1. Locate the build number through **Settings** > **System** > **About**.
 > 1. [Check the build number against the release notes for production build numbers](hololens-release-notes.md).
+
 
 
 
