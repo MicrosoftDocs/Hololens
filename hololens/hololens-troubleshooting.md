@@ -33,6 +33,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Known Issues
 
+- [After an update, sometimes the Settings app won't open](#after-an-update,-sometimes-the-settings-app-won't-open)
 - [Users opting in to Windows Insider after flashing to 23H1 will be stuck](#users-opting-in-to-windows-insider-after-flashing-to-23h1-will-be-stuck)
 - [Update indicator may still be visible after OS update](#update-indicator-may-still-be-visible-after-os-update)
 - [Resetting a device with low space doesn't reset](#resetting-a-device-with-low-space-doesnt-reset)
@@ -178,6 +179,20 @@ Workarounds before the fix:
 
 [Back to list](#list)
 
+## After an update, sometimes the Settings app won't open
+
+Follow these steps to fix the Settings app:
+
+1. Get microsoft.ui.xaml.2.4.3 ARM64 appx package
+   a.	Download nupkg from https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.4.3
+   b.	Rename nupkg to microsoft.ui.xaml.2.4.3.nupkg.zip
+   c.	Copy the arm64 xaml appx package from tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx
+
+
+1. Depending on your preferred method of app deployment, you can select one of the options from [App Management:  Overview](hololens/app-deploy-overview). The recommendation for the Settings app is:
+   a.	If small deployment/single device, copy appx to device (USB drive or MTP), click on the appx from File Explorer.
+   b.	If large deployment with MDM, deploy the appx as a LOB app through MDM. There’s no need for additional licenses or certificates.
+
 ## Users opting in to Windows Insider after flashing to 23H1 will be stuck
 
 If users do a clean flash of their device to the June 2023 23H1 update, and then join the Windows Insiders program, they will get stuck on that build until they follow the workaround below.
@@ -248,7 +263,8 @@ You'll need your Azure AD tenant ID. Here's [how to find your Azure Active Direc
 
 1. Use Get azureADDevice beta Graph API to check against the Azure AD device to determine if it's enrolled to update management.
 
-```
+
+```yaml
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatableAssets",
     "value": [
@@ -277,7 +293,7 @@ You'll need your Azure AD tenant ID. Here's [how to find your Azure Active Direc
 
 2. If device is enrolled, unenrollAssets Graph API can be used to unenroll a HoloLens device subject to Intune feature update.
 
-```
+```yaml
 {
   "updateCategory": "String",
   "assets": [
@@ -588,4 +604,5 @@ If you're having trouble using a Bluetooth device, make sure that it's a support
 You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
 
 [Back to list](#list)
+
 
