@@ -33,7 +33,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Known Issues
 
-- [After an update, sometimes the Settings app won't open](#after-an-update,-sometimes-the-settings-app-won't-open)
+- [Sometimes Settings app won't open after update](#sometimes-settings-app-won't-open-after-update)
 - [Users opting in to Windows Insider after flashing to 23H1 will be stuck](#users-opting-in-to-windows-insider-after-flashing-to-23h1-will-be-stuck)
 - [Update indicator may still be visible after OS update](#update-indicator-may-still-be-visible-after-os-update)
 - [Resetting a device with low space doesn't reset](#resetting-a-device-with-low-space-doesnt-reset)
@@ -179,7 +179,7 @@ Workarounds before the fix:
 
 [Back to list](#list)
 
-## After an update, sometimes the Settings app won't open
+## Sometimes Settings app won't open after update
 
 Follow these steps to fix the Settings app:
 
@@ -189,7 +189,7 @@ Follow these steps to fix the Settings app:
    c.	Copy the arm64 xaml appx package from tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx
 
 
-1. Depending on your preferred method of app deployment, you can select one of the options from [App Management:  Overview](hololens/app-deploy-overview). The recommendation for the Settings app is:
+1. Depending on your preferred method of app deployment, you can select one of the options from [App Management:  Overview](/hololens/app-deploy-overview). The recommendation for the Settings app is:
    a.	If small deployment/single device, copy appx to device (USB drive or MTP), click on the appx from File Explorer.
    b.	If large deployment with MDM, deploy the appx as a LOB app through MDM. There’s no need for additional licenses or certificates.
 
