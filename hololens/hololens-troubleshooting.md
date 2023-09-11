@@ -185,18 +185,25 @@ Follow these steps to fix the Settings app:
 
 1. Get microsoft.ui.xaml.2.4.3 ARM64 appx package
 
+
     1. Download nupkg from https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.4.3
 
+
     1.  Rename nupkg to microsoft.ui.xaml.2.4.3.nupkg.zip
+
 
     1. Copy the arm64 xaml appx package from tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx
 
 
+
 1. Depending on your preferred method of app deployment, you can select one of the options from [App Management:  Overview](/hololens/app-deploy-overview). The recommendation for the Settings app is:
+
 
     1. If small deployment/single device, copy appx to device (USB drive or MTP), click on the appx from File Explorer.
 
+
     1. If large deployment with MDM, deploy the appx as a LOB app through MDM. There’s no need for additional licenses or certificates.
+
 
 ## Users opting in to Windows Insider after flashing to 23H1 will be stuck
 
