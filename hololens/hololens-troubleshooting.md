@@ -614,3 +614,5 @@ You can pair other Bluetooth HID and GATT devices together with your HoloLens. H
 [Back to list](#list)
 
 
+
+
