@@ -64,6 +64,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 Improvements and fixes in the update:
 
 - Fixed an issue where the device may crash when deleting a user.
+- Restored WebXR (AR) functionality in Microsoft Edge.
 
 ## Windows Holographic, version 23H1 - August 2023 Update
 
