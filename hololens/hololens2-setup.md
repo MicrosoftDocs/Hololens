@@ -12,7 +12,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Get your HoloLens 2 ready to use
+# Unboxing your HoloLens 2
 
 The procedures below will help you set up a HoloLens 2 for the first time.
 
@@ -119,4 +119,5 @@ See [product safety warnings and instructions](https://support.microsoft.com/hel
 
 > [!div class="nextstepaction"]
 > [Set up your HoloLens 2](hololens2-start.md)
+
 
