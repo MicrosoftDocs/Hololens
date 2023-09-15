@@ -20,7 +20,7 @@ appliesto:
 # Manage user identity and login for HoloLens
 
 > [!NOTE]
-> This article is a technical reference for IT Pros and tech enthusiasts. If you're looking for HoloLens set up instructions, read "[Setting up your HoloLens (1st gen)](hololens1-start.md)" or "[Setting up your HoloLens 2](hololens2-start.md)".
+> This article is a technical reference for IT Pros and tech enthusiasts. If you're looking for HoloLens set up instructions, read "[Setting up your HoloLens (1st gen)](hololens1-start.md)" or "[First-time set up for your HoloLens 2](hololens2-start.md)".
 
 ## Let’s talk about setting up user identity for HoloLens 2
 
@@ -30,7 +30,7 @@ HoloLens supports several kinds of user identities. You can choose any one of th
 
 | Identity type | Accounts per device | Authentication options |
 | --- | --- | --- |
-| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure web credential provider</li><li>Azure Authenticator App</li><li>Biometric (Iris) &ndash; HoloLens 2 only<sup>2</sup> </li><li>FIDO2 Security key</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
+| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 63| <ul><li>Azure web credential provider</li><li>Azure Authenticator App</li><li>Biometric (Iris) &ndash; HoloLens 2 only<sup>2</sup> </li><li>FIDO2 Security key</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
 | [Microsoft Account (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Biometric (Iris) &ndash; HoloLens 2 only</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
 | [Local account](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | 1 | Password |
 
@@ -39,10 +39,10 @@ Cloud-connected accounts (Azure AD and MSA) offer more features because they can
 > 1 - Azure AD Premium is not required to sign into the device. However, it is required for other features of a low touch cloud-based deployment, like Auto-enrollment and Autopilot.
 
 > [!NOTE]
-> 2 - While a HoloLens 2 device can support up to 64 Azure AD accounts, only up to 10 of those accounts should enroll in Iris Authentication. This is aligned with other Biometric authentication options for Windows Hello for Business. While more than 10 accounts may be enrolled in Iris authentication this will increase the rate of false positives and is not recommended.
+> 2 - While a HoloLens 2 device can support up to 63 Azure AD accounts, only up to 10 of those accounts should enroll in Iris Authentication. This is aligned with other Biometric authentication options for Windows Hello for Business. While more than 10 accounts may be enrolled in Iris authentication this will increase the rate of false positives and is not recommended.
 
 > [!IMPORTANT]
-> 3 - A local account can only be set up on a device [via a provisioning package during OOBE](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup), it cannot be added later in the settings app. If you'd like to use a local account on a device that's already set up, you'll need to [reflash or reset the device.](hololens-recovery.md)
+> 3 - A local account can only be set up on a device [via a provisioning package during OOBE](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup), it cannot be added later in the settings app. If you'd like to use a local account on a device that's already set up, you need to [reflash or reset the device.](hololens-recovery.md)
 
 ### How does the type of account affect sign in behavior?
 
@@ -63,7 +63,7 @@ Biometric data (including head/hand/eye movements, iris scan) that this device c
 
 HoloLens Iris login is built on top of [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-overview). HoloLens stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn’t roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there’s no single collection point an attacker can compromise to steal biometric data.  
 
-HoloLens performs iris authentication   based on stored bit codes. Users have complete control over whether they enroll their user account for Iris login for authentication. And IT administrators can disable Windows Hello capabilities through their MDM servers. See [Manage Windows Hello for Business in your organization](/windows/security/identity-protection/hello-for-business/hello-manage-in-organization).
+HoloLens performs iris authentication based on stored bit codes. Users have complete control over whether they enroll their user account for Iris login for authentication. And IT administrators can disable Windows Hello capabilities through their MDM servers. See [Manage Windows Hello for Business in your organization](/windows/security/identity-protection/hello-for-business/hello-manage-in-organization).
 
 ### Frequently asked Iris questions
 
@@ -91,13 +91,13 @@ Yes, you can manually remove it in Settings.
 
 ## Setting up users
 
-There are two ways to set up a new user on the HoloLens. The most common way is during the HoloLens out-of-box experience (OOBE). If using Azure Active Directory, [other users can log in](#setting-up-multi-user-support-azure-ad-only) after OOBE using their Azure AD credentials. HoloLens devices that are initially set up with an MSA or local account during OOBE will not support multiple users. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
+There are two ways to set up a new user on the HoloLens. The most common way is during the HoloLens out-of-box experience (OOBE). If using Azure Active Directory, [other users can log in](#setting-up-multi-user-support-azure-ad-only) after OOBE using their Azure AD credentials. HoloLens devices that are initially set up with an MSA or local account during OOBE don't support multiple users. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
 
 If you use an enterprise or organizational account to sign in to HoloLens, HoloLens enrolls in the organization's IT infrastructure. This enrollment allows your IT Admin to configure Mobile Device Management (MDM) to send group policies to your HoloLens.
 
 Like Windows on other devices, signing in during setup creates a user profile on the device. The user profile stores apps and data. The same account also provides Single Sign-on for apps, such as Microsoft Edge or the Microsoft Store, by using the Windows Account Manager APIs.
 
-By default, as for other Windows 10 devices, you'll have to sign in again when HoloLens restarts or resumes from standby. You can use the Settings app to change this behavior, or the behavior can be controlled by group policy.
+By default, as for other Windows 10 devices, you have to sign in again when HoloLens restarts or resumes from standby. You can use the Settings app to change this behavior, or the behavior can be controlled by group policy.
 
 ### Linked accounts
 
@@ -132,6 +132,16 @@ When in the **Other users** menu, the **Other users** button will display the la
 <br>
 
 ![Sign-in screen other users.](./images/multiusers2.jpg)
+
+### Using Shared Azure AD Accounts
+
+The Shared Azure Active Directory (Azure AD) account on HoloLens is a standard Azure AD account that can sign-in to the HoloLens without requiring any credentials. The Shared Azure AD account can also be pushed to a device during Autopilot setup.  This type of account is ideal for scenarios where the following conditions are true:
+
+- Multiple people share the same set of HoloLens devices.
+- Access to Azure AD resources, such as Dynamics 365 Guides content, is required.
+- Tracking who has used the device isn't required.
+
+See [Shared Azure AD accounts in Hololens](/hololens/shared-aad-accounts) for more details on how to set up these shared accounts.
 
 ## Removing users
 
@@ -169,3 +179,4 @@ Windows Hello for Business (which supports using a PIN to sign in) is supported 
 Read much more about user identity protection and authentication on [the Windows 10 security and identity documentation](/windows/security/identity-protection/).
 
 Learn more about setting up hybrid identity infrastructure through the [Azure Hybrid identity documentation](/azure/active-directory/hybrid/).
+
