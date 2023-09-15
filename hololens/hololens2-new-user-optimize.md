@@ -28,7 +28,7 @@ The following are the average lengths of time to get to app launch for the most 
 
 | Scenario start to app launch                                                 | Average time in minutes | Best practices |
 |------------------------------------------------------------------------------|----------------------|---------|
-| User exists on device, sign in with existing account                                                 | Under a minute                    | - [Use a device you've used before](#use-a-device-you-have-already-used-to-get-to-your-app-fastest) <br> - [Use labels](#physically-label-your-devices) <br> - [Fast logins](#fastest-to-log-in-to-an-existing-account)    |
+| User exists on device, sign in with existing account                                                 | Under a minute                    | - [Use a device you've used before](#use-a-device-you-have-already-used-to-get-to-your-app-fastest) <br> - [Use labels](#physically-label-your-devices-so-users-can-select-a-device-tyve-already-used) <br> - [Fast logins](#let-your-users-know-the-fastest-ways-to-log-in-to-an-existing-account)    |
 | New user on device, where at least one person has already signed in                                                     | Short                                             | - [Quick add user](#adding-your-user-to-an-existing-device) <br> - [Set up flows](#set-up-flows)   |
 | New device, which needs to go through first-time setup or the Out of Box Experience (OOBE)                             | Moderate              | - [Fast first set up](#setting-up-a-device-for-the-first-time) <br> - [Pre set up person](#have-a-designated-setup-person) <br> - [Use policies](#use-policies-to-speed-up-your-setup) <br> - [Set up flows](#set-up-flows)    |
 
@@ -40,7 +40,7 @@ By following these best practices, you can reduce the time it takes to get up an
 
 Place a label either on the rear outer cover, or the outer arms closer to the front so they don’t go into the rear outer cover. See [about HoloLens 2](hololens2-hardware.md) to see the names of hardware parts.  By having a labeled device, users can quickly pick up a device they've used before. It can also help recognize other things such as a device that's known not to be working, or which ones were just used and still need charging.
 
-The key take away from this chart, is if you can use a device you’ve used before then you can sign in and use the app in less than a minute. If you have to go through setup, then it takes a few more minutes. We highly suggest you [physically label your devices](#physically-label-your-devices).
+The key take away from this chart, is if you can use a device you’ve used before then you can sign in and use the app in less than a minute. If you have to go through setup, then it takes a few more minutes.
 
 ### Set up all devices in advance
 
@@ -163,4 +163,5 @@ We’re still a few steps away from being able to use an app, such as Guides, to
 
 > [!NOTE]
 > After device set up the Microsoft Store app will check for updates for Guides [and other in-box apps](hololens2-hardware.md#pre-installed-software) approximately every 24 hours.
+
 
