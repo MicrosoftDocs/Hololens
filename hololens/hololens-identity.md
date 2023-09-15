@@ -99,6 +99,9 @@ Like Windows on other devices, signing in during setup creates a user profile on
 
 By default, as for other Windows 10 devices, you have to sign in again when HoloLens restarts or resumes from standby. You can use the Settings app to change this behavior, or the behavior can be controlled by group policy.
 
+> [!TIP] 
+> If more than one user will use the device, it is important to keep the visor clean.  See [HoloLens 2 cleaning FAQ](/hololens/hololens2-maintenance) for details on how to clean the device.  We recommend that you clean the visor between each user.  This best practice is particularly important if you use Iris authentication.
+
 ### Linked accounts
 
 As in the Desktop version of Windows, you can link other web account credentials to your HoloLens account. Such linking makes it easier to access resources across or within apps (such as the Store) or to combine access to personal and work resources. After you connect an account to the device, you can grant permission to use the device to apps so that you don't have to sign in to each app individually.
