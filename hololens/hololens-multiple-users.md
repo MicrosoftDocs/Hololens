@@ -32,14 +32,14 @@ When planning to share your devices, there are several considerations to optimiz
 
 ### [Identity and Authentication](hololens-identity.md)
 
-If you're planning on having multiple accounts on a device, then you'll have Azure AD accounts with all modes of authentication. These authentication methods will be based on [Windows Hello](/windows-hardware/design/device-experiences/windows-hello), including Iris and FIDO2 keys.
+If you're planning on having multiple accounts on a device, then you'll have Azure AD accounts with all modes of authentication. These authentication methods are based on [Windows Hello](/windows-hardware/design/device-experiences/windows-hello), including Iris, PIN and FIDO2 keys.
 
 - FIDO 2 Security keys are excellent if you have multiple devices, many users, or are constantly using new devices.
 - If you have 10 or fewer users, Iris is a fast solution to sign in users who have previously signed into the same device.
 
 ### [Device Management](hololens-csp-policy-overview.md)
 
-If devices are being shared between users, then you'll likely want to use device restrictions. By using device management you can set some policies to either better enable your users to use the device, manage updates, or limit what the device can do. It is recommended you review our [common device restrictions](hololens-common-device-restrictions.md), and see if these recommendations seem to fit with your organization. Once you know what policies you want to use, you can apply them through [Microsoft's Endpoint Manager (MDM)](hololens-mdm-configure.md) or provisioning packages.
+If devices are being shared between users, then you may want to use device restrictions. By using device management, you can set some policies to either better enable your users to use the device, manage updates, or limit what the device can do. It is recommended you review our [common device ](hololens-common-device-restrictions.md)restrictions and see if these recommendations seem to fit with your organization. Once you know what policies you want to use, you can apply them through [Microsoft's Endpoint Manager (MDM)](hololens-mdm-configure.md) or provisioning packages.
 
 ### Advanced device management - [Kiosk](hololens-kiosk.md) and [WDAC](windows-defender-application-control-wdac.md)
 
@@ -71,8 +71,7 @@ To make sure that multiple people can use their own accounts on your HoloLens, f
 1. After you finish setup, make sure that the account settings (Settings > Accounts) include **Other users**.
 
 > [!NOTE]
-> If your device was not set up with an Azure AD account it need to be either [reset or reflashed](hololens-recovery.md) and set up properly.
-
+> If your device was not set up with an Azure AD account, it needs to be either [reset or reflashed](hololens-recovery.md) and set up properly.
 To use HoloLens, each user follows these steps:
 
 1. If another user has been using the device, choose one of the following options:
@@ -80,22 +79,23 @@ To use HoloLens, each user follows these steps:
    - Select the user tile from the **Start menu** or choose sign out from the **Power menu** to sign out the current user.
 
 1. Use your Azure AD account credentials to sign in to the device.  
-    - If it's the first time you have used the device, it will ask you to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
-    - If you previously used the device:
+   - If it's the first time you have used the device, you are asked to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
+   - If you previously used the device:
         - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes-2004.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
-        - Previous builds will need manual calibration to adjust to your eyes.
+      - Previous builds need manual calibration to adjust to your eyes.
+      > [!TIP]
+      > If a user hasn't signed into a device yet try one of these two methods for a faster login:
+      > 
+      > - **FIDO 2 Security key** : Your FIDO2 security key is automatically recognized and the user won't need to type in their user credentials or use MFA. This is the fastest method to sign in on a new device.
+      > 
+      > 
+      >    - **Web authentication** : When you sign into a new device, you can select the link **Sign in from another device** which generates a 9 character code you can use at [aka.ms/devicelogin](https://login.microsoftonline.com/common/oauth2/deviceauth) to either sign in as the user on the device, or type your user name and password using a keyboard for your convenience.
+      >    
+      To see a list of the device users or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**. You can also remove users on a device by following the instructions below.
 
-> [!TIP]
-> If a user hasn't signed into a device yet try one of these two methods for a faster login:
->
-> - **FIDO 2 Security key** : Your FIDO2 security key will be automatically recognized and the user won't need to type in their user credentials or use MFA. This is the fastest method to sign in on a new device.
-> - **Web authentication** : When you sign into a new device, you can select the link **Sign in from another device** which will generate a 9 character code you can use at [aka.ms/devicelogin](https://login.microsoftonline.com/common/oauth2/deviceauth) to either sign in as the user on the device, or type your user name and password using a keyboard for your convenience.
+      #### Remove users on a device
 
-To see a list of the device users or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**. You can also remove users on a device by following the instructions below.
-
-#### Remove users on a device
-
-Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
+      Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
 
 - When a user has been inactive on the device past a number of days, configurable via **ProfileInactivityThreshold.**
 - When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
@@ -118,7 +118,7 @@ To learn more about these policies, visit [AccountManagement CSP](/windows/clien
 
 ## Share with multiple people, all using the same account
 
-Multiple users can also share a HoloLens device while using a single user account. Although it is preferred for HoloLens users to log in to the device with their individual identities (Azure AD accounts), this is not an option in some organizations.
+Multiple users can also share a HoloLens device while using a single user account, or a shared Azure AD account. Although it is preferred for HoloLens users to log in to the device with their individual identities (Azure AD accounts), this is not an option in some organizations.
 
 There are two shared device methods available:
 
@@ -126,5 +126,8 @@ There are two shared device methods available:
 
 - **Multiple end users sharing multiple devices** - HoloLens devices are in a shared storage space where employees can use any device. Examples would be an oil rig or an auto dealership/garage.
 
-When a new user puts on the device for the first time while keeping the same account signed in, the device prompts the user to quickly calibrate and personalize the viewing experience. The device will store the calibration information to automatically optimize the quality and comfort of each user's viewing experience. Users won't need to calibrate the device again.
+When a new user puts on the device for the first time while keeping the same account signed in, the device prompts the user to quickly calibrate and personalize the viewing experience. The device stores the calibration information to automatically optimize the quality and comfort of each user's viewing experience. Users won't need to calibrate the device again.
+
+For more details on how a shared Azure AD account can be used by multiple end users on one or more devices, see [Shared Azure AD accounts in HoloLens](/hololens/shared-aad-accounts).
+
 
