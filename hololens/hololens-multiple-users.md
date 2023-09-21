@@ -56,7 +56,7 @@ When sharing the device between multiple users, there are some physical consider
 - Ensure devices are charging between shifts.
 - If a device is required for a shift, and needs to last multiple shifts consider using an external battery at the start of a shift while the device still has significant charge per the [managing heat directions](hololens2-charging.md#managing-heat).
 - When storing devices keep them plugged in and connected to a network. This is the best way to ensure OS and app updates.
-- Consider how you plan to [clean the device](hololens2-maintenance.md) between users.
+- Consider how you plan to [clean the device](hololens2-maintenance.md) between users.  If you plan to use Iris authentication, it is highly recommended that the visor is cleaned between each user.
 - For a device with a single shared user if using a shared PIN/password for a single user, don't put the PIN/password on the side of the device.
 - For multiple devices with a single shared user, use various PINs/passwords.
 - Label your devices so users can find ones they already have used. Signing back into a previously used device to launch an app can take a little as 30 seconds with Iris, PIN, or FIDO2 security keys. Setting up a new device, either OOBE or adding a new user, and then launching an app can take as much as 5 minutes.
@@ -72,6 +72,7 @@ To make sure that multiple people can use their own accounts on your HoloLens, f
 
 > [!NOTE]
 > If your device was not set up with an Azure AD account, it needs to be either [reset or reflashed](hololens-recovery.md) and set up properly.
+
 To use HoloLens, each user follows these steps:
 
 1. If another user has been using the device, choose one of the following options:
@@ -81,9 +82,9 @@ To use HoloLens, each user follows these steps:
 1. Use your Azure AD account credentials to sign in to the device.  
    - If it's the first time you have used the device, you are asked to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
    - If you previously used the device:
-        - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes-2004.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
+           - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes-2004.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
       - Previous builds need manual calibration to adjust to your eyes.
-      > [!TIP]
+         > [!TIP]
       > If a user hasn't signed into a device yet try one of these two methods for a faster login:
       > 
       > - **FIDO 2 Security key** : Your FIDO2 security key is automatically recognized and the user won't need to type in their user credentials or use MFA. This is the fastest method to sign in on a new device.
@@ -93,14 +94,14 @@ To use HoloLens, each user follows these steps:
       >    
       To see a list of the device users or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**. You can also remove users on a device by following the instructions below.
 
-      #### Remove users on a device
+#### Remove users on a device
 
-      Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
+-  Organizations with scaled deployments of HoloLens 2 devices might encounter the 63-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
 
 - When a user has been inactive on the device past a number of days, configurable via **ProfileInactivityThreshold.**
 - When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
-- When the device has reached the maximum number of supported users (64).
-   
+- When the device has reached the maximum number of supported users (63).
+
 Here's how to get started:
 
 1. Set the boolean value for **UserProfileManagement/EnableProfileManager** to **true**.
@@ -129,5 +130,6 @@ There are two shared device methods available:
 When a new user puts on the device for the first time while keeping the same account signed in, the device prompts the user to quickly calibrate and personalize the viewing experience. The device stores the calibration information to automatically optimize the quality and comfort of each user's viewing experience. Users won't need to calibrate the device again.
 
 For more details on how a shared Azure AD account can be used by multiple end users on one or more devices, see [Shared Azure AD accounts in HoloLens](/hololens/shared-aad-accounts).
+
 
 
