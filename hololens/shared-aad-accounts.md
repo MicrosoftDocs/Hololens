@@ -60,6 +60,9 @@ In addition to having the required operating system build on your HoloLens, you 
 
 Finally, you need access to Microsoft Intune in order to deploy device configurations and client certificates. For required infrastructure to deploy client certificates via Intune, see [Learn about the types of certificate that are supported by Microsoft Intune](/mem/intune/protect/certificates-configure#whats-required-to-use-certificates). In this example, we use SCEP certificates.
 
+> [!NOTE]
+> If you already have NDES configured in your environment and you wish to use a different template for shared accounts on the same server, refer to [Configuring infrastructure to support SCEP with Intune](/mem/intune/protect/certificates-scep-configure#configure-the-ndes-service) and use a different certificate template __Purpose__ to distinguish the template used for shared accounts.
+
 It's highly recommended to configure your devices for [Autopilot](/hololens/hololens2-autopilot). Autopilot simplifies the device setup experience for end users.
 
 ## Configure your Azure AD Tenant to enable Azure AD CBA
