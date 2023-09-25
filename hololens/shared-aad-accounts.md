@@ -30,12 +30,14 @@ Shared Azure Active Directory (Azure AD) accounts on HoloLens are regular Azure 
 - __Great user experience__. Users of shared Azure AD accounts do not have to enter any credentials to start using the device. Tap and go!
 - __Access to Azure AD resources__. Users of shared Azure AD accounts get easy access to Azure AD resources so that you can start a Remote Assist call or open a Guide without extra authentication.
 
-
 > [!IMPORTANT]
 > Since shared Azure AD accounts can be accessed on the HoloLens device without entering credentials, you should physically secure these HoloLens devices so that only authorized personnel have access. You may also want to lock down these accounts by applying conditional access policies, disabling self-service password reset, and configuring assigned access profiles to the devices where these accounts are used.
 
 > [!NOTE]
 >  Since these are shared accounts, users using these accounts are not shown the typical first sign-in setup screens, including PIN and iris enrollments, biometric data collection notice, and various consent screens. You should ensure that the appropriate defaults are configured for these accounts via policy (see [Set up users on HoloLens 2 quickly](/hololens2-new-user-optimize?tabs=firstBlank%2CsecondBlank#additional-policies)) and that your users are aware of these defaults.
+
+### Known limitations of shared Azure AD accounts
+- Shared Azure AD accounts cannot use PIN or iris to sign-in in the current release, even if they've been enrolled.
 
 ## Overview of the steps to configure shared Azure AD accounts
 
