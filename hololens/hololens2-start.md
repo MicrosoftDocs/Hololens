@@ -41,7 +41,6 @@ The first time you start your HoloLens 2, your first task is to set up Windows H
 
 
 
-
 You see a hummingbird flying around.
 
 <img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
@@ -53,26 +52,25 @@ It follows your hand.
 A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks you through the following steps:
 
 1. Select your language.
+ <img src="images/04-language.png" width="500px" alt="Select language">
 
-    <img src="images/04-language.png" width="500px" alt="Select language">
 
 1. Select your region.
+1.  <img src="images/05-region.png" width="500px" alt="Select region">
 
-    <img src="images/05-region.png" width="500px" alt="Select region">
+1. View consent to collect biometric data for device calibration and improved reliability.  
 
-1. Calibrate HoloLens to your eyes. 
-1. First, you'll adjust your visor.
- 
- <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
+![MicrosoftTeams-image (5)](media/hololens2-start/microsoftteams-image-(5).png)
 
+1. Calibrate HoloLens to your eyes.  First, you'll adjust your visor to enable eye calibration to take place.
 
-2. To calibrate, you look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
+![OOBE-combinedcalibration](media/hololens2-start/oobe-combinedcalibration.png)
 
-        <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
+1. To calibrate, you look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
 
-        After calibration, holograms appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
+After calibration, holograms appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
 
-        <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
+<img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
 1. Connect to the internet (select Wi-Fi or your ethernet connection).
 
@@ -109,13 +107,12 @@ A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks 
 
         
 1. Setup Iris sign-in by selecting **Next**. You go through a similar experience to the eye calibration. Select **Done** when the scan is complete. You may also select **Skip** to bypass this step.
-    
-    <img src="images/setup-iris.png" width="500px" alt="Iris setup">
+1.  <img src="images/setup-iris.png" width="500px" alt="Iris setup">
 
-    <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+ <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
 
-     
-  
+
+
 1. You setup a PIN to log into the device. This PIN is device specific. 
 
     ![Setup Windows Hello.](images/setup-windows-hello.png)
@@ -151,10 +148,10 @@ A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks 
 ## Next steps
 
 1. Start interacting right away with Mixed Reality and navigating Windows 10 on your HoloLens - check out the **Tips** app for hands-on tutorials for hand interactions. Use the start gesture to go to Start or say "Go to Start" and select Tips.
-
 1. Click below to continue reading about getting around HoloLens 2.
 
 > [!div class="nextstepaction"]
 > [Getting around HoloLens 2](hololens2-basic-usage.md)
+
 
 
