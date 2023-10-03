@@ -117,7 +117,20 @@ Keep your first few sessions with HoloLens brief and be sure to take breaks. If 
 
 See [product safety warnings and instructions](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
 
+## Next:  Two key user setup scenarios
+
+There are two key setup scenarios to consider:
+
+- **Add the first user on the device.**  Your device is brand-new and no users are logged into the device.  The device will need to go through first-time setup, also known as the Out-of-Box-Experience (OOBE).  Through this setup process, the first user is added to the device.  
+
 > [!div class="nextstepaction"]
-> [Set up your HoloLens 2](hololens2-start.md)
+> [How to add the first user on your HoloLens 2](hololens2-start.md)
+
+- **Add more users on the device.**  The device has gone through OOBE, but now additional users need to be added to the device.  Through this setup process, additional users are added to the device.  
+
+> [!div class="nextstepaction"]
+> [How to add more users on your HoloLens 2](/hololens/hololens2-new-user-optimize?branch=main&tabs=firstBlank%2CsecondBlank)
+
+
 
 
