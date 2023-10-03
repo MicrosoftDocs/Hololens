@@ -43,6 +43,8 @@ The first time you start your HoloLens 2, your first task is to set up Windows H
 
 
 
+
+
 You see a hummingbird flying around.
 
 <img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
@@ -56,9 +58,9 @@ A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks 
 1. Select your language.
  <img src="images/04-language.png" width="500px" alt="Select language">
 
-
 1. Select your region.
-1.  <img src="images/05-region.png" width="500px" alt="Select region">
+
+<img src="images/05-region.png" width="500px" alt="Select region">
 
 1. View consent to collect biometric data for device calibration and improved reliability.  
 
@@ -76,14 +78,14 @@ After calibration, holograms appear correctly even as the visor shifts on your h
 
 1. Connect to the internet (select Wi-Fi or your ethernet connection).
 
-     HoloLens sets your time zone automatically based on information obtained from the Wi-Fi network. After setup finishes, you can change the time zone by using the Settings app.
+HoloLens sets your time zone automatically based on information obtained from the Wi-Fi network. After setup finishes, you can change the time zone by using the Settings app.
 
-    ![Connect to Wi-Fi.](images/11-network.png)
+![Connect to Wi-Fi.](images/11-network.png)
 
-    > [!NOTE] 
-    > If you progress past the Wi-Fi step and later need to switch to a different network while still in setup, you can press the **Volume Down** and **Power** buttons simultaneously to return to this step if you are running an OS version from October 2019 or later. For earlier versions, you may need to [reset the device](hololens-recovery.md) or restart it in a location where the Wi-Fi network is not available to prevent it from automatically connecting.
-    > 
-    > Also note that during HoloLens Setup, there is a credential timeout of two minutes. The username/password needs to be entered within two minutes otherwise the username field will be automatically cleared.
+> [!NOTE] 
+> If you progress past the Wi-Fi step and later need to switch to a different network while still in setup, you can press the **Volume Down** and **Power** buttons simultaneously to return to this step if you are running an OS version from October 2019 or later. For earlier versions, you may need to [reset the device](hololens-recovery.md) or restart it in a location where the Wi-Fi network is not available to prevent it from automatically connecting.
+> 
+> Also note that during HoloLens Setup, there is a credential timeout of two minutes. The username/password needs to be entered within two minutes otherwise the username field will be automatically cleared.
 
 1. HoloLens 2 searches for, and applies, an Autopilot profile if one exists. If your organization has configured an Autopilot profile, it automatically configures and takes you to the sign in screen. So, no action is needed on this screen.
     ![Autopilot profile search.](images/autopilot-profile-search.png) 
@@ -113,6 +115,8 @@ After calibration, holograms appear correctly even as the visor shifts on your h
  <img src="images/setup-iris.png" width="500px" alt="Iris setup">
 
  <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+
+
 
 
 
