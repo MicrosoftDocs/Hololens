@@ -40,13 +40,22 @@ The first time you start your HoloLens 2, your first task is to set up Windows H
     <img src="images/01-magic-moment.png" width="500px" alt="First screen during first boot">
 
 
+
+
+
 You see a hummingbird flying around.
 
  <img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
 
+
+
+
 It follows your hand.
 
   <img src="images/hummingbird-2.png" width="500px" alt="Hummingbird flying close up">
+
+
+
 
 A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks you through the following steps:
 
@@ -54,9 +63,15 @@ A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks 
 
  <img src="images/04-language.png" width="500px" alt="Select language">
 
+
+
+
 1. Select your region.
 
  <img src="images/05-region.png" width="500px" alt="Select region">
+
+
+
 
 1. View consent to collect biometric data for device calibration and improved reliability.  
 
@@ -95,22 +110,24 @@ HoloLens sets your time zone automatically based on information obtained from th
   ![Set user.](images/13-device-owner.png)
     - When you choose **My work or school owns it**, you sign in with an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available. In that case, you need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
 
-        1. Enter your organizational account information.
-        1. Accept the privacy statement and the end user license agreement.
-        1. Sign in by using your Azure AD credentials. This may redirect to your organization's sign-in page.
-        1. Continue setting up the device.
+   1. Enter your organizational account information.
+   1. Accept the privacy statement and the end user license agreement.
+   1. Sign in by using your Azure AD credentials. This may redirect to your organization's sign-in page.
+   1. Continue setting up the device.
 
-    - When you choose **I own it**, you sign in with a Microsoft account. After setup is complete, you can [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
+- When you choose **I own it**, you sign in with a Microsoft account. After setup is complete, you can [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
 
-        1. Enter your Microsoft account information.  You can set up a Microsoft account for free at [account.microsoft.com](https://account.microsoft.com).
-        2. Enter your password. If your Microsoft account requires [two-step verification (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), complete the verification process.
+    1. Enter your Microsoft account information.  You can set up a Microsoft account for free at [account.microsoft.com](https://account.microsoft.com).
+    2. Enter your password. If your Microsoft account requires [two-step verification (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), complete the verification process.
 
-        
 1. Setup Iris sign-in by selecting **Next**. You go through a similar experience to the eye calibration. Select **Done** when the scan is complete. You may also select **Skip** to bypass this step.
 
   <img src="images/setup-iris.png" width="500px" alt="Iris setup">
 
   <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+
+
+
 
 1. You setup a PIN to log into the device. This PIN is device specific. 
 
@@ -125,13 +142,22 @@ HoloLens sets your time zone automatically based on information obtained from th
 
   <img src="images/22-do-more-with-voice.png" width="500px" alt="Enable Cortana">
 
+
+
+
 1. Select whether to enable location on HoloLens 2.
     
   <img src="images/setup-location-services.png" width="500px" alt="Enable location services">
 
+
+
+
 1. Select your telemetry level. If you can, please enable Optional telemetry. This information really helps the HoloLens engineering team.
 
   <img src="images/24-telemetry.png" width="500px" alt="Telemetry level">
+
+
+
 
 
 1. Learn how to use the start gesture on HoloLens 2.
@@ -139,11 +165,14 @@ HoloLens sets your time zone automatically based on information obtained from th
   <img src="images/26-01-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 1">
 
   <img src="images/26-02-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 2">
-    
-  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
-    
-    Congratulations!  Setup is complete and you're ready to use HoloLens!
 
+
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
+```
+Congratulations!  Setup is complete and you're ready to use HoloLens!
+```
 ## Next steps
 
 1. Start interacting right away with Mixed Reality and navigating Windows 10 on your HoloLens - check out the **Tips** app for hands-on tutorials for hand interactions. Use the start gesture to go to Start or say "Go to Start" and select Tips.
