@@ -12,7 +12,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# First time set up for your HoloLens 2
+# Add the first user to your HoloLens 2
 
 The first time you turn on your HoloLens, you are guided through setting up your device, signing in with a user account, and calibrating the HoloLens to your eyes.  This section walks through the HoloLens 2 initial setup experience.
 
@@ -24,7 +24,7 @@ Before you get started, make sure you have the following available:
 
 **A network connection**. You need to connect your HoloLens to a network to set it up. With HoloLens 2, you can connect with Wi-Fi or by using ethernet (you need a USB-C-to-Ethernet adapter). The first time you connect, you need an open or password-protected network that doesn't require navigating to a website or using certificates to connect. [Learn more about the websites that HoloLens uses](hololens-offline.md).
 
-**Azure AD account**. You also need to sign in to HoloLens with an Azure AD account, if your organization owns the device (or with your Microsoft account, if you own the device). (You can set up a Microsoft account for free at [account.microsoft.com](https://account.microsoft.com).)
+**Azure AD account**. You also need to sign in to HoloLens with an Azure AD account, if your organization owns the device (or with your Microsoft account, if you own the device). (You can set up a Microsoft account for free at [account.microsoft.com](https://account.microsoft.com).)  Ensure you have configured a Multi-Factor Authentication (MFA) method on your account. Go to [What is Microsoft Entra authentication](/azure/active-directory/authentication/overview-authentication) to learn more about MFA.
 
 **A safe, well-lit space with no tripping hazards**. [Health and safety info](https://go.microsoft.com/fwlink/p/?LinkId=746661).
 
@@ -38,6 +38,7 @@ The first time you start your HoloLens 2, your first task is to set up Windows H
 
 <br/>
 <img src="images/01-magic-moment.png" width="500px" alt="First screen during first boot">
+
 
 
 
@@ -59,13 +60,13 @@ A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks 
 
     <img src="images/05-region.png" width="500px" alt="Select region">
 
-1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you log in. 
+1. Calibrate HoloLens to your eyes. 
+1. First, you'll adjust your visor.
+ 
+ <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
 
-    1. First, you'll adjust your visor.
-    
-    <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
-    
-    2. To calibrate, you look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
+
+2. To calibrate, you look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
 
         <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
@@ -84,8 +85,7 @@ A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks 
     > 
     > Also note that during HoloLens Setup, there is a credential timeout of two minutes. The username/password needs to be entered within two minutes otherwise the username field will be automatically cleared.
 
-1. HoloLens 2 searches for, and applies, an Autopilot profile if one exists. No action is needed on this screen.
- 
+1. HoloLens 2 searches for, and applies, an Autopilot profile if one exists. If your organization has configured an Autopilot profile, it automatically configures and takes you to the sign in screen. So, no action is needed on this screen.
     ![Autopilot profile search.](images/autopilot-profile-search.png) 
 
 1. Click **Accept** on the licensing screen.
@@ -156,4 +156,5 @@ A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks 
 
 > [!div class="nextstepaction"]
 > [Getting around HoloLens 2](hololens2-basic-usage.md)
+
 
