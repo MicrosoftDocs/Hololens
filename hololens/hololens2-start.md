@@ -41,6 +41,8 @@ The first time you start your HoloLens 2, your first task is to set up Windows H
 
 
 
+
+
 You see a hummingbird flying around.
 
 <img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
@@ -107,9 +109,12 @@ After calibration, holograms appear correctly even as the visor shifts on your h
 
         
 1. Setup Iris sign-in by selecting **Next**. You go through a similar experience to the eye calibration. Select **Done** when the scan is complete. You may also select **Skip** to bypass this step.
-1.  <img src="images/setup-iris.png" width="500px" alt="Iris setup">
+
+ <img src="images/setup-iris.png" width="500px" alt="Iris setup">
 
  <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+
+
 
 
 
