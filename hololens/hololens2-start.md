@@ -60,11 +60,11 @@ A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks 
 
 1. View consent to collect biometric data for device calibration and improved reliability.  
 
-![MicrosoftTeams-image (5)](media/hololens2-start/microsoftteams-image-(5).png)
+![Biometric data is collected to improve the user experience.](media/hololens2-start/microsoftteams-image-(5).png)
 
 1. Calibrate HoloLens to your eyes.  First, you'll adjust your visor to enable eye calibration to take place.
 
-![OOBE-combinedcalibration](media/hololens2-start/oobe-combinedcalibration.png)
+![Please adjust the HoloLens for your eyes so that calibration may continue.](media/hololens2-start/oobe-combinedcalibration.png)
 
 1. To calibrate, you look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
 
