@@ -30,12 +30,14 @@ Shared Azure Active Directory (Azure AD) accounts on HoloLens are regular Azure 
 - __Great user experience__. Users of shared Azure AD accounts do not have to enter any credentials to start using the device. Tap and go!
 - __Access to Azure AD resources__. Users of shared Azure AD accounts get easy access to Azure AD resources so that you can start a Remote Assist call or open a Guide without extra authentication.
 
-
 > [!IMPORTANT]
 > Since shared Azure AD accounts can be accessed on the HoloLens device without entering credentials, you should physically secure these HoloLens devices so that only authorized personnel have access. You may also want to lock down these accounts by applying conditional access policies, disabling self-service password reset, and configuring assigned access profiles to the devices where these accounts are used.
 
 > [!NOTE]
 >  Since these are shared accounts, users using these accounts are not shown the typical first sign-in setup screens, including PIN and iris enrollments, biometric data collection notice, and various consent screens. You should ensure that the appropriate defaults are configured for these accounts via policy (see [Set up users on HoloLens 2 quickly](/hololens2-new-user-optimize?tabs=firstBlank%2CsecondBlank#additional-policies)) and that your users are aware of these defaults.
+
+### Known limitations of shared Azure AD accounts
+- Shared Azure AD accounts cannot use PIN or iris to sign-in in the current release, even if they've been enrolled.
 
 ## Overview of the steps to configure shared Azure AD accounts
 
@@ -57,6 +59,9 @@ Shared Azure AD account support is available starting in [Insider preview for Mi
 In addition to having the required operating system build on your HoloLens, you also need to satisfy the prerequisites for Azure AD CBA ([How to configure Azure AD certificate-based authentication](/azure/active-directory/authentication/how-to-certificate-based-authentication#prerequisites)).
 
 Finally, you need access to Microsoft Intune in order to deploy device configurations and client certificates. For required infrastructure to deploy client certificates via Intune, see [Learn about the types of certificate that are supported by Microsoft Intune](/mem/intune/protect/certificates-configure#whats-required-to-use-certificates). In this example, we use SCEP certificates.
+
+> [!NOTE]
+> If you already have NDES configured in your environment and you wish to use a different template for shared accounts on the same server, refer to [Configuring infrastructure to support SCEP with Intune](/mem/intune/protect/certificates-scep-configure#configure-the-ndes-service) and use a different certificate template __Purpose__ to distinguish the template used for shared accounts.
 
 It's highly recommended to configure your devices for [Autopilot](/hololens/hololens2-autopilot). Autopilot simplifies the device setup experience for end users.
 
