@@ -12,18 +12,75 @@ appliesto:
 - HoloLens 2
 ---
 
-# Set up more users on your HL2
+# Add more users to your HoloLens 2
 
-Often organizations have many devices and lots of different people who use those devices. When people pick up a HoloLens 2 device, they often want to get straight to their app. Getting to the task at hand quickly can sometimes be hindered by having to do more setup. In this article, we cover the best ways to reduce set up time, best practices, and cover variations in logging into a device.
+HoloLens 2 can support a wide range of use cases and opportunities for customers. We know that time is money, and customers want to get to work as quickly as possible with their HoloLens devices.  To that end, we have created this set of best practices to guide customers towards a login experience based on their requirements that takes one minute or less.  This guidance assumes that the initial OOBE and AAD Domain Join / Autopilot process have already been completed.
 
 > [!NOTE]
-> In all these scenarios, we’re talking about scenarios in which a second user can use the device, so all these scenarios use Azure AD identities.
+> In this section, we’re talking about scenarios in which additional users can use the device, so all these scenarios use Azure AD identities.
+
 > [!TIP]
 > If you need to set up more than five additional users, see [Deploying HL2](/hololens-core-components) for best practices on HoloLens deployments for the enterprise.
 
-## Average time to get started for common scenarios
+## Three best practices to reduce time to login
 
-The following are the average lengths of time to get to app launch for the most common scenarios.
+Follow these steps to reduce the time it takes for each additional user to login to the HoloLens device.
+
+### Configure user settings and preferences in advance
+
+There are many other policies that affect the setup experience, by configuring them as well you reduce the number of screens in the setup experience. When setting up additional users, you’ll also see screens for speech and location. By configuring the setting for the device, no additional users see those confirmations, saving time during the login process.
+
+If you prefer each user to set these preferences individually, be aware that this adds several minutes to the total login time duration.
+
+> [!NOTE]
+> For Speech, the consent screen will not be shown if the feature is disabled. If it is left as default (user choice) or set to on, the user is still presented with the consent screen.
+
+|What's skipped          | Details                                                                    |Screenshot of screen skipped |
+|------------------|-----------------------------------------------------------------------------------|---|
+| Telemetry | During sign in, the HoloLens will ask for consent to share telemetry data with Microsoft. To save time during the login process, this setting can be applied via policy, which will prevent this screen from appearing.  We recommend setting this to Full. <br> Using [Policies/System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)      | <img src="images/24-telemetry.png" width="200px" alt="Telemetry level"> |
+| Speech | HoloLens supports two key kinds of speech interaction. One method is called “See it Say it”, which is processed on device, and allows for navigation of the menu options and applications. Another methos is dictation support, where voice data is sent to the cloud to enable experiences involving full speech to text.  HoloLens does not support automatic consent for the Dictation services, and requires explicit user opt in. However, disabling the dictation services will remove the prompt, whilst leaving “See it Say it” navigation enabled. If your organisation and applications do not use the dictation services, this can be disabled through policy to enable a faster sign in experience. <br> Using [Policies/Privacy/AllowInputPersonalization](hololens-cortana.md#managing-speech-on-hololens) | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana">|
+| Location | During sign in, the HoloLens will ask for consent to share the users location with applications. This is often used in D365 Guides and Remote Assist to track the location the user is calling from (city level). To save time during the login process, this setting can be applied via policy, which will prevent this screen from appearing. <br> Using [Policies/System/AllowLocation](/windows/client-management/mdm/policy-csp-system#system-allowlocation) | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
+| Iris | The page that asks a user to enroll in Iris authentication and the process of enrolling. <br> Using [Passportforwork CSP](/windows/client-management/mdm/passportforwork-csp) <br> ./Device/Vendor/MSFT/PassportForWork/Biometrics/UseBiometrics | <img src="images/setup-iris.png" width="200px" alt="Iris setup"> |
+| Skip Calibration | The calibration runs during OOBE, and can also run later via the Settings app, or when an app that uses eye tracking prompts the user to calibrate.  <br> Using: [SkipCalibrationDuringSetup](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-skipcalibrationduringsetup) <br> This policy requires [Windows Holographic, version 22H2](hololens-release-notes.md#windows-holographic-version-22h2) or newer.  If you prefer a faster login, you can choose to perform Eye Calibration at a later point when required.   | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
+| Skip Training    | When a new user logs in to the HoloLens device, a short training session, taking approx. 45 seconds, is shown to demonstrate how to open and close the Start menu. Many customers provide training on how to use HoloLens devices for their employees, so you can save time by skipping this training session.  The Tips app can be used on-demand to view this training session. <br> Using: [SkipTrainingDuringSetup](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-skiptrainingduringsetup) <br> This policy requires [Windows Holographic, version 22H2](hololens-release-notes.md#windows-holographic-version-22h2) or newer.  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
+
+### Choose the right user identity for your scenario
+
+Many companies want users to have access to corporate resources when using a HoloLens device, which requires that an Azure AD account is used.  There are two types of Azure AD accounts available on the HoloLens:
+
+- Named user account
+- Shared account
+
+If it is important to know the identity of the user using the HoloLens device, then a Named user account should be used.  There are several scenarios where this may be required, especially if the company is part of a regulated industry, but also if different content is provided to different users based on their training or seniority.  In these scenarios, it is important to follow these best practices to optimize and reduce the time to login.
+
+For scenarios such as general training, it may not be necessary to track the identity of the person using the device. In this case, a Shared user account on the device allows you to have a single-click sign in, minimizing the time to log in. 
+
+> [!NOTE] 
+> Care should be taken to ensure that the permissions assigned to the shared account only allow access to “open” data that can be accessed by anyone in the organization, and physical security on the HoloLens device is set to ensure that it cannot be accessed without authorization.
+
+For full details on setting up a “Shared” account with HoloLens 2, please refer to [Shared Azure AD accounts in HoloLens]( /hololens/shared-aad-accounts).
+
+### Choose the right login method for your user identity
+
+The HoloLens 2 is by design, a heads-up hands-free device, and is optimized for input using voice and hand interaction. However, logging onto an Active Directory account requires the use of a username and password, and the setup of a Windows Hello for Business credential, requires the use of Multi Factor Authentication.
+
+The fastest login method for your users varies based on whether you use named user or shared accounts.
+
+Named user accounts experience the fastest login experience when using these login methods:
+
+- Iris authentication
+- FIDO key-based authentication, both with and without the NFC reader
+- Sign in from another device, using Authenticator App
+
+Shared accounts experience the fastest login experience when using these login methods:
+
+- FIDO key-based authentication, both with and without the NFC reader
+- Sign in from another device, using Authenticator App
+- PIN
+
+## Additional tips for managing your HoloLens 2 devices
+
+This table helps to illustrate how long it takes to get to app launch for the most common scenarios.
 
 | Scenario start to app launch                                                 | Average time in minutes | Best practices |
 |------------------------------------------------------------------------------|----------------------|---------|
@@ -31,15 +88,13 @@ The following are the average lengths of time to get to app launch for the most 
 | New user on device, where at least one person has already signed in                                                     | Short                                             | - [Quick add user](#adding-your-user-to-an-existing-device) <br> - [Set up flows](#set-up-flows)   |
 | New device, which needs to go through first-time setup or the Out of Box Experience (OOBE)                             | Moderate              | - [Fast first set up](#setting-up-a-device-for-the-first-time) <br> - [Pre set up person](#have-a-designated-setup-person) <br> - [Use policies](#use-policies-to-speed-up-your-setup) <br> - [Set up flows](#set-up-flows)    |
 
-## Best practices
-
-By following these best practices, you can reduce the time it takes to get up and running on the device.
+To help you optimize your device management processes, there are some additional tips that are recommended to further reduce the time it takes to get up and running on the device.
 
 ### Physically label your devices so users can select a device they've already used
 
 Place a label either on the rear outer cover, or the outer arms closer to the front so they don’t go into the rear outer cover. See [about HoloLens 2](hololens2-hardware.md) to see the names of hardware parts.  By having a labeled device, users can quickly pick up a device they've used before. It can also help recognize other things such as a device that's known not to be working, or which ones were recently used and still need charging.
 
-The key takeaway from this chart, is if you can use a device you’ve used before then you can sign in and use the app in less than a minute. If you have to go through setup, then it takes a few more minutes.
+The key takeaway from this table is, if you can use a device you’ve used before, then you can sign in and use the app in less than a minute. If you have to go through setup, then it takes a few more minutes.
 
 ### Set up all devices in advance
 
@@ -71,85 +126,9 @@ When signing back into a device, there are several methods you can use. We cover
 - **FIDO2 Security key with an NFC reader** : A security key used with an NFC reader (supported with the 23H2 release) allows the user to login with two taps, which is fast. Also, when setting up a new user on a device using a FIDO2 security key, the user isn't required to use a phone for Multi-factor authentication.  
 - **PIN** : A PIN has a minimum requirement of six numbers and is faster than typing in a lengthy password with multiple requirements.
 
-### Fastest ways to set up user accounts on new devices
-
-When you are getting your account on a new device for the first time, you don't want to be typing out your full username and password using the holographic keyboard. Depending on the scenario you're in, there are two faster ways.
-
-#### Adding your user to an existing device
-
-Use a FIDO2 Security key. Why? By using a FIDO2 security key you don't have to type in your username and password, or even use multi factor authentication. You'll able to add your user to the device super fast.  Coupled with an NFC reader, the user only needs to tap twice to log in.
-
-#### Setting up a device for the first time
-
-When in the EULA after confirming it's a work device, don't start typing your username. Instead select **sign in from another device**. This option lets you go to [aka.ms/devicelogin](https://aka.ms/devicelogin) on another device, type in the 9-character code, and proceed to sign in. If you've already logged into your account on that device, then you can select your account. If you haven't, then you can use a keyboard you are more familiar with.
-
-### Use policies to speed up your setup
-
-#### First experience policies
-
-If you want to speed up both Out of Box Experience (OOBE) set up or for each new user on devices, then you want to set first experience policy.
-
-If you're using Windows Configuration Designer to create provisioning packages, you can use the wizard to **Provision HoloLens devices** -> **Provision HoloLens 2 devices** and ensure you properly configure everything in the Set-up device page to help streamline OOBE.
-
-<br>
-<img src="images/WCD-OOBE-skip.jpg" width="500px" alt="WCD OOBE First Experience">
-
-[FirstExperience (Windows Configuration Designer reference)](/windows/configuration/wcd/wcd-firstexperience)
-
 #### More policies
 
-There are many other policies that affect the setup experience, by configuring them as well you reduce the number of screens in the setup experience. When setting up more users, you also see screens for speech and location. By configuring the setting for the device, no other users see those confirmations.
-
-> [!NOTE]
-> For Speech, the consent screen will not be shown if the feature is disabled. If it is left as default (user choice) or set to on, the user is still presented with the consent screen.
-
-|What's skipped          | Details                                                                    |Screenshot of screen skipped |
-|------------------|-----------------------------------------------------------------------------------|---|
-| Telemetry | The page asking users to help improve HoloLens, by reporting data which helps us fix bugs. <br> Using [Policies/System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)      | <img src="images/24-telemetry.png" width="200px" alt="Telemetry level"> |
-| Speech | The page that asks the user if they'd like to use voice commands on the device. <br> Using [Policies/Privacy/AllowInputPersonalization](hololens-cortana.md#managing-speech-on-hololens) | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana">|
-| Location | The page that asks the user to enable their location to improve in app experiences. <br> Using [Policies/System/AllowLocation](/windows/client-management/mdm/policy-csp-system#system-allowlocation) | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
-| Iris | The page that asks a user to enroll in Iris authentication and the process of enrolling. <br> Using [Passportforwork CSP](/windows/client-management/mdm/passportforwork-csp) <br> ./Device/Vendor/MSFT/PassportForWork/Biometrics/UseBiometrics | <img src="images/setup-iris.png" width="200px" alt="Iris setup"> |
-| Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app, or when an app that uses eye tracking prompts the user to calibrate. <br> Using: [SkipCalibrationDuringSetup](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-skipcalibrationduringsetup) <br> This policy requires [Windows Holographic, version 22H2](hololens-release-notes.md#windows-holographic-version-22h2) or newer.     | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
-| Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: [SkipTrainingDuringSetup](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-skiptrainingduringsetup) <br> This policy requires [Windows Holographic, version 22H2](hololens-release-notes.md#windows-holographic-version-22h2) or newer.  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
-
-## Set up conditions
-
-In general, there are a few scenarios when you pick up a device. In those scenarios, there can also be some variations that can speed up (or slow down) your setup. The general states you can find a device in when picking it up to use it are:
-
-- You’ve signed into this device already
-- You haven’t signed into this device yet
-- No one has set up this device yet
-
-The modifiers that can increase or decrease the time to set up are typically:
-
-- You use a provisioning package to apply settings all at once, instead of manually during setup
-- Your device already has helpful setup policies, due to someone else applying them via provisioning or from going through Autopilot set up
-- Your device needs to go through Autopilot, which takes some time
-- Your device was connected to the Internet and went through Autopilot already, saving time
-- Your device's battery is low, which may pause Autopilot if it occurs
-
-## Set up flows
-
-Let us walk through different scenarios in which your device needs to be set up. Signing back into a device that already has your account on it is not included here:
-
-**Instructions:** *Select the link matching what you see, your selection will determine the tabs you see in the next section.*
-<br> When you first boot on the device what do you see?
-
-- **A.** [A swirl of colors](/hololens/hololens2-new-user-optimize?tabs=OOBEswirl%2CsecondBlank#a-swirl-of-colors-1)
-- **B.** [A previously signed in user or list of users](/hololens/hololens2-new-user-optimize?tabs=Users#a-previously-signed-in-user-or-list-of-users)
-
-[!INCLUDE[](includes/hololens-new-user.md)]
-
-[!INCLUDE[](includes/hololens-oobe-screens.md)]
-
-1. You may be asked to set up multi-factor authentication if it hasn’t already been set up on this account.
-1. Calibration starts. Run through the calibration process following the gems with your eyes.
-1. Your device prompts you to set up Iris sign in. Go ahead and register following the dots with your eyes.
-1. You are asked to set up a PIN for your login. The PIN is for this device only.
-1. You are shown prompts for voice, location, and telemetry. (Enabling telemetry helps us identify and fix issues.) <sup>1</sup>
-1. You are shown how to open the start menu. Hold your palm facing you and tap your wrist. Do it again and finish the training. <sup>1</sup>
-
-<sup>1</sup> - These screens can be skipped if these settings were previously configured by policy.
+For a list of more policies that can be set in advance, see [Configure user settings and preferences in advance](/hololens2-new-user-optimize?tabs=firstBlank%2CsecondBlank#Configure-user-settings-and-preferences-in-advance/).
 
 You have now completed set up. Congrats!
 
