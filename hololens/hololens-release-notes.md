@@ -1387,7 +1387,7 @@ Read more about the currently available [endpoints for HoloLens](hololens-offlin
 ### Install web apps
 
  > [!Note]
->As of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), the Office web app will no longer be pre-installed.
+>As of [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), the Office web app is no longer pre-installed.
 
 You can use the new Edge to install web apps alongside Microsoft Store apps. For example, you can install the Microsoft Office web app to view and edit files hosted on SharePoint or OneDrive. To install the Office web app, visit https://www.office.com and select the **App Available** or **Install Office** button in the address bar. Select **Install** to confirm.
 
@@ -1426,7 +1426,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
     ![Button to activate 360 Viewer.](images/enter-360-viewer.jpg)
 
 1. The first time you try to launch 360 Viewer on a specific domain, the browser asks for consent to enter an immersive view. Select **Allow**.
-1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.
+1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls disappears after a few seconds of inactivity.
 
 #### Top WebXR and 360 Viewer known issues
 
@@ -1469,7 +1469,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 
 **Known issues**
 
-- Previously placed Settings windows will be removed (see note above).
+- Previously placed Settings windows is removed (see note above).
 - You can no longer rename your device with the Settings app. IT admins can rename devices by using the [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) device name template or the MDM [DevDetail CSP](/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName node.
 - The Ethernet page shows a virtual Ethernet device ("UsbNcm") at all times.
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
@@ -1485,8 +1485,8 @@ With this new setting, you can select an alternative color profile for your Holo
 
 1. Launch the **Settings** app and navigate to **System > Calibration**.
 1. Under **Display color calibration**, select the **Run display color calibration** button.
-1. The display color calibration experience will launch and encourage you to make sure your visor is in the correct position.
-1. After you proceed through the instruction dialog boxes, your display will automatically be dimmed to 30% brightness.
+1. The display color calibration experience launches and encourage you to make sure your visor is in the correct position.
+1. After you proceed through the instruction dialog boxes, your display is automatically dimmed to 30% brightness.
 
     > [!TIP]
     > If you're having trouble seeing the dimmed scene in your environment, you can manually adjust the brightness level of HoloLens 2 using the brightness buttons on the left side of the device.
@@ -1496,14 +1496,14 @@ With this new setting, you can select an alternative color profile for your Holo
     ![Display color calibration scene.](images/color-cal-ui.png)
 
 1. When you're happy with the selected profile, select the **Save & Exit** button
-1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes will be reverted
+1. If you prefer not to make changes, select the **Cancel & Exit** button and your changes is reverted
 
 > [!TIP]
 > Here are some helpful tips to keep in mind while using the display color calibration setting:
 >
 > - You can re-run display color calibration from Settings whenever you'd like
-> - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change will be reflected on the Settings page
-> - When you re-run display color calibration, the color profile that was previously saved will be highlighted and Profile 0 will not appear (as Profile 0 represents the display's original color profile)
+> - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change is reflected on the Settings page
+> - When you re-run display color calibration, the color profile that was previously saved is highlighted and Profile 0 does not appear (as Profile 0 represents the display's original color profile)
 > - If you want to revert to the display's original color profile, you can do so from the Settings page (see [how to reset color profile](#how-to-reset-color-profile))
 
 ##### How to reset color profile
@@ -1516,12 +1516,12 @@ If you're unhappy with the custom color profile saved to your HoloLens 2, you ca
 
 #### Top display color calibration-known issues
 
-- On the Settings page, the status string that tells you when the color profile was last changed will be out of date until you reload that page of Settings.
+- On the Settings page, the status string that tells you when the color profile was last changed is out of date until you reload that page of Settings.
   - Workaround: Select another Settings page and then re-select the Calibration page.
 
 #### Default app picker
 
-When you activate a hyperlink or open a file type with more than one installed app, which supports it, you will see a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
+When you activate a hyperlink or open a file type with more than one installed app, which supports it, you sees a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
 
 If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. Scroll to the bottom of the page and select the **Clear** button under "Default apps for file types" and/or "Default apps for link types." Unlike the similar setting on desktop PCs, you can't reset individual file type defaults.
 
@@ -1535,7 +1535,7 @@ To set the volume of an individual app navigate to **Settings** > **System** > *
 
 #### Swipe to type
 
-Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the space bar by removing your finger from the keyboard between words. You will know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
+Some customers find it faster to "type" on virtual keyboards by swiping the shape of the word they intend to type, and we're previewing this feature for the holographic keyboard. You can swipe one word at a time by passing the tip of your finger through the plane of the holographic keyboard, swiping the shape of the word, and then withdrawing the tip of your finger from the plane of the keyboard. You can swipe follow up words without needing to press the space bar by removing your finger from the keyboard between words. You know the feature is working if you see a swipe trail following your finger's movement on the keyboard.
 
 Note, this feature can be tricky to use and master because of the nature of a holographic keyboard where you don't feel resistance against your finger (unlike a mobile phone display).
 
@@ -1563,7 +1563,7 @@ A new menu that allows the user to sign out, shut down and restart the device. A
 
 #### Update indicator
 
-When an update is available, the ellipsis icon will light up to indicate that a restart will install the update.
+When an update is available, the ellipsis icon lights up to indicate that a restart installs the update.
 The menu options also change to reflect the presence of the update.<br/><br/>
 
 <img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
@@ -1572,25 +1572,25 @@ The menu options also change to reflect the presence of the update.<br/><br/>
 
 Previously the Sign-in screen showed only the most recently signed in user, as well as an 'Other user' entry point. We have received customer feedback that this not sufficient if multiple users have signed into the device. They were still required to retype their username etc.
 
-Introduced in this Windows build, when selecting **Other user** which is located to the right of the PIN entry field, the Sign-in screen will display multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other users page via the **Add account** button.
+Introduced in this Windows build, when selecting **Other user** which is located to the right of the PIN entry field, the Sign-in screen displays multiple users with have previously signed into the device. This allows users to select their user profile and then sign-in using their Windows Hello credentials. A new user can also be added to the device from this Other users page via the **Add account** button.
 
-When in the Other users menu, the Other users button will display the last user signed into the device. Select this button to return to the Sign-in screen for this user.
+When in the Other users menu, the Other users button displays the last user signed into the device. Select this button to return to the Sign-in screen for this user.
 
 ### USB-C External Microphone Support
 
 > [!IMPORTANT]
-> Plugging in **a USB mic will not automatically set it as the input device**. When plugging in a set of USB-C headphones users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
+> Plugging in **a USB mic does not automatically set it as the input device**. When plugging in a set of USB-C headphones users observe that the headphone's audio is automatically redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow the steps below.**
 
 Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C microphones can be used for calling, recording, etc.
 
 Open the **Settings** app and select **System** > **Sound**.
 
 > [!IMPORTANT]
-> To use external microphones with **Remote Assist**, users will need to click the “Manage sound devices” hyperlink.
+> To use external microphones with **Remote Assist**, users need to click the “Manage sound devices” hyperlink.
 >
-> Then use the drop-down to set the external microphone as either **Default** or **Communications Default.** Choosing **Default** means that the external microphone will be used everywhere.
+> Then use the drop-down to set the external microphone as either **Default** or **Communications Default.** Choosing **Default** means that the external microphone is used everywhere.
 >
-> Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
+> Choosing **Communications Default** means that the external microphone is used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.
 
 #### What about Bluetooth microphone support?
 
@@ -1616,7 +1616,7 @@ For a non-AAD configuration, to configure a device for visitor auto-logon:
     1. Do not create a local account
 1. [Apply the provisioning package](hololens-provisioning.md).
 
-For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign-in screen. Once signed in to the visitor account, the device will not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign-in screen. Once signed in to the visitor account, the device does not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
 
 Visitor Auto logon can be managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
 
@@ -1628,9 +1628,9 @@ Visitor Auto logon can be managed via [custom OMA-URI](/mem/intune/configuration
 
 ### Use the new Settings and Edge apps in Kiosk modes
 
-When including apps in [Kiosks](hololens-kiosk.md), an IT Admin often adds the app to the Kiosk but using it's App User Model ID (AUMID). Because both the Settings app and Microsoft Edge app are considered new apps and different than the older apps. Kiosks that use AUMIDs for those apps will need to be updated to use the new AUMID.
+When including apps in [Kiosks](hololens-kiosk.md), an IT Admin often adds the app to the Kiosk but using it's App User Model ID (AUMID). Because both the Settings app and Microsoft Edge app are considered new apps and different than the older apps. Kiosks that use AUMIDs for those apps need to be updated to use the new AUMID.
 
-When modifying a Kiosk to include the new apps, we recommend adding in the new AUMID as well as leaving the old one. This will create an easy transition when users update the OS and won't need to receive new policies to keep using the Kiosk as intended.
+When modifying a Kiosk to include the new apps, we recommend adding in the new AUMID as well as leaving the old one. This creates an easy transition when users update the OS and won't need to receive new policies to keep using the Kiosk as intended.
 
 | App                    | AUMID                                                  |
 |------------------------|--------------------------------------------------------|
@@ -1643,7 +1643,7 @@ When modifying a Kiosk to include the new apps, we recommend adding in the new A
 
 In older builds, if a device had a kiosk configuration, which is a combination of both global assigned access and AAD group member assigned access, if determining AAD group membership failed, the user would see “[nothing shown in start](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)” menu.
 
-Starting in this Windows release, the kiosk experience will go to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
+Starting in this Windows release, the kiosk experience goes to global kiosk configuration (if present) in case of failures during AAD group kiosk mode.
 
 ### New Settings URIs for Page Settings Visibility
 
@@ -1696,7 +1696,7 @@ Previously the following two URIs would not take a user directly to the pages in
 Now in Settings App, a user can configure the behavior of [Fallback Diagnostics](hololens-diagnostic-logs.md). In the Settings app navigate to **Privacy** > **Troubleshooting** page to configure this setting.
 
 > [!NOTE]
-> If there is MDM policy configured for the device, user will not be able to override that behavior.  
+> If there is MDM policy configured for the device, user are not able to override that behavior.  
 
 ### Share things with nearby devices
 
@@ -1731,17 +1731,17 @@ A few caveats about this preview offering:
 - HoloLens support is limited in this preview to OS updates only.
 - Windows Holographic for Business only supports HTTP download modes and downloads from a [Microsoft Connected Cache endpoint](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache); peer-to-peer download modes and group assignments are not supported for HoloLens devices at this time.
 - HoloLens does not support deployment or delivery optimization for Windows Server Update Services endpoints.
-- Troubleshooting will require either diagnostics on the Connected Cache server or collecting a trace on HoloLens via **Settings** > **Update & Security** >  **Troubleshooting** >  **Windows Update**.
+- Troubleshooting requires either diagnostics on the Connected Cache server or collecting a trace on HoloLens via **Settings** > **Update & Security** >  **Troubleshooting** >  **Windows Update**.
 
 ### IT Admin - Update Checklist - 21H1
 
-This checklist will help you know the new items that features that are being added in this feature update that may affect your current device management configurations, or new features you might wish to start using.
+This checklist helps you know the new items that features that are being added in this feature update that may affect your current device management configurations, or new features you might wish to start using.
 
 #### Updates to Kiosk mode
 
 ✔️[**New AUMIDs for new apps in Kiosk mode**](#use-the-new-settings-and-edge-apps-in-kiosk-modes):
 
-If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This will ensure you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app. These changes can be done now, and deployed to all devices and allow for a smoother transition on update.
+If you were previously using either the Settings app or Microsoft Edge app in a Kiosk, we have replaced these apps with new apps which use a different App ID. We highly encourage you to read [New AUMIDs for new apps in Kiosk mode](#use-the-new-settings-and-edge-apps-in-kiosk-modes) below. This ensures you either continue to have the Settings app in your Kiosk, or include the new Microsoft Edge app. These changes can be done now, and deployed to all devices and allow for a smoother transition on update.
 
 ✔️[**Visitor Auto-logon for Kiosks**](#visitor-auto-logon-for-kiosks):
 
@@ -1779,7 +1779,7 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 
 ### Improvements and fixes in the update
 
-- [Offline diagnostics](hololens-diagnostic-logs.md#offline-diagnostics) will also include additional device information for serial number and OS version.
+- [Offline diagnostics](hololens-diagnostic-logs.md#offline-diagnostics) also includes additional device information for serial number and OS version.
 - Fixes an issue around deployment of line-of-business applications via runtime provisioning packages.
 - Fixes an issue around line-of-business application install status reporting.
 - Fixes an issue around the persistence of new app packages across device resets.
