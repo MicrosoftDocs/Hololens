@@ -16,11 +16,11 @@ appliesto:
 
 # HoloLens 2 release notes
 
-To ensure you have a productive experience with your HoloLens devices, we continue to release features, bug fixes, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
+To ensure you have a productive experience with your HoloLens devices, we continue to release features, bug fixes, and security updates. On this page, you can see what’s new for HoloLens each month. To get the latest HoloLens 2 update, you can either [check for updates, and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to [flash your device via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). The [download](https://aka.ms/hololens2download) is kept up to date and provides the latest generally available build.
 
 ## About HoloLens releases
 
-HoloLens 2 has had many updates over time. Sometimes our feature releases are on the same code base, and sometimes we move forward. This can be seen in the major version number of the builds. When an update shares the same code base, such as "2004" and "20H2", they also share the same major version number, which is 19041. In the next feature release we updated the code base, and the new major build number is 20346, so that's where the next feature release "21H1" version is.
+HoloLens 2 has had many updates over time. Sometimes our feature releases are on the same code base, and sometimes we move forward. This distinction can be seen in the major version number of the builds. When an update shares the same code base, such as "2004" and "20H2", they also share the same major version number, which is 19041. In the next feature release we updated the code base, and the new major build number is 20346, so that's where the next feature release "21H1" version is.
 
 > [!NOTE]
 > When using a [deferral policy](hololens-updates.md#configure-an-update-deferral-policy) only a change in major build number is considered a feature update.
@@ -29,7 +29,7 @@ The Windows Holographic version name gives you an indication of the time when th
 
 In between our feature updates, we also release fixes and improvements and security updates. These updates are always minor updates and never change the major build number.
 
-To help provide clarity, this release notes page provides information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), refer to the table below.
+To help provide clarity, this release notes page provides information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), refer to the table that follows.
 
 Note:  the current release version is the October 2023 Update, Build 1244.
 
@@ -76,7 +76,7 @@ Windows Holographic, version 23H2 is now available and brings a great set of new
 |[Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 
 |[Font and IME improvements](#font-and-ime-improvements) | Several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) now support GB18030-2022. | All | 
 |[Support for NFC readers](#support-for-nfc-readers) | Users can now login to their devices using their security badge with an NFC reader. | All | 
-|[Fixes and improvements](#fixes-and-improvements)  | Additional fixes and improvements for HoloLens. | All   | 
+|[Fixes and improvements](#fixes-and-improvements)  | More fixes and improvements for HoloLens. | All   | 
 
 ### IT Admin Checklist
 
@@ -91,7 +91,7 @@ Windows Holographic, version 23H2 is now available and brings a great set of new
 
 ### Faster eye position updates
 
-For HoloLens 2 users who haven't saved their Eye Tracking calibration (either skipped or encountered a failure during initial setup), we are now updating Eye Positions (or Inter Pupillary Distance, aka IPD) earlier once the user puts on the device. This results in a considerably smoother user experience, especially for close holograms interactions like pressing buttons or typing on the keyboard.
+For HoloLens 2 users who haven't saved their Eye Tracking calibration (either skipped or encountered a failure during initial setup), we are now updating Eye Positions, or Inter Pupillary Distance (IPD), earlier once the user puts on the device. This results in a considerably smoother user experience, especially for close holograms interactions like pressing buttons or typing on the keyboard.
 
 ### Viewfinder for camera
 
@@ -183,7 +183,7 @@ This policy allows you to prevent HoloLens 2 from installing removable devices. 
 | -------- | -------- | -------- |
 | Config/ADMX_DeviceInstallation/DeviceInstall_Removable_Deny | String | `<enabled/><data id="DenyRemovableDevices" value="1"/>`
 
-Please refer to [DeviceInstall_Removable_Deny](/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_removable_deny) for details.
+Refer to [DeviceInstall_Removable_Deny](/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_removable_deny) for details.
 
 #### EnableInstallationPolicyLayering
 
@@ -195,7 +195,7 @@ This policy changes the evaluation order in which Allow and Prevent policy setti
 | -------- | -------- | -------- |
 | Config/DeviceInstallation/EnableInstallationPolicyLayering | String | `<enabled/><data id="AllowDenyLayered" value="1"/>`
 
-Please refer to [EnableInstallationPolicyLayering](/windows/client-management/mdm/policy-csp-deviceinstallation#enableinstallationpolicylayering) for details.
+Refer to [EnableInstallationPolicyLayering](/windows/client-management/mdm/policy-csp-deviceinstallation#enableinstallationpolicylayering) for details.
 
 #### AllowInstallationOfMatchingDeviceIDs
 
@@ -207,11 +207,11 @@ This policy specifies a list of Plug and Play hardware IDs and compatible IDs fo
 | -------- | -------- | -------- |
 | Config/DeviceInstallation/AllowInstallationOfMatchingDeviceIDs | String | `<enabled/><data id="DeviceInstall_IDs_Allow_List" value="your_allowed_device_ids"/>`
 
-Please refer to [AllowInstallationOfMatchingDeviceIDs](/windows/client-management/mdm/policy-csp-deviceinstallation#allowinstallationofmatchingdeviceids) for details.
+Refer to [AllowInstallationOfMatchingDeviceIDs](/windows/client-management/mdm/policy-csp-deviceinstallation#allowinstallationofmatchingdeviceids) for details.
 
 ### Domain suggested during signin
 
-During the sign-in process, if [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname) MDM policy is set on HoloLens 2, the tenant domain name is suggested to the user to speed up the login process and save time.  Users still have the option to type in a different tenant domain name if desired.
+During the sign-in process, if [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname) MDM policy is set on HoloLens 2, the tenant domain name is suggested to the user to speed up the login process and save time.  Users can type in a different tenant domain name if desired.
 
 > [!NOTE] 
 > IT Admins need to configure the policy for this feature to be in effect.
@@ -244,15 +244,15 @@ Hand tracking system has been improved so that tracking is more reliable when ai
 
 ### Font and IME improvements
 
-This update improves several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) to support GB18030-2022. You can enter and display characters from conformance level 1 or 2 using the additions to Microsoft Yahei, Simsun, and Dengxian. This update now supports Unicode Extensions E and F in the Simsun Ext-B font. This meets the requirements for level 3.  These improvements are in-line with what has been released to the Windows 11 Build Release Preview Channel.  More details can be found on the [Windows Insiders blog](https://blogs.windows.com/windows-insider/2023/06/20/releasing-windows-11-build-22621-1926-to-the-release-preview-channel/).
+This update improves several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) to support GB18030-2022. You can enter and display characters from conformance level 1 or 2 using the additions to Microsoft Yahei, Simsun, and Dengxian. This update now supports Unicode Extensions E and F in the Simsun Ext-B font. This update meets the requirements for level 3.  These improvements are in-line with what has been released to the Windows 11 Build Release Preview Channel.  More details can be found on the [Windows Insiders blog](https://blogs.windows.com/windows-insider/2023/06/20/releasing-windows-11-build-22621-1926-to-the-release-preview-channel/).
 
 ### Support for NFC readers
 
-The next Insider Preview flight for HoloLens includes the ability for users to take advantage of NFC Readers.  Using a USB-C NFC reader, the HoloLens 2 device can be integrated with NFC FIDO2 cards as supported by Azure AD. For users in clean room environments, or where ID Badges contain FIDO technology, this can enable a “Tap & PIN” experience for HoloLens Sign on.  This feature enables a faster sign-in experience for users.
+The next Insider Preview flight for HoloLens includes the ability for users to take advantage of NFC Readers.  Using a USB-C NFC reader, the HoloLens 2 device can be integrated with NFC FIDO2 cards as supported by Azure AD. For users in clean room environments, or where ID Badges contain FIDO technology, this method can enable a “Tap & PIN” experience for HoloLens Sign on.  This feature enables a faster sign-in experience for users.
 
 #### USB NFC reader support
 
-USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base class ‘0B’ and subclass ‘00’ are supported. Please refer to [Microsoft Class Drivers for USB CCID Smart Cards](/previous-versions/windows/hardware/design/dn653571(v=vs.85)) for details on Microsoft class driver for USB CCID devices.  To determine if your NFC reader is compatible with HoloLens, you may either refer to the documentation provided by the reader's manufacturer, or use the Device Manager on your PC, as follows:
+USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base class ‘0B’ and subclass ‘00’ are supported. Refer to [Microsoft Class Drivers for USB CCID Smart Cards](/previous-versions/windows/hardware/design/dn653571(v=vs.85)) for details on Microsoft class driver for USB CCID devices.  To determine if your NFC reader is compatible with HoloLens, you may either refer to the documentation provided by the reader's manufacturer, or use the Device Manager on your PC, as follows:
 
 1.	Plug in the USB NFC reader to a Windows PC.
 2.	In Device Manager, locate the reader device and right click on it and select Properties.
@@ -264,7 +264,7 @@ USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base
 > [!NOTE] 
 > If a USB NFC reader works on Windows Desktop with the inbox CCID driver, that same reader is expected to be compatible with the HoloLens 2.  If the reader requires a third-party driver (either from Windows Update or through manual driver installation), the reader is not compatible with HoloLens 2.
 
-Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
+Whether you sign into a device you have used before or a new device, follow these steps to sign in with an NFC reader:
 
 1.	From the “Other User” screen, enter the FIDO Key / Tap the NFC Key against the reader.
 2.	Enter the FIDO PIN.
@@ -325,7 +325,7 @@ Windows Holographic, version 23H1 is now available and brings a great set of new
 
 HoloLens 2 is moving to Windows 11 as part of the 23H1 release. To upgrade, HoloLens 2 device(s) must be currently running 21H1 May 2021 update (build 20346.1002) or newer. If the 23H1 feature update is not available, update your device and try again. If you are on a version that is older than Windows Holographic version 20H2 (Build 19041.1136), you first need to update to the February 2021 update (build 19041.1136 or newer) before you update to the 21H1 May 2021 update (build 20346.1002) or newer. 
 
-Note:  With the introduction of Windows Holographic version 23H1, we are discontinuing monthly servicing updates for Windows Holographic version 20H2 (Build 19041.1128+). This enables us to focus on more recent releases and continue to deliver valuable improvements. 
+Note:  With the introduction of Windows Holographic version 23H1, we are discontinuing monthly servicing updates for Windows Holographic version 20H2 (Build 19041.1128+). This change enables us to focus on more recent releases and continue to deliver valuable improvements. 
 
 | Feature   | Description  | User or scenario | 
 |-----------|--------------|------------------|
@@ -1436,7 +1436,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 
 #### Providing feedback on WebXR and 360 Viewer
 
-Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge.
+Share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge.
 
 ### New Settings app
 
