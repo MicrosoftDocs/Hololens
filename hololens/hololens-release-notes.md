@@ -1298,10 +1298,10 @@ The new Microsoft Edge [adopts the Chromium open source project](https://blogs.w
 
 #### Launching the new Microsoft Edge
 
-The new Microsoft Edge ![new Microsoft Edge icon.](images/new_edge_logo.png) (represented by a blue and green swirl icon) is pinned to the Start menu and will automatically launch when you activate a web link.
+The new Microsoft Edge ![new Microsoft Edge icon.](images/new_edge_logo.png) (represented by a blue and green swirl icon) is pinned to the Start menu and automatically launches when you activate a web link.
 
 > [!NOTE]
-> When you first launch the new Microsoft Edge on HoloLens 2, your settings and data will be imported from legacy Microsoft Edge. If you continue to use legacy Microsoft Edge after launching the new Microsoft Edge, that new data will not be synced from legacy Microsoft Edge to the new Microsoft Edge.
+> When you first launch the new Microsoft Edge on HoloLens 2, your settings and data is imported from legacy Microsoft Edge. If you continue to use legacy Microsoft Edge after launching the new Microsoft Edge, that new data is not synced from legacy Microsoft Edge to the new Microsoft Edge.
 
 #### Configuring policy settings for the new Microsoft Edge
 
@@ -1343,7 +1343,7 @@ Because the new Microsoft Edge is a native Win32 app with a new UWP adapter laye
 
 - The magnifier preview in the holographic keyboard has been disabled for the new Microsoft Edge. We hope to reenable this feature in a future update, once the magnification is working correctly.
 - Audio may play from the wrong browser window if you have another browser window open and active. You can work around this issue by closing the other active window that isn't supposed to be playing audio.
-- When playing audio from a browser window in ["Follow me" mode](hololens2-basic-usage.md#follow-me-stop-following), the audio will continue playing if you disable "Follow me" mode. You can work around this issue by stopping audio playback before disabling "Follow me" mode or by closing the window with the **X** button.
+- When playing audio from a browser window in ["Follow me" mode](hololens2-basic-usage.md#follow-me-stop-following), the audio continues playing if you disable "Follow me" mode. You can work around this issue by stopping audio playback before disabling "Follow me" mode or by closing the window with the **X** button.
 - Interacting with active Microsoft Edge windows may cause other 2D app windows to go inactive unexpectedly. You can reactivate these windows by interacting with them again.
 
 #### Microsoft Edge Insider channels
@@ -1359,7 +1359,7 @@ There are a couple methods available for installing Microsoft Edge Insider chann
   1. On your HoloLens 2, visit the [Edge Insider download page](https://www.microsoftedgeinsider.com/download).
   1. Select the **Download for HoloLens 2** button for the Edge Insider channel you wish to install.
   1. Launch the downloaded .msix file from the Edge download queue or from your device's "Downloads" folder (using File Explorer).
-  1. [App installer](app-deploy-app-installer.md) will launch.
+  1. [App installer](app-deploy-app-installer.md) launches.
   1. Select the **Install** button.
   1. After successful install, you'll find Microsoft Edge Beta, Dev, or Canary as a separate entry in the **All apps** list of the Start menu.
 
@@ -1396,7 +1396,7 @@ You can use the new Edge to install web apps alongside Microsoft Store apps. For
 
 ### WebXR and 360 Viewer
 
-The new Microsoft Edge includes support for WebXR, which is the new standard for creating immersive web experiences (replacing WebVR). Many immersive web experiences were designed with VR in mind (they replace your field of view with a virtual environment), but these experiences are also supported by HoloLens 2. The WebXR standard also enables augmented and mixed reality-immersive web experiences that use your physical environment. As developers spend more time with WebXR, we anticipate new augmented and mixed reality-immersive experiences will arrive for HoloLens 2 customers to try!
+The new Microsoft Edge includes support for WebXR, which is the new standard for creating immersive web experiences (replacing WebVR). Many immersive web experiences were designed with VR in mind (they replace your field of view with a virtual environment), but these experiences are also supported by HoloLens 2. The WebXR standard also enables augmented and mixed reality-immersive web experiences that use your physical environment. As developers spend more time with WebXR, we anticipate new augmented and mixed reality-immersive experiences arrives for HoloLens 2 customers to try!
 
 The 360 Viewer extension is built on WebXR and automatically installs alongside the new Microsoft Edge on HoloLens 2. This web extension gives you the ability to immerse yourself in 360-degree videos. YouTube offers the largest selection of 360 videos, so we encourage you to start there.
 
@@ -1407,7 +1407,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 
     ![Enter VR button example.](images/75px-enter-vr.png)
 
-1. The first time you try to launch a WebXR experience on a specific domain, the browser will ask for consent to enter an immersive view, select **Allow**.
+1. The first time you try to launch a WebXR experience on a specific domain, the browser asks for consent to enter an immersive view, select **Allow**.
 1. Use [HoloLens 2 gestures](hololens2-basic-usage.md#the-hand-tracking-frame) to manipulate the experience.
 1. If the experience doesn't have an **Exit** button, use the [Start gesture](hololens2-basic-usage.md#start-gesture) to return home.
 
@@ -1425,7 +1425,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 
     ![Button to activate 360 Viewer.](images/enter-360-viewer.jpg)
 
-1. The first time you try to launch 360 Viewer on a specific domain, the browser will ask for consent to enter an immersive view. Select **Allow**.
+1. The first time you try to launch 360 Viewer on a specific domain, the browser asks for consent to enter an immersive view. Select **Allow**.
 1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls will disappear after a few seconds of inactivity.
 
 #### Top WebXR and 360 Viewer known issues
@@ -1443,7 +1443,7 @@ Please share feedback and bugs with our team via the **Send Feedback** feature i
 With this release, we're introducing a new version of the Settings app. The new Settings app includes new features and expanded settings for HoloLens 2 in the following areas: Sound, Power & sleep, Network & Internet, Apps, Accounts, Ease of Access, and more.
 
 > [!NOTE]
-> Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment will be removed upon update.
+> Because the new Settings app is distinct from the legacy Settings app, any Settings windows you previously placed around your environment is removed upon update.
 
 ![New Settings app homepage.](images/new-settings-app.png)
 
@@ -1460,7 +1460,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 - System > Battery: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically.
 - Devices > USB: you can disable USB connections by default.
 - Network & Internet:
-  - USB-C Ethernet adapters will now appear in Network & Internet.
+  - USB-C Ethernet adapters now appears in Network & Internet.
   - USB-C Ethernet adapter settings are now available, including its IP address.
   - You can now enable airplane mode on HoloLens 2.
 - Apps: you can reset the default apps used for file and link types. For more information see [Default app picker](#default-app-picker).
