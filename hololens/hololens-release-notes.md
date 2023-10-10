@@ -784,7 +784,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Allo
 
 When the HoloLens 2 is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), it might get hot enough that it takes actions automatically to keep itself from overheating. If your app demands high peripheral performance, consider using the [PowerThermalNotification Software Development Kit (SDK)](/windows/mixed-reality/develop/unity/managing-power-and-thermals) to subscribe to notification events and implement your own custom actions.
 
-Using this new SDK can allow the device to operate longer in situations where the app may be closed by the system.
+Using this new SDK can allow the device to operate longer in situations where the app is closed by the system.
 
 ### Fixes and improvements in Windows Holographic, version 22H1
 
@@ -828,7 +828,7 @@ We've added new a new page to the Settings app to configure and control [Moving 
 
 From this new page, users are able to manually turn on Moving Platform Mode by adjusting the toggle.
 
-Users can also manually set the down direction, if, for instance,  you’re using the device in such a way where you don't want gravity to be the down direction. This works well in instances where you may be lying down under what you are working on, or if your platform is rotated relative to gravity. Feel free to use this to suit your own space. You can also clear the down direction when done using the device so everything is oriented back to default afterwards.
+Users can also manually set the down direction, if, for instance,  you’re using the device in such a way where you don't want gravity to be the down direction. This works well in instances where you may be lying down under what you are working on, or if your platform is rotated relative to gravity. Feel free to use it to suit your own space. You can also clear the down direction when done using the device so everything is oriented back to default afterwards.
 
 ![Moving Platform Mode page](images/moving-platform-mode-settings.jpg)
 
@@ -836,15 +836,15 @@ Users can also manually set the down direction, if, for instance,  you’re usin
 
 #### MixedReality/ConfigureMovingPlatform
 
-This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it’s turned off / on or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Refer to [HoloLens 2 Moving Platform Mode](hololens2-moving-platform.md) for background information.
+This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it’s turned off / on.  It can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. Refer to [HoloLens 2 Moving Platform Mode](hololens2-moving-platform.md) for background information.
 
 The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureMovingPlatform`
 
 Supported values:
 
 - 0 (Default) - Last set user's preference. Initial state is OFF and after that user's preference is persisted across reboots and is used to initialize the system.
-- 1 Force off - Moving platform is disabled and cannot be changed by user.
-- 2 Force on - Moving platform is enabled and cannot be changed by user.
+- 1 Force off - Moving platform is disabled and cannot be changed by a user.
+- 2 Force on - Moving platform is enabled and cannot be changed by a user.
 
 #### MixedReality/ManualDownDirectionDisabled
 
@@ -859,7 +859,7 @@ Supported values:
 
 ### Moving Platform Mode SDK
 
-Sometimes you may want the decision on if to use Moving Platform Mode to be dependent on your situation, you may only need it enabled when using your app, or only a specific app. In these cases you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
+Sometimes you may want the decision on if to use Moving Platform Mode to be dependent on your situation, you may only need it enabled when using your app, or only a specific app. In these cases, you may wish to [enable Moving Platform Mode from your app using the SDK](/windows/mixed-reality/develop/unity/moving-platform-unity).
 
 #### Improvements and fixes in the February 2022 update
 
@@ -877,7 +877,7 @@ Sometimes you may want the decision on if to use Moving Platform Mode to be depe
 
 ### Start gestures settings
 
-The team has implemented a solution for those who don't want the start menu popping up while doing tasks while looking at their hands, such as surgery and using apps like Remote Assist. Of course, this can also help in other scenarios.
+The team has implemented a solution for users who don't want the start menu popping up while doing tasks while looking at their hands, such as surgery and using apps like Remote Assist. This can also help in other scenarios.
 
 Open the **Start menu** and select the **Settings** app -> **System** -> **Start gestures**.
 
@@ -916,7 +916,7 @@ Improvements and fixes in the update:
 Improvements and fixes in the update:
 
 - Fixed a known issue where [every time the power goes to 18 percent, the device suddenly shuts down automatically](hololens-troubleshooting.md#fixed---every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically).
-- Micro QR codes which were oriented at 45/135deg were not detected often enough or not detected at all. This issue is addressed and now they are detected reliably.
+- Micro QR codes, which were oriented at 45/135deg were not detected often enough or not detected at all. This issue is addressed and now they are detected reliably.
 - Removed the HoloLens release identifier "Version" in Settings pages as it isn't uniquely descriptive to identity the OS version your device is running. To verify your build, you should use Build Number in **Settings** -> **System** -> **About** screen.
 
 ## Windows Holographic, version 21H2
