@@ -132,7 +132,7 @@ For each HoloLens device that you want to configure for shared Microsoft Entra a
 2. Add that user to the "__SharedAccounts__" group.
 3. Ensure the device is added to the "__SharedDevices__" group. You should configure your devices for Autopilot first so they're already present in Microsoft Entra.
 
-See [Example device setup script](#example-device-setup-script) for an example of a powershell script that can be used to automate this process.
+See [Example device setup script](#example-device-setup-script) for an example of a PowerShell script that can be used to automate this process.
 
 ## Testing your configuration
 
