@@ -1,7 +1,7 @@
 ---
 title: Introducing the new Settings app
 description: Learn about the new Settings app
-author: joyjaz
+author: lolab
 ms.author: lolab
 keywords: HoloLens, settings, app picker, volume
 ms.prod: hololens
@@ -46,5 +46,6 @@ With [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holog
 - The Ethernet page shows a virtual Ethernet device ("UsbNcm") at all times.
 
 - Battery usage for the new Microsoft Edge may not be accurate, due to its nature as a Win32 desktop application supported by a UWP adapter layer (no fix anticipated soon).
+
 
 
