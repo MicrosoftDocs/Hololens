@@ -2,8 +2,6 @@
 title: Where to buy HoloLens 2
 description: List of Global ADR contacts and countries/regions available.
 keywords: HoloLens 2 purchasing options, international purchase, international reseller, ADR
-author: qianw211
-ms.author: qianwen
 ms.reviewer: skerawala
 ms.date: 3/20/2023
 ms.prod: hololens
@@ -11,7 +9,7 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high
 audience: HoloLens
-manager: sekerawa
+
 appliesto:
 - HoloLens 2
 ---
@@ -28,7 +26,7 @@ HoloLens 2 is now available in some countries/regions outside of the US, along w
 | HoloLens 2 Edition| Supported Market |
 |-------------------------------------------| ----------------------------------------|
 | HoloLens 2 | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong Special Administrative Region, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
-| HoloLens 2 Industrial Edition *(at launch)* | Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong SAR, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
+| HoloLens 2 Industrial Edition| Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong SAR, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
 | HoloLens 2 Development Edition | Australia, Canada, France, Germany, Ireland, Italy, Japan, New Zealand, Switzerland, UK, and US |
 
 <sup>1</sup> This list is dynamic, check back for updates
@@ -68,10 +66,10 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 
 | Country/Region | Distributor | Sales contacts |  HoloLens 2 Product link |
 |---------|-----|------|----------------|
-| **Brazil** | Ingram Micro do Brasil LDA | Carla Santos <carla.santos@ingrammicro.com> | |
-| **Mexico** | Ingram Micro Mexico SA de CV | luis Tonix <luis.tonix@ingrammicro.com> |  |
-| | Comercializadora Intcomex SA de CV | Hectro Ramirez salazar <hector.ramirez@intcomex.com> | |
-| **Colombia** | Impresistem SAS |  Dina Moreno <dina.moreno@impresistem.com> |  |
+| **Brazil** | Ingram Micro do Brasil LDA | Felipe Manolio <hololens.br@ingrammicro.com> | |
+| **Mexico** | Ingram Micro Mexico SA de CV | Luis Tonix <luis.tonix@ingrammicro.com> |  |
+| | Comercializadora Intcomex SA de CV | Hector Ramirez Salazar <hector.ramirez@intcomex.com> | |
+| **Colombia** | Impresistem SAS |Enmary Margaret <enmary.margaret@impresistem.com> |  |
 
 ### **North America**
 
@@ -117,6 +115,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **UK/Ireland** | Bechtle | Tori West <br> <tori.west@bechtle.com> | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/gb/shop/microsoft-hololens-2-smart-glasses--4342628-01--p) | [Buy HoloLens 2 Industrial Edition - Bechtle](https://www.bechtle.com/gb/shop/microsoft-hololens-2-ind-ed-smartglasses--4525629-01--p) |
 | | CDW | Abdullah Hayat<br><a.hayat@uk.cdw.com> |  |  |
 | | Insight | Malti Patel<br><malti.patel@insight.com> | [Buy HoloLens 2 - Insight](https://uk.insight.com/en_GB/shop/product/NJX-00002/MICROSOFT/NJX-00002/Microsoft-HoloLens-2-smart-glasses--64-GB/) | [Buy HoloLens 2 Industrial Edition - Insight](https://uk.insight.com/en_GB/shop/product/SSU-00002/MICROSOFT/SSU-00002/Microsoft-HoloLens-2-Industrial-Edition-smart-glasses--64-GB/) |
+
 
 
 

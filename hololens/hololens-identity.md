@@ -3,9 +3,6 @@ title: Manage user identity and login for HoloLens
 description: Learn how to manage user identity, multi-user support, security, enterprise authentication, Iris authentication, and sign in for HoloLens devices.
 keywords: HoloLens, user, account, AAD, Azure AD, adfs, microsoft account, msa, credentials, reference, Iris
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
-author: evmill    
-ms.author: millerevan
-manager: lolab
 ms.date: 9/27/2022
 ms.prod: hololens
 ms.custom: 

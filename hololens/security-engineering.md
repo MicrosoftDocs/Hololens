@@ -1,8 +1,7 @@
 ---
 title: Security engineering
 description: Security engineering
-author: evmill
-ms.author: millerevan
+
 ms.reviewer: tagran
 manager: lolab
 ms.date: 6/30/2020

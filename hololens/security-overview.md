@@ -1,8 +1,7 @@
 ---
 title: HoloLens security overview
 description: Get started with an overview of security for HoloLens mixed reality devices. 
-author: evmill
-ms.author: millerevan
+
 ms.reviewer: qizho
 ms.date: 11/03/2021
 ms.topic: article
@@ -10,7 +9,7 @@ keywords: security, hololens, hololens 2, hololens2 security, security overview
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-manager: yannisle
+
 appliesto:
 - HoloLens 2
 ---

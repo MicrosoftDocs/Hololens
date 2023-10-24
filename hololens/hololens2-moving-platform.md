@@ -2,8 +2,7 @@
 title: HoloLens 2 Moving Platform Mode
 description: How to use HoloLens on moving platforms
 keywords: moving platforms, dynamic motion, hololens, moving platform mode
-author: evmill
-ms.author: millerevan
+
 ms.reviewer: JoshuaElsdon
 ms.date: 2/15/2021
 ms.prod: hololens
@@ -11,7 +10,7 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high
 audience: HoloLens
-manager: ranjibb
+
 appliesto:
 - HoloLens 2
 ---

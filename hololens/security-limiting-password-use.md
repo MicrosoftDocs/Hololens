@@ -1,8 +1,7 @@
 ---
 title: Limiting password use
 description: limiting password use for HoloLens 
-author: evmill
-ms.author: millerevan
+
 ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
@@ -10,7 +9,7 @@ keywords: security, hololens, limiting password use, password, hololens password
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-manager: yannisle
+
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

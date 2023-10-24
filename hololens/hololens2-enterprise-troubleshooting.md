@@ -1,8 +1,6 @@
 ---
 title: HoloLens 2 implementation and managed device troubleshooting
 description: Troubleshooting HoloLens 2 devices in an Enterprise environment
-author: evmill
-ms.author: millerevan
 ms.date: 11/1/2021
 ms.topic: article
 keywords: troubleshooting

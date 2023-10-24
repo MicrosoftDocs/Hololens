@@ -1,14 +1,11 @@
 ---
 title: Introducing the new Settings app
 description: Learn about the new Settings app
-author: lolab
-ms.author: lolab
 keywords: HoloLens, settings, app picker, volume
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
-manager: yannisle
 ms.date: 04/01/2021
 ---
 

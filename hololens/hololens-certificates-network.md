@@ -3,9 +3,6 @@ title: Prepare certificates and network profiles for HoloLens 2
 description: Learn how to configure, use, deploy, and troubleshoot certificates for network on HoloLens 2 mixed reality devices.
 ms.prod: hololens
 ms.sitesec: library
-author: evmill
-ms.author: millerevan
-manager: lolab
 ms.reviewer: ruizhao
 ms.topic: article
 ms.localizationpriority: high

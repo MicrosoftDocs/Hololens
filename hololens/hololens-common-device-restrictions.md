@@ -3,13 +3,10 @@ title: Common Device Restrictions
 description: Keep up to date with common device restrictions and settings for the HoloLens mixed reality device. 
 ms.prod: hololens
 ms.sitesec: library
-author: evmill
-ms.author: millerevan
 ms.topic: article
 ms.localizationpriority:
 ms.date: 1/19/2022
 ms.reviewer: aboeger
-manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

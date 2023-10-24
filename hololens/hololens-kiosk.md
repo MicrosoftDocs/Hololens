@@ -3,8 +3,6 @@ title: Set up HoloLens as a kiosk
 description: Learn how to set up and use a kiosk configuration to lock down the apps on HoloLens devices. 
 ms.prod: hololens
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
 ms.topic: article
 ms.localizationpriority:
 ms.date: 4/12/2022
@@ -13,7 +11,6 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.reviewer: 
-manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

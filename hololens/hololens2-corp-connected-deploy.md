@@ -2,8 +2,6 @@
 title: Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Deploy
 description: Learn how to set up deployments of  HoloLens 2 devices over a corporate Connected network with Dynamics 365 Guides.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
-author: joyjaz
-ms.author: millerevan
 ms.reviewer: aboeger
 ms.date: 03/24/2021
 ms.prod: hololens
@@ -11,7 +9,6 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
-manager: yannisle
 appliesto:
 - HoloLens 2
 ---
@@ -20,7 +17,7 @@ appliesto:
 
 An important part of each deployment is ensuring that your deployment is properly set up before testing it yourself to ensure a smooth experience for the end user.
 
-Because we are deploying the Wi-Fi certificate via MDM, we'll need to initially set up HoloLens and enroll devices on an open Wi-Fi network, or a network that doesn't require the certificate. Once the HoloLens has finished OOBE and Enrolled, the device will receive the network certificate and LOB configured previously and we'll be able to validate both were received by the device.
+Because we're deploying the Wi-Fi certificate via MDM, we'll need to initially set up HoloLens and enroll devices on an open Wi-Fi network, or a network that doesn't require the certificate. Once the HoloLens has finished OOBE and Enrolled, the device will receive the network certificate and LOB configured previously, and we'll be able to validate both were received by the device.
 
 Afterwards, you'll be able confirm you can both author and operate a test Guide.
 
@@ -32,11 +29,11 @@ If your device isn't currently sitting in a factory settings state, now would be
 
 1. Once your device is in OOBE, you'll need to start interacting and following the prompts.
 
-2. Connect to an open Wi-Fi network that does not require certificates to join the Wi-Fi. This will allow the device to download the certificate to be used on the organization's Wi-Fi after initial setup.
+2. Connect to an open Wi-Fi network that doesn't require certificates to join the Wi-Fi. This will allow the device to download the certificate to be used on the organization's Wi-Fi after initial setup.
 
-3. The critical prompt will be when you are asked **Who owns this HoloLens?** Select **My work or school owns it** and enter your Azure AD account credentials.
+3. The critical prompt will be when you're asked **Who owns this HoloLens?** Select **My work or school owns it** and enter your Azure AD account credentials.
 
-4. When enrollment is successful, you'll be prompted to set up a PIN. This PIN is unique to this device for this user. You will also be prompted for Iris scans, voice data, and telemetry settings and finally, you'll be able to learn how to open the start menu and complete OOBE.
+4. When enrollment is successful, you'll be prompted to set up a PIN. This PIN is unique to this device for this user. You'll also be prompted for Iris scans, voice data, and telemetry settings and finally, you'll be able to learn how to open the start menu and complete OOBE.
 
 5. Once you land in the Mixed Reality Home, open the Start menu using the **Start gesture** you just learned.
 
@@ -48,14 +45,14 @@ If your device isn't currently sitting in a factory settings state, now would be
 
 8. Verify that your device is successfully joined to Azure AD. There are two ways;
 
-    1.  The Settings app. From **Settings** select **Accounts** -> **Access work or school**. From this screen, you can verify you are successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Azure AD. Connected by *yourusername@nameofAAD.onmicrosoft.com*. This will verify your device is joined to your organization&#39;s Azure AD.
+    1.  The Settings app. From **Settings** select **Accounts** -> **Access work or school**. From this screen, you can verify you're successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Azure AD. Connected by *yourusername@nameofAAD.onmicrosoft.com*. This verifies your device is joined to your organization&#39;s Azure AD.
 
-    1. The [Azure portal](https://portal.azure.com/#home). Go to **Azure Active Directory** -> **Devices** -> **All devices**, and search the device name. Under Join Type, it will show as being 'Azure AD Joined'.
+    1. The [Azure portal](https://portal.azure.com/#home). Go to **Azure Active Directory** -> **Devices** -> **All devices**, and search the device name. Under Join Type, it shows as being 'Azure AD Joined'.
         ![Verify Join Type in Azure AD.](./images/hololens2-devices-all-devices.png)
 
 9. Verify that your device is enrolled with MDM. There are two ways;
 
-    1. From **Settings**, select **Accounts** -> **Access work or school**. From this screen, you can verify you are successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Azure AD. Connected by *yourusername@nameofAAD.onmicrosoft.com*. From this Access work or school account by selecting &quot;Connected to nameofAAD&#39;s Azure AD. Connected by yourusername@nameofAAD.onmicrosoft.com&quot; and select the **Info** button.
+    1. From **Settings**, select **Accounts** -> **Access work or school**. From this screen, you can verify you're successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Azure AD. Connected by *yourusername@nameofAAD.onmicrosoft.com*. From this Access work or school account by selecting &quot;Connected to nameofAAD&#39;s Azure AD. Connected by yourusername@nameofAAD.onmicrosoft.com&quot; and select the **Info** button.
 
     1. [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com/#home). Log in and select  **Devices**  then  **All devices**. From here, you can search your HoloLens device&#39;s name. You should be able to see your HoloLens listed on Intune.
 
@@ -91,7 +88,7 @@ We don't need to do much for this quick validation. Simply select the guide you 
 >[!NOTE]
 > You will need the **Authoring** role to login to the PC and author on the HoloLens. The Operator role is read-only and has no access to the PC app.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/poE7s7_zWDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/poE7s7_zWDE]
 
 ### Operating the Guide
 
@@ -105,7 +102,7 @@ For more in-depth guidance on how to operate a guide, check out these resources:
 
 [Get oriented with the Step card as an operator in Dynamics 365 Guides](/dynamics365/mixed-reality/guides/operator-step-card-orientation)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9s41BKGHVL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/9s41BKGHVL8]
 
 ## Next step 
 > [!div class="nextstepaction"]

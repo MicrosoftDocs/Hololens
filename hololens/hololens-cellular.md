@@ -4,12 +4,9 @@ description: Connecting to cellular networks from your HoloLens mixed reality de
 ms.assetid: f1aaadce-8762-41f8-bfeb-3b6067a2ec78
 ms.prod: hololens
 ms.sitesec: library
-author: jbienzms
-ms.author: jbienz
 ms.topic: article
 ms.localizationpriority: high
 ms.date: 02/24/2021
-manager: evmill
 appliesto:
 - HoloLens 2
 ---

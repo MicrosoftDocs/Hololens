@@ -1,8 +1,6 @@
 ---
 title: HoloLens 2 cleaning FAQ
 description: Get up-to-date answers for all your commonly asked questions for cleaning and maintaining your HoloLens 2 device.
-author: evmill
-ms.author: millerevan
 ms.date: 4/14/2020
 ms.prod: hololens
 ms.topic: article
@@ -12,7 +10,6 @@ ms.custom:
 audience: ITPro
 ms.localizationpriority:
 keywords: 
-manager: jarrettr
 appliesto:
 - HoloLens 2
 ---
@@ -26,7 +23,7 @@ appliesto:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwEFP]
 
-<!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
+<!-- > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player] -->
 
 **To hold the device**
 

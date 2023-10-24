@@ -1,8 +1,6 @@
 ---
 title: HoloLens 2 Display Troubleshooting
 description: Expectations for HoloLens 2 displays. Guidance for configuring displays for best image quality.
-author: BrandonBray
-ms.author: branbray
 ms.date: 8/13/2020
 ms.topic: article
 keywords: display, calibration, comfort, visuals, quality, ipd

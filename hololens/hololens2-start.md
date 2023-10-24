@@ -6,8 +6,6 @@ ms.date: 6/09/2021
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
 ms.topic: article
 ms.localizationpriority: high
 appliesto:

@@ -2,8 +2,6 @@
 title: HoloLens 2 device only
 description: Learn about HoloLens 2 device only and what to do after getting one of your own.
 keywords: HoloLens 2 purchasing options, HoloLens options, Developer Edition
-author: bgener
-ms.author: millerevan
 ms.reviewer: bogenera
 ms.date: 4/12/2021
 ms.prod: hololens
@@ -11,7 +9,6 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high
 audience: HoloLens
-manager: yannisle
 appliesto:
 - HoloLens 2
 ---
@@ -23,7 +20,7 @@ HoloLens 2 offers the most comfortable and immersive mixed reality experience av
 ## Learn about HoloLens 2
 Using your HoloLens 2 devices in a commercial environment can be a powerful tool for your business or organization. Any HoloLens 2 can also be used by a developer to create mixed reality apps.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/XwOnHqiNAeU]
 
 ## Here's what to do next with the HoloLens 2
 

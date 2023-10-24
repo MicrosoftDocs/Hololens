@@ -2,73 +2,50 @@
 
 
 
-## Week of July 10, 2023
+## Week of September 11, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 7/12/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 7/14/2023 | [HoloLens kiosk reference information](/hololens/hololens-kiosk-reference) | modified |
-| 7/14/2023 | [Set up HoloLens as a kiosk](/hololens/hololens-kiosk) | modified |
-| 7/14/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 7/14/2023 | [Certificate Manager](/hololens/certificate-manager) | modified |
-| 7/14/2023 | [Intune and Company Portal](/hololens/app-deploy-intune) | modified |
-| 7/14/2023 | [Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices](/hololens/hololens-mdm-configure) | modified |
-| 7/14/2023 | [Deploying Remote Assist using a shared identity across multiple users](/hololens/hololens2-deploying-remote-assist-using-shared-identity) | modified |
-| 7/14/2023 | [HoloLens 2 cleaning FAQ](/hololens/hololens2-maintenance) | modified |
-| 7/14/2023 | [HoloLens 2 security baseline](/hololens/security-baseline) | modified |
-| 7/14/2023 | [Prepare certificates and network profiles for HoloLens 2](/hololens/hololens-certificates-network) | modified |
-| 7/14/2023 | [Find, install, and uninstall applications](/hololens/holographic-store-apps) | modified |
-| 7/14/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 7/14/2023 | [Manage connection endpoints for HoloLens](/hololens/hololens-offline) | modified |
-| 7/14/2023 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
-| 7/14/2023 | [Set up users on HoloLens 2 quickly](/hololens/hololens2-new-user-optimize) | modified |
-| 7/14/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
-| 7/14/2023 | [Common Scenarios – Near Offline or Restricted for HoloLens 2](/hololens/hololens-common-scenarios-near-offline-restricted) | added |
-| 7/14/2023 | [Common Deployment Scenarios](/hololens/hololens-requirements) | modified |
-| 7/14/2023 | [Connect to Bluetooth and USB-C devices](/hololens/hololens-connect-devices) | modified |
-| 7/14/2023 | Where to buy HoloLens 2 | removed |
-| 7/14/2023 | [Set up users on HoloLens 2 quickly](/hololens/hololens2-new-user-optimize) | added |
-| 7/14/2023 | [Using 3D Viewer Beta on HoloLens (1st gen)](/hololens/holographic-3d-viewer-beta) | modified |
-| 7/14/2023 | [Frequently asked security questions](/hololens/hololens1-faq-security) | modified |
-| 7/14/2023 | [Windows Autopilot for HoloLens 2](/hololens/hololens2-autopilot) | modified |
-| 7/14/2023 | [Use your voice to operate HoloLens](/hololens/hololens-cortana) | modified |
-| 7/14/2023 | [HoloLens 2 Moving Platform Mode](/hololens/hololens2-moving-platform) | modified |
+| 9/12/2023 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
+| 9/12/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+| 9/12/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
 
 
-## Week of July 03, 2023
+## Week of September 04, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 7/5/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 9/6/2023 | [Microsoft Store & Intune](/hololens/app-deploy-store-business) | modified |
+| 9/8/2023 | [Shared Azure AD accounts in HoloLens](/hololens/shared-aad-accounts) | added |
 
 
-## Week of June 26, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 6/28/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
-| 6/30/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-
-
-## Week of June 19, 2023
+## Week of August 28, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 6/22/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+| 8/29/2023 | [Restart, reset, or recover HoloLens 1](/hololens/hololens1-recovery) | modified |
+| 8/30/2023 | [Overview - App Management](/hololens/app-deploy-overview) | modified |
+| 8/30/2023 | [Microsoft Store & Intune](/hololens/app-deploy-store-business) | modified |
+| 8/30/2023 | [Find, install, and uninstall applications](/hololens/holographic-store-apps) | modified |
 
 
-## Week of June 12, 2023
+## Week of August 21, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 6/13/2023 | [HoloLens 2 capabilities and solutions](/hololens/hololens-commercial-features) | modified |
-| 6/13/2023 | [Share your HoloLens with multiple people](/hololens/hololens-multiple-users) | modified |
-| 6/13/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 6/14/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 6/15/2023 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
-| 6/16/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 8/21/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 8/25/2023 | [Deployment Guide - Corporate connected HoloLens 2 with Dynamics 365 Guides - Configure](/hololens/hololens2-corp-connected-configure) | modified |
+| 8/25/2023 | [Deployment Guide – Corporate connected HoloLens 2 with Dynamics 365 Guides - Deploy](/hololens/hololens2-corp-connected-deploy) | modified |
+
+
+## Week of August 14, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/14/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+| 8/18/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
