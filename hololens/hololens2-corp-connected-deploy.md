@@ -23,7 +23,7 @@ Afterwards, you'll be able confirm you can both author and operate a test Guide.
 
 ## Enrollment Validation
 
-Now that everything is properly configured for Azure AD and MDM Enrollment, the rest should now be a snap. You'll need a Wi-Fi connection and the HoloLens device, and one of the previously configured Azure AD user accounts.
+Now that everything is properly configured for Microsoft Entra ID and MDM Enrollment, the rest should now be a snap. You'll need a Wi-Fi connection and the HoloLens device, and one of the previously configured Microsoft Entra user accounts.
 
 If your device isn't currently sitting in a factory settings state, now would be a good time to [reflash the device](/hololens/hololens-recovery#clean-reflash-the-device).
 
@@ -31,7 +31,7 @@ If your device isn't currently sitting in a factory settings state, now would be
 
 2. Connect to an open Wi-Fi network that doesn't require certificates to join the Wi-Fi. This will allow the device to download the certificate to be used on the organization's Wi-Fi after initial setup.
 
-3. The critical prompt will be when you're asked **Who owns this HoloLens?** Select **My work or school owns it** and enter your Azure AD account credentials.
+3. The critical prompt will be when you're asked **Who owns this HoloLens?** Select **My work or school owns it** and enter your Microsoft Entra account credentials.
 
 4. When enrollment is successful, you'll be prompted to set up a PIN. This PIN is unique to this device for this user. You'll also be prompted for Iris scans, voice data, and telemetry settings and finally, you'll be able to learn how to open the start menu and complete OOBE.
 
@@ -43,20 +43,20 @@ If your device isn't currently sitting in a factory settings state, now would be
 
     ![HoloLens 2 Settings screen.](./images/hololens2-settings-about.jpg)
 
-8. Verify that your device is successfully joined to Azure AD. There are two ways;
+8. Verify that your device is successfully joined to Microsoft Entra ID. There are two ways;
 
-    1.  The Settings app. From **Settings** select **Accounts** -> **Access work or school**. From this screen, you can verify you're successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Azure AD. Connected by *yourusername@nameofAAD.onmicrosoft.com*. This verifies your device is joined to your organization&#39;s Azure AD.
+    1.  The Settings app. From **Settings** select **Accounts** -> **Access work or school**. From this screen, you can verify you're successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Microsoft Entra ID. Connected by *yourusername@nameofAAD.onmicrosoft.com*. This verifies your device is joined to your organization&#39;s Microsoft Entra ID.
 
-    1. The [Azure portal](https://portal.azure.com/#home). Go to **Azure Active Directory** -> **Devices** -> **All devices**, and search the device name. Under Join Type, it shows as being 'Azure AD Joined'.
-        ![Verify Join Type in Azure AD.](./images/hololens2-devices-all-devices.png)
+    1. The [Azure portal](https://portal.azure.com/#home). Go to **Microsoft Entra ID** -> **Devices** -> **All devices**, and search the device name. Under Join Type, it shows as being 'Microsoft Entra joined'.
+        ![Verify Join Type in Microsoft Entra ID.](./images/hololens2-devices-all-devices.png)
 
 9. Verify that your device is enrolled with MDM. There are two ways;
 
-    1. From **Settings**, select **Accounts** -> **Access work or school**. From this screen, you can verify you're successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Azure AD. Connected by *yourusername@nameofAAD.onmicrosoft.com*. From this Access work or school account by selecting &quot;Connected to nameofAAD&#39;s Azure AD. Connected by yourusername@nameofAAD.onmicrosoft.com&quot; and select the **Info** button.
+    1. From **Settings**, select **Accounts** -> **Access work or school**. From this screen, you can verify you're successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Microsoft Entra ID. Connected by *yourusername@nameofAAD.onmicrosoft.com*. From this Access work or school account by selecting &quot;Connected to nameofAAD&#39;s Microsoft Entra ID. Connected by yourusername@nameofAAD.onmicrosoft.com&quot; and select the **Info** button.
 
     1. [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com/#home). Log in and select  **Devices**  then  **All devices**. From here, you can search your HoloLens device&#39;s name. You should be able to see your HoloLens listed on Intune.
 
-        ![Verify managed by Intune in Azure AD.](./images/hololens2-devices-all-devices2.png)
+        ![Verify managed by Intune in Microsoft Entra ID.](./images/hololens2-devices-all-devices2.png)
 
 
 ## Wi-Fi certificate validation

@@ -44,7 +44,7 @@ Shared Microsoft Entra (formerly Azure Active Directory) accounts on HoloLens ar
 Shared Microsoft Entra accounts on HoloLens are implemented as regular Microsoft Entra user accounts that are configured for [Microsoft Entra certificate-based authentication (CBA)](/azure/active-directory/authentication/concept-certificate-based-authentication). 
 
 At a high level, configuring shared Microsoft Entra accounts includes the following steps:
-1. (Recommended) Configure your target devices to join Microsoft Entra and enroll into Intune using [Autopilot](/hololens/hololens2-autopilot).
+1. (Recommended) Configure your target devices to join Microsoft Entra ID and enroll into Intune using [Autopilot](/hololens/hololens2-autopilot).
 1. [Configure your Microsoft Entra tenant to enable Microsoft Entra CBA](#configure-your-microsoft-entra-tenant-to-enable-microsoft-entra-cba) for a select group of accounts.
 2. Configure Microsoft Intune to apply device configurations to a select group of devices that:
     1. [Deploy client certificates](#client-certificate-deployment-via-scep) used for Microsoft Entra CBA onto the devices via Intune's SCEP certificate profiles.
@@ -65,14 +65,14 @@ Finally, you need access to Microsoft Intune in order to deploy device configura
 
 It's highly recommended to configure your devices for [Autopilot](/hololens/hololens2-autopilot). Autopilot simplifies the device setup experience for end users.
 
-## Configure your Microsoft Entra Tenant to enable Microsoft Entra CBA
+## Configure your Microsoft Entra tenant to enable Microsoft Entra CBA
 
 Your Microsoft Entra tenant must be configured to enable Microsoft Entra CBA for a select group of users.  
 
 1.	Create a Microsoft Entra group that contains the shared Microsoft Entra accounts. As an example, we use the name "__SharedAccounts__" for this group.
 2.	Create a Microsoft Entra group that contains the shared HoloLens devices. As an example, we use the name "__SharedDevices__" for this group. This group is assigned device-based Intune configuration profiles later.
 3.	Enable Microsoft Entra certificate-based authentication (CBA) for the __SharedAccounts__ group. For a complete step-by-step guide, refer to [How to configure Microsoft Entra certificate-based authentication](/azure/active-directory/authentication/how-to-certificate-based-authentication#prerequisites). The following high-level steps are needed to set this up:
-    1.	Add your (Certificate Authority) CA certificate to Microsoft Entra. Microsoft Entra allows client certificates issued by this CA to perform CBA.
+    1.	Add your (Certificate Authority) CA certificate to Microsoft Entra. Microsoft Entra ID allows client certificates issued by this CA to perform CBA.
     2.	Enable CBA for the "__SharedAccounts__" group.
     3.	Configure CBA such that the certificate issued by your CA uses MFA. This step is to ensure that users can access resources that require MFA without setting up another factor.
     4.	Enable certificate binding via UserPrincipalName.
@@ -418,4 +418,3 @@ function Register-SharedDevice {
 Register-SharedDevice $DeviceSerialNumber
 
 ```
-
