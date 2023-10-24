@@ -1,6 +1,6 @@
 ---
 title: Set up HoloLens (1st gen)
-description: Learn how to set up your HoloLens (1st gen) for the first time over Wi-Fi network with either a Microsoft (MSA) or Azure Active Directory (AAD) account.
+description: Learn how to set up your HoloLens (1st gen) for the first time over Wi-Fi network with either a Microsoft (MSA) or Microsoft Entra account.
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
 ms.topic: article
@@ -40,10 +40,10 @@ The first time you start your HoloLens, your first task is to set up Windows Hol
 1. Connect to the internet (HoloLens guides you to select Wi-Fi network).
 
 1. Sign in to your user account. Choose between **My work or school owns it** and **I own it**.
-    - When you choose **My work or school owns it**, you sign in by using an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available, so you will need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll). To sign in to your device the first time by using a work or school account, follow these steps:
+    - When you choose **My work or school owns it**, you sign in by using a Microsoft Entra account. If your organization uses Microsoft Entra ID P1 or P2 and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Microsoft Entra ID P1 or P2, automatic MDM enrollment isn't available, so you will need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll). To sign in to your device the first time by using a work or school account, follow these steps:
         1. Enter your organizational account information.
         1. Accept the privacy statement.
-        1. Sign in by using your Azure AD credentials. This may redirect to your organization's sign-in page.
+        1. Sign in by using your Microsoft Entra credentials. This may redirect to your organization's sign-in page.
         1. Continue setting up the device.
     - When you choose **I own it**, you sign in by using a Microsoft account. After setup is complete, you can [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Enter your Microsoft account information.

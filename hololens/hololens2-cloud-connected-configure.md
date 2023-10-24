@@ -23,18 +23,18 @@ Azure, and Intune by that extension, uses users and groups to help assign config
 
 We can make a single user group for the purpose of assigning licenses. We can join both users to the same group and apply a license for Intune and Remote Assist to that group.
 
-If you don&#39;t already have access to two Azure AD accounts in a user group you can use; here are the quick start guides for:
+If you don&#39;t already have access to two Microsoft Entra accounts in a user group you can use; here are the quick start guides for:
 
 - [How to create a user](/mem/intune/fundamentals/quickstart-create-user)
 - [How to create a group](/mem/intune/fundamentals/quickstart-create-group)
 - [Add users to a group](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) – Add created users to create group
-- [Configure Azure AD to allow a User Group to join devices](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) – Ensure new user group has permission to enroll devices to Azure AD
+- [Configure Microsoft Entra ID to allow a User Group to join devices](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) – Ensure new user group has permission to enroll devices to Microsoft Entra ID
 
 ## Auto Enrollment on HoloLens 2
 
-In order to have a smooth and seamless experience, setting up Azure Active Directory Join (AADJ) and Auto Enrollment to Intune for HoloLens 2 devices is the way to go. This will allow users to input their organization log-in credentials during OOBE and automatically register with Azure AD and enroll the device into MDM.
+In order to have a smooth and seamless experience, setting up Microsoft Entra join (AADJ) and Auto Enrollment to Intune for HoloLens 2 devices is the way to go. This will allow users to input their organization log-in credentials during OOBE and automatically register with Microsoft Entra ID and enroll the device into MDM.
 
-By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we can select services and navigate a few pages until we can select Get a Premium trial. You may notice there is Azure Active Directory Premium 1 and 2, for Automatic Enrollment P1 is sufficient. We can select Intune and select the user scope for automatic enrollment, and select the group that was previously created.
+By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we can select services and navigate a few pages until we can select Get a Premium trial. You may notice there is Microsoft Entra ID P1 or P2 and 2, for Automatic Enrollment P1 is sufficient. We can select Intune and select the user scope for automatic enrollment, and select the group that was previously created.
 
 For full details and steps read the guide on [how to enable auto enrollment for Intune](/mem/intune/enrollment/quickstart-setup-auto-enrollment).
 

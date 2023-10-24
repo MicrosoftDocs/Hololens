@@ -31,7 +31,7 @@ HoloLens supports a limited set of offline experiences for customers who have ne
 | [NCSI](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-ncsi) |  http://www.msftconnecttest.com/connecttest.txt  |
 | AADv9 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/9 |
 | AADv10 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/10 |
-| AAD Pin | https://account.live.com/aadngc?uiflavor=win10&showSuccess=1 |
+| Microsoft Entra ID Pin | https://account.live.com/aadngc?uiflavor=win10&showSuccess=1 |
 | MSA | https://login.live.com/ppsecure/inlineconnect.srf?id=80600 |
 | MSA Pin | https://account.live.com/msangc?fl=enroll |
 
@@ -45,7 +45,7 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 | Azure                                               | wd-prod-fe.cloudapp.azure.com                                       |
 |                                                     | ris-prod-atm.trafficmanager.net                                     |
 |                                                     | validation-v2.sls.trafficmanager.net                                |
-| Azure AD Multi-Factor Authentication                | https://secure.aadcdn.microsoftonline-p.com                         |
+| Microsoft Entra multifactor authentication                | https://secure.aadcdn.microsoftonline-p.com                         |
 | Intune and MDM Configurations                       | activation-v2.sls.microsoft.com/*                                   |
 |                                                     | cdn.onenote.net                                                     |
 |                                                     | client.wns.windows.com                                              |
@@ -162,7 +162,7 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 - [Intune network configuration requirements and bandwidth](/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
 - [Network endpoints for Microsoft Intune](/intune/fundamentals/intune-endpoints)
 - [Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges)
-- [Prerequisites for Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
+- [Prerequisites for Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
 
 ## HoloLens limitations

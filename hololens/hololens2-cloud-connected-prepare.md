@@ -1,6 +1,6 @@
 ---
 title: Deployment Guide – Cloud connected HoloLens 2 deployment at scale with Remote Assist - Prepare 
-description: Learn how to prepare to enroll HoloLens devices over a Cloud Connected network using azure active directory and identity management.
+description: Learn how to prepare to enroll HoloLens devices over a Cloud Connected network using Microsoft Entra ID and identity management.
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 ms.reviewer: aboeger
 ms.date: 12/04/2020
@@ -15,38 +15,40 @@ appliesto:
 
 # Prepare - Cloud connected Guide
 
-By the end of this article you will have set up Azure AD, MDM, and understand more about using Azure AD accounts and network requirements. This section of the guide will help you and your organization get prepared to deploy HoloLens 2 to the cloud and use Dynamics 365 Remote Assist. It will go over the importance of each piece of your infrastructure as well as providing links to guides to help you set up those pieces as needed.
+By the end of this article you will have set up Microsoft Entra ID, MDM, and understand more about using Microsoft Entra accounts and network requirements. This section of the guide will help you and your organization get prepared to deploy HoloLens 2 to the cloud and use Dynamics 365 Remote Assist. It will go over the importance of each piece of your infrastructure as well as providing links to guides to help you set up those pieces as needed.
 
 ## Infrastructure Essentials
 
-For both personal and corporate deployment scenarios, an MDM system is the essential infrastructure required to deploy and manage Windows 10 Holographic devices. An Azure AD premium subscription is recommended as an identity provider and required to support certain capabilities.
+For both personal and corporate deployment scenarios, an MDM system is the essential infrastructure required to deploy and manage Windows 10 Holographic devices. A Microsoft Entra ID P1 or P2 subscription is recommended as an identity provider and required to support certain capabilities.
 
-### Azure Active Directory
+<a name='azure-active-directory'></a>
 
-Azure AD is a cloud-based directory service that provides identity and access management. Organizations that use Microsoft Office 365 or Intune are already using Azure AD, which has three editions: Free, Premium P1, and Premium P2 (see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions).) All editions support Azure AD device registration, but Premium P1 is required to enable MDM auto-enrollment which we will be using in this guide later.
+### Microsoft Entra ID
+
+Microsoft Entra ID is a cloud-based directory service that provides identity and access management. Organizations that use Microsoft Office 365 or Intune are already using Microsoft Entra ID, which has three editions: Free, Premium P1, and Premium P2 (see [Microsoft Entra editions](https://azure.microsoft.com/documentation/articles/active-directory-editions).) All editions support Microsoft Entra device registration, but Premium P1 is required to enable MDM auto-enrollment which we will be using in this guide later.
 
 > [!IMPORTANT]
-> It is essential to have an Azure Active Directory as HoloLens devices do not support on-premises AD join. If you don&#39;t already have an Azure Active Directory set up, go to [Create a new tenant in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> It is essential to have a Microsoft Entra ID as HoloLens devices do not support on-premises AD join. If you don&#39;t already have a Microsoft Entra ID set up, go to [Create a new tenant in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## Identity Management
 
 Employees can use only one account to initialize a device so it&#39;s imperative that your organization controls which account is enabled first. The account chosen will determine who controls the device and influence your management capabilities.
 
-In this guide we have chosen that for the [Identity](/hololens/hololens-identity) used we will use Azure AD accounts, or Azure Active Directory accounts. There are several benefits to Azure AD accounts we would like to use, such as:
+In this guide we have chosen that for the [Identity](/hololens/hololens-identity) used we will use Microsoft Entra accounts, or Microsoft Entra accounts. There are several benefits to Microsoft Entra accounts we would like to use, such as:
 
-- Employees use their Azure AD account to register the device in Azure AD and automatically enroll it with the organization&#39;s MDM solution (Azure AD+MDM – requires Azure AD Premium).
-- Azure AD accounts support [Single Sign On](/azure/active-directory/manage-apps/what-is-single-sign-on). When a user signs into Remote Assist, their Identity from the signed in Azure AD user will be recognized and the user will be signed into the app for a streamlined experience.
-- Azure AD accounts have additional [authentication options](/hololens/hololens-identity) via [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris log-in users can sign in from another device or use FIDO security keys.
+- Employees use their Microsoft Entra account to register the device in Microsoft Entra ID and automatically enroll it with the organization&#39;s MDM solution (Microsoft Entra ID+MDM – requires Microsoft Entra ID P1 or P2).
+- Microsoft Entra accounts support [Single Sign On](/azure/active-directory/manage-apps/what-is-single-sign-on). When a user signs into Remote Assist, their Identity from the signed in Microsoft Entra user will be recognized and the user will be signed into the app for a streamlined experience.
+- Microsoft Entra accounts have additional [authentication options](/hololens/hololens-identity) via [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris log-in users can sign in from another device or use FIDO security keys.
 
 ### Mobile Device Management
 
-Microsoft [Intune](/mem/intune/fundamentals/what-is-intune), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices connected to your tenant. Like Office 365, Intune uses Azure AD for identity management, so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Intune also supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution. For the purposes of this guide, we&#39;ll be focusing on using Intune for enabling a cloud deployment at scale with HoloLens 2.
+Microsoft [Intune](/mem/intune/fundamentals/what-is-intune), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices connected to your tenant. Like Office 365, Intune uses Microsoft Entra ID for identity management, so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Intune also supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution. For the purposes of this guide, we&#39;ll be focusing on using Intune for enabling a cloud deployment at scale with HoloLens 2.
 
 > [!IMPORTANT]
 > It is essential to have Mobile Device Management. If you don&#39;t already have it set up follow this guide and [Get started with Intune](/mem/intune/fundamentals/free-trial-sign-up).
 
 > [!NOTE]
-> Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Holographic currently include: AirWatch, MobileIron, and others. Most industry-leading MDM vendors already support integration with Azure AD. You can find the MDM vendors that support Azure AD in [Azure Marketplace](https://azure.microsoft.com/marketplace/).
+> Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Holographic currently include: AirWatch, MobileIron, and others. Most industry-leading MDM vendors already support integration with Microsoft Entra ID. You can find the MDM vendors that support Microsoft Entra ID in [Azure Marketplace](https://azure.microsoft.com/marketplace/).
 
 ## Network
 

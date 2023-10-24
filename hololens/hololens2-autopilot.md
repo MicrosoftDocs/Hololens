@@ -34,9 +34,9 @@ Like for Surface devices, it is recommended that customers work with their Micro
 
 When a user starts the Autopilot self-deploying process, Autopilot completes the following steps:
 
-1. Join the device to Azure Active Directory (Azure AD). Autopilot for HoloLens does not support Active Directory join or Hybrid Azure AD join.
+1. Join the device to Microsoft Entra ID. Autopilot for HoloLens does not support Active Directory join or Microsoft Entra hybrid join.
 
-1. Use Azure AD to enroll the device in Microsoft Endpoint Manager (or another MDM service).
+1. Use Microsoft Entra ID to enroll the device in Microsoft Endpoint Manager (or another MDM service).
 
 1. Download and apply device-targeted policies, certificates, networking profiles and applications.
 
@@ -72,7 +72,7 @@ Follow the steps below to set up your environment:
 
 **Review the "[Requirements](/windows/deployment/windows-autopilot/self-deploying#requirements)" section of the Windows Autopilot Self-Deploying mode article.** Your environment has to meet these requirements and the standard Windows Autopilot requirements. You do not have to review the "Step by step" and "Validation" sections of the article. The procedures later in this article provide corresponding steps that are specific to HoloLens.
 
-Ensure that the devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune Portals. Convert all targeted devices to Autopilot" feature is not supported on HoloLens at the moment.
+Ensure that the devices are not already members of Microsoft Entra ID, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Microsoft Entra ID and Intune Portals. Convert all targeted devices to Autopilot" feature is not supported on HoloLens at the moment.
 
 #### Review HoloLens OS requirements:
 
@@ -167,7 +167,7 @@ You can retrieve the hardware hash from the device. The device records its hardw
    - If you selected **Assigned** for **Membership type** in the previous step, select **Members**, and then add Autopilot devices to the group. Autopilot devices that aren't yet enrolled are listed by using the device serial number as the device name.
    - If you selected **Dynamic Devices** for **Membership type** in the previous step, select **Dynamic device members**, and then enter code in **Advanced rule** that resembles the following:
      - If you want to create a group that includes all of your Autopilot devices, type: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-     - Intune's group tag field maps to the **OrderID** attribute on Azure AD devices. If you want to create a group that includes all of your Autopilot devices that have a specific group tag (the Azure AD device OrderID), you must type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+     - Intune's group tag field maps to the **OrderID** attribute on Microsoft Entra devices. If you want to create a group that includes all of your Autopilot devices that have a specific group tag (the Microsoft Entra device OrderID), you must type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
      - If you want to create a group that includes all your Autopilot devices that have a specific Purchase Order ID, type: `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
 
      > [!NOTE]  
@@ -191,7 +191,7 @@ You can retrieve the hardware hash from the device. The device records its hardw
    - **Automatically configure keyboard**: To make sure that the keyboard matches the selected language, select **Yes**.
    - **Apply device name template**: To automatically set the device name during OOBE, select **Yes** and then enter the template phrase and placeholders in **Enter a name** For example, enter a prefix and `%RAND:4%`&mdash;a placeholder for a four-digit random number.
      > [!NOTE]  
-     > If you use a device name template, the OOBE process restarts the device one time after it applies the device name and before it joins the device to Azure AD. This restart enables the new name to take effect.  
+     > If you use a device name template, the OOBE process restarts the device one time after it applies the device name and before it joins the device to Microsoft Entra ID. This restart enables the new name to take effect.  
 
    > [!div class="mx-imgBorder"]
    > ![Configure OOBE settings.](./images/hololens-ap-profile-oobe.png)
@@ -276,7 +276,7 @@ Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens
 Once TenantLockdown CSPs’ RequireNetworkInOOBE node is set to true on HoloLens 2, following operations are disallowed in OOBE:
 
 - Creating local user using runtime provisioning
-- Performing Azure AD join operation via runtime provisioning
+- Performing Microsoft Entra join operation via runtime provisioning
 - Selecting who owns the device in OOBE experience
 
 #### How to set this using Intune?
