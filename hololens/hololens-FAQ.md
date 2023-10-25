@@ -26,7 +26,7 @@ Anytime that you have problems, make sure:
 - Try [restarting it](hololens-restart-recover.md) to see whether that fixes things.
 - Before troubleshooting, ensure the HoloLens is [charged up](hololens2-charging.md) (charged for at least an hour).
 
-Please use the Feedback app to send us information about the issue. You'll find the Feedback app on the [**Start** menu](holographic-home.md).
+Use the Feedback app to send us information about the issue. You find the Feedback app on the [**Start** menu](holographic-home.md).
 
 For tips about how to wear your HoloLens, see [Adjust Fit](hololens2-setup.md#adjust-fit).
 
@@ -65,7 +65,7 @@ You can manage your spaces by going to **Settings** > **System** > **Holograms**
 
 ## How do I delete all spaces?
 
-To reset the understanding of your environment, go to **Settings** > **System** > **Holograms**. Then click "Remove nearby holograms" to reset the space currently around the HoloLens. Clicking "Remove all holograms" will completely reset the HoloLen's knowledge of all spaces.
+To reset the understanding of your environment, go to **Settings** > **System** > **Holograms**. Then click "Remove nearby holograms" to reset the space currently around the HoloLens. Click "Remove all holograms" to completely reset the HoloLen's knowledge of all spaces.
 
 [Back to list](#list)
 
@@ -78,15 +78,15 @@ If your holograms don't look right (for example, they're jittery or shaky, or yo
 - Try walking around and gazing at your surroundings so that HoloLens can scan them more completely.
 - If you've placed a lot of holograms, try removing some.
 
-If you're still having problems, trying running the Calibration app. This app calibrates your HoloLens just for you to help keep your holograms looking their best. To do this, go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
+If you're still having problems, trying running the Calibration app. This app calibrates your HoloLens just for you to help keep your holograms looking their best. To do that, go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
 
 [Back to list](#list)
 
 ## "Finding your space" message
 
-When HoloLens is learning or loading a space, you may see a brief message that says "Finding your space." If this message displays for more than a few seconds, you'll see another message under the Start menu that says "Still looking for your space."
+When HoloLens is learning or loading a space, you may see a brief message that says "Finding your space." If this message displays for more than a few seconds, another message can be found under the Start menu that says "Still looking for your space."
 
-These messages mean that HoloLens is having trouble mapping your space. When this happens, you can open apps, but you can't place holograms in your environment.
+These messages mean that HoloLens is having trouble mapping your space. When that happens, you can open apps, but you can't place holograms in your environment.
 
 If you see these messages often, try one or more of the following fixes:
 
@@ -111,7 +111,7 @@ If you don't see the holograms that you placed, or if you're seeing some that yo
 
 ## Can't place holograms or see previously placed holograms
 
-If HoloLens can't map or load your space, it enters Limited mode and you won't be able to place holograms or see holograms that you've placed. Here are some things to try:
+If HoloLens can't map or load your space, it enters Limited mode. When that happens, you can't place holograms or see holograms that you've placed. Here are some things to try:
 
 - Make sure that there's enough light in your environment so HoloLens can see and map the space.
 - Stand between one and three meters from where you're trying to place the hologram.
@@ -150,7 +150,7 @@ A hologram that you place on a wall typically appears to be an inch or so away f
 
 - When you place a hologram on a wall, stand between one and three meters from the wall and face the wall straight on.
 - Air tap the wall to reveal the mapping mesh graphic. Make sure that the mesh aligns with the wall. If it doesn't, remove the hologram, rescan the wall, and then try again.
-- If the issue persists, run the Calibration app. You'll find it in **Settings** > **System** > **Utilities**.
+- If the issue persists, run the Calibration app. You find it in **Settings** > **System** > **Utilities**.
 
 [Back to list](#list)
 
@@ -162,7 +162,7 @@ Try walking around and looking at the area where you're placing the app so that 
 
 ## Reporting issues with unstable or inexact holograms
 
-1. Please record and a [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. This video can be later uploaded through Feedback Hub as an attached file.  
+1. Record and a [Mixed Reality Capture video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) of the issue. This video can be later uploaded through Feedback Hub as an attached file.  
 1. Enable full telemetry via the **Settings** app -> **Privacy** -> **Diagnostics & feedback** and under **Optional diagnostics data** ensure the toggle is set to **On**
 1. Get the latest hologram scale and stability fixes by updating to the latest [Windows Holographic OS, (20H2 or higher)](hololens-release-notes-2004.md#windows-holographic-version-20h2). After updating perform the following:
     1. Remove all Holograms via **Settings** app -> **System** -> **Holograms** -> then select **Remove all holograms** and start with a fresh map.
