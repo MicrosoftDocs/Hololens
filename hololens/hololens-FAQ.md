@@ -65,7 +65,7 @@ You can manage your spaces by going to **Settings** > **System** > **Holograms**
 
 ## How do I delete all spaces?
 
-To reset the understanding of your environment, go to **Settings** > **System** > **Holograms**. Then click "Remove nearby holograms" to reset the space currently around the HoloLens. Click "Remove all holograms" to completely reset the HoloLen's knowledge of all spaces.
+To reset the understanding of your environment, go to **Settings** > **System** > **Holograms**. Then click "Remove nearby holograms" to reset the space currently around the HoloLens. Click "Remove all holograms" to completely reset the device's knowledge of all spaces.
 
 [Back to list](#list)
 
@@ -114,7 +114,7 @@ If you don't see the holograms that you placed, or if you're seeing some that yo
 If HoloLens can't map or load your space, it enters Limited mode. When that happens, you can't place holograms or see holograms that you've placed. Here are some things to try:
 
 - Make sure that there's enough light in your environment so HoloLens can see and map the space.
-- Stand between one and three meters from where you're trying to place the hologram.
+- Stand between one and 3 meters from where you're trying to place the hologram.
 - Don't place holograms on black or reflective surfaces.
 - Make sure that you're connected to a Wi-Fi network. If you're not connected to Wi-Fi, HoloLens can't identify and load a known space.
 - Walk around the rooms so HoloLens can rescan your surroundings. To see what's already been scanned, air tap to reveal the mapping mesh graphic.
@@ -128,9 +128,9 @@ If HoloLens can't map or load your space, it enters Limited mode. When that happ
 
 If you get too close to a hologram, it will temporarily disappear&mdash;to restore the hologram, just move away from it. Also, if you've placed several holograms close together, some may disappear. Try removing a few.
 
-Holograms can also be blocked or encased by other holograms or by objects such as walls. If this happens, try one of the following fixes:
+Holograms can also be blocked or encased by other holograms or by objects such as walls. If that happens, try one of the following fixes:
 
-- If the hologram is encased in another hologram, move the encased hologram to another location. To do this, select **Adjust**, then tap and hold to position it.
+- If the hologram is encased in another hologram, move the encased hologram to another location. To do that, select **Adjust**, then tap and hold to position it.
 - If the hologram is encased in a wall, select **Adjust**, then walk toward the wall until the hologram appears. Tap and hold, then pull the hologram forward and out of the wall.
 - If you can't move the hologram by using gestures, use your voice to remove it. Gaze at the hologram, then say "Remove." Then reopen the hologram and place it in a new location.
 
@@ -138,7 +138,7 @@ Holograms can also be blocked or encased by other holograms or by objects such a
 
 ## Holograms are appearing on the other side of a wall
 
-If you're very close to a wall, or if HoloLens hasn't scanned the wall yet, you can see holograms that are in the next room. To scan the wall, stand between one and three meters from the wall and gaze at it.
+If you're very close to a wall, or if HoloLens hasn't scanned the wall yet, you can see holograms that are in the next room. To scan the wall, stand between one and 3 meters from the wall and gaze at it.
 
 A black or reflective object (for example, a black couch or a stainless steel refrigerator) near the wall may cause problems when HoloLens tries to scan the wall. If there is such an object, scan the other side of the wall.
 
@@ -148,7 +148,7 @@ A black or reflective object (for example, a black couch or a stainless steel re
 
 A hologram that you place on a wall typically appears to be an inch or so away from the wall. If it appears to be farther away, try one or more of the following fixes:
 
-- When you place a hologram on a wall, stand between one and three meters from the wall and face the wall straight on.
+- When you place a hologram on a wall, stand between one and 3 meters from the wall and face the wall straight on.
 - Air tap the wall to reveal the mapping mesh graphic. Make sure that the mesh aligns with the wall. If it doesn't, remove the hologram, rescan the wall, and then try again.
 - If the issue persists, run the Calibration app. You find it in **Settings** > **System** > **Utilities**.
 
@@ -166,9 +166,9 @@ Try walking around and looking at the area where you're placing the app so that 
 1. Enable full telemetry via the **Settings** app -> **Privacy** -> **Diagnostics & feedback** and under **Optional diagnostics data** ensure the toggle is set to **On**
 1. Get the latest hologram scale and stability fixes by updating to the latest [Windows Holographic OS, (20H2 or higher)](hololens-release-notes-2004.md#windows-holographic-version-20h2). After updating perform the following:
     1. Remove all Holograms via **Settings** app -> **System** -> **Holograms** -> then select **Remove all holograms** and start with a fresh map.
-    1. Create a new map of your space by wearing the HoloLens and walking around your room and looking at all areas and surfaces in the space. Do this for 2-3 minutes.
+    1. Create a new map of your space by wearing the HoloLens and walking around your room and looking at all areas and surfaces in the space. Do that for 2-3 minutes.
     1. Perform IPD calibration. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
-    1. Re-test the scenario and see if it still persists.
-1. If updating does not fix the issue, please file a [Feedback Hub issue](hololens-feedback.md). After you've filled feedback you can use the **Share** button, to create an easy to share link that can be sent when contacting support.
+    1. Retest the scenario and see if it still persists.
+1. If updating does not fix the issue, file a [Feedback Hub issue](hololens-feedback.md). After you've filled feedback you can use the **Share** button, to create an easy to share link that can be sent when contacting support.
 
 [Back to list](#list)
