@@ -78,7 +78,7 @@ If your holograms don't look right (for example, they're jittery or shaky, or yo
 - Try walking around and gazing at your surroundings so that HoloLens can scan them more completely.
 - If you've placed a lot of holograms, try removing some.
 
-If you're still having problems, trying running the Calibration app. This app calibrates your HoloLens just for you to help keep your holograms looking their best. To do that, go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
+If you're still having problems, try running the Calibration app. This app calibrates your HoloLens just for you to help keep your holograms looking their best. To do that, go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
 
 [Back to list](#list)
 
