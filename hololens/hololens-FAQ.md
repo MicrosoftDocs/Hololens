@@ -32,18 +32,19 @@ For tips about how to wear your HoloLens, see [Adjust Fit](hololens2-setup.md#ad
 
 <a id="list"></a>
 
-- [New spaces can't be created](#new-spaces-cant-be-created)
-- [Spaces can't be identified or loaded](#spaces-cant-be-identified-or-loaded)
-- [How do I delete all spaces?](#how-do-i-delete-all-spaces)
-- [Holograms don't look right or are moving around](#holograms-dont-look-right-or-are-moving-around)
-- ["Finding your space" message](#finding-your-space-message)
-- [Expected holograms aren't showing in my space](#expected-holograms-arent-showing-in-my-space)
-- [Can't place holograms or see previously placed holograms](#cant-place-holograms-or-see-previously-placed-holograms)
-- [Holograms disappear or are encased in other holograms or objects](#holograms-disappear-or-are-encased-in-other-holograms-or-objects)
-- [Holograms are appearing on the other side of a wall](#holograms-are-appearing-on-the-other-side-of-a-wall)
-- [After placing a hologram on a wall, it seems to float](#after-placing-a-hologram-on-a-wall-it-seems-to-float)
-- [Apps appear too close after moving them](#apps-appear-too-close-after-moving-them)
-- [Reporting issues with unstable or inexact holograms](#reporting-issues-with-unstable-or-inexact-holograms)
+- [Holograms and interactions troubleshooting](#holograms-and-interactions-troubleshooting)
+  - [New spaces can't be created](#new-spaces-cant-be-created)
+  - [Spaces can't be identified or loaded](#spaces-cant-be-identified-or-loaded)
+  - [How do I delete all spaces?](#how-do-i-delete-all-spaces)
+  - [Holograms don't look right or are moving around](#holograms-dont-look-right-or-are-moving-around)
+  - ["Finding your space" message](#finding-your-space-message)
+  - [Expected holograms aren't showing in my space](#expected-holograms-arent-showing-in-my-space)
+  - [Can't place holograms or see previously placed holograms](#cant-place-holograms-or-see-previously-placed-holograms)
+  - [Holograms disappear or are encased in other holograms or objects](#holograms-disappear-or-are-encased-in-other-holograms-or-objects)
+  - [Holograms are appearing on the other side of a wall](#holograms-are-appearing-on-the-other-side-of-a-wall)
+  - [After placing a hologram on a wall, it seems to float](#after-placing-a-hologram-on-a-wall-it-seems-to-float)
+  - [Apps appear too close after moving them](#apps-appear-too-close-after-moving-them)
+  - [Reporting issues with unstable or inexact holograms](#reporting-issues-with-unstable-or-inexact-holograms)
 
 ## New spaces can't be created
 
@@ -59,13 +60,13 @@ If your HoloLens can't identify and load the space you're in automatically, chec
 - Make sure that there's plenty of light in the room
 - Make sure that there haven't been any major changes to the surroundings.
 
-You can also load a space manually or manage your spaces by going to **Settings** > **System** > **Spaces**.
+You can manage your spaces by going to **Settings** > **System** > **Holograms**. 
 
 [Back to list](#list)
 
 ## How do I delete all spaces?
 
-*Coming soon*
+To reset the understanding of your environment, go to **Settings** > **System** > **Holograms**. Then click "Remove nearby holograms" to reset the space currently around the HoloLens. Clicking "Remove all holograms" will completely reset the HoloLen's knowledge of all spaces.
 
 [Back to list](#list)
 
