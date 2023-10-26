@@ -90,13 +90,13 @@ If you need to assign licenses, follow these [directions](/azure/active-director
 
 1. Only do this step if users are expected to enroll their HoloLens/Mobile device into you (There are three options)
 These steps ensure that your company's users (or a group of users) can add devices.
-    1. **Option 1:** Give all users permission to join devices to Microsoft Entra ID.
-**Sign in to the Azure portal as an administrator** > **Microsoft Entra ID** > **Devices** > **Device Settings** >
-**Set Users may join devices to Microsoft Entra ID to *All***
+    1. **Option 1:** Give all users permission to join devices to Microsoft Entra.
+**Sign in to the Azure portal as an administrator** > **Microsoft Entra** > **Devices** > **Device Settings** >
+**Set Users may join devices to Microsoft Entra to *All***
 
-    1. **Option 2:** Give selected users/groups permission to join devices to Microsoft Entra ID
-**Sign in to the Azure portal as an administrator** > **Microsoft Entra ID** > **Devices** > **Device Settings** >
-**Set Users may join devices to Microsoft Entra ID to *Selected***
+    1. **Option 2:** Give selected users/groups permission to join devices to Microsoft Entra 
+**Sign in to the Azure portal as an administrator** > **Microsoft Entra** > **Devices** > **Device Settings** >
+**Set Users may join devices to Microsoft Entra to *Selected***
 ![Image that shows Configuration of Microsoft Entra joined Devices.](images/azure-ad-image.png)
 
     1. **Option 3:** You can block all users from joining their devices to the domain. This means that all devices will need to be manually enrolled.

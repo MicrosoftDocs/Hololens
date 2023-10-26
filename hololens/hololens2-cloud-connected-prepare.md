@@ -28,7 +28,7 @@ For both personal and corporate deployment scenarios, an MDM system is the essen
 Microsoft Entra ID is a cloud-based directory service that provides identity and access management. Organizations that use Microsoft Office 365 or Intune are already using Microsoft Entra ID, which has three editions: Free, Premium P1, and Premium P2 (see [Microsoft Entra editions](https://azure.microsoft.com/documentation/articles/active-directory-editions).) All editions support Microsoft Entra device registration, but Premium P1 is required to enable MDM auto-enrollment which we will be using in this guide later.
 
 > [!IMPORTANT]
-> It is essential to have a Microsoft Entra ID as HoloLens devices do not support on-premises AD join. If you don&#39;t already have a Microsoft Entra ID set up, go to [Create a new tenant in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> It is essential to have a Microsoft Entra tenant as HoloLens devices do not support on-premises AD join. If you don't already have a Microsoft Entra tenant set up, go to [Create a new tenant in Microsoft Entra](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## Identity Management
 

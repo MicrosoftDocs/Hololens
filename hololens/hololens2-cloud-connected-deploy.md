@@ -35,7 +35,7 @@ If your device isn&#39;t currently sitting in a factory settings state, now woul
 7. You can verify that your device is successfully enrolled in the Microsoft Entra ID within the Settings app. From **Settings** select **Accounts** -> **Access work or school**. From this screen you can verify you are successfully enrolled by seeing &quot;Connected to _nameofAAD_&#39;s Microsoft Entra ID. Connected by _yourusername_@_nameofAAD_.onmicrosoft.com&quot;.
 
 
-To validate the device has Microsoft Entra joined we can check the Microsoft Entra ID from the [Azure portal](https://portal.azure.com/#home) -> **Microsoft Entra ID** -> **Devices** -> **All devices**, and search the device name. You&#39;ll be able to see the device is a part of the Microsoft Entra ID.
+To validate the device has Microsoft Entra joined we can check the Microsoft Entra ID from the [Azure portal](https://portal.azure.com/#home) -> **Microsoft Entra ID** -> **Devices** -> **All devices**, and search the device name. You'll be able to see the device is a part of the Microsoft Entra.
 
 
 ![Microsoft Entra ID - Device.](./images/aad-enrollment.png)

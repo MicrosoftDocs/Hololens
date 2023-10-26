@@ -98,9 +98,9 @@ In this section, you can enter the details of the Wi-Fi wireless network that th
 
 <img alt="Join  Microsoft Entra ID or create a local account" src="images/account-management-details.png" width="445" height="560" />
 
-You can enroll the device in Microsoft Entra ID, or create a local account on the device. Before you use a Windows Configuration Designer wizard to configure bulk Microsoft Entra enrollment, [set up Microsoft Entra join in your organization](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings).
+You can join the device to Microsoft Entra, or create a local account on the device. Before you use a Windows Configuration Designer wizard to configure bulk Microsoft Entra enrollment, [set up Microsoft Entra join in your organization](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings).
 
-The **maximum number of devices per user** setting in your Microsoft Entra tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Microsoft Entra ID, select that option and enter a friendly name for the bulk token you'll get using the wizard. Set an expiration date for the token (maximum is 30 days from the date you get the token). Select **Get bulk token**. In the **Let's get you signed in** window, enter an account that has permissions to join a device to Microsoft Entra ID, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions.
+The **maximum number of devices per user** setting in your Microsoft Entra tenant determines how many times the bulk token that you get in the wizard can be used. To join the device to Microsoft Entra, select that option and enter a friendly name for the bulk token you'll get using the wizard. Set an expiration date for the token (maximum is 30 days from the date you get the token). Select **Get bulk token**. In the **Let's get you signed in** window, enter an account that has permissions to join a device to Microsoft Entra, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions.
 
 To create a local account, select that option and enter a user name and password.
 

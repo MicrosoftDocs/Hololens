@@ -32,9 +32,9 @@ If you don&#39;t already have access to two Microsoft Entra accounts in a user g
 
 ## Auto Enrollment on HoloLens 2
 
-In order to have a smooth and seamless experience, setting up Microsoft Entra join (AADJ) and Auto Enrollment to Intune for HoloLens 2 devices is the way to go. This will allow users to input their organization log-in credentials during OOBE and automatically register with Microsoft Entra ID and enroll the device into MDM.
+In order to have a smooth and seamless experience, setting up Microsoft Entra join and Auto Enrollment to Intune for HoloLens 2 devices is the way to go. This will allow users to input their organization log-in credentials during OOBE and automatically register with Microsoft Entra ID and enroll the device into MDM.
 
-By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we can select services and navigate a few pages until we can select Get a Premium trial. You may notice there is Microsoft Entra ID P1 or P2 and 2, for Automatic Enrollment P1 is sufficient. We can select Intune and select the user scope for automatic enrollment, and select the group that was previously created.
+By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we can select services and navigate a few pages until we can select Get a Premium trial. You may notice there is Microsoft Entra ID P1 and P2, for Automatic Enrollment P1 is sufficient. We can select Intune and select the user scope for automatic enrollment, and select the group that was previously created.
 
 For full details and steps read the guide on [how to enable auto enrollment for Intune](/mem/intune/enrollment/quickstart-setup-auto-enrollment).
 

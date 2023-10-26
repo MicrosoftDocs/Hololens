@@ -69,7 +69,7 @@ When a device is Microsoft Entra joined it may affect who considered the [device
 
 Depending on the enrollment method, unenrolling your device may not be available.
 
-If your device was enrolled with a Microsoft Entra account or Autopilot, it can’t be unenrolled from Intune. If you wish to unjoin HoloLens from Microsoft Entra ID or rejoin it to a different to Microsoft Entra tenant, you must [reset/reflash](hololens-recovery.md#restart-the-device) the device.
+If your device was enrolled with a Microsoft Entra account or Autopilot, it can’t be unenrolled from Intune. If you wish to unjoin HoloLens from Microsoft Entra or rejoin it to a different to Microsoft Entra tenant, you must [reset/reflash](hololens-recovery.md#restart-the-device) the device.
 
 If your device was enrolled from an MSA account that added a work account or from a Local account that enrolled only in device management, then you may unenroll the device. Open the Start menu and then select **Settings App** -> **Access Work or School** -> *YourAccount* -> **Disconnect** button.
 

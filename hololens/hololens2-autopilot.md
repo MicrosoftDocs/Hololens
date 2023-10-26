@@ -191,7 +191,7 @@ You can retrieve the hardware hash from the device. The device records its hardw
    - **Automatically configure keyboard**: To make sure that the keyboard matches the selected language, select **Yes**.
    - **Apply device name template**: To automatically set the device name during OOBE, select **Yes** and then enter the template phrase and placeholders in **Enter a name** For example, enter a prefix and `%RAND:4%`&mdash;a placeholder for a four-digit random number.
      > [!NOTE]  
-     > If you use a device name template, the OOBE process restarts the device one time after it applies the device name and before it joins the device to Microsoft Entra ID. This restart enables the new name to take effect.  
+     > If you use a device name template, the OOBE process restarts the device one time after it applies the device name and before it joins the device to Microsoft Entra. This restart enables the new name to take effect.  
 
    > [!div class="mx-imgBorder"]
    > ![Configure OOBE settings.](./images/hololens-ap-profile-oobe.png)
