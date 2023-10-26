@@ -25,12 +25,12 @@ For both personal and corporate deployment scenarios, a Mobile Device Management
 ## Microsoft Entra ID
 Microsoft Entra ID is a cloud-based directory service that provides identity and access management. Organizations that use Microsoft Office 365 or Intune are already using Microsoft Entra ID, which has three editions: Free, Premium P1, and Premium P2 (see [Microsoft Entra editions](https://azure.microsoft.com/documentation/articles/active-directory-editions)). All editions support Microsoft Entra device registration, but Premium P1 is required to enable MDM auto-enrollment which we will be using in this guide later.
 > [!Important]
-> It is essential to have a Microsoft Entra ID as HoloLens devices do not support on-premises AD join. If you don't already have a Microsoft Entra ID set up, follow the instructions to get started and [Create a new tenant in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> It is essential to have a Microsoft Entra tenant as HoloLens devices do not support on-premises AD join. If you don't already have a Microsoft Entra tenant set up, follow the instructions to get started and [Create a new tenant in Microsoft Entra](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## Identity Management
 In this guide, the [Identity](/hololens/hololens-identity) used will be Microsoft Entra accounts. There are several benefits to Microsoft Entra accounts, such as:
 
-- Employees use their Microsoft Entra account to register the device in Microsoft Entra ID and can automatically enroll it with the organization's MDM solution (Microsoft Entra ID+MDM – requires an [Microsoft Entra ID P1 or P2 subscription](/azure/active-directory/fundamentals/active-directory-get-started-premium)).
+- Employees use their Microsoft Entra account to register the device in Microsoft Entra and can automatically enroll it with the organization's MDM solution (Microsoft Entra ID+MDM – requires a [Microsoft Entra ID P1 or P2 subscription](/azure/active-directory/fundamentals/active-directory-get-started-premium)).
 - Microsoft Entra accounts have additional [authentication options](/hololens/hololens-identity) via [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris log-in, users can sign in from another device or use FIDO security keys.
 
 > [!WARNING] 

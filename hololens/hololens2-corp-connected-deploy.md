@@ -43,7 +43,7 @@ If your device isn't currently sitting in a factory settings state, now would be
 
     ![HoloLens 2 Settings screen.](./images/hololens2-settings-about.jpg)
 
-8. Verify that your device is successfully joined to Microsoft Entra ID. There are two ways;
+8. Verify that your device is successfully joined to Microsoft Entra. There are two ways;
 
     1.  The Settings app. From **Settings** select **Accounts** -> **Access work or school**. From this screen, you can verify you're successfully enrolled by seeing &quot;Connected to nameofAAD&#39;s Microsoft Entra ID. Connected by *yourusername@nameofAAD.onmicrosoft.com*. This verifies your device is joined to your organization&#39;s Microsoft Entra ID.
 

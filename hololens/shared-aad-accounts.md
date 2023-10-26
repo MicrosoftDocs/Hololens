@@ -44,7 +44,7 @@ Shared Microsoft Entra (formerly Azure Active Directory) accounts on HoloLens ar
 Shared Microsoft Entra accounts on HoloLens are implemented as regular Microsoft Entra user accounts that are configured for [Microsoft Entra certificate-based authentication (CBA)](/azure/active-directory/authentication/concept-certificate-based-authentication). 
 
 At a high level, configuring shared Microsoft Entra accounts includes the following steps:
-1. (Recommended) Configure your target devices to join Microsoft Entra ID and enroll into Intune using [Autopilot](/hololens/hololens2-autopilot).
+1. (Recommended) Configure your target devices to join Microsoft Entra and enroll into Intune using [Autopilot](/hololens/hololens2-autopilot).
 1. [Configure your Microsoft Entra tenant to enable Microsoft Entra CBA](#configure-your-microsoft-entra-tenant-to-enable-microsoft-entra-cba) for a select group of accounts.
 2. Configure Microsoft Intune to apply device configurations to a select group of devices that:
     1. [Deploy client certificates](#client-certificate-deployment-via-scep) used for Microsoft Entra CBA onto the devices via Intune's SCEP certificate profiles.
