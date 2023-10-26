@@ -15,7 +15,7 @@ appliesto:
 
 Certificate-based authentication is a common requirement for customers using HoloLens 2. You might require certificates to access Wi-Fi, to connect to VPN solutions, or for accessing internal resources in your organization.
 
-Because HoloLens 2 devices are typically joined to Microsoft Entra ID and managed by Intune or other MDM provider, you'll need to deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with your MDM solution. 
+Because HoloLens 2 devices are typically joined to Microsoft Entra and managed by Intune or other MDM provider, you'll need to deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with your MDM solution. 
 
 >[!NOTE]
 > If you do not have an MDM provider, you can still deploy certificates via a [provisioning package](hololens-provisioning.md#create-the-provisioning-package) in [Windows Configuration Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) or through [Certificate Manager](certificate-manager.md) by going to **Settings > Update & Security > Certificate Manager**.
