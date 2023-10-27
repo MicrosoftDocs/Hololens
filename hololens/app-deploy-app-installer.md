@@ -24,7 +24,7 @@ A device is considered “managed” if **any** of the following are true:
 
 - MDM [Enrolled](hololens-enroll-mdm.md)
 - Configured with [provisioning package](hololens-provisioning.md)
-- User [Identity](hololens-identity.md) is Azure AD
+- User [Identity](hololens-identity.md) is Microsoft Entra ID
 
 You are now able to install Apps without needing to enable Developer Mode or using Device Portal.  Download (over USB or through Microsoft Edge) the Appx Bundle to your device and navigate to the Appx Bundle in the File Explorer to be prompted to kick off the installation.  Alternatively, [initiate an install from a web page](/windows/msix/app-installer/installing-windows10-apps-web). Just like apps you install from the Microsoft Store or sideload using MDM’s LOB App deployment capability, apps need to be digitally signed with the [Sign Tool](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) and the [certificate used to sign must be trusted](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) by the HoloLens device before the app can be deployed.
 

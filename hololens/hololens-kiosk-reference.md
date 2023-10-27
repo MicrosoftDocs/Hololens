@@ -83,12 +83,12 @@ If you have your own app you'd like to include in your kiosk, then there's a met
 
 1. [Multiple app global assigned access profile](#multiple-app-global-assigned-access-profile)
 1. [Multiple app global assigned access profile excluding device owners](#multiple-app-global-assigned-access-profile-excluding-device-owners)
-1. [Multiple app assigned access profile for a local account or Azure AD user account](#multiple-app-assigned-access-profile-for-a-local-account-or-azure-ad-user-account)
-1. [Multiple app assigned access profiles for two Azure AD users or more](#multiple-app-assigned-access-profiles-for-two-azure-ad-users-or-more)
-1. [Multiple app assigned access profile for one Azure AD group](#multiple-app-assigned-access-profile-for-one-azure-ad-group)
-1. [Multiple app assigned access profile for two Azure AD groups or more](#multiple-app-assigned-access-profile-for-two-azure-ad-groups-or-more)
-1. [Multiple app assigned access profile for one Azure AD account for one app](#multiple-app-assigned-access-profile-for-one-azure-ad-account-for-one-app)
-1. [Multiple app assigned access profile for one Azure AD account and one Azure AD group](#multiple-app-assigned-access-profile-for-one-azure-ad-account-and-one-azure-ad-group)
+1. [Multiple app assigned access profile for a local account or Microsoft Entra user account](#multiple-app-assigned-access-profile-for-a-local-account-or-azure-ad-user-account)
+1. [Multiple app assigned access profiles for two Microsoft Entra users or more](#multiple-app-assigned-access-profiles-for-two-azure-ad-users-or-more)
+1. [Multiple app assigned access profile for one Microsoft Entra group](#multiple-app-assigned-access-profile-for-one-azure-ad-group)
+1. [Multiple app assigned access profile for two Microsoft Entra groups or more](#multiple-app-assigned-access-profile-for-two-azure-ad-groups-or-more)
+1. [Multiple app assigned access profile for one Microsoft Entra account for one app](#multiple-app-assigned-access-profile-for-one-azure-ad-account-for-one-app)
+1. [Multiple app assigned access profile for one Microsoft Entra account and one Microsoft Entra group](#multiple-app-assigned-access-profile-for-one-azure-ad-account-and-one-azure-ad-group)
 1. [Multiple app assigned access profile for visitors](#multiple-app-assigned-access-profile-for-visitors)
 
 > [!NOTE]
@@ -108,42 +108,54 @@ Return to [Supported scenarios for kiosk mode based on identity type](hololens-k
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for a local account or Azure AD user account
+<a name='multiple-app-assigned-access-profile-for-a-local-account-or-azure-ad-user-account'></a>
+
+### Multiple app assigned access profile for a local account or Microsoft Entra user account
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-local-or-aad-user.xml" highlight="18-20,51,55":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profiles for two Azure AD users or more
+<a name='multiple-app-assigned-access-profiles-for-two-azure-ad-users-or-more'></a>
+
+### Multiple app assigned access profiles for two Microsoft Entra users or more
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-users-or-more.xml" highlight="22-24,52,53,80,88":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for one Azure AD group
+<a name='multiple-app-assigned-access-profile-for-one-azure-ad-group'></a>
+
+### Multiple app assigned access profile for one Microsoft Entra group
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-one-aad-group.xml" highlight="28":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for two Azure AD groups or more
+<a name='multiple-app-assigned-access-profile-for-two-azure-ad-groups-or-more'></a>
+
+### Multiple app assigned access profile for two Microsoft Entra groups or more
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-two-aad-groups-or-more.xml" highlight="22-24,52,53,83,94":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for one Azure AD account for one app
+<a name='multiple-app-assigned-access-profile-for-one-azure-ad-account-for-one-app'></a>
+
+### Multiple app assigned access profile for one Microsoft Entra account for one app
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-single-aad-auto.xml" highlight="7,13":::
 
 [Back to list](#kiosk-xml-code-samples) <br>
 Return to [Supported scenarios for kiosk mode based on identity type](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### Multiple app assigned access profile for one Azure AD account and one Azure AD group
+<a name='multiple-app-assigned-access-profile-for-one-azure-ad-account-and-one-azure-ad-group'></a>
+
+### Multiple app assigned access profile for one Microsoft Entra account and one Microsoft Entra group
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-for-aad-user-and-aad-group.xml" highlight="22-24,52,53,80,91":::
 
