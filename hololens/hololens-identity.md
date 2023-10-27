@@ -26,20 +26,20 @@ appliesto:
 
 Like other Windows devices, HoloLens always operates under a user context. There's always a user identity. HoloLens treats identity in almost the same manner as a Windows 10 device. Signing in during setup creates a user profile on HoloLens that stores apps and data. The same account also provides Single Sign-on for apps, such as Microsoft Edge or Dynamics 365 Remote Assist, by using the Windows Account Manager APIs.
 
-HoloLens supports several kinds of user identities. You can choose any one of these three account types, but we strongly recommend Azure AD as it’s best for managing devices. Only Azure AD accounts support multiple users.
+HoloLens supports several kinds of user identities. You can choose any one of these three account types, but we strongly recommend Microsoft Entra ID as it’s best for managing devices. Only Microsoft Entra accounts support multiple users.
 
 | Identity type | Accounts per device | Authentication options |
 | --- | --- | --- |
-| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure web credential provider</li><li>Azure Authenticator App</li><li>Biometric (Iris) &ndash; HoloLens 2 only<sup>2</sup> </li><li>FIDO2 Security key</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
+| [Microsoft Entra ID](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure web credential provider</li><li>Azure Authenticator App</li><li>Biometric (Iris) &ndash; HoloLens 2 only<sup>2</sup> </li><li>FIDO2 Security key</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
 | [Microsoft Account (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Biometric (Iris) &ndash; HoloLens 2 only</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
 | [Local account](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | 1 | Password |
 
-Cloud-connected accounts (Azure AD and MSA) offer more features because they can use Azure services.  
+Cloud-connected accounts (Microsoft Entra ID and MSA) offer more features because they can use Azure services.  
 > [!IMPORTANT]
-> 1 - Azure AD Premium is not required to sign into the device. However, it is required for other features of a low touch cloud-based deployment, like Auto-enrollment and Autopilot.
+> 1 - Microsoft Entra ID P1 or P2 is not required to sign into the device. However, it is required for other features of a low touch cloud-based deployment, like Auto-enrollment and Autopilot.
 
 > [!NOTE]
-> 2 - While a HoloLens 2 device can support up to 64 Azure AD accounts, only up to 10 of those accounts should enroll in Iris Authentication. This is aligned with other Biometric authentication options for Windows Hello for Business. While more than 10 accounts may be enrolled in Iris authentication this will increase the rate of false positives and is not recommended.
+> 2 - While a HoloLens 2 device can support up to 64 Microsoft Entra accounts, only up to 10 of those accounts should enroll in Iris Authentication. This is aligned with other Biometric authentication options for Windows Hello for Business. While more than 10 accounts may be enrolled in Iris authentication this will increase the rate of false positives and is not recommended.
 
 > [!IMPORTANT]
 > 3 - A local account can only be set up on a device [via a provisioning package during OOBE](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup), it cannot be added later in the settings app. If you'd like to use a local account on a device that's already set up, you'll need to [reflash or reset the device.](hololens-recovery.md)
@@ -48,7 +48,7 @@ Cloud-connected accounts (Azure AD and MSA) offer more features because they can
 
 If you apply policies for sign-in, the policy is always respected. If no policy for login is applied, these are the default behaviors for each account type:
 
-- **Azure AD**: asks for authentication by default, and configurable by **Settings** to no longer ask for authentication.
+- **Microsoft Entra ID**: asks for authentication by default, and configurable by **Settings** to no longer ask for authentication.
 - **Microsoft account**: lock behavior is different allowing automatic unlock, however sign in authentication is still required on reboot.
 - **Local account**: always asks for authentication in the form of a password, not configurable in **Settings**
 
@@ -69,7 +69,7 @@ HoloLens performs iris authentication   based on stored bit codes. Users have co
 
 #### How is Iris biometric authentication implemented on HoloLens 2?
 
-HoloLens 2 supports Iris authentication. Iris is based on Windows Hello technology and is supported for use by both Azure Active Directory and Microsoft Accounts. Iris is implemented the same way as other Windows Hello technologies, and achieves [biometrics security FAR of 1/100K](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello).
+HoloLens 2 supports Iris authentication. Iris is based on Windows Hello technology and is supported for use by both Microsoft Entra ID and Microsoft Accounts. Iris is implemented the same way as other Windows Hello technologies, and achieves [biometrics security FAR of 1/100K](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello).
 
 See the [biometric requirements and specifications for Windows Hello](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information. Learn more about [Windows Hello](/windows-hardware/design/device-experiences/windows-hello) and [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification).
 
@@ -91,7 +91,7 @@ Yes, you can manually remove it in Settings.
 
 ## Setting up users
 
-There are two ways to set up a new user on the HoloLens. The most common way is during the HoloLens out-of-box experience (OOBE). If using Azure Active Directory, [other users can log in](#setting-up-multi-user-support-azure-ad-only) after OOBE using their Azure AD credentials. HoloLens devices that are initially set up with an MSA or local account during OOBE will not support multiple users. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
+There are two ways to set up a new user on the HoloLens. The most common way is during the HoloLens out-of-box experience (OOBE). If using Microsoft Entra ID, [other users can log in](#setting-up-multi-user-support-azure-ad-only) after OOBE using their Microsoft Entra credentials. HoloLens devices that are initially set up with an MSA or local account during OOBE will not support multiple users. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
 
 If you use an enterprise or organizational account to sign in to HoloLens, HoloLens enrolls in the organization's IT infrastructure. This enrollment allows your IT Admin to configure Mobile Device Management (MDM) to send group policies to your HoloLens.
 
@@ -105,19 +105,21 @@ As in the Desktop version of Windows, you can link other web account credentials
 
 Linking accounts doesn't separate the user data created on the device, such as images or downloads.  
 
-### Setting up multi-user support (Azure AD only)
+<a name='setting-up-multi-user-support-azure-ad-only'></a>
 
-HoloLens supports multiple users from the same Azure AD tenant. To use this feature, you must use an account that belongs to your organization to set up the device. Subsequently, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.
+### Setting up multi-user support (Microsoft Entra-only)
+
+HoloLens supports multiple users from the same Microsoft Entra tenant. To use this feature, you must use an account that belongs to your organization to set up the device. Subsequently, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.
 
 >[!IMPORTANT]
-> The first user on the device is considered the device owner, except in the case of Azure AD Join, [learn more about device owners](security-adminless-os.md#device-owner).
+> The first user on the device is considered the device owner, except in the case of Microsoft Entra join, [learn more about device owners](security-adminless-os.md#device-owner).
 
 All users can use the apps installed on the device. However, each user has their own app data and preferences. Removing an app from the device removes it for all users.  
 
-Devices set up with Azure AD accounts won't allow signing in to the device with a Microsoft Account. All subsequent accounts used must be Azure AD accounts from the same tenant as the device. You may still [sign in using a Microsoft Account to apps](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) that support it (such as the Microsoft Store). To change from using Azure AD accounts to Microsoft Accounts for signing in to the device, you must [reflash the device](hololens-recovery.md#clean-reflash-the-device).
+Devices set up with Microsoft Entra accounts won't allow signing in to the device with a Microsoft Account. All subsequent accounts used must be Microsoft Entra accounts from the same tenant as the device. You may still [sign in using a Microsoft Account to apps](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) that support it (such as the Microsoft Store). To change from using Microsoft Entra accounts to Microsoft Accounts for signing in to the device, you must [reflash the device](hololens-recovery.md#clean-reflash-the-device).
 
 > [!NOTE]
-> **HoloLens (1st gen)** began supporting multiple Azure AD users in the [Windows 10 April 2018 Update](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) as part of [Windows Holographic for Business](hololens-upgrade-enterprise.md).
+> **HoloLens (1st gen)** began supporting multiple Microsoft Entra users in the [Windows 10 April 2018 Update](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) as part of [Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
 ### Multiple users are listed on Sign-in screen
 

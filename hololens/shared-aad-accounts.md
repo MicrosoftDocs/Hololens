@@ -65,14 +65,14 @@ Finally, you need access to Microsoft Intune in order to deploy device configura
 
 It's highly recommended to configure your devices for [Autopilot](/hololens/hololens2-autopilot). Autopilot simplifies the device setup experience for end users.
 
-## Configure your Microsoft Entra Tenant to enable Microsoft Entra CBA
+## Configure your Microsoft Entra tenant to enable Microsoft Entra CBA
 
 Your Microsoft Entra tenant must be configured to enable Microsoft Entra CBA for a select group of users.  
 
 1.	Create a Microsoft Entra group that contains the shared Microsoft Entra accounts. As an example, we use the name "__SharedAccounts__" for this group.
 2.	Create a Microsoft Entra group that contains the shared HoloLens devices. As an example, we use the name "__SharedDevices__" for this group. This group is assigned device-based Intune configuration profiles later.
 3.	Enable Microsoft Entra certificate-based authentication (CBA) for the __SharedAccounts__ group. For a complete step-by-step guide, refer to [How to configure Microsoft Entra certificate-based authentication](/azure/active-directory/authentication/how-to-certificate-based-authentication#prerequisites). The following high-level steps are needed to set this up:
-    1.	Add your (Certificate Authority) CA certificate to Microsoft Entra. Microsoft Entra allows client certificates issued by this CA to perform CBA.
+    1.	Add your (Certificate Authority) CA certificate to Microsoft Entra. Microsoft Entra ID allows client certificates issued by this CA to perform CBA.
     2.	Enable CBA for the "__SharedAccounts__" group.
     3.	Configure CBA such that the certificate issued by your CA uses MFA. This step is to ensure that users can access resources that require MFA without setting up another factor.
     4.	Enable certificate binding via UserPrincipalName.
@@ -418,4 +418,3 @@ function Register-SharedDevice {
 Register-SharedDevice $DeviceSerialNumber
 
 ```
-

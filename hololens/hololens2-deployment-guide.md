@@ -20,13 +20,13 @@ This guide is a supplement to the [Cloud Connected Deployment Guide](hololens2-c
 
 The following infrastructure should be in place per the [Cloud Connected Deployment Guide](hololens2-cloud-connected-overview.md) to deploy the HoloLens 2 externally.
 
-- Azure AD Join with MDM Auto Enrollment—MDM-managed (Intune)
-- Users sign in with their own corporate account (Azure AD)
+- Microsoft Entra join with MDM Auto Enrollment—MDM-managed (Intune)
+- Users sign in with their own corporate account (Microsoft Entra ID)
     - Single or multiple users per device are supported.
 
 ### Remote Assist licensing and requirements
 
-- Azure AD account (required for purchasing the subscription and assigning licenses)
+- Microsoft Entra account (required for purchasing the subscription and assigning licenses)
 - [Remote Assist subscription](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (or [Remote Assist Trial](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
 
 See [Learn more about Remote Assist](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist).
@@ -47,13 +47,13 @@ We recommend the following steps for external HoloLens 2 deployment:
 
 1. Use the [latest HoloLens OS release](https://aka.ms/hololens2download) as your baseline build.
 1. Assign user-based or device-based licenses by following the steps below:
-    1. [Create a group in AAD and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) for HoloLens/RA users.
+    1. [Create a group in Microsoft Entra ID and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) for HoloLens/RA users.
     1. [Assign device-based or user-based licenses](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) to this group.
     1. (Optional) Target groups for [Mobile device management (MDM)](hololens-enroll-mdm.md) policies.
 
-1. Join AAD devices to your tenant, [auto enroll](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm), and configure through [Autopilot](/hololens/hololens2-autopilot). For more information, see [device owner](/hololens/security-adminless-os#device-owner).
+1. Join Microsoft Entra devices to your tenant, [auto enroll](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm), and configure through [Autopilot](/hololens/hololens2-autopilot). For more information, see [device owner](/hololens/security-adminless-os#device-owner).
     1. The first user on the device will be the device owner.
-    1. If the device is AAD joined, the user that performed the join is made device owner.
+    1. If the device is Microsoft Entra joined, the user that performed the join is made device owner.
     
 1. [Tenant lock](/hololens/hololens-release-notes#tenantlockdown-csp-and-autopilot) the device so that it can only be joined by your tenant.
     1. See also [Tenant lock CSP](/windows/client-management/mdm/tenantlockdown-csp).
@@ -98,7 +98,7 @@ There are two options to consider.
 
 The first option is a multi-layer approach:
 
-1. Only assign licenses that the user requires. If you don't assign OneDrive, Outlook, SharePoint, Yammer, etc., the user will not have access to those resources. The only licenses the users will need is Remote Assist, Intune, and AAD licenses to begin.
+1. Only assign licenses that the user requires. If you don't assign OneDrive, Outlook, SharePoint, Yammer, etc., the user will not have access to those resources. The only licenses the users will need is Remote Assist, Intune, and Microsoft Entra ID licenses to begin.
 1. Block apps (such as email) that you don’t want clients to access (See [Apps are hidden or restricted](#apps are hidden or restricted)).
 1. Don't share usernames nor password with clients. To log into the HoloLens 2, an email and numerical PIN is required.
 
