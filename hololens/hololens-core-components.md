@@ -1,6 +1,6 @@
 ---
 title: Planning HoloLens 2 deployment in a commercial environment
-description: Learn about the core needs for deploying and managing HoloLens in enterprise environments, including infrastructure, Azure Active Directory, and Mobile Device Management.
+description: Learn about the core needs for deploying and managing HoloLens in enterprise environments, including infrastructure, Microsoft Entra ID, and Mobile Device Management.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -76,7 +76,7 @@ Learn about the tools and services you'll need for your HoloLens device deployme
 Microsoft tools and services used for deployment:
 
 - [What is the Microsoft Store for Business?](app-deploy-store-business.md)
-- [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
+- [What is Microsoft Entra ID?](/azure/active-directory/fundamentals/active-directory-whatis)
 - [What is Windows Autopilot?](/mem/autopilot/windows-autopilot)
 - [What is Microsoft Intune?](/mem/intune/fundamentals/what-is-intune)
 - [What is Microsoft Endpoint Manager?](/mem/endpoint-manager-overview)
@@ -92,7 +92,7 @@ How Microsoft tools and services used to deploy HoloLens 2 devices:
 
 ## Configure
 
-Learn about setting up a new network for your HoloLens 2 devices and adding them to an Azure AD tenant.
+Learn about setting up a new network for your HoloLens 2 devices and adding them to a Microsoft Entra tenant.
 
 ### Identity
 

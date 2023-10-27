@@ -18,7 +18,7 @@ appliesto:
 This portion of the document will require the following people:
 
 1. Network Admin with permissions to make changes to the proxy/firewall
-2. Azure Active Directory Admin
+2. Microsoft Entra Admin
 3. Mobile Device Manager Admin
 
 ## Infrastructure Requirements
@@ -27,7 +27,7 @@ HoloLens is, at its core, a Windows mobile device integrated with Azure.  It wor
 
 Critical cloud services include:
 
-- Azure active directory (Azure AD)
+- Microsoft Entra ID
 - Windows Update (WU)
 
 Commercial customers will need enterprise mobility management (EMM) or mobile device management (MDM) infrastructure to manage HoloLens devices at scale.  This guide uses [Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) as an example, though any provider with full support for Microsoft Policy can support HoloLens.  Ask your mobile device management provider if they support HoloLens 2.
@@ -66,17 +66,19 @@ Make sure that [this list](hololens-offline.md) of endpoints are allowed on your
 
 Guides only require network access to download and use the app.
 
-## Azure Active Directory Guidance
+<a name='azure-active-directory-guidance'></a>
+
+## Microsoft Entra Guidance
 
 > [!NOTE]
 > This step is only necessary if your company plans on managing the HoloLens.
 
-1. Ensure that you have an Azure AD License.
+1. Ensure that you have a Microsoft Entra ID license.
 Please [HoloLens Licenses Requirements](hololens-licenses-requirements.md) for additional information.
 
-1. If you plan on using Auto Enrollment, you'll have to [Configure Azure AD enrollment.](/mem/intune/enrollment/windows-enrollment-methods)
+1. If you plan on using Auto Enrollment, you'll have to [Configure Microsoft Entra enrollment.](/mem/intune/enrollment/windows-enrollment-methods)
 
-1. Ensure that your company's users are in Azure Active Directory (Azure AD).
+1. Ensure that your company's users are in Microsoft Entra ID.
 See the following [instructions](/azure/active-directory/fundamentals/add-users-azure-active-directory) for adding users.
 
 1. We suggest that users who need similar licenses are added to the same group.
@@ -88,14 +90,14 @@ If you need to assign licenses, follow these [directions](/azure/active-director
 
 1. Only do this step if users are expected to enroll their HoloLens/Mobile device into you (There are three options)
 These steps ensure that your company's users (or a group of users) can add devices.
-    1. **Option 1:** Give all users permission to join devices to Azure AD.
-**Sign in to the Azure portal as an administrator** > **Azure Active Directory** > **Devices** > **Device Settings** >
-**Set Users may join devices to Azure AD to *All***
+    1. **Option 1:** Give all users permission to join devices to Microsoft Entra.
+**Sign in to the Azure portal as an administrator** > **Microsoft Entra** > **Devices** > **Device Settings** >
+**Set Users may join devices to Microsoft Entra to *All***
 
-    1. **Option 2:** Give selected users/groups permission to join devices to Azure AD
-**Sign in to the Azure portal as an administrator** > **Azure Active Directory** > **Devices** > **Device Settings** >
-**Set Users may join devices to Azure AD to *Selected***
-![Image that shows Configuration of Azure AD Joined Devices.](images/azure-ad-image.png)
+    1. **Option 2:** Give selected users/groups permission to join devices to Microsoft Entra 
+**Sign in to the Azure portal as an administrator** > **Microsoft Entra** > **Devices** > **Device Settings** >
+**Set Users may join devices to Microsoft Entra to *Selected***
+![Image that shows Configuration of Microsoft Entra joined Devices.](images/azure-ad-image.png)
 
     1. **Option 3:** You can block all users from joining their devices to the domain. This means that all devices will need to be manually enrolled.
 
@@ -174,7 +176,7 @@ You can find directions for upgrading to the commercial suite in the [holographi
 1. [Create a device profile for Kiosk mode](/intune/configuration/kiosk-settings#create-the-profile)
 
 > [!NOTE]
-> You can configure different users to have different Kiosk Mode experiences by using "Azure AD" as the "User logon type". However, this option is only available in Multi-App kiosk mode. Multi-App kiosk mode will work with only one app as well as multiple apps.
+> You can configure different users to have different Kiosk Mode experiences by using "Microsoft Entra ID" as the "User logon type". However, this option is only available in Multi-App kiosk mode. Multi-App kiosk mode will work with only one app as well as multiple apps.
 
 ![Image that shows Configuration of Kiosk Mode in Intune.](images/aad-kioskmode.png)
 

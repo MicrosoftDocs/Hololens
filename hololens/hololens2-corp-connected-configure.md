@@ -21,18 +21,18 @@ Azure, and Intune by that extension, uses users and groups to help assign config
 
 We can make a single user group specifically for assigning licenses.
 
-If you don't already have access to two Azure AD accounts in a user group that you can use, here are the quick start guides for:
+If you don't already have access to two Microsoft Entra accounts in a user group that you can use, here are the quick start guides for:
 
 - [How to create a user](/mem/intune/fundamentals/quickstart-create-user)
 - [How to create a group](/mem/intune/fundamentals/quickstart-create-group)
 - [Add users to a group](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) – Add created users to create group
-- [Configure Azure AD to allow a User Group to join devices](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) – Ensure new user group has permission to enroll devices to Azure AD
+- [Configure Microsoft Entra ID to allow a User Group to join devices](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) – Ensure new user group has permission to enroll devices to Microsoft Entra ID
 
 ## Auto Enrollment on HoloLens 2
 
-In order to have a smooth and seamless experience, setting up Azure Active Directory Join (AADJ) and Auto Enrollment to Intune for HoloLens 2 devices is the way to go. This allows users to input their organization log-in credentials during OOBE and automatically register with Azure AD and enroll the device into MDM.
+In order to have a smooth and seamless experience, setting up Microsoft Entra join (AADJ) and Auto Enrollment to Intune for HoloLens 2 devices is the way to go. This allows users to input their organization log-in credentials during OOBE and automatically register with Microsoft Entra ID and enroll the device into MDM.
 
-By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we can select services and navigate a few pages until we can select Get a Premium trial. You may notice there's Azure Active Directory Premium 1 and 2 - for Automatic Enrollment P1 is sufficient. We can select Intune and select the user scope for automatic enrollment and select the group that was previously created.
+By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), we can select services and navigate a few pages until we can select Get a Premium trial. You may notice there's Microsoft Entra ID P1 or P2 and 2 - for Automatic Enrollment P1 is sufficient. We can select Intune and select the user scope for automatic enrollment and select the group that was previously created.
 
 For full details and steps, read the guide on [how to enable auto enrollment for Intune](/mem/intune/enrollment/quickstart-setup-auto-enrollment).
 
@@ -127,7 +127,7 @@ In order to use Dynamics 365 Guides, you'll need to do some preparation. There a
 
 ### Users and application licenses
 
-For someone to use Guides, they'll need to use an Azure AD account, which we have set up in this guide previously.
+For someone to use Guides, they'll need to use a Microsoft Entra account, which we have set up in this guide previously.
 
 You'll also need to assign Dynamics 365 Guides license to the user you've created. You'll do this from the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home). Also assign the license to your primary Azure Account.
 
@@ -135,7 +135,7 @@ Follow [this short guide](/dynamics365/mixed-reality/guides/setup-step-one#assig
 
 ### Set up the Dataverse
 
-In order to [set up a production environment](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) you'll need to meet two prerequisites. You must have the [**System Administrator**](/power-platform/admin/database-security) role,  **and**  you must have a [**Power Apps license**](/power-platform/admin/signup-question-and-answer) (or a [**Dynamics 365 Guides license**](/dynamics365/mixed-reality/guides/setup-step-one) that includes a Power Apps license). If following this guide you created the Azure AD, then you meet the role requirements for System Administrator. We also have assigned a Guides License in the previous step.
+In order to [set up a production environment](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) you'll need to meet two prerequisites. You must have the [**System Administrator**](/power-platform/admin/database-security) role,  **and**  you must have a [**Power Apps license**](/power-platform/admin/signup-question-and-answer) (or a [**Dynamics 365 Guides license**](/dynamics365/mixed-reality/guides/setup-step-one) that includes a Power Apps license). If following this guide you created the Microsoft Entra ID, then you meet the role requirements for System Administrator. We also have assigned a Guides License in the previous step.
 
 Within this guide to [create a Microsoft Dataverse environment](/dynamics365/mixed-reality/guides/setup-step-two):
 

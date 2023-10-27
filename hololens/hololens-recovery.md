@@ -176,7 +176,7 @@ If the IT environment prevents the use of the Windows Store app or limits access
 
 Follow these steps to enable the deployment path:
 
-1. Go to the [Microsoft Store for Business](https://businessstore.microsoft.com) and sign in using an Azure Active Directory identity.
+1. Go to the [Microsoft Store for Business](https://businessstore.microsoft.com) and sign in using a Microsoft Entra identity.
 
 1. Go to **Manage – Settings**. Turn on **Show offline apps** under **Shopping experience**.
 
