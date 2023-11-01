@@ -19,7 +19,7 @@ Businesses often invest in many shared HoloLens devices. How you use HoloLens is
 
 - A fleet of HoloLens 2 devices is set up via Windows Autopilot for HoloLens 2, with a consistent portfolio of company applications on each device. You've set up a few different Kiosk profiles, targeting different Microsoft Entra groups. Each user logs into the HoloLens using FIDO2 keys and signing into their own Microsoft Entra account, and is presented with a tailored experience.
 - An independent software vendor (ISV) rents HoloLens 2 Devices with Dynamics 365 Remote Assist and their line of business (LOB) application to a customer's company. These devices are configured for Kiosks that include only their LOB app and Remote Assist, and are shared across multiple end users. WDAC is used to keep the Settings app and Microsoft Edge from launching. Included with the rental is a USB-C battery pack to keep the devices at full charge over multiple shifts.
-- An end user at an enterprise attempts to make adjustments to Bluetooth on the device so they can connect a new device, but the Page Settings Visibility policy is enabled to limit the Devices page from being viewed. They are still allowed access to other pages as needed, such as Wi-Fi so they can use Remote Assist in multiple locations with that same HoloLens.
+- An end user at an enterprise attempts to make adjustments to Bluetooth on the device so they can connect a new device, but the Page Settings Visibility policy is enabled to limit the Devices page from being viewed. They're still allowed access to other pages as needed, such as Wi-Fi so they can use Remote Assist in multiple locations with that same HoloLens.
 
 ## Best practices
 
@@ -39,24 +39,24 @@ If you're planning on having multiple accounts on a device, then you'll have Mic
 
 ### [Device Management](hololens-csp-policy-overview.md)
 
-If devices are being shared between users, then you may want to use device restrictions. By using device management, you can set some policies to either better enable your users to use the device, manage updates, or limit what the device can do. It is recommended you review our [common device ](hololens-common-device-restrictions.md)restrictions and see if these recommendations seem to fit with your organization. Once you know what policies you want to use, you can apply them through [Microsoft's Endpoint Manager (MDM)](hololens-mdm-configure.md) or provisioning packages.
+If devices are being shared between users, then you may want to use device restrictions. By using device management, you can set some policies to either better enable your users to use the device, manage updates, or limit what the device can do. It's recommended you review our [common device ](hololens-common-device-restrictions.md)restrictions and see if these recommendations seem to fit with your organization. Once you know what policies you want to use, you can apply them through [Microsoft's Endpoint Manager (MDM)](hololens-mdm-configure.md) or provisioning packages.
 
 ### Advanced device management - [Kiosk](hololens-kiosk.md) and [WDAC](windows-defender-application-control-wdac.md)
 
 In some cases, you may want to limit what applications can be accessed by the end users. You could be limiting what apps users are presented with on the start menu using [Kiosk mode](hololens-kiosk.md). Kiosk can be configured to present different start menus based on user, Microsoft Entra groups, or special user types; such visitor or excluding device owners. You can choose multiple apps, or just a single app. A multi app kiosk doesn't stop one app from launching another, so if the store or another app is available users can still launch another app.
 
-You may also want to completely stop the launching of apps or services using [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to restrict apps. WDAC is different that Kiosk, because it doesn't change the UI of HoloLens but instead does not allow a blocked app to launch.
+You may also want to completely stop the launching of apps or services using [Windows Defender Application Control (WDAC)](windows-defender-application-control-wdac.md) to restrict apps. WDAC is different that Kiosk, because it doesn't change the UI of HoloLens but instead doesn't allow a blocked app to launch.
 
-[Page Settings Visibility](settings-uri-list.md) is another way to add restrictions to a device. In the event you need to grant users access to some pages in the Settings app, but not all you can use Page Settings Visibility to limit access. This is useful, for example, if your users need to change the Wi-Fi, but you don't want them to access the Accounts page.
+[Page Settings Visibility](settings-uri-list.md) is another way to add restrictions to a device. In the event you need to grant users access to some pages in the Settings app, but not all you can use Page Settings Visibility to limit access. This policy is useful, for example, if your users need to change the Wi-Fi, but you don't want them to access the Accounts page.
 
 ### Physical Management
 
 When sharing the device between multiple users, there are some physical considerations.
 
 - Ensure devices are charging between shifts.
-- If a device is required for a shift, and needs to last multiple shifts consider using an external battery at the start of a shift while the device still has significant charge per the [managing heat directions](hololens2-charging.md#managing-heat).
-- When storing devices keep them plugged in and connected to a network. This is the best way to ensure OS and app updates.
-- Consider how you plan to [clean the device](hololens2-maintenance.md) between users.  If you plan to use Iris authentication, it is highly recommended that the visor is cleaned between each user.
+- If a device needs to last multiple shifts, consider using an external battery at the start of a shift while the device still has significant charge per the [managing heat directions](hololens2-charging.md#managing-heat).
+- When you're storing devices, keep them plugged in and connected to a network. This is the best way to ensure OS and apps stay up to date.
+- Consider how you plan to [clean the device](hololens2-maintenance.md) between users.  If you plan to use Iris authentication, it's highly recommended that the visor is cleaned between each user.
 - For a device with a single shared user if using a shared PIN/password for a single user, don't put the PIN/password on the side of the device.
 - For multiple devices with a single shared user, use various PINs/passwords.
 - Label your devices so users can find ones they already have used. Signing back into a previously used device to launch an app can take a little as 30 seconds with Iris, PIN, or FIDO2 security keys. Setting up a new device, either OOBE or adding a new user, and then launching an app can take as much as 5 minutes.
@@ -80,7 +80,7 @@ To use HoloLens, each user follows these steps:
    - Select the user tile from the **Start menu** or choose "sign out" from the **Power menu** to sign out the current user.
 
 1. Use your Microsoft Entra account credentials to sign in to the device.  
-   - If it's the first time you have used the device, you are asked to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
+   - If it's the first time you have used the device, you're asked to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
    - If you previously used the device:
            - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes-2004.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
       - Previous builds need manual calibration to adjust to your eyes.
@@ -96,7 +96,7 @@ To use HoloLens, each user follows these steps:
 
 #### Remove users on a device
 
--  Organizations with scaled deployments of HoloLens 2 devices might encounter the 63-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
+-  Organizations with scaled deployments of HoloLens 2 devices might encounter the 63-user limit per device that prevents adding users. To address this situation, we added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
 
 - When a user has been inactive on the device past a number of days, configurable via **ProfileInactivityThreshold.**
 - When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
