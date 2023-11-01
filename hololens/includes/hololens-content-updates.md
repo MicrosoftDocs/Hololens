@@ -2,13 +2,23 @@
 
 
 
+## Week of September 11, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/12/2023 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
+| 9/12/2023 | [Where to buy HoloLens 2](/hololens/hololens2-purchase) | modified |
+| 9/12/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+
+
 ## Week of September 04, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 9/6/2023 | [Microsoft Store & Intune](/hololens/app-deploy-store-business) | modified |
-| 9/8/2023 | [Shared Azure AD accounts in HoloLens](/hololens/shared-aad-accounts) | added |
+| 9/8/2023 | [Shared Microsoft Entra accounts in HoloLens](/hololens/shared-aad-accounts) | added |
 
 
 ## Week of August 28, 2023
@@ -39,13 +49,3 @@
 |------|------------|--------|
 | 8/14/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
 | 8/18/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-
-
-## Week of August 07, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/8/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
-| 8/10/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 8/10/2023 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |

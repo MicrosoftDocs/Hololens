@@ -29,7 +29,7 @@ You can manage multiple Microsoft HoloLens devices simultaneously using solution
 Depending on what stage you are in your deployment we have the following recommendations:
 
 - For multi-user shared devices being deployed in production it is suggested you use [Autopilot](hololens2-autopilot.md).
-- For multi-user shared devices that are being initially part of a pilot program, [Azure AD Join during OOBE](hololens-enroll-mdm.md#auto-enrollment-in-mdm) should be sufficient.
+- For multi-user shared devices that are being initially part of a pilot program, [Microsoft Entra join during OOBE](hololens-enroll-mdm.md#auto-enrollment-in-mdm) should be sufficient.
 - For a proof of concept joining a device via the Settings menu may suit your needs if you don't need multiple users per device.
 
 ## Different ways to enroll
@@ -41,15 +41,15 @@ Depending on the type of [identity](hololens-identity.md) chosen either during O
 
 ### For Multi-User Shared Devices
 
-- If Identity is Azure AD and device has been pre-registered with Intune MDM server with specific configuration profile assigned to it, then Azure AD-Join and [automatic MDM enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) will occur during OOBE.
+- If Identity is Microsoft Entra ID and device has been pre-registered with Intune MDM server with specific configuration profile assigned to it, then Microsoft Entra join and [automatic MDM enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) will occur during OOBE.
   - Also called [Autopilot flow](hololens2-autopilot.md) Available in [19041.1103+ builds](hololens-release-notes-2004.md#windows-holographic-version-2004).
-- If Identity is Azure AD, the during OOBE device can enroll.
-  - For Azure AD, [automatic MDM enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) only occurs if Azure AD has been configured with enrollment URLs.
+- If Identity is Microsoft Entra ID, the during OOBE device can enroll.
+  - For Microsoft Entra ID, [automatic MDM enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) only occurs if Microsoft Entra ID has been configured with enrollment URLs.
 
 ### For Single User Devices
 
-- If Identity is Azure AD, then either during OOBE or **Settings App** -> **Access Work or School** -> **Connect** button.
-  - For Azure AD, [automatic MDM enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) only occurs if Azure AD has been configured with enrollment URLs.
+- If Identity is Microsoft Entra ID, then either during OOBE or **Settings App** -> **Access Work or School** -> **Connect** button.
+  - For Microsoft Entra ID, [automatic MDM enrollment](hololens-enroll-mdm.md#auto-enrollment-in-mdm) only occurs if Microsoft Entra ID has been configured with enrollment URLs.
 - If Identity is MSA, then using **Settings App** -> **Access Work or School** -> **Connect** button.
   - Also called Add Work Account (AWA) flow.
 - If Identity is Local User, then using **Settings App** -> **Access Work or School** -> **Enroll only in device management** link.
@@ -59,17 +59,17 @@ Once the device is enrolled with your MDM server, the Settings app will now refl
 
 ## Auto-enrollment in MDM
 
-If your organization has an [Azure Premium subscription](https://azure.microsoft.com/overview/), is using Azure Active Directory (Azure AD) and an MDM solution that accepts an Azure AD token for authentication (currently, only supported in Microsoft Intune and AirWatch), your IT admin can configure Azure AD to automatically allow MDM enrollment after the user signs in with their Azure AD account. [Learn how to configure Azure AD enrollment](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) and [Azure active directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for detailed background information.
+If your organization has an [Azure Premium subscription](https://azure.microsoft.com/overview/), is using Microsoft Entra ID and an MDM solution that accepts a Microsoft Entra token for authentication (currently, only supported in Microsoft Intune and AirWatch), your IT admin can configure Microsoft Entra ID to automatically allow MDM enrollment after the user signs in with their Microsoft Entra account. [Learn how to configure Microsoft Entra enrollment](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) and [Microsoft Entra integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for detailed background information.
 
-When auto-enrollment is enabled, no extra manual enrollment is needed. When the user signs in with an Azure AD account, the device is enrolled in MDM after completing the first-run experience.
+When auto-enrollment is enabled, no extra manual enrollment is needed. When the user signs in with a Microsoft Entra account, the device is enrolled in MDM after completing the first-run experience.
 
-When a device is Azure AD Joined it may affect who considered the [device owner](security-adminless-os.md#device-owner).
+When a device is Microsoft Entra joined it may affect who considered the [device owner](security-adminless-os.md#device-owner).
 
 ## Unenroll HoloLens from Intune
 
 Depending on the enrollment method, unenrolling your device may not be available.
 
-If your device was enrolled with an Azure AD account or Autopilot, it can’t be unenrolled from Intune. If you wish to unjoin HoloLens from Azure AD or rejoin it to a different to Azure AD tenant, you must [reset/reflash](hololens-recovery.md#restart-the-device) the device.
+If your device was enrolled with a Microsoft Entra account or Autopilot, it can’t be unenrolled from Intune. If you wish to unjoin HoloLens from Microsoft Entra or rejoin it to a different to Microsoft Entra tenant, you must [reset/reflash](hololens-recovery.md#restart-the-device) the device.
 
 If your device was enrolled from an MSA account that added a work account or from a Local account that enrolled only in device management, then you may unenroll the device. Open the Start menu and then select **Settings App** -> **Access Work or School** -> *YourAccount* -> **Disconnect** button.
 
@@ -79,7 +79,9 @@ If your device was enrolled from an MSA account that added a work account or fro
 
 Once user has signed-in, ensure internet connection by browsing to any internet facing website on device.
 
-### Ensure that Azure Active Directory (Azure AD) join is not disabled in your Azure AD tenant
+<a name='ensure-that-azure-active-directory-azure-ad-join-is-not-disabled-in-your-azure-ad-tenant'></a>
+
+### Ensure that Microsoft Entra join is not disabled in your Microsoft Entra tenant
 
 Refer to [Configure your device settings](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) for information about the available options in Azure portal.
 

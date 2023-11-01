@@ -204,7 +204,7 @@ HoloLens 2 includes features that make it easier for organizations to manage and
 
 | I want to... | Solution | Description |  
 |---------| ------------|------------|
-Manage how my end users sign in | [**Identity**](hololens-identity.md) | HoloLens 2 supports several kinds of user identities - Azure Active Directory (AAD), Microsoft Account (MSA), and local accounts.  |
+Manage how my end users sign in | [**Identity**](hololens-identity.md) | HoloLens 2 supports several kinds of user identities - Microsoft Entra ID, Microsoft Account (MSA), and local accounts.  |
 | Encrypt user data | [**Data security**](security-encryption-data-protection.md) | BitLocker data encryption is enabled on HoloLens 2 to provide the same level of security protection as any other Windows device. | 
 Manage HoloLens devices in my organization | [**Mobile Device Management**](hololens-mdm-configure.md) | Manage settings, select apps to install and set security configurations tailored to your organization's need on multiple HoloLens 2 devices from a central location. | 
 |Minimize setup time for new users and devices | [**Autopilot**](hololens2-autopilot.md) | Configure the out-of-box experience (OOBE) in Microsoft Endpoint Manager and enable end users to prepare devices for business use with little to no interaction. |  
@@ -224,5 +224,3 @@ Learn about [Licensing Requirements](hololens-licenses-requirements.md) for the 
 
 > [!div class="nextstepaction"]
 >[Planning HoloLens 2 deployment](hololens-requirements.md) 
-
-
