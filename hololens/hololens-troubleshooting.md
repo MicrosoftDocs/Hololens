@@ -25,7 +25,7 @@ This article describes how to resolve several common HoloLens issues.
 
 - [**Fixed** - HoloLens user can’t launch Microsoft Edge](#fixed---hololens-user-cant-launch-microsoft-edge)
 - [**Fixed** - Every time the power goes to 18 percent, the device suddenly shuts down automatically](#fixed---every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
-- [**Fixed** - OneDrive UWP app doesn't work for Azure AD users](#fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users)
+- [**Fixed** - OneDrive UWP app doesn't work for Microsoft Entra users](#fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [**Fixed** - Remote Assist video freezes after 20 minutes](#fixed---remote-assist-video-freezes-after-20-minutes)
 - [**Fixed** - Downloading locked files doesn't show error](#fixed---downloading-locked-files-doesnt-error)
 - [**Fixed** - Device Portal file upload/download times out](#fixed---device-portal-file-uploaddownload-times-out)
@@ -101,14 +101,16 @@ A known issue is that when the device reaches 18% battery, it will shut down une
 
 [Back to list](#list)
 
-## **Fixed** - OneDrive UWP app doesn't work for Azure AD users
+<a name='fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users'></a>
+
+## **Fixed** - OneDrive UWP app doesn't work for Microsoft Entra users
 
 > [!NOTE]
 > This issue is resolved in all apps that are version 19.xx and higher. If you still experience the same sign in issue while using app version 19.xx or later, please [send Feedback](hololens-feedback.md) then [contact support](https://aka.ms/hololenssupport) and share the Feedback item URL.
 > Follow these [instructions to update your OneDrive app.](holographic-store-apps.md#update-apps) You can check which version of OneDrive you have by using the Microsoft Store app, then select the "See more" button represented by the **...** then select **Downloads and updates**.
 > 
 
-If you use OneDrive For Business using your Azure AD account, you may have encountered an error when signing into your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage.
+If you use OneDrive For Business using your Microsoft Entra account, you may have encountered an error when signing into your inbox OneDrive app. Not being able to sign into the OneDrive app doesn’t affect automatic uploads of images and videos captured by the Camera app. Your files can still be saved and accessed from the OneDrive for Business cloud storage.
 
 ### Workarounds
 
@@ -267,9 +269,9 @@ Users who didn't try to use “Feature updates for Windows 10 and later” to ma
 
 ### How to check if devices are subject to Intune feature update management, and how to opt out
 
-You'll need your Azure AD tenant ID. Here's [how to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
+You'll need your Microsoft Entra tenant ID. Here's [how to find your Microsoft Entra tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
 
-1. Use Get azureADDevice beta Graph API to check against the Azure AD device to determine if it's enrolled to update management.
+1. Use Get azureADDevice beta Graph API to check against the Microsoft Entra device to determine if it's enrolled to update management.
 
 
 ```yaml
@@ -612,7 +614,3 @@ If you're having trouble using a Bluetooth device, make sure that it's a support
 You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
 
 [Back to list](#list)
-
-
-
-

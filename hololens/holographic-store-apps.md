@@ -52,7 +52,7 @@ Open the Microsoft Store from the **Start** menu. Then browse for apps and games
 | PowerPoint mobile | [https://office.live.com/start/PowerPoint.aspx](https://office.live.com/start/PowerPoint.aspx) |
 
 > [!NOTE]
-> The OneDrive app is not currently supported for Azure AD accounts on HoloLens. We recommend downloading the Microsoft OneDrive PWA app. [Follow these steps to download the app.]
+> The OneDrive app is not currently supported for Microsoft Entra accounts on HoloLens. We recommend downloading the Microsoft OneDrive PWA app. [Follow these steps to download the app.]
 
 ## Install apps
 
@@ -212,11 +212,3 @@ On the **Start** menu, select **Settings > Apps.** Find the app from the list, s
 
 
 If you are unable to uninstall an app, please file [feedback](/hololens/hololens-feedback) using the Feedback Hub.
-
-
-
-
-
-
-
-

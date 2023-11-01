@@ -26,8 +26,8 @@ The following infrastructure should be in place in order to deploy the HoloLens 
 This is a setup similar to [Scenario A: Deploy to cloud connect devices](/hololens/common-scenarios#scenario-a), which is a good option for many Proof of Concept deployments, which will include:
 
 - Wi-Fi networks are typically fully open to the Internet and Cloud services
-- Azure AD Join with MDM Auto Enrollment—MDM-managed (Intune)
-- Users sign in with their own corporate account (Azure AD)
+- Microsoft Entra join with MDM Auto Enrollment—MDM-managed (Intune)
+- Users sign in with their own corporate account (Microsoft Entra ID)
     - Single or multiple users per device are supported.
 
 :::image type="content" alt-text="Cloud connected scenario." source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
@@ -41,7 +41,7 @@ Remote Assist allows for collaborative maintenance and repair, remote inspection
 
 ### Remote Assist Licensing and Requirements
 
-- Azure AD account (required for purchasing the subscription and assigning licenses)
+- Microsoft Entra account (required for purchasing the subscription and assigning licenses)
 - [Remote Assist subscription](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (or [Remote Assist Trial](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
 #### Dynamics 365 Remote Assist user
@@ -62,8 +62,8 @@ Prepare:
 
 > [!div class="checklist"]
 > - [Learn about the infrastructure essentials for HoloLens 2 devices.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [Learn more about Azure AD and set up one if you don&#39;t have it.](hololens2-cloud-connected-prepare.md#azure-active-directory)
-> - [Learn about Identity management and how to best set up Azure AD accounts.](hololens2-cloud-connected-prepare.md#identity-management)
+> - [Learn more about Microsoft Entra ID and set up one if you don&#39;t have it.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [Learn about Identity management and how to best set up Microsoft Entra accounts.](hololens2-cloud-connected-prepare.md#identity-management)
 > - [Learn more about MDM, and set up with Intune if you don&#39;t already have one ready.](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [Learn about the networking requirements of Remote Assist.](hololens2-cloud-connected-prepare.md#network)
 > - [Optionally: VPN to connect to organizational resources](hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
@@ -72,7 +72,7 @@ Configure:
 
 > [!div class="checklist"]
 > - [How to create Users and Groups.](hololens2-cloud-connected-configure.md#azure-users-and-groups)
-> - [How to set up Auto-enrollment within Azure AD.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
+> - [How to set up Auto-enrollment within Microsoft Entra ID.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
 > - [How to assign your Application licenses.](hololens2-cloud-connected-configure.md#application-licenses)
 
 Deploy:
@@ -92,4 +92,3 @@ Maintain:
 
 > [!div class="nextstepaction"]
 > [Cloud connected deployment - Prepare](hololens2-cloud-connected-prepare.md)
-

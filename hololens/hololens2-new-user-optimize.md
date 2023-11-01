@@ -17,7 +17,7 @@ appliesto:
 HoloLens 2 can support a wide range of use cases and opportunities for customers. We know that time is money, and customers want to get to work as quickly as possible with their HoloLens devices.  To that end, we have created this set of best practices to guide customers towards a login experience based on their requirements that takes one minute or less.  This guidance assumes that the initial OOBE and AAD Domain Join / Autopilot process have already been completed.
 
 > [!NOTE]
-> In this section, we’re talking about scenarios in which additional users can use the device, so all these scenarios use Azure AD identities.
+> In this section, we’re talking about scenarios in which additional users can use the device, so all these scenarios use Microsoft Entra identities.
 
 > [!TIP]
 > If you need to set up more than five additional users, see [Deploying HL2](/hololens-core-components) for best practices on HoloLens deployments for the enterprise.

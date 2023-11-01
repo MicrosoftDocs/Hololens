@@ -15,35 +15,37 @@ appliesto:
 
 # Prepare - Corporate Connected Guide
 ## Infrastructure Essentials
-For both personal and corporate deployment scenarios, a Mobile Device Management (MDM) system is the essential infrastructure required to deploy and manage Windows 10 devices, especially the HoloLens 2. An [Azure AD Premium subscription](/azure/active-directory/fundamentals/active-directory-get-started-premium) is recommended as an identity provider and **required** to support certain capabilities.
+For both personal and corporate deployment scenarios, a Mobile Device Management (MDM) system is the essential infrastructure required to deploy and manage Windows 10 devices, especially the HoloLens 2. An [Microsoft Entra ID P1 or P2 subscription](/azure/active-directory/fundamentals/active-directory-get-started-premium) is recommended as an identity provider and **required** to support certain capabilities.
 
 > [!NOTE]
 > Although the HoloLens 2 is deployed and managed like a mobile device, it is generally used as a shared device between many users.
 
-## Azure Active Directory
-Azure AD is a cloud-based directory service that provides identity and access management. Organizations that use Microsoft Office 365 or Intune are already using Azure AD, which has three editions: Free, Premium P1, and Premium P2 (see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions)). All editions support Azure AD device registration, but Premium P1 is required to enable MDM auto-enrollment which we will be using in this guide later.
+<a name='azure-active-directory'></a>
+
+## Microsoft Entra ID
+Microsoft Entra ID is a cloud-based directory service that provides identity and access management. Organizations that use Microsoft Office 365 or Intune are already using Microsoft Entra ID, which has three editions: Free, Premium P1, and Premium P2 (see [Microsoft Entra editions](https://azure.microsoft.com/documentation/articles/active-directory-editions)). All editions support Microsoft Entra device registration, but Premium P1 is required to enable MDM auto-enrollment which we will be using in this guide later.
 > [!Important]
-> It is essential to have an Azure AD as HoloLens devices do not support on-premises AD join. If you don't already have an Azure AD set up, follow the instructions to get started and [Create a new tenant in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> It is essential to have a Microsoft Entra tenant as HoloLens devices do not support on-premises AD join. If you don't already have a Microsoft Entra tenant set up, follow the instructions to get started and [Create a new tenant in Microsoft Entra](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## Identity Management
-In this guide, the [Identity](/hololens/hololens-identity) used will be Azure AD accounts. There are several benefits to Azure AD accounts, such as:
+In this guide, the [Identity](/hololens/hololens-identity) used will be Microsoft Entra accounts. There are several benefits to Microsoft Entra accounts, such as:
 
-- Employees use their Azure AD account to register the device in Azure AD and can automatically enroll it with the organization's MDM solution (Azure AD+MDM – requires an [Azure AD Premium subscription](/azure/active-directory/fundamentals/active-directory-get-started-premium)).
-- Azure AD accounts have additional [authentication options](/hololens/hololens-identity) via [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris log-in, users can sign in from another device or use FIDO security keys.
+- Employees use their Microsoft Entra account to register the device in Microsoft Entra and can automatically enroll it with the organization's MDM solution (Microsoft Entra ID+MDM – requires a [Microsoft Entra ID P1 or P2 subscription](/azure/active-directory/fundamentals/active-directory-get-started-premium)).
+- Microsoft Entra accounts have additional [authentication options](/hololens/hololens-identity) via [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris log-in, users can sign in from another device or use FIDO security keys.
 
 > [!WARNING] 
 > Employees can use only one account to initialize a device so **it's imperative that your organization controls which account is enabled first**. The account chosen will determine who controls the device and influence your management capabilities.
 
 ## Mobile Device Management
-Microsoft Intune, part of Enterprise Mobility + Security, is a cloud-based MDM system that manages devices connected to your tenant. Like Office 365, Intune uses Azure AD for identity management, so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Intune also supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution. For the purposes of this guide, we'll be focusing on using Intune for enabling a deployment to your internal network with HoloLens 2.
+Microsoft Intune, part of Enterprise Mobility + Security, is a cloud-based MDM system that manages devices connected to your tenant. Like Office 365, Intune uses Microsoft Entra ID for identity management, so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Intune also supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution. For the purposes of this guide, we'll be focusing on using Intune for enabling a deployment to your internal network with HoloLens 2.
 > [!Important] 
 > It is essential to have Mobile Device Management. If you don't already have it set up, follow this guide and Get started with Intune.
 
 > [!Important]
-> In order to use Guides, an Azure AD account is required.
+> In order to use Guides, a Microsoft Entra account is required.
 
 > [!Note] 
-> Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Holographic include: AirWatch, MobileIron, and others. Most industry-leading MDM vendors already support integration with Azure AD. You can find the most current list of MDM vendors that support Azure AD in [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/azure-active-directory-apps).
+> Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Holographic include: AirWatch, MobileIron, and others. Most industry-leading MDM vendors already support integration with Microsoft Entra ID. You can find the most current list of MDM vendors that support Microsoft Entra ID in [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/azure-active-directory-apps).
 
 ## Network Access 
 Dynamics 365 Guides is a cloud-based application. If your network admin has an approve list, they may need to add IP addresses and/or endpoints that are required to connect to the Dynamics 365 servers. [Learn more about unblocking IP addresses and URLs](/power-platform/admin/online-requirements#ip-addresses-and-urls).
@@ -63,7 +65,7 @@ The following services are required for SCEP deployment, with the exception of t
 - [NDES Server role](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11))
 - [Microsoft Intune Connector](/mem/intune/protect/certificates-scep-configure#install-the-microsoft-intune-connector)
 
-You must also publish your NDES URL external to your corporate network using [Azure AD application proxy or Web Access Proxy](/azure/active-directory/app-proxy/what-is-application-proxy). You can also use another reverse proxy of your choice.
+You must also publish your NDES URL external to your corporate network using [Microsoft Entra application proxy or Web Access Proxy](/azure/active-directory/app-proxy/what-is-application-proxy). You can also use another reverse proxy of your choice.
 
 ![SCEP data flow.](./images/hololens2-scep-info-flow.png)
 
