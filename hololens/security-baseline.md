@@ -60,7 +60,7 @@ The following sections describe the recommended settings of each CSP as part of 
 | **MDM Enrollment** | | |
 | [Experience/AllowManualMDMUnenrollment](/windows/client-management/mdm/policy-csp-experience#experience-allowmanualmdmunenrollment) | 0 – Not allowed | Disallow the user to delete the workplace account using the workplace control panel. |
 | **Identity** | | |
-| [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays) | Number of days the cache to be validRecommended value: 7 days | Number of days the Azure AD group membership cache should be valid. |
+| [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays) | Number of days the cache to be validRecommended value: 7 days | Number of days the Microsoft Entra group membership cache should be valid. |
 | **Power** | | |
 |  [Power/DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin) | Idle time in number of secondsRecommended values: 60 secs | Allows you to specify the period of inactivity before Windows turns off the display. |
 | **Settings** | | |
@@ -156,7 +156,7 @@ The following sections describe the recommended settings of each CSP as part of 
 | **MDM Enrollment** | | |
 | [Experience/AllowManualMDMUnenrollment](/windows/client-management/mdm/policy-csp-experience#experience-allowmanualmdmunenrollment) | 0 – Not allowed | Disallow the user to delete the workplace account using the workplace control panel. |
 | **Identity** | | |
-| [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays) | Number of days the cache to be validRecommended value: 7 days | Number of days the Azure AD group membership cache should be valid. |
+| [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays) | Number of days the cache to be validRecommended value: 7 days | Number of days the Microsoft Entra group membership cache should be valid. |
 | **Power** | | |
 | [Power/DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin) | Idle time in number of secondsRecommended values: 60 secs | Allows you to specify the period of inactivity before Windows turns off the display. |
 | **Privacy** | | |

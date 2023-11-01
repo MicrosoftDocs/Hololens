@@ -1,6 +1,6 @@
 ---
 title: Deploying Remote Assist using a shared identity across multiple users
-description: This article contains high-level steps involved in deploying Remote Assist using shared Azure AD identity across multiple users. The guidance provided in this document focuses on provisioning Azure AD user accounts, assigning required licenses and HoloLens 2 device configuration for a shared device environment. For more detailed scenario-based deployment guidance, refer to [Common Deployment Scenarios](hololens-requirements.md).
+description: This article contains high-level steps involved in deploying Remote Assist using shared Microsoft Entra identity across multiple users. The guidance provided in this document focuses on provisioning Microsoft Entra user accounts, assigning required licenses and HoloLens 2 device configuration for a shared device environment. For more detailed scenario-based deployment guidance, refer to [Common Deployment Scenarios](hololens-requirements.md).
 ms.prod: hololens
 ms.date: 11/15/2021
 ms.localizationpriority:
@@ -13,22 +13,24 @@ appliesto:
 
 # Deploying Remote Assist using a shared identity across multiple users
 
-This article contains high-level steps involved in deploying Remote Assist using shared Azure AD identity across multiple users. The guidance provided in this document focuses on provisioning Azure AD user accounts, assigning required licenses and HoloLens 2 device configuration for a shared device environment. For more detailed scenario-based deployment guidance, refer to [Common Deployment Scenarios](hololens-requirements.md).
+This article contains high-level steps involved in deploying Remote Assist using shared Microsoft Entra identity across multiple users. The guidance provided in this document focuses on provisioning Microsoft Entra user accounts, assigning required licenses and HoloLens 2 device configuration for a shared device environment. For more detailed scenario-based deployment guidance, refer to [Common Deployment Scenarios](hololens-requirements.md).
 
 ## Deployment Tasks
 
-### 1. Azure AD Accounts
+<a name='1-azure-ad-accounts'></a>
 
-Create Azure AD security groups and shared Azure AD user accounts to be used to log in to HoloLens 2 devices.
+### 1. Microsoft Entra accounts
 
-1. Login to [Azure AD admin center](https://aad.portal.azure.com/) as Azure AD Global Administrator.
-1. Navigate to [New Group admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/AddGroupBlade) blade and create an Azure AD **Security** Group to manage the HoloLens 2 shared user accounts. See [Create a basic group and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) for step-by-step instructions.
-1. Navigate to [New user - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers) blade and create new user accounts to be shared by multiple people to log in to the HoloLens 2 device. One Azure AD user account per HoloLens 2 device is recommended. For step-by-step instructions, see [Add or delete users](/azure/active-directory/fundamentals/add-users-azure-active-directory).
-1. Navigate to [Groups - Azure Active Directory admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups), select the *Azure AD security group name* -> **Members** -> + **Add members** and add the above user accounts to the security group. For step-by-step instructions, see [Add or remove group members](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
+Create Microsoft Entra security groups and shared Microsoft Entra user accounts to be used to log in to HoloLens 2 devices.
+
+1. Login to [Microsoft Entra admin center](https://aad.portal.azure.com/) as Microsoft Entra Global Administrator.
+1. Navigate to [New Group admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/AddGroupBlade) blade and create a Microsoft Entra ID **Security** Group to manage the HoloLens 2 shared user accounts. See [Create a basic group and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) for step-by-step instructions.
+1. Navigate to [New user - Microsoft Entra admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers) blade and create new user accounts to be shared by multiple people to log in to the HoloLens 2 device. One Microsoft Entra user account per HoloLens 2 device is recommended. For step-by-step instructions, see [Add or delete users](/azure/active-directory/fundamentals/add-users-azure-active-directory).
+1. Navigate to [Groups - Microsoft Entra admin center](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups), select the *Microsoft Entra security group name* -> **Members** -> + **Add members** and add the above user accounts to the security group. For step-by-step instructions, see [Add or remove group members](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
 
 ### 2. License Assignments
 
-Assign required licenses to the Azure AD user accounts.
+Assign required licenses to the Microsoft Entra user accounts.
 
 1. You can assign licenses required to use Dynamics 365 Remote Assist on HoloLens 2 to a user or user group. To assign licenses to a user group, follow [Assign licenses to a group](/azure/active-directory/enterprise-users/licensing-groups-assign) step-by-step guide to assign the following licenses. To assign licenses to a user follow [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users) step-by-step guide to assign the following licenses.
     - Dynamics 365 Remote Assist
@@ -43,11 +45,11 @@ Assign required licenses to the Azure AD user accounts.
 1. To use advanced capabilities of Remote Assist, like accessing OneDrive files, scheduling one-time call, and integrating with Dynamics 365 Field Service you must assign another licenses to the HoloLens 2 user accounts. For more information, see [Requirements for Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-app-user).
 
 > [!NOTE]
-> For more information, see [Scenarios, limitations, and known issues using groups to manage licensing in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-group-advanced).
+> For more information, see [Scenarios, limitations, and known issues using groups to manage licensing in Microsoft Entra ID](/azure/active-directory/enterprise-users/licensing-group-advanced).
 
 ### 3. Device Configuration
 
-To share HoloLens 2 devices with multiple people using shared Azure AD user accounts, configure the following to secure user credentials and restrict apps to be used by the HoloLens 2 users. Follow [Set up your HoloLens 2](hololens2-start.md) to set up the HoloLens 2 devices for first time, using the shared Azure AD user accounts created in Azure AD Accounts section above. Use one Azure AD user account per HoloLens 2 device. During HoloLens 2 initial setup skip IRIS login configuration and configure Windows Hello PIN to log in into the device (see more details below).
+To share HoloLens 2 devices with multiple people using shared Microsoft Entra user accounts, configure the following to secure user credentials and restrict apps to be used by the HoloLens 2 users. Follow [Set up your HoloLens 2](hololens2-start.md) to set up the HoloLens 2 devices for first time, using the shared Microsoft Entra user accounts created in Microsoft Entra accounts section above. Use one Microsoft Entra user account per HoloLens 2 device. During HoloLens 2 initial setup skip IRIS login configuration and configure Windows Hello PIN to log in into the device (see more details below).
 
 #### Login PIN
 
@@ -79,7 +81,7 @@ WDAC allows you to configure HoloLens to block the launch of apps. It is differe
 
 ## Limitations
 
-Using shared Azure AD account has the following limitations (including but not limited to):
+Using shared Microsoft Entra account has the following limitations (including but not limited to):
 
 1. Identity – Users cannot use IRIS to sign in on the HoloLens 2 device and are unable to access their work account related content in Microsoft 365.
 1. Caller ID / Contacts – Accessing a user’s personal contacts list / most recently called contacts is not possible, and caller ID will show the shared account name rather than the user’s name.
@@ -88,7 +90,7 @@ Using shared Azure AD account has the following limitations (including but not l
 
 ## Issues
 
-Using shared Azure AD account poses the following issues to be addressed (including but not limited to):
+Using shared Microsoft Entra account poses the following issues to be addressed (including but not limited to):
 
 1. Lack of accountability – With a shared account, there is no way to prove who has used the device, and what was done with the device.
 1. Lack of auditing – Audit records will be incomplete, and in the event of an incident, it could be impossible to identify the user.
@@ -99,15 +101,15 @@ Using shared Azure AD account poses the following issues to be addressed (includ
 
 ## Considerations
 
-You must review and make changes to the following Azure AD settings (including but not limited to) when you want to use shared Azure AD user accounts. When enabling and disabling the following Azure AD settings, extreme care should be taken to make sure that changing theses settings does not cause any issues for existing and new user accounts.
+You must review and make changes to the following Microsoft Entra settings (including but not limited to) when you want to use shared Microsoft Entra user accounts. When enabling and disabling the following Microsoft Entra settings, extreme care should be taken to make sure that changing theses settings does not cause any issues for existing and new user accounts.
 
 1. Review Administrator Portal access setting in [Users | User Settings](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/UserSettings) blade.
 1. Review App Registrations setting in [Users | User Settings](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/UserSettings) blade.
 1. Review Linked account connections setting in [Users | User Settings](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/UserSettings) blade.
 1. Review User features setting in [Users | User features](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/FeatureSettingsBlade) blade.
 1. Review Self-service password reset setting in [Password reset | Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/PasswordResetMenuBlade/Properties) blade.
-1. Review Join devices to Azure AD setting in [Devices | Device settings](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/DeviceSettings/menuId/) blade.
+1. Review Join devices to Microsoft Entra setting in [Devices | Device settings](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/DeviceSettings/menuId/) blade.
 1. Review Enterprise State Roaming setting in [Devices | Enterprise State Roaming](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/RoamingSettings/menuId/) blade.
 
 > [!WARNING]
-> Do NOT share, shared account passwords with end users. End users should always use Azure AD account name and associated Windows Hello PIN or use auto login feature to login to HoloLens 2 devices in a shared environment.
+> Do NOT share, shared account passwords with end users. End users should always use Microsoft Entra account name and associated Windows Hello PIN or use auto login feature to login to HoloLens 2 devices in a shared environment.

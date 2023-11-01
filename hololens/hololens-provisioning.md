@@ -39,13 +39,13 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 
 - Configure the HoloLens first experience (OOBE)
 - Configure the Wi-Fi network
-- Enroll the device in Azure Active Directory, or create a local account
+- Enroll the device in Microsoft Entra ID, or create a local account
 - Add certificates
 - Enable Developer Mode
 - Configure kiosk mode by following our [detailed instructions](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens).
 
 > [!WARNING]
-> You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
+> You must run Windows Configuration Designer on Windows 10 to configure Microsoft Entra enrollment using any of the wizards.
 
 Provisioning packages can include management instructions and policies, custom network connections and policies, and more.
 
@@ -96,11 +96,11 @@ In this section, you can enter the details of the Wi-Fi wireless network that th
 
 #### 3. Add accounts
 
-<img alt="Join  Azure AD or create a local account" src="images/account-management-details.png" width="445" height="560" />
+<img alt="Join  Microsoft Entra ID or create a local account" src="images/account-management-details.png" width="445" height="560" />
 
-You can enroll the device in Azure Active Directory, or create a local account on the device. Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings).
+You can join the device to Microsoft Entra, or create a local account on the device. Before you use a Windows Configuration Designer wizard to configure bulk Microsoft Entra enrollment, [set up Microsoft Entra join in your organization](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings).
 
-The **maximum number of devices per user** setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you'll get using the wizard. Set an expiration date for the token (maximum is 30 days from the date you get the token). Select **Get bulk token**. In the **Let's get you signed in** window, enter an account that has permissions to join a device to Azure AD, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions.
+The **maximum number of devices per user** setting in your Microsoft Entra tenant determines how many times the bulk token that you get in the wizard can be used. To join the device to Microsoft Entra, select that option and enter a friendly name for the bulk token you'll get using the wizard. Set an expiration date for the token (maximum is 30 days from the date you get the token). Select **Get bulk token**. In the **Let's get you signed in** window, enter an account that has permissions to join a device to Microsoft Entra, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions.
 
 To create a local account, select that option and enter a user name and password.
 
