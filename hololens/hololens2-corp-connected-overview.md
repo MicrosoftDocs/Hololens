@@ -25,19 +25,19 @@ The following infrastructure should already be in place:
 - Wi-Fi
     - Internal corporate network with access to internal resources and limited access to the internet or Cloud services
     - Device-based certificate authentication.
-- Azure Active Directory (Azure AD) Join with MDM Auto Enrollment ([Azure AD P1 subscription](/azure/active-directory/fundamentals/active-directory-whatis) needed)
+- Microsoft Entra join with MDM Auto Enrollment ([Microsoft Entra ID P1 subscription](/azure/active-directory/fundamentals/active-directory-whatis) needed)
 - MDM (Intune) Managed
     - One or more applications are deployed via MDM.
 - Network 
     - Certificates (SCEP or PKCS)
     - Proxy configuration
-- Users sign in with their own corporate account (Azure AD)
+- Users sign in with their own corporate account (Microsoft Entra ID)
     - Single or multiple users per device is supported.
 - Varying levels of device lockdown configurations applied based on specific use cases, from Fully Open to Single App Kiosk.
 
 ## [Guides Licensing and Requirements](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 
-- Azure AD account
+- Microsoft Entra account
 - Dynamics 365 Guides applications PC and HoloLens
 - Dynamics 365 Guides subscription
     - Microsoft Dataverse (included)
@@ -53,8 +53,8 @@ The following infrastructure should already be in place:
 ### Prepare
 > [!div class="checklist"]
 >- [Learn about the infrastructure essentials for HoloLens 2 devices.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
->- [Learn more about Azure AD and set up one if you don't have it.](hololens2-corp-connected-prepare.md#azure-active-directory)
->- [Learn about Identity management and how to best set up Azure AD accounts.](hololens2-corp-connected-prepare.md#identity-management)
+>- [Learn more about Microsoft Entra ID and set up one if you don't have it.](hololens2-corp-connected-prepare.md#azure-active-directory)
+>- [Learn about Identity management and how to best set up Microsoft Entra accounts.](hololens2-corp-connected-prepare.md#identity-management)
 >- [Learn more about MDM and set up with Intune if you don't already have one ready.](hololens2-corp-connected-prepare.md#mobile-device-management)
 >- [Familiarize yourself with certificate-based Wi-Fi.](hololens2-corp-connected-prepare.md#certificates)
 >- [Familiarize yourself with Proxy.](hololens2-corp-connected-prepare.md#proxy)

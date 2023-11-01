@@ -1,6 +1,6 @@
 ---
 title: Share your HoloLens with multiple people
-description: You can configure HoloLens to be shared by multiple Azure Active Directory accounts, or by multiple users that use a single account.
+description: You can configure HoloLens to be shared by multiple Microsoft Entra accounts, or by multiple users that use a single account.
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
@@ -17,7 +17,7 @@ appliesto:
 
 Businesses often invest in many shared HoloLens devices. How you use HoloLens is flexible across the board, depending on your individual requirements. Here’s an example of some multi-user experiences:
 
-- A fleet of HoloLens 2 devices is set up via Windows Autopilot for HoloLens 2, with a consistent portfolio of company applications on each device. You've set up a few different Kiosk profiles, targeting different Azure AD groups. Each user logs into the HoloLens using FIDO2 keys and signing into their own Azure AD account, and is presented with a tailored experience.
+- A fleet of HoloLens 2 devices is set up via Windows Autopilot for HoloLens 2, with a consistent portfolio of company applications on each device. You've set up a few different Kiosk profiles, targeting different Microsoft Entra groups. Each user logs into the HoloLens using FIDO2 keys and signing into their own Microsoft Entra account, and is presented with a tailored experience.
 - An independent software vendor (ISV) rents HoloLens 2 Devices with D365 Remote Assist and their line of business (LOB) application to a customer's company. These devices are configured for Kiosks that include only their LOB app and Remote Assist, and are shared across multiple end users. WDAC is used to keep the Settings app and Microsoft Edge from launching. Included with the rental is a USB-C battery pack to keep the devices at full charge over multiple shifts.
 - An end user at an enterprise attempts to make adjustments to Bluetooth on the device so they can connect a new device, but the Page Settings Visibility policy is enabled to limit the Devices page from being viewed. They are still allowed access to other pages as needed, such as Wi-Fi so they can use Remote Assist in multiple locations with that same HoloLens.
 
@@ -32,7 +32,7 @@ When planning to share your devices, there are several considerations to optimiz
 
 ### [Identity and Authentication](hololens-identity.md)
 
-If you're planning on having multiple accounts on a device, then you'll have Azure AD accounts with all modes of authentication. These authentication methods are based on [Windows Hello](/windows-hardware/design/device-experiences/windows-hello), including Iris, PIN and FIDO2 keys.
+If you're planning on having multiple accounts on a device, then you'll have Microsoft Entra accounts with all modes of authentication. These authentication methods are based on [Windows Hello](/windows-hardware/design/device-experiences/windows-hello), including Iris, PIN and FIDO2 keys.
 
 - FIDO 2 Security keys are excellent if you have multiple devices, many users, or are constantly using new devices.
 - If you have 10 or fewer users, Iris is a fast solution to sign in users who have previously signed into the same device.
@@ -63,15 +63,15 @@ When sharing the device between multiple users, there are some physical consider
 
 ## Share with multiple people, each using their own account
 
-Individual Azure Active Directory (Azure AD) accounts are the preferred and most secure identity use case for HoloLens 2 users. When using their own Azure AD accounts, multiple users can each keep their own user settings and user data on the device. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.
+Individual Microsoft Entra accounts are the preferred and most secure identity use case for HoloLens 2 users. When using their own Microsoft Entra accounts, multiple users can each keep their own user settings and user data on the device. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.
 
 To make sure that multiple people can use their own accounts on your HoloLens, follow these steps to configure it:
 
-1. When you [set up the device](hololens2-start.md), select **My work or school owns it** and sign in by using an Azure AD account.
+1. When you [set up the device](hololens2-start.md), select **My work or school owns it** and sign in by using a Microsoft Entra account.
 1. After you finish setup, make sure that the account settings (Settings > Accounts) include **Other users**.
 
 > [!NOTE]
-> If your device was not set up with an Azure AD account, it needs to be either [reset or reflashed](hololens-recovery.md) and set up properly.
+> If your device was not set up with a Microsoft Entra account, it needs to be either [reset or reflashed](hololens-recovery.md) and set up properly.
 
 To use HoloLens, each user follows these steps:
 
@@ -79,7 +79,7 @@ To use HoloLens, each user follows these steps:
    - Press the power button once to go to standby, and then press the power button again to return to the lock screen
    - Select the user tile from the **Start menu** or choose sign out from the **Power menu** to sign out the current user.
 
-1. Use your Azure AD account credentials to sign in to the device.  
+1. Use your Microsoft Entra account credentials to sign in to the device.  
    - If it's the first time you have used the device, you are asked to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
    - If you previously used the device:
            - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes-2004.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
@@ -119,7 +119,7 @@ To learn more about these policies, visit [AccountManagement CSP](/windows/clien
 
 ## Share with multiple people, all using the same account
 
-Multiple users can also share a HoloLens device while using a single user account, or a shared Azure AD account. Although it is preferred for HoloLens users to log in to the device with their individual identities (Azure AD accounts), this is not an option in some organizations.
+Multiple users can also share a HoloLens device while using a single user account, or a shared Microsoft Entra account. Although it is preferred for HoloLens users to log in to the device with their individual identities (Microsoft Entra accounts), this is not an option in some organizations.
 
 There are two shared device methods available:
 
@@ -129,7 +129,7 @@ There are two shared device methods available:
 
 When a new user puts on the device for the first time while keeping the same account signed in, the device prompts the user to quickly calibrate and personalize the viewing experience. The device stores the calibration information to automatically optimize the quality and comfort of each user's viewing experience. Users won't need to calibrate the device again.
 
-For more details on how a shared Azure AD account can be used by multiple end users on one or more devices, see [Shared Azure AD accounts in HoloLens](/hololens/shared-aad-accounts).
+For more details on how a shared Azure AD account can be used by multiple end users on one or more devices, see [Shared Microsoft Entra accounts in HoloLens](/hololens/shared-aad-accounts).
 
 
 

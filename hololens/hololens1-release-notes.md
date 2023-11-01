@@ -47,7 +47,7 @@ For developers, this means that HoloLens (1st gen) apps will not support the Ope
 | Feature |  Details  |
 |---|----|
 | [Enable post-setup provisioning](hololens-provisioning.md) | You can now apply a runtime provisioning package at any time using **Settings**. |
-| Assigned access with Azure AD groups | You can now use Azure AD groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration. |
+| Assigned access with Microsoft Entra groups | You can now use Microsoft Entra groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration. |
 | PIN sign-in on profile switch from sign-in screen | PIN sign-in is now available for **Other User**. |
 | Sign in with Web Credential Provider using password | You can now select the Globe sign-in option to launch web sign-in with your password. From the sign-in screen, select **Sign-In options** and select the Globe option to launch web sign-in. Enter your user name if needed, then your password. <br>**Note:** You can choose to bypass any PIN/Smartcard options when prompted during web sign-in. |
 | Read device hardware info through MDM so devices can be tracked by serial number | IT administrators can see and track HoloLens by device serial number in their MDM console. Refer to your MDM documentation for feature availability and instructions. |
@@ -62,7 +62,7 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 - Previously, you could only verify that upgrade license for Commercial Suite had been applied to your HoloLens device by checking to see if VPN was an available option on the device. Now, **Settings** > **System** will display **Windows Holographic for Business** after the upgrade license is applied. [Learn how to unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md).
 
 - You can view the operating system build number in device properties in the File Explorer app and in the [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq).
-- Provisioning a HoloLens device is now easier with the new **Provision HoloLens devices** wizard in the Windows Configuration Designer tool. In the wizard, you can configure the setup experience and network connections, set developer mode, and obtain bulk Azure AD tokens. [Learn how to use the simple provisioning wizard for HoloLens](hololens-provisioning.md#provisioning-package-hololens-wizard).
+- Provisioning a HoloLens device is now easier with the new **Provision HoloLens devices** wizard in the Windows Configuration Designer tool. In the wizard, you can configure the setup experience and network connections, set developer mode, and obtain bulk Microsoft Entra tokens. [Learn how to use the simple provisioning wizard for HoloLens](hololens-provisioning.md#provisioning-package-hololens-wizard).
 
 - When you create a local account in a provisioning package, the password no longer expires every 42 days.
 
@@ -70,11 +70,11 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 
 - Media Transfer Protocol (MTP) is enabled so that you can connect the HoloLens device to a PC by USB and transfer files between HoloLens and the PC. You can also use the File Explorer app to move and delete files from within HoloLens.
 
-- Previously, after you signed in to the device with an Azure Active Directory (Azure AD) account, you then had to **Add work access** in **Settings** to get access to corporate resources. Now, you sign in with an Azure AD account and enrollment happens automatically.
+- Previously, after you signed in to the device with a Microsoft Entra account, you then had to **Add work access** in **Settings** to get access to corporate resources. Now, you sign in with a Microsoft Entra account and enrollment happens automatically.
 
 - Before you sign in, you can choose the network icon below the password field to choose a different Wi-Fi network to connect to. You can also connect to a guest network, such as at a hotel, conference center, or business.
 
-- You can now easily [share HoloLens with multiple people](hololens-multiple-users.md) using Azure AD accounts.
+- You can now easily [share HoloLens with multiple people](hololens-multiple-users.md) using Microsoft Entra accounts.
 
 - When setup or  sign-in fails, choose the new **Collect info** option to get diagnostic logs for troubleshooting.
 
