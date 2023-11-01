@@ -22,7 +22,7 @@ The HoloLens 2 security architecture has been designed to provide advanced, inno
 
 With HoloLens 2, businesses and customers have a truly modern and cutting-edge operating system with a strong built-in security framework. This contemporary operating system allows developers to design, build, and deliver applications with an exceptional security strategy, that effectively combat a complex threat landscape and its associated risks. With HoloLens, you’ll use the built-in power and security of both Microsoft Azure and Microsoft Edge. HoloLens is designed and manufactured to mitigate exposure to any risks.
 
-**HoloLens is a Windows device**. You’ll use the same and familiar processes and procedures of Windows Device Configuration Manager, mobile device management, and Azure Active Directory. You’ll find that you aren’t adding a bunch of new systems to what already exists.
+**HoloLens is a Windows device**. You’ll use the same and familiar processes and procedures of Windows Device Configuration Manager, mobile device management, and Microsoft Entra ID. You’ll find that you aren’t adding a bunch of new systems to what already exists.
 
 Some of the familiar security features include: 
 
@@ -60,7 +60,7 @@ You may be a security or IT professional, business decision-maker, or a member o
 | Reconfigure product security capabilities | [Page Settings Visibility](settings-uri-list.md) | PageVisibilityList policy can be reset to restrict the pages seen within the Settings app. |
 | Get in touch with Microsoft Security Engineering teams | [Security engineering](security-engineering.md) | Microsoft has several resources and teams devoted to optimizing the company’s engineering protocols, addressing compliance, and ensuring customer trust. |
 | Use modern security and authentication methods | [Limiting password use](security-limiting-password-use.md) | HoloLens 2 enables strong, hardware-backed “password-less” credentials for device sign in. |
-| Authenticate HoloLens users | [Manage user identity and login for HoloLens](hololens-identity.md) | When using AAD, users are required to use Windows Hello for Business and use a device PIN or biometric (iris) for login to the device. AAD identity information is not stored locally on the device.
+| Authenticate HoloLens users | [Manage user identity and login for HoloLens](hololens-identity.md) | When using Microsoft Entra ID, users are required to use Windows Hello for Business and use a device PIN or biometric (iris) for login to the device. Microsoft Entra identity information is not stored locally on the device.
 | Authenticate users through an external authentication service | [Hybrid identity documentation](/azure/active-directory/hybrid/) | Single user identities for authentication and authorization can be created for all resources, regardless of location.
 | Ensure cloud application deployment readiness | [Azure operational security checklist](/azure/security/fundamentals/operational-checklist) | This checklist will help you determine if your application meets essential operational security recommendations. |
 | Optimize my environment for Mobile Device Management with Intune | [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines) | Intune's security baselines are pre-configured groups of Windows settings that will help you quickly apply the settings recommended for your users and devices. |

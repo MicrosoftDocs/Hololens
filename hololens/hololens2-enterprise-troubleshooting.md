@@ -151,20 +151,20 @@ If your device was previously set up for someone else, either for a client or fo
 
 - Using PIN to logon will fail after entering the correct PIN.
 - Using the web logon method will fail after successfully signing in on the web page.
-- The device is not listed as “Azure AD joined” in [Azure portal](https://portal.azure.com/) -> Azure Active Directory -> Devices.
+- The device is not listed as “Microsoft Entra joined” in [Azure portal](https://portal.azure.com/) -> Microsoft Entra ID -> Devices.
 
 ### Cause
 
-The impacted device may have been deleted from the Azure AD tenant. For example, this may happen because:
+The impacted device may have been deleted from the Microsoft Entra tenant. For example, this may happen because:
 
 - An administrator or user deleted the device in the Azure portal or using PowerShell.
-- The device was removed from the Azure AD tenant due to inactivity. For an efficiently managed environment, we typically recommend IT admins to [remove stale, inactive devices from their Azure AD tenant](/azure/active-directory/devices/manage-stale-devices).
+- The device was removed from the Microsoft Entra tenant due to inactivity. For an efficiently managed environment, we typically recommend IT admins to [remove stale, inactive devices from their Microsoft Entra tenant](/azure/active-directory/devices/manage-stale-devices).
 
-When an impacted device attempts to contact the Azure AD tenant again after it has been deleted, it will fail to authenticate with Azure AD. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
+When an impacted device attempts to contact the Microsoft Entra tenant again after it has been deleted, it will fail to authenticate with Microsoft Entra ID. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
 
 ### Mitigation
 
-There is currently no way to add a deleted HoloLens device back into Azure AD. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](hololens-recovery.md#clean-reflash-the-device).
+There is currently no way to add a deleted HoloLens device back into Microsoft Entra ID. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](hololens-recovery.md#clean-reflash-the-device).
 
 [Back to list](#list)
 
@@ -194,7 +194,7 @@ No. You have to use an MDM system to manage HoloLens devices.
 
 ### Can I use Active Directory Domain Services (AD DS) to manage HoloLens user accounts?
 
-No. You have to use Azure Active Directory (Azure AD) to manage user accounts for HoloLens devices.
+No. You have to use Microsoft Entra ID to manage user accounts for HoloLens devices.
 
 ### Is HoloLens capable of Automated Data Capture Systems (ADCS) auto-enrollment?
 
@@ -209,7 +209,7 @@ No.
 No. But you can work around this issue by using one of the following approaches:
 
 - Create a custom app, then [enable Kiosk mode](hololens-kiosk.md). The custom app can have branding, and can launch other apps (such as Remote Assist).  
-- Change all of the user profile pictures in Azure AD to your company logo. However, this may not be desirable for all scenarios.
+- Change all of the user profile pictures in Microsoft Entra ID to your company logo. However, this may not be desirable for all scenarios.
 
 ### What logging capabilities does HoloLens 2 offer?
 
