@@ -63,7 +63,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 Improvements and fixes in the update:
 
-- Fixed an issue where enrolling into Insider builds was displaying a sign-in error. 
+- Fixed an issue where enrolling into Insider builds resulted in an error that some update files weren't signed correctly.   
 
 ## Windows Holographic, version 23H2 - October 2023 Update
 
