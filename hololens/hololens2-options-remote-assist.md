@@ -25,7 +25,7 @@ Get started on day one with HoloLens 2 and the ultimate mixed reality communicat
 
 ## Here's what to do next with the HoloLens 2 with Dynamics 365 Remote Assist edition
 
-We've created a specific guide to help you deploy HoloLens devices at scale. The guide includes end-to-end setup for Azure Active Directory to validating a Remote Assist call. Check out our [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md) for more details.
+We've created a specific guide to help you deploy HoloLens devices at scale. The guide includes end-to-end setup for Microsoft Entra ID to validating a Remote Assist call. Check out our [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md) for more details.
 
 | Checkpoint  | Outcome                                |
 |-------------|----------------------------------------|

@@ -41,7 +41,7 @@ There are many ways to improve this situation, depending on the infrastructure a
 | Solution | Benefits | Requirements |
 | --- | --- | --- |
 | Provisioning Package with Ethernet Adaptor | Improves OOBE experience and allows for a quicker technician experience. | HoloLens compatible USB-C Hub + Ethernet adaptor, and technician will still need to interact with the device for MAC capture and OOBE finalization |
-| Autopilot with Intune Registration over Ethernet | This is a single-step connection and registration of the device to the customer environment. MAC capture can be completed without needing to interact with the device | Intune enabled for the customer AAD tenant and a HoloLens compatible USB-C Ethernet adaptor |
+| Autopilot with Intune Registration over Ethernet | This is a single-step connection and registration of the device to the customer environment. MAC capture can be completed without needing to interact with the device | Intune enabled for the customer Microsoft Entra tenant and a HoloLens compatible USB-C Ethernet adaptor |
 | Automated reporting of MAC Addresses | When devices are registered with the Intune tenant, a script can report the MAC address to the technician. | Intune PowerShell cmdlets |
 
 ## Provisioning Package with Ethernet Adaptor
@@ -55,7 +55,7 @@ There are many ways to improve this situation, depending on the infrastructure a
 - HoloLens Compatible USB-C Hub with Ethernet adaptor — Any adapter that doesn't require any additional drivers or application installs should be suitable.
 - Provisioning Package containing:
   - Containing Wireless Network information and Certificate
-  - Optionally containing enrollment information for the Organization's Azure AD
+  - Optionally containing enrollment information for the Organization's Microsoft Entra ID
   - Containing any other required provisioning settings
 
 ### Process
@@ -112,7 +112,7 @@ Additional pre-requisites will be needed as below:
 
 2. Turn on the HoloLens.
 
-3. The device should automatically connect to the internet during OOBE via the Ethernet adaptor. It should detect the Autopilot configuration and automatically register with Azure AD and Intune.
+3. The device should automatically connect to the internet during OOBE via the Ethernet adaptor. It should detect the Autopilot configuration and automatically register with Microsoft Entra ID and Intune.
 
 4. The Device will apply the required Wi-Fi Certificates and other configuration as needed via Intune.
 
@@ -126,7 +126,7 @@ Additional pre-requisites will be needed as below:
 
 ### Benefits
 
-This will allow a "Heads off" deployment experience for the Technician, with the device being able to go from the box to enrolled in Azure AD and Intune without the technician having to wear the device or manually interact with the HoloLens environment.
+This will allow a "Heads off" deployment experience for the Technician, with the device being able to go from the box to enrolled in Microsoft Entra ID and Intune without the technician having to wear the device or manually interact with the HoloLens environment.
 
 ## Reporting of MAC addresses to the Technician
 

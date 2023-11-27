@@ -119,18 +119,18 @@ It's common to share one HoloLens with many people or to have many people share 
 
 **Prerequisite**: HoloLens (1st gen) must be [upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
-When they use their own Azure Active Directory (Azure AD) accounts, multiple users can each keep their own user settings and user data on the device.
+When they use their own Microsoft Entra accounts, multiple users can each keep their own user settings and user data on the device.
 
 To make sure that multiple people can use their own accounts on your HoloLens, follow these steps:
 
-1. When you set up the device, select **My work or school owns it** and sign in by using an Azure AD account.
+1. When you set up the device, select **My work or school owns it** and sign in by using a Microsoft Entra account.
 1. After you finish setup, make sure that the account settings (**Settings** > **Accounts**) include **Other users**.
 
 To use HoloLens, each user must follow these steps:
 
 1. If another user has been using the device, press the power button once to go to standby. Then press the power button again to return to the lock screen.
 
-1. Use your Azure AD account credentials to sign in to the device. If it's the first time that you have used the device, you will need to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
+1. Use your Microsoft Entra account credentials to sign in to the device. If it's the first time that you have used the device, you will need to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
 
 To see a list of the device users or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**.
 
