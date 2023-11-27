@@ -17,7 +17,7 @@ appliesto:
 Often organizations have many devices and lots of different people who use those devices. When people are looking to use a HoloLens 2 device, they often want to get straight to their app. This can sometimes be hindered by having to do additional setup. In this article we’ll cover the best ways to reduce set up time, best practices, and cover variations in logging into a device.
 
 > [!NOTE]
-> In all these scenarios we’re talking about scenarios in which a second user can use the device, so all these scenarios use Azure AD identities.
+> In all these scenarios we’re talking about scenarios in which a second user can use the device, so all these scenarios use Microsoft Entra identities.
 
 ## Best practices
 

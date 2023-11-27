@@ -1,6 +1,6 @@
 ---
 title: Common Deployment Scenarios
-description: Learn more about deploying and managing HoloLens in enterprise environments, including infrastructure, Azure Active Directory, and mobile device management.
+description: Learn more about deploying and managing HoloLens in enterprise environments, including infrastructure, Microsoft Entra ID, and mobile device management.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -45,8 +45,8 @@ Consider this deployment model for:
 ### Basic Common Configurations
 
 * Wi-Fi networks are typically fully open to the internet and cloud services
-* Azure AD Join with Mobile Device Management (MDM) Auto Enrollment--MDM (Intune) Managed
-* Users sign in with their own corporate account (Azure AD)
+* Microsoft Entra join with Mobile Device Management (MDM) Auto Enrollment--MDM (Intune) Managed
+* Users sign in with their own corporate account (Microsoft Entra ID)
   * Single or multiple users per device supported
 * Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk.
 * One or more applications are deployed via MDM
@@ -83,16 +83,16 @@ Consider this deployment model for:
 ### Basic Common Configurations
 
 * Wi-Fi network is an internal corporate network with access to internal resources, and limited access to the internet or Cloud services.
-* Azure AD Join with MDM Auto Enrollment
+* Microsoft Entra join with MDM Auto Enrollment
 * MDM (Intune) Managed
-* Users sign in with their own corporate account (Azure AD)
+* Users sign in with their own corporate account (Microsoft Entra ID)
   * Single or multiple users per device supported
 * Varying levels of device lockdown configurations are applied based on specific use cases, from Fully Open to Single App Kiosk.
 * One or more applications are deployed via MDM
 
 ### Common Challenges
 
-* HoloLens 2 doesn't support on premises AD join or System Center Configuration Manager (SCCM). Only Azure AD join with MDM. Many companies today still deploy Windows 10 PCs in this scenario as on premises AD joined devices, managed by SCCM and may not have the infrastructure deployed/configured for managing internal Windows 10 devices via cloud-based MDM solutions.
+* HoloLens 2 doesn't support on premises AD join or System Center Configuration Manager (SCCM). Only Microsoft Entra join with MDM. Many companies today still deploy Windows 10 PCs in this scenario as on premises AD joined devices, managed by SCCM and may not have the infrastructure deployed/configured for managing internal Windows 10 devices via cloud-based MDM solutions.
 * As HoloLens 2 is a cloud first device, it relies heavily on internet and cloud connected services for user authentication, OS updates, MDM management, and so on. When connecting to a corporate network, proxy/firewall rules will most likely need to be adjusted to enable access for HoloLens 2 and the applications that run on it.
 * Corporate Wi-Fi connectivity typically requires certificates to authenticate the device or user to the network. The required infrastructure or settings to deploy certificates to Windows 10 devices through MDM can be challenging to configure.
 
@@ -153,7 +153,7 @@ Consider this deployment model for:
 ### Basic Common Configurations
 
 * Wi-Fi connectivity can be enabled or disabled, but periodic connections are required
-* Azure AD for sign-in & authentication
+* Microsoft Entra ID for sign-in & authentication
 * Azure MFA and Windows Hello for Business
 * Autopilot for device deployment
 * Intune for Device Management

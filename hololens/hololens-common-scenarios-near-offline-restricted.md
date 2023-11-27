@@ -19,7 +19,7 @@ appliesto:
 
 This guide provides guidance for deploying HoloLens 2 in areas where networking is restricted. This could either be for secure environments or for areas where networking cannot be assured such as power plants, ships, or other areas.
 
-This scenario is designed to deliver the best user and administrator experience. This scenario allows for the use of Azure AD, Intune, Windows updates and multiple user support with IRIS sign-in, whilst meeting the needs of organizations who have additional security or networking challenges.
+This scenario is designed to deliver the best user and administrator experience. This scenario allows for the use of Microsoft Entra ID, Intune, Windows updates and multiple user support with IRIS sign-in, whilst meeting the needs of organizations who have additional security or networking challenges.
 
 > [!NOTE]
 > This scenario describes one possible approach. We expect each organization deploying in this scenario will have unique requirements, which can be mapped into this solution as required.
@@ -34,8 +34,8 @@ The cloud functionality of this guide matches the requirements for the [Cloud Co
 
 This guide assumes the following services are being used:
 
-- [Azure AD for user sign in and authentication](hololens-identity.md)
-- Azure AD Multi-Factor Authentication and Windows Hello for Business
+- [Microsoft Entra ID for user sign in and authentication](hololens-identity.md)
+- Microsoft Entra multifactor authentication and Windows Hello for Business
 - [Autopilot for device deployment](/mem/autopilot/existing-devices)
 - [Intune for Device Management](/mem/intune/remote-actions/device-management)
 - [Windows Update for Device Updates](hololens-update-hololens.md)
@@ -78,7 +78,7 @@ The key [endpoints](hololens-offline.md) to enable access on your network are:
 |Group                                  |   Purpose                                              |
 |---------------------------------------|--------------------------------------------------------|
 |Near Offline Setup                     |   Initial OOBE                                         |
-|Azure AD MFA                           |   MFA Requests (Optional if not using Azure MFA)       |
+|Microsoft Entra multifactor authentication                           |   MFA Requests (Optional if not using Azure MFA)       |
 |Intune and MDM Configurations          |   Intune Enrollment (Optional if not using Intune)      |
 |Certificates                           |   Check Microsoft Certificate Status                   |
 |Device Metadata                        |   Device Information                                   |
@@ -90,7 +90,7 @@ The key [endpoints](hololens-offline.md) to enable access on your network are:
 |Settings                               |   Used in the Settings Application                     |
 
 > [!TIP]
-> These are the key endpoints to utilize Autopilot, complete OOBE and allow an AAD User to sign in with Windows Hello for Business. Your organization may require other endpoints to allow for the desired functionality. 
+> These are the key endpoints to utilize Autopilot, complete OOBE and allow a Microsoft Entra user to sign in with Windows Hello for Business. Your organization may require other endpoints to allow for the desired functionality. 
 
 ## Deploy and maintain
 Deployment and Maintenance steps are identical to the [Cloud connected guide](hololens2-cloud-connected-deploy.md). We've included basic suggestions here.
