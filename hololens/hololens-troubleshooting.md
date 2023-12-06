@@ -186,7 +186,7 @@ Workarounds before the fix:
 
 Older HoloLens devices that have never gone through initial device setup may display an incorrect error when they are ultimately setup for the first time. The error will indicate "You need internet for this..." even though a successful network connection was already established. This error will prevent the completion of the device setup process.
 
-The workaround for this issue is to [download the latest build and reflash the device](/hololens/hololens-recovery), and then proceed with the initial device setup process. This will allow the device to acquire a datetime that is within the threshold required during initial device setup.
+The workaround for this issue is to [download the latest build and reflash the device](/hololens/hololens-recovery#clean-reflash-the-device), and then proceed with the initial device setup process. This will allow the device to acquire a datetime that is within the threshold required during initial device setup.
 
 > [!NOTE] 
 > If the device is registered for Autopilot, this error will not occur because Autopilot automatically forces a datetime sync.
