@@ -33,6 +33,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Known Issues
 
+- [After successful network connection, users may receive incorrect error regarding internet connectivity during initial device setup](#after-successful-network-connection-users-may-receive-incorrect-error-regarding-internet-connectivity-during-initial-device-setup)
 - [Sometimes Settings app won't open after update](#sometimes-settings-app-wont-open-after-update)
 - [Users opting in to Windows Insider after flashing to 23H1 will be stuck](#users-opting-in-to-windows-insider-after-flashing-to-23h1-will-be-stuck)
 - [Update indicator may still be visible after OS update](#update-indicator-may-still-be-visible-after-os-update)
@@ -181,6 +182,14 @@ Workarounds before the fix:
 
 [Back to list](#list)
 
+## After successful network connection users may receive incorrect error regarding internet connectivity during initial device setup
+
+Older HoloLens devices that have never gone through initial device setup may display an incorrect error when they are ultimately setup for the first time.  The error will indicate "You need internet for this..." even though a successful network connection was already established.  This error will prevent the completion of the device setup process.  
+
+The workaround for this issue is to download the latest build and reflash the device, and then proceed with the initial device setup process.  This will allow the device to acquire a datetime that is within the threshold required during initial device setup.
+
+> [!NOTE]
+> If the device is registered for Autopilot, this error will not occur because Autopilot automatically forces a datetime sync.
 ## Sometimes Settings app won't open after update
 
 Follow these steps to fix the Settings app:
