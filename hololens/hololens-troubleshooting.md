@@ -182,7 +182,7 @@ Workarounds before the fix:
 
 [Back to list](#list)
 
-## After successful network connection, users may receive incorrect error regarding internet connectivity during initial device setup
+## After successful network connection users may receive incorrect error regarding internet connectivity during initial device setup
 
 Older HoloLens devices that have never gone through initial device setup may display an incorrect error when they are ultimately setup for the first time. The error will indicate "You need internet for this..." even though a successful network connection was already established. This error will prevent the completion of the device setup process.
 
