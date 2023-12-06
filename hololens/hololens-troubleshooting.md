@@ -33,7 +33,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Known Issues
 
-- [After successful network connection, users may receive incorrect error regarding internet connectivity during initial device setup](#after-successful-network-connection,-users-may-receive-incorrect-error-regarding-internet-connectivity-during-initial-device-setup)
+- [After successful network connection users may receive incorrect error regarding internet connectivity during initial device setup](#after-successful-network-connection,-users-may-receive-incorrect-error-regarding-internet-connectivity-during-initial-device-setup)
 - [Sometimes Settings app won't open after update](#sometimes-settings-app-wont-open-after-update)
 - [Users opting in to Windows Insider after flashing to 23H1 will be stuck](#users-opting-in-to-windows-insider-after-flashing-to-23h1-will-be-stuck)
 - [Update indicator may still be visible after OS update](#update-indicator-may-still-be-visible-after-os-update)
