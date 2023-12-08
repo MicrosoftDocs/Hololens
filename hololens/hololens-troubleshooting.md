@@ -78,7 +78,7 @@ This article describes how to resolve several common HoloLens issues.
 ## **Fixed** - Users opting in to Windows Insider after flashing to 23H1 will be stuck
 
 > [!NOTE] 
-> This was fixed in the [Windows Holographic, version 23H2 - November 2023 Update](https://learn.microsoft.com/en-us/hololens/hololens-release-notes#windows-holographic-version-23h2---november-2023-update)
+> This was fixed in the [Windows Holographic, version 23H2 - November 2023 Update](/hololens/hololens-release-notes#windows-holographic-version-23h2---november-2023-update)
 
 The issue occurred when users did a clean flash of their device to the June 2023 23H1 update, and then joined the Windows Insiders program.  In this situation, users were then stuck on that build until they followed the workaround.
 
@@ -208,11 +208,9 @@ Users who update from Windows 10 to Windows 11 may experience an issue trying to
 
 1. Depending on your preferred method of app deployment, you can select one of the options from App Management: Overview. The recommendation for the Settings app is:
 
-If small deployment/single device, copy appx to device (USB drive or MTP), click on the appx from File Explorer.
+    1. If small deployment/single device, copy appx to device (USB drive or MTP), click on the appx from File Explorer.
 
-If large deployment with MDM, deploy the appx as a LOB app through MDM. There’s no need for additional licenses or certificates.
-
-
+    1. If large deployment with MDM, deploy the appx as a LOB app through MDM. There’s no need for additional licenses or certificates.
 
 ## After successful network connection users may receive incorrect error regarding internet connectivity during initial device setup
 
