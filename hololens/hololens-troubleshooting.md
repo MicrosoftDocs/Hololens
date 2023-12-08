@@ -34,6 +34,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Known Issues
 
+- [Sometimes the Store app won't open after an OS update](#sometimes-the-store-app-won't-open-after-an-os-update)
 - [After successful network connection users may receive incorrect error regarding internet connectivity during initial device setup](#after-successful-network-connection-users-may-receive-incorrect-error-regarding-internet-connectivity-during-initial-device-setup)
 - [Sometimes Settings app won't open after update](#sometimes-settings-app-wont-open-after-update)
 - [Update indicator may still be visible after OS update](#update-indicator-may-still-be-visible-after-os-update)
