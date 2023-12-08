@@ -23,7 +23,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Fixed Known Issues
 
-- [**Fixed** - Users opting in to Windows Insider after flashing to 23H1 will be stuck](#users-opting-in-to-windows-insider-after-flashing-to-23h1-will-be-stuck)
+- [**Fixed** - Users opting in to Windows Insider after flashing to 23H1 will be stuck](#fixed---users-opting-in-to-windows-insider-after-flashing-to-23h1-will-be-stuck)
 - [**Fixed** - HoloLens user can’t launch Microsoft Edge](#fixed---hololens-user-cant-launch-microsoft-edge)
 - [**Fixed** - Every time the power goes to 18 percent, the device suddenly shuts down automatically](#fixed---every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [**Fixed** - OneDrive UWP app doesn't work for Microsoft Entra users](#fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users)
