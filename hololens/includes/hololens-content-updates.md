@@ -2,6 +2,14 @@
 
 
 
+## Week of December 04, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/8/2023 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
+
+
 ## Week of November 13, 2023
 
 
