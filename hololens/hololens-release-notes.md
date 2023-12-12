@@ -60,7 +60,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 ## Windows Holographic, version 23H2 - December 2023 Update
 
-- Build 22621.1154
+- Build 22621.1254
 
 Improvements and fixes in the update:
 
