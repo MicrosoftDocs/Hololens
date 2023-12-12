@@ -68,8 +68,6 @@ Improvements and fixes in the update:
 
 - Fixed a link in Hologram Stability page on Device Portal.
 
-- A new version of the Edge app (version 120) is now available for HoloLens users.
-
 ## Windows Holographic, version 23H2 - November 2023 Update
 
 - Build 22621.1152
