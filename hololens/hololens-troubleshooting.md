@@ -34,6 +34,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Known Issues
 
+- [Users may be unable to cleanup temporary files completely](#users-may-be-unable-to-cleanup-temporary-files-completely)
 - [Sometimes the Store app won't open after an OS update](#sometimes-the-store-app-wont-open-after-an-os-update)
 - [After successful network connection users may receive incorrect error regarding internet connectivity during initial device setup](#after-successful-network-connection-users-may-receive-incorrect-error-regarding-internet-connectivity-during-initial-device-setup)
 - [Sometimes Settings app won't open after update](#sometimes-settings-app-wont-open-after-update)
@@ -194,6 +195,10 @@ Workarounds before the fix:
 - If you can’t safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 [Back to list](#list)
+
+## Users may be unable to cleanup temporary files completely
+
+Some temp files will not be able to be cleaned up completely.  Users will not be able to free up all temporary files via the Storage setting page in the Settings app.
 
 ## Sometimes the Store app won't open after an OS update
 
