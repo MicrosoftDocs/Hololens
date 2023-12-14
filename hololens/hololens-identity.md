@@ -111,7 +111,7 @@ As in the Desktop version of Windows, you can link other web account credentials
 
 Linking accounts doesn't separate the user data created on the device, such as images or downloads.  
 
-### Setting up multi-user support (Microsoft Entra-only)
+### Setting up multi-user support (Microsoft Entra only)
 
 HoloLens supports multiple users from the same Microsoft Entra tenant. To use this feature, you must use an account that belongs to your organization to set up the device. Subsequently, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user.
 
@@ -120,7 +120,7 @@ HoloLens supports multiple users from the same Microsoft Entra tenant. To use th
 
 All users can use the apps installed on the device. However, each user has their own app data and preferences. Removing an app from the device removes it for all users.  
 
-Devices set up with Microsoft Entra accounts won't allow signing in to the device with a Microsoft Account. All subsequent accounts used must be Microsoft Entra accounts from the same tenant as the device. You may still [sign in using a Microsoft Account to apps](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) that support it (such as the Microsoft Store). To change from using Microsoft Entra accounts to Microsoft Accounts for signing in to the device, you must [reflash the device](hololens-recovery.md#clean-reflash-the-device).
+Devices set up with Microsoft Entra accounts won't allow signing in to the device with a Microsoft Account. All subsequent accounts used must be Microsoft Entra accounts from the same tenant as the device. You may still [sign in using a Microsoft Account to apps](hololens-identity.md#setting-up-multi-user-support-microsoft-entra-only) that support it (such as the Microsoft Store). To change from using Microsoft Entra accounts to Microsoft Accounts for signing in to the device, you must [reflash the device](hololens-recovery.md#clean-reflash-the-device).
 
 > [!NOTE]
 > **HoloLens (1st gen)** began supporting multiple Microsoft Entra users in the [Windows 10 April 2018 Update](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) as part of [Windows Holographic for Business](hololens-upgrade-enterprise.md).
