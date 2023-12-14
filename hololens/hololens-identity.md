@@ -24,6 +24,7 @@ appliesto:
 
 > [!TIP]
 > HoloLens 2 is configured as a Microsoft Entra ID joined device and does not support On-Premises Active Directory. In most cases, authentication can be performed using either a Managed Entra ID Identity, or a Federated Entra ID Identity. However, if your federation service is causing authentication challenges, you should ensure that you are able to sign on from an Entra ID Only joined Windows 10 or Windows 11 PC. Many authentication issues are a result of Entra ID only configurations, rather than a HoloLens specific issue. Troubleshooting these challenges is much simpler from a Windows 10 or Windows PC.
+
 ## Let’s talk about setting up user identity for HoloLens 2
 
 Like other Windows devices, HoloLens always operates under a user context. There's always a user identity. HoloLens treats identity in almost the same manner as a Windows 10 or Windows 11 device. Signing in during setup creates a user profile on HoloLens that stores apps and data. The same account also provides Single Sign-on for apps, such as Microsoft Edge or Dynamics 365 Remote Assist, by using the Windows Account Manager APIs.
@@ -42,8 +43,10 @@ Cloud-connected accounts (Microsoft Entra ID and MSA) offer more features becaus
 
 > [!NOTE]
 > 2 - While a HoloLens 2 device can support up to 63 Microsoft Entra accounts as well as one system account for a total of 64 accounts, only up to 10 of those accounts should enroll in Iris Authentication. This is aligned with other Biometric authentication options for Windows Hello for Business. While more than 10 accounts may be enrolled in Iris authentication this increases the rate of false positives and is not recommended.
+
 > [!IMPORTANT]
 > 3 - A local account can only be set up on a device [via a provisioning package during OOBE](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup), it cannot be added later in the settings app. If you'd like to use a local account on a device that's already set up, you need to [reflash or reset the device.](hololens-recovery.md)
+
 ### How does the type of account affect sign in behavior?
 
 If you apply policies for sign-in, the policy is always respected. If no policy for login is applied, these are the default behaviors for each account type:
@@ -91,7 +94,7 @@ Yes, you can manually remove it in Settings.
 
 ## Setting up users
 
-There are two ways to set up a new user on the HoloLens. The most common way is during the HoloLens out-of-box experience (OOBE). If using Microsoft Entra ID, [other users can log in](#setting-up-multi-user-support-azure-ad-only) after OOBE using their Microsoft Entra credentials. HoloLens devices that are initially set up with an MSA or local account during OOBE do not support multiple users. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
+There are two ways to set up a new user on the HoloLens. The most common way is during the HoloLens out-of-box experience (OOBE). If using Microsoft Entra ID, [other users can log in](#setting-up-multi-user-support-microsoft-entra-only) after OOBE using their Microsoft Entra credentials. HoloLens devices that are initially set up with an MSA or local account during OOBE do not support multiple users. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
 
 If you use an enterprise or organizational account to sign in to HoloLens, HoloLens enrolls in the organization's IT infrastructure. This enrollment allows your IT Admin to configure Mobile Device Management (MDM) to send group policies to your HoloLens.
 
@@ -101,6 +104,7 @@ By default, as for other Windows 10 devices, you have to sign in again when Holo
 
 > [!TIP]
 > If more than one user uses a device, it is important to keep the visor clean. See **[HoloLens 2 cleaning FAQ](/hololens/hololens2-maintenance)** for details on how to clean the device. We recommend that you clean the visor between each user. This best practice is particularly important if you use Iris authentication.
+
 ### Linked accounts
 
 As in the Desktop version of Windows, you can link other web account credentials to your HoloLens account. Such linking makes it easier to access resources across or within apps (such as the Store) or to combine access to personal and work resources. After you connect an account to the device, you can grant permission to use the device to apps so that you don't have to sign in to each app individually.
