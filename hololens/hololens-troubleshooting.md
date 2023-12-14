@@ -23,6 +23,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Fixed Known Issues
 
+- [**Fixed** - Users opting in to Windows Insider after flashing to 23H1 will be stuck](#fixed---users-opting-in-to-windows-insider-after-flashing-to-23h1-will-be-stuck)
 - [**Fixed** - HoloLens user can’t launch Microsoft Edge](#fixed---hololens-user-cant-launch-microsoft-edge)
 - [**Fixed** - Every time the power goes to 18 percent, the device suddenly shuts down automatically](#fixed---every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [**Fixed** - OneDrive UWP app doesn't work for Microsoft Entra users](#fixed---onedrive-uwp-app-doesnt-work-for-azure-ad-users)
@@ -33,8 +34,10 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Known Issues
 
+- [Users may be unable to cleanup temporary files completely](#users-may-be-unable-to-cleanup-temporary-files-completely)
+- [Sometimes the Store app won't open after an OS update](#sometimes-the-store-app-wont-open-after-an-os-update)
+- [After successful network connection users may receive incorrect error regarding internet connectivity during initial device setup](#after-successful-network-connection-users-may-receive-incorrect-error-regarding-internet-connectivity-during-initial-device-setup)
 - [Sometimes Settings app won't open after update](#sometimes-settings-app-wont-open-after-update)
-- [Users opting in to Windows Insider after flashing to 23H1 will be stuck](#users-opting-in-to-windows-insider-after-flashing-to-23h1-will-be-stuck)
 - [Update indicator may still be visible after OS update](#update-indicator-may-still-be-visible-after-os-update)
 - [Resetting a device with low space doesn't reset](#resetting-a-device-with-low-space-doesnt-reset)
 - [Remote Wipe doesn't remove device from Intune](#remote-wipe-doesnt-remove-device-from-intune)
@@ -73,6 +76,18 @@ This article describes how to resolve several common HoloLens issues.
 - [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
 - [USB-C Microphone isn't working](#usb-c-microphone-isnt-working)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
+
+## **Fixed** - Users opting in to Windows Insider after flashing to 23H1 will be stuck
+
+> [!NOTE] 
+> This was fixed in the [Windows Holographic, version 23H2 - November 2023 Update](/hololens/hololens-release-notes#windows-holographic-version-23h2---november-2023-update)
+
+The issue occurred when users did a clean flash of their device to the June 2023 23H1 update, and then joined the Windows Insiders program.  In this situation, users were then stuck on that build until they followed the workaround.
+
+### Workaround for opt-in to Insider after flashing 23H1
+
+Users should flash their device to the July 2023, 22H2 build, allow the device to update to the June 2023 23H1 build and then join the Windows Insider program.
+
 
 ## **Fixed** - HoloLens user can’t launch Microsoft Edge
 
@@ -181,9 +196,42 @@ Workarounds before the fix:
 
 [Back to list](#list)
 
+## Users may be unable to cleanup temporary files completely
+
+Some temp files will not be able to be cleaned up completely.  Users will not be able to free up all temporary files via the Storage setting page in the Settings app.
+
+## Sometimes the Store app won't open after an OS update
+
+Users who update from Windows 10 to Windows 11 may experience an issue trying to open the Store app.  If that situation occurs, follow these steps to fix the Store app:
+
+1. Get microsoft.ui.xaml.2.7.3 ARM64 appx package
+
+    1. Download nupkg from https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.7.3
+
+    1. Rename nupkg to microsoft.ui.xaml.2.7.3.nupkg.zip
+
+    1. Extract zip file and copy the arm64 xaml appx package from tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.7.appx
+
+1. Depending on your preferred method of app deployment, you can select one of the options from App Management: Overview. The recommendation for the Settings app is:
+
+    1. If small deployment/single device, copy appx to device (USB drive or MTP), click on the appx from File Explorer.
+
+    1. If large deployment with MDM, deploy the appx as a LOB app through MDM. There’s no need for additional licenses or certificates.
+
+## After successful network connection users may receive incorrect error regarding internet connectivity during initial device setup
+
+Older HoloLens devices that have never gone through initial device setup may display an incorrect error when they are ultimately setup for the first time. The error will indicate "You need internet for this..." even though a successful network connection was already established. This error will prevent the completion of the device setup process.
+
+The workaround for this issue is to [download the latest build and reflash the device](/hololens/hololens-recovery#clean-reflash-the-device), and then proceed with the initial device setup process. This will allow the device to acquire a datetime that is within the threshold required during initial device setup.
+
+> [!NOTE] 
+> If the device is registered for Autopilot, this error will not occur because Autopilot automatically forces a datetime sync.
+
 ## Sometimes Settings app won't open after update
 
-Follow these steps to fix the Settings app:
+There are two options to resolve this issue. Users can perform a clean flash of their device by [downloading the latest build and reflashing the device](/hololens/hololens-recovery#clean-reflash-the-device). 
+
+Alternatively, users can follow these steps to fix the Settings app:
 
 1. Get microsoft.ui.xaml.2.4.3 ARM64 appx package
     1. Download nupkg from https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.4.3
@@ -201,15 +249,6 @@ Follow these steps to fix the Settings app:
 
 
     1. If large deployment with MDM, deploy the appx as a LOB app through MDM. There’s no need for additional licenses or certificates.
-
-
-## Users opting in to Windows Insider after flashing to 23H1 will be stuck
-
-If users do a clean flash of their device to the June 2023 23H1 update, and then join the Windows Insiders program, they will get stuck on that build until they follow the workaround below.
-
-### Workaround for opt-in to Insider after flashing 23H1
-
-Users should flash their device to the [July 2023, 22H2 build](https://aka.ms/hololens2download), allow the device to update to the June 2023 23H1 build and then join the Windows Insider program.
 
 ## Update indicator may still be visible after OS update
 
