@@ -34,7 +34,7 @@ ISVs that build their mixed reality solutions on Azure are larger and more profi
 *    28% more mixed reality customers
 *    15% higher mixed reality software gross margins
 
-The commissioned [Forrester Consulting TEI study on HoloLens 2](https://go.microsoft.com/fwlink/p/?LinkID=2185249&clcid=0x409&culture=en-us&country=us) estimates the following benefits to adopting HoloLens:
+Read [The Total Economic Impact Of Microsoft HoloLens 2 With Mixed reality Applications study](https://download.microsoft.com/download/e/1/3/e1364937-5f62-4a0c-bb9e-664c270ad4fe/Forrester-Total-Economic-Impact-Mixed-Reality-Microsoft-HoloLens-2_Cover.pdf) and estimate your company's ROI:
 
 :::image type="content" alt-text="HoloLens 2 Forrester Info Graph" source="./images/forrester-info-graph.png":::
 
@@ -82,6 +82,7 @@ HoloLens 2 is the industrial metaverse technology that our customers use to deli
 
 
 
+
 ---
 
 :::row:::
@@ -99,6 +100,7 @@ Microsoft aims to make mixed reality accessible and intuitive for frontline work
 
 
 
+
 ---
 
 :::row:::
@@ -112,6 +114,7 @@ Microsoft aims to make mixed reality accessible and intuitive for frontline work
 Improving reliability and introducing direct inking to Dynamics 365 Guides.
 :::column-end:::
 :::row-end:::
+
 
 
 
@@ -135,6 +138,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
 
 
 
+
 ---
 
 :::row:::
@@ -146,6 +150,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
         HoloLens 2 customers are using mixed reality to expedite the ways they ensure process compliance, improve efficiency, and learn on the job with Microsoft Teams features in Dynamics 365 Guides.
     :::column-end:::
 :::row-end:::
+
 
 
 
@@ -165,6 +170,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
 
 
 
+
 ---
 
 :::row:::
@@ -176,6 +182,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
         The staff at Sheba Medical Center used HoloLens to train nurses and other support personnel on the use of ventilator machines that were being deployed by the hundreds during the COVID-19 pandemic.
     :::column-end:::
 :::row-end:::
+
 
 
 
@@ -195,6 +202,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
 
 
 
+
 ---
 
 :::row:::
@@ -206,6 +214,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
         Unless you’re a trained architectural engineer, it can be challenging to look at a 2D blueprint and visualize what a building will actually look like in 3D. 
     :::column-end:::
 :::row-end:::
+
 
 
 
@@ -222,6 +231,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
     :::column-end:::
 :::row-end:::
 <br>
+
 
 
 
