@@ -23,6 +23,7 @@ This article describes how to resolve several common HoloLens issues.
 
 ##### Fixed Known Issues
 
+- [**Fixed** - Swipe to type on the virtual keyboard was not working correctly](#fixed---swipe-to-type-on-the-virtual-keyboard-was-not-working-correctly)
 - [**Fixed** - Users opting in to Windows Insider after flashing to 23H1 will be stuck](#fixed---users-opting-in-to-windows-insider-after-flashing-to-23h1-will-be-stuck)
 - [**Fixed** - HoloLens user can’t launch Microsoft Edge](#fixed---hololens-user-cant-launch-microsoft-edge)
 - [**Fixed** - Every time the power goes to 18 percent, the device suddenly shuts down automatically](#fixed---every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
@@ -76,6 +77,10 @@ This article describes how to resolve several common HoloLens issues.
 - [Bluetooth devices aren't pairing](#bluetooth-devices-arent-pairing)
 - [USB-C Microphone isn't working](#usb-c-microphone-isnt-working)
 - [Devices listed as available in Settings don't work](#devices-listed-as-available-in-settings-dont-work)
+
+## **Fixed** - Swipe to type on the virtual keyboard was not working correctly
+
+The swipe-to-type feature on the virtual keyboard was not working correctly, and affected Windows 11 builds only.  This issue was fixed in the Windows Holographic, version 23H2 - November 2023 Update with Build 22621.1152.
 
 ## **Fixed** - Users opting in to Windows Insider after flashing to 23H1 will be stuck
 
