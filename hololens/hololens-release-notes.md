@@ -70,7 +70,7 @@ Improvements and fixes in the update:
 
 ## Windows Holographic, version 23H2 - November 2023 Update
 
-- Build 22621.1152
+- Build 22621.1252
 
 Improvements and fixes in the update:
 
