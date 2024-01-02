@@ -21,7 +21,7 @@ appliesto:
 
 ### What benefits does HoloLens 2 Industrial Edition 2 include?
 
-The HoloLens 2 Industrial Edition is designed to solve challenges for industrial customers in clean room environments and assist with operational safety in those environments. It is designed and tested for clean room compliance, intrinsic safety certifications, and backed by an even more robust support program.
+The HoloLens 2 Industrial Edition is designed to solve challenges for industrial customers in clean room environments and assist with operational safety in those environments. It's designed and tested for clean room compliance, intrinsic safety certifications, and backed by an even more robust support program.
 
 By using the HoloLens 2 Industrial Edition in these environments there will be significant reduction in travel in and out of the clean room areas, and reduction of general labor costs. Being able to have a small footprint physically inside the clean room and yet still have access to any / all documentation and levels of expertise will reduce labor costs.
 
@@ -39,7 +39,7 @@ For more information read about [UL certifications](https://www.ul.com/services/
 
 ### Does the HoloLens 2 Industrial Edition hold an ATEX certification?
 
-No. The HoloLens 2 Industrial Edition is does not hold an ATEX certification. The HoloLens 2 Industrial Edition holds a US/CAN Class I, Division 2-Groups A, B, C, and D certification.
+No. The HoloLens 2 Industrial Edition is doesn't hold an ATEX certification. The HoloLens 2 Industrial Edition holds a US/CAN Class I, Division 2-Groups A, B, C, and D certification.
 
 ### Can the device be used in semiconductor and pharmaceutical environments?
 
@@ -53,18 +53,18 @@ Visit this page to find [HoloLens warranty information](https://support.microsof
 
 ### What&#39;s the rapid replacement program?
 
-In addition to the 2-year warranty, HoloLens 2 Industrial Edition includes the rapid replacement program enabling customers to receive a replacement device overnight or expedited shipping (faster of the available options) before a defective device is received by Microsoft. To start a replacement please [contact support](https://aka.ms/hololenssupport).
+In addition to the 2-year warranty, HoloLens 2 Industrial Edition includes the rapid replacement program enabling customers to receive a replacement device overnight or expedited shipping (faster of the available options) before a defective device is received by Microsoft. To start a replacement, [contact support](https://aka.ms/hololenssupport).
 
 > [!NOTE]
 > Support will need a clear description of any defect, and to confirm the device cannot be recovered to a working state before it is replaced.
 
 ### Can I purchase replacement parts for HoloLens 2 Industrial Edition?
 
-Replacement parts and refurbishments are not supported for the HoloLens 2 Industrial Edition. If you find yourself in need of a replacement, use our rapid replacement program for the HoloLens 2 Industrial Edition.
+Replacement parts and refurbishments aren't supported for the HoloLens 2 Industrial Edition. If you find yourself in need of a replacement, use our rapid replacement program for the HoloLens 2 Industrial Edition.
 
 ### Is the carrying case clean room approved?
 
-The carrying case is made of a porous material and should not be used in clean rooms.
+The carrying case is made of a porous material and shouldn't be used in clean rooms.
 
 ## Cleaning the Industrial Edition
 
@@ -78,13 +78,13 @@ Much of the advice for cleaning the standard HoloLens 2 applies to the HoloLens 
 
 ### How should I hold HoloLens 2 Industrial Edition when cleaning it?
 
-Firmly from the brow pad. By holding the HoloLens 2 from the brow pad you put the least amount of pressure on the arms of the device and ensure its longevity.
+Firmly from the brow pad. By holding the HoloLens 2 from the brow pad, you put the least amount of pressure on the arms of the device and ensure its longevity.
 
 ## General questions
 
 ### What operating system does the HoloLens 2 Industrial Edition have?
 
-The Industrial Edition has the same OS as all other HoloLens 2 editions. For more information on HoloLens OS updates [read our release notes](hololens-release-notes.md).
+The Industrial Edition has the same OS as all other HoloLens 2 editions. For more information on HoloLens OS updates, [read our release notes](hololens-release-notes.md).
 
 ### What apps can run-on the HoloLens 2 Industrial Edition?
 
@@ -92,4 +92,4 @@ HoloLens 2 Industrial Edition supports both 1st and 3rd party apps, with a selec
 
 ### Can I upgrade from HoloLens 2 to HoloLens 2 Industrial Edition?
 
-We do not offer upgrades from HoloLens 2 to HoloLens 2 Industrial Edition.
+We don't offer upgrades from HoloLens 2 to HoloLens 2 Industrial Edition.

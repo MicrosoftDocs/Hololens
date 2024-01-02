@@ -32,22 +32,22 @@ Before you get started, make sure you have the following available:
 
 ## Set up Windows
 
-The first time you start your HoloLens 2, your first task is to set up Windows Holographic.  When you start your HoloLens, you will hear music and see a Microsoft logo.
+The first time you start your HoloLens 2, your first task is to set up Windows Holographic.  When you start your HoloLens, you'll hear music and see a Microsoft logo.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGGk]
 
 <br/>
 <img src="images/01-magic-moment.png" width="500px" alt="First screen during first boot">
 
-You will see a hummingbird flying around.
+You'll see a hummingbird flying around.
 
 <img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
 
-It will follow your hand.
+It follows your hand.
 
 <img src="images/hummingbird-2.png" width="500px" alt="Hummingbird flying close up">
 
-A button with a Microsoft logo will show up. Press the button, and HoloLens 2 will walk you through the following steps:
+A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks you through the following steps:
 
 1. Select your language.
 
@@ -57,7 +57,7 @@ A button with a Microsoft logo will show up. Press the button, and HoloLens 2 wi
 
     <img src="images/05-region.png" width="500px" alt="Select region">
 
-1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you log in. 
+1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you sign in. 
 
     1. First, you'll adjust your visor.
     
@@ -67,7 +67,7 @@ A button with a Microsoft logo will show up. Press the button, and HoloLens 2 wi
 
         <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
-        After calibration, holograms will appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
+        After calibration, holograms will appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and isn't associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
 
         <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
@@ -93,7 +93,7 @@ A button with a Microsoft logo will show up. Press the button, and HoloLens 2 wi
 1. Sign in to your user account. You'll choose between **My work or school owns it** and **I own it**.
 
     ![Set user.](images/13-device-owner.png)
-    - When you choose **My work or school owns it**, you sign in with a Microsoft Entra account. If your organization uses Microsoft Entra ID P1 or P2 and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Microsoft Entra ID P1 or P2, automatic MDM enrollment isn't available. In that case, you need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
+    - When you choose **My work or school owns it**, you sign in with a Microsoft Entra account. If your organization uses Microsoft Entra ID P1 or P2 and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization doesn't use Microsoft Entra ID P1 or P2, automatic MDM enrollment isn't available. In that case, you need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
 
         1. Enter your organizational account information.
         1. Accept the privacy statement and the end user license agreement.
@@ -106,7 +106,7 @@ A button with a Microsoft logo will show up. Press the button, and HoloLens 2 wi
         2. Enter your password. If your Microsoft account requires [two-step verification (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), complete the verification process.
 
         
-1. Setup Iris sign-in by selecting **Next**. You will go through a similar experience to the eye calibration. Select **Done** when the scan is complete. You may also select **Skip** to bypass this step.
+1. Set up Iris sign-in by selecting **Next**. You'll go through a similar experience to the eye calibration. Select **Done** when the scan is complete. You may also select **Skip** to bypass this step.
     
     <img src="images/setup-iris.png" width="500px" alt="Iris setup">
 
@@ -114,7 +114,7 @@ A button with a Microsoft logo will show up. Press the button, and HoloLens 2 wi
 
      
   
-1. You'll setup a PIN to log into the device. This PIN is device specific. 
+1. You'll set up a PIN to sign in the device. This PIN is device specific. 
 
     ![Setup Windows Hello.](images/setup-windows-hello.png)
 
@@ -131,7 +131,7 @@ A button with a Microsoft logo will show up. Press the button, and HoloLens 2 wi
     
     <img src="images/setup-location-services.png" width="500px" alt="Enable location services">
 
-1. Select your telemetry level. If you can, please enable Optional telemetry. This information really helps the HoloLens engineering team.
+1. Select your telemetry level. If you can, enable Optional telemetry. This information really helps the HoloLens engineering team.
 
     <img src="images/24-telemetry.png" width="500px" alt="Telemetry level">
 

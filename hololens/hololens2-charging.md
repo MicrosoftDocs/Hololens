@@ -27,11 +27,11 @@ If the device is correctly booted and running, there are three ways to check the
 
 - From the main menu of the HoloLens device UI.
 - View the LED close to the power button (for a 40-percent charge, you should see at least two solid LEDs).
-    - When the device is charging, the battery indicator lights up to indicate the current level of charge.  The last light will fade in and out to indicate active charging.
+    - When the device is charging, the battery indicator lights up to indicate the current level of charge.  The last light fades in and out to indicate active charging.
     - When your HoloLens is on, the battery indicator displays the battery level in five increments.
     - When only one of the five lights is on, the battery level is below 20 percent.
-    - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
-- On your host PC, open **File Explorer** and look for your HoloLens 2 device on left side under **This PC**. Right-click the device, and select **Properties**. A dialog box will show the battery charge level.
+    - If the battery level is critically low and you try to turn on the device, one light blinks briefly, then go out.
+- On your host PC, open **File Explorer** and look for your HoloLens 2 device on left side under **This PC**. Right-click the device, and select **Properties**. A dialog box shows the battery charge level.
 
    ![A HoloLens 2 properties screen shows battery change level.](images/ResetRecovery2.png)
 
@@ -53,11 +53,11 @@ Battery packs that meet the specifications above can be used with HoloLens 2. Ho
 
 ### Managing Heat
 
-As with any device, charging HoloLens generates heat. The more rapid the charge, the more heat is generated. Also, starting a charge at a lower battery level will generate more heat than starting a charge when the battery is mostly full. Customers who need to operate HoloLens for extended periods of time in hot environments can use the following techniques:
+As with any device, charging HoloLens generates heat. The more rapid the charge, the more heat is generated. Also, starting a charge at a lower battery level generates more heat than starting a charge when the battery is mostly full. Customers who need to operate HoloLens for extended periods of time in hot environments can use the following techniques:
 
 - It's OK to connect HoloLens 2 to an external power source even when the internal battery is fully charged.
-- When an external battery is depleted, HoloLens will continue operating on its internal battery.    
-- If heat is still an issue after following steps above, consider using a charger or battery pack that limits charging to 1.5A. Note that this option won't provide as much operating time since the internal battery will still slowly deplete.
+- When an external battery is depleted, HoloLens continues operating on its internal battery.    
+- If heat is still an issue after following steps above, consider using a charger or battery pack that limits charging to 1.5A. This option won't provide as much operating time since the internal battery will still slowly deplete.
 
 ## Troubleshooting
 

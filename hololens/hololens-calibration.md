@@ -49,18 +49,18 @@ If calibration was successful, you'll see a success screen.  If not, read more a
 
 Eye tracking is used to enable two capabilities:
 
-1. Eye position tracking which the system uses internally to enable comfortable and quality viewing experience.
+1. Eye position tracking that the system uses internally to enable comfortable and quality viewing experience.
 1. Eye gaze tracking, gaze vectors for where the user is looking which developers can use for input and interactions.
 
-The calibration app can be run during OOBE, from the Settings app, or if an uncalibrated user launches an app that uses eye tracking. Multiple users can share a HoloLens 2 device, without a need for each person to go through device setup with their own login account. Up to 50 recently used calibration profiles are stored on the device. When a user that has previously calibrated visuals puts the device back on their head, the display seamlessly adjusts for quality and a comfortable viewing experience.
+The calibration app can be run during OOBE, from the Settings app, or if an uncalibrated user launches an app that uses eye tracking. Multiple users can share a HoloLens 2 device, without a need for each person to go through device setup with their own sign-in account. Up to 50 recently used calibration profiles are stored on the device. When a user that has previously calibrated visuals puts the device back on their head, the display seamlessly adjusts for quality and a comfortable viewing experience.
 
 From a data and privacy perspective:
 
 - For Eye gaze tracking, we provide the combined gaze vector of where the person is looking (this is computed from eye images in memory). Left/Right eye gazes are also now available.  
-- For Eye position tracking when a person goes through the calibration experience, we store calibration information locally on device correlated with bit codes from the Iris patterns. These are separate instances of iris bit codes from the ones used to login. This is then used to automatically pull in the right calibration for the person who has used the device before (so there is no need to redo calibration every time) and adjust the device.
-- Calibration is not associated with a specific login account; it is account agnostic. All calibration data is stored securely on the device locally and only available to the system. Stored calibration information can be deleted through the settings app on the device.
+- For Eye position tracking when a person goes through the calibration experience, we store calibration information locally on device correlated with bit codes from the Iris patterns. These are separate instances of iris bit codes from the ones used to sign in. This is then used to automatically pull in the right calibration for the person who has used the device before (so there's no need to redo calibration every time) and adjust the device.
+- Calibration isn't associated with a specific sign-in account; it's account agnostic. All calibration data is stored securely on the device locally and only available to the system. Stored calibration information can be deleted through the settings app on the device.
 
-For additional information please refer to our online documentation:
+For more information, see our online documentation:
 
 - [Eye Tracking on HoloLens 2](/windows/mixed-reality/design/eye-tracking)
 - [Eye-gaze based interaction on HoloLens 2](/windows/mixed-reality/design/eye-gaze-interaction)
@@ -108,7 +108,7 @@ If the user chooses to launch the Eye Tracking Calibration, the focus should ret
 
 ### Calibration data and security
 
-Calibration information is stored locally on the device and isn't associated with any account information. There's no record of who has used the device without calibration. This means new users will get prompted to calibrate visuals when they use the device for the first time, and users who opted out of calibration previously or if calibration was unsuccessful.
+Calibration information is stored locally on the device and isn't associated with any account information. There's no record of who has used the device without calibration. This means new users get prompted to calibrate visuals when they use the device for the first time, and users who opted out of calibration previously or if calibration was unsuccessful.
 
 The device can locally store up to 50 calibration profiles. After this number is reached, the device automatically deletes the oldest unused profile.
 
@@ -118,7 +118,7 @@ Calibration information can always be deleted from the device in **Settings** > 
 
 #### Eye calibration behavior on HoloLens 2 builds 20H2 and newer
 
-With the inception of [Auto Eye Position Support](hololens-release-notes-2004.md#auto-eye-position-support)  as of Windows Holographic, version 20H2, you don't have to disable calibration. The calibration prompt appears automatically only if you are using an Eye Tracking-enabled app.
+With the inception of [Auto Eye Position Support](hololens-release-notes-2004.md#auto-eye-position-support)  as of Windows Holographic, version 20H2, you don't have to disable calibration. The calibration prompt appears automatically only if you're using an Eye Tracking-enabled app.
 
 #### Disabling eye calibration on HoloLens 2 older builds
 

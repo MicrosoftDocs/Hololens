@@ -23,7 +23,7 @@ This article describes how to resolve several issues or answer questions regardi
 - [Wi-Fi Troubleshooting](#wi-fi-troubleshooting)
 - [Network Troubleshooting](#network-troubleshooting)
 - [Can't sign in to a previously setup HoloLens device](#cant-sign-in-to-a-previously-setup-hololens-device)
-- [Can't login after updating to Windows Holographic 21H1](#cant-login-after-updating-to-windows-holographic-21h1)
+- [Can't sign in after updating to Windows Holographic 21H1](#cant-login-after-updating-to-windows-holographic-21h1)
 - [Autopilot Troubleshooting](#autopilot-troubleshooting)
 - [Update troubleshooting](#update-troubleshooting)
 - [Kiosk troubleshooting](#kiosk-troubleshooting)
@@ -149,9 +149,9 @@ If your device was previously set up for someone else, either for a client or fo
 
 ### Symptoms
 
-- Using PIN to logon will fail after entering the correct PIN.
-- Using the web logon method will fail after successfully signing in on the web page.
-- The device is not listed as “Microsoft Entra joined” in [Azure portal](https://portal.azure.com/) -> Microsoft Entra ID -> Devices.
+- Using PIN to sign in fails after entering the correct PIN.
+- Using the web sign-in method will fail after successfully signing in on the web page.
+- The device isn't listed as “Microsoft Entra joined” in [Azure portal](https://portal.azure.com/) -> Microsoft Entra ID -> Devices.
 
 ### Cause
 
@@ -160,11 +160,11 @@ The impacted device may have been deleted from the Microsoft Entra tenant. For e
 - An administrator or user deleted the device in the Azure portal or using PowerShell.
 - The device was removed from the Microsoft Entra tenant due to inactivity. For an efficiently managed environment, we typically recommend IT admins to [remove stale, inactive devices from their Microsoft Entra tenant](/azure/active-directory/devices/manage-stale-devices).
 
-When an impacted device attempts to contact the Microsoft Entra tenant again after it has been deleted, it will fail to authenticate with Microsoft Entra ID. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
+When an impacted device attempts to contact the Microsoft Entra tenant again after it has been deleted, it will fail to authenticate with Microsoft Entra ID. This effect is often invisible to the user of the device, as cached sign in via PIN will continue to allow the user to sign in.
 
 ### Mitigation
 
-There is currently no way to add a deleted HoloLens device back into Microsoft Entra ID. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](hololens-recovery.md#clean-reflash-the-device).
+There's currently no way to add a deleted HoloLens device back into Microsoft Entra ID. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](hololens-recovery.md#clean-reflash-the-device).
 
 [Back to list](#list)
 
@@ -180,7 +180,7 @@ The following articles may be a useful resource for you to learn more informatio
 
 ## Update troubleshooting
 
-If you are having issues updating your managed HoloLens devices please read this [troubleshooting guidance.](hololens-updates.md#troubleshooting-updates)
+If you are having issues updating your managed HoloLens devices, read this [troubleshooting guidance.](hololens-updates.md#troubleshooting-updates)
 
 ## Kiosk troubleshooting
 
@@ -218,6 +218,6 @@ Logging is limited to traces that can be captured in development or troubleshoot
 ## Questions about securing HoloLens devices
 
 See [our HoloLens 2 security information](security-overview.md).
-For HoloLens 1st Gen devices please review [this FAQ](hololens1-faq-security.yml).
+For HoloLens 1st Gen devices, review [this FAQ](hololens1-faq-security.yml).
 
 [Back to list](#list)

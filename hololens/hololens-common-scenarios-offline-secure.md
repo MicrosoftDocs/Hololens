@@ -54,7 +54,7 @@ Build a Secure Configuration Provisioning Package
 
    |     Item                                                |     Setting                       |     Description                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-   |     Accounts / Users                                    |     Local User Name & Password    |     For these offline devices, a single user name and password will need to be set and shared by all users of the device.          |
+   |     Accounts / Users                                    |     Local User Name & Password    |     For these offline devices, a single user name and password need to be set and shared by all users of the device.          |
    |     First Experience / HoloLens / SkipCalibration       |     True                          |     Skips calibration during initial device setup only                                                                             |
    |     First Experience / HoloLens / SkipTraining          |     True                          |     Skips device training during initial device setup                                                                              |
    |     First Experience / HoloLens / WiFi                  |     True                          |     Skips Wi-Fi config during initial device setup                                                                                 |
@@ -72,7 +72,7 @@ Build a Secure Configuration Provisioning Package
 
    Note the password and reset if desired.
 
-1. Navigate to UniversalAppInstall / UserContextApp and [configure the LOB app](app-deploy-provisioning-package.md) you will be deploying to these devices.
+1. Navigate to UniversalAppInstall / UserContextApp and [configure the LOB app](app-deploy-provisioning-package.md) you'll be deploying to these devices.
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot of where to add your app in WCD.](images/offline-secure-sample-wcd-usercontextapp2.png)
@@ -89,23 +89,23 @@ Build a Secure Configuration Provisioning Package
 
    ![HoloLens 2 clean reflash initial screen.](images/ARC2.png)
 
-1. On the next screen select **Manual package selection**.
+1. On the next screen, select **Manual package selection**.
 
    ![HoloLens 2 ARC info screen.](images/arc_device_info.png)
 
 1. Navigate to the previously downloaded .ffu file, and select **Open**.
-1. At the Warning page select **Continue**.
+1. At the Warning page, select **Continue**.
 
    ![HoloLens 2 ARC warning screen.](images/arc_warning.png)
 
 1. Wait for the ARC tool to complete the HoloLens 2 OS install.
-1. Once the device completes the install and boots back up, from your PC navigate to File Explorer and copy the previously saved PPKG file over to the device folder.
+1. Once the device completes the install and boots backup, from your PC navigate to File Explorer and copy the previously saved PPKG file over to the device folder.
 
    > [!div class="mx-imgBorder"]
    > ![PPKG file on PC in File Explorer window.](images/offline-secure-file-explorer.png)
 
 1. On the HoloLens 2, press the following button combo to run the Provisioning Package: Tap **Volume Down** and **Power Button** at the same time.
-1. You will be prompted to apply the Provisioning Package, select **Confirm**
+1. You'll be prompted to apply the Provisioning Package, select **Confirm**
 1. Once the provisioning package completes select **OK**.
 1. You should then be prompted to sign into the device with the shared local account and password.
 
@@ -114,4 +114,4 @@ Build a Secure Configuration Provisioning Package
 
 ## Maintain
 
-With this configuration, it is recommended to restart the process above and reflash the device with the ARC tool and apply a new PPKG to make any updates to the OS and/or application(s).
+With this configuration, it's recommended to restart the process above and reflash the device with the ARC tool and apply a new PPKG to make any updates to the OS and/or application(s).

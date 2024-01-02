@@ -42,12 +42,12 @@ sections:
       - question: |
           What frequency range and channels does the device operate on and is it configurable?
         answer: |
-          * Wi-Fi: The frequency range is not user configurable and depends on the country of use. In the US, Wi-Fi uses both 2.4 GHz (1-11) channels and 5 GHz (36-64, 100-165) channels.
+          * Wi-Fi: The frequency range isn't user configurable and depends on the country of use. In the US, Wi-Fi uses both 2.4 GHz (1-11) channels and 5 GHz (36-64, 100-165) channels.
           * Bluetooth: Bluetooth uses the standard 2.4-2.48 GHz range.
       - question: |
           Can the device allow or block specific frequencies?
         answer: |
-          * This is not controllable by the user/device.
+          * This isn't controllable by the user/device.
 
       - question: |
           What is the power level for both transmit and receive? Is it adjustable? What is the range of operation?
@@ -59,14 +59,14 @@ sections:
           * 2-3 hrs of active use and up to two weeks of standby time
           * Battery lifetime is unavailable.
       - question: |
-          What is transmit and receive behavior when a tool is not in range?
+          What is transmit and receive behavior when a tool isn't in range?
         answer: |
           * HoloLens transmit/receive follows the standard Wi-Fi/Bluetooth pattern. At the edge of its range, you'll probably notice input getting choppy until it fully disconnects, but after you get back in range it should quickly reconnect.
 
       - question: |
           What is deployment density per square foot?
         answer: |
-          * This is dependent on your network infrastructure.
+          * This density is dependent on your network infrastructure.
 
       - question: |
           Can device use the infrastructure as a client?
@@ -76,7 +76,7 @@ sections:
       - question: |
           What protocol is used?
         answer: |
-          * HoloLens does not use any proprietary protocols
+          * HoloLens doesn't use any proprietary protocols
 
       - question: |
           OS update frequency – What is the frequency of OS updates for the HL?  Is there a set schedule?  Does Microsoft release security patches as needed, etc.
@@ -86,7 +86,7 @@ sections:
       - question: |
           OS hardening – What options are there to harden the OS?  Can we remove or shut down unnecessary apps or services?
         answer: |
-          * HoloLens behaves like a smartphone. It is comparable to other modern Windows devices. HoloLens can be managed by either Microsoft Intune or other Modern Device Management Solutions, like MobileIron, Airwatch, or Soti. There are Policies you can set in these Management Systems to put Security policies on the device and in order to harden the device. There is also the option in deleting any unnecessary applications if wanted.
+          * HoloLens behaves like a smartphone. It's comparable to other modern Windows devices. HoloLens can be managed by either Microsoft Intune or other Modern Device Management Solutions, like MobileIron, Airwatch, or Soti. There are Policies you can set in these Management Systems to put Security policies on the device and in order to harden the device. There's also the option in deleting any unnecessary applications if wanted.
 
       - question: |
           How will software applications be managed and updated? What control do we have to define what apps are loaded and app update process for apps that are living in the Microsoft store?
@@ -111,17 +111,17 @@ sections:
       - question: |
           Is there an ability to control or disable the use of ports on the device?
         answer: |
-          * The HoloLens only contains two ports (one for headphones and one for charging or connecting to PCs). There is not ability to disable the port due to functionality and recovery reasons.
+          * The HoloLens only contains two ports (one for headphones and one for charging or connecting to PCs). There isn't ability to disable the port due to functionality and recovery reasons.
 
       - question: |
           Antivirus, endpoint detection, IPS, app control allowlist – Any ability to run antivirus, endpoint detection, IPS, app control allowlist, etc.
         answer: |
-          * Windows Holographic for Business (commercial suite) does support Windows Defender Smart Screen. If an antivirus company were to create and publish their app to the Universal Windows Platform, it could be downloaded on HoloLens. At present, no companies have done this for HoloLens.
+          * Windows Holographic for Business (commercial suite) does support Windows Defender Smart Screen. If an antivirus company were to create and publish their app to the Universal Windows Platform, it could be downloaded on HoloLens. Now, no companies have done this for HoloLens.
           * Allowing apps is possible by using the Microsoft Enterprise Store, where you can choose only what specific apps can be downloaded. Also, through MDM you can lock what specific apps can be run or even seen on the device.
       - question: |
-          Can we quarantine the device from prod network until we update the device if it has been offline for an extended period of time?  Ex. Device has been sitting in a drawer not powered up for a period (six months) and has not received any updates, patches, etc.  When it tries to come on the network, can we flag it and say you must update on another network prior to being complaint to join the network.
+          Can we quarantine the device from prod network until we update the device if it has been offline for an extended period of time?  Ex. Device has been sitting in a drawer not powered up for a period (six months) and hasn't received any updates, patches, etc.  When it tries to come on the network, can we flag it and say you must update on another network prior to being complaint to join the network.
         answer: |
-          * This is something that can be managed on the infrastructure level by either an MDM or an on-prem server. The device can be flagged as not compliant if it does not meet a specified Update version.
+          * This is something that can be managed on the infrastructure level by either an MDM or an on-premises server. The device can be flagged as not compliant if it doesn't meet a specified Update version.
 
       - question: |
           Does Microsoft include any back doors or access to services that allows Microsoft to connect to the device for screen sharing or remote support at will?

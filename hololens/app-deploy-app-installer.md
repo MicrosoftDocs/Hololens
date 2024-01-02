@@ -18,7 +18,7 @@ appliesto:
 > [!NOTE]
 > This feature was made available in [Windows Holographic, version 20H2 – December 2020 Update](hololens-release-notes.md). Ensure your device is [updated](hololens-update-hololens.md) to use this feature.
 
-We have **added a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature will be **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer will be **not be available for managed devices** at this time.  
+We have **added a new capability (App Installer) to allow you to install applications more seamlessly** on your HoloLens 2 devices. The feature is **on by default for unmanaged devices**. To prevent disruption to enterprises, app installer is **not be available for managed devices** at this time.  
 
 A device is considered “managed” if **any** of the following are true:
 
@@ -26,7 +26,7 @@ A device is considered “managed” if **any** of the following are true:
 - Configured with [provisioning package](hololens-provisioning.md)
 - User [Identity](hololens-identity.md) is Microsoft Entra ID
 
-You are now able to install Apps without needing to enable Developer Mode or using Device Portal.  Download (over USB or through Microsoft Edge) the Appx Bundle to your device and navigate to the Appx Bundle in the File Explorer to be prompted to kick off the installation.  Alternatively, [initiate an install from a web page](/windows/msix/app-installer/installing-windows10-apps-web). Just like apps you install from the Microsoft Store or sideload using MDM’s LOB App deployment capability, apps need to be digitally signed with the [Sign Tool](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) and the [certificate used to sign must be trusted](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) by the HoloLens device before the app can be deployed.
+You're now able to install Apps without needing to enable Developer Mode or using Device Portal.  Download (over USB or through Microsoft Edge) the Appx Bundle to your device and navigate to the Appx Bundle in the File Explorer to be prompted to kick off the installation.  Alternatively, [initiate an install from a web page](/windows/msix/app-installer/installing-windows10-apps-web). Just like apps you install from the Microsoft Store or sideload using MDM’s LOB App deployment capability, apps need to be digitally signed with the [Sign Tool](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) and the [certificate used to sign must be trusted](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) by the HoloLens device before the app can be deployed.
 
 ## Requirements
 
@@ -54,9 +54,9 @@ Apps that are installed via this method must be digitally signed. You'll need to
 
 ## Installation method
 
-1. Check that your device is not considered managed.
-1. Check that your HoloLens 2 device is powered on and you are signed in.
-1. On your PC navigate to your custom app, and copy yourapp.appxbundle to yourdevicename\Internal Storage\Downloads.
+1. Check that your device isn't considered managed.
+1. Check that your HoloLens 2 device is powered on and you're signed in.
+1. On your PC navigate to your custom app, and copy your app.appxbundle to yourdevicename\Internal Storage\Downloads.
     After you finish copying your file, you may disconnect your device and finish the install later.
 1. From your HoloLens 2 device Open the **Start Menu**, select **All apps** and launch the **File Explorer** app.
 1. Navigate to the Downloads folder. You may need to on the left panel of the app select **This device** first, then navigate to Downloads.
@@ -73,7 +73,7 @@ If your app failed to install,  check the following to troubleshoot:
 
 - Your app is either a Master or Release build.
 - Your device is updated to a build on which this feature is available.
-- You are [connected to the internet](hololens-network.md).
+- You're [connected to the internet](hololens-network.md).
 - Your [endpoints for the Microsoft Store](hololens-offline.md) are correctly configured.  
 
 ## Web Installer
@@ -92,7 +92,7 @@ Users can install an app directly from a web server. This flow takes use of the 
 
 The app will now install to the device. To find the app, open the **Start menu** and select the **All apps** button to find your app.
 
-- For more help with troubleshooting the app installer installation method visit [troubleshoot app installer issues](/windows/msix/app-installer/troubleshoot-appinstaller-issues).
+- For more help with troubleshooting the app installer installation method, visit [troubleshoot app installer issues](/windows/msix/app-installer/troubleshoot-appinstaller-issues).
 
 > [!NOTE]
 > UI during the update process is not supported. So the ShowPrompt option on [this page](/windows/msix/app-installer/update-settings) and related options are not supported.

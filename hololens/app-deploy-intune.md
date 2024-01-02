@@ -36,13 +36,13 @@ To make your app available for download to devices enrolled through the company 
 
 ## End-User Experience
 
-After you have set up configuration on Intune, you are ready for end users to receive your selected apps.
+After you have set up configuration on Intune, you're ready for end users to receive your selected apps.
 
 Follow these steps to automatically get your app(s):
 
 1. Enroll your device with your tenant.
 2. Once your device has completed enrollment, you should receive the app on your device.
-3. If you are not seeing you app immediately, go to **Settings** > **Accounts** > **Work or School** > *your account* Info, and scroll down to see information on installed app status.
+3. If you aren't seeing your app immediately, go to **Settings** > **Accounts** > **Work or School** > *your account* Info, and scroll down to see information on installed app status.
 
 How to get to apps through the Company Portal:
 
@@ -56,4 +56,4 @@ How to get to apps through the Company Portal:
 
 ## About LOB app updates
 
-LOB apps check for updates and status changes independently of syncs with Intune. This is due to the larger size of app than policies. In general Intune will automatically reinstall, update, or remove a required app within 24 hours, rather than waiting for the 7 day re-evaluation cycle. There are certain conditions that will cause Intune to update, reinstall, or remove an app in the 24 hour windows. To read the up-to-date list of triggers, please read more about [installing, updating, or removing required apps](/mem/intune/apps/apps-add#installing-updating-or-removing-required-apps).
+LOB apps check for updates and status changes independently of syncs with Intune. This is due to the larger size of app than policies. In general Intune will automatically reinstall, update, or remove a required app within 24 hours, rather than waiting for the 7 day reevaluation cycle. There are certain conditions that cause Intune to update, reinstall, or remove an app in the 24 hour windows. To read the up-to-date list of triggers, read more about [installing, updating, or removing required apps](/mem/intune/apps/apps-add#installing-updating-or-removing-required-apps).

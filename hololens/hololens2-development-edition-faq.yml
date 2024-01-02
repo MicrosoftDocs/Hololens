@@ -41,12 +41,12 @@ sections:
       - question: |
           Can I "upgrade" my HoloLens 2 (device only) device to the HoloLens 2 Development Edition to get the trial credits?
         answer: |
-          No, we do not offer device transfer plans. There is no ability to transfer from any edition to any other edition.
+          No, we don't offer device transfer plans. There's no ability to transfer from any edition to any other edition.
 
       - question: |
           What is Unity Pro?
         answer: |
-          Unity Pro is a real-time 3D platform for small/mid-sized studios/firms. It’s designed for teams with a mix of technical and non-technical skills. [Learn more](https://store.unity.com/products/unity-pro)
+          Unity Pro is a real-time 3D platform for small/mid-sized studios/firms. It’s designed for teams with a mix of technical and nontechnical skills. [Learn more](https://store.unity.com/products/unity-pro)
           
       - question: |
           What is Pixyz Plugin?
@@ -106,7 +106,7 @@ sections:
       - question: |
           Can I run released (sideload or store) applications on my HoloLens 2 Development Edition device?
         answer: |
-          If you are abiding by the HoloLens 2 Development Edition terms and conditions, yes, you can run any released application on the Developer Edition. We do not limit the use of sideloaded or stored applications for this SKU.
+          If you're abiding by the HoloLens 2 Development Edition terms and conditions, yes, you can run any released application on the Developer Edition. We don't limit the use of sideloaded or stored applications for this SKU.
 
       - question: |
           Where can I learn more about the HoloLens 2 Development Edition?
@@ -135,7 +135,7 @@ sections:
         answer: |
           A three-calendar month Unity Pro trial enables access to Unity&#39;s complete solution for professionals to create, operate, and monetize. The related Unity Pro trial has no deadline to redeem.
           
-          This offering is for new users and does not apply to established Unity Pro subscriptions. Unity Pro trial may be subject to additional terms that will be made available at redemption. Review applicable [terms &amp; conditions](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) and [privacy policy](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
+          This offering is for new users and doesn't apply to established Unity Pro subscriptions. Unity Pro trial may be subject to more terms that will be made available at redemption. Review applicable [terms &amp; conditions](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) and [privacy policy](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
           
       - question: |
           How can I redeem my Unity Pro trial?
@@ -166,7 +166,7 @@ sections:
         answer: |
           A three-calendar month Pixyz Plugin trial that enables access to Pixyz to create ready-to-use assets with perfect tessellated meshes, limited polygon count, and automatic UV. The related Pixyz plugin trial has no deadline to redeem.
           
-          This offering is for new users and does not stack on to established Pixyz subscriptions. Pixyz plugin may be subject to additional terms that will be made at redemption. Review applicable [terms &amp; conditions](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) and [privacy policy](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
+          This offering is for new users and doesn't stack on to established Pixyz subscriptions. Pixyz plugin may be subject to more terms that will be made at redemption. Review applicable [terms &amp; conditions](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) and [privacy policy](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
           
       - question: |
           How can I redeem my Pixyz Plugin trial?
@@ -183,9 +183,9 @@ sections:
       - question: |
           How do I contact Pixyz support?
         answer: |
-          To get help with any questions about your Unity ID, account, organization(s) and subscription(s), please visit support.unity3d.com
+          To get help with any questions about your Unity ID, account, organization(s) and subscription(s), visit support.unity3d.com
           
-          For Pixyz-specific support (after redeeming your trial), please visit [Pixyz-software.com/support](http://pixyz-software.com/support)
+          For Pixyz-specific support (after redeeming your trial), visit [Pixyz-software.com/support](http://pixyz-software.com/support)
           
           
   - name: Azure

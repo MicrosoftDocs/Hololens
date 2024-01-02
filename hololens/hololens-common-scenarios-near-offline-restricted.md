@@ -17,9 +17,9 @@ appliesto:
 
 ## Overview
 
-This guide provides guidance for deploying HoloLens 2 in areas where networking is restricted. This could either be for secure environments or for areas where networking cannot be assured such as power plants, ships, or other areas.
+This guide provides guidance for deploying HoloLens 2 in areas where networking is restricted. This could either be for secure environments or for areas where networking can't be assured such as power plants, ships, or other areas.
 
-This scenario is designed to deliver the best user and administrator experience. This scenario allows for the use of Microsoft Entra ID, Intune, Windows updates and multiple user support with IRIS sign-in, whilst meeting the needs of organizations who have additional security or networking challenges.
+This scenario is designed to deliver the best user and administrator experience. This scenario allows for the use of Microsoft Entra ID, Intune, Windows updates and multiple user support with IRIS sign-in, whilst meeting the needs of organizations who have more security or networking challenges.
 
 > [!NOTE]
 > This scenario describes one possible approach. We expect each organization deploying in this scenario will have unique requirements, which can be mapped into this solution as required.
@@ -45,7 +45,7 @@ This guide assumes the following services are being used:
 
 ### Determine level of network connection during usage
 
-Consider whether or not devices will be connected to a network during usage:
+Consider whether or not devices are connected to a network during usage:
 
 - If devices are able to be connected, then more services can be used such as D365 Remote Assist or D365 Guides.
 - LOB applications can be developed to use local data storage either on device, or on a server contained within the organizations network.
