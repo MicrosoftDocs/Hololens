@@ -38,7 +38,7 @@ This feature is currently available in Windows Holographic 20H2 builds for HoloL
 
 Your app’s Solution Configuration must be either **Master** or **Release** as the App Installer will use dependencies from the store. See more about [creating app packages](/windows/msix/app-installer/create-appinstallerfile-vs).
 
-Apps that are installed via this method must be digitally signed. You'll need to use a certificate to sign the app. You can either get a certificate from the [MS Trusted CA List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT), in which case you won't need to take any extra action. Or you can sign your own certificate however that certificate will need to be pushed onto the device.
+Apps that are installed via this method must be digitally signed. You need to use a certificate to sign the app. You can either get a certificate from the [MS Trusted CA List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT), in which case you won't need to take any extra action. Or you can sign your own certificate; however, that certificate needs to be pushed onto the device.
 
 - How to sign apps [using the Sign Tool.](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
@@ -59,7 +59,7 @@ Apps that are installed via this method must be digitally signed. You'll need to
 1. On your PC navigate to your custom app, and copy your app.appxbundle to yourdevicename\Internal Storage\Downloads.
     After you finish copying your file, you may disconnect your device and finish the install later.
 1. From your HoloLens 2 device Open the **Start Menu**, select **All apps** and launch the **File Explorer** app.
-1. Navigate to the Downloads folder. You may need to on the left panel of the app select **This device** first, then navigate to Downloads.
+1. Navigate to the Downloads folder. You need to on the left panel of the app select **This device** first, then navigate to Downloads.
 1. Select the yourapp.appxbundle file.
 1. The App Installer will launch. Select the **Install** button to install your app.
 
