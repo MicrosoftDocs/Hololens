@@ -14,7 +14,7 @@ appliesto:
 
 # HoloLens 2 new user best practices
 
-Often organizations have many devices and lots of different people who use those devices. When people are looking to use a HoloLens 2 device, they often want to get straight to their app. This can sometimes be hindered by having to do more setup. In this article we’ll cover the best ways to reduce setup time, best practices, and cover variations in logging into a device.
+Often organizations have many devices and lots of different people who use those devices. When people are looking to use a HoloLens 2 device, they often want to get straight to their app. This expectation can sometimes be hindered by having to do more setup. In this article, we cover the best ways to reduce setup time, best practices, and cover variations in logging into a device.
 
 > [!NOTE]
 > In all these scenarios we’re talking about scenarios in which a second user can use the device, so all these scenarios use Microsoft Entra identities.
@@ -25,13 +25,13 @@ The following are the average lengths for each scenario.
 
 | Scenario start to app launch                                                    | Average time in minutes | Best practices |
 |---------------------------------------------------------------------------------|-------------------------|---|
-| User exists on device, sign in existing account                                                 | Under a minute                    | - [Use a device you've used before](#use-a-device-you-have-already-used-to-get-to-your-app-fastest) <br> - [Use labels](#physically-label-your-devices) <br> - [Fast logins](#fastest-to-log-in-to-an-existing-account)    |
+| User exists on device, sign in existing account                                                 | Under a minute                    | - [Use a device already used](#use-a-device-you-have-already-used-to-get-to-your-app-fastest) <br> - [Use labels](#physically-label-your-devices) <br> - [Fast logins](#fastest-to-log-in-to-an-existing-account)    |
 | New user on device                                                              | Short                                             | - [Quick add user](#adding-your-user-to-an-existing-device) <br> - [Set up flows](#set-up-flows)   |
 | Device needs to go through first-time setup or the Out of Box Experience (OOBE)                             | Moderate              | - [Fast first set up](#setting-up-a-device-for-the-first-time) <br> - [Pre set up person](#have-a-designated-setup-person) <br> - [Use policies](#use-policies-to-speed-up-your-setup) <br> - [Set up flows](#set-up-flows)    |
 
-### Use a device you have already used to get to your app fastest
+### Use an already used device to get to your app fastest
 
-The key take away from this chart, is if you can use a device you’ve used before then you can sign in and use the app in less than a minute. If you have to go through setup, then you’ll take a few minutes. We highly suggest you [physically label your devices](#physically-label-your-devices).
+The key take away from this chart, is if you can use a device you’ve used before then you can sign in and use the app in less than a minute. If you have to go through setup, then you take a few minutes. We highly suggest you [physically label your devices](#physically-label-your-devices).
 
 ### Have a designated setup person
 
@@ -42,14 +42,14 @@ Have someone at your location who sets up your devices. By setting up devices in
 If your devices are set up to go through [Autopilot](hololens2-autopilot.md), then take those devices through Autopilot. It will happen regardless, but by doing it now you save your end-user several minutes of time. Autopilot can apply helpful settings to speed up the new user process, and deploy your apps to the device.
 
 - If you have an Ethernet to USB-C adapter, you can plug in your devices the moment OOBE starts to begin autopilot without having to wear the devices.
-- You can also create a USB-C flash drive with a [provisioning package](hololens-provisioning.md) that contains your Wi-Fi info. Plug it in when OOBE starts, and confirm applying the provisioning package. Wi-fi will be detected and you can start Autopilot.
+- You can also create a USB-C flash drive with a [provisioning package](hololens-provisioning.md) that contains your Wi-Fi info. Plug it in when OOBE starts, and confirm applying the provisioning package. Wi-fi is detected and you can start Autopilot.
 - If you don't have those options available, then manually proceed through OOBE until Autopilot starts.
 
 #### Provision the device in advance
 
 You can use a [provisioning package](hololens-provisioning.md) to apply both helpful settings to speed up the new user process, and deploy your apps to the device. Take a look at [use policies to speed up your setup](#use-policies-to-speed-up-your-setup) to see which policies speed up device set up for the first user, and for each new user.
 
-If you complete OOBE and set yourself up as a user then when your end users pick up the device they'll simply have a scenario of adding themselves as a new user.
+If you complete OOBE and set yourself up as a user, then when your end users pick up the device, they have a scenario of adding themselves as a new user.
 
 #### Physically label your devices
 
@@ -59,7 +59,7 @@ By having a labeled device users can quickly pick up a device, they've used befo
 
 ### Fastest to log in to an existing account
 
-When signing back into a device, there are several methods you can use. We’ll cover the fastest three.
+When signing back into a device, there are several methods you can use. We cover the fastest three.
 
 - **Iris** : Once Iris is set up, either during OOBE or in Settings, a user can sign back in with Iris. This takes no input on behalf of the user and they’re instantly signed in when recognized.
 - **PIN** : A PIN has a minimum requirement of six numbers, this is much faster than typing in a lengthy password with multiple requirements.
