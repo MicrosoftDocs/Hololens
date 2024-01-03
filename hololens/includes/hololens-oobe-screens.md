@@ -32,4 +32,4 @@ Your device shows "Setting up your device for work" and is going through autopil
 If Autopilot starts and the battery is under 45%, you'll see an error. You'll need to charge it to at least 45% to continue.
 
 1. It's suggested you use the included charger, and that you're plugged into an outlet. Charging via a PC is slow and not recommended.
-1. When your device is charged to 45% or more, you can wake the device using the power button continue on from [Company logo and set up info](#company-logo-and-set-up-info-1).
+1. When your device is charged to 45% or more, you can wake the device using the power button continue on from [Company logo and set up info](#company-logo-and-setup-info).
