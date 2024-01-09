@@ -64,7 +64,7 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 Improvements and fixes in the update:
 
-- This update included Windows security updates.
+- Fixed an issue which cause temporary files cannot be fully cleaned up.
 
 ## Windows Holographic, version 23H2 - December 2023 Update
 
