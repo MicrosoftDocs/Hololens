@@ -36,7 +36,9 @@ ISVs that build their mixed reality solutions on Azure are larger and more profi
 
 Read [The Total Economic Impact Of Microsoft HoloLens 2 With Mixed reality Applications study](https://tei.forrester.com/go/microsoft/HoloLens2MRApps/?lang=en-us) and estimate your company's ROI:![Image shows the ROI for the global manufacturing scenario.](media/hololens-commercial-features/global-manufacturing-rois.png)
 
-What are the most impactful use cases with the highest return on investment?  Click here to see the ROI that your company can realize.![Visual shows three different types of ROI that a company can expect with HoloLens 2.](media/hololens-commercial-features/ms-mrpp-2024-forrester-roi.png)
+What are the most impactful use cases with the highest return on investment?  Click here to see the ROI that your company can realize.
+
+![Visual shows three different types of ROI that a company can expect with HoloLens 2.](media/hololens-commercial-features/ms-mrpp-2024-forrester-roi.png)
 
 Over half of Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
 
@@ -85,6 +87,7 @@ HoloLens 2 is the industrial metaverse technology that our customers use to deli
 
 
 
+
 ---
 
 :::row:::
@@ -105,6 +108,7 @@ Microsoft aims to make mixed reality accessible and intuitive for frontline work
 
 
 
+
 ---
 
 :::row:::
@@ -118,6 +122,7 @@ Microsoft aims to make mixed reality accessible and intuitive for frontline work
 Improving reliability and introducing direct inking to Dynamics 365 Guides.
 :::column-end:::
 :::row-end:::
+
 
 
 
@@ -147,6 +152,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
 
 
 
+
 ---
 
 :::row:::
@@ -158,6 +164,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
         HoloLens 2 customers are using mixed reality to expedite the ways they ensure process compliance, improve efficiency, and learn on the job with Microsoft Teams features in Dynamics 365 Guides.
     :::column-end:::
 :::row-end:::
+
 
 
 
@@ -183,6 +190,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
 
 
 
+
 ---
 
 :::row:::
@@ -194,6 +202,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
         The staff at Sheba Medical Center used HoloLens to train nurses and other support personnel on the use of ventilator machines that were being deployed by the hundreds during the COVID-19 pandemic.
     :::column-end:::
 :::row-end:::
+
 
 
 
@@ -219,6 +228,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
 
 
 
+
 ---
 
 :::row:::
@@ -230,6 +240,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
         Unless you’re a trained architectural engineer, it can be challenging to look at a 2D blueprint and visualize what a building will actually look like in 3D. 
     :::column-end:::
 :::row-end:::
+
 
 
 
@@ -249,6 +260,7 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
     :::column-end:::
 :::row-end:::
 <br>
+
 
 
 
