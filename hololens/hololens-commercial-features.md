@@ -34,9 +34,9 @@ ISVs that build their mixed reality solutions on Azure are larger and more profi
 *    28% more mixed reality customers
 *    15% higher mixed reality software gross margins
 
-Read [The Total Economic Impact Of Microsoft HoloLens 2 With Mixed reality Applications study](https://tei.forrester.com/go/microsoft/HoloLens2MRApps/?lang=en-us) and estimate your company's ROI:
+Read [The Total Economic Impact Of Microsoft HoloLens 2 With Mixed reality Applications study](https://tei.forrester.com/go/microsoft/HoloLens2MRApps/?lang=en-us) and estimate your company's ROI:![Image shows the ROI for the global manufacturing scenario.](media/hololens-commercial-features/global-manufacturing-rois.png)
 
-:::image type="content" alt-text="HoloLens 2 Forrester Info Graph" source="./images/forrester-info-graph.png":::What are the most impactful use cases with the highest return on investment?  Click here to see the ROI that your company can realize.![Visual shows three different types of ROI that a company can expect with HoloLens 2.](media/hololens-commercial-features/ms-mrpp-2024-forrester-roi.png)
+What are the most impactful use cases with the highest return on investment?  Click here to see the ROI that your company can realize.![Visual shows three different types of ROI that a company can expect with HoloLens 2.](media/hololens-commercial-features/ms-mrpp-2024-forrester-roi.png)
 
 Over half of Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
 
