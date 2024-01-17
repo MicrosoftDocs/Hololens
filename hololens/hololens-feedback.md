@@ -7,7 +7,7 @@ ms.custom:
 - CI 116157
 - CSSTroubleshooting
 audience: ITPro
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 keywords: feedback, bug, issue, error, troubleshoot, help
 ms.localizationpriority:

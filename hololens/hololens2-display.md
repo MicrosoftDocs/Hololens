@@ -4,7 +4,7 @@ description: Expectations for HoloLens 2 displays. Guidance for configuring disp
 ms.date: 8/13/2020
 ms.topic: article
 keywords: display, calibration, comfort, visuals, quality, ipd
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 

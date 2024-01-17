@@ -2,7 +2,7 @@
 title: Introducing the new Settings app
 description: Learn about the new Settings app
 keywords: HoloLens, settings, app picker, volume
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 

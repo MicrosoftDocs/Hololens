@@ -8,7 +8,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.topic: article
 audience: ITPro
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.reviewer: sekerawa
 appliesto:

@@ -5,7 +5,7 @@ ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.date: 3/7/2022
 ms.reviewer: qizho
 keywords: hololens, store, uwp, app, install
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: high

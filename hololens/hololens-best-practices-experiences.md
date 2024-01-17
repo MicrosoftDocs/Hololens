@@ -2,7 +2,7 @@
 title: Best Practices for creating ‘Experiences’ with HoloLens 2
 description: How to create an experience for your HoloLens 2 devices.
 ms.reviewer: channing.gardner
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.date: 11/8/2022
