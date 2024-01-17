@@ -7,7 +7,6 @@ metadata:
   title: Microsoft HoloLens # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Landing page for Microsoft HoloLens. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: hololens
-  ms.subservice: subservice # Optional; Remove if no subservice is used.
   ms.topic: landing-page # Required
   author: joyjaz #Required; your GitHub user alias, with correct capitalization.
   ms.author: v-jjaswinski #Required; microsoft alias of author; optional team alias. 
