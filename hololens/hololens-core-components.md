@@ -1,7 +1,7 @@
 ---
 title: Planning HoloLens 2 deployment in a commercial environment
 description: Learn about the core needs for deploying and managing HoloLens in enterprise environments, including infrastructure, Microsoft Entra ID, and Mobile Device Management.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
 audience: ITPro

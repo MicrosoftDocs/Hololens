@@ -4,7 +4,7 @@ description: Learn about the components that make up the Microsoft HoloLens 2, t
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 2/2/2023
 keywords: hololens
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: high

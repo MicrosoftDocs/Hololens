@@ -1,7 +1,7 @@
 ---
 title: HoloLens kiosk reference information
 description: Information and samples for kiosks on HoloLens devices. 
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

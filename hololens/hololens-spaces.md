@@ -7,7 +7,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.date: 09/16/2019
 keywords: hololens, Windows Mixed Reality, design, spatial mapping, HoloLens, surface reconstruction, mesh, head tracking, mapping
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: high

@@ -3,7 +3,7 @@ title: Collect and use diagnostic information from HoloLens devices
 description: Learn how to collect, use, and retain diagnostic information from HoloLens devices.
 ms.reviewer: lavinds
 ms.date: 9/12/2021
-ms.prod: hololens
+ms.service: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.topic: article

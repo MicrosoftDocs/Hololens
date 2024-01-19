@@ -3,7 +3,7 @@ title: Restart, reset, or recover HoloLens 1
 ms.reviewer: Keep up to date on the basic and advanced instructions for rebooting or resetting your HoloLens mixed reality device.
 description: How to use Windows Device Recovery Tool to flash an image to HoloLens 1st Gen.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, wdrt, windows device recovery tool
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.date: 06/01/2020
 ms.custom: 
