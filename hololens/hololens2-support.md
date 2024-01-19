@@ -2,7 +2,7 @@
 title: "Learn more about Mixed Reality support options"
 ms.reviewer: asergaz 
 description: Mixed Reality support options for small to large enterprise customers
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 ms.date: 3/19/2021
 ms.localizationpriority:

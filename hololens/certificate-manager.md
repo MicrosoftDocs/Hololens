@@ -1,7 +1,7 @@
 ---
 title: Certificate Manager
 description: Learn how to manually install, manage, and remove certificates on HoloLens 2 mixed reality devices.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

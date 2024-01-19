@@ -1,7 +1,7 @@
 ---
 title: HoloLens BitLocker Encryption
 description: Learn how to enable BitLocker device encryption to protect files stored on your HoloLens mixed reality devices.
-ms.prod: hololens
+ms.service: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.topic: article

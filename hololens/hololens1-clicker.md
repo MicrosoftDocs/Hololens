@@ -4,7 +4,7 @@ description:  This article outlines how to use the HoloLens clicker, including c
 ms.assetid: 7d4a30fd-cf1d-4c9a-8eb1-1968ccecbe59
 ms.date: 09/16/2019
 keywords: hololens
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

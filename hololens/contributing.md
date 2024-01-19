@@ -5,7 +5,7 @@ description: Learn how to contribute to the HoloLens technical documentation usi
 ms.date: 10/29/2021
 ms.localizationpriority:
 ms.topic: article
-ms.prod: hololens
+ms.service: hololens
 ---
 
 # Contributing to the HoloLens documentation

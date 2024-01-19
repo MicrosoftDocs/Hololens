@@ -4,7 +4,7 @@ description: Learn how to set up your HoloLens 2 for the first time over Wi-Fi n
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
 ms.date: 6/09/2021
 keywords: hololens
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: high

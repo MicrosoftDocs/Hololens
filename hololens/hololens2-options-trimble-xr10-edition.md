@@ -4,7 +4,7 @@ description: Learn about Trimble XR10 with HoloLens 2 and what to do after getti
 keywords: HoloLens 2 purchasing options, HoloLens options, Trimble XR10
 ms.reviewer: bogenera
 ms.date: 2/10/2022
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high

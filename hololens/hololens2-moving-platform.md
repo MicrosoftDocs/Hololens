@@ -5,7 +5,7 @@ keywords: moving platforms, dynamic motion, hololens, moving platform mode
 
 ms.reviewer: JoshuaElsdon
 ms.date: 2/15/2021
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high

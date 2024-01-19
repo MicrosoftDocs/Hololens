@@ -1,7 +1,7 @@
 ---
 title: Unlock Windows Holographic for Business features
 description: When you upgrade to Windows Holographic for Business, HoloLens provides extra features that are designed for business.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

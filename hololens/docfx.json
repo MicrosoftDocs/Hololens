@@ -32,7 +32,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/hololens/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Hololens",
-      "ms.technology": "windows",
+      "ms.subservice": "windows",
       "ms.topic": "article",
       "audience": "ITPro",
       "ms.author": "lolab",

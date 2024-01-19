@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 release notes
 description: Stay up to date with all the updates in each new HoloLens 2 release.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

@@ -4,7 +4,7 @@ description: Learn how to install, uninstall, and side load custom holographic a
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 9/3/2021
 keywords: hololens, hololens 2, sideload, side load, side-load, store, uwp, app, install
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
