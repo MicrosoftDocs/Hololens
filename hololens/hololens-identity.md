@@ -62,7 +62,7 @@ If you apply policies for sign-in, the policy is always respected. If no policy 
 
 ### Biometric data collection by HoloLens
 
-Biometric data (including head/hand/eye movements, iris scan) that this device collects is used for calibration, to improve reliable interactions and to enhance user experience.  We may share your data with third party apps on the device for the purpose of delivering certain functionality and features.  Go to Privacy Section in Settings for details on the License Agreement and Microsoft Privacy Statement.
+Biometric data (including head/hand/eye movements, iris scan) that this device collects is used for calibration, to improve reliable interactions and to enhance user experience.  As with other Windows devices, third party apps on the device may access your data on the device for the purpose of delivering certain functionality and features.  Go to Privacy Section in Settings for details on the License Agreement and Microsoft Privacy Statement.
 
 HoloLens Iris login is built on top of [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-overview). HoloLens stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn’t roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there’s no single collection point an attacker can compromise to steal biometric data.  
 
