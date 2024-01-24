@@ -2,7 +2,7 @@
 title: HoloLens environment considerations
 description: Get the best possible experience using HoloLens when you optimize the device for your eyes and environment.
 ms.date: 11/03/2021
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high

@@ -3,7 +3,7 @@ title: Capture, record, and share mixed reality photos and videos
 description: Learn how to capture, record, and view, and mixed reality photos and videos using HoloLens mixed reality devices. Learn how to share via Miracast or gathered files.
 keywords: hololens, photo, video, capture, mrc, mixed reality capture, photos, camera,  miracast, stream, livestream, demo, record
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 audience: ITPro

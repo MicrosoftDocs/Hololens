@@ -5,7 +5,7 @@ ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
 ms.reviewer: ruizhao
 manager: lolab
 keywords: HoloLens, wifi, wireless, internet, ip, ip address
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.date: 8/23/2022

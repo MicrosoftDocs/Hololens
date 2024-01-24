@@ -3,7 +3,7 @@ title: Common Scenarios – Offline Secure HoloLens 2
 description: Learn how to set up an offline secure deployment and app deployment scenario with provisioning for HoloLens devices.
 keywords: HoloLens, management, offline, offline secure
 ms.date: 1/31/2023
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.reviewer: aboeger
 ms.topic: article

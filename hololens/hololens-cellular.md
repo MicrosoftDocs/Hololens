@@ -2,7 +2,7 @@
 title: Connect to Cellular and 5G
 description: Connecting to cellular networks from your HoloLens mixed reality devices.
 ms.assetid: f1aaadce-8762-41f8-bfeb-3b6067a2ec78
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: high

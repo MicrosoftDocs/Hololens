@@ -2,7 +2,7 @@
 title: Set up HoloLens (1st gen)
 description: Learn how to set up your HoloLens (1st gen) for the first time over Wi-Fi network with either a Microsoft (MSA) or Microsoft Entra account.
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 ms.date: 8/12/2019
 ms.localizationpriority:
