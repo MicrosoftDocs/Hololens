@@ -90,37 +90,37 @@ A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks 
 1. Sign in to your user account. You choose between **My work or school owns it** and **I own it**.
 
     ![Set user.](images/13-device-owner.png)
-       - When you choose **My work or school owns it**, you sign in with a Microsoft Entra account. If your organization uses Microsoft Entra ID P1 or P2 and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Microsoft Entra ID P1 or P2, automatic MDM enrollment isn't available. In that case, you need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
 
-        1. Enter your organizational account information.
-        1. Accept the privacy statement and the end user license agreement.
-        1. Sign in by using your Microsoft Entra credentials. This may redirect to your organization's sign-in page.
-        1. Continue setting up the device.
+When you choose **My work or school owns it**, you sign in with a Microsoft Entra account. If your organization uses Microsoft Entra ID P1 or P2 and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Microsoft Entra ID P1 or P2, automatic MDM enrollment isn't available. In that case, you need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
 
-       - When you choose **I own it**, you sign in with a Microsoft account. After setup is complete, you can [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
 
-        1. Enter your Microsoft account information.
-        2. Enter your password. If your Microsoft account requires [two-step verification (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), complete the verification process.
 
-        
+```
+1. Enter your organizational account information.
+1. Accept the privacy statement and the end user license agreement.
+1. Sign in by using your Microsoft Entra credentials. This may redirect to your organization's sign-in page.
+1. Continue setting up the device.
+```When you choose **I own it**, you sign in with a Microsoft account. After setup is complete, you can [manually enroll HoloLens in device management](hololens-enroll-mdm.md#different-ways-to-enroll).
+
+
+
+```
+1. Enter your Microsoft account information.
+2. Enter your password. If your Microsoft account requires [two-step verification (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), complete the verification process.
+
 1. Setup Iris sign-in by selecting **Next**. You will go through a similar experience to the eye calibration. Select **Done** when the scan is complete. You may also select **Skip** to bypass this step.
-    
-    <img src="images/setup-iris.png" width="500px" alt="Iris setup">
+```<img src="images/setup-iris.png" width="500px" alt="Iris setup">
 
-    <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+<img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+```1. You setup a PIN to log into the device. This PIN is device specific. 
 
-     
-  
-1. You setup a PIN to log into the device. This PIN is device specific. 
+```
+![Setup Windows Hello.](images/setup-windows-hello.png)
 
-    ![Setup Windows Hello.](images/setup-windows-hello.png)
-   
-    ![Setup Windows Hello PIN.](images/windows-hello-pin.png)
-   
-    ![Windows Hello Setup successful.](images/windows-hello-successful.png) 
-   
-   
-1. Select whether to enable speech on HoloLens 2.
+![Setup Windows Hello PIN.](images/windows-hello-pin.png)
+
+![Windows Hello Setup successful.](images/windows-hello-successful.png) 
+```1. Select whether to enable speech on HoloLens 2.
 
     <img src="images/22-do-more-with-voice.png" width="500px" alt="Enable Cortana">
 
