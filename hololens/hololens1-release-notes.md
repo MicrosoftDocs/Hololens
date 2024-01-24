@@ -1,7 +1,7 @@
 ---
 title: HoloLens 1st (gen) release notes
 description: Learn about updates in each new HoloLens release.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

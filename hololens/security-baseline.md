@@ -4,7 +4,7 @@ description: For enabling and adding in extra
 
 manager: lolab
 reviewer: murugand
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

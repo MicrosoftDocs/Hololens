@@ -1,7 +1,7 @@
 ---
 title: Using Microsoft’s Endpoint Manager Intune to manage HoloLens devices
 description: Learn how to use MDM to configure CSP, policy, and manage HoloLens mixed reality devices at scale using Microsoft Intune. 
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.reviewer: lavinds
 ms.topic: article

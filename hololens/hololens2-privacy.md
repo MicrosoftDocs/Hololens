@@ -4,7 +4,7 @@ description: Privacy documentation
 keywords: HoloLens, GDPR, privacy, PII, data protection
 ms.reviewer: sekerawa, evmiller
 ms.date: 02/05/2021
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority:

@@ -2,7 +2,7 @@
 title: HoloLens 2 Battery and Charging
 description: How to charge your HoloLens and use external battery packs.
 ms.assetid: E0AB903E-454E-46F6-AB25-4DFA0A475B0C
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: high

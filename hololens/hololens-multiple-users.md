@@ -1,7 +1,7 @@
 ---
 title: Share your HoloLens with multiple people
 description: You can configure HoloLens to be shared by multiple Microsoft Entra accounts, or by multiple users that use a single account.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

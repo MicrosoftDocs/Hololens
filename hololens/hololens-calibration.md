@@ -3,7 +3,7 @@ title: Improve visual quality and comfort
 description: Learn how to calibrate your interpupillary distance (IPD) to improve the quality of your visuals on HoloLens devices.
 ms.date: 9/27/2022
 ms.topic: article
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 

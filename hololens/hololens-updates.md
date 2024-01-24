@@ -1,7 +1,7 @@
 ---
 title: Manage HoloLens updates
 description: Learn how your administrators can use mobile device management to manage updates to HoloLens devices.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 audience: ITPro
 ms.topic: article

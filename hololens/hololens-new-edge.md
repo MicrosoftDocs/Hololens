@@ -2,7 +2,7 @@
 title: Introducing the new Microsoft Edge
 description: Learn about the new Edge app
 keywords: HoloLens, edge, internet, browser
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
