@@ -70,11 +70,14 @@ A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks 
      HoloLens sets your time zone automatically based on information obtained from the Wi-Fi network. After setup finishes, you can change the time zone by using the Settings app.
 
     ![Connect to Wi-Fi.](images/11-network.png)
-   
-       > [!NOTE] 
+
+
+    > [!NOTE] 
     > If you progress past the Wi-Fi step and later need to switch to a different network while still in setup, you can press the **Volume Down** and **Power** buttons simultaneously to return to this step if you are running an OS version from October 2019 or later. For earlier versions, you may need to [reset the device](hololens-recovery.md) or restart it in a location where the Wi-Fi network is not available to prevent it from automatically connecting.
     > 
     > Also note that during HoloLens Setup, there is a credential timeout of two minutes. The username/password needs to be entered within two minutes otherwise the username field will be automatically cleared.
+
+
 
 1. HoloLens 2 searches and applies an Autopilot profile if one exists. No action is needed on this screen.
 
