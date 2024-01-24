@@ -106,7 +106,7 @@ HoloLens 2 supports FIDO2 security devices that are implemented to spec and sati
 
 ### Support for NFC readers
 
-The next Insider Preview flight for HoloLens includes the ability for users to take advantage of NFC Readers. Using a USB-C NFC reader, the HoloLens 2 device can be integrated with NFC FIDO2 cards as supported by Azure AD. For users in clean room environments, or where ID Badges contain FIDO technology, this method can enable a “Tap & PIN” experience for HoloLens Sign on. This feature enables a faster sign-in experience for users.
+The 23H2 release of HoloLens includes the ability for users to take advantage of NFC Readers. Using a USB-C NFC reader, the HoloLens 2 device can be integrated with NFC FIDO2 cards as supported by Azure AD. For users in clean room environments, or where ID Badges contain FIDO technology, this method can enable a “Tap & PIN” experience for HoloLens Sign on. This feature enables a faster sign-in experience for users.
 
 #### USB NFC reader support
 
