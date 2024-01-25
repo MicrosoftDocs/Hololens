@@ -8,7 +8,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.topic: article
 audience: ITPro
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.reviewer: sekerawa
 appliesto:
@@ -34,9 +34,17 @@ ISVs that build their mixed reality solutions on Azure are larger and more profi
 *    28% more mixed reality customers
 *    15% higher mixed reality software gross margins
 
-The commissioned [Forrester Consulting TEI study on HoloLens 2](https://download.microsoft.com/download/e/1/3/e1364937-5f62-4a0c-bb9e-664c270ad4fe/Forrester-Total-Economic-Impact-Mixed-Reality-Microsoft-HoloLens-2_Cover.pdf) estimates the following benefits to adopting HoloLens:
+[The Total Economic Impact Of Microsoft HoloLens 2 With Mixed reality Applications study](https://tei.forrester.com/go/microsoft/HoloLens2MRApps/?lang=en-us) is a commissioned study that was conducted by Forrester Consulting, October 2023 Copyright © 2023 Microsoft Corporation.  All rights reserved.  Cost savings and benefits for an organization are defined by Forrester Consulting in the study.  The study can be used to help estimate your company's ROI:
 
-:::image type="content" alt-text="HoloLens 2 Forrester Info Graph" source="./images/forrester-info-graph.png":::
+![Image shows the ROI for the global manufacturing scenario.](media/hololens-commercial-features/global-manufacturing-rois.png)
+
+[Watch the video](https://www.youtube.com/watch?v=pIsjVaqdNpc) to explore the use cases of Mixed Reality Applications on HoloLens 2.
+
+- Ensure production consistency in manufacturing scenarios with heads-up, hands-free instruction and support.
+- Empower workers to transfer knowledge from one generation to the next.
+- Enable access to subject matter experts affects production downtime and teams collaborate more efficiently from different locations.
+
+![Visual shows three different types of ROI that a company can expect with HoloLens 2.](media/hololens-commercial-features/ms-mrpp-2024-forrester-roi.png)
 
 Over half of Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
 
@@ -52,10 +60,10 @@ What makes the HoloLens 2 so powerful?
 | Hand tracking | Touch, grasp, and move holograms in ways that feel natural. HoloLens 2 adapts to your hands for a newfound satisfaction in your interactions. |
 | Eye tracking | Enjoy a new level of context and human understanding. HoloLens 2 understands precisely where you’re looking, so it can understand your intent and adapt the holograms to your eyes in real time. |
 | Voice enabled | Built-in voice commands allow you to quickly navigate and operate HoloLens 2 when your hands are occupied with a task. |
-| Ergonomic | HoloLens 2 is lightweight (3.28 kg) that includes a dial-in fit system to support extended use. |
+| Ergonomic | HoloLens 2 is lightweight (566 g) that includes a dial-in fit system to support extended use. |
 | Large FoV | Expand your holographic canvas with high resolution, large field-of-view displays. |
 | Untethered | Move freely, with no wires or external packs to get your way on the job. |
-| Azure-powered | Stream high-fidelity 3D content that can be anchored to a location and/or object that persists across users with Azure mixed reality services.
+| Azure-powered | Stream high-fidelity 3D content that can be anchored to a location and/or object that persists across users with Azure mixed reality services.|
 | Mixed reality capture | Document an experience as a photo or a video to share with others in real time. |
 | Windows Hello for Business | Iris-based biometric authentication gets you quickly and securely into the flow of work. |
 | Windows Autopilot | Set up and pre-configure services for HoloLens 2 so they're ready to use right out of the box across distributed worksites. |
@@ -79,6 +87,16 @@ HoloLens 2 is the industrial metaverse technology that our customers use to deli
 :::column-end:::
 :::row-end:::
 
+
+
+
+
+
+
+
+
+
+
 ---
 
 :::row:::
@@ -93,6 +111,16 @@ Microsoft aims to make mixed reality accessible and intuitive for frontline work
 :::column-end:::
 :::row-end:::
 
+
+
+
+
+
+
+
+
+
+
 ---
 
 :::row:::
@@ -106,6 +134,16 @@ Microsoft aims to make mixed reality accessible and intuitive for frontline work
 Improving reliability and introducing direct inking to Dynamics 365 Guides.
 :::column-end:::
 :::row-end:::
+
+
+
+
+
+
+
+
+
+
 
 ---
 
@@ -123,6 +161,16 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
 :::column-end:::
 :::row-end:::
 
+
+
+
+
+
+
+
+
+
+
 ---
 
 :::row:::
@@ -134,6 +182,16 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
         HoloLens 2 customers are using mixed reality to expedite the ways they ensure process compliance, improve efficiency, and learn on the job with Microsoft Teams features in Dynamics 365 Guides.
     :::column-end:::
 :::row-end:::
+
+
+
+
+
+
+
+
+
+
 
 ---
 
@@ -147,6 +205,16 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
     :::column-end:::
 :::row-end:::
 
+
+
+
+
+
+
+
+
+
+
 ---
 
 :::row:::
@@ -158,6 +226,16 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
         The staff at Sheba Medical Center used HoloLens to train nurses and other support personnel on the use of ventilator machines that were being deployed by the hundreds during the COVID-19 pandemic.
     :::column-end:::
 :::row-end:::
+
+
+
+
+
+
+
+
+
+
 
 ---
 
@@ -171,6 +249,16 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
     :::column-end:::
 :::row-end:::
 
+
+
+
+
+
+
+
+
+
+
 ---
 
 :::row:::
@@ -182,6 +270,16 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
         Unless you’re a trained architectural engineer, it can be challenging to look at a 2D blueprint and visualize what a building will actually look like in 3D. 
     :::column-end:::
 :::row-end:::
+
+
+
+
+
+
+
+
+
+
 
 ---
 
@@ -195,6 +293,16 @@ To help its dealer partners better maintain customers’ vehicles, PCNA is using
     :::column-end:::
 :::row-end:::
 <br>
+
+
+
+
+
+
+
+
+
+
 
 ---
 

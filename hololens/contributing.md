@@ -5,7 +5,7 @@ description: Learn how to contribute to the HoloLens technical documentation usi
 ms.date: 10/29/2021
 ms.localizationpriority:
 ms.topic: article
-ms.prod: hololens
+ms.service: hololens
 ---
 
 # Contributing to the HoloLens documentation
@@ -53,10 +53,7 @@ Use the following workflow to make updates to *an existing article* via GitHub i
    ![Edit an article.](images/editpage.png)
 
    This will automatically fork a disposable branch off the default branch, _main_.
-
-   > [!NOTE]
-   > This article contains references to _main_, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
-   
+  
 3. Edit the content of the article according to the [Markdown basics](#markdown-basics).
 
 4. Update metadata at the top of each article:
@@ -105,9 +102,6 @@ Use the following workflow to *create new articles* in the documentation repo vi
 1. Create a fork off the default branch, _main_, of MicrosoftDocs/hololens by using the **Fork** button in the top right.
 
    ![Fork the default branch, currently named "main".](images/forkbranch.png)
-
-   > [!NOTE]
-   > This article contains references to _main_, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
    
 2. In the "hololens" folder, select **Create new file** in the top right.
 

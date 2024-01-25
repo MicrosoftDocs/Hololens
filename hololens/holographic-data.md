@@ -5,7 +5,7 @@ keywords: how-to, file picker, files, photos, videos, pictures, OneDrive, storag
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
 ms.reviewer: jarrettrenshaw
 ms.date: 7/26/2022
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 audience: ITPro

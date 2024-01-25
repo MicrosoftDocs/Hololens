@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 release notes
 description: Stay up to date with all the updates in each new HoloLens 2 release.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
@@ -31,7 +31,7 @@ In between our feature updates, we also release fixes and improvements and secur
 
 To help provide clarity, this release notes page provides information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), refer to the table that follows.
 
-Note:  the current release version is the October 2023 Update, Build 1244.
+Note:  the current release version is the January 2024 Update, Build 1258.
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
@@ -56,6 +56,33 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
+
+
+## Windows Holographic, version 23H2 - January 2024 Update
+
+- Build 22621.1258
+
+Improvements and fixes in the update:
+
+- Resolved a problem that prevented the complete removal of temporary files.
+
+## Windows Holographic, version 23H2 - December 2023 Update
+
+- Build 22621.1254
+
+Improvements and fixes in the update:
+
+- Fixed an issue in display of application name in Settings app.
+
+- Fixed a link in Hologram Stability page on Device Portal.
+
+## Windows Holographic, version 23H2 - November 2023 Update
+
+- Build 22621.1252
+
+Improvements and fixes in the update:
+
+- Fixed an issue where enrolling into Insider builds resulted in an error that some update files weren't signed correctly.   
 
 ## Windows Holographic, version 23H2 - October 2023 Update
 
@@ -1788,5 +1815,4 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 - Fixes an issue that could lead to incorrect symbols being typed in Edge for Japanese customers.
 - Improves the resiliency of OS updates around preinstalled apps such as Edge.
 - Addresses an update reliability impacting the installation of Microsoft Edge.
-
 

@@ -4,7 +4,7 @@ description: Learn how to validate enrollment and Remote Assist for HoloLens dev
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 ms.reviewer: aboeger
 ms.date: 12/04/2020
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority:

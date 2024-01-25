@@ -4,7 +4,7 @@ description: Learn about HoloLens 2 device only and what to do after getting one
 keywords: HoloLens 2 purchasing options, HoloLens options, Developer Edition
 ms.reviewer: bogenera
 ms.date: 4/12/2021
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high

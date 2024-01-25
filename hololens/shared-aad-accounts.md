@@ -4,7 +4,7 @@ description: Learn about how to use Shared Microsoft Entra accounts in HoloLens
 author: lolab
 ms.author: lolab
 keywords: HoloLens, shared accounts, Azure AD, Microsoft Entra
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: qizho

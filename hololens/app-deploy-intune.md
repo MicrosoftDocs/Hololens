@@ -3,7 +3,7 @@ title: Intune and Company Portal
 description: Learn how to set up, assign, and create a comfortable user experience with Intune, mobile device management, and the company portal.
 keywords: intune, app management, app, company portal, portal, hololens
 ms.date: 5/27/2022
-ms.prod: hololens
+ms.service: hololens
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
