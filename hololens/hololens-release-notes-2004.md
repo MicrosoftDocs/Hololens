@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 release notes for Windows Holographic, version 2004
 description: Read about feature releases on an older servicing build.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.date: 2/14/2023

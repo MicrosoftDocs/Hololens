@@ -2,7 +2,7 @@
 title: Update HoloLens 2
 description: Learn how to check your HoloLens build number, keep up to date with device updates, join the Insiders Program, and roll back updates.
 keywords: how-to, update, roll back, HoloLens, check build, build number
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

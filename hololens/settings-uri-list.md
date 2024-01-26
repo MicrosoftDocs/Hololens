@@ -5,7 +5,7 @@ description: Keep up to date with our list of supported URIs for PageVisibilityL
 ms.date: 10/13/2020
 ms.topic: article
 keywords: hololens, hololens 2, assigned access, kiosk, settings page
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: widuff

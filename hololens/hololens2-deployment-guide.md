@@ -1,7 +1,7 @@
 ---
 title: Deploy cloud connected HoloLens 2 to external clients
 description: Deployment guide for HoloLens 2 for External Clients (with Remote assist as an example)
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

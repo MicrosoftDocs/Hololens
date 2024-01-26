@@ -6,7 +6,7 @@ ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, network, network security
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 

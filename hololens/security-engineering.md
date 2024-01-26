@@ -7,7 +7,7 @@ manager: lolab
 ms.date: 6/30/2020
 ms.topic: article
 keywords: security, hololens, Security, engineering
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 appliesto:
