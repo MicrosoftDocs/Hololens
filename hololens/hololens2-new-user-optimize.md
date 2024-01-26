@@ -96,6 +96,7 @@ There are many other policies that affect the setup experience, by configuring t
 
 > [!NOTE]
 > For Speech, the consent screen is not be shown if the feature is disabled. If it is left as default (user choice) or set to on, the user is still presented with the consent screen.
+
 | What's skipped          | Details                                                                    |  Screenshot of screen skipped |
 |------------------|-----------------------------------------------------------------------------------|---|
 | Telemetry | The page asking users to help improve HoloLens, by reporting more data which helps us fix bugs. <br> Using [Policies/System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)      | <img src="images/24-telemetry.png" width="200px" alt="Telemetry level"> |
