@@ -4,7 +4,7 @@ description: List of Global ADR contacts and countries/regions available.
 keywords: HoloLens 2 purchasing options, international purchase, international reseller, ADR
 ms.reviewer: skerawala
 ms.date: 3/20/2023
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: high

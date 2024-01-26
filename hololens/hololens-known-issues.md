@@ -9,7 +9,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 HoloLens and holograms: Frequently asked questions
-ms.prod: hololens
+ms.service: hololens
 appliesto:
 - HoloLens (1st Gen)
 ---

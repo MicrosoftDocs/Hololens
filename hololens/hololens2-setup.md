@@ -4,7 +4,7 @@ description: Learn how to set up and adjust your HoloLens 2 device for the first
 keywords: hololens, lights, fit, comfort, parts
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: high
@@ -12,9 +12,9 @@ appliesto:
 - HoloLens 2
 ---
 
-# Get your HoloLens 2 ready to use
+# Unboxing your HoloLens 2
 
-The procedures below will help you set up a HoloLens 2 for the first time.
+These procedures help you set up a HoloLens 2 for the first time.
 
 ## Charge your HoloLens
 
@@ -22,10 +22,10 @@ Connect the power supply to the charging port by using the USB-C cable (included
 
 Charging rate and speed may vary depending on the environment in which the device is running.
 
-- When the device is charging, the battery indicator lights up to indicate the current level of charge.  The last light will fade in and out to indicate active charging.
+- When the device is charging, the battery indicator lights up to indicate the current level of charge.  The last light fades in and out to indicate active charging.
 - When your HoloLens is on, the battery indicator displays the battery level in increments.
 - When only one of the five lights is on, the battery level is below 20 percent.
-- If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
+- If the battery level is critically low and you try to turn on the device, one light blinks briefly, then goes out.
 
 Full [details on device charging can be read here](hololens2-charging.md#charging-the-device) if more information is needed. 
 
@@ -56,13 +56,13 @@ To turn on your HoloLens 2, press the Power button.  The LEDs below the Power bu
 
 ### Power button actions for different power transitions
 
-| To do this | Perform this action | The HoloLens 2 will do this |
+| To do this | Perform this action | The HoloLens 2 does this |
 | - | - | - |
 | To turn on | Single button press. | All five lights turn on, then change to indicate the battery level. After four seconds, a sound plays. |
 | To sleep | Single button press. | All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |
 | To wake from sleep | Single button press. | All five lights turn on, then change to indicate the battery level. A sound immediately plays. |
 | To turn off | Press and hold for 5s. |  All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |
-| To force the HoloLens to restart if it is unresponsive | Press and hold for 10s. | All five lights turn on, then fade off one at a time. After the lights turn off. |
+| To force the HoloLens to restart if it's unresponsive | Press and hold for 10s. | All five lights turn on, then fade off one at a time. After the lights turn off. |
 
 ## HoloLens behavior reference
 
@@ -70,14 +70,14 @@ Not sure what the indicator lights on your HoloLens mean? Want to know how HoloL
 
 ### Charging behavior
 
-| State of the Device | Action | HoloLens 2 will do this |
+| State of the Device | Action | HoloLens 2 does this |
 | - | - | - |
 | OFF | Plug in USB Cable | Device transitions to ON with indicator lights showing battery level and device starts charging.|
 | ON | Remove USB Cable | Device stops charging|
 | ON | Plug in USB Cable | Device starts charging|
 | SLEEP | Plug in USB Cable | Device starts charging|
 | SLEEP | Remove USB Cable | Device stops charging|
-| ON with USB cable plugged in | Press power button once | Device transitions to SLEEP with indicator lights showing battery level and device will start charging |
+| ON with USB cable plugged in | Press power button once | Device transitions to SLEEP with indicator lights showing battery level and device starts charging |
 
 ### Lights that indicate the battery level
 
@@ -102,21 +102,35 @@ Not sure what the indicator lights on your HoloLens mean? Want to know how HoloL
 | When you do this | The lights do this | It means this |
 | - | - | - |
 | You press the Power button. | One light flashes five times, then turns off. | The HoloLens battery is critically low. Charge your HoloLens. |
-| You press the Power button. | All five lights flash five times, then turn off. |  HoloLens cannot start correctly and is in an error state. [Reinstall the operating system](hololens-recovery.md) to recover your device. |
+| You press the Power button. | All five lights flash five times, then turn off. |  HoloLens can't start correctly and is in an error state. [Reinstall the operating system](hololens-recovery.md) to recover your device. |
 | You press the Power button. | The 1st, 3rd, and 5th lights flash together continually. |  HoloLens may have a hardware failure. Contact [support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
 
 ## Safety and comfort
 
 ### Use HoloLens in safe surroundings
 
-Use your HoloLens in a safe space, free of obstructions and tripping hazards. Don’t use it when you need a clear field of view or can't commit your full attention, such as while you’re operating a vehicle or doing other potentially hazardous activities.
+Use your HoloLens in a safe space, free of obstructions and tripping hazards. Don’t use it when you need a clear field of view or can't commit your full attention, such as while you’re operating a vehicle, or doing other potentially hazardous activities.
 
 ### Stay comfortable
 
-Keep your first few sessions with HoloLens brief and be sure to take breaks. If you experience discomfort, stop and rest until you feel better. This might include temporary feelings of nausea, motion sickness, dizziness, disorientation, headache, fatigue, eye strain, or dry eyes.
+Keep your first few sessions with HoloLens brief and be sure to take breaks. If you experience discomfort, stop and rest until you feel better. Discomfort might include temporary feelings of nausea, motion sickness, dizziness, disorientation, headache, fatigue, eye strain, or dry eyes.
 
 See [product safety warnings and instructions](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
 
+## Next:  Two key user setup scenarios
+
+There are two key setup scenarios to consider:
+
+- **Add the first user on the device.**  Your device is brand-new and no users are logged into the device.  The device will need to go through first-time setup, also known as the Out-of-Box-Experience (OOBE).  Through this setup process, the first user is added to the device.  
+
 > [!div class="nextstepaction"]
-> [Set up your HoloLens 2](hololens2-start.md)
+> [How to add the first user on your HoloLens 2](hololens2-start.md)
+
+- **Add more users on the device.**  The device has gone through OOBE, but now additional users need to be added to the device.  Through this setup process, additional users are added to the device.  
+
+> [!div class="nextstepaction"]
+> [How to add more users on your HoloLens 2](/hololens/hololens2-new-user-optimize?branch=main&tabs=firstBlank%2CsecondBlank)
+
+
+
 

@@ -4,7 +4,7 @@ description: Learn how Cortana can help you do all kinds of things on your HoloL
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
 ms.date: 07/29/2022
 keywords: hololens
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 audience: ITPro
 ms.topic: article

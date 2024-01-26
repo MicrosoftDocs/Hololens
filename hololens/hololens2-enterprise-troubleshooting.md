@@ -4,7 +4,7 @@ description: Troubleshooting HoloLens 2 devices in an Enterprise environment
 ms.date: 11/1/2021
 ms.topic: article
 keywords: troubleshooting
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 

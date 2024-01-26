@@ -4,7 +4,7 @@ description: Learn how to install and troubleshoot apps with the app installer a
 keywords: app management, app, hololens, app installer
 ms.reviewer: qizho
 ms.date: 11/10/2020
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority:

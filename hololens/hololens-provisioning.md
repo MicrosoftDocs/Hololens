@@ -1,7 +1,7 @@
 ---
 title: Configure HoloLens by using a provisioning package (HoloLens)
 description: Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.custom: 
