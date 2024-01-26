@@ -57,14 +57,20 @@ A button with a Microsoft logo shows up. Press the button, and HoloLens 2 walks 
 
     <img src="images/05-region.png" width="500px" alt="Select region">
 
-1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you are prompted the next time you log in. 
+1. View consent to collect biometric data for device calibration and improved reliability.
 
-   1. First, you adjust your visor.
-      
-   1. To calibrate, you look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
-   
-       After calibration, holograms appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
-      
+    <img src="media/hololens2-start/microsoftteams-image-(5).png" width="500px" alt="Biometric data is collected to improve the user experience.">
+
+1. Calibrate HoloLens to your eyes.  First, you'll adjust your visor to enable eye calibration to take place.
+
+    <img src="media/hololens2-start/oobe-combinedcalibration.png" width="500px" alt="Please adjust the HoloLens for your eyes so that calibration may continue.">
+
+1. To calibrate, you look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. 
+
+    After calibration, holograms appear correctly even as the visor shifts on your head. Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
+
+    <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
+
 1. Connect to the internet (select Wi-Fi or your ethernet connection).
 
      HoloLens sets your time zone automatically based on information obtained from the Wi-Fi network. After setup finishes, you can change the time zone by using the Settings app.
