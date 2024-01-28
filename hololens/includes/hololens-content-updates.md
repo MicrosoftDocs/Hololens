@@ -2,28 +2,12 @@
 
 
 
-## Week of December 11, 2023
+## Week of January 22, 2024
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 12/11/2023 | [HoloLens 2 capabilities and solutions](/hololens/hololens-commercial-features) | modified |
-| 12/12/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
-| 12/14/2023 | [Manage user identity and login for HoloLens](/hololens/hololens-identity) | modified |
-| 12/15/2023 | [HoloLens 2 capabilities and solutions](/hololens/hololens-commercial-features) | modified |
-
-
-## Week of December 04, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/8/2023 | [HoloLens Device Troubleshooting](/hololens/hololens-troubleshooting) | modified |
-
-
-## Week of November 13, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/14/2023 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+| 1/24/2024 | [Limiting password use](/hololens/security-limiting-password-use) | modified |
+| 1/26/2024 | [Set up users on HoloLens 2 quickly](/hololens/hololens2-new-user-optimize) | modified |
+| 1/26/2024 | [Prepare a new HoloLens 2](/hololens/hololens2-setup) | modified |
+| 1/26/2024 | [Set up your HoloLens 2](/hololens/hololens2-start) | modified |
