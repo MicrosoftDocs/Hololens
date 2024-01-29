@@ -36,220 +36,25 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
-|[Faster eye position updates](#faster-eye-position-updates)|This improvement provides faster eye position updates when a user has not gone through eye calibration. | All | 10.0.22621.1219|
-|[Viewfinder for Camera](#viewfinder-for-camera)| A viewfinder is now included to show what is captured in an image or video. | All | 10.0.22621.1217|
-|[Rename HoloLens 2 device](#rename-hololens-2-device)| HoloLens 2 devices can now be renamed from the Settings app. | All| 10.0.22621.1217 |
-|[Start Menu gesture settings in MDM](#start-menu-gesture-settings-in-mdm)| A new policy is available to configure start menu gesture settings. | IT Admin | 10.0.22621.1217|
-|[Policies to block USB Peripherals on HoloLens 2](#policies-to-block-usb-peripherals)| HoloLens 2 devices can now be locked down to prevent the use of USB peripherals. | IT Admin| 10.0.22621.1217|
-|[Domain name suggested during sign-in](#domain-suggested-during-signin)| During sign-in, the domain name is auto-populated to save time.| All | 10.0.22621.1217|
-|[New policy for Windows Hello Provisioning behavior](#windows-hello-behavior-with-fido2-policy) | This new policy can be used to control Windows Hello provisioning behavior for users signed in with FIDO2 security keys.| IT Admin| 10.0.22621.1212 |
-|[New policy for Sign-in app default screen](#signin-app-default-screen-policy) | This new policy can be used to control the default screen shown when the Sign-in app launches to show Other User.| IT Admin| 10.0.22621.1212 |
-|[Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 10.0.22621.1205 |
-|[Font and IME improvements](#font-and-ime-improvements) | Several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) now support GB18030-2022. | All | 10.0.22621.1205 |
-|[Support for NFC readers](#support-for-nfc-readers) | Users can now login to their devices using their security badge with an NFC reader. | All | 10.0.22621.1205 |
-|[Fixes and improvements](#fixes-and-improvements)  | Additional fixes and improvements for HoloLens. | All   | 10.0.22621.1205 |
+|[Update to eye tracking calibration](#eye-calibration-updates)|The option to perform eye tracking calibration is shown on the device even if it has been deployed via Autopilot. | All | 10.0.22621.1296|
+|[Policies to configure device maintenance tasks](#device-maintenance-configuration-policy-support)|Customers can now configure device maintenance tasks such as auto logoff of user or reboot of a device when it is not in use. | All | 10.0.22621.1296|
+|[Fixes and improvements](#fixes-and-improvements)  | Additional fixes and improvements for HoloLens. | All   | 10.0.22621.1296 |
 
-### Faster eye position updates
+### Eye calibration updates
 
-For HoloLens 2 users who haven't saved their Eye Tracking calibration (either skipped or encountered a failure during initial setup), we are now updating Eye Positions (or Inter Pupillary Distance, aka IPD) earlier once the user puts on the device. This results in a considerably smoother user experience, especially for close holograms interactions like pressing buttons or typing on the keyboard.
+The option to perform eye tracking calibration is shown on the device even if it has been deployed via Autopilot.  This option can also be disabled via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
 
-### Viewfinder for camera
+- URI value: ./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup
 
-With the latest camera updates coming in this release, you now have a viewfinder that provides an indication of what is included in your image or video capture. This overlay does not hide anything in your view when taking a picture or video. Note that the content in the capture is larger than the bracket area.
+With this change, any user on the device can choose to run eye calibration at any time to improve their experience.
 
-![Screenshot shows directions on how to take a photo and what content is included.](media/hololens-insider/mrc-viewfinder-disclaimer-1.png)
+### Device maintenance configuration policy support
 
-You now see indicators for both the center and approximate borders for the PV camera stream.
-
-![Screenshot shows the center and approximate border of what is captured in the photo.](media/hololens-insider/mrc-viewfinder-1.png)
-
-### Rename HoloLens 2 device
-
-HoloLens 2 devices can now be renamed by going to the About page of the Settings app. Users or IT Admins can choose the “Rename” button and follow the prompts to create a new name for their device.  A combination of letters, hyphens and numbers can be used.  
-
-![Screenshot of About page in Settings app that shows Rename button.](media/hololens-insider/rename-success1.png)
-
-A confirmation screen is displayed when the device has been successfully renamed.
-
-![Screenshot that shows the HoloLens 2 was successfully renamed.](rename-device-button2.png)
-
-The device must be rebooted for the renaming change to take effect.
-
-### Start menu gesture settings in MDM
-
-IT Admins can now control Start Menu gesture settings on managed HoloLens 2 devices through MDM via a new set of Start Menu gesture policies.
-
-#### EnableStartMenuWristTap
-
-This policy controls if the Start menu can be opened by tapping the start icon on the wrist.  It is managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
-
-- URI value: ./Vendor/MSFT/Policy/Config/MixedReality/EnableStartMenuWristTap
-
-| Policy | Description | Configurations |
-| -------- | -------- | -------- |
-| MixedReality/EnableStartMenuWristTap | Allows the Start menu to be opened with a wrist tap | 0 (Disabled), 1 (Enabled, default)
-
-#### RequireStartIconVisible
-
-This policy controls whether it is required that the user looks at the Start icon when it is tapped in order to open the Start menu.  It is managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
-
-- URI value: ./Vendor/MSFT/Policy/Config/MixedReality/RequireStartIconVisible
-
-| Policy | Description | Configurations |
-| -------- | -------- | -------- |
-| MixedReality/RequireStartIconVisible | Controls whether the user looks at the Start icon to open the Start menu | 0 (Disabled, default), 1 (Enabled)
-
-#### RequireStartIconHold
-
-This policy controls whether it is required that the Start icon is pressed for two seconds to open the Start menu.  It is managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
-
-- URI value: ./Vendor/MSFT/Policy/Config/MixedReality/RequireStartIconHold
-
-| Policy | Description | Configurations |
-| -------- | -------- | -------- |
-| MixedReality/RequireStartIconHold | Controls whether the Start icon is pressed for two second to open the Start menu | 0 (Disabled, default), 1 (Enabled)
-
-#### EnableStartMenuSingleHandGesture
-
-This policy controls whether the Start menu can be opened by pinching the thumb and index finger while looking at the Start icon on the wrist.  It is managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
-
-- URI value: ./Vendor/MSFT/Policy/Config/MixedReality/EnableStartMenuSingleHandGesture
-
-| Policy | Description | Configurations |
-| -------- | -------- | -------- |
-| MixedReality/EnableStartMenuSingleHandGesture | Controls whether the Start menu can be opened by pinching the thumb and index finger while looking at the Start icon | 0 (Disabled), 1 (Enabled, default)
-
-#### EnableStartMenuVoiceCommand
-
-This policy controls whether using voice commands can be used to open the Start menu.  It is managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
-
-- URI value: ./Vendor/MSFT/Policy/Config/MixedReality/EnableStartMenuVoiceCommand
-
-| Policy | Description | Configurations |
-| -------- | -------- | -------- |
-| MixedReality/EnableStartMenuVoiceCommand | Controls whether voice commands can be used to open the Start menu | 0 (Disabled), 1 (Enabled, default)
-
-### Policies to block USB peripherals
-
-You may want to lock down your HoloLens 2 devices to prevent the use of USB Ethernet dongles or USB Flash drives.  Several DeviceInstall MDM policies have been enabled in this update to allow IT Admins to configurate device driver installation policies.  In order to take effect, the policies must be applied prior to connecting the USB Peripherals.  It is recommended that these policies be configured either after the device is reset or on a clean, reflashed device.
-
-#### DeviceInstall_Removable_Deny
-
-This policy allows you to prevent HoloLens 2 from installing removable devices.  It is managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
-
-- URI value: ./Device/Vendor/MSFT/Policy/Config/ADMX_DeviceInstallation/DeviceInstall_Removable_Deny
-
-| Policy | Data Type| Value|
-| -------- | -------- | -------- |
-| Config/ADMX_DeviceInstallation/DeviceInstall_Removable_Deny | String | `<enabled/><data id="DenyRemovableDevices" value="1"/>`
-
-Please refer to [DeviceInstall_Removable_Deny](/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_removable_deny) for details.
-
-#### EnableInstallationPolicyLayering
-
-This policy changes the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that devices listed in the AllowInstallationOfMatchingDeviceIDs policy are allowed to install even if the DeviceInstall_Removable_Deny policy is enabled. It is managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy: 
-
-- URI value: ./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/EnableInstallationPolicyLayering
-
-| Policy | Data Type| Value|
-| -------- | -------- | -------- |
-| Config/DeviceInstallation/EnableInstallationPolicyLayering | String | `<enabled/><data id="AllowDenyLayered" value="1"/>`
-
-Please refer to [EnableInstallationPolicyLayering](/windows/client-management/mdm/policy-csp-deviceinstallation#enableinstallationpolicylayering) for details.
-
-#### AllowInstallationOfMatchingDeviceIDs
-
-This policy specifies a list of Plug and Play hardware IDs and compatible IDs for devices that HoloLens 2 is allowed to install. This policy is intended to be used only when the EnableInstallationPolicyLayering policy setting is enabled.  It is managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy: 
-
-- URI value: ./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/AllowInstallationOfMatchingDeviceIDs
-
-| Policy | Data Type| Value|
-| -------- | -------- | -------- |
-| Config/DeviceInstallation/AllowInstallationOfMatchingDeviceIDs | String | `<enabled/><data id="DeviceInstall_IDs_Allow_List" value="your_allowed_device_ids"/>`
-
-Please refer to [AllowInstallationOfMatchingDeviceIDs](/windows/client-management/mdm/policy-csp-deviceinstallation#allowinstallationofmatchingdeviceids) for details.
-
-### Domain suggested during signin
-
-During the sign-in process, if [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname) MDM policy is set on HoloLens 2, the tenant domain name is suggested to the user to speed up the login process and save time.  Users still have the option to type in a different tenant domain name if desired.
-
-> [!NOTE] 
-> IT Admins need to configure the policy for this feature to be in effect.
-
-### Windows Hello behavior with FIDO2 policy
-
-To simplify user account setup, users sign-in to their HoloLens 2 with FIDO2 security keys are no longer required to go through Iris and PIN enrollment during OOBE. To support users requiring Iris and/or PIN as alternative sign-in options to FIDO2 security keys, a new policy, EnableWindowsHelloProvisioningForSecurityKeys, has been added to the PassportForWork CSP to control Windows Hello Provisioning behavior. If this policy is enabled on HoloLens 2, the device starts Iris and PIN enrollments after new users sign-in to their devices with FIDO2 security keys.  It is managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:  
-
-- URI value: ./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/EnableWindowsHelloProvisioningForSecurityKeys   
-
-| Policy | Data Type| Value|
-| -------- | -------- | -------- |
-| MSFT/PassportForWork/{TenantId}/Policies/EnableWindowsHelloProvisioningForSecurityKeys | bool| False (default), True
-
-### Signin app default screen policy 
-
-In environments where devices are shared between multiple people and not everyone has enrolled in Iris sign-in, it may be preferable to always show the Other User screen so a user picking up the device can quickly start the sign-in process. For example, in an environment where everyone uses their FIDO2 security keys to sign in, it would be preferable to start on the Other User screen instead of having to find the correct user first.
-
-To help with this scenario, we added a new MDM policy: PreferLogonAsOtherUser. When this policy is enabled, the HoloLens Sign-in app shows the Other User screen by default when the app starts. 
-
-- URI value: ./Device/Vendor/MSFT/Policy/Config/MixedReality/PreferLogonAsOtherUser  
-
-| Policy | Data Type| Value|
-| -------- | -------- | -------- |
-| Config/MixedReality/PreferLogonAsOtherUser   | Int | 0 (Disabled, default), 1 (Enabled)
-
-### Hand tracking improvements 
-
-Hand tracking system has been improved so that tracking is more reliable when aiming down at objects on the floor.
-
-### Font and IME improvements
-
-This update improves several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) to support GB18030-2022. You can enter and display characters from conformance level 1 or 2 using the additions to Microsoft Yahei, Simsun, and Dengxian. This update now supports Unicode Extensions E and F in the Simsun Ext-B font. This meets the requirements for level 3.  These improvements are in-line with what has been released to the Windows 11 Build Release Preview Channel.  More details can be found on the [Windows Insiders blog](https://blogs.windows.com/windows-insider/2023/06/20/releasing-windows-11-build-22621-1926-to-the-release-preview-channel/).
-
-### Support for NFC readers
-
-The next Insider Preview flight for HoloLens includes the ability for users to take advantage of NFC Readers.  Using a USB-C NFC reader, the HoloLens 2 device can be integrated with NFC FIDO2 cards as supported by Microsoft Entra ID. For users in clean room environments, or where ID Badges contain FIDO technology, this can enable a “Tap & PIN” experience for HoloLens Sign on.  This feature enables a faster sign-in experience for users.
-
-#### USB NFC reader support
-
-USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base class ‘0B’ and subclass ‘00’ are supported. Please refer to [Microsoft Class Drivers for USB CCID Smart Cards](/previous-versions/windows/hardware/design/dn653571(v=vs.85)) for details on Microsoft class driver for USB CCID devices.  To determine if your NFC reader is compatible with HoloLens, you may either refer to the documentation provided by the reader's manufacturer, or use the Device Manager on your PC, as follows:
-
-1.	Plug in the USB NFC reader to a Windows PC.
-2.	In Device Manager, locate the reader device and right click on it and select Properties.
-3.	In Details tab, select "Compatible Ids" properties and check if "USB\Class_0b&SubClass_00" is in the list.
-
-
-![smartcard reader properties](media/hololens-insider/smartcard-reader-properties.png)
-
-> [!NOTE] 
-> If a USB NFC reader works on Windows Desktop with the inbox CCID driver, that same reader is expected to be compatible with the HoloLens 2.  If the reader requires a third-party driver (either from Windows Update or through manual driver installation), the reader is not compatible with HoloLens 2.
-
-Whether you sign into a device you have used before or a new device, please follow these steps to sign in with an NFC reader:
-
-1.	From the “Other User” screen, enter the FIDO Key / Tap the NFC Key against the reader.
-2.	Enter the FIDO PIN.
-3.	Press the button on the FIDO Key / Tap the NFC Key against the reader again.
-4.	The Device logs in.
-
-      a.	Note:  if the user is new to the device, the Single Biometric Disclosure Screen is displayed.
-5.	Start Menu then appears.
-
-> [!NOTE] 
-> NFC reader support for the HoloLens 2 only supports NFC CTAP for FIDO2 login. There is no plan to provide the same level of Smartcard WinRT API support as on Windows Desktop.  This is due to variations across Smartcard WinRT APIs.  In addition, the SCard API used for HoloLens 2 has somewhat less functionality compared to the Desktop versions and some reader types and features may not be supported.
+New policies are available to support customers with device maintenance tasks.  Customers can now configure device maintenance tasks such as auto logoff of user or reboot of a device when it is not in use.  These changes will provide customers with improved app update reliability and a more consistent experience when using the device.
 
 ### Fixes and improvements
 
-- Fixed an issue where specific pages were not showing / hiding correctly in PageVisibility MDM policy (Windows 11 builds only).
-- Fixed an issue where swipe to type on the virtual keyboard was not working correctly (Windows 11 builds only).
-- Fixed an issue where the "Reset" button was not showing in the case of an Autopilot failure that occurred before reading the ESP configuration.
-- Minor updates were made to the virtual keyboard, including optimization of the keyboard suggestions that are presented to users and improved audio feedback while typing.
-- Prior to this update, users were often unclear when dictation from the virtual keyboard was available.  Users now see a spinning icon while dictation is being initiated and the dictation tip to begin speaking is only displayed once dictation is available.
-- The "Add Account" button on the sign-in screen can now be found above the list of existing accounts on the device.  It is now visible regardless of your scroll position on the screen.
-- Fixed an issue where users could not specify the active hour range for Windows Update via the Settings App.
-- Fixed an issue where it may take several minutes for the first-time user setup (Iris enrollment, PIN enrollment, etc.) to show up after a user signs in to a device for the first time.
-- Fixed an issue with the Settings App where some launch URIs were handled incorrectly.
-- Fixed search box functionality in Settings App.
-- Added support for LocalUsersAndGroups MDM policy on HoloLens. (Only for "Device Owners" group.)
+- This section will list out additional fixes and improvements that are included in this Insiders release.
 
 ## Start receiving Insider builds
 
