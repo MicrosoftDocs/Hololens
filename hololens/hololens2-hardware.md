@@ -45,11 +45,11 @@ A user account is required to use HoloLens 2.
 
 ### Power Supply details
 
-The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18W charger.  It supplies 9V at 2A.
+The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18-W charger.  It supplies 9 V at 2A.
 
 Charging rate and speed may vary depending on the environment in which the device is running.
 
-In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15W charger.
+In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15-W charger.
 
 ## Device specifications
 
@@ -66,10 +66,10 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 | Specification  | Design value (nominal) |
 |---|---|
-| **Focal Length** | 1.08mm |
+| **Focal Length** | 1.08 mm |
 | **FOV (diagonal)** | 96.1 degrees |
 | **Coplanar (both point forward and are parallel in view?)** | Yes (for forward-facing VLC’s) |
-| **Stereo baseline** | 98.6mm (for forward-facing VLC’s) |
+| **Stereo baseline** | 98.6 mm (for forward-facing VLC’s) |
 
 ### Sensors
 
@@ -113,7 +113,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 | **Battery technology** | [Lithium batteries](https://www.microsoft.com/download/details.aspx?id=43388) |
 | **Charging behavior** | Fully functional when charging |
 | **Cooling type** | Passively cooled (no fans) |
-| **Power draw** | In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15W charger. |
+| **Power draw** | In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15-W charger. |
 
 ### Fit
 
@@ -140,7 +140,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 | **Spatial mapping** | Real-time environment mesh |
 | **Mixed reality capture** | Mixed hologram and physical environment photos and videos |
 
-## Pre-installed software
+## Preinstalled software
 
 | &nbsp; | &nbsp; |
 |---|---|
@@ -179,7 +179,7 @@ Microsoft HoloLens 2 comes with a standard limited [warranty](https://support.mi
 
 Purchase is subject to [Microsoft Store Terms of Use and Sale](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1). All sales are final. No refunds.
 
-By purchasing HoloLens 2 you agree to the [software license agreement](https://www.microsoft.com/Useterms/).
+By purchasing HoloLens 2, you agree to the [software license agreement](https://www.microsoft.com/Useterms/).
 
 Not intended for use by children younger than 13.
 
@@ -215,7 +215,7 @@ The serial number can also be found via a connected PC:
 
 1. Plug in the device
 1. Navigate to **This PC** in file explorer
-1. Right Click and select **Properties** of the HoloLens device
+1. Right click and select **Properties** of the HoloLens device
 1. This will display the series number of the device, as shown in the screenshot below.<br/>
 
    <img src="images/ResetRecovery2.png" alt=null/>
