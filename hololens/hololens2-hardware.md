@@ -140,7 +140,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 | **Spatial mapping** | Real-time environment mesh |
 | **Mixed reality capture** | Mixed hologram and physical environment photos and videos |
 
-## Preinstalled software
+## Pre-installed software
 
 | &nbsp; | &nbsp; |
 |---|---|
