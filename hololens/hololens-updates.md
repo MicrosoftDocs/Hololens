@@ -8,6 +8,7 @@ ms.topic: article
 ms.localizationpriority: high
 ms.date: 3/11/2022
 ms.reviewer: shriyen
+ms.collection: essentials-manage
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

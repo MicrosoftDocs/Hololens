@@ -10,6 +10,7 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
+ms.collection: essentials-overview
 ---
 
 # About HoloLens 2

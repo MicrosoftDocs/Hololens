@@ -10,6 +10,7 @@ ms.localizationpriority:
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
+ms.collection: essentials-get-started
 ---
 
 # Common Deployment Scenarios

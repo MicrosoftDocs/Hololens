@@ -9,6 +9,7 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority:
 audience: HoloLens
+ms.collection: essentials-privacy
 appliesto:
 - HoloLens 2
 ---

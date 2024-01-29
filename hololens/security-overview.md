@@ -9,7 +9,7 @@ keywords: security, hololens, hololens 2, hololens2 security, security overview
 ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-
+ms.collection: essentials-security
 appliesto:
 - HoloLens 2
 ---
