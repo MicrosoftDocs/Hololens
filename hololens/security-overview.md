@@ -9,7 +9,7 @@ keywords: security, hololens, hololens 2, hololens2 security, security overview
 ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-
+ms.collection: essentials-security
 appliesto:
 - HoloLens 2
 ---
@@ -55,8 +55,8 @@ You may be a security or IT professional, business decision-maker, or a member o
 | Ensure privacy and data protection for my customers (for example, GDPR) | [HoloLens 2 Privacy and Data Protection](hololens2-privacy.md) | HoloLens 2 security has been redesigned to provide advanced, innovative security and privacy protection, incorporating Microsoft’s approach to privacy and GDPR regulations.|
 | Permanently delete sensitive data | [Restart, reset, or recover HoloLens](hololens-recovery.md#clean-reflash-the-device) | Any data stored on the unit can be cleared using a full device reset or reflash. |
 | Back up HoloLens to the cloud | [Find, open, and save files on HoloLens](holographic-data.md#sync-to-the-cloud) | Save HoloLens files and data to OneDrive. |
-| Transmit data via wifi | [Encryption and data protection](security-encryption-data-protection.md#azure-integration) | Auto-upload to the cloud with OneDrive |
-| Lock screen with auto-logoff | [Share HoloLens with multiple users](hololens-multiple-users.md)| Pressing headset power key invokes standby mode |
+| Transmit data via wifi | [Encryption and data protection](security-encryption-data-protection.md#azure-integration) | Autoupload to the cloud with OneDrive |
+| Lock screen with autologoff | [Share HoloLens with multiple users](hololens-multiple-users.md)| Pressing headset power key invokes standby mode |
 | Reconfigure product security capabilities | [Page Settings Visibility](settings-uri-list.md) | PageVisibilityList policy can be reset to restrict the pages seen within the Settings app. |
 | Get in touch with Microsoft Security Engineering teams | [Security engineering](security-engineering.md) | Microsoft has several resources and teams devoted to optimizing the company’s engineering protocols, addressing compliance, and ensuring customer trust. |
 | Use modern security and authentication methods | [Limiting password use](security-limiting-password-use.md) | HoloLens 2 enables strong, hardware-backed “password-less” credentials for device sign in. |

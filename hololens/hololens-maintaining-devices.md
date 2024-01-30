@@ -8,6 +8,7 @@ ms.topic: article
 audience: ITPro
 ms.date: 12/13/2022
 ms.localizationpriority:
+ms.collection: essentials-manage
 appliesto:
 - HoloLens 2
 ---

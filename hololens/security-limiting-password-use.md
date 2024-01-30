@@ -36,7 +36,7 @@ The second is a device code flow that is intuitive to users and does not require
   1. If the user chooses to continue signing in to the displayed ‘application’, Microsoft Entra STS prompts the user for their credentials. On successful authentication, Microsoft Entra STS updates the cached remote session as 'approved' along with an authorization code.
   1. Finally, the polling page on the user’s HoloLens 2 device receives an 'Authorized' response from Microsoft Entra ID and proceeds to validate the user code, its associated stored authorization code and generates OAuth tokens as requested to complete device setup. The authentication token created is valid for 1 hour and the refresh token has a lifetime of 90 days.
 
-The code generation and encryption algorithms used in this flow are both FIPS compliant. HoloLens 2 devices utilize the TPM to secure device keys and encrypt tokens generated after user authentication using hardware-protected keys. More information on token security on HoloLens 2 is shared in [What is a Primary Refresh Token (PRT)](/azure/active-directory/devices/concept-primary-refresh-token).
+The code generation and encryption algorithms used in this flow are both FIPS compliant, however, the HoloLens 2 is not FIPS-certified at this time. HoloLens 2 devices utilize the TPM to secure device keys and encrypt tokens generated after user authentication using hardware-protected keys. More information on token security on HoloLens 2 is shared in [What is a Primary Refresh Token (PRT)](/azure/active-directory/devices/concept-primary-refresh-token).
 
 ## Device sign-in with Windows Hello
 
@@ -100,9 +100,40 @@ Both options offer two-factor authentication in one step, requiring both a regis
 
 MSA and Microsoft Entra ID are among the first relying parties to support password-less authentication by implementing WebAuthn.
 
-For more information on using WebAuthn with applications and/or SDKs, go to [WebAuthn APIs for password-less authentication on Windows 10](/windows/security/identity-protection/hello-for-business/webauthnapis).
+For more information on using WebAuthn with applications and/or SDKs, go to [WebAuthn APIs for password-less authentication on Windows 10](/windows/security/identity-protection/hello-for-business/webauthn-apis).
 
-HoloLens 2 supports FIDO2 security devices that are implemented to spec and satisfy the requirements listed on [Microsoft Entra passwordless sign-in - FIDO2 security keys](/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) should be supported.
+HoloLens 2 supports FIDO2 security devices that are implemented to spec and satisfy the requirements listed on [Microsoft Entra passwordless sign-in - FIDO2 security keys](/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) should be supported. With the 23H2 release, NFC readers can be used to read the FIDO2 security key, requiring that the user tap their security badge twice to login.
+
+### Support for NFC readers
+
+The 23H2 release of HoloLens includes the ability for users to take advantage of NFC Readers. Using a USB-C NFC reader, the HoloLens 2 device can be integrated with NFC FIDO2 cards as supported by Azure AD. For users in clean room environments, or where ID Badges contain FIDO technology, this method can enable a “Tap & PIN” experience for HoloLens Sign on. This feature enables a faster sign-in experience for users.
+
+#### USB NFC reader support
+
+USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base class ‘0B’ and subclass ‘00’ are supported. Refer to [Microsoft Class Drivers for USB CCID Smart Cards](/previous-versions/windows/hardware/design/dn653571(v=vs.85)) for details on Microsoft class driver for USB CCID devices.  To determine if your NFC reader is compatible with HoloLens, you may either refer to the documentation provided by the reader's manufacturer, or use the Device Manager on your PC, as follows:
+
+1.	Plug in the USB NFC reader to a Windows PC.
+2.	In Device Manager, locate the reader device and right click on it and select Properties.
+3.	In Details tab, select "Compatible Ids" properties and check if "USB\Class_0b&SubClass_00" is in the list.
+
+
+![smartcard reader properties](media/hololens-insider/smartcard-reader-properties.png)
+
+> [!NOTE] 
+> If a USB NFC reader works on Windows Desktop with the inbox CCID driver, that same reader is expected to be compatible with the HoloLens 2.  If the reader requires a third-party driver (either from Windows Update or through manual driver installation), the reader is not compatible with HoloLens 2.
+
+Whether you sign into a device you have used before or a new device, follow these steps to sign in with an NFC reader:
+
+1.	From the “Other User” screen, enter the FIDO Key / Tap the NFC Key against the reader.
+2.	Enter the FIDO PIN.
+3.	Press the button on the FIDO Key / Tap the NFC Key against the reader again.
+4.	The Device logs in.
+
+      a.	Note:  if the user is new to the device, the Single Biometric Disclosure Screen is displayed.
+5.	Start Menu then appears.
+
+> [!NOTE] 
+> NFC reader support for the HoloLens 2 only supports NFC CTAP for FIDO2 login. There is no plan to provide the same level of Smartcard WinRT API support as on Windows Desktop.  This is due to variations across Smartcard WinRT APIs.  In addition, the SCard API used for HoloLens 2 has somewhat less functionality compared to the Desktop versions and some reader types and features may not be supported.
 
 ## Local accounts
 
