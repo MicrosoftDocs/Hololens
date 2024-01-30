@@ -10,6 +10,7 @@ ms.reviewer: lavinds
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
+ms.collection: essentials-manage
 ---
 
 # Configure CSPs and Device Management overview
