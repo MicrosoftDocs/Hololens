@@ -10,6 +10,7 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
+ms.collection: essentials-overview
 ---
 
 # About HoloLens 2
@@ -44,7 +45,7 @@ A user account is required to use HoloLens 2.
 
 ### Power Supply details
 
-The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18-W charger.  It supplies 9V at 2A.
+The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18-W charger.  It supplies 9 V at 2A.
 
 Charging rate and speed may vary depending on the environment in which the device is running.
 
@@ -214,7 +215,7 @@ The serial number can also be found via a connected PC:
 
 1. Plug in the device
 1. Navigate to **This PC** in file explorer
-1. Right Click and select **Properties** of the HoloLens device
+1. Right click and select **Properties** of the HoloLens device
 1. This will display the series number of the device, as shown in the screenshot below.<br/>
 
    <img src="images/ResetRecovery2.png" alt=null/>

@@ -9,7 +9,7 @@ keywords: security, hololens, hololens 2, hololens2 security, security overview
 ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-
+ms.collection: essentials-security
 appliesto:
 - HoloLens 2
 ---
@@ -45,7 +45,7 @@ The following security chapters present an overview of our evolving Windows Holo
 | Protect against threats before or during runtime | [Hardware-backed integrity and runtime attestation](security-hardware-backed-integrity.md) | Unified Extensible Firmware Interface (UEFI) Secure Boot detects and prevents attempts to tamper with firmware through bluetooth, wifi, or Ethernet. It includes strong encryption for Trusted Platform Modules (TPMs). |
 | Minimize the surface area for privilege escalation with better administration | [Admin-less operating system](security-adminless-os.md) | HoloLens disabled support for the Administrators group and limits all third-party UWP application code. |
 | Protect data when devices are lost and/or stolen | [Encryption and data protection](security-encryption-data-protection.md) | Ensure security when the device is lost or stolen, and prevent unauthorized applications from accessing sensitive information. |
-| Remove network vulnerabilities and ensure secure/encrypted connectivity | [Network security](security-network-security.md) | With HoloLens 2, the firewall is always enabled, and there is no way to disable it, either programmatically or through the UI. |
+| Remove network vulnerabilities and ensure secure/encrypted connectivity | [Network security](security-network-security.md) | With HoloLens 2, the firewall is always enabled, and there's no way to disable it, either programmatically or through the UI. |
 
 You may be a security or IT professional, business decision-maker, or a member of an innovation team looking to adopt HoloLens within your organization. As you build from proof of concept to a scaled deployment, our security strategies will help you deploy HoloLens within your IT infrastructure safely. The following security scenarios are the most common:
 
@@ -55,13 +55,13 @@ You may be a security or IT professional, business decision-maker, or a member o
 | Ensure privacy and data protection for my customers (for example, GDPR) | [HoloLens 2 Privacy and Data Protection](hololens2-privacy.md) | HoloLens 2 security has been redesigned to provide advanced, innovative security and privacy protection, incorporating Microsoft’s approach to privacy and GDPR regulations.|
 | Permanently delete sensitive data | [Restart, reset, or recover HoloLens](hololens-recovery.md#clean-reflash-the-device) | Any data stored on the unit can be cleared using a full device reset or reflash. |
 | Back up HoloLens to the cloud | [Find, open, and save files on HoloLens](holographic-data.md#sync-to-the-cloud) | Save HoloLens files and data to OneDrive. |
-| Transmit data via wifi | [Encryption and data protection](security-encryption-data-protection.md#azure-integration) | Auto-upload to the cloud with OneDrive |
-| Lock screen with auto-logoff | [Share HoloLens with multiple users](hololens-multiple-users.md)| Pressing headset power key invokes standby mode |
+| Transmit data via wifi | [Encryption and data protection](security-encryption-data-protection.md#azure-integration) | Autoupload to the cloud with OneDrive |
+| Lock screen with autologoff | [Share HoloLens with multiple users](hololens-multiple-users.md)| Pressing headset power key invokes standby mode |
 | Reconfigure product security capabilities | [Page Settings Visibility](settings-uri-list.md) | PageVisibilityList policy can be reset to restrict the pages seen within the Settings app. |
 | Get in touch with Microsoft Security Engineering teams | [Security engineering](security-engineering.md) | Microsoft has several resources and teams devoted to optimizing the company’s engineering protocols, addressing compliance, and ensuring customer trust. |
 | Use modern security and authentication methods | [Limiting password use](security-limiting-password-use.md) | HoloLens 2 enables strong, hardware-backed “password-less” credentials for device sign in. |
-| Authenticate HoloLens users | [Manage user identity and login for HoloLens](hololens-identity.md) | When using Microsoft Entra ID, users are required to use Windows Hello for Business and use a device PIN or biometric (iris) for login to the device. Microsoft Entra identity information is not stored locally on the device.
+| Authenticate HoloLens users | [Manage user identity and login for HoloLens](hololens-identity.md) | When using Microsoft Entra ID, users are required to use Windows Hello for Business and use a device PIN or biometric (iris) for login to the device. Microsoft Entra identity information isn't stored locally on the device.
 | Authenticate users through an external authentication service | [Hybrid identity documentation](/azure/active-directory/hybrid/) | Single user identities for authentication and authorization can be created for all resources, regardless of location.
 | Ensure cloud application deployment readiness | [Azure operational security checklist](/azure/security/fundamentals/operational-checklist) | This checklist will help you determine if your application meets essential operational security recommendations. |
 | Optimize my environment for Mobile Device Management with Intune | [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines) | Intune's security baselines are pre-configured groups of Windows settings that will help you quickly apply the settings recommended for your users and devices. |
-| Reconfigure login inactivity or auto-logoff and define user account passwords | [Policy CSP - DeviceLock](/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxinactivitytimedevicelock) | DeviceLock time periods can be reset. |
+| Reconfigure login inactivity or autologoff and define user account passwords | [Policy CSP - DeviceLock](/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxinactivitytimedevicelock) | DeviceLock time periods can be reset. |
