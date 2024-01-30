@@ -37,24 +37,21 @@ Looking for a new feature but don't see it? We released many new features as par
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
 |[Update to eye tracking calibration](#eye-calibration-updates)|The option to perform eye tracking calibration is shown on the device even if it has been deployed via Autopilot. | All | 10.0.22621.1296|
-|[Policies to configure device maintenance tasks](#device-maintenance-configuration-policy-support)|Customers can now configure device maintenance tasks such as auto logoff of user or reboot of a device when it is not in use. | All | 10.0.22621.1296|
 |[Fixes and improvements](#fixes-and-improvements)  | Additional fixes and improvements for HoloLens. | All   | 10.0.22621.1296 |
 
 ### Eye calibration updates
 
-The option to perform eye tracking calibration is shown on the device even if it has been deployed via Autopilot.  This option can also be disabled via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
+The option to perform eye tracking calibration is now shown on the device even if it has been deployed via Autopilot.  Customers still have the option to disable this behavior via the existing [Mixed Reality policy](/windows/client-management/mdm/policy-csp-mixedreality#skipcalibrationduringsetup):
 
 - URI value: ./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup
 
 With this change, any user on the device can choose to run eye calibration at any time to improve their experience.
 
-### Device maintenance configuration policy support
-
-New policies are available to support customers with device maintenance tasks.  Customers can now configure device maintenance tasks such as auto logoff of user or reboot of a device when it is not in use.  These changes will provide customers with improved app update reliability and a more consistent experience when using the device.
-
 ### Fixes and improvements
 
-- This section will list out additional fixes and improvements that are included in this Insiders release.
+- Fixed an issue where the user picture displayed does not match the selected user on the sign in screen if [MixedReality/PreferLogonAsOtherUser](windows/client-management/mdm/policy-csp-mixedreality#preferlogonasotheruser) policy is enabled.
+
+- Fixed an issue where the user list cannot be dismissed by clicking on the "Add User" or the "Other User" buttons on the sign in screen if [MixedReality/PreferLogonAsOtherUser](windows/client-management/mdm/policy-csp-mixedreality#preferlogonasotheruser) policy is enabled.
 
 ## Start receiving Insider builds
 
