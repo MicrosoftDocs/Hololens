@@ -59,7 +59,7 @@ This is the final stage of the update process, and the device has already found,
 
 #### Best practices for Restart
 
-If the device is left plugged in overnight, it will automatically completely installing the update and restart during the [maintenance window](/windows/win32/taskschd/task-maintenence). Once the download has been installed and staged for a restart internet connectivity isn't a requirement.
+If the device is left plugged in overnight, it'll automatically completely installing the update and restart during the [maintenance window](/windows/win32/taskschd/task-maintenence). Once the download has been installed and staged for a restart internet connectivity isn't a requirement.
 
 Restarting the device is necessary for successfully applying the update but it also breaks into user behavior. HoloLens offers IT administrators the following levels of control over when and how the device should be restarted:
 
@@ -144,9 +144,9 @@ You can use the following update policies to configure devices to get updates fr
 
 - Introduced in [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
 
-Between active hours and install time policies, it's possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior the reboot being initiated and they can delay the reboot in accordance with IT policy.
+Between active hours and install time policies, it's possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior to the reboot being initiated and they can delay the reboot in accordance with IT policy.
 
-The following update policies were be added:
+The following update policies were added:
 
 - [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
 - [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
@@ -243,7 +243,7 @@ A few caveats about this preview offering:
 - HoloLens support is limited in this preview to OS updates only.
 - Windows Holographic for Business only supports HTTP download modes and downloads from a [Microsoft Connected Cache endpoint](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache); peer-to-peer download modes and group assignments aren't supported for HoloLens devices at this time.
 - HoloLens doesn't support deployment or delivery optimization for Windows Server Update Services endpoints.
-- Troubleshooting will require either diagnostics on the Connected Cache server or collecting a trace on HoloLens on HoloLens via **Settings** > **Update & Security** >  **Troubleshooting** >  **Windows Update**.
+- Troubleshooting will require either diagnostics on the Connected Cache server or collecting a trace on HoloLens via **Settings** > **Update & Security** >  **Troubleshooting** >  **Windows Update**.
 
 ## Manually check for updates
 
