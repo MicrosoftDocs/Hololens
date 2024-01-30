@@ -49,9 +49,9 @@ With this change, any user on the device can choose to run eye calibration at an
 
 ### Fixes and improvements
 
-- Fixed an issue where the user picture displayed does not match the selected user on the sign in screen if [MixedReality/PreferLogonAsOtherUser](windows/client-management/mdm/policy-csp-mixedreality#preferlogonasotheruser) policy is enabled.
+- Fixed an issue where the user picture displayed does not match the selected user on the sign in screen if [MixedReality/PreferLogonAsOtherUser](/windows/client-management/mdm/policy-csp-mixedreality#preferlogonasotheruser) policy is enabled.
 
-- Fixed an issue where the user list cannot be dismissed by clicking on the "Add User" or the "Other User" buttons on the sign in screen if [MixedReality/PreferLogonAsOtherUser](windows/client-management/mdm/policy-csp-mixedreality#preferlogonasotheruser) policy is enabled.
+- Fixed an issue where the user list cannot be dismissed by clicking on the "Add User" or the "Other User" buttons on the sign in screen if [MixedReality/PreferLogonAsOtherUser](/windows/client-management/mdm/policy-csp-mixedreality#preferlogonasotheruser) policy is enabled.
 
 ## Start receiving Insider builds
 
