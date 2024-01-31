@@ -41,9 +41,7 @@ Looking for a new feature but don't see it? We released many new features as par
 
 ### Update to eye tracking calibration
 
-The option to perform eye tracking calibration is now shown on the device even if it has been deployed via Autopilot. Customers still have the option to disable this behavior via the existing Mixed Reality policy:
-
-- URI value: ./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup
+The option to perform eye tracking calibration is now shown on the device even if it has been deployed via Autopilot. Customers still have the option to disable this behavior via the existing [MixedReality/SkipCalibrationDuringSetup](/windows/client-management/mdm/policy-csp-mixedreality#skipcalibrationduringsetup) policy.
 
 Any user on the device can still choose to run eye calibration at any time to improve their experience.
 
