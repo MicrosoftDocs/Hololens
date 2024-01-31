@@ -31,7 +31,7 @@ This article explains how HoloLens maps spaces, how to improve spatial mapping, 
 
 Features in your environment can make it difficult for the HoloLens to interpret a space. Light levels, materials in the space, the layout of objects, and more can all affect how HoloLens maps an area.
 
-HoloLens works best in certain kinds of environments. To produce the best spatial map, choose a room that has adequate light and plenty of space. Avoid dark spaces and rooms that have much dark, shiny, or translucent surfaces (for instance, mirrors or gauzy curtains).
+HoloLens works best in certain kinds of environments. To produce the best spatial map, choose a room that has adequate light and plenty of space. Avoid dark spaces and rooms that have dark, shiny, or translucent surfaces (for instance, mirrors or gauzy curtains).
 
 HoloLens is optimized for indoor use. Spatial mapping also works best when Wi-Fi is turned on, although it doesn't have to be connected to a network. HoloLens can obtain Wi-Fi access points even if it isn't connected or authenticated. HoloLens functionality doesn't change whether the access points are internet-connected or intranet/local only.
 
@@ -45,7 +45,7 @@ Here are guidelines for building a great spatial map.
 
 ### Understand the scenarios for the area
 
-It's important to spend the most time where you'll be using the HoloLens, so that the map is relevant and complete. For example, if a user scenario for HoloLens involves moving from Point A to Point B, walk that path two to three times, looking in all directions as you move.  
+It's important to spend the most time where you use the HoloLens, so that the map is relevant and complete. For example, if a user scenario for HoloLens involves moving from Point A to Point B, walk that path two to three times, looking in all directions as you move.  
 
 ### Walk slowly around the space
 
@@ -99,7 +99,7 @@ There are two options for deleting map data in **Settings > System > Holograms**
 
    For example, you can use this option to clear work-related map data without affecting any home-related map data.
 
-- To delete all holograms, select **Remove all holograms**. This command clears all map data that is stored on the device and all anchored holograms. You'll need to explicitly place any holograms. You won't be able to rediscover the previously-placed holograms.
+- To delete all holograms, select **Remove all holograms**. This command clears all map data that is stored on the device and all anchored holograms. You need to explicitly place any holograms. You aren't able to rediscover the previously-placed holograms.
 
 > [!NOTE]
 > After you remove nearby or all holograms, HoloLens immediately starts scanning and mapping the current space.

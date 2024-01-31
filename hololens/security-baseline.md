@@ -229,7 +229,7 @@ We recommend configuring this CSP as a best practice but don't have recommendati
 
 ### 2.6 [RootCATrustedCertificates CSP](/windows/client-management/mdm/rootcacertificates-csp)
 
-We recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes in this CSP as a best practice but won't recommend on specific values for each node in this CSP.
+We recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes in this CSP as a best practice but don't recommend on specific values for each node in this CSP.
 
 ### 2.7 [TenantLockdown CSP](/windows/client-management/mdm/tenantlockdown-csp)
 
@@ -239,11 +239,11 @@ We recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes 
 
 ### 2.8 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
 
-We recommend configuring VPN profiles as a best practice but won't recommend on specific values for each node in this CSP. Most of the settings are related to customer environment.
+We recommend configuring VPN profiles as a best practice but don't recommend on specific values for each node in this CSP. Most of the settings are related to customer environment.
 
 ### 2.9 [WiFi CSP](/windows/client-management/mdm/wifi-csp)
 
-We recommend configuring WiFi profiles as a best practice but won't recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
+We recommend configuring WiFi profiles as a best practice but don't recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ## How to enable these security base lines
 

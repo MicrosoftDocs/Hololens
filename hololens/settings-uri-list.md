@@ -73,7 +73,7 @@ To configure the Settings app pages to show or hide your own selection of pages,
 
 ## Settings URIs
 
-HoloLens devices and Windows 10 devices have a different selection of pages within the Settings app. On this page, you'll find only the settings that exist on HoloLens.
+HoloLens devices and Windows 10 devices have a different selection of pages within the Settings app. On this page, you find only the settings that exist on HoloLens.
 
 ### Accounts
 
@@ -180,7 +180,7 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Windows Update                        | `windowsupdate`<br> `windowsupdate-activehours`  <br> `windowsupdate-history` <br> `windowsupdate-optionalupdates` <br><sup>1</sup>`windowsupdate-options`<br><sup>1</sup>`windowsupdate-restartoptions` |
 | Windows Update - Checks for updates | `windowsupdate-action`          |
 
-- <sup>1</sup> - For versions prior to Windows Holographic, version 21H1, the following two URIs don't actually take you to the **Advanced options** or **Options** pages; they'll only block or show the main Windows Update page.
+- <sup>1</sup> - For versions prior to Windows Holographic, version 21H1, the following two URIs don't actually take you to the **Advanced options** or **Options** pages; they only block or show the main Windows Update page.
   - windowsupdate-options
   - windowsupdate-restartoptions
 
