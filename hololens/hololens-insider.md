@@ -45,7 +45,7 @@ The option to perform eye tracking calibration is now shown on the device even i
 
 - URI value: ./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup
 
-With this change, any user on the device can choose to run eye calibration at any time to improve their experience.
+Any user on the device can still choose to run eye calibration at any time to improve their experience.
 
 ### Fixes and improvements
 
