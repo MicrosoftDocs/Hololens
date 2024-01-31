@@ -36,12 +36,12 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
-|[Update to eye tracking calibration](#eye-calibration-updates)|The option to perform eye tracking calibration is shown on the device even if it has been deployed via Autopilot. | All | 10.0.22621.1296|
-|[Fixes and improvements](#fixes-and-improvements)  | Additional fixes and improvements for HoloLens. | All   | 10.0.22621.1296 |
+|[Update to eye tracking calibration](#update-to-eye-tracking-calibration)|The option to perform eye tracking calibration is shown on the device even if it has been deployed via Autopilot. | All | 10.0.22621.1296|
+|[Fixes and improvements](#fixes-and-improvements)  | Additional fixes and improvements for HoloLens. | All   | 10.0.22621.1205 |
 
-### Eye calibration updates
+### Update to eye tracking calibration
 
-The option to perform eye tracking calibration is now shown on the device even if it has been deployed via Autopilot.  Customers still have the option to disable this behavior via the existing [Mixed Reality policy](/windows/client-management/mdm/policy-csp-mixedreality#skipcalibrationduringsetup):
+The option to perform eye tracking calibration is now shown on the device even if it has been deployed via Autopilot. Customers still have the option to disable this behavior via the existing Mixed Reality policy:
 
 - URI value: ./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup
 
@@ -49,9 +49,9 @@ Any user on the device can still choose to run eye calibration at any time to im
 
 ### Fixes and improvements
 
-- Fixed an issue where the user picture displayed does not match the selected user on the sign in screen if [MixedReality/PreferLogonAsOtherUser](/windows/client-management/mdm/policy-csp-mixedreality#preferlogonasotheruser) policy is enabled.
+- Fixed an issue where the user picture displayed does not match the selected user on the sign in screen if [MixedReality/PreferLogonAsOtherUser](/windows/client-management/mdm/policy-csp-mixedreality?branch=main#preferlogonasotheruser) policy is enabled.
 
-- Fixed an issue where the user list cannot be dismissed by clicking on the "Add User" or the "Other User" buttons on the sign in screen if [MixedReality/PreferLogonAsOtherUser](/windows/client-management/mdm/policy-csp-mixedreality#preferlogonasotheruser) policy is enabled.
+- Fixed an issue where the user list cannot be dismissed by clicking on the "Add User" or the "Other User" buttons on the sign in screen if [MixedReality/PreferLogonAsOtherUser](/windows/client-management/mdm/policy-csp-mixedreality?branch=main#preferlogonasotheruser) policy is enabled.
 
 ## Start receiving Insider builds
 
