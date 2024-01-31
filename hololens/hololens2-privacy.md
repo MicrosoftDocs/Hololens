@@ -9,6 +9,7 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority:
 audience: HoloLens
+ms.collection: essentials-privacy
 appliesto:
 - HoloLens 2
 ---
@@ -22,7 +23,7 @@ One of the core elements of the GDPR is ‘data protection by design’. This co
 
 ## Privacy Overview
 
-HoloLens 2 is a self-contained Windows computer, running Windows Holographic, that runs apps and solutions in an immersive mixed reality environment. It can be used as a secure offline device or deployed as a [managed device](/mem/intune/fundamentals/windows-holographic-for-business) within your organization. See the following links to understand how the HoloLens 2 and Microsoft uses and protects your data:
+HoloLens 2 is a self-contained Windows computer, running Windows Holographic, that runs apps and solutions in an immersive mixed reality environment. It can be used as a secure offline device or deployed as a [managed device](/mem/intune/fundamentals/windows-holographic-for-business) within your organization. See the following links to understand how the HoloLens 2 and Microsoft use and protect your data:
 
 1. [Microsoft Privacy Statement - HoloLens](https://privacy.microsoft.com/privacystatement) – expand the **Enterprise and developer** section in the left navigation menu and select **Enterprise and developer software and appliances**. Go to the **HoloLens** section.
 2. [Windows 10 and your online services](https://privacy.microsoft.com/windows10privacy)
