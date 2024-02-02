@@ -17,7 +17,7 @@ appliesto:
 
 # Moving Platform Mode on Low Dynamic Motion Moving Platforms
 
-In [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) has newly added support for tracking on low-dynamic motion moving platforms on HoloLens 2. After installing the build and enabling Moving Platform Mode, you'll be able to use your HoloLens 2 in previously inaccessible environments like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
+Since [Windows Holographic, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2), HoloLens 2 has support for low-dynamic motion moving platforms. When on a supported OS version and enabling Moving Platform Mode, you'll be able to use your HoloLens 2 in previously inaccessible environments like large ships and large marine vessels. Currently, the feature is targeted at enabling these specific moving platforms only. While nothing prevents you from attempting to use the feature in other environments, the feature is focused on adding support for these environments first.
 
 ![Moving platform example.](./images/mpm-compare.gif)
 
@@ -31,13 +31,13 @@ This article covers:
 HoloLens needs to be able to track your head position with [6 degrees of freedom](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (X, Y, Z, translation, and roll, pitch, yaw rotation) in order to show stable holograms. To do that, HoloLens tracks two similar pieces of information from two separate sources:
 
 1. **Visible light cameras.** These cameras track the environment, for example, the physical room in which you’re using the HoloLens
-1. **Inertial Measurement Unit (IMU).** The IMU consists of an accelerometer, gyroscope, and magnetometer that tracks your head motion and orientation relative to Earth
+1. **Inertial Measurement Unit (IMU).** The IMU consists of an accelerometer, gyroscope, and magnetometer that tracks your head motion and orientation relative to an inertial frame. We can assume that Earth's motion isn't significant for headset tracking, and so we can simplify to considering the motion relative to the Earth.
 
 Information from these two sources is compounded to track your head position at a low latency and high enough frequency in order to render smooth holograms.
 
 However, this approach relies on a critical assumption; the environment (tracked by the cameras) remains stationary relative to Earth (against which the IMU can make measurements). When that isn’t the case, like on a boat in the water, the information from both sources can conflict with one another and cause the tracker to get lost. This conflict produces incorrect position information and results in swimmy holograms or even tracking loss.
 
-Moving Platform Mode remedies this issue. When you enable Moving Platform Mode, that is a hint to the tracker that it can’t rely on our sensor inputs to completely agree with each other always. Instead, HoloLens needs to rely more heavily on visual tracking and quickly identify incongruous inertial motion data and filter it out accordingly before it's able to use the IMU input.
+Moving Platform Mode remedies this issue. When you enable Moving Platform Mode, that is a hint to the tracker that it can’t rely on our sensor inputs to completely agree with each other always. Instead, HoloLens needs to maintain an estimate of platform motion to allow it to transform IMU measurements appropriately, or filter them out if platform motion is uncertain.
 
 ## Supported Environments and Known Limitations
 
