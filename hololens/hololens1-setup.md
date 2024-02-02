@@ -1,7 +1,7 @@
 ---
 title: Prepare a new HoloLens
 description: Learn how to prepare, adjust, and set up your HoloLens (1st gen) mixed reality device for the first time.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
