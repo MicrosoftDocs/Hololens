@@ -2,6 +2,17 @@
 
 
 
+## Week of January 29, 2024
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/30/2024 | [Manage HoloLens updates](/hololens/hololens-updates) | modified |
+| 1/30/2024 | [HoloLens 2 hardware](/hololens/hololens2-hardware) | modified |
+| 1/30/2024 | [HoloLens security overview](/hololens/security-overview) | modified |
+| 1/31/2024 | [Insider preview for Microsoft HoloLens](/hololens/hololens-insider) | modified |
+
+
 ## Week of January 22, 2024
 
 
