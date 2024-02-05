@@ -37,6 +37,7 @@ Looking for a new feature but don't see it? We released many new features as par
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
 |[Update to eye tracking calibration](#update-to-eye-tracking-calibration)|The option to perform eye tracking calibration is shown on the device even if it has been deployed via Autopilot. | All | 10.0.22621.1296|
+|[Policies to set device standby action](#policies-to-set-device-standby-action)|Policies allow the admin to set a time when a device in standby will be logged off and apps terminated. | IT Admin | 10.0.22621.1286|
 |[Fixes and improvements](#fixes-and-improvements)  | Additional fixes and improvements for HoloLens. | All   | 10.0.22621.1205 |
 
 ### Update to eye tracking calibration
@@ -44,6 +45,10 @@ Looking for a new feature but don't see it? We released many new features as par
 The option to perform eye tracking calibration is now shown on the device even if it has been deployed via Autopilot. Customers still have the option to disable this behavior via the existing [MixedReality/SkipCalibrationDuringSetup](/windows/client-management/mdm/policy-csp-mixedreality#skipcalibrationduringsetup) policy.
 
 Any user on the device can still choose to run eye calibration at any time to improve their experience.
+
+### Policies to set device standby action
+
+With these new policies, [MixedReality/ConfigureDeviceStandbyAction](/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyaction) and  [MixedReality/ConfigureDeviceStandbyActionTimeout](/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyactiontimeout) after a device stays in standby for X hours, the device auto logoffs the previous user and apps are terminated. This feature can help improve app update reliability for customers with shared devices as their main app is likely to be running when new version of the app is ready to be updated.
 
 ### Fixes and improvements
 
