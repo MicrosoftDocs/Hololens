@@ -37,7 +37,7 @@ Looking for a new feature but don't see it? We released many new features as par
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
 |[Update to eye tracking calibration](#update-to-eye-tracking-calibration)|The option to perform eye tracking calibration is shown on the device even if it has been deployed via Autopilot. | All | 10.0.22621.1296|
-|[Policies to set device standby action](#policies-to-set-device-standby-action)|Policies allow the admin to set a time when a device in standby will be logged off and apps terminated. | IT Admin | 10.0.22621.1286|
+|[Policies to set device standby action](#policies-to-set-device-standby-action)|Policies allow the admin to execute supported actions in modern standby. | IT Admin | 10.0.22621.1286|
 |[Fixes and improvements](#fixes-and-improvements)  | Additional fixes and improvements for HoloLens. | All   | 10.0.22621.1205 |
 
 ### Update to eye tracking calibration
@@ -48,7 +48,7 @@ Any user on the device can still choose to run eye calibration at any time to im
 
 ### Policies to set device standby action
 
-With these new policies, [MixedReality/ConfigureDeviceStandbyAction](/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyaction) and  [MixedReality/ConfigureDeviceStandbyActionTimeout](/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyactiontimeout) after a device stays in standby for X hours, the device auto logoffs the previous user and apps are terminated. This feature can help improve app update reliability for customers with shared devices as their main app is likely to be running when new version of the app is ready to be updated.
+[MixedReality/ConfigureDeviceStandbyAction](/windows/client-management/mdm/policy-csp-mixedreality"https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyaction") and [MixedReality/ConfigureDeviceStandbyActionTimeout](/windows/client-management/mdm/policy-csp-mixedreality"https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyactiontimeout") policies enable configuring HoloLens 2 to execute certain action, when device is in modern standby after certain period of time. See policy documentation for supported actions.
 
 ### Fixes and improvements
 
