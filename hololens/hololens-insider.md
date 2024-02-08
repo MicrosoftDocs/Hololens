@@ -48,7 +48,7 @@ Any user on the device can still choose to run eye calibration at any time to im
 
 ### Policies to set device standby action
 
-[MixedReality/ConfigureDeviceStandbyAction](/windows/client-management/mdm/policy-csp-mixedreality"https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyaction") and [MixedReality/ConfigureDeviceStandbyActionTimeout](/windows/client-management/mdm/policy-csp-mixedreality"https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyactiontimeout") policies enable configuring HoloLens 2 to execute certain action, when device is in modern standby after certain period of time. See policy documentation for supported actions.
+[MixedReality/ConfigureDeviceStandbyAction](/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyaction) and [MixedReality/ConfigureDeviceStandbyActionTimeout](/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyactiontimeout) policies enable configuring HoloLens 2 to execute certain action, when device is in modern standby after certain period of time. See policy documentation for supported actions.
 
 ### Fixes and improvements
 
