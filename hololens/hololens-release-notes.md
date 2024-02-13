@@ -31,7 +31,7 @@ In between our feature updates, we also release fixes and improvements and secur
 
 To help provide clarity, this release notes page provides information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), refer to the table that follows.
 
-Note:  the current release version is the January 2024 Update, Build 1258.
+Note:  the current release version is the February 2024 Update, Build 1263.
 
 | Major release   number | Feature release(s) name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
@@ -57,6 +57,13 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Windows Holographic, version 23H2 - February 2024 Update
+
+- Build 22621.1263
+
+Improvements and fixes in the update:
+
+- Enhanced the performance of Dynamics 365 Guides on the HoloLens.
 
 ## Windows Holographic, version 23H2 - January 2024 Update
 
