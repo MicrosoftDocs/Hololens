@@ -381,7 +381,7 @@ Note:  With the introduction of Windows Holographic version 23H1, we are discont
 
 ✔️ If you want to manage whether users can manually check for updates to Store apps from the Settings App, then see [Store app update from Settings](#store-app-update-from-settings).
 
-✔️ If you want to learn more about how D365 Apps automatically update to the latest versions, then read [Automatic update during Autopilot Flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow).
+✔️ If you want to learn more about how Dynamics 365 Apps automatically update to the latest versions, then read [Automatic update during Autopilot Flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow).
 
 ✔️ If you want to allow users to reset their device without requiring a manual flash, then see [Autopilot reset experience](#autopilot-reset-experience).
 
