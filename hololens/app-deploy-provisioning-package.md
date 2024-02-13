@@ -23,7 +23,7 @@ Provisioning packages can be used to prepare and configure devices in an environ
 * USB side-load only
 * No auto update (requires manual updates via Provisioning Packages [PPKGs])
 
-Apps installed via a provisioning package will be signed by a certificate in the local machine store. Provisioning packages can only install certificates to the device (local machine) store. Therefore an app and a certificate may be installed via the same provisioning package. If you're deploying your certificate from MDM or installing via the [Certificate Manager](certificate-manager.md), make sure to deploy the certificate to the local machine store to sign apps installed this way.
+A certificate in the local machine store signs the apps installed via a provisioning package. Provisioning packages can only install certificates to the device (local machine) store. Therefore an app and a certificate may be installed via the same provisioning package. If you're deploying your certificate from MDM or installing via the [Certificate Manager](certificate-manager.md), make sure to deploy the certificate to the local machine store to sign apps installed this way.
 
 To learn the basics of creating a Provisioning Package for HoloLens devices, visit [HoloLens Provisioning](/hololens/hololens-provisioning). To deploy an app, you must start with advanced provisioning.
 
@@ -38,7 +38,7 @@ Within [Windows Configuration Designer,](https://www.microsoft.com/store/product
 
 2. Navigate to **UniversalAppInstall** > **UserContextApp** enter the **PackageFamilyName**. See [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall).
 
-   You can use Device Portal on a device you have already installed your app to. Visit the Apps page, and look at the PackageRelativeID line, all the information before the "!" Is your **PackageFamilyName**.
+   You can use Device Portal on a device on which you have installed your app. Visit the Apps page, and look at the PackageRelativeID line, all the information before the "!" Is your **PackageFamilyName**.
 
 3. You'll then see that you have a new section, **ApplicationFile**. Use this area to upload your appx bundle.
 
