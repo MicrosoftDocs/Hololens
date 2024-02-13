@@ -42,7 +42,7 @@ Note:  the current release version is the February 2024 Update, Build 1263.
 
 ### How to find out which operating system version is on HoloLens?
 
-To check what version your HoloLens is on, open the Settings app and select **System** -> **About** (depending on how big your window is you may need to scroll down to the bottom to see the About page.)
+To check what version your HoloLens is on, open the Settings app and select **System** -> **About** (depending on how significant your window is you may need to scroll down to the bottom to see the About page.)
 
 <img src="images/hl2-version-number-settings.jpg" width="500px" alt="Screenshot of HoloLens version number in the Settings app.">
 
@@ -99,7 +99,7 @@ Windows Holographic, version 23H2 is now available and brings a great set of new
 
 | Feature   | Description  | User or scenario | 
 |-----------|--------------|---|
-|[Faster eye position updates](#faster-eye-position-updates)|This improvement provides faster eye position updates when a user does not complete the eye calibration process. | All |
+|[Faster eye position updates](#faster-eye-position-updates)|This improvement provides faster eye position updates when a user doesn't complete the eye calibration process. | All |
 |[Viewfinder for Camera](#viewfinder-for-camera)| A viewfinder is now included to show what is captured in an image or video. | All |
 |[Rename HoloLens 2 device](#rename-hololens-2-device)| HoloLens 2 devices can now be renamed from the Settings app. | All|
 |[Start Menu gesture settings in MDM](#start-menu-gesture-settings-in-mdm)| A new policy is available to configure start menu gesture settings. | IT Admin | 
@@ -129,7 +129,7 @@ For HoloLens 2 users who don't save their Eye Tracking calibration (either skipp
 
 ### Viewfinder for camera
 
-With the latest camera updates coming in this release, you now have a viewfinder that provides an indication of what is included in your image or video capture. This overlay does not hide anything in your view when taking a picture or video. The content in the capture is larger than the bracket area.
+With the latest camera updates coming in this release, you now have a viewfinder that provides an indication of what is included in your image or video capture. This overlay doesn't hide anything in your view when taking a picture or video. The content in the capture is larger than the bracket area.
 
 ![Screenshot shows directions on how to take a photo and what content is included.](media/hololens-insider/mrc-viewfinder-disclaimer-1.png)
 
@@ -252,7 +252,7 @@ During the sign-in process, if [PreferredAadTenantDomainName](/windows/client-ma
 
 ### Windows Hello behavior with FIDO2 policy
 
-To simplify user account setup, new users signing-in to HoloLens 2 with FIDO2 security keys (instead of web sign-in) after initial device setup are no longer required to go through Iris and PIN enrollment. This behavior does not apply to the user signing-in during [initial device setup](/hololens/hololens2-start#set-up-windows).
+To simplify user account setup, new users signing-in to HoloLens 2 with FIDO2 security keys (instead of web sign-in) after initial device setup are no longer required to go through Iris and PIN enrollment. This behavior doesn't apply to the user signing-in during [initial device setup](/hololens/hololens2-start#set-up-windows).
 
 To support users requiring Iris and/or PIN as alternative sign-in options to FIDO2 security keys, a new policy, EnableWindowsHelloProvisioningForSecurityKeys, is available as part of the PassportForWork CSP to control Windows Hello Provisioning behavior. If this policy is enabled on HoloLens 2, the device starts Iris and PIN enrollments after new users sign-in to their devices with FIDO2 security keys. It can be configured in Intune via a [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) profile:
 
@@ -1496,7 +1496,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 - System > Battery: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically.
 - Devices > USB: you can disable USB connections by default.
 - Network & Internet:
-  - USB-C Ethernet adapters now appears in Network & Internet.
+  - USB-C Ethernet adapter now appears in Network & Internet.
   - USB-C Ethernet adapter settings are now available, including its IP address.
   - You can now enable airplane mode on HoloLens 2.
 - Apps: you can reset the default apps used for file and link types. For more information see [Default app picker](#default-app-picker).
@@ -1539,7 +1539,7 @@ With this new setting, you can select an alternative color profile for your Holo
 >
 > - You can re-run display color calibration from Settings whenever you'd like
 > - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change is reflected on the Settings page
-> - When you re-run display color calibration, the color profile that was previously saved is highlighted and Profile 0 does not appear (as Profile 0 represents the display's original color profile)
+> - When you re-run display color calibration, the color profile that was previously saved is highlighted and Profile 0 doesn't appear (as Profile 0 represents the display's original color profile)
 > - If you want to revert to the display's original color profile, you can do so from the Settings page (see [how to reset color profile](#how-to-reset-color-profile))
 
 ##### How to reset color profile
@@ -1615,7 +1615,7 @@ When in the Other users menu, the Other users button displays the last user sign
 ### USB-C External Microphone Support
 
 > [!IMPORTANT]
-> Plugging in **a USB mic does not automatically set it as the input device**. When plugging in a set of USB-C headphones users observe that the headphone's audio is automatically redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow these steps.**
+> Plugging in **a USB mic doesn't automatically set it as the input device**. When plugging in a set of USB-C headphones users observe that the headphone's audio is automatically redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow these steps.**
 
 Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C microphones can be used for calling, recording, etc.
 
@@ -1652,7 +1652,7 @@ For a non-AAD configuration, to configure a device for visitor auto-logon:
     1. Do not create a local account
 1. [Apply the provisioning package](hololens-provisioning.md).
 
-For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign-in screen. Once signed in to the visitor account, the device does not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign-in screen. Once signed in to the visitor account, the device doesn't prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
 
 Visitor Auto logon can be managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
 
@@ -1766,7 +1766,7 @@ A few caveats about this preview offering:
 
 - HoloLens support is limited in this preview to OS updates only.
 - Windows Holographic for Business only supports HTTP download modes and downloads from a [Microsoft Connected Cache endpoint](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache); peer-to-peer download modes and group assignments are not supported for HoloLens devices at this time.
-- HoloLens does not support deployment or delivery optimization for Windows Server Update Services endpoints.
+- HoloLens doesn't support deployment or delivery optimization for Windows Server Update Services endpoints.
 - Troubleshooting requires either diagnostics on the Connected Cache server or collecting a trace on HoloLens via **Settings** > **Update & Security** >  **Troubleshooting** >  **Windows Update**.
 
 ### IT Admin - Update Checklist - 21H1
