@@ -470,7 +470,7 @@ Having up-to-date devices is important. A previous feature improvement lets you 
 
 ### Autopilot reset experience
 
-A new setting to improve the Autopilot reset experience is available if Hololens 2 fails in certain installation scenarios. This setting lets users begin the Autopilot experience again without requiring a manual flash of HoloLens 2 devices. In the ESP configuration, set **Allow users to reset device if installation error occurs** to **Yes** and the device displays a "Reset device" button. If the user selects **Reset device**, after a delay of about 1 minute, HoloLens 2 dresets the operating system and OOBE experience.
+A new setting to improve the Autopilot reset experience is available if Hololens 2 fails in certain installation scenarios. This setting lets users begin the Autopilot experience again without requiring a manual flash of HoloLens 2 devices. In the ESP configuration, set **Allow users to reset device if installation error occurs** to **Yes** and the device displays a "Reset device" button. If the user selects **Reset device**, after a delay of about 1 minute, HoloLens 2 resets the operating system and OOBE experience.
 
 ### Biometrics disclosure screen
 
@@ -1016,7 +1016,7 @@ Users can import .pfx certificate, with private key, to user store or machine st
 
 For managed devices when troubleshooting behavior, confirming that an expected policy configuration was applied is an important step. Previously to this new feature, this had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** > **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
 
-Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select **View advanced diagnostic report**. This generates and open the report in a new Edge window.
+Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select **View advanced diagnostic report**. This generates and opens the report in a new Edge window.
 
 ![View advanced diagnostic report in Settings app.](./images/view-advanced-diagnostic-report.jpg)
 
@@ -1107,7 +1107,7 @@ When the policy is set to a non-empty value, it specifies the email address of t
 The OMA-URI of new policy `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
 String value
 
-- User with the same email address have auto logon enabled.
+- Users with the same email address have auto logon enabled.
 
 On a device where this policy is configured, the user specified in the policy needs to log on at least once. Subsequent reboots of the device after the first logon have the specified user automatically logged on. Only a single auto-logon user is supported. Once enabled, the automatically logged on user won’t be able to log out manually. To log on as a different user, the policy must first be disabled.
 
@@ -1462,7 +1462,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
     ![Button to activate 360 Viewer.](images/enter-360-viewer.jpg)
 
 1. The first time you try to launch 360 Viewer on a specific domain, the browser asks for consent to enter an immersive view. Select **Allow**.
-1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls disappears after a few seconds of inactivity.
+1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls disappear after a few seconds of inactivity.
 
 #### Top WebXR and 360 Viewer known issues
 
