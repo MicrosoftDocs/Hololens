@@ -109,7 +109,7 @@ Windows Holographic, version 23H2 is now available and brings a great set of new
 |[New policy for Sign-in app default screen](#signin-app-default-screen-policy) | This new policy can be used to control the default screen shown when the Sign-in app launches to show Other User.| IT Admin| 
 |[Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 
 |[Font and IME improvements](#font-and-ime-improvements) | Several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) now support GB18030-2022. | All | 
-|[Support for NFC readers](#support-for-nfc-readers) | Users can now login to their devices using their security badge with an NFC (Near Field Communication) reader. | All | 
+|[Support for NFC readers](#support-for-nfc-readers) | Users can now log in to their devices using their security badge with an NFC (Near Field Communication) reader. | All | 
 |[Fixes and improvements](#fixes-and-improvements)  | More fixes and improvements for HoloLens. | All   | 
 
 ### IT Admin Checklist
@@ -118,7 +118,7 @@ Windows Holographic, version 23H2 is now available and brings a great set of new
 
 ✔️ If you want to prevent the use of USB peripherals on the HoloLens2, then see [Policies to block USB Peripherals on HoloLens 2](#policies-to-block-usb-peripherals).
 
-✔️ If you want to control the behavior of Windows Hello provisioning for user users signed in with FIDO2 security keys, then see [New policy for Windows Hello Provisioning behavior](#windows-hello-behavior-with-fido2-policy).
+✔️ If you want to control the behavior of Windows Hello provisioning for users signed in with FIDO2 security keys, then see [New policy for Windows Hello Provisioning behavior](#windows-hello-behavior-with-fido2-policy).
 
 ✔️ If you want to set the default screen that shows up when the Sign-in app launches to show "Other user," then see [New policy for Sign-in app default screen](#signin-app-default-screen-policy).
 
@@ -543,7 +543,7 @@ Improvements and fixes in the update:
 
 Improvements and fixes in the update:
 
-- Fixed an issue where a MDM managed profile gets deleted unexpectedly if both the deletion and the addition of a VPN profile were in the same session.
+- Fixed an issue where an MDM managed profile gets deleted unexpectedly if both the deletion and the addition of a VPN profile were in the same session.
 
 ## Windows Holographic, version 22H2
 
@@ -1557,7 +1557,7 @@ If you're unhappy with the custom color profile saved to your HoloLens 2, you ca
 
 #### Default app picker
 
-When you activate a hyperlink or open a file type with more than one installed app, which supports it, you sees a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
+When you activate a hyperlink or open a file type with more than one installed app, which supports it, you see a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
 
 If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. Scroll to the bottom of the page and select the **Clear** button under "Default apps for file types" and/or "Default apps for link types." Unlike the similar setting on desktop PCs, you can't reset individual file type defaults.
 
