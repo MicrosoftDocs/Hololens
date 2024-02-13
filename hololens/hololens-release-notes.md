@@ -104,7 +104,7 @@ Windows Holographic, version 23H2 is now available and brings a great set of new
 |[Rename HoloLens 2 device](#rename-hololens-2-device)| HoloLens 2 devices can now be renamed from the Settings app. | All|
 |[Start Menu gesture settings in MDM](#start-menu-gesture-settings-in-mdm)| A new policy is available to configure start menu gesture settings. | IT Admin | 
 |[Policies to block USB Peripherals on HoloLens 2](#policies-to-block-usb-peripherals)| HoloLens 2 devices can now be locked down to prevent the use of USB peripherals. | IT Admin| 
-|[Domain name suggested during sign-in](#domain-suggested-during-signin)| During sign-in, the domain name is auto-populated to save time.| All | 
+|[Domain name suggested during sign-in](#domain-suggested-during-sign-in)| During sign-in, the domain name is auto-populated to save time.| All | 
 |[New policy for Windows Hello Provisioning behavior](#windows-hello-behavior-with-fido2-policy) | This new policy can be used to control Windows Hello provisioning behavior for users signed in with FIDO2 security keys.| IT Admin| 
 |[New policy for Sign-in app default screen](#signin-app-default-screen-policy) | This new policy can be used to control the default screen shown when the Sign-in app launches to show Other User.| IT Admin| 
 |[Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 
