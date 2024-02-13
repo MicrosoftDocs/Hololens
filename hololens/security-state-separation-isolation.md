@@ -1,6 +1,6 @@
 ---
 title: State separation and isolation
-description: Learn about state separation, isolation, code signing, and defender applications on your HoloLens 2 mixed reality device.
+description: Learn about state separation, isolation, code signing, and Defender applications on your HoloLens 2 mixed reality device.
 
 ms.reviewer: tagran
 ms.date: 6/30/2020
@@ -16,7 +16,7 @@ appliesto:
 
 # State separation and isolation
 
-State separation and isolation protects critical portions of the Hololens 2 operating system from change – such as those required for the operating system to boot into a trusted state. With isolation technology, untrusted apps are moved to an isolated sandbox environment, to ensure that they don't affect system security.
+State separation and isolation protect critical portions of the HoloLens 2 operating system from change – such as those required for the operating system to boot into a trusted state. With isolation technology, untrusted apps are moved to an isolated sandbox environment, to ensure that they don't affect system security.
 
 ## State separation
 
