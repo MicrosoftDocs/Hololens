@@ -243,7 +243,7 @@ This policy specifies a list of Plug and Play hardware IDs and compatible IDs fo
 
 Refer to [AllowInstallationOfMatchingDeviceIDs](/windows/client-management/mdm/policy-csp-deviceinstallation#allowinstallationofmatchingdeviceids) for details.
 
-### Domain suggested during signin
+### Domain suggested during sign in
 
 During the sign-in process, if [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname) MDM policy is set on HoloLens 2, the tenant domain name is suggested to the user to speed up the login process and save time.  Users can type in a different tenant domain name if desired.
 
