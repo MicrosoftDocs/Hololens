@@ -35,12 +35,12 @@ Windows 10 PC Setup
    1. Support for this configuration is included in Build 19041.1117 and above.
 1. Download/Install the Advanced Recovery Companion(ARC) tool [from the Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) to your PC
 1. Download/Install the latest [Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) tool from the Microsoft Store to your PC.
-1. [Download the OfflineSecureHL2_Sample folder with the project files](https://aka.ms/HoloLensDocs-SecureOfflineSample2) to build the PPKG.
+1. Build the PPKG by [downloading the OfflineSecureHL2_Sample folder with the project files](https://aka.ms/HoloLensDocs-SecureOfflineSample2).
 1. Prepare your offline [Line of Business application for PPKG deployment](app-deploy-provisioning-package.md).
 
 ## Configure
 
-Build a Secure Configuration Provisioning Package
+Build a Secure Configuration Provisioning Package.
 
 1. Launch the WCD tool on your PC.
 1. Select **File -> Open project**.

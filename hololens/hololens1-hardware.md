@@ -37,7 +37,7 @@ Your HoloLens includes the following features:
 The HoloLens box contains the following items:
 
 - **Nose pads**. Select a nose pad that fits the shape of your nose and accommodates your eyewear.
-- **Overhead strap**. When you're wearing the HoloLens while you move around, use the overhead strap to help keep the device in place. Additionally, if you're wearing the HoloLens for extended periods, using the overhead strap may make the device more comfortable to wear.
+- **Overhead strap**. When you're wearing the HoloLens while you move around, use the overhead strap to help keep the device in place. Additionally, if you're wearing the HoloLens for extended periods, using the overhead strap makes the device more comfortable to wear.
 - **Micro USB cable**. Use the micro-USB cable to connect your HoloLens to the power supply for charging, or use it to connect your HoloLens to your computer.
 - **Power supply**. Plugs into a power outlet.
 - **Microfiber cloth**. Use the cloth to clean your HoloLens visor.
@@ -81,7 +81,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 ### Input, output, and connectivity
 
 - Built-in speakers
-- Audio 3.5 mm jack
+- Audio 3.5-mm jack
 - Volume up/down
 - Brightness up/down
 - Power button
@@ -145,7 +145,7 @@ Using the following to understand the environment:
 
 ### Safety
 
-HoloLens has been tested and found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3, and EN 166.
+HoloLens is tested and is found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3, and EN 166.
 - [SAR Information](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## Care and cleaning

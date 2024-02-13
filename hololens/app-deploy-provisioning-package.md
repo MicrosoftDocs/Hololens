@@ -21,9 +21,9 @@ Provisioning packages can be used to prepare and configure devices in an environ
 
 * Non-Public apps
 * USB side-load only
-* No auto update (requires manual updates via PPKGs)
+* No auto update (requires manual updates via Provisioning Packages [PPKGs])
 
-Apps installed via a provisioning package must be signed by a certificate in the local machine store. Provisioning packages can only install certificates to the device (local machine) store. Therefore an app and a certificate may be installed via the same provisioning package. If you're deploying your certificate from MDM or installing via the [Certificate Manager](certificate-manager.md), make sure to deploy the certificate to the local machine store to sign apps installed this way.
+Apps installed via a provisioning package will be signed by a certificate in the local machine store. Provisioning packages can only install certificates to the device (local machine) store. Therefore an app and a certificate may be installed via the same provisioning package. If you're deploying your certificate from MDM or installing via the [Certificate Manager](certificate-manager.md), make sure to deploy the certificate to the local machine store to sign apps installed this way.
 
 To learn the basics of creating a Provisioning Package for HoloLens devices, visit [HoloLens Provisioning](/hololens/hololens-provisioning). To deploy an app, you must start with advanced provisioning.
 
@@ -34,7 +34,7 @@ To learn the basics of creating a Provisioning Package for HoloLens devices, vis
 
 Within [Windows Configuration Designer,](https://www.microsoft.com/store/productId/9NBLGGH4TX22) take following four steps.
 
-1. Set ApplicationManagement/AllowAllTrustedApps To “Yes”. See: [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
+1. Set ApplicationManagement/AllowAllTrustedApps To “Yes.” See: [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
 
 2. Navigate to **UniversalAppInstall** > **UserContextApp** enter the **PackageFamilyName**. See [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall).
 

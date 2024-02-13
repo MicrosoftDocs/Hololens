@@ -18,7 +18,7 @@ The following procedures help you set up a HoloLens 2 for the first time:
 
 ## Charge your HoloLens
 
-Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A). Using the wall charger supplied, HoloLens 2 devices can charge the battery to full in less than 65 minutes when the device is in standby.
+Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A). With the wall charger supplied, HoloLens 2 devices can charge the battery to full in less than 65 minutes when the device is in standby.
 
 Charging rate and speed may vary depending on the environment in which the device is running.
 
@@ -49,7 +49,7 @@ To detach the back of the overhead strap, press the button below each connection
 
 ## Turn on the HoloLens 2
 
-To turn on your HoloLens 2, press the Power button.  The LEDs below the Power button display the battery level.
+To turn on your HoloLens 2, press the Power button. The LEDs below the Power button display the battery level.
 
 > [!NOTE]
 > To power on HoloLens 2 for the very first time, after unboxing, press and hold the power button for at least 4 seconds to turn it on. Next time you power on HoloLens 2, it’ll start after a short power button press.
@@ -66,7 +66,7 @@ To turn on your HoloLens 2, press the Power button.  The LEDs below the Power bu
 
 ## HoloLens behavior reference
 
-Not sure what the indicator lights on your HoloLens mean? Want to know how HoloLens should behave while charging?  Here's some help!
+Not sure what the indicator lights on your HoloLens mean? Want to know how HoloLens should behave while charging? Here's some help!
 
 ### Charging behavior
 
@@ -91,7 +91,7 @@ Not sure what the indicator lights on your HoloLens mean? Want to know how HoloL
 
 ### Sleep Behavior
 
-| State of the Device | Action | HoloLens 2 will do this |
+| State of the Device | Action | HoloLens 2 does this |
 | - | - | - |
 | ON | Single Power button press | Device transitions to SLEEP and turns off all indicator lights |
 | ON | No movement for 3 minutes | Device transition to SLEEP and turns off all indicator lights |
@@ -121,12 +121,12 @@ See [product safety warnings and instructions](https://support.microsoft.com/hel
 
 There are two key setup scenarios to consider:
 
-- **Add the first user on the device.**  Your device is brand-new and no users are logged into the device.  The device will need to go through first-time setup, also known as the Out-of-Box-Experience (OOBE).  Through this setup process, the first user is added to the device.  
+- **Add the first user on the device.**  Your device is brand-new and no users are logged into the device.  The device needs to go through first-time setup, also known as the Out-of-Box-Experience (OOBE). Through this setup process, the first user is added to the device.  
 
 > [!div class="nextstepaction"]
 > [How to add the first user on your HoloLens 2](hololens2-start.md)
 
-- **Add more users on the device.**  The device has gone through OOBE, but now additional users need to be added to the device.  Through this setup process, additional users are added to the device.  
+- **Add more users on the device.**  The device has gone through OOBE, but now more users need to be added to the device.  Through this setup process, more users are added to the device.  
 
 > [!div class="nextstepaction"]
 > [How to add more users on your HoloLens 2](/hololens/hololens2-new-user-optimize?branch=main&tabs=firstBlank%2CsecondBlank)

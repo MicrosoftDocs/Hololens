@@ -47,12 +47,12 @@ This guide assumes the following services are being used:
 
 Consider whether or not devices are connected to a network during usage:
 
-- If devices are able to be connected, then more services can be used such as D365 Remote Assist or D365 Guides.
+- If devices are able to be connected, then more services can be used such as Dynamics 365 Remote Assist or Dynamics 365 Guides.
 - LOB applications can be developed to use local data storage either on device, or on a server contained within the organizations network.
 
 ### Governance processes for User Enrollment and Updates
 
-- Users will need to make their initial sign into the device when connected to the network. After setting up their PIN and IRIS, they can sign in offline.
+- Users need to make their initial sign into the device when connected to the network. After setting up their PIN and IRIS, they can sign in offline.
 - Devices should be reconnected at a regular schedule (once a month) to enable any MDM policy changes and Windows updates to be completed.
 
 ### Network Configurations
@@ -95,7 +95,7 @@ The key [endpoints](hololens-offline.md) to enable access on your network are:
 ## Deploy and maintain
 Deployment and Maintenance steps are identical to the [Cloud connected guide](hololens2-cloud-connected-deploy.md). We've included basic suggestions here.
 
-When the device is reconnected to the corporate network, we suggest you perform manual updates at-least once a month (ie. the 2nd Wednesday of the month) to ensure your device(s) are up-to-date and secure.
+When the device is reconnected to the corporate network, we suggest you perform manual updates at-least once a month (that is, the second Wednesday of the month) to ensure your device(s) are up-to-date and secure.
 
 ### Manually update store apps
 
@@ -111,7 +111,7 @@ Check for updates anytime in settings. To see available updates:
 1. Navigate to **Update & Security** > **Windows Update**.
 1. Select **Check for updates**.
 
-Read more at [Update hololens](hololens-update-hololens.md).
+Read more at [Update HoloLens](hololens-update-hololens.md).
 
 ### Manually sync with MDM
 

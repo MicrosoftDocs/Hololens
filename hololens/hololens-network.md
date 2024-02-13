@@ -13,7 +13,7 @@ ms.date: 8/23/2022
 
 # Connect HoloLens to a network
 
-To do most things on your HoloLens, you have to be connected to a network. HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio and connecting it to a network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network. This guide will help you:
+To do most things on your HoloLens, you have to be connected to a network. HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio and connecting it to a network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network. This guide helps you to:
 
 - Connect to a network using Wi-Fi, or for HoloLens 2 only, Wi-Fi Direct or Ethernet over USB-C
 - Disable and re-enable Wi-Fi
@@ -24,7 +24,7 @@ Read more about [using HoloLens offline](hololens-offline.md).
 
 The first time you use your HoloLens, you'll be guided through connecting to a Wi-Fi network. If you have trouble connecting to Wi-Fi during setup, make sure that your network is either an open, password-protected network or a captive portal network. Also, confirm that the network doesn't require you to use a certificate to connect. After setup, you can connect to other types of Wi-Fi networks.
 
-On HoloLens 2 devices, users may also [use a USB-C to Ethernet adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) to connect directly to Wi-Fi to help setting up the device. Once the device has been set up, users may continue to use the adapter, or they may disconnect the device from the adapter and [connect to wi-fi after setup](hololens-network.md#connecting-to-wi-fi-after-setup).
+On HoloLens 2 devices, users may also [use a USB-C to Ethernet adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) to connect directly to Wi-Fi to help setting up the device. Once the device is set up, users may continue to use the adapter, or they may disconnect the device from the adapter and [connect to wi-fi after setup](hololens-network.md#connecting-to-wi-fi-after-setup).
 
 ## Connecting to Wi-Fi after setup
 
@@ -51,7 +51,7 @@ To confirm you're connected to a Wi-Fi network, check the Wi-Fi status in the **
 When connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications to ensure good roaming between Wi-Fi terminals.
 
 - Chipset: SDM850 with WCN3990 Wi-Fi modules. 802.11 AC wave 1
-- Channel bandwidths: 2.4 GHz supports 20 MHz, 5 GHz supports 20, 40, and 80 MHz
+- Channel bandwidths: 2.4 GHz supports 20 MHz, 5 GHz supports 20 MHz, 40 MHz, and 80 MHz
 - Spatial Streams: 2x2 MIMO
 - Supports 802.11r (fast roaming), RSSI to trigger roaming is ~70dBm
 

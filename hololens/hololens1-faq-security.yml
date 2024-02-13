@@ -30,7 +30,7 @@ sections:
           * 802.11ac and Bluetooth 4.1 LE
 
       - question: |
-          What type of architecture is incorporated?  For example: point to point, mesh, or something else?
+          What type of architecture is incorporated? For example: point to point, mesh, or something else?
         answer: |
           * Wi-Fi can be used in infrastructure mode to communicate with other wireless access points.
           * Bluetooth can be used to talk peer to peer between multiple HoloLens if the customers' application supports it or to other Bluetooth devices.
@@ -47,7 +47,7 @@ sections:
       - question: |
           Can the device allow or block specific frequencies?
         answer: |
-          * This isn't controllable by the user/device.
+          * This factor isn't controllable by the user/device.
 
       - question: |
           What is the power level for both transmit and receive? Is it adjustable? What is the range of operation?
@@ -76,17 +76,17 @@ sections:
       - question: |
           What protocol is used?
         answer: |
-          * HoloLens doesn't use any proprietary protocols
+          * HoloLens doesn't use any proprietary protocols.
 
       - question: |
-          OS update frequency – What is the frequency of OS updates for the HL?  Is there a set schedule?  Does Microsoft release security patches as needed, etc.
+          OS update frequency – What is the frequency of OS updates for the HL? Is there a set schedule?  Does Microsoft release security patches as needed, etc.
         answer: |
-          * Microsoft does provide OS updates to HoloLens exactly the same way it's done for Windows 10. There are normally two major updates per year, one in spring, one in fall. As HoloLens is a Windows device, the update concept is the same as with any other Windows device. Microsoft releases Security patches as needed and follows the same concept as done on any other Windows device.
+          * Microsoft does provide OS updates to HoloLens exactly the same way in which updates are provided for Windows 10. There are normally two major updates per year, one in spring, one in fall. As HoloLens is a Windows device, the update concept is the same as with any other Windows device. Microsoft releases Security patches as needed and follows the same concept as done on any other Windows device.
 
       - question: |
-          OS hardening – What options are there to harden the OS?  Can we remove or shut down unnecessary apps or services?
+          OS hardening – What options are there to harden the OS? Can we remove or shut down unnecessary apps or services?
         answer: |
-          * HoloLens behaves like a smartphone. It's comparable to other modern Windows devices. HoloLens can be managed by either Microsoft Intune or other Modern Device Management Solutions, like MobileIron, Airwatch, or Soti. There are Policies you can set in these Management Systems to put Security policies on the device and in order to harden the device. There's also the option in deleting any unnecessary applications if wanted.
+          * HoloLens behaves like a smartphone. It's comparable to other modern Windows devices. Either Microsoft Intune or other Modern Device Management Solutions manages HoloLens, like MobileIron, Airwatch, or Soti. There are Policies you can set in these Management Systems to put Security policies on the device and in order to harden the device. There's also the option in deleting any unnecessary applications if wanted.
 
       - question: |
           How will software applications be managed and updated? What control do we have to define what apps are loaded and app update process for apps that are living in the Microsoft store?
@@ -96,7 +96,7 @@ sections:
       - question: |
           What is the frequency of updates to apps in the store for HoloLens?
         answer: |
-          * As we follow the same concept of the Microsoft Store and pull apps from there, the update cycle is determined by the developer of the Application. All management options that you have to control the update mechanism in the store apply to HoloLens as well.
+          * As we follow the same concept of the Microsoft Store and pull apps from there, the developer of the application determines the update cycle. All management options that you have to control the update mechanism in the store apply to HoloLens as well.
 
       - question: |
           Is there a secure boot capability for the HoloLens?
@@ -116,10 +116,10 @@ sections:
       - question: |
           Antivirus, endpoint detection, IPS, app control allowlist – Any ability to run antivirus, endpoint detection, IPS, app control allowlist, etc.
         answer: |
-          * Windows Holographic for Business (commercial suite) does support Windows Defender Smart Screen. If an antivirus company were to create and publish their app to the Universal Windows Platform, it could be downloaded on HoloLens. Now, no companies have done this for HoloLens.
+          * Windows Holographic for Business (commercial suite) does support Windows Defender Smart Screen. If an antivirus company is to create and publish their app to the Universal Windows Platform, it could be downloaded on HoloLens. Now, no companies have done this for HoloLens.
           * Allowing apps is possible by using the Microsoft Enterprise Store, where you can choose only what specific apps can be downloaded. Also, through MDM you can lock what specific apps can be run or even seen on the device.
       - question: |
-          Can we quarantine the device from prod network until we update the device if it has been offline for an extended period of time?  Ex. Device has been sitting in a drawer not powered up for a period (six months) and hasn't received any updates, patches, etc.  When it tries to come on the network, can we flag it and say you must update on another network prior to being complaint to join the network.
+          Can we quarantine the device from prod network until we update the device if it has been offline for an extended period of time?  For example, a device has been sitting in a drawer not powered up for a period (six months) and hasn't received any updates, patches, etc.  When it tries to come on the network, can we flag it and say you must update on another network prior to being complaint to join the network.
         answer: |
           * This is something that can be managed on the infrastructure level by either an MDM or an on-premises server. The device can be flagged as not compliant if it doesn't meet a specified Update version.
 

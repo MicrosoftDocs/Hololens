@@ -37,9 +37,9 @@ Here's the current list of known issues for HoloLens devices. Check here first i
 
 - The Live Preview feature in Mixed Reality capture may exhibit several seconds of latency.
 
-- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section aren't functional. Using them will have no effect. The virtual keyboard on the virtual input page works correctly.
+- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section aren't functional. Using them has no effect. The virtual keyboard on the virtual input page works correctly.
 
-- After enabling Developer Mode in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
+- After the Developer Mode is enabled in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
 
 ### OneDrive camera upload
 
@@ -60,7 +60,7 @@ Workarounds:
 
 Visual Studio has released VS 2019 Version 16.2, which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
 
-Issue root-cause: Users who used Visual Studio 2015 or early releases of Visual Studio 2017 to deploy and debug applications on their HoloLens and then later used the latest versions of Visual Studio 2017 or Visual Studio 2019 with the same HoloLens will be affected. The newer releases of Visual Studio deploy a new version of a component, but files from the older version are left over on the device, causing the newer version to fail.  This causes the following error message: DEP0100: Ensure that target device has developer mode enabled. Couldn't obtain a developer license on \<ip\> due to error 80004005.
+Issue root-cause: Users who used Visual Studio 2015 or early releases of Visual Studio 2017 to deploy and debug applications on their HoloLens and then later used the latest versions of Visual Studio 2017 or Visual Studio 2019 with the same HoloLens are affected. The newer releases of Visual Studio deploy a new version of a component, but files from the older version are left over on the device, causing the newer version to fail.  This causes the following error message: DEP0100: Ensure that target device has developer mode enabled. Couldn't obtain a developer license on \<ip\> due to error 80004005.
 
 #### Workaround
 
@@ -133,9 +133,9 @@ You may experience issues when trying to launch the Microsoft Store and apps on 
 
 1. All apps using the older framework are 'updated' to use the newer version.
 
-If step 2 is interrupted before completion, then any apps for which the newer framework wasn't registered will fail to launch from the start menu.  We believe any app on HoloLens could be affected by this issue.
+If step 2 is interrupted before completion, then any apps for which the newer framework wasn't registered fails to launch from the start menu.  We believe any app on HoloLens could be affected by this issue.
 
-Some users have reported that closing hung apps and launching other apps such as Feedback Hub, 3D Viewer or Photos resolves the issue for them - however, this doesn't work 100% of the time.
+Some users have reported that closing hung apps and launching other apps such as Feedback Hub, 3D Viewer, or Photos resolves the issue for them - however, this workaround doesn't work 100% of the time.
 
 We have root caused that this issue wasn't caused the update itself, but a bug in the OS that resulted in the .NET Native framework update being handled incorrectly. We're pleased to announce that we have identified a fix and have released an update (OS version 17763.380) containing the fix.  
 
@@ -145,9 +145,9 @@ To see if your device can take the update:
 
 1. Select **Check for Updates**.
 
-1. If update to 17763.380 is available, please update to this build to receive the fix for the App Hang bug.
+1. If update to 17763.380 is available, update to this build to receive the fix for the App Hang bug.
 
-1. Upon updating to this version of the OS, the Apps should work as expected.
+1. Once you update to this version of the OS, the Apps should work as expected.
 
 Additionally, as we do with every HoloLens OS release, we have posted the FFU image to the [Microsoft Download Center](https://aka.ms/hololensdownload/10.0.17763.380).
 
