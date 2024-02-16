@@ -69,7 +69,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Brazil** | Ingram Micro do Brasil LDA | Felipe Manolio <hololens.br@ingrammicro.com> | |
 | **Mexico** | Ingram Micro Mexico SA de CV | Luis Tonix <luis.tonix@ingrammicro.com> |  |
 | | Comercializadora Intcomex SA de CV | Hector Ramirez Salazar <hector.ramirez@intcomex.com> | |
-| **Colombia** | Impresistem SAS |Enmary Margaret <enmary.margaret@impresistem.com> |  |
+| **Colombia** | Impresistem SAS |Dina Luz Morena Motta <dina.moreno@impresistem.com> |  |
 
 ### **North America**
 
