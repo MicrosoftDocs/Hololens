@@ -29,7 +29,7 @@ HoloLens 2 is now available in some countries/regions outside of the US, along w
 | HoloLens 2 Industrial Edition| Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong SAR, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
 | HoloLens 2 Development Edition | Australia, Canada, France, Germany, Ireland, Italy, Japan, New Zealand, Switzerland, UK, and US |
 
-<sup>1</sup> This list is dynamic, check back for updates
+<sup>1</sup> This list is dynamic. Check back for updates.
 
 ## Find an authorized HoloLens 2 reseller
 
