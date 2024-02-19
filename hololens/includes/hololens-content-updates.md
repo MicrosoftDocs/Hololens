@@ -2,6 +2,14 @@
 
 
 
+## Week of February 12, 2024
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/13/2024 | [HoloLens 2 release notes](/hololens/hololens-release-notes) | modified |
+
+
 ## Week of January 29, 2024
 
 
