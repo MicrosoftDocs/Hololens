@@ -29,13 +29,13 @@ HoloLens 2 is now available in some countries/regions outside of the US, along w
 | HoloLens 2 Industrial Edition| Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Denmark, Finland, France, Germany, Hong Kong SAR, India, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, United Arab Emirates, UK, US, and Vietnam  |
 | HoloLens 2 Development Edition | Australia, Canada, France, Germany, Ireland, Italy, Japan, New Zealand, Switzerland, UK, and US |
 
-<sup>1</sup> This list is dynamic, check back for updates
+<sup>1</sup> This list is dynamic. Check back for updates.
 
 ## Find an authorized HoloLens 2 reseller
 
 See the below tables for HoloLens 2 availability and purchase options by region.
 
-### **APAC**
+### APAC
 
 | Country/Region | ADR | Sales Contacts | HoloLens 2<br>Product Link | HoloLens 2 Industrial Edition<br>Product Link |
 |---------|-----|---------|----------------|----------|
@@ -62,16 +62,16 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | **Thailand** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [Buy HoloLens 2 - Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [Buy HoloLens 2 Industrial Edition - Sustainable Solution Co., Ltd.](https://hololensthai.com/) |
 | **Vietnam** | CÔNG TY TNHH HIVERLAB VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [Buy HoloLens 2 - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) | [Buy HoloLens 2 Industrial Edition - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
 
-### **Latin America**
+### Latin America
 
 | Country/Region | Distributor | Sales contacts |  HoloLens 2 Product link |
 |---------|-----|------|----------------|
 | **Brazil** | Ingram Micro do Brasil LDA | Felipe Manolio <hololens.br@ingrammicro.com> | |
 | **Mexico** | Ingram Micro Mexico SA de CV | Luis Tonix <luis.tonix@ingrammicro.com> |  |
 | | Comercializadora Intcomex SA de CV | Hector Ramirez Salazar <hector.ramirez@intcomex.com> | |
-| **Colombia** | Impresistem SAS |Enmary Margaret <enmary.margaret@impresistem.com> |  |
+| **Colombia** | Impresistem SAS |Dina Luz Morena Motta <dina.moreno@impresistem.com> |  |
 
-### **North America**
+### North America
 
 | Country/Region | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
@@ -82,7 +82,7 @@ See the below tables for HoloLens 2 availability and purchase options by region.
 | | *Rental Partner!* <br> Hartford Technology | Mark Ferro <br> [mferro@hartfordrents.com](mailto:mferro@hartfordrents.com) | [HoloLens 2 - Rental Partner! Hartford Technology](https://hartfordrents.com/product/hololens-2-rental/) |  |
 | | CDW | [cdwsales@web.cdw.com](mailto:cdwsales@web.cdw.com) | [Buy HoloLens 2 - CDW](https://www.cdw.com/search/Electronics/Video-Games/VR-Headsets/?lfr=1&w=EP2&key=HoloLens&SortBy=PriceDesc) | [Buy HoloLens 2 Industrial Edition - CDW](https://www.cdw.com/search/Electronics/Video-Games/VR-Headsets/?lfr=1&w=EP2&key=hololens) |
 
-### **EMEA**
+### EMEA
 
 | Country/Region | ADR | Sales Contacts | HoloLens 2 Product Link |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
