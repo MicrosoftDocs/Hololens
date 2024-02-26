@@ -145,7 +145,7 @@ If your device was previously set up for someone else, either for a client or fo
 
 [Back to list](#list)
 
-## Can't log in after updating to Windows Holographic 21H1
+## Can't sign in after updating to Windows Holographic 21H1
 
 ### Symptoms
 
