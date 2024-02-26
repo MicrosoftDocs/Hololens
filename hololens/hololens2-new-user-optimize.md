@@ -14,7 +14,7 @@ appliesto:
 
 # Set up more users on your HoloLens 2
 
-Often organizations have many devices and lots of different people who use those devices. When people are looking to use a HoloLens 2 device, they often want to get straight to their app. If you have to do more setup, it can be hard to get started quickly. In this article, we cover the best ways to reduce set up time, best practices, and cover variations in logging into a device.
+Often organizations have many devices and lots of different people who use those devices. When people are looking to use a HoloLens 2 device, they often want to get straight to their app. If you have to do more setup, it can be hard to get started quickly. In this article, we cover the best ways to reduce setup time, best practices, and cover variations in logging into a device.
 
 > [!NOTE]
 > In all these scenarios we’re talking about scenarios in which a second user can use the device, so all these scenarios use Microsoft Entra identities.
