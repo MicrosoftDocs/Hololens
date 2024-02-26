@@ -22,7 +22,7 @@ This article describes how to resolve several issues or answer questions regardi
 - [EAP Troubleshooting](#eap-troubleshooting)
 - [Wi-Fi Troubleshooting](#wi-fi-troubleshooting)
 - [Network Troubleshooting](#network-troubleshooting)
-- [Can't sign in to a previously setup HoloLens device](#cant-sign-in-to-a-previously-setup-hololens-device)
+- [Can't sign in to a previously set up HoloLens device](#cant-sign-in-to-a-previously-setup-hololens-device)
 - [Can't sign in after updating to Windows Holographic 21H1](#cant-login-after-updating-to-windows-holographic-21h1)
 - [Autopilot Troubleshooting](#autopilot-troubleshooting)
 - [Update troubleshooting](#update-troubleshooting)
@@ -137,7 +137,7 @@ Check out the original [blog](https://techcommunity.microsoft.com/t5/windows-it-
 
 [Back to list](#list)
 
-## Can't sign in to a previously setup HoloLens device
+## Can't sign in to a previously set up HoloLens device
 
 If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can use Intune to remotely [wipe](/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
 > [!IMPORTANT]
@@ -145,7 +145,7 @@ If your device was previously set up for someone else, either for a client or fo
 
 [Back to list](#list)
 
-## Can't login after updating to Windows Holographic 21H1
+## Can't log in after updating to Windows Holographic 21H1
 
 ### Symptoms
 
