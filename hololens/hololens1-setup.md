@@ -1,6 +1,6 @@
 ---
 title: Prepare a new HoloLens
-description: Learn how to prepare, adjust, and setup your HoloLens (1st gen) mixed reality device for the first time.
+description: Learn how to prepare, adjust, and set up your HoloLens (1st gen) mixed reality device for the first time.
 ms.service: hololens
 ms.sitesec: library
 ms.topic: article
@@ -26,7 +26,7 @@ When your HoloLens is on, the battery indicator shows the battery level in incre
 > [!TIP]
 > To get an estimate of your current battery level, say "Hey Cortana, how much battery do I have left?"
 
-The power supply and USB cable that come with the device are the best way to charge your HoloLens (1st gen).  The power supply provides 18W of power (9V 2A).
+The power supply and USB cable that come with the device are the best way to charge your HoloLens (1st gen).  The power supply provides 18 W of power (9 V 2A).
 
 Charging rate and speed may vary depending on the environment in which the device is running.
 
@@ -37,8 +37,8 @@ Charging rate and speed may vary depending on the environment in which the devic
 | &nbsp; | &nbsp; |
 |:--- |:--- |
 |1. Rotate the headband up to about 20-30 degrees.|![Step one, rotate the headband.](./images/FitGuideStep1.png)|
-|2. Push the headband back. Do not pull it back, or manipulate the band behind the hinge, because over time this can break the band.|![Step two, push the headband back.](./images/FitGuideStep2.png)|
-|3. Turn the adjustment wheel to extend the headband all the way out. |![Step three, use the adjustment wheel to extend the headband.](./images/FitGuideStep3.png)|
+|2. Push the headband back. Don't pull it back, or manipulate the band behind the hinge, because over time this can break the band.|![Step two, push the headband back.](./images/FitGuideStep2.png)|
+|3. Turn the adjustment wheel to extend out the headband all the way. |![Step three, use the adjustment wheel to extend the headband.](./images/FitGuideStep3.png)|
 |4. Hold the device by the device arms, and place it on your head. Make sure that the headband sits at the top of your forehead, and then tighten the adjustment wheel.|![Step four, put on the device and adjust the headband.](./images/FitGuideStep4.png)|
 |5. Slide the visor back, and then check the fit of the device. The headband should sit at the top of the forehead, just below your hairline, with the speakers above your ears. The lenses should be centered over your eyes.|![Step five, slide the visor back and check the fit.](./images/FitGuideSetep5.png)|
 
