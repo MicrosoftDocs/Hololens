@@ -239,11 +239,11 @@ We recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes 
 
 ### 2.8 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
 
-We recommend configuring VPN profiles as a best practice but don't recommend on specific values for each node in this CSP. Most of the settings are related to customer environment.
+We recommend configuring VPN profiles as a best practice but don't recommend specific values for each node in this CSP. Most of the settings are related to customer environment.
 
 ### 2.9 [WiFi CSP](/windows/client-management/mdm/wifi-csp)
 
-We recommend configuring WiFi profiles as a best practice but don't recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
+We recommend configuring WiFi profiles as a best practice but don't recommend specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ## How to enable these security base lines
 
@@ -263,7 +263,7 @@ Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#
 1. Create a name for the profile, and select the **Next** button.
 1. On the Configuration settings screen, select **+ Add settings**.
 
-Using the name of the policy from the baseline above, you can search for the policy. The settings catalog will space out the name, so to find "Accounts/AllowMicrosoftAccountConnection" you'll need to search "Allow Microsoft Account Connection". After you search, you'll see the list of policies reduce to just the CSP which has this policy. Select **Accounts** (or the relevant CSP to what you are current searching), once you do you'll see the policy result below. Check the box for the policy.
+Using the name of the policy from the baseline above, you can search for the policy. The settings catalog will space out the name, so to find "Accounts/AllowMicrosoftAccountConnection" you'll need to search "Allow Microsoft Account Connection". After you search, you'll see the list of policies reduced to just the CSP which has this policy. Select **Accounts** (or the relevant CSP to what you are current searching), once you do you'll see the policy result below. Check the box for the policy.
 
 ![Screenshot of the settings picker option.](images/settings-picker.png)
 

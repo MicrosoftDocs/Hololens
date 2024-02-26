@@ -42,7 +42,7 @@ Each of these HoloLens 2 operating states is described in the following section.
 
 #### Core operating system
 
-An immutable state comprises of executable files and data that are unalterable and can only be changed by Microsoft during the installation of updates. During such an update of the core operating system, a new image containing the latest desired operating state is enabled.
+An immutable state includes executable files and data that are unalterable and can only be changed by Microsoft during the installation of updates. During such an update of the core operating system, a new image containing the latest desired operating state is enabled.
 The unalterable state is marked as read-only (or is otherwise integrity-protected), preventing persistence of any malware with elevated privileges. The following executable files and data are protected in the immutable state:
   * Windows Holographic inbox drivers
   * Operating system binaries
