@@ -16,7 +16,7 @@ appliesto:
 
 # Known issues for HoloLens (1st Gen)
 
-Here is the current list of known issues for HoloLens devices. Check here first if you are seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
+Here's the current list of known issues for HoloLens devices. Check here first if you're seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
 
 >[!NOTE]
 > - If you discover an issue that is not blocking you please report it on your HoloLens device via [Feedback Hub](hololens-feedback.md).
@@ -37,19 +37,19 @@ Here is the current list of known issues for HoloLens devices. Check here first 
 
 - The Live Preview feature in Mixed Reality capture may exhibit several seconds of latency.
 
-- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section are not functional. Using them will have no effect. The virtual keyboard on the virtual input page works correctly.
+- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section aren't functional. Using them has no effect. The virtual keyboard on the virtual input page works correctly.
 
-- After enabling Developer Mode in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
+- After the Developer Mode is enabled in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
 
 ### OneDrive camera upload
 
-The OneDrive app for HoloLens does not support automatic camera upload for work or school accounts.
+The OneDrive app for HoloLens doesn't support automatic camera upload for work or school accounts.
 
 Workarounds:
 
 - If viable for your business, automatic camera upload is supported on consumer Microsoft accounts. You can sign in to your Microsoft account in addition to your work or school account (the OneDrive app supports dual sign-in). From your Microsoft account profile within OneDrive you can enable automatic, background camera roll upload.
 
-- If you cannot safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
+- If you can't safely use a consumer Microsoft account for uploading your photos automatically, you can manually upload photos to your work or school account from the OneDrive app. To do that, make sure you're signed into your work or school account in the OneDrive app. Select the **+** button and choose **Upload**. Find the photos or videos you want to upload by navigating to **Pictures > Camera Roll**. Select the photos or videos you want to upload, and then select the **Open** button.
 
 ## Known issues for HoloLens (1st Gen)
 
@@ -60,7 +60,7 @@ Workarounds:
 
 Visual Studio has released VS 2019 Version 16.2, which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
 
-Issue root-cause: Users who used Visual Studio 2015 or early releases of Visual Studio 2017 to deploy and debug applications on their HoloLens and then subsequently used the latest versions of Visual Studio 2017 or Visual Studio 2019 with the same HoloLens will be affected. The newer releases of Visual Studio deploy a new version of a component, but files from the older version are left over on the device, causing the newer version to fail.  This causes the following error message: DEP0100: Ensure that target device has developer mode enabled. Could not obtain a developer license on \<ip\> due to error 80004005.
+Issue root-cause: Users who used Visual Studio 2015 or early releases of Visual Studio 2017 to deploy and debug applications on their HoloLens and then later used the latest versions of Visual Studio 2017 or Visual Studio 2019 with the same HoloLens are affected. The newer releases of Visual Studio deploy a new version of a component, but files from the older version are left over on the device, causing the newer version to fail.  This causes the following error message: DEP0100: Ensure that target device has developer mode enabled. Couldn't obtain a developer license on \<ip\> due to error 80004005.
 
 #### Workaround
 
@@ -118,9 +118,9 @@ Our team is currently working on a fix. In the meantime, you can use the followi
 
 1. Run the executable and provide the device's IP address as a command-line argument. (If connected using USB, you can use 127.0.0.1, otherwise use the device's Wi-Fi IP address.)  For example, "HoloLensDeploymentFix 127.0.0.1".
 
-1. After the tool has exited without any messages (this should only take a few seconds), you will now be able to deploy and debug from Visual Studio 2017 or newer.  Continued use of the tool is not necessary.
+1. After the tool has exited without any messages (this should only take a few seconds), you'll now be able to deploy and debug from Visual Studio 2017 or newer.  Continued use of the tool isn't necessary.
 
-We will provide further updates as they become available.
+We'll provide further updates as they become available.
 
 ### Issues launching the Microsoft Store and apps on HoloLens
 
@@ -133,11 +133,11 @@ You may experience issues when trying to launch the Microsoft Store and apps on 
 
 1. All apps using the older framework are 'updated' to use the newer version.
 
-If step 2 is interrupted before completion, then any apps for which the newer framework wasn't registered will fail to launch from the start menu.  We believe any app on HoloLens could be affected by this issue.
+If step 2 is interrupted before completion, then any apps for which the newer framework wasn't registered fails to launch from the start menu.  We believe any app on HoloLens could be affected by this issue.
 
-Some users have reported that closing hung apps and launching other apps such as Feedback Hub, 3D Viewer or Photos resolves the issue for them - however, this does not work 100% of the time.
+Some users have reported that closing hung apps and launching other apps such as Feedback Hub, 3D Viewer, or Photos resolves the issue for them - however, this workaround doesn't work 100% of the time.
 
-We have root caused that this issue was not caused the update itself, but a bug in the OS that resulted in the .NET Native framework update being handled incorrectly. We are pleased to announce that we have identified a fix and have released an update (OS version 17763.380) containing the fix.  
+We have root caused that this issue wasn't caused the update itself, but a bug in the OS that resulted in the .NET Native framework update being handled incorrectly. We're pleased to announce that we have identified a fix and have released an update (OS version 17763.380) containing the fix.  
 
 To see if your device can take the update:
 
@@ -145,37 +145,37 @@ To see if your device can take the update:
 
 1. Select **Check for Updates**.
 
-1. If update to 17763.380 is available, please update to this build to receive the fix for the App Hang bug.
+1. If update to 17763.380 is available, update to this build to receive the fix for the App Hang bug.
 
-1. Upon updating to this version of the OS, the Apps should work as expected.
+1. Once you update to this version of the OS, the Apps should work as expected.
 
 Additionally, as we do with every HoloLens OS release, we have posted the FFU image to the [Microsoft Download Center](https://aka.ms/hololensdownload/10.0.17763.380).
 
-If you would not like to take the update, we have released a new version of the Microsoft Store UWP app as of 3/29. After you have the updated version of the Store:
+If you wouldn't like to take the update, we have released a new version of the Microsoft Store UWP app as of 3/29. After you have the updated version of the Store:
 
 1. Open the Store and confirm that it loads.
 1. Use the bloom gesture to open the menu.
 1. Attempt to open previously broken apps.
-1. If it still cannot be launched, tap and hold the icon of the broken app and select uninstall.
+1. If it still can't be launched, tap and hold the icon of the broken app and select uninstall.
 1. Reinstall these apps from the store.
 
 If your device is still unable to load apps, you can sideload a version of the .NET Native Framework and Runtime through the download center by following these steps:
 
-1. Please download [this zip file](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) from the Microsoft Download Center. Unzipping will produce two files.  Microsoft.NET.Native.Runtime.1.7.appx and Microsoft.NET.Native.Framework.1.7.appx.
+1. Download [this zip file](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) from the Microsoft Download Center. Unzipping will produce two files.  Microsoft.NET.Native.Runtime.1.7.appx and Microsoft.NET.Native.Framework.1.7.appx.
 
-1. Please verify that your device is dev unlocked.  If you haven't done that before, see [Using the Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal) for instructions.
+1. Verify that your device is dev unlocked.  If you haven't done that before, see [Using the Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal) for instructions.
 
 1. You then want to get into the Windows Device Portal. Our recommendation is to do this over USB and you would do that by typing http://127.0.0.1:10080 into your browser.
 
-1. After you have the Windows Device Portal up we need you to "side load" the two files that you downloaded. To do that you need to go down the left side bar until you get to the **Apps** section and select **Apps**.
+1. After you have the Windows Device Portal up we need you to "side load" the two files that you downloaded. To do that, you need to go down the left side bar until you get to the **Apps** section and select **Apps**.
 
-1. You will then see a screen that is similar to the below.  You want to go to the section that says **Install App** and browse to where you unzipped those two APPX files. You can only do one at a time, so after you select the first one, then click on "Go" under the Deploy section. Then do this for the second APPX file.
+1. You'll then see a screen that is similar to the below.  You want to go to the section that says **Install App** and browse to where you unzipped those two APPX files. You can only do one at a time, so after you select the first one, then click on "Go" under the Deploy section. Then do this for the second APPX file.
 
    ![Windows Device Portal to Install Side-Loaded app.](images/20190322-DevicePortal.png)
 
 1. At this point we believe your applications should start working again and that you can also get to the Store.
 
-1. In some cases, it is necessary run the additional step of launching the 3D Viewer app before affected apps will launch.
+1. In some cases, it's necessary to run the extra step of launching the 3D Viewer app before affected apps will launch.
 
 We appreciate your patience as we have gone through the process to get this issue resolved, and we look forward to continued working with our community to create successful Mixed Reality experiences.
 
@@ -191,13 +191,13 @@ We appreciate your patience as we have gone through the process to get this issu
 
 ### API
 
-- If the application sets the [focus point](/windows/mixed-reality/focus-point-in-unity) behind the user or the normal to camera.forward, holograms will not appear in Mixed Reality Capture photos or videos. Until this bug is fixed in Windows, if applications actively set the [focus point](/windows/mixed-reality/focus-point-in-unity) they should ensure the plane normal is set opposite camera-forward (for example, normal = -camera.forward).
+- If the application sets the [focus point](/windows/mixed-reality/focus-point-in-unity) behind the user or the normal to camera.forward, holograms won't appear in Mixed Reality Capture photos or videos. Until this bug is fixed in Windows, if applications actively set the [focus point](/windows/mixed-reality/focus-point-in-unity) they should ensure the plane normal is set opposite camera-forward (for example, normal = -camera.forward).
 
 ### Xbox Wireless Controller
 
-- Xbox Wireless Controller S must be updated before it can be used with HoloLens. Ensure you are [up to date](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) before attempting to pair your controller with a HoloLens.
+- Xbox Wireless Controller S must be updated before it can be used with HoloLens. Ensure you're [up to date](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) before attempting to pair your controller with a HoloLens.
 
-- If you reboot your HoloLens while the Xbox Wireless Controller is connected, the controller will not automatically reconnect to HoloLens. The Guide button light will flash slowly until the controller powers off after 3 minutes. To reconnect your controller immediately, power off the controller by holding the Guide button until the light turns off. When you power your controller on again, it will reconnect to HoloLens.
+- If you reboot your HoloLens while the Xbox Wireless Controller is connected, the controller won't automatically reconnect to HoloLens. The Guide button light will flash slowly until the controller powers off after 3 minutes. To reconnect your controller immediately, power off the controller by holding the Guide button until the light turns off. When you power your controller on again, it will reconnect to HoloLens.
 
-- If your HoloLens enters standby while the Xbox Wireless Controller is connected, any input on the controller will wake the HoloLens. You can prevent this by powering off your controller when you are done using it.
+- If your HoloLens enters standby while the Xbox Wireless Controller is connected, any input on the controller will wake the HoloLens. You can prevent this by powering off your controller when you're done using it.
 
