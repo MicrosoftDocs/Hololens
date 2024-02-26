@@ -22,8 +22,8 @@ This article describes how to resolve several issues or answer questions regardi
 - [EAP Troubleshooting](#eap-troubleshooting)
 - [Wi-Fi Troubleshooting](#wi-fi-troubleshooting)
 - [Network Troubleshooting](#network-troubleshooting)
-- [Can't sign in to a previously setup HoloLens device](#cant-sign-in-to-a-previously-setup-hololens-device)
-- [Can't login after updating to Windows Holographic 21H1](#cant-login-after-updating-to-windows-holographic-21h1)
+- [Can't sign in to a previously set up HoloLens device](#cant-sign-in-to-a-previously-set-up-hololens-device)
+- [Can't sign in after updating to Windows Holographic 21H1](#cant-sign-in-after-updating-to-windows-holographic-21h1)
 - [Autopilot Troubleshooting](#autopilot-troubleshooting)
 - [Update troubleshooting](#update-troubleshooting)
 - [Kiosk troubleshooting](#kiosk-troubleshooting)
@@ -34,7 +34,7 @@ This article describes how to resolve several issues or answer questions regardi
 1. Verify that the Wi-Fi profile has right settings:
     - Configure the EAP type correctly. Common EAP types are EAP-TLS (13), EAP-TTLS (21) and PEAP (25).
     - Check the Wi-Fi SSID name, and see that it matches the HEX string.
-    - Make sure that for EAP-TLS, TrustedRootCA contains the SHA-1 hash of server's trusted root CA certificate. On Windows PC the "certutil.exe -dump cert_file_name" command will show a certificate's SHA-1 hash string.
+    - Make sure that for EAP-TLS, TrustedRootCA contains the SHA-1 hash of server's trusted root CA certificate. On Windows PC the "certutil.exe -dump cert_file_name" command shows a certificate's SHA-1 hash string.
 2. Collect network packet capture on the Access Point or Controller or AAA server logs to find out where the EAP session fails.
     - If the EAP identity provided by HoloLens is unexpected, check whether the identity has been correctly provisioned through Wi-Fi profile or client certificate.
     - If the server rejects the HoloLens client certificate, check whether the required client certificate has been provisioned on the device.
@@ -99,7 +99,7 @@ Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It 
 
 1. On your PC – export the Fiddler certificate.
     1. Go to Fiddler Settings -> HTTPS and expand Advanced Settings.
-    2. Select Export Fiddler certificate. It will save to your desktop.
+    2. Select Export Fiddler certificate. It saves to your desktop.
     3. Move the certificate over to the Downloads folder on your HoloLens 2.
 
 1. On your HoloLens 2 - import the Fiddler certificate.
@@ -112,7 +112,7 @@ Fiddler is a web debugging proxy and is used to troubleshoot HTTP(S) issues. It 
 
 #### Inspect HTTP(S) sessions
 
-On your PC, Fiddler will show the HoloLens 2’s live HTTP(S) sessions. The Inspectors panel in Fiddler can show HTTP(S) request/response in different views. For example, the “Raw” view shows the raw request or response in plain text.
+On your PC, Fiddler shows the HoloLens 2’s live HTTP(S) sessions. The Inspectors panel in Fiddler can show HTTP(S) request/response in different views. For example, the “Raw” view shows the raw request or response in plain text.
 
 ### Configure Wireshark to capture network traffic
 
@@ -137,7 +137,7 @@ Check out the original [blog](https://techcommunity.microsoft.com/t5/windows-it-
 
 [Back to list](#list)
 
-## Can't sign in to a previously setup HoloLens device
+## Can't sign in to a previously set up HoloLens device
 
 If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can use Intune to remotely [wipe](/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
 > [!IMPORTANT]
@@ -145,13 +145,13 @@ If your device was previously set up for someone else, either for a client or fo
 
 [Back to list](#list)
 
-## Can't login after updating to Windows Holographic 21H1
+## Can't sign in after updating to Windows Holographic 21H1
 
 ### Symptoms
 
-- Using PIN to logon will fail after entering the correct PIN.
-- Using the web logon method will fail after successfully signing in on the web page.
-- The device is not listed as “Microsoft Entra joined” in [Azure portal](https://portal.azure.com/) -> Microsoft Entra ID -> Devices.
+- Using PIN to sign in fails after entering the correct PIN.
+- Using the web sign-in method will fail after successfully signing in on the web page.
+- The device isn't listed as “Microsoft Entra joined” in [Azure portal](https://portal.azure.com/) -> Microsoft Entra ID -> Devices.
 
 ### Cause
 
@@ -160,11 +160,11 @@ The impacted device may have been deleted from the Microsoft Entra tenant. For e
 - An administrator or user deleted the device in the Azure portal or using PowerShell.
 - The device was removed from the Microsoft Entra tenant due to inactivity. For an efficiently managed environment, we typically recommend IT admins to [remove stale, inactive devices from their Microsoft Entra tenant](/azure/active-directory/devices/manage-stale-devices).
 
-When an impacted device attempts to contact the Microsoft Entra tenant again after it has been deleted, it will fail to authenticate with Microsoft Entra ID. This effect is often invisible to the user of the device, as cached logon via PIN will continue to allow the user to logon.
+When an impacted device attempts to contact the Microsoft Entra tenant again after it has been deleted, it will fail to authenticate with Microsoft Entra ID. This effect is often invisible to the user of the device, as cached sign in via PIN continues to allow the user to sign in.
 
 ### Mitigation
 
-There is currently no way to add a deleted HoloLens device back into Microsoft Entra ID. Affected devices will need to be clean-reflashed by following the instructions on [reflashing their device](hololens-recovery.md#clean-reflash-the-device).
+There's currently no way to add a deleted HoloLens device back into Microsoft Entra ID. Affected devices need to be clean-reflashed by following the instructions on [reflashing their device](hololens-recovery.md#clean-reflash-the-device).
 
 [Back to list](#list)
 
@@ -180,11 +180,11 @@ The following articles may be a useful resource for you to learn more informatio
 
 ## Update troubleshooting
 
-If you are having issues updating your managed HoloLens devices please read this [troubleshooting guidance.](hololens-updates.md#troubleshooting-updates)
+If you're having issues updating your managed HoloLens devices, read this [troubleshooting guidance.](hololens-updates.md#troubleshooting-updates)
 
 ## Kiosk troubleshooting
 
-If you're having issues either configuring, using, or applying kiosks refer to the [kiosk troubleshooting guidance](hololens-kiosk.md#troubleshooting--updates)
+If you're having issues either configuring, using, or applying kiosks refer to the [kiosk troubleshooting guidance.](hololens-kiosk.md#troubleshooting--updates)
 
 ## Managed HoloLens Devices FAQs
 
@@ -218,6 +218,6 @@ Logging is limited to traces that can be captured in development or troubleshoot
 ## Questions about securing HoloLens devices
 
 See [our HoloLens 2 security information](security-overview.md).
-For HoloLens 1st Gen devices please review [this FAQ](hololens1-faq-security.yml).
+For HoloLens 1st Gen devices, review [this FAQ](hololens1-faq-security.yml).
 
 [Back to list](#list)

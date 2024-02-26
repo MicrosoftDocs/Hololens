@@ -38,7 +38,7 @@ The following example illustrates a policy that would hide the OS Reset page:
 These are the configuration values that will be supplied to Intune:
 
 - **Name:** An admin preferred display name for the profile.
-- **OMA-URI:** The fully qualified URI of the setting page including its [scope](/windows/client-management/mdm/policy-configuration-service-provider). This examples on this page are using the `./Device` scope.
+- **OMA-URI:** The fully qualified URI of the setting page including its [scope](/windows/client-management/mdm/policy-configuration-service-provider). The examples on this page are using the `./Device` scope.
 - **Value:** A string value that indicates whether to hide or show *only* the specified pages. Possible values are `hide:<pagename>` and `showonly:<pagename>`.
 
 Multiple pages can be specified by separating them with a semicolon, and a listing of common pages can be found below.
@@ -65,7 +65,7 @@ These are the configuration values that will be specified in Windows Configurati
 1. Apply the package to your device.
 For full details on how to create and apply a provisioning package visit [the HoloLens provisioning page](hololens-provisioning.md).
 
-Regardless of method chosen your device should now receive the changes and users will be presented with the following Settings App.
+Regardless of the method chosen, your device should now receive the changes and users are presented with the following Settings App.
 
 ![Screenshot of active hours being modified in the Settings app.](images/hololens-page-visibility-list.jpg)
 
@@ -73,7 +73,7 @@ To configure the Settings app pages to show or hide your own selection of pages,
 
 ## Settings URIs
 
-HoloLens devices and Windows 10 devices have a different selection of pages within the Settings app. On this page, you will find only the settings that exist on HoloLens.
+HoloLens devices and Windows 10 devices have a different selection of pages within the Settings app. On this page, you find only the settings that exist on HoloLens.
 
 ### Accounts
 
@@ -180,10 +180,10 @@ HoloLens devices and Windows 10 devices have a different selection of pages with
 | Windows Update                        | `windowsupdate`<br> `windowsupdate-activehours`  <br> `windowsupdate-history` <br> `windowsupdate-optionalupdates` <br><sup>1</sup>`windowsupdate-options`<br><sup>1</sup>`windowsupdate-restartoptions` |
 | Windows Update - Checks for updates | `windowsupdate-action`          |
 
-- <sup>1</sup> - For versions prior to Windows Holographic, version 21H1, the following two URIs do not actually take you to the **Advanced options** or **Options** pages; they will only block or show the main Windows Update page.
+- <sup>1</sup> - For versions prior to Windows Holographic, version 21H1, the following two URIs don't actually take you to the **Advanced options** or **Options** pages; they only block or show the main Windows Update page.
   - windowsupdate-options
   - windowsupdate-restartoptions
 
 - <sup>2</sup> - Available in Windows Holographic 21H1 or higher.
 
-For a full list of Windows 10 Settings URIs, please visit the [launch settings](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) documentation.
+For a full list of Windows 10 Settings URIs, visit the [launch settings](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) documentation.

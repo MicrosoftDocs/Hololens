@@ -1,6 +1,6 @@
 ---
 title: Set up users on HoloLens 2 quickly
-description: Learn how to set up your HoloLens 2 for users quickly, and what can happen that affects set up. 
+description: Learn how to set up your HoloLens 2 for users quickly, and what can happen that affects setup. 
 ms.date: 12/1/2022
 keywords: hololens
 ms.service: hololens
@@ -14,7 +14,7 @@ appliesto:
 
 # Set up more users on your HoloLens 2
 
-Often organizations have many devices and lots of different people who use those devices. When people are looking to use a HoloLens 2 device, they often want to get straight to their app. If you have to do more setup, it can be hard to get started quickly. In this article, we cover the best ways to reduce set up time, best practices, and cover variations in logging into a device.
+Often organizations have many devices and lots of different people who use those devices. When people are looking to use a HoloLens 2 device, they often want to get straight to their app. If you have to do more setup, it can be hard to get started quickly. In this article, we cover the best ways to reduce setup time, best practices, and cover variations in logging into a device.
 
 > [!NOTE]
 > In all these scenarios we’re talking about scenarios in which a second user can use the device, so all these scenarios use Microsoft Entra identities.
@@ -25,11 +25,11 @@ The following are the average lengths for each scenario.
 
 | Scenario start to app launch                                                    | Average time in minutes | Best practices |
 |---------------------------------------------------------------------------------|-------------------------|---|
-| User exists on device, sign in existing account                                                 | Under a minute                    | - [Use a device you've used before](#use-a-device-you-have-already-used-to-get-to-your-app-fastest) <br> - [Use labels](#physically-label-your-devices) <br> - [Fast logins](#fastest-to-log-in-to-an-existing-account)    |
+| User exists on device, sign in existing account                                                 | Under a minute                    | - [Use a device already used](#use-an-already-used-device-to-get-to-your-app-fastest) <br> - [Use labels](#physically-label-your-devices) <br> - [Fast logins](#fastest-to-log-in-to-an-existing-account)    |
 | New user on device                                                              | Short                                             | - [Quick add user](#adding-your-user-to-an-existing-device) <br> - [Set up flows](#set-up-flows)   |
 | Device needs to go through first-time setup or the Out of Box Experience (OOBE)                             | Moderate              | - [Fast first set up](#setting-up-a-device-for-the-first-time) <br> - [Pre set up person](#have-a-designated-setup-person) <br> - [Use policies](#use-policies-to-speed-up-your-setup) <br> - [Set up flows](#set-up-flows)    |
 
-### Use a device you have already used to get to your app fastest
+### Use an already used device to get to your app fastest
 
 The key take away from this chart, is if you can use a device you have already used before then you can sign in and use the app in less than a minute. If you have to go through setup, then it takes a few minutes. We highly suggest you [physically label your devices](#physically-label-your-devices).
 
@@ -40,7 +40,6 @@ Have someone at your location who sets up your devices. By setting up devices in
 #### Pre setup Autopilot
 
 If your devices are set up to go through [Autopilot](hololens2-autopilot.md), then take those devices through Autopilot. It happens regardless, but by doing it now you save your end-user several minutes of time. Autopilot can apply helpful settings to speed up the new user process, and deploy your apps to the device.
-
 - If you have an Ethernet to USB-C adapter, you can plug in your devices the moment OOBE starts to begin autopilot without having to wear the devices.
 - You can also create a USB-C flash drive with a [provisioning package](hololens-provisioning.md) that contains your Wi-Fi info. Plug it in when OOBE starts, and confirm applying the provisioning package. Wi-fi is detected and you can start Autopilot.
 - If you don't have those options available, then manually proceed through OOBE until Autopilot starts.
@@ -92,16 +91,16 @@ If you're using Windows Configuration Designer to create provisioning packages, 
 
 #### More policies
 
-There are many other policies that affect the setup experience, by configuring them as well you reduce the number of screens in the setup experience. When setting up more users, you also see screens for speech and location. By configuring the setting for the device, no more users see those confirmations.
+There are many other policies that affect the setup experience, by configuring them as well you reduce the number of screens in the setup experience. When setting up more users, you’ll also see screens for speech and location. By configuring the setting for the device, no extra users see those confirmations.
 
 > [!NOTE]
 > For Speech, the consent screen is not be shown if the feature is disabled. If it is left as default (user choice) or set to on, the user is still presented with the consent screen.
 
 | What's skipped          | Details                                                                    |  Screenshot of screen skipped |
 |------------------|-----------------------------------------------------------------------------------|---|
-| Telemetry | The page asking users to help improve HoloLens, by reporting more data which helps us fix bugs. <br> Using [Policies/System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)      | <img src="images/24-telemetry.png" width="200px" alt="Telemetry level"> |
-| Speech | The page which asks the user if they'd like to use voice commands on the device. <br> Using [Policies/Privacy/AllowInputPersonalization](hololens-cortana.md#managing-speech-on-hololens) | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana">|
-| Location | The page which asks the user to enable their location to improve in app experiences. <br> Using [Policies/System/AllowLocation](/windows/client-management/mdm/policy-csp-system#system-allowlocation) | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
+| Telemetry | The page asking users to help improve HoloLens, by reporting extra data, which helps us fix bugs. <br> Using [Policies/System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)      | <img src="images/24-telemetry.png" width="200px" alt="Telemetry level"> |
+| Speech | The page that asks the user if they'd like to use voice commands on the device. <br> Using [Policies/Privacy/AllowInputPersonalization](hololens-cortana.md#managing-speech-on-hololens) | <img src="images/22-do-more-with-voice.png" width="200px" alt="Enable Cortana">
+| Location | The page that asks the user to enable their location to improve in app experiences. <br> Using [Policies/System/AllowLocation](/windows/client-management/mdm/policy-csp-system#system-allowlocation) | <img src="images/setup-location-services.png" width="200px" alt="Enable location services"> |
 | Iris | The page asking a user to enroll in Iris authentication and the process of enrolling. <br> Using [Passportforwork CSP](/windows/client-management/mdm/passportforwork-csp) <br> ./Device/Vendor/MSFT/PassportForWork/Biometrics/UseBiometrics | <img src="images/setup-iris.png" width="200px" alt="Iris setup"> |
 | Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app, or when an app that uses eye tracking prompts the user to calibrate. <br> Using: [SkipCalibrationDuringSetup](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-skipcalibrationduringsetup) <br> This policy requires [Windows Holographic, version 22H2](hololens-release-notes.md#windows-holographic-version-22h2) or newer.     | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
 | Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: [SkipTrainingDuringSetup](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-skiptrainingduringsetup) <br> This policy requires [Windows Holographic, version 22H2](hololens-release-notes.md#windows-holographic-version-22h2) or newer.  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
@@ -137,11 +136,11 @@ Let us walk through different scenarios in which your device needs to be set up.
 [!INCLUDE[](includes/hololens-oobe-screens.md)]
 
 1. You may be asked to set up multi-factor authentication if it hasn’t already been set up on this account.
-1. Calibration starts. Run through the calibration process following the gems with your eyes.
-1. Your device prompts you to set up Iris sign in. Go ahead and register following the dots with your eyes.
-1. Your device asks you to set up a PIN for your login. The PIN is for this device only.
-1. Your device prompts you for voice, location, and telemetry. (We ask that you enable telemetry as it helps us identify and fix issues.) <sup>1</sup>
-1. Your device shows you how to open the start menu. Hold your palm facing you and tap your wrist. Do it again and finish the training. <sup>1</sup>
+1. Calibration will start. Run through the calibration process following the gems with your eyes.
+1. Your device will prompt you to set up Iris sign in. Go ahead and register following the dots with your eyes.
+1. You'll be asked to set up a PIN for your sign in. This is for this device only.
+1. You'll be shown prompts for voice, location, and telemetry. (Please enable telemetry as it helps us identify and fix issues.) <sup>1</sup>
+1. You'll be shown how to open the start menu. Hold your palm facing you and tap your wrist. Do it again and finish the training. <sup>1</sup>
 
 <sup>1</sup> - These screens can be skipped if these settings were previously configured by policy.
 
@@ -155,4 +154,4 @@ We’re still a few steps away from being able to make that Remote Assist call. 
 <img src="images/hololens2-kiosk-remote-assist-flowchart.png" alt="Post OOBE flowchart">
 
 > [!NOTE]
-> After device set up the Microsoft Store app checks for updates for Remote Assist [and other in-box apps](hololens2-hardware.md#pre-installed-software) approx every 24 hours.
+> After device set up the Microsoft Store app checks for updates for Remote Assist [and other in-box apps](hololens2-hardware.md#preinstalled-software) approx every 24 hours.

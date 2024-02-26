@@ -49,7 +49,7 @@ On HoloLens (1st gen) or HoloLens 2, version 1903, say: "Hey Cortana, take a pic
 
 Use the Start gesture to go to **Start**, then select the **Camera** icon.
 
-Point your head in the direction of what you want to capture, then [air tap](hololens2-basic-usage.md#touch-holograms-near-you) to take a photo. You can continue to air tap and capture additional photos. Any photos you capture will be saved to your device.
+Point your head in the direction of what you want to capture, then [air tap](hololens2-basic-usage.md#touch-holograms-near-you) to take a photo. You can continue to air tap and capture more photos. Any photos you capture will be saved to your device.
 
 Use the Start gesture again to end photo capture.  
 
@@ -72,9 +72,9 @@ On HoloLens (1st gen) or HoloLens 2, version 1903, say: "Hey Cortana, start reco
 
 ### Start menu to record videos
 
-Use the Start gesture to go to **Start**, then select the **Video** icon. Point your head in the direction of what you want to capture, then [air tap](hololens2-basic-usage.md#touch-holograms-near-you) to start recording. There will be a three second countdown and your recording will begin.
+Use the Start gesture to go to **Start**, then select the **Video** icon. Point your head in the direction of what you want to capture, then [air tap](hololens2-basic-usage.md#touch-holograms-near-you) to start recording. There will be a three second countdown and your recording begins.
 
-To stop recording, use the Start gesture and select the highlighted **Video** icon. The video will be saved to your device.
+To stop recording, use the Start gesture and select the highlighted **Video** icon. The video is saved to your device.
 
 > [!NOTE]
 > **Applies to HoloLens (1st gen) only**  
@@ -115,13 +115,13 @@ Once the app is set up with your HoloLens, select the **Live stream** option fro
 
 Mixed reality photos and videos are saved to the device's "Camera Roll". You can browse the contents of this folder on your HoloLens with the File Explorer app (navigate to **Pictures > Camera Roll**).
 
-You can also view your mixed reality photos and videos in the Photos app, which is pre-installed on HoloLens. To pin a photo in your world, select it in the Photos app and choose **Place in mixed world**. You can move the photo around your world after it's been placed.
+You can also view your mixed reality photos and videos in the Photos app, which is preinstalled on HoloLens. To pin a photo in your world, select it in the Photos app and choose **Place in mixed world**. You can move the photo around your world after it's been placed.
 
 To view and/or save your mixed reality photos and videos on a PC connected to HoloLens, you can use [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) or your [PC's File Explorer via MTP](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018#new-features-for-hololens).
 
 ### Use File Explorer to get your pictures, videos and files
 
-Similar to other mobile devices, connect your HoloLens to your PC to bring up File Explorer to access your HoloLens libraries (photos, videos, documents) for easy transfer. This method is easy to use and does not require the use of device portal or Wi-Fi.
+Similar to other mobile devices, connect your HoloLens to your PC to bring up File Explorer to access your HoloLens libraries (photos, videos, documents) for easy transfer. This method is easy to use and doesn't require the use of device portal or Wi-Fi.
 
 1. Unlock the device.
 1. Connect the device to a PC via USB.
@@ -130,10 +130,10 @@ Similar to other mobile devices, connect your HoloLens to your PC to bring up Fi
 1. Copy whatever files you need to your PC.
 
 Tips:
-- If you don't see any files, please ensure you sign in to your HoloLens to enable access to your data.
+- If you don't see any files, ensure you sign in to your HoloLens to enable access to your data.
 - You can get other files in other folders, such as [diagnostics files](hololens-diagnostic-logs.md#offline-diagnostics) from the Documents folder.
 - From File Explorer on your PC, you can select Device properties to see Windows Holographic OS version number (firmware version), device serial number, and battery percentage.
-- If your Organization has used MDM to disable [Connectivity/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) then you will be unable to connect to your device.
+- If your Organization has used MDM to disable [Connectivity/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) then you'll be unable to connect to your device.
 
 ## Share your mixed reality photos and videos
 
@@ -151,13 +151,13 @@ You can also share mixed reality photos and videos from OneDrive by automaticall
     >[!Note]
     > Photos and videos captured prior to enabling this feature will not be queued for upload and will still need to be manually uploaded.
 
-    Here're some tips to work with **Camera upload**:
+    Here are some tips to work with **Camera upload**:
 
-    * A status message on the Settings page will display the number of files pending upload (or read "OneDrive is up to date" when all pending files have been uploaded).
-    * If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue will continue to increase as you add new files to the Camera Roll folder, but files won’t upload until you re-enable the feature.
-    * Newest files will upload first (last in, first out).
-    * If your OneDrive account has issues (for example, after your password changes) a **Fix now** button will appear on the Settings page.
-    * There’s no maximum file size, but note that large files will take longer to upload (especially if your upload bandwidth is constrained). If you "pause" or turn off upload while a large file is being uploaded, the partial upload will be preserved. If upload is re-enabled within several hours of being "paused" or turned off, the upload will continue from where it left off. However, if upload is re-enabled after several hours, the large file's upload will restart from the beginning.
+    * A status message on the Settings page displays the number of files pending upload (or read "OneDrive is up to date" when all pending files have been uploaded).
+    * If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue continues to increase as you add new files to the Camera Roll folder, but files won’t upload until you re-enable the feature.
+    * Newest files upload first (last in, first out).
+    * If your OneDrive account has issues (for example, after your password changes), a **Fix now** button appears on the **Settings** page.
+    * There’s no maximum file size, but note that large files take longer to upload (especially if your upload bandwidth is constrained). If you "pause" or "turn off" upload while a large file is being uploaded, the partial upload is preserved. If upload is re-enabled within several hours of being "paused" or turned off, the upload continues from where it left off. However, if upload is re-enabled after several hours, the large file's upload will restart from the beginning.
 
     For known issues and caveats of work or school account **Camera upload**, see [release notes](hololens-release-notes.md#onedrive-for-work-or-school-camera-roll-upload). 
 
@@ -170,7 +170,7 @@ You can also share mixed reality photos and videos from OneDrive by automaticall
 
 On HoloLens 2 devices before the Windows Holographic, version 20H2, videos recorded on the device were limited to maximum length of five minutes.
 
-Due to customer feedback, we’ve increased the recording length of [mixed reality captures](holographic-photos-and-videos.md). Mixed reality captures will no longer be limited to 5 minutes by default, but instead will calculate the maximum recording length based on available disk space. The device will estimate the max video recording duration based on available disk space up to 80% of the total disk space.
+Due to customer feedback, we’ve increased the recording length of [mixed reality captures](holographic-photos-and-videos.md). Mixed reality captures will no longer be limited to 5 minutes by default, but instead will calculate the maximum recording length based on available disk space. The device estimates the max video recording duration based on available disk space up to 80% of the total disk space.
 
 > [!NOTE]
 > The HoloLens will use default video recording length (5 minutes) if one of the following occurs:
@@ -190,5 +190,5 @@ Due to customer feedback, we’ve increased the recording length of [mixed reali
 
 | Device | Format | Extension | Resolution | Speed | Audio |
 |----------|----------|----------|----------|----------|----------|
-| HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px | 30fps | 48kHz Stereo |
-| HoloLens (1st gen) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24fps | 48kHz Stereo |
+| HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px | 30 fps | 48 kHz Stereo |
+| HoloLens (1st gen) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24 fps | 48 kHz Stereo |
