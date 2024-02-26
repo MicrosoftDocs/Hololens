@@ -33,13 +33,13 @@ While the process of applying updates to HoloLens devices is similar to other Wi
 
 #### What happens during Scan
 
-This is the first step of the update process where the device will query Windows Update for any applicable updates. An update scan automatically occurs in the background once every 22 hours and requires that the device is either actively in use or on standby but plugged in to ensure internet connectivity. In order for the update scan to succeed the device must have internet connectivity. This scan happens automatically, although a user can manually start a scan from the Settings app. If the device was turned off during the last scheduled scan then it will initiate a scan the next time it's plugged in.
+This is the first step of the update process where the device queries Windows Update for any applicable updates. An update scan automatically occurs in the background once every 22 hours and requires that the device is either actively in use or on standby but plugged in to ensure internet connectivity. For the update scan to succeed, the device must have internet connectivity. This scan happens automatically, although a user can manually start a scan from the Settings app. If the device was turned off during the last scheduled scan, then it will initiate a scan the next time it's plugged in.
 
 #### Best practices for Scan
 
 The two critical pieces for scan to succeed are power and internet connectivity. We suggest that when users end their session with HoloLens they return it to an area where it's plugged in overnight and that it still has internet connectivity in that area.
 
-If your device is having issues scanning for updates please review the [troubleshooting scanning section](#issue---my-device-didnt-find-an-update-when-scanning) and ensure you don't have any hindering configurations.
+If your device is having issues scanning for updates, review the [troubleshooting scanning section](#issue---my-device-didnt-find-an-update-when-scanning) and ensure you don't have any hindering configurations.
 
 ### 2. Download & Install
 
@@ -306,11 +306,11 @@ If your devices are having issues successfully scanning for updates entirely (ve
 1. That you if you have a restrictive network in your organization, that you have allowed the [endpoints for Windows Update](hololens-offline.md).
 1. Your device has received a [deferral policy](#configure-an-update-deferral-policy),and is already on the latest eligible update as determined by policy.
 1. Your device has received a [pause policy](/mem/intune/protect/windows-10-update-rings#pause) which will prevent scans from occurring while the policy is in effect.
-1. If your device at Intune uses _Feature Updates for Windows 10_ or _Quality Updates for Windows 10_, please remove devices from being opted in these rings. These aren't supported for HoloLens devices.
+1. If your device at Intune uses _Feature Updates for Windows 10_ or _Quality Updates for Windows 10_, remove devices from being opted in these rings. These aren't supported for HoloLens devices.
 
 ### Issue - My device has downloaded an update, but won't install it
 
-Many of the [troubleshooting steps for scanning](#issue---my-device-didnt-find-an-update-when-scanning) also apply here. If you've already reviewed those you may have an OS install issue. If so, please [file an issue through feedback hub](hololens-feedback.md) using the **Enterprise Management -> Device category**.
+Many of the [troubleshooting steps for scanning](#issue---my-device-didnt-find-an-update-when-scanning) also apply here. If you've already reviewed those you may have an OS install issue. If so, [file an issue through feedback hub](hololens-feedback.md) using the **Enterprise Management -> Device category**.
 
 ## Related articles
 
