@@ -239,7 +239,7 @@ We recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes 
 
 ### 2.8 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
 
-We recommend configuring VPN profiles as a best practice but don't recommend specific values for each node in this CSP. Most of the settings are related to customer environment.
+We recommend configuring VPN profiles as a best practice but don't recommend specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ### 2.9 [WiFi CSP](/windows/client-management/mdm/wifi-csp)
 
