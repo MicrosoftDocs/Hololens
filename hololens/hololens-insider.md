@@ -45,7 +45,7 @@ Looking for a new feature but don't see it? We released many new features as par
 
 ### Policy to enable auto-unlock
 
-New policy to enable auto unlock [MixedReality/AutoUnlock](windows/client-management/mdm/policy-csp-mixedreality#autounlock). When enabled, this policy allows a signed-in user to resume using the device without having to enter credentials. 
+New policy to enable auto unlock [MixedReality/AutoUnlock](/windows/client-management/mdm/policy-csp-mixedreality#autounlock). When enabled, this policy allows a signed-in user to resume using the device without having to enter credentials. 
 
 ### Collect and view network connectivity report
 
