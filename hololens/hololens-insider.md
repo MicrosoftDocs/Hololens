@@ -36,9 +36,26 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
+|[Policy to enable auto unlock](#policy-to-enable-auto-unlock)|Policy to control whether a user is prompted for credentials when returning to the device in suspended state. | IT Admin | 10.0.22621.1303|
+|[Collect and view network connectivity report](#collect-and-view-network-connectivity-report)|Network connectivity report is added to Offline Diagnostics to help users investigate network connectivity issues on HoloLens 2 devices. | All | 10.0.22621.1303|
+|[Enforce time sync during OOBE](#enforce-time-sync-during-oobe)| When the HoloLens connects to Wi-Fi, the device attempts to sync with the time server. | All | 10.0.22621.1303|
 |[Update to eye tracking calibration](#update-to-eye-tracking-calibration)|The option to perform eye tracking calibration is shown on the device even if it has been deployed via Autopilot. | All | 10.0.22621.1296|
 |[Policies to set device standby action](#policies-to-set-device-standby-action)|Policies allow the admin to execute supported actions in modern standby. | IT Admin | 10.0.22621.1286|
 |[Fixes and improvements](#fixes-and-improvements)  | Additional fixes and improvements for HoloLens. | All   | 10.0.22621.1205 |
+
+### Policy to enable auto-unlock
+
+New policy to enable auto unlock [MixedReality/AutoUnlock](windows/client-management/mdm/policy-csp-mixedreality#autounlock). When enabled, this policy allows a signed-in user to resume using the device without having to enter credentials. 
+
+### Collect and view network connectivity report
+
+Network connectivity report is added to Offline Diagnostics to help users investigate network connectivity issues on HoloLens 2 devices. After user triggers Offline Diagnostics, device IP addresses, Wi-Fi information, proxy settings and device’s connectivity to known cloud service endpoints are collected.
+
+The report file NetworkConnectivityReport.txt will be included in the diagnostics ZIP file under Documents folder. Users can also view the report on device through Settings > Update & Privacy > Troubleshoot > View network connectivity report.
+
+### Enforce time sync during oobe
+
+During OOBE, the HoloLens device attempts to sync the device time with the time server after the device has connected to Wi-Fi.
 
 ### Update to eye tracking calibration
 
@@ -55,6 +72,12 @@ Any user on the device can still choose to run eye calibration at any time to im
 - Fixed an issue where the user picture displayed does not match the selected user on the sign in screen if [MixedReality/PreferLogonAsOtherUser](/windows/client-management/mdm/policy-csp-mixedreality?branch=main#preferlogonasotheruser) policy is enabled.
 
 - Fixed an issue where the user list cannot be dismissed by clicking on the "Add User" or the "Other User" buttons on the sign in screen if [MixedReality/PreferLogonAsOtherUser](/windows/client-management/mdm/policy-csp-mixedreality?branch=main#preferlogonasotheruser) policy is enabled.
+
+- Improved error handling when the device has reached the max number of supported users on device. See [Remove users on a device](https://aka.ms/hlmaxusers) for recommendations if your device is used by more than 63 AAD users.
+
+- Improved error handling when the wrong user credentials are supplied when using web sign in.
+
+- Addressed an issue where applications that were in use were being shut down for an Intune LOB App update.
 
 ## Start receiving Insider builds
 
