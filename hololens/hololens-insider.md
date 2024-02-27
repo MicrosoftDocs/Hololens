@@ -53,7 +53,7 @@ Network connectivity report is added to Offline Diagnostics to help users invest
 
 The report file NetworkConnectivityReport.txt will be included in the diagnostics ZIP file under Documents folder. Users can also view the report on device through Settings > Update & Privacy > Troubleshoot > View network connectivity report.
 
-### Enforce time sync during oobe
+### Enforce time sync during OOBE
 
 During OOBE, the HoloLens device attempts to sync the device time with the time server after the device has connected to Wi-Fi.
 
