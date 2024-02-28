@@ -71,7 +71,7 @@ For experiences that are likely to last more than 5 to 10 minutes, launch eye ca
 
 ## Choosing the right Device Management Option
 
-Device management is a key consideration to deploying HoloLens at scale with ease. This outcome can be achieved through the following options: Provisioning Package or Mobile Device Management with Microsoft Intune both have pros and cons to use but view these considerations below to make the correct decision for your environment.
+Device management is a key consideration to deploying HoloLens at scale with ease. This outcome can be achieved through the following options: Provisioning Package or Mobile Device Management with Microsoft Intune both have pros and cons to use but view the following considerations to make the correct decision for your environment.
 
 ### Provisioning Package
 
@@ -106,7 +106,7 @@ Policies are used to define the settings that govern the HoloLens devices. In th
 
 ### Single App Kiosk with Settings app AutoLaunch and Visitor Mode (Sample XML Policy)
 
-For Provisioning packages, configurations can be shown in a hierarchical XML structure as shown below.
+For Provisioning packages, configurations can be shown in a hierarchical XML structure as shown here.
 
 ```xml
 <AssignedAccessConfiguration
@@ -134,7 +134,7 @@ Intune uses Kiosk templates or custom OMA-URI configurations, which can be remot
 
 ### Visitor Auto Login
 
-The Auto Logon to a visitor profile allows you to jump straight into the action without ever seeing the login screen. The device is launched straight into the kiosk experience using the visitor profile. This is a required setting and can be managed using the custom policy OMA-URI.
+The Auto Logon to a visitor profile allows you to jump straight into the action without ever seeing the login screen. The device is launched straight into the kiosk experience using the visitor profile. This behavior is a required setting and can be managed using the custom policy OMA-URI.
 
 | Setting      | Value                                                                   |
 |--------------|-------------------------------------------------------------------------|
@@ -144,7 +144,7 @@ The Auto Logon to a visitor profile allows you to jump straight into the action 
 
 ### Tenant Lockdown
 
-The Tenant Lockdown CSP keeps devices on the organization's tenant by locking them to that tenant even through device reset or reflash. It enables HoloLens 2 to be tied to MDM enrollment using Autopilot only and can be managed using the custom policy OMA-URI below …
+The Tenant Lockdown CSP keeps devices on the organization's tenant by locking them to that tenant even through device reset or reflash. It enables HoloLens 2 to be tied to MDM enrollment using Autopilot only and can be managed using the custom policy OMA-URI here …
 
 | Setting      | Value                                                    |
 |--------------|----------------------------------------------------------|
@@ -154,7 +154,7 @@ The Tenant Lockdown CSP keeps devices on the organization's tenant by locking th
 
 ### Limiting Settings options available
 
-To limit the options available as part of our Settings, use the Page Settings Visibility CSP. This allows the admin to reduce the settings available to the user.
+To limit the options available as part of our Settings, use the Page Settings Visibility CSP. This practice allows the admin to reduce the settings available to the user.
 
 | Setting      | Value                                                                 |
 |--------------|-----------------------------------------------------------------------|
@@ -163,7 +163,7 @@ To limit the options available as part of our Settings, use the Page Settings Vi
 |     Value    |     Showonly:network-wifi;holograms;reset;                            |
 
 > [!NOTE]
-> Given the value above… Wi-Fi, Holograms, Reset is available in settings.
+> Given the value shown here… Wi-Fi, Holograms, Reset is available in settings.
 
 ## Application Deployment
 
@@ -185,7 +185,7 @@ To ensure that LOB Apps are deployed and updated as quickly as possible within a
 
 ### Preparation
 
-It's advised that all devices are updated to the latest build using [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8) (ARC) which can be downloaded from Microsoft Store.
+It is a best practive to keep all devices updated to the latest build using [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8) (ARC) which can be downloaded from Microsoft Store.
 
 #### Provisioning package
 
@@ -195,7 +195,7 @@ It's advised that all devices are updated to the latest build using [Advanced Re
 1. Wait for provisioning to be complete.
 1. The specified experience above is then automatically loaded.
 
-For updates with a provisioning package, it's recommended to reflash the device using Advanced Recovery Companion (ARC) and apply a new provisioning package with your specific configurations for any updates.
+For updates with a provisioning package, reflash the device using Advanced Recovery Companion (ARC) and apply a new provisioning package with your specific configurations for any updates.
 
 #### Mobile Device Management – Microsoft Intune
 
@@ -212,7 +212,7 @@ For updates using Mobile Device Management – Microsoft Intune, follow the step
 
 ## Best practices for Charging and Re-use
 
-For busy working environments there are some best practices to follow to ensure the HoloLens device is always ready and prepared for use. Here's a list of cleaning and charging information to ensure optimal use.
+For busy working environments, there are some best practices to follow to ensure the HoloLens device is always ready and prepared for use. Here's a list of cleaning and charging information to ensure optimal use.
 Best practices for Charging [HoloLens 2 Battery and Charging](hololens2-charging.md)
 Best practices for HoloLens cleaning [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 
