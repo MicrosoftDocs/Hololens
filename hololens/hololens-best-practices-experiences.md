@@ -173,6 +173,14 @@ To deploy the application using Intune please see [Deploying applications using 
 
 For Application updates of the experience, please see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add) for more information.  To update an Experience, upload a new app package file with the latest version of the application and deploy using Intune.
 
+### Consistent LOB App deployment and update
+
+To ensure that LOB Apps are deployed and updated as quickly as possible within a 24-hour period, there are several steps that can be taken:
+
+- Make sure that your HoloLens devices are in Modern connected mode and the power supply is connected to a power source.
+- Configure the standby action policies to ensure that users are not holding App resources and preventing a new version of the App from being installed.  These policies are [MixedReality/ConfigureDeviceStandbyAction](/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyaction) and [MixedReality/ConfigureDeviceStandbyActionTimeout ](/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyactiontimeout).
+- You can also use the [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) policy to ensure the App is restarted if the App update fails.  This policy can be configured for both one-time and recurring App restart options.
+
 ## Out of Box Production Line
 
 ### Preparation
