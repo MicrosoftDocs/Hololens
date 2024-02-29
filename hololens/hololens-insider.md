@@ -48,6 +48,8 @@ Looking for a new feature but don't see it? We released many new features as par
 
 The Intune LOB App update does not enforce App shutdown if the App is still running on the device. Instead, the new version of the LOB App is installed and replaces the old App, once the old App is fully exited via user action, sign out or device reboot. 
 
+Refer to [Consistent LOB App deployment and update](/hololens/hololens-best-practices-experiences#consistent-lob-app-deployment-and-update) for best practices on getting a consistent LOB App update experience for HoloLens devices.
+
 ### Policy to enable auto-unlock
 
 New policy to enable auto unlock [MixedReality/AutoUnlock](/windows/client-management/mdm/policy-csp-mixedreality#autounlock). When enabled, this policy allows a signed-in user to resume using the device without having to enter credentials. 
@@ -81,6 +83,8 @@ Any user on the device can still choose to run eye calibration at any time to im
 - Improved error handling when the device has reached the max number of supported users on device. See [Remove users on a device](https://aka.ms/hlmaxusers) for recommendations if your device is used by more than 63 Microsoft Entra accounts.
 
 - Improved error handling when the wrong user credentials are supplied when using web sign in.
+
+- Fixed an issue in Device Portal that would sometimes prevent the export of the spatial mapping database.
 
 ## Start receiving Insider builds
 
