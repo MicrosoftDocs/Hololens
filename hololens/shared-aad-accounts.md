@@ -40,16 +40,16 @@ Shared Microsoft Entra (formerly Azure Active Directory) accounts on HoloLens ar
 - Shared Microsoft Entra accounts cannot use PIN or iris to sign-in in the current release, even if they've been enrolled.
 
 ## Conceptual Overview of Shared Microsoft Entra Accounts
-This process will allow a HoloLens device, to be allocated a user account, and sign into that user account with credentials that are linked to the device, and the device alone. The image describes the process
+This process allows a HoloLens device, to be allocated a user account, and sign into that user account with credentials that are linked to the device, and the device alone. The image describes the process:
 
 ![Shared Account Diagram](images/Shared%20Account%20Login.png)
 
-1. Intune has a SCEP Configuration profile for the SCEP Service
-2. The device will join Intune, and receive the profile information
-3. The device will contact the SCEP Service, and recieve a Device certificate, with a UPN of HL-{Serial}@contoso.com
-4. The device will log into the corrosponding user account in Entra ID, using the certificate as MFA, to provide a seamless sign on experience
+1. Intune has a SCEP Configuration profile for the SCEP Service.
+2. The device joins Intune, and receives the profile information.
+3. The device contacts the SCEP Service, and recieves a device certificate, with a UPN of `HL-{Serial}@contoso.com`.
+4. The device logs into the corrosponding user account in Entra ID, using the certificate as MFA, to provide a seamless sign on experience.
 
-The certificate cannot be removed / exported from the device, and the user account is configured with no other form of MFA avaialable. This ensures that this shared account can only be logged into by the HoloLens Device
+The certificate cannot be removed / exported from the device, and the user account is configured with no other form of MFA avaialable. This configuration ensures that the shared account can only be logged into by the HoloLens device.
 
 ## Overview of the steps to configure shared Microsoft Entra accounts
 
@@ -73,11 +73,11 @@ In addition to having the required operating system build on your HoloLens, you 
 Finally, you need access to Microsoft Intune in order to deploy device configurations and client certificates. For required infrastructure to deploy client certificates via Intune, see [Learn about the types of certificate that are supported by Microsoft Intune](/mem/intune/protect/certificates-configure#whats-required-to-use-certificates). In this example, we use SCEP certificates.
 
 > [!NOTE]
-> Multiple options are available to deploy SCEP certificates, including Microsoft NDES and PKI. For HoloLens use, it can be simpler to use an azure service to handle certificate enrollment. Multiple options are available within the ([Azure Marketplace](https://azuremarketplace.microsoft.com/en-gb/marketplace/apps?search=SCEP&page=1), which allows the configurations for HoloLens use to be isolated from your corporate PKI.
+> Multiple options are available to deploy SCEP certificates, including Microsoft NDES and PKI. For HoloLens, it can be simpler to use an Azure service to handle certificate enrollment. Multiple options are available within the ([Azure Marketplace](https://azuremarketplace.microsoft.com/en-gb/marketplace/apps?search=SCEP&page=1), which allows the configurations for HoloLens shared Microsft Entra accounts to be isolated from your corporate PKI.
 >
-> The key requirements for the SCEP service, are:
->  1. The service can accept device certificate requests from Microsoft Intune
->  2. The service can generate certificates with defined EKU's (Client Authentication and Smart Card Logon)
+> The key requirements for the SCEP service are:
+>  1. The service can accept device certificate requests from Microsoft Intune.
+>  2. The service can generate certificates with defined EKU's (Client Authentication and Smart Card Logon).
 
 It's highly recommended to configure your devices for [Autopilot](/hololens/hololens2-autopilot). Autopilot simplifies the device setup experience for end users.
 
