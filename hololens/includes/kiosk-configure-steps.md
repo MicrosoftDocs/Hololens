@@ -120,21 +120,21 @@
 
 6. In the bottom left of the screen, select **Switch to advanced editor**. Confirm switching to the advanced editor by selecting **Yes**.
     
-	:::image type="content" alt-text="Switch to advanced editor." source="../images/kiosk-steps/kiosk-provision-2.png":::
+	:::image type="content" alt-text="Switch to advanced editor." source="../images/kiosk-steps/kiosk-provision-3.png":::
     
 7. On the left hand side, expand Runtime settings, AssignedAccess and select **MultiAppAssignedAccess**.
     
-	:::image type="content" alt-text="select MultiAppAssignedAccess." source="../images/kiosk-steps/kiosk-provision-3.png":::
+	:::image type="content" alt-text="select MultiAppAssignedAccess." source="../images/kiosk-steps/kiosk-provision-4.png":::
     
 8. Select the **Browse…** button to open the file explorer. And select the your configured Kiosk xml file.
 
 9. Select **Export** , then **Provisioning Package**.
     
-	:::image type="content" alt-text="Export package." source="../images/kiosk-steps/kiosk-provision-4.png":::
+	:::image type="content" alt-text="Export package." source="../images/kiosk-steps/kiosk-provision-5.png":::
 
 10. Change owner type to **IT Admin**.
 
-	:::image type="content" alt-text="Exporting as IT Admin." source="../images/kiosk-steps/kiosk-provision-5.png":::
+	:::image type="content" alt-text="Exporting as IT Admin." source="../images/kiosk-steps/kiosk-provision-6.png":::
     
 11. Select **Next** three times. Then select **Build**.
 
@@ -162,7 +162,7 @@
 
 5. In the bottom left of the screen, select **Switch to advanced editor**. Confirm switching to the advanced editor by selecting **Yes**.
 
-	:::image type="content" alt-text="Switch to advanced editor." source="../images/kiosk-steps/kiosk-provision-2.png":::
+	:::image type="content" alt-text="Switch to advanced editor." source="../images/kiosk-steps/kiosk-provision-3.png":::
     
 6. On the left hand side, expand Runtime settings, AssignedAccess and select **AssignedAccessSettings**.
 
@@ -173,11 +173,11 @@
 
 8. Select **Export** , then **Provisioning Package**.
 
-	:::image type="content" alt-text="Export package." source="../images/kiosk-steps/kiosk-provision-4.png":::
+	:::image type="content" alt-text="Export package." source="../images/kiosk-steps/kiosk-provision-5.png":::
     
 9. Change owner type to **IT Admin**.
 
-	:::image type="content" alt-text="Exporting as IT Admin." source="../images/kiosk-steps/kiosk-provision-5.png":::
+	:::image type="content" alt-text="Exporting as IT Admin." source="../images/kiosk-steps/kiosk-provision-6.png":::
 
 10. Select **Next** three times. Then select **Build**.
 
