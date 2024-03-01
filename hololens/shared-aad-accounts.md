@@ -34,7 +34,7 @@ Shared Microsoft Entra (formerly Azure Active Directory) accounts on HoloLens ar
 > Since shared Microsoft Entra accounts can be accessed on the HoloLens device without entering credentials, you should physically secure these HoloLens devices so that only authorized personnel have access. You may also want to lock down these accounts by applying conditional access policies, disabling self-service password reset, and configuring assigned access profiles to the devices where these accounts are used.
 
 > [!NOTE]
->  Since these are shared accounts, users using these accounts are not shown the typical first sign-in setup screens, including PIN and iris enrollments, biometric data collection notice, and various consent screens. You should ensure that the appropriate defaults are configured for these accounts via policy (see [Set up users on HoloLens 2 quickly](/hololens2-new-user-optimize?tabs=firstBlank%2CsecondBlank#additional-policies)) and that your users are aware of these defaults.
+>  Since these are shared accounts, users using these accounts are not shown the typical first sign-in setup screens, including PIN and iris enrollments, biometric data collection notice, and various consent screens. You should ensure that the appropriate defaults are configured for these accounts via policy (see [Set up users on HoloLens 2 quickly](/hololens/hololens2-new-user-optimize?tabs=firstBlank%2CsecondBlank#more-policies)) and that your users are aware of these defaults.
 
 ### Known limitations of shared Microsoft Entra accounts
 - Shared Microsoft Entra accounts cannot use PIN or iris to sign-in in the current release, even if they've been enrolled.
