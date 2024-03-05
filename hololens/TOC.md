@@ -69,7 +69,7 @@
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ### [Share HoloLens with multiple people](hololens-multiple-users.md)
-### [Shared Microsoft Entra accounts in HoloLens](hololens-shared-aad-accounts.md)
+### [Shared Microsoft Entra accounts in HoloLens](hololens-shared-aad-accounts)
 ## Security
 ### [Security overview](security-overview.md)
 ### [Architecture](security-architecture.md)
