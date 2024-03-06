@@ -36,6 +36,7 @@ Looking for a new feature but don't see it? We released many new features as par
 
 | Feature   | Description  | User or scenario | Available in build |
 |-----------|--------------|---|---|
+|[Shared Microsoft Entra accounts](#shared-microsoft-entra-accounts)|Shared Microsoft Entra (formerly Azure Active Directory) accounts on HoloLens are regular Microsoft Entra user accounts that can sign-in to the HoloLens without requiring any credentials. | IT Admin | 10.0.22621.1303|
 |[Policy to enable auto unlock](#policy-to-enable-auto-unlock)|Policy to control whether a user is prompted for credentials when returning to the device in suspended state. | IT Admin | 10.0.22621.1303|
 |[Collect and view network connectivity report](#collect-and-view-network-connectivity-report)|Network connectivity report is added to Offline Diagnostics to help users investigate network connectivity issues on HoloLens 2 devices. | All | 10.0.22621.1303|
 |[Enforce time sync during OOBE](#enforce-time-sync-during-oobe)| When the HoloLens connects to Wi-Fi, the device attempts to sync with the time server. | All | 10.0.22621.1303|
@@ -43,6 +44,16 @@ Looking for a new feature but don't see it? We released many new features as par
 |[Update to eye tracking calibration](#update-to-eye-tracking-calibration)|The option to perform eye tracking calibration is shown on the device even if it has been deployed via Autopilot. | All | 10.0.22621.1296|
 |[Policies to set device standby action](#policies-to-set-device-standby-action)|Policies allow the admin to execute supported actions in modern standby. | IT Admin | 10.0.22621.1286|
 |[Fixes and improvements](#fixes-and-improvements)  | Additional fixes and improvements for HoloLens. | All   | 10.0.22621.1205 |
+
+### Shared Microsoft Entra accounts
+
+Using a shared Microsoft Entra account on your HoloLens results in the quickest login experience, since it does not require any credentials. This setup is ideal for scenarios where the following conditions are true:
+
+- Multiple people share the same set of HoloLens devices.
+- Access to Microsoft Entra resources, such as Dynamics 365 Guides content, is required.
+- Tracking who has used the device isn't required.
+
+More details, including specific steps on how to configure these accounts, can be found in the [Shared Microsoft Entra accounts in HoloLens](shared-aad-accounts.md) article.
 
 ### Improve Intune app update experience
 
