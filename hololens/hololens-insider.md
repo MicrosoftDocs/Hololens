@@ -53,7 +53,7 @@ Using a shared Microsoft Entra account on your HoloLens results in the quickest 
 - Access to Microsoft Entra resources, such as Dynamics 365 Guides content, is required.
 - Tracking who has used the device isn't required.
 
-More details, including specific steps on how to configure these accounts, can be found in the [Shared Microsoft Entra accounts in HoloLens](/hololens/shared-aad-accounts) article.
+More details, including specific steps on how to configure these accounts, can be found in the [Shared Microsoft Entra accounts in HoloLens](shared-aad-accounts.md) article.
 
 ### Improve Intune app update experience
 
