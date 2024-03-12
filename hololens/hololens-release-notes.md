@@ -1462,7 +1462,6 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 - 360 Viewer (see next section)
 - [XR Dinosaurs](https://www.xrdinosaurs.com/)
 - [Barista Express](https://constructarca.de/game/barista-express/)
-- [WebXR Paint](https://threejs.org/examples/webxr_vr_paint.html)
 
 #### How to use 360 Viewer
 
