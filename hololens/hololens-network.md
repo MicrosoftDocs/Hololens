@@ -5,7 +5,7 @@ ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
 ms.reviewer: ruizhao
 manager: lolab
 keywords: HoloLens, wifi, wireless, internet, ip, ip address
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.date: 8/23/2022
@@ -13,7 +13,7 @@ ms.date: 8/23/2022
 
 # Connect HoloLens to a network
 
-To do most things on your HoloLens, you have to be connected to a network. HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio and connecting it to a network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network. This guide will help you:
+To do most things on your HoloLens, you have to be connected to a network. HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio and connecting it to a network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network. This guide helps you to:
 
 - Connect to a network using Wi-Fi, or for HoloLens 2 only, Wi-Fi Direct or Ethernet over USB-C
 - Disable and re-enable Wi-Fi
@@ -24,18 +24,18 @@ Read more about [using HoloLens offline](hololens-offline.md).
 
 The first time you use your HoloLens, you'll be guided through connecting to a Wi-Fi network. If you have trouble connecting to Wi-Fi during setup, make sure that your network is either an open, password-protected network or a captive portal network. Also, confirm that the network doesn't require you to use a certificate to connect. After setup, you can connect to other types of Wi-Fi networks.
 
-On HoloLens 2 devices, users may also [use a USB-C to Ethernet adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) to connect directly to Wi-Fi to help assist in setting up the device. Once the device has been set up, users may continue to use the adapter, or they may disconnect the device from the adapter and [connect to wi-fi after setup](hololens-network.md#connecting-to-wi-fi-after-setup).
+On HoloLens 2 devices, users may also [use a USB-C to Ethernet adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) to connect directly to Wi-Fi to help setting up the device. Once the device is set up, users may continue to use the adapter, or they may disconnect the device from the adapter and [connect to wi-fi after setup](hololens-network.md#connecting-to-wi-fi-after-setup).
 
 ## Connecting to Wi-Fi after setup
 
 1. Perform the **Start gesture** and select **Settings**. The Settings app will be auto-placed in front of you.
 1. Select **Network & Internet** > **Wi-Fi**. Make sure Wi-Fi is turned on. If you don't see your network, scroll down the list.
 1. Select a network, then select **Connect**.
-1. If you are prompted for a network password, type it and select **Next**.
+1. If you're prompted for a network password, type it and select **Next**.
 
 ![HoloLens Wi-Fi settings.](./images/hololens-2-wifi-settings.jpg)
 
-To confirm you are connected to a Wi-Fi network, check the Wi-Fi status in the **Start** menu:
+To confirm you're connected to a Wi-Fi network, check the Wi-Fi status in the **Start** menu:
 
 1. Open the **Start** menu.
 1. Look at the top left of the **Start** menu for Wi-Fi status. The state of Wi-Fi and the SSID of the connected network will be shown.
@@ -51,7 +51,7 @@ To confirm you are connected to a Wi-Fi network, check the Wi-Fi status in the *
 When connecting HoloLens 2 devices to a Wi-Fi network, use the following technical specifications to ensure good roaming between Wi-Fi terminals.
 
 - Chipset: SDM850 with WCN3990 Wi-Fi modules. 802.11 AC wave 1
-- Channel bandwidths: 2.4GHz supports 20 MHz, 5 GHz supports 20, 40, and 80 MHz
+- Channel bandwidths: 2.4 GHz supports 20 MHz, 5 GHz supports 20 MHz, 40 MHz, and 80 MHz
 - Spatial Streams: 2x2 MIMO
 - Supports 802.11r (fast roaming), RSSI to trigger roaming is ~70dBm
 
@@ -67,7 +67,7 @@ Enterprise Wi-Fi profiles use Extensible Authentication Protocol (EAP) to authen
 
 For a Microsoft Intune managed device, refer to [Intune](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) for configuration instructions.
 
-To create a Wi-Fi provisioning package in WCD, a pre-configured Wi-Fi profile .xml file is required. Here is a sample Wi-Fi profile for WPA2-Enterprise with EAP-TLS authentication:
+To create a Wi-Fi provisioning package in WCD, a preconfigured Wi-Fi profile .xml file is required. Here's a sample Wi-Fi profile for WPA2-Enterprise with EAP-TLS authentication:
 
 ``` xml
 <?xml version="1.0"?> 
@@ -130,12 +130,12 @@ To create a Wi-Fi provisioning package in WCD, a pre-configured Wi-Fi profile .x
 
 Depending on the EAP type, a server root CA certificate and client certificate may have to be provisioned on the device.
 
-Additional resources:
+Other resources:
 
 - WLANv1Profile Schema: [[MS-GPWL]: Wireless LAN Profile v1 Schema | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if you are having trouble connecting to your Wi-Fi.
+Check our [Troubleshooting](hololens2-enterprise-troubleshooting.md#) page if you're having trouble connecting to your Wi-Fi.
 
 ## HoloLens 2 protocols and ports
 
@@ -183,7 +183,7 @@ There are three ways to provision proxies:
     1. Per-user proxy (20H2 or earlier):
         1. Open the Start menu and select Settings.
         2. Select Network & Internet and then Proxy on the left menu.
-        3. Scroll down to Manual proxy setup and toggle Use a proxy server to On.
+        3. Scroll down to Manual proxy set up and toggle Use a proxy server to On.
         4. Enter the IP address of the proxy server.
         5. Enter the port number.
         6. Click Save.
@@ -196,7 +196,7 @@ There are three ways to provision proxies:
           1. Click Apply.
 
 2. **MDM**
-     1. Intune - Use these [steps](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) to configure proxy in Intune. You will need to scroll to the bottom of the section.
+     1. Intune - Use these [steps](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) to configure proxy in Intune. You'll need to scroll to the bottom of the section.
      1. Other 3rd party MDM solutions - Use a [WiFi CSP](/windows/client-management/mdm/wifi-csp).
 
 3. **PPKG**
@@ -235,7 +235,7 @@ Learn more about [how to configure VPN](https://support.microsoft.com/help/20510
 
 ### VPN via UI
 
-VPN is not enabled by default but can be enabled manually by opening **Settings** app and navigating to  **Network & Internet -> VPN**.
+VPN isn't enabled by default but can be enabled manually by opening **Settings** app and navigating to  **Network & Internet -> VPN**.
 
 1. Select a VPN provider.
 1. Create a connection name.
@@ -267,13 +267,13 @@ VPN is not enabled by default but can be enabled manually by opening **Settings*
 
 ### Setting up VPN via Intune
 
-Just follow the Intune documents to get started. When following these steps please keep in mind the built-in VPN protocols that HoloLens devices support. 
+Just follow the Intune documents to get started. When following these steps, keep in mind the built-in VPN protocols that HoloLens devices support. 
 
 [Create VPN profiles to connect to VPN servers in Intune](/mem/intune/configuration/vpn-settings-configure).
 
 [Windows 10 and Windows Holographic device settings to add VPN connections using Intune](/mem/intune/configuration/vpn-settings-windows-10).
 
-When done please remember to [assign the profile](/mem/intune/configuration/device-profile-assign).
+When done, remember to [assign the profile](/mem/intune/configuration/device-profile-assign).
 
 ### VPN via 3rd party MDM solutions
 

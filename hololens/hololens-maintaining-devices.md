@@ -1,13 +1,14 @@
 ---
 title: Maintain HoloLens devices
 description: Learn the regular maintenance tasks for HoloLens devices.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.reviewer: lavinds
 ms.topic: article
 audience: ITPro
 ms.date: 12/13/2022
 ms.localizationpriority:
+ms.collection: essentials-manage
 appliesto:
 - HoloLens 2
 ---

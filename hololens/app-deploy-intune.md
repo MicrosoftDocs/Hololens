@@ -3,7 +3,7 @@ title: Intune and Company Portal
 description: Learn how to set up, assign, and create a comfortable user experience with Intune, mobile device management, and the company portal.
 keywords: intune, app management, app, company portal, portal, hololens
 ms.date: 5/27/2022
-ms.prod: hololens
+ms.service: hololens
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -24,7 +24,7 @@ With Mobile Device Management (MDM), you can use your own custom apps through [M
 
 1. Upload an app to a Line of Business, or upload a custom app to your Intune tenant. See also: [Enterprise app management](/windows/client-management/mdm/enterprise-app-management).
 
-2. [Assign your app to a group](/mem/intune/apps/apps-deploy). Based on the assignment type you choose, the app can be delivered automatically or available to be readily pulled down if you have a selection of apps.
+2. [Assign your app to a group](/mem/intune/apps/apps-deploy). Based on the chosen assignment type, the app can be delivered automatically or available to be readily pulled down if you have a selection of apps.
 
 > [!NOTE]
 > When building your appx bundle make sure to account for including the architecture for the device(s) that you are deploying to. HoloLens 2 is ARM64, and HoloLens (1st Gen) is x86. You may include both in a single appx bundle if you plan on having a mixed devices environment.
@@ -36,13 +36,13 @@ To make your app available for download to devices enrolled through the company 
 
 ## End-User Experience
 
-After you have set up configuration on Intune, you are ready for end users to receive your selected apps.
+After you have set up configuration on Intune, you're ready for end users to receive your selected apps.
 
 Follow these steps to automatically get your app(s):
 
 1. Enroll your device with your tenant.
 2. Once your device has completed enrollment, you should receive the app on your device.
-3. If you are not seeing you app immediately, go to **Settings** > **Accounts** > **Work or School** > *your account* Info, and scroll down to see information on installed app status.
+3. If you aren't seeing your app immediately, go to **Settings** > **Accounts** > **Work or School** > *your account* Info, and scroll down to see information on installed app status.
 
 How to get to apps through the Company Portal:
 
@@ -56,4 +56,4 @@ How to get to apps through the Company Portal:
 
 ## About LOB app updates
 
-LOB apps check for updates and status changes independently of syncs with Intune. This is due to the larger size of app than policies. In general Intune will automatically reinstall, update, or remove a required app within 24 hours, rather than waiting for the 7 day re-evaluation cycle. There are certain conditions that will cause Intune to update, reinstall, or remove an app in the 24 hour windows. To read the up-to-date list of triggers, please read more about [installing, updating, or removing required apps](/mem/intune/apps/apps-add#installing-updating-or-removing-required-apps).
+LOB apps check for updates and status changes independently of syncs with Intune. This checking is due to the larger size of app than policies. In general Intune will automatically reinstall, update, or remove a required app within 24 hours, rather than waiting for the 7 day reevaluation cycle. There are certain conditions that cause Intune to update, reinstall, or remove an app in the 24 hour windows. To read the up-to-date list of triggers, read more about [installing, updating, or removing required apps](/mem/intune/apps/apps-add#installing-updating-or-removing-required-apps).

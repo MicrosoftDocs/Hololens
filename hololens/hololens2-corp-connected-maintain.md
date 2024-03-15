@@ -4,7 +4,7 @@ description: Learn how to maintain HoloLens 2 devices over a corporate Connected
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 ms.reviewer: aboeger
 ms.date: 03/24/2021
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium

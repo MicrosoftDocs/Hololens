@@ -4,7 +4,7 @@ description: For enabling and adding in extra
 
 manager: lolab
 reviewer: murugand
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
@@ -83,9 +83,9 @@ We recommend configuring this CSP as a best practice but don't have recommendati
 | Tenant ID | _TenantId_ | A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. |
 | _TenantId_/Policies/UsePassportForWork | True | Sets Windows Hello for Business as a method for signing into Windows. |
 | _TenantId_/Policies/RequireSecurityDevice | True | Requires a Trusted Platform Module (TPM) for Windows Hello for Business. |
-| _TenantId_/Policies/ExcludeSecurityDevices/TPM12 | False | TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business. |
-| _TenantId_/Policies/EnablePinRecovery | False | PIN recovery secret won't be created or stored. |
-| _TenantId_/Policies/UseCertificateForOnPremAuth | False | PIN will be provisioned when the user logs in, without waiting for a certificate payload. |
+| _TenantId_/Policies/ExcludeSecurityDevices/TPM12 | False | TPM revision 1.2 modules are allowed to be used with Windows Hello for Business. |
+| _TenantId_/Policies/EnablePinRecovery | False | PIN recovery secret isn't created or stored. |
+| _TenantId_/Policies/UseCertificateForOnPremAuth | False | PIN is provisioned when the user signs in, without waiting for a certificate payload. |
 | _TenantId_/Policies/PINComplexity/MinimumPINLength | 6 | PIN length must be greater than or equal to this number. |
 | _TenantId_/Policies/PINComplexity/MaximumPINLength | 6 | PIN length must be less than or equal to this number. |
 | _TenantId_/Policies/PINComplexity/UppercaseLetters | 2 | Digits are required and all other character sets aren't allowed. |
@@ -141,7 +141,7 @@ The following sections describe the recommended settings of each CSP as part of 
 | [Browser/AllowSearchSuggestionsinAddressBar](/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar) | 0 – Prevented/not allowed | Hide search suggestions in the Address bar of Microsoft Edge. |
 | [Browser/AllowSmartScreen](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) | 1 – Turned on | Turns on Windows Defender SmartScreen and prevent users from turning it off. |
 | **Connectivity** | | |
-| [Connectivity/AllowBluetooth](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) | 0 – Disallow Bluetooth | The bluetooth control panel will be grayed out and the user won't be able to turn on Bluetooth. |
+| [Connectivity/AllowBluetooth](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) | 0 – Disallow Bluetooth | The bluetooth control panel is grayed out and the user won't be able to turn on Bluetooth. |
 | [Connectivity/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) | 0 – Not allowed | Disables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. |
 | **Device Lock** | | |
 | [DeviceLock/AllowIdleReturnWithoutPassword](/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowidlereturnwithoutpassword) | 0 – Not allowed | Disallow return from idle without PIN or password. |
@@ -214,36 +214,36 @@ We recommend configuring this CSP as a best practice but don't have recommendati
 | Tenant ID | _TenantId_ | A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. |
 | _TenantId_/Policies/UsePassportForWork | True | Sets Windows Hello for Business as a method for signing into Windows. |
 | _TenantId_/Policies/RequireSecurityDevice | True | Requires a Trusted Platform Module (TPM) for Windows Hello for Business. |
-| _TenantId_/Policies/ExcludeSecurityDevices/TPM12 | False | TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business. |
-| _TenantId_/Policies/EnablePinRecovery | False | PIN recovery secret will not be created or stored. |
-| _TenantId_/Policies/UseCertificateForOnPremAuth | False | PIN will be provisioned when the user logs in, without waiting for a certificate payload. |
+| _TenantId_/Policies/ExcludeSecurityDevices/TPM12 | False | TPM revision 1.2 modules are allowed to be used with Windows Hello for Business. |
+| _TenantId_/Policies/EnablePinRecovery | False | PIN recovery secret won't be created or stored. |
+| _TenantId_/Policies/UseCertificateForOnPremAuth | False | PIN is provisioned when the user logs in, without waiting for a certificate payload. |
 | _TenantId_/Policies/PINComplexity/MinimumPINLength | 6 | PIN length must be greater than or equal to this number. |
 | _TenantId_/Policies/PINComplexity/MaximumPINLength | 6 | PIN length must be less than or equal to this number. |
-| _TenantId_/Policies/PINComplexity/UppercaseLetters | 2 | Digits are required and all other character sets are not allowed. |
-| _TenantId_/Policies/PINComplexity/LowercaseLetters | 2 | Digits are required and all other character sets are not allowed. |
-| _TenantId_/Policies/PINComplexity/SpecialCharacters | 2 | Does not allow the use of special characters in PIN. |
+| _TenantId_/Policies/PINComplexity/UppercaseLetters | 2 | Digits are required and all other character sets aren't allowed. |
+| _TenantId_/Policies/PINComplexity/LowercaseLetters | 2 | Digits are required and all other character sets aren't allowed. |
+| _TenantId_/Policies/PINComplexity/SpecialCharacters | 2 | Doesn't allow the use of special characters in PIN. |
 | _TenantId_/Policies/PINComplexity/Digits | 0 | Allows the use of digits in PIN. |
 | _TenantId_/Policies/PINComplexity/History | 10 | Number of past PINs that can be associated to a user account that can&#39;t be reused. |
 | _TenantId_/Policies/PINComplexity/Expiration | 90 | Period of time (in days) that a PIN can be used before the system requires the user to change it. |
-| _TenantId_/Policies/UseHelloCertificatesAsSmartCardCertificates | False | Applications do not use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate&#39;s private key. |
+| _TenantId_/Policies/UseHelloCertificatesAsSmartCardCertificates | False | Applications don't use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate&#39;s private key. |
 
 ### 2.6 [RootCATrustedCertificates CSP](/windows/client-management/mdm/rootcacertificates-csp)
 
-We recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes in this CSP as a best practice but will not recommend on specific values for each node in this CSP.
+We recommend configuring **Root, CA, TrustedPublisher and TrustedPeople** nodes in this CSP as a best practice but don't recommend on specific values for each node in this CSP.
 
 ### 2.7 [TenantLockdown CSP](/windows/client-management/mdm/tenantlockdown-csp)
 
 | **Node Name** | **Value** | **Description** |
 | --- | --- | --- |
-| RequireNetworkInOOBE | True | When the device goes through OOBE at first logon or after a reset, the user is required to choose a network before proceeding. There is no &quot;skip for now&quot; option. This ensures that the device remains bound to the tenant in case of accidental or intentional resets or wipes. |
+| RequireNetworkInOOBE | True | When the device goes through OOBE at first sign in or after a reset, the user is required to choose a network before proceeding. There's no &quot;skip for now&quot; option. This ensures that the device remains bound to the tenant in case of accidental or intentional resets or wipes. |
 
 ### 2.8 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
 
-We recommend configuring VPN profiles as a best practice but will not recommend on specific values for each node in this CSP. Most of the settings are related to customer environment.
+We recommend configuring VPN profiles as a best practice but don't recommend specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ### 2.9 [WiFi CSP](/windows/client-management/mdm/wifi-csp)
 
-We recommend configuring WiFi profiles as a best practice but will not recommend on specific values for each node in this CSP. Most of the settings are related to the customer environment.
+We recommend configuring WiFi profiles as a best practice but don't recommend specific values for each node in this CSP. Most of the settings are related to the customer environment.
 
 ## How to enable these security base lines
 
@@ -261,9 +261,9 @@ Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#
 
 1. Navigate to **Devices** -> **Configuration profiles** -> **+Create profile**. For Platform, select **Windows 10 and later**, and for profile type select **Settings catalog (preview)**.
 1. Create a name for the profile, and select the **Next** button.
-1. On the Configuration settings screen select **+ Add settings**.
+1. On the Configuration settings screen, select **+ Add settings**.
 
-Using the name of the policy from the baseline above, you can search for the policy. The settings catalog will space out the name, so to find "Accounts/AllowMicrosoftAccountConnection" you'll need to search "Allow Microsoft Account Connection". After you search you'll see the list of policies reduce to just the CSP which has this policy. Select **Accounts** (or the relevant CSP to what you are current searching), once you do you'll see the policy result below. Check the box for the policy.
+Using the name of the policy from the baseline above, you can search for the policy. The settings catalog will space out the name, so to find "Accounts/AllowMicrosoftAccountConnection" you'll need to search "Allow Microsoft Account Connection". After you search, you'll see the list of policies reduced to just the CSP which has this policy. Select **Accounts** (or the relevant CSP to what you are current searching), once you do you'll see the policy result below. Check the box for the policy.
 
 ![Screenshot of the settings picker option.](images/settings-picker.png)
 
@@ -275,7 +275,7 @@ You can continue to keep adding multiple configurations to the same profile, whi
 
 ### Adding custom OMA-URI policies
 
-Some policies may not be available in the Settings catalog yet. For these you'll need to [create a custom OMA-URI profile](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#home).
+Some policies may not be available in the Settings catalog yet. For these policies, you'll need to [create a custom OMA-URI profile](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).Log into your account on the [MEM admin center](https://endpoint.microsoft.com/#home).
 
 1. Navigate to **Devices** -> **Configuration profiles** -> **+Create profile**. For Platform, select **Windows 10 and later**, and for profile type select **Templates** and select **Custom**.
 1. Create a name for the profile, and select the **Next** button.
@@ -291,6 +291,6 @@ You'll need to fill out a few fields.
 
 ![Screenshot of OMA-URI configuring.](images/oma-uri-configure.png)
 
-Once done, your policy will be added to the main window. You can continue adding all your custom policies to the same custom configuration. This helps reduce managing multiple device configurations and makes assignment easier.
+Once done, your policy is added to the main window. You can continue adding all your custom policies to the same custom configuration. This helps reduce managing multiple device configurations and makes assignment easier.
 
 ![Screenshot of OMA-URI configuration.](images/custom-policy-added-setting.png)

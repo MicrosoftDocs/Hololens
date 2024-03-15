@@ -4,7 +4,7 @@ description: Learn how to prepare for enrolling HoloLens 2 devices over a corpor
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 ms.reviewer: aboeger
 ms.date: 03/24/2021
-ms.prod: hololens
+ms.service: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -23,7 +23,7 @@ For both personal and corporate deployment scenarios, a Mobile Device Management
 <a name='azure-active-directory'></a>
 
 ## Microsoft Entra ID
-Microsoft Entra ID is a cloud-based directory service that provides identity and access management. Organizations that use Microsoft Office 365 or Intune are already using Microsoft Entra ID, which has three editions: Free, Premium P1, and Premium P2 (see [Microsoft Entra editions](https://azure.microsoft.com/documentation/articles/active-directory-editions)). All editions support Microsoft Entra device registration, but Premium P1 is required to enable MDM auto-enrollment which we will be using in this guide later.
+Microsoft Entra ID is a cloud-based directory service that provides identity and access management. Organizations that use Microsoft Office 365 or Intune are already using Microsoft Entra ID, which has three editions: Free, Premium P1, and Premium P2 (see [Microsoft Entra editions](https://azure.microsoft.com/documentation/articles/active-directory-editions)). All editions support Microsoft Entra device registration, but Premium P1 is required to enable MDM auto-enrollment which we'll be using in this guide later.
 > [!Important]
 > It is essential to have a Microsoft Entra tenant as HoloLens devices do not support on-premises AD join. If you don't already have a Microsoft Entra tenant set up, follow the instructions to get started and [Create a new tenant in Microsoft Entra](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
@@ -31,7 +31,7 @@ Microsoft Entra ID is a cloud-based directory service that provides identity and
 In this guide, the [Identity](/hololens/hololens-identity) used will be Microsoft Entra accounts. There are several benefits to Microsoft Entra accounts, such as:
 
 - Employees use their Microsoft Entra account to register the device in Microsoft Entra and can automatically enroll it with the organization's MDM solution (Microsoft Entra ID+MDM – requires a [Microsoft Entra ID P1 or P2 subscription](/azure/active-directory/fundamentals/active-directory-get-started-premium)).
-- Microsoft Entra accounts have additional [authentication options](/hololens/hololens-identity) via [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris log-in, users can sign in from another device or use FIDO security keys.
+- Microsoft Entra accounts have more [authentication options](/hololens/hololens-identity) via [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). In addition to Iris sign in, users can sign in from another device or use FIDO security keys.
 
 > [!WARNING] 
 > Employees can use only one account to initialize a device so **it's imperative that your organization controls which account is enabled first**. The account chosen will determine who controls the device and influence your management capabilities.
@@ -59,7 +59,7 @@ If your MDM systems is already configured for certificates, reference [Prepare c
 
 ## SCEP
 
-The following services are required for SCEP deployment, with the exception of the Web Application Proxy Server.
+The following services are required for SCEP deployment, except for the Web Application Proxy Server.
 
 - [Certification Authority](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj125375(v=ws.11))
 - [NDES Server role](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11))
@@ -69,26 +69,26 @@ You must also publish your NDES URL external to your corporate network using [Mi
 
 ![SCEP data flow.](./images/hololens2-scep-info-flow.png)
 
-If your network does not already support SCEP, or you are unsure if your network is correctly set up for SCEP with Intune, reference  [Configure infrastructure to support SCEP with Intune](/mem/intune/protect/certificates-scep-configure).
+If your network doesn't already support SCEP, or you're unsure if your network is correctly set up for SCEP with Intune, reference  [Configure infrastructure to support SCEP with Intune](/mem/intune/protect/certificates-scep-configure).
 
-If your infrastructure already supports SCEP, you will need to [create](/mem/intune/protect/certificates-profile-scep) a [profile](/mem/configmgr/protect/deploy-use/create-certificate-profiles) for each SCEP certificate that the HoloLens 2 will use. If you are having issues with SCEP, use [Troubleshoot use of SCEP certificate profiles to provision certificates with Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-scep-certificate-profiles).
+If your infrastructure already supports SCEP, you'll need to [create](/mem/intune/protect/certificates-profile-scep) a [profile](/mem/configmgr/protect/deploy-use/create-certificate-profiles) for each SCEP certificate that the HoloLens 2 will use. If you're having issues with SCEP, use [Troubleshoot use of SCEP certificate profiles to provision certificates with Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-scep-certificate-profiles).
 
 ## PKCS
 Intune also supports the use of private and public key pair (PKCS) certificates. Reference [Use private and public key certificates in Microsoft Intune](/mem/intune/protect/certificates-pfx-configure) for more information.
 
 ## Proxy
-Most corporate intranet networks leverage a proxy to manage external traffic. With HoloLens 2 you can configure a proxy server for ethernet, Wi-Fi and VPN connections.
+Most corporate intranet networks apply a proxy to manage external traffic. With HoloLens 2 you can configure a proxy server for ethernet, Wi-Fi and VPN connections.
 
-There are a few different types of proxy and ways to configure proxy. For the purposes of this guide, we are opting to choose **Wi-Fi proxy, set via PAC URL, and deployed via MDM**. This comes with the advantages of being deployed via MDM automatically, being able to update the PAC file instead of using a server:port configuration, and finally using Wi-Fi proxy to configure proxy to only apply to a single Wi-Fi connection allowing the devices to be used still if connected in another location.
+There are a few different types of proxy and ways to configure proxy. For the purposes of this guide, we're opting to choose **Wi-Fi proxy, set via PAC URL, and deployed via MDM**. This comes with the advantages of being deployed via MDM automatically, being able to update the PAC file instead of using a server:port configuration, and finally using Wi-Fi proxy to configure proxy to only apply to a single Wi-Fi connection allowing the devices to be used still if connected in another location.
 
-For more details on proxy settings for Windows 10, see [Create a Wi-Fi profile for devices in Microsoft Intune - Azure](/mem/intune/configuration/wi-fi-settings-configure).
+For more information on proxy settings for Windows 10, see [Create a Wi-Fi profile for devices in Microsoft Intune - Azure](/mem/intune/configuration/wi-fi-settings-configure).
 
 ## Line of Business Apps 
-While several apps can be installed via the Microsoft Store, it is likely you have your own custom app that you have created specifically to use in mixed reality. These custom apps distributed throughout your organization for your business are called Line of Business (LOB) apps.
+While several apps can be installed via the Microsoft Store, it's likely you have your own custom app that you have created specifically to use in mixed reality. These custom apps distributed throughout your organization for your business are called Line of Business (LOB) apps.
   
-There are multiple ways to deploy applications to HoloLens 2 devices. Apps can be deployed directly through MDM, the Microsoft Store for Business(MSfB), or sideloaded through a Provisioning Package. For the sake of this guide, we will be deploying apps via MDM, through the use of required app install. This will allow for your LOB apps to be automatically downloaded to your HoloLens devices once they finish enrollment.
+There are multiple ways to deploy applications to HoloLens 2 devices. Apps can be deployed directly through MDM, the Microsoft Store for Business(MSfB), or sideloaded through a Provisioning Package. For the sake of this guide, we'll be deploying apps via MDM, by using required app install. This will allow for your LOB apps to be automatically downloaded to your HoloLens devices once they finish enrollment.
 
-For those of you who do not have your own LOB, we will provide a sample app to test this deployment flow. This app will be the [MRTK Examples](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App) app, and has already been prebuilt and packaged to test for proof of concept.
+For those of you who don't have your own LOB, we'll provide a sample app to test this deployment flow. This app will be the [MRTK Examples](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App) app, and has already been prebuilt and packaged to test for proof of concept.
 
 More details regarding app deployment can be found at [App Management: Overview](/hololens/app-deploy-overview).
 
@@ -96,7 +96,7 @@ More details regarding app deployment can be found at [App Management: Overview]
 > HoloLens 2 supports running of UWP ARM64 apps only.
 
 ## Guides Playbook
-Guides uses a Microsoft Dataverse environment as the datastore for your Guides apps. It’s important to understand the bigger picture of how your Dataverse environment interacts with your Guides apps and your tenant. We won’t be covering how to manage your dataverse in this guide, but please review [Basic concepts for deploying Dynamics 365 Guides - Dynamics 365 Mixed Reality](/dynamics365/mixed-reality/guides/admin-deployment-playbook).
+Guides uses a Microsoft Dataverse environment as the datastore for your Guides apps. It’s important to understand the bigger picture of how your Dataverse environment interacts with your Guides apps and your tenant. We won’t be covering how to manage your dataverse in this guide, but review [Basic concepts for deploying Dynamics 365 Guides - Dynamics 365 Mixed Reality](/dynamics365/mixed-reality/guides/admin-deployment-playbook).
 
 ## Next step 
 > [!div class="nextstepaction"]

@@ -15,9 +15,9 @@
 
 # Using your HoloLens
 ## First-time usage
-### [Get your HoloLens 2 ready to use](hololens2-setup.md)
-### [Set up your HoloLens 2](hololens2-start.md)
-### [Set up HoloLens 2 quickly](hololens2-new-user-optimize.md)
+### [Unboxing your HoloLens 2](hololens2-setup.md)
+### [First time user set up on your HoloLens 2](hololens2-start.md)
+### [Set up more users on your HoloLens 2](hololens2-new-user-optimize.md)
 ### [Getting around HoloLens 2](hololens2-basic-usage.md)
 ### [Update HoloLens](hololens-update-hololens.md)
 ## Daily Usage
@@ -69,6 +69,7 @@
 ## Identity
 ### [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ### [Share HoloLens with multiple people](hololens-multiple-users.md)
+### [Shared Microsoft Entra accounts in HoloLens](shared-aad-accounts.md)
 ## Security
 ### [Security overview](security-overview.md)
 ### [Architecture](security-architecture.md)

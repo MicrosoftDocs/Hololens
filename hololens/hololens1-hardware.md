@@ -4,7 +4,7 @@ description: Learn about the components that make up the Microsoft HoloLens (1st
 ms.assetid: 527d494e-2ab6-46ca-bd5a-bfc6b43cc833
 ms.date: 09/16/2019
 keywords: hololens
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
@@ -24,8 +24,8 @@ Microsoft HoloLens (1st gen) is the world's first fully untethered holographic c
 
 Your HoloLens includes the following features:
 
-- **Visor**. Contains the HoloLens sensors and displays. You can rotate the visor up while you are wearing the HoloLens.
-- **Headband**. To put the HoloLens on, use the adjustment wheel to expand the headband. With the HoloLens in place, tighten the adjustment wheel until the headband is comfortable.
+- **Visor**. Contains the HoloLens sensors and displays. You can rotate the visor up while you're wearing the HoloLens.
+- **Headband**. To put on the HoloLens, use the adjustment wheel to expand the headband. With the HoloLens in place, tighten the adjustment wheel until the headband is comfortable.
 - **Brightness buttons**. When you're wearing the HoloLens, the brightness buttons are on the left side of the device.
 - **Volume buttons**. When you're wearing the HoloLens, the volume buttons are on the right side of the device.
 - **Device arms**. When you pick up, put on, or take off your HoloLens, always grasp or hold it by the device arms.
@@ -37,7 +37,7 @@ Your HoloLens includes the following features:
 The HoloLens box contains the following items:
 
 - **Nose pads**. Select a nose pad that fits the shape of your nose and accommodates your eyewear.
-- **Overhead strap**. When you're wearing the HoloLens while you move around, use the overhead strap to help keep the device in place. Additionally, if you're wearing the HoloLens for extended periods, using the overhead strap may make the device more comfortable to wear.
+- **Overhead strap**. When you're wearing the HoloLens while you move around, use the overhead strap to help keep the device in place. Additionally, if you're wearing the HoloLens for extended periods, using the overhead strap makes the device more comfortable to wear.
 - **Micro USB cable**. Use the micro-USB cable to connect your HoloLens to the power supply for charging, or use it to connect your HoloLens to your computer.
 - **Power supply**. Plugs into a power outlet.
 - **Microfiber cloth**. Use the cloth to clean your HoloLens visor.
@@ -47,11 +47,11 @@ The HoloLens box contains the following items:
 
 ### Power Supply details
 
-The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18W charger.  It supplies 9V at 2A.
+The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18-W charger.  It supplies 9 V at 2A.
 
 Charging rate and speed may vary depending on the environment in which the device is running.
 
-In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15W charger.
+In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15-W charger.
 
 ## Device specifications
 
@@ -81,7 +81,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 ### Input, output, and connectivity
 
 - Built-in speakers
-- Audio 3.5mm jack
+- Audio 3.5-mm jack
 - Volume up/down
 - Brightness up/down
 - Power button
@@ -108,7 +108,7 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 ### Memory
 
 - 64 GB Flash
-- 2 GB RAM
+- 2-GB RAM
 
 ### Fit
 
@@ -145,7 +145,7 @@ Using the following to understand the environment:
 
 ### Safety
 
-HoloLens has been tested and found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3, and EN 166.
+HoloLens is tested and is found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3, and EN 166.
 - [SAR Information](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## Care and cleaning
@@ -172,7 +172,7 @@ The serial number can also be found via a connected PC:
 1. Plug in the device
 1. Navigate to **This PC** in file explorer
 1. Right Click and select **Properties** of the HoloLens device
-1. This will display the series number of the device. Like this screenshot below.
+1. This displays the series number of the device, as shown in the following screenshot:
 
    <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>
 

@@ -1,7 +1,7 @@
 ---
 title: Common Device Restrictions
 description: Keep up to date with common device restrictions and settings for the HoloLens mixed reality device. 
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

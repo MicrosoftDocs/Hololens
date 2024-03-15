@@ -5,7 +5,7 @@ ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
 ms.date: 8/9/2021
 ms.reviewer: sean-kerawala
 keywords: hololens
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:

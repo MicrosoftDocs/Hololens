@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 release notes
 description: Stay up to date with all the updates in each new HoloLens 2 release.
-ms.prod: hololens
+ms.service: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority:
@@ -20,20 +20,20 @@ To ensure you have a productive experience with your HoloLens devices, we contin
 
 ## About HoloLens releases
 
-HoloLens 2 has had many updates over time. Sometimes our feature releases are on the same code base, and sometimes we move forward. This distinction can be seen in the major version number of the builds. When an update shares the same code base, such as "2004" and "20H2", they also share the same major version number, which is 19041. In the next feature release we updated the code base, and the new major build number is 20346, so that's where the next feature release "21H1" version is.
+HoloLens 2 is updated every month. Sometimes our feature releases are on the same code base, and sometimes we move forward. This distinction can be seen in the major version number of the builds. When an update shares the same code base, such as "2004" and "20H2", they also share the same major version number, which is 19041. In the next feature release we updated the code base, and the new major build number is 20346, so that's where the next feature release "21H1" version is.
 
 > [!NOTE]
 > When using a [deferral policy](hololens-updates.md#configure-an-update-deferral-policy) only a change in major build number is considered a feature update.
 
-The Windows Holographic version name gives you an indication of the time when the release became available. The current naming convention is year/half. For example, version 21H1 became available in the first half of 2021. The "21" in the name indicates the year (2021) and "H1" indicates the first half of that year. Prior to that naming convention was based on year/month.
+The Windows Holographic version name gives you an indication of the time when the release became available. The current naming convention is year/half. For example, version 21H1 became available in the first half of 2021. The "21" in the name indicates the year (2021) and "H1" indicates the first half of that year. In the past, the naming convention was based on year/month.
 
 In between our feature updates, we also release fixes and improvements and security updates. These updates are always minor updates and never change the major build number.
 
 To help provide clarity, this release notes page provides information for every major and minor update. The most current release is listed first, and previous releases follow in chronological order. If you’d like to learn about updates to down level versions (or view previous major feature releases), refer to the table that follows.
 
-Note:  the current release version is the October 2023 Update, Build 1244.
+Note:  the current release version is the March 2024 Update, Build 1266.
 
-| Major release   number | Feature release(s) name                  | Date         | Build number |
+| Major release   number | Feature release name                  | Date         | Build number |
 |------------------------|-------------------------------------|--------------|--------------|
 | 22621| [Windows Holographic, version 23H2](#windows-holographic-version-23h2---october-2023-update) <br> [Windows Holographic, version 23H1](#windows-holographic-version-23h1---june-2023-update)  | October 2023  <br> June 2023   | 22621.1244  <br> 22621.1113 |
 | 20348| [Windows Holographic, version 22H2](#windows-holographic-version-22h2) <br> [Windows Holographic, version 22H1](#windows-holographic-version-22h1) <br> [Windows Holographic, version 21H2](#windows-holographic-version-21h2) <br> [Windows Holographic, version 21H1](#windows-holographic-version-21h1)  | November 2022 <br> April 2022 <br> October 2021 <br> May 2021   | 20348.1528 <br> 20348.1501 <br> 20348.1432 <br> 20346.1002   |
@@ -42,7 +42,7 @@ Note:  the current release version is the October 2023 Update, Build 1244.
 
 ### How to find out which operating system version is on HoloLens?
 
-To check what version your HoloLens is on, open the Settings app and select **System** -> **About** (depending on how big your window is you may need to scroll down to the bottom to see the About page.)
+To check what version your HoloLens is on, open the Settings app and select **System** -> **About** (depending on how significant your window is you may need to scroll down to the bottom to see the About page.)
 
 <img src="images/hl2-version-number-settings.jpg" width="500px" alt="Screenshot of HoloLens version number in the Settings app.">
 
@@ -57,6 +57,50 @@ To explicitly check for updates, launch the Settings app and select **Update & S
 > [!TIP]
 > Searching for a feature but didn't find it on this page? Try checking out of the previous feature release pages. You can navigate there using the links above, or the table of contents.
 
+## Windows Holographic, version 23H2 - March 2024 Update
+
+- Build 22621.1266
+
+Improvements and fixes in the update:
+
+- Fixed an issue where the user picture displayed does not match the selected user on the sign in screen if [MixedReality/PreferLogonAsOtherUser](/windows/client-management/mdm/policy-csp-mixedreality?branch=main#preferlogonasotheruser) policy is enabled.
+
+- Fixed an issue where the user list cannot be dismissed by clicking on the "Add User" or the "Other User" buttons on the sign in screen if [MixedReality/PreferLogonAsOtherUser](/windows/client-management/mdm/policy-csp-mixedreality?branch=main#preferlogonasotheruser) policy is enabled.
+
+## Windows Holographic, version 23H2 - February 2024 Update
+
+- Build 22621.1263
+
+Improvements and fixes in the update:
+
+- Enhanced the performance of Dynamics 365 Guides on the HoloLens.
+
+## Windows Holographic, version 23H2 - January 2024 Update
+
+- Build 22621.1258
+
+Improvements and fixes in the update:
+
+- Resolved a problem that prevented the complete removal of temporary files.
+
+## Windows Holographic, version 23H2 - December 2023 Update
+
+- Build 22621.1254
+
+Improvements and fixes in the update:
+
+- Fixed an issue in display of application name in Settings app.
+
+- Fixed a link in Hologram Stability page on Device Portal.
+
+## Windows Holographic, version 23H2 - November 2023 Update
+
+- Build 22621.1252
+
+Improvements and fixes in the update:
+
+- Fixed an issue where enrolling into Insider builds resulted in an error that some update files weren't signed correctly.   
+
 ## Windows Holographic, version 23H2 - October 2023 Update
 
 - Build 22621.1244
@@ -65,17 +109,17 @@ Windows Holographic, version 23H2 is now available and brings a great set of new
 
 | Feature   | Description  | User or scenario | 
 |-----------|--------------|---|
-|[Faster eye position updates](#faster-eye-position-updates)|This improvement provides faster eye position updates when a user has not gone through eye calibration. | All |
+|[Faster eye position updates](#faster-eye-position-updates)|This improvement provides faster eye position updates when a user doesn't complete the eye calibration process. | All |
 |[Viewfinder for Camera](#viewfinder-for-camera)| A viewfinder is now included to show what is captured in an image or video. | All |
 |[Rename HoloLens 2 device](#rename-hololens-2-device)| HoloLens 2 devices can now be renamed from the Settings app. | All|
 |[Start Menu gesture settings in MDM](#start-menu-gesture-settings-in-mdm)| A new policy is available to configure start menu gesture settings. | IT Admin | 
 |[Policies to block USB Peripherals on HoloLens 2](#policies-to-block-usb-peripherals)| HoloLens 2 devices can now be locked down to prevent the use of USB peripherals. | IT Admin| 
-|[Domain name suggested during sign-in](#domain-suggested-during-signin)| During sign-in, the domain name is auto-populated to save time.| All | 
+|[Domain name suggested during sign-in](#domain-suggested-during-sign-in)| During sign-in, the domain name is auto-populated to save time.| All | 
 |[New policy for Windows Hello Provisioning behavior](#windows-hello-behavior-with-fido2-policy) | This new policy can be used to control Windows Hello provisioning behavior for users signed in with FIDO2 security keys.| IT Admin| 
 |[New policy for Sign-in app default screen](#signin-app-default-screen-policy) | This new policy can be used to control the default screen shown when the Sign-in app launches to show Other User.| IT Admin| 
 |[Hand tracking improvements](#hand-tracking-improvements) | Hand tracking is now more reliable when aiming at the floor. | All | 
 |[Font and IME improvements](#font-and-ime-improvements) | Several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) now support GB18030-2022. | All | 
-|[Support for NFC readers](#support-for-nfc-readers) | Users can now login to their devices using their security badge with an NFC reader. | All | 
+|[Support for NFC readers](#support-for-nfc-readers) | Users can now log in to their devices using their security badge with an NFC (Near Field Communication) reader. | All | 
 |[Fixes and improvements](#fixes-and-improvements)  | More fixes and improvements for HoloLens. | All   | 
 
 ### IT Admin Checklist
@@ -84,18 +128,18 @@ Windows Holographic, version 23H2 is now available and brings a great set of new
 
 ✔️ If you want to prevent the use of USB peripherals on the HoloLens2, then see [Policies to block USB Peripherals on HoloLens 2](#policies-to-block-usb-peripherals).
 
-✔️ If you want to control the behavior of Windows Hello provisioning for user users signed in with FIDO2 security keys, then see [New policy for Windows Hello Provisioning behavior](#windows-hello-behavior-with-fido2-policy).
+✔️ If you want to control the behavior of Windows Hello provisioning for users signed in with FIDO2 security keys, then see [New policy for Windows Hello Provisioning behavior](#windows-hello-behavior-with-fido2-policy).
 
 ✔️ If you want to set the default screen that shows up when the Sign-in app launches to show "Other user," then see [New policy for Sign-in app default screen](#signin-app-default-screen-policy).
 
 
 ### Faster eye position updates
 
-For HoloLens 2 users who haven't saved their Eye Tracking calibration (either skipped or encountered a failure during initial setup), we are now updating Eye Positions, or Inter Pupillary Distance (IPD), earlier once the user puts on the device. This results in a considerably smoother user experience, especially for close holograms interactions like pressing buttons or typing on the keyboard.
+For HoloLens 2 users who don't save their Eye Tracking calibration (either skipped or encountered a failure during initial setup), we're now updating Eye Positions, or Inter Pupillary Distance (IPD), earlier once the user puts on the device. This change results in a considerably smoother user experience, especially for close holograms interactions like pressing buttons or typing on the keyboard.
 
 ### Viewfinder for camera
 
-With the latest camera updates coming in this release, you now have a viewfinder that provides an indication of what is included in your image or video capture. This overlay does not hide anything in your view when taking a picture or video. Note that the content in the capture is larger than the bracket area.
+With the latest camera updates coming in this release, you now have a viewfinder that provides an indication of what is included in your image or video capture. This overlay doesn't hide anything in your view when taking a picture or video. The content in the capture is larger than the bracket area.
 
 ![Screenshot shows directions on how to take a photo and what content is included.](media/hololens-insider/mrc-viewfinder-disclaimer-1.png)
 
@@ -109,7 +153,7 @@ HoloLens 2 devices can now be renamed by going to the About page of the Settings
 
 ![Screenshot of About page in Settings app that shows Rename button.](media/hololens-insider/rename-success1.png)
 
-A confirmation screen is displayed when the device has been successfully renamed.
+A confirmation screen is displayed when the device is successfully renamed.
 
 ![Screenshot that shows the HoloLens 2 was successfully renamed.](rename-device-button2.png)
 
@@ -171,7 +215,7 @@ This policy controls whether using voice commands can be used to open the Start 
 
 ### Policies to block USB peripherals
 
-You may want to lock down your HoloLens 2 devices to prevent the use of USB Ethernet dongles or USB Flash drives.  Several DeviceInstall MDM policies have been enabled in this update to allow IT Admins to configurate device driver installation policies.  In order to take effect, the policies must be applied prior to connecting the USB Peripherals.  It is recommended that these policies be configured either after the device is reset or on a clean, reflashed device.
+You may want to lock down your HoloLens 2 devices to prevent the use of USB Ethernet dongles or USB Flash drives.  Several DeviceInstall MDM policies are enabled in this update to allow IT Admins to configurate device driver installation policies.  In order to take effect, the policies must be applied before connecting the USB Peripherals.  It is recommended that these policies be configured either after the device is reset or on a clean, reflashed device.
 
 #### DeviceInstall_Removable_Deny
 
@@ -209,7 +253,7 @@ This policy specifies a list of Plug and Play hardware IDs and compatible IDs fo
 
 Refer to [AllowInstallationOfMatchingDeviceIDs](/windows/client-management/mdm/policy-csp-deviceinstallation#allowinstallationofmatchingdeviceids) for details.
 
-### Domain suggested during signin
+### Domain suggested during sign in
 
 During the sign-in process, if [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname) MDM policy is set on HoloLens 2, the tenant domain name is suggested to the user to speed up the login process and save time.  Users can type in a different tenant domain name if desired.
 
@@ -218,9 +262,9 @@ During the sign-in process, if [PreferredAadTenantDomainName](/windows/client-ma
 
 ### Windows Hello behavior with FIDO2 policy
 
-To simplify user account setup, new users signing-in to HoloLens 2 with FIDO2 security keys (instead of web sign-in) after initial device setup are no longer required to go through Iris and PIN enrollment. This behavior does not apply to the user signing-in during [initial device setup](/hololens/hololens2-start#set-up-windows).
+To simplify user account setup, new users signing-in to HoloLens 2 with FIDO2 security keys (instead of web sign-in) after initial device setup are no longer required to go through Iris and PIN enrollment. This behavior doesn't apply to the user signing-in during [initial device setup](/hololens/hololens2-start#set-up-windows).
 
-To support users requiring Iris and/or PIN as alternative sign-in options to FIDO2 security keys, a new policy, EnableWindowsHelloProvisioningForSecurityKeys, has been added to the PassportForWork CSP to control Windows Hello Provisioning behavior. If this policy is enabled on HoloLens 2, the device starts Iris and PIN enrollments after new users sign-in to their devices with FIDO2 security keys. It can be configured in Intune via a [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) profile:
+To support users requiring Iris and/or PIN as alternative sign-in options to FIDO2 security keys, a new policy, EnableWindowsHelloProvisioningForSecurityKeys, is available as part of the PassportForWork CSP to control Windows Hello Provisioning behavior. If this policy is enabled on HoloLens 2, the device starts Iris and PIN enrollments after new users sign-in to their devices with FIDO2 security keys. It can be configured in Intune via a [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) profile:
 
 - URI value: ./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/EnableWindowsHelloProvisioningForSecurityKeys   
 
@@ -230,7 +274,7 @@ To support users requiring Iris and/or PIN as alternative sign-in options to FID
 
 ### Signin app default screen policy 
 
-In environments where devices are shared between multiple people and not everyone has enrolled in Iris sign-in, it may be preferable to always show the Other User screen so a user picking up the device can quickly start the sign-in process. For example, in an environment where everyone uses their FIDO2 security keys to sign in, it would be preferable to start on the Other User screen instead of having to find the correct user first.
+In environments where devices are shared between multiple people and not everyone is enrolled in Iris sign-in, it may be preferable to always show the Other User screen so a user picking up the device can quickly start the sign-in process. For example, in an environment where everyone uses their FIDO2 security keys to sign in, it would be preferable to start on the Other User screen instead of having to find the correct user first.
 
 To help with this scenario, we added a new MDM policy: PreferLogonAsOtherUser. When this policy is enabled, the HoloLens Sign-in app shows the Other User screen by default when the app starts. 
 
@@ -242,11 +286,11 @@ To help with this scenario, we added a new MDM policy: PreferLogonAsOtherUser. W
 
 ### Hand tracking improvements 
 
-Hand tracking system has been improved so that tracking is more reliable when aiming down at objects on the floor.
+Hand tracking system is improved so that tracking is more reliable when aiming down at objects on the floor.
 
 ### Font and IME improvements
 
-This update improves several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) to support GB18030-2022. You can enter and display characters from conformance level 1 or 2 using the additions to Microsoft Yahei, Simsun, and Dengxian. This update now supports Unicode Extensions E and F in the Simsun Ext-B font. This update meets the requirements for level 3.  These improvements are in-line with what has been released to the Windows 11 Build Release Preview Channel.  More details can be found on the [Windows Insiders blog](https://blogs.windows.com/windows-insider/2023/06/20/releasing-windows-11-build-22621-1926-to-the-release-preview-channel/).
+This update improves several simplified Chinese fonts and the Microsoft Pinyin Input Method Editor (IME) to support GB18030-2022. You can enter and display characters from conformance level 1 or 2 using the additions to Microsoft Yahei, Simsun, and Dengxian. This update now supports Unicode Extensions E and F in the Simsun Ext-B font. This update meets the requirements for level 3.  These improvements are in-line with what is released to the Windows 11 Build Release Preview Channel.  More details can be found on the [Windows Insiders blog](https://blogs.windows.com/windows-insider/2023/06/20/releasing-windows-11-build-22621-1926-to-the-release-preview-channel/).
 
 ### Support for NFC readers
 
@@ -266,7 +310,7 @@ USB-CCID (Chip Card Interface Device) compatible NFC FIDO2 readers with USB base
 > [!NOTE] 
 > If a USB NFC reader works on Windows Desktop with the inbox CCID driver, that same reader is expected to be compatible with the HoloLens 2.  If the reader requires a third-party driver (either from Windows Update or through manual driver installation), the reader is not compatible with HoloLens 2.
 
-Whether you sign into a device you have used before or a new device, follow these steps to sign in with an NFC reader:
+Whether you sign into a device you used before or a new device, follow these steps to sign in with an NFC reader:
 
 1.	From the “Other User” screen, enter the FIDO Key / Tap the NFC Key against the reader.
 2.	Enter the FIDO PIN.
@@ -285,7 +329,7 @@ Whether you sign into a device you have used before or a new device, follow thes
 - Fixed an issue where swipe to type on the virtual keyboard was not working correctly (Windows 11 builds only).
 - Fixed an issue where the "Reset" button was not showing in the case of an Autopilot failure that occurred before reading the ESP configuration.
 - Minor updates were made to the virtual keyboard, including optimization of the keyboard suggestions that are presented to users and improved audio feedback while typing.
-- Prior to this update, users were often unclear when dictation from the virtual keyboard was available.  Users now see a spinning icon while dictation is being initiated and the dictation tip to begin speaking is only displayed once dictation is available.
+- Before this update, users were often unclear when dictation from the virtual keyboard was available.  Users now see a spinning icon while dictation is being initiated and the dictation tip to begin speaking is only displayed once dictation is available.
 - The "Add Account" button on the sign-in screen can now be found above the list of existing accounts on the device.  It is now visible regardless of your scroll position on the screen.
 - Fixed an issue where users could not specify the active hour range for Windows Update via the Settings App.
 - Fixed an issue where it may take several minutes for the first-time user setup (Iris enrollment, PIN enrollment, etc.) to show up after a user signs in to a device for the first time.
@@ -325,9 +369,9 @@ Improvements and fixes in the update:
 
 Windows Holographic, version 23H1 is now available and brings a great set of new features to HoloLens 2 users, IT professionals and developers. Check out all the new great features for HoloLens 2!
 
-HoloLens 2 is moving to Windows 11 as part of the 23H1 release. To upgrade, HoloLens 2 device(s) must be currently running 21H1 May 2021 update (build 20346.1002) or newer. If the 23H1 feature update is not available, update your device and try again. If you are on a version that is older than Windows Holographic version 20H2 (Build 19041.1136), you first need to update to the February 2021 update (build 19041.1136 or newer) before you update to the 21H1 May 2021 update (build 20346.1002) or newer. 
+HoloLens 2 is moving to Windows 11 as part of the 23H1 release. To upgrade, HoloLens 2 devices must be currently running 21H1 May 2021 update (build 20346.1002) or newer. If the 23H1 feature update is not available, update your device and try again. If you are on a version that is older than Windows Holographic version 20H2 (Build 19041.1136), you first need to update to the February 2021 update (build 19041.1136 or newer) before you update to the 21H1 May 2021 update (build 20346.1002) or newer. 
 
-Note:  With the introduction of Windows Holographic version 23H1, we are discontinuing monthly servicing updates for Windows Holographic version 20H2 (Build 19041.1128+). This change enables us to focus on more recent releases and continue to deliver valuable improvements. 
+Note:  With the introduction of Windows Holographic version 23H1, we're discontinuing monthly servicing updates for Windows Holographic version 20H2 (Build 19041.1128+). This change enables us to focus on more recent releases and continue to deliver valuable improvements. 
 
 | Feature   | Description  | User or scenario | 
 |-----------|--------------|------------------|
@@ -347,7 +391,7 @@ Note:  With the introduction of Windows Holographic version 23H1, we are discont
 
 ✔️ If you want to manage whether users can manually check for updates to Store apps from the Settings App, then see [Store app update from Settings](#store-app-update-from-settings).
 
-✔️ If you want to learn more about how D365 Apps automatically update to the latest versions, then read [Automatic update during Autopilot Flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow).
+✔️ If you want to learn more about how Dynamics 365 Apps automatically update to the latest versions, then read [Automatic update during Autopilot Flow](#automatic-update-of-dynamics-365-remote-assist-and-guides-during-autopilot-flow).
 
 ✔️ If you want to allow users to reset their device without requiring a manual flash, then see [Autopilot reset experience](#autopilot-reset-experience).
 
@@ -386,7 +430,7 @@ In order for a device reset to complete successfully, the following two conditio
 
 ### Removing Placements of Apps in Mixed World
 
-You can now close all placements of an application in the mixed world by selecting the **Close all** (or **Close** when there is only one placement) option from that application’s context menu.  This feature is also available in Kiosk mode. Note: this menu option is only available when an application has been placed in the mixed world. 
+You can now close all placements of an application in the mixed world by selecting the **Close all** (or **Close** when there is only one placement) option from that application’s context menu.  This feature is also available in Kiosk mode. Note: this menu option is only available when an application is placed in the mixed world. 
 
 ![placement resized - use this](media/hololens-insider/placement-resized---use-this1.jpg)
 
@@ -436,21 +480,21 @@ Having up-to-date devices is important. A previous feature improvement lets you 
 
 ### Autopilot reset experience
 
-We've added a new setting to improve the Autopilot reset experience if Hololens 2 fails in certain installation scenarios. This setting lets users begin the Autopilot experience again without requiring a manual flash of HoloLens 2 devices. In the ESP configuration, set **Allow users to reset device if installation error occurs** to **Yes** and the device displays a "Reset device" button. If the user selects **Reset device**, after a delay of about 1 minute, HoloLens 2 dresets the operating system and OOBE experience.
+A new setting to improve the Autopilot reset experience is available if Hololens 2 fails in certain installation scenarios. This setting lets users begin the Autopilot experience again without requiring a manual flash of HoloLens 2 devices. In the ESP configuration, set **Allow users to reset device if installation error occurs** to **Yes** and the device displays a "Reset device" button. If the user selects **Reset device**, after a delay of about 1 minute, HoloLens 2 resets the operating system and OOBE experience.
 
 ### Biometrics disclosure screen
 
-We've changed one of our OOBE screens before the device calibrates to show information on device usage for head, hand, and eye movements. Devices configured to skip calibration do not skip this biometrics disclosure screen, so all new users on a device sees device biometrics usage.  The purpose of this screen is to better inform users about the data being collected.  There are no changes to the data that is being collected.
+We changed one of our OOBE screens before the device calibrates to show information on device usage for head, hand, and eye movements. Devices configured to skip calibration do not skip this biometrics disclosure screen, so all new users on a device sees device biometrics usage.  The purpose of this screen is to better inform users about the data being collected.  There are no changes to the data that is being collected.
 
 :::image type="content" alt-text="This screenshot shows the Biometrics OOBE window." source="images/biometrics-oobe-notification.jpg":::
 
 ### Remove users on a device
 
-Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we've added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
+Organizations with scaled deployments of HoloLens 2 devices might encounter the 64-user limit per device that prevents adding users. To address this situation, we added controls that delete the least recent users from the device at controlled intervals, which is a feature that is also available on the Desktop version of Windows. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
 
-- When a user has been inactive on the device for a specific number of days, configurable via **ProfileInactivityThreshold.**
-- When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
-- When the device has reached the maximum number of supported users (64).
+- When a user is inactive on the device for a specific number of days, configurable via **ProfileInactivityThreshold.**
+- When the device reaches a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
+- When the device reaches the maximum number of supported users (64).
    
 To learn more about these policies, visit [AccountManagement CSP](/windows/client-management/mdm/accountmanagement-csp) or refer to [Share HoloLens with multiple people](/hololens/hololens-multiple-users/) section of the deployment guide.
 
@@ -509,7 +553,7 @@ Improvements and fixes in the update:
 
 Improvements and fixes in the update:
 
-- Fixed an issue where a MDM managed profile gets deleted unexpectedly if both the deletion and the addition of a VPN profile were in the same session.
+- Fixed an issue where an MDM managed profile gets deleted unexpectedly if both the deletion and the addition of a VPN profile were in the same session.
 
 ## Windows Holographic, version 22H2
 
@@ -519,8 +563,8 @@ This update brings a great set of new features to HoloLens 2 users and IT profes
 
 | Feature   | Description  | User or Scenario |
 |-----------|--------------|------------------|
-| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies we've enabled that allow IT Admins to skip several screens in  OOBE when adding new users to devices. | IT Admin |
-| [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Turn off auto-reconnect to Wi-Fi access points to stay connected to intranet. | IT Admin       |
+| [New policies to speed up adding users](#policies-to-speed-up-adding-users) | New policies are enabled that allow IT Admins to skip several screens in  OOBE when adding new users to devices. | IT Admin |
+| [New policy to disable NCSI passive polling](#new-policy-to-disable-ncsi-passive-polling) | Stay connected to the intranet by turning off auto-reconnect to Wi-Fi access points. | IT Admin       |
 | [Captive portal on sign-in screen, enter Wi-Fi credentials to help sign-in](#captive-portal-on-sign-in-screen-enter-wi-fi-credentials-to-help-sign-in)  | New policy that IT Admins can enable that allows the use of captive portals on the sign-in screen to help connecting to Wi-Fi. | IT Admin |
 | [Clean up storage via MDM](#clean-up-storage-via-mdm) | Clean up files via MDM, using storage sense to clean up older unused files.  | IT Admin |
 | [Security Baseline](#security-baseline) | Two sets of security restrictions you can use to add more control to your devices. | IT Admin |
@@ -554,7 +598,7 @@ As you scale deployment of your HoloLens devices across your enterprise, you can
 
 The new policies and screens they skip are:
 
-| Policy          | What's skipped                                                                    |  Screenshot |
+| Policy          | Skipped screens                                                                    |  Screenshot |
 |------------------|-----------------------------------------------------------------------------------|---|
 | Skip Calibration | The calibration run during OOBE, which can later be run via the Settings app, or when an app that uses eye tracking prompts the user to calibrate. <br> Using: `SkipCalibrationDuringSetup`      | <img src="images/07-adjust-eyes.png" width="200px" alt="Adjust for your eyes"> |
 | Skip Training    | How to open and close the Start menu, which can later be learned via the Tips app. <br> Using: `SkipTrainingDuringSetup`  | <img src="images/26-02-startmenu-learning.png" width="200px" alt="Learn how to use the start gesture, image 2"> |
@@ -603,7 +647,7 @@ Find this information later at [Policy CSP - MixedReality](/windows/client-manag
 
 ### Clean up storage via MDM
 
-[Storage Sense](/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5) is available on HoloLens 2 today to manage cleanup of old files. IT admins can now also configure behavior of Storage Sense on HoloLens 2 with following MDM policies:
+[Storage Sense](https://support.microsoft.com/en-us/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5) is available on HoloLens 2 today to manage cleanup of old files. IT admins can now also configure behavior of Storage Sense on HoloLens 2 with following MDM policies:
 
 - [Storage/AllowStorageSenseGlobal](/windows/client-management/mdm/policy-csp-storage#storage-allowstoragesenseglobal)
   - Sets Storage sense to be enabled on the device and runs whenever reaching low storage.
@@ -624,13 +668,13 @@ Find this information later at [Policy CSP - MixedReality](/windows/client-manag
 
 ### Security baseline
 
-In some cases, you may want to place some stronger restrictions on your devices. Whatever your need for security, we've written out two security baselines that you can use to add an extra layer of security to your device fleet.
+In some cases, you may want to place some stronger restrictions on your devices. Whatever your need for security, you can choose one of two security baselines to add an extra layer of security to your device fleet.
 
 Select this link to read the [security baselines](security-baseline.md).
 
 ### Configure NTP client for W32 Time service
 
-You may want to configure a different time server for your device fleet. With this update, IT admins can now configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page shows the time server after a time sync has occurred, for example, `time.windows.com` or another if another value is configured via MDM policy.
+You may want to configure a different time server for your device fleet. With this update, IT admins can now configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page shows the time server after a time sync, for example, `time.windows.com` or another if another value is configured via MDM policy.
 
 > [!NOTE]
 > Reboot is required for these policies to take effect.
@@ -682,7 +726,7 @@ This month's build only contains windows security fixes. Be look forward to our 
 
 Improvements and fixes in the update:
 
-- In-box OpenXR code updated. This is to provide best out-of-box experience for customers without Microsoft store access.
+- In-box OpenXR code updated. This change provides the best out-of-box experience for customers without Microsoft store access.
 - Medical partners can access 90fps eye tracking via Extended ET API.
 - Fixed an issue in AssignedAccessSettings where it was not providing correct result when kiosk mode was enabled for signed in user on HoloLens 2.
 
@@ -713,15 +757,15 @@ Improvements and fixes in the update:
 
 Improvements and fixes in the update:
 
-- This monthly quality update doesn't contain any notable changes, we encourage you to keep your devices up to date for all the latest fixes and improvements. Keep an eye on our [Insider builds](hololens-insider.md) for some potential new features for our next feature release.
+- This monthly quality update doesn't contain any notable changes.  We encourage you to keep your devices up to date for all the latest fixes and improvements. Keep an eye on our [Insider builds](hololens-insider.md) for some potential new features for our next feature release.
 
 ## Microsoft Store app update
 
-There is a new version of the Microsoft Store app for the HoloLens 2. This app update occurs seamlessly when the Microsoft Store app itself is updated. When the update is complete, you see a storefront similar to the store app that is available on desktop. Since this is an app update it is distributed to all HoloLens 2 devices, regardless of OS version.
+There is a new version of the Microsoft Store app for the HoloLens 2. This app update occurs seamlessly when the Microsoft Store app itself is updated. When the update is complete, you see a storefront similar to the store app that is available on desktop. This app update is distributed to all HoloLens 2 devices, regardless of OS version.
 
 ![Image of new store app that became availble in May 2022](images/store-app-hololens2-censored.jpg)
 
-With the new store, you see apps that are available for HoloLens 2, and you are able to scroll through different various industries and solutions to view apps that may be useful to you. You are able to access any company apps by selecting the Work icon, which looks like a briefcase in the top left. (The company name and user has been censored in this screenshot).
+With the new store, you see apps that are available for HoloLens 2, and you are able to scroll through different various industries and solutions to view apps that may be useful to you. You are able to access any company apps by selecting the Work icon, which looks like a briefcase in the top left. (The company name and user are censored in this screenshot).
 
 Want to check your apps, or app versions? You can select the **Library** icon and **Get updates**. Want to know what version an app is on? From the **Library** screen, select an app installed on your device to go to that apps page, and scroll to the bottom and look for **>_ Installed version**.
 
@@ -742,9 +786,9 @@ Improvements and fixes in the update:
 
 Windows Holographic, version 22H1 is now available and brings a great set of new features to HoloLens 2 users and IT professionals.
 
-Many of you have been so eager to receive our feature updates we've release some of them earlier this year in January and February. Several of these are improvements and manageability of last release's major item Moving Platform Mode. Check out all the new great features for HoloLens 2!
+Many of you are so eager to receive our feature updates we've release some of them earlier this year in January and February, including improvements and manageability of Moving Platform Mode. Check out all the new great features for HoloLens 2!
 
-This latest release is a "monthly update" to versions 21H1 (and 21H2), which includes new features.  As a result, the major build number remains the same and Windows Update indicates a monthly release to version 21H1 (build 20348). To ensure you've received 22H1, verify the version number is 20348.1501 or higher. You can look at your Build Number in your **Settings** -> **System** -> **About** screen to confirm you are on the latest available build 20348.1501+.
+This latest release is a "monthly update" to versions 21H1 (and 21H2), which includes new features.  As a result, the major build number remains the same and Windows Update indicates a monthly release to version 21H1 (build 20348). To ensure you have 22H1, verify the version number is 20348.1501 or higher. You can look at your Build Number in your **Settings** -> **System** -> **About** screen to confirm you are on the latest available build 20348.1501+.
 
 To update to the latest release, open the Settings app, go to Update & Security, and tap Check for Updates. For more information on how to manage HoloLens updates, visit [Manage HoloLens updates.](hololens-updates.md)
 
@@ -774,7 +818,7 @@ Color-blind mode is a feature to help make HoloLens more accessible. The new col
 
 ### Single app kiosk policy for launching other apps
 
-Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example,  if you want to launch the Settings app to calibrate your device or change your Wi-Fi.
+Introduced a new MDM policy MixedReality\AllowLaunchUriInSingleAppKiosk. This policy can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example,  if you want to launch the Settings app to calibrate your device or change your Wi-Fi.
 
 By default, launching applications via [Launcher API (Launcher Class (Windows.System) - Windows UWP applications)](/uwp/api/Windows.System.Launcher?view=winrt-22000&preserve-view=true) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
 
@@ -927,7 +971,7 @@ Improvements and fixes in the update:
 
 Windows Holographic, version 21H2 is now available and brings a great set of new features to HoloLens 2 users and IT professionals. This one’s about the improved troubleshooting and device reports, some fixed bugs in kiosk mode and the certificate viewer, the expanded manageability surface and the increased update reliability. A new flagship feature of this feature update coming to HoloLens is our Moving Platform Mode. Check out all the new great features for HoloLens 2!
 
-This latest release is a monthly update to version 21H1, but this time we are including new features, because of this the major build number remains the same and Windows Update indicates a monthly release to version 21H1 (build 20348). To ensure you've received 21H2, verify the version number is 20348.1432 or higher. You can look at your Build Number in your **Settings** -> **System** -> **About** screen to confirm you are on the latest available build 20348.1432+.
+This latest release is a monthly update to version 21H1, but this time we're including new features, because of this the major build number remains the same and Windows Update indicates a monthly release to version 21H1 (build 20348). To ensure you've received 21H2, verify the version number is 20348.1432 or higher. You can look at your Build Number in your **Settings** -> **System** -> **About** screen to confirm you are on the latest available build 20348.1432+.
 
 To update to the latest release, open the Settings app, go to Update & Security, and tap Check for Updates. For more information on how to manage HoloLens updates, visit [Manage HoloLens updates.](hololens-updates.md)
 
@@ -982,7 +1026,7 @@ Users can import .pfx certificate, with private key, to user store or machine st
 
 For managed devices when troubleshooting behavior, confirming that an expected policy configuration was applied is an important step. Previously to this new feature, this had to be done off device via MDM or near the device after exporting MDM diagnostic logs gathered via **Settings** -> **Accounts** > **Access work or school**, and select **Export your management logs** and viewed on a nearby PC.
 
-Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select **View advanced diagnostic report**. This generates and open the report in a new Edge window.
+Now the MDM Diagnostics can be viewed on device using the Edge browser. To more easily view the MDM Diagnostic report navigate to the Access work or school page, and select **View advanced diagnostic report**. This generates and opens the report in a new Edge window.
 
 ![View advanced diagnostic report in Settings app.](./images/view-advanced-diagnostic-report.jpg)
 
@@ -1073,7 +1117,7 @@ When the policy is set to a non-empty value, it specifies the email address of t
 The OMA-URI of new policy `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
 String value
 
-- User with the same email address have auto logon enabled.
+- Users with the same email address have auto logon enabled.
 
 On a device where this policy is configured, the user specified in the policy needs to log on at least once. Subsequent reboots of the device after the first logon have the specified user automatically logged on. Only a single auto-logon user is supported. Once enabled, the automatically logged on user won’t be able to log out manually. To log on as a different user, the policy must first be disabled.
 
@@ -1091,7 +1135,7 @@ On a device where this policy is configured, the user specified in the policy ne
 
 ### Improved update restart detection and notifications
 
-Between active hours and install time policies, it’s possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified prior to the reboot being initiated and they can delay the reboot in accordance with IT policy.
+Between active hours and install time policies, it’s possible to avoid rebooting HoloLens devices when they are in use. However, it would also delay the adoption of updates if reboots don’t occur to complete the installation of a required update. We’ve now added policies to allow IT to enforce deadlines and required reboots and ensure that the installation of an update is completed in a timely manner. Users can be notified before the reboot being initiated and they can delay the reboot in accordance with IT policy.
 
 The following update policies were added:
 
@@ -1128,7 +1172,7 @@ This information can be found later in the [app deployment store for business pa
 
 ### Use only private store apps for Microsoft Store
 
-The RequirePrivateStoreOnly  policy has been enabled for HoloLens. This policy enables the Microsoft Store app to be configured to only show the private store configured for your organization via [Microsoft Store for Business](/microsoft-store/microsoft-store-for-business-overview). Limiting access to only the apps you’ve made available.
+The RequirePrivateStoreOnly policy is enabled for HoloLens. This policy enables the Microsoft Store app to be configured to only show the private store configured for your organization via [Microsoft Store for Business](/microsoft-store/microsoft-store-for-business-overview). Limiting access to only the apps you’ve made available.
 
 Learn more about [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
@@ -1219,7 +1263,7 @@ We've added a new feature to the HoloLens 2 Settings app, which allows customers
 - Visit **Settings > System > Mixed Reality Camera** to enable "Camera upload."
 - By setting this feature to the **On** position, any mixed reality photos or videos captured to your device are automatically queued for upload to the Pictures > Camera Roll folder of your OneDrive for work or school account.
 - > [!NOTE]
-  > Photos and videos captured prior to enabling this feature *are not* queued for upload and still needs to be manually uploaded.
+  > Photos and videos captured before enabling this feature *are not* queued for upload and still needs to be manually uploaded.
 
 - A status message on the Settings page displays the number of files pending upload (or read "OneDrive is up to date" when all pending files have been uploaded).
 - If you're concerned about bandwidth or want to "pause" upload for any reason, you can switch the feature to the **Off** position. Temporarily disabling the feature ensures that the upload queue continues to increase as you add new files to the Camera Roll folder, but files won’t upload until you re-enable the feature.
@@ -1257,7 +1301,7 @@ Improvements and fixes in the update:
 
 This update contains features for two target audiences; features that can be used by anyone on a device by the End User, and new device management options that can be configured by IT Admins. The table that follows specifies the features that are relevant to each audience. If you’re an IT Admin, take a look at our [IT Admin - Update Checklist](#it-admin---update-checklist---21h1).
 >[!IMPORTANT]
->In order to update to this build, HoloLens 2 device(s) must be currently running the February 2021 update (build 19041.1136) or newer. If you are not seeing this feature update available, update your device first and try again.
+>In order to update to this build, HoloLens 2 devices must be currently running the February 2021 update (build 19041.1136) or newer. If you are not seeing this feature update available, update your device first and try again.
 
 | Feature Name                                              | Short description                                                                      | Target Audience |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -1418,7 +1462,6 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
 - 360 Viewer (see next section)
 - [XR Dinosaurs](https://www.xrdinosaurs.com/)
 - [Barista Express](https://constructarca.de/game/barista-express/)
-- [WebXR Paint](https://threejs.org/examples/webxr_vr_paint.html)
 
 #### How to use 360 Viewer
 
@@ -1428,7 +1471,7 @@ The 360 Viewer extension is built on WebXR and automatically installs alongside 
     ![Button to activate 360 Viewer.](images/enter-360-viewer.jpg)
 
 1. The first time you try to launch 360 Viewer on a specific domain, the browser asks for consent to enter an immersive view. Select **Allow**.
-1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls disappears after a few seconds of inactivity.
+1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Use [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off, or stop the experience (which exits the immersive view). The playback controls disappear after a few seconds of inactivity.
 
 #### Top WebXR and 360 Viewer known issues
 
@@ -1462,7 +1505,7 @@ With this release, we're introducing a new version of the Settings app. The new 
 - System > Battery: manually enable battery saver mode or set a battery threshold at which point battery saver mode turns on automatically.
 - Devices > USB: you can disable USB connections by default.
 - Network & Internet:
-  - USB-C Ethernet adapters now appears in Network & Internet.
+  - USB-C Ethernet adapter now appears in Network & Internet.
   - USB-C Ethernet adapter settings are now available, including its IP address.
   - You can now enable airplane mode on HoloLens 2.
 - Apps: you can reset the default apps used for file and link types. For more information see [Default app picker](#default-app-picker).
@@ -1505,7 +1548,7 @@ With this new setting, you can select an alternative color profile for your Holo
 >
 > - You can re-run display color calibration from Settings whenever you'd like
 > - If anyone on the device has previously used the setting to change color profiles, the date/time of the most recent change is reflected on the Settings page
-> - When you re-run display color calibration, the color profile that was previously saved is highlighted and Profile 0 does not appear (as Profile 0 represents the display's original color profile)
+> - When you re-run display color calibration, the color profile that was previously saved is highlighted and Profile 0 doesn't appear (as Profile 0 represents the display's original color profile)
 > - If you want to revert to the display's original color profile, you can do so from the Settings page (see [how to reset color profile](#how-to-reset-color-profile))
 
 ##### How to reset color profile
@@ -1523,7 +1566,7 @@ If you're unhappy with the custom color profile saved to your HoloLens 2, you ca
 
 #### Default app picker
 
-When you activate a hyperlink or open a file type with more than one installed app, which supports it, you sees a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
+When you activate a hyperlink or open a file type with more than one installed app, which supports it, you see a new window open prompting you to select which installed app should handle the file or link type. In this window, you can also choose to have the selected app handle the file or link type "Once" or "Always."
 
 If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. Scroll to the bottom of the page and select the **Clear** button under "Default apps for file types" and/or "Default apps for link types." Unlike the similar setting on desktop PCs, you can't reset individual file type defaults.
 
@@ -1581,7 +1624,7 @@ When in the Other users menu, the Other users button displays the last user sign
 ### USB-C External Microphone Support
 
 > [!IMPORTANT]
-> Plugging in **a USB mic does not automatically set it as the input device**. When plugging in a set of USB-C headphones users observe that the headphone's audio is automatically redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow these steps.**
+> Plugging in **a USB mic doesn't automatically set it as the input device**. When plugging in a set of USB-C headphones users observe that the headphone's audio is automatically redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device. **In order to use a USB-C microphone follow these steps.**
 
 Users can select USB-C connected external microphones using the **Sound** settings panel. USB-C microphones can be used for calling, recording, etc.
 
@@ -1618,7 +1661,7 @@ For a non-AAD configuration, to configure a device for visitor auto-logon:
     1. Do not create a local account
 1. [Apply the provisioning package](hololens-provisioning.md).
 
-For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign-in screen. Once signed in to the visitor account, the device does not prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
+For an AAD configuration, users can achieve something similar to this today without this change. AAD joined devices configured for kiosk mode can sign in a Visitor account with a single button tap from the sign-in screen. Once signed in to the visitor account, the device doesn't prompt for sign in again until the Visitor is explicitly signed out from the start menu or the device is restarted.
 
 Visitor Auto logon can be managed via [custom OMA-URI](/mem/intune/configuration/custom-settings-windows-10) policy:
 
@@ -1653,7 +1696,7 @@ In [Windows Holographic, version 20H2](hololens-release-notes-2004.md#windows-ho
 
 If you visit [Page Settings Visibility](settings-uri-list.md), you can find instructions to use this CSP and the list of URIs available in previous releases.
 
-We are expanding upon the list of available Settings URIs, which IT Admins can manage. Some of these URIs are for newly available areas within the new Settings app. If you are using Settings/PageVisibilityList policy, review the following list and adjust your allowed or blocked pages as needed.
+We're expanding upon the list of available Settings URIs, which IT Admins can manage. Some of these URIs are for newly available areas within the new Settings app. If you are using Settings/PageVisibilityList policy, review the following list and adjust your allowed or blocked pages as needed.
 
 > [!NOTE]
 > **Deprecated: ms-settings:network-proxy**
@@ -1732,7 +1775,7 @@ A few caveats about this preview offering:
 
 - HoloLens support is limited in this preview to OS updates only.
 - Windows Holographic for Business only supports HTTP download modes and downloads from a [Microsoft Connected Cache endpoint](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache); peer-to-peer download modes and group assignments are not supported for HoloLens devices at this time.
-- HoloLens does not support deployment or delivery optimization for Windows Server Update Services endpoints.
+- HoloLens doesn't support deployment or delivery optimization for Windows Server Update Services endpoints.
 - Troubleshooting requires either diagnostics on the Connected Cache server or collecting a trace on HoloLens via **Settings** > **Update & Security** >  **Troubleshooting** >  **Windows Update**.
 
 ### IT Admin - Update Checklist - 21H1
@@ -1788,5 +1831,4 @@ If you are currently using [Page Settings Visibility](settings-uri-list.md) then
 - Fixes an issue that could lead to incorrect symbols being typed in Edge for Japanese customers.
 - Improves the resiliency of OS updates around preinstalled apps such as Edge.
 - Addresses an update reliability impacting the installation of Microsoft Edge.
-
 
