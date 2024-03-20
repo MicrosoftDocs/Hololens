@@ -125,7 +125,7 @@ HoloLens supports multiple users from the same Microsoft Entra tenant. To use th
 All users can use the apps installed on the device. However, each user has their own app data and preferences. Removing an app from the device removes it for all users.  
 
 > [!NOTE]
-> Another option for devices that are shared among multiple users is to create a Shared Microsoft Entra detailed information on account on the device.  See [Shared Microsoft Entra accounts in HoloLens](/shared-aad-accounts.md) for detailed information on how to configure this account on your device.
+> Another option for devices that are shared among multiple users is to create a Shared Microsoft Entra detailed information on account on the device.  See [Shared Microsoft Entra accounts in HoloLens](/hololens/shared-aad-accounts) for detailed information on how to configure this account on your device.
 
 Devices set up with Microsoft Entra accounts won't allow signing in to the device with a Microsoft Account. All subsequent accounts used must be Microsoft Entra accounts from the same tenant as the device. You may still [sign in using a Microsoft Account to apps](hololens-identity.md#setting-up-multi-user-support-microsoft-entra-only) that support it (such as the Microsoft Store). To change from using Microsoft Entra accounts to Microsoft Accounts for signing in to the device, you must [reflash the device](hololens-recovery.md#clean-reflash-the-device).
 
