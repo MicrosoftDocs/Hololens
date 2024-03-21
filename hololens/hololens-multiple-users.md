@@ -32,10 +32,10 @@ When planning to share your devices, there are several considerations to optimiz
 
 ### [Identity and Authentication](hololens-identity.md)
 
-If you're planning on having multiple accounts on a device, then you'll have Microsoft Entra accounts with all modes of authentication. These authentication methods are based on [Windows Hello](/windows-hardware/design/device-experiences/windows-hello), including Iris, PIN and FIDO2 keys.  In the case of a [Shared Microsoft Entra account](/hololens/shared-aad-accounts), the authentication method used is Certificate-Based Authentication (CBA).
+If you're planning on having multiple accounts on a device, then you can have Microsoft Entra accounts with all modes of authentication. These authentication methods are based on [Windows Hello](/windows-hardware/design/device-experiences/windows-hello), including Iris, PIN, and FIDO2 keys. In the case of a [Shared Microsoft Entra account](/hololens/shared-aad-accounts), the authentication method used is Certificate-Based Authentication (CBA).
 
 - FIDO 2 Security keys are excellent if you have multiple devices, many users, or are constantly using new devices.
-- If one device will be shared with multiple users, a [Shared Microsoft Entra account](/hololens/shared-aad-accounts) will allow users to login via a single button-click.
+- If one device is shared with multiple users, a [Shared Microsoft Entra account](/hololens/shared-aad-accounts) allows users to login via a single button-click.
 - If you have 10 or fewer users, Iris is a fast solution to sign in users who have previously signed into the same device.
 
 ### [Device Management](hololens-csp-policy-overview.md)
@@ -56,11 +56,11 @@ When sharing the device between multiple users, there are some physical consider
 
 - Ensure devices are charging between shifts.
 - If a device needs to last multiple shifts, consider using an external battery at the start of a shift while the device still has significant charge per the [managing heat directions](hololens2-charging.md#managing-heat).
-- When you're storing devices, keep them plugged in and connected to a network. This is the best way to ensure OS and apps stay up to date.
+- When you're storing devices, keep them plugged in and connected to a network. This practice is the best way to ensure OS and apps stay up to date.
 - Consider how you plan to [clean the device](hololens2-maintenance.md) between users.  If you plan to use Iris authentication, it's highly recommended that the visor is cleaned between each user.
 - For a device with a single shared user if using a shared PIN/password for a single user, don't put the PIN/password on the side of the device.
 - For multiple devices with a single shared user, use various PINs/passwords. Or consider setting up a [Shared Microsoft Entra account](/hololens/shared-aad-accounts) to allow signin with a single button-click.
-- Label your devices so users can find ones they already have used. Signing back into a previously used device to launch an app can take a little as 30 seconds with Iris, PIN, or FIDO2 security keys. Setting up a new device, either OOBE or adding a new user, and then launching an app can take as much as 5 minutes.
+- Label your devices so users can find ones they already used. Signing back into a previously used device to launch an app can take a little as 30 seconds with Iris, PIN, or FIDO2 security keys. Setting up a new device, either OOBE or adding a new user, and then launching an app can take as much as 5 minutes.
 
 ## Share with multiple people, each using their own account
 
@@ -78,7 +78,7 @@ To use HoloLens, each user follows these steps:
    - Select the user tile from the **Start menu** or choose "sign out" from the **Power menu** to sign out the current user.
 
 1. Use your Microsoft Entra account credentials to sign in to the device.  
-   - If it's the first time you have used the device, you're asked to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
+   - If it's the first time you have are using the device, you're asked to [calibrate](hololens-calibration.md) the HoloLens to your own eyes.
    - If you previously used the device:
            - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes-2004.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
       - Previous builds need manual calibration to adjust to your eyes.
@@ -100,8 +100,8 @@ To use HoloLens, each user follows these steps:
 -  Organizations with scaled deployments of HoloLens 2 devices might encounter the 63-user limit per device that prevents adding users. To address this situation, we added controls that delete the least recent users from the device at controlled intervals, which is a feature you might have used on the Desktop version. Deleting users in a controlled way is useful for other reasons, too. Removing the inactive accounts speeds up the sign-in process and improves privacy and security by reducing retention of unused data. We use three criteria to determine when to remove user accounts on the device:
 
 - When a user has been inactive on the device past a number of days, configurable via **ProfileInactivityThreshold.**
-- When the device has reached a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
-- When the device has reached the maximum number of supported users (63).
+- When the device reaches a storage threshold, configurable via **StorageCapacityStartDeletion** and **StorageCapacityStopDeletion**.
+- When the device reaches the maximum number of supported users (63).
 
 Here's how to get started:
 
