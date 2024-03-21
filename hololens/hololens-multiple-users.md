@@ -32,9 +32,10 @@ When planning to share your devices, there are several considerations to optimiz
 
 ### [Identity and Authentication](hololens-identity.md)
 
-If you're planning on having multiple accounts on a device, then you'll have Microsoft Entra accounts with all modes of authentication. These authentication methods are based on [Windows Hello](/windows-hardware/design/device-experiences/windows-hello), including Iris, PIN and FIDO2 keys.
+If you're planning on having multiple accounts on a device, then you'll have Microsoft Entra accounts with all modes of authentication. These authentication methods are based on [Windows Hello](/windows-hardware/design/device-experiences/windows-hello), including Iris, PIN and FIDO2 keys.  In the case of a [Shared Microsoft Entra account](/hololens/shared-aad-accounts), the authentication method used is Certificate-Based Authentication (CBA).
 
 - FIDO 2 Security keys are excellent if you have multiple devices, many users, or are constantly using new devices.
+- If one device will be shared with multiple users, a [Shared Microsoft Entra account](/hololens/shared-aad-accounts) will allow users to login via a single button-click.
 - If you have 10 or fewer users, Iris is a fast solution to sign in users who have previously signed into the same device.
 
 ### [Device Management](hololens-csp-policy-overview.md)
@@ -58,7 +59,7 @@ When sharing the device between multiple users, there are some physical consider
 - When you're storing devices, keep them plugged in and connected to a network. This is the best way to ensure OS and apps stay up to date.
 - Consider how you plan to [clean the device](hololens2-maintenance.md) between users.  If you plan to use Iris authentication, it's highly recommended that the visor is cleaned between each user.
 - For a device with a single shared user if using a shared PIN/password for a single user, don't put the PIN/password on the side of the device.
-- For multiple devices with a single shared user, use various PINs/passwords.
+- For multiple devices with a single shared user, use various PINs/passwords. Or consider setting up a [Shared Microsoft Entra account](/hololens/shared-aad-accounts) to allow signin with a single button-click.
 - Label your devices so users can find ones they already have used. Signing back into a previously used device to launch an app can take a little as 30 seconds with Iris, PIN, or FIDO2 security keys. Setting up a new device, either OOBE or adding a new user, and then launching an app can take as much as 5 minutes.
 
 ## Share with multiple people, each using their own account
@@ -69,9 +70,6 @@ To make sure that multiple people can use their own accounts on your HoloLens, f
 
 1. When you [set up the device](hololens2-start.md), select **My work or school owns it** and sign in by using a Microsoft Entra account.
 1. After you finish setup, make sure that the account settings (Settings > Accounts) include **Other users**.
-
-> [!NOTE]
-> If your device was not set up with a Microsoft Entra account, it needs to be either [reset or reflashed](hololens-recovery.md) and set up properly.
 
 To use HoloLens, each user follows these steps:
 
@@ -84,15 +82,18 @@ To use HoloLens, each user follows these steps:
    - If you previously used the device:
            - [Windows Holographic, version 20H2, build 19041.1128](hololens-release-notes-2004.md#windows-holographic-version-20h2) or higher, the display seamlessly adjusts for quality and a comfortable viewing experience.
       - Previous builds need manual calibration to adjust to your eyes.
-         > [!TIP]
+
+
+      > [!TIP]
       > If a user hasn't signed into a device yet try one of these two methods for a faster login:
-      > 
       > - **FIDO 2 Security key** : Your FIDO2 security key is automatically recognized and the user won't need to type in their user credentials or use MFA. This is the fastest method to sign in on a new device.
-      > 
-      > 
-      >    - **Web authentication** : When you sign into a new device, you can select the link **Sign in from another device** which generates a 9 character code you can use at [aka.ms/devicelogin](https://login.microsoftonline.com/common/oauth2/deviceauth) to either sign in as the user on the device, or type your user name and password using a keyboard for your convenience.
+      > - **Web authentication** : When you sign into a new device, you can select the link **Sign in from another device** which generates a 9 character code you can use at [aka.ms/devicelogin](https://login.microsoftonline.com/common/oauth2/deviceauth) to either sign in as the user on the device, or type your user name and password using a keyboard for your convenience.
       >    
+
       To see a list of the device users or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**. You can also remove users on a device by following the instructions below.
+
+> [!TIP]
+> If more than one user uses a device, it is important to keep the visor clean. See **[HoloLens 2 cleaning FAQ](/hololens/hololens2-maintenance)** for details on how to clean the device. We recommend that you clean the visor between each user. This best practice is particularly important if you use Iris authentication.
 
 #### Remove users on a device
 
@@ -119,7 +120,7 @@ To learn more about these policies, visit [AccountManagement CSP](/windows/clien
 
 ## Share with multiple people, all using the same account
 
-Multiple users can also share a HoloLens device while using a single user account, or a shared Microsoft Entra account. Although it is preferred for HoloLens users to log in to the device with their individual identities (Microsoft Entra accounts), this is not an option in some organizations.
+Multiple users can also share a HoloLens device while using a single user account, or a [Shared Microsoft Entra account](/hololens/shared-aad-accounts). Although it is preferred for HoloLens users to log in to the device with their individual identities (Microsoft Entra accounts), this is not an option in some organizations.
 
 There are two shared device methods available:
 
