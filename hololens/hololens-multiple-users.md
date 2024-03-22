@@ -59,7 +59,8 @@ When sharing the device between multiple users, there are some physical consider
 - When you're storing devices, keep them plugged in and connected to a network. This practice is the best way to ensure OS and apps stay up to date.
 - Consider how you plan to [clean the device](hololens2-maintenance.md) between users.  If you plan to use Iris authentication, it's highly recommended that the visor is cleaned between each user.
 - For a device with a single shared user if using a shared PIN/password for a single user, don't put the PIN/password on the side of the device.
-- For multiple devices with a single shared user, use various PINs/passwords. Or consider setting up a [Shared Microsoft Entra account](/hololens/shared-aad-accounts) to allow signin with a single button-click.
+- For multiple devices with a single shared user, use various PINs/passwords.
+- Another option for multiple devices with a single shared user is to set up a [Shared Microsoft Entra account](/hololens/shared-aad-accounts) to allow signin with a single button-click.
 - Label your devices so users can find ones they already used. Signing back into a previously used device to launch an app can take a little as 30 seconds with Iris, PIN, or FIDO2 security keys. Setting up a new device, either OOBE or adding a new user, and then launching an app can take as much as 5 minutes.
 
 ## Share with multiple people, each using their own account
