@@ -70,7 +70,7 @@ HoloLens Iris login is built on top of [Windows Hello](/windows/security/identit
 HoloLens performs iris authentication   based on stored bit codes. Users have complete control over whether they enroll their user account for Iris login for authentication. And IT administrators can disable Windows Hello capabilities through their MDM servers. See [Manage Windows Hello for Business in your organization](/windows/security/identity-protection/hello-for-business/hello-manage-in-organization).
 
 > [!NOTE]
-> The use of Shared Microsoft Entra ID accounts does not support Iris login on the HoloLens. See more details on the [benefits and limitations of using shared Microsoft Entra accounts](shared-aad-accounts.md#key-benefits-of-using-shared-microsoft-entra-accounts).
+> Shared Microsoft Entra ID accounts do not support Iris login on the HoloLens. See more details on the [benefits and limitations of using shared Microsoft Entra accounts](shared-aad-accounts.md#key-benefits-of-using-shared-microsoft-entra-accounts).
 
 ### Frequently asked Iris questions
 
