@@ -1,7 +1,7 @@
 ---
 title: Manage user identity and login for HoloLens
 description: Learn how to manage user identity, multi-user support, security, enterprise authentication, Iris authentication, and sign in for HoloLens devices.
-keywords: HoloLens, user, account, AAD, Azure AD, adfs, microsoft account, msa, credentials, reference, Iris
+keywords: HoloLens, user, account, AAD, Azure AD, adfs, microsoft account, msa, credentials, reference, Iris, shared account
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 ms.date: 9/27/2022
 ms.service: hololens
@@ -36,6 +36,7 @@ HoloLens supports several kinds of user identities. You can choose any one of th
 | [Microsoft Entra ID](/azure/active-directory/)<sup>1</sup>  | 63| <ul><li>Azure web credential provider</li><li>Azure Authenticator App</li><li>Biometric (Iris) &ndash; HoloLens 2 only<sup>2</sup> </li><li>FIDO2 Security key</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
 | [Microsoft Account (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Biometric (Iris) &ndash; HoloLens 2 only</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
 | [Local account](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | 1 | Password |
+| [Shared Microsoft Entra ID](/windows/security/identity-protection/access-control/local-accounts) | 1 | Certificate-Based Authentication (CBA) |
 
 Cloud-connected accounts (Microsoft Entra ID and MSA) offer more features because they can use Azure services.  
 > [!IMPORTANT]
@@ -122,6 +123,9 @@ HoloLens supports multiple users from the same Microsoft Entra tenant. To use th
 > The first user on the device is considered the device owner, except in the case of Microsoft Entra join, [learn more about device owners](security-adminless-os.md#device-owner).
 
 All users can use the apps installed on the device. However, each user has their own app data and preferences. Removing an app from the device removes it for all users.  
+
+> [!NOTE]
+> Another option for devices that are shared among multiple users is to create a Shared Microsoft Entra ID account on the device.  See [Shared Microsoft Entra accounts in HoloLens](/hololens/shared-aad-accounts) for detailed information on how to configure this account on your device.
 
 Devices set up with Microsoft Entra accounts won't allow signing in to the device with a Microsoft Account. All subsequent accounts used must be Microsoft Entra accounts from the same tenant as the device. You may still [sign in using a Microsoft Account to apps](hololens-identity.md#setting-up-multi-user-support-microsoft-entra-only) that support it (such as the Microsoft Store). To change from using Microsoft Entra accounts to Microsoft Accounts for signing in to the device, you must [reflash the device](hololens-recovery.md#clean-reflash-the-device).
 
