@@ -55,6 +55,10 @@ Using a shared Microsoft Entra account on your HoloLens results in the quickest 
 
 More details, including specific steps on how to configure these accounts, can be found in the [Shared Microsoft Entra accounts in HoloLens](shared-aad-accounts.md) article.
 
+> [!TIP]
+> Validation Tip:
+> Try this in your shared environments, utilizing your apps, to ensure that shared Microsoft Entra accounts work without any credentials.
+
 ### Improve Intune app update experience
 
 The Intune LOB App update does not enforce App shutdown if the App is still running on the device. Instead, the new version of the LOB App is installed and replaces the old App, once the old App is fully exited via user action, sign out or device reboot. 
