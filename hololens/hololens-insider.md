@@ -55,15 +55,27 @@ Using a shared Microsoft Entra account on your HoloLens results in the quickest 
 
 More details, including specific steps on how to configure these accounts, can be found in the [Shared Microsoft Entra accounts in HoloLens](shared-aad-accounts.md) article.
 
+> [!TIP]
+> **Validation Tip:**
+> Try this in your shared environments, utilizing your apps, to ensure that shared Microsoft Entra accounts work without any credentials.
+
 ### Improve Intune app update experience
 
 The Intune LOB App update does not enforce App shutdown if the App is still running on the device. Instead, the new version of the LOB App is installed and replaces the old App, once the old App is fully exited via user action, sign out or device reboot. 
 
 Refer to [Consistent LOB App deployment and update](/hololens/hololens-best-practices-experiences#consistent-lob-app-deployment-and-update) for best practices on getting a consistent LOB App update experience for HoloLens devices.
 
+> [!TIP]
+> **Validation Tip:**
+> Try this in your own environment and utilizing your own app to ensure that your app doesn't shut down when an update is waiting to load.
+
 ### Policy to enable auto-unlock
 
 New policy to enable auto unlock [MixedReality/AutoUnlock](/windows/client-management/mdm/policy-csp-mixedreality#autounlock). When enabled, this policy allows a signed-in user to resume using the device without having to enter credentials. 
+
+> [!TIP]
+> **Validation Tip:**
+> Try to modify this policy and ensure that auto unlock works in your specific environments and use cases.
 
 ### Collect and view network connectivity report
 
@@ -71,9 +83,17 @@ Network connectivity report is added to Offline Diagnostics to help users invest
 
 The report file NetworkConnectivityReport.txt will be included in the diagnostics ZIP file under Documents folder. Users can also view the report on device through Settings > Update & Security > Troubleshoot > View network connectivity report.
 
+> [!TIP]
+> **Validation Tip:**
+> If you use various network configurations, ensure it works with each configuration.
+
 ### Enforce time sync during OOBE
 
 During OOBE, the HoloLens device attempts to sync the device time with the time server after the device has connected to Wi-Fi.
+
+> [!TIP]
+> **Validation Tip:**
+> This will help you if you've flashed the build and then don't touch your device for a long time.
 
 ### Update to eye tracking calibration
 
@@ -81,9 +101,17 @@ The option to perform eye tracking calibration is now shown on the device even i
 
 Any user on the device can still choose to run eye calibration at any time to improve their experience.
 
+> [!TIP]
+> **Validation Tip:**
+> Try this on a shared device and ensure that eye tracking calibration occurs.
+
 ### Policies to set device standby action
 
 [MixedReality/ConfigureDeviceStandbyAction](/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyaction) and [MixedReality/ConfigureDeviceStandbyActionTimeout](/windows/client-management/mdm/policy-csp-mixedreality#configuredevicestandbyactiontimeout) policies enable configuring HoloLens 2 to execute certain action, when device is in modern standby after certain period of time. See policy documentation for supported actions.
+
+> [!TIP]
+> **Validation Tip:**
+> Modify these settings and ensure their functionality in your usage models and environments.
 
 ### Fixes and improvements
 
